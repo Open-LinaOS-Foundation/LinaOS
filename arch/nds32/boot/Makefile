@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 targets := Image Image.gz
 
-$(obj)/Image: vmlinux FORCE
+$(obj)/Image: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
 $(obj)/Image.gz: $(obj)/Image FORCE

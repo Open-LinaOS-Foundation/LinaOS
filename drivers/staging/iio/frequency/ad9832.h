@@ -8,7 +8,7 @@
 #define IIO_DDS_AD9832_H_
 
 /*
- * TODO: struct ad9832_platform_data needs to go into include/linux/iio
+ * TODO: struct ad9832_platform_data needs to go into include/linaos/iio
  */
 
 /**

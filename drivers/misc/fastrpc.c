@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2018, The LinaOS Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/sort.h>
-#include <linux/of_platform.h>
-#include <linux/rpmsg.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/idr.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/sort.h>
+#include <linaos/of_platform.h>
+#include <linaos/rpmsg.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
 #include <uapi/misc/fastrpc.h>
 
 #define ADSP_DOMAIN_ID (0)

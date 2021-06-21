@@ -4,12 +4,12 @@
  *
  * Author: Suresh Siddha <suresh.b.siddha@intel.com>
  */
-#include <linux/compat.h>
-#include <linux/cpu.h>
-#include <linux/mman.h>
-#include <linux/pkeys.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
+#include <linaos/compat.h>
+#include <linaos/cpu.h>
+#include <linaos/mman.h>
+#include <linaos/pkeys.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
 
 #include <asm/fpu/api.h>
 #include <asm/fpu/internal.h>
@@ -23,7 +23,7 @@
 /*
  * Although we spell it out in here, the Processor Trace
  * xfeature is completely unused.  We use other mechanisms
- * to save/restore PT state in Linux.
+ * to save/restore PT state in LinaOS.
  */
 static const char *xfeature_names[] =
 {

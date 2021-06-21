@@ -8,9 +8,9 @@
  * Based on sound/soc/codecs/wm8731.c by Richard Purdie
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 #include <sound/soc.h>
 
 #include "tlv320aic23.h"

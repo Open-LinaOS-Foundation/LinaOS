@@ -16,14 +16,14 @@
  *	Fenghua Yu <fenghua.yu@intel.com>
  *	Add multiple ptc.g/ptc.ga instruction support in global tlb purge.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
 
 #include <asm/delay.h>
 #include <asm/mmu_context.h>

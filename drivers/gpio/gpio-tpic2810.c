@@ -12,10 +12,10 @@
  * GNU General Public License version 2 for more details.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 #define TPIC2810_WS_COMMAND 0x44
 

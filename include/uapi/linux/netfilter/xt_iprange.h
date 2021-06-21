@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_NETFILTER_XT_IPRANGE_H
 #define _LINUX_NETFILTER_XT_IPRANGE_H 1
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
+#include <linaos/types.h>
+#include <linaos/netfilter.h>
 
 enum {
 	IPRANGE_SRC     = 1 << 0,	/* match source IP address */

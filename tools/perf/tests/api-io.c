@@ -11,7 +11,7 @@
 #include "debug.h"
 #include "tests.h"
 #include <api/io.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define TEMPL "/tmp/perf-test-XXXXXX"
 

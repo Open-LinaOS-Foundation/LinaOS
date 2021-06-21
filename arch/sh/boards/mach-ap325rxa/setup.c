@@ -13,26 +13,26 @@
 
 #include <cpu/sh7723.h>
 
-#include <linux/dma-map-ops.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/sh_flctl.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/sh_intc.h>
-#include <linux/smsc911x.h>
-#include <linux/videodev2.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/clkdev.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/memblock.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/sh_flctl.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/sh_intc.h>
+#include <linaos/smsc911x.h>
+#include <linaos/videodev2.h>
 
 #include <media/drv-intf/renesas-ceu.h>
 #include <media/i2c/ov772x.h>

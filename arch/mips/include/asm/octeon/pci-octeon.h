@@ -9,7 +9,7 @@
 #ifndef __PCI_OCTEON_H__
 #define __PCI_OCTEON_H__
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 /*
  * The physical memory base mapped by BAR1.  256MB at the end of the

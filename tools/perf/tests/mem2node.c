@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linaos/compiler.h>
+#include <linaos/bitmap.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
 #include <perf/cpumap.h>
 #include <internal/cpumap.h>
 #include "debug.h"

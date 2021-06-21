@@ -37,14 +37,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/lpc_ich.h>
-#include <linux/platform_data/itco_wdt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/acpi.h>
+#include <linaos/pci.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/lpc_ich.h>
+#include <linaos/platform_data/itco_wdt.h>
 
 #define ACPIBASE		0x40
 #define ACPIBASE_GPE_OFF	0x28

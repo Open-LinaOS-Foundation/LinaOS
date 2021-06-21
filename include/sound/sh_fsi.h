@@ -8,7 +8,7 @@
 #ifndef __SOUND_FSI_H
 #define __SOUND_FSI_H
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 #include <sound/soc.h>
 
 /*

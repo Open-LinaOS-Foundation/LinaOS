@@ -18,11 +18,11 @@ Optional properties:
 
 Each button (key) is represented as a sub-node:
 
-Each not specified key or key with linux,code set to KEY_RESERVED gets disabled
+Each not specified key or key with linaos,code set to KEY_RESERVED gets disabled
 in HW.
 
 Subnode properties:
-- linux,code: Keycode to emit.
+- linaos,code: Keycode to emit.
 - reg: The key number. Valid values: 0, 1, 2, 3, 4.
 
 Optional subnode-properties:
@@ -56,7 +56,7 @@ touchkeys@41 {
 
 	up@0 {
 		reg = <0>;
-		linux,code = <KEY_UP>;
+		linaos,code = <KEY_UP>;
 		microchip,average-samples = <64>;
 		microchip,average-scaling = <16>;
 		microchip,pre-charge-time-ns = <10000>;
@@ -64,14 +64,14 @@ touchkeys@41 {
 
 	right@1 {
 		reg = <1>;
-		linux,code = <KEY_RIGHT>;
+		linaos,code = <KEY_RIGHT>;
 		microchip,average-samples = <64>;
 		microchip,average-scaling = <8>;
 	};
 
 	down@3 {
 		reg = <3>;
-		linux,code = <KEY_DOWN>;
+		linaos,code = <KEY_DOWN>;
 		microchip,average-samples = <256>;
 		microchip,average-scaling = <16>;
 	};

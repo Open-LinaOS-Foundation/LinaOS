@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_CPUMASK_H
 #define _ASM_X86_CPUMASK_H
 #ifndef __ASSEMBLY__
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 
 extern cpumask_var_t cpu_callin_mask;
 extern cpumask_var_t cpu_callout_mask;

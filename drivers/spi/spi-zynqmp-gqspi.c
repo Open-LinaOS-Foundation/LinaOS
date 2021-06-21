@@ -6,22 +6,22 @@
  * Copyright (C) 2009 - 2015 Xilinx, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi-mem.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/spi/spi-mem.h>
 
 /* Generic QSPI register offsets */
 #define GQSPI_CONFIG_OFST		0x00000100

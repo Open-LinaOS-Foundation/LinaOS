@@ -2,6 +2,6 @@
 hostprogs-always-y += mdp
 HOST_EXTRACFLAGS += \
 	-I$(srctree)/include/uapi -I$(srctree)/include \
-	-I$(srctree)/security/selinux/include -I$(objtree)/include
+	-I$(srctree)/security/selinaos/include -I$(objtree)/include
 
 clean-files	:= policy.* file_contexts

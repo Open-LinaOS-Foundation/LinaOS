@@ -7,9 +7,9 @@
 #ifndef __LINUX_PSCI_H
 #define __LINUX_PSCI_H
 
-#include <linux/arm-smccc.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
 
 #define PSCI_POWER_STATE_TYPE_STANDBY		0
 #define PSCI_POWER_STATE_TYPE_POWER_DOWN	1

@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/random.h>
-#include <linux/crc32.h>
+#include <linaos/buffer_head.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/random.h>
+#include <linaos/crc32.h>
 #include "nilfs.h"
 #include "segment.h"
 #include "alloc.h"

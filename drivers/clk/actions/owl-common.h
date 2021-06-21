@@ -11,9 +11,9 @@
 #ifndef _OWL_COMMON_H_
 #define _OWL_COMMON_H_
 
-#include <linux/clk-provider.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
 
 struct device_node;
 

@@ -10,7 +10,7 @@
 
 #include <net/nfc/hci.h>
 #include <net/nfc/llc.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 struct nfc_llc_ops {
 	void *(*init) (struct nfc_hci_dev *hdev, xmit_to_drv_t xmit_to_drv,

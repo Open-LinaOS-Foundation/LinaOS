@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include "amdgpu.h"
 #include "amdgpu_vce.h"

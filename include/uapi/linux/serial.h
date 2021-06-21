@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH LinaOS-syscall-note */
 /*
- * include/linux/serial.h
+ * include/linaos/serial.h
  *
  * Copyright (C) 1992 by Theodore Ts'o.
  * 
@@ -11,9 +11,9 @@
 #ifndef _UAPI_LINUX_SERIAL_H
 #define _UAPI_LINUX_SERIAL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
-#include <linux/tty_flags.h>
+#include <linaos/tty_flags.h>
 
 
 struct serial_struct {

@@ -37,7 +37,7 @@
  * This file contains the definition of the disk and core
  * superblocks of the Veritas Filesystem.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Superblock magic number (vxfs_super->vs_magic).

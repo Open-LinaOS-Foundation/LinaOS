@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 /* Copyright (c) 2019-2020 Marvell International Ltd. */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
 #include "qed.h"
 #include "qed_hw.h"
 #include "qed_mcp.h"

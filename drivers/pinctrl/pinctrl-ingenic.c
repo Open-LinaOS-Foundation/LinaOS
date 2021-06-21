@@ -7,21 +7,21 @@
  * Copyright (c) 2019, 2020 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/compiler.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #include "core.h"
 #include "pinconf.h"
@@ -3698,7 +3698,7 @@ static int __init ingenic_gpio_probe(struct ingenic_pinctrl *jzpc,
 
 	/* DO NOT EXPAND THIS: FOR BACKWARD GPIO NUMBERSPACE COMPATIBIBILITY
 	 * ONLY: WORK TO TRANSITION CONSUMERS TO USE THE GPIO DESCRIPTOR API IN
-	 * <linux/gpio/consumer.h> INSTEAD.
+	 * <linaos/gpio/consumer.h> INSTEAD.
 	 */
 	jzgc->gc.base = bank * 32;
 

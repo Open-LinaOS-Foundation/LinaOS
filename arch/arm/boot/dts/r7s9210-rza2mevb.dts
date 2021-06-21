@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2018 Renesas Electronics
  *
- * As upstream Linux does not support XIP, it cannot run in 8 MiB of HyperRAM.
+ * As upstream LinaOS does not support XIP, it cannot run in 8 MiB of HyperRAM.
  * Hence the 64 MiB of SDRAM on the sub-board needs to be enabled, which has
  * the following ramifications:
  *   - SCIF4 connected to the on-board USB-serial can no longer be used as the
@@ -57,7 +57,7 @@
 		key-3 {
 			interrupt-parent = <&irqc>;
 			interrupts = <0 IRQ_TYPE_EDGE_BOTH>;
-			linux,code = <KEY_3>;
+			linaos,code = <KEY_3>;
 			label = "SW3";
 			wakeup-source;
 		};

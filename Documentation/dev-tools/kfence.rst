@@ -267,7 +267,7 @@ Interface
 The following describes the functions which are used by allocators as well as
 page handling code to set up and deal with KFENCE allocations.
 
-.. kernel-doc:: include/linux/kfence.h
+.. kernel-doc:: include/linaos/kfence.h
    :functions: is_kfence_address
                kfence_shutdown_cache
                kfence_alloc kfence_free __kfence_free
@@ -283,7 +283,7 @@ a sampling strategy to detect memory unsafety bugs at scale. KFENCE's design is
 directly influenced by GWP-ASan, and can be seen as its kernel sibling. Another
 similar but non-sampling approach, that also inspired the name "KFENCE", can be
 found in the userspace `Electric Fence Malloc Debugger
-<https://linux.die.net/man/3/efence>`_.
+<https://linaos.die.net/man/3/efence>`_.
 
 In the kernel, several tools exist to debug memory access errors, and in
 particular KASAN can detect all bug classes that KFENCE can detect. While KASAN

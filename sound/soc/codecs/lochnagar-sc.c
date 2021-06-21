@@ -8,13 +8,13 @@
 // Author: Charles Keepax <ckeepax@opensource.cirrus.com>
 //         Piotr Stankiewicz <piotrs@opensource.cirrus.com>
 
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 
-#include <linux/mfd/lochnagar.h>
-#include <linux/mfd/lochnagar1_regs.h>
-#include <linux/mfd/lochnagar2_regs.h>
+#include <linaos/mfd/lochnagar.h>
+#include <linaos/mfd/lochnagar1_regs.h>
+#include <linaos/mfd/lochnagar2_regs.h>
 
 struct lochnagar_sc_priv {
 	struct clk *mclk;

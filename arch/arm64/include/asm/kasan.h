@@ -4,7 +4,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/memory.h>
 #include <asm/mte-kasan.h>
 #include <asm/pgtable-types.h>

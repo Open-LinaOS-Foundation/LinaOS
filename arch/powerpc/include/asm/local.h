@@ -4,9 +4,9 @@
 
 #ifdef CONFIG_PPC_BOOK3S_64
 
-#include <linux/percpu.h>
-#include <linux/atomic.h>
-#include <linux/irqflags.h>
+#include <linaos/percpu.h>
+#include <linaos/atomic.h>
+#include <linaos/irqflags.h>
 
 #include <asm/hw_irq.h>
 

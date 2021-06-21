@@ -5,12 +5,12 @@
  * This file contains spurious interrupt handling.
  */
 
-#include <linux/jiffies.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
+#include <linaos/timer.h>
 
 #include "internals.h"
 

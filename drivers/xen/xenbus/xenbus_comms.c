@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -32,11 +32,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/wait.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <linaos/wait.h>
+#include <linaos/interrupt.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/err.h>
 #include <xen/xenbus.h>
 #include <asm/xen/hypervisor.h>
 #include <xen/events.h>

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/writeback.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/namei.h>
+#include <linaos/writeback.h>
 
-#include <linux/ceph/libceph.h>
+#include <linaos/ceph/libceph.h>
 
 void ceph_put_page_vector(struct page **pages, int num_pages, bool dirty)
 {

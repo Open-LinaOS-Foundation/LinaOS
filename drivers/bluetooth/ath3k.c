@@ -4,15 +4,15 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/usb.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/usb.h>
 #include <asm/unaligned.h>
 #include <net/bluetooth/bluetooth.h>
 

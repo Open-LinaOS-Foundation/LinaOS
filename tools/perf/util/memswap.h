@@ -2,7 +2,7 @@
 #ifndef PERF_MEMSWAP_H_
 #define PERF_MEMSWAP_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 union u64_swap {
 	u64 val64;

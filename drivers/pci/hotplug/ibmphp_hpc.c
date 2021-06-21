@@ -13,16 +13,16 @@
  *
  */
 
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
+#include <linaos/wait.h>
+#include <linaos/time.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/kthread.h>
 #include "ibmphp.h"
 
 static int to_debug = 0;

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019 The LinaOS Foundation. All rights reserved.
  */
 
 #if !defined(_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "core.h"
 
 #define _TRACE_H_

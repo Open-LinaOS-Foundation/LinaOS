@@ -35,13 +35,13 @@
  *	Base + 0x1F timing register
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME "pata_ninja32"
 #define DRV_VERSION "0.1.5"

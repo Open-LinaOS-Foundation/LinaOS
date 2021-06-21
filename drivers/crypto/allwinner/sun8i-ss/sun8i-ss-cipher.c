@@ -11,10 +11,10 @@
  * You could find a link for the datasheet in Documentation/arm/sunxi.rst
  */
 
-#include <linux/crypto.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <linaos/crypto.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/skcipher.h>
 #include "sun8i-ss.h"

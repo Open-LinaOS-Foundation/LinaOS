@@ -5,7 +5,7 @@
 import gdb
 import zlib
 
-from linux import utils
+from linaos import utils
 
 
 class LxConfigDump(gdb.Command):

@@ -7,9 +7,9 @@
 #ifndef __DRV_CLK_MTK_H
 #define __DRV_CLK_MTK_H
 
-#include <linux/regmap.h>
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/clk-provider.h>
 
 struct clk;
 struct clk_onecell_data;

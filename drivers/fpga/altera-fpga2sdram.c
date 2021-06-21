@@ -14,7 +14,7 @@
  * reconfiguration.  The code reconfiguring the ports cannot run out of SDRAM
  * nor can the FPGA access the SDRAM during reconfiguration.  This driver does
  * not support reconfiguring the ports.  The ports are configured by code
- * running out of on chip ram before Linux is started and the configuration
+ * running out of on chip ram before LinaOS is started and the configuration
  * is passed in a handoff register in the system manager.
  *
  * This driver supports enabling and disabling of the configured ports, which
@@ -23,12 +23,12 @@
  * reprogramming the FPGA and re-enabled after the FPGA has been programmed.
  */
 
-#include <linux/fpga/fpga-bridge.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linaos/fpga/fpga-bridge.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
 
 #define ALT_SDR_CTL_FPGAPORTRST_OFST		0x80
 #define ALT_SDR_CTL_FPGAPORTRST_PORTRSTN_MSK	0x00003fff

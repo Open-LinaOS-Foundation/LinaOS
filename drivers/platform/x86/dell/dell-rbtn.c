@@ -5,10 +5,10 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/rfkill.h>
-#include <linux/input.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/rfkill.h>
+#include <linaos/input.h>
 
 #include "dell-rbtn.h"
 

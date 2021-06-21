@@ -3,7 +3,7 @@
  *   Copyright (C) International Business Machines Corp., 2000-2002
  */
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 #include "jfs_unicode.h"
 
 /*

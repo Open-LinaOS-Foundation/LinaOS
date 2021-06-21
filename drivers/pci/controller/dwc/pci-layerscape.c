@@ -7,18 +7,18 @@
  * Author: Minghuan Lian <Minghuan.Lian@freescale.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/of_pci.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/resource.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
 #include "pcie-designware.h"
 

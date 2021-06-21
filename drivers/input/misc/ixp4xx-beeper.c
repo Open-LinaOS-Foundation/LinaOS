@@ -8,15 +8,15 @@
  *  Copyright (C) 2004 Karen Spearel
  *
  * Author: Alessandro Zummo <a.zummo@towertech.it>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-linaos.org/
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio.h>
 #include <mach/hardware.h>
 
 MODULE_AUTHOR("Alessandro Zummo <a.zummo@towertech.it>");

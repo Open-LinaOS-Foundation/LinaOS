@@ -4,14 +4,14 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/time.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ip.h>
+#include <linaos/if_arp.h>
+#include <linaos/time.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
 #include <net/tcp.h>

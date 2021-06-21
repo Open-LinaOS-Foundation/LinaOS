@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _LINUX_RANGE_H
 #define _LINUX_RANGE_H
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct range {
 	u64   start;

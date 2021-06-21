@@ -11,8 +11,8 @@
  * enabled. All code mutation routines here take effect atomically.
  */
 
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/ftrace.h>
 
 #include <asm/cacheflush.h>
 #include <asm/patch.h>

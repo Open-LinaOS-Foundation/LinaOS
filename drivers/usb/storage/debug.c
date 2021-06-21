@@ -10,7 +10,7 @@
  *   (c) 2002 Alan Stern <stern@rowland.org>
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@linaosspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -27,9 +27,9 @@
  * status of a command.
  */
 
-#include <linux/device.h>
-#include <linux/cdrom.h>
-#include <linux/export.h>
+#include <linaos/device.h>
+#include <linaos/cdrom.h>
+#include <linaos/export.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_dbg.h>

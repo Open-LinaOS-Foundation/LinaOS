@@ -5,14 +5,14 @@
  * Copyright (C) 2021 Google LLC
  */
 
-#include <linux/hardirq.h>
-#include <linux/kallsyms.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/printk.h>
-#include <linux/ratelimit.h>
-#include <linux/rcupdate.h>
-#include <linux/vmalloc.h>
+#include <linaos/hardirq.h>
+#include <linaos/kallsyms.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/printk.h>
+#include <linaos/ratelimit.h>
+#include <linaos/rcupdate.h>
+#include <linaos/vmalloc.h>
 #include <asm/cacheflush.h>
 #include <asm/set_memory.h>
 

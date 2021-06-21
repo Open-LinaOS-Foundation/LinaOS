@@ -2,16 +2,16 @@
 /*
  * Backlight emulation LED trigger
  *
- * Copyright 2008 (C) Rodolfo Giometti <giometti@linux.it>
+ * Copyright 2008 (C) Rodolfo Giometti <giometti@linaos.it>
  * Copyright 2008 (C) Eurotech S.p.A. <info@eurotech.it>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/leds.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/fb.h>
+#include <linaos/leds.h>
 #include "../leds.h"
 
 #define BLANK		1
@@ -137,6 +137,6 @@ static struct led_trigger bl_led_trigger = {
 };
 module_led_trigger(bl_led_trigger);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@linaos.it>");
 MODULE_DESCRIPTION("Backlight emulation LED trigger");
 MODULE_LICENSE("GPL v2");

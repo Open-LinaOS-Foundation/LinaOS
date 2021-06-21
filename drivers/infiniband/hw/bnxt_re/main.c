@@ -36,18 +36,18 @@
  * Description: Main component of the bnxt_re driver
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/rculist.h>
+#include <linaos/spinlock.h>
+#include <linaos/pci.h>
 #include <net/dcbnl.h>
 #include <net/ipv6.h>
 #include <net/addrconf.h>
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

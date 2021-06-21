@@ -2,7 +2,7 @@
 #ifndef PM_TRACE_H
 #define PM_TRACE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #ifdef CONFIG_PM_TRACE
 #include <asm/pm-trace.h>
 

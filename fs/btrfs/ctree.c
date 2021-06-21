@@ -3,10 +3,10 @@
  * Copyright (C) 2007,2008 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/mm.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/rbtree.h>
+#include <linaos/mm.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "transaction.h"

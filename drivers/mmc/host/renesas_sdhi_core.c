@@ -18,25 +18,25 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/pinctrl-state.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/pinctrl-state.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/sh_dma.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #include "renesas_sdhi.h"
 #include "tmio_mmc.h"

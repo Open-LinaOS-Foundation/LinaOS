@@ -6,12 +6,12 @@
  * Robert Baldyga <r.baldyga@samsung.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/module.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/module.h>
 
 #include <net/nfc/nfc.h>
 

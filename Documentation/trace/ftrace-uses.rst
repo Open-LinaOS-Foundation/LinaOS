@@ -65,7 +65,7 @@ To disable tracing call::
 
 The above is defined by including the header::
 
-    #include <linux/ftrace.h>
+    #include <linaos/ftrace.h>
 
 The registered callback will start being called some time after the
 register_ftrace_function() is called and before it returns. The exact time
@@ -164,7 +164,7 @@ function call.
 The ftrace FLAGS
 ================
 
-The ftrace_ops flags are all defined and documented in include/linux/ftrace.h.
+The ftrace_ops flags are all defined and documented in include/linaos/ftrace.h.
 Some of the flags are used for internal infrastructure of ftrace, but the
 ones that users should be aware of are the following:
 

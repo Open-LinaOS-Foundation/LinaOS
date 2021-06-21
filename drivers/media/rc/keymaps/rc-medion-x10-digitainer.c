@@ -10,7 +10,7 @@
  * an "X10" remote.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/rc-map.h>
 
 static struct rc_map_table medion_x10_digitainer[] = {

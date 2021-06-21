@@ -6,24 +6,24 @@
  *    Based on vt8500lcdfb.c
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/wait.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/fb.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/wait.h>
 #include <video/of_display_timing.h>
 
 #include "wm8505fb_regs.h"

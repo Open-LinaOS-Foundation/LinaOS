@@ -10,20 +10,20 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  *
  * TODO:
- * - Fix various assumptions related to HW CPU numbers vs. linux CPU numbers
+ * - Fix various assumptions related to HW CPU numbers vs. linaos CPU numbers
  *   vs node numbers in the setup code
  * - Implement proper handling of maxcpus=1/2 (that is, routing of irqs from
  *   a non-active node to the active node)
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/kernel_stat.h>
-#include <linux/pgtable.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/export.h>
+#include <linaos/percpu.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>
@@ -277,7 +277,7 @@ static const struct irq_domain_ops iic_host_ops = {
 static void __init init_one_iic(unsigned int hw_cpu, unsigned long addr,
 				struct device_node *node)
 {
-	/* XXX FIXME: should locate the linux CPU number from the HW cpu
+	/* XXX FIXME: should locate the linaos CPU number from the HW cpu
 	 * number properly. We are lucky for now
 	 */
 	struct iic *iic = &per_cpu(cpu_iic, hw_cpu);

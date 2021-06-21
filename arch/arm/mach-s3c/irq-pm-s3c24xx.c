@@ -2,16 +2,16 @@
 //
 // Copyright (c) 2003-2004 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //
 // S3C24XX - IRQ PM code
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/io.h>
 
 #include "cpu.h"
 #include "pm.h"

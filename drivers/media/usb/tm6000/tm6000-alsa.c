@@ -4,14 +4,14 @@
 //
 // Based on cx88-alsa.c
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

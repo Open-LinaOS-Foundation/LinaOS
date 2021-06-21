@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/affs/file.c
+ *  linaos/fs/affs/file.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *
@@ -13,8 +13,8 @@
  *  affs regular file handling primitives
  */
 
-#include <linux/uio.h>
-#include <linux/blkdev.h>
+#include <linaos/uio.h>
+#include <linaos/blkdev.h>
 #include "affs.h"
 
 static struct buffer_head *affs_get_extblock_slow(struct inode *inode, u32 ext);

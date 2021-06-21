@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_MSG_H
 #define _UAPI_LINUX_MSG_H
 
-#include <linux/ipc.h>
+#include <linaos/ipc.h>
 
 /* ipcs ctl commands */
 #define MSG_STAT 11

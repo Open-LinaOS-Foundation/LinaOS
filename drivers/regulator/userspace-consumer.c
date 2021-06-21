@@ -11,13 +11,13 @@
  *   Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/userspace-consumer.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/regulator/userspace-consumer.h>
+#include <linaos/slab.h>
 
 struct userspace_consumer_data {
 	const char *name;

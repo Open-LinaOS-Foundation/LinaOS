@@ -7,13 +7,13 @@
  * Author: Miguel Aguilar <miguel.aguilar@ridgerun.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/mfd/davinci_voicecodec.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/mfd/davinci_voicecodec.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

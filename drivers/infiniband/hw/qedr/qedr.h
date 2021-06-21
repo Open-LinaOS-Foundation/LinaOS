@@ -32,15 +32,15 @@
 #ifndef __QEDR_H__
 #define __QEDR_H__
 
-#include <linux/pci.h>
-#include <linux/xarray.h>
+#include <linaos/pci.h>
+#include <linaos/xarray.h>
 #include <rdma/ib_addr.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_chain.h>
-#include <linux/qed/qed_rdma_if.h>
-#include <linux/qed/qede_rdma.h>
-#include <linux/qed/roce_common.h>
-#include <linux/completion.h>
+#include <linaos/qed/qed_if.h>
+#include <linaos/qed/qed_chain.h>
+#include <linaos/qed/qed_rdma_if.h>
+#include <linaos/qed/qede_rdma.h>
+#include <linaos/qed/roce_common.h>
+#include <linaos/completion.h>
 #include "qedr_hsi_rdma.h"
 
 #define QEDR_NODE_DESC "QLogic 579xx RoCE HCA"

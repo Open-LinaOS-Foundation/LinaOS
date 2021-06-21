@@ -18,7 +18,7 @@
 #define ZSTD_H
 
 /* ======   Dependency   ======*/
-#include <linux/types.h>   /* size_t */
+#include <linaos/types.h>   /* size_t */
 
 
 /*-*****************************************************************************

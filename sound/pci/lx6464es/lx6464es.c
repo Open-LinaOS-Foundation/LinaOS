@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- *
+/* -*- linaos-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  *
  * Copyright (c) 2008, 2009 Tim Blechmann <tim@klingt.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
 #include <sound/initval.h>
 #include <sound/control.h>

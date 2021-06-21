@@ -4,7 +4,7 @@
  * Author: Rob Clark <rob@ti.com>
  */
 
-#include <linux/math64.h>
+#include <linaos/math64.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

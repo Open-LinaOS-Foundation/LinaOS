@@ -5,9 +5,9 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Authors: Keyon Jie <yang.jie@linux.intel.com>
+// Authors: Keyon Jie <yang.jie@linaos.intel.com>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <sound/hdaudio.h>
 #include <sound/hda_i915.h>
 #include "../sof-priv.h"

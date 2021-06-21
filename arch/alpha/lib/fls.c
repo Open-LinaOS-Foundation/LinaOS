@@ -3,8 +3,8 @@
  * arch/alpha/lib/fls.c
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
 
 /* This is fls(x)-1, except zero is held to zero.  This allows most
    efficient input into extbl, plus it allows easy handling of fls(0)=0.  */

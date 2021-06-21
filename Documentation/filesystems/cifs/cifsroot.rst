@@ -76,7 +76,7 @@ Examples
 Export root file system as a Samba share in smb.conf file::
 
     ...
-    [linux]
+    [linaos]
 	    path = /path/to/rootfs
 	    read only = no
 	    guest ok = yes
@@ -98,8 +98,8 @@ Test it under QEMU on a kernel built with CONFIG_CIFS_ROOT and
 CONFIG_IP_PNP options enabled::
 
     # qemu-system-x86_64 -enable-kvm -cpu host -m 1024 \
-    -kernel /path/to/linux/arch/x86/boot/bzImage -nographic \
-    -append "root=/dev/cifs rw ip=dhcp cifsroot=//10.0.2.2/linux,username=foo,password=bar console=ttyS0 3"
+    -kernel /path/to/linaos/arch/x86/boot/bzImage -nographic \
+    -append "root=/dev/cifs rw ip=dhcp cifsroot=//10.0.2.2/linaos,username=foo,password=bar console=ttyS0 3"
 
 
 1: https://wiki.samba.org/index.php/UNIX_Extensions

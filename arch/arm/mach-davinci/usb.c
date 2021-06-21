@@ -2,11 +2,11 @@
 /*
  * USB
  */
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/usb/musb.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/usb-davinci.h>
+#include <linaos/usb/musb.h>
 
 #include <mach/common.h>
 #include <mach/cputype.h>

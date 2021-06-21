@@ -8,8 +8,8 @@
  * Authors: Peter Chen <peter.chen@nxp.com>
  *          Pawel Laszczak <pawell@cadence.com>
  */
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/role.h>
 
 #ifndef __LINUX_CDNS3_CORE_H
 #define __LINUX_CDNS3_CORE_H

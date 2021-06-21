@@ -6,8 +6,8 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/kernel.h>
-#include <uapi/linux/prctl.h>
+#include <linaos/kernel.h>
+#include <uapi/linaos/prctl.h>
 
 #include "trace/beauty/generated/prctl_option_array.c"
 

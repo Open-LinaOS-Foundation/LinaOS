@@ -6,11 +6,11 @@
  * Copyright 2006 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pgtable.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pgtable.h>
 
 #include <asm/code-patching.h>
 #include <asm/page.h>

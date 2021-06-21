@@ -35,9 +35,9 @@
 #ifndef LINUX_NFSD_IDMAP_H
 #define LINUX_NFSD_IDMAP_H
 
-#include <linux/in.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/nfs_idmap.h>
+#include <linaos/in.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/nfs_idmap.h>
 
 #ifdef CONFIG_NFSD_V4
 int nfsd_idmap_init(struct net *);

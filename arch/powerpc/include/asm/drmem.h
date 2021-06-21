@@ -8,7 +8,7 @@
 #ifndef _ASM_POWERPC_LMB_H
 #define _ASM_POWERPC_LMB_H
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 struct drmem_lmb {
 	u64     base_addr;

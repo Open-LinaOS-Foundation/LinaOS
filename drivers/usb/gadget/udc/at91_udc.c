@@ -10,26 +10,26 @@
 #undef	VERBOSE_DEBUG
 #undef	PACKET_TRACE
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/clk.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-matrix.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/prefetch.h>
+#include <linaos/clk.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/platform_data/atmel.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/atmel-matrix.h>
 
 #include "at91_udc.h"
 
@@ -49,7 +49,7 @@
  * The VBUS sensing helps during enumeration, and allows both USB clocks
  * (and the transceiver) to stay gated off until they're necessary, saving
  * power.  During USB suspend, the 48 MHz clock is gated off in hardware;
- * it may also be gated off by software during some Linux sleep states.
+ * it may also be gated off by software during some LinaOS sleep states.
  */
 
 #define	DRIVER_VERSION	"3 May 2006"
@@ -95,7 +95,7 @@ static const struct {
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 static const char debug_filename[] = "driver/udc";
 

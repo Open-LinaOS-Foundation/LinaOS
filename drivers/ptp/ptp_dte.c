@@ -11,13 +11,13 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/types.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/types.h>
 
 #define DTE_NCO_LOW_TIME_REG	0x00
 #define DTE_NCO_TIME_REG	0x04

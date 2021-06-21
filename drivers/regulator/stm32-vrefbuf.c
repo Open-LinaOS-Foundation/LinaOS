@@ -5,16 +5,16 @@
  * Author: Fabrice Gasnier <fabrice.gasnier@st.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/pm_runtime.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/pm_runtime.h>
 
 /* STM32 VREFBUF registers */
 #define STM32_VREFBUF_CSR		0x00

@@ -12,15 +12,15 @@
  *  Copyright (C) 2004, LynuxWorks, Inc., Igor Manyilov, Bill Huey
  *  Released under the General Public License (GPL).
  */
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/poison.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/kallsyms.h>
+#include <linaos/interrupt.h>
+#include <linaos/debug_locks.h>
 
 #include "mutex-debug.h"
 

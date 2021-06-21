@@ -7,12 +7,12 @@
  * Copyright (C) 2003, 2004  Maciej W. Rozycki
  * Copyright (C) 2001, 2004, 2011, 2012	 MIPS Technologies, Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/export.h>
 
 #include <asm/bugs.h>
 #include <asm/cpu.h>

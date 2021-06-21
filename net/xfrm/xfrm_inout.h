@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/ipv6.h>
+#include <linaos/ipv6.h>
 #include <net/dsfield.h>
 #include <net/xfrm.h>
 

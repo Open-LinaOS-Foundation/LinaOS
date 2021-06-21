@@ -2,7 +2,7 @@
 #ifndef __ALPHA_POLARIS__H__
 #define __ALPHA_POLARIS__H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/compiler.h>
 
 /*

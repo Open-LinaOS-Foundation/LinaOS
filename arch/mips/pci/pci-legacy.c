@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *
- * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 04, 11 Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2011 Wind River Systems,
- *   written by Ralf Baechle (ralf@linux-mips.org)
+ *   written by Ralf Baechle (ralf@linaos-mips.org)
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/of_address.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/of_address.h>
 
 #include <asm/cpu-info.h>
 

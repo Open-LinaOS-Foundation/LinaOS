@@ -10,17 +10,17 @@
 #ifndef __LINUX_OF_GPIO_H
 #define __LINUX_OF_GPIO_H
 
-#include <linux/compiler.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio.h>		/* FIXME: Shouldn't be here */
-#include <linux/of.h>
+#include <linaos/compiler.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio.h>		/* FIXME: Shouldn't be here */
+#include <linaos/of.h>
 
 struct device_node;
 
 /*
- * This is Linux-specific flags. By default controllers' and Linux' mapping
+ * This is LinaOS-specific flags. By default controllers' and LinaOS' mapping
  * match, but GPIO controllers are free to translate their own flags to
- * Linux-specific in their .xlate callback. Though, 1:1 mapping is recommended.
+ * LinaOS-specific in their .xlate callback. Though, 1:1 mapping is recommended.
  */
 enum of_gpio_flags {
 	OF_GPIO_ACTIVE_LOW = 0x1,
@@ -33,7 +33,7 @@ enum of_gpio_flags {
 
 #ifdef CONFIG_OF_GPIO
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /*
  * OF GPIO chip for memory mapped banks
@@ -64,7 +64,7 @@ extern void of_mm_gpiochip_remove(struct of_mm_gpio_chip *mm_gc);
 
 #else /* CONFIG_OF_GPIO */
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 /* Drivers may not strictly depend on the GPIO support, so let them link. */
 static inline int of_get_named_gpio_flags(struct device_node *np,
@@ -126,7 +126,7 @@ static inline int of_get_gpio_flags(struct device_node *np, int index,
  * @propname:	Name of property containing gpio specifier(s)
  * @index:	index of the GPIO
  *
- * Returns GPIO number to use with Linux generic GPIO API, or one of the errno
+ * Returns GPIO number to use with LinaOS generic GPIO API, or one of the errno
  * value on the error condition.
  */
 static inline int of_get_named_gpio(struct device_node *np,
@@ -140,7 +140,7 @@ static inline int of_get_named_gpio(struct device_node *np,
  * @np:		device node to get GPIO from
  * @index:	index of the GPIO
  *
- * Returns GPIO number to use with Linux generic GPIO API, or one of the errno
+ * Returns GPIO number to use with LinaOS generic GPIO API, or one of the errno
  * value on the error condition.
  */
 static inline int of_get_gpio(struct device_node *np, int index)

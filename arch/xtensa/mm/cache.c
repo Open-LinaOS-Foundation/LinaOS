@@ -13,18 +13,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/memblock.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/memblock.h>
+#include <linaos/swap.h>
+#include <linaos/pagemap.h>
+#include <linaos/pgtable.h>
 
 #include <asm/bootparam.h>
 #include <asm/mmu_context.h>

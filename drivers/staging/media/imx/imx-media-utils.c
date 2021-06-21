@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2016 Mentor Graphics Inc.
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "imx-media.h"
 
 #define IMX_BUS_FMTS(fmt...) (const u32[]) {fmt, 0}

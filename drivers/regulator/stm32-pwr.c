@@ -3,14 +3,14 @@
 // Authors: Gabriel Fernandez <gabriel.fernandez@st.com>
 //          Pascal Paillet <p.paillet@st.com>.
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/of_regulator.h>
 
 /*
  * Registers description

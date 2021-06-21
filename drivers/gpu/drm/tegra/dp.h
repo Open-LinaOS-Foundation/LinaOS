@@ -7,7 +7,7 @@
 #ifndef DRM_TEGRA_DP_H
 #define DRM_TEGRA_DP_H 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_display_info;
 struct drm_display_mode;

@@ -6,11 +6,11 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
 #include <scsi/sas_ata.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>

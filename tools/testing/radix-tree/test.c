@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <stdio.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
 
 #include "test.h"
 

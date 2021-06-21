@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/9p/vfs_file.c
+ *  linaos/fs/9p/vfs_file.c
  *
  * This file contians vfs file ops for 9P2000.
  *
@@ -8,21 +8,21 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/inet.h>
-#include <linux/list.h>
-#include <linux/pagemap.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/idr.h>
-#include <linux/uio.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/file.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/inet.h>
+#include <linaos/list.h>
+#include <linaos/pagemap.h>
+#include <linaos/utsname.h>
+#include <linaos/uaccess.h>
+#include <linaos/idr.h>
+#include <linaos/uio.h>
+#include <linaos/slab.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

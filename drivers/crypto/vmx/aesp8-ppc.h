@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <crypto/aes.h>
 
 struct aes_key {

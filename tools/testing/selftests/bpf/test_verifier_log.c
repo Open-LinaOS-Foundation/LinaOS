@@ -5,9 +5,9 @@
 #include <unistd.h>
 #include <sys/time.h>
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/unistd.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
+#include <linaos/unistd.h>
 
 #include <bpf/bpf.h>
 

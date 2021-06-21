@@ -9,23 +9,23 @@
  * kind, whether express or implied.
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/property.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/property.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
 
 #define MPC8XXX_GPIO_PINS	32
 

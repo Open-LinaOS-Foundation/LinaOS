@@ -2,28 +2,28 @@
 /*
  * Slab allocator functions that are independent of the allocator strategy
  *
- * (C) 2012 Christoph Lameter <cl@linux.com>
+ * (C) 2012 Christoph Lameter <cl@linaos.com>
  */
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
-#include <linux/mm.h>
-#include <linux/poison.h>
-#include <linux/interrupt.h>
-#include <linux/memory.h>
-#include <linux/cache.h>
-#include <linux/compiler.h>
-#include <linux/kfence.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/debugfs.h>
-#include <linux/kasan.h>
+#include <linaos/mm.h>
+#include <linaos/poison.h>
+#include <linaos/interrupt.h>
+#include <linaos/memory.h>
+#include <linaos/cache.h>
+#include <linaos/compiler.h>
+#include <linaos/kfence.h>
+#include <linaos/module.h>
+#include <linaos/cpu.h>
+#include <linaos/uaccess.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/debugfs.h>
+#include <linaos/kasan.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 #include <asm/page.h>
-#include <linux/memcontrol.h>
+#include <linaos/memcontrol.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/kmem.h>

@@ -6,7 +6,7 @@
  *      Ben. Herrenschmidt (benh@kernel.crashing.org), IBM Corp.
  */
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/processor.h>
 #include <asm/reg.h>
 #include <asm/page.h>
@@ -653,7 +653,7 @@ normal_tlb_miss:
 	 * or'ing the fourth high bit.
 	 *
 	 * NOTE: For 64K pages, we do things slightly differently in
-	 * order to handle the weird page table format used by linux
+	 * order to handle the weird page table format used by linaos
 	 */
 	ori	r10,r15,0x1
 	rldicl	r14,r16,64-(PAGE_SHIFT-3),PAGE_SHIFT-3+4

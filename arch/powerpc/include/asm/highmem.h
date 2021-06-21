@@ -23,7 +23,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include <asm/cacheflush.h>
 #include <asm/page.h>
 #include <asm/fixmap.h>

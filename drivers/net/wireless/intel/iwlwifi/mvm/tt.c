@@ -4,7 +4,7 @@
  * Copyright (C) 2013-2014 Intel Mobile Communications GmbH
  * Copyright (C) 2015-2016 Intel Deutschland GmbH
  */
-#include <linux/sort.h>
+#include <linaos/sort.h>
 
 #include "mvm.h"
 

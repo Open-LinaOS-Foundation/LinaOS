@@ -10,17 +10,17 @@
  */
 
 /* #define DEBUG */
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/lsm_hooks.h>
-#include <linux/magic.h>
+#include <linaos/sysfs.h>
+#include <linaos/kobject.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/init.h>
+#include <linaos/namei.h>
+#include <linaos/security.h>
+#include <linaos/lsm_hooks.h>
+#include <linaos/magic.h>
 
 static struct vfsmount *mount;
 static int mount_count;

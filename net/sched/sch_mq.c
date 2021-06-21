@@ -5,13 +5,13 @@
  * Copyright (c) 2009 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
 #include <net/netlink.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>

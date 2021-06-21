@@ -7,13 +7,13 @@
  * Author: Alexander Shishkin
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/chipidea.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/chipidea.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include "../host/ehci.h"
 

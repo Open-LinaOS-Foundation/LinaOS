@@ -11,7 +11,7 @@
  *	Jianhua Li <lijianhua@huawei.com>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

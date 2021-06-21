@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Zoran zr36057/zr36067 PCI controller driver, for the
- * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, Linux
+ * Pinnacle/Miro DC10/DC10+/DC30/DC30+, Iomega Buz, LinaOS
  * Media Labs LML33/LML33R10.
  *
  * Copyright (C) 2000 Serguei Miridonov <mirsev@cicese.mx>
@@ -10,7 +10,7 @@
  *
  * Changes for DC10/DC30 by Laurent Pinchart <laurent.pinchart@skynet.be>
  *
- * Changes for LML33R10 by Maxim Yevtyushkin <max@linuxmedialabs.com>
+ * Changes for LML33R10 by Maxim Yevtyushkin <max@linaosmedialabs.com>
  *
  * Changes for videodev2/v4l2 by Ronald Bultje <rbultje@ronald.bitfreak.net>
  *
@@ -30,29 +30,29 @@
  *                        & Marcus Metzler (mocm@thp.uni-koeln.de)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/wait.h>
 
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
 #include "videocodec.h"
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include "zoran.h"
 #include "zoran_device.h"
 #include "zoran_card.h"

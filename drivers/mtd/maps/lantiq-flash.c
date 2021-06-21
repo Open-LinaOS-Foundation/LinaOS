@@ -5,19 +5,19 @@
  *  Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/cfi.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/of.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/of.h>
 
 #include <lantiq_soc.h>
 

@@ -7,8 +7,8 @@
 #ifndef _QLCNIC_83XX_SRIOV_H_
 #define _QLCNIC_83XX_SRIOV_H_
 
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
 
 #include "qlcnic.h"
 

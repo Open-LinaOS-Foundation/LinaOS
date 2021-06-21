@@ -4,8 +4,8 @@
  * Author: Naveen Krishna Ch <naveenkrishna.ch@gmail.com>
 */
 
-#include <linux/clk-provider.h>
-#include <linux/of.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
 
 #include "clk.h"
 #include <dt-bindings/clock/exynos7-clk.h>

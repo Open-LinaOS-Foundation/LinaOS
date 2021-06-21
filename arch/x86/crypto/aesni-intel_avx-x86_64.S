@@ -41,7 +41,7 @@
 ##	Erdinc Ozturk <erdinc.ozturk@intel.com>
 ##	Vinodh Gopal <vinodh.gopal@intel.com>
 ##	James Guilford <james.guilford@intel.com>
-##	Tim Chen <tim.c.chen@linux.intel.com>
+##	Tim Chen <tim.c.chen@linaos.intel.com>
 ##
 ## References:
 ##       This code was derived and highly optimized from the code described in paper:
@@ -119,7 +119,7 @@
 ## for GHASH part, two tabs is for AES part.
 ##
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 # constants in mergeable sections, linker can reorder and merge
 .section	.rodata.cst16.POLY, "aM", @progbits, 16

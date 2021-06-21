@@ -10,8 +10,8 @@
 #ifndef __DMA_HSU_H__
 #define __DMA_HSU_H__
 
-#include <linux/spinlock.h>
-#include <linux/dma/hsu.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma/hsu.h>
 
 #include "../virt-dma.h"
 

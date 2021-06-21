@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #include <asm/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/pgtable.h>
+#include <linaos/uaccess.h>
+#include <linaos/pgtable.h>
 #include <asm/string.h>
 #include <asm/page.h>
 #include <asm/checksum.h>

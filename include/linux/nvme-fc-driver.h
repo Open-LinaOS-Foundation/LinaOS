@@ -6,7 +6,7 @@
 #ifndef _NVME_FC_DRIVER_H
 #define _NVME_FC_DRIVER_H 1
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 
 /*

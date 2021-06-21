@@ -6,12 +6,12 @@
  * Copyright (C) 2012 Jonas Gorski <jonas.gorski@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_io.h>
 #include <bcm63xx_regs.h>

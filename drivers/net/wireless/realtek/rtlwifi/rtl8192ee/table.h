@@ -4,7 +4,7 @@
 #ifndef __RTL92E_TABLE__H_
 #define __RTL92E_TABLE__H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #define RTL8192EE_PHY_REG_ARRAY_LEN	448
 extern u32 RTL8192EE_PHY_REG_ARRAY[];
 #define RTL8192EE_PHY_REG_ARRAY_PG_LEN	168

@@ -5,9 +5,9 @@
  * Copyright (C) 2013-15 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/libfdt.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/libfdt.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/io.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * DVB USB Linux driver for Anysee E30 DVB-C & DVB-T USB2.0 receiver
+ * DVB USB LinaOS driver for Anysee E30 DVB-C & DVB-T USB2.0 receiver
  *
  * Copyright (C) 2007 Antti Palosaari <crope@iki.fi>
  *
@@ -956,7 +956,7 @@ static int anysee_frontend_attach(struct dvb_usb_adapter *adap)
 		/* we have no frontend :-( */
 		ret = -ENODEV;
 		dev_err(&d->udev->dev,
-				"%s: Unsupported Anysee version. Please report to <linux-media@vger.kernel.org>.\n",
+				"%s: Unsupported Anysee version. Please report to <linaos-media@vger.kernel.org>.\n",
 				KBUILD_MODNAME);
 	}
 error:

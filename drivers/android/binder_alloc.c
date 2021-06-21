@@ -8,21 +8,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/list.h>
-#include <linux/sched/mm.h>
-#include <linux/module.h>
-#include <linux/rtmutex.h>
-#include <linux/rbtree.h>
-#include <linux/seq_file.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/list_lru.h>
-#include <linux/ratelimit.h>
+#include <linaos/list.h>
+#include <linaos/sched/mm.h>
+#include <linaos/module.h>
+#include <linaos/rtmutex.h>
+#include <linaos/rbtree.h>
+#include <linaos/seq_file.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/list_lru.h>
+#include <linaos/ratelimit.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h>
-#include <linux/sizes.h>
+#include <linaos/uaccess.h>
+#include <linaos/highmem.h>
+#include <linaos/sizes.h>
 #include "binder_alloc.h"
 #include "binder_trace.h"
 

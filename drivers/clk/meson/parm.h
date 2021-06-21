@@ -7,8 +7,8 @@
 #ifndef __MESON_PARM_H
 #define __MESON_PARM_H
 
-#include <linux/bits.h>
-#include <linux/regmap.h>
+#include <linaos/bits.h>
+#include <linaos/regmap.h>
 
 #define PMASK(width)			GENMASK(width - 1, 0)
 #define SETPMASK(width, shift)		GENMASK(shift + width - 1, shift)

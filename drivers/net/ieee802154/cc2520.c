@@ -5,18 +5,18 @@
  *		      Md.Jamal Mohiuddin <mjmohiuddin@cdac.in>
  *		      P Sowjanya <sowjanyap@cdac.in>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/cc2520.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/of_gpio.h>
-#include <linux/ieee802154.h>
-#include <linux/crc-ccitt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/cc2520.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/skbuff.h>
+#include <linaos/of_gpio.h>
+#include <linaos/ieee802154.h>
+#include <linaos/crc-ccitt.h>
 #include <asm/unaligned.h>
 
 #include <net/mac802154.h>

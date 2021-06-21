@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/ext2/super.c
+ *  linaos/fs/ext2/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linaos/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -17,24 +17,24 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/random.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/vfs.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/log2.h>
-#include <linux/quotaops.h>
-#include <linux/uaccess.h>
-#include <linux/dax.h>
-#include <linux/iversion.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/parser.h>
+#include <linaos/random.h>
+#include <linaos/buffer_head.h>
+#include <linaos/exportfs.h>
+#include <linaos/vfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/mount.h>
+#include <linaos/log2.h>
+#include <linaos/quotaops.h>
+#include <linaos/uaccess.h>
+#include <linaos/dax.h>
+#include <linaos/iversion.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

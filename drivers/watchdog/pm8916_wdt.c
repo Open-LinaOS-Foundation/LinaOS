@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/watchdog.h>
 
 #define PON_INT_RT_STS			0x10
 #define PMIC_WD_BARK_STS_BIT		BIT(6)

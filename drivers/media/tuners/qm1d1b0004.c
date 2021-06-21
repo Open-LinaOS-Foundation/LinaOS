@@ -15,8 +15,8 @@
  * in the FE module: VA1J5JF8007S and/or in the product: Earthsoft PT1/PT2.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <media/dvb_frontend.h>
 #include "qm1d1b0004.h"
 

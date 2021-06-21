@@ -2,9 +2,9 @@
 #ifndef LINUX_BCM47XX_WDT_H_
 #define LINUX_BCM47XX_WDT_H_
 
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
 
 
 struct bcm47xx_wdt {

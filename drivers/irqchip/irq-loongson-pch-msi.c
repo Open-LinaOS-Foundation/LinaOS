@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt) "pch-msi: " fmt
 
-#include <linux/irqchip.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/irqchip.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
 struct pch_msi_data {
 	struct mutex	msi_map_lock;

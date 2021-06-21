@@ -2,7 +2,7 @@
 /* Copyright 2017-2019 NXP */
 
 #include "enetc.h"
-#include <linux/pcs-lynx.h>
+#include <linaos/pcs-lynx.h>
 
 #define ENETC_PF_NUM_RINGS	8
 

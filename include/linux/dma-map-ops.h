@@ -6,8 +6,8 @@
 #ifndef _LINUX_DMA_MAP_OPS_H
 #define _LINUX_DMA_MAP_OPS_H
 
-#include <linux/dma-mapping.h>
-#include <linux/pgtable.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pgtable.h>
 
 struct cma;
 

@@ -1,4 +1,4 @@
-/* radeon_atombios.h -- Private header for radeon driver -*- linux-c -*-
+/* radeon_atombios.h -- Private header for radeon driver -*- linaos-c -*-
  *
  * Copyright 2007-8 Advanced Micro Devices, Inc.
  * Copyright 2008 Red Hat Inc.

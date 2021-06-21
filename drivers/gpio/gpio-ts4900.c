@@ -2,7 +2,7 @@
  * Digital I/O driver for Technologic Systems I2C FPGA Core
  *
  * Copyright (C) 2015 Technologic Systems
- * Copyright (C) 2016 Savoir-Faire Linux
+ * Copyright (C) 2016 Savoir-Faire LinaOS
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2 as
@@ -14,11 +14,11 @@
  * GNU General Public License version 2 for more details.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
 #define DEFAULT_PIN_NUMBER	32
 /*

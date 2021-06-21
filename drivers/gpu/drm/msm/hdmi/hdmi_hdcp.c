@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010-2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010-2015, The LinaOS Foundation. All rights reserved.
  */
 
 #include "hdmi.h"
-#include <linux/qcom_scm.h>
+#include <linaos/qcom_scm.h>
 
 #define HDCP_REG_ENABLE 0x01
 #define HDCP_REG_DISABLE 0x00

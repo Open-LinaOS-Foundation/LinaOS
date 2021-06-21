@@ -5,23 +5,23 @@
  * Copyright (C) 2011 Robert Jarzmik
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/bitmap.h>
-#include <linux/bitrev.h>
-#include <linux/bch.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitrev.h>
+#include <linaos/bch.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 #define CREATE_TRACE_POINTS
 #include "docg3.h"

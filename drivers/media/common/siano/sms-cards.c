@@ -2,12 +2,12 @@
 /*
  *  Card-specific functions for the Siano SMS1xxx USB dongle
  *
- *  Copyright (c) 2008 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (c) 2008 Michael Krufky <mkrufky@linaostv.org>
  */
 
 #include "sms-cards.h"
 #include "smsir.h"
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct sms_board sms_boards[] = {
 	[SMS_BOARD_UNKNOWN] = {

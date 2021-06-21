@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #define splash_width 640
 #define splash_height 480

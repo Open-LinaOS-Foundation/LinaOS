@@ -5,14 +5,14 @@
  * Copyright (C) 2014 Endless Mobile
  */
 
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/soc/amlogic/meson-canvas.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/soc/amlogic/meson-canvas.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
 
 #define NUM_CANVAS 256
 

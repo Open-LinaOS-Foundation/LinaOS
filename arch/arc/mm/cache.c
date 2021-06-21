@@ -6,14 +6,14 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/cache.h>
-#include <linux/mmu_context.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/pagemap.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/cache.h>
+#include <linaos/mmu_context.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
+#include <linaos/pagemap.h>
 #include <asm/cacheflush.h>
 #include <asm/cachectl.h>
 #include <asm/setup.h>
@@ -237,7 +237,7 @@ slc_chk:
  * ------------------
  * MMU v3
  * ------------------
- * This ver of MMU supports variable page sizes (1k-16k): although Linux will
+ * This ver of MMU supports variable page sizes (1k-16k): although LinaOS will
  * only support 8k (default), 16k and 4k.
  * However from hardware perspective, smaller page sizes aggravate aliasing
  * meaning more vaddr bits needed to disambiguate the cache-line-op ;
@@ -1157,7 +1157,7 @@ noinline void __init arc_ioc_setup(void)
 
 	/*
 	 * If IOC was already enabled (due to bootloader) it technically needs to
-	 * be reconfigured with aperture base,size corresponding to Linux memory map
+	 * be reconfigured with aperture base,size corresponding to LinaOS memory map
 	 * which will certainly be different than uboot's. But disabling and
 	 * reenabling IOC when DMA might be potentially active is tricky business.
 	 * To avoid random memory issues later, just panic here and ask user to

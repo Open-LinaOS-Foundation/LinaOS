@@ -6,9 +6,9 @@
 
 */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
 #include <asm/io.h>
 
 #include <media/dmxdev.h>

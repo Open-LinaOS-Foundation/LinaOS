@@ -2,16 +2,16 @@
 //
 // Register map access API - SPMI support
 //
-// Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+// Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
 //
 // Based on regmap-i2c.c:
 // Copyright 2011 Wolfson Microelectronics plc
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/regmap.h>
-#include <linux/spmi.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/regmap.h>
+#include <linaos/spmi.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 static int regmap_spmi_base_read(void *context,
 				 const void *reg, size_t reg_size,

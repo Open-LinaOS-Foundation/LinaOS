@@ -18,20 +18,20 @@
  * TODO: orientation events
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/events.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/events.h>
+#include <linaos/delay.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regulator/consumer.h>
 
 #define MMA8452_STATUS				0x00
 #define  MMA8452_STATUS_DRDY			(BIT(2) | BIT(1) | BIT(0))

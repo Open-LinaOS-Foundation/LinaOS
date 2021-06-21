@@ -10,21 +10,21 @@
  * my board.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/clk.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/sysrq.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_bcm63xx.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/clk.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/sysrq.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_bcm63xx.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 
 #define BCM63XX_NR_UARTS	2
 

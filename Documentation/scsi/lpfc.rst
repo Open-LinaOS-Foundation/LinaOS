@@ -53,7 +53,7 @@ Cable pull and temporary device Loss:
   devices can be temporarily suspended while transport events (such as
   those described) can occur.  
 
-  The proposed patch was posted to the linux-scsi mailing list. The patch
+  The proposed patch was posted to the linaos-scsi mailing list. The patch
   is contained in the 2.6.10-rc2 (and later) patch kits. As such, this
   patch is part of the standard 2.6.10 kernel.
 

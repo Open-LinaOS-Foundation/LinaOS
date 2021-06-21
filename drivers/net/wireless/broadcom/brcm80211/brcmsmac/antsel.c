@@ -14,7 +14,7 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <net/mac80211.h>
 
 #include "types.h"

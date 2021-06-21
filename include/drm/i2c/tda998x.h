@@ -2,7 +2,7 @@
 #ifndef __DRM_I2C_TDA998X_H__
 #define __DRM_I2C_TDA998X_H__
 
-#include <linux/hdmi.h>
+#include <linaos/hdmi.h>
 #include <dt-bindings/display/tda998x.h>
 
 enum {

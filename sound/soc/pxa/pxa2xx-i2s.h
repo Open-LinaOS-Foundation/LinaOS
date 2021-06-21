@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/soc/pxa/pxa2xx-i2s.h
+ * linaos/sound/soc/pxa/pxa2xx-i2s.h
  */
 
 #ifndef _PXA2XX_I2S_H

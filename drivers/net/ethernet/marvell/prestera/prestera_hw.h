@@ -4,7 +4,7 @@
 #ifndef _PRESTERA_HW_H_
 #define _PRESTERA_HW_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum prestera_accept_frm_type {
 	PRESTERA_ACCEPT_FRAME_TYPE_TAGGED,

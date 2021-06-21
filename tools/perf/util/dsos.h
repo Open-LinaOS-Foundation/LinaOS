@@ -4,8 +4,8 @@
 
 #include <stdbool.h>
 #include <stdio.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
 #include "rwsem.h"
 
 struct dso;

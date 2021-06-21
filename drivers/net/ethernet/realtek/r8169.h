@@ -8,8 +8,8 @@
  * See MAINTAINERS file for support contact information.
  */
 
-#include <linux/types.h>
-#include <linux/phy.h>
+#include <linaos/types.h>
+#include <linaos/phy.h>
 
 enum mac_version {
 	/* support for ancient RTL_GIGA_MAC_VER_01 has been removed */

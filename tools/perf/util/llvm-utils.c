@@ -9,9 +9,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include "debug.h"
 #include "llvm-utils.h"
 #include "config.h"
@@ -436,7 +436,7 @@ int llvm__compile_bpf(const char *path, void **p_obj_buf,
 	void *obj_buf = NULL;
 	int err, nr_cpus_avail;
 	unsigned int kernel_version;
-	char linux_version_code_str[64];
+	char linaos_version_code_str[64];
 	const char *clang_opt = llvm_param.clang_opt;
 	char clang_path[PATH_MAX], llc_path[PATH_MAX], abspath[PATH_MAX], nr_cpus_avail_str[64];
 	char serr[STRERR_BUFSIZE];
@@ -482,12 +482,12 @@ int llvm__compile_bpf(const char *path, void **p_obj_buf,
 	if (fetch_kernel_version(&kernel_version, NULL, 0))
 		kernel_version = 0;
 
-	snprintf(linux_version_code_str, sizeof(linux_version_code_str),
+	snprintf(linaos_version_code_str, sizeof(linaos_version_code_str),
 		 "0x%x", kernel_version);
 	if (asprintf(&perf_bpf_include_opts, "-I%s/bpf", perf_include_dir) < 0)
 		goto errout;
 	force_set_env("NR_CPUS", nr_cpus_avail_str);
-	force_set_env("LINUX_VERSION_CODE", linux_version_code_str);
+	force_set_env("LINUX_VERSION_CODE", linaos_version_code_str);
 	force_set_env("CLANG_EXEC", clang_path);
 	force_set_env("CLANG_OPTIONS", clang_opt);
 	force_set_env("KERNEL_INC_OPTIONS", kbuild_include_opts);

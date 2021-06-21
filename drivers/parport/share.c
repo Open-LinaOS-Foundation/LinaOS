@@ -17,22 +17,22 @@
 
 #undef PARPORT_DEBUG_SHARING		/* undef for production */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/threads.h>
-#include <linux/parport.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/threads.h>
+#include <linaos/parport.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kmod.h>
+#include <linaos/device.h>
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
 #include <asm/irq.h>
 
 #undef PARPORT_PARANOID

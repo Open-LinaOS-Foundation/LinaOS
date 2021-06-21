@@ -5,7 +5,7 @@
  * Copyright (C) 2012 Texas Instruments. All rights reserved.
  */
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 #include "scan.h"
 #include "../wlcore/debug.h"
 #include "../wlcore/tx.h"

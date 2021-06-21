@@ -3,25 +3,25 @@
  * Copyright (c) 2016, Linaro Ltd
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
-#include <linux/rpmsg.h>
-#include <linux/idr.h>
-#include <linux/circ_buf.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/sizes.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/slab.h>
+#include <linaos/rpmsg.h>
+#include <linaos/idr.h>
+#include <linaos/circ_buf.h>
+#include <linaos/soc/qcom/smem.h>
+#include <linaos/sizes.h>
+#include <linaos/delay.h>
+#include <linaos/regmap.h>
+#include <linaos/workqueue.h>
+#include <linaos/list.h>
 
-#include <linux/rpmsg/qcom_glink.h>
+#include <linaos/rpmsg/qcom_glink.h>
 
 #include "qcom_glink_native.h"
 

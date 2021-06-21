@@ -18,9 +18,9 @@
 #ifndef __DESC_H__
 #define __DESC_H__
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include "linux/ieee80211.h"
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include "linaos/ieee80211.h"
 
 #define B_OWNED_BY_CHIP     1
 #define B_OWNED_BY_HOST     0

@@ -33,15 +33,15 @@ What is this for
 ================
 
 Complain to your platform/BIOS vendor if you find a bug which is so severe
-that a workaround is not accepted in the Linux kernel. And this facility
+that a workaround is not accepted in the LinaOS kernel. And this facility
 allows you to upgrade the buggy tables before your platform/BIOS vendor
 releases an upgraded BIOS binary.
 
-This facility can be used by platform/BIOS vendors to provide a Linux
+This facility can be used by platform/BIOS vendors to provide a LinaOS
 compatible environment without modifying the underlying platform firmware.
 
 This facility also provides a powerful feature to easily debug and test
-ACPI BIOS table compatibility with the Linux kernel by modifying old
+ACPI BIOS table compatibility with the LinaOS kernel by modifying old
 platform provided ACPI tables or inserting new ACPI tables.
 
 It can and should be enabled in any kernel because there is no functional
@@ -108,7 +108,7 @@ and should be packaged by distributions (for example in the acpica package
 on SUSE).
 
 acpidump can be found in Len Browns pmtools:
-ftp://kernel.org/pub/linux/kernel/people/lenb/acpi/utils/pmtools/acpidump
+ftp://kernel.org/pub/linaos/kernel/people/lenb/acpi/utils/pmtools/acpidump
 
 This tool is also part of the acpica package on SUSE.
 Alternatively, used ACPI tables can be retrieved via sysfs in latest kernels:

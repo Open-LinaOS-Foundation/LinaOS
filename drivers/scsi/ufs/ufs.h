@@ -11,8 +11,8 @@
 #ifndef _UFS_H
 #define _UFS_H
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 #include <uapi/scsi/scsi_bsg_ufs.h>
 
 #define GENERAL_UPIU_REQUEST_SIZE (sizeof(struct utp_upiu_req))

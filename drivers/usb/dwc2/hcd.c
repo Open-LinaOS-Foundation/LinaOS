@@ -36,22 +36,22 @@
  */
 
 /*
- * This file contains the core HCD code, and implements the Linux hc_driver
+ * This file contains the core HCD code, and implements the LinaOS hc_driver
  * API
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/ch11.h>
 
 #include "core.h"
 #include "hcd.h"
@@ -4263,7 +4263,7 @@ static void dwc2_hcd_phy_reset_func(struct work_struct *work)
 
 /*
  * =========================================================================
- *  Linux HC Driver Functions
+ *  LinaOS HC Driver Functions
  * =========================================================================
  */
 

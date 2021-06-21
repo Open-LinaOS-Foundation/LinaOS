@@ -17,13 +17,13 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/init.h>
-#include <linux/edac.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/edac.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
 
 #include "edac_module.h"
 

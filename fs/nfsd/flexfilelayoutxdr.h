@@ -5,7 +5,7 @@
 #ifndef _NFSD_FLEXFILELAYOUTXDR_H
 #define _NFSD_FLEXFILELAYOUTXDR_H 1
 
-#include <linux/inet.h>
+#include <linaos/inet.h>
 #include "xdr4.h"
 
 #define FF_FLAGS_NO_LAYOUTCOMMIT 1

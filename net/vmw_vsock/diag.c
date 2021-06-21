@@ -6,9 +6,9 @@
  * Author: Stefan Hajnoczi <stefanha@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/sock_diag.h>
-#include <linux/vm_sockets_diag.h>
+#include <linaos/module.h>
+#include <linaos/sock_diag.h>
+#include <linaos/vm_sockets_diag.h>
 #include <net/af_vsock.h>
 
 static int sk_diag_fill(struct sock *sk, struct sk_buff *skb,

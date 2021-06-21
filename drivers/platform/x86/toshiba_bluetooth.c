@@ -11,12 +11,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/acpi.h>
-#include <linux/rfkill.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/acpi.h>
+#include <linaos/rfkill.h>
 
 #define BT_KILLSWITCH_MASK	0x01
 #define BT_PLUGGED_MASK		0x40

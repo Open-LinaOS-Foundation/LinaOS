@@ -1,7 +1,7 @@
 /*
  * Intel i82586 Ethernet definitions
  *
- * This is an extension to the Linux operating system, and is covered by the
+ * This is an extension to the LinaOS operating system, and is covered by the
  * same Gnu Public License that covers that work.
  *
  * copyrights (c) 1994 by Michael Hipp (hippm@informatik.uni-tuebingen.de)

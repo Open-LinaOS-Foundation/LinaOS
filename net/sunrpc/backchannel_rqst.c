@@ -21,11 +21,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ******************************************************************************/
 
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/export.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <linaos/tcp.h>
+#include <linaos/slab.h>
+#include <linaos/sunrpc/xprt.h>
+#include <linaos/export.h>
+#include <linaos/sunrpc/bc_xprt.h>
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)
 #define RPCDBG_FACILITY	RPCDBG_TRANS

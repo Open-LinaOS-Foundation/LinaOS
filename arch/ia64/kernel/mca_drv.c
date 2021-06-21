@@ -9,21 +9,21 @@
  * Copyright (C) 2005 Keith Owens <kaos@sgi.com>
  * Copyright (C) 2006 Russ Anderson <rja@sgi.com>
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kallsyms.h>
-#include <linux/memblock.h>
-#include <linux/acpi.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kallsyms.h>
+#include <linaos/memblock.h>
+#include <linaos/acpi.h>
+#include <linaos/timer.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
+#include <linaos/workqueue.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 
 #include <asm/delay.h>
 #include <asm/page.h>

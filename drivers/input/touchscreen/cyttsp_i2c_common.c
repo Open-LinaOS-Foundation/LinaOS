@@ -15,11 +15,11 @@
  * Contact Cypress Semiconductor at www.cypress.com <ttdrivers@cypress.com>
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 #include "cyttsp4_core.h"
 

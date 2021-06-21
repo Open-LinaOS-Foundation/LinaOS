@@ -51,7 +51,7 @@ perils of rebasing:
    work is in need of rebasing, that is usually a sign that it is not yet
    ready to be committed to a public repository.
 
-   That said, there are always exceptions.  Some trees (linux-next being
+   That said, there are always exceptions.  Some trees (linaos-next being
    a significant example) are frequently rebased by their nature, and
    developers know not to base work on them.  Developers will sometimes
    expose an unstable branch for others to test with or for automated
@@ -181,7 +181,7 @@ but the pull request itself should be for the unmerged branch.
 
 Even in the absence of known conflicts, doing a test merge before sending a
 pull request is a good idea.  It may alert you to problems that you somehow
-didn't see from linux-next and helps to understand exactly what you are
+didn't see from linaos-next and helps to understand exactly what you are
 asking upstream to do.
 
 Another reason for doing merges of upstream or another subsystem tree is to

@@ -6,11 +6,11 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>

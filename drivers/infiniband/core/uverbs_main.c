@@ -34,20 +34,20 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/cdev.h>
-#include <linux/anon_inodes.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/file.h>
+#include <linaos/cdev.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/slab.h>
+#include <linaos/sched/mm.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <rdma/ib.h>
 #include <rdma/uverbs_std_types.h>

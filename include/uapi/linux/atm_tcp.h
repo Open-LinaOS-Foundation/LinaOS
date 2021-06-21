@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* atm_tcp.h - Driver-specific declarations of the ATMTCP driver (for use by
 	       driver-specific utilities) */
 
@@ -8,10 +8,10 @@
 #ifndef _UAPILINUX_ATM_TCP_H
 #define _UAPILINUX_ATM_TCP_H
 
-#include <linux/atmapi.h>
-#include <linux/atm.h>
-#include <linux/atmioc.h>
-#include <linux/types.h>
+#include <linaos/atmapi.h>
+#include <linaos/atm.h>
+#include <linaos/atmioc.h>
+#include <linaos/types.h>
 
 
 /*

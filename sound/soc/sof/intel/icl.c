@@ -2,17 +2,17 @@
 //
 // Copyright(c) 2020 Intel Corporation. All rights reserved.
 //
-// Author: Fred Oh <fred.oh@linux.intel.com>
+// Author: Fred Oh <fred.oh@linaos.intel.com>
 //
 
 /*
  * Hardware interface for audio DSP on IceLake.
  */
 
-#include <linux/kernel.h>
-#include <linux/kconfig.h>
-#include <linux/export.h>
-#include <linux/bits.h>
+#include <linaos/kernel.h>
+#include <linaos/kconfig.h>
+#include <linaos/export.h>
+#include <linaos/bits.h>
 #include "../ops.h"
 #include "hda.h"
 #include "hda-ipc.h"

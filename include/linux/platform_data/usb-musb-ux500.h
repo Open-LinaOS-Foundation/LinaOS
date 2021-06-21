@@ -7,7 +7,7 @@
 #ifndef __ASM_ARCH_USB_H
 #define __ASM_ARCH_USB_H
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 #define UX500_MUSB_DMA_NUM_RX_TX_CHANNELS 8
 

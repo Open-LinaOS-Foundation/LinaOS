@@ -5,17 +5,17 @@
  *  Copyright (C) 1999  Tetsuya Okada & Niibe Yutaka
  *  Copyright (C) 2000  Philipp Rumpf <prumpf@tux.org>
  *  Copyright (C) 2002 - 2009  Paul Mundt
- *  Copyright (C) 2002  M. R. Brown  <mrbrown@linux-sh.org>
+ *  Copyright (C) 2002  M. R. Brown  <mrbrown@linaos-sh.org>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/timex.h>
-#include <linux/sched.h>
-#include <linux/clockchips.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
-#include <linux/rtc.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/profile.h>
+#include <linaos/timex.h>
+#include <linaos/sched.h>
+#include <linaos/clockchips.h>
+#include <linaos/platform_device.h>
+#include <linaos/smp.h>
+#include <linaos/rtc.h>
 #include <asm/clock.h>
 #include <asm/rtc.h>
 #include <asm/platform_early.h>

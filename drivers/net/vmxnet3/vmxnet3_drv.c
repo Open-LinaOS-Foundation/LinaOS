@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * LinaOS driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2020, VMware, Inc. All Rights Reserved.
  *
@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/ip6_checksum.h>
 
 #include "vmxnet3_int.h"

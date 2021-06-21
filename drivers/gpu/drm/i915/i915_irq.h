@@ -6,8 +6,8 @@
 #ifndef __I915_IRQ_H__
 #define __I915_IRQ_H__
 
-#include <linux/ktime.h>
-#include <linux/types.h>
+#include <linaos/ktime.h>
+#include <linaos/types.h>
 
 #include "display/intel_display.h"
 #include "i915_reg.h"

@@ -11,7 +11,7 @@
 #ifndef __DVB_STV6110_H__
 #define __DVB_STV6110_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 /* registers */

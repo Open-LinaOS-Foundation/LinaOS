@@ -8,7 +8,7 @@
 #include "../habanalabs.h"
 #include "../../include/hw_ip/mmu/mmu_general.h"
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 static inline u64 get_phys_addr(struct hl_ctx *ctx, u64 shadow_addr);
 

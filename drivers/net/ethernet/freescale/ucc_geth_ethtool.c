@@ -11,24 +11,24 @@
  * Need to re-open the interface manually after changing some parameters.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/stddef.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/types.h>
 
 #include "ucc_geth.h"

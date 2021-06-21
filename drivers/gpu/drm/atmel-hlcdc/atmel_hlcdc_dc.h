@@ -11,7 +11,7 @@
 #ifndef DRM_ATMEL_HLCDC_H
 #define DRM_ATMEL_HLCDC_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #include <drm/drm_plane.h>
 

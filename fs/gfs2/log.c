@@ -4,21 +4,21 @@
  * Copyright (C) 2004-2007 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/writeback.h>
-#include <linux/list_sort.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/buffer_head.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/crc32.h>
+#include <linaos/crc32c.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/writeback.h>
+#include <linaos/list_sort.h>
 
 #include "gfs2.h"
 #include "incore.h"

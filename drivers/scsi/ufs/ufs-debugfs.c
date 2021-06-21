@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2020 Intel Corporation
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "ufs-debugfs.h"
 #include "ufshcd.h"

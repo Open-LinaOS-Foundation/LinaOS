@@ -2,8 +2,8 @@
 /* Copyright(c) 2009-2013  Realtek Corporation.*/
 
 #include "../wifi.h"
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
 
 #include "rtl_btc.h"
 #include "halbt_precomp.h"

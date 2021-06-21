@@ -6,12 +6,12 @@
  *	(C) CC Computer Consultants GmbH, 2008
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_iprange.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_iprange.h>
 
 static bool
 iprange_mt4(const struct sk_buff *skb, struct xt_action_param *par)

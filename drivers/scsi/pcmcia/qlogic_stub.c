@@ -31,18 +31,18 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
 #include <asm/io.h>
 #include <scsi/scsi.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
+#include <linaos/major.h>
+#include <linaos/blkdev.h>
 #include <scsi/scsi_ioctl.h>
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include "scsi.h"
 #include <scsi/scsi_host.h>

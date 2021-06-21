@@ -11,13 +11,13 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fips.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fips.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/random.h>
 #include <crypto/des.h>
 #include "cifs_fs_sb.h"
 #include "cifs_unicode.h"

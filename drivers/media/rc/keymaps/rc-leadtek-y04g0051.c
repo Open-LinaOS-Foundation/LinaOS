@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table leadtek_y04g0051[] = {
 	{ 0x0300, KEY_POWER2 },

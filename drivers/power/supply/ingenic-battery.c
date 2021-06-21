@@ -6,12 +6,12 @@
  * based on drivers/power/supply/jz4740-battery.c
  */
 
-#include <linux/iio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/property.h>
 
 struct ingenic_battery {
 	struct device *dev;

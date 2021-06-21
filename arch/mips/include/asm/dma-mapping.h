@@ -2,7 +2,7 @@
 #ifndef _ASM_DMA_MAPPING_H
 #define _ASM_DMA_MAPPING_H
 
-#include <linux/swiotlb.h>
+#include <linaos/swiotlb.h>
 
 extern const struct dma_map_ops jazz_dma_ops;
 

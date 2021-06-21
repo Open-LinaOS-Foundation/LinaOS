@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-footbridge/irq.c
+ *  linaos/arch/arm/mach-footbridge/irq.c
  *
  *  Copyright (C) 1996-2000 Russell King
  *
@@ -11,12 +11,12 @@
  *   26-Jan-1999 PJB	Don't use IACK on CATS
  *   16-Mar-1999 RMK	Added autodetect of ISA PICs
  */
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 
 #include <asm/mach/irq.h>
 

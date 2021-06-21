@@ -9,7 +9,7 @@
 #ifndef _NET_RPL_H
 #define _NET_RPL_H
 
-#include <linux/rpl.h>
+#include <linaos/rpl.h>
 
 #if IS_ENABLED(CONFIG_IPV6_RPL_LWTUNNEL)
 extern int rpl_init(void);

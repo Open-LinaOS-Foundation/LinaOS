@@ -12,7 +12,7 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 /* Lengths of frame formats */
 #define LLC_PDU_LEN_I	4       /* header and 2 control bytes */

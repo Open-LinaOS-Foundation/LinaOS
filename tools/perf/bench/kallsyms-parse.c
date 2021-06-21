@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include "bench.h"
 #include "../util/stat.h"
-#include <linux/time64.h>
+#include <linaos/time64.h>
 #include <subcmd/parse-options.h>
 #include <symbol/kallsyms.h>
 

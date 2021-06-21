@@ -8,11 +8,11 @@
 #include "fsverity_private.h"
 
 #include <crypto/hash.h>
-#include <linux/backing-dev.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
+#include <linaos/backing-dev.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uaccess.h>
 
 /*
  * Read a file data page for Merkle tree construction.  Do aggressive readahead,

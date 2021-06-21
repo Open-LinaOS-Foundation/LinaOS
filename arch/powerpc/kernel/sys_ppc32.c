@@ -10,37 +10,37 @@
  * environment.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fs.h> 
-#include <linux/mm.h> 
-#include <linux/file.h> 
-#include <linux/signal.h>
-#include <linux/resource.h>
-#include <linux/times.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/poll.h>
-#include <linux/personality.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/in.h>
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/sysctl.h>
-#include <linux/binfmts.h>
-#include <linux/security.h>
-#include <linux/compat.h>
-#include <linux/ptrace.h>
-#include <linux/elf.h>
-#include <linux/ipc.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h> 
+#include <linaos/mm.h> 
+#include <linaos/file.h> 
+#include <linaos/signal.h>
+#include <linaos/resource.h>
+#include <linaos/times.h>
+#include <linaos/smp.h>
+#include <linaos/sem.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
+#include <linaos/poll.h>
+#include <linaos/personality.h>
+#include <linaos/stat.h>
+#include <linaos/mman.h>
+#include <linaos/in.h>
+#include <linaos/syscalls.h>
+#include <linaos/unistd.h>
+#include <linaos/sysctl.h>
+#include <linaos/binfmts.h>
+#include <linaos/security.h>
+#include <linaos/compat.h>
+#include <linaos/ptrace.h>
+#include <linaos/elf.h>
+#include <linaos/ipc.h>
+#include <linaos/slab.h>
 
 #include <asm/ptrace.h>
 #include <asm/types.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/time.h>
 #include <asm/mmu_context.h>
@@ -60,7 +60,7 @@ unsigned long compat_sys_mmap2(unsigned long addr, size_t len,
  * long long munging:
  * The 32 bit ABI passes long longs in an odd even register pair.
  * High and low parts are swapped depending on endian mode,
- * so define a macro (similar to mips linux32) to handle that.
+ * so define a macro (similar to mips linaos32) to handle that.
  */
 #ifdef __LITTLE_ENDIAN__
 #define merge_64(low, high) ((u64)high << 32) | low

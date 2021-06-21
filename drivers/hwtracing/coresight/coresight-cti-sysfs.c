@@ -4,13 +4,13 @@
  * Author: Mike Leach <mike.leach@linaro.org>
  */
 
-#include <linux/atomic.h>
-#include <linux/coresight.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
+#include <linaos/atomic.h>
+#include <linaos/coresight.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysfs.h>
 
 #include "coresight-cti.h"
 
@@ -1067,7 +1067,7 @@ static int cti_create_con_sysfs_attr(struct device *dev,
 	con->con_attrs[attr_idx] = &eattr->attr.attr;
 	/*
 	 * Initialize the dynamically allocated attribute
-	 * to avoid LOCKDEP splat. See include/linux/sysfs.h
+	 * to avoid LOCKDEP splat. See include/linaos/sysfs.h
 	 * for more details.
 	 */
 	sysfs_attr_init(con->con_attrs[attr_idx]);

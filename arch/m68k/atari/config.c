@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/atari/config.c
+ *  linaos/arch/m68k/atari/config.c
  *
  *  Copyright (C) 1994 Bjoern Brauel
  *
@@ -24,17 +24,17 @@
  * Miscellaneous atari stuff
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/usb/isp116x.h>
-#include <linux/vt_kern.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/isp116x.h>
+#include <linaos/vt_kern.h>
+#include <linaos/module.h>
 
 #include <asm/bootinfo.h>
 #include <asm/bootinfo-atari.h>

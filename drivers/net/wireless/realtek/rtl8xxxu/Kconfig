@@ -7,7 +7,7 @@ config RTL8XXXU
 	depends on MAC80211 && USB
 	help
 	  This is an alternative driver for various Realtek RTL8XXX
-	  parts written to utilize the Linux mac80211 stack.
+	  parts written to utilize the LinaOS mac80211 stack.
 	  The driver is known to work with a number of RTL8723AU,
 	  RL8188CU, RTL8188RU, RTL8191CU, and RTL8192CU devices
 

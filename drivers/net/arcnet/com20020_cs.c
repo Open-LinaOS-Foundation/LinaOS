@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 PCMCIA support
+ * LinaOS ARCnet driver - COM20020 PCMCIA support
  *
  * Written 1994-1999 by Avery Pennarun,
  *    based on an ISA version by David Woodhouse.
@@ -34,15 +34,15 @@
 
 #define pr_fmt(fmt) "arcnet:" KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/io.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>
 

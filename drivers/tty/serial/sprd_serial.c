@@ -3,23 +3,23 @@
  * Copyright (C) 2012-2015 Spreadtrum Communications Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma/sprd-dma.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dma/sprd-dma.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 
 /* device name */
 #define UART_NR_MAX		8

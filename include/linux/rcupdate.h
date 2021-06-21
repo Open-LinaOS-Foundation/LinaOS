@@ -20,15 +20,15 @@
 #ifndef __LINUX_RCUPDATE_H
 #define __LINUX_RCUPDATE_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/atomic.h>
-#include <linux/irqflags.h>
-#include <linux/preempt.h>
-#include <linux/bottom_half.h>
-#include <linux/lockdep.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/atomic.h>
+#include <linaos/irqflags.h>
+#include <linaos/preempt.h>
+#include <linaos/bottom_half.h>
+#include <linaos/lockdep.h>
 #include <asm/processor.h>
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 
 #define ULONG_CMP_GE(a, b)	(ULONG_MAX / 2 >= (a) - (b))
 #define ULONG_CMP_LT(a, b)	(ULONG_MAX / 2 < (a) - (b))
@@ -222,9 +222,9 @@ do { \
  */
 
 #if defined(CONFIG_TREE_RCU)
-#include <linux/rcutree.h>
+#include <linaos/rcutree.h>
 #elif defined(CONFIG_TINY_RCU)
-#include <linux/rcutiny.h>
+#include <linaos/rcutiny.h>
 #else
 #error "Unknown RCU implementation specified to kernel configuration"
 #endif

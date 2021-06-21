@@ -343,7 +343,7 @@ extern struct role_trans_datum *policydb_roletr_search(
 #define OBJECT_R_VAL 1
 
 #define POLICYDB_MAGIC SELINUX_MAGIC
-#define POLICYDB_STRING "SE Linux"
+#define POLICYDB_STRING "SE LinaOS"
 
 struct policy_file {
 	char *data;

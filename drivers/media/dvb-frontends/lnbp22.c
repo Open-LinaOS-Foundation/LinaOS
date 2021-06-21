@@ -5,16 +5,16 @@
  * Copyright (C) 2006 Dominik Kuhlen
  * Based on lnbp21 driver
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "lnbp22.h"

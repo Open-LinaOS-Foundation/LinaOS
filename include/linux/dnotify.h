@@ -2,12 +2,12 @@
 #ifndef _LINUX_DNOTIFY_H
 #define _LINUX_DNOTIFY_H
 /*
- * Directory notification for Linux
+ * Directory notification for LinaOS
  *
  * Copyright (C) 2000,2002 Stephen Rothwell
  */
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 struct dnotify_struct {
 	struct dnotify_struct *	dn_next;

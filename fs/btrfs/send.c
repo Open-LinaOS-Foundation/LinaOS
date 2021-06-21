@@ -3,18 +3,18 @@
  * Copyright (C) 2012 Alexander Block.  All rights reserved.
  */
 
-#include <linux/bsearch.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/sort.h>
-#include <linux/mount.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/radix-tree.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/compat.h>
-#include <linux/crc32c.h>
+#include <linaos/bsearch.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/sort.h>
+#include <linaos/mount.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/radix-tree.h>
+#include <linaos/vmalloc.h>
+#include <linaos/string.h>
+#include <linaos/compat.h>
+#include <linaos/crc32c.h>
 
 #include "send.h"
 #include "backref.h"

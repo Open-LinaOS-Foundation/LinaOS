@@ -78,7 +78,7 @@
 };
 
 &twl_keypad {
-	linux,keymap = < MATRIX_KEY(6, 8, KEY_VOLUMEUP)
+	linaos,keymap = < MATRIX_KEY(6, 8, KEY_VOLUMEUP)
 			 MATRIX_KEY(7, 8, KEY_VOLUMEDOWN)
 			 >;
 };

@@ -12,8 +12,8 @@
  */
 
 #include <asm/asm-offsets.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
 
 #define KSP_WORD_OFF 	((TASK_THREAD + THREAD_KSP) / 4)
 

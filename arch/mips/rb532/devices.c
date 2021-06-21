@@ -5,19 +5,19 @@
  *  Copyright (C) 2006 Felix Fietkau <nbd@openwrt.org>
  *  Copyright (C) 2007 Florian Fainelli <florian@openwrt.org>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/platnand.h>
-#include <linux/mtd/mtd.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/serial_8250.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/serial_8250.h>
 
 #include <asm/bootinfo.h>
 

@@ -2,12 +2,12 @@
 #ifndef _ASM_X86_PCI_H
 #define _ASM_X86_PCI_H
 
-#include <linux/mm.h> /* for struct page */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/scatterlist.h>
-#include <linux/numa.h>
+#include <linaos/mm.h> /* for struct page */
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/scatterlist.h>
+#include <linaos/numa.h>
 #include <asm/io.h>
 #include <asm/memtype.h>
 #include <asm/x86_init.h>

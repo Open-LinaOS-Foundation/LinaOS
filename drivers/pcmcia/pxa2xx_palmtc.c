@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa2xx_palmtc.c
+ * linaos/drivers/pcmcia/pxa2xx_palmtc.c
  *
  * Driver for Palm Tungsten|C PCMCIA
  *
@@ -8,10 +8,10 @@
  * Copyright (C) 2009-2011 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
 
 #include <asm/mach-types.h>
 #include <mach/palmtc.h>

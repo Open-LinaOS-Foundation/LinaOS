@@ -7,8 +7,8 @@
 #ifndef MFD_T7L66XB_H
 #define MFD_T7L66XB_H
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tmio.h>
 
 struct t7l66xb_platform_data {
 	int (*enable)(struct platform_device *dev);

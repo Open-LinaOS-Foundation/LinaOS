@@ -263,7 +263,7 @@
 &kpp {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_kpp>;
-	linux,keymap = <
+	linaos,keymap = <
 			MATRIX_KEY(0x0, 0x0, KEY_UP)
 			MATRIX_KEY(0x0, 0x1, KEY_DOWN)
 			MATRIX_KEY(0x0, 0x2, KEY_VOLUMEDOWN)

@@ -2,8 +2,8 @@
 #ifndef _ASM_S390_FUTEX_H
 #define _ASM_S390_FUTEX_H
 
-#include <linux/uaccess.h>
-#include <linux/futex.h>
+#include <linaos/uaccess.h>
+#include <linaos/futex.h>
 #include <asm/mmu_context.h>
 #include <asm/errno.h>
 

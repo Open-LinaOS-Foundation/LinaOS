@@ -5,17 +5,17 @@
  * Copyright (c) 2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/iommu.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_iommu.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/fsl/mc.h>
+#include <linaos/export.h>
+#include <linaos/iommu.h>
+#include <linaos/limits.h>
+#include <linaos/module.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/fsl/mc.h>
 
 #define NO_IOMMU	1
 

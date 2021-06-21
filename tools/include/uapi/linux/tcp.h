@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * INET		An implementation of the TCP/IP protocol suite for the LINUX
  *		operating system.  INET is implemented using the  BSD Socket
@@ -18,9 +18,9 @@
 #ifndef _UAPI_LINUX_TCP_H
 #define _UAPI_LINUX_TCP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
-#include <linux/socket.h>
+#include <linaos/socket.h>
 
 struct tcphdr {
 	__be16	source;

@@ -33,10 +33,10 @@
 #ifndef IB_SRP_H
 #define IB_SRP_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/scatterlist.h>
 
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>

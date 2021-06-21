@@ -15,17 +15,17 @@
  * Kevin Chea
  *
  */
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/syscall.h>
-#include <linux/linkage.h>
-#include <linux/stringify.h>
-#include <linux/errno.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/shm.h>
+#include <linaos/linkage.h>
+#include <linaos/stringify.h>
+#include <linaos/errno.h>
+#include <linaos/syscalls.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/mman.h>
+#include <linaos/sched/mm.h>
+#include <linaos/shm.h>
 
 syscall_t sys_call_table[] /* FIXME __cacheline_aligned */= {
 #define __SYSCALL(nr, entry)	(syscall_t)entry,

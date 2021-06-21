@@ -2,9 +2,9 @@
 /*
  * Copyright (c) 2014 Broadcom Corporation
  */
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
 
 #include <defs.h>
 #include "debug.h"

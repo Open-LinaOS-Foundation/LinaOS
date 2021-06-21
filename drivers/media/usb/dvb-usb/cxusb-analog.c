@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 //
-// DVB USB compliant linux driver for Conexant USB reference design -
+// DVB USB compliant linaos driver for Conexant USB reference design -
 // (analog part).
 //
 // Copyright (C) 2011, 2017, 2018
@@ -21,12 +21,12 @@
 //  * VBI support,
 //  * controls support
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/ktime.h>
-#include <linux/vmalloc.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/ktime.h>
+#include <linaos/vmalloc.h>
 #include <media/drv-intf/cx25840.h>
 #include <media/tuner.h>
 #include <media/v4l2-fh.h>

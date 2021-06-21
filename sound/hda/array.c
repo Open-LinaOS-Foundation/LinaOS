@@ -3,7 +3,7 @@
  * generic arrays
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/hdaudio.h>
 

@@ -11,7 +11,7 @@
  *
  *	Thanks to Intel for making available several different Pentium,
  *	Pentium Pro and Pentium-II/Xeon MP machines.
- *	Original development of Linux SMP code supported by Caldera.
+ *	Original development of LinaOS SMP code supported by Caldera.
  *
  *	Fixes
  *		Felix Koop	:	NR_CPUS used properly
@@ -39,24 +39,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/percpu.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/nmi.h>
-#include <linux/tboot.h>
-#include <linux/gfp.h>
-#include <linux/cpuidle.h>
-#include <linux/numa.h>
-#include <linux/pgtable.h>
-#include <linux/overflow.h>
-#include <linux/syscore_ops.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/topology.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/percpu.h>
+#include <linaos/memblock.h>
+#include <linaos/err.h>
+#include <linaos/nmi.h>
+#include <linaos/tboot.h>
+#include <linaos/gfp.h>
+#include <linaos/cpuidle.h>
+#include <linaos/numa.h>
+#include <linaos/pgtable.h>
+#include <linaos/overflow.h>
+#include <linaos/syscore_ops.h>
 
 #include <asm/acpi.h>
 #include <asm/desc.h>
@@ -73,7 +73,7 @@
 #include <asm/fpu/internal.h>
 #include <asm/setup.h>
 #include <asm/uv/uv.h>
-#include <linux/mc146818rtc.h>
+#include <linaos/mc146818rtc.h>
 #include <asm/i8259.h>
 #include <asm/misc.h>
 #include <asm/qspinlock.h>

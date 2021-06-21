@@ -6,8 +6,8 @@
 
 #define GENERATING_ASM_OFFSETS
 
-#include <linux/kbuild.h>
-#include <linux/sched.h>
+#include <linaos/kbuild.h>
+#include <linaos/sched.h>
 #include <asm/thread_info.h>
 #include <asm/ptrace.h>
 

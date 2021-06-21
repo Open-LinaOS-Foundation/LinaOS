@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPIS390_CMB_H
 #define _UAPIS390_CMB_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct cmbdata - channel measurement block data for user space

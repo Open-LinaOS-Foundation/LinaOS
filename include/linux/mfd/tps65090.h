@@ -8,8 +8,8 @@
 #ifndef __LINUX_MFD_TPS65090_H
 #define __LINUX_MFD_TPS65090_H
 
-#include <linux/irq.h>
-#include <linux/regmap.h>
+#include <linaos/irq.h>
+#include <linaos/regmap.h>
 
 /* TPS65090 IRQs */
 enum {

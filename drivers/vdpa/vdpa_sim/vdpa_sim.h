@@ -6,12 +6,12 @@
 #ifndef _VDPA_SIM_H
 #define _VDPA_SIM_H
 
-#include <linux/iova.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
-#include <linux/virtio_byteorder.h>
-#include <linux/vhost_iotlb.h>
-#include <uapi/linux/virtio_config.h>
+#include <linaos/iova.h>
+#include <linaos/vringh.h>
+#include <linaos/vdpa.h>
+#include <linaos/virtio_byteorder.h>
+#include <linaos/vhost_iotlb.h>
+#include <uapi/linaos/virtio_config.h>
 
 #define VDPASIM_FEATURES	((1ULL << VIRTIO_F_ANY_LAYOUT) | \
 				 (1ULL << VIRTIO_F_VERSION_1)  | \

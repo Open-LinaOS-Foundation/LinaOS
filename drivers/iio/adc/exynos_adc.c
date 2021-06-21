@@ -7,31 +7,31 @@
  *  Copyright (C) 2013 Naveen Krishna Chatradhi <ch.naveen@samsung.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
-#include <linux/input.h>
+#include <linaos/compiler.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/of_platform.h>
+#include <linaos/err.h>
+#include <linaos/input.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/machine.h>
+#include <linaos/iio/driver.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
 
 /* S3C/EXYNOS4412/5250 ADC_V1 registers definitions */
 #define ADC_V1_CON(x)		((x) + 0x00)

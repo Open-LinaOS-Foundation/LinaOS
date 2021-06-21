@@ -5,9 +5,9 @@
  * Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
  */
 
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
 
 #include "common.h"
 #include "hardware.h"

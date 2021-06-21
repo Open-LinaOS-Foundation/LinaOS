@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/pxa3xx-ulpi.c
+ * linaos/arch/arm/mach-pxa/pxa3xx-ulpi.c
  *
  * code specific to pxa3xx aka Monahans
  *
@@ -10,21 +10,21 @@
  *             initial version: pxa310 USB Host mode support
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/usb.h>
+#include <linaos/usb/otg.h>
 
 #include <mach/hardware.h>
 #include "regs-u2d.h"
-#include <linux/platform_data/usb-pxa3xx-ulpi.h>
+#include <linaos/platform_data/usb-pxa3xx-ulpi.h>
 
 struct pxa3xx_u2d_ulpi {
 	struct clk		*clk;

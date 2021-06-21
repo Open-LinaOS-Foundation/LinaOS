@@ -28,9 +28,9 @@
 #ifndef __CVMX_H__
 #define __CVMX_H__
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
 
 enum cvmx_mips_space {
 	CVMX_MIPS_SPACE_XKSEG = 3LL,
@@ -91,7 +91,7 @@ enum cvmx_mips_space {
 #define CASTPTR(type, v) ((type *)(long)(v))
 
 /*
- * Returns processor ID, different Linux and simple exec versions
+ * Returns processor ID, different LinaOS and simple exec versions
  * provided in the cvmx-app-init*.c files.
  */
 static inline uint32_t cvmx_get_proc_id(void) __attribute__ ((pure));

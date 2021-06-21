@@ -53,7 +53,7 @@ static inline void put_unaligned_be32(u32 val, void *p)
 #define XZ_EXTERN static
 
 /* xz.h needs to be included directly since we need enum xz_mode */
-#include "../../../include/linux/xz.h"
+#include "../../../include/linaos/xz.h"
 
 #undef XZ_EXTERN
 

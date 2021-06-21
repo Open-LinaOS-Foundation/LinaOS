@@ -5,7 +5,7 @@
  * Generic optimized RAID-5 checksumming functions.
  */
 
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 
 static void
 xor_8regs_2(unsigned long bytes, unsigned long *p1, unsigned long *p2)

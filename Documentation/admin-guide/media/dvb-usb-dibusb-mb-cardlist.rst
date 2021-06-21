@@ -22,7 +22,7 @@ dvb-usb-dibusb-mb cards list
      - 0547:2235
    * - Artec T1 USB2.0
      - 05d8:8109, 05d8:810a
-   * - Compro Videomate DVB-U2000 - DVB-T USB1.1 (please confirm to linux-dvb)
+   * - Compro Videomate DVB-U2000 - DVB-T USB1.1 (please confirm to linaos-dvb)
      - 185b:d000, 145f:010c, 185b:d001
    * - DiBcom USB1.1 DVB-T reference design (MOD3000)
      - 10b8:0bb8, 10b8:0bb9

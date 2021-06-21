@@ -514,7 +514,7 @@
 			clock-frequency = <83333334>;
 
 			EMAC0: ethernet@b0000000 {
-				linux,network-index = <0>;
+				linaos,network-index = <0>;
 				device_type = "network";
 				compatible = "ibm,emac4sync";
 				has-inverted-stacr-oc;
@@ -540,7 +540,7 @@
 			};
 
 			EMAC1: ethernet@b0000100 {
-				linux,network-index = <1>;
+				linaos,network-index = <1>;
 				device_type = "network";
 				compatible = "ibm,emac4sync";
 				has-inverted-stacr-oc;

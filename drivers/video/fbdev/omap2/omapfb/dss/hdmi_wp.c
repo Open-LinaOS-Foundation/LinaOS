@@ -7,11 +7,11 @@
 
 #define DSS_SUBSYS_NAME "HDMIWP"
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/seq_file.h>
 
 #include <video/omapfb_dss.h>
 

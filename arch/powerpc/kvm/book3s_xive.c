@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) "xive-kvm: " fmt
 
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/percpu.h>
-#include <linux/cpumask.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/kvm_host.h>
+#include <linaos/err.h>
+#include <linaos/gfp.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/percpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/uaccess.h>
 #include <asm/kvm_book3s.h>
 #include <asm/kvm_ppc.h>
 #include <asm/hvcall.h>
@@ -25,8 +25,8 @@
 #include <asm/time.h>
 #include <asm/opal.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 #include "book3s_xive.h"
 

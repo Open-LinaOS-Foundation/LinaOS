@@ -7,26 +7,26 @@
  * Parts of the driver are based on:
  *  - arch/arm/mach-bcm2708/vcio.c file written by Gray Girling that was
  *    obtained from branch "rpi-3.6.y" of git://github.com/raspberrypi/
- *    linux.git
+ *    linaos.git
  *  - drivers/mailbox/bcm2835-ipc.c by Lubomir Rintel at
- *    https://github.com/hackerspace/rpi-linux/blob/lr-raspberry-pi/drivers/
+ *    https://github.com/hackerspace/rpi-linaos/blob/lr-raspberry-pi/drivers/
  *    mailbox/bcm2835-ipc.c
  *  - documentation available on the following web site:
  *    https://github.com/raspberrypi/firmware/wiki/Mailbox-property-interface
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 /* Mailboxes */
 #define ARM_0_MAIL0	0x00

@@ -6,13 +6,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/dlm.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/sched/signal.h>
+#include <linaos/fs.h>
+#include <linaos/dlm.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/sched/signal.h>
 
 #include "incore.h"
 #include "glock.h"

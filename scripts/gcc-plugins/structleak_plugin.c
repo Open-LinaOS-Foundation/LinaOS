@@ -54,7 +54,7 @@ static tree handle_user_attribute(tree *node, tree name, tree args, int flags, b
 {
 	*no_add_attrs = true;
 
-	/* check for types? for now accept everything linux has to offer */
+	/* check for types? for now accept everything linaos has to offer */
 	if (TREE_CODE(*node) != FIELD_DECL)
 		return NULL_TREE;
 

@@ -6,7 +6,7 @@
 
 /* This file included from rawmidi.c */
 
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 struct snd_rawmidi_params32 {
 	s32 stream;

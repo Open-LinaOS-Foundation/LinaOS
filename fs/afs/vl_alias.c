@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/namei.h>
 #include <keys/rxrpc-type.h>
 #include "internal.h"
 

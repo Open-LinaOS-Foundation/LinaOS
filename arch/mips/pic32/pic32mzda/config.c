@@ -3,9 +3,9 @@
  * Purna Chandra Mandal, purna.mandal@microchip.com
  * Copyright (C) 2015 Microchip Technology Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mach-pic32/pic32.h>
 

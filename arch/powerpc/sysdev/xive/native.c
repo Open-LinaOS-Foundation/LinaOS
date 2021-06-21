@@ -5,20 +5,20 @@
 
 #define pr_fmt(fmt) "xive: " fmt
 
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/cpumask.h>
-#include <linux/mm.h>
-#include <linux/kmemleak.h>
+#include <linaos/types.h>
+#include <linaos/irq.h>
+#include <linaos/debugfs.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/cpumask.h>
+#include <linaos/mm.h>
+#include <linaos/kmemleak.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

@@ -6,9 +6,9 @@
  *  Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/string.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/string.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 #include <asm/bootinfo.h>
 #include <asm/addrspace.h>

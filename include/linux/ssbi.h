@@ -7,7 +7,7 @@
 #ifndef _LINUX_SSBI_H
 #define _LINUX_SSBI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 int ssbi_write(struct device *dev, u16 addr, const u8 *buf, int len);
 int ssbi_read(struct device *dev, u16 addr, u8 *buf, int len);

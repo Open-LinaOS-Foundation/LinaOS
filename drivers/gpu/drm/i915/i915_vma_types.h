@@ -26,7 +26,7 @@
 #ifndef __I915_VMA_TYPES_H__
 #define __I915_VMA_TYPES_H__
 
-#include <linux/rbtree.h>
+#include <linaos/rbtree.h>
 
 #include <drm/drm_mm.h>
 

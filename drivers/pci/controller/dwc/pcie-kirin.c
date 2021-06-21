@@ -8,22 +8,22 @@
  * Author: Xiaowei Song <songxiaowei@huawei.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/resource.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_address.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/resource.h>
+#include <linaos/types.h>
 #include "pcie-designware.h"
 
 #define to_kirin_pcie(x) dev_get_drvdata((x)->dev)

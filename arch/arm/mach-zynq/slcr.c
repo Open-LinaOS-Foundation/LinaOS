@@ -5,12 +5,12 @@
  * Copyright (c) 2011-2013 Xilinx Inc.
  */
 
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/clk/zynq.h>
+#include <linaos/io.h>
+#include <linaos/reboot.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_address.h>
+#include <linaos/regmap.h>
+#include <linaos/clk/zynq.h>
 #include "common.h"
 
 /* register offsets */

@@ -15,23 +15,23 @@
  * the dcache entry is deleted or garbage collected.
  */
 
-#include <linux/ratelimit.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/fscrypt.h>
-#include <linux/fsnotify.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/hash.h>
-#include <linux/cache.h>
-#include <linux/export.h>
-#include <linux/security.h>
-#include <linux/seqlock.h>
-#include <linux/memblock.h>
-#include <linux/bit_spinlock.h>
-#include <linux/rculist_bl.h>
-#include <linux/list_lru.h>
+#include <linaos/ratelimit.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/fscrypt.h>
+#include <linaos/fsnotify.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/hash.h>
+#include <linaos/cache.h>
+#include <linaos/export.h>
+#include <linaos/security.h>
+#include <linaos/seqlock.h>
+#include <linaos/memblock.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/rculist_bl.h>
+#include <linaos/list_lru.h>
 #include "internal.h"
 #include "mount.h"
 

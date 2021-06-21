@@ -3,7 +3,7 @@
 #define __NET_TC_GACT_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_gact.h>
+#include <linaos/tc_act/tc_gact.h>
 
 struct tcf_gact {
 	struct tc_action	common;

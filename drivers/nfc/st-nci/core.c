@@ -5,12 +5,12 @@
  * Copyright (C) 2014-2015  STMicroelectronics SAS. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/nfc.h>
+#include <linaos/module.h>
+#include <linaos/nfc.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
 
 #include "st-nci.h"
 

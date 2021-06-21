@@ -9,17 +9,17 @@
  * Fei  Wang <w.f@huawei.com>
  */
 
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/hi655x-pmic.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/hi655x-pmic.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 static const struct regmap_irq hi655x_irqs[] = {
 	{ .reg_offset = 0, .mask = OTMP_D1R_INT_MASK },

@@ -9,7 +9,7 @@
  * Documentation/arm/vlocks.rst.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include "vlock.h"
 
 /* Select different code if voting flags  can fit in a single word. */

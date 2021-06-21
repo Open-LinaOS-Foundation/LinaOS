@@ -3,7 +3,7 @@
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <LinaOS390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2009
  */
 
@@ -44,20 +44,20 @@
 #define DASD_STATE_READY  4
 #define DASD_STATE_ONLINE 5
 
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/blkdev.h>
-#include <linux/genhd.h>
-#include <linux/hdreg.h>
-#include <linux/interrupt.h>
-#include <linux/log2.h>
+#include <linaos/module.h>
+#include <linaos/wait.h>
+#include <linaos/blkdev.h>
+#include <linaos/genhd.h>
+#include <linaos/hdreg.h>
+#include <linaos/interrupt.h>
+#include <linaos/log2.h>
 #include <asm/ccwdev.h>
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 #include <asm/debug.h>
 #include <asm/dasd.h>
 #include <asm/idals.h>
-#include <linux/bitops.h>
-#include <linux/blk-mq.h>
+#include <linaos/bitops.h>
+#include <linaos/blk-mq.h>
 
 /* DASD discipline magic */
 #define DASD_ECKD_MAGIC 0xC5C3D2C4

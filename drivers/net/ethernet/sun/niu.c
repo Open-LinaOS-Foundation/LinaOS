@@ -6,32 +6,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/log2.h>
-#include <linux/jiffies.h>
-#include <linux/crc32.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/etherdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/mii.h>
+#include <linaos/if.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/ipv6.h>
+#include <linaos/log2.h>
+#include <linaos/jiffies.h>
+#include <linaos/crc32.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
-#include <linux/io.h>
-#include <linux/of_device.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
 
 #include "niu.h"
 

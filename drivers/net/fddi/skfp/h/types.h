@@ -8,7 +8,7 @@
  *
  ******************************************************************************/
 
-#include	<linux/types.h>
+#include	<linaos/types.h>
 /*
 	----------------------
 	Basic SMT system types

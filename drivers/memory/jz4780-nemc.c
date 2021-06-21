@@ -6,19 +6,19 @@
  * Author: Alex Smith <alex@alex-smith.me.uk>
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/math64.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
-#include <linux/jz4780-nemc.h>
+#include <linaos/jz4780-nemc.h>
 
 #define NEMC_SMCRn(n)		(0x14 + (((n) - 1) * 4))
 #define NEMC_NFCSR		0x50

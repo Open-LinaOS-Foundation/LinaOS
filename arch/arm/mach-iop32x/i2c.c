@@ -7,16 +7,16 @@
  * Copyright (C) 2004 Intel Corporation.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
-#include <linux/gpio/machine.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/serial_core.h>
+#include <linaos/io.h>
+#include <linaos/gpio/machine.h>
 #include <asm/page.h>
 #include <asm/mach/map.h>
 #include <asm/setup.h>

@@ -7,17 +7,17 @@
  * Copyright (C) Shaohua Li (shaohua.li@intel.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
+#include <linaos/errno.h>
+#include <linaos/pm.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/delay.h>
 #include "../pci.h"
 
 #ifdef MODULE_PARAM_PREFIX

@@ -11,7 +11,7 @@
 #ifndef __DLM_DOT_H__
 #define __DLM_DOT_H__
 
-#include <uapi/linux/dlm.h>
+#include <uapi/linaos/dlm.h>
 
 
 struct dlm_slot {

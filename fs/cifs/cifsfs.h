@@ -22,7 +22,7 @@
 #ifndef _CIFSFS_H
 #define _CIFSFS_H
 
-#include <linux/hash.h>
+#include <linaos/hash.h>
 
 #define ROOT_I 2
 

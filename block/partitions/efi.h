@@ -11,14 +11,14 @@
 #ifndef FS_PART_EFI_H_INCLUDED
 #define FS_PART_EFI_H_INCLUDED
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/efi.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/genhd.h>
+#include <linaos/kernel.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/efi.h>
+#include <linaos/compiler.h>
 
 #define MSDOS_MBR_SIGNATURE 0xaa55
 #define EFI_PMBR_OSTYPE_EFI 0xEF

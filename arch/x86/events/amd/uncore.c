@@ -5,13 +5,13 @@
  * Author: Jacob Shin <jacob.shin@amd.com>
  */
 
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
+#include <linaos/perf_event.h>
+#include <linaos/percpu.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
 
 #include <asm/cpufeature.h>
 #include <asm/perf_event.h>

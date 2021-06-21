@@ -16,14 +16,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/ath9k_platform.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/relay.h>
-#include <linux/dmi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/ath9k_platform.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
+#include <linaos/relay.h>
+#include <linaos/dmi.h>
 #include <net/ieee80211_radiotap.h>
 
 #include "ath9k.h"

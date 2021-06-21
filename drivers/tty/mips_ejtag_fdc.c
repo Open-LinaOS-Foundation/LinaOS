@@ -5,28 +5,28 @@
  * Copyright (C) 2007-2015 Imagination Technologies Ltd
  */
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kgdb.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/kgdb.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/uaccess.h>
 
 #include <asm/cdmm.h>
 #include <asm/irq.h>

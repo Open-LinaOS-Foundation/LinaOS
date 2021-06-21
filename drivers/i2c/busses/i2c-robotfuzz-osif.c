@@ -10,12 +10,12 @@
  * Copyright (C) 2006 Til Harbaum (Till@Harbaum.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 #define OSIFI2C_READ		20
 #define OSIFI2C_WRITE		21

@@ -10,13 +10,13 @@
  *		Lots of code moved from tcp.c and ip.c; see those files
  *		for more names.
  */
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 #include <net/checksum.h>
 #include <asm/byteorder.h>
 #include <asm/string.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define addc(_t,_r)                     \
 	__asm__ __volatile__ (          \

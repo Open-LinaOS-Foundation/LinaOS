@@ -3,7 +3,7 @@
  * Copyright (C) 1999 - 2010 Intel Corporation.
  * Copyright (C) 2010 OKI SEMICONDUCTOR Co., LTD.
  *
- * This code was derived from the Intel e1000e Linux driver.
+ * This code was derived from the Intel e1000e LinaOS driver.
  */
 
 #ifndef _PCH_GBE_H_
@@ -11,13 +11,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mii.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/vmalloc.h>
+#include <linaos/mii.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/vmalloc.h>
 #include <net/ip.h>
 #include <net/tcp.h>
 #include <net/udp.h>
@@ -480,8 +480,8 @@ struct pch_gbe_rx_ring {
  * @tx_bytes:		    total bytes transmitted
  * @rx_errors:		    bad packets received
  * @tx_errors:		    packet transmit problems
- * @rx_dropped:		    no space in Linux buffers
- * @tx_dropped:		    no space available in Linux
+ * @rx_dropped:		    no space in LinaOS buffers
+ * @tx_dropped:		    no space available in LinaOS
  * @multicast:		    multicast packets received
  * @collisions:		    collisions
  * @rx_crc_errors:	    received packet with crc error

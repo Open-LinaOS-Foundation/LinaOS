@@ -6,7 +6,7 @@
  *
  *
  *
- * from linux/include/linux/befs_fs.h
+ * from linaos/include/linaos/befs_fs.h
  *
  * Copyright (C) 1999 Makoto Kato (m_kato@ga2.so-net.ne.jp)
  *
@@ -16,7 +16,7 @@
 #define _LINUX_BEFS_FS_TYPES
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <linaos/types.h>
 #endif /*__KERNEL__*/
 
 #define PACKED __attribute__ ((__packed__))

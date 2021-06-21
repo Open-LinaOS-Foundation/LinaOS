@@ -4,15 +4,15 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/signal.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/perf_event.h>
-#include <linux/mm_types.h>
+#include <linaos/signal.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched/signal.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/kdebug.h>
+#include <linaos/perf_event.h>
+#include <linaos/mm_types.h>
 #include <asm/mmu.h>
 
 /*

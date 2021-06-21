@@ -42,7 +42,7 @@ EOH
 
 my $lh_hdr = ! defined $kernel
 	? '#include "ccs-os.h"' . "\n"
-	: "#include <linux/bits.h>\n#include <linux/types.h>\n";
+	: "#include <linaos/bits.h>\n#include <linaos/types.h>\n";
 my $uint32_t = ! defined $kernel ? 'uint32_t' : 'u32';
 my $uint16_t = ! defined $kernel ? 'uint16_t' : 'u16';
 
@@ -96,7 +96,7 @@ print $H <<EOF
 EOF
   ;
 
-print $H "#include <linux/bits.h>\n\n" if defined $kernel;
+print $H "#include <linaos/bits.h>\n\n" if defined $kernel;
 
 print $H <<EOF
 #define CCS_FL_BASE		16

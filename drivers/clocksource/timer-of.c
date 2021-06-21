@@ -4,12 +4,12 @@
  *
  * Author: Daniel Lezcano <daniel.lezcano@linaro.org>
  */
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/slab.h>
 
 #include "timer-of.h"
 

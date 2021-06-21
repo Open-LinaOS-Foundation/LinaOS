@@ -9,7 +9,7 @@
  *	(c) 1999/2000 Henning Zabel <henning@uni-paderborn.de>
  *
  *
- * The driver brings the USB functions of the MDC800 to Linux.
+ * The driver brings the USB functions of the MDC800 to LinaOS.
  * To use the Camera you must support the USB Protocol of the camera
  * to the Kernel Node.
  * The Driver uses a misc device Node. Create it with :
@@ -72,20 +72,20 @@
  * (20/10/1999)
  */
 
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <linaos/sched/signal.h>
+#include <linaos/signal.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/random.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
 
-#include <linux/usb.h>
-#include <linux/fs.h>
+#include <linaos/usb.h>
+#include <linaos/fs.h>
 
 /*
  * Version Information

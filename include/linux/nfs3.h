@@ -5,7 +5,7 @@
 #ifndef _LINUX_NFS3_H
 #define _LINUX_NFS3_H
 
-#include <uapi/linux/nfs3.h>
+#include <uapi/linaos/nfs3.h>
 
 
 /* Number of 32bit words in post_op_attr */

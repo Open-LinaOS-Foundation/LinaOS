@@ -5,20 +5,20 @@
  * Author: Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/mbus.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/mbus.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_pci.h>
+#include <linaos/of_platform.h>
 
 #include "../pci.h"
 #include "../pci-bridge-emul.h"

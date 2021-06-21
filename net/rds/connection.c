@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <net/ipv6.h>
 #include <net/inet6_hashtables.h>
 #include <net/addrconf.h>

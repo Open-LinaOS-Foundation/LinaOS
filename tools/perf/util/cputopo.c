@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <api/fs/fs.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 #include <perf/cpumap.h>
 
 #include "cputopo.h"

@@ -8,9 +8,9 @@
 #define __ASM_PROM_H
 
 #ifdef CONFIG_USE_OF
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/types.h>
+#include <linaos/bug.h>
+#include <linaos/io.h>
+#include <linaos/types.h>
 #include <asm/bootinfo.h>
 
 extern void device_tree_init(void);

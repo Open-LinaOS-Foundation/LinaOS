@@ -27,10 +27,10 @@
  *  such damages.
  */
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/module.h>
-#include <linux/sort.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_page.h>
+#include <linaos/module.h>
+#include <linaos/sort.h>
 #include "internal.h"
 #include "pnfs.h"
 #include "iostat.h"

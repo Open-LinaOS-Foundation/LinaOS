@@ -8,7 +8,7 @@
  * Copyright (C) 2015 Cogent Embedded, Inc.
  */
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 #define MAX9271_DEFAULT_ADDR	0x40
 

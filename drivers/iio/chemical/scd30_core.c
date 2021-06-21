@@ -4,29 +4,29 @@
  *
  * Copyright (c) 2020 Tomasz Duszynski <tomasz.duszynski@octakon.com>
  */
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/types.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqreturn.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/string.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 #include "scd30.h"

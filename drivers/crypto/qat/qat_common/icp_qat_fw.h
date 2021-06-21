@@ -2,7 +2,7 @@
 /* Copyright(c) 2014 - 2020 Intel Corporation */
 #ifndef _ICP_QAT_FW_H_
 #define _ICP_QAT_FW_H_
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "icp_qat_hw.h"
 
 #define QAT_FIELD_SET(flags, val, bitpos, mask) \

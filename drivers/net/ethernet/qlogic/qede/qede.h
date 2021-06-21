@@ -6,26 +6,26 @@
 
 #ifndef _QEDE_H_
 #define _QEDE_H_
-#include <linux/compiler.h>
-#include <linux/version.h>
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/bpf.h>
+#include <linaos/compiler.h>
+#include <linaos/version.h>
+#include <linaos/workqueue.h>
+#include <linaos/netdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitmap.h>
+#include <linaos/kernel.h>
+#include <linaos/mutex.h>
+#include <linaos/bpf.h>
 #include <net/xdp.h>
-#include <linux/qed/qede_rdma.h>
-#include <linux/io.h>
+#include <linaos/qed/qede_rdma.h>
+#include <linaos/io.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linaos/cpu_rmap.h>
 #endif
-#include <linux/qed/common_hsi.h>
-#include <linux/qed/eth_common.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_chain.h>
-#include <linux/qed/qed_eth_if.h>
+#include <linaos/qed/common_hsi.h>
+#include <linaos/qed/eth_common.h>
+#include <linaos/qed/qed_if.h>
+#include <linaos/qed/qed_chain.h>
+#include <linaos/qed/qed_eth_if.h>
 
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>

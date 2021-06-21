@@ -18,9 +18,9 @@
  *   along with this library; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
 
 /*
  * Layout of key payload words.

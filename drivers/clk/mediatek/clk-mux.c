@@ -4,10 +4,10 @@
  * Author: Owen Chen <owen.chen@mediatek.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/syscon.h>
 
 #include "clk-mtk.h"
 #include "clk-mux.h"

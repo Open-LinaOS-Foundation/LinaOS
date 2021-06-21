@@ -21,32 +21,32 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_data/i2c-imx.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dmapool.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_data/i2c-imx.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 /* This will be the driver name the kernel reports */
 #define DRIVER_NAME "imx-i2c"

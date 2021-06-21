@@ -6,15 +6,15 @@
  */
 
 #include <dt-bindings/bus/moxtet.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moxtet.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitops.h>
+#include <linaos/debugfs.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/moxtet.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/spi/spi.h>
 
 /*
  * @name:	module name for sysfs

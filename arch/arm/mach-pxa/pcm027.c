@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pcm027.c
+ *  linaos/arch/arm/mach-pxa/pcm027.c
  *  Support for the Phytec phyCORE-PXA270 CPU card (aka PCM-027).
  *
  *  Refer
@@ -10,20 +10,20 @@
  *  Author:	Juergen Kilb
  *  Created:	April 05, 2005
  *  Copyright:	Phytec Messtechnik GmbH
- *  e-Mail:	armlinux@phytec.de
+ *  e-Mail:	armlinaos@phytec.de
  *
  *  based on Intel Mainstone Board
  *
  *  Copyright 2007 Juergen Beisert @ Pengutronix (j.beisert@pengutronix.de)
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/max7301.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/leds.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/max7301.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/leds.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

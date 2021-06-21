@@ -5,17 +5,17 @@
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
 
 #include <asm/acpi-ext.h>
 
 /*
  * Device CSRs that do not appear in PCI config space should be described
  * via ACPI.  This would normally be done with Address Space Descriptors
- * marked as "consumer-only," but old versions of Windows and Linux ignore
+ * marked as "consumer-only," but old versions of Windows and LinaOS ignore
  * the producer/consumer flag, so HP invented a vendor-defined resource to
  * describe the location and size of CSR space.
  */

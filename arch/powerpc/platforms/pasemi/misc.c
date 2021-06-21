@@ -7,11 +7,11 @@
  * 2006 (c) MontaVista Software, Inc.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/i2c.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/of.h>
+#include <linaos/i2c.h>
 
 #ifdef CONFIG_I2C_BOARDINFO
 /* The below is from fsl_soc.c.  It's copied because since there are no

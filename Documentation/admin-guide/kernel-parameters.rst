@@ -154,7 +154,7 @@ parameter is applicable::
 			A lot of drivers have their options described inside
 			the Documentation/scsi/ sub-directory.
 	SECURITY Different security models are enabled.
-	SELINUX SELinux support is enabled.
+	SELINUX SELinaOS support is enabled.
 	APPARMOR AppArmor support is enabled.
 	SERIAL	Serial support is enabled.
 	SH	SuperH architecture is enabled.
@@ -167,7 +167,7 @@ parameter is applicable::
 	UMS	USB Mass Storage support is enabled.
 	USB	USB support is enabled.
 	USBHID	USB Human Interface Device support is enabled.
-	V4L	Video For Linux support is enabled.
+	V4L	Video For LinaOS support is enabled.
 	VMMIO   Driver for memory mapped virtio devices is enabled.
 	VGA	The VGA console has been enabled.
 	VT	Virtual terminal support is enabled.

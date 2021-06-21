@@ -21,20 +21,20 @@
 
 #define UBD_SHIFT 4
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/ata.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/ata.h>
+#include <linaos/hdreg.h>
+#include <linaos/cdrom.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/ctype.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/platform_device.h>
+#include <linaos/scatterlist.h>
 #include <asm/tlbflush.h>
 #include <kern_util.h>
 #include "mconsole_kern.h"

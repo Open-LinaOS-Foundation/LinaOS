@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2019 Netronome Systems, Inc. */
 
-#include <linux/bitfield.h>
-#include <linux/ipv6.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
+#include <linaos/bitfield.h>
+#include <linaos/ipv6.h>
+#include <linaos/skbuff.h>
+#include <linaos/string.h>
 #include <net/inet6_hashtables.h>
 #include <net/tls.h>
 

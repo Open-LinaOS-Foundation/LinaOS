@@ -8,12 +8,12 @@
  * Copyright (C) 2017 Rockchip Electronics Co., Ltd.
  */
 
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-mipi-dphy.h>
-#include <linux/pm_runtime.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
+#include <linaos/iopoll.h>
+#include <linaos/phy/phy.h>
+#include <linaos/phy/phy-mipi-dphy.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/videodev2.h>
+#include <linaos/vmalloc.h>
 #include <media/v4l2-event.h>
 
 #include "rkisp1-common.h"

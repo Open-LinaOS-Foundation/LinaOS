@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * coretemp.c - Linux kernel module for hardware monitoring
+ * coretemp.c - LinaOS kernel module for hardware monitoring
  *
  * Copyright (C) 2007 Rudolf Marek <r.marek@assembler.cz>
  *
@@ -9,21 +9,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/hwmon.h>
+#include <linaos/sysfs.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpu.h>
+#include <linaos/smp.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pci.h>
 #include <asm/msr.h>
 #include <asm/processor.h>
 #include <asm/cpu_device_id.h>

@@ -7,40 +7,40 @@
 //
 // For product information, visit http://www.arm.com/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/gpio/machine.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/dm9000.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/dm9000.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/irq.h>
 
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
 #include "regs-gpio.h"
 #include "gpio-samsung.h"
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/partitions.h>
 
 #include "devs.h"
 #include "cpu.h"
-#include <linux/platform_data/mmc-s3cmci.h>
+#include <linaos/platform_data/mmc-s3cmci.h>
 
 #include "s3c24xx.h"
 

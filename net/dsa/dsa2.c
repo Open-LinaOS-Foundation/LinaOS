@@ -6,14 +6,14 @@
  * Copyright (c) 2016 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
 #include <net/devlink.h>
 
 #include "dsa_priv.h"

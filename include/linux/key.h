@@ -10,19 +10,19 @@
 #ifndef _LINUX_KEY_H
 #define _LINUX_KEY_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/rcupdate.h>
-#include <linux/sysctl.h>
-#include <linux/rwsem.h>
-#include <linux/atomic.h>
-#include <linux/assoc_array.h>
-#include <linux/refcount.h>
-#include <linux/time64.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sysctl.h>
+#include <linaos/rwsem.h>
+#include <linaos/atomic.h>
+#include <linaos/assoc_array.h>
+#include <linaos/refcount.h>
+#include <linaos/time64.h>
 
 #ifdef __KERNEL__
-#include <linux/uidgid.h>
+#include <linaos/uidgid.h>
 
 /* key handle serial number */
 typedef int32_t key_serial_t;

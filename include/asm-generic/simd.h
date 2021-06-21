@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/hardirq.h>
+#include <linaos/hardirq.h>
 
 /*
  * may_use_simd - whether it is allowable at this time to issue SIMD

@@ -6,8 +6,8 @@
  * Author: Boris Brezillon <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
 
 #include "internals.h"
 

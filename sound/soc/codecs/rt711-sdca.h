@@ -8,12 +8,12 @@
 #ifndef __RT711_SDCA_H__
 #define __RT711_SDCA_H__
 
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_type.h>
 #include <sound/soc.h>
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 struct  rt711_sdca_priv {
 	struct regmap *regmap, *mbq_regmap;

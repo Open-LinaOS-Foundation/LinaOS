@@ -33,7 +33,7 @@
 #ifndef _HNS_ROCE_HW_V2_H
 #define _HNS_ROCE_HW_V2_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define HNS_ROCE_VF_QPC_BT_NUM			256
 #define HNS_ROCE_VF_SCCC_BT_NUM			64

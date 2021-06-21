@@ -3,12 +3,12 @@
  * Backlight code for nVidia based graphic cards
  *
  * Copyright 2004 Antonino Daplas <adaplas@pol.net>
- * Copyright (c) 2006 Michael Hanselmann <linux-kernel@hansmi.ch>
+ * Copyright (c) 2006 Michael Hanselmann <linaos-kernel@hansmi.ch>
  */
 
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
+#include <linaos/backlight.h>
+#include <linaos/fb.h>
+#include <linaos/pci.h>
 
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/backlight.h>

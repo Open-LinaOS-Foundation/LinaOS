@@ -7,25 +7,25 @@
  * Copyright (C) 2009 David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/cpufreq.h>
-#include <linux/mmc/host.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmc/mmc.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/cpufreq.h>
+#include <linaos/mmc/host.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/interrupt.h>
 
-#include <linux/platform_data/mmc-davinci.h>
+#include <linaos/platform_data/mmc-davinci.h>
 
 /*
  * Register Definitions

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0
-# Makefile for the linux Sparc-specific parts of the memory manager.
+# Makefile for the linaos Sparc-specific parts of the memory manager.
 #
 
 asflags-y := -ansi

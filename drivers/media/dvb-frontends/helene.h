@@ -12,8 +12,8 @@
 #ifndef __DVB_HELENE_H__
 #define __DVB_HELENE_H__
 
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/i2c.h>
 
 enum helene_xtal {
 	SONY_HELENE_XTAL_16000, /* 16 MHz */

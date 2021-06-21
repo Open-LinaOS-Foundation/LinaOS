@@ -4,10 +4,10 @@
  * Author: Antonios Motakis <a.motakis@virtualopensystems.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vfio.h>
-#include <linux/amba/bus.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vfio.h>
+#include <linaos/amba/bus.h>
 
 #include "vfio_platform_private.h"
 

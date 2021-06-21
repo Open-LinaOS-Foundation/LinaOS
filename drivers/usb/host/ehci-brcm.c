@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020, Broadcom */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/iopoll.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/iopoll.h>
 
 #include "ehci.h"
 

@@ -21,13 +21,13 @@
 #include "main.h"
 #include "tty.h"
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #include <pcmcia/cisreg.h>
 #include <pcmcia/device_id.h>

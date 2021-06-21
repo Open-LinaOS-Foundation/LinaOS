@@ -58,56 +58,56 @@
  *      -- C. Scott Ananian <cananian@alumni.princeton.edu>, 14-Jan-1998
  *
  * Reduced memory usage for older ARM systems
- *      -- Russell King <rmk@arm.linux.org.uk>
+ *      -- Russell King <rmk@arm.linaos.org.uk>
  *
  * Move do_SAK() into process context.  Less stack use in devfs functions.
  * alloc_tty_struct() always uses kmalloc()
  *			 -- Andrew Morton <andrewm@uow.edu.eu> 17Mar01
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/devpts_fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/console.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/kd.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/ratelimit.h>
-#include <linux/compat.h>
+#include <linaos/types.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/fcntl.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/devpts_fs.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/console.h>
+#include <linaos/timer.h>
+#include <linaos/ctype.h>
+#include <linaos/kd.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/ppp-ioctl.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/wait.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/seq_file.h>
+#include <linaos/serial.h>
+#include <linaos/ratelimit.h>
+#include <linaos/compat.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
+#include <linaos/kbd_kern.h>
+#include <linaos/vt_kern.h>
+#include <linaos/selection.h>
 
-#include <linux/kmod.h>
-#include <linux/nsproxy.h>
+#include <linaos/kmod.h>
+#include <linaos/nsproxy.h>
 #include "tty.h"
 
 #undef TTY_DEBUG_HANGUP
@@ -2376,7 +2376,7 @@ EXPORT_SYMBOL(tty_do_resize);
  *	@arg: user buffer for result
  *
  *	Copies the user idea of the window size to the kernel. Traditionally
- *	this is just advisory information but for the Linux console it
+ *	this is just advisory information but for the LinaOS console it
  *	actually has driver level meaning and triggers a VC resize.
  *
  *	Locking:

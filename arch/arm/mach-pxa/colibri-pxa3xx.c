@@ -7,23 +7,23 @@
  *  Daniel Mack <daniel@caiaq.de>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/etherdevice.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/etherdevice.h>
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/system_info.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/irq.h>
 #include <mach/pxa3xx-regs.h>
 #include "mfp-pxa300.h"
 #include "colibri.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 
 #include "generic.h"
 #include "devices.h"

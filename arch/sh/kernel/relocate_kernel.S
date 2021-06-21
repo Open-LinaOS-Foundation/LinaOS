@@ -7,7 +7,7 @@
  *
  * 2009-03-18 Magnus Damm - Added Kexec Jump support
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/addrspace.h>
 #include <asm/page.h>
 

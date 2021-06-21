@@ -6,7 +6,7 @@
  */
 #include <net/ipv6.h>
 #include <net/addrconf.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "mvm.h"
 
 void iwl_mvm_set_wowlan_qos_seq(struct iwl_mvm_sta *mvm_ap_sta,

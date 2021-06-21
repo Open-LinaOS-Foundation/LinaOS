@@ -3,8 +3,8 @@
 #ifndef _ASM_RISCV_STACKPROTECTOR_H
 #define _ASM_RISCV_STACKPROTECTOR_H
 
-#include <linux/random.h>
-#include <linux/version.h>
+#include <linaos/random.h>
+#include <linaos/version.h>
 
 extern unsigned long __stack_chk_guard;
 

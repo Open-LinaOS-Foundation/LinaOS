@@ -27,20 +27,20 @@
  * UBI_IOCVOLCRBLK and UBI_IOCVOLRMBLK.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/mtd/ubi.h>
-#include <linux/workqueue.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/hdreg.h>
-#include <linux/scatterlist.h>
-#include <linux/idr.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/ubi.h>
+#include <linaos/workqueue.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/hdreg.h>
+#include <linaos/scatterlist.h>
+#include <linaos/idr.h>
 #include <asm/div64.h>
 
 #include "ubi-media.h"

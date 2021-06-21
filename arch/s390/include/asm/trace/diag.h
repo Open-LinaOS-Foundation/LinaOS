@@ -12,7 +12,7 @@
 #if !defined(_TRACE_S390_DIAG_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_S390_DIAG_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_INCLUDE_PATH
 #undef TRACE_INCLUDE_FILE

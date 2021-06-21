@@ -25,7 +25,7 @@
 #ifndef _INTEL_DPLL_MGR_H_
 #define _INTEL_DPLL_MGR_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "intel_display.h"
 #include "intel_wakeref.h"

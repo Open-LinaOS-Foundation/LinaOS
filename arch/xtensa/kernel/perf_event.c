@@ -6,12 +6,12 @@
  * Copyright (C) 2015 Cadence Design Systems Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/perf_event.h>
+#include <linaos/platform_device.h>
 
 #include <asm/processor.h>
 #include <asm/stacktrace.h>

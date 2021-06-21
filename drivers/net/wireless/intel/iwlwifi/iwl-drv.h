@@ -5,11 +5,11 @@
  */
 #ifndef __iwl_drv_h__
 #define __iwl_drv_h__
-#include <linux/export.h>
+#include <linaos/export.h>
 
 /* for all modules */
 #define DRV_NAME        "iwlwifi"
-#define DRV_AUTHOR	"Intel Corporation <linuxwifi@intel.com>"
+#define DRV_AUTHOR	"Intel Corporation <linaoswifi@intel.com>"
 
 /* radio config bits (actual values from NVM definition) */
 #define NVM_RF_CFG_DASH_MSK(x)   (x & 0x3)         /* bits 0-1   */

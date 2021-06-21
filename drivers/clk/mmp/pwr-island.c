@@ -5,9 +5,9 @@
  * Copyright (C) 2020 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/pm_domain.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include "clk.h"
 

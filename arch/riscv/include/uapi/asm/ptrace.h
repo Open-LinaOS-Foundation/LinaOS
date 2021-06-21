@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2012 Regents of the University of California
  */
@@ -8,7 +8,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * User-mode register state for core dumps, ptrace, sigcontext

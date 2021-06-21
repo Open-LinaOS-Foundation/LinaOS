@@ -13,7 +13,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -31,18 +31,18 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <crypto/hash.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/net.h>
+#include <linaos/inet.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 
-#include <linux/skbuff.h>
-#include <linux/random.h>	/* for get_random_bytes */
+#include <linaos/skbuff.h>
+#include <linaos/random.h>	/* for get_random_bytes */
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 

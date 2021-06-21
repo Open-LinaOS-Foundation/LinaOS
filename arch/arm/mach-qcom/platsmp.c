@@ -3,18 +3,18 @@
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  *  Copyright (c) 2010, Code Aurora Forum. All rights reserved.
- *  Copyright (c) 2014 The Linux Foundation. All rights reserved.
+ *  Copyright (c) 2014 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/qcom_scm.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/qcom_scm.h>
 
 #include <asm/smp_plat.h>
 

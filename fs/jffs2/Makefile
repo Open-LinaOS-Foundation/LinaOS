@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux Journalling Flash File System v2 (JFFS2)
+# Makefile for the LinaOS Journalling Flash File System v2 (JFFS2)
 #
 #
 

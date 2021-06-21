@@ -12,11 +12,11 @@
  * Copyright (C) 1995, 1996 Olaf Kirch, <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/module.h>
-#include <linux/exportfs.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <linaos/slab.h>
+#include <linaos/namei.h>
+#include <linaos/module.h>
+#include <linaos/exportfs.h>
+#include <linaos/sunrpc/svc_xprt.h>
 
 #include "nfsd.h"
 #include "nfsfh.h"

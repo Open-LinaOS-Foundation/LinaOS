@@ -1,5 +1,5 @@
 ============================
-Linux kernel SLIMbus support
+LinaOS kernel SLIMbus support
 ============================
 
 Overview
@@ -91,7 +91,7 @@ steps to boot the device so that it's functional after the bus has been reset.
 
 Driver and Controller APIs:
 ---------------------------
-.. kernel-doc:: include/linux/slimbus.h
+.. kernel-doc:: include/linaos/slimbus.h
    :internal:
 
 .. kernel-doc:: drivers/slimbus/slimbus.h
@@ -119,7 +119,7 @@ Messaging:
 ----------
 The framework supports regmap and read/write apis to exchange control-information
 with a SLIMbus device. APIs can be synchronous or asynchronous.
-The header file <linux/slimbus.h> has more documentation about messaging APIs.
+The header file <linaos/slimbus.h> has more documentation about messaging APIs.
 
 Messaging APIs:
 ~~~~~~~~~~~~~~~

@@ -11,19 +11,19 @@
  * USB peripheral controller (at91_udc.c).
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/prefetch.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/prefetch.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
 
 /* Register offsets for the USB device.*/
 #define XUSB_EP0_CONFIG_OFFSET		0x0000  /* EP0 Config Reg Offset */
@@ -108,7 +108,7 @@
 
 /**
  * struct xusb_req - Xilinx USB device request structure
- * @usb_req: Linux usb request structure
+ * @usb_req: LinaOS usb request structure
  * @queue: usb device request queue
  * @ep: pointer to xusb_endpoint structure
  */

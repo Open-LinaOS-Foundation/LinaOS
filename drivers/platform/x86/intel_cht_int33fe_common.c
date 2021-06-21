@@ -6,11 +6,11 @@
  * Copyright (c) 2019 Yauhen Kharuzhy <jekhor@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "intel_cht_int33fe_common.h"
 

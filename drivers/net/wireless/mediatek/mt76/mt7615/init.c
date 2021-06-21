@@ -7,7 +7,7 @@
  *         Lorenzo Bianconi <lorenzo@kernel.org>
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "mt7615.h"
 #include "mac.h"
 #include "mcu.h"

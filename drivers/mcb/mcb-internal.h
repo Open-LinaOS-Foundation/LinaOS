@@ -2,7 +2,7 @@
 #ifndef __MCB_INTERNAL
 #define __MCB_INTERNAL
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PCI_VENDOR_ID_MEN		0x1a88
 #define PCI_DEVICE_ID_MEN_CHAMELEON	0x4d45

@@ -6,13 +6,13 @@
 		"BACKPACK" parallel port IDE adapter
 		(Works on Series 6 drives)
 
-	Written by: Ken Hahn     (linux-dev@micro-solutions.com)
-	            Clive Turvey (linux-dev@micro-solutions.com)
+	Written by: Ken Hahn     (linaos-dev@micro-solutions.com)
+	            Clive Turvey (linaos-dev@micro-solutions.com)
 
 */
 
 /*
-   This is Ken's linux wrapper for the PPC library
+   This is Ken's linaos wrapper for the PPC library
    Version 1.0.0 is the backpack driver for which source is not available
    Version 2.0.0 is the first to have source released 
    Version 2.0.1 is the "Cox-ified" source code 
@@ -22,13 +22,13 @@
 
 #define BACKPACK_VERSION "2.0.2"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 #include <asm/io.h>
-#include <linux/parport.h>
+#include <linaos/parport.h>
 
 #include "ppc6lnx.c"
 #include "paride.h"

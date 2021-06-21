@@ -3,13 +3,13 @@
  * Copyright(c) 2007 Yuri Tikhonov <yur@emcraft.com>
  * Copyright(c) 2009 Intel Corporation
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/raid/pq.h>
-#include <linux/async_tx.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/raid/pq.h>
+#include <linaos/async_tx.h>
+#include <linaos/gfp.h>
 
 /**
  * pq_scribble_page - space to hold throwaway P or Q buffer for

@@ -22,14 +22,14 @@
  * devices.
  */
 
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/capability.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <linux/math64.h>
+#include <linaos/module.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
+#include <linaos/ioctl.h>
+#include <linaos/capability.h>
+#include <linaos/uaccess.h>
+#include <linaos/compat.h>
+#include <linaos/math64.h>
 #include <mtd/ubi-user.h>
 #include "ubi.h"
 

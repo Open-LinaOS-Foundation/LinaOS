@@ -5,15 +5,15 @@
  * Copyright 2016 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include "cec-priv.h"
 
@@ -409,7 +409,7 @@ void cec_delete_adapter(struct cec_adapter *adap)
 EXPORT_SYMBOL_GPL(cec_delete_adapter);
 
 /*
- *	Initialise cec for linux
+ *	Initialise cec for linaos
  */
 static int __init cec_devnode_init(void)
 {

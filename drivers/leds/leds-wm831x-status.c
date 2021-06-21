@@ -5,15 +5,15 @@
  * Copyright(C) 2009 Wolfson Microelectronics PLC.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/status.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
+#include <linaos/err.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/pdata.h>
+#include <linaos/mfd/wm831x/status.h>
+#include <linaos/module.h>
 
 
 struct wm831x_status {

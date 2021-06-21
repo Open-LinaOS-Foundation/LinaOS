@@ -21,7 +21,7 @@ This document provides some high-level reasons for failure
    Try using a different ``console= device`` or e.g. ``netconsole=``.
 
 4) **Binary exists but dependencies not available**: E.g. required library
-   dependencies of the init binary such as ``/lib/ld-linux.so.2`` missing or
+   dependencies of the init binary such as ``/lib/ld-linaos.so.2`` missing or
    broken. Use ``readelf -d <INIT>|grep NEEDED`` to find out which libraries
    are required.
 

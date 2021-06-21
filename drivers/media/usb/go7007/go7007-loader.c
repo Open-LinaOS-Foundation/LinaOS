@@ -3,10 +3,10 @@
  * Copyright (C) 2008 Sensoray Company Inc.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/firmware.h>
 #include <cypress_firmware.h>
 
 struct fw_config {

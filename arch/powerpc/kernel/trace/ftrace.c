@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt) "ftrace-powerpc: " fmt
 
-#include <linux/spinlock.h>
-#include <linux/hardirq.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/hardirq.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/ftrace.h>
+#include <linaos/percpu.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/cacheflush.h>

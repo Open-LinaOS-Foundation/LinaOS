@@ -8,7 +8,7 @@
 #ifndef __LINUX_GBAUDIO_CODEC_H
 #define __LINUX_GBAUDIO_CODEC_H
 
-#include <linux/greybus.h>
+#include <linaos/greybus.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
 

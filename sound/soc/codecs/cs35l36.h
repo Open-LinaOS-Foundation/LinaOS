@@ -11,7 +11,7 @@
 #ifndef __CS35L36_H__
 #define __CS35L36_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #define CS35L36_FIRSTREG		0x00000000
 #define CS35L36_LASTREG			0x00E037FC

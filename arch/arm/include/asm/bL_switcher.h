@@ -9,8 +9,8 @@
 #ifndef ASM_BL_SWITCHER_H
 #define ASM_BL_SWITCHER_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 
 typedef void (*bL_switch_completion_handler)(void *cookie);
 

@@ -6,15 +6,15 @@
  *
  * Copyright (C) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/if.h>
-#include <linux/inet_diag.h>
-#include <linux/xfrm.h>
-#include <linux/audit.h>
-#include <linux/sock_diag.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/netlink.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if.h>
+#include <linaos/inet_diag.h>
+#include <linaos/xfrm.h>
+#include <linaos/audit.h>
+#include <linaos/sock_diag.h>
 
 #include "flask.h"
 #include "av_permissions.h"
@@ -163,7 +163,7 @@ static int nlmsg_perm(u16 nlmsg_type, u32 *perm, const struct nlmsg_perm *tab, s
 	return err;
 }
 
-int selinux_nlmsg_lookup(u16 sclass, u16 nlmsg_type, u32 *perm)
+int selinaos_nlmsg_lookup(u16 sclass, u16 nlmsg_type, u32 *perm)
 {
 	int err = 0;
 

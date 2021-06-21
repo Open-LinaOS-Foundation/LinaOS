@@ -4,12 +4,12 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
 
 #include "qlcnic.h"
 

@@ -8,12 +8,12 @@
 
 #include "nvme.h"
 
-#include <linux/nvme.h>
-#include <linux/bitops.h>
-#include <linux/lightnvm.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/sysctl.h>
-#include <uapi/linux/lightnvm.h>
+#include <linaos/nvme.h>
+#include <linaos/bitops.h>
+#include <linaos/lightnvm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sched/sysctl.h>
+#include <uapi/linaos/lightnvm.h>
 
 enum nvme_nvm_admin_opcode {
 	nvme_nvm_admin_identity		= 0xe2,

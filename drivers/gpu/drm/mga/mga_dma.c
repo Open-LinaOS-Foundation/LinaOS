@@ -1,8 +1,8 @@
-/* mga_dma.c -- DMA support for mga g200/g400 -*- linux-c -*-
+/* mga_dma.c -- DMA support for mga g200/g400 -*- linaos-c -*-
  * Created: Mon Dec 13 01:50:01 1999 by jhartmann@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -29,13 +29,13 @@
  * \file mga_dma.c
  * DMA support for MGA G200 / G400.
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Jeff Hartmann <jhartmann@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@valinaos.com>
+ * \author Jeff Hartmann <jhartmann@valinaos.com>
  * \author Keith Whitwell <keith@tungstengraphics.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Gareth Hughes <gareth@valinaos.com>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "mga_drv.h"
 
@@ -445,7 +445,7 @@ int mga_driver_load(struct drm_device *dev, unsigned long flags)
  *
  * \todo
  * This routine needs to set dma_bs->agp_mode to the mode actually configured
- * in the hardware.  Looking just at the Linux AGP driver code, I don't see
+ * in the hardware.  Looking just at the LinaOS AGP driver code, I don't see
  * an easy way to determine this.
  *
  * \sa mga_do_dma_bootstrap, mga_do_pci_dma_bootstrap

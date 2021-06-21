@@ -15,10 +15,10 @@
  *		Alan Cox <alan@lxorguk.ukuu.org.uk>
  ****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/module.h>
 
 #include "cpia2.h"
 

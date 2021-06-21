@@ -65,13 +65,13 @@
 
 		button_checkstop {
 			label = "checkstop";
-			linux,code = <74>;
+			linaos,code = <74>;
 			gpios = <&gpio ASPEED_GPIO(P, 5) GPIO_ACTIVE_LOW>;
 		};
 
 		button_identify {
 			label = "identify";
-			linux,code = <152>;
+			linaos,code = <152>;
 			gpios = <&gpio ASPEED_GPIO(O, 7) GPIO_ACTIVE_LOW>;
 		};
 	};

@@ -21,10 +21,10 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 #include <sound/info.h>

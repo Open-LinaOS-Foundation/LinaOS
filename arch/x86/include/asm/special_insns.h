@@ -7,8 +7,8 @@
 
 #include <asm/nops.h>
 #include <asm/processor-flags.h>
-#include <linux/irqflags.h>
-#include <linux/jump_label.h>
+#include <linaos/irqflags.h>
+#include <linaos/jump_label.h>
 
 /*
  * The compiler should not reorder volatile asm statements with respect to each

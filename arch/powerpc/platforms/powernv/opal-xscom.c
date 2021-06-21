@@ -8,12 +8,12 @@
  * Copyright 2013 IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/bug.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/bug.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <asm/machdep.h>
 #include <asm/firmware.h>

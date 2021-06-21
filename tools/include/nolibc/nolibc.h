@@ -74,7 +74,7 @@
  *            -static -include nolibc.h -o hello hello.c -lgcc
  *
  * A very useful calling convention table may be found here :
- *      http://man7.org/linux/man-pages/man2/syscall.2.html
+ *      http://man7.org/linaos/man-pages/man2/syscall.2.html
  *
  * This doc is quite convenient though not necessarily up to date :
  *      https://w3challs.com/syscalls/
@@ -84,9 +84,9 @@
 #include <asm/unistd.h>
 #include <asm/ioctls.h>
 #include <asm/errno.h>
-#include <linux/fs.h>
-#include <linux/loop.h>
-#include <linux/time.h>
+#include <linaos/fs.h>
+#include <linaos/loop.h>
+#include <linaos/time.h>
 
 #define NOLIBC
 
@@ -146,7 +146,7 @@ struct pollfd {
 };
 
 /* for getdents64() */
-struct linux_dirent64 {
+struct linaos_dirent64 {
 	uint64_t       d_ino;
 	int64_t        d_off;
 	unsigned short d_reclen;
@@ -1027,7 +1027,7 @@ struct sys_stat_struct {
  *   - arguments are in a0, a1, a2, a3, then the stack. The caller needs to
  *     leave some room in the stack for the callee to save a0..a3 if needed.
  *   - Many registers are clobbered, in fact only a0..a2 and s0..s8 are
- *     preserved. See: https://www.linux-mips.org/wiki/Syscall as well as
+ *     preserved. See: https://www.linaos-mips.org/wiki/Syscall as well as
  *     scall32-o32.S in the kernel sources.
  *   - the system call is performed by calling "syscall"
  *   - syscall return comes in v0, and register a3 needs to be checked to know
@@ -1532,7 +1532,7 @@ int sys_fsync(int fd)
 }
 
 static __attribute__((unused))
-int sys_getdents64(int fd, struct linux_dirent64 *dirp, int count)
+int sys_getdents64(int fd, struct linaos_dirent64 *dirp, int count)
 {
 	return my_syscall3(__NR_getdents64, fd, dirp, count);
 }
@@ -1966,7 +1966,7 @@ int fsync(int fd)
 }
 
 static __attribute__((unused))
-int getdents64(int fd, struct linux_dirent64 *dirp, int count)
+int getdents64(int fd, struct linaos_dirent64 *dirp, int count)
 {
 	int ret = sys_getdents64(fd, dirp, count);
 

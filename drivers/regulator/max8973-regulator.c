@@ -22,26 +22,26 @@
  * 02111-1307, USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max8973-regulator.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_gpio.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/max8973-regulator.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
+#include <linaos/thermal.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
 
 /* Register definitions */
 #define MAX8973_VOUT					0x0

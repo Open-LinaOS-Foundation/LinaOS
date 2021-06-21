@@ -7,7 +7,7 @@
 #include <ctype.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>

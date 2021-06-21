@@ -4,10 +4,10 @@
  * Copyright (c) 2016, Intel Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/platform_device.h>
 
 /*
  * Presentation of attributes which are defined for INT3407 and INT3532.
@@ -246,6 +246,6 @@ static struct platform_driver dptf_power_driver = {
 
 module_platform_driver(dptf_power_driver);
 
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("ACPI DPTF platform power driver");

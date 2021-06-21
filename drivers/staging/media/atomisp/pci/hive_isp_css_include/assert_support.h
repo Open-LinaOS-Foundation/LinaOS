@@ -44,7 +44,7 @@
 #define CT_ASSERT(cnd) ((void)sizeof(char[(cnd) ? 1 :  -1]))
 #endif /* CT_ASSERT */
 
-#include <linux/bug.h>
+#include <linaos/bug.h>
 
 /* TODO: it would be cleaner to use this:
  * #define assert(cnd) BUG_ON(cnd)

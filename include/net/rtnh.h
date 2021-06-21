@@ -2,7 +2,7 @@
 #ifndef __NET_RTNH_H
 #define __NET_RTNH_H
 
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 #include <net/netlink.h>
 
 static inline int rtnh_ok(const struct rtnexthop *rtnh, int remaining)

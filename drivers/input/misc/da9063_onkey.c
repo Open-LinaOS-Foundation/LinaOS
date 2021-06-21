@@ -4,18 +4,18 @@
  * Copyright (C) 2015  Dialog Semiconductor Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/mfd/da9063/core.h>
-#include <linux/mfd/da9063/registers.h>
-#include <linux/mfd/da9062/core.h>
-#include <linux/mfd/da9062/registers.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
+#include <linaos/mfd/da9063/core.h>
+#include <linaos/mfd/da9063/registers.h>
+#include <linaos/mfd/da9062/core.h>
+#include <linaos/mfd/da9062/registers.h>
 
 struct da906x_chip_config {
 	/* REGS */

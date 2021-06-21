@@ -5,14 +5,14 @@
  * Authors:	Thomas Graf <tgraf@suug.ch>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/textsearch.h>
-#include <linux/tc_ematch/tc_em_text.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/textsearch.h>
+#include <linaos/tc_ematch/tc_em_text.h>
 #include <net/pkt_cls.h>
 
 struct text_match {

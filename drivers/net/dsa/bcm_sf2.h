@@ -8,17 +8,17 @@
 #ifndef __BCM_SF2_H
 #define __BCM_SF2_H
 
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
-#include <linux/reset.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/if_vlan.h>
+#include <linaos/reset.h>
 
 #include <net/dsa.h>
 

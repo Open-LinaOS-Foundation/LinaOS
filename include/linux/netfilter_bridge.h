@@ -2,8 +2,8 @@
 #ifndef __LINUX_BRIDGE_NETFILTER_H
 #define __LINUX_BRIDGE_NETFILTER_H
 
-#include <uapi/linux/netfilter_bridge.h>
-#include <linux/skbuff.h>
+#include <uapi/linaos/netfilter_bridge.h>
+#include <linaos/skbuff.h>
 
 struct nf_bridge_frag_data {
 	char    mac[ETH_HLEN];

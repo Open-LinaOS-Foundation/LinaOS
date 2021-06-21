@@ -12,7 +12,7 @@
 #ifndef __XEN_FRONT_PGDIR_SHBUF_H_
 #define __XEN_FRONT_PGDIR_SHBUF_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <xen/grant_table.h>
 

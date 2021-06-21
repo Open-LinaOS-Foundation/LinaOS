@@ -5,11 +5,11 @@
 //
 // S3C64XX setup information for IDE
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
 
-#include <linux/platform_data/ata-samsung_cf.h>
+#include <linaos/platform_data/ata-samsung_cf.h>
 
 #include "map.h"
 #include "regs-clock.h"

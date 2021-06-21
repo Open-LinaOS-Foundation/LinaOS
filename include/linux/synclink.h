@@ -11,11 +11,11 @@
 #ifndef _SYNCLINK_H_
 #define _SYNCLINK_H_
 
-#include <uapi/linux/synclink.h>
+#include <uapi/linaos/synclink.h>
 
 /* provide 32 bit ioctl compatibility on 64 bit systems */
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 struct MGSL_PARAMS32 {
 	compat_ulong_t	mode;
 	unsigned char	loopback;

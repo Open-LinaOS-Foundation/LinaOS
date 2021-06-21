@@ -6,27 +6,27 @@
  *
  * Heavily based on Mediatek's pinctrl driver
  */
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/hwspinlock.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/hwspinlock.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
 
 #include "../core.h"
 #include "../pinconf.h"

@@ -10,9 +10,9 @@
 #include <signal.h>
 #include "../util/stat.h"
 #include <subcmd/parse-options.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
 #include <errno.h>
 #include <perf/cpumap.h>
 #include "bench.h"

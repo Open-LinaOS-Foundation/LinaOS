@@ -49,7 +49,7 @@ export DESTDIR DESTDIR_SQ
 
 include $(srctree)/tools/scripts/Makefile.include
 
-# copy a bit from Linux kbuild
+# copy a bit from LinaOS kbuild
 
 ifeq ("$(origin V)", "command line")
   VERBOSE = $(V)
@@ -137,29 +137,29 @@ all: fixdep
 all_cmd: $(CMD_TARGETS) check
 
 $(BPF_IN_SHARED): force $(BPF_HELPER_DEFS)
-	@(test -f ../../include/uapi/linux/bpf.h -a -f ../../../include/uapi/linux/bpf.h && ( \
-	(diff -B ../../include/uapi/linux/bpf.h ../../../include/uapi/linux/bpf.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/bpf.h' differs from latest version at 'include/uapi/linux/bpf.h'" >&2 )) || true
-	@(test -f ../../include/uapi/linux/bpf_common.h -a -f ../../../include/uapi/linux/bpf_common.h && ( \
-	(diff -B ../../include/uapi/linux/bpf_common.h ../../../include/uapi/linux/bpf_common.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/bpf_common.h' differs from latest version at 'include/uapi/linux/bpf_common.h'" >&2 )) || true
-	@(test -f ../../include/uapi/linux/netlink.h -a -f ../../../include/uapi/linux/netlink.h && ( \
-	(diff -B ../../include/uapi/linux/netlink.h ../../../include/uapi/linux/netlink.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/netlink.h' differs from latest version at 'include/uapi/linux/netlink.h'" >&2 )) || true
-	@(test -f ../../include/uapi/linux/if_link.h -a -f ../../../include/uapi/linux/if_link.h && ( \
-	(diff -B ../../include/uapi/linux/if_link.h ../../../include/uapi/linux/if_link.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/if_link.h' differs from latest version at 'include/uapi/linux/if_link.h'" >&2 )) || true
-	@(test -f ../../include/uapi/linux/if_xdp.h -a -f ../../../include/uapi/linux/if_xdp.h && ( \
-	(diff -B ../../include/uapi/linux/if_xdp.h ../../../include/uapi/linux/if_xdp.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/if_xdp.h' differs from latest version at 'include/uapi/linux/if_xdp.h'" >&2 )) || true
+	@(test -f ../../include/uapi/linaos/bpf.h -a -f ../../../include/uapi/linaos/bpf.h && ( \
+	(diff -B ../../include/uapi/linaos/bpf.h ../../../include/uapi/linaos/bpf.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/linaos/bpf.h' differs from latest version at 'include/uapi/linaos/bpf.h'" >&2 )) || true
+	@(test -f ../../include/uapi/linaos/bpf_common.h -a -f ../../../include/uapi/linaos/bpf_common.h && ( \
+	(diff -B ../../include/uapi/linaos/bpf_common.h ../../../include/uapi/linaos/bpf_common.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/linaos/bpf_common.h' differs from latest version at 'include/uapi/linaos/bpf_common.h'" >&2 )) || true
+	@(test -f ../../include/uapi/linaos/netlink.h -a -f ../../../include/uapi/linaos/netlink.h && ( \
+	(diff -B ../../include/uapi/linaos/netlink.h ../../../include/uapi/linaos/netlink.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/linaos/netlink.h' differs from latest version at 'include/uapi/linaos/netlink.h'" >&2 )) || true
+	@(test -f ../../include/uapi/linaos/if_link.h -a -f ../../../include/uapi/linaos/if_link.h && ( \
+	(diff -B ../../include/uapi/linaos/if_link.h ../../../include/uapi/linaos/if_link.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/linaos/if_link.h' differs from latest version at 'include/uapi/linaos/if_link.h'" >&2 )) || true
+	@(test -f ../../include/uapi/linaos/if_xdp.h -a -f ../../../include/uapi/linaos/if_xdp.h && ( \
+	(diff -B ../../include/uapi/linaos/if_xdp.h ../../../include/uapi/linaos/if_xdp.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/linaos/if_xdp.h' differs from latest version at 'include/uapi/linaos/if_xdp.h'" >&2 )) || true
 	$(Q)$(MAKE) $(build)=libbpf OUTPUT=$(SHARED_OBJDIR) CFLAGS="$(CFLAGS) $(SHLIB_FLAGS)"
 
 $(BPF_IN_STATIC): force $(BPF_HELPER_DEFS)
 	$(Q)$(MAKE) $(build)=libbpf OUTPUT=$(STATIC_OBJDIR)
 
-$(BPF_HELPER_DEFS): $(srctree)/tools/include/uapi/linux/bpf.h
+$(BPF_HELPER_DEFS): $(srctree)/tools/include/uapi/linaos/bpf.h
 	$(QUIET_GEN)$(srctree)/scripts/bpf_doc.py --header \
-		--file $(srctree)/tools/include/uapi/linux/bpf.h > $(BPF_HELPER_DEFS)
+		--file $(srctree)/tools/include/uapi/linaos/bpf.h > $(BPF_HELPER_DEFS)
 
 $(OUTPUT)libbpf.so: $(OUTPUT)libbpf.so.$(LIBBPF_VERSION)
 

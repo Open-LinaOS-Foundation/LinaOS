@@ -11,8 +11,8 @@
 #ifndef _ARM_KERNEL_PROBES_H
 #define  _ARM_KERNEL_PROBES_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
 #include <asm/probes.h>
 #include <asm/kprobes.h>
 

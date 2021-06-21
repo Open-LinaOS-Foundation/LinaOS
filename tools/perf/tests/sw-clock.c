@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <sys/mman.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #include "tests.h"
 #include "util/debug.h"

@@ -32,16 +32,16 @@
 
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/serial_core.h>
-#include <linux/delay.h>
-#include <linux/major.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/serial_core.h>
+#include <linaos/delay.h>
+#include <linaos/major.h>
 #include <asm/io.h>
 
 #include <pcmcia/cistpl.h>

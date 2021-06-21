@@ -5,11 +5,11 @@
 // Copyright (C) 2013,2014 Samsung Electronics
 // Krzysztof Kozlowski <krzk@kernel.org>
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/max14577-private.h>
-#include <linux/mfd/max14577.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/mfd/max14577-private.h>
+#include <linaos/mfd/max14577.h>
 
 struct max14577_charger {
 	struct device		*dev;

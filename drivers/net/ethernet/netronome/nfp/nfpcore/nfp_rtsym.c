@@ -11,10 +11,10 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
 
 #include "nfp.h"
 #include "nfp_cpp.h"

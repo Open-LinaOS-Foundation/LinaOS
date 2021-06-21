@@ -1,7 +1,7 @@
 /*
- * Amiga Linux/68k A2065 Ethernet Driver
+ * Amiga LinaOS/68k A2065 Ethernet Driver
  *
- * (C) Copyright 1995-2003 by Geert Uytterhoeven <geert@linux-m68k.org>
+ * (C) Copyright 1995-2003 by Geert Uytterhoeven <geert@linaos-m68k.org>
  *
  * Fixes and tips by:
  *	- Janos Farkas (CHEXUM@sparta.banki.hu)
@@ -12,11 +12,11 @@
  *
  * This program is based on
  *
- *	ariadne.?:	Amiga Linux/68k Ariadne Ethernet Driver
+ *	ariadne.?:	Amiga LinaOS/68k Ariadne Ethernet Driver
  *			(C) Copyright 1995 by Geert Uytterhoeven,
  *                                            Peter De Schrijver
  *
- *	lance.c:	An AMD LANCE ethernet driver for linux.
+ *	lance.c:	An AMD LANCE ethernet driver for linaos.
  *			Written 1993-94 by Donald Becker.
  *
  *	Am79C960:	PCnet(tm)-ISA Single-Chip Ethernet Controller
@@ -26,7 +26,7 @@
  * ----------------------------------------------------------------------------
  *
  * This file is subject to the terms and conditions of the GNU General Public
- * License.  See the file COPYING in the main directory of the Linux
+ * License.  See the file COPYING in the main directory of the LinaOS
  * distribution for more details.
  *
  * ----------------------------------------------------------------------------
@@ -42,20 +42,20 @@
 /*#define DEBUG*/
 /*#define TEST_HITS*/
 
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/skbuff.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/crc32.h>
+#include <linaos/zorro.h>
+#include <linaos/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>

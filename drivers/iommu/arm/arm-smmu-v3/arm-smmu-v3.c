@@ -9,27 +9,27 @@
  * This driver is powered by bad coffee and bombay mix.
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitops.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/dma-iommu.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io-pgtable.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_iommu.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/bitops.h>
+#include <linaos/crash_dump.h>
+#include <linaos/delay.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io-pgtable.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_platform.h>
+#include <linaos/pci.h>
+#include <linaos/pci-ats.h>
+#include <linaos/platform_device.h>
 
-#include <linux/amba/bus.h>
+#include <linaos/amba/bus.h>
 
 #include "arm-smmu-v3.h"
 

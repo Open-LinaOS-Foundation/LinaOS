@@ -3,13 +3,13 @@
  * Copyright (C) 2019 Arrikto, Inc. All Rights Reserved.
  */
 
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/bitops.h>
-#include <linux/bitmap.h>
-#include <linux/device-mapper.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/rwsem.h>
+#include <linaos/bitops.h>
+#include <linaos/bitmap.h>
+#include <linaos/device-mapper.h>
 
 #include "persistent-data/dm-bitset.h"
 #include "persistent-data/dm-space-map.h"

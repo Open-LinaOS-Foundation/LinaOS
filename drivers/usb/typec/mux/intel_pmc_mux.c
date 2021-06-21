@@ -3,18 +3,18 @@
  * Driver for Intel PMC USB mux control
  *
  * Copyright (C) 2020 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/role.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_tbt.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/usb/pd.h>
+#include <linaos/usb/role.h>
+#include <linaos/usb/typec_mux.h>
+#include <linaos/usb/typec_dp.h>
+#include <linaos/usb/typec_tbt.h>
 
 #include <asm/intel_scu_ipc.h>
 
@@ -696,6 +696,6 @@ static struct platform_driver pmc_usb_driver = {
 
 module_platform_driver(pmc_usb_driver);
 
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Intel PMC USB mux control");

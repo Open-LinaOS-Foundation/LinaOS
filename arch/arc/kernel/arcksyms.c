@@ -5,7 +5,7 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* libgcc functions, not part of kernel sources */
 extern void __ashldi3(void);

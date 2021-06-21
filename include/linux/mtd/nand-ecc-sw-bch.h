@@ -8,8 +8,8 @@
 #ifndef __MTD_NAND_ECC_SW_BCH_H__
 #define __MTD_NAND_ECC_SW_BCH_H__
 
-#include <linux/mtd/nand.h>
-#include <linux/bch.h>
+#include <linaos/mtd/nand.h>
+#include <linaos/bch.h>
 
 /**
  * struct nand_ecc_sw_bch_conf - private software BCH ECC engine structure

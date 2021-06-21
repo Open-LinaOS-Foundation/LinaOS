@@ -78,21 +78,21 @@
 
 	button-190 {
 		label = "Volume Up";
-		linux,code = <KEY_VOLUMEUP>;
+		linaos,code = <KEY_VOLUMEUP>;
 		channel = <0>;
 		voltage = <190000>;
 	};
 
 	button-390 {
 		label = "Volume Down";
-		linux,code = <KEY_VOLUMEDOWN>;
+		linaos,code = <KEY_VOLUMEDOWN>;
 		channel = <0>;
 		voltage = <390000>;
 	};
 
 	button-600 {
 		label = "Home";
-		linux,code = <KEY_HOME>;
+		linaos,code = <KEY_HOME>;
 		channel = <0>;
 		voltage = <600000>;
 	};

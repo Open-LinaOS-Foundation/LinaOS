@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/kallsyms.h>
-#include <linux/livepatch.h>
-#include <linux/elf.h>
-#include <linux/moduleloader.h>
-#include <linux/completion.h>
-#include <linux/memory.h>
-#include <linux/rcupdate.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/kallsyms.h>
+#include <linaos/livepatch.h>
+#include <linaos/elf.h>
+#include <linaos/moduleloader.h>
+#include <linaos/completion.h>
+#include <linaos/memory.h>
+#include <linaos/rcupdate.h>
 #include <asm/cacheflush.h>
 #include "core.h"
 #include "patch.h"
@@ -50,7 +50,7 @@ static bool klp_is_module(struct klp_object *obj)
 	return obj->name;
 }
 
-/* sets obj->mod if object is not vmlinux and module is found */
+/* sets obj->mod if object is not vmlinaos and module is found */
 static void klp_find_object_module(struct klp_object *obj)
 {
 	struct module *mod;
@@ -180,7 +180,7 @@ static int klp_find_object_symbol(const char *objname, const char *name,
 		       name, objname);
 	} else if (sympos != args.count && sympos > 0) {
 		pr_err("symbol position %lu for symbol '%s' in object '%s' not found\n",
-		       sympos, name, objname ? objname : "vmlinux");
+		       sympos, name, objname ? objname : "vmlinaos");
 	} else {
 		*addr = args.addr;
 		return 0;
@@ -200,8 +200,8 @@ static int klp_resolve_symbols(Elf64_Shdr *sechdrs, const char *strtab,
 	Elf_Rela *relas;
 	Elf_Sym *sym;
 	unsigned long sympos, addr;
-	bool sym_vmlinux;
-	bool sec_vmlinux = !strcmp(sec_objname, "vmlinux");
+	bool sym_vmlinaos;
+	bool sec_vmlinaos = !strcmp(sec_objname, "vmlinaos");
 
 	/*
 	 * Since the field widths for sym_objname and sym_name in the sscanf()
@@ -235,22 +235,22 @@ static int klp_resolve_symbols(Elf64_Shdr *sechdrs, const char *strtab,
 			return -EINVAL;
 		}
 
-		sym_vmlinux = !strcmp(sym_objname, "vmlinux");
+		sym_vmlinaos = !strcmp(sym_objname, "vmlinaos");
 
 		/*
 		 * Prevent module-specific KLP rela sections from referencing
-		 * vmlinux symbols.  This helps prevent ordering issues with
+		 * vmlinaos symbols.  This helps prevent ordering issues with
 		 * module special section initializations.  Presumably such
 		 * symbols are exported and normal relas can be used instead.
 		 */
-		if (!sec_vmlinux && sym_vmlinux) {
-			pr_err("invalid access to vmlinux symbol '%s' from module-specific livepatch relocation section",
+		if (!sec_vmlinaos && sym_vmlinaos) {
+			pr_err("invalid access to vmlinaos symbol '%s' from module-specific livepatch relocation section",
 			       sym_name);
 			return -EINVAL;
 		}
 
-		/* klp_find_object_symbol() treats a NULL objname as vmlinux */
-		ret = klp_find_object_symbol(sym_vmlinux ? NULL : sym_objname,
+		/* klp_find_object_symbol() treats a NULL objname as vmlinaos */
+		ret = klp_find_object_symbol(sym_vmlinaos ? NULL : sym_objname,
 					     sym_name, sympos, &addr);
 		if (ret)
 			return ret;
@@ -263,15 +263,15 @@ static int klp_resolve_symbols(Elf64_Shdr *sechdrs, const char *strtab,
 
 /*
  * At a high-level, there are two types of klp relocation sections: those which
- * reference symbols which live in vmlinux; and those which reference symbols
+ * reference symbols which live in vmlinaos; and those which reference symbols
  * which live in other modules.  This function is called for both types:
  *
  * 1) When a klp module itself loads, the module code calls this function to
- *    write vmlinux-specific klp relocations (.klp.rela.vmlinux.* sections).
+ *    write vmlinaos-specific klp relocations (.klp.rela.vmlinaos.* sections).
  *    These relocations are written to the klp module text to allow the patched
- *    code/data to reference unexported vmlinux symbols.  They're written as
+ *    code/data to reference unexported vmlinaos symbols.  They're written as
  *    early as possible to ensure that other module init code (.e.g.,
- *    jump_label_apply_nops) can access any unexported vmlinux symbols which
+ *    jump_label_apply_nops) can access any unexported vmlinaos symbols which
  *    might be referenced by the klp module's special sections.
  *
  * 2) When a to-be-patched module loads -- or is already loaded when a
@@ -306,7 +306,7 @@ int klp_apply_section_relocs(struct module *pmod, Elf_Shdr *sechdrs,
 		return -EINVAL;
 	}
 
-	if (strcmp(objname ? objname : "vmlinux", sec_objname))
+	if (strcmp(objname ? objname : "vmlinaos", sec_objname))
 		return 0;
 
 	ret = klp_resolve_symbols(sechdrs, strtab, symndx, sec, sec_objname);
@@ -777,7 +777,7 @@ static int klp_init_object_loaded(struct klp_patch *patch,
 	if (klp_is_module(obj)) {
 		/*
 		 * Only write module-specific relocations here
-		 * (.klp.rela.{module}.*).  vmlinux-specific relocations were
+		 * (.klp.rela.{module}.*).  vmlinaos-specific relocations were
 		 * written earlier during the initialization of the klp module
 		 * itself.
 		 */
@@ -830,7 +830,7 @@ static int klp_init_object(struct klp_patch *patch, struct klp_object *obj)
 
 	klp_find_object_module(obj);
 
-	name = klp_is_module(obj) ? obj->name : "vmlinux";
+	name = klp_is_module(obj) ? obj->name : "vmlinaos";
 	ret = kobject_add(&obj->kobj, &patch->kobj, "%s", name);
 	if (ret)
 		return ret;
@@ -984,14 +984,14 @@ static int __klp_enable_patch(struct klp_patch *patch)
 		ret = klp_pre_patch_callback(obj);
 		if (ret) {
 			pr_warn("pre-patch callback failed for object '%s'\n",
-				klp_is_module(obj) ? obj->name : "vmlinux");
+				klp_is_module(obj) ? obj->name : "vmlinaos");
 			goto err;
 		}
 
 		ret = klp_patch_object(obj);
 		if (ret) {
 			pr_warn("failed to patch object '%s'\n",
-				klp_is_module(obj) ? obj->name : "vmlinux");
+				klp_is_module(obj) ? obj->name : "vmlinaos");
 			goto err;
 		}
 	}
@@ -1173,8 +1173,8 @@ int klp_module_coming(struct module *mod)
 	if (WARN_ON(mod->state != MODULE_STATE_COMING))
 		return -EINVAL;
 
-	if (!strcmp(mod->name, "vmlinux")) {
-		pr_err("vmlinux.ko: invalid module name");
+	if (!strcmp(mod->name, "vmlinaos")) {
+		pr_err("vmlinaos.ko: invalid module name");
 		return -EINVAL;
 	}
 

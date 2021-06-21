@@ -9,7 +9,7 @@
 #ifndef __HMCDRV_FTP_H__
 #define __HMCDRV_FTP_H__
 
-#include <linux/types.h> /* size_t, loff_t */
+#include <linaos/types.h> /* size_t, loff_t */
 
 /*
  * HMC drive FTP Service max. length of path (w/ EOS)

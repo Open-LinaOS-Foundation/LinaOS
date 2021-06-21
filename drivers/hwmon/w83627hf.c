@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * w83627hf.c - Part of lm_sensors, Linux kernel modules for hardware
+ * w83627hf.c - Part of lm_sensors, LinaOS kernel modules for hardware
  *		monitoring
  * Copyright (c) 1998 - 2003  Frodo Looijaard <frodol@dds.nl>,
  *			      Philip Edelbrock <phil@netroedge.com>,
@@ -28,19 +28,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/ioport.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/ioport.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 #include "lm75.h"
 
 static struct platform_device *pdev;

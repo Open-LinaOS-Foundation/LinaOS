@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/drivers/video/omap2/dss/dispc.h
+ * linaos/drivers/video/omap2/dss/dispc.h
  *
  * Copyright (C) 2011 Texas Instruments
  * Author: Archit Taneja <archit@ti.com>

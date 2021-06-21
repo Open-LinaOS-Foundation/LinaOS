@@ -57,7 +57,7 @@ endif
 
 # From arm Makefile
 VDSO_CAFLAGS += $(call cc32-option,-fno-dwarf2-cfi-asm)
-VDSO_CAFLAGS += -mabi=aapcs-linux -mfloat-abi=soft
+VDSO_CAFLAGS += -mabi=aapcs-linaos -mfloat-abi=soft
 ifeq ($(CONFIG_CPU_BIG_ENDIAN), y)
 VDSO_CAFLAGS += -mbig-endian
 else
@@ -120,7 +120,7 @@ VDSO_CFLAGS += $(dmbinstr)
 VDSO_AFLAGS += $(dmbinstr)
 
 # From arm vDSO Makefile
-VDSO_LDFLAGS += -Bsymbolic --no-undefined -soname=linux-vdso.so.1
+VDSO_LDFLAGS += -Bsymbolic --no-undefined -soname=linaos-vdso.so.1
 VDSO_LDFLAGS += -z max-page-size=4096 -z common-page-size=4096
 VDSO_LDFLAGS += -nostdlib -shared --hash-style=sysv --build-id=sha1
 

@@ -2,14 +2,14 @@
 // Copyright (C) STMicroelectronics 2018
 // Author: Pascal Paillet <p.paillet@st.com> for STMicroelectronics.
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/stpmic1.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/stpmic1.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
 
 /**
  * struct stpmic1_onkey - OnKey data

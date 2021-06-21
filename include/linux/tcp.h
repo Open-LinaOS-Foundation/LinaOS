@@ -14,12 +14,12 @@
 #define _LINUX_TCP_H
 
 
-#include <linux/skbuff.h>
-#include <linux/win_minmax.h>
+#include <linaos/skbuff.h>
+#include <linaos/win_minmax.h>
 #include <net/sock.h>
 #include <net/inet_connection_sock.h>
 #include <net/inet_timewait_sock.h>
-#include <uapi/linux/tcp.h>
+#include <uapi/linaos/tcp.h>
 
 static inline struct tcphdr *tcp_hdr(const struct sk_buff *skb)
 {
@@ -356,7 +356,7 @@ struct tcp_sock {
 /* Sock_ops bpf program related variables */
 #ifdef CONFIG_BPF
 	u8	bpf_sock_ops_cb_flags;  /* Control calling BPF programs
-					 * values defined in uapi/linux/tcp.h
+					 * values defined in uapi/linaos/tcp.h
 					 */
 #define BPF_SOCK_OPS_TEST_FLAG(TP, ARG) (TP->bpf_sock_ops_cb_flags & ARG)
 #else

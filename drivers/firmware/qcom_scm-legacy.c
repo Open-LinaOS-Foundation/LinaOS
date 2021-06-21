@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010,2015,2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010,2015,2019 The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2015 Linaro Ltd.
  */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/qcom_scm.h>
-#include <linux/arm-smccc.h>
-#include <linux/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/dma-mapping.h>
 
 #include "qcom_scm.h"
 

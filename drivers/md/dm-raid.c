@@ -5,8 +5,8 @@
  * This file is released under the GPL.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #include "md.h"
 #include "raid1.h"
@@ -14,7 +14,7 @@
 #include "raid10.h"
 #include "md-bitmap.h"
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
 #define DM_MSG_PREFIX "raid"
 #define	MAX_RAID_DEVICES	253 /* md-raid kernel limit */

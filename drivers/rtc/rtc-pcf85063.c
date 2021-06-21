@@ -4,19 +4,19 @@
  * Copyright 2014 Rose Technology
  *
  * Author: Søren Andersen <san@rosetechnology.dk>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-linaos.org/
  *
  * Copyright (C) 2019 Micro Crystal AG
  * Author: Alexandre Belloni <alexandre.belloni@bootlin.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
+#include <linaos/clk-provider.h>
+#include <linaos/i2c.h>
+#include <linaos/bcd.h>
+#include <linaos/rtc.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/regmap.h>
 
 /*
  * Information for this driver was pulled from the following datasheets.

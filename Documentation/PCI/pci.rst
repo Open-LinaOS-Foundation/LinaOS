@@ -1,20 +1,20 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ==============================
-How To Write Linux PCI Drivers
+How To Write LinaOS PCI Drivers
 ==============================
 
 :Authors: - Martin Mares <mj@ucw.cz>
-          - Grant Grundler <grundler@parisc-linux.org>
+          - Grant Grundler <grundler@parisc-linaos.org>
 
 The world of PCI is vast and full of (mostly unpleasant) surprises.
 Since each CPU architecture implements different chip-sets and PCI devices
 have different requirements (erm, "features"), the result is the PCI support
-in the Linux kernel is not as trivial as one would wish. This short paper
-tries to introduce all potential driver authors to Linux APIs for
+in the LinaOS kernel is not as trivial as one would wish. This short paper
+tries to introduce all potential driver authors to LinaOS APIs for
 PCI device drivers.
 
-A more complete resource is the third edition of "Linux Device Drivers"
+A more complete resource is the third edition of "LinaOS Device Drivers"
 by Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman.
 LDD3 is available for free (under Creative Commons License) from:
 https://lwn.net/Kernel/LDD3/.
@@ -22,8 +22,8 @@ https://lwn.net/Kernel/LDD3/.
 However, keep in mind that all documents are subject to "bit rot".
 Refer to the source code if things are not working as described here.
 
-Please send questions/comments/patches about Linux PCI API to the
-"Linux PCI" <linux-pci@atrey.karlin.mff.cuni.cz> mailing list.
+Please send questions/comments/patches about LinaOS PCI API to the
+"LinaOS PCI" <linaos-pci@atrey.karlin.mff.cuni.cz> mailing list.
 
 
 Structure of PCI drivers
@@ -63,7 +63,7 @@ the driver needs to take the follow steps:
   - Disable the device
 
 Most of these topics are covered in the following sections.
-For the rest look at LDD3 or <linux/pci.h> .
+For the rest look at LDD3 or <linaos/pci.h> .
 
 If the PCI subsystem is not configured (CONFIG_PCI is not set), most of
 the PCI functions described below are defined as inline functions either
@@ -78,13 +78,13 @@ PCI device drivers call ``pci_register_driver()`` during their
 initialization with a pointer to a structure describing the driver
 (``struct pci_driver``):
 
-.. kernel-doc:: include/linux/pci.h
+.. kernel-doc:: include/linaos/pci.h
    :functions: pci_driver
 
 The ID table is an array of ``struct pci_device_id`` entries ending with an
 all-zero entry.  Definitions with static const are generally preferred.
 
-.. kernel-doc:: include/linux/mod_devicetable.h
+.. kernel-doc:: include/linaos/mod_devicetable.h
    :functions: pci_device_id
 
 Most drivers only need ``PCI_DEVICE()`` or ``PCI_DEVICE_CLASS()`` to set up
@@ -119,7 +119,7 @@ automatically calls the remove hook for all devices handled by the driver.
 --------------------------------------
 
 Please mark the initialization and cleanup functions where appropriate
-(the corresponding macros are defined in <linux/init.h>):
+(the corresponding macros are defined in <linaos/init.h>):
 
 	======		=================================================
 	__init		Initialization code. Thrown away after the driver
@@ -214,7 +214,7 @@ the PCI device by calling pci_enable_device(). This will:
    problem and unlikely to get fixed soon.
 
    This has been discussed before but not changed as of 2.6.19:
-   https://lore.kernel.org/r/20060302180025.GC28895@flint.arm.linux.org.uk/
+   https://lore.kernel.org/r/20060302180025.GC28895@flint.arm.linaos.org.uk/
 
 
 pci_set_master() will enable DMA by setting the bus master bit
@@ -460,7 +460,7 @@ If you don't have a struct pci_dev available, you can call
 and function on that bus.
 
 If you access fields in the standard portion of the config header, please
-use symbolic names of locations and bits declared in <linux/pci.h>.
+use symbolic names of locations and bits declared in <linaos/pci.h>.
 
 If you need to access Extended PCI Capability registers, just call
 pci_find_capability() for the particular capability and it will find the
@@ -507,7 +507,7 @@ to be handled by platform and generic code, not individual drivers.
 Vendor and device identifications
 =================================
 
-Do not add new device or vendor IDs to include/linux/pci_ids.h unless they
+Do not add new device or vendor IDs to include/linaos/pci_ids.h unless they
 are shared across multiple drivers.  You can add private definitions in
 your driver if they're helpful, or just use plain hex constants.
 

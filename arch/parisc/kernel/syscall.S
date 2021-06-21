@@ -1,7 +1,7 @@
 /* 
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * LinaOS/PA-RISC Project (http://www.parisc-linaos.org/)
  * 
- * System call entry code / Linux gateway page
+ * System call entry code / LinaOS gateway page
  * Copyright (c) Matthew Wilcox 1999 <willy@infradead.org>
  * Licensed under the GNU GPL.
  * thanks to Philipp Rumpf, Mike Shaver and various others
@@ -9,10 +9,10 @@
  */
 
 /*
-How does the Linux gateway page on PA-RISC work?
+How does the LinaOS gateway page on PA-RISC work?
 ------------------------------------------------
-The Linux gateway page on PA-RISC is "special".
-It actually has PAGE_GATEWAY bits set (this is linux terminology; in parisc
+The LinaOS gateway page on PA-RISC is "special".
+It actually has PAGE_GATEWAY bits set (this is linaos terminology; in parisc
 terminology it's Execute, promote to PL0) in the page map.  So anything
 executing on this page executes with kernel level privilege (there's more to it
 than that: to have this happen, you also have to use a branch with a ,gate
@@ -40,7 +40,7 @@ registers).
 #include <asm/processor.h>
 #include <asm/cache.h>
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 	/* We fill the empty parts of the gateway page with
  	 * something that will kill the kernel or a
@@ -55,7 +55,7 @@ registers).
 	.import syscall_exit,code
 	.import syscall_exit_rfi,code
 
-	/* Linux gateway page is aliased to virtual page 0 in the kernel
+	/* LinaOS gateway page is aliased to virtual page 0 in the kernel
 	 * address space. Since it is a gateway page it cannot be
 	 * dereferenced, so null pointers will still fault. We start
 	 * the actual entry point at 0x100. We put break instructions
@@ -64,7 +64,7 @@ registers).
 	 */
 
 	.align PAGE_SIZE
-ENTRY(linux_gateway_page)
+ENTRY(linaos_gateway_page)
 
         /* ADDRESS 0x00 to 0xb0 = 176 bytes / 4 bytes per insn = 44 insns */
 	.rept 44
@@ -101,7 +101,7 @@ set_thread_pointer:
 
 /* This address must remain fixed at 0x100 for glibc's syscalls to work */
 	.align LINUX_GATEWAY_ADDR
-linux_gateway_entry:
+linaos_gateway_entry:
 	gate	.+8, %r0			/* become privileged */
 	mtsp	%r0,%sr4			/* get kernel space into sr4 */
 	mtsp	%r0,%sr5			/* get kernel space into sr5 */
@@ -225,7 +225,7 @@ linux_gateway_entry:
 #else
 	load32	sys_call_table, %r19
 #endif	
-	comiclr,>>	__NR_Linux_syscalls, %r20, %r0
+	comiclr,>>	__NR_LinaOS_syscalls, %r20, %r0
 	b,n	.Lsyscall_nosys
 	
 	LDREGX  %r20(%r19), %r19
@@ -344,7 +344,7 @@ tracesys_next:
 #endif
 
 	cmpib,COND(=),n -1,%r20,tracesys_exit /* seccomp may have returned -1 */
-	comiclr,>>	__NR_Linux_syscalls, %r20, %r0
+	comiclr,>>	__NR_LinaOS_syscalls, %r20, %r0
 	b,n	.Ltracesys_nosys
 
 	/* Note!  We cannot use the syscall table that is mapped
@@ -669,8 +669,8 @@ cas_action:
 	/* Two exception table entries, one for the load,
 	   the other for the store. Either return -EFAULT.
 	   Each of the entries must be relocated. */
-	ASM_EXCEPTIONTABLE_ENTRY(1b-linux_gateway_page, 3b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(2b-linux_gateway_page, 3b-linux_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(1b-linaos_gateway_page, 3b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(2b-linaos_gateway_page, 3b-linaos_gateway_page)
 
 
 	/***************************************************
@@ -876,36 +876,36 @@ cas2_end:
 
 	/* Exception table entries, for the load and store, return EFAULT.
 	   Each of the entries must be relocated. */
-	ASM_EXCEPTIONTABLE_ENTRY(4b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(5b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(6b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(7b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(8b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(9b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(10b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(11b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(13b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(14b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(15b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(16b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(17b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(18b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(19b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(20b-linux_gateway_page, 22b-linux_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(4b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(5b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(6b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(7b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(8b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(9b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(10b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(11b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(13b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(14b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(15b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(16b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(17b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(18b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(19b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(20b-linaos_gateway_page, 22b-linaos_gateway_page)
 #ifndef CONFIG_64BIT
-	ASM_EXCEPTIONTABLE_ENTRY(12b-linux_gateway_page, 22b-linux_gateway_page)
-	ASM_EXCEPTIONTABLE_ENTRY(21b-linux_gateway_page, 22b-linux_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(12b-linaos_gateway_page, 22b-linaos_gateway_page)
+	ASM_EXCEPTIONTABLE_ENTRY(21b-linaos_gateway_page, 22b-linaos_gateway_page)
 #endif
 
 	/* Make sure nothing else is placed on this page */
 	.align PAGE_SIZE
-END(linux_gateway_page)
-ENTRY(end_linux_gateway_page)
+END(linaos_gateway_page)
+ENTRY(end_linaos_gateway_page)
 
-	/* Relocate symbols assuming linux_gateway_page is mapped
+	/* Relocate symbols assuming linaos_gateway_page is mapped
 	   to virtual address 0x0 */
 
-#define LWS_ENTRY(_name_) ASM_ULONG_INSN (lws_##_name_ - linux_gateway_page)
+#define LWS_ENTRY(_name_) ASM_ULONG_INSN (lws_##_name_ - linaos_gateway_page)
 
 	.section .rodata,"a"
 

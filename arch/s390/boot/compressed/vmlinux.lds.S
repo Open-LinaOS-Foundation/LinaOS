@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <asm-generic/vmlinux.lds.h>
-#include <asm/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
+#include <asm/vmlinaos.lds.h>
 
 OUTPUT_FORMAT("elf64-s390", "elf64-s390", "elf64-s390")
 OUTPUT_ARCH(s390:64-bit)
@@ -60,7 +60,7 @@ SECTIONS
 	BOOT_DATA_PRESERVED
 
 	/*
-	 * This is the BSS section of the decompressor and not of the decompressed Linux kernel.
+	 * This is the BSS section of the decompressor and not of the decompressed LinaOS kernel.
 	 * It will consume place in the decompressor's image.
 	 */
 	. = ALIGN(8);
@@ -74,13 +74,13 @@ SECTIONS
 
 	/*
 	 * uncompressed image info used by the decompressor it should match
-	 * struct vmlinux_info. It comes from .vmlinux.info section of
-	 * uncompressed vmlinux in a form of info.o
+	 * struct vmlinaos_info. It comes from .vmlinaos.info section of
+	 * uncompressed vmlinaos in a form of info.o
 	 */
 	. = ALIGN(8);
-	.vmlinux.info : {
-		_vmlinux_info = .;
-		*(.vmlinux.info)
+	.vmlinaos.info : {
+		_vmlinaos_info = .;
+		*(.vmlinaos.info)
 	}
 
 	.decompressor.syms : {
@@ -98,7 +98,7 @@ SECTIONS
 #endif
 	.rodata.compressed : {
 		_compressed_start = .;
-		*(.vmlinux.bin.compressed)
+		*(.vmlinaos.bin.compressed)
 		_compressed_end = .;
 		FILL(0xff);
 		. = ALIGN(4096);

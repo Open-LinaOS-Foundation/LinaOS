@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/include/linux/serial_8250.h
+ *  linaos/include/linaos/serial_8250.h
  *
  *  Copyright (C) 2004 Russell King
  */
 #ifndef _LINUX_SERIAL_8250_H
 #define _LINUX_SERIAL_8250_H
 
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
+#include <linaos/platform_device.h>
 
 /*
  * This is the platform device platform_data structure

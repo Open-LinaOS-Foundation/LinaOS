@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /****************************************************************************/
 /*
- *  linux/fs/binfmt_flat.c
+ *  linaos/fs/binfmt_flat.c
  *
  *	Copyright (C) 2000-2003 David McCullough <davidm@snapgear.com>
  *	Copyright (C) 2002 Greg Ungerer <gerg@snapgear.com>
@@ -9,34 +9,34 @@
  *	Copyright (C) 2000, 2001 Lineo, by David McCullough <davidm@lineo.com>
  *  based heavily on:
  *
- *  linux/fs/binfmt_aout.c:
+ *  linaos/fs/binfmt_aout.c:
  *      Copyright (C) 1991, 1992, 1996  Linus Torvalds
- *  linux/fs/binfmt_flat.c for 2.0 kernel
+ *  linaos/fs/binfmt_flat.c for 2.0 kernel
  *	    Copyright (C) 1998  Kenneth Albanowski <kjahds@kjahds.com>
  *	JAN/99 -- coded full program relocation (gerg@snapgear.com)
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/slab.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
-#include <linux/init.h>
-#include <linux/flat.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/slab.h>
+#include <linaos/binfmts.h>
+#include <linaos/personality.h>
+#include <linaos/init.h>
+#include <linaos/flat.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
@@ -96,10 +96,10 @@ struct lib_info {
 static int load_flat_shared_library(int id, struct lib_info *p);
 #endif
 
-static int load_flat_binary(struct linux_binprm *);
+static int load_flat_binary(struct linaos_binprm *);
 static int flat_core_dump(struct coredump_params *cprm);
 
-static struct linux_binfmt flat_format = {
+static struct linaos_binfmt flat_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_flat_binary,
 	.core_dump	= flat_core_dump,
@@ -126,7 +126,7 @@ static int flat_core_dump(struct coredump_params *cprm)
  * addresses on the "stack", recording the new stack pointer value.
  */
 
-static int create_flat_tables(struct linux_binprm *bprm, unsigned long arg_start)
+static int create_flat_tables(struct linaos_binprm *bprm, unsigned long arg_start)
 {
 	char __user *p;
 	unsigned long __user *sp;
@@ -187,7 +187,7 @@ static int create_flat_tables(struct linux_binprm *bprm, unsigned long arg_start
 
 #ifdef CONFIG_BINFMT_ZFLAT
 
-#include <linux/zlib.h>
+#include <linaos/zlib.h>
 
 #define LBUFSIZE	4000
 
@@ -200,7 +200,7 @@ static int create_flat_tables(struct linux_binprm *bprm, unsigned long arg_start
 #define ENCRYPTED    0x20 /* bit 5 set: file is encrypted */
 #define RESERVED     0xC0 /* bit 6,7:   reserved */
 
-static int decompress_exec(struct linux_binprm *bprm, loff_t fpos, char *dst,
+static int decompress_exec(struct linaos_binprm *bprm, loff_t fpos, char *dst,
 		long len, int fd)
 {
 	unsigned char *buf;
@@ -433,7 +433,7 @@ static void old_reloc(unsigned long rl)
 
 /****************************************************************************/
 
-static int load_flat_file(struct linux_binprm *bprm,
+static int load_flat_file(struct linaos_binprm *bprm,
 		struct lib_info *libinfo, int id, unsigned long *extra_stack)
 {
 	struct flat_hdr *hdr;
@@ -900,7 +900,7 @@ static int load_flat_shared_library(int id, struct lib_info *libs)
 	 * This is a fake bprm struct; only the members "buf", "file" and
 	 * "filename" are actually used.
 	 */
-	struct linux_binprm bprm;
+	struct linaos_binprm bprm;
 	int res;
 	char buf[16];
 	loff_t pos = 0;
@@ -936,7 +936,7 @@ static int load_flat_shared_library(int id, struct lib_info *libs)
  * libraries.  There is no binary dependent code anywhere else.
  */
 
-static int load_flat_binary(struct linux_binprm *bprm)
+static int load_flat_binary(struct linaos_binprm *bprm)
 {
 	struct lib_info libinfo;
 	struct pt_regs *regs = current_pt_regs();

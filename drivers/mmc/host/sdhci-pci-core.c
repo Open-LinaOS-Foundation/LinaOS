@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*  linux/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
+/*  linaos/drivers/mmc/host/sdhci-pci.c - SDHCI on PCI bus interface
  *
  *  Copyright (C) 2005-2008 Pierre Ossman, All Rights Reserved.
  *
@@ -8,28 +8,28 @@
  *     - JMicron (hardware and technical support)
  */
 
-#include <linux/bitfield.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/debugfs.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/mmc/sdhci-pci-data.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <linaos/bitfield.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/highmem.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/scatterlist.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/gpio.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
+#include <linaos/debugfs.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/mmc/sdhci-pci-data.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
 
 #ifdef CONFIG_X86
 #include <asm/iosf_mbi.h>

@@ -1,28 +1,28 @@
 /*
  * device.c  -- common ColdFire SoC device support
  *
- * (C) Copyright 2011, Greg Ungerer <gerg@uclinux.org>
+ * (C) Copyright 2011, Greg Ungerer <gerg@uclinaos.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/fec.h>
-#include <linux/dmaengine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/spi/spi.h>
+#include <linaos/gpio.h>
+#include <linaos/fec.h>
+#include <linaos/dmaengine.h>
 #include <asm/traps.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/mcfuart.h>
 #include <asm/mcfqspi.h>
-#include <linux/platform_data/edma.h>
-#include <linux/platform_data/dma-mcf-edma.h>
-#include <linux/platform_data/mmc-esdhc-mcf.h>
+#include <linaos/platform_data/edma.h>
+#include <linaos/platform_data/dma-mcf-edma.h>
+#include <linaos/platform_data/mmc-esdhc-mcf.h>
 
 /*
  *	All current ColdFire parts contain from 2, 3, 4 or 10 UARTS.

@@ -5,7 +5,7 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asi.h>
 #include <asm/thread_info.h>
 #define GLOBAL_SPARE	%g7

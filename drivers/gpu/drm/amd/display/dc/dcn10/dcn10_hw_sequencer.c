@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "dm_services.h"
 #include "basics/dc_common.h"
 #include "core_types.h"

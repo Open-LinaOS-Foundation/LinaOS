@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
-  File: linux/posix_acl.h
+  File: linaos/posix_acl.h
 
   (C) 2002 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
@@ -9,11 +9,11 @@
 #ifndef __LINUX_POSIX_ACL_H
 #define __LINUX_POSIX_ACL_H
 
-#include <linux/bug.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <uapi/linux/posix_acl.h>
+#include <linaos/bug.h>
+#include <linaos/slab.h>
+#include <linaos/rcupdate.h>
+#include <linaos/refcount.h>
+#include <uapi/linaos/posix_acl.h>
 
 struct user_namespace;
 

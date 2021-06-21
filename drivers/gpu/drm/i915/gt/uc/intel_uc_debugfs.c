@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #include <drm/drm_print.h>
 
 #include "gt/debugfs_gt.h"

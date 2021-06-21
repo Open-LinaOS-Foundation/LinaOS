@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <asm/vmlinux.lds.h>
+#include <asm/vmlinaos.lds.h>
 #include <asm/page.h>
 #include <asm/memory.h>
 

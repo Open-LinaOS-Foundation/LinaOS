@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Intel CPU Microcode Update Driver for Linux
+ * Intel CPU Microcode Update Driver for LinaOS
  *
  * Copyright (C) 2000-2006 Tigran Aivazian <aivazian.tigran@gmail.com>
  *		 2006 Shaohua Li <shaohua.li@intel.com>
  *
- * Intel CPU microcode early update for Linux
+ * Intel CPU microcode early update for LinaOS
  *
  * Copyright (C) 2012 Fenghua Yu <fenghua.yu@intel.com>
  *		      H Peter Anvin" <hpa@zytor.com>
@@ -19,16 +19,16 @@
  */
 #define pr_fmt(fmt) "microcode: " fmt
 
-#include <linux/earlycpio.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/initrd.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/uio.h>
-#include <linux/mm.h>
+#include <linaos/earlycpio.h>
+#include <linaos/firmware.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/initrd.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/uio.h>
+#include <linaos/mm.h>
 
 #include <asm/microcode_intel.h>
 #include <asm/intel-family.h>

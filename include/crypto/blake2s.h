@@ -6,10 +6,10 @@
 #ifndef _CRYPTO_BLAKE2S_H
 #define _CRYPTO_BLAKE2S_H
 
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/bug.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 
 enum blake2s_lengths {
 	BLAKE2S_BLOCK_SIZE = 64,

@@ -7,9 +7,9 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include "vxpocket.h"
 #include <pcmcia/ciscode.h>

@@ -47,8 +47,8 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/device.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/wait.h>
 
 #include "common.h"
 #include "iowait.h"

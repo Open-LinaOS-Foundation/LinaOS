@@ -7,17 +7,17 @@
  * Ralf Baechle or David S. Miller (sorry guys, i'm really not sure)
  *
  * Copyright (C) 2001 by Ladislav Michl
- * Copyright (C) 2003, 06 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2003, 06 Ralf Baechle (ralf@linaos-mips.org)
  */
-#include <linux/bcd.h>
-#include <linux/i8253.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/time.h>
-#include <linux/ftrace.h>
+#include <linaos/bcd.h>
+#include <linaos/i8253.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/time.h>
+#include <linaos/ftrace.h>
 
 #include <asm/cpu.h>
 #include <asm/mipsregs.h>

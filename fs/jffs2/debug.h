@@ -13,8 +13,8 @@
 #ifndef _JFFS2_DEBUG_H_
 #define _JFFS2_DEBUG_H_
 
-#include <linux/printk.h>
-#include <linux/sched.h>
+#include <linaos/printk.h>
+#include <linaos/sched.h>
 
 #ifndef CONFIG_JFFS2_FS_DEBUG
 #define CONFIG_JFFS2_FS_DEBUG 0

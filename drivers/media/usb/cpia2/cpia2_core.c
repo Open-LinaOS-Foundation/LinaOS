@@ -18,12 +18,12 @@
 
 #include "cpia2.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/firmware.h>
+#include <linaos/sched/signal.h>
 
 #define FIRMWARE "cpia2/stv0672_vp4.bin"
 MODULE_FIRMWARE(FIRMWARE);

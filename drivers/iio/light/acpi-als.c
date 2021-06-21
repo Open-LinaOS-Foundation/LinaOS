@@ -13,17 +13,17 @@
  * Copyright (C) 2015 Gabriele Mazzotta <gabriele.mzt@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/mutex.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
 
 #define ACPI_ALS_CLASS			"als"
 #define ACPI_ALS_DEVICE_NAME		"acpi-als"

@@ -37,9 +37,9 @@
  */
 
 #include <asm/page.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
 
 struct genradix_root;
 

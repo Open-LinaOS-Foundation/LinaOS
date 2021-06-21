@@ -8,18 +8,18 @@
  * Copyright 2003-2004 (C) MontaVista, Software, Inc.
  * Copyright (C) Deepak Saxena <dsaxena@plexity.net>
  */
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/sched_clock.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 /* Goes away with OF conversion */
-#include <linux/platform_data/timer-ixp4xx.h>
+#include <linaos/platform_data/timer-ixp4xx.h>
 
 /*
  * Constants to make it easy to access Timer Control/Status registers
@@ -242,7 +242,7 @@ static __init int ixp4xx_timer_register(void __iomem *base,
 /**
  * ixp4xx_timer_setup() - Timer setup function to be called from boardfiles
  * @timerbase: physical base of timer block
- * @timer_irq: Linux IRQ number for the timer
+ * @timer_irq: LinaOS IRQ number for the timer
  * @timer_freq: Fixed frequency of the timer
  */
 void __init ixp4xx_timer_setup(resource_size_t timerbase,

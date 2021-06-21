@@ -6,7 +6,7 @@
 #ifndef BTRFS_XATTR_H
 #define BTRFS_XATTR_H
 
-#include <linux/xattr.h>
+#include <linaos/xattr.h>
 
 extern const struct xattr_handler *btrfs_xattr_handlers[];
 

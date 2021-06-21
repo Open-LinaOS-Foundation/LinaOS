@@ -1,5 +1,5 @@
 ==========================
-Samsung ARM Linux Overview
+Samsung ARM LinaOS Overview
 ==========================
 
 Introduction
@@ -86,4 +86,4 @@ Port Contributors
 Document Author
 ---------------
 
-Copyright 2009-2010 Ben Dooks <ben-linux@fluff.org>
+Copyright 2009-2010 Ben Dooks <ben-linaos@fluff.org>

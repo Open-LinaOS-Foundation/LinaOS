@@ -2,7 +2,7 @@
 /*
     Driver for Zarlink MT312 Satellite Channel Decoder
 
-    Copyright (C) 2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2003 Andreas Oberritter <obi@linaostv.org>
 
 
     References:
@@ -13,7 +13,7 @@
 #ifndef MT312_H
 #define MT312_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct mt312_config {
 	/* the demodulator's i2c address */

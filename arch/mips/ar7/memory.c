@@ -3,13 +3,13 @@
  * Copyright (C) 2007 Felix Fietkau <nbd@openwrt.org>
  * Copyright (C) 2007 Eugene Konev <ejka@openwrt.org>
  */
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/pfn.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/swap.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/pfn.h>
+#include <linaos/proc_fs.h>
+#include <linaos/string.h>
+#include <linaos/swap.h>
 
 #include <asm/bootinfo.h>
 #include <asm/page.h>

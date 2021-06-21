@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linaos/kernel.h>
+#include <linaos/uaccess.h>
+#include <linaos/ptrace.h>
 
 static int align_kern_enable = 1;
 static int align_usr_enable = 1;

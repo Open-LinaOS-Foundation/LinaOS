@@ -40,31 +40,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/tcp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/dca.h>
-#include <linux/ip.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/crc32.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <linaos/tcp.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/dca.h>
+#include <linaos/ip.h>
+#include <linaos/inet.h>
+#include <linaos/in.h>
+#include <linaos/ethtool.h>
+#include <linaos/firmware.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/vmalloc.h>
+#include <linaos/crc32.h>
+#include <linaos/moduleparam.h>
+#include <linaos/io.h>
+#include <linaos/log2.h>
+#include <linaos/slab.h>
+#include <linaos/prefetch.h>
 #include <net/checksum.h>
 #include <net/ip.h>
 #include <net/tcp.h>
@@ -2419,8 +2419,8 @@ static int myri10ge_open(struct net_device *dev)
 	}
 
 	/*
-	 * Set Linux style TSO mode; this is needed only on newer
-	 *  firmware versions.  Older versions default to Linux
+	 * Set LinaOS style TSO mode; this is needed only on newer
+	 *  firmware versions.  Older versions default to LinaOS
 	 *  style TSO
 	 */
 	cmd.data0 = 0;

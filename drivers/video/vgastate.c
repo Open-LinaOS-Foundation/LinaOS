@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/vgastate.c -- VGA state save/restore
+ * linaos/drivers/video/vgastate.c -- VGA state save/restore
  *
  * Copyright 2002 James Simmons
  *
@@ -13,10 +13,10 @@
  * archive for more details.
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
+#include <linaos/vmalloc.h>
 #include <video/vga.h>
 
 struct regstate {

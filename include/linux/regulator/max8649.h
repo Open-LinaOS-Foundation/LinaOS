@@ -9,7 +9,7 @@
 #ifndef __LINUX_REGULATOR_MAX8649_H
 #define	__LINUX_REGULATOR_MAX8649_H
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
 enum {
 	MAX8649_EXTCLK_26MHZ = 0,

@@ -7,8 +7,8 @@
 #ifndef __HOST1X_DEBUG_H
 #define __HOST1X_DEBUG_H
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 struct host1x;
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2015 IBM Corp.
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/io.h>
 
 struct aspeed_rtc {
 	struct rtc_device *rtc_dev;

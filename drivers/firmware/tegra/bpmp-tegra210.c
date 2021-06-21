@@ -3,11 +3,11 @@
  * Copyright (c) 2018, NVIDIA CORPORATION.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 #include <soc/tegra/bpmp.h>
 

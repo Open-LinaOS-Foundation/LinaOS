@@ -11,7 +11,7 @@
 #ifndef __REGULATOR_INTERNAL_H
 #define __REGULATOR_INTERNAL_H
 
-#include <linux/suspend.h>
+#include <linaos/suspend.h>
 
 #define REGULATOR_STATES_NUM	(PM_SUSPEND_MAX + 1)
 

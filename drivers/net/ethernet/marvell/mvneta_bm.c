@@ -10,17 +10,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mbus.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
+#include <linaos/clk.h>
+#include <linaos/genalloc.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mbus.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/skbuff.h>
 #include <net/hwbm.h>
 #include "mvneta_bm.h"
 

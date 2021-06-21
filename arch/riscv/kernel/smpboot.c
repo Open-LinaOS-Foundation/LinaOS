@@ -8,22 +8,22 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/arch_topology.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/mm.h>
+#include <linaos/arch_topology.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu.h>
+#include <linaos/percpu.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/of.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/mm.h>
 #include <asm/cpu_ops.h>
 #include <asm/irq.h>
 #include <asm/mmu_context.h>

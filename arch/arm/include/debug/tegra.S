@@ -13,7 +13,7 @@
  * Copyright (C) 1994-1999 Russell King
  */
 
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 
 #define UART_SHIFT 2
 

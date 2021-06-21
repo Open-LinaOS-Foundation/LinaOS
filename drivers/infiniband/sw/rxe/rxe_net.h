@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2016 Mellanox Technologies Ltd. All rights reserved.
  * Copyright (c) 2015 System Fabric Works, Inc. All rights reserved.
@@ -9,7 +9,7 @@
 
 #include <net/sock.h>
 #include <net/if_inet6.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 struct rxe_recv_sockets {
 	struct socket *sk4;

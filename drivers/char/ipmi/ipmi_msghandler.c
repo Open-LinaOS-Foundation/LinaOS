@@ -14,27 +14,27 @@
 #define pr_fmt(fmt) "%s" fmt, "IPMI message handler: "
 #define dev_fmt pr_fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/workqueue.h>
-#include <linux/uuid.h>
-#include <linux/nospec.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/ipmi.h>
+#include <linaos/ipmi_smi.h>
+#include <linaos/notifier.h>
+#include <linaos/init.h>
+#include <linaos/proc_fs.h>
+#include <linaos/rcupdate.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
+#include <linaos/workqueue.h>
+#include <linaos/uuid.h>
+#include <linaos/nospec.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
 
 #define IPMI_DRIVER_VERSION "39.2"
 

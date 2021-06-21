@@ -10,19 +10,19 @@
  *		     Copyright (C) 2006 Lineo Solutions Inc. support SH4A UBC
  *		     Copyright (C) 2002 - 2008  Paul Mundt
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/elfcore.h>
-#include <linux/fs.h>
-#include <linux/ftrace.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/prefetch.h>
-#include <linux/stackprotector.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/slab.h>
+#include <linaos/elfcore.h>
+#include <linaos/fs.h>
+#include <linaos/ftrace.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/prefetch.h>
+#include <linaos/stackprotector.h>
+#include <linaos/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/fpu.h>
 #include <asm/syscalls.h>

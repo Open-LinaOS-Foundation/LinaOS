@@ -7,7 +7,7 @@
 #ifndef __SND_AOA_CODEC_ONYX_H
 #define __SND_AOA_CODEC_ONYX_H
 #include <stddef.h>
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <asm/pmac_low_i2c.h>
 #include <asm/prom.h>
 

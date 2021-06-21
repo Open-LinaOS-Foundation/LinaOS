@@ -15,10 +15,10 @@
 #include <crypto/null.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
 
 static DEFINE_MUTEX(crypto_default_null_skcipher_lock);
 static struct crypto_sync_skcipher *crypto_default_null_skcipher;

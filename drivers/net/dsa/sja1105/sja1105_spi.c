@@ -3,8 +3,8 @@
  * Copyright (c) 2018, Sensor-Technik Wiedemann GmbH
  * Copyright (c) 2018-2019, Vladimir Oltean <olteanv@gmail.com>
  */
-#include <linux/spi/spi.h>
-#include <linux/packing.h>
+#include <linaos/spi/spi.h>
+#include <linaos/packing.h>
 #include "sja1105.h"
 
 #define SJA1105_SIZE_RESET_CMD		4

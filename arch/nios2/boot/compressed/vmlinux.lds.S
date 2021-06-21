@@ -3,7 +3,7 @@
  * Copyright (C) 2009 Thomas Chou <thomas@wytron.com.tw>
  */
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 OUTPUT_FORMAT("elf32-littlenios2", "elf32-littlenios2", "elf32-littlenios2")
 

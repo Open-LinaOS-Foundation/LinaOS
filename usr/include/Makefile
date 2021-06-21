@@ -24,30 +24,30 @@ no-header-test += asm/shmbuf.h
 no-header-test += asm/signal.h
 no-header-test += asm/ucontext.h
 no-header-test += drm/vmwgfx_drm.h
-no-header-test += linux/am437x-vpfe.h
-no-header-test += linux/android/binder.h
-no-header-test += linux/android/binderfs.h
-no-header-test += linux/coda.h
-no-header-test += linux/errqueue.h
-no-header-test += linux/fsmap.h
-no-header-test += linux/hdlc/ioctl.h
-no-header-test += linux/ivtv.h
-no-header-test += linux/kexec.h
-no-header-test += linux/matroxfb.h
-no-header-test += linux/nfc.h
-no-header-test += linux/omap3isp.h
-no-header-test += linux/omapfb.h
-no-header-test += linux/patchkey.h
-no-header-test += linux/phonet.h
-no-header-test += linux/reiserfs_xattr.h
-no-header-test += linux/sctp.h
-no-header-test += linux/signal.h
-no-header-test += linux/sysctl.h
-no-header-test += linux/usb/audio.h
-no-header-test += linux/v4l2-mediabus.h
-no-header-test += linux/v4l2-subdev.h
-no-header-test += linux/videodev2.h
-no-header-test += linux/vm_sockets.h
+no-header-test += linaos/am437x-vpfe.h
+no-header-test += linaos/android/binder.h
+no-header-test += linaos/android/binderfs.h
+no-header-test += linaos/coda.h
+no-header-test += linaos/errqueue.h
+no-header-test += linaos/fsmap.h
+no-header-test += linaos/hdlc/ioctl.h
+no-header-test += linaos/ivtv.h
+no-header-test += linaos/kexec.h
+no-header-test += linaos/matroxfb.h
+no-header-test += linaos/nfc.h
+no-header-test += linaos/omap3isp.h
+no-header-test += linaos/omapfb.h
+no-header-test += linaos/patchkey.h
+no-header-test += linaos/phonet.h
+no-header-test += linaos/reiserfs_xattr.h
+no-header-test += linaos/sctp.h
+no-header-test += linaos/signal.h
+no-header-test += linaos/sysctl.h
+no-header-test += linaos/usb/audio.h
+no-header-test += linaos/v4l2-mediabus.h
+no-header-test += linaos/v4l2-subdev.h
+no-header-test += linaos/videodev2.h
+no-header-test += linaos/vm_sockets.h
 no-header-test += sound/asequencer.h
 no-header-test += sound/asoc.h
 no-header-test += sound/asound.h
@@ -61,13 +61,13 @@ no-header-test += xen/privcmd.h
 # More headers are broken in some architectures
 
 ifeq ($(SRCARCH),arc)
-no-header-test += linux/bpf_perf_event.h
+no-header-test += linaos/bpf_perf_event.h
 endif
 
 ifeq ($(SRCARCH),ia64)
 no-header-test += asm/setup.h
 no-header-test += asm/sigcontext.h
-no-header-test += linux/if_bonding.h
+no-header-test += linaos/if_bonding.h
 endif
 
 ifeq ($(SRCARCH),mips)
@@ -76,11 +76,11 @@ endif
 
 ifeq ($(SRCARCH),powerpc)
 no-header-test += asm/stat.h
-no-header-test += linux/bpf_perf_event.h
+no-header-test += linaos/bpf_perf_event.h
 endif
 
 ifeq ($(SRCARCH),riscv)
-no-header-test += linux/bpf_perf_event.h
+no-header-test += linaos/bpf_perf_event.h
 endif
 
 ifeq ($(SRCARCH),sparc)

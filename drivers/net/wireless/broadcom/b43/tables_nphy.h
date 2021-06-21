@@ -2,7 +2,7 @@
 #ifndef B43_TABLES_NPHY_H_
 #define B43_TABLES_NPHY_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct b43_phy_n_sfo_cfg {
 	u16 phy_bw1a;

@@ -3,7 +3,7 @@
 #ifndef _VKMS_DRV_H_
 #define _VKMS_DRV_H_
 
-#include <linux/hrtimer.h>
+#include <linaos/hrtimer.h>
 
 #include <drm/drm.h>
 #include <drm/drm_gem.h>

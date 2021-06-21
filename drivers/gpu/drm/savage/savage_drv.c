@@ -1,4 +1,4 @@
-/* savage_drv.c -- Savage driver for Linux
+/* savage_drv.c -- Savage driver for LinaOS
  *
  * Copyright 2004  Felix Kuehling
  * All Rights Reserved.
@@ -23,8 +23,8 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

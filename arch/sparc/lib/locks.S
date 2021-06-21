@@ -4,7 +4,7 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  * Copyright (C) 1998 Anton Blanchard (anton@progsoc.uts.edu.au)
- * Copyright (C) 1998 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1998 Jakub Jelinek   (jj@ultra.linaos.cz)
  */
 
 #include <asm/ptrace.h>

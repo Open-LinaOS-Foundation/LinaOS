@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2012-2019 ARM Limited or its affiliates. */
 
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/stringify.h>
+#include <linaos/kernel.h>
+#include <linaos/debugfs.h>
+#include <linaos/stringify.h>
 #include "cc_driver.h"
 #include "cc_crypto_ctx.h"
 #include "cc_debugfs.h"

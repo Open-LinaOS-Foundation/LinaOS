@@ -7,24 +7,24 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/clockchips.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/timex.h>
-#include <linux/errno.h>
-#include <linux/profile.h>
-#include <linux/syscore_ops.h>
-#include <linux/timer.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/clocksource.h>
-#include <linux/of_clk.h>
-#include <linux/acpi.h>
+#include <linaos/clockchips.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/timex.h>
+#include <linaos/errno.h>
+#include <linaos/profile.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/timer.h>
+#include <linaos/irq.h>
+#include <linaos/delay.h>
+#include <linaos/clocksource.h>
+#include <linaos/of_clk.h>
+#include <linaos/acpi.h>
 
 #include <clocksource/arm_arch_timer.h>
 

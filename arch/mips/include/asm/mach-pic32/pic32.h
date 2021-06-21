@@ -6,7 +6,7 @@
 #ifndef _ASM_MACH_PIC32_H
 #define _ASM_MACH_PIC32_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /*
  * PIC32 register offsets for SET/CLR/INV where supported.

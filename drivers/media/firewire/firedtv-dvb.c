@@ -6,13 +6,13 @@
  * Copyright (C) 2008 Henrik Kurelid <henrik@kurelid.se>
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 #include <media/dmxdev.h>
 #include <media/dvb_demux.h>

@@ -7,16 +7,16 @@
  * Author: Liam Girdwood <lrg@slimlogic.co.uk>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/wm8350/audio.h>
-#include <linux/mfd/wm8350/core.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/wm8350/audio.h>
+#include <linaos/mfd/wm8350/core.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

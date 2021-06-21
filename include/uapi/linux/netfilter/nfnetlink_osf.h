@@ -1,9 +1,9 @@
 #ifndef _NF_OSF_H
 #define _NF_OSF_H
 
-#include <linux/types.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <linaos/types.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
 
 #define MAXGENRELEN	32
 

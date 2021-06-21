@@ -7,9 +7,9 @@
  *  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
 
 #include <media/v4l2-device.h>
 

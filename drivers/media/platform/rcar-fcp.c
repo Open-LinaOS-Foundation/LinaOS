@@ -7,15 +7,15 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 #include <media/rcar-fcp.h>
 

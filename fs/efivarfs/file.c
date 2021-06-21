@@ -4,11 +4,11 @@
  * Copyright (C) 2012 Jeremy Kerr <jeremy.kerr@canonical.com>
  */
 
-#include <linux/efi.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
+#include <linaos/efi.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/mount.h>
 
 #include "internal.h"
 

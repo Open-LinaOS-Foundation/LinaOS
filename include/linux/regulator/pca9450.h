@@ -4,7 +4,7 @@
 #ifndef __LINUX_REG_PCA9450_H__
 #define __LINUX_REG_PCA9450_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 enum pca9450_chip_type {
 	PCA9450_TYPE_PCA9450A = 0,

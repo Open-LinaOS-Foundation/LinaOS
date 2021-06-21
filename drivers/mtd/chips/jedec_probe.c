@@ -7,20 +7,20 @@
    Occasionally maintained by Thayne Harbaugh tharbaugh at lnxi dot com
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/gen_probe.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/mtd/gen_probe.h>
 
 /* AMD */
 #define AM29DL800BB	0x22CB

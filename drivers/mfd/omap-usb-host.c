@@ -6,20 +6,20 @@
  * Author: Keshava Munegowda <keshava_mgowda@ti.com>
  * Author: Roger Quadros <rogerq@ti.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/usb-omap.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/usb-omap.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/err.h>
 
 #include "omap-usb.h"
 
@@ -121,7 +121,7 @@ static inline u32 usbhs_read(void __iomem *base, u32 reg)
 /*-------------------------------------------------------------------------*/
 
 /*
- * Map 'enum usbhs_omap_port_mode' found in <linux/platform_data/usb-omap.h>
+ * Map 'enum usbhs_omap_port_mode' found in <linaos/platform_data/usb-omap.h>
  * to the device tree binding portN-mode found in
  * 'Documentation/devicetree/bindings/mfd/omap-usb-host.txt'
  */

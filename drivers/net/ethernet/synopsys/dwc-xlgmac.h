@@ -18,13 +18,13 @@
 #ifndef __DWC_XLGMAC_H__
 #define __DWC_XLGMAC_H__
 
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/phy.h>
-#include <linux/if_vlan.h>
-#include <linux/bitops.h>
-#include <linux/timecounter.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/workqueue.h>
+#include <linaos/phy.h>
+#include <linaos/if_vlan.h>
+#include <linaos/bitops.h>
+#include <linaos/timecounter.h>
 
 #define XLGMAC_DRV_NAME			"dwc-xlgmac"
 #define XLGMAC_DRV_VERSION		"1.0.0"

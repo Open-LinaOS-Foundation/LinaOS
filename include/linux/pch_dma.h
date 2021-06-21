@@ -6,7 +6,7 @@
 #ifndef PCH_DMA_H
 #define PCH_DMA_H
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 enum pch_dma_width {
 	PCH_DMA_WIDTH_1_BYTE,

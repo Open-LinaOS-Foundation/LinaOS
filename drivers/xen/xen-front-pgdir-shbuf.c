@@ -9,9 +9,9 @@
  * Author: Oleksandr Andrushchenko <oleksandr_andrushchenko@epam.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
 
 #include <asm/xen/hypervisor.h>
 #include <xen/balloon.h>

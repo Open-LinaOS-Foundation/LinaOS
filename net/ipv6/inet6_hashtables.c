@@ -10,8 +10,8 @@
  *		by Arnaldo Carvalho de Melo <acme@mandriva.com>
  */
 
-#include <linux/module.h>
-#include <linux/random.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
 
 #include <net/addrconf.h>
 #include <net/inet_connection_sock.h>

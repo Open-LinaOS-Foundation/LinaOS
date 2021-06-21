@@ -12,11 +12,11 @@
 #include <asm/simd.h>
 #include <crypto/internal/kpp.h>
 #include <crypto/internal/simd.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/jump_label.h>
+#include <linaos/scatterlist.h>
 #include <crypto/curve25519.h>
 
 asmlinkage void curve25519_neon(u8 mypublic[CURVE25519_KEY_SIZE],

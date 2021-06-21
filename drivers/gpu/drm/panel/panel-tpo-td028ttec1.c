@@ -17,9 +17,9 @@
  * H. Nikolaus Schaller <hns@goldelico.com>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_modes.h>

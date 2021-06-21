@@ -6,13 +6,13 @@
  *
  * Copyright (C) 2020 Intel Corporation
  * Copyright (C) 2010--2012 Nokia Corporation
- * Contact: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Contact: Sakari Ailus <sakari.ailus@linaos.intel.com>
  */
 
 #ifndef __CCS_H__
 #define __CCS_H__
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-subdev.h>
 

@@ -4,11 +4,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/wmi.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/wmi.h>
 
 #define GIGABYTE_WMI_GUID	"DEADBEEF-2001-0000-00A0-C90629100000"
 #define NUM_TEMPERATURE_SENSORS	6

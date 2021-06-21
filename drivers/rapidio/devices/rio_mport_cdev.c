@@ -10,34 +10,34 @@
  * Copyright (C) 2014 Texas Instruments Incorporated
  *    Aurelien Jacquiot <a-jacquiot@ti.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/net.h>
-#include <linux/poll.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/kfifo.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/cdev.h>
+#include <linaos/ioctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/list.h>
+#include <linaos/fs.h>
+#include <linaos/err.h>
+#include <linaos/net.h>
+#include <linaos/poll.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched.h>
+#include <linaos/kfifo.h>
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mman.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mman.h>
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #ifdef CONFIG_RAPIDIO_DMA_ENGINE
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 #endif
 
-#include <linux/rio.h>
-#include <linux/rio_ids.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_mport_cdev.h>
+#include <linaos/rio.h>
+#include <linaos/rio_ids.h>
+#include <linaos/rio_drv.h>
+#include <linaos/rio_mport_cdev.h>
 
 #include "../rio.h"
 
@@ -2531,8 +2531,8 @@ static void mport_cdev_remove(struct mport_dev *md)
 
 /*
  * mport_add_mport() - Add rio_mport from LDM device struct
- * @dev:		Linux device model struct
- * @class_intf:	Linux class_interface
+ * @dev:		LinaOS device model struct
+ * @class_intf:	LinaOS class_interface
  */
 static int mport_add_mport(struct device *dev,
 		struct class_interface *class_intf)
@@ -2588,7 +2588,7 @@ static struct class_interface rio_mport_interface __refdata = {
 };
 
 /*
- * Linux kernel module
+ * LinaOS kernel module
  */
 
 /*

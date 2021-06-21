@@ -7,24 +7,24 @@
  * <http://www.semtech.com/images/datasheet/sx9500.pdf>.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regmap.h>
-#include <linux/pm.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/acpi.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regmap.h>
+#include <linaos/pm.h>
+#include <linaos/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
 
 #define SX9500_DRIVER_NAME		"sx9500"
 #define SX9500_IRQ_NAME			"sx9500_event"

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/fat/file.c
+ *  linaos/fs/fat/file.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *
  *  regular file handling primitives for fat-based filesystems
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/fsnotify.h>
-#include <linux/security.h>
-#include <linux/falloc.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/compat.h>
+#include <linaos/mount.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/fsnotify.h>
+#include <linaos/security.h>
+#include <linaos/falloc.h>
 #include "fat.h"
 
 static long fat_fallocate(struct file *file, int mode,

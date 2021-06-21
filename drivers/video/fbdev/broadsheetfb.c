@@ -16,21 +16,21 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/list.h>
+#include <linaos/firmware.h>
+#include <linaos/uaccess.h>
 
 #include <video/broadsheetfb.h>
 

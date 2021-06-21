@@ -1,6 +1,6 @@
 What:		/sys/devices
 Date:		February 2006
-Contact:	Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+Contact:	Greg Kroah-Hartman <gregkh@linaosfoundation.org>
 Description:
 		The /sys/devices tree contains a snapshot of the
 		internal state of the kernel device tree.  Devices will
@@ -22,4 +22,4 @@ Description:
 		programs must be able to handle such occurrences.
 
 Users:
-	udev <linux-hotplug-devel@lists.sourceforge.net>
+	udev <linaos-hotplug-devel@lists.sourceforge.net>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/kernel/setup.c
+ *  linaos/arch/m68k/kernel/setup.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
@@ -9,23 +9,23 @@
  * This file handles the architecture-dependent parts of system setup
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/console.h>
-#include <linux/genhd.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/nvram.h>
-#include <linux/initrd.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fs.h>
+#include <linaos/console.h>
+#include <linaos/genhd.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/nvram.h>
+#include <linaos/initrd.h>
 
 #include <asm/bootinfo.h>
 #include <asm/byteorder.h>

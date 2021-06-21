@@ -10,12 +10,12 @@
 #ifndef _V4L2_DEV_H
 #define _V4L2_DEV_H
 
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
+#include <linaos/poll.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
+#include <linaos/mutex.h>
+#include <linaos/videodev2.h>
 
 #include <media/media-entity.h>
 
@@ -327,7 +327,7 @@ struct video_device
 #define to_video_device(cd) container_of(cd, struct video_device, dev)
 
 /**
- * __video_register_device - register video4linux devices
+ * __video_register_device - register video4linaos devices
  *
  * @vdev: struct video_device to register
  * @type: type of device to register, as defined by &enum vfl_devnode_type
@@ -361,7 +361,7 @@ int __must_check __video_register_device(struct video_device *vdev,
 					 struct module *owner);
 
 /**
- *  video_register_device - register video4linux devices
+ *  video_register_device - register video4linaos devices
  *
  * @vdev: struct video_device to register
  * @type: type of device to register, as defined by &enum vfl_devnode_type
@@ -385,7 +385,7 @@ static inline int __must_check video_register_device(struct video_device *vdev,
 }
 
 /**
- *  video_register_device_no_warn - register video4linux devices
+ *  video_register_device_no_warn - register video4linaos devices
  *
  * @vdev: struct video_device to register
  * @type: type of device to register, as defined by &enum vfl_devnode_type

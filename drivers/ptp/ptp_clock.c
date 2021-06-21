@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/idr.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/posix-clock.h>
-#include <linux/pps_kernel.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/sched/types.h>
+#include <linaos/idr.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/posix-clock.h>
+#include <linaos/pps_kernel.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/sched/types.h>
 
 #include "ptp_private.h"
 

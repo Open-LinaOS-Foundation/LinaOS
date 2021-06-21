@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies Ltd. */
 
 #ifndef __MLX5_VDPA_H__
 #define __MLX5_VDPA_H__
 
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/vdpa.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/vdpa.h>
+#include <linaos/mlx5/driver.h>
 
 #define MLX5V_ETH_HARD_MTU (ETH_HLEN + VLAN_HLEN + ETH_FCS_LEN)
 

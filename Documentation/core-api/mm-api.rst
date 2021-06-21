@@ -19,25 +19,25 @@ User Space Memory Access
 Memory Allocation Controls
 ==========================
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/linaos/gfp.h
    :internal:
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/linaos/gfp.h
    :doc: Page mobility and placement hints
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/linaos/gfp.h
    :doc: Watermark modifiers
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/linaos/gfp.h
    :doc: Reclaim modifiers
 
-.. kernel-doc:: include/linux/gfp.h
+.. kernel-doc:: include/linaos/gfp.h
    :doc: Useful GFP flag combinations
 
 The Slab Cache
 ==============
 
-.. kernel-doc:: include/linux/slab.h
+.. kernel-doc:: include/linaos/slab.h
    :internal:
 
 .. kernel-doc:: mm/slab.c
@@ -70,7 +70,7 @@ File Mapping and Page Cache
 .. kernel-doc:: mm/truncate.c
    :export:
 
-.. kernel-doc:: include/linux/pagemap.h
+.. kernel-doc:: include/linaos/pagemap.h
    :internal:
 
 Memory pools
@@ -93,8 +93,8 @@ More Memory Management Functions
 
 .. kernel-doc:: mm/page_alloc.c
 .. kernel-doc:: mm/mempolicy.c
-.. kernel-doc:: include/linux/mm_types.h
+.. kernel-doc:: include/linaos/mm_types.h
    :internal:
-.. kernel-doc:: include/linux/mm.h
+.. kernel-doc:: include/linaos/mm.h
    :internal:
-.. kernel-doc:: include/linux/mmzone.h
+.. kernel-doc:: include/linaos/mmzone.h

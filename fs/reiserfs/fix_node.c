@@ -2,11 +2,11 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/time.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 #include "reiserfs.h"
-#include <linux/buffer_head.h>
+#include <linaos/buffer_head.h>
 
 /*
  * To make any changes in the tree we find a node that contains item

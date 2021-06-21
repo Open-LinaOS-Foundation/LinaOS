@@ -38,7 +38,7 @@
 
 		button21 {
 			label = "guardian-power-button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio2 21 0>;
 			wakeup-source;
 		};
@@ -52,14 +52,14 @@
 		led1 {
 			label = "green:heartbeat";
 			gpios = <&gpio1 27 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led2 {
 			label = "green:mmc0";
 			gpios = <&gpio1 26 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 	};

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright(c) 2007 Intel Corporation. All rights reserved.
  *
@@ -8,7 +8,7 @@
 #ifndef _FC_NS_H_
 #define	_FC_NS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Fibre Channel Services - Name Service (dNS)

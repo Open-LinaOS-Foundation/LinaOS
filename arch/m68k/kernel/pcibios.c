@@ -2,14 +2,14 @@
 /*
  * pci.c -- basic PCI support code
  *
- * (C) Copyright 2011, Greg Ungerer <gerg@uclinux.org>
+ * (C) Copyright 2011, Greg Ungerer <gerg@uclinaos.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 /*
  * From arch/i386/kernel/pci-i386.c:

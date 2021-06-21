@@ -124,8 +124,8 @@
 			label = "Pen Insert";
 			/* Insert = low, eject = high */
 			gpios = <&tlmm 119 GPIO_ACTIVE_LOW>;
-			linux,code = <SW_PEN_INSERTED>;
-			linux,input-type = <EV_SW>;
+			linaos,code = <SW_PEN_INSERTED>;
+			linaos,input-type = <EV_SW>;
 			wakeup-source;
 		};
 	};

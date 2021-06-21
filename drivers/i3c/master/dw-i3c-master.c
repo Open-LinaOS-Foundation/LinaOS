@@ -5,21 +5,21 @@
  * Author: Vitor Soares <vitor.soares@synopsys.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i3c/master.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/i3c/master.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/iopoll.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
 
 #define DEVICE_CTRL			0x0
 #define DEV_CTRL_ENABLE			BIT(31)

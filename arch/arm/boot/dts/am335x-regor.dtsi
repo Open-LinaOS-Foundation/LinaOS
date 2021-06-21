@@ -25,13 +25,13 @@
 
 		run_stop-led {
 			gpios = <&gpio2 22 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "off";
 		};
 
 		error-led {
 			gpios = <&gpio3 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "off";
 		};
 	};
@@ -198,5 +198,5 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart1_rs485_pins>;
 	status = "okay";
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 };

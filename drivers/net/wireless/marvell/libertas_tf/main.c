@@ -5,11 +5,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/slab.h>
+#include <linaos/hardirq.h>
+#include <linaos/slab.h>
 
-#include <linux/etherdevice.h>
-#include <linux/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
 #include "libertas_tf.h"
 
 /* thinfirm version: 5.132.X.pX */

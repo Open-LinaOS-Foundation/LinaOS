@@ -5,16 +5,16 @@
  * Copyright IBM Corp. 2019
  *
  * Author(s):
- *	Vasily Gorbik <gor@linux.ibm.com>
- *	Janosch Frank <frankja@linux.ibm.com>
+ *	Vasily Gorbik <gor@linaos.ibm.com>
+ *	Janosch Frank <frankja@linaos.ibm.com>
  */
 #ifndef _ASM_S390_UV_H
 #define _ASM_S390_UV_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/bug.h>
+#include <linaos/sched.h>
 #include <asm/page.h>
 #include <asm/gmap.h>
 

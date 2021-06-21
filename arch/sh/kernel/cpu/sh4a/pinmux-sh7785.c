@@ -5,10 +5,10 @@
  *  Copyright (C) 2008  Magnus Damm
  */
 
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
+#include <linaos/bug.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/ioport.h>
 #include <cpu/pfc.h>
 
 static struct resource sh7785_pfc_resources[] = {

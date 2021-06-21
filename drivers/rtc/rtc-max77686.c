@@ -6,16 +6,16 @@
 //
 //  based on rtc-max8997.c
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max77686-private.h>
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/rtc.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/max77686-private.h>
+#include <linaos/irqdomain.h>
+#include <linaos/regmap.h>
 
 #define MAX77686_I2C_ADDR_RTC		(0x0C >> 1)
 #define MAX77620_I2C_ADDR_RTC		0x68

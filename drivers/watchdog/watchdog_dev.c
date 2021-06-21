@@ -17,7 +17,7 @@
  *	Based on source code of the following authors:
  *	  Matt Domsch <Matt_Domsch@dell.com>,
  *	  Rob Radez <rob@osinvestor.com>,
- *	  Rusty Lynch <rusty@linux.co.intel.com>
+ *	  Rusty Lynch <rusty@linaos.co.intel.com>
  *	  Satyam Sharma <satyam@infradead.org>
  *	  Randy Dunlap <randy.dunlap@oracle.com>
  *
@@ -28,20 +28,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cdev.h>		/* For character device */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/hrtimer.h>	/* For hrtimers */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/kthread.h>	/* For kthread_work */
-#include <linux/miscdevice.h>	/* For handling misc devices */
-#include <linux/module.h>	/* For module stuff/... */
-#include <linux/mutex.h>	/* For mutexes */
-#include <linux/slab.h>		/* For memory functions */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/watchdog.h>	/* For watchdog specific items */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <linaos/cdev.h>		/* For character device */
+#include <linaos/errno.h>	/* For the -ENODEV/... values */
+#include <linaos/fs.h>		/* For file operations */
+#include <linaos/init.h>		/* For __init/__exit/... */
+#include <linaos/hrtimer.h>	/* For hrtimers */
+#include <linaos/kernel.h>	/* For printk/panic/... */
+#include <linaos/kthread.h>	/* For kthread_work */
+#include <linaos/miscdevice.h>	/* For handling misc devices */
+#include <linaos/module.h>	/* For module stuff/... */
+#include <linaos/mutex.h>	/* For mutexes */
+#include <linaos/slab.h>		/* For memory functions */
+#include <linaos/types.h>	/* For standard types (like size_t) */
+#include <linaos/watchdog.h>	/* For watchdog specific items */
+#include <linaos/uaccess.h>	/* For copy_to_user/put_user/... */
 
 #include "watchdog_core.h"
 #include "watchdog_pretimeout.h"

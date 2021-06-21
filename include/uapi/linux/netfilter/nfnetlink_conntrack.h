@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _IPCONNTRACK_NETLINK_H
 #define _IPCONNTRACK_NETLINK_H
-#include <linux/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink.h>
 
 enum cntl_msg_types {
 	IPCTNL_MSG_CT_NEW,

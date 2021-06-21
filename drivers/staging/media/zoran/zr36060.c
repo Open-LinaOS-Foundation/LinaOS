@@ -7,16 +7,16 @@
 
 #define ZR060_VERSION "v0.7"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 /* I/O commands, error codes */
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /* headerfile of this module */
 #include "zr36060.h"
@@ -155,7 +155,7 @@ static int zr36060_pushit(struct zr36060 *ptr, u16 startreg, u16 len, const char
  *
  * Could be variable, but until it's not needed it they are just fixed to save
  * memory. Otherwise expand zr36060 structure with arrays, push the values to
- * it and initialize from there, as e.g. the linux zr36057/60 driver does it.
+ * it and initialize from there, as e.g. the linaos zr36057/60 driver does it.
  * =========================================================================
  */
 static const char zr36060_dqt[0x86] = {

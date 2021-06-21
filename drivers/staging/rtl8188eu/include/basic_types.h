@@ -7,7 +7,7 @@
 #ifndef __BASIC_TYPES_H__
 #define __BASIC_TYPES_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #define NDIS_OID uint
 
 /* port from fw */

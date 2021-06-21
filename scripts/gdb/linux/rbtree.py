@@ -4,7 +4,7 @@
 
 import gdb
 
-from linux import utils
+from linaos import utils
 
 rb_root_type = utils.CachedType("struct rb_root")
 rb_node_type = utils.CachedType("struct rb_node")

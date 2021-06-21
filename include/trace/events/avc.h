@@ -9,11 +9,11 @@
 #if !defined(_TRACE_SELINUX_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SELINUX_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
-TRACE_EVENT(selinux_audited,
+TRACE_EVENT(selinaos_audited,
 
-	TP_PROTO(struct selinux_audit_data *sad,
+	TP_PROTO(struct selinaos_audit_data *sad,
 		char *scontext,
 		char *tcontext,
 		const char *tclass

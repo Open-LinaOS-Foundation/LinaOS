@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/bitops.h>
-#include <linux/cacheinfo.h>
-#include <linux/cpu.h>
+#include <linaos/bitops.h>
+#include <linaos/cacheinfo.h>
+#include <linaos/cpu.h>
 
 static void ci_leaf_init(struct cacheinfo *this_leaf,
 			 enum cache_type type, unsigned int level)

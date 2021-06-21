@@ -17,17 +17,17 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/input/mt.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/input.h>
+#include <linaos/input/touchscreen.h>
+#include <linaos/input/mt.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/i2c.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/delay.h>
 
 #define CY8CTMA140_NAME			"cy8ctma140"
 

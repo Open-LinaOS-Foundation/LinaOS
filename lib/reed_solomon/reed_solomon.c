@@ -29,13 +29,13 @@
  * provide a syndrome calculation over the received data + syndrome and can
  * call the second stage directly.
  */
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/rslib.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/rslib.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
 
 enum {
 	RS_DECODE_LAMBDA,

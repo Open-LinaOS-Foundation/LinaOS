@@ -8,11 +8,11 @@
 /*
  * First, the common part.
  */
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/kdev_t.h>
+#include <linaos/major.h>
 #include <sound/core.h>
 
 #ifdef CONFIG_SOUND_OSS_CORE
@@ -97,12 +97,12 @@ module_exit(cleanup_soundcore);
  *	locking at some point in 2.3.x.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sound.h>
-#include <linux/kmod.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sound.h>
+#include <linaos/kmod.h>
 
 #define SOUND_STEP 16
 

@@ -25,11 +25,11 @@
  * 1) Add mechanism to deal with reverse congestion.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/math64.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/math64.h>
 #include <net/tcp.h>
-#include <linux/inet_diag.h>
+#include <linaos/inet_diag.h>
 
 /* TCP NV parameters
  *

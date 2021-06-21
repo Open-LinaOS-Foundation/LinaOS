@@ -12,7 +12,7 @@
 
 #ifdef CONFIG_ASSOCIATIVE_ARRAY
 
-#include <linux/assoc_array.h>
+#include <linaos/assoc_array.h>
 
 #define ASSOC_ARRAY_FAN_OUT		16	/* Number of slots per node */
 #define ASSOC_ARRAY_FAN_MASK		(ASSOC_ARRAY_FAN_OUT - 1)

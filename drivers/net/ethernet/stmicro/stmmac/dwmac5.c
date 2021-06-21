@@ -2,8 +2,8 @@
 // Copyright (c) 2017 Synopsys, Inc. and/or its affiliates.
 // stmmac Support for 5.xx Ethernet QoS cores
 
-#include <linux/bitops.h>
-#include <linux/iopoll.h>
+#include <linaos/bitops.h>
+#include <linaos/iopoll.h>
 #include "common.h"
 #include "dwmac4.h"
 #include "dwmac5.h"

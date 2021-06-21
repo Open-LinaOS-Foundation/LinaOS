@@ -8,22 +8,22 @@
  *  Hotplug & misc device support: Jochen Roehrig (roehrig@de.ibm.com)
  *  Major cleanup & driver split: Martin Schwidefsky <schwidefsky@de.ibm.com>
  *				  Ralph Wuerthner <rwuerthn@de.ibm.com>
- *  MSGTYPE restruct:		  Holger Dengler <hd@linux.vnet.ibm.com>
+ *  MSGTYPE restruct:		  Holger Dengler <hd@linaos.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/hw_random.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/miscdevice.h>
+#include <linaos/fs.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/compat.h>
+#include <linaos/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/hw_random.h>
+#include <linaos/debugfs.h>
 #include <asm/debug.h>
 
 #include "zcrypt_debug.h"

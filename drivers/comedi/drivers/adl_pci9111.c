@@ -39,9 +39,9 @@
  * - Add external multiplexer support.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 
 #include "../comedi_pci.h"
 

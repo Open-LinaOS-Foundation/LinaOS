@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Linux driver for System z and s390 unit record devices
+ * LinaOS driver for System z and s390 unit record devices
  * (z/VM virtual punch, reader, printer)
  *
  * Copyright IBM Corp. 2001, 2007
@@ -12,7 +12,7 @@
 #ifndef _VMUR_H_
 #define _VMUR_H_
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 
 #define DEV_CLASS_UR_I 0x20 /* diag210 unit record input device class */
 #define DEV_CLASS_UR_O 0x10 /* diag210 unit record output device class */

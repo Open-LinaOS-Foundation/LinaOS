@@ -9,16 +9,16 @@
  * Copyright (c) 2008 STMicroelectronics Limited
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
 
 #define MII_XCIIS   	0x11	/* Configuration Info IRQ & Status Reg */
 #define MII_XIE     	0x12	/* Interrupt Enable Register */

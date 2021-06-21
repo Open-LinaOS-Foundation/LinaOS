@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/bitfield.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "rvu_struct.h"
 #include "rvu_reg.h"

@@ -1,5 +1,5 @@
 /*
- * Linux Security plug
+ * LinaOS Security plug
  *
  * Copyright (C) 2001 WireX Communications, Inc <chris@wirex.com>
  * Copyright (C) 2001 Greg Kroah-Hartman <greg@kroah.com>
@@ -23,16 +23,16 @@
 #ifndef __LINUX_SECURITY_H
 #define __LINUX_SECURITY_H
 
-#include <linux/kernel_read_file.h>
-#include <linux/key.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/mm.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/key.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
 
-struct linux_binprm;
+struct linaos_binprm;
 struct cred;
 struct rlimit;
 struct kernel_siginfo;
@@ -144,7 +144,7 @@ extern int cap_capset(struct cred *new, const struct cred *old,
 		      const kernel_cap_t *effective,
 		      const kernel_cap_t *inheritable,
 		      const kernel_cap_t *permitted);
-extern int cap_bprm_creds_from_file(struct linux_binprm *bprm, struct file *file);
+extern int cap_bprm_creds_from_file(struct linaos_binprm *bprm, struct file *file);
 int cap_inode_setxattr(struct dentry *dentry, const char *name,
 		       const void *value, size_t size, int flags);
 int cap_inode_removexattr(struct user_namespace *mnt_userns,
@@ -283,11 +283,11 @@ int security_quota_on(struct dentry *dentry);
 int security_syslog(int type);
 int security_settime64(const struct timespec64 *ts, const struct timezone *tz);
 int security_vm_enough_memory_mm(struct mm_struct *mm, long pages);
-int security_bprm_creds_for_exec(struct linux_binprm *bprm);
-int security_bprm_creds_from_file(struct linux_binprm *bprm, struct file *file);
-int security_bprm_check(struct linux_binprm *bprm);
-void security_bprm_committing_creds(struct linux_binprm *bprm);
-void security_bprm_committed_creds(struct linux_binprm *bprm);
+int security_bprm_creds_for_exec(struct linaos_binprm *bprm);
+int security_bprm_creds_from_file(struct linaos_binprm *bprm, struct file *file);
+int security_bprm_check(struct linaos_binprm *bprm);
+void security_bprm_committing_creds(struct linaos_binprm *bprm);
+void security_bprm_committed_creds(struct linaos_binprm *bprm);
 int security_fs_context_dup(struct fs_context *fc, struct fs_context *src_fc);
 int security_fs_context_parse_param(struct fs_context *fc, struct fs_parameter *param);
 int security_sb_alloc(struct super_block *sb);
@@ -594,27 +594,27 @@ static inline int security_vm_enough_memory_mm(struct mm_struct *mm, long pages)
 	return __vm_enough_memory(mm, pages, cap_vm_enough_memory(mm, pages));
 }
 
-static inline int security_bprm_creds_for_exec(struct linux_binprm *bprm)
+static inline int security_bprm_creds_for_exec(struct linaos_binprm *bprm)
 {
 	return 0;
 }
 
-static inline int security_bprm_creds_from_file(struct linux_binprm *bprm,
+static inline int security_bprm_creds_from_file(struct linaos_binprm *bprm,
 						struct file *file)
 {
 	return cap_bprm_creds_from_file(bprm, file);
 }
 
-static inline int security_bprm_check(struct linux_binprm *bprm)
+static inline int security_bprm_check(struct linaos_binprm *bprm)
 {
 	return 0;
 }
 
-static inline void security_bprm_committing_creds(struct linux_binprm *bprm)
+static inline void security_bprm_committing_creds(struct linaos_binprm *bprm)
 {
 }
 
-static inline void security_bprm_committed_creds(struct linux_binprm *bprm)
+static inline void security_bprm_committed_creds(struct linaos_binprm *bprm)
 {
 }
 

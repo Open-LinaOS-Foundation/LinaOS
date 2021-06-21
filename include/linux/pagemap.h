@@ -5,16 +5,16 @@
 /*
  * Copyright 1995 Linus Torvalds
  */
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
-#include <linux/bitops.h>
-#include <linux/hardirq.h> /* for in_interrupt() */
-#include <linux/hugetlb_inline.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/highmem.h>
+#include <linaos/compiler.h>
+#include <linaos/uaccess.h>
+#include <linaos/gfp.h>
+#include <linaos/bitops.h>
+#include <linaos/hardirq.h> /* for in_interrupt() */
+#include <linaos/hugetlb_inline.h>
 
 struct pagevec;
 

@@ -8,11 +8,11 @@
  * and Keyspan, Inc the manufacturers of the Keyspan USB DMR product.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb/input.h>
 
 /* Parameters that can be passed to the driver. */
 static int debug;

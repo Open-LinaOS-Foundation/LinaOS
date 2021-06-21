@@ -12,7 +12,7 @@
 #ifndef _ZYNQMP_DISP_REGS_H_
 #define _ZYNQMP_DISP_REGS_H_
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 /* Blender registers */
 #define ZYNQMP_DISP_V_BLEND_BG_CLR_0			0x0

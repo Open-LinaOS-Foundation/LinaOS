@@ -7,18 +7,18 @@
  */
 
 #include <crypto/hash_info.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/parser.h>
-#include <linux/string.h>
-#include <linux/err.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/parser.h>
+#include <linaos/string.h>
+#include <linaos/err.h>
 #include <keys/trusted-type.h>
-#include <linux/key-type.h>
-#include <linux/crypto.h>
+#include <linaos/key-type.h>
+#include <linaos/crypto.h>
 #include <crypto/hash.h>
 #include <crypto/sha1.h>
-#include <linux/tpm.h>
-#include <linux/tpm_command.h>
+#include <linaos/tpm.h>
+#include <linaos/tpm_command.h>
 
 #include <keys/trusted_tpm.h>
 

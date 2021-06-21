@@ -2,7 +2,7 @@
 #ifndef _LINUX_ERRNO_H
 #define _LINUX_ERRNO_H
 
-#include <uapi/linux/errno.h>
+#include <uapi/linaos/errno.h>
 
 
 /*

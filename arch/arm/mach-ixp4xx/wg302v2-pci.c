@@ -13,10 +13,10 @@
  * Maintainer: Imre Kaloz <kaloz@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 
 #include <asm/mach-types.h>
 #include <mach/hardware.h>

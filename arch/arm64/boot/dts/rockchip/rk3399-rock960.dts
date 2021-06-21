@@ -24,39 +24,39 @@
 		user_led1: led-1 {
 			label = "green:user1";
 			gpios = <&gpio4 RK_PC2 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		user_led2: led-2 {
 			label = "green:user2";
 			gpios = <&gpio4 RK_PC6 0>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 
 		user_led3: led-3 {
 			label = "green:user3";
 			gpios = <&gpio4 RK_PD0 0>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 		};
 
 		user_led4: led-4 {
 			label = "green:user4";
 			gpios = <&gpio4 RK_PD4 0>;
 			panic-indicator;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 
 		wlan_active_led: led-5 {
 			label = "yellow:wlan";
 			gpios = <&gpio4 RK_PD5 0>;
-			linux,default-trigger = "phy0tx";
+			linaos,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
 		bt_active_led: led-6 {
 			label = "blue:bt";
 			gpios = <&gpio4 RK_PD6 0>;
-			linux,default-trigger = "hci0-power";
+			linaos,default-trigger = "hci0-power";
 			default-state = "off";
 		};
 	};

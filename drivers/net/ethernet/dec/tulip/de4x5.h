@@ -989,7 +989,7 @@
 /*
 ** Include the IOCTL stuff
 */
-#include <linux/sockios.h>
+#include <linaos/sockios.h>
 
 struct de4x5_ioctl {
 	unsigned short cmd;                /* Command to run */

@@ -1,6 +1,6 @@
 /* $Id: capi.c,v 1.1.2.7 2004/04/28 09:48:59 armin Exp $
  *
- * CAPI 2.0 Interface for Linux
+ * CAPI 2.0 Interface for LinaOS
  *
  * Copyright 1996 by Carsten Paeth <calle@calle.de>
  *
@@ -9,40 +9,40 @@
  *
  */
 
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/ethtool.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fcntl.h>
-#include <linux/fs.h>
-#include <linux/signal.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/netdevice.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/capi.h>
-#include <linux/kernelcapi.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
-#include <linux/isdn/capiutil.h>
-#include <linux/isdn/capicmd.h>
+#include <linaos/compiler.h>
+#include <linaos/module.h>
+#include <linaos/ethtool.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/major.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/fcntl.h>
+#include <linaos/fs.h>
+#include <linaos/signal.h>
+#include <linaos/mutex.h>
+#include <linaos/mm.h>
+#include <linaos/timer.h>
+#include <linaos/wait.h>
+#include <linaos/tty.h>
+#include <linaos/netdevice.h>
+#include <linaos/ppp_defs.h>
+#include <linaos/ppp-ioctl.h>
+#include <linaos/skbuff.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/poll.h>
+#include <linaos/capi.h>
+#include <linaos/kernelcapi.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/moduleparam.h>
+#include <linaos/isdn/capiutil.h>
+#include <linaos/isdn/capicmd.h>
 
 #include "kcapi.h"
 
-MODULE_DESCRIPTION("CAPI4Linux: kernel CAPI layer and /dev/capi20 interface");
+MODULE_DESCRIPTION("CAPI4LinaOS: kernel CAPI layer and /dev/capi20 interface");
 MODULE_AUTHOR("Carsten Paeth");
 MODULE_LICENSE("GPL");
 

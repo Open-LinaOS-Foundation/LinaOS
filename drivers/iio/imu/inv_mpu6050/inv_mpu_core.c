@@ -3,21 +3,21 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/iio/iio.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/iio/iio.h>
+#include <linaos/acpi.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
 #include "inv_mpu_iio.h"
 #include "inv_mpu_magn.h"
 

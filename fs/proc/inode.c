@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/proc/inode.c
+ *  linaos/fs/proc/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/cache.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/kernel.h>
-#include <linux/pid_namespace.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/completion.h>
-#include <linux/poll.h>
-#include <linux/printk.h>
-#include <linux/file.h>
-#include <linux/limits.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/sysctl.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/bug.h>
+#include <linaos/cache.h>
+#include <linaos/time.h>
+#include <linaos/proc_fs.h>
+#include <linaos/kernel.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/stat.h>
+#include <linaos/completion.h>
+#include <linaos/poll.h>
+#include <linaos/printk.h>
+#include <linaos/file.h>
+#include <linaos/limits.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/sysctl.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/mount.h>
+#include <linaos/bug.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 

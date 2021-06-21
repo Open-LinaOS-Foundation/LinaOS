@@ -44,13 +44,13 @@
 		led-debug0 {
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-debug1 {
 			function = LED_FUNCTION_SD;
 			gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "disk-activity";
+			linaos,default-trigger = "disk-activity";
 		};
 	};
 

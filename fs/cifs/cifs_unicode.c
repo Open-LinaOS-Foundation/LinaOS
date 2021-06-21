@@ -5,8 +5,8 @@
  *   Copyright (c) International Business Machines  Corp., 2000,2009
  *   Modified by Steve French (sfrench@us.ibm.com)
  */
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
 #include "cifs_fs_sb.h"
 #include "cifs_unicode.h"
 #include "cifs_uniupr.h"
@@ -171,7 +171,7 @@ unknown:
  * null terminator).
  *
  * Note that some windows versions actually send multiword UTF-16 characters
- * instead of straight UTF16-2. The linux nls routines however aren't able to
+ * instead of straight UTF16-2. The linaos nls routines however aren't able to
  * deal with those characters properly. In the event that we get some of
  * those characters, they won't be translated properly.
  */

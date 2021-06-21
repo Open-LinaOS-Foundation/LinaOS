@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-sa1100/cerf.c
+ * linaos/arch/arm/mach-sa1100/cerf.c
  *
  * Apr-2003 : Removed some old PDA crud [FB]
  * Oct-2003 : Added uart2 resource [FB]
  * Jan-2004 : Removed io map for flash [FB]
  */
 
-#include <linux/init.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
+#include <linaos/init.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/gpio.h>
+#include <linaos/leds.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>
@@ -28,7 +28,7 @@
 #include <asm/mach/map.h>
 
 #include <mach/cerf.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <linaos/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 #include "generic.h"
 

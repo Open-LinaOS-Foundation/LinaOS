@@ -8,7 +8,7 @@
 #ifndef __LINUX_MFD_WM8350_RTC_H
 #define __LINUX_MFD_WM8350_RTC_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 /*
  * Register values.

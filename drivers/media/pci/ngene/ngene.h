@@ -8,14 +8,14 @@
 #ifndef _NGENE_H_
 #define _NGENE_H_
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
 #include <asm/dma.h>
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>
@@ -864,7 +864,7 @@ struct ngene_info {
 #ifdef NGENE_V4L
 struct ngene_format {
 	char *name;
-	int   fourcc;          /* video4linux 2      */
+	int   fourcc;          /* video4linaos 2      */
 	int   btformat;        /* BT848_COLOR_FMT_*  */
 	int   format;
 	int   btswap;          /* BT848_COLOR_CTL_*  */

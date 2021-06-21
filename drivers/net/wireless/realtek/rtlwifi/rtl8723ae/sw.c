@@ -18,8 +18,8 @@
 #include "../btcoexist/rtl_btc.h"
 #include "../rtl8723com/phy_common.h"
 
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
 
 static void rtl8723e_init_aspm_vars(struct ieee80211_hw *hw)
 {

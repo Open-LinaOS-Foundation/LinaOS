@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/fork.c
+ *  linaos/kernel/fork.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -12,94 +12,94 @@
  * management can be a bitch. See 'mm/memory.c': 'copy_page_range()'
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/slab.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/user.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/seq_file.h>
-#include <linux/rtmutex.h>
-#include <linux/init.h>
-#include <linux/unistd.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/completion.h>
-#include <linux/personality.h>
-#include <linux/mempolicy.h>
-#include <linux/sem.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/iocontext.h>
-#include <linux/key.h>
-#include <linux/binfmts.h>
-#include <linux/mman.h>
-#include <linux/mmu_notifier.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/vmacache.h>
-#include <linux/nsproxy.h>
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/cgroup.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
-#include <linux/seccomp.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/jiffies.h>
-#include <linux/futex.h>
-#include <linux/compat.h>
-#include <linux/kthread.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/rcupdate.h>
-#include <linux/ptrace.h>
-#include <linux/mount.h>
-#include <linux/audit.h>
-#include <linux/memcontrol.h>
-#include <linux/ftrace.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/rmap.h>
-#include <linux/ksm.h>
-#include <linux/acct.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/freezer.h>
-#include <linux/delayacct.h>
-#include <linux/taskstats_kern.h>
-#include <linux/random.h>
-#include <linux/tty.h>
-#include <linux/blkdev.h>
-#include <linux/fs_struct.h>
-#include <linux/magic.h>
-#include <linux/perf_event.h>
-#include <linux/posix-timers.h>
-#include <linux/user-return-notifier.h>
-#include <linux/oom.h>
-#include <linux/khugepaged.h>
-#include <linux/signalfd.h>
-#include <linux/uprobes.h>
-#include <linux/aio.h>
-#include <linux/compiler.h>
-#include <linux/sysctl.h>
-#include <linux/kcov.h>
-#include <linux/livepatch.h>
-#include <linux/thread_info.h>
-#include <linux/stackleak.h>
-#include <linux/kasan.h>
-#include <linux/scs.h>
-#include <linux/io_uring.h>
-#include <linux/bpf.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/slab.h>
+#include <linaos/sched/autogroup.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/sched/user.h>
+#include <linaos/sched/numa_balancing.h>
+#include <linaos/sched/stat.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/seq_file.h>
+#include <linaos/rtmutex.h>
+#include <linaos/init.h>
+#include <linaos/unistd.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/completion.h>
+#include <linaos/personality.h>
+#include <linaos/mempolicy.h>
+#include <linaos/sem.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/iocontext.h>
+#include <linaos/key.h>
+#include <linaos/binfmts.h>
+#include <linaos/mman.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/vmacache.h>
+#include <linaos/nsproxy.h>
+#include <linaos/capability.h>
+#include <linaos/cpu.h>
+#include <linaos/cgroup.h>
+#include <linaos/security.h>
+#include <linaos/hugetlb.h>
+#include <linaos/seccomp.h>
+#include <linaos/swap.h>
+#include <linaos/syscalls.h>
+#include <linaos/jiffies.h>
+#include <linaos/futex.h>
+#include <linaos/compat.h>
+#include <linaos/kthread.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/rcupdate.h>
+#include <linaos/ptrace.h>
+#include <linaos/mount.h>
+#include <linaos/audit.h>
+#include <linaos/memcontrol.h>
+#include <linaos/ftrace.h>
+#include <linaos/proc_fs.h>
+#include <linaos/profile.h>
+#include <linaos/rmap.h>
+#include <linaos/ksm.h>
+#include <linaos/acct.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/tsacct_kern.h>
+#include <linaos/cn_proc.h>
+#include <linaos/freezer.h>
+#include <linaos/delayacct.h>
+#include <linaos/taskstats_kern.h>
+#include <linaos/random.h>
+#include <linaos/tty.h>
+#include <linaos/blkdev.h>
+#include <linaos/fs_struct.h>
+#include <linaos/magic.h>
+#include <linaos/perf_event.h>
+#include <linaos/posix-timers.h>
+#include <linaos/user-return-notifier.h>
+#include <linaos/oom.h>
+#include <linaos/khugepaged.h>
+#include <linaos/signalfd.h>
+#include <linaos/uprobes.h>
+#include <linaos/aio.h>
+#include <linaos/compiler.h>
+#include <linaos/sysctl.h>
+#include <linaos/kcov.h>
+#include <linaos/livepatch.h>
+#include <linaos/thread_info.h>
+#include <linaos/stackleak.h>
+#include <linaos/kasan.h>
+#include <linaos/scs.h>
+#include <linaos/io_uring.h>
+#include <linaos/bpf.h>
 
 #include <asm/pgalloc.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
@@ -122,7 +122,7 @@
 /*
  * Protected counters by write_lock_irq(&tasklist_lock)
  */
-unsigned long total_forks;	/* Handle normal Linux uptimes. */
+unsigned long total_forks;	/* Handle normal LinaOS uptimes. */
 int nr_threads;			/* The idle threads do not count.. */
 
 static int max_threads;		/* tunable limit on nr_threads */
@@ -974,7 +974,7 @@ static int __init coredump_filter_setup(char *s)
 
 __setup("coredump_filter=", coredump_filter_setup);
 
-#include <linux/init_task.h>
+#include <linaos/init_task.h>
 
 static void mm_init_aio(struct mm_struct *mm)
 {

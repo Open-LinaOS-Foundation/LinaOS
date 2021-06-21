@@ -5,16 +5,16 @@
  * Copyright (C) 2008-2009 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/firmware.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/crc32.h>
+#include <linaos/etherdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
 
 #include "wl1251.h"
 #include "wl12xx_80211.h"

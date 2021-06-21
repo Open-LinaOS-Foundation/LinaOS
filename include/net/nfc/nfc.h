@@ -11,9 +11,9 @@
 #ifndef __NET_NFC_H
 #define __NET_NFC_H
 
-#include <linux/nfc.h>
-#include <linux/device.h>
-#include <linux/skbuff.h>
+#include <linaos/nfc.h>
+#include <linaos/device.h>
+#include <linaos/skbuff.h>
 
 #define nfc_dbg(dev, fmt, ...) dev_dbg((dev), "NFC: " fmt, ##__VA_ARGS__)
 #define nfc_info(dev, fmt, ...) dev_info((dev), "NFC: " fmt, ##__VA_ARGS__)

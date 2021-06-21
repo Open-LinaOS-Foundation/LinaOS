@@ -3,7 +3,7 @@
  * Copyright (C) 2015 Pengutronix, Uwe Kleine-König <kernel@pengutronix.de>
  */
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 #define to_siox_device(_dev)	container_of((_dev), struct siox_device, dev)
 struct siox_device {

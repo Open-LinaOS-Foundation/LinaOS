@@ -38,12 +38,12 @@
  * DAMAGE.
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
 #include <crypto/rng.h>
-#include <linux/random.h>
+#include <linaos/random.h>
 #include <crypto/if_alg.h>
-#include <linux/net.h>
+#include <linaos/net.h>
 #include <net/sock.h>
 
 MODULE_LICENSE("GPL");

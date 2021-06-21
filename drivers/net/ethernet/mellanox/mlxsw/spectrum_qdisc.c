@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
 #include <net/pkt_cls.h>
 #include <net/red.h>
 
@@ -1301,7 +1301,7 @@ static struct mlxsw_sp_qdisc_ops mlxsw_sp_qdisc_ops_ets = {
 	.num_classes = IEEE_8021QAZ_MAX_TCS,
 };
 
-/* Linux allows linking of Qdiscs to arbitrary classes (so long as the resulting
+/* LinaOS allows linking of Qdiscs to arbitrary classes (so long as the resulting
  * graph is free of cycles). These operations do not change the parent handle
  * though, which means it can be incomplete (if there is more than one class
  * where the Qdisc in question is grafted) or outright wrong (if the Qdisc was

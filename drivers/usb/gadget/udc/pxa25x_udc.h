@@ -9,7 +9,7 @@
 #ifndef __LINUX_USB_GADGET_PXA25X_H
 #define __LINUX_USB_GADGET_PXA25X_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*-------------------------------------------------------------------------*/
 

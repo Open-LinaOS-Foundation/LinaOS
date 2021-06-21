@@ -4,7 +4,7 @@
  * TLB and MMU hash table.
  *
  *  Derived from arch/ppc64/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -17,10 +17,10 @@
  *      Rework for PPC64 port.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
 #include <asm/bug.h>
@@ -32,7 +32,7 @@
 DEFINE_PER_CPU(struct ppc64_tlb_batch, ppc64_tlb_batch);
 
 /*
- * A linux PTE was changed and the corresponding hash table entry
+ * A linaos PTE was changed and the corresponding hash table entry
  * neesd to be flushed. This function will either perform the flush
  * immediately or will batch it up if the current CPU has an active
  * batch on it.
@@ -173,7 +173,7 @@ void hash__tlb_flush(struct mmu_gather *tlb)
 /**
  * __flush_hash_table_range - Flush all HPTEs for a given address range
  *                            from the hash table (and the TLB). But keeps
- *                            the linux PTEs intact.
+ *                            the linaos PTEs intact.
  *
  * @start	: starting address
  * @end         : ending address (not included in the flush)

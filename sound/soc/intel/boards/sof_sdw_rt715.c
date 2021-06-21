@@ -5,8 +5,8 @@
  *  sof_sdw_rt715 - Helpers to handle RT715 from generic machine driver
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
 #include "sof_sdw_common.h"

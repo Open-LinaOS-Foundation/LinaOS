@@ -7,12 +7,12 @@
  * https://datasheets.maximintegrated.com/en/ds/MAX5481-MAX5484.pdf
  */
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
 
 /* write wiper reg */
 #define MAX5481_WRITE_WIPER (0 << 4)

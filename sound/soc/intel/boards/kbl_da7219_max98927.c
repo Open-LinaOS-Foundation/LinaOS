@@ -9,9 +9,9 @@
  *   RT5663 codecs
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

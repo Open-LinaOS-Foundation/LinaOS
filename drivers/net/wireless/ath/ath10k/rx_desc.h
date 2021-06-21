@@ -7,7 +7,7 @@
 #ifndef _RX_DESC_H_
 #define _RX_DESC_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 enum rx_attention_flags {
 	RX_ATTENTION_FLAGS_FIRST_MPDU          = BIT(0),

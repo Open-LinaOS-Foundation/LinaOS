@@ -2,8 +2,8 @@
 #ifndef __NETNS_X_TABLES_H
 #define __NETNS_X_TABLES_H
 
-#include <linux/list.h>
-#include <linux/netfilter_defs.h>
+#include <linaos/list.h>
+#include <linaos/netfilter_defs.h>
 
 struct netns_xt {
 	bool notrack_deprecated_warning;

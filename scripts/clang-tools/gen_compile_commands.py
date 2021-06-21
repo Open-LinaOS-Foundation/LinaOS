@@ -5,7 +5,7 @@
 #
 # Author: Tom Roeder <tmroeder@google.com>
 #
-"""A tool for generating compile_commands.json in the Linux kernel."""
+"""A tool for generating compile_commands.json in the LinaOS kernel."""
 
 import argparse
 import json
@@ -211,7 +211,7 @@ def main():
         # If 'path' is a directory, handle all .cmd files under it.
         # Otherwise, handle .cmd files associated with the file.
         # Most of built-in objects are linked via archives (built-in.a or lib.a)
-        # but some objects are linked to vmlinux directly.
+        # but some objects are linked to vmlinaos directly.
         # Modules are listed in modules.order.
         if os.path.isdir(path):
             cmdfiles = cmdfiles_in_dir(path)

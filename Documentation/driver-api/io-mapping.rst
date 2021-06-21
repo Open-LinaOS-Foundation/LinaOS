@@ -5,7 +5,7 @@ The io_mapping functions
 API
 ===
 
-The io_mapping functions in linux/io-mapping.h provide an abstraction for
+The io_mapping functions in linaos/io-mapping.h provide an abstraction for
 efficiently mapping small regions of an I/O device to the CPU. The initial
 usage is to support the large graphics aperture on 32-bit processors where
 ioremap_wc cannot be used to statically map the entire aperture to the CPU

@@ -6,7 +6,7 @@
 #ifndef AQ_MACSEC_H
 #define AQ_MACSEC_H
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #if IS_ENABLED(CONFIG_MACSEC)
 
 #include "net/macsec.h"

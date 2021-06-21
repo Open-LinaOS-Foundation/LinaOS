@@ -5,17 +5,17 @@
  * Purna Chandra Mandal <purna.mandal@microchip.com>
  * Copyright (c) 2016, Microchip Technology Inc.
  */
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/watchdog.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/watchdog.h>
 
 #include <asm/mach-pic32/pic32.h>
 

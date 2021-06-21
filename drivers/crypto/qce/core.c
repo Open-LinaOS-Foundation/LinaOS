@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2010-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/hash.h>
 
@@ -292,4 +292,4 @@ module_platform_driver(qce_crypto_driver);
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Qualcomm crypto engine driver");
 MODULE_ALIAS("platform:" KBUILD_MODNAME);
-MODULE_AUTHOR("The Linux Foundation");
+MODULE_AUTHOR("The LinaOS Foundation");

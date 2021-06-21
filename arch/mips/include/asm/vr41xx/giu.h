@@ -2,7 +2,7 @@
 /*
  *  Include file for NEC VR4100 series General-purpose I/O Unit.
  *
- *  Copyright (C) 2005-2009  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2005-2009  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef __NEC_VR41XX_GIU_H
 #define __NEC_VR41XX_GIU_H

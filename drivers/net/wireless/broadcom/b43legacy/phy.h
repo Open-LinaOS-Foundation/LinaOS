@@ -19,7 +19,7 @@
 #ifndef B43legacy_PHY_H_
 #define B43legacy_PHY_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	B43legacy_ANTENNA0,	  /* Antenna 0 */

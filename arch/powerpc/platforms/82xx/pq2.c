@@ -10,7 +10,7 @@
  * Copyright (c) 2006 MontaVista Software, Inc.
  */
 
-#include <linux/kprobes.h>
+#include <linaos/kprobes.h>
 
 #include <asm/cpm2.h>
 #include <asm/io.h>

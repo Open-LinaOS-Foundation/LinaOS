@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/vgaarb.h>
+#include <linaos/vga_switcheroo.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_fb_helper.h>

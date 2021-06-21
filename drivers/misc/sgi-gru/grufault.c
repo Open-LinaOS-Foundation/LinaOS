@@ -11,17 +11,17 @@
  *  Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/security.h>
-#include <linux/sync_core.h>
-#include <linux/prefetch.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/security.h>
+#include <linaos/sync_core.h>
+#include <linaos/prefetch.h>
 #include "gru.h"
 #include "grutables.h"
 #include "grulib.h"
@@ -513,7 +513,7 @@ failactive:
 /*
  * Process an external interrupt from the GRU. This interrupt is
  * caused by a TLB miss.
- * Note that this is the interrupt handler that is registered with linux
+ * Note that this is the interrupt handler that is registered with linaos
  * interrupt handlers.
  */
 static irqreturn_t gru_intr(int chiplet, int blade)

@@ -8,14 +8,14 @@
  *         Simon Xue <xxm@rock-chips.com>
  */
 
-#include <linux/configfs.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/pci-epc.h>
-#include <linux/platform_device.h>
-#include <linux/pci-epf.h>
-#include <linux/sizes.h>
+#include <linaos/configfs.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/pci-epc.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci-epf.h>
+#include <linaos/sizes.h>
 
 #include "pcie-rockchip.h"
 

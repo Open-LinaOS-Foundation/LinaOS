@@ -125,7 +125,7 @@
 				st,no-autorepeat;
 				keypad,num-rows = <8>;
 				keypad,num-columns = <8>;
-				linux,keymap = <0x00020072 // Vol down
+				linaos,keymap = <0x00020072 // Vol down
 						0x00030073 // Vol up
 						0x0100009e // Back
 						0x010100e3 // TV out

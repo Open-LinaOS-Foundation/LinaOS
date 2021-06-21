@@ -12,7 +12,7 @@
 #ifndef M5MOLS_H
 #define M5MOLS_H
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <media/v4l2-subdev.h>
 #include "m5mols_reg.h"
 

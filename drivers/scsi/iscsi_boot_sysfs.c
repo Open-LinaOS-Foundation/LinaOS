@@ -6,12 +6,12 @@
  * Copyright (C) 2010 Mike Christie
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/capability.h>
-#include <linux/iscsi_boot_sysfs.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/capability.h>
+#include <linaos/iscsi_boot_sysfs.h>
 
 
 MODULE_AUTHOR("Mike Christie <michaelc@cs.wisc.edu>");

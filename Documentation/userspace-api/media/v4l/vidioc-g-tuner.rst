@@ -454,7 +454,7 @@ EINVAL
     bounds.
 
 .. [#f1]
-   This mode has been added in Linux 2.6.17 and may not be supported by
+   This mode has been added in LinaOS 2.6.17 and may not be supported by
    older drivers.
 
 .. [#f2]

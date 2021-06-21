@@ -11,17 +11,17 @@
 
 #include "smscoreapi.h"
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
-#include <linux/firmware.h>
-#include <linux/wait.h>
+#include <linaos/firmware.h>
+#include <linaos/wait.h>
 #include <asm/byteorder.h>
 
 #include "sms-cards.h"

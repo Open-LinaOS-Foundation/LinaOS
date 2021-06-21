@@ -14,7 +14,7 @@
 #ifndef __SMS_IR_H__
 #define __SMS_IR_H__
 
-#include <linux/input.h>
+#include <linaos/input.h>
 #include <media/rc-core.h>
 
 struct smscore_device_t;

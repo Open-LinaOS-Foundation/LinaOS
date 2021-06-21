@@ -10,12 +10,12 @@
 #ifndef _LINUX_MOUNT_H
 #define _LINUX_MOUNT_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/nodemask.h>
-#include <linux/spinlock.h>
-#include <linux/seqlock.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/nodemask.h>
+#include <linaos/spinlock.h>
+#include <linaos/seqlock.h>
+#include <linaos/atomic.h>
 
 struct super_block;
 struct vfsmount;

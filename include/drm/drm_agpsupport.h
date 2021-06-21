@@ -2,12 +2,12 @@
 #ifndef _DRM_AGPSUPPORT_H_
 #define _DRM_AGPSUPPORT_H_
 
-#include <linux/agp_backend.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/agp_backend.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 #include <uapi/drm/drm.h>
 
 struct drm_device;

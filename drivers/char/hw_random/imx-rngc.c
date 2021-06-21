@@ -6,17 +6,17 @@
  * Copyright (C) 2017 Martin Kaiser <martin@kaiser.cx>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/hw_random.h>
-#include <linux/completion.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/hw_random.h>
+#include <linaos/completion.h>
+#include <linaos/io.h>
 
 #define RNGC_VER_ID			0x0000
 #define RNGC_COMMAND			0x0004

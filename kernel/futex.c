@@ -31,15 +31,15 @@
  *  "The futexes are also cursed."
  *  "But they come in a choice of three flavours!"
  */
-#include <linux/compat.h>
-#include <linux/jhash.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/hugetlb.h>
-#include <linux/freezer.h>
-#include <linux/memblock.h>
-#include <linux/fault-inject.h>
-#include <linux/time_namespace.h>
+#include <linaos/compat.h>
+#include <linaos/jhash.h>
+#include <linaos/pagemap.h>
+#include <linaos/syscalls.h>
+#include <linaos/hugetlb.h>
+#include <linaos/freezer.h>
+#include <linaos/memblock.h>
+#include <linaos/fault-inject.h>
+#include <linaos/time_namespace.h>
 
 #include <asm/futex.h>
 

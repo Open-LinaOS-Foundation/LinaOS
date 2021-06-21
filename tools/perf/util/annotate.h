@@ -5,9 +5,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
 #include <pthread.h>
 #include <asm/bug.h>
 #include "symbol_conf.h"

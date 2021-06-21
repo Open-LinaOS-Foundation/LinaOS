@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/netfilter.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/vmalloc.h>
+#include <linaos/stddef.h>
+#include <linaos/err.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
@@ -19,15 +19,15 @@
 #include <net/netfilter/nf_conntrack_bridge.h>
 #include <net/netfilter/nf_log.h>
 
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/sysctl.h>
+#include <linaos/ip.h>
+#include <linaos/icmp.h>
+#include <linaos/sysctl.h>
 #include <net/route.h>
 #include <net/ip.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_zones.h>
 #include <net/netfilter/nf_conntrack_seqadj.h>
@@ -37,8 +37,8 @@
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 
-#include <linux/ipv6.h>
-#include <linux/in6.h>
+#include <linaos/ipv6.h>
+#include <linaos/in6.h>
 #include <net/ipv6.h>
 #include <net/inet_frag.h>
 

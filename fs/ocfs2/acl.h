@@ -8,7 +8,7 @@
 #ifndef OCFS2_ACL_H
 #define OCFS2_ACL_H
 
-#include <linux/posix_acl_xattr.h>
+#include <linaos/posix_acl_xattr.h>
 
 struct ocfs2_acl_entry {
 	__le16 e_tag;

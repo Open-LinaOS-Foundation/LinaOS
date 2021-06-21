@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Transparent proxy support for Linux/iptables
+ * Transparent proxy support for LinaOS/iptables
  *
  * Copyright (c) 2006-2010 BalaBit IT Ltd.
  * Author: Balazs Scheidler, Krisztian Kovacs
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
 #include <net/checksum.h>
 #include <net/udp.h>
 #include <net/tcp.h>
 #include <net/inet_sock.h>
 #include <net/inet_hashtables.h>
-#include <linux/inetdevice.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
 
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 
@@ -25,12 +25,12 @@
 #include <net/if_inet6.h>
 #include <net/addrconf.h>
 #include <net/inet6_hashtables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 #endif
 
 #include <net/netfilter/nf_tproxy.h>
-#include <linux/netfilter/xt_TPROXY.h>
+#include <linaos/netfilter/xt_TPROXY.h>
 
 static unsigned int
 tproxy_tg4(struct net *net, struct sk_buff *skb, __be32 laddr, __be16 lport,

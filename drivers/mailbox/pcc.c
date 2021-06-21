@@ -46,16 +46,16 @@
  *  clients to be implemented as its Mailbox Client Channels.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/platform_device.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 #include <acpi/pcc.h>
 
 #include "mailbox.h"
@@ -149,11 +149,11 @@ static int write_register(void __iomem *vaddr, u64 val, unsigned int bit_width)
 }
 
 /**
- * pcc_map_interrupt - Map a PCC subspace GSI to a linux IRQ number
+ * pcc_map_interrupt - Map a PCC subspace GSI to a linaos IRQ number
  * @interrupt: GSI number.
  * @flags: interrupt flags
  *
- * Returns: a valid linux IRQ number on success
+ * Returns: a valid linaos IRQ number on success
  *		0 or -EINVAL on failure
  */
 static int pcc_map_interrupt(u32 interrupt, u32 flags)

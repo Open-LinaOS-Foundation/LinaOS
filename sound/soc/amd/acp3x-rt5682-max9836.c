@@ -10,14 +10,14 @@
 #include <sound/pcm_params.h>
 #include <sound/soc-dapm.h>
 #include <sound/jack.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/io.h>
+#include <linaos/acpi.h>
 
 #include "raven/acp3x.h"
 #include "../codecs/rt5682.h"

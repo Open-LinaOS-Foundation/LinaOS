@@ -5,10 +5,10 @@
  * Copyright (C) 2012 Peter Hurley <peter@hurleysoftware.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/bug.h>
 
 #include "dma_fifo.h"
 

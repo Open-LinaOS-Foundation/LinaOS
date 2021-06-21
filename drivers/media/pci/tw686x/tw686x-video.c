@@ -7,12 +7,12 @@
  * and Measurements PIAP
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/videobuf2-dma-contig.h>

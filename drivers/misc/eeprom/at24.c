@@ -6,24 +6,24 @@
  * Copyright (C) 2008 Wolfram Sang, Pengutronix
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/capability.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 
 /* Address pointer is 16 bit. */
 #define AT24_FLAG_ADDR16	BIT(7)
@@ -75,7 +75,7 @@ struct at24_client {
 
 struct at24_data {
 	/*
-	 * Lock protects against activities from other Linux tasks,
+	 * Lock protects against activities from other LinaOS tasks,
 	 * but not from changes by other I2C masters.
 	 */
 	struct mutex lock;

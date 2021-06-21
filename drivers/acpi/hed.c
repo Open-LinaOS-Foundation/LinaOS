@@ -9,10 +9,10 @@
  * notified via SCI, mainly the corrected errors.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
 #include <acpi/hed.h>
 
 static const struct acpi_device_id acpi_hed_ids[] = {

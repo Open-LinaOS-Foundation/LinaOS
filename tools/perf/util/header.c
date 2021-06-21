@@ -8,16 +8,16 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/zalloc.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/string.h>
+#include <linaos/stringify.h>
+#include <linaos/zalloc.h>
 #include <sys/stat.h>
 #include <sys/utsname.h>
-#include <linux/time64.h>
+#include <linaos/time64.h>
 #include <dirent.h>
 #ifdef HAVE_LIBBPF_SUPPORT
 #include <bpf/libbpf.h>
@@ -50,7 +50,7 @@
 #include "bpf-event.h"
 #include "clockid.h"
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include <internal/lib.h>
 
 /*

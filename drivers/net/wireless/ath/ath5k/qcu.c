@@ -25,7 +25,7 @@ Queue Control Unit, DCF Control Unit Functions
 #include "ath5k.h"
 #include "reg.h"
 #include "debug.h"
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 /**
  * DOC: Queue Control Unit (QCU)/DCF Control Unit (DCU) functions

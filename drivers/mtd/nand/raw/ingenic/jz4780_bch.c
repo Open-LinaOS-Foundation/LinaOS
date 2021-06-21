@@ -6,15 +6,15 @@
  * Author: Alex Smith <alex.smith@imgtec.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 #include "ingenic_ecc.h"
 

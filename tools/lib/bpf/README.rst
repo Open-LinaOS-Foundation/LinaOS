@@ -72,7 +72,7 @@ of both low-level ring access functions and high-level configuration
 functions. These can be mixed and matched. Note that these functions
 are not reentrant for performance reasons.
 
-Please take a look at Documentation/networking/af_xdp.rst in the Linux
+Please take a look at Documentation/networking/af_xdp.rst in the LinaOS
 kernel source tree on how to use XDP sockets and for some common
 mistakes in case you do not get any traffic up to user space.
 

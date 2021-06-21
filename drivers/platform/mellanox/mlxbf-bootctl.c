@@ -8,10 +8,10 @@
  * Copyright (C) 2019 Mellanox Technologies
  */
 
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include "mlxbf-bootctl.h"
 

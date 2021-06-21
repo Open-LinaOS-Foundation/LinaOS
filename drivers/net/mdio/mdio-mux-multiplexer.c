@@ -4,10 +4,10 @@
  * Copyright 2019 NXP
  */
 
-#include <linux/mdio-mux.h>
-#include <linux/module.h>
-#include <linux/mux/consumer.h>
-#include <linux/platform_device.h>
+#include <linaos/mdio-mux.h>
+#include <linaos/module.h>
+#include <linaos/mux/consumer.h>
+#include <linaos/platform_device.h>
 
 struct mdio_mux_multiplexer_state {
 	struct mux_control *muxc;

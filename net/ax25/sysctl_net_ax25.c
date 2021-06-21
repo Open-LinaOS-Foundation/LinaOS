@@ -3,10 +3,10 @@
  *
  * Copyright (C) 1996 Mike Shaver (shaver@zeroknowledge.com)
  */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
+#include <linaos/spinlock.h>
 #include <net/ax25.h>
 
 static int min_ipdefmode[1],    	max_ipdefmode[] = {1};

@@ -1,13 +1,13 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
 ifdef CONFIG_DYNAMIC_FTRACE
 CFLAGS_REMOVE_ftrace.o = -pg
 endif
 
-extra-y	:= head.o vmlinux.lds
+extra-y	:= head.o vmlinaos.lds
 
 obj-y := entry.o efi.o efi_stub.o gate-data.o fsys.o irq.o irq_ia64.o	\
 	 irq_lsapic.o ivt.o pal.o patch.o process.o ptrace.o sal.o		\

@@ -6,22 +6,22 @@
  * Copyright (C) 2007 Secret Lab Technologies Ltd.
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
 
 #define ULITE_NAME		"ttyUL"
 #define ULITE_MAJOR		204

@@ -84,7 +84,7 @@
 		};
 
 		enet0: ethernet@6200 {
-			linux,network-index = <0>;
+			linaos,network-index = <0>;
 			#size-cells = <0>;
 			device_type = "network";
 			compatible = "tsi108-ethernet";
@@ -97,7 +97,7 @@
 		};
 
 		enet1: ethernet@6600 {
-			linux,network-index = <1>;
+			linaos,network-index = <1>;
 			#address-cells = <1>;
 			#size-cells = <0>;
 			device_type = "network";

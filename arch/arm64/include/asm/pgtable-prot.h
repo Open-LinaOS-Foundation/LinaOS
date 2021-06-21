@@ -8,7 +8,7 @@
 #include <asm/memory.h>
 #include <asm/pgtable-hwdef.h>
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /*
  * Software defined PTE bits definition.

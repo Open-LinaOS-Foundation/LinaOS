@@ -6,8 +6,8 @@
 #ifndef __BPF_PROLOGUE_H
 #define __BPF_PROLOGUE_H
 
-#include <linux/compiler.h>
-#include <linux/filter.h>
+#include <linaos/compiler.h>
+#include <linaos/filter.h>
 #include "probe-event.h"
 
 #define BPF_PROLOGUE_MAX_ARGS 3

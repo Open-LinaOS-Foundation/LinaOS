@@ -3,9 +3,9 @@
  *  ATI Mach64 CT/VT/GT/LT Cursor Support
  */
 
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
 #include "../core/fb_draw.h"
 
 #include <asm/io.h>

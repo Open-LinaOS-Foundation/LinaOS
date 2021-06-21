@@ -4,19 +4,19 @@
  * (C) 2006-2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/udp.h>
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
-#include <linux/ipv6.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/module.h>
+#include <linaos/udp.h>
+#include <linaos/seq_file.h>
+#include <linaos/skbuff.h>
+#include <linaos/ipv6.h>
 #include <net/ip6_checksum.h>
 #include <net/checksum.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_timeout.h>
@@ -213,8 +213,8 @@ int nf_conntrack_udplite_packet(struct nf_conn *ct,
 
 #ifdef CONFIG_NF_CONNTRACK_TIMEOUT
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_cttimeout.h>
 
 static int udp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				     struct net *net, void *data)

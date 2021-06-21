@@ -8,7 +8,7 @@
 #ifndef __ASM_M68K_PROCESSOR_H
 #define __ASM_M68K_PROCESSOR_H
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 #include <asm/segment.h>
 #include <asm/fpu.h>
 #include <asm/ptrace.h>

@@ -21,7 +21,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/time.h>
+#include <linaos/time.h>
 
 #include "intel_atomic.h"
 #include "intel_bw.h"

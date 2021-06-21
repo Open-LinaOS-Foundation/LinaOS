@@ -90,7 +90,7 @@ static void dce12_update_clocks(struct clk_mgr *clk_mgr_base,
 	int max_pix_clk = dce_get_max_pixel_clock_for_all_paths(context);
 	int patched_disp_clk = context->bw_ctx.bw.dce.dispclk_khz;
 
-	/*TODO: W/A for dal3 linux, investigate why this works */
+	/*TODO: W/A for dal3 linaos, investigate why this works */
 	if (!clk_mgr_dce->dfs_bypass_active)
 		patched_disp_clk = patched_disp_clk * 115 / 100;
 

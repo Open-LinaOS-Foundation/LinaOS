@@ -4,13 +4,13 @@
  *
  *  Copyright (C) 2021	Lauri Kasanen
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/string.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/irq.h>
+#include <linaos/memblock.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/simplefb.h>
+#include <linaos/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/fw/fw.h>

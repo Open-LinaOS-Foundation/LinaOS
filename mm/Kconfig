@@ -13,7 +13,7 @@ choice
 	default FLATMEM_MANUAL
 	help
 	  This option allows you to change some of the ways that
-	  Linux manages its memory internally. Most users will
+	  LinaOS manages its memory internally. Most users will
 	  only have one option here selected by the architecture
 	  configuration. This is normal.
 
@@ -250,7 +250,7 @@ config COMPACTION
 	  invocations for high order memory requests. You shouldn't
 	  disable this option unless there really is a strong reason for
 	  it and then we would be really interested to hear about that at
-	  linux-mm@kvack.org.
+	  linaos-mm@kvack.org.
 
 #
 # support for free page reporting

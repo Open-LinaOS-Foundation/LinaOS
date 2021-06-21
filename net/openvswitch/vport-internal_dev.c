@@ -3,12 +3,12 @@
  * Copyright (c) 2007-2012 Nicira, Inc.
  */
 
-#include <linux/if_vlan.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
+#include <linaos/if_vlan.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
 
 #include <net/dst.h>
 #include <net/xfrm.h>

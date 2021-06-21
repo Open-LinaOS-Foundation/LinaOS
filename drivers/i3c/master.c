@@ -5,17 +5,17 @@
  * Author: Boris Brezillon <boris.brezillon@bootlin.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
 
 #include "internals.h"
 

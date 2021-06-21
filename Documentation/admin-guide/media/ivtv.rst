@@ -15,13 +15,13 @@ Hauppauge PVR-350.
    #) This driver requires the latest encoder firmware (version 2.06.039, size
       376836 bytes). Get the firmware from here:
 
-      https://linuxtv.org/downloads/firmware/#conexant
+      https://linaostv.org/downloads/firmware/#conexant
 
    #) 'normal' TV applications do not work with this driver, you need
       an application that can handle MPEG input such as mplayer, xine, MythTV,
       etc.
 
-The primary goal of the IVTV project is to provide a "clean room" Linux
+The primary goal of the IVTV project is to provide a "clean room" LinaOS
 Open Source driver implementation for video capture cards based on the
 iCompression iTVC15 or Conexant CX23415/CX23416 MPEG Codec.
 
@@ -54,7 +54,7 @@ IMPORTANT: In case of problems first read this page:
 See also
 --------
 
-https://linuxtv.org
+https://linaostv.org
 
 IRC
 ---

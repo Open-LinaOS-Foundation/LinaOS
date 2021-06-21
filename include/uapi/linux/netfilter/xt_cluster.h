@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_CLUSTER_MATCH_H
 #define _XT_CLUSTER_MATCH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum xt_cluster_flags {
 	XT_CLUSTER_F_INV	= (1 << 0)

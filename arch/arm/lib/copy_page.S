@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/copypage.S
+ *  linaos/arch/arm/lib/copypage.S
  *
  *  Copyright (C) 1995-1999 Russell King
  *
  *  ASM optimised string functions
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/cache.h>

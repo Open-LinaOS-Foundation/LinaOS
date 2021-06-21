@@ -4,17 +4,17 @@
  * Copyright 2016 Freescale Semiconductor, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/perf_event.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/perf_event.h>
+#include <linaos/slab.h>
 
 #define COUNTER_CNTL		0x0
 #define COUNTER_READ		0x20

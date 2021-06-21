@@ -6,9 +6,9 @@
  * Copyright (C) 2016 Oracle and/or its affiliates. All rights reserved.
  * Author: Khalid Aziz (khalid.aziz@oracle.com)
  */
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mm_types.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mm_types.h>
 #include <asm/mdesc.h>
 #include <asm/adi_64.h>
 #include <asm/mmu_64.h>

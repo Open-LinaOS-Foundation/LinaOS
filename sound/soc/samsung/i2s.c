@@ -6,21 +6,21 @@
 //	Jaswinder Singh <jassisinghbrar@gmail.com>
 
 #include <dt-bindings/sound/samsung-i2s.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pm_runtime.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pm_runtime.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 
-#include <linux/platform_data/asoc-s3c.h>
+#include <linaos/platform_data/asoc-s3c.h>
 
 #include "dma.h"
 #include "idma.h"

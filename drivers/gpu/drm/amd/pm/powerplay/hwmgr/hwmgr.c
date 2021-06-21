@@ -22,11 +22,11 @@
  */
 
 #include "pp_debug.h"
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
 #include <drm/amdgpu_drm.h>
 #include "power_state.h"
 #include "hwmgr.h"

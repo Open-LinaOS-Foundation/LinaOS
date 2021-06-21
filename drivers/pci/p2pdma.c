@@ -9,16 +9,16 @@
  */
 
 #define pr_fmt(fmt) "pci-p2pdma: " fmt
-#include <linux/ctype.h>
-#include <linux/pci-p2pdma.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/genalloc.h>
-#include <linux/memremap.h>
-#include <linux/percpu-refcount.h>
-#include <linux/random.h>
-#include <linux/seq_buf.h>
-#include <linux/xarray.h>
+#include <linaos/ctype.h>
+#include <linaos/pci-p2pdma.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/genalloc.h>
+#include <linaos/memremap.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/random.h>
+#include <linaos/seq_buf.h>
+#include <linaos/xarray.h>
 
 enum pci_p2pdma_map_type {
 	PCI_P2PDMA_MAP_UNKNOWN = 0,

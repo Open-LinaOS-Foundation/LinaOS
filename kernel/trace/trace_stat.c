@@ -9,11 +9,11 @@
  *
  */
 
-#include <linux/security.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/tracefs.h>
+#include <linaos/security.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/rbtree.h>
+#include <linaos/tracefs.h>
 #include "trace_stat.h"
 #include "trace.h"
 

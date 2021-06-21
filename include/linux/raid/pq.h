@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2003 H. Peter Anvin - All Rights Reserved
  *
@@ -12,7 +12,7 @@
 
 /* Set to 1 to use kernel-wide empty_zero_page */
 #define RAID6_USE_EMPTY_ZERO_PAGE 0
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 
 /* We need a pre-zeroed page... if we don't want to use the kernel-provided
    one define it here */

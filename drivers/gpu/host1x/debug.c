@@ -6,11 +6,11 @@
  * Copyright (C) 2011-2013 NVIDIA Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include "dev.h"
 #include "debug.h"

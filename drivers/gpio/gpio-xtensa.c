@@ -14,7 +14,7 @@
  * driver treats input and output states as two distinct devices.
  *
  * Access to GPIO32 specific instructions is controlled by the CPENABLE
- * (Coprocessor Enable Bits) register. By default Xtensa Linux startup code
+ * (Coprocessor Enable Bits) register. By default Xtensa LinaOS startup code
  * disables access to all coprocessors. This driver sets the CPENABLE bit
  * corresponding to GPIO32 before any GPIO32 specific instruction, and restores
  * CPENABLE state after that.
@@ -25,11 +25,11 @@
  * would need to have a per core workqueue to do the actual GPIO manipulation.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/bitops.h>
+#include <linaos/platform_device.h>
 
 #include <asm/coprocessor.h> /* CPENABLE read/write macros */
 

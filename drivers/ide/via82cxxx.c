@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * VIA IDE driver for Linux. Supported southbridges:
+ * VIA IDE driver for LinaOS. Supported southbridges:
  *
  *   vt82c576, vt82c586, vt82c586a, vt82c586b, vt82c596a, vt82c596b,
  *   vt82c686, vt82c686a, vt82c686b, vt8231, vt8233, vt8233c, vt8233a,
@@ -20,13 +20,13 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
-#include <linux/dmi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
+#include <linaos/dmi.h>
 
 #ifdef CONFIG_PPC_CHRP
 #include <asm/processor.h>

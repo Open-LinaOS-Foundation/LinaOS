@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/plat-pxa/mfp.c
+ * linaos/arch/arm/plat-pxa/mfp.c
  *
  *   Multi-Function Pin Support
  *
@@ -10,10 +10,10 @@
  *             initial version
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <plat/mfp.h>
 

@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "dce_i2c.h"
 #include "dce_i2c_sw.h"

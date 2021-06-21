@@ -6,7 +6,7 @@
 #ifndef __PVRUSB2_STD_H
 #define __PVRUSB2_STD_H
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 // Convert string describing one or more video standards into a mask of V4L
 // standard bits.  Return true if conversion succeeds otherwise return

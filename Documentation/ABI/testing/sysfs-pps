@@ -1,6 +1,6 @@
 What:		/sys/class/pps/
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ directory will contain files and
 		directories that will provide a unified interface to
@@ -8,7 +8,7 @@ Description:
 
 What:		/sys/class/pps/ppsX/
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ppsX/ directory is related to X-th
 		PPS source into the system. Each directory will
@@ -16,7 +16,7 @@ Description:
 
 What:		/sys/class/pps/ppsX/assert
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ppsX/assert file reports the assert events
 		and the assert sequence number of the X-th source in the form:
@@ -28,7 +28,7 @@ Description:
 
 What:		/sys/class/pps/ppsX/clear
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ppsX/clear file reports the clear events
 		and the clear sequence number of the X-th source in the form:
@@ -40,31 +40,31 @@ Description:
 
 What:		/sys/class/pps/ppsX/mode
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ppsX/mode file reports the functioning
 		mode of the X-th source in hexadecimal encoding.
 
-		Please, refer to linux/include/linux/pps.h for further
+		Please, refer to linaos/include/linaos/pps.h for further
 		info.
 
 What:		/sys/class/pps/ppsX/echo
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ppsX/echo file reports if the X-th does
 		or does not support an "echo" function.
 
 What:		/sys/class/pps/ppsX/name
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ppsX/name file reports the name of the
 		X-th source.
 
 What:		/sys/class/pps/ppsX/path
 Date:		February 2008
-Contact:	Rodolfo Giometti <giometti@linux.it>
+Contact:	Rodolfo Giometti <giometti@linaos.it>
 Description:
 		The /sys/class/pps/ppsX/path file reports the path name of
 		the device connected with the X-th source.

@@ -7,12 +7,12 @@
 #ifndef DEBUG_H
 #define DEBUG_H
 
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/refcount.h>
-#include <linux/fs.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
+#include <linaos/refcount.h>
+#include <linaos/fs.h>
 
 #define DEBUG_MAX_LEVEL		   6  /* debug levels range from 0 to 6 */
 #define DEBUG_OFF_LEVEL		   -1 /* level where debug is switched off */

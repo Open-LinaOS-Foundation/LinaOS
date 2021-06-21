@@ -2,21 +2,21 @@
 /*
  *  arch/arm/mach-vt8500/vt8500.c
  *
- *  Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ *  Copyright (C) 2012 Tony Prisk <linaos@prisktech.co.nz>
  */
 
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/reboot.h>
+#include <linaos/io.h>
+#include <linaos/pm.h>
+#include <linaos/reboot.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <asm/mach/map.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #define LEGACY_GPIO_BASE	0xD8110000
 #define LEGACY_PMC_BASE		0xD8130000

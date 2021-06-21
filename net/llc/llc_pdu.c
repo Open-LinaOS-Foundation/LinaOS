@@ -12,7 +12,7 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/llc_pdu.h>
 
 static void llc_pdu_decode_pdu_type(struct sk_buff *skb, u8 *type);

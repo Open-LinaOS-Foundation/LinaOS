@@ -7,7 +7,7 @@
 #define _RTW_DEBUG_C_
 
 #include <rtw_debug.h>
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 
 int proc_get_drv_version(char *page, char **start,
 			 off_t offset, int count,

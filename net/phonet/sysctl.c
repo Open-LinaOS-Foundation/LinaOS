@@ -9,13 +9,13 @@
  * Author: Rémi Denis-Courmont
  */
 
-#include <linux/seqlock.h>
-#include <linux/sysctl.h>
-#include <linux/errno.h>
-#include <linux/init.h>
+#include <linaos/seqlock.h>
+#include <linaos/sysctl.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
 
 #include <net/sock.h>
-#include <linux/phonet.h>
+#include <linaos/phonet.h>
 #include <net/phonet/phonet.h>
 
 #define DYNAMIC_PORT_MIN	0x40

@@ -4,7 +4,7 @@
  * Copyright (c) 2018 Akash Gajjar <Akash_Gajjar@mentor.com>
  */
 
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/pwm/pwm.h>
 #include "rk3399.dtsi"
 #include "rk3399-opp.dtsi"
@@ -37,7 +37,7 @@
 			debounce-interval = <100>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Key Power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -96,7 +96,7 @@
 	};
 
 	spdif-dit {
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 		#sound-dai-cells = <0>;
 
 		port {

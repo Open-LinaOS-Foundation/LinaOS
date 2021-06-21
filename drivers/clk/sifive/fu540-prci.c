@@ -10,13 +10,13 @@
  * over all PRCI resources.
  *
  * This driver is based on the PRCI driver written by Wesley Terpstra:
- * https://github.com/riscv/riscv-linux/commit/999529edf517ed75b56659d456d221b2ee56bb60
+ * https://github.com/riscv/riscv-linaos/commit/999529edf517ed75b56659d456d221b2ee56bb60
  *
  * References:
  * - SiFive FU540-C000 manual v1p0, Chapter 7 "Clocking and Reset"
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <dt-bindings/clock/sifive-fu540-prci.h>
 
@@ -42,7 +42,7 @@ static struct __prci_wrpll_data __prci_gemgxlpll_data = {
 	.cfg1_offs = PRCI_GEMGXLPLLCFG1_OFFSET,
 };
 
-/* Linux clock framework integration */
+/* LinaOS clock framework integration */
 
 static const struct clk_ops sifive_fu540_prci_wrpll_clk_ops = {
 	.set_rate = sifive_prci_wrpll_set_rate,

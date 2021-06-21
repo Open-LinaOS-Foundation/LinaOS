@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/ia64/kernel/irq_ia64.c
+ * linaos/arch/ia64/kernel/irq_ia64.c
  *
  * Copyright (C) 1998-2001 Hewlett-Packard Co
  *	Stephane Eranian <eranian@hpl.hp.com>
@@ -15,24 +15,24 @@
  *						Added CPU Hotplug handling for IPF.
  */
 
-#include <linux/module.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/pgtable.h>
 
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/ratelimit.h>
-#include <linux/acpi.h>
-#include <linux/sched.h>
+#include <linaos/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/ptrace.h>
+#include <linaos/signal.h>
+#include <linaos/smp.h>
+#include <linaos/threads.h>
+#include <linaos/bitops.h>
+#include <linaos/irq.h>
+#include <linaos/ratelimit.h>
+#include <linaos/acpi.h>
+#include <linaos/sched.h>
 
 #include <asm/delay.h>
 #include <asm/intrinsics.h>

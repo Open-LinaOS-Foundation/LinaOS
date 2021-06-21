@@ -6,25 +6,25 @@
  * Copyright (C) 2014-2020 Renesas Electronics Corporation
  */
 
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/dma-iommu.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_iommu.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/bitmap.h>
+#include <linaos/delay.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/io-pgtable.h>
+#include <linaos/iommu.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #if defined(CONFIG_ARM) && !defined(CONFIG_IOMMU_DMA)
 #include <asm/dma-iommu.h>

@@ -26,13 +26,13 @@
  */
 
 #include <crypto/twofish.h>
-#include <linux/bitops.h>
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/crypto.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 
 /* The large precomputed tables for the Twofish cipher (twofish.c)

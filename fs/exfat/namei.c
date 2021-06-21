@@ -3,11 +3,11 @@
  * Copyright (C) 2012-2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/iversion.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
-#include <linux/nls.h>
+#include <linaos/iversion.h>
+#include <linaos/namei.h>
+#include <linaos/slab.h>
+#include <linaos/buffer_head.h>
+#include <linaos/nls.h>
 
 #include "exfat_raw.h"
 #include "exfat_fs.h"

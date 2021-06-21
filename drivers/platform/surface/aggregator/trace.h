@@ -11,10 +11,10 @@
 #if !defined(_SURFACE_AGGREGATOR_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _SURFACE_AGGREGATOR_TRACE_H
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <linaos/surface_aggregator/serial_hub.h>
 
 #include <asm/unaligned.h>
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_DEFINE_ENUM(SSH_FRAME_TYPE_DATA_SEQ);
 TRACE_DEFINE_ENUM(SSH_FRAME_TYPE_DATA_NSQ);

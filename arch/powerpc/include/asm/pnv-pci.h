@@ -6,9 +6,9 @@
 #ifndef _ASM_PNV_PCI_H
 #define _ASM_PNV_PCI_H
 
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/irq.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/irq.h>
 #include <misc/cxl-base.h>
 #include <asm/opal-api.h>
 

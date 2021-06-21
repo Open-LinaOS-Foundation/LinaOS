@@ -2,7 +2,7 @@
 /*
  * Pkey table
  *
- * SELinux must keep a mapping of Infinband PKEYs to labels/SIDs.  This
+ * SELinaOS must keep a mapping of Infinband PKEYs to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead.
  *
@@ -10,7 +10,7 @@
  * developed by
  * James Morris <jmorris@redhat.com> and
  * Paul Moore <paul@paul-moore.com>
- *   (see security/selinux/netif.c and security/selinux/netport.c for more
+ *   (see security/selinaos/netif.c and security/selinaos/netport.c for more
  *   information)
  */
 
@@ -18,10 +18,10 @@
  * (c) Mellanox Technologies, 2016
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
 
 #include "ibpkey.h"
 #include "objsec.h"
@@ -141,7 +141,7 @@ static int sel_ib_pkey_sid_slow(u64 subnet_prefix, u16 pkey_num, u32 *sid)
 		return 0;
 	}
 
-	ret = security_ib_pkey_sid(&selinux_state, subnet_prefix, pkey_num,
+	ret = security_ib_pkey_sid(&selinaos_state, subnet_prefix, pkey_num,
 				   sid);
 	if (ret)
 		goto out;
@@ -223,7 +223,7 @@ static __init int sel_ib_pkey_init(void)
 {
 	int iter;
 
-	if (!selinux_enabled_boot)
+	if (!selinaos_enabled_boot)
 		return 0;
 
 	for (iter = 0; iter < SEL_PKEY_HASH_SIZE; iter++) {

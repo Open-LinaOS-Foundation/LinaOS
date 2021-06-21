@@ -21,7 +21,7 @@
  * all calls go through this layer since PHY doesn't have access to the
  * driver's brcms_hardware pointer.
  */
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <net/mac80211.h>
 
 #include "main.h"

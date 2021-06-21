@@ -6,7 +6,7 @@
  * This driver is intended to make the second of two hardware watchdogs
  * on the Sibyte 12XX and 11XX SoCs available to the user.  There are two
  * such devices available on the SoC, but it seems that there isn't an
- * enumeration class for watchdogs in Linux like there is for RTCs.
+ * enumeration class for watchdogs in LinaOS like there is for RTCs.
  * The second is used rather than the first because it uses IRQ 1,
  * thereby avoiding all that IRQ 0 problematic nonsense.
  *
@@ -20,7 +20,7 @@
  * bus and has just taken responsibility for providing a cache block.
  * Since the reset can't be redirected to the external reset pin, it is
  * possible that other HT connected processors might hang and not reset.
- * For Linux, a soft reset would probably be even worse than a hard reset.
+ * For LinaOS, a soft reset would probably be even worse than a hard reset.
  * There you have it.
  *
  * The timer takes 23 bits of a 64 bit register (?) as a count value,
@@ -46,14 +46,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/reboot.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/interrupt.h>
 
 #include <asm/sibyte/sb1250.h>
 #include <asm/sibyte/sb1250_regs.h>

@@ -5,14 +5,14 @@
  * Copyright (C) 2006 Texas Instruments.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_reg.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include <mach/serial.h>
 #include <mach/cputype.h>

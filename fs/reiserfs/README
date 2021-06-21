@@ -50,7 +50,7 @@ Stop reading here.  Go there, then return.
 Send bug reports to yura@namesys.botik.ru.
 
 mkreiserfs and other utilities are in reiserfs/utils, or wherever your
-Linux provider put them.  There is some disagreement about how useful
+LinaOS provider put them.  There is some disagreement about how useful
 it is for users to get their fsck and mkreiserfs out of sync with the
 version of reiserfs that is in their kernel, with many important
 distributors wanting them out of sync.:-) Please try to remember to
@@ -147,13 +147,13 @@ Vitaly Fertman is doing fsck.
 
 Jeff Mahoney, of SuSE, contributed a few cleanup fixes, most notably
 the endian safe patches which allow ReiserFS to run on any platform
-supported by the Linux kernel.
+supported by the LinaOS kernel.
 
-SuSE, IntegratedLinux.com, Ecila, MP3.com, bigstorage.com, and the
+SuSE, IntegratedLinaOS.com, Ecila, MP3.com, bigstorage.com, and the
 Alpha PC Company made it possible for me to not have a day job
 anymore, and to dramatically increase our staffing.  Ecila funded
 hypertext feature development, MP3.com funded journaling, SuSE funded
-core development, IntegratedLinux.com funded squid web cache
+core development, IntegratedLinaOS.com funded squid web cache
 appliances, bigstorage.com funded HSM, and the alpha PC company funded
 the alpha port.  Many of these tasks were helped by sponsors other
 than the ones just named.  SuSE has helped in much more than just

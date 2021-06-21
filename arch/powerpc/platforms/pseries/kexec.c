@@ -3,8 +3,8 @@
  *  Copyright 2006 Michael Ellerman, IBM Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
 
 #include <asm/machdep.h>
 #include <asm/page.h>

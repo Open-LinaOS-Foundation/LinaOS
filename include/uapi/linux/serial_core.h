@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- *  linux/drivers/char/serial_core.h
+ *  linaos/drivers/char/serial_core.h
  *
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
  *
@@ -21,7 +21,7 @@
 #ifndef _UAPILINUX_SERIAL_CORE_H
 #define _UAPILINUX_SERIAL_CORE_H
 
-#include <linux/serial.h>
+#include <linaos/serial.h>
 
 /*
  * The type definitions.  These are from Ted Ts'o's serial.h

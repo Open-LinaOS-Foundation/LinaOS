@@ -9,9 +9,9 @@
  *               2009 Johannes Dickgreber <tanzy@gmx.de>
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/time.h>
 #include <asm/sgi/heart.h>

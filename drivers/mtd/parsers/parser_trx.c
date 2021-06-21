@@ -5,10 +5,10 @@
  * Copyright (C) 2012 - 2017 Rafał Miłecki <rafal@milecki.pl>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
 
 #define TRX_PARSER_MAX_PARTS		4
 
@@ -85,7 +85,7 @@ static int parser_trx_parse(struct mtd_info *mtd,
 
 	if (trx.offset[i]) {
 		part = &parts[curr_part++];
-		part->name = "linux";
+		part->name = "linaos";
 		part->offset = trx.offset[i];
 		i++;
 	}

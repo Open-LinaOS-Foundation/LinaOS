@@ -157,7 +157,7 @@ iv_large_sectors
 
 Example scripts
 ===============
-LUKS (Linux Unified Key Setup) is now the preferred way to set up disk
+LUKS (LinaOS Unified Key Setup) is now the preferred way to set up disk
 encryption with dm-crypt using the 'cryptsetup' utility, see
 https://gitlab.com/cryptsetup/cryptsetup
 

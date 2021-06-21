@@ -9,7 +9,7 @@
  * for details of the synchronisation algorithms used here.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/mcpm.h>
 #include <asm/assembler.h>
 

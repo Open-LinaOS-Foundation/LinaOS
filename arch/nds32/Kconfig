@@ -49,7 +49,7 @@ config NDS32
 	select HAVE_DYNAMIC_FTRACE
 	select SET_FS
 	help
-	  Andes(nds32) Linux support.
+	  Andes(nds32) LinaOS support.
 
 config GENERIC_CALIBRATE_DELAY
 	def_bool y

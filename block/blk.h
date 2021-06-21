@@ -2,11 +2,11 @@
 #ifndef BLK_INTERNAL_H
 #define BLK_INTERNAL_H
 
-#include <linux/idr.h>
-#include <linux/blk-mq.h>
-#include <linux/part_stat.h>
-#include <linux/blk-crypto.h>
-#include <linux/memblock.h>	/* for max_pfn/max_low_pfn */
+#include <linaos/idr.h>
+#include <linaos/blk-mq.h>
+#include <linaos/part_stat.h>
+#include <linaos/blk-crypto.h>
+#include <linaos/memblock.h>	/* for max_pfn/max_low_pfn */
 #include <xen/xen.h>
 #include "blk-crypto-internal.h"
 #include "blk-mq.h"

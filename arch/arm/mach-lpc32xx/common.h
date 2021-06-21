@@ -10,7 +10,7 @@
 #ifndef __LPC32XX_COMMON_H
 #define __LPC32XX_COMMON_H
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 /*
  * Other arch specific structures and functions

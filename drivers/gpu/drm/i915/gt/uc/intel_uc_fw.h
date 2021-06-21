@@ -6,7 +6,7 @@
 #ifndef _INTEL_UC_FW_H_
 #define _INTEL_UC_FW_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "intel_uc_fw_abi.h"
 #include "intel_device_info.h"
 #include "i915_gem.h"
@@ -16,7 +16,7 @@ struct drm_i915_private;
 struct intel_gt;
 
 /* Home of GuC, HuC and DMC firmwares */
-#define INTEL_UC_FIRMWARE_URL "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915"
+#define INTEL_UC_FIRMWARE_URL "https://git.kernel.org/pub/scm/linaos/kernel/git/firmware/linaos-firmware.git/tree/i915"
 
 /*
  * +------------+---------------------------------------------------+

@@ -13,35 +13,35 @@
  * Copyright (C) 2002, 2006, 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/circ_buf.h>
-#include <linux/serial.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/circ_buf.h>
+#include <linaos/serial.h>
+#include <linaos/sysrq.h>
+#include <linaos/console.h>
+#include <linaos/spinlock.h>
 #ifdef CONFIG_SERIO
-#include <linux/serio.h>
+#include <linaos/serio.h>
 #endif
-#include <linux/init.h>
-#include <linux/of_device.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/prom.h>
 #include <asm/setup.h>
 
-#include <linux/serial_core.h>
-#include <linux/sunserialcore.h>
+#include <linaos/serial_core.h>
+#include <linaos/sunserialcore.h>
 
 #include "sunzilog.h"
 
@@ -811,7 +811,7 @@ static int sunzilog_startup(struct uart_port *port)
 /*
  * The test for ZS_IS_CONS is explained by the following e-mail:
  *****
- * From: Russell King <rmk@arm.linux.org.uk>
+ * From: Russell King <rmk@arm.linaos.org.uk>
  * Date: Sun, 8 Dec 2002 10:18:38 +0000
  *
  * On Sun, Dec 08, 2002 at 02:43:36AM -0500, Pete Zaitcev wrote:

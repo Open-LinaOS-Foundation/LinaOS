@@ -33,8 +33,8 @@
 #ifndef __MLX5_MPFS_H__
 #define __MLX5_MPFS_H__
 
-#include <linux/if_ether.h>
-#include <linux/mlx5/device.h>
+#include <linaos/if_ether.h>
+#include <linaos/mlx5/device.h>
 
 /* L2 -mac address based- hash helpers */
 #define MLX5_L2_ADDR_HASH_SIZE (BIT(BITS_PER_BYTE))

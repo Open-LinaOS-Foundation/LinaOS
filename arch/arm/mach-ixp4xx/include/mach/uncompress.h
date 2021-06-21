@@ -11,7 +11,7 @@
 
 #include "ixp4xx-regs.h"
 #include <asm/mach-types.h>
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 
 #define TX_DONE (UART_LSR_TEMT|UART_LSR_THRE)
 

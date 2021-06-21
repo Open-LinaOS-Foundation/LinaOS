@@ -5,15 +5,15 @@
  * Copyright (c) 2015 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
-#include <linux/iio/sw_trigger.h>
-#include <linux/iio/configfs.h>
-#include <linux/configfs.h>
+#include <linaos/iio/sw_trigger.h>
+#include <linaos/iio/configfs.h>
+#include <linaos/configfs.h>
 
 static struct config_group *iio_triggers_group;
 static const struct config_item_type iio_trigger_type_group_type;

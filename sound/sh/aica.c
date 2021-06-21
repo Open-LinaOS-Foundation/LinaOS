@@ -4,22 +4,22 @@
 * Copyright Adrian McMenamin 2005, 2006, 2007
 * <adrian@mcmen.demon.co.uk>
 * Requires firmware (BSD licenced) available from:
-* http://linuxdc.cvs.sourceforge.net/linuxdc/linux-sh-dc/sound/oss/aica/firmware/
+* http://linaosdc.cvs.sourceforge.net/linaosdc/linaos-sh-dc/sound/oss/aica/firmware/
 * or the maintainer
 */
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/firmware.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/firmware.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

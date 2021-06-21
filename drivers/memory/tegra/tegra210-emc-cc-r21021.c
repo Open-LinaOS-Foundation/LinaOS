@@ -3,11 +3,11 @@
  * Copyright (c) 2014-2020, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
 
 #include <soc/tegra/mc.h>
 

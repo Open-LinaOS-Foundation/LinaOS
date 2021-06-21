@@ -2,7 +2,7 @@
 #ifndef _LINUX_SECCOMP_H
 #define _LINUX_SECCOMP_H
 
-#include <uapi/linux/seccomp.h>
+#include <uapi/linaos/seccomp.h>
 
 #define SECCOMP_FILTER_FLAG_MASK	(SECCOMP_FILTER_FLAG_TSYNC | \
 					 SECCOMP_FILTER_FLAG_LOG | \
@@ -16,8 +16,8 @@
 
 #ifdef CONFIG_SECCOMP
 
-#include <linux/thread_info.h>
-#include <linux/atomic.h>
+#include <linaos/thread_info.h>
+#include <linaos/atomic.h>
 #include <asm/seccomp.h>
 
 struct seccomp_filter;
@@ -60,7 +60,7 @@ static inline int seccomp_mode(struct seccomp *s)
 
 #else /* CONFIG_SECCOMP */
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 struct seccomp { };
 struct seccomp_filter { };

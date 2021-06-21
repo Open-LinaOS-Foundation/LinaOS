@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/file.c
+ *  linaos/fs/nfs/file.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -17,20 +17,20 @@
  *  nfs regular file handling functions
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
-#include <linux/swap.h>
+#include <linaos/module.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/fcntl.h>
+#include <linaos/stat.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/gfp.h>
+#include <linaos/swap.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "delegation.h"
 #include "internal.h"

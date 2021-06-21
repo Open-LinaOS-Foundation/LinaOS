@@ -13,8 +13,8 @@
 #ifndef __PINCTRL_SUNXI_H
 #define __PINCTRL_SUNXI_H
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
 
 #define PA_BASE	0
 #define PB_BASE	32

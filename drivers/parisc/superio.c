@@ -6,13 +6,13 @@
  *      denies any knowledge of its existence. Thus no datasheet is
  *      available off www.national.com. 
  *
- *	(C) Copyright 2000 Linuxcare, Inc.
- * 	(C) Copyright 2000 Linuxcare Canada, Inc.
- *	(C) Copyright 2000 Martin K. Petersen <mkp@linuxcare.com>
+ *	(C) Copyright 2000 LinaOScare, Inc.
+ * 	(C) Copyright 2000 LinaOScare Canada, Inc.
+ *	(C) Copyright 2000 Martin K. Petersen <mkp@linaoscare.com>
  * 	(C) Copyright 2000 Alex deVries <alex@onefishtwo.ca>
  *      (C) Copyright 2001 John Marvin <jsm fc hp com>
- *      (C) Copyright 2003 Grant Grundler <grundler parisc-linux org>
- *	(C) Copyright 2005 Kyle McMartin <kyle@parisc-linux.org>
+ *      (C) Copyright 2003 Grant Grundler <grundler parisc-linaos org>
+ *	(C) Copyright 2005 Kyle McMartin <kyle@parisc-linaos.org>
  *	(C) Copyright 2006 Helge Deller <deller@gmx.de>
  *
  *	The initial version of this is by Martin Peterson.  Alex deVries
@@ -23,7 +23,7 @@
  *      works with serial. -- John Marvin <jsm@fc.hp.com>
  *
  *	Converted superio_init() to be a PCI_FIXUP_FINAL callee.
- *         -- Kyle McMartin <kyle@parisc-linux.org>
+ *         -- Kyle McMartin <kyle@parisc-linaos.org>
  */
 
 
@@ -56,21 +56,21 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/serial.h>
-#include <linux/pci.h>
-#include <linux/parport.h>
-#include <linux/parport_pc.h>
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/serial.h>
+#include <linaos/pci.h>
+#include <linaos/parport.h>
+#include <linaos/parport_pc.h>
+#include <linaos/termios.h>
+#include <linaos/tty.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_8250.h>
+#include <linaos/delay.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

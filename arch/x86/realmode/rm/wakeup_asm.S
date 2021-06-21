@@ -2,7 +2,7 @@
 /*
  * ACPI wakeup real mode startup stub
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/segment.h>
 #include <asm/msr-index.h>
 #include <asm/page_types.h>

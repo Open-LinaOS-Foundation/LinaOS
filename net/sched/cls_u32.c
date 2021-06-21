@@ -23,22 +23,22 @@
  *	nfmark match added by Catalin(ux aka Dino) BOIE <catab at umbrella.ro>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/percpu.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/bitmap.h>
-#include <linux/netdevice.h>
-#include <linux/hash.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/percpu.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/skbuff.h>
+#include <linaos/bitmap.h>
+#include <linaos/netdevice.h>
+#include <linaos/hash.h>
 #include <net/netlink.h>
 #include <net/act_api.h>
 #include <net/pkt_cls.h>
-#include <linux/idr.h>
+#include <linaos/idr.h>
 
 struct tc_u_knode {
 	struct tc_u_knode __rcu	*next;

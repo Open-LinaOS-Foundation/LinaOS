@@ -8,7 +8,7 @@
 #define ARCH_X86_KERNEL_ACPI_RM_WAKEUP_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* This must match data at wakeup.S */
 struct wakeup_header {

@@ -8,10 +8,10 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/export.h>
+#include <linaos/bcma/bcma.h>
 
 #include "bcma_private.h"
 

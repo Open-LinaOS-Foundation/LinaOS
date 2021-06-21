@@ -5,11 +5,11 @@
  * Author: Kriston Carson
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/phy.h>
 
 /* Vitesse Extended Page Magic Register(s) */
 #define MII_VSC82X4_EXT_PAGE_16E	0x10

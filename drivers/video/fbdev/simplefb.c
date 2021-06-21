@@ -5,25 +5,25 @@
  * Copyright (c) 2013, Stephen Warren
  *
  * Based on q40fb.c, which was:
- * Copyright (C) 2001 Richard Zidlicky <rz@linux-m68k.org>
+ * Copyright (C) 2001 Richard Zidlicky <rz@linaos-m68k.org>
  *
  * Also based on offb.c, which was:
  * Copyright (C) 1997 Geert Uytterhoeven
  * Copyright (C) 1996 Paul Mackerras
  */
 
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_platform.h>
-#include <linux/parser.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/errno.h>
+#include <linaos/fb.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/simplefb.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_platform.h>
+#include <linaos/parser.h>
+#include <linaos/regulator/consumer.h>
 
 static const struct fb_fix_screeninfo simplefb_fix = {
 	.id		= "simple",

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/tgafb.h -- DEC 21030 TGA frame buffer device
+ *  linaos/drivers/video/tgafb.h -- DEC 21030 TGA frame buffer device
  *
  *  	Copyright (C) 1999,2000 Martin Lucina, Tom Zerucha
  *  

@@ -22,7 +22,7 @@
 
 #define SWSMU_CODE_LAYER_L3
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include "amdgpu.h"
 #include "amdgpu_smu.h"
 #include "atomfirmware.h"

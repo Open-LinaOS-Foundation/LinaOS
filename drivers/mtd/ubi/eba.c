@@ -28,9 +28,9 @@
  * 64 bits is enough to never overflow.
  */
 
-#include <linux/slab.h>
-#include <linux/crc32.h>
-#include <linux/err.h>
+#include <linaos/slab.h>
+#include <linaos/crc32.h>
+#include <linaos/err.h>
 #include "ubi.h"
 
 /* Number of physical eraseblocks reserved for atomic LEB change operation */

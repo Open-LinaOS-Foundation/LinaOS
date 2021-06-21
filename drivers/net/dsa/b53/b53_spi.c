@@ -18,11 +18,11 @@
 
 #include <asm/unaligned.h>
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/b53.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/platform_data/b53.h>
 
 #include "b53_priv.h"
 

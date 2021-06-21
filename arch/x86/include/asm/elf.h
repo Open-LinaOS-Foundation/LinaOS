@@ -5,7 +5,7 @@
 /*
  * ELF register definitions..
  */
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 
 #include <asm/ptrace.h>
 #include <asm/user.h>
@@ -377,12 +377,12 @@ else if (IS_ENABLED(CONFIG_IA32_EMULATION))				\
 	((unsigned long)current->mm->context.vdso +			\
 	 vdso_image_32.sym___kernel_vsyscall)
 
-struct linux_binprm;
+struct linaos_binprm;
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+extern int arch_setup_additional_pages(struct linaos_binprm *bprm,
 				       int uses_interp);
-extern int compat_arch_setup_additional_pages(struct linux_binprm *bprm,
+extern int compat_arch_setup_additional_pages(struct linaos_binprm *bprm,
 					      int uses_interp, bool x32);
 #define COMPAT_ARCH_SETUP_ADDITIONAL_PAGES(bprm, ex, interpreter)	\
 	compat_arch_setup_additional_pages(bprm, interpreter,		\

@@ -15,24 +15,24 @@
  * devices.
  *
  * In the medium- to long-term, this code should be implemented as a
- * proper omap_bus/omap_device in Linux, no more platform_data func
+ * proper omap_bus/omap_device in LinaOS, no more platform_data func
  * pointers
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/notifier.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/notifier.h>
 
 #include "common.h"
 #include "soc.h"

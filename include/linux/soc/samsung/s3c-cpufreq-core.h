@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (c) 2006-2009 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C CPU frequency scaling support - core support
@@ -9,7 +9,7 @@
 #ifndef __LINUX_SOC_SAMSUNG_S3C_CPUFREQ_CORE_H
 #define __LINUX_SOC_SAMSUNG_S3C_CPUFREQ_CORE_H
 
-#include <linux/soc/samsung/s3c-cpu-freq.h>
+#include <linaos/soc/samsung/s3c-cpu-freq.h>
 
 struct seq_file;
 

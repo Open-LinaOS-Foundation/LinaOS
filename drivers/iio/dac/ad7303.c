@@ -5,17 +5,17 @@
  * Copyright 2013 Analog Devices Inc.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define AD7303_CFG_EXTERNAL_VREF BIT(15)
 #define AD7303_CFG_POWER_DOWN(ch) BIT(11 + (ch))

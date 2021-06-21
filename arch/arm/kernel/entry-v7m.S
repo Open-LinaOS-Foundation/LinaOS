@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/arch/arm/kernel/entry-v7m.S
+ * linaos/arch/arm/kernel/entry-v7m.S
  *
  * Copyright (C) 2008 ARM Ltd.
  *

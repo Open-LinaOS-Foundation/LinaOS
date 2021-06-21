@@ -8,17 +8,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/mtd/platnand.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/host.h>
-#include <linux/platform_data/spi-ep93xx.h>
-#include <linux/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/flash.h>
+#include <linaos/spi/mmc_spi.h>
+#include <linaos/mmc/host.h>
+#include <linaos/platform_data/spi-ep93xx.h>
+#include <linaos/gpio/machine.h>
 
 #include "gpio-ep93xx.h"
 #include "hardware.h"
@@ -111,7 +111,7 @@ static struct mtd_partition ts72xx_nand_parts[] = {
 		.size		= TS72XX_BOOTROM_PART_SIZE,
 		.mask_flags	= MTD_WRITEABLE,	/* force read-only */
 	}, {
-		.name		= "Linux",
+		.name		= "LinaOS",
 		.offset		= MTDPART_OFS_RETAIN,
 		.size		= TS72XX_REDBOOT_PART_SIZE,
 				/* leave so much for last partition */

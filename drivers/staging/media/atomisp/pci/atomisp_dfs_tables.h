@@ -18,7 +18,7 @@
 #ifndef	__ATOMISP_DFS_TABLES_H__
 #define	__ATOMISP_DFS_TABLES_H__
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 struct atomisp_freq_scaling_rule {
 	unsigned int width;

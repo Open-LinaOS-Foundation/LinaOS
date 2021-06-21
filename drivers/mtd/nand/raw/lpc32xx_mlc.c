@@ -13,24 +13,24 @@
  * - Tested Page Sizes: 2048, 4096
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/mtd/lpc32xx_mlc.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/mtd/lpc32xx_mlc.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
 
 #define DRV_NAME "lpc32xx_mlc"
 

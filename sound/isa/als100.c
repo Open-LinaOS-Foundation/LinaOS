@@ -12,11 +12,11 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/wait.h>
+#include <linaos/time.h>
+#include <linaos/pnp.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/mpu401.h>

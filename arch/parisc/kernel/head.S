@@ -18,9 +18,9 @@
 	
 #include <asm/assembly.h>
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 
 	.level	PA_ASM_LEVEL
 

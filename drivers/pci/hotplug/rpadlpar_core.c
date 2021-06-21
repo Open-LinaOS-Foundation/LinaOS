@@ -13,17 +13,17 @@
 
 #undef DEBUG
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/pci-bridge.h>
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include <asm/rtas.h>
 #include <asm/vio.h>
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include "../pci.h"
 #include "rpaphp.h"

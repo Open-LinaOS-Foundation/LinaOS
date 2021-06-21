@@ -26,19 +26,19 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mman.h>
-#include <linux/pci.h>
-#include <linux/miscdevice.h>
-#include <linux/agp_backend.h>
-#include <linux/agpgart.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mman.h>
+#include <linaos/pci.h>
+#include <linaos/miscdevice.h>
+#include <linaos/agp_backend.h>
+#include <linaos/agpgart.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
 #include "agp.h"
 
 struct agp_front_data agp_fe;

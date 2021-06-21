@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * LinaOS driver for TerraTec DMX 6Fire USB
  *
  * Author:	Torsten Schenk <torsten.schenk@zoho.com>
  * Created:	Jan 01, 2011
@@ -10,8 +10,8 @@
 #ifndef USB6FIRE_COMMON_H
 #define USB6FIRE_COMMON_H
 
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 #include <sound/core.h>
 
 #define PREFIX "6fire: "

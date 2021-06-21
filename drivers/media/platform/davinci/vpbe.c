@@ -2,19 +2,19 @@
 /*
  * Copyright (C) 2010 Texas Instruments Inc
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/wait.h>
+#include <linaos/time.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
 
 #include <media/v4l2-device.h>
 #include <media/davinci/vpbe_types.h>

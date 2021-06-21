@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /* Copyright 2017-2019 Qiang Yu <yuq825@gmail.com> */
 
-#include <linux/dma-buf-map.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pm_runtime.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pm_runtime.h>
 
 #include "lima_devfreq.h"
 #include "lima_drv.h"

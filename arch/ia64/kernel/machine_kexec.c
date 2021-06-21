@@ -2,19 +2,19 @@
 /*
  * arch/ia64/kernel/machine_kexec.c
  *
- * Handle transition of Linux booting another kernel
+ * Handle transition of LinaOS booting another kernel
  * Copyright (C) 2005 Hewlett-Packard Development Comapny, L.P.
  * Copyright (C) 2005 Khalid Aziz <khalid.aziz@hp.com>
  * Copyright (C) 2006 Intel Corp, Zou Nan hai <nanhai.zou@intel.com>
  */
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
-#include <linux/efi.h>
-#include <linux/numa.h>
-#include <linux/mmzone.h>
+#include <linaos/mm.h>
+#include <linaos/kexec.h>
+#include <linaos/cpu.h>
+#include <linaos/irq.h>
+#include <linaos/efi.h>
+#include <linaos/numa.h>
+#include <linaos/mmzone.h>
 
 #include <asm/efi.h>
 #include <asm/numa.h>

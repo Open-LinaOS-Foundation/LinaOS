@@ -7,39 +7,39 @@
  *  Paul Mackerras (paulus@cs.anu.edu.au)
  *
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/prctl.h>
-#include <linux/init_task.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/mqueue.h>
-#include <linux/hardirq.h>
-#include <linux/utsname.h>
-#include <linux/ftrace.h>
-#include <linux/kernel_stat.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/uaccess.h>
-#include <linux/elf-randomize.h>
-#include <linux/pkeys.h>
-#include <linux/seq_buf.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/user.h>
+#include <linaos/elf.h>
+#include <linaos/prctl.h>
+#include <linaos/init_task.h>
+#include <linaos/export.h>
+#include <linaos/kallsyms.h>
+#include <linaos/mqueue.h>
+#include <linaos/hardirq.h>
+#include <linaos/utsname.h>
+#include <linaos/ftrace.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/personality.h>
+#include <linaos/random.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/uaccess.h>
+#include <linaos/elf-randomize.h>
+#include <linaos/pkeys.h>
+#include <linaos/seq_buf.h>
 
 #include <asm/interrupt.h>
 #include <asm/io.h>
@@ -65,8 +65,8 @@
 #include <asm/stacktrace.h>
 #include <asm/hw_breakpoint.h>
 
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
+#include <linaos/kprobes.h>
+#include <linaos/kdebug.h>
 
 /* Transactional Memory debug */
 #ifdef TM_DEBUG_SW

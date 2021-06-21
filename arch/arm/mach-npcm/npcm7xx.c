@@ -2,8 +2,8 @@
 // Copyright (c) 2018 Nuvoton Technology corporation.
 // Copyright 2018 Google, Inc.
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>
 #include <asm/mach/map.h>

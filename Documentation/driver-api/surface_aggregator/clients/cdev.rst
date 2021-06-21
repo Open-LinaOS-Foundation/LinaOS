@@ -18,10 +18,10 @@ module is not loaded automatically, but instead must be loaded manually.
 The provided interface is accessible through the ``/dev/surface/aggregator``
 device-file. All functionality of this interface is provided via IOCTLs.
 These IOCTLs and their respective input/output parameter structs are defined in
-``include/uapi/linux/surface_aggregator/cdev.h``.
+``include/uapi/linaos/surface_aggregator/cdev.h``.
 
 A small python library and scripts for accessing this interface can be found
-at https://github.com/linux-surface/surface-aggregator-module/tree/master/scripts/ssam.
+at https://github.com/linaos-surface/surface-aggregator-module/tree/master/scripts/ssam.
 
 
 Controller IOCTLs
@@ -84,4 +84,4 @@ case the actual execution of the request failed after it has been submitted.
 
 A full definition of the argument struct is provided below:
 
-.. kernel-doc:: include/uapi/linux/surface_aggregator/cdev.h
+.. kernel-doc:: include/uapi/linaos/surface_aggregator/cdev.h

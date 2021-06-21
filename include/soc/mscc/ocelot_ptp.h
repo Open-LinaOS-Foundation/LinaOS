@@ -10,7 +10,7 @@
 #ifndef _MSCC_OCELOT_PTP_H_
 #define _MSCC_OCELOT_PTP_H_
 
-#include <linux/ptp_clock_kernel.h>
+#include <linaos/ptp_clock_kernel.h>
 #include <soc/mscc/ocelot.h>
 
 #define PTP_PIN_CFG_RSZ			0x20

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /*
  * nilfs2_ondisk.h - NILFS2 on-disk structures
  *
@@ -10,7 +10,7 @@
  * (at your option) any later version.
  */
 /*
- *  linux/include/linux/ext2_fs.h
+ *  linaos/include/linaos/ext2_fs.h
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -19,7 +19,7 @@
  *
  *  from
  *
- *  linux/include/linux/minix_fs.h
+ *  linaos/include/linaos/minix_fs.h
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -27,8 +27,8 @@
 #ifndef _LINUX_NILFS2_ONDISK_H
 #define _LINUX_NILFS2_ONDISK_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <linaos/types.h>
+#include <linaos/magic.h>
 #include <asm/byteorder.h>
 
 #define NILFS_INODE_BMAP_SIZE	7

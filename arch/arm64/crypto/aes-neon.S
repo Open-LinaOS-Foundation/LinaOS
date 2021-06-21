@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/arch/arm64/crypto/aes-neon.S - AES cipher for ARMv8 NEON
+ * linaos/arch/arm64/crypto/aes-neon.S - AES cipher for ARMv8 NEON
  *
  * Copyright (C) 2013 - 2017 Linaro Ltd. <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 #define AES_FUNC_START(func)		SYM_FUNC_START(neon_ ## func)

@@ -13,12 +13,12 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/platform_device.h>
+#include <linaos/firmware.h>
+#include <linaos/delay.h>
 #include <sound/pcm.h>
 #include <sound/soc-acpi.h>
 #include <sound/soc-acpi-intel-match.h>

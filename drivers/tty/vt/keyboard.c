@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Written for linux by Johan Myreen as a translation from
+ * Written for linaos by Johan Myreen as a translation from
  * the assembly version by Linus (with diacriticals added)
  *
  * Some additional features added by Christoph Niemann (ChN), March 1993
@@ -25,27 +25,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/consolemap.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/kbd_diacr.h>
-#include <linux/kbd_kern.h>
-#include <linux/leds.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tty_flip.h>
-#include <linux/tty.h>
-#include <linux/uaccess.h>
-#include <linux/vt_kern.h>
+#include <linaos/consolemap.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/jiffies.h>
+#include <linaos/kbd_diacr.h>
+#include <linaos/kbd_kern.h>
+#include <linaos/leds.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/nospec.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/tty_flip.h>
+#include <linaos/tty.h>
+#include <linaos/uaccess.h>
+#include <linaos/vt_kern.h>
 
 #include <asm/irq_regs.h>
 

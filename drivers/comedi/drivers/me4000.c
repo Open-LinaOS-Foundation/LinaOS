@@ -3,7 +3,7 @@
  * me4000.c
  * Source code for the Meilhaus ME-4000 board family.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -29,9 +29,9 @@
  * https://www.comedi.org.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 
 #include "../comedi_pci.h"
 

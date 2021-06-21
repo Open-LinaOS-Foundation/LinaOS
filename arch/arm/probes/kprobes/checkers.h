@@ -7,8 +7,8 @@
 #ifndef _ARM_KERNEL_PROBES_CHECKERS_H
 #define _ARM_KERNEL_PROBES_CHECKERS_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 #include "../decode.h"
 
 extern probes_check_t checker_stack_use_none;

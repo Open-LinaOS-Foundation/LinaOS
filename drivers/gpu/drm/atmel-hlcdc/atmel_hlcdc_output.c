@@ -8,8 +8,8 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/media-bus-format.h>
-#include <linux/of_graph.h>
+#include <linaos/media-bus-format.h>
+#include <linaos/of_graph.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_encoder.h>

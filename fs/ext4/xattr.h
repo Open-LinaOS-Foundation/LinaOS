@@ -7,7 +7,7 @@
   (C) 2001 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
 
-#include <linux/xattr.h>
+#include <linaos/xattr.h>
 
 /* Magic value in attribute blocks */
 #define EXT4_XATTR_MAGIC		0xEA020000
@@ -76,7 +76,7 @@ struct ext4_xattr_entry {
  * This allows XATTR_SIZE_MAX to grow in the future, but by using this
  * instead of INT_MAX for certain consistency checks, we don't need to
  * worry about arithmetic overflows.  (Actually XATTR_SIZE_MAX is
- * defined in include/uapi/linux/limits.h, so changing it is going
+ * defined in include/uapi/linaos/limits.h, so changing it is going
  * not going to be trivial....)
  */
 #define EXT4_XATTR_SIZE_MAX (1 << 24)

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_VMCORE_H
 #define _UAPI_VMCORE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define VMCOREDD_NOTE_NAME "LINUX"
 #define VMCOREDD_MAX_NAME_BYTES 44

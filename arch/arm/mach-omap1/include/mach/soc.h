@@ -20,7 +20,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /*
  * Test if multicore OMAP support is needed

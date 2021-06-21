@@ -33,9 +33,9 @@
 #ifndef MLX5_DEVICE_H
 #define MLX5_DEVICE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <rdma/ib_verbs.h>
-#include <linux/mlx5/mlx5_ifc.h>
+#include <linaos/mlx5/mlx5_ifc.h>
 
 #if defined(__LITTLE_ENDIAN)
 #define MLX5_SET_HOST_ENDIANNESS	0

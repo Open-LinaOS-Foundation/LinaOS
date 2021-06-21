@@ -4,16 +4,16 @@
  */
 
 /*
- * XT keyboard driver for Linux
+ * XT keyboard driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"XT keyboard driver"
 

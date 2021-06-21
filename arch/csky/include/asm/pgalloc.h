@@ -3,9 +3,9 @@
 #ifndef __ASM_CSKY_PGALLOC_H
 #define __ASM_CSKY_PGALLOC_H
 
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <linaos/highmem.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
 
 #define __HAVE_ARCH_PTE_ALLOC_ONE_KERNEL
 #include <asm-generic/pgalloc.h>

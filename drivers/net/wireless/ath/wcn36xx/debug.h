@@ -17,7 +17,7 @@
 #ifndef _WCN36XX_DEBUG_H_
 #define _WCN36XX_DEBUG_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define WCN36xx_MAX_DUMP_ARGS	5
 

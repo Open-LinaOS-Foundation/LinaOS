@@ -9,8 +9,8 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/bsg-lib.h>
+#include <linaos/kernel.h>
+#include <linaos/bsg-lib.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_transport_sas.h>

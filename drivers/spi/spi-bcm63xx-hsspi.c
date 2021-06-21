@@ -7,21 +7,21 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/reset.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/spi/spi.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/reset.h>
+#include <linaos/pm_runtime.h>
 
 #define HSSPI_GLOBAL_CTRL_REG			0x0
 #define GLOBAL_CTRL_CS_POLARITY_SHIFT		0

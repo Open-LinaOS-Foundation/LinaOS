@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Kang Luwei <luwei.kang@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  *   Wu Hao <hao.wu@intel.com>
  *   Xu Yilun <yilun.xu@intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
@@ -16,7 +16,7 @@
  *   Mitchel, Henry <henry.mitchel@intel.com>
  */
 
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include "dfl.h"
 #include "dfl-fme.h"
 

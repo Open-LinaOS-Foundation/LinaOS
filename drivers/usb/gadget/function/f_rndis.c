@@ -11,13 +11,13 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/etherdevice.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "u_ether.h"
 #include "u_ether_configfs.h"
@@ -32,7 +32,7 @@
  * ActiveSync have even worse status in terms of specification.
  *
  * In short:  it's a protocol controlled by (and for) Microsoft, not for an
- * Open ecosystem or markets.  Linux supports it *only* because Microsoft
+ * Open ecosystem or markets.  LinaOS supports it *only* because Microsoft
  * doesn't support the CDC Ethernet standard.
  *
  * The RNDIS data transfer model is complex, with multiple Ethernet packets
@@ -52,7 +52,7 @@
  * Unfortunately MSFT's RNDIS drivers are buggy.  They hang or oops, and
  * have all sorts of contrary-to-specification oddities that can prevent
  * them from working sanely.  Since bugfixes (or accurate specs, letting
- * Linux work around those bugs) are unlikely to ever come from MSFT, you
+ * LinaOS work around those bugs) are unlikely to ever come from MSFT, you
  * may want to avoid using RNDIS on purely operational grounds.
  *
  * Omissions from the RNDIS 1.0 specification include:

@@ -12,27 +12,27 @@
 #define DRVNAME					PMUNAME "_pmu"
 #define pr_fmt(fmt)				DRVNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/capability.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/perf_event.h>
-#include <linux/perf/arm_pmu.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/vmalloc.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/capability.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/cpumask.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/perf_event.h>
+#include <linaos/perf/arm_pmu.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/barrier.h>
 #include <asm/cpufeature.h>

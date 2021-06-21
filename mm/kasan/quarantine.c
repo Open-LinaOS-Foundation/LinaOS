@@ -8,18 +8,18 @@
  * Based on code by Dmitry Chernenkov.
  */
 
-#include <linux/gfp.h>
-#include <linux/hash.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/printk.h>
-#include <linux/shrinker.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/cpuhotplug.h>
+#include <linaos/gfp.h>
+#include <linaos/hash.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/percpu.h>
+#include <linaos/printk.h>
+#include <linaos/shrinker.h>
+#include <linaos/slab.h>
+#include <linaos/srcu.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/cpuhotplug.h>
 
 #include "../slab.h"
 #include "kasan.h"

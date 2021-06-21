@@ -3,23 +3,23 @@
 .. _networking-filter:
 
 =======================================================
-Linux Socket Filtering aka Berkeley Packet Filter (BPF)
+LinaOS Socket Filtering aka Berkeley Packet Filter (BPF)
 =======================================================
 
 Introduction
 ------------
 
-Linux Socket Filtering (LSF) is derived from the Berkeley Packet Filter.
-Though there are some distinct differences between the BSD and Linux
-Kernel filtering, but when we speak of BPF or LSF in Linux context, we
-mean the very same mechanism of filtering in the Linux kernel.
+LinaOS Socket Filtering (LSF) is derived from the Berkeley Packet Filter.
+Though there are some distinct differences between the BSD and LinaOS
+Kernel filtering, but when we speak of BPF or LSF in LinaOS context, we
+mean the very same mechanism of filtering in the LinaOS kernel.
 
 BPF allows a user-space program to attach a filter onto any socket and
 allow or disallow certain types of data to come through the socket. LSF
 follows exactly the same filter code structure as BSD's BPF, so referring
 to the BSD bpf.4 manpage is very helpful in creating filters.
 
-On Linux, BPF is much simpler than on BSD. One does not have to worry
+On LinaOS, BPF is much simpler than on BSD. One does not have to worry
 about devices or anything like that. You simply create your filter code,
 send it to the kernel via the SO_ATTACH_FILTER option and if your filter
 code passes the kernel check on it, you then immediately begin filtering
@@ -45,7 +45,7 @@ internal compiler that generates a structure that can eventually be loaded
 via SO_ATTACH_FILTER to the kernel. `tcpdump -i em1 port 22 -ddd`
 displays what is being placed into this structure.
 
-Although we were only speaking about sockets here, BPF in Linux is used
+Although we were only speaking about sockets here, BPF in LinaOS is used
 in many more places. There's xt_bpf for netfilter, cls_bpf in the kernel
 qdisc layer, SECCOMP-BPF (SECure COMPuting [1]_), and lots of other places
 such as team driver, PTP code, etc where BPF is being used.
@@ -63,7 +63,7 @@ CA, USA, 2-2. [http://www.tcpdump.org/papers/bpf-usenix93.pdf]
 Structure
 ---------
 
-User space applications include <linux/filter.h> which contains the
+User space applications include <linaos/filter.h> which contains the
 following relevant structures::
 
 	struct sock_filter {	/* Filter block */
@@ -93,7 +93,7 @@ Example
     #include <sys/socket.h>
     #include <sys/types.h>
     #include <arpa/inet.h>
-    #include <linux/if_ether.h>
+    #include <linaos/if_ether.h>
     /* ... */
 
     /* From the example above: tcpdump -i em1 port 22 -dd */
@@ -162,7 +162,7 @@ covered by libpcap in high-level syntax, so as an application developer
 you should stick to that. libpcap wraps its own layer around all that.
 
 Unless i) using/linking to libpcap is not an option, ii) the required BPF
-filters use Linux extensions that are not supported by libpcap's compiler,
+filters use LinaOS extensions that are not supported by libpcap's compiler,
 iii) a filter might be more complex and not cleanly implementable with
 libpcap's compiler, or iv) particular filter codes should be optimized
 differently than libpcap's internal compiler does; then in such cases
@@ -208,7 +208,7 @@ ways depending on the given instruction in op.
 The instruction set consists of load, store, branch, alu, miscellaneous
 and return instructions that are also represented in bpf_asm syntax. This
 table lists all bpf_asm instructions available resp. what their underlying
-opcodes as defined in linux/filter.h stand for:
+opcodes as defined in linaos/filter.h stand for:
 
   ===========      ===================  =====================
   Instruction      Addressing mode      Description
@@ -273,7 +273,7 @@ The next table shows addressing formats from the 2nd column:
   12               extension            BPF extension
   ===============  ===================  ===============================================
 
-The Linux kernel also has a couple of BPF extensions that are used along
+The LinaOS kernel also has a couple of BPF extensions that are used along
 with the class of load instructions by "overloading" the k argument with
 a negative offset + a particular extension offset. The result of such BPF
 extensions are loaded into A.
@@ -496,7 +496,7 @@ bpf passes:1 fails:9
 JIT compiler
 ------------
 
-The Linux kernel has a built-in BPF JIT compiler for x86_64, SPARC,
+The LinaOS kernel has a built-in BPF JIT compiler for x86_64, SPARC,
 PowerPC, ARM, ARM64, MIPS, RISC-V and s390 and can be enabled through
 CONFIG_BPF_JIT. The JIT compiler is transparently invoked for each
 attached filter from user space or for internal kernel users if it has
@@ -1207,7 +1207,7 @@ Register value tracking
 -----------------------
 In order to determine the safety of an eBPF program, the verifier must track
 the range of possible values in each register and also in each stack slot.
-This is done with ``struct bpf_reg_state``, defined in include/linux/
+This is done with ``struct bpf_reg_state``, defined in include/linaos/
 bpf_verifier.h, which unifies tracking of scalar and pointer values.  Each
 register state has a type, which is either NOT_INIT (the register has not been
 written to), SCALAR_VALUE (some value which is not usable as a pointer), or a
@@ -1679,7 +1679,7 @@ including timings in nsec can be found in the kernel log (dmesg).
 Misc
 ----
 
-Also trinity, the Linux syscall fuzzer, has built-in support for BPF and
+Also trinity, the LinaOS syscall fuzzer, has built-in support for BPF and
 SECCOMP-BPF kernel fuzzing.
 
 Written by

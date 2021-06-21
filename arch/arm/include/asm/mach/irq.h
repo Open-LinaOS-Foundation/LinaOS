@@ -7,7 +7,7 @@
 #ifndef __ASM_ARM_MACH_IRQ_H
 #define __ASM_ARM_MACH_IRQ_H
 
-#include <linux/irq.h>
+#include <linaos/irq.h>
 
 struct seq_file;
 

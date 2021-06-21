@@ -6,9 +6,9 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/smp.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/smp.h>
 #include <asm/bootinfo.h>
 #include <asm/bmips.h>
 #include <asm/smp-ops.h>

@@ -18,8 +18,8 @@
 
 #include <xen/interface/xen.h>
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 
 /*
  * Enable events.  This clears the event mask and tests the pending

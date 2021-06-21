@@ -8,11 +8,11 @@
 #ifndef _LINUX_DEVICE_MAPPER_H
 #define _LINUX_DEVICE_MAPPER_H
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/dm-ioctl.h>
-#include <linux/math64.h>
-#include <linux/ratelimit.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/dm-ioctl.h>
+#include <linaos/math64.h>
+#include <linaos/ratelimit.h>
 
 struct dm_dev;
 struct dm_target;

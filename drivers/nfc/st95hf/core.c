@@ -6,20 +6,20 @@
  * Copyright (C) 2015 STMicroelectronics Pvt. Ltd. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/nfc.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/wait.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/nfc.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/wait.h>
 #include <net/nfc/digital.h>
 #include <net/nfc/nfc.h>
 

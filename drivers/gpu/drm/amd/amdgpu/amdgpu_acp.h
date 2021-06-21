@@ -26,7 +26,7 @@
 #ifndef __AMDGPU_ACP_H__
 #define __AMDGPU_ACP_H__
 
-#include <linux/mfd/core.h>
+#include <linaos/mfd/core.h>
 
 struct amdgpu_acp {
 	struct device *parent;

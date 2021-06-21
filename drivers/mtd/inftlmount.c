@@ -10,16 +10,16 @@
  * Copyright © 2000 Netgem S.A.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <asm/errno.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nftl.h>
-#include <linux/mtd/inftl.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/nftl.h>
+#include <linaos/mtd/inftl.h>
 
 /*
  * find_boot_record: Find the INFTL Media Header and its Spare copy which

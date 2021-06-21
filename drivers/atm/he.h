@@ -2,7 +2,7 @@
 
   he.h
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on LinaOS
   Copyright (C) 1999-2001  Naval Research Laboratory
 
   This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@
 
   he.h
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on LinaOS
   Copyright (C) 1999-2000  Naval Research Laboratory
 
   Permission to use, copy, modify and distribute this software and its
@@ -128,7 +128,7 @@ struct he_tpd {
 #define address0 iovec[0].addr
 #define length0 iovec[0].len
 
-	/* linux-atm extensions */
+	/* linaos-atm extensions */
 
 	struct sk_buff *skb;
 	struct atm_vcc *vcc;
@@ -415,7 +415,7 @@ struct he_vcc
 #define  IRQ_SIZE(x)		(x<<22)
 #define  IRQ_THRESH(x)		(x<<12)
 #define  IRQ_HEAD(x)		(x<<2)
-/* #define  IRQ_PENDING		(1) 		conflict with linux/irq.h */
+/* #define  IRQ_PENDING		(1) 		conflict with linaos/irq.h */
 #define IRQ0_CNTL	0x80088
 #define  IRQ_ADDRSEL(x)		(x<<2)
 #define  IRQ_INT_A		(0<<2)

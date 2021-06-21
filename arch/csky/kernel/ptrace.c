@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/audit.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
-#include <linux/user.h>
+#include <linaos/audit.h>
+#include <linaos/elf.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/ptrace.h>
+#include <linaos/regset.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/signal.h>
+#include <linaos/smp.h>
+#include <linaos/tracehook.h>
+#include <linaos/uaccess.h>
+#include <linaos/user.h>
 
 #include <asm/thread_info.h>
 #include <asm/page.h>

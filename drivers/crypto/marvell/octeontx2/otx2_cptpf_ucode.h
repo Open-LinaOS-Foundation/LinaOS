@@ -5,9 +5,9 @@
 #ifndef __OTX2_CPTPF_UCODE_H
 #define __OTX2_CPTPF_UCODE_H
 
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
 #include "otx2_cpt_hw_types.h"
 #include "otx2_cpt_common.h"
 

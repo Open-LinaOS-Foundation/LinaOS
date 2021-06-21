@@ -18,7 +18,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -38,20 +38,20 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <crypto/hash.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/sched/signal.h>
-#include <linux/ip.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/compat.h>
-#include <linux/rhashtable.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
+#include <linaos/time.h>
+#include <linaos/sched/signal.h>
+#include <linaos/ip.h>
+#include <linaos/capability.h>
+#include <linaos/fcntl.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/compat.h>
+#include <linaos/rhashtable.h>
 
 #include <net/ip.h>
 #include <net/icmp.h>
@@ -60,8 +60,8 @@
 #include <net/inet_common.h>
 #include <net/busy_poll.h>
 
-#include <linux/socket.h> /* for sa_family_t */
-#include <linux/export.h>
+#include <linaos/socket.h> /* for sa_family_t */
+#include <linaos/export.h>
 #include <net/sock.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

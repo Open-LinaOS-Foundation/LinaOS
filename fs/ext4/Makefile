@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux ext4-filesystem routines.
+# Makefile for the linaos ext4-filesystem routines.
 #
 
 obj-$(CONFIG_EXT4_FS) += ext4.o

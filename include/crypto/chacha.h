@@ -16,7 +16,7 @@
 #define _CRYPTO_CHACHA_H
 
 #include <asm/unaligned.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* 32-bit stream position, then 96-bit nonce (RFC7539 convention) */
 #define CHACHA_IV_SIZE		16

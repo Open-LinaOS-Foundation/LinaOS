@@ -6,10 +6,10 @@
  * Copyright (C) 2019 Renesas Electronics Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
 #include "common.h"
 #include "rza.h"
 

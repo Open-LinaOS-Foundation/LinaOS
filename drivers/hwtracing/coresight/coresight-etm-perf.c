@@ -4,19 +4,19 @@
  * Author: Mathieu Poirier <mathieu.poirier@linaro.org>
  */
 
-#include <linux/coresight.h>
-#include <linux/coresight-pmu.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/perf_event.h>
-#include <linux/percpu-defs.h>
-#include <linux/slab.h>
-#include <linux/stringhash.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/coresight.h>
+#include <linaos/coresight-pmu.h>
+#include <linaos/cpumask.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/perf_event.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/slab.h>
+#include <linaos/stringhash.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 #include "coresight-etm-perf.h"
 #include "coresight-priv.h"

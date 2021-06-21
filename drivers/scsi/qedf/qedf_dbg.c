@@ -4,7 +4,7 @@
  *  Copyright (c) 2016-2018 Cavium Inc.
  */
 #include "qedf_dbg.h"
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 void
 qedf_dbg_err(struct qedf_dbg_ctx *qedf, const char *func, u32 line,

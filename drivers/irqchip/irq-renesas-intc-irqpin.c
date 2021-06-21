@@ -5,20 +5,20 @@
  *  Copyright (C) 2013 Magnus Damm
  */
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
 
 #define INTC_IRQPIN_MAX 8 /* maximum 8 interrupts per driver instance */
 

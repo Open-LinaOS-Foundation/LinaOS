@@ -2,10 +2,10 @@
 #ifndef __TOOLS_LINUX_LIST_H
 #define __TOOLS_LINUX_LIST_H
 
-#include <linux/types.h>
-#include <linux/poison.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/poison.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
 
 /*
  * Simple doubly linked list implementation.

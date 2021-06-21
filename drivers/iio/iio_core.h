@@ -9,8 +9,8 @@
 
 #ifndef _IIO_CORE_H_
 #define _IIO_CORE_H_
-#include <linux/kernel.h>
-#include <linux/device.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
 
 struct iio_buffer;
 struct iio_chan_spec;

@@ -33,7 +33,7 @@ LED sub-node properties:
 	see dt-bindings/leds/leds-pca955x.h (default to LED)
 - label : (optional)
 	see Documentation/devicetree/bindings/leds/common.txt
-- linux,default-trigger : (optional)
+- linaos,default-trigger : (optional)
 	see Documentation/devicetree/bindings/leds/common.txt
 
 Examples:
@@ -67,7 +67,7 @@ pca9552: pca9552@60 {
 
 	led@0 {
 		label = "red:power";
-		linux,default-trigger = "default-on";
+		linaos,default-trigger = "default-on";
 		reg = <0>;
 		type = <PCA955X_TYPE_LED>;
 	};

@@ -10,11 +10,11 @@
 
 #define pr_fmt(fmt) "mvebu-cpureset: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/resource.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
+#include <linaos/resource.h>
 
 #include "common.h"
 

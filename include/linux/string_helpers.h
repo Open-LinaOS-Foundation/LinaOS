@@ -2,8 +2,8 @@
 #ifndef _LINUX_STRING_HELPERS_H_
 #define _LINUX_STRING_HELPERS_H_
 
-#include <linux/ctype.h>
-#include <linux/types.h>
+#include <linaos/ctype.h>
+#include <linaos/types.h>
 
 struct file;
 struct task_struct;

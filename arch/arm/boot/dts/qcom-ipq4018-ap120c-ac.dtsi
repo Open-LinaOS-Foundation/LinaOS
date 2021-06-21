@@ -14,7 +14,7 @@
 		reset {
 			label = "reset";
 			gpios = <&tlmm 63 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 		};
 	};
 };

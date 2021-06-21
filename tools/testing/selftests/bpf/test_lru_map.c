@@ -19,7 +19,7 @@
 
 #include "bpf_util.h"
 #include "bpf_rlimit.h"
-#include "../../../include/linux/filter.h"
+#include "../../../include/linaos/filter.h"
 
 #define LOCAL_FREE_TARGET	(128)
 #define PERCPU_FREE_TARGET	(4)

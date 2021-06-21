@@ -3,11 +3,11 @@
 // Copyright (c) 2018 BayLibre, SAS.
 // Author: Jerome Brunet <jbrunet@baylibre.com>
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 #include <sound/soc.h>
 
 #include "axg-tdm-formatter.h"

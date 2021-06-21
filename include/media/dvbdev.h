@@ -19,10 +19,10 @@
 #ifndef _DVBDEV_H_
 #define _DVBDEV_H_
 
-#include <linux/types.h>
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/poll.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
 #include <media/media-device.h>
 
 #define DVB_MAJOR 212
@@ -76,7 +76,7 @@ enum dvb_device_type {
 struct dvb_frontend;
 
 /**
- * struct dvb_adapter - represents a Digital TV adapter using Linux DVB API
+ * struct dvb_adapter - represents a Digital TV adapter using LinaOS DVB API
  *
  * @num:		Number of the adapter
  * @list_head:		List with the DVB adapters

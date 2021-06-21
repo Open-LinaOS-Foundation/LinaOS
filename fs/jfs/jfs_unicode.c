@@ -3,8 +3,8 @@
  *   Copyright (C) International Business Machines Corp., 2000-2004
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
 #include "jfs_incore.h"
 #include "jfs_filsys.h"
 #include "jfs_unicode.h"

@@ -3,12 +3,12 @@
  * CHRP pci routines.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

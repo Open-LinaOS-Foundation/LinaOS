@@ -6,18 +6,18 @@
  * Copyright (C) 2016 ROCKCHIP, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 /*
  * The higher 16-bit of this register is used for write protection

@@ -3,8 +3,8 @@
 #define __SPARC_SIGNAL_H
 
 #ifndef __ASSEMBLY__
-#include <linux/personality.h>
-#include <linux/types.h>
+#include <linaos/personality.h>
+#include <linaos/types.h>
 #endif
 #include <uapi/asm/signal.h>
 

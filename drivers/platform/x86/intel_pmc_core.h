@@ -12,7 +12,7 @@
 #ifndef PMC_CORE_H
 #define PMC_CORE_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 #define PMC_BASE_ADDR_DEFAULT			0xFE000000
 

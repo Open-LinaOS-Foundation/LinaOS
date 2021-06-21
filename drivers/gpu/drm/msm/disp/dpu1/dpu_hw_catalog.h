@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DPU_HW_CATALOG_H
 #define _DPU_HW_CATALOG_H
 
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/bug.h>
+#include <linaos/bitmap.h>
+#include <linaos/err.h>
 
 /**
  * Max hardware block count: For ex: max 12 SSPP pipes or

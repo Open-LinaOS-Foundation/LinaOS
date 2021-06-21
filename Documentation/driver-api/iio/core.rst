@@ -60,7 +60,7 @@ Common attributes are:
 * :file:`sampling_frequency_available`, available discrete set of sampling
   frequency values for device.
 * Available standard attributes for IIO devices are described in the
-  :file:`Documentation/ABI/testing/sysfs-bus-iio` file in the Linux kernel
+  :file:`Documentation/ABI/testing/sysfs-bus-iio` file in the LinaOS kernel
   sources.
 
 IIO device channels
@@ -177,6 +177,6 @@ This will generate two separate attributes files for raw data retrieval:
 
 More details
 ============
-.. kernel-doc:: include/linux/iio/iio.h
+.. kernel-doc:: include/linaos/iio/iio.h
 .. kernel-doc:: drivers/iio/industrialio-core.c
    :export:

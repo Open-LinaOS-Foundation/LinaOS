@@ -64,15 +64,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 #include <asm/io.h>
 
 #include <video/tdfx.h>

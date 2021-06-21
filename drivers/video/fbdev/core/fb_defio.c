@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fb_defio.c
+ *  linaos/drivers/video/fb_defio.c
  *
  *  Copyright (C) 2006 Jaya Kumar
  *
@@ -8,20 +8,20 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/list.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/list.h>
 
 /* to support deferred IO */
-#include <linux/rmap.h>
-#include <linux/pagemap.h>
+#include <linaos/rmap.h>
+#include <linaos/pagemap.h>
 
 static struct page *fb_deferred_io_page(struct fb_info *info, unsigned long offs)
 {

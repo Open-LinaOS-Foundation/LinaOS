@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/dcache.h>
-#include <linux/path.h>
-#include <linux/fdtable.h>
-#include <linux/namei.h>
-#include <linux/pid.h>
-#include <linux/security.h>
-#include <linux/file.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
+#include <linaos/sched/signal.h>
+#include <linaos/errno.h>
+#include <linaos/dcache.h>
+#include <linaos/path.h>
+#include <linaos/fdtable.h>
+#include <linaos/namei.h>
+#include <linaos/pid.h>
+#include <linaos/security.h>
+#include <linaos/file.h>
+#include <linaos/seq_file.h>
+#include <linaos/fs.h>
 
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 
 #include "../mount.h"
 #include "internal.h"

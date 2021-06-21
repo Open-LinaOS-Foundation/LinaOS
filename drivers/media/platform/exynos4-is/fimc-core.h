@@ -8,15 +8,15 @@
 
 /*#define DEBUG*/
 
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mfd/syscon.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
+#include <linaos/io.h>
+#include <linaos/sizes.h>
 
 #include <media/media-entity.h>
 #include <media/videobuf2-v4l2.h>

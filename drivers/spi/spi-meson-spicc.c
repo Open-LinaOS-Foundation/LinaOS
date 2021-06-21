@@ -7,20 +7,20 @@
  * SPDX-License-Identifier: GPL-2.0+
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/reset.h>
 
 /*
  * The Meson SPICC controller could support DMA based transfers, but is not

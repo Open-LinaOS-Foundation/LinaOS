@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
+#include <linaos/ftrace.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 
 #ifndef CONFIG_DYNAMIC_FTRACE

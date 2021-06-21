@@ -13,13 +13,13 @@
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/bug.h>
-#include <linux/cryptouser.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/seq_file.h>
+#include <linaos/bug.h>
+#include <linaos/cryptouser.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/seq_file.h>
 #include <net/netlink.h>
 
 #include "internal.h"

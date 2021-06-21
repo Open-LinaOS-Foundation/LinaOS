@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Google, Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 /*

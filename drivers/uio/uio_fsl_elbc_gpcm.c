@@ -39,14 +39,14 @@
    devices as needed.
 */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/uio_driver.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/uio_driver.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #include <asm/fsl_lbc.h>
 

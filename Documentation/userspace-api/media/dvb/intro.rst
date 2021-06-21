@@ -24,7 +24,7 @@ Various Digital TV standards documents are available for download at:
 - American standards (ATSC): https://www.atsc.org/standards/
 - Japanese standards (ISDB): http://www.dibeg.org/
 
-It is also necessary to know how to access Linux devices and how to
+It is also necessary to know how to access LinaOS devices and how to
 use ioctl calls. This also includes the knowledge of C or C++.
 
 
@@ -34,22 +34,22 @@ History
 =======
 
 The first API for Digital TV cards we used at Convergence in late 1999 was an
-extension of the Video4Linux API which was primarily developed for frame
+extension of the Video4LinaOS API which was primarily developed for frame
 grabber cards. As such it was not really well suited to be used for Digital
 TV cards and their new features like recording MPEG streams and filtering
 several section and PES data streams at the same time.
 
 In early 2000, Convergence was approached by Nokia with a proposal for a new
-standard Linux Digital TV API. As a commitment to the development of terminals
+standard LinaOS Digital TV API. As a commitment to the development of terminals
 based on open standards, Nokia and Convergence made it available to all
-Linux developers and published it on https://linuxtv.org in September
-2000. With the Linux driver for the Siemens/Hauppauge DVB PCI card,
-Convergence provided a first implementation of the Linux Digital TV API.
-Convergence was the maintainer of the Linux Digital TV API in the early
+LinaOS developers and published it on https://linaostv.org in September
+2000. With the LinaOS driver for the Siemens/Hauppauge DVB PCI card,
+Convergence provided a first implementation of the LinaOS Digital TV API.
+Convergence was the maintainer of the LinaOS Digital TV API in the early
 days.
 
-Now, the API is maintained by the LinuxTV community (i.e. you, the reader
-of this document). The Linux  Digital TV API is constantly reviewed and
+Now, the API is maintained by the LinaOSTV community (i.e. you, the reader
+of this document). The LinaOS  Digital TV API is constantly reviewed and
 improved together with the improvements at the subsystem's core at the
 Kernel.
 
@@ -116,10 +116,10 @@ flow between those components.
 
 .. _dvb_devices:
 
-Linux Digital TV Devices
+LinaOS Digital TV Devices
 ========================
 
-The Linux Digital TV API lets you control these hardware components through
+The LinaOS Digital TV API lets you control these hardware components through
 currently six Unix-style character devices for video, audio, frontend,
 demux, CA and IP-over-DVB networking. The video and audio devices
 control the MPEG2 decoder hardware, the frontend device the tuner and
@@ -169,15 +169,15 @@ partial path like:
 
 .. code-block:: c
 
-	#include <linux/dvb/ca.h>
+	#include <linaos/dvb/ca.h>
 
-	#include <linux/dvb/dmx.h>
+	#include <linaos/dvb/dmx.h>
 
-	#include <linux/dvb/frontend.h>
+	#include <linaos/dvb/frontend.h>
 
-	#include <linux/dvb/net.h>
+	#include <linaos/dvb/net.h>
 
 
 To enable applications to support different API version, an additional
-include file ``linux/dvb/version.h`` exists, which defines the constant
+include file ``linaos/dvb/version.h`` exists, which defines the constant
 ``DVB_API_VERSION``. This document describes ``DVB_API_VERSION 5.10``.

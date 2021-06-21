@@ -5,16 +5,16 @@
  * Copyright (C) 2017-2019 Microchip Technology Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/microchip-ksz.h>
-#include <linux/phy.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/of_net.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/microchip-ksz.h>
+#include <linaos/phy.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_bridge.h>
+#include <linaos/of_net.h>
 #include <net/dsa.h>
 #include <net/switchdev.h>
 

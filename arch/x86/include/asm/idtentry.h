@@ -6,8 +6,8 @@
 #include <asm/trapnr.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/entry-common.h>
-#include <linux/hardirq.h>
+#include <linaos/entry-common.h>
+#include <linaos/hardirq.h>
 
 #include <asm/irq_stack.h>
 

@@ -4,8 +4,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <linaos/futex.h>
+#include <linaos/uaccess.h>
 #include <asm/errno.h>
 
 #define __futex_atomic_ex_table(err_reg)			\
@@ -78,7 +78,7 @@ futex_atomic_cmpxchg_inatomic(u32 *uval, u32 __user *uaddr,
 
 #else /* !SMP, we can work around lack of atomic ops by disabling preemption */
 
-#include <linux/preempt.h>
+#include <linaos/preempt.h>
 #include <asm/domain.h>
 
 #define __futex_atomic_op(insn, ret, oldval, tmp, uaddr, oparg)	\

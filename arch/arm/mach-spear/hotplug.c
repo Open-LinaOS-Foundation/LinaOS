@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-spear13xx/hotplug.c
+ * linaos/arch/arm/mach-spear13xx/hotplug.c
  *
  * Copyright (C) 2012 ST Microelectronics Ltd.
  * Deepak Sikri <deepak.sikri@st.com>
  *
- * based upon linux/arch/arm/mach-realview/hotplug.c
+ * based upon linaos/arch/arm/mach-realview/hotplug.c
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/smp.h>
 #include <asm/cp15.h>
 #include <asm/smp_plat.h>
 

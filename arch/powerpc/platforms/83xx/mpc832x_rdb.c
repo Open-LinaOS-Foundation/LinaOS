@@ -10,13 +10,13 @@
  * Author: Michael Barkowski <michael.barkowski@freescale.com>
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/host.h>
-#include <linux/of_platform.h>
-#include <linux/fsl_devices.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/mmc_spi.h>
+#include <linaos/mmc/host.h>
+#include <linaos/of_platform.h>
+#include <linaos/fsl_devices.h>
 
 #include <asm/time.h>
 #include <asm/ipic.h>

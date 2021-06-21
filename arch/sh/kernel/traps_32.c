@@ -8,21 +8,21 @@
  *                  Copyright (C) 2000 David Howells
  *                  Copyright (C) 2002 - 2010 Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/io.h>
-#include <linux/bug.h>
-#include <linux/debug_locks.h>
-#include <linux/kdebug.h>
-#include <linux/limits.h>
-#include <linux/sysfs.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/hardirq.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/kallsyms.h>
+#include <linaos/io.h>
+#include <linaos/bug.h>
+#include <linaos/debug_locks.h>
+#include <linaos/kdebug.h>
+#include <linaos/limits.h>
+#include <linaos/sysfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/perf_event.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/alignment.h>
 #include <asm/fpu.h>

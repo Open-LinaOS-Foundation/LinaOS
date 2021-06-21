@@ -42,17 +42,17 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Network Linux driver
+ * PCIe NTB Network LinaOS driver
  *
  * Contact Information:
  * Jon Mason <jon.mason@intel.com>
  */
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ntb.h>
-#include <linux/ntb_transport.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/ntb.h>
+#include <linaos/ntb_transport.h>
 
 #define NTB_NETDEV_VER	"0.7"
 

@@ -4,16 +4,16 @@
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #include <lantiq_soc.h>
 

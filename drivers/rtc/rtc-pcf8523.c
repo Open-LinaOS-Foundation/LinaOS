@@ -3,12 +3,12 @@
  * Copyright (C) 2012 Avionic Design GmbH
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
-#include <linux/pm_wakeirq.h>
+#include <linaos/bcd.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/of.h>
+#include <linaos/pm_wakeirq.h>
 
 #define REG_CONTROL1 0x00
 #define REG_CONTROL1_CAP_SEL BIT(7)

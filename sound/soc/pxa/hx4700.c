@@ -5,12 +5,12 @@
  * Copyright (c) 2009 Philipp Zabel
  */
 
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
 
 #include <sound/core.h>
 #include <sound/jack.h>

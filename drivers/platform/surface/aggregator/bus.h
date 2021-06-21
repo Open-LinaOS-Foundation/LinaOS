@@ -8,7 +8,7 @@
 #ifndef _SURFACE_AGGREGATOR_BUS_H
 #define _SURFACE_AGGREGATOR_BUS_H
 
-#include <linux/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/controller.h>
 
 #ifdef CONFIG_SURFACE_AGGREGATOR_BUS
 

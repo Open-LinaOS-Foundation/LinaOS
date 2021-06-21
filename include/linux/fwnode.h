@@ -9,9 +9,9 @@
 #ifndef _LINUX_FWNODE_H_
 #define _LINUX_FWNODE_H_
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/err.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/err.h>
 
 struct fwnode_operations;
 struct device;

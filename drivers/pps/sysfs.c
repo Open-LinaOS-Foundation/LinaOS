@@ -2,14 +2,14 @@
 /*
  * PPS sysfs support
  *
- * Copyright (C) 2007-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2007-2009   Rodolfo Giometti <giometti@linaos.it>
  */
 
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/pps_kernel.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/pps_kernel.h>
 
 /*
  * Attribute functions

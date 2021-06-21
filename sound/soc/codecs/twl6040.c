@@ -5,14 +5,14 @@
  * Author:	 Misael Lopez Cruz <x0052729@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/twl6040.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/twl6040.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

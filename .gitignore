@@ -53,13 +53,13 @@ modules.order
 #
 # Top-level generic files
 #
-/linux
+/linaos
 /modules-only.symvers
-/vmlinux
-/vmlinux.32
-/vmlinux.map
-/vmlinux.symvers
-/vmlinux-gdb.py
+/vmlinaos
+/vmlinaos.32
+/vmlinaos.map
+/vmlinaos.symvers
+/vmlinaos-gdb.py
 /vmlinuz
 /System.map
 /Module.markers

@@ -5,18 +5,18 @@
  * Copyright (c) 2014-2015 Scott Feldman <sfeldma@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/rtnetlink.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_bridge.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/if_vlan.h>
+#include <linaos/rtnetlink.h>
 #include <net/switchdev.h>
 
 static LIST_HEAD(deferred);

@@ -18,10 +18,10 @@
 #ifndef _LINUX_TC_H
 #define _LINUX_TC_H
 
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/device.h>
+#include <linaos/ioport.h>
+#include <linaos/types.h>
 
 /*
  * Offsets for the ROM header locations for TURBOchannel cards.

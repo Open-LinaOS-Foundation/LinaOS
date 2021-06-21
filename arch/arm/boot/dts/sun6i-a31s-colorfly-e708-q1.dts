@@ -55,7 +55,7 @@
 
 	button-1000 {
 		label = "Home";
-		linux,code = <KEY_HOMEPAGE>;
+		linaos,code = <KEY_HOMEPAGE>;
 		channel = <0>;
 		voltage = <1000000>;
 	};

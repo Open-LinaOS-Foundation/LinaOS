@@ -5,7 +5,7 @@
  * Generic idle routine for Book3E processors
  */
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/reg.h>
 #include <asm/ppc_asm.h>
 #include <asm/asm-offsets.h>

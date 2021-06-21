@@ -8,7 +8,7 @@
  * Driver for PHY related operations via MCDI.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "efx.h"
 #include "mcdi_port.h"
 #include "mcdi.h"

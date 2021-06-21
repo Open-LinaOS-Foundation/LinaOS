@@ -6,15 +6,15 @@
  * Copyright (C) 2009 Daniel Ribeiro <drwyrm@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/ezx-pcap.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/ezx-pcap.h>
+#include <linaos/spi/spi.h>
+#include <linaos/gpio.h>
+#include <linaos/slab.h>
 
 #define PCAP_ADC_MAXQ		8
 struct pcap_adc_request {

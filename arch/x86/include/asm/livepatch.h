@@ -10,7 +10,7 @@
 #define _ASM_X86_LIVEPATCH_H
 
 #include <asm/setup.h>
-#include <linux/ftrace.h>
+#include <linaos/ftrace.h>
 
 static inline void klp_arch_set_pc(struct ftrace_regs *fregs, unsigned long ip)
 {

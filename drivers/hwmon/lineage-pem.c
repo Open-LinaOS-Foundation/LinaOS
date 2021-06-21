@@ -8,15 +8,15 @@
  *  http://www.lineagepower.com/oem/pdf/CPLI2C.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
 
 /*
  * This driver supports various Lineage Compact Power Line DC/DC and AC/DC
@@ -517,6 +517,6 @@ static struct i2c_driver pem_driver = {
 
 module_i2c_driver(pem_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("Lineage CPL PEM hardware monitoring driver");
 MODULE_LICENSE("GPL");

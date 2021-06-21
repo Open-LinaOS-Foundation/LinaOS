@@ -5,12 +5,12 @@
  * Copyright 2007, Lennart Poettering
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/dmi.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
 
 struct dmi_device_attribute{
 	struct device_attribute dev_attr;

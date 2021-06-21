@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2015-2016, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* sparse doesn't like tracepoint macros */
 #ifndef __CHECKER__

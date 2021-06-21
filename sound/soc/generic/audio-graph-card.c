@@ -7,17 +7,17 @@
 //
 // based on ${LINUX}/sound/soc/generic/simple-card.c
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/string.h>
 #include <sound/graph_card.h>
 
 #define DPCM_SELECTABLE 1

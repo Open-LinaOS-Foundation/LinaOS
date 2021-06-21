@@ -7,13 +7,13 @@
  *	Srikar Dronamraju
  *	Jim Keniston
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/uprobes.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <linaos/uprobes.h>
+#include <linaos/uaccess.h>
 
-#include <linux/kdebug.h>
+#include <linaos/kdebug.h>
 #include <asm/processor.h>
 #include <asm/insn.h>
 #include <asm/mmu_context.h>

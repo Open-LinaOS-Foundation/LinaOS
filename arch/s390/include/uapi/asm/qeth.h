@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * ioctl definitions for qeth driver
  *
@@ -9,8 +9,8 @@
  */
 #ifndef __ASM_S390_QETH_IOCTL_H__
 #define __ASM_S390_QETH_IOCTL_H__
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 #define SIOC_QETH_ARP_SET_NO_ENTRIES    (SIOCDEVPRIVATE)
 #define SIOC_QETH_ARP_QUERY_INFO        (SIOCDEVPRIVATE + 1)

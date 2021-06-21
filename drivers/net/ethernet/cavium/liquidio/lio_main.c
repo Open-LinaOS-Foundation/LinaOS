@@ -15,12 +15,12 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
  * NONINFRINGEMENT.  See the GNU General Public License for more details.
  ***********************************************************************/
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/firmware.h>
 #include <net/vxlan.h>
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 #include "liquidio_common.h"
 #include "octeon_droq.h"
 #include "octeon_iq.h"
@@ -860,7 +860,7 @@ liquidio_probe(struct pci_dev *pdev, const struct pci_device_id __maybe_unused *
 	/* Assign octeon_device for this device to the private data area. */
 	pci_set_drvdata(pdev, oct_dev);
 
-	/* set linux specific device pointer */
+	/* set linaos specific device pointer */
 	oct_dev->pci_dev = (void *)pdev;
 
 	oct_dev->subsystem_id = pdev->subsystem_vendor |

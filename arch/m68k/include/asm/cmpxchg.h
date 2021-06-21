@@ -2,7 +2,7 @@
 #ifndef __ARCH_M68K_CMPXCHG__
 #define __ARCH_M68K_CMPXCHG__
 
-#include <linux/irqflags.h>
+#include <linaos/irqflags.h>
 
 struct __xchg_dummy { unsigned long a[100]; };
 #define __xg(x) ((volatile struct __xchg_dummy *)(x))

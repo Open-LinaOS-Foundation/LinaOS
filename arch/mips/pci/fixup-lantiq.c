@@ -4,8 +4,8 @@
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
 
 int (*ltq_pci_plat_arch_init)(struct pci_dev *dev) = NULL;
 int (*ltq_pci_plat_dev_init)(struct pci_dev *dev) = NULL;

@@ -7,7 +7,7 @@
 #ifndef __FSL_DPAA2_FD_H
 #define __FSL_DPAA2_FD_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /**
  * DOC: DPAA2 FD - Frame Descriptor APIs for DPAA2

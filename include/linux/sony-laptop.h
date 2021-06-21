@@ -2,7 +2,7 @@
 #ifndef _SONYLAPTOP_H_
 #define _SONYLAPTOP_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef __KERNEL__
 

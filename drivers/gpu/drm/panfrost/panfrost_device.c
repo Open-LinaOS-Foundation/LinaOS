@@ -2,11 +2,11 @@
 /* Copyright 2018 Marty E. Plummer <hanetzer@startmail.com> */
 /* Copyright 2019 Linaro, Ltd, Rob Herring <robh@kernel.org> */
 
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/reset.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/regulator/consumer.h>
 
 #include "panfrost_device.h"
 #include "panfrost_devfreq.h"

@@ -7,13 +7,13 @@
  * This driver is based on the gpio-tps65912 implementation.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/tps65218.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/tps65218.h>
 
 struct tps65218_gpio {
 	struct tps65218 *tps65218;

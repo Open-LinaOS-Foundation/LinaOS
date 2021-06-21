@@ -7,21 +7,21 @@
  * TODO: Add ingress support (and socket redirect support)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/if_arp.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/gfp.h>
+#include <linaos/if_arp.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
-#include <linux/tc_act/tc_mirred.h>
+#include <linaos/tc_act/tc_mirred.h>
 #include <net/tc_act/tc_mirred.h>
 
 static LIST_HEAD(mirred_list);

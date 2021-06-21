@@ -6,11 +6,11 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
-#include <linux/pci-epc.h>
+#include <linaos/pci-epc.h>
 
 /**
  * pci_epc_mem_get_order() - determine the allocation order of a memory size

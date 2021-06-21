@@ -13,8 +13,8 @@
 #if !defined(_TRACE_HOST1X_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HOST1X_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
+#include <linaos/ktime.h>
+#include <linaos/tracepoint.h>
 
 struct host1x_bo;
 

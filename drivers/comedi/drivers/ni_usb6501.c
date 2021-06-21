@@ -3,7 +3,7 @@
  * comedi/drivers/ni_usb6501.c
  * Comedi driver for National Instruments USB-6501
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2014 Luca Ellero <luca.ellero@brickedbrain.com>
  */
 
@@ -84,9 +84,9 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "../comedi_usb.h"
 

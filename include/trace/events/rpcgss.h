@@ -11,7 +11,7 @@
 #if !defined(_TRACE_RPCRDMA_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RPCGSS_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /**
  ** GSS-API related trace events

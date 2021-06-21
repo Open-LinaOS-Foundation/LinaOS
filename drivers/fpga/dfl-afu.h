@@ -6,7 +6,7 @@
  *
  * Authors:
  *     Wu Hao <hao.wu@intel.com>
- *     Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *     Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  *     Joseph Grecco <joe.grecco@intel.com>
  *     Enno Luebbers <enno.luebbers@intel.com>
  *     Tim Whisonant <tim.whisonant@intel.com>
@@ -17,7 +17,7 @@
 #ifndef __DFL_AFU_H
 #define __DFL_AFU_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #include "dfl.h"
 

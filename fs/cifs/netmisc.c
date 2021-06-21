@@ -9,14 +9,14 @@
  *   Copyright (C) Andrew Tridgell 2001
  */
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
+#include <linaos/net.h>
+#include <linaos/string.h>
+#include <linaos/in.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
 #include <asm/div64.h>
 #include <asm/byteorder.h>
-#include <linux/inet.h>
+#include <linaos/inet.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
 #include "cifsglob.h"
@@ -808,7 +808,7 @@ ntstatus_to_dos(__u32 ntstatus, __u8 *eclass, __u16 *ecode)
 }
 
 int
-map_smb_to_linux_error(char *buf, bool logErr)
+map_smb_to_linaos_error(char *buf, bool logErr)
 {
 	struct smb_hdr *smb = (struct smb_hdr *)buf;
 	unsigned int i;
@@ -887,7 +887,7 @@ map_and_check_smb_error(struct mid_q_entry *mid, bool logErr)
 	int rc;
 	struct smb_hdr *smb = (struct smb_hdr *)mid->resp_buf;
 
-	rc = map_smb_to_linux_error((char *)smb, logErr);
+	rc = map_smb_to_linaos_error((char *)smb, logErr);
 	if (rc == -EACCES && !(smb->Flags2 & SMBFLG2_ERR_STATUS)) {
 		/* possible ERRBaduid */
 		__u8 class = smb->Status.DosError.ErrorClass;

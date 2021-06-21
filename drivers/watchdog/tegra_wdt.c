@@ -3,13 +3,13 @@
  * Copyright (c) 2014, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/watchdog.h>
 
 /* minimum and maximum watchdog trigger timeout, in seconds */
 #define MIN_WDT_TIMEOUT			1

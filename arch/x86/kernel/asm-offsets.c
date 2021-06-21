@@ -6,12 +6,12 @@
  */
 #define COMPILE_OFFSETS
 
-#include <linux/crypto.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/hardirq.h>
-#include <linux/suspend.h>
-#include <linux/kbuild.h>
+#include <linaos/crypto.h>
+#include <linaos/sched.h>
+#include <linaos/stddef.h>
+#include <linaos/hardirq.h>
+#include <linaos/suspend.h>
+#include <linaos/kbuild.h>
 #include <asm/processor.h>
 #include <asm/thread_info.h>
 #include <asm/sigframe.h>

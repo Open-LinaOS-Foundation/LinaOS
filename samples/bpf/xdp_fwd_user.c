@@ -11,9 +11,9 @@
  * General Public License for more details.
  */
 
-#include <linux/bpf.h>
-#include <linux/if_link.h>
-#include <linux/limits.h>
+#include <linaos/bpf.h>
+#include <linaos/if_link.h>
+#include <linaos/limits.h>
 #include <net/if.h>
 #include <errno.h>
 #include <stdio.h>

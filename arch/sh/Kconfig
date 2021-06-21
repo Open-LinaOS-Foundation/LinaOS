@@ -77,7 +77,7 @@ config SUPERH
 	  The SuperH is a RISC processor targeted for use in embedded systems
 	  and consumer electronics; it was also used in the Sega Dreamcast
 	  gaming console.  The SuperH port has a home page at
-	  <http://www.linux-sh.org/>.
+	  <http://www.linaos-sh.org/>.
 
 config GENERIC_BUG
 	def_bool y
@@ -556,7 +556,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.  And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just LinaOS.
 
 	  The name comes from the similarity to the exec system call.
 
@@ -650,7 +650,7 @@ config GUSA
 	  CPUs, and is used by the libc, amongst others.
 
 	  For additional information, design information can be found 
-	  in <http://lc.linux.or.jp/lc2002/papers/niibe0919p.pdf>.
+	  in <http://lc.linaos.or.jp/lc2002/papers/niibe0919p.pdf>.
 
 	  This should only be disabled for special cases where alternate
 	  atomicity implementations exist.

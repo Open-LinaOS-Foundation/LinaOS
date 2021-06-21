@@ -3,20 +3,20 @@
  *  Copyright (C) 2012-2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/mount.h>
-#include <linux/cred.h>
-#include <linux/statfs.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
-#include <linux/fs_struct.h>
-#include <linux/iversion.h>
-#include <linux/nls.h>
-#include <linux/buffer_head.h>
+#include <linaos/fs_context.h>
+#include <linaos/fs_parser.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/mount.h>
+#include <linaos/cred.h>
+#include <linaos/statfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/blkdev.h>
+#include <linaos/fs_struct.h>
+#include <linaos/iversion.h>
+#include <linaos/nls.h>
+#include <linaos/buffer_head.h>
 
 #include "exfat_raw.h"
 #include "exfat_fs.h"

@@ -2,9 +2,9 @@
 /*
  * mISDNisar.c   ISAR (Siemens PSB 7110) specific functions
  *
- * Author Karsten Keil (keil@isdn4linux.de)
+ * Author Karsten Keil (keil@isdn4linaos.de)
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4linaos.de>
  */
 
 /* define this to enable static debug messages, if you kernel supports
@@ -12,11 +12,11 @@
  */
 /* #define DEBUG */
 
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/mISDNhw.h>
-#include <linux/module.h>
+#include <linaos/gfp.h>
+#include <linaos/delay.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mISDNhw.h>
+#include <linaos/module.h>
 #include "isar.h"
 
 #define ISAR_REV	"2.1"

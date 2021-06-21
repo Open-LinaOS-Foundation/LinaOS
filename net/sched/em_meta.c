@@ -54,17 +54,17 @@
  * 	      only available if that subsystem is enabled in the kernel.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/if_vlan.h>
-#include <linux/tc_ematch/tc_em_meta.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/random.h>
+#include <linaos/if_vlan.h>
+#include <linaos/tc_ematch/tc_em_meta.h>
 #include <net/dst.h>
 #include <net/route.h>
 #include <net/pkt_cls.h>

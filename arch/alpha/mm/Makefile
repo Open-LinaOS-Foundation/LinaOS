@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux alpha-specific parts of the memory manager.
+# Makefile for the linaos alpha-specific parts of the memory manager.
 #
 
 ccflags-y := -Werror

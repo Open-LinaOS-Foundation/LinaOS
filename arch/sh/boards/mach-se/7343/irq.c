@@ -5,18 +5,18 @@
  * Copyright (C) 2008  Yoshihiro Shimoda
  * Copyright (C) 2012  Paul Mundt
  *
- * Based on linux/arch/sh/boards/se/7343/irq.c
+ * Based on linaos/arch/sh/boards/se/7343/irq.c
  * Copyright (C) 2007  Nobuhiro Iwamatsu
  */
 #define DRV_NAME "SE7343-FPGA"
 #define pr_fmt(fmt) DRV_NAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/io.h>
+#include <linaos/sizes.h>
 #include <mach-se/mach/se7343.h>
 
 #define PA_CPLD_BASE_ADDR	0x11400000

@@ -8,8 +8,8 @@
 #ifndef __DMA_XILINX_DMA_H
 #define __DMA_XILINX_DMA_H
 
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
 
 /**
  * struct xilinx_vdma_config - VDMA Configuration structure

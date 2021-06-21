@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 2001-2002	Andre Hedrick <andre@linaos-ide.org>
  * Copyright (C) 2003		Red Hat
  * Copyright (C) 2007-2008	MontaVista Software, Inc.
  * Copyright (C) 2007-2008	Bartlomiej Zolnierkiewicz
@@ -35,12 +35,12 @@
  * - VDMA support
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #define DRV_NAME "siimage"
 

@@ -13,7 +13,7 @@
 
 /* for isl3886 register definitions used on ver 1 devices */
 #include "p54pci.h"
-#include <linux/usb/net2280.h>
+#include <linaos/usb/net2280.h>
 
 /* pci */
 #define NET2280_BASE		0x10000000

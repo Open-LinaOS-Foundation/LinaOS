@@ -4,7 +4,7 @@
 #ifndef __FSL_DPKG_H_
 #define __FSL_DPKG_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Data Path Key Generator API
  * Contains initialization APIs and runtime APIs for the Key Generator

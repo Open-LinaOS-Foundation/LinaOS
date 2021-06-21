@@ -11,7 +11,7 @@
 #ifndef __LINUX_MFD_MAX77693_PRIV_H
 #define __LINUX_MFD_MAX77693_PRIV_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 #define MAX77693_REG_INVALID		(0xff)
 

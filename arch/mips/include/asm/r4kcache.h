@@ -7,12 +7,12 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1997 - 2002 Ralf Baechle (ralf@gnu.org)
- * Copyright (C) 2004 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 Ralf Baechle (ralf@linaos-mips.org)
  */
 #ifndef _ASM_R4KCACHE_H
 #define _ASM_R4KCACHE_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #include <asm/asm.h>
 #include <asm/asm-eva.h>

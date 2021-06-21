@@ -12,7 +12,7 @@ Required properties:
 	- 'ORCL,m7-rng' for SPARC T7/M7
 
 Examples:
-/* linux LDOM on SPARC T5-2 */
+/* linaos LDOM on SPARC T5-2 */
 Node 0xf029a4f4
 	.node:  f029a4f4
 	rng-#units:  00000002

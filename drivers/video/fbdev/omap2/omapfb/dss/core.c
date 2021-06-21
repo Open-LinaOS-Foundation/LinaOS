@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/core.c
+ * linaos/drivers/video/omap2/dss/core.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,18 +11,18 @@
 
 #define DSS_SUBSYS_NAME "CORE"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/io.h>
+#include <linaos/device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/suspend.h>
+#include <linaos/slab.h>
 
 #include <video/omapfb_dss.h>
 

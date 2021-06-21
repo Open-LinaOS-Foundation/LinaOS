@@ -27,17 +27,17 @@ To make use of the gadget one needs to make it work on host side --
 without that there's no hope of achieving anything with the gadget.
 As one might expect, things one need to do very from system to system.
 
-Linux host drivers
+LinaOS host drivers
 ------------------
 
 Since the gadget uses standard composite framework and appears as such
-to Linux host it does not need any additional drivers on Linux host
+to LinaOS host it does not need any additional drivers on LinaOS host
 side.  All the functions are handled by respective drivers developed
 for them.
 
 This is also true for two configuration set-up with RNDIS
-configuration being the first one.  Linux host will use the second
-configuration with CDC ECM which should work better under Linux.
+configuration being the first one.  LinaOS host will use the second
+configuration with CDC ECM which should work better under LinaOS.
 
 Windows host drivers
 --------------------
@@ -75,7 +75,7 @@ RNDIS
 .....
 
 To make Windows select RNDIS drivers for the first function in the
-gadget, one needs to use the [[file:linux.inf]] file provided with this
+gadget, one needs to use the [[file:linaos.inf]] file provided with this
 document.  It "attaches" Window's RNDIS driver to the first interface
 of the gadget.
 
@@ -87,7 +87,7 @@ out for this bug.
 CDC ACM
 .......
 
-Similarly, [[file:linux-cdc-acm.inf]] is provided for CDC ACM.
+Similarly, [[file:linaos-cdc-acm.inf]] is provided for CDC ACM.
 
 Customising the gadget
 ......................

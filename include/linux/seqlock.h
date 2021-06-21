@@ -13,13 +13,13 @@
  * - Sequence counters with associated locks, (C) 2020 Linutronix GmbH
  */
 
-#include <linux/compiler.h>
-#include <linux/kcsan-checks.h>
-#include <linux/lockdep.h>
-#include <linux/mutex.h>
-#include <linux/ww_mutex.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
+#include <linaos/compiler.h>
+#include <linaos/kcsan-checks.h>
+#include <linaos/lockdep.h>
+#include <linaos/mutex.h>
+#include <linaos/ww_mutex.h>
+#include <linaos/preempt.h>
+#include <linaos/spinlock.h>
 
 #include <asm/processor.h>
 

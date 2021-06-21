@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/mmdebug.h>
-#include <linux/highmem.h>
-#include <linux/page_ext.h>
-#include <linux/poison.h>
-#include <linux/ratelimit.h>
-#include <linux/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/mmdebug.h>
+#include <linaos/highmem.h>
+#include <linaos/page_ext.h>
+#include <linaos/poison.h>
+#include <linaos/ratelimit.h>
+#include <linaos/kasan.h>
 
 bool _page_poisoning_enabled_early;
 EXPORT_SYMBOL(_page_poisoning_enabled_early);

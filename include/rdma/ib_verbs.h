@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2004 Mellanox Technologies Ltd.  All rights reserved.
  * Copyright (c) 2004 Infinicon Corporation.  All rights reserved.
@@ -12,30 +12,30 @@
 #ifndef IB_VERBS_H
 #define IB_VERBS_H
 
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/irq_poll.h>
-#include <uapi/linux/if_ether.h>
+#include <linaos/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/rwsem.h>
+#include <linaos/workqueue.h>
+#include <linaos/irq_poll.h>
+#include <uapi/linaos/if_ether.h>
 #include <net/ipv6.h>
 #include <net/ip.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/refcount.h>
-#include <linux/if_link.h>
-#include <linux/atomic.h>
-#include <linux/mmu_notifier.h>
-#include <linux/uaccess.h>
-#include <linux/cgroup_rdma.h>
-#include <linux/irqflags.h>
-#include <linux/preempt.h>
-#include <linux/dim.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/refcount.h>
+#include <linaos/if_link.h>
+#include <linaos/atomic.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/uaccess.h>
+#include <linaos/cgroup_rdma.h>
+#include <linaos/irqflags.h>
+#include <linaos/preempt.h>
+#include <linaos/dim.h>
 #include <uapi/rdma/ib_user_verbs.h>
 #include <rdma/rdma_counter.h>
 #include <rdma/restrack.h>

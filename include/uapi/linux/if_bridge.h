@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
@@ -14,9 +14,9 @@
 #ifndef _UAPI_LINUX_IF_BRIDGE_H
 #define _UAPI_LINUX_IF_BRIDGE_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/in6.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
+#include <linaos/in6.h>
 
 #define SYSFS_BRIDGE_ATTR	"bridge"
 #define SYSFS_BRIDGE_FDB	"brforward"

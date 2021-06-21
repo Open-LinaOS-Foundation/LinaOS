@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Include file for the interface to an APM BIOS
  * Copyright 1994-2001 Stephen Rothwell (sfr@canb.auug.org.au)
@@ -17,7 +17,7 @@
 #define _UAPI_LINUX_APM_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef unsigned short	apm_event_t;
 typedef unsigned short	apm_eventinfo_t;
@@ -130,7 +130,7 @@ struct apm_bios_info {
 /*
  * ioctl operations
  */
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 #define APM_IOC_STANDBY		_IO('A', 1)
 #define APM_IOC_SUSPEND		_IO('A', 2)

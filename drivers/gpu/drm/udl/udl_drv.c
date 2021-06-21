@@ -3,7 +3,7 @@
  * Copyright (C) 2012 Red Hat
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_drv.h>

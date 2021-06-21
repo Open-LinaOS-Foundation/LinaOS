@@ -8,8 +8,8 @@
 #ifndef _CRYPTO_SM4_H
 #define _CRYPTO_SM4_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <linaos/types.h>
+#include <linaos/crypto.h>
 
 #define SM4_KEY_SIZE	16
 #define SM4_BLOCK_SIZE	16

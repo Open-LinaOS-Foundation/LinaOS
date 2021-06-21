@@ -11,9 +11,9 @@
 //          Denis Grigoriev <dgreenday@gmail.com>
 //          Vasily Khoruzhick <anarsoul@gmail.com>
 
-#include <linux/types.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
 
 #include <sound/soc.h>
 #include <sound/jack.h>

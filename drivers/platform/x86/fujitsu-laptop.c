@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/*-*-linux-c-*-*/
+/*-*-linaos-c-*-*/
 
 /*
   Copyright (C) 2007,2008 Jonathan Woithe <jwoithe@just42.net>
@@ -36,19 +36,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/dmi.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/kfifo.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/dmi.h>
+#include <linaos/backlight.h>
+#include <linaos/fb.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/kfifo.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
 #include <acpi/video.h>
 
 #define FUJITSU_DRIVER_VERSION		"0.6.0"

@@ -2,7 +2,7 @@
 #ifndef _INCLUDE_GUARD_i82092aa_H_
 #define _INCLUDE_GUARD_i82092aa_H_
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 /* prototypes */
 

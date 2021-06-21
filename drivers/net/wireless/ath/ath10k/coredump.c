@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
 #include "coredump.h"
 
-#include <linux/devcoredump.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/utsname.h>
+#include <linaos/devcoredump.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/utsname.h>
 
 #include "debug.h"
 #include "hw.h"

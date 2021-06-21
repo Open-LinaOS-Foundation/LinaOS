@@ -69,14 +69,14 @@
 		green {
 			label = "led1";
 			gpios = <&gpio3 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "off";
 		};
 
 		red {
 			label = "led0";
 			gpios = <&gpio3 23 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "off";
 		};
 	};

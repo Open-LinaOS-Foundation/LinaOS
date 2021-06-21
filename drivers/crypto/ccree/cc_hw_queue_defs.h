@@ -4,10 +4,10 @@
 #ifndef __CC_HW_QUEUE_DEFS_H__
 #define __CC_HW_QUEUE_DEFS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "cc_kernel_regs.h"
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 /******************************************************************************
  *				DEFINITIONS

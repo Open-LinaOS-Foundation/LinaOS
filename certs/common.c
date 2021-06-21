@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/kernel.h>
-#include <linux/key.h>
+#include <linaos/kernel.h>
+#include <linaos/key.h>
 #include "common.h"
 
 int load_certificate_list(const u8 cert_list[],

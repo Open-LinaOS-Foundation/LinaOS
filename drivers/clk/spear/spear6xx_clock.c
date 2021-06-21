@@ -9,9 +9,9 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/spinlock_types.h>
+#include <linaos/clkdev.h>
+#include <linaos/io.h>
+#include <linaos/spinlock_types.h>
 #include "clk.h"
 
 static DEFINE_SPINLOCK(_lock);

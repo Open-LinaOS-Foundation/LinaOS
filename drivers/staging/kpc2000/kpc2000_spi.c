@@ -7,25 +7,25 @@
  * Very loosely based on spi-omap2-mcspi.c
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gcd.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/gcd.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/flash.h>
+#include <linaos/mtd/partitions.h>
 
 #include "kpc.h"
 

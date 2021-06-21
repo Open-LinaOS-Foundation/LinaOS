@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/crc32c.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/inet.h>
-#include <linux/kthread.h>
-#include <linux/net.h>
-#include <linux/nsproxy.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/string.h>
+#include <linaos/crc32c.h>
+#include <linaos/ctype.h>
+#include <linaos/highmem.h>
+#include <linaos/inet.h>
+#include <linaos/kthread.h>
+#include <linaos/net.h>
+#include <linaos/nsproxy.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
+#include <linaos/socket.h>
+#include <linaos/string.h>
 #ifdef	CONFIG_BLOCK
-#include <linux/bio.h>
+#include <linaos/bio.h>
 #endif	/* CONFIG_BLOCK */
-#include <linux/dns_resolver.h>
+#include <linaos/dns_resolver.h>
 #include <net/tcp.h>
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/export.h>
+#include <linaos/ceph/ceph_features.h>
+#include <linaos/ceph/libceph.h>
+#include <linaos/ceph/messenger.h>
+#include <linaos/ceph/decode.h>
+#include <linaos/ceph/pagelist.h>
+#include <linaos/export.h>
 
 /*
  * Ceph uses the messenger to exchange ceph_msg messages with other

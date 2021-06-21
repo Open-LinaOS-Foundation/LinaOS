@@ -4,15 +4,15 @@
  *
  * Qualcomm MSM Camera Subsystem - CSIPHY Module 2phase v1.0
  *
- * Copyright (c) 2011-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2015, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2016-2018 Linaro Ltd.
  */
 
 #include "camss-csiphy.h"
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 #define CAMSS_CSI_PHY_LNn_CFG2(n)		(0x004 + 0x40 * (n))
 #define CAMSS_CSI_PHY_LNn_CFG3(n)		(0x008 + 0x40 * (n))

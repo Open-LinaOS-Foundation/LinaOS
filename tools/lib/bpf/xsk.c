@@ -14,21 +14,21 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <asm/barrier.h>
-#include <linux/compiler.h>
-#include <linux/ethtool.h>
-#include <linux/filter.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_xdp.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sockios.h>
+#include <linaos/compiler.h>
+#include <linaos/ethtool.h>
+#include <linaos/filter.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_xdp.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/sockios.h>
 #include <net/if.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
 #include <sys/socket.h>
 #include <sys/types.h>
-#include <linux/if_link.h>
+#include <linaos/if_link.h>
 
 #include "bpf.h"
 #include "libbpf.h"
@@ -94,14 +94,14 @@ struct xsk_nl_info {
 	int fd;
 };
 
-/* Up until and including Linux 5.3 */
+/* Up until and including LinaOS 5.3 */
 struct xdp_ring_offset_v1 {
 	__u64 producer;
 	__u64 consumer;
 	__u64 desc;
 };
 
-/* Up until and including Linux 5.3 */
+/* Up until and including LinaOS 5.3 */
 struct xdp_mmap_offsets_v1 {
 	struct xdp_ring_offset_v1 rx;
 	struct xdp_ring_offset_v1 tx;

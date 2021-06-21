@@ -5,34 +5,34 @@
 //
 // https://www.handhelds.org/projects/h1940.html
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/pda_power.h>
-#include <linux/s3c_adc_battery.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/memblock.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/input.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/pda_power.h>
+#include <linaos/s3c_adc_battery.h>
+#include <linaos/delay.h>
 
 #include <video/platform_lcd.h>
 
-#include <linux/mmc/host.h>
-#include <linux/export.h>
+#include <linaos/mmc/host.h>
+#include <linaos/export.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
@@ -40,14 +40,14 @@
 #include <asm/mach/map.h>
 #include <asm/mach/irq.h>
 
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/mmc-s3cmci.h>
-#include <linux/platform_data/touchscreen-s3c2410.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/mmc-s3cmci.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
+#include <linaos/platform_data/usb-s3c2410_udc.h>
 
 #include <sound/uda1380.h>
 
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 #include "map.h"
 #include "hardware-s3c24xx.h"
 #include "regs-clock.h"
@@ -791,7 +791,7 @@ static void __init h1940_init(void)
 }
 
 MACHINE_START(H1940, "IPAQ-H1940")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 	.map_io		= h1940_map_io,
 	.reserve	= h1940_reserve,

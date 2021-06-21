@@ -31,16 +31,16 @@
  *   below for details. )
  */
 
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
-#include <linux/debugfs.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/pfn_t.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/rbtree.h>
+#include <linaos/seq_file.h>
+#include <linaos/memblock.h>
+#include <linaos/debugfs.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/pfn_t.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/rbtree.h>
 
 #include <asm/cacheflush.h>
 #include <asm/processor.h>

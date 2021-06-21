@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _ASM_IA64_BREAK_H
 #define _ASM_IA64_BREAK_H
 
 /*
- * IA-64 Linux break numbers.
+ * IA-64 LinaOS break numbers.
  *
  * Copyright (C) 1999 Hewlett-Packard Co
  * Copyright (C) 1999 David Mosberger-Tang <davidm@hpl.hp.com>

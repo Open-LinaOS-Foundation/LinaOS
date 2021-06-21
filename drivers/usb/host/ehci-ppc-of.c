@@ -13,13 +13,13 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/err.h>
-#include <linux/signal.h>
+#include <linaos/err.h>
+#include <linaos/signal.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 
 
 static const struct hc_driver ehci_ppc_of_hc_driver = {

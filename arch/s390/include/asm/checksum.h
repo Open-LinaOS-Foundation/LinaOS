@@ -12,8 +12,8 @@
 #ifndef _S390_CHECKSUM_H
 #define _S390_CHECKSUM_H
 
-#include <linux/uaccess.h>
-#include <linux/in6.h>
+#include <linaos/uaccess.h>
+#include <linaos/in6.h>
 
 /*
  * Computes the checksum of a memory block at buff, length len,

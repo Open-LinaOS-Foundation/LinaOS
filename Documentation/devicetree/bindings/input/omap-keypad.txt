@@ -16,13 +16,13 @@ Required SoC Specific Properties:
    - "ti,omap4-keypad": For controllers compatible with omap4 keypad
       controller.
 
-Optional Properties specific to linux:
-- linux,keypad-no-autorepeat: do no enable autorepeat feature.
+Optional Properties specific to linaos:
+- linaos,keypad-no-autorepeat: do no enable autorepeat feature.
 
 Example:
 	keypad@4ae1c000{
 		compatible = "ti,omap4-keypad";
 		keypad,num-rows = <2>;
 		keypad,num-columns = <8>;
-		linux,keypad-no-autorepeat;
+		linaos,keypad-no-autorepeat;
 	};

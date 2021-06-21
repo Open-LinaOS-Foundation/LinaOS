@@ -19,7 +19,7 @@
 			label = "udoo-neo:red:mmc";
 			gpios = <&gpio6 0 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 
 		orange {

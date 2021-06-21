@@ -4,7 +4,7 @@
  * Copyright (C) 2012 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define BRANCH_ALWAYS	0x10680000
 #define NOP		0x01000000

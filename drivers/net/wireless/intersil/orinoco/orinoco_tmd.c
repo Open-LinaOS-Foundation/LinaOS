@@ -40,11 +40,11 @@
 #define DRIVER_NAME "orinoco_tmd"
 #define PFX DRIVER_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
 #include <pcmcia/cisreg.h>
 
 #include "orinoco.h"

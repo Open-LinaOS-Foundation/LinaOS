@@ -2,8 +2,8 @@
 #ifndef __POWERNV_PCI_H
 #define __POWERNV_PCI_H
 
-#include <linux/compiler.h>		/* for __printf */
-#include <linux/iommu.h>
+#include <linaos/compiler.h>		/* for __printf */
+#include <linaos/iommu.h>
 #include <asm/iommu.h>
 #include <asm/msi_bitmap.h>
 
@@ -196,7 +196,7 @@ struct pnv_phb {
 static inline bool pnv_pci_is_m64(struct pnv_phb *phb, struct resource *r)
 {
 	/*
-	 * WARNING: We cannot rely on the resource flags. The Linux PCI
+	 * WARNING: We cannot rely on the resource flags. The LinaOS PCI
 	 * allocation code sometimes decides to put a 64-bit prefetchable
 	 * BAR in the 32-bit window, so we have to compare the addresses.
 	 *

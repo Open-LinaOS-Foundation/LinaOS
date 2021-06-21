@@ -12,7 +12,7 @@
  * to detect when we overlook these differences.
  *
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct user_namespace;
 extern struct user_namespace init_user_ns;

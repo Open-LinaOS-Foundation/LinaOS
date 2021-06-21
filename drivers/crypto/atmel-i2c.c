@@ -6,19 +6,19 @@
  * Author: Tudor Ambarus <tudor.ambarus@microchip.com>
  */
 
-#include <linux/bitrev.h>
-#include <linux/crc16.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/bitrev.h>
+#include <linaos/crc16.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 #include "atmel-i2c.h"
 
 static const struct {

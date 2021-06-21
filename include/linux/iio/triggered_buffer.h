@@ -2,7 +2,7 @@
 #ifndef _LINUX_IIO_TRIGGERED_BUFFER_H_
 #define _LINUX_IIO_TRIGGERED_BUFFER_H_
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 struct attribute;
 struct iio_dev;

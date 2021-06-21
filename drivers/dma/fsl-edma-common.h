@@ -6,8 +6,8 @@
 #ifndef _FSL_EDMA_COMMON_H_
 #define _FSL_EDMA_COMMON_H_
 
-#include <linux/dma-direction.h>
-#include <linux/platform_device.h>
+#include <linaos/dma-direction.h>
+#include <linaos/platform_device.h>
 #include "virt-dma.h"
 
 #define EDMA_CR_EDBG		BIT(1)

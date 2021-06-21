@@ -6,7 +6,7 @@
  *  All rights reserved.
  */
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 irqreturn_t cobalt_irq_handler(int irq, void *dev_id);
 void cobalt_irq_work_handler(struct work_struct *work);

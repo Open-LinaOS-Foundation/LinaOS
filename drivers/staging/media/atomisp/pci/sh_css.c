@@ -14,9 +14,9 @@
  */
 
 /*! \file */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include "hmm.h"
 
@@ -77,9 +77,9 @@
 #if WITH_PC_MONITORING
 #define MULTIPLE_SAMPLES 1
 #define NOF_SAMPLES      60
-#include "linux/kthread.h"
-#include "linux/sched.h"
-#include "linux/delay.h"
+#include "linaos/kthread.h"
+#include "linaos/sched.h"
+#include "linaos/delay.h"
 #include "sh_css_metrics.h"
 static int thread_alive;
 #endif /* WITH_PC_MONITORING */

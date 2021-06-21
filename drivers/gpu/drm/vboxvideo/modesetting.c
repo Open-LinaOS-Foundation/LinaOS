@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 /* Copyright (C) 2006-2017 Oracle Corporation */
 
-#include <linux/vbox_err.h>
+#include <linaos/vbox_err.h>
 #include "vbox_drv.h"
 #include "vboxvideo_guest.h"
 #include "vboxvideo_vbe.h"

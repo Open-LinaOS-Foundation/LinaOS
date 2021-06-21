@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2017-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2019, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/soc/qcom/irq.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/soc/qcom/irq.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #define PDC_MAX_IRQS		168
 #define PDC_MAX_GPIO_IRQS	256

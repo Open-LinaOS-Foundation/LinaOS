@@ -23,7 +23,7 @@ config INFINIBAND_USER_MAD
 	  is the kernel side of the userspace MAD support, which allows
 	  userspace processes to send and receive MADs. You will also
 	  need libibumad from rdma-core
-	  <https://github.com/linux-rdma/rdma-core>.
+	  <https://github.com/linaos-rdma/rdma-core>.
 
 config INFINIBAND_USER_ACCESS
 	tristate "InfiniBand userspace access (verbs and CM)"
@@ -35,7 +35,7 @@ config INFINIBAND_USER_ACCESS
 	  to set up connections and directly access InfiniBand
 	  hardware for fast-path operations.  You will also need
 	  libibverbs, libibcm and a hardware driver library from
-	  rdma-core <https://github.com/linux-rdma/rdma-core>.
+	  rdma-core <https://github.com/linaos-rdma/rdma-core>.
 
 config INFINIBAND_USER_MEM
 	bool

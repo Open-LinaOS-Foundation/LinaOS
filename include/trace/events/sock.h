@@ -7,9 +7,9 @@
 
 #include <net/sock.h>
 #include <net/ipv6.h>
-#include <linux/tracepoint.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
+#include <linaos/tracepoint.h>
+#include <linaos/ipv6.h>
+#include <linaos/tcp.h>
 
 #define family_names			\
 		EM(AF_INET)				\

@@ -28,14 +28,14 @@
  * a timer to limit the rate at which DMA is reset on DMA channels error.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci_ids.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
 
 #include "tw686x.h"
 #include "tw686x-regs.h"

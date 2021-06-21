@@ -5,14 +5,14 @@
  * Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  *	      Cornelia Huck (cornelia.huck@de.ibm.com)
  */
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/completion.h>
 
 #include <asm/ccwdev.h>
 #include <asm/idals.h>

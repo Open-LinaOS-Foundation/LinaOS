@@ -8,11 +8,11 @@
  *		 Gerald Schaefer (gerald.schaefer@de.ibm.com)
  */
 
-#include <linux/jump_label.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
+#include <linaos/jump_label.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
 #include <asm/mmu_context.h>
 #include <asm/facility.h>
 

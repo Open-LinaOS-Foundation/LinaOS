@@ -55,13 +55,13 @@
 		user1 {
 			label = "user1";
 			gpios = <&gpio2 8 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		user2 {
 			label = "user2";
 			gpios = <&gpio2 9 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

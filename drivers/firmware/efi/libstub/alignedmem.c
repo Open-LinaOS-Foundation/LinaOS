@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/efi.h>
+#include <linaos/efi.h>
 #include <asm/efi.h>
 
 #include "efistub.h"

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/adfs/super.c
+ *  linaos/fs/adfs/super.c
  *
  *  Copyright (C) 1997-1999 Russell King
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/parser.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/user_namespace.h>
-#include <linux/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/parser.h>
+#include <linaos/mount.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/statfs.h>
+#include <linaos/user_namespace.h>
+#include <linaos/blkdev.h>
 #include "adfs.h"
 #include "dir_f.h"
 #include "dir_fplus.h"

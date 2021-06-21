@@ -58,7 +58,7 @@ Supported chips:
     https://www.ti.com/product/LM5066I
 
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

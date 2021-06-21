@@ -9,13 +9,13 @@
 #define KMSG_COMPONENT "hmcdrv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
 
-#include <linux/ctype.h>
-#include <linux/crc16.h>
+#include <linaos/ctype.h>
+#include <linaos/crc16.h>
 
 #include "hmcdrv_ftp.h"
 #include "hmcdrv_cache.h"

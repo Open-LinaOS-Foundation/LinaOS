@@ -4,12 +4,12 @@
 //
 // Copyright (C) 2014 Freescale Semiconductor, Inc.
 
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

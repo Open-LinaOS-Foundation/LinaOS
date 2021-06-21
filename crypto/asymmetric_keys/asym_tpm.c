@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) "ASYM-TPM: "fmt
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/tpm.h>
-#include <linux/tpm_command.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/seq_file.h>
+#include <linaos/scatterlist.h>
+#include <linaos/tpm.h>
+#include <linaos/tpm_command.h>
 #include <crypto/akcipher.h>
 #include <crypto/hash.h>
 #include <crypto/sha1.h>

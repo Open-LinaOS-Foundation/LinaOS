@@ -2,14 +2,14 @@
 /*
     Conexant cx24123/cx24109 - DVB QPSK Satellite demod/tuner driver
 
-    Copyright (C) 2005 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2005 Steven Toth <stoth@linaostv.org>
 
 */
 
 #ifndef CX24123_H
 #define CX24123_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct cx24123_config {
 	/* the demodulator's i2c address */

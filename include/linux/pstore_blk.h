@@ -3,9 +3,9 @@
 #ifndef __PSTORE_BLK_H_
 #define __PSTORE_BLK_H_
 
-#include <linux/types.h>
-#include <linux/pstore.h>
-#include <linux/pstore_zone.h>
+#include <linaos/types.h>
+#include <linaos/pstore.h>
+#include <linaos/pstore_zone.h>
 
 /**
  * struct pstore_device_info - back-end pstore/blk driver structure.
@@ -13,7 +13,7 @@
  * @total_size: The total size in bytes pstore/blk can use. It must be greater
  *		than 4096 and be multiple of 4096.
  * @flags:	Refer to macro starting with PSTORE_FLAGS defined in
- *		linux/pstore.h. It means what front-ends this device support.
+ *		linaos/pstore.h. It means what front-ends this device support.
  *		Zero means all backends for compatible.
  * @read:	The general read operation. Both of the function parameters
  *		@size and @offset are relative value to bock device (not the

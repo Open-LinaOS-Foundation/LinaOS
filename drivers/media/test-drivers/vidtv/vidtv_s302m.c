@@ -17,18 +17,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s, %d: " fmt, __func__, __LINE__
 
-#include <linux/bug.h>
-#include <linux/crc32.h>
-#include <linux/fixp-arith.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/printk.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <linaos/bug.h>
+#include <linaos/crc32.h>
+#include <linaos/fixp-arith.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/printk.h>
+#include <linaos/ratelimit.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/vmalloc.h>
 
 #include "vidtv_common.h"
 #include "vidtv_encoder.h"

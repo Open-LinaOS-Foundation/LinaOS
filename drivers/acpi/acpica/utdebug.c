@@ -93,7 +93,7 @@ static const char *acpi_ut_trim_function_name(const char *function_name)
 
 	if (*(ACPI_CAST_PTR(u32, function_name)) == ACPI_PREFIX_LOWER) {
 
-		/* This is the case where the source has been 'linuxized' */
+		/* This is the case where the source has been 'linaosized' */
 
 		return (function_name + 5);
 	}

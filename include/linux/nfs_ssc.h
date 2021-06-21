@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/nfs_ssc.h
+ * include/linaos/nfs_ssc.h
  *
  * Author: Dai Ngo <dai.ngo@oracle.com>
  *
  * Copyright (c) 2020, Oracle and/or its affiliates.
  */
 
-#include <linux/nfs_fs.h>
+#include <linaos/nfs_fs.h>
 
 extern struct nfs_ssc_client_ops_tbl nfs_ssc_client_tbl;
 

@@ -2,18 +2,18 @@
 /*
 
   Sun3 Lance ethernet driver, by Sam Creasey (sammy@users.qual.net).
-  This driver is a part of the linux kernel, and is thus distributed
+  This driver is a part of the linaos kernel, and is thus distributed
   under the GNU General Public License.
 
   The values used in LANCE_OBIO and LANCE_IRQ seem to be empirically
   true for the correct IRQ and address of the lance registers.  They
   have not been widely tested, however.  What we probably need is a
   "proper" way to search for a device in the sun3's prom, but, alas,
-  linux has no such thing.
+  linaos has no such thing.
 
   This driver is largely based on atarilance.c, by Roman Hodek.  Other
   sources of inspiration were the NetBSD sun3 am7990 driver, and the
-  linux sparc lance driver (sunlance.c).
+  linaos sparc lance driver (sunlance.c).
 
   There are more assumptions made throughout this driver, it almost
   certainly still needs work, but it does work at least for RARP/BOOTP and
@@ -24,20 +24,20 @@
 static const char version[] =
 "sun3lance.c: v1.2 1/12/2001  Sam Creasey (sammy@sammy.net)\n";
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/bitops.h>
+#include <linaos/pgtable.h>
 
 #include <asm/cacheflush.h>
 #include <asm/setup.h>

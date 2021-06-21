@@ -6,7 +6,7 @@
  ******************************************************************************/
 #define _RTW_WLAN_UTIL_C_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #include <osdep_service.h>
 #include <drv_types.h>

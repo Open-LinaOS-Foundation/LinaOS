@@ -5,16 +5,16 @@
  * Copyright 2013 Oleksandr Kravchenko <o.v.kravchenko@globallogic.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/interrupt.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
 
 #define APDS9300_DRV_NAME "apds9300"
 #define APDS9300_IRQ_NAME "apds9300_event"

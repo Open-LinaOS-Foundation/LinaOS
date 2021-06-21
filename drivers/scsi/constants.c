@@ -2,15 +2,15 @@
 /*
  * ASCII values for a number of symbolic constants, printing functions,
  * etc.
- * Additions for SCSI 2 and Linux 2.2.x by D. Gilbert (990422)
+ * Additions for SCSI 2 and LinaOS 2.2.x by D. Gilbert (990422)
  * Additions for SCSI 3+ (SPC-3 T10/1416-D Rev 07 3 May 2002)
  *   by D. Gilbert and aeb (20020609)
  * Updated to SPC-4 T10/1713-D Rev 36g, D. Gilbert 20130701
  */
 
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

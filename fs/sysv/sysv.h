@@ -2,12 +2,12 @@
 #ifndef _SYSV_H
 #define _SYSV_H
 
-#include <linux/buffer_head.h>
+#include <linaos/buffer_head.h>
 
 typedef __u16 __bitwise __fs16;
 typedef __u32 __bitwise __fs32;
 
-#include <linux/sysv_fs.h>
+#include <linaos/sysv_fs.h>
 
 /*
  * SystemV/V7/Coherent super-block data in memory

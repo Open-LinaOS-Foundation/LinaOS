@@ -3,20 +3,20 @@
 // Driver for the IMX keypad port.
 // Copyright (C) 2009 Alberto Panizzo <maramaopercheseimorto@gmail.com>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
 
 /*
  * Keypad Controller registers (halfword)

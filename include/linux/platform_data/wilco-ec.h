@@ -8,8 +8,8 @@
 #ifndef WILCO_EC_H
 #define WILCO_EC_H
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 /* Message flags for using the mailbox() interface */
 #define WILCO_EC_FLAG_NO_RESPONSE	BIT(0) /* EC does not respond */

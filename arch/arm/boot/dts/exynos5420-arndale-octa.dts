@@ -45,7 +45,7 @@
 		wakeup {
 			label = "SW-TACT1";
 			gpios = <&gpx2 7 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			wakeup-source;
 		};
 	};

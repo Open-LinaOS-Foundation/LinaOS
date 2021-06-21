@@ -6,11 +6,11 @@
 /* rpcrdma.ko module initialization
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sunrpc/svc_rdma.h>
 
 #include <asm/swab.h>
 

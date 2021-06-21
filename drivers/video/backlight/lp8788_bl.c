@@ -7,13 +7,13 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linaos/backlight.h>
+#include <linaos/err.h>
+#include <linaos/mfd/lp8788.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
 
 /* Register address */
 #define LP8788_BL_CONFIG		0x96

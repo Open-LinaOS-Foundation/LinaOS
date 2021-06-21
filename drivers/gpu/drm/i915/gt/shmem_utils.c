@@ -3,9 +3,9 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/shmem_fs.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/shmem_fs.h>
 
 #include "gem/i915_gem_object.h"
 #include "shmem_utils.h"

@@ -19,7 +19,7 @@ Volker Götz (volker@oops.franken.de)
   For contribution of man-pages, the imontty-tool and a perfect
   maintaining of the mailing-list at hub-wue.
 
-Matthias Hessler (hessler@isdn4linux.de)
+Matthias Hessler (hessler@isdn4linaos.de)
   For creating and maintaining the FAQ.
 
 Bernhard Hailer (Bernhard.Hailer@lrz.uni-muenchen.de)
@@ -31,7 +31,7 @@ Michael 'Ghandi' Herold (michael@abadonna.franken.de)
 Michael Hipp (Michael.Hipp@student.uni-tuebingen.de)
   For his Sync-PPP-code.
 
-Karsten Keil (keil@isdn4linux.de)
+Karsten Keil (keil@isdn4linaos.de)
   For adding 1TR6-support to the Teles-driver.
   For the HiSax-driver.
 

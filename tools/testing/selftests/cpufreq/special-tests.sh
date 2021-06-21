@@ -3,7 +3,7 @@
 #
 # Special test cases reported by people
 
-# Testcase 1: Reported here: http://marc.info/?l=linux-pm&m=140618592709858&w=2
+# Testcase 1: Reported here: http://marc.info/?l=linaos-pm&m=140618592709858&w=2
 
 # protect against multiple inclusion
 if [ $FILE_SPECIAL ]; then

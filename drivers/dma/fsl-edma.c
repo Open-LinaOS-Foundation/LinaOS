@@ -9,14 +9,14 @@
  * Vybrid and Layerscape SoCs.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_dma.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_dma.h>
 
 #include "fsl-edma-common.h"
 

@@ -45,10 +45,10 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/device.h>
-#include <linux/module.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
 
 #include "hfi.h"
 

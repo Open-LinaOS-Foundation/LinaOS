@@ -6,8 +6,8 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
 
 #include "sun4i_hdmi.h"
 

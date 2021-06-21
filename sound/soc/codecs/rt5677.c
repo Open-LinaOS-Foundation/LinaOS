@@ -6,24 +6,24 @@
  * Author: Oder Chiou <oder_chiou@realtek.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/firmware.h>
-#include <linux/of_device.h>
-#include <linux/property.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/firmware.h>
+#include <linaos/of_device.h>
+#include <linaos/property.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/workqueue.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

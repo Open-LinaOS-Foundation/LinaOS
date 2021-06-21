@@ -4,15 +4,15 @@
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
  
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/atmdev.h>
+#include <linaos/sonet.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
 
 #include "uPD98402.h"
 

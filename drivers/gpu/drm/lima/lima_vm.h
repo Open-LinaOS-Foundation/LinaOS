@@ -5,7 +5,7 @@
 #define __LIMA_VM_H__
 
 #include <drm/drm_mm.h>
-#include <linux/kref.h>
+#include <linaos/kref.h>
 
 #define LIMA_PAGE_SIZE    4096
 #define LIMA_PAGE_MASK    (LIMA_PAGE_SIZE - 1)

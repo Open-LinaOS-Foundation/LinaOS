@@ -9,11 +9,11 @@
 #ifndef __OPERATION_H
 #define __OPERATION_H
 
-#include <linux/completion.h>
-#include <linux/kref.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/completion.h>
+#include <linaos/kref.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 struct gb_host_device;
 struct gb_operation;

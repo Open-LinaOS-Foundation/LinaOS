@@ -6,7 +6,7 @@
  *
  * Copyright (C) 2001-2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the LinaOS kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -37,11 +37,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/poll.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/poll.h>
+#include <linaos/spinlock.h>
 
 #include "sisusb.h"
 #include "sisusb_init.h"

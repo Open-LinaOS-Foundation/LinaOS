@@ -6,7 +6,7 @@ Description:	Directory containing information about the system's IRQs.
 		Specifically, data from the associated struct irq_desc.
 		The information here is similar to that in /proc/interrupts
 		but in a more machine-friendly format.  This directory contains
-		one subdirectory for each Linux IRQ number.
+		one subdirectory for each LinaOS IRQ number.
 
 What:		/sys/kernel/irq/<irq>/actions
 Date:		September 2016
@@ -27,7 +27,7 @@ Date:		September 2016
 KernelVersion:	4.9
 Contact:	Craig Gallek <kraig@google.com>
 Description:	When interrupt translation domains are used, this file contains
-		the underlying hardware IRQ number used for this Linux IRQ.
+		the underlying hardware IRQ number used for this LinaOS IRQ.
 
 What:		/sys/kernel/irq/<irq>/name
 Date:		September 2016
@@ -55,6 +55,6 @@ Description:	The type of the interrupt.  Either the string 'level' or 'edge'.
 What:		/sys/kernel/irq/<irq>/wakeup
 Date:		March 2018
 KernelVersion:	4.17
-Contact:	Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+Contact:	Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
 Description:	The wakeup state of the interrupt. Either the string
 		'enabled' or 'disabled'.

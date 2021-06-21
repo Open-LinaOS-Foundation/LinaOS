@@ -6,7 +6,7 @@
  */
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "rtllib.h"
 #include "rtl819x_BA.h"
 

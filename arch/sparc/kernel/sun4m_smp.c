@@ -5,12 +5,12 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/delay.h>
-#include <linux/sched/mm.h>
-#include <linux/cpu.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/profile.h>
+#include <linaos/delay.h>
+#include <linaos/sched/mm.h>
+#include <linaos/cpu.h>
 
 #include <asm/cacheflush.h>
 #include <asm/switch_to.h>

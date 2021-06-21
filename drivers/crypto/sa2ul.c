@@ -8,15 +8,15 @@
  *		Vitaly Andrianov
  *		Tero Kristo
  */
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dmapool.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #include <crypto/aes.h>
 #include <crypto/authenc.h>
@@ -152,7 +152,7 @@ struct algo_data {
  * @registered: Flag indicating if the crypto algorithm is already registered
  */
 struct sa_alg_tmpl {
-	u32 type;		/* CRYPTO_ALG_TYPE from <linux/crypto.h> */
+	u32 type;		/* CRYPTO_ALG_TYPE from <linaos/crypto.h> */
 	union {
 		struct skcipher_alg skcipher;
 		struct ahash_alg ahash;

@@ -2,9 +2,9 @@
 #ifndef _LINUX_ELF_H
 #define _LINUX_ELF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/elf.h>
-#include <uapi/linux/elf.h>
+#include <uapi/linaos/elf.h>
 
 #ifndef elf_read_implies_exec
   /* Executables for which elf_read_implies_exec() returns TRUE will

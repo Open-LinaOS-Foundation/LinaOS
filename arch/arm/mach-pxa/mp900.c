@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/mp900.c
+ *  linaos/arch/arm/mach-pxa/mp900.c
  *
  *  Support for the NEC MobilePro900/C platform
  *
@@ -10,11 +10,11 @@
  *  2007, 2008 Michael Petchkovsky <mkpetch@internode.on.net>
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/usb/isp116x.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/usb/isp116x.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

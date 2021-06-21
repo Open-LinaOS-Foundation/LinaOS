@@ -13,16 +13,16 @@
  *   produced with old duty cycle but new period settings.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
 
 #define PWM_IMX_TPM_PARAM	0x4
 #define PWM_IMX_TPM_GLOBAL	0x8

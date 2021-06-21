@@ -7,7 +7,7 @@
 #ifndef __ASM_IRQFLAGS_H
 #define __ASM_IRQFLAGS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ARCH_IRQ_ENABLED	(3UL << (BITS_PER_LONG - 8))
 

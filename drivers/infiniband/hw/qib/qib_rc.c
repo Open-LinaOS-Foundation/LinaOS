@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include "qib.h"
 

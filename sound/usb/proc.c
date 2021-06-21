@@ -2,8 +2,8 @@
 /*
  */
 
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <linaos/init.h>
+#include <linaos/usb.h>
 
 #include <sound/core.h>
 #include <sound/info.h>

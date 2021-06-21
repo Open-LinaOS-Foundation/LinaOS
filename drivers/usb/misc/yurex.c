@@ -5,15 +5,15 @@
  * Copyright (C) 2010 Tomoki Sekiyama (tomoki.sekiyama@gmail.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/hid.h>
 
 #define DRIVER_AUTHOR "Tomoki Sekiyama"
 #define DRIVER_DESC "Driver for Meywa-Denki & KAYAC YUREX"

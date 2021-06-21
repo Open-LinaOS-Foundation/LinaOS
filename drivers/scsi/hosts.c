@@ -22,19 +22,19 @@
  *  September 04, 2002 Mike Anderson (andmike@us.ibm.com)
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/transport_class.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/completion.h>
+#include <linaos/transport_class.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/idr.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

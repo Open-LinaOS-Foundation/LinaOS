@@ -23,7 +23,7 @@
 #include "misc.h"
 
 /* These actually do the work of building the kernel identity maps. */
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/cmpxchg.h>
 #include <asm/trap_pf.h>
 #include <asm/trapnr.h>

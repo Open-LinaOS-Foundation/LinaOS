@@ -18,7 +18,7 @@
 
 # Step 3 is used to place certain information in the module's ELF
 # section, including information such as:
-#   Version magic (see include/linux/vermagic.h for full details)
+#   Version magic (see include/linaos/vermagic.h for full details)
 #     - Kernel release
 #     - SMP is CONFIG_SMP
 #     - PREEMPT is CONFIG_PREEMPT[_RT]
@@ -27,7 +27,7 @@
 #     - Module version (MODULE_VERSION)
 #     - Module alias'es (MODULE_ALIAS)
 #     - Module license (MODULE_LICENSE)
-#     - See include/linux/module.h for more details
+#     - See include/linaos/module.h for more details
 
 # Step 4 is solely used to allow module versioning in external modules,
 # where the CRC of each module is retrieved from the Module.symvers file.
@@ -55,25 +55,25 @@ ifdef MODPOST_VMLINUX
 quiet_cmd_modpost = MODPOST $@
       cmd_modpost = $(MODPOST) $<
 
-vmlinux.symvers: vmlinux.o
+vmlinaos.symvers: vmlinaos.o
 	$(call cmd,modpost)
 
-__modpost: vmlinux.symvers
+__modpost: vmlinaos.symvers
 
 else
 
 ifeq ($(KBUILD_EXTMOD),)
 
-input-symdump := vmlinux.symvers
+input-symdump := vmlinaos.symvers
 output-symdump := modules-only.symvers
 
 quiet_cmd_cat = GEN     $@
       cmd_cat = cat $(real-prereqs) > $@
 
-ifneq ($(wildcard vmlinux.symvers),)
+ifneq ($(wildcard vmlinaos.symvers),)
 
 __modpost: Module.symvers
-Module.symvers: vmlinux.symvers modules-only.symvers FORCE
+Module.symvers: vmlinaos.symvers modules-only.symvers FORCE
 	$(call if_changed,cat)
 
 targets += Module.symvers

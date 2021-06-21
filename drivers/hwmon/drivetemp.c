@@ -95,14 +95,14 @@
  *   the temperature.
  */
 
-#include <linux/ata.h>
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/hwmon.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/ata.h>
+#include <linaos/bits.h>
+#include <linaos/device.h>
+#include <linaos/hwmon.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_driver.h>

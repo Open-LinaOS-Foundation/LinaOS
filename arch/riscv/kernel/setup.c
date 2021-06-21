@@ -8,19 +8,19 @@
  *  Nick Kossifidis <mick@ics.forth.gr>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/sched/task.h>
-#include <linux/swiotlb.h>
-#include <linux/smp.h>
-#include <linux/efi.h>
-#include <linux/crash_dump.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/sched.h>
+#include <linaos/console.h>
+#include <linaos/screen_info.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/sched/task.h>
+#include <linaos/swiotlb.h>
+#include <linaos/smp.h>
+#include <linaos/efi.h>
+#include <linaos/crash_dump.h>
 
 #include <asm/cpu_ops.h>
 #include <asm/early_ioremap.h>

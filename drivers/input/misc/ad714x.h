@@ -8,7 +8,7 @@
 #ifndef _AD714X_H_
 #define _AD714X_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define STAGE_NUM              12
 

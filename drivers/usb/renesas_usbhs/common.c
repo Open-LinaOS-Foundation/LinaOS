@@ -6,16 +6,16 @@
  * Copyright (C) 2019 Renesas Electronics Corporation
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 #include "common.h"
 #include "rcar2.h"
 #include "rcar3.h"

@@ -17,14 +17,14 @@
  *  to keep track of what period we are in.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

@@ -3,7 +3,7 @@
 #define _LINUX_ATARI_JOYSTICK_H
 
 /*
- * linux/include/linux/atari_joystick.h
+ * linaos/include/linaos/atari_joystick.h
  * header file for Atari Joystick driver
  * by Robert de Vries (robert@and.nl) on 19Jul93
  */

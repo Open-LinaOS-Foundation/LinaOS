@@ -7,15 +7,15 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/gfp.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/hw_random.h>
+#include <linaos/gfp.h>
 
 #define TX4939_RNG_RCSR		0x00000000
 #define TX4939_RNG_ROR(n)	(0x00000018 + (n) * 8)

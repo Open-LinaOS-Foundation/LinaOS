@@ -6,15 +6,15 @@
  * Common Clock Framework support for Audio Subsystem Clock Controller.
 */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #include <dt-bindings/clock/exynos-audss-clk.h>
 

@@ -10,13 +10,13 @@
  * kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

@@ -7,10 +7,10 @@
  *              Jeff Layton <jlayton@kernel.org>
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/inet.h>
-#include <linux/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/inet.h>
+#include <linaos/ctype.h>
 #include "cifsglob.h"
 #include "cifsproto.h"
 

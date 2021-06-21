@@ -7,7 +7,7 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 /*
- * This file defines the kernel register usage convention used by Linux/ia64.
+ * This file defines the kernel register usage convention used by LinaOS/ia64.
  */
 
 /*

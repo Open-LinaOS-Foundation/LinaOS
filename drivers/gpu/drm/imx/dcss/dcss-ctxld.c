@@ -3,11 +3,11 @@
  * Copyright 2019 NXP.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "dcss-dev.h"
 

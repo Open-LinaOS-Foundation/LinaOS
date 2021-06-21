@@ -5,7 +5,7 @@
  * Copyright (c) 2015-2017 Takashi Sakamoto <o-takashi@sakamocchi.jp>
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "motu.h"
 
 #define V3_CLOCK_STATUS_OFFSET		0x0b14

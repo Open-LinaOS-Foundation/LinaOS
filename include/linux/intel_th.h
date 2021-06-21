@@ -8,7 +8,7 @@
 #ifndef _INTEL_TH_H_
 #define _INTEL_TH_H_
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 /* MSC operating modes (MSC_MODE) */
 enum {

@@ -10,18 +10,18 @@
 
 #define pr_fmt(fmt)	"CPPC Cpufreq:"	fmt
 
-#include <linux/arch_topology.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/dmi.h>
-#include <linux/irq_work.h>
-#include <linux/kthread.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <uapi/linux/sched/types.h>
+#include <linaos/arch_topology.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/dmi.h>
+#include <linaos/irq_work.h>
+#include <linaos/kthread.h>
+#include <linaos/time.h>
+#include <linaos/vmalloc.h>
+#include <uapi/linaos/sched/types.h>
 
 #include <asm/unaligned.h>
 

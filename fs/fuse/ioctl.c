@@ -5,9 +5,9 @@
 
 #include "fuse_i.h"
 
-#include <linux/uio.h>
-#include <linux/compat.h>
-#include <linux/fileattr.h>
+#include <linaos/uio.h>
+#include <linaos/compat.h>
+#include <linaos/fileattr.h>
 
 /*
  * CUSE servers compiled on 32bit broke on 64bit kernels because the

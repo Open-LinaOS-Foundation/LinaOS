@@ -5,7 +5,7 @@
  * Copyright (c) 2020 NovaTech LLC
  */
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "dsa_priv.h"
 

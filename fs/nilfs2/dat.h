@@ -10,10 +10,10 @@
 #ifndef _NILFS_DAT_H
 #define _NILFS_DAT_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/nilfs2_ondisk.h>	/* nilfs_inode, nilfs_checkpoint */
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
+#include <linaos/fs.h>
+#include <linaos/nilfs2_ondisk.h>	/* nilfs_inode, nilfs_checkpoint */
 
 
 struct nilfs_palloc_req;

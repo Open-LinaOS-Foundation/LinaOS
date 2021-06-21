@@ -7,9 +7,9 @@
  *    Jaswinder Singh (jaswinder.singh@linaro.org)
  */
 
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/module.h>
+#include <linaos/usb/audio.h>
+#include <linaos/usb/audio-v2.h>
+#include <linaos/module.h>
 
 #include "u_audio.h"
 #include "u_uac2.h"

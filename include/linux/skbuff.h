@@ -10,35 +10,35 @@
 #ifndef _LINUX_SKBUFF_H
 #define _LINUX_SKBUFF_H
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/time.h>
-#include <linux/bug.h>
-#include <linux/bvec.h>
-#include <linux/cache.h>
-#include <linux/rbtree.h>
-#include <linux/socket.h>
-#include <linux/refcount.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/time.h>
+#include <linaos/bug.h>
+#include <linaos/bvec.h>
+#include <linaos/cache.h>
+#include <linaos/rbtree.h>
+#include <linaos/socket.h>
+#include <linaos/refcount.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/types.h>
-#include <linux/spinlock.h>
-#include <linux/net.h>
-#include <linux/textsearch.h>
+#include <linaos/spinlock.h>
+#include <linaos/net.h>
+#include <linaos/textsearch.h>
 #include <net/checksum.h>
-#include <linux/rcupdate.h>
-#include <linux/hrtimer.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdev_features.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/hrtimer.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdev_features.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
 #include <net/flow_dissector.h>
-#include <linux/splice.h>
-#include <linux/in6.h>
-#include <linux/if_packet.h>
+#include <linaos/splice.h>
+#include <linaos/in6.h>
+#include <linaos/if_packet.h>
 #include <net/flow.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
-#include <linux/netfilter/nf_conntrack_common.h>
+#include <linaos/netfilter/nf_conntrack_common.h>
 #endif
 
 /* The interface for checksum offload between the stack and networking drivers
@@ -136,7 +136,7 @@
  *
  *   A checksum is set up to be offloaded to a device as described in the
  *   output description for CHECKSUM_PARTIAL. This may occur on a packet
- *   received directly from another Linux OS, e.g., a virtualized Linux kernel
+ *   received directly from another LinaOS OS, e.g., a virtualized LinaOS kernel
  *   on the same host, or it may be set in the input path in GRO or remote
  *   checksum offload. For the purposes of checksum verification, the checksum
  *   referred to by skb->csum_start + skb->csum_offset and any preceding

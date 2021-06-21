@@ -8,20 +8,20 @@
  * Author: Dong Aisheng <dong.aisheng@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/hwspinlock.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/hwspinlock.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_data/syscon.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/slab.h>
 
 static struct platform_driver syscon_driver;
 

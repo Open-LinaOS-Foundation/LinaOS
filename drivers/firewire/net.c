@@ -8,25 +8,25 @@
  * based on eth1394 by Ben Collins et al
  */
 
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/highmem.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/jiffies.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/bug.h>
+#include <linaos/compiler.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/ethtool.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/highmem.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/jiffies.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mutex.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include <asm/unaligned.h>
 #include <net/arp.h>
@@ -1364,7 +1364,7 @@ static netdev_tx_t fwnet_tx(struct sk_buff *skb, struct net_device *net)
 	/*
 	 * FIXME: According to a patch from 2003-02-26, "returning non-zero
 	 * causes serious problems" here, allegedly.  Before that patch,
-	 * -ERRNO was returned which is not appropriate under Linux 2.6.
+	 * -ERRNO was returned which is not appropriate under LinaOS 2.6.
 	 * Perhaps more needs to be done?  Stop the queue in serious
 	 * conditions and restart it elsewhere?
 	 */

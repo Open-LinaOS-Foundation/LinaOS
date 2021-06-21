@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - device-independent routines
+ * LinaOS ARCnet driver - device-independent routines
  *
  * Written 1997 by David Woodhouse.
  * Written 1994-1999 by Avery Pennarun.
@@ -28,7 +28,7 @@
  *  - arcnet.c v0.00 dated 1/1/94 and apparently by
  *     Donald Becker - it didn't work :)
  *  - skeleton.c v0.05 dated 11/16/93 by Donald Becker
- *     (from Linux Kernel 1.1.45)
+ *     (from LinaOS Kernel 1.1.45)
  *  - RFC's 1201 and 1051 - re: TCP/IP over ARCnet
  *  - The official ARCnet COM9026 data sheets (!) thanks to
  *     Ken Cornetet <kcornete@nyx10.cs.du.edu>
@@ -36,24 +36,24 @@
  *  - Information on some more obscure ARCnet controller chips, thanks
  *     to the nice people at SMSC.
  *  - net/inet/eth.c (from kernel 1.1.50) for header-building info.
- *  - Alternate Linux ARCnet source by V.Shergin <vsher@sao.stavropol.su>
+ *  - Alternate LinaOS ARCnet source by V.Shergin <vsher@sao.stavropol.su>
  *  - Textual information and more alternate source from Joachim Koenig
  *     <jojo@repas.de>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
 #include <net/arp.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/errqueue.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/errqueue.h>
 
-#include <linux/leds.h>
+#include <linaos/leds.h>
 
 #include "arcdevice.h"
 #include "com9026.h"

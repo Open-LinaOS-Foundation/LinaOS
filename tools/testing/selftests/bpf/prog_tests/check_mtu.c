@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Jesper Dangaard Brouer */
 
-#include <linux/if_link.h> /* before test_progs.h, avoid bpf_util.h redefines */
+#include <linaos/if_link.h> /* before test_progs.h, avoid bpf_util.h redefines */
 #include <test_progs.h>
 #include "test_check_mtu.skel.h"
 #include "network_helpers.h"

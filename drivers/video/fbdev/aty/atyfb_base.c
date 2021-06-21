@@ -48,30 +48,30 @@
 
 ******************************************************************************/
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/compiler.h>
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/backlight.h>
-#include <linux/reboot.h>
-#include <linux/dmi.h>
+#include <linaos/compat.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/compiler.h>
+#include <linaos/console.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/backlight.h>
+#include <linaos/reboot.h>
+#include <linaos/dmi.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <video/mach64.h>
 #include "atyfb.h"
@@ -89,8 +89,8 @@
 #endif
 
 #ifdef CONFIG_ADB_PMU
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
 #endif
 #ifdef CONFIG_BOOTX_TEXT
 #include <asm/btext.h>

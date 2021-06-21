@@ -5,14 +5,14 @@ Exporting kernel headers for use by userspace
 The "make headers_install" command exports the kernel's header files in a
 form suitable for use by userspace programs.
 
-The linux kernel's exported header files describe the API for user space
+The linaos kernel's exported header files describe the API for user space
 programs attempting to use kernel services.  These kernel header files are
 used by the system's C library (such as glibc or uClibc) to define available
 system calls, as well as constants and structures to be used with these
 system calls.  The C library's header files include the kernel header files
-from the "linux" subdirectory.  The system's libc headers are usually
+from the "linaos" subdirectory.  The system's libc headers are usually
 installed at the default location /usr/include and the kernel headers in
-subdirectories under that (most notably /usr/include/linux and
+subdirectories under that (most notably /usr/include/linaos and
 /usr/include/asm).
 
 Kernel headers are backwards compatible, but not forwards compatible.  This
@@ -28,7 +28,7 @@ optional arguments::
   make headers_install ARCH=i386 INSTALL_HDR_PATH=/usr
 
 ARCH indicates which architecture to produce headers for, and defaults to the
-current architecture.  The linux/asm directory of the exported kernel headers
+current architecture.  The linaos/asm directory of the exported kernel headers
 is platform-specific, to see a complete list of supported architectures use
 the command::
 

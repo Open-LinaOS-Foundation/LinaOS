@@ -10,12 +10,12 @@
 #ifndef _V4L2_IOCTL_H
 #define _V4L2_IOCTL_H
 
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/mutex.h>
-#include <linux/sched/signal.h>
-#include <linux/compiler.h> /* need __user */
-#include <linux/videodev2.h>
+#include <linaos/poll.h>
+#include <linaos/fs.h>
+#include <linaos/mutex.h>
+#include <linaos/sched/signal.h>
+#include <linaos/compiler.h> /* need __user */
+#include <linaos/videodev2.h>
 
 struct v4l2_fh;
 

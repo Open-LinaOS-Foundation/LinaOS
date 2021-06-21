@@ -114,12 +114,12 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/kmod.h>
+#include <linaos/delay.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

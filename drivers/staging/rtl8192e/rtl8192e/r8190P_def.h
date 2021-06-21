@@ -7,7 +7,7 @@
 #ifndef R8190P_DEF_H
 #define R8190P_DEF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define		MAX_SILENT_RESET_RX_SLOT_NUM	10
 

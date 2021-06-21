@@ -3,7 +3,7 @@
     MaxLinear MXL5005S VSB/QAM/DVBT tuner driver
 
     Copyright (C) 2008 MaxLinear
-    Copyright (C) 2008 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2008 Steven Toth <stoth@linaostv.org>
 
 
 */
@@ -11,7 +11,7 @@
 #ifndef __MXL5005S_H
 #define __MXL5005S_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 struct mxl5005s_config {

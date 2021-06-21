@@ -5,11 +5,11 @@
  * Copyright 2016 Christophe Leroy, CS Systemes d'Information
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/perf_event.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
 #include <asm/pmc.h>
 #include <asm/machdep.h>
 #include <asm/firmware.h>

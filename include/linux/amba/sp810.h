@@ -12,7 +12,7 @@
 #ifndef __AMBA_SP810_H
 #define __AMBA_SP810_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /* sysctl registers offset */
 #define SCCTRL			0x000

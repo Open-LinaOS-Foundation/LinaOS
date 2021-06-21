@@ -9,10 +9,10 @@ The bcache wiki can be found at:
   https://bcache.evilpiepirate.org
 
 This is the git repository of bcache-tools:
-  https://git.kernel.org/pub/scm/linux/kernel/git/colyli/bcache-tools.git/
+  https://git.kernel.org/pub/scm/linaos/kernel/git/colyli/bcache-tools.git/
 
-The latest bcache kernel code can be found from mainline Linux kernel:
-  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+The latest bcache kernel code can be found from mainline LinaOS kernel:
+  https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/
 
 It's designed around the performance characteristics of SSDs - it only allocates
 in erase block sized buckets, and it uses a hybrid btree/log to track cached
@@ -184,7 +184,7 @@ or disappeared and came back, and needs to be (re-)registered::
 C) Corrupt bcache crashes the kernel at device registration time:
 
 This should never happen.  If it does happen, then you have found a bug!
-Please report it to the bcache development list: linux-bcache@vger.kernel.org
+Please report it to the bcache development list: linaos-bcache@vger.kernel.org
 
 Be sure to provide as much information that you can including kernel dmesg
 output if available so that we may assist.

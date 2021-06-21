@@ -3,7 +3,7 @@
  *  Copyright (C) 2017  Steven Rostedt, VMware Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/page_types.h>
 #include <asm/segment.h>
 #include <asm/export.h>

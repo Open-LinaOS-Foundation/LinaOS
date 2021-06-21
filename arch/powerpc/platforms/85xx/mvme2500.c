@@ -13,7 +13,7 @@
  * Author Alessio Igor Bogani <alessio.bogani@elettra.eu>
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <asm/udbg.h>
 #include <asm/mpic.h>
 #include <sysdev/fsl_soc.h>

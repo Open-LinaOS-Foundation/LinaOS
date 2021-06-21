@@ -38,8 +38,8 @@
 #define ARCH_HAS_IOREMAP_WC
 #define ARCH_HAS_IOREMAP_WT
 
-#include <linux/string.h>
-#include <linux/compiler.h>
+#include <linaos/string.h>
+#include <linaos/compiler.h>
 #include <asm/page.h>
 #include <asm/early_ioremap.h>
 #include <asm/pgtable_types.h>
@@ -257,7 +257,7 @@ static inline void slow_down_io(void)
 #endif
 
 #ifdef CONFIG_AMD_MEM_ENCRYPT
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 extern struct static_key_false sev_enable_key;
 static inline bool sev_key_active(void)

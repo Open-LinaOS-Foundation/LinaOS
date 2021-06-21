@@ -7,7 +7,7 @@
  * Copyright (C) 2005, 2007-2009  Bartlomiej Zolnierkiewicz
  *
  * May be copied or modified under the terms of the GNU General Public
- * License.  See linux/COPYING for more information.
+ * License.  See linaos/COPYING for more information.
  *
  * See Documentation/cdrom/ide-cd.rst for usage information.
  *
@@ -25,29 +25,29 @@
 
 #define IDECD_VERSION "5.00"
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched/task_stack.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/cdrom.h>
-#include <linux/ide.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/bcd.h>
+#include <linaos/compat.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/cdrom.h>
+#include <linaos/ide.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/bcd.h>
 
 /* For SCSI -> ATAPI command conversion */
 #include <scsi/scsi.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unaligned.h>
 
 #include "ide-cd.h"

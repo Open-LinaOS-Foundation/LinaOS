@@ -11,12 +11,12 @@
 #include <crypto/internal/geniv.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 static void seqiv_aead_encrypt_complete2(struct aead_request *req, int err)
 {

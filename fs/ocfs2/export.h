@@ -10,7 +10,7 @@
 #ifndef OCFS2_EXPORT_H
 #define OCFS2_EXPORT_H
 
-#include <linux/exportfs.h>
+#include <linaos/exportfs.h>
 
 extern const struct export_operations ocfs2_export_ops;
 

@@ -8,7 +8,7 @@
  * Copyright © 2012-2013 Jussi Kivilinna <jussi.kivilinna@iki.fi>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/frame.h>
 #include "glue_helper-asm-avx.S"
 

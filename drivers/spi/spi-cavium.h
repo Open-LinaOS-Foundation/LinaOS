@@ -2,7 +2,7 @@
 #ifndef __SPI_CAVIUM_H
 #define __SPI_CAVIUM_H
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 
 #define OCTEON_SPI_MAX_BYTES 9
 #define OCTEON_SPI_MAX_CLOCK_HZ 16000000

@@ -2,7 +2,7 @@
 /*
  *  DS1287 timer functions.
  *
- *  Copyright (C) 2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2008  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef __ASM_DS1287_H
 #define __ASM_DS1287_H

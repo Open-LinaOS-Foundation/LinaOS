@@ -13,22 +13,22 @@
 #define prn(num) pr_debug(#num "=%d\n", num)
 #define prx(num) pr_debug(#num "=%x\n", num)
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/crypto.h>
-#include <linux/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
+#include <linaos/crypto.h>
+#include <linaos/interrupt.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/aes.h>
 #include <crypto/gcm.h>

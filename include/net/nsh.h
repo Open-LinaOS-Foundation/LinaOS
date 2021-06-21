@@ -1,7 +1,7 @@
 #ifndef __NET_NSH_H
 #define __NET_NSH_H 1
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 /*
  * Network Service Header:

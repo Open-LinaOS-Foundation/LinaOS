@@ -9,7 +9,7 @@
 #define IIO_CDC_AD7746_H_
 
 /*
- * TODO: struct ad7746_platform_data needs to go into include/linux/iio
+ * TODO: struct ad7746_platform_data needs to go into include/linaos/iio
  */
 
 #define AD7466_EXCLVL_0		0 /* +-VDD/8 */

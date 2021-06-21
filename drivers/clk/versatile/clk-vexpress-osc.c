@@ -4,14 +4,14 @@
  * Copyright (C) 2012 ARM Limited
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/vexpress.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/vexpress.h>
 
 struct vexpress_osc {
 	struct regmap *reg;

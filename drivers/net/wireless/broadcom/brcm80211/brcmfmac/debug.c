@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2012 Broadcom Corporation
  */
-#include <linux/debugfs.h>
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/devcoredump.h>
+#include <linaos/debugfs.h>
+#include <linaos/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/devcoredump.h>
 
 #include <brcmu_wifi.h>
 #include <brcmu_utils.h>

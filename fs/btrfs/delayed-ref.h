@@ -6,7 +6,7 @@
 #ifndef BTRFS_DELAYED_REF_H
 #define BTRFS_DELAYED_REF_H
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 
 /* these are the possible values of struct btrfs_delayed_ref_node->action */
 #define BTRFS_ADD_DELAYED_REF    1 /* add one backref to the tree */

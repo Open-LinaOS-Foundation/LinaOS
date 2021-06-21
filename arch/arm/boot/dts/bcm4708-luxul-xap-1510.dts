@@ -26,19 +26,19 @@
 		5ghz {
 			label = "bcm53xx:blue:5ghz";
 			gpios = <&chipcommon 13 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 
 		2ghz {
 			label = "bcm53xx:blue:2ghz";
 			gpios = <&chipcommon 14 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 
 		status {
 			label = "bcm53xx:green:status";
 			gpios = <&chipcommon 15 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 		};
 	};
 
@@ -47,7 +47,7 @@
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 11 GPIO_ACTIVE_LOW>;
 		};
 	};

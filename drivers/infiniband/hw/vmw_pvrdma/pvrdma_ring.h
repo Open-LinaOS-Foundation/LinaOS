@@ -46,7 +46,7 @@
 #ifndef __PVRDMA_RING_H__
 #define __PVRDMA_RING_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PVRDMA_INVALID_IDX	-1	/* Invalid index. */
 

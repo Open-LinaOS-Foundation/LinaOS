@@ -9,33 +9,33 @@
  * (C) Copyright 2017 Sootech SA
  */
 
-#include <linux/clk.h>
-#include <linux/clk/sunxi-ng.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/clk/sunxi-ng.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sd.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 /* register offset definitions */
 #define SDXC_REG_GCTRL	(0x00) /* SMC Global Control Register */

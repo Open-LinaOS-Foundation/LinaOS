@@ -4,14 +4,14 @@
  * Author: Xing Zheng <zhengxing@rock-chips.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include <dt-bindings/clock/rk3399-cru.h>
 #include "clk.h"
 

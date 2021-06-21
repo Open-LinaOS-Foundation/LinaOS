@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2014 by Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2014 by Ralf Baechle <ralf@linaos-mips.org>
  */
 #ifndef __UAPI_ASM_BITFIELD_H
 #define __UAPI_ASM_BITFIELD_H

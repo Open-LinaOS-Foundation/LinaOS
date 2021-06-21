@@ -218,13 +218,13 @@
 		d3 {
 			label = "d3";
 			gpios = <&pioB 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		d2 {
 			label = "d2";
 			gpios = <&pioC 29 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "nand-disk";
+			linaos,default-trigger = "nand-disk";
 		};
 	};
 
@@ -234,14 +234,14 @@
 		left_click {
 			label = "left_click";
 			gpios = <&pioC 5 GPIO_ACTIVE_LOW>;
-			linux,code = <272>;
+			linaos,code = <272>;
 			wakeup-source;
 		};
 
 		right_click {
 			label = "right_click";
 			gpios = <&pioC 4 GPIO_ACTIVE_LOW>;
-			linux,code = <273>;
+			linaos,code = <273>;
 			wakeup-source;
 		};
 	};

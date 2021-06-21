@@ -9,18 +9,18 @@
  * Adapted to new DSS2 framework: Roger Quadros <roger.quadros@nokia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/backlight.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/spi/spi.h>
+#include <linaos/jiffies.h>
+#include <linaos/sched.h>
+#include <linaos/backlight.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
 
 #include <video/omapfb_dss.h>
 #include <video/omap-panel-data.h>

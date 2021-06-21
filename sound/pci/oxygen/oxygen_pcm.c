@@ -5,7 +5,7 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <sound/control.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

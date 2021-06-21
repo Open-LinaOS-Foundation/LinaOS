@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <bpf/libbpf.h>
-#include <linux/rtnetlink.h>
-#include <linux/tc_act/tc_bpf.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/tc_act/tc_bpf.h>
 
 #include "bpf/nlattr.h"
 #include "main.h"

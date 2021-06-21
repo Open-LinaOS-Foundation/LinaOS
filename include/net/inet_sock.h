@@ -12,11 +12,11 @@
 #ifndef _INET_SOCK_H
 #define _INET_SOCK_H
 
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/jhash.h>
-#include <linux/netdevice.h>
+#include <linaos/bitops.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/jhash.h>
+#include <linaos/netdevice.h>
 
 #include <net/flow.h>
 #include <net/sock.h>

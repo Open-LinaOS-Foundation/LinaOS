@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux pstorefs routines.
+# Makefile for the linaos pstorefs routines.
 #
 
 obj-$(CONFIG_PSTORE) += pstore.o

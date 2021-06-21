@@ -8,12 +8,12 @@ block storage on the LAN.
 
 The EtherDrive (R) HOWTO for 2.6 and 3.x kernels is found at ...
 
-  http://support.coraid.com/support/linux/EtherDrive-2.6-HOWTO.html
+  http://support.coraid.com/support/linaos/EtherDrive-2.6-HOWTO.html
 
 It has many tips and hints!  Please see, especially, recommended
 tunings for virtual memory:
 
-  http://support.coraid.com/support/linux/EtherDrive-2.6-HOWTO-5.html#ss5.19
+  http://support.coraid.com/support/linaos/EtherDrive-2.6-HOWTO-5.html#ss5.19
 
 The aoetools are userland programs that are designed to work with this
 driver.  The aoetools are on sourceforge.

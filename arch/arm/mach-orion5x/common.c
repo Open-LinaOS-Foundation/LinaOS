@@ -10,26 +10,26 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_8250.h>
-#include <linux/mv643xx_i2c.h>
-#include <linux/ata_platform.h>
-#include <linux/delay.h>
-#include <linux/clk-provider.h>
-#include <linux/cpu.h>
-#include <linux/platform_data/dsa.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/serial_8250.h>
+#include <linaos/mv643xx_i2c.h>
+#include <linaos/ata_platform.h>
+#include <linaos/delay.h>
+#include <linaos/clk-provider.h>
+#include <linaos/cpu.h>
+#include <linaos/platform_data/dsa.h>
 #include <asm/page.h>
 #include <asm/setup.h>
 #include <asm/system_misc.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/time.h>
-#include <linux/platform_data/mtd-orion_nand.h>
-#include <linux/platform_data/usb-ehci-orion.h>
+#include <linaos/platform_data/mtd-orion_nand.h>
+#include <linaos/platform_data/usb-ehci-orion.h>
 #include <plat/time.h>
 #include <plat/common.h>
 

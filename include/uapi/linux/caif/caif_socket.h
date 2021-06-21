@@ -1,5 +1,5 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/* linux/caif_socket.h
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
+/* linaos/caif_socket.h
  * CAIF Definitions for CAIF socket and network layer
  * Copyright (C) ST-Ericsson AB 2010
  * Author:	 Sjur Brendeland
@@ -9,8 +9,8 @@
 #ifndef _LINUX_CAIF_SOCKET_H
 #define _LINUX_CAIF_SOCKET_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
 
 /**
  * enum caif_link_selector -    Physical Link Selection.

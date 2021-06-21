@@ -11,7 +11,7 @@
  *  Bjorn Steinbrink (B.Steinbrink@gmx.de), 2007
  */
 
-#include <linux/ptrace.h> /* struct pt_regs */
+#include <linaos/ptrace.h> /* struct pt_regs */
 #include "pf_in.h"
 
 #ifdef __i386__

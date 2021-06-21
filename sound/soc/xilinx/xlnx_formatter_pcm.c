@@ -6,12 +6,12 @@
 //
 // Author: Maruthi Srinivas Bayyavarapu <maruthis@xilinx.com>
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sizes.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/sizes.h>
 
 #include <sound/asoundef.h>
 #include <sound/soc.h>

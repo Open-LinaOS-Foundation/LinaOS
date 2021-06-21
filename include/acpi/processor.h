@@ -2,11 +2,11 @@
 #ifndef __ACPI_PROCESSOR_H
 #define __ACPI_PROCESSOR_H
 
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/pm_qos.h>
-#include <linux/thermal.h>
+#include <linaos/kernel.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/pm_qos.h>
+#include <linaos/thermal.h>
 #include <asm/acpi.h>
 
 #define ACPI_PROCESSOR_CLASS		"processor"

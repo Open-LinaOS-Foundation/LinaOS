@@ -53,7 +53,7 @@ Key Cycle Dates
 One of the common misunderstandings of submitters is that patches can be
 sent at any time before the merge window closes and can still be
 considered for the next -rc1. The reality is that most patches need to
-be settled in soaking in linux-next in advance of the merge window
+be settled in soaking in linaos-next in advance of the merge window
 opening. Clarify for the submitter the key dates (in terms of -rc release
 week) that patches might be considered for merging and when patches need to
 wait for the next -rc. At a minimum:

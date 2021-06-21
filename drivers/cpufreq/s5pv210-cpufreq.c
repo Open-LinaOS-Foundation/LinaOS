@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/cpufreq.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/regulator/consumer.h>
 
 static void __iomem *clk_base;
 static void __iomem *dmc_base[2];

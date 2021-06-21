@@ -26,16 +26,16 @@
 #include <errno.h>
 #include <ctype.h>
 #include <asm/unistd.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/filter.h>
-#include <linux/list.h>
-#include <linux/limits.h>
-#include <linux/perf_event.h>
-#include <linux/ring_buffer.h>
-#include <linux/version.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
+#include <linaos/filter.h>
+#include <linaos/list.h>
+#include <linaos/limits.h>
+#include <linaos/perf_event.h>
+#include <linaos/ring_buffer.h>
+#include <linaos/version.h>
 #include <sys/epoll.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
@@ -215,7 +215,7 @@ struct bpf_sec_def {
 
 /*
  * bpf_prog should be a better name but it has been used in
- * linux/filter.h.
+ * linaos/filter.h.
  */
 struct bpf_program {
 	const struct bpf_sec_def *sec_def;
@@ -298,7 +298,7 @@ struct bpf_struct_ops {
 	/* e.g. struct tcp_congestion_ops in bpf_prog's btf format */
 	void *data;
 	/* e.g. struct bpf_struct_ops_tcp_congestion_ops in
-	 *      btf_vmlinux's format.
+	 *      btf_vmlinaos's format.
 	 * struct bpf_struct_ops_tcp_congestion_ops {
 	 *	[... some other kernel fields ...]
 	 *	struct tcp_congestion_ops data;
@@ -345,7 +345,7 @@ struct bpf_map {
 	__u32 btf_var_idx;
 	__u32 btf_key_type_id;
 	__u32 btf_value_type_id;
-	__u32 btf_vmlinux_value_type_id;
+	__u32 btf_vmlinaos_value_type_id;
 	void *priv;
 	bpf_map_clear_priv_t clear_priv;
 	enum libbpf_map_type libbpf_type;
@@ -474,12 +474,12 @@ struct bpf_object {
 	struct btf *btf;
 	struct btf_ext *btf_ext;
 
-	/* Parse and load BTF vmlinux if any of the programs in the object need
+	/* Parse and load BTF vmlinaos if any of the programs in the object need
 	 * it at load time.
 	 */
-	struct btf *btf_vmlinux;
-	/* vmlinux BTF override for CO-RE relocations */
-	struct btf *btf_vmlinux_override;
+	struct btf *btf_vmlinaos;
+	/* vmlinaos BTF override for CO-RE relocations */
+	struct btf *btf_vmlinaos_override;
 	/* Lazily initialized kernel module BTFs */
 	struct module_btf *btf_modules;
 	bool btf_modules_loaded;
@@ -782,7 +782,7 @@ find_struct_ops_kern_types(const struct btf *btf, const char *tname,
 	/* Find the corresponding "map_value" type that will be used
 	 * in map_update(BPF_MAP_TYPE_STRUCT_OPS).  For example,
 	 * find "struct bpf_struct_ops_tcp_congestion_ops" from the
-	 * btf_vmlinux.
+	 * btf_vmlinaos.
 	 */
 	kern_vtype_id = find_btf_by_prefix_kind(btf, STRUCT_OPS_VALUE_PREFIX,
 						tname, BTF_KIND_STRUCT);
@@ -851,7 +851,7 @@ static int bpf_map__init_kern_struct_ops(struct bpf_map *map,
 		 map->name, st_ops->type_id, kern_type_id, kern_vtype_id);
 
 	map->def.value_size = kern_vtype->size;
-	map->btf_vmlinux_value_type_id = kern_vtype_id;
+	map->btf_vmlinaos_value_type_id = kern_vtype_id;
 
 	st_ops->kern_vdata = calloc(1, kern_vtype->size);
 	if (!st_ops->kern_vdata)
@@ -968,7 +968,7 @@ static int bpf_object__init_kern_struct_ops_maps(struct bpf_object *obj)
 			continue;
 
 		err = bpf_map__init_kern_struct_ops(map, obj->btf,
-						    obj->btf_vmlinux);
+						    obj->btf_vmlinaos);
 		if (err)
 			return err;
 	}
@@ -2589,14 +2589,14 @@ static int bpf_object__finalize_btf(struct bpf_object *obj)
 	return 0;
 }
 
-static bool prog_needs_vmlinux_btf(struct bpf_program *prog)
+static bool prog_needs_vmlinaos_btf(struct bpf_program *prog)
 {
 	if (prog->type == BPF_PROG_TYPE_STRUCT_OPS ||
 	    prog->type == BPF_PROG_TYPE_LSM)
 		return true;
 
 	/* BPF_PROG_TYPE_TRACING programs which do not attach to other programs
-	 * also need vmlinux BTF
+	 * also need vmlinaos BTF
 	 */
 	if (prog->type == BPF_PROG_TYPE_TRACING && !prog->attach_prog_fd)
 		return true;
@@ -2604,7 +2604,7 @@ static bool prog_needs_vmlinux_btf(struct bpf_program *prog)
 	return false;
 }
 
-static bool obj_needs_vmlinux_btf(const struct bpf_object *obj)
+static bool obj_needs_vmlinaos_btf(const struct bpf_object *obj)
 {
 	struct bpf_program *prog;
 	int i;
@@ -2625,29 +2625,29 @@ static bool obj_needs_vmlinux_btf(const struct bpf_object *obj)
 	bpf_object__for_each_program(prog, obj) {
 		if (!prog->load)
 			continue;
-		if (prog_needs_vmlinux_btf(prog))
+		if (prog_needs_vmlinaos_btf(prog))
 			return true;
 	}
 
 	return false;
 }
 
-static int bpf_object__load_vmlinux_btf(struct bpf_object *obj, bool force)
+static int bpf_object__load_vmlinaos_btf(struct bpf_object *obj, bool force)
 {
 	int err;
 
-	/* btf_vmlinux could be loaded earlier */
-	if (obj->btf_vmlinux)
+	/* btf_vmlinaos could be loaded earlier */
+	if (obj->btf_vmlinaos)
 		return 0;
 
-	if (!force && !obj_needs_vmlinux_btf(obj))
+	if (!force && !obj_needs_vmlinaos_btf(obj))
 		return 0;
 
-	obj->btf_vmlinux = libbpf_find_kernel_btf();
-	if (IS_ERR(obj->btf_vmlinux)) {
-		err = PTR_ERR(obj->btf_vmlinux);
-		pr_warn("Error loading vmlinux BTF: %d\n", err);
-		obj->btf_vmlinux = NULL;
+	obj->btf_vmlinaos = libbpf_find_kernel_btf();
+	if (IS_ERR(obj->btf_vmlinaos)) {
+		err = PTR_ERR(obj->btf_vmlinaos);
+		pr_warn("Error loading vmlinaos BTF: %d\n", err);
+		obj->btf_vmlinaos = NULL;
 		return err;
 	}
 	return 0;
@@ -4437,8 +4437,8 @@ static int bpf_object__create_map(struct bpf_object *obj, struct bpf_map *map)
 	}
 
 	if (bpf_map__is_struct_ops(map))
-		create_attr.btf_vmlinux_value_type_id =
-			map->btf_vmlinux_value_type_id;
+		create_attr.btf_vmlinaos_value_type_id =
+			map->btf_vmlinaos_value_type_id;
 
 	create_attr.btf_fd = 0;
 	create_attr.btf_key_type_id = 0;
@@ -5012,12 +5012,12 @@ static int load_module_btfs(struct bpf_object *obj)
 		}
 
 		/* ignore non-module BTFs */
-		if (!info.kernel_btf || strcmp(name, "vmlinux") == 0) {
+		if (!info.kernel_btf || strcmp(name, "vmlinaos") == 0) {
 			close(fd);
 			continue;
 		}
 
-		btf = btf_get_from_fd(fd, obj->btf_vmlinux);
+		btf = btf_get_from_fd(fd, obj->btf_vmlinaos);
 		if (IS_ERR(btf)) {
 			pr_warn("failed to load module [%s]'s BTF object #%d: %ld\n",
 				name, id, PTR_ERR(btf));
@@ -5073,18 +5073,18 @@ bpf_core_find_cands(struct bpf_object *obj, const struct btf *local_btf, __u32 l
 	if (!cands)
 		return ERR_PTR(-ENOMEM);
 
-	/* Attempt to find target candidates in vmlinux BTF first */
-	main_btf = obj->btf_vmlinux_override ?: obj->btf_vmlinux;
-	err = bpf_core_add_cands(&local_cand, local_essent_len, main_btf, "vmlinux", 1, cands);
+	/* Attempt to find target candidates in vmlinaos BTF first */
+	main_btf = obj->btf_vmlinaos_override ?: obj->btf_vmlinaos;
+	err = bpf_core_add_cands(&local_cand, local_essent_len, main_btf, "vmlinaos", 1, cands);
 	if (err)
 		goto err_out;
 
-	/* if vmlinux BTF has any candidate, don't got for module BTFs */
+	/* if vmlinaos BTF has any candidate, don't got for module BTFs */
 	if (cands->len)
 		return cands;
 
-	/* if vmlinux BTF was overridden, don't attempt to load module BTFs */
-	if (obj->btf_vmlinux_override)
+	/* if vmlinaos BTF was overridden, don't attempt to load module BTFs */
+	if (obj->btf_vmlinaos_override)
 		return cands;
 
 	/* now look through module BTFs, trying to still find candidates */
@@ -5096,7 +5096,7 @@ bpf_core_find_cands(struct bpf_object *obj, const struct btf *local_btf, __u32 l
 		err = bpf_core_add_cands(&local_cand, local_essent_len,
 					 obj->btf_modules[i].btf,
 					 obj->btf_modules[i].name,
-					 btf__get_nr_types(obj->btf_vmlinux) + 1,
+					 btf__get_nr_types(obj->btf_vmlinaos) + 1,
 					 cands);
 		if (err)
 			goto err_out;
@@ -6274,9 +6274,9 @@ bpf_object__relocate_core(struct bpf_object *obj, const char *targ_btf_path)
 		return 0;
 
 	if (targ_btf_path) {
-		obj->btf_vmlinux_override = btf__parse(targ_btf_path, NULL);
-		if (IS_ERR_OR_NULL(obj->btf_vmlinux_override)) {
-			err = PTR_ERR(obj->btf_vmlinux_override);
+		obj->btf_vmlinaos_override = btf__parse(targ_btf_path, NULL);
+		if (IS_ERR_OR_NULL(obj->btf_vmlinaos_override)) {
+			err = PTR_ERR(obj->btf_vmlinaos_override);
 			pr_warn("failed to parse target BTF: %d\n", err);
 			return err;
 		}
@@ -6341,9 +6341,9 @@ bpf_object__relocate_core(struct bpf_object *obj, const char *targ_btf_path)
 	}
 
 out:
-	/* obj->btf_vmlinux and module BTFs are freed after object load */
-	btf__free(obj->btf_vmlinux_override);
-	obj->btf_vmlinux_override = NULL;
+	/* obj->btf_vmlinaos and module BTFs are freed after object load */
+	btf__free(obj->btf_vmlinaos_override);
+	obj->btf_vmlinaos_override = NULL;
 
 	if (!IS_ERR_OR_NULL(cand_cache)) {
 		hashmap__for_each_entry(cand_cache, entry, i) {
@@ -7571,7 +7571,7 @@ static int find_ksym_btf_id(struct bpf_object *obj, const char *ksym_name,
 	int i, id, btf_fd, err;
 	struct btf *btf;
 
-	btf = obj->btf_vmlinux;
+	btf = obj->btf_vmlinaos;
 	btf_fd = 0;
 	id = btf__find_by_name_kind(btf, ksym_name, kind);
 
@@ -7665,7 +7665,7 @@ static int bpf_object__resolve_ksym_func_btf_id(struct bpf_object *obj,
 		return kfunc_id;
 	}
 
-	if (kern_btf != obj->btf_vmlinux) {
+	if (kern_btf != obj->btf_vmlinaos) {
 		pr_warn("extern (func ksym) '%s': function in kernel module is not supported\n",
 			ext->name);
 		return -ENOTSUP;
@@ -7717,7 +7717,7 @@ static int bpf_object__resolve_externs(struct bpf_object *obj,
 				       const char *extra_kconfig)
 {
 	bool need_config = false, need_kallsyms = false;
-	bool need_vmlinux_btf = false;
+	bool need_vmlinaos_btf = false;
 	struct extern_desc *ext;
 	void *kcfg_data = NULL;
 	int err, i;
@@ -7749,7 +7749,7 @@ static int bpf_object__resolve_externs(struct bpf_object *obj,
 			need_config = true;
 		} else if (ext->type == EXT_KSYM) {
 			if (ext->ksym.type_id)
-				need_vmlinux_btf = true;
+				need_vmlinaos_btf = true;
 			else
 				need_kallsyms = true;
 		} else {
@@ -7780,7 +7780,7 @@ static int bpf_object__resolve_externs(struct bpf_object *obj,
 		if (err)
 			return -EINVAL;
 	}
-	if (need_vmlinux_btf) {
+	if (need_vmlinaos_btf) {
 		err = bpf_object__resolve_ksyms_btf_id(obj);
 		if (err)
 			return -EINVAL;
@@ -7817,7 +7817,7 @@ int bpf_object__load_xattr(struct bpf_object_load_attr *attr)
 	}
 
 	err = bpf_object__probe_loading(obj);
-	err = err ? : bpf_object__load_vmlinux_btf(obj, false);
+	err = err ? : bpf_object__load_vmlinaos_btf(obj, false);
 	err = err ? : bpf_object__resolve_externs(obj, obj->kconfig);
 	err = err ? : bpf_object__sanitize_and_load_btf(obj);
 	err = err ? : bpf_object__sanitize_maps(obj);
@@ -7834,9 +7834,9 @@ int bpf_object__load_xattr(struct bpf_object_load_attr *attr)
 	}
 	free(obj->btf_modules);
 
-	/* clean up vmlinux BTF */
-	btf__free(obj->btf_vmlinux);
-	obj->btf_vmlinux = NULL;
+	/* clean up vmlinaos BTF */
+	btf__free(obj->btf_vmlinaos);
+	obj->btf_vmlinaos = NULL;
 
 	obj->loaded = true; /* doesn't matter if successfully or not */
 
@@ -9213,7 +9213,7 @@ static inline int find_attach_btf_id(struct btf *btf, const char *name,
 	return err;
 }
 
-int libbpf_find_vmlinux_btf_id(const char *name,
+int libbpf_find_vmlinaos_btf_id(const char *name,
 			       enum bpf_attach_type attach_type)
 {
 	struct btf *btf;
@@ -9221,13 +9221,13 @@ int libbpf_find_vmlinux_btf_id(const char *name,
 
 	btf = libbpf_find_kernel_btf();
 	if (IS_ERR(btf)) {
-		pr_warn("vmlinux BTF is not found\n");
+		pr_warn("vmlinaos BTF is not found\n");
 		return -EINVAL;
 	}
 
 	err = find_attach_btf_id(btf, name, attach_type);
 	if (err <= 0)
-		pr_warn("%s is not found in vmlinux BTF\n", name);
+		pr_warn("%s is not found in vmlinaos BTF\n", name);
 
 	btf__free(btf);
 	return err;
@@ -9272,9 +9272,9 @@ static int find_kernel_btf_id(struct bpf_object *obj, const char *attach_name,
 {
 	int ret, i;
 
-	ret = find_attach_btf_id(obj->btf_vmlinux, attach_name, attach_type);
+	ret = find_attach_btf_id(obj->btf_vmlinaos, attach_name, attach_type);
 	if (ret > 0) {
-		*btf_obj_fd = 0; /* vmlinux BTF */
+		*btf_obj_fd = 0; /* vmlinaos BTF */
 		*btf_type_id = ret;
 		return 0;
 	}
@@ -10914,7 +10914,7 @@ size_t perf_buffer__buffer_cnt(const struct perf_buffer *pb)
 /*
  * Return perf_event FD of a ring buffer in *buf_idx* slot of
  * PERF_EVENT_ARRAY BPF map. This FD can be polled for new data using
- * select()/poll()/epoll() Linux syscalls.
+ * select()/poll()/epoll() LinaOS syscalls.
  */
 int perf_buffer__buffer_fd(const struct perf_buffer *pb, size_t buf_idx)
 {
@@ -11237,8 +11237,8 @@ int bpf_program__set_attach_target(struct bpf_program *prog,
 		if (btf_id < 0)
 			return btf_id;
 	} else {
-		/* load btf_vmlinux, if not yet */
-		err = bpf_object__load_vmlinux_btf(prog->obj, true);
+		/* load btf_vmlinaos, if not yet */
+		err = bpf_object__load_vmlinaos_btf(prog->obj, true);
 		if (err)
 			return err;
 		err = find_kernel_btf_id(prog->obj, attach_func_name,

@@ -98,7 +98,7 @@ config IDE_GD_ATAPI
 
 	  For information about jumper settings and the question
 	  of when a ZIP drive uses a partition table, see
-	  <http://www.win.tue.nl/~aeb/linux/zip/zip-1.html>.
+	  <http://www.win.tue.nl/~aeb/linaos/zip/zip-1.html>.
 
 	  If unsure, say N.
 
@@ -192,7 +192,7 @@ config IDE_PROC_FS
 	default y
 	help
 	  This option enables support for the various files in
-	  /proc/ide.  In Linux 2.6 this has been superseded by
+	  /proc/ide.  In LinaOS 2.6 this has been superseded by
 	  files in sysfs but many legacy applications rely on this.
 
 	  If unsure say Y.
@@ -238,7 +238,7 @@ config BLK_DEV_CMD640
 	  "SiS" chipset. Unfortunately, it has a number of rather nasty
 	  design flaws that can cause severe data corruption under many common
 	  conditions. Say Y here to include code which tries to automatically
-	  detect and correct the problems under Linux. This option also
+	  detect and correct the problems under LinaOS. This option also
 	  enables access to the secondary IDE ports in some CMD640 based
 	  systems.
 
@@ -342,7 +342,7 @@ config BLK_DEV_RZ1000
 	  Unfortunately, it has a rather nasty design flaw that can cause
 	  severe data corruption under many conditions. Say Y here to include
 	  code which automatically detects and corrects the problem under
-	  Linux. This may slow disk throughput by a few percent, but at least
+	  LinaOS. This may slow disk throughput by a few percent, but at least
 	  things will operate 100% reliably.
 
 config BLK_DEV_IDEDMA_PCI

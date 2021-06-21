@@ -7,7 +7,7 @@
  */
 #ifndef _ASM_GENERIC_ATOMIC64_H
 #define _ASM_GENERIC_ATOMIC64_H
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef struct {
 	s64 counter;

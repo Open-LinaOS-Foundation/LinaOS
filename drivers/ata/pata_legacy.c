@@ -44,17 +44,17 @@
  *  change.
  */
 
-#include <linux/async.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/async.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
+#include <linaos/ata.h>
+#include <linaos/libata.h>
+#include <linaos/platform_device.h>
 
 #define DRV_NAME "pata_legacy"
 #define DRV_VERSION "0.6.5"

@@ -6,7 +6,7 @@
 #ifndef SHMEM_UTILS_H
 #define SHMEM_UTILS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_gem_object;
 struct file;

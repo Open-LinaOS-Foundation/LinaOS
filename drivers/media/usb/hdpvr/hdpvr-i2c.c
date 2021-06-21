@@ -11,9 +11,9 @@
 
 #if IS_ENABLED(CONFIG_I2C)
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include "hdpvr.h"
 

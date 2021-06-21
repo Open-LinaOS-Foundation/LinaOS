@@ -2,12 +2,12 @@
 /*
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/ratelimit.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/slab.h>
+#include <linaos/gfp.h>
+#include <linaos/init.h>
+#include <linaos/ratelimit.h>
+#include <linaos/usb.h>
+#include <linaos/usb/audio.h>
+#include <linaos/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

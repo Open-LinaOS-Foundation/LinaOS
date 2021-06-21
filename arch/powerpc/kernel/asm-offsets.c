@@ -11,22 +11,22 @@
 
 #define GENERATING_ASM_OFFSETS	/* asm/smp.h */
 
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/suspend.h>
-#include <linux/hrtimer.h>
+#include <linaos/compat.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/suspend.h>
+#include <linaos/hrtimer.h>
 #ifdef CONFIG_PPC64
-#include <linux/time.h>
-#include <linux/hardirq.h>
+#include <linaos/time.h>
+#include <linaos/hardirq.h>
 #endif
-#include <linux/kbuild.h>
+#include <linaos/kbuild.h>
 
 #include <asm/io.h>
 #include <asm/page.h>
@@ -48,7 +48,7 @@
 #include <asm/opal.h>
 #endif
 #if defined(CONFIG_KVM) || defined(CONFIG_KVM_GUEST)
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #endif
 #if defined(CONFIG_KVM) && defined(CONFIG_PPC_BOOK3S)
 #include <asm/kvm_book3s.h>

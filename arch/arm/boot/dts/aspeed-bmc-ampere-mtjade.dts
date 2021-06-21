@@ -59,55 +59,55 @@
 		shutdown_ack {
 			label = "SHUTDOWN_ACK";
 			gpios = <&gpio ASPEED_GPIO(G, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(G, 2)>;
+			linaos,code = <ASPEED_GPIO(G, 2)>;
 		};
 
 		reboot_ack {
 			label = "REBOOT_ACK";
 			gpios = <&gpio ASPEED_GPIO(J, 3) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(J, 3)>;
+			linaos,code = <ASPEED_GPIO(J, 3)>;
 		};
 
 		S0_overtemp {
 			label = "S0_OVERTEMP";
 			gpios = <&gpio ASPEED_GPIO(G, 3) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(G, 3)>;
+			linaos,code = <ASPEED_GPIO(G, 3)>;
 		};
 
 		S0_hightemp {
 			label = "S0_HIGHTEMP";
 			gpios = <&gpio ASPEED_GPIO(J, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(J, 0)>;
+			linaos,code = <ASPEED_GPIO(J, 0)>;
 		};
 
 		S0_cpu_fault {
 			label = "S0_CPU_FAULT";
 			gpios = <&gpio ASPEED_GPIO(J, 1) GPIO_ACTIVE_HIGH>;
-			linux,code = <ASPEED_GPIO(J, 1)>;
+			linaos,code = <ASPEED_GPIO(J, 1)>;
 		};
 
 		S1_overtemp {
 			label = "S1_OVERTEMP";
 			gpios = <&gpio ASPEED_GPIO(Z, 6) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(Z, 6)>;
+			linaos,code = <ASPEED_GPIO(Z, 6)>;
 		};
 
 		S1_hightemp {
 			label = "S1_HIGHTEMP";
 			gpios = <&gpio ASPEED_GPIO(AB, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(AB, 0)>;
+			linaos,code = <ASPEED_GPIO(AB, 0)>;
 		};
 
 		S1_cpu_fault {
 			label = "S1_CPU_FAULT";
 			gpios = <&gpio ASPEED_GPIO(Z, 1) GPIO_ACTIVE_HIGH>;
-			linux,code = <ASPEED_GPIO(Z, 1)>;
+			linaos,code = <ASPEED_GPIO(Z, 1)>;
 		};
 
 		id_button {
 			label = "ID_BUTTON";
 			gpios = <&gpio ASPEED_GPIO(Q, 5) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(Q, 5)>;
+			linaos,code = <ASPEED_GPIO(Q, 5)>;
 		};
 
 	};

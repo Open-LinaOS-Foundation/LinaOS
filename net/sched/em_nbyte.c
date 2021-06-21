@@ -5,13 +5,13 @@
  * Authors:	Thomas Graf <tgraf@suug.ch>
  */
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/tc_ematch/tc_em_nbyte.h>
+#include <linaos/gfp.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/tc_ematch/tc_em_nbyte.h>
 #include <net/pkt_cls.h>
 
 struct nbyte_data {

@@ -55,18 +55,18 @@
  * device tree binding documentation.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/linear_range.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/linear_range.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/power_supply.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
 
 #include "bd99954-charger.h"
 

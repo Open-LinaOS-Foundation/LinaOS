@@ -2,7 +2,7 @@
 #ifndef __ATH25_DEVICES_H
 #define __ATH25_DEVICES_H
 
-#include <linux/cpu.h>
+#include <linaos/cpu.h>
 
 #define ATH25_REG_MS(_val, _field)	(((_val) & _field##_M) >> _field##_S)
 

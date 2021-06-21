@@ -7,8 +7,8 @@
 #ifndef __MESON_CLK_MPLL_H
 #define __MESON_CLK_MPLL_H
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <linaos/clk-provider.h>
+#include <linaos/spinlock.h>
 
 #include "parm.h"
 

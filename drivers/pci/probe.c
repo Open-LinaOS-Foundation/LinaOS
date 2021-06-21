@@ -3,22 +3,22 @@
  * PCI detection and setup code
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/of_device.h>
-#include <linux/of_pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/cpumask.h>
-#include <linux/aer.h>
-#include <linux/acpi.h>
-#include <linux/hypervisor.h>
-#include <linux/irqdomain.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/msi.h>
+#include <linaos/of_device.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/cpumask.h>
+#include <linaos/aer.h>
+#include <linaos/acpi.h>
+#include <linaos/hypervisor.h>
+#include <linaos/irqdomain.h>
+#include <linaos/pm_runtime.h>
 #include "pci.h"
 
 #define CARDBUS_LATENCY_TIMER	176	/* secondary latency timer */

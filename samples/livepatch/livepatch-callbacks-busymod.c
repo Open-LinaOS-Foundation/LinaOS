@@ -22,10 +22,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
 
 static int sleep_secs;
 module_param(sleep_secs, int, 0644);

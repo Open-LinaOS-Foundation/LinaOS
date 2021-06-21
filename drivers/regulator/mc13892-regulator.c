@@ -6,15 +6,15 @@
 //
 // Based on draft driver from Arnaud Patard <arnaud.patard@rtp-net.org>
 
-#include <linux/mfd/mc13892.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/driver.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/mfd/mc13892.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 #include "mc13xxx.h"
 
 #define MC13892_REVISION			7

@@ -1,6 +1,6 @@
 What:		/sys/firmware/opal/dump
 Date:		Feb 2014
-Contact:	Stewart Smith <stewart@linux.vnet.ibm.com>
+Contact:	Stewart Smith <stewart@linaos.vnet.ibm.com>
 Description:
 		This directory exposes interfaces for interacting with
 		the FSP and platform dumps through OPAL firmware interface.

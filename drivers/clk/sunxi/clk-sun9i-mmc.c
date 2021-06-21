@@ -5,18 +5,18 @@
  * Chen-Yu Tsai	<wens@csie.org>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/reset.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/reset.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #define SUN9I_MMC_WIDTH		4
 

@@ -38,7 +38,7 @@
 extern bool disable_kuep;
 extern bool disable_kuap;
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 
 #ifdef CONFIG_PPC_KUEP
 void setup_kuep(bool disabled);

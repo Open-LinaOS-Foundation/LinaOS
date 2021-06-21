@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-mmp/time.c
+ * linaos/arch/arm/mach-mmp/time.c
  *
  *   Support for clocksource and clockevents
  *
@@ -15,25 +15,25 @@
  * the clock source, and match comparator #1 used as clock event device.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/clockchips.h>
+#include <linaos/clk.h>
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/sched_clock.h>
 #include <asm/mach/time.h>
 
 #include "addr-map.h"
 #include "regs-timers.h"
 #include "regs-apbc.h"
 #include "irqs.h"
-#include <linux/soc/mmp/cputype.h>
+#include <linaos/soc/mmp/cputype.h>
 
 #define TIMERS_VIRT_BASE	TIMERS1_VIRT_BASE
 

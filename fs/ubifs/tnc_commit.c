@@ -10,7 +10,7 @@
 
 /* This file implements TNC functions for committing */
 
-#include <linux/random.h>
+#include <linaos/random.h>
 #include "ubifs.h"
 
 /**

@@ -24,9 +24,9 @@
  *
  */
 
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/sched/signal.h>
+#include <linaos/ktime.h>
+#include <linaos/hrtimer.h>
+#include <linaos/sched/signal.h>
 #include <trace/events/dma_fence.h>
 
 #include <nvif/cl826e.h>

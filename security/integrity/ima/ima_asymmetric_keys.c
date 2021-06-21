@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2019 Microsoft Corporation
  *
- * Author: Lakshmi Ramasubramanian (nramas@linux.microsoft.com)
+ * Author: Lakshmi Ramasubramanian (nramas@linaos.microsoft.com)
  *
  * File: ima_asymmetric_keys.c
  *       Defines an IMA hook to measure asymmetric keys on key
@@ -10,7 +10,7 @@
  */
 
 #include <keys/asymmetric-type.h>
-#include <linux/user_namespace.h>
+#include <linaos/user_namespace.h>
 #include "ima.h"
 
 /**

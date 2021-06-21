@@ -1,5 +1,5 @@
 ===============================================
-The Linux WatchDog Timer Power Management Guide
+The LinaOS WatchDog Timer Power Management Guide
 ===============================================
 
 Last reviewed: 17-Dec-2018
@@ -9,7 +9,7 @@ Wolfram Sang <wsa+renesas@sang-engineering.com>
 Introduction
 ------------
 This document states rules about watchdog devices and their power management
-handling to ensure a uniform behaviour for Linux systems.
+handling to ensure a uniform behaviour for LinaOS systems.
 
 
 Ping on resume

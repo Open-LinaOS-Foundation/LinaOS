@@ -9,8 +9,8 @@
 #ifndef __LINUX_DMA_IPU_DMA_H
 #define __LINUX_DMA_IPU_DMA_H
 
-#include <linux/types.h>
-#include <linux/dmaengine.h>
+#include <linaos/types.h>
+#include <linaos/dmaengine.h>
 
 /* IPU DMA Controller channel definitions. */
 enum ipu_channel {

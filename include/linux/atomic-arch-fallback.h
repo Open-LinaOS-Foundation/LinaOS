@@ -6,7 +6,7 @@
 #ifndef _LINUX_ATOMIC_FALLBACK_H
 #define _LINUX_ATOMIC_FALLBACK_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef arch_xchg_relaxed
 #define arch_xchg_acquire arch_xchg

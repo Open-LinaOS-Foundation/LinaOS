@@ -13,8 +13,8 @@
 #ifndef __CLKSOURCE_HYPERV_TIMER_H
 #define __CLKSOURCE_HYPERV_TIMER_H
 
-#include <linux/clocksource.h>
-#include <linux/math64.h>
+#include <linaos/clocksource.h>
+#include <linaos/math64.h>
 #include <asm/mshyperv.h>
 
 #define HV_MAX_MAX_DELTA_TICKS 0xffffffff

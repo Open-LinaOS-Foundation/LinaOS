@@ -4,7 +4,7 @@
  * Copyright (C) 2017 Intel Deutschland GmbH
  * Copyright (C) 2018-2020 Intel Corporation
  */
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "mvm.h"
 #include "time-event.h"
 #include "iwl-io.h"

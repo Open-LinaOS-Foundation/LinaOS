@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_SUSPEND_IOCTLS_H
 #define _LINUX_SUSPEND_IOCTLS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 /*
  * This structure is used to pass the values needed for the identification
  * of the resume swap area from a user space to the kernel via the

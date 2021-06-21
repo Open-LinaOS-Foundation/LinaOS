@@ -10,17 +10,17 @@
  * Copyright (C) 2008 Compulab Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/tps6586x.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/mfd/tps6586x.h>
 
 /* supply control and voltage setting  */
 #define TPS6586X_SUPPLYENA	0x10

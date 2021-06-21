@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "libgcc.h"
 
 word_type __ucmpdi2(unsigned long long a, unsigned long long b)

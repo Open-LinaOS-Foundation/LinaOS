@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/proc-sa110.S
+ *  linaos/arch/arm/mm/proc-sa110.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *  hacked for non-paged-MM by Hyok S. Choi, 2003.
@@ -10,9 +10,9 @@
  *  These are the low level assembler for performing cache and TLB
  *  functions on the StrongARM-110.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

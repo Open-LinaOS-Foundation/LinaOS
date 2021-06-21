@@ -5,18 +5,18 @@
  * Copyright (c) 2002 Eric Brower (ebrower@usa.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/pm.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/module.h>
 
 #include <asm/io.h>
 #include <asm/oplib.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/auxio.h>
 #include <asm/processor.h>
 

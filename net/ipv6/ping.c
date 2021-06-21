@@ -9,8 +9,8 @@
  * Based on ipv4/ping.c code.
  *
  * Authors:	Lorenzo Colitti (IPv6 support)
- *		Vasiliy Kulikov / Openwall (IPv4 implementation, for Linux 2.6),
- *		Pavel Kankovsky (IPv4 implementation, for Linux 2.4.32)
+ *		Vasiliy Kulikov / Openwall (IPv4 implementation, for LinaOS 2.6),
+ *		Pavel Kankovsky (IPv4 implementation, for LinaOS 2.4.32)
  */
 
 #include <net/addrconf.h>
@@ -19,7 +19,7 @@
 #include <net/protocol.h>
 #include <net/udp.h>
 #include <net/transp_v6.h>
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 #include <net/ping.h>
 
 /* Compatibility glue so we can support IPv6 when it's compiled as a module */

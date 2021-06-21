@@ -114,12 +114,12 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/phy.h>
-#include <linux/mdio.h>
-#include <linux/clk.h>
-#include <linux/bitrev.h>
-#include <linux/crc32.h>
-#include <linux/crc32poly.h>
+#include <linaos/phy.h>
+#include <linaos/mdio.h>
+#include <linaos/clk.h>
+#include <linaos/bitrev.h>
+#include <linaos/crc32.h>
+#include <linaos/crc32poly.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

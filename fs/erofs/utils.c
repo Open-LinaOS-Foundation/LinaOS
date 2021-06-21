@@ -5,7 +5,7 @@
  * Created by Gao Xiang <gaoxiang25@huawei.com>
  */
 #include "internal.h"
-#include <linux/pagevec.h>
+#include <linaos/pagevec.h>
 
 struct page *erofs_allocpage(struct list_head *pool, gfp_t gfp)
 {

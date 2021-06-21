@@ -9,12 +9,12 @@
 #ifndef _ISLPCI_DEV_H
 #define _ISLPCI_DEV_H
 
-#include <linux/irqreturn.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
+#include <linaos/irqreturn.h>
+#include <linaos/netdevice.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
 
 #include "isl_38xx.h"
 #include "isl_oid.h"

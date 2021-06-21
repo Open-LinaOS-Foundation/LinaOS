@@ -5,7 +5,7 @@
  * Copyright (C) 2012 Google, Inc.
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #include "sync_debug.h"
 
 static struct dentry *dbgfs;

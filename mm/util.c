@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/security.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/mman.h>
-#include <linux/hugetlb.h>
-#include <linux/vmalloc.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/elf.h>
-#include <linux/elf-randomize.h>
-#include <linux/personality.h>
-#include <linux/random.h>
-#include <linux/processor.h>
-#include <linux/sizes.h>
-#include <linux/compat.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/compiler.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/security.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/mman.h>
+#include <linaos/hugetlb.h>
+#include <linaos/vmalloc.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/elf.h>
+#include <linaos/elf-randomize.h>
+#include <linaos/personality.h>
+#include <linaos/random.h>
+#include <linaos/processor.h>
+#include <linaos/sizes.h>
+#include <linaos/compat.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 
@@ -826,7 +826,7 @@ struct percpu_counter vm_committed_as ____cacheline_aligned_in_smp;
 
 /*
  * The global memory commitment made in the system can be a metric
- * that can be used to drive ballooning decisions when Linux is hosted
+ * that can be used to drive ballooning decisions when LinaOS is hosted
  * as a guest. On Hyper-V, the host implements a policy engine for dynamically
  * balancing memory across competing virtual machines that are hosted.
  * Several metrics drive this policy engine including the guest reported

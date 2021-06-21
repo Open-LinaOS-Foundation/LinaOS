@@ -3,13 +3,13 @@
  * IPv6 library code, needed by static components when full IPv6 support is
  * not configured or static.  These functions are needed by GSO/GRO implementation.
  */
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/ip6_fib.h>
 #include <net/addrconf.h>
 #include <net/secure_seq.h>
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 
 static u32 __ipv6_select_ident(struct net *net,
 			       const struct in6_addr *dst,

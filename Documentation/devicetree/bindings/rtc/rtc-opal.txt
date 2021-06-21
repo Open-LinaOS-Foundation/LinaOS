@@ -13,5 +13,5 @@ Example:
 		compatible = "ibm,opal-rtc";
 		wakeup-source;
 		phandle = <0x10000029>;
-		linux,phandle = <0x10000029>;
+		linaos,phandle = <0x10000029>;
 	};

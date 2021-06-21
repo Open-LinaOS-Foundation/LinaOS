@@ -16,23 +16,23 @@
  *		Bjorn Ekwall. <bj0rn@blox.se>
  *              Pekka Riikonen <priikone@poseidon.pspt.fi>
  *
- *		Moved to /usr/include/linux for NET3
+ *		Moved to /usr/include/linaos for NET3
  */
 #ifndef _LINUX_NETDEVICE_H
 #define _LINUX_NETDEVICE_H
 
-#include <linux/timer.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/prefetch.h>
+#include <linaos/timer.h>
+#include <linaos/bug.h>
+#include <linaos/delay.h>
+#include <linaos/atomic.h>
+#include <linaos/prefetch.h>
 #include <asm/cache.h>
 #include <asm/byteorder.h>
 
-#include <linux/percpu.h>
-#include <linux/rculist.h>
-#include <linux/workqueue.h>
-#include <linux/dynamic_queue_limits.h>
+#include <linaos/percpu.h>
+#include <linaos/rculist.h>
+#include <linaos/workqueue.h>
+#include <linaos/dynamic_queue_limits.h>
 
 #include <net/net_namespace.h>
 #ifdef CONFIG_DCB
@@ -41,12 +41,12 @@
 #include <net/netprio_cgroup.h>
 #include <net/xdp.h>
 
-#include <linux/netdev_features.h>
-#include <linux/neighbour.h>
-#include <uapi/linux/netdevice.h>
-#include <uapi/linux/if_bonding.h>
-#include <uapi/linux/pkt_cls.h>
-#include <linux/hashtable.h>
+#include <linaos/netdev_features.h>
+#include <linaos/neighbour.h>
+#include <uapi/linaos/netdevice.h>
+#include <uapi/linaos/if_bonding.h>
+#include <uapi/linaos/pkt_cls.h>
+#include <linaos/hashtable.h>
 
 struct netpoll_info;
 struct device;
@@ -193,11 +193,11 @@ struct net_device_stats {
 };
 
 
-#include <linux/cache.h>
-#include <linux/skbuff.h>
+#include <linaos/cache.h>
+#include <linaos/skbuff.h>
 
 #ifdef CONFIG_RPS
-#include <linux/static_key.h>
+#include <linaos/static_key.h>
 extern struct static_key_false rps_needed;
 extern struct static_key_false rfs_needed;
 #endif
@@ -2745,7 +2745,7 @@ struct netdev_lag_lower_state_info {
 	   tx_enabled : 1;
 };
 
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 
 /* netdevice notifier chain. Please remember to update netdev_cmd_to_name()
  * and the rtnetlink notification exclusion list in rtnetlink_event() when

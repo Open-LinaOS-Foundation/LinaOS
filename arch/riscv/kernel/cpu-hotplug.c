@@ -3,13 +3,13 @@
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/cpu.h>
-#include <linux/sched/hotplug.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/cpu.h>
+#include <linaos/sched/hotplug.h>
 #include <asm/irq.h>
 #include <asm/cpu_ops.h>
 #include <asm/sbi.h>

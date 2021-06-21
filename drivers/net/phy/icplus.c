@@ -4,27 +4,27 @@
  *
  * Copyright (c) 2007 Freescale Semiconductor, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/property.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/unistd.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/phy.h>
+#include <linaos/property.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 MODULE_DESCRIPTION("ICPlus IP175C/IP101A/IP101G/IC1001 PHY drivers");
 MODULE_AUTHOR("Michael Barkowski");

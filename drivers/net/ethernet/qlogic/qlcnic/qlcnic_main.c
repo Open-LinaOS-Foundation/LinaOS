@@ -4,17 +4,17 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/swab.h>
-#include <linux/dma-mapping.h>
-#include <linux/if_vlan.h>
+#include <linaos/vmalloc.h>
+#include <linaos/interrupt.h>
+#include <linaos/swab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/if_vlan.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/aer.h>
-#include <linux/log2.h>
-#include <linux/pci.h>
+#include <linaos/ipv6.h>
+#include <linaos/inetdevice.h>
+#include <linaos/aer.h>
+#include <linaos/log2.h>
+#include <linaos/pci.h>
 #include <net/vxlan.h>
 
 #include "qlcnic.h"

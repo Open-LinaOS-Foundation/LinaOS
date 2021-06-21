@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/irq.h>
 
 #include <asm/processor.h>
 #include <asm/ptrace.h>

@@ -4,9 +4,9 @@
  *   friendly supported by NI.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/usb.h>
 #include <sound/control.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

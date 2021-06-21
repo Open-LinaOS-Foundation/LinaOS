@@ -25,20 +25,20 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/shmem_fs.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-buf-map.h>
-#include <linux/mem_encrypt.h>
-#include <linux/pagevec.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/module.h>
+#include <linaos/mman.h>
+#include <linaos/pagemap.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/mem_encrypt.h>
+#include <linaos/pagevec.h>
 
 #include <drm/drm.h>
 #include <drm/drm_device.h>

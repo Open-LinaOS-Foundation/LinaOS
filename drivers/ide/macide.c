@@ -11,14 +11,14 @@
  *  more details.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/ide.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <asm/macintosh.h>
 
@@ -28,7 +28,7 @@
 
 /*
  * Generic IDE registers as offsets from the base
- * These match MkLinux so they should be correct.
+ * These match MkLinaOS so they should be correct.
  */
 
 #define IDE_CONTROL	0x38	/* control/altstatus */

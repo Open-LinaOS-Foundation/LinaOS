@@ -21,8 +21,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
 #include <drm/drm_print.h>
 #include <drm/drm_scdc_helper.h>

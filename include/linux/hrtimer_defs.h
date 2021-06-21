@@ -2,7 +2,7 @@
 #ifndef _LINUX_HRTIMER_DEFS_H
 #define _LINUX_HRTIMER_DEFS_H
 
-#include <linux/ktime.h>
+#include <linaos/ktime.h>
 
 #ifdef CONFIG_HIGH_RES_TIMERS
 

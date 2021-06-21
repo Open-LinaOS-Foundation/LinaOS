@@ -4,8 +4,8 @@
  *  Copyright (C) 2011-2012 Gabor Juhos <juhosg@openwrt.org>
  */
 
-#include <linux/io.h>
-#include <linux/serial_reg.h>
+#include <linaos/io.h>
+#include <linaos/serial_reg.h>
 
 #include <asm/addrspace.h>
 #include <asm/setup.h>

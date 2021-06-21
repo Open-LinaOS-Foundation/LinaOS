@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux multi-function-device driver (MFD) for the integrated peripherals
+ * LinaOS multi-function-device driver (MFD) for the integrated peripherals
  * of the VIA VX855 chipset
  *
  * Copyright (C) 2009 VIA Technologies, Inc.
@@ -9,12 +9,12 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci.h>
+#include <linaos/mfd/core.h>
 
 /* offset into pci config space indicating the 16bit register containing
  * the power management IO space base */

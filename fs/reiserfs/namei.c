@@ -11,13 +11,13 @@
  * NO WARRANTY
  */
 
-#include <linux/time.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/time.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 #include "reiserfs.h"
 #include "acl.h"
 #include "xattr.h"
-#include <linux/quotaops.h>
+#include <linaos/quotaops.h>
 
 #define INC_DIR_INODE_NLINK(i) if (i->i_nlink != 1) { inc_nlink(i); if (i->i_nlink >= REISERFS_LINK_MAX) set_nlink(i, 1); }
 #define DEC_DIR_INODE_NLINK(i) if (i->i_nlink != 1) drop_nlink(i);

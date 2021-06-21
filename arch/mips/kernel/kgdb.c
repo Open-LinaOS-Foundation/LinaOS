@@ -3,7 +3,7 @@
  *
  *  Contributed by HP Systems
  *
- *  Modified for Linux/MIPS (and MIPS in general) by Andreas Busse
+ *  Modified for LinaOS/MIPS (and MIPS in general) by Andreas Busse
  *  Send complaints, suggestions etc. to <andy@waldorf-gmbh.de>
  *
  *  Copyright (C) 1995 Andreas Busse
@@ -22,11 +22,11 @@
  *  kind, whether express or implied.
  */
 
-#include <linux/ptrace.h>		/* for linux pt_regs struct */
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <linaos/ptrace.h>		/* for linaos pt_regs struct */
+#include <linaos/kgdb.h>
+#include <linaos/kdebug.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
 #include <asm/inst.h>
 #include <asm/fpu.h>
 #include <asm/cacheflush.h>
@@ -280,7 +280,7 @@ void kgdb_arch_set_pc(struct pt_regs *regs, unsigned long pc)
 }
 
 /*
- * Calls linux_debug_hook before the kernel dies. If KGDB is enabled,
+ * Calls linaos_debug_hook before the kernel dies. If KGDB is enabled,
  * then try to fall into the debugger
  */
 static int kgdb_mips_notify(struct notifier_block *self, unsigned long cmd,

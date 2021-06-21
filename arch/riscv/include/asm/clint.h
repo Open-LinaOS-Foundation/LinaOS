@@ -6,7 +6,7 @@
 #ifndef _ASM_RISCV_CLINT_H
 #define _ASM_RISCV_CLINT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/mmio.h>
 
 #ifdef CONFIG_RISCV_M_MODE

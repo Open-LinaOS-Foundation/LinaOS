@@ -29,7 +29,7 @@
 #include "amdgpu_dpm.h"
 #include "kv_dpm.h"
 #include "gfx_v7_0.h"
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 #include "smu/smu_7_0_0_d.h"
 #include "smu/smu_7_0_0_sh_mask.h"

@@ -7,13 +7,13 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_dma.h>
 
 #include "dmaengine.h"
 

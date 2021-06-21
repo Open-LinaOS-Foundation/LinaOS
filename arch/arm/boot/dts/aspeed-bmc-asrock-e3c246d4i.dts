@@ -28,7 +28,7 @@
 		heartbeat {
 			/* BMC_HB_LED_N */
 			gpios = <&gpio ASPEED_GPIO(H, 6) GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 		};
 
 		system-fault {
@@ -44,7 +44,7 @@
 		uid-button {
 			label = "uid-button";
 			gpios = <&gpio ASPEED_GPIO(F, 1) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(F, 1)>;
+			linaos,code = <ASPEED_GPIO(F, 1)>;
 		};
 	};
 

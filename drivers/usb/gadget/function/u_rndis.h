@@ -13,7 +13,7 @@
 #ifndef U_RNDIS_H
 #define U_RNDIS_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 struct f_rndis_opts {
 	struct usb_function_instance	func_inst;

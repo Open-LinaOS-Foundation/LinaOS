@@ -6,8 +6,8 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/dmapool.h>
-#include <linux/mfd/atmel-hlcdc.h>
+#include <linaos/dmapool.h>
+#include <linaos/mfd/atmel-hlcdc.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

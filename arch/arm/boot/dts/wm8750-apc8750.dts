@@ -3,7 +3,7 @@
  * wm8750-apc8750.dts
  *  - Device tree file for VIA APC8750
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <linaos@prisktech.co.nz>
  */
 
 /dts-v1/;

@@ -19,7 +19,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/rcupdate.h>
+#include <linaos/rcupdate.h>
 
 /**
  * enum environment_cap - Environment parsed from country IE

@@ -9,13 +9,13 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/of_mdio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/phy.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/of_mdio.h>
 #include <asm/io.h>
 #include <asm/mpc52xx.h>
 #include "fec_mpc52xx.h"

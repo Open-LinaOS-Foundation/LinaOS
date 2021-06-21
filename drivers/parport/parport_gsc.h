@@ -18,7 +18,7 @@
 #define	__DRIVERS_PARPORT_PARPORT_GSC_H
 
 #include <asm/io.h>
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #undef	DEBUG_PARPORT	/* undefine for production */
 #define DELAY_TIME 	0

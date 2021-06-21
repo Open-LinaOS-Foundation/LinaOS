@@ -5,13 +5,13 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/pgtable.h>
+#include <linaos/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/threads.h>
+#include <linaos/pgtable.h>
 
 #include <asm/spitfire.h>
 #include <asm/oplib.h>

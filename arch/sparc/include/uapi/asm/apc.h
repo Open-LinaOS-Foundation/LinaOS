@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* apc - Driver definitions for power management functions
  * of Aurora Personality Chip (APC) on SPARCstation-4/5 and 
  * derivatives
@@ -10,7 +10,7 @@
 #ifndef _SPARC_APC_H
 #define _SPARC_APC_H
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 #define APC_IOC	'A'
 

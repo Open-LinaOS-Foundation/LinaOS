@@ -4,12 +4,12 @@
  *
  * Extracted from init.c
  */
-#include <linux/memblock.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/cache.h>
+#include <linaos/memblock.h>
+#include <linaos/percpu.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/cache.h>
 
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>

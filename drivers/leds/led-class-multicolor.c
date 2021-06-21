@@ -3,12 +3,12 @@
 // Copyright (C) 2019-20 Texas Instruments Incorporated - http://www.ti.com/
 // Author: Dan Murphy <dmurphy@ti.com>
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/led-class-multicolor.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include "leds.h"
 

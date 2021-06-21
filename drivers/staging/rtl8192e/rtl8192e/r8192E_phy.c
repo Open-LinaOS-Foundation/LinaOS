@@ -4,7 +4,7 @@
  *
  * Contact Information: wlanfae <wlanfae@realtek.com>
  */
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "rtl_core.h"
 #include "r8192E_hw.h"
 #include "r8192E_phyreg.h"

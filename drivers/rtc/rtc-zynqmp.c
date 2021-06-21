@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
 
 /* RTC Registers */
 #define RTC_SET_TM_WR		0x00

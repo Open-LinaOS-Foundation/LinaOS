@@ -22,11 +22,11 @@
 
 #define pr_fmt(fmt) "MPTCP: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/memblock.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
 #include <net/sock.h>
 #include <net/inet_common.h>
 #include <net/protocol.h>

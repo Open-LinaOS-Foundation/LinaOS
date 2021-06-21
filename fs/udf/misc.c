@@ -21,9 +21,9 @@
 
 #include "udfdecl.h"
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/crc-itu-t.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/crc-itu-t.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

@@ -27,7 +27,7 @@
 #include "atombios_encoders.h"
 #include "amdgpu_pll.h"
 #include <asm/div64.h>
-#include <linux/gcd.h>
+#include <linaos/gcd.h>
 
 /**
  * amdgpu_pll_reduce_ratio - fractional number reduction

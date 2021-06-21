@@ -4,15 +4,15 @@
  *
  * Copyright (C) 1998, 1999, 2001, 2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
 
 #include <asm/delay.h>
 #include <asm/page.h>

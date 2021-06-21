@@ -13,11 +13,11 @@
  */
 #include "rtllib.h"
 
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/etherdevice.h>
-#include <linux/ieee80211.h>
+#include <linaos/random.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ieee80211.h>
 #include "dot11d.h"
 
 static void rtllib_sta_wakeup(struct rtllib_device *ieee, short nl);

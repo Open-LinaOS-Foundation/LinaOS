@@ -9,8 +9,8 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/key.h>
-#include <linux/random.h>
+#include <linaos/key.h>
+#include <linaos/random.h>
 
 #include "fscrypt_private.h"
 

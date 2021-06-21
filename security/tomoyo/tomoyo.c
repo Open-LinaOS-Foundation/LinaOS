@@ -5,7 +5,7 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/lsm_hooks.h>
+#include <linaos/lsm_hooks.h>
 #include "common.h"
 
 /**
@@ -50,9 +50,9 @@ static int tomoyo_cred_prepare(struct cred *new, const struct cred *old,
 /**
  * tomoyo_bprm_committed_creds - Target for security_bprm_committed_creds().
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct linaos_binprm".
  */
-static void tomoyo_bprm_committed_creds(struct linux_binprm *bprm)
+static void tomoyo_bprm_committed_creds(struct linaos_binprm *bprm)
 {
 	/* Clear old_domain_info saved by execve() request. */
 	struct tomoyo_task *s = tomoyo_task(current);
@@ -65,11 +65,11 @@ static void tomoyo_bprm_committed_creds(struct linux_binprm *bprm)
 /**
  * tomoyo_bprm_for_exec - Target for security_bprm_creds_for_exec().
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct linaos_binprm".
  *
  * Returns 0.
  */
-static int tomoyo_bprm_creds_for_exec(struct linux_binprm *bprm)
+static int tomoyo_bprm_creds_for_exec(struct linaos_binprm *bprm)
 {
 	/*
 	 * Load policy if /sbin/tomoyo-init exists and /sbin/init is requested
@@ -84,11 +84,11 @@ static int tomoyo_bprm_creds_for_exec(struct linux_binprm *bprm)
 /**
  * tomoyo_bprm_check_security - Target for security_bprm_check().
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct linaos_binprm".
  *
  * Returns 0 on success, negative value otherwise.
  */
-static int tomoyo_bprm_check_security(struct linux_binprm *bprm)
+static int tomoyo_bprm_check_security(struct linaos_binprm *bprm)
 {
 	struct tomoyo_task *s = tomoyo_task(current);
 
@@ -566,7 +566,7 @@ DEFINE_SRCU(tomoyo_ss);
 int tomoyo_enabled __lsm_ro_after_init = 1;
 
 /**
- * tomoyo_init - Register TOMOYO Linux as a LSM module.
+ * tomoyo_init - Register TOMOYO LinaOS as a LSM module.
  *
  * Returns 0.
  */
@@ -576,7 +576,7 @@ static int __init tomoyo_init(void)
 
 	/* register ourselves with the security framework */
 	security_add_hooks(tomoyo_hooks, ARRAY_SIZE(tomoyo_hooks), "tomoyo");
-	pr_info("TOMOYO Linux initialized\n");
+	pr_info("TOMOYO LinaOS initialized\n");
 	s->domain_info = &tomoyo_kernel_domain;
 	atomic_inc(&tomoyo_kernel_domain.users);
 	s->old_domain_info = NULL;

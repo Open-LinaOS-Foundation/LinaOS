@@ -1,4 +1,4 @@
-/* winbond-840.c: A Linux PCI network adapter device driver. */
+/* winbond-840.c: A LinaOS PCI network adapter device driver. */
 /*
 	Written 1998-2001 by Donald Becker.
 
@@ -107,26 +107,26 @@ static int full_duplex[MAX_UNITS] = {-1, -1, -1, -1, -1, -1, -1, -1};
 #define TX_TIMEOUT  (2*HZ)
 
 /* Include files, designed to support most kernel versions 2.0.0 and later. */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/rtnetlink.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/crc32.h>
+#include <linaos/bitops.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>		/* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/irq.h>

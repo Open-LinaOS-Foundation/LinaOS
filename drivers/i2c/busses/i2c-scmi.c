@@ -5,12 +5,12 @@
  * Copyright (C) 2009 Crane Cai <crane.cai@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
 
 #define ACPI_SMBUS_HC_CLASS		"smbus"
 #define ACPI_SMBUS_HC_DEVICE_NAME	"cmi"

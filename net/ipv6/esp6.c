@@ -15,29 +15,29 @@
 
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/esp.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/pfkeyv2.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 #include <net/ip6_checksum.h>
 #include <net/ip6_route.h>
 #include <net/icmp.h>
 #include <net/ipv6.h>
 #include <net/protocol.h>
 #include <net/udp.h>
-#include <linux/icmpv6.h>
+#include <linaos/icmpv6.h>
 #include <net/tcp.h>
 #include <net/espintcp.h>
 #include <net/inet6_hashtables.h>
 
-#include <linux/highmem.h>
+#include <linaos/highmem.h>
 
 struct esp_skb_cb {
 	struct xfrm_skb_cb xfrm;

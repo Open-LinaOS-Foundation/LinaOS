@@ -7,15 +7,15 @@
  * Created by: Haren Myneni
  */
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/export.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
+#include <linaos/reboot.h>
+#include <linaos/kexec.h>
+#include <linaos/export.h>
+#include <linaos/crash_dump.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/types.h>
 
 #include <asm/processor.h>
 #include <asm/machdep.h>

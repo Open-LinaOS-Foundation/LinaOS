@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# linux/arch/arm/boot/bootp/Makefile
+# linaos/arch/arm/boot/bootp/Makefile
 #
 # This file is included by the global makefile so that you can add your own
 # architecture-specific flags and dependencies.

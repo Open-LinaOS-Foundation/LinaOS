@@ -39,7 +39,7 @@
 #define ARCH_FTRACE_SHIFT_STACK_TRACER 1
 
 #ifndef __ASSEMBLY__
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 extern void _mcount(unsigned long);
 extern void *return_address(unsigned int);

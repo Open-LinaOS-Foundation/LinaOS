@@ -5,20 +5,20 @@
  * Author: Kunihiko Hayashi <hayashi.kunihiko@socionext.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/bitops.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_irq.h>
+#include <linaos/pci.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include "pcie-designware.h"
 

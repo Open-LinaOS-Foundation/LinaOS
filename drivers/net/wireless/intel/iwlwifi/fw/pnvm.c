@@ -10,7 +10,7 @@
 #include "fw/api/commands.h"
 #include "fw/api/nvm-reg.h"
 #include "fw/api/alive.h"
-#include <linux/efi.h>
+#include <linaos/efi.h>
 
 struct iwl_pnvm_section {
 	__le32 offset;

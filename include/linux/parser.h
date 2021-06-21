@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/parser.h
+ * linaos/include/linaos/parser.h
  *
  * Header for lib/parser.c
  * Intended use of these functions is parsing filesystem argument lists,

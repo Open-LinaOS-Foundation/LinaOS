@@ -5,20 +5,20 @@
  *  Copyright 2012-2013 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/fsl/ftm.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/fsl/ftm.h>
 
 #define FTM_SC_CLK(c)	(((c) + 1) << FTM_SC_CLK_MASK_SHIFT)
 

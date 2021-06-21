@@ -10,14 +10,14 @@
  * Copyright (C) 2004 Ian Molton
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mmc/host.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/scatterlist.h>
 
 #include "tmio_mmc.h"
 

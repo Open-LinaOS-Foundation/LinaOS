@@ -7,24 +7,24 @@
  *
  * Copyright (c) 2010 Cisco Systems, Inc.
  * Copyright (c) 2009,2010 Rising Tide, Inc.
- * Copyright (c) 2009,2010 Linux-iSCSI.org
+ * Copyright (c) 2009,2010 LinaOS-iSCSI.org
  *
- * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
+#include <linaos/utsname.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/configfs.h>
+#include <linaos/kernel.h>
+#include <linaos/ctype.h>
 #include <asm/unaligned.h>
 #include <scsi/libfc.h>
 

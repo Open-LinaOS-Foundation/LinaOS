@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/perf_event.h>
-#include <linux/sysfs.h>
-#include <linux/nospec.h>
+#include <linaos/perf_event.h>
+#include <linaos/sysfs.h>
+#include <linaos/nospec.h>
 #include <asm/intel-family.h>
 #include "probe.h"
 

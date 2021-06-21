@@ -24,8 +24,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/mman.h>
-#include <linux/list.h>
-#include <linux/zalloc.h>
+#include <linaos/list.h>
+#include <linaos/zalloc.h>
 #ifndef REMOTE_UNWIND_LIBUNWIND
 #include <libunwind.h>
 #include <libunwind-ptrace.h>
@@ -77,7 +77,7 @@ UNW_OBJ(dwarf_find_debug_frame) (int found, unw_dyn_info_t *di_debug,
 /*
  * The following are not documented by LSB v1.3, yet they are used by
  * GCC, presumably they aren't documented by LSB since they aren't
- * used on Linux:
+ * used on LinaOS:
  */
 #define DW_EH_PE_funcrel	0x40	/* start-of-procedure-relative */
 #define DW_EH_PE_aligned	0x50	/* aligned pointer */

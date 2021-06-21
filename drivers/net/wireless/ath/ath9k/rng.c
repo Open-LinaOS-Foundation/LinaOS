@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/hw_random.h>
-#include <linux/kthread.h>
+#include <linaos/hw_random.h>
+#include <linaos/kthread.h>
 
 #include "ath9k.h"
 #include "hw.h"

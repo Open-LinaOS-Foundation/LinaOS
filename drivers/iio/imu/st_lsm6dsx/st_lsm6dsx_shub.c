@@ -22,11 +22,11 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/bitfield.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/bitfield.h>
 
 #include "st_lsm6dsx.h"
 

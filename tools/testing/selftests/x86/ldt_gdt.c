@@ -21,7 +21,7 @@
 #include <stdbool.h>
 #include <pthread.h>
 #include <sched.h>
-#include <linux/futex.h>
+#include <linaos/futex.h>
 #include <sys/mman.h>
 #include <asm/prctl.h>
 #include <sys/prctl.h>
@@ -119,7 +119,7 @@ static void check_valid_segment(uint16_t index, int ldt,
 	ar &= ~0xF0000;
 
 	/*
-	 * NB: Different Linux versions do different things with the
+	 * NB: Different LinaOS versions do different things with the
 	 * accessed bit in set_thread_area().
 	 */
 	if (ar != expected_ar && ar != (expected_ar | AR_ACCESSED)) {

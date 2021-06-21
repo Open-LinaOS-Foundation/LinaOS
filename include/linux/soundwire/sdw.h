@@ -4,8 +4,8 @@
 #ifndef __SOUNDWIRE_H
 #define __SOUNDWIRE_H
 
-#include <linux/mod_devicetable.h>
-#include <linux/bitfield.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/bitfield.h>
 
 struct sdw_bus;
 struct sdw_slave;
@@ -634,7 +634,7 @@ struct sdw_slave_ops {
 /**
  * struct sdw_slave - SoundWire Slave
  * @id: MIPI device ID
- * @dev: Linux device
+ * @dev: LinaOS device
  * @status: Status reported by the Slave
  * @bus: Bus handle
  * @ops: Slave callback ops
@@ -690,7 +690,7 @@ struct sdw_slave {
 
 /**
  * struct sdw_master_device - SoundWire 'Master Device' representation
- * @dev: Linux device for this Master
+ * @dev: LinaOS device for this Master
  * @bus: Bus handle shortcut
  */
 struct sdw_master_device {

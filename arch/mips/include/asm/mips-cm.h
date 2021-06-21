@@ -11,8 +11,8 @@
 #ifndef __MIPS_ASM_MIPS_CM_H__
 #define __MIPS_ASM_MIPS_CM_H__
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
 
 /* The base address of the CM GCR block */
 extern void __iomem *mips_gcr_base;
@@ -388,7 +388,7 @@ static inline unsigned int mips_cm_max_vp_width(void)
  * @cpu: the CPU whose VP ID to calculate
  *
  * Hardware such as the GIC uses identifiers for VPs which may not match the
- * CPU numbers used by Linux. This function calculates the hardware VP
+ * CPU numbers used by LinaOS. This function calculates the hardware VP
  * identifier corresponding to a given CPU.
  *
  * Return: the VP ID for the CPU.
@@ -446,7 +446,7 @@ static inline void mips_cm_unlock_other(void) { }
  *
  * Configure the redirect/other region for the local core/VP (depending upon
  * the CM revision) to target the specified @cpu & register @block. This is
- * equivalent to calling mips_cm_lock_other() but accepts a Linux CPU number
+ * equivalent to calling mips_cm_lock_other() but accepts a LinaOS CPU number
  * for convenience.
  */
 static inline void mips_cm_lock_other_cpu(unsigned int cpu, unsigned int block)

@@ -5,11 +5,11 @@
  * Delay routines, using a pre-computed "loops_per_jiffy" value.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h> /* for udelay's use of smp_processor_id */
+#include <linaos/module.h>
+#include <linaos/sched.h> /* for udelay's use of smp_processor_id */
 #include <asm/param.h>
 #include <asm/smp.h>
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 /*
  * Use only for very small delays (< 1 msec). 

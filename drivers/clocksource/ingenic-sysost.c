@@ -4,18 +4,18 @@
  * Copyright (c) 2020 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/sched_clock.h>
+#include <linaos/slab.h>
+#include <linaos/syscore_ops.h>
 
 #include <dt-bindings/clock/ingenic,sysost.h>
 

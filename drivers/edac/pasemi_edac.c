@@ -9,11 +9,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/edac.h>
 #include "edac_module.h"
 
 #define MODULE_NAME "pasemi_edac"

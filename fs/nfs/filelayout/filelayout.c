@@ -29,12 +29,12 @@
  *  such damages.
  */
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_page.h>
+#include <linaos/module.h>
+#include <linaos/backing-dev.h>
 
-#include <linux/sunrpc/metrics.h>
+#include <linaos/sunrpc/metrics.h>
 
 #include "../nfs4session.h"
 #include "../internal.h"

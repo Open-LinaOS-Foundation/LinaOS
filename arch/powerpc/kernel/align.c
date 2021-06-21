@@ -13,10 +13,10 @@
  *   Merge ppc32 and ppc64 implementations
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cache.h>
 #include <asm/cputable.h>
 #include <asm/emulated_ops.h>

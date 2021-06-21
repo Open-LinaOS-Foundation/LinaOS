@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ufs/ialloc.c
+ *  linaos/fs/ufs/ialloc.c
  *
  * Copyright (c) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -8,7 +8,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/ialloc.c
+ *  linaos/fs/ext2/ialloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -24,13 +24,13 @@
  * Evgeniy Dushistov <dushistov@mail.ru>, 2007
  */
 
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
+#include <linaos/fs.h>
+#include <linaos/time.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/sched.h>
+#include <linaos/bitops.h>
 #include <asm/byteorder.h>
 
 #include "ufs_fs.h"
@@ -124,7 +124,7 @@ void ufs_free_inode (struct inode * inode)
  * Nullify new chunk of inodes,
  * BSD people also set ui_gen field of inode
  * during nullification, but we not care about
- * that because of linux ufs do not support NFS
+ * that because of linaos ufs do not support NFS
  */
 static void ufs2_init_inodes_chunk(struct super_block *sb,
 				   struct ufs_cg_private_info *ucpi,

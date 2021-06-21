@@ -259,7 +259,7 @@
 	rts-gpio = <&gpio1 9 GPIO_ACTIVE_HIGH>;
 	rs485-rts-active-high;
 	rs485-rts-delay = <0 0>;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 
 	status = "okay";
 };
@@ -348,7 +348,7 @@
 
 		tft-panel@0 {
 			type = <PCA9532_TYPE_LED>;
-			linux,default-trigger = "backlight";
+			linaos,default-trigger = "backlight";
 			default-state = "on";
 		};
 	};

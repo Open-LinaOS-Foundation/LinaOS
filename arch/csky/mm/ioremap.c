@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/io.h>
 
 pgprot_t phys_mem_access_prot(struct file *file, unsigned long pfn,
 			      unsigned long size, pgprot_t vma_prot)

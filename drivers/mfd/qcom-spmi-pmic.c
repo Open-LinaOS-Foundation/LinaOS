@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spmi.h>
-#include <linux/regmap.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spmi.h>
+#include <linaos/regmap.h>
+#include <linaos/of_platform.h>
 
 #define PMIC_REV2		0x101
 #define PMIC_REV3		0x102

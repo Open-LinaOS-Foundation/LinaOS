@@ -6,17 +6,17 @@
  *                <alexander.stein@systec-electronic.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/spinlock.h>
 
 #define DRIVER_NAME "ie6xx_wdt"
 

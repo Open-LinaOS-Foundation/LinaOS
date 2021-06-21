@@ -6,34 +6,34 @@
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
  *  Copyright (c) 2008 Intel Corporation
- *   Author: Matthew Wilcox <willy@linux.intel.com>
+ *   Author: Matthew Wilcox <willy@linaos.intel.com>
  */
 
 #define pr_fmt(fmt) "ACPI: OSL: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/lockdep.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/nmi.h>
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/jiffies.h>
-#include <linux/semaphore.h>
-#include <linux/security.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/lockdep.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/kmod.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/nmi.h>
+#include <linaos/acpi.h>
+#include <linaos/efi.h>
+#include <linaos/ioport.h>
+#include <linaos/list.h>
+#include <linaos/jiffies.h>
+#include <linaos/semaphore.h>
+#include <linaos/security.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/uaccess.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 #include "acpica/accommon.h"
 #include "acpica/acnamesp.h"
@@ -50,7 +50,7 @@ struct acpi_os_dpc {
 };
 
 #ifdef ENABLE_DEBUGGER
-#include <linux/kdb.h>
+#include <linaos/kdb.h>
 
 /* stuff for debugger support */
 int acpi_in_debugger;
@@ -1214,7 +1214,7 @@ acpi_os_create_semaphore(u32 max_units, u32 initial_units, acpi_handle * handle)
 }
 
 /*
- * TODO: A better way to delete semaphores?  Linux doesn't have a
+ * TODO: A better way to delete semaphores?  LinaOS doesn't have a
  * 'delete_semaphore()' function -- may result in an invalid
  * pointer dereference for non-synchronized consumers.	Should
  * we at least check for blocked threads and signal/cancel them?

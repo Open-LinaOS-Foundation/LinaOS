@@ -7,7 +7,7 @@
 #ifndef _KOMEDA_KMS_H_
 #define _KOMEDA_KMS_H_
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc_helper.h>

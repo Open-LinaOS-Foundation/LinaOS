@@ -5,7 +5,7 @@
  *    PnpNetwork PN1010 QPSK Demodulator
  *
  * Copyright (C) 2005 Andrew de Quincey <adq_dvb@lidskialf.net>
- * Copyright (C) 2005 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005 Patrick Boettcher <pb@linaostv.org>
  */
 #ifndef S5H1420_PRIV
 #define S5H1420_PRIV

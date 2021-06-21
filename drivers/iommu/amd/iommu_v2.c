@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt)     "AMD-Vi: " fmt
 
-#include <linux/mmu_notifier.h>
-#include <linux/amd-iommu.h>
-#include <linux/mm_types.h>
-#include <linux/profile.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/wait.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/amd-iommu.h>
+#include <linaos/mm_types.h>
+#include <linaos/profile.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/wait.h>
+#include <linaos/pci.h>
+#include <linaos/gfp.h>
 
 #include "amd_iommu.h"
 

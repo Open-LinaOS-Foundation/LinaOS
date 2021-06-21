@@ -46,7 +46,7 @@ IpExtOutOctets.
 
 * IpExtInOctets and IpExtOutOctets
 
-They are Linux kernel extensions, no RFC definitions. Please note,
+They are LinaOS kernel extensions, no RFC definitions. Please note,
 RFC1213 indeed defines ifInOctets  and ifOutOctets, but they
 are different things. The ifInOctets and ifOutOctets include the MAC
 layer header size but IpExtInOctets and IpExtOutOctets don't, they
@@ -203,7 +203,7 @@ document.
 
 .. _ICMP parameters: https://www.iana.org/assignments/icmp-parameters/icmp-parameters.xhtml
 
-For example, if the Linux kernel sends an ICMP Echo packet, the
+For example, if the LinaOS kernel sends an ICMP Echo packet, the
 IcmpMsgOutType8 would increase 1. And if kernel gets an ICMP Echo Reply
 packet, IcmpMsgInType0 would increase 1.
 
@@ -337,7 +337,7 @@ explanation below::
   TCPFastOpenActiveFail: Fast Open attempts (SYN/data) failed because
   the remote does not accept it or the attempts timed out.
 
-.. _kernel commit f19c29e3e391: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f19c29e3e391a66a273e9afebaf01917245148cd
+.. _kernel commit f19c29e3e391: https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/commit/?id=f19c29e3e391a66a273e9afebaf01917245148cd
 
 * TcpExtListenOverflows and TcpExtListenDrops
 
@@ -381,7 +381,7 @@ Defined in `RFC1213 tcpAttemptFails`_.
 * TcpOutRsts
 
 Defined in `RFC1213 tcpOutRsts`_. The RFC says this counter indicates
-the 'segments sent containing the RST flag', but in linux kernel, this
+the 'segments sent containing the RST flag', but in linaos kernel, this
 counter indicates the segments kernel tried to send. The sending
 process might be failed due to some errors (e.g. memory alloc failed).
 
@@ -469,7 +469,7 @@ connection is not closed very graceful. An easy way to increase this
 counter is using the SO_LINGER option. Please refer to the SO_LINGER
 section of the `socket man page`_:
 
-.. _socket man page: http://man7.org/linux/man-pages/man7/socket.7.html
+.. _socket man page: http://man7.org/linaos/man-pages/man7/socket.7.html
 
 By default, when an application closes a connection, the close function
 will return immediately and kernel will try to send the in-flight data
@@ -503,7 +503,7 @@ TcpExtTCPAbortOnMemory:
 1. the memory used by the TCP protocol is higher than the third value of
 the tcp_mem. Please refer the tcp_mem section in the `TCP man page`_:
 
-.. _TCP man page: http://man7.org/linux/man-pages/man7/tcp.7.html
+.. _TCP man page: http://man7.org/linaos/man-pages/man7/tcp.7.html
 
 2. the orphan socket count is higher than net.ipv4.tcp_max_orphans
 
@@ -518,7 +518,7 @@ situation, kernel won't send RST, just give up the connection.
 When a TCP connection comes into FIN_WAIT_2 state, instead of waiting
 for the fin packet from the other side, kernel could send a RST and
 delete the socket immediately. This is not the default behavior of
-Linux kernel TCP stack. By configuring the TCP_LINGER2 socket option,
+LinaOS kernel TCP stack. By configuring the TCP_LINGER2 socket option,
 you could let kernel follow this behavior.
 
 * TcpExtTCPAbortFailed
@@ -702,7 +702,7 @@ corresponding counter would be updated 3 times. The comment of the
 `Add counters for discarded SACK blocks`_ patch has additional
 explanation:
 
-.. _Add counters for discarded SACK blocks: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=18f02545a9a16c9a89778b91a162ad16d510bb32
+.. _Add counters for discarded SACK blocks: https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/commit/?id=18f02545a9a16c9a89778b91a162ad16d510bb32
 
 * TcpExtTCPSACKDiscard
 
@@ -723,7 +723,7 @@ will be updated. As implied in its name, it might be an old packet.
 
 SACK shift
 ==========
-The linux networking stack stores data in sk_buff struct (skb for
+The linaos networking stack stores data in sk_buff struct (skb for
 short). If a SACK block acrosses multiple skb, the TCP stack will try
 to re-arrange data in these skb. E.g. if a SACK block acknowledges seq
 10 to 15, skb1 has seq 10 to 13, skb2 has seq 14 to 20. The seq 14 and
@@ -837,7 +837,7 @@ PAWS check failed or the received sequence number is out of window.
 The ACK is skipped if the ACK is a challenge ACK. The RFC 5961 defines
 3 kind of challenge ACK, please refer `RFC 5961 section 3.2`_,
 `RFC 5961 section 4.2`_ and `RFC 5961 section 5.2`_. Besides these
-three scenarios, In some TCP status, the linux TCP stack would also
+three scenarios, In some TCP status, the linaos TCP stack would also
 send challenge ACKs if the ACK number is before the first
 unacknowledged number (more strict than `RFC 5961 section 5.2`_).
 
@@ -1060,7 +1060,7 @@ The nstayt result::
   IpExtOutOctets                  84                 0.0
   IpExtInNoECTPkts                1                  0.0
 
-The Linux server sent an ICMP Echo packet, so IpOutRequests,
+The LinaOS server sent an ICMP Echo packet, so IpOutRequests,
 IcmpOutMsgs, IcmpOutEchos and IcmpMsgOutType8 were increased 1. The
 server got ICMP Echo Reply from 8.8.8.8, so IpInReceives, IcmpInMsgs,
 IcmpInEchoReps and IcmpMsgInType0 were increased 1. The ICMP Echo Reply
@@ -1514,7 +1514,7 @@ On client, run 3 nc commands in different terminals::
   Connection to nstat-b 9000 port [tcp/*] succeeded!
 
 The nc command only accepts 1 connection, and the accept queue length
-is 1. On current linux implementation, set queue length to n means the
+is 1. On current linaos implementation, set queue length to n means the
 actual queue length is n+1. Now we create 3 connections, 1 is accepted
 by nc, 2 in accepted queue, so the accept queue is full.
 
@@ -1665,7 +1665,7 @@ Open another terminal, run nc command::
 
 As the nstat-b didn't listen on port 9000, it should reply a RST, and
 the nc command exited immediately. It was enough for the tcpdump
-command to capture a SYN packet. A linux server might use hardware
+command to capture a SYN packet. A linaos server might use hardware
 offload for the TCP checksum, so the checksum in the /tmp/syn.pcap
 might be not correct. We call tcprewrite to fix it::
 
@@ -1733,7 +1733,7 @@ TcpExtTCPACKSkippedSeq
 ----------------------
 To trigger TcpExtTCPACKSkippedSeq, we send packets which have valid
 timestamp (to pass PAWS check) but the sequence number is out of
-window. The linux TCP stack would avoid to skip if the packet has
+window. The linaos TCP stack would avoid to skip if the packet has
 data, so we need a pure ACK packet. To generate such a packet, we
 could create two sockets: one on port 9000, another on port 9001. Then
 we capture an ACK on port 9001, change the source/destination port

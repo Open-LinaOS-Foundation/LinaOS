@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2016-2017 Hisilicon Limited.
 
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/dma-direction.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 #include "hclgevf_cmd.h"
 #include "hclgevf_main.h"
 #include "hnae3.h"

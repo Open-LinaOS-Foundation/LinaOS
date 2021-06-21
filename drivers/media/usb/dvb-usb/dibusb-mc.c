@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* DVB USB compliant linux driver for mobile DVB-T USB devices based on
+/* DVB USB compliant linaos driver for mobile DVB-T USB devices based on
  * reference designs made by DiBcom (http://www.dibcom.fr/) (DiB3000M-C/P)
  *
  * Copyright (C) 2004-5 Patrick Boettcher (patrick.boettcher@posteo.de)

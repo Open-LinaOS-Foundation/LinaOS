@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2018 Intel Corporation. */
 
-#include <linux/bpf_trace.h>
+#include <linaos/bpf_trace.h>
 #include <net/xdp_sock_drv.h>
 #include <net/xdp.h>
 

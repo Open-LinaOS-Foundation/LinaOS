@@ -5,22 +5,22 @@
  * Based on of-dma.c
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
+ *	    Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/acpi.h>
-#include <linux/acpi_dma.h>
-#include <linux/property.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_dma.h>
+#include <linaos/property.h>
 
 static LIST_HEAD(acpi_dma_list);
 static DEFINE_MUTEX(acpi_dma_lock);

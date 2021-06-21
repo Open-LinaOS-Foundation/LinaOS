@@ -2180,13 +2180,13 @@ cgroup resources. Controller is enabled by the CONFIG_CGROUP_MISC config
 option.
 
 A resource can be added to the controller via enum misc_res_type{} in the
-include/linux/misc_cgroup.h file and the corresponding name via misc_res_name[]
+include/linaos/misc_cgroup.h file and the corresponding name via misc_res_name[]
 in the kernel/cgroup/misc.c file. Provider of the resource must set its
 capacity prior to using the resource by calling misc_cg_set_capacity().
 
 Once a capacity is set then the resource usage can be updated using charge and
 uncharge APIs. All of the APIs to interact with misc controller are in
-include/linux/misc_cgroup.h.
+include/linaos/misc_cgroup.h.
 
 Misc Interface Files
 ~~~~~~~~~~~~~~~~~~~~

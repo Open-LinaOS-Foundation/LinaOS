@@ -5,8 +5,8 @@
 
 #include <uapi/asm/ptrace.h>
 #include <asm/traps.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 #ifndef __ASSEMBLY__
 

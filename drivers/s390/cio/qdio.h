@@ -2,7 +2,7 @@
 /*
  * Copyright IBM Corp. 2000, 2009
  * Author(s): Utz Bacher <utz.bacher@de.ibm.com>
- *	      Jan Glauber <jang@linux.vnet.ibm.com>
+ *	      Jan Glauber <jang@linaos.vnet.ibm.com>
  */
 #ifndef _CIO_QDIO_H
 #define _CIO_QDIO_H

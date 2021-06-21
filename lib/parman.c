@@ -32,13 +32,13 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/parman.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
+#include <linaos/err.h>
+#include <linaos/parman.h>
 
 struct parman_algo {
 	int (*item_add)(struct parman *parman, struct parman_prio *prio,

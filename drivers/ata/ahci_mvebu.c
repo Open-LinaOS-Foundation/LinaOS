@@ -11,12 +11,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/ahci_platform.h>
-#include <linux/kernel.h>
-#include <linux/mbus.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/ahci_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/mbus.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 #include "ahci.h"
 
 #define DRV_NAME "ahci-mvebu"

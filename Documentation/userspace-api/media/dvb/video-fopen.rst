@@ -70,7 +70,7 @@ documentation for functions where there is a difference. It does not
 affect the semantics of the open() call itself. A device opened in
 blocking mode can later be put into non-blocking mode (and vice versa)
 using the F_SETFL command of the fcntl system call. This is a standard
-system call, documented in the Linux manual page for fcntl. Only one
+system call, documented in the LinaOS manual page for fcntl. Only one
 user can open the Video Device in O_RDWR mode. All other attempts to
 open the device in this mode will fail, and an error-code will be
 returned. If the Video Device is opened in O_RDONLY mode, the only

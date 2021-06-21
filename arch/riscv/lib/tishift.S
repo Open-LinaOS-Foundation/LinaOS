@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Free Software Foundation, Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm-generic/export.h>
 
 SYM_FUNC_START(__lshrti3)

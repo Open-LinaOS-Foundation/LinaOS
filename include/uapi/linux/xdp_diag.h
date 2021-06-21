@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * xdp_diag: interface for query/monitor XDP sockets
  * Copyright(c) 2019 Intel Corporation.
@@ -7,7 +7,7 @@
 #ifndef _LINUX_XDP_DIAG_H
 #define _LINUX_XDP_DIAG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct xdp_diag_req {
 	__u8	sdiag_family;

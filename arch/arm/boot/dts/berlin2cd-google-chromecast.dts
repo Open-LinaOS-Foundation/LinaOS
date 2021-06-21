@@ -23,15 +23,15 @@
 		device_type = "memory";
 
 		/*
-		 * We're using "linux,usable-memory" instead of "reg" here
+		 * We're using "linaos,usable-memory" instead of "reg" here
 		 * because the (signed and encrypted) bootloader that shipped
 		 * with this device provides an incorrect memory range in
-		 * ATAG_MEM. Linux helpfully overrides the "reg" property with
+		 * ATAG_MEM. LinaOS helpfully overrides the "reg" property with
 		 * data from the ATAG, so we can't specify the proper range
 		 * normally. Fortunately, this alternate property is checked
 		 * first by the OF driver, so we can (ab)use it instead.
 		 */
-		linux,usable-memory = <0x00000000 0x20000000>; /* 512 MB */
+		linaos,usable-memory = <0x00000000 0x20000000>; /* 512 MB */
 	};
 
 	led-controller {
@@ -43,7 +43,7 @@
 			label = "white";
 			pwms = <&pwm 0 600000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		led-2 {

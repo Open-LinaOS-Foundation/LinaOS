@@ -7,20 +7,20 @@
  */
 
 /*
- * Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver for Linux
+ * Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/parport.h>
+#include <linaos/input.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver");

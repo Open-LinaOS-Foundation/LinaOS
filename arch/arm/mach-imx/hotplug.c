@@ -4,8 +4,8 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/errno.h>
-#include <linux/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/jiffies.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
 #include <asm/proc-fns.h>

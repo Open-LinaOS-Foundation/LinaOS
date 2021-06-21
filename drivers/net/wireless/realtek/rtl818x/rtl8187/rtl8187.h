@@ -12,7 +12,7 @@
 #ifndef RTL8187_H
 #define RTL8187_H
 
-#include <linux/cache.h>
+#include <linaos/cache.h>
 
 #include "rtl818x.h"
 #include "leds.h"

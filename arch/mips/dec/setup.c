@@ -8,20 +8,20 @@
  * Copyright (C) 1998 Harald Koerfgen
  * Copyright (C) 2000, 2001, 2002, 2003, 2005, 2020  Maciej W. Rozycki
  */
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/irqnr.h>
-#include <linux/memblock.h>
-#include <linux/param.h>
-#include <linux/percpu-defs.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <linaos/console.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/irq.h>
+#include <linaos/irqnr.h>
+#include <linaos/memblock.h>
+#include <linaos/param.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/pm.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

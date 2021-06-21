@@ -4,17 +4,17 @@
  * Author: Pi-Cheng Chen <pi-cheng.chen@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/clk.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpumask.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 
 #define MIN_VOLT_SHIFT		(100000)
 #define MAX_VOLT_SHIFT		(200000)

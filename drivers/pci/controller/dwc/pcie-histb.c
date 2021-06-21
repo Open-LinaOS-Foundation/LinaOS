@@ -8,18 +8,18 @@
  *          Jianguo Sun <sunjianguo1@huawei.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pci.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/resource.h>
+#include <linaos/reset.h>
 
 #include "pcie-designware.h"
 

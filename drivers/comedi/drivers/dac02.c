@@ -8,7 +8,7 @@
  * Copyright (C) 2000 Frank Mori Hess <fmhess@users.sourceforge.net>
  * Copyright (C) 2001 David A. Schleef <ds@schleef.org>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -24,7 +24,7 @@
  *	[0] - I/O port base
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedidev.h"
 

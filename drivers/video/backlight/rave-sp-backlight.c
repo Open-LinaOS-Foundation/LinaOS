@@ -7,11 +7,11 @@
  *
  */
 
-#include <linux/backlight.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/rave-sp.h>
-#include <linux/platform_device.h>
+#include <linaos/backlight.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mfd/rave-sp.h>
+#include <linaos/platform_device.h>
 
 #define	RAVE_SP_BACKLIGHT_LCD_EN	BIT(7)
 

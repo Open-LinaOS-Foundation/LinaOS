@@ -43,14 +43,14 @@ if [ "$2" = "zImage" ]; then
 else
 # Normal install
   echo "Installing normal kernel"
-  if [ -f $4/vmlinux-$1 ]; then
-    mv $4/vmlinux-$1 $4/vmlinux.old
+  if [ -f $4/vmlinaos-$1 ]; then
+    mv $4/vmlinaos-$1 $4/vmlinaos.old
   fi
 
   if [ -f $4/System.map ]; then
     mv $4/System.map $4/System.old
   fi
 
-  cat $2 > $4/vmlinux-$1
+  cat $2 > $4/vmlinaos-$1
   cp $3 $4/System.map
 fi

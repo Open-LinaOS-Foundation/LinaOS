@@ -5,9 +5,9 @@
 
 #undef DEBUG
 
-#include <linux/kallsyms.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
+#include <linaos/kallsyms.h>
+#include <linaos/export.h>
+#include <linaos/syscalls.h>
 
 #include <asm/spu.h>
 #include <asm/syscalls.h>

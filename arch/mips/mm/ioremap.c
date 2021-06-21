@@ -6,15 +6,15 @@
  * (C) Copyright 1995 1996 Linus Torvalds
  * (C) Copyright 2001, 2002 Ralf Baechle
  */
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <asm/addrspace.h>
 #include <asm/byteorder.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mm_types.h>
-#include <linux/io.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm_types.h>
+#include <linaos/io.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 #include <ioremap.h>

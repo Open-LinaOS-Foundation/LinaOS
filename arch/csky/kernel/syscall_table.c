@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/syscalls.h>
+#include <linaos/syscalls.h>
 #include <asm/syscalls.h>
 
 #undef __SYSCALL

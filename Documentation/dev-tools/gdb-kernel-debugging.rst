@@ -4,7 +4,7 @@ Debugging kernel and modules via gdb
 ====================================
 
 The kernel debugger kgdb, hypervisors like QEMU or JTAG-based hardware
-interfaces allow to debug the Linux kernel and its modules during runtime
+interfaces allow to debug the LinaOS kernel and its modules during runtime
 using gdb. Gdb comes with a powerful scripting interface for python. The
 kernel provides a collection of helper scripts that can simplify typical
 kernel debugging steps. This is a short tutorial about how to enable and use
@@ -22,7 +22,7 @@ Requirements
 Setup
 -----
 
-- Create a virtual Linux machine for QEMU/KVM (see www.linux-kvm.org and
+- Create a virtual LinaOS machine for QEMU/KVM (see www.linaos-kvm.org and
   www.qemu.org for more details). For cross-development,
   https://landley.net/aboriginal/bin keeps a pool of machine images and
   toolchains that can be helpful to start from.
@@ -48,14 +48,14 @@ Setup
     - during runtime by issuing "gdbserver" from the QEMU monitor
       console
 
-- cd /path/to/linux-build
+- cd /path/to/linaos-build
 
-- Start gdb: gdb vmlinux
+- Start gdb: gdb vmlinaos
 
   Note: Some distros may restrict auto-loading of gdb scripts to known safe
-  directories. In case gdb reports to refuse loading vmlinux-gdb.py, add::
+  directories. In case gdb reports to refuse loading vmlinaos-gdb.py, add::
 
-    add-auto-load-safe-path /path/to/linux-build
+    add-auto-load-safe-path /path/to/linaos-build
 
   to ~/.gdbinit. See gdb help for more details.
 
@@ -64,21 +64,21 @@ Setup
     (gdb) target remote :1234
 
 
-Examples of using the Linux-provided gdb helpers
+Examples of using the LinaOS-provided gdb helpers
 ------------------------------------------------
 
 - Load module (and main kernel) symbols::
 
     (gdb) lx-symbols
-    loading vmlinux
-    scanning for modules in /home/user/linux/build
-    loading @0xffffffffa0020000: /home/user/linux/build/net/netfilter/xt_tcpudp.ko
-    loading @0xffffffffa0016000: /home/user/linux/build/net/netfilter/xt_pkttype.ko
-    loading @0xffffffffa0002000: /home/user/linux/build/net/netfilter/xt_limit.ko
-    loading @0xffffffffa00ca000: /home/user/linux/build/net/packet/af_packet.ko
-    loading @0xffffffffa003c000: /home/user/linux/build/fs/fuse/fuse.ko
+    loading vmlinaos
+    scanning for modules in /home/user/linaos/build
+    loading @0xffffffffa0020000: /home/user/linaos/build/net/netfilter/xt_tcpudp.ko
+    loading @0xffffffffa0016000: /home/user/linaos/build/net/netfilter/xt_pkttype.ko
+    loading @0xffffffffa0002000: /home/user/linaos/build/net/netfilter/xt_limit.ko
+    loading @0xffffffffa00ca000: /home/user/linaos/build/net/packet/af_packet.ko
+    loading @0xffffffffa003c000: /home/user/linaos/build/fs/fuse/fuse.ko
     ...
-    loading @0xffffffffa0000000: /home/user/linux/build/drivers/ata/ata_generic.ko
+    loading @0xffffffffa0000000: /home/user/linaos/build/drivers/ata/ata_generic.ko
 
 - Set a breakpoint on some not yet loaded module function, e.g.::
 
@@ -94,12 +94,12 @@ Examples of using the Linux-provided gdb helpers
 - Load the module on the target and watch the symbols being loaded as well as
   the breakpoint hit::
 
-    loading @0xffffffffa0034000: /home/user/linux/build/lib/libcrc32c.ko
-    loading @0xffffffffa0050000: /home/user/linux/build/lib/lzo/lzo_compress.ko
-    loading @0xffffffffa006e000: /home/user/linux/build/lib/zlib_deflate/zlib_deflate.ko
-    loading @0xffffffffa01b1000: /home/user/linux/build/fs/btrfs/btrfs.ko
+    loading @0xffffffffa0034000: /home/user/linaos/build/lib/libcrc32c.ko
+    loading @0xffffffffa0050000: /home/user/linaos/build/lib/lzo/lzo_compress.ko
+    loading @0xffffffffa006e000: /home/user/linaos/build/lib/zlib_deflate/zlib_deflate.ko
+    loading @0xffffffffa01b1000: /home/user/linaos/build/fs/btrfs/btrfs.ko
 
-    Breakpoint 1, btrfs_init_sysfs () at /home/user/linux/fs/btrfs/sysfs.c:36
+    Breakpoint 1, btrfs_init_sysfs () at /home/user/linaos/fs/btrfs/sysfs.c:36
     36              btrfs_kset = kset_create_and_add("btrfs", NULL, fs_kobj);
 
 - Dump the log buffer of the target kernel::
@@ -107,7 +107,7 @@ Examples of using the Linux-provided gdb helpers
     (gdb) lx-dmesg
     [     0.000000] Initializing cgroup subsys cpuset
     [     0.000000] Initializing cgroup subsys cpu
-    [     0.000000] Linux version 3.8.0-rc4-dbg+ (...
+    [     0.000000] LinaOS version 3.8.0-rc4-dbg+ (...
     [     0.000000] Command line: root=/dev/sda2 resume=/dev/sda1 vga=0x314
     [     0.000000] e820: BIOS-provided physical RAM map:
     [     0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
@@ -165,11 +165,11 @@ this is just a snapshot of the initial version::
  function lx_current -- Return current task
  function lx_module -- Find module by name and return the module variable
  function lx_per_cpu -- Return per-cpu variable
- function lx_task_by_pid -- Find Linux task by PID and return the task_struct variable
- function lx_thread_info -- Calculate Linux thread_info from task variable
- lx-dmesg -- Print Linux kernel log buffer
+ function lx_task_by_pid -- Find LinaOS task by PID and return the task_struct variable
+ function lx_thread_info -- Calculate LinaOS thread_info from task variable
+ lx-dmesg -- Print LinaOS kernel log buffer
  lx-lsmod -- List currently loaded modules
- lx-symbols -- (Re-)load symbols of Linux kernel and currently loaded modules
+ lx-symbols -- (Re-)load symbols of LinaOS kernel and currently loaded modules
 
 Detailed help can be obtained via "help <command-name>" for commands and "help
 function <function-name>" for convenience functions.

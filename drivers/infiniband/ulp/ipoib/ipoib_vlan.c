@@ -30,13 +30,13 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
 
-#include <linux/init.h>
-#include <linux/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "ipoib.h"
 

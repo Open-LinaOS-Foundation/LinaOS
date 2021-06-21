@@ -4,9 +4,9 @@
  * Copyright © 2017 Intel Corporation
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
 
 #include "i915_drv.h"
 #include "i915_gemfs.h"

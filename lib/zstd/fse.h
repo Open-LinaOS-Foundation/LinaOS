@@ -43,7 +43,7 @@
 /*-*****************************************
 *  Dependencies
 ******************************************/
-#include <linux/types.h> /* size_t, ptrdiff_t */
+#include <linaos/types.h> /* size_t, ptrdiff_t */
 
 /*-*****************************************
 *  FSE_PUBLIC_API : control library symbols visibility

@@ -3,20 +3,20 @@
  * Intel Low Power Subsystem PWM controller driver
  *
  * Copyright (C) 2014, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  * Author: Chew Kean Ho <kean.ho.chew@intel.com>
  * Author: Chang Rebecca Swee Fun <rebecca.swee.fun.chang@intel.com>
  * Author: Chew Chiau Ee <chiau.ee.chew@intel.com>
- * Author: Alan Cox <alan@linux.intel.com>
+ * Author: Alan Cox <alan@linaos.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/time.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/time.h>
 
 #include "pwm-lpss.h"
 
@@ -259,5 +259,5 @@ int pwm_lpss_remove(struct pwm_lpss_chip *lpwm)
 EXPORT_SYMBOL_GPL(pwm_lpss_remove);
 
 MODULE_DESCRIPTION("PWM driver for Intel LPSS");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");

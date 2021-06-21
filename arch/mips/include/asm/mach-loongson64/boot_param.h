@@ -2,7 +2,7 @@
 #ifndef __ASM_MACH_LOONGSON64_BOOT_PARAM_H_
 #define __ASM_MACH_LOONGSON64_BOOT_PARAM_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define SYSTEM_RAM_LOW		1
 #define SYSTEM_RAM_HIGH		2
@@ -64,7 +64,7 @@ struct efi_cpuinfo_loongson {
 
 #define MAX_UARTS 64
 struct uart_device {
-	u32 iotype; /* see include/linux/serial_core.h */
+	u32 iotype; /* see include/linaos/serial_core.h */
 	u32 uartclk;
 	u32 int_offset;
 	u64 uart_base;

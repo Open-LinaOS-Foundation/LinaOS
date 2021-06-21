@@ -4,8 +4,8 @@
  * Copyright (c) 2015-2016 HGST, a Western Digital Company.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/blkdev.h>
-#include <linux/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/module.h>
 #include "nvmet.h"
 
 void nvmet_bdev_set_limits(struct block_device *bdev, struct nvme_id_ns *id)

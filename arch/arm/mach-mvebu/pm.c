@@ -10,14 +10,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mbus.h>
-#include <linux/of_address.h>
-#include <linux/suspend.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mbus.h>
+#include <linaos/of_address.h>
+#include <linaos/suspend.h>
 #include <asm/cacheflush.h>
 #include <asm/outercache.h>
 #include <asm/suspend.h>
@@ -135,7 +135,7 @@ static void mvebu_pm_store_armadaxp_bootinfo(u32 *store_addr)
 
 	/*
 	 * Set the internal register base address to the value
-	 * expected by Linux, as read from the Device Tree.
+	 * expected by LinaOS, as read from the Device Tree.
 	 */
 	writel(MBUS_INTERNAL_REG_ADDRESS, store_addr++);
 	writel(mvebu_internal_reg_base(), store_addr++);

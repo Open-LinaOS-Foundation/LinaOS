@@ -6,7 +6,7 @@
 #define __ASM_SIGNAL32_H
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 struct compat_sigcontext {
 	/* We always set these two fields to 0 */

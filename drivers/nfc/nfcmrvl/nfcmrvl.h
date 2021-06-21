@@ -19,7 +19,7 @@
 #ifndef _NFCMRVL_H_
 #define _NFCMRVL_H_
 
-#include <linux/platform_data/nfcmrvl.h>
+#include <linaos/platform_data/nfcmrvl.h>
 
 #include "fw_dnld.h"
 

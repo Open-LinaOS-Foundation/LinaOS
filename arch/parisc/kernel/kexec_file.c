@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Load ELF vmlinux file for the kexec_file_load syscall.
+ * Load ELF vmlinaos file for the kexec_file_load syscall.
  *
  * Copyright (c) 2019 Sven Schnelle <svens@stackframe.org>
  *
  */
-#include <linux/elf.h>
-#include <linux/kexec.h>
-#include <linux/libfdt.h>
-#include <linux/module.h>
-#include <linux/of_fdt.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/elf.h>
+#include <linaos/kexec.h>
+#include <linaos/libfdt.h>
+#include <linaos/module.h>
+#include <linaos/of_fdt.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 static void *elf_load(struct kimage *image, char *kernel_buf,
 			unsigned long kernel_len, char *initrd,

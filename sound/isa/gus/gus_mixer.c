@@ -4,8 +4,8 @@
  *  Routines for control of ICS 2101 chip and "mixer" in GF1 chip
  */
 
-#include <linux/time.h>
-#include <linux/wait.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/gus.h>

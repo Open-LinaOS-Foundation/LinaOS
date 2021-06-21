@@ -8,8 +8,8 @@
  *
  * Arbitrary Monitor Interface
  */
-#include <linux/kernel.h>
-#include <linux/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
 
 #include <asm/addrspace.h>
 #include <asm/mipsmtregs.h>

@@ -17,7 +17,7 @@
 
 #define MODULE_NAME "xirlink-cit"
 
-#include <linux/input.h>
+#include <linaos/input.h>
 #include "gspca.h"
 
 MODULE_AUTHOR("Hans de Goede <hdegoede@redhat.com>");

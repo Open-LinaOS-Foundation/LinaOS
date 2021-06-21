@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 /*
- * Linux-specific definitions for managing interactions with Microsoft's
+ * LinaOS-specific definitions for managing interactions with Microsoft's
  * Hyper-V hypervisor. The definitions in this file are architecture
  * independent. See arch/<arch>/include/asm/mshyperv.h for definitions
  * that are specific to architecture <arch>.
@@ -18,10 +18,10 @@
 #ifndef _ASM_GENERIC_MSHYPERV_H
 #define _ASM_GENERIC_MSHYPERV_H
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/cpumask.h>
 #include <asm/ptrace.h>
 #include <asm/hyperv-tlfs.h>
 
@@ -154,7 +154,7 @@ extern int vmbus_irq;
 #if IS_ENABLED(CONFIG_HYPERV)
 /*
  * Hypervisor's notion of virtual processor ID is different from
- * Linux' notion of CPU ID. This information can only be retrieved
+ * LinaOS' notion of CPU ID. This information can only be retrieved
  * in the context of the calling CPU. Setup a map for easy access
  * to this information.
  */
@@ -170,9 +170,9 @@ void hv_free_hyperv_page(unsigned long addr);
 
 /**
  * hv_cpu_number_to_vp_number() - Map CPU to VP.
- * @cpu_number: CPU number in Linux terms
+ * @cpu_number: CPU number in LinaOS terms
  *
- * This function returns the mapping between the Linux processor
+ * This function returns the mapping between the LinaOS processor
  * number and the hypervisor's virtual processor number, useful
  * in making hypercalls and such that talk about specific
  * processors.

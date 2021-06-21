@@ -3,7 +3,7 @@
 
 #include "i40e.h"
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 /**
  * i40e_ddp_profiles_eq - checks if DDP profiles are the equivalent

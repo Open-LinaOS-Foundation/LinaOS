@@ -30,18 +30,18 @@
  * and then create an event by plugging/unplugging the battery.
  */
 
-#include <linux/acpi.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linaos/acpi.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/idr.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/wait.h>
 
 /* ACPI Notify event code indicating event data is available. */
 #define EC_ACPI_NOTIFY_EVENT		0x90

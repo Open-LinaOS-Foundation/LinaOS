@@ -8,15 +8,15 @@
 
 #define pr_fmt(fmt)		"bmips-dma: " fmt
 
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-direct.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/dma-direction.h>
+#include <linaos/dma-direct.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 #include <asm/bmips.h>
 
 /*

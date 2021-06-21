@@ -24,11 +24,11 @@
 # include <asm/page.h>
 # ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/spinlock.h>
+#include <linaos/compiler.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/mm_types.h>
+#include <linaos/spinlock.h>
 
 #include <asm/processor.h>
 #include <asm-generic/mm_hooks.h>

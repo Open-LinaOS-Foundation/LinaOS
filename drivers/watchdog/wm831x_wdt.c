@@ -5,18 +5,18 @@
  * Copyright (C) 2009 Wolfson Microelectronics
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/watchdog.h>
+#include <linaos/uaccess.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/watchdog.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/pdata.h>
+#include <linaos/mfd/wm831x/watchdog.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;
 module_param(nowayout, bool, 0);

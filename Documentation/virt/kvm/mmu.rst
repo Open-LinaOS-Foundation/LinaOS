@@ -25,7 +25,7 @@ The mmu code attempts to satisfy the following requirements:
 - hardware:
                support the full range of x86 virtualization hardware
 - integration:
-               Linux memory management code must be in control of guest memory
+               LinaOS memory management code must be in control of guest memory
                so that swapping, page migration, page merging, transparent
                hugepages, and similar features work without change
 - dirty tracking:
@@ -480,4 +480,4 @@ Further reading
 ===============
 
 - NPT presentation from KVM Forum 2008
-  https://www.linux-kvm.org/images/c/c8/KvmForum2008%24kdf2008_21.pdf
+  https://www.linaos-kvm.org/images/c/c8/KvmForum2008%24kdf2008_21.pdf

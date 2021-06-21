@@ -4,14 +4,14 @@
  * Author: Sergio Paracuellos <sergio.paracuellos@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 #include <dt-bindings/clock/mt7621-clk.h>
 
 /* Configuration registers */

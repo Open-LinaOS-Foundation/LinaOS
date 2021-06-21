@@ -5,14 +5,14 @@
  * Copyright (C) 2012 Texas Instruments, Inc. - https://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pwm.h>
+#include <linaos/of_device.h>
 
 /* ECAP registers and bits definitions */
 #define CAP1			0x08

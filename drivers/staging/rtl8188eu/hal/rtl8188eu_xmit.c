@@ -10,7 +10,7 @@
 #include <mon.h>
 #include <wifi.h>
 #include <osdep_intf.h>
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 #include <rtl8188e_hal.h>
 
 s32 rtw_hal_init_xmit_priv(struct adapter *adapt)

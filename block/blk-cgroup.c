@@ -15,21 +15,21 @@
  * Copyright (C) 2015 Paolo Valente <paolo.valente@unimore.it>
  *                    Arianna Avanzini <avanzini.arianna@gmail.com>
  */
-#include <linux/ioprio.h>
-#include <linux/kdev_t.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/slab.h>
-#include <linux/genhd.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/ctype.h>
-#include <linux/blk-cgroup.h>
-#include <linux/tracehook.h>
-#include <linux/psi.h>
+#include <linaos/ioprio.h>
+#include <linaos/kdev_t.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
+#include <linaos/err.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/slab.h>
+#include <linaos/genhd.h>
+#include <linaos/delay.h>
+#include <linaos/atomic.h>
+#include <linaos/ctype.h>
+#include <linaos/blk-cgroup.h>
+#include <linaos/tracehook.h>
+#include <linaos/psi.h>
 #include "blk.h"
 
 /*

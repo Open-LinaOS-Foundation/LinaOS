@@ -21,12 +21,12 @@
 #define	_MWIFIEX_SDIO_H
 
 
-#include <linux/completion.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <linaos/completion.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/sdio_ids.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
 
 #include "main.h"
 

@@ -4,7 +4,7 @@
  *          conversions.
  *
  * Copyright (C) 1997 David S. Miller (davem@caip.rutgers.edu)
- * Copyright (C) 1998 Jakub Jelinek   (jj@ultra.linux.cz)
+ * Copyright (C) 1998 Jakub Jelinek   (jj@ultra.linaos.cz)
  */
 
 #include <asm/errno.h>

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  */
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
+#include <linaos/fs.h>
+#include <linaos/fcntl.h>
+#include <linaos/memblock.h>
+#include <linaos/mm.h>
 
 #include <asm/bootinfo.h>
 

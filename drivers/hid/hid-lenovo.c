@@ -8,7 +8,7 @@
  *  Copyright (c) 2012 Bernhard Seibold
  *  Copyright (c) 2014 Jamie Lentin <jm@lentin.co.uk>
  *
- * Linux IBM/Lenovo Scrollpoint mouse driver:
+ * LinaOS IBM/Lenovo Scrollpoint mouse driver:
  * - IBM Scrollpoint III
  * - IBM Scrollpoint Pro
  * - IBM Scrollpoint Optical
@@ -23,13 +23,13 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/sysfs.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/input.h>
+#include <linaos/leds.h>
+#include <linaos/workqueue.h>
 
 #include "hid-ids.h"
 

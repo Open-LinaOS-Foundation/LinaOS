@@ -7,14 +7,14 @@
  *		 Heiko Carstens <heiko.carstens@de.ibm.com>,
  */
 
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/timex.h>
-#include <linux/export.h>
-#include <linux/irqflags.h>
-#include <linux/interrupt.h>
-#include <linux/jump_label.h>
-#include <linux/irq.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/timex.h>
+#include <linaos/export.h>
+#include <linaos/irqflags.h>
+#include <linaos/interrupt.h>
+#include <linaos/jump_label.h>
+#include <linaos/irq.h>
 #include <asm/vtimer.h>
 #include <asm/div64.h>
 #include <asm/idle.h>

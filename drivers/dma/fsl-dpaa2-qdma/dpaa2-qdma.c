@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright 2019 NXP
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/dmapool.h>
-#include <linux/of_irq.h>
-#include <linux/iommu.h>
-#include <linux/sys_soc.h>
-#include <linux/fsl/mc.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/dmapool.h>
+#include <linaos/of_irq.h>
+#include <linaos/iommu.h>
+#include <linaos/sys_soc.h>
+#include <linaos/fsl/mc.h>
 #include <soc/fsl/dpaa2-io.h>
 
 #include "../virt-dma.h"

@@ -8,8 +8,8 @@
 #ifndef _VMCI_TRANSPORT_H_
 #define _VMCI_TRANSPORT_H_
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
+#include <linaos/vmw_vmci_defs.h>
+#include <linaos/vmw_vmci_api.h>
 
 #include <net/vsock_addr.h>
 #include <net/af_vsock.h>

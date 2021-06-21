@@ -6,15 +6,15 @@
  * Copyright (C) 2016, 2017 Cavium Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
 #include <asm-generic/msi.h>
 
 

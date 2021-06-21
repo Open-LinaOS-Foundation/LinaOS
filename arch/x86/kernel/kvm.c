@@ -9,24 +9,24 @@
 
 #define pr_fmt(fmt) "kvm-guest: " fmt
 
-#include <linux/context_tracking.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/kvm_para.h>
-#include <linux/cpu.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/hardirq.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/hash.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kprobes.h>
-#include <linux/nmi.h>
-#include <linux/swait.h>
-#include <linux/syscore_ops.h>
+#include <linaos/context_tracking.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/kvm_para.h>
+#include <linaos/cpu.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/hardirq.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/hash.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/kprobes.h>
+#include <linaos/nmi.h>
+#include <linaos/swait.h>
+#include <linaos/syscore_ops.h>
 #include <asm/timer.h>
 #include <asm/cpu.h>
 #include <asm/traps.h>

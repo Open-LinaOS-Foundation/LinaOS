@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* linux/amba/pl093.h
+/* linaos/amba/pl093.h
  *
  * Copyright (c) 2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * AMBA PL093 SSMC (synchronous static memory controller)

@@ -9,9 +9,9 @@
 #ifndef __LINUX_MFD_BCM590XX_H
 #define __LINUX_MFD_BCM590XX_H
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
 
 /* max register address */
 #define BCM590XX_MAX_REGISTER_PRI	0xe7

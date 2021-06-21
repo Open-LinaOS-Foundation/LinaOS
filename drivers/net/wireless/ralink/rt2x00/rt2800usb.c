@@ -16,11 +16,11 @@
 	Supported chipsets: RT2800U.
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
 
 #include "rt2x00.h"
 #include "rt2x00usb.h"
@@ -1154,7 +1154,7 @@ static const struct usb_device_id rt2800usb_device_table[] = {
 #ifdef CONFIG_RT2800USB_UNKNOWN
 	/*
 	 * Unclear what kind of devices these are (they aren't supported by the
-	 * vendor linux driver).
+	 * vendor linaos driver).
 	 */
 	/* Abocom */
 	{ USB_DEVICE(0x07b8, 0x3073) },

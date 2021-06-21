@@ -11,8 +11,8 @@
 #ifndef __LINUX_MFD_BD9571MWV_H
 #define __LINUX_MFD_BD9571MWV_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /* List of registers for BD9571MWV and BD9574MWF */
 #define BD9571MWV_VENDOR_CODE			0x00

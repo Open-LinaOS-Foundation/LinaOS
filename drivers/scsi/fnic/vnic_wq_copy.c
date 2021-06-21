@@ -16,10 +16,10 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 #include "vnic_wq_copy.h"
 
 void vnic_wq_copy_enable(struct vnic_wq_copy *wq)

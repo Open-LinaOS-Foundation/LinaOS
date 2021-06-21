@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/fbcon_ud.c -- Software Rotation - 180 degrees
+ *  linaos/drivers/video/console/fbcon_ud.c -- Software Rotation - 180 degrees
  *
  *      Copyright (C) 2005 Antonino Daplas <adaplas @pol.net>
  *
@@ -8,12 +8,12 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/fb.h>
+#include <linaos/vt_kern.h>
+#include <linaos/console.h>
 #include <asm/types.h>
 #include "fbcon.h"
 #include "fbcon_rotate.h"

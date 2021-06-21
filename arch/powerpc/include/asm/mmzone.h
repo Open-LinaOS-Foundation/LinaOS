@@ -9,7 +9,7 @@
 #define _ASM_MMZONE_H_
 #ifdef __KERNEL__
 
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 
 /*
  * generic non-linear memory support:

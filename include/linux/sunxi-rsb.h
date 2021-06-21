@@ -12,9 +12,9 @@
 #ifndef _SUNXI_RSB_H
 #define _SUNXI_RSB_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
 
 struct sunxi_rsb;
 

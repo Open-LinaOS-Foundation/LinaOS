@@ -11,8 +11,8 @@
 #ifndef ST_ACCEL_H
 #define ST_ACCEL_H
 
-#include <linux/types.h>
-#include <linux/iio/common/st_sensors.h>
+#include <linaos/types.h>
+#include <linaos/iio/common/st_sensors.h>
 
 enum st_accel_type {
 	LSM303DLH,

@@ -5,7 +5,7 @@
  *    MandrakeSoft S.A.
  *    43, rue d'Aboukir
  *    75002 Paris - France
- *    http://www.linux-mandrake.com/
+ *    http://www.linaos-mandrake.com/
  *    http://www.mandrakesoft.com/
  *
  *  This library is free software; you can redistribute it and/or
@@ -27,16 +27,16 @@
  *  Based on Xen 3.1 code.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/smp.h>
-#include <linux/hrtimer.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/nospec.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kvm.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/smp.h>
+#include <linaos/hrtimer.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/nospec.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/current.h>
@@ -358,7 +358,7 @@ static void ioapic_write_indirect(struct kvm_ioapic *ioapic, u32 val)
 		e->fields.delivery_status = old_delivery_status;
 
 		/*
-		 * Some OSes (Linux, Xen) assume that Remote IRR bit will
+		 * Some OSes (LinaOS, Xen) assume that Remote IRR bit will
 		 * be cleared by IOAPIC hardware when the entry is configured
 		 * as edge-triggered. This behavior is used to simulate an
 		 * explicit EOI on IOAPICs that don't have the EOI register.

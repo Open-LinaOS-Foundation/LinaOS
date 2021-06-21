@@ -4,11 +4,11 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/vmalloc.h>
-#include <linux/crash_dump.h>
-#include <linux/qed/qed_iov_if.h>
+#include <linaos/etherdevice.h>
+#include <linaos/crc32.h>
+#include <linaos/vmalloc.h>
+#include <linaos/crash_dump.h>
+#include <linaos/qed/qed_iov_if.h>
 #include "qed_cxt.h"
 #include "qed_hsi.h"
 #include "qed_hw.h"

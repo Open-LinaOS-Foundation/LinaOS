@@ -29,10 +29,10 @@
  * Authors: Thomas Hellstrom <thellstrom-at-vmware-dot-com>
  */
 
-#include <linux/atomic.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
+#include <linaos/atomic.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/sched/signal.h>
 #include "ttm_lock.h"
 #include "ttm_object.h"
 

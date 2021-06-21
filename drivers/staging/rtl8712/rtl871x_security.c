@@ -3,9 +3,9 @@
  * rtl871x_security.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * LinaOS device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,21 +16,21 @@
 
 #define  _RTL871X_SECURITY_C_
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/circ_buf.h>
-#include <linux/uaccess.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kref.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/circ_buf.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
-#include <linux/crc32poly.h>
-#include <linux/semaphore.h>
-#include <linux/ieee80211.h>
+#include <linaos/atomic.h>
+#include <linaos/crc32poly.h>
+#include <linaos/semaphore.h>
+#include <linaos/ieee80211.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"

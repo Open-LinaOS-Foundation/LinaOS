@@ -24,7 +24,7 @@
 #ifndef _AMDGPU_RAS_EEPROM_H
 #define _AMDGPU_RAS_EEPROM_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 struct amdgpu_device;
 

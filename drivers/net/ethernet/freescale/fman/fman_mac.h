@@ -36,9 +36,9 @@
 
 #include "fman.h"
 
-#include <linux/slab.h>
-#include <linux/phy.h>
-#include <linux/if_ether.h>
+#include <linaos/slab.h>
+#include <linaos/phy.h>
+#include <linaos/if_ether.h>
 
 struct fman_mac;
 

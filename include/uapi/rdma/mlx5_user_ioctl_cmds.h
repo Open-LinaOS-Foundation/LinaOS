@@ -33,7 +33,7 @@
 #ifndef MLX5_USER_IOCTL_CMDS_H
 #define MLX5_USER_IOCTL_CMDS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <rdma/ib_user_ioctl_cmds.h>
 
 enum mlx5_ib_create_flow_action_attrs {

@@ -2,21 +2,21 @@
 #ifndef _FIREWIRE_FWSERIAL_H
 #define _FIREWIRE_FWSERIAL_H
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/list.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/list.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/spinlock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/mutex.h>
+#include <linaos/serial.h>
+#include <linaos/serial_reg.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
 
 #include "dma_fifo.h"
 

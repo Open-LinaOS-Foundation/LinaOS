@@ -82,7 +82,7 @@
 		};
 
 		fram@1,0 {
-			compatible = "ifm,ac14xx-fram", "linux,uio-pdrv-genirq";
+			compatible = "ifm,ac14xx-fram", "linaos,uio-pdrv-genirq";
 			reg = <1 0x00000000 0x00010000>;
 		};
 
@@ -364,7 +364,7 @@
 				     &gpio_pic 3 0	/* pin3 */
 				     &gpio_pic 4 0>;	/* pin4 */
 
-			linux,keymap = <0x0000006e	/* FN LEFT */
+			linaos,keymap = <0x0000006e	/* FN LEFT */
 					0x01000067	/* UP */
 					0x02000066	/* FN RIGHT */
 					0x00010069	/* LEFT */

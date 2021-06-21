@@ -7,17 +7,17 @@
  *  Based on syscon driver.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mfd/altera-sysmgr.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/mfd/altera-sysmgr.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 /**
  * struct altr_sysmgr - Altera SOCFPGA System Manager

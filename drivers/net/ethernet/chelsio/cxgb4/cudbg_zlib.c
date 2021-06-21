@@ -3,7 +3,7 @@
  *  Copyright (C) 2018 Chelsio Communications.  All rights reserved.
  */
 
-#include <linux/zlib.h>
+#include <linaos/zlib.h>
 
 #include "cxgb4.h"
 #include "cudbg_if.h"

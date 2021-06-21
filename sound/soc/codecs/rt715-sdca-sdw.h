@@ -8,7 +8,7 @@
 #ifndef __RT715_SDW_SDCA_H__
 #define __RT715_SDW_SDCA_H__
 
-#include <linux/soundwire/sdw_registers.h>
+#include <linaos/soundwire/sdw_registers.h>
 
 static const struct reg_default rt715_reg_defaults_sdca[] = {
 	{ 0x201a, 0x00 },

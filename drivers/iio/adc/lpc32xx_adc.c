@@ -7,16 +7,16 @@
  *  Copyright (C) 2011, 2012 Roland Stigge <stigge@antcom.de>
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/iio/iio.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
 
 /*
  * LPC32XX registers definitions

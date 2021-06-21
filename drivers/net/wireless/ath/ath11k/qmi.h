@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef ATH11K_QMI_H
 #define ATH11K_QMI_H
 
-#include <linux/mutex.h>
-#include <linux/soc/qcom/qmi.h>
+#include <linaos/mutex.h>
+#include <linaos/soc/qcom/qmi.h>
 
 #define ATH11K_HOST_VERSION_STRING		"WIN"
 #define ATH11K_QMI_WLANFW_TIMEOUT_MS		5000

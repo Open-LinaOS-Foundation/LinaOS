@@ -17,8 +17,8 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_CLOCKDOMAINS_81XX_H
 #define __ARCH_ARM_MACH_OMAP2_CLOCKDOMAINS_81XX_H
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
 
 #include "clockdomain.h"
 #include "cm81xx.h"

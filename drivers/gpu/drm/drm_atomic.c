@@ -26,7 +26,7 @@
  */
 
 
-#include <linux/sync_file.h>
+#include <linaos/sync_file.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_uapi.h>

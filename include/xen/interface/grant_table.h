@@ -35,7 +35,7 @@
  */
 
 /* Some rough guidelines on accessing and updating grant-table entries
- * in a concurrency-safe manner. For more information, Linux contains a
+ * in a concurrency-safe manner. For more information, LinaOS contains a
  * reference implementation for guest OSes (arch/xen/kernel/grant_table.c).
  *
  * NB. WMB is a no-op on current-generation x86 processors. However, a

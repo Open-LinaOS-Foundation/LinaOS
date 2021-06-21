@@ -3,10 +3,10 @@
 // Special handling for implicit feedback mode
 //
 
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
+#include <linaos/init.h>
+#include <linaos/usb.h>
+#include <linaos/usb/audio.h>
+#include <linaos/usb/audio-v2.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

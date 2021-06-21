@@ -6,14 +6,14 @@
  * Copyright (C) 2013 Jean-Jacques Hiblot <jjhiblot@traphandler.com>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-matrix.h>
-#include <linux/mfd/syscon/atmel-smc.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/atmel-matrix.h>
+#include <linaos/mfd/syscon/atmel-smc.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 #include <soc/at91/atmel-sfr.h>
 
 #define AT91_EBI_NUM_CS		8

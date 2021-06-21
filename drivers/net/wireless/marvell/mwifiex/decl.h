@@ -23,10 +23,10 @@
 #undef pr_fmt
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/ieee80211.h>
-#include <uapi/linux/if_arp.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
+#include <linaos/ieee80211.h>
+#include <uapi/linaos/if_arp.h>
 #include <net/cfg80211.h>
 
 #define MWIFIEX_BSS_COEX_COUNT	     2

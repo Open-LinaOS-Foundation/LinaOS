@@ -13,7 +13,7 @@
 #ifndef _ASM_NIOS2_UACCESS_H
 #define _ASM_NIOS2_UACCESS_H
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #include <asm/page.h>
 

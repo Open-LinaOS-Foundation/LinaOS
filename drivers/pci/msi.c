@@ -7,22 +7,22 @@
  * Copyright (C) 2016 Christoph Hellwig.
  */
 
-#include <linux/err.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/msi.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/acpi_iort.h>
-#include <linux/slab.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
+#include <linaos/err.h>
+#include <linaos/mm.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/export.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/msi.h>
+#include <linaos/smp.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/slab.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_irq.h>
 
 #include "pci.h"
 
@@ -1184,7 +1184,7 @@ EXPORT_SYMBOL(pci_enable_msix_range);
  * error code on error. If less than @min_vecs interrupt vectors are
  * available for @dev the function will fail with -ENOSPC.
  *
- * To get the Linux IRQ number used for a vector that can be passed to
+ * To get the LinaOS IRQ number used for a vector that can be passed to
  * request_irq() use the pci_irq_vector() helper.
  */
 int pci_alloc_irq_vectors_affinity(struct pci_dev *dev, unsigned int min_vecs,
@@ -1248,7 +1248,7 @@ void pci_free_irq_vectors(struct pci_dev *dev)
 EXPORT_SYMBOL(pci_free_irq_vectors);
 
 /**
- * pci_irq_vector - return Linux IRQ number of a device vector
+ * pci_irq_vector - return LinaOS IRQ number of a device vector
  * @dev: PCI device to operate on
  * @nr: device-relative interrupt vector index (0-based).
  */

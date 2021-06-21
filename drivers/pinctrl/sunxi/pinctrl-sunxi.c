@@ -10,26 +10,26 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/regulator/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/export.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/pinctrl/sun4i-a10.h>
 

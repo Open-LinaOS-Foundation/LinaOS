@@ -5,7 +5,7 @@
  * register-compatible with Ocelot and that perform I/O to their host CPU
  * through an NPI (Node Processor Interface) Ethernet port.
  */
-#include <uapi/linux/if_bridge.h>
+#include <uapi/linaos/if_bridge.h>
 #include <soc/mscc/ocelot_vcap.h>
 #include <soc/mscc/ocelot_qsys.h>
 #include <soc/mscc/ocelot_sys.h>
@@ -13,15 +13,15 @@
 #include <soc/mscc/ocelot_ana.h>
 #include <soc/mscc/ocelot_ptp.h>
 #include <soc/mscc/ocelot.h>
-#include <linux/dsa/8021q.h>
-#include <linux/dsa/ocelot.h>
-#include <linux/platform_device.h>
-#include <linux/ptp_classify.h>
-#include <linux/module.h>
-#include <linux/of_net.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/pcs-lynx.h>
+#include <linaos/dsa/8021q.h>
+#include <linaos/dsa/ocelot.h>
+#include <linaos/platform_device.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/module.h>
+#include <linaos/of_net.h>
+#include <linaos/pci.h>
+#include <linaos/of.h>
+#include <linaos/pcs-lynx.h>
 #include <net/pkt_sched.h>
 #include <net/dsa.h>
 #include "felix.h"
@@ -487,7 +487,7 @@ static void felix_teardown_tag_8021q(struct dsa_switch *ds, int cpu)
 /* The CPU port module is connected to the Node Processor Interface (NPI). This
  * is the mode through which frames can be injected from and extracted to an
  * external CPU, over Ethernet. In NXP SoCs, the "external CPU" is the ARM CPU
- * running Linux, and this forms a DSA setup together with the enetc or fman
+ * running LinaOS, and this forms a DSA setup together with the enetc or fman
  * DSA master.
  */
 static void felix_npi_port_init(struct ocelot *ocelot, int port)
@@ -542,7 +542,7 @@ static int felix_setup_tag_npi(struct dsa_switch *ds, int cpu)
 	 * PGID_CPU.
 	 * We do this because DSA does not yet perform RX filtering,
 	 * and the NPI port does not perform source address learning,
-	 * so traffic sent to Linux is effectively unknown from the
+	 * so traffic sent to LinaOS is effectively unknown from the
 	 * switch's perspective.
 	 */
 	cpu_flood = ANA_PGID_PGID_PGID(BIT(ocelot->num_phys_ports));

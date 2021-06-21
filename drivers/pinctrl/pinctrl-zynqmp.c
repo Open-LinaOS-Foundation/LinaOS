@@ -10,14 +10,14 @@
 
 #include <dt-bindings/pinctrl/pinctrl-zynqmp.h>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
 #include "core.h"
 #include "pinctrl-utils.h"

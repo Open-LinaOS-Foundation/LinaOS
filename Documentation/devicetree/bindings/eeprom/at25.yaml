@@ -86,7 +86,7 @@ properties:
   at25,addr-mode:
     $ref: /schemas/types.yaml#/definitions/uint32
     description:
-      Addr-mode flags, as defined in include/linux/spi/eeprom.h.
+      Addr-mode flags, as defined in include/linaos/spi/eeprom.h.
       Deprecated, use "address-width" property instead.
     deprecated: true
 

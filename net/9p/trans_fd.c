@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/9p/trans_fd.c
+ * linaos/fs/9p/trans_fd.c
  *
  * Fd transport layer.  Includes deprecated socket layer.
  *
@@ -12,26 +12,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/in.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/ipv6.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/un.h>
-#include <linux/uaccess.h>
-#include <linux/inet.h>
-#include <linux/idr.h>
-#include <linux/file.h>
-#include <linux/parser.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <linaos/in.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/ipv6.h>
+#include <linaos/kthread.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/un.h>
+#include <linaos/uaccess.h>
+#include <linaos/inet.h>
+#include <linaos/idr.h>
+#include <linaos/file.h>
+#include <linaos/parser.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>
 
-#include <linux/syscalls.h> /* killme */
+#include <linaos/syscalls.h> /* killme */
 
 #define P9_PORT 564
 #define MAX_SOCK_BUF (64*1024)

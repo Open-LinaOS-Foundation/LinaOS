@@ -1,7 +1,7 @@
 #ifndef __ASM_MEMCPY_UTILS
 #define __ASM_MEMCPY_UTILS
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asi.h>
 #include <asm/visasm.h>
 

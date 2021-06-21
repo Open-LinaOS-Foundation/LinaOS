@@ -3,15 +3,15 @@
 //
 // Copyright (C) 2012 Google, Inc.
 
-#include <linux/acpi.h>
-#include <linux/leds.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/leds.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 /* Keyboard LED ACPI Device must be defined in firmware */
 #define ACPI_KEYBOARD_BACKLIGHT_DEVICE	"\\_SB.KBLT"

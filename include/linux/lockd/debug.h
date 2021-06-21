@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/debug.h
+ * linaos/include/linaos/lockd/debug.h
  *
  * Debugging stuff.
  *
@@ -10,7 +10,7 @@
 #ifndef LINUX_LOCKD_DEBUG_H
 #define LINUX_LOCKD_DEBUG_H
 
-#include <linux/sunrpc/debug.h>
+#include <linaos/sunrpc/debug.h>
 
 /*
  * Enable lockd debugging.

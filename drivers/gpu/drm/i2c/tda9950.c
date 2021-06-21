@@ -10,12 +10,12 @@
  * As the data registers represent a mailbox, they must be accessed
  * as a single I2C transaction.  See the TDA9950 data sheet for details.
  */
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_data/tda9950.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/tda9950.h>
+#include <linaos/slab.h>
 #include <drm/drm_edid.h>
 #include <media/cec.h>
 #include <media/cec-notifier.h>
@@ -505,6 +505,6 @@ static struct i2c_driver tda9950_driver = {
 
 module_i2c_driver(tda9950_driver);
 
-MODULE_AUTHOR("Russell King <rmk+kernel@armlinux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk+kernel@armlinaos.org.uk>");
 MODULE_DESCRIPTION("TDA9950/TDA998x Consumer Electronics Control Driver");
 MODULE_LICENSE("GPL v2");

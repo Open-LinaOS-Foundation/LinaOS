@@ -3,7 +3,7 @@
  * Copyright (c) 2014-2016, Intel Corporation.
  */
 #include "test/nfit_test.h"
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 #include <pmem.h>
 #include <nd.h>
 

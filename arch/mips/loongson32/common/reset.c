@@ -3,9 +3,9 @@
  * Copyright (c) 2011 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/sizes.h>
+#include <linaos/io.h>
+#include <linaos/pm.h>
+#include <linaos/sizes.h>
 #include <asm/idle.h>
 #include <asm/reboot.h>
 

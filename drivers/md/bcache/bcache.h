@@ -178,17 +178,17 @@
 
 #define pr_fmt(fmt) "bcache: %s() " fmt, __func__
 
-#include <linux/bcache.h>
-#include <linux/bio.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
+#include <linaos/bcache.h>
+#include <linaos/bio.h>
+#include <linaos/kobject.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/rbtree.h>
+#include <linaos/rwsem.h>
+#include <linaos/refcount.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
+#include <linaos/kthread.h>
 
 #include "bset.h"
 #include "util.h"

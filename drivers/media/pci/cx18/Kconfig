@@ -15,7 +15,7 @@ config VIDEO_CX18
 	select MEDIA_TUNER_TDA18271 if MEDIA_SUBDRV_AUTOSELECT
 	select MEDIA_TUNER_TDA8290 if MEDIA_SUBDRV_AUTOSELECT
 	help
-	  This is a video4linux driver for Conexant cx23418 based
+	  This is a video4linaos driver for Conexant cx23418 based
 	  PCI combo video recorder devices.
 
 	  This is used in devices such as the Hauppauge HVR-1600
@@ -29,7 +29,7 @@ config VIDEO_CX18_ALSA
 	depends on VIDEO_CX18 && SND
 	select SND_PCM
 	help
-	  This is a video4linux driver for direct (DMA) audio on
+	  This is a video4linaos driver for direct (DMA) audio on
 	  Conexant 23418 based TV cards using ALSA.
 
 	  To compile this driver as a module, choose M here: the

@@ -7,8 +7,8 @@
  * Copyright (C) 2004 Intel Corporation.
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
 #include <asm/mach/map.h>
 #include "iop3xx.h"
 

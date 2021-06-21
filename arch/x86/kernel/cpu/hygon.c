@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Hygon Processor Support for Linux
+ * Hygon Processor Support for LinaOS
  *
  * Copyright (C) 2018 Chengdu Haiguang IC Design Co., Ltd.
  *
  * Author: Pu Wen <puwen@hygon.cn>
  */
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include <asm/cpu.h>
 #include <asm/smp.h>

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/nfs/nfs3xdr.c
+ * linaos/fs/nfs/nfs3xdr.c
  *
  * XDR functions to encode/decode NFSv3 RPC arguments and results.
  *
  * Copyright (C) 1996, 1997 Olaf Kirch
  */
 
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/kdev_t.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfsacl.h>
+#include <linaos/param.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/in.h>
+#include <linaos/pagemap.h>
+#include <linaos/proc_fs.h>
+#include <linaos/kdev_t.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs3.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfsacl.h>
 #include "nfstrace.h"
 #include "internal.h"
 

@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/user_namespace.h>
-#include <linux/cred.h>
+#include <linaos/user_namespace.h>
+#include <linaos/cred.h>
 
 #include "internal.h"
 

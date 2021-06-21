@@ -10,7 +10,7 @@
 #ifndef _DAS08_H
 #define _DAS08_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct comedi_device;
 

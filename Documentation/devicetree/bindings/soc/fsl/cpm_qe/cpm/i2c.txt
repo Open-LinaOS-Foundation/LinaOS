@@ -14,9 +14,9 @@ Properties:
   unspecified, a default frequency of 60kHz is being used.
 The following two properties are deprecated. They are only used by legacy
 i2c drivers to find the bus to probe:
-- linux,i2c-index : Can be used to hard code an i2c bus number. By default,
+- linaos,i2c-index : Can be used to hard code an i2c bus number. By default,
   the bus number is dynamically assigned by the i2c core.
-- linux,i2c-class : Can be used to override the i2c class. The class is used
+- linaos,i2c-class : Can be used to override the i2c class. The class is used
   by legacy i2c device drivers to find a bus in a specific context like
   system management, video or sound. By default, I2C_CLASS_HWMON (1) is
   being used. The definition of the classes can be found in

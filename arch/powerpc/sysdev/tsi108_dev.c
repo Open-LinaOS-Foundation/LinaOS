@@ -5,21 +5,21 @@
  * Maintained by Roy Zang < tie-fei.zang@freescale.com >
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/of_net.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/major.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/export.h>
+#include <linaos/device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_net.h>
 #include <asm/tsi108.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/prom.h>

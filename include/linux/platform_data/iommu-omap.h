@@ -7,7 +7,7 @@
  * Written by Hiroshi DOYU <Hiroshi.DOYU@nokia.com>
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 struct iommu_platform_data {
 	const char *reset_name;

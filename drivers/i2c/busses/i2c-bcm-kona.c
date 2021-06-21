@@ -11,16 +11,16 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 /* Hardware register offsets and field defintions */
 #define CS_OFFSET				0x00000020

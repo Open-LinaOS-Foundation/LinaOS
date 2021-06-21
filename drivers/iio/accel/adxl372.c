@@ -5,21 +5,21 @@
  * Copyright 2018 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/events.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 #include "adxl372.h"
 

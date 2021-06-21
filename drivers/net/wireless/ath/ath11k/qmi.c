@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/elf.h>
+#include <linaos/elf.h>
 
 #include "qmi.h"
 #include "core.h"
 #include "debug.h"
-#include <linux/of.h>
-#include <linux/firmware.h>
+#include <linaos/of.h>
+#include <linaos/firmware.h>
 
 #define SLEEP_CLOCK_SELECT_INTERNAL_BIT	0x02
 #define HOST_CSTATE_BIT			0x04

@@ -14,21 +14,21 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/libata.h>
-#include <linux/of_platform.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
+#include <linaos/delay.h>
+#include <linaos/libata.h>
+#include <linaos/of_platform.h>
+#include <linaos/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/prom.h>
 #include <asm/mpc52xx.h>
 
-#include <linux/fsl/bestcomm/bestcomm.h>
-#include <linux/fsl/bestcomm/bestcomm_priv.h>
-#include <linux/fsl/bestcomm/ata.h>
+#include <linaos/fsl/bestcomm/bestcomm.h>
+#include <linaos/fsl/bestcomm/bestcomm_priv.h>
+#include <linaos/fsl/bestcomm/ata.h>
 
 #define DRV_NAME	"mpc52xx_ata"
 

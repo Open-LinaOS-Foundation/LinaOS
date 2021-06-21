@@ -19,8 +19,8 @@
 #ifndef __BESTCOMM_PRIV_H__
 #define __BESTCOMM_PRIV_H__
 
-#include <linux/spinlock.h>
-#include <linux/of.h>
+#include <linaos/spinlock.h>
+#include <linaos/of.h>
 #include <asm/io.h>
 #include <asm/mpc52xx.h>
 

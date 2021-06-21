@@ -9,7 +9,7 @@
 #define _WM8350_H
 
 #include <sound/soc.h>
-#include <linux/mfd/wm8350/audio.h>
+#include <linaos/mfd/wm8350/audio.h>
 
 enum wm8350_jack {
 	WM8350_JDL = 1,

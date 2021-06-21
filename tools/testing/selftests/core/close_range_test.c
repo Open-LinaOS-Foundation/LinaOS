@@ -3,7 +3,7 @@
 #define _GNU_SOURCE
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>

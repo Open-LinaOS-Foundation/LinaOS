@@ -8,7 +8,7 @@
 #ifndef DRX39XXJ_H
 #define DRX39XXJ_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 #include "drx_driver.h"
 

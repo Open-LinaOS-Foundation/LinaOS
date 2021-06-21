@@ -6,14 +6,14 @@
   * Copyright 2016 HUAWEI TECHNOLOGIES CO., LTD.
   */
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <crypto/scatterwalk.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
-#include <uapi/linux/virtio_crypto.h>
+#include <uapi/linaos/virtio_crypto.h>
 #include "virtio_crypto_common.h"
 
 

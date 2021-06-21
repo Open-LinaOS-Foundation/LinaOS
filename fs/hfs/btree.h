@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/fs/hfs/btree.h
+ *  linaos/fs/hfs/btree.h
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)

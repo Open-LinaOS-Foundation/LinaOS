@@ -5,8 +5,8 @@
  * Copyright (C) 2012 Bastian Hecht
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/memory.h>
 
 /*

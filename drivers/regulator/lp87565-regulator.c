@@ -5,11 +5,11 @@
  * Copyright (C) 2017 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/lp87565.h>
+#include <linaos/mfd/lp87565.h>
 
 #define LP87565_REGULATOR(_name, _id, _of, _ops, _n, _vr, _vm,		\
 			  _er, _em, _ev, _delay, _lr, _cr)		\

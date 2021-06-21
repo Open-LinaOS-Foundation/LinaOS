@@ -3,7 +3,7 @@
 #ifndef __Q6DSP_COMMON_H__
 #define __Q6DSP_COMMON_H__
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define PCM_MAX_NUM_CHANNEL  8
 #define PCM_CHANNEL_NULL 0

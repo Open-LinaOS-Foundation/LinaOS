@@ -7,13 +7,13 @@
 #define KMSG_COMPONENT "sclp_config"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/cpu.h>
+#include <linaos/device.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 #include <asm/smp.h>
 
 #include "sclp.h"

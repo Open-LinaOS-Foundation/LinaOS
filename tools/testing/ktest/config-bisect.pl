@@ -20,7 +20,7 @@
 
 # Here's a normal way to use it:
 #
-#  $ cd /path/to/linux/kernel
+#  $ cd /path/to/linaos/kernel
 #  $ config-bisect.pl /path/to/good/config /path/to/bad/config
 
 # This will now pull in good config (blowing away .config in that directory
@@ -71,9 +71,9 @@ my $reset_bisect;
 sub usage {
     print << "EOF"
 
-usage: config-bisect.pl [-l linux-tree][-b build-dir] good-config bad-config [good|bad]
-  -l [optional] define location of linux-tree (default is current directory)
-  -b [optional] define location to build (O=build-dir) (default is linux-tree)
+usage: config-bisect.pl [-l linaos-tree][-b build-dir] good-config bad-config [good|bad]
+  -l [optional] define location of linaos-tree (default is current directory)
+  -b [optional] define location to build (O=build-dir) (default is linaos-tree)
   good-config the config that is considered good
   bad-config the config that does not work
   "good" add this if the last run produced a good config

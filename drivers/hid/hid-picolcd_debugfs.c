@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /***************************************************************************
- *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@linux-vserver.org>  *
+ *   Copyright (C) 2010-2012 by Bruno Prémont <bonbons@linaos-vserver.org>  *
  *                                                                         *
  *   Based on Logitech G13 driver (v0.4)                                   *
  *     Copyright (C) 2009 by Rick L. Vinyard, Jr. <rvinyard@cs.nmsu.edu>   *
  *                                                                         *
  ***************************************************************************/
 
-#include <linux/hid.h>
-#include <linux/hid-debug.h>
+#include <linaos/hid.h>
+#include <linaos/hid-debug.h>
 
-#include <linux/fb.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linaos/fb.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 
 #include "hid-picolcd.h"
 

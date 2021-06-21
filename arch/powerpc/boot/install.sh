@@ -28,7 +28,7 @@ if [ -x /sbin/${INSTALLKERNEL} ]; then exec /sbin/${INSTALLKERNEL} "$@"; fi
 
 # Default install
 
-# this should work for both the pSeries zImage and the iSeries vmlinux.sm
+# this should work for both the pSeries zImage and the iSeries vmlinaos.sm
 image_name=`basename $2`
 
 if [ -f $4/$image_name ]; then

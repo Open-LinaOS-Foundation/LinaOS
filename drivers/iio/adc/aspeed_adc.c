@@ -5,21 +5,21 @@
  * Copyright (C) 2017 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iopoll.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/driver.h>
+#include <linaos/iopoll.h>
 
 #define ASPEED_RESOLUTION_BITS		10
 #define ASPEED_CLOCKS_PER_SAMPLE	12

@@ -3,7 +3,7 @@
 #ifndef _UAPI_LINUX_VIRTIO_BT_H
 #define _UAPI_LINUX_VIRTIO_BT_H
 
-#include <linux/virtio_types.h>
+#include <linaos/virtio_types.h>
 
 /* Feature bits */
 #define VIRTIO_BT_F_VND_HCI	0	/* Indicates vendor command support */

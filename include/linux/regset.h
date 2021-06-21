@@ -10,10 +10,10 @@
 #ifndef _LINUX_REGSET_H
 #define _LINUX_REGSET_H	1
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/uaccess.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/bug.h>
+#include <linaos/uaccess.h>
 struct task_struct;
 struct user_regset;
 
@@ -338,4 +338,4 @@ static inline int copy_regset_from_user(struct task_struct *target,
 	return regset->set(target, regset, offset, size, NULL, data);
 }
 
-#endif	/* <linux/regset.h> */
+#endif	/* <linaos/regset.h> */

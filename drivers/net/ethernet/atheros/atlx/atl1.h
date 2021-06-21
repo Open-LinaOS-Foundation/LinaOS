@@ -11,16 +11,16 @@
 #ifndef ATL1_H
 #define ATL1_H
 
-#include <linux/compiler.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/compiler.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 #include "atlx.h"
 

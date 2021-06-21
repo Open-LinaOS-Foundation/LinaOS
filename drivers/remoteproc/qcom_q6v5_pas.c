@@ -4,25 +4,25 @@
  *
  * Copyright (C) 2016 Linaro Ltd
  * Copyright (C) 2014 Sony Mobile Communications AB
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/qcom_scm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/remoteproc.h>
-#include <linux/soc/qcom/mdt_loader.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <linaos/clk.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/remoteproc.h>
+#include <linaos/soc/qcom/mdt_loader.h>
+#include <linaos/soc/qcom/smem.h>
+#include <linaos/soc/qcom/smem_state.h>
 
 #include "qcom_common.h"
 #include "qcom_pil_info.h"

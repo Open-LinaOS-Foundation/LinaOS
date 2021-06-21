@@ -6,7 +6,7 @@
 #ifndef __INTEL_PM_H__
 #define __INTEL_PM_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "display/intel_bw.h"
 #include "display/intel_display.h"

@@ -3,10 +3,10 @@
 
 #include <string.h>
 
-#include <linux/stddef.h>
-#include <linux/bpf.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/stddef.h>
+#include <linaos/bpf.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 #include <sys/socket.h>
 
 #include <bpf/bpf_helpers.h>

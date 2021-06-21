@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/regmap.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/regmap.h>
+#include <linaos/export.h>
 
 #include "clk-regmap-divider.h"
 

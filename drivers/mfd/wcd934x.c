@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019, Linaro Limited
 
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/wcd934x/registers.h>
-#include <linux/mfd/wcd934x/wcd934x.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slimbus.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/wcd934x/registers.h>
+#include <linaos/mfd/wcd934x/wcd934x.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slimbus.h>
 
 static const struct mfd_cell wcd934x_devices[] = {
 	{

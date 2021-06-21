@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
 
 unsigned long raw_copy_from_user(void *to, const void *from,
 			unsigned long n)

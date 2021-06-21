@@ -9,9 +9,9 @@
 #ifndef RTL2832_PRIV_H
 #define RTL2832_PRIV_H
 
-#include <linux/regmap.h>
-#include <linux/math64.h>
-#include <linux/bitops.h>
+#include <linaos/regmap.h>
+#include <linaos/math64.h>
+#include <linaos/bitops.h>
 
 #include <media/dvb_frontend.h>
 #include <media/dvb_math.h>

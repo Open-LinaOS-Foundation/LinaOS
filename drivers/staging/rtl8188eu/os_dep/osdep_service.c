@@ -10,7 +10,7 @@
 #include <osdep_intf.h>
 #include <drv_types.h>
 #include <recv_osdep.h>
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 #include <rtw_ioctl_set.h>
 
 u8 *_rtw_malloc(u32 sz)

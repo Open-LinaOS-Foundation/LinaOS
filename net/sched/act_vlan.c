@@ -3,17 +3,17 @@
  * Copyright (c) 2014 Jiri Pirko <jiri@resnulli.us>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_vlan.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_vlan.h>
+#include <linaos/tc_act/tc_vlan.h>
 #include <net/tc_act/tc_vlan.h>
 
 static unsigned int vlan_net_id;

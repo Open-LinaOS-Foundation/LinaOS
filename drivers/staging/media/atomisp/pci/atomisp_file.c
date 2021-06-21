@@ -22,7 +22,7 @@
 #include <media/v4l2-mediabus.h>
 
 #include <media/videobuf-vmalloc.h>
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "ia_css.h"
 

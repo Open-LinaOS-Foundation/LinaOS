@@ -1,10 +1,10 @@
 /*
-   3w-xxxx.h -- 3ware Storage Controller device driver for Linux.
+   3w-xxxx.h -- 3ware Storage Controller device driver for LinaOS.
 
    Written By: Adam Radford <aradford@gmail.com>
-   Modifications By: Joel Jacobson <linux@3ware.com>
+   Modifications By: Joel Jacobson <linaos@3ware.com>
                      Arnaldo Carvalho de Melo <acme@conectiva.com.br>
-                     Brad Strand <linux@3ware.com>
+                     Brad Strand <linaos@3ware.com>
 
    Copyright (C) 1999-2010 3ware Inc.
 
@@ -55,7 +55,7 @@
 #ifndef _3W_XXXX_H
 #define _3W_XXXX_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* AEN strings */
 static char *tw_aen_string[] = {

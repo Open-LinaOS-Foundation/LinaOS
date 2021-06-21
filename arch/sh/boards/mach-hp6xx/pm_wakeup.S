@@ -3,7 +3,7 @@
  * Copyright (c) 2006 Andriy Skulysh <askulsyh@gmail.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <cpu/mmu_context.h>
 
 /*

@@ -6,19 +6,19 @@
  * Copyright (C) 2004 David Brownell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb.h>
+#include <linaos/usb/otg.h>
+#include <linaos/i2c.h>
+#include <linaos/workqueue.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
@@ -83,7 +83,7 @@ struct isp1301 {
 
 #if IS_REACHABLE(CONFIG_TPS65010)
 
-#include <linux/mfd/tps65010.h>
+#include <linaos/mfd/tps65010.h>
 
 #else
 

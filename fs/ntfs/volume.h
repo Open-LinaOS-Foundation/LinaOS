@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * volume.h - Defines for volume structures in NTFS Linux kernel driver. Part
- *	      of the Linux-NTFS project.
+ * volume.h - Defines for volume structures in NTFS LinaOS kernel driver. Part
+ *	      of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2006 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon
@@ -10,8 +10,8 @@
 #ifndef _LINUX_NTFS_VOLUME_H
 #define _LINUX_NTFS_VOLUME_H
 
-#include <linux/rwsem.h>
-#include <linux/uidgid.h>
+#include <linaos/rwsem.h>
+#include <linaos/uidgid.h>
 
 #include "types.h"
 #include "layout.h"

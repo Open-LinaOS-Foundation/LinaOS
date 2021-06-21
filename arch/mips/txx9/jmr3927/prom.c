@@ -35,9 +35,9 @@
  *  with this program; if not, write  to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/jmr3927.h>
 

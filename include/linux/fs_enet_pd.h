@@ -16,10 +16,10 @@
 #ifndef FS_ENET_PD_H
 #define FS_ENET_PD_H
 
-#include <linux/clk.h>
-#include <linux/string.h>
-#include <linux/of_mdio.h>
-#include <linux/if_ether.h>
+#include <linaos/clk.h>
+#include <linaos/string.h>
+#include <linaos/of_mdio.h>
+#include <linaos/if_ether.h>
 #include <asm/types.h>
 
 #define FS_ENET_NAME	"fs_enet"

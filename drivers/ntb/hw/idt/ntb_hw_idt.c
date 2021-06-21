@@ -33,31 +33,31 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * IDT PCIe-switch NTB Linux driver
+ * IDT PCIe-switch NTB LinaOS driver
  *
  * Contact Information:
  * Serge Semin <fancer.lancer@gmail.com>, <Sergey.Semin@t-platforms.ru>
  */
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/sizes.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/debugfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/ntb.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/sizes.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/aer.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/debugfs.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/ntb.h>
 
 #include "ntb_hw_idt.h"
 
@@ -972,7 +972,7 @@ static int idt_ntb_link_disable(struct ntb_dev *ntb)
  * a scanning algorithm to have all the possible memory windows configuration
  * covered.
  *
- * NOTE 1 BAR setup must be done before Linux kernel enumerated NT-function
+ * NOTE 1 BAR setup must be done before LinaOS kernel enumerated NT-function
  * of any port, so this driver would have memory windows configurations fixed.
  * In this way all initializations must be performed either by platform BIOS
  * or using EEPROM connected to IDT PCIe-switch master SMBus.

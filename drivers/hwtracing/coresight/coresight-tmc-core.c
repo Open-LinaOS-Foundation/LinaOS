@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2012, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012, The LinaOS Foundation. All rights reserved.
  *
  * Description: CoreSight Trace Memory Controller driver
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/idr.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/property.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/spinlock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/coresight.h>
+#include <linaos/amba/bus.h>
 
 #include "coresight-priv.h"
 #include "coresight-tmc.h"

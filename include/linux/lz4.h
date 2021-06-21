@@ -41,8 +41,8 @@
 #ifndef __LZ4_H__
 #define __LZ4_H__
 
-#include <linux/types.h>
-#include <linux/string.h>	 /* memset, memcpy */
+#include <linaos/types.h>
+#include <linaos/string.h>	 /* memset, memcpy */
 
 /*-************************************************************************
  *	CONSTANTS

@@ -27,7 +27,7 @@ file: media/v4l/v4l2grab.c
     #include <sys/types.h>
     #include <sys/time.h>
     #include <sys/mman.h>
-    #include <linux/videodev2.h>
+    #include <linaos/videodev2.h>
     #include "../libv4l/include/libv4l2.h"
 
     #define CLEAR(x) memset(&(x), 0, sizeof(x))

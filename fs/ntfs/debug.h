@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * debug.h - NTFS kernel debug support. Part of the Linux-NTFS project.
+ * debug.h - NTFS kernel debug support. Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */
@@ -8,7 +8,7 @@
 #ifndef _LINUX_NTFS_DEBUG_H
 #define _LINUX_NTFS_DEBUG_H
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 #include "runlist.h"
 

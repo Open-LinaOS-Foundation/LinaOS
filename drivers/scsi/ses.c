@@ -5,10 +5,10 @@
  * Copyright (C) 2008 James Bottomley <James.Bottomley@HansenPartnership.com>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/enclosure.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/enclosure.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

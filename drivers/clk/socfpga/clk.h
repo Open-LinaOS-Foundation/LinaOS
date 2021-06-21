@@ -8,7 +8,7 @@
 #ifndef __SOCFPGA_CLK_H
 #define __SOCFPGA_CLK_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 
 /* Clock Manager offsets */
 #define CLKMGR_CTRL		0x0

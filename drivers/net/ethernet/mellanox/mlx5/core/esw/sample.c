@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2021 Mellanox Technologies. */
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/psample.h>
 #include "en/mapping.h"
 #include "esw/sample.h"

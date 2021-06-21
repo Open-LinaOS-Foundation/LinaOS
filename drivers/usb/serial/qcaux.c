@@ -12,11 +12,11 @@
  * protocol.
  */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 
 /* NOTE: for now, only use this driver for devices that provide a CDC-ACM port
  * for normal AT commands, but also provide secondary USB interfaces for the

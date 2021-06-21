@@ -4,16 +4,16 @@
 //
 // Copyright (c) 2014 Philipp Zabel <p.zabel@pengutronix.de>, Pengutronix
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define DRIVER_NAME		"ltc3589"
 

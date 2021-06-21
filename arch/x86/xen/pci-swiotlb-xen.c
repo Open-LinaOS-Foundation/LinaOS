@@ -2,8 +2,8 @@
 
 /* Glue code to lib/swiotlb-xen.c */
 
-#include <linux/dma-map-ops.h>
-#include <linux/pci.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/pci.h>
 #include <xen/swiotlb-xen.h>
 
 #include <asm/xen/hypervisor.h>
@@ -16,7 +16,7 @@
 #include <asm/iommu.h>
 #include <asm/dma.h>
 #endif
-#include <linux/export.h>
+#include <linaos/export.h>
 
 int xen_swiotlb __read_mostly;
 

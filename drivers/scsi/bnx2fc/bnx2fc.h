@@ -1,4 +1,4 @@
-/* bnx2fc.h: QLogic Linux FCoE offload driver.
+/* bnx2fc.h: QLogic LinaOS FCoE offload driver.
  *
  * Copyright (c) 2008-2013 Broadcom Corporation
  * Copyright (c) 2014-2016 QLogic Corporation
@@ -15,33 +15,33 @@
 #define _BNX2FC_H_
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/kthread.h>
+#include <linaos/crc32.h>
+#include <linaos/cpu.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/log2.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched/signal.h>
+#include <linaos/io.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

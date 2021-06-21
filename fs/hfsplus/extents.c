@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/extents.c
+ *  linaos/fs/hfsplus/extents.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,9 +9,9 @@
  * Handling of Extents both in catalog and extents overflow trees
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

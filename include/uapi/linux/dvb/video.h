@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /*
  * video.h - DEPRECATED MPEG-TS video decoder API
  *
@@ -27,7 +27,7 @@
 #ifndef _UAPI_DVBVIDEO_H_
 #define _UAPI_DVBVIDEO_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #ifndef __KERNEL__
 #include <time.h>
 #endif

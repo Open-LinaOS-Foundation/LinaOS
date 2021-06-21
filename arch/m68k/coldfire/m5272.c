@@ -10,12 +10,12 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

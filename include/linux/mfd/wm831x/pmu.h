@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/mfd/wm831x/pmu.h -- PMU for WM831x
+ * include/linaos/mfd/wm831x/pmu.h -- PMU for WM831x
  *
  * Copyright 2009 Wolfson Microelectronics PLC.
  *

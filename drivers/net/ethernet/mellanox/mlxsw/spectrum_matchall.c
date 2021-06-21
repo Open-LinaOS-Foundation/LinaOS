@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2020 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
 #include <net/flow_offload.h>
 
 #include "spectrum.h"

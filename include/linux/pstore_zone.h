@@ -3,7 +3,7 @@
 #ifndef __PSTORE_ZONE_H_
 #define __PSTORE_ZONE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef ssize_t (*pstore_zone_read_op)(char *, size_t, loff_t);
 typedef ssize_t (*pstore_zone_write_op)(const char *, size_t, loff_t);

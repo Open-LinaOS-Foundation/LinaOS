@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2020 NXP
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/pm_qos.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/pm_qos.h>
 #include <sound/core.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #include "fsl_aud2htx.h"
 #include "imx-pcm.h"

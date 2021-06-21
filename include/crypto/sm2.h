@@ -5,7 +5,7 @@
  * described at https://tools.ietf.org/html/draft-shen-sm2-ecdsa-02
  *
  * Copyright (c) 2020, Alibaba Group.
- * Written by Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Written by Tianjia Zhang <tianjia.zhang@linaos.alibaba.com>
  */
 
 #ifndef _CRYPTO_SM2_H

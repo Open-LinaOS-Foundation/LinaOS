@@ -7,8 +7,8 @@
  * for more details.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
 
 #include <asm/cpuinfo.h>
 

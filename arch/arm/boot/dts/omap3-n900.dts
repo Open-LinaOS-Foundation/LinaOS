@@ -11,7 +11,7 @@
 
 /*
  * Default secure signed bootloader (Nokia X-Loader) does not enable L3 firewall
- * for omap AES HW crypto support. When linux kernel try to access memory of AES
+ * for omap AES HW crypto support. When linaos kernel try to access memory of AES
  * blocks then kernel receive "Unhandled fault: external abort on non-linefetch"
  * and crash. Until somebody fix omap-aes.c and omap_hwmod_3xxx_data.c code (no
  * crash anymore) omap AES support will be disabled for all Nokia N900 devices.
@@ -51,7 +51,7 @@
 		heartbeat {
 			label = "debug::sleep";
 			gpios = <&gpio6 2 GPIO_ACTIVE_HIGH>;  /* 162 */
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 			pinctrl-names = "default";
 			pinctrl-0 = <&debug_leds>;
 		};
@@ -68,54 +68,54 @@
 		camera_lens_cover {
 			label = "Camera Lens Cover";
 			gpios = <&gpio4 14 GPIO_ACTIVE_LOW>; /* 110 */
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_CAMERA_LENS_COVER>;
-			linux,can-disable;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_CAMERA_LENS_COVER>;
+			linaos,can-disable;
 		};
 
 		camera_focus {
 			label = "Camera Focus";
 			gpios = <&gpio3 4 GPIO_ACTIVE_LOW>; /* 68 */
-			linux,code = <KEY_CAMERA_FOCUS>;
-			linux,can-disable;
+			linaos,code = <KEY_CAMERA_FOCUS>;
+			linaos,can-disable;
 		};
 
 		camera_capture {
 			label = "Camera Capture";
 			gpios = <&gpio3 5 GPIO_ACTIVE_LOW>; /* 69 */
-			linux,code = <KEY_CAMERA>;
-			linux,can-disable;
+			linaos,code = <KEY_CAMERA>;
+			linaos,can-disable;
 		};
 
 		lock_button {
 			label = "Lock Button";
 			gpios = <&gpio4 17 GPIO_ACTIVE_LOW>; /* 113 */
-			linux,code = <KEY_SCREENLOCK>;
-			linux,can-disable;
+			linaos,code = <KEY_SCREENLOCK>;
+			linaos,can-disable;
 		};
 
 		keypad_slide {
 			label = "Keypad Slide";
 			gpios = <&gpio3 7 GPIO_ACTIVE_LOW>; /* 71 */
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_KEYPAD_SLIDE>;
-			linux,can-disable;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_KEYPAD_SLIDE>;
+			linaos,can-disable;
 		};
 
 		proximity_sensor {
 			label = "Proximity Sensor";
 			gpios = <&gpio3 25 GPIO_ACTIVE_HIGH>; /* 89 */
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_FRONT_PROXIMITY>;
-			linux,can-disable;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_FRONT_PROXIMITY>;
+			linaos,can-disable;
 		};
 
 		machine_cover {
 			label = "Machine Cover";
 			gpios = <&gpio6 0 GPIO_ACTIVE_LOW>; /* 160 */
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_MACHINE_COVER>;
-			linux,can-disable;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_MACHINE_COVER>;
+			linaos,can-disable;
 		};
 	};
 
@@ -512,7 +512,7 @@
 };
 
 &twl_keypad {
-	linux,keymap = < MATRIX_KEY(0x00, 0x00, KEY_Q)
+	linaos,keymap = < MATRIX_KEY(0x00, 0x00, KEY_Q)
 			 MATRIX_KEY(0x00, 0x01, KEY_O)
 			 MATRIX_KEY(0x00, 0x02, KEY_P)
 			 MATRIX_KEY(0x00, 0x03, KEY_COMMA)

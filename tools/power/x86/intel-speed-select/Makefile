@@ -27,11 +27,11 @@ include $(srctree)/tools/build/Makefile.include
 #
 # We need the following to be outside of kernel tree
 #
-$(OUTPUT)include/linux/isst_if.h: ../../../../include/uapi/linux/isst_if.h
-	mkdir -p $(OUTPUT)include/linux 2>&1 || true
-	ln -sf $(CURDIR)/../../../../include/uapi/linux/isst_if.h $@
+$(OUTPUT)include/linaos/isst_if.h: ../../../../include/uapi/linaos/isst_if.h
+	mkdir -p $(OUTPUT)include/linaos 2>&1 || true
+	ln -sf $(CURDIR)/../../../../include/uapi/linaos/isst_if.h $@
 
-prepare: $(OUTPUT)include/linux/isst_if.h
+prepare: $(OUTPUT)include/linaos/isst_if.h
 
 ISST_IN := $(OUTPUT)intel-speed-select-in.o
 
@@ -42,7 +42,7 @@ $(OUTPUT)intel-speed-select: $(ISST_IN)
 
 clean:
 	rm -f $(ALL_PROGRAMS)
-	rm -rf $(OUTPUT)include/linux/isst_if.h
+	rm -rf $(OUTPUT)include/linaos/isst_if.h
 	find $(if $(OUTPUT),$(OUTPUT),.) -name '*.o' -delete -o -name '\.*.d' -delete
 
 install: $(ALL_PROGRAMS)

@@ -32,17 +32,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include <net/neighbour.h>
-#include <linux/notifier.h>
-#include <linux/atomic.h>
-#include <linux/proc_fs.h>
-#include <linux/if_vlan.h>
+#include <linaos/notifier.h>
+#include <linaos/atomic.h>
+#include <linaos/proc_fs.h>
+#include <linaos/if_vlan.h>
 #include <net/netevent.h>
-#include <linux/highmem.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <linaos/highmem.h>
+#include <linaos/vmalloc.h>
+#include <linaos/export.h>
 
 #include "common.h"
 #include "regs.h"

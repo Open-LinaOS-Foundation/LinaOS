@@ -12,13 +12,13 @@
  * Copyright (C) 2011 Colin Leitner <colin.leitner@googlemail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/of_irq.h>
+#include <linaos/regmap.h>
 
 #include "realtek-smi-core.h"
 

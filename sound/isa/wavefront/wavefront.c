@@ -6,12 +6,12 @@
  *  Copyright (c) 1997-1999 by Paul Barton-Davis <pbd@op.net>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/isa.h>
+#include <linaos/pnp.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/opl3.h>

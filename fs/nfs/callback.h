@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/nfs/callback.h
+ * linaos/fs/nfs/callback.h
  *
  * Copyright (C) 2004 Trond Myklebust
  *
@@ -8,7 +8,7 @@
  */
 #ifndef __LINUX_FS_NFS_CALLBACK_H
 #define __LINUX_FS_NFS_CALLBACK_H
-#include <linux/sunrpc/svc.h>
+#include <linaos/sunrpc/svc.h>
 
 #define NFS4_CALLBACK 0x40000000
 #define NFS4_CALLBACK_XDRSIZE 2048

@@ -5,11 +5,11 @@
  * Copyright (C) 2014  Ulrich Hecht
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/renesas.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/renesas.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/soc/renesas/rcar-rst.h>
 
 struct r8a7778_cpg {
 	struct clk_onecell_data data;

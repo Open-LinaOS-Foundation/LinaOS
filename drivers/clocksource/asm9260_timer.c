@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Copyright (C) 2014 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (C) 2014 Oleksij Rempel <linaos@rempel-privat.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/bitops.h>
 
 #define DRIVER_NAME	"asm9260-timer"
 

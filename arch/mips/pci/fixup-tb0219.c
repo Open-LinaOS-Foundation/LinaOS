@@ -3,10 +3,10 @@
  *  fixup-tb0219.c, The TANBAC TB0219 specific PCI fixups.
  *
  *  Copyright (C) 2003	Megasolution Inc. <matsu@megasolution.jp>
- *  Copyright (C) 2004-2005  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2004-2005  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include <asm/vr41xx/tb0219.h>
 

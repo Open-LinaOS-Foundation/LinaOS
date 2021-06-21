@@ -8,7 +8,7 @@
  *	universidad nacional de cuyo
  *	argentina
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -46,8 +46,8 @@
  * - The PACER is not supported in this version
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
 
 #include "../comedidev.h"
 

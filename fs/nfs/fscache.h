@@ -8,10 +8,10 @@
 #ifndef _NFS_FSCACHE_H
 #define _NFS_FSCACHE_H
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/fscache.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/nfs4_mount.h>
+#include <linaos/fscache.h>
 
 #ifdef CONFIG_NFS_FSCACHE
 

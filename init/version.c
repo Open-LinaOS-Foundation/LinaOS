@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/init/version.c
+ *  linaos/init/version.c
  *
  *  Copyright (C) 1992  Theodore Ts'o
  *
- *  May be freely distributed as part of Linux.
+ *  May be freely distributed as part of LinaOS.
  */
 
 #include <generated/compile.h>
-#include <linux/build-salt.h>
-#include <linux/elfnote-lto.h>
-#include <linux/export.h>
-#include <linux/uts.h>
-#include <linux/utsname.h>
+#include <linaos/build-salt.h>
+#include <linaos/elfnote-lto.h>
+#include <linaos/export.h>
+#include <linaos/uts.h>
+#include <linaos/utsname.h>
 #include <generated/utsrelease.h>
-#include <linux/version.h>
-#include <linux/proc_ns.h>
+#include <linaos/version.h>
+#include <linaos/proc_ns.h>
 
 struct uts_namespace init_uts_ns = {
 	.ns.count = REFCOUNT_INIT(2),
@@ -36,11 +36,11 @@ struct uts_namespace init_uts_ns = {
 EXPORT_SYMBOL_GPL(init_uts_ns);
 
 /* FIXED STRINGS! Don't touch! */
-const char linux_banner[] =
-	"Linux version " UTS_RELEASE " (" LINUX_COMPILE_BY "@"
+const char linaos_banner[] =
+	"LinaOS version " UTS_RELEASE " (" LINUX_COMPILE_BY "@"
 	LINUX_COMPILE_HOST ") (" LINUX_COMPILER ") " UTS_VERSION "\n";
 
-const char linux_proc_banner[] =
+const char linaos_proc_banner[] =
 	"%s version %s"
 	" (" LINUX_COMPILE_BY "@" LINUX_COMPILE_HOST ")"
 	" (" LINUX_COMPILER ") %s\n";

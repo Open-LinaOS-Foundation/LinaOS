@@ -6,9 +6,9 @@
 //
 // Author: Dimitris Papastamos <dp@opensource.wolfsonmicro.com>
 
-#include <linux/device.h>
-#include <linux/lzo.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/lzo.h>
+#include <linaos/slab.h>
 
 #include "internal.h"
 

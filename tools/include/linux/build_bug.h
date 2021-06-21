@@ -2,7 +2,7 @@
 #ifndef _LINUX_BUILD_BUG_H
 #define _LINUX_BUILD_BUG_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifdef __CHECKER__
 #define BUILD_BUG_ON_ZERO(e) (0)

@@ -6,14 +6,14 @@
 //
 // Author: Ran Wang <ran.wang_1@nxp.com>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/kernel.h>
+#include <linaos/acpi.h>
 
 #define RCPM_WAKEUP_CELL_MAX_SIZE	7
 

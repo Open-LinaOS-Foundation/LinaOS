@@ -8,13 +8,13 @@
 #ifndef _LINUX_CRED_H
 #define _LINUX_CRED_H
 
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/key.h>
-#include <linux/atomic.h>
-#include <linux/uidgid.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
+#include <linaos/capability.h>
+#include <linaos/init.h>
+#include <linaos/key.h>
+#include <linaos/atomic.h>
+#include <linaos/uidgid.h>
+#include <linaos/sched.h>
+#include <linaos/sched/user.h>
 
 struct cred;
 struct inode;

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/edac.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/soc/qcom/llcc-qcom.h>
+#include <linaos/edac.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/soc/qcom/llcc-qcom.h>
 
 #include "edac_mc.h"
 #include "edac_device.h"

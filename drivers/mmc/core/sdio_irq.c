@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/mmc/core/sdio_irq.c
+ * linaos/drivers/mmc/core/sdio_irq.c
  *
  * Author:      Nicolas Pitre
  * Created:     June 18, 2007
@@ -9,19 +9,19 @@
  * Copyright 2008 Pierre Ossman
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/kthread.h>
+#include <linaos/export.h>
+#include <linaos/wait.h>
+#include <linaos/delay.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/sdio_func.h>
 
 #include "sdio_ops.h"
 #include "core.h"

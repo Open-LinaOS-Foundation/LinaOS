@@ -4,13 +4,13 @@
  * Authors :	Jean Tourrilhes - HPL - <jt@hpl.hp.com>
  * Copyright (c) 1997-2007 Jean Tourrilhes, All Rights Reserved.
  *
- * (As all part of the Linux kernel, this file is GPL)
+ * (As all part of the LinaOS kernel, this file is GPL)
  */
 
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/export.h>
+#include <linaos/wireless.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/export.h>
 #include <net/iw_handler.h>
 #include <net/arp.h>
 #include <net/wext.h>

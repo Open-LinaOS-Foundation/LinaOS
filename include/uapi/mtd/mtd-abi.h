@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org> et al.
  *
@@ -21,7 +21,7 @@
 #ifndef __MTD_ABI_H__
 #define __MTD_ABI_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct erase_info_user {
 	__u32 start;

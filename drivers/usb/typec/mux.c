@@ -3,16 +3,16 @@
  * USB Type-C Multiplexer/DeMultiplexer Switch support
  *
  * Copyright (C) 2018 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  *         Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 
 #include "class.h"
 #include "mux.h"

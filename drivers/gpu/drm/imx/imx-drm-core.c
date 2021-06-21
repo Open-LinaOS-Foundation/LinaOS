@@ -5,11 +5,11 @@
  * Copyright (C) 2011 Sascha Hauer, Pengutronix
  */
 
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/component.h>
+#include <linaos/device.h>
+#include <linaos/dma-buf.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <video/imx-ipu-v3.h>
 

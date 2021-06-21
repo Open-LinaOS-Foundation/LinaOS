@@ -7,17 +7,17 @@
  * Copyright (C) 2003, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/pagemap.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/time.h>
-#include <linux/quotaops.h>
-#include <linux/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/mm.h>
+#include <linaos/kthread.h>
+#include <linaos/pagemap.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/time.h>
+#include <linaos/quotaops.h>
+#include <linaos/sched/signal.h>
 
 #define MLOG_MASK_PREFIX ML_DLM_GLUE
 #include <cluster/masklog.h>

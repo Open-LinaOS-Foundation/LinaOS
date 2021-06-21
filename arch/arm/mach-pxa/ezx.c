@@ -7,31 +7,31 @@
  *		  2007-2008 Stefan Schmidt <stefan@datenfreihafen.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/input.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/leds-lp3944.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/input.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/leds-lp3944.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include "pxa27x.h"
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include <mach/hardware.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/media/camera-pxa.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/media/camera-pxa.h>
 
 #include "devices.h"
 #include "generic.h"

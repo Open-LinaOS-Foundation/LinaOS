@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/timerfd.h
+ *  include/linaos/timerfd.h
  *
  *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
  *
@@ -9,7 +9,7 @@
 #ifndef _LINUX_TIMERFD_H
 #define _LINUX_TIMERFD_H
 
-#include <uapi/linux/timerfd.h>
+#include <uapi/linaos/timerfd.h>
 
 #define TFD_SHARED_FCNTL_FLAGS (TFD_CLOEXEC | TFD_NONBLOCK)
 /* Flags for timerfd_create.  */

@@ -8,22 +8,22 @@
  * Copyright (C) 1992 Linus Torvalds
  * Copyright (C) 1994 - 2000 Ralf Baechle
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/kgdb.h>
-#include <linux/ftrace.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/proc_fs.h>
+#include <linaos/mm.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kgdb.h>
+#include <linaos/ftrace.h>
 
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/uaccess.h>
 
 void *irq_stack[NR_CPUS];
 

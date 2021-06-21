@@ -5,14 +5,14 @@
  * Peter Korsgaard <peter.korsgaard@barco.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/platform_data/i2c-mux-gpio.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bits.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/platform_data/i2c-mux-gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/bits.h>
+#include <linaos/gpio/consumer.h>
 /* FIXME: stop poking around inside gpiolib */
 #include "../../gpio/gpiolib.h"
 

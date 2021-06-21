@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/asm-m68k/io.h
+ * linaos/include/asm-m68k/io.h
  *
  * 4/1/00 RZ: - rewritten to avoid clashes between ISA/PCI and other
  *              IO access
@@ -21,7 +21,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/raw_io.h>
 #include <asm/virtconvert.h>
 #include <asm/kmap.h>

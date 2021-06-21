@@ -3,10 +3,10 @@
  * Copyright 2020 Noralf Trønnes
  */
 
-#include <linux/dma-buf.h>
-#include <linux/lz4.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linaos/dma-buf.h>
+#include <linaos/lz4.h>
+#include <linaos/usb.h>
+#include <linaos/workqueue.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_connector.h>

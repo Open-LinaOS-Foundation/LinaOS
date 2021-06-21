@@ -3,10 +3,10 @@
 #ifndef _LINUX_RPMSG_NS_H
 #define _LINUX_RPMSG_NS_H
 
-#include <linux/mod_devicetable.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/byteorder.h>
-#include <linux/types.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/rpmsg.h>
+#include <linaos/rpmsg/byteorder.h>
+#include <linaos/types.h>
 
 /**
  * struct rpmsg_ns_msg - dynamic name service announcement message

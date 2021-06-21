@@ -8,14 +8,14 @@
  * Authors: Yu Chen <chenyu56@huawei.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define SCTRL_SCDEEPSLEEPED		(0x0)
 #define USB_CLK_SELECTED		BIT(20)

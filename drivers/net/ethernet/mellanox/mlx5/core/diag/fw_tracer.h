@@ -33,7 +33,7 @@
 #ifndef __LIB_TRACER_H__
 #define __LIB_TRACER_H__
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 #include "mlx5_core.h"
 
 #define STRINGS_DB_SECTIONS_NUM 8

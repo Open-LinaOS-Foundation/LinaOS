@@ -8,7 +8,7 @@
  * the kernel global pointer and jump to the kernel entry-point.
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/pal.h>
 #include <asm/setup.h>

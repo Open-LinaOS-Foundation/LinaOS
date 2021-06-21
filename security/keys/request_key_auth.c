@@ -7,11 +7,11 @@
  * See Documentation/security/keys/request-key.rst
  */
 
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/err.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #include "internal.h"
 #include <keys/request_key_auth-type.h>
 

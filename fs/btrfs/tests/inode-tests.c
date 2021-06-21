@@ -3,7 +3,7 @@
  * Copyright (C) 2013 Fusion IO.  All rights reserved.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "btrfs-tests.h"
 #include "../ctree.h"
 #include "../btrfs_inode.h"

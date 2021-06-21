@@ -20,7 +20,7 @@
 		irqbtn@18 {
 			reg = <18>;
 			label = "IRQBTN";
-			linux,code = <99>;
+			linaos,code = <99>;
 			gpios = <&pioB 18 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};

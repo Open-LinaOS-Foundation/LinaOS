@@ -12,11 +12,11 @@
 #include "adreno/adreno_gpu.h"
 
 #include <generated/utsrelease.h>
-#include <linux/string_helpers.h>
-#include <linux/devfreq.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/devcoredump.h>
-#include <linux/sched/task.h>
+#include <linaos/string_helpers.h>
+#include <linaos/devfreq.h>
+#include <linaos/devfreq_cooling.h>
+#include <linaos/devcoredump.h>
+#include <linaos/sched/task.h>
 
 /*
  * Power Management:

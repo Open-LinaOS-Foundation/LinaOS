@@ -10,7 +10,7 @@
 #ifndef __ASM_ATOMIC_LL_SC_H
 #define __ASM_ATOMIC_LL_SC_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #ifdef CONFIG_ARM64_LSE_ATOMICS
 #define __LL_SC_FALLBACK(asm_ops)					\

@@ -3,15 +3,15 @@
  * Prevention feature
  *
  * Copyright (c) 2017, Intel Corporation.
- * Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
+ * Ricardo Neri <ricardo.neri-calderon@linaos.intel.com>
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/umip.h>
 #include <asm/traps.h>
 #include <asm/insn.h>
 #include <asm/insn-eval.h>
-#include <linux/ratelimit.h>
+#include <linaos/ratelimit.h>
 
 #undef pr_fmt
 #define pr_fmt(fmt) "umip: " fmt

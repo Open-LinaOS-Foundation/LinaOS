@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* DVB USB compliant linux driver for GL861 USB2.0 devices.
+/* DVB USB compliant linaos driver for GL861 USB2.0 devices.
  *
  * see Documentation/driver-api/media/drivers/dvb-usb.rst for more information
  */
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #include "dvb_usb.h"
 

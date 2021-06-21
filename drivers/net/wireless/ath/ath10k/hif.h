@@ -7,7 +7,7 @@
 #ifndef _HIF_H_
 #define _HIF_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "core.h"
 #include "bmi.h"
 #include "debug.h"

@@ -4,15 +4,15 @@
  * Copyright (C) 2016 Red Hat, Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/uuid.h>
-#include <linux/namei.h>
-#include <linux/ratelimit.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/slab.h>
+#include <linaos/cred.h>
+#include <linaos/xattr.h>
+#include <linaos/exportfs.h>
+#include <linaos/uuid.h>
+#include <linaos/namei.h>
+#include <linaos/ratelimit.h>
 #include "overlayfs.h"
 
 int ovl_want_write(struct dentry *dentry)

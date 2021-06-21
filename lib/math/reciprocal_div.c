@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/export.h>
-#include <linux/limits.h>
-#include <linux/math.h>
-#include <linux/minmax.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/export.h>
+#include <linaos/limits.h>
+#include <linaos/math.h>
+#include <linaos/minmax.h>
+#include <linaos/types.h>
 
-#include <linux/reciprocal_div.h>
+#include <linaos/reciprocal_div.h>
 
 /*
  * For a description of the algorithm please have a look at
- * include/linux/reciprocal_div.h
+ * include/linaos/reciprocal_div.h
  */
 
 struct reciprocal_value reciprocal_value(u32 d)
@@ -42,7 +42,7 @@ struct reciprocal_value_adv reciprocal_value_adv(u32 d, u8 prec)
 	l = fls(d - 1);
 	/* NOTE: mlow/mhigh could overflow u64 when l == 32. This case needs to
 	 * be handled before calling "reciprocal_value_adv", please see the
-	 * comment at include/linux/reciprocal_div.h.
+	 * comment at include/linaos/reciprocal_div.h.
 	 */
 	WARN(l == 32,
 	     "ceil(log2(0x%08x)) == 32, %s doesn't support such divisor",

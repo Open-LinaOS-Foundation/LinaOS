@@ -3,7 +3,7 @@
 #define _ASM_GENERIC_TERMIOS_H
 
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <uapi/asm-generic/termios.h>
 
 /*	intr=^C		quit=^\		erase=del	kill=^U

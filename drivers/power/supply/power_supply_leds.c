@@ -9,10 +9,10 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
 
 #include "power_supply.h"
 

@@ -6,8 +6,8 @@
  * Copyright (c) 2015 Motorola Mobility
  * Copyright (c) 2015 Jaegeuk Kim <jaegeuk@kernel.org>
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
+#include <linaos/fs.h>
+#include <linaos/f2fs_fs.h>
 
 #include "f2fs.h"
 #include "node.h"

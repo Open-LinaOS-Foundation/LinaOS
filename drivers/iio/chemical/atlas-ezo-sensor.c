@@ -6,14 +6,14 @@
  * Author: Matt Ranostay <matt.ranostay@konsulko.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
-#include <linux/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/of_device.h>
+#include <linaos/iio/iio.h>
 
 #define ATLAS_EZO_DRV_NAME		"atlas-ezo-sensor"
 #define ATLAS_INT_TIME_IN_MS		950

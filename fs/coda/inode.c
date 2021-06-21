@@ -5,30 +5,30 @@
  * Copyright (C) 1996 Peter J. Braam <braam@maths.ox.ac.uk> and 
  * Michael Callahan <callahan@maths.ox.ac.uk> 
  * 
- * Rewritten for Linux 2.1.  Peter Braam <braam@cs.cmu.edu>
+ * Rewritten for LinaOS 2.1.  Peter Braam <braam@cs.cmu.edu>
  * Copyright (C) Carnegie Mellon University
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/file.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/pid_namespace.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/unistd.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/file.h>
+#include <linaos/vfs.h>
+#include <linaos/slab.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
 
-#include <linux/coda.h>
+#include <linaos/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linaos.h"
 #include "coda_cache.h"
 
 #include "coda_int.h"

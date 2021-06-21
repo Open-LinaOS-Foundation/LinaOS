@@ -28,9 +28,9 @@
  * Authors: Thomas Hellström <thomas-at-tungstengraphics-dot-com>
  */
 
-#include <linux/export.h>
-#include <linux/highmem.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/export.h>
+#include <linaos/highmem.h>
+#include <linaos/mem_encrypt.h>
 #include <xen/xen.h>
 
 #include <drm/drm_cache.h>

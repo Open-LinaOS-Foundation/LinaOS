@@ -7,10 +7,10 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/namei.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/namei.h>
 
 #include <cluster/masklog.h>
 

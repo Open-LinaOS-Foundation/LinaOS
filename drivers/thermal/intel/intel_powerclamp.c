@@ -5,8 +5,8 @@
  * Copyright (c) 2012, Intel Corporation.
  *
  * Authors:
- *     Arjan van de Ven <arjan@linux.intel.com>
- *     Jacob Pan <jacob.jun.pan@linux.intel.com>
+ *     Arjan van de Ven <arjan@linaos.intel.com>
+ *     Jacob Pan <jacob.jun.pan@linaos.intel.com>
  *
  *	TODO:
  *           1. better handle wakeup from external interrupts, currently a fixed
@@ -24,18 +24,18 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/cpu.h>
-#include <linux/thermal.h>
-#include <linux/slab.h>
-#include <linux/tick.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/sched/rt.h>
-#include <uapi/linux/sched/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/cpu.h>
+#include <linaos/thermal.h>
+#include <linaos/slab.h>
+#include <linaos/tick.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/sched/rt.h>
+#include <uapi/linaos/sched/types.h>
 
 #include <asm/nmi.h>
 #include <asm/msr.h>
@@ -772,6 +772,6 @@ static void __exit powerclamp_exit(void)
 module_exit(powerclamp_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Arjan van de Ven <arjan@linux.intel.com>");
-MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@linux.intel.com>");
+MODULE_AUTHOR("Arjan van de Ven <arjan@linaos.intel.com>");
+MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@linaos.intel.com>");
 MODULE_DESCRIPTION("Package Level C-state Idle Injection for Intel CPUs");

@@ -8,8 +8,8 @@
 #ifndef SELFTEST_KVM_UTIL_INTERNAL_H
 #define SELFTEST_KVM_UTIL_INTERNAL_H
 
-#include "linux/hashtable.h"
-#include "linux/rbtree.h"
+#include "linaos/hashtable.h"
+#include "linaos/rbtree.h"
 
 #include "sparsebit.h"
 

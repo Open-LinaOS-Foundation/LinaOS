@@ -11,13 +11,13 @@
 #include <crypto/padlock.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/scatterlist.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/scatterlist.h>
 #include <asm/cpu_device_id.h>
 #include <asm/fpu/api.h>
 

@@ -12,9 +12,9 @@
 #ifndef __JFFS2_NODELIST_H__
 #define __JFFS2_NODELIST_H__
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/jffs2.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/jffs2.h>
 #include "jffs2_fs_sb.h"
 #include "jffs2_fs_i.h"
 #include "xattr.h"
@@ -24,12 +24,12 @@
 #ifdef __ECOS
 #include "os-ecos.h"
 #else
-#include "os-linux.h"
+#include "os-linaos.h"
 #endif
 
 #define JFFS2_NATIVE_ENDIAN
 
-/* Note we handle mode bits conversion from JFFS2 (i.e. Linux) to/from
+/* Note we handle mode bits conversion from JFFS2 (i.e. LinaOS) to/from
    whatever OS we're actually running on here too. */
 
 #if defined(JFFS2_NATIVE_ENDIAN)

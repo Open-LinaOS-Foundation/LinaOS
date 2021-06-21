@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*    Signal support for 32-bit kernel builds
  *
- *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2006 Kyle McMartin <kyle at parisc-linux.org>
+ *    Copyright (C) 2001 Matthew Wilcox <willy at parisc-linaos.org>
+ *    Copyright (C) 2006 Kyle McMartin <kyle at parisc-linaos.org>
  *
  *    Code was mostly borrowed from kernel/signal.c.
  *    See kernel/signal.c for additional Copyrights.
  */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/unistd.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/compat.h>
+#include <linaos/module.h>
+#include <linaos/unistd.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/syscalls.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "signal32.h"
 

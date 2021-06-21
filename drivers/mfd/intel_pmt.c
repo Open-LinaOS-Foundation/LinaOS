@@ -5,18 +5,18 @@
  * Copyright (c) 2020, Intel Corporation.
  * All Rights Reserved.
  *
- * Author: David E. Box <david.e.box@linux.intel.com>
+ * Author: David E. Box <david.e.box@linaos.intel.com>
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/types.h>
 
 /* Intel DVSEC capability vendor space offsets */
 #define INTEL_DVSEC_ENTRIES		0xA
@@ -256,6 +256,6 @@ static struct pci_driver pmt_pci_driver = {
 };
 module_pci_driver(pmt_pci_driver);
 
-MODULE_AUTHOR("David E. Box <david.e.box@linux.intel.com>");
+MODULE_AUTHOR("David E. Box <david.e.box@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel Platform Monitoring Technology PMT driver");
 MODULE_LICENSE("GPL v2");

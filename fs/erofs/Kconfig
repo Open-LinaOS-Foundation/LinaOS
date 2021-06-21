@@ -49,7 +49,7 @@ config EROFS_FS_POSIX_ACL
 	  groups beyond the owner/group/world scheme.
 
 	  To learn more about Access Control Lists, visit the POSIX ACLs for
-	  Linux website <http://acl.bestbits.at/>.
+	  LinaOS website <http://acl.bestbits.at/>.
 
 	  If you don't know what Access Control Lists are, say N.
 
@@ -58,9 +58,9 @@ config EROFS_FS_SECURITY
 	depends on EROFS_FS_XATTR
 	default y
 	help
-	  Security labels provide an access control facility to support Linux
-	  Security Models (LSMs) accepted by AppArmor, SELinux, Smack and TOMOYO
-	  Linux. This option enables an extended attribute handler for file
+	  Security labels provide an access control facility to support LinaOS
+	  Security Models (LSMs) accepted by AppArmor, SELinaOS, Smack and TOMOYO
+	  LinaOS. This option enables an extended attribute handler for file
 	  security labels in the erofs filesystem, so that it requires enabling
 	  the extended attribute support in advance.
 

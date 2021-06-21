@@ -18,19 +18,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/timer.h>
-#include <linux/i2c.h>
-#include <linux/swab.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/timer.h>
+#include <linaos/i2c.h>
+#include <linaos/swab.h>
+#include <linaos/vmalloc.h>
 
 #include "ddbridge.h"
 #include "ddbridge-i2c.h"

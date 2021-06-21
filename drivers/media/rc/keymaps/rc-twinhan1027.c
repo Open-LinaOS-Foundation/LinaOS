@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table twinhan_vp1027[] = {
 	{ 0x16, KEY_POWER2 },

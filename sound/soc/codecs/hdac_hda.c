@@ -7,10 +7,10 @@
  * codec drivers using hdac_ext_bus_ops ops.
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/hdaudio_ext.h>

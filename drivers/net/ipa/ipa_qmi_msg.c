@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2020 Linaro Ltd.
  */
-#include <linux/stddef.h>
-#include <linux/soc/qcom/qmi.h>
+#include <linaos/stddef.h>
+#include <linaos/soc/qcom/qmi.h>
 
 #include "ipa_qmi_msg.h"
 

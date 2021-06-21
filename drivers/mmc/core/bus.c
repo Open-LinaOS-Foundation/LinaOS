@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/core/bus.c
+ *  linaos/drivers/mmc/core/bus.c
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright (C) 2007 Pierre Ossman
@@ -8,16 +8,16 @@
  *  MMC card bus driver model
  */
 
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
+#include <linaos/export.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/of.h>
+#include <linaos/pm_runtime.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
 
 #include "core.h"
 #include "card.h"

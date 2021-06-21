@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/fsnotify_backend.h>
-#include <linux/inotify.h>
-#include <linux/slab.h> /* struct kmem_cache */
+#include <linaos/fsnotify_backend.h>
+#include <linaos/inotify.h>
+#include <linaos/slab.h> /* struct kmem_cache */
 
 struct inotify_event_info {
 	struct fsnotify_event fse;

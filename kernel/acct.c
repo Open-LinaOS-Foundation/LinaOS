@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/kernel/acct.c
+ *  linaos/kernel/acct.c
  *
- *  BSD Process Accounting for Linux
+ *  BSD Process Accounting for LinaOS
  *
  *  Author: Marco van Wieringen <mvw@planets.elm.net>
  *
@@ -44,25 +44,25 @@
  * a struct file opened for write. Fixed. 2/6/2000, AV.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/acct.h>
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/tty.h>
-#include <linux/security.h>
-#include <linux/vfs.h>
-#include <linux/jiffies.h>
-#include <linux/times.h>
-#include <linux/syscalls.h>
-#include <linux/mount.h>
-#include <linux/uaccess.h>
-#include <linux/sched/cputime.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/acct.h>
+#include <linaos/capability.h>
+#include <linaos/file.h>
+#include <linaos/tty.h>
+#include <linaos/security.h>
+#include <linaos/vfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/times.h>
+#include <linaos/syscalls.h>
+#include <linaos/mount.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/cputime.h>
 
 #include <asm/div64.h>
-#include <linux/blkdev.h> /* sector_div */
-#include <linux/pid_namespace.h>
-#include <linux/fs_pin.h>
+#include <linaos/blkdev.h> /* sector_div */
+#include <linaos/pid_namespace.h>
+#include <linaos/fs_pin.h>
 
 /*
  * These constants control the amount of freespace that suspend and

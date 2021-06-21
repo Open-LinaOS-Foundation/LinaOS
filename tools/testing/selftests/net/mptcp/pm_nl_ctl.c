@@ -13,10 +13,10 @@
 #include <arpa/inet.h>
 #include <net/if.h>
 
-#include <linux/rtnetlink.h>
-#include <linux/genetlink.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/genetlink.h>
 
-#include "linux/mptcp.h"
+#include "linaos/mptcp.h"
 
 #ifndef MPTCP_PM_NAME
 #define MPTCP_PM_NAME		"mptcp_pm"

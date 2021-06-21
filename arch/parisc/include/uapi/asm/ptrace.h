@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* written by Philipp Rumpf, Copyright (C) 1999 SuSE GmbH Nuernberg
 ** Copyright (C) 2000 Grant Grundler, Hewlett-Packard
 */
@@ -6,7 +6,7 @@
 #define _UAPI_PARISC_PTRACE_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* This struct defines the way the registers are stored on the 
  * stack during a system call.
@@ -80,7 +80,7 @@ struct user_fp_struct {
 
 /*
  * The numbers chosen here are somewhat arbitrary but absolutely MUST
- * not overlap with any of the number assigned in <linux/ptrace.h>.
+ * not overlap with any of the number assigned in <linaos/ptrace.h>.
  *
  * These ones are taken from IA-64 on the assumption that theirs are
  * the most correct (and we also want to support PTRACE_SINGLEBLOCK

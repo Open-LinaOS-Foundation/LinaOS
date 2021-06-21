@@ -16,29 +16,29 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-direct.h> /* XXX: pokes into bus_dma_range */
-#include <linux/firmware.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/rculist.h>
-#include <linux/remoteproc.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/elf.h>
-#include <linux/crc32.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_ring.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dma-direct.h> /* XXX: pokes into bus_dma_range */
+#include <linaos/firmware.h>
+#include <linaos/string.h>
+#include <linaos/debugfs.h>
+#include <linaos/rculist.h>
+#include <linaos/remoteproc.h>
+#include <linaos/iommu.h>
+#include <linaos/idr.h>
+#include <linaos/elf.h>
+#include <linaos/crc32.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/virtio_ring.h>
 #include <asm/byteorder.h>
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include "remoteproc_internal.h"
 
@@ -2753,7 +2753,7 @@ static int rproc_panic_handler(struct notifier_block *nb, unsigned long event,
 	 * Delay for the longest requested duration before returning. This can
 	 * be used by the remoteproc drivers to give the remote processor time
 	 * to perform any requested operations (such as flush caches), when
-	 * it's not possible to signal the Linux side due to the panic.
+	 * it's not possible to signal the LinaOS side due to the panic.
 	 */
 	mdelay(longest);
 

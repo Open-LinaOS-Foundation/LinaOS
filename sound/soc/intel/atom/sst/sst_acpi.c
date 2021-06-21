@@ -8,17 +8,17 @@
  *  Authors:	Omair Mohammed Abdullah <omair.m.abdullah@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/firmware.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/firmware.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
+#include <linaos/dmi.h>
+#include <linaos/acpi.h>
 #include <asm/platform_sst_audio.h>
 #include <sound/core.h>
 #include <sound/intel-dsp-config.h>
@@ -26,7 +26,7 @@
 #include <sound/compress_driver.h>
 #include <acpi/acbuffer.h>
 #include <acpi/platform/acenv.h>
-#include <acpi/platform/aclinux.h>
+#include <acpi/platform/aclinaos.h>
 #include <acpi/actypes.h>
 #include <acpi/acpi_bus.h>
 #include <sound/soc-acpi.h>

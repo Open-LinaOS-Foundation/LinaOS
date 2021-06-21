@@ -13,22 +13,22 @@
 
 #define pr_fmt(fmt) "hashX hashX: " fmt
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/klist.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/crypto.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/klist.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/crypto.h>
 
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/bitops.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/dmaengine.h>
+#include <linaos/bitops.h>
 
 #include <crypto/internal/hash.h>
 #include <crypto/sha1.h>
@@ -36,7 +36,7 @@
 #include <crypto/scatterwalk.h>
 #include <crypto/algapi.h>
 
-#include <linux/platform_data/crypto-ux500.h>
+#include <linaos/platform_data/crypto-ux500.h>
 
 #include "hash_alg.h"
 

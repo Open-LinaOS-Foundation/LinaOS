@@ -3,7 +3,7 @@
 #define __WEXT_COMPAT
 
 #include <net/iw_handler.h>
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 
 #ifdef CONFIG_CFG80211_WEXT_EXPORT
 #define EXPORT_WEXT_HANDLER(h) EXPORT_SYMBOL_GPL(h)

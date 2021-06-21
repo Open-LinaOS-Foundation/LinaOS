@@ -20,7 +20,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/dma-buf-map.h>
+#include <linaos/dma-buf-map.h>
 
 #include <drm/drm_fourcc.h>
 

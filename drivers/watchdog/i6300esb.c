@@ -26,17 +26,17 @@
  *      Includes, defines, variables, module parameters, ...
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/pci.h>
+#include <linaos/ioport.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 
 /* Module and version information */
 #define ESB_MODULE_NAME "i6300ESB timer"

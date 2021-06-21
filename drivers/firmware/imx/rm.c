@@ -6,7 +6,7 @@
  * function are ported to clients that communicate to the SC.
  */
 
-#include <linux/firmware/imx/svc/rm.h>
+#include <linaos/firmware/imx/svc/rm.h>
 
 struct imx_sc_msg_rm_rsrc_owned {
 	struct imx_sc_rpc_msg hdr;

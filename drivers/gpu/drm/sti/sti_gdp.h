@@ -9,7 +9,7 @@
 #ifndef _STI_GDP_H_
 #define _STI_GDP_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <drm/drm_plane.h>
 

@@ -26,11 +26,11 @@
  *          Jerome Glisse
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_vblank.h>

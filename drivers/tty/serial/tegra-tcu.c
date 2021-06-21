@@ -3,17 +3,17 @@
  * Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/console.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/console.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 
 #define TCU_MBOX_BYTE(i, x)			((x) << (i * 8))
 #define TCU_MBOX_BYTE_V(x, i)			(((x) >> (i * 8)) & 0xff)

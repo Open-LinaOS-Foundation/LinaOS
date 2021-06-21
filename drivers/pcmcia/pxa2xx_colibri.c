@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa2xx_colibri.c
+ * linaos/drivers/pcmcia/pxa2xx_colibri.c
  *
  * Driver for Toradex Colibri PXA270 CF socket
  *
  * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
 
 #include <asm/mach-types.h>
 

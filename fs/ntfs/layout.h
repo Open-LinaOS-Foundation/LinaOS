@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * layout.h - All NTFS associated on-disk structures. Part of the Linux-NTFS
+ * layout.h - All NTFS associated on-disk structures. Part of the LinaOS-NTFS
  *	      project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
@@ -10,9 +10,9 @@
 #ifndef _LINUX_NTFS_LAYOUT_H
 #define _LINUX_NTFS_LAYOUT_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
 #include <asm/byteorder.h>
 
 #include "types.h"
@@ -837,7 +837,7 @@ typedef le32 FILE_ATTR_FLAGS;
 /*
  * NOTE on times in NTFS: All times are in MS standard time format, i.e. they
  * are the number of 100-nanosecond intervals since 1st January 1601, 00:00:00
- * universal coordinated time (UTC). (In Linux time starts 1st January 1970,
+ * universal coordinated time (UTC). (In LinaOS time starts 1st January 1970,
  * 00:00:00 UTC and is stored as the number of 1-second intervals since then.)
  */
 

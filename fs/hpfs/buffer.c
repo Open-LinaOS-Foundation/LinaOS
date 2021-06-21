@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hpfs/buffer.c
+ *  linaos/fs/hpfs/buffer.c
  *
  *  Mikulas Patocka (mikulas@artax.karlin.mff.cuni.cz), 1998-1999
  *
  *  general buffer i/o
  */
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
 #include "hpfs_fn.h"
 
 secno hpfs_search_hotfix_map(struct super_block *s, secno sec)

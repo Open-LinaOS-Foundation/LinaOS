@@ -20,20 +20,20 @@
  * Geert Uytterhoeven.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #ifdef CONFIG_PPC_DCR
 #include <asm/dcr.h>

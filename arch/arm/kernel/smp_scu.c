@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/smp_scu.c
+ *  linaos/arch/arm/kernel/smp_scu.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  */
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <asm/smp_plat.h>
 #include <asm/smp_scu.h>

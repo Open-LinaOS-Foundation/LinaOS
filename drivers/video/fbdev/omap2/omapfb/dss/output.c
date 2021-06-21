@@ -4,11 +4,11 @@
  * Author: Archit Taneja <archit@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
 #include <video/omapfb_dss.h>
 

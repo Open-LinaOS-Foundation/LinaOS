@@ -9,8 +9,8 @@
 
 #include <asm/unaligned.h>
 #include <net/af_ieee802154.h>
-#include <linux/ieee802154.h>
-#include <linux/skbuff.h>
+#include <linaos/ieee802154.h>
+#include <linaos/skbuff.h>
 
 #include <net/cfg802154.h>
 

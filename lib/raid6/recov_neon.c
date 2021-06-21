@@ -4,7 +4,7 @@
  * Copyright (C) 2017 Linaro Ltd. <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 
 #ifdef __KERNEL__
 #include <asm/neon.h>

@@ -8,8 +8,8 @@
  *  Changes:
  *  Fixes:
  */
-#include <linux/export.h>
-#include <linux/proc_fs.h>
+#include <linaos/export.h>
+#include <linaos/proc_fs.h>
 #include "udp_impl.h"
 
 static int udplitev6_rcv(struct sk_buff *skb)

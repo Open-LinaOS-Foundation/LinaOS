@@ -13,7 +13,7 @@
 #ifndef U_MIDI_H
 #define U_MIDI_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 struct f_midi_opts {
 	struct usb_function_instance	func_inst;

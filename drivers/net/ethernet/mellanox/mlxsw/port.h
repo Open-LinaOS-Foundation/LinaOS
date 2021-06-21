@@ -4,7 +4,7 @@
 #ifndef _MLXSW_PORT_H
 #define _MLXSW_PORT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MLXSW_PORT_MAX_MTU		10000
 

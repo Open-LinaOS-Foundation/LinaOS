@@ -54,7 +54,7 @@
 
 			nor: flash@0,0 {
 				compatible = "cfi-flash";
-				linux,mtd-name = "physmap-flash.0";
+				linaos,mtd-name = "physmap-flash.0";
 				#address-cells = <1>;
 				#size-cells = <1>;
 				reg = <0x0 0x0 0x1000000>;
@@ -133,7 +133,7 @@
 		d2 {
 			label = "d2";
 			gpios = <&pioE 25 GPIO_ACTIVE_LOW>;	/* PE25, conflicts with A25, RXD2 */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

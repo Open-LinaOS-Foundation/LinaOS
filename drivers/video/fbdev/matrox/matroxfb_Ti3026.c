@@ -83,7 +83,7 @@
 #include "matroxfb_Ti3026.h"
 #include "matroxfb_misc.h"
 #include "matroxfb_accel.h"
-#include <linux/matroxfb.h>
+#include <linaos/matroxfb.h>
 
 #ifdef CONFIG_FB_MATROX_MILLENIUM
 #define outTi3026 matroxfb_DAC_out

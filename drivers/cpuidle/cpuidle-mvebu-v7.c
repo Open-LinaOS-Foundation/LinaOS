@@ -13,12 +13,12 @@
  * Maintainer: Gregory CLEMENT <gregory.clement@free-electrons.com>
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/cpuidle.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/cpuidle.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/suspend.h>
+#include <linaos/platform_device.h>
 #include <asm/cpuidle.h>
 
 #define MVEBU_V7_FLAG_DEEP_IDLE	0x10000

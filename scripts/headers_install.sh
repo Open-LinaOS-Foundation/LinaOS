@@ -23,16 +23,16 @@ TMPFILE=$OUTFILE.tmp
 
 trap 'rm -f $OUTFILE $TMPFILE' EXIT
 
-# SPDX-License-Identifier with GPL variants must have "WITH Linux-syscall-note"
-if [ -n "$(sed -n -e "/SPDX-License-Identifier:.*GPL-/{/WITH Linux-syscall-note/!p}" $INFILE)" ]; then
-	echo "error: $INFILE: missing \"WITH Linux-syscall-note\" for SPDX-License-Identifier" >&2
+# SPDX-License-Identifier with GPL variants must have "WITH LinaOS-syscall-note"
+if [ -n "$(sed -n -e "/SPDX-License-Identifier:.*GPL-/{/WITH LinaOS-syscall-note/!p}" $INFILE)" ]; then
+	echo "error: $INFILE: missing \"WITH LinaOS-syscall-note\" for SPDX-License-Identifier" >&2
 	exit 1
 fi
 
 sed -E -e '
 	s/([[:space:](])(__user|__force|__iomem)[[:space:]]/\1/g
 	s/__attribute_const__([[:space:]]|$)/\1/g
-	s@^#include <linux/compiler(|_types).h>@@
+	s@^#include <linaos/compiler(|_types).h>@@
 	s/(^|[^a-zA-Z0-9])__packed([^a-zA-Z0-9_]|$)/\1__attribute__((packed))\2/g
 	s/(^|[[:space:](])(inline|asm|volatile)([[:space:](]|$)/\1__\2__\3/g
 	s@#(ifndef|define|endif[[:space:]]*/[*])[[:space:]]*_UAPI@#\1 @
@@ -85,10 +85,10 @@ arch/x86/include/uapi/asm/auxvec.h:CONFIG_IA32_EMULATION
 arch/x86/include/uapi/asm/auxvec.h:CONFIG_X86_64
 arch/x86/include/uapi/asm/mman.h:CONFIG_X86_INTEL_MEMORY_PROTECTION_KEYS
 include/uapi/asm-generic/fcntl.h:CONFIG_64BIT
-include/uapi/linux/atmdev.h:CONFIG_COMPAT
-include/uapi/linux/eventpoll.h:CONFIG_PM_SLEEP
-include/uapi/linux/hw_breakpoint.h:CONFIG_HAVE_MIXED_BREAKPOINTS_REGS
-include/uapi/linux/pktcdvd.h:CONFIG_CDROM_PKTCDVD_WCACHE
+include/uapi/linaos/atmdev.h:CONFIG_COMPAT
+include/uapi/linaos/eventpoll.h:CONFIG_PM_SLEEP
+include/uapi/linaos/hw_breakpoint.h:CONFIG_HAVE_MIXED_BREAKPOINTS_REGS
+include/uapi/linaos/pktcdvd.h:CONFIG_CDROM_PKTCDVD_WCACHE
 "
 
 for c in $configs

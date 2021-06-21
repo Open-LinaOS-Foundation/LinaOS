@@ -1,5 +1,5 @@
 /*
- * Linux driver attachment glue for aic7770 based controllers.
+ * LinaOS driver attachment glue for aic7770 based controllers.
  *
  * Copyright (c) 2000-2003 Adaptec Inc.
  * All rights reserved.
@@ -36,13 +36,13 @@
  * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGES.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic7770_osm.c#14 $
+ * $Id: //depot/aic7xxx/linaos/drivers/scsi/aic7xxx/aic7770_osm.c#14 $
  */
 
 #include "aic7xxx_osm.h"
 
-#include <linux/device.h>
-#include <linux/eisa.h>
+#include <linaos/device.h>
+#include <linaos/eisa.h>
 
 int
 aic7770_map_registers(struct ahc_softc *ahc, u_int port)
@@ -67,7 +67,7 @@ aic7770_map_int(struct ahc_softc *ahc, u_int irq)
 	if ((ahc->flags & AHC_EDGE_INTERRUPT) == 0)
 		shared = IRQF_SHARED;
 
-	error = request_irq(irq, ahc_linux_isr, shared, "aic7xxx", ahc);
+	error = request_irq(irq, ahc_linaos_isr, shared, "aic7xxx", ahc);
 	if (error == 0)
 		ahc->platform_data->irq = irq;
 	
@@ -102,7 +102,7 @@ aic7770_probe(struct device *dev)
 
  	dev_set_drvdata(dev, ahc);
 
-	error = ahc_linux_register_host(ahc, &aic7xxx_driver_template);
+	error = ahc_linaos_register_host(ahc, &aic7xxx_driver_template);
 	return (error);
 }
 
@@ -144,13 +144,13 @@ static struct eisa_driver aic7770_driver = {
 };
   
 int
-ahc_linux_eisa_init(void)
+ahc_linaos_eisa_init(void)
 {
 	return eisa_driver_register(&aic7770_driver);
 }
   
 void
-ahc_linux_eisa_exit(void)
+ahc_linaos_eisa_exit(void)
 {
 	eisa_driver_unregister(&aic7770_driver);
 }

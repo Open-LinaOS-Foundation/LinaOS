@@ -7,7 +7,7 @@
  *
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <asm/mach/arch.h>
 

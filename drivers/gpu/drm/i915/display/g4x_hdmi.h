@@ -6,7 +6,7 @@
 #ifndef _G4X_HDMI_H_
 #define _G4X_HDMI_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "i915_reg.h"
 

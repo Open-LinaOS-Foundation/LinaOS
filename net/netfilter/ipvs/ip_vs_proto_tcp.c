@@ -2,7 +2,7 @@
 /*
  * ip_vs_proto_tcp.c:	TCP load balancing support for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linaosvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  * Changes:     Hans Schillstrom <hans.schillstrom@ericsson.com>
@@ -16,15 +16,15 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>                  /* for tcphdr */
+#include <linaos/kernel.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>                  /* for tcphdr */
 #include <net/ip.h>
 #include <net/tcp.h>                    /* for csum_tcpudp_magic */
 #include <net/ip6_checksum.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include <net/ip_vs.h>
 

@@ -13,7 +13,7 @@ register struct task_struct *current __asm__("%a2");
  *	just keep a global,  we should probably just change it all to be
  *	current and lose _current_task.
  */
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 
 struct task_struct;
 

@@ -6,9 +6,9 @@
 #ifndef __ASM_ARCH_MXC_DMA_H__
 #define __ASM_ARCH_MXC_DMA_H__
 
-#include <linux/scatterlist.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
+#include <linaos/scatterlist.h>
+#include <linaos/device.h>
+#include <linaos/dmaengine.h>
 
 /*
  * This enumerates peripheral types. Used for SDMA.

@@ -11,7 +11,7 @@
 #ifndef CRC_ITU_T_H
 #define CRC_ITU_T_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern u16 const crc_itu_t_table[256];
 

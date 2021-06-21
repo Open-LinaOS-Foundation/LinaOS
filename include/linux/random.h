@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/random.h
+ * include/linaos/random.h
  *
  * Include file for the random number generator.
  */
 #ifndef _LINUX_RANDOM_H
 #define _LINUX_RANDOM_H
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/once.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/once.h>
 
-#include <uapi/linux/random.h>
+#include <uapi/linaos/random.h>
 
 struct random_ready_callback {
 	struct list_head list;
@@ -112,10 +112,10 @@ unsigned long randomize_page(unsigned long start, unsigned long range);
 
 /*
  * This is designed to be standalone for just prandom
- * users, but for now we include it from <linux/random.h>
+ * users, but for now we include it from <linaos/random.h>
  * for legacy reasons.
  */
-#include <linux/prandom.h>
+#include <linaos/prandom.h>
 
 #ifdef CONFIG_ARCH_RANDOM
 # include <asm/archrandom.h>

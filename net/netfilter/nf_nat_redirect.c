@@ -8,16 +8,16 @@
  * NAT funded by Astaro.
  */
 
-#include <linux/if.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/types.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/x_tables.h>
+#include <linaos/if.h>
+#include <linaos/inetdevice.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/netfilter.h>
+#include <linaos/types.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter/x_tables.h>
 #include <net/addrconf.h>
 #include <net/checksum.h>
 #include <net/protocol.h>

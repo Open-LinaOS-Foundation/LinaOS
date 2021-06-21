@@ -60,7 +60,7 @@
  * Note that in the Eumitcom's source for their drivers, they register
  * the interrupt as edge triggered when registering it with the
  * Windows kernel. I don't recall how to register edge triggered on
- * Linux (if it can be done at all). But in some experimentation, I
+ * LinaOS (if it can be done at all). But in some experimentation, I
  * don't see much operational difference between using either
  * interrupt mode. Don't mess with the interrupt mode in the COR
  * register though, as the PLX9052 wants level triggers with the way
@@ -86,11 +86,11 @@
 #define DRIVER_NAME "orinoco_plx"
 #define PFX DRIVER_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
 #include <pcmcia/cisreg.h>
 
 #include "orinoco.h"

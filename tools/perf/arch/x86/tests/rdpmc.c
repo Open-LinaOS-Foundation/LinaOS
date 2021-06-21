@@ -6,8 +6,8 @@
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include "perf-sys.h"
 #include "debug.h"
 #include "tests/tests.h"

@@ -11,13 +11,13 @@
 	Supported chipsets: RT2560.
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/eeprom_93cx6.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/eeprom_93cx6.h>
+#include <linaos/slab.h>
 
 #include "rt2x00.h"
 #include "rt2x00mmio.h"

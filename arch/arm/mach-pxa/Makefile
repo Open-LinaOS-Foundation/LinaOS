@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
 # Common support (must be linked before board specific support)

@@ -2,9 +2,9 @@
 /*
  * sht15.c - support for the SHT15 Temperature and Humidity Sensor
  *
- * Portions Copyright (c) 2010-2012 Savoir-faire Linux Inc.
- *          Jerome Oufella <jerome.oufella@savoirfairelinux.com>
- *          Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Portions Copyright (c) 2010-2012 Savoir-faire LinaOS Inc.
+ *          Jerome Oufella <jerome.oufella@savoirfairelinaos.com>
+ *          Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  *
  * Copyright (c) 2009 Jonathan Cameron
  *
@@ -13,24 +13,24 @@
  * For further information, see the Documentation/hwmon/sht15.rst file.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/bitrev.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
+#include <linaos/err.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/bitrev.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
 
 /* Commands */
 #define SHT15_MEASURE_TEMP		0x03

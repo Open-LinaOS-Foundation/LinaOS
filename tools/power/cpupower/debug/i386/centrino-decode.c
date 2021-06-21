@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  (C) 2003 - 2004  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  (C) 2003 - 2004  Dominik Brodowski <linaos@dominikbrodowski.de>
  *
  * Based on code found in
- * linux/arch/i386/kernel/cpu/cpufreq/speedstep-centrino.c
+ * linaos/arch/i386/kernel/cpu/cpufreq/speedstep-centrino.c
  * and originally developed by Jeremy Fitzhardinge.
  *
  * USAGE: simply run it to decode the current settings on CPU 0,

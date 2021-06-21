@@ -1,5 +1,5 @@
 =====================================
-Linux 802.11 Driver Developer's Guide
+LinaOS 802.11 Driver Developer's Guide
 =====================================
 
 .. toctree::

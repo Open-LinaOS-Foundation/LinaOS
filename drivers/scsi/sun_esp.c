@@ -4,16 +4,16 @@
  * Copyright (C) 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/gfp.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

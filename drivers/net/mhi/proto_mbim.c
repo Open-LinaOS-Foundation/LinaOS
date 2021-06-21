@@ -11,16 +11,16 @@
  *
  */
 
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/cdc_ncm.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/mii.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/usb/cdc_ncm.h>
 
 #include "mhi.h"
 

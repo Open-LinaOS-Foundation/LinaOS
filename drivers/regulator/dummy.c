@@ -11,11 +11,11 @@
  * systems with no controllable regulators.
  */
 
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
 
 #include "dummy.h"
 

@@ -15,13 +15,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/kmod.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/firmware.h>
 #include <net/checksum.h>
 
 #include <asm/unaligned.h>
@@ -1144,7 +1144,7 @@ struct tvcard bttv_tvcards[] = {
 	},
 	[BTTV_BOARD_LIFETEC_9415] = {
 		/* Tim Röstermundt <rosterm@uni-muenster.de>
-		in de.comp.os.unix.linux.hardware:
+		in de.comp.os.unix.linaos.hardware:
 			options bttv card=0 pll=1 radio=1 gpiomask=0x18e0
 			gpiomux =0x44c71f,0x44d71f,0,0x44d71f,0x44dfff
 			options tuner type=5 */
@@ -2120,7 +2120,7 @@ struct tvcard bttv_tvcards[] = {
 		.muxsel_hook    = gvc1100_muxsel,
 	},
 	[BTTV_BOARD_NGSTV_PLUS] = {
-		/* Carlos Silva r3pek@r3pek.homelinux.org || card 0x75 */
+		/* Carlos Silva r3pek@r3pek.homelinaos.org || card 0x75 */
 		.name           = "NGS NGSTV+",
 		.video_inputs   = 3,
 		.svhs           = 2,
@@ -2134,7 +2134,7 @@ struct tvcard bttv_tvcards[] = {
 		.has_remote     = 1,
 	},
 	[BTTV_BOARD_LMLBT4] = {
-		/* http://linuxmedialabs.com */
+		/* http://linaosmedialabs.com */
 		.name           = "LMLBT4",
 		.video_inputs   = 4, /* IN1,IN2,IN3,IN4 */
 		/* .audio_inputs= 0, */
@@ -2335,7 +2335,7 @@ struct tvcard bttv_tvcards[] = {
 		.has_radio      = 1,
 	},
 	[BTTV_BOARD_TIBET_CS16] = {
-		/* Chris Fanning <video4linux@haydon.net> */
+		/* Chris Fanning <video4linaos@haydon.net> */
 		.name           = "Tibet Systems 'Progress DVR' CS16",
 		.video_inputs   = 16,
 		/* .audio_inputs= 0, */
@@ -2418,7 +2418,7 @@ struct tvcard bttv_tvcards[] = {
 	},
 		/* ---- card 0x87---------------------------------- */
 	[BTTV_BOARD_DVICO_FUSIONHDTV_5_LITE] = {
-		/* Michael Krufky <mkrufky@linuxtv.org> */
+		/* Michael Krufky <mkrufky@linaostv.org> */
 		.name           = "DViCO FusionHDTV 5 Lite",
 		.tuner_type     = TUNER_LG_TDVS_H06XF, /* TDVS-H064F */
 		.tuner_addr	= ADDR_UNSET,
@@ -2917,7 +2917,7 @@ void bttv_idcard(struct bttv *btv)
 			pr_info("%d: subsystem: %04x:%04x (UNKNOWN)\n",
 				btv->c.nr, btv->cardid & 0xffff,
 				(btv->cardid >> 16) & 0xffff);
-			pr_debug("please mail id, board name and the correct card= insmod option to linux-media@vger.kernel.org\n");
+			pr_debug("please mail id, board name and the correct card= insmod option to linaos-media@vger.kernel.org\n");
 		}
 	}
 
@@ -4662,7 +4662,7 @@ static void ivc120_muxsel(struct bttv *btv, unsigned int input)
 /* PXC200 muxsel helper
  * luke@syseng.anu.edu.au
  * another transplant
- * from Alessandro Rubini (rubini@linux.it)
+ * from Alessandro Rubini (rubini@linaos.it)
  *
  * There are 4 kinds of cards:
  * PXC200L which is bt848

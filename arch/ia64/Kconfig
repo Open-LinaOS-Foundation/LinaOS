@@ -63,9 +63,9 @@ config IA64
 	default y
 	help
 	  The Itanium Processor Family is Intel's 64-bit successor to
-	  the 32-bit X86 line.  The IA-64 Linux project has a home
-	  page at <http://www.linuxia64.org/> and a mailing list at
-	  <linux-ia64@vger.kernel.org>.
+	  the 32-bit X86 line.  The IA-64 LinaOS project has a home
+	  page at <http://www.linaosia64.org/> and a mailing list at
+	  <linaos-ia64@vger.kernel.org>.
 
 config 64BIT
 	bool
@@ -376,7 +376,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just LinaOS.
 
 	  The name comes from the similarity to the exec system call.
 

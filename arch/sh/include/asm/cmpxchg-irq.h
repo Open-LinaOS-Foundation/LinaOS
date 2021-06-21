@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_CMPXCHG_IRQ_H
 #define __ASM_SH_CMPXCHG_IRQ_H
 
-#include <linux/irqflags.h>
+#include <linaos/irqflags.h>
 
 static inline unsigned long xchg_u32(volatile u32 *m, unsigned long val)
 {

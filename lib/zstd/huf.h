@@ -41,7 +41,7 @@
 #define HUF_H_298734234
 
 /* *** Dependencies *** */
-#include <linux/types.h> /* size_t */
+#include <linaos/types.h> /* size_t */
 
 /* ***   Tool functions *** */
 #define HUF_BLOCKSIZE_MAX (128 * 1024) /**< maximum input size for a single block compressed with HUF_compress */

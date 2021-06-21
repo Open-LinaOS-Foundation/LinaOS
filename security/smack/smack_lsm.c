@@ -15,33 +15,33 @@
  *  Copyright (C) 2011 Intel Corporation.
  */
 
-#include <linux/xattr.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/stat.h>
-#include <linux/kd.h>
+#include <linaos/xattr.h>
+#include <linaos/pagemap.h>
+#include <linaos/mount.h>
+#include <linaos/stat.h>
+#include <linaos/kd.h>
 #include <asm/ioctls.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/dccp.h>
-#include <linux/icmpv6.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/dccp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
 #include <net/cipso_ipv4.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/audit.h>
-#include <linux/magic.h>
-#include <linux/dcache.h>
-#include <linux/personality.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/binfmts.h>
-#include <linux/parser.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/watch_queue.h>
+#include <linaos/audit.h>
+#include <linaos/magic.h>
+#include <linaos/dcache.h>
+#include <linaos/personality.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
+#include <linaos/binfmts.h>
+#include <linaos/parser.h>
+#include <linaos/fs_context.h>
+#include <linaos/fs_parser.h>
+#include <linaos/watch_queue.h>
 #include "smack.h"
 
 #define TRANS_TRUE	"TRUE"
@@ -876,7 +876,7 @@ static int smack_sb_statfs(struct dentry *dentry)
  *
  * Returns 0 if it gets a blob, -EPERM if exec forbidden and -ENOMEM otherwise
  */
-static int smack_bprm_creds_for_exec(struct linux_binprm *bprm)
+static int smack_bprm_creds_for_exec(struct linaos_binprm *bprm)
 {
 	struct inode *inode = file_inode(bprm->file);
 	struct task_smack *bsp = smack_cred(bprm->cred);
@@ -1486,11 +1486,11 @@ static void smack_inode_getsecid(struct inode *inode, u32 *secid)
  * There is no smack_file_permission hook
  *
  * Should access checks be done on each read or write?
- * UNICOS and SELinux say yes.
+ * UNICOS and SELinaOS say yes.
  * Trusted Solaris, Trusted Irix, and just about everyone else says no.
  *
  * I'll say no for now. Smack does not do the frequent
- * label changing that SELinux does.
+ * label changing that SELinaOS does.
  */
 
 /**

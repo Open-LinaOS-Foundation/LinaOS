@@ -7,7 +7,7 @@
 #ifndef _ASMARM_PGTABLE_H
 #define _ASMARM_PGTABLE_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 #include <asm/proc-fns.h>
 
 #ifndef CONFIG_MMU
@@ -131,7 +131,7 @@ extern pgprot_t phys_mem_access_prot(struct file *file, unsigned long pfn,
 
 /*
  * The table below defines the page protection levels that we insert into our
- * Linux page table version.  These get translated into the best that the
+ * LinaOS page table version.  These get translated into the best that the
  * architecture can perform.  Note that on most ARM hardware:
  *  1) We cannot do execute protection
  *  2) If we could do execute protection, then read is implied
@@ -286,7 +286,7 @@ static inline pte_t pte_modify(pte_t pte, pgprot_t newprot)
 }
 
 /*
- * Encode and decode a swap entry.  Swap entries are stored in the Linux
+ * Encode and decode a swap entry.  Swap entries are stored in the LinaOS
  * page tables as follows:
  *
  *   3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1
@@ -315,7 +315,7 @@ static inline pte_t pte_modify(pte_t pte, pgprot_t newprot)
  */
 #define MAX_SWAPFILES_CHECK() BUILD_BUG_ON(MAX_SWAPFILES_SHIFT > __SWP_TYPE_BITS)
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in linaos/mm.h, as it is arch dependent */
 /* FIXME: this is not correct */
 #define kern_addr_valid(addr)	(1)
 

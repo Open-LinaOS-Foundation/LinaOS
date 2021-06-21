@@ -11,9 +11,9 @@
 #include "messages.h"
 #include "cookie.h"
 
-#include <linux/uio.h>
-#include <linux/inetdevice.h>
-#include <linux/socket.h>
+#include <linaos/uio.h>
+#include <linaos/inetdevice.h>
+#include <linaos/socket.h>
 #include <net/ip_tunnels.h>
 #include <net/udp.h>
 #include <net/sock.h>

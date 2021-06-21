@@ -57,7 +57,7 @@ struct v4l2_flash_ops {
  * @flash_faults:		bitmask of flash faults that the LED flash class
  *				device can report; corresponding LED_FAULT* bit
  *				definitions are available in the header file
- *				<linux/led-class-flash.h>
+ *				<linaos/led-class-flash.h>
  * @has_external_strobe:	external strobe capability
  */
 struct v4l2_flash_config {

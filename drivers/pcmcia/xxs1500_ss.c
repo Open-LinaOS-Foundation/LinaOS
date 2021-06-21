@@ -6,18 +6,18 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/resource.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/resource.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

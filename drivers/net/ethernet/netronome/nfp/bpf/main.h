@@ -4,15 +4,15 @@
 #ifndef __NFP_BPF_H__
 #define __NFP_BPF_H__ 1
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/bpf_verifier.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/rhashtable.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/bitfield.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_verifier.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/rhashtable.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #include "../ccm.h"
 #include "../nfp_asm.h"

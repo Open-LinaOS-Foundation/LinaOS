@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/cpufreq.h>
+#include <linaos/init.h>
+#include <linaos/interconnect.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_opp.h>
+#include <linaos/slab.h>
 
 #define LUT_MAX_ENTRIES			40U
 #define LUT_SRC				GENMASK(31, 30)

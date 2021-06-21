@@ -8,13 +8,13 @@
 
 #include <sound/jack.h>
 #include <sound/soc.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/suspend.h>
 #include <trace/events/asoc.h>
 
 struct jack_gpio_tbl {

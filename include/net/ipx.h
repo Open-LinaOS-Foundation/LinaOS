@@ -10,12 +10,12 @@
  *	Which is available from ftp.novell.com
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/datalink.h>
-#include <linux/ipx.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
+#include <linaos/ipx.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/refcount.h>
 
 struct ipx_address {
 	__be32  net;

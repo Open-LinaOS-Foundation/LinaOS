@@ -1,4 +1,4 @@
-/* radeon_rv770.h -- Private header for radeon driver -*- linux-c -*-
+/* radeon_rv770.h -- Private header for radeon driver -*- linaos-c -*-
  *
  * Copyright 2008 Advanced Micro Devices, Inc.
  * Copyright 2008 Red Hat Inc.

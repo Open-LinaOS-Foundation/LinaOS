@@ -1,5 +1,5 @@
 /*
-   CMTP implementation for Linux Bluetooth stack (BlueZ).
+   CMTP implementation for LinaOS Bluetooth stack (BlueZ).
    Copyright (C) 2002-2003 Marcel Holtmann <marcel@holtmann.org>
 
    This program is free software; you can redistribute it and/or modify
@@ -20,25 +20,25 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/fcntl.h>
-#include <linux/freezer.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/ioctl.h>
-#include <linux/file.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/fcntl.h>
+#include <linaos/freezer.h>
+#include <linaos/skbuff.h>
+#include <linaos/socket.h>
+#include <linaos/ioctl.h>
+#include <linaos/file.h>
+#include <linaos/init.h>
+#include <linaos/kthread.h>
 #include <net/sock.h>
 
-#include <linux/isdn/capilli.h>
+#include <linaos/isdn/capilli.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/l2cap.h>

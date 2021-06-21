@@ -20,22 +20,22 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/usb-pxa3xx-ulpi.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/signal.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_gpio.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/usb-pxa3xx-ulpi.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/signal.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/otg.h>
 
 #include <mach/hardware.h>
 

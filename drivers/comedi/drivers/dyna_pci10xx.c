@@ -23,9 +23,9 @@
  *   for their cards in their manuals.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
 
 #include "../comedi_pci.h"
 

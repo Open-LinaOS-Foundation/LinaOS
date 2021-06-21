@@ -8,7 +8,7 @@
 
 /*
  * The MMCIF driver is now processing MMC requests asynchronously, according
- * to the Linux MMC API requirement.
+ * to the LinaOS MMC API requirement.
  *
  * The MMCIF driver processes MMC requests in up to 3 stages: command, optional
  * data, and optional stop. To achieve asynchronous processing each of these
@@ -32,29 +32,29 @@
  * bottom half waiting state.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sh_mmcif.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/pagemap.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/sh_dma.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/sh_mmcif.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/pagemap.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_qos.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sh_dma.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
 
 #define DRIVER_NAME	"sh_mmcif"
 
@@ -1523,7 +1523,7 @@ static int sh_mmcif_remove(struct platform_device *pdev)
 	/*
 	 * FIXME: cancel_delayed_work(_sync)() and free_irq() race with the
 	 * mmc_remove_host() call above. But swapping order doesn't help either
-	 * (a query on the linux-mmc mailing list didn't bring any replies).
+	 * (a query on the linaos-mmc mailing list didn't bring any replies).
 	 */
 	cancel_delayed_work_sync(&host->timeout_work);
 

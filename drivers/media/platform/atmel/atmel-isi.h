@@ -11,7 +11,7 @@
 #ifndef __ATMEL_ISI_H__
 #define __ATMEL_ISI_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* ISI_V2 register offsets */
 #define ISI_CFG1				0x0000

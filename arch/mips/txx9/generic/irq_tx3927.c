@@ -8,7 +8,7 @@
  * Copyright 2001 MontaVista Software Inc.
  * Copyright (C) 2000-2001 Toshiba Corporation
  */
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/txx9irq.h>
 #include <asm/txx9/tx3927.h>
 

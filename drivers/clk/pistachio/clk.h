@@ -6,7 +6,7 @@
 #ifndef __PISTACHIO_CLK_H
 #define __PISTACHIO_CLK_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 
 struct pistachio_gate {
 	unsigned int id;

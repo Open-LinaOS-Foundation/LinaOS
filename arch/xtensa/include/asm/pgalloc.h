@@ -9,8 +9,8 @@
 #define _XTENSA_PGALLOC_H
 
 #ifdef CONFIG_MMU
-#include <linux/highmem.h>
-#include <linux/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
 
 #define __HAVE_ARCH_PTE_ALLOC_ONE_KERNEL
 #define __HAVE_ARCH_PTE_ALLOC_ONE

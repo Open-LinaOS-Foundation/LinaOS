@@ -8,12 +8,12 @@
 #include "messages.h"
 #include "peerlookup.h"
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/kref.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/atomic.h>
+#include <linaos/rwsem.h>
+#include <linaos/mutex.h>
+#include <linaos/kref.h>
 
 struct noise_replay_counter {
 	u64 counter;

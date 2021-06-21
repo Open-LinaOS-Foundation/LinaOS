@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-palmte.c
+ * linaos/arch/arm/mach-omap1/board-palmte.c
  *
  * Modified from board-generic.c
  *
@@ -8,24 +8,24 @@
  *
  * Original version : Laurent Gonzalez
  *
- * Maintainers : http://palmtelinux.sf.net
- *                palmtelinux-developpers@lists.sf.net
+ * Maintainers : http://palmtelinaos.sf.net
+ *                palmtelinaos-developpers@lists.sf.net
  *
  * Copyright (c) 2006 Andrzej Zaborowski  <balrog@zabor.org>
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/spi/spi.h>
-#include <linux/interrupt.h>
-#include <linux/apm-emulation.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/spi/spi.h>
+#include <linaos/interrupt.h>
+#include <linaos/apm-emulation.h>
+#include <linaos/omapfb.h>
+#include <linaos/platform_data/omap1_bl.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -34,8 +34,8 @@
 #include "flash.h"
 #include <mach/mux.h>
 #include <mach/tc.h>
-#include <linux/omap-dma.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/omap-dma.h>
+#include <linaos/platform_data/keypad-omap.h>
 
 #include <mach/hardware.h>
 #include <mach/usb.h>

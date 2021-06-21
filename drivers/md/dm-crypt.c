@@ -7,24 +7,24 @@
  * This file is released under the GPL.
  */
 
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/key.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/mempool.h>
-#include <linux/slab.h>
-#include <linux/crypto.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/backing-dev.h>
-#include <linux/atomic.h>
-#include <linux/scatterlist.h>
-#include <linux/rbtree.h>
-#include <linux/ctype.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/key.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/mempool.h>
+#include <linaos/slab.h>
+#include <linaos/crypto.h>
+#include <linaos/workqueue.h>
+#include <linaos/kthread.h>
+#include <linaos/backing-dev.h>
+#include <linaos/atomic.h>
+#include <linaos/scatterlist.h>
+#include <linaos/rbtree.h>
+#include <linaos/ctype.h>
 #include <asm/page.h>
 #include <asm/unaligned.h>
 #include <crypto/hash.h>
@@ -33,13 +33,13 @@
 #include <crypto/skcipher.h>
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/rtnetlink.h> /* for struct rtattr and RTA macros only */
-#include <linux/key-type.h>
+#include <linaos/rtnetlink.h> /* for struct rtattr and RTA macros only */
+#include <linaos/key-type.h>
 #include <keys/user-type.h>
 #include <keys/encrypted-type.h>
 #include <keys/trusted-type.h>
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
 #define DM_MSG_PREFIX "crypt"
 

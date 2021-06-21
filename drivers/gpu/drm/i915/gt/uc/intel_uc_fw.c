@@ -3,8 +3,8 @@
  * Copyright © 2016-2019 Intel Corporation
  */
 
-#include <linux/bitfield.h>
-#include <linux/firmware.h>
+#include <linaos/bitfield.h>
+#include <linaos/firmware.h>
 #include <drm/drm_print.h>
 
 #include "intel_uc_fw.h"

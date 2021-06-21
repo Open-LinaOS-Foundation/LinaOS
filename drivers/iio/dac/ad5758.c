@@ -6,18 +6,18 @@
  *
  * TODO: Currently CRC is not supported in this driver
  */
-#include <linux/bsearch.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/bsearch.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/gpio/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 /* AD5758 registers definition */
 #define AD5758_NOP				0x00

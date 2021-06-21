@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-only
-LDFLAGS_vmlinux	:= --no-undefined -X
+LDFLAGS_vmlinaos	:= --no-undefined -X
 OBJCOPYFLAGS	:= -O binary -R .note -R .note.gnu.build-id -R .comment -S
 
 ifdef CONFIG_FUNCTION_TRACER
@@ -50,7 +50,7 @@ endif
 boot := arch/nds32/boot
 core-y += $(boot)/dts/
 
-Image: vmlinux
+Image: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 

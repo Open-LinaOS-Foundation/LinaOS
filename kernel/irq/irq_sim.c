@@ -4,11 +4,11 @@
  * Copyright (C) 2020 Bartosz Golaszewski <bgolaszewski@baylibre.com>
  */
 
-#include <linux/irq.h>
-#include <linux/irq_sim.h>
-#include <linux/irq_work.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/irq.h>
+#include <linaos/irq_sim.h>
+#include <linaos/irq_work.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 struct irq_sim_work_ctx {
 	struct irq_work		work;

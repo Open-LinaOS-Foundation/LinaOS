@@ -4,7 +4,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern int nospec_disable;
 

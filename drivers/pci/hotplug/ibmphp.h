@@ -16,7 +16,7 @@
  *
  */
 
-#include <linux/pci_hotplug.h>
+#include <linaos/pci_hotplug.h>
 
 extern int ibmphp_debug;
 

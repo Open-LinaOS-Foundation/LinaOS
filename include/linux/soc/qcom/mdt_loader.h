@@ -2,7 +2,7 @@
 #ifndef __QCOM_MDT_LOADER_H__
 #define __QCOM_MDT_LOADER_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define QCOM_MDT_TYPE_MASK	(7 << 24)
 #define QCOM_MDT_TYPE_HASH	(2 << 24)

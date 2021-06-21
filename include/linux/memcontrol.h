@@ -2,7 +2,7 @@
 /* memcontrol.h - Memory Controller
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@linaos.vnet.ibm.com>
  *
  * Copyright 2007 OpenVZ SWsoft Inc
  * Author: Pavel Emelianov <xemul@openvz.org>
@@ -10,17 +10,17 @@
 
 #ifndef _LINUX_MEMCONTROL_H
 #define _LINUX_MEMCONTROL_H
-#include <linux/cgroup.h>
-#include <linux/vm_event_item.h>
-#include <linux/hardirq.h>
-#include <linux/jump_label.h>
-#include <linux/page_counter.h>
-#include <linux/vmpressure.h>
-#include <linux/eventfd.h>
-#include <linux/mm.h>
-#include <linux/vmstat.h>
-#include <linux/writeback.h>
-#include <linux/page-flags.h>
+#include <linaos/cgroup.h>
+#include <linaos/vm_event_item.h>
+#include <linaos/hardirq.h>
+#include <linaos/jump_label.h>
+#include <linaos/page_counter.h>
+#include <linaos/vmpressure.h>
+#include <linaos/eventfd.h>
+#include <linaos/mm.h>
+#include <linaos/vmstat.h>
+#include <linaos/writeback.h>
+#include <linaos/page-flags.h>
 
 struct mem_cgroup;
 struct obj_cgroup;

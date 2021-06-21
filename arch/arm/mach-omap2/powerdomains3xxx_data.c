@@ -8,9 +8,9 @@
  * Paul Walmsley, Jouni Högander
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/bug.h>
 
 #include "soc.h"
 #include "powerdomain.h"

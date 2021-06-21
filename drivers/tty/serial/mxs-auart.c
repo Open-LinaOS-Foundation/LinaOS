@@ -6,37 +6,37 @@
  *
  * Author: dmitry pervushin <dimka@embeddedalley.com>
  *
- * Copyright 2014 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright 2014 Oleksij Rempel <linaos@rempel-privat.de>
  *	Provide Alphascale ASM9260 support.
  * Copyright 2008-2010 Freescale Semiconductor, Inc.
  * Copyright 2008 Embedded Alley Solutions, Inc All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/irq.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
 #include "serial_mctrl_gpio.h"
 
 #define MXS_AUART_PORTS 5

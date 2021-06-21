@@ -3,7 +3,7 @@ Kernel driver max197
 
 Author:
 
-  * Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+  * Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
 
 Supported chips:
 
@@ -31,7 +31,7 @@ while they are {0,-2V} to 2V, and {0,-4V} to 4V on the MAX199.
 Platform data
 -------------
 
-The MAX197 platform data (defined in linux/platform_data/max197.h) should be
+The MAX197 platform data (defined in linaos/platform_data/max197.h) should be
 filled with a pointer to a conversion function, defined like::
 
     int convert(u8 ctrl);

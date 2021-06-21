@@ -12,12 +12,12 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
 #include <media/dvb_frontend.h>
 #include "tda8083.h"
 

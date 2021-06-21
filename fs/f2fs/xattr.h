@@ -5,7 +5,7 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext2/xattr.h
+ * Portions of this code from linaos/fs/ext2/xattr.h
  *
  * On-disk format of extended attributes for the ext2 filesystem.
  *
@@ -14,8 +14,8 @@
 #ifndef __F2FS_XATTR_H__
 #define __F2FS_XATTR_H__
 
-#include <linux/init.h>
-#include <linux/xattr.h>
+#include <linaos/init.h>
+#include <linaos/xattr.h>
 
 /* Magic value in attribute blocks */
 #define F2FS_XATTR_MAGIC                0xF2F52011

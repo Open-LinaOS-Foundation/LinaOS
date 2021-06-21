@@ -11,12 +11,12 @@
  * Copyright (C) 2008, 2009 Cavium Networks, Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/err.h>
-#include <linux/sysctl.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pagemap.h>
+#include <linaos/err.h>
+#include <linaos/sysctl.h>
 #include <asm/mman.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>

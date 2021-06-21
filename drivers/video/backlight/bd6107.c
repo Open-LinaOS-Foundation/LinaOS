@@ -7,15 +7,15 @@
  * Contact: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_data/bd6107.h>
-#include <linux/slab.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/fb.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/bd6107.h>
+#include <linaos/slab.h>
 
 #define BD6107_PSCNT1				0x00
 #define BD6107_PSCNT1_PSCNTREG2			(1 << 2)

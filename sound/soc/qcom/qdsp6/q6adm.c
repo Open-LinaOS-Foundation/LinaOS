@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The LinaOS Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/apr.h>
+#include <linaos/wait.h>
 #include <sound/asound.h>
 #include "q6adm.h"
 #include "q6afe.h"

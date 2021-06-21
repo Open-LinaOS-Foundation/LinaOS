@@ -28,7 +28,7 @@
  * Contact Information:
  * James Guilford <james.guilford@intel.com>
  * Sean Gulley <sean.m.gulley@intel.com>
- * Chandramouli Narayanan <mouli@linux.intel.com>
+ * Chandramouli Narayanan <mouli@linaos.intel.com>
  *
  * BSD LICENSE
  *
@@ -62,7 +62,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define VMOVDQ		vmovdqu
 

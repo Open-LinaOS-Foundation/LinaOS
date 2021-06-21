@@ -17,9 +17,9 @@
  * IRQ event to the next one.
  */
 
-#include <linux/acpi.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <linaos/acpi.h>
+#include <linaos/serial_reg.h>
+#include <linaos/serial_8250.h>
 
 #include "8250.h"
 

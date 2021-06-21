@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/asm/setup.h
+ *  linaos/include/asm/setup.h
  *
  *  Copyright (C) 1997-1999 Russell King
  *

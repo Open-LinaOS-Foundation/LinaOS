@@ -8,12 +8,12 @@
  * Copyright (c) 2018 Oleksandr Andrushchenko, EPAM Systems Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/dma-buf.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/dma-buf.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 #include <xen/xen.h>
 #include <xen/grant_table.h>

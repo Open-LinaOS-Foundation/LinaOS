@@ -4,7 +4,7 @@
 #ifndef _MLXFW_MFA2_H
 #define _MLXFW_MFA2_H
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 #include "mlxfw.h"
 
 struct mlxfw_mfa2_component {

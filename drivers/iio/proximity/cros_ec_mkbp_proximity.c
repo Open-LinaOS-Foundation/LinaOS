@@ -5,21 +5,21 @@
  * Copyright 2021 Google LLC.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
 
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #include <asm/unaligned.h>
 

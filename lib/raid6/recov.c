@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -13,8 +13,8 @@
  * the syndrome.)
  */
 
-#include <linux/export.h>
-#include <linux/raid/pq.h>
+#include <linaos/export.h>
+#include <linaos/raid/pq.h>
 
 /* Recover two failed data blocks. */
 static void raid6_2data_recov_intx1(int disks, size_t bytes, int faila,

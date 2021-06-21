@@ -6,12 +6,12 @@
  *    Author(s): Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 #include <asm/fcx.h>
 #include "cio.h"
 

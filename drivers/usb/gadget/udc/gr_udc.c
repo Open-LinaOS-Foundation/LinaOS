@@ -21,24 +21,24 @@
  * only supports cores in DMA mode.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
 
 #include <asm/byteorder.h>
 

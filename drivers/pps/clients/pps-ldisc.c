@@ -2,16 +2,16 @@
 /*
  * pps-ldisc.c -- PPS line discipline
  *
- * Copyright (C) 2008	Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2008	Rodolfo Giometti <giometti@linaos.it>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/pps_kernel.h>
-#include <linux/bug.h>
+#include <linaos/module.h>
+#include <linaos/serial_core.h>
+#include <linaos/tty.h>
+#include <linaos/pps_kernel.h>
+#include <linaos/bug.h>
 
 static void pps_tty_dcd_change(struct tty_struct *tty, unsigned int status)
 {
@@ -141,6 +141,6 @@ module_init(pps_tty_init);
 module_exit(pps_tty_cleanup);
 
 MODULE_ALIAS_LDISC(N_PPS);
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
+MODULE_AUTHOR("Rodolfo Giometti <giometti@linaos.it>");
 MODULE_DESCRIPTION("PPS TTY device driver");
 MODULE_LICENSE("GPL");

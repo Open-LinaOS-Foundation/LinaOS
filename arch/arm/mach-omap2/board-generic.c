@@ -8,11 +8,11 @@
  * Modified from the original mach-omap/omap2/board-generic.c did by Paul
  * to support the OMAP2+ device tree boards with an unique board file.
  */
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/irqdomain.h>
-#include <linux/clocksource.h>
+#include <linaos/io.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/irqdomain.h>
+#include <linaos/clocksource.h>
 
 #include <asm/setup.h>
 #include <asm/mach/arch.h>

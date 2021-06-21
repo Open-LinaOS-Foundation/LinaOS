@@ -2,25 +2,25 @@
 #ifndef _IDE_H
 #define _IDE_H
 /*
- *  linux/include/linux/ide.h
+ *  linaos/include/linaos/ide.h
  *
  *  Copyright (C) 1994-2002  Linus Torvalds & authors
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/ata.h>
-#include <linux/blk-mq.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/bio.h>
-#include <linux/pci.h>
-#include <linux/completion.h>
-#include <linux/pm.h>
-#include <linux/mutex.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/ata.h>
+#include <linaos/blk-mq.h>
+#include <linaos/proc_fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/bio.h>
+#include <linaos/pci.h>
+#include <linaos/completion.h>
+#include <linaos/pm.h>
+#include <linaos/mutex.h>
 /* for request_sense */
-#include <linux/cdrom.h>
+#include <linaos/cdrom.h>
 #include <scsi/scsi_cmnd.h>
 #include <asm/byteorder.h>
 #include <asm/io.h>

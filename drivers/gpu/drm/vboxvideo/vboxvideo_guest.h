@@ -4,7 +4,7 @@
 #ifndef __VBOXVIDEO_GUEST_H__
 #define __VBOXVIDEO_GUEST_H__
 
-#include <linux/genalloc.h>
+#include <linaos/genalloc.h>
 #include "vboxvideo.h"
 
 /*

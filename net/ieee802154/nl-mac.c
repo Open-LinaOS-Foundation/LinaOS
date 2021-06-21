@@ -10,16 +10,16 @@
  * Maxim Osipov <maxim.osipov@siemens.com>
  */
 
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/ieee802154.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/if_arp.h>
+#include <linaos/netdevice.h>
+#include <linaos/ieee802154.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
-#include <linux/nl802154.h>
-#include <linux/export.h>
+#include <linaos/nl802154.h>
+#include <linaos/export.h>
 #include <net/af_ieee802154.h>
 #include <net/ieee802154_netdev.h>
 #include <net/cfg802154.h>

@@ -1,7 +1,7 @@
 /* Declare dependencies between CPUIDs */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 #include <asm/cpufeature.h>
 
 struct cpuid_dep {

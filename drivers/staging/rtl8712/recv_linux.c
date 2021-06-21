@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /******************************************************************************
- * recv_linux.c
+ * recv_linaos.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * LinaOS device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,7 +16,7 @@
 
 #define _RECV_OSDEP_C_
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"
@@ -24,7 +24,7 @@
 #include "recv_osdep.h"
 #include "osdep_intf.h"
 #include "ethernet.h"
-#include <linux/if_arp.h>
+#include <linaos/if_arp.h>
 #include "usb_ops.h"
 
 /*init os related resource in struct recv_priv*/

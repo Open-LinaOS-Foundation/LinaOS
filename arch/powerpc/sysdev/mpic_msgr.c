@@ -6,12 +6,12 @@
  * Mingkai Hu from Freescale Semiconductor, Inc.
  */
 
-#include <linux/list.h>
-#include <linux/of_platform.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/of_platform.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 #include <asm/prom.h>
 #include <asm/hw_irq.h>
 #include <asm/ppc-pci.h>

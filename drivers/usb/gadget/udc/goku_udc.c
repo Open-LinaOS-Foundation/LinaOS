@@ -20,22 +20,22 @@
 // #define	VERBOSE		/* extra debug messages (success too) */
 // #define	USB_TRACE	/* packet-level success messages */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/prefetch.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/prefetch.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -67,7 +67,7 @@ MODULE_LICENSE("GPL");
 static unsigned use_dma = 1;
 
 #if 0
-//#include <linux/moduleparam.h>
+//#include <linaos/moduleparam.h>
 /* "modprobe goku_udc use_dma=1" etc
  *	0 to disable dma
  *	1 to use IN dma only (normal operation)

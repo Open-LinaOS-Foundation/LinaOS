@@ -20,7 +20,7 @@
 #if !defined(_I40E_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _I40E_TRACE_H_
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /*
  * i40e_trace() macro enables shared code to refer to trace points

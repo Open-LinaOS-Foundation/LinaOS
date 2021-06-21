@@ -45,11 +45,11 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/hash.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <linaos/err.h>
+#include <linaos/vmalloc.h>
+#include <linaos/hash.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
 #include <rdma/rdma_vt.h>
 #include <rdma/rdmavt_qp.h>
 #include <rdma/ib_verbs.h>

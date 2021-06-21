@@ -2,25 +2,25 @@
 /*
  * Wistron laptop button driver
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinaos.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
+#include <linaos/io.h>
+#include <linaos/dmi.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/module.h>
+#include <linaos/preempt.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
 
 /* How often we poll keys - msecs */
 #define POLL_INTERVAL_DEFAULT	500 /* when idle */

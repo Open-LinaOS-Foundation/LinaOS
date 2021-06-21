@@ -6,8 +6,8 @@
  * Copyright 1997 Andi Kleen <ak@muc.de>
  * Copyright 1997 Linus Torvalds
  */
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/uaccess.h>
 #include <asm/mmx.h>
 #include <asm/asm.h>
 

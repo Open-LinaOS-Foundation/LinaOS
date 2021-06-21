@@ -6,14 +6,14 @@
  * Copyright (C) 2014 Wolfram Sang, Sang Engineering <wsa@sang-engineering.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/renesas.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/renesas.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
 
 struct rz_cpg {
 	struct clk_onecell_data data;

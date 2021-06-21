@@ -5,12 +5,12 @@
 // Copyright (C) 2008 Openmoko, Inc.
 // Copyright (C) 2004-2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //
 // Samsung common power management helper functions.
 
-#include <linux/io.h>
-#include <linux/kernel.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
 
 #include "pm-common.h"
 

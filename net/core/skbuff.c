@@ -34,33 +34,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/sctp.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/slab.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/sctp.h>
+#include <linaos/netdevice.h>
 #ifdef CONFIG_NET_CLS_ACT
 #include <net/pkt_sched.h>
 #endif
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/splice.h>
-#include <linux/cache.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/scatterlist.h>
-#include <linux/errqueue.h>
-#include <linux/prefetch.h>
-#include <linux/if_vlan.h>
-#include <linux/mpls.h>
-#include <linux/kcov.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/splice.h>
+#include <linaos/cache.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/init.h>
+#include <linaos/scatterlist.h>
+#include <linaos/errqueue.h>
+#include <linaos/prefetch.h>
+#include <linaos/if_vlan.h>
+#include <linaos/mpls.h>
+#include <linaos/kcov.h>
 
 #include <net/protocol.h>
 #include <net/dst.h>
@@ -71,12 +71,12 @@
 #include <net/mpls.h>
 #include <net/mptcp.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <trace/events/skb.h>
-#include <linux/highmem.h>
-#include <linux/capability.h>
-#include <linux/user_namespace.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/highmem.h>
+#include <linaos/capability.h>
+#include <linaos/user_namespace.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include "datagram.h"
 

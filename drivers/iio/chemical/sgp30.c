@@ -16,15 +16,15 @@
  * - power mode switching (SGPC3)
  */
 
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/crc8.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define SGP_WORD_LEN				2
 #define SGP_CRC8_POLYNOMIAL			0x31

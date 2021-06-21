@@ -30,11 +30,11 @@
  * SOFTWARE.
  *
  */
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/rbtree.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/rbtree.h>
+#include <linaos/bitops.h>
+#include <linaos/export.h>
 
 #include "rds.h"
 

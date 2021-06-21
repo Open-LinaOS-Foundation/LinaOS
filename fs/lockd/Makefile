@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux lock manager stuff
+# Makefile for the linaos lock manager stuff
 #
 
 obj-$(CONFIG_LOCKD) += lockd.o

@@ -35,9 +35,9 @@
 #ifndef _NFSD4_STATE_H
 #define _NFSD4_STATE_H
 
-#include <linux/idr.h>
-#include <linux/refcount.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <linaos/idr.h>
+#include <linaos/refcount.h>
+#include <linaos/sunrpc/svc_xprt.h>
 #include "nfsfh.h"
 #include "nfsd.h"
 

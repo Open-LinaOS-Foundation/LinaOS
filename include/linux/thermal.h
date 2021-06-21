@@ -10,12 +10,12 @@
 #ifndef __THERMAL_H__
 #define __THERMAL_H__
 
-#include <linux/of.h>
-#include <linux/idr.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/thermal.h>
+#include <linaos/of.h>
+#include <linaos/idr.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/workqueue.h>
+#include <uapi/linaos/thermal.h>
 
 #define THERMAL_MAX_TRIPS	12
 

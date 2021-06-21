@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/objtool.h>
-#include <linux/percpu.h>
+#include <linaos/objtool.h>
+#include <linaos/percpu.h>
 
 #include <asm/debugreg.h>
 #include <asm/mmu_context.h>

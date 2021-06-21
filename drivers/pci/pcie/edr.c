@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * PCI Error Disconnect Recover support
- * Author: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
+ * Author: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linaos.intel.com>
  *
  * Copyright (C) 2020 Intel Corp.
  */
 
 #define dev_fmt(fmt) "EDR: " fmt
 
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
+#include <linaos/pci.h>
+#include <linaos/pci-acpi.h>
 
 #include "portdrv.h"
 #include "../pci.h"

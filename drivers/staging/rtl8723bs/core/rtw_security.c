@@ -6,7 +6,7 @@
  ******************************************************************************/
 #define  _RTW_SECURITY_C_
 
-#include <linux/crc32poly.h>
+#include <linaos/crc32poly.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 

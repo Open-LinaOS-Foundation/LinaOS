@@ -7,18 +7,18 @@
  * the Free Software Foundation.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitops.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/bitops.h>
+#include <linaos/irq.h>
 #include <asm/byteorder.h>
-#include <linux/bitmap.h>
+#include <linaos/bitmap.h>
 
 #include "bnxt_hsi.h"
 #include "bnxt.h"

@@ -12,12 +12,12 @@
  *   Copied dynapro.c and edited for Hampshire 4-byte protocol
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"Hampshire serial touchscreen driver"
 

@@ -6,7 +6,7 @@
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linaosvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *              Julian Anastasov <ja@ssi.bg>
  *
@@ -16,24 +16,24 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/workqueue.h>
-#include <linux/swap.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/sysctl.h>
+#include <linaos/proc_fs.h>
+#include <linaos/workqueue.h>
+#include <linaos/swap.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/mutex.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/mutex.h>
 
 #include <net/net_namespace.h>
-#include <linux/nsproxy.h>
+#include <linaos/nsproxy.h>
 #include <net/ip.h>
 #ifdef CONFIG_IP_VS_IPV6
 #include <net/ipv6.h>
@@ -44,7 +44,7 @@
 #include <net/sock.h>
 #include <net/genetlink.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <net/ip_vs.h>
 
@@ -100,7 +100,7 @@ static void update_defense_level(struct netns_ipvs *ipvs)
 	/* we only count free and buffered memory (in pages) */
 	si_meminfo(&i);
 	availmem = i.freeram + i.bufferram;
-	/* however in linux 2.5 the i.bufferram is total page cache size,
+	/* however in linaos 2.5 the i.bufferram is total page cache size,
 	   we need adjust it */
 	/* si_swapinfo(&i); */
 	/* availmem = availmem - (i.totalswap - i.freeswap); */

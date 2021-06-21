@@ -7,13 +7,13 @@
 /*
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
 #include "hid-ids.h"
 #include "hid-wiimote.h"
 

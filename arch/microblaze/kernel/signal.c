@@ -18,24 +18,24 @@
  * archive for more details.
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/percpu.h>
-#include <linux/linkage.h>
-#include <linux/tracehook.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/ptrace.h>
+#include <linaos/unistd.h>
+#include <linaos/stddef.h>
+#include <linaos/personality.h>
+#include <linaos/percpu.h>
+#include <linaos/linkage.h>
+#include <linaos/tracehook.h>
 #include <asm/entry.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
+#include <linaos/uaccess.h>
+#include <linaos/syscalls.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>
 

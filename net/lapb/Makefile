@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the Linux LAPB layer.
+# Makefile for the LinaOS LAPB layer.
 #
 
 obj-$(CONFIG_LAPB) += lapb.o

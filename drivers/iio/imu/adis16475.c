@@ -4,25 +4,25 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/imu/adis.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/irq.h>
-#include <linux/lcm.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/imu/adis.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/irq.h>
+#include <linaos/lcm.h>
+#include <linaos/math.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
 
 #define ADIS16475_REG_DIAG_STAT		0x02
 #define ADIS16475_REG_X_GYRO_L		0x04

@@ -52,7 +52,7 @@ Optional properties:
  - reg-names: Names for the register regions.
  - ti,enable-all: Enable all DMA channels vs clients opening specific channels
 	what they need. This property is useful for the userspace fast path
-	case where the linux drivers enables the channels used by userland
+	case where the linaos drivers enables the channels used by userland
 	stack.
  - ti,loop-back: To loopback Tx streaming I/F to Rx streaming I/F. Used for
 	      infrastructure transfers.

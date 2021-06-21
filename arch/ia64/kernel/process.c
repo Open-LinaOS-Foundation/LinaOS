@@ -9,31 +9,31 @@
  * 2005-10-07 Keith Owens <kaos@sgi.com>
  *	      Add notify_die() hooks.
  */
-#include <linux/cpu.h>
-#include <linux/pm.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/personality.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
-#include <linux/unistd.h>
-#include <linux/efi.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kdebug.h>
-#include <linux/utsname.h>
-#include <linux/tracehook.h>
-#include <linux/rcupdate.h>
+#include <linaos/cpu.h>
+#include <linaos/pm.h>
+#include <linaos/elf.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/personality.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/stddef.h>
+#include <linaos/thread_info.h>
+#include <linaos/unistd.h>
+#include <linaos/efi.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/kdebug.h>
+#include <linaos/utsname.h>
+#include <linaos/tracehook.h>
+#include <linaos/rcupdate.h>
 
 #include <asm/cpu.h>
 #include <asm/delay.h>
@@ -44,7 +44,7 @@
 #include <asm/sal.h>
 #include <asm/switch_to.h>
 #include <asm/tlbflush.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unwind.h>
 #include <asm/user.h>
 #include <asm/xtp.h>
@@ -326,7 +326,7 @@ copy_thread(unsigned long clone_flags, unsigned long user_stack_base,
 	 * XXX We could push this optimization a bit further by
 	 * clearing IA64_THREAD_FPH_VALID on ANY system call.
 	 * However, it's not clear this is worth doing.  Also, it
-	 * would be a slight deviation from the normal Linux system
+	 * would be a slight deviation from the normal LinaOS system
 	 * call behavior where scratch registers are preserved across
 	 * system calls (unless used by the system call itself).
 	 */

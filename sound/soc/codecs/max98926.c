@@ -3,12 +3,12 @@
  * max98926.c -- ALSA SoC MAX98926 driver
  * Copyright 2013-15 Maxim Integrated Products
  */
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/cdev.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

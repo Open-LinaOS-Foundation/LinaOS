@@ -37,26 +37,26 @@
 		user_led1 {
 			label = "green:user1";
 			gpios = <&porta 14 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		user_led2 {
 			label = "green:user2";
 			gpios = <&porta 22 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 
 		user_led3 {
 			label = "green:user3";
 			gpios = <&porta 25 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 
 		user_led4 {
 			label = "green:user4";
 			gpios = <&portb 3 GPIO_ACTIVE_LOW>;
 			panic-indicator;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 	};
 };

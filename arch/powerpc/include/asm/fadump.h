@@ -3,7 +3,7 @@
  * Firmware Assisted dump header file.
  *
  * Copyright 2011 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@linaos.vnet.ibm.com>
  */
 
 #ifndef _ASM_POWERPC_FADUMP_H

@@ -26,7 +26,7 @@
 		back {
 			label = "Back";
 			gpios = <&gpio7 1 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 			wakeup-source;
 		};
 	};

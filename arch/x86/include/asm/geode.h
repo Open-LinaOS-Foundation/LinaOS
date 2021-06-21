@@ -8,8 +8,8 @@
 #define _ASM_X86_GEODE_H
 
 #include <asm/processor.h>
-#include <linux/io.h>
-#include <linux/cs5535.h>
+#include <linaos/io.h>
+#include <linaos/cs5535.h>
 
 static inline int is_geode_gx(void)
 {

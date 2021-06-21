@@ -10,12 +10,12 @@
  * Rahul Trivedi: Codito Technologies 2004
  */
 
-#include <linux/sched/signal.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
-#include <linux/kprobes.h>
-#include <linux/kgdb.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kdebug.h>
+#include <linaos/uaccess.h>
+#include <linaos/ptrace.h>
+#include <linaos/kprobes.h>
+#include <linaos/kgdb.h>
 #include <asm/setup.h>
 #include <asm/unaligned.h>
 #include <asm/kprobes.h>

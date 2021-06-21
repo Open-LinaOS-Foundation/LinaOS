@@ -3,12 +3,12 @@
  * Copyright (C) 2017 Red Hat, Inc.
  * Copyright (c) 2018 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/fs.h>
+#include <linaos/iomap.h>
+#include <linaos/pagemap.h>
+#include <linaos/pagevec.h>
 
 static loff_t
 iomap_seek_hole_actor(struct inode *inode, loff_t start, loff_t length,

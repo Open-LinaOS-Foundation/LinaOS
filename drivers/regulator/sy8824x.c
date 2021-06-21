@@ -6,12 +6,12 @@
 //
 // Author: Jisheng Zhang <jszhang@kernel.org>
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define SY8824C_BUCK_EN		(1 << 7)
 #define SY8824C_MODE		(1 << 6)

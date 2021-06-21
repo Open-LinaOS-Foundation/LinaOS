@@ -3,14 +3,14 @@
  *  Copyright (C) 2015 Texas Instruments Incorporated - http://www.ti.com
  *  Author: Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
 
 #define TI_XBAR_DRA7		0
 #define TI_XBAR_AM335X		1

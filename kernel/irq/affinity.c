@@ -3,11 +3,11 @@
  * Copyright (C) 2016 Thomas Gleixner.
  * Copyright (C) 2016-2017 Christoph Hellwig.
  */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/sort.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/sort.h>
 
 static void irq_spread_init_one(struct cpumask *irqmsk, struct cpumask *nmsk,
 				unsigned int cpus_per_vec)

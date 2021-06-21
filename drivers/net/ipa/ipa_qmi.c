@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2020 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/qrtr.h>
-#include <linux/soc/qcom/qmi.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/qrtr.h>
+#include <linaos/soc/qcom/qmi.h>
 
 #include "ipa.h"
 #include "ipa_endpoint.h"

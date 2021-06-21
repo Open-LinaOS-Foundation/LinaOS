@@ -2,28 +2,28 @@
 /* Common capabilities, needed by capability.o.
  */
 
-#include <linux/capability.h>
-#include <linux/audit.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/lsm_hooks.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/ptrace.h>
-#include <linux/xattr.h>
-#include <linux/hugetlb.h>
-#include <linux/mount.h>
-#include <linux/sched.h>
-#include <linux/prctl.h>
-#include <linux/securebits.h>
-#include <linux/user_namespace.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
+#include <linaos/capability.h>
+#include <linaos/audit.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/lsm_hooks.h>
+#include <linaos/file.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/skbuff.h>
+#include <linaos/netlink.h>
+#include <linaos/ptrace.h>
+#include <linaos/xattr.h>
+#include <linaos/hugetlb.h>
+#include <linaos/mount.h>
+#include <linaos/sched.h>
+#include <linaos/prctl.h>
+#include <linaos/securebits.h>
+#include <linaos/user_namespace.h>
+#include <linaos/binfmts.h>
+#include <linaos/personality.h>
 
 /*
  * If a non-root user executes a setuid-root binary in
@@ -52,7 +52,7 @@ static void warn_setuid_and_fcaps_mixed(const char *fname)
  * @cred: The credentials to use
  * @targ_ns:  The user namespace in which we need the capability
  * @cap: The capability to check for
- * @opts: Bitmask of options defined in include/linux/security.h
+ * @opts: Bitmask of options defined in include/linaos/security.h
  *
  * Determine whether the nominated task has the specified capability amongst
  * its effective set, returning 0 if it does, -ve if it does not.
@@ -587,7 +587,7 @@ int cap_convert_nscap(struct user_namespace *mnt_userns, struct dentry *dentry,
  * to a file.
  */
 static inline int bprm_caps_from_vfs_caps(struct cpu_vfs_cap_data *caps,
-					  struct linux_binprm *bprm,
+					  struct linaos_binprm *bprm,
 					  bool *effective,
 					  bool *has_fcap)
 {
@@ -723,7 +723,7 @@ int get_vfs_caps_from_disk(struct user_namespace *mnt_userns,
  * its xattrs and, if present, apply them to the proposed credentials being
  * constructed by execve().
  */
-static int get_file_caps(struct linux_binprm *bprm, struct file *file,
+static int get_file_caps(struct linaos_binprm *bprm, struct file *file,
 			 bool *effective, bool *has_fcap)
 {
 	int rc = 0;
@@ -788,7 +788,7 @@ static inline bool __is_suid(kuid_t uid, struct cred *cred)
  * set UID root and nothing is changed.  If we are root, cap_permitted is
  * updated.  If we have become set UID root, the effective bit is set.
  */
-static void handle_privileged_root(struct linux_binprm *bprm, bool has_fcap,
+static void handle_privileged_root(struct linaos_binprm *bprm, bool has_fcap,
 				   bool *effective, kuid_t root_uid)
 {
 	const struct cred *old = current_cred();
@@ -885,7 +885,7 @@ static inline bool nonroot_raised_pE(struct cred *new, const struct cred *old,
  *
  * Return: 0 if successful, -ve on error.
  */
-int cap_bprm_creds_from_file(struct linux_binprm *bprm, struct file *file)
+int cap_bprm_creds_from_file(struct linaos_binprm *bprm, struct file *file)
 {
 	/* Process setpcap binaries and capabilities for uid 0 */
 	const struct cred *old = current_cred();

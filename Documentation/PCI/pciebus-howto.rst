@@ -40,7 +40,7 @@ and handled by corresponding service drivers.
 Why use the PCI Express Port Bus Driver?
 ========================================
 
-In existing Linux kernels, the Linux Device Driver Model allows a
+In existing LinaOS kernels, the LinaOS Device Driver Model allows a
 physical device to be handled by only a single driver. The PCI
 Express Port is a PCI-PCI Bridge device with multiple distinct
 services. To maintain a clean and simple solution each service
@@ -85,7 +85,7 @@ driver when the PCI Express support is enabled in the kernel.
 Enabling Service Driver Support
 -------------------------------
 
-PCI device drivers are implemented based on Linux Device Driver Model.
+PCI device drivers are implemented based on LinaOS Device Driver Model.
 All service drivers are PCI device drivers. As discussed above, it is
 impossible to load any service driver once the kernel has loaded the
 PCI Express Port Bus Driver. To meet the PCI Express Port Bus Driver
@@ -96,7 +96,7 @@ A service driver is required to use the two APIs shown below to
 register its service with the PCI Express Port Bus driver (see
 section 5.2.1 & 5.2.2). It is important that a service driver
 initializes the pcie_port_service_driver data structure, included in
-header file /include/linux/pcieport_if.h, before calling these APIs.
+header file /include/linaos/pcieport_if.h, before calling these APIs.
 Failure to do so will result an identity mismatch, which prevents
 the PCI Express Port Bus driver from loading a service driver.
 
@@ -106,7 +106,7 @@ pcie_port_service_register
 
   int pcie_port_service_register(struct pcie_port_service_driver *new)
 
-This API replaces the Linux Driver Model's pci_register_driver API. A
+This API replaces the LinaOS Driver Model's pci_register_driver API. A
 service driver should always calls pcie_port_service_register at
 module init. Note that after service driver being loaded, calls
 such as pci_enable_device(dev) and pci_set_master(dev) are no longer
@@ -118,7 +118,7 @@ pcie_port_service_unregister
 
   void pcie_port_service_unregister(struct pcie_port_service_driver *new)
 
-pcie_port_service_unregister replaces the Linux Driver Model's
+pcie_port_service_unregister replaces the LinaOS Driver Model's
 pci_unregister_driver. It's always called by service driver when a
 module exits.
 

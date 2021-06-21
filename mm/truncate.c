@@ -8,22 +8,22 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/backing-dev.h>
-#include <linux/dax.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/pagevec.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/buffer_head.h>	/* grr. try_to_release_page,
+#include <linaos/kernel.h>
+#include <linaos/backing-dev.h>
+#include <linaos/dax.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/export.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/pagevec.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/buffer_head.h>	/* grr. try_to_release_page,
 				   do_invalidatepage */
-#include <linux/shmem_fs.h>
-#include <linux/cleancache.h>
-#include <linux/rmap.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/cleancache.h>
+#include <linaos/rmap.h>
 #include "internal.h"
 
 /*

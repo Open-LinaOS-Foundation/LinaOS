@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: LinaOS filesystem encryption layer
  * This is where eCryptfs coordinates the symmetric encryption and
  * decryption of the file data as it passes between the lower
  * encrypted file and the upper decrypted file.
@@ -11,14 +11,14 @@
  *   Author(s): Michael A. Halcrow <mahalcro@us.ibm.com>
  */
 
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/page-flags.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
+#include <linaos/pagemap.h>
+#include <linaos/writeback.h>
+#include <linaos/page-flags.h>
+#include <linaos/mount.h>
+#include <linaos/file.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/xattr.h>
 #include <asm/unaligned.h>
 #include "ecryptfs_kernel.h"
 

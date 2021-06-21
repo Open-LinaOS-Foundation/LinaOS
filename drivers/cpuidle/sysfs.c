@@ -6,15 +6,15 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/completion.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
+#include <linaos/kernel.h>
+#include <linaos/cpuidle.h>
+#include <linaos/sysfs.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/completion.h>
+#include <linaos/capability.h>
+#include <linaos/device.h>
+#include <linaos/kobject.h>
 
 #include "cpuidle.h"
 

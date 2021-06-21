@@ -6,18 +6,18 @@
  * Author: Maxime Ripard <maxime.ripard@bootlin.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/videodev2.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>

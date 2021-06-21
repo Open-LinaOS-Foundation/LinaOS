@@ -8,19 +8,19 @@
  *   K. Y. Srinivasan <kys@microsoft.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/hyperv.h>
-#include <linux/blkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/hyperv.h>
+#include <linaos/blkdev.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>

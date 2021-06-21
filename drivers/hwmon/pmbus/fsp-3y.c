@@ -11,10 +11,10 @@
  * aren't supported by the devices or their encondings are unknown.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include "pmbus.h"
 
 #define YM2151_PAGE_12V_LOG	0x00

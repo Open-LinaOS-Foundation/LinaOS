@@ -15,8 +15,8 @@
 #ifndef _ASM_NIOS2_PAGE_H
 #define _ASM_NIOS2_PAGE_H
 
-#include <linux/pfn.h>
-#include <linux/const.h>
+#include <linaos/pfn.h>
+#include <linaos/const.h>
 
 /*
  * PAGE_SHIFT determines the page size
@@ -88,7 +88,7 @@ extern struct page *mem_map;
 
 static inline bool pfn_valid(unsigned long pfn)
 {
-	/* avoid <linux/mm.h> include hell */
+	/* avoid <linaos/mm.h> include hell */
 	extern unsigned long max_mapnr;
 	unsigned long pfn_offset = ARCH_PFN_OFFSET;
 

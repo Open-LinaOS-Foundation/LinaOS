@@ -4,13 +4,13 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/bitfield.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitfield.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/regmap.h>
+#include <linaos/module.h>
 
 static DEFINE_MUTEX(measure_lock);
 

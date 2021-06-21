@@ -15,7 +15,7 @@
  * decompression.
  */
 
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 #include "ubifs.h"
 
 /* Fake description object for the "none" compressor */

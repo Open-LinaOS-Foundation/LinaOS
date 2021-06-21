@@ -1,35 +1,35 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright (c) 2013-2020, Mellanox Technologies inc. All rights reserved.
  * Copyright (c) 2020, Intel Corporation. All rights reserved.
  */
 
-#include <linux/debugfs.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/bitmap.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/delay.h>
+#include <linaos/debugfs.h>
+#include <linaos/highmem.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/bitmap.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task.h>
+#include <linaos/delay.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_cache.h>
-#include <linux/mlx5/port.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/eswitch.h>
-#include <linux/list.h>
+#include <linaos/mlx5/port.h>
+#include <linaos/mlx5/vport.h>
+#include <linaos/mlx5/fs.h>
+#include <linaos/mlx5/eswitch.h>
+#include <linaos/list.h>
 #include <rdma/ib_smi.h>
 #include <rdma/ib_umem.h>
 #include <rdma/lag.h>
-#include <linux/in.h>
-#include <linux/etherdevice.h>
+#include <linaos/in.h>
+#include <linaos/etherdevice.h>
 #include "mlx5_ib.h"
 #include "ib_rep.h"
 #include "cmd.h"
@@ -41,7 +41,7 @@
 #include "wr.h"
 #include "restrack.h"
 #include "counters.h"
-#include <linux/mlx5/accel.h>
+#include <linaos/mlx5/accel.h>
 #include <rdma/uverbs_std_types.h>
 #include <rdma/uverbs_ioctl.h>
 #include <rdma/mlx5_user_ioctl_verbs.h>

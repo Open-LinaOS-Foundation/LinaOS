@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2012-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _REGS_V5_H_
 #define _REGS_V5_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define REG_VERSION			0x000
 #define REG_STATUS			0x100

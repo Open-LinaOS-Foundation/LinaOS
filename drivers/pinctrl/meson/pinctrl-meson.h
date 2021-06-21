@@ -5,12 +5,12 @@
  * Copyright (C) 2014 Beniamino Galvani <b.galvani@gmail.com>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
 
 struct meson_pinctrl;
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /* audit.h -- Auditing support
  *
  * Copyright 2003-2004 Red Hat Inc., Durham, North Carolina.
@@ -25,15 +25,15 @@
 #ifndef _UAPI_LINUX_AUDIT_H_
 #define _UAPI_LINUX_AUDIT_H_
 
-#include <linux/types.h>
-#include <linux/elf-em.h>
+#include <linaos/types.h>
+#include <linaos/elf-em.h>
 
 /* The netlink messages for the audit system is divided into blocks:
  * 1000 - 1099 are for commanding the audit system
  * 1100 - 1199 user space trusted application messages
  * 1200 - 1299 messages internal to the audit daemon
  * 1300 - 1399 audit event messages
- * 1400 - 1499 SE Linux use
+ * 1400 - 1499 SE LinaOS use
  * 1500 - 1599 kernel LSPP events
  * 1600 - 1699 kernel crypto events
  * 1700 - 1799 kernel anomaly records
@@ -119,8 +119,8 @@
 #define AUDIT_BPF		1334	/* BPF subsystem */
 #define AUDIT_EVENT_LISTENER	1335	/* Task joined multicast read socket */
 
-#define AUDIT_AVC		1400	/* SE Linux avc denial or grant */
-#define AUDIT_SELINUX_ERR	1401	/* Internal SE Linux Errors */
+#define AUDIT_AVC		1400	/* SE LinaOS avc denial or grant */
+#define AUDIT_SELINUX_ERR	1401	/* Internal SE LinaOS Errors */
 #define AUDIT_AVC_PATH		1402	/* dentry, vfsmount pair from avc */
 #define AUDIT_MAC_POLICY_LOAD	1403	/* Policy file load */
 #define AUDIT_MAC_STATUS	1404	/* Changed enforcing,permissive,off */

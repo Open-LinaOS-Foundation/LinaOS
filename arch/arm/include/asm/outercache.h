@@ -9,7 +9,7 @@
 #ifndef __ASM_OUTERCACHE_H
 #define __ASM_OUTERCACHE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct l2x0_regs;
 

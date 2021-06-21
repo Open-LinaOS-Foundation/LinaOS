@@ -9,19 +9,19 @@
  * Those can be found on Bechhoff CX50xx industrial PCs.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ip.h>
+#include <linaos/skbuff.h>
+#include <linaos/hrtimer.h>
+#include <linaos/interrupt.h>
+#include <linaos/stat.h>
 
 #define TIMER_INTERVAL_NSEC	20000
 

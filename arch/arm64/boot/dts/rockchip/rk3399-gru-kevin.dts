@@ -7,7 +7,7 @@
 
 /dts-v1/;
 #include "rk3399-gru-chromebook.dtsi"
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 
 /*
  * Kevin-specific things
@@ -95,8 +95,8 @@
 		label = "Pen Insert";
 		/* Insert = low, eject = high */
 		gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
-		linux,code = <SW_PEN_INSERTED>;
-		linux,input-type = <EV_SW>;
+		linaos,code = <SW_PEN_INSERTED>;
+		linaos,input-type = <EV_SW>;
 		wakeup-source;
 	};
 };
@@ -228,7 +228,7 @@ ap_i2c_dig: &i2c2 {
 		pinctrl-0 = <&trackpad_int_l>;
 		interrupt-parent = <&gpio1>;
 		interrupts = <4 IRQ_TYPE_LEVEL_LOW>;
-		linux,gpio-keymap = <KEY_RESERVED
+		linaos,gpio-keymap = <KEY_RESERVED
 				     KEY_RESERVED
 				     KEY_RESERVED
 				     BTN_LEFT>;

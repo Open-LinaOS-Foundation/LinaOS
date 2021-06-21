@@ -11,7 +11,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #define ALTINSTR_ENTRY(feature)					              \
 	" .word 661b - .\n"				/* label           */ \

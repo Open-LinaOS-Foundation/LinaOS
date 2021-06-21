@@ -6,18 +6,18 @@
  * Author: Yue Wang <yue.wang@amlogic.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/resource.h>
-#include <linux/types.h>
-#include <linux/phy/phy.h>
-#include <linux/module.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/resource.h>
+#include <linaos/types.h>
+#include <linaos/phy/phy.h>
+#include <linaos/module.h>
 
 #include "pcie-designware.h"
 

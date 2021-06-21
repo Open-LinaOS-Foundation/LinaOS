@@ -9,15 +9,15 @@
  * License terms:
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mfd/dbx500-prcmu.h>
-#include <linux/platform_data/asoc-ux500-msp.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/mfd/dbx500-prcmu.h>
+#include <linaos/platform_data/asoc-ux500-msp.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

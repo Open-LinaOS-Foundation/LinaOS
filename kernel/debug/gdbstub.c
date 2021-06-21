@@ -28,13 +28,13 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/kgdb.h>
-#include <linux/kdb.h>
-#include <linux/serial_core.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kgdb.h>
+#include <linaos/kdb.h>
+#include <linaos/serial_core.h>
+#include <linaos/reboot.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/unaligned.h>
 #include "debug_core.h"
@@ -399,7 +399,7 @@ static void error_packet(char *pkt, int error)
 
 /*
  * Thread ID accessors. We represent a flat TID space to GDB, where
- * the per CPU idle threads (which under Linux all have PID 0) are
+ * the per CPU idle threads (which under LinaOS all have PID 0) are
  * remapped to negative TIDs.
  */
 
@@ -549,7 +549,7 @@ static void gdb_cmd_setregs(struct kgdb_state *ks)
 	if (kgdb_usethread && kgdb_usethread != current) {
 		error_packet(remcom_out_buffer, -EINVAL);
 	} else {
-		gdb_regs_to_pt_regs(gdb_regs, ks->linux_regs);
+		gdb_regs_to_pt_regs(gdb_regs, ks->linaos_regs);
 		strcpy(remcom_out_buffer, "OK");
 	}
 }
@@ -620,7 +620,7 @@ static void gdb_cmd_reg_set(struct kgdb_state *ks)
 	kgdb_hex2long(&ptr, &regnum);
 	if (*ptr++ != '=' ||
 	    !(!kgdb_usethread || kgdb_usethread == current) ||
-	    !dbg_get_reg(regnum, gdb_regs, ks->linux_regs)) {
+	    !dbg_get_reg(regnum, gdb_regs, ks->linaos_regs)) {
 		error_packet(remcom_out_buffer, -EINVAL);
 		return;
 	}
@@ -632,7 +632,7 @@ static void gdb_cmd_reg_set(struct kgdb_state *ks)
 			break;
 	i = i / 2;
 	kgdb_hex2mem(ptr, (char *)gdb_regs, i);
-	dbg_set_reg(regnum, gdb_regs, ks->linux_regs);
+	dbg_set_reg(regnum, gdb_regs, ks->linaos_regs);
 	strcpy(remcom_out_buffer, "OK");
 }
 #endif /* DBG_MAX_REG_NUM > 0 */
@@ -754,12 +754,12 @@ static void gdb_cmd_query(struct kgdb_state *ks)
 		ks->threadid = 0;
 		ptr = remcom_in_buffer + 17;
 		kgdb_hex2long(&ptr, &ks->threadid);
-		if (!getthread(ks->linux_regs, ks->threadid)) {
+		if (!getthread(ks->linaos_regs, ks->threadid)) {
 			error_packet(remcom_out_buffer, -EINVAL);
 			break;
 		}
 		if ((int)ks->threadid > 0) {
-			kgdb_mem2hex(getthread(ks->linux_regs,
+			kgdb_mem2hex(getthread(ks->linaos_regs,
 					ks->threadid)->comm,
 					remcom_out_buffer, 16);
 		} else {
@@ -818,7 +818,7 @@ static void gdb_cmd_task(struct kgdb_state *ks)
 	case 'g':
 		ptr = &remcom_in_buffer[2];
 		kgdb_hex2long(&ptr, &ks->threadid);
-		thread = getthread(ks->linux_regs, ks->threadid);
+		thread = getthread(ks->linaos_regs, ks->threadid);
 		if (!thread && ks->threadid > 0) {
 			error_packet(remcom_out_buffer, -EINVAL);
 			break;
@@ -833,7 +833,7 @@ static void gdb_cmd_task(struct kgdb_state *ks)
 		if (!ks->threadid) {
 			kgdb_contthread = NULL;
 		} else {
-			thread = getthread(ks->linux_regs, ks->threadid);
+			thread = getthread(ks->linaos_regs, ks->threadid);
 			if (!thread && ks->threadid > 0) {
 				error_packet(remcom_out_buffer, -EINVAL);
 				break;
@@ -852,7 +852,7 @@ static void gdb_cmd_thread(struct kgdb_state *ks)
 	struct task_struct *thread;
 
 	kgdb_hex2long(&ptr, &ks->threadid);
-	thread = getthread(ks->linux_regs, ks->threadid);
+	thread = getthread(ks->linaos_regs, ks->threadid);
 	if (thread)
 		strcpy(remcom_out_buffer, "OK");
 	else
@@ -1069,7 +1069,7 @@ default_handle:
 						ks->err_code,
 						remcom_in_buffer,
 						remcom_out_buffer,
-						ks->linux_regs);
+						ks->linaos_regs);
 			/*
 			 * Leave cmd processing on error, detach,
 			 * kill, continue, or single step.
@@ -1103,7 +1103,7 @@ int gdbstub_state(struct kgdb_state *ks, char *cmd)
 						   ks->err_code,
 						   remcom_in_buffer,
 						   remcom_out_buffer,
-						   ks->linux_regs);
+						   ks->linaos_regs);
 		return error;
 	case 's':
 	case 'c':

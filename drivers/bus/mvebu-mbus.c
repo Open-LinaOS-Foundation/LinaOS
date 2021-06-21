@@ -47,18 +47,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mbus.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/debugfs.h>
-#include <linux/log2.h>
-#include <linux/memblock.h>
-#include <linux/syscore_ops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mbus.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/debugfs.h>
+#include <linaos/log2.h>
+#include <linaos/memblock.h>
+#include <linaos/syscore_ops.h>
 
 /*
  * DDR target is the same on all platforms.

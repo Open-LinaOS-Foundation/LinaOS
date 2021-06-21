@@ -3,7 +3,7 @@
 #define __M68K_MMU_CONTEXT_H
 
 #include <asm-generic/mm_hooks.h>
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 #ifdef CONFIG_MMU
 
@@ -166,7 +166,7 @@ end:
 
 #elif defined(CONFIG_SUN3)
 #include <asm/sun3mmu.h>
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 extern unsigned long get_free_context(struct mm_struct *mm);
 extern void clear_context(unsigned long context);

@@ -16,9 +16,9 @@
  *                       & Marcus Metzler for convergence integrated media GmbH
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/dvb/frontend.h>
 #include <asm/types.h>
 
 #include "tua6100.h"

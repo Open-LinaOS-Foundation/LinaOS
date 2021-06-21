@@ -7,12 +7,12 @@
  * Author:Chris Zhong <zyw@rock-chips.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/rk808.h>
-#include <linux/i2c.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/rk808.h>
+#include <linaos/i2c.h>
 
 struct rk808_clkout {
 	struct rk808 *rk808;

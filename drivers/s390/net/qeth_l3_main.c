@@ -10,22 +10,22 @@
 #define KMSG_COMPONENT "qeth"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/bitops.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/ipv6.h>
+#include <linaos/inetdevice.h>
+#include <linaos/igmp.h>
+#include <linaos/slab.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/skbuff.h>
 
 #include <net/ip.h>
 #include <net/arp.h>
@@ -33,7 +33,7 @@
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
 #include <net/iucv/af_iucv.h>
-#include <linux/hashtable.h>
+#include <linaos/hashtable.h>
 
 #include "qeth_l3.h"
 

@@ -8,12 +8,12 @@
  * Copyright (C) 2018 MIPS Tech, LLC
  */
 
-#include <linux/unaligned/access_ok.h>
-#include <linux/cpufeature.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linaos/unaligned/access_ok.h>
+#include <linaos/cpufeature.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
 #include <asm/mipsregs.h>
 
 #include <crypto/internal/hash.h>

@@ -10,7 +10,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/thermal.h>
+#include <linaos/thermal.h>
 #include <trace/events/thermal.h>
 
 #include "thermal_core.h"

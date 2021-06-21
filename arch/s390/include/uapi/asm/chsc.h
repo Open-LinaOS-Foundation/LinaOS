@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * ioctl interface for /dev/chsc
  *
@@ -9,8 +9,8 @@
 #ifndef _ASM_CHSC_H
 #define _ASM_CHSC_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 #include <asm/chpid.h>
 #include <asm/schid.h>
 

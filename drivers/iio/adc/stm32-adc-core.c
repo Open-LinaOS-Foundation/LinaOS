@@ -9,18 +9,18 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdesc.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdesc.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 
 #include "stm32-adc-core.h"
 

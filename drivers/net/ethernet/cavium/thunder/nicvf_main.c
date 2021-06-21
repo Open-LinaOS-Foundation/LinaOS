@@ -3,22 +3,22 @@
  * Copyright (C) 2015 Cavium, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/log2.h>
-#include <linux/prefetch.h>
-#include <linux/irq.h>
-#include <linux/iommu.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/filter.h>
-#include <linux/net_tstamp.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/log2.h>
+#include <linaos/prefetch.h>
+#include <linaos/irq.h>
+#include <linaos/iommu.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/filter.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/workqueue.h>
 
 #include "nic_reg.h"
 #include "nic.h"

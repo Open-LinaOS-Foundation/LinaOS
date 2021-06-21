@@ -11,17 +11,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/reset-controller.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #define BERLIN_MAX_RESETS	32
 

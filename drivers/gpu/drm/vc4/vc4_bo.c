@@ -16,7 +16,7 @@
  * rendering can return quickly.
  */
 
-#include <linux/dma-buf.h>
+#include <linaos/dma-buf.h>
 
 #include "vc4_drv.h"
 #include "uapi/drm/vc4_drm.h"

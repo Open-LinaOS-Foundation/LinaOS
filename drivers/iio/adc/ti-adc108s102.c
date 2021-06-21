@@ -12,18 +12,18 @@
  * The communication with ADC chip is via the SPI bus (mode 3).
  */
 
-#include <linux/acpi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/types.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/acpi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/types.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spi/spi.h>
 
 /*
  * In case of ACPI, we use the hard-wired 5000 mV of the Galileo and IOT2000

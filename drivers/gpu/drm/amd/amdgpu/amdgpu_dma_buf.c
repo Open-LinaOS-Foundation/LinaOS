@@ -37,10 +37,10 @@
 #include "amdgpu_dma_buf.h"
 #include "amdgpu_xgmi.h"
 #include <drm/amdgpu_drm.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-fence-array.h>
-#include <linux/pci-p2pdma.h>
-#include <linux/pm_runtime.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-fence-array.h>
+#include <linaos/pci-p2pdma.h>
+#include <linaos/pm_runtime.h>
 
 /**
  * amdgpu_gem_prime_mmap - &drm_driver.gem_prime_mmap implementation

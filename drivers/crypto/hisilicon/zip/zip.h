@@ -6,7 +6,7 @@
 #undef pr_fmt
 #define pr_fmt(fmt)	"hisi_zip: " fmt
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "../qm.h"
 
 enum hisi_zip_error_type {

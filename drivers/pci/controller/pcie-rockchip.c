@@ -11,13 +11,13 @@
  * ARM PCI Host generic driver.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_pci.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include "../pci.h"
 #include "pcie-rockchip.h"

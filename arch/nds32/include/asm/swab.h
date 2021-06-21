@@ -4,8 +4,8 @@
 #ifndef __NDS32_SWAB_H__
 #define __NDS32_SWAB_H__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 static __inline__ __attribute_const__ __u32 ___arch__swab32(__u32 x)
 {

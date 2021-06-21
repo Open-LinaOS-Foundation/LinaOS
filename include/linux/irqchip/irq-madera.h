@@ -9,8 +9,8 @@
 #ifndef IRQCHIP_MADERA_H
 #define IRQCHIP_MADERA_H
 
-#include <linux/interrupt.h>
-#include <linux/mfd/madera/core.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/madera/core.h>
 
 #define MADERA_IRQ_FLL1_LOCK		0
 #define MADERA_IRQ_FLL2_LOCK		1

@@ -10,15 +10,15 @@
  *          Brad Petrus <brad.petrus@netronome.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/ethtool.h>
-#include <linux/firmware.h>
-#include <linux/sfp.h>
+#include <linaos/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/ethtool.h>
+#include <linaos/firmware.h>
+#include <linaos/sfp.h>
 
 #include "nfpcore/nfp.h"
 #include "nfpcore/nfp_nsp.h"

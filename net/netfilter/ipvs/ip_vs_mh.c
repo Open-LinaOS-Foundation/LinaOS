@@ -20,17 +20,17 @@ https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-eisenbud.pdf
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
 
 #include <net/ip_vs.h>
 
-#include <linux/siphash.h>
-#include <linux/bitops.h>
-#include <linux/gcd.h>
+#include <linaos/siphash.h>
+#include <linaos/bitops.h>
+#include <linaos/gcd.h>
 
 #define IP_VS_SVC_F_SCHED_MH_FALLBACK	IP_VS_SVC_F_SCHED1 /* MH fallback */
 #define IP_VS_SVC_F_SCHED_MH_PORT	IP_VS_SVC_F_SCHED2 /* MH use port */

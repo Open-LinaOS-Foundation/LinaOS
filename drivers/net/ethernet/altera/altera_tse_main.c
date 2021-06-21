@@ -17,24 +17,24 @@
  * Major updates contributed by GlobalLogic
  */
 
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
+#include <linaos/atomic.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/netdevice.h>
+#include <linaos/of_device.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/skbuff.h>
 #include <asm/cacheflush.h>
 
 #include "altera_utils.h"

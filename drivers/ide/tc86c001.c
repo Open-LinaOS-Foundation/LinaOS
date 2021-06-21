@@ -7,10 +7,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
+#include <linaos/module.h>
 
 #define DRV_NAME "tc86c001"
 

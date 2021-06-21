@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* -*- linux-c -*-
+/* -*- linaos-c -*-
  *
  *	$Id: sysrq.h,v 1.3 1997/07/17 11:54:33 mj Exp $
  *
- *	Linux Magic System Request Key Hacks
+ *	LinaOS Magic System Request Key Hacks
  *
  *	(c) 1997 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  *
@@ -15,8 +15,8 @@
 #ifndef _LINUX_SYSRQ_H
 #define _LINUX_SYSRQ_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
 
 /* Possible values of bitmask for enabling sysrq functions */
 /* 0x0001 is reserved for enable everything */

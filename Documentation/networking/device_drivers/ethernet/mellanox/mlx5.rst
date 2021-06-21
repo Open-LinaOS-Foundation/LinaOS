@@ -1,4 +1,4 @@
-.. SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+.. SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 
 =================================================
 Mellanox ConnectX(R) mlx5 core VPI Network Driver

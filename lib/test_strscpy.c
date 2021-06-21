@@ -2,7 +2,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #include "../tools/testing/selftests/kselftest_module.h"
 

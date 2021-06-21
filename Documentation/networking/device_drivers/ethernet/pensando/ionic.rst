@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 ========================================================
-Linux Driver for the Pensando(R) Ethernet adapter family
+LinaOS Driver for the Pensando(R) Ethernet adapter family
 ========================================================
 
-Pensando Linux Ethernet driver.
+Pensando LinaOS Ethernet driver.
 Copyright(c) 2019 Pensando Systems, Inc
 
 Contents
@@ -263,7 +263,7 @@ Firmware port specific::
 Support
 =======
 
-For general Linux networking support, please use the netdev mailing
+For general LinaOS networking support, please use the netdev mailing
 list, which is monitored by Pensando personnel::
 
   netdev@vger.kernel.org

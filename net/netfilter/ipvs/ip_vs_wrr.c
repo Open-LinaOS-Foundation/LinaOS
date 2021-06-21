@@ -2,7 +2,7 @@
 /*
  * IPVS:        Weighted Round-Robin Scheduling module
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linaosvirtualserver.org>
  *
  * Changes:
  *     Wensong Zhang            :     changed the ip_vs_wrr_schedule to return dest
@@ -16,11 +16,11 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/net.h>
-#include <linux/gcd.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/net.h>
+#include <linaos/gcd.h>
 
 #include <net/ip_vs.h>
 

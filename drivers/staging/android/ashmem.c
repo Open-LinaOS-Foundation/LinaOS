@@ -10,20 +10,20 @@
 
 #define pr_fmt(fmt) "ashmem: " fmt
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/falloc.h>
-#include <linux/miscdevice.h>
-#include <linux/security.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
-#include <linux/personality.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/shmem_fs.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/falloc.h>
+#include <linaos/miscdevice.h>
+#include <linaos/security.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/uaccess.h>
+#include <linaos/personality.h>
+#include <linaos/bitops.h>
+#include <linaos/mutex.h>
+#include <linaos/shmem_fs.h>
 #include "ashmem.h"
 
 #define ASHMEM_NAME_PREFIX "dev/ashmem/"

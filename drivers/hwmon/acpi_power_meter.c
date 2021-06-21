@@ -6,18 +6,18 @@
  * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
 
-#include <linux/module.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/kdev_t.h>
-#include <linux/sched.h>
-#include <linux/time.h>
-#include <linux/err.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/mutex.h>
+#include <linaos/dmi.h>
+#include <linaos/slab.h>
+#include <linaos/kdev_t.h>
+#include <linaos/sched.h>
+#include <linaos/time.h>
+#include <linaos/err.h>
+#include <linaos/acpi.h>
 
 #define ACPI_POWER_METER_NAME		"power_meter"
 #define ACPI_POWER_METER_DEVICE_NAME	"Power Meter"

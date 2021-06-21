@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2015 CNEX Labs.  All rights reserved.
  *
@@ -21,15 +21,15 @@
 #define _UAPI_LINUX_LIGHTNVM_H
 
 #ifdef __KERNEL__
-#include <linux/const.h>
+#include <linaos/const.h>
 #else /* __KERNEL__ */
 #include <stdio.h>
 #include <sys/ioctl.h>
 #define DISK_NAME_LEN 32
 #endif /* __KERNEL__ */
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 #define NVM_TTYPE_NAME_MAX 48
 #define NVM_TTYPE_MAX 63

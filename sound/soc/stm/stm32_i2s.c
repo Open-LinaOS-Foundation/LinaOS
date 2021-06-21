@@ -6,16 +6,16 @@
  * Author(s): Olivier Moysan <olivier.moysan@st.com> for STMicroelectronics.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/spinlock.h>
 
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>

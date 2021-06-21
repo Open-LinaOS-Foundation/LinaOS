@@ -795,7 +795,7 @@
 				keypad,num-rows = <8>;
 				keypad,num-columns = <13>;
 				google,needs-ghost-filter;
-				linux,keymap =
+				linaos,keymap =
 					<MATRIX_KEY(0x00, 0x01, KEY_LEFTMETA)
 					 MATRIX_KEY(0x00, 0x02, KEY_F1)
 					 MATRIX_KEY(0x00, 0x03, KEY_B)
@@ -1037,8 +1037,8 @@
 		lid {
 			label = "Lid";
 			gpios = <&gpio TEGRA_GPIO(R, 4) GPIO_ACTIVE_LOW>;
-			linux,input-type = <5>;
-			linux,code = <0>;
+			linaos,input-type = <5>;
+			linaos,code = <0>;
 			debounce-interval = <1>;
 			wakeup-source;
 		};
@@ -1046,7 +1046,7 @@
 		power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(Q, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};

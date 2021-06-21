@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the RISC-V Linux kernel
+# Makefile for the RISC-V LinaOS kernel
 #
 
 ifdef CONFIG_FTRACE
@@ -15,7 +15,7 @@ AFLAGS_kexec_relocate.o := -mcmodel=medany -mno-relax
 endif
 
 extra-y += head.o
-extra-y += vmlinux.lds
+extra-y += vmlinaos.lds
 
 obj-y	+= soc.o
 obj-y	+= cpu.o

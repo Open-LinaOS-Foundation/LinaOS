@@ -8,27 +8,27 @@
  * Copyright (c) 2006 Novell, Inc.
  */
 
-#include <linux/acpi.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fwnode.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/genhd.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/netdevice.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sysfs.h>
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
+#include <linaos/acpi.h>
+#include <linaos/cpufreq.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/fwnode.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/kdev_t.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/genhd.h>
+#include <linaos/mutex.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/netdevice.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sysfs.h>
+#include <linaos/dma-map-ops.h> /* for dma_default_coherent */
 
 #include "base.h"
 #include "power/power.h"

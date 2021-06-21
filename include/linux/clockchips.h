@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/*  linux/include/linux/clockchips.h
+/*  linaos/include/linaos/clockchips.h
  *
  *  This file contains the structure definitions for clockchips.
  *
@@ -11,10 +11,10 @@
 
 #ifdef CONFIG_GENERIC_CLOCKEVENTS
 
-# include <linux/clocksource.h>
-# include <linux/cpumask.h>
-# include <linux/ktime.h>
-# include <linux/notifier.h>
+# include <linaos/clocksource.h>
+# include <linaos/cpumask.h>
+# include <linaos/ktime.h>
+# include <linaos/notifier.h>
 
 struct clock_event_device;
 struct module;

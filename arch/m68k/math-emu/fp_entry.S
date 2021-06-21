@@ -35,7 +35,7 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/entry.h>
 
 #include "fp_emu.h"

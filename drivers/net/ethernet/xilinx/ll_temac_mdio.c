@@ -5,16 +5,16 @@
  * Copyright (c) 2009 Secret Lab Technologies, Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
-#include <linux/phy.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_data/xilinx-ll-temac.h>
+#include <linaos/io.h>
+#include <linaos/netdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/phy.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/of_mdio.h>
+#include <linaos/platform_data/xilinx-ll-temac.h>
 
 #include "ll_temac.h"
 

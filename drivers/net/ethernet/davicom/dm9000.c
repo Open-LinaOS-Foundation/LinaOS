@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *      Davicom DM9000 Fast Ethernet driver for Linux.
+ *      Davicom DM9000 Fast Ethernet driver for LinaOS.
  * 	Copyright (C) 1997  Sten Wang
  *
  * (C) Copyright 1997-1998 DAVICOM Semiconductor,Inc. All Rights Reserved.
@@ -10,26 +10,26 @@
  *	Sascha Hauer <s.hauer@pengutronix.de>
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/ethtool.h>
-#include <linux/dm9000.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/crc32.h>
+#include <linaos/mii.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
+#include <linaos/ethtool.h>
+#include <linaos/dm9000.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/of_gpio.h>
 
 #include <asm/delay.h>
 #include <asm/irq.h>

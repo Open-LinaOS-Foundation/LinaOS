@@ -26,20 +26,20 @@
  * <zaitcev> Sounds reasonable
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/pci.h>		/* struct pci_dev */
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-map-ops.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>		/* struct pci_dev */
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/of_device.h>
 
 #include <asm/io.h>
 #include <asm/vaddrs.h>

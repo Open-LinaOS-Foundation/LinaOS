@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6397/rtc.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/mt6397/core.h>
+#include <linaos/mfd/mt6397/rtc.h>
 
 struct mt6323_pwrc {
 	struct device *dev;

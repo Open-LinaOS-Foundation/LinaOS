@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* iptables module for using NFQUEUE mechanism
  *
  * (C) 2005 Harald Welte <laforge@netfilter.org>
@@ -9,7 +9,7 @@
 #ifndef _XT_NFQ_TARGET_H
 #define _XT_NFQ_TARGET_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* target info */
 struct xt_NFQ_info {

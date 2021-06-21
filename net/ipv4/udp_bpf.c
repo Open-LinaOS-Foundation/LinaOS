@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Cloudflare Ltd https://cloudflare.com */
 
-#include <linux/skmsg.h>
+#include <linaos/skmsg.h>
 #include <net/sock.h>
 #include <net/udp.h>
 #include <net/inet_common.h>

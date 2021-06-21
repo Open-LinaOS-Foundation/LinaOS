@@ -15,13 +15,13 @@
  *  Released under the GPLv2.
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/usb/iowarrior.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/mutex.h>
+#include <linaos/poll.h>
+#include <linaos/usb/iowarrior.h>
 
 #define DRIVER_AUTHOR "Christian Lucht <lucht@codemercs.com>"
 #define DRIVER_DESC "USB IO-Warrior driver"

@@ -7,19 +7,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/if_arp.h>
-#include <linux/timer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/netdevice.h>
+#include <linaos/string.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/if_arp.h>
+#include <linaos/timer.h>
 #include <net/rtnetlink.h>
-#include <linux/pkt_sched.h>
+#include <linaos/pkt_sched.h>
 #include <net/caif/caif_layer.h>
 #include <net/caif/caif_hsi.h>
 

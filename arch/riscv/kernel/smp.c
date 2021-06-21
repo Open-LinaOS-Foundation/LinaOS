@@ -8,16 +8,16 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/cpu.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/profile.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/irq_work.h>
+#include <linaos/cpu.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/profile.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/delay.h>
+#include <linaos/irq_work.h>
 
 #include <asm/sbi.h>
 #include <asm/tlbflush.h>

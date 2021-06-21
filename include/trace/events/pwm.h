@@ -5,8 +5,8 @@
 #if !defined(_TRACE_PWM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PWM_H
 
-#include <linux/pwm.h>
-#include <linux/tracepoint.h>
+#include <linaos/pwm.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(pwm,
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2016-2020 Intel Corporation. All rights reserved. */
 
-#include <linux/jump_label.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/jump_label.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include <asm/mce.h>
 

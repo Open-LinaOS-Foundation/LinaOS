@@ -46,7 +46,7 @@
   * CPUs, e.g. ~4.8% faster ChaCha20 on Cortex-A7.
   */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/cache.h>
 
 	.text

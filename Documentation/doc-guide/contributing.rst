@@ -126,7 +126,7 @@ resulting patch looked like this::
 
 The entire process only took a few minutes.  Of course, I then found that
 somebody else had fixed it in a separate tree, highlighting another lesson:
-always check linux-next to see if a problem has been fixed before you dig
+always check linaos-next to see if a problem has been fixed before you dig
 into it.
 
 Other fixes will take longer, especially those relating to structure
@@ -225,7 +225,7 @@ document may lead them astray.
 Documentation coherency
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The old-timers around here will remember the Linux books that showed up on
+The old-timers around here will remember the LinaOS books that showed up on
 the shelves in the 1990s.  They were simply collections of documentation
 files scrounged from various locations on the net.  The books have (mostly)
 improved since then, but the kernel's documentation is still mostly built

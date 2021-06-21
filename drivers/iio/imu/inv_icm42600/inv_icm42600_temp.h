@@ -6,7 +6,7 @@
 #ifndef INV_ICM42600_TEMP_H_
 #define INV_ICM42600_TEMP_H_
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 
 #define INV_ICM42600_TEMP_CHAN(_index)					\
 	{								\

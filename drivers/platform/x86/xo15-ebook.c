@@ -9,12 +9,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/input.h>
+#include <linaos/acpi.h>
 
 #define MODULE_NAME "xo15-ebook"
 

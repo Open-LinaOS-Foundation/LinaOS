@@ -33,28 +33,28 @@
 #define DRV_NAME	"fmvj18x_cs"
 #define DRV_VERSION	"2.9"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/ioport.h>
+#include <linaos/crc32.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ciscode.h>
 #include <pcmcia/ds.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 /*====================================================================*/

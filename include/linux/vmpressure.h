@@ -2,13 +2,13 @@
 #ifndef __LINUX_VMPRESSURE_H
 #define __LINUX_VMPRESSURE_H
 
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/cgroup.h>
-#include <linux/eventfd.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/gfp.h>
+#include <linaos/types.h>
+#include <linaos/cgroup.h>
+#include <linaos/eventfd.h>
 
 struct vmpressure {
 	unsigned long scanned;

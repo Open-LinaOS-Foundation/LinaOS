@@ -4,11 +4,11 @@
  * Copyright 2016 ZTE Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
 
 #include <video/videomode.h>
 

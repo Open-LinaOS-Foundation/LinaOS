@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /* BMP280 specific registers */
 #define BMP280_REG_HUMIDITY_LSB		0xFE

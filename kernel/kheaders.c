@@ -6,10 +6,10 @@
  * (Borrowed code from kernel/configs.c)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kobject.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kobject.h>
+#include <linaos/init.h>
 
 /*
  * Define kernel_headers_data and kernel_headers_data_end, within which the

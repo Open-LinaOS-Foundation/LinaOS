@@ -4,7 +4,7 @@
  * Copyright (C) 2005 Anthony Liguori <aliguori@us.ibm.com>
  * Copyright (C) 2006-2008 Red Hat, Inc., Markus Armbruster <armbru@redhat.com>
  *
- *  Based on linux/drivers/input/mouse/sermouse.c
+ *  Based on linaos/drivers/input/mouse/sermouse.c
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License. See the file COPYING in the main directory of this archive for
@@ -13,12 +13,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/slab.h>
 
 #include <asm/xen/hypervisor.h>
 

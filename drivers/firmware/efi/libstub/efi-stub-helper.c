@@ -9,10 +9,10 @@
 
 #include <stdarg.h>
 
-#include <linux/ctype.h>
-#include <linux/efi.h>
-#include <linux/kernel.h>
-#include <linux/printk.h> /* For CONSOLE_LOGLEVEL_* */
+#include <linaos/ctype.h>
+#include <linaos/efi.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h> /* For CONSOLE_LOGLEVEL_* */
 #include <asm/efi.h>
 #include <asm/setup.h>
 
@@ -526,7 +526,7 @@ void *get_efi_config_table(efi_guid_t guid)
  * The LINUX_EFI_INITRD_MEDIA_GUID vendor media device path below provides a way
  * for the firmware or bootloader to expose the initrd data directly to the stub
  * via the trivial LoadFile2 protocol, which is defined in the UEFI spec, and is
- * very easy to implement. It is a simple Linux initrd specific conduit between
+ * very easy to implement. It is a simple LinaOS initrd specific conduit between
  * kernel and firmware, allowing us to put the EFI stub (being part of the
  * kernel) in charge of where and when to load the initrd, while leaving it up
  * to the firmware to decide whether it needs to expose its filesystem hierarchy
@@ -551,7 +551,7 @@ static const struct {
 };
 
 /**
- * efi_load_initrd_dev_path() - load the initrd from the Linux initrd device path
+ * efi_load_initrd_dev_path() - load the initrd from the LinaOS initrd device path
  * @load_addr:	pointer to store the address where the initrd was loaded
  * @load_size:	pointer to store the size of the loaded initrd
  * @max:	upper limit for the initrd memory allocation

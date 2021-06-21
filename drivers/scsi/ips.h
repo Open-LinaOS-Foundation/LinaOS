@@ -43,15 +43,15 @@
 /* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA */
 /*                                                                           */
 /* Bugs/Comments/Suggestions should be mailed to:                            */
-/*      ipslinux@adaptec.com                                                 */
+/*      ipslinaos@adaptec.com                                                 */
 /*                                                                           */
 /*****************************************************************************/
 
 #ifndef _IPS_H_
    #define _IPS_H_
 
-#include <linux/nmi.h>
-#include <linux/uaccess.h>
+#include <linaos/nmi.h>
+#include <linaos/uaccess.h>
    #include <asm/io.h>
 
    /*

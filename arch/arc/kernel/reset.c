@@ -3,10 +3,10 @@
  * Copyright (C) 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/reboot.h>
-#include <linux/pm.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h>
+#include <linaos/reboot.h>
+#include <linaos/pm.h>
 
 void machine_halt(void)
 {

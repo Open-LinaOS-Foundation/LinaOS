@@ -7,11 +7,11 @@
  * Copyright (C) 1994 - 2000 Ralf Baechle
  * Copyright (C) 2006 Thomas Bogendoerfer
  */
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
 
 #include <asm/i8259.h>
 #include <asm/io.h>

@@ -2,15 +2,15 @@
 /*
  * Copyright 2016 Broadcom
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/mdio-mux.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/iopoll.h>
+#include <linaos/mdio-mux.h>
+#include <linaos/module.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
 
 #define MDIO_RATE_ADJ_EXT_OFFSET	0x000
 #define MDIO_RATE_ADJ_INT_OFFSET	0x004

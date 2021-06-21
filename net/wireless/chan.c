@@ -9,8 +9,8 @@
  * Copyright 2018-2020	Intel Corporation
  */
 
-#include <linux/export.h>
-#include <linux/bitfield.h>
+#include <linaos/export.h>
+#include <linaos/bitfield.h>
 #include <net/cfg80211.h>
 #include "core.h"
 #include "rdev-ops.h"

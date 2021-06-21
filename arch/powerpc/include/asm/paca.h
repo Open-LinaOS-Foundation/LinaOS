@@ -12,7 +12,7 @@
 
 #ifdef CONFIG_PPC64
 
-#include <linux/string.h>
+#include <linaos/string.h>
 #include <asm/types.h>
 #include <asm/lppaca.h>
 #include <asm/mmu.h>
@@ -36,7 +36,7 @@
 register struct paca_struct *local_paca asm("r13");
 
 #if defined(CONFIG_DEBUG_PREEMPT) && defined(CONFIG_SMP)
-extern unsigned int debug_smp_processor_id(void); /* from linux/smp.h */
+extern unsigned int debug_smp_processor_id(void); /* from linaos/smp.h */
 /*
  * Add standard checks that preemption cannot occur when using get_paca():
  * otherwise the paca_struct it points to may be the wrong one just after.

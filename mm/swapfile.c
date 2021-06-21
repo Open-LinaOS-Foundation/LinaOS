@@ -1,48 +1,48 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/swapfile.c
+ *  linaos/mm/swapfile.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  *  Swap reorganised 29.12.95, Stephen Tweedie
  */
 
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/shmem_fs.h>
-#include <linux/blkdev.h>
-#include <linux/random.h>
-#include <linux/writeback.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/security.h>
-#include <linux/backing-dev.h>
-#include <linux/mutex.h>
-#include <linux/capability.h>
-#include <linux/syscalls.h>
-#include <linux/memcontrol.h>
-#include <linux/poll.h>
-#include <linux/oom.h>
-#include <linux/frontswap.h>
-#include <linux/swapfile.h>
-#include <linux/export.h>
-#include <linux/swap_slots.h>
-#include <linux/sort.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task.h>
+#include <linaos/hugetlb.h>
+#include <linaos/mman.h>
+#include <linaos/slab.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/swap.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/namei.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/blkdev.h>
+#include <linaos/random.h>
+#include <linaos/writeback.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/ksm.h>
+#include <linaos/rmap.h>
+#include <linaos/security.h>
+#include <linaos/backing-dev.h>
+#include <linaos/mutex.h>
+#include <linaos/capability.h>
+#include <linaos/syscalls.h>
+#include <linaos/memcontrol.h>
+#include <linaos/poll.h>
+#include <linaos/oom.h>
+#include <linaos/frontswap.h>
+#include <linaos/swapfile.h>
+#include <linaos/export.h>
+#include <linaos/swap_slots.h>
+#include <linaos/sort.h>
 
 #include <asm/tlbflush.h>
-#include <linux/swapops.h>
-#include <linux/swap_cgroup.h>
+#include <linaos/swapops.h>
+#include <linaos/swap_cgroup.h>
 
 static bool swap_count_continued(struct swap_info_struct *, pgoff_t,
 				 unsigned char);

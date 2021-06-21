@@ -5,7 +5,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "rc-core-priv.h"
 
 #define IMON_UNIT		416 /* us */

@@ -3,11 +3,11 @@
  * Copyright (C) 2015-2016 Mentor Graphics
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/watchdog.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/watchdog.h>
 
 #include "watchdog_pretimeout.h"
 

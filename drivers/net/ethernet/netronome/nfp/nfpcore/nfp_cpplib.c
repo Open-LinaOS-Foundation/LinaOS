@@ -10,12 +10,12 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
 
 #include "nfp_cpp.h"
 #include "nfp6000/nfp6000.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux NET3:	Internet Group Management Protocol  [IGMP]
+ *	LinaOS NET3:	Internet Group Management Protocol  [IGMP]
  *
  *	This code implements the IGMP protocol as defined in RFC1112. There has
  *	been a further revision of this protocol since which is now supported.
@@ -66,26 +66,26 @@
  *					Vinay Kulkarni
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/times.h>
-#include <linux/pkt_sched.h>
-#include <linux/byteorder/generic.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/string.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/inetdevice.h>
+#include <linaos/igmp.h>
+#include <linaos/if_arp.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/times.h>
+#include <linaos/pkt_sched.h>
+#include <linaos/byteorder/generic.h>
 
 #include <net/net_namespace.h>
 #include <net/arp.h>
@@ -95,13 +95,13 @@
 #include <net/sock.h>
 #include <net/checksum.h>
 #include <net/inet_common.h>
-#include <linux/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv4.h>
 #ifdef CONFIG_IP_MROUTE
-#include <linux/mroute.h>
+#include <linaos/mroute.h>
 #endif
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #endif
 
 #ifdef CONFIG_IP_MULTICAST

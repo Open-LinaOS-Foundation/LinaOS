@@ -4,29 +4,29 @@
  *
  * Copyright (C) 2015, Intel Corporation
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
- *          Heikki Krogerus <heikki.krogerus@linux.intel.com>
- *          Jarkko Nikula <jarkko.nikula@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
+ *          Heikki Krogerus <heikki.krogerus@linaos.intel.com>
+ *          Jarkko Nikula <jarkko.nikula@linaos.intel.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/debugfs.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/debugfs.h>
+#include <linaos/idr.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mfd/core.h>
+#include <linaos/pm_qos.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/seq_file.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
-#include <linux/dma/idma64.h>
+#include <linaos/dma/idma64.h>
 
 #include "intel-lpss.h"
 
@@ -527,10 +527,10 @@ static void __exit intel_lpss_exit(void)
 }
 module_exit(intel_lpss_exit);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
-MODULE_AUTHOR("Jarkko Nikula <jarkko.nikula@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linaos.intel.com>");
+MODULE_AUTHOR("Jarkko Nikula <jarkko.nikula@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel LPSS core driver");
 MODULE_LICENSE("GPL v2");
 /*

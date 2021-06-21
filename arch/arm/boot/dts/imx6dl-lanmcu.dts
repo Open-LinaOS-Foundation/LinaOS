@@ -64,7 +64,7 @@
 			label = "debug0";
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -228,7 +228,7 @@
 &uart2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart2>;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	uart-has-rtscts;
 	status = "okay";
 };
@@ -236,7 +236,7 @@
 &uart3 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart3>;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	uart-has-rtscts;
 	status = "okay";
 };

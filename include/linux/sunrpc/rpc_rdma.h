@@ -42,8 +42,8 @@
 #ifndef _LINUX_SUNRPC_RPC_RDMA_H
 #define _LINUX_SUNRPC_RPC_RDMA_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
 
 #define RPCRDMA_VERSION		1
 #define rpcrdma_version		cpu_to_be32(RPCRDMA_VERSION)

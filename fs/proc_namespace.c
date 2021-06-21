@@ -7,11 +7,11 @@
  * fs/namespace.c, thus here instead of fs/proc
  *
  */
-#include <linux/mnt_namespace.h>
-#include <linux/nsproxy.h>
-#include <linux/security.h>
-#include <linux/fs_struct.h>
-#include <linux/sched/task.h>
+#include <linaos/mnt_namespace.h>
+#include <linaos/nsproxy.h>
+#include <linaos/security.h>
+#include <linaos/fs_struct.h>
+#include <linaos/sched/task.h>
 
 #include "proc/internal.h" /* only for get_proc_task() in ->open() */
 

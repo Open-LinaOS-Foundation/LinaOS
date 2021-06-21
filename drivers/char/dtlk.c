@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/*                                              -*- linux-c -*-
- * dtlk.c - DoubleTalk PC driver for Linux
+/*                                              -*- linaos-c -*-
+ * dtlk.c - DoubleTalk PC driver for LinaOS
  *
  * Original author: Chris Pallotta <chris@allmedia.com>
  * Current maintainer: Jim Van Zandt <jrv@vanzandt.mv.com>
@@ -48,23 +48,23 @@
 
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #define KERNEL
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/errno.h>	/* for -EBUSY */
-#include <linux/ioport.h>	/* for request_region */
-#include <linux/delay.h>	/* for loops_per_jiffy */
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>	/* for -EBUSY */
+#include <linaos/ioport.h>	/* for request_region */
+#include <linaos/delay.h>	/* for loops_per_jiffy */
+#include <linaos/sched.h>
+#include <linaos/mutex.h>
 #include <asm/io.h>		/* for inb_p, outb_p, inb, outb, etc. */
-#include <linux/uaccess.h>	/* for get_user, etc. */
-#include <linux/wait.h>		/* for wait_queue */
-#include <linux/init.h>		/* for __init, module_{init,exit} */
-#include <linux/poll.h>		/* for EPOLLIN, etc. */
-#include <linux/dtlk.h>		/* local header file for DoubleTalk values */
+#include <linaos/uaccess.h>	/* for get_user, etc. */
+#include <linaos/wait.h>		/* for wait_queue */
+#include <linaos/init.h>		/* for __init, module_{init,exit} */
+#include <linaos/poll.h>		/* for EPOLLIN, etc. */
+#include <linaos/dtlk.h>		/* local header file for DoubleTalk values */
 
 #ifdef TRACING
 #define TRACE_TEXT(str) printk(str);

@@ -8,29 +8,29 @@
  * Copyright (C) 2004 Pengutronix
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/rational.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/platform_device.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/ktime.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/rational.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/irq.h>
-#include <linux/platform_data/dma-imx.h>
+#include <linaos/platform_data/dma-imx.h>
 
 #include "serial_mctrl_gpio.h"
 

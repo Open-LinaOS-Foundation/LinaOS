@@ -6,14 +6,14 @@
  *
  * Derived from wistron button driver:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinaos.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
 
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 MODULE_AUTHOR("Dmitry Torokhov <dtor@mail.ru>");
 MODULE_DESCRIPTION("Generic support for sparse keymaps");

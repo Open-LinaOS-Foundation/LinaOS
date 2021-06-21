@@ -4,7 +4,7 @@
  * Copyright (C) 1999, 2000, 2004 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asi.h>
 #include <asm/export.h>
 

@@ -5,10 +5,10 @@
  * Copyright (C) 1998 Harald Koerfgen
  * Copyright (C) 2002, 2004  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include <asm/bootinfo.h>
 #include <asm/dec/prom.h>

@@ -7,9 +7,9 @@
  * Author(s) :  Ryan S. Arnold <rsa@us.ibm.com>
  *
  * This is the device driver for the IBM Hypervisor Virtual Console Server,
- * "hvcs".  The IBM hvcs provides a tty driver interface to allow Linux
+ * "hvcs".  The IBM hvcs provides a tty driver interface to allow LinaOS
  * user space applications access to the system consoles of logically
- * partitioned operating systems, e.g. Linux, running on the same partitioned
+ * partitioned operating systems, e.g. LinaOS, running on the same partitioned
  * Power5 ppc64 system.  Physical hardware consoles per partition are not
  * practical on this hardware so system consoles are accessed by this driver
  * using inter-partition firmware interfaces to virtual terminal devices.
@@ -19,7 +19,7 @@
  * to act as a partitioned OS's console device.
  *
  * Firmware dynamically (via hotplug) exposes vty-servers to a running ppc64
- * Linux system upon their creation by the HMC or their exposure during boot.
+ * LinaOS system upon their creation by the HMC or their exposure during boot.
  * The non-user interactive backend of this driver is implemented as a vio
  * device driver so that it can receive notification of vty-server lifetimes
  * after it registers with the vio bus to handle vty-server probe and remove
@@ -27,7 +27,7 @@
  *
  * Many vty-servers can be configured to connect to one vty, but a vty can
  * only be actively connected to by a single vty-server, in any manner, at one
- * time.  If the HMC is currently hosting the console for a target Linux
+ * time.  If the HMC is currently hosting the console for a target LinaOS
  * partition; attempts to open the tty device to the partition's console using
  * the hvcs on any partition will return -EBUSY with every open attempt until
  * the HMC frees the connection between its vty-server and the desired
@@ -44,31 +44,31 @@
  * rescanning partner information upon a user's request.
  *
  * Each vty-server, prior to being exposed to this driver is reference counted
- * using the 2.6 Linux kernel kref construct.
+ * using the 2.6 LinaOS kernel kref construct.
  *
  * For direction on installation and usage of this driver please reference
  * Documentation/powerpc/hvcs.rst.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/kthread.h>
-#include <linux/list.h>
-#include <linux/major.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/kthread.h>
+#include <linaos/list.h>
+#include <linaos/major.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/stat.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 #include <asm/hvconsole.h>
 #include <asm/hvcserver.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/vio.h>
 
 /*
@@ -126,7 +126,7 @@ MODULE_VERSION(HVCS_DRIVER_VERSION);
 #define HVCS_CLOSE_WAIT (HZ/100) /* 1/10 of a second */
 
 /*
- * Since the Linux TTY code does not currently (2-04-2004) support dynamic
+ * Since the LinaOS TTY code does not currently (2-04-2004) support dynamic
  * addition of tty derived devices and we shouldn't allocate thousands of
  * tty_device pointers when the number of vty-server & vty partner connections
  * will most often be much lower than this, we'll arbitrarily allocate
@@ -143,7 +143,7 @@ MODULE_VERSION(HVCS_DRIVER_VERSION);
 #define HVCS_MAX_SERVER_ADAPTERS	1024
 
 /*
- * We let Linux assign us a major number and we start the minors at zero.  There
+ * We let LinaOS assign us a major number and we start the minors at zero.  There
  * is no intuitive mapping between minor number and the target vty-server
  * adapter except that each new vty-server adapter is always assigned to the
  * smallest minor number available.

@@ -3,9 +3,9 @@
  *  Copyright (C) 2020 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/if_ether.h>
-#include <linux/rhashtable.h>
-#include <linux/ip.h>
+#include <linaos/if_ether.h>
+#include <linaos/rhashtable.h>
+#include <linaos/ip.h>
 #include <net/flow_offload.h>
 #include <net/pkt_cls.h>
 #include <net/dsa.h>

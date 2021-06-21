@@ -10,7 +10,7 @@
  *		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *		Arnt Gulbrandsen, <agulbra@nvg.unit.no>
  *		Alan Cox, <alan@lxorguk.ukuu.org.uk>
- *		Hirokazu Takahashi, <taka@valinux.co.jp>
+ *		Hirokazu Takahashi, <taka@valinaos.co.jp>
  *
  * Fixes:
  *		Alan Cox	:	verify_area() calls
@@ -74,29 +74,29 @@
 
 #define pr_fmt(fmt) "UDP: " fmt
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/ioctls.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/highmem.h>
+#include <linaos/swap.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/module.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/igmp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/in.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
 #include <net/tcp_states.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/skbuff.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include <net/net_namespace.h>
 #include <net/icmp.h>
 #include <net/inet_hashtables.h>
@@ -105,8 +105,8 @@
 #include <net/checksum.h>
 #include <net/xfrm.h>
 #include <trace/events/udp.h>
-#include <linux/static_key.h>
-#include <linux/btf_ids.h>
+#include <linaos/static_key.h>
+#include <linaos/btf_ids.h>
 #include <trace/events/skb.h>
 #include <net/busy_poll.h>
 #include "udp_impl.h"

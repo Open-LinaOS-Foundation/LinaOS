@@ -9,7 +9,7 @@
  */
 
 #include <sound/asound.h>
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #define snd_timer_chip(timer) ((timer)->private_data)
 

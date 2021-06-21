@@ -10,7 +10,7 @@
 #ifndef _EBCDIC_H
 #define _EBCDIC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern __u8 _ascebc_500[256];   /* ASCII -> EBCDIC 500 conversion table */
 extern __u8 _ebcasc_500[256];   /* EBCDIC 500 -> ASCII conversion table */

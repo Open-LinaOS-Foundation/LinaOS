@@ -18,7 +18,7 @@
 
 #include "pblk.h"
 #include "pblk-trace.h"
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 
 static void pblk_gc_free_gc_rq(struct pblk_gc_rq *gc_rq)

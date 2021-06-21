@@ -13,8 +13,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bits.h>
-#include <linux/stringify.h>
+#include <linaos/bits.h>
+#include <linaos/stringify.h>
 
 /*
  * cmpxchg

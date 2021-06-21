@@ -2,7 +2,7 @@
 #ifndef __KVM_X86_VMX_EVMCS_H
 #define __KVM_X86_VMX_EVMCS_H
 
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 #include <asm/hyperv-tlfs.h>
 #include <asm/mshyperv.h>

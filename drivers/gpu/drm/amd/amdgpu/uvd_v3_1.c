@@ -22,7 +22,7 @@
  * Authors: Sonny Jiang <sonny.jiang@amd.com>
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include "amdgpu.h"
 #include "amdgpu_uvd.h"

@@ -108,7 +108,7 @@
 		wifi {
 			label = "l-50:green:wifi";
 			gpios = <&gpio2 7 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "phy0tpt";
+			linaos,default-trigger = "phy0tpt";
 		};
 
 		internet_green {
@@ -124,7 +124,7 @@
 		usb1_green {
 			label = "l-50:green:usb1";
 			gpios = <&gpio2 0 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "usbport";
+			linaos,default-trigger = "usbport";
 			trigger-sources = <&hub_port3>;
 		};
 
@@ -136,7 +136,7 @@
 		usb2_green {
 			label = "l-50:green:usb2";
 			gpios = <&gpio2 2 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "usbport";
+			linaos,default-trigger = "usbport";
 			trigger-sources = <&hub_port1>;
 		};
 
@@ -194,7 +194,7 @@
 		factory_defaults {
 			label = "factory_defaults";
 			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 		};
 	};
 };

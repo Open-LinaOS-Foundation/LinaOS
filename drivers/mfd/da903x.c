@@ -9,13 +9,13 @@
  *	Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/mfd/da903x.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/da903x.h>
+#include <linaos/slab.h>
 
 #define DA9030_CHIP_ID		0x00
 #define DA9030_EVENT_A		0x01

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-mmp/mmp2.c
+ * linaos/arch/arm/mach-mmp/mmp2.c
  *
  * code name MMP2
  *
  * Copyright (C) 2009 Marvell International Ltd.
  */
-#include <linux/clk/mmp.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip/mmp.h>
-#include <linux/platform_device.h>
+#include <linaos/clk/mmp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip/mmp.h>
+#include <linaos/platform_device.h>
 
 #include <asm/hardware/cache-tauros2.h>
 
 #include <asm/mach/time.h>
 #include "addr-map.h"
 #include "regs-apbc.h"
-#include <linux/soc/mmp/cputype.h>
+#include <linaos/soc/mmp/cputype.h>
 #include "irqs.h"
 #include "mfp.h"
 #include "devices.h"

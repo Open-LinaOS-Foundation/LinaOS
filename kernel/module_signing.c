@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/module_signature.h>
-#include <linux/string.h>
-#include <linux/verification.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/module_signature.h>
+#include <linaos/string.h>
+#include <linaos/verification.h>
 #include <crypto/public_key.h>
 #include "module-internal.h"
 

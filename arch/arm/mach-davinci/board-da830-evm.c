@@ -9,29 +9,29 @@
  * is licensed "as is" without any warranty of any kind, whether express
  * or implied.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/pcf857x.h>
-#include <linux/property.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
-#include <linux/platform_data/spi-davinci.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/platform_data/ti-aemif.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/nvmem-provider.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/pcf857x.h>
+#include <linaos/property.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/flash.h>
+#include <linaos/platform_data/gpio-davinci.h>
+#include <linaos/platform_data/mtd-davinci.h>
+#include <linaos/platform_data/mtd-davinci-aemif.h>
+#include <linaos/platform_data/spi-davinci.h>
+#include <linaos/platform_data/usb-davinci.h>
+#include <linaos/platform_data/ti-aemif.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/nvmem-provider.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

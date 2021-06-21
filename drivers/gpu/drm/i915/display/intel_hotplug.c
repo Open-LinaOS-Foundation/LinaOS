@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "i915_drv.h"
 #include "intel_display_types.h"

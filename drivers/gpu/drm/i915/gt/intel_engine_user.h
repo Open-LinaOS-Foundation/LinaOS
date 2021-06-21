@@ -6,7 +6,7 @@
 #ifndef INTEL_ENGINE_USER_H
 #define INTEL_ENGINE_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct intel_engine_cs;

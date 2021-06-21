@@ -4,11 +4,11 @@
 #ifndef _IP_SET_HASH_GEN_H
 #define _IP_SET_HASH_GEN_H
 
-#include <linux/rcupdate.h>
-#include <linux/jhash.h>
-#include <linux/types.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/ipset/ip_set.h>
+#include <linaos/rcupdate.h>
+#include <linaos/jhash.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/ipset/ip_set.h>
 
 #define __ipset_dereference(p)		\
 	rcu_dereference_protected(p, 1)

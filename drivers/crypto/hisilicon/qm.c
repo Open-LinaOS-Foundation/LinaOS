@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 HiSilicon Limited. */
 #include <asm/page.h>
-#include <linux/acpi.h>
-#include <linux/aer.h>
-#include <linux/bitmap.h>
-#include <linux/debugfs.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
-#include <linux/log2.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uacce.h>
-#include <linux/uaccess.h>
+#include <linaos/acpi.h>
+#include <linaos/aer.h>
+#include <linaos/bitmap.h>
+#include <linaos/debugfs.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/idr.h>
+#include <linaos/io.h>
+#include <linaos/irqreturn.h>
+#include <linaos/log2.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/uacce.h>
+#include <linaos/uaccess.h>
 #include <uapi/misc/uacce/hisi_qm.h>
 #include "qm.h"
 

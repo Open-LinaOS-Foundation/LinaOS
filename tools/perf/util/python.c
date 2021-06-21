@@ -3,7 +3,7 @@
 #include <structmember.h>
 #include <inttypes.h>
 #include <poll.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <perf/cpumap.h>
 #include <traceevent/event-parse.h>
 #include <perf/mmap.h>

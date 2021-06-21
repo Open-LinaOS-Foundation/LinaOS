@@ -8,7 +8,7 @@
  * Copyright (C) 2004  Paul Mundt
  * Copyright (C) 2007  Nobuhiro Iwamatsu
  */
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <mach/lboxre2.h>
 #include <mach/r2d.h>
 #include "pci-sh4.h"

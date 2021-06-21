@@ -6,16 +6,16 @@
  * Copyright (C) 2005 David Brownell
  */
 
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/parser.h>
-#include <linux/suspend.h>
+#include <linaos/genalloc.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/parser.h>
+#include <linaos/suspend.h>
 
-#include <linux/clk/at91_pmc.h>
-#include <linux/platform_data/atmel.h>
+#include <linaos/clk/at91_pmc.h>
+#include <linaos/platform_data/atmel.h>
 
 #include <soc/at91/pm.h>
 

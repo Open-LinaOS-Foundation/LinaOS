@@ -5,7 +5,7 @@
  * Copyright (c) 2000-2002 Helge Deller, Matthew Wilcox
  */
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include <asm/hardware.h>
 #include <asm/parisc-device.h>
 

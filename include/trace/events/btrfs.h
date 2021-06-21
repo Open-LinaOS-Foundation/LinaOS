@@ -5,8 +5,8 @@
 #if !defined(_TRACE_BTRFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_BTRFS_H
 
-#include <linux/writeback.h>
-#include <linux/tracepoint.h>
+#include <linaos/writeback.h>
+#include <linaos/tracepoint.h>
 #include <trace/events/mmflags.h>
 
 struct btrfs_root;

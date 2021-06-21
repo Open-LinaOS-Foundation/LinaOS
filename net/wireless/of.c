@@ -14,7 +14,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/of.h>
+#include <linaos/of.h>
 #include <net/cfg80211.h>
 #include "core.h"
 

@@ -4,12 +4,12 @@
  * Based almost entirely upon the powerpc iommu allocator.
  */
 
-#include <linux/export.h>
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/iommu-helper.h>
-#include <linux/dma-mapping.h>
-#include <linux/hash.h>
+#include <linaos/export.h>
+#include <linaos/bitmap.h>
+#include <linaos/bug.h>
+#include <linaos/iommu-helper.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/hash.h>
 #include <asm/iommu-common.h>
 
 static unsigned long iommu_large_alloc = 15;

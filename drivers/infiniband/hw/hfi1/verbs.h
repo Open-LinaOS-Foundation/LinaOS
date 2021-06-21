@@ -48,15 +48,15 @@
 #ifndef HFI1_VERBS_H
 #define HFI1_VERBS_H
 
-#include <linux/types.h>
-#include <linux/seqlock.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/seqlock.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/kref.h>
+#include <linaos/workqueue.h>
+#include <linaos/kthread.h>
+#include <linaos/completion.h>
+#include <linaos/slab.h>
 #include <rdma/ib_pack.h>
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_mad.h>

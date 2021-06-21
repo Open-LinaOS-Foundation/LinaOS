@@ -7,7 +7,7 @@
 #include <asm/memory.h>
 
 #define LOAD_OFFSET	(PAGE_OFFSET - PHYS_OFFSET)
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 OUTPUT_ARCH(nds32)
 ENTRY(_stext_lma)

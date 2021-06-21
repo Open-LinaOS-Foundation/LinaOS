@@ -6,10 +6,10 @@
  * Mian Yousaf Kaukab <yousaf.kaukab@intel.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linaos/spinlock.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
 
 #include "core.h"
 #include "debug.h"

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
-   Linux loop encryption enabling module
+   LinaOS loop encryption enabling module
 
    Copyright (C)  2002 Herbert Valerio Riedel <hvr@gnu.org>
    Copyright (C)  2003 Fruhwirth Clemens <clemens@endorphin.org>
 
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <crypto/skcipher.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/scatterlist.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/blkdev.h>
+#include <linaos/scatterlist.h>
+#include <linaos/uaccess.h>
 #include "loop.h"
 
 MODULE_LICENSE("GPL");

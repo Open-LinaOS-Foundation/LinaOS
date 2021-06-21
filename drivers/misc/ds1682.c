@@ -28,13 +28,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/string.h>
+#include <linaos/list.h>
+#include <linaos/sysfs.h>
+#include <linaos/ctype.h>
+#include <linaos/hwmon-sysfs.h>
 
 /* Device registers */
 #define DS1682_REG_CONFIG		0x00

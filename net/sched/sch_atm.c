@@ -3,17 +3,17 @@
 
 /* Written 1998-2000 by Werner Almesberger, EPFL ICA */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/atmdev.h>
-#include <linux/atmclip.h>
-#include <linux/rtnetlink.h>
-#include <linux/file.h>		/* for fput */
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/atmdev.h>
+#include <linaos/atmclip.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/file.h>		/* for fput */
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

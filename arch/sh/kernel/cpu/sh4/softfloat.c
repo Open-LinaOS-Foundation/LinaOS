@@ -35,7 +35,7 @@
  * SH4 modifications by Ismail Dhaoui <ismail.dhaoui@st.com>
  * and Kamel Khelifi <kamel.khelifi@st.com>
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <cpu/fpu.h>
 #include <asm/div64.h>
 

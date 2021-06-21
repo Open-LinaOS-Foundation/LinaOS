@@ -16,7 +16,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define KVM_UTIL_MIN_PFN	2
 

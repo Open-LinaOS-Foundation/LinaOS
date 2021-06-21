@@ -5,15 +5,15 @@
  * Copyright (C) 2016-2020 Mellanox Technologies
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/mlxreg.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/mlxreg.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 /* General defines */
 #define MLXPLAT_CPLD_LPC_I2C_BASE_ADDR	0x2000

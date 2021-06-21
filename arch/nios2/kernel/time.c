@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #define ALTR_TIMER_COMPATIBLE		"altr,timer-1.0"
 

@@ -8,10 +8,10 @@
  *  Jan Kiszka <jan.kiszka@siemens.com>
  */
 
-#include <linux/acpi_pmtmr.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/serial_8250.h>
+#include <linaos/acpi_pmtmr.h>
+#include <linaos/kernel.h>
+#include <linaos/reboot.h>
+#include <linaos/serial_8250.h>
 #include <asm/apic.h>
 #include <asm/io_apic.h>
 #include <asm/acpi.h>
@@ -183,7 +183,7 @@ static void __init jailhouse_serial_workaround(void)
 	 * There are flags inside setup_data that indicate availability of
 	 * platform UARTs since setup data version 2.
 	 *
-	 * In case of version 1, we don't know which UARTs belong Linux. In
+	 * In case of version 1, we don't know which UARTs belong LinaOS. In
 	 * this case, unconditionally register 1:1 mapping for legacy UART IRQs
 	 * 3 and 4.
 	 */

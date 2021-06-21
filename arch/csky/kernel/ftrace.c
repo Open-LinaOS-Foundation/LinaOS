@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/stop_machine.h>
+#include <linaos/ftrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/stop_machine.h>
 #include <asm/cacheflush.h>
 
 #ifdef CONFIG_DYNAMIC_FTRACE

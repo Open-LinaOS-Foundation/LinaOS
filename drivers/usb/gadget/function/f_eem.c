@@ -7,12 +7,12 @@
  * Copyright (C) 2009 EF Johnson Technologies
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/crc32.h>
+#include <linaos/slab.h>
 
 #include "u_ether.h"
 #include "u_ether_configfs.h"

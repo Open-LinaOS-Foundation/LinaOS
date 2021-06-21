@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2010 Felix Fietkau <nbd@openwrt.org>
  */
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/debugfs.h>
-#include <linux/ieee80211.h>
-#include <linux/export.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/debugfs.h>
+#include <linaos/ieee80211.h>
+#include <linaos/export.h>
 #include <net/mac80211.h>
 #include "rc80211_minstrel_ht.h"
 

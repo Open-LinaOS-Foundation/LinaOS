@@ -21,13 +21,13 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/hdmi.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/hdmi.h>
+#include <linaos/string.h>
+#include <linaos/device.h>
 
 #define hdmi_log(fmt, ...) dev_printk(level, dev, fmt, ##__VA_ARGS__)
 

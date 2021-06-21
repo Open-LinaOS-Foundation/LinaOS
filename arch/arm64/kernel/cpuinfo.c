@@ -11,19 +11,19 @@
 #include <asm/cpufeature.h>
 #include <asm/fpsimd.h>
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/personality.h>
-#include <linux/preempt.h>
-#include <linux/printk.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/compat.h>
+#include <linaos/elf.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/personality.h>
+#include <linaos/preempt.h>
+#include <linaos/printk.h>
+#include <linaos/seq_file.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/delay.h>
 
 /*
  * In case the boot CPU is hotpluggable, we record its initial state and

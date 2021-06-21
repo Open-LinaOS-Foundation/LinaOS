@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/net/netconsole.c
+ *  linaos/drivers/net/netconsole.c
  *
  *  Copyright (C) 2001  Ingo Molnar <mingo@redhat.com>
  *
@@ -24,18 +24,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/netpoll.h>
-#include <linux/inet.h>
-#include <linux/configfs.h>
-#include <linux/etherdevice.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/console.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/netpoll.h>
+#include <linaos/inet.h>
+#include <linaos/configfs.h>
+#include <linaos/etherdevice.h>
 
 MODULE_AUTHOR("Maintainer: Matt Mackall <mpm@selenic.com>");
 MODULE_DESCRIPTION("Console driver for network interfaces");

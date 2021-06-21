@@ -7,12 +7,12 @@
  * Copyright (C) 1996,1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

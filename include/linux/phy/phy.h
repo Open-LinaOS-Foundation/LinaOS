@@ -10,14 +10,14 @@
 #ifndef __DRIVERS_PHY_H
 #define __DRIVERS_PHY_H
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regulator/consumer.h>
 
-#include <linux/phy/phy-dp.h>
-#include <linux/phy/phy-mipi-dphy.h>
+#include <linaos/phy/phy-dp.h>
+#include <linaos/phy/phy-mipi-dphy.h>
 
 struct phy;
 

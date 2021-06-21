@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/acpi.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 #include <net/addrconf.h>
 #include <rdma/ib_addr.h>
 #include <rdma/ib_cache.h>

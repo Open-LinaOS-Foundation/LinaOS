@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2010-2012 Matthias Fuchs <matthias.fuchs@esd.eu>, esd gmbh
  */
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <linaos/signal.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
 
 MODULE_AUTHOR("Matthias Fuchs <matthias.fuchs@esd.eu>");
 MODULE_DESCRIPTION("CAN driver for esd CAN-USB/2 and CAN-USB/Micro interfaces");

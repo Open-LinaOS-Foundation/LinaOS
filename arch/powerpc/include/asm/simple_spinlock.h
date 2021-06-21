@@ -14,7 +14,7 @@
  *
  * (the type definitions are in asm/simple_spinlock_types.h)
  */
-#include <linux/irqflags.h>
+#include <linaos/irqflags.h>
 #include <asm/paravirt.h>
 #include <asm/paca.h>
 #include <asm/synch.h>

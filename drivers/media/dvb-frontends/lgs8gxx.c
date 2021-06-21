@@ -10,7 +10,7 @@
  */
 
 #include <asm/div64.h>
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include <media/dvb_frontend.h>
 

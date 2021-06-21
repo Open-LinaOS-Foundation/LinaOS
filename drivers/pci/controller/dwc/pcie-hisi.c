@@ -8,12 +8,12 @@
  *          Dacai Zhu <zhudacai@hisilicon.com>
  *          Gabriele Paoloni <gabriele.paoloni@huawei.com>
  */
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/pci-ecam.h>
 #include "../../pci.h"
 
 #if defined(CONFIG_PCI_HISI) || (defined(CONFIG_ACPI) && defined(CONFIG_PCI_QUIRKS))

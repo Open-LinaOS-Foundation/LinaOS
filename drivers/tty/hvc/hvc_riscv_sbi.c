@@ -5,11 +5,11 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/console.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
+#include <linaos/console.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
 
 #include <asm/sbi.h>
 

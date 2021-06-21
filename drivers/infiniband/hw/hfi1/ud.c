@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/net.h>
+#include <linaos/net.h>
 #include <rdma/ib_smi.h>
 
 #include "hfi.h"

@@ -3,8 +3,8 @@
 #ifndef _NET_ETHTOOL_NETLINK_H
 #define _NET_ETHTOOL_NETLINK_H
 
-#include <linux/ethtool_netlink.h>
-#include <linux/netdevice.h>
+#include <linaos/ethtool_netlink.h>
+#include <linaos/netdevice.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
 

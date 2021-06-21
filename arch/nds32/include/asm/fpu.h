@@ -6,8 +6,8 @@
 
 #if IS_ENABLED(CONFIG_FPU)
 #ifndef __ASSEMBLY__
-#include <linux/sched/task_stack.h>
-#include <linux/preempt.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/preempt.h>
 #include <asm/ptrace.h>
 
 extern bool has_fpu;

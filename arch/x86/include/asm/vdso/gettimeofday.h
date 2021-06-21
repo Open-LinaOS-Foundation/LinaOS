@@ -12,7 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <uapi/linux/time.h>
+#include <uapi/linaos/time.h>
 #include <asm/vgtod.h>
 #include <asm/vvar.h>
 #include <asm/unistd.h>

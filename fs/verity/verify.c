@@ -8,8 +8,8 @@
 #include "fsverity_private.h"
 
 #include <crypto/hash.h>
-#include <linux/bio.h>
-#include <linux/ratelimit.h>
+#include <linaos/bio.h>
+#include <linaos/ratelimit.h>
 
 static struct workqueue_struct *fsverity_read_workqueue;
 

@@ -4,11 +4,11 @@
  * subsets. Users create a subset with DECLARE_IOASID_SET, then allocate and
  * free IOASIDs with ioasid_alloc and ioasid_put.
  */
-#include <linux/ioasid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/xarray.h>
+#include <linaos/ioasid.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/xarray.h>
 
 struct ioasid_data {
 	ioasid_t id;
@@ -447,6 +447,6 @@ unlock:
 EXPORT_SYMBOL_GPL(ioasid_find);
 
 MODULE_AUTHOR("Jean-Philippe Brucker <jean-philippe.brucker@arm.com>");
-MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@linux.intel.com>");
+MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@linaos.intel.com>");
 MODULE_DESCRIPTION("IO Address Space ID (IOASID) allocator");
 MODULE_LICENSE("GPL");

@@ -20,19 +20,19 @@
  * during SPI transfers by setting max_speed_hz via the device tree.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
 
 #include <asm/io.h>
 #include <asm/dcr.h>

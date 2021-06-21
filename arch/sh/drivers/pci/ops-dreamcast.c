@@ -6,15 +6,15 @@
  * Copyright (C) 2002, 2003  Paul Mundt
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <mach/pci.h>
 
 /*

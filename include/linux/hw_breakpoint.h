@@ -2,8 +2,8 @@
 #ifndef _LINUX_HW_BREAKPOINT_H
 #define _LINUX_HW_BREAKPOINT_H
 
-#include <linux/perf_event.h>
-#include <uapi/linux/hw_breakpoint.h>
+#include <linaos/perf_event.h>
+#include <uapi/linaos/hw_breakpoint.h>
 
 #ifdef CONFIG_HAVE_HW_BREAKPOINT
 

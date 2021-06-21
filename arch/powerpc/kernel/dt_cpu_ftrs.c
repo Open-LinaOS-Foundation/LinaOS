@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) "dt-cpu-ftrs: " fmt
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/jump_label.h>
-#include <linux/libfdt.h>
-#include <linux/memblock.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/threads.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/jump_label.h>
+#include <linaos/libfdt.h>
+#include <linaos/memblock.h>
+#include <linaos/printk.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/threads.h>
 
 #include <asm/cputable.h>
 #include <asm/dt_cpu_ftrs.h>
@@ -319,7 +319,7 @@ static int __init feat_enable_dscr(struct dt_cpu_feature *f)
 	u64 lpcr;
 
 	/*
-	 * Linux relies on FSCR[DSCR] being clear, so that we can take the
+	 * LinaOS relies on FSCR[DSCR] being clear, so that we can take the
 	 * facility unavailable interrupt and track the task's usage of DSCR.
 	 * See facility_unavailable_exception().
 	 * Clear the bit here so that feat_enable() doesn't set it.

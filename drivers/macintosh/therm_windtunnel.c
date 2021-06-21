@@ -27,16 +27,16 @@
  *   
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/of_platform.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kthread.h>
+#include <linaos/of_platform.h>
 
 #include <asm/prom.h>
 #include <asm/machdep.h>

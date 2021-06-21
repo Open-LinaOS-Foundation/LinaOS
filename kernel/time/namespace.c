@@ -4,19 +4,19 @@
  * Author: Dmitry Safonov <dima@arista.com>
  */
 
-#include <linux/time_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/clocksource.h>
-#include <linux/seq_file.h>
-#include <linux/proc_ns.h>
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/mm.h>
+#include <linaos/time_namespace.h>
+#include <linaos/user_namespace.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/clocksource.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_ns.h>
+#include <linaos/export.h>
+#include <linaos/time.h>
+#include <linaos/slab.h>
+#include <linaos/cred.h>
+#include <linaos/err.h>
+#include <linaos/mm.h>
 
 #include <vdso/datapage.h>
 

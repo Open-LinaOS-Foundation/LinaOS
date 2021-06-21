@@ -26,7 +26,7 @@
 		led0 {
 			label = "cm_t335:green";
 			gpios = <&gpio2 0 GPIO_ACTIVE_LOW>;	/* gpio2_0 */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -399,7 +399,7 @@ status = "okay";
 			reg = <0x00500000 0x00400000>;
 		};
 		partition@5 {
-			label = "linux";
+			label = "linaos";
 			reg = <0x00900000 0x00600000>;
 		};
 		partition@6 {

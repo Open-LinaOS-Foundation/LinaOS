@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2017-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2019, The LinaOS Foundation. All rights reserved.
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/llcc-qcom.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/llcc-qcom.h>
 
 #define ACTIVATE                      BIT(0)
 #define DEACTIVATE                    BIT(1)

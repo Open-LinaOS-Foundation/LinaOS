@@ -28,8 +28,8 @@
 #ifndef _VMWGFX_DRV_H_
 #define _VMWGFX_DRV_H_
 
-#include <linux/suspend.h>
-#include <linux/sync_file.h>
+#include <linaos/suspend.h>
+#include <linaos/sync_file.h>
 
 #include <drm/drm_auth.h>
 #include <drm/drm_device.h>

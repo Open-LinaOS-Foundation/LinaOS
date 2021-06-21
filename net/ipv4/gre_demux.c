@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/if.h>
-#include <linux/icmp.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/if_tunnel.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/if.h>
+#include <linaos/icmp.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/skbuff.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_tunnel.h>
+#include <linaos/spinlock.h>
 #include <net/protocol.h>
 #include <net/gre.h>
 #include <net/erspan.h>

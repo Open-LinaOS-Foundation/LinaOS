@@ -9,13 +9,13 @@
  *  And anyone else who helped me on this.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/mv643xx.h>
+#include <linaos/pci.h>
 
 #define PEGASOS2_MARVELL_REGBASE 		(0xf1000000)
 #define PEGASOS2_MARVELL_REGSIZE 		(0x00004000)

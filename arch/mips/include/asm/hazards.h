@@ -3,14 +3,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2003, 04, 07 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2003, 04, 07 Ralf Baechle <ralf@linaos-mips.org>
  * Copyright (C) MIPS Technologies, Inc.
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linaos-mips.org>
  */
 #ifndef _ASM_HAZARDS_H
 #define _ASM_HAZARDS_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 #include <asm/compiler.h>
 
 #define ___ssnop							\

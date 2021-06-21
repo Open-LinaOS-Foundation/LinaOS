@@ -120,19 +120,19 @@
  *	20011003 Fix multiple requests
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/proc_fs.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/errno.h>
+#include <linaos/random.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/usb.h>
+#include <linaos/proc_fs.h>
 
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
+#include <linaos/atomic.h>
+#include <linaos/blkdev.h>
 #include "../../scsi/scsi.h"
 #include <scsi/scsi_host.h>
 

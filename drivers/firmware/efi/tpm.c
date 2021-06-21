@@ -8,10 +8,10 @@
 #define TPM_MEMUNMAP(start, size) early_memunmap(start, size)
 
 #include <asm/early_ioremap.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/tpm_eventlog.h>
+#include <linaos/efi.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/tpm_eventlog.h>
 
 int efi_tpm_final_log_size;
 EXPORT_SYMBOL(efi_tpm_final_log_size);
@@ -38,7 +38,7 @@ static int __init tpm2_calc_event_log_size(void *data, int count, void *size_inf
  */
 int __init efi_tpm_eventlog_init(void)
 {
-	struct linux_efi_tpm_eventlog *log_tbl;
+	struct linaos_efi_tpm_eventlog *log_tbl;
 	struct efi_tcg2_final_events_table *final_tbl;
 	int tbl_size;
 	int ret = 0;

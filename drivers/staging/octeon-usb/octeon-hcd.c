@@ -45,13 +45,13 @@
  * PERFORMANCE OF THE SOFTWARE LIES WITH YOU.
  */
 
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/hcd.h>
-#include <linux/prefetch.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/prefetch.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
 
 #include <asm/octeon/octeon.h>
 

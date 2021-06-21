@@ -7,16 +7,16 @@
  * Copyright:   (C) 2009 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

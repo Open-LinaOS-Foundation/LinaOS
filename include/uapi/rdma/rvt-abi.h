@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 
 /*
  * This file contains defines, structures, etc. that are used
@@ -8,7 +8,7 @@
 #ifndef RVT_ABI_USER_H
 #define RVT_ABI_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <rdma/ib_user_verbs.h>
 #ifndef RDMA_ATOMIC_UAPI
 #define RDMA_ATOMIC_UAPI(_type, _name) struct{ _type val; } _name

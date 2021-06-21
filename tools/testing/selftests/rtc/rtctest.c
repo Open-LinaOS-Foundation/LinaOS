@@ -7,7 +7,7 @@
 
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/rtc.h>
+#include <linaos/rtc.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/ioctl.h>

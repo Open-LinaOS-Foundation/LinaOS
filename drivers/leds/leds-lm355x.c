@@ -4,15 +4,15 @@
 * Copyright (C) 2012 Texas Instruments
 */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/fs.h>
-#include <linux/regmap.h>
-#include <linux/platform_data/leds-lm355x.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/fs.h>
+#include <linaos/regmap.h>
+#include <linaos/platform_data/leds-lm355x.h>
 
 enum lm355x_type {
 	CHIP_LM3554 = 0,

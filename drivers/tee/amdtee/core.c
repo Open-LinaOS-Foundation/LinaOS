@@ -3,20 +3,20 @@
  * Copyright 2019 Advanced Micro Devices, Inc.
  */
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/firmware.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/device.h>
+#include <linaos/tee_drv.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/firmware.h>
 #include "amdtee_private.h"
 #include "../tee_private.h"
-#include <linux/psp-tee.h>
+#include <linaos/psp-tee.h>
 
 static struct amdtee_driver_data *drv_data;
 static DEFINE_MUTEX(session_list_mutex);

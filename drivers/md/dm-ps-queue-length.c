@@ -16,11 +16,11 @@
 #include "dm.h"
 #include "dm-path-selector.h"
 
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
+#include <linaos/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/atomic.h>
 
 #define DM_MSG_PREFIX	"multipath queue-length"
 #define QL_MIN_IO	1

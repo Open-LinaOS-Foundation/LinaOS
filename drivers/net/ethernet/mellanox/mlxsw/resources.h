@@ -4,8 +4,8 @@
 #ifndef _MLXSW_RESOURCES_H
 #define _MLXSW_RESOURCES_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 enum mlxsw_res_id {
 	MLXSW_RES_ID_KVD_SIZE,

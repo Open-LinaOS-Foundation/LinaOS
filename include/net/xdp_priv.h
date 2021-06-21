@@ -2,7 +2,7 @@
 #ifndef __LINUX_NET_XDP_PRIV_H__
 #define __LINUX_NET_XDP_PRIV_H__
 
-#include <linux/rhashtable.h>
+#include <linaos/rhashtable.h>
 
 /* Private to net/core/xdp.c, but used by trace/events/xdp.h */
 struct xdp_mem_allocator {

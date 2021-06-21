@@ -2,20 +2,20 @@
 #ifndef __NET_SCHED_GENERIC_H
 #define __NET_SCHED_GENERIC_H
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/pkt_sched.h>
-#include <linux/pkt_cls.h>
-#include <linux/percpu.h>
-#include <linux/dynamic_queue_limits.h>
-#include <linux/list.h>
-#include <linux/refcount.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/atomic.h>
-#include <linux/hashtable.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/pkt_sched.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/percpu.h>
+#include <linaos/dynamic_queue_limits.h>
+#include <linaos/list.h>
+#include <linaos/refcount.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/atomic.h>
+#include <linaos/hashtable.h>
 #include <net/gen_stats.h>
 #include <net/rtnetlink.h>
 #include <net/flow_offload.h>
@@ -798,7 +798,7 @@ static inline unsigned int qdisc_pkt_len(const struct sk_buff *skb)
 	return qdisc_skb_cb(skb)->pkt_len;
 }
 
-/* additional qdisc xmit flags (NET_XMIT_MASK in linux/netdevice.h) */
+/* additional qdisc xmit flags (NET_XMIT_MASK in linaos/netdevice.h) */
 enum net_xmit_qdisc_t {
 	__NET_XMIT_STOLEN = 0x00010000,
 	__NET_XMIT_BYPASS = 0x00020000,

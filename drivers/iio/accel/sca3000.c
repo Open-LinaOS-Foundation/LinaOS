@@ -7,20 +7,20 @@
  * See industrialio/accels/sca3000.h for comments.
  */
 
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <linaos/interrupt.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/kfifo_buf.h>
 
 #define SCA3000_WRITE_REG(a) (((a) << 2) | 0x02)
 #define SCA3000_READ_REG(a) ((a) << 2)

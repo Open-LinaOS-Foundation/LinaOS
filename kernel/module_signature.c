@@ -6,9 +6,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/errno.h>
-#include <linux/printk.h>
-#include <linux/module_signature.h>
+#include <linaos/errno.h>
+#include <linaos/printk.h>
+#include <linaos/module_signature.h>
 #include <asm/byteorder.h>
 
 /**

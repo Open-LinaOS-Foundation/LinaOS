@@ -42,7 +42,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Perf Linux driver
+ * PCIe NTB Perf LinaOS driver
  */
 
 /*
@@ -67,22 +67,22 @@
  * root@self# cat $DBG_DIR/run
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/pci.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/sizes.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/random.h>
-#include <linux/ntb.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/pci.h>
+#include <linaos/ktime.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/sizes.h>
+#include <linaos/workqueue.h>
+#include <linaos/debugfs.h>
+#include <linaos/random.h>
+#include <linaos/ntb.h>
 
 #define DRIVER_NAME		"ntb_perf"
 #define DRIVER_VERSION		"2.0"

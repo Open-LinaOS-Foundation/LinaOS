@@ -20,7 +20,7 @@
 #ifndef __MAC_H__
 #define __MAC_H__
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 #include "device.h"
 
 #define REV_ID_VT3253_A0	0x00

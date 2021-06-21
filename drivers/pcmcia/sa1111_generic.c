@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/sa1111_generic.c
+ * linaos/drivers/pcmcia/sa1111_generic.c
  *
  * We implement the generic parts of a SA1111 PCMCIA driver.  This
  * basically means we handle everything except controlling the
  * power.  Power is machine specific...
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/ioport.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #include <pcmcia/ss.h>
 

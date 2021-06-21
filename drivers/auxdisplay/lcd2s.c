@@ -11,11 +11,11 @@
  *  Author: Lars Pöschel <poeschel@lemonage.de>
  *  All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
 
 #include "charlcd.h"
 

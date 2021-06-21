@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/mips/sni/process.c
+ *  linaos/arch/mips/sni/process.c
  *
  *  Reset a SNI machine.
  */
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include <asm/io.h>
 #include <asm/reboot.h>

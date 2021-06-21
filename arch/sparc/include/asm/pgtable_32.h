@@ -9,7 +9,7 @@
  *  Copyright (C) 1998 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #define PMD_SHIFT		18
 #define PMD_SIZE        	(1UL << PMD_SHIFT)
@@ -24,8 +24,8 @@
 #ifndef __ASSEMBLY__
 #include <asm-generic/pgtable-nopud.h>
 
-#include <linux/spinlock.h>
-#include <linux/mm_types.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm_types.h>
 #include <asm/types.h>
 #include <asm/pgtsrmmu.h>
 #include <asm/vaddrs.h>
@@ -385,7 +385,7 @@ __get_iospace (unsigned long addr)
 
 extern unsigned long *sparc_valid_addr_bitmap;
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in linaos/mm.h, as it is arch dependent */
 #define kern_addr_valid(addr) \
 	(test_bit(__pa((unsigned long)(addr))>>20, sparc_valid_addr_bitmap))
 

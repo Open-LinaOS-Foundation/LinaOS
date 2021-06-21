@@ -46,7 +46,7 @@
 
 #ifndef __ASSEMBLER__
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include "powerdomain.h"
 
 /* Power/reset management domain register get/set */

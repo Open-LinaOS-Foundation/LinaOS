@@ -10,10 +10,10 @@
  * Copyright (c) 2020, 2021 Vincent Mailhol <mailhol.vincent@wanadoo.fr>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/crc16.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/crc16.h>
 #include <asm/unaligned.h>
 
 #include "es58x_core.h"

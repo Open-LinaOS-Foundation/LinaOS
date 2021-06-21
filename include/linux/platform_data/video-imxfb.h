@@ -5,7 +5,7 @@
 #ifndef __MACH_IMXFB_H__
 #define __MACH_IMXFB_H__
 
-#include <linux/fb.h>
+#include <linaos/fb.h>
 
 #define PCR_TFT		(1 << 31)
 #define PCR_COLOR	(1 << 30)

@@ -4,8 +4,8 @@
  * This is a driver for the AD1889 PCI audio chipset found
  * on the HP PA-RISC [BCJ]-xxx0 workstations.
  *
- * Copyright (C) 2004-2005, Kyle McMartin <kyle@parisc-linux.org>
- * Copyright (C) 2005, Thibaut Varene <varenet@parisc-linux.org>
+ * Copyright (C) 2004-2005, Kyle McMartin <kyle@parisc-linaos.org>
+ * Copyright (C) 2005, Thibaut Varene <varenet@parisc-linaos.org>
  *   Based on the OSS AD1889 driver by Randolph Chung <tausq@debian.org>
  *
  * TODO:
@@ -20,15 +20,15 @@
  *	SG DMA support (this will need *a lot* of work)
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/compiler.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -40,7 +40,7 @@
 
 #define	AD1889_DRVVER	"Version: 1.7"
 
-MODULE_AUTHOR("Kyle McMartin <kyle@parisc-linux.org>, Thibaut Varene <t-bone@parisc-linux.org>");
+MODULE_AUTHOR("Kyle McMartin <kyle@parisc-linaos.org>, Thibaut Varene <t-bone@parisc-linaos.org>");
 MODULE_DESCRIPTION("Analog Devices AD1889 ALSA sound driver");
 MODULE_LICENSE("GPL");
 

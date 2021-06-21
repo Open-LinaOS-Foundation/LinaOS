@@ -8,7 +8,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 
 #ifdef CONFIG_XMON
 extern void xmon_setup(void);

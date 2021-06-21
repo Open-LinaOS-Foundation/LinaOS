@@ -7,14 +7,14 @@
  *
  * Copyright (C) 2014 LSI Corporation
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
 #include <dt-bindings/clock/lsi,axm5516-clks.h>
 
 

@@ -9,18 +9,18 @@
  *	General Public License.  See the file "COPYING" in the main
  *	directory of this archive for more details.
  */
-#include <linux/compiler.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tc.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/tc.h>
+#include <linaos/types.h>
 
 #include <asm/io.h>
 

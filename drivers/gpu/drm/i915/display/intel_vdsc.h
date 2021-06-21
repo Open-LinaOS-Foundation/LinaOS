@@ -6,7 +6,7 @@
 #ifndef __INTEL_VDSC_H__
 #define __INTEL_VDSC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_encoder;
 struct intel_crtc_state;

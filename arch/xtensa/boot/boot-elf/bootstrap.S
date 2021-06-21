@@ -17,7 +17,7 @@
 #include <asm/bootparam.h>
 #include <asm/initialize_mmu.h>
 #include <asm/vectors.h>
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 	.section	.ResetVector.text, "ax"
 	.global         _ResetVector

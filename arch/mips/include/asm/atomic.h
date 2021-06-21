@@ -14,8 +14,8 @@
 #ifndef _ASM_ATOMIC_H
 #define _ASM_ATOMIC_H
 
-#include <linux/irqflags.h>
-#include <linux/types.h>
+#include <linaos/irqflags.h>
+#include <linaos/types.h>
 #include <asm/barrier.h>
 #include <asm/compiler.h>
 #include <asm/cpu-features.h>

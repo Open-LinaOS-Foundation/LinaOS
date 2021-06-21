@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * max6650.c - Part of lm_sensors, Linux kernel modules for hardware
+ * max6650.c - Part of lm_sensors, LinaOS kernel modules for hardware
  *             monitoring.
  *
  * (C) 2007 by Hans J. Koch <hjk@hansjkoch.de>
@@ -18,16 +18,16 @@
  *        http://pdfserv.maxim-ic.com/en/ds/MAX6650-MAX6651.pdf
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/of_device.h>
-#include <linux/thermal.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/of_device.h>
+#include <linaos/thermal.h>
 
 /*
  * Insmod parameters

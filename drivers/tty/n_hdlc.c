@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-1.0+
-/* generic HDLC line discipline for Linux
+/* generic HDLC line discipline for LinaOS
  *
  * Written by Paul Fulghum paulkf@microgate.com
  * for Microgate Corporation
@@ -78,28 +78,28 @@
 
 #define HDLC_MAGIC 0x239e
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
 
-#include <linux/poll.h>
-#include <linux/in.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>	/* used in new tty drivers */
-#include <linux/signal.h>	/* used in new tty drivers */
-#include <linux/if.h>
-#include <linux/bitops.h>
+#include <linaos/poll.h>
+#include <linaos/in.h>
+#include <linaos/ioctl.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>	/* used in new tty drivers */
+#include <linaos/signal.h>	/* used in new tty drivers */
+#include <linaos/if.h>
+#include <linaos/bitops.h>
 
 #include <asm/termios.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "tty.h"
 
 /*

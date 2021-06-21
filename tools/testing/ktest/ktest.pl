@@ -66,8 +66,8 @@ my %default = (
     "MAX_MONITOR_WAIT"		=> 1800,
     "GRUB_REBOOT"		=> "grub2-reboot",
     "GRUB_BLS_GET"		=> "grubby --info=ALL",
-    "SYSLINUX"			=> "extlinux",
-    "SYSLINUX_PATH"		=> "/boot/extlinux",
+    "SYSLINUX"			=> "extlinaos",
+    "SYSLINUX_PATH"		=> "/boot/extlinaos",
     "CONNECT_TIMEOUT"		=> 25,
 
 # required, and we will ask users if they don't have them but we keep the default
@@ -131,9 +131,9 @@ my $grub_file;
 my $grub_number;
 my $grub_reboot;
 my $grub_bls_get;
-my $syslinux;
-my $syslinux_path;
-my $syslinux_label;
+my $syslinaos;
+my $syslinaos_path;
+my $syslinaos_label;
 my $target;
 my $make;
 my $pre_install;
@@ -305,9 +305,9 @@ my %option_map = (
     "GRUB_FILE"			=> \$grub_file,
     "GRUB_REBOOT"		=> \$grub_reboot,
     "GRUB_BLS_GET"		=> \$grub_bls_get,
-    "SYSLINUX"			=> \$syslinux,
-    "SYSLINUX_PATH"		=> \$syslinux_path,
-    "SYSLINUX_LABEL"		=> \$syslinux_label,
+    "SYSLINUX"			=> \$syslinaos,
+    "SYSLINUX_PATH"		=> \$syslinaos_path,
+    "SYSLINUX_LABEL"		=> \$syslinaos_label,
     "PRE_INSTALL"		=> \$pre_install,
     "POST_INSTALL"		=> \$post_install,
     "NO_INSTALL"		=> \$no_install,
@@ -396,7 +396,7 @@ $config_help{"SSH_USER"} = << "EOF"
 EOF
     ;
 $config_help{"BUILD_DIR"} = << "EOF"
- The directory that contains the Linux source code (full path).
+ The directory that contains the LinaOS source code (full path).
  You can use \${PWD} that will be the path where ktest.pl is run, or use
  \${THIS_DIR} which is assigned \${PWD} but may be changed later.
 EOF
@@ -445,12 +445,12 @@ EOF
     ;
 $config_help{"LOCALVERSION"} = << "EOF"
  Required version ending to differentiate the test
- from other linux builds on the system.
+ from other linaos builds on the system.
 EOF
     ;
 $config_help{"REBOOT_TYPE"} = << "EOF"
  Way to reboot the box to the test kernel.
- Only valid options so far are "grub", "grub2", "grub2bls", "syslinux", and "script".
+ Only valid options so far are "grub", "grub2", "grub2bls", "syslinaos", and "script".
 
  If you specify grub, it will assume grub version 1
  and will search in /boot/grub/menu.lst for the title \$GRUB_MENU
@@ -466,9 +466,9 @@ $config_help{"REBOOT_TYPE"} = << "EOF"
 
  If you specify grub2bls, then you also need to specify \$GRUB_MENU.
 
- If you specify syslinux, then you may use SYSLINUX to define the syslinux
- command (defaults to extlinux), and SYSLINUX_PATH to specify the path to
- the syslinux install (defaults to /boot/extlinux). But you have to specify
+ If you specify syslinaos, then you may use SYSLINUX to define the syslinaos
+ command (defaults to extlinaos), and SYSLINUX_PATH to specify the path to
+ the syslinaos install (defaults to /boot/extlinaos). But you have to specify
  SYSLINUX_LABEL to define the label to boot to for the test kernel.
 EOF
     ;
@@ -502,7 +502,7 @@ $config_help{"GRUB_FILE"} = << "EOF"
 EOF
     ;
 $config_help{"SYSLINUX_LABEL"} = << "EOF"
- If syslinux is used, the label that boots the target kernel must
+ If syslinaos is used, the label that boots the target kernel must
  be specified with SYSLINUX_LABEL.
 EOF
     ;
@@ -780,7 +780,7 @@ sub get_mandatory_configs {
 	get_mandatory_config("GRUB_FILE");
     }
 
-    if ($rtype eq "syslinux") {
+    if ($rtype eq "syslinaos") {
 	get_mandatory_config("SYSLINUX_LABEL");
     }
 }
@@ -1478,7 +1478,7 @@ sub reboot {
 	$ignore_errors = 1;
 
 	# Look for the good kernel to boot
-	if (wait_for_monitor($time, "Linux version")) {
+	if (wait_for_monitor($time, "LinaOS version")) {
 	    # reboot got stuck?
 	    doprint "Reboot did not finish. Forcing power cycle\n";
 	    run_command "$power_cycle";
@@ -2091,8 +2091,8 @@ sub reboot_to {
 	run_ssh "'(echo \"savedefault --default=$grub_number --once\" | grub --batch)'";
     } elsif (($reboot_type eq "grub2") or ($reboot_type eq "grub2bls")) {
 	run_ssh "$grub_reboot $grub_number";
-    } elsif ($reboot_type eq "syslinux") {
-	run_ssh "$syslinux --once \\\"$syslinux_label\\\" $syslinux_path";
+    } elsif ($reboot_type eq "syslinaos") {
+	run_ssh "$syslinaos --once \\\"$syslinaos_label\\\" $syslinaos_path";
     } elsif (defined $reboot_script) {
 	run_command "$reboot_script";
     }
@@ -2225,15 +2225,15 @@ sub monitor {
 	}
 
 	# Detect triple faults by testing the banner
-	if ($full_line =~ /\bLinux version (\S+).*\n/) {
+	if ($full_line =~ /\bLinaOS version (\S+).*\n/) {
 	    if ($1 eq $version) {
 		$version_found = 1;
 	    } elsif ($version_found && $detect_triplefault) {
 		# We already booted into the kernel we are testing,
 		# but now we booted into another kernel?
 		# Consider this a triple fault.
-		doprint "Already booted in Linux kernel $version, but now\n";
-		doprint "we booted into Linux kernel $1.\n";
+		doprint "Already booted in LinaOS kernel $version, but now\n";
+		doprint "we booted into LinaOS kernel $1.\n";
 		doprint "Assuming that this is a triple fault.\n";
 		doprint "To disable this: set DETECT_TRIPLE_FAULT to 0\n";
 		last;
@@ -3646,7 +3646,7 @@ sub read_depends {
 	dodie "Failed to read $output_config";
     my $arch;
     while (<IN>) {
-	if (m,Linux/(\S+)\s+\S+\s+Kernel Configuration,) {
+	if (m,LinaOS/(\S+)\s+\S+\s+Kernel Configuration,) {
 	    $arch = $1;
 	    last;
 	}
@@ -4366,8 +4366,8 @@ for (my $i = 1; $i <= $opt{"NUM_TESTS"}; $i++) {
 	} elsif ($reboot_type eq "grub2") {
 	    dodie "GRUB_MENU not defined" if (!defined($grub_menu));
 	    dodie "GRUB_FILE not defined" if (!defined($grub_file));
-	} elsif ($reboot_type eq "syslinux") {
-	    dodie "SYSLINUX_LABEL not defined" if (!defined($syslinux_label));
+	} elsif ($reboot_type eq "syslinaos") {
+	    dodie "SYSLINUX_LABEL not defined" if (!defined($syslinaos_label));
 	}
     }
 

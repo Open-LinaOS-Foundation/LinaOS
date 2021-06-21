@@ -3,7 +3,7 @@
  *   Copyright (C) Christoph Hellwig, 2001-2002
  */
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 #include "jfs_incore.h"
 #include "jfs_inode.h"
 #include "jfs_xattr.h"

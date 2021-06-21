@@ -23,25 +23,25 @@
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <100000>;
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <300000>;
 		};
 
 		back {
 			label = "Back";
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 			press-threshold-microvolt = <985000>;
 		};
 
 		menu {
 			label = "Menu";
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			press-threshold-microvolt = <1314000>;
 		};
 	};

@@ -14,16 +14,16 @@
 #define _LINUX_DS_H
 
 #ifdef __KERNEL__
-#include <linux/mod_devicetable.h>
+#include <linaos/mod_devicetable.h>
 #endif
 
 #include <pcmcia/device_id.h>
 
 #ifdef __KERNEL__
-#include <linux/device.h>
-#include <linux/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
 #include <pcmcia/ss.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 
 /*

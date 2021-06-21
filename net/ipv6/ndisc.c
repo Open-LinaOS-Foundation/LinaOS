@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Neighbour Discovery for IPv6
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -25,28 +25,28 @@
 
 #define pr_fmt(fmt) "ICMPv6: " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/sched.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/route.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/sched.h>
+#include <linaos/net.h>
+#include <linaos/in6.h>
+#include <linaos/route.h>
+#include <linaos/init.h>
+#include <linaos/rcupdate.h>
+#include <linaos/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 #endif
 
-#include <linux/if_addr.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/ipv6.h>
-#include <linux/icmpv6.h>
-#include <linux/jhash.h>
+#include <linaos/if_addr.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_arp.h>
+#include <linaos/ipv6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/jhash.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -59,15 +59,15 @@
 #include <net/icmp.h>
 
 #include <net/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 
 #include <net/flow.h>
 #include <net/ip6_checksum.h>
 #include <net/inet_common.h>
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv6.h>
 
 static u32 ndisc_hash(const void *pkey,
 		      const struct net_device *dev,

@@ -8,17 +8,17 @@
  * Copyright (C) 2002, Rohit Seth <rohit.seth@intel.com>
  */
 
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/hugetlb.h>
-#include <linux/export.h>
-#include <linux/of_fdt.h>
-#include <linux/memblock.h>
-#include <linux/moduleparam.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/kmemleak.h>
+#include <linaos/mm.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/hugetlb.h>
+#include <linaos/export.h>
+#include <linaos/of_fdt.h>
+#include <linaos/memblock.h>
+#include <linaos/moduleparam.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/kmemleak.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 #include <asm/setup.h>
@@ -38,7 +38,7 @@ pte_t *huge_pte_offset(struct mm_struct *mm, unsigned long addr, unsigned long s
 	 * Only called for hugetlbfs pages, hence can ignore THP and the
 	 * irq disabled walk.
 	 */
-	return __find_linux_pte(mm->pgd, addr, NULL, NULL);
+	return __find_linaos_pte(mm->pgd, addr, NULL, NULL);
 }
 
 static int __hugepte_alloc(struct mm_struct *mm, hugepd_t *hpdp,

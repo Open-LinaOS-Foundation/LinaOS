@@ -40,8 +40,8 @@
  * This control block contains the data that is shared between the
  * hypervisor and the OS.
  */
-#include <linux/cache.h>
-#include <linux/threads.h>
+#include <linaos/cache.h>
+#include <linaos/threads.h>
 #include <asm/types.h>
 #include <asm/mmu.h>
 #include <asm/firmware.h>

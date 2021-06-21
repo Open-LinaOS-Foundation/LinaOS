@@ -3,11 +3,11 @@
  * SMC 37C93X initialization code
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
 
 #include <asm/hwrpb.h>
 #include <asm/io.h>

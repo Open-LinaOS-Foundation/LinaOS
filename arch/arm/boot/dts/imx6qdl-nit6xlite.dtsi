@@ -70,13 +70,13 @@
 		home {
 			label = "Home";
 			gpios = <&gpio7 13 IRQ_TYPE_LEVEL_LOW>;
-			linux,code = <102>;
+			linaos,code = <102>;
 		};
 
 		back {
 			label = "Back";
 			gpios = <&gpio4 5 IRQ_TYPE_LEVEL_LOW>;
-			linux,code = <158>;
+			linaos,code = <158>;
 		};
 	};
 

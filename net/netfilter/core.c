@@ -6,22 +6,22 @@
  *
  * This code is GPL.
  */
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
+#include <linaos/kernel.h>
+#include <linaos/netfilter.h>
 #include <net/protocol.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/rcupdate.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/if.h>
+#include <linaos/netdevice.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/inetdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/mutex.h>
+#include <linaos/mm.h>
+#include <linaos/rcupdate.h>
 #include <net/net_namespace.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/sock.h>

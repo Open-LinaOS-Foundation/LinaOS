@@ -8,7 +8,7 @@ Required Properties:
 Optional Properties:
 - decoder-max-value: Maximum possible value that can be reported by
   the gpios.
-- linux,axis: the input subsystem axis to map to (ABS_X/ABS_Y).
+- linaos,axis: the input subsystem axis to map to (ABS_X/ABS_Y).
   Defaults to 0 (ABS_X).
 
 Example:
@@ -18,6 +18,6 @@ Example:
 			<&pca9536 2 GPIO_ACTIVE_HIGH>,
 			<&pca9536 1 GPIO_ACTIVE_HIGH>,
 			<&pca9536 0 GPIO_ACTIVE_HIGH>;
-		linux,axis = <0>; /* ABS_X */
+		linaos,axis = <0>; /* ABS_X */
 		decoder-max-value = <9>;
 	};

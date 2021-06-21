@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "amdgpu.h"
 #include "amdgpu_gfx.h"

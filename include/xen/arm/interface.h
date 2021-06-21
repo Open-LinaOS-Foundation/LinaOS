@@ -8,7 +8,7 @@
 #ifndef _ASM_ARM_XEN_INTERFACE_H
 #define _ASM_ARM_XEN_INTERFACE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define uint64_aligned_t uint64_t __attribute__((aligned(8)))
 

@@ -10,7 +10,7 @@
 #if !defined(_CIFS_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _CIFS_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /*
  * Please use this 3-part article as a reference for writing new tracepoints:

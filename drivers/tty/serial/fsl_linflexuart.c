@@ -6,16 +6,16 @@
  * Copyright 2017-2019 NXP
  */
 
-#include <linux/console.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
-#include <linux/delay.h>
+#include <linaos/console.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/slab.h>
+#include <linaos/tty_flip.h>
+#include <linaos/delay.h>
 
 /* All registers are 32-bit width */
 

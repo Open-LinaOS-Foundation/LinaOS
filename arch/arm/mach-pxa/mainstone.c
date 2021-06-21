@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/mainstone.c
+ *  linaos/arch/arm/mach-pxa/mainstone.c
  *
  *  Support for the Intel HCDDBBVA0 Development Platform.
  *  (go figure how they came up with such name...)
@@ -9,27 +9,27 @@
  *  Created:	Nov 05, 2002
  *  Copyright:	MontaVista Software Inc.
  */
-#include <linux/gpio.h>
-#include <linux/gpio/gpio-reg.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/smc91x.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/gpio-reg.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/bitops.h>
+#include <linaos/fb.h>
+#include <linaos/ioport.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/input.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/smc91x.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
 
 #include <asm/types.h>
 #include <asm/setup.h>
@@ -37,7 +37,7 @@
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
 #include <asm/irq.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -47,11 +47,11 @@
 #include "pxa27x.h"
 #include <mach/mainstone.h>
 #include <mach/audio.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 #include <mach/smemc.h>
 
 #include "generic.h"

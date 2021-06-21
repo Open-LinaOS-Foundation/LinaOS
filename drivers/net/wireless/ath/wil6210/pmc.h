@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: ISC */
 /* Copyright (c) 2012-2015 Qualcomm Atheros, Inc. */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PCM_DATA_INVALID_DW_VAL (0xB0BA0000)
 

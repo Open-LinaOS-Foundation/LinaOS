@@ -2,10 +2,10 @@
 #ifndef _IF_TUNNEL_H_
 #define _IF_TUNNEL_H_
 
-#include <linux/ip.h>
-#include <linux/in6.h>
-#include <uapi/linux/if_tunnel.h>
-#include <linux/u64_stats_sync.h>
+#include <linaos/ip.h>
+#include <linaos/in6.h>
+#include <uapi/linaos/if_tunnel.h>
+#include <linaos/u64_stats_sync.h>
 
 /*
  * Locking : hash tables are protected by RCU and RTNL

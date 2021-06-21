@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/machine.h>
 #include <asm/olpc.h>
 
-/* TODO: this eventually belongs in linux/vx855.h */
+/* TODO: this eventually belongs in linaos/vx855.h */
 #define NR_VX855_GPI    14
 #define NR_VX855_GPO    13
 #define NR_VX855_GPIO   15

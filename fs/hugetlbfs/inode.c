@@ -9,36 +9,36 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 #include <asm/current.h>
-#include <linux/sched/signal.h>		/* remove ASAP */
-#include <linux/falloc.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/kernel.h>
-#include <linux/writeback.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/backing-dev.h>
-#include <linux/hugetlb.h>
-#include <linux/pagevec.h>
-#include <linux/fs_parser.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/dnotify.h>
-#include <linux/statfs.h>
-#include <linux/security.h>
-#include <linux/magic.h>
-#include <linux/migrate.h>
-#include <linux/uio.h>
+#include <linaos/sched/signal.h>		/* remove ASAP */
+#include <linaos/falloc.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/file.h>
+#include <linaos/kernel.h>
+#include <linaos/writeback.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/capability.h>
+#include <linaos/ctype.h>
+#include <linaos/backing-dev.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pagevec.h>
+#include <linaos/fs_parser.h>
+#include <linaos/mman.h>
+#include <linaos/slab.h>
+#include <linaos/dnotify.h>
+#include <linaos/statfs.h>
+#include <linaos/security.h>
+#include <linaos/magic.h>
+#include <linaos/migrate.h>
+#include <linaos/uio.h>
 
-#include <linux/uaccess.h>
-#include <linux/sched/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/mm.h>
 
 static const struct super_operations hugetlbfs_ops;
 static const struct address_space_operations hugetlbfs_aops;

@@ -395,6 +395,6 @@ trace.
 Kernel Inline Documentations Reference
 ======================================
 
-.. kernel-doc:: include/linux/workqueue.h
+.. kernel-doc:: include/linaos/workqueue.h
 
 .. kernel-doc:: kernel/workqueue.c

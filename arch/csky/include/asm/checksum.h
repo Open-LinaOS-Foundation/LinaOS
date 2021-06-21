@@ -3,7 +3,7 @@
 #ifndef __ASM_CSKY_CHECKSUM_H
 #define __ASM_CSKY_CHECKSUM_H
 
-#include <linux/in6.h>
+#include <linaos/in6.h>
 #include <asm/byteorder.h>
 
 static inline __sum16 csum_fold(__wsum csum)

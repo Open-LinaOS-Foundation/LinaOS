@@ -7,9 +7,9 @@
 #ifndef __SOUNDBUS_H
 #define __SOUNDBUS_H
 
-#include <linux/of_device.h>
+#include <linaos/of_device.h>
 #include <sound/pcm.h>
-#include <linux/list.h>
+#include <linaos/list.h>
 
 
 /* When switching from master to slave or the other way around,

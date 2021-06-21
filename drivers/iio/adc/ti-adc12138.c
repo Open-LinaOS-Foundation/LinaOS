@@ -7,17 +7,17 @@
  * Datasheet: http://www.ti.com/lit/ds/symlink/adc12138.pdf
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/clk.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/completion.h>
+#include <linaos/clk.h>
+#include <linaos/spi/spi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/regulator/consumer.h>
 
 #define ADC12138_MODE_AUTO_CAL			0x08
 #define ADC12138_MODE_READ_STATUS		0x0c

@@ -7,25 +7,25 @@
 #ifndef __QL4_DEF_H
 #define __QL4_DEF_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/aer.h>
-#include <linux/bsg-lib.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/dmapool.h>
+#include <linaos/mempool.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/aer.h>
+#include <linaos/bsg-lib.h>
+#include <linaos/vmalloc.h>
 
 #include <net/tcp.h>
 #include <scsi/scsi.h>
@@ -543,10 +543,10 @@ struct ql4_boot_tgt_info {
 };
 
 /*
- * Linux Host Adapter structure
+ * LinaOS Host Adapter structure
  */
 struct scsi_qla_host {
-	/* Linux adapter configuration data */
+	/* LinaOS adapter configuration data */
 	unsigned long flags;
 
 #define AF_ONLINE			0 /* 0x00000001 */
@@ -656,11 +656,11 @@ struct scsi_qla_host {
 	uint32_t firmware_state;
 	uint32_t addl_fw_state;
 
-	/* Linux kernel thread */
+	/* LinaOS kernel thread */
 	struct workqueue_struct *dpc_thread;
 	struct work_struct dpc_work;
 
-	/* Linux timer thread */
+	/* LinaOS timer thread */
 	struct timer_list timer;
 	uint32_t timer_active;
 

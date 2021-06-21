@@ -8,11 +8,11 @@
  * Dummy interface to user space for debugging purpose only.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/uaccess.h>
 #include <asm/bL_switcher.h>
 
 static ssize_t bL_switcher_write(struct file *file, const char __user *buf,

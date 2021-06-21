@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt5514.h -- Platform data for RT5514
+ * linaos/sound/rt5514.h -- Platform data for RT5514
  *
  * Copyright 2016 Realtek Semiconductor Corp.
  * Author: Oder Chiou <oder_chiou@realtek.com>

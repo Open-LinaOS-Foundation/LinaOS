@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/delay.h>
-#include <linux/dma/qcom_bam_dma.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/module.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/delay.h>
+#include <linaos/dma/qcom_bam_dma.h>
 
 /* NANDc reg offsets */
 #define	NAND_FLASH_CMD			0x00

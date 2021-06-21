@@ -10,7 +10,7 @@
 
 #include "sched.h"
 
-#include <linux/sched/cpufreq.h>
+#include <linaos/sched/cpufreq.h>
 #include <trace/events/power.h>
 
 #define IOWAIT_BOOST_MIN	(SCHED_CAPACITY_SCALE / 8)

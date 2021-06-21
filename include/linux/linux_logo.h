@@ -3,19 +3,19 @@
 #define _LINUX_LINUX_LOGO_H
 
 /*
- *  Linux logo to be displayed on boot
+ *  LinaOS logo to be displayed on boot
  *
  *  Copyright (C) 1996 Larry Ewing (lewing@isc.tamu.edu)
  *  Copyright (C) 1996,1998 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  *  Copyright (C) 2001 Greg Banks <gnb@alphalink.com.au>
  *  Copyright (C) 2001 Jan-Benedict Glaw <jbglaw@lug-owl.de>
- *  Copyright (C) 2003 Geert Uytterhoeven <geert@linux-m68k.org>
+ *  Copyright (C) 2003 Geert Uytterhoeven <geert@linaos-m68k.org>
  *
  *  Serial_console ascii image can be any size,
  *  but should contain %s to display the version
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 
 #define LINUX_LOGO_MONO		1	/* monochrome black/white */
@@ -24,7 +24,7 @@
 #define LINUX_LOGO_GRAY256	4	/* 256 levels grayscale */
 
 
-struct linux_logo {
+struct linaos_logo {
 	int type;			/* one of LINUX_LOGO_* */
 	unsigned int width;
 	unsigned int height;
@@ -33,25 +33,25 @@ struct linux_logo {
 	const unsigned char *data;
 };
 
-extern const struct linux_logo logo_linux_mono;
-extern const struct linux_logo logo_linux_vga16;
-extern const struct linux_logo logo_linux_clut224;
-extern const struct linux_logo logo_dec_clut224;
-extern const struct linux_logo logo_mac_clut224;
-extern const struct linux_logo logo_parisc_clut224;
-extern const struct linux_logo logo_sgi_clut224;
-extern const struct linux_logo logo_sun_clut224;
-extern const struct linux_logo logo_superh_mono;
-extern const struct linux_logo logo_superh_vga16;
-extern const struct linux_logo logo_superh_clut224;
-extern const struct linux_logo logo_spe_clut224;
+extern const struct linaos_logo logo_linaos_mono;
+extern const struct linaos_logo logo_linaos_vga16;
+extern const struct linaos_logo logo_linaos_clut224;
+extern const struct linaos_logo logo_dec_clut224;
+extern const struct linaos_logo logo_mac_clut224;
+extern const struct linaos_logo logo_parisc_clut224;
+extern const struct linaos_logo logo_sgi_clut224;
+extern const struct linaos_logo logo_sun_clut224;
+extern const struct linaos_logo logo_superh_mono;
+extern const struct linaos_logo logo_superh_vga16;
+extern const struct linaos_logo logo_superh_clut224;
+extern const struct linaos_logo logo_spe_clut224;
 
-extern const struct linux_logo *fb_find_logo(int depth);
+extern const struct linaos_logo *fb_find_logo(int depth);
 #ifdef CONFIG_FB_LOGO_EXTRA
-extern void fb_append_extra_logo(const struct linux_logo *logo,
+extern void fb_append_extra_logo(const struct linaos_logo *logo,
 				 unsigned int n);
 #else
-static inline void fb_append_extra_logo(const struct linux_logo *logo,
+static inline void fb_append_extra_logo(const struct linaos_logo *logo,
 					unsigned int n)
 {}
 #endif

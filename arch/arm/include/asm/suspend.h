@@ -2,7 +2,7 @@
 #ifndef __ASM_ARM_SUSPEND_H
 #define __ASM_ARM_SUSPEND_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct sleep_save_sp {
 	u32 *save_ptr_stash;

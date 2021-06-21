@@ -109,7 +109,7 @@ destructive video overlay.
 	address. The driver may accept only base addresses which are a
 	multiple of two, four or eight bytes. For *Video Output Overlays*
 	the driver must return a valid base address, so applications can
-	find the corresponding Linux framebuffer device (see
+	find the corresponding LinaOS framebuffer device (see
 	:ref:`osd`).
     * - struct
       - ``fmt``
@@ -347,5 +347,5 @@ EINVAL
    A physical base address may not suit all platforms. GK notes in
    theory we should pass something like PCI device + memory region +
    offset instead. If you encounter problems please discuss on the
-   linux-media mailing list:
-   `https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__.
+   linaos-media mailing list:
+   `https://linaostv.org/lists.php <https://linaostv.org/lists.php>`__.

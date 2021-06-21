@@ -15,8 +15,8 @@
  * frames.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/bits.h>
+#include <linaos/etherdevice.h>
+#include <linaos/bits.h>
 
 #include "dsa_priv.h"
 

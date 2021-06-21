@@ -6,25 +6,25 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/property.h>
-#include <linux/platform_data/x86/apple.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/tty.h>
-#include <linux/interrupt.h>
-#include <linux/dmi.h>
-#include <linux/pm_runtime.h>
-#include <linux/serdev.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/property.h>
+#include <linaos/platform_data/x86/apple.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/tty.h>
+#include <linaos/interrupt.h>
+#include <linaos/dmi.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/serdev.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

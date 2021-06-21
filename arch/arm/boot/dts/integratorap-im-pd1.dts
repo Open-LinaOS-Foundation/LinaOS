@@ -85,37 +85,37 @@
 
 		button@0 {
 			debounce-interval = <50>;
-			linux,code = <KEY_UP>;
+			linaos,code = <KEY_UP>;
 			label = "UP";
 			gpios = <&impd1_gpio1 0 GPIO_ACTIVE_HIGH>;
 		};
 		button@1 {
 			debounce-interval = <50>;
-			linux,code = <KEY_DOWN>;
+			linaos,code = <KEY_DOWN>;
 			label = "DOWN";
 			gpios = <&impd1_gpio1 1 GPIO_ACTIVE_HIGH>;
 		};
 		button@2 {
 			debounce-interval = <50>;
-			linux,code = <KEY_LEFT>;
+			linaos,code = <KEY_LEFT>;
 			label = "LEFT";
 			gpios = <&impd1_gpio1 2 GPIO_ACTIVE_HIGH>;
 		};
 		button@3 {
 			debounce-interval = <50>;
-			linux,code = <KEY_RIGHT>;
+			linaos,code = <KEY_RIGHT>;
 			label = "UP";
 			gpios = <&impd1_gpio1 3 GPIO_ACTIVE_HIGH>;
 		};
 		button@4 {
 			debounce-interval = <50>;
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			label = "ESC";
 			gpios = <&impd1_gpio1 4 GPIO_ACTIVE_HIGH>;
 		};
 		button@5 {
 			debounce-interval = <50>;
-			linux,code = <KEY_ENTER>;
+			linaos,code = <KEY_ENTER>;
 			label = "ENTER";
 			gpios = <&impd1_gpio1 5 GPIO_ACTIVE_HIGH>;
 		};

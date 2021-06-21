@@ -4,9 +4,9 @@
  *  ATI Mach64 Hardware Acceleration
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include <asm/unaligned.h>
-#include <linux/fb.h>
+#include <linaos/fb.h>
 #include <video/mach64.h>
 #include "atyfb.h"
 

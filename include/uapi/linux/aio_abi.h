@@ -1,4 +1,4 @@
-/* include/linux/aio_abi.h
+/* include/linaos/aio_abi.h
  *
  * Copyright 2000,2001,2002 Red Hat.
  *
@@ -27,8 +27,8 @@
 #ifndef __LINUX__AIO_ABI_H
 #define __LINUX__AIO_ABI_H
 
-#include <linux/types.h>
-#include <linux/fs.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
 #include <asm/byteorder.h>
 
 typedef __kernel_ulong_t aio_context_t;

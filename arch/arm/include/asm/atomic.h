@@ -8,10 +8,10 @@
 #ifndef __ASM_ARM_ATOMIC_H
 #define __ASM_ARM_ATOMIC_H
 
-#include <linux/compiler.h>
-#include <linux/prefetch.h>
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <linaos/compiler.h>
+#include <linaos/prefetch.h>
+#include <linaos/types.h>
+#include <linaos/irqflags.h>
 #include <asm/barrier.h>
 #include <asm/cmpxchg.h>
 

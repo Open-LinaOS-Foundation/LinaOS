@@ -10,18 +10,18 @@
  * (C) 2003 - 2010	Dominik Brodowski
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
-#include <linux/firmware.h>
-#include <linux/kref.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/crc32.h>
+#include <linaos/firmware.h>
+#include <linaos/kref.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

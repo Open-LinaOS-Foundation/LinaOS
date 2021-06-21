@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ======================================================
-eCryptfs: A stacked cryptographic filesystem for Linux
+eCryptfs: A stacked cryptographic filesystem for LinaOS
 ======================================================
 
 eCryptfs is free software. Please see the file COPYING for details.

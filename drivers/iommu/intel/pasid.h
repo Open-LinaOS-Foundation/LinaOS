@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2018 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linaos.intel.com>
  */
 
 #ifndef __INTEL_PASID_H

@@ -1,4 +1,4 @@
-/* wd.c: A WD80x3 ethernet driver for linux. */
+/* wd.c: A WD80x3 ethernet driver for linaos. */
 /*
 	Written 1993-94 by Donald Becker.
 
@@ -28,15 +28,15 @@
 static const char version[] =
 	"wd.c:v1.10 9/23/94 Donald Becker (becker@cesdis.gsfc.nasa.gov)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
 
 #include <asm/io.h>
 
@@ -512,7 +512,7 @@ MODULE_PARM_DESC(io, "I/O base address(es)");
 MODULE_PARM_DESC(irq, "IRQ number(s) (ignored for PureData boards)");
 MODULE_PARM_DESC(mem, "memory base address(es)(ignored for PureData boards)");
 MODULE_PARM_DESC(mem_end, "memory end address(es)");
-MODULE_PARM_DESC(msg_enable, "Debug message level (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Debug message level (see linaos/netdevice.h for bitmap)");
 MODULE_DESCRIPTION("ISA Western Digital wd8003/wd8013 ; SMC Elite, Elite16 ethernet driver");
 MODULE_LICENSE("GPL");
 

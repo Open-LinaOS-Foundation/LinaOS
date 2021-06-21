@@ -17,11 +17,11 @@
  * Margarita Olaya Cabrera <magi@slimlogic.co.uk>
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
 
-#include <linux/mfd/tps65912.h>
+#include <linaos/mfd/tps65912.h>
 
 static const struct mfd_cell tps65912_cells[] = {
 	{ .name = "tps65912-regulator", },

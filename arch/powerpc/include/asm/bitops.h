@@ -35,10 +35,10 @@
 #ifdef __KERNEL__
 
 #ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#error only <linaos/bitops.h> can be included directly
 #endif
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/asm-compat.h>
 #include <asm/synch.h>
 

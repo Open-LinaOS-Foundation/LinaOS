@@ -4,10 +4,10 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
 #include "clk.h"
 
 /**

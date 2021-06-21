@@ -66,13 +66,13 @@
  *                            +--------+   VBAT < VRECHG_TH
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/rohm-bd70528.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/linear_range.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/rohm-bd70528.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/linear_range.h>
 
 #define CHG_STAT_SUSPEND	0x0
 #define CHG_STAT_TRICKLE	0x1

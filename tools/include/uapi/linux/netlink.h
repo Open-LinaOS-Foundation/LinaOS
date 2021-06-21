@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_NETLINK_H
 #define _UAPI__LINUX_NETLINK_H
 
-#include <linux/kernel.h>
-#include <linux/socket.h> /* for __kernel_sa_family_t */
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/socket.h> /* for __kernel_sa_family_t */
+#include <linaos/types.h>
 
 #define NETLINK_ROUTE		0	/* Routing/device hook				*/
 #define NETLINK_UNUSED		1	/* Unused number				*/
@@ -13,7 +13,7 @@
 #define NETLINK_SOCK_DIAG	4	/* socket monitoring				*/
 #define NETLINK_NFLOG		5	/* netfilter/iptables ULOG */
 #define NETLINK_XFRM		6	/* ipsec */
-#define NETLINK_SELINUX		7	/* SELinux event notifications */
+#define NETLINK_SELINUX		7	/* SELinaOS event notifications */
 #define NETLINK_ISCSI		8	/* Open-iSCSI */
 #define NETLINK_AUDIT		9	/* auditing */
 #define NETLINK_FIB_LOOKUP	10	

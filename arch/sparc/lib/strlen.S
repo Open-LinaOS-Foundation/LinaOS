@@ -6,7 +6,7 @@
  * Copyright (C) 1996, 1997 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm.h>
 #include <asm/export.h>
 

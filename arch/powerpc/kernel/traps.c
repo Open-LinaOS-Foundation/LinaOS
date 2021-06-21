@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Copyright (C) 1995-1996  Gary Thomas (gdt@linuxppc.org)
+ *  Copyright (C) 1995-1996  Gary Thomas (gdt@linaosppc.org)
  *  Copyright 2007-2010 Freescale Semiconductor, Inc.
  *
  *  Modified by Cort Dougan (cort@cs.nmt.edu)
@@ -11,35 +11,35 @@
  * This file handles the architecture-dependent parts of hardware exceptions
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pkeys.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/extable.h>
-#include <linux/module.h>	/* print_modules */
-#include <linux/prctl.h>
-#include <linux/delay.h>
-#include <linux/kprobes.h>
-#include <linux/kexec.h>
-#include <linux/backlight.h>
-#include <linux/bug.h>
-#include <linux/kdebug.h>
-#include <linux/ratelimit.h>
-#include <linux/context_tracking.h>
-#include <linux/smp.h>
-#include <linux/console.h>
-#include <linux/kmsg_dump.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/pkeys.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/extable.h>
+#include <linaos/module.h>	/* print_modules */
+#include <linaos/prctl.h>
+#include <linaos/delay.h>
+#include <linaos/kprobes.h>
+#include <linaos/kexec.h>
+#include <linaos/backlight.h>
+#include <linaos/bug.h>
+#include <linaos/kdebug.h>
+#include <linaos/ratelimit.h>
+#include <linaos/context_tracking.h>
+#include <linaos/smp.h>
+#include <linaos/console.h>
+#include <linaos/kmsg_dump.h>
 
 #include <asm/emulated_ops.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/debugfs.h>
 #include <asm/interrupt.h>
 #include <asm/io.h>
@@ -162,7 +162,7 @@ extern void panic_flush_kmsg_start(void)
 	 * relatively minimal work. Don't use delay functions (TB may
 	 * be broken), don't crash dump (need to set a firmware log),
 	 * don't run notifiers. We do want to get some information to
-	 * Linux console.
+	 * LinaOS console.
 	 */
 	console_verbose();
 	bust_spinlocks(1);
@@ -379,7 +379,7 @@ void _exception(int signr, struct pt_regs *regs, int code, unsigned long addr)
  * recoverable.
  *
  * An alternative would be for HV NMIs to use SPRG for scratch to avoid the
- * HSPRG1 clobber, however this would cause guest SPRG to be clobbered. Linux
+ * HSPRG1 clobber, however this would cause guest SPRG to be clobbered. LinaOS
  * guests should always have MSR[RI]=0 when its scratch SPRG is in use, so
  * that would work. However any other guest OS that may have the SPRG live
  * and MSR[RI]=1 could encounter silent corruption.

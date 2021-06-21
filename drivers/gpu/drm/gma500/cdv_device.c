@@ -5,8 +5,8 @@
  *
  **************************************************************************/
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
 
 #include <drm/drm.h>
 

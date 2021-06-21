@@ -4,7 +4,7 @@
 #include "tests.h"
 #include <stdlib.h>
 #include <string.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 
 static int test(struct expr_parse_ctx *ctx, const char *e, double val2)
 {

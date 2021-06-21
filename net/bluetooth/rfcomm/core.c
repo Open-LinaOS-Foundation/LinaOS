@@ -1,5 +1,5 @@
 /*
-   RFCOMM implementation for Linux Bluetooth stack (BlueZ).
+   RFCOMM implementation for LinaOS Bluetooth stack (BlueZ).
    Copyright (C) 2002 Maxim Krasnyansky <maxk@qualcomm.com>
    Copyright (C) 2002 Marcel Holtmann <marcel@holtmann.org>
 
@@ -25,9 +25,9 @@
  * Bluetooth RFCOMM core.
  */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/kthread.h>
+#include <linaos/module.h>
+#include <linaos/debugfs.h>
+#include <linaos/kthread.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

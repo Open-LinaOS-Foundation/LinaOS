@@ -139,7 +139,7 @@ ath5k_debug_printtxbuf(struct ath5k_hw *ah, struct ath5k_buf *bf);
 
 #else /* no debugging */
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 static inline __printf(3, 4) void
 ATH5K_DBG(struct ath5k_hw *ah, unsigned int m, const char *fmt, ...) {}

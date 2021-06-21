@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * USB Video Class definitions.
  *
@@ -15,7 +15,7 @@
 #ifndef __LINUX_USB_VIDEO_H
 #define __LINUX_USB_VIDEO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* --------------------------------------------------------------------------
  * UVC constants

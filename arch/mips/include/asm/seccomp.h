@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef __ASM_SECCOMP_H
 
-#include <linux/unistd.h>
+#include <linaos/unistd.h>
 
 #ifdef CONFIG_COMPAT
 static inline const int *get_compat_mode1_syscalls(void)
 {
 	static const int syscalls_O32[] = {
-		__NR_O32_Linux + 3, __NR_O32_Linux + 4,
-		__NR_O32_Linux + 1, __NR_O32_Linux + 193,
+		__NR_O32_LinaOS + 3, __NR_O32_LinaOS + 4,
+		__NR_O32_LinaOS + 1, __NR_O32_LinaOS + 193,
 		-1, /* negative terminated */
 	};
 	static const int syscalls_N32[] = {
-		__NR_N32_Linux + 0, __NR_N32_Linux + 1,
-		__NR_N32_Linux + 58, __NR_N32_Linux + 211,
+		__NR_N32_LinaOS + 0, __NR_N32_LinaOS + 1,
+		__NR_N32_LinaOS + 58, __NR_N32_LinaOS + 211,
 		-1, /* negative terminated */
 	};
 

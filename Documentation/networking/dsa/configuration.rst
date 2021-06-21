@@ -27,12 +27,12 @@ documentation some common configuration scenarios are handled as showcases:
   The upstream port acts as different configurable Ethernet port.
 
 All configurations are performed with tools from iproute2, which is available
-at https://www.kernel.org/pub/linux/utils/net/iproute2/
+at https://www.kernel.org/pub/linaos/utils/net/iproute2/
 
-Through DSA every port of a switch is handled like a normal linux Ethernet
+Through DSA every port of a switch is handled like a normal linaos Ethernet
 interface. The CPU port is the switch port connected to an Ethernet MAC chip.
-The corresponding linux Ethernet interface is called the master interface.
-All other corresponding linux interfaces are called slave interfaces.
+The corresponding linaos Ethernet interface is called the master interface.
+All other corresponding linaos interfaces are called slave interfaces.
 
 The slave interfaces depend on the master interface being up in order for them
 to send or receive traffic. Prior to kernel v5.12, the state of the master

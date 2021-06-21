@@ -4,21 +4,21 @@
  *  Copyright (C) 2001, 2002 Andi Kleen, SuSE Labs.
  *  Copyright (C) 2008-2009, Red Hat Inc., Ingo Molnar
  */
-#include <linux/sched.h>		/* test_thread_flag(), ...	*/
-#include <linux/sched/task_stack.h>	/* task_stack_*(), ...		*/
-#include <linux/kdebug.h>		/* oops_begin/end, ...		*/
-#include <linux/extable.h>		/* search_exception_tables	*/
-#include <linux/memblock.h>		/* max_low_pfn			*/
-#include <linux/kfence.h>		/* kfence_handle_page_fault	*/
-#include <linux/kprobes.h>		/* NOKPROBE_SYMBOL, ...		*/
-#include <linux/mmiotrace.h>		/* kmmio_handler, ...		*/
-#include <linux/perf_event.h>		/* perf_sw_event		*/
-#include <linux/hugetlb.h>		/* hstate_index_to_shift	*/
-#include <linux/prefetch.h>		/* prefetchw			*/
-#include <linux/context_tracking.h>	/* exception_enter(), ...	*/
-#include <linux/uaccess.h>		/* faulthandler_disabled()	*/
-#include <linux/efi.h>			/* efi_crash_gracefully_on_page_fault()*/
-#include <linux/mm_types.h>
+#include <linaos/sched.h>		/* test_thread_flag(), ...	*/
+#include <linaos/sched/task_stack.h>	/* task_stack_*(), ...		*/
+#include <linaos/kdebug.h>		/* oops_begin/end, ...		*/
+#include <linaos/extable.h>		/* search_exception_tables	*/
+#include <linaos/memblock.h>		/* max_low_pfn			*/
+#include <linaos/kfence.h>		/* kfence_handle_page_fault	*/
+#include <linaos/kprobes.h>		/* NOKPROBE_SYMBOL, ...		*/
+#include <linaos/mmiotrace.h>		/* kmmio_handler, ...		*/
+#include <linaos/perf_event.h>		/* perf_sw_event		*/
+#include <linaos/hugetlb.h>		/* hstate_index_to_shift	*/
+#include <linaos/prefetch.h>		/* prefetchw			*/
+#include <linaos/context_tracking.h>	/* exception_enter(), ...	*/
+#include <linaos/uaccess.h>		/* faulthandler_disabled()	*/
+#include <linaos/efi.h>			/* efi_crash_gracefully_on_page_fault()*/
+#include <linaos/mm_types.h>
 
 #include <asm/cpufeature.h>		/* boot_cpu_has, ...		*/
 #include <asm/traps.h>			/* dotraplinkage, ...		*/

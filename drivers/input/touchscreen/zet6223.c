@@ -3,14 +3,14 @@
  * Copyright (C) 2016, Jelle van der Waa <jelle@vdwaa.nl>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/input/touchscreen.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
 #include <asm/unaligned.h>
 
 #define ZET6223_MAX_FINGERS		16

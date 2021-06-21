@@ -14,8 +14,8 @@
 #include "orangefs-bufmap.h"
 #include "orangefs-debugfs.h"
 
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <linaos/debugfs.h>
+#include <linaos/slab.h>
 
 /* this file implements the /dev/pvfs2-req device node */
 

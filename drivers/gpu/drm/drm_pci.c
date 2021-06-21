@@ -22,12 +22,12 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
 #include <drm/drm.h>
 #include <drm/drm_agpsupport.h>
@@ -48,7 +48,7 @@ static DEFINE_MUTEX(legacy_dev_list_lock);
  * @size: size of block to allocate
  * @align: alignment of block
  *
- * FIXME: This is a needless abstraction of the Linux dma-api and should be
+ * FIXME: This is a needless abstraction of the LinaOS dma-api and should be
  * removed.
  *
  * Return: A handle to the allocated memory block on success or NULL on
@@ -88,7 +88,7 @@ EXPORT_SYMBOL(drm_pci_alloc);
  * @dev: DRM device
  * @dmah: handle to memory block
  *
- * FIXME: This is a needless abstraction of the Linux dma-api and should be
+ * FIXME: This is a needless abstraction of the LinaOS dma-api and should be
  * removed.
  */
 void drm_pci_free(struct drm_device * dev, drm_dma_handle_t * dmah)

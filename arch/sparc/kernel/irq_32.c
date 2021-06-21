@@ -12,9 +12,9 @@
  *  Copyright (C) 1998-2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/seq_file.h>
+#include <linaos/export.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cpudata.h>

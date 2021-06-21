@@ -4,10 +4,10 @@
 #ifndef _E1000_VF_H_
 #define _E1000_VF_H_
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/if_ether.h>
 
 #include "regs.h"
 #include "defines.h"

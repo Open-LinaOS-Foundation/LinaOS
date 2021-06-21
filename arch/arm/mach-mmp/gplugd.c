@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/gplugd.c
+ *  linaos/arch/arm/mach-mmp/gplugd.c
  *
  *  Support for the Marvell PXA168-based GuruPlug Display (gplugD) Platform.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach-types.h>

@@ -9,23 +9,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/module.h>
+#include <linaos/ctype.h>
+#include <linaos/skbuff.h>
+#include <linaos/inet.h>
+#include <linaos/in.h>
+#include <linaos/udp.h>
+#include <linaos/tcp.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_conntrack_sip.h>
+#include <linaos/netfilter/nf_conntrack_sip.h>
 
 #define HELPER_NAME "sip"
 

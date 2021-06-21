@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2014 Akihiro Tsukada <tskd08@gmail.com>
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/pci.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
 
 #include "pt3.h"
 

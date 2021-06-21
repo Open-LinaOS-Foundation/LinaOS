@@ -3,9 +3,9 @@
  * Copyright 2019 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/dma-buf.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linaos/dma-buf.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_atomic_state_helper.h>

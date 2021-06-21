@@ -25,7 +25,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/prctl.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 
 typedef int (*bench_fn_t)(int argc, const char **argv);
 

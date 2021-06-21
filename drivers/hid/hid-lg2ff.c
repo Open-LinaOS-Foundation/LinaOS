@@ -9,9 +9,9 @@
  */
 
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/hid.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/hid.h>
 
 #include "hid-lg.h"
 

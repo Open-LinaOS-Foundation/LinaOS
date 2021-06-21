@@ -2,7 +2,7 @@
 // Copyright (c) 2019 Clément Péron
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
  * Keymap for the Beelink GS1 remote control

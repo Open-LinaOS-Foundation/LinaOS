@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
 
-#include <linux/ceph/decode.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/messenger.h>
+#include <linaos/ceph/decode.h>
+#include <linaos/ceph/auth.h>
+#include <linaos/ceph/ceph_features.h>
+#include <linaos/ceph/libceph.h>
+#include <linaos/ceph/messenger.h>
 
 #include "crypto.h"
 #include "auth_x.h"

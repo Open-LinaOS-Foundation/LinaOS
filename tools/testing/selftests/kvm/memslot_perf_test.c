@@ -19,7 +19,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #include <test_util.h>
 #include <kvm_util.h>

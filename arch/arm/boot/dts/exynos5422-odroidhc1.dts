@@ -23,7 +23,7 @@
 			pwms = <&pwm 2 2000000 0>;
 			pwm-names = "pwm2";
 			max_brightness = <255>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

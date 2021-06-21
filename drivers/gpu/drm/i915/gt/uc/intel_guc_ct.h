@@ -6,8 +6,8 @@
 #ifndef _INTEL_GUC_CT_H_
 #define _INTEL_GUC_CT_H_
 
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
 
 #include "intel_guc_fwif.h"
 

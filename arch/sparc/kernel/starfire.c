@@ -6,8 +6,8 @@
  * Copyright (C) 2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #include <asm/page.h>
 #include <asm/oplib.h>

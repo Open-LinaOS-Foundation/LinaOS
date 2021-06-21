@@ -6,7 +6,7 @@
  * trigger various real hardware errors. Software based error
  * injection can fake almost all kinds of errors with the help of a
  * user space helper tool aer-inject, which can be gotten from:
- *   https://www.kernel.org/pub/linux/utils/pci/aer-inject/
+ *   https://www.kernel.org/pub/linaos/utils/pci/aer-inject/
  *
  * Copyright 2009 Intel Corporation.
  *     Huang Ying <ying.huang@intel.com>
@@ -14,16 +14,16 @@
 
 #define dev_fmt(fmt) "aer_inject: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/stddef.h>
-#include <linux/device.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/miscdevice.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/stddef.h>
+#include <linaos/device.h>
 
 #include "portdrv.h"
 

@@ -35,8 +35,8 @@
 #ifndef _GVT_DISPLAY_H_
 #define _GVT_DISPLAY_H_
 
-#include <linux/types.h>
-#include <linux/hrtimer.h>
+#include <linaos/types.h>
+#include <linaos/hrtimer.h>
 
 struct intel_gvt;
 struct intel_vgpu;

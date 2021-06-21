@@ -30,7 +30,7 @@
  * SOFTWARE.
  *
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <rdma/rdma_cm.h>
 
 #include "rds_single_path.h"

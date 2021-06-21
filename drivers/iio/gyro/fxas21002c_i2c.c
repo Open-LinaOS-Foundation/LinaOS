@@ -5,11 +5,11 @@
  * Copyright (C) 2018 Linaro Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
 #include "fxas21002c.h"
 

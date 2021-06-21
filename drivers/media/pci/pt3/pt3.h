@@ -8,8 +8,8 @@
 #ifndef PT3_H
 #define PT3_H
 
-#include <linux/atomic.h>
-#include <linux/types.h>
+#include <linaos/atomic.h>
+#include <linaos/types.h>
 
 #include <media/dvb_demux.h>
 #include <media/dvb_frontend.h>

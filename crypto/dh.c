@@ -5,12 +5,12 @@
  * Authors: Salvatore Benedetto <salvatore.benedetto@intel.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <crypto/internal/kpp.h>
 #include <crypto/kpp.h>
 #include <crypto/dh.h>
-#include <linux/fips.h>
-#include <linux/mpi.h>
+#include <linaos/fips.h>
+#include <linaos/mpi.h>
 
 struct dh_ctx {
 	MPI p;	/* Value is guaranteed to be set. */

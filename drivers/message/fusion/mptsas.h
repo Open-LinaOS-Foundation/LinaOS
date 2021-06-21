@@ -1,12 +1,12 @@
 /*
- *  linux/drivers/message/fusion/mptsas.h
+ *  linaos/drivers/message/fusion/mptsas.h
  *      High performance SCSI + LAN / Fibre Channel device drivers.
  *      For use with PCI chip/adapter(s):
  *          LSIFC9xx/LSI409xx Fibre Channel
  *      running LSI MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinaOS@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/

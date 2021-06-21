@@ -9,10 +9,10 @@
 #ifdef __KERNEL__
 #ifndef __ASSEMBLY__
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <asm/cputable.h>
 #include <asm/cpu_has_feature.h>
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 typedef struct {
 	unsigned int base;

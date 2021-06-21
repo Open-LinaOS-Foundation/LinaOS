@@ -10,16 +10,16 @@
  * and Nettle, by Niels Möller.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/completion.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/module.h>
+#include <linaos/param.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/completion.h>
 #include "internal.h"
 
 LIST_HEAD(crypto_alg_list);

@@ -2,19 +2,19 @@
 /* drivers/leds/leds-s3c24xx.c
  *
  * (c) 2006 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C24XX - LEDs GPIO driver
 */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_data/leds-s3c24xx.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/leds-s3c24xx.h>
 
 /* our context */
 

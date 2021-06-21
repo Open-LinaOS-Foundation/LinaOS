@@ -14,7 +14,7 @@ config TN3270_TTY
 	prompt "Support for tty input/output on 3270 terminals"
 	depends on TN3270 && TTY
 	help
-	  Include support for using an IBM 3270 terminal as a Linux tty.
+	  Include support for using an IBM 3270 terminal as a LinaOS tty.
 
 config TN3270_FS
 	def_tristate m
@@ -28,7 +28,7 @@ config TN3270_CONSOLE
 	prompt "Support for console on 3270 terminal"
 	depends on TN3270=y && TN3270_TTY=y
 	help
-	  Include support for using an IBM 3270 terminal as a Linux system
+	  Include support for using an IBM 3270 terminal as a LinaOS system
 	  console.  Available only if 3270 support is compiled in statically.
 
 config TN3215
@@ -44,7 +44,7 @@ config TN3215_CONSOLE
 	depends on TN3215
 	help
 	  Include support for using an IBM 3215 line-mode terminal as a
-	  Linux system console.
+	  LinaOS system console.
 
 config CCW_CONSOLE
 	def_bool y if TN3215_CONSOLE || TN3270_CONSOLE
@@ -61,7 +61,7 @@ config SCLP_CONSOLE
 	prompt "Support for console on SCLP line mode terminal"
 	depends on SCLP_TTY
 	help
-	  Include support for using an IBM HWC line-mode terminal as the Linux
+	  Include support for using an IBM HWC line-mode terminal as the LinaOS
 	  system console.
 
 config SCLP_VT220_TTY
@@ -77,7 +77,7 @@ config SCLP_VT220_CONSOLE
 	depends on SCLP_VT220_TTY
 	help
 	  Include support for using an IBM SCLP VT220-compatible terminal as a
-	  Linux system console.
+	  LinaOS system console.
 
 config HMC_DRV
 	def_tristate m

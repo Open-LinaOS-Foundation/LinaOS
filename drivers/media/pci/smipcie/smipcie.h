@@ -8,15 +8,15 @@
 #ifndef _SMI_PCIE_H_
 #define _SMI_PCIE_H_
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
 #include <media/rc-core.h>
 
 #include <media/demux.h>

@@ -39,10 +39,10 @@
  */
 
 #include <crypto/twofish.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 asmlinkage void twofish_enc_blk(struct twofish_ctx *ctx, u8 *dst,
 				const u8 *src);

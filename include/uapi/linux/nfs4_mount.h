@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_NFS4_MOUNT_H
 #define _LINUX_NFS4_MOUNT_H
 
 /*
- *  linux/include/linux/nfs4_mount.h
+ *  linaos/include/linaos/nfs4_mount.h
  *
  *  Copyright (C) 2002  Trond Myklebust
  *
@@ -58,7 +58,7 @@ struct nfs4_mount_data {
 
 /* bits in the flags field */
 /* Note: the fields that correspond to existing NFSv2/v3 mount options
- * 	 should mirror the values from include/linux/nfs_mount.h
+ * 	 should mirror the values from include/linaos/nfs_mount.h
  */
 
 #define NFS4_MOUNT_SOFT		0x0001	/* 1 */

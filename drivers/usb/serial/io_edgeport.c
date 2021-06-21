@@ -25,23 +25,23 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/serial.h>
-#include <linux/ioctl.h>
-#include <linux/wait.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/serial.h>
+#include <linaos/ioctl.h>
+#include <linaos/wait.h>
+#include <linaos/firmware.h>
+#include <linaos/ihex.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 #include "io_edgeport.h"
 #include "io_ionsp.h"		/* info for the iosp messages */
 #include "io_16654.h"		/* 16654 UART defines */

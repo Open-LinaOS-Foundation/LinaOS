@@ -35,12 +35,12 @@
  * otherwise both handlers will fire at the same time!
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
 
 #include <asm/exception.h>
 

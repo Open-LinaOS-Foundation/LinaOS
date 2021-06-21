@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/bitops.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/bitops.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 
 #include <asm/asid.h>
 #include <asm/mmu_context.h>

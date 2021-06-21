@@ -5,12 +5,12 @@
  * Copyright (c) 2008 Dmitry Baryshkov
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/rfkill.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/rfkill.h>
 
 #include "tosa_bt.h"
 

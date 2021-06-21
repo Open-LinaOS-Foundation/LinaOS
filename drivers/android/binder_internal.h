@@ -3,16 +3,16 @@
 #ifndef _LINUX_BINDER_INTERNAL_H
 #define _LINUX_BINDER_INTERNAL_H
 
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/uidgid.h>
-#include <uapi/linux/android/binderfs.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/refcount.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
+#include <linaos/uidgid.h>
+#include <uapi/linaos/android/binderfs.h>
 #include "binder_alloc.h"
 
 struct binder_context {

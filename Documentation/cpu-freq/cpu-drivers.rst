@@ -7,7 +7,7 @@ How to Implement a new CPUFreq Processor Driver
 Authors:
 
 
-	- Dominik Brodowski  <linux@brodo.de>
+	- Dominik Brodowski  <linaos@brodo.de>
 	- Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 	- Viresh Kumar <viresh.kumar@linaro.org>
 

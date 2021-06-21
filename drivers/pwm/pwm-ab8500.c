@@ -4,13 +4,13 @@
  *
  * Author: Arun R Murthy <arun.murthy@stericsson.com>
  */
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/pwm.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/module.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/pwm.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/module.h>
 
 /*
  * PWM Out generators

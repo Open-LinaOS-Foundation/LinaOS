@@ -5,34 +5,34 @@
  * Copyright Alan Cox GW4PTS (alan@lxorguk.ukuu.org.uk)
  * Copyright Tomi Manninen OH2BNS (oh2bns@sral.fi)
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/slab.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
 #include <net/arp.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>	/* For TIOCINQ/OUTQ */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/fcntl.h>
+#include <linaos/termios.h>	/* For TIOCINQ/OUTQ */
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
 #include <net/netrom.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linaos/seq_file.h>
+#include <linaos/export.h>
 
 static unsigned int nr_neigh_no = 1;
 

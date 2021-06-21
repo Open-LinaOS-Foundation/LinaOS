@@ -4,9 +4,9 @@
 /*
  * User space memory access functions
  */
-#include <linux/compiler.h>
-#include <linux/kasan-checks.h>
-#include <linux/string.h>
+#include <linaos/compiler.h>
+#include <linaos/kasan-checks.h>
+#include <linaos/string.h>
 #include <asm/asm.h>
 #include <asm/page.h>
 #include <asm/smap.h>

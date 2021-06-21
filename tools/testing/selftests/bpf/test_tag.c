@@ -13,13 +13,13 @@
 
 #include <sys/socket.h>
 
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/if_alg.h>
+#include <linaos/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/if_alg.h>
 
 #include <bpf/bpf.h>
 
-#include "../../../include/linux/filter.h"
+#include "../../../include/linaos/filter.h"
 #include "bpf_rlimit.h"
 
 static struct bpf_insn prog[BPF_MAXINSNS];

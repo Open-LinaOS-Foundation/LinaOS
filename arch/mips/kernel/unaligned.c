@@ -73,13 +73,13 @@
  *	 A store crossing a page boundary might be executed only partially.
  *	 Undo the partial store in this case.
  */
-#include <linux/context_tracking.h>
-#include <linux/mm.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/perf_event.h>
+#include <linaos/context_tracking.h>
+#include <linaos/mm.h>
+#include <linaos/signal.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>
+#include <linaos/debugfs.h>
+#include <linaos/perf_event.h>
 
 #include <asm/asm.h>
 #include <asm/branch.h>
@@ -91,7 +91,7 @@
 #include <asm/inst.h>
 #include <asm/unaligned-emul.h>
 #include <asm/mmu_context.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "access-helper.h"
 

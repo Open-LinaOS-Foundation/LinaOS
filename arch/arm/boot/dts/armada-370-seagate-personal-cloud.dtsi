@@ -88,19 +88,19 @@
 
 		power {
 			label = "Power button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio1 19 GPIO_ACTIVE_HIGH>;
 			debounce-interval = <100>;
 		};
 		reset {
 			label = "Reset Button";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio1 23 GPIO_ACTIVE_LOW>;
 			debounce-interval = <100>;
 		};
 		button {
 			label = "USB VBUS error";
-			linux,code = <KEY_UNKNOWN>;
+			linaos,code = <KEY_UNKNOWN>;
 			gpios = <&gpio1 21 GPIO_ACTIVE_LOW>;
 			debounce-interval = <100>;
 		};

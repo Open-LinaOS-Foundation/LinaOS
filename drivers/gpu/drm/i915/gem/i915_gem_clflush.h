@@ -7,7 +7,7 @@
 #ifndef __I915_GEM_CLFLUSH_H__
 #define __I915_GEM_CLFLUSH_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct drm_i915_gem_object;

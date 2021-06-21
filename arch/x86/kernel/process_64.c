@@ -3,7 +3,7 @@
  *  Copyright (C) 1995  Linus Torvalds
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  *
  *  X86-64 port
  *	Andi Kleen.
@@ -15,30 +15,30 @@
  * This file handles the architecture-dependent parts of process handling..
  */
 
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/elfcore.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/notifier.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/prctl.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/ftrace.h>
-#include <linux/syscalls.h>
+#include <linaos/cpu.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/elfcore.h>
+#include <linaos/smp.h>
+#include <linaos/slab.h>
+#include <linaos/user.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/ptrace.h>
+#include <linaos/notifier.h>
+#include <linaos/kprobes.h>
+#include <linaos/kdebug.h>
+#include <linaos/prctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/ftrace.h>
+#include <linaos/syscalls.h>
 
 #include <asm/processor.h>
 #include <asm/fpu/internal.h>
@@ -221,7 +221,7 @@ static __always_inline void save_base_legacy(struct task_struct *prev_p,
 		 * context switch between 64-bit programs), and avoiding
 		 * the RDMSR helps a lot, so we just assume that whatever
 		 * value is already saved is correct.  This matches historical
-		 * Linux behavior, so it won't break existing applications.
+		 * LinaOS behavior, so it won't break existing applications.
 		 *
 		 * To avoid leaking state, on non-X86_BUG_NULL_SEG CPUs, if we
 		 * report that the base is zero, it needs to actually be zero:
@@ -231,7 +231,7 @@ static __always_inline void save_base_legacy(struct task_struct *prev_p,
 		/*
 		 * If the selector is 1, 2, or 3, then the base is zero on
 		 * !X86_BUG_NULL_SEG CPUs and could be anything on
-		 * X86_BUG_NULL_SEG CPUs.  In the latter case, Linux
+		 * X86_BUG_NULL_SEG CPUs.  In the latter case, LinaOS
 		 * has never attempted to preserve the base across context
 		 * switches.
 		 *

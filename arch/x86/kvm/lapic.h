@@ -4,7 +4,7 @@
 
 #include <kvm/iodev.h>
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include "hyperv.h"
 

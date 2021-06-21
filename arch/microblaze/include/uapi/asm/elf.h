@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2008-2009 Michal Simek <monstr@monstr.eu>
  * Copyright (C) 2008-2009 PetaLogix
@@ -12,7 +12,7 @@
 #ifndef _UAPI_ASM_MICROBLAZE_ELF_H
 #define _UAPI_ASM_MICROBLAZE_ELF_H
 
-#include <linux/elf-em.h>
+#include <linaos/elf-em.h>
 
 /*
  * Note there is no "official" ELF designation for Microblaze.
@@ -33,7 +33,7 @@
  */
 #define ELF_CLASS	ELFCLASS32
 
-#ifndef __uClinux__
+#ifndef __uClinaos__
 
 /*
  * ELF register definitions..
@@ -118,6 +118,6 @@ do {							\
 } while (0)
 
 
-#endif /* __uClinux__ */
+#endif /* __uClinaos__ */
 
 #endif /* _UAPI_ASM_MICROBLAZE_ELF_H */

@@ -10,7 +10,7 @@
 #ifndef VIDTV_COMMON_H
 #define VIDTV_COMMON_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define CLOCK_UNIT_90KHZ 90000
 #define CLOCK_UNIT_27MHZ 27000000

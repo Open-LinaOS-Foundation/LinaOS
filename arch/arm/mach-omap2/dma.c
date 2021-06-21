@@ -18,16 +18,16 @@
  *	- G, Manjunath Kondaiah <manjugk@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/of.h>
-#include <linux/omap-dma.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/of.h>
+#include <linaos/omap-dma.h>
 
 #include "soc.h"
 

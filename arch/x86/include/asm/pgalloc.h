@@ -2,9 +2,9 @@
 #ifndef _ASM_X86_PGALLOC_H
 #define _ASM_X86_PGALLOC_H
 
-#include <linux/threads.h>
-#include <linux/mm.h>		/* for struct page */
-#include <linux/pagemap.h>
+#include <linaos/threads.h>
+#include <linaos/mm.h>		/* for struct page */
+#include <linaos/pagemap.h>
 
 #define __HAVE_ARCH_PTE_ALLOC_ONE
 #define __HAVE_ARCH_PGD_FREE

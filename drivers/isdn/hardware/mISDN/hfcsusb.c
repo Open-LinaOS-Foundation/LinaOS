@@ -16,11 +16,11 @@
  * Revision: 0.3.3 (socket), 2008-11-05
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/usb.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/usb.h>
+#include <linaos/mISDNhw.h>
+#include <linaos/slab.h>
 #include "hfcsusb.h"
 
 static unsigned int debug;

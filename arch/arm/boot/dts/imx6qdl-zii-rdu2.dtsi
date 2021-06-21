@@ -268,7 +268,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart3>;
 	uart-has-rtscts;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	status = "okay";
 };
 

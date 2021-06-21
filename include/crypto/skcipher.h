@@ -8,9 +8,9 @@
 #ifndef _CRYPTO_SKCIPHER_H
 #define _CRYPTO_SKCIPHER_H
 
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/crypto.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 /**
  *	struct skcipher_request - Symmetric key cipher request

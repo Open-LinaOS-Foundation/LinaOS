@@ -6,9 +6,9 @@
  *    Author(s): Heiko Carstens <heiko.carstens@de.ibm.com>
  */
 
-#include <linux/seq_file.h>
-#include <linux/cpu.h>
-#include <linux/cacheinfo.h>
+#include <linaos/seq_file.h>
+#include <linaos/cpu.h>
+#include <linaos/cacheinfo.h>
 #include <asm/facility.h>
 
 enum {

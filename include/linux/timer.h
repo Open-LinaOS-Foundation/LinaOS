@@ -2,11 +2,11 @@
 #ifndef _LINUX_TIMER_H
 #define _LINUX_TIMER_H
 
-#include <linux/list.h>
-#include <linux/ktime.h>
-#include <linux/stddef.h>
-#include <linux/debugobjects.h>
-#include <linux/stringify.h>
+#include <linaos/list.h>
+#include <linaos/ktime.h>
+#include <linaos/stddef.h>
+#include <linaos/debugobjects.h>
+#include <linaos/stringify.h>
 
 struct timer_list {
 	/*

@@ -13,7 +13,7 @@ Headers and dependencies
 
 To do ISA style DMA you need to include two headers::
 
-	#include <linux/dma-mapping.h>
+	#include <linaos/dma-mapping.h>
 	#include <asm/dma.h>
 
 The first is the generic DMA API used to convert virtual addresses to

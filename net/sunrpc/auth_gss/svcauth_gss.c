@@ -38,17 +38,17 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/user_namespace.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/user_namespace.h>
 
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/sunrpc/svcauth_gss.h>
-#include <linux/sunrpc/cache.h>
+#include <linaos/sunrpc/auth_gss.h>
+#include <linaos/sunrpc/gss_err.h>
+#include <linaos/sunrpc/svcauth.h>
+#include <linaos/sunrpc/svcauth_gss.h>
+#include <linaos/sunrpc/cache.h>
 
 #include <trace/events/rpcgss.h>
 

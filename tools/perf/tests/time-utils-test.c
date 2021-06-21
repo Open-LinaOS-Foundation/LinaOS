@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
-#include <linux/time64.h>
+#include <linaos/compiler.h>
+#include <linaos/time64.h>
 #include <inttypes.h>
 #include <string.h>
 #include "time-utils.h"

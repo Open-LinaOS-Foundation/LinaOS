@@ -10,49 +10,49 @@
  * History:
  * 0-5 A number of folks worked on this driver in bits and pieces but the major
  *     contribution came from Suraj Iyer and Anant Gole
- * 6.0 Anant Gole - rewrote the driver as per Linux conventions
+ * 6.0 Anant Gole - rewrote the driver as per LinaOS conventions
  * 6.1 Chaithrika U S - added support for Gigabit and RMII features,
  *     PHY layer usage
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/highmem.h>
-#include <linux/proc_fs.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/semaphore.h>
-#include <linux/phy.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/davinci_emac.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/in.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/highmem.h>
+#include <linaos/proc_fs.h>
+#include <linaos/ctype.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/semaphore.h>
+#include <linaos/phy.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/davinci_emac.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_net.h>
+#include <linaos/mfd/syscon.h>
 
 #include <asm/irq.h>
 #include <asm/page.h>
@@ -86,7 +86,7 @@ MODULE_PARM_DESC(debug_level, "DaVinci EMAC debug level (NETIF_MSG bits)");
 #define EMAC_MINOR_VERSION	1
 #define EMAC_MODULE_VERSION	"6.1"
 MODULE_VERSION(EMAC_MODULE_VERSION);
-static const char emac_version_string[] = "TI DaVinci EMAC Linux v6.1";
+static const char emac_version_string[] = "TI DaVinci EMAC LinaOS v6.1";
 
 /* Configuration items */
 #define EMAC_DEF_PASS_CRC		(0) /* Do not pass CRC up to frames */
@@ -1346,7 +1346,7 @@ static void emac_adjust_link(struct net_device *ndev)
 }
 
 /*************************************************************************
- *  Linux Driver Model
+ *  LinaOS Driver Model
  *************************************************************************/
 
 /**

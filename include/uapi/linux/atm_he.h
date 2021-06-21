@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* atm_he.h */
 
 #ifndef LINUX_ATM_HE_H
 #define LINUX_ATM_HE_H
 
-#include <linux/atmioc.h>
+#include <linaos/atmioc.h>
 
 #define HE_GET_REG	_IOW('a', ATMIOC_SARPRV, struct atmif_sioc)
 

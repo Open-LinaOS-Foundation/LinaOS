@@ -14,19 +14,19 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include "i2c-stm32.h"
 

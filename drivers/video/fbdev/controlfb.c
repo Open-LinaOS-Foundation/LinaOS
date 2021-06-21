@@ -31,22 +31,22 @@
  *  more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/nvram.h>
-#include <linux/adb.h>
-#include <linux/cuda.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/nvram.h>
+#include <linaos/adb.h>
+#include <linaos/cuda.h>
 #ifdef CONFIG_PPC_PMAC
 #include <asm/prom.h>
 #endif

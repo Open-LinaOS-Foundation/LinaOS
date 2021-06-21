@@ -9,9 +9,9 @@
  *               Ard Biesheuvel <ard.biesheuvel@linaro.org>
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 #include <crypto/sha3.h>
 #include <asm/unaligned.h>
 

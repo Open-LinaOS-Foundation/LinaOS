@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _ASM_X86_SWAB_H
 #define _ASM_X86_SWAB_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 static inline __attribute_const__ __u32 __arch_swab32(__u32 val)
 {

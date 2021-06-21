@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	PF_INET6 socket protocol family
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Adapted from linux/net/ipv4/af_inet.c
+ *	Adapted from linaos/net/ipv4/af_inet.c
  *
  *	Fixes:
  *	piggy, Karl Knutson	:	Socket protocol table
@@ -16,29 +16,29 @@
 
 #define pr_fmt(fmt) "IPv6: " fmt
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/icmpv6.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/icmpv6.h>
+#include <linaos/netfilter_ipv6.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
@@ -63,13 +63,13 @@
 #include <net/compat.h>
 #include <net/xfrm.h>
 
-#include <linux/uaccess.h>
-#include <linux/mroute6.h>
+#include <linaos/uaccess.h>
+#include <linaos/mroute6.h>
 
 #include "ip6_offload.h"
 
 MODULE_AUTHOR("Cast of dozens");
-MODULE_DESCRIPTION("IPv6 protocol stack for Linux");
+MODULE_DESCRIPTION("IPv6 protocol stack for LinaOS");
 MODULE_LICENSE("GPL");
 
 /* The inetsw6 table contains everything that inet6_create needs to

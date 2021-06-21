@@ -3,11 +3,11 @@
 //
 // Copyright (C) 2010 by Mauro Carvalho Chehab
 
-#include <linux/export.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
+#include <linaos/export.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/kmod.h>
+#include <linaos/sched.h>
 #include "rc-core-priv.h"
 
 /* Used to keep track of IR raw clients, protected by ir_raw_handler_lock */

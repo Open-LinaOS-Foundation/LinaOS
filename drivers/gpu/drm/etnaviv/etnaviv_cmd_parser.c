@@ -3,7 +3,7 @@
  * Copyright (C) 2015-2018 Etnaviv Project
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "etnaviv_gem.h"
 #include "etnaviv_gpu.h"

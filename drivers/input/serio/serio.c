@@ -12,14 +12,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <linaos/stddef.h>
+#include <linaos/module.h>
+#include <linaos/serio.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Serio abstraction core");

@@ -5,16 +5,16 @@
  * Copyright (C) 2013 Marek Vasut <marex@denx.de>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/stmp_device.h>
-#include <linux/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/stmp_device.h>
+#include <linaos/clk.h>
 
 #include <crypto/aes.h>
 #include <crypto/sha1.h>
@@ -121,7 +121,7 @@ struct dcp_export_state {
 
 /*
  * There can even be only one instance of the MXS DCP due to the
- * design of Linux Crypto API.
+ * design of LinaOS Crypto API.
  */
 static struct dcp *global_sdcp;
 

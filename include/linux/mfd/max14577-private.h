@@ -10,8 +10,8 @@
 #ifndef __MAX14577_PRIVATE_H__
 #define __MAX14577_PRIVATE_H__
 
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
 
 #define I2C_ADDR_PMIC	(0x46 >> 1)
 #define I2C_ADDR_MUIC	(0x4A >> 1)

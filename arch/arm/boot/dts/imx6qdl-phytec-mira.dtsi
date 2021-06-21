@@ -38,7 +38,7 @@
 		blue {
 			label = "phyboard-mira:blue";
 			gpios = <&gpio5 24 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 	};
 

@@ -12,20 +12,20 @@
  *     https://www.silabs.com/Support%20Documents/TechnicalDocs/AN619.pdf
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/rational.h>
-#include <linux/i2c.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/si5351.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/rational.h>
+#include <linaos/i2c.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_data/si5351.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 #include <asm/div64.h>
 
 #include "clk-si5351.h"

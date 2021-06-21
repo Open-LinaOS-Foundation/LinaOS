@@ -11,12 +11,12 @@
 #include <drm/drm_modes.h>
 #include <drm/drm_panel.h>
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/media-bus-format.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/media-bus-format.h>
 
 #include <video/mipi_display.h>
 

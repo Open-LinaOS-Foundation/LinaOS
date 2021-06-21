@@ -11,7 +11,7 @@
 &keypad {
 	keypad,num-rows = <8>;
 	keypad,num-columns = <8>;
-	linux,keymap = <
+	linaos,keymap = <
 	MATRIX_KEY(5, 0, KEY_VOLUMEUP)
 	MATRIX_KEY(3, 0, KEY_VOLUMEDOWN)
 	>;

@@ -428,8 +428,8 @@ export INSTALL SHELL_PATH
 
 SHELL = $(SHELL_PATH)
 
-beauty_linux_dir := $(srctree)/tools/perf/trace/beauty/include/linux/
-linux_uapi_dir := $(srctree)/tools/include/uapi/linux
+beauty_linaos_dir := $(srctree)/tools/perf/trace/beauty/include/linaos/
+linaos_uapi_dir := $(srctree)/tools/include/uapi/linaos
 asm_generic_uapi_dir := $(srctree)/tools/include/uapi/asm-generic
 arch_asm_uapi_dir := $(srctree)/tools/arch/$(SRCARCH)/include/uapi/asm/
 x86_arch_asm_uapi_dir := $(srctree)/tools/arch/x86/include/uapi/asm/
@@ -450,26 +450,26 @@ $(drm_ioctl_array): $(drm_hdr_dir)/drm.h $(drm_hdr_dir)/i915_drm.h $(drm_ioctl_t
 fadvise_advice_array := $(beauty_outdir)/fadvise_advice_array.c
 fadvise_advice_tbl := $(srctree)/tools/perf/trace/beauty/fadvise.sh
 
-$(fadvise_advice_array): $(linux_uapi_dir)/in.h $(fadvise_advice_tbl)
-	$(Q)$(SHELL) '$(fadvise_advice_tbl)' $(linux_uapi_dir) > $@
+$(fadvise_advice_array): $(linaos_uapi_dir)/in.h $(fadvise_advice_tbl)
+	$(Q)$(SHELL) '$(fadvise_advice_tbl)' $(linaos_uapi_dir) > $@
 
 fsmount_arrays := $(beauty_outdir)/fsmount_arrays.c
 fsmount_tbls := $(srctree)/tools/perf/trace/beauty/fsmount.sh
 
-$(fsmount_arrays): $(linux_uapi_dir)/fs.h $(fsmount_tbls)
-	$(Q)$(SHELL) '$(fsmount_tbls)' $(linux_uapi_dir) > $@
+$(fsmount_arrays): $(linaos_uapi_dir)/fs.h $(fsmount_tbls)
+	$(Q)$(SHELL) '$(fsmount_tbls)' $(linaos_uapi_dir) > $@
 
 fspick_arrays := $(beauty_outdir)/fspick_arrays.c
 fspick_tbls := $(srctree)/tools/perf/trace/beauty/fspick.sh
 
-$(fspick_arrays): $(linux_uapi_dir)/fs.h $(fspick_tbls)
-	$(Q)$(SHELL) '$(fspick_tbls)' $(linux_uapi_dir) > $@
+$(fspick_arrays): $(linaos_uapi_dir)/fs.h $(fspick_tbls)
+	$(Q)$(SHELL) '$(fspick_tbls)' $(linaos_uapi_dir) > $@
 
 fsconfig_arrays := $(beauty_outdir)/fsconfig_arrays.c
 fsconfig_tbls := $(srctree)/tools/perf/trace/beauty/fsconfig.sh
 
-$(fsconfig_arrays): $(linux_uapi_dir)/fs.h $(fsconfig_tbls)
-	$(Q)$(SHELL) '$(fsconfig_tbls)' $(linux_uapi_dir) > $@
+$(fsconfig_arrays): $(linaos_uapi_dir)/fs.h $(fsconfig_tbls)
+	$(Q)$(SHELL) '$(fsconfig_tbls)' $(linaos_uapi_dir) > $@
 
 pkey_alloc_access_rights_array := $(beauty_outdir)/pkey_alloc_access_rights_array.c
 asm_generic_hdr_dir := $(srctree)/tools/include/uapi/asm-generic/
@@ -493,14 +493,14 @@ $(sndrv_pcm_ioctl_array): $(sndrv_pcm_hdr_dir)/asound.h $(sndrv_pcm_ioctl_tbl)
 	$(Q)$(SHELL) '$(sndrv_pcm_ioctl_tbl)' $(sndrv_pcm_hdr_dir) > $@
 
 kcmp_type_array := $(beauty_outdir)/kcmp_type_array.c
-kcmp_hdr_dir := $(srctree)/tools/include/uapi/linux/
+kcmp_hdr_dir := $(srctree)/tools/include/uapi/linaos/
 kcmp_type_tbl := $(srctree)/tools/perf/trace/beauty/kcmp_type.sh
 
 $(kcmp_type_array): $(kcmp_hdr_dir)/kcmp.h $(kcmp_type_tbl)
 	$(Q)$(SHELL) '$(kcmp_type_tbl)' $(kcmp_hdr_dir) > $@
 
 kvm_ioctl_array := $(beauty_ioctl_outdir)/kvm_ioctl_array.c
-kvm_hdr_dir := $(srctree)/tools/include/uapi/linux
+kvm_hdr_dir := $(srctree)/tools/include/uapi/linaos
 kvm_ioctl_tbl := $(srctree)/tools/perf/trace/beauty/kvm_ioctl.sh
 
 $(kvm_ioctl_array): $(kvm_hdr_dir)/kvm.h $(kvm_ioctl_tbl)
@@ -509,24 +509,24 @@ $(kvm_ioctl_array): $(kvm_hdr_dir)/kvm.h $(kvm_ioctl_tbl)
 socket_ipproto_array := $(beauty_outdir)/socket_ipproto_array.c
 socket_ipproto_tbl := $(srctree)/tools/perf/trace/beauty/socket_ipproto.sh
 
-$(socket_ipproto_array): $(linux_uapi_dir)/in.h $(socket_ipproto_tbl)
-	$(Q)$(SHELL) '$(socket_ipproto_tbl)' $(linux_uapi_dir) > $@
+$(socket_ipproto_array): $(linaos_uapi_dir)/in.h $(socket_ipproto_tbl)
+	$(Q)$(SHELL) '$(socket_ipproto_tbl)' $(linaos_uapi_dir) > $@
 
 socket_arrays := $(beauty_outdir)/socket_arrays.c
 socket_tbl := $(srctree)/tools/perf/trace/beauty/socket.sh
 
-$(socket_arrays): $(beauty_linux_dir)/socket.h $(socket_tbl)
-	$(Q)$(SHELL) '$(socket_tbl)' $(beauty_linux_dir) > $@
+$(socket_arrays): $(beauty_linaos_dir)/socket.h $(socket_tbl)
+	$(Q)$(SHELL) '$(socket_tbl)' $(beauty_linaos_dir) > $@
 
 vhost_virtio_ioctl_array := $(beauty_ioctl_outdir)/vhost_virtio_ioctl_array.c
-vhost_virtio_hdr_dir := $(srctree)/tools/include/uapi/linux
+vhost_virtio_hdr_dir := $(srctree)/tools/include/uapi/linaos
 vhost_virtio_ioctl_tbl := $(srctree)/tools/perf/trace/beauty/vhost_virtio_ioctl.sh
 
 $(vhost_virtio_ioctl_array): $(vhost_virtio_hdr_dir)/vhost.h $(vhost_virtio_ioctl_tbl)
 	$(Q)$(SHELL) '$(vhost_virtio_ioctl_tbl)' $(vhost_virtio_hdr_dir) > $@
 
 perf_ioctl_array := $(beauty_ioctl_outdir)/perf_ioctl_array.c
-perf_hdr_dir := $(srctree)/tools/include/uapi/linux
+perf_hdr_dir := $(srctree)/tools/include/uapi/linaos
 perf_ioctl_tbl := $(srctree)/tools/perf/trace/beauty/perf_ioctl.sh
 
 $(perf_ioctl_array): $(perf_hdr_dir)/perf_event.h $(perf_ioctl_tbl)
@@ -542,26 +542,26 @@ $(madvise_behavior_array): $(madvise_hdr_dir)/mman-common.h $(madvise_behavior_t
 mmap_flags_array := $(beauty_outdir)/mmap_flags_array.c
 mmap_flags_tbl := $(srctree)/tools/perf/trace/beauty/mmap_flags.sh
 
-$(mmap_flags_array): $(linux_uapi_dir)/mman.h $(asm_generic_uapi_dir)/mman.h $(asm_generic_uapi_dir)/mman-common.h $(mmap_flags_tbl)
-	$(Q)$(SHELL) '$(mmap_flags_tbl)' $(linux_uapi_dir) $(asm_generic_uapi_dir) $(arch_asm_uapi_dir) > $@
+$(mmap_flags_array): $(linaos_uapi_dir)/mman.h $(asm_generic_uapi_dir)/mman.h $(asm_generic_uapi_dir)/mman-common.h $(mmap_flags_tbl)
+	$(Q)$(SHELL) '$(mmap_flags_tbl)' $(linaos_uapi_dir) $(asm_generic_uapi_dir) $(arch_asm_uapi_dir) > $@
 
 mremap_flags_array := $(beauty_outdir)/mremap_flags_array.c
 mremap_flags_tbl := $(srctree)/tools/perf/trace/beauty/mremap_flags.sh
 
-$(mremap_flags_array): $(linux_uapi_dir)/mman.h $(mremap_flags_tbl)
-	$(Q)$(SHELL) '$(mremap_flags_tbl)' $(linux_uapi_dir) > $@
+$(mremap_flags_array): $(linaos_uapi_dir)/mman.h $(mremap_flags_tbl)
+	$(Q)$(SHELL) '$(mremap_flags_tbl)' $(linaos_uapi_dir) > $@
 
 mount_flags_array := $(beauty_outdir)/mount_flags_array.c
 mount_flags_tbl := $(srctree)/tools/perf/trace/beauty/mount_flags.sh
 
-$(mount_flags_array): $(linux_uapi_dir)/fs.h $(mount_flags_tbl)
-	$(Q)$(SHELL) '$(mount_flags_tbl)' $(linux_uapi_dir) > $@
+$(mount_flags_array): $(linaos_uapi_dir)/fs.h $(mount_flags_tbl)
+	$(Q)$(SHELL) '$(mount_flags_tbl)' $(linaos_uapi_dir) > $@
 
 move_mount_flags_array := $(beauty_outdir)/move_mount_flags_array.c
 move_mount_flags_tbl := $(srctree)/tools/perf/trace/beauty/move_mount_flags.sh
 
-$(move_mount_flags_array): $(linux_uapi_dir)/fs.h $(move_mount_flags_tbl)
-	$(Q)$(SHELL) '$(move_mount_flags_tbl)' $(linux_uapi_dir) > $@
+$(move_mount_flags_array): $(linaos_uapi_dir)/fs.h $(move_mount_flags_tbl)
+	$(Q)$(SHELL) '$(move_mount_flags_tbl)' $(linaos_uapi_dir) > $@
 
 
 mmap_prot_array := $(beauty_outdir)/mmap_prot_array.c
@@ -571,7 +571,7 @@ $(mmap_prot_array): $(asm_generic_uapi_dir)/mman.h $(asm_generic_uapi_dir)/mman-
 	$(Q)$(SHELL) '$(mmap_prot_tbl)' $(asm_generic_uapi_dir) $(arch_asm_uapi_dir) > $@
 
 prctl_option_array := $(beauty_outdir)/prctl_option_array.c
-prctl_hdr_dir := $(srctree)/tools/include/uapi/linux/
+prctl_hdr_dir := $(srctree)/tools/include/uapi/linaos/
 prctl_option_tbl := $(srctree)/tools/perf/trace/beauty/prctl_option.sh
 
 $(prctl_option_array): $(prctl_hdr_dir)/prctl.h $(prctl_option_tbl)
@@ -580,8 +580,8 @@ $(prctl_option_array): $(prctl_hdr_dir)/prctl.h $(prctl_option_tbl)
 usbdevfs_ioctl_array := $(beauty_ioctl_outdir)/usbdevfs_ioctl_array.c
 usbdevfs_ioctl_tbl := $(srctree)/tools/perf/trace/beauty/usbdevfs_ioctl.sh
 
-$(usbdevfs_ioctl_array): $(linux_uapi_dir)/usbdevice_fs.h $(usbdevfs_ioctl_tbl)
-	$(Q)$(SHELL) '$(usbdevfs_ioctl_tbl)' $(linux_uapi_dir) > $@
+$(usbdevfs_ioctl_array): $(linaos_uapi_dir)/usbdevice_fs.h $(usbdevfs_ioctl_tbl)
+	$(Q)$(SHELL) '$(usbdevfs_ioctl_tbl)' $(linaos_uapi_dir) > $@
 
 x86_arch_prctl_code_array := $(beauty_outdir)/x86_arch_prctl_code_array.c
 x86_arch_prctl_code_tbl := $(srctree)/tools/perf/trace/beauty/x86_arch_prctl.sh
@@ -604,8 +604,8 @@ $(x86_arch_MSRs_array): $(x86_arch_asm_dir)/msr-index.h $(x86_arch_MSRs_tbl)
 rename_flags_array := $(beauty_outdir)/rename_flags_array.c
 rename_flags_tbl := $(srctree)/tools/perf/trace/beauty/rename_flags.sh
 
-$(rename_flags_array): $(linux_uapi_dir)/fs.h $(rename_flags_tbl)
-	$(Q)$(SHELL) '$(rename_flags_tbl)' $(linux_uapi_dir) > $@
+$(rename_flags_array): $(linaos_uapi_dir)/fs.h $(rename_flags_tbl)
+	$(Q)$(SHELL) '$(rename_flags_tbl)' $(linaos_uapi_dir) > $@
 
 arch_errno_name_array := $(beauty_outdir)/arch_errno_name_array.c
 arch_errno_hdr_dir := $(srctree)/tools
@@ -617,8 +617,8 @@ $(arch_errno_name_array): $(arch_errno_tbl)
 sync_file_range_arrays := $(beauty_outdir)/sync_file_range_arrays.c
 sync_file_range_tbls := $(srctree)/tools/perf/trace/beauty/sync_file_range.sh
 
-$(sync_file_range_arrays): $(linux_uapi_dir)/fs.h $(sync_file_range_tbls)
-	$(Q)$(SHELL) '$(sync_file_range_tbls)' $(linux_uapi_dir) > $@
+$(sync_file_range_arrays): $(linaos_uapi_dir)/fs.h $(sync_file_range_tbls)
+	$(Q)$(SHELL) '$(sync_file_range_tbls)' $(linaos_uapi_dir) > $@
 
 all: shell_compatibility_test $(ALL_PROGRAMS) $(LANG_BINDINGS) $(OTHER_PROGRAMS)
 
@@ -877,7 +877,7 @@ $(DOC_TARGETS):
 	$(Q)$(MAKE) -C $(DOC_DIR) O=$(OUTPUT) $(@:doc=all) ASCIIDOC_EXTRA=$(ASCIIDOC_EXTRA)
 
 TAG_FOLDERS= . ../lib ../include
-TAG_FILES= ../../include/uapi/linux/perf_event.h
+TAG_FILES= ../../include/uapi/linaos/perf_event.h
 
 TAGS:
 	$(QUIET_GEN)$(RM) TAGS; \
@@ -942,9 +942,9 @@ endif
 ifndef NO_LIBBPF
 	$(call QUIET_INSTALL, bpf-headers) \
 		$(INSTALL) -d -m 755 '$(DESTDIR_SQ)$(perf_include_instdir_SQ)/bpf'; \
-		$(INSTALL) -d -m 755 '$(DESTDIR_SQ)$(perf_include_instdir_SQ)/bpf/linux'; \
+		$(INSTALL) -d -m 755 '$(DESTDIR_SQ)$(perf_include_instdir_SQ)/bpf/linaos'; \
 		$(INSTALL) include/bpf/*.h -t '$(DESTDIR_SQ)$(perf_include_instdir_SQ)/bpf'; \
-		$(INSTALL) include/bpf/linux/*.h -t '$(DESTDIR_SQ)$(perf_include_instdir_SQ)/bpf/linux'
+		$(INSTALL) include/bpf/linaos/*.h -t '$(DESTDIR_SQ)$(perf_include_instdir_SQ)/bpf/linaos'
 	$(call QUIET_INSTALL, bpf-examples) \
 		$(INSTALL) -d -m 755 '$(DESTDIR_SQ)$(perf_examples_instdir_SQ)/bpf'; \
 		$(INSTALL) examples/bpf/*.c -t '$(DESTDIR_SQ)$(perf_examples_instdir_SQ)/bpf'

@@ -38,21 +38,21 @@
 
 #include "common.h"
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/ktime.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/tcp.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/ktime.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/skbuff.h>
+#include <linaos/mm.h>
+#include <linaos/tcp.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/if_arp.h>
+#include <linaos/slab.h>
+#include <linaos/prefetch.h>
 
 #include "cpl5_cmd.h"
 #include "sge.h"

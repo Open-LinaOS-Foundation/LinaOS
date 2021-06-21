@@ -9,26 +9,26 @@
  *  (C) Copyright 2002 Red Hat Inc, All Rights Reserved
  */
 
-#include <linux/pagewalk.h>
-#include <linux/hugetlb.h>
-#include <linux/shm.h>
-#include <linux/mman.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/security.h>
-#include <linux/mempolicy.h>
-#include <linux/personality.h>
-#include <linux/syscalls.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
-#include <linux/perf_event.h>
-#include <linux/pkeys.h>
-#include <linux/ksm.h>
-#include <linux/uaccess.h>
-#include <linux/mm_inline.h>
-#include <linux/pgtable.h>
+#include <linaos/pagewalk.h>
+#include <linaos/hugetlb.h>
+#include <linaos/shm.h>
+#include <linaos/mman.h>
+#include <linaos/fs.h>
+#include <linaos/highmem.h>
+#include <linaos/security.h>
+#include <linaos/mempolicy.h>
+#include <linaos/personality.h>
+#include <linaos/syscalls.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/migrate.h>
+#include <linaos/perf_event.h>
+#include <linaos/pkeys.h>
+#include <linaos/ksm.h>
+#include <linaos/uaccess.h>
+#include <linaos/mm_inline.h>
+#include <linaos/pgtable.h>
 #include <asm/cacheflush.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>

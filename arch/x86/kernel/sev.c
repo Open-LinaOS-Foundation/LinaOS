@@ -9,16 +9,16 @@
 
 #define pr_fmt(fmt)	"SEV-ES: " fmt
 
-#include <linux/sched/debug.h>	/* For show_regs() */
-#include <linux/percpu-defs.h>
-#include <linux/mem_encrypt.h>
-#include <linux/lockdep.h>
-#include <linux/printk.h>
-#include <linux/mm_types.h>
-#include <linux/set_memory.h>
-#include <linux/memblock.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <linaos/sched/debug.h>	/* For show_regs() */
+#include <linaos/percpu-defs.h>
+#include <linaos/mem_encrypt.h>
+#include <linaos/lockdep.h>
+#include <linaos/printk.h>
+#include <linaos/mm_types.h>
+#include <linaos/set_memory.h>
+#include <linaos/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/stacktrace.h>

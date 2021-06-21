@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Common code for 32 and 64-bit NUMA */
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/mmzone.h>
-#include <linux/ctype.h>
-#include <linux/nodemask.h>
-#include <linux/sched.h>
-#include <linux/topology.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/mmzone.h>
+#include <linaos/ctype.h>
+#include <linaos/nodemask.h>
+#include <linaos/sched.h>
+#include <linaos/topology.h>
 
 #include <asm/e820/api.h>
 #include <asm/proto.h>

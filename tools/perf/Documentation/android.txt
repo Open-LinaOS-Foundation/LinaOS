@@ -12,10 +12,10 @@ Set the NDK variable to point to the path where you installed the NDK:
 
 2. Set cross-compiling environment variables for NDK toolchain and sysroot.
 For arm:
-  export NDK_TOOLCHAIN=${NDK}/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
+  export NDK_TOOLCHAIN=${NDK}/toolchains/arm-linaos-androideabi-4.9/prebuilt/linaos-x86_64/bin/arm-linaos-androideabi-
   export NDK_SYSROOT=${NDK}/platforms/android-24/arch-arm
 For x86:
-  export NDK_TOOLCHAIN=${NDK}/toolchains/x86-4.9/prebuilt/linux-x86_64/bin/i686-linux-android-
+  export NDK_TOOLCHAIN=${NDK}/toolchains/x86-4.9/prebuilt/linaos-x86_64/bin/i686-linaos-android-
   export NDK_SYSROOT=${NDK}/platforms/android-24/arch-x86
 
 This method is only tested for Android NDK versions Revision 11b and later.
@@ -41,9 +41,9 @@ For x86:
 
 3. Set the NDK toolchain environment variable.
 For arm:
-  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/arm-linux-androideabi-
+  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/arm-linaos-androideabi-
 For x86:
-  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/i686-linux-android-
+  export NDK_TOOLCHAIN=${ANDROID_TOOLCHAIN}/i686-linaos-android-
 
 II. Compile perf for Android
 ------------------------------------------------

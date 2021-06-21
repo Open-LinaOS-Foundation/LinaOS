@@ -436,7 +436,7 @@
 #define H_RPTI_PAGE_ALL (-1UL)
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * plpar_hcall_norets: - Make a pseries hypervisor call with no return arguments

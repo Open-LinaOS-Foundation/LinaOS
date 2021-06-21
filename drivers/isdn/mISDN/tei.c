@@ -6,8 +6,8 @@
  * Copyright 2008  by Karsten Keil <kkeil@novell.com>
  */
 #include "layer2.h"
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
 #include "core.h"
 
 #define ID_REQUEST	1

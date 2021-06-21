@@ -4,7 +4,7 @@
  * Initializes MMU:
  *
  *      For the new V3 MMU we remap the TLB from virtual == physical
- *      to the standard Linux mapping used in earlier MMU's.
+ *      to the standard LinaOS mapping used in earlier MMU's.
  *
  *      For the MMU we also support a new configuration register that
  *      specifies how the S32C1I instruction operates with the cache
@@ -23,8 +23,8 @@
 #ifndef _XTENSA_INITIALIZE_MMU_H
 #define _XTENSA_INITIALIZE_MMU_H
 
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/vectors.h>
 
 #if XCHAL_HAVE_PTP_MMU

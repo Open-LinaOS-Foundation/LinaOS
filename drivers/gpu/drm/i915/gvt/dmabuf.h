@@ -30,7 +30,7 @@
 
 #ifndef _GVT_DMABUF_H_
 #define _GVT_DMABUF_H_
-#include <linux/vfio.h>
+#include <linaos/vfio.h>
 
 struct intel_vgpu_fb_info {
 	__u64 start;

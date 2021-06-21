@@ -6,7 +6,7 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <scsi/scsi_host.h>
 #include "sas_internal.h"
 

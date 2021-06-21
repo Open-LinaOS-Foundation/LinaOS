@@ -5,8 +5,8 @@
  * Copyright (C) 199x  the Anonymous
  * Copyright (C) 2001, 2002, 2003  Maciej W. Rozycki
  */
-#include <linux/interrupt.h>
-#include <linux/linkage.h>
+#include <linaos/interrupt.h>
+#include <linaos/linkage.h>
 
 #include <asm/addrspace.h>
 

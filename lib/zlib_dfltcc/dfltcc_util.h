@@ -2,7 +2,7 @@
 #ifndef DFLTCC_UTIL_H
 #define DFLTCC_UTIL_H
 
-#include <linux/zutil.h>
+#include <linaos/zutil.h>
 
 /*
  * C wrapper for the DEFLATE CONVERSION CALL instruction.

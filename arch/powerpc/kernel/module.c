@@ -4,16 +4,16 @@
     Copyright (C) 2008 Freescale Semiconductor, Inc.
 
 */
-#include <linux/elf.h>
-#include <linux/moduleloader.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/bug.h>
+#include <linaos/elf.h>
+#include <linaos/moduleloader.h>
+#include <linaos/err.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/bug.h>
 #include <asm/module.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/firmware.h>
-#include <linux/sort.h>
+#include <linaos/sort.h>
 #include <asm/setup.h>
 #include <asm/sections.h>
 

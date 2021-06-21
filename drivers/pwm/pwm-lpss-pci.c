@@ -7,10 +7,10 @@
  * Derived from the original pwm-lpss.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
 
 #include "pwm-lpss.h"
 

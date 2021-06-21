@@ -9,8 +9,8 @@
 #define LINUX_MOD_DEVICETABLE_H
 
 #ifdef __KERNEL__
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <linaos/types.h>
+#include <linaos/uuid.h>
 typedef unsigned long kernel_ulong_t;
 #endif
 
@@ -24,7 +24,7 @@ typedef unsigned long kernel_ulong_t;
  * @subdevice:		Subsystem device ID to match (or PCI_ANY_ID)
  * @class:		Device class, subclass, and "interface" to match.
  *			See Appendix D of the PCI Local Bus Spec or
- *			include/linux/pci_ids.h for a full list of classes.
+ *			include/linaos/pci_ids.h for a full list of classes.
  *			Most drivers do not need to specify class/class_mask
  *			as vendor/device is normally sufficient.
  * @class_mask:		Limit which sub-fields of the class field are compared.

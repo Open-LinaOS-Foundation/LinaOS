@@ -11,19 +11,19 @@
  * or implied.
  *
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/edac.h>
-#include <linux/smp.h>
-#include <linux/gfp.h>
-#include <linux/fsl/edac.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ctype.h>
+#include <linaos/io.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/edac.h>
+#include <linaos/smp.h>
+#include <linaos/gfp.h>
+#include <linaos/fsl/edac.h>
 
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_device.h>
 #include "edac_module.h"
 #include "mpc85xx_edac.h"
 #include "fsl_ddr_edac.h"

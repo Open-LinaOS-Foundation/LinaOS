@@ -5,13 +5,13 @@
  * Copyright (C) 2010 Renesas Solutions Corp.
  * Copyright (C) 2010 NISHIMOTO Hiroki
  */
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/slab.h>
 
 #include "sh_pfc.h"
 

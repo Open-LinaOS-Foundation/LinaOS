@@ -2,22 +2,22 @@
 /*
  * PPS core file
  *
- * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linaos.it>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/pps_kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/uaccess.h>
+#include <linaos/idr.h>
+#include <linaos/mutex.h>
+#include <linaos/cdev.h>
+#include <linaos/poll.h>
+#include <linaos/pps_kernel.h>
+#include <linaos/slab.h>
 
 #include "kc.h"
 
@@ -469,9 +469,9 @@ static int __init pps_init(void)
 		goto remove_class;
 	}
 
-	pr_info("LinuxPPS API ver. %d registered\n", PPS_API_VERS);
+	pr_info("LinaOSPPS API ver. %d registered\n", PPS_API_VERS);
 	pr_info("Software ver. %s - Copyright 2005-2007 Rodolfo Giometti "
-		"<giometti@linux.it>\n", PPS_VERSION);
+		"<giometti@linaos.it>\n", PPS_VERSION);
 
 	return 0;
 
@@ -484,6 +484,6 @@ remove_class:
 subsys_initcall(pps_init);
 module_exit(pps_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
-MODULE_DESCRIPTION("LinuxPPS support (RFC 2783) - ver. " PPS_VERSION);
+MODULE_AUTHOR("Rodolfo Giometti <giometti@linaos.it>");
+MODULE_DESCRIPTION("LinaOSPPS support (RFC 2783) - ver. " PPS_VERSION);
 MODULE_LICENSE("GPL");

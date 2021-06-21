@@ -2,14 +2,14 @@
 /*
  * Copyright (C) 2015 Microchip Technology
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/microchipphy.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/phy.h>
+#include <linaos/microchipphy.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
 #include <dt-bindings/net/microchip-lan78xx.h>
 
 #define DRIVER_AUTHOR	"WOOJUNG HUH <woojung.huh@microchip.com>"

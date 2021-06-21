@@ -13,7 +13,7 @@ Example:
 kbd@fc400000 {
 	compatible = "st,spear300-kbd";
 	reg = <0xfc400000 0x100>;
-	linux,keymap = < 0x00030012
+	linaos,keymap = < 0x00030012
 			 0x0102003a >;
 	autorepeat;
 	st,mode = <0>;

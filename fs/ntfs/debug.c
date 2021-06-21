@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * debug.c - NTFS kernel debug support. Part of the Linux-NTFS project.
+ * debug.c - NTFS kernel debug support. Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */

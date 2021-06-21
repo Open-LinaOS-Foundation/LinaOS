@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>

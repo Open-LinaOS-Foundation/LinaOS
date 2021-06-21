@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2016, The LinaOS Foundation. All rights reserved.
  *
  * Description: CoreSight System Trace Macrocell driver
  *
@@ -16,19 +16,19 @@
  * (C) 2015-2016 Chunyan Zhang <zhang.chunyan@linaro.org>
  */
 #include <asm/local.h>
-#include <linux/acpi.h>
-#include <linux/amba/bus.h>
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/coresight.h>
-#include <linux/coresight-stm.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/of_address.h>
-#include <linux/perf_event.h>
-#include <linux/pm_runtime.h>
-#include <linux/stm.h>
+#include <linaos/acpi.h>
+#include <linaos/amba/bus.h>
+#include <linaos/bitmap.h>
+#include <linaos/clk.h>
+#include <linaos/coresight.h>
+#include <linaos/coresight-stm.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of_address.h>
+#include <linaos/perf_event.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/stm.h>
 
 #include "coresight-priv.h"
 

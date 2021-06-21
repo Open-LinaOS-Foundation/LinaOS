@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/export.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/spi/spi.h>
 #include "fbtft.h"
 
 /*****************************************************************************

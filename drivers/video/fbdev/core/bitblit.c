@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/console/bitblit.c -- BitBlitting Operation
+ *  linaos/drivers/video/console/bitblit.c -- BitBlitting Operation
  *
  *  Originally from the 'accel_*' routines in drivers/video/console/fbcon.c
  *
@@ -10,12 +10,12 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/vt_kern.h>
-#include <linux/console.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/fb.h>
+#include <linaos/vt_kern.h>
+#include <linaos/console.h>
 #include <asm/types.h>
 #include "fbcon.h"
 

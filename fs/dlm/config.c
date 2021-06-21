@@ -9,13 +9,13 @@
 *******************************************************************************
 ******************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/configfs.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/dlmconstants.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/configfs.h>
+#include <linaos/slab.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/dlmconstants.h>
 #include <net/ipv6.h>
 #include <net/sock.h>
 

@@ -14,8 +14,8 @@
 #define __ORANGEFS_DEBUG_H
 
 #ifdef __KERNEL__
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 #else
 #include <stdint.h>
 #define ARRAY_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))

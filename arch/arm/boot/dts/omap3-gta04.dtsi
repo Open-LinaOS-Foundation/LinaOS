@@ -53,7 +53,7 @@
 
 		aux-button {
 			label = "aux";
-			linux,code = <KEY_PHONE>;
+			linaos,code = <KEY_PHONE>;
 			gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
 			wakeup-source;
 		};
@@ -64,8 +64,8 @@
 
 		gps_antenna_button: gps-antenna-button {
 			label = "GPS_EXT_ANT";
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LINEIN_INSERT>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_LINEIN_INSERT>;
 			gpios = <&gpio5 16 GPIO_ACTIVE_HIGH>; /* GPIO144 */
 			interrupt-parent = <&gpio5>;
 			interrupts = <16 IRQ_TYPE_EDGE_BOTH>;
@@ -553,7 +553,7 @@
 		gta04_led3: red_power@3 {
 			label = "gta04:red:power";
 			reg = <0x3>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		gta04_led4: green_power@4 {

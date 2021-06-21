@@ -5,27 +5,27 @@
  *
  * originally based on:
  *
- *  linux/bvme/config.c
+ *  linaos/bvme/config.c
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file README.legal in the main directory of this archive
  * for more details.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/serial_reg.h>
-#include <linux/rtc.h>
-#include <linux/vt_kern.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/major.h>
+#include <linaos/serial_reg.h>
+#include <linaos/rtc.h>
+#include <linaos/vt_kern.h>
+#include <linaos/bcd.h>
+#include <linaos/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/bootinfo.h>

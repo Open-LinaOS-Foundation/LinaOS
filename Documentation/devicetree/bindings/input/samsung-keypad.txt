@@ -30,7 +30,7 @@ Required Board Specific Properties:
   device node and should include the following properties.
   - keypad,row: the row number to which the key is connected.
   - keypad,column: the column number to which the key is connected.
-  - linux,code: the key-code to be reported when the key is pressed
+  - linaos,code: the key-code to be reported when the key is pressed
     and released.
 
 - pinctrl-0: Should specify pin control groups used for this controller.
@@ -38,10 +38,10 @@ Required Board Specific Properties:
 
 Optional Properties:
 - wakeup-source: use any event on keypad as wakeup event.
-		 (Legacy property supported: "linux,input-wakeup")
+		 (Legacy property supported: "linaos,input-wakeup")
 
-Optional Properties specific to linux:
-- linux,keypad-no-autorepeat: do no enable autorepeat feature.
+Optional Properties specific to linaos:
+- linaos,keypad-no-autorepeat: do no enable autorepeat feature.
 
 
 Example:
@@ -51,7 +51,7 @@ Example:
 		interrupts = <173>;
 		samsung,keypad-num-rows = <2>;
 		samsung,keypad-num-columns = <8>;
-		linux,input-no-autorepeat;
+		linaos,input-no-autorepeat;
 		wakeup-source;
 
 		pinctrl-names = "default";
@@ -60,18 +60,18 @@ Example:
 		key_1 {
 			keypad,row = <0>;
 			keypad,column = <3>;
-			linux,code = <2>;
+			linaos,code = <2>;
 		};
 
 		key_2 {
 			keypad,row = <0>;
 			keypad,column = <4>;
-			linux,code = <3>;
+			linaos,code = <3>;
 		};
 
 		key_3 {
 			keypad,row = <0>;
 			keypad,column = <5>;
-			linux,code = <4>;
+			linaos,code = <4>;
 		};
 	};

@@ -2,7 +2,7 @@
 /*
  *  mxl111sf-tuner.h - driver for the MaxLinear MXL111SF CMOS tuner
  *
- *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@linaostv.org>
  */
 
 #ifndef __MXL111SF_TUNER_H__

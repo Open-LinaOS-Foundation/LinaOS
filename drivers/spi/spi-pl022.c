@@ -8,31 +8,31 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  *
  * Initial version inspired by:
- *	linux-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
+ *	linaos-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
  * Initial adoption to PL022 by:
  *      Sachin Verma <sachin.verma@st.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/pl022.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/ioport.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/amba/bus.h>
+#include <linaos/amba/pl022.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/pinctrl/consumer.h>
 
 /*
  * This macro is used to define some register default values.

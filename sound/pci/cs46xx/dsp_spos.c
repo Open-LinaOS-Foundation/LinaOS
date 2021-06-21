@@ -7,13 +7,13 @@
  */
 
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mutex.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

@@ -6,8 +6,8 @@
  * Partition table and disk geometry handling
  */
 
-#include <linux/compat.h>
-#include <uapi/linux/blkpg.h>
+#include <linaos/compat.h>
+#include <uapi/linaos/blkpg.h>
 
 #ifdef CONFIG_COMPAT
 /* For 32-bit/64-bit compatibility of struct blkpg_ioctl_arg */

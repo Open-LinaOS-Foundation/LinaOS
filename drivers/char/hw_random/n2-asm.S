@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/hypervisor.h>
 #include "n2rng.h"
 

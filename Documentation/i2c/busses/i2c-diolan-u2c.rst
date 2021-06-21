@@ -8,7 +8,7 @@ Supported adapters:
     Documentation:
 	http://www.diolan.com/i2c/u2c12.html
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 Description
 -----------

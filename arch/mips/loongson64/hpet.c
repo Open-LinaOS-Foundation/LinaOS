@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/percpu.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
 
 #include <asm/hpet.h>
 #include <asm/time.h>

@@ -26,29 +26,29 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <linaos/signal.h>
+#include <linaos/string.h>
+#include <linaos/device.h>
 
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
+#include <linaos/ip.h>
+#include <linaos/if_arp.h>
+#include <linaos/tcp.h>
+#include <linaos/skbuff.h>
+#include <linaos/ctype.h>
 #include <net/dst.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/ebcdic.h>
 
 #include <net/iucv/iucv.h>
@@ -56,7 +56,7 @@
 
 MODULE_AUTHOR
     ("(C) 2001 IBM Corporation by Fritz Elfert (felfert@millenux.com)");
-MODULE_DESCRIPTION ("Linux for S/390 IUCV network driver");
+MODULE_DESCRIPTION ("LinaOS for S/390 IUCV network driver");
 
 /**
  * Debug Facility stuff

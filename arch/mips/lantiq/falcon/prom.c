@@ -5,7 +5,7 @@
  * Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/cacheflush.h>
 #include <asm/traps.h>
 #include <asm/io.h>

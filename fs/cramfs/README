@@ -118,12 +118,12 @@ compressed at a time.  It's intended to be somewhere around
 PAGE_SIZE for cramfs_readpage's convenience.)
 
 The superblock ought to indicate the block size that the fs was
-written for, since comments in <linux/pagemap.h> indicate that
+written for, since comments in <linaos/pagemap.h> indicate that
 PAGE_SIZE may grow in future (if I interpret the comment
 correctly).
 
 Currently, mkcramfs #define's PAGE_SIZE as 4096 and uses that
-for blksize, whereas Linux-2.3.39 uses its PAGE_SIZE, which in
+for blksize, whereas LinaOS-2.3.39 uses its PAGE_SIZE, which in
 turn is defined as PAGE_SIZE (which can be as large as 32KB on arm).
 This discrepancy is a bug, though it's not clear which should be
 changed.

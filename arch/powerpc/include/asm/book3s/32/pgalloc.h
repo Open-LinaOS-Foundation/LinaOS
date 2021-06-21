@@ -2,8 +2,8 @@
 #ifndef _ASM_POWERPC_BOOK3S_32_PGALLOC_H
 #define _ASM_POWERPC_BOOK3S_32_PGALLOC_H
 
-#include <linux/threads.h>
-#include <linux/slab.h>
+#include <linaos/threads.h>
+#include <linaos/slab.h>
 
 static inline pgd_t *pgd_alloc(struct mm_struct *mm)
 {

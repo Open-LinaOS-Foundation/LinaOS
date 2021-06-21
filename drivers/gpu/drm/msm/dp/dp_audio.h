@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2017-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2020, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DP_AUDIO_H_
 #define _DP_AUDIO_H_
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include "dp_panel.h"
 #include "dp_catalog.h"

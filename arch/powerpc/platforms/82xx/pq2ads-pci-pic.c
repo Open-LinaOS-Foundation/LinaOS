@@ -9,11 +9,11 @@
  * Copyright (c) 2006 MontaVista Software, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/irq.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

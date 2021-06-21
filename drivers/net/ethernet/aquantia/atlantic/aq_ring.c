@@ -13,8 +13,8 @@
 #include "aq_hw_utils.h"
 #include "aq_ptp.h"
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
 
 static inline void aq_free_rxpage(struct aq_rxpage *rxpage, struct device *dev)
 {

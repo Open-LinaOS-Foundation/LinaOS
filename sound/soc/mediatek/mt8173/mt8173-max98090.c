@@ -6,10 +6,10 @@
  * Author: Koro Chen <koro.chen@mediatek.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
-#include <linux/gpio.h>
+#include <linaos/gpio.h>
 #include "../../codecs/max98090.h"
 
 static struct snd_soc_jack mt8173_max98090_jack;

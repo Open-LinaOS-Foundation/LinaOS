@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/eventfd.h
+ *  include/linaos/eventfd.h
  *
  *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
  *
@@ -9,11 +9,11 @@
 #ifndef _LINUX_EVENTFD_H
 #define _LINUX_EVENTFD_H
 
-#include <linux/fcntl.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/percpu-defs.h>
-#include <linux/percpu.h>
+#include <linaos/fcntl.h>
+#include <linaos/wait.h>
+#include <linaos/err.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/percpu.h>
 
 /*
  * CAREFUL: Check include/uapi/asm-generic/fcntl.h when defining

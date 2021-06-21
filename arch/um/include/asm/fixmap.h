@@ -5,7 +5,7 @@
 #include <asm/processor.h>
 #include <asm/archparam.h>
 #include <asm/page.h>
-#include <linux/threads.h>
+#include <linaos/threads.h>
 
 /*
  * Here we define all the compile-time 'special' virtual

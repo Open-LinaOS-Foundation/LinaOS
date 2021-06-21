@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
- * include/uapi/linux/tipc_config.h: Header for TIPC configuration interface
+ * include/uapi/linaos/tipc_config.h: Header for TIPC configuration interface
  *
  * Copyright (c) 2003-2006, Ericsson AB
  * Copyright (c) 2005-2007, 2010-2011, Wind River Systems
@@ -38,9 +38,9 @@
 #ifndef _LINUX_TIPC_CONFIG_H_
 #define _LINUX_TIPC_CONFIG_H_
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/tipc.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/tipc.h>
 #include <asm/byteorder.h>
 
 #ifndef __KERNEL__

@@ -4,7 +4,7 @@
 #ifndef QTNFMAC_SWITCHDEV_H_
 #define QTNFMAC_SWITCHDEV_H_
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 #ifdef CONFIG_NET_SWITCHDEV
 

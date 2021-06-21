@@ -11,7 +11,7 @@ Supported chips:
 
     Datasheet: http://www.linear.com/product/ltc3815
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

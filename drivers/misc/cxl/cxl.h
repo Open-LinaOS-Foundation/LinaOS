@@ -6,15 +6,15 @@
 #ifndef _CXL_H_
 #define _CXL_H_
 
-#include <linux/interrupt.h>
-#include <linux/semaphore.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/pid.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/semaphore.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/cdev.h>
+#include <linaos/pid.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
+#include <linaos/fs.h>
 #include <asm/cputable.h>
 #include <asm/mmu.h>
 #include <asm/reg.h>

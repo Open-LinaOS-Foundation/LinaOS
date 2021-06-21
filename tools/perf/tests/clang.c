@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "tests.h"
 #include "c++/clang-c.h"
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 static struct {
 	int (*func)(void);

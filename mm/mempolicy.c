@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Simple NUMA memory policy for the Linux kernel.
+ * Simple NUMA memory policy for the LinaOS kernel.
  *
  * Copyright 2003,2004 Andi Kleen, SuSE Labs.
  * (C) Copyright 2005 Christoph Lameter, Silicon Graphics, Inc.
@@ -32,7 +32,7 @@
  *                process policy.
  *
  * default        Allocate on the local node first, or when on a VMA
- *                use the process policy. This is what Linux always did
+ *                use the process policy. This is what LinaOS always did
  *		  in a NUMA aware kernel and still does by, ahem, default.
  *
  * The process policy is applied for most non interrupt memory allocations
@@ -67,41 +67,41 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mempolicy.h>
-#include <linux/pagewalk.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task.h>
-#include <linux/nodemask.h>
-#include <linux/cpuset.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/nsproxy.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/ptrace.h>
-#include <linux/swap.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/migrate.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/ctype.h>
-#include <linux/mm_inline.h>
-#include <linux/mmu_notifier.h>
-#include <linux/printk.h>
-#include <linux/swapops.h>
+#include <linaos/mempolicy.h>
+#include <linaos/pagewalk.h>
+#include <linaos/highmem.h>
+#include <linaos/hugetlb.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/numa_balancing.h>
+#include <linaos/sched/task.h>
+#include <linaos/nodemask.h>
+#include <linaos/cpuset.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
+#include <linaos/nsproxy.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/compat.h>
+#include <linaos/ptrace.h>
+#include <linaos/swap.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/migrate.h>
+#include <linaos/ksm.h>
+#include <linaos/rmap.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/ctype.h>
+#include <linaos/mm_inline.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/printk.h>
+#include <linaos/swapops.h>
 
 #include <asm/tlbflush.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 

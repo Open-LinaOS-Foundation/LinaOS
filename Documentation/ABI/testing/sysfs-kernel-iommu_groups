@@ -39,7 +39,7 @@ Date:		November 2020
 KernelVersion:	v5.11
 Contact:	Sai Praneeth Prakhya <sai.praneeth.prakhya@intel.com>
 Description:	/sys/kernel/iommu_groups/<grp_id>/type shows the type of default
-		domain in use by iommu for this group. See include/linux/iommu.h
+		domain in use by iommu for this group. See include/linaos/iommu.h
 		for possible read values. A privileged user could request kernel to
 		change the group type by writing to this file. Valid write values:
 

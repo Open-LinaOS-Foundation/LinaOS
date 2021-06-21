@@ -12,11 +12,11 @@
 
 #undef DEBUG
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <asm/mpc52xx.h>
 #include <asm/delay.h>
 #include <asm/machdep.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 
 /* ======================================================================== */

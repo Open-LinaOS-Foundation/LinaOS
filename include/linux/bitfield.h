@@ -7,7 +7,7 @@
 #ifndef _LINUX_BITFIELD_H
 #define _LINUX_BITFIELD_H
 
-#include <linux/build_bug.h>
+#include <linaos/build_bug.h>
 #include <asm/byteorder.h>
 
 /*

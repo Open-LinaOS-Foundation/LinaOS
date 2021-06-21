@@ -15,8 +15,8 @@
 #include "main.h"
 #include "xmit.h"
 
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
 
 static void tx_start(struct b43legacy_pioqueue *queue)

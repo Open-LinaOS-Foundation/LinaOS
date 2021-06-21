@@ -13,15 +13,15 @@
 #include "cx88.h"
 #include "cx88-reg.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

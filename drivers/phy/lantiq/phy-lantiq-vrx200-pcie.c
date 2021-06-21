@@ -11,18 +11,18 @@
  * TODO: PHY modes other than 36MHz (without "SSC")
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 #include <dt-bindings/phy/phy-lantiq-vrx200-pcie.h>
 

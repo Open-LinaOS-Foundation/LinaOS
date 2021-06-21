@@ -11,12 +11,12 @@
  * bootup setup stuff..
  */
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/fsl_devices.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/rtc.h>
+#include <linaos/fsl_devices.h>
 
 #include <asm/io.h>
 #include <asm/8xx_immap.h>

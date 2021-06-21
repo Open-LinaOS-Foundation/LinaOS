@@ -23,12 +23,12 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/mfd/twl.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/mfd/twl.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include <asm/mach-types.h>
 

@@ -10,7 +10,7 @@ u"""
     :copyright:  Copyright (C) 2016  Markus Heiser
     :copyright:  Copyright (C) 2016-2019  Mauro Carvalho Chehab
     :maintained-by: Mauro Carvalho Chehab <mchehab+samsung@kernel.org>
-    :license:    GPL Version 2, June 1991 see Linux/COPYING for details.
+    :license:    GPL Version 2, June 1991 see LinaOS/COPYING for details.
 
     The ``kernel-feat`` (:py:class:`KernelFeat`) directive calls the
     scripts/get_feat.pl script to parse the Kernel ABI files.

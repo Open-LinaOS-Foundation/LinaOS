@@ -4,7 +4,7 @@
  * generic comedi driver for SSV Embedded Systems' DIL/Net-PCs
  * Copyright (C) 2001 Robert Schwebel <robert@schwebel.de>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -18,7 +18,7 @@
 
 /* include files ----------------------------------------------------------- */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 /* Some global definitions: the registers of the DNP ----------------------- */

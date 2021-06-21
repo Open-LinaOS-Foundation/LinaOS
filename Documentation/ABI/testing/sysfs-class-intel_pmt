@@ -1,7 +1,7 @@
 What:		/sys/class/intel_pmt/
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	David Box <david.e.box@linux.intel.com>
+Contact:	David Box <david.e.box@linaos.intel.com>
 Description:
 		The intel_pmt/ class directory contains information for
 		devices that expose hardware telemetry using Intel Platform
@@ -10,7 +10,7 @@ Description:
 What:		/sys/class/intel_pmt/telem<x>
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	David Box <david.e.box@linux.intel.com>
+Contact:	David Box <david.e.box@linaos.intel.com>
 Description:
 		The telem<x> directory contains files describing an instance of
 		a PMT telemetry device that exposes hardware telemetry. Each
@@ -23,7 +23,7 @@ Description:
 What:		/sys/class/intel_pmt/telem<x>/telem
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	David Box <david.e.box@linux.intel.com>
+Contact:	David Box <david.e.box@linaos.intel.com>
 Description:
 		(RO) The telemetry data for this telemetry device. This file
 		may be mapped or read to obtain the data.
@@ -31,7 +31,7 @@ Description:
 What:		/sys/class/intel_pmt/telem<x>/guid
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	David Box <david.e.box@linux.intel.com>
+Contact:	David Box <david.e.box@linaos.intel.com>
 Description:
 		(RO) The GUID for this telemetry device. The GUID identifies
 		the version of the XML file for the parent device that is to
@@ -40,7 +40,7 @@ Description:
 What:		/sys/class/intel_pmt/telem<x>/size
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	David Box <david.e.box@linux.intel.com>
+Contact:	David Box <david.e.box@linaos.intel.com>
 Description:
 		(RO) The size of telemetry region in bytes that corresponds to
 		the mapping size for the telem file.
@@ -48,7 +48,7 @@ Description:
 What:		/sys/class/intel_pmt/telem<x>/offset
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	David Box <david.e.box@linux.intel.com>
+Contact:	David Box <david.e.box@linaos.intel.com>
 Description:
 		(RO) The offset of telemetry region in bytes that corresponds to
 		the mapping for the telem file.
@@ -56,7 +56,7 @@ Description:
 What:		/sys/class/intel_pmt/crashlog<x>
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	Alexander Duyck <alexander.h.duyck@linux.intel.com>
+Contact:	Alexander Duyck <alexander.h.duyck@linaos.intel.com>
 Description:
 		The crashlog<x> directory contains files for configuring an
 		instance of a PMT crashlog device that can perform crash data
@@ -69,7 +69,7 @@ Description:
 What:		/sys/class/intel_pmt/crashlog<x>/crashlog
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	David Box <david.e.box@linux.intel.com>
+Contact:	David Box <david.e.box@linaos.intel.com>
 Description:
 		(RO) The crashlog buffer for this crashlog device. This file
 		may be mapped or read to obtain the data.
@@ -77,7 +77,7 @@ Description:
 What:		/sys/class/intel_pmt/crashlog<x>/guid
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	Alexander Duyck <alexander.h.duyck@linux.intel.com>
+Contact:	Alexander Duyck <alexander.h.duyck@linaos.intel.com>
 Description:
 		(RO) The GUID for this crashlog device. The GUID identifies the
 		version of the XML file for the parent device that should be
@@ -86,7 +86,7 @@ Description:
 What:		/sys/class/intel_pmt/crashlog<x>/size
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	Alexander Duyck <alexander.h.duyck@linux.intel.com>
+Contact:	Alexander Duyck <alexander.h.duyck@linaos.intel.com>
 Description:
 		(RO) The length of the result buffer in bytes that corresponds
 		to the size for the crashlog buffer.
@@ -94,7 +94,7 @@ Description:
 What:		/sys/class/intel_pmt/crashlog<x>/offset
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	Alexander Duyck <alexander.h.duyck@linux.intel.com>
+Contact:	Alexander Duyck <alexander.h.duyck@linaos.intel.com>
 Description:
 		(RO) The offset of the buffer in bytes that corresponds
 		to the mapping for the crashlog device.
@@ -102,7 +102,7 @@ Description:
 What:		/sys/class/intel_pmt/crashlog<x>/enable
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	Alexander Duyck <alexander.h.duyck@linux.intel.com>
+Contact:	Alexander Duyck <alexander.h.duyck@linaos.intel.com>
 Description:
 		(RW) Boolean value controlling if the crashlog functionality
 		is enabled for the crashlog device.
@@ -110,7 +110,7 @@ Description:
 What:		/sys/class/intel_pmt/crashlog<x>/trigger
 Date:		October 2020
 KernelVersion:	5.10
-Contact:	Alexander Duyck <alexander.h.duyck@linux.intel.com>
+Contact:	Alexander Duyck <alexander.h.duyck@linaos.intel.com>
 Description:
 		(RW) Boolean value controlling the triggering of the crashlog
 		device node. When read it provides data on if the crashlog has

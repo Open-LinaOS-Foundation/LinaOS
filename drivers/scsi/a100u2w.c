@@ -1,5 +1,5 @@
 /*
- * Initio A100 device driver for Linux.
+ * Initio A100 device driver for LinaOS.
  *
  * Copyright (c) 1994-1998 Initio Corporation
  * Copyright (c) 2003-2004 Christoph Hellwig
@@ -55,21 +55,21 @@
  *	    - merge the two source files
  *	    - remove internal queueing code
  * 14/06/07 Alan Cox <alan@lxorguk.ukuu.org.uk>
- *	 - Grand cleanup and Linuxisation
+ *	 - Grand cleanup and LinaOSisation
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -846,7 +846,7 @@ static int inia100_build_scb(struct orc_host * host, struct orc_scb * scb, struc
 	int i, count_sg;
 	struct orc_extended_scb *escb;
 
-	/* Links between the escb, scb and Linux scsi midlayer cmd */
+	/* Links between the escb, scb and LinaOS scsi midlayer cmd */
 	escb = scb->escb;
 	escb->srb = cmd;
 	sgent = NULL;

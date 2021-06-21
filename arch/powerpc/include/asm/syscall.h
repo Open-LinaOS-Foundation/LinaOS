@@ -10,9 +10,9 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H	1
 
-#include <uapi/linux/audit.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
+#include <uapi/linaos/audit.h>
+#include <linaos/sched.h>
+#include <linaos/thread_info.h>
 
 /* ftrace syscalls requires exporting the sys_call_table */
 extern const unsigned long sys_call_table[];

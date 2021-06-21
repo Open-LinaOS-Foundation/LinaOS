@@ -11,9 +11,9 @@
 #ifndef _LINUX_CPUIDLE_H
 #define _LINUX_CPUIDLE_H
 
-#include <linux/percpu.h>
-#include <linux/list.h>
-#include <linux/hrtimer.h>
+#include <linaos/percpu.h>
+#include <linaos/list.h>
+#include <linaos/hrtimer.h>
 
 #define CPUIDLE_STATE_MAX	10
 #define CPUIDLE_NAME_LEN	16

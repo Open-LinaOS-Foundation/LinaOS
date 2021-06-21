@@ -5,12 +5,12 @@
  *
  * Copyright (C) 2012 Benjamin Herrenschmidt, IBM Corp.
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
 #include <asm/prom.h>
 #include <asm/smu.h>
 

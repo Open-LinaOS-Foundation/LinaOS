@@ -4,7 +4,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/timekeeper_internal.h>
+#include <linaos/timekeeper_internal.h>
 #include <asm/vdso_datapage.h>
 
 /*

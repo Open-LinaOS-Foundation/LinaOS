@@ -7,7 +7,7 @@
  *
  *   Lowlevel functions for WM8776 codec
  *
- *	Copyright (c) 2012 Ondrej Zary <linux@rainbow-software.org>
+ *	Copyright (c) 2012 Ondrej Zary <linaos@rainbow-software.org>
  */
 
 #define WM8776_REG_HPLVOL	0x00

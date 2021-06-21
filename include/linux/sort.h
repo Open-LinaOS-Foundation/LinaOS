@@ -2,7 +2,7 @@
 #ifndef _LINUX_SORT_H
 #define _LINUX_SORT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 void sort_r(void *base, size_t num, size_t size,
 	    cmp_r_func_t cmp_func,

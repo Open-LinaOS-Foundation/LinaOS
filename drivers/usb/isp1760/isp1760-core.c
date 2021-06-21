@@ -10,13 +10,13 @@
  *	Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 #include "isp1760-core.h"
 #include "isp1760-hcd.h"
@@ -166,5 +166,5 @@ void isp1760_unregister(struct device *dev)
 }
 
 MODULE_DESCRIPTION("Driver for the ISP1760 USB-controller from NXP");
-MODULE_AUTHOR("Sebastian Siewior <bigeasy@linuxtronix.de>");
+MODULE_AUTHOR("Sebastian Siewior <bigeasy@linaostronix.de>");
 MODULE_LICENSE("GPL v2");

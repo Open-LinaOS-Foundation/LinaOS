@@ -8,7 +8,7 @@
 #ifndef _ADV7604_
 #define _ADV7604_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Analog input muxing modes (AFE register 0x02, [2:0]) */
 enum adv7604_ain_sel {

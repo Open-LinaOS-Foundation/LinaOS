@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * NET		An implementation of the SOCKET network access protocol.
- *		This is the master header file for the Linux NET layer,
+ *		This is the master header file for the LinaOS NET layer,
  *		or, in plain English: the networking handling part of the
  *		kernel.
  *
@@ -19,7 +19,7 @@
 #ifndef _UAPI_LINUX_NET_H
 #define _UAPI_LINUX_NET_H
 
-#include <linux/socket.h>
+#include <linaos/socket.h>
 #include <asm/socket.h>
 
 #define NPROTO		AF_MAX

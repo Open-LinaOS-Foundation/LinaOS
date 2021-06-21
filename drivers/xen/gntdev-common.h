@@ -11,10 +11,10 @@
 #ifndef _GNTDEV_COMMON_H
 #define _GNTDEV_COMMON_H
 
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mmu_notifier.h>
-#include <linux/types.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/types.h>
 #include <xen/interface/event_channel.h>
 
 struct gntdev_dmabuf_priv;

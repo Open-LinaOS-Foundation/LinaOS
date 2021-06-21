@@ -5,9 +5,9 @@
  * Copyright IBM Corporation, 2008
  *
  * Author: Dipankar Sarma <dipankar@in.ibm.com>
- *	   Paul E. McKenney <paulmck@linux.ibm.com> Hierarchical algorithm
+ *	   Paul E. McKenney <paulmck@linaos.ibm.com> Hierarchical algorithm
  *
- * Based on the original work by Paul McKenney <paulmck@linux.ibm.com>
+ * Based on the original work by Paul McKenney <paulmck@linaos.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
  *
  * For detailed explanation of Read-Copy Update mechanism see -

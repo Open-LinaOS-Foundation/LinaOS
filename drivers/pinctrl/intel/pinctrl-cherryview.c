@@ -3,25 +3,25 @@
  * Cherryview/Braswell pinctrl driver
  *
  * Copyright (C) 2014, 2020 Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  *
  * This driver is based on the original Cherryview GPIO driver by
  *   Ning Li <ning.li@intel.com>
- *   Alan Cox <alan@linux.intel.com>
+ *   Alan Cox <alan@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
 #include "pinctrl-intel.h"
 
@@ -1420,7 +1420,7 @@ static void chv_gpio_irq_handler(struct irq_desc *desc)
 }
 
 /*
- * Certain machines seem to hardcode Linux IRQ numbers in their ACPI
+ * Certain machines seem to hardcode LinaOS IRQ numbers in their ACPI
  * tables. Since we leave GPIOs that are not capable of generating
  * interrupts out of the irqdomain the numbering will be different and
  * cause devices using the hardcoded IRQ numbers fail. In order not to
@@ -1826,6 +1826,6 @@ static void __exit chv_pinctrl_exit(void)
 }
 module_exit(chv_pinctrl_exit);
 
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel Cherryview/Braswell pinctrl driver");
 MODULE_LICENSE("GPL v2");

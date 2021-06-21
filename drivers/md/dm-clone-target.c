@@ -3,31 +3,31 @@
  * Copyright (C) 2019 Arrikto, Inc. All Rights Reserved.
  */
 
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/err.h>
-#include <linux/hash.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/dm-io.h>
-#include <linux/mutex.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/kdev_t.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/blk_types.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/workqueue.h>
-#include <linux/backing-dev.h>
-#include <linux/device-mapper.h>
+#include <linaos/mm.h>
+#include <linaos/bio.h>
+#include <linaos/err.h>
+#include <linaos/hash.h>
+#include <linaos/list.h>
+#include <linaos/log2.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/dm-io.h>
+#include <linaos/mutex.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/blkdev.h>
+#include <linaos/kdev_t.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
+#include <linaos/mempool.h>
+#include <linaos/spinlock.h>
+#include <linaos/blk_types.h>
+#include <linaos/dm-kcopyd.h>
+#include <linaos/workqueue.h>
+#include <linaos/backing-dev.h>
+#include <linaos/device-mapper.h>
 
 #include "dm.h"
 #include "dm-clone-metadata.h"

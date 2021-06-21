@@ -3,23 +3,23 @@
 #define _LINUX_KERNEL_H
 
 #include <stdarg.h>
-#include <linux/align.h>
-#include <linux/limits.h>
-#include <linux/linkage.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/math.h>
-#include <linux/minmax.h>
-#include <linux/typecheck.h>
-#include <linux/printk.h>
-#include <linux/build_bug.h>
-#include <linux/static_call_types.h>
+#include <linaos/align.h>
+#include <linaos/limits.h>
+#include <linaos/linkage.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/bitops.h>
+#include <linaos/log2.h>
+#include <linaos/math.h>
+#include <linaos/minmax.h>
+#include <linaos/typecheck.h>
+#include <linaos/printk.h>
+#include <linaos/build_bug.h>
+#include <linaos/static_call_types.h>
 #include <asm/byteorder.h>
 
-#include <uapi/linux/kernel.h>
+#include <uapi/linaos/kernel.h>
 
 #define STACK_MAGIC	0xdeadbeef
 

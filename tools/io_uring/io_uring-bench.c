@@ -22,7 +22,7 @@
 #include <sys/resource.h>
 #include <sys/mman.h>
 #include <sys/uio.h>
-#include <linux/fs.h>
+#include <linaos/fs.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>

@@ -3,14 +3,14 @@
  * Copyright (C) 2003-2015 Broadcom Corporation
  * All Rights Reserved
  */
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/of.h>
+#include <linaos/interrupt.h>
 
 /* SPI Configuration Register */
 #define XLP_SPI_CONFIG			0x00

@@ -3,8 +3,8 @@
 #define _LINUX_MODULELOADER_H
 /* The stuff needed for archs to support modules. */
 
-#include <linux/module.h>
-#include <linux/elf.h>
+#include <linaos/module.h>
+#include <linaos/elf.h>
 
 /* These may be implemented by architectures that need to hook into the
  * module loader code.  Architectures that don't need to do anything special
@@ -98,7 +98,7 @@ void module_arch_freeing_init(struct module *mod);
 
 #if (defined(CONFIG_KASAN_GENERIC) || defined(CONFIG_KASAN_SW_TAGS)) && \
 		!defined(CONFIG_KASAN_VMALLOC)
-#include <linux/kasan.h>
+#include <linaos/kasan.h>
 #define MODULE_ALIGN (PAGE_SIZE << KASAN_SHADOW_SCALE_SHIFT)
 #else
 #define MODULE_ALIGN PAGE_SIZE

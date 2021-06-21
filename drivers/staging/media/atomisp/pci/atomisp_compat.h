@@ -21,7 +21,7 @@
 
 #include "atomisp_compat_css20.h"
 
-#include "../../include/linux/atomisp.h"
+#include "../../include/linaos/atomisp.h"
 #include <media/videobuf-vmalloc.h>
 
 struct atomisp_device;

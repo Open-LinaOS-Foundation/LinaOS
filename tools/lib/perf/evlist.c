@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <perf/evlist.h>
 #include <perf/evsel.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/hash.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
+#include <linaos/hash.h>
 #include <sys/ioctl.h>
 #include <internal/evlist.h>
 #include <internal/evsel.h>
@@ -12,7 +12,7 @@
 #include <internal/cpumap.h>
 #include <internal/threadmap.h>
 #include <internal/lib.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <unistd.h>

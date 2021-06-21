@@ -84,7 +84,7 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio5 2 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -97,7 +97,7 @@
 			pinctrl-names = "default";
 			pinctrl-0 = <&pinctrl_user_led>;
 			gpios = <&gpio2 20 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -719,7 +719,7 @@
 	pinctrl-0 = <&pinctrl_kpp>;
 	/* sample keymap */
 	/* row/col 0,1 are mapped to KPP row/col 6,7 */
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(6, 6, KEY_POWER) /* 0x06060074 */
 		MATRIX_KEY(6, 7, KEY_KP0) /* 0x06070052 */
 		MATRIX_KEY(6, 2, KEY_KP1) /* 0x0602004f */

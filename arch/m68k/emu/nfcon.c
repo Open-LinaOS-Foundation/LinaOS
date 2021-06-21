@@ -6,16 +6,16 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 
 #include <asm/natfeat.h>
 

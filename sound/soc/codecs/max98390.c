@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/cdev.h>
-#include <linux/dmi.h>
-#include <linux/firmware.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <linaos/acpi.h>
+#include <linaos/cdev.h>
+#include <linaos/dmi.h>
+#include <linaos/firmware.h>
+#include <linaos/gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_opp.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/clk.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpumask.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pm_opp.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 
 #include "cpufreq-dt.h"
 

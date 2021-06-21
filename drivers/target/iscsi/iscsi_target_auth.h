@@ -2,7 +2,7 @@
 #ifndef _ISCSI_CHAP_H_
 #define _ISCSI_CHAP_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define CHAP_DIGEST_UNKNOWN	0
 #define CHAP_DIGEST_MD5		5

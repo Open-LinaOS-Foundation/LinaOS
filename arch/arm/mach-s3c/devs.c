@@ -5,33 +5,33 @@
 //
 // Base Samsung platform device definitions
 
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/gfp.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mmc/host.h>
-#include <linux/ioport.h>
-#include <linux/sizes.h>
-#include <linux/platform_data/s3c-hsudc.h>
-#include <linux/platform_data/s3c-hsotg.h>
-#include <linux/platform_data/dma-s3c24xx.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/fb.h>
+#include <linaos/gfp.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/onenand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mmc/host.h>
+#include <linaos/ioport.h>
+#include <linaos/sizes.h>
+#include <linaos/platform_data/s3c-hsudc.h>
+#include <linaos/platform_data/s3c-hsotg.h>
+#include <linaos/platform_data/dma-s3c24xx.h>
 
-#include <linux/platform_data/media/s5p_hdmi.h>
+#include <linaos/platform_data/media/s5p_hdmi.h>
 
 #include <asm/irq.h>
 #include <asm/mach/arch.h>
@@ -49,23 +49,23 @@
 
 #include "cpu.h"
 #include "devs.h"
-#include <linux/soc/samsung/s3c-adc.h>
-#include <linux/platform_data/ata-samsung_cf.h>
+#include <linaos/soc/samsung/s3c-adc.h>
+#include <linaos/platform_data/ata-samsung_cf.h>
 #include "fb.h"
-#include <linux/platform_data/fb-s3c2410.h>
-#include <linux/platform_data/hwmon-s3c.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/hwmon-s3c.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 #include "keypad.h"
-#include <linux/platform_data/mmc-s3cmci.h>
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/mmc-s3cmci.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
 #include "pwm-core.h"
 #include "sdhci.h"
-#include <linux/platform_data/touchscreen-s3c2410.h>
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/usb-ohci-s3c2410.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
+#include <linaos/platform_data/usb-s3c2410_udc.h>
+#include <linaos/platform_data/usb-ohci-s3c2410.h>
 #include "usb-phy.h"
-#include <linux/platform_data/asoc-s3c.h>
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <linaos/platform_data/asoc-s3c.h>
+#include <linaos/platform_data/spi-s3c64xx.h>
 
 #define samsung_device_dma_mask (*((u64[]) { DMA_BIT_MASK(32) }))
 

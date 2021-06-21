@@ -16,15 +16,15 @@
  *              Updated for Thomas Graf's generic rules
  *
  */
-#include <linux/net.h>
-#include <linux/init.h>
-#include <linux/netlink.h>
-#include <linux/rtnetlink.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
+#include <linaos/net.h>
+#include <linaos/init.h>
+#include <linaos/netlink.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/export.h>
 #include <net/neighbour.h>
 #include <net/dst.h>
 #include <net/flow.h>

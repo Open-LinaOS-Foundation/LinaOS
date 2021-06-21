@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/init_task.h>
+#include <linaos/init_task.h>
 
 #define __HAVE_ARCH_PGD_FREE
 #include <asm/pgalloc.h>

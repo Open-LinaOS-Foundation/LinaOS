@@ -44,7 +44,7 @@ I. For patch submitters
   6) Any compatible strings used in a chip or board DTS file must be
      previously documented in the corresponding DT binding text file
      in Documentation/devicetree/bindings.  This rule applies even if
-     the Linux device driver does not yet match on the compatible
+     the LinaOS device driver does not yet match on the compatible
      string.  [ checkpatch will emit warnings if this step is not
      followed as of commit bff5da4335256513497cc8c79f9a9d1665e09864
      ("checkpatch: add DT compatible string documentation checks"). ]

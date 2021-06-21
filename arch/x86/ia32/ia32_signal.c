@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/x86_64/ia32/ia32_signal.c
+ *  linaos/arch/x86_64/ia32/ia32_signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,21 +9,21 @@
  *  2000-12-*   x86-64 compatibility mode signal handling by Andi Kleen
  */
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/personality.h>
-#include <linux/compat.h>
-#include <linux/binfmts.h>
-#include <linux/syscalls.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/unistd.h>
+#include <linaos/stddef.h>
+#include <linaos/personality.h>
+#include <linaos/compat.h>
+#include <linaos/binfmts.h>
+#include <linaos/syscalls.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/fpu/internal.h>
 #include <asm/fpu/signal.h>
 #include <asm/ptrace.h>

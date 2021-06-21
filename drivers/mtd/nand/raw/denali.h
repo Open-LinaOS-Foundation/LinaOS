@@ -7,12 +7,12 @@
 #ifndef __DENALI_H__
 #define __DENALI_H__
 
-#include <linux/bits.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/completion.h>
+#include <linaos/list.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/types.h>
 
 #define DEVICE_RESET				0x0
 #define     DEVICE_RESET__BANK(bank)			BIT(bank)

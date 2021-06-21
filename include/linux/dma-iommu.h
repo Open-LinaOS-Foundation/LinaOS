@@ -5,13 +5,13 @@
 #ifndef __DMA_IOMMU_H
 #define __DMA_IOMMU_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_IOMMU_DMA
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/msi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/iommu.h>
+#include <linaos/msi.h>
 
 /* Domain management interface for IOMMU drivers */
 int iommu_get_dma_cookie(struct iommu_domain *domain);

@@ -6,7 +6,7 @@ FAQ list:
 =========
 
 A FAQ list may be found in the fdutils package (see below), and also
-at <https://fdutils.linux.lu/faq.html>.
+at <https://fdutils.linaos.lu/faq.html>.
 
 
 LILO configuration options (Thinkpad users, read this)
@@ -16,19 +16,19 @@ The floppy driver is configured using the 'floppy=' option in
 lilo. This option can be typed at the boot prompt, or entered in the
 lilo configuration file.
 
-Example: If your kernel is called linux-2.6.9, type the following line
+Example: If your kernel is called linaos-2.6.9, type the following line
 at the lilo boot prompt (if you have a thinkpad)::
 
- linux-2.6.9 floppy=thinkpad
+ linaos-2.6.9 floppy=thinkpad
 
 You may also enter the following line in /etc/lilo.conf, in the description
-of linux-2.6.9::
+of linaos-2.6.9::
 
  append = "floppy=thinkpad"
 
 Several floppy related options may be given, example::
 
- linux-2.6.9 floppy=daring floppy=two_fdc
+ linaos-2.6.9 floppy=daring floppy=two_fdc
  append = "floppy=daring floppy=two_fdc"
 
 If you give options both in the lilo config file and on the boot
@@ -220,22 +220,22 @@ It also contains additional documentation about the floppy driver.
 
 The latest version can be found at fdutils homepage:
 
- https://fdutils.linux.lu
+ https://fdutils.linaos.lu
 
 The fdutils releases can be found at:
 
- https://fdutils.linux.lu/download.html
+ https://fdutils.linaos.lu/download.html
 
  http://www.tux.org/pub/knaff/fdutils/
 
- ftp://metalab.unc.edu/pub/Linux/utils/disk-management/
+ ftp://metalab.unc.edu/pub/LinaOS/utils/disk-management/
 
 Reporting problems about the floppy driver
 ==========================================
 
 If you have a question or a bug report about the floppy driver, mail
 me at Alain.Knaff@poboxes.com . If you post to Usenet, preferably use
-comp.os.linux.hardware. As the volume in these groups is rather high,
+comp.os.linaos.hardware. As the volume in these groups is rather high,
 be sure to include the word "floppy" (or "FLOPPY") in the subject
 line.  If the reported problem happens when mounting floppy disks, be
 sure to mention also the type of the filesystem in the subject line.

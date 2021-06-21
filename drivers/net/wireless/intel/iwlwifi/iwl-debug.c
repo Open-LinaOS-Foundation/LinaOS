@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2005-2011 Intel Corporation
  */
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/export.h>
 #include "iwl-drv.h"
 #include "iwl-debug.h"
 #include "iwl-devtrace.h"

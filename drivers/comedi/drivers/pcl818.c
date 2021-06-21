@@ -92,11 +92,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
 
 #include "../comedidev.h"
 

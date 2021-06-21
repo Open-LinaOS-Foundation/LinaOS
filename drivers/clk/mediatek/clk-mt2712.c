@@ -4,14 +4,14 @@
  * Author: Weiyi Lu <weiyi.lu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"

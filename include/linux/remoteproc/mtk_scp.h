@@ -6,7 +6,7 @@
 #ifndef _MTK_SCP_H
 #define _MTK_SCP_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 typedef void (*scp_ipi_handler_t) (void *data,
 				   unsigned int len,

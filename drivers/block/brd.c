@@ -9,23 +9,23 @@
  * of their respective owners.
  */
 
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/radix-tree.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/debugfs.h>
+#include <linaos/init.h>
+#include <linaos/initrd.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/major.h>
+#include <linaos/blkdev.h>
+#include <linaos/bio.h>
+#include <linaos/highmem.h>
+#include <linaos/mutex.h>
+#include <linaos/pagemap.h>
+#include <linaos/radix-tree.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/backing-dev.h>
+#include <linaos/debugfs.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define PAGE_SECTORS_SHIFT	(PAGE_SHIFT - SECTOR_SHIFT)
 #define PAGE_SECTORS		(1 << PAGE_SECTORS_SHIFT)

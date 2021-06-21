@@ -14,7 +14,7 @@
  * (https://www.freecom.de/)
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 

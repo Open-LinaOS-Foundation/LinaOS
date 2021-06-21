@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/mfd/wm831x/regulator.h -- Regulator definitons for wm831x
+ * linaos/mfd/wm831x/regulator.h -- Regulator definitons for wm831x
  *
  * Copyright 2009 Wolfson Microelectronics PLC.
  *

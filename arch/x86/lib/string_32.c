@@ -11,8 +11,8 @@
  * strings.
  */
 
-#include <linux/string.h>
-#include <linux/export.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
 
 #ifdef __HAVE_ARCH_STRCPY
 char *strcpy(char *dest, const char *src)

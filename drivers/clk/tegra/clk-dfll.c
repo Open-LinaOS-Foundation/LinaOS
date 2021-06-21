@@ -28,23 +28,23 @@
  * cycle time to delay for a certain length of time.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/seq_file.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm_opp.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/seq_file.h>
 
 #include "clk-dfll.h"
 #include "cvb.h"
@@ -1172,7 +1172,7 @@ static struct clk_init_data dfll_clk_init_data = {
  * dfll_register_clk - register the DFLL output clock with the clock framework
  * @td: DFLL instance
  *
- * Register the DFLL's output clock with the Linux clock framework and register
+ * Register the DFLL's output clock with the LinaOS clock framework and register
  * the DFLL driver as an OF clock provider. Returns 0 upon success or -EINVAL
  * or -ENOMEM upon failure.
  */
@@ -1205,7 +1205,7 @@ static int dfll_register_clk(struct tegra_dfll *td)
  * dfll_unregister_clk - unregister the DFLL output clock
  * @td: DFLL instance
  *
- * Unregister the DFLL's output clock from the Linux clock framework
+ * Unregister the DFLL's output clock from the LinaOS clock framework
  * and from clkdev. No return value.
  */
 static void dfll_unregister_clk(struct tegra_dfll *td)

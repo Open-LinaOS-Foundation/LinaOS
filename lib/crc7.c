@@ -3,9 +3,9 @@
  *      crc7.c
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/crc7.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/crc7.h>
 
 
 /*

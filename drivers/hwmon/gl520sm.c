@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * gl520sm.c - Part of lm_sensors, Linux kernel modules for hardware
+ * gl520sm.c - Part of lm_sensors, LinaOS kernel modules for hardware
  *	       monitoring
  * Copyright (c) 1998, 1999  Frodo Looijaard <frodol@dds.nl>,
  *			     Kyösti Mälkki <kmalkki@cc.hut.fi>
  * Copyright (c) 2005	Maarten Deprez <maartendeprez@users.sourceforge.net>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
 
 /* Type of the extra sensor */
 static unsigned short extra_sensor_type;

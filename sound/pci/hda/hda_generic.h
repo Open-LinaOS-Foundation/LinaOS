@@ -8,7 +8,7 @@
 #ifndef __SOUND_HDA_GENERIC_H
 #define __SOUND_HDA_GENERIC_H
 
-#include <linux/leds.h>
+#include <linaos/leds.h>
 
 /* table entry for multi-io paths */
 struct hda_multi_io {

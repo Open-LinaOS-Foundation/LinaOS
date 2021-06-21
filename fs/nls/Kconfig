@@ -417,7 +417,7 @@ config NLS_ISO8859_14
 	  input/output character sets. Say Y here for the Latin 8 character
 	  set, which adds the last accented vowels for Welsh (aka Cymraeg)
 	  (and Manx Gaelic) that were missing in Latin 1.
-	  <http://linux.speech.cymru.org/> has further information.
+	  <http://linaos.speech.cymru.org/> has further information.
 
 config NLS_ISO8859_15
 	tristate "NLS ISO 8859-15 (Latin 9; Western European Languages with Euro)"

@@ -23,15 +23,15 @@
  * (C) 2006-2012 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/seq_file.h>
+#include <linaos/in.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 #include <net/dst.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
@@ -39,8 +39,8 @@
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_timeout.h>
-#include <linux/netfilter/nf_conntrack_proto_gre.h>
-#include <linux/netfilter/nf_conntrack_pptp.h>
+#include <linaos/netfilter/nf_conntrack_proto_gre.h>
+#include <linaos/netfilter/nf_conntrack_pptp.h>
 
 static const unsigned int gre_timeouts[GRE_CT_MAX] = {
 	[GRE_CT_UNREPLIED]	= 30*HZ,
@@ -247,8 +247,8 @@ int nf_conntrack_gre_packet(struct nf_conn *ct,
 
 #ifdef CONFIG_NF_CONNTRACK_TIMEOUT
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_cttimeout.h>
 
 static int gre_timeout_nlattr_to_obj(struct nlattr *tb[],
 				     struct net *net, void *data)

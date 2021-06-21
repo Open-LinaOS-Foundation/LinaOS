@@ -2,7 +2,7 @@
 #ifndef __KVM_X86_VMX_H
 #define __KVM_X86_VMX_H
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/kvm.h>
 #include <asm/intel_pt.h>

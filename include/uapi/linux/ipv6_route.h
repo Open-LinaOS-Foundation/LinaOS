@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- *	Linux INET6 implementation 
+ *	LinaOS INET6 implementation 
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>	
@@ -14,8 +14,8 @@
 #ifndef _UAPI_LINUX_IPV6_ROUTE_H
 #define _UAPI_LINUX_IPV6_ROUTE_H
 
-#include <linux/types.h>
-#include <linux/in6.h>			/* For struct in6_addr. */
+#include <linaos/types.h>
+#include <linaos/in6.h>			/* For struct in6_addr. */
 
 #define RTF_DEFAULT	0x00010000	/* default - learned via ND	*/
 #define RTF_ALLONLINK	0x00020000	/* (deprecated and will be removed)

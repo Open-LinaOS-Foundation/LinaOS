@@ -3,9 +3,9 @@
  * Copyright (C) 2003-2014, 2018-2020 Intel Corporation
  * Copyright (C) 2015-2016 Intel Deutschland GmbH
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/export.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
 
 #include "iwl-drv.h"
 #include "iwl-io.h"

@@ -6,7 +6,7 @@
 #ifndef K3_UDMA_H_
 #define K3_UDMA_H_
 
-#include <linux/soc/ti/ti_sci_protocol.h>
+#include <linaos/soc/ti/ti_sci_protocol.h>
 
 /* Global registers */
 #define UDMA_REV_REG			0x0

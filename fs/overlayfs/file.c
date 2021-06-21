@@ -3,16 +3,16 @@
  * Copyright (C) 2017 Red Hat, Inc.
  */
 
-#include <linux/cred.h>
-#include <linux/file.h>
-#include <linux/mount.h>
-#include <linux/xattr.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
-#include <linux/splice.h>
-#include <linux/security.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
+#include <linaos/cred.h>
+#include <linaos/file.h>
+#include <linaos/mount.h>
+#include <linaos/xattr.h>
+#include <linaos/uio.h>
+#include <linaos/uaccess.h>
+#include <linaos/splice.h>
+#include <linaos/security.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
 #include "overlayfs.h"
 
 struct ovl_aio_req {

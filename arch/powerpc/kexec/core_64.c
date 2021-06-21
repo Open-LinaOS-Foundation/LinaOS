@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * PPC64 code to handle Linux booting another kernel.
+ * PPC64 code to handle LinaOS booting another kernel.
  *
  * Copyright (C) 2004-2005, IBM Corp.
  *
@@ -8,14 +8,14 @@
  */
 
 
-#include <linux/kexec.h>
-#include <linux/smp.h>
-#include <linux/thread_info.h>
-#include <linux/init_task.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/hardirq.h>
+#include <linaos/kexec.h>
+#include <linaos/smp.h>
+#include <linaos/thread_info.h>
+#include <linaos/init_task.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/cpu.h>
+#include <linaos/hardirq.h>
 
 #include <asm/page.h>
 #include <asm/current.h>
@@ -52,8 +52,8 @@ int default_machine_kexec_prepare(struct kimage *image)
 
 	/* We also should not overwrite the tce tables */
 	for_each_node_by_type(node, "pci") {
-		basep = of_get_property(node, "linux,tce-base", NULL);
-		sizep = of_get_property(node, "linux,tce-size", NULL);
+		basep = of_get_property(node, "linaos,tce-base", NULL);
+		sizep = of_get_property(node, "linaos,tce-size", NULL);
 		if (basep == NULL || sizep == NULL)
 			continue;
 
@@ -380,13 +380,13 @@ static unsigned long htab_base;
 static unsigned long htab_size;
 
 static struct property htab_base_prop = {
-	.name = "linux,htab-base",
+	.name = "linaos,htab-base",
 	.length = sizeof(unsigned long),
 	.value = &htab_base,
 };
 
 static struct property htab_size_prop = {
-	.name = "linux,htab-size",
+	.name = "linaos,htab-size",
 	.length = sizeof(unsigned long),
 	.value = &htab_size,
 };

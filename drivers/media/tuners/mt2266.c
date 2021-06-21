@@ -5,11 +5,11 @@
  *  Copyright (c) 2007 Olivier DANET <odanet@caramail.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "mt2266.h"

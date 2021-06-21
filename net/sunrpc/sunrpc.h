@@ -27,7 +27,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef _NET_SUNRPC_SUNRPC_H
 #define _NET_SUNRPC_SUNRPC_H
 
-#include <linux/net.h>
+#include <linaos/net.h>
 
 /*
  * Header for dynamically allocated rpc buffers.

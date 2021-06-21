@@ -4,13 +4,13 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/isapnp.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/isa.h>
+#include <linaos/isapnp.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/es1688.h>

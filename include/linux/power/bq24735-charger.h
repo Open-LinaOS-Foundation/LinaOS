@@ -5,8 +5,8 @@
 #ifndef __CHARGER_BQ24735_H_
 #define __CHARGER_BQ24735_H_
 
-#include <linux/types.h>
-#include <linux/power_supply.h>
+#include <linaos/types.h>
+#include <linaos/power_supply.h>
 
 struct bq24735_platform {
 	uint32_t charge_current;

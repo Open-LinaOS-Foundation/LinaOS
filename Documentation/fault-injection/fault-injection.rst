@@ -207,7 +207,7 @@ proc entries
 How to add new fault injection capability
 -----------------------------------------
 
-- #include <linux/fault-inject.h>
+- #include <linaos/fault-inject.h>
 
 - define the fault attributes
 

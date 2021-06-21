@@ -1,6 +1,6 @@
 What:		/sys/bus/iio/devices/iio:deviceX
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Hardware chip or device accessed by one communication port.
 		Corresponds to a grouping of sensor channels. X is the IIO
@@ -8,7 +8,7 @@ Description:
 
 What:		/sys/bus/iio/devices/triggerX
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		An event driven driver of data capture to an in kernel buffer.
 		May be provided by a device driver that also has an IIO device
@@ -22,20 +22,20 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/buffer
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Directory of attributes relating to the buffer for the device.
 
 What:		/sys/bus/iio/devices/iio:deviceX/name
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Description of the physical chip / device for device X.
 		Typically a part number.
 
 What:		/sys/bus/iio/devices/iio:deviceX/label
 KernelVersion:	5.8
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Optional symbolic label for a device.
 		This is useful for userspace to be able to better identify an
@@ -81,7 +81,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/current_timestamp_clock
 KernelVersion:	4.5
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		String identifying current posix clock used to timestamp
 		buffered samples and events for device X.
@@ -91,7 +91,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_sampling_frequency
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/sampling_frequency
 What:		/sys/bus/iio/devices/triggerX/sampling_frequency
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Some devices have internal clocks.  This parameter sets the
 		resulting sampling frequency.  In many devices this
@@ -108,7 +108,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_proximity_sampling_frequency_availabl
 What:		/sys/.../iio:deviceX/buffer/sampling_frequency_available
 What:		/sys/bus/iio/devices/triggerX/sampling_frequency_available
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		When the internal sampling clock can only take a specific set of
 		frequencies, we can specify the available values with:
@@ -119,14 +119,14 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/oversampling_ratio
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Hardware dependent ADC oversampling. Controls the sampling ratio
 		of the digital filter if available.
 
 What:		/sys/bus/iio/devices/iio:deviceX/oversampling_ratio_available
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Hardware dependent values supported by the oversampling filter.
 
@@ -135,7 +135,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_voltageY_supply_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_voltageY_i_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_voltageY_q_raw
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no bias removal etc.) voltage measurement from
 		channel Y. In special cases where the channel does not
@@ -151,7 +151,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_voltageY-voltageZ_raw
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled) differential voltage measurement equivalent to
 		channel Y - channel Z where these channel numbers apply to the
@@ -163,7 +163,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_currentY_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_currentY_supply_raw
 KernelVersion:	3.17
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no bias removal etc.) current measurement from
 		channel Y. In special cases where the channel does not
@@ -174,7 +174,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_powerY_raw
 KernelVersion:	4.5
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no bias removal etc.) power measurement from
 		channel Y. The number must always be specified and
@@ -183,14 +183,14 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_capacitanceY_raw
 KernelVersion:	3.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw capacitance measurement from channel Y. Units after
 		application of scale and offset are nanofarads.
 
 What:		/sys/.../iio:deviceX/in_capacitanceY-in_capacitanceZ_raw
 KernelVersion:	3.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw differential capacitance measurement equivalent to
 		channel Y - channel Z where these channel numbers apply to the
@@ -206,7 +206,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_temp_y_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_temp_ambient_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_temp_object_raw
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no bias removal etc.) temperature measurement.
 		If an axis is specified it generally means that the temperature
@@ -218,7 +218,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_tempX_input
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Scaled temperature measurement in milli degrees Celsius.
 
@@ -226,7 +226,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_accel_x_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_accel_y_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_accel_z_raw
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Acceleration in direction x, y or z (may be arbitrarily assigned
 		but should match other such assignments on device).
@@ -237,7 +237,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_gravity_x_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_gravity_y_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_gravity_z_raw
 KernelVersion:	4.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Gravity in direction x, y or z (may be arbitrarily assigned
 		but should match other such assignments on device).
@@ -246,7 +246,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_angl_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_anglY_raw
 KernelVersion:	4.17
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Angle of rotation. Units after application of scale and offset
 		are radians.
@@ -254,7 +254,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_positionrelative_x_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_positionrelative_y_raw
 KernelVersion:	4.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Relative position in direction x or y on a pad (may be
 		arbitrarily assigned but should match other such assignments on
@@ -267,7 +267,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_anglvel_x_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_anglvel_y_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_anglvel_z_raw
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Angular velocity about axis x, y or z (may be arbitrarily
 		assigned). Has all the equivalent parameters as	per voltageY.
@@ -278,7 +278,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_incli_x_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_incli_y_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_incli_z_raw
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Inclination raw reading about axis x, y or z (may be
 		arbitrarily assigned). Data converted by application of offset
@@ -288,7 +288,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_magn_x_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_magn_y_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_magn_z_raw
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Magnetic field along axis x, y or z (may be arbitrarily
 		assigned).  Data converted by application of offset
@@ -298,7 +298,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_accel_x_peak_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_accel_y_peak_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_accel_z_peak_raw
 KernelVersion:	2.6.36
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Highest value since some reset condition.  These
 		attributes allow access to this and are otherwise
@@ -306,7 +306,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_accel_xyz_squared_peak_raw
 KernelVersion:	2.6.36
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		A computed peak value based on the sum squared magnitude of
 		the underlying value in the specified directions.
@@ -314,7 +314,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_pressureY_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_pressure_raw
 KernelVersion:	3.8
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw pressure measurement from channel Y. Units after
 		application of scale and offset are kilopascal.
@@ -322,26 +322,26 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_pressureY_input
 What:		/sys/bus/iio/devices/iio:deviceX/in_pressure_input
 KernelVersion:	3.8
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Scaled pressure measurement from channel Y, in kilopascal.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_humidityrelative_raw
 KernelVersion:	3.14
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw humidity measurement of air. Units after application of
 		scale and offset are milli percent.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_humidityrelative_input
 KernelVersion:	3.14
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Scaled humidity measurement in milli percent.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_X_mean_raw
 KernelVersion:	3.5
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Averaged raw measurement from channel X. The number of values
 		used for averaging is device specific. The converting rules for
@@ -373,7 +373,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_rot_offset
 What:		/sys/bus/iio/devices/iio:deviceX/in_angl_offset
 What:		/sys/bus/iio/devices/iio:deviceX/in_capacitanceX_offset
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If known for a device, offset to be added to <type>[Y]_raw prior
 		to scaling by <type>[Y]_scale in order to obtain value in the
@@ -430,7 +430,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_x_scale
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_y_scale
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_z_scale
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If known for a device, scale to be applied to <type>Y[_name]_raw
 		post addition of <type>[Y][_name]_offset in order to obtain the
@@ -451,7 +451,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_proximity0_calibbias
 What:		/sys/bus/iio/devices/iio:deviceX/in_pressureY_calibbias
 What:		/sys/bus/iio/devices/iio:deviceX/in_pressure_calibbias
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Hardware applied calibration offset (assumed to fix production
 		inaccuracies).
@@ -475,7 +475,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_pressureY_calibscale
 What:		/sys/bus/iio/devices/iio:deviceX/in_pressure_calibscale
 What:		/sys/bus/iio/devices/iio:deviceX/in_illuminance_calibscale
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Hardware applied calibration scale factor (assumed to fix
 		production inaccuracies).  If shared across all channels,
@@ -486,7 +486,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_energy_calibgender
 What:		/sys/bus/iio/devices/iio:deviceX/in_distance_calibgender
 What:		/sys/bus/iio/devices/iio:deviceX/in_velocity_calibgender
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Gender of the user (e.g.: male, female) used by some pedometers
 		to compute the stride length, distance, speed and activity
@@ -497,7 +497,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_energy_calibgender_available
 What:		/sys/bus/iio/devices/iio:deviceX/in_distance_calibgender_available
 What:		/sys/bus/iio/devices/iio:deviceX/in_velocity_calibgender_available
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Lists all available gender values (e.g.: male, female).
 
@@ -506,7 +506,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_energy_calibheight
 What:		/sys/bus/iio/devices/iio:deviceX/in_distance_calibheight
 What:		/sys/bus/iio/devices/iio:deviceX/in_velocity_calibheight
 KernelVersion:	3.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Height of the user (in meters) used by some pedometers
 		to compute the stride length, distance, speed and activity
@@ -514,7 +514,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_energy_calibweight
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Weight of the user (in kg). It is needed by some pedometers
 		to compute the calories burnt by the user.
@@ -533,7 +533,7 @@ What:		/sys/.../iio:deviceX/in_capacitance_scale_available
 What:		/sys/.../iio:deviceX/in_pressure_scale_available
 What:		/sys/.../iio:deviceX/in_pressureY_scale_available
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If a discrete set of scale values is available, they
 		are listed in this attribute.
@@ -545,14 +545,14 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_green_hardwaregain
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_blue_hardwaregain
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_clear_hardwaregain
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Hardware applied gain factor. If shared across all channels,
 		<type>_hardwaregain is used.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_hardwaregain_available
 KernelVersion:	5.10
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Lists all available hardware applied gain factors. Shared across all
 		channels.
@@ -561,7 +561,7 @@ What:		/sys/.../in_accel_filter_low_pass_3db_frequency
 What:		/sys/.../in_magn_filter_low_pass_3db_frequency
 What:		/sys/.../in_anglvel_filter_low_pass_3db_frequency
 KernelVersion:	3.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If a known or controllable low pass filter is applied
 		to the underlying data channel, then this parameter
@@ -571,7 +571,7 @@ What:		/sys/.../in_accel_filter_high_pass_3db_frequency
 What:		/sys/.../in_anglvel_filter_high_pass_3db_frequency
 What:		/sys/.../in_magn_filter_high_pass_3db_frequency
 KernelVersion:	4.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If a known or controllable high pass filter is applied
 		to the underlying data channel, then this parameter
@@ -580,7 +580,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/out_voltageY_raw
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltageY_raw
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled, no bias etc.) output voltage for
 		channel Y.  The number must always be specified and
@@ -592,7 +592,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/out_voltageY&Z_raw
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltageY&Z_raw
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled, no bias etc.) output voltage for an aggregate of
 		channel Y, channel Z, etc.  This interface is available in cases
@@ -604,7 +604,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/out_voltage_powerdown_mode
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltageY_powerdown_mode
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltage_powerdown_mode
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the output powerdown mode.
 		DAC output stage is disconnected from the amplifier and
@@ -627,7 +627,7 @@ What:		/sys/.../iio:deviceX/out_voltage_powerdown_mode_available
 What:		/sys/.../iio:deviceX/out_altvoltageY_powerdown_mode_available
 What:		/sys/.../iio:deviceX/out_altvoltage_powerdown_mode_available
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Lists all available output power down modes.
 		If Y is not present the mode is shared across all outputs.
@@ -637,7 +637,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/out_voltage_powerdown
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltageY_powerdown
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltage_powerdown
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Writing 1 causes output Y to enter the power down mode specified
 		by the corresponding outY_powerdown_mode. DAC output stage is
@@ -647,7 +647,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltageY_frequency
 KernelVersion:	3.4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Output frequency for channel Y in Hz. The number must always be
 		specified and unique if the output corresponds to a single
@@ -655,7 +655,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/out_altvoltageY_phase
 KernelVersion:	3.4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Phase in radians of one frequency/clock output Y
 		(out_altvoltageY) relative to another frequency/clock output
@@ -665,7 +665,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/events
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Configuration of which hardware generated events are passed up
 		to user-space.
@@ -706,7 +706,7 @@ What:		/sys/.../iio:deviceX/events/in_tempY_thresh_falling_en
 What:		/sys/.../iio:deviceX/events/in_capacitanceY_thresh_rising_en
 What:		/sys/.../iio:deviceX/events/in_capacitanceY_thresh_falling_en
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Event generated when channel passes a threshold in the specified
 		(_rising|_falling) direction. If the direction is not specified,
@@ -760,7 +760,7 @@ What:		/sys/.../iio:deviceX/events/in_voltageY_roc_falling_en
 What:		/sys/.../iio:deviceX/events/in_tempY_roc_rising_en
 What:		/sys/.../iio:deviceX/events/in_tempY_roc_falling_en
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Event generated when channel passes a threshold on the rate of
 		change (1st differential) in the specified (_rising|_falling)
@@ -785,7 +785,7 @@ Description:
 What:		/sys/.../events/in_capacitanceY_adaptive_thresh_rising_en
 What:		/sys/.../events/in_capacitanceY_adaptive_thresh_falling_en
 KernelVersion:	5.13
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Descrption:
 		Adaptive thresholds are similar to normal fixed thresholds
 		but the value is expressed as an offset from a value which
@@ -797,7 +797,7 @@ Descrption:
 What:		/sys/.../in_capacitanceY_adaptive_thresh_rising_timeout
 What:		/sys/.../in_capacitanceY_adaptive_thresh_falling_timeout
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Descrption:
 		When adaptive thresholds are used, the tracking signal
 		may adjust too slowly to step changes in the raw signal.
@@ -853,7 +853,7 @@ What:		/sys/.../events/in_capacitanceY_thresh_falling_value
 What:		/sys/.../events/in_capacitanceY_thresh_adaptive_rising_value
 What:		/sys/.../events/in_capacitanceY_thresh_falling_rising_value
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the value of threshold that the device is comparing
 		against for the events enabled by
@@ -879,7 +879,7 @@ What:		/sys/.../events/in_temp_scale
 What:		/sys/.../events/in_illuminance_scale
 What:		/sys/.../events/in_proximity_scale
 KernelVersion:	3.21
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
                 Specifies the conversion factor from the standard units
                 to device specific units used to set the event trigger
@@ -937,7 +937,7 @@ What:		/sys/.../events/in_proximity0_thresh_falling_hysteresis
 What:		/sys/.../events/in_proximity0_thresh_rising_hysteresis
 What:		/sys/.../events/in_proximity0_thresh_either_hysteresis
 KernelVersion:	3.13
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the hysteresis of threshold that the device is comparing
 		against for the events enabled by
@@ -987,7 +987,7 @@ What:		/sys/.../events/in_voltageY_raw_roc_falling_value
 What:		/sys/.../events/in_tempY_raw_roc_rising_value
 What:		/sys/.../events/in_tempY_raw_roc_falling_value
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the value of rate of change threshold that the
 		device is comparing against for the events enabled by
@@ -1077,7 +1077,7 @@ What:		/sys/.../events/in_activity_running_thresh_rising_period
 What:		/sys/.../events/in_activity_running_thresh_falling_period
 What:		/sys/.../events/in_illuminance_thresh_either_period
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Period of time (in seconds) for which the condition must be
 		met before an event is generated. If direction is not
@@ -1087,7 +1087,7 @@ What:		/sys/.../events/in_accel_thresh_rising_low_pass_filter_3db
 What:		/sys/.../events/in_anglvel_thresh_rising_low_pass_filter_3db
 What:		/sys/.../events/in_magn_thresh_rising_low_pass_filter_3db
 KernelVersion:	4.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If a low pass filter can be applied to the event generation
 		this property gives its 3db frequency in Hz.
@@ -1097,7 +1097,7 @@ What:		/sys/.../events/in_accel_thresh_rising_high_pass_filter_3db
 What:		/sys/.../events/in_anglvel_thresh_rising_high_pass_filter_3db
 What:		/sys/.../events/in_magn_thresh_rising_high_pass_filter_3db
 KernelVersion:	4.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If a high pass filter can be applied to the event generation
 		this property gives its 3db frequency in Hz.
@@ -1112,7 +1112,7 @@ What:		/sys/.../events/in_activity_jogging_thresh_falling_en
 What:		/sys/.../events/in_activity_running_thresh_rising_en
 What:		/sys/.../events/in_activity_running_thresh_falling_en
 KernelVersion:	3.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Enables or disables activity events. Depending on direction
 		an event is generated when sensor ENTERS or LEAVES a given state.
@@ -1126,7 +1126,7 @@ What:		/sys/.../events/in_activity_jogging_thresh_falling_value
 What:		/sys/.../events/in_activity_running_thresh_rising_value
 What:		/sys/.../events/in_activity_running_thresh_falling_value
 KernelVersion:	3.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Confidence value (in units as percentage) to be used
 		for deciding when an event should be generated. E.g for
@@ -1152,7 +1152,7 @@ What:		/sys/.../iio:deviceX/events/in_accel_z_mag_falling_en
 What:		/sys/.../iio:deviceX/events/in_accel_x&y&z_mag_rising_en
 What:		/sys/.../iio:deviceX/events/in_accel_x&y&z_mag_falling_en
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Similar to in_accel_x_thresh[_rising|_falling]_en, but here the
 		magnitude of the channel is compared to the threshold, not its
@@ -1163,7 +1163,7 @@ What:		/sys/.../events/in_accel_x_raw_mag_rising_value
 What:		/sys/.../events/in_accel_y_raw_mag_rising_value
 What:		/sys/.../events/in_accel_z_raw_mag_rising_value
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		The value to which the magnitude of the channel is compared. If
 		number or direction is not specified, applies to all channels of
@@ -1171,7 +1171,7 @@ Description:
 
 What:		/sys/.../events/in_steps_change_en
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Event generated when channel passes a threshold on the absolute
 		change in value. E.g. for steps: a step change event is
@@ -1180,7 +1180,7 @@ Description:
 
 What:		/sys/.../events/in_steps_change_value
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the value of change threshold that the
 		device is comparing against for the events enabled by
@@ -1190,7 +1190,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/trigger/current_trigger
 KernelVersion:	2.6.35
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		The name of the trigger source being used, as per string given
 		in /sys/class/iio/triggerY/name.
@@ -1199,7 +1199,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/buffer/length
 KernelVersion:	2.6.35
 What:		/sys/bus/iio/devices/iio:deviceX/bufferY/length
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Number of scans contained by the buffer.
 
@@ -1207,7 +1207,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/buffer/enable
 KernelVersion:	2.6.35
 What:		/sys/bus/iio/devices/iio:deviceX/bufferY/enable
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Actually start the buffer capture up.  Will start trigger
 		if first device and appropriate.
@@ -1216,7 +1216,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/scan_elements
 KernelVersion:	2.6.37
 What:		/sys/bus/iio/devices/iio:deviceX/bufferY
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Directory containing interfaces for elements that will be
 		captured for a single triggered sample set in the buffer.
@@ -1280,7 +1280,7 @@ What:		/sys/.../iio:deviceX/bufferY/in_pressure_en
 What:		/sys/.../iio:deviceX/bufferY/in_rot_quaternion_en
 What:		/sys/.../iio:deviceX/bufferY/in_proximity_en
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Scan element control for triggered data capture.
 
@@ -1318,7 +1318,7 @@ What:		/sys/.../iio:deviceX/bufferY/in_pressure_type
 What:		/sys/.../iio:deviceX/bufferY/in_rot_quaternion_type
 What:		/sys/.../iio:deviceX/bufferY/in_proximity_type
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Description of the scan element data storage within the buffer
 		and hence the form in which it is read from user-space.
@@ -1342,7 +1342,7 @@ Description:
 
 What:		/sys/.../iio:deviceX/scan_elements/in_accel_type_available
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If the type parameter can take one of a small set of values,
 		this attribute lists them.
@@ -1401,7 +1401,7 @@ What:		/sys/.../iio:deviceX/bufferY/in_pressure_index
 What:		/sys/.../iio:deviceX/bufferY/in_rot_quaternion_index
 What:		/sys/.../iio:deviceX/bufferY/in_proximity_index
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		A single positive integer specifying the position of this
 		scan element in the buffer. Note these are not dependent on
@@ -1416,21 +1416,21 @@ What:		/sys/.../iio:deviceX/in_activity_walking_input
 What:		/sys/.../iio:deviceX/in_activity_jogging_input
 What:		/sys/.../iio:deviceX/in_activity_running_input
 KernelVersion:	3.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This attribute is used to read the confidence for an activity
 		expressed in units as percentage.
 
 What:		/sys/.../iio:deviceX/in_anglvel_z_quadrature_correction_raw
 KernelVersion:	2.6.38
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This attribute is used to read the amount of quadrature error
 		present in the device at a given time.
 
 What:		/sys/.../iio:deviceX/in_accelX_power_mode
 KernelVersion:	3.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the chip power mode.
 		low_noise: reduce noise level from ADC,
@@ -1441,7 +1441,7 @@ Description:
 What:		/sys/.../iio:deviceX/in_energy_input
 What:		/sys/.../iio:deviceX/in_energy_raw
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This attribute is used to read the energy value reported by the
 		device (e.g.: human activity sensors report energy burnt by the
@@ -1450,7 +1450,7 @@ Description:
 What:		/sys/.../iio:deviceX/in_distance_input
 What:		/sys/.../iio:deviceX/in_distance_raw
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This attribute is used to read the measured distance to an object
 		or the distance covered by the user since the last reboot while
@@ -1458,7 +1458,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/store_eeprom
 KernelVersion:	3.4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Writing '1' stores the current device configuration into
 		on-chip EEPROM. After power-up or chip reset the device will
@@ -1468,7 +1468,7 @@ What:		/sys/.../iio:deviceX/in_proximity_raw
 What:		/sys/.../iio:deviceX/in_proximity_input
 What:		/sys/.../iio:deviceX/in_proximityY_raw
 KernelVersion:	3.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Proximity measurement indicating that some
 		object is near the sensor, usually by observing
@@ -1487,7 +1487,7 @@ What:		/sys/.../iio:deviceX/in_illuminanceY_mean_raw
 What:		/sys/.../iio:deviceX/in_illuminance_ir_raw
 What:		/sys/.../iio:deviceX/in_illuminance_clear_raw
 KernelVersion:	3.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Illuminance measurement, units after application of scale
 		and offset are lux.
@@ -1498,7 +1498,7 @@ What:		/sys/.../iio:deviceX/in_intensityY_both_raw
 What:		/sys/.../iio:deviceX/in_intensityY_uv_raw
 What:		/sys/.../iio:deviceX/in_intensityY_duv_raw
 KernelVersion:	3.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Unit-less light intensity. Modifiers both and ir indicate
 		that measurements contain visible and infrared light
@@ -1509,7 +1509,7 @@ Description:
 
 What:		/sys/.../iio:deviceX/in_uvindex_input
 KernelVersion:	4.6
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		UV light intensity index measuring the human skin's response to
 		different wavelength of sunlight weighted according to the
@@ -1523,7 +1523,7 @@ What:		/sys/.../iio:deviceX/in_intensity_blue_integration_time
 What:		/sys/.../iio:deviceX/in_intensity_clear_integration_time
 What:		/sys/.../iio:deviceX/in_illuminance_integration_time
 KernelVersion:	3.12
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This attribute is used to get/set the integration time in
 		seconds. If shared across all channels of a given type,
@@ -1531,13 +1531,13 @@ Description:
 
 What:		/sys/.../iio:deviceX/in_velocity_sqrt(x^2+y^2+z^2)_integration_time
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Number of seconds in which to compute speed.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_rot_quaternion_raw
 KernelVersion:	3.15
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw value of quaternion components using a format
 		x y z w. Here x, y, and z component represents the axis about
@@ -1549,7 +1549,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_rot_from_north_true_tilt_comp_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_rot_from_north_magnetic_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_rot_from_north_true_raw
 KernelVersion:	3.15
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw value of rotation from true/magnetic north measured with
 		or without compensation from tilt sensors.
@@ -1558,7 +1558,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_currentX_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_currentX_i_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_currentX_q_raw
 KernelVersion:	3.18
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw current measurement from channel X. Units are in milliamps
 		after application of scale and offset. If no offset or scale is
@@ -1575,7 +1575,7 @@ What:		/sys/.../iio:deviceX/in_distance_en
 What:		/sys/.../iio:deviceX/in_velocity_sqrt(x^2+y^2+z^2)_en
 What:		/sys/.../iio:deviceX/in_steps_en
 KernelVersion:	3.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Activates a device feature that runs in firmware/hardware.
 		E.g. for steps: the pedometer saves power while not used;
@@ -1584,7 +1584,7 @@ Description:
 
 What:		/sys/.../iio:deviceX/in_steps_input
 KernelVersion:	3.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This attribute is used to read the number of steps taken by the user
 		since the last reboot while activated.
@@ -1592,7 +1592,7 @@ Description:
 What:		/sys/.../iio:deviceX/in_velocity_sqrt(x^2+y^2+z^2)_input
 What:		/sys/.../iio:deviceX/in_velocity_sqrt(x^2+y^2+z^2)_raw
 KernelVersion:	3.19
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This attribute is used to read the current speed value of the
 		user (which is the norm or magnitude of the velocity vector).
@@ -1600,7 +1600,7 @@ Description:
 
 What:		/sys/.../iio:deviceX/in_steps_debounce_count
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies the number of steps that must occur within
 		in_steps_filter_debounce_time for the pedometer to decide the
@@ -1608,7 +1608,7 @@ Description:
 
 What:		/sys/.../iio:deviceX/in_steps_debounce_time
 KernelVersion:	4.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specifies number of seconds in which we compute the steps
 		that occur in order to decide if the consumer is making steps.
@@ -1617,7 +1617,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/buffer/watermark
 KernelVersion:	4.2
 What:		/sys/bus/iio/devices/iio:deviceX/bufferY/watermark
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		A single positive integer specifying the maximum number of scan
 		elements to wait for.
@@ -1637,7 +1637,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/buffer/data_available
 KernelVersion: 4.16
 What:		/sys/bus/iio/devices/iio:deviceX/bufferY/data_available
 KernelVersion:	5.11
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		A read-only value indicating the bytes of data available in the
 		buffer. In the case of an output buffer, this indicates the
@@ -1647,7 +1647,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/hwfifo_enabled
 KernelVersion: 4.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		A read-only boolean value that indicates if the hardware fifo is
 		currently enabled or disabled. If the device does not have a
@@ -1671,7 +1671,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:device*/buffer/hwfifo_timeout
 KernelVersion:	4.12
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		A read/write property to provide capability to delay reporting of
 		samples till a timeout is reached. This allows host processors to
@@ -1682,7 +1682,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/hwfifo_watermark
 KernelVersion: 4.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only entry that contains a single integer specifying the
 		current watermark level for the hardware fifo. If the device
@@ -1696,7 +1696,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/hwfifo_watermark_min
 KernelVersion: 4.2
-Contact:       linux-iio@vger.kernel.org
+Contact:       linaos-iio@vger.kernel.org
 Description:
 		A single positive integer specifying the minimum watermark level
 		for the hardware fifo of this device. If the device does not
@@ -1707,7 +1707,7 @@ Description:
 
 What:	       /sys/bus/iio/devices/iio:deviceX/buffer/hwfifo_watermark_max
 KernelVersion: 4.2
-Contact:       linux-iio@vger.kernel.org
+Contact:       linaos-iio@vger.kernel.org
 Description:
 		A single positive integer specifying the maximum watermark level
 		for the hardware fifo of this device. If the device does not
@@ -1718,7 +1718,7 @@ Description:
 
 What:	       /sys/bus/iio/devices/iio:deviceX/buffer/hwfifo_watermark_available
 KernelVersion: 4.2
-Contact:       linux-iio@vger.kernel.org
+Contact:       linaos-iio@vger.kernel.org
 Description:
 		A list of positive integers specifying the available watermark
 		levels for the hardware fifo. This entry is optional and if it
@@ -1735,7 +1735,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_tempX_calibemissivity
 What:		/sys/bus/iio/devices/iio:deviceX/in_temp_object_calibemissivity
 What:		/sys/bus/iio/devices/iio:deviceX/in_tempX_object_calibemissivity
 KernelVersion:	4.1
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		The emissivity ratio of the surface in the field of view of the
 		contactless temperature sensor.  Emissivity varies from 0 to 1,
@@ -1745,7 +1745,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_magn_x_oversampling_ratio
 What:		/sys/bus/iio/devices/iio:deviceX/in_magn_y_oversampling_ratio
 What:		/sys/bus/iio/devices/iio:deviceX/in_magn_z_oversampling_ratio
 KernelVersion:	4.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Hardware applied number of measurements for acquiring one
 		data point. The HW will do <type>[_name]_oversampling_ratio
@@ -1766,7 +1766,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_concentrationX_o2_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_concentration_voc_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_concentrationX_voc_raw
 KernelVersion:	4.3
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no offset etc.) reading of a substance. Units
 		after application of scale and offset are percents.
@@ -1776,14 +1776,14 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_resistanceX_raw
 What:		/sys/bus/iio/devices/iio:deviceX/out_resistance_raw
 What:		/sys/bus/iio/devices/iio:deviceX/out_resistanceX_raw
 KernelVersion:	4.3
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no offset etc.) resistance reading that can be processed
 		into an ohm value.
 
 What:		/sys/bus/iio/devices/iio:deviceX/heater_enable
 KernelVersion:	4.1.0
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		'1' (enable) or '0' (disable) specifying the enable
 		of heater function. Same reading values apply.
@@ -1794,7 +1794,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_ph_raw
 KernelVersion:	4.5
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no offset etc.) pH reading of a substance as a negative
 		base-10 logarithm of hydrodium ions in a litre of water.
@@ -1805,7 +1805,7 @@ What:           /sys/bus/iio/devices/iio:deviceX/out_mount_matrix
 What:           /sys/bus/iio/devices/iio:deviceX/in_anglvel_mount_matrix
 What:           /sys/bus/iio/devices/iio:deviceX/in_accel_mount_matrix
 KernelVersion:  4.6
-Contact:        linux-iio@vger.kernel.org
+Contact:        linaos-iio@vger.kernel.org
 Description:
 		Mounting matrix for IIO sensors. This is a rotation matrix which
 		informs userspace about sensor chip's placement relative to the
@@ -1863,14 +1863,14 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_electricalconductivity_raw
 KernelVersion:	4.8
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled no offset etc.) electric conductivity reading that
 		can be processed to siemens per meter.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_countY_raw
 KernelVersion:	4.10
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This interface is deprecated; please use the Counter subsystem.
 
@@ -1880,7 +1880,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_indexY_raw
 KernelVersion:	4.10
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This interface is deprecated; please use the Counter subsystem.
 
@@ -1891,7 +1891,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_count_count_direction_available
 KernelVersion:	4.12
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This interface is deprecated; please use the Counter subsystem.
 
@@ -1902,7 +1902,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_countY_count_direction
 KernelVersion:	4.12
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This interface is deprecated; please use the Counter subsystem.
 
@@ -1911,7 +1911,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_voltageY_label
 What:		/sys/bus/iio/devices/iio:deviceX/out_voltageY_label
 KernelVersion:	5.8
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Optional symbolic label to a device channel.
 		If a label is defined for this channel add that to the channel
@@ -1920,7 +1920,7 @@ Description:
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_phaseY_raw
 KernelVersion:	4.18
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Raw (unscaled) phase difference reading from channel Y
 		that can be processed to radians.
@@ -1934,7 +1934,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_massconcentrationY_pm4_input
 What:		/sys/bus/iio/devices/iio:deviceX/in_massconcentration_pm10_input
 What:		/sys/bus/iio/devices/iio:deviceX/in_massconcentrationY_pm10_input
 KernelVersion:	4.22
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Mass concentration reading of particulate matter in ug / m3.
 		pmX consists of particles with aerodynamic diameter less or
@@ -1943,28 +1943,28 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/events/in_illuminance_period_available
 Date:		November 2019
 KernelVersion:	5.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		List of valid periods (in seconds) for which the light intensity
 		must be above the threshold level before interrupt is asserted.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_filter_notch_center_frequency
 KernelVersion:	5.5
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Center frequency in Hz for a notch filter. Used i.e. for line
 		noise suppression.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_temp_thermocouple_type
 KernelVersion:	5.5
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		One of the following thermocouple types: B, E, J, K, N, R, S, T.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_temp_object_calibambient
 What:		/sys/bus/iio/devices/iio:deviceX/in_tempX_object_calibambient
 KernelVersion:	5.10
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Calibrated ambient temperature for object temperature
 		calculation in milli degrees Celsius.
@@ -1973,14 +1973,14 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_x_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_y_raw
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_z_raw
 KernelVersion:	5.10
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Unscaled light intensity according to CIE 1931/DIN 5033 color space.
 		Units after application of scale are nano nanowatts per square meter.
 
 What:		/sys/bus/iio/devices/iio:deviceX/in_anglY_label
 KernelVersion:	5.12
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Optional symbolic label for channel Y.
 		For Intel hid hinge sensor, the label values are:
@@ -1991,7 +1991,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_illuminance_hysteresis_relative
 What:		/sys/bus/iio/devices/iio:deviceX/in_intensity_hysteresis_relative
 KernelVersion:	5.12
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Specify the percent for light sensor relative to the channel
 		absolute value that a data field should change before an event

@@ -17,7 +17,7 @@
 #ifdef CONFIG_PINCTRL
 
 /* The device core acts as a consumer toward pinctrl */
-#include <linux/pinctrl/consumer.h>
+#include <linaos/pinctrl/consumer.h>
 
 /**
  * struct dev_pin_info - pin state container for devices

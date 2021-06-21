@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa27x.c
+ *  linaos/arch/arm/mach-pxa/pxa27x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Nov 05, 2002
@@ -8,21 +8,21 @@
  *
  * Code specific to PXA27x aka Bulverde.
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/mmp_dma.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma/pxa-dma.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/irqchip.h>
+#include <linaos/suspend.h>
+#include <linaos/platform_device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/platform_data/mmp_dma.h>
 
 #include <asm/mach/map.h>
 #include <mach/hardware.h>
@@ -31,15 +31,15 @@
 #include <mach/irqs.h>
 #include "pxa27x.h"
 #include <mach/reset.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include "pm.h"
 #include <mach/dma.h>
 #include <mach/smemc.h>
 
 #include "generic.h"
 #include "devices.h"
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
 
 void pxa27x_clear_otgph(void)
 {

@@ -8,7 +8,7 @@ title: Renesas Capture Engine Unit (CEU) Bindings
 
 maintainers:
   - Jacopo Mondi <jacopo+renesas@jmondi.org>
-  - linux-renesas-soc@vger.kernel.org
+  - linaos-renesas-soc@vger.kernel.org
 
 description: |+
   The Capture Engine Unit is the image capture interface found in the Renesas SH

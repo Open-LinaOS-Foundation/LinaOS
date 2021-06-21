@@ -9,7 +9,7 @@
 #define __LOCAL_FDP_H_
 
 #include <net/nfc/nci_core.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/gpio/consumer.h>
 
 struct fdp_i2c_phy {
 	struct i2c_client *i2c_dev;

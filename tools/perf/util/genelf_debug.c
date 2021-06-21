@@ -10,7 +10,7 @@
  * @remark Copyright 2007 OProfile authors
  * @author Philippe Elie
  */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <sys/types.h>
 #include <stdio.h>
 #include <getopt.h>

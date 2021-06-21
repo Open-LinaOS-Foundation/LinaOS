@@ -45,7 +45,7 @@
 /*
  * AXP221/221s/223 Integrated Power Management Chip
  * http://www.x-powers.com/product/AXP22X.php
- * http://dl.linux-sunxi.org/AXP/AXP221%20Datasheet%20V1.2%2020130326%20.pdf
+ * http://dl.linaos-sunxi.org/AXP/AXP221%20Datasheet%20V1.2%2020130326%20.pdf
  */
 
 &axp22x {

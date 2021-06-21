@@ -10,17 +10,17 @@
  * Copyright (C) 2006, OmniVision
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_gpio.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/videodev2.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_gpio.h>
+#include <linaos/v4l2-mediabus.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

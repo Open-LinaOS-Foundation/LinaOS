@@ -8,9 +8,9 @@
 #if !defined(_DPAA2_ETH_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _DPAA2_ETH_TRACE_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/tracepoint.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/tracepoint.h>
 
 #define TR_FMT "[%s] fd: addr=0x%llx, len=%u, off=%u"
 /* trace_printk format for raw buffer event class */

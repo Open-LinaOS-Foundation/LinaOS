@@ -36,24 +36,24 @@
  * orientation, false is normal orientation.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/extcon.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/extcon.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
-#include <linux/mfd/syscon.h>
-#include <linux/phy/phy.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/phy/phy.h>
 
 #define CMN_SSM_BANDGAP			(0x21 << 2)
 #define CMN_SSM_BIAS			(0x22 << 2)

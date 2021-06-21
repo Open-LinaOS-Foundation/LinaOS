@@ -4,7 +4,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/debugobjects.h>
+#include <linaos/debugobjects.h>
 
 #include "gt/intel_context.h"
 #include "gt/intel_engine_heartbeat.h"

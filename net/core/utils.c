@@ -10,26 +10,26 @@
  *	Created by Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/ratelimit.h>
-#include <linux/socket.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/ctype.h>
+#include <linaos/inet.h>
+#include <linaos/mm.h>
+#include <linaos/net.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/percpu.h>
+#include <linaos/init.h>
+#include <linaos/ratelimit.h>
+#include <linaos/socket.h>
 
 #include <net/sock.h>
 #include <net/net_ratelimit.h>
 #include <net/ipv6.h>
 
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 DEFINE_RATELIMIT_STATE(net_ratelimit_state, 5 * HZ, 10);
 /*

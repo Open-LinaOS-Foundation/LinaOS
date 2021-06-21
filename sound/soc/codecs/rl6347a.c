@@ -7,9 +7,9 @@
  * Author: Oder Chiou <oder_chiou@realtek.com>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
 
 #include "rl6347a.h"
 

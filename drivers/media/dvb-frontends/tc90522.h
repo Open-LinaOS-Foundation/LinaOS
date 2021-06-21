@@ -15,7 +15,7 @@
 #ifndef TC90522_H
 #define TC90522_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 /* I2C device types */

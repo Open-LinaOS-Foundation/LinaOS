@@ -38,8 +38,8 @@
 #ifndef _TIPC_ADDR_H
 #define _TIPC_ADDR_H
 
-#include <linux/types.h>
-#include <linux/tipc.h>
+#include <linaos/types.h>
+#include <linaos/tipc.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include "core.h"

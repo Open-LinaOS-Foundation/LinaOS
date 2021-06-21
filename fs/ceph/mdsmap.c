@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
-#include <linux/ceph/mdsmap.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
+#include <linaos/ceph/mdsmap.h>
+#include <linaos/ceph/messenger.h>
+#include <linaos/ceph/decode.h>
 
 #include "super.h"
 

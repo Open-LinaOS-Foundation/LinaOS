@@ -8,7 +8,7 @@
 #ifndef WFX_DATA_TX_H
 #define WFX_DATA_TX_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <net/mac80211.h>
 
 #include "hif_api_cmd.h"

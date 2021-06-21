@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -37,25 +37,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/uio.h>
-#include <linux/notifier.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/miscdevice.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/uio.h>
+#include <linaos/notifier.h>
+#include <linaos/wait.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/namei.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/miscdevice.h>
+#include <linaos/workqueue.h>
 
 #include <xen/xenbus.h>
 #include <xen/xen.h>

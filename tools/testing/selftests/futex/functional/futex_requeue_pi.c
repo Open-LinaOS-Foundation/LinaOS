@@ -9,11 +9,11 @@
  *
  * AUTHORS
  *      Sripathi Kodi <sripathik@in.ibm.com>
- *      Darren Hart <dvhart@linux.intel.com>
+ *      Darren Hart <dvhart@linaos.intel.com>
  *
  * HISTORY
  *      2008-Jan-13: Initial version by Sripathi Kodi <sripathik@in.ibm.com>
- *      2009-Nov-6: futex test adaptation by Darren Hart <dvhart@linux.intel.com>
+ *      2009-Nov-6: futex test adaptation by Darren Hart <dvhart@linaos.intel.com>
  *
  *****************************************************************************/
 

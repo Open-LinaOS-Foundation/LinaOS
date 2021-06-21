@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_MSR_INDEX_H
 #define _ASM_X86_MSR_INDEX_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 /*
  * CPU model specific register (MSR) numbers.

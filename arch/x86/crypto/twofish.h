@@ -2,7 +2,7 @@
 #ifndef ASM_X86_TWOFISH_H
 #define ASM_X86_TWOFISH_H
 
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 #include <crypto/twofish.h>
 #include <crypto/b128ops.h>
 

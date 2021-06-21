@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Amiga mouse driver for Linux/m68k
+ *  Amiga mouse driver for LinaOS/m68k
  *
  *  Copyright (c) 2000-2002 Vojtech Pavlik
  *
@@ -13,15 +13,15 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 
 #include <asm/irq.h>
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
 

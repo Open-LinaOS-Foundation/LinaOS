@@ -3,7 +3,7 @@
  * Copyright (C) 2017 Sigma Designs
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/rc-map.h>
 
 static struct rc_map_table tango_table[] = {

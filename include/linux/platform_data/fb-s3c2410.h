@@ -8,7 +8,7 @@
 #ifndef __ASM_PLAT_FB_S3C2410_H
 #define __ASM_PLAT_FB_S3C2410_H __FILE__
 
-#include <linux/compiler_types.h>
+#include <linaos/compiler_types.h>
 
 struct s3c2410fb_hw {
 	unsigned long	lcdcon1;

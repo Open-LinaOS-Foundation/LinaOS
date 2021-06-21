@@ -6,13 +6,13 @@
  * Fixed rate clock implementation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 /*
  * DOC: basic fixed-rate clock that cannot gate

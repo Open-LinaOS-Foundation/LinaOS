@@ -24,7 +24,7 @@
 		keyup-threshold-microvolt = <1800000>;
 
 		func-key {
-			linux,code = <KEY_FN>;
+			linaos,code = <KEY_FN>;
 			label = "function";
 			press-threshold-microvolt = <18000>;
 		};
@@ -38,31 +38,31 @@
 		keyup-threshold-microvolt = <1800000>;
 
 		esc-key {
-			linux,code = <KEY_MICMUTE>;
+			linaos,code = <KEY_MICMUTE>;
 			label = "micmute";
 			press-threshold-microvolt = <1130000>;
 		};
 
 		home-key {
-			linux,code = <KEY_MODE>;
+			linaos,code = <KEY_MODE>;
 			label = "mode";
 			press-threshold-microvolt = <901000>;
 		};
 
 		menu-key {
-			linux,code = <KEY_PLAY>;
+			linaos,code = <KEY_PLAY>;
 			label = "play";
 			press-threshold-microvolt = <624000>;
 		};
 
 		vol-down-key {
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			label = "volume down";
 			press-threshold-microvolt = <300000>;
 		};
 
 		vol-up-key {
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			label = "volume up";
 			press-threshold-microvolt = <18000>;
 		};
@@ -77,7 +77,7 @@
 
 		power {
 			gpios = <&gpio0 RK_PA6 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			label = "GPIO Key Power";
 			debounce-interval = <100>;
 			wakeup-source;

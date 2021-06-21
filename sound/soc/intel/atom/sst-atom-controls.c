@@ -14,7 +14,7 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
 #include "sst-mfld-platform.h"

@@ -18,7 +18,7 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/llc.h>
 #include <net/llc_pdu.h>
 #include <net/llc_s_ac.h>

@@ -7,7 +7,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table videomate_k100[] = {
 	{ 0x01, KEY_POWER },

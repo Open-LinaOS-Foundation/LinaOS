@@ -5,23 +5,23 @@
  * Power supply driver for ST Ericsson pm2xxx_charger charger
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/pm2301_charger.h>
-#include <linux/gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/workqueue.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/pm2301_charger.h>
+#include <linaos/gpio.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm.h>
 
 #include "ab8500-bm.h"
 #include "ab8500-chargalg.h"

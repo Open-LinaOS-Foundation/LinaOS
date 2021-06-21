@@ -13,7 +13,7 @@ KBUILD_CFLAGS	+= -fno-builtin -Iarch/$(ARCH)/boot/include
 HOSTFLAGS	+= -Iarch/$(ARCH)/boot/include
 
 subdir-y	:= lib
-targets		+= vmlinux.bin vmlinux.bin.gz
+targets		+= vmlinaos.bin vmlinaos.bin.gz
 targets		+= uImage xipImage
 
 # Subdirs for the boot loader(s)
@@ -33,22 +33,22 @@ boot-elf boot-redboot: $(addprefix $(obj)/,$(subdir-y))
 
 OBJCOPYFLAGS = --strip-all -R .comment -R .notes -O binary
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.bin.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinaos.bin.gz: $(obj)/vmlinaos.bin FORCE
 	$(call if_changed,gzip)
 
-boot-elf: $(obj)/vmlinux.bin
-boot-redboot: $(obj)/vmlinux.bin.gz
+boot-elf: $(obj)/vmlinaos.bin
+boot-redboot: $(obj)/vmlinaos.bin.gz
 
 UIMAGE_LOADADDR = $(CONFIG_KERNEL_LOAD_ADDRESS)
 UIMAGE_COMPRESSION = gzip
 
-$(obj)/uImage: $(obj)/vmlinux.bin.gz FORCE
+$(obj)/uImage: $(obj)/vmlinaos.bin.gz FORCE
 	$(call if_changed,uimage)
 	$(Q)$(kecho) '  Kernel: $@ is ready'
 
-$(obj)/xipImage: vmlinux FORCE
+$(obj)/xipImage: vmlinaos FORCE
 	$(call if_changed,objcopy)
 	$(Q)$(kecho) '  Kernel: $@ is ready'

@@ -109,7 +109,7 @@
 
 	spdif_out: spdif-out {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 	};
 
 	r-gpio-keys {
@@ -117,7 +117,7 @@
 
 		power {
 			label = "power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&r_pio 0 3 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -154,7 +154,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-tanix-tx3mini";
+	linaos,rc-map-name = "rc-tanix-tx3mini";
 	pinctrl-names = "default";
 	pinctrl-0 = <&r_ir_rx_pin>;
 	status = "okay";

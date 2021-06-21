@@ -31,12 +31,12 @@
 /*
  * Veritas filesystem driver - lookup and other directory related code.
  */
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
+#include <linaos/fs.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/pagemap.h>
 
 #include "vxfs.h"
 #include "vxfs_dir.h"

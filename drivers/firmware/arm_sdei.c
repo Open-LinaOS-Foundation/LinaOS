@@ -3,34 +3,34 @@
 #define pr_fmt(fmt) "sdei: " fmt
 
 #include <acpi/ghes.h>
-#include <linux/acpi.h>
-#include <linux/arm_sdei.h>
-#include <linux/arm-smccc.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/kvm_host.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/percpu.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <linaos/acpi.h>
+#include <linaos/arm_sdei.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/cpu.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/errno.h>
+#include <linaos/hardirq.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
+#include <linaos/kvm_host.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/percpu.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/ptrace.h>
+#include <linaos/preempt.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
 
 /*
  * The call to use to reach the firmware.
@@ -113,7 +113,7 @@ sdei_cross_call_return(struct sdei_crosscall_args *arg, int err)
 		arg->first_error = err;
 }
 
-static int sdei_to_linux_errno(unsigned long sdei_err)
+static int sdei_to_linaos_errno(unsigned long sdei_err)
 {
 	switch (sdei_err) {
 	case SDEI_NOT_SUPPORTED:
@@ -142,12 +142,12 @@ static int invoke_sdei_fn(unsigned long function_id, unsigned long arg0,
 	if (sdei_firmware_call) {
 		sdei_firmware_call(function_id, arg0, arg1, arg2, arg3, arg4,
 				   &res);
-		err = sdei_to_linux_errno(res.a0);
+		err = sdei_to_linaos_errno(res.a0);
 	} else {
 		/*
 		 * !sdei_firmware_call means we failed to probe or called
 		 * sdei_mark_interface_broken(). -EIO is not an error returned
-		 * by sdei_to_linux_errno() and is used to suppress messages
+		 * by sdei_to_linaos_errno() and is used to suppress messages
 		 * from this driver.
 		 */
 		err = -EIO;

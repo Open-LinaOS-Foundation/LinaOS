@@ -9,7 +9,7 @@
 
 /* LCDC register definitions, based on da8xx-fb */
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "tilcdc_drv.h"
 

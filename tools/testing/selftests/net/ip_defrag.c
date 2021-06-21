@@ -5,7 +5,7 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <error.h>
-#include <linux/in.h>
+#include <linaos/in.h>
 #include <netinet/ip.h>
 #include <netinet/ip6.h>
 #include <netinet/udp.h>

@@ -2,8 +2,8 @@
 #ifndef _LINUX_PAGE_REPORTING_H
 #define _LINUX_PAGE_REPORTING_H
 
-#include <linux/mmzone.h>
-#include <linux/scatterlist.h>
+#include <linaos/mmzone.h>
+#include <linaos/scatterlist.h>
 
 /* This value should always be a power of 2, see page_reporting_cycle() */
 #define PAGE_REPORTING_CAPACITY		32

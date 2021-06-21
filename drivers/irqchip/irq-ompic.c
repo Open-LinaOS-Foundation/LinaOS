@@ -58,15 +58,15 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/smp.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
 
-#include <linux/irqchip.h>
+#include <linaos/irqchip.h>
 
 #define OMPIC_CPUBYTES		8
 #define OMPIC_CTRL(cpu)		(0x0 + (cpu * OMPIC_CPUBYTES))

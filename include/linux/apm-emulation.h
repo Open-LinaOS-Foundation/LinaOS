@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* -*- linux-c -*-
+/* -*- linaos-c -*-
  *
  * (C) 2003 zecke@handhelds.org
  *
@@ -10,7 +10,7 @@
 #ifndef __LINUX_APM_EMULATION_H
 #define __LINUX_APM_EMULATION_H
 
-#include <linux/apm_bios.h>
+#include <linaos/apm_bios.h>
 
 /*
  * This structure gets filled in by the machine specific 'get_power_status'

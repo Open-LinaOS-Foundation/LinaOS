@@ -3,9 +3,9 @@
  *   Copyright (C) Tino Reichardt, 2012
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
 
 #include "jfs_incore.h"
 #include "jfs_superblock.h"

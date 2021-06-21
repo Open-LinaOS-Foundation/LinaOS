@@ -36,7 +36,7 @@
 #ifndef __CVMX_FPA_H__
 #define __CVMX_FPA_H__
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include <asm/octeon/cvmx-address.h>
 #include <asm/octeon/cvmx-fpa-defs.h>

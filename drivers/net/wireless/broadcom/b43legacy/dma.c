@@ -20,11 +20,11 @@
 #include "debugfs.h"
 #include "xmit.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 #include <net/dst.h>
 
 /* 32bit DMA ops. */

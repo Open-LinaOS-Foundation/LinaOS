@@ -10,15 +10,15 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/lockdep.h>
-#include <linux/iopoll.h>
-#include <linux/fwnode.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
+#include <linaos/ktime.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/bug.h>
+#include <linaos/lockdep.h>
+#include <linaos/iopoll.h>
+#include <linaos/fwnode.h>
 
 struct module;
 struct clk;
@@ -98,7 +98,7 @@ struct reg_sequence {
  * the last read value at @addr is stored in @val. Must not be called
  * from atomic context if sleep_us or timeout_us are used.
  *
- * This is modelled after the readx_poll_timeout macros in linux/iopoll.h.
+ * This is modelled after the readx_poll_timeout macros in linaos/iopoll.h.
  */
 #define regmap_read_poll_timeout(map, addr, val, cond, sleep_us, timeout_us) \
 ({ \
@@ -124,7 +124,7 @@ struct reg_sequence {
  * error return value in case of a error read. In the two former cases,
  * the last read value at @addr is stored in @val.
  *
- * This is modelled after the readx_poll_timeout_atomic macros in linux/iopoll.h.
+ * This is modelled after the readx_poll_timeout_atomic macros in linaos/iopoll.h.
  *
  * Note: In general regmap cannot be used in atomic context. If you want to use
  * this macro then first setup your regmap for atomic use (flat or no cache
@@ -169,7 +169,7 @@ struct reg_sequence {
  * the last read value at @addr is stored in @val. Must not be called
  * from atomic context if sleep_us or timeout_us are used.
  *
- * This is modelled after the readx_poll_timeout macros in linux/iopoll.h.
+ * This is modelled after the readx_poll_timeout macros in linaos/iopoll.h.
  */
 #define regmap_field_read_poll_timeout(field, val, cond, sleep_us, timeout_us) \
 ({ \

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/catalog.c
+ *  linaos/fs/hfs/catalog.c
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
@@ -8,7 +8,7 @@
  * This file contains the functions related to the catalog B-tree.
  *
  * Cache code shamelessly stolen from
- *     linux/fs/inode.c Copyright (C) 1991, 1992  Linus Torvalds
+ *     linaos/fs/inode.c Copyright (C) 1991, 1992  Linus Torvalds
  *     re-shamelessly stolen Copyright (C) 1997 Linus Torvalds
  */
 

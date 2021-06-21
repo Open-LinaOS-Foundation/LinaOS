@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * INET		An implementation of the TCP/IP protocol suite for the LINUX
  *		operating system.  INET is implemented using the  BSD Socket
@@ -21,15 +21,15 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  *
- *		Moved to /usr/include/linux for NET3
+ *		Moved to /usr/include/linaos for NET3
  */
 #ifndef _UAPI_LINUX_NETDEVICE_H
 #define _UAPI_LINUX_NETDEVICE_H
 
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_link.h>
+#include <linaos/if.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_link.h>
 
 
 #define MAX_ADDR_LEN	32		/* Largest hardware address length */

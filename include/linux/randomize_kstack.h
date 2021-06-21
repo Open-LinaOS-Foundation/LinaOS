@@ -2,9 +2,9 @@
 #ifndef _LINUX_RANDOMIZE_KSTACK_H
 #define _LINUX_RANDOMIZE_KSTACK_H
 
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
-#include <linux/percpu-defs.h>
+#include <linaos/kernel.h>
+#include <linaos/jump_label.h>
+#include <linaos/percpu-defs.h>
 
 DECLARE_STATIC_KEY_MAYBE(CONFIG_RANDOMIZE_KSTACK_OFFSET_DEFAULT,
 			 randomize_kstack_offset);

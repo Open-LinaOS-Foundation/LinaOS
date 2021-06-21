@@ -5,9 +5,9 @@
  * Copyright 2018 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/videodev2.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/videodev2.h>
 #include "codec-v4l2-fwht.h"
 
 static const struct v4l2_fwht_pixfmt_info v4l2_fwht_pixfmts[] = {

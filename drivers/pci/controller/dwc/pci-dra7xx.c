@@ -7,26 +7,26 @@
  * Authors: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/resource.h>
-#include <linux/types.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/resource.h>
+#include <linaos/types.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/gpio/consumer.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

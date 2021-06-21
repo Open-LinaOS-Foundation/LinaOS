@@ -8,8 +8,8 @@
 #ifndef WFX_BUS_H
 #define WFX_BUS_H
 
-#include <linux/mmc/sdio_func.h>
-#include <linux/spi/spi.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/spi/spi.h>
 
 #define WFX_REG_CONFIG        0x0
 #define WFX_REG_CONTROL       0x1

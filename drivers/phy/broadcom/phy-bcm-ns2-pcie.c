@@ -11,12 +11,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/of_mdio.h>
+#include <linaos/mdio.h>
+#include <linaos/phy.h>
+#include <linaos/phy/phy.h>
 
 #define BLK_ADDR_REG_OFFSET	0x1f
 #define PLL_AFE1_100MHZ_BLK	0x2100

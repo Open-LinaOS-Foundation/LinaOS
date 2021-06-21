@@ -15,7 +15,7 @@
 
 #include <net/inet_sock.h>
 #include <net/protocol.h>
-#include <linux/icmp.h>
+#include <linaos/icmp.h>
 
 extern struct proto raw_prot;
 

@@ -18,11 +18,11 @@
  * the Machine Specific Registers to configure the device.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
 #include <asm/msr.h>
 
 #define DRV_NAME	"cs5536"

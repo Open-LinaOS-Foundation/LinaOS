@@ -1,5 +1,5 @@
 ======================
-Linux ACM driver v0.16
+LinaOS ACM driver v0.16
 ======================
 
 Copyright (c) 1999 Vojtech Pavlik <vojtech@suse.cz>

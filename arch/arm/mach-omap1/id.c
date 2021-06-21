@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/id.c
+ * linaos/arch/arm/mach-omap1/id.c
  *
  * OMAP1 CPU identification code
  *
@@ -8,10 +8,10 @@
  * Written by Tony Lindgren <tony@atomide.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 #include <asm/system_info.h>
 
 #include "soc.h"

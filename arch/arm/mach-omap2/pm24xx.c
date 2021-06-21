@@ -15,18 +15,18 @@
  * Based on pm.c for omap1
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/suspend.h>
-#include <linux/sched.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/irq.h>
-#include <linux/time.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/suspend.h>
+#include <linaos/sched.h>
+#include <linaos/proc_fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/irq.h>
+#include <linaos/time.h>
 
 #include <asm/fncpy.h>
 
@@ -35,7 +35,7 @@
 #include <asm/mach-types.h>
 #include <asm/system_misc.h>
 
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 
 #include "soc.h"
 #include "common.h"

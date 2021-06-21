@@ -47,7 +47,7 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio2 23 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -61,14 +61,14 @@
 			label = "LED_DI0_DEBUG_0";
 			function = LED_FUNCTION_HEARTBEAT;
 			gpios = <&gpio4 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-1 {
 			label = "LED_DI0_DEBUG_1";
 			function = LED_FUNCTION_DISK;
 			gpios = <&gpio4 17 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "disk-activity";
+			linaos,default-trigger = "disk-activity";
 		};
 
 		led-2 {

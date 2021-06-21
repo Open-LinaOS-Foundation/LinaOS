@@ -5,15 +5,15 @@
  * Copyright (C) 2012 Sascha Hauer, Pengutronix
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/videodev2.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/regmap.h>
+#include <linaos/videodev2.h>
 
 #include <video/of_display_timing.h>
 #include <video/of_videomode.h>

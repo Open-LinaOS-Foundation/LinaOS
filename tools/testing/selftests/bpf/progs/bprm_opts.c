@@ -4,7 +4,7 @@
  * Copyright 2020 Google LLC.
  */
 
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <errno.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
@@ -19,7 +19,7 @@ struct {
 } secure_exec_task_map SEC(".maps");
 
 SEC("lsm/bprm_creds_for_exec")
-int BPF_PROG(secure_exec, struct linux_binprm *bprm)
+int BPF_PROG(secure_exec, struct linaos_binprm *bprm)
 {
 	int *secureexec;
 

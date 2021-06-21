@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux RomFS filesystem routines.
+# Makefile for the linaos RomFS filesystem routines.
 #
 
 obj-$(CONFIG_ROMFS_FS) += romfs.o

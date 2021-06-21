@@ -1,6 +1,6 @@
 /*******************************************************************************
  *
- *  Linux ThunderLAN Driver
+ *  LinaOS ThunderLAN Driver
  *
  *  tlan.c
  *  by James Banks
@@ -29,20 +29,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/eisa.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
+#include <linaos/hardirq.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/eisa.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/mii.h>
 
 #include "tlan.h"
 
@@ -272,7 +272,7 @@ tlan_set_timer(struct net_device *dev, u32 ticks, u32 type)
 
 ThunderLAN driver primary functions
 
-these functions are more or less common to all linux network drivers.
+these functions are more or less common to all linaos network drivers.
 
 ******************************************************************************
 *****************************************************************************/

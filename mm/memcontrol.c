@@ -2,7 +2,7 @@
 /* memcontrol.c - Memory Controller
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@linaos.vnet.ibm.com>
  *
  * Copyright 2007 OpenVZ SWsoft Inc
  * Author: Pavel Emelianov <xemul@openvz.org>
@@ -25,49 +25,49 @@
  * Copyright (C) 2020 Alibaba, Inc, Alex Shi
  */
 
-#include <linux/page_counter.h>
-#include <linux/memcontrol.h>
-#include <linux/cgroup.h>
-#include <linux/pagewalk.h>
-#include <linux/sched/mm.h>
-#include <linux/shmem_fs.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/vm_event_item.h>
-#include <linux/smp.h>
-#include <linux/page-flags.h>
-#include <linux/backing-dev.h>
-#include <linux/bit_spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/limits.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
-#include <linux/poll.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/vmpressure.h>
-#include <linux/mm_inline.h>
-#include <linux/swap_cgroup.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
-#include <linux/lockdep.h>
-#include <linux/file.h>
-#include <linux/tracehook.h>
-#include <linux/psi.h>
-#include <linux/seq_buf.h>
+#include <linaos/page_counter.h>
+#include <linaos/memcontrol.h>
+#include <linaos/cgroup.h>
+#include <linaos/pagewalk.h>
+#include <linaos/sched/mm.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pagemap.h>
+#include <linaos/vm_event_item.h>
+#include <linaos/smp.h>
+#include <linaos/page-flags.h>
+#include <linaos/backing-dev.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/limits.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/rbtree.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/spinlock.h>
+#include <linaos/eventfd.h>
+#include <linaos/poll.h>
+#include <linaos/sort.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/vmpressure.h>
+#include <linaos/mm_inline.h>
+#include <linaos/swap_cgroup.h>
+#include <linaos/cpu.h>
+#include <linaos/oom.h>
+#include <linaos/lockdep.h>
+#include <linaos/file.h>
+#include <linaos/tracehook.h>
+#include <linaos/psi.h>
+#include <linaos/seq_buf.h>
 #include "internal.h"
 #include <net/sock.h>
 #include <net/ip.h>
 #include "slab.h"
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <trace/events/vmscan.h>
 
@@ -3375,7 +3375,7 @@ static int mem_cgroup_hierarchy_write(struct cgroup_subsys_state *css,
 		return 0;
 
 	pr_warn_once("Non-hierarchical mode is deprecated. "
-		     "Please report your usecase to linux-mm@kvack.org if you "
+		     "Please report your usecase to linaos-mm@kvack.org if you "
 		     "depend on this functionality.\n");
 
 	return -EINVAL;
@@ -3620,7 +3620,7 @@ static ssize_t mem_cgroup_write(struct kernfs_open_file *of,
 			break;
 		case _KMEM:
 			pr_warn_once("kmem.limit_in_bytes is deprecated and will be removed. "
-				     "Please report your usecase to linux-mm@kvack.org if you "
+				     "Please report your usecase to linaos-mm@kvack.org if you "
 				     "depend on this functionality.\n");
 			ret = memcg_update_kmem_max(memcg, nr_pages);
 			break;
@@ -5536,7 +5536,7 @@ out:
  *     intent and purposes it is just special memory taking the place of a
  *     regular page.
  *
- *     See Documentations/vm/hmm.txt and include/linux/hmm.h
+ *     See Documentations/vm/hmm.txt and include/linaos/hmm.h
  *
  * Called with pte lock held.
  */

@@ -15,7 +15,7 @@ services using this chip.
 The current driver only support synchronous operation. Merging the
 asynchronous driver support into this code to allow any Z85x30 device to
 be used as both a tty interface and as a synchronous controller is a
-project for Linux post the 2.4 release
+project for LinaOS post the 2.4 release
 
 Driver Modes
 ============

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH LinaOS-syscall-note */
 /*
- * include/uapi/linux/ethtool_netlink.h - netlink interface for ethtool
+ * include/uapi/linaos/ethtool_netlink.h - netlink interface for ethtool
  *
  * See Documentation/networking/ethtool-netlink.rst in kernel source tree for
  * doucumentation of the interface.
@@ -9,7 +9,7 @@
 #ifndef _UAPI_LINUX_ETHTOOL_NETLINK_H_
 #define _UAPI_LINUX_ETHTOOL_NETLINK_H_
 
-#include <linux/ethtool.h>
+#include <linaos/ethtool.h>
 
 /* message types - userspace to kernel */
 enum {

@@ -3,7 +3,7 @@
  * Copyright (C) 2020 Marvell International Ltd.
  */
 
-#include <linux/iopoll.h>
+#include <linaos/iopoll.h>
 
 #include "aq_hw_utils.h"
 #include "hw_atl/hw_atl_utils.h"

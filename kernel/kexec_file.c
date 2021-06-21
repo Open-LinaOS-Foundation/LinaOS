@@ -9,24 +9,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/kexec.h>
-#include <linux/memblock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/ima.h>
+#include <linaos/capability.h>
+#include <linaos/mm.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/kexec.h>
+#include <linaos/memblock.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/fs.h>
+#include <linaos/ima.h>
 #include <crypto/hash.h>
 #include <crypto/sha2.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/kernel.h>
-#include <linux/kernel_read_file.h>
-#include <linux/syscalls.h>
-#include <linux/vmalloc.h>
+#include <linaos/elf.h>
+#include <linaos/elfcore.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/syscalls.h>
+#include <linaos/vmalloc.h>
 #include "kexec_internal.h"
 
 static int kexec_calculate_store_digests(struct kimage *image);

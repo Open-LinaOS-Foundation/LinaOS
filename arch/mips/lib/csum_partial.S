@@ -10,7 +10,7 @@
  * Copyright (C) 2007  Maciej W. Rozycki
  * Copyright (C) 2014 Imagination Technologies Ltd.
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/export.h>

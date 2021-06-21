@@ -18,14 +18,14 @@
 
 #define pr_fmt(fmt) "X25: " fmt
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/uaccess.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/uaccess.h>
+#include <linaos/init.h>
 #include <net/x25.h>
 
 LIST_HEAD(x25_neigh_list);
@@ -37,7 +37,7 @@ static void x25_transmit_restart_confirmation(struct x25_neigh *nb);
 static void x25_transmit_restart_request(struct x25_neigh *nb);
 
 /*
- *	Linux set/reset timer routines
+ *	LinaOS set/reset timer routines
  */
 static inline void x25_start_t20timer(struct x25_neigh *nb)
 {

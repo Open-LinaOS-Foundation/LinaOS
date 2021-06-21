@@ -49,7 +49,7 @@
 		sw4 {
 			label = "sw4";
 			gpios = <&gpio 23 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 			autorepeat;
 		};
@@ -60,27 +60,27 @@
 		led-ds2 {
 			label = "ds2";
 			gpios = <&gpio 20 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-ds3 {
 			label = "ds3";
 			gpios = <&gpio 19 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx"; /* WLAN tx */
+			linaos,default-trigger = "phy0tx"; /* WLAN tx */
 			default-state = "off";
 		};
 
 		led-ds4 {
 			label = "ds4";
 			gpios = <&gpio 18 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0rx"; /* WLAN rx */
+			linaos,default-trigger = "phy0rx"; /* WLAN rx */
 			default-state = "off";
 		};
 
 		led-ds5 {
 			label = "ds5";
 			gpios = <&gpio 17 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "bluetooth-power";
+			linaos,default-trigger = "bluetooth-power";
 		};
 
 		vbus-det { /* U5 USB5744 VBUS detection via MIO25 */

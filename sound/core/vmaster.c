@@ -5,8 +5,8 @@
  *  Copyright (c) 2008 by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

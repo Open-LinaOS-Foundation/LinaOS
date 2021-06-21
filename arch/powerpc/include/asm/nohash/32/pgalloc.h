@@ -2,8 +2,8 @@
 #ifndef _ASM_POWERPC_PGALLOC_32_H
 #define _ASM_POWERPC_PGALLOC_32_H
 
-#include <linux/threads.h>
-#include <linux/slab.h>
+#include <linaos/threads.h>
+#include <linaos/slab.h>
 
 /*
  * We don't have any real pmd's, and this code never triggers because

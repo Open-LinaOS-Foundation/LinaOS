@@ -3,18 +3,18 @@
  *  Copyright (C) 2008 Red Hat, Inc., Eric Paris <eparis@redhat.com>
  */
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/srcu.h>
-#include <linux/rculist.h>
-#include <linux/wait.h>
-#include <linux/memcontrol.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/srcu.h>
+#include <linaos/rculist.h>
+#include <linaos/wait.h>
+#include <linaos/memcontrol.h>
 
-#include <linux/fsnotify_backend.h>
+#include <linaos/fsnotify_backend.h>
 #include "fsnotify.h"
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 /*
  * Final freeing of a group

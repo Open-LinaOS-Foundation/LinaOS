@@ -19,7 +19,7 @@
 #ifndef __DDBRIDGE_IO_H__
 #define __DDBRIDGE_IO_H__
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include "ddbridge.h"
 

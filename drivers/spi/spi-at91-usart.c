@@ -6,20 +6,20 @@
 //
 // Author: Radu Pirea <radu.pirea@microchip.com>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-direction.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-direction.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 #define US_CR			0x00
 #define US_MR			0x04

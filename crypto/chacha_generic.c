@@ -10,7 +10,7 @@
 #include <crypto/algapi.h>
 #include <crypto/internal/chacha.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static int chacha_stream_xor(struct skcipher_request *req,
 			     const struct chacha_ctx *ctx, const u8 *iv)

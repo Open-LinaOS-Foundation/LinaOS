@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/clock/at91.h>
 

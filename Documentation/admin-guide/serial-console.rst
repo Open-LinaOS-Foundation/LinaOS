@@ -1,6 +1,6 @@
 .. _serial_console:
 
-Linux Serial Console
+LinaOS Serial Console
 ====================
 
 To use a serial port as console you need to compile the support into your
@@ -108,7 +108,7 @@ Replace the sample values as needed.
 
 7. Thanks
 
-   Thanks to Geert Uytterhoeven <geert@linux-m68k.org>
+   Thanks to Geert Uytterhoeven <geert@linaos-m68k.org>
    for porting the patches from 2.1.4x to 2.1.6x for taking care of
    the integration of these patches into m68k, ppc and alpha.
 

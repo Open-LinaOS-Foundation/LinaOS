@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/namespace.c
+ *  linaos/fs/namespace.c
  *
  * (C) Copyright Al Viro 2000, 2001
  *
@@ -8,29 +8,29 @@
  * Heavily rewritten.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/capability.h>
-#include <linux/mnt_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/idr.h>
-#include <linux/init.h>		/* init_rootfs */
-#include <linux/fs_struct.h>	/* get_fs_root et.al. */
-#include <linux/fsnotify.h>	/* fsnotify_vfsmount_delete */
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/proc_ns.h>
-#include <linux/magic.h>
-#include <linux/memblock.h>
-#include <linux/proc_fs.h>
-#include <linux/task_work.h>
-#include <linux/sched/task.h>
-#include <uapi/linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/shmem_fs.h>
+#include <linaos/syscalls.h>
+#include <linaos/export.h>
+#include <linaos/capability.h>
+#include <linaos/mnt_namespace.h>
+#include <linaos/user_namespace.h>
+#include <linaos/namei.h>
+#include <linaos/security.h>
+#include <linaos/cred.h>
+#include <linaos/idr.h>
+#include <linaos/init.h>		/* init_rootfs */
+#include <linaos/fs_struct.h>	/* get_fs_root et.al. */
+#include <linaos/fsnotify.h>	/* fsnotify_vfsmount_delete */
+#include <linaos/file.h>
+#include <linaos/uaccess.h>
+#include <linaos/proc_ns.h>
+#include <linaos/magic.h>
+#include <linaos/memblock.h>
+#include <linaos/proc_fs.h>
+#include <linaos/task_work.h>
+#include <linaos/sched/task.h>
+#include <uapi/linaos/mount.h>
+#include <linaos/fs_context.h>
+#include <linaos/shmem_fs.h>
 
 #include "pnode.h"
 #include "internal.h"

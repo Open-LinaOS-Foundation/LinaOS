@@ -9,7 +9,7 @@
 
 #ifdef CONFIG_CPU_CP15
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #define __ACCESS_CP15(CRn, Op1, CRm, Op2)	\
 	"mrc", "mcr", __stringify(p15, Op1, %0, CRn, CRm, Op2), u32

@@ -11,9 +11,9 @@
  *
  *  Modified for omap shared clock framework by Tony Lindgren <tony@atomide.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/clk.h>
 #include <asm/clock.h>
 #include <asm/machvec.h>
 

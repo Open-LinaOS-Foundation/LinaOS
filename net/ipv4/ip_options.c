@@ -12,17 +12,17 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 #include <asm/unaligned.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/icmp.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>

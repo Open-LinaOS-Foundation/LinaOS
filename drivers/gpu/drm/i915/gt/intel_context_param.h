@@ -6,7 +6,7 @@
 #ifndef INTEL_CONTEXT_PARAM_H
 #define INTEL_CONTEXT_PARAM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "intel_context.h"
 

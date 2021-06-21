@@ -2,8 +2,8 @@
 #ifndef __PERF_HIST_H
 #define __PERF_HIST_H
 
-#include <linux/rbtree.h>
-#include <linux/types.h>
+#include <linaos/rbtree.h>
+#include <linaos/types.h>
 #include <pthread.h>
 #include "evsel.h"
 #include "color.h"

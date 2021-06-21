@@ -25,7 +25,7 @@ struct kgdb_state {
 	unsigned long		thr_query;
 	unsigned long		threadid;
 	long			kgdb_usethreadid;
-	struct pt_regs		*linux_regs;
+	struct pt_regs		*linaos_regs;
 	atomic_t		*send_ready;
 };
 

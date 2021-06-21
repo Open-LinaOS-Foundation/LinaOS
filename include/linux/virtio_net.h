@@ -2,10 +2,10 @@
 #ifndef _LINUX_VIRTIO_NET_H
 #define _LINUX_VIRTIO_NET_H
 
-#include <linux/if_vlan.h>
-#include <uapi/linux/tcp.h>
-#include <uapi/linux/udp.h>
-#include <uapi/linux/virtio_net.h>
+#include <linaos/if_vlan.h>
+#include <uapi/linaos/tcp.h>
+#include <uapi/linaos/udp.h>
+#include <uapi/linaos/virtio_net.h>
 
 static inline int virtio_net_hdr_set_proto(struct sk_buff *skb,
 					   const struct virtio_net_hdr *hdr)

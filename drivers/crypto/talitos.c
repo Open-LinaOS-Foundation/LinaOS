@@ -12,21 +12,21 @@
  * All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/crypto.h>
-#include <linux/hw_random.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/crypto.h>
+#include <linaos/hw_random.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
 
 #include <crypto/algapi.h>
 #include <crypto/aes.h>

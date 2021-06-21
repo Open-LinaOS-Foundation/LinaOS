@@ -6,9 +6,9 @@
 
 #define pr_fmt(fmt) "IPsec: " fmt
 
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 #include <net/xfrm.h>
 #include <net/ip.h>
 #include <net/protocol.h>

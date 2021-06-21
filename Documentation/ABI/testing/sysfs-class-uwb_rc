@@ -1,7 +1,7 @@
 What:           /sys/class/uwb_rc
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 Interfaces for WiMedia Ultra Wideband Common Radio
                 Platform (UWB) radio controllers.
@@ -21,14 +21,14 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 An individual UWB radio controller.
 
 What:           /sys/class/uwb_rc/uwbN/beacon
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 Write:
 
@@ -46,7 +46,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/ASIE
 Date:           August 2014
 KernelVersion:  3.18
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
 
                 The application-specific information element (ASIE)
@@ -59,7 +59,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/scan
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 Write:
 
@@ -78,7 +78,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/mac_address
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 The EUI-48, in colon-separated hex octets, for this
                 radio controller.  A write will change the radio
@@ -88,7 +88,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/wusbhc
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 A symlink to the device (if any) of the WUSB Host
                 Controller PAL using this radio controller.
@@ -96,7 +96,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/<EUI-48>/
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 A neighbour UWB device that has either been detected
                 as part of a scan or is a member of the radio
@@ -105,7 +105,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/<EUI-48>/BPST
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 The time (using the radio controllers internal 1 ms
                 interval superframe timer) of the last beacon from
@@ -114,7 +114,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/<EUI-48>/DevAddr
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 The current DevAddr of this device in colon separated
                 hex octets.
@@ -122,7 +122,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/<EUI-48>/EUI_48
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
 
                 The EUI-48 of this device in colon separated hex
@@ -131,7 +131,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/<EUI-48>/IEs
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 The latest IEs included in this device's beacon, in
                 space separated hex octets with one IE per line.
@@ -139,7 +139,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/<EUI-48>/LQE
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 Link Quality Estimate - the Signal to Noise Ratio
                 (SNR) of all packets received from this device in dB.
@@ -149,7 +149,7 @@ Description:
 What:           /sys/class/uwb_rc/uwbN/<EUI-48>/RSSI
 Date:           July 2008
 KernelVersion:  2.6.27
-Contact:        linux-usb@vger.kernel.org
+Contact:        linaos-usb@vger.kernel.org
 Description:
                 Received Signal Strength Indication - the strength of
                 the received signal in dB.  LQE is a more useful

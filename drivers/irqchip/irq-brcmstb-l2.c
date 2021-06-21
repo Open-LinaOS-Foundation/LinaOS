@@ -7,21 +7,21 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME	": " fmt
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
 
 struct brcmstb_intc_init_params {
 	irq_flow_handler_t handler;

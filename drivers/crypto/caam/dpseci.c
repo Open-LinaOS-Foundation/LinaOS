@@ -4,7 +4,7 @@
  * Copyright 2017-2018 NXP
  */
 
-#include <linux/fsl/mc.h>
+#include <linaos/fsl/mc.h>
 #include "dpseci.h"
 #include "dpseci_cmd.h"
 

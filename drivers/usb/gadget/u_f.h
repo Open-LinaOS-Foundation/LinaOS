@@ -13,8 +13,8 @@
 #ifndef __U_F_H__
 #define __U_F_H__
 
-#include <linux/usb/gadget.h>
-#include <linux/overflow.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/overflow.h>
 
 /* Variable Length Array Macros **********************************************/
 #define vla_group(groupname) size_t groupname##__next = 0

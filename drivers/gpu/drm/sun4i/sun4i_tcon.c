@@ -6,14 +6,14 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/component.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/component.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

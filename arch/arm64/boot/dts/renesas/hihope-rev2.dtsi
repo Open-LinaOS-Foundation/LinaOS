@@ -16,14 +16,14 @@
 		bt_active_led {
 			label = "blue:bt";
 			gpios = <&gpio7  0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "hci0-power";
+			linaos,default-trigger = "hci0-power";
 			default-state = "off";
 		};
 
 		wlan_active_led {
 			label = "yellow:wlan";
 			gpios = <&gpio7  1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			linaos,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 	};

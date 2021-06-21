@@ -6,7 +6,7 @@
 #if !defined(__HFI1_TRACE_IOWAIT_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __HFI1_TRACE_IOWAIT_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "iowait.h"
 #include "verbs.h"
 

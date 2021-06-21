@@ -9,8 +9,8 @@
 #ifndef _DMA_HEAPS_H
 #define _DMA_HEAPS_H
 
-#include <linux/cdev.h>
-#include <linux/types.h>
+#include <linaos/cdev.h>
+#include <linaos/types.h>
 
 struct dma_heap;
 

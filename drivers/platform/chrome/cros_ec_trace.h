@@ -11,12 +11,12 @@
 #if !defined(_CROS_EC_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _CROS_EC_TRACE_H_
 
-#include <linux/bits.h>
-#include <linux/types.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
+#include <linaos/bits.h>
+#include <linaos/types.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(cros_ec_request_start,
 	TP_PROTO(struct cros_ec_command *cmd),

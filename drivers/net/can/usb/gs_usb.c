@@ -9,16 +9,16 @@
  * Many thanks to all socketcan devs!
  */
 
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <linaos/ethtool.h>
+#include <linaos/init.h>
+#include <linaos/signal.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
 
 /* Device specific constants */
 #define USB_GSUSB_1_VENDOR_ID      0x1d50
@@ -150,7 +150,7 @@ struct gs_host_frame {
 	u8 data[8];
 } __packed;
 /* The GS USB devices make use of the same flags and masks as in
- * linux/can.h and linux/can/error.h, and no additional mapping is necessary.
+ * linaos/can.h and linaos/can/error.h, and no additional mapping is necessary.
  */
 
 /* Only send a max of GS_MAX_TX_URBS frames per channel at a time. */

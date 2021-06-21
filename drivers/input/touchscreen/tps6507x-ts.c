@@ -13,14 +13,14 @@
  * 10 bit touch screen interface.
  */
 
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tps6507x.h>
-#include <linux/input/tps6507x-ts.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/tps6507x.h>
+#include <linaos/input/tps6507x-ts.h>
+#include <linaos/delay.h>
 
 #define TSC_DEFAULT_POLL_PERIOD 30 /* ms */
 #define TPS_DEFAULT_MIN_PRESSURE 0x30

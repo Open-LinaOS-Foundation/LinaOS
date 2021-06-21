@@ -3,11 +3,11 @@
  *  Copyright (C) 2012 Paul Parsons <lost.distance@yahoo.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/irq.h>
 
 #include <asm/mach-types.h>
 #include <mach/hx4700.h>

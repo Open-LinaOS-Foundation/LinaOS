@@ -9,11 +9,11 @@
 // Copyright (c) 2006 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/soc/samsung/s3c-pm.h>
+#include <linaos/init.h>
+#include <linaos/suspend.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/io.h>
+#include <linaos/soc/samsung/s3c-pm.h>
 
 #include <asm/cacheflush.h>
 #include <asm/suspend.h>

@@ -11,9 +11,9 @@
 #ifndef _SS_HASHTAB_H_
 #define _SS_HASHTAB_H_
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
 
 #define HASHTAB_MAX_NODES	U32_MAX
 

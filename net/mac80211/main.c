@@ -9,18 +9,18 @@
  */
 
 #include <net/mac80211.h>
-#include <linux/module.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitmap.h>
-#include <linux/inetdevice.h>
+#include <linaos/module.h>
+#include <linaos/fips.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/skbuff.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/bitmap.h>
+#include <linaos/inetdevice.h>
 #include <net/net_namespace.h>
 #include <net/cfg80211.h>
 #include <net/addrconf.h>

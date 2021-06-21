@@ -8,7 +8,7 @@
 #define INCLUDE__UTIL_PERF_CS_ETM_H__
 
 #include "util/event.h"
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 struct perf_session;
 

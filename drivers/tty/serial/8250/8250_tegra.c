@@ -5,14 +5,14 @@
  *  Copyright (c) 2020, NVIDIA CORPORATION. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
 
 #include "8250.h"
 

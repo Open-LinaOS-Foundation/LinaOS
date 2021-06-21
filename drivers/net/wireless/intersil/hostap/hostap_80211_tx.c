@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/etherdevice.h>
 
 #include "hostap_80211.h"
 #include "hostap_common.h"

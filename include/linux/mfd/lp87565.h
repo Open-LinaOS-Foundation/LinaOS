@@ -8,9 +8,9 @@
 #ifndef __LINUX_MFD_LP87565_H
 #define __LINUX_MFD_LP87565_H
 
-#include <linux/i2c.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <linaos/i2c.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
 
 enum lp87565_device_type {
 	LP87565_DEVICE_TYPE_UNKNOWN	= 0,

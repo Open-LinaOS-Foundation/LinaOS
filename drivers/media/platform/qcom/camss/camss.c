@@ -4,20 +4,20 @@
  *
  * Qualcomm MSM Camera Subsystem - Core
  *
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2015-2018 Linaro Ltd.
  */
-#include <linux/clk.h>
-#include <linux/media-bus-format.h>
-#include <linux/media.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linaos/clk.h>
+#include <linaos/media-bus-format.h>
+#include <linaos/media.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_domain.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-async.h>

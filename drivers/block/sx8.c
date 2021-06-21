@@ -10,26 +10,26 @@
  *  for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/blk-mq.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/hdreg.h>
-#include <linux/dma-mapping.h>
-#include <linux/completion.h>
-#include <linux/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/blk-mq.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/compiler.h>
+#include <linaos/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/ktime.h>
+#include <linaos/hdreg.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/completion.h>
+#include <linaos/scatterlist.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #if 0
 #define CARM_DEBUG

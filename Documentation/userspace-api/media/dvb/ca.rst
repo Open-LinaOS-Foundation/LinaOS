@@ -8,7 +8,7 @@ Digital TV CA Device
 
 The Digital TV CA device controls the conditional access hardware. It
 can be accessed through ``/dev/dvb/adapter?/ca?``. Data types and ioctl
-definitions can be accessed by including ``linux/dvb/ca.h`` in your
+definitions can be accessed by including ``linaos/dvb/ca.h`` in your
 application.
 
 .. note::

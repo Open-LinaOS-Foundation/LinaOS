@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018, Advanced Micro Devices, Inc.
 
-#include <linux/cper.h>
-#include <linux/acpi.h>
+#include <linaos/cper.h>
+#include <linaos/acpi.h>
 
 /*
  * We don't need a "CPER_IA" prefix since these are all locally defined.

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Generic PPP layer for Linux.
+ * Generic PPP layer for LinaOS.
  *
  * Copyright 1999-2002 Paul Mackerras.
  *
  * The generic PPP layer handles the PPP network interfaces, the
  * /dev/ppp device, packet and VJ compression, and multilink.
  * It talks to PPP `channels' via the interface defined in
- * include/linux/ppp_channel.h.  Channels provide the basic means for
+ * include/linaos/ppp_channel.h.  Channels provide the basic means for
  * sending and receiving PPP frames on some kind of communications
  * channel.
  *
@@ -18,38 +18,38 @@
  * ==FILEVERSION 20041108==
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/ppp_defs.h>
-#include <linux/filter.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp-comp.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/stddef.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/file.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kmod.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/idr.h>
+#include <linaos/netdevice.h>
+#include <linaos/poll.h>
+#include <linaos/ppp_defs.h>
+#include <linaos/filter.h>
+#include <linaos/ppp-ioctl.h>
+#include <linaos/ppp_channel.h>
+#include <linaos/ppp-comp.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_arp.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/spinlock.h>
+#include <linaos/rwsem.h>
+#include <linaos/stddef.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
 #include <asm/unaligned.h>
 #include <net/slhc_vj.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
 
-#include <linux/nsproxy.h>
+#include <linaos/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 

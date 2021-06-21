@@ -3,7 +3,7 @@
 #ifndef _ASM_RISCV_STACKTRACE_H
 #define _ASM_RISCV_STACKTRACE_H
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <asm/ptrace.h>
 
 struct stackframe {

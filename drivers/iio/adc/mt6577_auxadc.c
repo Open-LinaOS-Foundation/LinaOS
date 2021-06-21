@@ -4,17 +4,17 @@
  * Author: Zhiyong Tao <zhiyong.tao@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/iopoll.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/iopoll.h>
+#include <linaos/io.h>
+#include <linaos/iio/iio.h>
 
 /* Register definitions */
 #define MT6577_AUXADC_CON0                    0x00

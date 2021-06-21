@@ -5,11 +5,11 @@
  * Copyright (C) 2012 Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/device.h>
-#include <linux/gcd.h>
-#include <linux/kernel.h>
-#include <linux/lcm.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/gcd.h>
+#include <linaos/kernel.h>
+#include <linaos/lcm.h>
+#include <linaos/module.h>
 
 #include "aptina-pll.h"
 

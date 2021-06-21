@@ -15,8 +15,8 @@
 #include <net/if.h>
 
 #include <asm/types.h>
-#include <linux/net_tstamp.h>
-#include <linux/errqueue.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/errqueue.h>
 
 #define ARRAY_SIZE(arr) (sizeof(arr) / sizeof((arr)[0]))
 

@@ -9,8 +9,8 @@
 /* Disable profiling for userspace code */
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/time.h>
-#include <linux/getcpu.h>
+#include <linaos/time.h>
+#include <linaos/getcpu.h>
 #include <asm/unistd.h>
 
 int __vdso_clock_gettime(clockid_t clock, struct __kernel_old_timespec *ts)

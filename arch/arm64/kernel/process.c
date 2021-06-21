@@ -9,41 +9,41 @@
 
 #include <stdarg.h>
 
-#include <linux/compat.h>
-#include <linux/efi.h>
-#include <linux/elf.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/nospec.h>
-#include <linux/stddef.h>
-#include <linux/sysctl.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/personality.h>
-#include <linux/notifier.h>
+#include <linaos/compat.h>
+#include <linaos/efi.h>
+#include <linaos/elf.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/lockdep.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/nospec.h>
+#include <linaos/stddef.h>
+#include <linaos/sysctl.h>
+#include <linaos/unistd.h>
+#include <linaos/user.h>
+#include <linaos/delay.h>
+#include <linaos/reboot.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/elfcore.h>
+#include <linaos/pm.h>
+#include <linaos/tick.h>
+#include <linaos/utsname.h>
+#include <linaos/uaccess.h>
+#include <linaos/random.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/personality.h>
+#include <linaos/notifier.h>
 #include <trace/events/power.h>
-#include <linux/percpu.h>
-#include <linux/thread_info.h>
-#include <linux/prctl.h>
+#include <linaos/percpu.h>
+#include <linaos/thread_info.h>
+#include <linaos/prctl.h>
 
 #include <asm/alternative.h>
 #include <asm/arch_gicv3.h>
@@ -61,7 +61,7 @@
 #include <asm/system_misc.h>
 
 #if defined(CONFIG_STACKPROTECTOR) && !defined(CONFIG_STACKPROTECTOR_PER_TASK)
-#include <linux/stackprotector.h>
+#include <linaos/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

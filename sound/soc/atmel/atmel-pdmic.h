@@ -2,7 +2,7 @@
 #ifndef __ATMEL_PDMIC_H_
 #define __ATMEL_PDMIC_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define PDMIC_CR	0x00000000
 

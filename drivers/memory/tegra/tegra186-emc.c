@@ -3,11 +3,11 @@
  * Copyright (C) 2019 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
 
 #include <soc/tegra/bpmp.h>
 

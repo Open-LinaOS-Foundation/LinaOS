@@ -4,7 +4,7 @@
 
 
 #include <asm/stat.h>
-#include <uapi/linux/stat.h>
+#include <uapi/linaos/stat.h>
 
 #define S_IRWXUGO	(S_IRWXU|S_IRWXG|S_IRWXO)
 #define S_IALLUGO	(S_ISUID|S_ISGID|S_ISVTX|S_IRWXUGO)
@@ -15,9 +15,9 @@
 #define UTIME_NOW	((1l << 30) - 1l)
 #define UTIME_OMIT	((1l << 30) - 2l)
 
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/uidgid.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
+#include <linaos/uidgid.h>
 
 struct kstat {
 	u32		result_mask;	/* What fields the user got */

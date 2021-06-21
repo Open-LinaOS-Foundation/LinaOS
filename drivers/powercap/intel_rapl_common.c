@@ -5,22 +5,22 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/cpu.h>
-#include <linux/powercap.h>
-#include <linux/suspend.h>
-#include <linux/intel_rapl.h>
-#include <linux/processor.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
+#include <linaos/bitmap.h>
+#include <linaos/delay.h>
+#include <linaos/sysfs.h>
+#include <linaos/cpu.h>
+#include <linaos/powercap.h>
+#include <linaos/suspend.h>
+#include <linaos/intel_rapl.h>
+#include <linaos/processor.h>
+#include <linaos/platform_device.h>
 
 #include <asm/iosf_mbi.h>
 #include <asm/cpu_device_id.h>

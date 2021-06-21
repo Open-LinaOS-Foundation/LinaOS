@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/drivers/misc/xillybus.h
+ * linaos/drivers/misc/xillybus.h
  *
  * Copyright 2011 Xillybus Ltd, http://xillybus.com
  *
@@ -10,15 +10,15 @@
 #ifndef __XILLYBUS_H
 #define __XILLYBUS_H
 
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/cdev.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/cdev.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
 
 struct xilly_endpoint_hardware;
 

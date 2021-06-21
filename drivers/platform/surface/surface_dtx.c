@@ -11,24 +11,24 @@
  * Copyright (C) 2019-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/fs.h>
-#include <linux/input.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/kref.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/fs.h>
+#include <linaos/input.h>
+#include <linaos/ioctl.h>
+#include <linaos/kernel.h>
+#include <linaos/kfifo.h>
+#include <linaos/kref.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/poll.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
-#include <linux/surface_aggregator/dtx.h>
+#include <linaos/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/device.h>
+#include <linaos/surface_aggregator/dtx.h>
 
 
 /* -- SSAM interface. ------------------------------------------------------- */

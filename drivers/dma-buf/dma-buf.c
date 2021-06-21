@@ -11,23 +11,23 @@
  * refining of this idea.
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-fence.h>
-#include <linux/anon_inodes.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/dma-resv.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-fence.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/export.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/poll.h>
+#include <linaos/dma-resv.h>
+#include <linaos/mm.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
 
-#include <uapi/linux/dma-buf.h>
-#include <uapi/linux/magic.h>
+#include <uapi/linaos/dma-buf.h>
+#include <uapi/linaos/magic.h>
 
 static inline int is_dma_buf_file(struct file *);
 

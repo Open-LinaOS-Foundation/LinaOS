@@ -32,10 +32,10 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/serial_8250.h>
-#include <linux/memblock.h>
-#include <linux/pm.h>
+#include <linaos/kernel.h>
+#include <linaos/serial_8250.h>
+#include <linaos/memblock.h>
+#include <linaos/pm.h>
 
 #include <asm/idle.h>
 #include <asm/reboot.h>
@@ -61,7 +61,7 @@ unsigned int  nlm_threads_per_core = 1;
 struct nlm_soc_info nlm_nodes[NLM_NR_NODES];
 cpumask_t nlm_cpumask = CPU_MASK_CPU0;
 
-static void nlm_linux_exit(void)
+static void nlm_linaos_exit(void)
 {
 	uint64_t gpiobase;
 
@@ -74,9 +74,9 @@ static void nlm_linux_exit(void)
 
 void __init plat_mem_setup(void)
 {
-	_machine_restart = (void (*)(char *))nlm_linux_exit;
-	_machine_halt	= nlm_linux_exit;
-	pm_power_off	= nlm_linux_exit;
+	_machine_restart = (void (*)(char *))nlm_linaos_exit;
+	_machine_halt	= nlm_linaos_exit;
+	pm_power_off	= nlm_linaos_exit;
 }
 
 const char *get_system_type(void)

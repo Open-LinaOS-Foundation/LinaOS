@@ -11,8 +11,8 @@
  * This has not yet undergone a rigorous security audit.
  */
 
-#include <linux/namei.h>
-#include <linux/scatterlist.h>
+#include <linaos/namei.h>
+#include <linaos/scatterlist.h>
 #include <crypto/hash.h>
 #include <crypto/sha2.h>
 #include <crypto/skcipher.h>

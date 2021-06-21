@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/video/vt8500lcdfb.h
+ *  linaos/drivers/video/vt8500lcdfb.h
  *
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  */

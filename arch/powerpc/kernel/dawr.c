@@ -5,10 +5,10 @@
  * Copyright 2019, Michael Neuling, IBM Corporation.
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/debugfs.h>
 #include <asm/debugfs.h>
 #include <asm/machdep.h>
 #include <asm/hvcall.h>

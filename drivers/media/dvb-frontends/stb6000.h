@@ -10,7 +10,7 @@
 #ifndef __DVB_STB6000_H__
 #define __DVB_STB6000_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 #if IS_REACHABLE(CONFIG_DVB_STB6000)

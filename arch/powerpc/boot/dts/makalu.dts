@@ -208,7 +208,7 @@
 			};
 
 			EMAC0: ethernet@ef600900 {
-				linux,network-index = <0x0>;
+				linaos,network-index = <0x0>;
 				device_type = "network";
 				compatible = "ibm,emac-405ex", "ibm,emac4sync";
 				interrupt-parent = <&EMAC0>;
@@ -238,7 +238,7 @@
 			};
 
 			EMAC1: ethernet@ef600a00 {
-				linux,network-index = <0x1>;
+				linaos,network-index = <0x1>;
 				device_type = "network";
 				compatible = "ibm,emac-405ex", "ibm,emac4sync";
 				interrupt-parent = <&EMAC1>;

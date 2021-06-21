@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _BCACHE_FEATURES_H
 #define _BCACHE_FEATURES_H
 
-#include <linux/bcache.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/bcache.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 #define BCH_FEATURE_COMPAT		0
 #define BCH_FEATURE_RO_COMPAT		1

@@ -18,10 +18,10 @@
 #define RTC_PORT(x)		(0x70+(x))
 #define RTC_ALWAYS_BCD		0
 
-#include <linux/init.h>
-#include <linux/mc146818rtc.h>
-#include <linux/bcd.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/io.h>
 
 #include "common.h"
 

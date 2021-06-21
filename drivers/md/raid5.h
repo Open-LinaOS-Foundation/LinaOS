@@ -2,8 +2,8 @@
 #ifndef _RAID5_H
 #define _RAID5_H
 
-#include <linux/raid/xor.h>
-#include <linux/dmaengine.h>
+#include <linaos/raid/xor.h>
+#include <linaos/dmaengine.h>
 
 /*
  *

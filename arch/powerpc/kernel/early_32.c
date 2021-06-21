@@ -4,8 +4,8 @@
  * Early init before relocation
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
 #include <asm/setup.h>
 #include <asm/sections.h>
 #include <asm/asm-prototypes.h>

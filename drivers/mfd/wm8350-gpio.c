@@ -7,13 +7,13 @@
  * Author: Liam Girdwood
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/gpio.h>
-#include <linux/mfd/wm8350/pmic.h>
+#include <linaos/mfd/wm8350/core.h>
+#include <linaos/mfd/wm8350/gpio.h>
+#include <linaos/mfd/wm8350/pmic.h>
 
 static int gpio_set_dir(struct wm8350 *wm8350, int gpio, int dir)
 {

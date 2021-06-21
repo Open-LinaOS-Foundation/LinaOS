@@ -6,7 +6,7 @@
 #define pr_fmt(fmt)		"bcm47xx: " fmt
 #endif
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /* prom.c */
 void __init bcm47xx_prom_highmem_init(void);

@@ -2,10 +2,10 @@
 // Copyright (c) 2018 Politecnico di Torino
 #include <stddef.h>
 #include <string.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/pkt_cls.h>
+#include <linaos/bpf.h>
+#include <linaos/if_ether.h>
+#include <linaos/ip.h>
+#include <linaos/pkt_cls.h>
 #include <bpf/bpf_helpers.h>
 
 int _version SEC("version") = 1;

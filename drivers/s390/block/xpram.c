@@ -4,14 +4,14 @@
  *           
  * significant parts of this code are based on
  * the sbull device driver presented in
- * A. Rubini: Linux Device Drivers
+ * A. Rubini: LinaOS Device Drivers
  *
  * Author of XPRAM specific coding: Reinhard Buendgen
  *                                  buendgen@de.ibm.com
  * Rewrite for 2.5: Martin Schwidefsky <schwidefsky@de.ibm.com>
  *
  * External interfaces:
- *   Interfaces to linux kernel
+ *   Interfaces to linaos kernel
  *        xpram_setup: read kernel parameters
  *   Device specific file operations
  *        xpram_iotcl
@@ -29,20 +29,20 @@
 #define KMSG_COMPONENT "xpram"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ctype.h>  /* isdigit, isxdigit */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/blkpg.h>
-#include <linux/hdreg.h>  /* HDIO_GETGEO */
-#include <linux/device.h>
-#include <linux/bio.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ctype.h>  /* isdigit, isxdigit */
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/blkpg.h>
+#include <linaos/hdreg.h>  /* HDIO_GETGEO */
+#include <linaos/device.h>
+#include <linaos/bio.h>
+#include <linaos/suspend.h>
+#include <linaos/platform_device.h>
+#include <linaos/gfp.h>
+#include <linaos/uaccess.h>
 
 #define XPRAM_NAME	"xpram"
 #define XPRAM_DEVS	1	/* one partition */

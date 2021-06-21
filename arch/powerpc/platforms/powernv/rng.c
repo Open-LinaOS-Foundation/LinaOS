@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt)	"powernv-rng: " fmt
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
 #include <asm/archrandom.h>
 #include <asm/cputable.h>
 #include <asm/io.h>

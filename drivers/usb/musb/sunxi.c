@@ -8,21 +8,21 @@
  * Allwinner Technology Co., Ltd. <www.allwinnertech.com>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/extcon.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy-sun4i-usb.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/soc/sunxi/sunxi_sram.h>
-#include <linux/usb/musb.h>
-#include <linux/usb/of.h>
-#include <linux/usb/usb_phy_generic.h>
-#include <linux/workqueue.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/extcon.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy/phy-sun4i-usb.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/soc/sunxi/sunxi_sram.h>
+#include <linaos/usb/musb.h>
+#include <linaos/usb/of.h>
+#include <linaos/usb/usb_phy_generic.h>
+#include <linaos/workqueue.h>
 #include "musb_core.h"
 
 /*

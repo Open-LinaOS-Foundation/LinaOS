@@ -5,8 +5,8 @@
  * (C) 2013 Astaro GmbH & Co KG
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
 
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_labels.h>

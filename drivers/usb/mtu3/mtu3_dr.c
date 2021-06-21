@@ -7,7 +7,7 @@
  * Author: Chunfeng Yun <chunfeng.yun@mediatek.com>
  */
 
-#include <linux/usb/role.h>
+#include <linaos/usb/role.h>
 
 #include "mtu3.h"
 #include "mtu3_dr.h"

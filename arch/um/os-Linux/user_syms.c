@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
 
 /* Some of this are builtin function (some are not but could in the future),
  * so I *must* declare good prototypes for them and then EXPORT them.
- * The kernel code uses the macro defined by include/linux/string.h,
+ * The kernel code uses the macro defined by include/linaos/string.h,
  * so I undef macros; the userspace code does not include that and I
  * add an EXPORT for the glibc one.
  */

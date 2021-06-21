@@ -3,24 +3,24 @@
  * File: drivers/input/keyboard/adp5588_keys.c
  * Description:  keypad driver for ADP5588 and ADP5587
  *		 I2C QWERTY Keypad and IO Expander
- * Bugs: Enter bugs at http://blackfin.uclinux.org/
+ * Bugs: Enter bugs at http://blackfin.uclinaos.org/
  *
  * Copyright (C) 2008-2010 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/workqueue.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/workqueue.h>
+#include <linaos/errno.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio.h>
+#include <linaos/slab.h>
 
-#include <linux/platform_data/adp5588.h>
+#include <linaos/platform_data/adp5588.h>
 
 /* Key Event Register xy */
 #define KEY_EV_PRESSED		(1 << 7)
@@ -668,5 +668,5 @@ static struct i2c_driver adp5588_driver = {
 module_i2c_driver(adp5588_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinaos.org>");
 MODULE_DESCRIPTION("ADP5588/87 Keypad driver");

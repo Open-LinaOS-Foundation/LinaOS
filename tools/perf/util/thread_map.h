@@ -4,7 +4,7 @@
 
 #include <sys/types.h>
 #include <stdio.h>
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 #include <internal/threadmap.h>
 #include <perf/threadmap.h>
 

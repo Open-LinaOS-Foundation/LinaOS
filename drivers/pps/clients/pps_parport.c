@@ -13,14 +13,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/irqnr.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/parport.h>
-#include <linux/pps_kernel.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/irqnr.h>
+#include <linaos/time.h>
+#include <linaos/slab.h>
+#include <linaos/parport.h>
+#include <linaos/pps_kernel.h>
 
 #define DRVDESC "parallel port PPS client"
 

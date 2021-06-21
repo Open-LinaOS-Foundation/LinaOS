@@ -2,7 +2,7 @@
 #ifndef __KSELFTEST_MODULE_H
 #define __KSELFTEST_MODULE_H
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
  * Test framework for writing test modules to be loaded by kselftest.

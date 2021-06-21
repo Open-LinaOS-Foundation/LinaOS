@@ -4,9 +4,9 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/of_clk.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
+#include <linaos/of_clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/delay.h>
 #include <asm/sbi.h>
 #include <asm/processor.h>
 #include <asm/timex.h>

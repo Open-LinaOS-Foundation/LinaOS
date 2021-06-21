@@ -1,4 +1,4 @@
-/* linux/mfd/tps6507x.h
+/* linaos/mfd/tps6507x.h
  *
  * Functions to access TPS65070 power management chip.
  *

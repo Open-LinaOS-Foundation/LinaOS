@@ -5,11 +5,11 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bitrev.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/bitrev.h>
+#include <linaos/module.h>
 #include <asm/unaligned.h>
 #include <sound/core.h>
 #include <sound/control.h>

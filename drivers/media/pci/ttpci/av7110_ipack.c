@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "dvb_filter.h"
 #include "av7110_ipack.h"
-#include <linux/string.h>	/* for memcpy() */
-#include <linux/vmalloc.h>
+#include <linaos/string.h>	/* for memcpy() */
+#include <linaos/vmalloc.h>
 
 
 void av7110_ipack_reset(struct ipack *p)

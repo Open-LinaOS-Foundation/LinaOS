@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* ld script to make s390 Linux kernel
+/* ld script to make s390 LinaOS kernel
  * Written by Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
@@ -18,8 +18,8 @@
 
 #define EMITS_PT_NOTE
 
-#include <asm-generic/vmlinux.lds.h>
-#include <asm/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
+#include <asm/vmlinaos.lds.h>
 
 OUTPUT_FORMAT("elf64-s390", "elf64-s390", "elf64-s390")
 OUTPUT_ARCH(s390:64-bit)
@@ -162,9 +162,9 @@ SECTIONS
 
 	/*
 	 * uncompressed image info used by the decompressor
-	 * it should match struct vmlinux_info
+	 * it should match struct vmlinaos_info
 	 */
-	.vmlinux.info 0 (INFO) : {
+	.vmlinaos.info 0 (INFO) : {
 		QUAD(_stext)					/* default_lma */
 		QUAD(startup_continue)				/* entry */
 		QUAD(__bss_start - _stext)			/* image_size */

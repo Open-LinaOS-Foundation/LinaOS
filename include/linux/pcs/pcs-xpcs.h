@@ -7,8 +7,8 @@
 #ifndef __LINUX_PCS_XPCS_H
 #define __LINUX_PCS_XPCS_H
 
-#include <linux/phy.h>
-#include <linux/phylink.h>
+#include <linaos/phy.h>
+#include <linaos/phylink.h>
 
 /* AN mode */
 #define DW_AN_C73			1

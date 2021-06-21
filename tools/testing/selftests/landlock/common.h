@@ -8,7 +8,7 @@
  */
 
 #include <errno.h>
-#include <linux/landlock.h>
+#include <linaos/landlock.h>
 #include <sys/capability.h>
 #include <sys/syscall.h>
 #include <sys/types.h>

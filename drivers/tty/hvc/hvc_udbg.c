@@ -5,13 +5,13 @@
  * (C) Copyright David Gibson, IBM Corporation 2008.
  */
 
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/irq.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/irq.h>
 
 #include <asm/udbg.h>
 

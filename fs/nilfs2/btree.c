@@ -7,10 +7,10 @@
  * Written by Koji Sato.
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/pagevec.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/pagevec.h>
 #include "nilfs.h"
 #include "page.h"
 #include "btnode.h"

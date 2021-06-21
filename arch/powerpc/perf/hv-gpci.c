@@ -3,14 +3,14 @@
  * Hypervisor supplied "gpci" ("get performance counter info") performance
  * counter support
  *
- * Author: Cody P Schafer <cody@linux.vnet.ibm.com>
+ * Author: Cody P Schafer <cody@linaos.vnet.ibm.com>
  * Copyright 2014 IBM Corporation.
  */
 
 #define pr_fmt(fmt) "hv-gpci: " fmt
 
-#include <linux/init.h>
-#include <linux/perf_event.h>
+#include <linaos/init.h>
+#include <linaos/perf_event.h>
 #include <asm/firmware.h>
 #include <asm/hvcall.h>
 #include <asm/io.h>

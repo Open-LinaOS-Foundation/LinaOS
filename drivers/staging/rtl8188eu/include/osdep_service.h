@@ -13,35 +13,35 @@
 #define _SUCCESS	1
 #define RTW_RX_HANDLED	2
 
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kref.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/circ_buf.h>
-#include <linux/uaccess.h>
+#include <linaos/spinlock.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kref.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/circ_buf.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/sem.h>
-#include <linux/sched/signal.h>
-#include <linux/etherdevice.h>
-#include <linux/wireless.h>
+#include <linaos/atomic.h>
+#include <linaos/io.h>
+#include <linaos/mutex.h>
+#include <linaos/sem.h>
+#include <linaos/sched/signal.h>
+#include <linaos/etherdevice.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>	/*  for struct tasklet_struct */
-#include <linux/ip.h>
-#include <linux/kthread.h>
+#include <linaos/if_arp.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>	/*  for struct tasklet_struct */
+#include <linaos/ip.h>
+#include <linaos/kthread.h>
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
 
 struct	__queue	{
 	struct	list_head	queue;

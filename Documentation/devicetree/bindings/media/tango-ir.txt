@@ -9,7 +9,7 @@ Required properties:
 
 Optional properties:
 
-- linux,rc-map-name: see Documentation/devicetree/bindings/media/rc.txt
+- linaos,rc-map-name: see Documentation/devicetree/bindings/media/rc.txt
 
 Example:
 

@@ -9,11 +9,11 @@
  * Based on wm8727.c driver
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of_device.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/of_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

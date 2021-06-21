@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/proc-sa1100.S
+ *  linaos/arch/arm/mm/proc-sa1100.S
  *
  *  Copyright (C) 1997-2002 Russell King
  *  hacked for non-paged-MM by Hyok S. Choi, 2003.
@@ -15,9 +15,9 @@
  *  12-jun-2000, Erik Mouw (J.A.K.Mouw@its.tudelft.nl):
  *    Flush the read buffer at context switches
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

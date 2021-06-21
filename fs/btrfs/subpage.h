@@ -3,7 +3,7 @@
 #ifndef BTRFS_SUBPAGE_H
 #define BTRFS_SUBPAGE_H
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 /*
  * Maximum page size we support is 64K, minimum sector size is 4K, u16 bitmap

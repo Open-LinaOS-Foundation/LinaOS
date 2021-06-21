@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# linux/drivers/maps/Makefile
+# linaos/drivers/maps/Makefile
 #
 
 ifeq ($(CONFIG_MTD_COMPLEX_MAPPINGS),y)
@@ -37,7 +37,7 @@ obj-$(CONFIG_MTD_SCx200_DOCFLASH)+= scx200_docflash.o
 obj-$(CONFIG_MTD_SOLUTIONENGINE)+= solutionengine.o
 obj-$(CONFIG_MTD_PCI)		+= pci.o
 obj-$(CONFIG_MTD_IMPA7)		+= impa7.o
-obj-$(CONFIG_MTD_UCLINUX)	+= uclinux.o
+obj-$(CONFIG_MTD_UCLINUX)	+= uclinaos.o
 obj-$(CONFIG_MTD_NETtel)	+= nettel.o
 obj-$(CONFIG_MTD_SCB2_FLASH)	+= scb2_flash.o
 obj-$(CONFIG_MTD_IXP4XX)	+= ixp4xx.o

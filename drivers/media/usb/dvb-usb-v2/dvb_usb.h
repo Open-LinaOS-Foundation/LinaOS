@@ -9,8 +9,8 @@
 #ifndef DVB_USB_H
 #define DVB_USB_H
 
-#include <linux/usb/input.h>
-#include <linux/firmware.h>
+#include <linaos/usb/input.h>
+#include <linaos/firmware.h>
 #include <media/rc-core.h>
 #include <media/media-device.h>
 

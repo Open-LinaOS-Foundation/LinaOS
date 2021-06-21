@@ -2,14 +2,14 @@
 /*
  * Copyright (C) 2016 - Marcin Malagowski <mrc@bourne.st>
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/iio/iio.h>
 
 #define ABP060MG_ERROR_MASK   0xC000
 #define ABP060MG_RESP_TIME_MS 40

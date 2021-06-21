@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux network device drivers.
+# Makefile for the LinaOS network device drivers.
 #
 
 #

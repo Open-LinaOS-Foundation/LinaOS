@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/crash_core.h>
-#include <linux/pgtable.h>
+#include <linaos/crash_core.h>
+#include <linaos/pgtable.h>
 
 #include <asm/setup.h>
 

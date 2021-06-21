@@ -3,18 +3,18 @@
  * Copyright (C) 2017 Linaro Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/iommu.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/qcom_scm.h>
-#include <linux/sizes.h>
-#include <linux/soc/qcom/mdt_loader.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/iommu.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/sizes.h>
+#include <linaos/soc/qcom/mdt_loader.h>
 
 #include "core.h"
 #include "firmware.h"

@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) "bt1-ccu-div: " fmt
 
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/reset-controller.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/ioport.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/reset-controller.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/ioport.h>
+#include <linaos/regmap.h>
 
 #include <dt-bindings/clock/bt1-ccu.h>
 #include <dt-bindings/reset/bt1-ccu.h>

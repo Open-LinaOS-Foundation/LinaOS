@@ -24,11 +24,11 @@
 #ifndef _VIA_DRV_H_
 #define _VIA_DRV_H_
 
-#include <linux/irqreturn.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/wait.h>
+#include <linaos/irqreturn.h>
+#include <linaos/jiffies.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
+#include <linaos/wait.h>
 
 #include <drm/drm_ioctl.h>
 #include <drm/drm_legacy.h>

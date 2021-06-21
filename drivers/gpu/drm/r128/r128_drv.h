@@ -1,9 +1,9 @@
-/* r128_drv.h -- Private header for r128 driver -*- linux-c -*-
+/* r128_drv.h -- Private header for r128 driver -*- linaos-c -*-
  * Created: Mon Dec 13 09:51:11 1999 by faith@precisioninsight.com
  */
 /*
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -26,18 +26,18 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Rickard E. (Rik) Faith <faith@valinux.com>
- *    Kevin E. Martin <martin@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Rickard E. (Rik) Faith <faith@valinaos.com>
+ *    Kevin E. Martin <martin@valinaos.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  *    Michel D�zer <daenzerm@student.ethz.ch>
  */
 
 #ifndef __R128_DRV_H__
 #define __R128_DRV_H__
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/irqreturn.h>
 
 #include <drm/drm_ioctl.h>
 #include <drm/drm_legacy.h>
@@ -47,7 +47,7 @@
 
 /* General customization:
  */
-#define DRIVER_AUTHOR		"Gareth Hughes, VA Linux Systems Inc."
+#define DRIVER_AUTHOR		"Gareth Hughes, VA LinaOS Systems Inc."
 
 #define DRIVER_NAME		"r128"
 #define DRIVER_DESC		"ATI Rage 128"

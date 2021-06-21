@@ -4,7 +4,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 #include "debugfs_gt.h"
 #include "debugfs_gt_pm.h"

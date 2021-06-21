@@ -7,7 +7,7 @@
 #include <error.h>
 #include <errno.h>
 #include <limits.h>
-#include <linux/in6.h>
+#include <linaos/in6.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdint.h>

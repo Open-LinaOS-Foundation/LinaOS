@@ -2,16 +2,16 @@
 #ifndef _LINUX_HUGETLB_H
 #define _LINUX_HUGETLB_H
 
-#include <linux/mm_types.h>
-#include <linux/mmdebug.h>
-#include <linux/fs.h>
-#include <linux/hugetlb_inline.h>
-#include <linux/cgroup.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/pgtable.h>
-#include <linux/gfp.h>
-#include <linux/userfaultfd_k.h>
+#include <linaos/mm_types.h>
+#include <linaos/mmdebug.h>
+#include <linaos/fs.h>
+#include <linaos/hugetlb_inline.h>
+#include <linaos/cgroup.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
+#include <linaos/pgtable.h>
+#include <linaos/gfp.h>
+#include <linaos/userfaultfd_k.h>
 
 struct ctl_table;
 struct user_struct;
@@ -25,8 +25,8 @@ typedef struct { unsigned long pd; } hugepd_t;
 
 #ifdef CONFIG_HUGETLB_PAGE
 
-#include <linux/mempolicy.h>
-#include <linux/shm.h>
+#include <linaos/mempolicy.h>
+#include <linaos/shm.h>
 #include <asm/tlbflush.h>
 
 struct hugepage_subpool {

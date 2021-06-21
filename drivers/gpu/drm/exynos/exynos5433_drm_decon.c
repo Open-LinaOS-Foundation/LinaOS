@@ -7,15 +7,15 @@
  *	Hyungwon Hwang <human.hwang@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_vblank.h>

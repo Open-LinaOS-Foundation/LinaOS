@@ -3,8 +3,8 @@
  * Based on arch/arm/mm/extable.c
  */
 
-#include <linux/extable.h>
-#include <linux/uaccess.h>
+#include <linaos/extable.h>
+#include <linaos/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

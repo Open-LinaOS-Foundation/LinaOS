@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * unistr.c - NTFS Unicode string handling. Part of the Linux-NTFS project.
+ * unistr.c - NTFS Unicode string handling. Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2006 Anton Altaparmakov
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "types.h"
 #include "debug.h"

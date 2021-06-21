@@ -4,16 +4,16 @@
  * Author: Youlin.Pei <youlin.pei@mediatek.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/syscore_ops.h>
 
 #define CIRQ_ACK	0x40
 #define CIRQ_MASK_SET	0xc0

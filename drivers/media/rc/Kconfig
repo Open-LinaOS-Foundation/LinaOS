@@ -4,7 +4,7 @@ menuconfig RC_CORE
 	tristate "Remote Controller support"
 	depends on INPUT
 	help
-	  Enable support for Remote Controllers on Linux. This is
+	  Enable support for Remote Controllers on LinaOS. This is
 	  needed in order to support several video capture adapters,
 	  standalone IR receivers/transmitters, and RF receivers.
 
@@ -21,7 +21,7 @@ config LIRC
 	bool "LIRC user interface"
 	depends on RC_CORE
 	help
-	   Enable this option to enable the Linux Infrared Remote
+	   Enable this option to enable the LinaOS Infrared Remote
 	   Control user interface (e.g. /dev/lirc*). This interface
 	   passes raw IR to and from userspace, which is needed for
 	   IR transmitting (aka "blasting") and for the lirc daemon.

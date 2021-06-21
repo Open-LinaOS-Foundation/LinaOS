@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/assembler.h>
 
 #include "proc-macros.S"

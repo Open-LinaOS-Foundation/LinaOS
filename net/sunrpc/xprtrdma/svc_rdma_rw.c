@@ -7,9 +7,9 @@
 
 #include <rdma/rw.h>
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/rpc_rdma.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/rpc_rdma.h>
+#include <linaos/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>
@@ -1059,7 +1059,7 @@ out:
  * The RPC/RDMA protocol assumes that the upper layer's XDR decoders
  * pull each Read chunk as they decode an incoming RPC message.
  *
- * On Linux, however, the server needs to have a fully-constructed RPC
+ * On LinaOS, however, the server needs to have a fully-constructed RPC
  * message in rqstp->rq_arg when there is a positive return code from
  * ->xpo_recvfrom. So the Read list is safety-checked immediately when
  * it is received, then here the whole Read list is pulled all at once.

@@ -5,18 +5,18 @@
  * Copyright (C) 2020 Andreas Kemnade
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mfd/rn5t618.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mfd/rn5t618.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #define CHG_STATE_ADP_INPUT 0x40
 #define CHG_STATE_USB_INPUT 0x80

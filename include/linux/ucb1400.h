@@ -21,9 +21,9 @@
 #define _LINUX__UCB1400_H
 
 #include <sound/ac97_codec.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
 
 /*
  * UCB1400 AC-link registers

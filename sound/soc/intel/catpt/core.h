@@ -8,8 +8,8 @@
 #ifndef __SND_SOC_INTEL_CATPT_CORE_H
 #define __SND_SOC_INTEL_CATPT_CORE_H
 
-#include <linux/dma/dw.h>
-#include <linux/irqreturn.h>
+#include <linaos/dma/dw.h>
+#include <linaos/irqreturn.h>
 #include "messages.h"
 #include "registers.h"
 

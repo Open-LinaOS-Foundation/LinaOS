@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2014 The Linux Foundation
+ * Copyright (c) 2014 The LinaOS Foundation
  */
-#include <linux/dma-map-ops.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 struct page **dma_common_find_pages(void *cpu_addr)
 {

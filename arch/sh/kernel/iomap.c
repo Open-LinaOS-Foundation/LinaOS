@@ -5,8 +5,8 @@
  * Copyright (C) 2000  Niibe Yutaka
  * Copyright (C) 2005 - 2007 Paul Mundt
  */
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 
 unsigned int ioread8(const void __iomem *addr)
 {

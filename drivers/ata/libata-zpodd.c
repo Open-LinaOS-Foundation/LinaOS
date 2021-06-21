@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/libata.h>
-#include <linux/cdrom.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/pm_qos.h>
+#include <linaos/libata.h>
+#include <linaos/cdrom.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/pm_qos.h>
 #include <scsi/scsi_device.h>
 
 #include "libata.h"

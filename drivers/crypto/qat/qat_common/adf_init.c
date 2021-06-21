@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2014 - 2020 Intel Corporation */
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
 #include "adf_accel_devices.h"
 #include "adf_cfg.h"
 #include "adf_common_drv.h"

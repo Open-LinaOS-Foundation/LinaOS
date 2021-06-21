@@ -10,18 +10,18 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/in.h>
-#include <linux/cdrom.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
+#include <linaos/net.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/in.h>
+#include <linaos/cdrom.h>
+#include <linaos/module.h>
+#include <linaos/ratelimit.h>
+#include <linaos/vmalloc.h>
 #include <asm/unaligned.h>
 #include <net/sock.h>
 #include <net/tcp.h>
@@ -742,7 +742,7 @@ static void target_complete_failure_work(struct work_struct *work)
 
 /*
  * Used when asking transport to copy Sense Data from the underlying
- * Linux/SCSI struct scsi_cmnd
+ * LinaOS/SCSI struct scsi_cmnd
  */
 static unsigned char *transport_get_sense_buffer(struct se_cmd *cmd)
 {
@@ -2025,7 +2025,7 @@ void transport_generic_request_failure(struct se_cmd *cmd,
 		 * No SENSE Data payload for this case, set SCSI Status
 		 * and queue the response to $FABRIC_MOD.
 		 *
-		 * Uses linux/include/scsi/scsi.h SAM status codes defs
+		 * Uses linaos/include/scsi/scsi.h SAM status codes defs
 		 */
 		cmd->scsi_status = SAM_STAT_RESERVATION_CONFLICT;
 		/*

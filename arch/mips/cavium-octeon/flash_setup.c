@@ -7,13 +7,13 @@
  *
  * Copyright (C) 2007, 2008 Cavium Networks
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/of_platform.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/semaphore.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/of_platform.h>
+#include <linaos/mtd/partitions.h>
 
 #include <asm/octeon/octeon.h>
 

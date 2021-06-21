@@ -5,18 +5,18 @@
  *
  * (C) Copyright 2008 Intel Corporation
  *
- * Author: Arjan van de Ven <arjan@linux.intel.com>
+ * Author: Arjan van de Ven <arjan@linaos.intel.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/kasan.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/highmem.h>
-#include <linux/pci.h>
-#include <linux/ptdump.h>
+#include <linaos/debugfs.h>
+#include <linaos/kasan.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/highmem.h>
+#include <linaos/pci.h>
+#include <linaos/ptdump.h>
 
 #include <asm/e820/types.h>
 

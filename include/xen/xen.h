@@ -25,7 +25,7 @@ extern bool xen_pvh;
 #define xen_hvm_domain()	(xen_domain_type == XEN_HVM_DOMAIN)
 #define xen_pvh_domain()	(xen_pvh)
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern uint32_t xen_start_flags;
 

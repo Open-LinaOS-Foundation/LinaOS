@@ -3,24 +3,24 @@
  * Author(s)......: Carsten Otte <cotte@de.ibm.com>
  * 		    Rob M van der Heij <rvdheij@nl.ibm.com>
  * 		    Steven Shultz <shultzss@us.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <LinaOS390@de.ibm.com>
  * Copyright IBM Corp. 2002, 2004
  */
 
 #define KMSG_COMPONENT "extmem"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/ctype.h>
-#include <linux/ioport.h>
-#include <linux/refcount.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/memblock.h>
+#include <linaos/ctype.h>
+#include <linaos/ioport.h>
+#include <linaos/refcount.h>
+#include <linaos/pgtable.h>
 #include <asm/diag.h>
 #include <asm/page.h>
 #include <asm/ebcdic.h>
@@ -243,7 +243,7 @@ query_segment_type (struct dcss_segment *seg)
  * -ENOSYS  : we are not running on VM
  * -EIO     : could not perform query diagnose
  * -ENOENT  : no such segment
- * -EOPNOTSUPP: multi-part segment cannot be used with linux
+ * -EOPNOTSUPP: multi-part segment cannot be used with linaos
  * -ENOMEM  : out of memory
  * 0 .. 6   : type of segment as defined in include/asm-s390/extmem.h
  */
@@ -392,15 +392,15 @@ __segment_load (char *name, int do_nonshared, unsigned long *addr, unsigned long
 /*
  * this function loads a DCSS segment
  * name         : name of the DCSS
- * do_nonshared : 0 indicates that the dcss should be shared with other linux images
- *                1 indicates that the dcss should be exclusive for this linux image
+ * do_nonshared : 0 indicates that the dcss should be shared with other linaos images
+ *                1 indicates that the dcss should be exclusive for this linaos image
  * addr         : will be filled with start address of the segment
  * end          : will be filled with end address of the segment
  * return values:
  * -ENOSYS  : we are not running on VM
  * -EIO     : could not perform query or load diagnose
  * -ENOENT  : no such segment
- * -EOPNOTSUPP: multi-part segment cannot be used with linux
+ * -EOPNOTSUPP: multi-part segment cannot be used with linaos
  * -EBUSY   : segment cannot be used (overlaps with dcss or storage)
  * -ERANGE  : segment cannot be used (exceeds kernel mapping range)
  * -EPERM   : segment is currently loaded with incompatible permissions
@@ -439,8 +439,8 @@ segment_load (char *name, int do_nonshared, unsigned long *addr,
 /*
  * this function modifies the shared state of a DCSS segment. note that
  * name         : name of the DCSS
- * do_nonshared : 0 indicates that the dcss should be shared with other linux images
- *                1 indicates that the dcss should be exclusive for this linux image
+ * do_nonshared : 0 indicates that the dcss should be shared with other linaos images
+ *                1 indicates that the dcss should be exclusive for this linaos image
  * return values:
  * -EIO     : could not perform load diagnose (segment gone!)
  * -ENOENT  : no such segment (segment gone!)

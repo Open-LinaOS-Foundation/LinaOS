@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -26,8 +26,8 @@ struct _adapter;
 #include "wlan_bssdef.h"
 #include "rtl8712_spec.h"
 #include "rtl8712_hal.h"
-#include <linux/mutex.h>
-#include <linux/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/completion.h>
 
 enum _NIC_VERSION {
 	RTL8711_NIC,

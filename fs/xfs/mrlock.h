@@ -6,7 +6,7 @@
 #ifndef __XFS_SUPPORT_MRLOCK_H__
 #define __XFS_SUPPORT_MRLOCK_H__
 
-#include <linux/rwsem.h>
+#include <linaos/rwsem.h>
 
 typedef struct {
 	struct rw_semaphore	mr_lock;

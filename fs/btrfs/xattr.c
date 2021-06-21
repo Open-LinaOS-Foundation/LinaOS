@@ -3,15 +3,15 @@
  * Copyright (C) 2007 Red Hat.  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
-#include <linux/security.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/iversion.h>
-#include <linux/sched/mm.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/rwsem.h>
+#include <linaos/xattr.h>
+#include <linaos/security.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/iversion.h>
+#include <linaos/sched/mm.h>
 #include "ctree.h"
 #include "btrfs_inode.h"
 #include "transaction.h"

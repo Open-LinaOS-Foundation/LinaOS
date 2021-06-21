@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "kfd_priv.h"
 
 void print_queue_properties(struct queue_properties *q)

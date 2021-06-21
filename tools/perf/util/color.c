@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <subcmd/pager.h>
 #include <stdlib.h>
 #include <stdio.h>

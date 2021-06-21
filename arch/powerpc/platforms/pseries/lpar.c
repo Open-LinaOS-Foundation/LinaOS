@@ -10,18 +10,18 @@
 #undef DEBUG
 #define pr_fmt(fmt) "lpar: " fmt
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/jump_label.h>
-#include <linux/delay.h>
-#include <linux/stop_machine.h>
-#include <linux/spinlock.h>
-#include <linux/cpuhotplug.h>
-#include <linux/workqueue.h>
-#include <linux/proc_fs.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/console.h>
+#include <linaos/export.h>
+#include <linaos/jump_label.h>
+#include <linaos/delay.h>
+#include <linaos/stop_machine.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/workqueue.h>
+#include <linaos/proc_fs.h>
+#include <linaos/pgtable.h>
 #include <asm/processor.h>
 #include <asm/mmu.h>
 #include <asm/page.h>
@@ -870,7 +870,7 @@ static void pseries_hpte_clear_all(void)
 }
 
 /*
- * NOTE: for updatepp ops we are fortunate that the linux "newpp" bits and
+ * NOTE: for updatepp ops we are fortunate that the linaos "newpp" bits and
  * the low 3 bits of flags happen to line up.  So no transform is needed.
  * We can probably optimize here and assume the high bits of newpp are
  * already zero.  For now I am paranoid.

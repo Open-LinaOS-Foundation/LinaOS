@@ -17,13 +17,13 @@
 #ifndef ATH9K_H
 #define ATH9K_H
 
-#include <linux/etherdevice.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/completion.h>
-#include <linux/time.h>
-#include <linux/hw_random.h>
+#include <linaos/etherdevice.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/leds.h>
+#include <linaos/completion.h>
+#include <linaos/time.h>
+#include <linaos/hw_random.h>
 
 #include "common.h"
 #include "debug.h"

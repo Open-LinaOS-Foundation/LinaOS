@@ -8,18 +8,18 @@
  * http://www.invensense.com/wp-content/uploads/2018/01/DS-000186-ICP-101xx-v1.2.pdf
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/crc8.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/math64.h>
-#include <linux/regulator/consumer.h>
-#include <linux/iio/iio.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/i2c.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/crc8.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/log2.h>
+#include <linaos/math64.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/iio/iio.h>
 
 #define ICP10100_ID_REG_GET(_reg)	((_reg) & 0x003F)
 #define ICP10100_ID_REG			0x08

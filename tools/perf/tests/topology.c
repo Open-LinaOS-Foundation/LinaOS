@@ -9,7 +9,7 @@
 #include "evlist.h"
 #include "debug.h"
 #include "pmu.h"
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #define TEMPL "/tmp/perf-test-XXXXXX"
 #define DATA_SIZE	10

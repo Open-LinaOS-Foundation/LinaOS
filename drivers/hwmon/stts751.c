@@ -11,20 +11,20 @@
  * Based on  LM95241 driver and LM90 driver
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/util_macros.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/util_macros.h>
 
 #define DEVNAME "stts751"
 

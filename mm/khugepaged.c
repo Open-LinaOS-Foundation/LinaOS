@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/mmu_notifier.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/mm_inline.h>
-#include <linux/kthread.h>
-#include <linux/khugepaged.h>
-#include <linux/freezer.h>
-#include <linux/mman.h>
-#include <linux/hashtable.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/page_idle.h>
-#include <linux/swapops.h>
-#include <linux/shmem_fs.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/rmap.h>
+#include <linaos/swap.h>
+#include <linaos/mm_inline.h>
+#include <linaos/kthread.h>
+#include <linaos/khugepaged.h>
+#include <linaos/freezer.h>
+#include <linaos/mman.h>
+#include <linaos/hashtable.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/page_idle.h>
+#include <linaos/swapops.h>
+#include <linaos/shmem_fs.h>
 
 #include <asm/tlb.h>
 #include <asm/pgalloc.h>

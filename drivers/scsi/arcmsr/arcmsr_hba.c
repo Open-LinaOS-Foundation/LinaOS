@@ -1,6 +1,6 @@
 /*
 *******************************************************************************
-**        O.S   : Linux
+**        O.S   : LinaOS
 **   FILE NAME  : arcmsr_hba.c
 **        BY    : Nick Cheng, C.L. Huang
 **   Description: SCSI RAID Device Driver for Areca RAID Controller
@@ -44,24 +44,24 @@
 **     Firmware Specification, see Documentation/scsi/arcmsr_spec.rst
 *******************************************************************************
 */
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/pci_ids.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/circ_buf.h>
+#include <linaos/module.h>
+#include <linaos/reboot.h>
+#include <linaos/spinlock.h>
+#include <linaos/pci_ids.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/aer.h>
+#include <linaos/circ_buf.h>
 #include <asm/dma.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

@@ -6,11 +6,11 @@
 /*       Combined with the alpha-numeric      */
 /*       portion of Greg Harp's old PEARL     */
 /*       font (from earlier versions of       */
-/*       linux-m86k) by John Shifflett        */
+/*       linaos-m86k) by John Shifflett        */
 /*                                            */
 /**********************************************/
 
-#include <linux/font.h>
+#include <linaos/font.h>
 
 #define FONTDATAMAX 2048
 

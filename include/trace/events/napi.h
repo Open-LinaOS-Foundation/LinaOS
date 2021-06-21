@@ -5,9 +5,9 @@
 #if !defined(_TRACE_NAPI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NAPI_H
 
-#include <linux/netdevice.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
+#include <linaos/netdevice.h>
+#include <linaos/tracepoint.h>
+#include <linaos/ftrace.h>
 
 #define NO_DEV "(no_device)"
 

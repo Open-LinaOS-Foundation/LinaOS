@@ -6,11 +6,11 @@
  *
  * Copyright (C) 2009 Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/sh_clk.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/clkdev.h>
+#include <linaos/sh_clk.h>
 #include <asm/clock.h>
 #include <cpu/sh7722.h>
 

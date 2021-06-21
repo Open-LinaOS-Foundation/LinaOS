@@ -4,7 +4,7 @@
 //
 // Common helpers for the audio DSP on i.MX8
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/sof/xtensa.h>
 #include "../ops.h"
 

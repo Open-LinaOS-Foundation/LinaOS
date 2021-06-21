@@ -24,7 +24,7 @@
  * Authors: Alex Deucher
  */
 
-#include <linux/dma-buf.h>
+#include <linaos/dma-buf.h>
 
 #include <drm/drm_prime.h>
 #include <drm/radeon_drm.h>

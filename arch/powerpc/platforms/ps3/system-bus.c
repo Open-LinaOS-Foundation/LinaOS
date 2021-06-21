@@ -6,12 +6,12 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/dma-map-ops.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 
 #include <asm/udbg.h>
 #include <asm/lv1call.h>

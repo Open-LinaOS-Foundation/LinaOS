@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
 
 #include "acp_gfx_if.h"
 

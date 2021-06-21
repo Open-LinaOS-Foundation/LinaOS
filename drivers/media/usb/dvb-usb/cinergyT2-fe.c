@@ -17,7 +17,7 @@
 
 
 /*
- *  convert linux-dvb frontend parameter set into TPS.
+ *  convert linaos-dvb frontend parameter set into TPS.
  *  See ETSI ETS-300744, section 4.6.2, table 9 for details.
  *
  *  This function is probably reusable and may better get placed in a support

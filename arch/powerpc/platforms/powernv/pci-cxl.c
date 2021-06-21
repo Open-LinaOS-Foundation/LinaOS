@@ -3,7 +3,7 @@
  * Copyright 2014-2016 IBM Corp.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/pnv-pci.h>
 #include <asm/opal.h>
 

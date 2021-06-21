@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright(c) 2017-2019 Intel Corporation.
 
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <linaos/device.h>
+#include <linaos/debugfs.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/slab.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_registers.h>
 #include "bus.h"
 
 static struct dentry *sdw_debugfs_root;

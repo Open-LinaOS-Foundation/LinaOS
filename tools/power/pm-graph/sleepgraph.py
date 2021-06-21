@@ -14,7 +14,7 @@
 # more details.
 #
 # Authors:
-#	 Todd Brandt <todd.e.brandt@linux.intel.com>
+#	 Todd Brandt <todd.e.brandt@linaos.intel.com>
 #
 # Links:
 #	 Home Page
@@ -24,7 +24,7 @@
 #
 # Description:
 #	 This tool is designed to assist kernel and OS developers in optimizing
-#	 their linux stack's suspend/resume time. Using a kernel image built
+#	 their linaos stack's suspend/resume time. Using a kernel image built
 #	 with a few extra options enabled, the tool will execute a suspend and
 #	 will capture dmesg and ftrace data until resume is complete. This data
 #	 is transformed into a device timeline and a callgraph to give a quick
@@ -6503,7 +6503,7 @@ def printHelp():
 	'\n'\
 	'Description:\n'\
 	'  This tool is designed to assist kernel and OS developers in optimizing\n'\
-	'  their linux stack\'s suspend/resume time. Using a kernel image built\n'\
+	'  their linaos stack\'s suspend/resume time. Using a kernel image built\n'\
 	'  with a few extra options enabled, the tool will execute a suspend and\n'\
 	'  capture dmesg and ftrace data until resume is complete. This data is\n'\
 	'  transformed into a device timeline and an optional callgraph to give\n'\

@@ -2,8 +2,8 @@
 #ifndef _LINUX_KERNEL_READ_FILE_H
 #define _LINUX_KERNEL_READ_FILE_H
 
-#include <linux/file.h>
-#include <linux/types.h>
+#include <linaos/file.h>
+#include <linaos/types.h>
 
 /* This is a list of *what* is being read, not *how* nor *where*. */
 #define __kernel_read_file_id(id) \

@@ -6,7 +6,7 @@
 #ifndef __INTEL_ATOMIC_H__
 #define __INTEL_ATOMIC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_atomic_state;
 struct drm_connector;

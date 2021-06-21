@@ -9,7 +9,7 @@
 #ifndef DSL3510_H_
 #define DSL3510_H_
 
-#include <linux/thunderbolt.h>
+#include <linaos/thunderbolt.h>
 
 enum nhi_fw_mode {
 	NHI_FW_SAFE_MODE,

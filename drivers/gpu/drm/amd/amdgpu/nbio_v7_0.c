@@ -29,7 +29,7 @@
 #include "nbio/nbio_7_0_sh_mask.h"
 #include "nbio/nbio_7_0_smn.h"
 #include "vega10_enum.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/linaos/kfd_ioctl.h>
 
 #define smnNBIF_MGCG_CTRL_LCLK	0x1013a05c
 

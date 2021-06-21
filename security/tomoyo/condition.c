@@ -6,13 +6,13 @@
  */
 
 #include "common.h"
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 /* List of "struct tomoyo_condition". */
 LIST_HEAD(tomoyo_condition_list);
 
 /**
- * tomoyo_argv - Check argv[] in "struct linux_binbrm".
+ * tomoyo_argv - Check argv[] in "struct linaos_binbrm".
  *
  * @index:   Index number of @arg_ptr.
  * @arg_ptr: Contents of argv[@index].
@@ -47,7 +47,7 @@ static bool tomoyo_argv(const unsigned int index, const char *arg_ptr,
 }
 
 /**
- * tomoyo_envp - Check envp[] in "struct linux_binbrm".
+ * tomoyo_envp - Check envp[] in "struct linaos_binbrm".
  *
  * @env_name:  The name of environment variable.
  * @env_value: The value of environment variable.
@@ -92,7 +92,7 @@ static bool tomoyo_envp(const char *env_name, const char *env_value,
 }
 
 /**
- * tomoyo_scan_bprm - Scan "struct linux_binprm".
+ * tomoyo_scan_bprm - Scan "struct linaos_binprm".
  *
  * @ee:   Pointer to "struct tomoyo_execve".
  * @argc: Length of @argc.
@@ -106,7 +106,7 @@ static bool tomoyo_scan_bprm(struct tomoyo_execve *ee,
 			     const u16 argc, const struct tomoyo_argv *argv,
 			     const u16 envc, const struct tomoyo_envp *envp)
 {
-	struct linux_binprm *bprm = ee->bprm;
+	struct linaos_binprm *bprm = ee->bprm;
 	struct tomoyo_page_dump *dump = &ee->dump;
 	char *arg_ptr = ee->tmp;
 	int arg_len = 0;
@@ -777,7 +777,7 @@ bool tomoyo_condition(struct tomoyo_request_info *r,
 	u16 condc;
 	u16 argc;
 	u16 envc;
-	struct linux_binprm *bprm = NULL;
+	struct linaos_binprm *bprm = NULL;
 
 	if (!cond)
 		return true;

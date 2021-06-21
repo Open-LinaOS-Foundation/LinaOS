@@ -29,7 +29,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/device.h>
+#include <linaos/device.h>
 
 struct qib_user_sdma_queue;
 

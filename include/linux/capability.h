@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * This is <linux/capability.h>
+ * This is <linaos/capability.h>
  *
  * Andrew G. Morgan <morgan@kernel.org>
  * Alexander Kjeldaas <astor@guardian.no>
@@ -8,13 +8,13 @@
  *
  * See here for the libcap library ("POSIX draft" compliance):
  *
- * ftp://www.kernel.org/pub/linux/libs/security/linux-privs/kernel-2.6/
+ * ftp://www.kernel.org/pub/linaos/libs/security/linaos-privs/kernel-2.6/
  */
 #ifndef _LINUX_CAPABILITY_H
 #define _LINUX_CAPABILITY_H
 
-#include <uapi/linux/capability.h>
-#include <linux/uidgid.h>
+#include <uapi/linaos/capability.h>
+#include <linaos/uidgid.h>
 
 #define _KERNEL_CAPABILITY_VERSION _LINUX_CAPABILITY_VERSION_3
 #define _KERNEL_CAPABILITY_U32S    _LINUX_CAPABILITY_U32S_3

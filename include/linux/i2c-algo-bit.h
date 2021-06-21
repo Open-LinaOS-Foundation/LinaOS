@@ -10,7 +10,7 @@
 #ifndef _LINUX_I2C_ALGO_BIT_H
 #define _LINUX_I2C_ALGO_BIT_H
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 /* --- Defines for bit-adapters ---------------------------------------	*/
 /*

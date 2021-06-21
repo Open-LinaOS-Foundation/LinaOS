@@ -20,10 +20,10 @@
 #include <asm/trans_pgd.h>
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>
-#include <linux/suspend.h>
-#include <linux/bug.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
+#include <linaos/suspend.h>
+#include <linaos/bug.h>
+#include <linaos/mm.h>
+#include <linaos/mmzone.h>
 
 static void *trans_alloc(struct trans_pgd_info *info)
 {

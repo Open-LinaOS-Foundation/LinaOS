@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_BRIDGE_EBT_802_3_H
 #define _UAPI__LINUX_BRIDGE_EBT_802_3_H
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 
 #define EBT_802_3_SAP 0x01
 #define EBT_802_3_TYPE 0x02

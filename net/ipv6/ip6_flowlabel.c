@@ -5,19 +5,19 @@
  *	Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/pid_namespace.h>
-#include <linux/jump_label_ratelimit.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/in6.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/jump_label_ratelimit.h>
 
 #include <net/net_namespace.h>
 #include <net/sock.h>
@@ -26,7 +26,7 @@
 #include <net/rawv6.h>
 #include <net/transp_v6.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define FL_MIN_LINGER	6	/* Minimal linger. It is set to 6sec specified
 				   in old IPv6 RFC. Well, it was reasonable value.

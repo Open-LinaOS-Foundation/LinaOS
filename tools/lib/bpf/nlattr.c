@@ -9,7 +9,7 @@
 #include <errno.h>
 #include <string.h>
 #include <stdio.h>
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 #include "nlattr.h"
 #include "libbpf_internal.h"
 

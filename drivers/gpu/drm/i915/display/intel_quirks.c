@@ -3,7 +3,7 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 
 #include "intel_display_types.h"
 #include "intel_quirks.h"

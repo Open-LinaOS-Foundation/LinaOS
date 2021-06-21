@@ -3,7 +3,7 @@
  * adl_pci6208.c
  * Comedi driver for ADLink 6208 series cards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -22,8 +22,8 @@
  * channels exist in registers, but don't go to DAC chips.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
 
 #include "../comedi_pci.h"
 

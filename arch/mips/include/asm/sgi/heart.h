@@ -9,8 +9,8 @@
 #ifndef __ASM_SGI_HEART_H
 #define __ASM_SGI_HEART_H
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
 
 /*
  * There are 8 DIMM slots on an IP30 system
@@ -66,7 +66,7 @@
  *
  * HEART is the main system controller ASIC for IP30 system.  It incorporates
  * a memory controller, interrupt status/cause/set/clear management, basic
- * timer with count/compare, and other functionality.  For Linux, not all of
+ * timer with count/compare, and other functionality.  For LinaOS, not all of
  * HEART's functions are fully understood.
  *
  * Implementation note: All HEART registers are 64bits-wide, but the mem_cfg
@@ -137,7 +137,7 @@ struct ip30_heart_regs {		/* 0x0ff00000 */
 
 /*
  * XXX: Everything below this comment will either go away or be cleaned
- *      up to fit in better with Linux.  A lot of the bit definitions for
+ *      up to fit in better with LinaOS.  A lot of the bit definitions for
  *      HEART were derived from IRIX's sys/RACER/heart.h header file.
  */
 

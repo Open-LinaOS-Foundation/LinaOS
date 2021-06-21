@@ -9,7 +9,7 @@
 
 #define _GNU_SOURCE
 #include <fcntl.h>
-#include <linux/landlock.h>
+#include <linaos/landlock.h>
 #include <sched.h>
 #include <string.h>
 #include <sys/capability.h>

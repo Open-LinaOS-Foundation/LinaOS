@@ -10,7 +10,7 @@
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #include <asm/kvm_emulate.h>
 #include <asm/esr.h>
 

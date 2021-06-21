@@ -6,8 +6,8 @@
 #if !defined(_VAS_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 
 #define _VAS_TRACE_H
-#include <linux/tracepoint.h>
-#include <linux/sched.h>
+#include <linaos/tracepoint.h>
+#include <linaos/sched.h>
 #include <asm/vas.h>
 
 TRACE_EVENT(	vas_rx_win_open,

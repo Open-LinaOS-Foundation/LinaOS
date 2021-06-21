@@ -5,22 +5,22 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/irq.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/irq.h>
+#include <linaos/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/list.h>
+#include <linaos/i2c.h>
+#include <linaos/rtc.h>
+#include <linaos/module.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/events.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/sysfs.h>
 #include "adt7316.h"
 
 /*

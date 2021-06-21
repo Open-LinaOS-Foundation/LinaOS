@@ -3,9 +3,9 @@
  * Copyright (c) 2018 Rockchip Electronics Co. Ltd.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

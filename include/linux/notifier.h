@@ -5,15 +5,15 @@
  *	that modules can poke their nose into the innards. The network devices
  *	needed them so here they are for the rest of you.
  *
- *				Alan Cox <Alan.Cox@linux.org>
+ *				Alan Cox <Alan.Cox@linaos.org>
  */
  
 #ifndef _LINUX_NOTIFIER_H
 #define _LINUX_NOTIFIER_H
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/srcu.h>
+#include <linaos/errno.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/srcu.h>
 
 /*
  * Notifier chains are of four types:
@@ -209,15 +209,15 @@ static inline int notifier_to_errno(int ret)
  *	VC switch chains (for loadable kernel svgalib VC switch helpers) etc...
  */
  
-/* CPU notfiers are defined in include/linux/cpu.h. */
+/* CPU notfiers are defined in include/linaos/cpu.h. */
 
-/* netdevice notifiers are defined in include/linux/netdevice.h */
+/* netdevice notifiers are defined in include/linaos/netdevice.h */
 
-/* reboot notifiers are defined in include/linux/reboot.h. */
+/* reboot notifiers are defined in include/linaos/reboot.h. */
 
-/* Hibernation and suspend events are defined in include/linux/suspend.h. */
+/* Hibernation and suspend events are defined in include/linaos/suspend.h. */
 
-/* Virtual Terminal events are defined in include/linux/vt.h. */
+/* Virtual Terminal events are defined in include/linaos/vt.h. */
 
 #define NETLINK_URELEASE	0x0001	/* Unicast netlink socket released */
 

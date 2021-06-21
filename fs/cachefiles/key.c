@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 static const char cachefiles_charmap[64] =

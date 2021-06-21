@@ -3,14 +3,14 @@
  * Copyright(c) 1999 - 2004 Intel Corporation. All rights reserved.
  */
 
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bonding.h>
-#include <linux/pkt_sched.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/ethtool.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_bonding.h>
+#include <linaos/pkt_sched.h>
 #include <net/net_namespace.h>
 #include <net/bonding.h>
 #include <net/bond_3ad.h>

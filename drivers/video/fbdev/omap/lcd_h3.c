@@ -6,10 +6,10 @@
  * Author: Imre Deak <imre.deak@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/tps65010.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/tps65010.h>
+#include <linaos/gpio.h>
 
 #include "omapfb.h"
 

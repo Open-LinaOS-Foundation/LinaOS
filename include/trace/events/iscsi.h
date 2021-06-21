@@ -4,7 +4,7 @@
 #if !defined(_TRACE_ISCSI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_ISCSI_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /* max debug message length */
 #define ISCSI_MSG_MAX	256

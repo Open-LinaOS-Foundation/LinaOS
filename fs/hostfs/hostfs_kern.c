@@ -1,21 +1,21 @@
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Licensed under the GPL
  *
  * Ported the filesystem routines to 2.5.
  * 2003-02-10 Petr Baudis <pasky@ucw.cz>
  */
 
-#include <linux/fs.h>
-#include <linux/magic.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/statfs.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
+#include <linaos/fs.h>
+#include <linaos/magic.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/statfs.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
 #include "hostfs.h"
 #include <init.h>
 #include <kern.h>
@@ -192,7 +192,7 @@ static struct inode *hostfs_iget(struct super_block *sb)
 static int hostfs_statfs(struct dentry *dentry, struct kstatfs *sf)
 {
 	/*
-	 * do_statfs uses struct statfs64 internally, but the linux kernel
+	 * do_statfs uses struct statfs64 internally, but the linaos kernel
 	 * struct statfs still has 32-bit versions for most of these fields,
 	 * so we convert them here
 	 */

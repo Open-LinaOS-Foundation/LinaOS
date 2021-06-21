@@ -6,12 +6,12 @@
  * Gated clock implementation
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/string.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
 
 /**
  * DOC: basic gatable clock which can gate and ungate it's ouput

@@ -8,8 +8,8 @@
 #ifndef I3C_CCC_H
 #define I3C_CCC_H
 
-#include <linux/bitops.h>
-#include <linux/i3c/device.h>
+#include <linaos/bitops.h>
+#include <linaos/i3c/device.h>
 
 /* I3C CCC (Common Command Codes) related definitions */
 #define I3C_CCC_DIRECT			BIT(7)

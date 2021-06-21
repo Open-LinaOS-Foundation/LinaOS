@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_X86_MCE_H
 #define _UAPI_ASM_X86_MCE_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 /*
  * Fields are zero when not available. Also, this struct is shared with
@@ -27,7 +27,7 @@ struct mce {
 	__u8  bank;		/* Machine check bank reporting the error */
 	__u8  cpu;		/* CPU number; obsoleted by extcpu */
 	__u8  finished;		/* Entry is valid */
-	__u32 extcpu;		/* Linux CPU number that detected the error */
+	__u32 extcpu;		/* LinaOS CPU number that detected the error */
 	__u32 socketid;		/* CPU socket ID */
 	__u32 apicid;		/* CPU initial APIC ID */
 	__u64 mcgcap;		/* MCGCAP MSR: machine check capabilities of CPU */

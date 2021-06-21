@@ -12,19 +12,19 @@
  *    Initial PA-RISC Version: 04-23-1999 by Helge Deller
  */
 
-#include <linux/kernel.h>
-#include <linux/initrd.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/initrd.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/seq_file.h>
 #define PCI_DEBUG
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #undef PCI_DEBUG
-#include <linux/proc_fs.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/start_kernel.h>
+#include <linaos/proc_fs.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/start_kernel.h>
 
 #include <asm/cacheflush.h>
 #include <asm/processor.h>
@@ -81,7 +81,7 @@ void __init dma_ops_init(void)
 		 * We've got way too many dependencies on 1.1 semantics
 		 * to support 1.0 boxes at this point.
 		 */
-		panic(	"PA-RISC Linux currently only supports machines that conform to\n"
+		panic(	"PA-RISC LinaOS currently only supports machines that conform to\n"
 			"the PA-RISC 1.1 or 2.0 architecture specification.\n");
 
 	case pcxl2:
@@ -307,7 +307,7 @@ static int __init parisc_init(void)
 	/* set up a new led state on systems shipped LED State panel */
 	pdc_chassis_send_status(PDC_CHASSIS_DIRECT_BSTART);
 
-	/* tell PDC we're Linux. Nevermind failure. */
+	/* tell PDC we're LinaOS. Nevermind failure. */
 	pdc_stable_write(0x40, &osid, sizeof(osid));
 	
 	/* start with known state */
@@ -403,7 +403,7 @@ void __init start_parisc(void)
 
 		asm volatile ("fstd	%fr0,8(%sp)");
 	} else {
-		panic("must have an fpu to boot linux");
+		panic("must have an fpu to boot linaos");
 	}
 
 	early_trap_init(); /* initialize checksum of fault_vector */

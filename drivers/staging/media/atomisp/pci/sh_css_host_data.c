@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <ia_css_host_data.h>
 #include <sh_css_internal.h>
 

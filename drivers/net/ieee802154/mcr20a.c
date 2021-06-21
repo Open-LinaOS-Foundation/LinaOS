@@ -4,23 +4,23 @@
  *
  * Copyright (C) 2018 Xue Liu <liuxuenetmail@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/skbuff.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/ieee802154.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/spi/spi.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/skbuff.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
+#include <linaos/ieee802154.h>
+#include <linaos/debugfs.h>
 
 #include <net/mac802154.h>
 #include <net/cfg802154.h>
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 #include "mcr20a.h"
 

@@ -16,17 +16,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/kfifo.h>
-#include <linux/sched/signal.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/kfifo.h>
+#include <linaos/sched/signal.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/poll.h>
 
-#include <linux/hid.h>
-#include <linux/hid-debug.h>
+#include <linaos/hid.h>
+#include <linaos/hid-debug.h>
 
 static struct dentry *hid_debug_root;
 

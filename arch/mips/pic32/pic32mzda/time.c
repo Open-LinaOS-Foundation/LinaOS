@@ -3,12 +3,12 @@
  * Joshua Henderson <joshua.henderson@microchip.com>
  * Copyright (C) 2015 Microchip Technology Inc.  All rights reserved.
  */
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_irq.h>
+#include <linaos/clocksource.h>
+#include <linaos/init.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_irq.h>
 
 #include <asm/time.h>
 

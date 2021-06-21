@@ -11,7 +11,7 @@ Usage
 
 When the driver is loaded, a character device is created at /dev/uleds. To
 create a new LED class device, open /dev/uleds and write a uleds_user_dev
-structure to it (found in kernel public header file linux/uleds.h)::
+structure to it (found in kernel public header file linaos/uleds.h)::
 
     #define LED_MAX_NAME_SIZE 64
 

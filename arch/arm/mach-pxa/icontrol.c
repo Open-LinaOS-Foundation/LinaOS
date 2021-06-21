@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/icontrol.c
+ * linaos/arch/arm/mach-pxa/icontrol.c
  *
  * Support for the iControl and SafeTcam platforms from TMT Services
  * using the Embedian MXM-8x10 Computer on Module
@@ -10,10 +10,10 @@
  * 2010-01-21 Hennie van der Merve <hvdmerwe@tmtservies.co.za>
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/gpio.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/gpio.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -21,9 +21,9 @@
 #include "pxa320.h"
 #include "mxm8x10.h"
 
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/regulator/machine.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/regulator/machine.h>
 
 #include "generic.h"
 

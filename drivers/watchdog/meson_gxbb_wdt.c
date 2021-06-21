@@ -4,15 +4,15 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  *
  */
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
 
 #define DEFAULT_TIMEOUT	30	/* seconds */
 

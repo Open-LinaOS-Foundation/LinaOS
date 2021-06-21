@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * ppp_defs.h - PPP definitions.
  *
@@ -8,7 +8,7 @@
  *  modify it under the terms of the GNU General Public License
  *  version 2 as published by the Free Software Foundation.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef _UAPI_PPP_DEFS_H_
 #define _UAPI_PPP_DEFS_H_
@@ -143,7 +143,7 @@ struct ppp_comp_stats {
  * The following structure records the time in seconds since
  * the last NP packet was sent or received.
  *
- * Linux implements both 32-bit and 64-bit time_t versions
+ * LinaOS implements both 32-bit and 64-bit time_t versions
  * for compatibility with user space that defines ppp_idle
  * based on the libc time_t.
  */

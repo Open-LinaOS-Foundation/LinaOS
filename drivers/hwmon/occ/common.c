@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright IBM Corp 2019
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
 #include <asm/unaligned.h>
 
 #include "common.h"
@@ -1192,6 +1192,6 @@ int occ_setup(struct occ *occ, const char *name)
 }
 EXPORT_SYMBOL_GPL(occ_setup);
 
-MODULE_AUTHOR("Eddie James <eajames@linux.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@linaos.ibm.com>");
 MODULE_DESCRIPTION("Common OCC hwmon code");
 MODULE_LICENSE("GPL");

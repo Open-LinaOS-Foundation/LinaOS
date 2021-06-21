@@ -5,7 +5,7 @@
 #ifndef __TUNER_SIMPLE_H__
 #define __TUNER_SIMPLE_H__
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 #if IS_REACHABLE(CONFIG_MEDIA_TUNER_SIMPLE)

@@ -5,13 +5,13 @@
  *  Copyright (C) 2016 Bluecherry, LLC <maintainers@bluecherrydvr.com>
  */
 
-#include <linux/pci.h>
-#include <linux/videodev2.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/videodev2.h>
+#include <linaos/notifier.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>

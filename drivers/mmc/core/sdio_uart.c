@@ -22,23 +22,23 @@
  * concurrent access to the same port.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/serial_reg.h>
-#include <linux/circ_buf.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/mutex.h>
+#include <linaos/seq_file.h>
+#include <linaos/serial_reg.h>
+#include <linaos/circ_buf.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/kfifo.h>
+#include <linaos/slab.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/mmc/sdio_ids.h>
 
 
 #define UART_NR		8	/* Number of UARTs this driver can handle */

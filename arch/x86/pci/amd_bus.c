@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/range.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/topology.h>
+#include <linaos/cpu.h>
+#include <linaos/range.h>
 
 #include <asm/amd_nb.h>
 #include <asm/pci_x86.h>
@@ -131,7 +131,7 @@ static int __init early_root_info_init(void)
 
 	/*
 	 * The following code extracts routing information for use on old
-	 * systems where Linux doesn't automatically use host bridge _CRS
+	 * systems where LinaOS doesn't automatically use host bridge _CRS
 	 * methods (or when the user specifies "pci=nocrs").
 	 *
 	 * We only do this through Fam11h, because _CRS should be enough on

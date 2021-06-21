@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/export.h>
-#include <linux/compiler.h>
-#include <uapi/linux/swab.h>
+#include <linaos/export.h>
+#include <linaos/compiler.h>
+#include <uapi/linaos/swab.h>
 
 unsigned int notrace __bswapsi2(unsigned int u)
 {

@@ -3,16 +3,16 @@
 // Copyright (c) 2016 MediaTek Inc.
 // Author: Chen Zhong <chen.zhong@mediatek.com>
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/mt6323-regulator.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/mt6397/core.h>
+#include <linaos/mfd/mt6323/registers.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/mt6323-regulator.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define MT6323_LDO_MODE_NORMAL	0
 #define MT6323_LDO_MODE_LP	1

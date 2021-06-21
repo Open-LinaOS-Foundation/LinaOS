@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/lib/string.c
+ *  linaos/lib/string.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -20,14 +20,14 @@
  * -  Kissed strtok() goodbye
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/word-at-a-time.h>

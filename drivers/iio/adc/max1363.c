@@ -3,36 +3,36 @@
   * iio/adc/max1363.c
   * Copyright (C) 2008-2010 Jonathan Cameron
   *
-  * based on linux/drivers/i2c/chips/max123x
+  * based on linaos/drivers/i2c/chips/max123x
   * Copyright (C) 2002-2004 Stefan Eletzhofer
   *
-  * based on linux/drivers/acron/char/pcf8583.c
+  * based on linaos/drivers/acron/char/pcf8583.c
   * Copyright (C) 2000 Russell King
   *
   * Driver for max1363 and similar chips.
   */
 
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/i2c.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/sysfs.h>
+#include <linaos/list.h>
+#include <linaos/i2c.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/driver.h>
+#include <linaos/iio/kfifo_buf.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 #define MAX1363_SETUP_BYTE(a) ((a) | 0x80)
 

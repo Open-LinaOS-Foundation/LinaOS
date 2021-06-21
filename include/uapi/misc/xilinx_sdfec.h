@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Xilinx SD-FEC
  *
@@ -11,7 +11,7 @@
 #ifndef __XILINX_SDFEC_H__
 #define __XILINX_SDFEC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Shared LDPC Tables */
 #define XSDFEC_LDPC_SC_TABLE_ADDR_BASE (0x10000)

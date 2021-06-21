@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/dma-resv.h>
+#include <linaos/dma-resv.h>
 
 #include "dma_resv_utils.h"
 

@@ -8,7 +8,7 @@
 #ifndef __DWMAC1000_H__
 #define __DWMAC1000_H__
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 #include "common.h"
 
 #define GMAC_CONTROL		0x00000000	/* Configuration */

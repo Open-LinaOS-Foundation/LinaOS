@@ -5,18 +5,18 @@
  * Copyright (C) 2008 Nokia Corporation
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/swab.h>
-#include <linux/crc7.h>
-#include <linux/spi/spi.h>
-#include <linux/wl12xx.h>
-#include <linux/gpio.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/swab.h>
+#include <linaos/crc7.h>
+#include <linaos/spi/spi.h>
+#include <linaos/wl12xx.h>
+#include <linaos/gpio.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regulator/consumer.h>
 
 #include "wl1251.h"
 #include "reg.h"

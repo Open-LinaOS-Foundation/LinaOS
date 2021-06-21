@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_IOBITMAP_H
 #define _ASM_X86_IOBITMAP_H
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 #include <asm/processor.h>
 
 struct io_bitmap {

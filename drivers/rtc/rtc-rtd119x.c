@@ -6,14 +6,14 @@
  * SPDX-License-Identifier: GPL-2.0+
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/spinlock.h>
 
 #define RTD_RTCSEC		0x00
 #define RTD_RTCMIN		0x04

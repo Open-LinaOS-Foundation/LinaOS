@@ -10,13 +10,13 @@
  * Copyright (c) 2003-2004 IBM Corp.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/gfp.h>
+#include <linaos/i2c.h>
+#include <linaos/kdev_t.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_device.h>

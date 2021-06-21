@@ -11,9 +11,9 @@
 
 #define pr_fmt(fmt) "secvar: "fmt
 
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h>
 #include <asm/opal.h>
 #include <asm/secvar.h>
 #include <asm/secure_boot.h>

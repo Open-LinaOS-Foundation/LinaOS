@@ -6,8 +6,8 @@
  *
  * Send comments and feedback to Linas Vepstas <linas@austin.ibm.com>
  */
-#include <linux/pci.h>
-#include <linux/stat.h>
+#include <linaos/pci.h>
+#include <linaos/stat.h>
 #include <asm/ppc-pci.h>
 #include <asm/pci-bridge.h>
 

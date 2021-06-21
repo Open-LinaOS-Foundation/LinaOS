@@ -8,17 +8,17 @@
 /*
  * Add include to common target
  */
-#include <linux/qed/common_hsi.h>
+#include <linaos/qed/common_hsi.h>
 
 /*
  * Add include to common storage target
  */
-#include <linux/qed/storage_common.h>
+#include <linaos/qed/storage_common.h>
 
 /*
  * Add include to common fcoe target for both eCore and protocol driver
  */
-#include <linux/qed/fcoe_common.h>
+#include <linaos/qed/fcoe_common.h>
 
 
 /*

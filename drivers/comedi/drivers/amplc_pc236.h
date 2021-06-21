@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2002-2014 MEV Ltd. <https://www.mev.co.uk/>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef AMPLC_PC236_H_INCLUDED
 #define AMPLC_PC236_H_INCLUDED
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct comedi_device;
 

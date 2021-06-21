@@ -3,15 +3,15 @@
  * Copyright (c) 2016-2019, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
 
 #include <soc/tegra/fuse.h>
 

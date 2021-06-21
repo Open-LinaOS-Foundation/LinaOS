@@ -17,7 +17,7 @@
 
 #include <asm/arcregs.h>
 #include <asm/tlb.h>
-#include <linux/sched/mm.h>
+#include <linaos/sched/mm.h>
 
 #include <asm-generic/mm_hooks.h>
 
@@ -27,7 +27,7 @@
  * with same vaddr (different tasks) to co-exit. This provides for
  * "Fast Context Switch" i.e. no TLB flush on ctxt-switch
  *
- * Linux assigns each task a unique ASID. A simple round-robin allocation
+ * LinaOS assigns each task a unique ASID. A simple round-robin allocation
  * of H/w ASID is done using software tracker @asid_cpu.
  * When it reaches max 255, the allocation cycle starts afresh by flushing
  * the entire TLB and wrapping ASID back to zero.

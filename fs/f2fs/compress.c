@@ -5,13 +5,13 @@
  * Copyright (c) 2019 Chao Yu <chao@kernel.org>
  */
 
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/lzo.h>
-#include <linux/lz4.h>
-#include <linux/zstd.h>
+#include <linaos/fs.h>
+#include <linaos/f2fs_fs.h>
+#include <linaos/writeback.h>
+#include <linaos/backing-dev.h>
+#include <linaos/lzo.h>
+#include <linaos/lz4.h>
+#include <linaos/zstd.h>
 
 #include "f2fs.h"
 #include "node.h"

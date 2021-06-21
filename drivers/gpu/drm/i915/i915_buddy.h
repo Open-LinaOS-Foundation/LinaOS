@@ -6,8 +6,8 @@
 #ifndef __I915_BUDDY_H__
 #define __I915_BUDDY_H__
 
-#include <linux/bitops.h>
-#include <linux/list.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
 
 struct i915_buddy_block {
 #define I915_BUDDY_HEADER_OFFSET GENMASK_ULL(63, 12)

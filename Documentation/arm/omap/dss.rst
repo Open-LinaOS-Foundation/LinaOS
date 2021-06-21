@@ -39,7 +39,7 @@ Tested boards include:
 omapdss driver
 --------------
 
-The DSS driver does not itself have any support for Linux framebuffer, V4L or
+The DSS driver does not itself have any support for LinaOS framebuffer, V4L or
 such like the current ones, but it has an internal kernel API that upper level
 drivers can use.
 
@@ -103,7 +103,7 @@ themselves to the DSS driver.
 omapfb driver
 -------------
 
-The omapfb driver implements arbitrary number of standard linux framebuffers.
+The omapfb driver implements arbitrary number of standard linaos framebuffers.
 These framebuffers can be routed flexibly to any overlays, thus allowing very
 dynamic display architecture.
 

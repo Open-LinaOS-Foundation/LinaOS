@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file holds Hub protocol constants and data structures that are
  * defined in chapter 11 (Hub Specification) of the USB 2.0 specification.
@@ -10,7 +10,7 @@
 #ifndef __LINUX_CH11_H
 #define __LINUX_CH11_H
 
-#include <linux/types.h>	/* __u8 etc */
+#include <linaos/types.h>	/* __u8 etc */
 
 /* This is arbitrary.
  * From USB 2.0 spec Table 11-13, offset 7, a hub can

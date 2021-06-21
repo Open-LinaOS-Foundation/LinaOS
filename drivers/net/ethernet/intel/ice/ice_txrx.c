@@ -3,9 +3,9 @@
 
 /* The driver transmit and receive code */
 
-#include <linux/prefetch.h>
-#include <linux/mm.h>
-#include <linux/bpf_trace.h>
+#include <linaos/prefetch.h>
+#include <linaos/mm.h>
+#include <linaos/bpf_trace.h>
 #include <net/xdp.h>
 #include "ice_txrx_lib.h"
 #include "ice_lib.h"

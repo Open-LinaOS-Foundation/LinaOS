@@ -9,7 +9,7 @@
 /*
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct arvo_mode_key { /* 2 bytes */
 	uint8_t command; /* ARVO_COMMAND_MODE_KEY */

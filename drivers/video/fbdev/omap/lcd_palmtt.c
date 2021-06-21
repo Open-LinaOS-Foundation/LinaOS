@@ -12,10 +12,10 @@ GPIO12 - screen blanking
 GPIO13 - screen blanking
 */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
 
 #include "omapfb.h"
 

@@ -6,10 +6,10 @@
 #ifndef CONFIG_SMP
 #include <asm-generic/futex.h>
 #else
-#include <linux/atomic.h>
-#include <linux/futex.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
+#include <linaos/atomic.h>
+#include <linaos/futex.h>
+#include <linaos/uaccess.h>
+#include <linaos/errno.h>
 
 #define __futex_atomic_op(insn, ret, oldval, uaddr, oparg)		\
 {									\

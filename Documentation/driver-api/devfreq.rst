@@ -22,8 +22,8 @@ API
 Device drivers need to initialize a :c:type:`devfreq_profile` and call the
 :c:func:`devfreq_add_device` function to create a :c:type:`devfreq` instance.
 
-.. kernel-doc:: include/linux/devfreq.h
-.. kernel-doc:: include/linux/devfreq-event.h
+.. kernel-doc:: include/linaos/devfreq.h
+.. kernel-doc:: include/linaos/devfreq-event.h
 .. kernel-doc:: drivers/devfreq/devfreq.c
         :export:
 .. kernel-doc:: drivers/devfreq/devfreq-event.c

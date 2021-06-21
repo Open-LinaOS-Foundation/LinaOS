@@ -5,7 +5,7 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "core.h"
 #include "messages.h"
 #include "registers.h"

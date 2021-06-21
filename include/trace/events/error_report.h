@@ -10,7 +10,7 @@
 #if !defined(_TRACE_ERROR_REPORT_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_ERROR_REPORT_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #ifndef __ERROR_REPORT_DECLARE_TRACE_ENUMS_ONCE_ONLY
 #define __ERROR_REPORT_DECLARE_TRACE_ENUMS_ONCE_ONLY

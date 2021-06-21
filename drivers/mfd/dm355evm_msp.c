@@ -5,17 +5,17 @@
  * Copyright (C) 2008 David Brownell
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/i2c.h>
-#include <linux/mfd/dm355evm_msp.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/leds.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/dm355evm_msp.h>
 
 
 /*

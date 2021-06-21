@@ -7,17 +7,17 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/da9150/core.h>
-#include <linux/mfd/da9150/registers.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/da9150/core.h>
+#include <linaos/mfd/da9150/registers.h>
 
 /* Raw device access, used for QIF */
 static int da9150_i2c_read_device(struct i2c_client *client, u8 addr, int count,

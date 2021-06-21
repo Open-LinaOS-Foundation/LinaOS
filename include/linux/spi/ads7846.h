@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* linux/spi/ads7846.h */
+/* linaos/spi/ads7846.h */
 
 /* Touchscreen characteristics vary between boards and models.  The
  * platform_data for the device's "struct device" holds this information.

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/kernel.h>
-#include <linux/libfdt.h>
-#include <linux/sizes.h>
+#include <linaos/kernel.h>
+#include <linaos/libfdt.h>
+#include <linaos/sizes.h>
 
 static const void *get_prop(const void *fdt, const char *node_path,
 			    const char *property, int minlen)
@@ -49,7 +49,7 @@ static uint64_t get_val(const fdt32_t *cells, uint32_t ncells)
  *
  * Traditionally, the start address of physical memory is obtained by masking
  * the program counter.  However, this does require that this address is a
- * multiple of 128 MiB, precluding booting Linux on platforms where this
+ * multiple of 128 MiB, precluding booting LinaOS on platforms where this
  * requirement is not fulfilled.
  * Hence validate the calculated address against the memory information in the
  * DTB, and, if out-of-range, replace it by the real start address.
@@ -87,7 +87,7 @@ uint32_t fdt_check_mem_start(uint32_t mem_start, const void *fdt)
 		if (!type || strcmp(type, "memory"))
 			continue;
 
-		reg = fdt_getprop(fdt, offset, "linux,usable-memory", &len);
+		reg = fdt_getprop(fdt, offset, "linaos,usable-memory", &len);
 		if (!reg)
 			reg = fdt_getprop(fdt, offset, "reg", &len);
 		if (!reg)

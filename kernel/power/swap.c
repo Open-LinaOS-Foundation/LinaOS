@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/kernel/power/swap.c
+ * linaos/kernel/power/swap.c
  *
  * This file provides functions for reading the suspend image from
  * and writing it to a swap partition.
@@ -12,25 +12,25 @@
 
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/genhd.h>
-#include <linux/device.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/lzo.h>
-#include <linux/vmalloc.h>
-#include <linux/cpumask.h>
-#include <linux/atomic.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/ktime.h>
+#include <linaos/module.h>
+#include <linaos/file.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/genhd.h>
+#include <linaos/device.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/lzo.h>
+#include <linaos/vmalloc.h>
+#include <linaos/cpumask.h>
+#include <linaos/atomic.h>
+#include <linaos/kthread.h>
+#include <linaos/crc32.h>
+#include <linaos/ktime.h>
 
 #include "power.h"
 

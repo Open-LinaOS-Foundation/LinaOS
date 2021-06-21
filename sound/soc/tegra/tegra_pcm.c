@@ -15,8 +15,8 @@
  * Iliyan Malchev <malchev@google.com>
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

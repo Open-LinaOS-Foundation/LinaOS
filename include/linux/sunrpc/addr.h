@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/addr.h
+ * linaos/include/linaos/sunrpc/addr.h
  *
  * Various routines for copying and comparing sockaddrs and for
  * converting them to and from presentation format.
@@ -8,9 +8,9 @@
 #ifndef _LINUX_SUNRPC_ADDR_H
 #define _LINUX_SUNRPC_ADDR_H
 
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 #include <net/ipv6.h>
 
 size_t		rpc_ntop(const struct sockaddr *, char *, const size_t);

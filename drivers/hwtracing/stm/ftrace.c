@@ -6,9 +6,9 @@
  * STM Ftrace will be registered as a trace_export.
  */
 
-#include <linux/module.h>
-#include <linux/stm.h>
-#include <linux/trace.h>
+#include <linaos/module.h>
+#include <linaos/stm.h>
+#include <linaos/trace.h>
 
 #define STM_FTRACE_NR_CHANNELS 1
 #define STM_FTRACE_CHAN 0

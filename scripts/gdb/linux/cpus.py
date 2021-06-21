@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for LinaOS kernel debugging
 #
 #  per-cpu tools
 #
@@ -13,7 +13,7 @@
 
 import gdb
 
-from linux import tasks, utils
+from linaos import tasks, utils
 
 
 task_type = utils.CachedType("struct task_struct")

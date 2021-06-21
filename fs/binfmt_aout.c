@@ -1,40 +1,40 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/binfmt_aout.c
+ *  linaos/fs/binfmt_aout.c
  *
  *  Copyright (C) 1991, 1992, 1996  Linus Torvalds
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/a.out.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
-#include <linux/init.h>
-#include <linux/coredump.h>
-#include <linux/slab.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/a.out.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/stat.h>
+#include <linaos/fcntl.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/binfmts.h>
+#include <linaos/personality.h>
+#include <linaos/init.h>
+#include <linaos/coredump.h>
+#include <linaos/slab.h>
+#include <linaos/sched/task_stack.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 
-static int load_aout_binary(struct linux_binprm *);
+static int load_aout_binary(struct linaos_binprm *);
 static int load_aout_library(struct file*);
 
-static struct linux_binfmt aout_format = {
+static struct linaos_binfmt aout_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_aout_binary,
 	.load_shlib	= load_aout_library,
@@ -56,7 +56,7 @@ static int set_brk(unsigned long start, unsigned long end)
  * memory and creates the pointer tables from them, and puts their
  * addresses on the "stack", returning the new stack pointer value.
  */
-static unsigned long __user *create_aout_tables(char __user *p, struct linux_binprm * bprm)
+static unsigned long __user *create_aout_tables(char __user *p, struct linaos_binprm * bprm)
 {
 	char __user * __user *argv;
 	char __user * __user *envp;
@@ -114,7 +114,7 @@ static unsigned long __user *create_aout_tables(char __user *p, struct linux_bin
  * libraries.  There is no binary dependent code anywhere else.
  */
 
-static int load_aout_binary(struct linux_binprm * bprm)
+static int load_aout_binary(struct linaos_binprm * bprm)
 {
 	struct pt_regs *regs = current_pt_regs();
 	struct exec ex;

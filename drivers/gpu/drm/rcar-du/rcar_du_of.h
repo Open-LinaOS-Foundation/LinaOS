@@ -7,7 +7,7 @@
 #ifndef __RCAR_DU_OF_H__
 #define __RCAR_DU_OF_H__
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 struct of_device_id;
 

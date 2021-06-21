@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/highmem.h>
-#include <linux/crash_dump.h>
+#include <linaos/highmem.h>
+#include <linaos/crash_dump.h>
 
 /**
  * copy_oldmem_page - copy one page from "oldmem"

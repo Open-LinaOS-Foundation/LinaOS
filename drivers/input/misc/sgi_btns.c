@@ -4,11 +4,11 @@
  *
  *  Copyright (C) 2008  Thomas Bogendoerfer <tsbogend@alpha.franken.de>
  */
-#include <linux/input.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/input.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #ifdef CONFIG_SGI_IP22
 #include <asm/sgi/ioc.h>

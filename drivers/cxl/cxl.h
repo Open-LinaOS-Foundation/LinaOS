@@ -4,9 +4,9 @@
 #ifndef __CXL_H__
 #define __CXL_H__
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
 
 /* CXL 2.0 8.2.8.1 Device Capabilities Array Register */
 #define CXLDEV_CAP_ARRAY_OFFSET 0x0

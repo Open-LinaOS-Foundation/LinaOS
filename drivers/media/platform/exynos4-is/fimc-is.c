@@ -9,24 +9,24 @@
  */
 #define pr_fmt(fmt) "%s:%d " fmt, __func__, __LINE__
 
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/device.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 #include <media/videobuf2-dma-contig.h>
 
 #include "media-dev.h"

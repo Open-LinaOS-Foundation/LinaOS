@@ -5,7 +5,7 @@ used in any new applications.
 What:		/sys/bus/platform/devices/INT34D2:00/simplecmd
 Date:		Jun 2015
 KernelVersion:	4.1
-Contact:	Mika Westerberg <mika.westerberg@linux.intel.com>
+Contact:	Mika Westerberg <mika.westerberg@linaos.intel.com>
 Description:	This interface allows userspace to send an arbitrary
 		IPC command to the PMC/SCU.
 
@@ -15,7 +15,7 @@ Description:	This interface allows userspace to send an arbitrary
 What:		/sys/bus/platform/devices/INT34D2:00/northpeak
 Date:		Jun 2015
 KernelVersion:	4.1
-Contact:	Mika Westerberg <mika.westerberg@linux.intel.com>
+Contact:	Mika Westerberg <mika.westerberg@linaos.intel.com>
 Description:	This interface allows userspace to enable and disable
 		Northpeak through the PMC/SCU.
 

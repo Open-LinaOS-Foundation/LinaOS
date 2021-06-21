@@ -6,7 +6,7 @@
 #ifndef _SKL_UNIVERSAL_PLANE_H_
 #define _SKL_UNIVERSAL_PLANE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct intel_crtc;

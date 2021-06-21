@@ -8,12 +8,12 @@
  *          Mengdong Lin <mengdong.lin@intel.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

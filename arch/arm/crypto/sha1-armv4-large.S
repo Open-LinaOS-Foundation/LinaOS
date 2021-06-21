@@ -61,7 +61,7 @@
 @ Profiler-assisted and platform-specific optimization resulted in 10%
 @ improvement on Cortex A8 core and 12.2 cycles per byte.
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 .text
 

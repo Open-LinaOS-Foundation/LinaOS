@@ -9,7 +9,7 @@
 #ifndef _XTENSA_TLBFLUSH_H
 #define _XTENSA_TLBFLUSH_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 #include <asm/processor.h>
 
 #define DTLB_WAY_PGD	7
@@ -166,7 +166,7 @@ static inline void invalidate_dtlb_mapping (unsigned address)
  * You may find it helpful for MMU debugging, however.
  *
  * 'at' is the unmodified input register
- * 'as' is the output register, as follows (specific to the Linux config):
+ * 'as' is the output register, as follows (specific to the LinaOS config):
  *
  *      as[31..12] contain the virtual address
  *      as[11..08] are meaningless

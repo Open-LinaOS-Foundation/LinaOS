@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <sys/socket.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 int invocations = 0, in_use = 0;

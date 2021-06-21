@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 
 /**
  * ibumad BPF sample kernel side
@@ -11,7 +11,7 @@
  */
 
 #define KBUILD_MODNAME "ibumad_count_pkts_by_class"
-#include <uapi/linux/bpf.h>
+#include <uapi/linaos/bpf.h>
 
 #include <bpf/bpf_helpers.h>
 

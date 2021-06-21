@@ -15,25 +15,25 @@
  *       the LPC3180.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/isp1301.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/prefetch.h>
+#include <linaos/proc_fs.h>
+#include <linaos/slab.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/isp1301.h>
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FILES
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 #endif
 
 /*

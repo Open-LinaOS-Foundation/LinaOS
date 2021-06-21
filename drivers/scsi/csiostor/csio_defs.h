@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for LinaOS.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,13 +35,13 @@
 #ifndef __CSIO_DEFS_H__
 #define __CSIO_DEFS_H__
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/bug.h>
+#include <linaos/pci.h>
+#include <linaos/jiffies.h>
 
 #define CSIO_INVALID_IDX		0xFFFFFFFF
 #define CSIO_INC_STATS(elem, val)	((elem)->stats.val++)

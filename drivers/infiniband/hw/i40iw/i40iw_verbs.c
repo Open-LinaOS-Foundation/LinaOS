@@ -32,13 +32,13 @@
 *
 *******************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/hugetlb.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/random.h>
+#include <linaos/highmem.h>
+#include <linaos/time.h>
+#include <linaos/hugetlb.h>
+#include <linaos/irq.h>
 #include <asm/byteorder.h>
 #include <net/ip.h>
 #include <rdma/ib_verbs.h>

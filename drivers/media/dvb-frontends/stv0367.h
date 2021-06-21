@@ -12,7 +12,7 @@
 #ifndef STV0367_H
 #define STV0367_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 #define STV0367_ICSPEED_53125	53125000

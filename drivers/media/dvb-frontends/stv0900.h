@@ -12,7 +12,7 @@
 #ifndef STV0900_H
 #define STV0900_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 struct stv0900_reg {

@@ -488,5 +488,5 @@ and calling xas_split().
 Functions and structures
 ========================
 
-.. kernel-doc:: include/linux/xarray.h
+.. kernel-doc:: include/linaos/xarray.h
 .. kernel-doc:: lib/xarray.c

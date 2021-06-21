@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/brownstone.c
+ *  linaos/arch/arm/mach-mmp/brownstone.c
  *
  *  Support for the Marvell Brownstone Development Platform.
  *
  *  Copyright (C) 2009-2010 Marvell International Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio-pxa.h>
-#include <linux/gpio/machine.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max8649.h>
-#include <linux/regulator/fixed.h>
-#include <linux/mfd/max8925.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/max8649.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/mfd/max8925.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

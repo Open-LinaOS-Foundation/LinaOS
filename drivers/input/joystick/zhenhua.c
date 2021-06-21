@@ -10,7 +10,7 @@
 
 /*
  * Driver to use 4CH RC transmitter using Zhen Hua 5-byte protocol (Walkera Lama,
- * EasyCopter etc.) as a joystick under Linux.
+ * EasyCopter etc.) as a joystick under LinaOS.
  *
  * RC transmitters using Zhen Hua 5-byte protocol are cheap four channels
  * transmitters for control a RC planes or RC helicopters with possibility to
@@ -31,12 +31,12 @@
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitrev.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/bitrev.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"RC transmitter with 5-byte Zhen Hua protocol joystick driver"
 

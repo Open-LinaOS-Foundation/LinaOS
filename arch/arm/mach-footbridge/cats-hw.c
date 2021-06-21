@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-footbridge/cats-hw.c
+ * linaos/arch/arm/mach-footbridge/cats-hw.c
  *
  * CATS machine fixup
  *
  * Copyright (C) 1998, 1999 Russell King, Phil Blundell
  */
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/screen_info.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/screen_info.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/mach-types.h>

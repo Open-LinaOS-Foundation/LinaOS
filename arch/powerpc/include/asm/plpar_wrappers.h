@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_PPC_PSERIES
 
-#include <linux/string.h>
-#include <linux/irqflags.h>
+#include <linaos/string.h>
+#include <linaos/irqflags.h>
 
 #include <asm/hvcall.h>
 #include <asm/paca.h>

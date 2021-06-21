@@ -3,9 +3,9 @@
  * Intel Memory Protection Keys management
  * Copyright (c) 2015, Intel Corporation.
  */
-#include <linux/debugfs.h>		/* debugfs_create_u32()		*/
-#include <linux/mm_types.h>             /* mm_struct, vma, etc...       */
-#include <linux/pkeys.h>                /* PKEY_*                       */
+#include <linaos/debugfs.h>		/* debugfs_create_u32()		*/
+#include <linaos/mm_types.h>             /* mm_struct, vma, etc...       */
+#include <linaos/pkeys.h>                /* PKEY_*                       */
 #include <uapi/asm-generic/mman-common.h>
 
 #include <asm/cpufeature.h>             /* boot_cpu_has, ...            */

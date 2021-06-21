@@ -5,15 +5,15 @@
 
 #define pr_fmt(fmt) "test_unwind: " fmt
 #include <asm/unwind.h>
-#include <linux/completion.h>
-#include <linux/kallsyms.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kprobes.h>
-#include <linux/wait.h>
+#include <linaos/completion.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/kprobes.h>
+#include <linaos/wait.h>
 #include <asm/irq.h>
 
 #define BT_BUF_SIZE (PAGE_SIZE * 4)

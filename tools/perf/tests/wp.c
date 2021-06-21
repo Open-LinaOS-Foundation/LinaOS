@@ -3,8 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/kernel.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/kernel.h>
 #include "tests.h"
 #include "debug.h"
 #include "event.h"

@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/backing-dev.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/statfs.h>
-#include <linux/string.h>
+#include <linaos/backing-dev.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/inet.h>
+#include <linaos/in6.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/fs_context.h>
+#include <linaos/fs_parser.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/statfs.h>
+#include <linaos/string.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "cache.h"
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <linaos/ceph/ceph_features.h>
+#include <linaos/ceph/decode.h>
+#include <linaos/ceph/mon_client.h>
+#include <linaos/ceph/auth.h>
+#include <linaos/ceph/debugfs.h>
 
 static DEFINE_SPINLOCK(ceph_fsc_lock);
 static LIST_HEAD(ceph_fsc_list);
@@ -1327,5 +1327,5 @@ module_exit(exit_ceph);
 MODULE_AUTHOR("Sage Weil <sage@newdream.net>");
 MODULE_AUTHOR("Yehuda Sadeh <yehuda@hq.newdream.net>");
 MODULE_AUTHOR("Patience Warnick <patience@newdream.net>");
-MODULE_DESCRIPTION("Ceph filesystem for Linux");
+MODULE_DESCRIPTION("Ceph filesystem for LinaOS");
 MODULE_LICENSE("GPL");

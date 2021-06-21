@@ -7,12 +7,12 @@
  * unwanted headers.
  */
 #ifdef CONFIG_GENERIC_GETTIMEOFDAY
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/clocksource.h>
 #include <vdso/datapage.h>
 #include <vdso/helpers.h>
 
-#include <uapi/linux/time.h>
+#include <uapi/linaos/time.h>
 
 #ifdef BUILD_VDSO32_64
 typedef u64 gtod_long_t;

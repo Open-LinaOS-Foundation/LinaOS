@@ -3,14 +3,14 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
 #include <asm/synch.h>
 #include <asm/switch_to.h>
 #include <misc/cxl-base.h>

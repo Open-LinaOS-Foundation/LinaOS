@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- *  include/linux/signalfd.h
+ *  include/linaos/signalfd.h
  *
  *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
  *
@@ -9,9 +9,9 @@
 #ifndef _UAPI_LINUX_SIGNALFD_H
 #define _UAPI_LINUX_SIGNALFD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 /* For O_CLOEXEC and O_NONBLOCK */
-#include <linux/fcntl.h>
+#include <linaos/fcntl.h>
 
 /* Flags for signalfd4.  */
 #define SFD_CLOEXEC O_CLOEXEC

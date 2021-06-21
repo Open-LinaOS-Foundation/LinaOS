@@ -9,12 +9,12 @@
  * interrupts...)
  */
 
-#include <linux/kernel.h>
-#include <linux/irqflags.h>
-#include <linux/cpumask.h>
+#include <linaos/kernel.h>
+#include <linaos/irqflags.h>
+#include <linaos/cpumask.h>
 
 #include <asm/r4k-timer.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/barrier.h>
 #include <asm/mipsregs.h>
 

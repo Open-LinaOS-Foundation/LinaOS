@@ -6,23 +6,23 @@
  * Copyright (C) 2011-2013 Freescale Semiconductor, Inc.
  * Copyright (C) 2010, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hdmi.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regmap.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/hdmi.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/regmap.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/spinlock.h>
 
 #include <media/cec-notifier.h>
 
-#include <uapi/linux/media-bus-format.h>
-#include <uapi/linux/videodev2.h>
+#include <uapi/linaos/media-bus-format.h>
+#include <uapi/linaos/videodev2.h>
 
 #include <drm/bridge/dw_hdmi.h>
 #include <drm/drm_atomic.h>

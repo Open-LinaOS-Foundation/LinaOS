@@ -3,18 +3,18 @@
  * Copyright (C) 2016 Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/idr.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 #include <sound/ac97/codec.h>
 #include <sound/ac97/controller.h>
 #include <sound/ac97/regs.h>

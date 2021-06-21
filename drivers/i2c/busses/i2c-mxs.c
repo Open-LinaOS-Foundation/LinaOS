@@ -10,22 +10,22 @@
  * Copyright (C) 2009-2010 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/completion.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
-#include <linux/stmp_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dma/mxs-dma.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/completion.h>
+#include <linaos/platform_device.h>
+#include <linaos/jiffies.h>
+#include <linaos/io.h>
+#include <linaos/stmp_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma/mxs-dma.h>
 
 #define DRIVER_NAME "mxs-i2c"
 

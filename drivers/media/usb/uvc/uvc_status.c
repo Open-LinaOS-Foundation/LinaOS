@@ -6,11 +6,11 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <linaos/kernel.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/usb/input.h>
 
 #include "uvcvideo.h"
 

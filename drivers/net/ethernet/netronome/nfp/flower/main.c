@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2017-2018 Netronome Systems, Inc. */
 
-#include <linux/etherdevice.h>
-#include <linux/lockdep.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
+#include <linaos/etherdevice.h>
+#include <linaos/lockdep.h>
+#include <linaos/pci.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
 #include <net/devlink.h>
 #include <net/dst_metadata.h>
 

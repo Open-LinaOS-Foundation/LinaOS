@@ -13,12 +13,12 @@
  *	Not publicly available.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
 
 #define DRV_NAME "triflex"
 

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/fs.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/ratelimit.h>
-#include <linux/bits.h>
-#include <linux/ktime.h>
+#include <linaos/fs.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/gfp.h>
+#include <linaos/sched.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/ratelimit.h>
+#include <linaos/bits.h>
+#include <linaos/ktime.h>
 
 #include "super.h"
 #include "mds_client.h"
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <linaos/ceph/ceph_features.h>
+#include <linaos/ceph/messenger.h>
+#include <linaos/ceph/decode.h>
+#include <linaos/ceph/pagelist.h>
+#include <linaos/ceph/auth.h>
+#include <linaos/ceph/debugfs.h>
 
 #define RECONNECT_MAX_SIZE (INT_MAX - PAGE_SIZE)
 

@@ -1,5 +1,5 @@
 ==================
-Linux Firmware API
+LinaOS Firmware API
 ==================
 
 .. toctree::

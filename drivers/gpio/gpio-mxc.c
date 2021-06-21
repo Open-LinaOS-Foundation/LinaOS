@@ -7,22 +7,22 @@
 // Authors: Daniel Mack, Juergen Beisert.
 // Copyright (C) 2004-2010 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/bug.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/bug.h>
 
 /* device type dependent stuff */
 struct mxc_gpio_hwdata {

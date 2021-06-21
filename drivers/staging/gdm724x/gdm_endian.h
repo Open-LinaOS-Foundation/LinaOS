@@ -4,7 +4,7 @@
 #ifndef __GDM_ENDIAN_H__
 #define __GDM_ENDIAN_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * For data in "device-endian" byte order (device endianness is model

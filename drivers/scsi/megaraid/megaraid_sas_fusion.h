@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  Linux MegaRAID driver for SAS based RAID controllers
+ *  LinaOS MegaRAID driver for SAS based RAID controllers
  *
  *  Copyright (c) 2009-2013  LSI Corporation
  *  Copyright (c) 2013-2016  Avago Technologies
@@ -14,7 +14,7 @@
  *           Kashyap Desai <kashyap.desai@broadcom.com>
  *           Sumit Saxena <sumit.saxena@broadcom.com>
  *
- *  Send feedback to: megaraidlinux.pdl@broadcom.com
+ *  Send feedback to: megaraidlinaos.pdl@broadcom.com
  */
 
 #ifndef _MEGARAID_SAS_FUSION_H_

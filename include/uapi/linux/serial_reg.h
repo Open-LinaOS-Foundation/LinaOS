@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH LinaOS-syscall-note */
 /*
- * include/linux/serial_reg.h
+ * include/linaos/serial_reg.h
  *
  * Copyright (C) 1992, 1994 by Theodore Ts'o.
  * 

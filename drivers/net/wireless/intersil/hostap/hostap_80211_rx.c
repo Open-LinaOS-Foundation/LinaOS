@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <net/lib80211.h>
-#include <linux/if_arp.h>
+#include <linaos/if_arp.h>
 
 #include "hostap_80211.h"
 #include "hostap.h"
@@ -76,10 +76,10 @@ int prism2_rx_80211(struct net_device *dev, struct sk_buff *skb,
 	if (dev->type == ARPHRD_IEEE80211_PRISM) {
 		if (local->monitor_type == PRISM2_MONITOR_PRISM) {
 			prism_header = 1;
-			phdrlen = sizeof(struct linux_wlan_ng_prism_hdr);
+			phdrlen = sizeof(struct linaos_wlan_ng_prism_hdr);
 		} else { /* local->monitor_type == PRISM2_MONITOR_CAPHDR */
 			prism_header = 2;
-			phdrlen = sizeof(struct linux_wlan_ng_cap_hdr);
+			phdrlen = sizeof(struct linaos_wlan_ng_cap_hdr);
 		}
 	} else if (dev->type == ARPHRD_IEEE80211_RADIOTAP) {
 		prism_header = 3;
@@ -131,7 +131,7 @@ int prism2_rx_80211(struct net_device *dev, struct sk_buff *skb,
 #endif /* PRISM2_ADD_BOGUS_CRC */
 
 	if (prism_header == 1) {
-		struct linux_wlan_ng_prism_hdr *hdr;
+		struct linaos_wlan_ng_prism_hdr *hdr;
 		hdr = skb_push(skb, phdrlen);
 		memset(hdr, 0, phdrlen);
 		hdr->msgcode = LWNG_CAP_DID_BASE;
@@ -152,7 +152,7 @@ hdr->f.status = s; hdr->f.len = l; hdr->f.data = d
 		LWNG_SETVAL(frmlen, 10, 0, 4, skb->len - phdrlen);
 #undef LWNG_SETVAL
 	} else if (prism_header == 2) {
-		struct linux_wlan_ng_cap_hdr *hdr;
+		struct linaos_wlan_ng_cap_hdr *hdr;
 		hdr = skb_push(skb, phdrlen);
 		memset(hdr, 0, phdrlen);
 		hdr->version    = htonl(LWNG_CAPHDR_VERSION);

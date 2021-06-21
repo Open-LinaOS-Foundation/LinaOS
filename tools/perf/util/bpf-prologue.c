@@ -15,7 +15,7 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <dwarf-regs.h>
-#include <linux/filter.h>
+#include <linaos/filter.h>
 
 #define BPF_REG_SIZE		8
 

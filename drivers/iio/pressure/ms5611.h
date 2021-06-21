@@ -9,9 +9,9 @@
 #ifndef _MS5611_H
 #define _MS5611_H
 
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/mutex.h>
+#include <linaos/device.h>
+#include <linaos/iio/iio.h>
+#include <linaos/mutex.h>
 
 struct regulator;
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/sysctl.c
+ * linaos/net/sunrpc/sysctl.c
  *
  * Sysctl interface to sunrpc module.
  *
@@ -8,18 +8,18 @@
  * impossible at the moment.
  */
 
-#include <linux/types.h>
-#include <linux/linkage.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/linkage.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/sysctl.h>
+#include <linaos/module.h>
 
-#include <linux/uaccess.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <linaos/uaccess.h>
+#include <linaos/sunrpc/types.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/svc_xprt.h>
 
 #include "netns.h"
 

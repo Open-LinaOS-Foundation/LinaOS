@@ -6,11 +6,11 @@
  * Copyright (C) 2008 Analog Devices, Inc
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/atomic.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/atomic.h>
 
 #include "u_uac1_legacy.h"
 

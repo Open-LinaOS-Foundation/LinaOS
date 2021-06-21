@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _LINUX_ENERGY_MODEL_H
 #define _LINUX_ENERGY_MODEL_H
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/jump_label.h>
-#include <linux/kobject.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/cpufreq.h>
-#include <linux/sched/topology.h>
-#include <linux/types.h>
+#include <linaos/cpumask.h>
+#include <linaos/device.h>
+#include <linaos/jump_label.h>
+#include <linaos/kobject.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched/cpufreq.h>
+#include <linaos/sched/topology.h>
+#include <linaos/types.h>
 
 /**
  * em_perf_state - Performance state of a performance domain

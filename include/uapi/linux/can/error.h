@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0-only WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
- * linux/can/error.h
+ * linaos/can/error.h
  *
  * Definitions of the CAN error messages to be filtered and passed to the user.
  *

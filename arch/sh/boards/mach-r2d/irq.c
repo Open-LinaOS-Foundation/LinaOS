@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/renesas/rts7751r2d/irq.c
+ * linaos/arch/sh/boards/renesas/rts7751r2d/irq.c
  *
  * Copyright (C) 2007  Magnus Damm
  * Copyright (C) 2000  Kazumoto Kojima
@@ -10,10 +10,10 @@
  * Modified for RTS7751R2D by
  * Atom Create Engineering Co., Ltd. 2002.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 #include <mach/r2d.h>
 
 #define R2D_NR_IRL 13

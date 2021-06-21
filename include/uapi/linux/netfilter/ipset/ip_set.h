@@ -1,5 +1,5 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linaos.nu>
  *                         Patrick Schaaf <bof@bof.de>
  *                         Martin Josefsson <gandalf@wlug.westbo.se>
  * Copyright (C) 2003-2011 Jozsef Kadlecsik <kadlec@netfilter.org>
@@ -11,7 +11,7 @@
 #ifndef _UAPI_IP_SET_H
 #define _UAPI_IP_SET_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* The protocol versions */
 #define IPSET_PROTOCOL		7

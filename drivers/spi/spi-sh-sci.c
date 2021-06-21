@@ -9,14 +9,14 @@
  *   Copyright (c) 2006 Simtec Electronics
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/module.h>
 
 #include <asm/spi.h>
 #include <asm/io.h>

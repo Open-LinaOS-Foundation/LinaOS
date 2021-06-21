@@ -8,11 +8,11 @@
 #ifndef _LINUX_NFSD_NFSFH_H
 #define _LINUX_NFSD_NFSFH_H
 
-#include <linux/crc32.h>
-#include <linux/sunrpc/svc.h>
-#include <uapi/linux/nfsd/nfsfh.h>
-#include <linux/iversion.h>
-#include <linux/exportfs.h>
+#include <linaos/crc32.h>
+#include <linaos/sunrpc/svc.h>
+#include <uapi/linaos/nfsd/nfsfh.h>
+#include <linaos/iversion.h>
+#include <linaos/exportfs.h>
 
 static inline __u32 ino_t_to_u32(ino_t ino)
 {

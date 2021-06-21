@@ -9,17 +9,17 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/dmi.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

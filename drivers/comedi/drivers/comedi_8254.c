@@ -6,7 +6,7 @@
  *
  * Based on 8253.h and various subdevice implementations in comedi drivers.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -113,9 +113,9 @@
  * counters is not handled by this module. These features are driver dependent.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include "../comedidev.h"
 

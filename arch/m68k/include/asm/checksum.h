@@ -2,7 +2,7 @@
 #ifndef _M68K_CHECKSUM_H
 #define _M68K_CHECKSUM_H
 
-#include <linux/in6.h>
+#include <linaos/in6.h>
 
 #ifdef CONFIG_GENERIC_CSUM
 #include <asm-generic/checksum.h>

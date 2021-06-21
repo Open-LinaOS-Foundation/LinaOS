@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/kernel/seccomp.c
+ * linaos/kernel/seccomp.c
  *
  * Copyright 2004-2005  Andrea Arcangeli <andrea@cpushare.com>
  *
@@ -11,38 +11,38 @@
  *
  * Mode 1 uses a fixed list of allowed system calls.
  * Mode 2 allows user-defined system call filters in the form
- *        of Berkeley Packet Filters/Linux Socket Filters.
+ *        of Berkeley Packet Filters/LinaOS Socket Filters.
  */
 #define pr_fmt(fmt) "seccomp: " fmt
 
-#include <linux/refcount.h>
-#include <linux/audit.h>
-#include <linux/compat.h>
-#include <linux/coredump.h>
-#include <linux/kmemleak.h>
-#include <linux/nospec.h>
-#include <linux/prctl.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seccomp.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/sysctl.h>
+#include <linaos/refcount.h>
+#include <linaos/audit.h>
+#include <linaos/compat.h>
+#include <linaos/coredump.h>
+#include <linaos/kmemleak.h>
+#include <linaos/nospec.h>
+#include <linaos/prctl.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/seccomp.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/sysctl.h>
 
 #ifdef CONFIG_HAVE_ARCH_SECCOMP_FILTER
 #include <asm/syscall.h>
 #endif
 
 #ifdef CONFIG_SECCOMP_FILTER
-#include <linux/file.h>
-#include <linux/filter.h>
-#include <linux/pid.h>
-#include <linux/ptrace.h>
-#include <linux/capability.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
-#include <linux/anon_inodes.h>
-#include <linux/lockdep.h>
+#include <linaos/file.h>
+#include <linaos/filter.h>
+#include <linaos/pid.h>
+#include <linaos/ptrace.h>
+#include <linaos/capability.h>
+#include <linaos/tracehook.h>
+#include <linaos/uaccess.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/lockdep.h>
 
 /*
  * When SECCOMP_IOCTL_NOTIF_ID_VALID was first introduced, it had the

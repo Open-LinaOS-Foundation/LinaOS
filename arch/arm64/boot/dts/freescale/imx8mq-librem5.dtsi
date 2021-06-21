@@ -39,13 +39,13 @@
 		vol-down {
 			label = "VOL_DOWN";
 			gpios = <&gpio1 17 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 
 		vol-up {
 			label = "VOL_UP";
 			gpios = <&gpio1 16 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 	};
 
@@ -936,7 +936,7 @@
 		led_backlight: led@0 {
 			reg = <0>;
 			label = ":backlight";
-			linux,default-trigger = "backlight";
+			linaos,default-trigger = "backlight";
 			led-max-microamp = <20000>;
 		};
 	};

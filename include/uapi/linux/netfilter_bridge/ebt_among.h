@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __LINUX_BRIDGE_EBT_AMONG_H
 #define __LINUX_BRIDGE_EBT_AMONG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define EBT_AMONG_DST 0x01
 #define EBT_AMONG_SRC 0x02

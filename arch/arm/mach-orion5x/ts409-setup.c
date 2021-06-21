@@ -7,19 +7,19 @@
  * Copyright (C) 2008  Sylver Bruneau <sylver.bruneau@gmail.com>
  * Copyright (C) 2008  Martin Michlmayr <tbm@cyrius.com>
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/leds.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/serial_reg.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mv643xx_eth.h>
+#include <linaos/leds.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/i2c.h>
+#include <linaos/serial_reg.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/pci.h>

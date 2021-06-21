@@ -6,29 +6,29 @@
  *
  * Copyright (c) 2016 Andrew Lunn <andrew@lunn.ch>
  *
- * Copyright (c) 2016-2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2016-2017 Savoir-faire LinaOS Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_bridge.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_data/mv88e6xxx.h>
-#include <linux/netdevice.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phylink.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_bridge.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/jiffies.h>
+#include <linaos/list.h>
+#include <linaos/mdio.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_mdio.h>
+#include <linaos/platform_data/mv88e6xxx.h>
+#include <linaos/netdevice.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/phylink.h>
 #include <net/dsa.h>
 
 #include "chip.h"

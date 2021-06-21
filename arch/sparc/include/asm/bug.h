@@ -3,7 +3,7 @@
 #define _SPARC_BUG_H
 
 #ifdef CONFIG_BUG
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifdef CONFIG_DEBUG_BUGVERBOSE
 void do_BUG(const char *file, int line);

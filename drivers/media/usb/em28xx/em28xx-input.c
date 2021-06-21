@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 //
-// handle em28xx IR remotes via linux kernel input layer.
+// handle em28xx IR remotes via linaos kernel input layer.
 //
 // Copyright (C) 2005 Ludovico Cavedon <cavedon@sssup.it>
 //		      Markus Rechberger <mrechberger@gmail.com>
@@ -19,14 +19,14 @@
 
 #include "em28xx.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/slab.h>
-#include <linux/bitrev.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/usb/input.h>
+#include <linaos/slab.h>
+#include <linaos/bitrev.h>
 
 #define EM28XX_SNAPSHOT_KEY				KEY_CAMERA
 #define EM28XX_BUTTONS_DEBOUNCED_QUERY_INTERVAL		500 /* [ms] */

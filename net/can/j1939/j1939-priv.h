@@ -9,7 +9,7 @@
 #ifndef _J1939_PRIV_H_
 #define _J1939_PRIV_H_
 
-#include <linux/can/j1939.h>
+#include <linaos/can/j1939.h>
 #include <net/sock.h>
 
 /* Timeout to receive the abort signal over loop back. In case CAN

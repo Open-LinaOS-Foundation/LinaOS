@@ -5,10 +5,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/syscalls.h>
-#include <linux/keyctl.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/keyctl.h>
+#include <linaos/compat.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 /*

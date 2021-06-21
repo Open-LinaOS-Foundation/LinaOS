@@ -11,36 +11,36 @@
  * or riemer@riemer-nt.de: fixed the link beat detection with
  * ioctls (SIOCGMIIPHY)
  * Copyright 2006 Herbert Valerio Riedel <hvr@gnu.org>
- *  converted to use linux-2.6.x's PHY framework
+ *  converted to use linaos-2.6.x's PHY framework
  *
  * Author: MontaVista Software, Inc.
  *		ppopov@mvista.com or source@mvista.com
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
+#include <linaos/capability.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/in.h>
+#include <linaos/ioport.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/crc32.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpu.h>
+#include <linaos/io.h>
 
 #include <asm/mipsregs.h>
 #include <asm/irq.h>

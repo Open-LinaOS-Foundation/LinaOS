@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 //
 // Copyright (c) 2008 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 //
 // Simtec NOR mapping
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/partitions.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

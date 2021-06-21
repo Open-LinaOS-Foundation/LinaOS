@@ -3,51 +3,51 @@
 // Copyright 2007 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
 //
-// http://armlinux.simtec.co.uk/
+// http://armlinaos.simtec.co.uk/
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/syscore_ops.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
 
 #include <video/ili9320.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_gpio.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/mach/irq.h>
 
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 
 #include "hardware-s3c24xx.h"
 #include "regs-gpio.h"
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 #include "gpio-samsung.h"
 
 #include <asm/mach-types.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/partitions.h>
 
 #include "gpio-cfg.h"
 #include "devs.h"
 #include "cpu.h"
 #include "pm.h"
-#include <linux/platform_data/usb-s3c2410_udc.h>
+#include <linaos/platform_data/usb-s3c2410_udc.h>
 
 #include "s3c24xx.h"
 #include "s3c2412-power.h"
@@ -97,7 +97,7 @@ static struct s3c2410_uartcfg jive_uartcfgs[] = {
 static struct mtd_partition __initdata jive_imageA_nand_part[] = {
 
 #ifdef CONFIG_MACH_JIVE_SHOW_BOOTLOADER
-	/* Don't allow access to the bootloader from linux */
+	/* Don't allow access to the bootloader from linaos */
 	{
 		.name           = "uboot",
 		.offset         = 0,
@@ -155,7 +155,7 @@ static struct mtd_partition __initdata jive_imageA_nand_part[] = {
 static struct mtd_partition __initdata jive_imageB_nand_part[] = {
 
 #ifdef CONFIG_MACH_JIVE_SHOW_BOOTLOADER
-	/* Don't allow access to the bootloader from linux */
+	/* Don't allow access to the bootloader from linaos */
 	{
 		.name           = "uboot",
 		.offset         = 0,
@@ -674,7 +674,7 @@ static void __init jive_machine_init(void)
 }
 
 MACHINE_START(JIVE, "JIVE")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.init_irq	= s3c2412_init_irq,

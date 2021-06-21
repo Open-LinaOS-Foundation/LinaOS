@@ -16,8 +16,8 @@
  *
  */
 
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
 
 #include "vnic_dev.h"
 #include "vnic_devcmd.h"

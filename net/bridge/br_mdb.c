@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/err.h>
-#include <linux/igmp.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/if_ether.h>
+#include <linaos/err.h>
+#include <linaos/igmp.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/rculist.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_ether.h>
 #include <net/ip.h>
 #include <net/netlink.h>
 #include <net/switchdev.h>

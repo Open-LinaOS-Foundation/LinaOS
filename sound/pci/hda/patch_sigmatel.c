@@ -11,12 +11,12 @@
  * Copyright (c) 2004 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/hda_codec.h>

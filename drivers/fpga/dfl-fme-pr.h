@@ -6,7 +6,7 @@
  *
  * Authors:
  *   Kang Luwei <luwei.kang@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  *   Wu Hao <hao.wu@intel.com>
  *   Joseph Grecco <joe.grecco@intel.com>
  *   Enno Luebbers <enno.luebbers@intel.com>
@@ -18,7 +18,7 @@
 #ifndef __DFL_FME_PR_H
 #define __DFL_FME_PR_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 /**
  * struct dfl_fme_region - FME fpga region data structure

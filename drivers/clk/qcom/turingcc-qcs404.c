@@ -3,14 +3,14 @@
  * Copyright (c) 2019, Linaro Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
 #include <dt-bindings/clock/qcom,turingcc-qcs404.h>
 

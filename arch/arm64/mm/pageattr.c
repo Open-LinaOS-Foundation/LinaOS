@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The LinaOS Foundation. All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/cacheflush.h>
 #include <asm/set_memory.h>

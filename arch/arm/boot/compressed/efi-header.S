@@ -5,15 +5,15 @@
  *          Ard Biesheuvel <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/pe.h>
-#include <linux/sizes.h>
+#include <linaos/pe.h>
+#include <linaos/sizes.h>
 
 		.macro	__nop
 #ifdef CONFIG_EFI_STUB
 		@ This is almost but not quite a NOP, since it does clobber the
 		@ condition flags. But it is the best we can do for EFI, since
 		@ PE/COFF expects the magic string "MZ" at offset 0, while the
-		@ ARM/Linux boot protocol expects an executable instruction
+		@ ARM/LinaOS boot protocol expects an executable instruction
 		@ there.
 		.inst	MZ_MAGIC | (0x1310 << 16)	@ tstne r0, #0x4d000
 #else

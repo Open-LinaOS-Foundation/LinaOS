@@ -5,8 +5,8 @@
  * Copyright (C) 2018-2021 ARM Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/sort.h>
+#include <linaos/module.h>
+#include <linaos/sort.h>
 
 #include "common.h"
 

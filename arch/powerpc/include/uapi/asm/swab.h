@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -9,8 +9,8 @@
 #define _UAPI_ASM_POWERPC_SWAB_H
 
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 #ifdef __GNUC__
 

@@ -11,7 +11,7 @@
 #ifndef __CPU_SH7786_H__
 #define __CPU_SH7786_H__
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 enum {
 	/* PA */

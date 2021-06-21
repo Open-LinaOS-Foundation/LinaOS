@@ -1,6 +1,6 @@
 /*  $Id$
  *  1993/03/31
- *  linux/kernel/aha1740.c
+ *  linaos/kernel/aha1740.c
  *
  *  Based loosely on aha1542.c which is
  *  Copyright (C) 1992  Tommy Thorn and
@@ -37,20 +37,20 @@
  * are deemed to be part of the source code.
  */
 
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/dma-mapping.h>
-#include <linux/gfp.h>
+#include <linaos/blkdev.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/eisa.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gfp.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

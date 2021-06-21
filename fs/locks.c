@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/locks.c
+ *  linaos/fs/locks.c
  *
  *  Provide support for fcntl()'s F_GETLK, F_SETLK, and F_SETLKW calls.
  *  Doug Evans (dje@spiff.uucp), August 07, 1992
@@ -106,7 +106,7 @@
  *  Andy Walker (andy@lysaker.kvaerner.no), May 12, 1997.
  *
  *  Use slab allocator instead of kmalloc/kfree.
- *  Use generic list implementation from <linux/list.h>.
+ *  Use generic list implementation from <linaos/list.h>.
  *  Sped up posix_locks_deadlock by only considering blocked locks.
  *  Matthew Wilcox <willy@debian.org>, March, 2000.
  *
@@ -155,24 +155,24 @@
  *
  */
 
-#include <linux/capability.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/time.h>
-#include <linux/rcupdate.h>
-#include <linux/pid_namespace.h>
-#include <linux/hashtable.h>
-#include <linux/percpu.h>
+#include <linaos/capability.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/time.h>
+#include <linaos/rcupdate.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/hashtable.h>
+#include <linaos/percpu.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/filelock.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define IS_POSIX(fl)	(fl->fl_flags & FL_POSIX)
 #define IS_FLOCK(fl)	(fl->fl_flags & FL_FLOCK)
@@ -2818,8 +2818,8 @@ int vfs_cancel_lock(struct file *filp, struct file_lock *fl)
 EXPORT_SYMBOL_GPL(vfs_cancel_lock);
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 
 struct locks_iterator {
 	int	li_cpu;

@@ -21,7 +21,7 @@
  */
 
 /* Frame formats, some of these come from fourcc.org, others are
-   better explained by video4linux2. The NV11 seems to be described only
+   better explained by video4linaos2. The NV11 seems to be described only
    on MSDN pages, but even those seem to be gone now.
    Frames can come in many forms, the main categories are RAW, RGB and YUV
    (or YCbCr). The YUV frames come in 4 flavors, determined by how the U and V

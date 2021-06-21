@@ -11,7 +11,7 @@
 #ifndef __ASM_SNI_H
 #define __ASM_SNI_H
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 
 extern unsigned int sni_brd_type;
 

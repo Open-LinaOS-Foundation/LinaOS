@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 // Copyright (c) 2018 Mellanox Technologies
 
-#include <linux/hyperv.h>
+#include <linaos/hyperv.h>
 #include "mlx5_core.h"
 #include "lib/hv.h"
 #include "lib/hv_vhca.h"

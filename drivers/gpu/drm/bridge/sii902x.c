@@ -12,13 +12,13 @@
  * Copyright (C) 2010-2011 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c-mux.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/clk.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/clk.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

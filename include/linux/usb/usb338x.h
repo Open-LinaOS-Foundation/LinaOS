@@ -22,7 +22,7 @@
 #ifndef __LINUX_USB_USB338X_H
 #define __LINUX_USB_USB338X_H
 
-#include <linux/usb/net2280.h>
+#include <linaos/usb/net2280.h>
 
 /*
  * Extra defined bits for net2280 registers

@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for LinaOS.
  *
  * Copyright (c) 2003-2014 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,9 +35,9 @@
 #ifndef __CXGB4_L2T_H
 #define __CXGB4_L2T_H
 
-#include <linux/spinlock.h>
-#include <linux/if_ether.h>
-#include <linux/atomic.h>
+#include <linaos/spinlock.h>
+#include <linaos/if_ether.h>
+#include <linaos/atomic.h>
 
 #define VLAN_NONE 0xfff
 

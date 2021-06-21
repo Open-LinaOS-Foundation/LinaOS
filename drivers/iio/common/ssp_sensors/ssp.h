@@ -6,11 +6,11 @@
 #ifndef __SSP_SENSORHUB_H__
 #define __SSP_SENSORHUB_H__
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/common/ssp_sensors.h>
-#include <linux/iio/iio.h>
-#include <linux/spi/spi.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/iio/common/ssp_sensors.h>
+#include <linaos/iio/iio.h>
+#include <linaos/spi/spi.h>
 
 #define SSP_DEVICE_ID		0x55
 

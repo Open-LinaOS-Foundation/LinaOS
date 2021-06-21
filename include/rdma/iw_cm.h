@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2005 Network Appliance, Inc. All rights reserved.
  * Copyright (c) 2005 Open Grid Computing, Inc. All rights reserved.
@@ -7,7 +7,7 @@
 #ifndef IW_CM_H
 #define IW_CM_H
 
-#include <linux/in.h>
+#include <linaos/in.h>
 #include <rdma/ib_cm.h>
 
 struct iw_cm_id;

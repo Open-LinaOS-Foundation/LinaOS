@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/cpufreq/cpufreq_performance.c
+ *  linaos/drivers/cpufreq/cpufreq_performance.c
  *
- *  Copyright (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2002 - 2003 Dominik Brodowski <linaos@brodo.de>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/cpufreq.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 
 static void cpufreq_gov_performance_limits(struct cpufreq_policy *policy)
 {
@@ -37,7 +37,7 @@ struct cpufreq_governor *cpufreq_fallback_governor(void)
 }
 #endif
 
-MODULE_AUTHOR("Dominik Brodowski <linux@brodo.de>");
+MODULE_AUTHOR("Dominik Brodowski <linaos@brodo.de>");
 MODULE_DESCRIPTION("CPUfreq policy governor 'performance'");
 MODULE_LICENSE("GPL");
 

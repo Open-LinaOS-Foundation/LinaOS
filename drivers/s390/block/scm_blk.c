@@ -3,21 +3,21 @@
  * Block driver for s390 storage class memory.
  *
  * Copyright IBM Corp. 2012
- * Author(s): Sebastian Ott <sebott@linux.vnet.ibm.com>
+ * Author(s): Sebastian Ott <sebott@linaos.vnet.ibm.com>
  */
 
 #define KMSG_COMPONENT "scm_block"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/genhd.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/mempool.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/genhd.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
 #include <asm/eadm.h>
 #include "scm_blk.h"
 

@@ -6,12 +6,12 @@
  *   Copyright (C) 2009 Renesas Technology Corp.
  */
 
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/completion.h>
+#include <linaos/if_arp.h>
+#include <linaos/netdevice.h>
+#include <linaos/timer.h>
+#include <linaos/uaccess.h>
 
 static int wep_on_off;
 #define	WEP_OFF		0
@@ -23,7 +23,7 @@ static int wep_on_off;
 #include "ks_wlan_ioctl.h"
 
 /* Include Wireless Extension definition and check version */
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 #define WIRELESS_SPY	/* enable iwspy support */
 #include <net/iw_handler.h>	/* New driver API */
 
@@ -1779,7 +1779,7 @@ static int ks_wlan_set_stop_request(struct net_device *dev,
 	return 0;
 }
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 static int ks_wlan_set_mlme(struct net_device *dev,
 			    struct iw_request_info *info,
 			    union iwreq_data *dwrq, char *extra)

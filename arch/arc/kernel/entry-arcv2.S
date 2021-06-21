@@ -5,7 +5,7 @@
  * Copyright (C) 2013 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/linkage.h>   /* ARC_{EXTRY,EXIT} */
+#include <linaos/linkage.h>   /* ARC_{EXTRY,EXIT} */
 #include <asm/entry.h>       /* SAVE_ALL_{INT1,INT2,TRAP...} */
 #include <asm/errno.h>
 #include <asm/arcregs.h>
@@ -172,7 +172,7 @@ ENTRY(EV_TLBProtV)
 
 END(EV_TLBProtV)
 
-; From Linux standpoint Slow Path I/D TLB Miss is same a ProtV as they
+; From LinaOS standpoint Slow Path I/D TLB Miss is same a ProtV as they
 ; need to call do_page_fault().
 ; ECR in pt_regs provides whether access was R/W/X
 

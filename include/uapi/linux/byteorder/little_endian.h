@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_BYTEORDER_LITTLE_ENDIAN_H
 #define _UAPI_LINUX_BYTEORDER_LITTLE_ENDIAN_H
 
@@ -9,8 +9,8 @@
 #define __LITTLE_ENDIAN_BITFIELD
 #endif
 
-#include <linux/types.h>
-#include <linux/swab.h>
+#include <linaos/types.h>
+#include <linaos/swab.h>
 
 #define __constant_htonl(x) ((__force __be32)___constant_swab32((x)))
 #define __constant_ntohl(x) ___constant_swab32((__force __be32)(x))

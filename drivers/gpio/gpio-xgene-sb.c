@@ -8,12 +8,12 @@
  *		Quan Nguyen <qnguyen@apm.com>.
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/acpi.h>
 
 #include "gpiolib.h"
 #include "gpiolib-acpi.h"

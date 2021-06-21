@@ -4,10 +4,10 @@
  *
  *	Copyright (C) 2004, 2007  Maciej W. Rozycki
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 
 #include <asm/dec/prom.h>
 

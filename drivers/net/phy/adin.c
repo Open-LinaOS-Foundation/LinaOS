@@ -4,16 +4,16 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/kernel.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/property.h>
+#include <linaos/kernel.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/ethtool_netlink.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/property.h>
 
 #define PHY_ID_ADIN1200				0x0283bc20
 #define PHY_ID_ADIN1300				0x0283bc30

@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2015-2017 Russell King.
  */
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_edid.h>
 
@@ -317,7 +317,7 @@ static struct platform_driver dw_hdmi_cec_driver = {
 };
 module_platform_driver(dw_hdmi_cec_driver);
 
-MODULE_AUTHOR("Russell King <rmk+kernel@armlinux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk+kernel@armlinaos.org.uk>");
 MODULE_DESCRIPTION("Synopsys Designware HDMI CEC driver for i.MX");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS(PLATFORM_MODULE_PREFIX "dw-hdmi-cec");

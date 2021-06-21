@@ -11,7 +11,7 @@
 #ifndef _ZCRYPT_ERROR_H_
 #define _ZCRYPT_ERROR_H_
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include "zcrypt_debug.h"
 #include "zcrypt_api.h"
 #include "zcrypt_msgtype6.h"

@@ -52,7 +52,7 @@
 /*Definitions - Defines & Constants ----------------------------------------- */
 
   /* Define the operating system */
-#if (defined(__linux__))
+#if (defined(__linaos__))
 # define _DPT_LINUX
 #elif (defined(__bsdi__))
 # define _DPT_BSDI

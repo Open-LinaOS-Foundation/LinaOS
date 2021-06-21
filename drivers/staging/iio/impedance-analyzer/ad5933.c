@@ -5,22 +5,22 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/kfifo_buf.h>
+#include <linaos/iio/sysfs.h>
 
 /* AD5933/AD5934 Registers */
 #define AD5933_REG_CONTROL_HB		0x80	/* R/W, 1 byte */

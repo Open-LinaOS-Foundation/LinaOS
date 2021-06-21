@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2014-2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2014-2015, The LinaOS Foundation. All rights reserved.
  */
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
@@ -765,7 +765,7 @@
 				pinctrl-0 = <&pcie0_clkreq_default &pcie0_perst_default &pcie0_wake_default>;
 				pinctrl-1 = <&pcie0_clkreq_sleep &pcie0_perst_default &pcie0_wake_sleep>;
 
-				linux,pci-domain = <0>;
+				linaos,pci-domain = <0>;
 
 				clocks = <&gcc GCC_PCIE_0_PIPE_CLK>,
 					<&gcc GCC_PCIE_0_AUX_CLK>,
@@ -819,7 +819,7 @@
 				pinctrl-0 = <&pcie1_clkreq_default &pcie1_perst_default &pcie1_wake_default>;
 				pinctrl-1 = <&pcie1_clkreq_sleep &pcie1_perst_default &pcie1_wake_sleep>;
 
-				linux,pci-domain = <1>;
+				linaos,pci-domain = <1>;
 
 				clocks = <&gcc GCC_PCIE_1_PIPE_CLK>,
 					<&gcc GCC_PCIE_1_AUX_CLK>,
@@ -870,7 +870,7 @@
 				pinctrl-0 = <&pcie2_clkreq_default &pcie2_perst_default &pcie2_wake_default>;
 				pinctrl-1 = <&pcie2_clkreq_sleep &pcie2_perst_default &pcie2_wake_sleep >;
 
-				linux,pci-domain = <2>;
+				linaos,pci-domain = <2>;
 				clocks = <&gcc GCC_PCIE_2_PIPE_CLK>,
 					<&gcc GCC_PCIE_2_AUX_CLK>,
 					<&gcc GCC_PCIE_2_CFG_AHB_CLK>,

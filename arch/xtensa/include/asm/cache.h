@@ -33,7 +33,7 @@
 
 /*
  * R/O after init is actually writable, it cannot go to .rodata
- * according to vmlinux linker script.
+ * according to vmlinaos linker script.
  */
 #define __ro_after_init __read_mostly
 

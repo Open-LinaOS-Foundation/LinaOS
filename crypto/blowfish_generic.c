@@ -11,12 +11,12 @@
  * Copyright (c) Kyle McMartin <kyle@debian.org>
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
 #include <asm/unaligned.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/types.h>
 #include <crypto/blowfish.h>
 
 /*

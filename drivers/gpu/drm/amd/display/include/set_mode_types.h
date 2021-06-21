@@ -27,7 +27,7 @@
 #define __DAL_SET_MODE_TYPES_H__
 
 #include "dc_types.h"
-#include <linux/hdmi.h>
+#include <linaos/hdmi.h>
 
 /* Info frame packet status */
 enum info_frame_flag {

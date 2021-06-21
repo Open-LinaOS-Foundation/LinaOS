@@ -11,7 +11,7 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/of_platform.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mach/arch.h>
 

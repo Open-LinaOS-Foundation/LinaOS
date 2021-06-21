@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  it87.c - Part of lm_sensors, Linux kernel modules for hardware
+ *  it87.c - Part of lm_sensors, LinaOS kernel modules for hardware
  *           monitoring.
  *
  *  The IT8705F is an LPC-based Super I/O part that contains UARTs, a
@@ -42,22 +42,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/string.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/bitops.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
+#include <linaos/string.h>
+#include <linaos/dmi.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 
 #define DRVNAME "it87"
 

@@ -3,22 +3,22 @@
  * Generic Counter interface
  * Copyright (C) 2018 William Breathitt Gray
  */
-#include <linux/counter.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linaos/counter.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/gfp.h>
+#include <linaos/idr.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
 
 const char *const counter_count_direction_str[2] = {
 	[COUNTER_COUNT_DIRECTION_FORWARD] = "forward",

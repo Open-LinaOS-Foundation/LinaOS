@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 struct tegra_aconnect {
 	struct clk	*ape_clk;

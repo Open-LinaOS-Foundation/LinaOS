@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/fs.h>
-#include <linux/path.h>
-#include <linux/slab.h>
-#include <linux/fs_struct.h>
+#include <linaos/export.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/fs.h>
+#include <linaos/path.h>
+#include <linaos/slab.h>
+#include <linaos/fs_struct.h>
 #include "internal.h"
 
 /*

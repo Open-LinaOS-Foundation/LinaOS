@@ -7,8 +7,8 @@
  * Copyright (C) 2010 NXP Semiconductors
  */
 
-#include <linux/init.h>
-#include <linux/soc/nxp/lpc32xx-misc.h>
+#include <linaos/init.h>
+#include <linaos/soc/nxp/lpc32xx-misc.h>
 
 #include <asm/mach/map.h>
 #include <asm/system_info.h>

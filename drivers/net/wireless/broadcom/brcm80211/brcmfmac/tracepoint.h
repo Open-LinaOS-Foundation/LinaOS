@@ -5,8 +5,8 @@
 #if !defined(BRCMF_TRACEPOINT_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define BRCMF_TRACEPOINT_H_
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linaos/types.h>
+#include <linaos/tracepoint.h>
 
 #ifndef CONFIG_BRCM_TRACING
 

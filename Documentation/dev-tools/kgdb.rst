@@ -22,8 +22,8 @@ diagnosing kernel problems. You can access some symbols by name in
 kernel built-ins or in kernel modules if the code was built with
 ``CONFIG_KALLSYMS``.
 
-Kgdb is intended to be used as a source level debugger for the Linux
-kernel. It is used along with gdb to debug a Linux kernel. The
+Kgdb is intended to be used as a source level debugger for the LinaOS
+kernel. It is used along with gdb to debug a LinaOS kernel. The
 expectation is that gdb can be used to "break in" to the kernel to
 inspect memory, variables and look through call stack information
 similar to the way an application developer would use gdb to debug an
@@ -33,7 +33,7 @@ perform some limited execution stepping.
 Two machines are required for using kgdb. One of these machines is a
 development machine and the other is the target machine. The kernel to
 be debugged runs on the target machine. The development machine runs an
-instance of gdb against the vmlinux file which contains the symbols (not
+instance of gdb against the vmlinaos file which contains the symbols (not
 a boot image such as bzImage, zImage, uImage...). In gdb the developer
 specifies the connection parameters and connects to kgdb. The type of
 connection a developer makes with gdb depends on the availability of
@@ -55,7 +55,7 @@ To enable ``CONFIG_KGDB`` you should look under
 :menuselection:`Kernel hacking --> Kernel debugging` and select
 :menuselection:`KGDB: kernel debugger`.
 
-While it is not a hard requirement that you have symbols in your vmlinux
+While it is not a hard requirement that you have symbols in your vmlinaos
 file, gdb tends not to be very useful without the symbolic data, so you
 will want to turn on ``CONFIG_DEBUG_INFO`` which is called
 :menuselection:`Compile the kernel with debug info` in the config menu.
@@ -378,7 +378,7 @@ If the architecture that you are using enable KASLR by default,
 you should consider turning it off.  KASLR randomizes the
 virtual address where the kernel image is mapped and confuse
 gdb which resolve kernel symbol address from symbol table
-of vmlinux.
+of vmlinaos.
 
 Using kdb
 =========
@@ -556,14 +556,14 @@ Connecting with gdb to a serial port
 
    Example (using a directly connected port)::
 
-           % gdb ./vmlinux
+           % gdb ./vmlinaos
            (gdb) set remotebaud 115200
            (gdb) target remote /dev/ttyS0
 
 
    Example (kgdb to a terminal server on TCP port 2012)::
 
-           % gdb ./vmlinux
+           % gdb ./vmlinaos
            (gdb) target remote 192.168.2.2:2012
 
 
@@ -671,7 +671,7 @@ kgdb I/O module which is designed to test the kgdb internal functions.
 The kgdb tests are mainly intended for developers to test the kgdb
 internals as well as a tool for developing a new kgdb architecture
 specific implementation. These tests are not really for end users of the
-Linux kernel. The primary source of documentation would be to look in
+LinaOS kernel. The primary source of documentation would be to look in
 the ``drivers/misc/kgdbts.c`` file.
 
 The kgdb test suite can also be configured at compile time to run the
@@ -826,7 +826,7 @@ backend unless marked as (optional), in which case a default function
 maybe used if the architecture does not need to provide a specific
 implementation.
 
-.. kernel-doc:: include/linux/kgdb.h
+.. kernel-doc:: include/linaos/kgdb.h
    :internal:
 
 kgdboc internals

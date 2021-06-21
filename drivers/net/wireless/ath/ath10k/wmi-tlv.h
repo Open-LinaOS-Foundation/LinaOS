@@ -2,12 +2,12 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 #ifndef _WMI_TLV_H
 #define _WMI_TLV_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define WMI_TLV_CMD(grp_id) (((grp_id) << 12) | 0x1)
 #define WMI_TLV_EV(grp_id) (((grp_id) << 12) | 0x1)

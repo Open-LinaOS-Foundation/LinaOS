@@ -3,7 +3,7 @@
 /* Ported by David Woodhouse, Axiom (Cambridge) Ltd.                         */
 /* dwmw2@infradead.org 30/8/98                                               */
 /* $Id: ac.c,v 1.30 2000/03/22 16:03:57 dwmw2 Exp $			     */
-/* This module is for Linux 2.1 and 2.2 series kernels.                      */
+/* This module is for LinaOS 2.1 and 2.2 series kernels.                      */
 /*****************************************************************************/
 /* J PAGET 18/02/94 passage V2.4.2 ioctl avec code 2 reset to les interrupt  */
 /* ceci pour reseter correctement apres une sortie sauvage                   */
@@ -21,22 +21,22 @@
 /*****************************************************************************/
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/miscdevice.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/nospec.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/mutex.h>
+#include <linaos/miscdevice.h>
+#include <linaos/pci.h>
+#include <linaos/wait.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/nospec.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "applicom.h"
 

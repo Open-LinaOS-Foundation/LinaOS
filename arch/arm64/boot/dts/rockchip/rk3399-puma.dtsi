@@ -20,7 +20,7 @@
 		module_led: led-0 {
 			label = "module_led";
 			gpios = <&gpio2 RK_PD1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			panic-indicator;
 		};
 	};

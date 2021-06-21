@@ -8,9 +8,9 @@
 #ifndef _LINUX_NFS_H
 #define _LINUX_NFS_H
 
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/string.h>
-#include <uapi/linux/nfs.h>
+#include <linaos/sunrpc/msg_prot.h>
+#include <linaos/string.h>
+#include <uapi/linaos/nfs.h>
 
 /*
  * This is the kernel NFS client file handle representation

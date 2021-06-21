@@ -479,7 +479,7 @@ static unsigned int vfs_dent_type(uint8_t type)
 
 /*
  * The classical Unix view for directory is that it is a linear array of
- * (name, inode number) entries. Linux/VFS assumes this model as well.
+ * (name, inode number) entries. LinaOS/VFS assumes this model as well.
  * Particularly, 'readdir()' call wants us to return a directory entry offset
  * which later may be used to continue 'readdir()'ing the directory or to
  * 'seek()' to that specific direntry. Obviously UBIFS does not really fit this

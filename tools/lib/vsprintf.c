@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <sys/types.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <stdio.h>
 
 int vscnprintf(char *buf, size_t size, const char *fmt, va_list args)

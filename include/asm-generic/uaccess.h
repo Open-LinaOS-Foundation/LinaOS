@@ -7,7 +7,7 @@
  * on any machine that has kernel and user data in the same
  * address space, e.g. all NOMMU machines.
  */
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #ifdef CONFIG_UACCESS_MEMCPY
 #include <asm/unaligned.h>

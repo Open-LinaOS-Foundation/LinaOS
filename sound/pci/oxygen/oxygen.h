@@ -2,10 +2,10 @@
 #ifndef OXYGEN_H_INCLUDED
 #define OXYGEN_H_INCLUDED
 
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 #include "oxygen_regs.h"
 
 /* 1 << PCM_x == OXYGEN_CHANNEL_x */

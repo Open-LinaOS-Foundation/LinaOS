@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/hardirq.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/kthread.h>
-#include <linux/kfifo.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/hardirq.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_arp.h>
+#include <linaos/kthread.h>
+#include <linaos/kfifo.h>
 #include <net/cfg80211.h>
 
 #include "mesh.h"

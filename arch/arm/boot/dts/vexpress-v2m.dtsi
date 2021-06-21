@@ -331,49 +331,49 @@
 				user1 {
 					label = "v2m:green:user1";
 					gpios = <&v2m_led_gpios 0 0>;
-					linux,default-trigger = "heartbeat";
+					linaos,default-trigger = "heartbeat";
 				};
 
 				user2 {
 					label = "v2m:green:user2";
 					gpios = <&v2m_led_gpios 1 0>;
-					linux,default-trigger = "mmc0";
+					linaos,default-trigger = "mmc0";
 				};
 
 				user3 {
 					label = "v2m:green:user3";
 					gpios = <&v2m_led_gpios 2 0>;
-					linux,default-trigger = "cpu0";
+					linaos,default-trigger = "cpu0";
 				};
 
 				user4 {
 					label = "v2m:green:user4";
 					gpios = <&v2m_led_gpios 3 0>;
-					linux,default-trigger = "cpu1";
+					linaos,default-trigger = "cpu1";
 				};
 
 				user5 {
 					label = "v2m:green:user5";
 					gpios = <&v2m_led_gpios 4 0>;
-					linux,default-trigger = "cpu2";
+					linaos,default-trigger = "cpu2";
 				};
 
 				user6 {
 					label = "v2m:green:user6";
 					gpios = <&v2m_led_gpios 5 0>;
-					linux,default-trigger = "cpu3";
+					linaos,default-trigger = "cpu3";
 				};
 
 				user7 {
 					label = "v2m:green:user7";
 					gpios = <&v2m_led_gpios 6 0>;
-					linux,default-trigger = "cpu4";
+					linaos,default-trigger = "cpu4";
 				};
 
 				user8 {
 					label = "v2m:green:user8";
 					gpios = <&v2m_led_gpios 7 0>;
-					linux,default-trigger = "cpu5";
+					linaos,default-trigger = "cpu5";
 				};
 			};
 

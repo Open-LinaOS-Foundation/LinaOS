@@ -6,13 +6,13 @@
  * Copyright (C) 2006 Lennert Buytenhek <buytenh@wantstofly.org>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <asm/thread_notify.h>
 

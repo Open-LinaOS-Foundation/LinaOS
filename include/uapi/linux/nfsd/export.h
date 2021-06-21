@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * include/linux/nfsd/export.h
+ * include/linaos/nfsd/export.h
  * 
  * Public declarations for NFS exports. The definitions for the
  * syscall interface are in nfsctl.h
@@ -11,7 +11,7 @@
 #ifndef _UAPINFSD_EXPORT_H
 #define _UAPINFSD_EXPORT_H
 
-# include <linux/types.h>
+# include <linaos/types.h>
 
 /*
  * Important limits for the exports stuff.

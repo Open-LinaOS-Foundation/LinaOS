@@ -5,16 +5,16 @@
  * Copyright (C) 2012, 2014 Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
 
 /* Register definitions from datasheet */
 #define REG_TSTHRCATA	0xE2

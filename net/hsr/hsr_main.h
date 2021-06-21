@@ -10,10 +10,10 @@
 #ifndef __HSR_PRIVATE_H
 #define __HSR_PRIVATE_H
 
-#include <linux/netdevice.h>
-#include <linux/list.h>
-#include <linux/if_vlan.h>
-#include <linux/if_hsr.h>
+#include <linaos/netdevice.h>
+#include <linaos/list.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_hsr.h>
 
 /* Time constants as specified in the HSR specification (IEC-62439-3 2010)
  * Table 8.

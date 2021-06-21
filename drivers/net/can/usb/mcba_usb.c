@@ -7,15 +7,15 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/led.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/led.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/signal.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 /* vendor and product id */
 #define MCBA_MODULE_NAME "mcba_usb"

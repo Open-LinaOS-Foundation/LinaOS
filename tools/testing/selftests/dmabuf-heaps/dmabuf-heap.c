@@ -12,10 +12,10 @@
 #include <sys/mman.h>
 #include <sys/types.h>
 
-#include <linux/dma-buf.h>
+#include <linaos/dma-buf.h>
 #include <drm/drm.h>
 
-#include "../../../../include/uapi/linux/dma-heap.h"
+#include "../../../../include/uapi/linaos/dma-heap.h"
 
 #define DEVPATH "/dev/dma_heap"
 

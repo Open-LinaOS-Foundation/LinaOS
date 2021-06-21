@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/cpu.h>
 
-#include <linux/jump_label.h>
-#include <linux/memory.h>
+#include <linaos/jump_label.h>
+#include <linaos/memory.h>
 
 #include <asm/cacheflush.h>
 

@@ -2,11 +2,11 @@
 /* Copyright(c) 2014 - 2020 Intel Corporation */
 #ifndef ADF_ACCEL_DEVICES_H_
 #define ADF_ACCEL_DEVICES_H_
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/ratelimit.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/ratelimit.h>
 #include "adf_cfg_common.h"
 
 #define ADF_DH895XCC_DEVICE_NAME "dh895xcc"

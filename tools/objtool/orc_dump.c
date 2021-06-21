@@ -4,7 +4,7 @@
  */
 
 #include <unistd.h>
-#include <linux/objtool.h>
+#include <linaos/objtool.h>
 #include <asm/orc_types.h>
 #include <objtool/objtool.h>
 #include <objtool/warn.h>

@@ -4,8 +4,8 @@
 #ifndef NFP_BPF_FW_H
 #define NFP_BPF_FW_H 1
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
 #include "../ccm.h"
 
 /* Kernel's enum bpf_reg_type is not uABI so people may change it breaking

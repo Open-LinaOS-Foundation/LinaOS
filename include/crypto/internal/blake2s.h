@@ -9,7 +9,7 @@
 
 #include <crypto/blake2s.h>
 #include <crypto/internal/hash.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 void blake2s_compress_generic(struct blake2s_state *state,const u8 *block,
 			      size_t nblocks, const u32 inc);

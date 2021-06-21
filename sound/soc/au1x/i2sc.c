@@ -7,10 +7,10 @@
  * Note: clock supplied to the I2S controller must be 256x samplerate.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

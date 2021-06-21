@@ -5,24 +5,24 @@
  * Author: Dmitry Osipenko <digetx@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/debugfs.h>
-#include <linux/devfreq.h>
-#include <linux/err.h>
-#include <linux/interconnect-provider.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/clk/tegra.h>
+#include <linaos/debugfs.h>
+#include <linaos/devfreq.h>
+#include <linaos/err.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
+#include <linaos/slab.h>
+#include <linaos/sort.h>
+#include <linaos/types.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

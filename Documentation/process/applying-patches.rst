@@ -1,6 +1,6 @@
 .. _applying_patches:
 
-Applying Patches To The Linux Kernel
+Applying Patches To The LinaOS Kernel
 ++++++++++++++++++++++++++++++++++++
 
 Original by:
@@ -11,7 +11,7 @@ Original by:
    This document is obsolete.  In most cases, rather than using ``patch``
    manually, you'll almost certainly want to look at using Git instead.
 
-A frequently asked question on the Linux Kernel Mailing List is how to apply
+A frequently asked question on the LinaOS Kernel Mailing List is how to apply
 a patch to the kernel or, more specifically, what base kernel a patch for
 one of the many trees/branches should be applied to. Hopefully this document
 will explain this to you.
@@ -40,7 +40,7 @@ How do I apply or revert a patch?
 You apply a patch with the ``patch`` program. The patch program reads a diff
 (or patch) file and makes the changes to the source tree described in it.
 
-Patches for the Linux kernel are generated relative to the parent directory
+Patches for the LinaOS kernel are generated relative to the parent directory
 holding the kernel source dir.
 
 This means that paths to files inside the patch file contain the name of the
@@ -67,7 +67,7 @@ You can revert (undo) it like this::
 How do I feed a patch/diff file to ``patch``?
 =============================================
 
-This (as usual with Linux and other UNIX like operating systems) can be
+This (as usual with LinaOS and other UNIX like operating systems) can be
 done in several different ways.
 
 In all the examples below I feed the file (in uncompressed form) to patch
@@ -247,7 +247,7 @@ specific homes.
 
 The 5.x.y (-stable) and 5.x patches live at
 
-	https://www.kernel.org/pub/linux/kernel/v5.x/
+	https://www.kernel.org/pub/linaos/kernel/v5.x/
 
 The -rc patches are not stored on the webserver but are generated on
 demand from git tags such as
@@ -256,7 +256,7 @@ demand from git tags such as
 
 The stable -rc patches live at
 
-	https://www.kernel.org/pub/linux/kernel/v5.x/stable-review/
+	https://www.kernel.org/pub/linaos/kernel/v5.x/stable-review/
 
 
 The 5.x kernels
@@ -279,19 +279,19 @@ Here are some examples::
 
 	# moving from 5.6 to 5.7
 
-	$ cd ~/linux-5.6		# change to kernel source dir
+	$ cd ~/linaos-5.6		# change to kernel source dir
 	$ patch -p1 < ../patch-5.7	# apply the 5.7 patch
 	$ cd ..
-	$ mv linux-5.6 linux-5.7	# rename source dir
+	$ mv linaos-5.6 linaos-5.7	# rename source dir
 
 	# moving from 5.6.1 to 5.7
 
-	$ cd ~/linux-5.6.1		# change to kernel source dir
+	$ cd ~/linaos-5.6.1		# change to kernel source dir
 	$ patch -p1 -R < ../patch-5.6.1	# revert the 5.6.1 patch
 					# source dir is now 5.6
 	$ patch -p1 < ../patch-5.7	# apply new 5.7 patch
 	$ cd ..
-	$ mv linux-5.6.1 linux-5.7	# rename source dir
+	$ mv linaos-5.6.1 linaos-5.7	# rename source dir
 
 
 The 5.x.y kernels
@@ -313,7 +313,7 @@ the current stable kernel.
  The -stable team usually do make incremental patches available as well
  as patches against the latest mainline release, but I only cover the
  non-incremental ones below. The incremental ones can be found at
- https://www.kernel.org/pub/linux/kernel/v5.x/incr/
+ https://www.kernel.org/pub/linaos/kernel/v5.x/incr/
 
 These patches are not incremental, meaning that for example the 5.7.3
 patch does not apply on top of the 5.7.2 kernel source, but rather on top
@@ -325,11 +325,11 @@ base 5.7 kernel source) and then apply the new 5.7.3 patch.
 
 Here's a small example::
 
-	$ cd ~/linux-5.7.2		# change to the kernel source dir
+	$ cd ~/linaos-5.7.2		# change to the kernel source dir
 	$ patch -p1 -R < ../patch-5.7.2	# revert the 5.7.2 patch
 	$ patch -p1 < ../patch-5.7.3	# apply the new 5.7.3 patch
 	$ cd ..
-	$ mv linux-5.7.2 linux-5.7.3	# rename the kernel source dir
+	$ mv linaos-5.7.2 linaos-5.7.3	# rename the kernel source dir
 
 The -rc kernels
 ===============
@@ -360,37 +360,37 @@ Here are 3 examples of how to apply these patches::
 
 	# first an example of moving from 5.7 to 5.8-rc3
 
-	$ cd ~/linux-5.7			# change to the 5.7 source dir
+	$ cd ~/linaos-5.7			# change to the 5.7 source dir
 	$ patch -p1 < ../patch-5.8-rc3		# apply the 5.8-rc3 patch
 	$ cd ..
-	$ mv linux-5.7 linux-5.8-rc3		# rename the source dir
+	$ mv linaos-5.7 linaos-5.8-rc3		# rename the source dir
 
 	# now let's move from 5.8-rc3 to 5.8-rc5
 
-	$ cd ~/linux-5.8-rc3			# change to the 5.8-rc3 dir
+	$ cd ~/linaos-5.8-rc3			# change to the 5.8-rc3 dir
 	$ patch -p1 -R < ../patch-5.8-rc3	# revert the 5.8-rc3 patch
 	$ patch -p1 < ../patch-5.8-rc5		# apply the new 5.8-rc5 patch
 	$ cd ..
-	$ mv linux-5.8-rc3 linux-5.8-rc5	# rename the source dir
+	$ mv linaos-5.8-rc3 linaos-5.8-rc5	# rename the source dir
 
 	# finally let's try and move from 5.7.3 to 5.8-rc5
 
-	$ cd ~/linux-5.7.3			# change to the kernel source dir
+	$ cd ~/linaos-5.7.3			# change to the kernel source dir
 	$ patch -p1 -R < ../patch-5.7.3		# revert the 5.7.3 patch
 	$ patch -p1 < ../patch-5.8-rc5		# apply new 5.8-rc5 patch
 	$ cd ..
-	$ mv linux-5.7.3 linux-5.8-rc5		# rename the kernel source dir
+	$ mv linaos-5.7.3 linaos-5.8-rc5		# rename the kernel source dir
 
 
-The -mm patches and the linux-next tree
+The -mm patches and the linaos-next tree
 =======================================
 
 The -mm patches are experimental patches released by Andrew Morton.
 
 In the past, -mm tree were used to also test subsystem patches, but this
 function is now done via the
-`linux-next <https://www.kernel.org/doc/man-pages/linux-next.html>`
-tree. The Subsystem maintainers push their patches first to linux-next,
+`linaos-next <https://www.kernel.org/doc/man-pages/linaos-next.html>`
+tree. The Subsystem maintainers push their patches first to linaos-next,
 and, during the merge window, sends them directly to Linus.
 
 The -mm patches serve as a sort of proving ground for new features and other
@@ -398,7 +398,7 @@ experimental patches that aren't merged via a subsystem tree.
 Once such patches has proved its worth in -mm for a while Andrew pushes
 it on to Linus for inclusion in mainline.
 
-The linux-next tree is daily updated, and includes the -mm patches.
+The linaos-next tree is daily updated, and includes the -mm patches.
 Both are in constant flux and contains many experimental features, a
 lot of debugging patches not appropriate for mainline etc., and is the most
 experimental of the branches described in this document.
@@ -406,14 +406,14 @@ experimental of the branches described in this document.
 These patches are not appropriate for use on systems that are supposed to be
 stable and they are more risky to run than any of the other branches (make
 sure you have up-to-date backups -- that goes for any experimental kernel but
-even more so for -mm patches or using a Kernel from the linux-next tree).
+even more so for -mm patches or using a Kernel from the linaos-next tree).
 
-Testing of -mm patches and linux-next is greatly appreciated since the whole
+Testing of -mm patches and linaos-next is greatly appreciated since the whole
 point of those are to weed out regressions, crashes, data corruption bugs,
 build breakage (and any other bug in general) before changes are merged into
 the more stable mainline Linus tree.
 
-But testers of -mm and linux-next should be aware that breakages are
+But testers of -mm and linaos-next should be aware that breakages are
 more common than in any other tree.
 
 

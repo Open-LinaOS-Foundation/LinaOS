@@ -5,24 +5,24 @@
  * Author: Boris BREZILLON <b.brezillon@overkiz.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 #include <soc/at91/atmel_tcb.h>
 
 #define NPWM	2

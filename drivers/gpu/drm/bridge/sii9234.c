@@ -17,17 +17,17 @@
 #include <drm/drm_crtc.h>
 #include <drm/drm_edid.h>
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 
 #define CBUS_DEVCAP_OFFSET		0x80
 

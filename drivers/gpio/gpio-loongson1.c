@@ -8,10 +8,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitops.h>
 
 /* Loongson 1 GPIO Register Definitions */
 #define GPIO_CFG		0x0

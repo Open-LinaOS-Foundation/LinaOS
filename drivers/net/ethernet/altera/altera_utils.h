@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Altera TSE SGDMA and MSGDMA Linux driver
+/* Altera TSE SGDMA and MSGDMA LinaOS driver
  * Copyright (C) 2014 Altera Corporation. All rights reserved
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #ifndef __ALTERA_UTILS_H__
 #define __ALTERA_UTILS_H__

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/mm/slab.c
+ * linaos/mm/slab.c
  * Written by Mark Hemment, 1996/97.
  * (markhe@nextd.demon.co.uk)
  *
@@ -87,37 +87,37 @@
  *	All object allocations for a node occur from node specific slab lists.
  */
 
-#include	<linux/slab.h>
-#include	<linux/mm.h>
-#include	<linux/poison.h>
-#include	<linux/swap.h>
-#include	<linux/cache.h>
-#include	<linux/interrupt.h>
-#include	<linux/init.h>
-#include	<linux/compiler.h>
-#include	<linux/cpuset.h>
-#include	<linux/proc_fs.h>
-#include	<linux/seq_file.h>
-#include	<linux/notifier.h>
-#include	<linux/kallsyms.h>
-#include	<linux/kfence.h>
-#include	<linux/cpu.h>
-#include	<linux/sysctl.h>
-#include	<linux/module.h>
-#include	<linux/rcupdate.h>
-#include	<linux/string.h>
-#include	<linux/uaccess.h>
-#include	<linux/nodemask.h>
-#include	<linux/kmemleak.h>
-#include	<linux/mempolicy.h>
-#include	<linux/mutex.h>
-#include	<linux/fault-inject.h>
-#include	<linux/rtmutex.h>
-#include	<linux/reciprocal_div.h>
-#include	<linux/debugobjects.h>
-#include	<linux/memory.h>
-#include	<linux/prefetch.h>
-#include	<linux/sched/task_stack.h>
+#include	<linaos/slab.h>
+#include	<linaos/mm.h>
+#include	<linaos/poison.h>
+#include	<linaos/swap.h>
+#include	<linaos/cache.h>
+#include	<linaos/interrupt.h>
+#include	<linaos/init.h>
+#include	<linaos/compiler.h>
+#include	<linaos/cpuset.h>
+#include	<linaos/proc_fs.h>
+#include	<linaos/seq_file.h>
+#include	<linaos/notifier.h>
+#include	<linaos/kallsyms.h>
+#include	<linaos/kfence.h>
+#include	<linaos/cpu.h>
+#include	<linaos/sysctl.h>
+#include	<linaos/module.h>
+#include	<linaos/rcupdate.h>
+#include	<linaos/string.h>
+#include	<linaos/uaccess.h>
+#include	<linaos/nodemask.h>
+#include	<linaos/kmemleak.h>
+#include	<linaos/mempolicy.h>
+#include	<linaos/mutex.h>
+#include	<linaos/fault-inject.h>
+#include	<linaos/rtmutex.h>
+#include	<linaos/reciprocal_div.h>
+#include	<linaos/debugobjects.h>
+#include	<linaos/memory.h>
+#include	<linaos/prefetch.h>
+#include	<linaos/sched/task_stack.h>
 
 #include	<net/sock.h>
 

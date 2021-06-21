@@ -6,17 +6,17 @@
  * Author: Srinivas Kandagatla <srinivas.kandagatla@linaro.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_runtime.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
 #include <dt-bindings/clock/qcom,sm8250-lpass-audiocc.h>
 #include <dt-bindings/clock/qcom,sm8250-lpass-aoncc.h>
 

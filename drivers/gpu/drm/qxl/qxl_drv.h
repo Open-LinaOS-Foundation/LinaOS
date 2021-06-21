@@ -30,11 +30,11 @@
  * Definitions taken from spice-protocol, plus kernel driver specific bits.
  */
 
-#include <linux/dma-buf-map.h>
-#include <linux/dma-fence.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/dma-fence.h>
+#include <linaos/firmware.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_encoder.h>

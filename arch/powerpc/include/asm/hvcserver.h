@@ -10,7 +10,7 @@
 #define _PPC64_HVCSERVER_H
 #ifdef __KERNEL__
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 /* Converged Location Code length */
 #define HVCS_CLC_LENGTH	79
@@ -26,7 +26,7 @@
  *
  * This structure outlines the format that partner info is presented to a caller
  * of the hvcs partner info fetching functions.  These are strung together into
- * a list using linux kernel lists.
+ * a list using linaos kernel lists.
  */
 struct hvcs_partner_info {
 	struct list_head node;

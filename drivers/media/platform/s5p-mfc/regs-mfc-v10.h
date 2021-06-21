@@ -11,7 +11,7 @@
 #ifndef _REGS_MFC_V10_H
 #define _REGS_MFC_V10_H
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include "regs-mfc-v8.h"
 
 /* MFCv10 register definitions*/

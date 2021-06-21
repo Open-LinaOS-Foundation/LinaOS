@@ -7,7 +7,7 @@
 #include "annotate.h"
 #include "ordered-events.h"
 #include "record.h"
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <stddef.h>
 #include <stdbool.h>
 #include <sys/ioctl.h>
@@ -34,7 +34,7 @@ struct perf_top {
 	int		   max_stack;
 	bool		   hide_kernel_symbols, hide_user_symbols, zero;
 	bool		   use_tui, use_stdio;
-	bool		   vmlinux_warned;
+	bool		   vmlinaos_warned;
 	bool		   dump_symtab;
 	bool		   stitch_lbr;
 	struct hist_entry  *sym_filter_entry;

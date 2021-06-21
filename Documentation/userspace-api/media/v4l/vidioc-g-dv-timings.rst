@@ -56,7 +56,7 @@ Calling ``VIDIOC_SUBDEV_S_DV_TIMINGS`` on a subdev device node that has been
 registered in read-only mode is not allowed. An error is returned and the errno
 variable is set to ``-EPERM``.
 
-The ``linux/v4l2-dv-timings.h`` header can be used to get the timings of
+The ``linaos/v4l2-dv-timings.h`` header can be used to get the timings of
 the formats in the :ref:`cea861` and :ref:`vesadmt` standards. If
 the current input or output does not support DV timings (e.g. if
 :ref:`VIDIOC_ENUMINPUT` does not set the

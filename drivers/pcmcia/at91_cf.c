@@ -5,22 +5,22 @@
  * Copyright (C) 2005 David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-mc.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
+#include <linaos/sizes.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/atmel-mc.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
 
 #include <pcmcia/ss.h>
 

@@ -9,8 +9,8 @@
  * Authors:	See the TCP sources
  */
 
-#include <linux/module.h>
-#include <linux/jhash.h>
+#include <linaos/module.h>
+#include <linaos/jhash.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_hashtables.h>

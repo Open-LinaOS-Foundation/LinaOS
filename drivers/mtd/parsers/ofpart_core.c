@@ -9,12 +9,12 @@
  *   Copyright © 2007 David Gibson, IBM Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/slab.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/partitions.h>
 
 #include "ofpart_bcm4908.h"
 #include "ofpart_linksys_ns.h"

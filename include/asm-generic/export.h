@@ -59,7 +59,7 @@ __kstrtab_\name:
 
 #if defined(CONFIG_TRIM_UNUSED_KSYMS)
 
-#include <linux/kconfig.h>
+#include <linaos/kconfig.h>
 #include <generated/autoksyms.h>
 
 .macro __ksym_marker sym

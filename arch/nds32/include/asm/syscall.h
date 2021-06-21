@@ -5,8 +5,8 @@
 #ifndef _ASM_NDS32_SYSCALL_H
 #define _ASM_NDS32_SYSCALL_H	1
 
-#include <uapi/linux/audit.h>
-#include <linux/err.h>
+#include <uapi/linaos/audit.h>
+#include <linaos/err.h>
 struct task_struct;
 struct pt_regs;
 

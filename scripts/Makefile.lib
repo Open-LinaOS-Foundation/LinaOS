@@ -207,7 +207,7 @@ modkern_aflags = $(if $(part-of-module),				\
 			$(KBUILD_AFLAGS_KERNEL) $(AFLAGS_KERNEL))
 
 c_flags        = -Wp,-MMD,$(depfile) $(NOSTDINC_FLAGS) $(LINUXINCLUDE)     \
-		 -include $(srctree)/include/linux/compiler_types.h       \
+		 -include $(srctree)/include/linaos/compiler_types.h       \
 		 $(_c_flags) $(modkern_cflags)                           \
 		 $(basename_flags) $(modname_flags)
 
@@ -328,7 +328,7 @@ DTC_FLAGS += $(if $(filter $(patsubst $(obj)/%,%,$@), $(base-dtb-y)), -@)
 quiet_cmd_dt_S_dtb= DTB     $@
 cmd_dt_S_dtb=						\
 {							\
-	echo '\#include <asm-generic/vmlinux.lds.h>'; 	\
+	echo '\#include <asm-generic/vmlinaos.lds.h>'; 	\
 	echo '.section .dtb.init.rodata,"a"';		\
 	echo '.balign STRUCT_ALIGNMENT';		\
 	echo '.global __dtb_$(subst -,_,$(*F))_begin';	\
@@ -430,10 +430,10 @@ UIMAGE_OPTS-y ?=
 UIMAGE_TYPE ?= kernel
 UIMAGE_LOADADDR ?= arch_must_set_this
 UIMAGE_ENTRYADDR ?= $(UIMAGE_LOADADDR)
-UIMAGE_NAME ?= 'Linux-$(KERNELRELEASE)'
+UIMAGE_NAME ?= 'LinaOS-$(KERNELRELEASE)'
 
 quiet_cmd_uimage = UIMAGE  $@
-      cmd_uimage = $(BASH) $(MKIMAGE) -A $(UIMAGE_ARCH) -O linux \
+      cmd_uimage = $(BASH) $(MKIMAGE) -A $(UIMAGE_ARCH) -O linaos \
 			-C $(UIMAGE_COMPRESSION) $(UIMAGE_OPTS-y) \
 			-T $(UIMAGE_TYPE) \
 			-a $(UIMAGE_LOADADDR) -e $(UIMAGE_ENTRYADDR) \

@@ -6,27 +6,27 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/bug.h>
-#include <linux/context_tracking.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sizes.h>
-#include <linux/syscalls.h>
-#include <linux/mm_types.h>
-#include <linux/kasan.h>
+#include <linaos/bug.h>
+#include <linaos/context_tracking.h>
+#include <linaos/signal.h>
+#include <linaos/personality.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kprobes.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/hardirq.h>
+#include <linaos/kdebug.h>
+#include <linaos/module.h>
+#include <linaos/kexec.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sizes.h>
+#include <linaos/syscalls.h>
+#include <linaos/mm_types.h>
+#include <linaos/kasan.h>
 
 #include <asm/atomic.h>
 #include <asm/bug.h>

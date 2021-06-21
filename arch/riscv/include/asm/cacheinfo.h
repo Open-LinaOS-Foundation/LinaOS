@@ -6,7 +6,7 @@
 #ifndef _ASM_RISCV_CACHEINFO_H
 #define _ASM_RISCV_CACHEINFO_H
 
-#include <linux/cacheinfo.h>
+#include <linaos/cacheinfo.h>
 
 struct riscv_cacheinfo_ops {
 	const struct attribute_group * (*get_priv_group)(struct cacheinfo

@@ -9,17 +9,17 @@
  * Based on SH7723 Setup
  * Copyright (C) 2008  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/mm.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/sh_dma.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
+#include <linaos/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/serial.h>
+#include <linaos/mm.h>
+#include <linaos/serial_sci.h>
+#include <linaos/uio_driver.h>
+#include <linaos/sh_dma.h>
+#include <linaos/sh_timer.h>
+#include <linaos/sh_intc.h>
+#include <linaos/io.h>
+#include <linaos/notifier.h>
 
 #include <asm/suspend.h>
 #include <asm/clock.h>

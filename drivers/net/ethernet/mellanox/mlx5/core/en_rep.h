@@ -34,8 +34,8 @@
 #define __MLX5E_REP_H__
 
 #include <net/ip_tunnels.h>
-#include <linux/rhashtable.h>
-#include <linux/mutex.h>
+#include <linaos/rhashtable.h>
+#include <linaos/mutex.h>
 #include "eswitch.h"
 #include "en.h"
 #include "lib/port_tun.h"

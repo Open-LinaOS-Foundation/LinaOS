@@ -7,13 +7,13 @@
  * Copyright (c) 2016 Texas Instruments Incorporated
  */
 
-#include <linux/errno.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/omap-dma.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
+#include <linaos/errno.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/omap-dma.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
 #include <crypto/aes.h>
 #include <crypto/gcm.h>
 #include <crypto/scatterwalk.h>

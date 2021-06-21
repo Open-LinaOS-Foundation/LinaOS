@@ -103,7 +103,7 @@ http://archive.ericsson.net/service/internet/picov/get?DocNo=28701-EN/LZT146401
 
 	http://archive.ericsson.net/service/internet/picov/get?DocNo=28701-EN/LZT146256
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

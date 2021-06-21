@@ -4,15 +4,15 @@
  *
  * Copyright IBM Corp. 2017
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Xiao Feng Ren <renxiaof@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@linaos.vnet.ibm.com>
+ *            Xiao Feng Ren <renxiaof@linaos.vnet.ibm.com>
  */
 
-#include <linux/ratelimit.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/iommu.h>
-#include <linux/vfio.h>
+#include <linaos/ratelimit.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/iommu.h>
+#include <linaos/vfio.h>
 #include <asm/idals.h>
 
 #include "vfio_ccw_cp.h"

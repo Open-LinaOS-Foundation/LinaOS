@@ -2,7 +2,7 @@
 /* 
  *    Interfaces to retrieve and set PDC Stable options (firmware)
  *
- *    Copyright (C) 2005-2006 Thibaut VARENE <varenet@parisc-linux.org>
+ *    Copyright (C) 2005-2006 Thibaut VARENE <varenet@parisc-linaos.org>
  *
  *    DEV NOTE: the PDC Procedures reference states that:
  *    "A minimum of 96 bytes of Stable Storage is required. Providing more than
@@ -41,21 +41,21 @@
 #define DPRINTK(fmt, args...)
 #endif
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/capability.h>
+#include <linaos/ctype.h>
+#include <linaos/sysfs.h>
+#include <linaos/kobject.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/spinlock.h>
 
 #include <asm/pdc.h>
 #include <asm/page.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/hardware.h>
 
 #define PDCS_VERSION	"0.30"
@@ -71,7 +71,7 @@
 #define PDCS_ADDR_PKBD	0xA0
 #define PDCS_ADDR_OSD2	0xE0
 
-MODULE_AUTHOR("Thibaut VARENE <varenet@parisc-linux.org>");
+MODULE_AUTHOR("Thibaut VARENE <varenet@parisc-linaos.org>");
 MODULE_DESCRIPTION("sysfs interface to HP PDC Stable Storage data");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(PDCS_VERSION);

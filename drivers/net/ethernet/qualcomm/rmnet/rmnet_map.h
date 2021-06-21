@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _RMNET_MAP_H_
 #define _RMNET_MAP_H_
-#include <linux/if_rmnet.h>
+#include <linaos/if_rmnet.h>
 
 struct rmnet_map_control_command {
 	u8  command_name;

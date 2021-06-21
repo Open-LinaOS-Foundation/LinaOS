@@ -2,20 +2,20 @@
 /*
  * /proc/sys support
  */
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/printk.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/namei.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/module.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/mount.h>
+#include <linaos/init.h>
+#include <linaos/sysctl.h>
+#include <linaos/poll.h>
+#include <linaos/proc_fs.h>
+#include <linaos/printk.h>
+#include <linaos/security.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/namei.h>
+#include <linaos/mm.h>
+#include <linaos/uio.h>
+#include <linaos/module.h>
+#include <linaos/bpf-cgroup.h>
+#include <linaos/mount.h>
 #include "internal.h"
 
 static const struct dentry_operations proc_sys_dentry_operations;

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 Facebook  */
-#include <linux/rculist.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/bpf_local_storage.h>
+#include <linaos/rculist.h>
+#include <linaos/list.h>
+#include <linaos/hash.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
+#include <linaos/btf_ids.h>
+#include <linaos/bpf_local_storage.h>
 #include <net/bpf_sk_storage.h>
 #include <net/sock.h>
-#include <uapi/linux/sock_diag.h>
-#include <uapi/linux/btf.h>
+#include <uapi/linaos/sock_diag.h>
+#include <uapi/linaos/btf.h>
 
 DEFINE_BPF_STORAGE_CACHE(sk_cache);
 
@@ -381,7 +381,7 @@ const struct bpf_func_proto bpf_sk_storage_delete_proto = {
 
 static bool bpf_sk_storage_tracing_allowed(const struct bpf_prog *prog)
 {
-	const struct btf *btf_vmlinux;
+	const struct btf *btf_vmlinaos;
 	const struct btf_type *t;
 	const char *tname;
 	u32 btf_id;
@@ -400,10 +400,10 @@ static bool bpf_sk_storage_tracing_allowed(const struct bpf_prog *prog)
 		return true;
 	case BPF_TRACE_FENTRY:
 	case BPF_TRACE_FEXIT:
-		btf_vmlinux = bpf_get_btf_vmlinux();
+		btf_vmlinaos = bpf_get_btf_vmlinaos();
 		btf_id = prog->aux->attach_btf_id;
-		t = btf_type_by_id(btf_vmlinux, btf_id);
-		tname = btf_name_by_offset(btf_vmlinux, t->name_off);
+		t = btf_type_by_id(btf_vmlinaos, btf_id);
+		tname = btf_name_by_offset(btf_vmlinaos, t->name_off);
 		return !!strncmp(tname, "bpf_sk_storage",
 				 strlen("bpf_sk_storage"));
 	default:

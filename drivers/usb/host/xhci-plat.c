@@ -5,20 +5,20 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - https://www.ti.com
  * Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  *
- * A lot of code borrowed from the Linux xHCI driver.
+ * A lot of code borrowed from the LinaOS xHCI driver.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/usb/phy.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/usb/of.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/phy.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/usb/of.h>
 
 #include "xhci.h"
 #include "xhci-plat.h"

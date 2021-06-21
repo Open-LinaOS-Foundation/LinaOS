@@ -11,25 +11,25 @@
  * NO WARRANTY
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/time.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/time.h>
+#include <linaos/uaccess.h>
 #include "reiserfs.h"
 #include "acl.h"
 #include "xattr.h"
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/quotaops.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/crc32.h>
-#include <linux/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/buffer_head.h>
+#include <linaos/exportfs.h>
+#include <linaos/quotaops.h>
+#include <linaos/vfs.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/crc32.h>
+#include <linaos/seq_file.h>
 
 struct file_system_type reiserfs_fs_type;
 

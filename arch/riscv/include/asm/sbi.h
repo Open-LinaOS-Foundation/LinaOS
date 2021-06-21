@@ -7,7 +7,7 @@
 #ifndef _ASM_RISCV_SBI_H
 #define _ASM_RISCV_SBI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_RISCV_SBI
 enum sbi_ext_id {
@@ -148,7 +148,7 @@ static inline unsigned long sbi_minor_version(void)
 	return sbi_spec_version & SBI_SPEC_VERSION_MINOR_MASK;
 }
 
-int sbi_err_map_linux_errno(int err);
+int sbi_err_map_linaos_errno(int err);
 #else /* CONFIG_RISCV_SBI */
 static inline int sbi_remote_fence_i(const unsigned long *hart_mask) { return -1; }
 static inline void sbi_init(void) {}

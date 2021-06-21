@@ -8,10 +8,10 @@
  * for more details.
  */
 
-#include <linux/ptrace.h>
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/io.h>
+#include <linaos/ptrace.h>
+#include <linaos/kgdb.h>
+#include <linaos/kdebug.h>
+#include <linaos/io.h>
 
 struct dbg_reg_def_t dbg_reg_def[DBG_MAX_REG_NUM] = {
 	{ "er0", GDB_SIZEOF_REG, offsetof(struct pt_regs, er0) },

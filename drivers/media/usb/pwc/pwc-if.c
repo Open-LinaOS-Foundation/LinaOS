@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* Linux driver for Philips webcam
-   USB and Video4Linux interface part.
+/* LinaOS driver for Philips webcam
+   USB and Video4LinaOS interface part.
    (C) 1999-2004 Nemosoft Unv.
    (C) 2004-2006 Luc Saillard (luc@saillard.org)
    (C) 2011 Hans de Goede <hdegoede@redhat.com>
@@ -23,7 +23,7 @@
 
    In case you're wondering: 'pwc' stands for "Philips WebCam", but
    I really didn't want to type 'philips_web_cam' every time (I'm lazy as
-   any Linux kernel hacker, but I don't like uncomprehensible abbreviations
+   any LinaOS kernel hacker, but I don't like uncomprehensible abbreviations
    without explanation).
 
    Oh yes, convention: to disctinguish between all the various pointers to
@@ -45,18 +45,18 @@
    - Pham Thanh Nam: webcam snapshot button as an event input device
 */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
 #ifdef CONFIG_USB_PWC_INPUT_EVDEV
-#include <linux/usb/input.h>
+#include <linaos/usb/input.h>
 #endif
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 #include <asm/io.h>
-#include <linux/kernel.h>		/* simple_strtol() */
+#include <linaos/kernel.h>		/* simple_strtol() */
 
 #include "pwc.h"
 #include "pwc-kiara.h"
@@ -599,7 +599,7 @@ static const char *pwc_sensor_type_to_string(unsigned int sensor_type)
 #endif
 
 /***************************************************************************/
-/* Video4Linux functions */
+/* Video4LinaOS functions */
 
 static void pwc_video_release(struct v4l2_device *v)
 {

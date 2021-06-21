@@ -62,8 +62,8 @@ RECORD OPTIONS
 REPORT OPTIONS
 --------------
 -k::
---vmlinux=<file>::
-	vmlinux pathname
+--vmlinaos=<file>::
+	vmlinaos pathname
 
 -v::
 --verbose::

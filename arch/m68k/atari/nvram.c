@@ -8,15 +8,15 @@
  * Wim Van Sebroeck.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mc146818rtc.h>
-#include <linux/module.h>
-#include <linux/nvram.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/module.h>
+#include <linaos/nvram.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 #include <asm/atarihw.h>
 #include <asm/atariints.h>
 
@@ -144,7 +144,7 @@ static struct {
 	{ 0x80, "TOS" },
 	{ 0x40, "ASV" },
 	{ 0x20, "NetBSD (?)" },
-	{ 0x10, "Linux" },
+	{ 0x10, "LinaOS" },
 	{ 0x00, "unspecified" },
 };
 

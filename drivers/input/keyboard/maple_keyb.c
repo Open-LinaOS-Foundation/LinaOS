@@ -6,13 +6,13 @@
  * Porting to 2.6 Copyright (c) Adrian McMenamin, 2007 - 2009
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/maple.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/timer.h>
+#include <linaos/maple.h>
 
 /* Very simple mutex to ensure proper cleanup */
 static DEFINE_MUTEX(maple_keyb_mutex);

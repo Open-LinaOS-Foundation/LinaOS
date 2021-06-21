@@ -24,9 +24,9 @@
 #include <media/tveeprom.h>
 #include <media/v4l2-event.h>
 #ifdef CONFIG_VIDEO_IVTV_DEPRECATED_IOCTLS
-#include <linux/compat.h>
-#include <linux/dvb/audio.h>
-#include <linux/dvb/video.h>
+#include <linaos/compat.h>
+#include <linaos/dvb/audio.h>
+#include <linaos/dvb/video.h>
 #endif
 
 u16 ivtv_service2vbi(int type)

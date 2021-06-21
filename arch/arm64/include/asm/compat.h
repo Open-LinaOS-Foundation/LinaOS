@@ -12,9 +12,9 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
 
 #define COMPAT_USER_HZ		100
 #ifdef __AARCH64EB__

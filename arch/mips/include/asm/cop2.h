@@ -4,12 +4,12 @@
  * for more details.
  *
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linaos-mips.org>
  */
 #ifndef __ASM_COP2_H
 #define __ASM_COP2_H
 
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 
 #if defined(CONFIG_CPU_CAVIUM_OCTEON)
 

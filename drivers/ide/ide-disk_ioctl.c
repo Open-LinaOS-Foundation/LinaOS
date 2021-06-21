@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/hdreg.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/ide.h>
+#include <linaos/hdreg.h>
+#include <linaos/mutex.h>
 
 #include "ide-disk.h"
 

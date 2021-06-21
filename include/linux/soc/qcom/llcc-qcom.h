@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2017-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2018, The LinaOS Foundation. All rights reserved.
  *
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #ifndef __LLCC_QCOM__
 #define __LLCC_QCOM__
 

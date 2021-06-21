@@ -9,7 +9,7 @@
  *  Copyright (C) 2012 Durgadoss R <durgadoss.r@intel.com>
  */
 
-#include <linux/thermal.h>
+#include <linaos/thermal.h>
 
 #include "thermal_core.h"
 

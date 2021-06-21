@@ -602,7 +602,7 @@ static void emit_relocs(int as_text, int as_bin, FILE *outf)
 	} else {
 		/* Seek to offset of the relocation section.
 		* Each relocation is then written into the
-		* vmlinux kernel image.
+		* vmlinaos kernel image.
 		*/
 		if (fseek(outf, sec_reloc->shdr.sh_offset, SEEK_SET) < 0) {
 			die("Seek to %d failed: %s\n",

@@ -6,7 +6,7 @@ config VIDEO_USBTV
 	select VIDEOBUF2_VMALLOC
 
 	help
-	  This is a video4linux2 driver for USBTV007 based video capture devices.
+	  This is a video4linaos2 driver for USBTV007 based video capture devices.
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called usbtv

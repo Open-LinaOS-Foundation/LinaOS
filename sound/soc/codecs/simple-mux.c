@@ -4,9 +4,9 @@
  * Author: Alexandre Belloni <alexandre.belloni@bootlin.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
 #include <sound/soc.h>
 
 struct simple_mux {

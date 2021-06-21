@@ -5,11 +5,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/tee_drv.h>
 #include "optee_private.h"
 #include "optee_smc.h"
 #include "optee_rpc_cmd.h"
@@ -521,8 +521,8 @@ void optee_handle_rpc(struct tee_context *ctx, struct optee_rpc_param *param,
 	case OPTEE_SMC_RPC_FUNC_FOREIGN_INTR:
 		/*
 		 * A foreign interrupt was raised while secure world was
-		 * executing, since they are handled in Linux a dummy RPC is
-		 * performed to let Linux take the interrupt through the normal
+		 * executing, since they are handled in LinaOS a dummy RPC is
+		 * performed to let LinaOS take the interrupt through the normal
 		 * vector.
 		 */
 		break;

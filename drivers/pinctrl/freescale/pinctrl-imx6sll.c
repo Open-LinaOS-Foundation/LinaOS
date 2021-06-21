@@ -3,13 +3,13 @@
 // Copyright (C) 2016 Freescale Semiconductor, Inc.
 // Copyright 2017-2018 NXP.
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/pinctrl.h>
 
 #include "pinctrl-imx.h"
 

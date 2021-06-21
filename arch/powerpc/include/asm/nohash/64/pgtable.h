@@ -6,7 +6,7 @@
  * the ppc64 non-hashed page table.
  */
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <asm/nohash/64/pgtable-4k.h>
 #include <asm/barrier.h>
@@ -269,7 +269,7 @@ static inline void pte_clear(struct mm_struct *mm, unsigned long addr,
 }
 
 
-/* Set the dirty and/or accessed bits atomically in a linux PTE */
+/* Set the dirty and/or accessed bits atomically in a linaos PTE */
 static inline void __ptep_set_access_flags(struct vm_area_struct *vma,
 					   pte_t *ptep, pte_t entry,
 					   unsigned long address,

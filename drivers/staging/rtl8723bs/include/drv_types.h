@@ -14,7 +14,7 @@
 #ifndef __DRV_TYPES_H__
 #define __DRV_TYPES_H__
 
-#include <linux/sched/signal.h>
+#include <linaos/sched/signal.h>
 #include <autoconf.h>
 #include <basic_types.h>
 #include <osdep_service.h>
@@ -56,8 +56,8 @@
 
 #include "ioctl_cfg80211.h"
 
-#include <linux/ip.h>
-#include <linux/if_ether.h>
+#include <linaos/ip.h>
+#include <linaos/if_ether.h>
 #include <ethernet.h>
 
 #define SPEC_DEV_ID_NONE BIT(0)

@@ -7,8 +7,8 @@
 */
 
 #include "common.h"
-#include <linux/vmalloc.h>
-#include <linux/rtnetlink.h>
+#include <linaos/vmalloc.h>
+#include <linaos/rtnetlink.h>
 
 static int connect_data_rings(struct backend_info *be,
 			      struct xenvif_queue *queue);

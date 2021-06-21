@@ -2,10 +2,10 @@
 #ifndef _LINUX_IOMMU_HELPER_H
 #define _LINUX_IOMMU_HELPER_H
 
-#include <linux/bug.h>
-#include <linux/log2.h>
-#include <linux/math.h>
-#include <linux/types.h>
+#include <linaos/bug.h>
+#include <linaos/log2.h>
+#include <linaos/math.h>
+#include <linaos/types.h>
 
 static inline unsigned long iommu_device_max_index(unsigned long size,
 						   unsigned long offset,

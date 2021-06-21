@@ -5,11 +5,11 @@
  * (C) 2011 DENX Software Engineering, Anatolij Gustschin <agust@denx.de>
  */
 
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <linaos/fb.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
 
 #include "mb862xxfb.h"
 #include "mb862xx_reg.h"

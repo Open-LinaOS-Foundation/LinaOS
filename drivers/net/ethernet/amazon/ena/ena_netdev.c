@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -6,20 +6,20 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linaos/cpu_rmap.h>
 #endif /* CONFIG_RFS_ACCEL */
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/numa.h>
-#include <linux/pci.h>
-#include <linux/utsname.h>
-#include <linux/version.h>
-#include <linux/vmalloc.h>
+#include <linaos/ethtool.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/numa.h>
+#include <linaos/pci.h>
+#include <linaos/utsname.h>
+#include <linaos/version.h>
+#include <linaos/vmalloc.h>
 #include <net/ip.h>
 
 #include "ena_netdev.h"
-#include <linux/bpf_trace.h>
+#include <linaos/bpf_trace.h>
 #include "ena_pci_id_tbl.h"
 
 MODULE_AUTHOR("Amazon.com, Inc. or its affiliates");

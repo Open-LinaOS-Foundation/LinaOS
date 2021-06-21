@@ -8,11 +8,11 @@
 #ifndef _NET_FLOW_H
 #define _NET_FLOW_H
 
-#include <linux/socket.h>
-#include <linux/in6.h>
-#include <linux/atomic.h>
+#include <linaos/socket.h>
+#include <linaos/in6.h>
+#include <linaos/atomic.h>
 #include <net/flow_dissector.h>
-#include <linux/uidgid.h>
+#include <linaos/uidgid.h>
 
 /*
  * ifindex generation is per-net namespace, and loopback is

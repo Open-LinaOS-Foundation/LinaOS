@@ -5,14 +5,14 @@
 //
 // Copyright(c) 2018 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@linaos.intel.com>
 //
 // Generic IPC layer that can work over MMIO and SPI/I2C. PHY layer provided
 // by platform driver code.
 //
 
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 #include "sof-priv.h"
 #include "sof-audio.h"

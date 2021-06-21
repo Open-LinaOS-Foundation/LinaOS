@@ -23,8 +23,8 @@ struct addr_range {
 static struct addr_range prep_kernel(void)
 {
 	char elfheader[256];
-	unsigned char *vmlinuz_addr = (unsigned char *)_vmlinux_start;
-	unsigned long vmlinuz_size = _vmlinux_end - _vmlinux_start;
+	unsigned char *vmlinuz_addr = (unsigned char *)_vmlinaos_start;
+	unsigned long vmlinuz_size = _vmlinaos_end - _vmlinaos_start;
 	void *addr = 0;
 	struct elf_info ei;
 	long len;
@@ -52,8 +52,8 @@ static struct addr_range prep_kernel(void)
 	 */
 	printf("Allocating 0x%lx bytes for kernel...\n\r", ei.memsize);
 
-	if (platform_ops.vmlinux_alloc) {
-		addr = platform_ops.vmlinux_alloc(ei.memsize);
+	if (platform_ops.vmlinaos_alloc) {
+		addr = platform_ops.vmlinaos_alloc(ei.memsize);
 	} else {
 		/*
 		 * Check if the kernel image (without bss) would overwrite the
@@ -98,7 +98,7 @@ out:
 	return (struct addr_range){addr, ei.memsize};
 }
 
-static struct addr_range prep_initrd(struct addr_range vmlinux, void *chosen,
+static struct addr_range prep_initrd(struct addr_range vmlinaos, void *chosen,
 				     unsigned long initrd_addr,
 				     unsigned long initrd_size)
 {
@@ -123,7 +123,7 @@ static struct addr_range prep_initrd(struct addr_range vmlinux, void *chosen,
 	 * kernel relocates to its final location.  In this case,
 	 * allocate a safer place and move it.
 	 */
-	if (initrd_addr < vmlinux.size) {
+	if (initrd_addr < vmlinaos.size) {
 		void *old_addr = (void *)initrd_addr;
 
 		printf("Allocating 0x%lx bytes for initrd ...\n\r",
@@ -140,14 +140,14 @@ static struct addr_range prep_initrd(struct addr_range vmlinux, void *chosen,
 	printf("initrd head: 0x%lx\n\r", *((unsigned long *)initrd_addr));
 
 	/* Tell the kernel initrd address via device tree */
-	setprop_val(chosen, "linux,initrd-start", (u32)(initrd_addr));
-	setprop_val(chosen, "linux,initrd-end", (u32)(initrd_addr+initrd_size));
+	setprop_val(chosen, "linaos,initrd-start", (u32)(initrd_addr));
+	setprop_val(chosen, "linaos,initrd-end", (u32)(initrd_addr+initrd_size));
 
 	return (struct addr_range){(void *)initrd_addr, initrd_size};
 }
 
 #ifdef __powerpc64__
-static void prep_esm_blob(struct addr_range vmlinux, void *chosen)
+static void prep_esm_blob(struct addr_range vmlinaos, void *chosen)
 {
 	unsigned long esm_blob_addr, esm_blob_size;
 
@@ -165,7 +165,7 @@ static void prep_esm_blob(struct addr_range vmlinux, void *chosen)
 	 * kernel relocates to its final location.  In this case,
 	 * allocate a safer place and move it.
 	 */
-	if (esm_blob_addr < vmlinux.size) {
+	if (esm_blob_addr < vmlinaos.size) {
 		void *old_addr = (void *)esm_blob_addr;
 
 		printf("Allocating 0x%lx bytes for esm_blob ...\n\r",
@@ -179,15 +179,15 @@ static void prep_esm_blob(struct addr_range vmlinux, void *chosen)
 	}
 
 	/* Tell the kernel ESM blob address via device tree. */
-	setprop_val(chosen, "linux,esm-blob-start", (u32)(esm_blob_addr));
-	setprop_val(chosen, "linux,esm-blob-end", (u32)(esm_blob_addr + esm_blob_size));
+	setprop_val(chosen, "linaos,esm-blob-start", (u32)(esm_blob_addr));
+	setprop_val(chosen, "linaos,esm-blob-end", (u32)(esm_blob_addr + esm_blob_size));
 }
 #else
-static inline void prep_esm_blob(struct addr_range vmlinux, void *chosen) { }
+static inline void prep_esm_blob(struct addr_range vmlinaos, void *chosen) { }
 #endif
 
 /* A buffer that may be edited by tools operating on a zImage binary so as to
- * edit the command line passed to vmlinux (by setting /chosen/bootargs).
+ * edit the command line passed to vmlinaos (by setting /chosen/bootargs).
  * The buffer is put in it's own section so that tools may locate it easier.
  */
 static char cmdline[BOOT_COMMAND_LINE_SIZE]
@@ -200,14 +200,14 @@ static void prep_cmdline(void *chosen)
 	int n;
 
 	/* Wait-for-input time */
-	n = getprop(chosen, "linux,cmdline-timeout", &v, sizeof(v));
+	n = getprop(chosen, "linaos,cmdline-timeout", &v, sizeof(v));
 	if (n == sizeof(v))
 		getline_timeout = v;
 
 	if (cmdline[0] == '\0')
 		getprop(chosen, "bootargs", cmdline, BOOT_COMMAND_LINE_SIZE-1);
 
-	printf("\n\rLinux/PowerPC load: %s", cmdline);
+	printf("\n\rLinaOS/PowerPC load: %s", cmdline);
 
 	/* If possible, edit the command line */
 	if (console_ops.edit_cmdline && getline_timeout)
@@ -226,7 +226,7 @@ struct loader_info loader_info;
 
 void start(void)
 {
-	struct addr_range vmlinux, initrd;
+	struct addr_range vmlinaos, initrd;
 	kernel_entry_t kentry;
 	unsigned long ft_addr = 0;
 	void *chosen;
@@ -251,10 +251,10 @@ void start(void)
 	if (!chosen)
 		chosen = create_node(NULL, "chosen");
 
-	vmlinux = prep_kernel();
-	initrd = prep_initrd(vmlinux, chosen,
+	vmlinaos = prep_kernel();
+	initrd = prep_initrd(vmlinaos, chosen,
 			     loader_info.initrd_addr, loader_info.initrd_size);
-	prep_esm_blob(vmlinux, chosen);
+	prep_esm_blob(vmlinaos, chosen);
 	prep_cmdline(chosen);
 
 	printf("Finalizing device tree...");
@@ -268,10 +268,10 @@ void start(void)
 	if (console_ops.close)
 		console_ops.close();
 
-	kentry = (kernel_entry_t) vmlinux.addr;
+	kentry = (kernel_entry_t) vmlinaos.addr;
 	if (ft_addr) {
 		if(platform_ops.kentry)
-			platform_ops.kentry(ft_addr, vmlinux.addr);
+			platform_ops.kentry(ft_addr, vmlinaos.addr);
 		else
 			kentry(ft_addr, 0, NULL);
 	}
@@ -280,5 +280,5 @@ void start(void)
 		       loader_info.promptr);
 
 	/* console closed so printf in fatal below may not work */
-	fatal("Error: Linux kernel returned to zImage boot wrapper!\n\r");
+	fatal("Error: LinaOS kernel returned to zImage boot wrapper!\n\r");
 }

@@ -20,11 +20,11 @@
 #ifndef __ATOMISP_INTERNAL_H__
 #define __ATOMISP_INTERNAL_H__
 
-#include "../../include/linux/atomisp_platform.h"
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/pm_qos.h>
-#include <linux/idr.h>
+#include "../../include/linaos/atomisp_platform.h"
+#include <linaos/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/pm_qos.h>
+#include <linaos/idr.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-subdev.h>
@@ -41,7 +41,7 @@
 
 #include "gp_device.h"
 #include "irq.h"
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 #define V4L2_EVENT_FRAME_END          5
 

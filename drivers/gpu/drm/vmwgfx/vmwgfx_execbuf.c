@@ -24,7 +24,7 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
  **************************************************************************/
-#include <linux/sync_file.h>
+#include <linaos/sync_file.h>
 
 #include "vmwgfx_drv.h"
 #include "vmwgfx_reg.h"

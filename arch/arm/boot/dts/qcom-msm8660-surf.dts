@@ -51,7 +51,7 @@
 
 &pm8058 {
 	keypad@148 {
-		linux,keymap = <
+		linaos,keymap = <
 			MATRIX_KEY(0, 0, KEY_FN_F1)
 			MATRIX_KEY(0, 1, KEY_UP)
 			MATRIX_KEY(0, 2, KEY_LEFT)

@@ -5,7 +5,7 @@
 #if !defined(_TRACE_IRQ_VECTORS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_IRQ_VECTORS_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <asm/trace/common.h>
 
 #ifdef CONFIG_X86_LOCAL_APIC

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/asm-parisc/ide.h
+ *  linaos/include/asm-parisc/ide.h
  *
  *  Copyright (C) 1994-1996  Linus Torvalds & authors
  */

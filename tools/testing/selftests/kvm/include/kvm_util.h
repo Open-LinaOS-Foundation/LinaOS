@@ -10,8 +10,8 @@
 #include "test_util.h"
 
 #include "asm/kvm.h"
-#include "linux/list.h"
-#include "linux/kvm.h"
+#include "linaos/list.h"
+#include "linaos/kvm.h"
 #include <sys/ioctl.h>
 
 #include "sparsebit.h"

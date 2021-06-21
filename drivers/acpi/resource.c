@@ -10,12 +10,12 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <linaos/acpi.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
 
 #ifdef CONFIG_X86
 #define valid_IRQ(i) (((i) != 0) && ((i) != 2))

@@ -3,16 +3,16 @@
  * Copyright (C) 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
-#include <linux/lzo.h>
-#include <linux/refcount.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
+#include <linaos/pagemap.h>
+#include <linaos/bio.h>
+#include <linaos/lzo.h>
+#include <linaos/refcount.h>
 #include "compression.h"
 
 #define LZO_LEN	4

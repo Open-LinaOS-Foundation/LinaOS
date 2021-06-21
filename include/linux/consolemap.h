@@ -12,7 +12,7 @@
 #define IBMPC_MAP 2
 #define USER_MAP 3
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_CONSOLE_TRANSLATIONS
 struct vc_data;

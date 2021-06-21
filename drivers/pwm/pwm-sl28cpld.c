@@ -33,13 +33,13 @@
  *   it will automatically switch back to GPIO mode.
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/regmap.h>
 
 /*
  * PWM timer block registers.

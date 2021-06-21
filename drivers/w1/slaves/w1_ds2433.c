@@ -5,22 +5,22 @@
  * Copyright (c) 2005 Ben Gardner <bgardner@wabtec.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 #ifdef CONFIG_W1_SLAVE_DS2433_CRC
-#include <linux/crc16.h>
+#include <linaos/crc16.h>
 
 #define CRC16_INIT		0
 #define CRC16_VALID		0xb001
 
 #endif
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 #define W1_EEPROM_DS2433	0x23
 

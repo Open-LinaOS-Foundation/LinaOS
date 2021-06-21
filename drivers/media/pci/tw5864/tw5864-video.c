@@ -5,7 +5,7 @@
  *  Copyright (C) 2016 Bluecherry, LLC <maintainers@bluecherrydvr.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/videobuf2-dma-contig.h>

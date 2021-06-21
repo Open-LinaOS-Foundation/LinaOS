@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include <math_support.h>
 #include "sh_css_param_shading.h"

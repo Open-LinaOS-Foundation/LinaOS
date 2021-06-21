@@ -4,20 +4,20 @@
 //
 // Copyright (C) 2020 Chuanhong Guo <gch981213@gmail.com>
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/string.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi-mem.h>
+#include <linaos/string.h>
 
 #define DRIVER_NAME "mtk-spi-nor"
 

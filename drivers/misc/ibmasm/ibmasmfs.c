@@ -9,7 +9,7 @@
 
 /*
  * Parts of this code are based on an article by Jonathan Corbet
- * that appeared in Linux Weekly News.
+ * that appeared in LinaOS Weekly News.
  */
 
 
@@ -59,11 +59,11 @@
  *	read: read value
  */
 
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include "ibmasm.h"
 #include "remote.h"

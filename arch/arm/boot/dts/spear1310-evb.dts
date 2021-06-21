@@ -136,7 +136,7 @@
 				reg = <0x200000 0x40000>;
 			};
 			partition@240000 {
-				label = "linux";
+				label = "linaos";
 				reg = <0x240000 0xC00000>;
 			};
 			partition@E40000 {
@@ -152,7 +152,7 @@
 
 			button@1 {
 				label = "wakeup";
-				linux,code = <0x100>;
+				linaos,code = <0x100>;
 				gpios = <&gpio0 7 0x4>;
 				debounce-interval = <20>;
 				wakeup-source;
@@ -195,7 +195,7 @@
 					reg = <0x70000 0x10000>;
 				};
 				partition@80000 {
-					label = "linux";
+					label = "linaos";
 					reg = <0x80000 0x310000>;
 				};
 				partition@390000 {
@@ -243,7 +243,7 @@
 			};
 
 			kbd@e0300000 {
-				linux,keymap = < 0x00000001
+				linaos,keymap = < 0x00000001
 						 0x00010002
 						 0x00020003
 						 0x00030004

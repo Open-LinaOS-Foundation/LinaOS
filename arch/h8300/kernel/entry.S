@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  *
- *  linux/arch/h8300/kernel/entry.S
+ *  linaos/arch/h8300/kernel/entry.S
  *
  *  Yoshinori Sato <ysato@users.sourceforge.jp>
  *  David McCullough <davidm@snapgear.com>
@@ -14,7 +14,7 @@
  *          system call entry
  */
 
-#include <linux/sys.h>
+#include <linaos/sys.h>
 #include <asm/unistd.h>
 #include <asm/setup.h>
 #include <asm/segment.h>

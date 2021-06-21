@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa-dt.c
+ *  linaos/arch/arm/mach-pxa/pxa-dt.c
  *
  *  Copyright (C) 2012 Daniel Mack
  */
 
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <mach/irqs.h>

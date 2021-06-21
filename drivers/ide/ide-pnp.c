@@ -6,10 +6,10 @@
  * Copyright (C) 2000 Andrey Panin <pazke@donpac.ru>
  */
 
-#include <linux/init.h>
-#include <linux/pnp.h>
-#include <linux/ide.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/pnp.h>
+#include <linaos/ide.h>
+#include <linaos/module.h>
 
 #define DRV_NAME "ide-pnp"
 

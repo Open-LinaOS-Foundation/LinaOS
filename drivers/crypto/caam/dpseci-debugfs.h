@@ -4,7 +4,7 @@
 #ifndef DPSECI_DEBUGFS_H
 #define DPSECI_DEBUGFS_H
 
-#include <linux/dcache.h>
+#include <linaos/dcache.h>
 #include "caamalg_qi2.h"
 
 #ifdef CONFIG_DEBUG_FS

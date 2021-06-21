@@ -10,9 +10,9 @@
 #ifndef __VSP1_HISTO_H__
 #define __VSP1_HISTO_H__
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-dev.h>

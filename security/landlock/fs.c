@@ -6,28 +6,28 @@
  * Copyright © 2018-2020 ANSSI
  */
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/bits.h>
-#include <linux/compiler_types.h>
-#include <linux/dcache.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/lsm_hooks.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/path.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/wait_bit.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/landlock.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/bits.h>
+#include <linaos/compiler_types.h>
+#include <linaos/dcache.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
+#include <linaos/list.h>
+#include <linaos/lsm_hooks.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/path.h>
+#include <linaos/rcupdate.h>
+#include <linaos/spinlock.h>
+#include <linaos/stat.h>
+#include <linaos/types.h>
+#include <linaos/wait_bit.h>
+#include <linaos/workqueue.h>
+#include <uapi/linaos/landlock.h>
 
 #include "common.h"
 #include "cred.h"

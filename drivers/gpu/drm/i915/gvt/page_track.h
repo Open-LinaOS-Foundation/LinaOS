@@ -25,7 +25,7 @@
 #ifndef _GVT_PAGE_TRACK_H_
 #define _GVT_PAGE_TRACK_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_vgpu;
 struct intel_vgpu_page_track;

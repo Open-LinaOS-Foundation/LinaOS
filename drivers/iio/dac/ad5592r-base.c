@@ -6,16 +6,16 @@
  * Author: Paul Cercueil <paul.cercueil@analog.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/property.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/property.h>
 
 #include <dt-bindings/iio/adi,ad5592r.h>
 

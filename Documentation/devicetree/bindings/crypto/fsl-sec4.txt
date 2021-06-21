@@ -434,7 +434,7 @@ System ON/OFF key driver
       Value type: <prop_encoded-array>
       Definition: The SNVS ON/OFF interrupt number to the CPU(s).
 
-  - linux,keycode:
+  - linaos,keycode:
       Usage: option
       Value type: <int>
       Definition: Keycode to emit, KEY_POWER by default.
@@ -454,7 +454,7 @@ EXAMPLE:
 		compatible = "fsl,sec-v4.0-pwrkey";
 		regmap = <&snvs>;
 		interrupts = <0 4 0x4>
-	        linux,keycode = <116>; /* KEY_POWER */
+	        linaos,keycode = <116>; /* KEY_POWER */
 		wakeup-source;
 	};
 
@@ -545,7 +545,7 @@ FULL EXAMPLE
 			compatible = "fsl,sec-v4.0-pwrkey";
 			regmap = <&sec_mon>;
 			interrupts = <0 4 0x4>;
-			linux,keycode = <116>; /* KEY_POWER */
+			linaos,keycode = <116>; /* KEY_POWER */
 			wakeup-source;
 		};
 	};

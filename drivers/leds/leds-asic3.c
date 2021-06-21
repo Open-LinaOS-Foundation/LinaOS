@@ -3,14 +3,14 @@
  *  Copyright (C) 2011 Paul Parsons <lost.distance@yahoo.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
 
-#include <linux/mfd/asic3.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
+#include <linaos/mfd/asic3.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
 
 /*
  *	The HTC ASIC3 LED GPIOs are inputs, not outputs.

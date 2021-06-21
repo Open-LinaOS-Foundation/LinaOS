@@ -12,7 +12,7 @@
 #define _SUCCESS	1
 #define RTW_RX_HANDLED 2
 
-#include <osdep_service_linux.h>
+#include <osdep_service_linaos.h>
 
 #ifndef BIT
 	#define BIT(x)	(1 << (x))

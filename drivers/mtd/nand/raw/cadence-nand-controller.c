@@ -7,17 +7,17 @@
  * Author: Piotr Sroka <piotrs@cadence.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of_device.h>
-#include <linux/iopoll.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/of_device.h>
+#include <linaos/iopoll.h>
+#include <linaos/slab.h>
 
 /*
  * HPNFC can work in 3 modes:

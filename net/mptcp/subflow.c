@@ -6,9 +6,9 @@
 
 #define pr_fmt(fmt) "MPTCP: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 #include <crypto/algapi.h>
 #include <crypto/sha2.h>
 #include <net/sock.h>
@@ -21,7 +21,7 @@
 #include <net/transp_v6.h>
 #endif
 #include <net/mptcp.h>
-#include <uapi/linux/mptcp.h>
+#include <uapi/linaos/mptcp.h>
 #include "protocol.h"
 #include "mib.h"
 
@@ -30,7 +30,7 @@
 static void mptcp_subflow_ops_undo_override(struct sock *ssk);
 
 static void SUBFLOW_REQ_INC_STATS(struct request_sock *req,
-				  enum linux_mptcp_mib_field field)
+				  enum linaos_mptcp_mib_field field)
 {
 	MPTCP_INC_STATS(sock_net(req_to_sk(req)), field);
 }

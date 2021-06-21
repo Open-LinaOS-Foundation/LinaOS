@@ -6,16 +6,16 @@
  * Copyright (c) 2005 Intel Corp.
  */
 
-#include <linux/acpi_iort.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/acpi.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/rwsem.h>
+#include <linaos/acpi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
 
 #include "internal.h"
 

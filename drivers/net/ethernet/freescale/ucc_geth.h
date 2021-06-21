@@ -14,9 +14,9 @@
 #ifndef __UCC_GETH_H__
 #define __UCC_GETH_H__
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/if_ether.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/if_ether.h>
 
 #include <soc/fsl/qe/immap_qe.h>
 #include <soc/fsl/qe/qe.h>

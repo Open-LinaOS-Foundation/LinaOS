@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/mfd/wm831x/irq.h -- Interrupt controller for WM831x
+ * include/linaos/mfd/wm831x/irq.h -- Interrupt controller for WM831x
  *
  * Copyright 2009 Wolfson Microelectronics PLC.
  *
@@ -10,7 +10,7 @@
 #ifndef __MFD_WM831X_IRQ_H__
 #define __MFD_WM831X_IRQ_H__
 
-/* Interrupt number assignments within Linux */
+/* Interrupt number assignments within LinaOS */
 #define WM831X_IRQ_TEMP_THW 0
 #define WM831X_IRQ_GPIO_1   1
 #define WM831X_IRQ_GPIO_2   2

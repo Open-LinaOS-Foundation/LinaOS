@@ -5,22 +5,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/spi/spi.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phylink.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/of_device.h>
-#include <linux/netdev_features.h>
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/if_ether.h>
-#include <linux/dsa/8021q.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/spi/spi.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/phylink.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_device.h>
+#include <linaos/netdev_features.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_bridge.h>
+#include <linaos/if_ether.h>
+#include <linaos/dsa/8021q.h>
 #include "sja1105.h"
 #include "sja1105_sgmii.h"
 #include "sja1105_tas.h"
@@ -1118,7 +1118,7 @@ static void sja1105_phylink_validate(struct dsa_switch *ds, int port,
 
 	mii = priv->static_config.tables[BLK_IDX_XMII_PARAMS].entries;
 
-	/* include/linux/phylink.h says:
+	/* include/linaos/phylink.h says:
 	 *     When @state->interface is %PHY_INTERFACE_MODE_NA, phylink
 	 *     expects the MAC driver to return all supported link modes.
 	 */

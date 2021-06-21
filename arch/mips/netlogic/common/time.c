@@ -32,7 +32,7 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 #include <asm/time.h>
 #include <asm/cpu-features.h>

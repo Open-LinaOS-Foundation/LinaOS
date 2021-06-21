@@ -8,8 +8,8 @@
  * Copyright (C) 2018 - 2020 Intel Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/ieee80211.h>
+#include <linaos/debugfs.h>
+#include <linaos/ieee80211.h>
 #include "ieee80211_i.h"
 #include "debugfs.h"
 #include "debugfs_sta.h"

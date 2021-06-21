@@ -9,8 +9,8 @@
  */
 
 #include "net_driver.h"
-#include <linux/module.h>
-#include <linux/iommu.h>
+#include <linaos/module.h>
+#include <linaos/iommu.h>
 #include "efx.h"
 #include "nic.h"
 #include "rx_common.h"

@@ -4,8 +4,8 @@
 #ifndef _MLXSW_SPECTRUM_PTP_H
 #define _MLXSW_SPECTRUM_PTP_H
 
-#include <linux/device.h>
-#include <linux/rhashtable.h>
+#include <linaos/device.h>
+#include <linaos/rhashtable.h>
 
 struct mlxsw_sp;
 struct mlxsw_sp_port;

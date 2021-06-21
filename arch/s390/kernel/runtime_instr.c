@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright IBM Corp. 2012
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@linaos.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/syscalls.h>
+#include <linaos/signal.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/runtime_instr.h>
 #include <asm/cpu_mf.h>

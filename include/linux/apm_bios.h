@@ -6,7 +6,7 @@
 #ifndef _LINUX_APM_H
 #define _LINUX_APM_H
 
-#include <uapi/linux/apm_bios.h>
+#include <uapi/linaos/apm_bios.h>
 
 
 #define APM_CS		(GDT_ENTRY_APMBIOS_BASE * 8)

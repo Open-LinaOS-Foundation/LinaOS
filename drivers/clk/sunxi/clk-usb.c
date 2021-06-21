@@ -5,14 +5,14 @@
  * Emilio López <emilio@elopez.com.ar>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/reset-controller.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/reset-controller.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 
 /*

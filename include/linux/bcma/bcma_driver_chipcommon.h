@@ -2,8 +2,8 @@
 #ifndef LINUX_BCMA_DRIVER_CC_H_
 #define LINUX_BCMA_DRIVER_CC_H_
 
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
 
 /** ChipCommon core registers. **/
 #define BCMA_CC_ID			0x0000

@@ -6,17 +6,17 @@
  *		 Peter Oberparleiter <peter.oberparleiter@de.ibm.com>
  */
 
-#include <linux/bug.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linaos/bug.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
 #include <asm/chpid.h>
 #include <asm/sclp.h>
 #include <asm/crw.h>

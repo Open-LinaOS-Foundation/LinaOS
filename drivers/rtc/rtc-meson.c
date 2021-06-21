@@ -11,18 +11,18 @@
  * Based on origin by Carlo Caione <carlo@endlessm.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/rtc.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/rtc.h>
 
 /* registers accessed from cpu bus */
 #define RTC_ADDR0				0x00

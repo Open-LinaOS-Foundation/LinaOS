@@ -5,18 +5,18 @@
  *	   Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 #include "clk-mtk.h"
 #include "clk-gate.h"
 #include "clk-cpumux.h"
 
 #include <dt-bindings/clock/mt7622-clk.h>
-#include <linux/clk.h> /* for consumer */
+#include <linaos/clk.h> /* for consumer */
 
 #define MT7622_PLL_FMAX		(2500UL * MHZ)
 #define CON0_MT7622_RST_BAR	BIT(27)

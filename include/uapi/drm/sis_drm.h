@@ -1,4 +1,4 @@
-/* sis_drv.h -- Private header for sis driver -*- linux-c -*- */
+/* sis_drv.h -- Private header for sis driver -*- linaos-c -*- */
 /*
  * Copyright 2005 Eric Anholt
  * All Rights Reserved.

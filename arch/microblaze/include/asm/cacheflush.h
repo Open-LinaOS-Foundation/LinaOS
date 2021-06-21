@@ -12,8 +12,8 @@
 #define _ASM_MICROBLAZE_CACHEFLUSH_H
 
 /* Somebody depends on this; sigh... */
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linaos/mm.h>
+#include <linaos/io.h>
 
 /* Look at Documentation/core-api/cachetlb.rst */
 

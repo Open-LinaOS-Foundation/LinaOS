@@ -6,14 +6,14 @@
  * Copyright (C) 2018-2019 Rockwell Collins
  */
 
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/util_macros.h>
+#include <linaos/ctype.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/spi/spi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/util_macros.h>
 #include <asm/unaligned.h>
 #include <dt-bindings/iio/temperature/thermocouple.h>
 /*

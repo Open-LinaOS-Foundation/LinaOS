@@ -46,7 +46,7 @@ Clock Properties:
   The calculation for tmr_fiper2 is the same as for tmr_fiper1. The
   driver expects that tmr_fiper1 will be correctly set to produce a 1
   Pulse Per Second (PPS) signal, since this will be offered to the PPS
-  subsystem to synchronize the Linux clock.
+  subsystem to synchronize the LinaOS clock.
 
   Reference clock source is determined by the value, which is holded
   in CKSEL bits in TMR_CTRL register. "fsl,cksel" property keeps the

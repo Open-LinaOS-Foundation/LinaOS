@@ -32,18 +32,18 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/swap.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/uio.h>
-#include <linux/pgtable.h>
+#include <linaos/pci.h>
+#include <linaos/poll.h>
+#include <linaos/cdev.h>
+#include <linaos/swap.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/uio.h>
+#include <linaos/pgtable.h>
 
 #include <rdma/ib.h>
 

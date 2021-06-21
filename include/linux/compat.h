@@ -6,18 +6,18 @@
  * syscall compatibility layer.
  */
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
 
-#include <linux/stat.h>
-#include <linux/param.h>	/* for HZ */
-#include <linux/sem.h>
-#include <linux/socket.h>
-#include <linux/if.h>
-#include <linux/fs.h>
-#include <linux/aio_abi.h>	/* for aio_context_t */
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
+#include <linaos/stat.h>
+#include <linaos/param.h>	/* for HZ */
+#include <linaos/sem.h>
+#include <linaos/socket.h>
+#include <linaos/if.h>
+#include <linaos/fs.h>
+#include <linaos/aio_abi.h>	/* for aio_context_t */
+#include <linaos/uaccess.h>
+#include <linaos/unistd.h>
 
 #include <asm/compat.h>
 
@@ -386,9 +386,9 @@ struct compat_keyctl_kdf_params {
 
 struct compat_statfs;
 struct compat_statfs64;
-struct compat_old_linux_dirent;
-struct compat_linux_dirent;
-struct linux_dirent64;
+struct compat_old_linaos_dirent;
+struct compat_linaos_dirent;
+struct linaos_dirent64;
 struct compat_msghdr;
 struct compat_mmsghdr;
 struct compat_sysinfo;
@@ -610,7 +610,7 @@ asmlinkage long compat_sys_openat(int dfd, const char __user *filename,
 
 /* fs/readdir.c */
 asmlinkage long compat_sys_getdents(unsigned int fd,
-				    struct compat_linux_dirent __user *dirent,
+				    struct compat_linaos_dirent __user *dirent,
 				    unsigned int count);
 
 /* fs/read_write.c */
@@ -902,7 +902,7 @@ asmlinkage long compat_sys_recv(int fd, void __user *buf, compat_size_t len,
 
 /* obsolete: fs/readdir.c */
 asmlinkage long compat_sys_old_readdir(unsigned int fd,
-				       struct compat_old_linux_dirent __user *,
+				       struct compat_old_linaos_dirent __user *,
 				       unsigned int count);
 
 /* obsolete: fs/select.c */

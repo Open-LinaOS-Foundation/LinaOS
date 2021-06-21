@@ -3,7 +3,7 @@
 #define LIST_H
 
 /*
- * Copied from include/linux/...
+ * Copied from include/linaos/...
  */
 
 #undef offsetof

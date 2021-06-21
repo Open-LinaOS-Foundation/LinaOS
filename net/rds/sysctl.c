@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
+#include <linaos/kernel.h>
+#include <linaos/sysctl.h>
+#include <linaos/proc_fs.h>
 
 #include "rds.h"
 

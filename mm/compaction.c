@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/mm/compaction.c
+ * linaos/mm/compaction.c
  *
  * Memory compaction for the reduction of external fragmentation. Note that
  * this heavily depends upon page migration to do all the real heavy
@@ -8,21 +8,21 @@
  *
  * Copyright IBM Corp. 2007-2010 Mel Gorman <mel@csn.ul.ie>
  */
-#include <linux/cpu.h>
-#include <linux/swap.h>
-#include <linux/migrate.h>
-#include <linux/compaction.h>
-#include <linux/mm_inline.h>
-#include <linux/sched/signal.h>
-#include <linux/backing-dev.h>
-#include <linux/sysctl.h>
-#include <linux/sysfs.h>
-#include <linux/page-isolation.h>
-#include <linux/kasan.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/page_owner.h>
-#include <linux/psi.h>
+#include <linaos/cpu.h>
+#include <linaos/swap.h>
+#include <linaos/migrate.h>
+#include <linaos/compaction.h>
+#include <linaos/mm_inline.h>
+#include <linaos/sched/signal.h>
+#include <linaos/backing-dev.h>
+#include <linaos/sysctl.h>
+#include <linaos/sysfs.h>
+#include <linaos/page-isolation.h>
+#include <linaos/kasan.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/page_owner.h>
+#include <linaos/psi.h>
 #include "internal.h"
 
 #ifdef CONFIG_COMPACTION

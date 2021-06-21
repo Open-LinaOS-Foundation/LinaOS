@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
 extra-$(CONFIG_AMIGA)	:= head.o
@@ -12,7 +12,7 @@ extra-$(CONFIG_HP300)	:= head.o
 extra-$(CONFIG_Q40)	:= head.o
 extra-$(CONFIG_SUN3X)	:= head.o
 extra-$(CONFIG_SUN3)	:= sun3-head.o
-extra-y			+= vmlinux.lds
+extra-y			+= vmlinaos.lds
 
 obj-y	:= entry.o irq.o module.o process.o ptrace.o
 obj-y	+= setup.o signal.o sys_m68k.o syscalltable.o time.o traps.o

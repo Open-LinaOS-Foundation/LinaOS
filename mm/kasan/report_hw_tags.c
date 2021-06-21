@@ -6,12 +6,12 @@
  * Author: Andrey Konovalov <andreyknvl@google.com>
  */
 
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/memory.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include "kasan.h"
 

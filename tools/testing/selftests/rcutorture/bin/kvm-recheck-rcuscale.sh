@@ -7,7 +7,7 @@
 #
 # Copyright (C) IBM Corporation, 2016
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 i="$1"
 if test -d "$i" -a -r "$i"

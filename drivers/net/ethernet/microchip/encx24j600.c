@@ -6,17 +6,17 @@
  * Author: Jon Ringle <jringle@gridpoint.com>
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
-#include <linux/spi/spi.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/regmap.h>
+#include <linaos/skbuff.h>
+#include <linaos/spi/spi.h>
 
 #include "encx24j600_hw.h"
 

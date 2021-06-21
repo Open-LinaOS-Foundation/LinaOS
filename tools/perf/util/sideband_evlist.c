@@ -6,7 +6,7 @@
 #include "util/mmap.h"
 #include "util/perf_api_probe.h"
 #include <perf/mmap.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 #include <limits.h>
 #include <pthread.h>
 #include <sched.h>

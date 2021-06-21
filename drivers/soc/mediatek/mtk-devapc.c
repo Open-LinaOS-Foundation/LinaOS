@@ -3,14 +3,14 @@
  * Copyright (C) 2020 MediaTek Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
 
 #define VIO_MOD_TO_REG_IND(m)	((m) / 32)
 #define VIO_MOD_TO_REG_OFF(m)	((m) % 32)

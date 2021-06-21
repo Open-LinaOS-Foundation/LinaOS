@@ -34,18 +34,18 @@
  *        always after h/w and remote ports.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/moduleparam.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 /*
  *      globals

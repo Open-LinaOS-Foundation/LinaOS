@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/sound/arm/aaci.c - ARM PrimeCell AACI PL041 driver
+ *  linaos/sound/arm/aaci.c - ARM PrimeCell AACI PL041 driver
  *
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
  */

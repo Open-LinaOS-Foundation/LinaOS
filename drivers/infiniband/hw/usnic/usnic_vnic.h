@@ -34,7 +34,7 @@
 #ifndef USNIC_VNIC_H_
 #define USNIC_VNIC_H_
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include "vnic_dev.h"
 

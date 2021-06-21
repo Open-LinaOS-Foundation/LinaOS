@@ -23,8 +23,8 @@
 #include "string2.h"
 #include "symbol.h"
 #include "util/rlimit.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 #include <subcmd/exec-cmd.h>
 
 static bool dont_fork;
@@ -37,8 +37,8 @@ struct test __weak arch_tests[] = {
 
 static struct test generic_tests[] = {
 	{
-		.desc = "vmlinux symtab matches kallsyms",
-		.func = test__vmlinux_matches_kallsyms,
+		.desc = "vmlinaos symtab matches kallsyms",
+		.func = test__vmlinaos_matches_kallsyms,
 	},
 	{
 		.desc = "Detect openat syscall event",
@@ -809,7 +809,7 @@ int cmd_test(int argc, const char **argv)
 
 	symbol_conf.priv_size = sizeof(int);
 	symbol_conf.sort_by_name = true;
-	symbol_conf.try_vmlinux_path = true;
+	symbol_conf.try_vmlinaos_path = true;
 
 	if (symbol__init(NULL) < 0)
 		return -1;

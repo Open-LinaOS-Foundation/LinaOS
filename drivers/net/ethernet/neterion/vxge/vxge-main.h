@@ -17,9 +17,9 @@
 #include "vxge-traffic.h"
 #include "vxge-config.h"
 #include "vxge-version.h"
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
+#include <linaos/list.h>
+#include <linaos/bitops.h>
+#include <linaos/if_vlan.h>
 
 #define VXGE_DRIVER_NAME		"vxge"
 #define VXGE_DRIVER_VENDOR		"Neterion, Inc"

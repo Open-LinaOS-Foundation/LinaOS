@@ -326,7 +326,7 @@
 		compatible = "cfi-flash";
 		reg = <0 0x00000000 0x02000000>;
 		bank-width = <2>;
-		linux,mtd-name = "physmap-flash.0";
+		linaos,mtd-name = "physmap-flash.0";
 		fsl,weim-cs-timing = <0x22c2cf00 0x75000d01 0x00000900>;
 		#address-cells = <1>;
 		#size-cells = <1>;
@@ -336,7 +336,7 @@
 		compatible = "mtd-ram";
 		reg = <1 0x00000000 0x00800000>;
 		bank-width = <2>;
-		linux,mtd-name = "mtd-ram.0";
+		linaos,mtd-name = "mtd-ram.0";
 		fsl,weim-cs-timing = <0x0000d843 0x22252521 0x22220a00>;
 		#address-cells = <1>;
 		#size-cells = <1>;

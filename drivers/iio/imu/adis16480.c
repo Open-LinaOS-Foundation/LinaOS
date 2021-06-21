@@ -5,27 +5,27 @@
  * Copyright 2012 Analog Devices Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/bitfield.h>
-#include <linux/of_irq.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/math.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/lcm.h>
+#include <linaos/clk.h>
+#include <linaos/bitfield.h>
+#include <linaos/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/math.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/lcm.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/imu/adis.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/imu/adis.h>
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #define ADIS16480_PAGE_SIZE 0x80
 

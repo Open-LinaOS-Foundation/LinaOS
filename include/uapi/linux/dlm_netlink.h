@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2007 Red Hat, Inc.  All rights reserved.
  *
@@ -10,8 +10,8 @@
 #ifndef _DLM_NETLINK_H
 #define _DLM_NETLINK_H
 
-#include <linux/types.h>
-#include <linux/dlmconstants.h>
+#include <linaos/types.h>
+#include <linaos/dlmconstants.h>
 
 enum {
 	DLM_STATUS_WAITING = 1,

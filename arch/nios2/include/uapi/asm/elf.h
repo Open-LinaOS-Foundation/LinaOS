@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2011 Tobias Klauser <tklauser@distanz.ch>
  *
@@ -21,7 +21,7 @@
 #ifndef _UAPI_ASM_NIOS2_ELF_H
 #define _UAPI_ASM_NIOS2_ELF_H
 
-#include <linux/ptrace.h>
+#include <linaos/ptrace.h>
 
 /* Relocation types */
 #define R_NIOS2_NONE		0

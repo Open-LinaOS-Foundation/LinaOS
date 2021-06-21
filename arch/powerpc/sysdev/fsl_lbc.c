@@ -10,20 +10,20 @@
  * Author: Roy Zang <tie-fei.zang@freescale.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/syscore_ops.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/syscore_ops.h>
 #include <asm/prom.h>
 #include <asm/fsl_lbc.h>
 

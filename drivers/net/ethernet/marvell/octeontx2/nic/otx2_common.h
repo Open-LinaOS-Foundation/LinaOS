@@ -11,13 +11,13 @@
 #ifndef OTX2_COMMON_H
 #define OTX2_COMMON_H
 
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/iommu.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
-#include <linux/soc/marvell/octeontx2/asm.h>
+#include <linaos/ethtool.h>
+#include <linaos/pci.h>
+#include <linaos/iommu.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/timecounter.h>
+#include <linaos/soc/marvell/octeontx2/asm.h>
 #include <net/pkt_cls.h>
 
 #include <mbox.h>

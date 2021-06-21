@@ -21,7 +21,7 @@
 #ifndef __ELAN_I2C_IDS_H
 #define __ELAN_I2C_IDS_H
 
-#include <linux/mod_devicetable.h>
+#include <linaos/mod_devicetable.h>
 
 static const struct acpi_device_id elan_acpi_id[] = {
 	{ "ELAN0000", 0 },

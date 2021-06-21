@@ -2,7 +2,7 @@
 #ifndef ARCH_TESTS_H
 #define ARCH_TESTS_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 struct test;
 
 /* Tests */

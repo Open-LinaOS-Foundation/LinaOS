@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-innovator.c
+ * linaos/arch/arm/mach-omap1/board-innovator.c
  *
  * Board specific inits for OMAP-1510 and OMAP-1610 Innovator
  *
@@ -12,17 +12,17 @@
  * Separated FPGA interrupts from innovator1510.c and cleaned up for 2.6
  * Copyright (C) 2004 Nokia Corporation by Tony Lindrgen <tony@atomide.com>
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/input.h>
+#include <linaos/smc91x.h>
+#include <linaos/omapfb.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -31,7 +31,7 @@
 #include <mach/mux.h>
 #include "flash.h"
 #include <mach/tc.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/platform_data/keypad-omap.h>
 
 #include <mach/hardware.h>
 #include <mach/usb.h>
@@ -154,8 +154,8 @@ static struct smc91x_platdata innovator_smc91x_info = {
 
 #ifdef CONFIG_ARCH_OMAP15XX
 
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
 
 
 /* Only FPGA needs to be mapped here. All others are done with ioremap */

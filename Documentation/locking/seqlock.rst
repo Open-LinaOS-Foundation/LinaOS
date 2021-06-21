@@ -236,4 +236,4 @@ Read path, three categories:
 API documentation
 =================
 
-.. kernel-doc:: include/linux/seqlock.h
+.. kernel-doc:: include/linaos/seqlock.h

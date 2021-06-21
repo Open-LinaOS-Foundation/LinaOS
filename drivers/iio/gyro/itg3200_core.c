@@ -12,20 +12,20 @@
  * - Support power management
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/buffer.h>
 
-#include <linux/iio/gyro/itg3200.h>
+#include <linaos/iio/gyro/itg3200.h>
 
 
 int itg3200_write_reg_8(struct iio_dev *indio_dev,

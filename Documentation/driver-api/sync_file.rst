@@ -23,7 +23,7 @@ producer part of the cycle.
 Sync files allows userspace awareness on buffer sharing synchronization between
 drivers.
 
-Sync file was originally added in the Android kernel but current Linux Desktop
+Sync file was originally added in the Android kernel but current LinaOS Desktop
 can benefit a lot from it.
 
 in-fences and out-fences
@@ -82,5 +82,5 @@ afterwards using dma_fence_put(). In case of error, a NULL is returned instead.
 
 References:
 
-1. struct sync_file in include/linux/sync_file.h
-2. All interfaces mentioned above defined in include/linux/sync_file.h
+1. struct sync_file in include/linaos/sync_file.h
+2. All interfaces mentioned above defined in include/linaos/sync_file.h

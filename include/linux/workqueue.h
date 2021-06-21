@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * workqueue.h --- work queue handling for Linux.
+ * workqueue.h --- work queue handling for LinaOS.
  */
 
 #ifndef _LINUX_WORKQUEUE_H
 #define _LINUX_WORKQUEUE_H
 
-#include <linux/timer.h>
-#include <linux/linkage.h>
-#include <linux/bitops.h>
-#include <linux/lockdep.h>
-#include <linux/threads.h>
-#include <linux/atomic.h>
-#include <linux/cpumask.h>
-#include <linux/rcupdate.h>
+#include <linaos/timer.h>
+#include <linaos/linkage.h>
+#include <linaos/bitops.h>
+#include <linaos/lockdep.h>
+#include <linaos/threads.h>
+#include <linaos/atomic.h>
+#include <linaos/cpumask.h>
+#include <linaos/rcupdate.h>
 
 struct workqueue_struct;
 
@@ -336,7 +336,7 @@ enum {
 	 * leads to noticeable power saving at the cost of small
 	 * performance disadvantage.
 	 *
-	 * http://thread.gmane.org/gmane.linux.kernel/1480396
+	 * http://thread.gmane.org/gmane.linaos.kernel/1480396
 	 */
 	WQ_POWER_EFFICIENT	= 1 << 7,
 

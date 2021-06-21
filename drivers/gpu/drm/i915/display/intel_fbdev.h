@@ -6,7 +6,7 @@
 #ifndef __INTEL_FBDEV_H__
 #define __INTEL_FBDEV_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_device;
 struct drm_i915_private;

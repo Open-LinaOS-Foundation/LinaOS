@@ -2,8 +2,8 @@
 #ifndef __IO_PGTABLE_H
 #define __IO_PGTABLE_H
 
-#include <linux/bitops.h>
-#include <linux/iommu.h>
+#include <linaos/bitops.h>
+#include <linaos/iommu.h>
 
 /*
  * Public API for use by IOMMU drivers

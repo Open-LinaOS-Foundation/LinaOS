@@ -8,15 +8,15 @@
 #include "ingenic-drm.h"
 #include "ingenic-ipu.h"
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/gcd.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/time.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/gcd.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/time.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

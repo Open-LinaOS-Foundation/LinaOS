@@ -9,7 +9,7 @@
 #include <string.h>
 #include <errno.h>
 #include <sched.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <bpf/libbpf.h>
 
 #include "network_helpers.h"

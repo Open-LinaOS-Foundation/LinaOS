@@ -3,7 +3,7 @@
  *  Copyright 2007-2010 Red Hat, Inc.
  *  by Peter Jones <pjones@redhat.com>
  *  Copyright 2008 IBM, Inc.
- *  by Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  by Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *  Copyright 2008
  *  by Konrad Rzeszutek <ketuzsezr@darnok.org>
  *
@@ -17,63 +17,63 @@
  *  14 Mar 2008 - Konrad Rzeszutek <ketuzsezr@darnok.org>
  *    Updated comments and copyrights. (v0.4.9)
  *
- *  11 Feb 2008 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  11 Feb 2008 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *    Converted to using ibft_addr. (v0.4.8)
  *
- *   8 Feb 2008 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *   8 Feb 2008 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *    Combined two functions in one: reserve_ibft_region. (v0.4.7)
  *
- *  30 Jan 2008 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  30 Jan 2008 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Added logic to handle IPv6 addresses. (v0.4.6)
  *
- *  25 Jan 2008 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  25 Jan 2008 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Added logic to handle badly not-to-spec iBFT. (v0.4.5)
  *
- *   4 Jan 2008 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *   4 Jan 2008 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Added __init to function declarations. (v0.4.4)
  *
- *  21 Dec 2007 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  21 Dec 2007 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Updated kobject registration, combined unregister functions in one
  *   and code and style cleanup. (v0.4.3)
  *
- *   5 Dec 2007 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *   5 Dec 2007 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Added end-markers to enums and re-organized kobject registration. (v0.4.2)
  *
- *   4 Dec 2007 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *   4 Dec 2007 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Created 'device' sysfs link to the NIC and style cleanup. (v0.4.1)
  *
- *  28 Nov 2007 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  28 Nov 2007 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Added sysfs-ibft documentation, moved 'find_ibft' function to
  *   in its own file and added text attributes for every struct field.  (v0.4)
  *
- *  21 Nov 2007 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  21 Nov 2007 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Added text attributes emulating OpenFirmware /proc/device-tree naming.
  *   Removed binary /sysfs interface (v0.3)
  *
- *  29 Aug 2007 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  29 Aug 2007 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   Added functionality in setup.c to reserve iBFT region. (v0.2)
  *
- *  27 Aug 2007 - Konrad Rzeszutek <konradr@linux.vnet.ibm.com>
+ *  27 Aug 2007 - Konrad Rzeszutek <konradr@linaos.vnet.ibm.com>
  *   First version exposing iBFT data via a binary /sysfs. (v0.1)
  */
 
 
-#include <linux/blkdev.h>
-#include <linux/capability.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/iscsi_ibft.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/acpi.h>
-#include <linux/iscsi_boot_sysfs.h>
+#include <linaos/blkdev.h>
+#include <linaos/capability.h>
+#include <linaos/ctype.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/iscsi_ibft.h>
+#include <linaos/limits.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/acpi.h>
+#include <linaos/iscsi_boot_sysfs.h>
 
 #define IBFT_ISCSI_VERSION "0.5.0"
 #define IBFT_ISCSI_DATE "2010-Feb-25"

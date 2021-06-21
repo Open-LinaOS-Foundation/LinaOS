@@ -6,13 +6,13 @@
  *	David Miller (davem@redhat.com)
  *	Ivan Kokshaysky (ink@jurassic.park.msu.ru)
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/proc_fs.h>
+#include <linaos/slab.h>
 
 #include "pci.h"
 

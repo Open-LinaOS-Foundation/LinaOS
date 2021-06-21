@@ -4,14 +4,14 @@
  * Copyright (C) 2014 IBM
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <asm/firmware.h>
 #include <asm/opal.h>
@@ -273,6 +273,6 @@ static void __exit i2c_opal_exit(void)
 }
 module_exit(i2c_opal_exit);
 
-MODULE_AUTHOR("Neelesh Gupta <neelegup@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Neelesh Gupta <neelegup@linaos.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM OPAL I2C driver");
 MODULE_LICENSE("GPL");

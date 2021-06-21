@@ -117,12 +117,12 @@
  *   Copyright (c) 2002 - 2004 Karsten Wiese
 */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

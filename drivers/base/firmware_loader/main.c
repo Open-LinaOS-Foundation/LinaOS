@@ -10,32 +10,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/kernel_read_file.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/highmem.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/async.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/reboot.h>
-#include <linux/security.h>
-#include <linux/xz.h>
+#include <linaos/capability.h>
+#include <linaos/device.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/initrd.h>
+#include <linaos/timer.h>
+#include <linaos/vmalloc.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
+#include <linaos/highmem.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/file.h>
+#include <linaos/list.h>
+#include <linaos/fs.h>
+#include <linaos/async.h>
+#include <linaos/pm.h>
+#include <linaos/suspend.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/reboot.h>
+#include <linaos/security.h>
+#include <linaos/xz.h>
 
 #include <generated/utsrelease.h>
 

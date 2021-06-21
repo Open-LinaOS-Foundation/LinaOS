@@ -72,7 +72,7 @@ is compiled with the kernel option CONFIG_VIDEO_FIXED_MINOR_RANGES.
 In that case minor numbers are allocated in ranges depending on the
 device node type.
 
-The device nodes supported by the Video4Linux subsystem are:
+The device nodes supported by the Video4LinaOS subsystem are:
 
 ======================== ====================================================
 Default device node name Usage
@@ -171,12 +171,12 @@ hardware use the Media Controller (see :ref:`media_controller`) which can
 be used for this purpose. But several drivers do not use it, and while some
 code exists that uses sysfs to discover related V4L2 device nodes (see
 libmedia_dev in the
-`v4l-utils <http://git.linuxtv.org/cgit.cgi/v4l-utils.git/>`__ git
+`v4l-utils <http://git.linaostv.org/cgit.cgi/v4l-utils.git/>`__ git
 repository), there is no library yet that can provide a single API
 towards both Media Controller-based devices and devices that do not use
 the Media Controller. If you want to work on this please write to the
-linux-media mailing list:
-`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__.
+linaos-media mailing list:
+`https://linaostv.org/lists.php <https://linaostv.org/lists.php>`__.
 
 Multiple Opens
 ==============

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/acorn/scsi/scsi.h
+ *  linaos/drivers/acorn/scsi/scsi.h
  *
  *  Copyright (C) 2002 Russell King
  *
  *  Commonly used scsi driver functions.
  */
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 #define BELT_AND_BRACES
 

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2021, Linaro Limited
  *
  */
 
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
 #include <dt-bindings/interconnect/qcom,sm8350.h>
 
 #include "bcm-voter.h"

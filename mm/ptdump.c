@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/pagewalk.h>
-#include <linux/ptdump.h>
-#include <linux/kasan.h>
+#include <linaos/pagewalk.h>
+#include <linaos/ptdump.h>
+#include <linaos/kasan.h>
 
 #if defined(CONFIG_KASAN_GENERIC) || defined(CONFIG_KASAN_SW_TAGS)
 /*

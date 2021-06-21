@@ -25,25 +25,25 @@
 
 #include <asm/barrier.h>
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
-#include <linux/mailbox/brcm-message.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/atomic.h>
+#include <linaos/bitmap.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mailbox_controller.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/mailbox/brcm-message.h>
+#include <linaos/module.h>
+#include <linaos/msi.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 /* ====== FlexRM register defines ===== */
 

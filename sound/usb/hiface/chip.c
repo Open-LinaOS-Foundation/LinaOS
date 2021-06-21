@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux driver for M2Tech hiFace compatible devices
+ * LinaOS driver for M2Tech hiFace compatible devices
  *
  * Copyright 2012-2013 (C) M2TECH S.r.l and Amarula Solutions B.V.
  *
@@ -10,8 +10,8 @@
  * The driver is based on the work done in TerraTec DMX 6Fire USB
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <sound/initval.h>
 
 #include "chip.h"

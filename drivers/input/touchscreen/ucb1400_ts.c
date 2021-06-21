@@ -15,14 +15,14 @@
  * been made separate from ucb1x00-core/ucb1x00-ts on Russell's request.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/input.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/ucb1400.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/input.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/ucb1400.h>
 
 #define UCB1400_TS_POLL_PERIOD	10 /* ms */
 

@@ -11,17 +11,17 @@
  * This driver is based on drivers/mtd/spi-nor/fsl-quadspi.c from Freescale.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi-mem.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi-mem.h>
 
 /* QSPI register offsets */
 #define QSPI_CR      0x0000  /* Control Register */

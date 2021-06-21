@@ -1,6 +1,6 @@
 .. _magicnumbers:
 
-Linux magic numbers
+LinaOS magic numbers
 ===================
 
 This file is a registry of magic numbers which are in use.  When you
@@ -35,13 +35,13 @@ Changelog::
 					Theodore Ts'o
 					31 Mar 94
 
-  The magic table is current to Linux 2.1.55.
+  The magic table is current to LinaOS 2.1.55.
 
 					Michael Chastain
 					<mailto:mec@shout.net>
 					22 Sep 1997
 
-  Now it should be up to date with Linux 2.1.112. Because
+  Now it should be up to date with LinaOS 2.1.112. Because
   we are in feature freeze time it is very unlikely that
   something will change before 2.2.x. The entries are
   sorted by number field.
@@ -50,7 +50,7 @@ Changelog::
 					<mailto: kgb@knm.org.pl>
 					29 Jul 1998
 
-  Updated the magic table to Linux 2.5.45. Right over the feature freeze,
+  Updated the magic table to LinaOS 2.5.45. Right over the feature freeze,
   but it is possible that some new magic numbers will sneak into the
   kernel before 2.6.x yet.
 
@@ -58,7 +58,7 @@ Changelog::
 					<pasky@ucw.cz>
 					03 Nov 2002
 
-  Updated the magic table to Linux 2.5.74.
+  Updated the magic table to LinaOS 2.5.74.
 
 					Fabian Frederick
 					<ffrederick@users.sourceforge.net>
@@ -68,45 +68,45 @@ Changelog::
 ===================== ================ ======================== ==========================================
 Magic Name            Number           Structure                File
 ===================== ================ ======================== ==========================================
-PG_MAGIC              'P'              pg_{read,write}_hdr      ``include/linux/pg.h``
-CMAGIC                0x0111           user                     ``include/linux/a.out.h``
+PG_MAGIC              'P'              pg_{read,write}_hdr      ``include/linaos/pg.h``
+CMAGIC                0x0111           user                     ``include/linaos/a.out.h``
 MKISS_DRIVER_MAGIC    0x04bf           mkiss_channel            ``drivers/net/mkiss.h``
 HDLC_MAGIC            0x239e           n_hdlc                   ``drivers/char/n_hdlc.c``
 APM_BIOS_MAGIC        0x4101           apm_user                 ``arch/x86/kernel/apm_32.c``
 DB_MAGIC              0x4442           fc_info                  ``drivers/net/iph5526_novram.c``
 DL_MAGIC              0x444d           fc_info                  ``drivers/net/iph5526_novram.c``
-FASYNC_MAGIC          0x4601           fasync_struct            ``include/linux/fs.h``
+FASYNC_MAGIC          0x4601           fasync_struct            ``include/linaos/fs.h``
 FF_MAGIC              0x4646           fc_info                  ``drivers/net/iph5526_novram.c``
 PTY_MAGIC             0x5001                                    ``drivers/char/pty.c``
-PPP_MAGIC             0x5002           ppp                      ``include/linux/if_pppvar.h``
-SSTATE_MAGIC          0x5302           serial_state             ``include/linux/serial.h``
+PPP_MAGIC             0x5002           ppp                      ``include/linaos/if_pppvar.h``
+SSTATE_MAGIC          0x5302           serial_state             ``include/linaos/serial.h``
 SLIP_MAGIC            0x5302           slip                     ``drivers/net/slip.h``
 STRIP_MAGIC           0x5303           strip                    ``drivers/net/strip.c``
 SIXPACK_MAGIC         0x5304           sixpack                  ``drivers/net/hamradio/6pack.h``
 AX25_MAGIC            0x5316           ax_disp                  ``drivers/net/mkiss.h``
-TTY_MAGIC             0x5401           tty_struct               ``include/linux/tty.h``
+TTY_MAGIC             0x5401           tty_struct               ``include/linaos/tty.h``
 MGSL_MAGIC            0x5401           mgsl_info                ``drivers/char/synclink.c``
-TTY_DRIVER_MAGIC      0x5402           tty_driver               ``include/linux/tty_driver.h``
+TTY_DRIVER_MAGIC      0x5402           tty_driver               ``include/linaos/tty_driver.h``
 MGSLPC_MAGIC          0x5402           mgslpc_info              ``drivers/char/pcmcia/synclink_cs.c``
 USB_SERIAL_MAGIC      0x6702           usb_serial               ``drivers/usb/serial/usb-serial.h``
 FULL_DUPLEX_MAGIC     0x6969                                    ``drivers/net/ethernet/dec/tulip/de2104x.c``
 USB_BLUETOOTH_MAGIC   0x6d02           usb_bluetooth            ``drivers/usb/class/bluetty.c``
 RFCOMM_TTY_MAGIC      0x6d02                                    ``net/bluetooth/rfcomm/tty.c``
 USB_SERIAL_PORT_MAGIC 0x7301           usb_serial_port          ``drivers/usb/serial/usb-serial.h``
-CG_MAGIC              0x00090255       ufs_cylinder_group       ``include/linux/ufs_fs.h``
+CG_MAGIC              0x00090255       ufs_cylinder_group       ``include/linaos/ufs_fs.h``
 LSEMAGIC              0x05091998       lse                      ``drivers/fc4/fc.c``
 RIEBL_MAGIC           0x09051990                                ``drivers/net/atarilance.c``
-NBD_REQUEST_MAGIC     0x12560953       nbd_request              ``include/linux/nbd.h``
+NBD_REQUEST_MAGIC     0x12560953       nbd_request              ``include/linaos/nbd.h``
 RED_MAGIC2            0x170fc2a5       (any)                    ``mm/slab.c``
 BAYCOM_MAGIC          0x19730510       baycom_state             ``drivers/net/baycom_epp.c``
 ISDN_X25IFACE_MAGIC   0x1e75a2b9       isdn_x25iface_proto_data ``drivers/isdn/isdn_x25iface.h``
-ECP_MAGIC             0x21504345       cdkecpsig                ``include/linux/cdk.h``
+ECP_MAGIC             0x21504345       cdkecpsig                ``include/linaos/cdk.h``
 LSOMAGIC              0x27091997       lso                      ``drivers/fc4/fc.c``
 LSMAGIC               0x2a3b4d2a       ls                       ``drivers/fc4/fc.c``
-WANPIPE_MAGIC         0x414C4453       sdla_{dump,exec}         ``include/linux/wanpipe.h``
+WANPIPE_MAGIC         0x414C4453       sdla_{dump,exec}         ``include/linaos/wanpipe.h``
 CS_CARD_MAGIC         0x43525553       cs_card                  ``sound/oss/cs46xx.c``
 LABELCL_MAGIC         0x4857434c       labelcl_info_s           ``include/asm/ia64/sn/labelcl.h``
-ISDN_ASYNC_MAGIC      0x49344C01       modem_info               ``include/linux/isdn.h``
+ISDN_ASYNC_MAGIC      0x49344C01       modem_info               ``include/linaos/isdn.h``
 CTC_ASYNC_MAGIC       0x49344C01       ctc_tty_info             ``drivers/s390/net/ctctty.c``
 ISDN_NET_MAGIC        0x49344C02       isdn_net_local_s         ``drivers/isdn/i4l/isdn_net_lib.h``
 SAVEKMSG_MAGIC2       0x4B4D5347       savekmsg                 ``arch/*/amiga/config.c``
@@ -120,7 +120,7 @@ SAVEKMSG_MAGIC1       0x53415645       savekmsg                 ``arch/*/amiga/c
 GDA_MAGIC             0x58464552       gda                      ``arch/mips/include/asm/sn/gda.h``
 RED_MAGIC1            0x5a2cf071       (any)                    ``mm/slab.c``
 EEPROM_MAGIC_VALUE    0x5ab478d2       lanai_dev                ``drivers/atm/lanai.c``
-HDLCDRV_MAGIC         0x5ac6e778       hdlcdrv_state            ``include/linux/hdlcdrv.h``
+HDLCDRV_MAGIC         0x5ac6e778       hdlcdrv_state            ``include/linaos/hdlcdrv.h``
 PCXX_MAGIC            0x5c6df104       channel                  ``drivers/char/pcxx.h``
 KV_MAGIC              0x5f4b565f       kernel_vars_s            ``arch/mips/include/asm/sn/klkernvars.h``
 I810_STATE_MAGIC      0x63657373       i810_state               ``sound/oss/i810_audio.c``
@@ -129,12 +129,12 @@ M3_CARD_MAGIC         0x646e6f50       m3_card                  ``sound/oss/maes
 FW_HEADER_MAGIC       0x65726F66       fw_header                ``drivers/atm/fore200e.h``
 SLOT_MAGIC            0x67267321       slot                     ``drivers/hotplug/cpqphp.h``
 SLOT_MAGIC            0x67267322       slot                     ``drivers/hotplug/acpiphp.h``
-LO_MAGIC              0x68797548       nbd_device               ``include/linux/nbd.h``
+LO_MAGIC              0x68797548       nbd_device               ``include/linaos/nbd.h``
 M3_STATE_MAGIC        0x734d724d       m3_state                 ``sound/oss/maestro3.c``
 VMALLOC_MAGIC         0x87654320       snd_alloc_track          ``sound/core/memory.c``
 KMALLOC_MAGIC         0x87654321       snd_alloc_track          ``sound/core/memory.c``
 PWC_MAGIC             0x89DC10AB       pwc_device               ``drivers/usb/media/pwc.h``
-NBD_REPLY_MAGIC       0x96744668       nbd_reply                ``include/linux/nbd.h``
+NBD_REPLY_MAGIC       0x96744668       nbd_reply                ``include/linaos/nbd.h``
 ENI155_MAGIC          0xa54b872d       midway_eprom	        ``drivers/atm/eni.h``
 CODA_MAGIC            0xC0DAC0DA       coda_file_info           ``fs/coda/coda_fs_i.h``
 YAM_MAGIC             0xF10A7654       yam_port                 ``drivers/net/hamradio/yam.c``

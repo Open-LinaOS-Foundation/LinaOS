@@ -6,11 +6,11 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL PAGE
-#include <linux/module.h>
+#include <linaos/module.h>
 #define FSCACHE_USE_NEW_IO_API
-#include <linux/fscache-cache.h>
-#include <linux/slab.h>
-#include <linux/netfs.h>
+#include <linaos/fscache-cache.h>
+#include <linaos/slab.h>
+#include <linaos/netfs.h>
 #include "internal.h"
 
 /*

@@ -8,13 +8,13 @@
 //
 // This driver is based on max8997.c
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max14577.h>
-#include <linux/mfd/max14577-private.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/max14577.h>
+#include <linaos/mfd/max14577-private.h>
 
 /*
  * Table of valid charger currents for different Maxim chipsets.

@@ -35,7 +35,7 @@
 #define YPULSE 5
 #define DPI 96
 #define VFREQ 60 /* Hz */
-#define TIMING_NAME "Linux FHD"
+#define TIMING_NAME "LinaOS FHD"
 /* No ESTABLISHED_TIMINGx_BITS */
 #define HSYNC_POL 1
 #define VSYNC_POL 1

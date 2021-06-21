@@ -7,11 +7,11 @@
  * Copyright (C) 2009 Intel Corporation, Yu Zhao <yu.zhao@intel.com>
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/delay.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
 #include "pci.h"
 
 #define VIRTFN_ID_LEN	16

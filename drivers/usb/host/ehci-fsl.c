@@ -10,20 +10,20 @@
  * Anton Vorontsov <avorontsov@ru.mvista.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/err.h>
-#include <linux/usb.h>
-#include <linux/usb/ehci_def.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/err.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ehci_def.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/otg.h>
+#include <linaos/platform_device.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
 
 #include "ehci.h"
 #include "ehci-fsl.h"
@@ -238,7 +238,7 @@ static int ehci_fsl_setup_phy(struct usb_hcd *hcd,
 	case FSL_USB2_PHY_UTMI:
 		/* Presence of this node "has_fsl_erratum_a006918"
 		 * in device-tree is used to stop USB controller
-		 * initialization in Linux
+		 * initialization in LinaOS
 		 */
 		if (pdata->has_fsl_erratum_a006918) {
 			dev_warn(dev, "USB PHY clock invalid\n");

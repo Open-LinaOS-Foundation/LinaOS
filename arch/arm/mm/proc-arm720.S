@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/arch/arm/mm/proc-arm720.S: MMU functions for ARM720
+ *  linaos/arch/arm/mm/proc-arm720.S: MMU functions for ARM720
  *
  *  Copyright (C) 2000 Steve Hill (sjhill@cotw.com)
  *                     Rob Scott (rscott@mtrob.fdns.net)
@@ -18,9 +18,9 @@
  *   08-25-2000	DBS	Updated for integration of ARM Ltd version.
  *   04-20-2004 HSC	modified for non-paged memory management mode.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

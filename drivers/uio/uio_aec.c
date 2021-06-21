@@ -5,17 +5,17 @@
  * Copyright (C) 2008 Brandon Philips <brandon@ifup.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/uio_driver.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/uio_driver.h>
+#include <linaos/slab.h>
 
 #define PCI_VENDOR_ID_AEC 0xaecb
 #define PCI_DEVICE_ID_AEC_VITCLTC 0x6250

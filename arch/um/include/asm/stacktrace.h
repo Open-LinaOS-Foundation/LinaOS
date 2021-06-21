@@ -2,8 +2,8 @@
 #ifndef _ASM_UML_STACKTRACE_H
 #define _ASM_UML_STACKTRACE_H
 
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/ptrace.h>
 
 struct stack_frame {
 	struct stack_frame *next_frame;

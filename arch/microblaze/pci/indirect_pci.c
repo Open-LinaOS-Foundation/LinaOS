@@ -5,13 +5,13 @@
  * Copyright (C) 1998 Gabriel Paubert.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/pci-bridge.h>
 
 static int

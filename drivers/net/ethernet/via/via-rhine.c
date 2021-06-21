@@ -1,4 +1,4 @@
-/* via-rhine.c: A Linux Ethernet device driver for VIA Rhine family chips. */
+/* via-rhine.c: A LinaOS Ethernet device driver for VIA Rhine family chips. */
 /*
 	Written 1998-2001 by Donald Becker.
 
@@ -33,7 +33,7 @@
 
 #define DRV_NAME	"via-rhine"
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* A few user-configurable values.
    These may be modified when a driver module is loaded. */
@@ -85,35 +85,35 @@ static const int multicast_filter_limit = 32;
 
 #define PKT_BUF_SZ	1536	/* Size of each temporary Rx buffer.*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/if_vlan.h>
+#include <linaos/bitops.h>
+#include <linaos/workqueue.h>
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
-#include <linux/dmi.h>
+#include <linaos/uaccess.h>
+#include <linaos/dmi.h>
 
 MODULE_AUTHOR("Donald Becker <becker@scyld.com>");
 MODULE_DESCRIPTION("VIA Rhine PCI Fast Ethernet driver");

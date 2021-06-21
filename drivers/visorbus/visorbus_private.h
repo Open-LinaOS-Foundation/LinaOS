@@ -7,9 +7,9 @@
 #ifndef __VISORBUS_PRIVATE_H__
 #define __VISORBUS_PRIVATE_H__
 
-#include <linux/uuid.h>
-#include <linux/utsname.h>
-#include <linux/visorbus.h>
+#include <linaos/uuid.h>
+#include <linaos/utsname.h>
+#include <linaos/visorbus.h>
 
 #include "controlvmchannel.h"
 #include "vbuschannel.h"

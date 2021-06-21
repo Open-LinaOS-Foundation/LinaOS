@@ -1,10 +1,10 @@
 .. _managementstyle:
 
-Linux kernel management style
+LinaOS kernel management style
 =============================
 
 This is a short document describing the preferred (or made up, depending
-on who you ask) management style for the linux kernel.  It's meant to
+on who you ask) management style for the linaos kernel.  It's meant to
 mirror the :ref:`process/coding-style.rst <codingstyle>` document to some
 degree, and mainly written to avoid answering [#f1]_  the same (or similar)
 questions over and over again.

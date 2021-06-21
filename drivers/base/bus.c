@@ -8,16 +8,16 @@
  * Copyright (c) 2007 Novell Inc.
  */
 
-#include <linux/async.h>
-#include <linux/device/bus.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
+#include <linaos/async.h>
+#include <linaos/device/bus.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
 #include "base.h"
 #include "power/power.h"
 

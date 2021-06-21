@@ -6,10 +6,10 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/export.h>
 #include <bcm63xx_dev_enet.h>
 #include <bcm63xx_io.h>
 #include <bcm63xx_regs.h>

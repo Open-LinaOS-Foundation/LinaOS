@@ -6,7 +6,7 @@
  * Dreamcast.
  *
  * Copyright (c) 2001 M. R. Brown <mrbrown@0xd6.org>
- * Copyright (c) 2001 - 2008  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (c) 2001 - 2008  Paul Mundt <lethal@linaos-sh.org>
  *
  * This driver is mostly based on the excellent amifb and vfb sources.  It uses
  * an odd scheme for converting hardware values to/from framebuffer values,
@@ -45,17 +45,17 @@
 
 #undef DEBUG
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #ifdef CONFIG_SH_DREAMCAST
 #include <asm/machvec.h>
@@ -63,13 +63,13 @@
 #endif
 
 #ifdef CONFIG_PVR2_DMA
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 #include <mach/dma.h>
 #include <asm/dma.h>
 #endif
 
 #ifdef CONFIG_SH_STORE_QUEUES
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <cpu/sq.h>
 #endif
 
@@ -1130,6 +1130,6 @@ static void __exit pvr2fb_exit(void)
 module_init(pvr2fb_init);
 module_exit(pvr2fb_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>, M. R. Brown <mrbrown@0xd6.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@linaos-sh.org>, M. R. Brown <mrbrown@0xd6.org>");
 MODULE_DESCRIPTION("Framebuffer driver for NEC PowerVR 2 based graphics boards");
 MODULE_LICENSE("GPL");

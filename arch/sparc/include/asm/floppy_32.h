@@ -7,9 +7,9 @@
 #ifndef __ASM_SPARC_FLOPPY_H
 #define __ASM_SPARC_FLOPPY_H
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pgtable.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pgtable.h>
 
 #include <asm/idprom.h>
 #include <asm/oplib.h>
@@ -270,7 +270,7 @@ static int sun_fd_request_irq(void)
 	}
 }
 
-static struct linux_prom_registers fd_regs[2];
+static struct linaos_prom_registers fd_regs[2];
 
 static int sun_floppy_init(void)
 {

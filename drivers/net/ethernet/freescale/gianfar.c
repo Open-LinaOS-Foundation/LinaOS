@@ -59,28 +59,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/in.h>
-#include <linux/net_tstamp.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/unistd.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_vlan.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_platform.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/in.h>
+#include <linaos/net_tstamp.h>
 
 #include <asm/io.h>
 #ifdef CONFIG_PPC
@@ -88,15 +88,15 @@
 #include <asm/mpc85xx.h>
 #endif
 #include <asm/irq.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/crc32.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
 
 #include "gianfar.h"
 

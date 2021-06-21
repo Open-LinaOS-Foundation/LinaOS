@@ -6,18 +6,18 @@
 #include "saa7134.h"
 #include "saa7134-reg.h"
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/initval.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
 
 /*
  * Configuration macros

@@ -17,10 +17,10 @@
 
 #include "core.h"
 
-#include <linux/skbuff.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <linaos/skbuff.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/export.h>
 
 #include "debug.h"
 #include "target.h"

@@ -26,7 +26,7 @@
 		debug {
 			label = "zii:green:debug1";
 			gpios = <&gpio3 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -681,14 +681,14 @@
 };
 
 &uart1 {
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart1>;
 	status = "okay";
 };
 
 &uart2 {
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_uart2>;
 	status = "okay";

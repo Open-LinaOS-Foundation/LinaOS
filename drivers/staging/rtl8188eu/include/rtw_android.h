@@ -8,8 +8,8 @@
 #ifndef __RTW_ANDROID_H__
 #define __RTW_ANDROID_H__
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 
 enum ANDROID_WIFI_CMD {
 	ANDROID_WIFI_CMD_START,

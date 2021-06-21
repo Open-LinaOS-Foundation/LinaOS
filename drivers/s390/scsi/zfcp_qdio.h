@@ -10,7 +10,7 @@
 #ifndef ZFCP_QDIO_H
 #define ZFCP_QDIO_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include <asm/qdio.h>
 
 #define ZFCP_QDIO_SBALE_LEN	PAGE_SIZE

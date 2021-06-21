@@ -5,7 +5,7 @@
 #if !defined(__HUGE_MEMORY_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __HUGE_MEMORY_H
 
-#include  <linux/tracepoint.h>
+#include  <linaos/tracepoint.h>
 
 #define SCAN_STATUS							\
 	EM( SCAN_FAIL,			"failed")			\

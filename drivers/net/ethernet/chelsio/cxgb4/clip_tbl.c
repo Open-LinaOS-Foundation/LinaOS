@@ -1,5 +1,5 @@
 /*
- *  This file is part of the Chelsio T4 Ethernet driver for Linux.
+ *  This file is part of the Chelsio T4 Ethernet driver for LinaOS.
  *  Copyright (C) 2003-2014 Chelsio Communications.  All rights reserved.
  *
  *  Written by Deepak (deepak.s@chelsio.com)
@@ -10,10 +10,10 @@
  *  release for licensing terms and conditions.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/jhash.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/jhash.h>
+#include <linaos/if_vlan.h>
 #include <net/addrconf.h>
 #include "cxgb4.h"
 #include "clip_tbl.h"

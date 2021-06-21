@@ -1,7 +1,7 @@
 #!/bin/sh
 # SPDX-License-Identifier: LGPL-2.1
 
-[ $# -eq 1 ] && header_dir=$1 || header_dir=tools/include/uapi/linux/
+[ $# -eq 1 ] && header_dir=$1 || header_dir=tools/include/uapi/linaos/
 
 printf "static const char *fadvise_advices[] = {\n"
 regex='^[[:space:]]*#[[:space:]]*define[[:space:]]+POSIX_FADV_(\w+)[[:space:]]+([[:digit:]]+)[[:space:]]+.*'
@@ -15,7 +15,7 @@ printf "};\n"
 # XXX Fix this properly:
 
 # The grep 6/7 DONTNEED/NOREUSE are a hack to filter out the s/390 oddity See
-# tools/include/uapi/linux/fadvise.h for details.
+# tools/include/uapi/linaos/fadvise.h for details.
 
 # Probably fix this when generating the string tables per arch so that We can
 # reliably process on arch FOO a perf.data file collected by 'perf trace

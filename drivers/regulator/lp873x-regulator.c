@@ -13,11 +13,11 @@
  * GNU General Public License version 2 for more details.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/lp873x.h>
+#include <linaos/mfd/lp873x.h>
 
 #define LP873X_REGULATOR(_name, _id, _of, _ops, _n, _vr, _vm, _er, _em, \
 			 _delay, _lr, _cr)				\

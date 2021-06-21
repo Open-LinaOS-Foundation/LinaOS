@@ -5,12 +5,12 @@
  *  Copyright (C) 2009 Bill Liu <Bill.Liu@Conexant.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 #include <media/dvb_frontend.h>
 #include "s5h1432.h"
 

@@ -14,14 +14,14 @@
  * is not parsed in any way).
  */
 
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/root_dev.h>
-#include <linux/screen_info.h>
-#include <linux/memblock.h>
-#include <uapi/linux/mount.h>
+#include <linaos/init.h>
+#include <linaos/initrd.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/root_dev.h>
+#include <linaos/screen_info.h>
+#include <linaos/memblock.h>
+#include <uapi/linaos/mount.h>
 
 #include <asm/setup.h>
 #include <asm/system_info.h>

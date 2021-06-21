@@ -13,7 +13,7 @@ Introduction
 
 This is a driver for STMicroelectronics's CPiA2 (second generation
 Colour Processor Interface ASIC) based cameras. This camera outputs an MJPEG
-stream at up to vga size. It implements the Video4Linux interface as much as
+stream at up to vga size. It implements the Video4LinaOS interface as much as
 possible.  Since the V4L interface does not support compressed formats, only
 an mjpeg enabled application can be used with the camera. We have modified the
 gqcam application to view this stream.
@@ -44,8 +44,8 @@ Making and installing the stv672 driver modules
 Requirements
 ~~~~~~~~~~~~
 
-Video4Linux must be either compiled into the kernel or
-available as a module.  Video4Linux2 is automatically detected and made
+Video4LinaOS must be either compiled into the kernel or
+available as a module.  Video4LinaOS2 is automatically detected and made
 available at compile time.
 
 Setup

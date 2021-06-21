@@ -9,19 +9,19 @@
  * Kevin Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.
  */
-#include <linux/compat.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
+#include <linaos/compat.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/kbuild.h>
+#include <linaos/suspend.h>
 #include <asm/cpu-info.h>
 #include <asm/pm.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 #include <asm/smp-cps.h>
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 void output_ptreg_defines(void)
 {
@@ -182,7 +182,7 @@ void output_mm_defines(void)
 	COMMENT("Size of struct page");
 	DEFINE(STRUCT_PAGE_SIZE, sizeof(struct page));
 	BLANK();
-	COMMENT("Linux mm_struct offsets.");
+	COMMENT("LinaOS mm_struct offsets.");
 	OFFSET(MM_USERS, mm_struct, mm_users);
 	OFFSET(MM_PGD, mm_struct, pgd);
 	OFFSET(MM_CONTEXT, mm_struct, context);
@@ -218,7 +218,7 @@ void output_mm_defines(void)
 #ifdef CONFIG_32BIT
 void output_sc_defines(void)
 {
-	COMMENT("Linux sigcontext offsets.");
+	COMMENT("LinaOS sigcontext offsets.");
 	OFFSET(SC_REGS, sigcontext, sc_regs);
 	OFFSET(SC_FPREGS, sigcontext, sc_fpregs);
 	OFFSET(SC_ACX, sigcontext, sc_acx);
@@ -240,7 +240,7 @@ void output_sc_defines(void)
 #ifdef CONFIG_64BIT
 void output_sc_defines(void)
 {
-	COMMENT("Linux sigcontext offsets.");
+	COMMENT("LinaOS sigcontext offsets.");
 	OFFSET(SC_REGS, sigcontext, sc_regs);
 	OFFSET(SC_FPREGS, sigcontext, sc_fpregs);
 	OFFSET(SC_MDHI, sigcontext, sc_mdhi);
@@ -253,7 +253,7 @@ void output_sc_defines(void)
 
 void output_signal_defined(void)
 {
-	COMMENT("Linux signal numbers.");
+	COMMENT("LinaOS signal numbers.");
 	DEFINE(_SIGHUP, SIGHUP);
 	DEFINE(_SIGINT, SIGINT);
 	DEFINE(_SIGQUIT, SIGQUIT);
@@ -320,7 +320,7 @@ void output_octeon_cop2_state_defines(void)
 #ifdef CONFIG_HIBERNATION
 void output_pbe_defines(void)
 {
-	COMMENT(" Linux struct pbe offsets. ");
+	COMMENT(" LinaOS struct pbe offsets. ");
 	OFFSET(PBE_ADDRESS, pbe, address);
 	OFFSET(PBE_ORIG_ADDRESS, pbe, orig_address);
 	OFFSET(PBE_NEXT, pbe, next);

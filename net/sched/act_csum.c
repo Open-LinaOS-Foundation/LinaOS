@@ -5,23 +5,23 @@
  * Copyright (c) 2010 Gregoire Baron <baronchon@n7mm.org>
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
 
-#include <linux/netlink.h>
+#include <linaos/netlink.h>
 #include <net/netlink.h>
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/igmp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/igmp.h>
 #include <net/tcp.h>
 #include <net/udp.h>
 #include <net/ip6_checksum.h>
@@ -30,7 +30,7 @@
 #include <net/act_api.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_csum.h>
+#include <linaos/tc_act/tc_csum.h>
 #include <net/tc_act/tc_csum.h>
 
 static const struct nla_policy csum_policy[TCA_CSUM_MAX + 1] = {

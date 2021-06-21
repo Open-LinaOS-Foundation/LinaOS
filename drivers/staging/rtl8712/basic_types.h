@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -14,7 +14,7 @@
 #ifndef __BASIC_TYPES_H__
 #define __BASIC_TYPES_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define sint signed int
 

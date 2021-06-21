@@ -4,15 +4,15 @@
 /* Written 1998-2000 by Werner Almesberger, EPFL ICA */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/bitops.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 #include <net/dsfield.h>

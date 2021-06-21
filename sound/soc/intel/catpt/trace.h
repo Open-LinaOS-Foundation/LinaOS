@@ -11,8 +11,8 @@
 #if !defined(__SND_SOC_INTEL_CATPT_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __SND_SOC_INTEL_CATPT_TRACE_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linaos/types.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(catpt_ipc_msg,
 

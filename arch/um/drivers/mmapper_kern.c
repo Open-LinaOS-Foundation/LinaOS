@@ -10,15 +10,15 @@
  *
  */
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <mem_user.h>
 
 /* These are set in mmapper_init, which is called at boot time */
@@ -131,5 +131,5 @@ module_init(mmapper_init);
 module_exit(mmapper_exit);
 
 MODULE_AUTHOR("Greg Lonnon <glonnon@ridgerun.com>");
-MODULE_DESCRIPTION("DSPLinux simulator mmapper driver");
+MODULE_DESCRIPTION("DSPLinaOS simulator mmapper driver");
 MODULE_LICENSE("GPL");

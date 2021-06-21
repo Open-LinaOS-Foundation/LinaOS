@@ -12,13 +12,13 @@
  * Copyright (C) 2018-2020 Intel Corporation
  */
 
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
 #include <net/sch_generic.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/random.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/random.h>
 #include <net/mac80211.h>
 
 #include "ieee80211_i.h"

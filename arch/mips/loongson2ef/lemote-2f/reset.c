@@ -7,9 +7,9 @@
  * Author: Wu Zhangjin, wuzhangjin@gmail.com
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/types.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
 
 #include <asm/bootinfo.h>
 

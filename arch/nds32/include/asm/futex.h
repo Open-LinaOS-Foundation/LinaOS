@@ -4,8 +4,8 @@
 #ifndef __NDS32_FUTEX_H__
 #define __NDS32_FUTEX_H__
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <linaos/futex.h>
+#include <linaos/uaccess.h>
 #include <asm/errno.h>
 
 #define __futex_atomic_ex_table(err_reg)			\

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fb_cmdline.c
+ *  linaos/drivers/video/fb_cmdline.c
  *
  *  Copyright (C) 2014 Intel Corp
  *  Copyright (C) 1994 Martin Schaller
@@ -14,8 +14,8 @@
  * Authors:
  *    Vetter <danie.vetter@ffwll.ch>
  */
-#include <linux/init.h>
-#include <linux/fb.h>
+#include <linaos/init.h>
+#include <linaos/fb.h>
 
 static char *video_options[FB_MAX] __read_mostly;
 static int ofonly __read_mostly;

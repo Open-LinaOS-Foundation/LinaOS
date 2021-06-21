@@ -8,7 +8,7 @@
 #ifndef __ARM64_S2_PGTABLE_H_
 #define __ARM64_S2_PGTABLE_H_
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 
 /*
  * PGDIR_SHIFT determines the size a top-level page table entry can map

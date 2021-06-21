@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/common/sa1111.c
+ * linaos/arch/arm/common/sa1111.c
  *
  * SA1111 support
  *
@@ -11,25 +11,25 @@
  * All initialization functions provided here are intended to be called
  * from machine specific code with proper arguments when required.
  */
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/dma-map-ops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include <mach/hardware.h>
 #include <asm/mach/irq.h>
 #include <asm/mach-types.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <asm/hardware/sa1111.h>
 

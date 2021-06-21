@@ -14,15 +14,15 @@
  *	     tighter packing. Prefetchable range support.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/cache.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
 #include "pci.h"
 
 unsigned int pci_flags;

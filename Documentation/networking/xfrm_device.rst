@@ -38,7 +38,7 @@ Callbacks to implement
 
 ::
 
-  /* from include/linux/netdevice.h */
+  /* from include/linaos/netdevice.h */
   struct xfrmdev_ops {
 	int	(*xdo_dev_state_add) (struct xfrm_state *x);
 	void	(*xdo_dev_state_delete) (struct xfrm_state *x);

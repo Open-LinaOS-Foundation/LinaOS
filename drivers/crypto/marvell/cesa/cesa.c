@@ -11,21 +11,21 @@
  * Sebastian Andrzej Siewior < sebastian at breakpoint dot cc >
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/genalloc.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kthread.h>
-#include <linux/mbus.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/genalloc.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kthread.h>
+#include <linaos/mbus.h>
+#include <linaos/platform_device.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
 
 #include "cesa.h"
 

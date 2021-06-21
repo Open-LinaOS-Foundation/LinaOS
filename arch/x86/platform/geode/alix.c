@@ -13,17 +13,17 @@
  * In the future leds-net5501.c should be migrated over to platform
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/moduleparam.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/machine.h>
-#include <linux/dmi.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/string.h>
+#include <linaos/moduleparam.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/dmi.h>
 
 #include <asm/geode.h>
 

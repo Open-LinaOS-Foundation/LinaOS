@@ -8,17 +8,17 @@
 
 #define pr_fmt(fmt) "arm-pv: " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/cpuhotplug.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/jump_label.h>
-#include <linux/printk.h>
-#include <linux/psci.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/static_call.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/export.h>
+#include <linaos/io.h>
+#include <linaos/jump_label.h>
+#include <linaos/printk.h>
+#include <linaos/psci.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/static_call.h>
 
 #include <asm/paravirt.h>
 #include <asm/pvclock-abi.h>

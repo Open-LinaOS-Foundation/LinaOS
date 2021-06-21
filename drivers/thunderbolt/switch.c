@@ -6,13 +6,13 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/nvmem-provider.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched/signal.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/idr.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
 
 #include "tb.h"
 

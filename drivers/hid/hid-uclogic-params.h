@@ -16,8 +16,8 @@
 #ifndef _HID_UCLOGIC_PARAMS_H
 #define _HID_UCLOGIC_PARAMS_H
 
-#include <linux/usb.h>
-#include <linux/hid.h>
+#include <linaos/usb.h>
+#include <linaos/hid.h>
 
 /* Types of pen in-range reporting */
 enum uclogic_params_pen_inrange {

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/soc-topology.h -- ALSA SoC Firmware Controls and DAPM
+ * linaos/sound/soc-topology.h -- ALSA SoC Firmware Controls and DAPM
  *
  * Copyright (C) 2012 Texas Instruments Inc.
  * Copyright (C) 2015 Intel Corporation.
@@ -13,7 +13,7 @@
 #define __LINUX_SND_SOC_TPLG_H
 
 #include <sound/asoc.h>
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct firmware;
 struct snd_kcontrol;

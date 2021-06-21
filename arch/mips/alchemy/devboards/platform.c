@@ -3,13 +3,13 @@
  * devoard misc stuff.
  */
 
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/physmap.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
+#include <linaos/init.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
 
 #include <asm/bootinfo.h>
 #include <asm/idle.h>

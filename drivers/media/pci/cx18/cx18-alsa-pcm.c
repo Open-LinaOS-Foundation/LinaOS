@@ -9,8 +9,8 @@
  *  Portions of this work were sponsored by ONELAN Limited.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
 
 #include <media/v4l2-device.h>
 

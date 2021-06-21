@@ -5,14 +5,14 @@
  * Copyright (C) 2017 Fuzhou Rockchip Electronics Co., Ltd
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/rational.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/rational.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

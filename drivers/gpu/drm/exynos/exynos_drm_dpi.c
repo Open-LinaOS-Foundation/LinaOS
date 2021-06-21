@@ -7,8 +7,8 @@
  * Contacts: Andrzej Hajda <a.hajda@samsung.com>
 */
 
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/of_graph.h>
+#include <linaos/regulator/consumer.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_panel.h>

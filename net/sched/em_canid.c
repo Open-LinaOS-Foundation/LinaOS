@@ -11,14 +11,14 @@
  * Funded by:  Volkswagen Group Research
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
 #include <net/pkt_cls.h>
-#include <linux/can.h>
+#include <linaos/can.h>
 
 #define EM_CAN_RULES_MAX 500
 

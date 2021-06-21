@@ -2,7 +2,7 @@
 #ifndef __PINCTRL_MTK_MT6397_H
 #define __PINCTRL_MTK_MT6397_H
 
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinctrl.h>
 #include "pinctrl-mtk-common.h"
 
 static const struct mtk_desc_pin mtk_pins_mt6397[] = {

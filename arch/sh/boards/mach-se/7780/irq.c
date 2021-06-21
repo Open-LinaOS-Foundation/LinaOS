@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7780/irq.c
+ * linaos/arch/sh/boards/se/7780/irq.c
  *
  * Copyright (C) 2006,2007  Nobuhiro Iwamatsu
  *
  * Hitachi UL SolutionEngine 7780 Support.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 #include <mach-se/mach/se7780.h>
 
 #define INTC_BASE	0xffd00000

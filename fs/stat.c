@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/stat.c
+ *  linaos/fs/stat.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/highuid.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
-#include <linux/compat.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/file.h>
+#include <linaos/highuid.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/security.h>
+#include <linaos/cred.h>
+#include <linaos/syscalls.h>
+#include <linaos/pagemap.h>
+#include <linaos/compat.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 
 #include "internal.h"

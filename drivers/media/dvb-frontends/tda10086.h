@@ -10,8 +10,8 @@
 #ifndef TDA10086_H
 #define TDA10086_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/firmware.h>
 
 enum tda10086_xtal {
 	TDA10086_XTAL_16M,

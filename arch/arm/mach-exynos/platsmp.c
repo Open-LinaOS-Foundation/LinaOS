@@ -2,19 +2,19 @@
 // Copyright (c) 2010-2011 Samsung Electronics Co., Ltd.
 //		http://www.samsung.com
 //
-// Cloned from linux/arch/arm/mach-vexpress/platsmp.c
+// Cloned from linaos/arch/arm/mach-vexpress/platsmp.c
 //
 //  Copyright (C) 2002 ARM Ltd.
 //  All Rights Reserved
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/soc/samsung/exynos-regs-pmu.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
@@ -333,7 +333,7 @@ static int exynos_boot_secondary(unsigned int cpu, struct task_struct *idle)
 	 * that it has been released by resetting exynos_pen_release.
 	 *
 	 * Note that "exynos_pen_release" is the hardware CPU core ID, whereas
-	 * "cpu" is Linux's internal ID.
+	 * "cpu" is LinaOS's internal ID.
 	 */
 	exynos_write_pen_release(core_id);
 

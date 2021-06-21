@@ -3,10 +3,10 @@
  * Copyright (c) 2012-2013, NVIDIA Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
 
 #include "drm.h"
 #include "gem.h"

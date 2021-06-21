@@ -6,7 +6,7 @@
 #ifndef AES_GMAC_H
 #define AES_GMAC_H
 
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 
 #define GMAC_AAD_LEN	20
 #define GMAC_MIC_LEN	16

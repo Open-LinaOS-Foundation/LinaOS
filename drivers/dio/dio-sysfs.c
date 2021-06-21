@@ -11,9 +11,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/dio.h>
-#include <linux/stat.h>
+#include <linaos/kernel.h>
+#include <linaos/dio.h>
+#include <linaos/stat.h>
 
 /* show configuration fields */
 

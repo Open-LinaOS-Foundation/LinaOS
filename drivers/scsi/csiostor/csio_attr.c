@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for LinaOS.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,14 +32,14 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/mm.h>
+#include <linaos/jiffies.h>
 #include <scsi/fc/fc_fs.h>
 
 #include "csio_init.h"

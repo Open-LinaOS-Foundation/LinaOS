@@ -5,7 +5,7 @@
 
 #include <asm/setup.h>
 #include <asm/cache.h>
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /*
  * PAGE_SHIFT determines the page size: 4KB
@@ -32,7 +32,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/pfn.h>
+#include <linaos/pfn.h>
 
 #define virt_to_pfn(kaddr)      (__pa(kaddr) >> PAGE_SHIFT)
 #define pfn_to_virt(pfn)        __va((pfn) << PAGE_SHIFT)

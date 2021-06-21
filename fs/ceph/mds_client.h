@@ -2,20 +2,20 @@
 #ifndef _FS_CEPH_MDS_CLIENT_H
 #define _FS_CEPH_MDS_CLIENT_H
 
-#include <linux/completion.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/refcount.h>
-#include <linux/utsname.h>
-#include <linux/ktime.h>
+#include <linaos/completion.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/rbtree.h>
+#include <linaos/spinlock.h>
+#include <linaos/refcount.h>
+#include <linaos/utsname.h>
+#include <linaos/ktime.h>
 
-#include <linux/ceph/types.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/mdsmap.h>
-#include <linux/ceph/auth.h>
+#include <linaos/ceph/types.h>
+#include <linaos/ceph/messenger.h>
+#include <linaos/ceph/mdsmap.h>
+#include <linaos/ceph/auth.h>
 
 #include "metric.h"
 #include "super.h"

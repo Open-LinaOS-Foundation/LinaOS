@@ -3,14 +3,14 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/property.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/property.h>
 #include "inv_mpu_iio.h"
 
 static const struct regmap_config inv_mpu_regmap_config = {

@@ -7,27 +7,27 @@
  *  Copyright 1999 ARM Limited
  *  Copyright (C) 2000-2001 Deep Blue Solutions Ltd.
  */
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/serial.h> /* for serial_state and serial_icounter_struct */
-#include <linux/serial_core.h>
-#include <linux/sysrq.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/security.h>
+#include <linaos/module.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/serial.h> /* for serial_state and serial_icounter_struct */
+#include <linaos/serial_core.h>
+#include <linaos/sysrq.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/security.h>
 
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/irq.h>
+#include <linaos/uaccess.h>
 
 /*
  * This is used to lock changes in serial line configuration.
@@ -3243,7 +3243,7 @@ int uart_get_rs485_mode(struct uart_port *port)
 	if (device_property_read_bool(dev, "rs485-rx-during-tx"))
 		rs485conf->flags |= SER_RS485_RX_DURING_TX;
 
-	if (device_property_read_bool(dev, "linux,rs485-enabled-at-boot-time"))
+	if (device_property_read_bool(dev, "linaos,rs485-enabled-at-boot-time"))
 		rs485conf->flags |= SER_RS485_ENABLED;
 
 	if (device_property_read_bool(dev, "rs485-rts-active-low")) {

@@ -8,15 +8,15 @@
  * 
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/parport.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/parport.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
 #include <asm/io.h>
 
 #include <scsi/scsi.h>

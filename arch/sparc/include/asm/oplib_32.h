@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * oplib.h:  Describes the interface and available routines in the
- *           Linux Prom library.
+ *           LinaOS Prom library.
  *
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
@@ -10,11 +10,11 @@
 #define __SPARC_OPLIB_H
 
 #include <asm/openprom.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
+#include <linaos/spinlock.h>
+#include <linaos/compiler.h>
 
 /* The master romvec pointer... */
-extern struct linux_romvec *romvec;
+extern struct linaos_romvec *romvec;
 
 /* Enumeration to describe the prom major version we have detected. */
 enum prom_major_version {
@@ -37,14 +37,14 @@ extern phandle prom_root_node;
  * and usage utility functions.  Only prom-lib should use these,
  * users use the interface defined by the library only!
  */
-extern struct linux_nodeops *prom_nodeops;
+extern struct linaos_nodeops *prom_nodeops;
 
 /* The functions... */
 
 /* You must call prom_init() before using any of the library services,
  * preferably as early as possible.  Pass it the romvec pointer.
  */
-void prom_init(struct linux_romvec *rom_ptr);
+void prom_init(struct linaos_romvec *rom_ptr);
 
 /* Boot argument acquisition, returns the boot command line string. */
 char *prom_getbootargs(void);
@@ -103,7 +103,7 @@ void prom_write(const char *buf, unsigned int len);
 /* Start the CPU with the given device tree node, context table, and context
  * at the passed program counter.
  */
-int prom_startcpu(int cpunode, struct linux_prom_registers *context_table,
+int prom_startcpu(int cpunode, struct linaos_prom_registers *context_table,
 		  int context, char *program_counter);
 
 /* Initialize the memory lists based upon the prom version. */
@@ -166,11 +166,11 @@ phandle prom_inst2pkg(int);
 /* Dorking with Bus ranges... */
 
 /* Apply promlib probes OBIO ranges to registers. */
-void prom_apply_obio_ranges(struct linux_prom_registers *obioregs, int nregs);
+void prom_apply_obio_ranges(struct linaos_prom_registers *obioregs, int nregs);
 
 /* Apply ranges of any prom node (and optionally parent node as well) to registers. */
 void prom_apply_generic_ranges(phandle node, phandle parent,
-			       struct linux_prom_registers *sbusregs, int nregs);
+			       struct linaos_prom_registers *sbusregs, int nregs);
 
 void prom_ranges_init(void);
 

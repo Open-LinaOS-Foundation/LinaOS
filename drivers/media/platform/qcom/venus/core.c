@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2016, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/io.h>
-#include <linux/ioctl.h>
-#include <linux/delay.h>
-#include <linux/devcoredump.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pm_runtime.h>
+#include <linaos/init.h>
+#include <linaos/interconnect.h>
+#include <linaos/io.h>
+#include <linaos/ioctl.h>
+#include <linaos/delay.h>
+#include <linaos/devcoredump.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/pm_runtime.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/v4l2-mem2mem.h>
 #include <media/v4l2-ioctl.h>

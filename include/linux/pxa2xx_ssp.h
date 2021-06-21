@@ -14,12 +14,12 @@
 #ifndef __LINUX_SSP_H
 #define __LINUX_SSP_H
 
-#include <linux/bits.h>
-#include <linux/compiler_types.h>
-#include <linux/io.h>
-#include <linux/kconfig.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/compiler_types.h>
+#include <linaos/io.h>
+#include <linaos/kconfig.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
 
 struct clk;
 struct device;

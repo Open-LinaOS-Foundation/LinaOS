@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/stacktrace.h>
-#include <linux/fault-inject.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/stat.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/export.h>
+#include <linaos/interrupt.h>
+#include <linaos/stacktrace.h>
+#include <linaos/fault-inject.h>
 
 /*
  * setup_fault_attr() is a helper function for various __setup handlers, so it

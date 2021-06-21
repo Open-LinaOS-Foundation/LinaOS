@@ -31,25 +31,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/syscalls.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/ptrace.h>
-#include <linux/audit.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/syscalls.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/highmem.h>
+#include <linaos/ptrace.h>
+#include <linaos/audit.h>
+#include <linaos/stddef.h>
+#include <linaos/slab.h>
+#include <linaos/security.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/tlbflush.h>
 #include <asm/irq.h>

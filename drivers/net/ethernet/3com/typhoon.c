@@ -1,8 +1,8 @@
-/* typhoon.c: A Linux Ethernet device driver for 3Com 3CR990 family of NICs */
+/* typhoon.c: A LinaOS Ethernet device driver for 3Com 3CR990 family of NICs */
 /*
 	Written 2002-2004 by David Dillow <dave@thedillows.org>
 	Based on code written 1998-2000 by Donald Becker <becker@scyld.com> and
-	Linux 2.2.x driver by David P. McLean <davidpmclean@yahoo.com>.
+	LinaOS 2.2.x driver by David P. McLean <davidpmclean@yahoo.com>.
 
 	This software may be used and distributed according to the terms of
 	the GNU General Public License (GPL), incorporated herein by reference.
@@ -98,31 +98,31 @@ static const int multicast_filter_limit = 32;
 
 #define pr_fmt(fmt)		KBUILD_MODNAME " " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/crc32.h>
+#include <linaos/bitops.h>
 #include <asm/processor.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/in6.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
+#include <linaos/uaccess.h>
+#include <linaos/in6.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
 
 #include "typhoon.h"
 
@@ -908,7 +908,7 @@ typhoon_do_get_stats(struct typhoon *tp)
 	if (err < 0)
 		return err;
 
-	/* 3Com's Linux driver uses txMultipleCollisions as it's
+	/* 3Com's LinaOS driver uses txMultipleCollisions as it's
 	 * collisions value, but there is some other collision info as well...
 	 *
 	 * The extra status reported would be a good candidate for

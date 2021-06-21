@@ -13,17 +13,17 @@
  */
 #define pr_fmt(fmt) "esrt: " fmt
 
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/capability.h>
+#include <linaos/device.h>
+#include <linaos/efi.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/kobject.h>
+#include <linaos/list.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include <asm/io.h>
 #include <asm/early_ioremap.h>

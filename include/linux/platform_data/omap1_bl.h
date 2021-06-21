@@ -2,7 +2,7 @@
 #ifndef __OMAP1_BL_H__
 #define __OMAP1_BL_H__
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 struct omap_backlight_config {
 	int default_intensity;

@@ -8,7 +8,7 @@
 #ifndef esi_h
 #define esi_h
 
-#include <linux/efi.h>
+#include <linaos/efi.h>
 
 #define ESI_QUERY			0x00000001
 #define ESI_OPEN_HANDLE			0x02000000

@@ -47,7 +47,7 @@ Library functionality that is used throughout the kernel.
 Concurrency primitives
 ======================
 
-How Linux keeps everything from happening at the same time.  See
+How LinaOS keeps everything from happening at the same time.  See
 :doc:`/locking/index` for more related documentation.
 
 .. toctree::

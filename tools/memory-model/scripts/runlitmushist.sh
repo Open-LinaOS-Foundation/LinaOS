@@ -8,12 +8,12 @@
 #
 # sh runlitmushist.sh
 #
-# Run from the Linux kernel tools/memory-model directory.
+# Run from the LinaOS kernel tools/memory-model directory.
 # This script uses environment variables produced by parseargs.sh.
 #
 # Copyright IBM Corporation, 2018
 #
-# Author: Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+# Author: Paul E. McKenney <paulmck@linaos.vnet.ibm.com>
 
 T=/tmp/runlitmushist.sh.$$
 trap 'rm -rf $T' 0

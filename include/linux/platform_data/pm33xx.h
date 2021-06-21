@@ -9,8 +9,8 @@
 #ifndef _LINUX_PLATFORM_DATA_PM33XX_H
 #define _LINUX_PLATFORM_DATA_PM33XX_H
 
-#include <linux/kbuild.h>
-#include <linux/types.h>
+#include <linaos/kbuild.h>
+#include <linaos/types.h>
 
 /*
  * WFI Flags for sleep code control

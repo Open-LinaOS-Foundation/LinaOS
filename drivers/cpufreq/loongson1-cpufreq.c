@@ -8,15 +8,15 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <cpufreq.h>
 #include <loongson1.h>

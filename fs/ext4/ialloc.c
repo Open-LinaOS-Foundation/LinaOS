@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/ialloc.c
+ *  linaos/fs/ext4/ialloc.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -13,16 +13,16 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/quotaops.h>
-#include <linux/buffer_head.h>
-#include <linux/random.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/cred.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/quotaops.h>
+#include <linaos/buffer_head.h>
+#include <linaos/random.h>
+#include <linaos/bitops.h>
+#include <linaos/blkdev.h>
+#include <linaos/cred.h>
 
 #include <asm/byteorder.h>
 

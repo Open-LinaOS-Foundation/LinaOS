@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _LINUX_VIRTIO_BYTEORDER_H
 #define _LINUX_VIRTIO_BYTEORDER_H
-#include <linux/types.h>
-#include <uapi/linux/virtio_types.h>
+#include <linaos/types.h>
+#include <uapi/linaos/virtio_types.h>
 
 static inline bool virtio_legacy_is_little_endian(void)
 {

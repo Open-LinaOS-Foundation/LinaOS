@@ -11,8 +11,8 @@
 #define __UM_SYSCALL_GENERIC_H
 
 #include <asm/ptrace.h>
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
 #include <sysdep/ptrace.h>
 
 static inline int syscall_get_nr(struct task_struct *task, struct pt_regs *regs)

@@ -12,7 +12,7 @@
 #ifndef _ASM_SGIARCS_H
 #define _ASM_SGIARCS_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <asm/types.h>
 #include <asm/fw/arc/types.h>
@@ -49,11 +49,11 @@
 /* Device classes, types, and identifiers for prom
  * device inventory queries.
  */
-enum linux_devclass {
+enum linaos_devclass {
 	system, processor, cache, adapter, controller, peripheral, memory
 };
 
-enum linux_devtypes {
+enum linaos_devtypes {
 	/* Generic stuff. */
 	Arc, Cpu, Fpu,
 
@@ -73,15 +73,15 @@ enum linux_devtypes {
 	net_peripheral, misc_peripheral, anon
 };
 
-enum linux_identifier {
+enum linaos_identifier {
 	bogus, ronly, removable, consin, consout, input, output
 };
 
 /* A prom device tree component. */
-struct linux_component {
-	enum linux_devclass	class;	/* node class */
-	enum linux_devtypes	type;	/* node type */
-	enum linux_identifier	iflags; /* node flags */
+struct linaos_component {
+	enum linaos_devclass	class;	/* node class */
+	enum linaos_devtypes	type;	/* node type */
+	enum linaos_identifier	iflags; /* node flags */
 	USHORT			vers;	/* node version */
 	USHORT			rev;	/* node revision */
 	ULONG			key;	/* completely magic */
@@ -90,9 +90,9 @@ struct linux_component {
 	ULONG			ilen;	/* length of string identifier */
 	_PULONG			iname;	/* string identifier */
 };
-typedef struct linux_component pcomponent;
+typedef struct linaos_component pcomponent;
 
-struct linux_sysid {
+struct linaos_sysid {
 	char vend[8], prod[8];
 };
 
@@ -120,19 +120,19 @@ enum arc_memtypes {
 	arc_fcontig, /* Contiguous and free */
 };
 
-union linux_memtypes {
+union linaos_memtypes {
     enum arcs_memtypes arcs;
     enum arc_memtypes arc;
 };
 
-struct linux_mdesc {
-	union linux_memtypes type;
+struct linaos_mdesc {
+	union linaos_memtypes type;
 	ULONG base;
 	ULONG pages;
 };
 
 /* Time of day descriptor. */
-struct linux_tinfo {
+struct linaos_tinfo {
 	unsigned short yr;
 	unsigned short mnth;
 	unsigned short day;
@@ -143,28 +143,28 @@ struct linux_tinfo {
 };
 
 /* ARCS virtual dirents. */
-struct linux_vdirent {
+struct linaos_vdirent {
 	ULONG namelen;
 	unsigned char attr;
 	char fname[32]; /* XXX empirical, should be a define */
 };
 
 /* Other stuff for files. */
-enum linux_omode {
+enum linaos_omode {
 	rdonly, wronly, rdwr, wronly_creat, rdwr_creat,
 	wronly_ssede, rdwr_ssede, dirent, dirent_creat
 };
 
-enum linux_seekmode {
+enum linaos_seekmode {
 	absolute, relative
 };
 
-enum linux_mountops {
+enum linaos_mountops {
 	media_load, media_unload
 };
 
 /* This prom has a bolixed design. */
-struct linux_bigint {
+struct linaos_bigint {
 #ifdef __MIPSEL__
 	u32 lo;
 	s32 hi;
@@ -174,11 +174,11 @@ struct linux_bigint {
 #endif
 };
 
-struct linux_finfo {
-	struct linux_bigint   begin;
-	struct linux_bigint   end;
-	struct linux_bigint   cur;
-	enum linux_devtypes   dtype;
+struct linaos_finfo {
+	struct linaos_bigint   begin;
+	struct linaos_bigint   end;
+	struct linaos_bigint   cur;
+	enum linaos_devtypes   dtype;
 	unsigned long	      namelen;
 	unsigned char	      attr;
 	char		      name[32]; /* XXX empirical, should be define */
@@ -186,7 +186,7 @@ struct linux_finfo {
 
 /* This describes the vector containing function pointers to the ARC
    firmware functions.	*/
-struct linux_romvec {
+struct linaos_romvec {
 	LONG	load;			/* Load an executable image. */
 	LONG	invoke;			/* Invoke a standalong image. */
 	LONG	exec;			/* Load and begin execution of a
@@ -270,10 +270,10 @@ typedef struct _SYSTEM_PARAMETER_BLOCK {
 } SYSTEM_PARAMETER_BLOCK, *PSYSTEM_PARAMETER_BLOCK;
 
 #define PROMBLOCK ((PSYSTEM_PARAMETER_BLOCK) (int)0xA0001000)
-#define ROMVECTOR ((struct linux_romvec *) (long)(PROMBLOCK)->romvec)
+#define ROMVECTOR ((struct linaos_romvec *) (long)(PROMBLOCK)->romvec)
 
 /* Cache layout parameter block. */
-union linux_cache_key {
+union linaos_cache_key {
 	struct param {
 #ifdef __MIPSEL__
 		unsigned short size;
@@ -289,10 +289,10 @@ union linux_cache_key {
 };
 
 /* Configuration data. */
-struct linux_cdata {
+struct linaos_cdata {
 	char *name;
 	int mlen;
-	enum linux_devtypes type;
+	enum linaos_devtypes type;
 };
 
 /* Common SGI ARCS firmware file descriptors. */
@@ -352,7 +352,7 @@ struct sgi_bsector {
 
 /* Debugging block used with SGI symmon symbolic debugger. */
 #define SMB_DEBUG_MAGIC	  0xfeeddead
-struct linux_smonblock {
+struct linaos_smonblock {
 	unsigned long	magic;
 	void		(*handler)(void);  /* Breakpoint routine. */
 	unsigned long	dtable_base;	   /* Base addr of dbg table. */

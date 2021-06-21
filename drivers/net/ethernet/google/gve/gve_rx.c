@@ -6,7 +6,7 @@
 
 #include "gve.h"
 #include "gve_adminq.h"
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 static void gve_rx_remove_from_block(struct gve_priv *priv, int queue_idx)
 {

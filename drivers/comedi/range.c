@@ -3,11 +3,11 @@
  * comedi/range.c
  * comedi routines for voltage ranges
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "comedidev.h"
 #include "comedi_internal.h"
 

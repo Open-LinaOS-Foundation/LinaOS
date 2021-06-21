@@ -8,15 +8,15 @@
  * Copyright (C) 2013-2015 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/regmap.h>
 
 /* PMIC device registers */
 #define REG_OFFSET_MASK		GENMASK(7, 0)

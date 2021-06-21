@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/balloon_compaction.h
+ * include/linaos/balloon_compaction.h
  *
  * Common interface definitions for making balloon pages movable by compaction.
  *
@@ -36,13 +36,13 @@
  */
 #ifndef _LINUX_BALLOON_COMPACTION_H
 #define _LINUX_BALLOON_COMPACTION_H
-#include <linux/pagemap.h>
-#include <linux/page-flags.h>
-#include <linux/migrate.h>
-#include <linux/gfp.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/list.h>
+#include <linaos/pagemap.h>
+#include <linaos/page-flags.h>
+#include <linaos/migrate.h>
+#include <linaos/gfp.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
 
 /*
  * Balloon device information descriptor.

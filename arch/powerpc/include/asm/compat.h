@@ -5,8 +5,8 @@
 /*
  * Architecture specific compatibility types
  */
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
 
 #include <asm-generic/compat.h>
 

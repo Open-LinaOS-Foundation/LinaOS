@@ -6,15 +6,15 @@
  * Ingi Kim <ingi2.kim@samsung.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/led-class-flash.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/led-class-flash.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
 
 /* Value related the movie mode */
 #define KTD2692_MOVIE_MODE_CURRENT_LEVELS	16

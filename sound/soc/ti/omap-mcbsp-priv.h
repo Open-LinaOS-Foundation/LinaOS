@@ -9,7 +9,7 @@
 #ifndef __OMAP_MCBSP_PRIV_H__
 #define __OMAP_MCBSP_PRIV_H__
 
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <linaos/platform_data/asoc-ti-mcbsp.h>
 
 #ifdef CONFIG_ARCH_OMAP1
 #define mcbsp_omap1()	1

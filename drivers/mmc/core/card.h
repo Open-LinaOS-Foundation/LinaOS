@@ -10,7 +10,7 @@
 #ifndef _MMC_CORE_CARD_H
 #define _MMC_CORE_CARD_H
 
-#include <linux/mmc/card.h>
+#include <linaos/mmc/card.h>
 
 #define mmc_card_name(c)	((c)->cid.prod_name)
 #define mmc_card_id(c)		(dev_name(&(c)->dev))

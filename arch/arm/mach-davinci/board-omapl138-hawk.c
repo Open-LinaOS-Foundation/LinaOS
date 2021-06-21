@@ -9,20 +9,20 @@
  * version 2. This program is licensed "as is" without any warranty of
  * any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
-#include <linux/platform_data/ti-aemif.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/platform_data/gpio-davinci.h>
+#include <linaos/platform_data/mtd-davinci.h>
+#include <linaos/platform_data/mtd-davinci-aemif.h>
+#include <linaos/platform_data/ti-aemif.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

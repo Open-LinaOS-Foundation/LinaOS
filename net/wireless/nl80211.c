@@ -8,19 +8,19 @@
  * Copyright (C) 2018-2021 Intel Corporation
  */
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/if_ether.h>
-#include <linux/ieee80211.h>
-#include <linux/nl80211.h>
-#include <linux/rtnetlink.h>
-#include <linux/netlink.h>
-#include <linux/nospec.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
+#include <linaos/if.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/if_ether.h>
+#include <linaos/ieee80211.h>
+#include <linaos/nl80211.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/netlink.h>
+#include <linaos/nospec.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
 #include <net/net_namespace.h>
 #include <net/genetlink.h>
 #include <net/cfg80211.h>

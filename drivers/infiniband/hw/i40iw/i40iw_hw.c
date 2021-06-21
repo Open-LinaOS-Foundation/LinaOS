@@ -32,13 +32,13 @@
 *
 *******************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/if_vlan.h>
 
 #include "i40iw.h"
 

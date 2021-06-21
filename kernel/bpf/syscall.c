@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/bpf_lirc.h>
-#include <linux/bpf_verifier.h>
-#include <linux/btf.h>
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/vmalloc.h>
-#include <linux/mmzone.h>
-#include <linux/anon_inodes.h>
-#include <linux/fdtable.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/license.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/cred.h>
-#include <linux/timekeeping.h>
-#include <linux/ctype.h>
-#include <linux/nospec.h>
-#include <linux/audit.h>
-#include <uapi/linux/btf.h>
-#include <linux/pgtable.h>
-#include <linux/bpf_lsm.h>
-#include <linux/poll.h>
-#include <linux/bpf-netns.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/memcontrol.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/bpf_lirc.h>
+#include <linaos/bpf_verifier.h>
+#include <linaos/btf.h>
+#include <linaos/syscalls.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mmzone.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/fdtable.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/license.h>
+#include <linaos/filter.h>
+#include <linaos/kernel.h>
+#include <linaos/idr.h>
+#include <linaos/cred.h>
+#include <linaos/timekeeping.h>
+#include <linaos/ctype.h>
+#include <linaos/nospec.h>
+#include <linaos/audit.h>
+#include <uapi/linaos/btf.h>
+#include <linaos/pgtable.h>
+#include <linaos/bpf_lsm.h>
+#include <linaos/poll.h>
+#include <linaos/bpf-netns.h>
+#include <linaos/rcupdate_trace.h>
+#include <linaos/memcontrol.h>
 
 #define IS_FD_ARRAY(map) ((map)->map_type == BPF_MAP_TYPE_PERF_EVENT_ARRAY || \
 			  (map)->map_type == BPF_MAP_TYPE_CGROUP_ARRAY || \
@@ -58,7 +58,7 @@ static const struct bpf_map_ops * const bpf_map_types[] = {
 #define BPF_MAP_TYPE(_id, _ops) \
 	[_id] = &_ops,
 #define BPF_LINK_TYPE(_id, _name)
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
 #undef BPF_LINK_TYPE
@@ -795,7 +795,7 @@ static int map_check_btf(struct bpf_map *map, const struct btf *btf,
 	return ret;
 }
 
-#define BPF_MAP_CREATE_LAST_FIELD btf_vmlinux_value_type_id
+#define BPF_MAP_CREATE_LAST_FIELD btf_vmlinaos_value_type_id
 /* called via syscall */
 static int map_create(union bpf_attr *attr)
 {
@@ -808,7 +808,7 @@ static int map_create(union bpf_attr *attr)
 	if (err)
 		return -EINVAL;
 
-	if (attr->btf_vmlinux_value_type_id) {
+	if (attr->btf_vmlinaos_value_type_id) {
 		if (attr->map_type != BPF_MAP_TYPE_STRUCT_OPS ||
 		    attr->btf_key_type_id || attr->btf_value_type_id)
 			return -EINVAL;
@@ -847,7 +847,7 @@ static int map_create(union bpf_attr *attr)
 	     * counter part.  Thus, attr->btf_fd has
 	     * to be valid also.
 	     */
-	    attr->btf_vmlinux_value_type_id) {
+	    attr->btf_vmlinaos_value_type_id) {
 		struct btf *btf;
 
 		btf = btf_get_by_fd(attr->btf_fd);
@@ -871,8 +871,8 @@ static int map_create(union bpf_attr *attr)
 
 		map->btf_key_type_id = attr->btf_key_type_id;
 		map->btf_value_type_id = attr->btf_value_type_id;
-		map->btf_vmlinux_value_type_id =
-			attr->btf_vmlinux_value_type_id;
+		map->btf_vmlinaos_value_type_id =
+			attr->btf_vmlinaos_value_type_id;
 	}
 
 	err = security_bpf_map_alloc(map);
@@ -1582,7 +1582,7 @@ static const struct bpf_prog_ops * const bpf_prog_types[] = {
 	[_id] = & _name ## _prog_ops,
 #define BPF_MAP_TYPE(_id, _ops)
 #define BPF_LINK_TYPE(_id, _name)
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
 #undef BPF_LINK_TYPE
@@ -2141,8 +2141,8 @@ static int bpf_prog_load(union bpf_attr *attr, union bpf_attr __user *uattr)
 			}
 		}
 	} else if (attr->attach_btf_id) {
-		/* fall back to vmlinux BTF, if BTF type ID is specified */
-		attach_btf = bpf_get_btf_vmlinux();
+		/* fall back to vmlinaos BTF, if BTF type ID is specified */
+		attach_btf = bpf_get_btf_vmlinaos();
 		if (IS_ERR(attach_btf))
 			return PTR_ERR(attach_btf);
 		if (!attach_btf)
@@ -2376,7 +2376,7 @@ static int bpf_link_release(struct inode *inode, struct file *filp)
 #define BPF_LINK_TYPE(_id, _name) [_id] = #_name,
 static const char *bpf_link_type_strs[] = {
 	[BPF_LINK_TYPE_UNSPEC] = "<invalid>",
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 };
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
@@ -3721,7 +3721,7 @@ static int bpf_map_get_info_by_fd(struct file *file,
 		info.btf_key_type_id = map->btf_key_type_id;
 		info.btf_value_type_id = map->btf_value_type_id;
 	}
-	info.btf_vmlinux_value_type_id = map->btf_vmlinux_value_type_id;
+	info.btf_vmlinaos_value_type_id = map->btf_vmlinaos_value_type_id;
 
 	if (bpf_map_is_dev_bound(map)) {
 		err = bpf_map_offload_info_fill(&info, map);

@@ -25,12 +25,12 @@ include $(srctree)/tools/build/Makefile.include
 #
 # We need the following to be outside of kernel tree
 #
-$(OUTPUT)include/linux/spi: ../../include/uapi/linux/spi
-	mkdir -p $(OUTPUT)include/linux/spi 2>&1 || true
-	ln -sf $(CURDIR)/../../include/uapi/linux/spi/spidev.h $@
-	ln -sf $(CURDIR)/../../include/uapi/linux/spi/spi.h $@
+$(OUTPUT)include/linaos/spi: ../../include/uapi/linaos/spi
+	mkdir -p $(OUTPUT)include/linaos/spi 2>&1 || true
+	ln -sf $(CURDIR)/../../include/uapi/linaos/spi/spidev.h $@
+	ln -sf $(CURDIR)/../../include/uapi/linaos/spi/spi.h $@
 
-prepare: $(OUTPUT)include/linux/spi
+prepare: $(OUTPUT)include/linaos/spi
 
 #
 # spidev_test

@@ -7,17 +7,17 @@
  * Based on a work from: Conor Culhane <conor.culhane@silvaco.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/errno.h>
-#include <linux/i3c/master.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/errno.h>
+#include <linaos/i3c/master.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 /* Master Mode Registers */
 #define SVC_I3C_MCONFIG      0x000

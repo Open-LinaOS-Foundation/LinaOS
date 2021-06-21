@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_PAGE_32_DEFS_H
 #define _ASM_X86_PAGE_32_DEFS_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /*
  * This handles the memory map.

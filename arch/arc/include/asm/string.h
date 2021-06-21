@@ -12,7 +12,7 @@
 #ifndef _ASM_ARC_STRING_H
 #define _ASM_ARC_STRING_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define __HAVE_ARCH_MEMSET
 #define __HAVE_ARCH_MEMCPY

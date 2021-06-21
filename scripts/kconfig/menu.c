@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2002 Roman Zippel <zippel@linux-m68k.org>
+ * Copyright (C) 2002 Roman Zippel <zippel@linaos-m68k.org>
  */
 
 #include <ctype.h>
@@ -717,7 +717,7 @@ static void get_prompt_str(struct gstr *r, struct property *prop,
 
 	get_dep_str(r, prop->menu->dep, "  Depends on: ");
 	/*
-	 * Most prompts in Linux have visibility that exactly matches their
+	 * Most prompts in LinaOS have visibility that exactly matches their
 	 * dependencies. For these, we print only the dependencies to improve
 	 * readability. However, prompts with inline "if" expressions and
 	 * prompts with a parent that has a "visible if" expression have

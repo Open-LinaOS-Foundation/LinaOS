@@ -14,8 +14,8 @@
 #include "h/fddi.h"
 #include "h/smc.h"
 #include "h/smt_p.h"
-#include <linux/bitrev.h>
-#include <linux/kernel.h>
+#include <linaos/bitrev.h>
+#include <linaos/kernel.h>
 
 #define KERNEL
 #include "h/smtstate.h"

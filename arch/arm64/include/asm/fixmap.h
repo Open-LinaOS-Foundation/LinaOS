@@ -16,8 +16,8 @@
 #define _ASM_ARM64_FIXMAP_H
 
 #ifndef __ASSEMBLY__
-#include <linux/kernel.h>
-#include <linux/sizes.h>
+#include <linaos/kernel.h>
+#include <linaos/sizes.h>
 #include <asm/boot.h>
 #include <asm/page.h>
 #include <asm/pgtable-prot.h>

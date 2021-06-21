@@ -51,27 +51,27 @@
  *             page->flags PG_locked (lock_page)
  */
 
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
-#include <linux/hugetlb.h>
-#include <linux/huge_mm.h>
-#include <linux/backing-dev.h>
-#include <linux/page_idle.h>
-#include <linux/memremap.h>
-#include <linux/userfaultfd_k.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/ksm.h>
+#include <linaos/rmap.h>
+#include <linaos/rcupdate.h>
+#include <linaos/export.h>
+#include <linaos/memcontrol.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/migrate.h>
+#include <linaos/hugetlb.h>
+#include <linaos/huge_mm.h>
+#include <linaos/backing-dev.h>
+#include <linaos/page_idle.h>
+#include <linaos/memremap.h>
+#include <linaos/userfaultfd_k.h>
 
 #include <asm/tlbflush.h>
 

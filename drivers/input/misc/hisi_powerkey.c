@@ -14,14 +14,14 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/reboot.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
 
 /* the held interrupt will trigger after 4 seconds */
 #define MAX_HELD_TIME	(4 * MSEC_PER_SEC)

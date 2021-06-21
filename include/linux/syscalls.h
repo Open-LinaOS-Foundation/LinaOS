@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * syscalls.h - Linux syscall interfaces (non-arch-specific)
+ * syscalls.h - LinaOS syscall interfaces (non-arch-specific)
  *
  * Copyright (c) 2004 Randy Dunlap
  * Copyright (c) 2004 Open Source Development Labs
@@ -18,8 +18,8 @@ struct io_event;
 struct iovec;
 struct __kernel_old_itimerval;
 struct kexec_segment;
-struct linux_dirent;
-struct linux_dirent64;
+struct linaos_dirent;
+struct linaos_dirent64;
 struct list_head;
 struct mmap_arg_struct;
 struct msgbuf;
@@ -59,7 +59,7 @@ struct compat_stat;
 struct old_timeval32;
 struct robust_list_head;
 struct getcpu_cache;
-struct old_linux_dirent;
+struct old_linaos_dirent;
 struct perf_event_attr;
 struct file_handle;
 struct sigaltstack;
@@ -72,18 +72,18 @@ struct mount_attr;
 struct landlock_ruleset_attr;
 enum landlock_rule_type;
 
-#include <linux/types.h>
-#include <linux/aio_abi.h>
-#include <linux/capability.h>
-#include <linux/signal.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/sem.h>
+#include <linaos/types.h>
+#include <linaos/aio_abi.h>
+#include <linaos/capability.h>
+#include <linaos/signal.h>
+#include <linaos/list.h>
+#include <linaos/bug.h>
+#include <linaos/sem.h>
 #include <asm/siginfo.h>
-#include <linux/unistd.h>
-#include <linux/quota.h>
-#include <linux/key.h>
-#include <linux/personality.h>
+#include <linaos/unistd.h>
+#include <linaos/quota.h>
+#include <linaos/key.h>
+#include <linaos/personality.h>
 #include <trace/syscall.h>
 
 #ifdef CONFIG_ARCH_HAS_SYSCALL_WRAPPER
@@ -490,7 +490,7 @@ asmlinkage long sys_quotactl_path(unsigned int cmd, const char __user *mountpoin
 
 /* fs/readdir.c */
 asmlinkage long sys_getdents64(unsigned int fd,
-				struct linux_dirent64 __user *dirent,
+				struct linaos_dirent64 __user *dirent,
 				unsigned int count);
 
 /* fs/read_write.c */
@@ -1145,7 +1145,7 @@ asmlinkage long sys_utimes_time32(const char __user *filename,
 				  struct old_timeval32 __user *t);
 asmlinkage long sys_creat(const char __user *pathname, umode_t mode);
 asmlinkage long sys_getdents(unsigned int fd,
-				struct linux_dirent __user *dirent,
+				struct linaos_dirent __user *dirent,
 				unsigned int count);
 asmlinkage long sys_select(int n, fd_set __user *inp, fd_set __user *outp,
 			fd_set __user *exp, struct __kernel_old_timeval __user *tvp);
@@ -1244,7 +1244,7 @@ asmlinkage long sys_readlink(const char __user *path,
 asmlinkage long sys_old_select(struct sel_arg_struct __user *arg);
 
 /* obsolete: fs/readdir.c */
-asmlinkage long sys_old_readdir(unsigned int, struct old_linux_dirent __user *, unsigned int);
+asmlinkage long sys_old_readdir(unsigned int, struct old_linaos_dirent __user *, unsigned int);
 
 /* obsolete: kernel/sys.c */
 asmlinkage long sys_gethostname(char __user *name, int len);

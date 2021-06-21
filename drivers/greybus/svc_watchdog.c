@@ -5,10 +5,10 @@
  * Copyright 2016 Google Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/suspend.h>
-#include <linux/workqueue.h>
-#include <linux/greybus.h>
+#include <linaos/delay.h>
+#include <linaos/suspend.h>
+#include <linaos/workqueue.h>
+#include <linaos/greybus.h>
 
 #define SVC_WATCHDOG_PERIOD	(2 * HZ)
 

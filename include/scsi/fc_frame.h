@@ -8,15 +8,15 @@
 #ifndef _FC_FRAME_H_
 #define _FC_FRAME_H_
 
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
+#include <linaos/scatterlist.h>
+#include <linaos/skbuff.h>
 #include <scsi/scsi_cmnd.h>
 
 #include <scsi/fc/fc_fs.h>
 #include <scsi/fc/fc_fcp.h>
 #include <scsi/fc/fc_encaps.h>
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 /* some helpful macros */
 

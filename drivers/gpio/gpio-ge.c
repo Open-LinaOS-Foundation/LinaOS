@@ -17,13 +17,13 @@
  * the I/O interrupt controllers mask to stop them propergating
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
 
 #define GEF_GPIO_DIRECT		0x00
 #define GEF_GPIO_IN		0x04

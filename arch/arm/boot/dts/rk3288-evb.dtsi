@@ -18,31 +18,31 @@
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <100000>;
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <300000>;
 		};
 
 		menu {
 			label = "Menu";
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			press-threshold-microvolt = <640000>;
 		};
 
 		esc {
 			label = "Esc";
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			press-threshold-microvolt = <1000000>;
 		};
 
 		home  {
 			label = "Home";
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			press-threshold-microvolt = <1300000>;
 		};
 	};
@@ -120,9 +120,9 @@
 
 		power {
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			label = "GPIO Key Power";
-			linux,input-type = <1>;
+			linaos,input-type = <1>;
 			wakeup-source;
 			debounce-interval = <100>;
 		};

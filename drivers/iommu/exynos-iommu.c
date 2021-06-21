@@ -8,21 +8,21 @@
 #define DEBUG
 #endif
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/interrupt.h>
-#include <linux/kmemleak.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_iommu.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/dma-iommu.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/iommu.h>
+#include <linaos/interrupt.h>
+#include <linaos/kmemleak.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/dma-iommu.h>
 
 typedef u32 sysmmu_iova_t;
 typedef u32 sysmmu_pte_t;

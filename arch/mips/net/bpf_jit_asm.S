@@ -39,7 +39,7 @@
 
 #define skb	a0
 #define offset	a1
-#define SKF_LL_OFF  (-0x200000) /* Can't include linux/filter.h in assembly */
+#define SKF_LL_OFF  (-0x200000) /* Can't include linaos/filter.h in assembly */
 
 	/* We know better :) so prevent assembler reordering etc */
 	.set 	noreorder
@@ -119,7 +119,7 @@ FEXPORT(sk_load_byte_positive)
 
 /*
  * call skb_copy_bits:
- * (prototype in linux/skbuff.h)
+ * (prototype in linaos/skbuff.h)
  *
  * int skb_copy_bits(sk_buff *skb, int offset, void *to, int len)
  *
@@ -234,7 +234,7 @@ NESTED(bpf_slow_path_byte, (6 * SZREG), $r_sp)
 	.endm
 /*
  * call skb_copy_bits:
- * (prototype in linux/filter.h)
+ * (prototype in linaos/filter.h)
  *
  * void *bpf_internal_load_pointer_neg_helper(const struct sk_buff *skb,
  *                                            int k, unsigned int size)

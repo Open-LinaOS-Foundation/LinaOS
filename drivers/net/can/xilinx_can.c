@@ -9,25 +9,25 @@
  * This driver is developed for Axi CAN IP and for Zynq CANPS Controller.
  */
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/led.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/led.h>
+#include <linaos/pm_runtime.h>
 
 #define DRIVER_NAME	"xilinx_can"
 

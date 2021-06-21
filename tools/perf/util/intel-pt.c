@@ -8,10 +8,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/zalloc.h>
 
 #include "session.h"
 #include "machine.h"

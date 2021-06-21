@@ -4,11 +4,11 @@
  *  Author: Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

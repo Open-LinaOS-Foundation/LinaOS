@@ -2,10 +2,10 @@
 #ifndef _LINUX_HUGE_MM_H
 #define _LINUX_HUGE_MM_H
 
-#include <linux/sched/coredump.h>
-#include <linux/mm_types.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/mm_types.h>
 
-#include <linux/fs.h> /* only for vma_is_dax() */
+#include <linaos/fs.h> /* only for vma_is_dax() */
 
 vm_fault_t do_huge_pmd_anonymous_page(struct vm_fault *vmf);
 int copy_huge_pmd(struct mm_struct *dst_mm, struct mm_struct *src_mm,

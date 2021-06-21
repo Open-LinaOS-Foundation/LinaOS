@@ -7,9 +7,9 @@
  * Copyright (c) 2012-2013 David Herrmann <dh.herrmann@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/screen_info.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_data/simplefb.h>
+#include <linaos/screen_info.h>
 
 enum {
 	M_I17,		/* 17-Inch iMac */

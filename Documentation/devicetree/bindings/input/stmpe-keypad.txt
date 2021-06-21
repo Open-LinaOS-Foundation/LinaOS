@@ -2,7 +2,7 @@
 
 Required properties:
  - compatible               : "st,stmpe-keypad"
- - linux,keymap             : See ./matrix-keymap.txt
+ - linaos,keymap             : See ./matrix-keymap.txt
 
 Optional properties:
  - debounce-interval        : Debouncing interval time in milliseconds
@@ -20,7 +20,7 @@ Example:
 		st,scan-count = <8>;
 		st,no-autorepeat;
 
-		linux,keymap = <0x205006b
+		linaos,keymap = <0x205006b
 				0x4010074
 				0x3050072
 				0x1030004

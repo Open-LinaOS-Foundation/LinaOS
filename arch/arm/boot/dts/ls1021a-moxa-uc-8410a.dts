@@ -55,7 +55,7 @@
 		str-led {
 			label = "UC8410A:RED:PROG";
 			gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 
 		sw-ready {
@@ -131,7 +131,7 @@
 		pushbtn-key {
 			label = "push button key";
 			gpios = <&gpio1 21 GPIO_ACTIVE_LOW>;
-			linux,code = <BTN_MISC>;
+			linaos,code = <BTN_MISC>;
 			default-state = "on";
 		};
 	};

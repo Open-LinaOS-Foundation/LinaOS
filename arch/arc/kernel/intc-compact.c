@@ -3,11 +3,11 @@
  * Copyright (C) 2011-12 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip.h>
 #include <asm/irq.h>
 
 #define NR_CPU_IRQS	32	/* number of irq lines coming in */

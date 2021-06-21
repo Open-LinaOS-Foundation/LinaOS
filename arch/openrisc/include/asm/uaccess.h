@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OpenRISC Linux
+ * OpenRISC LinaOS
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -18,8 +18,8 @@
 /*
  * User space memory access functions
  */
-#include <linux/prefetch.h>
-#include <linux/string.h>
+#include <linaos/prefetch.h>
+#include <linaos/string.h>
 #include <asm/page.h>
 #include <asm/extable.h>
 

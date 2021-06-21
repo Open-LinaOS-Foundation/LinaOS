@@ -21,7 +21,7 @@
  * SOFTWARE IS DISCLAIMED.
  */
 #include <crypto/kpp.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 int compute_ecdh_secret(struct crypto_kpp *tfm, const u8 pair_public_key[64],
 			u8 secret[32]);

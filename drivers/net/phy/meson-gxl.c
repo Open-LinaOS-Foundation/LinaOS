@@ -6,13 +6,13 @@
  * Copyright (C) 2016 BayLibre, SAS. All rights reserved.
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/phy.h>
+#include <linaos/netdevice.h>
+#include <linaos/bitfield.h>
 
 #define TSTCNTL		20
 #define  TSTCNTL_READ		BIT(15)

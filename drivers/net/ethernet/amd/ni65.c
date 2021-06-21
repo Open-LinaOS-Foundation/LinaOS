@@ -1,5 +1,5 @@
 /*
- * ni6510 (am7990 'lance' chip) driver for Linux-net-3
+ * ni6510 (am7990 'lance' chip) driver for LinaOS-net-3
  * BETAcode v0.71 (96/09/29) for 2.0.0 (or later)
  * copyrights (c) 1994,1995,1996 by M.Hipp
  *
@@ -9,8 +9,8 @@
  *
  * driver probes: io: 0x360,0x300,0x320,0x340 / dma: 3,5,6,7
  *
- * This is an extension to the Linux operating system, and is covered by the
- * same GNU General Public License that covers the Linux-kernel.
+ * This is an extension to the LinaOS operating system, and is covered by the
+ * same GNU General Public License that covers the LinaOS-kernel.
  *
  * comments/bugs/suggestions can be sent to:
  *   Michael Hipp
@@ -59,19 +59,19 @@
  * 94.July.16: fixed bugs in recv_skb and skb-alloc stuff  (MH)
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

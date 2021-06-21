@@ -2,10 +2,10 @@
 #ifndef _LINUX_SCATTERLIST_H
 #define _LINUX_SCATTERLIST_H
 
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/mm.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/bug.h>
+#include <linaos/mm.h>
 #include <asm/io.h>
 
 struct scatterlist {

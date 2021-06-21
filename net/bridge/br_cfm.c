@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/cfm_bridge.h>
-#include <uapi/linux/cfm_bridge.h>
+#include <linaos/cfm_bridge.h>
+#include <uapi/linaos/cfm_bridge.h>
 #include "br_private_cfm.h"
 
 static struct br_cfm_mep *br_mep_find(struct net_bridge *br, u32 instance)

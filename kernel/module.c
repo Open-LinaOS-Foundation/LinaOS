@@ -6,57 +6,57 @@
 
 #define INCLUDE_VERMAGIC
 
-#include <linux/export.h>
-#include <linux/extable.h>
-#include <linux/moduleloader.h>
-#include <linux/module_signature.h>
-#include <linux/trace_events.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/kernel_read_file.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/elf.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/fcntl.h>
-#include <linux/rcupdate.h>
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/moduleparam.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/vermagic.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
-#include <linux/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/extable.h>
+#include <linaos/moduleloader.h>
+#include <linaos/module_signature.h>
+#include <linaos/trace_events.h>
+#include <linaos/init.h>
+#include <linaos/kallsyms.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/elf.h>
+#include <linaos/proc_fs.h>
+#include <linaos/security.h>
+#include <linaos/seq_file.h>
+#include <linaos/syscalls.h>
+#include <linaos/fcntl.h>
+#include <linaos/rcupdate.h>
+#include <linaos/capability.h>
+#include <linaos/cpu.h>
+#include <linaos/moduleparam.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/vermagic.h>
+#include <linaos/notifier.h>
+#include <linaos/sched.h>
+#include <linaos/device.h>
+#include <linaos/string.h>
+#include <linaos/mutex.h>
+#include <linaos/rculist.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
-#include <linux/set_memory.h>
+#include <linaos/set_memory.h>
 #include <asm/mmu_context.h>
-#include <linux/license.h>
+#include <linaos/license.h>
 #include <asm/sections.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
-#include <linux/livepatch.h>
-#include <linux/async.h>
-#include <linux/percpu.h>
-#include <linux/kmemleak.h>
-#include <linux/jump_label.h>
-#include <linux/pfn.h>
-#include <linux/bsearch.h>
-#include <linux/dynamic_debug.h>
-#include <linux/audit.h>
-#include <uapi/linux/module.h>
+#include <linaos/tracepoint.h>
+#include <linaos/ftrace.h>
+#include <linaos/livepatch.h>
+#include <linaos/async.h>
+#include <linaos/percpu.h>
+#include <linaos/kmemleak.h>
+#include <linaos/jump_label.h>
+#include <linaos/pfn.h>
+#include <linaos/bsearch.h>
+#include <linaos/dynamic_debug.h>
+#include <linaos/audit.h>
+#include <uapi/linaos/module.h>
 #include "module-internal.h"
 
 #define CREATE_TRACE_POINTS
@@ -2686,7 +2686,7 @@ static bool is_core_symbol(const Elf_Sym *src, const Elf_Shdr *sechdrs,
  * We only allocate and copy the strings needed by the parts of symtab
  * we keep.  This is simple, but has the effect of making multiple
  * copies of duplicates.  We could be more sophisticated, see
- * linux-kernel thread starting with
+ * linaos-kernel thread starting with
  * <73defb5e4bca04a6431392cc341112b1@localhost>.
  */
 static void layout_symtab(struct module *mod, struct load_info *info)
@@ -3696,7 +3696,7 @@ static noinline int do_init_module(struct module *mod)
 	 * constraints, this hack seems to be the best option for now.
 	 * Please refer to the following thread for details.
 	 *
-	 * http://thread.gmane.org/gmane.linux.kernel/1420814
+	 * http://thread.gmane.org/gmane.linaos.kernel/1420814
 	 */
 	if (!mod->async_probe_requested && (current->flags & PF_USED_ASYNC))
 		async_synchronize_full();

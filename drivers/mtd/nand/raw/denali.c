@@ -7,16 +7,16 @@
  *   Reworked by Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/bitfield.h>
+#include <linaos/completion.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include "denali.h"
 

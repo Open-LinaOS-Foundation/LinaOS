@@ -31,12 +31,12 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/list_sort.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/list_sort.h>
 
-#include <linux/interval_tree_generic.h>
+#include <linaos/interval_tree_generic.h>
 #include "usnic_uiom_interval_tree.h"
 
 #define START(node) ((node)->start)

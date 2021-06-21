@@ -9,7 +9,7 @@
 
 # This script locates the start of the .data section in xipImage and
 # substitutes it with a compressed version. The needed offsets are obtained
-# from symbol addresses in vmlinux. It is expected that .data extends to
+# from symbol addresses in vmlinaos. It is expected that .data extends to
 # the end of xipImage.
 
 set -e

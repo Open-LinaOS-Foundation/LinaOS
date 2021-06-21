@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright 2019 NXP
 
-#include <linux/bitrev.h>
-#include <linux/clk.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/bitrev.h>
+#include <linaos/clk.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_iec958.h>
 #include <sound/pcm_params.h>

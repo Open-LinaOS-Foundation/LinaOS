@@ -6,9 +6,9 @@
  */
 
 #define pr_fmt(fmt) "X.509: "fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include <keys/asymmetric-subtype.h>
 #include <keys/asymmetric-parser.h>
 #include <keys/system_keyring.h>

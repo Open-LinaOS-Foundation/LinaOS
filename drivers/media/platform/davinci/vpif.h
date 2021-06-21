@@ -16,8 +16,8 @@
 #ifndef VPIF_H
 #define VPIF_H
 
-#include <linux/io.h>
-#include <linux/videodev2.h>
+#include <linaos/io.h>
+#include <linaos/videodev2.h>
 #include <media/davinci/vpif_types.h>
 
 /* Maximum channel allowed */

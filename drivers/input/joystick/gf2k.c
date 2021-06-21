@@ -4,19 +4,19 @@
  */
 
 /*
- * Genius Flight 2000 joystick driver for Linux
+ * Genius Flight 2000 joystick driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/gameport.h>
+#include <linaos/jiffies.h>
 
 #define DRIVER_DESC	"Genius Flight 2000 joystick driver"
 

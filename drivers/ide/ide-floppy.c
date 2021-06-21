@@ -16,29 +16,29 @@
  * Documentation/ide/ChangeLog.ide-floppy.1996-2002
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/cdrom.h>
-#include <linux/ide.h>
-#include <linux/hdreg.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/compat.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/genhd.h>
+#include <linaos/cdrom.h>
+#include <linaos/ide.h>
+#include <linaos/hdreg.h>
+#include <linaos/bitops.h>
+#include <linaos/mutex.h>
+#include <linaos/scatterlist.h>
 
 #include <scsi/scsi_ioctl.h>
 
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 #include <asm/unaligned.h>
 
 #include "ide-floppy.h"

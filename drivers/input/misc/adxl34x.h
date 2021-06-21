@@ -2,7 +2,7 @@
 /*
  * ADXL345/346 Three-Axis Digital Accelerometers (I2C/SPI Interface)
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.uclinaos.org/
  *
  * Copyright (C) 2009 Michael Hennerich, Analog Devices Inc.
  */

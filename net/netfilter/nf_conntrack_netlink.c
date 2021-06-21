@@ -15,23 +15,23 @@
  * of the GNU General Public License, incorporated herein by reference.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rculist.h>
-#include <linux/rculist_nulls.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/security.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/netlink.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/siphash.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/rculist.h>
+#include <linaos/rculist_nulls.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/security.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/netlink.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/siphash.h>
 
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 #include <net/netlink.h>
 #include <net/sock.h>
 #include <net/netfilter/nf_conntrack.h>
@@ -51,8 +51,8 @@
 #include <net/netfilter/nf_nat_helper.h>
 #endif
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_conntrack.h>
 
 #include "nf_internals.h"
 

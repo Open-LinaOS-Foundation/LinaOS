@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright 2010 Ben Dooks <ben-linux@fluff.org>
+ * Copyright 2010 Ben Dooks <ben-linaos@fluff.org>
  *
  * Support for wakeup mask interrupts on newer SoCs
  */

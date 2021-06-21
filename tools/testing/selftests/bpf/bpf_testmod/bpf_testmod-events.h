@@ -6,7 +6,7 @@
 #if !defined(_BPF_TESTMOD_EVENTS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _BPF_TESTMOD_EVENTS_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "bpf_testmod.h"
 
 TRACE_EVENT(bpf_testmod_test_read,

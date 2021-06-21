@@ -3,7 +3,7 @@
  *
  * i2c-mux.h - functions for the i2c-bus mux support
  *
- * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@linux.it>
+ * Copyright (c) 2008-2009 Rodolfo Giometti <giometti@linaos.it>
  * Copyright (c) 2008-2009 Eurotech S.p.A. <info@eurotech.it>
  * Michael Lawnick <michael.lawnick.ext@nsn.com>
  */
@@ -13,7 +13,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 struct i2c_mux_core {
 	struct i2c_adapter *parent;

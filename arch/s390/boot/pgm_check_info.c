@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
 #include <asm/stacktrace.h>
 #include <asm/boot_data.h>
 #include <asm/lowcore.h>
@@ -150,7 +150,7 @@ void print_pgm_check_info(void)
 	unsigned long *gpregs = (unsigned long *)S390_lowcore.gpregs_save_area;
 	struct psw_bits *psw = &psw_bits(S390_lowcore.psw_save_area);
 
-	decompressor_printk("Linux version %s\n", kernel_version);
+	decompressor_printk("LinaOS version %s\n", kernel_version);
 	if (!is_prot_virt_guest() && early_command_line[0])
 		decompressor_printk("Kernel command line: %s\n", early_command_line);
 	decompressor_printk("Kernel fault: interruption code %04x ilc:%x\n",

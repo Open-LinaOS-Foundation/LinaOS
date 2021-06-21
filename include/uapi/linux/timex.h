@@ -42,7 +42,7 @@
  * 17 Sep 93    David L. Mills
  *      Created file $NTP/include/sys/timex.h
  * 07 Oct 93    Torsten Duwe
- *      Derived linux/timex.h
+ *      Derived linaos/timex.h
  * 1995-08-13    Torsten Duwe
  *      kernel PLL updated to 1994-12-13 specs (rfc-1589)
  * 1997-08-30    Ulrich Windl
@@ -53,7 +53,7 @@
 #ifndef _UAPI_LINUX_TIMEX_H
 #define _UAPI_LINUX_TIMEX_H
 
-#include <linux/time.h>
+#include <linaos/time.h>
 
 #define NTP_API		4	/* NTP API version */
 

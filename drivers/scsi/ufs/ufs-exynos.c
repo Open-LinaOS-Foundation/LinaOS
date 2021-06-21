@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
 
 #include "ufshcd.h"
 #include "ufshcd-pltfrm.h"

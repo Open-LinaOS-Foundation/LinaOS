@@ -2,10 +2,10 @@
 /*
  * x86 single-step support code, common to 32-bit and 64-bit.
  */
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/ptrace.h>
 #include <asm/desc.h>
 #include <asm/mmu_context.h>
 

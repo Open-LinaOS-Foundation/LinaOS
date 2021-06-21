@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _NFNETLINK_QUEUE_H
 #define _NFNETLINK_QUEUE_H
 
-#include <linux/types.h>
-#include <linux/netfilter/nfnetlink.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/nfnetlink.h>
 
 enum nfqnl_msg_types {
 	NFQNL_MSG_PACKET,		/* packet from kernel to userspace */

@@ -16,7 +16,7 @@
  */
 #define NO_SYSCALL (-1)
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct pt_regs {
 	union {

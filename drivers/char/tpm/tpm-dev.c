@@ -12,7 +12,7 @@
  *
  * Device file system interface to the TPM
  */
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "tpm-dev.h"
 
 static int tpm_open(struct inode *inode, struct file *file)

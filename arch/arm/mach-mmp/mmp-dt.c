@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/mmp-dt.c
+ *  linaos/arch/arm/mach-mmp/mmp-dt.c
  *
  *  Copyright (C) 2012 Marvell Technology Group Ltd.
  *  Author: Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/irqchip.h>
-#include <linux/of_platform.h>
-#include <linux/of_clk.h>
-#include <linux/clocksource.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_clk.h>
+#include <linaos/clocksource.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <asm/hardware/cache-tauros2.h>

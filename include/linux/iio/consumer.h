@@ -7,8 +7,8 @@
 #ifndef _IIO_INKERN_CONSUMER_H_
 #define _IIO_INKERN_CONSUMER_H_
 
-#include <linux/types.h>
-#include <linux/iio/types.h>
+#include <linaos/types.h>
+#include <linaos/iio/types.h>
 
 struct iio_dev;
 struct iio_chan_spec;

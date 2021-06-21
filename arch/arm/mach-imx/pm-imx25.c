@@ -3,9 +3,9 @@
  * Copyright 2016 NXP Semiconductors
  */
 
-#include <linux/kernel.h>
-#include <linux/suspend.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/suspend.h>
+#include <linaos/io.h>
 
 static int imx25_suspend_enter(suspend_state_t state)
 {

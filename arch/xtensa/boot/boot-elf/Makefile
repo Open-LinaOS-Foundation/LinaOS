@@ -14,7 +14,7 @@ targets		+= $(boot-y) boot.lds
 
 OBJS		:= $(addprefix $(obj)/,$(boot-y))
 
-$(obj)/Image.o: $(obj)/../vmlinux.bin $(OBJS)
+$(obj)/Image.o: $(obj)/../vmlinaos.bin $(OBJS)
 	$(Q)$(OBJCOPY) $(OBJCOPY_ARGS) -R .comment \
 		--add-section image=$< \
 		--set-section-flags image=contents,alloc,load,load,data \

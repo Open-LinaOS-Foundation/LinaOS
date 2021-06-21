@@ -14,9 +14,9 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/zlib.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/zlib.h>
 
 #include "include/apparmor.h"
 #include "include/audit.h"

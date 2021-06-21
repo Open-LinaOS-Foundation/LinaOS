@@ -9,15 +9,15 @@
  *          Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_data/leds-lp55xx.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_data/leds-lp55xx.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
 #include "leds-lp55xx-common.h"
 

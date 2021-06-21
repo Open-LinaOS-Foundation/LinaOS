@@ -18,14 +18,14 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/freezer.h>
-#include <linux/sched/signal.h>
-#include <linux/wait_bit.h>
-#include <linux/fiemap.h>
+#include <linaos/fs.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/freezer.h>
+#include <linaos/sched/signal.h>
+#include <linaos/wait_bit.h>
+#include <linaos/fiemap.h>
 #include <asm/div64.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -301,7 +301,7 @@ cifs_unix_basic_to_fattr(struct cifs_fattr *fattr, FILE_UNIX_BASIC_INFO *info,
 		break;
 	}
 
-	fattr->cf_uid = cifs_sb->ctx->linux_uid;
+	fattr->cf_uid = cifs_sb->ctx->linaos_uid;
 	if (!(cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_UID)) {
 		u64 id = le64_to_cpu(info->Uid);
 		if (id < ((uid_t)-1)) {
@@ -311,7 +311,7 @@ cifs_unix_basic_to_fattr(struct cifs_fattr *fattr, FILE_UNIX_BASIC_INFO *info,
 		}
 	}
 	
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_gid = cifs_sb->ctx->linaos_gid;
 	if (!(cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_GID)) {
 		u64 id = le64_to_cpu(info->Gid);
 		if (id < ((gid_t)-1)) {
@@ -340,8 +340,8 @@ cifs_create_dfs_fattr(struct cifs_fattr *fattr, struct super_block *sb)
 
 	memset(fattr, 0, sizeof(*fattr));
 	fattr->cf_mode = S_IFDIR | S_IXUGO | S_IRWXU;
-	fattr->cf_uid = cifs_sb->ctx->linux_uid;
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_uid = cifs_sb->ctx->linaos_uid;
+	fattr->cf_gid = cifs_sb->ctx->linaos_gid;
 	ktime_get_coarse_real_ts64(&fattr->cf_mtime);
 	fattr->cf_atime = fattr->cf_ctime = fattr->cf_mtime;
 	fattr->cf_nlink = 2;
@@ -644,8 +644,8 @@ smb311_posix_info_to_fattr(struct cifs_fattr *fattr, struct smb311_posix_qinfo *
 	}
 	/* else if reparse point ... TODO: add support for FIFO and blk dev; special file types */
 
-	fattr->cf_uid = cifs_sb->ctx->linux_uid; /* TODO: map uid and gid from SID */
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_uid = cifs_sb->ctx->linaos_uid; /* TODO: map uid and gid from SID */
+	fattr->cf_gid = cifs_sb->ctx->linaos_gid;
 
 	cifs_dbg(FYI, "POSIX query info: mode 0x%x uniqueid 0x%llx nlink %d\n",
 		fattr->cf_mode, fattr->cf_uniqueid, fattr->cf_nlink);
@@ -731,8 +731,8 @@ cifs_all_info_to_fattr(struct cifs_fattr *fattr, FILE_ALL_INFO *info,
 		}
 	}
 
-	fattr->cf_uid = cifs_sb->ctx->linux_uid;
-	fattr->cf_gid = cifs_sb->ctx->linux_gid;
+	fattr->cf_uid = cifs_sb->ctx->linaos_uid;
+	fattr->cf_gid = cifs_sb->ctx->linaos_gid;
 }
 
 static int
@@ -1378,8 +1378,8 @@ iget_no_retry:
 		set_nlink(inode, 2);
 		inode->i_op = &cifs_ipc_inode_ops;
 		inode->i_fop = &simple_dir_operations;
-		inode->i_uid = cifs_sb->ctx->linux_uid;
-		inode->i_gid = cifs_sb->ctx->linux_gid;
+		inode->i_uid = cifs_sb->ctx->linaos_uid;
+		inode->i_gid = cifs_sb->ctx->linaos_gid;
 		spin_unlock(&inode->i_lock);
 	} else if (rc) {
 		iget_failed(inode);

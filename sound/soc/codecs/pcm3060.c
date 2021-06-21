@@ -4,7 +4,7 @@
 //
 // Copyright (C) 2018 Kirill Marinushkin <kmarinushkin@birdec.com>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

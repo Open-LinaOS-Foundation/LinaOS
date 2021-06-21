@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2009 Zhang Le <r0bertz@gentoo.org>
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/bootinfo.h>
 
 #include <loongson.h>

@@ -2,8 +2,8 @@
 #ifndef _M68K_STRING_H_
 #define _M68K_STRING_H_
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 #define __HAVE_ARCH_STRNLEN
 static inline size_t strnlen(const char *s, size_t count)

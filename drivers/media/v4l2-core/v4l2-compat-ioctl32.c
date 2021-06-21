@@ -14,10 +14,10 @@
  * ioctls.
  */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-subdev.h>
+#include <linaos/compat.h>
+#include <linaos/module.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-subdev.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-fh.h>
 #include <media/v4l2-ctrls.h>

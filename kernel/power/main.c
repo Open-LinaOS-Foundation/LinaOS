@@ -6,16 +6,16 @@
  * Copyright (c) 2003 Open Source Development Lab
  */
 
-#include <linux/export.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/pm-trace.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/suspend.h>
-#include <linux/syscalls.h>
-#include <linux/pm_runtime.h>
+#include <linaos/export.h>
+#include <linaos/kobject.h>
+#include <linaos/string.h>
+#include <linaos/pm-trace.h>
+#include <linaos/workqueue.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/suspend.h>
+#include <linaos/syscalls.h>
+#include <linaos/pm_runtime.h>
 
 #include "power.h"
 

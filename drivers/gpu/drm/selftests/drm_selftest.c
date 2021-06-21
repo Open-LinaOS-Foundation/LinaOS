@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #define selftest(name, func) __idx_##name,
 enum {

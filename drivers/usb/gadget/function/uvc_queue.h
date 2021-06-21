@@ -2,9 +2,9 @@
 #ifndef _UVC_QUEUE_H_
 #define _UVC_QUEUE_H_
 
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/poll.h>
+#include <linaos/spinlock.h>
 
 #include <media/videobuf2-v4l2.h>
 

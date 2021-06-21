@@ -15,10 +15,10 @@
 #include <objtool/warn.h>
 #include <objtool/endianness.h>
 
-#include <linux/objtool.h>
-#include <linux/hashtable.h>
-#include <linux/kernel.h>
-#include <linux/static_call_types.h>
+#include <linaos/objtool.h>
+#include <linaos/hashtable.h>
+#include <linaos/kernel.h>
+#include <linaos/static_call_types.h>
 
 struct alternative {
 	struct list_head list;
@@ -124,7 +124,7 @@ static bool is_sibling_call(struct instruction *insn)
 {
 	/*
 	 * Assume only ELF functions can make sibling calls.  This ensures
-	 * sibling call detection consistency between vmlinux.o and individual
+	 * sibling call detection consistency between vmlinaos.o and individual
 	 * objects.
 	 */
 	if (!insn->func)
@@ -257,11 +257,11 @@ static void init_insn_state(struct insn_state *state, struct section *sec)
 	init_cfi_state(&state->cfi);
 
 	/*
-	 * We need the full vmlinux for noinstr validation, otherwise we can
+	 * We need the full vmlinaos for noinstr validation, otherwise we can
 	 * not correctly determine insn->call_dest->sec (external symbols do
 	 * not have a section).
 	 */
-	if (vmlinux && noinstr && sec)
+	if (vmlinaos && noinstr && sec)
 		state->noinstr = sec->noinstr;
 }
 
@@ -408,7 +408,7 @@ static int add_dead_ends(struct objtool_file *file)
 reachable:
 	/*
 	 * These manually annotated reachable checks are needed for GCC 4.4,
-	 * where the Linux unreachable() macro isn't supported.  In that case
+	 * where the LinaOS unreachable() macro isn't supported.  In that case
 	 * GCC doesn't know the "ud2" is fatal, so it generates code as if it's
 	 * not a dead end.
 	 */
@@ -3048,7 +3048,7 @@ static int validate_section(struct objtool_file *file, struct section *sec)
 	return warnings;
 }
 
-static int validate_vmlinux_functions(struct objtool_file *file)
+static int validate_vmlinaos_functions(struct objtool_file *file)
 {
 	struct section *sec;
 	int warnings = 0;
@@ -3115,8 +3115,8 @@ int check(struct objtool_file *file)
 	if (list_empty(&file->insn_list))
 		goto out;
 
-	if (vmlinux && !validate_dup) {
-		ret = validate_vmlinux_functions(file);
+	if (vmlinaos && !validate_dup) {
+		ret = validate_vmlinaos_functions(file);
 		if (ret < 0)
 			goto out;
 

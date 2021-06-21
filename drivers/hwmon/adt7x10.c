@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * adt7x10.c - Part of lm_sensors, Linux kernel modules for hardware
+ * adt7x10.c - Part of lm_sensors, LinaOS kernel modules for hardware
  *	 monitoring
  * This driver handles the ADT7410 and compatible digital temperature sensors.
  * Hartmut Knaack <knaack.h@gmx.de> 2012-07-22
@@ -8,16 +8,16 @@
  * and adt7410.c from iio-staging by Sonic Zhang <sonic.zhang@analog.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 
 #include "adt7x10.h"
 

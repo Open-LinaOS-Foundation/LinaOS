@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-2.0
 
 """
-tdc.py - Linux tc (Traffic Control) unit test driver
+tdc.py - LinaOS tc (Traffic Control) unit test driver
 
 Copyright (C) 2017 Lucas Bates <lucasb@mojatatu.com>
 """
@@ -165,7 +165,7 @@ class PluginMgr:
     @staticmethod
     def _make_argparser(args):
         self.argparser = argparse.ArgumentParser(
-            description='Linux TC unit tests')
+            description='LinaOS TC unit tests')
 
 def replace_keywords(cmd):
     """
@@ -449,7 +449,7 @@ def args_parse():
     """
     Create the argument parser.
     """
-    parser = argparse.ArgumentParser(description='Linux TC unit tests')
+    parser = argparse.ArgumentParser(description='LinaOS TC unit tests')
     return parser
 
 

@@ -9,19 +9,19 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/oom.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/syscalls.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/kmod.h>
+#include <linaos/interrupt.h>
+#include <linaos/oom.h>
+#include <linaos/suspend.h>
+#include <linaos/module.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/syscalls.h>
+#include <linaos/freezer.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/kmod.h>
 #include <trace/events/power.h>
-#include <linux/cpuset.h>
+#include <linaos/cpuset.h>
 
 /*
  * Timeout for stopping processes

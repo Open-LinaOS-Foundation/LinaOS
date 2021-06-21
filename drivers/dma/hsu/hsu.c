@@ -3,7 +3,7 @@
  * Core driver for the High Speed UART DMA
  *
  * Copyright (C) 2015 Intel Corporation
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
  *
  * Partially based on the bits found in drivers/tty/serial/mfd.c.
  */
@@ -16,12 +16,12 @@
  *    port 3, and so on.
  */
 
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "hsu.h"
 
@@ -498,4 +498,4 @@ EXPORT_SYMBOL_GPL(hsu_dma_remove);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("High Speed UART DMA core driver");
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");

@@ -7,8 +7,8 @@
  * Author(s): Cornelia Huck <cohuck@redhat.com>
  */
 
-#include <linux/vfio.h>
-#include <linux/mdev.h>
+#include <linaos/vfio.h>
+#include <linaos/mdev.h>
 
 #include "vfio_ccw_private.h"
 

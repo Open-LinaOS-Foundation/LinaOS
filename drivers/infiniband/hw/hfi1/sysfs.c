@@ -44,7 +44,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 #include "hfi.h"
 #include "mad.h"

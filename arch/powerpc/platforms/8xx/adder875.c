@@ -6,9 +6,9 @@
  * Copyright (c) 2007 Freescale Semiconductor, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/fs_enet_pd.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/fs_enet_pd.h>
+#include <linaos/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

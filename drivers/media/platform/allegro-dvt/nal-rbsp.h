@@ -6,8 +6,8 @@
 #ifndef __NAL_RBSP_H__
 #define __NAL_RBSP_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 struct rbsp;
 

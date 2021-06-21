@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/acorn/scsi/fas216.h
+ *  linaos/drivers/acorn/scsi/fas216.h
  *
  *  Copyright (C) 1997-2000 Russell King
  *

@@ -11,11 +11,11 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_ids.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <linaos/rio.h>
+#include <linaos/rio_drv.h>
+#include <linaos/rio_ids.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
 #include "../rio.h"
 
 /* Global (broadcast) route registers */

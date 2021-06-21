@@ -4,11 +4,11 @@
  * Copyright (C) 2017 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #define PEAQ_DOLBY_BUTTON_GUID		"ABBC0F6F-8EA1-11D1-00A0-C90629100000"
 #define PEAQ_DOLBY_BUTTON_METHOD_ID	5

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/adfs_fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/fs.h>
+#include <linaos/adfs_fs.h>
 
 /* Internal data structures for ADFS */
 

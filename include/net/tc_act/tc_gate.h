@@ -5,7 +5,7 @@
 #define __NET_TC_GATE_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_gate.h>
+#include <linaos/tc_act/tc_gate.h>
 
 struct action_gate_entry {
 	u8			gate_state;

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/mfd/asic3.h
+ * include/linaos/mfd/asic3.h
  *
  * Compaq ASIC3 headers.
  *
@@ -11,7 +11,7 @@
 #ifndef __ASIC3_H__
 #define __ASIC3_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct led_classdev;
 struct asic3_led {

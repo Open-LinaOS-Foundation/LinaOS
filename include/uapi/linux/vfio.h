@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * VFIO API definition
  *
@@ -12,8 +12,8 @@
 #ifndef _UAPIVFIO_H
 #define _UAPIVFIO_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 #define VFIO_API_VERSION	0
 
@@ -367,7 +367,7 @@ struct vfio_region_info_cap_type {
  * For the edid blob spec look here:
  *    https://en.wikipedia.org/wiki/Extended_Display_Identification_Data
  *
- * On linux systems you can find the EDID blob in sysfs:
+ * On linaos systems you can find the EDID blob in sysfs:
  *    /sys/class/drm/${card}/${connector}/edid
  *
  * You can use the edid-decode ulility (comes with xorg-x11-utils) to

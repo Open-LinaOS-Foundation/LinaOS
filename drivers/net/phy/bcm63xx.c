@@ -3,8 +3,8 @@
  *	Driver for Broadcom 63xx SOCs integrated PHYs
  */
 #include "bcm-phy-lib.h"
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
 
 #define MII_BCM63XX_IR		0x1a	/* interrupt register */
 #define MII_BCM63XX_IR_EN	0x4000	/* global interrupt enable */

@@ -138,85 +138,85 @@
 
 		button@0 {
 			label = "D-pad up";
-			linux,code = <KEY_UP>;
-			linux,can-disable;
+			linaos,code = <KEY_UP>;
+			linaos,can-disable;
 			gpios = <&gpe 21 GPIO_ACTIVE_LOW>;
 		};
 
 		button@1 {
 			label = "D-pad down";
-			linux,code = <KEY_DOWN>;
-			linux,can-disable;
+			linaos,code = <KEY_DOWN>;
+			linaos,can-disable;
 			gpios = <&gpe 25 GPIO_ACTIVE_LOW>;
 		};
 
 		button@2 {
 			label = "D-pad left";
-			linux,code = <KEY_LEFT>;
-			linux,can-disable;
+			linaos,code = <KEY_LEFT>;
+			linaos,can-disable;
 			gpios = <&gpe 23 GPIO_ACTIVE_LOW>;
 		};
 
 		button@3 {
 			label = "D-pad right";
-			linux,code = <KEY_RIGHT>;
-			linux,can-disable;
+			linaos,code = <KEY_RIGHT>;
+			linaos,can-disable;
 			gpios = <&gpe 24 GPIO_ACTIVE_LOW>;
 		};
 
 		button@4 {
 			label = "Button A";
-			linux,code = <KEY_LEFTCTRL>;
-			linux,can-disable;
+			linaos,code = <KEY_LEFTCTRL>;
+			linaos,can-disable;
 			gpios = <&gpe 29 GPIO_ACTIVE_LOW>;
 		};
 
 		button@5 {
 			label = "Button B";
-			linux,code = <KEY_LEFTALT>;
-			linux,can-disable;
+			linaos,code = <KEY_LEFTALT>;
+			linaos,can-disable;
 			gpios = <&gpe 20 GPIO_ACTIVE_LOW>;
 		};
 
 		button@6 {
 			label = "Button Y";
-			linux,code = <KEY_SPACE>;
-			linux,can-disable;
+			linaos,code = <KEY_SPACE>;
+			linaos,can-disable;
 			gpios = <&gpe 27 GPIO_ACTIVE_LOW>;
 		};
 
 		button@7 {
 			label = "Button X";
-			linux,code = <KEY_LEFTSHIFT>;
-			linux,can-disable;
+			linaos,code = <KEY_LEFTSHIFT>;
+			linaos,can-disable;
 			gpios = <&gpe 28 GPIO_ACTIVE_LOW>;
 		};
 
 		button@8 {
 			label = "Left shoulder button";
-			linux,code = <KEY_TAB>;
-			linux,can-disable;
+			linaos,code = <KEY_TAB>;
+			linaos,can-disable;
 			gpios = <&gpb 20 GPIO_ACTIVE_LOW>;
 		};
 
 		button@9 {
 			label = "Right shoulder button";
-			linux,code = <KEY_BACKSPACE>;
-			linux,can-disable;
+			linaos,code = <KEY_BACKSPACE>;
+			linaos,can-disable;
 			gpios = <&gpe 26 GPIO_ACTIVE_LOW>;
 		};
 
 		button@10 {
 			label = "Start button";
-			linux,code = <KEY_ENTER>;
-			linux,can-disable;
+			linaos,code = <KEY_ENTER>;
+			linaos,can-disable;
 			gpios = <&gpb 21 GPIO_ACTIVE_LOW>;
 		};
 
 		button@11 {
 			label = "Select button";
-			linux,code = <KEY_ESC>;
-			linux,can-disable;
+			linaos,code = <KEY_ESC>;
+			linaos,can-disable;
 			/*
 			 * This is the only button that is active high,
 			 * since it doubles as BOOT_SEL1.
@@ -226,16 +226,16 @@
 
 		button@12 {
 			label = "Power slider";
-			linux,code = <KEY_POWER>;
-			linux,can-disable;
+			linaos,code = <KEY_POWER>;
+			linaos,can-disable;
 			gpios = <&gpa 30 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		button@13 {
 			label = "Power hold";
-			linux,code = <KEY_PAUSE>;
-			linux,can-disable;
+			linaos,code = <KEY_PAUSE>;
+			linaos,can-disable;
 			gpios = <&gpf 11 GPIO_ACTIVE_LOW>;
 		};
 	};

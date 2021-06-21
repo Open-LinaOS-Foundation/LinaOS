@@ -7,14 +7,14 @@
  * Author: Wu Zhangjin <wuzhangjin@gmail.com>
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/libfdt.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/libfdt.h>
 
 #include <asm/addrspace.h>
 #include <asm/unaligned.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 /*
  * These two variables specify the free mem region
@@ -103,8 +103,8 @@ void decompress_kernel(unsigned long boot_heap_start)
 	free_mem_ptr = boot_heap_start;
 	free_mem_end_ptr = boot_heap_start + BOOT_HEAP_SIZE;
 
-	/* Display standard Linux/MIPS boot prompt */
-	puts("Uncompressing Linux at load address ");
+	/* Display standard LinaOS/MIPS boot prompt */
+	puts("Uncompressing LinaOS at load address ");
 	puthex(VMLINUX_LOAD_ADDRESS_ULL);
 	puts("\n");
 

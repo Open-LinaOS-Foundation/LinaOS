@@ -45,9 +45,9 @@
 #ifndef SJA1000_DEV_H
 #define SJA1000_DEV_H
 
-#include <linux/irqreturn.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/sja1000.h>
+#include <linaos/irqreturn.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/platform/sja1000.h>
 
 #define SJA1000_ECHO_SKB_MAX	1 /* the SJA1000 has one TX buffer object */
 

@@ -6,11 +6,11 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/dccp.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 
 #include <net/inet_sock.h>
 #include <net/sock.h>

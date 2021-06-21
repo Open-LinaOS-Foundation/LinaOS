@@ -69,11 +69,11 @@ Default is to monitor all CPUS.
 	Child tasks do not inherit counters.
 
 -k <path>::
---vmlinux=<path>::
-	Path to vmlinux.  Required for annotation functionality.
+--vmlinaos=<path>::
+	Path to vmlinaos.  Required for annotation functionality.
 
---ignore-vmlinux::
-	Ignore vmlinux files.
+--ignore-vmlinaos::
+	Ignore vmlinaos files.
 
 --kallsyms=<file>::
 	kallsyms pathname

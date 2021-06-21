@@ -45,7 +45,7 @@
 /*
  * AXP202/209 Integrated Power Management Chip
  * http://www.x-powers.com/product/AXP20X.php
- * http://dl.linux-sunxi.org/AXP/AXP209%20Datasheet%20v1.0_cn.pdf
+ * http://dl.linaos-sunxi.org/AXP/AXP209%20Datasheet%20v1.0_cn.pdf
  */
 
 &axp209 {

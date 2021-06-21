@@ -2,11 +2,11 @@
 #ifndef _ASM_X86_MMU_H
 #define _ASM_X86_MMU_H
 
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/mutex.h>
-#include <linux/atomic.h>
-#include <linux/bits.h>
+#include <linaos/spinlock.h>
+#include <linaos/rwsem.h>
+#include <linaos/mutex.h>
+#include <linaos/atomic.h>
+#include <linaos/bits.h>
 
 /* Uprobes on this MM assume 32-bit code */
 #define MM_CONTEXT_UPROBE_IA32	BIT(0)

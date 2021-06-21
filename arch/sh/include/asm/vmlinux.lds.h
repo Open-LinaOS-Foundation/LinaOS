@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_VMLINUX_LDS_H
 #define __ASM_SH_VMLINUX_LDS_H
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 #ifdef CONFIG_DWARF_UNWINDER
 #define DWARF_EH_FRAME							\

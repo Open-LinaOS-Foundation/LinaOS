@@ -14,18 +14,18 @@
  * AB8505 supports the following regulators:
  *   VAUX1/2/3/4/5/6, VINTCORE, VADC, VUSB, VAUDIO, VAMIC1/2, VDMIC, VANA
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/of.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/slab.h>
 
 /* AB8500 regulators */
 enum ab8500_regulator_id {

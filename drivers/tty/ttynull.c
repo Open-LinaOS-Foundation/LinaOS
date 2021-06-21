@@ -6,9 +6,9 @@
  *  Copyright (C) 2010 Samo Pogacnik
  */
 
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/tty.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/tty.h>
 
 static const struct tty_port_operations ttynull_port_ops;
 static struct tty_driver *ttynull_driver;

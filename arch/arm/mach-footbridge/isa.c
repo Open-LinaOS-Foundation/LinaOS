@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-footbridge/isa.c
+ *  linaos/arch/arm/mach-footbridge/isa.c
  *
  *  Copyright (C) 2004 Russell King.
  */
-#include <linux/init.h>
-#include <linux/serial_8250.h>
+#include <linaos/init.h>
+#include <linaos/serial_8250.h>
 
 #include <asm/irq.h>
 #include <asm/hardware/dec21285.h>

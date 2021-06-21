@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef	__BPQETHER_H
 #define	__BPQETHER_H
 
@@ -6,7 +6,7 @@
  * 	Defines for the BPQETHER pseudo device driver
  */
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 #define SIOCSBPQETHOPT		(SIOCDEVPRIVATE+0)	/* reserved */
 #define SIOCSBPQETHADDR		(SIOCDEVPRIVATE+1)

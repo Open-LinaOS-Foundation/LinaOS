@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * File: linux/nfsacl.h
+ * File: linaos/nfsacl.h
  *
  * (C) 2003 Andreas Gruenbacher <agruen@suse.de>
  */

@@ -699,7 +699,7 @@ dtb-$(CONFIG_SOC_VF610) += \
 	vf610-zii-ssmb-spu3.dtb
 dtb-$(CONFIG_ARCH_MXS) += \
 	imx23-evk.dtb \
-	imx23-olinuxino.dtb \
+	imx23-olinaosino.dtb \
 	imx23-sansa.dtb \
 	imx23-stmp378x_devb.dtb \
 	imx23-xfi3.dtb \
@@ -1113,7 +1113,7 @@ dtb-$(CONFIG_MACH_SUN4I) += \
 	sun4i-a10-mini-xplus.dtb \
 	sun4i-a10-mk802.dtb \
 	sun4i-a10-mk802ii.dtb \
-	sun4i-a10-olinuxino-lime.dtb \
+	sun4i-a10-olinaosino-lime.dtb \
 	sun4i-a10-pcduino.dtb \
 	sun4i-a10-pcduino2.dtb \
 	sun4i-a10-pov-protab2-ips9.dtb \
@@ -1122,7 +1122,7 @@ dtb-$(CONFIG_MACH_SUN5I) += \
 	sun5i-a10s-auxtek-t003.dtb \
 	sun5i-a10s-auxtek-t004.dtb \
 	sun5i-a10s-mk802.dtb \
-	sun5i-a10s-olinuxino-micro.dtb \
+	sun5i-a10s-olinaosino-micro.dtb \
 	sun5i-a10s-r7-tv-dongle.dtb \
 	sun5i-a10s-wobo-i5.dtb \
 	sun5i-a13-difrnce-dit4350.dtb \
@@ -1131,8 +1131,8 @@ dtb-$(CONFIG_MACH_SUN5I) += \
 	sun5i-a13-hsg-h702.dtb \
 	sun5i-a13-inet-98v-rev2.dtb \
 	sun5i-a13-licheepi-one.dtb \
-	sun5i-a13-olinuxino.dtb \
-	sun5i-a13-olinuxino-micro.dtb \
+	sun5i-a13-olinaosino.dtb \
+	sun5i-a13-olinaosino-micro.dtb \
 	sun5i-a13-pocketbook-touch-lux-3.dtb \
 	sun5i-a13-q8-tablet.dtb \
 	sun5i-a13-utoo-p66.dtb \
@@ -1171,12 +1171,12 @@ dtb-$(CONFIG_MACH_SUN7I) += \
 	sun7i-a20-olimex-som-evb-emmc.dtb \
 	sun7i-a20-olimex-som204-evb.dtb \
 	sun7i-a20-olimex-som204-evb-emmc.dtb \
-	sun7i-a20-olinuxino-lime.dtb \
-	sun7i-a20-olinuxino-lime-emmc.dtb \
-	sun7i-a20-olinuxino-lime2.dtb \
-	sun7i-a20-olinuxino-lime2-emmc.dtb \
-	sun7i-a20-olinuxino-micro.dtb \
-	sun7i-a20-olinuxino-micro-emmc.dtb \
+	sun7i-a20-olinaosino-lime.dtb \
+	sun7i-a20-olinaosino-lime-emmc.dtb \
+	sun7i-a20-olinaosino-lime2.dtb \
+	sun7i-a20-olinaosino-lime2-emmc.dtb \
+	sun7i-a20-olinaosino-micro.dtb \
+	sun7i-a20-olinaosino-micro-emmc.dtb \
 	sun7i-a20-orangepi.dtb \
 	sun7i-a20-orangepi-mini.dtb \
 	sun7i-a20-pcduino3.dtb \
@@ -1196,7 +1196,7 @@ dtb-$(CONFIG_MACH_SUN8I) += \
 	sun8i-a33-ga10h-v1.1.dtb \
 	sun8i-a33-inet-d978-rev2.dtb \
 	sun8i-a33-ippo-q8h-v1.2.dtb \
-	sun8i-a33-olinuxino.dtb \
+	sun8i-a33-olinaosino.dtb \
 	sun8i-a33-q8-tablet.dtb \
 	sun8i-a33-sinlinx-sina33.dtb \
 	sun8i-a83t-allwinner-h8homlet-v2.dtb \

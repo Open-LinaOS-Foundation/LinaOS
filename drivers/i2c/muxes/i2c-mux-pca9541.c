@@ -3,12 +3,12 @@
  *
  * Copyright (c) 2010 Ericsson AB.
  *
- * Author: Guenter Roeck <linux@roeck-us.net>
+ * Author: Guenter Roeck <linaos@roeck-us.net>
  *
  * Derived from:
  *  pca954x.c
  *
- *  Copyright (c) 2008-2009 Rodolfo Giometti <giometti@linux.it>
+ *  Copyright (c) 2008-2009 Rodolfo Giometti <giometti@linaos.it>
  *  Copyright (c) 2008-2009 Eurotech S.p.A. <info@eurotech.it>
  *
  * This file is licensed under the terms of the GNU General Public
@@ -16,14 +16,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/i2c-mux.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 /*
  * The PCA9541 is a bus master selector. It supports two I2C masters connected
@@ -345,6 +345,6 @@ static struct i2c_driver pca9541_driver = {
 
 module_i2c_driver(pca9541_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("PCA9541 I2C master selector driver");
 MODULE_LICENSE("GPL v2");

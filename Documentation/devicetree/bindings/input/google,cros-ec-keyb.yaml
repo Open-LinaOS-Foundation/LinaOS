@@ -71,10 +71,10 @@ examples:
          * Keymap entries take the form of 0xRRCCKKKK where
          * RR=Row CC=Column KKKK=Key Code
          * The values below are for a US keyboard layout and
-         * are taken from the Linux driver. Note that the
+         * are taken from the LinaOS driver. Note that the
          * 102ND key is not used for US keyboards.
          */
-        linux,keymap = <
+        linaos,keymap = <
             /* CAPSLCK F1         B          F10     */
             0x0001003a 0x0002003b 0x00030030 0x00040044
             /* N       =          R_ALT      ESC     */

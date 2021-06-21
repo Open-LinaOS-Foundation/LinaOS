@@ -75,13 +75,13 @@
  *       range 12 30
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
-#include <linux/mm.h>
-#include <linux/string.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/genhd.h>
+#include <linaos/blkdev.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
 #include <crypto/hash.h>
 #include "ctree.h"
 #include "disk-io.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/9p/v9fs.c
+ *  linaos/fs/9p/v9fs.c
  *
  *  This file contains functions assisting in mapping VFS to 9P2000
  *
@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/parser.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/parser.h>
+#include <linaos/idr.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>

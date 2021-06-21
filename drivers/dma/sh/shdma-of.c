@@ -6,13 +6,13 @@
  * Author: Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/shdma-base.h>
+#include <linaos/dmaengine.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_dma.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/shdma-base.h>
 
 #define to_shdma_chan(c) container_of(c, struct shdma_chan, dma_chan)
 

@@ -21,7 +21,7 @@
 		btn0@10 {
 			reg = <10>;
 			label = "BTNESC";
-			linux,code = <1>; /* ESC button */
+			linaos,code = <1>; /* ESC button */
 			gpios = <&pioA 10 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -29,7 +29,7 @@
 		irqbtn@31 {
 			reg = <31>;
 			label = "IRQBTN";
-			linux,code = <99>; /* SysReq button */
+			linaos,code = <99>; /* SysReq button */
 			gpios = <&pioE 31 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};

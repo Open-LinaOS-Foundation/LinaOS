@@ -3,9 +3,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/livepatch.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/livepatch.h>
 
 static int replace;
 module_param(replace, int, 0644);
@@ -24,7 +24,7 @@ static void callback_info(const char *callback, struct klp_object *obj)
 		pr_info("%s: %s -> %s\n", callback, obj->mod->name,
 			module_state[obj->mod->state]);
 	else
-		pr_info("%s: vmlinux\n", callback);
+		pr_info("%s: vmlinaos\n", callback);
 }
 
 /* Executed on object patching (ie, patch enablement) */
@@ -58,7 +58,7 @@ static struct klp_func no_funcs[] = {
 
 static struct klp_object objs[] = {
 	{
-		.name = NULL,	/* vmlinux */
+		.name = NULL,	/* vmlinaos */
 		.funcs = no_funcs,
 		.callbacks = {
 			.pre_patch = pre_patch_callback,

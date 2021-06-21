@@ -50,10 +50,10 @@ colors 640x480  800x600  1024x768 1280x1024
 ====== =======  =======  ======== =========
 
 
-The video mode number of the Linux kernel is the VESA mode number plus
+The video mode number of the LinaOS kernel is the VESA mode number plus
 0x200:
 
- Linux_kernel_mode_number = VESA_mode_number + 0x200
+ LinaOS_kernel_mode_number = VESA_mode_number + 0x200
 
 So the table for the Kernel mode numbers are:
 
@@ -97,11 +97,11 @@ Refresh rates
 =============
 
 There is no way to change the vesafb video mode and/or timings after
-booting linux.  If you are not happy with the 60 Hz refresh rate, you
+booting linaos.  If you are not happy with the 60 Hz refresh rate, you
 have these options:
 
  * configure and load the DOS-Tools for the graphics board (if
-   available) and boot linux with loadlin.
+   available) and boot linaos with loadlin.
  * use a native driver (matroxfb/atyfb) instead if vesafb.  If none
    is available, write a new one!
  * VBE 3.0 might work too.  I have neither a gfx board with VBE 3.0

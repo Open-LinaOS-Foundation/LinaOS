@@ -8,8 +8,8 @@
 #ifndef __HOST1X_INTR_H
 #define __HOST1X_INTR_H
 
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
 
 struct host1x_syncpt;
 struct host1x;

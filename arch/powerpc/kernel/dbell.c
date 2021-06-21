@@ -5,11 +5,11 @@
  * Copyright 2009 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/hardirq.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
+#include <linaos/threads.h>
+#include <linaos/hardirq.h>
 
 #include <asm/dbell.h>
 #include <asm/interrupt.h>

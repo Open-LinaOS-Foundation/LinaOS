@@ -3,9 +3,9 @@
 #define _LINUX_WAIT_BIT_H
 
 /*
- * Linux wait-bit related types and methods:
+ * LinaOS wait-bit related types and methods:
  */
-#include <linux/wait.h>
+#include <linaos/wait.h>
 
 struct wait_bit_key {
 	void			*flags;

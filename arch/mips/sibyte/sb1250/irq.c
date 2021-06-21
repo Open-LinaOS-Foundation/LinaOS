@@ -2,14 +2,14 @@
 /*
  * Copyright (C) 2000, 2001, 2002, 2003 Broadcom Corporation
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/kernel_stat.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/mm.h>
+#include <linaos/kernel_stat.h>
 
 #include <asm/errno.h>
 #include <asm/signal.h>

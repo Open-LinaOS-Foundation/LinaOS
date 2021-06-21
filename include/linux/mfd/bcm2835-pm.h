@@ -3,7 +3,7 @@
 #ifndef BCM2835_MFD_PM_H
 #define BCM2835_MFD_PM_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 struct bcm2835_pm {
 	struct device *dev;

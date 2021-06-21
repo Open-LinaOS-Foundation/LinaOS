@@ -7,7 +7,7 @@
 #ifndef __CPUFREQ_DT_H__
 #define __CPUFREQ_DT_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct cpufreq_policy;
 

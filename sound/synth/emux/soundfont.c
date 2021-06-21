@@ -12,9 +12,9 @@
  * of doing things so that the old sfxload utility can be used.
  * Everything may change when there is an alsa way of doing things.
  */
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include <sound/soundfont.h>
 #include <sound/seq_oss_legacy.h>

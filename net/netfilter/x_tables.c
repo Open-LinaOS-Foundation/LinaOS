@@ -10,27 +10,27 @@
  *   Copyright (C) 2000-2005 Netfilter Core Team <coreteam@netfilter.org>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/net.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/audit.h>
-#include <linux/user_namespace.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/socket.h>
+#include <linaos/net.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mutex.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/audit.h>
+#include <linaos/user_namespace.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_arp.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/netfilter_arp/arp_tables.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_arp.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
+#include <linaos/netfilter_arp/arp_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");

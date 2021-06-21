@@ -6,8 +6,8 @@
 #ifndef MTK_IOMMU_SMI_H
 #define MTK_IOMMU_SMI_H
 
-#include <linux/bitops.h>
-#include <linux/device.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
 
 #if IS_ENABLED(CONFIG_MTK_SMI)
 

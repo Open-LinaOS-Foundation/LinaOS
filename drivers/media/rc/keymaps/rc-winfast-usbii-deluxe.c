@@ -6,7 +6,7 @@
 // Copyright (c) 2010 by Mauro Carvalho Chehab
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* Leadtek Winfast TV USB II Deluxe remote
    Magnus Alm <magnus.alm@gmail.com>

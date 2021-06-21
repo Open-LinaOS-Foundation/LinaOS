@@ -11,7 +11,7 @@
  * crtc, HDMI encoder).
  */
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/mfd/mcp.h
+ *  linaos/drivers/mfd/mcp.h
  *
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  */
 #ifndef MCP_H
 #define MCP_H
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 struct mcp_ops;
 

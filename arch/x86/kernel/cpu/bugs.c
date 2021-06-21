@@ -8,14 +8,14 @@
  *	- Channing Corn (tests & fixes),
  *	- Andrew D. Balsa (code cleanup).
  */
-#include <linux/init.h>
-#include <linux/utsname.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/prctl.h>
-#include <linux/sched/smt.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/utsname.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/nospec.h>
+#include <linaos/prctl.h>
+#include <linaos/sched/smt.h>
+#include <linaos/pgtable.h>
 
 #include <asm/spec-ctrl.h>
 #include <asm/cmdline.h>

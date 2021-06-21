@@ -2,7 +2,7 @@
 #ifndef __6LOWPAN_I_H
 #define __6LOWPAN_I_H
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 #include <net/6lowpan.h>
 

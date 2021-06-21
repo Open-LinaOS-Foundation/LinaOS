@@ -7,15 +7,15 @@
  *         Loc Ho <lho@apm.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
 
 /* RTC CSR Registers */
 #define RTC_CCVR		0x00

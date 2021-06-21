@@ -28,9 +28,9 @@
 #ifndef KGD_KFD_INTERFACE_H_INCLUDED
 #define KGD_KFD_INTERFACE_H_INCLUDED
 
-#include <linux/types.h>
-#include <linux/bitmap.h>
-#include <linux/dma-fence.h>
+#include <linaos/types.h>
+#include <linaos/bitmap.h>
+#include <linaos/dma-fence.h>
 
 struct pci_dev;
 

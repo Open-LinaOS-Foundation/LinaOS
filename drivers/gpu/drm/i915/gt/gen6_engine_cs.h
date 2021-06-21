@@ -6,7 +6,7 @@
 #ifndef __GEN6_ENGINE_CS_H__
 #define __GEN6_ENGINE_CS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "intel_gpu_commands.h"
 

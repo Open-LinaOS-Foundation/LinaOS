@@ -4,13 +4,13 @@
  *
  * Pentium III FXSR, SSE support
  * General FPU state handling cleanups
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  * x86-64 work by Andi Kleen 2002
  */
 
 #ifndef _ASM_X86_FPU_API_H
 #define _ASM_X86_FPU_API_H
-#include <linux/bottom_half.h>
+#include <linaos/bottom_half.h>
 
 /*
  * Use kernel_fpu_begin/end() if you intend to use FPU in kernel context. It

@@ -12,16 +12,16 @@
 #define STMMAC_RESOURCE_NAME   "stmmaceth"
 #define DRV_MODULE_VERSION	"Jan_2016"
 
-#include <linux/clk.h>
-#include <linux/hrtimer.h>
-#include <linux/if_vlan.h>
-#include <linux/stmmac.h>
-#include <linux/phylink.h>
-#include <linux/pci.h>
+#include <linaos/clk.h>
+#include <linaos/hrtimer.h>
+#include <linaos/if_vlan.h>
+#include <linaos/stmmac.h>
+#include <linaos/phylink.h>
+#include <linaos/pci.h>
 #include "common.h"
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
-#include <linux/reset.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/reset.h>
 #include <net/page_pool.h>
 
 struct stmmac_resources {

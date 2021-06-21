@@ -9,7 +9,7 @@ config SPEAKUP
 		video console for blind people.  If built in to the
 		kernel, it can speak everything on the text console from
 		boot up to shutdown.  For more information on Speakup,
-		point your browser at <http://www.linux-speakup.org/>.
+		point your browser at <http://www.linaos-speakup.org/>.
 		There is also a mailing list at the above url that you
 		can subscribe to.
 
@@ -119,8 +119,8 @@ config SPEAKUP_SYNTH_DECPC
 		choice above for more info.
 
 		In order to use the DecTalk PC driver, you must download
-		the dec_pc.tgz file from linux-speakup.org.  It is in
-		the pub/linux/goodies directory.  The dec_pc.tgz file
+		the dec_pc.tgz file from linaos-speakup.org.  It is in
+		the pub/linaos/goodies directory.  The dec_pc.tgz file
 		contains the software which must be pre-loaded on to the
 		DecTalk PC board in order to use it with this driver.
 		This driver must be built as a module, and can not be

@@ -1,7 +1,7 @@
-#include <linux/stddef.h>
-#include <linux/ipv6.h>
-#include <linux/bpf.h>
-#include <linux/in.h>
+#include <linaos/stddef.h>
+#include <linaos/ipv6.h>
+#include <linaos/bpf.h>
+#include <linaos/in.h>
 #include <sys/socket.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

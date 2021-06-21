@@ -12,7 +12,7 @@
 #define P54_H
 
 #ifdef CONFIG_P54_LEDS
-#include <linux/leds.h>
+#include <linaos/leds.h>
 #endif /* CONFIG_P54_LEDS */
 
 #define ISL38XX_DEV_FIRMWARE_ADDR 0x20000

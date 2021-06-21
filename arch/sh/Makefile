@@ -11,7 +11,7 @@
 #
 ifdef cross_compiling
   ifeq ($(CROSS_COMPILE),)
-    CROSS_COMPILE := $(call cc-cross-prefix, sh-linux- sh-linux-gnu- sh-unknown-linux-gnu-)
+    CROSS_COMPILE := $(call cc-cross-prefix, sh-linaos- sh-linaos-gnu- sh-unknown-linaos-gnu-)
   endif
 endif
 
@@ -88,8 +88,8 @@ defaultimage-$(CONFIG_SH_MIGOR)			:= uImage
 defaultimage-$(CONFIG_SH_AP325RXA)		:= uImage
 defaultimage-$(CONFIG_SH_SH7757LCR)		:= uImage
 defaultimage-$(CONFIG_SH_7724_SOLUTION_ENGINE)	:= uImage
-defaultimage-$(CONFIG_SH_7206_SOLUTION_ENGINE)	:= vmlinux
-defaultimage-$(CONFIG_SH_7619_SOLUTION_ENGINE)	:= vmlinux
+defaultimage-$(CONFIG_SH_7206_SOLUTION_ENGINE)	:= vmlinaos
+defaultimage-$(CONFIG_SH_7619_SOLUTION_ENGINE)	:= vmlinaos
 
 # Set some sensible Kbuild defaults
 boot := arch/sh/boot
@@ -100,15 +100,15 @@ KBUILD_IMAGE		:= $(boot)/$(defaultimage-y)
 # error messages during linking.
 #
 UTS_MACHINE		:= sh
-LDFLAGS_vmlinux		+= -e _stext
+LDFLAGS_vmlinaos		+= -e _stext
 
 ifdef CONFIG_CPU_LITTLE_ENDIAN
-ld-bfd			:= elf32-sh-linux
-LDFLAGS_vmlinux		+= --defsym jiffies=jiffies_64 --oformat $(ld-bfd)
+ld-bfd			:= elf32-sh-linaos
+LDFLAGS_vmlinaos		+= --defsym jiffies=jiffies_64 --oformat $(ld-bfd)
 KBUILD_LDFLAGS		+= -EL
 else
-ld-bfd			:= elf32-shbig-linux
-LDFLAGS_vmlinux		+= --defsym jiffies=jiffies_64+4 --oformat $(ld-bfd)
+ld-bfd			:= elf32-shbig-linaos
+LDFLAGS_vmlinaos		+= --defsym jiffies=jiffies_64+4 --oformat $(ld-bfd)
 KBUILD_LDFLAGS		+= -EB
 endif
 
@@ -189,13 +189,13 @@ endif
 libs-y			:= arch/sh/lib/	$(libs-y)
 
 BOOT_TARGETS = uImage uImage.bz2 uImage.gz uImage.lzma uImage.xz uImage.lzo \
-	       uImage.srec uImage.bin zImage vmlinux.bin vmlinux.srec \
+	       uImage.srec uImage.bin zImage vmlinaos.bin vmlinaos.srec \
 	       romImage
 PHONY += $(BOOT_TARGETS)
 
 all: $(notdir $(KBUILD_IMAGE))
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 compressed: zImage
@@ -213,8 +213,8 @@ archheaders:
 define archhelp
 	@echo '  zImage 	           - Compressed kernel image'
 	@echo '  romImage	           - Compressed ROM image, if supported'
-	@echo '  vmlinux.srec	           - Create an ELF S-record'
-	@echo '  vmlinux.bin	           - Create an uncompressed binary image'
+	@echo '  vmlinaos.srec	           - Create an ELF S-record'
+	@echo '  vmlinaos.bin	           - Create an uncompressed binary image'
 	@echo '* uImage  	           - Alias to bootable U-Boot image'
 	@echo '  uImage.srec	           - Create an S-record for U-Boot'
 	@echo '  uImage.bin	           - Kernel-only image for U-Boot (bin)'

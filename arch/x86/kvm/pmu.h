@@ -2,7 +2,7 @@
 #ifndef __KVM_X86_PMU_H
 #define __KVM_X86_PMU_H
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #define vcpu_to_pmu(vcpu) (&(vcpu)->arch.pmu)
 #define pmu_to_vcpu(pmu)  (container_of((pmu), struct kvm_vcpu, arch.pmu))

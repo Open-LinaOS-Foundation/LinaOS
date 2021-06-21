@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/include/video/mmp_disp.h
+ * linaos/include/video/mmp_disp.h
  * Header file for Marvell MMP Display Controller
  *
  * Copyright (C) 2012 Marvell Technology Group Ltd.
@@ -9,7 +9,7 @@
 
 #ifndef _MMP_DISP_H_
 #define _MMP_DISP_H_
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 
 enum {
 	PIXFMT_UYVY = 0,

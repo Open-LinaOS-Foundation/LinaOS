@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2012 GCT Semiconductor, Inc. All rights reserved. */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "gdm_endian.h"
 
 __dev16 gdm_cpu_to_dev16(u8 dev_ed, u16 x)

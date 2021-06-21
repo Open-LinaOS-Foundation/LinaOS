@@ -23,9 +23,9 @@
  *          Alon Levy
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/dma-buf-map.h>
+#include <linaos/crc32.h>
+#include <linaos/delay.h>
+#include <linaos/dma-buf-map.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_atomic.h>

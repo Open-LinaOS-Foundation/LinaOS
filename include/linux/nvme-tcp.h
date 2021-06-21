@@ -7,7 +7,7 @@
 #ifndef _LINUX_NVME_TCP_H
 #define _LINUX_NVME_TCP_H
 
-#include <linux/nvme.h>
+#include <linaos/nvme.h>
 
 #define NVME_TCP_DISC_PORT	8009
 #define NVME_TCP_ADMIN_CCSZ	SZ_8K

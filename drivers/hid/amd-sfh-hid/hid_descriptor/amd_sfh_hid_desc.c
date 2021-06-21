@@ -6,9 +6,9 @@
  *	     Sandeep Singh <sandeep.singh@amd.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 #include "amd_sfh_pcie.h"
 #include "amd_sfh_hid_desc.h"
 #include "amd_sfh_hid_report_desc.h"

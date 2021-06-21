@@ -10,7 +10,7 @@
 #ifndef _ASM_MACH_IP27_SPACES_H
 #define _ASM_MACH_IP27_SPACES_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /*
  * IP27 uses the R10000's uncached attribute feature.  Attribute 3 selects

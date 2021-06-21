@@ -8,13 +8,13 @@
  *         Jeff Chen <jeff.chen@rock-chips.com>
  */
 
-#include <linux/component.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
+#include <linaos/component.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_device.h>
+#include <linaos/of_graph.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/clk.h>
 
 #include <video/of_videomode.h>
 #include <video/videomode.h>

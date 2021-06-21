@@ -5,15 +5,15 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_edid.h>

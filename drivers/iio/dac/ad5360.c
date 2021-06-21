@@ -6,17 +6,17 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define AD5360_CMD(x)				((x) << 22)
 #define AD5360_ADDR(x)				((x) << 16)

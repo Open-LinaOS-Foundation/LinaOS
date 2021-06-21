@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * 	Format of an ARP firewall descriptor
  *
@@ -10,12 +10,12 @@
 #ifndef _UAPI_ARPTABLES_H
 #define _UAPI_ARPTABLES_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/if.h>
-#include <linux/netfilter_arp.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/if.h>
+#include <linaos/netfilter_arp.h>
 
-#include <linux/netfilter/x_tables.h>
+#include <linaos/netfilter/x_tables.h>
 
 #ifndef __KERNEL__
 #define ARPT_FUNCTION_MAXNAMELEN XT_FUNCTION_MAXNAMELEN
@@ -114,10 +114,10 @@ struct arpt_entry
 
 /*
  * New IP firewall options for [gs]etsockopt at the RAW IP level.
- * Unlike BSD Linux inherits IP options so you don't have to use a raw
+ * Unlike BSD LinaOS inherits IP options so you don't have to use a raw
  * socket for this. Instead we check rights in the calls.
  *
- * ATTENTION: check linux/in.h before adding new number here.
+ * ATTENTION: check linaos/in.h before adding new number here.
  */
 #define ARPT_BASE_CTL		96
 

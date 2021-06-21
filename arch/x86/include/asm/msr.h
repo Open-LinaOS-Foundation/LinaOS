@@ -64,7 +64,7 @@ struct saved_msrs {
  * Be very careful with includes. This header is prone to include loops.
  */
 #include <asm/atomic.h>
-#include <linux/tracepoint-defs.h>
+#include <linaos/tracepoint-defs.h>
 
 #ifdef CONFIG_TRACEPOINTS
 DECLARE_TRACEPOINT(read_msr);
@@ -254,7 +254,7 @@ static inline unsigned long long native_read_pmc(int counter)
 #ifdef CONFIG_PARAVIRT_XXL
 #include <asm/paravirt.h>
 #else
-#include <linux/errno.h>
+#include <linaos/errno.h>
 /*
  * Access to machine-specific registers (available on 586 and better only)
  * Note: the rd* operations modify the parameters directly (without using

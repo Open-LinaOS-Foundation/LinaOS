@@ -11,7 +11,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <inttypes.h>
-#include <linux/gpio.h>
+#include <linaos/gpio.h>
 #include <poll.h>
 #include <stdbool.h>
 #include <stdio.h>

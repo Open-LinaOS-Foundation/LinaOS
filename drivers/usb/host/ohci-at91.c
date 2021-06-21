@@ -3,7 +3,7 @@
  * OHCI HCD (Host Controller Driver) for USB.
  *
  *  Copyright (C) 2004 SAN People (Pty) Ltd.
- *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-linux.org>
+ *  Copyright (C) 2005 Thibaut VARENE <varenet@parisc-linaos.org>
  *
  * AT91 Bus Glue
  *
@@ -13,19 +13,19 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/atmel.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/atmel.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 #include <soc/at91/atmel-sfr.h>
 
 #include "ohci.h"

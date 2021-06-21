@@ -4,19 +4,19 @@
  *
  *  Todo: - add support for the OF persistent properties
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/nvram.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/memblock.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/string.h>
+#include <linaos/nvram.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
+#include <linaos/memblock.h>
+#include <linaos/completion.h>
+#include <linaos/spinlock.h>
 #include <asm/sections.h>
 #include <asm/io.h>
 #include <asm/prom.h>

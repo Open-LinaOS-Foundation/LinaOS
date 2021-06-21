@@ -7,7 +7,7 @@
 
 #include "habanalabs.h"
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 /*
  * hl_queue_add_ptr - add to pi or ci and checks if it wraps around

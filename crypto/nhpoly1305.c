@@ -35,9 +35,9 @@
 #include <crypto/internal/hash.h>
 #include <crypto/internal/poly1305.h>
 #include <crypto/nhpoly1305.h>
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/crypto.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 static void nh_generic(const u32 *key, const u8 *message, size_t message_len,
 		       __le64 hash[NH_NUM_PASSES])

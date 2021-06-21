@@ -4,7 +4,7 @@ Documentation for /proc/sys/fs/
 
 kernel version 2.2.10
 
-Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.linux.org>
+Copyright (c) 1998, 1999,  Rik van Riel <riel@nl.linaos.org>
 
 Copyright (c) 2009,        Shen Feng<shen@cn.fujitsu.com>
 
@@ -13,10 +13,10 @@ For general info and legal blurb, please look in intro.rst.
 ------------------------------------------------------------------------------
 
 This file contains documentation for the sysctl files in
-/proc/sys/fs/ and is valid for Linux kernel version 2.2.
+/proc/sys/fs/ and is valid for LinaOS kernel version 2.2.
 
 The files in this directory can be used to tune and monitor
-miscellaneous and general things in the operation of the Linux
+miscellaneous and general things in the operation of the LinaOS
 kernel. Since some of the files _can_ be used to screw up your
 system, it is advisable to read both documentation and source
 before actually making adjustments.
@@ -63,7 +63,7 @@ of any kernel data structures.
 dentry-state
 ------------
 
-From linux/include/linux/dcache.h::
+From linaos/include/linaos/dcache.h::
 
   struct dentry_stat_t dentry_stat {
         int nr_dentry;
@@ -109,7 +109,7 @@ file-max & file-nr
 ------------------
 
 The value in file-max denotes the maximum number of file-
-handles that the Linux kernel will allocate. When you get lots
+handles that the LinaOS kernel will allocate. When you get lots
 of error messages about running out of file handles, you might
 want to increase this limit.
 
@@ -117,7 +117,7 @@ Historically,the kernel was able to allocate file handles
 dynamically, but not to free them again. The three values in
 file-nr denote the number of allocated file handles, the number
 of allocated but unused file handles, and the maximum number of
-file handles. Linux 2.6 always reports 0 as the number of free
+file handles. LinaOS 2.6 always reports 0 as the number of free
 file handles -- this is not an error, it just means that the
 number of allocated file handles exactly matches the number of
 used file handles.
@@ -157,7 +157,7 @@ nr_free_inodes and preshrink.
 
 Nr_inodes stands for the number of inodes the system has
 allocated, this can be slightly more than inode-max because
-Linux allocates them one pageful at a time.
+LinaOS allocates them one pageful at a time.
 
 Nr_free_inodes represents the number of free inodes (?) and
 preshrink is nonzero when the nr_inodes > inode-max and the
@@ -168,7 +168,7 @@ more.
 overflowgid & overflowuid
 -------------------------
 
-Some filesystems only support 16-bit UIDs and GIDs, although in Linux
+Some filesystems only support 16-bit UIDs and GIDs, although in LinaOS
 UIDs and GIDs are 32 bits. When one of these filesystems is mounted
 with writes enabled, any UID or GID that would exceed 65535 is translated
 to a fixed value before being written to disk.

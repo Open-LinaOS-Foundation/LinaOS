@@ -3,12 +3,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1995-99, 2000- 02, 06 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 1995-99, 2000- 02, 06 Ralf Baechle <ralf@linaos-mips.org>
  * Copyright (C) 2001 MIPS Technologies, Inc.
  * Copyright (C) 2004 Thiemo Seufer
  * Copyright (C) 2014 Imagination Technologies Ltd.
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/asm.h>
 #include <asm/asmmacro.h>
 #include <asm/irqflags.h>
@@ -83,8 +83,8 @@ loads_done:
 	and	t0, t1
 	bnez	t0, syscall_trace_entry # -> yes
 syscall_common:
-	subu	v0, v0, __NR_O32_Linux	# check syscall number
-	sltiu	t0, v0, __NR_O32_Linux_syscalls
+	subu	v0, v0, __NR_O32_LinaOS	# check syscall number
+	sltiu	t0, v0, __NR_O32_LinaOS_syscalls
 	beqz	t0, illegal_syscall
 
 	sll	t0, v0, 2
@@ -120,7 +120,7 @@ syscall_trace_entry:
 	 * where the real syscall number is in a0
 	 */
 	move	a1, v0
-	subu	t2, v0,  __NR_O32_Linux
+	subu	t2, v0,  __NR_O32_LinaOS
 	bnez	t2, 1f /* __NR_syscall at offset 0 */
 	lw	a1, PT_R4(sp)
 
@@ -179,8 +179,8 @@ illegal_syscall:
 	END(handle_sys)
 
 	LEAF(sys_syscall)
-	subu	t0, a0, __NR_O32_Linux	# check syscall number
-	sltiu	v0, t0, __NR_O32_Linux_syscalls
+	subu	t0, a0, __NR_O32_LinaOS	# check syscall number
+	sltiu	v0, t0, __NR_O32_LinaOS_syscalls
 	beqz	t0, einval		# do not recurse
 	sll	t1, t0, 2
 	beqz	v0, einval

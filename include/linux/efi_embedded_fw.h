@@ -2,8 +2,8 @@
 #ifndef _LINUX_EFI_EMBEDDED_FW_H
 #define _LINUX_EFI_EMBEDDED_FW_H
 
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/list.h>
+#include <linaos/mod_devicetable.h>
 
 #define EFI_EMBEDDED_FW_PREFIX_LEN		8
 

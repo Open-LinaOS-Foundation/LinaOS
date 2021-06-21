@@ -7,8 +7,8 @@
 #ifndef __I915_GEM_MMAN_H__
 #define __I915_GEM_MMAN_H__
 
-#include <linux/mm_types.h>
-#include <linux/types.h>
+#include <linaos/mm_types.h>
+#include <linaos/types.h>
 
 struct drm_device;
 struct drm_file;

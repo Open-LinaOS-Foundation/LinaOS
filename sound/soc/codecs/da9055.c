@@ -9,13 +9,13 @@
  * Ashish Chavan <ashish.chavan@kpitcummins.com>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

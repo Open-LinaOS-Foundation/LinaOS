@@ -5,7 +5,7 @@
 #ifndef __UFS_SYSFS_H__
 #define __UFS_SYSFS_H__
 
-#include <linux/sysfs.h>
+#include <linaos/sysfs.h>
 
 #include "ufshcd.h"
 

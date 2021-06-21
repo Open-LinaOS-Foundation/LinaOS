@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
 #ifdef CONFIG_XEN_BALLOON_MEMORY_HOTPLUG
-#include <linux/memblock.h>
+#include <linaos/memblock.h>
 #endif
-#include <linux/cpu.h>
-#include <linux/kexec.h>
-#include <linux/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/kexec.h>
+#include <linaos/slab.h>
 
 #include <xen/xen.h>
 #include <xen/features.h>
@@ -47,7 +47,7 @@ DEFINE_PER_CPU(struct vcpu_info *, xen_vcpu);
  */
 DEFINE_PER_CPU(struct vcpu_info, xen_vcpu_info);
 
-/* Linux <-> Xen vCPU id mapping */
+/* LinaOS <-> Xen vCPU id mapping */
 DEFINE_PER_CPU(uint32_t, xen_vcpu_id);
 EXPORT_PER_CPU_SYMBOL(xen_vcpu_id);
 

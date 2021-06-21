@@ -11,37 +11,37 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	linaos-arm-kernel@lists.arm.linaos.org.uk
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/lcd.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/cpufreq.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/lcd.h>
+#include <linaos/math64.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/of_display_timing.h>
 #include <video/of_videomode.h>
 #include <video/videomode.h>
 
-#include <linux/platform_data/video-imxfb.h>
+#include <linaos/platform_data/video-imxfb.h>
 
 /*
  * Complain if VAR is out of range.

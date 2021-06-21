@@ -2,7 +2,7 @@
 
 /* Copyright (C) 2019-2021 Linaro Ltd. */
 
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 #include "gsi.h"
 #include "ipa_data.h"

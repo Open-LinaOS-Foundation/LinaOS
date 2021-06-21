@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/hfsplus/tables.c
+ * linaos/fs/hfsplus/tables.c
  *
  * Various data tables
  */

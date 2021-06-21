@@ -34,28 +34,28 @@
 #ifndef _MLX4_EN_H_
 #define _MLX4_EN_H_
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/ethtool.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/net_tstamp.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/ethtool.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/net_tstamp.h>
 #ifdef CONFIG_MLX4_EN_DCB
-#include <linux/dcbnl.h>
+#include <linaos/dcbnl.h>
 #endif
-#include <linux/cpu_rmap.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/irq.h>
+#include <linaos/cpu_rmap.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/irq.h>
 #include <net/xdp.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/qp.h>
-#include <linux/mlx4/cq.h>
-#include <linux/mlx4/srq.h>
-#include <linux/mlx4/doorbell.h>
-#include <linux/mlx4/cmd.h>
+#include <linaos/mlx4/device.h>
+#include <linaos/mlx4/qp.h>
+#include <linaos/mlx4/cq.h>
+#include <linaos/mlx4/srq.h>
+#include <linaos/mlx4/doorbell.h>
+#include <linaos/mlx4/cmd.h>
 
 #include "en_port.h"
 #include "mlx4_stats.h"

@@ -5,14 +5,14 @@
  * Copyright (c) 2016, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
+#include <linaos/of_irq.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 #include "virt-dma.h"
 

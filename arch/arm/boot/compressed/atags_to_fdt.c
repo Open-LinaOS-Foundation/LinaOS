@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/libfdt_env.h>
+#include <linaos/libfdt_env.h>
 #include <asm/setup.h>
 #include <libfdt.h>
 
@@ -196,9 +196,9 @@ int atags_to_fdt(void *atag_list, void *fdt, int total_space)
 			uint32_t initrd_start, initrd_size;
 			initrd_start = atag->u.initrd.start;
 			initrd_size = atag->u.initrd.size;
-			setprop_cell(fdt, "/chosen", "linux,initrd-start",
+			setprop_cell(fdt, "/chosen", "linaos,initrd-start",
 					initrd_start);
-			setprop_cell(fdt, "/chosen", "linux,initrd-end",
+			setprop_cell(fdt, "/chosen", "linaos,initrd-end",
 					initrd_start + initrd_size);
 		} else if (atag->hdr.tag == ATAG_SERIAL) {
 			char serno[16+2];

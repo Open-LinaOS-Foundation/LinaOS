@@ -10,8 +10,8 @@
 #ifndef _ASM_S390_AIRQ_H
 #define _ASM_S390_AIRQ_H
 
-#include <linux/bit_spinlock.h>
-#include <linux/dma-mapping.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/dma-mapping.h>
 
 struct airq_struct {
 	struct hlist_node list;		/* Handler queueing. */

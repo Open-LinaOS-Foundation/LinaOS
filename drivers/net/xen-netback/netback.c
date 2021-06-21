@@ -10,7 +10,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,10 +34,10 @@
 
 #include "common.h"
 
-#include <linux/kthread.h>
-#include <linux/if_vlan.h>
-#include <linux/udp.h>
-#include <linux/highmem.h>
+#include <linaos/kthread.h>
+#include <linaos/if_vlan.h>
+#include <linaos/udp.h>
+#include <linaos/highmem.h>
 
 #include <net/tcp.h>
 

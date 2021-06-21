@@ -1,4 +1,4 @@
-/* i915_drv.h -- Private header for the I915 driver -*- linux-c -*-
+/* i915_drv.h -- Private header for the I915 driver -*- linaos-c -*-
  */
 /*
  *
@@ -35,20 +35,20 @@
 
 #include <asm/hypervisor.h>
 
-#include <linux/io-mapping.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/backlight.h>
-#include <linux/hash.h>
-#include <linux/intel-iommu.h>
-#include <linux/kref.h>
-#include <linux/mm_types.h>
-#include <linux/perf_event.h>
-#include <linux/pm_qos.h>
-#include <linux/dma-resv.h>
-#include <linux/shmem_fs.h>
-#include <linux/stackdepot.h>
-#include <linux/xarray.h>
+#include <linaos/io-mapping.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
+#include <linaos/backlight.h>
+#include <linaos/hash.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/kref.h>
+#include <linaos/mm_types.h>
+#include <linaos/perf_event.h>
+#include <linaos/pm_qos.h>
+#include <linaos/dma-resv.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/stackdepot.h>
+#include <linaos/xarray.h>
 
 #include <drm/intel-gtt.h>
 #include <drm/drm_legacy.h> /* for struct drm_dma_handle */

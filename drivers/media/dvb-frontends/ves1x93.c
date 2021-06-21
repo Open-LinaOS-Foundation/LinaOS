@@ -5,17 +5,17 @@
     Copyright (C) 1999 Convergence Integrated Media GmbH <ralph@convergence.de>
     Copyright (C) 2001 Ronny Strutz <3des@elitedvb.de>
     Copyright (C) 2002 Dennis Noermann <dennis.noermann@noernet.de>
-    Copyright (C) 2002-2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2002-2003 Andreas Oberritter <obi@linaostv.org>
 
 
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
 #include <media/dvb_frontend.h>
 #include "ves1x93.h"

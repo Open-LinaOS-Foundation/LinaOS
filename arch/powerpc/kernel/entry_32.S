@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *  Rewritten by Cort Dougan (cort@fsmlabs.com) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@fsmlabs.com>
  *  Adapted for Power Macintosh by Paul Mackerras.
@@ -14,10 +14,10 @@
  *  code, and exception/interrupt return code for PowerPC.
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/sys.h>
-#include <linux/threads.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/sys.h>
+#include <linaos/threads.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/mmu.h>

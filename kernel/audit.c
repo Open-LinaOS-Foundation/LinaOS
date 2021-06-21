@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /* audit.c -- Auditing support
- * Gateway between the kernel (e.g., selinux) and the user-space audit daemon.
+ * Gateway between the kernel (e.g., selinaos) and the user-space audit daemon.
  * System-call specific features have moved to auditsc.c
  *
  * Copyright 2003-2007 Red Hat Inc., Durham, North Carolina.
@@ -26,38 +26,38 @@
  *	     information that must be passed to user-space.
  *
  * Audit userspace, documentation, tests, and bug/issue trackers:
- * 	https://github.com/linux-audit
+ * 	https://github.com/linaos-audit
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/file.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/kthread.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/pid.h>
+#include <linaos/file.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/kthread.h>
+#include <linaos/kernel.h>
+#include <linaos/syscalls.h>
+#include <linaos/spinlock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/mutex.h>
+#include <linaos/gfp.h>
+#include <linaos/pid.h>
 
-#include <linux/audit.h>
+#include <linaos/audit.h>
 
 #include <net/sock.h>
 #include <net/netlink.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #ifdef CONFIG_SECURITY
-#include <linux/security.h>
+#include <linaos/security.h>
 #endif
-#include <linux/freezer.h>
-#include <linux/pid_namespace.h>
+#include <linaos/freezer.h>
+#include <linaos/pid_namespace.h>
 #include <net/netns/generic.h>
 
 #include "audit.h"

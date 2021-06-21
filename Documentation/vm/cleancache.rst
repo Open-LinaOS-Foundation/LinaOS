@@ -84,7 +84,7 @@ if a get for a given handle fails, subsequent gets for that handle will
 never succeed unless preceded by a successful put with that handle.
 
 Last, cleancache provides no SMP serialization guarantees; if two
-different Linux threads are simultaneously putting and invalidating a page
+different LinaOS threads are simultaneously putting and invalidating a page
 with the same handle, the results are indeterminate.  Callers must
 lock the page to ensure serial behavior.
 

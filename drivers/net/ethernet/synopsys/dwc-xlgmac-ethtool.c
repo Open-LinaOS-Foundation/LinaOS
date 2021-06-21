@@ -15,9 +15,9 @@
  * in the SOFTWARE may be the trademarks of their respective owners.
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
 
 #include "dwc-xlgmac.h"
 #include "dwc-xlgmac-reg.h"

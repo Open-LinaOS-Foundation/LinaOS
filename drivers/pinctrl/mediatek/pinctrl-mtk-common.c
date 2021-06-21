@@ -5,26 +5,26 @@
  * Author: Hongzhou.Yang <hongzhou.yang@mediatek.com>
  */
 
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm.h>
 #include <dt-bindings/pinctrl/mt65xx.h>
 
 #include "../core.h"

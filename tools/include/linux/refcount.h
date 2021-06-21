@@ -38,8 +38,8 @@
  *
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
 
 #ifdef NDEBUG
 #define REFCOUNT_WARN(cond, str) (void)(cond)

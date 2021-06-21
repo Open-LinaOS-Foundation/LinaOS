@@ -8,7 +8,7 @@
 #ifndef __SPI_S3C64XX_H
 #define __SPI_S3C64XX_H
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 struct platform_device;
 

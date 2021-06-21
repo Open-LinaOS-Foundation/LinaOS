@@ -7,7 +7,7 @@
 #if !defined(__MT7601U_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __MT7601U_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "mt7601u.h"
 #include "mac.h"
 

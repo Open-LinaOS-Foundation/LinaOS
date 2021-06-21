@@ -18,53 +18,53 @@
  *       by Max Krasnyansky
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the LinaOS
  *  distribution for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/cpuset.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/mempolicy.h>
-#include <linux/mm.h>
-#include <linux/memory.h>
-#include <linux/export.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/namei.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/seq_file.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/time64.h>
-#include <linux/backing-dev.h>
-#include <linux/sort.h>
-#include <linux/oom.h>
-#include <linux/sched/isolation.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/mutex.h>
-#include <linux/cgroup.h>
-#include <linux/wait.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/cpuset.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/list.h>
+#include <linaos/mempolicy.h>
+#include <linaos/mm.h>
+#include <linaos/memory.h>
+#include <linaos/export.h>
+#include <linaos/mount.h>
+#include <linaos/fs_context.h>
+#include <linaos/namei.h>
+#include <linaos/pagemap.h>
+#include <linaos/proc_fs.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched.h>
+#include <linaos/sched/deadline.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task.h>
+#include <linaos/seq_file.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/time.h>
+#include <linaos/time64.h>
+#include <linaos/backing-dev.h>
+#include <linaos/sort.h>
+#include <linaos/oom.h>
+#include <linaos/sched/isolation.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/mutex.h>
+#include <linaos/cgroup.h>
+#include <linaos/wait.h>
 
 DEFINE_STATIC_KEY_FALSE(cpusets_pre_enable_key);
 DEFINE_STATIC_KEY_FALSE(cpusets_enabled_key);

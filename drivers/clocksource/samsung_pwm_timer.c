@@ -6,19 +6,19 @@
  * samsung - Common hr-timer support (s3c and s5p)
 */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sched_clock.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/sched_clock.h>
 
 #include <clocksource/samsung_pwm.h>
 

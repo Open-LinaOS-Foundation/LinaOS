@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/asm-arm/arch-pxa/palmtc-gpio.h
+ * linaos/include/asm-arm/arch-pxa/palmtc-gpio.h
  *
  * GPIOs and interrupts for Palm Tungsten|C Handheld Computer
  *

@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/s3fb.c -- Frame buffer device driver for S3 Trio/Virge
+ * linaos/drivers/video/s3fb.c -- Frame buffer device driver for S3 Trio/Virge
  *
  * Copyright (c) 2006-2007 Ondrej Zajicek <santiago@crfreenet.org>
  *
@@ -11,22 +11,22 @@
  * which is based on the code of neofb.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/svga.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/console.h> /* Why should fb driver call console functions? because console_lock() */
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/svga.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/console.h> /* Why should fb driver call console functions? because console_lock() */
 #include <video/vga.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
 struct s3fb_info {
 	int chip, rev, mclk_freq;

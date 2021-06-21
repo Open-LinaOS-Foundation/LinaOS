@@ -2,8 +2,8 @@
 #ifndef __PERF_REGS_H
 #define __PERF_REGS_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 struct regs_dump;
 

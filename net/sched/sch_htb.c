@@ -21,18 +21,18 @@
  *			fixed requeue routine
  *		and many others. thanks.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/list.h>
+#include <linaos/compiler.h>
+#include <linaos/rbtree.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>

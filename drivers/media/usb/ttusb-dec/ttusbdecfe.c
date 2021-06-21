@@ -2,7 +2,7 @@
 /*
  * TTUSB DEC Frontend Driver
  *
- * Copyright (C) 2003-2004 Alex Woods <linux-dvb@giblets.org>
+ * Copyright (C) 2003-2004 Alex Woods <linaos-dvb@giblets.org>
  */
 
 #include <media/dvb_frontend.h>

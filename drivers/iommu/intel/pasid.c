@@ -4,20 +4,20 @@
  *
  * Copyright (C) 2018 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linaos.intel.com>
  */
 
 #define pr_fmt(fmt)	"DMAR: " fmt
 
-#include <linux/bitops.h>
-#include <linux/cpufeature.h>
-#include <linux/dmar.h>
-#include <linux/intel-iommu.h>
-#include <linux/iommu.h>
-#include <linux/memory.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/cpufeature.h>
+#include <linaos/dmar.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/iommu.h>
+#include <linaos/memory.h>
+#include <linaos/pci.h>
+#include <linaos/pci-ats.h>
+#include <linaos/spinlock.h>
 
 #include "pasid.h"
 

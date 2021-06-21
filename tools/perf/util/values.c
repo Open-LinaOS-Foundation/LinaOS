@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 
 #include "values.h"
 #include "debug.h"

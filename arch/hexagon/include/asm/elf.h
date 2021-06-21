@@ -2,7 +2,7 @@
 /*
  * ELF definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __ASM_ELF_H
@@ -10,7 +10,7 @@
 
 #include <asm/ptrace.h>
 #include <asm/user.h>
-#include <linux/elf-em.h>
+#include <linaos/elf-em.h>
 
 struct elf32_hdr;
 
@@ -208,8 +208,8 @@ do {					\
 #define ELF_PLATFORM  (NULL)
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linaos_binprm;
+extern int arch_setup_additional_pages(struct linaos_binprm *bprm,
 				       int uses_interp);
 
 

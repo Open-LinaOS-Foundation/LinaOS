@@ -170,7 +170,7 @@
 #define VSCSIIF_SG_TABLESIZE		26
 
 /*
- * based on Linux kernel 2.6.18, still valid
+ * based on LinaOS kernel 2.6.18, still valid
  * Changing these values requires support of multiple protocols via the rings
  * as "old clients" will blindly use these values and the resulting structure
  * sizes.

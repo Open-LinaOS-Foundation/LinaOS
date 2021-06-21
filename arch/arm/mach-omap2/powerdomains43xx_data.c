@@ -5,8 +5,8 @@
  * Copyright (C) 2013 Texas Instruments, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 
 #include "powerdomain.h"
 

@@ -9,9 +9,9 @@
  * Author: Dongsoo Nathaniel Kim <dongsoo45.kim@samsung.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-ctrls.h>
 
 #include "m5mols.h"

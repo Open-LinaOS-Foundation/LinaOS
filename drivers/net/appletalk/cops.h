@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/*      cops.h: LocalTalk driver for Linux.
+/*      cops.h: LocalTalk driver for LinaOS.
  *
  *      Authors:
  *      - Jay Schulist <jschlst@samba.org>

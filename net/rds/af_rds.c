@@ -30,13 +30,13 @@
  * SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/poll.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/in.h>
+#include <linaos/ipv6.h>
+#include <linaos/poll.h>
 #include <net/sock.h>
 
 #include "rds.h"

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/sound/soc/pxa/ttc_dkb.c
+ * linaos/sound/soc/pxa/ttc_dkb.c
  *
  * Copyright (C) 2012 Marvell International Ltd.
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

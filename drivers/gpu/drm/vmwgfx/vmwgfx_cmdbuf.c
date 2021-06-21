@@ -25,8 +25,8 @@
  *
  **************************************************************************/
 
-#include <linux/dmapool.h>
-#include <linux/pci.h>
+#include <linaos/dmapool.h>
+#include <linaos/pci.h>
 
 #include <drm/ttm/ttm_bo_api.h>
 

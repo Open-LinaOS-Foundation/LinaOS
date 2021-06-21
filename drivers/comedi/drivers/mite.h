@@ -3,14 +3,14 @@
  * module/mite.h
  * Hardware driver for NI Mite PCI interface chip
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1999 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _MITE_H_
 #define _MITE_H_
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #define MAX_MITE_DMA_CHANNELS 8
 

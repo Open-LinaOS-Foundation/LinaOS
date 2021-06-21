@@ -14,8 +14,8 @@
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/cpufeature.h>
-#include <linux/module.h>
+#include <linaos/cpufeature.h>
+#include <linaos/module.h>
 #include <crypto/xts.h>
 
 MODULE_DESCRIPTION("AES-ECB/CBC/CTR/XTS using ARMv8 Crypto Extensions");

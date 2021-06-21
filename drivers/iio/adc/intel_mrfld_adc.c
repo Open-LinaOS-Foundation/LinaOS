@@ -7,22 +7,22 @@
  *
  * Rewritten for upstream by:
  *	 Vincent Pelletier <plr.vincent@gmail.com>
- *	 Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ *	 Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/mfd/intel_soc_pmic_mrfld.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/mfd/intel_soc_pmic_mrfld.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
-#include <linux/iio/driver.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/machine.h>
+#include <linaos/iio/driver.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/machine.h>
 
 #include <asm/unaligned.h>
 
@@ -256,6 +256,6 @@ module_platform_driver(mrfld_adc_driver);
 
 MODULE_AUTHOR("Bin Yang <bin.yang@intel.com>");
 MODULE_AUTHOR("Vincent Pelletier <plr.vincent@gmail.com>");
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");
 MODULE_DESCRIPTION("ADC driver for Basin Cove PMIC");
 MODULE_LICENSE("GPL v2");

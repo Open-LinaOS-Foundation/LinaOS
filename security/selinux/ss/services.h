@@ -10,22 +10,22 @@
 #include "policydb.h"
 
 /* Mapping for a single class */
-struct selinux_mapping {
+struct selinaos_mapping {
 	u16 value; /* policy value for class */
 	unsigned int num_perms; /* number of permissions in class */
 	u32 perms[sizeof(u32) * 8]; /* policy values for permissions */
 };
 
 /* Map for all of the classes, with array size */
-struct selinux_map {
-	struct selinux_mapping *mapping; /* indexed by class */
+struct selinaos_map {
+	struct selinaos_mapping *mapping; /* indexed by class */
 	u16 size; /* array size of mapping */
 };
 
-struct selinux_policy {
+struct selinaos_policy {
 	struct sidtab *sidtab;
 	struct policydb policydb;
-	struct selinux_map map;
+	struct selinaos_map map;
 	u32 latest_granting;
 } __randomize_layout;
 

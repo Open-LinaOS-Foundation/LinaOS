@@ -4,14 +4,14 @@
  *   Copyright (C) 2011 John Crispin <john@phrozen.org>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
 
 #include <lantiq_soc.h>
 #include <xway_dma.h>

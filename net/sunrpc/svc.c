@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/svc.c
+ * linaos/net/sunrpc/svc.c
  *
  * High-level RPC service routines
  *
@@ -11,23 +11,23 @@
  * by Greg Banks <gnb@melbourne.sgi.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
+#include <linaos/linkage.h>
+#include <linaos/sched/signal.h>
+#include <linaos/errno.h>
+#include <linaos/net.h>
+#include <linaos/in.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
 
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/bc_xprt.h>
+#include <linaos/sunrpc/types.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/svcsock.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/bc_xprt.h>
 
 #include <trace/events/sunrpc.h>
 
@@ -1724,7 +1724,7 @@ char *svc_fill_symlink_pathname(struct svc_rqst *rqstp, struct kvec *first,
 
 	*dst = '\0';
 
-	/* Sanity check: Linux doesn't allow the pathname argument to
+	/* Sanity check: LinaOS doesn't allow the pathname argument to
 	 * contain a NUL byte.
 	 */
 	if (strlen(result) != total) {

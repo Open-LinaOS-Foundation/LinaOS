@@ -10,14 +10,14 @@
 
 #define pr_fmt(fmt) "ap-cpu-clk: " fmt
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include "armada_ap_cp_helper.h"
 
 #define AP806_CPU_CLUSTER0		0

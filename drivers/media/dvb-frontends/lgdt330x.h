@@ -8,7 +8,7 @@
 #ifndef LGDT330X_H
 #define LGDT330X_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 typedef enum lg_chip_t {
 		UNDEFINED,

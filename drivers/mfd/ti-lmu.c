@@ -7,18 +7,18 @@
  * Author: Milo Kim <milo.kim@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ti-lmu.h>
-#include <linux/mfd/ti-lmu-register.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/ti-lmu.h>
+#include <linaos/mfd/ti-lmu-register.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
 
 struct ti_lmu_data {
 	const struct mfd_cell *cells;

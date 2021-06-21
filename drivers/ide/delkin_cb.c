@@ -17,11 +17,11 @@
  *  more details.
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include <asm/io.h>
 

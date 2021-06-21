@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2013 Broadcom Corporation
  */
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
 #include <net/cfg80211.h>
 
 #include <brcmu_wifi.h>

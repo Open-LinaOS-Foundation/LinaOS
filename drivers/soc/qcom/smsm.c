@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications Inc.
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/regmap.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/regmap.h>
+#include <linaos/soc/qcom/smem.h>
+#include <linaos/soc/qcom/smem_state.h>
 
 /*
  * This driver implements the Qualcomm Shared Memory State Machine, a mechanism

@@ -23,9 +23,9 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "amdgpu.h"
 #include "amdgpu_psp.h"

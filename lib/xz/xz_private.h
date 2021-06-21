@@ -11,14 +11,14 @@
 #define XZ_PRIVATE_H
 
 #ifdef __KERNEL__
-#	include <linux/xz.h>
-#	include <linux/kernel.h>
+#	include <linaos/xz.h>
+#	include <linaos/kernel.h>
 #	include <asm/unaligned.h>
 	/* XZ_PREBOOT may be defined only via decompress_unxz.c. */
 #	ifndef XZ_PREBOOT
-#		include <linux/slab.h>
-#		include <linux/vmalloc.h>
-#		include <linux/string.h>
+#		include <linaos/slab.h>
+#		include <linaos/vmalloc.h>
+#		include <linaos/string.h>
 #		ifdef CONFIG_XZ_DEC_X86
 #			define XZ_DEC_X86
 #		endif
@@ -45,7 +45,7 @@
 	/*
 	 * For userspace builds, use a separate header to define the required
 	 * macros and functions. This makes it easier to adapt the code into
-	 * different environments and avoids clutter in the Linux kernel tree.
+	 * different environments and avoids clutter in the LinaOS kernel tree.
 	 */
 #	include "xz_config.h"
 #endif

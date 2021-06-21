@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Copyright (c) 2012 Guenter Roeck <linux@roeck-us.net>
+ * Copyright (c) 2012 Guenter Roeck <linaos@roeck-us.net>
  *
  * based on max1668.c
  * Copyright (c) 2011 David George <david.george@ska.ac.za>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
 
-#include <linux/platform_data/max6697.h>
+#include <linaos/platform_data/max6697.h>
 
 enum chips { max6581, max6602, max6622, max6636, max6689, max6693, max6694,
 	     max6697, max6698, max6699 };
@@ -792,6 +792,6 @@ static struct i2c_driver max6697_driver = {
 
 module_i2c_driver(max6697_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("MAX6697 temperature sensor driver");
 MODULE_LICENSE("GPL");

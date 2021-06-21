@@ -8,7 +8,7 @@
 #ifndef _KEYS_REQUEST_KEY_AUTH_TYPE_H
 #define _KEYS_REQUEST_KEY_AUTH_TYPE_H
 
-#include <linux/key.h>
+#include <linaos/key.h>
 
 /*
  * Authorisation record for request_key().

@@ -7,17 +7,17 @@
  * Author: Dwayne Grant McConnell <decimal@us.ibm.com>
  */
 
-#include <linux/elf.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/list.h>
-#include <linux/syscalls.h>
-#include <linux/coredump.h>
-#include <linux/binfmts.h>
+#include <linaos/elf.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/fs.h>
+#include <linaos/gfp.h>
+#include <linaos/list.h>
+#include <linaos/syscalls.h>
+#include <linaos/coredump.h>
+#include <linaos/binfmts.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "spufs.h"
 

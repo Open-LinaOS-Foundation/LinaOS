@@ -5,14 +5,14 @@
  *   Copyright (C) 2014 Mario Kicherer (dev@kicherer.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/bitmap.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/bitmap.h>
+#include <linaos/usb.h>
+#include <linaos/usb/audio.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>

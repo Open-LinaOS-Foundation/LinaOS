@@ -5,19 +5,19 @@
  * Copyright (C) 2012 Renesas Solutions Corp.
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/thermal.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/thermal.h>
 
 #include "thermal_hwmon.h"
 

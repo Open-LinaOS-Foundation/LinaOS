@@ -3,19 +3,19 @@
 // Copyright (C) 2018 Socionext Inc.
 //   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_dma.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include "virt-dma.h"
 

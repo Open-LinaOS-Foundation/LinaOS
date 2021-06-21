@@ -1,7 +1,7 @@
 /*
  * slcan.c - serial line CAN interface driver (using tty line discipline)
  *
- * This file is derived from linux/drivers/net/slip/slip.c
+ * This file is derived from linaos/drivers/net/slip/slip.c
  *
  * slip.c Authors  : Laurence Culhane <loz@holmes.demon.co.uk>
  *                   Fred N. van Kempen <waltje@uwalt.nl.mugnet.org>
@@ -35,27 +35,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/can.h>
-#include <linux/can/skb.h>
-#include <linux/can/can-ml.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/string.h>
+#include <linaos/tty.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/workqueue.h>
+#include <linaos/can.h>
+#include <linaos/can/skb.h>
+#include <linaos/can/can-ml.h>
 
 MODULE_ALIAS_LDISC(N_SLCAN);
 MODULE_DESCRIPTION("serial line CAN interface");

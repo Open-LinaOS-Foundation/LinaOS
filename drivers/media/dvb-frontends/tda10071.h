@@ -8,7 +8,7 @@
 #ifndef TDA10071_H
 #define TDA10071_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 /*
  * I2C address

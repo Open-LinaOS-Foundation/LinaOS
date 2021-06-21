@@ -8,9 +8,9 @@
 #ifndef _TRANSPORT_CLASS_H_
 #define _TRANSPORT_CLASS_H_
 
-#include <linux/device.h>
-#include <linux/bug.h>
-#include <linux/attribute_container.h>
+#include <linaos/device.h>
+#include <linaos/bug.h>
+#include <linaos/attribute_container.h>
 
 struct transport_container;
 

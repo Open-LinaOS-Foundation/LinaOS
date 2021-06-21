@@ -4,13 +4,13 @@
  *	Dong Aisheng <aisheng.dong@nxp.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "clk-scu.h"
 

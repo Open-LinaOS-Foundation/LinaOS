@@ -11,11 +11,11 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/gameport.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/gameport.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
 #define DRIVER_DESC	"Gameport data dumper module"
 

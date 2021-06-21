@@ -6,7 +6,7 @@
 #ifndef ETNAVIV_DUMP_H
 #define ETNAVIV_DUMP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	ETDUMP_MAGIC = 0x414e5445,

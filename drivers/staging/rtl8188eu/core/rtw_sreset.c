@@ -6,7 +6,7 @@
  ******************************************************************************/
 
 #include <rtw_sreset.h>
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 
 void rtw_hal_sreset_init(struct adapter *padapter)
 {

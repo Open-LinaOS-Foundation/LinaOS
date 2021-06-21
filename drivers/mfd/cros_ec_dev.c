@@ -5,16 +5,16 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/kconfig.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/cros_ec_chardev.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/slab.h>
+#include <linaos/kconfig.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/cros_ec_chardev.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/slab.h>
 
 #define DRV_NAME "cros-ec-dev"
 

@@ -5,18 +5,18 @@
  * Copyright (c) 2010 Ira W. Snyder <iws@ovro.caltech.edu>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
 
-#include <linux/mfd/janz.h>
+#include <linaos/mfd/janz.h>
 
 #define DRV_NAME "janz-ttl"
 

@@ -2,7 +2,7 @@
 #ifndef _ASM_MICROBLAZE_SECCOMP_H
 #define _ASM_MICROBLAZE_SECCOMP_H
 
-#include <linux/unistd.h>
+#include <linaos/unistd.h>
 
 #define __NR_seccomp_sigreturn		__NR_sigreturn
 

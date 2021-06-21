@@ -14,24 +14,24 @@
 #define KMSG_COMPONENT "kvm-s390"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/bitmap.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/pgtable.h>
+#include <linaos/compiler.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/hrtimer.h>
+#include <linaos/init.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/mman.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/vmalloc.h>
+#include <linaos/bitmap.h>
+#include <linaos/sched/signal.h>
+#include <linaos/string.h>
+#include <linaos/pgtable.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/lowcore.h>
@@ -5073,6 +5073,6 @@ module_exit(kvm_s390_exit);
  * Note that we add the module alias here instead of virt/kvm/kvm_main.c
  * since x86 takes a different approach.
  */
-#include <linux/miscdevice.h>
+#include <linaos/miscdevice.h>
 MODULE_ALIAS_MISCDEV(KVM_MINOR);
 MODULE_ALIAS("devname:kvm");

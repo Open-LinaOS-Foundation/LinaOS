@@ -3,11 +3,11 @@
  * BIOS32 and PCI BIOS handling.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 
 #include <asm/pci_x86.h>
 #include <asm/e820/types.h>

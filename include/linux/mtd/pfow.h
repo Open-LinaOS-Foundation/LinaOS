@@ -5,7 +5,7 @@
 #ifndef __LINUX_MTD_PFOW_H
 #define __LINUX_MTD_PFOW_H
 
-#include <linux/mtd/qinfo.h>
+#include <linaos/mtd/qinfo.h>
 
 /* PFOW registers addressing */
 /* Address of symbol "P" */

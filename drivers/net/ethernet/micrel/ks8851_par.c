@@ -8,17 +8,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/iopoll.h>
-#include <linux/mii.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/iopoll.h>
+#include <linaos/mii.h>
 
-#include <linux/platform_device.h>
-#include <linux/of_net.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_net.h>
 
 #include "ks8851.h"
 

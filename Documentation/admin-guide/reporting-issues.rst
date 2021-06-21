@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: (GPL-2.0+ OR CC-BY-4.0)
 ..
    If you want to distribute this text under CC-BY-4.0 only, please use 'The
-   Linux kernel developers' for author attribution and link this as source:
-   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/plain/Documentation/admin-guide/reporting-issues.rst
+   LinaOS kernel developers' for author attribution and link this as source:
+   https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/plain/Documentation/admin-guide/reporting-issues.rst
 ..
-   Note: Only the content of this RST file as found in the Linux kernel sources
+   Note: Only the content of this RST file as found in the LinaOS kernel sources
    is available under CC-BY-4.0, as versions of this text that were processed
    (for example by the kernel's build system) might contain content taken from
    files which use a more restrictive license.
@@ -19,12 +19,12 @@ The short guide (aka TL;DR)
 
 Are you facing a regression with vanilla kernels from the same stable or
 longterm series? One still supported? Then search the `LKML
-<https://lore.kernel.org/lkml/>`_ and the `Linux stable mailing list
+<https://lore.kernel.org/lkml/>`_ and the `LinaOS stable mailing list
 <https://lore.kernel.org/stable/>`_ archives for matching reports to join. If
 you don't find any, install `the latest release from that series
 <https://kernel.org/>`_. If it still shows the issue, report it to the stable
 mailing list (stable@vger.kernel.org) and CC the regressions list
-(regressions@lists.linux.dev); ideally also CC the maintainer and the mailing
+(regressions@lists.linaos.dev); ideally also CC the maintainer and the mailing
 list for the subsystem in question.
 
 In all other cases try your best guess which kernel part might be causing the
@@ -46,10 +46,10 @@ ensure it's vanilla (IOW: not patched and not using add-on modules). Also make
 sure it's built and running in a healthy environment and not already tainted
 before the issue occurs.
 
-If you are facing multiple issues with the Linux kernel at once, report each
+If you are facing multiple issues with the LinaOS kernel at once, report each
 separately. While writing your report, include all information relevant to the
 issue, like the kernel and the distro used. In case of a regression, CC the
-regressions mailing list (regressions@lists.linux.dev) to your report. Also try
+regressions mailing list (regressions@lists.linaos.dev) to your report. Also try
 to pin-point the culprit with a bisection; if you succeed, include its
 commit-id and CC everyone in the sign-off-by chain.
 
@@ -60,7 +60,7 @@ releases and sending a status update afterwards.
 Step-by-step guide how to report issues to the kernel maintainers
 =================================================================
 
-The above TL;DR outlines roughly how to report issues to the Linux kernel
+The above TL;DR outlines roughly how to report issues to the LinaOS kernel
 developers. It might be all that's needed for people already familiar with
 reporting issues to Free/Libre & Open Source Software (FLOSS) projects. For
 everyone else there is this section. It is more detailed and uses a
@@ -70,18 +70,18 @@ reference section, which explains each of the steps in more detail.
 
 Note: this section covers a few more aspects than the TL;DR and does things in
 a slightly different order. That's in your interest, to make sure you notice
-early if an issue that looks like a Linux kernel problem is actually caused by
+early if an issue that looks like a LinaOS kernel problem is actually caused by
 something else. These steps thus help to ensure the time you invest in this
 process won't feel wasted in the end:
 
- * Are you facing an issue with a Linux kernel a hardware or software vendor
+ * Are you facing an issue with a LinaOS kernel a hardware or software vendor
    provided? Then in almost all cases you are better off to stop reading this
    document and reporting the issue to your vendor instead, unless you are
-   willing to install the latest Linux version yourself. Be aware the latter
+   willing to install the latest LinaOS version yourself. Be aware the latter
    will often be needed anyway to hunt down and fix issues.
 
  * Perform a rough search for existing reports with your favorite internet
-   search engine; additionally, check the archives of the `Linux Kernel Mailing
+   search engine; additionally, check the archives of the `LinaOS Kernel Mailing
    List (LKML) <https://lore.kernel.org/lkml/>`_. If you find matching reports,
    join the discussion instead of sending a new one.
 
@@ -122,9 +122,9 @@ process won't feel wasted in the end:
 
 After these preparations you'll now enter the main part:
 
- * Unless you are already running the latest 'mainline' Linux kernel, better
+ * Unless you are already running the latest 'mainline' LinaOS kernel, better
    go and install it for the reporting process. Testing and reporting with
-   the latest 'stable' Linux can be an acceptable alternative in some
+   the latest 'stable' LinaOS can be an acceptable alternative in some
    situations; during the merge window that actually might be even the best
    approach, but in that development phase it can be an even better idea to
    suspend your efforts for a few days anyway. Whatever version you choose,
@@ -152,7 +152,7 @@ After these preparations you'll now enter the main part:
 
  * Start to compile the report by writing a detailed description about the
    issue. Always mention a few things: the latest kernel version you installed
-   for reproducing, the Linux Distribution used, and your notes on how to
+   for reproducing, the LinaOS Distribution used, and your notes on how to
    reproduce the issue. Ideally, make the kernel's build configuration
    (.config) and the output from ``dmesg`` available somewhere on the net and
    link to it. Include or upload all other information that might be relevant,
@@ -184,12 +184,12 @@ switch from 5.9.15 to 5.10.5 does not qualify). The developers want to fix such
 regressions as quickly as possible, hence there is a streamlined process to
 report them:
 
- * Check if the kernel developers still maintain the Linux kernel version
+ * Check if the kernel developers still maintain the LinaOS kernel version
    line you care about: go to the  `front page of kernel.org
    <https://kernel.org/>`_ and make sure it mentions
    the latest release of the particular version line without an '[EOL]' tag.
 
- * Check the archives of the `Linux stable mailing list
+ * Check the archives of the `LinaOS stable mailing list
    <https://lore.kernel.org/stable/>`_ for existing reports.
 
  * Install the latest release from the particular version line as a vanilla
@@ -198,9 +198,9 @@ report them:
    problem with a vendor kernel, check a vanilla build of the last version
    known to work performs fine as well.
 
- * Send a short problem report to the Linux stable mailing list
-   (stable@vger.kernel.org) and CC the Linux regressions mailing list
-   (regressions@lists.linux.dev); if you suspect the cause in a particular
+ * Send a short problem report to the LinaOS stable mailing list
+   (stable@vger.kernel.org) and CC the LinaOS regressions mailing list
+   (regressions@lists.linaos.dev); if you suspect the cause in a particular
    subsystem, CC its maintainer and its mailing list. Roughly describe the
    issue and ideally explain how to reproduce it. Mention the first version
    that shows the problem and the last version that's working fine. Then
@@ -224,7 +224,7 @@ kernels regularly rebased on those. If that the case, follow these steps:
  * Perform the first three steps in the section "Dealing with regressions
    within a stable and longterm kernel line" above.
 
- * Search the Linux kernel version control system for the change that fixed
+ * Search the LinaOS kernel version control system for the change that fixed
    the issue in mainline, as its commit message might tell you if the fix is
    scheduled for backporting already. If you don't find anything that way,
    search the appropriate mailing lists for posts that discuss such an issue
@@ -253,22 +253,22 @@ details how to actually perform those steps.
 
 A few words of general advice before digging into the details:
 
- * The Linux kernel developers are well aware this process is complicated and
+ * The LinaOS kernel developers are well aware this process is complicated and
    demands more than other FLOSS projects. We'd love to make it simpler. But
    that would require work in various places as well as some infrastructure,
    which would need constant maintenance; nobody has stepped up to do that
    work, so that's just how things are for now.
 
  * A warranty or support contract with some vendor doesn't entitle you to
-   request fixes from developers in the upstream Linux kernel community: such
-   contracts are completely outside the scope of the Linux kernel, its
+   request fixes from developers in the upstream LinaOS kernel community: such
+   contracts are completely outside the scope of the LinaOS kernel, its
    development community, and this document. That's why you can't demand
    anything such a contract guarantees in this context, not even if the
    developer handling the issue works for the vendor in question. If you want
    to claim your rights, use the vendor's support channel instead. When doing
    so, you might want to mention you'd like to see the issue fixed in the
-   upstream Linux kernel; motivate them by saying it's the only way to ensure
-   the fix in the end will get incorporated in all Linux distributions.
+   upstream LinaOS kernel; motivate them by saying it's the only way to ensure
+   the fix in the end will get incorporated in all LinaOS distributions.
 
  * If you never reported an issue to a FLOSS project before you should consider
    reading `How to Report Bugs Effectively
@@ -278,38 +278,38 @@ A few words of general advice before digging into the details:
    questions <https://jvns.ca/blog/good-questions/>`_.
 
 With that off the table, find below the details on how to properly report
-issues to the Linux kernel developers.
+issues to the LinaOS kernel developers.
 
 
-Make sure you're using the upstream Linux kernel
+Make sure you're using the upstream LinaOS kernel
 ------------------------------------------------
 
-   *Are you facing an issue with a Linux kernel a hardware or software vendor
+   *Are you facing an issue with a LinaOS kernel a hardware or software vendor
    provided? Then in almost all cases you are better off to stop reading this
    document and reporting the issue to your vendor instead, unless you are
-   willing to install the latest Linux version yourself. Be aware the latter
+   willing to install the latest LinaOS version yourself. Be aware the latter
    will often be needed anyway to hunt down and fix issues.*
 
-Like most programmers, Linux kernel developers don't like to spend time dealing
+Like most programmers, LinaOS kernel developers don't like to spend time dealing
 with reports for issues that don't even happen with their current code. It's
 just a waste everybody's time, especially yours. Unfortunately such situations
 easily happen when it comes to the kernel and often leads to frustration on both
-sides. That's because almost all Linux-based kernels pre-installed on devices
-(Computers, Laptops, Smartphones, Routers, …) and most shipped by Linux
-distributors are quite distant from the official Linux kernel as distributed by
+sides. That's because almost all LinaOS-based kernels pre-installed on devices
+(Computers, Laptops, Smartphones, Routers, …) and most shipped by LinaOS
+distributors are quite distant from the official LinaOS kernel as distributed by
 kernel.org: these kernels from these vendors are often ancient from the point of
-Linux development or heavily modified, often both.
+LinaOS development or heavily modified, often both.
 
 Most of these vendor kernels are quite unsuitable for reporting issues to the
-Linux kernel developers: an issue you face with one of them might have been
-fixed by the Linux kernel developers months or years ago already; additionally,
+LinaOS kernel developers: an issue you face with one of them might have been
+fixed by the LinaOS kernel developers months or years ago already; additionally,
 the modifications and enhancements by the vendor might be causing the issue you
 face, even if they look small or totally unrelated. That's why you should report
 issues with these kernels to the vendor. Its developers should look into the
 report and, in case it turns out to be an upstream issue, fix it directly
 upstream or forward the report there. In practice that often does not work out
 or might not what you want. You thus might want to consider circumventing the
-vendor by installing the very latest Linux kernel core yourself. If that's an
+vendor by installing the very latest LinaOS kernel core yourself. If that's an
 option for you move ahead in this process, as a later step in this guide will
 explain how to do that once it rules out other potential causes for your issue.
 
@@ -317,18 +317,18 @@ Note, the previous paragraph is starting with the word 'most', as sometimes
 developers in fact are willing to handle reports about issues occurring with
 vendor kernels. If they do in the end highly depends on the developers and the
 issue in question. Your chances are quite good if the distributor applied only
-small modifications to a kernel based on a recent Linux version; that for
-example often holds true for the mainline kernels shipped by Debian GNU/Linux
+small modifications to a kernel based on a recent LinaOS version; that for
+example often holds true for the mainline kernels shipped by Debian GNU/LinaOS
 Sid or Fedora Rawhide. Some developers will also accept reports about issues
 with kernels from distributions shipping the latest stable kernel, as long as
-its only slightly modified; that for example is often the case for Arch Linux,
+its only slightly modified; that for example is often the case for Arch LinaOS,
 regular Fedora releases, and openSUSE Tumbleweed. But keep in mind, you better
-want to use a mainline Linux and avoid using a stable kernel for this
+want to use a mainline LinaOS and avoid using a stable kernel for this
 process, as outlined in the section 'Install a fresh kernel for testing' in more
 detail.
 
 Obviously you are free to ignore all this advice and report problems with an old
-or heavily modified vendor kernel to the upstream Linux developers. But note,
+or heavily modified vendor kernel to the upstream LinaOS developers. But note,
 those often get rejected or ignored, so consider yourself warned. But it's still
 better than not reporting the issue at all: sometimes such reports directly or
 indirectly will help to get the issue fixed over time.
@@ -338,7 +338,7 @@ Search for existing reports, first run
 --------------------------------------
 
    *Perform a rough search for existing reports with your favorite internet
-   search engine; additionally, check the archives of the Linux Kernel Mailing
+   search engine; additionally, check the archives of the LinaOS Kernel Mailing
    List (LKML). If you find matching reports, join the discussion instead of
    sending a new one.*
 
@@ -351,7 +351,7 @@ to be reported to. Nevertheless, do not hurry with this step of the reporting
 process, it can save you time and trouble.
 
 Simply search the internet with your favorite search engine first. Afterwards,
-search the `Linux Kernel Mailing List (LKML) archives
+search the `LinaOS Kernel Mailing List (LKML) archives
 <https://lore.kernel.org/lkml/>`_.
 
 If you get flooded with results consider telling your search engine to limit
@@ -390,14 +390,14 @@ Issue of high priority?
     issue, or a really severe problem: those are 'issues of high priority' that
     need special handling in some steps that are about to follow.*
 
-Linus Torvalds and the leading Linux kernel developers want to see some issues
+Linus Torvalds and the leading LinaOS kernel developers want to see some issues
 fixed as soon as possible, hence there are 'issues of high priority' that get
 handled slightly differently in the reporting process. Three type of cases
 qualify: regressions, security issues, and really severe problems.
 
 You deal with a 'regression' if something that worked with an older version of
-the Linux kernel does not work with a newer one or somehow works worse with it.
-It thus is a regression when a WiFi driver that did a fine job with Linux 5.7
+the LinaOS kernel does not work with a newer one or somehow works worse with it.
+It thus is a regression when a WiFi driver that did a fine job with LinaOS 5.7
 somehow misbehaves with 5.8 or doesn't work at all. It's also a regression if
 an application shows erratic behavior with a newer kernel, which might happen
 due to incompatible changes in the interface between the kernel and the
@@ -414,7 +414,7 @@ What qualifies as security issue is left to your judgment. Consider reading
 provides additional details how to best handle security issues.
 
 An issue is a 'really severe problem' when something totally unacceptably bad
-happens. That's for example the case when a Linux kernel corrupts the data it's
+happens. That's for example the case when a LinaOS kernel corrupts the data it's
 handling or damages hardware it's running on. You're also dealing with a severe
 issue when the kernel suddenly stops working with an error message ('kernel
 panic') or without any farewell note at all. Note: do not confuse a 'panic' (a
@@ -480,14 +480,14 @@ Make sure your kernel doesn't get enhanced
 The risk your issue report gets ignored or rejected dramatically increases if
 your kernel gets enhanced in any way. That's why you should remove or disable
 mechanisms like akmods and DKMS: those build add-on kernel modules
-automatically, for example when you install a new Linux kernel or boot it for
+automatically, for example when you install a new LinaOS kernel or boot it for
 the first time. Also remove any modules they might have installed. Then reboot
 before proceeding.
 
 Note, you might not be aware that your system is using one of these solutions:
 they often get set up silently when you install Nvidia's proprietary graphics
 driver, VirtualBox, or other software that requires a some support from a
-module not part of the Linux kernel. That why your might need to uninstall the
+module not part of the LinaOS kernel. That why your might need to uninstall the
 packages with such software to get rid of any 3rd party kernel module.
 
 
@@ -535,7 +535,7 @@ three things:
     the issue afterwards. Sometimes simply restarting will be enough, sometimes
     a change to the configuration followed by a reboot can eliminate the Oops.
     But don't invest too much time into this at this point of the process, as
-    the cause for the Oops might already be fixed in the newer Linux kernel
+    the cause for the Oops might already be fixed in the newer LinaOS kernel
     version you are going to install later in this process.
 
  2. Your system uses a software that installs its own kernel modules, for
@@ -544,13 +544,13 @@ three things:
     they are Open Source): they sometimes cause errors in unrelated kernel
     areas and thus might be causing the issue you face. You therefore have to
     prevent those modules from loading when you want to report an issue to the
-    Linux kernel developers. Most of the time the easiest way to do that is:
+    LinaOS kernel developers. Most of the time the easiest way to do that is:
     temporarily uninstall such software including any modules they might have
     installed. Afterwards reboot.
 
  3. The kernel also taints itself when it's loading a module that resides in
-    the staging tree of the Linux kernel source. That's a special area for
-    code (mostly drivers) that does not yet fulfill the normal Linux kernel
+    the staging tree of the LinaOS kernel source. That's a special area for
+    code (mostly drivers) that does not yet fulfill the normal LinaOS kernel
     quality standards. When you report an issue with such a module it's
     obviously okay if the kernel is tainted; just make sure the module in
     question is the only reason for the taint. If the issue happens in an
@@ -594,7 +594,7 @@ Regression in stable or longterm kernel?
     'Dealing with regressions within a stable and longterm kernel line'.*
 
 Regression within a stable and longterm kernel version line are something the
-Linux developers want to fix badly, as such issues are even more unwanted than
+LinaOS developers want to fix badly, as such issues are even more unwanted than
 regression in the main development branch, as they can quickly affect a lot of
 people. The developers thus want to learn about such issues as quickly as
 possible, hence there is a streamlined process to report them. Note,
@@ -610,14 +610,14 @@ Check where you need to report your issue
     time this won't be bugzilla.kernel.org, as issues typically need to be sent
     by mail to a maintainer and a public mailing list.*
 
-It's crucial to send your report to the right people, as the Linux kernel is a
+It's crucial to send your report to the right people, as the LinaOS kernel is a
 big project and most of its developers are only familiar with a small subset of
 it. Quite a few programmers for example only care for just one driver, for
 example one for a WiFi chip; its developer likely will only have small or no
 knowledge about the internals of remote or unrelated "subsystems", like the TCP
 stack, the PCIe/PCI subsystem, memory management or file systems.
 
-Problem is: the Linux kernel lacks a central bug tracker where you can simply
+Problem is: the LinaOS kernel lacks a central bug tracker where you can simply
 file your issue and make it reach the developers that need to know about it.
 That's why you have to find the right place and way to report issues yourself.
 You can do that with the help of a script (see below), but it mainly targets
@@ -673,11 +673,11 @@ MAINTAINERS file, as then you might find something like this::
        Mailing list:  ath10k@lists.infradead.org
        Status:        Supported
        Web-page:      https://wireless.wiki.kernel.org/en/users/Drivers/ath10k
-       SCM:           git git://git.kernel.org/pub/scm/linux/kernel/git/kvalo/ath.git
+       SCM:           git git://git.kernel.org/pub/scm/linaos/kernel/git/kvalo/ath.git
        Files:         drivers/net/wireless/ath/ath10k/
 
 Note: the line description will be abbreviations, if you read the plain
-MAINTAINERS file found in the root of the Linux source tree. 'Mail:' for
+MAINTAINERS file found in the root of the LinaOS source tree. 'Mail:' for
 example will be 'M:', 'Mailing list:' will be 'L', and 'Status:' will be 'S:'.
 A section near the top of the file explains these and other abbreviations.
 
@@ -692,7 +692,7 @@ yourself, or find a programmer somewhere willing to fix it.
 After checking the status, look for a line starting with 'bugs:': it will tell
 you where to find a subsystem specific bug tracker to file your issue. The
 example above does not have such a line. That is the case for most sections, as
-Linux kernel development is completely driven by mail. Very few subsystems use
+LinaOS kernel development is completely driven by mail. Very few subsystems use
 a bug tracker, and only some of those rely on bugzilla.kernel.org.
 
 In this and many other cases you thus have to look for lines starting with
@@ -700,8 +700,8 @@ In this and many other cases you thus have to look for lines starting with
 maintainers of the particular code. Also look for a line starting with 'Mailing
 list:', which tells you the public mailing list where the code is developed.
 Your report later needs to go by mail to those addresses. Additionally, for all
-issue reports sent by email, make sure to add the Linux Kernel Mailing List
-(LKML) <linux-kernel@vger.kernel.org> to CC. Don't omit either of the mailing
+issue reports sent by email, make sure to add the LinaOS Kernel Mailing List
+(LKML) <linaos-kernel@vger.kernel.org> to CC. Don't omit either of the mailing
 lists when sending your issue report by mail later! Maintainers are busy people
 and might leave some work for other developers on the subsystem specific list;
 and LKML is important to have one place where all issue reports can be found.
@@ -710,7 +710,7 @@ and LKML is important to have one place where all issue reports can be found.
 Finding the maintainers with the help of a script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For people that have the Linux sources at hand there is a second option to find
+For people that have the LinaOS sources at hand there is a second option to find
 the proper place to report: the script 'scripts/get_maintainer.pl' which tries
 to find all people to contact. It queries the MAINTAINERS file and needs to be
 called with a path to the source code in question. For drivers compiled as
@@ -725,17 +725,17 @@ Pass parts of this to the script::
        Some Human <shuman@example.com> (supporter:QUALCOMM ATHEROS ATH10K WIRELESS DRIVER)
        Another S. Human <asomehuman@example.com> (maintainer:NETWORKING DRIVERS)
        ath10k@lists.infradead.org (open list:QUALCOMM ATHEROS ATH10K WIRELESS DRIVER)
-       linux-wireless@vger.kernel.org (open list:NETWORKING DRIVERS (WIRELESS))
+       linaos-wireless@vger.kernel.org (open list:NETWORKING DRIVERS (WIRELESS))
        netdev@vger.kernel.org (open list:NETWORKING DRIVERS)
-       linux-kernel@vger.kernel.org (open list)
+       linaos-kernel@vger.kernel.org (open list)
 
 Don't sent your report to all of them. Send it to the maintainers, which the
 script calls "supporter:"; additionally CC the most specific mailing list for
-the code as well as the Linux Kernel Mailing List (LKML). In this case you thus
+the code as well as the LinaOS Kernel Mailing List (LKML). In this case you thus
 would need to send the report to 'Some Human <shuman@example.com>' with
-'ath10k@lists.infradead.org' and 'linux-kernel@vger.kernel.org' in CC.
+'ath10k@lists.infradead.org' and 'linaos-kernel@vger.kernel.org' in CC.
 
-Note: in case you cloned the Linux sources with git you might want to call
+Note: in case you cloned the LinaOS sources with git you might want to call
 ``get_maintainer.pl`` a second time with ``--git``. The script then will look
 at the commit history to find which people recently worked on the code in
 question, as they might be able to help. But use these results with care, as it
@@ -785,9 +785,9 @@ or even more time can save you and others quite a lot of time and trouble.
 Install a fresh kernel for testing
 ----------------------------------
 
-    *Unless you are already running the latest 'mainline' Linux kernel, better
+    *Unless you are already running the latest 'mainline' LinaOS kernel, better
     go and install it for the reporting process. Testing and reporting with
-    the latest 'stable' Linux can be an acceptable alternative in some
+    the latest 'stable' LinaOS can be an acceptable alternative in some
     situations; during the merge window that actually might be even the best
     approach, but in that development phase it can be an even better idea to
     suspend your efforts for a few days anyway. Whatever version you choose,
@@ -795,7 +795,7 @@ Install a fresh kernel for testing
     increase the risk your report will be rejected or ignored.*
 
 As mentioned in the detailed explanation for the first step already: Like most
-programmers, Linux kernel developers don't like to spend time dealing with
+programmers, LinaOS kernel developers don't like to spend time dealing with
 reports for issues that don't even happen with the current code. It's just a
 waste everybody's time, especially yours. That's why it's in everybody's
 interest that you confirm the issue still exists with the latest upstream code
@@ -812,7 +812,7 @@ In the scope of the kernel "latest upstream" normally means:
 
  * The over next subsection describes way to obtain and install such a kernel.
    It also outlines that using a pre-compiled kernel are fine, but better are
-   vanilla, which means: it was built using Linux sources taken straight `from
+   vanilla, which means: it was built using LinaOS sources taken straight `from
    kernel.org <https://kernel.org/>`_ and not modified or enhanced in any way.
 
 Choosing the right version for testing
@@ -830,7 +830,7 @@ made a backup, as you were instructed above, didn't you?
 In about two out of every nine to ten weeks, mainline might point you to a
 proper release with a version number like '5.7'. If that happens, consider
 suspending the reporting process until the first pre-release of the next
-version (5.8-rc1) shows up on kernel.org. That's because the Linux development
+version (5.8-rc1) shows up on kernel.org. That's because the LinaOS development
 cycle then is in its two-week long 'merge window'. The bulk of the changes and
 all intrusive ones get merged for the next release during this time. It's a bit
 more risky to use mainline during this period. Kernel developers are also often
@@ -862,19 +862,19 @@ the current code. Hence go and test mainline first and follow the process
 further: if the issue doesn't occur with mainline it will guide you how to get
 it fixed in older version lines, if that's in the cards for the fix in question.
 
-How to obtain a fresh Linux kernel
+How to obtain a fresh LinaOS kernel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Using a pre-compiled kernel**: This is often the quickest, easiest, and safest
-way for testing — especially is you are unfamiliar with the Linux kernel. The
+way for testing — especially is you are unfamiliar with the LinaOS kernel. The
 problem: most of those shipped by distributors or add-on repositories are build
-from modified Linux sources. They are thus not vanilla and therefore often
+from modified LinaOS sources. They are thus not vanilla and therefore often
 unsuitable for testing and issue reporting: the changes might cause the issue
 you face or influence it somehow.
 
-But you are in luck if you are using a popular Linux distribution: for quite a
+But you are in luck if you are using a popular LinaOS distribution: for quite a
 few of them you'll find repositories on the net that contain packages with the
-latest mainline or stable Linux built as vanilla kernel. It's totally okay to
+latest mainline or stable LinaOS built as vanilla kernel. It's totally okay to
 use these, just make sure from the repository's description they are vanilla or
 at least close to it. Additionally ensure the packages contain the latest
 versions as offered on kernel.org. The packages are likely unsuitable if they
@@ -889,10 +889,10 @@ BUG occurs; if you plan to decode those, you might be better off compiling a
 kernel yourself (see the end of this subsection and the section titled 'Decode
 failure messages' for details).
 
-**Using git**: Developers and experienced Linux users familiar with git are
-often best served by obtaining the latest Linux kernel sources straight from the
+**Using git**: Developers and experienced LinaOS users familiar with git are
+often best served by obtaining the latest LinaOS kernel sources straight from the
 `official development repository on kernel.org
-<https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/>`_.
+<https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/tree/>`_.
 Those are likely a bit ahead of the latest mainline pre-release. Don't worry
 about it: they are as reliable as a proper pre-release, unless the kernel's
 development cycle is currently in the middle of a merge window. But even then
@@ -943,7 +943,7 @@ Reproduce issue with the fresh kernel
     up there, scroll down to the instructions for issues only happening with
     stable and longterm kernels.*
 
-Check if the issue occurs with the fresh Linux kernel version you just
+Check if the issue occurs with the fresh LinaOS kernel version you just
 installed. If it was fixed there already, consider sticking with this version
 line and abandoning your plan to report the issue. But keep in mind that other
 users might still be plagued by it, as long as it's not fixed in either stable
@@ -987,18 +987,18 @@ kernel's log. That will make it a lot easier to understand what lead to the
 'panic', 'Oops', 'warning', or 'BUG', which increases the chances that someone
 can provide a fix.
 
-Decoding can be done with a script you find in the Linux source tree. If you
+Decoding can be done with a script you find in the LinaOS source tree. If you
 are running a kernel you compiled yourself earlier, call it like this::
 
-       [user@something ~]$ sudo dmesg | ./linux-5.10.5/scripts/decode_stacktrace.sh ./linux-5.10.5/vmlinux
+       [user@something ~]$ sudo dmesg | ./linaos-5.10.5/scripts/decode_stacktrace.sh ./linaos-5.10.5/vmlinaos
 
 If you are running a packaged vanilla kernel, you will likely have to install
 the corresponding packages with debug symbols. Then call the script (which you
-might need to get from the Linux sources if your distro does not package it)
+might need to get from the LinaOS sources if your distro does not package it)
 like this::
 
-       [user@something ~]$ sudo dmesg | ./linux-5.10.5/scripts/decode_stacktrace.sh \
-        /usr/lib/debug/lib/modules/5.10.10-4.1.x86_64/vmlinux /usr/src/kernels/5.10.10-4.1.x86_64/
+       [user@something ~]$ sudo dmesg | ./linaos-5.10.5/scripts/decode_stacktrace.sh \
+        /usr/lib/debug/lib/modules/5.10.10-4.1.x86_64/vmlinaos /usr/src/kernels/5.10.10-4.1.x86_64/
 
 The script will work on log lines like the following, which show the address of
 the code the kernel was executing when the error occurred::
@@ -1007,10 +1007,10 @@ the code the kernel was executing when the error occurred::
 
 Once decoded, these lines will look like this::
 
-       [   68.387301] RIP: 0010:test_module_init (/home/username/linux-5.10.5/test-module/test-module.c:16) test_module
+       [   68.387301] RIP: 0010:test_module_init (/home/username/linaos-5.10.5/test-module/test-module.c:16) test_module
 
 In this case the executed code was built from the file
-'~/linux-5.10.5/test-module/test-module.c' and the error occurred by the
+'~/linaos-5.10.5/test-module/test-module.c' and the error occurred by the
 instructions found in line '16'.
 
 The script will similarly decode the addresses mentioned in the section
@@ -1032,7 +1032,7 @@ Special care for regressions
     *If your problem is a regression, try to narrow down when the issue was
     introduced as much as possible.*
 
-Linux lead developer Linus Torvalds insists that the Linux kernel never
+LinaOS lead developer Linus Torvalds insists that the LinaOS kernel never
 worsens, that's why he deems regressions as unacceptable and wants to see them
 fixed quickly. That's why changes that introduced a regression are often
 promptly reverted if the issue they cause can't get solved quickly any other
@@ -1084,7 +1084,7 @@ Write and send the report
 
     *Start to compile the report by writing a detailed description about the
     issue. Always mention a few things: the latest kernel version you installed
-    for reproducing, the Linux Distribution used, and your notes on how to
+    for reproducing, the LinaOS Distribution used, and your notes on how to
     reproduce the issue. Ideally, make the kernel's build configuration
     (.config) and the output from ``dmesg`` available somewhere on the net and
     link to it. Include or upload all other information that might be relevant,
@@ -1101,7 +1101,7 @@ Write and send the report
 Now that you have prepared everything it's time to write your report. How to do
 that is partly explained by the three documents linked to in the preface above.
 That's why this text will only mention a few of the essentials as well as
-things specific to the Linux kernel.
+things specific to the LinaOS kernel.
 
 There is one thing that fits both categories: the most crucial parts of your
 report are the title/subject, the first sentence, and the first paragraph.
@@ -1124,10 +1124,10 @@ Also include all the relevant information others might need to understand the
 issue and its environment. What's actually needed depends a lot on the issue,
 but there are some things you should include always:
 
- * the output from ``cat /proc/version``, which contains the Linux kernel
+ * the output from ``cat /proc/version``, which contains the LinaOS kernel
    version number and the compiler it was built with.
 
- * the Linux distribution the machine is running (``hostnamectl | grep
+ * the LinaOS distribution the machine is running (``hostnamectl | grep
    "Operating System"``)
 
  * the architecture of the CPU and the operating system (``uname -mi``)
@@ -1138,10 +1138,10 @@ but there are some things you should include always:
 In a lot of cases it's also wise to make two more things available to those
 that read your report:
 
- * the configuration used for building your Linux kernel (the '.config' file)
+ * the configuration used for building your LinaOS kernel (the '.config' file)
 
  * the kernel's messages that you get from ``dmesg`` written to a file. Make
-   sure that it starts with a line like 'Linux version 5.8-1
+   sure that it starts with a line like 'LinaOS version 5.8-1
    (foobar@example.com) (gcc (GCC) 10.2.1, GNU ld version 2.34) #1 SMP Mon Aug
    3 14:54:37 UTC 2020' If it's missing, then important messages from the first
    boot phase already got discarded. In this case instead consider using
@@ -1252,8 +1252,8 @@ also mention the commit id of the culprit. In case of an unsuccessful bisection
 make your report mention the latest tested version that's working fine (say 5.7)
 and the oldest where the issue occurs (say 5.8-rc1).
 
-When sending the report by mail, CC the Linux regressions mailing list
-(regressions@lists.linux.dev). In case the report needs to be filed to some web
+When sending the report by mail, CC the LinaOS regressions mailing list
+(regressions@lists.linaos.dev). In case the report needs to be filed to some web
 tracker, proceed to do so. Once filed, forward the report by mail to the
 regressions list; CC the maintainer and the mailing list for the subsystem in
 question. Make sure to inline the forwarded report, hence do not attach it.
@@ -1337,7 +1337,7 @@ is unsuitable:
 process someone might tell you to do something that requires a skill you might
 not have mastered yet. For example, you might be asked to use some test tools
 you never have heard of yet; or you might be asked to apply a patch to the
-Linux kernel sources to test if it helps. In some cases it will be fine sending
+LinaOS kernel sources to test if it helps. In some cases it will be fine sending
 a reply asking for instructions how to do that. But before going that route try
 to find the answer own your own by searching the internet; alternatively
 consider asking in other places for advice. For example ask a friend or post
@@ -1414,7 +1414,7 @@ notice when the kernel with the fix behaves just as one without it.
 What to do when nothing of substance happens
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some reports will not get any reaction from the responsible Linux kernel
+Some reports will not get any reaction from the responsible LinaOS kernel
 developers; or a discussion around the issue evolved, but faded out with
 nothing of substance coming out of it.
 
@@ -1442,7 +1442,7 @@ link to the first report.
 
 If the report was proper you can send a second reminder; in it ask for advice
 why the report did not get any replies. A good moment for this second reminder
-mail is shortly after the first pre-release (the 'rc1') of a new Linux kernel
+mail is shortly after the first pre-release (the 'rc1') of a new LinaOS kernel
 version got published, as you should retest and provide a status update at that
 point anyway (see above).
 
@@ -1460,12 +1460,12 @@ foreseeable future'.
 It's also possible that after some discussion in the bug tracker or on a list
 nothing happens anymore and reminders don't help to motivate anyone to work out
 a fix. Such situations can be devastating, but is within the cards when it
-comes to Linux kernel development. This and several other reasons for not
+comes to LinaOS kernel development. This and several other reasons for not
 getting help are explained in 'Why some issues won't get any reaction or remain
 unfixed after being reported' near the end of this document.
 
 Don't get devastated if you don't find any help or if the issue in the end does
-not get solved: the Linux kernel is FLOSS and thus you can still help yourself.
+not get solved: the LinaOS kernel is FLOSS and thus you can still help yourself.
 You for example could try to find others that are affected and team up with
 them to get the issue resolved. Such a team could prepare a fresh report
 together that mentions how many you are and why this is something that in your
@@ -1484,7 +1484,7 @@ a regression within a stable and longterm kernel line.
 Make sure the particular version line still gets support
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    *Check if the kernel developers still maintain the Linux kernel version
+    *Check if the kernel developers still maintain the LinaOS kernel version
     line you care about: go to the front page of kernel.org and make sure it
     mentions the latest release of the particular version line without an
     '[EOL]' tag.*
@@ -1505,10 +1505,10 @@ reporting.
 Search stable mailing list
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    *Check the archives of the Linux stable mailing list for existing reports.*
+    *Check the archives of the LinaOS stable mailing list for existing reports.*
 
 Maybe the issue you face is already known and was fixed or is about to. Hence,
-`search the archives of the Linux stable mailing list
+`search the archives of the LinaOS stable mailing list
 <https://lore.kernel.org/stable/>`_ for reports about an issue like yours. If
 you find any matches, consider joining the discussion, unless the fix is
 already finished and scheduled to get applied soon.
@@ -1532,7 +1532,7 @@ Did you first notice the regression with a vendor kernel? Then changes the
 vendor applied might be interfering. You need to rule that out by performing
 a recheck. Say something broke when you updated from 5.10.4-vendor.42 to
 5.10.5-vendor.43. Then after testing the latest 5.10 release as outlined in
-the previous paragraph check if a vanilla build of Linux 5.10.4 works fine as
+the previous paragraph check if a vanilla build of LinaOS 5.10.4 works fine as
 well. If things are broken there, the issue does not qualify as upstream
 regression and you need switch back to the main step-by-step guide to report
 the issue.
@@ -1540,9 +1540,9 @@ the issue.
 Report the regression
 ~~~~~~~~~~~~~~~~~~~~~
 
-    *Send a short problem report to the Linux stable mailing list
-    (stable@vger.kernel.org) and CC the Linux regressions mailing list
-    (regressions@lists.linux.dev); if you suspect the cause in a particular
+    *Send a short problem report to the LinaOS stable mailing list
+    (stable@vger.kernel.org) and CC the LinaOS regressions mailing list
+    (regressions@lists.linaos.dev); if you suspect the cause in a particular
     subsystem, CC its maintainer and its mailing list. Roughly describe the
     issue and ideally explain how to reproduce it. Mention the first version
     that shows the problem and the last version that's working fine. Then
@@ -1558,7 +1558,7 @@ as well, because that will speed things up.
 And note, it helps developers a great deal if you can specify the exact version
 that introduced the problem. Hence if possible within a reasonable time frame,
 try to find that version using vanilla kernels. Lets assume something broke when
-your distributor released a update from Linux kernel 5.10.5 to 5.10.8. Then as
+your distributor released a update from LinaOS kernel 5.10.5 to 5.10.8. Then as
 instructed above go and check the latest kernel from that version line, say
 5.10.9. If it shows the problem, try a vanilla 5.10.5 to ensure that no patches
 the distributor applied interfere. If the issue doesn't manifest itself there,
@@ -1601,7 +1601,7 @@ to mainline. Other fixes are easy to get backported to the newest stable and
 longterm kernels, but too risky to integrate into older ones. So be aware the
 fix you are hoping for might be one of those that won't be backported to the
 version line your care about. In that case you'll have no other choice then to
-live with the issue or switch to a newer Linux version, unless you want to
+live with the issue or switch to a newer LinaOS version, unless you want to
 patch the fix into your kernels yourself.
 
 Common preparations
@@ -1613,10 +1613,10 @@ Common preparations
 You need to carry out a few steps already described in another section of this
 guide. Those steps will let you:
 
- * Check if the kernel developers still maintain the Linux kernel version line
+ * Check if the kernel developers still maintain the LinaOS kernel version line
    you care about.
 
- * Search the Linux stable mailing list for exiting reports.
+ * Search the LinaOS stable mailing list for exiting reports.
 
  * Check with the latest release.
 
@@ -1624,7 +1624,7 @@ guide. Those steps will let you:
 Check code history and search for existing discussions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    *Search the Linux kernel version control system for the change that fixed
+    *Search the LinaOS kernel version control system for the change that fixed
     the issue in mainline, as its commit message might tell you if the fix is
     scheduled for backporting already. If you don't find anything that way,
     search the appropriate mailing lists for posts that discuss such an issue
@@ -1637,10 +1637,10 @@ got fixed there. The commit that fixed it would need to get backported as well
 to get the issue solved. That's why you want to search for it or any
 discussions abound it.
 
- * First try to find the fix in the Git repository that holds the Linux kernel
+ * First try to find the fix in the Git repository that holds the LinaOS kernel
    sources. You can do this with the web interfaces `on kernel.org
-   <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/>`_
-   or its mirror `on GitHub <https://github.com/torvalds/linux>`_; if you have
+   <https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/tree/>`_
+   or its mirror `on GitHub <https://github.com/torvalds/linaos>`_; if you have
    a local clone you alternatively can search on the command line with ``git
    log --grep=<pattern>``.
 
@@ -1655,7 +1655,7 @@ discussions abound it.
 
  * If the commit doesn't tell you anything or if you can't find the fix, look
    again for discussions about the issue. Search the net with your favorite
-   internet search engine as well as the archives for the `Linux kernel
+   internet search engine as well as the archives for the `LinaOS kernel
    developers mailing list <https://lore.kernel.org/lkml/>`_. Also read the
    section `Locate kernel area that causes the issue` above and follow the
    instructions to find the subsystem in question: its bug tracker or mailing
@@ -1691,14 +1691,14 @@ for the subsystem as well as the stable mailing list (stable@vger.kernel.org).
 Why some issues won't get any reaction or remain unfixed after being reported
 =============================================================================
 
-When reporting a problem to the Linux developers, be aware only 'issues of high
+When reporting a problem to the LinaOS developers, be aware only 'issues of high
 priority' (regressions, security issues, severe problems) are definitely going
 to get resolved. The maintainers or if all else fails Linus Torvalds himself
 will make sure of that. They and the other kernel developers will fix a lot of
 other issues as well. But be aware that sometimes they can't or won't help; and
 sometimes there isn't even anyone to send a report to.
 
-This is best explained with kernel developers that contribute to the Linux
+This is best explained with kernel developers that contribute to the LinaOS
 kernel in their spare time. Quite a few of the drivers in the kernel were
 written by such programmers, often because they simply wanted to make their
 hardware usable on their favorite operating system.
@@ -1714,27 +1714,27 @@ driver was written with the help of reverse engineering.
 Sooner or later spare time developers will also stop caring for the driver.
 Maybe their test hardware broke, got replaced by something more fancy, or is so
 old that it's something you don't find much outside of computer museums
-anymore. Sometimes developer stops caring for their code and Linux at all, as
+anymore. Sometimes developer stops caring for their code and LinaOS at all, as
 something different in their life became way more important. In some cases
 nobody is willing to take over the job as maintainer – and nobody can be forced
-to, as contributing to the Linux kernel is done on a voluntary basis. Abandoned
+to, as contributing to the LinaOS kernel is done on a voluntary basis. Abandoned
 drivers nevertheless remain in the kernel: they are still useful for people and
 removing would be a regression.
 
 The situation is not that different with developers that are paid for their
-work on the Linux kernel. Those contribute most changes these days. But their
+work on the LinaOS kernel. Those contribute most changes these days. But their
 employers sooner or later also stop caring for their code or make its
 programmer focus on other things. Hardware vendors for example earn their money
 mainly by selling new hardware; quite a few of them hence are not investing
-much time and energy in maintaining a Linux kernel driver for something they
-stopped selling years ago. Enterprise Linux distributors often care for a
+much time and energy in maintaining a LinaOS kernel driver for something they
+stopped selling years ago. Enterprise LinaOS distributors often care for a
 longer time period, but in new versions often leave support for old and rare
 hardware aside to limit the scope. Often spare time contributors take over once
 a company orphans some code, but as mentioned above: sooner or later they will
 leave the code behind, too.
 
 Priorities are another reason why some issues are not fixed, as maintainers
-quite often are forced to set those, as time to work on Linux is limited.
+quite often are forced to set those, as time to work on LinaOS is limited.
 That's true for spare time or the time employers grant their developers to
 spend on maintenance work on the upstream kernel. Sometimes maintainers also
 get overwhelmed with reports, even if a driver is working nearly perfectly. To
@@ -1749,17 +1749,17 @@ Closing words
 =============
 
 Compared with other Free/Libre & Open Source Software it's hard to report
-issues to the Linux kernel developers: the length and complexity of this
+issues to the LinaOS kernel developers: the length and complexity of this
 document and the implications between the lines illustrate that. But that's how
 it is for now. The main author of this text hopes documenting the state of the
 art will lay some groundwork to improve the situation over time.
 
 
 ..
-   This text is maintained by Thorsten Leemhuis <linux@leemhuis.info>. If you
+   This text is maintained by Thorsten Leemhuis <linaos@leemhuis.info>. If you
    spot a typo or small mistake, feel free to let him know directly and he'll
    fix it. You are free to do the same in a mostly informal way if you want
    to contribute changes to the text, but for copyright reasons please CC
-   linux-doc@vger.kernel.org and "sign-off" your contribution as
+   linaos-doc@vger.kernel.org and "sign-off" your contribution as
    Documentation/process/submitting-patches.rst outlines in the section "Sign
    your work - the Developer's Certificate of Origin".

@@ -15,10 +15,10 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/mempool.h>
-#include <linux/errno.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/mempool.h>
+#include <linaos/errno.h>
+#include <linaos/vmalloc.h>
 
 #include "snic_io.h"
 #include "snic.h"

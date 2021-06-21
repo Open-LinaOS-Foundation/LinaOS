@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/pagevec.h
+ * include/linaos/pagevec.h
  *
  * In many places it is efficient to batch an operation up against multiple
  * pages.  A pagevec is a multipage container which is used for that.
@@ -9,7 +9,7 @@
 #ifndef _LINUX_PAGEVEC_H
 #define _LINUX_PAGEVEC_H
 
-#include <linux/xarray.h>
+#include <linaos/xarray.h>
 
 /* 15 pointers + header align the pagevec structure to a power of two */
 #define PAGEVEC_SIZE	15

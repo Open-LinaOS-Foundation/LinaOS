@@ -27,7 +27,7 @@
  * Contributors:
  *    Zhi Wang <zhi.a.wang@intel.com>
  *    Changbin Du <changbin.du@intel.com>
- *    Zhenyu Wang <zhenyuw@linux.intel.com>
+ *    Zhenyu Wang <zhenyuw@linaos.intel.com>
  *    Tina Zhang <tina.zhang@intel.com>
  *    Bing Niu <bing.niu@intel.com>
  *

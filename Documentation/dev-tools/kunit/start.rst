@@ -6,13 +6,13 @@ Getting Started
 
 Installing dependencies
 =======================
-KUnit has the same dependencies as the Linux kernel. As long as you can build
+KUnit has the same dependencies as the LinaOS kernel. As long as you can build
 the kernel, you can run KUnit.
 
 Running tests with the KUnit Wrapper
 ====================================
 Included with KUnit is a simple Python wrapper which runs tests under User Mode
-Linux, and formats the test results.
+LinaOS, and formats the test results.
 
 The wrapper can be run with:
 
@@ -133,7 +133,7 @@ create a file ``drivers/misc/example.c``:
 
 .. code-block:: c
 
-	#include <linux/errno.h>
+	#include <linaos/errno.h>
 
 	#include "example.h"
 

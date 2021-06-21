@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dss.c
+ * linaos/drivers/video/omap2/dss/dss.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,25 +11,25 @@
 
 #define DSS_SUBSYS_NAME "DSS"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/gfp.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
-#include <linux/component.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/seq_file.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/gfp.h>
+#include <linaos/sizes.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/suspend.h>
+#include <linaos/component.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include <video/omapfb_dss.h>
 

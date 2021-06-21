@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2016-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/rhashtable.h>
-#include <linux/bitops.h>
-#include <linux/in6.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/gcd.h>
-#include <linux/if_macvlan.h>
-#include <linux/refcount.h>
-#include <linux/jhash.h>
-#include <linux/net_namespace.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/rhashtable.h>
+#include <linaos/bitops.h>
+#include <linaos/in6.h>
+#include <linaos/notifier.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_bridge.h>
+#include <linaos/socket.h>
+#include <linaos/route.h>
+#include <linaos/gcd.h>
+#include <linaos/if_macvlan.h>
+#include <linaos/refcount.h>
+#include <linaos/jhash.h>
+#include <linaos/net_namespace.h>
+#include <linaos/mutex.h>
 #include <net/netevent.h>
 #include <net/neighbour.h>
 #include <net/arp.h>

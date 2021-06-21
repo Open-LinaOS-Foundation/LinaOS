@@ -2,18 +2,18 @@
 //
 // Copyright (C) 2010 Maurus Cuelenaere
 
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/spi/spi_gpio.h>
+#include <linaos/platform_data/s3c-hsotg.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/map.h>
@@ -24,12 +24,12 @@
 
 #include "cpu.h"
 #include "devs.h"
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 #include "gpio-cfg.h"
-#include <linux/platform_data/hwmon-s3c.h>
-#include <linux/platform_data/usb-ohci-s3c2410.h>
+#include <linaos/platform_data/hwmon-s3c.h>
+#include <linaos/platform_data/usb-ohci-s3c2410.h>
 #include "sdhci.h"
-#include <linux/platform_data/touchscreen-s3c2410.h>
+#include <linaos/platform_data/touchscreen-s3c2410.h>
 
 #include <video/platform_lcd.h>
 

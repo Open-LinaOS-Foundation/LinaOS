@@ -12,27 +12,27 @@
  * (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/prefetch.h>
-#include <linux/clk.h>
-#include <linux/usb/gadget.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/dma-mapping.h>
-#include <linux/bcd.h>
-#include <linux/version.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/proc_fs.h>
+#include <linaos/prefetch.h>
+#include <linaos/clk.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/bcd.h>
+#include <linaos/version.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 
 #include "vhub.h"
 
@@ -79,7 +79,7 @@ static const struct usb_device_descriptor ast_vhub_dev_desc = {
  */
 
 /*
- * We don't use sizeof() as Linux definition of
+ * We don't use sizeof() as LinaOS definition of
  * struct usb_endpoint_descriptor contains 2
  * extra bytes
  */

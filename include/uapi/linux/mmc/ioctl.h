@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef LINUX_MMC_IOCTL_H
 #define LINUX_MMC_IOCTL_H
 
-#include <linux/types.h>
-#include <linux/major.h>
+#include <linaos/types.h>
+#include <linaos/major.h>
 
 struct mmc_ioc_cmd {
 	/*

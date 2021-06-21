@@ -47,10 +47,10 @@ int main()
 	int nerrs = 0;
 	struct real_sigaction sa;
 
-	void *vdso = dlopen("linux-vdso.so.1",
+	void *vdso = dlopen("linaos-vdso.so.1",
 			    RTLD_LAZY | RTLD_LOCAL | RTLD_NOLOAD);
 	if (!vdso)
-		vdso = dlopen("linux-gate.so.1",
+		vdso = dlopen("linaos-gate.so.1",
 			      RTLD_LAZY | RTLD_LOCAL | RTLD_NOLOAD);
 	if (!vdso) {
 		printf("[SKIP]\tFailed to find vDSO.  Tests are not expected to work.\n");

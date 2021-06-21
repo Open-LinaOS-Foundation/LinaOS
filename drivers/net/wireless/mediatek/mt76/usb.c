@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "mt76.h"
 #include "usb_trace.h"
 #include "dma.h"

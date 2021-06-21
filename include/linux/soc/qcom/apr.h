@@ -3,9 +3,9 @@
 #ifndef __QCOM_APR_H_
 #define __QCOM_APR_H_
 
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
 #include <dt-bindings/soc/qcom,apr.h>
 
 extern struct bus_type aprbus;

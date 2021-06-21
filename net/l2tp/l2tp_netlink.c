@@ -15,14 +15,14 @@
 #include <net/sock.h>
 #include <net/genetlink.h>
 #include <net/udp.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/socket.h>
-#include <linux/module.h>
-#include <linux/list.h>
+#include <linaos/in.h>
+#include <linaos/udp.h>
+#include <linaos/socket.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
 #include <net/net_namespace.h>
 
-#include <linux/l2tp.h>
+#include <linaos/l2tp.h>
 
 #include "l2tp_core.h"
 

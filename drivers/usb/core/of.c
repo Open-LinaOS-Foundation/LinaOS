@@ -7,9 +7,9 @@
  * Copyright (C) 2017 Johan Hovold <johan@kernel.org>
  */
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/usb/of.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/usb/of.h>
 
 /**
  * usb_of_get_device_node() - get a USB device node

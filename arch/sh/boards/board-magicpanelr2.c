@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/magicpanel/setup.c
+ * linaos/arch/sh/boards/magicpanel/setup.c
  *
  *  Copyright (C) 2007  Markus Brunner, Mark Jonas
  *
  *  Magic Panel Release 2 board setup
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/map.h>
-#include <linux/sh_intc.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/smsc911x.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/map.h>
+#include <linaos/sh_intc.h>
 #include <mach/magicpanelr2.h>
 #include <asm/heartbeat.h>
 #include <cpu/sh7720.h>

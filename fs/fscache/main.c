@@ -6,12 +6,12 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL CACHE
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
 #define CREATE_TRACE_POINTS
 #include "internal.h"
 

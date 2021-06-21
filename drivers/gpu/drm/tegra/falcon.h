@@ -6,7 +6,7 @@
 #ifndef _FALCON_H_
 #define _FALCON_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define FALCON_UCLASS_METHOD_OFFSET		0x00000040
 

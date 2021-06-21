@@ -29,10 +29,10 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of_net.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/of_net.h>
 #include "dpaa_eth.h"
 #include "mac.h"
 

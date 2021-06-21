@@ -2,9 +2,9 @@
 /*
  * Copyright (c) 2018 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/err.h>
-#include <linux/sock_diag.h>
+#include <linaos/bpf.h>
+#include <linaos/err.h>
+#include <linaos/sock_diag.h>
 #include <net/sock_reuseport.h>
 
 struct reuseport_array {

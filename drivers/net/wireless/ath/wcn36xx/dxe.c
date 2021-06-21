@@ -22,8 +22,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/soc/qcom/smem_state.h>
+#include <linaos/interrupt.h>
+#include <linaos/soc/qcom/smem_state.h>
 #include "wcn36xx.h"
 #include "txrx.h"
 

@@ -12,11 +12,11 @@
 
 /* Core of can-j1939 that links j1939 to CAN. */
 
-#include <linux/can/can-ml.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
+#include <linaos/can/can-ml.h>
+#include <linaos/can/core.h>
+#include <linaos/can/skb.h>
+#include <linaos/if_arp.h>
+#include <linaos/module.h>
 
 #include "j1939-priv.h"
 

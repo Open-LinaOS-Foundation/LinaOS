@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/video/sm501fb.c
+/* linaos/drivers/video/sm501fb.c
  *
  * Copyright (c) 2006 Simtec Electronics
  *	Vincent Sanders <vince@simtec.co.uk>
@@ -8,35 +8,35 @@
  * Framebuffer driver for the Silicon Motion SM501
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/vmalloc.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/wait.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/io.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/div64.h>
 
 #ifdef CONFIG_PM
-#include <linux/pm.h>
+#include <linaos/pm.h>
 #endif
 
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
+#include <linaos/sm501.h>
+#include <linaos/sm501-regs.h>
 
 #include "edid.h"
 

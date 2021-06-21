@@ -7,7 +7,7 @@
 #ifndef _LINUX_HWMON_SYSFS_H
 #define _LINUX_HWMON_SYSFS_H
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 struct sensor_device_attribute{
 	struct device_attribute dev_attr;

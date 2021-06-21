@@ -8,31 +8,31 @@
  *    Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swiotlb.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/memory.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/initrd.h>
-#include <linux/export.h>
-#include <linux/cma.h>
-#include <linux/gfp.h>
-#include <linux/dma-direct.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/swiotlb.h>
+#include <linaos/smp.h>
+#include <linaos/init.h>
+#include <linaos/pagemap.h>
+#include <linaos/memblock.h>
+#include <linaos/memory.h>
+#include <linaos/pfn.h>
+#include <linaos/poison.h>
+#include <linaos/initrd.h>
+#include <linaos/export.h>
+#include <linaos/cma.h>
+#include <linaos/gfp.h>
+#include <linaos/dma-direct.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/ptdump.h>
 #include <asm/dma.h>
@@ -46,7 +46,7 @@
 #include <asm/kasan.h>
 #include <asm/dma-mapping.h>
 #include <asm/uv.h>
-#include <linux/virtio_config.h>
+#include <linaos/virtio_config.h>
 
 pgd_t swapper_pg_dir[PTRS_PER_PGD] __section(".bss..swapper_pg_dir");
 static pgd_t invalid_pg_dir[PTRS_PER_PGD] __section(".bss..invalid_pg_dir");

@@ -6,9 +6,9 @@
  * Copyright (C) 2013 Imagination Technologies Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 #include <asm/cpu.h>
 #include <asm/debug.h>
 #include <asm/mipsregs.h>

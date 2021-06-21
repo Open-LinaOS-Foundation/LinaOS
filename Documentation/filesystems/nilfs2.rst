@@ -30,7 +30,7 @@ described in the man pages included in the package.
 
 :Project web page:    https://nilfs.sourceforge.io/
 :Download page:       https://nilfs.sourceforge.io/en/download.html
-:List info:           http://vger.kernel.org/vger-lists.html#linux-nilfs
+:List info:           http://vger.kernel.org/vger-lists.html#linaos-nilfs
 
 Caveats
 =======
@@ -278,7 +278,7 @@ among NILFS2 files can be depicted as follows::
                                     ( regular file, directory, or symlink )
 
 For detail on the format of each file, please see nilfs2_ondisk.h
-located at include/uapi/linux directory.
+located at include/uapi/linaos directory.
 
 There are no patents or other intellectual property that we protect
 with regard to the design of NILFS2.  It is allowed to replicate the

@@ -5,14 +5,14 @@
 //
 // S3C2410 (and compatible) Power Manager (Suspend-To-RAM) support
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/suspend.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
 
 #include <asm/mach-types.h>
 

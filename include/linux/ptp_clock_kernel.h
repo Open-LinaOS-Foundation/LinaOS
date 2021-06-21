@@ -8,9 +8,9 @@
 #ifndef _PTP_CLOCK_KERNEL_H_
 #define _PTP_CLOCK_KERNEL_H_
 
-#include <linux/device.h>
-#include <linux/pps_kernel.h>
-#include <linux/ptp_clock.h>
+#include <linaos/device.h>
+#include <linaos/pps_kernel.h>
+#include <linaos/ptp_clock.h>
 
 /**
  * struct ptp_clock_request - request PTP clock event

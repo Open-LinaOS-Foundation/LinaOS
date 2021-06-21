@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * dell-smm-hwmon.c -- Linux driver for accessing the SMM BIOS on Dell laptops.
+ * dell-smm-hwmon.c -- LinaOS driver for accessing the SMM BIOS on Dell laptops.
  *
  * Copyright (C) 2001  Massimo Dal Zotto <dz@debian.org>
  *
  * Hwmon integration:
  * Copyright (C) 2011  Jean Delvare <jdelvare@suse.de>
- * Copyright (C) 2013, 2014  Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2013, 2014  Guenter Roeck <linaos@roeck-us.net>
  * Copyright (C) 2014, 2015  Pali Rohár <pali@kernel.org>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/dmi.h>
-#include <linux/capability.h>
-#include <linux/mutex.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/smp.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/dmi.h>
+#include <linaos/capability.h>
+#include <linaos/mutex.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/sched.h>
+#include <linaos/ctype.h>
+#include <linaos/smp.h>
 
-#include <linux/i8k.h>
+#include <linaos/i8k.h>
 
 #define I8K_SMM_FN_STATUS	0x0025
 #define I8K_SMM_POWER_STATUS	0x0069

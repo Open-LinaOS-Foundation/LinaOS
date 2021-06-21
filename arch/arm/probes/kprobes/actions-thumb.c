@@ -5,10 +5,10 @@
  * Copyright (C) 2011 Jon Medhurst <tixy@yxit.co.uk>.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/kprobes.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/kprobes.h>
 
 #include "../decode-thumb.h"
 #include "core.h"

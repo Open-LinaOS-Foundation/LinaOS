@@ -221,7 +221,7 @@ properties:
         # OKAYA Electric America, Inc. RS800480T-7X0GP 7" WVGA LCD panel
       - okaya,rs800480t-7x0gp
         # Olimex 4.3" TFT LCD panel
-      - olimex,lcd-olinuxino-43-ts
+      - olimex,lcd-olinaosino-43-ts
         # On Tat Industrial Company 7" DPI TFT panel.
       - ontat,yx700wv03
         # OrtusTech COM37H3M05DTC Blanview 3.7" VGA portrait TFT-LCD panel

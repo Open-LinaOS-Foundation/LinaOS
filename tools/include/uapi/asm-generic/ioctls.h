@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __ASM_GENERIC_IOCTLS_H
 #define __ASM_GENERIC_IOCTLS_H
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 /*
  * These are the most common definitions for tty ioctl numbers.

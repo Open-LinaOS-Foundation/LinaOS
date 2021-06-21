@@ -4,7 +4,7 @@
  */
 
 #include <dt-bindings/input/input.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/regulator/dlg,da9211-regulator.h>
 #include <dt-bindings/gpio/gpio.h>
 #include "mt8173.dtsi"
@@ -50,15 +50,15 @@
 		lid {
 			label = "Lid";
 			gpios = <&pio 69 GPIO_ACTIVE_LOW>;
-			linux,code = <SW_LID>;
-			linux,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
+			linaos,input-type = <EV_SW>;
 			gpio-key,wakeup;
 		};
 
 		power {
 			label = "Power";
 			gpios = <&pio 14 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			debounce-interval = <30>;
 			gpio-key,wakeup;
 		};
@@ -66,21 +66,21 @@
 		tablet_mode {
 			label = "Tablet_mode";
 			gpios = <&pio 121 GPIO_ACTIVE_HIGH>;
-			linux,code = <SW_TABLET_MODE>;
-			linux,input-type = <EV_SW>;
+			linaos,code = <SW_TABLET_MODE>;
+			linaos,input-type = <EV_SW>;
 			gpio-key,wakeup;
 		};
 
 		volume_down {
 			label = "Volume_down";
 			gpios = <&pio 123 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 
 		volume_up {
 			label = "Volume_up";
 			gpios = <&pio 124 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 	};
 

@@ -7,16 +7,16 @@
  * Copyright (c) 2020-2021 Huawei Technologies Co., Ltd
  */
 
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/hi6421-spmi-pmic.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spmi.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/hi6421-spmi-pmic.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spmi.h>
 
 enum hi6421_spmi_pmic_irq_list {
 	OTMP = 0,

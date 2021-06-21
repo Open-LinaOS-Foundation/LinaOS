@@ -2,14 +2,14 @@
 #ifndef __LINUX_GPIO_DRIVER_H
 #define __LINUX_GPIO_DRIVER_H
 
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/lockdep.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/lockdep.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
 struct gpio_desc;
 struct of_phandle_args;
@@ -40,7 +40,7 @@ struct gpio_irq_chip {
 	 * @domain:
 	 *
 	 * Interrupt translation domain; responsible for mapping between GPIO
-	 * hwirq number and Linux IRQ number.
+	 * hwirq number and LinaOS IRQ number.
 	 */
 	struct irq_domain *domain;
 

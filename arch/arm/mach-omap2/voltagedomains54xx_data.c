@@ -6,9 +6,9 @@
  *
  * Copyright (C) 2013 Texas Instruments Incorporated - https://www.ti.com
  */
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
 
 #include "common.h"
 

@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/trans.c
+ *  linaos/fs/hfs/trans.c
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * This file may be distributed under the terms of the GNU General Public License.
@@ -9,8 +9,8 @@
  * with ':' vs. '/' as the path-element separator.
  */
 
-#include <linux/types.h>
-#include <linux/nls.h>
+#include <linaos/types.h>
+#include <linaos/nls.h>
 
 #include "hfs_fs.h"
 
@@ -26,7 +26,7 @@
  * terminated.
  *
  * The name-mangling works as follows:
- * The character '/', which is illegal in Linux filenames is replaced
+ * The character '/', which is illegal in LinaOS filenames is replaced
  * by ':' which never appears in HFS filenames.	 All other characters
  * are passed unchanged from input to output.
  */

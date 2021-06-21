@@ -342,7 +342,7 @@
 
 &pmicintc {
 	keypad@148 {
-		linux,keymap = <
+		linaos,keymap = <
 			MATRIX_KEY(0, 0, KEY_VOLUMEUP)
 			MATRIX_KEY(0, 1, KEY_VOLUMEDOWN)
 			MATRIX_KEY(0, 2, KEY_CAMERA_FOCUS)

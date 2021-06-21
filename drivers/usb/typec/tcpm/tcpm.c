@@ -5,33 +5,33 @@
  * USB Power Delivery protocol stack.
  */
 
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/hrtimer.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/proc_fs.h>
-#include <linux/property.h>
-#include <linux/sched/clock.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/pd_ado.h>
-#include <linux/usb/pd_bdo.h>
-#include <linux/usb/pd_ext_sdb.h>
-#include <linux/usb/pd_vdo.h>
-#include <linux/usb/role.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec_altmode.h>
+#include <linaos/completion.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/hrtimer.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/power_supply.h>
+#include <linaos/proc_fs.h>
+#include <linaos/property.h>
+#include <linaos/sched/clock.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/usb.h>
+#include <linaos/usb/pd.h>
+#include <linaos/usb/pd_ado.h>
+#include <linaos/usb/pd_bdo.h>
+#include <linaos/usb/pd_ext_sdb.h>
+#include <linaos/usb/pd_vdo.h>
+#include <linaos/usb/role.h>
+#include <linaos/usb/tcpm.h>
+#include <linaos/usb/typec_altmode.h>
 
-#include <uapi/linux/sched/types.h>
+#include <uapi/linaos/sched/types.h>
 
 #define FOREACH_STATE(S)			\
 	S(INVALID_STATE),			\

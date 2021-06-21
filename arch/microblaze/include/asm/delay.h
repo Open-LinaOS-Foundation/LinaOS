@@ -8,7 +8,7 @@
 #ifndef _ASM_MICROBLAZE_DELAY_H
 #define _ASM_MICROBLAZE_DELAY_H
 
-#include <linux/param.h>
+#include <linaos/param.h>
 
 static inline void __delay(unsigned long loops)
 {

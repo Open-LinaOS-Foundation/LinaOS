@@ -2,13 +2,13 @@
  * \file drm_scatter.c
  * IOCTLs to manage scatter/gather memory
  *
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Gareth Hughes <gareth@valinaos.com>
  */
 
 /*
- * Created: Mon Dec 18 23:20:54 2000 by gareth@valinux.com
+ * Created: Mon Dec 18 23:20:54 2000 by gareth@valinaos.com
  *
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -31,9 +31,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm.h>
 #include <drm/drm_drv.h>

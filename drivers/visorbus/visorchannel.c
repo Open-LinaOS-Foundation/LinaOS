@@ -9,10 +9,10 @@
  *  independent of the mechanism used to access the channel data.
  */
 
-#include <linux/uuid.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/visorbus.h>
+#include <linaos/uuid.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/visorbus.h>
 
 #include "visorbus_private.h"
 #include "controlvmchannel.h"

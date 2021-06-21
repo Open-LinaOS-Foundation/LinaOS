@@ -5,14 +5,14 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the LinaOS EHCI driver.
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/reset.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/reset.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

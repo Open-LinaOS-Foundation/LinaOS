@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0
-# Makefile for linux/drivers/net/arcnet
+# Makefile for linaos/drivers/net/arcnet
 #
 
 obj-$(CONFIG_ARCNET) += arcnet.o

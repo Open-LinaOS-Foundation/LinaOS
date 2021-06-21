@@ -30,14 +30,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kthread.h>
+#include <linaos/types.h>
+#include <linaos/kthread.h>
 
 #include "i915_drv.h"
 #include "intel_gvt.h"
 #include "gvt.h"
-#include <linux/vfio.h>
-#include <linux/mdev.h>
+#include <linaos/vfio.h>
+#include <linaos/mdev.h>
 
 struct intel_gvt_host intel_gvt_host;
 

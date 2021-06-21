@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _IIO_BUFFER_GENERIC_IMPL_H_
 #define _IIO_BUFFER_GENERIC_IMPL_H_
-#include <linux/sysfs.h>
-#include <linux/kref.h>
+#include <linaos/sysfs.h>
+#include <linaos/kref.h>
 
 #ifdef CONFIG_IIO_BUFFER
 
-#include <uapi/linux/iio/buffer.h>
+#include <uapi/linaos/iio/buffer.h>
 
 struct iio_dev;
 struct iio_buffer;

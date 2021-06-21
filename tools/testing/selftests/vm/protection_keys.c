@@ -24,7 +24,7 @@
 #define _GNU_SOURCE
 #define __SANE_USERSPACE_TYPES__
 #include <errno.h>
-#include <linux/futex.h>
+#include <linaos/futex.h>
 #include <time.h>
 #include <sys/time.h>
 #include <sys/syscall.h>

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Host AP driver Info Frame processing (part of hostap.o module) */
 
-#include <linux/if_arp.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/etherdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/etherdevice.h>
 #include "hostap_wlan.h"
 #include "hostap.h"
 #include "hostap_ap.h"

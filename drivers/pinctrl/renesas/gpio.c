@@ -6,13 +6,13 @@
  * Copyright (C) 2009 - 2012 Paul Mundt
  */
 
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include "core.h"
 

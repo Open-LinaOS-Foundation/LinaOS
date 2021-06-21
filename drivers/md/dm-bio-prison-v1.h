@@ -10,8 +10,8 @@
 #include "persistent-data/dm-block-manager.h" /* FIXME: for dm_block_t */
 #include "dm-thin-metadata.h" /* FIXME: for dm_thin_id */
 
-#include <linux/bio.h>
-#include <linux/rbtree.h>
+#include <linaos/bio.h>
+#include <linaos/rbtree.h>
 
 /*----------------------------------------------------------------*/
 

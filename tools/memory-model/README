@@ -7,13 +7,13 @@ INTRODUCTION
 ============
 
 This directory contains the memory consistency model (memory model, for
-short) of the Linux kernel, written in the "cat" language and executable
+short) of the LinaOS kernel, written in the "cat" language and executable
 by the externally provided "herd7" simulator, which exhaustively explores
 the state space of small litmus tests.
 
 In addition, the "klitmus7" tool (also externally provided) may be used
-to convert a litmus test to a Linux kernel module, which in turn allows
-that litmus test to be exercised within the Linux kernel.
+to convert a litmus test to a LinaOS kernel module, which in turn allows
+that litmus test to be exercised within the LinaOS kernel.
 
 
 ============
@@ -32,7 +32,7 @@ this is not absolutely guaranteed.
 
 For example, a future version of herd7 might not work with the model
 in this release.  A compatible model will likely be made available in
-a later release of Linux kernel.
+a later release of LinaOS kernel.
 
 If you absolutely need to run the model in this particular release,
 please try using the exact version called out above.
@@ -49,7 +49,7 @@ klitmus7 Compatibility Table
 ----------------------------
 
 	============  ==========
-	target Linux  herdtools7
+	target LinaOS  herdtools7
 	------------  ----------
 	     -- 4.14  7.48 --
 	4.15 -- 4.19  7.49 --
@@ -67,7 +67,7 @@ explore the state space of small litmus tests.  Documentation describing
 the format, features, capabilities and limitations of these litmus
 tests is available in tools/memory-model/Documentation/litmus-tests.txt.
 
-Example litmus tests may be found in the Linux-kernel source tree:
+Example litmus tests may be found in the LinaOS-kernel source tree:
 
 	tools/memory-model/litmus-tests/
 	Documentation/litmus-tests/
@@ -75,8 +75,8 @@ Example litmus tests may be found in the Linux-kernel source tree:
 Several thousand more example litmus tests are available here:
 
 	https://github.com/paulmckrcu/litmus
-	https://git.kernel.org/pub/scm/linux/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/herd
-	https://git.kernel.org/pub/scm/linux/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/litmus
+	https://git.kernel.org/pub/scm/linaos/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/herd
+	https://git.kernel.org/pub/scm/linaos/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/litmus
 
 Documentation describing litmus tests and now to use them may be found
 here:
@@ -89,7 +89,7 @@ located in the tools/memory-model directory.
 To run SB+fencembonceonces.litmus against the memory model:
 
   $ cd $LINUX_SOURCE_TREE/tools/memory-model
-  $ herd7 -conf linux-kernel.cfg litmus-tests/SB+fencembonceonces.litmus
+  $ herd7 -conf linaos-kernel.cfg litmus-tests/SB+fencembonceonces.litmus
 
 Here is the corresponding output:
 
@@ -112,7 +112,7 @@ this litmus test's "exists" clause can not be satisfied.
 See "herd7 -help" or "herdtools7/doc/" for more information on running the
 tool itself, but please be aware that this documentation is intended for
 people who work on the memory model itself, that is, people making changes
-to the tools/memory-model/linux-kernel.* files.  It is not intended for
+to the tools/memory-model/linaos-kernel.* files.  It is not intended for
 people focusing on writing, understanding, and running LKMM litmus tests.
 
 
@@ -120,7 +120,7 @@ people focusing on writing, understanding, and running LKMM litmus tests.
 BASIC USAGE: KLITMUS7
 =====================
 
-The "klitmus7" tool converts a litmus test into a Linux kernel module,
+The "klitmus7" tool converts a litmus test into a LinaOS kernel module,
 which may then be loaded and run.
 
 For example, to run SB+fencembonceonces.litmus against hardware:
@@ -152,7 +152,7 @@ test's "exists" clause was not reached.
 And, as with "herd7", please see "klitmus7 -help" or "herdtools7/doc/"
 for more information.  And again, please be aware that this documentation
 is intended for people who work on the memory model itself, that is,
-people making changes to the tools/memory-model/linux-kernel.* files.
+people making changes to the tools/memory-model/linaos-kernel.* files.
 It is not intended for people focusing on writing, understanding, and
 running LKMM litmus tests.
 
@@ -164,7 +164,7 @@ DESCRIPTION OF FILES
 Documentation/README
 	Guide to the other documents in the Documentation/ directory.
 
-linux-kernel.bell
+linaos-kernel.bell
 	Categorizes the relevant instructions, including memory
 	references, memory barriers, atomic read-modify-write operations,
 	lock acquisition/release, and RCU operations.
@@ -173,7 +173,7 @@ linux-kernel.bell
 	event types used by the memory model and (2) performs RCU
 	read-side critical section nesting analysis.
 
-linux-kernel.cat
+linaos-kernel.cat
 	Specifies what reorderings are forbidden by memory references,
 	memory barriers, atomic read-modify-write operations, and RCU.
 
@@ -182,11 +182,11 @@ linux-kernel.cat
 	satisfy the model's "coherence", "atomic", "happens-before",
 	"propagation", and "rcu" axioms, which are defined in the file.
 
-linux-kernel.cfg
+linaos-kernel.cfg
 	Convenience file that gathers the common-case herd7 command-line
 	arguments.
 
-linux-kernel.def
+linaos-kernel.def
 	Maps from C-like syntax to herd7's internal litmus-test
 	instruction-set architecture.
 

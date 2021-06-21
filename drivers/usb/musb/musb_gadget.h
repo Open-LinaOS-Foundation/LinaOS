@@ -10,7 +10,7 @@
 #ifndef __MUSB_GADGET_H
 #define __MUSB_GADGET_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #if IS_ENABLED(CONFIG_USB_MUSB_GADGET) || IS_ENABLED(CONFIG_USB_MUSB_DUAL_ROLE)
 extern irqreturn_t musb_g_ep0_irq(struct musb *);

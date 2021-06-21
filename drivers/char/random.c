@@ -266,7 +266,7 @@
  *
  * For example, on most modern systems using the System V init
  * scripts, such code fragments would be found in
- * /etc/rc.d/init.d/random.  On older Linux systems, the correct script
+ * /etc/rc.d/init.d/random.  On older LinaOS systems, the correct script
  * location might be in /etc/rcb.d/rc.local or /etc/rc.d/rc.0.
  *
  * Effectively, these commands cause the contents of the entropy pool
@@ -278,10 +278,10 @@
  * of the entropy pool requires knowledge of the previous history of
  * the system.
  *
- * Configuring the /dev/random driver under Linux
+ * Configuring the /dev/random driver under LinaOS
  * ==============================================
  *
- * The /dev/random driver under Linux uses minor numbers 8 and 9 of
+ * The /dev/random driver under LinaOS uses minor numbers 8 and 9 of
  * the /dev/mem major number (#1).  So if your system does not have
  * /dev/random and /dev/urandom created already, they can be created
  * by using the commands:
@@ -309,37 +309,37 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/utsname.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/nodemask.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/percpu.h>
-#include <linux/fips.h>
-#include <linux/ptrace.h>
-#include <linux/workqueue.h>
-#include <linux/irq.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
-#include <linux/completion.h>
-#include <linux/uuid.h>
+#include <linaos/utsname.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/genhd.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm.h>
+#include <linaos/nodemask.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/percpu.h>
+#include <linaos/fips.h>
+#include <linaos/ptrace.h>
+#include <linaos/workqueue.h>
+#include <linaos/irq.h>
+#include <linaos/ratelimit.h>
+#include <linaos/syscalls.h>
+#include <linaos/completion.h>
+#include <linaos/uuid.h>
 #include <crypto/chacha.h>
 #include <crypto/sha1.h>
 
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/irq.h>
 #include <asm/irq_regs.h>
 #include <asm/io.h>
@@ -412,7 +412,7 @@ static int random_write_wakeup_bits = 28 * OUTPUT_POOL_WORDS;
  * decrease the uncertainty).
  *
  * Our mixing functions were analyzed by Lacharme, Roeck, Strubel, and
- * Videau in their paper, "The Linux Pseudorandom Number Generator
+ * Videau in their paper, "The LinaOS Pseudorandom Number Generator
  * Revisited" (see: http://eprint.iacr.org/2012/251.pdf).  In their
  * paper, they point out that we are not using a true Twisted GFSR,
  * since Matsumoto & Kurita used a trinomial feedback polynomial (that
@@ -2016,7 +2016,7 @@ SYSCALL_DEFINE3(getrandom, char __user *, buf, size_t, count,
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 
 static int min_write_thresh;
 static int max_write_thresh = INPUT_POOL_WORDS * 32;

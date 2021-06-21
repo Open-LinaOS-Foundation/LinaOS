@@ -3,22 +3,22 @@
  * Copyright (C) 2017-2018, Intel Corporation
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/kfifo.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/firmware/intel/stratix10-smc.h>
-#include <linux/firmware/intel/stratix10-svc-client.h>
-#include <linux/types.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/genalloc.h>
+#include <linaos/io.h>
+#include <linaos/kfifo.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/firmware/intel/stratix10-smc.h>
+#include <linaos/firmware/intel/stratix10-svc-client.h>
+#include <linaos/types.h>
 
 /**
  * SVC_NUM_DATA_IN_FIFO - number of struct stratix10_svc_data in the FIFO

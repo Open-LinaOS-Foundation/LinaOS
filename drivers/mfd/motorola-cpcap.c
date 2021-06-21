@@ -5,19 +5,19 @@
  * Copyright (C) 2016 Tony Lindgren <tony@atomide.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sysfs.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/motorola-cpcap.h>
-#include <linux/spi/spi.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/motorola-cpcap.h>
+#include <linaos/spi/spi.h>
 
 #define CPCAP_NR_IRQ_REG_BANKS	6
 #define CPCAP_NR_IRQ_CHIPS	3

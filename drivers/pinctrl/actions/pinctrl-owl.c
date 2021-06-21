@@ -9,21 +9,21 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include "../core.h"
 #include "../pinctrl-utils.h"

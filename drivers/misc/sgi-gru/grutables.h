@@ -129,12 +129,12 @@
  *
  */
 
-#include <linux/rmap.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/mmu_notifier.h>
-#include <linux/mm_types.h>
+#include <linaos/rmap.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/wait.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/mm_types.h>
 #include "gru.h"
 #include "grulib.h"
 #include "gruhandles.h"

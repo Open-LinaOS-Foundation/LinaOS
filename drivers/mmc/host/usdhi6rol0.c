@@ -4,28 +4,28 @@
  * Author: Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/virtio.h>
-#include <linux/workqueue.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/highmem.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/log2.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sd.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/scatterlist.h>
+#include <linaos/string.h>
+#include <linaos/time.h>
+#include <linaos/virtio.h>
+#include <linaos/workqueue.h>
 
 #define USDHI6_SD_CMD		0x0000
 #define USDHI6_SD_PORT_SEL	0x0004

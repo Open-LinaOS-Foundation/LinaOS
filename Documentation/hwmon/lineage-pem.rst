@@ -13,7 +13,7 @@ Supported devices:
 
 	http://www.lineagepower.com/oem/pdf/CPLI2C.pdf
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

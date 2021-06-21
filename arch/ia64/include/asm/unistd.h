@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * IA-64 Linux syscall numbers and inline-functions.
+ * IA-64 LinaOS syscall numbers and inline-functions.
  *
  * Copyright (C) 1998-2005 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
@@ -17,9 +17,9 @@
 
 #if !defined(__ASSEMBLY__) && !defined(ASSEMBLER)
 
-#include <linux/types.h>
-#include <linux/linkage.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/linkage.h>
+#include <linaos/compiler.h>
 
 extern long __ia64_syscall (long a0, long a1, long a2, long a3, long a4, long nr);
 

@@ -5,16 +5,16 @@
  * Copyright 2013 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/rational.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/rational.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-dv-timings.h>
 #include <media/v4l2-dv-timings.h>
-#include <linux/math64.h>
-#include <linux/hdmi.h>
+#include <linaos/math64.h>
+#include <linaos/hdmi.h>
 #include <media/cec.h>
 
 MODULE_AUTHOR("Hans Verkuil");

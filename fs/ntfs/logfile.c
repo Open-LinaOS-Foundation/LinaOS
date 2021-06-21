@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * logfile.c - NTFS kernel journal handling. Part of the Linux-NTFS project.
+ * logfile.c - NTFS kernel journal handling. Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2002-2007 Anton Altaparmakov
  */
 
 #ifdef NTFS_RW
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/bio.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/highmem.h>
+#include <linaos/buffer_head.h>
+#include <linaos/bitops.h>
+#include <linaos/log2.h>
+#include <linaos/bio.h>
 
 #include "attrib.h"
 #include "aops.h"

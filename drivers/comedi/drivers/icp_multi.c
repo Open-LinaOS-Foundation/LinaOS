@@ -3,7 +3,7 @@
  * icp_multi.c
  * Comedi driver for Inova ICP_MULTI board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2002 David A. Schleef <ds@schleef.org>
  */
 
@@ -34,8 +34,8 @@
  * 4 x 16-bit counters - not implemented
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
 
 #include "../comedi_pci.h"
 

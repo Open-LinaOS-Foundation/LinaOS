@@ -7,33 +7,33 @@
  *	   Feng-Hsin Chiang <john453@faraday-tech.com>
  *	   Po-Yu Chuang <ratbert.chuang@gmail.com>
  *
- * Most of code borrowed from the Linux-3.7 EHCI driver
+ * Most of code borrowed from the LinaOS-3.7 EHCI driver
  */
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/device.h>
+#include <linaos/dmapool.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/hrtimer.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/debugfs.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/clk.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
@@ -2850,7 +2850,7 @@ static struct fotg210_qh *qh_make(struct fotg210_hcd *fotg210, struct urb *urb,
 			 * always use 512 byte maxpacket.  But some device
 			 * vendors decided to ignore that, and MSFT is happy
 			 * to help them do so.  So now people expect to use
-			 * such nonconformant devices with Linux too; sigh.
+			 * such nonconformant devices with LinaOS too; sigh.
 			 */
 			info1 |= max_packet(maxp) << 16;
 			info2 |= (FOTG210_TUNE_MULT_HS << 30);

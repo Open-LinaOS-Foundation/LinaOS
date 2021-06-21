@@ -9,14 +9,14 @@
  * See Documentation/core-api/xarray.rst for how to use the XArray.
  */
 
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/gfp.h>
-#include <linux/kconfig.h>
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/bug.h>
+#include <linaos/compiler.h>
+#include <linaos/gfp.h>
+#include <linaos/kconfig.h>
+#include <linaos/kernel.h>
+#include <linaos/rcupdate.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 /*
  * The bottom two bits of the entry determine how the XArray interprets

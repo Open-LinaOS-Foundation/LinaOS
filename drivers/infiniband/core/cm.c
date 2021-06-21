@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright (c) 2004-2007 Intel Corporation.  All rights reserved.
  * Copyright (c) 2004 Topspin Corporation.  All rights reserved.
@@ -7,21 +7,21 @@
  * Copyright (c) 2019, Mellanox Technologies inc.  All rights reserved.
  */
 
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/random.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/workqueue.h>
-#include <linux/kdev_t.h>
-#include <linux/etherdevice.h>
+#include <linaos/completion.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/random.h>
+#include <linaos/rbtree.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/workqueue.h>
+#include <linaos/kdev_t.h>
+#include <linaos/etherdevice.h>
 
 #include <rdma/ib_cache.h>
 #include <rdma/ib_cm.h>

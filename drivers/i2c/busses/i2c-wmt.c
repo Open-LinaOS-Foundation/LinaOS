@@ -2,23 +2,23 @@
 /*
  *  Wondermedia I2C Master Mode Driver
  *
- *  Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ *  Copyright (C) 2012 Tony Prisk <linaos@prisktech.co.nz>
  *
  *  Derived from GPLv2+ licensed source:
  *  - Copyright (C) 2008 WonderMedia Technologies, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
 
 #define REG_CR		0x00
 #define REG_TCR		0x02
@@ -465,6 +465,6 @@ static struct platform_driver wmt_i2c_driver = {
 module_platform_driver(wmt_i2c_driver);
 
 MODULE_DESCRIPTION("Wondermedia I2C master-mode bus adapter");
-MODULE_AUTHOR("Tony Prisk <linux@prisktech.co.nz>");
+MODULE_AUTHOR("Tony Prisk <linaos@prisktech.co.nz>");
 MODULE_LICENSE("GPL");
 MODULE_DEVICE_TABLE(of, wmt_i2c_dt_ids);

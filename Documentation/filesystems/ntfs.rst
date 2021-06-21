@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ================================
-The Linux NTFS filesystem driver
+The LinaOS NTFS filesystem driver
 ================================
 
 
@@ -21,7 +21,7 @@ The Linux NTFS filesystem driver
 Overview
 ========
 
-Linux-NTFS comes with a number of user-space programs known as ntfsprogs.
+LinaOS-NTFS comes with a number of user-space programs known as ntfsprogs.
 These include mkntfs, a full-featured ntfs filesystem format utility,
 ntfsundelete used for recovering files that were unintentionally deleted
 from an NTFS volume and ntfsresize which is used to resize an NTFS partition.
@@ -40,11 +40,11 @@ with NTFS" for details.
 Web site
 ========
 
-There is plenty of additional information on the linux-ntfs web site
-at http://www.linux-ntfs.org/
+There is plenty of additional information on the linaos-ntfs web site
+at http://www.linaos-ntfs.org/
 
 The web site has a lot of additional information, such as a comprehensive
-FAQ, documentation on the NTFS on-disk format, information on the Linux-NTFS
+FAQ, documentation on the NTFS on-disk format, information on the LinaOS-NTFS
 userspace utilities, etc.
 
 
@@ -64,10 +64,10 @@ Features
 - The new driver supports execution of binaries due to mmap() now being
   supported.
 - The new driver supports loopback mounting of files on NTFS which is used by
-  some Linux distributions to enable the user to run Linux from an NTFS
+  some LinaOS distributions to enable the user to run LinaOS from an NTFS
   partition by creating a large file while in Windows and then loopback
-  mounting the file while in Linux and creating a Linux filesystem on it that
-  is used to install Linux on it.
+  mounting the file while in LinaOS and creating a LinaOS filesystem on it that
+  is used to install LinaOS on it.
 - A comparison of the two drivers using::
 
 	time find . -type f -exec md5sum "{}" \;
@@ -163,7 +163,7 @@ case_sensitive=<BOOL>	If case_sensitive is specified, treat all file names as
 			case sensitive and create file names in the POSIX
 			namespace.  Otherwise the default behaviour is to treat
 			file names as case insensitive and to create file names
-			in the WIN32/LONG name space.  Note, the Linux NTFS
+			in the WIN32/LONG name space.  Note, the LinaOS NTFS
 			driver will never create short file names and will
 			remove them on rename/delete of the corresponding long
 			file name.
@@ -230,7 +230,7 @@ mft_zone_multiplier=	Set the MFT zone multiplier for the volume (this
 Known bugs and (mis-)features
 =============================
 
-- The link count on each directory inode entry is set to 1, due to Linux not
+- The link count on each directory inode entry is set to 1, due to LinaOS not
   supporting directory hard links.  This may well confuse some user space
   applications, since the directory names will have the same inode numbers.
   This also speeds up ntfs_read_inode() immensely.  And we haven't found any
@@ -238,8 +238,8 @@ Known bugs and (mis-)features
   let us know.
 
 
-Please send bug reports/comments/feedback/abuse to the Linux-NTFS development
-list at sourceforge: linux-ntfs-dev@lists.sourceforge.net
+Please send bug reports/comments/feedback/abuse to the LinaOS-NTFS development
+list at sourceforge: linaos-ntfs-dev@lists.sourceforge.net
 
 
 Using NTFS volume and stripe sets
@@ -278,21 +278,21 @@ example if one of your partitions is /dev/hda2 you would do::
     Units = sectors of 1 * 512 = 512 bytes
 
 	Device Boot      Start         End      Blocks   Id  System
-	/dev/hda1   *          63     4209029     2104483+  83  Linux
+	/dev/hda1   *          63     4209029     2104483+  83  LinaOS
 	/dev/hda2         4209030    37768814    16779892+  86  NTFS
-	/dev/hda3        37768815    46170809     4200997+  83  Linux
+	/dev/hda3        37768815    46170809     4200997+  83  LinaOS
 
 And you would know that /dev/hda2 has a size of 37768814 - 4209030 + 1 =
 33559785 sectors.
 
 For Win2k and later dynamic disks, you can for example use the ldminfo utility
-which is part of the Linux LDM tools (the latest version at the time of
-writing is linux-ldm-0.0.8.tar.bz2).  You can download it from:
+which is part of the LinaOS LDM tools (the latest version at the time of
+writing is linaos-ldm-0.0.8.tar.bz2).  You can download it from:
 
-	http://www.linux-ntfs.org/
+	http://www.linaos-ntfs.org/
 
-Simply extract the downloaded archive (tar xvjf linux-ldm-0.0.8.tar.bz2), go
-into it (cd linux-ldm-0.0.8) and change to the test directory (cd test).  You
+Simply extract the downloaded archive (tar xvjf linaos-ldm-0.0.8.tar.bz2), go
+into it (cd linaos-ldm-0.0.8) and change to the test directory (cd test).  You
 will find the precompiled (i386) ldminfo utility there.  NOTE: You will not be
 able to compile this yourself easily so use the binary version!
 
@@ -304,13 +304,13 @@ This would dump the LDM database found on /dev/hda which describes all of your
 dynamic disks and all the volumes on them.  At the bottom you will see the
 VOLUME DEFINITIONS section which is all you really need.  You may need to look
 further above to determine which of the disks in the volume definitions is
-which device in Linux.  Hint: Run ldminfo on each of your dynamic disks and
+which device in LinaOS.  Hint: Run ldminfo on each of your dynamic disks and
 look at the Disk Id close to the top of the output for each (the PRIVATE HEADER
 section).  You can then find these Disk Ids in the VBLK DATABASE section in the
 <Disk> components where you will get the LDM Name for the disk that is found in
 the VOLUME DEFINITIONS section.
 
-Note you will also need to enable the LDM driver in the Linux kernel.  If your
+Note you will also need to enable the LDM driver in the LinaOS kernel.  If your
 distribution did not enable it, you will need to recompile the kernel with it
 enabled.  This will create the LDM partitions on each device at boot time.  You
 would then use those devices (for /dev/hda they would be /dev/hda1, 2, 3, etc)
@@ -432,7 +432,7 @@ use (see man 5 raidtab for available algorithms) and you will have to try the
 different available algorithms until you find one that works.  Make sure you
 are working read-only when playing with this as you may damage your data
 otherwise.  If you find which algorithm works please let us know (email the
-linux-ntfs developers list linux-ntfs-dev@lists.sourceforge.net or drop in on
+linaos-ntfs developers list linaos-ntfs-dev@lists.sourceforge.net or drop in on
 IRC in channel #ntfs on the irc.freenode.net network) so we can update this
 documentation.
 

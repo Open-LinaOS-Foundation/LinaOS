@@ -5,8 +5,8 @@
  * CPU PM notifiers for saving/restoring general CPU state.
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/init.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/init.h>
 
 #include <asm/dsp.h>
 #include <asm/fpu.h>

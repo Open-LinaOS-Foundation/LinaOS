@@ -8,7 +8,7 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "otx_cptvf.h"
 
 #define CPT_MBOX_MSG_TIMEOUT 2000

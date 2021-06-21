@@ -4,19 +4,19 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/swab.h>
-#include <linux/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/swab.h>
+#include <linaos/dma-mapping.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/sysfs.h>
-#include <linux/aer.h>
-#include <linux/log2.h>
+#include <linaos/ipv6.h>
+#include <linaos/inetdevice.h>
+#include <linaos/sysfs.h>
+#include <linaos/aer.h>
+#include <linaos/log2.h>
 #ifdef CONFIG_QLCNIC_HWMON
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
 #endif
 
 #include "qlcnic.h"

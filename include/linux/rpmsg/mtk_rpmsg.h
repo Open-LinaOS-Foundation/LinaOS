@@ -6,8 +6,8 @@
 #ifndef __LINUX_RPMSG_MTK_RPMSG_H
 #define __LINUX_RPMSG_MTK_RPMSG_H
 
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
+#include <linaos/platform_device.h>
+#include <linaos/remoteproc.h>
 
 typedef void (*ipi_handler_t)(void *data, unsigned int len, void *priv);
 

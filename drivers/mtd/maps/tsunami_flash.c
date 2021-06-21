@@ -6,9 +6,9 @@
  */
 #include <asm/io.h>
 #include <asm/core_tsunami.h>
-#include <linux/init.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/init.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/mtd.h>
 
 #define FLASH_ENABLE_PORT 0x00C00001
 #define FLASH_ENABLE_BYTE 0x01

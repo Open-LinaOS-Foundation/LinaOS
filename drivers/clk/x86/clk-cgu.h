@@ -8,7 +8,7 @@
 #ifndef __CLK_CGU_H
 #define __CLK_CGU_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 struct lgm_clk_mux {
 	struct clk_hw hw;

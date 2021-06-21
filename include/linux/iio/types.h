@@ -7,7 +7,7 @@
 #ifndef _IIO_TYPES_H_
 #define _IIO_TYPES_H_
 
-#include <uapi/linux/iio/types.h>
+#include <uapi/linaos/iio/types.h>
 
 enum iio_event_info {
 	IIO_EV_INFO_ENABLE,

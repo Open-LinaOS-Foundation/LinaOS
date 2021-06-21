@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  * Copyright (c) 2008 Intel Corporation
- * Author: Matthew Wilcox <willy@linux.intel.com>
+ * Author: Matthew Wilcox <willy@linaos.intel.com>
  *
  * Please see kernel/locking/semaphore.c for documentation of these functions
  */
 #ifndef __LINUX_SEMAPHORE_H
 #define __LINUX_SEMAPHORE_H
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
 
 /* Please don't access any members of this structure directly */
 struct semaphore {

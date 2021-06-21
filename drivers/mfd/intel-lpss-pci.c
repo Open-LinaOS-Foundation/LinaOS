@@ -4,16 +4,16 @@
  *
  * Copyright (C) 2015, Intel Corporation
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
 
 #include "intel-lpss.h"
 
@@ -449,7 +449,7 @@ static struct pci_driver intel_lpss_pci_driver = {
 
 module_pci_driver(intel_lpss_pci_driver);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel LPSS PCI driver");
 MODULE_LICENSE("GPL v2");

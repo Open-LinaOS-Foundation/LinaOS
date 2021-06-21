@@ -16,10 +16,10 @@
 #ifndef __TEGRA_USB_PHY_H
 #define __TEGRA_USB_PHY_H
 
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/reset.h>
-#include <linux/usb/otg.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/reset.h>
+#include <linaos/usb/otg.h>
 
 /*
  * utmi_pll_config_in_car_module: true if the UTMI PLL configuration registers

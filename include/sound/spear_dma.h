@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
-* linux/spear_dma.h
+* linaos/spear_dma.h
 *
-* Copyright (ST) 2012 Rajeev Kumar (rajeevkumar.linux@gmail.com)
+* Copyright (ST) 2012 Rajeev Kumar (rajeevkumar.linaos@gmail.com)
 */
 
 #ifndef SPEAR_DMA_H
 #define SPEAR_DMA_H
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 struct spear_dma_data {
 	void *data;

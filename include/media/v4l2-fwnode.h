@@ -3,7 +3,7 @@
  * V4L2 fwnode binding parsing library
  *
  * Copyright (c) 2016 Intel Corporation.
- * Author: Sakari Ailus <sakari.ailus@linux.intel.com>
+ * Author: Sakari Ailus <sakari.ailus@linaos.intel.com>
  *
  * Copyright (C) 2012 - 2013 Samsung Electronics Co., Ltd.
  * Author: Sylwester Nawrocki <s.nawrocki@samsung.com>
@@ -14,10 +14,10 @@
 #ifndef _V4L2_FWNODE_H
 #define _V4L2_FWNODE_H
 
-#include <linux/errno.h>
-#include <linux/fwnode.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/fwnode.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
 
 #include <media/v4l2-mediabus.h>
 

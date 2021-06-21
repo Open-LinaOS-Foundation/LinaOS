@@ -10,8 +10,8 @@
 #if !defined(_TRACE_I2C_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_I2C_H
 
-#include <linux/i2c.h>
-#include <linux/tracepoint.h>
+#include <linaos/i2c.h>
+#include <linaos/tracepoint.h>
 
 /*
  * drivers/i2c/i2c-core-base.c

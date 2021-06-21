@@ -5,19 +5,19 @@
  * Author: Mark A. Greer <mgreer@animalcreek.com>
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/power_supply.h>
-#include <linux/power/bq24190_charger.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/workqueue.h>
-#include <linux/i2c.h>
-#include <linux/extcon-provider.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/power_supply.h>
+#include <linaos/power/bq24190_charger.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/workqueue.h>
+#include <linaos/i2c.h>
+#include <linaos/extcon-provider.h>
 
 #define	BQ24190_MANUFACTURER	"Texas Instruments"
 

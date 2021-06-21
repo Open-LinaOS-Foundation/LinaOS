@@ -4,10 +4,10 @@
  * Author: Tiffany Lin <tiffany.lin@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
 #include <soc/mediatek/smi.h>
 
 #include "mtk_vcodec_dec_pm.h"

@@ -13,18 +13,18 @@
 #include <drm/drm_probe_helper.h>
 #include <video/mipi_display.h>
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
 
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-mipi-dphy.h>
+#include <linaos/phy/phy.h>
+#include <linaos/phy/phy-mipi-dphy.h>
 
 #define IP_CONF				0x0
 #define SP_HS_FIFO_DEPTH(x)		(((x) & GENMASK(30, 26)) >> 26)

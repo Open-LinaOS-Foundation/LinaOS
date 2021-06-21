@@ -20,8 +20,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
 
 #include "kfd_priv.h"
 

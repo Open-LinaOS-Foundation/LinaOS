@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE LinaOS Products GmbH. All rights reserved.
  *
  * Authors:
  *    Alexander Graf <agraf@suse.de>
@@ -11,21 +11,21 @@
  * by Hollis Blanchard <hollisb@us.ibm.com>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
+#include <linaos/kvm_host.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/miscdevice.h>
+#include <linaos/gfp.h>
+#include <linaos/sched.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
 
 #include <asm/reg.h>
 #include <asm/cputable.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/kvm_ppc.h>
 #include <asm/kvm_book3s.h>

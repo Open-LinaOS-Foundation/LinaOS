@@ -7,24 +7,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/irq_work.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/gfp.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/sched/idle.h>
-#include <linux/hypervisor.h>
-#include <linux/sched/clock.h>
-#include <linux/nmi.h>
-#include <linux/sched/debug.h>
-#include <linux/jump_label.h>
+#include <linaos/irq_work.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rculist.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/percpu.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/gfp.h>
+#include <linaos/smp.h>
+#include <linaos/cpu.h>
+#include <linaos/sched.h>
+#include <linaos/sched/idle.h>
+#include <linaos/hypervisor.h>
+#include <linaos/sched/clock.h>
+#include <linaos/nmi.h>
+#include <linaos/sched/debug.h>
+#include <linaos/jump_label.h>
 
 #include "smpboot.h"
 #include "sched/smp.h"

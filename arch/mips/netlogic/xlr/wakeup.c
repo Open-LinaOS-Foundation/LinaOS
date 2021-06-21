@@ -32,8 +32,8 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/delay.h>
-#include <linux/threads.h>
+#include <linaos/delay.h>
+#include <linaos/threads.h>
 
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
@@ -56,7 +56,7 @@ int xlr_wakeup_secondary_cpus(void)
 
 	/*
 	 *  In case of RMI boot, hit with NMI to get the cores
-	 *  from bootloader to linux code.
+	 *  from bootloader to linaos code.
 	 */
 	nodep = nlm_get_node(0);
 	boot_cpu = hard_smp_processor_id();

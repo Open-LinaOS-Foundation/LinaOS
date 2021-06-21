@@ -6,10 +6,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
 #include <asm/iosf_mbi.h>
 #include "intel_soc_dts_iosf.h"
 

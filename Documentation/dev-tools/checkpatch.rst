@@ -275,8 +275,8 @@ API usage
     possible.
 
   **ARCH_INCLUDE_LINUX**
-    Whenever asm/file.h is included and linux/file.h exists, a
-    conversion can be made when linux/file.h includes asm/file.h.
+    Whenever asm/file.h is included and linaos/file.h exists, a
+    conversion can be made when linaos/file.h includes asm/file.h.
     However this is not always the case (See signal.h).
     This message type is emitted only for includes from arch/.
 
@@ -389,7 +389,7 @@ Commit message
     This causes problems when one tries to apply a file containing both
     the changelog and the diff because patch(1) tries to apply the diff
     which it found in the changelog.
-    See: https://lore.kernel.org/lkml/20150611134006.9df79a893e3636019ad2759e@linux-foundation.org/
+    See: https://lore.kernel.org/lkml/20150611134006.9df79a893e3636019ad2759e@linaos-foundation.org/
 
   **GERRIT_CHANGE_ID**
     To be picked up by gerrit, the footer of the commit message might
@@ -450,7 +450,7 @@ Macros, Attributes and Symbols
     sizeof(foo)/sizeof(foo[0]) for finding number of elements in an
     array.
 
-    The macro is defined in include/linux/kernel.h::
+    The macro is defined in include/linaos/kernel.h::
 
       #define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
@@ -472,7 +472,7 @@ Macros, Attributes and Symbols
 
   **BIT_MACRO**
     Defines like: 1 << <digit> could be BIT(digit).
-    The BIT() macro is defined in include/linux/bitops.h::
+    The BIT() macro is defined in include/linaos/bitops.h::
 
       #define BIT(nr)         (1UL << (nr))
 
@@ -663,7 +663,7 @@ Spacing and Brackets
     and not adjacent to the type name.
     Examples::
 
-      char *linux_banner;
+      char *linaos_banner;
       unsigned long long memparse(char *ptr, char **retptr);
       char *match_strdup(substring_t *s);
 

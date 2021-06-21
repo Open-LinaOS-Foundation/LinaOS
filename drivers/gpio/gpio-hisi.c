@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 HiSilicon Limited. */
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
 
 #define HISI_GPIO_SWPORT_DR_SET_WX	0x000
 #define HISI_GPIO_SWPORT_DR_CLR_WX	0x004

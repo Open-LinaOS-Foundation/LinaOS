@@ -30,27 +30,27 @@
 		cover {
 			label = "Cover";
 			gpios = <&gpio5 12 GPIO_ACTIVE_LOW>;
-			linux,code = <SW_LID>;
-			linux,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
+			linaos,input-type = <EV_SW>;
 			wakeup-source;
 		};
 
 		fl {
 			label = "Frontlight";
 			gpios = <&gpio3 26 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_BRIGHTNESS_CYCLE>;
+			linaos,code = <KEY_BRIGHTNESS_CYCLE>;
 		};
 
 		home {
 			label = "Home";
 			gpios = <&gpio3 25 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 		};
 
 		power {
 			label = "Power";
 			gpios = <&gpio5 8 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -63,7 +63,7 @@
 		on {
 			label = "tolinoshine2hd:white:on";
 			gpios = <&gpio5 13 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 		};
 	};
 

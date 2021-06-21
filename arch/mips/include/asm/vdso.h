@@ -7,7 +7,7 @@
 #ifndef __ASM_VDSO_H
 #define __ASM_VDSO_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 #include <vdso/datapage.h>
 
 #include <asm/barrier.h>

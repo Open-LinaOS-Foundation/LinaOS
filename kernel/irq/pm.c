@@ -5,11 +5,11 @@
  * This file contains power management functions related to interrupts.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/suspend.h>
+#include <linaos/syscore_ops.h>
 
 #include "internals.h"
 

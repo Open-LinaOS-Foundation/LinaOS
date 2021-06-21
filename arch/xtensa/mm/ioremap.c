@@ -5,9 +5,9 @@
  * Copyright (C) 2015 Cadence Design Systems Inc.
  */
 
-#include <linux/io.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <linaos/io.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pgtable.h>
 #include <asm/cacheflush.h>
 #include <asm/io.h>
 

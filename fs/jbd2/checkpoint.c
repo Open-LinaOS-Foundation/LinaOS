@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/checkpoint.c
+ * linaos/fs/jbd2/checkpoint.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1999
  *
@@ -14,12 +14,12 @@
  * reused.
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/jbd2.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
 #include <trace/events/jbd2.h>
 
 /*

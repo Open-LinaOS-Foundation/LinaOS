@@ -9,20 +9,20 @@
  * -------------------------------------------------------------------------
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/irq.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/input/touchscreen.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/irq.h>
+#include <linaos/regulator/consumer.h>
 
 #include <asm/unaligned.h>
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Microchip Technology
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
 
 /* External Register Control Register */
 #define LAN87XX_EXT_REG_CTL                     (0x14)

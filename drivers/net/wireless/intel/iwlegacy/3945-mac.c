@@ -7,26 +7,26 @@
  * as portions of the ieee80211 subsystem header files.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel LinaOS Wireless <ilw@linaos.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/firmware.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_arp.h>
 
 #include <net/ieee80211_radiotap.h>
 #include <net/mac80211.h>
@@ -45,7 +45,7 @@
  */
 
 #define DRV_DESCRIPTION	\
-"Intel(R) PRO/Wireless 3945ABG/BG Network Connection driver for Linux"
+"Intel(R) PRO/Wireless 3945ABG/BG Network Connection driver for LinaOS"
 
 #ifdef CONFIG_IWLEGACY_DEBUG
 #define VD "d"
@@ -60,7 +60,7 @@
  */
 #define DRV_VERSION  IWLWIFI_VERSION VD "s"
 #define DRV_COPYRIGHT	"Copyright(c) 2003-2011 Intel Corporation"
-#define DRV_AUTHOR     "<ilw@linux.intel.com>"
+#define DRV_AUTHOR     "<ilw@linaos.intel.com>"
 
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
 MODULE_VERSION(DRV_VERSION);
@@ -1889,7 +1889,7 @@ il3945_read_ucode(struct il_priv *il)
 	if (api_ver != api_max)
 		IL_ERR("Firmware has old API version. Expected %u, "
 		       "got %u. New firmware can be obtained "
-		       "from http://www.intellinuxwireless.org.\n", api_max,
+		       "from http://www.intellinaoswireless.org.\n", api_max,
 		       api_ver);
 
 	IL_INFO("loaded firmware version %u.%u.%u.%u\n",

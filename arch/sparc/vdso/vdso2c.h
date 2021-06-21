@@ -116,7 +116,7 @@ static void BITSFUNC(go)(void *raw_addr, size_t raw_len,
 	mapping_size = (stripped_len + 8191) / 8192 * 8192;
 
 	fprintf(outfile, "/* AUTOMATICALLY GENERATED -- DO NOT EDIT */\n\n");
-	fprintf(outfile, "#include <linux/cache.h>\n");
+	fprintf(outfile, "#include <linaos/cache.h>\n");
 	fprintf(outfile, "#include <asm/vdso.h>\n");
 	fprintf(outfile, "\n");
 	fprintf(outfile,

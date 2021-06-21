@@ -15,18 +15,18 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  * Author: Michael Westerhof <mwester@dls.net>
  * Author: Rod Whitby <rod@whitby.id.au>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-linaos.org/
  */
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/leds.h>
-#include <linux/reboot.h>
-#include <linux/i2c.h>
-#include <linux/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/irq.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
+#include <linaos/leds.h>
+#include <linaos/reboot.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio/machine.h>
 
 #include <mach/hardware.h>
 
@@ -290,7 +290,7 @@ static void __init dsmg600_init(void)
 }
 
 MACHINE_START(DSMG600, "D-Link DSM-G600 RevA")
-	/* Maintainer: www.nslu2-linux.org */
+	/* Maintainer: www.nslu2-linaos.org */
 	.atag_offset	= 0x100,
 	.map_io		= ixp4xx_map_io,
 	.init_early	= ixp4xx_init_early,

@@ -110,7 +110,7 @@ Some requirements for using atmel,at91rm9200-pinctrl binding:
    what pinmux functions this SoC supports.
 2. The driver can use the function node's name and pin configuration node's
    name describe the pin function and group hierarchy.
-   For example, Linux at91 pinctrl driver takes the function node's name
+   For example, LinaOS at91 pinctrl driver takes the function node's name
    as the function name and pin configuration node's name as group name to
    create the map table.
 3. Each pin configuration node should have a phandle, devices can set pins

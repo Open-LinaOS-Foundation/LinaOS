@@ -13,7 +13,7 @@
 #ifndef _ASM_PACCESS_H
 #define _ASM_PACCESS_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 #ifdef CONFIG_32BIT
 #define __PA_ADDR	".word"

@@ -5,13 +5,13 @@
  * Copyright (C) 2011 Renesas Solutions Corp.
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 #include "common.h"
 
 /*

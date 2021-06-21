@@ -5,11 +5,11 @@
  * described at https://tools.ietf.org/html/draft-shen-sm2-ecdsa-02
  *
  * Copyright (c) 2020, Alibaba Group.
- * Authors: Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Authors: Tianjia Zhang <tianjia.zhang@linaos.alibaba.com>
  */
 
-#include <linux/module.h>
-#include <linux/mpi.h>
+#include <linaos/module.h>
+#include <linaos/mpi.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/akcipher.h>
 #include <crypto/hash.h>
@@ -459,6 +459,6 @@ subsys_initcall(sm2_init);
 module_exit(sm2_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@linux.alibaba.com>");
+MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@linaos.alibaba.com>");
 MODULE_DESCRIPTION("SM2 generic algorithm");
 MODULE_ALIAS_CRYPTO("sm2-generic");

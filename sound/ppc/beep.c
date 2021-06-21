@@ -5,13 +5,13 @@
  * Copyright (c) by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/irq.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include "pmac.h"

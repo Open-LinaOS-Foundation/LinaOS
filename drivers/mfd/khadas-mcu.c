@@ -6,12 +6,12 @@
  *
  * Author(s): Neil Armstrong <narmstrong@baylibre.com>
  */
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/khadas-mcu.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/khadas-mcu.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
 static bool khadas_mcu_reg_volatile(struct device *dev, unsigned int reg)
 {

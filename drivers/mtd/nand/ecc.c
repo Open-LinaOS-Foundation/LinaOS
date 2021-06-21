@@ -93,9 +93,9 @@
  *   - ondie + finish  + ecc + write: do nothing
  */
 
-#include <linux/module.h>
-#include <linux/mtd/nand.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/mtd/nand.h>
+#include <linaos/slab.h>
 
 /**
  * nand_ecc_init_ctx - Init the ECC engine context

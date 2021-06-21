@@ -6,13 +6,13 @@
  * Sumit Garg <sumit.garg@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/key-type.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tee_drv.h>
-#include <linux/uuid.h>
+#include <linaos/err.h>
+#include <linaos/key-type.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/tee_drv.h>
+#include <linaos/uuid.h>
 
 #include <keys/trusted_tee.h>
 

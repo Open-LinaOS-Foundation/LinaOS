@@ -6,16 +6,16 @@
  * Copyright (C) 2009 Wolfson Microelectronics plc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/slab.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/auxadc.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/auxadc.h>
 
 static const char * const input_names[] = {
 	[WM831X_AUX_SYSVDD]    = "SYSVDD",

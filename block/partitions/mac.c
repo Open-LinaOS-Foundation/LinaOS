@@ -7,7 +7,7 @@
  *  Re-organised Feb 1998 Russell King
  */
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include "check.h"
 #include "mac.h"
 
@@ -86,7 +86,7 @@ int mac_partition(struct parsed_partitions *state)
 			be32_to_cpu(part->start_block) * (secsize/512),
 			be32_to_cpu(part->block_count) * (secsize/512));
 
-		if (!strncasecmp(part->type, "Linux_RAID", 10))
+		if (!strncasecmp(part->type, "LinaOS_RAID", 10))
 			state->parts[slot].flags = ADDPART_FLAG_RAID;
 #ifdef CONFIG_PPC_PMAC
 		/*
@@ -105,8 +105,8 @@ int mac_partition(struct parsed_partitions *state)
 				goodness++;
 
 			if (strcasecmp(part->type, "Apple_UNIX_SVR2") == 0
-			    || (strncasecmp(part->type, "Linux", 5) == 0
-			        && strcasecmp(part->type, "Linux_swap") != 0)) {
+			    || (strncasecmp(part->type, "LinaOS", 5) == 0
+			        && strcasecmp(part->type, "LinaOS_swap") != 0)) {
 				int i, l;
 
 				goodness++;

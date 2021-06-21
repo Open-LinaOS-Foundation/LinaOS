@@ -5,12 +5,12 @@
  * Copyright (c) 2014 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/dln2.h>
-#include <linux/spi/spi.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/dln2.h>
+#include <linaos/spi/spi.h>
+#include <linaos/pm_runtime.h>
 #include <asm/unaligned.h>
 
 #define DLN2_SPI_MODULE_ID		0x02

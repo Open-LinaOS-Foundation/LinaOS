@@ -6,10 +6,10 @@
  */
 
 #include "ubi.h"
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
 
 
 /**

@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/suspend.h>
+#include <linaos/suspend.h>
 
 #include "i915_drv.h"
 #include "i915_globals.h"

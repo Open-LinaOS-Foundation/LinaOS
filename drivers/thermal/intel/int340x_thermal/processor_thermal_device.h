@@ -7,7 +7,7 @@
 #ifndef __PROCESSOR_THERMAL_DEVICE_H__
 #define __PROCESSOR_THERMAL_DEVICE_H__
 
-#include <linux/intel_rapl.h>
+#include <linaos/intel_rapl.h>
 
 #define PCI_DEVICE_ID_INTEL_ADL_THERMAL	0x461d
 #define PCI_DEVICE_ID_INTEL_BDW_THERMAL	0x1603

@@ -11,7 +11,7 @@
 #ifndef __MIPS_ASM_MIPS_GIC_H__
 #define __MIPS_ASM_MIPS_GIC_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* The base address of the GIC registers */
 extern void __iomem *mips_gic_base;

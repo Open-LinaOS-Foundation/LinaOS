@@ -2,7 +2,7 @@
 #if !defined(_TRACE_HANDLE_EXIT_ARM64_KVM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HANDLE_EXIT_ARM64_KVM_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "sys_regs.h"
 
 #undef TRACE_SYSTEM

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/hfsplus_fs.h
+ *  linaos/include/linaos/hfsplus_fs.h
  *
  * Copyright (C) 1999
  * Brad Boyer (flar@pants.nu)
@@ -17,10 +17,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/mutex.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
+#include <linaos/fs.h>
+#include <linaos/mutex.h>
+#include <linaos/buffer_head.h>
+#include <linaos/blkdev.h>
 #include "hfsplus_raw.h"
 
 #define DBG_BNODE_REFS	0x00000001
@@ -530,7 +530,7 @@ int hfsplus_read_wrapper(struct super_block *sb);
  * time helpers: convert between 1904-base and 1970-base timestamps
  *
  * HFS+ implementations are highly inconsistent, this one matches the
- * traditional behavior of 64-bit Linux, giving the most useful
+ * traditional behavior of 64-bit LinaOS, giving the most useful
  * time range between 1970 and 2106, by treating any on-disk timestamp
  * under HFSPLUS_UTC_OFFSET (Jan 1 1970) as a time between 2040 and 2106.
  */

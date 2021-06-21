@@ -5,7 +5,7 @@
  *    Copyright (C) 2010 Alexander Graf (agraf@suse.de)
  */
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/mmu.h>

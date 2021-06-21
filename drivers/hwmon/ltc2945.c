@@ -5,15 +5,15 @@
  * Copyright (c) 2014 Guenter Roeck
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
+#include <linaos/regmap.h>
 
 /* chip registers */
 #define LTC2945_CONTROL			0x00
@@ -483,6 +483,6 @@ static struct i2c_driver ltc2945_driver = {
 
 module_i2c_driver(ltc2945_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("LTC2945 driver");
 MODULE_LICENSE("GPL");

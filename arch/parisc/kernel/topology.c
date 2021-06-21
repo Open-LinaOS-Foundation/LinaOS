@@ -10,9 +10,9 @@
  * for more details.
  */
 
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/sched/topology.h>
 
 #include <asm/topology.h>
 

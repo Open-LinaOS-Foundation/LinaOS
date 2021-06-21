@@ -7,9 +7,9 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 
 #include "pcm186x.h"
 

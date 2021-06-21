@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/file.c
+ *  linaos/fs/file.c
  *
  *  Copyright (C) 1998-1999, Stephen Tweedie and Bill Hawes
  *
  *  Manage the dynamic fd arrays in the process files_struct.
  */
 
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/close_range.h>
+#include <linaos/syscalls.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/bitops.h>
+#include <linaos/spinlock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/close_range.h>
 #include <net/sock.h>
 
 #include "internal.h"

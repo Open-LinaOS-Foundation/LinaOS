@@ -55,7 +55,7 @@ Firmware setups following stuff before kernel boots
 Drivers
 =======
 
-Linux kernel will have multiple drivers registering to different PF and VFs
+LinaOS kernel will have multiple drivers registering to different PF and VFs
 of RVU. Wrt networking there will be 3 flavours of drivers.
 
 Admin Function driver

@@ -6,23 +6,23 @@
 
 #define pr_fmt(fmt)    "iommu: " fmt
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/iommu.h>
-#include <linux/idr.h>
-#include <linux/notifier.h>
-#include <linux/err.h>
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/property.h>
-#include <linux/fsl/mc.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/bug.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/iommu.h>
+#include <linaos/idr.h>
+#include <linaos/notifier.h>
+#include <linaos/err.h>
+#include <linaos/pci.h>
+#include <linaos/bitops.h>
+#include <linaos/property.h>
+#include <linaos/fsl/mc.h>
+#include <linaos/module.h>
 #include <trace/events/iommu.h>
 
 static struct kset *iommu_group_kset;
@@ -1058,7 +1058,7 @@ EXPORT_SYMBOL_GPL(iommu_group_put);
  * @nb: notifier block to signal
  *
  * This function allows iommu group users to track changes in a group.
- * See include/linux/iommu.h for actions sent via this notifier.  Caller
+ * See include/linaos/iommu.h for actions sent via this notifier.  Caller
  * should hold a reference to the group throughout notifier registration.
  */
 int iommu_group_register_notifier(struct iommu_group *group,

@@ -14,7 +14,7 @@
 #include "util/tool.h"
 #include "util/callchain.h"
 #include "util/time-utils.h"
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #include <subcmd/pager.h>
 #include <subcmd/parse-options.h>
@@ -25,16 +25,16 @@
 #include "util/debug.h"
 #include "util/string2.h"
 
-#include <linux/kernel.h>
-#include <linux/rbtree.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/rbtree.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include <errno.h>
 #include <inttypes.h>
 #include <locale.h>
 #include <regex.h>
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 static int	kmem_slab;
 static int	kmem_page;

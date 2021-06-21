@@ -4,20 +4,20 @@
  */
 
 /*
- * Logitech ADI joystick family driver for Linux
+ * Logitech ADI joystick family driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/gameport.h>
+#include <linaos/jiffies.h>
 
 #define DRIVER_DESC	"Logitech ADI joystick family driver"
 

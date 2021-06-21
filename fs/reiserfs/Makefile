@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux reiser-filesystem routines.
+# Makefile for the linaos reiser-filesystem routines.
 #
 
 obj-$(CONFIG_REISERFS_FS) += reiserfs.o

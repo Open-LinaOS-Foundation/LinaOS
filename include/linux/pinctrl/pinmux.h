@@ -11,9 +11,9 @@
 #ifndef __LINUX_PINCTRL_PINMUX_H
 #define __LINUX_PINCTRL_PINMUX_H
 
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/list.h>
+#include <linaos/seq_file.h>
+#include <linaos/pinctrl/pinctrl.h>
 
 struct pinctrl_dev;
 

@@ -9,12 +9,12 @@
  */
 #define pr_fmt(fmt) "intc: " fmt
 
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/list.h>
+#include <linaos/radix-tree.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
 #include "internals.h"
 
 static struct intc_map_entry intc_irq_xlate[INTC_NR_IRQS];

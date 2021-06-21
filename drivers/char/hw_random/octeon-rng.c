@@ -9,12 +9,12 @@
  * Copyright (C) 2009 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/hw_random.h>
+#include <linaos/io.h>
+#include <linaos/gfp.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-rnm-defs.h>

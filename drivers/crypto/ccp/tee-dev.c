@@ -8,13 +8,13 @@
  * Copyright (C) 2019,2021 Advanced Micro Devices, Inc.
  */
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/psp-sev.h>
-#include <linux/psp-tee.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/gfp.h>
+#include <linaos/psp-sev.h>
+#include <linaos/psp-tee.h>
 
 #include "psp-dev.h"
 #include "tee-dev.h"

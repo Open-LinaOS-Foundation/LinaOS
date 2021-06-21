@@ -8,10 +8,10 @@
  * SHA224 Support Copyright 2007 Intel Corporation <jonathan.lynch@intel.com>
  */
 #include <crypto/internal/hash.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 #include <crypto/sha2.h>
 #include <crypto/sha256_base.h>
 #include <asm/byteorder.h>

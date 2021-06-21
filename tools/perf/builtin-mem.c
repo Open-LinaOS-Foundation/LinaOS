@@ -18,7 +18,7 @@
 #include "util/dso.h"
 #include "util/map.h"
 #include "util/symbol.h"
-#include <linux/err.h>
+#include <linaos/err.h>
 
 #define MEM_OPERATION_LOAD	0x1
 #define MEM_OPERATION_STORE	0x2

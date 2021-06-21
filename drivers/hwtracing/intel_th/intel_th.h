@@ -8,7 +8,7 @@
 #ifndef __INTEL_TH_H__
 #define __INTEL_TH_H__
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 
 /* intel_th_device device types */
 enum {

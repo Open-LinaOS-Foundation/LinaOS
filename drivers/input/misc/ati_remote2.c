@@ -3,12 +3,12 @@
  * ati_remote2 - ATI/Philips USB RF remote driver
  *
  * Copyright (C) 2005-2008 Ville Syrjala <syrjala@sci.fi>
- * Copyright (C) 2007-2008 Peter Stokes <linux@dadeos.co.uk>
+ * Copyright (C) 2007-2008 Peter Stokes <linaos@dadeos.co.uk>
  */
 
-#include <linux/usb/input.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/usb/input.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #define DRIVER_DESC    "ATI/Philips USB RF remote driver"
 

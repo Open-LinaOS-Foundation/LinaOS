@@ -15,12 +15,12 @@
  * frame contact the architecture maintainers.
  */
 
-#include <linux/linkage.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/debug_locks.h>
-#include <linux/export.h>
+#include <linaos/linkage.h>
+#include <linaos/preempt.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/debug_locks.h>
+#include <linaos/export.h>
 
 #ifdef CONFIG_MMIOWB
 #ifndef arch_mmiowb_state
@@ -37,8 +37,8 @@ EXPORT_PER_CPU_SYMBOL(__mmiowb_state);
 #if !defined(CONFIG_GENERIC_LOCKBREAK) || defined(CONFIG_DEBUG_LOCK_ALLOC)
 /*
  * The __lock_function inlines are taken from
- * spinlock : include/linux/spinlock_api_smp.h
- * rwlock   : include/linux/rwlock_api_smp.h
+ * spinlock : include/linaos/spinlock_api_smp.h
+ * rwlock   : include/linaos/rwlock_api_smp.h
  */
 #else
 

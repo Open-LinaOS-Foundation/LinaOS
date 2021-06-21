@@ -7,20 +7,20 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinaos.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/dmi.h>
+#include <linaos/fb.h>
+#include <linaos/acpi.h>
 
 #include "asus-wmi.h"
 
@@ -197,7 +197,7 @@ static int eeepc_wmi_probe(struct platform_device *pdev)
 		pr_warn("Found legacy ATKD device (%s)\n", EEEPC_ACPI_HID);
 		pr_warn("WMI device present, but legacy ATKD device is also "
 			"present and enabled\n");
-		pr_warn("You probably booted with acpi_osi=\"Linux\" or "
+		pr_warn("You probably booted with acpi_osi=\"LinaOS\" or "
 			"acpi_osi=\"!Windows 2009\"\n");
 		pr_warn("Can't load eeepc-wmi, use default acpi_osi "
 			"(preferred) or eeepc-laptop\n");

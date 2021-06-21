@@ -7,10 +7,10 @@ Summary of CDROM ioctl calls
 November, 2004
 
 This document attempts to describe the ioctl(2) calls supported by
-the CDROM layer.  These are by-and-large implemented (as of Linux 2.6)
+the CDROM layer.  These are by-and-large implemented (as of LinaOS 2.6)
 in drivers/cdrom/cdrom.c and drivers/block/scsi_ioctl.c
 
-ioctl values are listed in <linux/cdrom.h>.  As of this writing, they
+ioctl values are listed in <linaos/cdrom.h>.  As of this writing, they
 are as follows:
 
 	======================	===============================================
@@ -88,7 +88,7 @@ General:
 	Individual drivers may return error codes not listed here.
 
 	Unless otherwise specified, all data structures and constants
-	are defined in <linux/cdrom.h>
+	are defined in <linaos/cdrom.h>
 
 ------------------------------------------------------------------------------
 
@@ -464,7 +464,7 @@ CDROMREADRAW
 	  - ENOMEM	out of memory
 
 	notes:
-		- As of 2.6.8.1, comments in <linux/cdrom.h> indicate that this
+		- As of 2.6.8.1, comments in <linaos/cdrom.h> indicate that this
 		  ioctl accepts a cdrom_read structure, but actual source code
 		  reads a cdrom_msf structure and writes a buffer of data to
 		  the same address.
@@ -882,7 +882,7 @@ CDROM_DRIVE_STATUS
 	outputs:
 		Ioctl return value will be one of the following values
 
-	  from <linux/cdrom.h>:
+	  from <linaos/cdrom.h>:
 
 	    =================== ==========================
 	    CDS_NO_INFO		Information not available.
@@ -917,7 +917,7 @@ CDROM_DISC_STATUS
 	outputs:
 		Ioctl return value will be one of the following values
 
-	  from <linux/cdrom.h>:
+	  from <linaos/cdrom.h>:
 
 	    - CDS_NO_INFO
 	    - CDS_AUDIO
@@ -1009,7 +1009,7 @@ CDROM_LOCKDOOR
 		all CD drives will be locked or unlocked together.  This is
 		probably a bug.
 
-		The EDRIVE_CANT_DO_THIS value is defined in <linux/cdrom.h>
+		The EDRIVE_CANT_DO_THIS value is defined in <linaos/cdrom.h>
 		and is currently (2.6.8.1) the same as EOPNOTSUPP
 
 
@@ -1136,7 +1136,7 @@ DVD_AUTH			Authentication
 	  ioctl(fd, DVD_AUTH, &ai);
 
 	inputs:
-		dvd_authinfo structure.  See <linux/cdrom.h>
+		dvd_authinfo structure.  See <linaos/cdrom.h>
 
 
 	outputs:

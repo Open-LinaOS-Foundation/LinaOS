@@ -8,10 +8,10 @@
  *      http://gcc.gnu.org/onlinedocs/gcc-4.1.0/gcc/Atomic-Builtins.html
  *
  * AUTHOR
- *      Darren Hart <dvhart@linux.intel.com>
+ *      Darren Hart <dvhart@linaos.intel.com>
  *
  * HISTORY
- *      2009-Nov-17: Initial version by Darren Hart <dvhart@linux.intel.com>
+ *      2009-Nov-17: Initial version by Darren Hart <dvhart@linaos.intel.com>
  *
  *****************************************************************************/
 

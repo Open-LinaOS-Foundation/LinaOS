@@ -8,7 +8,7 @@
 #ifndef PTP_IDTCLOCKMATRIX_H
 #define PTP_IDTCLOCKMATRIX_H
 
-#include <linux/ktime.h>
+#include <linaos/ktime.h>
 
 #include "idt8a340_reg.h"
 

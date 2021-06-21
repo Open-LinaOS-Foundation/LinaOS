@@ -21,7 +21,7 @@ Users:		Kexec
 
 What:		/sys/firmware/efi/systab
 Date:		April 2005
-Contact:	linux-efi@vger.kernel.org
+Contact:	linaos-efi@vger.kernel.org
 Description:	Displays the physical addresses of all EFI Configuration
 		Tables found via the EFI System Table. The order in
 		which the tables are printed forms an ABI and newer
@@ -31,7 +31,7 @@ Users:		dmidecode
 
 What:		/sys/firmware/efi/tables/rci2
 Date:		July 2019
-Contact:	Narendra K <Narendra.K@dell.com>, linux-bugs@dell.com
+Contact:	Narendra K <Narendra.K@dell.com>, linaos-bugs@dell.com
 Description:	Displays the content of the Runtime Configuration Interface
 		Table version 2 on Dell EMC PowerEdge systems in binary format
 Users:		It is used by Dell EMC OpenManage Server Administrator tool to

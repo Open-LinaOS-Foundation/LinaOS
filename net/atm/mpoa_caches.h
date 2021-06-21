@@ -2,13 +2,13 @@
 #ifndef MPOA_CACHES_H
 #define MPOA_CACHES_H
 
-#include <linux/time64.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/atmmpc.h>
-#include <linux/refcount.h>
+#include <linaos/time64.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/atmmpc.h>
+#include <linaos/refcount.h>
 
 struct mpoa_client;
 

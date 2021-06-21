@@ -38,14 +38,14 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/clnt.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs4.h>
+#include <linaos/nfs_fs.h>
 #include "nfs4_fs.h"
 #include "delegation.h"
 

@@ -2,8 +2,8 @@
 #ifndef SLAB_H
 #define SLAB_H
 
-#include <linux/types.h>
-#include <linux/gfp.h>
+#include <linaos/types.h>
+#include <linaos/gfp.h>
 
 #define SLAB_HWCACHE_ALIGN 1
 #define SLAB_PANIC 2

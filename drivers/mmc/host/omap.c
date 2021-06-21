@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/omap.c
+ *  linaos/drivers/mmc/host/omap.c
  *
  *  Copyright (C) 2004 Nokia Corporation
  *  Written by Tuukka Tikkanen and Juha Yrjölä<juha.yrjola@nokia.com>
@@ -8,25 +8,25 @@
  *  Other hacks (DMA, SD, etc) by David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/of.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/platform_data/mmc-omap.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/of.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/clk.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/platform_data/mmc-omap.h>
 
 
 #define	OMAP_MMC_REG_CMD	0x00

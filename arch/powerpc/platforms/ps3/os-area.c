@@ -6,16 +6,16 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/workqueue.h>
+#include <linaos/fs.h>
+#include <linaos/syscalls.h>
+#include <linaos/export.h>
+#include <linaos/ctype.h>
+#include <linaos/memblock.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #include <asm/prom.h>
 
@@ -200,13 +200,13 @@ static struct saved_params {
 } saved_params;
 
 static struct property property_rtc_diff = {
-	.name = "linux,rtc_diff",
+	.name = "linaos,rtc_diff",
 	.length = sizeof(saved_params.rtc_diff),
 	.value = &saved_params.rtc_diff,
 };
 
 static struct property property_av_multi_out = {
-	.name = "linux,av_multi_out",
+	.name = "linaos,av_multi_out",
 	.length = sizeof(saved_params.av_multi_out),
 	.value = &saved_params.av_multi_out,
 };

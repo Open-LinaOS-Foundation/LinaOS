@@ -7,13 +7,13 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/iio/iio.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/iio/iio.h>
+#include <linaos/regmap.h>
 
-#include <linux/iio/common/st_sensors_i2c.h>
+#include <linaos/iio/common/st_sensors_i2c.h>
 
 
 #define ST_SENSORS_I2C_MULTIREAD	0x80

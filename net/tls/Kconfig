@@ -34,6 +34,6 @@ config TLS_TOE
 	default n
 	help
 	Enable kernel support for legacy HW offload of the TLS protocol,
-	which is incompatible with the Linux networking stack semantics.
+	which is incompatible with the LinaOS networking stack semantics.
 
 	If unsure, say N.

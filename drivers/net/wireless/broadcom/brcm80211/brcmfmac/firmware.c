@@ -3,13 +3,13 @@
  * Copyright (c) 2013 Broadcom Corporation
  */
 
-#include <linux/efi.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bcm47xx_nvram.h>
+#include <linaos/efi.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/bcm47xx_nvram.h>
 
 #include "debug.h"
 #include "firmware.h"

@@ -6,9 +6,9 @@
 
 #define pr_fmt(fmt) "X25: " fmt
 
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/if_arp.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <net/x25.h>
 
 LIST_HEAD(x25_forward_list);

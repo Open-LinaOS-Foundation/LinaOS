@@ -4,16 +4,16 @@
  * Copyright (c) 2014, Intel Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/hid-sensor-hub.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/hid-sensor-hub.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
 #include "../common/hid-sensors/hid-sensor-trigger.h"
 
 struct dev_rot_state {
@@ -371,5 +371,5 @@ static struct platform_driver hid_dev_rot_platform_driver = {
 module_platform_driver(hid_dev_rot_platform_driver);
 
 MODULE_DESCRIPTION("HID Sensor Device Rotation");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_LICENSE("GPL");

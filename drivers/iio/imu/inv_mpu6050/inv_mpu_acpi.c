@@ -6,10 +6,10 @@
 
 #ifdef CONFIG_ACPI
 
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/i2c.h>
+#include <linaos/dmi.h>
+#include <linaos/acpi.h>
 #include "inv_mpu_iio.h"
 
 enum inv_mpu_product_name {

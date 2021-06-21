@@ -6,9 +6,9 @@
 #ifndef _ASM_ARC_SYSCALLS_H
 #define _ASM_ARC_SYSCALLS_H  1
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
+#include <linaos/types.h>
 
 int sys_clone_wrapper(int, int, int, int, int);
 int sys_clone3_wrapper(void *, size_t);

@@ -31,14 +31,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/in.h>
+#include <linaos/kernel.h>
+#include <linaos/ethtool.h>
+#include <linaos/netdevice.h>
+#include <linaos/mlx4/driver.h>
+#include <linaos/mlx4/device.h>
+#include <linaos/in.h>
 #include <net/ip.h>
-#include <linux/bitmap.h>
+#include <linaos/bitmap.h>
 
 #include "mlx4_en.h"
 #include "en_port.h"

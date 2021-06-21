@@ -3,8 +3,8 @@
  *
  * Copyright IBM Corp. 2018
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Halil Pasic <pasic@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@linaos.vnet.ibm.com>
+ *            Halil Pasic <pasic@linaos.vnet.ibm.com>
  */
 
 #include "cio.h"
@@ -15,7 +15,7 @@
 #if !defined(_VFIO_CCW_TRACE_) || defined(TRACE_HEADER_MULTI_READ)
 #define _VFIO_CCW_TRACE_
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(vfio_ccw_chp_event,
 	TP_PROTO(struct subchannel_id schid,

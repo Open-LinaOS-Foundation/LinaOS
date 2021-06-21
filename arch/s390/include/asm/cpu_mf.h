@@ -3,13 +3,13 @@
  * CPU-measurement facilities
  *
  *  Copyright IBM Corp. 2012, 2018
- *  Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
- *	       Jan Glauber <jang@linux.vnet.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
+ *	       Jan Glauber <jang@linaos.vnet.ibm.com>
  */
 #ifndef _ASM_S390_CPU_MF_H
 #define _ASM_S390_CPU_MF_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/facility.h>
 
 asm(".include \"asm/cpu_mf-insn.h\"\n");
@@ -273,7 +273,7 @@ static inline int lsctl(struct hws_lsctl_request_block *req)
 
 /* Sampling control helper functions */
 
-#include <linux/time.h>
+#include <linaos/time.h>
 
 static inline unsigned long freq_to_sample_rate(struct hws_qsi_info_block *qsi,
 						unsigned long freq)

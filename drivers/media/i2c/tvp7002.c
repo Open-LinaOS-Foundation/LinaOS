@@ -11,14 +11,14 @@
  * and the TVP7002 driver in the TI LSP 2.10.00.14. Revisions by
  * Muralidharan Karicheri and Snehaprabha Narnakaje (TI).
  */
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/v4l2-dv-timings.h>
 #include <media/i2c/tvp7002.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-device.h>

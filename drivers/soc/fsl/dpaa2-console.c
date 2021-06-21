@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) "dpaa2-console: " fmt
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/miscdevice.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/io.h>
 
 /* MC firmware base low/high registers indexes */
 #define MCFBALR_OFFSET 0

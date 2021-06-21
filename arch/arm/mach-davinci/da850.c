@@ -12,22 +12,22 @@
  * or implied.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/davinci.h>
-#include <linux/clkdev.h>
-#include <linux/cpufreq.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqchip/irq-davinci-cp-intc.h>
-#include <linux/mfd/da8xx-cfgchip.h>
-#include <linux/platform_data/clk-da8xx-cfgchip.h>
-#include <linux/platform_data/clk-davinci-pll.h>
-#include <linux/platform_data/davinci-cpufreq.h>
-#include <linux/platform_data/gpio-davinci.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/davinci.h>
+#include <linaos/clkdev.h>
+#include <linaos/cpufreq.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irqchip/irq-davinci-cp-intc.h>
+#include <linaos/mfd/da8xx-cfgchip.h>
+#include <linaos/platform_data/clk-da8xx-cfgchip.h>
+#include <linaos/platform_data/clk-davinci-pll.h>
+#include <linaos/platform_data/davinci-cpufreq.h>
+#include <linaos/platform_data/gpio-davinci.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
 
 #include <asm/mach/map.h>
 

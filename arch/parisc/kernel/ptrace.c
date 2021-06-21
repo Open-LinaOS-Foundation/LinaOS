@@ -2,30 +2,30 @@
 /*
  * Kernel support for the ptrace() and syscall tracing interfaces.
  *
- * Copyright (C) 2000 Hewlett-Packard Co, Linuxcare Inc.
+ * Copyright (C) 2000 Hewlett-Packard Co, LinaOScare Inc.
  * Copyright (C) 2000 Matthew Wilcox <matthew@wil.cx>
  * Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
  * Copyright (C) 2008-2016 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/elf.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/user.h>
-#include <linux/personality.h>
-#include <linux/regset.h>
-#include <linux/security.h>
-#include <linux/seccomp.h>
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/audit.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/elf.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/tracehook.h>
+#include <linaos/user.h>
+#include <linaos/personality.h>
+#include <linaos/regset.h>
+#include <linaos/security.h>
+#include <linaos/seccomp.h>
+#include <linaos/compat.h>
+#include <linaos/signal.h>
+#include <linaos/audit.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>
 #include <asm/asm-offsets.h>
 

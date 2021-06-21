@@ -14,19 +14,19 @@
  * (find more info at www.hackndev.com)
  */
 
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/pda_power.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio.h>
-#include <linux/wm97xx.h>
-#include <linux/power_supply.h>
-#include <linux/platform_data/i2c-gpio.h>
-#include <linux/gpio/machine.h>
+#include <linaos/platform_device.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/pda_power.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/gpio.h>
+#include <linaos/wm97xx.h>
+#include <linaos/power_supply.h>
+#include <linaos/platform_data/i2c-gpio.h>
+#include <linaos/gpio/machine.h>
 
 #include <asm/mach-types.h>
 #include <asm/suspend.h>
@@ -36,16 +36,16 @@
 #include "pxa27x.h"
 #include <mach/audio.h>
 #include "palmz72.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 #include "udc.h"
-#include <linux/platform_data/asoc-palm27x.h>
+#include <linaos/platform_data/asoc-palm27x.h>
 #include "palm27x.h"
 
 #include "pm.h"
-#include <linux/platform_data/media/camera-pxa.h>
+#include <linaos/platform_data/media/camera-pxa.h>
 
 #include "generic.h"
 #include "devices.h"
@@ -209,7 +209,7 @@ static inline void palmz72_leds_init(void) {}
 /* We have some black magic here
  * PalmOS ROM on recover expects special struct physical address
  * to be transferred via PSPR. Using this struct PalmOS restores
- * its state after sleep. As for Linux, we need to setup it the
+ * its state after sleep. As for LinaOS, we need to setup it the
  * same way. More than that, PalmOS ROM changes some values in memory.
  * For now only one location is found, which needs special treatment.
  * Thanks to Alex Osborne, Andrzej Zaborowski, and lots of other people

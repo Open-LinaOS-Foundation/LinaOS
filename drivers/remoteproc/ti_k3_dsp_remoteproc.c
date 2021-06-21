@@ -6,16 +6,16 @@
  *	Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/omap-mailbox.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/omap-mailbox.h>
+#include <linaos/platform_device.h>
+#include <linaos/remoteproc.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
 
 #include "omap_remoteproc.h"
 #include "remoteproc_internal.h"

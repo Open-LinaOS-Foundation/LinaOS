@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Intel specific MCE features.
- * Copyright 2004 Zwane Mwaikambo <zwane@linuxpower.ca>
+ * Copyright 2004 Zwane Mwaikambo <zwane@linaospower.ca>
  * Copyright (C) 2008, 2009 Intel Corporation
  * Author: Andi Kleen
  */
 
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
+#include <linaos/gfp.h>
+#include <linaos/interrupt.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/cpumask.h>
 #include <asm/apic.h>
 #include <asm/cpufeature.h>
 #include <asm/intel-family.h>

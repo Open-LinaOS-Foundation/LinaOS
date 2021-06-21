@@ -7,7 +7,7 @@
  * Author: Chunfeng Yun <chunfeng.yun@mediatek.com>
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "mtu3.h"
 #include "mtu3_dr.h"

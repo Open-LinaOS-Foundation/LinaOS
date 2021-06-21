@@ -4,15 +4,15 @@
  *
  */
 
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/idr.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
 
-/* move to <linux/fieldbus_dev.h> when taking this out of staging */
+/* move to <linaos/fieldbus_dev.h> when taking this out of staging */
 #include "fieldbus_dev.h"
 
 /* Maximum number of fieldbus devices */

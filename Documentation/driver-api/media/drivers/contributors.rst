@@ -16,7 +16,7 @@ Thanks go to the following people for patches and contributions:
 
 - Christian Theiss
 
-  - for his work on the initial Linux DVB driver
+  - for his work on the initial LinaOS DVB driver
 
 - Marcus Metzler <mocm@metzlerbros.de> and
   Ralph Metzler <rjkm@metzlerbros.de>
@@ -29,7 +29,7 @@ Thanks go to the following people for patches and contributions:
 
 - Diego Picciani <d.picciani@novacomp.it>
 
-  - for CyberLogin for Linux which allows logging onto EON
+  - for CyberLogin for LinaOS which allows logging onto EON
     (in case you are wondering where CyberLogin is, EON changed its login
     procedure and CyberLogin is no longer used.)
 
@@ -49,7 +49,7 @@ Thanks go to the following people for patches and contributions:
 
   - for his LIRC infrared handler
 
-- Andreas Oberritter <obi@linuxtv.org>,
+- Andreas Oberritter <obi@linaostv.org>,
   Dennis Noermann <dennis.noermann@noernet.de>,
   Felix Domke <tmbinc@elitedvb.net>,
   Florian Schirmer <jolt@tuxbox.org>,
@@ -109,7 +109,7 @@ Thanks go to the following people for patches and contributions:
 
   - for the lgdt330x frontend driver, and various bugfixes
 
-- Michael Krufky <mkrufky@linuxtv.org>
+- Michael Krufky <mkrufky@linaostv.org>
 
   - for maintaining v4l/dvb inter-tree dependencies
 

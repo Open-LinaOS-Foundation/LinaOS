@@ -8,7 +8,7 @@
  */
 
 #include <crypto/arc4.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 int arc4_setkey(struct arc4_ctx *ctx, const u8 *in_key, unsigned int key_len)
 {

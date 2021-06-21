@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/lockd/clntproc.c
+ * linaos/fs/lockd/clntproc.c
  *
  * RPC procedures for the client side NLM implementation
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/nfs_fs.h>
-#include <linux/utsname.h>
-#include <linux/freezer.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/utsname.h>
+#include <linaos/freezer.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/lockd/lockd.h>
 
 #define NLMDBG_FACILITY		NLMDBG_CLIENT
 #define NLMCLNT_GRACE_WAIT	(5*HZ)
@@ -643,7 +643,7 @@ nlmclnt_reclaim(struct nlm_host *host, struct file_lock *fl,
 	 * FIXME: This is a serious failure. We can
 	 *
 	 *  a.	Ignore the problem
-	 *  b.	Send the owning process some signal (Linux doesn't have
+	 *  b.	Send the owning process some signal (LinaOS doesn't have
 	 *	SIGLOST, though...)
 	 *  c.	Retry the operation
 	 *

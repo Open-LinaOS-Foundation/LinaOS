@@ -15,9 +15,9 @@
 #include <unistd.h>
 #include <errno.h>
 #include <stdbool.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
 #include <internal/lib.h> // page_size
 
 #include "trace-event.h"

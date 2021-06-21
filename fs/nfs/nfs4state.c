@@ -38,19 +38,19 @@
  * subsequent patch.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/nfs_fs.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/ratelimit.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/ratelimit.h>
+#include <linaos/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/jiffies.h>
 
-#include <linux/sunrpc/clnt.h>
+#include <linaos/sunrpc/clnt.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

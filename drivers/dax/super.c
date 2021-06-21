@@ -2,19 +2,19 @@
 /*
  * Copyright(c) 2017 Intel Corporation. All rights reserved.
  */
-#include <linux/pagemap.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/magic.h>
-#include <linux/genhd.h>
-#include <linux/pfn_t.h>
-#include <linux/cdev.h>
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/uio.h>
-#include <linux/dax.h>
-#include <linux/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/magic.h>
+#include <linaos/genhd.h>
+#include <linaos/pfn_t.h>
+#include <linaos/cdev.h>
+#include <linaos/hash.h>
+#include <linaos/slab.h>
+#include <linaos/uio.h>
+#include <linaos/dax.h>
+#include <linaos/fs.h>
 #include "dax-private.h"
 
 static dev_t dax_devt;
@@ -41,7 +41,7 @@ void dax_read_unlock(int id)
 EXPORT_SYMBOL_GPL(dax_read_unlock);
 
 #ifdef CONFIG_BLOCK
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 
 int bdev_dax_pgoff(struct block_device *bdev, sector_t sector, size_t size,
 		pgoff_t *pgoff)

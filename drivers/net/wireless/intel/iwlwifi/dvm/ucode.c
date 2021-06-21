@@ -5,12 +5,12 @@
  * Copyright(c) 2015 Intel Deutschland GmbH
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "iwl-io.h"
 #include "iwl-agn-hw.h"

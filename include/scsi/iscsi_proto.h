@@ -10,7 +10,7 @@
 #ifndef ISCSI_PROTO_H
 #define ISCSI_PROTO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/scsi.h>
 
 #define ISCSI_DRAFT20_VERSION	0x00

@@ -67,7 +67,7 @@ Usage
 To make use of this facility, one of the following functions that are
 implemented in the module can be called after doing::
 
-	#include <linux/dns_resolver.h>
+	#include <linaos/dns_resolver.h>
 
      ::
 

@@ -31,7 +31,7 @@
  *
  */
 
-#include <linux/mlx5/device.h>
+#include <linaos/mlx5/device.h>
 
 #include "accel/ipsec.h"
 #include "mlx5_core.h"

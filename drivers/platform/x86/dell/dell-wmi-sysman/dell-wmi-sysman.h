@@ -7,11 +7,11 @@
 #ifndef _DELL_WMI_BIOS_ATTR_H_
 #define _DELL_WMI_BIOS_ATTR_H_
 
-#include <linux/wmi.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
+#include <linaos/wmi.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/capability.h>
 
 #define DRIVER_NAME					"dell-wmi-sysman"
 #define MAX_BUFF  512

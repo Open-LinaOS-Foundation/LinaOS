@@ -10,7 +10,7 @@
 #ifndef _S390_IO_H
 #define _S390_IO_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/page.h>
 #include <asm/pgtable.h>
 #include <asm/pci_io.h>

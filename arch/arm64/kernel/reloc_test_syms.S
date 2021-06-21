@@ -3,7 +3,7 @@
  * Copyright (C) 2017 Linaro, Ltd. <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 SYM_FUNC_START(absolute_data64)
 	ldr	x0, 0f

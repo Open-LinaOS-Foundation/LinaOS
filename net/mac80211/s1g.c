@@ -3,7 +3,7 @@
  * S1G handling
  * Copyright(c) 2020 Adapt-IP
  */
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 #include <net/mac80211.h>
 #include "ieee80211_i.h"
 

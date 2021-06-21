@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/befs/linuxvfs.c
+ * linaos/fs/befs/linaosvfs.c
  *
  * Copyright (C) 2001 Will Dyson <will_dyson@pobox.com
  *
@@ -8,21 +8,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/stat.h>
-#include <linux/nls.h>
-#include <linux/buffer_head.h>
-#include <linux/vfs.h>
-#include <linux/parser.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/exportfs.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/errno.h>
+#include <linaos/stat.h>
+#include <linaos/nls.h>
+#include <linaos/buffer_head.h>
+#include <linaos/vfs.h>
+#include <linaos/parser.h>
+#include <linaos/namei.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/exportfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/blkdev.h>
 
 #include "befs.h"
 #include "btree.h"
@@ -841,7 +841,7 @@ befs_fill_super(struct super_block *sb, void *data, int silent)
 	 * Set dummy blocksize to read super block.
 	 * Will be set to real fs blocksize later.
 	 *
-	 * Linux 2.4.10 and later refuse to read blocks smaller than
+	 * LinaOS 2.4.10 and later refuse to read blocks smaller than
 	 * the logical block size for the device. But we also need to read at
 	 * least 1k to get the second 512 bytes of the volume.
 	 */

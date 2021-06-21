@@ -6,7 +6,7 @@
 #ifndef _COUNTER_ENUM_H_
 #define _COUNTER_ENUM_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct counter_device;
 struct counter_signal;

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/tracehook.h>
+#include <linaos/signal.h>
+#include <linaos/uaccess.h>
+#include <linaos/syscalls.h>
+#include <linaos/tracehook.h>
 
 #include <asm/traps.h>
 #include <asm/ucontext.h>
@@ -41,7 +41,7 @@ static int save_fpu_state(struct sigcontext __user *sc)
 struct rt_sigframe {
 	/*
 	 * pad[3] is compatible with the same struct defined in
-	 * gcc/libgcc/config/csky/linux-unwind.h
+	 * gcc/libgcc/config/csky/linaos-unwind.h
 	 */
 	int pad[3];
 	struct siginfo info;

@@ -9,8 +9,8 @@
 #include "pwrseqcmd.h"
 
 #include "btcoexist/rtl_btc.h"
-#include <linux/firmware.h>
-#include <linux/export.h>
+#include <linaos/firmware.h>
+#include <linaos/export.h>
 #include <net/cfg80211.h>
 
 u8 channel5g[CHANNEL_MAX_NUMBER_5G] = {

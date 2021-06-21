@@ -4,8 +4,8 @@
 #ifndef __CCS_LIMITS_H__
 #define __CCS_LIMITS_H__
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/types.h>
 
 struct ccs_limit {
 	u32 reg;

@@ -2,15 +2,15 @@
 #ifndef BLKTRACE_H
 #define BLKTRACE_H
 
-#include <linux/blkdev.h>
-#include <linux/relay.h>
-#include <linux/compat.h>
-#include <uapi/linux/blktrace_api.h>
-#include <linux/list.h>
+#include <linaos/blkdev.h>
+#include <linaos/relay.h>
+#include <linaos/compat.h>
+#include <uapi/linaos/blktrace_api.h>
+#include <linaos/list.h>
 
 #if defined(CONFIG_BLK_DEV_IO_TRACE)
 
-#include <linux/sysfs.h>
+#include <linaos/sysfs.h>
 
 struct blk_trace {
 	int trace_state;

@@ -8,15 +8,15 @@
  * which provide mailbox interface for power management usage.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <asm/intel_punit_ipc.h>
 

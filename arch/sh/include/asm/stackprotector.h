@@ -2,8 +2,8 @@
 #ifndef __ASM_SH_STACKPROTECTOR_H
 #define __ASM_SH_STACKPROTECTOR_H
 
-#include <linux/random.h>
-#include <linux/version.h>
+#include <linaos/random.h>
+#include <linaos/version.h>
 
 extern unsigned long __stack_chk_guard;
 

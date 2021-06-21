@@ -14,10 +14,10 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/signal.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/signal.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 
 #include <asm/prom.h>
 

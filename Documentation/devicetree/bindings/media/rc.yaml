@@ -14,7 +14,7 @@ properties:
   $nodename:
     pattern: "^ir(@[a-f0-9]+)?$"
 
-  linux,rc-map-name:
+  linaos,rc-map-name:
     description:
       Specifies the scancode/key mapping table defined in-kernel for
       the remote controller.

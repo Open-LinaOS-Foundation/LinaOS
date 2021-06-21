@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
@@ -8,7 +8,7 @@
 #ifndef __DPU_KMS_H__
 #define __DPU_KMS_H__
 
-#include <linux/interconnect.h>
+#include <linaos/interconnect.h>
 
 #include <drm/drm_drv.h>
 

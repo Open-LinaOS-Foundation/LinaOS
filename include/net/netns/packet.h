@@ -5,8 +5,8 @@
 #ifndef __NETNS_PACKET_H__
 #define __NETNS_PACKET_H__
 
-#include <linux/rculist.h>
-#include <linux/mutex.h>
+#include <linaos/rculist.h>
+#include <linaos/mutex.h>
 
 struct netns_packet {
 	struct mutex		sklist_lock;

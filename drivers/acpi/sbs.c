@@ -7,18 +7,18 @@
  *  Copyright (c) 2005 Rich Townsend <rhdt@bartol.udel.edu>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
 
-#include <linux/acpi.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linaos/acpi.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/delay.h>
+#include <linaos/power_supply.h>
+#include <linaos/platform_data/x86/apple.h>
 #include <acpi/battery.h>
 
 #include "sbshc.h"

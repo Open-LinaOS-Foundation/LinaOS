@@ -9,17 +9,17 @@
  * Harald Welte, Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/err.h>
 
-#include <linux/mfd/pcf50633/core.h>
+#include <linaos/mfd/pcf50633/core.h>
 
 #define PCF50633_REG_RTCSC	0x59 /* Second */
 #define PCF50633_REG_RTCMN	0x5a /* Minute */

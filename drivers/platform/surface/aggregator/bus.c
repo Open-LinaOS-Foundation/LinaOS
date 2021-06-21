@@ -5,11 +5,11 @@
  * Copyright (C) 2019-2020 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <linaos/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/device.h>
 
 #include "bus.h"
 #include "controller.h"

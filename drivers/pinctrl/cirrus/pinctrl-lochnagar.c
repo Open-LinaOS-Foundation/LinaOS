@@ -8,21 +8,21 @@
  * Author: Charles Keepax <ckeepax@opensource.cirrus.com>
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
-#include <linux/mfd/lochnagar.h>
-#include <linux/mfd/lochnagar1_regs.h>
-#include <linux/mfd/lochnagar2_regs.h>
+#include <linaos/mfd/lochnagar.h>
+#include <linaos/mfd/lochnagar1_regs.h>
+#include <linaos/mfd/lochnagar2_regs.h>
 
 #include <dt-bindings/pinctrl/lochnagar.h>
 

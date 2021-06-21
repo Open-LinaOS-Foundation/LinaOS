@@ -23,7 +23,7 @@
 #ifndef KFD_CRAT_H_INCLUDED
 #define KFD_CRAT_H_INCLUDED
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #pragma pack(1)
 

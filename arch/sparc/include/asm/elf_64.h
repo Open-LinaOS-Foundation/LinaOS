@@ -224,9 +224,9 @@ do {									\
 	NEW_AUX_ENT(AT_ADI_UEONADI, adi_state.caps.ue_on_adi);		\
 } while (0)
 
-struct linux_binprm;
+struct linaos_binprm;
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES	1
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+extern int arch_setup_additional_pages(struct linaos_binprm *bprm,
 					int uses_interp);
 #endif /* !(__ASM_SPARC64_ELF_H) */

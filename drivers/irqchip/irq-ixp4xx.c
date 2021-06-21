@@ -8,18 +8,18 @@
  * Copyright 2003-2004 (C) MontaVista, Software, Inc.
  * Copyright (C) Deepak Saxena <dsaxena@plexity.net>
  */
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/irq-ixp4xx.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/irq-ixp4xx.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpu.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>
@@ -209,7 +209,7 @@ struct irq_domain *ixp4xx_get_irq_domain(void)
 EXPORT_SYMBOL_GPL(ixp4xx_get_irq_domain);
 
 /*
- * This is the Linux IRQ to hwirq mapping table. This goes away when
+ * This is the LinaOS IRQ to hwirq mapping table. This goes away when
  * we have DT support as all IRQ resources are defined in the device
  * tree. It will register all the IRQs that are not used by the hierarchical
  * GPIO IRQ chip. The "holes" inbetween these IRQs will be requested by
@@ -341,7 +341,7 @@ void __init ixp4xx_irq_init(resource_size_t irqbase,
 	for (i = 0; i < nr_chunks; i++) {
 		const struct ixp4xx_irq_chunk *chunk = &ixp4xx_irq_chunks[i];
 
-		pr_info("Allocate Linux IRQs %d..%d HW IRQs %d..%d\n",
+		pr_info("Allocate LinaOS IRQs %d..%d HW IRQs %d..%d\n",
 			chunk->irq, chunk->irq + chunk->nr_irqs - 1,
 			chunk->hwirq, chunk->hwirq + chunk->nr_irqs - 1);
 		fwspec.fwnode = fwnode;

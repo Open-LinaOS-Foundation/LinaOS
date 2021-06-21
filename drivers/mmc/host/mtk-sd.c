@@ -4,33 +4,33 @@
  * Author: Chaotian.Jing <chaotian.jing@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/ioport.h>
+#include <linaos/irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/reset.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sd.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/slot-gpio.h>
 
 #include "cqhci.h"
 

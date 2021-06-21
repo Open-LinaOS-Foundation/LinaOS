@@ -7,7 +7,7 @@ u"""
     Sphinx extension which implements scalable image handling.
 
     :copyright:  Copyright (C) 2016  Markus Heiser
-    :license:    GPL Version 2, June 1991 see Linux/COPYING for details.
+    :license:    GPL Version 2, June 1991 see LinaOS/COPYING for details.
 
     The build for image formats depend on image's source format and output's
     destination format. This extension implement methods to simplify image

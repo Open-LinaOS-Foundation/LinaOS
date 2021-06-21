@@ -4,12 +4,12 @@
 #ifndef _FM10K_H_
 #define _FM10K_H_
 
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/cpumask.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/etherdevice.h>
+#include <linaos/cpumask.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_vlan.h>
+#include <linaos/pci.h>
 
 #include "fm10k_pf.h"
 #include "fm10k_vf.h"

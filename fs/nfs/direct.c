@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/direct.c
+ * linaos/fs/nfs/direct.c
  *
  * Copyright (C) 2003 by Chuck Lever <cel@netapp.com>
  *
- * High-performance uncached I/O for the Linux NFS client
+ * High-performance uncached I/O for the LinaOS NFS client
  *
  * There are important applications whose performance or correctness
  * depends on uncached access to file data.  Database clusters
@@ -17,7 +17,7 @@
  *
  * When an application requests uncached I/O, all read and write requests
  * are made directly to the server; data stored or fetched via these
- * requests is not cached in the Linux page cache.  The client does not
+ * requests is not cached in the LinaOS page cache.  The client does not
  * correct unaligned requests from applications.  All requested bytes are
  * held on permanent storage before a direct write system call returns to
  * an application.
@@ -39,22 +39,22 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/kref.h>
-#include <linux/slab.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/module.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/file.h>
+#include <linaos/pagemap.h>
+#include <linaos/kref.h>
+#include <linaos/slab.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/module.h>
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/sunrpc/clnt.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_page.h>
+#include <linaos/sunrpc/clnt.h>
 
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
 
 #include "internal.h"
 #include "iostat.h"

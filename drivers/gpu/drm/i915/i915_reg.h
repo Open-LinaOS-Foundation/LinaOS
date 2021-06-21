@@ -25,8 +25,8 @@
 #ifndef _I915_REG_H_
 #define _I915_REG_H_
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
 
 /**
  * DOC: The i915 register macro definition style guide

@@ -10,15 +10,15 @@
  *  - Events
  */
 
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
 #include "mma7455.h"
 

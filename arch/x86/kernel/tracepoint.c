@@ -5,8 +5,8 @@
  * Copyright (C) 2013 Seiji Aguchi <seiji.aguchi@hds.com>
  *
  */
-#include <linux/jump_label.h>
-#include <linux/atomic.h>
+#include <linaos/jump_label.h>
+#include <linaos/atomic.h>
 
 #include <asm/hw_irq.h>
 #include <asm/desc.h>

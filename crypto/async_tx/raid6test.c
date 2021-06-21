@@ -6,11 +6,11 @@
  * based on drivers/md/raid6test/test.c:
  * 	Copyright 2002-2007 H. Peter Anvin
  */
-#include <linux/async_tx.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/module.h>
+#include <linaos/async_tx.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/random.h>
+#include <linaos/module.h>
 
 #undef pr
 #define pr(fmt, args...) pr_info("raid6test: " fmt, ##args)

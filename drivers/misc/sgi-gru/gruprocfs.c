@@ -9,10 +9,10 @@
  *  Copyright (c) 2008 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/proc_fs.h>
-#include <linux/device.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linaos/proc_fs.h>
+#include <linaos/device.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
 #include "gru.h"
 #include "grulib.h"
 #include "grutables.h"

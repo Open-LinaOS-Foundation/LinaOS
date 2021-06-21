@@ -9,7 +9,7 @@
  *      Helpers to manage template descriptors.
  */
 
-#include <linux/rculist.h>
+#include <linaos/rculist.h>
 #include "ima.h"
 #include "ima_template_lib.h"
 

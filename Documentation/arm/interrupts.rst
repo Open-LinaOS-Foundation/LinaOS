@@ -142,7 +142,7 @@ So, what's changed?
                 Set active the IRQ edge(s)/level.  This replaces the
                 SA1111 INTPOL manipulation, and the set_GPIO_IRQ_edge()
                 function.  Type should be one of IRQ_TYPE_xxx defined in
-		<linux/irq.h>
+		<linaos/irq.h>
 
 3. set_GPIO_IRQ_edge() is obsolete, and should be replaced by set_irq_type.
 

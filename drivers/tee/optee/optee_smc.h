@@ -5,8 +5,8 @@
 #ifndef OPTEE_SMC_H
 #define OPTEE_SMC_H
 
-#include <linux/arm-smccc.h>
-#include <linux/bitops.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/bitops.h>
 
 #define OPTEE_SMC_STD_CALL_VAL(func_num) \
 	ARM_SMCCC_CALL_VAL(ARM_SMCCC_STD_CALL, ARM_SMCCC_SMC_32, \

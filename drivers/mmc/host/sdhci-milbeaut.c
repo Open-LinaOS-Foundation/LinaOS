@@ -7,14 +7,14 @@
  *              Takao Orito <orito.takao@socionext.com>
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/property.h>
 
 #include "sdhci-pltfm.h"
 #include "sdhci_f_sdh30.h"

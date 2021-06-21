@@ -14,9 +14,9 @@
 #include <crypto/skcipher.h>
 #include <crypto/sm3.h>
 #include <crypto/internal/cipher.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
 
 #include "safexcel.h"
 

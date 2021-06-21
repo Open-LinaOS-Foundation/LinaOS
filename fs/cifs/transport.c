@@ -20,20 +20,20 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/wait.h>
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/tcp.h>
-#include <linux/bvec.h>
-#include <linux/highmem.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/gfp.h>
+#include <linaos/wait.h>
+#include <linaos/net.h>
+#include <linaos/delay.h>
+#include <linaos/freezer.h>
+#include <linaos/tcp.h>
+#include <linaos/bvec.h>
+#include <linaos/highmem.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>
-#include <linux/mempool.h>
-#include <linux/sched/signal.h>
+#include <linaos/mempool.h>
+#include <linaos/sched/signal.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"

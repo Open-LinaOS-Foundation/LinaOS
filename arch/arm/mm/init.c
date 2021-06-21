@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/init.c
+ *  linaos/arch/arm/mm/init.c
  *
  *  Copyright (C) 1995-2005 Russell King
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/swap.h>
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/initrd.h>
-#include <linux/of_fdt.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/dma-map-ops.h>
-#include <linux/sizes.h>
-#include <linux/stop_machine.h>
-#include <linux/swiotlb.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/swap.h>
+#include <linaos/init.h>
+#include <linaos/mman.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/export.h>
+#include <linaos/nodemask.h>
+#include <linaos/initrd.h>
+#include <linaos/of_fdt.h>
+#include <linaos/highmem.h>
+#include <linaos/gfp.h>
+#include <linaos/memblock.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/sizes.h>
+#include <linaos/stop_machine.h>
+#include <linaos/swiotlb.h>
 
 #include <asm/cp15.h>
 #include <asm/mach-types.h>

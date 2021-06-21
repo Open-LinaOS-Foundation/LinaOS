@@ -15,7 +15,7 @@ Supported chips:
 Author:
 	- Paul Hays <Paul.Hays@cattail.ca>
 	- Ira W. Snyder <iws@ovro.caltech.edu>
-	- Guenter Roeck <linux@roeck-us.net>
+	- Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

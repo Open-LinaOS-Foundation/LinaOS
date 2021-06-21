@@ -28,7 +28,7 @@ of many distributions, e.g. :
  - Fedora
  - Ubuntu
  - OpenSUSE
- - Arch Linux
+ - Arch LinaOS
  - NetBSD
  - FreeBSD
 
@@ -62,13 +62,13 @@ For supplemental documentation refer to the wiki:
 
 https://bottest.wiki.kernel.org/coccicheck
 
-The wiki documentation always refers to the linux-next version of the script.
+The wiki documentation always refers to the linaos-next version of the script.
 
 For Semantic Patch Language(SmPL) grammar documentation refer to:
 
 http://coccinelle.lip6.fr/documentation.php
 
-Using Coccinelle on the Linux kernel
+Using Coccinelle on the LinaOS kernel
 ------------------------------------
 
 A Coccinelle-specific target is defined in the top level
@@ -113,7 +113,7 @@ To produce patches, run::
 
 
 The coccicheck target applies every semantic patch available in the
-sub-directories of ``scripts/coccinelle`` to the entire Linux kernel.
+sub-directories of ``scripts/coccinelle`` to the entire LinaOS kernel.
 
 For each semantic patch, a commit message is proposed.  It gives a
 description of the problem being checked by the semantic patch, and
@@ -274,8 +274,8 @@ If not using the kernel's coccicheck target, keep the above precedence
 order logic of .cocciconfig reading. If using the kernel's coccicheck target,
 override any of the kernel's .coccicheck's settings using SPFLAGS.
 
-We help Coccinelle when used against Linux with a set of sensible default
-options for Linux with our own Linux .cocciconfig. This hints to coccinelle
+We help Coccinelle when used against LinaOS with a set of sensible default
+options for LinaOS with our own LinaOS .cocciconfig. This hints to coccinelle
 that git can be used for ``git grep`` queries over coccigrep. A timeout of 200
 seconds should suffice for now.
 
@@ -390,9 +390,9 @@ will execute the following part of the SmPL script::
 This SmPL excerpt generates entries on the standard output, as
 illustrated below::
 
-    /home/user/linux/crypto/ctr.c:188:9-16: ERR_CAST can be used with alg
-    /home/user/linux/crypto/authenc.c:619:9-16: ERR_CAST can be used with auth
-    /home/user/linux/crypto/xts.c:227:9-16: ERR_CAST can be used with alg
+    /home/user/linaos/crypto/ctr.c:188:9-16: ERR_CAST can be used with alg
+    /home/user/linaos/crypto/authenc.c:619:9-16: ERR_CAST can be used with auth
+    /home/user/linaos/crypto/xts.c:227:9-16: ERR_CAST can be used with alg
 
 
 Detailed description of the ``patch`` mode
@@ -467,8 +467,8 @@ will execute the following part of the SmPL script::
 This SmPL excerpt generates diff hunks on the standard output, as
 illustrated below::
 
-    diff -u -p /home/user/linux/crypto/ctr.c /tmp/nothing
-    --- /home/user/linux/crypto/ctr.c	2010-05-26 10:49:38.000000000 +0200
+    diff -u -p /home/user/linaos/crypto/ctr.c /tmp/nothing
+    --- /home/user/linaos/crypto/ctr.c	2010-05-26 10:49:38.000000000 +0200
     +++ /tmp/nothing
     @@ -185,7 +185,6 @@ static struct crypto_instance *crypto_ct
  	alg = crypto_attr_alg(tb[1], CRYPTO_ALG_TYPE_CIPHER,
@@ -514,6 +514,6 @@ will execute the following part of the SmPL script::
 This SmPL excerpt generates Org entries on the standard output, as
 illustrated below::
 
-    * TODO [[view:/home/user/linux/crypto/ctr.c::face=ovl-face1::linb=188::colb=9::cole=16][ERR_CAST can be used with alg]]
-    * TODO [[view:/home/user/linux/crypto/authenc.c::face=ovl-face1::linb=619::colb=9::cole=16][ERR_CAST can be used with auth]]
-    * TODO [[view:/home/user/linux/crypto/xts.c::face=ovl-face1::linb=227::colb=9::cole=16][ERR_CAST can be used with alg]]
+    * TODO [[view:/home/user/linaos/crypto/ctr.c::face=ovl-face1::linb=188::colb=9::cole=16][ERR_CAST can be used with alg]]
+    * TODO [[view:/home/user/linaos/crypto/authenc.c::face=ovl-face1::linb=619::colb=9::cole=16][ERR_CAST can be used with auth]]
+    * TODO [[view:/home/user/linaos/crypto/xts.c::face=ovl-face1::linb=227::colb=9::cole=16][ERR_CAST can be used with alg]]

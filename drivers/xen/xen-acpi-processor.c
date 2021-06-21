@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpumask.h>
-#include <linux/cpufreq.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/syscore_ops.h>
-#include <linux/acpi.h>
+#include <linaos/cpumask.h>
+#include <linaos/cpufreq.h>
+#include <linaos/freezer.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/acpi.h>
 #include <acpi/processor.h>
 #include <xen/xen.h>
 #include <xen/interface/platform.h>

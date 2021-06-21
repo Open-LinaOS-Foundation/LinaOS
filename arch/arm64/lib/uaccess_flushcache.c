@@ -3,7 +3,7 @@
  * Copyright (C) 2017 ARM Ltd.
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/barrier.h>
 #include <asm/cacheflush.h>
 

@@ -6,15 +6,15 @@
  * Copyright (C) 2005 Arcom Control Systems Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include "geodefb.h"
 #include "display_gx1.h"

@@ -1,5 +1,5 @@
 =========================
-Linux Hardware Monitoring
+LinaOS Hardware Monitoring
 =========================
 
 .. toctree::

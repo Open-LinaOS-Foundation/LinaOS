@@ -5,16 +5,16 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/prefetch.h>
-#include <linux/kthread.h>
-#include <linux/swap.h>
-#include <linux/timer.h>
-#include <linux/freezer.h>
-#include <linux/sched/signal.h>
+#include <linaos/fs.h>
+#include <linaos/f2fs_fs.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/prefetch.h>
+#include <linaos/kthread.h>
+#include <linaos/swap.h>
+#include <linaos/timer.h>
+#include <linaos/freezer.h>
+#include <linaos/sched/signal.h>
 
 #include "f2fs.h"
 #include "segment.h"

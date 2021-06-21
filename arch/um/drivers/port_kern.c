@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{linux.intel,addtoit}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{linaos.intel,addtoit}.com)
  */
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 #include <asm/atomic.h>
 #include <init.h>
 #include <irq_kern.h>

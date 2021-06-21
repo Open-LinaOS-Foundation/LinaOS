@@ -8,11 +8,11 @@
  * package it's not a general device driver.
  * This driver is for the Keynote Gold internal synthesizer.
  */
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/kthread.h>
-#include <linux/serial_reg.h>
+#include <linaos/jiffies.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/kthread.h>
+#include <linaos/serial_reg.h>
 
 #include "spk_priv.h"
 #include "speakup.h"

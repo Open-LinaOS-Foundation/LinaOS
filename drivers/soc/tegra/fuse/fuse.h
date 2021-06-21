@@ -10,8 +10,8 @@
 #ifndef __DRIVERS_MISC_TEGRA_FUSE_H
 #define __DRIVERS_MISC_TEGRA_FUSE_H
 
-#include <linux/dmaengine.h>
-#include <linux/types.h>
+#include <linaos/dmaengine.h>
+#include <linaos/types.h>
 
 struct nvmem_cell_lookup;
 struct nvmem_device;

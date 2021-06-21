@@ -2,7 +2,7 @@
 #ifndef TOOLS_ASM_X86_CMPXCHG_H
 #define TOOLS_ASM_X86_CMPXCHG_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /*
  * Non-existant functions to indicate usage errors at link time

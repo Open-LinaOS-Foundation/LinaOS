@@ -9,9 +9,9 @@
  *   Maarten Lankhorst <maarten.lankhorst@canonical.com>
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/seqno-fence.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/seqno-fence.h>
 
 static const char *seqno_fence_get_driver_name(struct dma_fence *fence)
 {

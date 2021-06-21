@@ -13,7 +13,7 @@
 #ifndef U_HID_H
 #define U_HID_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 struct f_hid_opts {
 	struct usb_function_instance	func_inst;

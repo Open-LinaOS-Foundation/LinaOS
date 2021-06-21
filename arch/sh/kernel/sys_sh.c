@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/kernel/sys_sh.c
+ * linaos/arch/sh/kernel/sys_sh.c
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/SuperH
+ * have a non-standard calling sequence on the LinaOS/SuperH
  * platform.
  *
  * Taken from i386 version.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/ipc.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/sem.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
+#include <linaos/stat.h>
+#include <linaos/syscalls.h>
+#include <linaos/mman.h>
+#include <linaos/file.h>
+#include <linaos/utsname.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/ipc.h>
 #include <asm/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/cacheflush.h>
 #include <asm/cachectl.h>

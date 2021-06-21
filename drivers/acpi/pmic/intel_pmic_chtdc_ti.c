@@ -7,10 +7,10 @@
  * Copyright (C) 2017 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/init.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/platform_device.h>
 #include "intel_pmic.h"
 
 /* registers stored in 16bit BE (high:low, total 10bit) */

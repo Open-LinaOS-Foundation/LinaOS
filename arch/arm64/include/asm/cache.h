@@ -57,7 +57,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define ICACHEF_ALIASING	0
 #define ICACHEF_VPIPT		1

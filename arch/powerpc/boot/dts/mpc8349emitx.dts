@@ -223,7 +223,7 @@
 			interrupt-parent = <&ipic>;
 			tbi-handle = <&tbi0>;
 			phy-handle = <&phy1c>;
-			linux,network-index = <0>;
+			linaos,network-index = <0>;
 
 			mdio@520 {
 				#address-cells = <1>;
@@ -259,7 +259,7 @@
 			interrupt-parent = <&ipic>;
 			/* Vitesse 7385 isn't on the MDIO bus */
 			fixed-link = <1 1 1000 0 0>;
-			linux,network-index = <1>;
+			linaos,network-index = <1>;
 			tbi-handle = <&tbi1>;
 
 			mdio@520 {
@@ -320,13 +320,13 @@
 			green {
 				label = "Green";
 				gpios = <&pcf1 0 1>;
-				linux,default-trigger = "heartbeat";
+				linaos,default-trigger = "heartbeat";
 			};
 
 			yellow {
 				label = "Yellow";
 				gpios = <&pcf1 1 1>;
-				/* linux,default-trigger = "heartbeat"; */
+				/* linaos,default-trigger = "heartbeat"; */
 				default-state = "on";
 			};
 		};

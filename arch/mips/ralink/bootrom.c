@@ -4,8 +4,8 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 #define BOOTROM_OFFSET	0x10118000
 #define BOOTROM_SIZE	0x8000

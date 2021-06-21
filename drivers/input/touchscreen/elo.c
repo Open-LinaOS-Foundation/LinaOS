@@ -12,13 +12,13 @@
  * legacy 'E271-140' 4-byte protocol and Elo legacy 'E261-280' 3-byte protocol.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/ctype.h>
 
 #define DRIVER_DESC	"Elo serial touchscreen driver"
 

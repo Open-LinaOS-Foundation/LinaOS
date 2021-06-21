@@ -6,11 +6,11 @@
 //
 //
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/soundwire/sdw_registers.h>
+#include <linaos/module.h>
 
 #include "rt711-sdca.h"
 #include "rt711-sdca-sdw.h"

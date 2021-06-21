@@ -45,7 +45,7 @@
 /*
  * AXP223 Integrated Power Management Chip
  * http://www.x-powers.com/product/AXP22X.php
- * http://dl.linux-sunxi.org/AXP/AXP223-en.pdf
+ * http://dl.linaos-sunxi.org/AXP/AXP223-en.pdf
  *
  * The AXP223 shares most of its logic with the AXP221 but it has some
  * differences, for the VBUS driver for example.

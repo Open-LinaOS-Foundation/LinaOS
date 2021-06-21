@@ -6,8 +6,8 @@
  * Copyright (C) 2017 Intel Corporation. All rights reserved.
  */
 
-#include <linux/cpu.h>
-#include <linux/acpi.h>
+#include <linaos/cpu.h>
+#include <linaos/acpi.h>
 #include <asm/msr.h>
 #include <asm/tsc.h>
 

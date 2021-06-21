@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/journal-head.h
+ * include/linaos/journal-head.h
  *
  * buffer_head fields for JBD
  *
@@ -11,7 +11,7 @@
 #ifndef JOURNAL_HEAD_H_INCLUDED
 #define JOURNAL_HEAD_H_INCLUDED
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 typedef unsigned int		tid_t;		/* Unique transaction ID */
 typedef struct transaction_s	transaction_t;	/* Compound transaction type */

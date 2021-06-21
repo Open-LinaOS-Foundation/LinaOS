@@ -2,7 +2,7 @@
 /*
  * Platform data for NXP SC18IS602/603
  *
- * Copyright (C) 2012 Guenter Roeck <linux@roeck-us.net>
+ * Copyright (C) 2012 Guenter Roeck <linaos@roeck-us.net>
  *
  * For further information, see the Documentation/spi/spi-sc18is602.rst file.
  */

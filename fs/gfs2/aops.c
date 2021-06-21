@@ -4,22 +4,22 @@
  * Copyright (C) 2004-2008 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/mpage.h>
-#include <linux/fs.h>
-#include <linux/writeback.h>
-#include <linux/swap.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/backing-dev.h>
-#include <linux/uio.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/buffer_head.h>
+#include <linaos/pagemap.h>
+#include <linaos/pagevec.h>
+#include <linaos/mpage.h>
+#include <linaos/fs.h>
+#include <linaos/writeback.h>
+#include <linaos/swap.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/backing-dev.h>
+#include <linaos/uio.h>
 #include <trace/events/writeback.h>
-#include <linux/sched/signal.h>
+#include <linaos/sched/signal.h>
 
 #include "gfs2.h"
 #include "incore.h"
@@ -423,7 +423,7 @@ static int gfs2_jdata_writepages(struct address_space *mapping,
 }
 
 /**
- * stuffed_readpage - Fill in a Linux page with stuffed file data
+ * stuffed_readpage - Fill in a LinaOS page with stuffed file data
  * @ip: the inode
  * @page: the page
  *
@@ -710,7 +710,7 @@ out:
 /**
  * gfs2_releasepage - free the metadata associated with a page
  * @page: the page that's being released
- * @gfp_mask: passed from Linux VFS, ignored by us
+ * @gfp_mask: passed from LinaOS VFS, ignored by us
  *
  * Calls try_to_free_buffers() to free the buffers and put the page if the
  * buffers can be released.

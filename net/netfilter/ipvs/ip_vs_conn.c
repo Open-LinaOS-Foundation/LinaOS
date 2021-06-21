@@ -6,7 +6,7 @@
  *              high-performance and highly available server based on a
  *              cluster of servers.
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linaosvirtualserver.org>
  *              Peter Kese <peter.kese@ijs.si>
  *              Julian Anastasov <ja@ssi.bg>
  *
@@ -20,18 +20,18 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/net.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/proc_fs.h>		/* for proc_net_* */
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/net.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/proc_fs.h>		/* for proc_net_* */
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/jhash.h>
+#include <linaos/random.h>
 
 #include <net/net_namespace.h>
 #include <net/ip_vs.h>

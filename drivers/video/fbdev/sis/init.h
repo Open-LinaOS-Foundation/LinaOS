@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2001-2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, the following license terms
+ * If distributed as part of the LinaOS kernel, the following license terms
  * apply:
  *
  * * This program is free software; you can redistribute it and/or modify
@@ -60,9 +60,9 @@
 #ifdef SIS_CP
 #undef SIS_CP
 #endif
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/io.h>
-#include <linux/fb.h>
+#include <linaos/fb.h>
 #include "sis.h"
 #include <video/sisfb.h>
 

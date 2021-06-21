@@ -11,7 +11,7 @@ file: media/v4l/capture.c
      *  This program can be used and distributed without restrictions.
      *
      *      This program is provided with the V4L2 API
-     * see https://linuxtv.org/docs.php for more information
+     * see https://linaostv.org/docs.php for more information
      */
 
     #include <stdio.h>
@@ -30,7 +30,7 @@ file: media/v4l/capture.c
     #include <sys/mman.h>
     #include <sys/ioctl.h>
 
-    #include <linux/videodev2.h>
+    #include <linaos/videodev2.h>
 
     #define CLEAR(x) memset(&(x), 0, sizeof(x))
 

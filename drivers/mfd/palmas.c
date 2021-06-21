@@ -7,18 +7,18 @@
  * Author: Graeme Gregory <gg@slimlogic.co.uk>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/regmap.h>
+#include <linaos/err.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/palmas.h>
+#include <linaos/of_device.h>
 
 static const struct regmap_config palmas_regmap_config[PALMAS_NUM_CLIENTS] = {
 	{

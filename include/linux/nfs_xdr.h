@@ -2,8 +2,8 @@
 #ifndef _LINUX_NFS_XDR_H
 #define _LINUX_NFS_XDR_H
 
-#include <linux/nfsacl.h>
-#include <linux/sunrpc/gss_api.h>
+#include <linaos/nfsacl.h>
+#include <linaos/sunrpc/gss_api.h>
 
 /*
  * To change the maximum rsize and wsize supported by the NFS client, adjust

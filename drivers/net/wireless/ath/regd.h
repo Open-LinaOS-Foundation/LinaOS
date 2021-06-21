@@ -17,7 +17,7 @@
 #ifndef REGD_H
 #define REGD_H
 
-#include <linux/nl80211.h>
+#include <linaos/nl80211.h>
 #include <net/cfg80211.h>
 
 #include "ath.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt5660.h -- Platform data for RT5660
+ * linaos/sound/rt5660.h -- Platform data for RT5660
  *
  * Copyright 2016 Realtek Semiconductor Corp.
  * Author: Oder Chiou <oder_chiou@realtek.com>

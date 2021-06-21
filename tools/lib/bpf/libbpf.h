@@ -15,7 +15,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <sys/types.h>  // for size_t
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 
 #include "libbpf_common.h"
 
@@ -173,7 +173,7 @@ libbpf_prog_type_by_name(const char *name, enum bpf_prog_type *prog_type,
 			 enum bpf_attach_type *expected_attach_type);
 LIBBPF_API int libbpf_attach_type_by_name(const char *name,
 					  enum bpf_attach_type *attach_type);
-LIBBPF_API int libbpf_find_vmlinux_btf_id(const char *name,
+LIBBPF_API int libbpf_find_vmlinaos_btf_id(const char *name,
 					  enum bpf_attach_type attach_type);
 
 /* Accessors of bpf_program */
@@ -405,7 +405,7 @@ struct bpf_map_def {
 };
 
 /*
- * The 'struct bpf_map' in include/linux/bpf.h is internal to the kernel,
+ * The 'struct bpf_map' in include/linaos/bpf.h is internal to the kernel,
  * so no need to worry about a name clash.
  */
 LIBBPF_API struct bpf_map *

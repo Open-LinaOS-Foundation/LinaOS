@@ -5,9 +5,9 @@
  * Copyright (c) 2010-2015, NVIDIA Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
 
 #include <trace/events/host1x.h>
 

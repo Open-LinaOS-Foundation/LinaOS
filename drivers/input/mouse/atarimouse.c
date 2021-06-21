@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Atari mouse driver for Linux/m68k
+ *  Atari mouse driver for LinaOS/m68k
  *
  *  Copyright (c) 2005 Michael Schmitz
  *
  *  Based on:
- *  Amiga mouse driver for Linux/m68k
+ *  Amiga mouse driver for LinaOS/m68k
  *
  *  Copyright (c) 2000-2002 Vojtech Pavlik
  */
@@ -17,7 +17,7 @@
  *
  * Largely based on the old:
  *
- * Atari Mouse Driver for Linux
+ * Atari Mouse Driver for LinaOS
  * by Robert de Vries (robert@and.nl) 19Jul93
  *
  * 16 Nov 1994 Andreas Schwab
@@ -30,19 +30,19 @@
  * Allow multiple open's
  *
  * Converted to use new generic busmouse code.  5 Apr 1998
- *   Russell King <rmk@arm.uk.linux.org>
+ *   Russell King <rmk@arm.uk.linaos.org>
  */
 
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
 
 #include <asm/irq.h>
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/atarihw.h>
 #include <asm/atarikb.h>
 #include <asm/atariints.h>

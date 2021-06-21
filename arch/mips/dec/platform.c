@@ -5,10 +5,10 @@
  *	Copyright (c) 2014  Maciej W. Rozycki
  */
 
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mc146818rtc.h>
-#include <linux/platform_device.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/platform_device.h>
 
 static struct resource dec_rtc_resources[] = {
 	{

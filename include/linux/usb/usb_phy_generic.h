@@ -2,7 +2,7 @@
 #ifndef __LINUX_USB_NOP_XCEIV_H
 #define __LINUX_USB_NOP_XCEIV_H
 
-#include <linux/usb/otg.h>
+#include <linaos/usb/otg.h>
 
 #if IS_ENABLED(CONFIG_NOP_USB_XCEIV)
 /* sometimes transceivers are accessed only through e.g. ULPI */

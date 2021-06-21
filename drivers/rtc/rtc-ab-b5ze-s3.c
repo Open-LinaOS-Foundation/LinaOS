@@ -13,13 +13,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/i2c.h>
+#include <linaos/bcd.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/interrupt.h>
 
 #define DRV_NAME "rtc-ab-b5ze-s3"
 

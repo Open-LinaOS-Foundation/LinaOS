@@ -16,7 +16,7 @@
 
 	spdif_dit: audio-codec-0 {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 		status = "okay";
 		sound-name-prefix = "DIT";
 	};
@@ -43,7 +43,7 @@
 
 		button@0 {
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio_ao GPIOAO_3 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -117,5 +117,5 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-wetek-play2";
+	linaos,rc-map-name = "rc-wetek-play2";
 };

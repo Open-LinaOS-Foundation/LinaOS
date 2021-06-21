@@ -7,17 +7,17 @@
  */
 
 /*
- * SpaceTec SpaceOrb 360 and Avenger 6dof controller driver for Linux
+ * SpaceTec SpaceOrb 360 and Avenger 6dof controller driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"SpaceTec SpaceOrb 360 and Avenger 6dof controller driver"
 

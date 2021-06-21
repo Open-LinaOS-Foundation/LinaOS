@@ -11,7 +11,7 @@ config VIDEO_IMX_MEDIA
 	select VIDEOBUF2_DMA_CONTIG
 	select VIDEO_V4L2_SUBDEV_API
 	help
-	  Say yes here to enable support for video4linux media controller
+	  Say yes here to enable support for video4linaos media controller
 	  driver for the i.MX5/6 SOC.
 
 if VIDEO_IMX_MEDIA
@@ -22,13 +22,13 @@ config VIDEO_IMX_CSI
 	depends on IMX_IPUV3_CORE
 	default y
 	help
-	  A video4linux camera sensor interface driver for i.MX5/6.
+	  A video4linaos camera sensor interface driver for i.MX5/6.
 
 config VIDEO_IMX7_CSI
 	tristate "i.MX6UL/L / i.MX7 / i.MX8M Camera Sensor Interface driver"
 	default y
 	help
-	  Enable support for video4linux camera sensor interface driver for
+	  Enable support for video4linaos camera sensor interface driver for
 	  i.MX6UL/L, i.MX7 or i.MX8M.
 endmenu
 endif

@@ -2,8 +2,8 @@
 #ifndef __DRBD_INTERVAL_H
 #define __DRBD_INTERVAL_H
 
-#include <linux/types.h>
-#include <linux/rbtree.h>
+#include <linaos/types.h>
+#include <linaos/rbtree.h>
 
 struct drbd_interval {
 	struct rb_node rb;

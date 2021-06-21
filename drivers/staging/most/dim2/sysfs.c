@@ -9,9 +9,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "sysfs.h"
-#include <linux/device.h>
+#include <linaos/device.h>
 
 static ssize_t state_show(struct device *dev, struct device_attribute *attr,
 			  char *buf)

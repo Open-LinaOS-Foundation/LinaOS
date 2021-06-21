@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/offb.c -- Open Firmware based frame buffer device
+ *  linaos/drivers/video/offb.c -- Open Firmware based frame buffer device
  *
  *	Copyright (C) 1997 Geert Uytterhoeven
  *
@@ -12,20 +12,20 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
 #include <asm/io.h>
 
 #ifdef CONFIG_PPC32
@@ -554,25 +554,25 @@ static void __init offb_init_nodriver(struct device_node *dp, int no_real_node)
 		foreign_endian = FBINFO_FOREIGN_ENDIAN;
 #endif
 
-	pp = of_get_property(dp, "linux,bootx-depth", &len);
+	pp = of_get_property(dp, "linaos,bootx-depth", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "depth", &len);
 	if (pp && len == sizeof(u32))
 		depth = be32_to_cpup(pp);
 
-	pp = of_get_property(dp, "linux,bootx-width", &len);
+	pp = of_get_property(dp, "linaos,bootx-width", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "width", &len);
 	if (pp && len == sizeof(u32))
 		width = be32_to_cpup(pp);
 
-	pp = of_get_property(dp, "linux,bootx-height", &len);
+	pp = of_get_property(dp, "linaos,bootx-height", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "height", &len);
 	if (pp && len == sizeof(u32))
 		height = be32_to_cpup(pp);
 
-	pp = of_get_property(dp, "linux,bootx-linebytes", &len);
+	pp = of_get_property(dp, "linaos,bootx-linebytes", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "linebytes", &len);
 	if (pp && len == sizeof(u32) && (*pp != 0xffffffffu))
@@ -592,7 +592,7 @@ static void __init offb_init_nodriver(struct device_node *dp, int no_real_node)
 	 * ranges and pick one that is both big enough and if possible encloses
 	 * the "address" property. If none match, we pick the biggest
 	 */
-	up = of_get_property(dp, "linux,bootx-addr", &len);
+	up = of_get_property(dp, "linaos,bootx-addr", &len);
 	if (up == NULL)
 		up = of_get_property(dp, "address", &len);
 	if (up && len == sizeof(u32))
@@ -664,7 +664,7 @@ static int __init offb_init(void)
 		return -ENODEV;
 
 	/* Check if we have a MacOS display without a node spec */
-	if (of_get_property(of_chosen, "linux,bootx-noscreen", NULL) != NULL) {
+	if (of_get_property(of_chosen, "linaos,bootx-noscreen", NULL) != NULL) {
 		/* The old code tried to work out which node was the MacOS
 		 * display based on the address. I'm dropping that since the
 		 * lack of a node spec only happens with old BootX versions
@@ -675,14 +675,14 @@ static int __init offb_init(void)
 	}
 
 	for_each_node_by_type(dp, "display") {
-		if (of_get_property(dp, "linux,opened", NULL) &&
-		    of_get_property(dp, "linux,boot-display", NULL)) {
+		if (of_get_property(dp, "linaos,opened", NULL) &&
+		    of_get_property(dp, "linaos,boot-display", NULL)) {
 			boot_disp = dp;
 			offb_init_nodriver(dp, 0);
 		}
 	}
 	for_each_node_by_type(dp, "display") {
-		if (of_get_property(dp, "linux,opened", NULL) &&
+		if (of_get_property(dp, "linaos,opened", NULL) &&
 		    dp != boot_disp)
 			offb_init_nodriver(dp, 0);
 	}

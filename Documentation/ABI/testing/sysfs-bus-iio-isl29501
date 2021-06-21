@@ -1,7 +1,7 @@
 What:		/sys/bus/iio/devices/iio:deviceX/in_proximity0_agc_gain
 What:		/sys/bus/iio/devices/iio:deviceX/in_proximity0_agc_gain_bias
 KernelVersion:	4.18
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		This sensor has an automatic gain control (agc) loop
 		which sets the analog signal levels at an optimum
@@ -19,7 +19,7 @@ What:		/sys/bus/iio/devices/iio:deviceX/in_proximity0_calib_phase_temp_b
 What:		/sys/bus/iio/devices/iio:deviceX/in_proximity0_calib_phase_light_a
 What:		/sys/bus/iio/devices/iio:deviceX/in_proximity0_calib_phase_light_b
 KernelVersion:	4.18
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		The sensor is able to perform correction of distance
 		measurements due to changing temperature and ambient

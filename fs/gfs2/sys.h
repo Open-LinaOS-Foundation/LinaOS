@@ -7,7 +7,7 @@
 #ifndef __SYS_DOT_H__
 #define __SYS_DOT_H__
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 struct gfs2_sbd;
 
 int gfs2_sys_fs_add(struct gfs2_sbd *sdp);

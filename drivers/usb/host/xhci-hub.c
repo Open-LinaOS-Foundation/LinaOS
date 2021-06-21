@@ -5,13 +5,13 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the LinaOS EHCI driver.
  */
 
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 #include "xhci.h"
 #include "xhci-trace.h"

@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for LinaOS kernel debugging
 #
 #  Kernel proc information reader
 #
@@ -12,15 +12,15 @@
 #
 
 import gdb
-from linux import constants
-from linux import utils
-from linux import tasks
-from linux import lists
+from linaos import constants
+from linaos import utils
+from linaos import tasks
+from linaos import lists
 from struct import *
 
 
 class LxCmdLine(gdb.Command):
-    """ Report the Linux Commandline used in the current kernel.
+    """ Report the LinaOS Commandline used in the current kernel.
         Equivalent to cat /proc/cmdline on a running target"""
 
     def __init__(self):
@@ -34,15 +34,15 @@ LxCmdLine()
 
 
 class LxVersion(gdb.Command):
-    """ Report the Linux Version of the current kernel.
+    """ Report the LinaOS Version of the current kernel.
         Equivalent to cat /proc/version on a running target"""
 
     def __init__(self):
         super(LxVersion, self).__init__("lx-version", gdb.COMMAND_DATA)
 
     def invoke(self, arg, from_tty):
-        # linux_banner should contain a newline
-        gdb.write(gdb.parse_and_eval("(char *)linux_banner").string())
+        # linaos_banner should contain a newline
+        gdb.write(gdb.parse_and_eval("(char *)linaos_banner").string())
 
 
 LxVersion()

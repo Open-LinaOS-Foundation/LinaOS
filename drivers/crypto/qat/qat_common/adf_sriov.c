@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2015 - 2020 Intel Corporation */
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/iommu.h>
+#include <linaos/workqueue.h>
+#include <linaos/pci.h>
+#include <linaos/device.h>
+#include <linaos/iommu.h>
 #include "adf_common_drv.h"
 #include "adf_cfg.h"
 #include "adf_pf2vf_msg.h"

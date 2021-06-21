@@ -6,9 +6,9 @@
  */
 
 
-#include <linux/dma-buf.h>
-#include <linux/pfn_t.h>
-#include <linux/shmem_fs.h>
+#include <linaos/dma-buf.h>
+#include <linaos/pfn_t.h>
+#include <linaos/shmem_fs.h>
 
 #include <drm/drm_prime.h>
 #include <drm/drm_vma_manager.h>

@@ -5,27 +5,27 @@
 // Copyright 2016 Freescale Semiconductor, Inc.
 // Copyright 2018 NXP Semiconductors
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dma-imx.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/dma-imx.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/types.h>
 
 #define DRIVER_NAME "fsl_lpspi"
 

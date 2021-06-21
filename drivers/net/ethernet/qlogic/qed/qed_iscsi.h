@@ -6,13 +6,13 @@
 
 #ifndef _QED_ISCSI_H
 #define _QED_ISCSI_H
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/qed/tcp_common.h>
-#include <linux/qed/qed_iscsi_if.h>
-#include <linux/qed/qed_chain.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/qed/tcp_common.h>
+#include <linaos/qed/qed_iscsi_if.h>
+#include <linaos/qed/qed_chain.h>
 #include "qed.h"
 #include "qed_hsi.h"
 #include "qed_mcp.h"

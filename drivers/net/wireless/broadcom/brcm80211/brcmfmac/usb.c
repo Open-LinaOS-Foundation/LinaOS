@@ -3,11 +3,11 @@
  * Copyright (c) 2011 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
+#include <linaos/usb.h>
+#include <linaos/vmalloc.h>
 
 #include <brcmu_utils.h>
 #include <brcm_hw_ids.h>

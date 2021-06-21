@@ -3,8 +3,8 @@
 #define _ASM_X86_MICROCODE_H
 
 #include <asm/cpu.h>
-#include <linux/earlycpio.h>
-#include <linux/initrd.h>
+#include <linaos/earlycpio.h>
+#include <linaos/initrd.h>
 
 struct ucode_patch {
 	struct list_head plist;

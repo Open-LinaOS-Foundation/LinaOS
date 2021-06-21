@@ -4,26 +4,26 @@
  *
  *  Copyright (C) 2002 MontaVista Software Inc.
  *	Author: Yoichi Yuasa <source@mvista.com>
- *  Copyright (C) 2003-2009  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2009  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 #include <asm/vr41xx/giu.h>
 #include <asm/vr41xx/irq.h>
 #include <asm/vr41xx/vr41xx.h>
 
-MODULE_AUTHOR("Yoichi Yuasa <yuasa@linux-mips.org>");
+MODULE_AUTHOR("Yoichi Yuasa <yuasa@linaos-mips.org>");
 MODULE_DESCRIPTION("NEC VR4100 series General-purpose I/O Unit driver");
 MODULE_LICENSE("GPL");
 

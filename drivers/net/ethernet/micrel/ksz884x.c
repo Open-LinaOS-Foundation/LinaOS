@@ -8,23 +8,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/mii.h>
-#include <linux/platform_device.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/mii.h>
+#include <linaos/platform_device.h>
+#include <linaos/ethtool.h>
+#include <linaos/etherdevice.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/if_vlan.h>
+#include <linaos/crc32.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 
 /* DMA Registers */
@@ -5297,7 +5297,7 @@ static irqreturn_t netdev_intr(int irq, void *dev_id)
 }
 
 /*
- * Linux network device functions
+ * LinaOS network device functions
  */
 
 static unsigned long next_jiffies;
@@ -6715,7 +6715,7 @@ static void dev_monitor(struct timer_list *t)
 }
 
 /*
- * Linux network device interface functions
+ * LinaOS network device interface functions
  */
 
 /* Driver exported variables */

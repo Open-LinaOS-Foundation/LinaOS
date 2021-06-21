@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/sched.h>
-#include <linux/mman.h>
-#include <linux/shm.h>
+#include <linaos/sched.h>
+#include <linaos/mman.h>
+#include <linaos/shm.h>
 
 #define COLOUR_ALIGN(addr,pgoff)		\
 	((((addr)+SHMLBA-1)&~(SHMLBA-1)) +	\

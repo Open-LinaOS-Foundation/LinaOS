@@ -14,7 +14,7 @@
 #ifndef __ASM_PPC_RHEAP_H__
 #define __ASM_PPC_RHEAP_H__
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 typedef struct _rh_block {
 	struct list_head list;

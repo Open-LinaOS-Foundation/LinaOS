@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  *	NET3	PLIP tuning facilities for the new Niibe PLIP.
  *
@@ -12,7 +12,7 @@
 #ifndef _LINUX_IF_PLIP_H
 #define _LINUX_IF_PLIP_H
 
-#include <linux/sockios.h>
+#include <linaos/sockios.h>
 
 #define	SIOCDEVPLIP	SIOCDEVPRIVATE
 

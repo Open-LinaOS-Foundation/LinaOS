@@ -1,7 +1,7 @@
 What:		/sys/firmware/acpi/pm_profile
 Date:		03-Nov-2011
 KernelVersion:	v3.2
-Contact:	linux-acpi@vger.kernel.org
+Contact:	linaos-acpi@vger.kernel.org
 Description:	The ACPI pm_profile sysfs interface exports the platform
 		power management (and performance) requirement expectations
 		as provided by BIOS. The integer value is directly passed as

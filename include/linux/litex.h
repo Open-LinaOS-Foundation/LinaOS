@@ -9,7 +9,7 @@
 #ifndef _LINUX_LITEX_H
 #define _LINUX_LITEX_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /* LiteX SoCs support 8- or 32-bit CSR Bus data width (i.e., subreg. size) */
 #if defined(CONFIG_LITEX_SUBREG_SIZE) && \

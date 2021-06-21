@@ -9,7 +9,7 @@
 #ifndef _ASM_S390_LOWCORE_H
 #define _ASM_S390_LOWCORE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/ptrace.h>
 #include <asm/cpu.h>
 #include <asm/types.h>

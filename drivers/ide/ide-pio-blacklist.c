@@ -7,8 +7,8 @@
  * to avoid breaking the fragile cmd640.c support.
  */
 
-#include <linux/string.h>
-#include <linux/ide.h>
+#include <linaos/string.h>
+#include <linaos/ide.h>
 
 static struct ide_pio_info {
 	const char	*name;

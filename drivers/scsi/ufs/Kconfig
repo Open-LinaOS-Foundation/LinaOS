@@ -39,7 +39,7 @@ config SCSI_UFSHCD
 	select DEVFREQ_GOV_SIMPLE_ONDEMAND
 	select NLS
 	help
-	  This selects the support for UFS devices in Linux, say Y and make
+	  This selects the support for UFS devices in LinaOS, say Y and make
 	  sure that you know the name of your UFS host adapter (the card
 	  inside your computer that "speaks" the UFS protocol, also
 	  called UFS Host Controller), because you will be asked for it.

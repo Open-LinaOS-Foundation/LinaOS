@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (c) 2006-2007 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * S3C CPU frequency scaling support - driver and board
@@ -9,7 +9,7 @@
 #ifndef __LINUX_SOC_SAMSUNG_S3C_CPU_FREQ_H
 #define __LINUX_SOC_SAMSUNG_S3C_CPU_FREQ_H
 
-#include <linux/cpufreq.h>
+#include <linaos/cpufreq.h>
 
 struct s3c_cpufreq_info;
 struct s3c_cpufreq_board;

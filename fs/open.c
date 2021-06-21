@@ -1,37 +1,37 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/open.c
+ *  linaos/fs/open.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/fsnotify.h>
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/namei.h>
-#include <linux/backing-dev.h>
-#include <linux/capability.h>
-#include <linux/securebits.h>
-#include <linux/security.h>
-#include <linux/mount.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/fs.h>
-#include <linux/personality.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/rcupdate.h>
-#include <linux/audit.h>
-#include <linux/falloc.h>
-#include <linux/fs_struct.h>
-#include <linux/ima.h>
-#include <linux/dnotify.h>
-#include <linux/compat.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/fsnotify.h>
+#include <linaos/module.h>
+#include <linaos/tty.h>
+#include <linaos/namei.h>
+#include <linaos/backing-dev.h>
+#include <linaos/capability.h>
+#include <linaos/securebits.h>
+#include <linaos/security.h>
+#include <linaos/mount.h>
+#include <linaos/fcntl.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/personality.h>
+#include <linaos/pagemap.h>
+#include <linaos/syscalls.h>
+#include <linaos/rcupdate.h>
+#include <linaos/audit.h>
+#include <linaos/falloc.h>
+#include <linaos/fs_struct.h>
+#include <linaos/ima.h>
+#include <linaos/dnotify.h>
+#include <linaos/compat.h>
 
 #include "internal.h"
 

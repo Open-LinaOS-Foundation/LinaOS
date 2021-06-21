@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_PTRACE_H
 #define _UAPI_LINUX_PTRACE_H
 /* ptrace.h */
@@ -6,7 +6,7 @@
 
 /* has the defines to get at the registers. */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PTRACE_TRACEME		   0
 #define PTRACE_PEEKTEXT		   1

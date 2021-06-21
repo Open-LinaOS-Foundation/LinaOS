@@ -3,8 +3,8 @@
 #define _GNU_SOURCE 1
 #include <sched.h>
 #include <stdlib.h>
-#include <linux/bitmap.h>
-#include <linux/zalloc.h>
+#include <linaos/bitmap.h>
+#include <linaos/zalloc.h>
 #include "perf.h"
 #include "cpumap.h"
 #include "affinity.h"

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* atm_eni.h - Driver-specific declarations of the ENI driver (for use by
 	       driver-specific utilities) */
 
@@ -8,7 +8,7 @@
 #ifndef LINUX_ATM_ENI_H
 #define LINUX_ATM_ENI_H
 
-#include <linux/atmioc.h>
+#include <linaos/atmioc.h>
 
 
 struct eni_multipliers {

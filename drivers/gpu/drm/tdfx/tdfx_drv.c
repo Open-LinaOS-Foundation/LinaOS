@@ -1,8 +1,8 @@
-/* tdfx_drv.c -- tdfx driver -*- linux-c -*-
+/* tdfx_drv.c -- tdfx driver -*- linaos-c -*-
  * Created: Thu Oct  7 10:38:32 1999 by faith@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -25,13 +25,13 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Rickard E. (Rik) Faith <faith@valinux.com>
- *    Daryll Strauss <daryll@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Rickard E. (Rik) Faith <faith@valinaos.com>
+ *    Daryll Strauss <daryll@valinaos.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

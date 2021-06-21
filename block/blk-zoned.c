@@ -3,20 +3,20 @@
  * Zoned block device handling
  *
  * Copyright (c) 2015, Hannes Reinecke
- * Copyright (c) 2015, SUSE Linux GmbH
+ * Copyright (c) 2015, SUSE LinaOS GmbH
  *
  * Copyright (c) 2016, Damien Le Moal
  * Copyright (c) 2016, Western Digital
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rbtree.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/rbtree.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/sched/mm.h>
 
 #include "blk.h"
 

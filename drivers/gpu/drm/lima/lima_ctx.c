@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /* Copyright 2018-2019 Qiang Yu <yuq825@gmail.com> */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "lima_device.h"
 #include "lima_ctx.h"

@@ -6,11 +6,11 @@
  * Copyright (c) 2000 RP Internet (www.rpi.net.au).
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifs_debug.h"

@@ -2,11 +2,11 @@
 #ifndef _LINUX_IPC_H
 #define _LINUX_IPC_H
 
-#include <linux/spinlock.h>
-#include <linux/uidgid.h>
-#include <linux/rhashtable-types.h>
-#include <uapi/linux/ipc.h>
-#include <linux/refcount.h>
+#include <linaos/spinlock.h>
+#include <linaos/uidgid.h>
+#include <linaos/rhashtable-types.h>
+#include <uapi/linaos/ipc.h>
+#include <linaos/refcount.h>
 
 /* used by in-kernel data structures */
 struct kern_ipc_perm {

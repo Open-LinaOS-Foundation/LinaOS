@@ -21,19 +21,19 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/fs.h>
-#include <linux/backing-dev.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/delay.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/mm.h>
+#include <linaos/fs.h>
+#include <linaos/backing-dev.h>
+#include <linaos/stat.h>
+#include <linaos/fcntl.h>
+#include <linaos/pagemap.h>
+#include <linaos/pagevec.h>
+#include <linaos/writeback.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/delay.h>
+#include <linaos/mount.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
+#include <linaos/mm.h>
 #include <asm/div64.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -4672,7 +4672,7 @@ static int is_inode_writable(struct cifsInodeInfo *cifs_inode)
    the file - in the future we could consider allowing
    refreshing the inode only on increases in the file size
    but this is tricky to do without racing with writebehind
-   page caching in the current Linux kernel design */
+   page caching in the current LinaOS kernel design */
 bool is_size_safe_to_change(struct cifsInodeInfo *cifsInode, __u64 end_of_file)
 {
 	if (!cifsInode)

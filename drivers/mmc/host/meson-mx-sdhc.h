@@ -6,7 +6,7 @@
 #ifndef _MESON_MX_SDHC_H_
 #define _MESON_MX_SDHC_H_
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 #define MESON_SDHC_ARGU						0x00
 

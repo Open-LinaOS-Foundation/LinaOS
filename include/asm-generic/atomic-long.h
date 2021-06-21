@@ -6,7 +6,7 @@
 #ifndef _ASM_GENERIC_ATOMIC_LONG_H
 #define _ASM_GENERIC_ATOMIC_LONG_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/types.h>
 
 #ifdef CONFIG_64BIT

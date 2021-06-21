@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2001-2005 PPC 64 Team, IBM Corp
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/udbg.h>
 #include <asm/processor.h>
 #include <asm/io.h>
@@ -77,7 +77,7 @@ void udbg_scc_init(int force_scc)
 	macio = of_get_parent(escc);
 	if (macio == NULL)
 		goto bail;
-	path = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	path = of_get_property(of_chosen, "linaos,stdout-path", NULL);
 	if (path != NULL)
 		stdout = of_find_node_by_path(path);
 	for_each_child_of_node(escc, ch) {

@@ -16,11 +16,11 @@
  *	 4) investigate if enum used for user space type definition
  *	    to be replaced by #defines or integer
  */
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/videodev2.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/videodev2.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 
 #include <media/davinci/dm355_ccdc.h>
 #include <media/davinci/vpss.h>

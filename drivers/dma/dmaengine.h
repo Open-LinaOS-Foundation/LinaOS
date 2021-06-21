@@ -6,8 +6,8 @@
 #ifndef DMAENGINE_H
 #define DMAENGINE_H
 
-#include <linux/bug.h>
-#include <linux/dmaengine.h>
+#include <linaos/bug.h>
+#include <linaos/dmaengine.h>
 
 /**
  * dma_cookie_init - initialize the cookies for a DMA channel
@@ -183,7 +183,7 @@ struct dma_chan *dma_get_slave_channel(struct dma_chan *chan);
 struct dma_chan *dma_get_any_slave_channel(struct dma_device *device);
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 static inline struct dentry *
 dmaengine_get_debugfs_root(struct dma_device *dma_dev) {

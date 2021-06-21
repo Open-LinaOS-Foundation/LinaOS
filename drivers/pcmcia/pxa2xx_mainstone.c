@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa2xx_mainstone.c
+ * linaos/drivers/pcmcia/pxa2xx_mainstone.c
  *
  * Mainstone PCMCIA specific routines.
  *
@@ -8,13 +8,13 @@
  * Author:	Nicolas Pitre
  * Copyright:	MontaVista Software Inc.
  */
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/platform_device.h>
 
 #include <pcmcia/ss.h>
 

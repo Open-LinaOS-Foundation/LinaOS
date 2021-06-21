@@ -12,12 +12,12 @@
  *      Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/of.h>
-#include <linux/mfd/mc13xxx.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/of.h>
+#include <linaos/mfd/mc13xxx.h>
 
 struct mc13xxx_led_devtype {
 	int	led_min;
@@ -150,7 +150,7 @@ static struct mc13xxx_leds_platform_data __init *mc13xxx_led_probe_dt(
 
 		if (!of_property_read_string(child, "label", &str))
 			pdata->led[i].name = str;
-		if (!of_property_read_string(child, "linux,default-trigger",
+		if (!of_property_read_string(child, "linaos,default-trigger",
 					     &str))
 			pdata->led[i].default_trigger = str;
 

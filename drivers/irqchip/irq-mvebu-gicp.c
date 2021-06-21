@@ -8,14 +8,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 

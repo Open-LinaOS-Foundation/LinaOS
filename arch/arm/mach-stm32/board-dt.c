@@ -5,7 +5,7 @@
  * Author:  Maxime Coquelin <mcoquelin.stm32@gmail.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/mach/arch.h>
 #ifdef CONFIG_ARM_SINGLE_ARMV7M
 #include <asm/v7m.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ufs/namei.c
+ * linaos/fs/ufs/namei.c
  *
  * Migration to usage of "page cache" on May 2006 by
  * Evgeniy Dushistov <dushistov@mail.ru> based on ext2 code base.
@@ -11,7 +11,7 @@
  *
  *  from
  *
- *  linux/fs/ext2/namei.c
+ *  linaos/fs/ext2/namei.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -20,7 +20,7 @@
  *
  *  from
  *
- *  linux/fs/minix/namei.c
+ *  linaos/fs/minix/namei.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -28,8 +28,8 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
 
 #include "ufs_fs.h"
 #include "ufs.h"

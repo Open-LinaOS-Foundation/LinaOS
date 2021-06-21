@@ -5,7 +5,7 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the LinaOS EHCI driver.
  */
 
 /* HC should halt within 16 ms, but use 32 ms as some hosts take longer */
@@ -79,7 +79,7 @@
 /* true: Controller Not Ready to accept doorbell or op reg writes after reset */
 #define XHCI_STS_CNR		(1 << 11)
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /**
  * Find the offset of the extended capabilities with capability ID id.

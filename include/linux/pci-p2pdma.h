@@ -11,7 +11,7 @@
 #ifndef _LINUX_PCI_P2PDMA_H
 #define _LINUX_PCI_P2PDMA_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 struct block_device;
 struct scatterlist;

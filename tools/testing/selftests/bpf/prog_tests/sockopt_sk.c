@@ -2,7 +2,7 @@
 #include <test_progs.h>
 #include "cgroup_helpers.h"
 
-#include <linux/tcp.h>
+#include <linaos/tcp.h>
 #include "sockopt_sk.skel.h"
 
 #ifndef SOL_TCP

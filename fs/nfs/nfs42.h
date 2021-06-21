@@ -6,7 +6,7 @@
 #ifndef __LINUX_FS_NFS_NFS4_2_H
 #define __LINUX_FS_NFS_NFS4_2_H
 
-#include <linux/xattr.h>
+#include <linaos/xattr.h>
 
 /*
  * FIXME:  four LAYOUTSTATS calls per compound at most! Do we need to support

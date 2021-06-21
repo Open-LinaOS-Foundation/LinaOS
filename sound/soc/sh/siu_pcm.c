@@ -5,12 +5,12 @@
 // Copyright (C) 2009-2010 Guennadi Liakhovetski <g.liakhovetski@gmx.de>
 // Copyright (C) 2006 Carlos Munoz <carlos@kenati.com>
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <sound/control.h>
 #include <sound/core.h>

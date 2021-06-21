@@ -10,8 +10,8 @@
 #if !defined(_TRACE_FSCACHE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FSCACHE_H
 
-#include <linux/fscache.h>
-#include <linux/tracepoint.h>
+#include <linaos/fscache.h>
+#include <linaos/tracepoint.h>
 
 /*
  * Define enums for tracing information.

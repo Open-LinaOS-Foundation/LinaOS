@@ -1,5 +1,5 @@
 =============================================
-Linux voltage and current regulator framework
+LinaOS voltage and current regulator framework
 =============================================
 
 About

@@ -2,15 +2,15 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@linaostv.org>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
+#include <linaos/pci.h>
+#include <linaos/i2c.h>
+#include <linaos/kdev_t.h>
+#include <linaos/slab.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-fh.h>
@@ -24,7 +24,7 @@
 #include "cx23885-reg.h"
 #include "media/drv-intf/cx2341x.h"
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 #define CX23885_VERSION "0.0.4"
 

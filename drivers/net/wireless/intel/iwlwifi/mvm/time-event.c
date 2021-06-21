@@ -4,7 +4,7 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2017 Intel Deutschland GmbH
  */
-#include <linux/jiffies.h>
+#include <linaos/jiffies.h>
 #include <net/mac80211.h>
 
 #include "fw/notif-wait.h"

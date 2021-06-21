@@ -8,8 +8,8 @@
  * Send feedback to <lxie@us.ibm.com>
  *
  */
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
 
 #include <asm/pci-bridge.h>
 #include <asm/rtas.h>

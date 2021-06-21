@@ -3,16 +3,16 @@
  * Copyright (C) 1999 - 2010 Intel Corporation.
  * Copyright (C) 2010 - 2012 LAPIS SEMICONDUCTOR CO., LTD.
  *
- * This code was derived from the Intel e1000e Linux driver.
+ * This code was derived from the Intel e1000e LinaOS driver.
  */
 
 #include "pch_gbe.h"
 #include "pch_gbe_phy.h"
-#include <linux/module.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_classify.h>
-#include <linux/ptp_pch.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/ptp_pch.h>
+#include <linaos/gpio.h>
 
 #define DRV_VERSION     "1.01"
 const char pch_driver_version[] = DRV_VERSION;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/inode.c
+ *  linaos/fs/ext4/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  linaos/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -19,28 +19,28 @@
  *  Assorted race fixes, rewrite of ext4_get_block() by Al Viro, 2000
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/time.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/dax.h>
-#include <linux/quotaops.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/pagevec.h>
-#include <linux/mpage.h>
-#include <linux/namei.h>
-#include <linux/uio.h>
-#include <linux/bio.h>
-#include <linux/workqueue.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/iomap.h>
-#include <linux/iversion.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/time.h>
+#include <linaos/highuid.h>
+#include <linaos/pagemap.h>
+#include <linaos/dax.h>
+#include <linaos/quotaops.h>
+#include <linaos/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/writeback.h>
+#include <linaos/pagevec.h>
+#include <linaos/mpage.h>
+#include <linaos/namei.h>
+#include <linaos/uio.h>
+#include <linaos/bio.h>
+#include <linaos/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/iomap.h>
+#include <linaos/iversion.h>
 
 #include "ext4_jbd2.h"
 #include "xattr.h"

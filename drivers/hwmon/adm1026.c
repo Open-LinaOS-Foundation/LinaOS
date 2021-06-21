@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * adm1026.c - Part of lm_sensors, Linux kernel modules for hardware
+ * adm1026.c - Part of lm_sensors, LinaOS kernel modules for hardware
  *	       monitoring
  * Copyright (C) 2002, 2003  Philip Pokorny <ppokorny@penguincomputing.com>
  * Copyright (C) 2004 Justin Thiessen <jthiessen@penguincomputing.com>
@@ -10,16 +10,16 @@
  * <https://www.onsemi.com/PowerSolutions/product.do?id=ADM1026>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2c, 0x2d, 0x2e, I2C_CLIENT_END };

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/debugfs.h>
-#include <linux/ras.h>
+#include <linaos/debugfs.h>
+#include <linaos/ras.h>
 #include "debugfs.h"
 
 struct dentry *ras_debugfs_dir;

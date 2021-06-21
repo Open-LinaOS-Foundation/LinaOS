@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/media/platform/s5p-mfc/s5p_mfc_pm.c
+ * linaos/drivers/media/platform/s5p-mfc/s5p_mfc_pm.c
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 #include "s5p_mfc_common.h"
 #include "s5p_mfc_debug.h"
 #include "s5p_mfc_pm.h"

@@ -18,7 +18,7 @@
 #ifndef __MACH_ADS8260_DEFS
 #define __MACH_ADS8260_DEFS
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 /* The ADS8260 has 16, 32-bit wide control/status registers, accessed
  * only on word boundaries.

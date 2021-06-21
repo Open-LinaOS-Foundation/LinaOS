@@ -5,13 +5,13 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 #include "ade7854.h"
 
 static int ade7854_spi_write_reg(struct device *dev,

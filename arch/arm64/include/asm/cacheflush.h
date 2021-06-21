@@ -8,8 +8,8 @@
 #ifndef __ASM_CACHEFLUSH_H
 #define __ASM_CACHEFLUSH_H
 
-#include <linux/kgdb.h>
-#include <linux/mm.h>
+#include <linaos/kgdb.h>
+#include <linaos/mm.h>
 
 /*
  * This flag is used to indicate that the page pointed to by a pte is clean

@@ -5,19 +5,19 @@
  * Copyright (c) 2017 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
 
 #define MESON_MX_EFUSE_CNTL1					0x04
 #define MESON_MX_EFUSE_CNTL1_PD_ENABLE				BIT(27)

@@ -5,12 +5,12 @@ Overview
 --------
 The libnvdimm subsystem manages persistent memory across multiple
 architectures. The mailing list is tracked by patchwork here:
-https://patchwork.kernel.org/project/linux-nvdimm/list/
+https://patchwork.kernel.org/project/linaos-nvdimm/list/
 ...and that instance is configured to give feedback to submitters on
 patch acceptance and upstream merge. Patches are merged to either the
 'libnvdimm-fixes' or 'libnvdimm-for-next' branch. Those branches are
 available here:
-https://git.kernel.org/pub/scm/linux/kernel/git/nvdimm/nvdimm.git/
+https://git.kernel.org/pub/scm/linaos/kernel/git/nvdimm/nvdimm.git/
 
 In general patches can be submitted against the latest -rc; however, if
 the incoming code change is dependent on other pending changes then the

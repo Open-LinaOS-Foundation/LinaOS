@@ -11,7 +11,7 @@
 #ifndef _FPU_ASM_H_
 #define _FPU_ASM_H_
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define	EXCEPTION	FPU_exception
 

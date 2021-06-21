@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _S390_UAPI_RUNTIME_INSTR_H
 #define _S390_UAPI_RUNTIME_INSTR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define S390_RUNTIME_INSTR_START	0x1
 #define S390_RUNTIME_INSTR_STOP		0x2

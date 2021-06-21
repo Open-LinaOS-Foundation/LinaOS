@@ -10,14 +10,14 @@ Required properties:
 
 Optional properties:
 	- poll-interval: Poll interval time in milliseconds
-	- autorepeat: Boolean, Enable auto repeat feature of Linux input
+	- autorepeat: Boolean, Enable auto repeat feature of LinaOS input
 	  subsystem.
 
 Each button (key) is represented as a sub-node of "adc-keys":
 
 Required subnode-properties:
 	- label: Descriptive name of the key.
-	- linux,code: Keycode to emit.
+	- linaos,code: Keycode to emit.
 	- press-threshold-microvolt: voltage above or equal to which this key is
 				     considered pressed.
 
@@ -37,19 +37,19 @@ Example:
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <1500000>;
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <1000000>;
 		};
 
 		button-enter {
 			label = "Enter";
-			linux,code = <KEY_ENTER>;
+			linaos,code = <KEY_ENTER>;
 			press-threshold-microvolt = <500000>;
 		};
 	};

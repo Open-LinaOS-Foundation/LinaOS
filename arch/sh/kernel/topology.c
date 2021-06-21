@@ -4,14 +4,14 @@
  *
  *  Copyright (C) 2007  Paul Mundt
  */
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/topology.h>
-#include <linux/node.h>
-#include <linux/nodemask.h>
-#include <linux/export.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/init.h>
+#include <linaos/percpu.h>
+#include <linaos/topology.h>
+#include <linaos/node.h>
+#include <linaos/nodemask.h>
+#include <linaos/export.h>
 
 static DEFINE_PER_CPU(struct cpu, cpu_devices);
 

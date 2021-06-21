@@ -7,20 +7,20 @@
  *  Based on corgikbd.c
  */
 
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/gpio.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/gpio.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_platform.h>
 
 struct matrix_keypad {
 	const struct matrix_keypad_platform_data *pdata;
@@ -423,11 +423,11 @@ matrix_keypad_parse_dt(struct device *dev)
 		return ERR_PTR(-EINVAL);
 	}
 
-	if (of_get_property(np, "linux,no-autorepeat", NULL))
+	if (of_get_property(np, "linaos,no-autorepeat", NULL))
 		pdata->no_autorepeat = true;
 
 	pdata->wakeup = of_property_read_bool(np, "wakeup-source") ||
-			of_property_read_bool(np, "linux,wakeup"); /* legacy */
+			of_property_read_bool(np, "linaos,wakeup"); /* legacy */
 
 	if (of_get_property(np, "gpio-activelow", NULL))
 		pdata->active_low = true;

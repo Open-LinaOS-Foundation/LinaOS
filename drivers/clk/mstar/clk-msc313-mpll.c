@@ -5,10 +5,10 @@
  * Copyright (C) 2020 Daniel Palmer <daniel@thingy.jp>
  */
 
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_address.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
 
 #define REG_CONFIG1	0x8
 #define REG_CONFIG2	0xc

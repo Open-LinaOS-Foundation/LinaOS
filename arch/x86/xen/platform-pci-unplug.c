@@ -7,9 +7,9 @@
  * Copyright (c) 2010, Citrix
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
 
 #include <xen/xen.h>
 #include <xen/platform_pci.h>

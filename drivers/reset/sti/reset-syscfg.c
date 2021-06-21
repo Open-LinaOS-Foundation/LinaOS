@@ -5,14 +5,14 @@
  *
  * Inspired by mach-imx/src.c
  */
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/types.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 
 #include "reset-syscfg.h"
 

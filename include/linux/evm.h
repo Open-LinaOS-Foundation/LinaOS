@@ -9,8 +9,8 @@
 #ifndef _LINUX_EVM_H
 #define _LINUX_EVM_H
 
-#include <linux/integrity.h>
-#include <linux/xattr.h>
+#include <linaos/integrity.h>
+#include <linaos/xattr.h>
 
 struct integrity_iint_cache;
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  w83795.c - Linux kernel driver for hardware monitoring
+ *  w83795.c - LinaOS kernel driver for hardware monitoring
  *  Copyright (C) 2008 Nuvoton Technology Corp.
  *                Wei Song
  *  Copyright (C) 2010 Jean Delvare <jdelvare@suse.de>
@@ -12,17 +12,17 @@
  *  w83795adg   18     14     2     6     8    0x79   0x5ca3  yes   no
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
-#include <linux/util_macros.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/jiffies.h>
+#include <linaos/util_macros.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = {

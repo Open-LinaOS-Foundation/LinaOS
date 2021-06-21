@@ -10,7 +10,7 @@
 #ifndef TS2020_H
 #define TS2020_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct ts2020_config {
 	u8 tuner_address;

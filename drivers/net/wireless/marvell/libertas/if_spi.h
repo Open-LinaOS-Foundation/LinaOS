@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	linux/drivers/net/wireless/libertas/if_spi.c
+ *	linaos/drivers/net/wireless/libertas/if_spi.c
  *
  *	Driver for Marvell SPI WLAN cards.
  *

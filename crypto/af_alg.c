@@ -7,18 +7,18 @@
  * Copyright (c) 2010 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <crypto/if_alg.h>
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/security.h>
+#include <linaos/crypto.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/rwsem.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
+#include <linaos/security.h>
 
 struct alg_type_list {
 	const struct af_alg_type *type;

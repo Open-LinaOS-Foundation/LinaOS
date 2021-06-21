@@ -5,19 +5,19 @@
  * Copyright (c) 2020 Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
-#include <linux/uaccess.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/sizes.h>
+#include <linaos/uaccess.h>
 
 #define SSO_DEV_NAME			"lgm-sso"
 
@@ -647,7 +647,7 @@ __sso_led_dt_parse(struct sso_led_priv *priv, struct fwnode_handle *fw_ssoled)
 		}
 
 		fwnode_property_read_string(fwnode_child,
-					    "linux,default-trigger",
+					    "linaos,default-trigger",
 					    &desc->default_trigger);
 
 		if (fwnode_property_present(fwnode_child,

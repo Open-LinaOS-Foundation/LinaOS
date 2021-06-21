@@ -5,15 +5,15 @@
  * Copyright (c) 2020, Intel Corporation.
  * All Rights Reserved.
  *
- * Author: "David E. Box" <david.e.box@linux.intel.com>
+ * Author: "David E. Box" <david.e.box@linaos.intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/overflow.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/overflow.h>
 
 #include "intel_pmt_class.h"
 
@@ -134,7 +134,7 @@ static void __exit pmt_telem_exit(void)
 }
 module_exit(pmt_telem_exit);
 
-MODULE_AUTHOR("David E. Box <david.e.box@linux.intel.com>");
+MODULE_AUTHOR("David E. Box <david.e.box@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel PMT Telemetry driver");
 MODULE_ALIAS("platform:" TELEM_DEV_NAME);
 MODULE_LICENSE("GPL v2");

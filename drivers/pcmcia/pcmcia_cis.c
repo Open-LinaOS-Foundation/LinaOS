@@ -10,10 +10,10 @@
  * Copyright (C) 2004-2010   Dominik Brodowski
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
 
 #include <pcmcia/cisreg.h>
 #include <pcmcia/cistpl.h>

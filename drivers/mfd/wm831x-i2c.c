@@ -7,19 +7,19 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/core.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/pdata.h>
 
 static int wm831x_i2c_probe(struct i2c_client *i2c,
 			    const struct i2c_device_id *id)

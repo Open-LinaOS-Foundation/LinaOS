@@ -4,12 +4,12 @@
  * Copyright (C) 2012-2016 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/host1x.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/host1x.h>
+#include <linaos/idr.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

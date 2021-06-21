@@ -5,13 +5,13 @@
  * Copyright (C) 2009 Jason Baron <jbaron@redhat.com>
  *
  */
-#include <linux/jump_label.h>
-#include <linux/memory.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/cpu.h>
+#include <linaos/jump_label.h>
+#include <linaos/memory.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/jhash.h>
+#include <linaos/cpu.h>
 #include <asm/kprobes.h>
 #include <asm/alternative.h>
 #include <asm/text-patching.h>

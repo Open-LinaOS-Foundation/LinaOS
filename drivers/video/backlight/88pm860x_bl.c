@@ -6,16 +6,16 @@
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/i2c.h>
-#include <linux/backlight.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
+#include <linaos/i2c.h>
+#include <linaos/backlight.h>
+#include <linaos/mfd/88pm860x.h>
+#include <linaos/module.h>
 
 #define MAX_BRIGHTNESS		(0xFF)
 #define MIN_BRIGHTNESS		(0)

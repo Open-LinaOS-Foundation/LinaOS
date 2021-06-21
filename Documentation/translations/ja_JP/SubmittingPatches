@@ -1,7 +1,7 @@
 NOTE:
 This is a version of Documentation/process/submitting-patches.rst into Japanese.
 This document is maintained by Keiichi KII <k-keiichi@bx.jp.nec.com>
-and the JF Project team <http://www.linux.or.jp/JF/>.
+and the JF Project team <http://www.linaos.or.jp/JF/>.
 If you find any difference between this document and the original file
 or a problem with the translation,
 please contact the maintainer of this file or JF project.
@@ -15,9 +15,9 @@ Last Updated: 2011/06/09
 
 ==================================
 これは、
-linux-2.6.39/Documentation/process/submitting-patches.rst の和訳
+linaos-2.6.39/Documentation/process/submitting-patches.rst の和訳
 です。
-翻訳団体： JF プロジェクト < http://www.linux.or.jp/JF/ >
+翻訳団体： JF プロジェクト < http://www.linaos.or.jp/JF/ >
 翻訳日： 2011/06/09
 翻訳者： Keiichi Kii <k-keiichi at bx dot jp dot nec dot com>
 校正者： Masanari Kobayashi さん <zap03216 at nifty dot ne dot jp>
@@ -25,11 +25,11 @@ linux-2.6.39/Documentation/process/submitting-patches.rst の和訳
          Takeshi Hamasaki さん <hmatrjp at users dot sourceforge dot jp>
 ==================================
 
-        Linux カーネルに変更を加えるための Howto
+        LinaOS カーネルに変更を加えるための Howto
         又は
         かの Linus Torvalds の取り扱い説明書
 
-Linux カーネルに変更を加えたいと思っている個人又は会社にとって、パッ
+LinaOS カーネルに変更を加えたいと思っている個人又は会社にとって、パッ
 チの投稿に関連した仕組みに慣れていなければ、その過程は時々みなさんを
 おじけづかせることもあります。この文章はあなたの変更を大いに受け入れ
 てもらえやすくする提案を集めたものです。
@@ -47,18 +47,18 @@ Linux カーネルに変更を加えたいと思っている個人又は会社�
 
 パッチの作成には「 diff -up 」又は「 diff -uprN 」を使ってください。
 
-Linux カーネルに対する全ての変更は diff(1) コマンドによるパッチの形式で
+LinaOS カーネルに対する全ての変更は diff(1) コマンドによるパッチの形式で
 生成してください。パッチを作成するときには、diff(1) コマンドに「 -u 」引
 数を指定して、unified 形式のパッチを作成することを確認してください。また、
 変更がどの C 関数で行われたのかを表示する「 -p 」引数を使ってください。
-この引数は生成した差分をずっと読みやすくしてくれます。パッチは Linux
-カーネルソースの中のサブディレクトリではなく Linux カーネルソースのルート
+この引数は生成した差分をずっと読みやすくしてくれます。パッチは LinaOS
+カーネルソースの中のサブディレクトリではなく LinaOS カーネルソースのルート
 ディレクトリを基準にしないといけません。
 
 1個のファイルについてのパッチを作成するためには、ほとんどの場合、
 以下の作業を行えば十分です。
 
-	SRCTREE=linux-2.6
+	SRCTREE=linaos-2.6
 	MYFILE=drivers/net/mydriver.c
 
 	cd $SRCTREE
@@ -68,22 +68,22 @@ Linux カーネルに対する全ての変更は diff(1) コマンドによる�
 	diff -up $SRCTREE/$MYFILE{.orig,} > /tmp/patch
 
 複数のファイルについてのパッチを作成するためには、素の( vanilla )、す
-なわち変更を加えてない Linux カーネルを展開し、自分の Linux カーネル
+なわち変更を加えてない LinaOS カーネルを展開し、自分の LinaOS カーネル
 ソースとの差分を生成しないといけません。例えば、
 
-	MYSRC=/devel/linux-2.6
+	MYSRC=/devel/linaos-2.6
 
-	tar xvfz linux-2.6.12.tar.gz
-	mv linux-2.6.12 linux-2.6.12-vanilla
-	diff -uprN -X linux-2.6.12-vanilla/Documentation/dontdiff \
-		linux-2.6.12-vanilla $MYSRC > /tmp/patch
+	tar xvfz linaos-2.6.12.tar.gz
+	mv linaos-2.6.12 linaos-2.6.12-vanilla
+	diff -uprN -X linaos-2.6.12-vanilla/Documentation/dontdiff \
+		linaos-2.6.12-vanilla $MYSRC > /tmp/patch
 
-dontdiff ファイルには Linux カーネルのビルドプロセスの過程で生成された
+dontdiff ファイルには LinaOS カーネルのビルドプロセスの過程で生成された
 ファイルの一覧がのっています。そして、それらはパッチを生成する diff(1)
 コマンドで無視されるべきです。dontdiff ファイルは 2.6.12 以後のバージョ
-ンの Linux カーネルソースツリーに含まれています。それより前のバージョン
-の Linux カーネルソースツリーに対する dontdiff ファイルは、
-<http://www.xenotime.net/linux/doc/dontdiff>から取得することができます。
+ンの LinaOS カーネルソースツリーに含まれています。それより前のバージョン
+の LinaOS カーネルソースツリーに対する dontdiff ファイルは、
+<http://www.xenotime.net/linaos/doc/dontdiff>から取得することができます。
 
 投稿するパッチの中に関係のない余分なファイルが含まれていないことを確
 認してください。diff(1) コマンドで生成したパッチがあなたの意図したとお
@@ -106,7 +106,7 @@ http://savannah.nongnu.org/projects/quilt
 「ドライバー X に対するバグフィックス」あるいは「このパッチはサブシス
 テム X に対する更新を含んでいます。どうか取り入れてください。」などです。
 
-パッチの説明を Linux カーネルのソースコードマネジメントシステム「 git 」の
+パッチの説明を LinaOS カーネルのソースコードマネジメントシステム「 git 」の
 コミットログとして簡単に引用できる形で書けば、メンテナから感謝されるでしょう。
 以下の #15 を見てください。
 
@@ -147,7 +147,7 @@ http://savannah.nongnu.org/projects/quilt
 
 4) パッチのスタイルチェック
 
-あなたのパッチが基本的な( Linux カーネルの)コーディングスタイルに違反し
+あなたのパッチが基本的な( LinaOS カーネルの)コーディングスタイルに違反し
 ていないかをチェックして下さい。その詳細を Documentation/process/coding-style.rst で
 見つけることができます。コーディングスタイルの違反はレビューする人の
 時間を無駄にするだけなので、恐らくあなたのパッチは読まれることすらなく
@@ -165,15 +165,15 @@ MAINTAINERS ファイルとソースコードに目を通してください。�
 れば、その人に電子メールを送ってください。
 
 もし、メンテナが載っていなかったり、メンテナからの応答がないなら、
-LKML ( linux-kernel@vger.kernel.org )へパッチを送ってください。ほとんど
+LKML ( linaos-kernel@vger.kernel.org )へパッチを送ってください。ほとんど
 のカーネル開発者はこのメーリングリストに目を通しており、変更に対して
 コメントを得ることができます。
 
 15個より多くのパッチを同時に vger.kernel.org のメーリングリストへ送らな
 いでください!!!
 
-Linus Torvalds は Linux カーネルに入る全ての変更に対する最終的な意思決定者
-です。電子メールアドレスは torvalds@linux-foundation.org になります。彼は
+Linus Torvalds は LinaOS カーネルに入る全ての変更に対する最終的な意思決定者
+です。電子メールアドレスは torvalds@linaos-foundation.org になります。彼は
 多くの電子メールを受け取っているため、できる限り彼に電子メールを送るのは
 避けるべきです。
 
@@ -189,7 +189,7 @@ Linus へ送るべきです。
 
 Linus 以外のカーネル開発者は変更に気づく必要があり、その結果、彼らはそ
 の変更に対してコメントをくれたり、コードに対してレビューや提案をくれ
-るかもしれません。LKML とは Linux カーネル開発者にとって一番中心的なメー
+るかもしれません。LKML とは LinaOS カーネル開発者にとって一番中心的なメー
 リングリストです。USB やフレームバッファデバイスや VFS や SCSI サブシステ
 ムなどの特定のサブシステムに関するメーリングリストもあります。あなた
 の変更に、はっきりと関連のあるメーリングリストについて知りたければ
@@ -277,7 +277,7 @@ MIME 形式の添付ファイルは Linus に手間を取らせることにな�
 Linus があなたのパッチに対して何のコメントもなく不採用にすることは極め
 て普通のことです。それは自然な姿です。もし、Linus があなたのパッチを受
 け取っていないのであれば、以下の理由が考えられます。
-* パッチが最新バージョンの Linux カーネルにきちんと適用できなかった
+* パッチが最新バージョンの LinaOS カーネルにきちんと適用できなかった
 * パッチが LKML で十分に議論されていなかった
 * スタイルの問題(セクション2を参照)
 * 電子メールフォーマットの問題(このセクションを参照)
@@ -298,7 +298,7 @@ Linus や LKML への大量の電子メールのために、サブジェクト�
 12) パッチへの署名
 
 誰が何をしたのかを追いかけやすくするために (特に、パッチが何人かの
-メンテナを経て最終的に Linux カーネルに取り込まれる場合のために)、電子
+メンテナを経て最終的に LinaOS カーネルに取り込まれる場合のために)、電子
 メールでやり取りされるパッチに対して「 sign-off 」という手続きを導入し
 ました。
 
@@ -604,7 +604,7 @@ diffstat の結果を生成するために「 git diff -M --stat --summary 」�
 セクション2 - ヒントとTIPSと小技
 ------------------------------------
 
-このセクションは Linux カーネルに変更を適用することに関係のある一般的な
+このセクションは LinaOS カーネルに変更を適用することに関係のある一般的な
 「お約束」の多くを載せています。物事には例外というものがあります。しか
 し例外を適用するには、本当に妥当な理由が不可欠です。あなたは恐らくこの
 セクションを Linus のコンピュータ・サイエンス101と呼ぶでしょう。
@@ -692,8 +692,8 @@ gcc においては、マクロと同じくらい軽いです。
 Andrew Morton, "The perfect patch" (tpp).
   <http://www.ozlabs.org/~akpm/stuff/tpp.txt>
 
-Jeff Garzik, "Linux kernel patch submission format".
-  <https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html>
+Jeff Garzik, "LinaOS kernel patch submission format".
+  <https://web.archive.org/web/20180829112450/http://linaos.yyz.us/patch-format.html>
 
 Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
   <http://www.kroah.com/log/2005/03/31/>
@@ -701,7 +701,7 @@ Greg Kroah-Hartman, "How to piss off a kernel subsystem maintainer".
   <http://www.kroah.com/log/2005/10/19/>
   <http://www.kroah.com/log/2006/01/11/>
 
-NO!!!! No more huge patch bombs to linux-kernel@vger.kernel.org people!
+NO!!!! No more huge patch bombs to linaos-kernel@vger.kernel.org people!
   <https://lore.kernel.org/r/20050711.125305.08322243.davem@davemloft.net>
 
 Kernel Documentation/process/coding-style.rst:

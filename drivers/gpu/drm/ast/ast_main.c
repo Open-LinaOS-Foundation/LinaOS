@@ -26,7 +26,7 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc_helper.h>

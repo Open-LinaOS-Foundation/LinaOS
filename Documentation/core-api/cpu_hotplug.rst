@@ -20,7 +20,7 @@ insertion and removal require support for CPU hotplug.
 Such advances require CPUs available to a kernel to be removed either for
 provisioning reasons, or for RAS purposes to keep an offending CPU off
 system execution path. Hence the need for CPU hotplug support in the
-Linux kernel.
+LinaOS kernel.
 
 A more novel use of CPU-hotplug support is its use today in suspend resume
 support for SMP. Dual-core and HT support makes even a laptop run SMP kernels
@@ -162,7 +162,7 @@ It is possible to receive notifications once a CPU is offline or onlined. This
 might be important to certain drivers which need to perform some kind of setup
 or clean up functions based on the number of available CPUs: ::
 
-  #include <linux/cpuhotplug.h>
+  #include <linaos/cpuhotplug.h>
 
   ret = cpuhp_setup_state(CPUHP_AP_ONLINE_DYN, "X/Y:online",
                           Y_online, Y_prepare_down);
@@ -226,7 +226,7 @@ hotplug operations.
 
 The ordering of the events
 --------------------------
-The hotplug states are defined in ``include/linux/cpuhotplug.h``:
+The hotplug states are defined in ``include/linaos/cpuhotplug.h``:
 
 * The states *CPUHP_OFFLINE* … *CPUHP_AP_OFFLINE* are invoked before the
   CPU is up.
@@ -362,4 +362,4 @@ can process the event further.
 Kernel Inline Documentations Reference
 ======================================
 
-.. kernel-doc:: include/linux/cpuhotplug.h
+.. kernel-doc:: include/linaos/cpuhotplug.h

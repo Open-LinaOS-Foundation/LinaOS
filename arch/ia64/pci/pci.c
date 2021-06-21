@@ -12,17 +12,17 @@
  * Note: Above list of copyright holders is incomplete...
  */
 
-#include <linux/acpi.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
+#include <linaos/acpi.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/memblock.h>
+#include <linaos/export.h>
 
 #include <asm/page.h>
 #include <asm/io.h>

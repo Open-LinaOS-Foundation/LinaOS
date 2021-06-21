@@ -5,14 +5,14 @@
  * Copyright (C) Jay Lan,	<jlan@sgi.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/cputime.h>
-#include <linux/tsacct_kern.h>
-#include <linux/acct.h>
-#include <linux/jiffies.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/tsacct_kern.h>
+#include <linaos/acct.h>
+#include <linaos/jiffies.h>
+#include <linaos/mm.h>
 
 /*
  * fill in basic accounting fields

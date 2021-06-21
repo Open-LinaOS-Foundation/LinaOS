@@ -6,7 +6,7 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linaos-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linaos-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linaos-wlan.com
+ * http://www.linaos-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -45,29 +45,29 @@
  *
  * --------------------------------------------------------------------
  *
- * This file implements the module and linux pcmcia routines for the
+ * This file implements the module and linaos pcmcia routines for the
  * prism2 driver.
  *
  * --------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/byteorder/generic.h>
-#include <linux/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/wireless.h>
+#include <linaos/netdevice.h>
+#include <linaos/workqueue.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/etherdevice.h>
 
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
 #include <asm/byteorder.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/bitops.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/bitops.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"
@@ -332,7 +332,7 @@ static int prism2sta_mlmerequest(struct wlandevice *wlandev,
 		result = prism2mgmt_flashdl_write(wlandev, msg);
 		break;
 		/*
-		 * Linux specific messages
+		 * LinaOS specific messages
 		 */
 	case DIDMSG_LNXREQ_HOSTWEP:
 		break;		/* ignore me. */
@@ -1828,7 +1828,7 @@ void prism2sta_ev_txexc(struct wlandevice *wlandev, u16 status)
 void prism2sta_ev_tx(struct wlandevice *wlandev, u16 status)
 {
 	pr_debug("Tx Complete, status=0x%04x\n", status);
-	/* update linux network stats */
+	/* update linaos network stats */
 	wlandev->netdev->stats.tx_packets++;
 }
 

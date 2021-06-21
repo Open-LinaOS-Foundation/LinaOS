@@ -67,7 +67,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #define DECLARE_KVM_VHE_SYM(sym)	extern char sym[]
 #define DECLARE_KVM_NVHE_SYM(sym)	extern char kvm_nvhe_sym(sym)[]

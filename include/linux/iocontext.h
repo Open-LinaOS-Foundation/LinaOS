@@ -2,9 +2,9 @@
 #ifndef IOCONTEXT_H
 #define IOCONTEXT_H
 
-#include <linux/radix-tree.h>
-#include <linux/rcupdate.h>
-#include <linux/workqueue.h>
+#include <linaos/radix-tree.h>
+#include <linaos/rcupdate.h>
+#include <linaos/workqueue.h>
 
 enum {
 	ICQ_EXITED		= 1 << 2,

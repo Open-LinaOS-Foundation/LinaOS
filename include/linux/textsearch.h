@@ -2,11 +2,11 @@
 #ifndef __LINUX_TEXTSEARCH_H
 #define __LINUX_TEXTSEARCH_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 
 struct module;
 

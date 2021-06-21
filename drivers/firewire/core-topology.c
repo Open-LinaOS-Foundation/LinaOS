@@ -5,18 +5,18 @@
  * Copyright (C) 2004-2006 Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

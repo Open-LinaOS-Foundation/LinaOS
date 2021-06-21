@@ -12,12 +12,12 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/quirks.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/quirks.h>
+#include <linaos/of.h>
 #include "usb.h"
 
 /* Active configuration fields */

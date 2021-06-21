@@ -3,12 +3,12 @@
  * Copyright 2008  by Karsten Keil <kkeil@novell.com>
  */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/mISDNif.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/mISDNif.h>
 #include "core.h"
 
 static u_int debug;

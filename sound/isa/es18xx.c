@@ -62,14 +62,14 @@
  *   needed for ZV, so maybe the datasheet is entirely wrong here.
  */
  
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/isapnp.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/isa.h>
+#include <linaos/pnp.h>
+#include <linaos/isapnp.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 
 #include <asm/dma.h>
 #include <sound/core.h>

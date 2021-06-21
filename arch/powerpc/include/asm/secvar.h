@@ -8,8 +8,8 @@
 #ifndef SECVAR_OPS_H
 #define SECVAR_OPS_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 
 extern const struct secvar_operations *secvar_ops;
 

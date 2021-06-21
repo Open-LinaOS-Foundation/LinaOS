@@ -6,15 +6,15 @@
  * Copyright (C) 2008 Secret Lab Technologies Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

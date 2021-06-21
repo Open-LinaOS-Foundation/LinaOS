@@ -5,20 +5,20 @@
  * Copyright (C) 2014 Carlo Caione <carlo@caione.org>
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 
 /* Register offsets */
 #define AML_UART_WFIFO			0x00

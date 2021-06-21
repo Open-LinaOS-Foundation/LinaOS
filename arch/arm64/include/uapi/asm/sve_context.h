@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* Copyright (C) 2017-2018 ARM Limited */
 
 /*
@@ -9,7 +9,7 @@
 #ifndef _UAPI__ASM_SVE_CONTEXT_H
 #define _UAPI__ASM_SVE_CONTEXT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define __SVE_VQ_BYTES		16	/* number of bytes per quadword */
 

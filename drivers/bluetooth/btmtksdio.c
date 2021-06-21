@@ -11,18 +11,18 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
-#include <linux/firmware.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/skbuff.h>
+#include <linaos/atomic.h>
+#include <linaos/firmware.h>
+#include <linaos/init.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/skbuff.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/sdio_ids.h>
+#include <linaos/mmc/sdio_func.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

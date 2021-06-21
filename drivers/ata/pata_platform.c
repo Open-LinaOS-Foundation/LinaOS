@@ -11,14 +11,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <linaos/ata.h>
+#include <linaos/libata.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
 
 #define DRV_NAME "pata_platform"
 #define DRV_VERSION "1.2"

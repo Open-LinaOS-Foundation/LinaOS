@@ -23,7 +23,7 @@ config IWL4965
 	  In order to use this driver, you will need a microcode (uCode)
 	  image for it. You can obtain the microcode from:
 
-	          <http://intellinuxwireless.org/>.
+	          <http://intellinaoswireless.org/>.
 
 	  The microcode is typically installed in /lib/firmware. You can
 	  look in the hotplug script /etc/hotplug/firmware.agent to
@@ -49,7 +49,7 @@ config IWL3945
 	  In order to use this driver, you will need a microcode (uCode)
 	  image for it. You can obtain the microcode from:
 
-	          <http://intellinuxwireless.org/>.
+	          <http://intellinaoswireless.org/>.
 
 	  The microcode is typically installed in /lib/firmware. You can
 	  look in the hotplug script /etc/hotplug/firmware.agent to

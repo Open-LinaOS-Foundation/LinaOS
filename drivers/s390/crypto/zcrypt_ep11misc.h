@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
  *  Copyright IBM Corp. 2019
- *  Author(s): Harald Freudenberger <freude@linux.ibm.com>
+ *  Author(s): Harald Freudenberger <freude@linaos.ibm.com>
  *
  *  Collection of EP11 misc functions used by zcrypt and pkey
  */

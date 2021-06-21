@@ -9,10 +9,10 @@
 #ifndef CXD2880_COMMON_H
 #define CXD2880_COMMON_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
 
 int cxd2880_convert2s_complement(u32 value, u32 bitlen);
 

@@ -30,7 +30,7 @@
 		button-esc {
 			debounce-interval = <100>;
 			wakeup-source;
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			label = "reset";
 			/* Collides with LPC_LAD[0], UART DCD, SSP 97RST */
 			gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
@@ -38,7 +38,7 @@
 		button-eject {
 			debounce-interval = <100>;
 			wakeup-source;
-			linux,code = <KEY_EJECTCD>;
+			linaos,code = <KEY_EJECTCD>;
 			label = "unmount";
 			/* Collides with LPC LFRAME, UART RTS, SSP TXD */
 			gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
@@ -91,7 +91,7 @@
 			/* Collides with ICE */
 			gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 		/*
 		 * These two LEDs are on the side of the device.
@@ -106,14 +106,14 @@
 			/* Collides with LPC_SERIRQ, UART DTR, SSP FSC pins */
 			gpios = <&gpio0 11 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "disk-read";
+			linaos,default-trigger = "disk-read";
 		};
 		led-orange-hd {
 			label = "dir685:orange:HD";
 			/* Collides with LPC_LAD[2], UART DSR, SSP ECLK pins */
 			gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "disk-write";
+			linaos,default-trigger = "disk-write";
 		};
 	};
 

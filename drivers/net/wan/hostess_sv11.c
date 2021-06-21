@@ -23,17 +23,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/hdlc.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/net.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/delay.h>
+#include <linaos/hdlc.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
 #include <net/arp.h>
 
 #include <asm/irq.h>
@@ -218,7 +218,7 @@ static struct z8530_dev *sv11_init(int iobase, int irq)
 	outb(0, iobase + 4);		/* DMA off */
 
 	/* We want a fast IRQ for this device. Actually we'd like an even faster
-	   IRQ ;) - This is one driver RtLinux is made for */
+	   IRQ ;) - This is one driver RtLinaOS is made for */
 
 	if (request_irq(irq, z8530_interrupt, 0,
 			"Hostess SV11", sv) < 0) {

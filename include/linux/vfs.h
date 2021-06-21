@@ -2,6 +2,6 @@
 #ifndef _LINUX_VFS_H
 #define _LINUX_VFS_H
 
-#include <linux/statfs.h>
+#include <linaos/statfs.h>
 
 #endif

@@ -35,18 +35,18 @@
 /* 4 MAX3100s should be enough for everyone */
 #define MAX_MAX3100 4
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/spi/spi.h>
-#include <linux/freezer.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/spi/spi.h>
+#include <linaos/freezer.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 
-#include <linux/serial_max3100.h>
+#include <linaos/serial_max3100.h>
 
 #define MAX3100_C    (1<<14)
 #define MAX3100_D    (0<<14)

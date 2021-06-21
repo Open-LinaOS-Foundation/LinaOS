@@ -5,8 +5,8 @@
 
 #define pr_fmt(fmt)	"pseries-rng: " fmt
 
-#include <linux/kernel.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
 #include <asm/archrandom.h>
 #include <asm/machdep.h>
 #include <asm/plpar_wrappers.h>

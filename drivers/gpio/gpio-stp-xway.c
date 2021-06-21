@@ -4,16 +4,16 @@
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/of_platform.h>
-#include <linux/mutex.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/of_platform.h>
+#include <linaos/mutex.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
 
 /*
  * The Serial To Parallel (STP) is found on MIPS based Lantiq socs. It is a

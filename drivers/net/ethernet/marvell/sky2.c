@@ -12,29 +12,29 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/crc32.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
+#include <linaos/crc32.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/slab.h>
 #include <net/ip.h>
-#include <linux/tcp.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/prefetch.h>
-#include <linux/debugfs.h>
-#include <linux/mii.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/dmi.h>
+#include <linaos/tcp.h>
+#include <linaos/in.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/if_vlan.h>
+#include <linaos/prefetch.h>
+#include <linaos/debugfs.h>
+#include <linaos/mii.h>
+#include <linaos/of_device.h>
+#include <linaos/of_net.h>
+#include <linaos/dmi.h>
 
 #include <asm/irq.h>
 
@@ -5292,6 +5292,6 @@ module_init(sky2_init_module);
 module_exit(sky2_cleanup_module);
 
 MODULE_DESCRIPTION("Marvell Yukon 2 Gigabit Ethernet driver");
-MODULE_AUTHOR("Stephen Hemminger <shemminger@linux-foundation.org>");
+MODULE_AUTHOR("Stephen Hemminger <shemminger@linaos-foundation.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(DRV_VERSION);

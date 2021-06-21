@@ -12,7 +12,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct dm_io_region {
 	struct block_device *bdev;

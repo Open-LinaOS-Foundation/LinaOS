@@ -8,8 +8,8 @@
  *
  */
 
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
+#include <linaos/mISDNif.h>
+#include <linaos/mISDNdsp.h>
 #include "core.h"
 #include "dsp.h"
 

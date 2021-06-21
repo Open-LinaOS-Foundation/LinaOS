@@ -4,15 +4,15 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/overflow.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/overflow.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/vmalloc.h>
 
 #define DEFINE_TEST_ARRAY(t)			\
 	static const struct test_ ## t {	\

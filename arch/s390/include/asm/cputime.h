@@ -8,7 +8,7 @@
 #ifndef _S390_CPUTIME_H
 #define _S390_CPUTIME_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/timex.h>
 
 #define CPUTIME_PER_USEC 4096ULL

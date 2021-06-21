@@ -38,13 +38,13 @@
 
 		user-led0 {
 			gpios = <&gpio1 30 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "on";
 		};
 
 		user-led1 {
 			gpios = <&gpio1 31 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "gpio";
+			linaos,default-trigger = "gpio";
 			default-state = "on";
 		};
 	};
@@ -56,14 +56,14 @@
 
 		button@0 {
 			label = "home";
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			gpios = <&gpio3 7 GPIO_ACTIVE_HIGH>;
 			wakeup-source;
 		};
 
 		button@1 {
 			label = "menu";
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			gpios = <&gpio3 8 GPIO_ACTIVE_HIGH>;
 			wakeup-source;
 		};

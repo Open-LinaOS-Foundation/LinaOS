@@ -11,7 +11,7 @@
 #ifndef CX22700_H
 #define CX22700_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct cx22700_config
 {

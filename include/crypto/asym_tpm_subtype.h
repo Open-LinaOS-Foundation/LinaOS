@@ -2,7 +2,7 @@
 #ifndef _LINUX_ASYM_TPM_SUBTYPE_H
 #define _LINUX_ASYM_TPM_SUBTYPE_H
 
-#include <linux/keyctl.h>
+#include <linaos/keyctl.h>
 
 struct tpm_key {
 	void *blob;

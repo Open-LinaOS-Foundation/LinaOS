@@ -2,7 +2,7 @@
 /*
  * at91-cosino.dtsi - Device Tree file for Cosino core module
  *
- * Copyright (C) 2013 - Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2013 - Rodolfo Giometti <giometti@linaos.it>
  *			HCE Engineering
  *
  * Derived from at91sam9x5ek.dtsi by:

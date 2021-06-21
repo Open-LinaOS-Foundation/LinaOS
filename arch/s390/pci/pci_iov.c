@@ -3,15 +3,15 @@
  * Copyright IBM Corp. 2020
  *
  * Author(s):
- *   Niklas Schnelle <schnelle@linux.ibm.com>
+ *   Niklas Schnelle <schnelle@linaos.ibm.com>
  *
  */
 
 #define KMSG_COMPONENT "zpci"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
 
 #include "pci_iov.h"
 
@@ -40,7 +40,7 @@ void zpci_iov_map_resources(struct pci_dev *pdev)
 void zpci_iov_remove_virtfn(struct pci_dev *pdev, int vfn)
 {
 	pci_lock_rescan_remove();
-	/* Linux' vfid's start at 0 vfn at 1 */
+	/* LinaOS' vfid's start at 0 vfn at 1 */
 	pci_iov_remove_virtfn(pdev->physfn, vfn - 1);
 	pci_unlock_rescan_remove();
 }
@@ -65,7 +65,7 @@ int zpci_iov_setup_virtfn(struct zpci_bus *zbus, struct pci_dev *virtfn, int vfn
 	int i, cand_devfn;
 	struct zpci_dev *zdev;
 	struct pci_dev *pdev;
-	int vfid = vfn - 1; /* Linux' vfid's start at 0 vfn at 1*/
+	int vfid = vfn - 1; /* LinaOS' vfid's start at 0 vfn at 1*/
 	int rc = 0;
 
 	if (!zbus->multifunction)

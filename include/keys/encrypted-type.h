@@ -12,8 +12,8 @@
 #ifndef _KEYS_ENCRYPTED_TYPE_H
 #define _KEYS_ENCRYPTED_TYPE_H
 
-#include <linux/key.h>
-#include <linux/rcupdate.h>
+#include <linaos/key.h>
+#include <linaos/rcupdate.h>
 
 struct encrypted_key_payload {
 	struct rcu_head rcu;

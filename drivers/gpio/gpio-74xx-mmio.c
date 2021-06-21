@@ -5,11 +5,11 @@
  *  Copyright (C) 2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
 
 #define MMIO_74XX_DIR_IN	(0 << 8)
 #define MMIO_74XX_DIR_OUT	(1 << 8)

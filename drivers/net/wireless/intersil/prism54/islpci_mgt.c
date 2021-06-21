@@ -4,14 +4,14 @@
  *  Copyright 2004 Jens Maurer <Jens.Maurer@gmx.net>
  */
 
-#include <linux/netdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
-#include <linux/if_arp.h>
+#include <linaos/if_arp.h>
 
 #include "prismcompat.h"
 #include "isl_38xx.h"

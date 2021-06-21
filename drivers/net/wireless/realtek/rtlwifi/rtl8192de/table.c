@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2009-2012  Realtek Corporation.*/
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "table.h"
 

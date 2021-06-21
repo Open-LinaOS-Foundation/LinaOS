@@ -3,26 +3,26 @@
  * Copyright (C) 2010 Google, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/ktime.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/iopoll.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/ktime.h>
 
 #include "sdhci-pltfm.h"
 #include "cqhci.h"

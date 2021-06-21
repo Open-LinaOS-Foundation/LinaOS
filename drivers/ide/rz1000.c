@@ -6,7 +6,7 @@
 /*
  *  Principal Author:  mlord@pobox.com (Mark Lord)
  *
- *  See linux/MAINTAINERS for address of current maintainer.
+ *  See linaos/MAINTAINERS for address of current maintainer.
  *
  *  This file provides support for disabling the buggy read-ahead
  *  mode of the RZ1000 IDE chipset, commonly used on Intel motherboards.
@@ -14,12 +14,12 @@
  *  Dunno if this fixes both ports, or only the primary port (?).
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
 
 #define DRV_NAME "rz1000"
 

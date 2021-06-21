@@ -287,14 +287,14 @@ and grayscale formats.
 Drivers that support the FOURCC-based API report this capability by setting
 the FB_CAP_FOURCC bit in the fb_fix_screeninfo capabilities field.
 
-FOURCC definitions are located in the linux/videodev2.h header. However, and
+FOURCC definitions are located in the linaos/videodev2.h header. However, and
 despite starting with the V4L2_PIX_FMT_prefix, they are not restricted to V4L2
 and don't require usage of the V4L2 subsystem. FOURCC documentation is
 available in Documentation/userspace-api/media/v4l/pixfmt.rst.
 
 To select a format, applications set the grayscale field to the desired FOURCC.
 For YUV formats, they should also select the appropriate colorspace by setting
-the colorspace field to one of the colorspaces listed in linux/videodev2.h and
+the colorspace field to one of the colorspaces listed in linaos/videodev2.h and
 documented in Documentation/userspace-api/media/v4l/colorspaces.rst.
 
 The red, green, blue and transp fields are not used with the FOURCC-based API.

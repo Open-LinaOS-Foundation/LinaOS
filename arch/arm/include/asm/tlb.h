@@ -18,7 +18,7 @@
 
 #ifndef CONFIG_MMU
 
-#include <linux/pagemap.h>
+#include <linaos/pagemap.h>
 
 #define tlb_flush(tlb)	((void) tlb)
 
@@ -26,7 +26,7 @@
 
 #else /* !CONFIG_MMU */
 
-#include <linux/swap.h>
+#include <linaos/swap.h>
 #include <asm/tlbflush.h>
 
 static inline void __tlb_remove_table(void *_table)

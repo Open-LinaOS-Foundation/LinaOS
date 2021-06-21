@@ -5,7 +5,7 @@
  * Copyright (c) 2009-2010 MontaVista Software, LLC.
  */
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/cputable.h>

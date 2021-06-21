@@ -33,7 +33,7 @@
 #ifndef _MLX5_FS_HELPERS_
 #define _MLX5_FS_HELPERS_
 
-#include <linux/mlx5/mlx5_ifc.h>
+#include <linaos/mlx5/mlx5_ifc.h>
 
 #define MLX5_FS_IPV4_VERSION 4
 #define MLX5_FS_IPV6_VERSION 6

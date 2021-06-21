@@ -4,12 +4,12 @@
 // Copyright (c) 2011 Samsung Electronics Co., Ltd.
 //		http://www.samsung.com
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cpuidle.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/time.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/cpuidle.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/time.h>
 
 #include <asm/cpuidle.h>
 

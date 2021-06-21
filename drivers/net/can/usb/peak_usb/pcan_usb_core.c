@@ -8,17 +8,17 @@
  *
  * Many thanks to Klaus Hitschler <klaus.hitschler@gmx.de>
  */
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
-#include <linux/ethtool.h>
+#include <linaos/init.h>
+#include <linaos/signal.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/usb.h>
+#include <linaos/ethtool.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
 
 #include "pcan_usb_core.h"
 

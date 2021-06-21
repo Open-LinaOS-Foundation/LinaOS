@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * IPV6 GSO/GRO offload support
- * Linux INET implementation
+ * LinaOS INET implementation
  *
  * Copyright (C) 2016 secunet Security Networks AG
  * Author: Steffen Klassert <steffen.klassert@secunet.com>
@@ -9,23 +9,23 @@
  * ESP GRO support
  */
 
-#include <linux/skbuff.h>
-#include <linux/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
 #include <net/protocol.h>
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/esp.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 #include <net/ip6_route.h>
 #include <net/ipv6.h>
-#include <linux/icmpv6.h>
+#include <linaos/icmpv6.h>
 
 static __u16 esp6_nexthdr_esp_offset(struct ipv6hdr *ipv6_hdr, int nhlen)
 {

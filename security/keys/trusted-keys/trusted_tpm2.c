@@ -4,12 +4,12 @@
  * Copyright (C) 2014 Intel Corporation
  */
 
-#include <linux/asn1_encoder.h>
-#include <linux/oid_registry.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/tpm.h>
-#include <linux/tpm_command.h>
+#include <linaos/asn1_encoder.h>
+#include <linaos/oid_registry.h>
+#include <linaos/string.h>
+#include <linaos/err.h>
+#include <linaos/tpm.h>
+#include <linaos/tpm_command.h>
 
 #include <keys/trusted-type.h>
 #include <keys/trusted_tpm.h>

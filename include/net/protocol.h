@@ -20,12 +20,12 @@
 #ifndef _PROTOCOL_H
 #define _PROTOCOL_H
 
-#include <linux/in6.h>
-#include <linux/skbuff.h>
+#include <linaos/in6.h>
+#include <linaos/skbuff.h>
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/ipv6.h>
+#include <linaos/ipv6.h>
 #endif
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 /* This is one larger than the largest protocol value that can be
  * found in an ipv4 or ipv6 header.  Since in both cases the protocol

@@ -33,7 +33,7 @@
 #define CREATE_TRACE_POINTS
 
 #include "fs_tracepoint.h"
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #define DECLARE_MASK_VAL(type, name) struct {type m; type v; } name
 #define MASK_VAL(type, spec, name, mask, val, fld)	\

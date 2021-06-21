@@ -7,7 +7,7 @@
 #ifndef ___DTPM_H__
 #define ___DTPM_H__
 
-#include <linux/powercap.h>
+#include <linaos/powercap.h>
 
 #define MAX_DTPM_DESCR 8
 #define MAX_DTPM_CONSTRAINTS 1

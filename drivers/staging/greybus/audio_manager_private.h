@@ -8,7 +8,7 @@
 #ifndef _GB_AUDIO_MANAGER_PRIVATE_H_
 #define _GB_AUDIO_MANAGER_PRIVATE_H_
 
-#include <linux/kobject.h>
+#include <linaos/kobject.h>
 
 #include "audio_manager.h"
 

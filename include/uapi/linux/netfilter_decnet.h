@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __LINUX_DECNET_NETFILTER_H
 #define __LINUX_DECNET_NETFILTER_H
 
@@ -8,7 +8,7 @@
  * (C)1998 Rusty Russell -- This code is GPL.
  */
 
-#include <linux/netfilter.h>
+#include <linaos/netfilter.h>
 
 /* only for userspace compatibility */
 #ifndef __KERNEL__

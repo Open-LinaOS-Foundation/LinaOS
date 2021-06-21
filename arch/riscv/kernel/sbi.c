@@ -5,8 +5,8 @@
  * Copyright (c) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/init.h>
-#include <linux/pm.h>
+#include <linaos/init.h>
+#include <linaos/pm.h>
 #include <asm/sbi.h>
 #include <asm/smp.h>
 
@@ -46,7 +46,7 @@ struct sbiret sbi_ecall(int ext, int fid, unsigned long arg0,
 }
 EXPORT_SYMBOL(sbi_ecall);
 
-int sbi_err_map_linux_errno(int err)
+int sbi_err_map_linaos_errno(int err)
 {
 	switch (err) {
 	case SBI_SUCCESS:
@@ -63,7 +63,7 @@ int sbi_err_map_linux_errno(int err)
 		return -ENOTSUPP;
 	};
 }
-EXPORT_SYMBOL(sbi_err_map_linux_errno);
+EXPORT_SYMBOL(sbi_err_map_linaos_errno);
 
 #ifdef CONFIG_RISCV_SBI_V01
 /**
@@ -249,7 +249,7 @@ static int __sbi_send_ipi_v02(const unsigned long *hart_mask)
 	return 0;
 
 ecall_failed:
-	result = sbi_err_map_linux_errno(ret.error);
+	result = sbi_err_map_linaos_errno(ret.error);
 	pr_err("%s: hbase = [%lu] hmask = [0x%lx] failed (error [%d])\n",
 	       __func__, hbase, hmask_val, result);
 	return result;
@@ -300,7 +300,7 @@ static int __sbi_rfence_v02_call(unsigned long fid, unsigned long hmask_val,
 	}
 
 	if (ret.error) {
-		result = sbi_err_map_linux_errno(ret.error);
+		result = sbi_err_map_linaos_errno(ret.error);
 		pr_err("%s: hbase = [%lu] hmask = [0x%lx] failed (error [%d])\n",
 		       __func__, hbase, hmask_val, result);
 	}
@@ -362,7 +362,7 @@ void sbi_set_timer(uint64_t stime_value)
  * sbi_send_ipi() - Send an IPI to any hart.
  * @hart_mask: A cpu mask containing all the target harts.
  *
- * Return: 0 on success, appropriate linux error code otherwise.
+ * Return: 0 on success, appropriate linaos error code otherwise.
  */
 int sbi_send_ipi(const unsigned long *hart_mask)
 {
@@ -374,7 +374,7 @@ EXPORT_SYMBOL(sbi_send_ipi);
  * sbi_remote_fence_i() - Execute FENCE.I instruction on given remote harts.
  * @hart_mask: A cpu mask containing all the target harts.
  *
- * Return: 0 on success, appropriate linux error code otherwise.
+ * Return: 0 on success, appropriate linaos error code otherwise.
  */
 int sbi_remote_fence_i(const unsigned long *hart_mask)
 {
@@ -390,7 +390,7 @@ EXPORT_SYMBOL(sbi_remote_fence_i);
  * @start: Start of the virtual address
  * @size: Total size of the virtual address range.
  *
- * Return: 0 on success, appropriate linux error code otherwise.
+ * Return: 0 on success, appropriate linaos error code otherwise.
  */
 int sbi_remote_sfence_vma(const unsigned long *hart_mask,
 			   unsigned long start,
@@ -410,7 +410,7 @@ EXPORT_SYMBOL(sbi_remote_sfence_vma);
  * @size: Total size of the virtual address range.
  * @asid: The value of address space identifier (ASID).
  *
- * Return: 0 on success, appropriate linux error code otherwise.
+ * Return: 0 on success, appropriate linaos error code otherwise.
  */
 int sbi_remote_sfence_vma_asid(const unsigned long *hart_mask,
 				unsigned long start,
@@ -529,7 +529,7 @@ static long __sbi_base_ecall(int fid)
 	if (!ret.error)
 		return ret.value;
 	else
-		return sbi_err_map_linux_errno(ret.error);
+		return sbi_err_map_linaos_errno(ret.error);
 }
 
 static inline long sbi_get_spec_version(void)

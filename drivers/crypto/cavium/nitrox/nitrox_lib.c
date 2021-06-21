@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cpumask.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci_regs.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
+#include <linaos/cpumask.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci_regs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pci.h>
 
 #include "nitrox_dev.h"
 #include "nitrox_common.h"

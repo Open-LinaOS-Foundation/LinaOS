@@ -4,11 +4,11 @@
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/mman.h>
-#include <linux/kvm_host.h>
-#include <linux/io.h>
-#include <linux/hugetlb.h>
-#include <linux/sched/signal.h>
+#include <linaos/mman.h>
+#include <linaos/kvm_host.h>
+#include <linaos/io.h>
+#include <linaos/hugetlb.h>
+#include <linaos/sched/signal.h>
 #include <trace/events/kvm.h>
 #include <asm/pgalloc.h>
 #include <asm/cacheflush.h>

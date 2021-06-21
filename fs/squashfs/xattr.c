@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for LinaOS
  *
  * Copyright (c) 2010
  * Phillip Lougher <phillip@squashfs.org.uk>
@@ -8,13 +8,13 @@
  * xattr.c
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/xattr.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/vfs.h>
+#include <linaos/xattr.h>
+#include <linaos/slab.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

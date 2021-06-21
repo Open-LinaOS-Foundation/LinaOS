@@ -5,7 +5,7 @@
  */
 
 #include "qedi_dbg.h"
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 void
 qedi_dbg_err(struct qedi_dbg_ctx *qedi, const char *func, u32 line,

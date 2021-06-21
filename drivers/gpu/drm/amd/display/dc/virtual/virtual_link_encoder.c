@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "dm_services.h"
 #include "dm_services_types.h"

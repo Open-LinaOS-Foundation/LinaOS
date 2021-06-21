@@ -15,20 +15,20 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <net/checksum.h>
 #include <asm/firmware.h>
 #include <asm/ps3.h>

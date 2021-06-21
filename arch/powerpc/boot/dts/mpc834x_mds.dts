@@ -177,7 +177,7 @@
 			interrupt-parent = <&ipic>;
 			tbi-handle = <&tbi0>;
 			phy-handle = <&phy0>;
-			linux,network-index = <0>;
+			linaos,network-index = <0>;
 
 			mdio@520 {
 				#address-cells = <1>;
@@ -218,7 +218,7 @@
 			interrupt-parent = <&ipic>;
 			tbi-handle = <&tbi1>;
 			phy-handle = <&phy1>;
-			linux,network-index = <1>;
+			linaos,network-index = <1>;
 
 			mdio@520 {
 				#address-cells = <1>;
@@ -266,7 +266,7 @@
 
 		/* IPIC
 		 * interrupts cell = <intr #, sense>
-		 * sense values match linux IORESOURCE_IRQ_* defines:
+		 * sense values match linaos IORESOURCE_IRQ_* defines:
 		 * sense == 8: Level, low assertion
 		 * sense == 2: Edge, high-to-low change
 		 */

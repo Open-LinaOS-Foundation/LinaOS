@@ -44,10 +44,10 @@
 
 #define pr_fmt(fmt) "[TTM] " fmt
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/atomic.h>
 #include "ttm_object.h"
 
 /**

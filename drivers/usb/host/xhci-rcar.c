@@ -5,13 +5,13 @@
  * Copyright (C) 2014 Renesas Electronics Corporation
  */
 
-#include <linux/firmware.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/usb/phy.h>
-#include <linux/sys_soc.h>
+#include <linaos/firmware.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/usb/phy.h>
+#include <linaos/sys_soc.h>
 
 #include "xhci.h"
 #include "xhci-plat.h"

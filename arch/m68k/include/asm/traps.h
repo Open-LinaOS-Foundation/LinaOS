@@ -1,5 +1,5 @@
 /*
- *  linux/include/asm/traps.h
+ *  linaos/include/asm/traps.h
  *
  *  Copyright (C) 1993        Hamish Macdonald
  *
@@ -13,7 +13,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/ptrace.h>
 
 typedef void (*e_vector)(void);

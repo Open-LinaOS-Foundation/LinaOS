@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0
-# Makefile for Linux MDIO bus drivers
+# Makefile for LinaOS MDIO bus drivers
 
 obj-$(CONFIG_OF_MDIO)	+= of_mdio.o
 

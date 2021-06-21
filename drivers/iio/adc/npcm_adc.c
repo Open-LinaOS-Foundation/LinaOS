@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019 Nuvoton Technology corporation.
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/io.h>
+#include <linaos/iio/iio.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/reset.h>
 
 struct npcm_adc {
 	bool int_status;

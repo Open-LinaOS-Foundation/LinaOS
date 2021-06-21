@@ -28,8 +28,8 @@
 #include "cifs_debug.h"
 #include "ntlmssp.h"
 #include "nterr.h"
-#include <linux/utsname.h>
-#include <linux/slab.h>
+#include <linaos/utsname.h>
+#include <linaos/slab.h>
 #include "cifs_spnego.h"
 #include "smb2proto.h"
 #include "fs_context.h"
@@ -288,7 +288,7 @@ cifs_ses_add_channel(struct cifs_sb_info *cifs_sb, struct cifs_ses *ses,
 
 	/* success, put it on the list
 	 * XXX: sharing ses between 2 tcp servers is not possible, the
-	 * way "internal" linked lists works in linux makes element
+	 * way "internal" linked lists works in linaos makes element
 	 * only able to belong to one list
 	 *
 	 * the binding session is already established so the rest of
@@ -361,7 +361,7 @@ unicode_oslm_strings(char **pbcc_area, const struct nls_table *nls_cp)
 	int bytes_ret = 0;
 
 	/* Copy OS version */
-	bytes_ret = cifs_strtoUTF16((__le16 *)bcc_ptr, "Linux version ", 32,
+	bytes_ret = cifs_strtoUTF16((__le16 *)bcc_ptr, "LinaOS version ", 32,
 				    nls_cp);
 	bcc_ptr += 2 * bytes_ret;
 	bytes_ret = cifs_strtoUTF16((__le16 *) bcc_ptr, init_utsname()->release,
@@ -464,8 +464,8 @@ static void ascii_ssetup_strings(char **pbcc_area, struct cifs_ses *ses,
 
 	/* BB check for overflow here */
 
-	strcpy(bcc_ptr, "Linux version ");
-	bcc_ptr += strlen("Linux version ");
+	strcpy(bcc_ptr, "LinaOS version ");
+	bcc_ptr += strlen("LinaOS version ");
 	strcpy(bcc_ptr, init_utsname()->release);
 	bcc_ptr += strlen(init_utsname()->release) + 1;
 

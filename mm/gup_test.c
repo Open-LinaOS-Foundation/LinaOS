@@ -1,9 +1,9 @@
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/ktime.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/ktime.h>
+#include <linaos/debugfs.h>
 #include "gup_test.h"
 
 static void put_back_pages(unsigned int cmd, struct page **pages,

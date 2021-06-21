@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm.h>
-#include <linux/rmap.h>
-#include <linux/hugetlb.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
+#include <linaos/mm.h>
+#include <linaos/rmap.h>
+#include <linaos/hugetlb.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
 
 #include "internal.h"
 
@@ -34,7 +34,7 @@ static bool map_pte(struct page_vma_mapped_walk *pvmw)
 			 * true.
 			 *
 			 * For more details on device private memory see HMM
-			 * (include/linux/hmm.h or mm/hmm.c).
+			 * (include/linaos/hmm.h or mm/hmm.c).
 			 */
 			if (is_swap_pte(*pvmw->pte)) {
 				swp_entry_t entry;

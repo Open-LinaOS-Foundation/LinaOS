@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/68328fb.c -- Low level implementation of the
+ *  linaos/drivers/video/68328fb.c -- Low level implementation of the
  *                                   mc68x328 LCD frame buffer device
  *
  *	Copyright (C) 2003 Georges Menie
@@ -16,7 +16,7 @@
  *
  *  this version is based on :
  *
- *  linux/drivers/video/vfb.c -- Virtual frame buffer device
+ *  linaos/drivers/video/vfb.c -- Virtual frame buffer device
  *
  *      Copyright (C) 2002 James Simmons
  *
@@ -27,17 +27,17 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/fb.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/uaccess.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
 
 #if defined(CONFIG_M68VZ328)
 #include <asm/MC68VZ328.h>
@@ -392,7 +392,7 @@ static int mc68x328fb_pan_display(struct fb_var_screeninfo *var,
 static int mc68x328fb_mmap(struct fb_info *info, struct vm_area_struct *vma)
 {
 #ifndef MMU
-	/* this is uClinux (no MMU) specific code */
+	/* this is uClinaos (no MMU) specific code */
 
 	vma->vm_flags |= VM_DONTEXPAND | VM_DONTDUMP;
 	vma->vm_start = videomemory;

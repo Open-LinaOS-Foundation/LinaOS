@@ -6,20 +6,20 @@
  * variables, etc - things needed even when quota support disabled.
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/slab.h>
 #include <asm/current.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/capability.h>
-#include <linux/quotaops.h>
-#include <linux/types.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/nospec.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/capability.h>
+#include <linaos/quotaops.h>
+#include <linaos/types.h>
+#include <linaos/mount.h>
+#include <linaos/writeback.h>
+#include <linaos/nospec.h>
 #include "compat.h"
 #include "../internal.h"
 

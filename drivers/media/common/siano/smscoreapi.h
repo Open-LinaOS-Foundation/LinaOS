@@ -13,14 +13,14 @@ Copyright (C) 2006-2008, Uri Shkolnik, Anatoly Greenblat
 
 #define pr_fmt(fmt) "%s:%s: " fmt, KBUILD_MODNAME, __func__
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
 
 #include <media/media-device.h>
 

@@ -34,7 +34,7 @@ config EVM_EXTRA_SMACK_XATTRS
 	help
 	  Include additional SMACK xattrs for HMAC calculation.
 
-	  In addition to the original security xattrs (eg. security.selinux,
+	  In addition to the original security xattrs (eg. security.selinaos,
 	  security.SMACK64, security.capability, and security.ima) included
 	  in the HMAC calculation, enabling this option includes newly defined
 	  Smack xattrs: security.SMACK64EXEC, security.SMACK64TRANSMUTE and

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * wanXL serial card driver for Linux
+ * wanXL serial card driver for LinaOS
  * host part
  *
  * Copyright (C) 2003 Krzysztof Halasa <khc@pm.waw.pl>
@@ -12,22 +12,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/netdevice.h>
+#include <linaos/hdlc.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
 #include <asm/io.h>
 
 #include "wanxl.h"

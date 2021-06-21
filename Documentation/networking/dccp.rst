@@ -22,7 +22,7 @@ oriented protocol designed to solve issues present in UDP and TCP, particularly
 for real-time and multimedia (streaming) traffic.
 It divides into a base protocol (RFC 4340) and pluggable congestion control
 modules called CCIDs. Like pluggable TCP congestion control, at least one CCID
-needs to be enabled in order for the protocol to function properly. In the Linux
+needs to be enabled in order for the protocol to function properly. In the LinaOS
 implementation, this is the TCP-like CCID2 (RFC 4341). Additional CCIDs, such as
 the TCP-friendly CCID3 (RFC 4342), are optional.
 For a brief introduction to CCIDs and suggestions for choosing a CCID to match
@@ -36,16 +36,16 @@ is at http://www.ietf.org/html.charters/dccp-charter.html
 
 Missing features
 ================
-The Linux DCCP implementation does not currently support all the features that are
+The LinaOS DCCP implementation does not currently support all the features that are
 specified in RFCs 4340...42.
 
 The known bugs are at:
 
-	http://www.linuxfoundation.org/collaborate/workgroups/networking/todo#DCCP
+	http://www.linaosfoundation.org/collaborate/workgroups/networking/todo#DCCP
 
 For more up-to-date versions of the DCCP implementation, please consider using
 the experimental DCCP test tree; instructions for checking this out are on:
-http://www.linuxfoundation.org/collaborate/workgroups/networking/dccp_testing#Experimental_DCCP_source_tree
+http://www.linaosfoundation.org/collaborate/workgroups/networking/dccp_testing#Experimental_DCCP_source_tree
 
 
 Socket options
@@ -127,7 +127,7 @@ DCCP_SOCKOPT_RECV_CSCOV is for the receiver and has a different meaning: it
 	settings are inherited to the child socket after accept().
 
 The following two options apply to CCID 3 exclusively and are getsockopt()-only.
-In either case, a TFRC info struct (defined in <linux/tfrc.h>) is returned.
+In either case, a TFRC info struct (defined in <linaos/tfrc.h>) is returned.
 
 DCCP_SOCKOPT_CCID_RX_INFO
 	Returns a ``struct tfrc_rx_info`` in optval; the buffer for optval and
@@ -215,5 +215,5 @@ Per-route rto_min support
 Notes
 =====
 DCCP does not travel through NAT successfully at present on many boxes. This is
-because the checksum covers the pseudo-header as per TCP and UDP. Linux NAT
+because the checksum covers the pseudo-header as per TCP and UDP. LinaOS NAT
 support for DCCP has been added.

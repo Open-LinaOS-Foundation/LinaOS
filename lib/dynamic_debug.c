@@ -13,29 +13,29 @@
 
 #define pr_fmt(fmt) "dyndbg: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kallsyms.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/list.h>
-#include <linux/sysctl.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/string_helpers.h>
-#include <linux/uaccess.h>
-#include <linux/dynamic_debug.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
-#include <linux/jump_label.h>
-#include <linux/hardirq.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kallsyms.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/list.h>
+#include <linaos/sysctl.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/parser.h>
+#include <linaos/string_helpers.h>
+#include <linaos/uaccess.h>
+#include <linaos/dynamic_debug.h>
+#include <linaos/debugfs.h>
+#include <linaos/slab.h>
+#include <linaos/jump_label.h>
+#include <linaos/hardirq.h>
+#include <linaos/sched.h>
+#include <linaos/device.h>
+#include <linaos/netdevice.h>
 
 #include <rdma/ib_verbs.h>
 

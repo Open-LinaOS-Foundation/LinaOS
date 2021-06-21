@@ -10,14 +10,14 @@
  *	Copyright (C) 2008 Rod Whitby <rod@whitby.id.au>
  */
 
-#include <linux/if_ether.h>
-#include <linux/irq.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/io.h>
-#include <linux/w1-gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/mtd/plat-ram.h>
+#include <linaos/if_ether.h>
+#include <linaos/irq.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
+#include <linaos/io.h>
+#include <linaos/w1-gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/mtd/plat-ram.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>

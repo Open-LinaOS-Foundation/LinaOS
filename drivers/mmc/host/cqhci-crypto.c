@@ -5,9 +5,9 @@
  * Copyright 2020 Google LLC
  */
 
-#include <linux/blk-crypto.h>
-#include <linux/keyslot-manager.h>
-#include <linux/mmc/host.h>
+#include <linaos/blk-crypto.h>
+#include <linaos/keyslot-manager.h>
+#include <linaos/mmc/host.h>
 
 #include "cqhci-crypto.h"
 

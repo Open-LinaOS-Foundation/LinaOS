@@ -15,8 +15,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/ip.h>
-#include <linux/in.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
 #include "core.h"
 #include "debug.h"
 #include "testmode.h"

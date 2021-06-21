@@ -6,7 +6,7 @@ SCSI mid_level - lower_level driver interface
 
 Introduction
 ============
-This document outlines the interface between the Linux SCSI mid level and
+This document outlines the interface between the LinaOS SCSI mid level and
 SCSI lower level drivers. Lower level drivers (LLDs) are variously called
 host bus adapter (HBA) drivers and host drivers (HD). A "host" in this
 context is a bridge between a computer IO bus (e.g. PCI or ISA) and a
@@ -17,7 +17,7 @@ system, but only one per hardware type. Most LLDs can control one or more
 SCSI HBAs. Some HBAs contain multiple hosts.
 
 In some cases the SCSI transport is an external bus that already has
-its own subsystem in Linux (e.g. USB and ieee1394). In such cases the
+its own subsystem in LinaOS (e.g. USB and ieee1394). In such cases the
 SCSI subsystem LLD is a software bridge to the other driver subsystem.
 Examples are the usb-storage driver (found in the drivers/usb/storage
 directory) and the ieee1394/sbp2 driver (found in the drivers/ieee1394
@@ -26,7 +26,7 @@ directory).
 For example, the aic7xxx LLD controls Adaptec SCSI parallel interface
 (SPI) controllers based on that company's 7xxx chip series. The aic7xxx
 LLD can be built into the kernel or loaded as a module. There can only be
-one aic7xxx LLD running in a Linux system but it may be controlling many
+one aic7xxx LLD running in a LinaOS system but it may be controlling many
 HBAs. These HBAs might be either on PCI daughter-boards or built into
 the motherboard (or both). Some aic7xxx based HBAs are dual controllers
 and thus represent two hosts. Like most modern HBAs, each aic7xxx host
@@ -37,7 +37,7 @@ ISA adapters).]
 The SCSI mid level isolates an LLD from other layers such as the SCSI
 upper layer drivers and the block layer.
 
-This version of the document roughly matches linux kernel version 2.6.8 .
+This version of the document roughly matches linaos kernel version 2.6.8 .
 
 Documentation
 =============
@@ -55,7 +55,7 @@ scsi-generic.txt (for the sg driver).
 Some documentation (or urls) for LLDs may be found in the C source code
 or in the same directory as the C source code. For example to find a url
 about the USB mass storage driver see the
-/usr/src/linux/drivers/usb/storage directory.
+/usr/src/linaos/drivers/usb/storage directory.
 
 Driver structure
 ================
@@ -65,10 +65,10 @@ file "xyz.h" and a source file "xyz.c". [Actually there is no good reason
 why this couldn't all be in one file; the header file is superfluous.] Some
 drivers that have been ported to several operating systems have more than
 two files. For example the aic7xxx driver has separate files for generic
-and OS-specific code (e.g. FreeBSD and Linux). Such drivers tend to have
+and OS-specific code (e.g. FreeBSD and LinaOS). Such drivers tend to have
 their own directory under the drivers/scsi directory.
 
-When a new LLD is being added to Linux, the following files (found in the
+When a new LLD is being added to LinaOS, the following files (found in the
 drivers/scsi directory) will need some attention: Makefile and Kconfig .
 It is probably best to study how existing LLDs are organized.
 
@@ -275,11 +275,11 @@ Also, most C99 enhancements are encouraged to the extent they are supported
 by the relevant gcc compilers. So C99 style structure and array
 initializers are encouraged where appropriate. Don't go too far,
 VLAs are not properly supported yet.  An exception to this is the use of
-``//`` style comments; ``/*...*/`` comments are still preferred in Linux.
+``//`` style comments; ``/*...*/`` comments are still preferred in LinaOS.
 
 Well written, tested and documented code, need not be re-formatted to
 comply with the above conventions. For example, the aic7xxx driver
-comes to Linux from FreeBSD and Adaptec's own labs. No doubt FreeBSD
+comes to LinaOS from FreeBSD and Adaptec's own labs. No doubt FreeBSD
 and Adaptec have their own coding conventions.
 
 
@@ -1147,7 +1147,7 @@ Members of interest:
 		 - length (in bytes) of SCSI command
     sc_data_direction
 		 - direction of data transfer in data phase. See
-                   "enum dma_data_direction" in include/linux/dma-mapping.h
+                   "enum dma_data_direction" in include/linaos/dma-mapping.h
     request_bufflen
 		 - number of data bytes to transfer (0 if no data phase)
     use_sg
@@ -1159,7 +1159,7 @@ Members of interest:
 		   - either contains data buffer or scatter gather list
                      depending on the setting of use_sg. Scatter gather
                      elements are defined by 'struct scatterlist' found
-                     in include/linux/scatterlist.h .
+                     in include/linaos/scatterlist.h .
     done
 		 - function pointer that should be invoked by LLD when the
                    SCSI command is completed (successfully or otherwise).
@@ -1272,7 +1272,7 @@ LLD interface functions abort() and reset() have been removed.
 The struct scsi_host_template::use_new_eh_code flag has been removed.
 
 In the 2.4 series the SCSI subsystem configuration descriptions were
-aggregated with the configuration descriptions from all other Linux
+aggregated with the configuration descriptions from all other LinaOS
 subsystems in the Documentation/Configure.help file. In the 2.6 series,
 the SCSI subsystem now has its own (much smaller) drivers/scsi/Kconfig
 file that contains both configuration and help information.

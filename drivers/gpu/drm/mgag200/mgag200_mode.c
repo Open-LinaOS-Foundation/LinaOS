@@ -8,8 +8,8 @@
  *	    Dave Airlie
  */
 
-#include <linux/delay.h>
-#include <linux/dma-buf-map.h>
+#include <linaos/delay.h>
+#include <linaos/dma-buf-map.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_atomic_state_helper.h>

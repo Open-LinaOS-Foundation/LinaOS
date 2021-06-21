@@ -12,15 +12,15 @@
  * Datasheet: http://cds.linear.com/docs/Datasheet/42612fb.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/jiffies.h>
 
 /* chip registers */
 #define LTC4261_STATUS	0x00	/* readonly */
@@ -239,6 +239,6 @@ static struct i2c_driver ltc4261_driver = {
 
 module_i2c_driver(ltc4261_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <linaos@roeck-us.net>");
 MODULE_DESCRIPTION("LTC4261 driver");
 MODULE_LICENSE("GPL");

@@ -2,8 +2,8 @@
 #ifndef _LINUX_VIRTIO_PCI_MODERN_H
 #define _LINUX_VIRTIO_PCI_MODERN_H
 
-#include <linux/pci.h>
-#include <linux/virtio_pci.h>
+#include <linaos/pci.h>
+#include <linaos/virtio_pci.h>
 
 struct virtio_pci_modern_device {
 	struct pci_dev *pci_dev;

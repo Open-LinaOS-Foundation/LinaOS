@@ -6,7 +6,7 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linaos-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linaos-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linaos-wlan.com
+ * http://www.linaos-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -48,8 +48,8 @@
 
 /*================================================================*/
 /* System Includes */
-#include <linux/ihex.h>
-#include <linux/slab.h>
+#include <linaos/ihex.h>
+#include <linaos/slab.h>
 
 /*================================================================*/
 /* Local Constants */

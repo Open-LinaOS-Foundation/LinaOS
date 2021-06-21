@@ -5,21 +5,21 @@
  * based on HW's ip_conntrack_irc.c as well as other modules
  * (C) 2006 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/textsearch.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/netfilter.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/textsearch.h>
+#include <linaos/skbuff.h>
+#include <linaos/in.h>
+#include <linaos/udp.h>
+#include <linaos/netfilter.h>
+#include <linaos/gfp.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_amanda.h>
+#include <linaos/netfilter/nf_conntrack_amanda.h>
 
 static unsigned int master_timeout __read_mostly = 300;
 static char *ts_algo = "kmp";

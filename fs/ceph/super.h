@@ -2,27 +2,27 @@
 #ifndef _FS_CEPH_SUPER_H
 #define _FS_CEPH_SUPER_H
 
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
 #include <asm/unaligned.h>
-#include <linux/backing-dev.h>
-#include <linux/completion.h>
-#include <linux/exportfs.h>
-#include <linux/fs.h>
-#include <linux/mempool.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/posix_acl.h>
-#include <linux/refcount.h>
-#include <linux/security.h>
+#include <linaos/backing-dev.h>
+#include <linaos/completion.h>
+#include <linaos/exportfs.h>
+#include <linaos/fs.h>
+#include <linaos/mempool.h>
+#include <linaos/pagemap.h>
+#include <linaos/wait.h>
+#include <linaos/writeback.h>
+#include <linaos/slab.h>
+#include <linaos/posix_acl.h>
+#include <linaos/refcount.h>
+#include <linaos/security.h>
 
-#include <linux/ceph/libceph.h>
+#include <linaos/ceph/libceph.h>
 
 #ifdef CONFIG_CEPH_FSCACHE
 #define FSCACHE_USE_NEW_IO_API
-#include <linux/fscache.h>
+#include <linaos/fscache.h>
 #endif
 
 /* f_type in struct statfs */

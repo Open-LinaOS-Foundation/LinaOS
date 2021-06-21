@@ -4,12 +4,12 @@
  * derived from imx-hdmi.c(renamed to bridge/dw_hdmi.c now)
  */
 
-#include <linux/component.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/component.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #include <video/imx-ipu-v3.h>
 

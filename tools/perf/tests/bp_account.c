@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Powerpc needs __SANE_USERSPACE_TYPES__ before <linux/types.h> to select
+ * Powerpc needs __SANE_USERSPACE_TYPES__ before <linaos/types.h> to select
  * 'int-ll64.h' and avoid compile warnings when printing __u64 with %llu.
  */
 #define __SANE_USERSPACE_TYPES__
@@ -11,7 +11,7 @@
 #include <string.h>
 #include <sys/ioctl.h>
 #include <fcntl.h>
-#include <linux/hw_breakpoint.h>
+#include <linaos/hw_breakpoint.h>
 
 #include "tests.h"
 #include "debug.h"

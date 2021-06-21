@@ -8,12 +8,12 @@
 #ifndef _CRYPTO_IF_ALG_H
 #define _CRYPTO_IF_ALG_H
 
-#include <linux/compiler.h>
-#include <linux/completion.h>
-#include <linux/if_alg.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
+#include <linaos/compiler.h>
+#include <linaos/completion.h>
+#include <linaos/if_alg.h>
+#include <linaos/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
 #include <net/sock.h>
 
 #include <crypto/aead.h>

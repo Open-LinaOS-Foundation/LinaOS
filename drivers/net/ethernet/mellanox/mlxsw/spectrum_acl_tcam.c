@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2017-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/rhashtable.h>
-#include <linux/netdevice.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
+#include <linaos/rhashtable.h>
+#include <linaos/netdevice.h>
+#include <linaos/mutex.h>
 #include <trace/events/mlxsw.h>
 
 #include "reg.h"

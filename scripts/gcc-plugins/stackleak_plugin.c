@@ -1,6 +1,6 @@
 /*
  * Copyright 2011-2017 by the PaX Team <pageexec@freemail.hu>
- * Modified by Alexander Popov <alex.popov@linux.com>
+ * Modified by Alexander Popov <alex.popov@linaos.com>
  * Licensed under the GPL v2
  *
  * Note: the choice of the license means that the compilation process is

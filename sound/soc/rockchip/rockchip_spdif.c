@@ -9,13 +9,13 @@
  * Author: Sjoerd Simons <sjoerd.simons@collabora.co.uk>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/of_gpio.h>
+#include <linaos/clk.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 #include <sound/pcm_params.h>
 #include <sound/dmaengine_pcm.h>
 

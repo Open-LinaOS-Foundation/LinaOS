@@ -1,11 +1,11 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright (c) 2020, Mellanox Technologies inc. All rights reserved.
  */
 
-#include <linux/gfp.h>
-#include <linux/mlx5/qp.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/gfp.h>
+#include <linaos/mlx5/qp.h>
+#include <linaos/mlx5/driver.h>
 #include "wr.h"
 
 static const u32 mlx5_ib_opcode[] = {

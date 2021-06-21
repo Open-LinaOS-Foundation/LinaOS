@@ -12,17 +12,17 @@
 
 /*************************** INCLUDES *****************************************/
 
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/syscalls.h>
-#include <linux/scatterlist.h>
-#include <linux/ioctl.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/major.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/mempool.h>
+#include <linaos/syscalls.h>
+#include <linaos/scatterlist.h>
+#include <linaos/ioctl.h>
 #include <scsi/fc/fc_fs.h>
 #include <scsi/fc/fc_gs.h>
 #include <scsi/scsi.h>

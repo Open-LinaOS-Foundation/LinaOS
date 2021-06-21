@@ -6,13 +6,13 @@
  * 				Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/jiffies.h>
+#include <linaos/skbuff.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <net/netlink.h>
 
 /* For these data types, attribute length should be exactly the given

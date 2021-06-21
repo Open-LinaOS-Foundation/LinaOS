@@ -8,10 +8,10 @@
  * Derived from actions,s500-smp
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/smp.h>
 
 /*
  * The second CPU is parked in ROM at boot time. It requires waking it after
@@ -23,7 +23,7 @@
  * starts in NONSEC mode.
  *
  * So for NONSEC mode, the bootloader re-parks the second CPU into a pen
- * in SRAM, and changes the "cpu-release-addr" of linux's DT to a SRAM address,
+ * in SRAM, and changes the "cpu-release-addr" of linaos's DT to a SRAM address,
  * which is not restricted.
  */
 

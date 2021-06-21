@@ -7,10 +7,10 @@
 #ifndef __DSA_PRIV_H
 #define __DSA_PRIV_H
 
-#include <linux/if_bridge.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
+#include <linaos/if_bridge.h>
+#include <linaos/phy.h>
+#include <linaos/netdevice.h>
+#include <linaos/netpoll.h>
 #include <net/dsa.h>
 #include <net/gro_cells.h>
 

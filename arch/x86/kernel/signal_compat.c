@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linaos/compat.h>
+#include <linaos/uaccess.h>
+#include <linaos/ptrace.h>
 
 /*
  * The compat_siginfo_t structure and handing code is very easy

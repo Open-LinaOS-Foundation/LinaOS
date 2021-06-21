@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/common/amba.c
+ *  linaos/arch/arm/common/amba.c
  *
  *  Copyright (C) 2003 Deep Blue Solutions Ltd, All Rights Reserved.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/amba/bus.h>
-#include <linux/sizes.h>
-#include <linux/limits.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_domain.h>
+#include <linaos/amba/bus.h>
+#include <linaos/sizes.h>
+#include <linaos/limits.h>
+#include <linaos/clk/clk-conf.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include <asm/irq.h>
 
@@ -336,7 +336,7 @@ postcore_initcall(amba_init);
  *	amba_driver_register - register an AMBA device driver
  *	@drv: amba device driver structure
  *
- *	Register an AMBA device driver with the Linux device model
+ *	Register an AMBA device driver with the LinaOS device model
  *	core.  If devices pre-exist, the drivers probe function will
  *	be called.
  */
@@ -354,7 +354,7 @@ int amba_driver_register(struct amba_driver *drv)
  *	amba_driver_unregister - remove an AMBA device driver
  *	@drv: AMBA device driver structure to remove
  *
- *	Unregister an AMBA device driver from the Linux device
+ *	Unregister an AMBA device driver from the LinaOS device
  *	model.  The device model will call the drivers remove function
  *	for each device the device driver is currently handling.
  */
@@ -550,7 +550,7 @@ static void amba_deferred_retry_func(struct work_struct *dummy)
  *	@parent: resource parent for this devices resources
  *
  *	Claim the resource, and read the device cell ID if not already
- *	initialized.  Register the AMBA device with the Linux device
+ *	initialized.  Register the AMBA device with the LinaOS device
  *	manager.
  */
 int amba_device_add(struct amba_device *dev, struct resource *parent)
@@ -698,7 +698,7 @@ EXPORT_SYMBOL_GPL(amba_device_alloc);
  *
  *	Setup the AMBA device, reading the cell ID if present.
  *	Claim the resource, and register the AMBA device with
- *	the Linux device manager.
+ *	the LinaOS device manager.
  */
 int amba_device_register(struct amba_device *dev, struct resource *parent)
 {
@@ -722,7 +722,7 @@ EXPORT_SYMBOL_GPL(amba_device_put);
  *	amba_device_unregister - unregister an AMBA device
  *	@dev: AMBA device to remove
  *
- *	Remove the specified AMBA device from the Linux device
+ *	Remove the specified AMBA device from the LinaOS device
  *	manager.  All files associated with this object will be
  *	destroyed, and device drivers notified that the device has
  *	been removed.  The AMBA device's resources including

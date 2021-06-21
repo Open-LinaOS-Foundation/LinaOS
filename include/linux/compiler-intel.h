@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef __LINUX_COMPILER_TYPES_H
-#error "Please don't include <linux/compiler-intel.h> directly, include <linux/compiler.h> instead."
+#error "Please don't include <linaos/compiler-intel.h> directly, include <linaos/compiler.h> instead."
 #endif
 
 #ifdef __ECC

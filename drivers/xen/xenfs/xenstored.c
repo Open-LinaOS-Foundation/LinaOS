@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
 
 #include <xen/page.h>
 #include <xen/xenbus.h>

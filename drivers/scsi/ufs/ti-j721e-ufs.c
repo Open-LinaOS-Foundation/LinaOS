@@ -3,13 +3,13 @@
 // Copyright (C) 2019 Texas Instruments Incorporated - http://www.ti.com/
 //
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #define TI_UFS_SS_CTRL		0x4
 #define TI_UFS_SS_RST_N_PCS	BIT(0)

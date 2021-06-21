@@ -3,11 +3,11 @@
  * Copyright (C) 2016 National Instruments Corp.
  */
 
-#include <linux/acpi.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/acpi.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 #define NIC78BX_USER1_LED_MASK		0x3
 #define NIC78BX_USER1_GREEN_LED		BIT(0)

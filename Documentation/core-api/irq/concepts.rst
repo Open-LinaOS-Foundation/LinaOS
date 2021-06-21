@@ -9,7 +9,7 @@ sharing an IRQ.
 
 An IRQ number is a kernel identifier used to talk about a hardware
 interrupt source.  Typically this is an index into the global irq_desc
-array, but except for what linux/interrupt.h implements the details
+array, but except for what linaos/interrupt.h implements the details
 are architecture specific.
 
 An IRQ number is an enumeration of the possible interrupt sources on a

@@ -5,16 +5,16 @@
  * Copyright 2011 IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/hotplug.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpu.h>
 
 #include <asm/irq.h>
 #include <asm/smp.h>
@@ -380,7 +380,7 @@ static int pnv_cause_nmi_ipi(int cpu)
 
 		/*
 		 * We do not use broadcasts (yet), because it's not clear
-		 * exactly what semantics Linux wants or the firmware should
+		 * exactly what semantics LinaOS wants or the firmware should
 		 * provide.
 		 */
 		for_each_online_cpu(c) {

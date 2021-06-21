@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/arch/arm/plat-omap/ocpi.c
+ * linaos/arch/arm/plat-omap/ocpi.c
  *
  * Minimal OCP bus support for omap16xx
  *
@@ -11,15 +11,15 @@
  * Modified for clock framework by Paul Mundt <paul.mundt@nokia.com>.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 
 #include <mach/hardware.h>
 

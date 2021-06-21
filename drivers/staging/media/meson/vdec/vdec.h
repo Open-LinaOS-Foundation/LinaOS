@@ -7,13 +7,13 @@
 #ifndef __MESON_VDEC_CORE_H_
 #define __MESON_VDEC_CORE_H_
 
-#include <linux/irqreturn.h>
-#include <linux/regmap.h>
-#include <linux/list.h>
+#include <linaos/irqreturn.h>
+#include <linaos/regmap.h>
+#include <linaos/list.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
-#include <linux/soc/amlogic/meson-canvas.h>
+#include <linaos/soc/amlogic/meson-canvas.h>
 
 #include "vdec_platform.h"
 

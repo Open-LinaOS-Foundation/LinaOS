@@ -11,9 +11,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include <linux/tls.h>
-#include <linux/tcp.h>
-#include <linux/socket.h>
+#include <linaos/tls.h>
+#include <linaos/tcp.h>
+#include <linaos/socket.h>
 
 #include <sys/types.h>
 #include <sys/sendfile.h>

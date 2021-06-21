@@ -7,11 +7,11 @@
  * Sun3/3x models added by David Monro (davidm@psrg.cs.usyd.edu.au)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
 
 #include <asm/oplib.h>
 #include <asm/idprom.h>

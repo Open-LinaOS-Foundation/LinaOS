@@ -20,7 +20,7 @@
 #include <sys/utsname.h>
 #include <unistd.h>
 #include <asm/unistd.h>
-#include <linux/limits.h>
+#include <linaos/limits.h>
 
 #include "utils.h"
 

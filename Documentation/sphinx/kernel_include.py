@@ -9,7 +9,7 @@ u"""
     Implementation of the ``kernel-include`` reST-directive.
 
     :copyright:  Copyright (C) 2016  Markus Heiser
-    :license:    GPL Version 2, June 1991 see linux/COPYING for details.
+    :license:    GPL Version 2, June 1991 see linaos/COPYING for details.
 
     The ``kernel-include`` reST-directive is a replacement for the ``include``
     directive. The ``kernel-include`` directive expand environment variables in

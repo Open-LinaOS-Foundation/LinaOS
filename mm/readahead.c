@@ -8,21 +8,21 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/dax.h>
-#include <linux/gfp.h>
-#include <linux/export.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/pagevec.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/mm_inline.h>
-#include <linux/blk-cgroup.h>
-#include <linux/fadvise.h>
-#include <linux/sched/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/dax.h>
+#include <linaos/gfp.h>
+#include <linaos/export.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/pagevec.h>
+#include <linaos/pagemap.h>
+#include <linaos/syscalls.h>
+#include <linaos/file.h>
+#include <linaos/mm_inline.h>
+#include <linaos/blk-cgroup.h>
+#include <linaos/fadvise.h>
+#include <linaos/sched/mm.h>
 
 #include "internal.h"
 

@@ -6,23 +6,23 @@
  * based on the patches by Rockchip Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/wait.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/math64.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/wait.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/math64.h>
 
 
 /* Register Map */

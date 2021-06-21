@@ -8,11 +8,11 @@
 #ifndef __CLK_DAVINCI_PLL_H___
 #define __CLK_DAVINCI_PLL_H___
 
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
 
 #define PLL_HAS_CLKMODE			BIT(0) /* PLL has PLLCTL[CLKMODE] */
 #define PLL_HAS_PREDIV			BIT(1) /* has prediv before PLL */

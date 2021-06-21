@@ -5,20 +5,20 @@
  *  Copyright 2012-2014 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty_flip.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dmapool.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
+#include <linaos/serial_core.h>
+#include <linaos/slab.h>
+#include <linaos/tty_flip.h>
 
 /* All registers are 8-bit width */
 #define UARTBDH			0x00

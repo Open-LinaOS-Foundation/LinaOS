@@ -10,10 +10,10 @@
  * Copyright (C) 2010-2011 - NVIDIA, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <sound/core.h>
 #include <sound/jack.h>

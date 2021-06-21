@@ -4,18 +4,18 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gcd.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/gcd.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/sysfs.h>
+#include <linaos/spi/spi.h>
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 
 /* Registers address macro */
 #define ADF4371_REG(x)			(x)

@@ -20,10 +20,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <drm/amdgpu_drm.h>
 

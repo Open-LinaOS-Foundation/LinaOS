@@ -22,8 +22,8 @@
  */
 #ifndef _SMB2PROTO_H
 #define _SMB2PROTO_H
-#include <linux/nls.h>
-#include <linux/key-type.h>
+#include <linaos/nls.h>
+#include <linaos/key-type.h>
 
 struct statfs;
 struct smb_rqst;
@@ -33,7 +33,7 @@ struct smb_rqst;
  * All Prototypes
  *****************************************************************
  */
-extern int map_smb2_to_linux_error(char *buf, bool log_err);
+extern int map_smb2_to_linaos_error(char *buf, bool log_err);
 extern int smb2_check_message(char *buf, unsigned int length,
 			      struct TCP_Server_Info *server);
 extern unsigned int smb2_calc_size(void *buf, struct TCP_Server_Info *server);

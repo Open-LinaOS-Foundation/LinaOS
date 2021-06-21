@@ -2,7 +2,7 @@
 /* Copyright (c) 2019 Facebook */
 
 #include <stdbool.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 __u64 out__bpf_link_fops = -1;

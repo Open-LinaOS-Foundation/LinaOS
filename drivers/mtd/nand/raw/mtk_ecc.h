@@ -10,7 +10,7 @@
 #ifndef __DRIVERS_MTD_NAND_MTK_ECC_H__
 #define __DRIVERS_MTD_NAND_MTK_ECC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum mtk_ecc_mode {ECC_DMA_MODE = 0, ECC_NFI_MODE = 1};
 enum mtk_ecc_operation {ECC_ENCODE, ECC_DECODE};

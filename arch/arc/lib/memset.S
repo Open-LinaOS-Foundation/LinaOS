@@ -3,7 +3,7 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define SMALL	7 /* Must be at least 6 to deal with alignment/loop issues.  */
 

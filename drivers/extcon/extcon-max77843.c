@@ -6,15 +6,15 @@
 // Copyright (C) 2015 Samsung Electronics
 // Author: Jaewon Kim <jaewon02.kim@samsung.com>
 
-#include <linux/extcon-provider.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/max77693-common.h>
-#include <linux/mfd/max77843-private.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/max77693-common.h>
+#include <linaos/mfd/max77843-private.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
 
 #define DELAY_MS_DEFAULT		15000	/* unit: millisecond */
 

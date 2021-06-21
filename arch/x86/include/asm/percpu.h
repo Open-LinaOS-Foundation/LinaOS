@@ -24,8 +24,8 @@
 
 #else /* ...!ASSEMBLY */
 
-#include <linux/kernel.h>
-#include <linux/stringify.h>
+#include <linaos/kernel.h>
+#include <linaos/stringify.h>
 
 #ifdef CONFIG_SMP
 #define __percpu_prefix		"%%"__stringify(__percpu_seg)":"
@@ -54,7 +54,7 @@
  * processor need to use these macros to get the proper address
  * offset from __per_cpu_load on SMP.
  *
- * There also must be an entry in vmlinux_64.lds.S
+ * There also must be an entry in vmlinaos_64.lds.S
  */
 #define DECLARE_INIT_PER_CPU(var) \
        extern typeof(var) init_per_cpu_var(var)

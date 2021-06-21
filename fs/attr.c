@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/attr.c
+ *  linaos/fs/attr.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  changes by Thomas Schoebel-Theuer
  */
 
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/sched/signal.h>
-#include <linux/capability.h>
-#include <linux/fsnotify.h>
-#include <linux/fcntl.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/ima.h>
+#include <linaos/export.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/sched/signal.h>
+#include <linaos/capability.h>
+#include <linaos/fsnotify.h>
+#include <linaos/fcntl.h>
+#include <linaos/security.h>
+#include <linaos/evm.h>
+#include <linaos/ima.h>
 
 /**
  * chown_ok - verify permissions to chown inode

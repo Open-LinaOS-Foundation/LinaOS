@@ -5,11 +5,11 @@
  * Copyright (C) 2012 Texas Instruments, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
 
-#include <linux/platform_data/omap-wd-timer.h>
+#include <linaos/platform_data/omap-wd-timer.h>
 
 #include "omap_hwmod.h"
 #include "omap_device.h"

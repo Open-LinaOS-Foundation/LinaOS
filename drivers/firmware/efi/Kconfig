@@ -231,7 +231,7 @@ config EFI_DISABLE_PCI_DMA
 	  firmware can't guarantee that the OS is IOMMU-aware, it will tear
 	  down IOMMU configuration when ExitBootServices() is called. This
 	  leaves a window between where a hostile device could still cause
-	  damage before Linux configures the IOMMU again.
+	  damage before LinaOS configures the IOMMU again.
 
 	  If you say Y here, the EFI stub will clear the busmaster bit on all
 	  PCI bridges before ExitBootServices() is called. This will prevent

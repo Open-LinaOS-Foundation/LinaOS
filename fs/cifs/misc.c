@@ -19,10 +19,10 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/mempool.h>
-#include <linux/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/mempool.h>
+#include <linaos/vmalloc.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"

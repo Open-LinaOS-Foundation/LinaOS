@@ -7,12 +7,12 @@
  *               2009 Johannes Dickgreber <tanzy@gmx.de>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/memblock.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/percpu.h>
+#include <linaos/memblock.h>
 
 #include <asm/smp-ops.h>
 #include <asm/sgialib.h>

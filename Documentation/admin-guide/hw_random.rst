@@ -1,5 +1,5 @@
 ==========================================================
-Linux support for random number generator in i8xx chipsets
+LinaOS support for random number generator in i8xx chipsets
 ==========================================================
 
 Introduction

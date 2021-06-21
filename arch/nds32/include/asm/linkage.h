@@ -4,7 +4,7 @@
 #ifndef __ASM_LINKAGE_H
 #define __ASM_LINKAGE_H
 
-/* This file is required by include/linux/linkage.h */
+/* This file is required by include/linaos/linkage.h */
 #define __ALIGN .align 2
 #define __ALIGN_STR ".align 2"
 

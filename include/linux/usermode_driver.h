@@ -1,8 +1,8 @@
 #ifndef __LINUX_USERMODE_DRIVER_H__
 #define __LINUX_USERMODE_DRIVER_H__
 
-#include <linux/umh.h>
-#include <linux/path.h>
+#include <linaos/umh.h>
+#include <linaos/path.h>
 
 struct umd_info {
 	const char *driver_name;

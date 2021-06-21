@@ -6,9 +6,9 @@
 #ifndef _PCIE_CADENCE_H
 #define _PCIE_CADENCE_H
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/phy/phy.h>
 
 /* Parameters for the waiting for link up routine */
 #define LINK_WAIT_MAX_RETRIES	10

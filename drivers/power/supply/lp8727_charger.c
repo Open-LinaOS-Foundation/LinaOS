@@ -6,13 +6,13 @@
  *			Copyright (C) 2011 National Semiconductor
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/platform_data/lp8727.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/power_supply.h>
+#include <linaos/platform_data/lp8727.h>
+#include <linaos/of.h>
 
 #define LP8788_NUM_INTREGS	2
 #define DEFAULT_DEBOUNCE_MSEC	270

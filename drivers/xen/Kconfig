@@ -261,7 +261,7 @@ config XEN_MCE_LOG
 	depends on XEN_DOM0 && X86_MCE
 	help
 	  Allow kernel fetching MCE error from Xen platform and
-	  converting it into Linux mcelog format for mcelog tools
+	  converting it into LinaOS mcelog format for mcelog tools
 
 config XEN_HAVE_PVMMU
 	bool

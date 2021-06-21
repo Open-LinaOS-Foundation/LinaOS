@@ -20,10 +20,10 @@
 #ifndef HPSA_CMD_H
 #define HPSA_CMD_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
-#include <linux/build_bug.h> /* static_assert */
-#include <linux/stddef.h> /* offsetof */
+#include <linaos/build_bug.h> /* static_assert */
+#include <linaos/stddef.h> /* offsetof */
 
 /* general boundary defintions */
 #define SENSEINFOBYTES          32 /* may vary between hbas */

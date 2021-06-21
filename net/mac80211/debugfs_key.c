@@ -6,8 +6,8 @@
  * Copyright (C) 2015	Intel Deutschland GmbH
  */
 
-#include <linux/kobject.h>
-#include <linux/slab.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
 #include "ieee80211_i.h"
 #include "key.h"
 #include "debugfs.h"

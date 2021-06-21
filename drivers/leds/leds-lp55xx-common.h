@@ -12,7 +12,7 @@
 #ifndef _LEDS_LP55XX_COMMON_H
 #define _LEDS_LP55XX_COMMON_H
 
-#include <linux/led-class-multicolor.h>
+#include <linaos/led-class-multicolor.h>
 
 enum lp55xx_engine_index {
 	LP55XX_ENGINE_INVALID,

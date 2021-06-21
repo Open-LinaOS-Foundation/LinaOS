@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/lockd/xdr.h
+ * linaos/include/linaos/lockd/xdr.h
  *
  * XDR types for the NLM protocol
  *
@@ -10,9 +10,9 @@
 #ifndef LOCKD_XDR_H
 #define LOCKD_XDR_H
 
-#include <linux/fs.h>
-#include <linux/nfs.h>
-#include <linux/sunrpc/xdr.h>
+#include <linaos/fs.h>
+#include <linaos/nfs.h>
+#include <linaos/sunrpc/xdr.h>
 
 #define SM_MAXSTRLEN		1024
 #define SM_PRIV_SIZE		16
@@ -45,7 +45,7 @@ struct nlm_lock {
 };
 
 /*
- *	NLM cookies. Technically they can be 1K, but Linux only uses 8 bytes.
+ *	NLM cookies. Technically they can be 1K, but LinaOS only uses 8 bytes.
  *	FreeBSD uses 16, Apple Mac OS X 10.3 uses 20. Therefore we set it to
  *	32 bytes.
  */

@@ -11,10 +11,10 @@
 #ifndef ET8EK8REGS_H
 #define ET8EK8REGS_H
 
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-subdev.h>
+#include <linaos/i2c.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-subdev.h>
 
 struct v4l2_mbus_framefmt;
 struct v4l2_subdev_pad_mbus_code_enum;

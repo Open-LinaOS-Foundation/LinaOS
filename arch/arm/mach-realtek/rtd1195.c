@@ -5,7 +5,7 @@
  * Copyright (c) 2017-2019 Andreas Färber
  */
 
-#include <linux/memblock.h>
+#include <linaos/memblock.h>
 #include <asm/mach/arch.h>
 
 static void __init rtd1195_memblock_remove(phys_addr_t base, phys_addr_t size)

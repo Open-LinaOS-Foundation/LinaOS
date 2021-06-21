@@ -7,8 +7,8 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
 
-#include <linux/page-flags.h>
-#include <linux/bitops.h>
+#include <linaos/page-flags.h>
+#include <linaos/bitops.h>
 
 #include <asm/page.h>
 

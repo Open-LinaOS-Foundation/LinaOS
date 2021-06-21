@@ -5,7 +5,7 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: KaiChieh Chuang <kaichieh.chuang@mediatek.com>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 
 #include "mt6797-afe-common.h"

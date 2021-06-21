@@ -37,12 +37,12 @@
 #include <rdma/ib_cache.h>
 #include <rdma/ib_sa.h>
 #include <rdma/ib_pack.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
 #include <rdma/ib_user_verbs.h>
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "mlx4_ib.h"
 
 /*

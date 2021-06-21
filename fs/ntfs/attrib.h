@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * attrib.h - Defines for attribute handling in NTFS Linux kernel driver.
- *	      Part of the Linux-NTFS project.
+ * attrib.h - Defines for attribute handling in NTFS LinaOS kernel driver.
+ *	      Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  * Copyright (c) 2002 Richard Russon

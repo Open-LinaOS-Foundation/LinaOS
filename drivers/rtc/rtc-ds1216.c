@@ -6,11 +6,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/platform_device.h>
+#include <linaos/bcd.h>
+#include <linaos/slab.h>
 
 struct ds1216_regs {
 	u8 tsec;

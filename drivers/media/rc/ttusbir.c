@@ -5,11 +5,11 @@
  * Copyright (C) 2012 Sean Young <sean@mess.org>
  */
 
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/usb/input.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME	"ttusbir"

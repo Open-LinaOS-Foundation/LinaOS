@@ -8,22 +8,22 @@
 
 #define DSS_SUBSYS_NAME "VENC"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/component.h>
-#include <linux/sys_soc.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/component.h>
+#include <linaos/sys_soc.h>
 
 #include <drm/drm_bridge.h>
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/spi/mxs-spi.h
+ * include/linaos/spi/mxs-spi.h
  *
  * Freescale i.MX233/i.MX28 SPI controller register definition
  *
@@ -11,7 +11,7 @@
 #ifndef __LINUX_SPI_MXS_SPI_H__
 #define __LINUX_SPI_MXS_SPI_H__
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 #define ssp_is_old(host)	((host)->devid == IMX23_SSP)
 

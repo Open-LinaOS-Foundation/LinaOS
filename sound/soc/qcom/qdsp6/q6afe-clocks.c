@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2020, Linaro Limited
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 #include "q6afe.h"
 
 #define Q6AFE_CLK(id) {					\

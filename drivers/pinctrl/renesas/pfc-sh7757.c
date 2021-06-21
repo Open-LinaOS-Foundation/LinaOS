@@ -10,8 +10,8 @@
  *  Copyright (C) 2008  Magnus Damm
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
 #include <cpu/sh7757.h>
 
 #include "sh_pfc.h"

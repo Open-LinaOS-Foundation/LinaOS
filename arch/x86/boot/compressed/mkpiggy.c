@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2009 Intel Corporation. All rights reserved.
  *
- *  H. Peter Anvin <hpa@linux.intel.com>
+ *  H. Peter Anvin <hpa@linaos.intel.com>
  *
  * -----------------------------------------------------------------------
  *

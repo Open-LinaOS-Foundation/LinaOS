@@ -4,8 +4,8 @@
 #ifndef __IPU3_H
 #define __IPU3_H
 
-#include <linux/iova.h>
-#include <linux/pci.h>
+#include <linaos/iova.h>
+#include <linaos/pci.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

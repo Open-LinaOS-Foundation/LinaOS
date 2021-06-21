@@ -10,12 +10,12 @@
  * by Sylvain Munaut for the Bestcomm SRAM allocator.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of_platform.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/of_platform.h>
+#include <linaos/pgtable.h>
 #include <asm/fsl_85xx_cache_sram.h>
 
 #include "fsl_85xx_cache_ctlr.h"

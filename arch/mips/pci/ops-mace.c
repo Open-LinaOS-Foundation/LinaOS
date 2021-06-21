@@ -5,9 +5,9 @@
  *
  * Copyright (C) 2000, 2001 Keith M Wesolowski
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
 #include <asm/ip32/mace.h>
 
 #if 0

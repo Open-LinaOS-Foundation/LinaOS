@@ -2,18 +2,18 @@
 /*
  * Copyright (C) 2008-2014 Mathieu Desnoyers
  */
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/jhash.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/tracepoint.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/static_key.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
+#include <linaos/jhash.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/tracepoint.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/static_key.h>
 
 extern tracepoint_ptr_t __start___tracepoints_ptrs[];
 extern tracepoint_ptr_t __stop___tracepoints_ptrs[];
@@ -296,7 +296,7 @@ static int tracepoint_add_func(struct tracepoint *tp,
 	 * rcu_assign_pointer has as smp_store_release() which makes sure
 	 * that the new probe callbacks array is consistent before setting
 	 * a pointer to it.  This array is referenced by __DO_TRACE from
-	 * include/linux/tracepoint.h using rcu_dereference_sched().
+	 * include/linaos/tracepoint.h using rcu_dereference_sched().
 	 */
 	rcu_assign_pointer(tp->funcs, tp_funcs);
 	tracepoint_update_call(tp, tp_funcs, false);

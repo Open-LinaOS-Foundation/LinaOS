@@ -7,9 +7,9 @@
 
 #include "dm-zoned.h"
 
-#include <linux/module.h>
-#include <linux/crc32.h>
-#include <linux/sched/mm.h>
+#include <linaos/module.h>
+#include <linaos/crc32.h>
+#include <linaos/sched/mm.h>
 
 #define	DM_MSG_PREFIX		"zoned metadata"
 

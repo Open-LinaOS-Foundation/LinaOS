@@ -25,11 +25,11 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/export.h>
+#include <linaos/i2c.h>
+#include <linaos/notifier.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include <asm/byteorder.h>
 

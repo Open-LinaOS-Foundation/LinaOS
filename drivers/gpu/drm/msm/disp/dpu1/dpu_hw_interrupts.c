@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 
 #include "dpu_kms.h"
 #include "dpu_hw_interrupts.h"

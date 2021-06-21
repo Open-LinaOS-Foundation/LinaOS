@@ -15,15 +15,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/palmas.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/palmas.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #define PALMAS_LPK_TIME_MASK		0x0c
 #define PALMAS_PWRON_DEBOUNCE_MASK	0x03

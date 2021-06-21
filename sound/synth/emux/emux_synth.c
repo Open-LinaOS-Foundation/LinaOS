@@ -8,7 +8,7 @@
  *  Contains code based on awe_wave.c by Takashi Iwai
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include "emux_voice.h"
 #include <sound/asoundef.h>
 

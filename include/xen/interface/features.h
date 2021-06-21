@@ -79,9 +79,9 @@
  * must be located in lower 1MB, as required by ACPI Specification for IA-PC
  * systems.
  * This feature flag is only consulted if XEN_ELFNOTE_GUEST_OS contains
- * the "linux" string.
+ * the "linaos" string.
  */
-#define XENFEAT_linux_rsdp_unrestricted   15
+#define XENFEAT_linaos_rsdp_unrestricted   15
 
 /*
  * A direct-mapped (or 1:1 mapped) domain is a domain for which its

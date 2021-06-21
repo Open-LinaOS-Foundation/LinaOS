@@ -6,7 +6,7 @@
  *
  * Copyright (c) 2016 Mentor Graphics Inc.
  */
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include "imx-media.h"
 
 /* max pads per internal-sd */

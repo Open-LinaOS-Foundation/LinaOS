@@ -7,9 +7,9 @@
  * 	or 0 if the bus frequency cannot be found.
  */
 
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/of_platform.h>
+#include <linaos/export.h>
 #include <asm/mpc5xxx.h>
 
 unsigned long mpc5xxx_get_bus_frequency(struct device_node *node)

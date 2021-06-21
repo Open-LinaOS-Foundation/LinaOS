@@ -15,10 +15,10 @@
 #ifndef __LINUX_IPMI_SMI_H
 #define __LINUX_IPMI_SMI_H
 
-#include <linux/ipmi_msgdefs.h>
-#include <linux/proc_fs.h>
-#include <linux/platform_device.h>
-#include <linux/ipmi.h>
+#include <linaos/ipmi_msgdefs.h>
+#include <linaos/proc_fs.h>
+#include <linaos/platform_device.h>
+#include <linaos/ipmi.h>
 
 struct device;
 

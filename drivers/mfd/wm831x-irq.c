@@ -7,20 +7,20 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/core.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/gpio.h>
-#include <linux/mfd/wm831x/irq.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/pdata.h>
+#include <linaos/mfd/wm831x/gpio.h>
+#include <linaos/mfd/wm831x/irq.h>
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 struct wm831x_irq_data {
 	int primary;

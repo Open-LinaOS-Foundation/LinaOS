@@ -14,23 +14,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/efi.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/kexec.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/ucs2_string.h>
-#include <linux/memblock.h>
-#include <linux/security.h>
+#include <linaos/kobject.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/efi.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/kexec.h>
+#include <linaos/platform_device.h>
+#include <linaos/random.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/ucs2_string.h>
+#include <linaos/memblock.h>
+#include <linaos/security.h>
 
 #include <asm/early_ioremap.h>
 
@@ -585,7 +585,7 @@ int __init efi_config_parse_tables(const efi_config_table_t *config_tables,
 	set_bit(EFI_CONFIG_TABLES, &efi.flags);
 
 	if (efi_rng_seed != EFI_INVALID_TABLE_ADDR) {
-		struct linux_efi_random_seed *seed;
+		struct linaos_efi_random_seed *seed;
 		u32 size = 0;
 
 		seed = early_memremap(efi_rng_seed, sizeof(*seed));
@@ -617,7 +617,7 @@ int __init efi_config_parse_tables(const efi_config_table_t *config_tables,
 		unsigned long prsv = mem_reserve;
 
 		while (prsv) {
-			struct linux_efi_memreserve *rsv;
+			struct linaos_efi_memreserve *rsv;
 			u8 *p;
 
 			/*
@@ -878,7 +878,7 @@ int efi_status_to_err(efi_status_t status)
 }
 
 static DEFINE_SPINLOCK(efi_mem_reserve_persistent_lock);
-static struct linux_efi_memreserve *efi_memreserve_root __ro_after_init;
+static struct linaos_efi_memreserve *efi_memreserve_root __ro_after_init;
 
 static int __init efi_memreserve_map_root(void)
 {
@@ -913,7 +913,7 @@ static int efi_mem_reserve_iomem(phys_addr_t addr, u64 size)
 
 int __ref efi_mem_reserve_persistent(phys_addr_t addr, u64 size)
 {
-	struct linux_efi_memreserve *rsv;
+	struct linaos_efi_memreserve *rsv;
 	unsigned long prsv;
 	int rc, index;
 
@@ -942,7 +942,7 @@ int __ref efi_mem_reserve_persistent(phys_addr_t addr, u64 size)
 	}
 
 	/* no slot found - allocate a new linked list entry */
-	rsv = (struct linux_efi_memreserve *)__get_free_page(GFP_ATOMIC);
+	rsv = (struct linaos_efi_memreserve *)__get_free_page(GFP_ATOMIC);
 	if (!rsv)
 		return -ENOMEM;
 
@@ -953,7 +953,7 @@ int __ref efi_mem_reserve_persistent(phys_addr_t addr, u64 size)
 	}
 
 	/*
-	 * The memremap() call above assumes that a linux_efi_memreserve entry
+	 * The memremap() call above assumes that a linaos_efi_memreserve entry
 	 * never crosses a page boundary, so let's ensure that this remains true
 	 * even when kexec'ing a 4k pages kernel from a >4k pages kernel, by
 	 * using SZ_4K explicitly in the size calculation below.
@@ -985,7 +985,7 @@ early_initcall(efi_memreserve_root_init);
 static int update_efi_random_seed(struct notifier_block *nb,
 				  unsigned long code, void *unused)
 {
-	struct linux_efi_random_seed *seed;
+	struct linaos_efi_random_seed *seed;
 	u32 size = 0;
 
 	if (!kexec_in_progress)

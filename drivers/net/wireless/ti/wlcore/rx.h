@@ -11,7 +11,7 @@
 #ifndef __RX_H__
 #define __RX_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define WL1271_RX_MAX_RSSI -30
 #define WL1271_RX_MIN_RSSI -95

@@ -6,24 +6,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bio.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/statfs.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/kthread.h>
-#include <linux/delay.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/crc32.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/kernel.h>
+#include <linaos/bio.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/buffer_head.h>
+#include <linaos/statfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/mount.h>
+#include <linaos/kthread.h>
+#include <linaos/delay.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/crc32.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
+#include <linaos/writeback.h>
+#include <linaos/backing-dev.h>
+#include <linaos/kernel.h>
 
 #include "gfs2.h"
 #include "incore.h"

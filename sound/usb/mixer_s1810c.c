@@ -13,9 +13,9 @@
  * the device.
  */
 
-#include <linux/usb.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/slab.h>
+#include <linaos/usb.h>
+#include <linaos/usb/audio-v2.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/control.h>
 

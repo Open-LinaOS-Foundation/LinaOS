@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <linux/ptrace.h>
-#include <linux/bpf.h>
+#include <linaos/ptrace.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 /* non-existing BPF helper, to test dead code elimination */

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/inet_diag.h>
-#include <linux/sock_diag.h>
+#include <linaos/inet_diag.h>
+#include <linaos/sock_diag.h>
 
 #include <net/inet_sock.h>
 #include <net/raw.h>

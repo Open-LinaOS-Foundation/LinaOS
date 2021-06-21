@@ -8,7 +8,7 @@
  * signal edges are reported and decoded by generic software decoders.
  */
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <media/rc-core.h>
 #include "img-ir.h"
 

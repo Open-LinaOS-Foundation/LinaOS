@@ -3,7 +3,7 @@
  * Copyright (c) 2018 Pengutronix, Oleksij Rempel <o.rempel@pengutronix.de>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/v7m.h>
 #include <asm/mach/arch.h>
 

@@ -111,7 +111,7 @@
 
 	spdif_out: spdif-out {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 	};
 };
 

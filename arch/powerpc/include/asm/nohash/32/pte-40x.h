@@ -18,7 +18,7 @@
  * 0  1  2  3  4  ... 18 19 20 21 22 23 24 25 26 27 28 29 30 31
  * RPN.....................  0  0 EX WR ZSEL.......  W  I  M  G
  *
- * Where possible we make the Linux PTE bits match up with this
+ * Where possible we make the LinaOS PTE bits match up with this
  *
  * - bits 20 and 21 must be cleared, because we use 4k pages (40x can
  *   support down to 1k pages), this is done in the TLBMiss exception
@@ -49,7 +49,7 @@
 #define _PAGE_EXEC	0x200	/* hardware: EX permission */
 #define _PAGE_ACCESSED	0x400	/* software: R: page referenced */
 
-/* No page size encoding in the linux PTE */
+/* No page size encoding in the linaos PTE */
 #define _PAGE_PSIZE		0
 
 /* cache related flags non existing on 40x */

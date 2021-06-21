@@ -4,23 +4,23 @@
 
 /* Kernel module implementing an IP set type: the hash:ip,mac type */
 
-#include <linux/jhash.h>
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/if_ether.h>
+#include <linaos/jhash.h>
+#include <linaos/module.h>
+#include <linaos/ip.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/random.h>
+#include <linaos/if_ether.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/netlink.h>
 #include <net/tcp.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/ipset/pfxlen.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_hash.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/ipset/pfxlen.h>
+#include <linaos/netfilter/ipset/ip_set.h>
+#include <linaos/netfilter/ipset/ip_set_hash.h>
 
 #define IPSET_TYPE_REV_MIN	0
 #define IPSET_TYPE_REV_MAX	1	/* bucketsize, initval support  */

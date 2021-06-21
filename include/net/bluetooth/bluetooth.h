@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for LinaOS
    Copyright (C) 2000-2001 Qualcomm Incorporated
 
    Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
@@ -25,9 +25,9 @@
 #ifndef __BLUETOOTH_H
 #define __BLUETOOTH_H
 
-#include <linux/poll.h>
+#include <linaos/poll.h>
 #include <net/sock.h>
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 #define BT_SUBSYS_VERSION	2
 #define BT_SUBSYS_REVISION	22

@@ -10,27 +10,27 @@
 // Based on code originally by Andrey Volkov <avolkov@varma-el.com>
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/bitfield.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/led.h>
-#include <linux/can/rx-offload.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/bitfield.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/led.h>
+#include <linaos/can/rx-offload.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/firmware/imx/sci.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
 
 #define DRV_NAME			"flexcan"
 

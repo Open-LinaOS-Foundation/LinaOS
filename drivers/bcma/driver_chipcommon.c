@@ -10,10 +10,10 @@
  */
 
 #include "bcma_private.h"
-#include <linux/bcm47xx_wdt.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/bcm47xx_wdt.h>
+#include <linaos/export.h>
+#include <linaos/platform_device.h>
+#include <linaos/bcma/bcma.h>
 
 static inline u32 bcma_cc_write32_masked(struct bcma_drv_cc *cc, u16 offset,
 					 u32 mask, u32 value)

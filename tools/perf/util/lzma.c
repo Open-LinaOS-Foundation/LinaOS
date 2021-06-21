@@ -2,7 +2,7 @@
 #include <errno.h>
 #include <lzma.h>
 #include <stdio.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>

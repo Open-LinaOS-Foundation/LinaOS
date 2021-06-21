@@ -5,7 +5,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* key list for the tiny remote control (Yakumo, don't know about the others) */
 static struct rc_map_table dtt200u_table[] = {

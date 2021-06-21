@@ -1,7 +1,7 @@
 /*
  *  Generic fillrect for frame buffers with packed pixels of any depth.
  *
- *      Copyright (C)  2000 James Simmons (jsimmons@linux-fbdev.org)
+ *      Copyright (C)  2000 James Simmons (jsimmons@linaos-fbdev.org)
  *
  *  This file is subject to the terms and conditions of the GNU General Public
  *  License.  See the file COPYING in the main directory of this archive for
@@ -13,9 +13,9 @@
  *  the native cpu endians. I also need to deal with MSB position in the word.
  *
  */
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/fb.h>
 #include <asm/types.h>
 #include "fb_draw.h"
 

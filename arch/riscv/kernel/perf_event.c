@@ -21,15 +21,15 @@
  * The Copyright line includes x86 and tile ones.
  */
 
-#include <linux/kprobes.h>
-#include <linux/kernel.h>
-#include <linux/kdebug.h>
-#include <linux/mutex.h>
-#include <linux/bitmap.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
-#include <linux/atomic.h>
-#include <linux/of.h>
+#include <linaos/kprobes.h>
+#include <linaos/kernel.h>
+#include <linaos/kdebug.h>
+#include <linaos/mutex.h>
+#include <linaos/bitmap.h>
+#include <linaos/irq.h>
+#include <linaos/perf_event.h>
+#include <linaos/atomic.h>
+#include <linaos/of.h>
 #include <asm/perf_event.h>
 
 static const struct riscv_pmu *riscv_pmu __read_mostly;

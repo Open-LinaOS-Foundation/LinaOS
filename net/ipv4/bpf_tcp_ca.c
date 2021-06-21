@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 Facebook  */
 
-#include <linux/types.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/filter.h>
+#include <linaos/types.h>
+#include <linaos/bpf_verifier.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
+#include <linaos/btf_ids.h>
+#include <linaos/filter.h>
 #include <net/tcp.h>
 #include <net/bpf_sk_storage.h>
 
@@ -71,7 +71,7 @@ static bool is_unsupported(u32 member_offset)
 	return false;
 }
 
-extern struct btf *btf_vmlinux;
+extern struct btf *btf_vmlinaos;
 
 static bool bpf_tcp_ca_is_valid_access(int off, int size,
 				       enum bpf_access_type type,
@@ -257,7 +257,7 @@ static int bpf_tcp_ca_init_member(const struct btf_type *t,
 		return 1;
 	}
 
-	if (!btf_type_resolve_func_ptr(btf_vmlinux, member->type, NULL))
+	if (!btf_type_resolve_func_ptr(btf_vmlinaos, member->type, NULL))
 		return 0;
 
 	/* Ensure bpf_prog is provided for compulsory func ptr */

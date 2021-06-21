@@ -8,9 +8,9 @@
 #ifndef __LINUX_MFD_WM8350_PMIC_H
 #define __LINUX_MFD_WM8350_PMIC_H
 
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/regulator/machine.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/regulator/machine.h>
 
 /*
  * Register values.

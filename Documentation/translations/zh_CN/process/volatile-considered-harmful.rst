@@ -14,7 +14,7 @@
         中文版翻译者： 伍鹏  Bryan Wu <bryan.wu@analog.com>
         中文版校译者： 张汉辉  Eugene Teo <eugeneteo@kernel.sg>
                        杨瑞  Dave Young <hidave.darkstar@gmail.com>
-                       时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
+                       时奎亮 Alex Shi <alex.shi@linaos.alibaba.com>
 
 为什么不应该使用“volatile”类型
 ==============================

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_MSDOS_FS_H
 #define _UAPI_LINUX_MSDOS_FS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <linaos/types.h>
+#include <linaos/magic.h>
 #include <asm/byteorder.h>
 
 /*
@@ -99,7 +99,7 @@ struct __fat_dirent {
  */
 #define VFAT_IOCTL_READDIR_BOTH		_IOR('r', 1, struct __fat_dirent[2])
 #define VFAT_IOCTL_READDIR_SHORT	_IOR('r', 2, struct __fat_dirent[2])
-/* <linux/videotext.h> has used 0x72 ('r') in collision, so skip a few */
+/* <linaos/videotext.h> has used 0x72 ('r') in collision, so skip a few */
 #define FAT_IOCTL_GET_ATTRIBUTES	_IOR('r', 0x10, __u32)
 #define FAT_IOCTL_SET_ATTRIBUTES	_IOW('r', 0x11, __u32)
 /*Android kernel has used 0x12, so we use 0x13*/

@@ -20,14 +20,14 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
 
 #include <drm/drm_dp_helper.h>
 #include <drm/drm_print.h>

@@ -32,10 +32,10 @@
 #ifndef __MAC_H
 #define __MAC_H
 
-#include <linux/device.h>
-#include <linux/if_ether.h>
-#include <linux/phy.h>
-#include <linux/list.h>
+#include <linaos/device.h>
+#include <linaos/if_ether.h>
+#include <linaos/phy.h>
+#include <linaos/list.h>
 
 #include "fman_port.h"
 #include "fman.h"

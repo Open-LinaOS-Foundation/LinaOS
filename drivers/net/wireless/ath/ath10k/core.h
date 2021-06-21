@@ -2,18 +2,18 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _CORE_H_
 #define _CORE_H_
 
-#include <linux/completion.h>
-#include <linux/if_ether.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/uuid.h>
-#include <linux/time.h>
+#include <linaos/completion.h>
+#include <linaos/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/uuid.h>
+#include <linaos/time.h>
 
 #include "htt.h"
 #include "htc.h"

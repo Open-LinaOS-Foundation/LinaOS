@@ -9,14 +9,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/clk/mmp.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
+#include <linaos/clk.h>
+#include <linaos/clk/mmp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
 
 #include "clk.h"
 

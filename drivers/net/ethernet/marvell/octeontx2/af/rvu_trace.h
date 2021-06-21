@@ -10,9 +10,9 @@
 #if !defined(__RVU_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __RVU_TRACE_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/tracepoint.h>
+#include <linaos/pci.h>
 
 TRACE_EVENT(otx2_msg_alloc,
 	    TP_PROTO(const struct pci_dev *pdev, u16 id, u64 size),

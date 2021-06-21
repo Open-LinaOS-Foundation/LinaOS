@@ -6,18 +6,18 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/tps65090.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/mfd/tps65090.h>
 
 #define MAX_CTRL_READ_TRIES	5
 #define MAX_FET_ENABLE_TRIES	1000

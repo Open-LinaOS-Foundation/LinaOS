@@ -6,7 +6,7 @@
  */
 
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/head.h>
 #include <asm/asi.h>
 #include <asm/lsu.h>

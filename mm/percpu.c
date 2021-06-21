@@ -2,7 +2,7 @@
 /*
  * mm/percpu.c - percpu memory allocator
  *
- * Copyright (C) 2009		SUSE Linux Products GmbH
+ * Copyright (C) 2009		SUSE LinaOS Products GmbH
  * Copyright (C) 2009		Tejun Heo <tj@kernel.org>
  *
  * Copyright (C) 2017		Facebook Inc.
@@ -68,26 +68,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/cpumask.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/lcm.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/pfn.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/kmemleak.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/memcontrol.h>
+#include <linaos/bitmap.h>
+#include <linaos/cpumask.h>
+#include <linaos/memblock.h>
+#include <linaos/err.h>
+#include <linaos/lcm.h>
+#include <linaos/list.h>
+#include <linaos/log2.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/percpu.h>
+#include <linaos/pfn.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/workqueue.h>
+#include <linaos/kmemleak.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/memcontrol.h>
 
 #include <asm/cacheflush.h>
 #include <asm/sections.h>

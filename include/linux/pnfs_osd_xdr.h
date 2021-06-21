@@ -39,7 +39,7 @@
 #ifndef __PNFS_OSD_XDR_H__
 #define __PNFS_OSD_XDR_H__
 
-#include <linux/nfs_fs.h>
+#include <linaos/nfs_fs.h>
 
 /*
  * draft-ietf-nfsv4-minorversion-22

@@ -4,29 +4,29 @@
  * Copyright (C) 2013, Intel Corporation
  */
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/spi/spi.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/of.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/spi/spi.h>
 
 #include "spi-pxa2xx.h"
 
@@ -1657,7 +1657,7 @@ static int pxa2xx_spi_fw_translate_cs(struct spi_controller *controller,
 		/*
 		 * For Atoms the ACPI DeviceSelection used by the Windows
 		 * driver starts from 1 instead of 0 so translate it here
-		 * to match what Linux expects.
+		 * to match what LinaOS expects.
 		 */
 		case LPSS_BYT_SSP:
 		case LPSS_BSW_SSP:

@@ -2,25 +2,25 @@
 /*
  * Maxim MAX197 A/D Converter driver
  *
- * Copyright (c) 2012 Savoir-faire Linux Inc.
- *          Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2012 Savoir-faire LinaOS Inc.
+ *          Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  *
  * For further information, see the Documentation/hwmon/max197.rst file.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/max197.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/max197.h>
 
 #define MAX199_LIMIT	4000		/* 4V */
 #define MAX197_LIMIT	10000		/* 10V */
@@ -340,5 +340,5 @@ static struct platform_driver max197_driver = {
 module_platform_driver(max197_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Savoir-faire Linux Inc. <kernel@savoirfairelinux.com>");
+MODULE_AUTHOR("Savoir-faire LinaOS Inc. <kernel@savoirfairelinaos.com>");
 MODULE_DESCRIPTION("Maxim MAX197 A/D Converter driver");

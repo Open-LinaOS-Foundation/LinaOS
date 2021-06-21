@@ -2,7 +2,7 @@
 /*
  *  mxl111sf-tuner.c - driver for the MaxLinear MXL111SF CMOS tuner
  *
- *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2010-2014 Michael Krufky <mkrufky@linaostv.org>
  */
 
 #include "mxl111sf-tuner.h"
@@ -498,6 +498,6 @@ struct dvb_frontend *mxl111sf_tuner_attach(struct dvb_frontend *fe,
 EXPORT_SYMBOL_GPL(mxl111sf_tuner_attach);
 
 MODULE_DESCRIPTION("MaxLinear MxL111SF CMOS tuner driver");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@linaostv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.1");

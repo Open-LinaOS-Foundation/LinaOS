@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ===================================
-AACRAID Driver for Linux (take two)
+AACRAID Driver for LinaOS (take two)
 ===================================
 
 Introduction
@@ -165,7 +165,7 @@ Adaptec Unix OEM Product Group
 Mailing List
 ============
 
-linux-scsi@vger.kernel.org (Interested parties troll here)
+linaos-scsi@vger.kernel.org (Interested parties troll here)
 Also note this is very different to Brian's original driver
 so don't expect him to support it.
 

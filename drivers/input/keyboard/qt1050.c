@@ -9,15 +9,15 @@
  *  Copyright (C) 2011 Atmel
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 /* Chip ID */
 #define QT1050_CHIP_ID		0x00
@@ -352,7 +352,7 @@ static int qt1050_parse_fw(struct qt1050_priv *ts)
 		struct qt1050_key button;
 
 		/* Required properties */
-		if (fwnode_property_read_u32(child, "linux,code",
+		if (fwnode_property_read_u32(child, "linaos,code",
 					     &button.keycode)) {
 			dev_err(dev, "Button without keycode\n");
 			goto err;

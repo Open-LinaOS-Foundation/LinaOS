@@ -6,21 +6,21 @@
 //
 // Common code for S3C24XX machines
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
 #include <clocksource/samsung_pwm.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_data/clk-s3c2410.h>
-#include <linux/platform_data/dma-s3c24xx.h>
-#include <linux/dmaengine.h>
-#include <linux/clk/samsung.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/platform_data/clk-s3c2410.h>
+#include <linaos/platform_data/dma-s3c24xx.h>
+#include <linaos/dmaengine.h>
+#include <linaos/clk/samsung.h>
 
 #include "hardware-s3c24xx.h"
 #include "map.h"

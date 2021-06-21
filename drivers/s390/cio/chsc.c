@@ -11,12 +11,12 @@
 #define KMSG_COMPONENT "cio"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
 
 #include <asm/cio.h>
 #include <asm/chpid.h>
@@ -44,7 +44,7 @@ static DEFINE_SPINLOCK(chsc_page_lock);
  * chsc_error_from_response() - convert a chsc response to an error
  * @response: chsc response code
  *
- * Returns an appropriate Linux error code for @response.
+ * Returns an appropriate LinaOS error code for @response.
  */
 int chsc_error_from_response(int response)
 {

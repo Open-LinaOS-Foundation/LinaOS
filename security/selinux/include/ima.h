@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2021 Microsoft Corporation
  *
- * Author: Lakshmi Ramasubramanian (nramas@linux.microsoft.com)
+ * Author: Lakshmi Ramasubramanian (nramas@linaos.microsoft.com)
  *
- * Measure critical data structures maintainted by SELinux
+ * Measure critical data structures maintainted by SELinaOS
  * using IMA subsystem.
  */
 
@@ -14,15 +14,15 @@
 #include "security.h"
 
 #ifdef CONFIG_IMA
-extern void selinux_ima_measure_state(struct selinux_state *selinux_state);
-extern void selinux_ima_measure_state_locked(
-			struct selinux_state *selinux_state);
+extern void selinaos_ima_measure_state(struct selinaos_state *selinaos_state);
+extern void selinaos_ima_measure_state_locked(
+			struct selinaos_state *selinaos_state);
 #else
-static inline void selinux_ima_measure_state(struct selinux_state *selinux_state)
+static inline void selinaos_ima_measure_state(struct selinaos_state *selinaos_state)
 {
 }
-static inline void selinux_ima_measure_state_locked(
-			struct selinux_state *selinux_state)
+static inline void selinaos_ima_measure_state_locked(
+			struct selinaos_state *selinaos_state)
 {
 }
 #endif

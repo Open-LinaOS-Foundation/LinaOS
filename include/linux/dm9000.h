@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* include/linux/dm9000.h
+/* include/linaos/dm9000.h
  *
  * Copyright (c) 2004 Simtec Electronics
  *   Ben Dooks <ben@simtec.co.uk>
@@ -10,7 +10,7 @@
 #ifndef __DM9000_PLATFORM_DATA
 #define __DM9000_PLATFORM_DATA __FILE__
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 /* IO control flags */
 

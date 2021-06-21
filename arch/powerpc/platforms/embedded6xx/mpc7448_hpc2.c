@@ -14,19 +14,19 @@
  * Copyright 2004-2006 Freescale Semiconductor, Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/extable.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_core.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/kdev_t.h>
+#include <linaos/console.h>
+#include <linaos/extable.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/root_dev.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/serial_core.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

@@ -2,8 +2,8 @@
 #ifndef _ASM_S390_UNWIND_H
 #define _ASM_S390_UNWIND_H
 
-#include <linux/sched.h>
-#include <linux/ftrace.h>
+#include <linaos/sched.h>
+#include <linaos/ftrace.h>
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>
 

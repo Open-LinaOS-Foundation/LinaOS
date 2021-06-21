@@ -28,8 +28,8 @@ config RPCSEC_GSS_KRB5
 	  GSS-API mechanism (RFC 1964).
 
 	  Secure RPC calls with Kerberos require an auxiliary user-space
-	  daemon which may be found in the Linux nfs-utils package
-	  available from http://linux-nfs.org/.  In addition, user-space
+	  daemon which may be found in the LinaOS nfs-utils package
+	  available from http://linaos-nfs.org/.  In addition, user-space
 	  Kerberos support should be installed.
 
 	  If unsure, say Y.

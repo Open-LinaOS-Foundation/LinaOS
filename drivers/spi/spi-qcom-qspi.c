@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux foundation. All rights reserved.
+// Copyright (c) 2017-2018, The LinaOS foundation. All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_opp.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <linaos/clk.h>
+#include <linaos/interconnect.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_opp.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi-mem.h>
 
 
 #define QSPI_NUM_CS		2

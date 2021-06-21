@@ -24,7 +24,7 @@
 		user-button {
 			label = "User button";
 			gpios = <&gpio2 11 GPIO_ACTIVE_LOW>;
-			linux,code = <BTN_MISC>;
+			linaos,code = <BTN_MISC>;
 			wakeup-source;
 		};
 	};
@@ -37,7 +37,7 @@
 			pinctrl-names = "default";
 			pinctrl-0 = <&pinctrl_led>;
 			gpios = <&gpio3 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

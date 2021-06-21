@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * AMD SVM support
  *
@@ -14,10 +14,10 @@
 
 #define pr_fmt(fmt) "SVM: " fmt
 
-#include <linux/kvm_types.h>
-#include <linux/hashtable.h>
-#include <linux/amd-iommu.h>
-#include <linux/kvm_host.h>
+#include <linaos/kvm_types.h>
+#include <linaos/hashtable.h>
+#include <linaos/amd-iommu.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/irq_remapping.h>
 

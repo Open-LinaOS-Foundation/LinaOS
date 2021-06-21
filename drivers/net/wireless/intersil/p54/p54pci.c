@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- * Linux device driver for PCI based Prism54
+ * LinaOS device driver for PCI based Prism54
  *
  * Copyright (c) 2006, Michael Wu <flamingice@sourmilk.net>
  * Copyright (c) 2008, Christian Lamparter <chunkeey@web.de>
@@ -10,13 +10,13 @@
  * Copyright 2004-2006 Jean-Baptiste Note <jean-baptiste.note@m4x.org>, et al.
  */
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/completion.h>
+#include <linaos/module.h>
 #include <net/mac80211.h>
 
 #include "p54.h"

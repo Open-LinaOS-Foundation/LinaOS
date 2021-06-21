@@ -5,11 +5,11 @@
  * Copyright 2015-2016, Aneesh Kumar K.V, IBM Corporation.
  */
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/memblock.h>
-#include <linux/mmu_context.h>
-#include <linux/sched/mm.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/memblock.h>
+#include <linaos/mmu_context.h>
+#include <linaos/sched/mm.h>
 
 #include <asm/ppc-opcode.h>
 #include <asm/tlb.h>

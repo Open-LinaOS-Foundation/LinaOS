@@ -2,7 +2,7 @@
 /*
  * Copyright 2005 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *
  * S3C - HWMon interface for ADC
 */

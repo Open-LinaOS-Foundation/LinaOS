@@ -11,7 +11,7 @@
 #if !defined(_AMDTP_STREAM_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _AMDTP_STREAM_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(amdtp_packet,
 	TP_PROTO(const struct amdtp_stream *s, u32 cycles, const __be32 *cip_header, unsigned int payload_length, unsigned int data_blocks, unsigned int data_block_counter, unsigned int packet_index, unsigned int index),

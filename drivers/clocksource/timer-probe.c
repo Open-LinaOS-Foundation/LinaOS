@@ -3,10 +3,10 @@
  * Copyright (c) 2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/clocksource.h>
+#include <linaos/acpi.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/clocksource.h>
 
 extern struct of_device_id __timer_of_table[];
 

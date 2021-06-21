@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Copyright © 2004-2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Samsung S3C2410/S3C2440/S3C2412 NAND driver
@@ -13,26 +13,26 @@
 #define DEBUG
 #endif
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/cpufreq.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
 
-#include <linux/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
 
 #define S3C2410_NFREG(x) (x)
 

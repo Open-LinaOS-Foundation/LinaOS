@@ -8,18 +8,18 @@
  * hardware.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
 /* All information about the connected logic modules are in here */
 #define INTEGRATOR_SC_DEC_OFFSET	0x10

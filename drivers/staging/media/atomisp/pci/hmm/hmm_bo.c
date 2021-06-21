@@ -20,23 +20,23 @@
 /*
  * This file contains functions for buffer object structure management
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/gfp.h>		/* for GFP_ATOMIC */
-#include <linux/mm.h>
-#include <linux/mm_types.h>
-#include <linux/hugetlb.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>		/* for kmalloc */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/gfp.h>		/* for GFP_ATOMIC */
+#include <linaos/mm.h>
+#include <linaos/mm_types.h>
+#include <linaos/hugetlb.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>		/* for kmalloc */
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
 #include <asm/current.h>
-#include <linux/sched/signal.h>
-#include <linux/file.h>
+#include <linaos/sched/signal.h>
+#include <linaos/file.h>
 
 #include <asm/set_memory.h>
 

@@ -8,7 +8,7 @@
  * Copyright (C) 2000 Abramo Bagnara <abramo@alsa-project.org>
  */
 
-#include <linux/soundcard.h>
+#include <linaos/soundcard.h>
 
 #ifndef SAMPLE_TYPE_AWE32
 #define SAMPLE_TYPE_AWE32		0x20

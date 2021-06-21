@@ -12,9 +12,9 @@
  * XXX these should be marked initdata for multi-OMAP kernels
  */
 
-#include <linux/platform_data/i2c-omap.h>
-#include <linux/power/smartreflex.h>
-#include <linux/platform_data/hsmmc-omap.h>
+#include <linaos/platform_data/i2c-omap.h>
+#include <linaos/power/smartreflex.h>
+#include <linaos/platform_data/hsmmc-omap.h>
 
 #include "l3_3xxx.h"
 #include "l4_3xxx.h"
@@ -2557,7 +2557,7 @@ static struct omap_hwmod_ocp_if *omap3xxx_dss_hwmod_ocp_ifs[] __initdata = {
  * @bus: struct device_node * for the top-level OMAP DT data
  * @dev_name: device name used in the DT file
  *
- * Determine whether a "secure" IP block @dev_name is usable by Linux.
+ * Determine whether a "secure" IP block @dev_name is usable by LinaOS.
  * There doesn't appear to be a 100% reliable way to determine this,
  * so we rely on heuristics.  If @bus is null, meaning there's no DT
  * data, then we only assume the IP block is accessible if the OMAP is

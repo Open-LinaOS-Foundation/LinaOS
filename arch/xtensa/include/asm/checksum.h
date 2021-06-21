@@ -11,8 +11,8 @@
 #ifndef _XTENSA_CHECKSUM_H
 #define _XTENSA_CHECKSUM_H
 
-#include <linux/in6.h>
-#include <linux/uaccess.h>
+#include <linaos/in6.h>
+#include <linaos/uaccess.h>
 #include <asm/core.h>
 
 /*

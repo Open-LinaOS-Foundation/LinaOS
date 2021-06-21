@@ -9,7 +9,7 @@
 #ifndef NHI_REGS_H_
 #define NHI_REGS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum ring_flags {
 	RING_FLAG_ISOCH_ENABLE = 1 << 27, /* TX only? */

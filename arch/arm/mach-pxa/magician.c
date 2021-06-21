@@ -9,25 +9,25 @@
  * Based on hx4700.c, spitz.c and others.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/mfd/htc-pasic3.h>
-#include <linux/mtd/physmap.h>
-#include <linux/pda_power.h>
-#include <linux/platform_data/gpio-htc-egpio.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/gpio-regulator.h>
-#include <linux/regulator/machine.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/mfd/htc-pasic3.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/pda_power.h>
+#include <linaos/platform_data/gpio-htc-egpio.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/gpio-regulator.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -36,23 +36,23 @@
 
 #include "pxa27x.h"
 #include <mach/magician.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 
-#include <linux/regulator/max1586.h>
+#include <linaos/regulator/max1586.h>
 
-#include <linux/platform_data/pxa2xx_udc.h>
+#include <linaos/platform_data/pxa2xx_udc.h>
 
 #include "udc.h"
 #include "pxa27x-udc.h"
 #include "devices.h"
 #include "generic.h"
 
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/spi/ads7846.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/spi/ads7846.h>
 
 static unsigned long magician_pin_config[] __initdata = {
 
@@ -869,7 +869,7 @@ static struct mtd_partition magician_flash_parts[] = {
 		.mask_flags	= MTD_WRITEABLE, /* EXPERIMENTAL */
 	},
 	{
-		.name		= "Linux Kernel",
+		.name		= "LinaOS Kernel",
 		.offset		= 0x40000,
 		.size		= MTDPART_SIZ_FULL,
 	},

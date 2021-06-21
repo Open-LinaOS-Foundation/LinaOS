@@ -6,34 +6,34 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/prefetch.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/dmapool.h>
+#include <linaos/mempool.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_vlan.h>
+#include <linaos/delay.h>
+#include <linaos/mm.h>
+#include <linaos/prefetch.h>
 
 #include "qla3xxx.h"
 

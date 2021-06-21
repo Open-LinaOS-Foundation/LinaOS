@@ -7,10 +7,10 @@
  * Written by Koji Sato.
  */
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
 #include "nilfs.h"
 #include "mdt.h"
 #include "alloc.h"

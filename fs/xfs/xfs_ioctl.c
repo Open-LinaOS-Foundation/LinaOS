@@ -27,7 +27,7 @@
 #include "xfs_trans.h"
 #include "xfs_acl.h"
 #include "xfs_btree.h"
-#include <linux/fsmap.h>
+#include <linaos/fsmap.h>
 #include "xfs_fsmap.h"
 #include "scrub/xfs_scrub.h"
 #include "xfs_sb.h"
@@ -38,9 +38,9 @@
 #include "xfs_da_format.h"
 #include "xfs_da_btree.h"
 
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/fileattr.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/fileattr.h>
 
 /*
  * xfs_find_handle maps from userspace xfs_fsop_handlereq structure to
@@ -1051,7 +1051,7 @@ xfs_ioc_ag_geometry(
 }
 
 /*
- * Linux extended inode flags interface.
+ * LinaOS extended inode flags interface.
  */
 
 static void

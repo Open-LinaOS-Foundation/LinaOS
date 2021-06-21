@@ -10,7 +10,7 @@
 #ifndef _OCFS2_FS_H
 #define _OCFS2_FS_H
 
-#include <linux/magic.h>
+#include <linaos/magic.h>
 
 /* Version */
 #define OCFS2_MAJOR_REV_LEVEL		0

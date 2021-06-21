@@ -11,7 +11,7 @@
 #define WM5100_ASOC_H
 
 #include <sound/soc.h>
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 int wm5100_detect(struct snd_soc_component *component, struct snd_soc_jack *jack);
 

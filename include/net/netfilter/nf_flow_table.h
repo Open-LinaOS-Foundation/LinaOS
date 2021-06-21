@@ -1,13 +1,13 @@
 #ifndef _NF_FLOW_TABLE_H
 #define _NF_FLOW_TABLE_H
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/rhashtable-types.h>
-#include <linux/rcupdate.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/rhashtable-types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nf_conntrack_tuple_common.h>
 #include <net/flow_offload.h>
 #include <net/dst.h>
 

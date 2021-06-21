@@ -3,16 +3,16 @@
 
 /* ethtool support for ixgbe */
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/uaccess.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/uaccess.h>
 
 #include "ixgbe.h"
 #include "ixgbe_phy.h"

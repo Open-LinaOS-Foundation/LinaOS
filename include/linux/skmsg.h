@@ -4,10 +4,10 @@
 #ifndef _LINUX_SKMSG_H
 #define _LINUX_SKMSG_H
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
+#include <linaos/scatterlist.h>
+#include <linaos/skbuff.h>
 
 #include <net/sock.h>
 #include <net/tcp.h>

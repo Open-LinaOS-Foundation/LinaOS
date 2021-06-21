@@ -7,7 +7,7 @@
 #ifndef __PINCTRL_BCM63XX_H__
 #define __PINCTRL_BCM63XX_H__
 
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinctrl.h>
 
 #define BCM63XX_BANK_GPIOS 32
 

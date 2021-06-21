@@ -4,12 +4,12 @@
 #include <string.h>
 #include <errno.h>
 #include <netinet/in.h>
-#include <linux/stddef.h>
-#include <linux/bpf.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/if_ether.h>
-#include <linux/pkt_cls.h>
+#include <linaos/stddef.h>
+#include <linaos/bpf.h>
+#include <linaos/ipv6.h>
+#include <linaos/tcp.h>
+#include <linaos/if_ether.h>
+#include <linaos/pkt_cls.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

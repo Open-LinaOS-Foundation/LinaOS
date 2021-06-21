@@ -9,10 +9,10 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-common.h>

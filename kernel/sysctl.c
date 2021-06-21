@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * sysctl.c: General linux system control interface
+ * sysctl.c: General linaos system control interface
  *
  * Begun 24 March 1995, Stephen Tweedie
  * Added /proc support, Dec 1995
@@ -19,62 +19,62 @@
  *  Removed it and replaced it with older style, 03/23/00, Bill Wendling
  */
 
-#include <linux/module.h>
-#include <linux/aio.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/bitmap.h>
-#include <linux/signal.h>
-#include <linux/printk.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/ctype.h>
-#include <linux/kmemleak.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/net.h>
-#include <linux/sysrq.h>
-#include <linux/highuid.h>
-#include <linux/writeback.h>
-#include <linux/ratelimit.h>
-#include <linux/compaction.h>
-#include <linux/hugetlb.h>
-#include <linux/initrd.h>
-#include <linux/key.h>
-#include <linux/times.h>
-#include <linux/limits.h>
-#include <linux/dcache.h>
-#include <linux/dnotify.h>
-#include <linux/syscalls.h>
-#include <linux/vmstat.h>
-#include <linux/nfs_fs.h>
-#include <linux/acpi.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/oom.h>
-#include <linux/kmod.h>
-#include <linux/capability.h>
-#include <linux/binfmts.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/coredump.h>
-#include <linux/kexec.h>
-#include <linux/bpf.h>
-#include <linux/mount.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/coredump.h>
-#include <linux/latencytop.h>
-#include <linux/pid.h>
+#include <linaos/module.h>
+#include <linaos/aio.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
+#include <linaos/bitmap.h>
+#include <linaos/signal.h>
+#include <linaos/printk.h>
+#include <linaos/proc_fs.h>
+#include <linaos/security.h>
+#include <linaos/ctype.h>
+#include <linaos/kmemleak.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/kobject.h>
+#include <linaos/net.h>
+#include <linaos/sysrq.h>
+#include <linaos/highuid.h>
+#include <linaos/writeback.h>
+#include <linaos/ratelimit.h>
+#include <linaos/compaction.h>
+#include <linaos/hugetlb.h>
+#include <linaos/initrd.h>
+#include <linaos/key.h>
+#include <linaos/times.h>
+#include <linaos/limits.h>
+#include <linaos/dcache.h>
+#include <linaos/dnotify.h>
+#include <linaos/syscalls.h>
+#include <linaos/vmstat.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/acpi.h>
+#include <linaos/reboot.h>
+#include <linaos/ftrace.h>
+#include <linaos/perf_event.h>
+#include <linaos/kprobes.h>
+#include <linaos/pipe_fs_i.h>
+#include <linaos/oom.h>
+#include <linaos/kmod.h>
+#include <linaos/capability.h>
+#include <linaos/binfmts.h>
+#include <linaos/sched/sysctl.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/kexec.h>
+#include <linaos/bpf.h>
+#include <linaos/mount.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/coredump.h>
+#include <linaos/latencytop.h>
+#include <linaos/pid.h>
 
 #include "../lib/kstrtox.h"
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>
 
 #ifdef CONFIG_X86
@@ -86,22 +86,22 @@
 #include <asm/setup.h>
 #endif
 #ifdef CONFIG_BSD_PROCESS_ACCT
-#include <linux/acct.h>
+#include <linaos/acct.h>
 #endif
 #ifdef CONFIG_RT_MUTEXES
-#include <linux/rtmutex.h>
+#include <linaos/rtmutex.h>
 #endif
 #if defined(CONFIG_PROVE_LOCKING) || defined(CONFIG_LOCK_STAT)
-#include <linux/lockdep.h>
+#include <linaos/lockdep.h>
 #endif
 #ifdef CONFIG_CHR_DEV_SG
 #include <scsi/sg.h>
 #endif
 #ifdef CONFIG_STACKLEAK_RUNTIME_DISABLE
-#include <linux/stackleak.h>
+#include <linaos/stackleak.h>
 #endif
 #ifdef CONFIG_LOCKUP_DETECTOR
-#include <linux/nmi.h>
+#include <linaos/nmi.h>
 #endif
 
 #if defined(CONFIG_SYSCTL)
@@ -146,10 +146,10 @@ static unsigned long hung_task_timeout_max = (LONG_MAX/HZ);
 #endif
 
 #ifdef CONFIG_INOTIFY_USER
-#include <linux/inotify.h>
+#include <linaos/inotify.h>
 #endif
 #ifdef CONFIG_FANOTIFY
-#include <linux/fanotify.h>
+#include <linaos/fanotify.h>
 #endif
 
 #ifdef CONFIG_PROC_SYSCTL

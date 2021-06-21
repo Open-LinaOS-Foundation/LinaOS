@@ -2,7 +2,7 @@
 #ifndef __ASM_MACH_BMIPS_IOREMAP_H
 #define __ASM_MACH_BMIPS_IOREMAP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 static inline int is_bmips_internal_registers(phys_addr_t offset)
 {

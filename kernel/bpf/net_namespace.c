@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
 #include <net/net_namespace.h>
 
 /*

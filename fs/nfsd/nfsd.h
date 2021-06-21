@@ -9,19 +9,19 @@
 #ifndef LINUX_NFSD_NFSD_H
 #define LINUX_NFSD_NFSD_H
 
-#include <linux/types.h>
-#include <linux/mount.h>
+#include <linaos/types.h>
+#include <linaos/mount.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs2.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/addr.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs2.h>
+#include <linaos/nfs3.h>
+#include <linaos/nfs4.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/sunrpc/svc_xprt.h>
+#include <linaos/sunrpc/msg_prot.h>
+#include <linaos/sunrpc/addr.h>
 
-#include <uapi/linux/nfsd/debug.h>
+#include <uapi/linaos/nfsd/debug.h>
 
 #include "netns.h"
 #include "export.h"

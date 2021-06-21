@@ -108,13 +108,13 @@ API for implementing a new FPGA Manager driver
 * fpga_mgr_register() —  Register an FPGA manager
 * fpga_mgr_unregister() —  Unregister an FPGA manager
 
-.. kernel-doc:: include/linux/fpga/fpga-mgr.h
+.. kernel-doc:: include/linaos/fpga/fpga-mgr.h
    :functions: fpga_mgr_states
 
-.. kernel-doc:: include/linux/fpga/fpga-mgr.h
+.. kernel-doc:: include/linaos/fpga/fpga-mgr.h
    :functions: fpga_manager
 
-.. kernel-doc:: include/linux/fpga/fpga-mgr.h
+.. kernel-doc:: include/linaos/fpga/fpga-mgr.h
    :functions: fpga_manager_ops
 
 .. kernel-doc:: drivers/fpga/fpga-mgr.c

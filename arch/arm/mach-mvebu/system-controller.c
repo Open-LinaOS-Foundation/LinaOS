@@ -22,11 +22,11 @@
  * soft-reset, but it might be extended in the future.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
+#include <linaos/reboot.h>
 #include "common.h"
 #include "mvebu-soc-id.h"
 #include "pmsu.h"

@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/mm.h>
-#include <linux/mtd/super.h>
+#include <linaos/mm.h>
+#include <linaos/mtd/super.h>
 #include "internal.h"
 
 /*

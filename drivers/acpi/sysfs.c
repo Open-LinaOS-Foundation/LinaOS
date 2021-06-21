@@ -5,10 +5,10 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/acpi.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/acpi.h>
 
 #include "internal.h"
 
@@ -790,7 +790,7 @@ end:
  * Quirks may be needed to prevent GPE flooding on a specific GPE. The
  * flooding typically cannot be detected and automatically prevented by
  * ACPI_GPE_DISPATCH_NONE check because there is a _Lxx/_Exx prepared in
- * the AML tables. This normally indicates a feature gap in Linux, thus
+ * the AML tables. This normally indicates a feature gap in LinaOS, thus
  * instead of providing endless quirk tables, we provide a boot parameter
  * for those who want this quirk. For example, if the users want to prevent
  * the GPE flooding for GPE 00, they need to specify the following boot
@@ -1004,7 +1004,7 @@ static ssize_t force_remove_store(struct kobject *kobj,
 		return ret;
 
 	if (val) {
-		pr_err("Enabling force_remove is not supported anymore. Please report to linux-acpi@vger.kernel.org if you depend on this functionality\n");
+		pr_err("Enabling force_remove is not supported anymore. Please report to linaos-acpi@vger.kernel.org if you depend on this functionality\n");
 		return -EINVAL;
 	}
 	return size;

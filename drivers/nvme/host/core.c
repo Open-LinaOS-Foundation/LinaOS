@@ -4,22 +4,22 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/compat.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/hdreg.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
-#include <linux/list_sort.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pr.h>
-#include <linux/ptrace.h>
-#include <linux/nvme_ioctl.h>
-#include <linux/pm_qos.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/compat.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/hdreg.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/backing-dev.h>
+#include <linaos/list_sort.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/pr.h>
+#include <linaos/ptrace.h>
+#include <linaos/nvme_ioctl.h>
+#include <linaos/pm_qos.h>
 #include <asm/unaligned.h>
 
 #include "nvme.h"
@@ -1038,7 +1038,7 @@ static void nvme_execute_rq_polled(struct request_queue *q,
 }
 
 /*
- * Returns 0 on success.  If the result is negative, it's a Linux error code;
+ * Returns 0 on success.  If the result is negative, it's a LinaOS error code;
  * if the result is positive, it's an NVM Express status code
  */
 int __nvme_submit_sync_cmd(struct request_queue *q, struct nvme_command *cmd,
@@ -1805,7 +1805,7 @@ static void nvme_update_disk_info(struct gendisk *disk,
 
 	blk_queue_logical_block_size(disk->queue, bs);
 	/*
-	 * Linux filesystems assume writing a single physical block is
+	 * LinaOS filesystems assume writing a single physical block is
 	 * an atomic operation. Hence limit the physical block size to the
 	 * value of the Atomic Write Unit Power Fail parameter.
 	 */
@@ -2367,7 +2367,7 @@ static const struct nvme_core_quirk_entry core_quirks[] = {
 	{
 		/*
 		 * This Toshiba device seems to die using any APST states.  See:
-		 * https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1678184/comments/11
+		 * https://bugs.launchpad.net/ubuntu/+source/linaos/+bug/1678184/comments/11
 		 */
 		.vid = 0x1179,
 		.mn = "THNSF5256GPUK TOSHIBA",

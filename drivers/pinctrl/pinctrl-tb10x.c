@@ -7,17 +7,17 @@
  * Author: Christian Ruppert <christian.ruppert@abilis.com>
  */
 
-#include <linux/stringify.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/stringify.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #include "pinctrl-utils.h"
 

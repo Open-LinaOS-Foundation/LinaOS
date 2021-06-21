@@ -5,7 +5,7 @@
 #ifndef _ASM_GENERIC_TERMIOS_BASE_H
 #define _ASM_GENERIC_TERMIOS_BASE_H
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #ifndef __ARCH_TERMIO_GETPUT
 

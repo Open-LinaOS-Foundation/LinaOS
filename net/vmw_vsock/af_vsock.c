@@ -85,28 +85,28 @@
  *   TCP_LISTEN - listening
  */
 
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/cred.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/net.h>
-#include <linux/poll.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/smp.h>
-#include <linux/socket.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/cred.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kmod.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/net.h>
+#include <linaos/poll.h>
+#include <linaos/random.h>
+#include <linaos/skbuff.h>
+#include <linaos/smp.h>
+#include <linaos/socket.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
 #include <net/sock.h>
 #include <net/af_vsock.h>
 
@@ -1880,7 +1880,7 @@ vsock_stream_recvmsg(struct socket *sock, struct msghdr *msg, size_t len,
 		goto out;
 	}
 
-	/* It is valid on Linux to pass in a zero-length receive buffer.  This
+	/* It is valid on LinaOS to pass in a zero-length receive buffer.  This
 	 * is not an error.  We may as well bail out now.
 	 */
 	if (!len) {

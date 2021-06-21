@@ -6,7 +6,7 @@
 #ifndef __INTEL_LRC_H__
 #define __INTEL_LRC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "intel_context.h"
 #include "intel_lrc_reg.h"

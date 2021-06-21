@@ -2,7 +2,7 @@
 #define VERSION "0.23"
 /* ns83820.c by Benjamin LaHaise with contributions.
  *
- * Questions/comments/discussion to linux-ns83820@kvack.org.
+ * Questions/comments/discussion to linaos-ns83820@kvack.org.
  *
  * $Revision: 1.34.2.23 $
  *
@@ -81,31 +81,31 @@
 //#define dprintk		printk
 #define dprintk(x...)		do { } while (0)
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>	/* for iph */
-#include <linux/in.h>	/* for IPPROTO_... */
-#include <linux/compiler.h>
-#include <linux/prefetch.h>
-#include <linux/ethtool.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/if_vlan.h>
-#include <linux/rtnetlink.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>	/* for iph */
+#include <linaos/in.h>	/* for IPPROTO_... */
+#include <linaos/compiler.h>
+#include <linaos/prefetch.h>
+#include <linaos/ethtool.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/if_vlan.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define DRV_NAME "ns83820"
 

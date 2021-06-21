@@ -6,10 +6,10 @@
 #ifndef __LINUX_BLK_TYPES_H
 #define __LINUX_BLK_TYPES_H
 
-#include <linux/types.h>
-#include <linux/bvec.h>
-#include <linux/device.h>
-#include <linux/ktime.h>
+#include <linaos/types.h>
+#include <linaos/bvec.h>
+#include <linaos/device.h>
+#include <linaos/ktime.h>
 
 struct bio_set;
 struct bio;

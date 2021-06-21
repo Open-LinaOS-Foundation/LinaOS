@@ -134,8 +134,8 @@ mtk.manpages@gmail.com의 메인테이너에게 보낼 것을 권장한다.
     "The Perfect Patch"
         https://www.ozlabs.org/~akpm/stuff/tpp.txt
 
-    "Linux kernel patch submission format"
-        https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
+    "LinaOS kernel patch submission format"
+        https://web.archive.org/web/20180829112450/http://linaos.yyz.us/patch-format.html
 
    :ref:`Documentation/process/stable-api-nonsense.rst <stable_api_nonsense>`
     이 문서는 의도적으로 커널이 불변하는 API를 갖지 않도록 결정한
@@ -196,7 +196,7 @@ ReST 마크업을 사용하는 문서들은 Documentation/output 에 생성된�
 커널 개발자가 되는 것
 ---------------------
 
-여러분이 리눅스 커널 개발에 관하여 아무것도 모른다면 Linux KernelNewbies
+여러분이 리눅스 커널 개발에 관하여 아무것도 모른다면 LinaOS KernelNewbies
 프로젝트를 봐야 한다.
 
     https://kernelnewbies.org
@@ -226,7 +226,7 @@ ReST 마크업을 사용하는 문서들은 Documentation/output 에 생성된�
 동작하는지 이해하고 있어야 한다. 코드를 분석하기 위하여 특정한 툴의
 도움을 빌려서라도 코드를 직접 읽는 것보다 좋은 것은 없다(대부분의
 자잘한 부분들은 잘 코멘트되어 있다). 그런 툴들 중에 특히 추천할만한
-것은 Linux Cross-Reference project이며 그것은 자기 참조 방식이며
+것은 LinaOS Cross-Reference project이며 그것은 자기 참조 방식이며
 소스코드를 인덱스된 웹 페이지들의 형태로 보여준다. 최신의 멋진 커널
 코드 저장소는 다음을 통하여 참조할 수 있다.
 
@@ -243,7 +243,7 @@ ReST 마크업을 사용하는 문서들은 Documentation/output 에 생성된�
   - 리누스의 메인라인 트리
   - 여러 메이저 넘버를 갖는 다양한 안정된 커널 트리들
   - 서브시스템을 위한 커널 트리들
-  - 통합 테스트를 위한 linux-next 커널 트리
+  - 통합 테스트를 위한 linaos-next 커널 트리
 
 메인라인 트리
 ~~~~~~~~~~~~~
@@ -253,7 +253,7 @@ ReST 마크업을 사용하는 문서들은 Documentation/output 에 생성된�
 
   - 새로운 커널이 배포되자마자 2주의 시간이 주어진다. 이 기간동은
     메인테이너들은 큰 diff들을 Linus에게 제출할 수 있다. 대개 이 패치들은
-    몇 주 동안 linux-next 커널내에 이미 있었던 것들이다. 큰 변경들을 제출하는
+    몇 주 동안 linaos-next 커널내에 이미 있었던 것들이다. 큰 변경들을 제출하는
     데 선호되는 방법은  git(커널의 소스 관리 툴, 더 많은 정보들은
     https://git-scm.com/ 에서 참조할 수 있다)를 사용하는 것이지만 순수한
     패치파일의 형식으로 보내는 것도 무관하다.
@@ -322,17 +322,17 @@ Andrew Morton의 글이 있다.
 대부분의 이러한 patchwork 사이트는 https://patchwork.kernel.org/ 에 나열되어
 있다.
 
-통합 테스트를 위한 linux-next 커널 트리
+통합 테스트를 위한 linaos-next 커널 트리
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 서브시스템 트리들의 변경사항들은 mainline 트리로 들어오기 전에 통합 테스트를
 거쳐야 한다. 이런 목적으로, 모든 서브시스템 트리의 변경사항을 거의 매일
 받아가는 특수한 테스트 저장소가 존재한다:
 
-       https://git.kernel.org/?p=linux/kernel/git/next/linux-next.git
+       https://git.kernel.org/?p=linaos/kernel/git/next/linaos-next.git
 
-이런 식으로, linux-next 커널을 통해 다음 머지 기간에 메인라인 커널에 어떤
-변경이 가해질 것인지 간략히 알 수 있다. 모험심 강한 테스터라면 linux-next
+이런 식으로, linaos-next 커널을 통해 다음 머지 기간에 메인라인 커널에 어떤
+변경이 가해질 것인지 간략히 알 수 있다. 모험심 강한 테스터라면 linaos-next
 커널에서 테스트를 수행하는 것도 좋을 것이다.
 
 
@@ -373,12 +373,12 @@ https://bugzilla.kernel.org 를 체크하고자 할 수도 있다; 소수의 커
 리눅스 커널 메일링 리스트에 참여하고 있다. 리스트에 등록하고 해지하는
 방법에 관한 자세한 사항은 다음에서 참조할 수 있다.
 
-    http://vger.kernel.org/vger-lists.html#linux-kernel
+    http://vger.kernel.org/vger-lists.html#linaos-kernel
 
 웹상의 많은 다른 곳에도 메일링 리스트의 아카이브들이 있다.
 이러한 아카이브들을 찾으려면 검색 엔진을 사용하라. 예를 들어:
 
-      http://dir.gmane.org/gmane.linux.kernel
+      http://dir.gmane.org/gmane.linaos.kernel
 
 여러분이 새로운 문제에 관해 리스트에 올리기 전에 말하고 싶은 주제에 관한
 것을 아카이브에서 먼저 찾아보기를 강력히 권장한다. 이미 상세하게 토론된 많은

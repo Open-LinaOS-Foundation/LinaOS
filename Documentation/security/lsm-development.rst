@@ -1,5 +1,5 @@
 =================================
-Linux Security Module Development
+LinaOS Security Module Development
 =================================
 
 Based on https://lore.kernel.org/r/20071026073721.618b4778@laptopd505.fenrus.org,
@@ -11,7 +11,7 @@ that end users and distros can make a more informed decision about which
 LSMs suit their requirements.
 
 For extensive documentation on the available LSM hook interfaces, please
-see ``include/linux/lsm_hooks.h`` and associated structures:
+see ``include/linaos/lsm_hooks.h`` and associated structures:
 
-.. kernel-doc:: include/linux/lsm_hooks.h
+.. kernel-doc:: include/linaos/lsm_hooks.h
    :internal:

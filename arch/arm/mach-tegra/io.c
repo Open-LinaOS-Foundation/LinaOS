@@ -9,11 +9,11 @@
  *	Erik Gilling <konkers@google.com>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
 
 #include <asm/mach/map.h>
 #include <asm/page.h>

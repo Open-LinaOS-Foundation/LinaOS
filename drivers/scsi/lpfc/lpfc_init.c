@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex LinaOS Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2021 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.  *
@@ -21,27 +21,27 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/ctype.h>
-#include <linux/aer.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/miscdevice.h>
-#include <linux/percpu.h>
-#include <linux/msi.h>
-#include <linux/irq.h>
-#include <linux/bitops.h>
-#include <linux/crash_dump.h>
-#include <linux/cpu.h>
-#include <linux/cpuhotplug.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/ctype.h>
+#include <linaos/aer.h>
+#include <linaos/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/miscdevice.h>
+#include <linaos/percpu.h>
+#include <linaos/msi.h>
+#include <linaos/irq.h>
+#include <linaos/bitops.h>
+#include <linaos/crash_dump.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuhotplug.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>
@@ -13029,11 +13029,11 @@ out:
 }
 
 /**
- * lpfc_sli4_request_firmware_update - Request linux generic firmware upgrade
+ * lpfc_sli4_request_firmware_update - Request linaos generic firmware upgrade
  * @phba: pointer to lpfc hba data structure.
  * @fw_upgrade: which firmware to update.
  *
- * This routine is called to perform Linux generic firmware upgrade on device
+ * This routine is called to perform LinaOS generic firmware upgrade on device
  * that supports such feature.
  **/
 int

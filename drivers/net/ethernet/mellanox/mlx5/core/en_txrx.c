@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/irq.h>
+#include <linaos/irq.h>
 #include "en.h"
 #include "en/txrx.h"
 #include "en/xdp.h"

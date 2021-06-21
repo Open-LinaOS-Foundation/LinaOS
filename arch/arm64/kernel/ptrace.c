@@ -8,27 +8,27 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/audit.h>
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/nospec.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/seccomp.h>
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/regset.h>
-#include <linux/tracehook.h>
-#include <linux/elf.h>
+#include <linaos/audit.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/nospec.h>
+#include <linaos/smp.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/seccomp.h>
+#include <linaos/security.h>
+#include <linaos/init.h>
+#include <linaos/signal.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/perf_event.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/regset.h>
+#include <linaos/tracehook.h>
+#include <linaos/elf.h>
 
 #include <asm/compat.h>
 #include <asm/cpufeature.h>

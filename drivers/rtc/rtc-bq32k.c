@@ -9,12 +9,12 @@
  * https://www.ti.com/lit/ds/symlink/bq32000.pdf
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/bcd.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/rtc.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/bcd.h>
 
 #define BQ32K_SECONDS		0x00	/* Seconds register address */
 #define BQ32K_SECONDS_MASK	0x7F	/* Mask over seconds value */

@@ -4,15 +4,15 @@
 #ifndef __VBOXGUEST_CORE_H__
 #define __VBOXGUEST_CORE_H__
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/vboxguest.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
+#include <linaos/vboxguest.h>
 #include "vmmdev.h"
 
 /*
@@ -199,7 +199,7 @@ int  vbg_core_set_mouse_status(struct vbg_dev *gdev, u32 features);
 
 irqreturn_t vbg_core_isr(int irq, void *dev_id);
 
-void vbg_linux_mouse_event(struct vbg_dev *gdev);
+void vbg_linaos_mouse_event(struct vbg_dev *gdev);
 
 /* Private (non exported) functions form vboxguest_utils.c */
 void *vbg_req_alloc(size_t len, enum vmmdev_request_type req_type,

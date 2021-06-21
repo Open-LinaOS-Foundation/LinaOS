@@ -5,19 +5,19 @@
  * Soundwire Intel Master Driver
  */
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
 #include <sound/pcm_params.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 #include <sound/soc.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_intel.h>
+#include <linaos/soundwire/sdw_registers.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_intel.h>
 #include "cadence_master.h"
 #include "bus.h"
 #include "intel.h"
@@ -1575,7 +1575,7 @@ int intel_master_process_wakeen_event(struct platform_device *pdev)
 	 * resume the Master, which will generate a bus reset and result in
 	 * Slaves re-attaching and be re-enumerated. The SoundWire physical
 	 * device which generated the wake will trigger an interrupt, which
-	 * will in turn cause the corresponding Linux Slave device to be
+	 * will in turn cause the corresponding LinaOS Slave device to be
 	 * resumed and the Slave codec driver to check the status.
 	 */
 	pm_request_resume(dev);

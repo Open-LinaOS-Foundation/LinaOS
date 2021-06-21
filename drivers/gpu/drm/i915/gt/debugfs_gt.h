@@ -6,7 +6,7 @@
 #ifndef DEBUGFS_GT_H
 #define DEBUGFS_GT_H
 
-#include <linux/file.h>
+#include <linaos/file.h>
 
 struct intel_gt;
 

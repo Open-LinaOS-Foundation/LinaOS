@@ -15,12 +15,12 @@
 #ifndef SI4713_I2C_H
 #define SI4713_I2C_H
 
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/platform_data/media/si4713.h>
+#include <linaos/platform_data/media/si4713.h>
 
 #define SI4713_PRODUCT_NUMBER		0x0D
 

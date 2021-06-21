@@ -15,18 +15,18 @@
  * GNU General Public License version 2 for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/tps65218.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/mfd/tps65218.h>
 
 #define TPS65218_REGULATOR(_name, _of, _id, _type, _ops, _n, _vr, _vm, _er, \
 			   _em, _cr, _cm, _lr, _nlr, _delay, _fuv, _sr, _sm, \

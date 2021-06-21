@@ -7,7 +7,7 @@
 #define _ASM_ARC_MMU_H
 
 #ifndef __ASSEMBLY__
-#include <linux/threads.h>	/* NR_CPUS */
+#include <linaos/threads.h>	/* NR_CPUS */
 #endif
 
 #if defined(CONFIG_ARC_MMU_V1)

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <uapi/linux/serial.h>
+#include <linaos/delay.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <uapi/linaos/serial.h>
 
 struct ledtrig_tty_data {
 	struct led_classdev *led_cdev;

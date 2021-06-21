@@ -24,7 +24,7 @@
 #ifndef __AMDGPU_SYNC_H__
 #define __AMDGPU_SYNC_H__
 
-#include <linux/hashtable.h>
+#include <linaos/hashtable.h>
 
 struct dma_fence;
 struct dma_resv;

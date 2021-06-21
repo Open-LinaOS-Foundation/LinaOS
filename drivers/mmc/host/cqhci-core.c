@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/scatterlist.h>
-#include <linux/platform_device.h>
-#include <linux/ktime.h>
+#include <linaos/delay.h>
+#include <linaos/highmem.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/scatterlist.h>
+#include <linaos/platform_device.h>
+#include <linaos/ktime.h>
 
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
 
 #include "cqhci.h"
 #include "cqhci-crypto.h"

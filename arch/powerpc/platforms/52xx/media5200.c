@@ -17,9 +17,9 @@
 
 #undef DEBUG
 
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 #include <asm/time.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>

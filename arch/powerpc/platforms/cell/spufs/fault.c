@@ -6,8 +6,8 @@
  *
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  */
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm.h>
 
 #include <asm/spu.h>
 #include <asm/spu_csa.h>

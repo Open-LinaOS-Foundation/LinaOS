@@ -6,13 +6,13 @@
  * Author: Yakir Yang <ykk@@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define GRF_SOC_CON12                           0x0274
 

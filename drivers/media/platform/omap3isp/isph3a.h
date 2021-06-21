@@ -15,7 +15,7 @@
 #ifndef OMAP3_ISP_H3A_H
 #define OMAP3_ISP_H3A_H
 
-#include <linux/omap3isp.h>
+#include <linaos/omap3isp.h>
 
 /*
  * ----------

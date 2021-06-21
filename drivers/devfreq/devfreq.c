@@ -7,26 +7,26 @@
  *	MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/debugfs.h>
-#include <linux/devfreq_cooling.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/pm_opp.h>
-#include <linux/devfreq.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/hrtimer.h>
-#include <linux/of.h>
-#include <linux/pm_qos.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/sched.h>
+#include <linaos/debugfs.h>
+#include <linaos/devfreq_cooling.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/pm_opp.h>
+#include <linaos/devfreq.h>
+#include <linaos/workqueue.h>
+#include <linaos/platform_device.h>
+#include <linaos/list.h>
+#include <linaos/printk.h>
+#include <linaos/hrtimer.h>
+#include <linaos/of.h>
+#include <linaos/pm_qos.h>
 #include "governor.h"
 
 #define CREATE_TRACE_POINTS

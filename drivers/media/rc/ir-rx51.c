@@ -4,13 +4,13 @@
  *
  *  Based on lirc_serial.c
  */
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
-#include <linux/pwm.h>
-#include <linux/of.h>
-#include <linux/hrtimer.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/wait.h>
+#include <linaos/pwm.h>
+#include <linaos/of.h>
+#include <linaos/hrtimer.h>
 
 #include <media/rc-core.h>
 

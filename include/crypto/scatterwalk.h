@@ -12,9 +12,9 @@
 #define _CRYPTO_SCATTERWALK_H
 
 #include <crypto/algapi.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/scatterlist.h>
+#include <linaos/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/scatterlist.h>
 
 static inline void scatterwalk_crypto_chain(struct scatterlist *head,
 					    struct scatterlist *sg, int num)

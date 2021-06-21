@@ -28,8 +28,8 @@
  *   -ENOMEM: storage allocation failed
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
 #include <asm/debug.h>
 
 /*

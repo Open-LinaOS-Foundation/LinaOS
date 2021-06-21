@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_RESOURCE_H
 #define _UAPI_LINUX_RESOURCE_H
 
-#include <linux/time.h>
-#include <linux/types.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
 
 /*
- * Resource control/accounting header file for linux
+ * Resource control/accounting header file for linaos
  */
 
 /*
@@ -73,7 +73,7 @@ struct rlimit64 {
 
 /*
  * Due to binary compatibility, the actual resource numbers
- * may be different for different linux versions..
+ * may be different for different linaos versions..
  */
 #include <asm/resource.h>
 

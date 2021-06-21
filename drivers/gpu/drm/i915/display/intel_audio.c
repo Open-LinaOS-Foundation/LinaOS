@@ -21,8 +21,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/component.h>
-#include <linux/kernel.h>
+#include <linaos/component.h>
+#include <linaos/kernel.h>
 
 #include <drm/drm_edid.h>
 #include <drm/i915_component.h>

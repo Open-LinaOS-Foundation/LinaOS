@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/core_wildfire.c
+ *  linaos/arch/alpha/kernel/core_wildfire.c
  *
  *  Wildfire support.
  *
@@ -12,10 +12,10 @@
 #include <asm/core_wildfire.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
 
 #include <asm/ptrace.h>
 #include <asm/smp.h>

@@ -33,7 +33,7 @@
 #ifndef __KEYGEN_H
 #define __KEYGEN_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 struct fman_keygen;
 struct fman_kg_regs;

@@ -7,7 +7,7 @@
 #ifndef __MESON_VDEC_ESPARSER_H_
 #define __MESON_VDEC_ESPARSER_H_
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include "vdec.h"
 

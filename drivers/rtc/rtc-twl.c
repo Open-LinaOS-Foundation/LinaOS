@@ -16,18 +16,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
 
-#include <linux/mfd/twl.h>
+#include <linaos/mfd/twl.h>
 
 enum twl_class {
 	TWL_4030 = 0,
@@ -250,10 +250,10 @@ static int twl_rtc_alarm_irq_enable(struct device *dev, unsigned enabled)
  * Gets current TWL RTC time and date parameters.
  *
  * The RTC's time/alarm representation is not what gmtime(3) requires
- * Linux to use:
+ * LinaOS to use:
  *
- *  - Months are 1..12 vs Linux 0-11
- *  - Years are 0..99 vs Linux 1900..N (we assume 21st century)
+ *  - Months are 1..12 vs LinaOS 0-11
+ *  - Years are 0..99 vs LinaOS 1900..N (we assume 21st century)
  */
 static int twl_rtc_read_time(struct device *dev, struct rtc_time *tm)
 {

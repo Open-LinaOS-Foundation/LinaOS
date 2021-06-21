@@ -2,9 +2,9 @@
 #ifndef __6LOWPAN_NHC_H
 #define __6LOWPAN_NHC_H
 
-#include <linux/skbuff.h>
-#include <linux/rbtree.h>
-#include <linux/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/rbtree.h>
+#include <linaos/module.h>
 
 #include <net/6lowpan.h>
 #include <net/ipv6.h>

@@ -8,16 +8,16 @@
  * Copyright (c) 2003 Open Source Development Lab
  */
 
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/suspend.h>
-#include <linux/reboot.h>
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/syscore_ops.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/dmi.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/suspend.h>
+#include <linaos/reboot.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
+#include <linaos/syscore_ops.h>
 #include <asm/io.h>
 #include <trace/events/power.h>
 

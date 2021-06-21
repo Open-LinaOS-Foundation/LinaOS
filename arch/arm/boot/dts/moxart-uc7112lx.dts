@@ -35,7 +35,7 @@
 			reg = <0x0 0x40000>;
 		};
 		partition@40000 {
-			label = "linux kernel";
+			label = "linaos kernel";
 			reg = <0x40000 0x1C0000>;
 		};
 		partition@200000 {
@@ -54,7 +54,7 @@
 			label = "ready-led";
 			gpios = <&gpio 27 0x1>;
 			default-state = "on";
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 
@@ -65,7 +65,7 @@
 		poll-interval = <500>;
 		button@25 {
 			label = "GPIO Reset";
-			linux,code = <116>;
+			linaos,code = <116>;
 			gpios = <&gpio 25 1>;
 		};
 	};

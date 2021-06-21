@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/arch/arm/plat-omap/dmtimer.c
+ * linaos/arch/arm/plat-omap/dmtimer.c
  *
  * OMAP Dual-Mode Timers
  *
@@ -18,18 +18,18 @@
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/cpu_pm.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dmtimer-omap.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/dmtimer-omap.h>
 
 #include <clocksource/timer-ti-dm.h>
 

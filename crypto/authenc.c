@@ -11,13 +11,13 @@
 #include <crypto/authenc.h>
 #include <crypto/null.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 struct authenc_instance_ctx {
 	struct crypto_ahash_spawn auth;

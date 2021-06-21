@@ -5,16 +5,16 @@
  * Copyright (C) 2015 Joachim Eastwood <manabian@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/reset-controller.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/reset-controller.h>
+#include <linaos/spinlock.h>
 
 /* LPC18xx RGU registers */
 #define LPC18XX_RGU_CTRL0		0x100

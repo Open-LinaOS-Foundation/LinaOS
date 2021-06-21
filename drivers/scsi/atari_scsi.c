@@ -32,15 +32,15 @@
  * the default is can_queue == 1.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/nvram.h>
-#include <linux/bitops.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/blkdev.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/nvram.h>
+#include <linaos/bitops.h>
+#include <linaos/wait.h>
+#include <linaos/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/atarihw.h>

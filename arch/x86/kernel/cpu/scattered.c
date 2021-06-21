@@ -2,7 +2,7 @@
  *	Routines to identify additional cpu features that are scattered in
  *	cpuid space.
  */
-#include <linux/cpu.h>
+#include <linaos/cpu.h>
 
 #include <asm/memtype.h>
 #include <asm/apic.h>

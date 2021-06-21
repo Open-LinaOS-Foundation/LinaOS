@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *      FarSync WAN driver for Linux (2.6.x kernel version)
+ *      FarSync WAN driver for LinaOS (2.6.x kernel version)
  *
  *      Actually sync driver for X.21, V.35 and V.24 on FarSync T-series cards
  *
@@ -13,20 +13,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/version.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/if.h>
-#include <linux/hdlc.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/version.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/if.h>
+#include <linaos/hdlc.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "farsync.h"
 
@@ -1961,7 +1961,7 @@ fst_get_iface(struct fst_card_info *card, struct fst_port_info *port,
 	i = port->index;
 	memset(&sync, 0, sizeof(sync));
 	sync.clock_rate = FST_RDL(card, portConfig[i].lineSpeed);
-	/* Lucky card and linux use same encoding here */
+	/* Lucky card and linaos use same encoding here */
 	sync.clock_type = FST_RDB(card, portConfig[i].internalClock) ==
 	    INTCLK ? CLOCK_INT : CLOCK_EXT;
 	sync.loopback = 0;

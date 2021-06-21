@@ -2,7 +2,7 @@
 #ifndef __MATROXFB_CRTC2_H__
 #define __MATROXFB_CRTC2_H__
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 #include "matroxfb_base.h"
 
 struct matroxfb_dh_fb_info {

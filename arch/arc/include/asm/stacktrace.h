@@ -7,7 +7,7 @@
 #ifndef __ASM_STACKTRACE_H
 #define __ASM_STACKTRACE_H
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 /**
  * arc_unwind_core - Unwind the kernel mode stack for an execution context

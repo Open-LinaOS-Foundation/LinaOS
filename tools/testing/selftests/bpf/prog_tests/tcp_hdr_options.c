@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/socket.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #include "test_progs.h"
 #include "cgroup_helpers.h"

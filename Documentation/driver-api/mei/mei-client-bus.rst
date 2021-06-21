@@ -14,7 +14,7 @@ However, for some of the ME functionalities it makes sense to leverage existing 
 stack and expose them through existing kernel subsystems.
 
 In order to plug seamlessly into the kernel device driver model we add kernel virtual
-bus abstraction on top of the MEI driver. This allows implementing Linux kernel drivers
+bus abstraction on top of the MEI driver. This allows implementing LinaOS kernel drivers
 for the various MEI features as a stand alone entities found in their respective subsystem.
 Existing device drivers can even potentially be re-used by adding an MEI CL bus layer to
 the existing code.
@@ -25,7 +25,7 @@ MEI CL bus API
 
 A driver implementation for an MEI Client is very similar to any other existing bus
 based device drivers. The driver registers itself as an MEI CL bus driver through
-the ``struct mei_cl_driver`` structure defined in :file:`include/linux/mei_cl_bus.c`
+the ``struct mei_cl_driver`` structure defined in :file:`include/linaos/mei_cl_bus.c`
 
 .. code-block:: C
 
@@ -41,7 +41,7 @@ the ``struct mei_cl_driver`` structure defined in :file:`include/linux/mei_cl_bu
 
 
 
-The mei_cl_device_id structure defined in :file:`include/linux/mod_devicetable.h` allows a
+The mei_cl_device_id structure defined in :file:`include/linaos/mod_devicetable.h` allows a
 driver to bind itself against a device name.
 
 .. code-block:: C

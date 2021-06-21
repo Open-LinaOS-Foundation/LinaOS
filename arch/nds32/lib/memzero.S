@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 	.text
 ENTRY(memzero)

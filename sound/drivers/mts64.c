@@ -4,13 +4,13 @@
  *   Copyright (c) 2006 by Matthias König <mk@phasorlab.de>
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/parport.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/parport.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>

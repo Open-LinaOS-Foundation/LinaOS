@@ -2,7 +2,7 @@
 #ifndef __ASM_PARISC_PCI_H
 #define __ASM_PARISC_PCI_H
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 
 

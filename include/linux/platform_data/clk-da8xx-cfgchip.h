@@ -8,7 +8,7 @@
 #ifndef __LINUX_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__
 #define __LINUX_PLATFORM_DATA_CLK_DA8XX_CFGCHIP_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /**
  * da8xx_cfgchip_clk_platform_data

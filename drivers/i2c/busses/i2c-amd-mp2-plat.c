@@ -9,12 +9,12 @@
  *          Elie Morisse <syniurge@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include "i2c-amd-mp2.h"
 

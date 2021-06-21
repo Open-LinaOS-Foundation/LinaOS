@@ -10,7 +10,7 @@
 #ifndef __KS8851_H__
 #define __KS8851_H__
 
-#include <linux/eeprom_93cx6.h>
+#include <linaos/eeprom_93cx6.h>
 
 #define KS_CCR					0x08
 #define CCR_LE					(1 << 10)   /* KSZ8851-16MLL */

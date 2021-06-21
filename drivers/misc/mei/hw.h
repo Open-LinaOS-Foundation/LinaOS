@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (c) 2003-2020, Intel Corporation. All rights reserved
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  */
 
 #ifndef _MEI_HW_TYPES_H_
 #define _MEI_HW_TYPES_H_
 
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 
 /*
  * Timeouts in Seconds

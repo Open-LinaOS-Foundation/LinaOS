@@ -6,9 +6,9 @@
 #ifndef _WG_ALLOWEDIPS_H
 #define _WG_ALLOWEDIPS_H
 
-#include <linux/mutex.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/mutex.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 
 struct wg_peer;
 

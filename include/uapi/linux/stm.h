@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * System Trace Module (STM) userspace interfaces
  * Copyright (c) 2014, Intel Corporation.
@@ -10,7 +10,7 @@
 #ifndef _UAPI_LINUX_STM_H
 #define _UAPI_LINUX_STM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Maximum allowed master and channel values */
 #define STP_MASTER_MAX	0xffff

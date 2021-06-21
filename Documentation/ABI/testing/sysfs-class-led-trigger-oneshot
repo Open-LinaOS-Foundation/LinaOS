@@ -1,7 +1,7 @@
 What:		/sys/class/leds/<led>/delay_on
 Date:		Jun 2012
 KernelVersion:	3.6
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Specifies for how many milliseconds the LED has to stay at
 		LED_FULL brightness after it has been armed.
@@ -10,7 +10,7 @@ Description:
 What:		/sys/class/leds/<led>/delay_off
 Date:		Jun 2012
 KernelVersion:	3.6
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Specifies for how many milliseconds the LED has to stay at
 		LED_OFF brightness after it has been armed.
@@ -19,7 +19,7 @@ Description:
 What:		/sys/class/leds/<led>/invert
 Date:		Jun 2012
 KernelVersion:	3.6
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Reverse the blink logic. If set to 0 (default) blink on for
 		delay_on ms, then blink off for delay_off ms, leaving the LED
@@ -30,7 +30,7 @@ Description:
 What:		/sys/class/leds/<led>/shot
 Date:		Jun 2012
 KernelVersion:	3.6
-Contact:	linux-leds@vger.kernel.org
+Contact:	linaos-leds@vger.kernel.org
 Description:
 		Write any non-empty string to signal an events, this starts a
 		blink sequence if not already running.

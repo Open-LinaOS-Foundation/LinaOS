@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/kernel/power/snapshot.c
+ * linaos/kernel/power/snapshot.c
  *
  * This file provides system snapshot/restore functionality for swsusp.
  *
@@ -10,29 +10,29 @@
 
 #define pr_fmt(fmt) "PM: hibernation: " fmt
 
-#include <linux/version.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/nmi.h>
-#include <linux/syscalls.h>
-#include <linux/console.h>
-#include <linux/highmem.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/compiler.h>
-#include <linux/ktime.h>
-#include <linux/set_memory.h>
+#include <linaos/version.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/suspend.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/pm.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/nmi.h>
+#include <linaos/syscalls.h>
+#include <linaos/console.h>
+#include <linaos/highmem.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/compiler.h>
+#include <linaos/ktime.h>
+#include <linaos/set_memory.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>
 #include <asm/io.h>

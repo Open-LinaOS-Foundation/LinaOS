@@ -5,7 +5,7 @@
  * Copyright (C) 2000, 2003 Brent Baccala <baccala@freesoft.org>
  * The DAQP interface code in this file is released into the public domain.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  * https://www.comedi.org/
  *
@@ -40,7 +40,7 @@
  * Status: works
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedi_pcmcia.h"
 

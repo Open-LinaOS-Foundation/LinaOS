@@ -7,17 +7,17 @@
  * Copyright 2017 Google Inc.
  */
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/ctype.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/kobject.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 
 #include "coreboot_table.h"
 #include "vpd_decode.h"

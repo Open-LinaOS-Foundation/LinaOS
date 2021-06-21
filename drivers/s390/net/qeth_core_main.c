@@ -10,26 +10,26 @@
 #define KMSG_COMPONENT "qeth"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/mii.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
-#include <linux/netdevice.h>
-#include <linux/netdev_features.h>
-#include <linux/rcutree.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
+#include <linaos/compat.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/io.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/mii.h>
+#include <linaos/mm.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
+#include <linaos/if_vlan.h>
+#include <linaos/netdevice.h>
+#include <linaos/netdev_features.h>
+#include <linaos/rcutree.h>
+#include <linaos/skbuff.h>
+#include <linaos/vmalloc.h>
 
 #include <net/iucv/af_iucv.h>
 #include <net/dsfield.h>

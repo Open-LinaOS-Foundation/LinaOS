@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ide.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/ide.h>
+#include <linaos/delay.h>
 
 static ide_startstop_t ide_ata_error(ide_drive_t *drive, struct request *rq,
 				     u8 stat, u8 err)

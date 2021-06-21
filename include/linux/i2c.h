@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * i2c.h - definitions for the Linux i2c bus interface
+ * i2c.h - definitions for the LinaOS i2c bus interface
  * Copyright (C) 1995-2000 Simon G. Vogl
  * Copyright (C) 2013-2019 Wolfram Sang <wsa@kernel.org>
  *
@@ -10,16 +10,16 @@
 #ifndef _LINUX_I2C_H
 #define _LINUX_I2C_H
 
-#include <linux/acpi.h>		/* for acpi_handle */
-#include <linux/mod_devicetable.h>
-#include <linux/device.h>	/* for struct device */
-#include <linux/sched.h>	/* for completion */
-#include <linux/mutex.h>
-#include <linux/rtmutex.h>
-#include <linux/irqdomain.h>		/* for Host Notify IRQ */
-#include <linux/of.h>		/* for struct device_node */
-#include <linux/swab.h>		/* for swab16 */
-#include <uapi/linux/i2c.h>
+#include <linaos/acpi.h>		/* for acpi_handle */
+#include <linaos/mod_devicetable.h>
+#include <linaos/device.h>	/* for struct device */
+#include <linaos/sched.h>	/* for completion */
+#include <linaos/mutex.h>
+#include <linaos/rtmutex.h>
+#include <linaos/irqdomain.h>		/* for Host Notify IRQ */
+#include <linaos/of.h>		/* for struct device_node */
+#include <linaos/swab.h>		/* for swab16 */
+#include <uapi/linaos/i2c.h>
 
 extern struct bus_type i2c_bus_type;
 extern struct device_type i2c_adapter_type;
@@ -313,7 +313,7 @@ struct i2c_driver {
  *	acquired when probing this device.
  *
  * An i2c_client identifies a single device (i.e. chip) connected to an
- * i2c bus. The behaviour exposed to Linux is defined by the driver
+ * i2c bus. The behaviour exposed to LinaOS is defined by the driver
  * managing the device.
  */
 struct i2c_client {

@@ -5,8 +5,8 @@
 #if !defined(_TRACE_RSEQ_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RSEQ_H
 
-#include <linux/tracepoint.h>
-#include <linux/types.h>
+#include <linaos/tracepoint.h>
+#include <linaos/types.h>
 
 TRACE_EVENT(rseq_update,
 

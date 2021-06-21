@@ -6,7 +6,7 @@
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
  * Software Foundation; either version 2 of the License, or at your option any
- * later version; or, when distributed separately from the Linux kernel or
+ * later version; or, when distributed separately from the LinaOS kernel or
  * when incorporated into other software packages, subject to the following
  * license:
  *
@@ -24,17 +24,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/async.h>
+#include <linaos/delay.h>
+#include <linaos/vmalloc.h>
 
 static int i_zero;
 static int i_one_hundred = 100;

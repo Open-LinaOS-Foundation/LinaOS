@@ -269,7 +269,7 @@ extern void paging_init(void);
 void update_mmu_cache(struct vm_area_struct *vma, unsigned long address,
 		      pte_t *pte);
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in linaos/mm.h, as it is arch dependent */
 #define kern_addr_valid(addr)	(1)
 
 #define io_remap_pfn_range(vma, vaddr, pfn, size, prot) \

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2017 - 2019 Pensando Systems, Inc */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/etherdevice.h>
 #include "ionic.h"
 #include "ionic_dev.h"
 #include "ionic_lif.h"

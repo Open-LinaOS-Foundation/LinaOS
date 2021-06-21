@@ -5,13 +5,13 @@
  * Copyright (C) 2018 David Lechner <david@lechnology.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/davinci.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/davinci.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 #include "psc.h"
 

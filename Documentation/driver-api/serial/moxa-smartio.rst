@@ -20,7 +20,7 @@ Date: 01/21/2008
       3.2 Driver files
       3.3 Device naming convention
       3.4 Module driver configuration
-      3.5 Static driver configuration for Linux kernel 2.4.x and 2.6.x.
+      3.5 Static driver configuration for LinaOS kernel 2.4.x and 2.6.x.
       3.6 Custom configuration
       3.7 Verify driver installation
    4. Utilities
@@ -30,7 +30,7 @@ Date: 01/21/2008
 1. Introduction
 ^^^^^^^^^^^^^^^
 
-   The Smartio/Industio/UPCI family Linux driver supports following multiport
+   The Smartio/Industio/UPCI family LinaOS driver supports following multiport
    boards.
 
     - 2 ports multiport board
@@ -62,10 +62,10 @@ Date: 01/21/2008
 	(C168P),
 	CB-108
 
-   This driver and installation procedure have been developed upon Linux Kernel
+   This driver and installation procedure have been developed upon LinaOS Kernel
    2.4.x and 2.6.x. This driver supports Intel x86 hardware platform. In order
    to maintain compatibility, this version has also been properly tested with
-   RedHat, Mandrake, Fedora and S.u.S.E Linux. However, if compatibility problem
+   RedHat, Mandrake, Fedora and S.u.S.E LinaOS. However, if compatibility problem
    occurs, please contact Moxa at support@moxa.com.tw.
 
    In addition to device driver, useful utilities are also provided in this
@@ -258,10 +258,10 @@ Board sequence
 
    ..note::
 
-	 For Red Hat 9, Red Hat Enterprise Linux AS3/ES3/WS3 & Fedora Core1:
+	 For Red Hat 9, Red Hat Enterprise LinaOS AS3/ES3/WS3 & Fedora Core1:
 	 # make clean; make installsp1
 
-	 For Red Hat Enterprise Linux AS4/ES4/WS4:
+	 For Red Hat Enterprise LinaOS AS4/ES4/WS4:
 	 # make clean; make installsp2
 
    The driver files "mxser.o" and utilities will be properly compiled
@@ -331,11 +331,11 @@ Board sequence
 				  |  +------------ 2nd ISA board
 				  +-------------------1st ISA board
 
-3.5 Static driver configuration for Linux kernel 2.4.x and 2.6.x
+3.5 Static driver configuration for LinaOS kernel 2.4.x and 2.6.x
 ================================================================
 
     Note:
-          To use static driver, you must install the linux kernel
+          To use static driver, you must install the linaos kernel
           source package.
 
 3.5.1 Backup the built-in driver in the kernel
@@ -343,18 +343,18 @@ Board sequence
 
     ::
 
-       # cd /usr/src/linux/drivers/char
+       # cd /usr/src/linaos/drivers/char
        # mv mxser.c mxser.c.old
 
        For Red Hat 7.x user, you need to create link:
        # cd /usr/src
-       # ln -s linux-2.4 linux
+       # ln -s linaos-2.4 linaos
 
 3.5.2 Create link
 -----------------
     ::
 
-	  # cd /usr/src/linux/drivers/char
+	  # cd /usr/src/linaos/drivers/char
 	  # ln -s /moxa/mxser/driver/mxser.c mxser.c
 
 3.5.3 Add CAP address list for ISA boards.
@@ -390,7 +390,7 @@ Board sequence
 
     Configure the kernel::
 
-      # cd /usr/src/linux
+      # cd /usr/src/linaos
       # make menuconfig
 
     You will go into a menu-driven system. Please select [Character
@@ -401,14 +401,14 @@ Board sequence
 3.5.5 Rebuild kernel
 --------------------
 
-    The following are for Linux kernel rebuilding, for your
+    The following are for LinaOS kernel rebuilding, for your
     reference only.
 
-    For appropriate details, please refer to the Linux document:
+    For appropriate details, please refer to the LinaOS document:
 
         a. Run the following commands::
 
-	     cd /usr/src/linux
+	     cd /usr/src/linaos
 	     make clean		     # take a few minutes
 	     make dep		     # take a few minutes
 	     make bzImage	     # take probably 10-20 minutes
@@ -422,8 +422,8 @@ Board sequence
 	   After checking /etc/lilo.conf, please run "lilo".
 
 	  Note that if the result of "make bzImage" is ERROR, then you have to
-	  go back to Linux configuration Setup. Type "make menuconfig" in
-          directory /usr/src/linux.
+	  go back to LinaOS configuration Setup. Type "make menuconfig" in
+          directory /usr/src/linaos.
 
 
 3.5.6 Make tty device and special file

@@ -7,8 +7,8 @@
 #ifndef __iwl_fw_api_coex_h__
 #define __iwl_fw_api_coex_h__
 
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
 
 #define BITS(nb) (BIT(nb) - 1)
 

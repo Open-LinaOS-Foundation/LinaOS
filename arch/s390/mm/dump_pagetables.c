@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/set_memory.h>
-#include <linux/ptdump.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/mm.h>
-#include <linux/kasan.h>
+#include <linaos/set_memory.h>
+#include <linaos/ptdump.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/mm.h>
+#include <linaos/kasan.h>
 #include <asm/ptdump.h>
 #include <asm/kasan.h>
 #include <asm/sections.h>

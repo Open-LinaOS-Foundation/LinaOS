@@ -9,17 +9,17 @@
  *	     Anatolij Gustschin <agust@denx.de>
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

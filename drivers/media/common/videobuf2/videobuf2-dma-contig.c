@@ -10,13 +10,13 @@
  * the Free Software Foundation.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dma-buf.h>
+#include <linaos/module.h>
+#include <linaos/refcount.h>
+#include <linaos/scatterlist.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
 
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-dma-contig.h>

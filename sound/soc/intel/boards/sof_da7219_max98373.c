@@ -5,11 +5,11 @@
  * Intel SOF Machine driver for DA7219 + MAX98373/MAX98360A codec
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
 #include "../../codecs/da7219.h"

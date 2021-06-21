@@ -7,20 +7,20 @@
  * Based on rtc-at91rm9200.c by Rick Bronson
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/time.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioctl.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/time.h>
 
 /*
  * This driver uses two configurable hardware resources that live in the

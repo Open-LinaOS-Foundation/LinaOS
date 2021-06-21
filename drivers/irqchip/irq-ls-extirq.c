@@ -2,13 +2,13 @@
 
 #define pr_fmt(fmt) "irq-ls-extirq: " fmt
 
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 

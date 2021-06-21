@@ -1,5 +1,5 @@
 ==================================
-Linux GPU Driver Developer's Guide
+LinaOS GPU Driver Developer's Guide
 ==================================
 
 .. toctree::

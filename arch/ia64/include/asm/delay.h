@@ -7,15 +7,15 @@
  *
  * Copyright (C) 1998, 1999 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 1999 Asit Mallick <asit.k.mallick@intel.com>
  * Copyright (C) 1999 Don Dugger <don.dugger@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/compiler.h>
 
 #include <asm/intrinsics.h>
 #include <asm/processor.h>

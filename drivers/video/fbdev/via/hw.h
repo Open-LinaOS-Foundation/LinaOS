@@ -8,7 +8,7 @@
 #ifndef __HW_H__
 #define __HW_H__
 
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 #include "viamode.h"
 #include "global.h"

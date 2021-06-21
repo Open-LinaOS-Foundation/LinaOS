@@ -39,7 +39,7 @@ d. A CD/DVD burner could control the amount of memory used by the
 e. There are several other use cases; find one or use the controller just
    for fun (to learn and hack on the VM subsystem).
 
-Current Status: linux-2.6.34-mmotm(development version of 2010/April)
+Current Status: linaos-2.6.34-mmotm(development version of 2010/April)
 
 Features:
 
@@ -975,9 +975,9 @@ References
 7. Vaidyanathan, Srinivasan, Control Groups: Pagecache accounting and control
    subsystem (v3), http://lwn.net/Articles/235534/
 8. Singh, Balbir. RSS controller v2 test results (lmbench),
-   https://lore.kernel.org/r/464C95D4.7070806@linux.vnet.ibm.com
+   https://lore.kernel.org/r/464C95D4.7070806@linaos.vnet.ibm.com
 9. Singh, Balbir. RSS controller v2 AIM9 results
-   https://lore.kernel.org/r/464D267A.50107@linux.vnet.ibm.com
+   https://lore.kernel.org/r/464D267A.50107@linaos.vnet.ibm.com
 10. Singh, Balbir. Memory controller v6 test results,
     https://lore.kernel.org/r/20070819094658.654.84837.sendpatchset@balbir-laptop
 11. Singh, Balbir. Memory controller introduction (v6),

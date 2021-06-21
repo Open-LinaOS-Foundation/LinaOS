@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/sys_jensen.c
+ *	linaos/arch/alpha/kernel/sys_jensen.c
  *
  *	Copyright (C) 1995 Linus Torvalds
  *	Copyright (C) 1998, 1999 Richard Henderson
  *
  * Code supporting the Jensen.
  */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
 
 #include <asm/ptrace.h>
 

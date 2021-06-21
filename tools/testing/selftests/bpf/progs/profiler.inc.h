@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Facebook */
-#include <vmlinux.h>
+#include <vmlinaos.h>
 #include <bpf/bpf_core_read.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
@@ -685,7 +685,7 @@ int raw_tracepoint__sched_process_exec(struct bpf_raw_tracepoint_args* ctx)
 	struct bpf_func_stats_ctx stats_ctx;
 	bpf_stats_enter(&stats_ctx, profiler_bpf_sched_process_exec);
 
-	struct linux_binprm* bprm = (struct linux_binprm*)ctx->args[2];
+	struct linaos_binprm* bprm = (struct linaos_binprm*)ctx->args[2];
 	u64 inode = BPF_CORE_READ(bprm, file, f_inode, i_ino);
 
 	bool* should_filter_binprm = bpf_map_lookup_elem(&disallowed_exec_inodes, &inode);

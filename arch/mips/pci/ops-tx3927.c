@@ -4,14 +4,14 @@
  *              ahennessy@mvista.com
  *
  * Copyright (C) 2000-2001 Toshiba Corporation
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@linaos-mips.org)
  *
  * Based on arch/mips/ddb5xxx/ddb5477/pci_ops.c
  *
  *     Define the pci_ops for TX3927.
  *
  * Much of the code is derived from the original DDB5074 port by
- * Geert Uytterhoeven <geert@linux-m68k.org>
+ * Geert Uytterhoeven <geert@linaos-m68k.org>
  *
  *  This program is free software; you can redistribute  it and/or modify it
  *  under  the terms of  the GNU General  Public License as published by the
@@ -33,12 +33,12 @@
  *  with this program; if not, write  to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 
 #include <asm/addrspace.h>
 #include <asm/txx9irq.h>

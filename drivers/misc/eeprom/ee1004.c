@@ -9,12 +9,12 @@
  * Copyright (C) 2008 Wolfram Sang, Pengutronix
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 /*
  * DDR4 memory modules use special EEPROMs following the Jedec EE1004

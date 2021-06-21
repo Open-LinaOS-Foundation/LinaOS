@@ -5,7 +5,7 @@
  * Copyright 2006 Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/cputable.h>

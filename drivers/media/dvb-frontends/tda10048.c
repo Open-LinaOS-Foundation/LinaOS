@@ -7,13 +7,13 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/math64.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/math64.h>
 #include <asm/div64.h>
 #include <media/dvb_frontend.h>
 #include <media/dvb_math.h>

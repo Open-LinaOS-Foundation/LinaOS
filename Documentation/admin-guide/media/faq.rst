@@ -10,15 +10,15 @@ FAQ
 	This is what a TV user would call "channel". So, in order to
 	avoid confusion, we're calling *transponders* as the physical
 	channel on this FAQ, and *services* for the logical channel.
-     2. The LinuxTV community maintains some Wiki pages with contain
+     2. The LinaOSTV community maintains some Wiki pages with contain
         a lot of information related to the media subsystem. If you
         don't find an answer for your needs here, it is likely that
         you'll be able to get something useful there. It is hosted
 	at:
 
-	https://www.linuxtv.org/wiki/
+	https://www.linaostv.org/wiki/
 
-Some very frequently asked questions about Linux Digital TV support
+Some very frequently asked questions about LinaOS Digital TV support
 
 1. The signal seems to die a few seconds after tuning.
 
@@ -31,16 +31,16 @@ Some very frequently asked questions about Linux Digital TV support
 
 2. How can I watch TV?
 
-	Together with the Linux Kernel, the Digital TV developers support
+	Together with the LinaOS Kernel, the Digital TV developers support
 	some simple utilities which are mainly intended for testing
 	and to demonstrate how the DVB API works. This is called DVB v5
 	tools and are grouped together with the ``v4l-utils`` git repository:
 
-	    https://git.linuxtv.org/v4l-utils.git/
+	    https://git.linaostv.org/v4l-utils.git/
 
-	You can find more information at the LinuxTV wiki:
+	You can find more information at the LinaOSTV wiki:
 
-	    https://www.linuxtv.org/wiki/index.php/DVBv5_Tools
+	    https://www.linaostv.org/wiki/index.php/DVBv5_Tools
 
 	The first step is to get a list of services that are transmitted.
 
@@ -48,26 +48,26 @@ Some very frequently asked questions about Linux Digital TV support
 	for example the ``dvbv5-scan`` tool. You can find more information
 	about it at:
 
-	    https://www.linuxtv.org/wiki/index.php/Dvbv5-scan
+	    https://www.linaostv.org/wiki/index.php/Dvbv5-scan
 
 	There are some other applications like ``w_scan`` [#]_ that do a
 	blind scan, trying hard to find all possible channels, but
 	those consumes a large amount of time to run.
 
-	.. [#] https://www.linuxtv.org/wiki/index.php/W_scan
+	.. [#] https://www.linaostv.org/wiki/index.php/W_scan
 
 	Also, some applications like ``kaffeine`` have their own code
 	to scan for services. So, you don't need to use an external
 	application to obtain such list.
 
 	Most of such tools need a file containing a list of channel
-	transponders available on your area. So, LinuxTV developers
+	transponders available on your area. So, LinaOSTV developers
 	maintain tables of Digital TV channel transponders, receiving
 	patches from the community to keep them updated.
 
 	This list is hosted at:
 
-	    https://git.linuxtv.org/dtv-scan-tables.git
+	    https://git.linaostv.org/dtv-scan-tables.git
 
 	And packaged on several distributions.
 
@@ -102,17 +102,17 @@ Some very frequently asked questions about Linux Digital TV support
 
 	A comprehensive list of those and other apps can be found at:
 
-	    https://www.linuxtv.org/wiki/index.php/TV_Related_Software
+	    https://www.linaostv.org/wiki/index.php/TV_Related_Software
 
 	Some of the most popular ones are linked below:
 
 	https://kde.org/applications/multimedia/org.kde.kaffeine
 		KDE media player, focused on Digital TV support
 
-	https://www.linuxtv.org/vdrwiki/index.php/Main_Page
+	https://www.linaostv.org/vdrwiki/index.php/Main_Page
 		Klaus Schmidinger's Video Disk Recorder
 
-	https://linuxtv.org/downloads and https://git.linuxtv.org/
+	https://linaostv.org/downloads and https://git.linaostv.org/
 		Digital TV and other media-related applications and
 		Kernel drivers. The ``v4l-utils`` package there contains
 		several swiss knife tools for using with Digital TV.
@@ -122,7 +122,7 @@ Some very frequently asked questions about Linux Digital TV support
 		dvbstream and dvbtune
 
 	http://www.dbox2.info/
-		LinuxDVB on the dBox2
+		LinaOSDVB on the dBox2
 
 	http://www.tuxbox.org/
 		the TuxBox CVS many interesting DVB applications and the dBox2
@@ -159,20 +159,20 @@ Some very frequently asked questions about Linux Digital TV support
 	*without* analog module, you might have to use module parameter
 	adac=-1 (dvb-ttpci.o).
 
-	Please see the FAQ page at linuxtv.org, as it could contain some
+	Please see the FAQ page at linaostv.org, as it could contain some
 	valuable information:
 
-	    https://www.linuxtv.org/wiki/index.php/FAQ_%26_Troubleshooting
+	    https://www.linaostv.org/wiki/index.php/FAQ_%26_Troubleshooting
 
-	If that doesn't work, check at the linux-media ML archives, to
+	If that doesn't work, check at the linaos-media ML archives, to
 	see if someone else had a similar problem with your hardware
 	and/or digital TV service provider:
 
-	    https://lore.kernel.org/linux-media/
+	    https://lore.kernel.org/linaos-media/
 
 	If none of this works, you can try sending an e-mail to the
-	linux-media ML and see if someone else could shed some light.
-	The e-mail is linux-media AT vger.kernel.org.
+	linaos-media ML and see if someone else could shed some light.
+	The e-mail is linaos-media AT vger.kernel.org.
 
 5. The dvb_net device doesn't give me any packets at all
 
@@ -209,8 +209,8 @@ Some very frequently asked questions about Linux Digital TV support
 	core. If the board also has remote controller, it will also
 	need the remote controller core and the remote controller tables.
 	The same happens if the board has support for analog TV: the
-	core support for video4linux need to be loaded.
+	core support for video4linaos need to be loaded.
 
-	The actual module names are Linux-kernel version specific, as,
+	The actual module names are LinaOS-kernel version specific, as,
 	from time to time, things change, in order to make the media
 	support more flexible.

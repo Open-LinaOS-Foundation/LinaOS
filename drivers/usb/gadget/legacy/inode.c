@@ -9,28 +9,28 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/pagemap.h>
-#include <linux/uts.h>
-#include <linux/wait.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/kthread.h>
-#include <linux/aio.h>
-#include <linux/uio.h>
-#include <linux/refcount.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/pagemap.h>
+#include <linaos/uts.h>
+#include <linaos/wait.h>
+#include <linaos/compiler.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/kthread.h>
+#include <linaos/aio.h>
+#include <linaos/uio.h>
+#include <linaos/refcount.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/moduleparam.h>
 
-#include <linux/usb/gadgetfs.h>
-#include <linux/usb/gadget.h>
+#include <linaos/usb/gadgetfs.h>
+#include <linaos/usb/gadget.h>
 
 
 /*

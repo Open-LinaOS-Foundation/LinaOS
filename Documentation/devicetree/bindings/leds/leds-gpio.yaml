@@ -56,7 +56,7 @@ examples:
         compatible = "gpio-leds";
         led-0 {
             gpios = <&mcu_pio 0 GPIO_ACTIVE_LOW>;
-            linux,default-trigger = "disk-activity";
+            linaos,default-trigger = "disk-activity";
             function = LED_FUNCTION_DISK;
         };
 

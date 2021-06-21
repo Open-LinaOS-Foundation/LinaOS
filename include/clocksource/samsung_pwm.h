@@ -5,7 +5,7 @@
 #ifndef __CLOCKSOURCE_SAMSUNG_PWM_H
 #define __CLOCKSOURCE_SAMSUNG_PWM_H
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 
 #define SAMSUNG_PWM_NUM		5
 

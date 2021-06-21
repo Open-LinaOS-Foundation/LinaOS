@@ -6,10 +6,10 @@
  */
 
 #include "bcma_private.h"
-#include <linux/slab.h>
-#include <linux/bcma/bcma.h>
-#include <linux/pci.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
 
 static void bcma_host_pci_switch_core(struct bcma_device *core)
 {

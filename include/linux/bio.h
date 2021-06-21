@@ -5,12 +5,12 @@
 #ifndef __LINUX_BIO_H
 #define __LINUX_BIO_H
 
-#include <linux/highmem.h>
-#include <linux/mempool.h>
-#include <linux/ioprio.h>
+#include <linaos/highmem.h>
+#include <linaos/mempool.h>
+#include <linaos/ioprio.h>
 /* struct bio, bio_vec and BIO_* flags are defined in blk_types.h */
-#include <linux/blk_types.h>
-#include <linux/uio.h>
+#include <linaos/blk_types.h>
+#include <linaos/uio.h>
 
 #define BIO_DEBUG
 

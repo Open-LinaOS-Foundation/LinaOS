@@ -11,15 +11,15 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/stmmac.h>
-#include <linux/phy.h>
-#include <linux/pcs/pcs-xpcs.h>
-#include <linux/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/stmmac.h>
+#include <linaos/phy.h>
+#include <linaos/pcs/pcs-xpcs.h>
+#include <linaos/module.h>
 #if IS_ENABLED(CONFIG_VLAN_8021Q)
 #define STMMAC_VLAN_TAG_USED
-#include <linux/if_vlan.h>
+#include <linaos/if_vlan.h>
 #endif
 
 #include "descs.h"

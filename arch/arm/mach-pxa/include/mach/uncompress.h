@@ -6,7 +6,7 @@
  * Copyright:	(C) 2001 MontaVista Software Inc.
  */
 
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 #include <asm/mach-types.h>
 
 #define FFUART_BASE	(0x40100000)

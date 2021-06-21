@@ -46,20 +46,20 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/pm.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/bitfield.h>
 
-#include <linux/platform_data/st_sensors_pdata.h>
+#include <linaos/platform_data/st_sensors_pdata.h>
 
 #include "st_lsm6dsx.h"
 

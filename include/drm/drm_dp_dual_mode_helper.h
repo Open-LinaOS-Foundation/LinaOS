@@ -23,7 +23,7 @@
 #ifndef DRM_DP_DUAL_MODE_HELPER_H
 #define DRM_DP_DUAL_MODE_HELPER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Optional for type 1 DVI adaptors

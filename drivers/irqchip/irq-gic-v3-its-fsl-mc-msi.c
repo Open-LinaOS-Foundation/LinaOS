@@ -7,15 +7,15 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/fsl/mc.h>
+#include <linaos/acpi.h>
+#include <linaos/acpi_iort.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/fsl/mc.h>
 
 static struct irq_chip its_msi_irq_chip = {
 	.name = "ITS-fMSI",

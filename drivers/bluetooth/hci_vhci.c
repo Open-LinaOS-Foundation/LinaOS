@@ -8,19 +8,19 @@
  *  Copyright (C) 2004-2006  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/unaligned.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/poll.h>
 
-#include <linux/skbuff.h>
-#include <linux/miscdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/miscdevice.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

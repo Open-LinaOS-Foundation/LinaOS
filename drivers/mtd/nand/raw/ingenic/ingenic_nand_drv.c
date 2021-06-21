@@ -6,22 +6,22 @@
  * Author: Alex Smith <alex.smith@imgtec.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
 
-#include <linux/jz4780-nemc.h>
+#include <linaos/jz4780-nemc.h>
 
 #include "ingenic_ecc.h"
 

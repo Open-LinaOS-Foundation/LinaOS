@@ -16,9 +16,9 @@
  * this warranty disclaimer.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of_gpio.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/of_gpio.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
 #include "nfcmrvl.h"

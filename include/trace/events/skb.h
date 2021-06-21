@@ -5,9 +5,9 @@
 #if !defined(_TRACE_SKB_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SKB_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/tracepoint.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/tracepoint.h>
 
 /*
  * Tracepoint for free an sk_buff:

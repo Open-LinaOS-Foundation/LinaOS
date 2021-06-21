@@ -9,10 +9,10 @@
  *  to avoid races. No locking is done by this library code.
  */
 
-#include <linux/bug.h>
-#include <linux/timerqueue.h>
-#include <linux/rbtree.h>
-#include <linux/export.h>
+#include <linaos/bug.h>
+#include <linaos/timerqueue.h>
+#include <linaos/rbtree.h>
+#include <linaos/export.h>
 
 #define __node_2_tq(_n) \
 	rb_entry((_n), struct timerqueue_node, node)

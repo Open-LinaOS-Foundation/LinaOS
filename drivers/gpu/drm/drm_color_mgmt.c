@@ -20,7 +20,7 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_color_mgmt.h>

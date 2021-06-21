@@ -11,16 +11,16 @@
  * basically renders IRQ mode unusable.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/iio/iio.h>
-#include <linux/io.h>
-#include <linux/irqflags.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/iio/iio.h>
+#include <linaos/io.h>
+#include <linaos/irqflags.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
 
 /*
  * This code could benefit from real HR Timers, but jiffy granularity would

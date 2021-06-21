@@ -6,7 +6,7 @@
  *  USB/RS232 I-Force joysticks and wheels.
  */
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 #include "iforce.h"
 
 struct iforce_usb {

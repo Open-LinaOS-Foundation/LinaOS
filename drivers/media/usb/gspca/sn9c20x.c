@@ -9,12 +9,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/input.h>
+#include <linaos/input.h>
 
 #include "gspca.h"
 #include "jpeg.h"
 
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 
 MODULE_AUTHOR("Brian Johnson <brijohn@gmail.com>, microdia project <microdia@googlegroups.com>");
 MODULE_DESCRIPTION("GSPCA/SN9C20X USB Camera Driver");

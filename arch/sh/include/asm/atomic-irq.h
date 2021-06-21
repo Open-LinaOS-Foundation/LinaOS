@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_ATOMIC_IRQ_H
 #define __ASM_SH_ATOMIC_IRQ_H
 
-#include <linux/irqflags.h>
+#include <linaos/irqflags.h>
 
 /*
  * To get proper branch prediction for the main line, we must branch

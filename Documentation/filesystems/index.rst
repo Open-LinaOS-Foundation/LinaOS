@@ -1,11 +1,11 @@
 .. _filesystems_index:
 
 ===============================
-Filesystems in the Linux kernel
+Filesystems in the LinaOS kernel
 ===============================
 
 This under-development manual will, some glorious day, provide
-comprehensive information on how the Linux virtual filesystem (VFS) layer
+comprehensive information on how the LinaOS virtual filesystem (VFS) layer
 works, along with the filesystems that sit below it.  For now, what we have
 can be found below.
 

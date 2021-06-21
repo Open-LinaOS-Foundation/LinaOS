@@ -5,23 +5,23 @@
  * Copyright 2012-2013 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/gcd.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/gcd.h>
+#include <linaos/gpio/consumer.h>
 #include <asm/div64.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/frequency/adf4350.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/frequency/adf4350.h>
 
 enum {
 	ADF4350_FREQ,

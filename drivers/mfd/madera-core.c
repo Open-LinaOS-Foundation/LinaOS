@@ -5,25 +5,25 @@
  * Copyright (C) 2015-2018 Cirrus Logic
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
 
-#include <linux/mfd/madera/core.h>
-#include <linux/mfd/madera/registers.h>
+#include <linaos/mfd/madera/core.h>
+#include <linaos/mfd/madera/registers.h>
 
 #include "madera.h"
 

@@ -7,11 +7,11 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/bug.h>
+#include <linaos/io.h>
 
 #include <asm/div64.h>
 

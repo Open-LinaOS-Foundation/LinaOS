@@ -6,9 +6,9 @@
 #ifndef _LINUX_MII_TIMESTAMPER_H
 #define _LINUX_MII_TIMESTAMPER_H
 
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
+#include <linaos/device.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
 
 struct phy_device;
 

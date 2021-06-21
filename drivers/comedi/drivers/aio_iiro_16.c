@@ -28,8 +28,8 @@
  *	Bit 0  - Digital input 0
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 
 #include "../comedidev.h"
 

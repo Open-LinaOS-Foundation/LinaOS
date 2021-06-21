@@ -5,7 +5,7 @@ led_common_defs_path="include/dt-bindings/leds/common.h"
 
 num_args=$#
 if [ $num_args -eq 1 ]; then
-        linux_top=$(dirname `realpath $0` | awk -F/     \
+        linaos_top=$(dirname `realpath $0` | awk -F/     \
                         '{                              \
                                 i=1;                    \
                                 while (i <= NF - 2) {   \
@@ -13,7 +13,7 @@ if [ $num_args -eq 1 ]; then
                                         i++;            \
                                 };                      \
                         }')
-	led_defs_path=$linux_top/$led_common_defs_path
+	led_defs_path=$linaos_top/$led_common_defs_path
 elif [ $num_args -eq 2 ]; then
         led_defs_path=`realpath $2`
 else

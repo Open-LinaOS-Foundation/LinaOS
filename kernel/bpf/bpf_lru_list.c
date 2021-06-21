@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2016 Facebook
  */
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/spinlock.h>
+#include <linaos/percpu.h>
 
 #include "bpf_lru_list.h"
 

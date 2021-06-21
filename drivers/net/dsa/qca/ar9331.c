@@ -39,12 +39,12 @@
  * set and not related to switch internal registers.
  */
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/bitfield.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_mdio.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 #include <net/dsa.h>
 
 #define AR9331_SW_NAME				"ar9331_switch"

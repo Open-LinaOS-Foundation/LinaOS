@@ -11,12 +11,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/amba/pl08x.h>
-#include <linux/amba/bus.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spinlock_types.h>
+#include <linaos/amba/pl08x.h>
+#include <linaos/amba/bus.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/spinlock_types.h>
 #include <mach/spear.h>
 #include <mach/misc_regs.h>
 

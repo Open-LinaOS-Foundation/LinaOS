@@ -4,7 +4,7 @@
  * Authors: Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "bdisp.h"
 #include "bdisp-filter.h"

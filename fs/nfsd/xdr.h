@@ -4,7 +4,7 @@
 #ifndef LINUX_NFSD_H
 #define LINUX_NFSD_H
 
-#include <linux/vfs.h>
+#include <linaos/vfs.h>
 #include "nfsd.h"
 #include "nfsfh.h"
 

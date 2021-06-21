@@ -58,7 +58,7 @@ Driver            Name
 altera-ci         Altera FPGA based CI module
 b2c2-flexcop-pci  Technisat/B2C2 Air/Sky/Cable2PC PCI
 bt878             DVB/ATSC Support for bt878 based TV cards
-bttv              BT8x8 Video For Linux
+bttv              BT8x8 Video For LinaOS
 cobalt            Cisco Cobalt
 cx18              Conexant cx23418 MPEG encoder
 cx23885           Conexant cx23885 (2388x successor)
@@ -86,10 +86,10 @@ saa7134           Philips SAA7134
 saa7164           NXP SAA7164
 smipcie           SMI PCIe DVBSky cards
 solo6x10          Bluecherry / Softlogic 6x10 capture cards (MPEG-4/H.264)
-sta2x11_vip       STA2X11 VIP Video For Linux
+sta2x11_vip       STA2X11 VIP Video For LinaOS
 tw5864            Techwell TW5864 video/audio grabber and encoder
 tw686x            Intersil/Techwell TW686x
-tw68              Techwell tw68x Video For Linux
+tw68              Techwell tw68x Video For LinaOS
 zoran             Zoran-36057/36067 JPEG codec
 ================  ========================================================
 

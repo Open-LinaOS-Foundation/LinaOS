@@ -5,7 +5,7 @@
 *
 ******************************************************************************/
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "odm_precomp.h"
 
 static bool CheckPositive(

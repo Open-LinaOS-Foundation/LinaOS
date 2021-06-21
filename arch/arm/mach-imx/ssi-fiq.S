@@ -3,7 +3,7 @@
  *  Copyright (C) 2009 Sascha Hauer <s.hauer@pengutronix.de>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 /*

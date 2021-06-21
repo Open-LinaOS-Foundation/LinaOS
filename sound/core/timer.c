@@ -4,22 +4,22 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sched/signal.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/sched/signal.h>
 #include <sound/core.h>
 #include <sound/timer.h>
 #include <sound/control.h>
 #include <sound/info.h>
 #include <sound/minors.h>
 #include <sound/initval.h>
-#include <linux/kmod.h>
+#include <linaos/kmod.h>
 
 /* internal flags */
 #define SNDRV_TIMER_IFLG_PAUSED		0x00010000

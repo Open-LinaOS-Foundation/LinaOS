@@ -7,7 +7,7 @@
 #ifndef _LINUX_KS8842_H
 #define _LINUX_KS8842_H
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 /**
  * struct ks8842_platform_data - Platform data of the KS8842 network driver

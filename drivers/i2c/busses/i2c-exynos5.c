@@ -5,23 +5,23 @@
  * Copyright (C) 2013 Samsung Electronics Co., Ltd.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
-#include <linux/i2c.h>
-#include <linux/time.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
+#include <linaos/i2c.h>
+#include <linaos/time.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/spinlock.h>
 
 /*
  * HSI2C controller from Samsung supports 2 modes of operation

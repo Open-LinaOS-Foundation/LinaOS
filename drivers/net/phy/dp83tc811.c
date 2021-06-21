@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/etherdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy.h>
+#include <linaos/netdevice.h>
 
 #define DP83TC811_PHY_ID	0x2000a253
 #define DP83811_DEVADDR		0x1f

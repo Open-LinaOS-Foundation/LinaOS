@@ -7,23 +7,23 @@
 
 /* * dedicated to the memory of Graham Gordon 1971-1998 * */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/atmdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/poison.h>
-#include <linux/bitrev.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/atmdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/poison.h>
+#include <linaos/bitrev.h>
+#include <linaos/mutex.h>
+#include <linaos/firmware.h>
+#include <linaos/ihex.h>
+#include <linaos/slab.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
 
@@ -223,7 +223,7 @@ static inline void __init show_version (void) {
   . Note that alloc_skb rounds up size to a 16byte boundary.  
   . Ensure all areas do not traverse 4MB boundaries.
   . Ensure all areas do not start at a E00000xx bus address.
-  (I cannot be certain, but this may always hold with Linux)
+  (I cannot be certain, but this may always hold with LinaOS)
   . Make all failures cause a loud message.
   . Discard non-conforming SKBs (causes TX failure or RX fill delay).
   . Discard non-conforming TX fragment descriptors (the TX fails).
@@ -988,7 +988,7 @@ static int make_rate (unsigned int rate, rounding r,
   return 0;
 }
 
-/********** Linux ATM Operations **********/
+/********** LinaOS ATM Operations **********/
 
 // some are not yet implemented while others do not make sense for
 // this device
@@ -1481,7 +1481,7 @@ static const struct atmdev_ops amb_ops = {
 static void do_housekeeping (struct timer_list *t) {
   amb_dev * dev = from_timer(dev, t, housekeeping);
   
-  // could collect device-specific (not driver/atm-linux) stats here
+  // could collect device-specific (not driver/atm-linaos) stats here
       
   // last resort refill once every ten seconds
   fill_rx_pools (dev);

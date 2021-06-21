@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-1.0+
 //
 // Copyright (c) 2008 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
-//	Ben Dooks <ben@simtec.co.uk>, <ben-linux@fluff.org>
+//	http://armlinaos.simtec.co.uk/
+//	Ben Dooks <ben@simtec.co.uk>, <ben-linaos@fluff.org>
 //
 // Samsung ADC device core
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/regulator/consumer.h>
 
 #include "regs-adc.h"
-#include <linux/soc/samsung/s3c-adc.h>
+#include <linaos/soc/samsung/s3c-adc.h>
 
 /* This driver is designed to control the usage of the ADC block between
  * the touchscreen and any other drivers that may need to use it, such as

@@ -2,19 +2,19 @@
 //
 // Copyright 2013 Freescale Semiconductor, Inc.
 
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu_cooling.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
-#include <linux/nvmem-consumer.h>
+#include <linaos/clk.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpu_cooling.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/thermal.h>
+#include <linaos/nvmem-consumer.h>
 
 #define REG_SET		0x4
 #define REG_CLR		0x8

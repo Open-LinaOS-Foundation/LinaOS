@@ -20,8 +20,8 @@
 #ifndef __IBM_NEWEMAC_H
 #define __IBM_NEWEMAC_H
 
-#include <linux/types.h>
-#include <linux/phy.h>
+#include <linaos/types.h>
+#include <linaos/phy.h>
 
 /* EMAC registers 			Write Access rules */
 struct emac_regs {

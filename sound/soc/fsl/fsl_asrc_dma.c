@@ -6,9 +6,9 @@
 //
 // Author: Nicolin Chen <nicoleotsuka@gmail.com>
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/platform_data/dma-imx.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/dma-imx.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

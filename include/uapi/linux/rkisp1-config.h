@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0+ WITH Linux-syscall-note) OR MIT) */
+/* SPDX-License-Identifier: ((GPL-2.0+ WITH LinaOS-syscall-note) OR MIT) */
 /*
  * Rockchip ISP1 userspace API
  * Copyright (C) 2017 Rockchip Electronics Co., Ltd.
@@ -7,7 +7,7 @@
 #ifndef _UAPI_RKISP1_CONFIG_H
 #define _UAPI_RKISP1_CONFIG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Defect Pixel Cluster Detection */
 #define RKISP1_CIF_ISP_MODULE_DPCC		(1U << 0)

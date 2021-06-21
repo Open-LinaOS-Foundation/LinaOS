@@ -1,10 +1,10 @@
 /*
- *	linux/include/video/pmagb-b-fb.h
+ *	linaos/include/video/pmagb-b-fb.h
  *
  *	TURBOchannel PMAGB-B Smart Frame Buffer (SFB) card support,
  *	Copyright (C) 1999, 2000, 2001 by
  *	Michael Engel <engel@unix-ag.org> and
- *	Karsten Merker <merker@linuxtag.org>
+ *	Karsten Merker <merker@linaostag.org>
  *	Copyright (c) 2005  Maciej W. Rozycki
  *
  *	This file is subject to the terms and conditions of the GNU General

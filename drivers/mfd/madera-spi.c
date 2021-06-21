@@ -5,15 +5,15 @@
  * Copyright (C) 2015-2018 Cirrus Logic
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
-#include <linux/mfd/madera/core.h>
+#include <linaos/mfd/madera/core.h>
 
 #include "madera.h"
 

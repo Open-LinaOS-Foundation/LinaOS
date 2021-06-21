@@ -7,7 +7,7 @@
 #ifndef __MOCK_DMABUF_H__
 #define __MOCK_DMABUF_H__
 
-#include <linux/dma-buf.h>
+#include <linaos/dma-buf.h>
 
 struct mock_dmabuf {
 	int npages;

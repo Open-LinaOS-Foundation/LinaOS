@@ -5,17 +5,17 @@
 //  Copyright (C) 2006-2007 Pavel Pisa (ppisa@pikron.com)
 //  Copyright (C) 2008 Juergen Beisert (kernel@pengutronix.de)
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/clockchips.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/sched_clock.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 #include <soc/imx/timer.h>
 
 /*

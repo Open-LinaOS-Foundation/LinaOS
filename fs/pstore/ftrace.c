@@ -3,20 +3,20 @@
  * Copyright 2012  Google, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/irqflags.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/ftrace.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/irqflags.h>
+#include <linaos/percpu.h>
+#include <linaos/smp.h>
+#include <linaos/atomic.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/ftrace.h>
+#include <linaos/fs.h>
+#include <linaos/debugfs.h>
+#include <linaos/err.h>
+#include <linaos/cache.h>
+#include <linaos/slab.h>
 #include <asm/barrier.h>
 #include "internal.h"
 

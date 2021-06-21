@@ -2,11 +2,11 @@
 #ifndef __PERF_EVSEL_H
 #define __PERF_EVSEL_H 1
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <stdbool.h>
 #include <sys/types.h>
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <linaos/perf_event.h>
+#include <linaos/types.h>
 #include <internal/evsel.h>
 #include <perf/evsel.h>
 #include "symbol_conf.h"
@@ -214,7 +214,7 @@ struct evsel *evsel__clone(struct evsel *orig);
 struct evsel *evsel__newtp_idx(const char *sys, const char *name, int idx);
 
 /*
- * Returns pointer with encoded error via <linux/err.h> interface.
+ * Returns pointer with encoded error via <linaos/err.h> interface.
  */
 static inline struct evsel *evsel__newtp(const char *sys, const char *name)
 {

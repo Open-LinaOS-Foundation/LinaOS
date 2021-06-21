@@ -8,13 +8,13 @@
  *  June, 2002
  *
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/sock.h>
 #include "../br_private.h"
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_nat.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_bridge/ebtables.h>
+#include <linaos/netfilter_bridge/ebt_nat.h>
 
 static unsigned int
 ebt_dnat_tg(struct sk_buff *skb, const struct xt_action_param *par)

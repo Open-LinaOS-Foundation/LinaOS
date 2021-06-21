@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/perf_event.h>
+#include <linaos/platform_device.h>
 
 #define CSKY_PMU_MAX_EVENTS 32
 #define DEFAULT_COUNT_WIDTH 48

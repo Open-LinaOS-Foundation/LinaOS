@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2008-2010, 2015, 2020 Intel Corporation
  * Authors: Sreedhara DS (sreedhara.ds@intel.com)
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ *	    Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include <asm/intel-mid.h>
 #include <asm/intel_scu_ipc.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/binfmt_elf.c
+ * linaos/fs/binfmt_elf.c
  *
  * These are the functions used to load ELF format executables as used
  * on SVr4 machines.  Information on the format may be found in the book
@@ -10,42 +10,42 @@
  * Copyright 1993, 1994: Eric Youngdale (ericy@cais.com).
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/log2.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/binfmts.h>
-#include <linux/string.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/personality.h>
-#include <linux/elfcore.h>
-#include <linux/init.h>
-#include <linux/highuid.h>
-#include <linux/compiler.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/random.h>
-#include <linux/elf.h>
-#include <linux/elf-randomize.h>
-#include <linux/utsname.h>
-#include <linux/coredump.h>
-#include <linux/sched.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
-#include <linux/cred.h>
-#include <linux/dax.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/log2.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/binfmts.h>
+#include <linaos/string.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/personality.h>
+#include <linaos/elfcore.h>
+#include <linaos/init.h>
+#include <linaos/highuid.h>
+#include <linaos/compiler.h>
+#include <linaos/highmem.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pagemap.h>
+#include <linaos/vmalloc.h>
+#include <linaos/security.h>
+#include <linaos/random.h>
+#include <linaos/elf.h>
+#include <linaos/elf-randomize.h>
+#include <linaos/utsname.h>
+#include <linaos/coredump.h>
+#include <linaos/sched.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/sizes.h>
+#include <linaos/types.h>
+#include <linaos/cred.h>
+#include <linaos/dax.h>
+#include <linaos/uaccess.h>
 #include <asm/param.h>
 #include <asm/page.h>
 
@@ -65,7 +65,7 @@
 #define elf_check_fdpic(ex) false
 #endif
 
-static int load_elf_binary(struct linux_binprm *bprm);
+static int load_elf_binary(struct linaos_binprm *bprm);
 
 #ifdef CONFIG_USELIB
 static int load_elf_library(struct file *);
@@ -97,7 +97,7 @@ static int elf_core_dump(struct coredump_params *cprm);
 #define ELF_PAGEOFFSET(_v) ((_v) & (ELF_MIN_ALIGN-1))
 #define ELF_PAGEALIGN(_v) (((_v) + ELF_MIN_ALIGN - 1) & ~(ELF_MIN_ALIGN - 1))
 
-static struct linux_binfmt elf_format = {
+static struct linaos_binfmt elf_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_elf_binary,
 	.load_shlib	= load_elf_library,
@@ -169,7 +169,7 @@ static int padzero(unsigned long elf_bss)
 #endif
 
 static int
-create_elf_tables(struct linux_binprm *bprm, const struct elfhdr *exec,
+create_elf_tables(struct linaos_binprm *bprm, const struct elfhdr *exec,
 		unsigned long load_addr, unsigned long interp_load_addr,
 		unsigned long e_entry)
 {
@@ -820,7 +820,7 @@ static int parse_elf_properties(struct file *f, const struct elf_phdr *phdr,
 	return ret == -ENOENT ? 0 : ret;
 }
 
-static int load_elf_binary(struct linux_binprm *bprm)
+static int load_elf_binary(struct linaos_binprm *bprm)
 {
 	struct file *interpreter = NULL; /* to shut gcc up */
  	unsigned long load_addr = 0, load_bias = 0;
@@ -1687,7 +1687,7 @@ static int fill_files_note(struct memelfnote *note)
 }
 
 #ifdef CORE_DUMP_USE_REGSET
-#include <linux/regset.h>
+#include <linaos/regset.h>
 
 struct elf_thread_core_info {
 	struct elf_thread_core_info *next;
@@ -2179,7 +2179,7 @@ static int elf_core_dump(struct coredump_params *cprm)
 
 	/* If segs > PN_XNUM(0xffff), then e_phnum overflows. To avoid
 	 * this, kernel supports extended numbering. Have a look at
-	 * include/linux/elf.h for further information. */
+	 * include/linaos/elf.h for further information. */
 	e_phnum = segs > PN_XNUM ? PN_XNUM : segs;
 
 	/*

@@ -7,20 +7,20 @@
  * 16 Dec 2003: Yasuyuki Kozakai @USAGI <yasuyuki.kozakai@toshiba.co.jp>
  *	- generalize L3 protocol dependent part.
  *
- * Derived from include/linux/netfiter_ipv4/ip_conntrack.h
+ * Derived from include/linaos/netfiter_ipv4/ip_conntrack.h
  */
 
 #ifndef _NF_CONNTRACK_H
 #define _NF_CONNTRACK_H
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
 
-#include <linux/netfilter/nf_conntrack_common.h>
-#include <linux/netfilter/nf_conntrack_tcp.h>
-#include <linux/netfilter/nf_conntrack_dccp.h>
-#include <linux/netfilter/nf_conntrack_sctp.h>
-#include <linux/netfilter/nf_conntrack_proto_gre.h>
+#include <linaos/netfilter/nf_conntrack_common.h>
+#include <linaos/netfilter/nf_conntrack_tcp.h>
+#include <linaos/netfilter/nf_conntrack_dccp.h>
+#include <linaos/netfilter/nf_conntrack_sctp.h>
+#include <linaos/netfilter/nf_conntrack_proto_gre.h>
 
 #include <net/netfilter/nf_conntrack_tuple.h>
 
@@ -63,8 +63,8 @@ struct nf_conntrack_net {
 #endif
 };
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
 
 #include <net/netfilter/ipv4/nf_conntrack_ipv4.h>
 #include <net/netfilter/ipv6/nf_conntrack_ipv6.h>

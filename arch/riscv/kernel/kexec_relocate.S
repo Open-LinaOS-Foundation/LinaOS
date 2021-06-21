@@ -7,7 +7,7 @@
 #include <asm/asm.h>	/* For RISCV_* and REG_* macros */
 #include <asm/csr.h>	/* For CSR_* macros */
 #include <asm/page.h>	/* For PAGE_SIZE */
-#include <linux/linkage.h> /* For SYM_* macros */
+#include <linaos/linkage.h> /* For SYM_* macros */
 
 .section ".rodata"
 SYM_CODE_START(riscv_kexec_relocate)

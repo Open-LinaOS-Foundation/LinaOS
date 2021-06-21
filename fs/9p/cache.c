@@ -5,12 +5,12 @@
  *  Copyright (C) 2009 by Abhishek Kulkarni <adkulkar@umail.iu.edu>
  */
 
-#include <linux/jiffies.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
+#include <linaos/jiffies.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
 #include <net/9p/9p.h>
 
 #include "v9fs.h"

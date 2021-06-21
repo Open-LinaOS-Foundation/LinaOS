@@ -1,7 +1,7 @@
 What:           /sys/bus/iio/devices/iio:deviceX/meas_conf
 What:           /sys/bus/iio/devices/iio:deviceX/meas_conf_available
 KernelVersion:  4.5
-Contact:        linux-iio@vger.kernel.org
+Contact:        linaos-iio@vger.kernel.org
 Description:
                 Current configuration and available configurations
 		for the bias current.

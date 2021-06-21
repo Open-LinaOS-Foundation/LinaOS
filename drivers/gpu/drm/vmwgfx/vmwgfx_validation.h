@@ -28,8 +28,8 @@
 #ifndef _VMWGFX_VALIDATION_H_
 #define _VMWGFX_VALIDATION_H_
 
-#include <linux/list.h>
-#include <linux/ww_mutex.h>
+#include <linaos/list.h>
+#include <linaos/ww_mutex.h>
 
 #include <drm/drm_hashtab.h>
 #include <drm/ttm/ttm_execbuf_util.h>

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/cpu.h - generic cpu definition
+ * include/linaos/cpu.h - generic cpu definition
  *
  * This is mainly for topological representation. We define the 
  * basic 'struct cpu' here, which can be embedded in per-arch 
@@ -14,10 +14,10 @@
 #ifndef _LINUX_CPU_H_
 #define _LINUX_CPU_H_
 
-#include <linux/node.h>
-#include <linux/compiler.h>
-#include <linux/cpumask.h>
-#include <linux/cpuhotplug.h>
+#include <linaos/node.h>
+#include <linaos/compiler.h>
+#include <linaos/cpumask.h>
+#include <linaos/cpuhotplug.h>
 
 struct device;
 struct device_node;

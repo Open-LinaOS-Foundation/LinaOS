@@ -3,7 +3,7 @@
  *
  * Author: Vladimir Barinov, MontaVista Software, Inc. <source@mvista.com>
  *
- * Based on linux/include/asm-arm/arch-omap/mux.h:
+ * Based on linaos/include/asm-arm/arch-omap/mux.h:
  * Copyright (C) 2003 - 2005 Nokia Corporation
  *
  * Written by Tony Lindgren

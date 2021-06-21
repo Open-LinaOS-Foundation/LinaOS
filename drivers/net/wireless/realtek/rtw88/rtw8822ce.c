@@ -2,8 +2,8 @@
 /* Copyright(c) 2018-2019  Realtek Corporation
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 #include "pci.h"
 #include "rtw8822ce.h"
 

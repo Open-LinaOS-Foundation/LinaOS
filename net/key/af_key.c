@@ -2,27 +2,27 @@
 /*
  * net/key/af_key.c	An implementation of PF_KEYv2 sockets.
  *
- * Authors:	Maxim Giryaev	<gem@asplinux.ru>
+ * Authors:	Maxim Giryaev	<gem@asplinaos.ru>
  *		David S. Miller	<davem@redhat.com>
  *		Alexey Kuznetsov <kuznet@ms2.inr.ac.ru>
  *		Kunihiro Ishiguro <kunihiro@ipinfusion.com>
- *		Kazunori MIYAZAWA / USAGI Project <miyazawa@linux-ipv6.org>
+ *		Kazunori MIYAZAWA / USAGI Project <miyazawa@linaos-ipv6.org>
  *		Derek Atkins <derek@ihtfp.com>
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/socket.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/socket.h>
+#include <linaos/pfkeyv2.h>
+#include <linaos/ipsec.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/xfrm.h>

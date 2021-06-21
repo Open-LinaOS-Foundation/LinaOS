@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 
 /*
  * Copyright (c) 2007-2017 Nicira, Inc.
@@ -21,8 +21,8 @@
 #ifndef _UAPI__LINUX_OPENVSWITCH_H
 #define _UAPI__LINUX_OPENVSWITCH_H 1
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 
 /**
  * struct ovs_header - header for OVS Generic Netlink messages.
@@ -114,8 +114,8 @@ struct ovs_vport_stats {
 	__u64   tx_bytes;		/* total bytes transmitted      */
 	__u64   rx_errors;		/* bad packets received         */
 	__u64   tx_errors;		/* packet transmit problems     */
-	__u64   rx_dropped;		/* no space in linux buffers    */
-	__u64   tx_dropped;		/* no space available in linux  */
+	__u64   rx_dropped;		/* no space in linaos buffers    */
+	__u64   tx_dropped;		/* no space available in linaos  */
 };
 
 /* Allow last Netlink attribute to be unaligned */

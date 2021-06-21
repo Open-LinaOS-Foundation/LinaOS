@@ -5,10 +5,10 @@
  * Copyright (c) 2007 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/nospec.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/compat.h>
+#include <linaos/nospec.h>
 #include <sound/core.h>
 #include <sound/hda_codec.h>
 #include "hda_local.h"

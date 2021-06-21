@@ -5,8 +5,8 @@
  *
  * Based on arch/arm/kernel/jump_label.c
  */
-#include <linux/kernel.h>
-#include <linux/jump_label.h>
+#include <linaos/kernel.h>
+#include <linaos/jump_label.h>
 #include <asm/insn.h>
 
 void arch_jump_label_transform(struct jump_entry *entry,

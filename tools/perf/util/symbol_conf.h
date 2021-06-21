@@ -10,11 +10,11 @@ struct intlist;
 struct symbol_conf {
 	bool		nanosecs;
 	unsigned short	priv_size;
-	bool		try_vmlinux_path,
+	bool		try_vmlinaos_path,
 			init_annotation,
 			force,
-			ignore_vmlinux,
-			ignore_vmlinux_buildid,
+			ignore_vmlinaos,
+			ignore_vmlinaos_buildid,
 			show_kernel_path,
 			use_modules,
 			allow_aliases,
@@ -44,12 +44,12 @@ struct symbol_conf {
 			inline_name,
 			disable_add2line_warn,
 			buildid_mmap2;
-	const char	*vmlinux_name,
+	const char	*vmlinaos_name,
 			*kallsyms_name,
 			*source_prefix,
 			*field_sep,
 			*graph_function;
-	const char	*default_guest_vmlinux_name,
+	const char	*default_guest_vmlinaos_name,
 			*default_guest_kallsyms,
 			*default_guest_modules;
 	const char	*guestmount;

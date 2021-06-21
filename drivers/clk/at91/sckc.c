@@ -5,12 +5,12 @@
  *  Copyright (C) 2013 Boris BREZILLON <b.brezillon@overkiz.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/io.h>
 
 #define SLOW_CLOCK_FREQ		32768
 #define SLOWCK_SW_CYCLES	5

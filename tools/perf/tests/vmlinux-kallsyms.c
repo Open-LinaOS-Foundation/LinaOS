@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
+#include <linaos/compiler.h>
+#include <linaos/rbtree.h>
 #include <inttypes.h>
 #include <string.h>
 #include <stdlib.h>
@@ -14,14 +14,14 @@
 
 #define UM(x) kallsyms_map->unmap_ip(kallsyms_map, (x))
 
-int test__vmlinux_matches_kallsyms(struct test *test __maybe_unused, int subtest __maybe_unused)
+int test__vmlinaos_matches_kallsyms(struct test *test __maybe_unused, int subtest __maybe_unused)
 {
 	int err = -1;
 	struct rb_node *nd;
 	struct symbol *sym;
-	struct map *kallsyms_map, *vmlinux_map, *map;
-	struct machine kallsyms, vmlinux;
-	struct maps *maps = machine__kernel_maps(&vmlinux);
+	struct map *kallsyms_map, *vmlinaos_map, *map;
+	struct machine kallsyms, vmlinaos;
+	struct maps *maps = machine__kernel_maps(&vmlinaos);
 	u64 mem_start, mem_end;
 	bool header_printed;
 
@@ -29,10 +29,10 @@ int test__vmlinux_matches_kallsyms(struct test *test __maybe_unused, int subtest
 	 * Step 1:
 	 *
 	 * Init the machines that will hold kernel, modules obtained from
-	 * both vmlinux + .ko files and from /proc/kallsyms split by modules.
+	 * both vmlinaos + .ko files and from /proc/kallsyms split by modules.
 	 */
 	machine__init(&kallsyms, "", HOST_KERNEL_ID);
-	machine__init(&vmlinux, "", HOST_KERNEL_ID);
+	machine__init(&vmlinaos, "", HOST_KERNEL_ID);
 
 	/*
 	 * Step 2:
@@ -54,7 +54,7 @@ int test__vmlinux_matches_kallsyms(struct test *test __maybe_unused, int subtest
 	 * and has parts that only make sense if using the non-kcore code.
 	 * XXX: extend it to stress the kcorre code as well, hint: the list
 	 * of modules extracted from /proc/kcore, in its current form, can't
-	 * be compacted against the list of modules found in the "vmlinux"
+	 * be compacted against the list of modules found in the "vmlinaos"
 	 * code and with the one got from /proc/modules from the "kallsyms" code.
 	 */
 	if (machine__load_kallsyms(&kallsyms, "/proc/kallsyms") <= 0) {
@@ -68,35 +68,35 @@ int test__vmlinux_matches_kallsyms(struct test *test __maybe_unused, int subtest
 	 * kallsyms will be internally on demand sorted by name so that we can
 	 * find the reference relocation * symbol, i.e. the symbol we will use
 	 * to see if the running kernel was relocated by checking if it has the
-	 * same value in the vmlinux file we load.
+	 * same value in the vmlinaos file we load.
 	 */
 	kallsyms_map = machine__kernel_map(&kallsyms);
 
 	/*
 	 * Step 5:
 	 *
-	 * Now repeat step 2, this time for the vmlinux file we'll auto-locate.
+	 * Now repeat step 2, this time for the vmlinaos file we'll auto-locate.
 	 */
-	if (machine__create_kernel_maps(&vmlinux) < 0) {
+	if (machine__create_kernel_maps(&vmlinaos) < 0) {
 		pr_debug("machine__create_kernel_maps ");
 		goto out;
 	}
 
-	vmlinux_map = machine__kernel_map(&vmlinux);
+	vmlinaos_map = machine__kernel_map(&vmlinaos);
 
 	/*
 	 * Step 6:
 	 *
-	 * Locate a vmlinux file in the vmlinux path that has a buildid that
+	 * Locate a vmlinaos file in the vmlinaos path that has a buildid that
 	 * matches the one of the running kernel.
 	 *
 	 * While doing that look if we find the ref reloc symbol, if we find it
 	 * we'll have its ref_reloc_symbol.unrelocated_addr and then
-	 * maps__reloc_vmlinux will notice and set proper ->[un]map_ip routines
+	 * maps__reloc_vmlinaos will notice and set proper ->[un]map_ip routines
 	 * to fixup the symbols.
 	 */
-	if (machine__load_vmlinux_path(&vmlinux) <= 0) {
-		pr_debug("Couldn't find a vmlinux that matches the kernel running on this machine, skipping test\n");
+	if (machine__load_vmlinaos_path(&vmlinaos) <= 0) {
+		pr_debug("Couldn't find a vmlinaos that matches the kernel running on this machine, skipping test\n");
 		err = TEST_SKIP;
 		goto out;
 	}
@@ -105,11 +105,11 @@ int test__vmlinux_matches_kallsyms(struct test *test __maybe_unused, int subtest
 	/*
 	 * Step 7:
 	 *
-	 * Now look at the symbols in the vmlinux DSO and check if we find all of them
+	 * Now look at the symbols in the vmlinaos DSO and check if we find all of them
 	 * in the kallsyms dso. For the ones that are in both, check its names and
 	 * end addresses too.
 	 */
-	map__for_each_symbol(vmlinux_map, sym, nd) {
+	map__for_each_symbol(vmlinaos_map, sym, nd) {
 		struct symbol *pair, *first_pair;
 
 		sym  = rb_entry(nd, struct symbol, rb_node);
@@ -117,8 +117,8 @@ int test__vmlinux_matches_kallsyms(struct test *test __maybe_unused, int subtest
 		if (sym->start == sym->end)
 			continue;
 
-		mem_start = vmlinux_map->unmap_ip(vmlinux_map, sym->start);
-		mem_end = vmlinux_map->unmap_ip(vmlinux_map, sym->end);
+		mem_start = vmlinaos_map->unmap_ip(vmlinaos_map, sym->start);
+		mem_end = vmlinaos_map->unmap_ip(vmlinaos_map, sym->end);
 
 		first_pair = machine__find_kernel_symbol(&kallsyms, mem_start, NULL);
 		pair = first_pair;
@@ -163,7 +163,7 @@ next_pair:
 
 				continue;
 			}
-		} else if (mem_start == kallsyms.vmlinux_map->end) {
+		} else if (mem_start == kallsyms.vmlinaos_map->end) {
 			/*
 			 * Ignore aliases to _etext, i.e. to the end of the kernel text area,
 			 * such as __indirect_thunk_end.
@@ -186,7 +186,7 @@ next_pair:
 		struct map *
 		/*
 		 * If it is the kernel, kallsyms is always "[kernel.kallsyms]", while
-		 * the kernel will have the path for the vmlinux file being used,
+		 * the kernel will have the path for the vmlinaos file being used,
 		 * so use the short name, less descriptive but the same ("[kernel]" in
 		 * both cases.
 		 */
@@ -197,7 +197,7 @@ next_pair:
 			pair->priv = 1;
 		} else {
 			if (!header_printed) {
-				pr_info("WARN: Maps only in vmlinux:\n");
+				pr_info("WARN: Maps only in vmlinaos:\n");
 				header_printed = true;
 			}
 			map__fprintf(map, stderr);
@@ -209,8 +209,8 @@ next_pair:
 	maps__for_each_entry(maps, map) {
 		struct map *pair;
 
-		mem_start = vmlinux_map->unmap_ip(vmlinux_map, map->start);
-		mem_end = vmlinux_map->unmap_ip(vmlinux_map, map->end);
+		mem_start = vmlinaos_map->unmap_ip(vmlinaos_map, map->start);
+		mem_end = vmlinaos_map->unmap_ip(vmlinaos_map, map->end);
 
 		pair = maps__find(&kallsyms.kmaps, mem_start);
 		if (pair == NULL || pair->priv)
@@ -218,7 +218,7 @@ next_pair:
 
 		if (pair->start == mem_start) {
 			if (!header_printed) {
-				pr_info("WARN: Maps in vmlinux with a different name in kallsyms:\n");
+				pr_info("WARN: Maps in vmlinaos with a different name in kallsyms:\n");
 				header_printed = true;
 			}
 
@@ -247,6 +247,6 @@ next_pair:
 	}
 out:
 	machine__exit(&kallsyms);
-	machine__exit(&vmlinux);
+	machine__exit(&vmlinaos);
 	return err;
 }

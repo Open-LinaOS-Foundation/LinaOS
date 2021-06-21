@@ -3,8 +3,8 @@
  * Copyright (c) 2012, NVIDIA Corporation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 
 #include <soc/tegra/flowctrl.h>
 #include <soc/tegra/fuse.h>

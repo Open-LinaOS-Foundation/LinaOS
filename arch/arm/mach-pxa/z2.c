@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/z2.c
+ *  linaos/arch/arm/mach-pxa/z2.c
  *
  *  Support for the Zipit Z2 Handheld device.
  *
@@ -10,24 +10,24 @@
  *  Based on mainstone.c as modified for the Zipit Z2.
  */
 
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/z2_battery.h>
-#include <linux/dma-mapping.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/spi/libertas_spi.h>
-#include <linux/power_supply.h>
-#include <linux/mtd/physmap.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/delay.h>
-#include <linux/regulator/machine.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/z2_battery.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/spi/libertas_spi.h>
+#include <linaos/power_supply.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -35,9 +35,9 @@
 #include "pxa27x.h"
 #include "mfp-pxa27x.h"
 #include <mach/z2.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 #include "pm.h"
 
 #include "generic.h"

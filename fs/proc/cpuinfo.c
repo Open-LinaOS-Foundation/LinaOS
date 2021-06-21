@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cpufreq.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/cpufreq.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 
 __weak void arch_freq_prepare_all(void)
 {

@@ -9,7 +9,7 @@
 #ifndef REMOTEPROC_TI_SCI_PROC_H
 #define REMOTEPROC_TI_SCI_PROC_H
 
-#include <linux/soc/ti/ti_sci_protocol.h>
+#include <linaos/soc/ti/ti_sci_protocol.h>
 
 /**
  * struct ti_sci_proc - structure representing a processor control client

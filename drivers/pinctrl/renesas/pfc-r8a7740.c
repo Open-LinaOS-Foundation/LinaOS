@@ -5,9 +5,9 @@
  * Copyright (C) 2011  Renesas Solutions Corp.
  * Copyright (C) 2011  Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
 #include "sh_pfc.h"
 

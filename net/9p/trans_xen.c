@@ -1,5 +1,5 @@
 /*
- * linux/fs/9p/trans_xen
+ * linaos/fs/9p/trans_xen
  *
  * Xen transport layer.
  *
@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -36,8 +36,8 @@
 #include <xen/xenbus.h>
 #include <xen/interface/io/9pfs.h>
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include <net/9p/transport.h>

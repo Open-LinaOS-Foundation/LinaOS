@@ -6,15 +6,15 @@
  *		Vinicius Costa Gomes <vinicius.gomes@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/rbtree.h>
-#include <linux/skbuff.h>
-#include <linux/posix-timers.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/errqueue.h>
+#include <linaos/rbtree.h>
+#include <linaos/skbuff.h>
+#include <linaos/posix-timers.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>

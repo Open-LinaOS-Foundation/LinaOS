@@ -3,7 +3,7 @@
  * Support for CPU-MF instructions
  *
  * Copyright IBM Corp. 2019
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
  */
 #ifndef _ASM_S390_CPU_MF_INSN_H
 #define _ASM_S390_CPU_MF_INSN_H

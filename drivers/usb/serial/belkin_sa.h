@@ -5,7 +5,7 @@
  *  Copyright (C) 2000
  *      William Greathouse (wgreathouse@smva.com)
  *
- *  This program is largely derived from work by the linux-usb group
+ *  This program is largely derived from work by the linaos-usb group
  *  and associated source files.  Please see the usb/serial files for
  *  individual credits and copyrights.
  *

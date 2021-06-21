@@ -7,8 +7,8 @@
  * This driver is partially based on octeon_edac-pc.c
  *
  */
-#include <linux/edac.h>
-#include <linux/platform_device.h>
+#include <linaos/edac.h>
+#include <linaos/platform_device.h>
 #include "edac_module.h"
 #include <soc/sifive/sifive_l2_cache.h>
 

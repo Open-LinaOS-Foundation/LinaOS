@@ -15,9 +15,9 @@
  * Copyright (c) 2018 William Whistler <wtbw@wtbw.co.uk>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
 
 #include "hid-ids.h"
 

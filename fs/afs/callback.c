@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/circ_buf.h>
-#include <linux/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/circ_buf.h>
+#include <linaos/sched.h>
 #include "internal.h"
 
 /*

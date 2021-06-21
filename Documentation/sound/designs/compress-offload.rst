@@ -2,9 +2,9 @@
 ALSA Compress-Offload API
 =========================
 
-Pierre-Louis.Bossart <pierre-louis.bossart@linux.intel.com>
+Pierre-Louis.Bossart <pierre-louis.bossart@linaos.intel.com>
 
-Vinod Koul <vinod.koul@linux.intel.com>
+Vinod Koul <vinod.koul@linaos.intel.com>
 
 
 Overview
@@ -18,7 +18,7 @@ In recent years, audio digital signal processors (DSP) were integrated
 in system-on-chip designs, and DSPs are also integrated in audio
 codecs. Processing compressed data on such DSPs results in a dramatic
 reduction of power consumption compared to host-based
-processing. Support for such hardware has not been very good in Linux,
+processing. Support for such hardware has not been very good in LinaOS,
 mostly because of a lack of a generic API available in the mainline
 kernel.
 

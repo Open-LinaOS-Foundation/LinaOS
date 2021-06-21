@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/io.c
+ * linaos/arch/arm/mach-omap2/io.c
  *
  * OMAP2 I/O mapping code
  *
@@ -13,16 +13,16 @@
  *
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
 
 #include <asm/tlb.h>
 #include <asm/mach/map.h>
 
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 
 #include "omap_hwmod.h"
 #include "soc.h"

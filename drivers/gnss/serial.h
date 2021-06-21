@@ -9,7 +9,7 @@
 #define _LINUX_GNSS_SERIAL_H
 
 #include <asm/termbits.h>
-#include <linux/pm.h>
+#include <linaos/pm.h>
 
 struct gnss_serial {
 	struct serdev_device *serdev;

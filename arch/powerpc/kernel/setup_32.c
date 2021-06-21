@@ -3,23 +3,23 @@
  * Common prep/pmac/chrp boot and setup code.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/tty.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/console.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/nvram.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/reboot.h>
+#include <linaos/delay.h>
+#include <linaos/initrd.h>
+#include <linaos/tty.h>
+#include <linaos/seq_file.h>
+#include <linaos/root_dev.h>
+#include <linaos/cpu.h>
+#include <linaos/console.h>
+#include <linaos/memblock.h>
+#include <linaos/export.h>
+#include <linaos/nvram.h>
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>
@@ -31,7 +31,7 @@
 #include <asm/bootx.h>
 #include <asm/btext.h>
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/pmac_feature.h>
 #include <asm/sections.h>
 #include <asm/nvram.h>

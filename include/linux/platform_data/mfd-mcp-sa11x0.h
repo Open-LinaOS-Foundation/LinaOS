@@ -5,7 +5,7 @@
 #ifndef __MFD_MCP_SA11X0_H
 #define __MFD_MCP_SA11X0_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct mcp_plat_data {
 	u32 mccr0;

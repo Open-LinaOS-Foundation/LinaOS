@@ -198,7 +198,7 @@ up the pseudocode.
 
 Copyright (C) 2012-2013  Linaro Limited
 Distributed under the terms of Version 2 of the GNU General Public
-License, as defined in linux/COPYING.
+License, as defined in linaos/COPYING.
 
 
 References
@@ -209,4 +209,4 @@ References
 
     https://en.wikipedia.org/wiki/Lamport%27s_bakery_algorithm
 
-[2] linux/arch/arm/common/vlock.S, www.kernel.org.
+[2] linaos/arch/arm/common/vlock.S, www.kernel.org.

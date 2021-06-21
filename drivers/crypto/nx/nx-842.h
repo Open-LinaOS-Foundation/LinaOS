@@ -3,15 +3,15 @@
 #ifndef __NX_842_H__
 #define __NX_842_H__
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/ratelimit.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/crypto.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/ratelimit.h>
 
 /* Restrictions on Data Descriptor List (DDL) and Entry (DDE) buffers
  *

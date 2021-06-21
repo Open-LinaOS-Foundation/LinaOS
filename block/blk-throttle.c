@@ -5,12 +5,12 @@
  * Copyright (C) 2010 Vivek Goyal <vgoyal@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/blktrace_api.h>
-#include <linux/blk-cgroup.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/bio.h>
+#include <linaos/blktrace_api.h>
+#include <linaos/blk-cgroup.h>
 #include "blk.h"
 #include "blk-cgroup-rwstat.h"
 

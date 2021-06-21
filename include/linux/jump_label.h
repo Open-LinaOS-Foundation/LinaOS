@@ -73,8 +73,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 extern bool static_key_initialized;
 
@@ -246,8 +246,8 @@ extern void static_key_disable_cpuslocked(struct static_key *key);
 
 #else  /* !CONFIG_JUMP_LABEL */
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
 
 static inline int static_key_count(struct static_key *key)
 {

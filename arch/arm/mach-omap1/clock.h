@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mach-omap1/clock.h
+ *  linaos/arch/arm/mach-omap1/clock.h
  *
  *  Copyright (C) 2004 - 2005, 2009 Nokia corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -10,10 +10,10 @@
 #ifndef __ARCH_ARM_MACH_OMAP1_CLOCK_H
 #define __ARCH_ARM_MACH_OMAP1_CLOCK_H
 
-#include <linux/clk.h>
-#include <linux/list.h>
+#include <linaos/clk.h>
+#include <linaos/list.h>
 
-#include <linux/clkdev.h>
+#include <linaos/clkdev.h>
 
 struct module;
 struct clk;

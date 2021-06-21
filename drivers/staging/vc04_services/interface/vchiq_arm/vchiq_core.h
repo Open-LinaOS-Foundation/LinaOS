@@ -4,13 +4,13 @@
 #ifndef VCHIQ_CORE_H
 #define VCHIQ_CORE_H
 
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/kref.h>
-#include <linux/rcupdate.h>
-#include <linux/wait.h>
-#include <linux/raspberrypi/vchiq.h>
+#include <linaos/mutex.h>
+#include <linaos/completion.h>
+#include <linaos/kthread.h>
+#include <linaos/kref.h>
+#include <linaos/rcupdate.h>
+#include <linaos/wait.h>
+#include <linaos/raspberrypi/vchiq.h>
 
 #include "vchiq_cfg.h"
 

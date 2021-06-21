@@ -3,16 +3,16 @@
  * Copyright 2019 NXP.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/platform_device.h>
-#include <linux/arm-smccc.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
+#include <linaos/platform_device.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/of.h>
 
 #define REV_B1				0x21
 

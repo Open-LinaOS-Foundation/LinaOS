@@ -10,21 +10,21 @@
 * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 * GNU General Public License for more details.
 */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/keyboard.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/keyboard.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 #include <asm/irq.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/serio.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/serio.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
 #define IPROC_TS_NAME "iproc-ts"
 

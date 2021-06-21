@@ -7,7 +7,7 @@
 #define __XFS_STATS_H__
 
 
-#include <linux/percpu.h>
+#include <linaos/percpu.h>
 
 /*
  * The btree stats arrays have fixed offsets for the different stats. We

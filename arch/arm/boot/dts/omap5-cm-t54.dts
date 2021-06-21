@@ -78,7 +78,7 @@
 		led1 {
 			label = "Heartbeat";
 			gpios = <&gpio3 16 GPIO_ACTIVE_HIGH>; /* gpio3_80 ACT_LED */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 	};

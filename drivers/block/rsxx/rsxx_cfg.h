@@ -3,7 +3,7 @@
 * Filename: rsXX_cfg.h
 *
 * Authors: Joshua Morris <josh.h.morris@us.ibm.com>
-*	Philip Kelleher <pjk1939@linux.vnet.ibm.com>
+*	Philip Kelleher <pjk1939@linaos.vnet.ibm.com>
 *
 * (C) Copyright 2013 IBM Corporation
 */
@@ -12,7 +12,7 @@
 #define __RSXX_CFG_H__
 
 /* NOTE: Config values will be saved in network byte order (i.e. Big endian) */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * The card config version must match the driver's expected version. If it does

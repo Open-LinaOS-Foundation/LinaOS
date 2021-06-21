@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2017 - 2019 Pensando Systems, Inc */
 
-#include <linux/printk.h>
-#include <linux/dynamic_debug.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/utsname.h>
+#include <linaos/printk.h>
+#include <linaos/dynamic_debug.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/utsname.h>
 #include <generated/utsrelease.h>
 
 #include "ionic.h"

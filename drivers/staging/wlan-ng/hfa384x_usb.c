@@ -6,7 +6,7 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linaos-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linaos-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linaos-wlan.com
+ * http://www.linaos-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -111,21 +111,21 @@
  * --------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/wireless.h>
+#include <linaos/netdevice.h>
+#include <linaos/timer.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
 #include <asm/byteorder.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/byteorder/generic.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
+#include <linaos/usb.h>
+#include <linaos/byteorder/generic.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"

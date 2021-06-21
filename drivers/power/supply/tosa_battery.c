@@ -5,14 +5,14 @@
  * Copyright (c) 2005 Dirk Opfer
  * Copyright (c) 2008 Dmitry Baryshkov
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/wm97xx.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/power_supply.h>
+#include <linaos/wm97xx.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio.h>
 
 #include <asm/mach-types.h>
 #include <mach/tosa.h>

@@ -7,13 +7,13 @@
  * Copyright (C) 2019-2020 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/nl80211.h>
-#include <linux/slab.h>
-#include <linux/wireless.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/nl80211.h>
+#include <linaos/slab.h>
+#include <linaos/wireless.h>
 #include <net/cfg80211.h>
 #include <net/iw_handler.h>
 #include "core.h"

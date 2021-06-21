@@ -6,14 +6,14 @@
  * Kevin Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/compat.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kbuild.h>
+#include <linaos/compat.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/kbuild.h>
 #include <asm/ptrace.h>
 #include <asm/processor.h>
 

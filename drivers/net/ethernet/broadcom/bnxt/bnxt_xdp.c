@@ -6,15 +6,15 @@
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/filter.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/filter.h>
 #include <net/page_pool.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"

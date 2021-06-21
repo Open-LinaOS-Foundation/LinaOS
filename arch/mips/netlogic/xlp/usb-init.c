@@ -32,12 +32,12 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
 
 #include <asm/netlogic/haldefs.h>
 #include <asm/netlogic/xlp-hal/iomap.h>

@@ -3,8 +3,8 @@
  * c67x00-drv.c: Cypress C67X00 USB Common infrastructure
  *
  * Copyright (C) 2006-2008 Barco N.V.
- *    Derived from the Cypress cy7c67200/300 ezusb linux driver and
- *    based on multiple host controller drivers inside the linux kernel.
+ *    Derived from the Cypress cy7c67200/300 ezusb linaos driver and
+ *    based on multiple host controller drivers inside the linaos kernel.
  */
 
 /*
@@ -20,13 +20,13 @@
  * the corresponding subdriver is initialized (c67x00_probe_sie).
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/c67x00.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/usb/c67x00.h>
 
 #include "c67x00.h"
 #include "c67x00-hcd.h"

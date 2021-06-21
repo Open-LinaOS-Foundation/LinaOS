@@ -7,9 +7,9 @@
 #ifndef I915_SCATTERLIST_H
 #define I915_SCATTERLIST_H
 
-#include <linux/pfn.h>
-#include <linux/scatterlist.h>
-#include <linux/swiotlb.h>
+#include <linaos/pfn.h>
+#include <linaos/scatterlist.h>
+#include <linaos/swiotlb.h>
 
 #include "i915_gem.h"
 

@@ -4,7 +4,7 @@
  *
  * Copyright 1993, 1994 Drew Eckhardt
  *      Visionary Computing
- *      (Unix and Linux consulting and custom programming)
+ *      (Unix and LinaOS consulting and custom programming)
  *      Drew@Colorado.EDU
  *      +1 (303) 786-7975
  *
@@ -25,14 +25,14 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/memblock.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/errno.h>
+#include <linaos/memblock.h>
 
 #include <asm/memtype.h>
 #include <asm/e820/api.h>

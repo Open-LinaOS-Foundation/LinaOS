@@ -8,22 +8,22 @@
  * Copyright (c) 2002-2005, Jouni Malinen <j@w1.fi>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/if_arp.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/workqueue.h>
-#include <linux/kmod.h>
-#include <linux/rtnetlink.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/proc_fs.h>
+#include <linaos/if_arp.h>
+#include <linaos/delay.h>
+#include <linaos/random.h>
+#include <linaos/workqueue.h>
+#include <linaos/kmod.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/wireless.h>
+#include <linaos/etherdevice.h>
 #include <net/net_namespace.h>
 #include <net/iw_handler.h>
 #include <net/lib80211.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "hostap_wlan.h"
 #include "hostap_80211.h"

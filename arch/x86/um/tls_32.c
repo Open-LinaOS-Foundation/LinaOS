@@ -3,10 +3,10 @@
  * Licensed under the GPL
  */
 
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 #include <asm/ptrace-abi.h>
 #include <os.h>
 #include <skas.h>

@@ -12,7 +12,7 @@
  *	Wajdi Feghali <wajdi.k.feghali@intel.com>
  *	James Guilford <james.guilford@intel.com>
  *	David Cote <david.m.cote@intel.com>
- *	Tim Chen <tim.c.chen@linux.intel.com>
+ *	Tim Chen <tim.c.chen@linaos.intel.com>
  *
  * This software is available to you under a choice of one of two
  * licenses.  You may choose to be licensed under the terms of the GNU
@@ -43,7 +43,7 @@
  * SOFTWARE.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/nospec-branch.h>
 
 ## ISCSI CRC 32 Implementation with crc32 and pclmulqdq Instruction
@@ -97,7 +97,7 @@ SYM_FUNC_START(crc_pcl)
 	pushq   %rdi
 	pushq   %rsi
 
-	## Move crc_init for Linux to a different
+	## Move crc_init for LinaOS to a different
 	mov     crc_init_arg, crc_init
 
 	################################################################

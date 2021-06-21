@@ -7,15 +7,15 @@
  *  The full LZO package can be found at:
  *  http://www.oberhumer.com/opensource/lzo/
  *
- *  Changed for Linux kernel use by:
+ *  Changed for LinaOS kernel use by:
  *  Nitin Gupta <nitingupta910@gmail.com>
  *  Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 #include <asm/unaligned.h>
-#include <linux/lzo.h>
+#include <linaos/lzo.h>
 #include "lzodefs.h"
 
 static noinline size_t

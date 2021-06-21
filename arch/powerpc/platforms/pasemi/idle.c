@@ -7,9 +7,9 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/irq.h>
 
 #include <asm/machdep.h>
 #include <asm/reg.h>

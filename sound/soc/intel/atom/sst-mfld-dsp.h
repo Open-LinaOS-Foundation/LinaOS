@@ -5,7 +5,7 @@
  *  sst_mfld_dsp.h - Intel SST Driver for audio engine
  *
  *  Copyright (C) 2008-14 Intel Corporation
- *  Authors:	Vinod Koul <vinod.koul@linux.intel.com>
+ *  Authors:	Vinod Koul <vinod.koul@linaos.intel.com>
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2018, Linaro Limited.
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "common.h"
 
 int qcom_snd_parse_of(struct snd_soc_card *card)

@@ -5,18 +5,18 @@
  * Copyright (C) 2007 David Brownell
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/pcf857x.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/pcf857x.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 
 static const struct i2c_device_id pcf857x_id[] = {

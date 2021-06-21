@@ -2,13 +2,13 @@
 #ifndef _LINUX_JIFFIES_H
 #define _LINUX_JIFFIES_H
 
-#include <linux/cache.h>
-#include <linux/limits.h>
-#include <linux/math64.h>
-#include <linux/minmax.h>
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/timex.h>
+#include <linaos/cache.h>
+#include <linaos/limits.h>
+#include <linaos/math64.h>
+#include <linaos/minmax.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
+#include <linaos/timex.h>
 #include <vdso/jiffies.h>
 #include <asm/param.h>			/* for HZ */
 #include <generated/timeconst.h>

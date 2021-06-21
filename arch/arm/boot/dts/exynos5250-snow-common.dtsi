@@ -35,15 +35,15 @@
 		power {
 			label = "Power";
 			gpios = <&gpx1 3 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 
 		lid-switch {
 			label = "Lid";
 			gpios = <&gpx3 5 GPIO_ACTIVE_LOW>;
-			linux,input-type = <5>; /* EV_SW */
-			linux,code = <0>; /* SW_LID */
+			linaos,input-type = <5>; /* EV_SW */
+			linaos,code = <0>; /* SW_LID */
 			debounce-interval = <1>;
 			wakeup-source;
 		};

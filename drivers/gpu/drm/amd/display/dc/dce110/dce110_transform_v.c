@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "dce110_transform_v.h"
 #include "dm_services.h"

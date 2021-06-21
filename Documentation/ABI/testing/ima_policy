@@ -52,9 +52,9 @@ Description:
 			template:= name of a defined IMA template type
 			(eg, ima-ng). Only valid when action is "measure".
 			pcr:= decimal value
-			label:= [selinux]|[kernel_info]|[data_label]
+			label:= [selinaos]|[kernel_info]|[data_label]
 			data_label:= a unique string used for grouping and limiting critical data.
-			For example, "selinux" to measure critical data for SELinux.
+			For example, "selinaos" to measure critical data for SELinaOS.
 
 		  default policy:
 			# PROC_SUPER_MAGIC
@@ -104,7 +104,7 @@ Description:
 
 		Examples of LSM specific definitions:
 
-		SELinux::
+		SELinaOS::
 
 			dont_measure obj_type=var_log_t
 			dont_appraise obj_type=var_log_t

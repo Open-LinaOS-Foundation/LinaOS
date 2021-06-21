@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *   linux/arch/parisc/kernel/pa7300lc.c
+ *   linaos/arch/parisc/kernel/pa7300lc.c
  *	- PA7300LC-specific functions	
  *
  *   Copyright (C) 2000 Philipp Rumpf */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
 #include <asm/io.h>
 #include <asm/ptrace.h>
 #include <asm/machdep.h>

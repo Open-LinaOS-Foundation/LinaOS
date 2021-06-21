@@ -17,9 +17,9 @@
 #ifndef _WCN36XX_H_
 #define _WCN36XX_H_
 
-#include <linux/completion.h>
-#include <linux/printk.h>
-#include <linux/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/printk.h>
+#include <linaos/spinlock.h>
 #include <net/mac80211.h>
 
 #include "hal.h"

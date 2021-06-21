@@ -2,7 +2,7 @@
 /*
  *  Copyright (c) 2005, 2006 Andrea Bittau <a.bittau@cs.ucl.ac.uk>
  *
- *  Changes to meet Linux coding standards, and DCCP infrastructure fixes.
+ *  Changes to meet LinaOS coding standards, and DCCP infrastructure fixes.
  *
  *  Copyright (c) 2006 Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
@@ -10,7 +10,7 @@
 /*
  * This implementation should follow RFC 4341
  */
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "../feat.h"
 #include "ccid2.h"
 
@@ -387,7 +387,7 @@ static void ccid2_rtt_estimator(struct sock *sk, const long mrtt)
 			/*
 			 * This neutralises RTO increase when RTT < SRTT - mdev
 			 * (see P. Sarolahti, A. Kuznetsov,"Congestion Control
-			 * in Linux TCP", USENIX 2002, pp. 49-62).
+			 * in LinaOS TCP", USENIX 2002, pp. 49-62).
 			 */
 			if (m > 0)
 				m >>= 3;

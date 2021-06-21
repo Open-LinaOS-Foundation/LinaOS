@@ -11,7 +11,7 @@
  *
  * Copyright (C) 2002-2005 Pavel Roskin <proski@gnu.org>
  * Portions based on orinoco_cs.c:
- *	Copyright (C) David Gibson, Linuxcare Australia
+ *	Copyright (C) David Gibson, LinaOScare Australia
  * Portions based on Spectrum24tDnld.c from original spectrum24 driver:
  *	Copyright (C) Symbol Technologies.
  *
@@ -21,9 +21,9 @@
 #define DRIVER_NAME "spectrum_cs"
 #define PFX DRIVER_NAME ": "
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ds.h>

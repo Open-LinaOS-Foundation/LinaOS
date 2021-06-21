@@ -5,19 +5,19 @@
  * Copyright (C) 2015 Freescale Semiconductor, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/driver.h>
+#include <linaos/iio/sysfs.h>
 
 /* ADC register */
 #define IMX7D_REG_ADC_CH_A_CFG1			0x00

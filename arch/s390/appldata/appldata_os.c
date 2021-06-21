@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Data gathering module for Linux-VM Monitor Stream, Stage 1.
+ * Data gathering module for LinaOS-VM Monitor Stream, Stage 1.
  * Collects misc. OS related data (CPU utilization, running processes).
  *
  * Copyright IBM Corp. 2003, 2006
@@ -11,15 +11,15 @@
 #define KMSG_COMPONENT	"appldata"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/netdevice.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/stat.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/netdevice.h>
+#include <linaos/sched.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/sched/stat.h>
 #include <asm/appldata.h>
 #include <asm/smp.h>
 
@@ -54,7 +54,7 @@ struct appldata_os_data {
 	u32 sync_count_1;	/* after VM collected the record data, */
 	u32 sync_count_2;	/* sync_count_1 and sync_count_2 should be the
 				   same. If not, the record has been updated on
-				   the Linux side while VM was collecting the
+				   the LinaOS side while VM was collecting the
 				   (possibly corrupt) data */
 
 	u32 nr_cpus;		/* number of (virtual) CPUs        */
@@ -208,4 +208,4 @@ module_exit(appldata_os_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Gerald Schaefer");
-MODULE_DESCRIPTION("Linux-VM Monitor Stream, OS statistics");
+MODULE_DESCRIPTION("LinaOS-VM Monitor Stream, OS statistics");

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) "efi: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/efi.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
+#include <linaos/efi.h>
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
 
 #include <asm/e820/api.h>
 #include <asm/efi.h>
@@ -438,9 +438,9 @@ void __init efi_free_boot_services(void)
 		 * try to manually allocate the trampoline if needed.
 		 *
 		 * I've seen this on a Dell XPS 13 9350 with firmware
-		 * 1.4.4 with SGX enabled booting Linux via Fedora 24's
+		 * 1.4.4 with SGX enabled booting LinaOS via Fedora 24's
 		 * grub2-efi on a hard disk.  (And no, I don't know why
-		 * this happened, but Linux should still try to boot rather
+		 * this happened, but LinaOS should still try to boot rather
 		 * panicking early.)
 		 */
 		rm_size = real_mode_size_needed();

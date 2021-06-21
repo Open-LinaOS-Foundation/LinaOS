@@ -35,20 +35,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/fs.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 #define WDT_IS_PCI

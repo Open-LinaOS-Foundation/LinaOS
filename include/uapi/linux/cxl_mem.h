@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * CXL IOCTLs for Memory Devices
  */
@@ -6,7 +6,7 @@
 #ifndef _UAPI_CXL_MEM_H_
 #define _UAPI_CXL_MEM_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * DOC: UAPI

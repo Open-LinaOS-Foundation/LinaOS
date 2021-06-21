@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: LinaOS filesystem encryption layer
  *
  * Copyright (C) 1997-2003 Erez Zadok
  * Copyright (C) 2001-2003 Stony Brook University
@@ -10,18 +10,18 @@
  *              Tyler Hicks <code@tyhicks.com>
  */
 
-#include <linux/dcache.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/skbuff.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/key.h>
-#include <linux/parser.h>
-#include <linux/fs_stack.h>
-#include <linux/slab.h>
-#include <linux/magic.h>
+#include <linaos/dcache.h>
+#include <linaos/file.h>
+#include <linaos/module.h>
+#include <linaos/namei.h>
+#include <linaos/skbuff.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/key.h>
+#include <linaos/parser.h>
+#include <linaos/fs_stack.h>
+#include <linaos/slab.h>
+#include <linaos/magic.h>
 #include "ecryptfs_kernel.h"
 
 /*

@@ -7,11 +7,11 @@
 #ifndef __INDUSTRIALIO_DMA_BUFFER_H__
 #define __INDUSTRIALIO_DMA_BUFFER_H__
 
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/iio/buffer_impl.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/iio/buffer_impl.h>
 
 struct iio_dma_buffer_queue;
 struct iio_dma_buffer_ops;

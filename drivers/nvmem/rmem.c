@@ -3,11 +3,11 @@
  * Copyright (C) 2020 Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/platform_device.h>
 
 struct rmem {
 	struct device *dev;

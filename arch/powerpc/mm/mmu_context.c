@@ -5,9 +5,9 @@
  *  Copyright IBM Corp. 2017
  */
 
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/sched/mm.h>
+#include <linaos/mm.h>
+#include <linaos/cpu.h>
+#include <linaos/sched/mm.h>
 
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>

@@ -3,13 +3,13 @@
  * Copyright (C) 2015 Broadcom Corporation
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/msi.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
 
 #include "pcie-iproc.h"
 

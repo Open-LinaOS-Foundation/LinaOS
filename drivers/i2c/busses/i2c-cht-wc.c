@@ -7,18 +7,18 @@
  * Copyright (C) 2011 - 2014 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power/bq24190_charger.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mfd/intel_soc_pmic.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/power/bq24190_charger.h>
+#include <linaos/slab.h>
 
 #define CHT_WC_I2C_CTRL			0x5e24
 #define CHT_WC_I2C_CTRL_WR		BIT(0)

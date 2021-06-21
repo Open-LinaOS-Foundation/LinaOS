@@ -2,9 +2,9 @@
 #include <inttypes.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/perf_event.h>
 #include "util/evsel_fprintf.h"
 
 struct bit_names {

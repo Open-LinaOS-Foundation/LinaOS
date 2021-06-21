@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause) */
 /* Copyright 2017-2019 NXP */
 
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/dma-mapping.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/phylink.h>
-#include <linux/dim.h>
+#include <linaos/timer.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/phylink.h>
+#include <linaos/dim.h>
 
 #include "enetc_hw.h"
 

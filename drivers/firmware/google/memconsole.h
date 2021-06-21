@@ -10,7 +10,7 @@
 #ifndef __FIRMWARE_GOOGLE_MEMCONSOLE_H
 #define __FIRMWARE_GOOGLE_MEMCONSOLE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * memconsole_setup

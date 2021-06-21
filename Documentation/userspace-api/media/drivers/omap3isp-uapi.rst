@@ -66,7 +66,7 @@ The following private IOCTLs are supported:
 - VIDIOC_OMAP3ISP_STAT_EN
 
 The parameter structures used by these ioctls are described in
-include/linux/omap3isp.h. The detailed functions of the ISP itself related to
+include/linaos/omap3isp.h. The detailed functions of the ISP itself related to
 a given ISP block is described in the Technical Reference Manuals (TRMs) ---
 see the end of the document for those.
 
@@ -205,4 +205,4 @@ matches with the video buffer's field_count.
 References
 ----------
 
-.. [#] include/linux/omap3isp.h
+.. [#] include/linaos/omap3isp.h

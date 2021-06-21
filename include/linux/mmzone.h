@@ -5,21 +5,21 @@
 #ifndef __ASSEMBLY__
 #ifndef __GENERATING_BOUNDS_H
 
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/cache.h>
-#include <linux/threads.h>
-#include <linux/numa.h>
-#include <linux/init.h>
-#include <linux/seqlock.h>
-#include <linux/nodemask.h>
-#include <linux/pageblock-flags.h>
-#include <linux/page-flags-layout.h>
-#include <linux/atomic.h>
-#include <linux/mm_types.h>
-#include <linux/page-flags.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/bitops.h>
+#include <linaos/cache.h>
+#include <linaos/threads.h>
+#include <linaos/numa.h>
+#include <linaos/init.h>
+#include <linaos/seqlock.h>
+#include <linaos/nodemask.h>
+#include <linaos/pageblock-flags.h>
+#include <linaos/page-flags-layout.h>
+#include <linaos/atomic.h>
+#include <linaos/mm_types.h>
+#include <linaos/page-flags.h>
 #include <asm/page.h>
 
 /* Free memory management - zoned buddy allocator.  */
@@ -885,7 +885,7 @@ static inline bool pgdat_is_empty(pg_data_t *pgdat)
 	return !pgdat->node_start_pfn && !pgdat->node_spanned_pages;
 }
 
-#include <linux/memory_hotplug.h>
+#include <linaos/memory_hotplug.h>
 
 void build_all_zonelists(pg_data_t *pgdat);
 void wakeup_kswapd(struct zone *zone, gfp_t gfp_mask, int order,

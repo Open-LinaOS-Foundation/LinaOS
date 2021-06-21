@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_VHOST_TYPES_H
 #define _LINUX_VHOST_TYPES_H
 /* Userspace interface for in-kernel virtio accelerators. */
@@ -11,10 +11,10 @@
  * device configuration.
  */
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ring.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/virtio_config.h>
+#include <linaos/virtio_ring.h>
 
 struct vhost_vring_state {
 	unsigned int index;

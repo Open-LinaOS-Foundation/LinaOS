@@ -10,8 +10,8 @@
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/iommu.h>
+#include <linaos/dma-buf.h>
+#include <linaos/iommu.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_prime.h>

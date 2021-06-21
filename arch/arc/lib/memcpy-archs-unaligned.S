@@ -6,7 +6,7 @@
  * Author: Eugeniy Paltsev <Eugeniy.Paltsev@synopsys.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #ifdef CONFIG_ARC_HAS_LL64
 # define LOADX(DST,RX)		ldd.ab	DST, [RX, 8]

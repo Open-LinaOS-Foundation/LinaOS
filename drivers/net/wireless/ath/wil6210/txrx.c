@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2012-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <net/ieee80211_radiotap.h>
-#include <linux/if_arp.h>
-#include <linux/moduleparam.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
+#include <linaos/if_arp.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/if_vlan.h>
 #include <net/ipv6.h>
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 
 #include "wil6210.h"
 #include "wmi.h"

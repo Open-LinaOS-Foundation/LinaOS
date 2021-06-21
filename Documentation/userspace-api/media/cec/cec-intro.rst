@@ -30,7 +30,7 @@ give userspace access to the CEC adapter. The
 :ref:`CEC_ADAP_G_CAPS` ioctl will tell userspace what it is allowed to do.
 
 In order to check the support and test it, it is suggested to download
-the `v4l-utils <https://git.linuxtv.org/v4l-utils.git/>`_ package. It
+the `v4l-utils <https://git.linaostv.org/v4l-utils.git/>`_ package. It
 provides three tools to handle CEC:
 
 - cec-ctl: the Swiss army knife of CEC. Allows you to configure, transmit

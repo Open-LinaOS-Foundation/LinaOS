@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/arch/arm64/crypto/aes-ce.S - AES cipher for ARMv8 with
+ * linaos/arch/arm64/crypto/aes-ce.S - AES cipher for ARMv8 with
  *                                    Crypto Extensions
  *
  * Copyright (C) 2013 - 2017 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 #define AES_FUNC_START(func)		SYM_FUNC_START(ce_ ## func)

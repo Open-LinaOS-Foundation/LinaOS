@@ -3,8 +3,8 @@
  * Joshua Henderson <joshua.henderson@microchip.com>
  * Copyright (C) 2015 Microchip Technology Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/pm.h>
+#include <linaos/init.h>
+#include <linaos/pm.h>
 #include <asm/reboot.h>
 #include <asm/mach-pic32/pic32.h>
 

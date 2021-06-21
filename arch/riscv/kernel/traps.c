@@ -3,19 +3,19 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/signal.h>
-#include <linux/signal.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/kprobes.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/signal.h>
+#include <linaos/signal.h>
+#include <linaos/kdebug.h>
+#include <linaos/uaccess.h>
+#include <linaos/kprobes.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/irq.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/bug.h>

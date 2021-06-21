@@ -8,7 +8,7 @@
  * Copyright (C) 2002  Paul Mundt
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 #include <asm/io.h>

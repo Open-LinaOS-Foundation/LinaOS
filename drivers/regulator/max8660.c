@@ -12,7 +12,7 @@
  *
  * This chip is a bit nasty because it is a write-only device. Thus, the driver
  * uses shadow registers to keep track of its values. The main problem appears
- * to be the initialization: When Linux boots up, we cannot know if the chip is
+ * to be the initialization: When LinaOS boots up, we cannot know if the chip is
  * in the default state or not, so we would have to pass such information in
  * platform_data. As this adds a bit of complexity to the driver, this is left
  * out for now until it is really needed.
@@ -24,16 +24,16 @@
  * development, they are separated for now.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
-#include <linux/regulator/max8660.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/max8660.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define MAX8660_DCDC_MIN_UV	 725000
 #define MAX8660_DCDC_MAX_UV	1800000

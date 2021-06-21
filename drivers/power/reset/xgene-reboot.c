@@ -10,15 +10,15 @@
  * For system shutdown, this is board specify. If a board designer
  * implements GPIO shutdown, use the gpio-poweroff.c driver.
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/notifier.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
 
 struct xgene_reboot_context {
 	struct device *dev;

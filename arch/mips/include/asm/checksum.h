@@ -16,9 +16,9 @@
 #include <asm-generic/checksum.h>
 #else
 
-#include <linux/in6.h>
+#include <linaos/in6.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /*
  * computes the checksum of a memory block at buff, length len,
@@ -91,7 +91,7 @@ static inline __sum16 csum_fold(__wsum csum)
  *	This is a version of ip_compute_csum() optimized for IP headers,
  *	which always checksum on 4 octet boundaries.
  *
- *	By Jorge Cwik <jorge@laser.satlink.net>, adapted for linux by
+ *	By Jorge Cwik <jorge@laser.satlink.net>, adapted for linaos by
  *	Arnt Gulbrandsen.
  */
 static inline __sum16 ip_fast_csum(const void *iph, unsigned int ihl)

@@ -6,8 +6,8 @@
  * (C) 2002-2006 Netfilter Core Team <coreteam@netfilter.org>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
+#include <linaos/module.h>
+#include <linaos/netfilter/x_tables.h>
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_masquerade.h>
 

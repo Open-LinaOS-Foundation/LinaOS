@@ -4,8 +4,8 @@
  * Copyright 2020 NXP
  */
 
-#include <linux/net_tstamp.h>
-#include <linux/nospec.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/nospec.h>
 
 #include "dpni.h"	/* DPNI_LINK_OPT_* */
 #include "dpaa2-eth.h"

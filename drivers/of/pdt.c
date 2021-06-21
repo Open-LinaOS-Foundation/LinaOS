@@ -11,13 +11,13 @@
  *  Adapted for multiple architectures by Andres Salomon <dilinger@queued.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_pdt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_pdt.h>
 
 static struct of_pdt_ops *of_pdt_prom_ops __initdata;
 

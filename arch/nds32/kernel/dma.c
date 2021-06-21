@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/dma-map-ops.h>
-#include <linux/cache.h>
-#include <linux/highmem.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/cache.h>
+#include <linaos/highmem.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
 #include <asm/proc-fns.h>

@@ -5,19 +5,19 @@
  * Derived from pxa PWM driver by eric miao <eric.miao@marvell.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
 
 #define MX1_PWMC			0x00   /* PWM Control Register */
 #define MX1_PWMS			0x04   /* PWM Sample Register */

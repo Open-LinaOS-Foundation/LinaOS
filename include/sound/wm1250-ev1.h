@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm1250-ev1.h - Platform data for WM1250-EV1
+ * linaos/sound/wm1250-ev1.h - Platform data for WM1250-EV1
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  */

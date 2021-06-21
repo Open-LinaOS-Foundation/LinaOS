@@ -2,36 +2,36 @@
 /*
  * Copyright (C) 2015 Anton Ivanov (aivanov@{brocade.com,kot-begemot.co.uk})
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Copyright 2003 PathScale, Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/hardirq.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/proc_fs.h>
-#include <linux/ptrace.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seq_file.h>
-#include <linux/tick.h>
-#include <linux/threads.h>
-#include <linux/tracehook.h>
+#include <linaos/stddef.h>
+#include <linaos/err.h>
+#include <linaos/hardirq.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/personality.h>
+#include <linaos/proc_fs.h>
+#include <linaos/ptrace.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/seq_file.h>
+#include <linaos/tick.h>
+#include <linaos/threads.h>
+#include <linaos/tracehook.h>
 #include <asm/current.h>
 #include <asm/mmu_context.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <as-layout.h>
 #include <kern_util.h>
 #include <os.h>
 #include <skas.h>
-#include <linux/time-internal.h>
+#include <linaos/time-internal.h>
 
 /*
  * This is a per-cpu array.  A processor only modifies its entry and it only

@@ -9,11 +9,11 @@
  * Based on drivers/acpi/pmic/intel_pmic* drivers
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/mfd/tps68470.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/init.h>
+#include <linaos/mfd/tps68470.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 struct tps68470_pmic_table {
 	u32 address;		/* operation region address */

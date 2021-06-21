@@ -15,27 +15,27 @@
  */
 
 /* Thanks to Neil Whelchel for writing the first cypress m8 implementation
-   for linux. */
+   for linaos. */
 /* Thanks to cypress for providing references for the hid reports. */
 /* Thanks to Jiang Zhang for providing links and for general help. */
 /* Code originates and was built up from ftdi_sio, belkin, pl2303 and others.*/
 
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/spinlock.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
+#include <linaos/serial.h>
+#include <linaos/kfifo.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
 #include <asm/unaligned.h>
 
 #include "cypress_m8.h"

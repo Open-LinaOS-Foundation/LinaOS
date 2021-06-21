@@ -3,7 +3,7 @@
  * Copyright (C) 2011 Richard Weinberger <richrd@nod.at>
  */
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/elf.h>
 
 static struct vm_area_struct gate_vma;

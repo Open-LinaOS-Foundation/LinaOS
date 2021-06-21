@@ -4,10 +4,10 @@
  * Derived from fixup.c of i386 tree.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/vgaarb.h>
-#include <linux/screen_info.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/vgaarb.h>
+#include <linaos/screen_info.h>
 #include <asm/uv/uv.h>
 
 /*

@@ -10,27 +10,27 @@
  *	Arun R Murthy <arun.murthy@stericsson.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/completion.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/workqueue.h>
-#include <linux/kobject.h>
-#include <linux/of.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500.h>
-#include <linux/usb/otg.h>
-#include <linux/mutex.h>
-#include <linux/iio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/notifier.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/completion.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/workqueue.h>
+#include <linaos/kobject.h>
+#include <linaos/of.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/usb/otg.h>
+#include <linaos/mutex.h>
+#include <linaos/iio/consumer.h>
 
 #include "ab8500-bm.h"
 #include "ab8500-chargalg.h"

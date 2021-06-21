@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_H8300_SIGNAL_H
 #define _UAPI_H8300_SIGNAL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Avoid too many header ordering problems.  */
 struct siginfo;

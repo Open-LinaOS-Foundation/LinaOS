@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2014-15, Intel Corporation.
  */
-#include <linux/device.h>
+#include <linaos/device.h>
 
 #include "../common/sst-dsp.h"
 #include "../common/sst-dsp-priv.h"

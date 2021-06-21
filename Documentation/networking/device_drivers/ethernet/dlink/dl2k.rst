@@ -27,7 +27,7 @@ Adapter Support:
 - D-Link DL2000-based Gigabit Ethernet Adapter.
 
 
-The driver support Linux kernel 2.4.7 later. We had tested it
+The driver support LinaOS kernel 2.4.7 later. We had tested it
 on the environments below.
 
  . Red Hat v6.2 (update kernel to 2.4.7)
@@ -38,7 +38,7 @@ on the environments below.
 
 Quick Install
 =============
-Install linux driver as following command::
+Install linaos driver as following command::
 
     1. make all
     2. insmod dl2k.ko
@@ -63,18 +63,18 @@ Now eth0 should active, you can test it by "ping" or get more information by
 
 Compiling the Driver
 ====================
-In Linux, NIC drivers are most commonly configured as loadable modules.
+In LinaOS, NIC drivers are most commonly configured as loadable modules.
 The approach of building a monolithic kernel has become obsolete. The driver
 can be compiled as part of a monolithic kernel, but is strongly discouraged.
 The remainder of this section assumes the driver is built as a loadable module.
-In the Linux environment, it is a good idea to rebuild the driver from the
+In the LinaOS environment, it is a good idea to rebuild the driver from the
 source instead of relying on a precompiled version. This approach provides
 better reliability since a precompiled driver might depend on libraries or
-kernel features that are not present in a given Linux installation.
+kernel features that are not present in a given LinaOS installation.
 
-The 3 files necessary to build Linux device driver are dl2k.c, dl2k.h and
-Makefile. To compile, the Linux installation must include the gcc compiler,
-the kernel source, and the kernel headers. The Linux driver supports Linux
+The 3 files necessary to build LinaOS device driver are dl2k.c, dl2k.h and
+Makefile. To compile, the LinaOS installation must include the gcc compiler,
+the kernel source, and the kernel headers. The LinaOS driver supports LinaOS
 Kernels 2.4.7. Copy the files to a directory and enter the following command
 to compile and link the driver:
 
@@ -88,7 +88,7 @@ CD-ROM drive
     [root@XXX /] cd root
     [root@XXX /root] mkdir dl2k
     [root@XXX /root] cd dl2k
-    [root@XXX dl2k] cp /cdrom/linux/dl2k.tgz /root/dl2k
+    [root@XXX dl2k] cp /cdrom/linaos/dl2k.tgz /root/dl2k
     [root@XXX dl2k] tar xfvz dl2k.tgz
     [root@XXX dl2k] make all
 
@@ -100,7 +100,7 @@ Floppy disc drive
     [root@XXX /] cd root
     [root@XXX /root] mkdir dl2k
     [root@XXX /root] cd dl2k
-    [root@XXX dl2k] mcopy a:/linux/dl2k.tgz /root/dl2k
+    [root@XXX dl2k] mcopy a:/linaos/dl2k.tgz /root/dl2k
     [root@XXX dl2k] tar xfvz dl2k.tgz
     [root@XXX dl2k] make all
 
@@ -137,7 +137,7 @@ Manual Installation
 ---------------------------------------------------------
 
   Please reference the list of the command line parameters supported by
-  the Linux device driver below.
+  the LinaOS device driver below.
 
   The insmod command only loads the driver and gives it a name of the form
   eth0, eth1, etc. To bring the NIC into an operational state,
@@ -146,7 +146,7 @@ Manual Installation
     ifconfig eth0 up
 
   Finally, to bind the driver to the active protocol (e.g., TCP/IP with
-  Linux), enter the following command::
+  LinaOS), enter the following command::
 
     ifup eth0
 
@@ -190,7 +190,7 @@ Red Hat v6.x/v7.x
   3. Locate the network configuration scripts, normally the
      /etc/sysconfig/network-scripts directory, and create a configuration
      script named ifcfg-ethx that contains network information.
-  4. Note that for most Linux distributions, Red Hat included, a configuration
+  4. Note that for most LinaOS distributions, Red Hat included, a configuration
      utility with a graphical user interface is provided to perform steps 2
      and 3 above.
 
@@ -200,7 +200,7 @@ Parameter Description
 You can install this driver without any additional parameter. However, if you
 are going to have extensive functions then it is necessary to set extra
 parameter. Below is a list of the command line parameters supported by the
-Linux device
+LinaOS device
 driver.
 
 
@@ -304,9 +304,9 @@ Q2: Could not find header files (``*.h``)?
 
     To compile the driver, you need kernel header files. After
     installing the kernel source, the header files are usually located in
-    /usr/src/linux/include, which is the default include directory configured
+    /usr/src/linaos/include, which is the default include directory configured
     in Makefile. For some distributions, there is a copy of header files in
-    /usr/src/include/linux and /usr/src/include/asm, that you can change the
+    /usr/src/include/linaos and /usr/src/include/asm, that you can change the
     INCLUDEDIR in Makefile to /usr/include without installing kernel source.
 
     Note that RH 7.0 didn't provide correct header files in /usr/include,

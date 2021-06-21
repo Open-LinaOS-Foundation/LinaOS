@@ -3,8 +3,8 @@
  * Copyright (c) 2012-2016 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
 
 #include "clk.h"
 

@@ -4,7 +4,7 @@
 XFRM proc - /proc/net/xfrm_* files
 ==================================
 
-Masahide NAKAMURA <nakam@linux-ipv6.org>
+Masahide NAKAMURA <nakam@linaos-ipv6.org>
 
 
 Transformation Statistics
@@ -12,7 +12,7 @@ Transformation Statistics
 
 The xfrm_proc code is a set of statistics showing numbers of packets
 dropped by the transformation code and why.  These counters are defined
-as part of the linux private MIB.  These counters can be viewed in
+as part of the linaos private MIB.  These counters can be viewed in
 /proc/net/xfrm_stat.
 
 

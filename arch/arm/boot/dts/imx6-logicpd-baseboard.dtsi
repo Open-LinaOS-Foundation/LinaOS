@@ -9,7 +9,7 @@
 		btn0 {
 			gpios = <&pcf8575 0 GPIO_ACTIVE_LOW>;
 			label = "btn0";
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};
@@ -17,7 +17,7 @@
 		btn1 {
 			gpios = <&pcf8575 1 GPIO_ACTIVE_LOW>;
 			label = "btn1";
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};
@@ -25,7 +25,7 @@
 		btn2 {
 			gpios = <&pcf8575 2 GPIO_ACTIVE_LOW>;
 			label = "btn2";
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};
@@ -33,7 +33,7 @@
 		btn3 {
 			gpios = <&pcf8575 3 GPIO_ACTIVE_LOW>;
 			label = "btn3";
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};
@@ -48,7 +48,7 @@
 			pinctrl-names = "default";
 			pinctrl-0 = <&pinctrl_led0>;
 			gpios = <&gpio1 30 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu0";
+			linaos,default-trigger = "cpu0";
 		};
 
 		gen-led1 {
@@ -59,13 +59,13 @@
 		gen-led2 {
 			label = "led2";
 			gpios = <&pcf8575 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		gen-led3 {
 			label = "led3";
 			gpios = <&pcf8575 10 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 

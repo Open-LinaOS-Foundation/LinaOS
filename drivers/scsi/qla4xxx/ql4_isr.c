@@ -151,7 +151,7 @@ static void qla4xxx_status_entry(struct scsi_qla_host *ha,
 
 	residual = le32_to_cpu(sts_entry->residualByteCnt);
 
-	/* Translate ISP error to a Linux SCSI error. */
+	/* Translate ISP error to a LinaOS SCSI error. */
 	scsi_status = sts_entry->scsiStatus;
 	switch (sts_entry->completionStatus) {
 	case SCS_COMPLETE:

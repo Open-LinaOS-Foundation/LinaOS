@@ -11,7 +11,7 @@
  * A relatively simple B+Tree implementation.  I have written it as a learning
  * exercise to understand how B+Trees work.  Turned out to be useful as well.
  *
- * B+Trees can be used similar to Linux radix trees (which don't have anything
+ * B+Trees can be used similar to LinaOS radix trees (which don't have anything
  * in common with textbook radix trees, beware).  Prerequisite for them working
  * well is that access to a random tree node is much faster than a large number
  * of operations within each node.
@@ -37,11 +37,11 @@
  * simply loop once over all slots and terminate on the first NUL.
  */
 
-#include <linux/btree.h>
-#include <linux/cache.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/btree.h>
+#include <linaos/cache.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 #define NODESIZE MAX(L1_CACHE_BYTES, 128)

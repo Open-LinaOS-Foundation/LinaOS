@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2013
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linaos.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -15,7 +15,7 @@
 /*
  * PPC64 THP Support for hash based MMUs
  */
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/machdep.h>
 
 int __hash_page_thp(unsigned long ea, unsigned long access, unsigned long vsid,
@@ -30,7 +30,7 @@ int __hash_page_thp(unsigned long ea, unsigned long access, unsigned long vsid,
 	unsigned long vpn, hash, shift, slot;
 
 	/*
-	 * atomically mark the linux large page PMD busy and dirty
+	 * atomically mark the linaos large page PMD busy and dirty
 	 */
 	do {
 		pmd_t pmd = READ_ONCE(*pmdp);

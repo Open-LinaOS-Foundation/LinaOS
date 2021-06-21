@@ -9,22 +9,22 @@
  * Based on dummy, team and ipvlan drivers
  */
 
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter.h>
-#include <linux/rtnetlink.h>
+#include <linaos/ethtool.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ip.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/netfilter.h>
+#include <linaos/rtnetlink.h>
 #include <net/rtnetlink.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/hashtable.h>
-#include <linux/spinlock_types.h>
+#include <linaos/u64_stats_sync.h>
+#include <linaos/hashtable.h>
+#include <linaos/spinlock_types.h>
 
-#include <linux/inetdevice.h>
+#include <linaos/inetdevice.h>
 #include <net/arp.h>
 #include <net/ip.h>
 #include <net/ip_fib.h>

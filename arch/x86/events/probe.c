@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/bits.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/bits.h>
 #include "probe.h"
 
 static umode_t

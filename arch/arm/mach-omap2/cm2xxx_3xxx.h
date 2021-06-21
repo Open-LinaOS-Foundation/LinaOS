@@ -45,7 +45,7 @@
 
 #ifndef __ASSEMBLER__
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 static inline u32 omap2_cm_read_mod_reg(s16 module, u16 idx)
 {

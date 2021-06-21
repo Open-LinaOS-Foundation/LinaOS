@@ -8,25 +8,25 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/atomic.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/netpoll.h>
-#include <linux/bpf.h>
+#include <linaos/init.h>
+#include <linaos/atomic.h>
+#include <linaos/ethtool.h>
+#include <linaos/module.h>
+#include <linaos/highmem.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/pci.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_vlan.h>
+#include <linaos/in.h>
+#include <linaos/slab.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/netpoll.h>
+#include <linaos/bpf.h>
 
 #include <net/arp.h>
 #include <net/route.h>
@@ -877,7 +877,7 @@ static struct sk_buff *netvsc_alloc_recv_skb(struct net_device *net,
 
 	/* Incoming packets may have IP header checksum verified by the host.
 	 * They may not have IP header checksum computed after coalescing.
-	 * We compute it here if the flags are set, because on Linux, the IP
+	 * We compute it here if the flags are set, because on LinaOS, the IP
 	 * checksum is always checked.
 	 */
 	if ((ppi_flags & NVSC_RSC_CSUM_INFO) && csum_info->receive.ip_checksum_value_invalid &&

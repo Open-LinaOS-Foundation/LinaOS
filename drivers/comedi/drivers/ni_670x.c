@@ -2,7 +2,7 @@
 /*
  * Comedi driver for NI 670x devices
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2001 David A. Schleef <ds@schleef.org>
  */
 
@@ -21,9 +21,9 @@
  *   322110b.pdf	PCI/PXI-6703/6704 User Manual
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 #include "../comedi_pci.h"
 

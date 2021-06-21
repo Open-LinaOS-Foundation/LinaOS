@@ -10,7 +10,7 @@
 #if !defined(_TRACE_AFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_AFS_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /*
  * Define enums for tracing information.

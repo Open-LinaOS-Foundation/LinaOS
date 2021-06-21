@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/generic.c
+ *  linaos/arch/arm/mach-pxa/generic.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Jun 15, 2001
@@ -13,10 +13,10 @@
  * initialization stuff for PXA machines which can be overridden later if
  * need be.
  */
-#include <linux/gpio.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/gpio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 
 #include <mach/hardware.h>
 #include <asm/mach/map.h>

@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <pthread.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 
 #include "../helpline.h"
 #include "../ui.h"

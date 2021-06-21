@@ -4,7 +4,7 @@
  * Copyright (C) 2008 Pierrick Hascoet <pierrick.hascoet@abilis.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "as102_drv.h"
 #include "as10x_cmd.h"
 

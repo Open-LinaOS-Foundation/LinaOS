@@ -10,7 +10,7 @@
  */
 
 /* $Id: dma.h,v 1.7 1992/12/14 00:29:34 root Exp root $
- * linux/include/asm/dma.h: Defines for using and allocating dma channels.
+ * linaos/include/asm/dma.h: Defines for using and allocating dma channels.
  * Written by Hennus Bergman, 1992.
  * High DMA channel support & info by Hannu Savolainen
  * and John Boyd, Nov. 1992.
@@ -19,7 +19,7 @@
 #ifndef _ASM_DMA_H
 #define _ASM_DMA_H
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <asm/io.h>
 
 #define dma_outb	outb

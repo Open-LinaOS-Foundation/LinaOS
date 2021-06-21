@@ -2,24 +2,24 @@
 /*
  *
  *  Copyright (C) 2001 Rusty Russell.
- *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@linaos-mips.org)
  *  Copyright (C) 2005 Thiemo Seufer
  */
 
 #undef DEBUG
 
-#include <linux/extable.h>
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/numa.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/jump_label.h>
+#include <linaos/extable.h>
+#include <linaos/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/mm.h>
+#include <linaos/numa.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/jump_label.h>
 
 
 struct mips_hi16 {

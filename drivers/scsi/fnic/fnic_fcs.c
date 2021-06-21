@@ -15,15 +15,15 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/workqueue.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/skbuff.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/workqueue.h>
 #include <scsi/fc/fc_fip.h>
 #include <scsi/fc/fc_els.h>
 #include <scsi/fc/fc_fcoe.h>

@@ -5,7 +5,7 @@
 #ifndef _SSP_SENSORS_H_
 #define _SSP_SENSORS_H_
 
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 
 #define SSP_TIME_SIZE				4
 #define SSP_ACCELEROMETER_SIZE			6

@@ -9,14 +9,14 @@
  *   Copyright (c) 2003 - 2006 Zultys Technologies
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>

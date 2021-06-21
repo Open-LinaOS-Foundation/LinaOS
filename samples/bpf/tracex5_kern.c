@@ -4,11 +4,11 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <linux/ptrace.h>
-#include <linux/version.h>
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/seccomp.h>
-#include <uapi/linux/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/version.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/seccomp.h>
+#include <uapi/linaos/unistd.h>
 #include "syscall_nrs.h"
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>

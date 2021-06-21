@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SWITCH_TO_H
 #define _ASM_X86_SWITCH_TO_H
 
-#include <linux/sched/task_stack.h>
+#include <linaos/sched/task_stack.h>
 
 struct task_struct; /* one of the stranger aspects of C forward declarations */
 

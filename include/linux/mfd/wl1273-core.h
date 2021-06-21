@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/mfd/wl1273-core.h
+ * include/linaos/mfd/wl1273-core.h
  *
  * Some definitions for the wl1273 radio receiver/transmitter chip.
  *
@@ -11,8 +11,8 @@
 #ifndef WL1273_CORE_H
 #define WL1273_CORE_H
 
-#include <linux/i2c.h>
-#include <linux/mfd/core.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/core.h>
 
 #define WL1273_FM_DRIVER_NAME	"wl1273-fm"
 #define RX71_FM_I2C_ADDR	0x22

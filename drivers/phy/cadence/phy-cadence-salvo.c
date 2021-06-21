@@ -6,14 +6,14 @@
  * Copyright (c) 2019-2020 NXP
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 
 /* PHY register definition */
 #define PHY_PMA_CMN_CTRL1			0xC800

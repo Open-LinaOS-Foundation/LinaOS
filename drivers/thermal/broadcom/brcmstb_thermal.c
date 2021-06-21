@@ -9,17 +9,17 @@
 
 #define pr_fmt(fmt)	DRV_NAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/thermal.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/irqreturn.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
+#include <linaos/thermal.h>
 
 #define AVS_TMON_STATUS			0x00
  #define AVS_TMON_STATUS_valid_msk	BIT(11)

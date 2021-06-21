@@ -5,17 +5,17 @@
  * Author: Chen Zhong <chen.zhong@mediatek.com>
  */
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6397/registers.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/mt6323/registers.h>
+#include <linaos/mfd/mt6397/core.h>
+#include <linaos/mfd/mt6397/registers.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define MTK_PMIC_PWRKEY_RST_EN_MASK	0x1
 #define MTK_PMIC_PWRKEY_RST_EN_SHIFT	6
@@ -283,10 +283,10 @@ static int mtk_pmic_keys_probe(struct platform_device *pdev)
 		}
 
 		error = of_property_read_u32(child,
-			"linux,keycodes", &keys->keys[index].keycode);
+			"linaos,keycodes", &keys->keys[index].keycode);
 		if (error) {
 			dev_err(keys->dev,
-				"failed to read key:%d linux,keycode property: %d\n",
+				"failed to read key:%d linaos,keycode property: %d\n",
 				index, error);
 			of_node_put(child);
 			return error;

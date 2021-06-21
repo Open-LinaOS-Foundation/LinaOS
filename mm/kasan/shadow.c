@@ -10,16 +10,16 @@
  *        Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/memory.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/kasan.h>
+#include <linaos/kernel.h>
+#include <linaos/kfence.h>
+#include <linaos/kmemleak.h>
+#include <linaos/memory.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

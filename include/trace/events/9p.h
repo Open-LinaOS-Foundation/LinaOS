@@ -5,7 +5,7 @@
 #if !defined(_TRACE_9P_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_9P_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define P9_MSG_T							\
 		EM( P9_TLERROR,		"P9_TLERROR" )			\

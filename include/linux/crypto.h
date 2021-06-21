@@ -12,13 +12,13 @@
 #ifndef _LINUX_CRYPTO_H
 #define _LINUX_CRYPTO_H
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/bug.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/bug.h>
+#include <linaos/refcount.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
 
 /*
  * Autoloaded crypto modules should only use a prefixed name to avoid allowing
@@ -381,7 +381,7 @@ struct crypto_istat_rng {
 
 /**
  * struct crypto_alg - definition of a cryptograpic cipher algorithm
- * @cra_flags: Flags describing this transformation. See include/linux/crypto.h
+ * @cra_flags: Flags describing this transformation. See include/linaos/crypto.h
  *	       CRYPTO_ALG_* flags for the flags which go in here. Those are
  *	       used for fine-tuning the description of the transformation
  *	       algorithm.

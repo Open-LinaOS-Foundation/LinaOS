@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) "ACPI: utils: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/hardirq.h>
-#include <linux/acpi.h>
-#include <linux/dynamic_debug.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/hardirq.h>
+#include <linaos/acpi.h>
+#include <linaos/dynamic_debug.h>
 
 #include "internal.h"
 #include "sleep.h"

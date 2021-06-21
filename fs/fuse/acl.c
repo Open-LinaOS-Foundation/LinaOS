@@ -8,8 +8,8 @@
 
 #include "fuse_i.h"
 
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
+#include <linaos/posix_acl.h>
+#include <linaos/posix_acl_xattr.h>
 
 struct posix_acl *fuse_get_acl(struct inode *inode, int type)
 {

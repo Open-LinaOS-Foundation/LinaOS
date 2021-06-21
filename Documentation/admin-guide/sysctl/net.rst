@@ -11,7 +11,7 @@ Copyright (c) 1999
 
 Copyright (c) 2000
 
-	- Jorge Nerin <comandante@zaralinux.com>
+	- Jorge Nerin <comandante@zaralinaos.com>
 
 Copyright (c) 2009
 
@@ -51,7 +51,7 @@ bpf_jit_enable
 
 This enables the BPF Just in Time (JIT) compiler. BPF is a flexible
 and efficient infrastructure allowing to execute bytecode at various
-hook points. It is used in a number of Linux kernel subsystems such
+hook points. It is used in a number of LinaOS kernel subsystems such
 as networking (e.g. XDP, tc), tracing (e.g. kprobes, uprobes, tracepoints)
 and security (e.g. seccomp). LLVM has a BPF back end that can compile
 restricted C into a sequence of BPF instructions. After program load

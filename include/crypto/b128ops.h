@@ -47,7 +47,7 @@
 #ifndef _CRYPTO_B128OPS_H
 #define _CRYPTO_B128OPS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef struct {
 	u64 a, b;

@@ -5,18 +5,18 @@
  */
 
 /*
- * This driver lives in a generic guest Linux partition, and registers to
+ * This driver lives in a generic guest LinaOS partition, and registers to
  * receive keyboard and mouse channels from the visorbus driver.  It reads
- * inputs from such channels, and delivers it to the Linux OS in the
- * standard way the Linux expects for input drivers.
+ * inputs from such channels, and delivers it to the LinaOS OS in the
+ * standard way the LinaOS expects for input drivers.
  */
 
-#include <linux/fb.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/uuid.h>
-#include <linux/visorbus.h>
+#include <linaos/fb.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/uuid.h>
+#include <linaos/visorbus.h>
 
 /* These defines identify mouse and keyboard activity which is specified by the
  * firmware to the host using the cmsimpleinput protocol.  @ingroup coretypes
@@ -313,8 +313,8 @@ out_unlock:
 }
 
 /*
- * setup_client_keyboard() initializes and returns a Linux input node that we
- * can use to deliver keyboard inputs to Linux.  We of course do this when we
+ * setup_client_keyboard() initializes and returns a LinaOS input node that we
+ * can use to deliver keyboard inputs to LinaOS.  We of course do this when we
  * see keyboard inputs coming in on a keyboard channel.
  */
 static struct input_dev *setup_client_keyboard(void *devdata,

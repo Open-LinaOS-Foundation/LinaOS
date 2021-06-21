@@ -6,8 +6,8 @@
 #ifndef _CRYPTO_AES_H
 #define _CRYPTO_AES_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <linaos/types.h>
+#include <linaos/crypto.h>
 
 #define AES_MIN_KEY_SIZE	16
 #define AES_MAX_KEY_SIZE	32

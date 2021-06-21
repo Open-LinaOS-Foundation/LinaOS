@@ -11,7 +11,7 @@
 #ifndef _ASM_SN_SN0_HUBPI_H
 #define _ASM_SN_SN0_HUBPI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Hub I/O interface registers

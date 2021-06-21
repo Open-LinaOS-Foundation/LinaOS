@@ -5,16 +5,16 @@
  * Driver is originally developed by Pavel Sokolov <psokolov@synopsys.com>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #define ARC_PS2_PORTS                   2
 

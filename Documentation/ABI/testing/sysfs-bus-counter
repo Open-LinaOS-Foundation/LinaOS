@@ -1,26 +1,26 @@
 What:		/sys/bus/counter/devices/counterX/countY/count
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Count data of Count Y represented as a string.
 
 What:		/sys/bus/counter/devices/counterX/countY/ceiling
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Count value ceiling for Count Y. This is the upper limit for the
 		respective counter.
 
 What:		/sys/bus/counter/devices/counterX/countY/floor
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Count value floor for Count Y. This is the lower limit for the
 		respective counter.
 
 What:		/sys/bus/counter/devices/counterX/countY/count_mode
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Count mode for channel Y. The ceiling and floor values for
 		Count Y are used by the count mode where required. The following
@@ -59,7 +59,7 @@ What:		/sys/bus/counter/devices/counterX/countY/error_noise_available
 What:		/sys/bus/counter/devices/counterX/countY/function_available
 What:		/sys/bus/counter/devices/counterX/countY/signalZ_action_available
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Discrete set of available values for the respective Count Y
 		configuration are listed in this file. Values are delimited by
@@ -67,7 +67,7 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/countY/direction
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates the count direction of Count
 		Y. Two count directions are available: forward and backward.
@@ -80,7 +80,7 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/countY/enable
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Whether channel Y counter is enabled. Valid attribute values are
 		boolean.
@@ -94,14 +94,14 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/countY/error_noise
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates whether excessive noise is
 		present at the channel Y counter inputs.
 
 What:		/sys/bus/counter/devices/counterX/countY/function
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Count function mode of Count Y; count function evaluation is
 		triggered by conditions specified by the Count Y signalZ_action
@@ -148,7 +148,7 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/countY/name
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates the device-specific name of
 		Count Y. If possible, this should match the name of the
@@ -156,7 +156,7 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/countY/preset
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		If the counter device supports preset registers -- registers
 		used to load counter channels to a set count upon device-defined
@@ -165,14 +165,14 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/countY/preset_enable
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Whether channel Y counter preset operation is enabled. Valid
 		attribute values are boolean.
 
 What:		/sys/bus/counter/devices/counterX/countY/signalZ_action
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Action mode of Count Y for Signal Z. This attribute indicates
 		the condition of Signal Z that triggers the count function
@@ -195,7 +195,7 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/name
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates the device-specific name of
 		the Counter. This should match the name of the device as it
@@ -203,27 +203,27 @@ Description:
 
 What:		/sys/bus/counter/devices/counterX/num_counts
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates the total number of Counts
 		belonging to the Counter.
 
 What:		/sys/bus/counter/devices/counterX/num_signals
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates the total number of Signals
 		belonging to the Counter.
 
 What:		/sys/bus/counter/devices/counterX/signalY/signal
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Signal data of Signal Y represented as a string.
 
 What:		/sys/bus/counter/devices/counterX/signalY/name
 KernelVersion:	5.2
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		Read-only attribute that indicates the device-specific name of
 		Signal Y. If possible, this should match the name of the

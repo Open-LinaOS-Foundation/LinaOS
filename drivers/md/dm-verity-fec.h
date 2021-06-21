@@ -9,7 +9,7 @@
 #define DM_VERITY_FEC_H
 
 #include "dm-verity.h"
-#include <linux/rslib.h>
+#include <linaos/rslib.h>
 
 /* Reed-Solomon(M, N) parameters */
 #define DM_VERITY_FEC_RSM		255

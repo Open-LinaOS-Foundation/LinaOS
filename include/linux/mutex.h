@@ -12,13 +12,13 @@
 #define __LINUX_MUTEX_H
 
 #include <asm/current.h>
-#include <linux/list.h>
-#include <linux/spinlock_types.h>
-#include <linux/lockdep.h>
-#include <linux/atomic.h>
+#include <linaos/list.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/lockdep.h>
+#include <linaos/atomic.h>
 #include <asm/processor.h>
-#include <linux/osq_lock.h>
-#include <linux/debug_locks.h>
+#include <linaos/osq_lock.h>
+#include <linaos/debug_locks.h>
 
 struct ww_class;
 struct ww_acquire_ctx;

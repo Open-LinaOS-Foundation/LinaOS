@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux efs-filesystem routines.
+# Makefile for the linaos efs-filesystem routines.
 #
 
 obj-$(CONFIG_EFS_FS) += efs.o

@@ -31,7 +31,7 @@ The 2.6 kernel contains a set of functions (implemented by Alexander Viro)
 which are designed to make it easy for virtual file creators to get it
 right.
 
-The seq_file interface is available via <linux/seq_file.h>. There are
+The seq_file interface is available via <linaos/seq_file.h>. There are
 three aspects to seq_file:
 
      * An iterator interface which lets a virtual file implementation

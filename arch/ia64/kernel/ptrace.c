@@ -10,25 +10,25 @@
  *
  * Derived from the x86 and Alpha versions.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
-#include <linux/tracehook.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/security.h>
+#include <linaos/audit.h>
+#include <linaos/signal.h>
+#include <linaos/regset.h>
+#include <linaos/elf.h>
+#include <linaos/tracehook.h>
 
 #include <asm/processor.h>
 #include <asm/ptrace_offsets.h>
 #include <asm/rse.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unwind.h>
 
 #include "entry.h"

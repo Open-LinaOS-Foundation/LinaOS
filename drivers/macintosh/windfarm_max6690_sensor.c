@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2005 Paul Mackerras, IBM Corp. <paulus@samba.org>
  */
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
 #include <asm/prom.h>
 #include <asm/pmac_low_i2c.h>
 

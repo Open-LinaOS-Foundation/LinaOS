@@ -7,11 +7,11 @@
  * Data parsing taken from elousb driver by Vojtech Pavlik.
  */
 
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linaos/hid.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/workqueue.h>
 
 #include "hid-ids.h"
 

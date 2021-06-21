@@ -7,7 +7,7 @@
  */
 
 
-#include <linux/efi.h>
+#include <linaos/efi.h>
 #include <asm/efi.h>
 #include <asm/memory.h>
 #include <asm/sections.h>
@@ -37,7 +37,7 @@ efi_status_t check_platform_features(void)
 /*
  * Although relocatable kernels can fix up the misalignment with respect to
  * MIN_KIMG_ALIGN, the resulting virtual text addresses are subtly out of
- * sync with those recorded in the vmlinux when kaslr is disabled but the
+ * sync with those recorded in the vmlinaos when kaslr is disabled but the
  * image required relocation anyway. Therefore retain 2M alignment unless
  * KASLR is in use.
  */

@@ -20,13 +20,13 @@
  *  2003-08-11	Resource Management Updates - Adam Belay <ambx1@neo.rr.com>
  */
 
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/isapnp.h>
-#include <linux/mutex.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/isapnp.h>
+#include <linaos/mutex.h>
 #include <asm/io.h>
 
 #include "../base.h"

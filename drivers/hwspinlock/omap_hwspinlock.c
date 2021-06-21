@@ -10,18 +10,18 @@
  *          Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/hwspinlock.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/hwspinlock.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 #include "hwspinlock_internal.h"
 

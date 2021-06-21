@@ -34,11 +34,11 @@
 /*-************************************
  *	Dependencies
  **************************************/
-#include <linux/lz4.h>
+#include <linaos/lz4.h>
 #include "lz4defs.h"
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h> /* memset */
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h> /* memset */
 
 /* *************************************
  *	Local Constants and types

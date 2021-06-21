@@ -88,30 +88,30 @@
  * See the file Documentation/i2c/busses/i2c-i801.rst for details.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/itco_wdt.h>
-#include <linux/pm_runtime.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-smbus.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
+#include <linaos/dmi.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/wait.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/itco_wdt.h>
+#include <linaos/pm_runtime.h>
 
 #if IS_ENABLED(CONFIG_I2C_MUX_GPIO) && defined CONFIG_DMI
-#include <linux/gpio/machine.h>
-#include <linux/platform_data/i2c-mux-gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/platform_data/i2c-mux-gpio.h>
 #endif
 
 /* I801 SMBus address offsets */
@@ -206,7 +206,7 @@
 #define STATUS_FLAGS		(SMBHSTSTS_BYTE_DONE | SMBHSTSTS_INTR | \
 				 STATUS_ERROR_FLAGS)
 
-/* Older devices have their ID defined in <linux/pci_ids.h> */
+/* Older devices have their ID defined in <linaos/pci_ids.h> */
 #define PCI_DEVICE_ID_INTEL_COMETLAKE_SMBUS		0x02a3
 #define PCI_DEVICE_ID_INTEL_COMETLAKE_H_SMBUS		0x06a3
 #define PCI_DEVICE_ID_INTEL_BAYTRAIL_SMBUS		0x0f12

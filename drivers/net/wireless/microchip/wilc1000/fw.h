@@ -7,7 +7,7 @@
 #ifndef WILC_FW_H
 #define WILC_FW_H
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #define WILC_MAX_NUM_STA			9
 #define WILC_MAX_RATES_SUPPORTED		12

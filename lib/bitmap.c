@@ -4,19 +4,19 @@
  * Helper functions for bitmap.h.
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
-#include <linux/uaccess.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/ctype.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/thread_info.h>
+#include <linaos/uaccess.h>
 
 #include <asm/page.h>
 

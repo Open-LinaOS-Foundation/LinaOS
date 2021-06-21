@@ -3,23 +3,23 @@
 // Copyright (c) 2012-2014 Samsung Electronics Co., Ltd
 //              http://www.samsung.com
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/samsung/core.h>
-#include <linux/mfd/samsung/s2mps11.h>
-#include <linux/mfd/samsung/s2mps13.h>
-#include <linux/mfd/samsung/s2mps14.h>
-#include <linux/mfd/samsung/s2mps15.h>
-#include <linux/mfd/samsung/s2mpu02.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/mfd/samsung/core.h>
+#include <linaos/mfd/samsung/s2mps11.h>
+#include <linaos/mfd/samsung/s2mps13.h>
+#include <linaos/mfd/samsung/s2mps14.h>
+#include <linaos/mfd/samsung/s2mps15.h>
+#include <linaos/mfd/samsung/s2mpu02.h>
 
 /* The highest number of possible regulators for supported devices. */
 #define S2MPS_REGULATOR_MAX		S2MPS13_REGULATOR_MAX

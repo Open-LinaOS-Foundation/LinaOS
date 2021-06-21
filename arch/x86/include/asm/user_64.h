@@ -33,7 +33,7 @@
 
 /*
  * Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  *
  * Provide support for the GDB 5.0+ PTRACE_{GET|SET}FPXREGS requests for
  * interacting with the FXSR-format floating point environment.  Floating

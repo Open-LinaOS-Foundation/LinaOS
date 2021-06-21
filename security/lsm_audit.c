@@ -2,32 +2,32 @@
 /*
  * common LSM auditing functions
  *
- * Based on code written for SELinux by :
+ * Based on code written for SELinaOS by :
  *			Stephen Smalley, <sds@tycho.nsa.gov>
  * 			James Morris <jmorris@redhat.com>
  * Author : Etienne Basset, <etienne.basset@ensta.org>
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
 #include <net/sock.h>
-#include <linux/un.h>
+#include <linaos/un.h>
 #include <net/af_unix.h>
-#include <linux/audit.h>
-#include <linux/ipv6.h>
-#include <linux/ip.h>
+#include <linaos/audit.h>
+#include <linaos/ipv6.h>
+#include <linaos/ip.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/dccp.h>
-#include <linux/sctp.h>
-#include <linux/lsm_audit.h>
-#include <linux/security.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/dccp.h>
+#include <linaos/sctp.h>
+#include <linaos/lsm_audit.h>
+#include <linaos/security.h>
 
 /**
  * ipv4_skb_to_auditdata : fill auditdata from skb

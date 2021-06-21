@@ -6,13 +6,13 @@
  *           (C) 2017 Anju T Sudhakar, IBM Corporation.
  *           (C) 2017 Hemant K Shaw, IBM Corporation.
  */
-#include <linux/perf_event.h>
-#include <linux/slab.h>
+#include <linaos/perf_event.h>
+#include <linaos/slab.h>
 #include <asm/opal.h>
 #include <asm/imc-pmu.h>
 #include <asm/cputhreads.h>
 #include <asm/smp.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 /* Nest IMC data structures and variables */
 

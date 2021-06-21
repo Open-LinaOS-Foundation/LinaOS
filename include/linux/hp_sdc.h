@@ -38,10 +38,10 @@
 #ifndef _LINUX_HP_SDC_H
 #define _LINUX_HP_SDC_H
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
+#include <linaos/timer.h>
 #if defined(__hppa__)
 #include <asm/hardware.h>
 #endif

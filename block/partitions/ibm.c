@@ -2,19 +2,19 @@
 /*
  * Author(s)......: Holger Smolinski <Holger.Smolinski@de.ibm.com>
  *                  Volker Sameske <sameske@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <LinaOS390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2012
  */
 
-#include <linux/buffer_head.h>
-#include <linux/hdreg.h>
-#include <linux/slab.h>
+#include <linaos/buffer_head.h>
+#include <linaos/hdreg.h>
+#include <linaos/slab.h>
 #include <asm/dasd.h>
 #include <asm/ebcdic.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/vtoc.h>
-#include <linux/module.h>
-#include <linux/dasd_mod.h>
+#include <linaos/module.h>
+#include <linaos/dasd_mod.h>
 
 #include "check.h"
 

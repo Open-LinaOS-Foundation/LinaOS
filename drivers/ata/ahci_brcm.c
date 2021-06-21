@@ -5,19 +5,19 @@
  * Copyright © 2009-2015 Broadcom Corporation
  */
 
-#include <linux/ahci_platform.h>
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/string.h>
+#include <linaos/ahci_platform.h>
+#include <linaos/compiler.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/libata.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/string.h>
 
 #include "ahci.h"
 

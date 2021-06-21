@@ -535,7 +535,7 @@ __END__
 
 =head1 NAME
 
-get_feat.pl - parse the Linux Feature files and produce a ReST book.
+get_feat.pl - parse the LinaOS Feature files and produce a ReST book.
 
 =head1 SYNOPSIS
 
@@ -597,7 +597,7 @@ Prints the manual page and exits.
 
 =head1 DESCRIPTION
 
-Parse the Linux feature files from Documentation/features (by default),
+Parse the LinaOS feature files from Documentation/features (by default),
 optionally producing results at ReST format.
 
 It supports output data per architecture, per feature or a

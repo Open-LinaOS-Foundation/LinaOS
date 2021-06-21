@@ -1,12 +1,12 @@
 What:		/dev/fw[0-9]+
 Date:		May 2007
 KernelVersion:	2.6.22
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 		The character device files /dev/fw* are the interface between
 		firewire-core and IEEE 1394 device drivers implemented in
 		userspace.  The ioctl(2)- and read(2)-based ABI is defined and
-		documented in <linux/firewire-cdev.h>.
+		documented in <linaos/firewire-cdev.h>.
 
 		This ABI offers most of the features which firewire-core also
 		exposes to kernelspace IEEE 1394 drivers.
@@ -67,7 +67,7 @@ Description:
 		ioctl(2)
 		    Initiate various actions.  Some take immediate effect, others
 		    are performed asynchronously while or after the ioctl returns.
-		    See the inline documentation in <linux/firewire-cdev.h> for
+		    See the inline documentation in <linaos/firewire-cdev.h> for
 		    descriptions of all ioctls.
 
 		poll(2), select(2), epoll_wait(2) etc.
@@ -79,7 +79,7 @@ Description:
 		    buffer completion, and unsolicited events such as bus resets,
 		    request reception, or PHY packet reception.  Always use a read
 		    buffer which is large enough to receive the largest event that
-		    could ever arrive.  See <linux/firewire-cdev.h> for descriptions
+		    could ever arrive.  See <linaos/firewire-cdev.h> for descriptions
 		    of all event types and for which ioctls affect reception of
 		    events.
 
@@ -108,4 +108,4 @@ Description:
 Users:		libraw1394;
 		libdc1394;
 		libhinawa;
-		tools like linux-firewire-utils, fwhack, ...
+		tools like linaos-firewire-utils, fwhack, ...

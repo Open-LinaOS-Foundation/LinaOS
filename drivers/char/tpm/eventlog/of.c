@@ -3,16 +3,16 @@
  * Copyright 2012 IBM Corporation
  *
  * Author: Ashley Lai <ashleydlai@gmail.com>
- *         Nayna Jain <nayna@linux.vnet.ibm.com>
+ *         Nayna Jain <nayna@linaos.vnet.ibm.com>
  *
  * Maintained by: <tpmdd-devel@lists.sourceforge.net>
  *
  * Read the event log created by the firmware on PPC64
  */
 
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/tpm_eventlog.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/tpm_eventlog.h>
 
 #include "../tpm.h"
 #include "common.h"
@@ -35,8 +35,8 @@ int tpm_read_log_of(struct tpm_chip *chip)
 	if (of_property_read_bool(np, "powered-while-suspended"))
 		chip->flags |= TPM_CHIP_FLAG_ALWAYS_POWERED;
 
-	sizep = of_get_property(np, "linux,sml-size", NULL);
-	basep = of_get_property(np, "linux,sml-base", NULL);
+	sizep = of_get_property(np, "linaos,sml-size", NULL);
+	basep = of_get_property(np, "linaos,sml-base", NULL);
 	if (sizep == NULL && basep == NULL)
 		return -ENODEV;
 	if (sizep == NULL || basep == NULL)

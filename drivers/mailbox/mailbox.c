@@ -6,17 +6,17 @@
  * Author: Jassi Brar <jassisinghbrar@gmail.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/bitops.h>
-#include <linux/mailbox_client.h>
-#include <linux/mailbox_controller.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/bitops.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/mailbox_controller.h>
 
 #include "mailbox.h"
 

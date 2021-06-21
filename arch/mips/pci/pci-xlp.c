@@ -32,15 +32,15 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/console.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/msi.h>
+#include <linaos/mm.h>
+#include <linaos/irq.h>
+#include <linaos/irqdesc.h>
+#include <linaos/console.h>
 
 #include <asm/io.h>
 

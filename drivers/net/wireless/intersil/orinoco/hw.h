@@ -5,8 +5,8 @@
 #ifndef _ORINOCO_HW_H_
 #define _ORINOCO_HW_H_
 
-#include <linux/types.h>
-#include <linux/wireless.h>
+#include <linaos/types.h>
+#include <linaos/wireless.h>
 #include <net/cfg80211.h>
 
 /* Hardware BAPs */

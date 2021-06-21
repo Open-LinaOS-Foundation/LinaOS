@@ -3,7 +3,7 @@
 #define _ASM_POWERPC_DELAY_H
 #ifdef __KERNEL__
 
-#include <linux/processor.h>
+#include <linaos/processor.h>
 #include <asm/time.h>
 
 /*

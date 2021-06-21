@@ -4,14 +4,14 @@
  *             https://www.huawei.com/
  * Created by Gao Xiang <gaoxiang25@huawei.com>
  */
-#include <linux/module.h>
-#include <linux/buffer_head.h>
-#include <linux/statfs.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/crc32c.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <linaos/module.h>
+#include <linaos/buffer_head.h>
+#include <linaos/statfs.h>
+#include <linaos/parser.h>
+#include <linaos/seq_file.h>
+#include <linaos/crc32c.h>
+#include <linaos/fs_context.h>
+#include <linaos/fs_parser.h>
 #include "xattr.h"
 
 #define CREATE_TRACE_POINTS

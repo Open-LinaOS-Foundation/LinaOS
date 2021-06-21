@@ -9,7 +9,7 @@
 #define __NFC_LLC_H_
 
 #include <net/nfc/hci.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 #define LLC_NOP_NAME "nop"
 #define LLC_SHDLC_NAME "shdlc"

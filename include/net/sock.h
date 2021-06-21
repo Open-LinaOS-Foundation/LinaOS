@@ -35,38 +35,38 @@
 #ifndef _SOCK_H
 #define _SOCK_H
 
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/list_nulls.h>
-#include <linux/timer.h>
-#include <linux/cache.h>
-#include <linux/bitops.h>
-#include <linux/lockdep.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>	/* struct sk_buff */
-#include <linux/mm.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/page_counter.h>
-#include <linux/memcontrol.h>
-#include <linux/static_key.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/cgroup-defs.h>
-#include <linux/rbtree.h>
-#include <linux/filter.h>
-#include <linux/rculist_nulls.h>
-#include <linux/poll.h>
-#include <linux/sockptr.h>
-#include <linux/indirect_call_wrapper.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <linaos/hardirq.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/list_nulls.h>
+#include <linaos/timer.h>
+#include <linaos/cache.h>
+#include <linaos/bitops.h>
+#include <linaos/lockdep.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>	/* struct sk_buff */
+#include <linaos/mm.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/page_counter.h>
+#include <linaos/memcontrol.h>
+#include <linaos/static_key.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/cgroup-defs.h>
+#include <linaos/rbtree.h>
+#include <linaos/filter.h>
+#include <linaos/rculist_nulls.h>
+#include <linaos/poll.h>
+#include <linaos/sockptr.h>
+#include <linaos/indirect_call_wrapper.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
 #include <net/dst.h>
 #include <net/checksum.h>
 #include <net/tcp_states.h>
-#include <linux/net_tstamp.h>
+#include <linaos/net_tstamp.h>
 #include <net/l3mdev.h>
 
 /*

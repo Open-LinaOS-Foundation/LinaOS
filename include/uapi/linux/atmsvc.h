@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* atmsvc.h - ATM signaling kernel-demon interface definitions */
  
 /* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
@@ -7,9 +7,9 @@
 #ifndef _LINUX_ATMSVC_H
 #define _LINUX_ATMSVC_H
 
-#include <linux/atmapi.h>
-#include <linux/atm.h>
-#include <linux/atmioc.h>
+#include <linaos/atmapi.h>
+#include <linaos/atm.h>
+#include <linaos/atmioc.h>
 
 
 #define ATMSIGD_CTRL _IO('a',ATMIOC_SPECIAL)
@@ -39,7 +39,7 @@ struct atmsvc_msg {
 } __ATM_API_ALIGN;
 
 /*
- * Message contents: see ftp://icaftp.epfl.ch/pub/linux/atm/docs/isp-*.tar.gz
+ * Message contents: see ftp://icaftp.epfl.ch/pub/linaos/atm/docs/isp-*.tar.gz
  */
 
 /*

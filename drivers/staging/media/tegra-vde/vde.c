@@ -6,19 +6,19 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/dma-buf.h>
-#include <linux/genalloc.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/clk.h>
+#include <linaos/dma-buf.h>
+#include <linaos/genalloc.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <soc/tegra/pmc.h>
 

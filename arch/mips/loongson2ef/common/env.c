@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Based on Ocelot Linux port, which is
+ * Based on Ocelot LinaOS port, which is
  * Copyright 2001 MontaVista Software Inc.
  * Author: jsun@mvista.com or jsun@junsun.net
  *
@@ -13,7 +13,7 @@
  * Copyright (C) 2009 Lemote Inc.
  * Author: Wu Zhangjin, wuzhangjin@gmail.com
  */
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <asm/bootinfo.h>
 #include <asm/fw/fw.h>
 #include <loongson.h>

@@ -6,7 +6,7 @@
 #ifndef _INTEL_RENDERSTATE_H_
 #define _INTEL_RENDERSTATE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "i915_gem.h"
 
 struct i915_request;

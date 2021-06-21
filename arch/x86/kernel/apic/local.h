@@ -8,7 +8,7 @@
  * (c) 2002,2003 Andi Kleen, SuSE Labs.
  */
 
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 #include <asm/irq_vectors.h>
 #include <asm/apic.h>

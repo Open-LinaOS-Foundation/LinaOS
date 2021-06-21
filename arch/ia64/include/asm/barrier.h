@@ -12,7 +12,7 @@
 #ifndef _ASM_IA64_BARRIER_H
 #define _ASM_IA64_BARRIER_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /*
  * Macros to force memory ordering.  In these descriptions, "previous"

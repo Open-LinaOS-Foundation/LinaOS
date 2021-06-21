@@ -80,14 +80,14 @@ from the current review queue. Likewise for cases where patches would
 get rejected or are not applicable to the BPF trees (but assigned to
 the 'bpf' delegate).
 
-Q: How do the changes make their way into Linux?
+Q: How do the changes make their way into LinaOS?
 ------------------------------------------------
 A: There are two BPF kernel trees (git repositories). Once patches have
 been accepted by the BPF maintainers, they will be applied to one
 of the two BPF trees:
 
- * https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf.git/
- * https://git.kernel.org/pub/scm/linux/kernel/git/bpf/bpf-next.git/
+ * https://git.kernel.org/pub/scm/linaos/kernel/git/bpf/bpf.git/
+ * https://git.kernel.org/pub/scm/linaos/kernel/git/bpf/bpf-next.git/
 
 The bpf tree itself is for fixes only, whereas bpf-next for features,
 cleanups or other kind of improvements ("next-like" content). This is
@@ -283,7 +283,7 @@ please keep them in Cc as well, so they can be reviewed.
 The official git repository for iproute2 is run by Stephen Hemminger
 and can be found at:
 
-  https://git.kernel.org/pub/scm/linux/kernel/git/shemminger/iproute2.git/
+  https://git.kernel.org/pub/scm/linaos/kernel/git/shemminger/iproute2.git/
 
 The patches need to have a subject prefix of '``[PATCH iproute2
 master]``' or '``[PATCH iproute2 net-next]``'. '``master``' or
@@ -348,7 +348,7 @@ test_verifier.c) for new instructions, so that they can receive
 broad test coverage and help run-time testing the various BPF JITs.
 
 In case of new BPF instructions, once the changes have been accepted
-into the Linux kernel, please implement support into LLVM's BPF back
+into the LinaOS kernel, please implement support into LLVM's BPF back
 end. See LLVM_ section below for further information.
 
 Stable submission
@@ -357,9 +357,9 @@ Stable submission
 Q: I need a specific BPF commit in stable kernels. What should I do?
 --------------------------------------------------------------------
 A: In case you need a specific fix in stable kernels, first check whether
-the commit has already been applied in the related ``linux-*.y`` branches:
+the commit has already been applied in the related ``linaos-*.y`` branches:
 
-  https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
+  https://git.kernel.org/pub/scm/linaos/kernel/git/stable/linaos-stable.git/
 
 If not the case, then drop an email to the BPF maintainers with the
 netdev kernel mailing list in Cc and ask for the fix to be queued up:
@@ -494,7 +494,7 @@ LLVM's static compiler lists the supported targets through
      LLVM (http://llvm.org/):
        LLVM version 10.0.0
        Optimized build.
-       Default target: x86_64-unknown-linux-gnu
+       Default target: x86_64-unknown-linaos-gnu
        Host CPU: skylake
 
        Registered Targets:
@@ -590,7 +590,7 @@ For cross-compilation, a specific version can be select manually as well ::
        v2      - Select the v2 processor.
      [...]
 
-Newly added BPF instructions to the Linux kernel need to follow the same
+Newly added BPF instructions to the LinaOS kernel need to follow the same
 scheme, bump the instruction set version and implement probing for the
 extensions such that ``-mcpu=probe`` users can benefit from the
 optimization transparently when upgrading their kernels.
@@ -660,7 +660,7 @@ when:
 .. _Documentation/process/: https://www.kernel.org/doc/html/latest/process/
 .. _netdev-FAQ: ../networking/netdev-FAQ.rst
 .. _selftests:
-   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/testing/selftests/bpf/
+   https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/tree/tools/testing/selftests/bpf/
 .. _Documentation/dev-tools/kselftest.rst:
    https://www.kernel.org/doc/html/latest/dev-tools/kselftest.html
 .. _Documentation/bpf/btf.rst: btf.rst

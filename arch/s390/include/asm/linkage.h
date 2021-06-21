@@ -3,7 +3,7 @@
 #define __ASM_LINKAGE_H
 
 #include <asm/asm-const.h>
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #define __ALIGN .align 4, 0x07
 #define __ALIGN_STR __stringify(__ALIGN)

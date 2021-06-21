@@ -6,7 +6,7 @@
 #ifndef _MLX5_ESWITCH_
 #define _MLX5_ESWITCH_
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 #include <net/devlink.h>
 
 #define MLX5_ESWITCH_MANAGER(mdev) MLX5_CAP_GEN(mdev, eswitch_manager)

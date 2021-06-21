@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 =====================================================================
-Linux Base Driver for 10 Gigabit Intel(R) Ethernet Network Connection
+LinaOS Base Driver for 10 Gigabit Intel(R) Ethernet Network Connection
 =====================================================================
 
 October 1, 2018
@@ -23,20 +23,20 @@ Contents
 In This Release
 ===============
 
-This file describes the ixgb Linux Base Driver for the 10 Gigabit Intel(R)
+This file describes the ixgb LinaOS Base Driver for the 10 Gigabit Intel(R)
 Network Connection.  This driver includes support for Itanium(R)2-based
 systems.
 
 For questions related to hardware requirements, refer to the documentation
 supplied with your 10 Gigabit adapter.  All hardware requirements listed apply
-to use with Linux.
+to use with LinaOS.
 
 The following features are available in this kernel:
  - Native VLANs
  - Channel Bonding (teaming)
  - SNMP
 
-Channel Bonding documentation can be found in the Linux kernel source:
+Channel Bonding documentation can be found in the LinaOS kernel source:
 /Documentation/networking/bonding.rst
 
 The driver information previously displayed in the /proc filesystem is not
@@ -199,12 +199,12 @@ IntDelayEnable
 Improving Performance
 =====================
 
-With the 10 Gigabit server adapters, the default Linux configuration will
+With the 10 Gigabit server adapters, the default LinaOS configuration will
 very likely limit the total available throughput artificially.  There is a set
 of configuration changes that, when applied together, will increase the ability
-of Linux to transmit and receive data.  The following enhancements were
+of LinaOS to transmit and receive data.  The following enhancements were
 originally acquired from settings published at https://www.spec.org/web99/ for
-various submitted results using Linux.
+various submitted results using LinaOS.
 
 NOTE:
   These changes are only suggestions, and serve as a starting point for
@@ -293,7 +293,7 @@ NOTE:
 Resolving Slow UDP Traffic
 --------------------------
 If your server does not seem to be able to receive UDP traffic as fast as it
-can receive TCP traffic, it could be because Linux, by default, does not set
+can receive TCP traffic, it could be because LinaOS, by default, does not set
 the network stack buffers as large as they need to be to support high UDP
 transfer rates.  One way to alleviate this problem is to allow more memory to
 be used by the IP stack to store incoming data.
@@ -320,11 +320,11 @@ Configuring the Driver on Different Distributions
 Configuring a network driver to load properly when the system is started is
 distribution dependent. Typically, the configuration process involves adding
 an alias line to /etc/modprobe.conf as well as editing other system startup
-scripts and/or configuration files.  Many popular Linux distributions ship
+scripts and/or configuration files.  Many popular LinaOS distributions ship
 with tools to make these changes for you.  To learn the proper way to
 configure a network device for your system, refer to your distribution
 documentation.  If during this process you are asked for the driver or module
-name, the name for the Linux Base Driver for the Intel 10GbE Family of
+name, the name for the LinaOS Base Driver for the Intel 10GbE Family of
 Adapters is ixgb.
 
 Viewing Link Messages
@@ -367,7 +367,7 @@ NAPI
 ----
 NAPI (Rx polling mode) is supported in the ixgb driver.
 
-See https://wiki.linuxfoundation.org/networking/napi for more information on
+See https://wiki.linaosfoundation.org/networking/napi for more information on
 NAPI.
 
 
@@ -402,7 +402,7 @@ this situation occurs, using a different cable assembly may resolve the issue.
 
 Jumbo Frames System Requirement
 -------------------------------
-Memory allocation failures have been observed on Linux systems with 64 MB
+Memory allocation failures have been observed on LinaOS systems with 64 MB
 of RAM or less that are running Jumbo Frames.  If you are using Jumbo
 Frames, your system may require more than the advertised minimum
 requirement of 64 MB of system memory.
@@ -412,7 +412,7 @@ Performance Degradation with Jumbo Frames
 Degradation in throughput performance may be observed in some Jumbo frames
 environments.  If this is observed, increasing the application's socket buffer
 size and/or increasing the /proc/sys/net/ipv4/tcp_*mem entry values may help.
-See the specific application manual and /usr/src/linux*/Documentation/
+See the specific application manual and /usr/src/linaos*/Documentation/
 networking/ip-sysctl.txt for more details.
 
 Allocating Rx Buffers when Using Jumbo Frames
@@ -425,7 +425,7 @@ increasing /proc/sys/vm/min_free_kbytes.
 
 Multiple Interfaces on Same Ethernet Broadcast Network
 ------------------------------------------------------
-Due to the default ARP behavior on Linux, it is not possible to have
+Due to the default ARP behavior on LinaOS, it is not possible to have
 one system on two IP networks in the same Ethernet broadcast domain
 (non-partitioned switch) behave as expected.  All Ethernet interfaces
 will respond to IP traffic for any IP address assigned to the system.
@@ -442,7 +442,7 @@ If you have multiple interfaces in a server, do either of the following:
 
 UDP Stress Test Dropped Packet Issue
 --------------------------------------
-Under small packets UDP stress test with 10GbE driver, the Linux system
+Under small packets UDP stress test with 10GbE driver, the LinaOS system
 may drop UDP packets due to the fullness of socket buffers. You may want
 to change the driver's Flow Control variables to the minimum value for
 controlling packet reception.

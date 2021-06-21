@@ -5,17 +5,17 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitfield.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/iio/iio.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
 /* register map */
 #define LTC2983_STATUS_REG			0x0000

@@ -2,7 +2,7 @@
 #ifndef _MXS_DMA_H_
 #define _MXS_DMA_H_
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 #define MXS_DMA_CTRL_WAIT4END	BIT(31)
 #define MXS_DMA_CTRL_WAIT4RDY	BIT(30)

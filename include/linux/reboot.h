@@ -3,8 +3,8 @@
 #define _LINUX_REBOOT_H
 
 
-#include <linux/notifier.h>
-#include <uapi/linux/reboot.h>
+#include <linaos/notifier.h>
+#include <uapi/linaos/reboot.h>
 
 struct device;
 

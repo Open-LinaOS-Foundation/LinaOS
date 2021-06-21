@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2001,2002 Patrick Mochel
  * Copyright (c) 2004 Silicon Graphics, Inc.
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE LinaOS Products GmbH
  * Copyright (c) 2007 Tejun Heo <teheo@suse.de>
  *
  * Please see Documentation/filesystems/sysfs.rst for more information.
@@ -13,14 +13,14 @@
 #ifndef _SYSFS_H_
 #define _SYSFS_H_
 
-#include <linux/kernfs.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/kobject_ns.h>
-#include <linux/stat.h>
-#include <linux/atomic.h>
+#include <linaos/kernfs.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
+#include <linaos/lockdep.h>
+#include <linaos/kobject_ns.h>
+#include <linaos/stat.h>
+#include <linaos/atomic.h>
 
 struct kobject;
 struct module;
@@ -93,7 +93,7 @@ struct attribute_group {
 
 /*
  * Use these macros to make defining attributes easier.
- * See include/linux/device.h for examples..
+ * See include/linaos/device.h for examples..
  */
 
 #define SYSFS_PREALLOC 010000

@@ -8,9 +8,9 @@
 #ifndef _LRU_LIST_H
 #define _LRU_LIST_H
 
-#include <linux/list.h>
-#include <linux/nodemask.h>
-#include <linux/shrinker.h>
+#include <linaos/list.h>
+#include <linaos/nodemask.h>
+#include <linaos/shrinker.h>
 
 struct mem_cgroup;
 

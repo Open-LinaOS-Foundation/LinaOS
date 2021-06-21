@@ -7,7 +7,7 @@
 
 #ifndef _IIO_SIMPLE_DUMMY_H_
 #define _IIO_SIMPLE_DUMMY_H_
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 struct iio_dummy_accel_calibscale;
 struct iio_dummy_regs;

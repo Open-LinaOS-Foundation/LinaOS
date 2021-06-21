@@ -1,5 +1,5 @@
 /*
- * This is based on sun4i-a10-olinuxino-lime.dts
+ * This is based on sun4i-a10-olinaosino-lime.dts
  *
  * Copyright 2014 - Hans de Goede <hdegoede@redhat.com>
  * Copyright (c) 2014 FUKAUMI Naoki <naobsd@gmail.com>
@@ -52,7 +52,7 @@
 
 / {
 	model = "Olimex A20-OLinuXino-LIME";
-	compatible = "olimex,a20-olinuxino-lime", "allwinner,sun7i-a20";
+	compatible = "olimex,a20-olinaosino-lime", "allwinner,sun7i-a20";
 
 	aliases {
 		serial0 = &uart0;
@@ -76,10 +76,10 @@
 	leds {
 		compatible = "gpio-leds";
 		pinctrl-names = "default";
-		pinctrl-0 = <&led_pins_olinuxinolime>;
+		pinctrl-0 = <&led_pins_olinaosinolime>;
 
 		led {
-			label = "a20-olinuxino-lime:green:usr";
+			label = "a20-olinaosino-lime:green:usr";
 			gpios = <&pio 7 2 GPIO_ACTIVE_HIGH>;
 			default-state = "on";
 		};
@@ -171,7 +171,7 @@
 };
 
 &pio {
-	led_pins_olinuxinolime: led-pins {
+	led_pins_olinaosinolime: led-pins {
 		pins = "PH2";
 		function = "gpio_out";
 		drive-strength = <20>;

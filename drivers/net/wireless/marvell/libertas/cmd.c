@@ -4,12 +4,12 @@
  * It prepares command and sends it to firmware when it is ready.
  */
 
-#include <linux/hardirq.h>
-#include <linux/kfifo.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/if_arp.h>
-#include <linux/export.h>
+#include <linaos/hardirq.h>
+#include <linaos/kfifo.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/if_arp.h>
+#include <linaos/export.h>
 
 #include "decl.h"
 #include "cfg.h"

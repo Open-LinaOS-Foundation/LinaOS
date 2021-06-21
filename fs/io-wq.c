@@ -5,17 +5,17 @@
  * Copyright (C) 2019 Jens Axboe
  *
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/rculist_nulls.h>
-#include <linux/cpu.h>
-#include <linux/tracehook.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/rculist_nulls.h>
+#include <linaos/cpu.h>
+#include <linaos/tracehook.h>
 
 #include "io-wq.h"
 

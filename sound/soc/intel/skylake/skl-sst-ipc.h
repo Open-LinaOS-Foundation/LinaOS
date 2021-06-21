@@ -8,7 +8,7 @@
 #ifndef __SKL_IPC_H
 #define __SKL_IPC_H
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 #include "../common/sst-ipc.h"
 #include "skl-sst-dsp.h"
 

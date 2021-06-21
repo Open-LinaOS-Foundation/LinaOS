@@ -10,25 +10,25 @@
  * Copyright (c) 2011 Analog Devices Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/debugfs.h>
+#include <linaos/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/imu/adis.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/imu/adis.h>
 
 #define ADIS16400_STARTUP_DELAY	290 /* ms */
 #define ADIS16400_MTEST_DELAY 90 /* ms */

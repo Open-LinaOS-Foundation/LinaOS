@@ -9,10 +9,10 @@
 
 #include "main.h"
 
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
+#include <uapi/linaos/batadv_packet.h>
 
 #ifdef CONFIG_BATMAN_ADV_NC
 

@@ -9,9 +9,9 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/inetdevice.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/inetdevice.h>
 #include <net/dst.h>
 #include <net/xfrm.h>
 #include <net/ip.h>

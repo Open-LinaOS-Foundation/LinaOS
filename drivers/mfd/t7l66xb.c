@@ -19,17 +19,17 @@
  * PCMCIA interface logic
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mfd/t7l66xb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/mfd/t7l66xb.h>
 
 enum {
 	T7L66XB_CELL_NAND,

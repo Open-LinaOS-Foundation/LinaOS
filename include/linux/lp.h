@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * usr/include/linux/lp.h c.1991-1992 James Wiegand
+ * usr/include/linaos/lp.h c.1991-1992 James Wiegand
  * many modifications copyright (C) 1992 Michael K. Johnson
  * Interrupt support added 1993 Nigel Gamble
  * Removed 8255 status defines from inside __KERNEL__ Marcelo Tosatti 
@@ -9,9 +9,9 @@
 #define _LINUX_LP_H
 
 
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <uapi/linux/lp.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
+#include <uapi/linaos/lp.h>
 
 /* Magic numbers for defining port-device mappings */
 #define LP_PARPORT_UNSPEC -4

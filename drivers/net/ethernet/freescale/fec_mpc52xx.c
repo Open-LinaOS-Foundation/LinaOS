@@ -16,35 +16,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/crc32.h>
+#include <linaos/hardirq.h>
+#include <linaos/delay.h>
+#include <linaos/of_device.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
 
 #include <asm/io.h>
 #include <asm/delay.h>
 #include <asm/mpc52xx.h>
 
-#include <linux/fsl/bestcomm/bestcomm.h>
-#include <linux/fsl/bestcomm/fec.h>
+#include <linaos/fsl/bestcomm/bestcomm.h>
+#include <linaos/fsl/bestcomm/fec.h>
 
 #include "fec_mpc52xx.h"
 

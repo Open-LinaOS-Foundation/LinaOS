@@ -20,7 +20,7 @@ supported mechanisms are:
 
   lock_dlm
     - uses the distributed lock manager (dlm) for inter-node locking.
-      The dlm is found at linux/fs/dlm/
+      The dlm is found at linaos/fs/dlm/
 
 lock_dlm depends on user space cluster management systems found
 at the URL above.

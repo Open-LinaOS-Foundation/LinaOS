@@ -8,8 +8,8 @@
 #ifndef __NAL_HEVC_H__
 #define __NAL_HEVC_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 #include <media/v4l2-ctrls.h>
 
 struct nal_hevc_profile_tier_level {

@@ -9,7 +9,7 @@
  *
  * Based on:
  *
- *  linux/arch/m68k/kernel/entry.S
+ *  linaos/arch/m68k/kernel/entry.S
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -17,16 +17,16 @@
  * License.  See the file README.legal in the main directory of this archive
  * for more details.
  *
- * Linux/m68k support by Hamish Macdonald
+ * LinaOS/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  * ColdFire support by Greg Ungerer (gerg@snapgear.com)
  * 5307 fixes by David W. Miller
- * linux 2.4 support David McCullough <davidm@snapgear.com>
+ * linaos 2.4 support David McCullough <davidm@snapgear.com>
  * Bug, speed and maintainability fixes by Philippe De Muyter <phdm@macqel.be>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/unistd.h>
 #include <asm/thread_info.h>
 #include <asm/errno.h>

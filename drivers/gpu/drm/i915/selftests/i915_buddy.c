@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
+#include <linaos/prime_numbers.h>
 
 #include "../i915_selftest.h"
 #include "i915_random.h"

@@ -11,11 +11,11 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/err.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
 
 #include "u_serial.h"
 

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-mmp/devices.c
+ * linaos/arch/arm/mach-mmp/devices.c
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
 
 #include <asm/irq.h>
 #include "irqs.h"
 #include "devices.h"
-#include <linux/soc/mmp/cputype.h>
+#include <linaos/soc/mmp/cputype.h>
 #include "regs-usb.h"
 
 int __init pxa_register_device(struct pxa_device_desc *desc,

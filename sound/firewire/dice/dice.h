@@ -9,20 +9,20 @@
 #ifndef SOUND_DICE_H_INCLUDED
 #define SOUND_DICE_H_INCLUDED
 
-#include <linux/compat.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
+#include <linaos/compat.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/sched/signal.h>
 
 #include <sound/control.h>
 #include <sound/core.h>

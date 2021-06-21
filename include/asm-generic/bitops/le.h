@@ -5,7 +5,7 @@
 #include <asm-generic/bitops/find.h>
 #include <asm/types.h>
 #include <asm/byteorder.h>
-#include <linux/swab.h>
+#include <linaos/swab.h>
 
 #if defined(__LITTLE_ENDIAN)
 

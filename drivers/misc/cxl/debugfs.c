@@ -3,9 +3,9 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #include "cxl.h"
 

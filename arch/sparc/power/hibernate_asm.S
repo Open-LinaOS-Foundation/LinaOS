@@ -5,7 +5,7 @@
  * Copyright (C) 2013 Kirill V Tkhai (tkhai@yandex.ru)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/asm-offsets.h>
 #include <asm/cpudata.h>

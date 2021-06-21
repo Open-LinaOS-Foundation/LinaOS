@@ -5,18 +5,18 @@
  * Copyright 2018 Analog Devices Inc.
  */
 
-#include <linux/bits.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/bits.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spi/spi.h>
 
 #define ADI_SPI_IF_CONFIG_A		0x00
 #define ADI_SPI_IF_CONFIG_B		0x01

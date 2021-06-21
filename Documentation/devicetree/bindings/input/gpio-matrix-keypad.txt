@@ -14,13 +14,13 @@ Required Properties:
 - col-gpios:		List of gpios used as column lines. The gpio specifier
 			for this property depends on the gpio controller to
 			which these column lines are connected.
-- linux,keymap:		The definition can be found at
+- linaos,keymap:		The definition can be found at
 			bindings/input/matrix-keymap.txt
 
 Optional Properties:
-- linux,no-autorepeat:	do no enable autorepeat feature.
+- linaos,no-autorepeat:	do no enable autorepeat feature.
 - wakeup-source:	use any event on keypad as wakeup event.
-			(Legacy property supported: "linux,wakeup")
+			(Legacy property supported: "linaos,wakeup")
 - debounce-delay-ms:	debounce interval in milliseconds
 - col-scan-delay-us:	delay, measured in microseconds, that is needed
 			before we can scan keypad after activating column gpio
@@ -40,7 +40,7 @@ Example:
 		col-gpios = <&gpio2 21 0
 			     &gpio2 22 0>;
 
-		linux,keymap = <0x0000008B
+		linaos,keymap = <0x0000008B
 				0x0100009E
 				0x02000069
 				0x0001006A

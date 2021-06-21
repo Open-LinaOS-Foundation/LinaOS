@@ -4,21 +4,21 @@
  * Copyright (C) 2014 ROCKCHIP, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/reset.h>
-#include <linux/regulator/consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/reset.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 #define SARADC_DATA			0x00
 

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 #ifndef KP2000_PCIE_H
 #define KP2000_PCIE_H
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
 #include "../kpc.h"
 #include "dma_common_defs.h"
 

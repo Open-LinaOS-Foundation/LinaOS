@@ -17,15 +17,15 @@
  * flag.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
-#include <linux/soc/cirrus/ep93xx.h>
-#include <linux/platform_data/keypad-ep93xx.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/slab.h>
+#include <linaos/soc/cirrus/ep93xx.h>
+#include <linaos/platform_data/keypad-ep93xx.h>
 
 /*
  * Keypad Interface Register offsets

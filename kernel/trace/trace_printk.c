@@ -5,17 +5,17 @@
  * Copyright (C) 2008 Lai Jiangshan <laijs@cn.fujitsu.com>
  *
  */
-#include <linux/seq_file.h>
-#include <linux/security.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/ftrace.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/security.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/ftrace.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/ctype.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 #include "trace.h"
 

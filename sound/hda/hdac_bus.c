@@ -3,11 +3,11 @@
  * HD-audio core bus driver
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
 #include <sound/hdaudio.h>
 #include "local.h"
 #include "trace.h"

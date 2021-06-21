@@ -6,19 +6,19 @@
  * Author: Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/extcon-provider.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/pinctrl/consumer.h>
 
 #define USB_GPIO_DEBOUNCE_MS	20	/* ms */
 
@@ -284,7 +284,7 @@ static SIMPLE_DEV_PM_OPS(usb_extcon_pm_ops,
 			 usb_extcon_suspend, usb_extcon_resume);
 
 static const struct of_device_id usb_extcon_dt_match[] = {
-	{ .compatible = "linux,extcon-usb-gpio", },
+	{ .compatible = "linaos,extcon-usb-gpio", },
 	{ /* sentinel */ }
 };
 MODULE_DEVICE_TABLE(of, usb_extcon_dt_match);

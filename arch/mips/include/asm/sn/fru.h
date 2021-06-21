@@ -6,7 +6,7 @@
  * Derived from IRIX <sys/SN/SN0/sn0_fru.h>
  *
  * Copyright (C) 1992 - 1997, 1999 Silcon Graphics, Inc.
- * Copyright (C) 1999, 2006 Ralf Baechle (ralf@linux-mips)
+ * Copyright (C) 1999, 2006 Ralf Baechle (ralf@linaos-mips)
  */
 #ifndef __ASM_SN_FRU_H
 #define __ASM_SN_FRU_H

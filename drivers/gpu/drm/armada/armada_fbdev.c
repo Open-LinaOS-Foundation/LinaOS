@@ -4,9 +4,9 @@
  *  Written from the i915 driver.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include <drm/drm_fb_helper.h>
 #include <drm/drm_fourcc.h>

@@ -1,7 +1,7 @@
-/* radeon_drv.h -- Private header for radeon driver -*- linux-c -*-
+/* radeon_drv.h -- Private header for radeon driver -*- linaos-c -*-
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Fremont, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Fremont, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -24,15 +24,15 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Kevin E. Martin <martin@valinux.com>
- *    Gareth Hughes <gareth@valinux.com>
+ *    Kevin E. Martin <martin@valinaos.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
 #ifndef __RADEON_DRV_H__
 #define __RADEON_DRV_H__
 
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
+#include <linaos/firmware.h>
+#include <linaos/platform_device.h>
 #include <drm/drm_legacy.h>
 
 #include "radeon_family.h"

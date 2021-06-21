@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  include/linux/mfd/viperboard.h
+ *  include/linaos/mfd/viperboard.h
  *
  *  Nano River Technologies viperboard definitions
  *
@@ -12,8 +12,8 @@
 #ifndef __MFD_VIPERBOARD_H__
 #define __MFD_VIPERBOARD_H__
 
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <linaos/types.h>
+#include <linaos/usb.h>
 
 #define VPRBRD_EP_OUT               0x02
 #define VPRBRD_EP_IN                0x86

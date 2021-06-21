@@ -20,8 +20,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/semaphore.h>
-#include <linux/atomic.h>
+#include <linaos/semaphore.h>
+#include <linaos/atomic.h>
 
 /*
  * Reusable 2 PHASE task barrier (randevouz point) implementation for N tasks.

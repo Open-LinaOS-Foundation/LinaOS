@@ -3,10 +3,10 @@
 
 #include "e1000.h"
 #include <net/ip6_checksum.h>
-#include <linux/io.h>
-#include <linux/prefetch.h>
-#include <linux/bitops.h>
-#include <linux/if_vlan.h>
+#include <linaos/io.h>
+#include <linaos/prefetch.h>
+#include <linaos/bitops.h>
+#include <linaos/if_vlan.h>
 
 char e1000_driver_name[] = "e1000";
 static char e1000_driver_string[] = "Intel(R) PRO/1000 Network Driver";
@@ -189,7 +189,7 @@ static struct pci_driver e1000_driver = {
 	.err_handler = &e1000_err_handler
 };
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linaos.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) PRO/1000 Network Driver");
 MODULE_LICENSE("GPL v2");
 

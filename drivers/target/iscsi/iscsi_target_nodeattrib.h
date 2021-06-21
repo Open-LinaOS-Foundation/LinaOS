@@ -2,7 +2,7 @@
 #ifndef ISCSI_TARGET_NODEATTRIB_H
 #define ISCSI_TARGET_NODEATTRIB_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct iscsi_node_acl;
 struct iscsi_portal_group;

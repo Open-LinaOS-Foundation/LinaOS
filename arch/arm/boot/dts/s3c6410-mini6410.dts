@@ -67,56 +67,56 @@
 		button-k1 {
 			label = "K1";
 			gpios = <&gpn 0 GPIO_ACTIVE_LOW>;
-			linux,code = <2>;
+			linaos,code = <2>;
 			debounce-interval = <20>;
 		};
 
 		button-k2 {
 			label = "K2";
 			gpios = <&gpn 1 GPIO_ACTIVE_LOW>;
-			linux,code = <3>;
+			linaos,code = <3>;
 			debounce-interval = <20>;
 		};
 
 		button-k3 {
 			label = "K3";
 			gpios = <&gpn 2 GPIO_ACTIVE_LOW>;
-			linux,code = <4>;
+			linaos,code = <4>;
 			debounce-interval = <20>;
 		};
 
 		button-k4 {
 			label = "K4";
 			gpios = <&gpn 3 GPIO_ACTIVE_LOW>;
-			linux,code = <5>;
+			linaos,code = <5>;
 			debounce-interval = <20>;
 		};
 
 		button-k5 {
 			label = "K5";
 			gpios = <&gpn 4 GPIO_ACTIVE_LOW>;
-			linux,code = <6>;
+			linaos,code = <6>;
 			debounce-interval = <20>;
 		};
 
 		button-k6 {
 			label = "K6";
 			gpios = <&gpn 5 GPIO_ACTIVE_LOW>;
-			linux,code = <7>;
+			linaos,code = <7>;
 			debounce-interval = <20>;
 		};
 
 		button-k7 {
 			label = "K7";
 			gpios = <&gpl 11 GPIO_ACTIVE_LOW>;
-			linux,code = <8>;
+			linaos,code = <8>;
 			debounce-interval = <20>;
 		};
 
 		button-k8 {
 			label = "K8";
 			gpios = <&gpl 12 GPIO_ACTIVE_LOW>;
-			linux,code = <9>;
+			linaos,code = <9>;
 			debounce-interval = <20>;
 		};
 	};
@@ -129,13 +129,13 @@
 		led-1 {
 			label = "LED1";
 			gpios = <&gpk 4 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-2 {
 			label = "LED2";
 			gpios = <&gpk 5 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 
 		led-3 {

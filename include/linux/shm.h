@@ -2,9 +2,9 @@
 #ifndef _LINUX_SHM_H_
 #define _LINUX_SHM_H_
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <asm/page.h>
-#include <uapi/linux/shm.h>
+#include <uapi/linaos/shm.h>
 #include <asm/shmparam.h>
 
 struct file;

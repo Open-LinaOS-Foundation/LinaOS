@@ -4,17 +4,17 @@
 //
 // Copyright (c) 2006 Wolfson Microelectronics PLC.
 //	Graeme Gregory graeme.gregory@wolfsonmicro.com
-//	linux@wolfsonmicro.com
+//	linaos@wolfsonmicro.com
 //
 // Copyright (c) 2007, 2004-2005 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
 
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
@@ -23,7 +23,7 @@
 #include "regs-i2s-v2.h"
 #include "s3c2412-i2s.h"
 
-#include <linux/platform_data/asoc-s3c.h>
+#include <linaos/platform_data/asoc-s3c.h>
 
 static struct snd_dmaengine_dai_dma_data s3c2412_i2s_pcm_stereo_out = {
 	.chan_name	= "tx",

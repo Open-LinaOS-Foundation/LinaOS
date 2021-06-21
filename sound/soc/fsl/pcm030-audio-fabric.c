@@ -6,11 +6,11 @@
 // Copyright 2008 Jon Smirl, Digispeaker
 // Author: Jon Smirl <jonsmirl@gmail.com>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
 
 #include <sound/soc.h>
 

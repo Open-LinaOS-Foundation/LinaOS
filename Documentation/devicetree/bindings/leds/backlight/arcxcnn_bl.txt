@@ -27,7 +27,7 @@ arc2c0608@30 {
 	reg = <0x30>;
 	default-brightness = <500>;
 	label = "lcd-backlight";
-	linux,default-trigger = "backlight";
+	linaos,default-trigger = "backlight";
 	led-sources = <0 1 2 5>;
 };
 

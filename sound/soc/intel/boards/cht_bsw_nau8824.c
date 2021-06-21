@@ -11,15 +11,15 @@
  *  This file is based on cht_bsw_rt5672.c and cht-bsw-max98090.c
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
 #include <sound/jack.h>
-#include <linux/input.h>
+#include <linaos/input.h>
 #include "../atom/sst-atom-controls.h"
 #include "../../codecs/nau8824.h"
 

@@ -9,23 +9,23 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/nodemask.h>
-#include <linux/rculist.h>
-#include <linux/cgroupstats.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/kernfs.h>
-#include <linux/jump_label.h>
-#include <linux/types.h>
-#include <linux/ns_common.h>
-#include <linux/nsproxy.h>
-#include <linux/user_namespace.h>
-#include <linux/refcount.h>
-#include <linux/kernel_stat.h>
+#include <linaos/sched.h>
+#include <linaos/cpumask.h>
+#include <linaos/nodemask.h>
+#include <linaos/rculist.h>
+#include <linaos/cgroupstats.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/kernfs.h>
+#include <linaos/jump_label.h>
+#include <linaos/types.h>
+#include <linaos/ns_common.h>
+#include <linaos/nsproxy.h>
+#include <linaos/user_namespace.h>
+#include <linaos/refcount.h>
+#include <linaos/kernel_stat.h>
 
-#include <linux/cgroup-defs.h>
+#include <linaos/cgroup-defs.h>
 
 struct kernel_clone_args;
 
@@ -72,13 +72,13 @@ extern struct cgroup_root cgrp_dfl_root;
 extern struct css_set init_css_set;
 
 #define SUBSYS(_x) extern struct cgroup_subsys _x ## _cgrp_subsys;
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 #undef SUBSYS
 
 #define SUBSYS(_x)								\
 	extern struct static_key_true _x ## _cgrp_subsys_enabled_key;		\
 	extern struct static_key_true _x ## _cgrp_subsys_on_dfl_key;
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 #undef SUBSYS
 
 /**

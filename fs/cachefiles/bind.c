@@ -5,18 +5,18 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/statfs.h>
-#include <linux/ctype.h>
-#include <linux/xattr.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/completion.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/namei.h>
+#include <linaos/mount.h>
+#include <linaos/statfs.h>
+#include <linaos/ctype.h>
+#include <linaos/xattr.h>
 #include "internal.h"
 
 static int cachefiles_daemon_add_cache(struct cachefiles_cache *caches);

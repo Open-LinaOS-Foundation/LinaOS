@@ -2,7 +2,7 @@
 #ifndef __LINUX_BCM963XX_TAG_H__
 #define __LINUX_BCM963XX_TAG_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define TAGVER_LEN		4	/* Length of Tag Version */
 #define TAGLAYOUT_LEN		4	/* Length of FlashLayoutVer */

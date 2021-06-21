@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/clocksource/zevio-timer.c
+ *  linaos/drivers/clocksource/zevio-timer.c
  *
  *  Copyright (C) 2013 Daniel Tang <tangrs@tangrs.id.au>
  */
 
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/cpumask.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 #define IO_CURRENT_VAL	0x00
 #define IO_DIVIDER	0x04

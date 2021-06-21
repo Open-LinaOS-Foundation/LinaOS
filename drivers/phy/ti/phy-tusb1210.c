@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2015 Intel Corporation
  *
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  */
-#include <linux/module.h>
-#include <linux/bitfield.h>
-#include <linux/ulpi/driver.h>
-#include <linux/ulpi/regs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phy/ulpi_phy.h>
+#include <linaos/module.h>
+#include <linaos/bitfield.h>
+#include <linaos/ulpi/driver.h>
+#include <linaos/ulpi/regs.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/phy/ulpi_phy.h>
 
 #define TUSB1210_VENDOR_SPECIFIC2		0x80
 #define TUSB1210_VENDOR_SPECIFIC2_IHSTX_MASK	GENMASK(3, 0)

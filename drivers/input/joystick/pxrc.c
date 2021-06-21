@@ -5,15 +5,15 @@
  * Copyright (C) 2018 Marcus Folkesson <marcus.folkesson@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/mutex.h>
-#include <linux/input.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/input.h>
+#include <linaos/mutex.h>
+#include <linaos/input.h>
 
 #define PXRC_VENDOR_ID		0x1781
 #define PXRC_PRODUCT_ID		0x0898

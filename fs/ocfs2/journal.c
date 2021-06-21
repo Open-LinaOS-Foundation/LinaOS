@@ -7,14 +7,14 @@
  * Copyright (C) 2003, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/time.h>
-#include <linux/random.h>
-#include <linux/delay.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/kthread.h>
+#include <linaos/time.h>
+#include <linaos/random.h>
+#include <linaos/delay.h>
 
 #include <cluster/masklog.h>
 
@@ -870,7 +870,7 @@ int ocfs2_journal_init(struct ocfs2_journal *journal, int *dirty)
 	/* call the kernels journal init function now */
 	j_journal = jbd2_journal_init_inode(inode);
 	if (j_journal == NULL) {
-		mlog(ML_ERROR, "Linux journal layer error\n");
+		mlog(ML_ERROR, "LinaOS journal layer error\n");
 		status = -EINVAL;
 		goto done;
 	}
@@ -1648,7 +1648,7 @@ static int ocfs2_replay_journal(struct ocfs2_super *osb,
 
 	journal = jbd2_journal_init_inode(inode);
 	if (journal == NULL) {
-		mlog(ML_ERROR, "Linux journal layer error\n");
+		mlog(ML_ERROR, "LinaOS journal layer error\n");
 		status = -EIO;
 		goto done;
 	}

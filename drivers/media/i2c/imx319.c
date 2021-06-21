@@ -2,10 +2,10 @@
 // Copyright (C) 2018 Intel Corporation
 
 #include <asm/unaligned.h>
-#include <linux/acpi.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/acpi.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

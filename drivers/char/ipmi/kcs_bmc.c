@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "kcs-bmc: " fmt
 
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/ipmi_bmc.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/ipmi_bmc.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #include "kcs_bmc.h"
 
@@ -454,5 +454,5 @@ struct kcs_bmc *kcs_bmc_alloc(struct device *dev, int sizeof_priv, u32 channel)
 EXPORT_SYMBOL(kcs_bmc_alloc);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linux.intel.com>");
+MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linaos.intel.com>");
 MODULE_DESCRIPTION("KCS BMC to handle the IPMI request from system software");

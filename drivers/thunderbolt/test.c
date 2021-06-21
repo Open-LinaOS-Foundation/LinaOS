@@ -3,11 +3,11 @@
  * KUnit tests
  *
  * Copyright (C) 2020, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
 #include <kunit/test.h>
-#include <linux/idr.h>
+#include <linaos/idr.h>
 
 #include "tb.h"
 #include "tunnel.h"

@@ -10,6 +10,6 @@
 #define NIOS2_CPU_NR_IRQS	32
 
 #include <asm-generic/irq.h>
-#include <linux/irqdomain.h>
+#include <linaos/irqdomain.h>
 
 #endif

@@ -27,24 +27,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/log2.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
+#include <linaos/log2.h>
+#include <linaos/pm.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 #ifdef CONFIG_X86
 #include <asm/i8259.h>
 #include <asm/processor.h>
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 #endif
 
 /* this is for "generic access to PC-style RTC" using CMOS_READ/CMOS_WRITE */
-#include <linux/mc146818rtc.h>
+#include <linaos/mc146818rtc.h>
 
 #ifdef CONFIG_ACPI
 /*
@@ -668,7 +668,7 @@ static irqreturn_t cmos_interrupt(int irq, void *p)
 	else
 		irqstat &= (cmos_rtc.suspend_ctrl & RTC_IRQMASK) | RTC_IRQF;
 
-	/* All Linux RTC alarms should be treated as if they were oneshot.
+	/* All LinaOS RTC alarms should be treated as if they were oneshot.
 	 * Similar code may be needed in system wakeup paths, in case the
 	 * alarm woke the system.
 	 */
@@ -1138,7 +1138,7 @@ static SIMPLE_DEV_PM_OPS(cmos_pm_ops, cmos_suspend, cmos_resume);
 
 #ifdef	CONFIG_ACPI
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 
 static u32 rtc_handler(void *context)
 {
@@ -1249,7 +1249,7 @@ static void cmos_wake_setup(struct device *dev)
 	acpi_rtc_info.rtc_mon_alarm = acpi_gbl_FADT.month_alarm;
 	acpi_rtc_info.rtc_century = acpi_gbl_FADT.century;
 
-	/* NOTE:  S4_RTC_WAKE is NOT currently useful to Linux */
+	/* NOTE:  S4_RTC_WAKE is NOT currently useful to LinaOS */
 	if (acpi_gbl_FADT.flags & ACPI_FADT_S4_RTC_WAKE)
 		dev_info(dev, "RTC can wake from S4\n");
 
@@ -1296,7 +1296,7 @@ static void cmos_check_acpi_rtc_status(struct device *dev,
 
 #ifdef	CONFIG_PNP
 
-#include <linux/pnp.h>
+#include <linaos/pnp.h>
 
 static int cmos_pnp_probe(struct pnp_dev *pnp, const struct pnp_device_id *id)
 {

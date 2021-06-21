@@ -1,5 +1,5 @@
 /*
- * gdb helper commands and functions for Linux kernel debugging
+ * gdb helper commands and functions for LinaOS kernel debugging
  *
  *  Kernel constants derived from include files.
  *
@@ -12,12 +12,12 @@
  *
  */
 
-#include <linux/clk-provider.h>
-#include <linux/fs.h>
-#include <linux/hrtimer.h>
-#include <linux/mount.h>
-#include <linux/of_fdt.h>
-#include <linux/threads.h>
+#include <linaos/clk-provider.h>
+#include <linaos/fs.h>
+#include <linaos/hrtimer.h>
+#include <linaos/mount.h>
+#include <linaos/of_fdt.h>
+#include <linaos/threads.h>
 
 /* We need to stringify expanded macros so that they can be parsed */
 
@@ -39,11 +39,11 @@
 
 import gdb
 
-/* linux/clk-provider.h */
+/* linaos/clk-provider.h */
 if IS_BUILTIN(CONFIG_COMMON_CLK):
     LX_GDBPARSED(CLK_GET_RATE_NOCACHE)
 
-/* linux/fs.h */
+/* linaos/fs.h */
 LX_VALUE(SB_RDONLY)
 LX_VALUE(SB_SYNCHRONOUS)
 LX_VALUE(SB_MANDLOCK)
@@ -51,10 +51,10 @@ LX_VALUE(SB_DIRSYNC)
 LX_VALUE(SB_NOATIME)
 LX_VALUE(SB_NODIRATIME)
 
-/* linux/htimer.h */
+/* linaos/htimer.h */
 LX_GDBPARSED(hrtimer_resolution)
 
-/* linux/mount.h */
+/* linaos/mount.h */
 LX_VALUE(MNT_NOSUID)
 LX_VALUE(MNT_NODEV)
 LX_VALUE(MNT_NOEXEC)
@@ -62,10 +62,10 @@ LX_VALUE(MNT_NOATIME)
 LX_VALUE(MNT_NODIRATIME)
 LX_VALUE(MNT_RELATIME)
 
-/* linux/threads.h */
+/* linaos/threads.h */
 LX_VALUE(NR_CPUS)
 
-/* linux/of_fdt.h> */
+/* linaos/of_fdt.h> */
 LX_VALUE(OF_DT_HEADER)
 
 /* Kernel Configs */

@@ -10,16 +10,16 @@
  * The datasheet for the BMA150 chip can be found here:
  * http://www.bosch-sensortec.com/content/language1/downloads/BST-BMA150-DS000-07.pdf
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/bma150.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/bma150.h>
 
 #define ABSMAX_ACC_VAL		0x01FF
 #define ABSMIN_ACC_VAL		-(ABSMAX_ACC_VAL)

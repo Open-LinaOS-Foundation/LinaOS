@@ -19,11 +19,11 @@
  * Copyright (C) 2016 Jens Axboe
  *
  */
-#include <linux/kernel.h>
-#include <linux/blk_types.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/swap.h>
+#include <linaos/kernel.h>
+#include <linaos/blk_types.h>
+#include <linaos/slab.h>
+#include <linaos/backing-dev.h>
+#include <linaos/swap.h>
 
 #include "blk-wbt.h"
 #include "blk-rq-qos.h"

@@ -1,5 +1,5 @@
 /*
- * include/linux/parman.h - Manager for linear priority array areas
+ * include/linaos/parman.h - Manager for linear priority array areas
  * Copyright (c) 2017 Mellanox Technologies. All rights reserved.
  * Copyright (c) 2017 Jiri Pirko <jiri@mellanox.com>
  *
@@ -35,7 +35,7 @@
 #ifndef _PARMAN_H
 #define _PARMAN_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 enum parman_algo_type {
 	PARMAN_ALGO_TYPE_LSORT,

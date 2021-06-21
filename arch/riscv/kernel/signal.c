@@ -6,11 +6,11 @@
  * Copyright (C) 2012 Regents of the University of California
  */
 
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/syscalls.h>
-#include <linux/tracehook.h>
-#include <linux/linkage.h>
+#include <linaos/signal.h>
+#include <linaos/uaccess.h>
+#include <linaos/syscalls.h>
+#include <linaos/tracehook.h>
+#include <linaos/linkage.h>
 
 #include <asm/ucontext.h>
 #include <asm/vdso.h>

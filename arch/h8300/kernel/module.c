@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <linaos/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
 
 int apply_relocate_add(Elf32_Shdr *sechdrs,
 		       const char *strtab,

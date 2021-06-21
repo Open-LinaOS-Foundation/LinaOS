@@ -6,7 +6,7 @@
 // Based on a previous patch from Remi Schwartz <remi.schwartz@gmail.com>
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table asus_ps3_100[] = {
 	{ 0x081c, KEY_HOME },             /* home */

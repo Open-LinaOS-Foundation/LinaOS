@@ -7,7 +7,7 @@
 #include <asm/asm.h>    	/* For RISCV_* and REG_* macros */
 #include <asm/csr.h>		/* For CSR_* macros */
 #include <asm/asm-offsets.h>	/* For offsets on pt_regs */
-#include <linux/linkage.h>	/* For SYM_* macros */
+#include <linaos/linkage.h>	/* For SYM_* macros */
 
 .section ".text"
 SYM_CODE_START(riscv_crash_save_regs)

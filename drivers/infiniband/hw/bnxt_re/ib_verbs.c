@@ -36,11 +36,11 @@
  * Description: IB Verbs interpreter
  */
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_ether.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_user_verbs.h>

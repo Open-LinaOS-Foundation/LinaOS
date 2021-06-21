@@ -7,14 +7,14 @@
  *	    Sandeep Singh <Sandeep.singh@amd.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmi.h>
-#include <linux/interrupt.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmi.h>
+#include <linaos/interrupt.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "amd_sfh_pcie.h"
 

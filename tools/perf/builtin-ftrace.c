@@ -14,8 +14,8 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <poll.h>
-#include <linux/capability.h>
-#include <linux/string.h>
+#include <linaos/capability.h>
+#include <linaos/string.h>
 
 #include "debug.h"
 #include <subcmd/pager.h>

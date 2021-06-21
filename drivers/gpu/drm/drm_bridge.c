@@ -21,9 +21,9 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 #include <drm/drm_atomic_state_helper.h>
 #include <drm/drm_bridge.h>

@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* tcp_metrics.h - TCP Metrics Interface */
 
 #ifndef _LINUX_TCP_METRICS_H
 #define _LINUX_TCP_METRICS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* NETLINK_GENERIC related info
  */

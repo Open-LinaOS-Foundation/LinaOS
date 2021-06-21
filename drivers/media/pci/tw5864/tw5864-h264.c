@@ -5,7 +5,7 @@
  *  Copyright (C) 2016 Bluecherry, LLC <maintainers@bluecherrydvr.com>
  */
 
-#include <linux/log2.h>
+#include <linaos/log2.h>
 
 #include "tw5864.h"
 

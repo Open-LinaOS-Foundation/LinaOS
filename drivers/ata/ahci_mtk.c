@@ -6,15 +6,15 @@
  * Author: Ryder Lee <ryder.lee@mediatek.com>
  */
 
-#include <linux/ahci_platform.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/ahci_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/libata.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 #include "ahci.h"
 
 #define DRV_NAME		"ahci-mtk"

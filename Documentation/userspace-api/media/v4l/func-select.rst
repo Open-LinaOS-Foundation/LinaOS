@@ -111,6 +111,6 @@ EINVAL
     ``FD_SETSIZE``.
 
 .. [#f1]
-   The Linux kernel implements :c:func:`select()` like the
+   The LinaOS kernel implements :c:func:`select()` like the
    :c:func:`poll()` function, but :c:func:`select()` cannot
    return a ``POLLERR``.

@@ -5,18 +5,18 @@
  * Antoine Tenart <antoine.tenart@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
 
 #include <crypto/internal/aead.h>
 #include <crypto/internal/hash.h>

@@ -6,14 +6,14 @@
  * Based on omap2430.c
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/usb/musb-ux500.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/musb-ux500.h>
 
 #include "musb_core.h"
 

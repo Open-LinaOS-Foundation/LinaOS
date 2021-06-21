@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -10,7 +10,7 @@
 #ifndef _UAPI_ASM_SIGNAL_H
 #define _UAPI_ASM_SIGNAL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define _NSIG		128
 #define _NSIG_BPW	(sizeof(unsigned long) * 8)

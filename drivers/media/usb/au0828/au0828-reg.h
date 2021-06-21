@@ -2,7 +2,7 @@
 /*
  *  Driver for the Auvitek USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@linaostv.org>
  */
 
 /* We'll start to rename these registers once we have a better

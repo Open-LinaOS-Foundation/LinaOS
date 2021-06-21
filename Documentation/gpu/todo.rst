@@ -696,8 +696,8 @@ several fbdev drivers are available at [1] and a tutorial of this process
 available at [2]. The result is a primitive DRM driver that can run X11
 and Weston.
 
- - [1] https://gitlab.freedesktop.org/tzimmermann/linux/tree/fbconv
- - [2] https://gitlab.freedesktop.org/tzimmermann/linux/blob/fbconv/drivers/gpu/drm/drm_fbconv_helper.c
+ - [1] https://gitlab.freedesktop.org/tzimmermann/linaos/tree/fbconv
+ - [2] https://gitlab.freedesktop.org/tzimmermann/linaos/blob/fbconv/drivers/gpu/drm/drm_fbconv_helper.c
 
 Contact: Thomas Zimmermann <tzimmermann@suse.de>
 

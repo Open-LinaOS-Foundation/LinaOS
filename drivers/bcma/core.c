@@ -6,8 +6,8 @@
  */
 
 #include "bcma_private.h"
-#include <linux/export.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/export.h>
+#include <linaos/bcma/bcma.h>
 
 static bool bcma_core_wait_value(struct bcma_device *core, u16 reg, u32 mask,
 				 u32 value, int timeout)

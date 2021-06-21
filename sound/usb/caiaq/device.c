@@ -6,13 +6,13 @@
  *                      Karsten Wiese <fzu@wemgehoertderstaat.de>
 */
 
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/usb.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/gfp.h>
+#include <linaos/usb.h>
 #include <sound/initval.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

@@ -3,12 +3,12 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/bug.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/bug.h>
 #include <crypto/hash.h>
 
 #include "ctree.h"

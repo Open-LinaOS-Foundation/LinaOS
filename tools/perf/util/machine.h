@@ -3,7 +3,7 @@
 #define __PERF_MACHINE_H
 
 #include <sys/types.h>
-#include <linux/rbtree.h>
+#include <linaos/rbtree.h>
 #include "maps.h"
 #include "dsos.h"
 #include "rwsem.h"
@@ -52,7 +52,7 @@ struct machine {
 	struct perf_env   *env;
 	struct dsos	  dsos;
 	struct maps	  kmaps;
-	struct map	  *vmlinux_map;
+	struct map	  *vmlinaos_map;
 	u64		  kernel_start;
 	pid_t		  *current_tid;
 	union { /* Tool specific area */
@@ -69,12 +69,12 @@ static inline struct threads *machine__threads(struct machine *machine, pid_t ti
 }
 
 /*
- * The main kernel (vmlinux) map
+ * The main kernel (vmlinaos) map
  */
 static inline
 struct map *machine__kernel_map(struct machine *machine)
 {
-	return machine->vmlinux_map;
+	return machine->vmlinaos_map;
 }
 
 /*
@@ -235,7 +235,7 @@ int arch__fix_module_text_start(u64 *start, u64 *size, const char *name);
 
 int machine__load_kallsyms(struct machine *machine, const char *filename);
 
-int machine__load_vmlinux_path(struct machine *machine);
+int machine__load_vmlinaos_path(struct machine *machine);
 
 size_t machine__fprintf_dsos_buildid(struct machine *machine, FILE *fp,
 				     bool (skip)(struct dso *dso, int parm), int parm);
@@ -250,7 +250,7 @@ int machines__create_kernel_maps(struct machines *machines, pid_t pid);
 int machines__create_guest_kernel_maps(struct machines *machines);
 void machines__destroy_kernel_maps(struct machines *machines);
 
-size_t machine__fprintf_vmlinux_path(struct machine *machine, FILE *fp);
+size_t machine__fprintf_vmlinaos_path(struct machine *machine, FILE *fp);
 
 typedef int (*machine__dso_t)(struct dso *dso, struct machine *machine, void *priv);
 

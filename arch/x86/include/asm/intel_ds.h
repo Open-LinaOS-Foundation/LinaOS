@@ -1,7 +1,7 @@
 #ifndef _ASM_INTEL_DS_H
 #define _ASM_INTEL_DS_H
 
-#include <linux/percpu-defs.h>
+#include <linaos/percpu-defs.h>
 
 #define BTS_BUFFER_SIZE		(PAGE_SIZE << 4)
 #define PEBS_BUFFER_SIZE	(PAGE_SIZE << 4)

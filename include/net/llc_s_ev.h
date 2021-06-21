@@ -12,7 +12,7 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 /* Defines SAP component events */
 /* Types of events (possible values in 'ev->type') */

@@ -6,15 +6,15 @@
  * Author: Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of_clk.h>
-#include <linux/of_platform.h>
-#include <linux/irqchip.h>
-#include <linux/clocksource.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_platform.h>
+#include <linaos/irqchip.h>
+#include <linaos/clocksource.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include <asm/hardware/cache-l2x0.h>

@@ -9,7 +9,7 @@
  */
 
 #include "net_driver.h"
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "efx_channels.h"
 #include "efx.h"
 #include "efx_common.h"

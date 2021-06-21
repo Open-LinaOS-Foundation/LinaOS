@@ -5,10 +5,10 @@
  * Maintainer: Kumar Gala <galak@kernel.crashing.org>
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/of_platform.h>
+#include <linaos/pci.h>
 
 #include <asm/debug.h>
 #include <asm/io.h>

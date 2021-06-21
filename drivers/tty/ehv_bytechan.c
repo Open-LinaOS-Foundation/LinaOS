@@ -20,21 +20,21 @@
  * byte channel used for the console is designated as the default tty.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
 #include <asm/epapr_hcalls.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/cdev.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/circ_buf.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/cdev.h>
+#include <linaos/console.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/circ_buf.h>
 #include <asm/udbg.h>
 
 /* The size of the transmit circular buffer.  This must be a power of two. */

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 //
 // Copyright (c) 2009 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 //
 // Simtec Osiris Dynamic Voltage Scaling support.
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/cpufreq.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpufreq.h>
+#include <linaos/gpio.h>
 
-#include <linux/mfd/tps65010.h>
+#include <linaos/mfd/tps65010.h>
 
-#include <linux/soc/samsung/s3c-cpu-freq.h>
+#include <linaos/soc/samsung/s3c-cpu-freq.h>
 #include "gpio-samsung.h"
 
 #define OSIRIS_GPIO_DVS	S3C2410_GPB(5)

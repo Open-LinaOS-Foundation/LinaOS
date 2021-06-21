@@ -5,7 +5,7 @@
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 //
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <uapi/sound/tlv.h>

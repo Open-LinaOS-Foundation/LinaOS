@@ -8,10 +8,10 @@
  *  Copyright (C) 2006-2007  Renesas Solutions Corp.
  *  Copyright (C) 2006-2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/clkdev.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 

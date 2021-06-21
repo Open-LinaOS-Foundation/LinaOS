@@ -5,19 +5,19 @@
  * Copyright 2008 - 2013 Xilinx, Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 /* Register Offset Definitions */
 #define XGPIO_DATA_OFFSET   (0x0)	/* Data register  */

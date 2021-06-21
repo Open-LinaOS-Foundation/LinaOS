@@ -4,15 +4,15 @@
 
 #ifdef __KERNEL__
 
-#include <linux/bitmap.h>
-#include <linux/if.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
-#include <linux/timer.h>
-#include <linux/sysctl.h>
-#include <linux/rtnetlink.h>
-#include <linux/refcount.h>
+#include <linaos/bitmap.h>
+#include <linaos/if.h>
+#include <linaos/ip.h>
+#include <linaos/netdevice.h>
+#include <linaos/rcupdate.h>
+#include <linaos/timer.h>
+#include <linaos/sysctl.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/refcount.h>
 
 struct ipv4_devconf {
 	void	*sysctl;

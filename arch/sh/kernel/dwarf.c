@@ -12,15 +12,15 @@
  */
 
 /* #define DEBUG */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/mempool.h>
+#include <linaos/mm.h>
+#include <linaos/elf.h>
+#include <linaos/ftrace.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <asm/dwarf.h>
 #include <asm/unwinder.h>
 #include <asm/sections.h>

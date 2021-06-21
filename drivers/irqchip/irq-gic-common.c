@@ -3,10 +3,10 @@
  * Copyright (C) 2002 ARM Limited, All Rights Reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip/arm-gic.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip/arm-gic.h>
 
 #include "irq-gic-common.h"
 

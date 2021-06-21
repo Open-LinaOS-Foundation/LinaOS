@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
 
 #include <asm/div64.h>
 

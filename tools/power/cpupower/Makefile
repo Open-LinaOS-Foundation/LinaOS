@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 # Makefile for cpupower
 #
-# Copyright (C) 2005,2006 Dominik Brodowski <linux@dominikbrodowski.net>
+# Copyright (C) 2005,2006 Dominik Brodowski <linaos@dominikbrodowski.net>
 #
 # Based largely on the Makefile for udev by:
 #
@@ -56,7 +56,7 @@ LIB_MAJ=			0.0.1
 LIB_MIN=			0
 
 PACKAGE =			cpupower
-PACKAGE_BUGREPORT =		linux-pm@vger.kernel.org
+PACKAGE_BUGREPORT =		linaos-pm@vger.kernel.org
 LANGUAGES = 			de fr it cs pt
 
 
@@ -83,9 +83,9 @@ INSTALL_DATA  = ${INSTALL} -m 644
 INSTALL_SCRIPT = ${INSTALL} -m 644
 
 # If you are running a cross compiler, you may want to set this
-# to something more interesting, like "arm-linux-".  If you want
+# to something more interesting, like "arm-linaos-".  If you want
 # to compile vs uClibc, that can be done here as well.
-CROSS = #/usr/i386-linux-uclibc/usr/bin/i386-uclibc-
+CROSS = #/usr/i386-linaos-uclibc/usr/bin/i386-uclibc-
 CC = $(CROSS)gcc
 LD = $(CROSS)gcc
 AR = $(CROSS)ar

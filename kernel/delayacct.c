@@ -4,15 +4,15 @@
  * Copyright (C) Shailabh Nagar, IBM Corp. 2006
  */
 
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/cputime.h>
-#include <linux/slab.h>
-#include <linux/taskstats.h>
-#include <linux/time.h>
-#include <linux/sysctl.h>
-#include <linux/delayacct.h>
-#include <linux/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/slab.h>
+#include <linaos/taskstats.h>
+#include <linaos/time.h>
+#include <linaos/sysctl.h>
+#include <linaos/delayacct.h>
+#include <linaos/module.h>
 
 int delayacct_on __read_mostly = 1;	/* Delay accounting turned on/off */
 EXPORT_SYMBOL_GPL(delayacct_on);

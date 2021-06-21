@@ -33,7 +33,7 @@ discussing testing, and a fifth and final section listing known issues.
 Never Omit Scheduling-Clock Ticks
 =================================
 
-Very old versions of Linux from the 1990s and the very early 2000s
+Very old versions of LinaOS from the 1990s and the very early 2000s
 are incapable of omitting scheduling-clock ticks.  It turns out that
 there are some situations where this old-school approach is still the
 right approach, for example, in heavy workloads with lots of tasks
@@ -213,7 +213,7 @@ something else is in the way?  This section helps answer this question
 by providing a simple OS-jitter test suite, which is available on branch
 master of the following git archive:
 
-git://git.kernel.org/pub/scm/linux/kernel/git/frederic/dynticks-testing.git
+git://git.kernel.org/pub/scm/linaos/kernel/git/frederic/dynticks-testing.git
 
 Clone this archive and follow the instructions in the README file.
 This test procedure will produce a trace that will allow you to evaluate

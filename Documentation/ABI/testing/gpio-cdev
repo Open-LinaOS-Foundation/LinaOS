@@ -1,13 +1,13 @@
 What:		/dev/gpiochip[0-9]+
 Date:		November 2015
 KernelVersion:	4.4
-Contact:	linux-gpio@vger.kernel.org
+Contact:	linaos-gpio@vger.kernel.org
 Description:
 		The character device files /dev/gpiochip* are the interface
 		between GPIO chips and userspace.
 
 		The ioctl(2)-based ABI is defined and documented in
-		[include/uapi]<linux/gpio.h>.
+		[include/uapi]<linaos/gpio.h>.
 
 		The following file operations are supported:
 
@@ -17,7 +17,7 @@ Description:
 		ioctl(2)
 		  Initiate various actions.
 
-		  See the inline documentation in [include/uapi]<linux/gpio.h>
+		  See the inline documentation in [include/uapi]<linaos/gpio.h>
 		  for descriptions of all ioctls.
 
 		close(2)

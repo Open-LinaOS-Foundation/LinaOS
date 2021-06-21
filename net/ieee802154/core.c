@@ -3,10 +3,10 @@
  * Copyright (C) 2007, 2008, 2009 Siemens AG
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
 
 #include <net/cfg802154.h>
 #include <net/rtnetlink.h>

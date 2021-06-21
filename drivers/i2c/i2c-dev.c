@@ -14,20 +14,20 @@
 
 /* The I2C_RDWR ioctl code is written by Kolja Waschk <waschk@telos.de> */
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/i2c-dev.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/cdev.h>
+#include <linaos/compat.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/i2c-dev.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 /*
  * An i2c_dev represents an i2c_adapter ... an I2C or SMBus master, not a

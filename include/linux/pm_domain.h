@@ -8,15 +8,15 @@
 #ifndef _LINUX_PM_DOMAIN_H
 #define _LINUX_PM_DOMAIN_H
 
-#include <linux/device.h>
-#include <linux/ktime.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/cpumask.h>
+#include <linaos/device.h>
+#include <linaos/ktime.h>
+#include <linaos/mutex.h>
+#include <linaos/pm.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/notifier.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpumask.h>
 
 /*
  * Flags to control the behaviour of a genpd.

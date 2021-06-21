@@ -11,13 +11,13 @@
  * - The hardware cannot generate a 100% duty cycle.
  * - The hardware generates only inverted output.
  */
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
+#include <linaos/bitfield.h>
 
 /* Register offsets */
 #define PWM_SIFIVE_PWMCFG		0x0

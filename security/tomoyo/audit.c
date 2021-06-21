@@ -6,12 +6,12 @@
  */
 
 #include "common.h"
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 /**
- * tomoyo_print_bprm - Print "struct linux_binprm" for auditing.
+ * tomoyo_print_bprm - Print "struct linaos_binprm" for auditing.
  *
- * @bprm: Pointer to "struct linux_binprm".
+ * @bprm: Pointer to "struct linaos_binprm".
  * @dump: Pointer to "struct tomoyo_page_dump".
  *
  * Returns the contents of @bprm on success, NULL otherwise.
@@ -19,7 +19,7 @@
  * This function uses kzalloc(), so caller must kfree() if this function
  * didn't return NULL.
  */
-static char *tomoyo_print_bprm(struct linux_binprm *bprm,
+static char *tomoyo_print_bprm(struct linaos_binprm *bprm,
 			       struct tomoyo_page_dump *dump)
 {
 	static const int tomoyo_buffer_len = 4096 * 2;
@@ -278,7 +278,7 @@ char *tomoyo_init_log(struct tomoyo_request_info *r, int len, const char *fmt,
 	len--;
 	pos = snprintf(buf, len, "%s", header);
 	if (realpath) {
-		struct linux_binprm *bprm = r->ee->bprm;
+		struct linaos_binprm *bprm = r->ee->bprm;
 
 		pos += snprintf(buf + pos, len - pos,
 				" exec={ realpath=\"%s\" argc=%d envc=%d %s }",

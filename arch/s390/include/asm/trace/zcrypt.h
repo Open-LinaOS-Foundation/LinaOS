@@ -30,7 +30,7 @@
 #if !defined(_TRACE_S390_ZCRYPT_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_S390_ZCRYPT_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define TP_ICARSAMODEXPO  0x0001
 #define TP_ICARSACRT	  0x0002

@@ -5,10 +5,10 @@
  * Copyright (C) 2013 Linaro Limited.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
+#include <linaos/module.h>
+#include <linaos/kallsyms.h>
 #include <asm/insn.h>
 #include <asm/sections.h>
 

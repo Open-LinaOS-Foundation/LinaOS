@@ -108,38 +108,38 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
 
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/net.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/protocol.h>
 #include <net/route.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
 #include <net/arp.h>
 #include <net/icmp.h>
 #include <net/raw.h>
 #include <net/checksum.h>
 #include <net/inet_ecn.h>
-#include <linux/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv4.h>
 #include <net/xfrm.h>
-#include <linux/mroute.h>
-#include <linux/netlink.h>
+#include <linaos/mroute.h>
+#include <linaos/netlink.h>
 #include <net/dst_metadata.h>
 
 /*
@@ -348,7 +348,7 @@ static int ip_rcv_finish_core(struct net *net, struct sock *sk,
 
 	/*
 	 *	Initialise the virtual path cache for the packet. It describes
-	 *	how the packet travels inside Linux networking.
+	 *	how the packet travels inside LinaOS networking.
 	 */
 	if (!skb_valid_dst(skb)) {
 		err = ip_route_input_noref(skb, iph->daddr, iph->saddr,

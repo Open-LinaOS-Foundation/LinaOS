@@ -5,8 +5,8 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linaos/slab.h>
+#include <linaos/rculist.h>
 
 #include "common.h"
 

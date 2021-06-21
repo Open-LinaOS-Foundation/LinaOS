@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2004 Topspin Communications.  All rights reserved.
  * Copyright (c) 2005 Voltaire, Inc.  All rights reserved.
@@ -8,11 +8,11 @@
 #ifndef IB_SA_H
 #define IB_SA_H
 
-#include <linux/completion.h>
-#include <linux/compiler.h>
+#include <linaos/completion.h>
+#include <linaos/compiler.h>
 
-#include <linux/atomic.h>
-#include <linux/netdevice.h>
+#include <linaos/atomic.h>
+#include <linaos/netdevice.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_mad.h>

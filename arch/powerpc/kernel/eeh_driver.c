@@ -6,12 +6,12 @@
  *
  * Send comments and feedback to Linas Vepstas <linas@austin.ibm.com>
  */
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
 #include <asm/eeh.h>
 #include <asm/eeh_event.h>
 #include <asm/ppc-pci.h>

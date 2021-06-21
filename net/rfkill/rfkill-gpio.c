@@ -3,16 +3,16 @@
  * Copyright (c) 2011, NVIDIA Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/rfkill.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/rfkill.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/gpio/consumer.h>
 
 struct rfkill_gpio_data {
 	const char		*name;

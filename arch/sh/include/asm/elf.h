@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_ELF_H
 #define __ASM_SH_ELF_H
 
-#include <linux/utsname.h>
+#include <linaos/utsname.h>
 #include <asm/auxvec.h>
 #include <asm/ptrace.h>
 #include <asm/user.h>
@@ -166,8 +166,8 @@ do {									\
 #ifdef CONFIG_VSYSCALL
 /* vDSO has arch_setup_additional_pages */
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linaos_binprm;
+extern int arch_setup_additional_pages(struct linaos_binprm *bprm,
 				       int uses_interp);
 
 extern unsigned int vdso_enabled;

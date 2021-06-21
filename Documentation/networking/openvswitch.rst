@@ -79,7 +79,7 @@ attributes, however, are extracted from headers within the packet,
 e.g. source and destination addresses from Ethernet, IP, or TCP
 headers.
 
-The <linux/openvswitch.h> header file defines the exact format of the
+The <linaos/openvswitch.h> header file defines the exact format of the
 flow key attributes.  For informal explanatory purposes here, we write
 them as comma-separated strings, with parentheses indicating arguments
 and nesting.  For example, the following could represent a flow key

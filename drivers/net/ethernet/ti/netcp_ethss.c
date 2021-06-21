@@ -10,15 +10,15 @@
  *		Wingman Kwok <w-kwok2@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_address.h>
-#include <linux/if_vlan.h>
-#include <linux/ptp_classify.h>
-#include <linux/net_tstamp.h>
-#include <linux/ethtool.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_address.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/ethtool.h>
 
 #include "cpsw.h"
 #include "cpsw_ale.h"

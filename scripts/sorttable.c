@@ -4,7 +4,7 @@
  *
  * Added ORC unwind tables sort support and other updates:
  * Copyright (C) 1999-2019 Alibaba Group Holding Limited. by:
- * Shile Zhang <shile.zhang@linux.alibaba.com>
+ * Shile Zhang <shile.zhang@linaos.alibaba.com>
  *
  * Copyright 2011 - 2012 Cavium, Inc.
  *
@@ -12,12 +12,12 @@
  *
  * Copyright 2009 John F. Reiser <jreiser@BitWagon.com>.  All rights reserved.
  *
- * Restructured to fit Linux format, as well as other updates:
+ * Restructured to fit LinaOS format, as well as other updates:
  * Copyright 2010 Steven Rostedt <srostedt@redhat.com>, Red Hat Inc.
  */
 
 /*
- * Strategy: alter the vmlinux file in-place.
+ * Strategy: alter the vmlinaos file in-place.
  */
 
 #include <sys/types.h>
@@ -396,7 +396,7 @@ int main(int argc, char *argv[])
 	void *addr = NULL;
 
 	if (argc < 2) {
-		fprintf(stderr, "usage: sorttable vmlinux...\n");
+		fprintf(stderr, "usage: sorttable vmlinaos...\n");
 		return 0;
 	}
 

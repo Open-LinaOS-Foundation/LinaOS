@@ -5,7 +5,7 @@
 #if !defined(_TRACE_HWMON_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HWMON_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(hwmon_attr_class,
 

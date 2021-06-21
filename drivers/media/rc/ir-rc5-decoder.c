@@ -10,7 +10,7 @@
  */
 
 #include "rc-core-priv.h"
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #define RC5_NBITS		14
 #define RC5_SZ_NBITS		15

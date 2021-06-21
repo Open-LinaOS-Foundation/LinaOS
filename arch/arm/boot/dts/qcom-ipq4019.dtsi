@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The LinaOS Foundation. All rights reserved.
  */
 
 /dts-v1/;
@@ -417,7 +417,7 @@
 				0x40100000 0x1000>;
 			reg-names = "dbi", "elbi", "parf", "config";
 			device_type = "pci";
-			linux,pci-domain = <0>;
+			linaos,pci-domain = <0>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 			#address-cells = <3>;

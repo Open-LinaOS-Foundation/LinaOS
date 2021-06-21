@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2017-2020 NXP
 
-#include <linux/module.h>
-#include <linux/rpmsg.h>
+#include <linaos/module.h>
+#include <linaos/rpmsg.h>
 #include "imx-pcm-rpmsg.h"
 
 /*

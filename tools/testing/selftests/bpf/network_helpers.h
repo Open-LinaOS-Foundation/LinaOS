@@ -3,12 +3,12 @@
 #define __NETWORK_HELPERS_H
 #include <sys/socket.h>
 #include <sys/types.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 typedef __u16 __sum16;
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 #include <netinet/tcp.h>
 #include <bpf/bpf_endian.h>
 

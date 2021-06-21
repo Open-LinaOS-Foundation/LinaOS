@@ -16,10 +16,10 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/leds.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/leds.h>
 
 #include "hid-ids.h"
 

@@ -6,9 +6,9 @@
 #ifndef _H_JFS_LOCK
 #define _H_JFS_LOCK
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
 
 /*
  *	jfs_lock.h

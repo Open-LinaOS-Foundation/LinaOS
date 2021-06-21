@@ -7,19 +7,19 @@
  * /sys/kernel/debug/kernel_pagetables.
  *
  * Derived from the arm64 implementation:
- * Copyright (c) 2014, The Linux Foundation, Laura Abbott.
+ * Copyright (c) 2014, The LinaOS Foundation, Laura Abbott.
  * (C) Copyright 2008 Intel Corporation, Arjan van de Ven.
  */
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/hugetlb.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/hugetlb.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
 #include <asm/fixmap.h>
-#include <linux/const.h>
+#include <linaos/const.h>
 #include <asm/page.h>
 #include <asm/hugetlb.h>
 
@@ -334,7 +334,7 @@ static void walk_pagetables(struct pg_state *st)
 	pgd_t *pgd = pgd_offset_k(addr);
 
 	/*
-	 * Traverse the linux pagetable structure and dump pages that are in
+	 * Traverse the linaos pagetable structure and dump pages that are in
 	 * the hash pagetable.
 	 */
 	for (i = pgd_index(addr); i < PTRS_PER_PGD; i++, pgd++, addr += PGDIR_SIZE) {

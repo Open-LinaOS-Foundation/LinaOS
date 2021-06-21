@@ -240,11 +240,11 @@ Driver API
 ==========
 
 Driver authors may utilize the Generic Counter interface in their code
-by including the include/linux/counter.h header file. This header file
+by including the include/linaos/counter.h header file. This header file
 provides several core data structures, function prototypes, and macros
 for defining a counter device.
 
-.. kernel-doc:: include/linux/counter.h
+.. kernel-doc:: include/linaos/counter.h
    :internal:
 
 .. kernel-doc:: drivers/counter/counter.c

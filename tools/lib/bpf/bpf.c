@@ -27,7 +27,7 @@
 #include <unistd.h>
 #include <asm/unistd.h>
 #include <errno.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include "bpf.h"
 #include "libbpf.h"
 #include "libbpf_internal.h"
@@ -97,8 +97,8 @@ int bpf_create_map_xattr(const struct bpf_create_map_attr *create_attr)
 	attr.btf_value_type_id = create_attr->btf_value_type_id;
 	attr.map_ifindex = create_attr->map_ifindex;
 	if (attr.map_type == BPF_MAP_TYPE_STRUCT_OPS)
-		attr.btf_vmlinux_value_type_id =
-			create_attr->btf_vmlinux_value_type_id;
+		attr.btf_vmlinaos_value_type_id =
+			create_attr->btf_vmlinaos_value_type_id;
 	else
 		attr.inner_map_fd = create_attr->inner_map_fd;
 

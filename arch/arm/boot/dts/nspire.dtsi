@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/boot/nspire.dtsi
+ *  linaos/arch/arm/boot/nspire.dtsi
  *
  *  Copyright (C) 2013 Daniel Tang <tangrs@tangrs.id.au>
  */

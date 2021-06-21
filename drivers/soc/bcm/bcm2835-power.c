@@ -6,15 +6,15 @@
  */
 
 #include <dt-bindings/soc/bcm2835-pm.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/bcm2835-pm.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/reset-controller.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/mfd/bcm2835-pm.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/reset-controller.h>
+#include <linaos/types.h>
 
 #define PM_GNRIC                        0x00
 #define PM_AUDIO                        0x04

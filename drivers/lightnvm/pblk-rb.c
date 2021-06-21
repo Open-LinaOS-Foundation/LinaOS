@@ -17,7 +17,7 @@
  * pblk-rb.c - pblk's write buffer
  */
 
-#include <linux/circ_buf.h>
+#include <linaos/circ_buf.h>
 
 #include "pblk.h"
 

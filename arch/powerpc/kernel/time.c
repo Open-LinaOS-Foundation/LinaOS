@@ -27,34 +27,34 @@
  *             "A Kernel Model for Precision Timekeeping" by Dave Mills
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/kernel_stat.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/profile.h>
-#include <linux/cpu.h>
-#include <linux/security.h>
-#include <linux/percpu.h>
-#include <linux/rtc.h>
-#include <linux/jiffies.h>
-#include <linux/posix-timers.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/irq_work.h>
-#include <linux/of_clk.h>
-#include <linux/suspend.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/clock.h>
-#include <linux/processor.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/timex.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
+#include <linaos/profile.h>
+#include <linaos/cpu.h>
+#include <linaos/security.h>
+#include <linaos/percpu.h>
+#include <linaos/rtc.h>
+#include <linaos/jiffies.h>
+#include <linaos/posix-timers.h>
+#include <linaos/irq.h>
+#include <linaos/delay.h>
+#include <linaos/irq_work.h>
+#include <linaos/of_clk.h>
+#include <linaos/suspend.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/sched/clock.h>
+#include <linaos/processor.h>
 #include <asm/trace.h>
 
 #include <asm/interrupt.h>
@@ -62,7 +62,7 @@
 #include <asm/nvram.h>
 #include <asm/cache.h>
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/time.h>
 #include <asm/prom.h>
 #include <asm/irq.h>
@@ -74,8 +74,8 @@
 
 /* powerpc clocksource/clockevent code */
 
-#include <linux/clockchips.h>
-#include <linux/timekeeper_internal.h>
+#include <linaos/clockchips.h>
+#include <linaos/timekeeper_internal.h>
 
 static u64 timebase_read(struct clocksource *);
 static struct clocksource clocksource_timebase = {

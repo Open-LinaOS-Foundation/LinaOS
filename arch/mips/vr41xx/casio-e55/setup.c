@@ -2,10 +2,10 @@
 /*
  *  setup.c, Setup for the CASIO CASSIOPEIA E-11/15/55/65.
  *
- *  Copyright (C) 2002-2006  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2002-2006  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
 
 #include <asm/io.h>
 

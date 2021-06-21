@@ -46,9 +46,9 @@
 
 /* $XFree86: xc/programs/Xserver/hw/xfree86/drivers/nv/riva_hw.c,v 1.33 2002/08/05 20:47:06 mvojkovi Exp $ */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
 #include "riva_hw.h"
 #include "riva_tbl.h"
 #include "nv_type.h"

@@ -5,7 +5,7 @@
 #if !defined(_TRACE_RCU_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RCU_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #ifdef CONFIG_RCU_TRACE
 #define TRACE_EVENT_RCU TRACE_EVENT

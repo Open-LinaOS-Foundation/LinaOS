@@ -24,23 +24,23 @@
 #define LINUX_PCI_H
 
 
-#include <linux/mod_devicetable.h>
+#include <linaos/mod_devicetable.h>
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/kobject.h>
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/resource_ext.h>
-#include <uapi/linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/list.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/kobject.h>
+#include <linaos/atomic.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/resource_ext.h>
+#include <uapi/linaos/pci.h>
 
-#include <linux/pci_ids.h>
+#include <linaos/pci_ids.h>
 
 #define PCI_STATUS_ERROR_BITS (PCI_STATUS_DETECTED_PARITY  | \
 			       PCI_STATUS_SIG_SYSTEM_ERROR | \
@@ -57,7 +57,7 @@
  *	7:3 = slot
  *	2:0 = function
  *
- * PCI_DEVFN(), PCI_SLOT(), and PCI_FUNC() are defined in uapi/linux/pci.h.
+ * PCI_DEVFN(), PCI_SLOT(), and PCI_FUNC() are defined in uapi/linaos/pci.h.
  * In the interest of not exposing interfaces to user-space unnecessarily,
  * the following kernel-only defines are being added here.
  */
@@ -1460,7 +1460,7 @@ int pci_set_vga_state(struct pci_dev *pdev, bool decode,
 
 /* kmem_cache style wrapper around pci_alloc_consistent() */
 
-#include <linux/dmapool.h>
+#include <linaos/dmapool.h>
 
 #define	pci_pool dma_pool
 #define pci_pool_create(name, pdev, size, align, allocation) \
@@ -2443,7 +2443,7 @@ void pci_uevent_ers(struct pci_dev *pdev, enum  pci_ers_result err_type);
 #endif
 
 /* Provide the legacy pci_dma_* API */
-#include <linux/pci-dma-compat.h>
+#include <linaos/pci-dma-compat.h>
 
 #define pci_printk(level, pdev, fmt, arg...) \
 	dev_printk(level, &(pdev)->dev, fmt, ##arg)

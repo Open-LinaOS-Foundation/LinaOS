@@ -5,13 +5,13 @@
  * Author: Vitaly Wool <vitalywool@gmail.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/platnand.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/platnand.h>
 
 struct plat_nand_data {
 	struct nand_controller	controller;

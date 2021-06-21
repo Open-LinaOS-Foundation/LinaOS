@@ -6,9 +6,9 @@
  * This was based on the git SHA1 implementation.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/bitops.h>
 #include <crypto/sha1.h>
 #include <asm/unaligned.h>
 

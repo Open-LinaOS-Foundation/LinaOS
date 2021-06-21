@@ -8,7 +8,7 @@
 #ifndef __ASM_MACH_CAVIUM_OCTEON_CPU_FEATURE_OVERRIDES_H
 #define __ASM_MACH_CAVIUM_OCTEON_CPU_FEATURE_OVERRIDES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/mipsregs.h>
 
 /*

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The LinaOS Foundation. All rights reserved.
  */
 
 #undef TRACE_SYSTEM
@@ -9,7 +9,7 @@
 #if !defined(_TRACE_UFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_UFS_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define str_opcode(opcode)						\
 	__print_symbolic(opcode,					\

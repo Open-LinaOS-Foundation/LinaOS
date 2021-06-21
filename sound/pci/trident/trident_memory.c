@@ -8,10 +8,10 @@
  *  Trident chip can handle only 16MByte of the memory at the same time.
  */
 
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
+#include <linaos/io.h>
+#include <linaos/pci.h>
+#include <linaos/time.h>
+#include <linaos/mutex.h>
 
 #include <sound/core.h>
 #include "trident.h"

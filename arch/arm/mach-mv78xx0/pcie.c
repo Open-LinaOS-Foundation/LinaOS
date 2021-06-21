@@ -8,9 +8,9 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/mbus.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/mbus.h>
 #include <video/vga.h>
 #include <asm/irq.h>
 #include <asm/mach/pci.h>

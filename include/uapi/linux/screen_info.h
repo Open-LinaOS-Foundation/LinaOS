@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_SCREEN_INFO_H
 #define _UAPI_SCREEN_INFO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * These are set up by the setup-routine at boot-time:

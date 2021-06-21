@@ -17,7 +17,7 @@
 #ifndef _BRCM_SCB_H_
 #define _BRCM_SCB_H_
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 #include <brcmu_utils.h>
 #include <defs.h>
 #include "types.h"

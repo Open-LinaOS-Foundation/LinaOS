@@ -9,8 +9,8 @@
 #ifndef _LINUX_CPU_PM_H
 #define _LINUX_CPU_PM_H
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
 
 /*
  * When a CPU goes to a low power state that turns off power to the CPU's

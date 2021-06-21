@@ -6,8 +6,8 @@
  * Copyright (C) 2008 Nokia Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "wl1251.h"
 #include "reg.h"

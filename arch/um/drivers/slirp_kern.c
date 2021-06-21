@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
+#include <linaos/if_arp.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/string.h>
 #include <net_kern.h>
 #include <net_user.h>
 #include "slirp.h"

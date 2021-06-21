@@ -7,7 +7,7 @@
 #ifndef _RTW_HT_H_
 #define _RTW_HT_H_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 struct ht_priv {
 	u32	ht_option;

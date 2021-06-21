@@ -9,7 +9,7 @@
 #ifndef EFX_PTP_H
 #define EFX_PTP_H
 
-#include <linux/net_tstamp.h>
+#include <linaos/net_tstamp.h>
 #include "net_driver.h"
 
 struct ethtool_ts_info;

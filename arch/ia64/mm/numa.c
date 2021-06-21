@@ -10,13 +10,13 @@
  *                         2002/08/07 Erich Focht <efocht@ess.nec.de>
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/node.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/module.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/node.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/module.h>
 #include <asm/mmzone.h>
 #include <asm/numa.h>
 

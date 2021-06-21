@@ -20,11 +20,11 @@
  * details.
  */
 
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/rculist.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/rculist.h>
 
 #include <asm/unaligned.h>
 

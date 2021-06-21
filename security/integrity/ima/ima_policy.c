@@ -7,18 +7,18 @@
  *	- initialize default measure policy rules
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/kernel_read_file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/magic.h>
-#include <linux/parser.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
-#include <linux/genhd.h>
-#include <linux/seq_file.h>
-#include <linux/ima.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/fs.h>
+#include <linaos/security.h>
+#include <linaos/magic.h>
+#include <linaos/parser.h>
+#include <linaos/slab.h>
+#include <linaos/rculist.h>
+#include <linaos/genhd.h>
+#include <linaos/seq_file.h>
+#include <linaos/ima.h>
 
 #include "ima.h"
 

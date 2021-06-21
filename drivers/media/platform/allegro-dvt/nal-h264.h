@@ -8,8 +8,8 @@
 #ifndef __NAL_H264_H__
 #define __NAL_H264_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 /*
  * struct nal_h264_hrd_parameters - HRD parameters

@@ -3,7 +3,7 @@
 // Copyright (C) 2018 Sean Young <sean@mess.org>
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 //
 // Note that this remote has a stick which its own IR protocol,

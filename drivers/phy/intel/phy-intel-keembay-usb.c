@@ -4,15 +4,15 @@
  * Copyright (C) 2020 Intel Corporation
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 /* USS (USB Subsystem) clock control registers */
 #define USS_CPR_CLK_EN		0x00

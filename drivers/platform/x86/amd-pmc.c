@@ -10,19 +10,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/suspend.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <linaos/acpi.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/suspend.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
 
 /* SMU communication registers */
 #define AMD_PMC_REGISTER_MESSAGE	0x538

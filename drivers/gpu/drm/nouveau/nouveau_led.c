@@ -28,7 +28,7 @@
  *  Martin Peres <martin.peres@free.fr>
  */
 
-#include <linux/leds.h>
+#include <linaos/leds.h>
 
 #include "nouveau_led.h"
 #include <nvkm/subdev/gpio.h>

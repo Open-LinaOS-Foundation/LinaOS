@@ -6,7 +6,7 @@
  * Copyright (c) 2015 Takashi Sakamoto <o-takashi@sakamocchi.jp>
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "amdtp-am824.h"
 

@@ -11,23 +11,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcd.h>
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
+#include <linaos/bcd.h>
+#include <linaos/clk-provider.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/string.h>
 #ifdef CONFIG_RTC_DRV_M41T80_WDT
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/miscdevice.h>
-#include <linux/reboot.h>
-#include <linux/watchdog.h>
+#include <linaos/fs.h>
+#include <linaos/ioctl.h>
+#include <linaos/miscdevice.h>
+#include <linaos/reboot.h>
+#include <linaos/watchdog.h>
 #endif
 
 #define M41T80_REG_SSEC		0x00

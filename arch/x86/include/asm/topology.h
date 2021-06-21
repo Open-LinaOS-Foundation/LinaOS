@@ -30,10 +30,10 @@
  * moved to there from here.  May be used independent of
  * CONFIG_NUMA.
  */
-#include <linux/numa.h>
+#include <linaos/numa.h>
 
 #ifdef CONFIG_NUMA
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 
 #include <asm/mpspec.h>
 #include <asm/percpu.h>

@@ -4,7 +4,7 @@
  * Copyright (C) 2006 Atmark Techno, Inc.
  *
  * MMU code derived from arch/ppc/kernel/head_4xx.S:
- *    Copyright (c) 1995-1996 Gary Thomas <gdt@linuxppc.org>
+ *    Copyright (c) 1995-1996 Gary Thomas <gdt@linaosppc.org>
  *      Initial PowerPC version.
  *    Copyright (c) 1996 Cort Dougan <cort@cs.nmt.edu>
  *      Rewritten for PReP
@@ -28,11 +28,11 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>
-#include <linux/of_fdt.h>		/* for OF_DT_HEADER */
+#include <linaos/of_fdt.h>		/* for OF_DT_HEADER */
 
 #include <asm/setup.h> /* COMMAND_LINE_SIZE */
 #include <asm/mmu.h>

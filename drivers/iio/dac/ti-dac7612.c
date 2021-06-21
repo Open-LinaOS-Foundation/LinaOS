@@ -7,11 +7,11 @@
  *
  * Licensed under the GPL-2.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/iio/iio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/iio/iio.h>
 
 #define DAC7612_RESOLUTION 12
 #define DAC7612_ADDRESS 4

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/random.h>
+#include <linaos/file.h>
+#include <linaos/namei.h>
+#include <linaos/random.h>
 
 #include "super.h"
 #include "mds_client.h"
-#include <linux/ceph/pagelist.h>
+#include <linaos/ceph/pagelist.h>
 
 static u64 lock_secret;
 static int ceph_lock_wait_for_completion(struct ceph_mds_client *mdsc,

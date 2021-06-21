@@ -9,7 +9,7 @@
 #if !defined(_SND_PS3_H_)
 #define _SND_PS3_H_
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 
 #define SND_PS3_DRIVER_NAME "snd_ps3"
 

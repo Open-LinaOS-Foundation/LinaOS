@@ -52,7 +52,7 @@ Mellon the rights to redistribute these changes without encumbrance.
 /*
  *
  * Based on cfs.h from Mach, but revamped for increased simplicity.
- * Linux modifications by 
+ * LinaOS modifications by 
  * Peter Braam, Aug 1996
  */
 #ifndef _CODA_HEADER_
@@ -60,5 +60,5 @@ Mellon the rights to redistribute these changes without encumbrance.
 
 typedef unsigned long long u_quad_t;
 
-#include <uapi/linux/coda.h>
+#include <uapi/linaos/coda.h>
 #endif 

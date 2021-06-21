@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_TYPES_H
 #define _UAPI_ASM_TYPES_H
 
@@ -14,7 +14,7 @@
  *
  * As the typedefs for these types in 'stdint.h' are based on builtin defines
  * supplied by GCC, we can tweak these to align with the kernel's idea of those
- * types, so 'linux/types.h' and 'stdint.h' can be safely included from the same
+ * types, so 'linaos/types.h' and 'stdint.h' can be safely included from the same
  * source file (provided that -ffreestanding is used).
  *
  *                    int32_t         uint32_t               uintptr_t

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2009-2014  Realtek Corporation.*/
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "table.h"
 
 u32 RTL8723BEPHY_REG_1TARRAY[] = {

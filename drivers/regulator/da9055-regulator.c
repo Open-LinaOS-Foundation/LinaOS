@@ -6,20 +6,20 @@
 //
 // Author: David Dajun Chen <dchen@diasemi.com>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/of.h>
+#include <linaos/regulator/of_regulator.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
-#include <linux/mfd/da9055/pdata.h>
+#include <linaos/mfd/da9055/core.h>
+#include <linaos/mfd/da9055/reg.h>
+#include <linaos/mfd/da9055/pdata.h>
 
 #define DA9055_MIN_UA		0
 #define DA9055_MAX_UA		3

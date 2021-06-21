@@ -10,27 +10,27 @@
  *  Author:	Juergen Kilb
  *  Created:	April 05, 2005
  *  Copyright:	Phytec Messtechnik GmbH
- *  e-Mail:	armlinux@phytec.de
+ *  e-Mail:	armlinaos@phytec.de
  *
  *  based on Intel Mainstone Board
  *
  *  Copyright 2007 Juergen Beisert @ Pengutronix (j.beisert@pengutronix.de)
  */
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
+#include <linaos/gpio.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
 
 #include <asm/mach/map.h>
 #include "pxa27x.h"
 #include <mach/audio.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include "pcm990_baseboard.h"
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 
 #include "devices.h"
 #include "generic.h"

@@ -7,12 +7,12 @@
  * Copyright (C) 2006 Jonathan McDowell <noodles@earth.li>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/lcd.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/lcd.h>
 
 #include <mach/hardware.h>
 

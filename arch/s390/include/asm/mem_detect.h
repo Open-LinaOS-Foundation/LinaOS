@@ -2,7 +2,7 @@
 #ifndef _ASM_S390_MEM_DETECT_H
 #define _ASM_S390_MEM_DETECT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum mem_info_source {
 	MEM_DETECT_NONE = 0,

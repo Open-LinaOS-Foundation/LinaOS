@@ -2,18 +2,18 @@
 
 #define pr_fmt(fmt)	"papr-scm: " fmt
 
-#include <linux/of.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/ndctl.h>
-#include <linux/sched.h>
-#include <linux/libnvdimm.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/seq_buf.h>
-#include <linux/nd.h>
+#include <linaos/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/ndctl.h>
+#include <linaos/sched.h>
+#include <linaos/libnvdimm.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/seq_buf.h>
+#include <linaos/nd.h>
 
 #include <asm/plpar_wrappers.h>
 #include <asm/papr_pdsm.h>

@@ -14,7 +14,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -38,24 +38,24 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/notifier.h>
-#include <linux/memory.h>
-#include <linux/memory_hotplug.h>
-#include <linux/percpu-defs.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/gfp.h>
+#include <linaos/notifier.h>
+#include <linaos/memory.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
 
 #include <asm/page.h>
 #include <asm/tlb.h>
@@ -295,7 +295,7 @@ static enum bp_state reserve_additional_memory(void)
 
 #ifdef CONFIG_XEN_HAVE_PVMMU
 	/*
-	 * We don't support PV MMU when Linux and Xen is using
+	 * We don't support PV MMU when LinaOS and Xen is using
 	 * different page granularity.
 	 */
 	BUILD_BUG_ON(XEN_PAGE_SIZE != PAGE_SIZE);
@@ -595,7 +595,7 @@ int alloc_xenballooned_pages(int nr_pages, struct page **pages)
 			pages[pgno++] = page;
 #ifdef CONFIG_XEN_HAVE_PVMMU
 			/*
-			 * We don't support PV MMU when Linux and Xen is using
+			 * We don't support PV MMU when LinaOS and Xen is using
 			 * different page granularity.
 			 */
 			BUILD_BUG_ON(XEN_PAGE_SIZE != PAGE_SIZE);

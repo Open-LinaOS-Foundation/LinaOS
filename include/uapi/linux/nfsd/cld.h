@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Upcall description for nfsdcld communication
  *
@@ -23,7 +23,7 @@
 #ifndef _NFSD_CLD_H
 #define _NFSD_CLD_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* latest upcall version available */
 #define CLD_UPCALL_VERSION 2

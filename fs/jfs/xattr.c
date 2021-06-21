@@ -4,13 +4,13 @@
  *   Copyright (C) Christoph Hellwig, 2002
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/slab.h>
-#include <linux/quotaops.h>
-#include <linux/security.h>
+#include <linaos/capability.h>
+#include <linaos/fs.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/slab.h>
+#include <linaos/quotaops.h>
+#include <linaos/security.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_dmap.h"

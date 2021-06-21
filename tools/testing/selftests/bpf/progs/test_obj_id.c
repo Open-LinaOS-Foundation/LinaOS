@@ -2,7 +2,7 @@
 /* Copyright (c) 2017 Facebook
  */
 #include <stddef.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 struct {

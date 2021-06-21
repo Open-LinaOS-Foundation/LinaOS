@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ethtool_netlink.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/rtnetlink.h>
+#include <linaos/ethtool_netlink.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/phy.h>
+#include <linaos/rtnetlink.h>
 
 #include "common.h"
 

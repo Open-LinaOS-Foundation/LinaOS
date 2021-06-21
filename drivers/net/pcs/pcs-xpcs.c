@@ -6,11 +6,11 @@
  * Author: Jose Abreu <Jose.Abreu@synopsys.com>
  */
 
-#include <linux/delay.h>
-#include <linux/pcs/pcs-xpcs.h>
-#include <linux/mdio.h>
-#include <linux/phylink.h>
-#include <linux/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/pcs/pcs-xpcs.h>
+#include <linaos/mdio.h>
+#include <linaos/phylink.h>
+#include <linaos/workqueue.h>
 
 #define SYNOPSYS_XPCS_USXGMII_ID	0x7996ced0
 #define SYNOPSYS_XPCS_10GKR_ID		0x7996ced0

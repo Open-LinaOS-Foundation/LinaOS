@@ -2,9 +2,9 @@
 #ifndef EAP_PACKET_H
 #define EAP_PACKET_H
 
-#include <linux/compiler.h>
-#include <linux/bitops.h>
-#include <uapi/linux/if_ether.h>
+#include <linaos/compiler.h>
+#include <linaos/bitops.h>
+#include <uapi/linaos/if_ether.h>
 
 struct ether_hdr {
 	unsigned char h_dest[ETH_ALEN];	/* destination eth addr */

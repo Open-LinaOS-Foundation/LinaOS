@@ -23,27 +23,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/cpumask.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/page-flags.h>
-#include <linux/migrate.h>
-#include <linux/node.h>
-#include <linux/compaction.h>
-#include <linux/percpu.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/fs.h>
-#include <linux/preempt.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/zpool.h>
-#include <linux/magic.h>
-#include <linux/kmemleak.h>
+#include <linaos/atomic.h>
+#include <linaos/sched.h>
+#include <linaos/cpumask.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/page-flags.h>
+#include <linaos/migrate.h>
+#include <linaos/node.h>
+#include <linaos/compaction.h>
+#include <linaos/percpu.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/fs.h>
+#include <linaos/preempt.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/zpool.h>
+#include <linaos/magic.h>
+#include <linaos/kmemleak.h>
 
 /*
  * NCHUNKS_ORDER determines the internal allocation granularity, effectively

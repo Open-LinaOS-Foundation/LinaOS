@@ -3,12 +3,12 @@
  * Copyright 2018 Noralf Trønnes
  */
 
-#include <linux/dma-buf-map.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_client.h>
 #include <drm/drm_debugfs.h>

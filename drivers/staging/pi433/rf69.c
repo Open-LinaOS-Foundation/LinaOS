@@ -3,7 +3,7 @@
  * abstraction of the spi interface of HopeRf rf69 radio module
  *
  * Copyright (C) 2016 Wolf-Entwicklungen
- *	Marcus Wolf <linux@wolf-entwicklungen.de>
+ *	Marcus Wolf <linaos@wolf-entwicklungen.de>
  */
 
 /* enable prosa debug info */
@@ -13,8 +13,8 @@
 /* enable print of values on fifo access */
 #undef DEBUG_FIFO_ACCESS
 
-#include <linux/types.h>
-#include <linux/spi/spi.h>
+#include <linaos/types.h>
+#include <linaos/spi/spi.h>
 
 #include "rf69.h"
 #include "rf69_registers.h"

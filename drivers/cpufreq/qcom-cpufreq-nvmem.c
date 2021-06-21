@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
 /*
@@ -15,19 +15,19 @@
  * operating-points-v2 table when it is parsed by the OPP framework.
  */
 
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
+#include <linaos/cpu.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_opp.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/smem.h>
 
 #define MSM_ID_SMEM	137
 

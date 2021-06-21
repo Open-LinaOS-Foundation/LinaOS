@@ -229,10 +229,10 @@ struct tx3927_ccfg_reg {
  * PCIC
  */
 /* bits for PCICMD */
-/* see PCI_COMMAND_XXX in linux/pci.h */
+/* see PCI_COMMAND_XXX in linaos/pci.h */
 
 /* bits for PCISTAT */
-/* see PCI_STATUS_XXX in linux/pci.h */
+/* see PCI_STATUS_XXX in linaos/pci.h */
 #define PCI_STATUS_NEW_CAP	0x0010
 
 /* bits for ISTAT/IIM */
@@ -247,7 +247,7 @@ struct tx3927_ccfg_reg {
 #define TX3927_PCIC_TIM_ALL	0x0003ffff
 
 /* bits for IOBA/MBA */
-/* see PCI_BASE_ADDRESS_XXX in linux/pci.h */
+/* see PCI_BASE_ADDRESS_XXX in linaos/pci.h */
 
 /* bits for PBAPMC */
 #define TX3927_PCIC_PBAPMC_RPBA 0x00000004
@@ -257,7 +257,7 @@ struct tx3927_ccfg_reg {
 /* bits for LBSTAT/LBIM */
 #define TX3927_PCIC_LBIM_ALL	0x0000003e
 
-/* bits for PCISTATIM (see also PCI_STATUS_XXX in linux/pci.h */
+/* bits for PCISTATIM (see also PCI_STATUS_XXX in linaos/pci.h */
 #define TX3927_PCIC_PCISTATIM_ALL	0x0000f900
 
 /* bits for LBC */

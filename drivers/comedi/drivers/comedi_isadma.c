@@ -4,10 +4,10 @@
  * Copyright (c) 2014 H Hartley Sweeten <hsweeten@visionengravers.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
 #include <asm/dma.h>
 
 #include "../comedidev.h"

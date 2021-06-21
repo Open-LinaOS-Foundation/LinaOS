@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/seq_file.h>
-#include <linux/netfs.h>
+#include <linaos/export.h>
+#include <linaos/seq_file.h>
+#include <linaos/netfs.h>
 #include "internal.h"
 
 atomic_t netfs_n_rh_readahead;

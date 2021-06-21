@@ -7,15 +7,15 @@
  *   Based in part on ide-pnp.c by Andrey Panin <pazke@donpac.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/isapnp.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/isapnp.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
+#include <linaos/ata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME "pata_isapnp"
 #define DRV_VERSION "0.2.5"

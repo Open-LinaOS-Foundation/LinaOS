@@ -6,19 +6,19 @@
  *	Dave Gerlach
  */
 
-#include <linux/cpuidle.h>
-#include <linux/platform_data/pm33xx.h>
+#include <linaos/cpuidle.h>
+#include <linaos/platform_data/pm33xx.h>
 #include <asm/cpuidle.h>
 #include <asm/smp_scu.h>
 #include <asm/suspend.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/wkup_m3_ipc.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
+#include <linaos/errno.h>
+#include <linaos/clk.h>
+#include <linaos/cpu.h>
+#include <linaos/platform_data/gpio-omap.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/wkup_m3_ipc.h>
+#include <linaos/of.h>
+#include <linaos/rtc.h>
 
 #include "cm33xx.h"
 #include "common.h"

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2008-2017 Andes Technology Corporation
 
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/device.h>
-#include <linux/printk.h>
+#include <linaos/init.h>
+#include <linaos/suspend.h>
+#include <linaos/device.h>
+#include <linaos/printk.h>
 #include <asm/suspend.h>
 #include <nds32_intrinsic.h>
 

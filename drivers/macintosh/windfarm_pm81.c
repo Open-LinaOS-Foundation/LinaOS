@@ -76,7 +76,7 @@
  *   PID params     : From SMU sdb partition
  *   linear-factors : offset = 0xfb50 scale  = 0x1000
  *
- * CPU Slew control loop. Not implemented. The cpufreq driver in linux is
+ * CPU Slew control loop. Not implemented. The cpufreq driver in linaos is
  * completely separate for now, though we could find a way to link it, either
  * as a client reacting to overtemp notifications, or directling monitoring
  * the CPU temperature
@@ -91,17 +91,17 @@
  * communicate with the CPU freq driver;
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/kmod.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/io.h>

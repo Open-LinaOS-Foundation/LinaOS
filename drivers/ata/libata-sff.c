@@ -12,12 +12,12 @@
  *  http://www.sata-io.org/
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
+#include <linaos/libata.h>
+#include <linaos/highmem.h>
 
 #include "libata.h"
 

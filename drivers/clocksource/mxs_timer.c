@@ -6,16 +6,16 @@
 //  Copyright (C) 2008 Juergen Beisert (kernel@pengutronix.de)
 //  Copyright (C) 2010 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/stmp_device.h>
-#include <linux/sched_clock.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/clockchips.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/stmp_device.h>
+#include <linaos/sched_clock.h>
 
 /*
  * There are 2 versions of the timrot on Freescale MXS-based SoCs.

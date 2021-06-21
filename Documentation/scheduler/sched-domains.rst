@@ -65,7 +65,7 @@ of the SMP domain will span the entire machine, with each group having the
 cpumask of a node. Or, you could do multi-level NUMA or Opteron, for example,
 might have just one domain covering its one NUMA level.
 
-The implementor should read comments in include/linux/sched/sd_flags.h:
+The implementor should read comments in include/linaos/sched/sd_flags.h:
 SD_* to get an idea of the specifics and what to tune for the SD flags
 of a sched_domain.
 

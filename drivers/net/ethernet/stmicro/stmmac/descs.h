@@ -10,7 +10,7 @@
 #ifndef __DESCS_H__
 #define __DESCS_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* Normal receive descriptor defines */
 

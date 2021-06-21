@@ -7,8 +7,8 @@
  * Copyright 2013 Linaro Limited; author Roy Franz
  */
 
-#include <linux/efi.h>
-#include <linux/libfdt.h>
+#include <linaos/efi.h>
+#include <linaos/libfdt.h>
 #include <asm/efi.h>
 
 #include "efistub.h"
@@ -98,12 +98,12 @@ static efi_status_t update_fdt(void *orig_fdt, unsigned long orig_fdt_size,
 		u64 initrd_image_end;
 		u64 initrd_image_start = cpu_to_fdt64(initrd_addr);
 
-		status = fdt_setprop_var(fdt, node, "linux,initrd-start", initrd_image_start);
+		status = fdt_setprop_var(fdt, node, "linaos,initrd-start", initrd_image_start);
 		if (status)
 			goto fdt_set_fail;
 
 		initrd_image_end = cpu_to_fdt64(initrd_addr + initrd_size);
-		status = fdt_setprop_var(fdt, node, "linux,initrd-end", initrd_image_end);
+		status = fdt_setprop_var(fdt, node, "linaos,initrd-end", initrd_image_end);
 		if (status)
 			goto fdt_set_fail;
 	}
@@ -112,27 +112,27 @@ static efi_status_t update_fdt(void *orig_fdt, unsigned long orig_fdt_size,
 	node = fdt_subnode_offset(fdt, 0, "chosen");
 	fdt_val64 = cpu_to_fdt64((u64)(unsigned long)efi_system_table);
 
-	status = fdt_setprop_var(fdt, node, "linux,uefi-system-table", fdt_val64);
+	status = fdt_setprop_var(fdt, node, "linaos,uefi-system-table", fdt_val64);
 	if (status)
 		goto fdt_set_fail;
 
 	fdt_val64 = U64_MAX; /* placeholder */
 
-	status = fdt_setprop_var(fdt, node, "linux,uefi-mmap-start", fdt_val64);
+	status = fdt_setprop_var(fdt, node, "linaos,uefi-mmap-start", fdt_val64);
 	if (status)
 		goto fdt_set_fail;
 
 	fdt_val32 = U32_MAX; /* placeholder */
 
-	status = fdt_setprop_var(fdt, node, "linux,uefi-mmap-size", fdt_val32);
+	status = fdt_setprop_var(fdt, node, "linaos,uefi-mmap-size", fdt_val32);
 	if (status)
 		goto fdt_set_fail;
 
-	status = fdt_setprop_var(fdt, node, "linux,uefi-mmap-desc-size", fdt_val32);
+	status = fdt_setprop_var(fdt, node, "linaos,uefi-mmap-desc-size", fdt_val32);
 	if (status)
 		goto fdt_set_fail;
 
-	status = fdt_setprop_var(fdt, node, "linux,uefi-mmap-desc-ver", fdt_val32);
+	status = fdt_setprop_var(fdt, node, "linaos,uefi-mmap-desc-ver", fdt_val32);
 	if (status)
 		goto fdt_set_fail;
 
@@ -172,25 +172,25 @@ static efi_status_t update_fdt_memmap(void *fdt, struct efi_boot_memmap *map)
 
 	fdt_val64 = cpu_to_fdt64((unsigned long)*map->map);
 
-	err = fdt_setprop_inplace_var(fdt, node, "linux,uefi-mmap-start", fdt_val64);
+	err = fdt_setprop_inplace_var(fdt, node, "linaos,uefi-mmap-start", fdt_val64);
 	if (err)
 		return EFI_LOAD_ERROR;
 
 	fdt_val32 = cpu_to_fdt32(*map->map_size);
 
-	err = fdt_setprop_inplace_var(fdt, node, "linux,uefi-mmap-size", fdt_val32);
+	err = fdt_setprop_inplace_var(fdt, node, "linaos,uefi-mmap-size", fdt_val32);
 	if (err)
 		return EFI_LOAD_ERROR;
 
 	fdt_val32 = cpu_to_fdt32(*map->desc_size);
 
-	err = fdt_setprop_inplace_var(fdt, node, "linux,uefi-mmap-desc-size", fdt_val32);
+	err = fdt_setprop_inplace_var(fdt, node, "linaos,uefi-mmap-desc-size", fdt_val32);
 	if (err)
 		return EFI_LOAD_ERROR;
 
 	fdt_val32 = cpu_to_fdt32(*map->desc_ver);
 
-	err = fdt_setprop_inplace_var(fdt, node, "linux,uefi-mmap-desc-ver", fdt_val32);
+	err = fdt_setprop_inplace_var(fdt, node, "linaos,uefi-mmap-desc-ver", fdt_val32);
 	if (err)
 		return EFI_LOAD_ERROR;
 

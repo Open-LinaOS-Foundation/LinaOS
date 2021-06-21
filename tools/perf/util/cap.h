@@ -3,8 +3,8 @@
 #define __PERF_CAP_H
 
 #include <stdbool.h>
-#include <linux/capability.h>
-#include <linux/compiler.h>
+#include <linaos/capability.h>
+#include <linaos/compiler.h>
 
 #ifdef HAVE_LIBCAP_SUPPORT
 

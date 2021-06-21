@@ -9,18 +9,18 @@
  * on the Intel Xscale(R) family of I/O Processors (IOP 32x, 33x, 134x)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
-#include <linux/memory.h>
-#include <linux/ioport.h>
-#include <linux/raid/pq.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/prefetch.h>
+#include <linaos/memory.h>
+#include <linaos/ioport.h>
+#include <linaos/raid/pq.h>
+#include <linaos/slab.h>
 
 #include "iop-adma.h"
 #include "dmaengine.h"
@@ -651,7 +651,7 @@ iop_adma_prep_dma_pq(struct dma_chan *chan, dma_addr_t *dst, dma_addr_t *src,
 
 		/* if we are continuing a previous operation factor in
 		 * the old p and q values, see the comment for dma_maxpq
-		 * in include/linux/dmaengine.h
+		 * in include/linaos/dmaengine.h
 		 */
 		if (dmaf_p_disabled_continue(flags))
 			iop_desc_set_pq_src_addr(g, i++, dst[1], 1);

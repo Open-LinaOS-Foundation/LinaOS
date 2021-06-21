@@ -54,11 +54,11 @@
 #include "ivtv-routing.h"
 #include "ivtv-controls.h"
 #include "ivtv-gpio.h"
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <media/tveeprom.h>
 #include <media/i2c/saa7115.h>
 #include "tuner-xc2028.h"
-#include <uapi/linux/sched/types.h>
+#include <uapi/linaos/sched/types.h>
 
 /* If you have already X v4l cards, then set this to X. This way
    the device numbers stay matched. Example: you have a WinTV card
@@ -719,7 +719,7 @@ done:
 		IVTV_ERR("              %s based\n", chipname);
 		IVTV_ERR("Defaulting to %s card\n", itv->card->name);
 		IVTV_ERR("Please mail the vendor/device and subsystem vendor/device IDs and what kind of\n");
-		IVTV_ERR("card you have to the linux-media mailinglist (www.linuxtv.org)\n");
+		IVTV_ERR("card you have to the linaos-media mailinglist (www.linaostv.org)\n");
 		IVTV_ERR("Prefix your subject line with [UNKNOWN IVTV CARD].\n");
 	}
 	itv->v4l2_cap = itv->card->v4l2_capabilities;

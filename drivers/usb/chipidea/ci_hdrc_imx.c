@@ -5,15 +5,15 @@
  * on behalf of DENX Software Engineering GmbH
  */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/of.h>
-#include <linux/clk.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_qos.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/usb/chipidea.h>
+#include <linaos/usb/of.h>
+#include <linaos/clk.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm_qos.h>
 
 #include "ci.h"
 #include "ci_hdrc_imx.h"

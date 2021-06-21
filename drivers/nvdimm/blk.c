@@ -4,13 +4,13 @@
  * Copyright (c) 2014, Intel Corporation.
  */
 
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/nd.h>
-#include <linux/sizes.h>
+#include <linaos/blkdev.h>
+#include <linaos/fs.h>
+#include <linaos/genhd.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/nd.h>
+#include <linaos/sizes.h>
 #include "nd.h"
 
 static u32 nsblk_meta_size(struct nd_namespace_blk *nsblk)
@@ -335,7 +335,7 @@ static void __exit nd_blk_exit(void)
 	driver_unregister(&nd_blk_driver.drv);
 }
 
-MODULE_AUTHOR("Ross Zwisler <ross.zwisler@linux.intel.com>");
+MODULE_AUTHOR("Ross Zwisler <ross.zwisler@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS_ND_DEVICE(ND_DEVICE_NAMESPACE_BLK);
 module_init(nd_blk_init);

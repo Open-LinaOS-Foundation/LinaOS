@@ -21,7 +21,7 @@ int main()
 	IntrusiveRefCntPtr<DiagnosticOptions> DiagOpts = new DiagnosticOptions();
 
 	DiagnosticsEngine Diags(DiagID, &*DiagOpts);
-	Driver TheDriver("test", "bpf-pc-linux", Diags);
+	Driver TheDriver("test", "bpf-pc-linaos", Diags);
 
 	llvm::llvm_shutdown();
 	return 0;

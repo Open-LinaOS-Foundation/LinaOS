@@ -6,7 +6,7 @@
  *  Copyright (C) 2000-2001	Greg Kroah-Hartman (greg@kroah.com)
  *  Copyright (C) 2010		Johan Hovold (jhovold@gmail.com)
  *
- *  This program is largely derived from work by the linux-usb group
+ *  This program is largely derived from work by the linaos-usb group
  *  and associated source files.  Please see the usb/serial files for
  *  individual credits and copyrights.
  *
@@ -19,17 +19,17 @@
  * -- Add support for flush commands
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 #include "belkin_sa.h"
 
 #define DRIVER_AUTHOR "William Greathouse <wgreathouse@smva.com>"

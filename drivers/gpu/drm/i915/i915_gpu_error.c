@@ -27,12 +27,12 @@
  *
  */
 
-#include <linux/ascii85.h>
-#include <linux/nmi.h>
-#include <linux/pagevec.h>
-#include <linux/scatterlist.h>
-#include <linux/utsname.h>
-#include <linux/zlib.h>
+#include <linaos/ascii85.h>
+#include <linaos/nmi.h>
+#include <linaos/pagevec.h>
+#include <linaos/scatterlist.h>
+#include <linaos/utsname.h>
+#include <linaos/zlib.h>
 
 #include <drm/drm_print.h>
 

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * flat.h -- uClinux flat-format executables
+ * flat.h -- uClinaos flat-format executables
  */
 
 #ifndef __M68KNOMMU_FLAT_H__

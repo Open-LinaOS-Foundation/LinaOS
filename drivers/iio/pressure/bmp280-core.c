@@ -16,19 +16,19 @@
 
 #define pr_fmt(fmt) "bmp280: " fmt
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h> /* For irq_get_irq_data() */
-#include <linux/completion.h>
-#include <linux/pm_runtime.h>
-#include <linux/random.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h> /* For irq_get_irq_data() */
+#include <linaos/completion.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/random.h>
 
 #include "bmp280.h"
 

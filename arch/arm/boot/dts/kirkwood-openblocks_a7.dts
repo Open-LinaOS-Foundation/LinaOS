@@ -141,7 +141,7 @@
 
 		button {
 			label = "Init Button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
 		};
 	};
@@ -172,7 +172,7 @@
 	};
 
 	partition@b20000 {
-		label = "linux";
+		label = "linaos";
 		reg = <0xb20000 0x3d40000>;
 	};
 

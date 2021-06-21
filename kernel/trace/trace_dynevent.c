@@ -5,12 +5,12 @@
  * Copyright (C) 2018 Masami Hiramatsu <mhiramat@kernel.org>
  */
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/tracefs.h>
+#include <linaos/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/tracefs.h>
 
 #include "trace.h"
 #include "trace_dynevent.h"

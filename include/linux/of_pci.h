@@ -2,8 +2,8 @@
 #ifndef __OF_PCI_H
 #define __OF_PCI_H
 
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 
 struct pci_dev;
 struct device_node;

@@ -6,20 +6,20 @@
  * Copyright (C) 2017 Chinamobile, Inc.
  */
 
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/parser.h>
-#include <linux/vmalloc.h>
-#include <linux/uio_driver.h>
-#include <linux/xarray.h>
-#include <linux/stringify.h>
-#include <linux/bitops.h>
-#include <linux/highmem.h>
-#include <linux/configfs.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/parser.h>
+#include <linaos/vmalloc.h>
+#include <linaos/uio_driver.h>
+#include <linaos/xarray.h>
+#include <linaos/stringify.h>
+#include <linaos/bitops.h>
+#include <linaos/highmem.h>
+#include <linaos/configfs.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
 #include <net/genetlink.h>
 #include <scsi/scsi_common.h>
 #include <scsi/scsi_proto.h>
@@ -27,7 +27,7 @@
 #include <target/target_core_fabric.h>
 #include <target/target_core_backend.h>
 
-#include <linux/target_core_user.h>
+#include <linaos/target_core_user.h>
 
 /**
  * DOC: Userspace I/O

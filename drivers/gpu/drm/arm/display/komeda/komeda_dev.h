@@ -7,8 +7,8 @@
 #ifndef _KOMEDA_DEV_H_
 #define _KOMEDA_DEV_H_
 
-#include <linux/device.h>
-#include <linux/clk.h>
+#include <linaos/device.h>
+#include <linaos/clk.h>
 #include "komeda_pipeline.h"
 #include "malidp_product.h"
 #include "komeda_format_caps.h"

@@ -6,13 +6,13 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
 
-struct linux_romvec *romvec;
+struct linaos_romvec *romvec;
 enum prom_major_version prom_vers;
 unsigned int prom_rev, prom_prev;
 
@@ -20,14 +20,14 @@ unsigned int prom_rev, prom_prev;
 int prom_root_node;
 
 /* Pointer to the device tree operations structure. */
-struct linux_nodeops *prom_nodeops;
+struct linaos_nodeops *prom_nodeops;
 
 /* You must call prom_init() before you attempt to use any of the
  * routines in the prom library.
  * It gets passed the pointer to the PROM vector.
  */
 
-void __init prom_init(struct linux_romvec *rp)
+void __init prom_init(struct linaos_romvec *rp)
 {
 	romvec = rp;
 

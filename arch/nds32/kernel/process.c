@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/delay.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/delay.h>
+#include <linaos/kallsyms.h>
+#include <linaos/uaccess.h>
 #include <asm/elf.h>
 #include <asm/proc-fns.h>
 #include <asm/fpu.h>
-#include <linux/ptrace.h>
-#include <linux/reboot.h>
+#include <linaos/ptrace.h>
+#include <linaos/reboot.h>
 
 #if IS_ENABLED(CONFIG_LAZY_FPU)
 struct task_struct *last_task_used_math;

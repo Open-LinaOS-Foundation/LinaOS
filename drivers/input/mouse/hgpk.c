@@ -27,12 +27,12 @@
  */
 
 #define DEBUG
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/delay.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/serio.h>
+#include <linaos/libps2.h>
+#include <linaos/delay.h>
 #include <asm/olpc.h>
 
 #include "psmouse.h"

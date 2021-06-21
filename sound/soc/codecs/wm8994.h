@@ -6,12 +6,12 @@
 #ifndef _WM8994_H
 #define _WM8994_H
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 #include <sound/soc.h>
-#include <linux/firmware.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <linaos/firmware.h>
+#include <linaos/completion.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
 
 #include "wm_hubs.h"
 

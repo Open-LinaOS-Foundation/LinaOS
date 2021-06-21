@@ -3,8 +3,8 @@
 #ifndef _INTEL_SIDEBAND_H_
 #define _INTEL_SIDEBAND_H_
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 enum pipe;

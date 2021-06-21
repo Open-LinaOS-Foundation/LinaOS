@@ -2,18 +2,18 @@
 /*
  * Checksum functions for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 /*  This was derived from arch/alpha/lib/checksum.c  */
 
 
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
 
 #include <asm/byteorder.h>
 #include <net/checksum.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/intrinsics.h>
 
 

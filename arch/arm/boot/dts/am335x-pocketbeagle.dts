@@ -26,21 +26,21 @@
 		usr0 {
 			label = "beaglebone:green:usr0";
 			gpios = <&gpio1 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		usr1 {
 			label = "beaglebone:green:usr1";
 			gpios = <&gpio1 22 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		usr2 {
 			label = "beaglebone:green:usr2";
 			gpios = <&gpio1 23 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu0";
+			linaos,default-trigger = "cpu0";
 			default-state = "off";
 		};
 

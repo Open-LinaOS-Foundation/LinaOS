@@ -25,15 +25,15 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/uio.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_dp_helper.h>

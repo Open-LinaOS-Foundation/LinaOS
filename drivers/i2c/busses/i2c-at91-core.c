@@ -13,16 +13,16 @@
  *  Copyright (C) 2000 Philip Edelbrock <phil@stimpy.netroedge.com>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include "i2c-at91.h"
 

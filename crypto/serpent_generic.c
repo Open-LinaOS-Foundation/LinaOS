@@ -7,12 +7,12 @@
  * Copyright (C) 2002 Dag Arne Osvik <osvik@ii.uib.no>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
 #include <asm/unaligned.h>
-#include <linux/crypto.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/types.h>
 #include <crypto/serpent.h>
 
 /* Key is padded to the maximum of 256 bits before round key generation.

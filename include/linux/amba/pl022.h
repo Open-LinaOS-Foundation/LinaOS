@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/amba/pl022.h
+ * include/linaos/amba/pl022.h
  *
  * Copyright (C) 2008-2009 ST-Ericsson AB
  * Copyright (C) 2006 STMicroelectronics Pvt. Ltd.
@@ -8,7 +8,7 @@
  * Author: Linus Walleij <linus.walleij@stericsson.com>
  *
  * Initial version inspired by:
- *	linux-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
+ *	linaos-2.6.17-rc3-mm1/drivers/spi/pxa2xx_spi.c
  * Initial adoption to PL022 by:
  *      Sachin Verma <sachin.verma@st.com>
  */
@@ -16,7 +16,7 @@
 #ifndef _SSP_PL022_H
 #define _SSP_PL022_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * whether SSP is in loopback mode or not

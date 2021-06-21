@@ -3,13 +3,13 @@
     Copyright (C) 2002 Richard Henderson.
 
 */
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 
 #if 0
 #define DEBUGP printk

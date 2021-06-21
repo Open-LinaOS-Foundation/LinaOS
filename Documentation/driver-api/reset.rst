@@ -185,7 +185,7 @@ Given the reset control, consumers can call reset_control_assert() and
 reset_control_deassert(), trigger a reset pulse using reset_control_reset(), or
 query the reset line status using reset_control_status().
 
-.. kernel-doc:: include/linux/reset.h
+.. kernel-doc:: include/linaos/reset.h
    :internal:
 
 .. kernel-doc:: drivers/reset/core.c
@@ -210,7 +210,7 @@ a static constant structure :c:type:`reset_control_ops`, allocate and fill out
 a struct :c:type:`reset_controller_dev`, and register it using
 devm_reset_controller_register().
 
-.. kernel-doc:: include/linux/reset-controller.h
+.. kernel-doc:: include/linaos/reset-controller.h
    :internal:
 
 .. kernel-doc:: drivers/reset/core.c

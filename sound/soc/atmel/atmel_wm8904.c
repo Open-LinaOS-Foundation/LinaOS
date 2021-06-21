@@ -7,10 +7,10 @@
  * Author: Bo Shen <voice.shen@atmel.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include <sound/soc.h>
 

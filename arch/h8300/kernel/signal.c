@@ -1,5 +1,5 @@
 /*
- *  linux/arch/h8300/kernel/signal.c
+ *  linaos/arch/h8300/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,11 +9,11 @@
  */
 
 /*
- * uClinux H8/300 support by Yoshinori Sato <ysato@users.sourceforge.jp>
+ * uClinaos H8/300 support by Yoshinori Sato <ysato@users.sourceforge.jp>
  *                and David McCullough <davidm@snapgear.com>
  *
  * Based on
- * Linux/m68k by Hamish Macdonald
+ * LinaOS/m68k by Hamish Macdonald
  */
 
 /*
@@ -24,25 +24,25 @@
  * signal handlers!
  */
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/syscalls.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/highuid.h>
-#include <linux/personality.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/tracehook.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/syscalls.h>
+#include <linaos/errno.h>
+#include <linaos/wait.h>
+#include <linaos/ptrace.h>
+#include <linaos/unistd.h>
+#include <linaos/stddef.h>
+#include <linaos/highuid.h>
+#include <linaos/personality.h>
+#include <linaos/tty.h>
+#include <linaos/binfmts.h>
+#include <linaos/tracehook.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/traps.h>
 #include <asm/ucontext.h>
 

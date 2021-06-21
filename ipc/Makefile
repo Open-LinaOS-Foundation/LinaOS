@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux ipc.
+# Makefile for the linaos ipc.
 #
 
 obj-$(CONFIG_SYSVIPC_COMPAT) += compat.o

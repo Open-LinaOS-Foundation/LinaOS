@@ -4,17 +4,17 @@
  *
  * Copyright 2013,2014 IBM Corp.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/fcntl.h>
-#include <linux/kobject.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fcntl.h>
+#include <linaos/kobject.h>
+#include <linaos/uaccess.h>
 #include <asm/opal.h>
 
 struct elog_obj {

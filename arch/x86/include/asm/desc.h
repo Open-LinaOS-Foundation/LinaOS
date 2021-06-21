@@ -9,8 +9,8 @@
 #include <asm/irq_vectors.h>
 #include <asm/cpu_entry_area.h>
 
-#include <linux/smp.h>
-#include <linux/percpu.h>
+#include <linaos/smp.h>
+#include <linaos/percpu.h>
 
 static inline void fill_ldt(struct desc_struct *desc, const struct user_desc *info)
 {
@@ -314,7 +314,7 @@ static inline void refresh_tss_limit(void)
  * If you do something evil that corrupts the cached TSS limit (I'm looking
  * at you, VMX exits), call this function.
  *
- * The optimization here is that the TSS limit only matters for Linux if the
+ * The optimization here is that the TSS limit only matters for LinaOS if the
  * IO bitmap is in use.  If the TSS limit gets forced to its minimum value,
  * everything works except that IO bitmap will be ignored and all CPL 3 IO
  * instructions will #GP, which is exactly what we want for normal tasks.

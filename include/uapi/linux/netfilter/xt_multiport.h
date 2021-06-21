@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_MULTIPORT_H
 #define _XT_MULTIPORT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum xt_multiport_flags {
 	XT_MULTIPORT_SOURCE,

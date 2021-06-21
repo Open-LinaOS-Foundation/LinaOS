@@ -8,10 +8,10 @@
 
 struct ipu_soc;
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
 
 #include <video/imx-ipu-v3.h>
 

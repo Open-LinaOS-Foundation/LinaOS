@@ -4,13 +4,13 @@
 #define KBUILD_MODNAME "foo"
 #include <stddef.h>
 #include <string.h>
-#include <linux/bpf.h>
-#include <linux/icmp.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
+#include <linaos/bpf.h>
+#include <linaos/icmp.h>
+#include <linaos/in.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>

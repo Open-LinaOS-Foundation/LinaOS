@@ -7,16 +7,16 @@
  * Lots of inspiration and code was copied from drivers/mfd/sm501.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/core.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/core.h>
 
-#include <linux/mfd/janz.h>
+#include <linaos/mfd/janz.h>
 
 #define DRV_NAME "janz-cmodio"
 

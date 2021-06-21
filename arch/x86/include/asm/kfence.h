@@ -8,8 +8,8 @@
 #ifndef _ASM_X86_KFENCE_H
 #define _ASM_X86_KFENCE_H
 
-#include <linux/bug.h>
-#include <linux/kfence.h>
+#include <linaos/bug.h>
+#include <linaos/kfence.h>
 
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>

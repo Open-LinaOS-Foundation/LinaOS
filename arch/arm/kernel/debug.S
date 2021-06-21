@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/kernel/debug.S
+ *  linaos/arch/arm/kernel/debug.S
  *
  *  Copyright (C) 1994-1999 Russell King
  *
  *  32-bit debugging code
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 		.text

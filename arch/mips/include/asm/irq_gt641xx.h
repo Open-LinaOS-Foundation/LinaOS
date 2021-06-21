@@ -2,7 +2,7 @@
 /*
  *  Galileo/Marvell GT641xx IRQ definitions.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef _ASM_IRQ_GT641XX_H
 #define _ASM_IRQ_GT641XX_H

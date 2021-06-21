@@ -9,18 +9,18 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/thermal.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/notifier.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/power_supply.h>
+#include <linaos/property.h>
+#include <linaos/thermal.h>
 #include "power_supply.h"
 
 /* exported for the APM Power driver, APM emulation */

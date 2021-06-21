@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <ioremap.h>
 
 void __iomem *ioremap_prot(phys_addr_t offset, unsigned long size,

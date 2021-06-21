@@ -1690,7 +1690,7 @@ do {									\
 
 /* Macros for building, reading or writing register values or bits
  * using MDIO.  Different from above because of the use of standardized
- * Linux include values.  No shifting is performed with the bit
+ * LinaOS include values.  No shifting is performed with the bit
  * operations, everything works on mask values.
  */
 #define XMDIO_READ(_pdata, _mmd, _reg)					\

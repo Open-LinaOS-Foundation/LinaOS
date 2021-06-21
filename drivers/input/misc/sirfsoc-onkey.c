@@ -6,14 +6,14 @@
  * company.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/rtc/sirfsoc_rtciobrg.h>
-#include <linux/of.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/rtc/sirfsoc_rtciobrg.h>
+#include <linaos/of.h>
+#include <linaos/workqueue.h>
 
 struct sirfsoc_pwrc_drvdata {
 	u32			pwrc_base;

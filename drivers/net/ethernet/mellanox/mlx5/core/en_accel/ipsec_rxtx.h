@@ -34,7 +34,7 @@
 #ifndef __MLX5E_IPSEC_RXTX_H__
 #define __MLX5E_IPSEC_RXTX_H__
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/xfrm.h>
 #include "en.h"
 #include "en/txrx.h"

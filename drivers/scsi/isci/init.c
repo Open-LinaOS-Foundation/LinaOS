@@ -53,11 +53,11 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/efi.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
+#include <linaos/efi.h>
 #include <asm/string.h>
 #include <scsi/scsi_host.h>
 #include "host.h"
@@ -93,7 +93,7 @@ static const struct pci_device_id isci_id_table[] = {
 
 MODULE_DEVICE_TABLE(pci, isci_id_table);
 
-/* linux isci specific settings */
+/* linaos isci specific settings */
 
 unsigned char no_outbound_task_to = 2;
 module_param(no_outbound_task_to, byte, 0);

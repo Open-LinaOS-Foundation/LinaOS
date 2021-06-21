@@ -3,12 +3,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2008 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2008 by Ralf Baechle (ralf@linaos-mips.org)
  */
 #ifndef __ASM_R4K_TIMER_H
 #define __ASM_R4K_TIMER_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifdef CONFIG_SYNC_R4K
 

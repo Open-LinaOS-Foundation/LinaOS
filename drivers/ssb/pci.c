@@ -17,11 +17,11 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/ssb/ssb_regs.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 
 
 /* Define the following to 1 to enable a printk on each coreswitch. */

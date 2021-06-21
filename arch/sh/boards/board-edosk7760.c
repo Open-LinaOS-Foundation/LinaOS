@@ -5,20 +5,20 @@
  * Copyright (C) 2008 SPES Societa' Progettazione Elettronica e Software Ltd.
  * Author: Luca Santini <luca.santini@spesonline.com>
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/smc91x.h>
-#include <linux/interrupt.h>
-#include <linux/sh_intc.h>
-#include <linux/i2c.h>
-#include <linux/mtd/physmap.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/smc91x.h>
+#include <linaos/interrupt.h>
+#include <linaos/sh_intc.h>
+#include <linaos/i2c.h>
+#include <linaos/mtd/physmap.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 #include <asm/addrspace.h>
 #include <asm/delay.h>
 #include <asm/i2c-sh7760.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 /* Bus state controller registers for CS4 area */
 #define BSC_CS4BCR	0xA4FD0010

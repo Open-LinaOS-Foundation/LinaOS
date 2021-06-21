@@ -17,33 +17,33 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/rtnetlink.h>
-#include <linux/prefetch.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/tcp.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/prefetch.h>
 #include <net/ip6_checksum.h>
-#include <linux/ktime.h>
-#include <linux/numa.h>
+#include <linaos/ktime.h>
+#include <linaos/numa.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linaos/cpu_rmap.h>
 #endif
-#include <linux/crash_dump.h>
+#include <linaos/crash_dump.h>
 #include <net/busy_poll.h>
 #include <net/vxlan.h>
 

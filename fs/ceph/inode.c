@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/writeback.h>
-#include <linux/vmalloc.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/random.h>
-#include <linux/sort.h>
-#include <linux/iversion.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/writeback.h>
+#include <linaos/vmalloc.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl.h>
+#include <linaos/random.h>
+#include <linaos/sort.h>
+#include <linaos/iversion.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "cache.h"
-#include <linux/ceph/decode.h>
+#include <linaos/ceph/decode.h>
 
 /*
  * Ceph inode operations

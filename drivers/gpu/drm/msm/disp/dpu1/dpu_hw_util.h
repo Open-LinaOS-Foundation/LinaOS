@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DPU_HW_UTIL_H
 #define _DPU_HW_UTIL_H
 
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 #include "dpu_hw_mdss.h"
 
 #define REG_MASK(n)                     ((BIT(n)) - 1)

@@ -7,8 +7,8 @@
  * Author: Claudiu Beznea <claudiu.beznea@microchip.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mach/arch.h>
 #include <asm/system_misc.h>

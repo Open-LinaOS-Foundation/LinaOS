@@ -27,34 +27,34 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/tcp.h>      /* needed for sizeof(tcphdr) */
-#include <linux/udp.h>      /* needed for sizeof(udphdr) */
-#include <linux/phy.h>
-#include <linux/in.h>
-#include <linux/io.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/dma-mapping.h>
-#include <linux/processor.h>
-#include <linux/platform_data/xilinx-ll-temac.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/tcp.h>      /* needed for sizeof(tcphdr) */
+#include <linaos/udp.h>      /* needed for sizeof(udphdr) */
+#include <linaos/phy.h>
+#include <linaos/in.h>
+#include <linaos/io.h>
+#include <linaos/ip.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/processor.h>
+#include <linaos/platform_data/xilinx-ll-temac.h>
 
 #include "ll_temac.h"
 

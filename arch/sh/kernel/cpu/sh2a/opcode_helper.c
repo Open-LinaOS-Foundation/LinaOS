@@ -6,7 +6,7 @@
  *
  *  Copyright (C) 2007  Paul Mundt
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /*
  * Instructions on SH are generally fixed at 16-bits, however, SH-2A

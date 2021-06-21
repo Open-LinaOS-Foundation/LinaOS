@@ -4,20 +4,20 @@
  * This file is released under the GPL.
  */
 
-#include <linux/blkdev.h>
-#include <linux/device-mapper.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kdev_t.h>
-#include <linux/list.h>
-#include <linux/list_bl.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/log2.h>
-#include <linux/dm-kcopyd.h>
+#include <linaos/blkdev.h>
+#include <linaos/device-mapper.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kdev_t.h>
+#include <linaos/list.h>
+#include <linaos/list_bl.h>
+#include <linaos/mempool.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/log2.h>
+#include <linaos/dm-kcopyd.h>
 
 #include "dm.h"
 

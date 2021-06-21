@@ -7,8 +7,8 @@
 #ifndef K3_CPTS_H_
 #define K3_CPTS_H_
 
-#include <linux/device.h>
-#include <linux/of.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
 
 struct am65_cpts;
 

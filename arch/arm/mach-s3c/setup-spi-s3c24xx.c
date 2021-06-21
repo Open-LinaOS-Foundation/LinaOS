@@ -5,8 +5,8 @@
 // Copyright (C) 2011 Samsung Electronics Ltd.
 //		http://www.samsung.com/
 
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_device.h>
 
 #include "gpio-cfg.h"
 

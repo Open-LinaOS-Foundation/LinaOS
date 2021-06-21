@@ -12,7 +12,7 @@
 #ifndef VIDTV_ENCODER_H
 #define VIDTV_ENCODER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum vidtv_encoder_id {
 	/* add IDs here when implementing new encoders */

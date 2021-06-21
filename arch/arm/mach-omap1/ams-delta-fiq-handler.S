@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mach-omap1/ams-delta-fiq-handler.S
+ *  linaos/arch/arm/mach-omap1/ams-delta-fiq-handler.S
  *
- *  Based on  linux/arch/arm/lib/floppydma.S
+ *  Based on  linaos/arch/arm/lib/floppydma.S
  *  Renamed and modified to work with 2.6 kernel by Matt Callow
  *  Copyright (C) 1995, 1996 Russell King
  *  Copyright (C) 2004 Pete Trapps
@@ -10,9 +10,9 @@
  *  Copyright (C) 2010 Janusz Krzysztofik
  */
 
-#include <linux/linkage.h>
-#include <linux/platform_data/ams-delta-fiq.h>
-#include <linux/platform_data/gpio-omap.h>
+#include <linaos/linkage.h>
+#include <linaos/platform_data/ams-delta-fiq.h>
+#include <linaos/platform_data/gpio-omap.h>
 
 #include <asm/assembler.h>
 #include <asm/irq.h>

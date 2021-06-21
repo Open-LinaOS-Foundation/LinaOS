@@ -6,20 +6,20 @@
  * context. The enqueueing is NMI-safe.
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/irq_work.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/irqflags.h>
-#include <linux/sched.h>
-#include <linux/tick.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/irq_work.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
+#include <linaos/irqflags.h>
+#include <linaos/sched.h>
+#include <linaos/tick.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/smp.h>
 #include <asm/processor.h>
-#include <linux/kasan.h>
+#include <linaos/kasan.h>
 
 static DEFINE_PER_CPU(struct llist_head, raised_list);
 static DEFINE_PER_CPU(struct llist_head, lazy_list);

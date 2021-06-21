@@ -1,5 +1,5 @@
 =================
-Linux I2C and DMA
+LinaOS I2C and DMA
 =================
 
 Given that I2C is a low-speed bus, over which the majority of messages

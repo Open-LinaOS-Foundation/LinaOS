@@ -25,11 +25,11 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE. */
-#include <linux/types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/virtio_config.h>
+#include <linaos/virtio_types.h>
+#include <linaos/if_ether.h>
 
 /* The feature bitmap for virtio net */
 #define VIRTIO_NET_F_CSUM	0	/* Host handles pkts w/ partial csum */

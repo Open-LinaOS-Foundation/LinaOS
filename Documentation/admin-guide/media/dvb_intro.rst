@@ -61,7 +61,7 @@ software or hardware for decoding and viewing.
 Getting the card going
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The Device Driver API for DVB under Linux will the following
+The Device Driver API for DVB under LinaOS will the following
 device nodes via the devfs filesystem:
 
 * /dev/dvb/adapter0/demux0
@@ -115,9 +115,9 @@ Channel 31	557.625 Mhz
 The digital TV Scan utilities (like dvbv5-scan) have use a set of
 compiled-in defaults for various countries and regions. Those are
 currently provided as a separate package, called dtv-scan-tables. It's
-git tree is located at LinuxTV.org:
+git tree is located at LinaOSTV.org:
 
-    https://git.linuxtv.org/dtv-scan-tables.git/
+    https://git.linaostv.org/dtv-scan-tables.git/
 
 If none of the tables there suit, you can specify a data file on the
 command line which contains the transponder frequencies. Here is a
@@ -155,7 +155,7 @@ data is represented by::
 
 For an updated version of the complete table, please see:
 
-    https://git.linuxtv.org/dtv-scan-tables.git/tree/dvb-t/au-Melbourne
+    https://git.linaostv.org/dtv-scan-tables.git/tree/dvb-t/au-Melbourne
 
 When the Digital TV scanning utility runs, it will output a file
 containing the information for all the audio and video programs that

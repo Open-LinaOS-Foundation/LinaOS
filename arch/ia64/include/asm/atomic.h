@@ -13,7 +13,7 @@
  * Copyright (C) 1998, 1999, 2002-2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/intrinsics.h>
 #include <asm/barrier.h>

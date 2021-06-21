@@ -6,7 +6,7 @@
 #ifndef __ASM_MACH_LOONGSON32_PLATFORM_H
 #define __ASM_MACH_LOONGSON32_PLATFORM_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #include <dma.h>
 #include <nand.h>

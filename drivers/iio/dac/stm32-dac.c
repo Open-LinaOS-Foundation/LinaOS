@@ -7,13 +7,13 @@
  *	    Fabrice Gasnier <fabrice.gasnier@st.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/bitfield.h>
+#include <linaos/delay.h>
+#include <linaos/iio/iio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #include "stm32-dac-core.h"
 

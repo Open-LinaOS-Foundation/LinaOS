@@ -5,7 +5,7 @@
  * (C) 2015 Pengutronix, Alexander Aring <aar@pengutronix.de>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <net/6lowpan.h>
 #include <net/addrconf.h>

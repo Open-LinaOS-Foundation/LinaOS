@@ -5,7 +5,7 @@
 //
 // Licensed under the terms of the GNU General Public License, version 2.
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "ff.h"
 

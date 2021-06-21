@@ -11,9 +11,9 @@
 #include <crypto/xts.h>
 #include <crypto/gcm.h>
 #include <crypto/scatterwalk.h>
-#include <linux/rtnetlink.h>
-#include <linux/sort.h>
-#include <linux/module.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/sort.h>
+#include <linaos/module.h>
 #include "otx2_cptvf.h"
 #include "otx2_cptvf_algs.h"
 #include "otx2_cpt_reqmgr.h"

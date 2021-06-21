@@ -13,13 +13,13 @@
  */
 
 #include "cyttsp4_core.h"
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/input/mt.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 /* Timeout in ms. */
 #define CY_CORE_REQUEST_EXCLUSIVE_TIMEOUT	500

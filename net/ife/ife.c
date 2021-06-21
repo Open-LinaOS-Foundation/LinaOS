@@ -4,7 +4,7 @@
  * Copyright (c) 2017 Yotam Gigi <yotamg@mellanox.com>
  *
  * Refer to: draft-ietf-forces-interfelfb-03 and netdev01 paper:
- * "Distributing Linux Traffic Control Classifier-Action Subsystem"
+ * "Distributing LinaOS Traffic Control Classifier-Action Subsystem"
  * Authors: Jamal Hadi Salim and Damascene M. Joachimpillai
  *
  * This program is free software; you can redistribute it and/or modify
@@ -12,18 +12,18 @@
  * the Free Software Foundation.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <net/ife.h>
 
 struct ifeheadr {

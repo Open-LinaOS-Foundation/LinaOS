@@ -7,14 +7,14 @@
 
 */
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 #include "stb0899_drv.h"

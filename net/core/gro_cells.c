@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
 #include <net/gro_cells.h>
 
 struct gro_cell {

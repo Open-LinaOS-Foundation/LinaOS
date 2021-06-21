@@ -5,7 +5,7 @@
 #ifndef __LINUX_MFD_INGENIC_TCU_H_
 #define __LINUX_MFD_INGENIC_TCU_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define TCU_REG_WDT_TDR		0x00
 #define TCU_REG_WDT_TCER	0x04

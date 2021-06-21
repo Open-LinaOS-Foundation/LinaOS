@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Device handling code
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netpoll.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/list.h>
-#include <linux/netfilter_bridge.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/netpoll.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/list.h>
+#include <linaos/netfilter_bridge.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "br_private.h"
 
 #define COMMON_FEATURES (NETIF_F_SG | NETIF_F_FRAGLIST | NETIF_F_HIGHDMA | \

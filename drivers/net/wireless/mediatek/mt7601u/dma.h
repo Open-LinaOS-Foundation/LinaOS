@@ -8,7 +8,7 @@
 #define __MT7601U_DMA_H
 
 #include <asm/unaligned.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 #define MT_DMA_HDR_LEN			4
 #define MT_RX_INFO_LEN			4

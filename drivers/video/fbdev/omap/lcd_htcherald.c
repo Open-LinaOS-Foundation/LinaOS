@@ -5,7 +5,7 @@
  * LCD panel support for the HTC Herald
  *
  * Copyright (C) 2009 Cory Maccarrone <darkstar6262@gmail.com>
- * Copyright (C) 2009 Wing Linux
+ * Copyright (C) 2009 Wing LinaOS
  *
  * Based on the lcd_htcwizard.c file from the linwizard project:
  * Copyright (C) linwizard.sourceforge.net
@@ -13,8 +13,8 @@
  * Based on lcd_h4 by Imre Deak <imre.deak@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include "omapfb.h"
 

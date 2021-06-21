@@ -2,8 +2,8 @@
 #ifndef DSA_LOOP_H
 #define DSA_LOOP_H
 
-#include <linux/types.h>
-#include <linux/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/ethtool.h>
 #include <net/dsa.h>
 
 struct dsa_loop_vlan {

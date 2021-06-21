@@ -19,12 +19,12 @@
  * for more details
  */
 
-#include <linux/edac.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/edac.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include "edac_module.h"
 

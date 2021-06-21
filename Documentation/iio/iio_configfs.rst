@@ -36,13 +36,13 @@ under /config/iio/triggers.
 
 IIO software triggers implementation offers support for creating multiple
 trigger types. A new trigger type is usually implemented as a separate
-kernel module following the interface in include/linux/iio/sw_trigger.h::
+kernel module following the interface in include/linaos/iio/sw_trigger.h::
 
   /*
    * drivers/iio/trigger/iio-trig-sample.c
    * sample kernel module implementing a new trigger type
    */
-  #include <linux/iio/sw_trigger.h>
+  #include <linaos/iio/sw_trigger.h>
 
 
   static struct iio_sw_trigger *iio_trig_sample_probe(const char *name)

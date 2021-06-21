@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 void (*pm_power_off)(void);
 EXPORT_SYMBOL(pm_power_off);

@@ -12,12 +12,12 @@
  *   so can't handle asymmetric verbs for read and write
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
+#include <linaos/export.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
 #include <sound/core.h>
 #include <sound/hdaudio.h>
 #include <sound/hda_regmap.h>

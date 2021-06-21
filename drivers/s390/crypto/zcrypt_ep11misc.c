@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
  *  Copyright IBM Corp. 2019
- *  Author(s): Harald Freudenberger <freude@linux.ibm.com>
+ *  Author(s): Harald Freudenberger <freude@linaos.ibm.com>
  *
  *  Collection of EP11 misc functions used by zcrypt and pkey
  */
@@ -9,10 +9,10 @@
 #define KMSG_COMPONENT "zcrypt"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
 #include <asm/zcrypt.h>
 #include <asm/pkey.h>
 #include <crypto/aes.h>

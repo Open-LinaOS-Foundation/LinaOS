@@ -10,9 +10,9 @@
  * net/ipv4/tunnel4.c
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/skbuff.h>
 #include <net/icmp.h>
 #include <net/ip.h>
 #include <net/protocol.h>

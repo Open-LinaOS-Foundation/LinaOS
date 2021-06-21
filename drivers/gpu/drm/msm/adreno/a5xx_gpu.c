@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2016-2017 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2017 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
-#include <linux/qcom_scm.h>
-#include <linux/pm_opp.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/cpumask.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/pm_opp.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/slab.h>
 #include "msm_gem.h"
 #include "msm_mmu.h"
 #include "a5xx_gpu.h"

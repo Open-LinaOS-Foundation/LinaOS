@@ -6,7 +6,7 @@
 #ifndef IOSF_MBI_SYMS_H
 #define IOSF_MBI_SYMS_H
 
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 
 #define MBI_MCR_OFFSET		0xD0
 #define MBI_MDR_OFFSET		0xD4

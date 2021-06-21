@@ -7,16 +7,16 @@
  * https://www.ti.com/lit/ds/symlink/adc084s021.pdf
  */
 
-#include <linux/err.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/interrupt.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/regulator/consumer.h>
 
 #define ADC084S021_DRIVER_NAME "adc084s021"
 

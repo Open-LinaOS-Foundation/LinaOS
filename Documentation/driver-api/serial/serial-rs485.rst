@@ -21,7 +21,7 @@ RS485 Serial Communications
    half-duplex hardware like an RS485 transceiver or any RS232-connected
    half-duplex devices like some modems.
 
-   For these microcontrollers, the Linux driver should be made capable of
+   For these microcontrollers, the LinaOS driver should be made capable of
    working in both modes, and proper ioctls (see later) should be made
    available at user-level to allow switching from one mode to the other, and
    vice versa.
@@ -29,7 +29,7 @@ RS485 Serial Communications
 3. Data Structures Already Available in the Kernel
 ==================================================
 
-   The Linux kernel provides the serial_rs485 structure (see [1]) to handle
+   The LinaOS kernel provides the serial_rs485 structure (see [1]) to handle
    RS485 communications. This data structure is used to set and configure RS485
    parameters in the platform data and in ioctls.
 
@@ -49,7 +49,7 @@ RS485 Serial Communications
    From user-level, RS485 configuration can be get/set using the previous
    ioctls. For instance, to set RS485 you can use the following code::
 
-	#include <linux/serial.h>
+	#include <linaos/serial.h>
 
 	/* Include definition for RS485 ioctls: TIOCGRS485 and TIOCSRS485 */
 	#include <sys/ioctl.h>
@@ -98,6 +98,6 @@ RS485 Serial Communications
 5. References
 =============
 
- [1]	include/uapi/linux/serial.h
+ [1]	include/uapi/linaos/serial.h
 
  [2]	Documentation/devicetree/bindings/serial/rs485.txt

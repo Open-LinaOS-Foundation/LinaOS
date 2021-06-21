@@ -6,8 +6,8 @@
  *      Thiebaud Weksteen <tweek@google.com>
  */
 
-#include <linux/efi.h>
-#include <linux/tpm_eventlog.h>
+#include <linaos/efi.h>
+#include <linaos/tpm_eventlog.h>
 
 #include "../tpm.h"
 #include "common.h"
@@ -18,7 +18,7 @@ int tpm_read_log_efi(struct tpm_chip *chip)
 
 	struct efi_tcg2_final_events_table *final_tbl = NULL;
 	int final_events_log_size = efi_tpm_final_log_size;
-	struct linux_efi_tpm_eventlog *log_tbl;
+	struct linaos_efi_tpm_eventlog *log_tbl;
 	struct tpm_bios_log *log;
 	u32 log_size;
 	u8 tpm_log_version;

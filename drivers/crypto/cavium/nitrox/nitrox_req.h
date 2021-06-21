@@ -2,7 +2,7 @@
 #ifndef __NITROX_REQ_H
 #define __NITROX_REQ_H
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <crypto/aes.h>
 
 #include "nitrox_dev.h"

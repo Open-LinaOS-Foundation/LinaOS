@@ -4,7 +4,7 @@
  * Debugging macro include header
  *
  *  Copyright (C) 1994-1999 Russell King
- *  Moved from linux/arch/arm/kernel/debug.S by Ben Dooks
+ *  Moved from linaos/arch/arm/kernel/debug.S by Ben Dooks
  */
 
 #include <asm/assembler.h>

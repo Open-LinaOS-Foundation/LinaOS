@@ -4,20 +4,20 @@
  * driver for Ricoh memstick readers
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/freezer.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/highmem.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/freezer.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/highmem.h>
 #include <asm/byteorder.h>
-#include <linux/swab.h>
+#include <linaos/swab.h>
 #include "r592.h"
 
 static bool r592_enable_dma = 1;

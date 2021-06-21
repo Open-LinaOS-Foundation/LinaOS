@@ -6,8 +6,8 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/bitmap.h>
-#include <linux/of.h>
+#include <linaos/bitmap.h>
+#include <linaos/of.h>
 #include <asm/processor.h>
 #include <asm/hwcap.h>
 #include <asm/smp.h>

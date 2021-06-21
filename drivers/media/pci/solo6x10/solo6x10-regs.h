@@ -12,7 +12,7 @@
 #ifndef __SOLO6X10_REGISTERS_H
 #define __SOLO6X10_REGISTERS_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include "solo6x10-offsets.h"
 

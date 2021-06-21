@@ -1,5 +1,5 @@
 /*
- *	An async IO implementation for Linux
+ *	An async IO implementation for LinaOS
  *	Written by Benjamin LaHaise <bcrl@kvack.org>
  *
  *	Implements an efficient asynchronous io interface.
@@ -11,40 +11,40 @@
  */
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/aio_abi.h>
-#include <linux/export.h>
-#include <linux/syscalls.h>
-#include <linux/backing-dev.h>
-#include <linux/refcount.h>
-#include <linux/uio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/aio_abi.h>
+#include <linaos/export.h>
+#include <linaos/syscalls.h>
+#include <linaos/backing-dev.h>
+#include <linaos/refcount.h>
+#include <linaos/uio.h>
 
-#include <linux/sched/signal.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/aio.h>
-#include <linux/highmem.h>
-#include <linux/workqueue.h>
-#include <linux/security.h>
-#include <linux/eventfd.h>
-#include <linux/blkdev.h>
-#include <linux/compat.h>
-#include <linux/migrate.h>
-#include <linux/ramfs.h>
-#include <linux/percpu-refcount.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
+#include <linaos/sched/signal.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/aio.h>
+#include <linaos/highmem.h>
+#include <linaos/workqueue.h>
+#include <linaos/security.h>
+#include <linaos/eventfd.h>
+#include <linaos/blkdev.h>
+#include <linaos/compat.h>
+#include <linaos/migrate.h>
+#include <linaos/ramfs.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
 
-#include <linux/uaccess.h>
-#include <linux/nospec.h>
+#include <linaos/uaccess.h>
+#include <linaos/nospec.h>
 
 #include "internal.h"
 
@@ -168,7 +168,7 @@ struct kioctx {
 
 /*
  * First field must be the file pointer in all the
- * iocb unions! See also 'struct kiocb' in <linux/fs.h>
+ * iocb unions! See also 'struct kiocb' in <linaos/fs.h>
  */
 struct fsync_iocb {
 	struct file		*file;

@@ -6,7 +6,7 @@
 #ifndef __INTEL_PPS_H__
 #define __INTEL_PPS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "intel_wakeref.h"
 

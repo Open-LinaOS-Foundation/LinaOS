@@ -7,8 +7,8 @@
  */
 
 #include <kunit/test.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 #include "string-stream.h"
 

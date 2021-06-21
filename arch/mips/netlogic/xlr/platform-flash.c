@@ -7,19 +7,19 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/resource.h>
-#include <linux/spi/flash.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/resource.h>
+#include <linaos/spi/flash.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/platnand.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/platnand.h>
 
 #include <asm/netlogic/haldefs.h>
 #include <asm/netlogic/xlr/iomap.h>

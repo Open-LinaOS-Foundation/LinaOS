@@ -13,8 +13,8 @@
  * Kevin Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/threads.h>
+#include <linaos/init.h>
+#include <linaos/threads.h>
 
 #include <asm/addrspace.h>
 #include <asm/asm.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ufs/balloc.c
+ *  linaos/fs/ufs/balloc.c
  *
  * Copyright (C) 1998
  * Daniel Pirkl <daniel.pirkl@email.cz>
@@ -9,14 +9,14 @@
  * UFS2 write support Evgeniy Dushistov <dushistov@mail.ru>, 2007
  */
 
-#include <linux/fs.h>
-#include <linux/stat.h>
-#include <linux/time.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/capability.h>
-#include <linux/bitops.h>
-#include <linux/bio.h>
+#include <linaos/fs.h>
+#include <linaos/stat.h>
+#include <linaos/time.h>
+#include <linaos/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/capability.h>
+#include <linaos/bitops.h>
+#include <linaos/bio.h>
 #include <asm/byteorder.h>
 
 #include "ufs_fs.h"

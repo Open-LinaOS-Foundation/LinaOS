@@ -5,7 +5,7 @@ Firewire (IEEE 1394) driver Interface Guide
 Introduction and Overview
 =========================
 
-The Linux FireWire subsystem adds some interfaces into the Linux system to
+The LinaOS FireWire subsystem adds some interfaces into the LinaOS system to
  use/maintain+any resource on IEEE 1394 bus.
 
 The main purpose of these interfaces is to access address space on each node
@@ -22,7 +22,7 @@ Firewire char device data structures
 .. include:: /ABI/stable/firewire-cdev
     :literal:
 
-.. kernel-doc:: include/uapi/linux/firewire-cdev.h
+.. kernel-doc:: include/uapi/linaos/firewire-cdev.h
     :internal:
 
 Firewire device probing and sysfs interfaces

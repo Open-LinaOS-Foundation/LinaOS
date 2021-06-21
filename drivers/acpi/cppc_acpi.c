@@ -33,12 +33,12 @@
 
 #define pr_fmt(fmt)	"ACPI CPPC: " fmt
 
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/ktime.h>
-#include <linux/rwsem.h>
-#include <linux/wait.h>
-#include <linux/topology.h>
+#include <linaos/delay.h>
+#include <linaos/iopoll.h>
+#include <linaos/ktime.h>
+#include <linaos/rwsem.h>
+#include <linaos/wait.h>
+#include <linaos/topology.h>
 
 #include <acpi/cppc_acpi.h>
 
@@ -1273,7 +1273,7 @@ int cppc_set_perf(int cpu, struct cppc_perf_ctrls *perf_ctrls)
 	}
 
 	/*
-	 * Skip writing MIN/MAX until Linux knows how to come up with
+	 * Skip writing MIN/MAX until LinaOS knows how to come up with
 	 * useful values.
 	 */
 	cpc_write(cpu, desired_reg, perf_ctrls->desired_perf);

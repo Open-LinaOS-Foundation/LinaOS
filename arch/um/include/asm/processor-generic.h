@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* 
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #ifndef __UM_PROCESSOR_GENERIC_H
@@ -14,7 +14,7 @@ struct task_struct;
 #include <registers.h>
 #include <sysdep/archsetjmp.h>
 
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 
 struct mm_struct;
 

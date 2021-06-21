@@ -5,10 +5,10 @@
  * Copyright (C) 2016 Glider bvba
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/soc/renesas/rcar-rst.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/soc/renesas/rcar-rst.h>
 
 #define WDTRSTCR_RESET		0xA55A0002
 #define WDTRSTCR		0x0054

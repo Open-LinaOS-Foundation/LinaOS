@@ -26,7 +26,7 @@
 		user_btn1 {
 			label = "USER_BTN1";
 			gpios = <&pioA 24 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			linaos,code = <KEY_PROG1>;
 		};
 	};
 
@@ -94,7 +94,7 @@
 		heartbeat {
 			label = "smartgw:heartbeat";
 			gpios = <&pioB 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		pb18 {

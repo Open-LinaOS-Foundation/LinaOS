@@ -6,9 +6,9 @@
  * Author: Ryan Mallon
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/soc/cirrus/ep93xx.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>

@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-m68k/dsp56k.h - defines and declarations for
+ * linaos/include/asm-m68k/dsp56k.h - defines and declarations for
  *                                   DSP56k device driver
  *
  * Copyright (C) 1996,1997 Fredrik Noring, lars brinkhoff & Tomas Berndtsson

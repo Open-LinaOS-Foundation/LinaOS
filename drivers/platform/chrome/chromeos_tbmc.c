@@ -12,11 +12,11 @@
 // Method TBMC reads EC_ACPI_MEM_DEVICE_ORIENTATION byte from the shared
 // memory region.
 
-#include <linux/acpi.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/printk.h>
+#include <linaos/acpi.h>
+#include <linaos/input.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
 
 #define DRV_NAME "chromeos_tbmc"
 #define ACPI_DRV_NAME "GOOG0006"

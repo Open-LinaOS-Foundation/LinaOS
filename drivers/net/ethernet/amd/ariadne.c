@@ -1,14 +1,14 @@
 /*
- *  Amiga Linux/m68k Ariadne Ethernet Driver
+ *  Amiga LinaOS/m68k Ariadne Ethernet Driver
  *
- *  © Copyright 1995-2003 by Geert Uytterhoeven (geert@linux-m68k.org)
+ *  © Copyright 1995-2003 by Geert Uytterhoeven (geert@linaos-m68k.org)
  *			     Peter De Schrijver (p2@mind.be)
  *
  *  ---------------------------------------------------------------------------
  *
  *  This program is based on
  *
- *	lance.c:	An AMD LANCE ethernet driver for linux.
+ *	lance.c:	An AMD LANCE ethernet driver for linaos.
  *			Written 1993-94 by Donald Becker.
  *
  *	Am79C960:	PCnet(tm)-ISA Single-Chip Ethernet Controller
@@ -21,7 +21,7 @@
  *  ---------------------------------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the LinaOS
  *  distribution for more details.
  *
  *  ---------------------------------------------------------------------------
@@ -37,19 +37,19 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 /*#define DEBUG*/
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/zorro.h>
+#include <linaos/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/amigaints.h>

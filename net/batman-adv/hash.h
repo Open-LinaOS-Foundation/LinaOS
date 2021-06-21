@@ -9,14 +9,14 @@
 
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linaos/atomic.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
+#include <linaos/lockdep.h>
+#include <linaos/rculist.h>
+#include <linaos/spinlock.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
 
 /* callback to a compare function.  should compare 2 element datas for their
  * keys

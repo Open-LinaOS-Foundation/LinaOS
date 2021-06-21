@@ -7,23 +7,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/amba/bus.h>
-#include <linux/delay.h>
-#include <linux/dma-iommu.h>
-#include <linux/freezer.h>
-#include <linux/interval_tree.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/of_iommu.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/virtio.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_ids.h>
-#include <linux/wait.h>
+#include <linaos/amba/bus.h>
+#include <linaos/delay.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/freezer.h>
+#include <linaos/interval_tree.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_platform.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_config.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/wait.h>
 
-#include <uapi/linux/virtio_iommu.h>
+#include <uapi/linaos/virtio_iommu.h>
 
 #define MSI_IOVA_BASE			0x8000000
 #define MSI_IOVA_LENGTH			0x100000

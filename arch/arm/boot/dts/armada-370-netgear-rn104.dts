@@ -115,7 +115,7 @@
 		blue-power-led {
 			label = "rn104:blue:pwr";
 			gpios = <&gpio2 0 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "keep";
+			linaos,default-trigger = "keep";
 		};
 
 		blue-sata1-led {
@@ -166,19 +166,19 @@
 
 		backup-button {
 			label = "Backup Button";
-			linux,code = <KEY_COPY>;
+			linaos,code = <KEY_COPY>;
 			gpios = <&gpio1 20 GPIO_ACTIVE_LOW>;
 		};
 
 		power-button {
 			label = "Power Button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio1 30 GPIO_ACTIVE_HIGH>;
 		};
 
 		reset-button {
 			label = "Reset Button";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio2 1 GPIO_ACTIVE_LOW>;
 		};
 	};

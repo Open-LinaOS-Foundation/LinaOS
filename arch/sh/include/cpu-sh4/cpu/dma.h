@@ -2,7 +2,7 @@
 #ifndef __ASM_CPU_SH4_DMA_H
 #define __ASM_CPU_SH4_DMA_H
 
-#include <linux/sh_intc.h>
+#include <linaos/sh_intc.h>
 
 /*
  * SH7750/SH7751/SH7760

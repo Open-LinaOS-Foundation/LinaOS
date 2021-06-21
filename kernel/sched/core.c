@@ -12,10 +12,10 @@
 
 #include "sched.h"
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
-#include <linux/kcov.h>
-#include <linux/scs.h>
+#include <linaos/kcov.h>
+#include <linaos/scs.h>
 
 #include <asm/switch_to.h>
 #include <asm/tlb.h>
@@ -5401,7 +5401,7 @@ EXPORT_STATIC_CALL_TRAMP(preempt_schedule_notrace);
 
 #ifdef CONFIG_PREEMPT_DYNAMIC
 
-#include <linux/entry-common.h>
+#include <linaos/entry-common.h>
 
 /*
  * SC:cond_resched

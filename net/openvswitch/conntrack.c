@@ -3,12 +3,12 @@
  * Copyright (c) 2015 Nicira, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/openvswitch.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/sctp.h>
-#include <linux/static_key.h>
+#include <linaos/module.h>
+#include <linaos/openvswitch.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/sctp.h>
+#include <linaos/static_key.h>
 #include <net/ip.h>
 #include <net/genetlink.h>
 #include <net/netfilter/nf_conntrack_core.h>

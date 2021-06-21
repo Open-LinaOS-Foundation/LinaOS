@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Parts of this driver are based on the following:
- *  - Kvaser linux mhydra driver (version 5.24)
+ *  - Kvaser linaos mhydra driver (version 5.24)
  *  - CAN driver for esd CAN-USB/2
  *
  * Copyright (C) 2018 KVASER AB, Sweden. All rights reserved.
@@ -13,21 +13,21 @@
  *  - Hardware timestamps are not set for CAN Tx frames.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/gfp.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/netlink.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/netlink.h>
 
 #include "kvaser_usb.h"
 

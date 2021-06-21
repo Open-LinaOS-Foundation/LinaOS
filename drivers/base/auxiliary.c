@@ -7,14 +7,14 @@
 
 #define pr_fmt(fmt) "%s:%s: " fmt, KBUILD_MODNAME, __func__
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/string.h>
-#include <linux/auxiliary_bus.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/string.h>
+#include <linaos/auxiliary_bus.h>
 #include "base.h"
 
 static const struct auxiliary_device_id *auxiliary_match_id(const struct auxiliary_device_id *id,

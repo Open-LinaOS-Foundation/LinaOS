@@ -2,13 +2,13 @@
 #ifndef _LINUX_KERNEL_STAT_H
 #define _LINUX_KERNEL_STAT_H
 
-#include <linux/smp.h>
-#include <linux/threads.h>
-#include <linux/percpu.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/vtime.h>
+#include <linaos/smp.h>
+#include <linaos/threads.h>
+#include <linaos/percpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/vtime.h>
 #include <asm/irq.h>
 
 /*

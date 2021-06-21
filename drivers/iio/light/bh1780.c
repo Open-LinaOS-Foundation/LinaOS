@@ -8,16 +8,16 @@
  * Copyright (C) 2010 Texas Instruments
  * Author: Hemanth V <hemanthv@ti.com>
  */
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm_runtime.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/bitops.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/bitops.h>
 
 #define BH1780_CMD_BIT		BIT(7)
 #define BH1780_REG_CONTROL	0x00

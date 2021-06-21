@@ -4,15 +4,15 @@
  * Copyright (C) 2009 Konrad Eisele (konrad@gaisler.com) Aeroflex Gaisler AB
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_device.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
 
 #include <asm/oplib.h>
 #include <asm/timer.h>
@@ -408,7 +408,7 @@ retry:
 	 * we assume that all CPUs (in SMP system) is routed to the
 	 * same IRQ Controller, and for non-SMP only one IRQCTRL is
 	 * accessed anyway.
-	 * In AMP systems, Linux must run on CPU0 for the time being.
+	 * In AMP systems, LinaOS must run on CPU0 for the time being.
 	 */
 	icsel = LEON3_BYPASS_LOAD_PA(&leon3_irqctrl_regs->icsel[boot_cpu_id/8]);
 	icsel = (icsel >> ((7 - (boot_cpu_id&0x7)) * 4)) & 0xf;

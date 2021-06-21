@@ -6,7 +6,7 @@
 #ifndef H_JFS_XATTR
 #define H_JFS_XATTR
 
-#include <linux/xattr.h>
+#include <linaos/xattr.h>
 
 /*
  * jfs_ea_list describe the on-disk format of the extended attributes.

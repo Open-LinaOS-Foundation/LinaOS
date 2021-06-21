@@ -8,8 +8,8 @@
 
 #ifdef CONFIG_GENERIC_CPU_AUTOPROBE
 
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/init.h>
+#include <linaos/mod_devicetable.h>
 #include <asm/cpufeature.h>
 
 /*

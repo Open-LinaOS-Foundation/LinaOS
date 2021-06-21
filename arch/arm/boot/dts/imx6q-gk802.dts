@@ -45,7 +45,7 @@
 		recovery-button {
 			label = "recovery";
 			gpios = <&gpio3 16 1>;
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			wakeup-source;
 		};
 	};

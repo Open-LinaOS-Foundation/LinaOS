@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/gpio/gpio-mb86s7x.c
+ *  linaos/drivers/gpio/gpio-mb86s7x.c
  *
  *  Copyright (C) 2015 Fujitsu Semiconductor Limited
  *  Copyright (C) 2015 Linaro Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/of_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/of_device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
 
 #include "gpiolib.h"
 #include "gpiolib-acpi.h"

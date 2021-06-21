@@ -7,7 +7,7 @@
  * Copyright (c) 2020 Microsemi Corporation
  */
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 #include <dt-bindings/net/mscc-phy-vsc8531.h>
 
 #include <crypto/aes.h>

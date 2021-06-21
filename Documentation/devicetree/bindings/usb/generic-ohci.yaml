@@ -10,7 +10,7 @@ allOf:
   - $ref: "usb-hcd.yaml"
 
 maintainers:
-  - Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+  - Greg Kroah-Hartman <gregkh@linaosfoundation.org>
 
 properties:
   compatible:

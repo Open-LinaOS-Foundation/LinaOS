@@ -13,20 +13,20 @@
  * overwrite the default setting if needed.
  */
 
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/mount.h>
-#include <linux/device.h>
-#include <linux/genhd.h>
-#include <linux/namei.h>
-#include <linux/fs.h>
-#include <linux/shmem_fs.h>
-#include <linux/ramfs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/init_syscalls.h>
-#include <uapi/linux/mount.h>
+#include <linaos/kernel.h>
+#include <linaos/syscalls.h>
+#include <linaos/mount.h>
+#include <linaos/device.h>
+#include <linaos/genhd.h>
+#include <linaos/namei.h>
+#include <linaos/fs.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/ramfs.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/init_syscalls.h>
+#include <uapi/linaos/mount.h>
 #include "base.h"
 
 static struct task_struct *thread;

@@ -7,17 +7,17 @@
  * Author: Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/kmsg_dump.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/vmalloc.h>
+#include <linaos/workqueue.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/kmsg_dump.h>
 
 /* Maximum MTD partition size */
 #define MTDOOPS_MAX_MTD_SIZE (8 * 1024 * 1024)

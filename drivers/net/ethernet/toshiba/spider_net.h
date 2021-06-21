@@ -14,7 +14,7 @@
 
 #define VERSION "2.0 B"
 
-#include <linux/sungem_phy.h>
+#include <linaos/sungem_phy.h>
 
 int spider_net_stop(struct net_device *netdev);
 int spider_net_open(struct net_device *netdev);

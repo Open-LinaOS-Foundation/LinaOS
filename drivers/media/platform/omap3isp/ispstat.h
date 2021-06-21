@@ -15,8 +15,8 @@
 #ifndef OMAP3_ISP_STAT_H
 #define OMAP3_ISP_STAT_H
 
-#include <linux/types.h>
-#include <linux/omap3isp.h>
+#include <linaos/types.h>
+#include <linaos/omap3isp.h>
 #include <media/v4l2-event.h>
 
 #include "isp.h"

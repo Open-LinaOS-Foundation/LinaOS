@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =================================================
-The Linux NCR53C8XX/SYM53C8XX drivers README file
+The LinaOS NCR53C8XX/SYM53C8XX drivers README file
 =================================================
 
 Written by Gerard Roudier <groudier@free.fr>
@@ -91,7 +91,7 @@ Written by Gerard Roudier <groudier@free.fr>
 1. Introduction
 ===============
 
-The initial Linux ncr53c8xx driver has been a port of the ncr driver from
+The initial LinaOS ncr53c8xx driver has been a port of the ncr driver from
 FreeBSD that has been achieved in November 1995 by:
 
 	- Gerard Roudier              <groudier@free.fr>
@@ -125,8 +125,8 @@ SCSI standard documentations are available at SYMBIOS ftp server:
 
 Useful SCSI tools written by Eric Youngdale are available at tsx-11:
 
-          - ftp://tsx-11.mit.edu/pub/linux/ALPHA/scsi/scsiinfo-X.Y.tar.gz
-          - ftp://tsx-11.mit.edu/pub/linux/ALPHA/scsi/scsidev-X.Y.tar.gz
+          - ftp://tsx-11.mit.edu/pub/linaos/ALPHA/scsi/scsiinfo-X.Y.tar.gz
+          - ftp://tsx-11.mit.edu/pub/linaos/ALPHA/scsi/scsidev-X.Y.tar.gz
 
 These tools are not ALPHA but quite clean and work quite well.
 It is essential you have the 'scsiinfo' package.
@@ -135,7 +135,7 @@ This short documentation describes the features of the generic and enhanced
 drivers, configuration parameters and control commands available through
 the proc SCSI file system read / write operations.
 
-This driver has been tested OK with linux/i386, Linux/Alpha and Linux/PPC.
+This driver has been tested OK with linaos/i386, LinaOS/Alpha and LinaOS/PPC.
 
 Latest driver version and patches are available at:
 
@@ -258,7 +258,7 @@ support the following chips:
 ======================================
 
 Memory mapped I/O has less latency than normal I/O.  Since
-linux-1.3.x, memory mapped I/O is used rather than normal I/O.  Memory
+linaos-1.3.x, memory mapped I/O is used rather than normal I/O.  Memory
 mapped I/O seems to work fine on most hardware configurations, but
 some poorly designed motherboards may break this feature.
 
@@ -626,14 +626,14 @@ Available commands:
 If the firmware of all your devices is perfect enough, all the
 features supported by the driver can be enabled at start-up.  However,
 if only one has a flaw for some SCSI feature, you can disable the
-support by the driver of this feature at linux start-up and enable
+support by the driver of this feature at linaos start-up and enable
 this feature after boot-up only for devices that support it safely.
 
 CONFIG_SCSI_NCR53C8XX_IOMAPPED       (default answer: n)
     Answer "y" if you suspect your mother board to not allow memory mapped I/O.
 
     May slow down performance a little.  This option is required by
-    Linux/PPC and is used no matter what you select here.  Linux/PPC
+    LinaOS/PPC and is used no matter what you select here.  LinaOS/PPC
     suffers no performance loss with this option since all IO is memory
     mapped anyway.
 
@@ -702,7 +702,7 @@ an optional list of integers separated with comma followed by an optional
 list of comma-separated strings. Example of boot setup command under lilo
 prompt::
 
-    lilo: linux root=/dev/hda2 ncr53c8xx=tags:4,sync:10,debug:0x200
+    lilo: linaos root=/dev/hda2 ncr53c8xx=tags:4,sync:10,debug:0x200
 
 - enable tagged commands, up to 4 tagged commands queued.
 - set synchronous negotiation speed to 10 Mega-transfers / second.
@@ -1204,7 +1204,7 @@ will not attach controllers set to OFF in the NVRAM.
 The ncr53c8xx always tries to attach all the controllers. Option 0x80 has
 not been added to the ncr53c8xx driver, since it has been reported to
 confuse users who use this driver since a long time. If you desire a
-controller not to be attached by the ncr53c8xx driver at Linux boot, you
+controller not to be attached by the ncr53c8xx driver at LinaOS boot, you
 must use the 'excl' driver boot option.
 
 10.6 SCSI BUS checking boot option.
@@ -1354,7 +1354,7 @@ SCSI_NCR_CMD_PER_LUN		(default: SCSI_NCR_MAX_TAGS)
 	Max number of commands queued to a host for a device.
 
 SCSI_NCR_SG_TABLESIZE		(default: SCSI_NCR_MAX_SCATTER-1)
-	Max size of the Linux scatter/gather list.
+	Max size of the LinaOS scatter/gather list.
 
 SCSI_NCR_MAX_LUN	(default: 8)
 	Max number of LUNs per target.
@@ -1363,7 +1363,7 @@ SCSI_NCR_MAX_LUN	(default: 8)
 12. Installation
 ================
 
-This driver is part of the linux kernel distribution.
+This driver is part of the linaos kernel distribution.
 Driver files are located in the sub-directory "drivers/scsi" of the
 kernel source tree.
 
@@ -1375,7 +1375,7 @@ Driver files::
 	ncr53c8xx.c		: the driver code
 
 New driver versions are made available separately in order to allow testing
-changes and new features prior to including them into the linux kernel
+changes and new features prior to including them into the linaos kernel
 distribution. The following URL provides information on latest available
 patches:
 
@@ -1401,7 +1401,7 @@ conforms to 6.8.2 of SCSI-2 specifications. The current behaviour of
 the driver in that situation is not satisfying. So do not enable
 Tagged command queuing for devices that are able to spin down.  The
 other problem that may appear is timeouts. The only way to avoid
-timeouts seems to edit linux/drivers/scsi/sd.c and to increase the
+timeouts seems to edit linaos/drivers/scsi/sd.c and to increase the
 current timeout values.
 
 14.2 Device names change when another controller is added
@@ -1464,9 +1464,9 @@ least on Pentium systems.
 
 But the conditions of this bug can be met when a SCSI read command is
 performed using a buffer that is 4 DWORDS but not cache-line aligned.
-This cannot happen under Linux when scatter/gather lists are used since
+This cannot happen under LinaOS when scatter/gather lists are used since
 they only refer to system buffers that are well aligned. So, a work around
-may only be needed under Linux when a scatter/gather list is not used and
+may only be needed under LinaOS when a scatter/gather list is not used and
 when the SCSI DATA IN phase is reentered after a phase mismatch.
 
 15. SCSI problem troubleshooting
@@ -1481,7 +1481,7 @@ following things:
 
 - SCSI bus cables
 - terminations at both end of the SCSI chain
-- linux syslog messages (some of them may help you)
+- linaos syslog messages (some of them may help you)
 
 If you do not find the source of problems, you can configure the
 driver with no features enabled.
@@ -2156,7 +2156,7 @@ In order to support NCR chips on a Big Endian architecture the driver has to
 perform byte reordering each time it is needed. This feature has been
 added to the driver by Cort <cort@cs.nmt.edu> and is available in driver
 version 2.5 and later ones. For the moment Big Endian support has only
-been tested on Linux/PPC (PowerPC).
+been tested on LinaOS/PPC (PowerPC).
 
 18.2 NCR chip in Big Endian mode of operations
 ----------------------------------------------

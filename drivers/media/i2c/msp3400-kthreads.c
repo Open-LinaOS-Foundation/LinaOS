@@ -6,15 +6,15 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/freezer.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/freezer.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/drv-intf/msp3400.h>
-#include <linux/kthread.h>
-#include <linux/suspend.h>
+#include <linaos/kthread.h>
+#include <linaos/suspend.h>
 #include "msp3400-driver.h"
 
 /* this one uses the automatic sound standard detection of newer msp34xx

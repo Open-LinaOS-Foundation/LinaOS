@@ -11,7 +11,7 @@ speeds_arr_get()
 		sub(/_Half/,"/Half");\
 		print "["$1"]="$3}'
 
-	awk "${cmd}" /usr/include/linux/ethtool.h
+	awk "${cmd}" /usr/include/linaos/ethtool.h
 }
 
 ethtool_set()

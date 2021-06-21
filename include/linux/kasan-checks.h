@@ -2,7 +2,7 @@
 #ifndef _LINUX_KASAN_CHECKS_H
 #define _LINUX_KASAN_CHECKS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * The annotations present in this file are only relevant for the software

@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 #include <rdma/ib_umem.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <rdma/ib_user_verbs.h>
 
 #include "iw_cxgb4.h"

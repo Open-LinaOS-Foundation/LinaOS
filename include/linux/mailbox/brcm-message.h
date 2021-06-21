@@ -9,7 +9,7 @@
 #ifndef _LINUX_BRCM_MESSAGE_H_
 #define _LINUX_BRCM_MESSAGE_H_
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 enum brcm_message_type {
 	BRCM_MESSAGE_UNKNOWN = 0,

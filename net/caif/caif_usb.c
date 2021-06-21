@@ -7,13 +7,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s(): " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
-#include <linux/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/etherdevice.h>
 #include <net/netns/generic.h>
 #include <net/caif/caif_dev.h>
 #include <net/caif/caif_layer.h>

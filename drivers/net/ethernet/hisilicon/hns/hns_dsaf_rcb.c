@@ -3,19 +3,19 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/cdev.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linaos/cdev.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
 #include <asm/cacheflush.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/spinlock.h>
 
 #include "hns_dsaf_main.h"
 #include "hns_dsaf_ppe.h"

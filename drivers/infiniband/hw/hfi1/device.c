@@ -45,10 +45,10 @@
  *
  */
 
-#include <linux/cdev.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/fs.h>
+#include <linaos/cdev.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
 
 #include "hfi.h"
 #include "device.h"

@@ -2,7 +2,7 @@
 /*
  *  Copyright IBM Corp. 2008
  *
- *  Author: Jan Glauber (jang@linux.vnet.ibm.com)
+ *  Author: Jan Glauber (jang@linaos.vnet.ibm.com)
  */
 #ifndef QDIO_DEBUG_H
 #define QDIO_DEBUG_H

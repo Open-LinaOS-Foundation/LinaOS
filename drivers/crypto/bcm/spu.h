@@ -15,8 +15,8 @@
 #ifndef _SPU_H
 #define _SPU_H
 
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/scatterlist.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>
 

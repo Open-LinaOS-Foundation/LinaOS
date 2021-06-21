@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * vt8231.c - Part of lm_sensors, Linux kernel modules
+ * vt8231.c - Part of lm_sensors, LinaOS kernel modules
  *	      for hardware monitoring
  *
  * Copyright (c) 2005 Roger Lucas <vt8231@hiddenengine.co.uk>
@@ -14,19 +14,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 
 static int force_addr;
 module_param(force_addr, int, 0);
@@ -46,7 +46,7 @@ static struct platform_device *pdev;
  * possible:
  *
  *		    Voltage Mode	  Temperature Mode
- *	Sensor	      Linux Id	      Linux Id	      VIA Id
+ *	Sensor	      LinaOS Id	      LinaOS Id	      VIA Id
  *	--------      --------	      --------	      ------
  *	CPU Diode	N/A		temp1		0
  *	UIC1		in0		temp2 *		1
@@ -71,7 +71,7 @@ static const u8 regvoltmax[] = { 0x3d, 0x2b, 0x2d, 0x2f, 0x31, 0x33 };
 static const u8 regvoltmin[] = { 0x3e, 0x2c, 0x2e, 0x30, 0x32, 0x34 };
 
 /*
- * Temperatures are numbered 1-6 according to the Linux kernel specification.
+ * Temperatures are numbered 1-6 according to the LinaOS kernel specification.
  *
  * In the VIA datasheet, however, the temperatures are numbered from zero.
  * Since it is important that this driver can easily be compared to the VIA
@@ -99,7 +99,7 @@ static const u8 regtempmin[] = { 0x3a, 0x3e, 0x2c, 0x2e, 0x30, 0x32 };
 #define VT8231_REG_TEMP2_CONFIG 0x4c
 
 /*
- * temps 0-5 as numbered in VIA datasheet - see later for mapping to Linux
+ * temps 0-5 as numbered in VIA datasheet - see later for mapping to LinaOS
  * numbering
  */
 #define ISTEMP(i, ch_config) ((i) == 0 ? 1 : \
@@ -465,7 +465,7 @@ static ssize_t temp_min_store(struct device *dev,
 }
 
 /*
- * Note that these map the Linux temperature sensor numbering (1-6) to the VIA
+ * Note that these map the LinaOS temperature sensor numbering (1-6) to the VIA
  * temperature sensor numbering (0-5)
  */
 

@@ -9,16 +9,16 @@
  * Archit Taneja, <archit@ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/firmware.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
 
 #include "vpdma.h"
 #include "vpdma_priv.h"

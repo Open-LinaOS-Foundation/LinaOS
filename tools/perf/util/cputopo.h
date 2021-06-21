@@ -2,7 +2,7 @@
 #ifndef __PERF_CPUTOPO_H
 #define __PERF_CPUTOPO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct cpu_topology {
 	u32	  core_sib;

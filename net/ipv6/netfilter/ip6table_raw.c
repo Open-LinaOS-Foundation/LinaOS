@@ -5,9 +5,9 @@
  * Copyright (C) 2003 Jozsef Kadlecsik <kadlec@netfilter.org>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/netfilter_ipv6/ip6_tables.h>
+#include <linaos/slab.h>
 
 #define RAW_VALID_HOOKS ((1 << NF_INET_PRE_ROUTING) | (1 << NF_INET_LOCAL_OUT))
 

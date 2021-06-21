@@ -3,30 +3,30 @@
  * Copyright © 2010-2015 Broadcom Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/log2.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/ioport.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/mm.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/log2.h>
 
 #include "brcmnand.h"
 

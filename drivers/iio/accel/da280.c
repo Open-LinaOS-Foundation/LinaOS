@@ -6,12 +6,12 @@
  * Copyright (c) 2016 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/byteorder/generic.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/byteorder/generic.h>
 
 #define DA280_REG_CHIP_ID		0x01
 #define DA280_REG_ACC_X_LSB		0x02

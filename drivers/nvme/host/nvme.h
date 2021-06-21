@@ -6,17 +6,17 @@
 #ifndef _NVME_H
 #define _NVME_H
 
-#include <linux/nvme.h>
-#include <linux/cdev.h>
-#include <linux/pci.h>
-#include <linux/kref.h>
-#include <linux/blk-mq.h>
-#include <linux/lightnvm.h>
-#include <linux/sed-opal.h>
-#include <linux/fault-inject.h>
-#include <linux/rcupdate.h>
-#include <linux/wait.h>
-#include <linux/t10-pi.h>
+#include <linaos/nvme.h>
+#include <linaos/cdev.h>
+#include <linaos/pci.h>
+#include <linaos/kref.h>
+#include <linaos/blk-mq.h>
+#include <linaos/lightnvm.h>
+#include <linaos/sed-opal.h>
+#include <linaos/fault-inject.h>
+#include <linaos/rcupdate.h>
+#include <linaos/wait.h>
+#include <linaos/t10-pi.h>
 
 #include <trace/events/block.h>
 

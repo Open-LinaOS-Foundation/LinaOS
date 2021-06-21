@@ -40,9 +40,9 @@
  * interrupts because we have no back-pressure to the hardware.
  */
 
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/kfifo.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/kfifo.h>
 #include "kfd_priv.h"
 
 #define KFD_IH_NUM_ENTRIES 8192

@@ -2,12 +2,12 @@
 /*
  *  Copyright (C) 2012-2015 Altera Corporation
  */
-#include <linux/irqchip.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/reboot.h>
-#include <linux/reset/socfpga.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/reboot.h>
+#include <linaos/reset/socfpga.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/mach/arch.h>

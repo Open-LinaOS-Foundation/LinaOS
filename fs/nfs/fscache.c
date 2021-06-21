@@ -5,16 +5,16 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_fs_sb.h>
-#include <linux/in6.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/iversion.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_fs_sb.h>
+#include <linaos/in6.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/iversion.h>
 
 #include "internal.h"
 #include "iostat.h"

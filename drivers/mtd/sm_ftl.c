@@ -4,16 +4,16 @@
  * SmartMedia/xD translation layer
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/hdreg.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/sysfs.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/hdreg.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/sysfs.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
 #include "nand/raw/sm_common.h"
 #include "sm_ftl.h"
 

@@ -2,11 +2,11 @@
 #ifndef _CSS_H
 #define _CSS_H
 
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/mutex.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
 #include <asm/cio.h>
 #include <asm/chpid.h>

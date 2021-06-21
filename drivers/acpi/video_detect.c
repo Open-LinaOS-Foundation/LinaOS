@@ -1,7 +1,7 @@
 /*
  *  Copyright (C) 2015       Red Hat Inc.
  *                           Hans de Goede <hdegoede@redhat.com>
- *  Copyright (C) 2008       SuSE Linux Products GmbH
+ *  Copyright (C) 2008       SuSE LinaOS Products GmbH
  *                           Thomas Renninger <trenn@suse.de>
  *
  *  May be copied or modified under the terms of the GNU General Public License
@@ -25,14 +25,14 @@
  * always return acpi_backlight_vendor.
  */
 
-#include <linux/export.h>
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/export.h>
+#include <linaos/acpi.h>
+#include <linaos/backlight.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 #include <acpi/video.h>
 
 void acpi_video_unregister_backlight(void);

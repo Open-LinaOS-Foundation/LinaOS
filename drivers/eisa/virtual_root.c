@@ -6,12 +6,12 @@
  * (C) 2003 Marc Zyngier <maz@wild-wind.fr.eu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/eisa.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/eisa.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
 
 #if defined(CONFIG_ALPHA_JENSEN) || defined(CONFIG_EISA_VLB_PRIMING)
 #define EISA_FORCE_PROBE_DEFAULT 1

@@ -5,10 +5,10 @@
 #ifndef _LINUX_SERDEV_H
 #define _LINUX_SERDEV_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/termios.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/termios.h>
+#include <linaos/delay.h>
 
 struct serdev_controller;
 struct serdev_device;

@@ -6,8 +6,8 @@
  * Copyright (C) 2005 Luben Tuikov <luben_tuikov@adaptec.com>
  */
 
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
+#include <linaos/spinlock.h>
+#include <linaos/gfp.h>
 #include "aic94xx.h"
 #include "aic94xx_sas.h"
 #include "aic94xx_hwi.h"

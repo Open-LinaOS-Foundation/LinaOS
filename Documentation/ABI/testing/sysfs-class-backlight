@@ -50,7 +50,7 @@ What:		/sys/class/backlight/<backlight>/ambient_light_zone
 Date:		Apr, 2010
 KernelVersion:	v2.6.35
 Contact:	Michael Hennerich <michael.hennerich@analog.com>,
-		device-drivers-devel@blackfin.uclinux.org
+		device-drivers-devel@blackfin.uclinaos.org
 
 Description:
 		(RW) Read or write the specific brightness level at which the

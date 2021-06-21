@@ -10,7 +10,7 @@ menuconfig VIRTUALIZATION
 	depends on HAVE_KVM || X86
 	default y
 	help
-	  Say Y here to get to see options for using your Linux host to run other
+	  Say Y here to get to see options for using your LinaOS host to run other
 	  operating systems inside virtual machines (guests).
 	  This option alone does not add any kernel code.
 

@@ -3,14 +3,14 @@
  * Intel Elkhart Lake PCH pinctrl/GPIO driver
  *
  * Copyright (C) 2019, Intel Corporation
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinctrl.h>
 
 #include "pinctrl-intel.h"
 
@@ -508,6 +508,6 @@ static struct platform_driver ehl_pinctrl_driver = {
 
 module_platform_driver(ehl_pinctrl_driver);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel Elkhart Lake PCH pinctrl/GPIO driver");
 MODULE_LICENSE("GPL v2");

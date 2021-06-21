@@ -18,8 +18,8 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
-#include <linux/android/binder.h>
-#include <linux/android/binderfs.h>
+#include <linaos/android/binder.h>
+#include <linaos/android/binderfs.h>
 
 #include "../../kselftest_harness.h"
 

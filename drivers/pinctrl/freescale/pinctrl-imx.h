@@ -11,8 +11,8 @@
 #ifndef __DRIVERS_PINCTRL_IMX_H
 #define __DRIVERS_PINCTRL_IMX_H
 
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinmux.h>
 
 struct platform_device;
 

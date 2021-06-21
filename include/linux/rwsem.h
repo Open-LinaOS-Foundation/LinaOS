@@ -8,16 +8,16 @@
 #ifndef _LINUX_RWSEM_H
 #define _LINUX_RWSEM_H
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/err.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/atomic.h>
+#include <linaos/err.h>
 #ifdef CONFIG_RWSEM_SPIN_ON_OWNER
-#include <linux/osq_lock.h>
+#include <linaos/osq_lock.h>
 #endif
 
 /*

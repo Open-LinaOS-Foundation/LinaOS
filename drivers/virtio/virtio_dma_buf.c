@@ -5,8 +5,8 @@
  * Copyright (C) 2020 Google, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/virtio_dma_buf.h>
+#include <linaos/module.h>
+#include <linaos/virtio_dma_buf.h>
 
 /**
  * virtio_dma_buf_export - Creates a new dma-buf for a virtio exported object

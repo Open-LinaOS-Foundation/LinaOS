@@ -10,14 +10,14 @@
  * (alarms, trickle charger, different control registers) are unavailable.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/spi/spi.h>
+#include <linaos/bcd.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
 #define DS1390_REG_100THS		0x00
 #define DS1390_REG_SECONDS		0x01

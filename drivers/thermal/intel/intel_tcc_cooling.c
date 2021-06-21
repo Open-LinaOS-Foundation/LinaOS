@@ -6,9 +6,9 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/thermal.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/thermal.h>
 #include <asm/cpu_device_id.h>
 
 #define TCC_SHIFT 24

@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt) "ACPI: PM: " fmt
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
+#include <linaos/acpi.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/pm_qos.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/suspend.h>
 
 #include "internal.h"
 

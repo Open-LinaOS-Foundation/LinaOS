@@ -6,18 +6,18 @@
  *
  * Copyright 2005 Freescale Semiconductor, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/syscore_ops.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/fsl_devices.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/fsl_devices.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <asm/prom.h>

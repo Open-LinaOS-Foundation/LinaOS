@@ -15,8 +15,8 @@
 
 #include "cyttsp_core.h"
 
-#include <linux/i2c.h>
-#include <linux/input.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
 
 #define CY_I2C_DATA_SIZE	128
 

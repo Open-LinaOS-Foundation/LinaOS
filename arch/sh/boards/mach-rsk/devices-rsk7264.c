@@ -4,12 +4,12 @@
  *
  * Copyright (C) 2012 Renesas Electronics Europe
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/smsc911x.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/smsc911x.h>
 #include <asm/machvec.h>
 #include <asm/io.h>
 

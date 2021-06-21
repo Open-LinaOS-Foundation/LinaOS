@@ -1,7 +1,7 @@
 What:		Raise a uevent when a USB charger is inserted or removed
 Date:		2020-01-14
 KernelVersion:	5.6
-Contact:	linux-usb@vger.kernel.org
+Contact:	linaos-usb@vger.kernel.org
 Description:	There are two USB charger states:
 
 		- USB_CHARGER_ABSENT

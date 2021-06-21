@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/fs.h>
-#include <linux/interrupt.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-ciu-defs.h>
 #include <asm/octeon/cvmx.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
 
 #define TIMER_NUM 3
 

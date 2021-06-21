@@ -15,17 +15,17 @@
  *	and ima_file_check.
  */
 
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/binfmts.h>
-#include <linux/kernel_read_file.h>
-#include <linux/mount.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/ima.h>
-#include <linux/iversion.h>
-#include <linux/fs.h>
+#include <linaos/module.h>
+#include <linaos/file.h>
+#include <linaos/binfmts.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/mount.h>
+#include <linaos/mman.h>
+#include <linaos/slab.h>
+#include <linaos/xattr.h>
+#include <linaos/ima.h>
+#include <linaos/iversion.h>
+#include <linaos/fs.h>
 
 #include "ima.h"
 
@@ -454,7 +454,7 @@ int ima_file_mprotect(struct vm_area_struct *vma, unsigned long prot)
 
 /**
  * ima_bprm_check - based on policy, collect/store measurement.
- * @bprm: contains the linux_binprm structure
+ * @bprm: contains the linaos_binprm structure
  *
  * The OS protects against an executable file, already open for write,
  * from being executed in deny_write_access() and an executable file,
@@ -465,7 +465,7 @@ int ima_file_mprotect(struct vm_area_struct *vma, unsigned long prot)
  * On success return 0.  On integrity appraisal error, assuming the file
  * is in policy and IMA-appraisal is in enforcing mode, return -EACCES.
  */
-int ima_bprm_check(struct linux_binprm *bprm)
+int ima_bprm_check(struct linaos_binprm *bprm)
 {
 	int ret;
 	u32 secid;

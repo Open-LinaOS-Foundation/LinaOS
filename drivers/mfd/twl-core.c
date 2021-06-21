@@ -15,26 +15,26 @@
  * by syed khasim <x0khasim@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
-#include <linux/i2c.h>
-#include <linux/mfd/twl.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/twl.h>
 
 /* Register descriptions for audio */
-#include <linux/mfd/twl4030-audio.h>
+#include <linaos/mfd/twl4030-audio.h>
 
 #include "twl-core.h"
 
@@ -160,7 +160,7 @@ static struct twl_private *twl_priv;
 static struct twl_mapping twl4030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/mfd/twl.h> defines for TWL4030_MODULE_*
+	 * <linaos/mfd/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 
@@ -331,7 +331,7 @@ static const struct regmap_config twl4030_regmap_config[4] = {
 static struct twl_mapping twl6030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/mfd/twl.h> defines for TWL4030_MODULE_*
+	 * <linaos/mfd/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 
@@ -740,7 +740,7 @@ add_children(struct twl4030_platform_data *pdata, unsigned irq_base,
 		 * REVISIT platform_data here currently might expose the
 		 * "msecure" line ... but for now we just expect board
 		 * setup to tell the chip "it's always ok to SET_TIME".
-		 * Eventually, Linux might become more aware of such
+		 * Eventually, LinaOS might become more aware of such
 		 * HW security concerns, and "least privilege".
 		 */
 		child = add_child(TWL_MODULE_RTC, "twl_rtc", NULL, 0,

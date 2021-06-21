@@ -4,18 +4,18 @@
  * Copyright (c) 2019, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/cpuhotplug.h>
-#include <linux/pci.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/topology.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/isst_if.h>
+#include <linaos/module.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/pci.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/topology.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/isst_if.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 

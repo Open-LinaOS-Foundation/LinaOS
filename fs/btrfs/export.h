@@ -3,7 +3,7 @@
 #ifndef BTRFS_EXPORT_H
 #define BTRFS_EXPORT_H
 
-#include <linux/exportfs.h>
+#include <linaos/exportfs.h>
 
 extern const struct export_operations btrfs_export_ops;
 

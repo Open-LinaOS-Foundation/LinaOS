@@ -10,8 +10,8 @@
 #define __QETH_CORE_MPC_H__
 
 #include <asm/qeth.h>
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/in6.h>
+#include <uapi/linaos/if_ether.h>
+#include <uapi/linaos/in6.h>
 
 extern const unsigned char IPA_PDU_HEADER[];
 #define IPA_PDU_HEADER_SIZE	0x40

@@ -6,7 +6,7 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_gem_shmem_helper.h>

@@ -5,11 +5,11 @@
  * 2020 by Marek Behún <kabel@kernel.org>
  */
 
-#include <linux/i2c.h>
-#include <linux/led-class-multicolor.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <linaos/i2c.h>
+#include <linaos/led-class-multicolor.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
 #include "leds.h"
 
 #define OMNIA_BOARD_LEDS	12

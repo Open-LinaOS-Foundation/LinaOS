@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Copyright (C) 2000-2002	Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 2000-2002	Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 2003		Red Hat
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/genhd.h>
-#include <linux/blkpg.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/bitops.h>
-#include <linux/nmi.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/genhd.h>
+#include <linaos/blkpg.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/ide.h>
+#include <linaos/bitops.h>
+#include <linaos/nmi.h>
 
 #include <asm/byteorder.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 void SELECT_MASK(ide_drive_t *drive, int mask)

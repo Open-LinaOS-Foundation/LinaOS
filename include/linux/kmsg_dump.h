@@ -1,5 +1,5 @@
 /*
- * linux/include/kmsg_dump.h
+ * linaos/include/kmsg_dump.h
  *
  * Copyright (C) 2009 Net Insight AB
  *
@@ -12,8 +12,8 @@
 #ifndef _LINUX_KMSG_DUMP_H
 #define _LINUX_KMSG_DUMP_H
 
-#include <linux/errno.h>
-#include <linux/list.h>
+#include <linaos/errno.h>
+#include <linaos/list.h>
 
 /*
  * Keep this list arranged in rough order of priority. Anything listed after

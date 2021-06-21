@@ -1,4 +1,4 @@
-/* ne.c: A general non-shared-memory NS8390 ethernet driver for linux. */
+/* ne.c: A general non-shared-memory NS8390 ethernet driver for linaos. */
 /*
     Written 1992-94 by Donald Becker.
 
@@ -41,17 +41,17 @@ static const char version2[] =
 "Last modified Nov 1, 2000 by Paul Gortmaker\n";
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/isapnp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/isapnp.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
 
 #include <asm/io.h>
 
@@ -81,7 +81,7 @@ module_param_named(msg_enable, ne_msg_enable, uint, 0444);
 MODULE_PARM_DESC(io, "I/O base address(es),required");
 MODULE_PARM_DESC(irq, "IRQ number(s)");
 MODULE_PARM_DESC(bad, "Accept card(s) with bad signatures");
-MODULE_PARM_DESC(msg_enable, "Debug message level (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Debug message level (see linaos/netdevice.h for bitmap)");
 MODULE_DESCRIPTION("NE1000/NE2000 ISA/PnP Ethernet driver");
 MODULE_LICENSE("GPL");
 #endif /* MODULE */

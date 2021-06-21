@@ -8,12 +8,12 @@
  * Copyright (C) 1999-2001 Hewlett-Packard Company
  * Copyright (C) 1999-2001 Grant Grundler
  */
-#include <linux/eisa.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <linaos/eisa.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
 
 #include <asm/io.h>
 #include <asm/superio.h>

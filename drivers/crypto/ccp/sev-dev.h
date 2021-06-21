@@ -10,20 +10,20 @@
 #ifndef __SEV_DEV_H__
 #define __SEV_DEV_H__
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/dmapool.h>
-#include <linux/hw_random.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/dmaengine.h>
-#include <linux/psp-sev.h>
-#include <linux/miscdevice.h>
-#include <linux/capability.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/dmapool.h>
+#include <linaos/hw_random.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqreturn.h>
+#include <linaos/dmaengine.h>
+#include <linaos/psp-sev.h>
+#include <linaos/miscdevice.h>
+#include <linaos/capability.h>
 
 #define SEV_CMD_COMPLETE		BIT(1)
 #define SEV_CMDRESP_CMD_SHIFT		16

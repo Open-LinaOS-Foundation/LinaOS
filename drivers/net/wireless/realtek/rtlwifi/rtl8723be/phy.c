@@ -13,7 +13,7 @@
 #include "../rtl8723com/dm_common.h"
 #include "table.h"
 #include "trx.h"
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 static bool _rtl8723be_phy_bb8723b_config_parafile(struct ieee80211_hw *hw);
 static bool _rtl8723be_phy_config_mac_with_headerfile(struct ieee80211_hw *hw);

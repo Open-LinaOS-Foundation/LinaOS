@@ -7,20 +7,20 @@
  * Based on drivers/pcmcia/omap_cf.c
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/platform_device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
 
 #include <pcmcia/ss.h>
 

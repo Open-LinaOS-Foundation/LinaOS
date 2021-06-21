@@ -19,7 +19,7 @@
 #ifndef MT352_H
 #define MT352_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct mt352_config
 {

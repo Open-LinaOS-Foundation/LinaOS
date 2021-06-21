@@ -11,7 +11,7 @@
  * Woodruff
  *
  * This type of functionality should be implemented as a proper
- * omap_bus/omap_device in Linux.
+ * omap_bus/omap_device in LinaOS.
  *
  * omap_device differs from omap_hwmod in that it includes external
  * (e.g., board- and system-level) integration details.  omap_hwmod
@@ -20,8 +20,8 @@
 #ifndef __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_DEVICE_H
 #define __ARCH_ARM_PLAT_OMAP_INCLUDE_MACH_OMAP_DEVICE_H
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
 
 #include "omap_hwmod.h"
 
@@ -44,9 +44,9 @@ extern struct dev_pm_domain omap_device_fail_pm_domain;
  * @hwmods_cnt: ARRAY_SIZE() of @hwmods
  * @_state: one of OMAP_DEVICE_STATE_* (see above)
  * @flags: device flags
- * @_driver_status: one of BUS_NOTIFY_*_DRIVER from <linux/device.h>
+ * @_driver_status: one of BUS_NOTIFY_*_DRIVER from <linaos/device.h>
  *
- * Integrates omap_hwmod data into Linux platform_device.
+ * Integrates omap_hwmod data into LinaOS platform_device.
  *
  * Field names beginning with underscores are for the internal use of
  * the omap_device code.

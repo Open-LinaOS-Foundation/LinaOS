@@ -3,14 +3,14 @@
  * Host AP crypto routines
  *
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
- * Portions Copyright (C) 2004, Intel Corporation <jketreno@linux.intel.com>
+ * Portions Copyright (C) 2004, Intel Corporation <jketreno@linaos.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
 
 #include "ieee80211.h"
 

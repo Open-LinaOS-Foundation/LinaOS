@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-vexpress/platsmp.c
+ *  linaos/arch/arm/mach-vexpress/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/vexpress.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/vexpress.h>
 
 #include <asm/mcpm.h>
 #include <asm/smp_scu.h>

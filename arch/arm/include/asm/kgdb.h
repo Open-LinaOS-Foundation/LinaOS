@@ -11,7 +11,7 @@
 #ifndef __ARM_KGDB_H__
 #define __ARM_KGDB_H__
 
-#include <linux/ptrace.h>
+#include <linaos/ptrace.h>
 #include <asm/opcodes.h>
 
 /*

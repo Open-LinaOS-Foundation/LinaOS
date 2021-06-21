@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2008 Robert Jarzmik
  */
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
-#include <linux/regulator/max1586.h>
-#include <linux/of_device.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/slab.h>
+#include <linaos/regulator/max1586.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define MAX1586_V3_MAX_VSEL 31
 #define MAX1586_V6_MAX_VSEL 3

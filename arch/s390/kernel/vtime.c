@@ -6,13 +6,13 @@
  *    Author(s): Jan Glauber <jan.glauber@de.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/sched/cputime.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/timex.h>
-#include <linux/types.h>
-#include <linux/time.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/timex.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
 #include <asm/alternative.h>
 #include <asm/vtimer.h>
 #include <asm/vtime.h>

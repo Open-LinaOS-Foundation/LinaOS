@@ -39,10 +39,10 @@
 #include <unistd.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/unistd.h>
-#include <linux/compiler.h>
+#include <linaos/unistd.h>
+#include <linaos/compiler.h>
 
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf.h>
 #include <getopt.h>
 

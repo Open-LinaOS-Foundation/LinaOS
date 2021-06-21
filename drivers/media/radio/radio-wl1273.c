@@ -6,12 +6,12 @@
  * Author: Matti J. Aaltonen <matti.j.aaltonen@nokia.com>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/wl1273-core.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/wl1273-core.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

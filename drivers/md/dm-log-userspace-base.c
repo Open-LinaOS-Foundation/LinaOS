@@ -4,14 +4,14 @@
  * This file is released under the LGPL.
  */
 
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/dm-dirty-log.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-log-userspace.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <linaos/bio.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
+#include <linaos/dm-dirty-log.h>
+#include <linaos/device-mapper.h>
+#include <linaos/dm-log-userspace.h>
+#include <linaos/module.h>
+#include <linaos/workqueue.h>
 
 #include "dm-log-userspace-transfer.h"
 

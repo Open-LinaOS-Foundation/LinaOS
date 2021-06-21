@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * This is <linux/capability.h>
+ * This is <linaos/capability.h>
  *
  * Andrew G. Morgan <morgan@kernel.org>
  * Alexander Kjeldaas <astor@guardian.no>
@@ -8,13 +8,13 @@
  *
  * See here for the libcap library ("POSIX draft" compliance):
  *
- * ftp://www.kernel.org/pub/linux/libs/security/linux-privs/kernel-2.6/
+ * ftp://www.kernel.org/pub/linaos/libs/security/linaos-privs/kernel-2.6/
  */
 
 #ifndef _UAPI_LINUX_CAPABILITY_H
 #define _UAPI_LINUX_CAPABILITY_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* User-level do most of the mapping between kernel and user
    capabilities based on the version tag given by the kernel. The
@@ -158,7 +158,7 @@ struct vfs_ns_cap_data {
 
 
 /**
- ** Linux-specific capabilities
+ ** LinaOS-specific capabilities
  **/
 
 /* Without VFS support for capabilities:

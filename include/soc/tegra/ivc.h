@@ -5,9 +5,9 @@
 
 #ifndef __TEGRA_IVC_H
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/types.h>
 
 struct tegra_ivc_header;
 

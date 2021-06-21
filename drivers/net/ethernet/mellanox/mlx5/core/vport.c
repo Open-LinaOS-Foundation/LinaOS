@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/etherdevice.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/eswitch.h>
+#include <linaos/export.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/vport.h>
+#include <linaos/mlx5/eswitch.h>
 #include "mlx5_core.h"
 #include "sf/sf.h"
 

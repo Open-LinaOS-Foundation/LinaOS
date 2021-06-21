@@ -2,8 +2,8 @@
 #ifndef __ASM_SH_IO_TRAPPED_H
 #define __ASM_SH_IO_TRAPPED_H
 
-#include <linux/list.h>
-#include <linux/ioport.h>
+#include <linaos/list.h>
+#include <linaos/ioport.h>
 #include <asm/page.h>
 
 #define IO_TRAPPED_MAGIC 0xfeedbeef

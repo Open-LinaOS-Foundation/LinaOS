@@ -5,15 +5,15 @@
  * Copyright (C) 2010 Cisco Systems Inc. <dediao@cisco.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/memblock.h>
+#include <linaos/debugfs.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 #include <asm/bootinfo.h>
 #include <asm/page.h>

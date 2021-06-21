@@ -12,7 +12,7 @@ Notes on the change from 16-bit UIDs to 32-bit UIDs
 - kernel code should use uid_t and gid_t in kernel-private structures and
   code.
 
-What's left to be done for 32-bit UIDs on all Linux architectures:
+What's left to be done for 32-bit UIDs on all LinaOS architectures:
 
 - Disk quotas have an interesting limitation that is not related to the
   maximum UID/GID. They are limited by the maximum file size on the

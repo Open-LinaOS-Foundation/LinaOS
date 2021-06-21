@@ -6,14 +6,14 @@
  * Copyright:	(C) 2001 MontaVista Software Inc.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/partitions.h>
 
 #include <asm/io.h>
 #include <mach/hardware.h>

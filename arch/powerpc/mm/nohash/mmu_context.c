@@ -36,14 +36,14 @@
 #define pr_hardcont(args...)	do { } while(0)
 #endif
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/memblock.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu.h>
+#include <linaos/slab.h>
 
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>

@@ -6,10 +6,10 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
 
 #include <asm/cell-regs.h>
 #include <asm/firmware.h>
@@ -89,7 +89,7 @@ struct mem_region {
  *
  * ps3 addresses
  * virt_addr: a cpu 'translated' effective address
- * phys_addr: an address in what Linux thinks is the physical address space
+ * phys_addr: an address in what LinaOS thinks is the physical address space
  * lpar_addr: an address in the HV virtual address space
  * bus_addr: an io controller 'translated' address on a device bus
  */
@@ -118,8 +118,8 @@ static void __maybe_unused _debug_dump_map(const struct map *m,
 static struct map map;
 
 /**
- * ps3_mm_phys_to_lpar - translate a linux physical address to lpar address
- * @phys_addr: linux physical address
+ * ps3_mm_phys_to_lpar - translate a linaos physical address to lpar address
+ * @phys_addr: linaos physical address
  */
 
 unsigned long ps3_mm_phys_to_lpar(unsigned long phys_addr)

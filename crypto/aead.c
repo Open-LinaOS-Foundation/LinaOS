@@ -8,13 +8,13 @@
  */
 
 #include <crypto/internal/aead.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/cryptouser.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/cryptouser.h>
 #include <net/netlink.h>
 
 #include "internal.h"

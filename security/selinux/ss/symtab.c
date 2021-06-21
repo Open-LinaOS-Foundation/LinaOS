@@ -4,9 +4,9 @@
  *
  * Author : Stephen Smalley, <sds@tycho.nsa.gov>
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
 #include "symtab.h"
 
 static unsigned int symhash(const void *key)

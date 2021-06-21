@@ -4,19 +4,19 @@
  * Copyright (c) 2016 Cavium Inc.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/if_arp.h>
 #include <scsi/iscsi_if.h>
-#include <linux/inet.h>
+#include <linaos/inet.h>
 #include <net/arp.h>
-#include <linux/list.h>
-#include <linux/kthread.h>
-#include <linux/mm.h>
-#include <linux/if_vlan.h>
-#include <linux/cpu.h>
-#include <linux/iscsi_boot_sysfs.h>
+#include <linaos/list.h>
+#include <linaos/kthread.h>
+#include <linaos/mm.h>
+#include <linaos/if_vlan.h>
+#include <linaos/cpu.h>
+#include <linaos/iscsi_boot_sysfs.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

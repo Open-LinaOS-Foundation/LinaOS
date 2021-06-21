@@ -6,11 +6,11 @@
  * Copyright (C) 2011, 2012 Cavium, Inc.
  */
 
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 
 #include <asm/octeon/octeon.h>
 

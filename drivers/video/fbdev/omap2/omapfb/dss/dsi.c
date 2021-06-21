@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dsi.c
+ * linaos/drivers/video/omap2/dss/dsi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -8,28 +8,28 @@
 
 #define DSS_SUBSYS_NAME "DSI"
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/semaphore.h>
-#include <linux/seq_file.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/component.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/semaphore.h>
+#include <linaos/seq_file.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/debugfs.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/component.h>
 
 #include <video/omapfb_dss.h>
 #include <video/mipi_display.h>

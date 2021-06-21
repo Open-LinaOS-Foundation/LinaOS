@@ -9,19 +9,19 @@
  * Copyright (C) 1999,2000 Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/memblock.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/log2.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/spinlock.h>
+#include <linaos/memblock.h>
+#include <linaos/pagemap.h>
+#include <linaos/vmalloc.h>
+#include <linaos/kdebug.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/log2.h>
+#include <linaos/gfp.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
 
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
@@ -1186,7 +1186,7 @@ static void __init init_swift(void)
 		 * Gee george, I wonder why Sun is so hush hush about
 		 * this hardware bug... really braindamage stuff going
 		 * on here.  However I think we can find a way to avoid
-		 * all of the workaround overhead under Linux.  Basically,
+		 * all of the workaround overhead under LinaOS.  Basically,
 		 * any page fault can cause kernel pages to become user
 		 * accessible (the mmu gets confused and clears some of
 		 * the ACC bits in kernel ptes).  Aha, sounds pretty
@@ -1576,7 +1576,7 @@ static void __init get_srmmu_type(void)
 		case 14:
 		case 15:
 		default:
-			prom_printf("Sparc-Linux Cypress support does not longer exit.\n");
+			prom_printf("Sparc-LinaOS Cypress support does not longer exit.\n");
 			prom_halt();
 			break;
 		}

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2006 Dave Airlie <airlied@linaos.ie>
  * Copyright (c) 2007-2008 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -26,10 +26,10 @@
 #ifndef __INTEL_DISPLAY_TYPES_H__
 #define __INTEL_DISPLAY_TYPES_H__
 
-#include <linux/async.h>
-#include <linux/i2c.h>
-#include <linux/pwm.h>
-#include <linux/sched/clock.h>
+#include <linaos/async.h>
+#include <linaos/i2c.h>
+#include <linaos/pwm.h>
+#include <linaos/sched/clock.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_crtc.h>

@@ -1,8 +1,8 @@
 ======================
-Linux Kernel Makefiles
+LinaOS Kernel Makefiles
 ======================
 
-This document describes the Linux kernel Makefiles.
+This document describes the LinaOS kernel Makefiles.
 
 .. Table of Contents
 
@@ -15,7 +15,7 @@ This document describes the Linux kernel Makefiles.
 	   --- 3.4 <deleted>
 	   --- 3.5 Library file goals - lib-y
 	   --- 3.6 Descending down in directories
-	   --- 3.7 Non-builtin vmlinux targets - extra-y
+	   --- 3.7 Non-builtin vmlinaos targets - extra-y
 	   --- 3.8 Always built goals - always-y
 	   --- 3.9 Compilation flags
 	   --- 3.10 Dependency tracking
@@ -78,7 +78,7 @@ The Makefiles have five parts::
 The top Makefile reads the .config file, which comes from the kernel
 configuration process.
 
-The top Makefile is responsible for building two major products: vmlinux
+The top Makefile is responsible for building two major products: vmlinaos
 (the resident kernel image) and modules (any module files).
 It builds these goals by recursively descending into the subdirectories of
 the kernel source tree.
@@ -165,14 +165,14 @@ more details, with real examples.
 3.2 Built-in object goals - obj-y
 ---------------------------------
 
-	The kbuild Makefile specifies object files for vmlinux
+	The kbuild Makefile specifies object files for vmlinaos
 	in the $(obj-y) lists.  These lists depend on the kernel
 	configuration.
 
 	Kbuild compiles all the $(obj-y) files.  It then calls
 	"$(AR) rcSTP" to merge these files into one built-in.a file.
 	This is a thin archive without a symbol table. It will be later
-	linked into vmlinux by scripts/link-vmlinux.sh
+	linked into vmlinaos by scripts/link-vmlinaos.sh
 
 	The order of files in $(obj-y) is significant.  Duplicates in
 	the lists are allowed: the first instance will be linked into
@@ -302,14 +302,14 @@ more details, with real examples.
 
 	Kbuild uses this information not only to decide that it needs to visit
 	the directory, but also to decide whether or not to link objects from
-	the directory into vmlinux.
+	the directory into vmlinaos.
 
 	When Kbuild descends into the directory with 'y', all built-in objects
 	from that directory are combined into the built-in.a, which will be
-	eventually linked into vmlinux.
+	eventually linked into vmlinaos.
 
 	When Kbuild descends into the directory with 'm', in contrast, nothing
-	from that directory will be linked into vmlinux. If the Makefile in
+	from that directory will be linked into vmlinaos. If the Makefile in
 	that directory specifies obj-y, those objects will be left orphan.
 	It is very likely a bug of the Makefile or of dependencies in Kconfig.
 
@@ -323,7 +323,7 @@ more details, with real examples.
 		# scripts/Makefile
 		subdir-$(CONFIG_GCC_PLUGINS) += gcc-plugins
 		subdir-$(CONFIG_MODVERSIONS) += genksyms
-		subdir-$(CONFIG_SECURITY_SELINUX) += selinux
+		subdir-$(CONFIG_SECURITY_SELINUX) += selinaos
 
 	Unlike obj-y/m, subdir-y/m does not need the trailing slash since this
 	syntax is always used for directories.
@@ -332,18 +332,18 @@ more details, with real examples.
 	names. This allows kbuild to totally skip the directory if the
 	corresponding `CONFIG_` option is neither 'y' nor 'm'.
 
-3.7 Non-builtin vmlinux targets - extra-y
+3.7 Non-builtin vmlinaos targets - extra-y
 -----------------------------------------
 
-	extra-y specifies targets which are needed for building vmlinux,
+	extra-y specifies targets which are needed for building vmlinaos,
 	but not combined into built-in.a.
 
 	Examples are:
 
 	1) head objects
 
-	    Some objects must be placed at the head of vmlinux. They are
-	    directly linked to vmlinux without going through built-in.a
+	    Some objects must be placed at the head of vmlinaos. They are
+	    directly linked to vmlinaos without going through built-in.a
 	    A typical use-case is an object that contains the entry point.
 
 	    arch/$(SRCARCH)/Makefile should specify such objects as head-y.
@@ -352,10 +352,10 @@ more details, with real examples.
 	      Given that we can control the section order in the linker script,
 	      why do we need head-y?
 
-	2) vmlinux linker script
+	2) vmlinaos linker script
 
-	    The linker script for vmlinux is located at
-	    arch/$(SRCARCH)/kernel/vmlinux.lds
+	    The linker script for vmlinaos is located at
+	    arch/$(SRCARCH)/kernel/vmlinaos.lds
 
 	Example::
 
@@ -364,11 +364,11 @@ more details, with real examples.
 		extra-y	+= head$(BITS).o
 		extra-y	+= ebda.o
 		extra-y	+= platform-quirks.o
-		extra-y	+= vmlinux.lds
+		extra-y	+= vmlinaos.lds
 
-	$(extra-y) should only contain targets needed for vmlinux.
+	$(extra-y) should only contain targets needed for vmlinaos.
 
-	Kbuild skips extra-y when vmlinux is apparently not a final goal.
+	Kbuild skips extra-y when vmlinaos is apparently not a final goal.
 	(e.g. 'make modules', or building external modules)
 
 	If you intend to build targets unconditionally, always-y (explained
@@ -534,7 +534,7 @@ more details, with real examples.
 	Example::
 
 		# arch/arm/Makefile
-		$(BOOT_TARGETS): vmlinux
+		$(BOOT_TARGETS): vmlinaos
 			$(Q)$(MAKE) $(build)=$(boot) MACHINE=$(MACHINE) $(boot)/$@
 			@$(kecho) '  Kernel: $(boot)/$@ is ready'
 
@@ -718,7 +718,7 @@ more details, with real examples.
 		#arch/m68k/Makefile
 		ifneq ($(SUBARCH),$(ARCH))
 		        ifeq ($(CROSS_COMPILE),)
-		               CROSS_COMPILE := $(call cc-cross-prefix, m68k-linux-gnu-)
+		               CROSS_COMPILE := $(call cc-cross-prefix, m68k-linaos-gnu-)
 			endif
 		endif
 
@@ -734,7 +734,7 @@ more details, with real examples.
 	Example::
 
 		#Makefile
-		LDFLAGS_vmlinux += $(call ld-option, -X)
+		LDFLAGS_vmlinaos += $(call ld-option, -X)
 
 3.15 Script invocation
 ----------------------
@@ -1084,13 +1084,13 @@ a few targets.
 When kbuild executes, the following steps are followed (roughly):
 
 1) Configuration of the kernel => produce .config
-2) Store kernel version in include/linux/version.h
+2) Store kernel version in include/linaos/version.h
 3) Updating all other prerequisites to the target prepare:
    - Additional prerequisites are specified in arch/$(SRCARCH)/Makefile
 4) Recursively descend down in all directories listed in
    init-* core* drivers-* net-* libs-* and build all targets.
    - The values of the above variables are expanded in arch/$(SRCARCH)/Makefile.
-5) All object files are then linked and the resulting file vmlinux is
+5) All object files are then linked and the resulting file vmlinaos is
    located at the root of the obj tree.
    The very first objects linked are listed in head-y, assigned by
    arch/$(SRCARCH)/Makefile.
@@ -1117,17 +1117,17 @@ When kbuild executes, the following steps are followed (roughly):
 	Note: ldflags-y can be used to further customise
 	the flags used. See section 3.7.
 
-    LDFLAGS_vmlinux
-	Options for $(LD) when linking vmlinux
+    LDFLAGS_vmlinaos
+	Options for $(LD) when linking vmlinaos
 
-	LDFLAGS_vmlinux is used to specify additional flags to pass to
-	the linker when linking the final vmlinux image.
-	LDFLAGS_vmlinux uses the LDFLAGS_$@ support.
+	LDFLAGS_vmlinaos is used to specify additional flags to pass to
+	the linker when linking the final vmlinaos image.
+	LDFLAGS_vmlinaos uses the LDFLAGS_$@ support.
 
 	Example::
 
 		#arch/x86/Makefile
-		LDFLAGS_vmlinux := -e stext
+		LDFLAGS_vmlinaos := -e stext
 
     OBJCOPYFLAGS
 	objcopy flags
@@ -1135,7 +1135,7 @@ When kbuild executes, the following steps are followed (roughly):
 	When $(call if_changed,objcopy) is used to translate a .o file,
 	the flags specified in OBJCOPYFLAGS will be used.
 	$(call if_changed,objcopy) is often used to generate raw binaries on
-	vmlinux.
+	vmlinaos.
 
 	Example::
 
@@ -1143,11 +1143,11 @@ When kbuild executes, the following steps are followed (roughly):
 		OBJCOPYFLAGS := -O binary
 
 		#arch/s390/boot/Makefile
-		$(obj)/image: vmlinux FORCE
+		$(obj)/image: vmlinaos FORCE
 			$(call if_changed,objcopy)
 
 	In this example, the binary $(obj)/image is a binary version of
-	vmlinux. The usage of $(call if_changed,xxx) will be described later.
+	vmlinaos. The usage of $(call if_changed,xxx) will be described later.
 
     KBUILD_AFLAGS
 	Assembler flags
@@ -1238,14 +1238,14 @@ When kbuild executes, the following steps are followed (roughly):
 
     KBUILD_VMLINUX_OBJS
 
-	All object files for vmlinux. They are linked to vmlinux in the same
+	All object files for vmlinaos. They are linked to vmlinaos in the same
 	order as listed in KBUILD_VMLINUX_OBJS.
 
     KBUILD_VMLINUX_LIBS
 
-	All .a "lib" files for vmlinux. KBUILD_VMLINUX_OBJS and
+	All .a "lib" files for vmlinaos. KBUILD_VMLINUX_OBJS and
 	KBUILD_VMLINUX_LIBS together specify all the object files used to
-	link vmlinux.
+	link vmlinaos.
 
 7.2 Add prerequisites to archheaders
 ------------------------------------
@@ -1279,13 +1279,13 @@ When kbuild executes, the following steps are followed (roughly):
 ---------------------------------------------
 
 	An arch Makefile cooperates with the top Makefile to define variables
-	which specify how to build the vmlinux file.  Note that there is no
+	which specify how to build the vmlinaos file.  Note that there is no
 	corresponding arch-specific section for modules; the module-building
 	machinery is all architecture-independent.
 
 
 	head-y, core-y, libs-y, drivers-y
-	    $(head-y) lists objects to be linked first in vmlinux.
+	    $(head-y) lists objects to be linked first in vmlinaos.
 
 	    $(libs-y) lists directories where a lib.a archive can be located.
 
@@ -1313,7 +1313,7 @@ When kbuild executes, the following steps are followed (roughly):
 7.5 Architecture-specific boot images
 -------------------------------------
 
-	An arch Makefile specifies goals that take the vmlinux file, compress
+	An arch Makefile specifies goals that take the vmlinaos file, compress
 	it, wrap it in bootstrapping code, and copy the resulting files
 	somewhere. This includes various kinds of installation commands.
 	The actual goals are not standardized across architectures.
@@ -1333,7 +1333,7 @@ When kbuild executes, the following steps are followed (roughly):
 
 		#arch/x86/Makefile
 		boot := arch/x86/boot
-		bzImage: vmlinux
+		bzImage: vmlinaos
 			$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 	"$(Q)$(MAKE) $(build)=<dir>" is the recommended way to invoke
@@ -1356,7 +1356,7 @@ When kbuild executes, the following steps are followed (roughly):
 	An architecture shall always, per default, build a bootable image.
 	In "make help", the default goal is highlighted with a '*'.
 	Add a new prerequisite to all: to select a default goal different
-	from vmlinux.
+	from vmlinaos.
 
 	Example::
 
@@ -1412,12 +1412,12 @@ When kbuild executes, the following steps are followed (roughly):
 	Example::
 
 		#arch/x86/boot/compressed/Makefile
-		$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y) FORCE
+		$(obj)/vmlinaos.bin.gz: $(vmlinaos.bin.all-y) FORCE
 			$(call if_changed,gzip)
 
     dtc
 	Create flattened device tree blob object suitable for linking
-	into vmlinux. Device tree blobs linked into vmlinux are placed
+	into vmlinaos. Device tree blobs linked into vmlinaos are placed
 	in an init section in the image. Platform code *must* copy the
 	blob to non-init memory prior to calling unflatten_device_tree().
 
@@ -1435,21 +1435,21 @@ When kbuild executes, the following steps are followed (roughly):
 7.9 Preprocessing linker scripts
 --------------------------------
 
-	When the vmlinux image is built, the linker script
-	arch/$(SRCARCH)/kernel/vmlinux.lds is used.
-	The script is a preprocessed variant of the file vmlinux.lds.S
+	When the vmlinaos image is built, the linker script
+	arch/$(SRCARCH)/kernel/vmlinaos.lds is used.
+	The script is a preprocessed variant of the file vmlinaos.lds.S
 	located in the same directory.
 	kbuild knows .lds files and includes a rule `*lds.S` -> `*lds`.
 
 	Example::
 
 		#arch/x86/kernel/Makefile
-		extra-y := vmlinux.lds
+		extra-y := vmlinaos.lds
 
 	The assignment to extra-y is used to tell kbuild to build the
-	target vmlinux.lds.
-	The assignment to $(CPPFLAGS_vmlinux.lds) tells kbuild to use the
-	specified options when building the target vmlinux.lds.
+	target vmlinaos.lds.
+	The assignment to $(CPPFLAGS_vmlinaos.lds) tells kbuild to use the
+	specified options when building the target vmlinaos.lds.
 
 	When building the `*.lds` target, kbuild uses the variables::
 
@@ -1475,17 +1475,17 @@ When kbuild executes, the following steps are followed (roughly):
 -------------------
 
 	If the file arch/xxx/Makefile.postlink exists, this makefile
-	will be invoked for post-link objects (vmlinux and modules.ko)
+	will be invoked for post-link objects (vmlinaos and modules.ko)
 	for architectures to run post-link passes on. Must also handle
 	the clean target.
 
 	This pass runs after kallsyms generation. If the architecture
 	needs to modify symbol locations, rather than manipulate the
 	kallsyms, it may be easier to add another postlink target for
-	.tmp_vmlinux? targets to be called from link-vmlinux.sh.
+	.tmp_vmlinaos? targets to be called from link-vmlinaos.sh.
 
 	For example, powerpc uses this to check relocation sanity of
-	the linked vmlinux file.
+	the linked vmlinaos file.
 
 8 Kbuild syntax for exported headers
 ------------------------------------
@@ -1510,7 +1510,7 @@ See subsequent chapter for the syntax of the Kbuild file.
 8.1 no-export-headers
 ---------------------
 
-	no-export-headers is essentially used by include/uapi/linux/Kbuild to
+	no-export-headers is essentially used by include/uapi/linaos/Kbuild to
 	avoid exporting specific headers (e.g. kvm.h) on architectures that do
 	not support it. It should be avoided as much as possible.
 

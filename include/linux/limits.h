@@ -2,8 +2,8 @@
 #ifndef _LINUX_LIMITS_H
 #define _LINUX_LIMITS_H
 
-#include <uapi/linux/limits.h>
-#include <linux/types.h>
+#include <uapi/linaos/limits.h>
+#include <linaos/types.h>
 #include <vdso/limits.h>
 
 #define SIZE_MAX	(~(size_t)0)

@@ -5,12 +5,12 @@
  * Declarations for Reverse Mapping functions in mm/rmap.c
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/rwsem.h>
-#include <linux/memcontrol.h>
-#include <linux/highmem.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/rwsem.h>
+#include <linaos/memcontrol.h>
+#include <linaos/highmem.h>
 
 /*
  * The anon_vma heads a list of private "related" vmas, to scan if

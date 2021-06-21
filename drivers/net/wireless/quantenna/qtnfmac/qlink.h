@@ -4,7 +4,7 @@
 #ifndef _QTN_QLINK_H_
 #define _QTN_QLINK_H_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #define QLINK_PROTO_VER_MAJOR_M		0xFFFF
 #define QLINK_PROTO_VER_MAJOR_S		16

@@ -11,15 +11,15 @@
  * Same code handles filtering of duplicates for PRP as well.
  */
 
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
+#include <linaos/if_ether.h>
+#include <linaos/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/rculist.h>
 #include "hsr_main.h"
 #include "hsr_framereg.h"
 #include "hsr_netlink.h"
 
-/*	TODO: use hash lists for mac addresses (linux/jhash.h)?    */
+/*	TODO: use hash lists for mac addresses (linaos/jhash.h)?    */
 
 /* seq_nr_after(a, b) - return true if a is after (higher in sequence than) b,
  * false otherwise.

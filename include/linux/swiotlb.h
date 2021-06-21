@@ -2,11 +2,11 @@
 #ifndef __LINUX_SWIOTLB_H
 #define __LINUX_SWIOTLB_H
 
-#include <linux/dma-direction.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/limits.h>
-#include <linux/spinlock.h>
+#include <linaos/dma-direction.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/limits.h>
+#include <linaos/spinlock.h>
 
 struct device;
 struct page;

@@ -14,11 +14,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/siphash.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/module.h>
+#include <linaos/siphash.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
 
 /* Test vectors taken from reference source available at:
  *     https://github.com/veorq/SipHash

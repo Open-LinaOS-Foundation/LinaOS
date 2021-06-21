@@ -5,14 +5,14 @@
  * This file is released under the GPL.
  */
 
-#include <linux/dm-dirty-log.h>
-#include <linux/dm-region-hash.h>
+#include <linaos/dm-dirty-log.h>
+#include <linaos/dm-region-hash.h>
 
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/ctype.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include "dm.h"
 

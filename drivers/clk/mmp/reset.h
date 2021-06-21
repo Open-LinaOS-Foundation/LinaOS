@@ -2,7 +2,7 @@
 #ifndef __MACH_MMP_CLK_RESET_H
 #define __MACH_MMP_CLK_RESET_H
 
-#include <linux/reset-controller.h>
+#include <linaos/reset-controller.h>
 
 #define MMP_RESET_INVERT	1
 

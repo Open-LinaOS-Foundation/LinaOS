@@ -34,24 +34,24 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/sunxi-rsb.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/clk/clk-conf.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/slab.h>
+#include <linaos/sunxi-rsb.h>
+#include <linaos/types.h>
 
 /* RSB registers */
 #define RSB_CTRL	0x0	/* Global control */

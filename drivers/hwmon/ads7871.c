@@ -52,13 +52,13 @@
 #define OSC_R2V_BM	(1 << 1)
 #define OSC_RBG_BM	(1 << 0)
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/spi/spi.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
 
 #define DEVICE_NAME	"ads7871"
 

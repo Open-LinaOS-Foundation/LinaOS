@@ -10,17 +10,17 @@
 #ifndef __MTU3_H__
 #define __MTU3_H__
 
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/extcon.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/phy/phy.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
+#include <linaos/device.h>
+#include <linaos/dmapool.h>
+#include <linaos/extcon.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/usb.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg.h>
 
 struct mtu3;
 struct mtu3_ep;

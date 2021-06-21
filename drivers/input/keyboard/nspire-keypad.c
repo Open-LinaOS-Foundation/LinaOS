@@ -3,16 +3,16 @@
  *  Copyright (C) 2013 Daniel Tang <tangrs@tangrs.id.au>
  */
 
-#include <linux/input/matrix_keypad.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
 
 #define KEYPAD_SCAN_MODE	0x00
 #define KEYPAD_CNTL		0x04

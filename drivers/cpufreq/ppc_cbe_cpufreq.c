@@ -7,9 +7,9 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linaos/cpufreq.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

@@ -6,19 +6,19 @@
  * Author:  Alexandre Torgue <alexandre.torgue@st.com> for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/stmmac.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_net.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/stmmac.h>
 
 #include "stmmac_platform.h"
 

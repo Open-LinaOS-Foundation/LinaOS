@@ -21,9 +21,9 @@
 #ifndef	__ATOMISP_COMMON_H__
 #define	__ATOMISP_COMMON_H__
 
-#include "../../include/linux/atomisp.h"
+#include "../../include/linaos/atomisp.h"
 
-#include <linux/v4l2-mediabus.h>
+#include <linaos/v4l2-mediabus.h>
 
 #include <media/videobuf-core.h>
 

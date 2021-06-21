@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/mdacon.c -- Low level MDA based console driver
+ *  linaos/drivers/video/mdacon.c -- Low level MDA based console driver
  *
  *	(c) 1998 Andrew Apted <ajapted@netspace.net.au>
  *
@@ -26,20 +26,20 @@
  *  Paul G. (03/2001) Fix mdacon= boot prompt to use __setup().
  */
 
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/vt_kern.h>
-#include <linux/vt_buffer.h>
-#include <linux/selection.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/console.h>
+#include <linaos/string.h>
+#include <linaos/kd.h>
+#include <linaos/vt_kern.h>
+#include <linaos/vt_buffer.h>
+#include <linaos/selection.h>
+#include <linaos/spinlock.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
 
 #include <asm/io.h>
 #include <asm/vga.h>

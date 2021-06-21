@@ -4,16 +4,16 @@
  * Copyright (C) 2015 Texas Instruments Inc.
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/bitfield.h>
+#include <linaos/ethtool.h>
+#include <linaos/kernel.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/bitfield.h>
 
 #include <dt-bindings/net/ti-dp83867.h>
 

@@ -6,14 +6,14 @@
  * Copyright (c) 2017 Vadim Pasternak <vadimp@mellanox.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 
 #define MAX6621_DRV_NAME		"max6621"
 #define MAX6621_TEMP_INPUT_REG_NUM	9

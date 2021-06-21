@@ -12,18 +12,18 @@
  * The rest of the code was was rewritten from scratch.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/crc32.h>
-#include <linux/usb.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/crc32.h>
+#include <linaos/usb.h>
+#include <linaos/firmware.h>
+#include <linaos/ctype.h>
+#include <linaos/sched.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/freezer.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
 
 #include <asm/unaligned.h>
 

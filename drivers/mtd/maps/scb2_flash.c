@@ -45,15 +45,15 @@
  * steps.  Probably a wise thing to do.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
 
 #define MODNAME		"scb2_flash"
 #define SCB2_ADDR	0xfff00000

@@ -11,10 +11,10 @@
  *  Copyright (C) 2004-2005  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/serdev.h>
-#include <linux/skbuff.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/serdev.h>
+#include <linaos/skbuff.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

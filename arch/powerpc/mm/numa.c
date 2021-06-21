@@ -6,24 +6,24 @@
  */
 #define pr_fmt(fmt) "numa: " fmt
 
-#include <linux/threads.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/export.h>
-#include <linux/nodemask.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/pfn.h>
-#include <linux/cpuset.h>
-#include <linux/node.h>
-#include <linux/stop_machine.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linaos/threads.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/mmzone.h>
+#include <linaos/export.h>
+#include <linaos/nodemask.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/pfn.h>
+#include <linaos/cpuset.h>
+#include <linaos/node.h>
+#include <linaos/stop_machine.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
 #include <asm/cputhreads.h>
 #include <asm/sparsemem.h>
 #include <asm/prom.h>
@@ -633,15 +633,15 @@ static unsigned long __init numa_enforce_memory_limit(unsigned long start,
 
 /*
  * Reads the counter for a given entry in
- * linux,drconf-usable-memory property
+ * linaos,drconf-usable-memory property
  */
 static inline int __init read_usm_ranges(const __be32 **usm)
 {
 	/*
 	 * For each lmb in ibm,dynamic-memory a corresponding
-	 * entry in linux,drconf-usable-memory property contains
+	 * entry in linaos,drconf-usable-memory property contains
 	 * a counter followed by that many (base, size) duple.
-	 * read the counter from linux,drconf-usable-memory
+	 * read the counter from linaos,drconf-usable-memory
 	 */
 	return read_n_cells(n_mem_size_cells, usm);
 }
@@ -756,7 +756,7 @@ static int __init parse_numa_properties(void)
 		unsigned int len;
 
 		memcell_buf = of_get_property(memory,
-			"linux,usable-memory", &len);
+			"linaos,usable-memory", &len);
 		if (!memcell_buf || len <= 0)
 			memcell_buf = of_get_property(memory, "reg", &len);
 		if (!memcell_buf || len <= 0)
@@ -938,7 +938,7 @@ void __init mem_topology_setup(void)
 	int cpu;
 
 	/*
-	 * Linux/mm assumes node 0 to be online at boot. However this is not
+	 * LinaOS/mm assumes node 0 to be online at boot. However this is not
 	 * true on PowerPC, where node 0 is similar to any other node, it
 	 * could be cpuless, memoryless node. So force node 0 to be offline
 	 * for now. This will prevent cpuless, memoryless node 0 showing up

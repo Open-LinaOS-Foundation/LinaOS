@@ -11,9 +11,9 @@
  * Copyright (C) 2013 Jiri Kosina
  */
 
-#include <linux/module.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
 
 static int irq = -1;
 

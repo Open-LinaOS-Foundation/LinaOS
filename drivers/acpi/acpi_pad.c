@@ -5,18 +5,18 @@
  * Copyright (c) 2009, Intel Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kthread.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/tick.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/cpumask.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/kthread.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/freezer.h>
+#include <linaos/cpu.h>
+#include <linaos/tick.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
 #include <asm/mwait.h>
 #include <xen/xen.h>
 

@@ -6,7 +6,7 @@
  * implement the power_save function in idle.
  */
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/cputable.h>

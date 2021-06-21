@@ -5,15 +5,15 @@
  * Copyright (c) 2016 HiSilicon Technologies Co., Ltd.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/reset.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/reset.h>
 
 #define PWM_CFG0_ADDR(x)    (((x) * 0x20) + 0x0)
 #define PWM_CFG1_ADDR(x)    (((x) * 0x20) + 0x4)

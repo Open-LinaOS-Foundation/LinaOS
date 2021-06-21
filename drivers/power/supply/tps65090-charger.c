@@ -5,20 +5,20 @@
  * Copyright (c) 2013, NVIDIA CORPORATION.  All rights reserved.
 
  */
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/freezer.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
 
-#include <linux/mfd/tps65090.h>
+#include <linaos/mfd/tps65090.h>
 
 #define TPS65090_CHARGER_ENABLE	BIT(0)
 #define TPS65090_VACG		BIT(1)

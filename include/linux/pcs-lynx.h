@@ -6,8 +6,8 @@
 #ifndef __LINUX_PCS_LYNX_H
 #define __LINUX_PCS_LYNX_H
 
-#include <linux/mdio.h>
-#include <linux/phylink.h>
+#include <linaos/mdio.h>
+#include <linaos/phylink.h>
 
 struct lynx_pcs {
 	struct phylink_pcs pcs;

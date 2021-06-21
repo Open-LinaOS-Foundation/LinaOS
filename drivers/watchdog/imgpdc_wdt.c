@@ -37,14 +37,14 @@
  * clock rate and achieve a finer timeout granularity.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/watchdog.h>
 
 /* registers */
 #define PDC_WDT_SOFT_RESET		0x00

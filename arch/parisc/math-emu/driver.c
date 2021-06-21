@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * LinaOS/PA-RISC Project (http://www.parisc-linaos.org/)
  *
  * Floating-point emulation code
  *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
  */
 /*
- *  linux/arch/math-emu/driver.c.c
+ *  linaos/arch/math-emu/driver.c.c
  *
  *	decodes and dispatches unimplemented FPU instructions
  *
@@ -14,7 +14,7 @@
  *  Copyright (C) 2001	      Hewlett-Packard <bame@debian.org>
  */
 
-#include <linux/sched/signal.h>
+#include <linaos/sched/signal.h>
 
 #include "float.h"
 #include "math-emu.h"

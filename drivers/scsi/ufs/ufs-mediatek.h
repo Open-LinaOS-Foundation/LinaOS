@@ -6,8 +6,8 @@
 #ifndef _UFS_MEDIATEK_H
 #define _UFS_MEDIATEK_H
 
-#include <linux/bitops.h>
-#include <linux/soc/mediatek/mtk_sip_svc.h>
+#include <linaos/bitops.h>
+#include <linaos/soc/mediatek/mtk_sip_svc.h>
 
 /*
  * Vendor specific UFSHCI Registers

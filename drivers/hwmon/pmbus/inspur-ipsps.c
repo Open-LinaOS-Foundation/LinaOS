@@ -3,13 +3,13 @@
  * Copyright 2019 Inspur Corp.
  */
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/pmbus.h>
+#include <linaos/hwmon-sysfs.h>
 
 #include "pmbus.h"
 

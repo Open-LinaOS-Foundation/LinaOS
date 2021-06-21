@@ -2,15 +2,15 @@
 /*
     tuner-i2c.h - i2c interface for different tuners
 
-    Copyright (C) 2007 Michael Krufky (mkrufky@linuxtv.org)
+    Copyright (C) 2007 Michael Krufky (mkrufky@linaostv.org)
 
 */
 
 #ifndef __TUNER_I2C_H__
 #define __TUNER_I2C_H__
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
 
 struct tuner_i2c_props {
 	u8 addr;

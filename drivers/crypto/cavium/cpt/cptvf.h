@@ -6,7 +6,7 @@
 #ifndef __CPTVF_H
 #define __CPTVF_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "cpt_common.h"
 
 /* Default command queue length */

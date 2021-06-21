@@ -2,7 +2,7 @@
 #ifndef _LINUX_VHOST_IOTLB_H
 #define _LINUX_VHOST_IOTLB_H
 
-#include <linux/interval_tree_generic.h>
+#include <linaos/interval_tree_generic.h>
 
 struct vhost_iotlb_map {
 	struct rb_node rb;

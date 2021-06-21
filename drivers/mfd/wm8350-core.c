@@ -7,25 +7,25 @@
  * Author: Liam Girdwood, Mark Brown
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/bug.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/workqueue.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/audio.h>
-#include <linux/mfd/wm8350/comparator.h>
-#include <linux/mfd/wm8350/gpio.h>
-#include <linux/mfd/wm8350/pmic.h>
-#include <linux/mfd/wm8350/rtc.h>
-#include <linux/mfd/wm8350/supply.h>
-#include <linux/mfd/wm8350/wdt.h>
+#include <linaos/mfd/wm8350/core.h>
+#include <linaos/mfd/wm8350/audio.h>
+#include <linaos/mfd/wm8350/comparator.h>
+#include <linaos/mfd/wm8350/gpio.h>
+#include <linaos/mfd/wm8350/pmic.h>
+#include <linaos/mfd/wm8350/rtc.h>
+#include <linaos/mfd/wm8350/supply.h>
+#include <linaos/mfd/wm8350/wdt.h>
 
 #define WM8350_CLOCK_CONTROL_1		0x28
 #define WM8350_AIF_TEST			0x74

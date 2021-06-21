@@ -3,17 +3,17 @@
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  *
- * Copyright (c) 2014 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/ascii85.h>
-#include <linux/interconnect.h>
-#include <linux/qcom_scm.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/mdt_loader.h>
+#include <linaos/ascii85.h>
+#include <linaos/interconnect.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/kernel.h>
+#include <linaos/of_address.h>
+#include <linaos/pm_opp.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/mdt_loader.h>
 #include <soc/qcom/ocmem.h>
 #include "adreno_gpu.h"
 #include "a6xx_gpu.h"
@@ -127,7 +127,7 @@ static int zap_shader_load_mdt(struct msm_gpu *gpu, const char *fwname,
 	 * Load the rest of the MDT
 	 *
 	 * Note that we could be dealing with two different paths, since
-	 * with upstream linux-firmware it would be in a qcom/ subdir..
+	 * with upstream linaos-firmware it would be in a qcom/ subdir..
 	 * adreno_request_fw() handles this, but qcom_mdt_load() does
 	 * not.  But since we've already gotten through adreno_request_fw()
 	 * we know which of the two cases it is:

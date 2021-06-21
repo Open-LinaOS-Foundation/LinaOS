@@ -4,8 +4,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stringify.h>
-#include <linux/types.h>
+#include <linaos/stringify.h>
+#include <linaos/types.h>
 
 #define JUMP_LABEL_NOP_SIZE 4
 

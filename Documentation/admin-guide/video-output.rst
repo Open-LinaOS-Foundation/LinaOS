@@ -9,7 +9,7 @@ device through common sysfs interface. For example, on my IBM ThinkPad T42
 laptop, The ACPI video driver registered its output devices and read/write
 method for 'state' with output sysfs class. The user interface under sysfs is::
 
-  linux:/sys/class/video_output # tree .
+  linaos:/sys/class/video_output # tree .
   .
   |-- CRT0
   |   |-- device -> ../../../devices/pci0000:00/0000:00:01.0

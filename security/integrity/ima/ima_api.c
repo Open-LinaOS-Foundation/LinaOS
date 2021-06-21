@@ -8,12 +8,12 @@
  *	Implements must_appraise_or_measure, collect_measurement,
  *	appraise_measurement, store_measurement and store_template.
  */
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
-#include <linux/evm.h>
-#include <linux/iversion.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/xattr.h>
+#include <linaos/evm.h>
+#include <linaos/iversion.h>
 
 #include "ima.h"
 

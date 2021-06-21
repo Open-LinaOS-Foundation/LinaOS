@@ -5,19 +5,19 @@
  *    PnpNetwork PN1010 QPSK Demodulator
  *
  * Copyright (C) 2005 Andrew de Quincey <adq_dvb@lidskialf.net>
- * Copyright (C) 2005-8 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005-8 Patrick Boettcher <pb@linaostv.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
 #include <asm/div64.h>
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 
 #include <media/dvb_frontend.h>

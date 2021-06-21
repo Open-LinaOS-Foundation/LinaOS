@@ -2,7 +2,7 @@
 /*
  * User string length functions for kernel
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 #define isrc	r0

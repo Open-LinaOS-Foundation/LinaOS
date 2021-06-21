@@ -15,18 +15,18 @@
  * Copyright (C) 2005	   Stelian Pop (stelian@popies.net)
  * Copyright (C) 2005	   Frank Arnold (frank@scirocco-5v-turbo.de)
  * Copyright (C) 2005	   Peter Osterlund (petero2@telia.com)
- * Copyright (C) 2005	   Michael Hanselmann (linux-kernel@hansmi.ch)
+ * Copyright (C) 2005	   Michael Hanselmann (linaos-kernel@hansmi.ch)
  * Copyright (C) 2006	   Nicolas Boichat (nicolas@boichat.ch)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb/input.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
-#include <linux/input/mt.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb/input.h>
+#include <linaos/hid.h>
+#include <linaos/mutex.h>
+#include <linaos/input/mt.h>
 
 #define USB_VENDOR_ID_APPLE		0x05ac
 

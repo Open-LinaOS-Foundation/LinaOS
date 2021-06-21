@@ -6,7 +6,7 @@
 #ifndef SVC_RDMA_PCL_H
 #define SVC_RDMA_PCL_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct svc_rdma_segment {
 	u32			rs_handle;

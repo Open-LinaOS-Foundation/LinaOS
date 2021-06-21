@@ -8,7 +8,7 @@
  * Author: Alexandre Torgue <alexandre.torgue@st.com>
  */
 
-#include <linux/stmmac.h>
+#include <linaos/stmmac.h>
 #include "common.h"
 #include "dwmac4.h"
 #include "dwmac4_descs.h"

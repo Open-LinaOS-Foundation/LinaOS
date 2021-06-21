@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_RATE_H
 #define _XT_RATE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* timings are in milliseconds. */
 #define XT_LIMIT_SCALE 10000

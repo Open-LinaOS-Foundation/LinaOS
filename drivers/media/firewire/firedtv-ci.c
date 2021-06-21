@@ -6,10 +6,10 @@
  * Copyright (C) 2008 Henrik Kurelid <henrik@kurelid.se>
  */
 
-#include <linux/device.h>
-#include <linux/dvb/ca.h>
-#include <linux/fs.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/dvb/ca.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
 
 #include <media/dvbdev.h>
 

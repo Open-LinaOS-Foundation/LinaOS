@@ -3,10 +3,10 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/pci_regs.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/pci_regs.h>
 
 #include "cxl.h"
 
@@ -611,7 +611,7 @@ static struct afu_config_record *cxl_sysfs_afu_new_cr(struct cxl_afu *afu, int c
 	 * root - we can expand that later to be readable by non-root and maybe
 	 * even writable provided we have a good use-case. Once we support
 	 * exposing AFUs through a virtual PHB they will get that for free from
-	 * Linux' PCI infrastructure, but until then it's not clear that we
+	 * LinaOS' PCI infrastructure, but until then it's not clear that we
 	 * need it for anything since the main use case is just identifying
 	 * AFUs, which can be done via the vendor, device and class attributes.
 	 */

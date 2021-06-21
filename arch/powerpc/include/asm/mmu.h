@@ -3,7 +3,7 @@
 #define _ASM_POWERPC_MMU_H_
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/asm-const.h>
 
@@ -144,7 +144,7 @@
 #define MMU_FTRS_PA6T		MMU_FTRS_DEFAULT_HPTE_ARCH_V2 | \
 				MMU_FTR_CI_LARGE_PAGE | MMU_FTR_NO_SLBIE_B
 #ifndef __ASSEMBLY__
-#include <linux/bug.h>
+#include <linaos/bug.h>
 #include <asm/cputable.h>
 #include <asm/page.h>
 
@@ -237,7 +237,7 @@ static __always_inline bool early_mmu_has_feature(unsigned long feature)
 }
 
 #ifdef CONFIG_JUMP_LABEL_FEATURE_CHECKS
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 #define NUM_MMU_FTR_KEYS	32
 

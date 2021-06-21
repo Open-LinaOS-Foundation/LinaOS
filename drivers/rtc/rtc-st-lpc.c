@@ -10,17 +10,17 @@
  * Based on the original driver written by Stuart Menefy.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
 
 #include <dt-bindings/mfd/st-lpc.h>
 

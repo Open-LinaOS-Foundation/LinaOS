@@ -232,7 +232,7 @@
 			vcc-supply = <&max77826_ldo15>;
 			vdd-supply = <&pma8084_l19>;
 
-			linux,keycodes = <KEY_APPSELECT KEY_BACK>;
+			linaos,keycodes = <KEY_APPSELECT KEY_BACK>;
 		};
 	};
 
@@ -353,16 +353,16 @@
 		volume-down {
 			label = "volume_down";
 			gpios = <&pma8084_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <15>;
 		};
 
 		home-key {
 			label = "home_key";
 			gpios = <&pma8084_gpios 3 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_HOMEPAGE>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_HOMEPAGE>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -370,8 +370,8 @@
 		volume-up {
 			label = "volume_up";
 			gpios = <&pma8084_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_VOLUMEUP>;
 			debounce-interval = <15>;
 		};
 	};

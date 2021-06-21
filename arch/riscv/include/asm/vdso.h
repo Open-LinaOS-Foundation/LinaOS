@@ -8,7 +8,7 @@
 #ifndef _ASM_RISCV_VDSO_H
 #define _ASM_RISCV_VDSO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef CONFIG_GENERIC_TIME_VSYSCALL
 struct vdso_data {
@@ -16,7 +16,7 @@ struct vdso_data {
 #endif
 
 /*
- * The VDSO symbols are mapped into Linux so we can just use regular symbol
+ * The VDSO symbols are mapped into LinaOS so we can just use regular symbol
  * addressing to get their offsets in userspace.  The symbols are mapped at an
  * offset of 0, but since the linker must support setting weak undefined
  * symbols to the absolute address 0 it also happens to support other low

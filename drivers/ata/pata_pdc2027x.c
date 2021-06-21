@@ -5,7 +5,7 @@
  *  Ported to libata by:
  *  Albert Lee <albertcc@tw.ibm.com> IBM Corporation
  *
- *  Copyright (C) 1998-2002		Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 1998-2002		Andre Hedrick <andre@linaos-ide.org>
  *  Portions Copyright (C) 1999 Promise Technology, Inc.
  *
  *  Author: Frank Tiernan (frankt@promise.com)
@@ -16,17 +16,17 @@
  *
  *  Hardware information only available under NDA.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ktime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/ktime.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME	"pata_pdc2027x"
 #define DRV_VERSION	"1.0"

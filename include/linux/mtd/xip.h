@@ -20,7 +20,7 @@
  * We really don't want gcc to guess anything.
  * We absolutely _need_ proper inlining.
  */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /*
  * Function that are modifying the flash state away from array mode must

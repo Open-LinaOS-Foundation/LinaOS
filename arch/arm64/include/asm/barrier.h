@@ -9,7 +9,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/kasan-checks.h>
+#include <linaos/kasan-checks.h>
 
 #define __nops(n)	".rept	" #n "\nnop\n.endr\n"
 #define nops(n)		asm volatile(__nops(n))

@@ -1,15 +1,15 @@
 /*
- *  Amiga Linux/m68k Ariadne Ethernet Driver
+ *  Amiga LinaOS/m68k Ariadne Ethernet Driver
  *
- *  © Copyright 1995 by Geert Uytterhoeven (geert@linux-m68k.org)
+ *  © Copyright 1995 by Geert Uytterhoeven (geert@linaos-m68k.org)
  *			Peter De Schrijver
- *		       (Peter.DeSchrijver@linux.cc.kuleuven.ac.be)
+ *		       (Peter.DeSchrijver@linaos.cc.kuleuven.ac.be)
  *
  *  ----------------------------------------------------------------------------------
  *
  *  This program is based on
  *
- *	lance.c:	An AMD LANCE ethernet driver for linux.
+ *	lance.c:	An AMD LANCE ethernet driver for linaos.
  *			Written 1993-94 by Donald Becker.
  *
  *	Am79C960:	PCnet(tm)-ISA Single-Chip Ethernet Controller
@@ -22,7 +22,7 @@
  *  ----------------------------------------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the LinaOS
  *  distribution for more details.
  *
  *  ----------------------------------------------------------------------------------

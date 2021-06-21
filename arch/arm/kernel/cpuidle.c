@@ -3,9 +3,9 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/cpuidle.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/cpuidle.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 #include <asm/cpuidle.h>
 
 extern struct of_cpuidle_method __cpuidle_method_of_table[];

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_LED_H
 #define _XT_LED_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct xt_led_info {
 	char id[27];        /* Unique ID for this trigger in the LED class */

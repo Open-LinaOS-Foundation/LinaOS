@@ -2,11 +2,11 @@
 /*
  * HD-audio bus
  */
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/export.h>
 #include <sound/hdaudio.h>
 
 MODULE_DESCRIPTION("HD-audio bus");

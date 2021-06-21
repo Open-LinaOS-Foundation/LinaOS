@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for LinaOS.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,10 +32,10 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/utsname.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/utsname.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_transport_fc.h>
 #include <asm/unaligned.h>

@@ -207,7 +207,7 @@
 			reg = <0x130000 0x10000>;
 		};
 		partition@4 {
-			label = "linux-recovery (spi)";
+			label = "linaos-recovery (spi)";
 			reg = <0x140000 0x800000>;
 		};
 		partition@5 {

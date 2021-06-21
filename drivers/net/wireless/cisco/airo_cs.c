@@ -23,19 +23,19 @@
 #ifdef __IN_PCMCIA_PACKAGE__
 #include <pcmcia/k_compat.h>
 #endif
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/netdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/netdevice.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>
 #include <pcmcia/ds.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include "airo.h"
 

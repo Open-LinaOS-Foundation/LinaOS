@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _NFNETLINK_LOG_H
 #define _NFNETLINK_LOG_H
 
@@ -6,8 +6,8 @@
  * and not any kind of function definitions.  It is shared between kernel and
  * userspace.  Don't put kernel specific stuff in here */
 
-#include <linux/types.h>
-#include <linux/netfilter/nfnetlink.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/nfnetlink.h>
 
 enum nfulnl_msg_types {
 	NFULNL_MSG_PACKET,		/* packet from kernel to userspace */

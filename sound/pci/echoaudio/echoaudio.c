@@ -5,7 +5,7 @@
  *  Copyright (C) 2020 Mark Hills <mark@xwax.org>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 MODULE_AUTHOR("Giuliano Pochini <pochini@shiny.it>");
 MODULE_LICENSE("GPL v2");

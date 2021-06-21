@@ -8,8 +8,8 @@
 
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 
-#include <linux/bcma/bcma.h>
-#include <linux/brcmphy.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/brcmphy.h>
 #include "bgmac.h"
 
 static bool bcma_mdio_wait_value(struct bcma_device *core, u16 reg, u32 mask,

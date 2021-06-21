@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <sys/prctl.h>
 #include <perf/cpumap.h>
 #include <perf/evlist.h>

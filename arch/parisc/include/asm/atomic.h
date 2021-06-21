@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
- * Copyright (C) 2006 Kyle McMartin <kyle@parisc-linux.org>
+ * Copyright (C) 2006 Kyle McMartin <kyle@parisc-linaos.org>
  */
 
 #ifndef _ASM_PARISC_ATOMIC_H_
 #define _ASM_PARISC_ATOMIC_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/cmpxchg.h>
 #include <asm/barrier.h>
 

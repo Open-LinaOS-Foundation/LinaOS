@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 2012 Intel Corporation
- *   Author: Yuanhan Liu <yuanhan.liu@linux.intel.com>
+ *   Author: Yuanhan Liu <yuanhan.liu@linaos.intel.com>
  *
  *   Based on sse2.c: Copyright 2002 H. Peter Anvin - All Rights Reserved
  *
@@ -13,7 +13,7 @@
  *
  */
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 #include "x86.h"
 
 static const struct raid6_avx2_constants {

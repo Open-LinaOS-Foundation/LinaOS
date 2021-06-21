@@ -7,10 +7,10 @@
  * Based on driver code found here: https://github.com/watterott/r61505u-Adapter
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
 
 #include "fbtft.h"
 

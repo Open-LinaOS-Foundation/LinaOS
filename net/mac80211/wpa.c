@@ -6,12 +6,12 @@
  * Copyright (C) 2020-2021 Intel Corporation
  */
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/compiler.h>
-#include <linux/ieee80211.h>
-#include <linux/gfp.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/compiler.h>
+#include <linaos/ieee80211.h>
+#include <linaos/gfp.h>
 #include <asm/unaligned.h>
 #include <net/mac80211.h>
 #include <crypto/aes.h>

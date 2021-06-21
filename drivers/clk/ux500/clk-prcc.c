@@ -6,11 +6,11 @@
  * Author: Ulf Hansson <ulf.hansson@linaro.org>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/types.h>
+#include <linaos/clk-provider.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/types.h>
 
 #include "clk.h"
 

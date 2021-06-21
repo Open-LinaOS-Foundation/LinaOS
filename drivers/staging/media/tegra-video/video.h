@@ -6,7 +6,7 @@
 #ifndef __TEGRA_VIDEO_H__
 #define __TEGRA_VIDEO_H__
 
-#include <linux/host1x.h>
+#include <linaos/host1x.h>
 
 #include <media/media-device.h>
 #include <media/v4l2-device.h>

@@ -6,7 +6,7 @@
 #ifndef __INTEL_LSPCON_H__
 #define __INTEL_LSPCON_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_connector;
 struct drm_connector_state;

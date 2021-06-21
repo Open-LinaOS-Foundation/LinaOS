@@ -7,27 +7,27 @@
  * even if we're invoked from userspace (think modprobe, hotplug cpu,
  * etc.).
  */
-#include <uapi/linux/sched/types.h>
-#include <linux/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/cgroup.h>
-#include <linux/cpuset.h>
-#include <linux/unistd.h>
-#include <linux/file.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/freezer.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/numa.h>
-#include <linux/sched/isolation.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/mm.h>
+#include <linaos/mmu_context.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/task.h>
+#include <linaos/kthread.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/cgroup.h>
+#include <linaos/cpuset.h>
+#include <linaos/unistd.h>
+#include <linaos/file.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/freezer.h>
+#include <linaos/ptrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/numa.h>
+#include <linaos/sched/isolation.h>
 #include <trace/events/sched.h>
 
 

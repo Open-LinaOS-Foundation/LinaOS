@@ -8,18 +8,18 @@
  * Author: Gary R Hook <gary.hook@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/dma-mapping.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/ccp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/ccp.h>
 
 #include "ccp-dev.h"
 #include "psp-dev.h"

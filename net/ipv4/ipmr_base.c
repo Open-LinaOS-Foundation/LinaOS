@@ -1,9 +1,9 @@
-/* Linux multicast routing support
+/* LinaOS multicast routing support
  * Common logic shared by IPv4 [ipmr] and IPv6 [ip6mr] implementation
  */
 
-#include <linux/rhashtable.h>
-#include <linux/mroute_base.h>
+#include <linaos/rhashtable.h>
+#include <linaos/mroute_base.h>
 
 /* Sets everything common except 'dev', since that is done under locking */
 void vif_device_init(struct vif_device *v,

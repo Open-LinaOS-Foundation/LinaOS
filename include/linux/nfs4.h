@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/nfs4.h
+ *  include/linaos/nfs4.h
  *
  *  NFSv4 protocol definitions.
  *
@@ -13,10 +13,10 @@
 #ifndef _LINUX_NFS4_H
 #define _LINUX_NFS4_H
 
-#include <linux/list.h>
-#include <linux/uidgid.h>
-#include <uapi/linux/nfs4.h>
-#include <linux/sunrpc/msg_prot.h>
+#include <linaos/list.h>
+#include <linaos/uidgid.h>
+#include <uapi/linaos/nfs4.h>
+#include <linaos/sunrpc/msg_prot.h>
 
 enum nfs4_acl_whotype {
 	NFS4_ACL_WHO_NAMED = 0,
@@ -471,7 +471,7 @@ enum lock_type4 {
 #define NFS4_DEBUG 1
 
 /*
- * Index of predefined Linux client operations
+ * Index of predefined LinaOS client operations
  *
  * To ensure that /proc/net/rpc/nfs remains correctly ordered, please
  * append only to this enum when adding new client operations.

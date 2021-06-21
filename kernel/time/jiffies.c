@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2004, 2005 IBM, John Stultz (johnstul@us.ibm.com)
  */
-#include <linux/clocksource.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/clocksource.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 #include "timekeeping.h"
 

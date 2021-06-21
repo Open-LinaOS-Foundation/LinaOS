@@ -33,9 +33,9 @@
 #ifndef __MLX5_WQ_H__
 #define __MLX5_WQ_H__
 
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/qp.h>
+#include <linaos/mlx5/mlx5_ifc.h>
+#include <linaos/mlx5/cq.h>
+#include <linaos/mlx5/qp.h>
 
 struct mlx5_wq_param {
 	int		buf_numa_node;

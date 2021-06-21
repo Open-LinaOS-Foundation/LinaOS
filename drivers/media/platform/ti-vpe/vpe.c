@@ -14,22 +14,22 @@
  * Based on the virtual v4l2-mem2mem example device
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioctl.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/log2.h>
-#include <linux/sizes.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioctl.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/log2.h>
+#include <linaos/sizes.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2017 IBM Corp.
-#include <linux/sysfs.h>
+#include <linaos/sysfs.h>
 #include "ocxl_internal.h"
 
 static inline struct ocxl_afu *to_afu(struct device *device)

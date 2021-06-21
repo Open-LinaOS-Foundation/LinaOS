@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 #ifndef KPC_DMA_DRIVER_UAPI_H_
 #define KPC_DMA_DRIVER_UAPI_H_
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 #define KND_IOCTL_SET_CARD_ADDR                     _IOW('k', 1, __u32)
 #define KND_IOCTL_SET_USER_CTL                      _IOW('k', 2, __u64)

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
- * Copyright (c) 2006 Ben Dooks <ben-linux@fluff.org>
+ * Copyright (c) 2006 Ben Dooks <ben-linaos@fluff.org>
  *
  * H1940 Suspend to RAM
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include "map.h"
 

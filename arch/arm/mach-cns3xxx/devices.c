@@ -8,11 +8,11 @@
  *		  Anton Vorontsov <avorontsov@mvista.com>
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/compiler.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
 #include "cns3xxx.h"
 #include "pm.h"
 #include "core.h"

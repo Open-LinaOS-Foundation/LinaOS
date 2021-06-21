@@ -12,22 +12,22 @@
  *	    Samuel Ortiz <sameo@openedhand.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/gpio/driver.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/export.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
 
-#include <linux/mfd/asic3.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ds1wm.h>
-#include <linux/mfd/tmio.h>
+#include <linaos/mfd/asic3.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/ds1wm.h>
+#include <linaos/mfd/tmio.h>
 
-#include <linux/mmc/host.h>
+#include <linaos/mmc/host.h>
 
 enum {
 	ASIC3_CLOCK_SPI,

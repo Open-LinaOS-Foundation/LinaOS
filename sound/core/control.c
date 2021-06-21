@@ -4,16 +4,16 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/threads.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/math64.h>
-#include <linux/sched/signal.h>
+#include <linaos/threads.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/math64.h>
+#include <linaos/sched/signal.h>
 #include <sound/core.h>
 #include <sound/minors.h>
 #include <sound/info.h>

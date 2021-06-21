@@ -4,23 +4,23 @@
  */
 
 /*
- * Analog joystick and gamepad driver for Linux
+ * Analog joystick and gamepad driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/gameport.h>
-#include <linux/jiffies.h>
-#include <linux/timex.h>
-#include <linux/timekeeping.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/gameport.h>
+#include <linaos/jiffies.h>
+#include <linaos/timex.h>
+#include <linaos/timekeeping.h>
 
 #define DRIVER_DESC	"Analog joystick and gamepad driver"
 
@@ -125,7 +125,7 @@ struct analog_port {
 
 #ifdef __i386__
 
-#include <linux/i8253.h>
+#include <linaos/i8253.h>
 
 #define GET_TIME(x)	do { if (boot_cpu_has(X86_FEATURE_TSC)) x = (unsigned int)rdtsc(); else x = get_time_pit(); } while (0)
 #define DELTA(x,y)	(boot_cpu_has(X86_FEATURE_TSC) ? ((y) - (x)) : ((x) - (y) + ((x) < (y) ? PIT_TICK_RATE / HZ : 0)))

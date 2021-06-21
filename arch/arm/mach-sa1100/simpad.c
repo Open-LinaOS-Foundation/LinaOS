@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-sa1100/simpad.c
+ * linaos/arch/arm/mach-sa1100/simpad.c
  */
 
-#include <linux/module.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/pm.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/proc_fs.h>
+#include <linaos/string.h>
+#include <linaos/pm.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/ucb1x00.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>
@@ -27,16 +27,16 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <linaos/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/simpad.h>
 #include <mach/irqs.h>
 
-#include <linux/serial_core.h>
-#include <linux/ioport.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/leds.h>
-#include <linux/platform_data/i2c-gpio.h>
+#include <linaos/serial_core.h>
+#include <linaos/ioport.h>
+#include <linaos/input.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/leds.h>
+#include <linaos/platform_data/i2c-gpio.h>
 
 #include "generic.h"
 

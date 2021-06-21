@@ -50,7 +50,7 @@
 #ifndef _LINUX_MWAVEPUB_H
 #define _LINUX_MWAVEPUB_H
 
-#include <linux/miscdevice.h>
+#include <linaos/miscdevice.h>
 
 
 typedef struct _MW_ABILITIES {

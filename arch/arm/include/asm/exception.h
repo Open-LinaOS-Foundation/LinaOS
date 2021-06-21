@@ -8,7 +8,7 @@
 #ifndef __ASM_ARM_EXCEPTION_H
 #define __ASM_ARM_EXCEPTION_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #ifdef CONFIG_FUNCTION_GRAPH_TRACER
 #define __exception_irq_entry	__irq_entry

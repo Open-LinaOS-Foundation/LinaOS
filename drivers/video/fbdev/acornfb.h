@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/video/acornfb.h
+ *  linaos/drivers/video/acornfb.h
  *
  *  Copyright (C) 1998,1999 Russell King
  *

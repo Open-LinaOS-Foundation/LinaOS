@@ -11,7 +11,7 @@
 #ifndef __KNAV_QMSS_H__
 #define __KNAV_QMSS_H__
 
-#include <linux/percpu.h>
+#include <linaos/percpu.h>
 
 #define THRESH_GTE	BIT(7)
 #define THRESH_LT	0

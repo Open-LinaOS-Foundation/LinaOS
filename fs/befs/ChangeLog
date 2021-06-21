@@ -19,8 +19,8 @@ Version 0.9 (2002-03-14)
 * Added Sergey S. Kostyliov's patch to eliminate memcpy() overhead
 	from b+tree operations. Changes the befs_read_datastream() interface.
 
-* Segregated the functions that interface directly with the linux  vfs 
-	interface into their own file called linuxvfs.c. [WD]
+* Segregated the functions that interface directly with the linaos  vfs 
+	interface into their own file called linaosvfs.c. [WD]
 
 Version 0.64 (2002-02-07)
 ==========
@@ -103,7 +103,7 @@ Version 0.6 (2001-12-15)
 	(super.c, debug.c) [WD]
 
 * Removed notion of btree handle from btree.c. It was unnecessary, as the
-	linux VFS doesn't allow us to keep any state between calls. Updated 
+	linaos VFS doesn't allow us to keep any state between calls. Updated 
 	dir.c, namei.c befs_fs.h to account for it. [WD]
 
 * Improved handleing of overflow nodes when listing directories. 
@@ -139,7 +139,7 @@ Version 0.50 (2001-11-13)
 * Anton Altaparmakov figured out (by asking Linus :) ) what was causing the 
  	hanging disk io problem. It turns out you need to have the sync_pages 
 	callback defined in your address_space_ops, even if it just uses the 
-	default linux-supplied implementation. Fixed. Works now.
+	default linaos-supplied implementation. Fixed. Works now.
 	(file.c) [WD]
 
 * Anton Altaparmakov and Christoph Hellwig alerted me to the fact that 
@@ -148,7 +148,7 @@ Version 0.50 (2001-11-13)
 	(datastream.c, btree.c super.c inode.c) [WD]
 
 * Anton also told me that the blocksize is not allowed to be larger than 
-	the page size in linux, which is 4k i386. Oops. Added a test for 
+	the page size in linaos, which is 4k i386. Oops. Added a test for 
 	(blocksize > PAGE_SIZE), and refuse to mount in that case. What this 
 	practically means is that 8k blocksize volumes won't work without a major
 	restructuring of the driver (or an alpha or other 64bit hardware). [WD]
@@ -170,7 +170,7 @@ Version 0.50 (2001-11-13)
 * Fixed a couple of compile warnings due to use of malloc.h, when slab.h 
 	is the new way. (inode.c, super.c) [WD]
 
-* Fixed erronous includes of linux/befs_fs_i.h and linux/befs_fs_sb.h 
+* Fixed erronous includes of linaos/befs_fs_i.h and linaos/befs_fs_sb.h 
 	in inode.c [WD]
 
 Version 0.45 (2001-10-29)
@@ -183,7 +183,7 @@ Version 0.45 (2001-10-29)
 	structures into the generic pointer fields of the public structures 
 	with kmalloc(). put_super and put_inode free them. This allows us not 
 	to have to touch the definitions of the public structures in 
-	include/linux/fs.h. Also, befs_inode_info is huge (because of the 
+	include/linaos/fs.h. Also, befs_inode_info is huge (because of the 
 	symlink string). (super.c, inode.c, befs_fs.h) [WD]
 
 * Fixed a thinko that was corrupting file reads after the first block_run 
@@ -230,7 +230,7 @@ Version 0.4 (2001-10-28)
 	It doesn't chew up the buffer cache (it does page io instead), and seems 
 	to be about as fast (even though it has to look up each file block 
 	indivdualy). And it knows about doing readahead, which is a major plus. 
-	So it does i/o in much larger chunks. It is the correct linux way. It 
+	So it does i/o in much larger chunks. It is the correct linaos way. It 
 	uses befs_get_block() by way of befs_readpage() to find the disk offsets 
 	of blocks, which in turn calls befs_fpos2brun() in datastream.c to do 
 	the hard work of finding the disk block number.
@@ -242,7 +242,7 @@ Version 0.4 (2001-10-28)
 * Fixed an extra instance of MOD_DEC_USE_COUNT in super.c
 
 * Fixed a problem with reading the superblock on devices with large sector 
-	sizes (such as cdroms) on linux 2.4.10 and up.
+	sizes (such as cdroms) on linaos 2.4.10 and up.
 
 2001-10-24
 ==========
@@ -346,14 +346,14 @@ Version 0.4 (2001-10-28)
 ==========
 * Changed the macros in befs_fs.h to inline functions.
 	More readable. Typesafe. Better
-	(include/linux/befs_fs.h)
+	(include/linaos/befs_fs.h)
 
 * Moved type definitions from befs_fs.h to a new file, befs_fs_types.h 
 	Because befs_fs_i.h and befs_fs_sb.h were including befs_fs.h for the 
-	typedefs, and they are inlcuded in <linux/fs.h>, which has definitions 
+	typedefs, and they are inlcuded in <linaos/fs.h>, which has definitions 
 	that I want the inline functions in befs_fs.h to be able to see. Nasty
 	circularity.
-	(include/linux/befs_fs.h)
+	(include/linaos/befs_fs.h)
 
 2001-08-30
 ==========
@@ -405,7 +405,7 @@ Version 0.4 (2001-10-28)
 * Fixed compile errors on 2.4.1 kernel (WD)
 	Resolve rejected patches
 	Accommodate changed NLS interface (util.h)
-	Needed to include <linux/slab.h> in most files
+	Needed to include <linaos/slab.h> in most files
 	Makefile changes
 	fs/Config.in changes
 

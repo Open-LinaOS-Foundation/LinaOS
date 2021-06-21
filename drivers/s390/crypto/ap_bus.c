@@ -5,8 +5,8 @@
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  *	      Ralph Wuerthner <rwuerthn@de.ibm.com>
  *	      Felix Beck <felix.beck@de.ibm.com>
- *	      Holger Dengler <hd@linux.vnet.ibm.com>
- *	      Harald Freudenberger <freude@linux.ibm.com>
+ *	      Holger Dengler <hd@linaos.vnet.ibm.com>
+ *	      Harald Freudenberger <freude@linaos.ibm.com>
  *
  * Adjunct processor bus.
  */
@@ -14,28 +14,28 @@
 #define KMSG_COMPONENT "ap"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel_stat.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/freezer.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/notifier.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
 #include <asm/airq.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/isc.h>
-#include <linux/hrtimer.h>
-#include <linux/ktime.h>
+#include <linaos/hrtimer.h>
+#include <linaos/ktime.h>
 #include <asm/facility.h>
-#include <linux/crypto.h>
-#include <linux/mod_devicetable.h>
-#include <linux/debugfs.h>
-#include <linux/ctype.h>
+#include <linaos/crypto.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/debugfs.h>
+#include <linaos/ctype.h>
 
 #include "ap_bus.h"
 #include "ap_debug.h"

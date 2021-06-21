@@ -17,19 +17,19 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <linaos/devm-helpers.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
 
-#include <linux/power/bq24735-charger.h>
+#include <linaos/power/bq24735-charger.h>
 
 #define BQ24735_CHG_OPT			0x12
 #define BQ24735_CHG_OPT_CHARGE_DISABLE	(1 << 0)

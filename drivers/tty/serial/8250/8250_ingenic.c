@@ -6,18 +6,18 @@
  * Ingenic SoC UART support
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/io.h>
-#include <linux/libfdt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/io.h>
+#include <linaos/libfdt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
 
 #include "8250.h"
 

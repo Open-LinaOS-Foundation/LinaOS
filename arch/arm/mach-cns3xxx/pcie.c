@@ -8,14 +8,14 @@
  *		  Anton Vorontsov <avorontsov@mvista.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/bug.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
 #include <asm/mach/map.h>
 #include "cns3xxx.h"
 #include "core.h"
@@ -95,7 +95,7 @@ static int cns3xxx_pci_read_config(struct pci_bus *bus, unsigned int devfn,
 	if (ret == PCIBIOS_SUCCESSFUL && !bus->number && !devfn &&
 	    (where & 0xffc) == PCI_CLASS_REVISION)
 		/*
-		 * RC's class is 0xb, but Linux PCI driver needs 0x604
+		 * RC's class is 0xb, but LinaOS PCI driver needs 0x604
 		 * for a PCIe bridge. So we must fixup the class code
 		 * to 0x604 here.
 		 */

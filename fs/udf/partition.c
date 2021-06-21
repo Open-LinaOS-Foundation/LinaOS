@@ -22,9 +22,9 @@
 #include "udf_sb.h"
 #include "udf_i.h"
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/mutex.h>
 
 uint32_t udf_get_pblock(struct super_block *sb, uint32_t block,
 			uint16_t partition, uint32_t offset)

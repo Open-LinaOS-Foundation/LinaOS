@@ -6,21 +6,21 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/slab.h>
-#include <linux/rio_ids.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/rio.h>
+#include <linaos/rio_drv.h>
+#include <linaos/slab.h>
+#include <linaos/rio_ids.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/reboot.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/crc32.h>
+#include <linaos/ethtool.h>
+#include <linaos/reboot.h>
 
 #define DRV_NAME        "rionet"
 #define DRV_VERSION     "0.3"

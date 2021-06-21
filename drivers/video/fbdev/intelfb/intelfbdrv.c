@@ -1,7 +1,7 @@
 /*
  * intelfb
  *
- * Linux framebuffer driver for Intel(R) 830M/845G/852GM/855GM/865G/915G/915GM/
+ * LinaOS framebuffer driver for Intel(R) 830M/845G/852GM/855GM/865G/915G/915GM/
  * 945G/945GM/945GME/965G/965GM integrated graphics chips.
  *
  * Copyright © 2002, 2003 David Dawes <dawes@xfree86.org>
@@ -86,7 +86,7 @@
  *		Fix mis-placed #endif (2.4.21 kernel).
  *
  *    09/2004 - Version 0.9.0 - by Sylvain Meyer
- *              Port to linux 2.6 kernel fbdev
+ *              Port to linaos 2.6 kernel fbdev
  *              Fix HW accel and HW cursor on i845G
  *              Use of agpgart for fb memory reservation
  *              Add mtrr support
@@ -107,20 +107,20 @@
  *              Add support for 945GME. (Phil Endecott <spam_from_intelfb@chezphil.org>)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/screen_info.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/screen_info.h>
 
 #include <asm/io.h>
 

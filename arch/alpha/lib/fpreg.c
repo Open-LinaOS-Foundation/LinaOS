@@ -5,8 +5,8 @@
  * (C) Copyright 1998 Linus Torvalds
  */
 
-#include <linux/compiler.h>
-#include <linux/export.h>
+#include <linaos/compiler.h>
+#include <linaos/export.h>
 
 #if defined(CONFIG_ALPHA_EV6) || defined(CONFIG_ALPHA_EV67)
 #define STT(reg,val)  asm volatile ("ftoit $f"#reg",%0" : "=r"(val));

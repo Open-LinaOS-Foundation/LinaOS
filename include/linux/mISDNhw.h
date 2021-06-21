@@ -10,8 +10,8 @@
 
 #ifndef MISDNHW_H
 #define MISDNHW_H
-#include <linux/mISDNif.h>
-#include <linux/timer.h>
+#include <linaos/mISDNif.h>
+#include <linaos/timer.h>
 
 /*
  * HW DEBUG 0xHHHHGGGG

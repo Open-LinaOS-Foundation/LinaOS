@@ -27,15 +27,15 @@
  /* treated slightly differently for reconnection purposes since we never     */
  /* want to reuse a stale file handle and only the caller knows the file info */
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/vfs.h>
+#include <linaos/slab.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/uaccess.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsacl.h"
@@ -3430,7 +3430,7 @@ static void cifs_convert_ace(struct posix_acl_xattr_entry *ace,
 	return;
 }
 
-/* Convert ACL from CIFS POSIX wire format to local Linux POSIX ACL xattr */
+/* Convert ACL from CIFS POSIX wire format to local LinaOS POSIX ACL xattr */
 static int cifs_copy_posix_acl(char *trgt, char *src, const int buflen,
 			       const int acl_type, const int size_of_data_area)
 {
@@ -3505,7 +3505,7 @@ static void convert_ace_to_cifs_ace(struct cifs_posix_ace *cifs_ace,
 */
 }
 
-/* Convert ACL from local Linux POSIX xattr to CIFS POSIX ACL wire format */
+/* Convert ACL from local LinaOS POSIX xattr to CIFS POSIX ACL wire format */
 static __u16 ACL_to_cifs_posix(char *parm_data, const char *pACL,
 			       const int buflen, const int acl_type)
 {

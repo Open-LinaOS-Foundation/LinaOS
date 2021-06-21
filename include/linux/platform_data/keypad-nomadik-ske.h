@@ -10,7 +10,7 @@
 #ifndef __SKE_H
 #define __SKE_H
 
-#include <linux/input/matrix_keypad.h>
+#include <linaos/input/matrix_keypad.h>
 
 /* register definitions for SKE peripheral */
 #define SKE_CR		0x00

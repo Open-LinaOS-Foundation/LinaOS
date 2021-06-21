@@ -7,7 +7,7 @@
 #ifndef __IWARP_COMMON__
 #define __IWARP_COMMON__
 
-#include <linux/qed/rdma_common.h>
+#include <linaos/qed/rdma_common.h>
 
 /************************/
 /* IWARP FW CONSTANTS	*/

@@ -19,24 +19,24 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
-#include <linux/can/dev.h>
+#include <linaos/can/dev.h>
 
 #include "c_can.h"
 

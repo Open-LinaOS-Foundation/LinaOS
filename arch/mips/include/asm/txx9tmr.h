@@ -9,7 +9,7 @@
 #ifndef __ASM_TXX9TMR_H
 #define __ASM_TXX9TMR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct txx9_tmr_reg {
 	u32 tcr;

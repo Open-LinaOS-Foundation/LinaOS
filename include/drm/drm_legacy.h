@@ -4,14 +4,14 @@
  * Legacy driver interfaces for the Direct Rendering Manager
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * Copyright (c) 2009-2010, Code Aurora Forum.
  * All rights reserved.
  * Copyright © 2014 Intel Corporation
  *   Daniel Vetter <daniel.vetter@ffwll.ch>
  *
- * Author: Rickard E. (Rik) Faith <faith@valinux.com>
- * Author: Gareth Hughes <gareth@valinux.com>
+ * Author: Rickard E. (Rik) Faith <faith@valinaos.com>
+ * Author: Gareth Hughes <gareth@valinaos.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

@@ -7,8 +7,8 @@
  * Paul Walmsley
  */
 
-#include <linux/dmaengine.h>
-#include <linux/omap-dma.h>
+#include <linaos/dmaengine.h>
+#include <linaos/omap-dma.h>
 
 #include "omap_hwmod.h"
 #include "hdq1w.h"

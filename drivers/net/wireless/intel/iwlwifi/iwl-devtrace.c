@@ -5,12 +5,12 @@
  * Copyright (C) 2018 Intel Corporation
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* sparse doesn't like tracepoint macros */
 #ifndef __CHECKER__

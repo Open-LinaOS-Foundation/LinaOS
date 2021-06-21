@@ -26,12 +26,12 @@
 #include <crypto/scatterwalk.h>
 #include <crypto/skcipher.h>
 #include <crypto/if_alg.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/net.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
 #include <net/sock.h>
 
 static int skcipher_sendmsg(struct socket *sock, struct msghdr *msg,

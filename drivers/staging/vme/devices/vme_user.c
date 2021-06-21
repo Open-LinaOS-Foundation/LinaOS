@@ -12,28 +12,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/refcount.h>
-#include <linux/cdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/syscalls.h>
-#include <linux/types.h>
+#include <linaos/refcount.h>
+#include <linaos/cdev.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/ioctl.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/pci.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/syscalls.h>
+#include <linaos/types.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/vme.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/vme.h>
 
 #include "vme_user.h"
 
@@ -58,19 +58,19 @@ static unsigned int bus_num;
  *
  *		It is expected that all VME bus drivers will use the
  *		same interface.  For interface documentation see
- *		http://www.vmelinux.org/.
+ *		http://www.vmelinaos.org/.
  *
- * However the VME driver at http://www.vmelinux.org/ is rather old and doesn't
+ * However the VME driver at http://www.vmelinaos.org/ is rather old and doesn't
  * even support the tsi148 chipset (which has 8 master and 8 slave windows).
  * We'll run with this for now as far as possible, however it probably makes
  * sense to get rid of the old mappings and just do everything dynamically.
  *
  * So for now, we'll restrict the driver to providing 4 masters and 4 slaves as
  * defined above and try to support at least some of the interface from
- * http://www.vmelinux.org/ as an alternative the driver can be written
+ * http://www.vmelinaos.org/ as an alternative the driver can be written
  * providing a saner interface later.
  *
- * The vmelinux.org driver never supported slave images, the devices reserved
+ * The vmelinaos.org driver never supported slave images, the devices reserved
  * for slaves were repurposed to support all 8 master images on the UniverseII!
  * We shall support 4 masters and 4 slaves with this driver.
  */
@@ -278,7 +278,7 @@ static loff_t vme_user_llseek(struct file *file, loff_t off, int whence)
 }
 
 /*
- * The ioctls provided by the old VME access method (the one at vmelinux.org)
+ * The ioctls provided by the old VME access method (the one at vmelinaos.org)
  * are most certainly wrong as the effectively push the registers layout
  * through to user space. Given that the VME core can handle multiple bridges,
  * with different register layouts this is most certainly not the way to go.

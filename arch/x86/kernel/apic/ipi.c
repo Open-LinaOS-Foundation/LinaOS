@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/cpumask.h>
-#include <linux/smp.h>
+#include <linaos/cpumask.h>
+#include <linaos/smp.h>
 #include <asm/io_apic.h>
 
 #include "local.h"

@@ -7,23 +7,23 @@
  *              - Ingress support
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
-#include <linux/skb_array.h>
-#include <linux/if_macvlan.h>
+#include <linaos/bitops.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/init.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/if_vlan.h>
+#include <linaos/skb_array.h>
+#include <linaos/if_macvlan.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>
 #include <net/dst.h>

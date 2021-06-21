@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	common UDP/RAW code
- *	Linux INET implementation
+ *	LinaOS INET implementation
  *
  * Authors:
- * 	Hideaki YOSHIFUJI <yoshfuji@linux-ipv6.org>
+ * 	Hideaki YOSHIFUJI <yoshfuji@linaos-ipv6.org>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/in.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
 #include <net/ip.h>
 #include <net/sock.h>
 #include <net/route.h>

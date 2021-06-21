@@ -24,7 +24,7 @@
 #include "amdgpu_ras_eeprom.h"
 #include "amdgpu.h"
 #include "amdgpu_ras.h"
-#include <linux/bits.h>
+#include <linaos/bits.h>
 #include "atom.h"
 
 #define EEPROM_I2C_TARGET_ADDR_VEGA20		0xA0

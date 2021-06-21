@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2000 Ani Joshi <ajoshi@kernel.crashing.org>
  * Copyright (c) 2003 Benjamin Herrenschmidt <benh@kernel.crashing.org>
- * Copyright (c) 2006 Michael Hanselmann <linux-kernel@hansmi.ch>
+ * Copyright (c) 2006 Michael Hanselmann <linaos-kernel@hansmi.ch>
  */
 
 #include "radeonfb.h"
-#include <linux/backlight.h>
-#include <linux/slab.h>
+#include <linaos/backlight.h>
+#include <linaos/slab.h>
 
 #ifdef CONFIG_PMAC_BACKLIGHT
 #include <asm/backlight.h>

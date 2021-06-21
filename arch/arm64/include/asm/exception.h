@@ -11,7 +11,7 @@
 #include <asm/kprobes.h>
 #include <asm/ptrace.h>
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #ifdef CONFIG_FUNCTION_GRAPH_TRACER
 #define __exception_irq_entry	__irq_entry

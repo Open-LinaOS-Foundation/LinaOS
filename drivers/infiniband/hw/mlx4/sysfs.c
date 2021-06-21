@@ -32,9 +32,9 @@
 
 /*#include "core_priv.h"*/
 #include "mlx4_ib.h"
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/stat.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/stat.h>
 
 #include <rdma/ib_mad.h>
 /*show_admin_alias_guid returns the administratively assigned value of that GUID.

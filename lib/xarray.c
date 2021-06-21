@@ -6,11 +6,11 @@
  * Author: Matthew Wilcox <willy@infradead.org>
  */
 
-#include <linux/bitmap.h>
-#include <linux/export.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/xarray.h>
+#include <linaos/bitmap.h>
+#include <linaos/export.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/xarray.h>
 
 /*
  * Coding conventions in this file:

@@ -9,15 +9,15 @@
 #include <stddef.h>
 #include <string.h>
 #include <arpa/inet.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/pkt_cls.h>
-#include <linux/erspan.h>
+#include <linaos/bpf.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/erspan.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

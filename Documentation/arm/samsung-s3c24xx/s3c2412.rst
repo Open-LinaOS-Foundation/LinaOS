@@ -1,5 +1,5 @@
 ==========================
-S3C2412 ARM Linux Overview
+S3C2412 ARM LinaOS Overview
 ==========================
 
 Introduction

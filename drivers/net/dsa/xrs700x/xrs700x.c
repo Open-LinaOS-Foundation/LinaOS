@@ -5,10 +5,10 @@
  */
 
 #include <net/dsa.h>
-#include <linux/if_bridge.h>
-#include <linux/of_device.h>
-#include <linux/netdev_features.h>
-#include <linux/if_hsr.h>
+#include <linaos/if_bridge.h>
+#include <linaos/of_device.h>
+#include <linaos/netdev_features.h>
+#include <linaos/if_hsr.h>
 #include "xrs700x.h"
 #include "xrs700x_reg.h"
 

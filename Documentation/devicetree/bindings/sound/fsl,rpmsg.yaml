@@ -11,7 +11,7 @@ maintainers:
 
 description: |
   fsl_rpmsg is a virtual audio device. Mapping to real hardware devices
-  are SAI, DMA controlled by Cortex M core. What we see from Linux
+  are SAI, DMA controlled by Cortex M core. What we see from LinaOS
   side is a device which provides audio service by rpmsg channel.
 
 properties:

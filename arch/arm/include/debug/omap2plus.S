@@ -3,10 +3,10 @@
  * Debugging macro include header
  *
  *  Copyright (C) 1994-1999 Russell King
- *  Moved from linux/arch/arm/kernel/debug.S by Ben Dooks
+ *  Moved from linaos/arch/arm/kernel/debug.S by Ben Dooks
 */
 
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 
 /* External port on Zoom2/3 */
 #define ZOOM_UART_BASE		0x10000000

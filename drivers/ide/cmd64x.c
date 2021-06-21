@@ -7,16 +7,16 @@
  * Copyright (C) 1998		Eddie C. Dost  (ecd@skynet.be)
  * Copyright (C) 1998		David S. Miller (davem@redhat.com)
  *
- * Copyright (C) 1999-2002	Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1999-2002	Andre Hedrick <andre@linaos-ide.org>
  * Copyright (C) 2007-2010	Bartlomiej Zolnierkiewicz
  * Copyright (C) 2007,2009	MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
 
 #include <asm/io.h>
 

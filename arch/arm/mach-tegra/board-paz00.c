@@ -8,9 +8,9 @@
  * Copyright (C) 2010 Google, Inc.
  */
 
-#include <linux/property.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/platform_device.h>
 
 #include "board.h"
 

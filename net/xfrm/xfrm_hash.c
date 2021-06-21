@@ -4,12 +4,12 @@
  * Copyright (C) 2006 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/xfrm.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/xfrm.h>
 
 #include "xfrm_hash.h"
 

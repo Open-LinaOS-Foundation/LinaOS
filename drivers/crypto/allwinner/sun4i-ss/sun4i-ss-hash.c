@@ -10,7 +10,7 @@
  */
 #include "sun4i-ss.h"
 #include <asm/unaligned.h>
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 /* This is a totally arbitrary value */
 #define SS_TIMEOUT 100

@@ -25,7 +25,7 @@ Target-supported userspace I/O
 .. kernel-doc:: drivers/target/target_core_user.c
     :doc: Userspace I/O
 
-.. kernel-doc:: include/uapi/linux/target_core_user.h
+.. kernel-doc:: include/uapi/linaos/target_core_user.h
     :doc: Ring Design
 
 iSCSI helper functions

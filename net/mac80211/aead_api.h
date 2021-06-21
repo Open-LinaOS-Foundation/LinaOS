@@ -4,7 +4,7 @@
 #define _AEAD_API_H
 
 #include <crypto/aead.h>
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 
 struct crypto_aead *
 aead_key_setup_encrypt(const char *alg, const u8 key[],

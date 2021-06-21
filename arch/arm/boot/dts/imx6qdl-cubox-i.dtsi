@@ -116,7 +116,7 @@
 		button_0 {
 			label = "Button 0";
 			gpios = <&gpio3 8 GPIO_ACTIVE_LOW>;
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 		};
 	};
 };

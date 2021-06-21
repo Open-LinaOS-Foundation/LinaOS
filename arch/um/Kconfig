@@ -94,7 +94,7 @@ config LD_SCRIPT_DYN
 config HOSTFS
 	tristate "Host filesystem"
 	help
-	  While the User-Mode Linux port uses its own root file system for
+	  While the User-Mode LinaOS port uses its own root file system for
 	  booting and normal file access, this module lets the UML user
 	  access files stored on the host.  It does not require any
 	  network connection between the Host and UML.  An example use of
@@ -107,7 +107,7 @@ config HOSTFS
 	  wishes to access.
 
 	  For more information, see
-	  <http://user-mode-linux.sourceforge.net/hostfs.html>.
+	  <http://user-mode-linaos.sourceforge.net/hostfs.html>.
 
 	  If you'd like to be able to work with files stored on the host,
 	  say Y or M here; otherwise say N.
@@ -117,9 +117,9 @@ config MCONSOLE
 	depends on PROC_FS
 	default y
 	help
-	  The user mode linux management console is a low-level interface to
+	  The user mode linaos management console is a low-level interface to
 	  the kernel, somewhat like the i386 SysRq interface.  Since there is
-	  a full-blown operating system running under every user mode linux
+	  a full-blown operating system running under every user mode linaos
 	  instance, there is much greater flexibility possible than with the
 	  SysRq mechanism.
 

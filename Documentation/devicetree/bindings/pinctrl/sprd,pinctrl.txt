@@ -48,7 +48,7 @@ means when PUBCP system goes into deep sleep mode, this pin will be set
 input enable automatically.
 
 Moreover we can not use the "sleep" state, since some systems (like:
-PUBCP system) do not run linux kernel OS (only AP system run linux
+PUBCP system) do not run linaos kernel OS (only AP system run linaos
 kernel on SC9860 platform), then we can not select "sleep" state
 when the PUBCP system goes into deep sleep mode. Thus we introduce
 "sprd,sleep-mode" property to set pin sleep mode.

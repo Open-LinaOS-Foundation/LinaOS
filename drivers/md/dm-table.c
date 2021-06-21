@@ -7,20 +7,20 @@
 
 #include "dm-core.h"
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/blkdev.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
-#include <linux/blk-mq.h>
-#include <linux/mount.h>
-#include <linux/dax.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/blkdev.h>
+#include <linaos/namei.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/atomic.h>
+#include <linaos/blk-mq.h>
+#include <linaos/mount.h>
+#include <linaos/dax.h>
 
 #define DM_MSG_PREFIX "table"
 

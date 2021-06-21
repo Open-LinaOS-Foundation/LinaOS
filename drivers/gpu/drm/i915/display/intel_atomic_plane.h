@@ -6,7 +6,7 @@
 #ifndef __INTEL_ATOMIC_PLANE_H__
 #define __INTEL_ATOMIC_PLANE_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_plane;
 struct drm_property;

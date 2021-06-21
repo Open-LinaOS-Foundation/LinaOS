@@ -8,7 +8,7 @@
 #ifndef _ISHTP_HBM_H_
 #define _ISHTP_HBM_H_
 
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 
 struct ishtp_device;
 struct ishtp_msg_hdr;

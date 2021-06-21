@@ -42,7 +42,7 @@ properties:
       Optional regulator that provides digital I/O voltage,
       e.g. for pulling up the interrupt line or the I2C pins.
 
-  linux,keycodes:
+  linaos,keycodes:
     minItems: 1
     maxItems: 4
 
@@ -68,6 +68,6 @@ examples:
             interrupts = <2 IRQ_TYPE_EDGE_FALLING>;
             vcc-supply = <&ldo32_reg>;
             vdd-supply = <&ldo33_reg>;
-            linux,keycodes = <KEY_MENU KEY_BACK>;
+            linaos,keycodes = <KEY_MENU KEY_BACK>;
         };
     };

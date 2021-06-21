@@ -41,9 +41,9 @@ perf_script_branch_samples() {
 	echo "Looking at perf.data file for dumping branch samples:"
 
 	# Below is an example of the branch samples dumping:
-	#   touch  6512          1         branches:u:      ffffb220824c strcmp+0xc (/lib/aarch64-linux-gnu/ld-2.27.so)
-	#   touch  6512          1         branches:u:      ffffb22082e0 strcmp+0xa0 (/lib/aarch64-linux-gnu/ld-2.27.so)
-	#   touch  6512          1         branches:u:      ffffb2208320 strcmp+0xe0 (/lib/aarch64-linux-gnu/ld-2.27.so)
+	#   touch  6512          1         branches:u:      ffffb220824c strcmp+0xc (/lib/aarch64-linaos-gnu/ld-2.27.so)
+	#   touch  6512          1         branches:u:      ffffb22082e0 strcmp+0xa0 (/lib/aarch64-linaos-gnu/ld-2.27.so)
+	#   touch  6512          1         branches:u:      ffffb2208320 strcmp+0xe0 (/lib/aarch64-linaos-gnu/ld-2.27.so)
 	perf script -F,-time -i ${perfdata} 2>&1 | \
 		egrep " +$1 +[0-9]+ .* +branches:(.*:)? +" > /dev/null 2>&1
 }

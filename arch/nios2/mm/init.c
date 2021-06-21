@@ -12,20 +12,20 @@
  * for more details.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/binfmts.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/pagemap.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
+#include <linaos/binfmts.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>
@@ -103,7 +103,7 @@ static int alloc_kuser_page(void)
 }
 arch_initcall(alloc_kuser_page);
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linaos_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	int ret;

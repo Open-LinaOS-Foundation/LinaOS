@@ -5,16 +5,16 @@
  * Copyright (C) 2017 Google, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/coupler.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/sort.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/coupler.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/sort.h>
 
 #include "internal.h"
 

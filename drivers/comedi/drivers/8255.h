@@ -3,7 +3,7 @@
  * module/8255.h
  * Header file for 8255
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 

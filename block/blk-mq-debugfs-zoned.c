@@ -3,7 +3,7 @@
  * Copyright (C) 2017 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 #include "blk-mq-debugfs.h"
 
 int queue_zone_wlock_show(void *data, struct seq_file *m)

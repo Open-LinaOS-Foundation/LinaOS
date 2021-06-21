@@ -4,7 +4,7 @@
 #ifndef _DCB_CONFIG_H_
 #define _DCB_CONFIG_H_
 
-#include <linux/dcbnl.h>
+#include <linaos/dcbnl.h>
 #include "ixgbe_type.h"
 
 /* DCB data structures */

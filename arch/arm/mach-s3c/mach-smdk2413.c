@@ -6,18 +6,18 @@
 // Thanks to Dimity Andric (TomTom) and Steven Ryu (Samsung) for the
 // loans of SMDK2413 to work with.
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -32,9 +32,9 @@
 #include "hardware-s3c24xx.h"
 #include "regs-gpio.h"
 
-#include <linux/platform_data/usb-s3c2410_udc.h>
-#include <linux/platform_data/i2c-s3c2410.h>
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/usb-s3c2410_udc.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 #include "gpio-samsung.h"
 #include "gpio-cfg.h"
 
@@ -127,7 +127,7 @@ static void __init smdk2413_machine_init(void)
 }
 
 MACHINE_START(S3C2413, "S3C2413")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.fixup		= smdk2413_fixup,
@@ -138,7 +138,7 @@ MACHINE_START(S3C2413, "S3C2413")
 MACHINE_END
 
 MACHINE_START(SMDK2412, "SMDK2412")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.fixup		= smdk2413_fixup,
@@ -149,7 +149,7 @@ MACHINE_START(SMDK2412, "SMDK2412")
 MACHINE_END
 
 MACHINE_START(SMDK2413, "SMDK2413")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 
 	.fixup		= smdk2413_fixup,

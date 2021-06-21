@@ -10,16 +10,16 @@
  * Copyright (C) 2011, Samsung Electronics Co., Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/crc32.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/crc32.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
 
 #include <media/media-entity.h>

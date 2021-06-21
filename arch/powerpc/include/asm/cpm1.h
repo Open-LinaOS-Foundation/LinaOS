@@ -18,7 +18,7 @@
 #ifndef __CPM1__
 #define __CPM1__
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/8xx_immap.h>
 #include <asm/ptrace.h>
 #include <asm/cpm.h>

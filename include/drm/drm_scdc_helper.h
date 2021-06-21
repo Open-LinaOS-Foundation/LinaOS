@@ -24,8 +24,8 @@
 #ifndef DRM_SCDC_HELPER_H
 #define DRM_SCDC_HELPER_H
 
-#include <linux/i2c.h>
-#include <linux/types.h>
+#include <linaos/i2c.h>
+#include <linaos/types.h>
 
 #define SCDC_SINK_VERSION 0x01
 

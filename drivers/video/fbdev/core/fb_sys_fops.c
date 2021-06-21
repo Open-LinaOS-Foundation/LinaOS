@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/fb_sys_read.c - Generic file operations where
+ * linaos/drivers/video/fb_sys_read.c - Generic file operations where
  * framebuffer is in system RAM
  *
  * Copyright (C) 2007 Antonino Daplas <adaplas@pol.net>
@@ -9,9 +9,9 @@
  * for more details.
  *
  */
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 
 ssize_t fb_sys_read(struct fb_info *info, char __user *buf, size_t count,
 		    loff_t *ppos)

@@ -8,10 +8,10 @@
  *
  */
 
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 
 #include "tlv320aic32x4.h"

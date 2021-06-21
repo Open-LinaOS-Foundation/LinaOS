@@ -1,4 +1,4 @@
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002-2004 H. Peter Anvin - All Rights Reserved
  *
@@ -18,7 +18,7 @@
  * This file is postprocessed using unroll.awk
  */
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 
 /*
  * This is the C data type to use

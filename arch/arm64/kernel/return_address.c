@@ -6,9 +6,9 @@
  * Author: AKASHI Takahiro <takahiro.akashi@linaro.org>
  */
 
-#include <linux/export.h>
-#include <linux/ftrace.h>
-#include <linux/kprobes.h>
+#include <linaos/export.h>
+#include <linaos/ftrace.h>
+#include <linaos/kprobes.h>
 
 #include <asm/stack_pointer.h>
 #include <asm/stacktrace.h>

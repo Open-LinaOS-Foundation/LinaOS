@@ -6,23 +6,23 @@
  *		v 1.0 03/22/99
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/fcdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/net.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/fcdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/net.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
 #include <net/arp.h>
 
 /*

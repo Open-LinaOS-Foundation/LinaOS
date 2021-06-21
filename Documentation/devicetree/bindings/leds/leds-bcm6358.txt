@@ -29,7 +29,7 @@ LED sub-node optional properties:
     Default : false
   - default-state : see
     Documentation/devicetree/bindings/leds/common.txt
-  - linux,default-trigger : see
+  - linaos,default-trigger : see
     Documentation/devicetree/bindings/leds/common.txt
 
 Examples:

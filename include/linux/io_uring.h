@@ -2,8 +2,8 @@
 #ifndef _LINUX_IO_URING_H
 #define _LINUX_IO_URING_H
 
-#include <linux/sched.h>
-#include <linux/xarray.h>
+#include <linaos/sched.h>
+#include <linaos/xarray.h>
 
 #if defined(CONFIG_IO_URING)
 struct sock *io_uring_get_socket(struct file *file);

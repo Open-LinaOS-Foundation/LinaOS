@@ -13,8 +13,8 @@
 #ifndef _XTENSA_ATOMIC_H
 #define _XTENSA_ATOMIC_H
 
-#include <linux/stringify.h>
-#include <linux/types.h>
+#include <linaos/stringify.h>
+#include <linaos/types.h>
 #include <asm/processor.h>
 #include <asm/cmpxchg.h>
 #include <asm/barrier.h>

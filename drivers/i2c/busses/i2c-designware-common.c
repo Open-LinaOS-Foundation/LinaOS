@@ -8,22 +8,22 @@
  * Copyright (C) 2007 MontaVista Software Inc.
  * Copyright (C) 2009 Provigent Ltd.
  */
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/swab.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/swab.h>
+#include <linaos/types.h>
 
 #include "i2c-designware-core.h"
 
@@ -211,7 +211,7 @@ EXPORT_SYMBOL_GPL(i2c_dw_validate_speed);
 
 #ifdef CONFIG_ACPI
 
-#include <linux/dmi.h>
+#include <linaos/dmi.h>
 
 /*
  * The HCNT/LCNT information coming from ACPI should be the most accurate

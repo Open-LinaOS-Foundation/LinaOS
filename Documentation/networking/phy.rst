@@ -203,12 +203,12 @@ the PHY/controller, of which the PHY needs to be aware.
 *interface* is a u32 which specifies the connection type used
 between the controller and the PHY.  Examples are GMII, MII,
 RGMII, and SGMII.  See "PHY interface mode" below.  For a full
-list, see include/linux/phy.h
+list, see include/linaos/phy.h
 
 Now just make sure that phydev->supported and phydev->advertising have any
 values pruned from them which don't make sense for your controller (a 10/100
 controller may be connected to a gigabit capable PHY, so you would need to
-mask off SUPPORTED_1000baseT*).  See include/linux/ethtool.h for definitions
+mask off SUPPORTED_1000baseT*).  See include/linaos/ethtool.h for definitions
 for these bitfields. Note that you should not SET any bits, except the
 SUPPORTED_Pause and SUPPORTED_AsymPause bits (see below), or the PHY may get
 put into an unsupported state.
@@ -433,7 +433,7 @@ PHY_BASIC_FEATURES, but you can look in include/mii.h for other
 features.
 
 Each driver consists of a number of function pointers, documented
-in include/linux/phy.h under the phy_driver structure.
+in include/linaos/phy.h under the phy_driver structure.
 
 Of these, only config_aneg and read_status are required to be
 assigned by the driver code.  The rest are optional.  Also, it is

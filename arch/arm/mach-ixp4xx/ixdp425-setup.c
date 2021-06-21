@@ -9,20 +9,20 @@
  * Author: Deepak Saxena <dsaxena@plexity.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/serial_8250.h>
-#include <linux/gpio/machine.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/platnand.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/serial_8250.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/io.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
 #include <asm/types.h>
 #include <asm/setup.h>
 #include <asm/memory.h>

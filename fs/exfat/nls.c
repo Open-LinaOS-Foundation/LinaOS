@@ -3,9 +3,9 @@
  * Copyright (C) 2012-2013 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/buffer_head.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/buffer_head.h>
 #include <asm/unaligned.h>
 
 #include "exfat_raw.h"

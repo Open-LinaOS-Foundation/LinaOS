@@ -263,7 +263,7 @@ console.log:
 	This file may be examined once the kernel has booted, but
 	it might not exist if the build failed.
 
-vmlinux:
+vmlinaos:
 	This contains the kernel, which can be useful with tools like
 	objdump and gdb.
 

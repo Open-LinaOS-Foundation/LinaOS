@@ -2,9 +2,9 @@
 #ifndef _LINUX_IRQDESC_H
 #define _LINUX_IRQDESC_H
 
-#include <linux/rcupdate.h>
-#include <linux/kobject.h>
-#include <linux/mutex.h>
+#include <linaos/rcupdate.h>
+#include <linaos/kobject.h>
+#include <linaos/mutex.h>
 
 /*
  * Core internal functions to deal with irq descriptors

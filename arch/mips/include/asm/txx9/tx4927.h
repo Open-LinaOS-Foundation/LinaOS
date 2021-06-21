@@ -27,8 +27,8 @@
 #ifndef __ASM_TXX9_TX4927_H
 #define __ASM_TXX9_TX4927_H
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
 #include <asm/txx9irq.h>
 #include <asm/txx9/tx4927pcic.h>
 

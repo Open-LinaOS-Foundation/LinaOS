@@ -9,17 +9,17 @@
  * 7-bit I2C slave address 0x4a
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/util_macros.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/util_macros.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/acpi.h>
 
 #define MAX44000_DRV_NAME		"max44000"
 

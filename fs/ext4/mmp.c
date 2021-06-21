@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fs.h>
-#include <linux/random.h>
-#include <linux/buffer_head.h>
-#include <linux/utsname.h>
-#include <linux/kthread.h>
+#include <linaos/fs.h>
+#include <linaos/random.h>
+#include <linaos/buffer_head.h>
+#include <linaos/utsname.h>
+#include <linaos/kthread.h>
 
 #include "ext4.h"
 

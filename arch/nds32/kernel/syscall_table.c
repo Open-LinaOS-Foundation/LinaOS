@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/unistd.h>
+#include <linaos/syscalls.h>
+#include <linaos/signal.h>
+#include <linaos/unistd.h>
 #include <asm/syscalls.h>
 
 #undef __SYSCALL

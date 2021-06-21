@@ -7,7 +7,7 @@
 #ifndef _GXFB_H_
 #define _GXFB_H_
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #define GP_REG_COUNT   (0x50 / 4)
 #define DC_REG_COUNT   (0x90 / 4)
@@ -331,7 +331,7 @@ static inline void write_fp(struct gxfb_par *par, int reg, uint32_t val)
 }
 
 
-/* MSRs are defined in linux/cs5535.h; their bitfields are here */
+/* MSRs are defined in linaos/cs5535.h; their bitfields are here */
 
 #define MSR_GLCP_SYS_RSTPLL_DOTPOSTDIV3	(1 << 3)
 #define MSR_GLCP_SYS_RSTPLL_DOTPREMULT2	(1 << 2)

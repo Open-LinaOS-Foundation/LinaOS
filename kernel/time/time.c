@@ -24,20 +24,20 @@
  *	with nanosecond accuracy
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/timex.h>
-#include <linux/capability.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/errno.h>
-#include <linux/syscalls.h>
-#include <linux/security.h>
-#include <linux/fs.h>
-#include <linux/math64.h>
-#include <linux/ptrace.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/timex.h>
+#include <linaos/capability.h>
+#include <linaos/timekeeper_internal.h>
+#include <linaos/errno.h>
+#include <linaos/syscalls.h>
+#include <linaos/security.h>
+#include <linaos/fs.h>
+#include <linaos/math64.h>
+#include <linaos/ptrace.h>
 
-#include <linux/uaccess.h>
-#include <linux/compat.h>
+#include <linaos/uaccess.h>
+#include <linaos/compat.h>
 #include <asm/unistd.h>
 
 #include <generated/timeconst.h>
@@ -481,7 +481,7 @@ void set_normalized_timespec64(struct timespec64 *ts, time64_t sec, s64 nsec)
 		/*
 		 * The following asm() prevents the compiler from
 		 * optimising this loop into a modulo operation. See
-		 * also __iter_div_u64_rem() in include/linux/time.h
+		 * also __iter_div_u64_rem() in include/linaos/time.h
 		 */
 		asm("" : "+rm"(nsec));
 		nsec -= NSEC_PER_SEC;
@@ -547,7 +547,7 @@ EXPORT_SYMBOL(ns_to_timespec64);
  * allow constant folding and the actual conversion must be done at
  * runtime.
  * the _msecs_to_jiffies helpers are the HZ dependent conversion
- * routines found in include/linux/jiffies.h
+ * routines found in include/linaos/jiffies.h
  */
 unsigned long __msecs_to_jiffies(const unsigned int m)
 {

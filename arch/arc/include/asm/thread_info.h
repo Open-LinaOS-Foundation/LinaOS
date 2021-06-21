@@ -26,7 +26,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 #include <asm/segment.h>
 
 /*

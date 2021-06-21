@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __DPU_RM_H__
 #define __DPU_RM_H__
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include "msm_kms.h"
 #include "dpu_hw_top.h"

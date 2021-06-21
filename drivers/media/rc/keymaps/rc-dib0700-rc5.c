@@ -11,7 +11,7 @@
 // The table were imported from dib0700_devices.c.
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table dib0700_rc5_table[] = {
 	/* Key codes for the tiny Pinnacle remote*/

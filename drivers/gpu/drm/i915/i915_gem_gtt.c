@@ -4,13 +4,13 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/slab.h> /* fault-inject.h is not standalone! */
+#include <linaos/slab.h> /* fault-inject.h is not standalone! */
 
-#include <linux/fault-inject.h>
-#include <linux/log2.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/stop_machine.h>
+#include <linaos/fault-inject.h>
+#include <linaos/log2.h>
+#include <linaos/random.h>
+#include <linaos/seq_file.h>
+#include <linaos/stop_machine.h>
 
 #include <asm/set_memory.h>
 #include <asm/smp.h>

@@ -3,7 +3,7 @@
 #define __OMAP_COMMON_BOARD_DEVICES__
 
 #include <sound/tlv320aic3x.h>
-#include <linux/mfd/menelaus.h>
+#include <linaos/mfd/menelaus.h>
 
 void *n8x0_legacy_init(void);
 

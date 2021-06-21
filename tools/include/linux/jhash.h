@@ -19,12 +19,12 @@
  *
  * Copyright (C) 2009-2010 Jozsef Kadlecsik (kadlec@blackhole.kfki.hu)
  *
- * I've modified Bob's hash to be useful in the Linux kernel, and
+ * I've modified Bob's hash to be useful in the LinaOS kernel, and
  * any bugs present are my fault.
  * Jozsef
  */
-#include <linux/bitops.h>
-#include <linux/unaligned/packed_struct.h>
+#include <linaos/bitops.h>
+#include <linaos/unaligned/packed_struct.h>
 
 /* Best hash sizes are of power of two */
 #define jhash_size(n)   ((u32)1<<(n))

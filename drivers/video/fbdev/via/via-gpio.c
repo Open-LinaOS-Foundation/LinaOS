@@ -5,12 +5,12 @@
  * Copyright 2009 Jonathan Corbet <corbet@lwn.net>
  */
 
-#include <linux/spinlock.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/via-core.h>
-#include <linux/via-gpio.h>
-#include <linux/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/via-core.h>
+#include <linaos/via-gpio.h>
+#include <linaos/export.h>
 
 /*
  * The ports we know about.  Note that the port-25 gpios are not

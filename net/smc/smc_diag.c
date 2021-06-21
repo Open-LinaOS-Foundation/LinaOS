@@ -6,16 +6,16 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sock_diag.h>
-#include <linux/inet_diag.h>
-#include <linux/smc_diag.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/sock_diag.h>
+#include <linaos/inet_diag.h>
+#include <linaos/smc_diag.h>
 #include <net/netlink.h>
 #include <net/smc.h>
 

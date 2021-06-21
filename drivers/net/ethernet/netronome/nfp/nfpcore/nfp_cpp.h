@@ -10,9 +10,9 @@
 #ifndef __NFP_CPP_H__
 #define __NFP_CPP_H__
 
-#include <linux/ctype.h>
-#include <linux/types.h>
-#include <linux/sizes.h>
+#include <linaos/ctype.h>
+#include <linaos/types.h>
+#include <linaos/sizes.h>
 
 #ifndef NFP_SUBSYS
 #define NFP_SUBSYS "nfp"
@@ -379,7 +379,7 @@ void *nfp_cpp_priv(struct nfp_cpp *priv);
 int nfp_cpp_area_cache_add(struct nfp_cpp *cpp, size_t size);
 
 /* The following section contains extensions to the
- * NFP CPP API, to be used in a Linux kernel-space context.
+ * NFP CPP API, to be used in a LinaOS kernel-space context.
  */
 
 /* Use this channel ID for multiple virtual channel interfaces

@@ -8,7 +8,7 @@
 #ifndef EFX_TX_H
 #define EFX_TX_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Driver internal tx-path related declarations. */
 

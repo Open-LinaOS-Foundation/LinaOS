@@ -5,15 +5,15 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/mfd/stmpe.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/mfd/stmpe.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
 
 #define STMPE24XX_PWMCS		0x30
 #define PWMCS_EN_PWM0		BIT(0)

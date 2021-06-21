@@ -2,7 +2,7 @@
 /*
  * Copyright © 2020 Intel Corporation
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "intel_crtc.h"
 #include "intel_display_types.h"
 #include "intel_display.h"

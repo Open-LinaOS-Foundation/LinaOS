@@ -2,8 +2,8 @@
 /*
  *  PCM DRM helpers
  */
-#include <linux/export.h>
-#include <linux/types.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
 #include <sound/asoundef.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

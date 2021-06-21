@@ -22,13 +22,13 @@
  * Authors: Ben Skeggs
  */
 
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/mmu_notifier.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/vga_switcheroo.h>
+#include <linaos/mmu_notifier.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_ioctl.h>

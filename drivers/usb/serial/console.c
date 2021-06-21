@@ -10,14 +10,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/serial.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
 
 struct usbcons_info {
 	int			magic;

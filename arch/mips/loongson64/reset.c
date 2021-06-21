@@ -6,12 +6,12 @@
  * Copyright (C) 2009 Lemote, Inc.
  * Author: Zhangjin Wu, wuzhangjin@gmail.com
  */
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/kexec.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
 
 #include <asm/bootinfo.h>
 #include <asm/idle.h>

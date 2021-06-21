@@ -7,15 +7,15 @@
  * Mohit Kumar <mohit.kumar.dhaka@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regmap.h>
 
 /* SPEAr1310 Registers */
 #define SPEAR1310_PCIE_SATA_CFG			0x3A4

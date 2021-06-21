@@ -15,7 +15,7 @@ One purpose of this is to inspect the debug logs after a production system crash
 in order to analyze the reason for the crash.
 
 If the system still runs but only a subcomponent which uses dbf fails,
-it is possible to look at the debug logs on a live system via the Linux
+it is possible to look at the debug logs on a live system via the LinaOS
 debugfs filesystem.
 
 The debug feature may also very useful for kernel and driver development.
@@ -130,7 +130,7 @@ Examples
    * hex_ascii-view Example
    */
 
-  #include <linux/init.h>
+  #include <linaos/init.h>
   #include <asm/debug.h>
 
   static debug_info_t *debug_info;
@@ -163,7 +163,7 @@ Examples
    * sprintf-view Example
    */
 
-  #include <linux/init.h>
+  #include <linaos/init.h>
   #include <asm/debug.h>
 
   static debug_info_t *debug_info;

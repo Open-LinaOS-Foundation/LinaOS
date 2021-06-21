@@ -4,7 +4,7 @@
 
 #include <asm-generic/int-ll64.h>
 
-/* copied from linux:include/uapi/linux/types.h */
+/* copied from linaos:include/uapi/linaos/types.h */
 #define __bitwise
 typedef __u16 __bitwise __le16;
 typedef __u16 __bitwise __be16;

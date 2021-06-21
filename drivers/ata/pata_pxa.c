@@ -5,19 +5,19 @@
  * Copyright (C) 2010 Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/ata.h>
+#include <linaos/libata.h>
+#include <linaos/platform_device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
 
 #include <scsi/scsi_host.h>
 
-#include <linux/platform_data/ata-pxa.h>
+#include <linaos/platform_data/ata-pxa.h>
 
 #define DRV_NAME	"pata_pxa"
 #define DRV_VERSION	"0.1"

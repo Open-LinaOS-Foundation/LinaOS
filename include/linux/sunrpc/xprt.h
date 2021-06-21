@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/xprt.h
+ *  linaos/include/linaos/sunrpc/xprt.h
  *
  *  Declarations for the RPC transport interface.
  *
@@ -10,14 +10,14 @@
 #ifndef _LINUX_SUNRPC_XPRT_H
 #define _LINUX_SUNRPC_XPRT_H
 
-#include <linux/uio.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/ktime.h>
-#include <linux/kref.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
+#include <linaos/uio.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/ktime.h>
+#include <linaos/kref.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/msg_prot.h>
 
 #define RPC_MIN_SLOT_TABLE	(2U)
 #define RPC_DEF_SLOT_TABLE	(16U)

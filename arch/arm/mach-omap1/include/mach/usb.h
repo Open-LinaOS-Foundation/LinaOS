@@ -9,7 +9,7 @@
 #define	is_usb0_device(config)	0
 #endif
 
-#include <linux/platform_data/usb-omap1.h>
+#include <linaos/platform_data/usb-omap1.h>
 
 #if IS_ENABLED(CONFIG_USB_SUPPORT)
 void omap1_usb_init(struct omap_usb_config *pdata);

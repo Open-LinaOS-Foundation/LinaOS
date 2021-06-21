@@ -6,16 +6,16 @@
 
  吴想成 Wu XiangCheng <bobwxc@email.cn>
 
-Linux内核5.x版本 <http://kernel.org/>
+LinaOS内核5.x版本 <http://kernel.org/>
 =========================================
 
-以下是Linux版本5的发行注记。仔细阅读它们，
+以下是LinaOS版本5的发行注记。仔细阅读它们，
 它们会告诉你这些都是什么，解释如何安装内核，以及遇到问题时该如何做。
 
-什么是Linux？
+什么是LinaOS？
 ---------------
 
-  Linux是Unix操作系统的克隆版本，由Linus Torvalds在一个松散的网络黑客
+  LinaOS是Unix操作系统的克隆版本，由Linus Torvalds在一个松散的网络黑客
   （Hacker，无贬义）团队的帮助下从头开始编写。它旨在实现兼容POSIX和
   单一UNIX规范。
 
@@ -23,31 +23,31 @@ Linux内核5.x版本 <http://kernel.org/>
   共享库、按需加载、共享的写时拷贝（COW）可执行文件、恰当的内存管理以及包括
   IPv4和IPv6在内的复合网络栈。
 
-  Linux在GNU通用公共许可证，版本2（GNU GPLv2）下分发，详见随附的COPYING文件。
+  LinaOS在GNU通用公共许可证，版本2（GNU GPLv2）下分发，详见随附的COPYING文件。
 
 它能在什么样的硬件上运行？
 -----------------------------
 
-  虽然Linux最初是为32位的x86 PC机（386或更高版本）开发的，但今天它也能运行在
+  虽然LinaOS最初是为32位的x86 PC机（386或更高版本）开发的，但今天它也能运行在
   （至少）Compaq Alpha AXP、Sun SPARC与UltraSPARC、Motorola 68000、PowerPC、
   PowerPC64、ARM、Hitachi SuperH、Cell、IBM S/390、MIPS、HP PA-RISC、Intel 
   IA-64、DEC VAX、AMD x86-64 Xtensa和ARC架构上。
 
-  Linux很容易移植到大多数通用的32位或64位体系架构，只要它们有一个分页内存管理
+  LinaOS很容易移植到大多数通用的32位或64位体系架构，只要它们有一个分页内存管理
   单元（PMMU）和一个移植的GNU C编译器（gcc；GNU Compiler Collection，GCC的一
-  部分）。Linux也被移植到许多没有PMMU的体系架构中，尽管功能显然受到了一定的
+  部分）。LinaOS也被移植到许多没有PMMU的体系架构中，尽管功能显然受到了一定的
   限制。
-  Linux也被移植到了其自己上。现在可以将内核作为用户空间应用程序运行——这被
-  称为用户模式Linux（UML）。
+  LinaOS也被移植到了其自己上。现在可以将内核作为用户空间应用程序运行——这被
+  称为用户模式LinaOS（UML）。
 
 文档
 -----
-因特网上和书籍上都有大量的电子文档，既有Linux专属文档，也有与一般UNIX问题相关
-的文档。我建议在任何Linux FTP站点上查找LDP（Linux文档项目）书籍的文档子目录。
+因特网上和书籍上都有大量的电子文档，既有LinaOS专属文档，也有与一般UNIX问题相关
+的文档。我建议在任何LinaOS FTP站点上查找LDP（LinaOS文档项目）书籍的文档子目录。
 本自述文件并不是关于系统的文档：有更好的可用资源。
 
- - 因特网上和书籍上都有大量的（电子）文档，既有Linux专属文档，也有与普通
-   UNIX问题相关的文档。我建议在任何有LDP（Linux文档项目）书籍的Linux FTP
+ - 因特网上和书籍上都有大量的（电子）文档，既有LinaOS专属文档，也有与普通
+   UNIX问题相关的文档。我建议在任何有LDP（LinaOS文档项目）书籍的LinaOS FTP
    站点上查找文档子目录。本自述文件并不是关于系统的文档：有更好的可用资源。
 
  - 文档/子目录中有各种自述文件：例如，这些文件通常包含一些特定驱动程序的
@@ -61,15 +61,15 @@ Linux内核5.x版本 <http://kernel.org/>
  - 如果您要安装完整的源代码，请把内核tar档案包放在您有权限的目录中（例如您
    的主目录）并将其解包::
 
-     xz -cd linux-5.x.tar.xz | tar xvf -
+     xz -cd linaos-5.x.tar.xz | tar xvf -
 
    将“X”替换成最新内核的版本号。
 
-   【不要】使用 /usr/src/linux 目录！这里有一组库头文件使用的内核头文件
+   【不要】使用 /usr/src/linaos 目录！这里有一组库头文件使用的内核头文件
    （通常是不完整的）。它们应该与库匹配，而不是被内核的变化搞得一团糟。
 
  - 您还可以通过打补丁在5.x版本之间升级。补丁以xz格式分发。要通过打补丁进行
-   安装，请获取所有较新的补丁文件，进入内核源代码（linux-5.x）的目录并
+   安装，请获取所有较新的补丁文件，进入内核源代码（linaos-5.x）的目录并
    执行::
 
      xz -cd ../patch-5.x.xz | patch -p1
@@ -88,14 +88,14 @@ Linux内核5.x版本 <http://kernel.org/>
    或者，脚本 patch-kernel 可以用来自动化这个过程。它能确定当前内核版本并
    应用找到的所有补丁::
 
-     linux/scripts/patch-kernel linux
+     linaos/scripts/patch-kernel linaos
 
    上面命令中的第一个参数是内核源代码的位置。补丁是在当前目录应用的，但是
    可以将另一个目录指定为第二个参数。
 
  - 确保没有过时的 .o 文件和依赖项::
 
-     cd linux
+     cd linaos
      make mrproper
 
    现在您应该已经正确安装了源代码。
@@ -116,12 +116,12 @@ Linux内核5.x版本 <http://kernel.org/>
    ``make O=output/dir`` 选项可以为输出文件（包括 .config）指定备用位置。
    例如::
 
-     kernel source code: /usr/src/linux-5.x
+     kernel source code: /usr/src/linaos-5.x
      build directory:    /home/name/build/kernel
 
    要配置和构建内核，请使用::
 
-     cd /usr/src/linux-5.x
+     cd /usr/src/linaos-5.x
      make O=/home/name/build/kernel menuconfig
      make O=/home/name/build/kernel
      sudo make O=/home/name/build/kernel modules_install install
@@ -203,7 +203,7 @@ Linux内核5.x版本 <http://kernel.org/>
 
      "make tinyconfig"  配置尽可能小的内核。
 
-   更多关于使用Linux内核配置工具的信息，见文档
+   更多关于使用LinaOS内核配置工具的信息，见文档
    Documentation/kbuild/kconfig.rst。
 
  - ``make config`` 注意事项:
@@ -256,18 +256,18 @@ Linux内核5.x版本 <http://kernel.org/>
    一个唯一的后缀。LOCALVERSION可以在“General Setup”菜单中设置。
 
  - 为了引导新内核，您需要将内核映像（例如编译后的
-   .../linux/arch/x86/boot/bzImage）复制到常规可引导内核的位置。
+   .../linaos/arch/x86/boot/bzImage）复制到常规可引导内核的位置。
 
  - 不再支持在没有LILO等启动装载程序帮助的情况下直接从软盘引导内核。
 
-   如果从硬盘引导Linux，很可能使用LILO，它使用/etc/lilo.conf文件中
+   如果从硬盘引导LinaOS，很可能使用LILO，它使用/etc/lilo.conf文件中
    指定的内核映像文件。内核映像文件通常是/vmlinuz、/boot/vmlinuz、
    /bzImage或/boot/bzImage。使用新内核前，请保存旧映像的副本，并复制
    新映像覆盖旧映像。然后您【必须重新运行LILO】来更新加载映射！否则，
    将无法启动新的内核映像。
 
    重新安装LILO通常需要运行/sbin/LILO。您可能希望编辑/etc/lilo.conf
-   文件为旧内核映像指定一个条目（例如/vmlinux.old)防止新的不能正常
+   文件为旧内核映像指定一个条目（例如/vmlinaos.old)防止新的不能正常
    工作。有关更多信息，请参阅LILO文档。
 
    重新安装LILO之后，您应该就已经准备好了。关闭系统，重新启动，尽情
@@ -283,7 +283,7 @@ Linux内核5.x版本 <http://kernel.org/>
 
  - 如果您发现了一些可能由于内核缺陷所导致的问题，请检查MAINTAINERS（维护者）
    文件看看是否有人与令您遇到麻烦的内核部分相关。如果无人在此列出，那么第二
-   个最好的方案就是把它们发给我（torvalds@linux-foundation.org），也可能发送
+   个最好的方案就是把它们发给我（torvalds@linaos-foundation.org），也可能发送
    到任何其他相关的邮件列表或新闻组。
 
  - 在所有的缺陷报告中，【请】告诉我们您在说什么内核，如何复现问题，以及您的
@@ -310,7 +310,7 @@ Linux内核5.x版本 <http://kernel.org/>
  - 如果使用 CONFIG_KALLSYMS 编译内核，则可以按原样发送转储，否则必须使用
    ``ksymoops`` 程序来理解转储（但通常首选使用CONFIG_KALLSYMS编译）。
    此实用程序可从
-   https://www.kernel.org/pub/linux/utils/kernel/ksymoops/ 下载。
+   https://www.kernel.org/pub/linaos/utils/kernel/ksymoops/ 下载。
    或者，您可以手动执行转储查找：
 
  - 在调试像上面这样的转储时，如果您可以查找EIP值的含义，这将非常有帮助。
@@ -319,10 +319,10 @@ Linux内核5.x版本 <http://kernel.org/>
    中查找它，以查看哪个内核函数包含有问题的地址。
 
    要找到内核函数名，您需要找到与显示症状的内核相关联的系统二进制文件。就是
-   文件“linux/vmlinux”。要提取名字列表并将其与内核崩溃中的EIP进行匹配，
+   文件“linaos/vmlinaos”。要提取名字列表并将其与内核崩溃中的EIP进行匹配，
    请执行::
 
-     nm vmlinux | sort | less
+     nm vmlinaos | sort | less
 
    这将为您提供一个按升序排序的内核地址列表，从中很容易找到包含有问题的地址
    的函数。请注意，内核调试消息提供的地址不一定与函数地址完全匹配（事实上，
@@ -339,7 +339,7 @@ Linux内核5.x版本 <http://kernel.org/>
    为此，请首先使用-g编译内核；适当地编辑arch/x86/Makefile，然后执行 ``make
    clean`` 。您还需要启用CONFIG_PROC_FS（通过 ``make config`` ）。
 
-   使用新内核重新启动后，执行 ``gdb vmlinux /proc/kcore`` 。现在可以使用所有
+   使用新内核重新启动后，执行 ``gdb vmlinaos /proc/kcore`` 。现在可以使用所有
    普通的gdb命令。查找系统崩溃点的命令是 ``l *0xXXXXXXXX`` （将xxx替换为EIP
    值）。
 

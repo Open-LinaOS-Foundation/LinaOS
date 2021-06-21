@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/macmodes.h -- Standard MacOS video modes
+ *  linaos/drivers/video/macmodes.h -- Standard MacOS video modes
  *
  *	Copyright (C) 1998 Geert Uytterhoeven
  *

@@ -4,7 +4,7 @@
  * Author: Hugues Fruchet <hugues.fruchet@st.com> for STMicroelectronics.
  */
 
-#include <linux/rpmsg.h>
+#include <linaos/rpmsg.h>
 
 #include "delta.h"
 #include "delta-ipc.h"

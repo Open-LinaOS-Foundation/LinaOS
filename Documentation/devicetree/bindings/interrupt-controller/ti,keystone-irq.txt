@@ -29,7 +29,7 @@ Example:
 	};
 
 	dsp0: dsp0 {
-		compatible = "linux,rproc-user";
+		compatible = "linaos,rproc-user";
 		...
 		interrupt-parent = <&kirq0>;
 		interrupts = <10 2>;

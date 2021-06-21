@@ -82,7 +82,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern u32 cached_kn02_csr;
 extern void init_kn02_irqs(int base);

@@ -24,10 +24,10 @@
  *
  */
 
-#include <linux/circ_buf.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/circ_buf.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 #include "intel_atomic.h"
 #include "intel_display_types.h"

@@ -7,12 +7,12 @@
  * This file is released under the GPLv2.
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/device-mapper.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
+#include <linaos/ctype.h>
+#include <linaos/device.h>
+#include <linaos/device-mapper.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/moduleparam.h>
 
 #define DM_MSG_PREFIX "init"
 #define DM_MAX_DEVICES 256

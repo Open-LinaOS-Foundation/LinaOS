@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* drivers/atm/idt77105.c - IDT77105 (PHY) driver */
  
-/* Written 1999 by Greg Banks, NEC Australia <gnb@linuxfan.com>. Based on suni.c */
+/* Written 1999 by Greg Banks, NEC Australia <gnb@linaosfan.com>. Based on suni.c */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/capability.h>
-#include <linux/atm_idt77105.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/atmdev.h>
+#include <linaos/sonet.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/capability.h>
+#include <linaos/atm_idt77105.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
 #include <asm/param.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "idt77105.h"
 

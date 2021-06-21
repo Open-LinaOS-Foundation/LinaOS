@@ -14,8 +14,8 @@
 #ifndef _LINUX_PERF_EVENT_H
 #define _LINUX_PERF_EVENT_H
 
-#include <uapi/linux/perf_event.h>
-#include <uapi/linux/bpf_perf_event.h>
+#include <uapi/linaos/perf_event.h>
+#include <uapi/linaos/bpf_perf_event.h>
 
 /*
  * Kernel-internal data types and definitions:
@@ -37,26 +37,26 @@ struct perf_guest_info_callbacks {
 #include <asm/hw_breakpoint.h>
 #endif
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/hrtimer.h>
-#include <linux/fs.h>
-#include <linux/pid_namespace.h>
-#include <linux/workqueue.h>
-#include <linux/ftrace.h>
-#include <linux/cpu.h>
-#include <linux/irq_work.h>
-#include <linux/static_key.h>
-#include <linux/jump_label_ratelimit.h>
-#include <linux/atomic.h>
-#include <linux/sysfs.h>
-#include <linux/perf_regs.h>
-#include <linux/cgroup.h>
-#include <linux/refcount.h>
-#include <linux/security.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/rculist.h>
+#include <linaos/rcupdate.h>
+#include <linaos/spinlock.h>
+#include <linaos/hrtimer.h>
+#include <linaos/fs.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/workqueue.h>
+#include <linaos/ftrace.h>
+#include <linaos/cpu.h>
+#include <linaos/irq_work.h>
+#include <linaos/static_key.h>
+#include <linaos/jump_label_ratelimit.h>
+#include <linaos/atomic.h>
+#include <linaos/sysfs.h>
+#include <linaos/perf_regs.h>
+#include <linaos/cgroup.h>
+#include <linaos/refcount.h>
+#include <linaos/security.h>
 #include <asm/local.h>
 
 struct perf_callchain_entry {

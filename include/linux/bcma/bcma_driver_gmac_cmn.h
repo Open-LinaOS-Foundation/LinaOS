@@ -2,7 +2,7 @@
 #ifndef LINUX_BCMA_DRIVER_GMAC_CMN_H_
 #define LINUX_BCMA_DRIVER_GMAC_CMN_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BCMA_GMAC_CMN_STAG0		0x000
 #define BCMA_GMAC_CMN_STAG1		0x004

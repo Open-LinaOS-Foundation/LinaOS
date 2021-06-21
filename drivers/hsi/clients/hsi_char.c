@@ -8,27 +8,27 @@
  * Contact: Andras Domokos <andras.domokos@nokia.com>
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kmemleak.h>
-#include <linux/ioctl.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/uaccess.h>
-#include <linux/scatterlist.h>
-#include <linux/stat.h>
-#include <linux/hsi/hsi.h>
-#include <linux/hsi/hsi_char.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/kmemleak.h>
+#include <linaos/ioctl.h>
+#include <linaos/wait.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
+#include <linaos/uaccess.h>
+#include <linaos/scatterlist.h>
+#include <linaos/stat.h>
+#include <linaos/hsi/hsi.h>
+#include <linaos/hsi/hsi_char.h>
 
 #define HSC_DEVS		16 /* Num of channels */
 #define HSC_MSGS		4

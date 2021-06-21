@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0+ WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0+ WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
- *  Video for Linux Two header file
+ *  Video for LinaOS Two header file
  *
  *  Copyright (C) 1999-2012 the contributors
  *
@@ -47,7 +47,7 @@
  * All kernel-specific stuff were moved to media/v4l2-dev.h, so
  * no #if __KERNEL tests are allowed here
  *
- *	See https://linuxtv.org for more info
+ *	See https://linaostv.org for more info
  *
  *	Author: Bill Dirks <bill@thedirks.org>
  *		Justin Schoeman
@@ -60,11 +60,11 @@
 #ifndef __KERNEL__
 #include <sys/time.h>
 #endif
-#include <linux/compiler.h>
-#include <linux/ioctl.h>
-#include <linux/types.h>
-#include <linux/v4l2-common.h>
-#include <linux/v4l2-controls.h>
+#include <linaos/compiler.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/v4l2-common.h>
+#include <linaos/v4l2-controls.h>
 
 /*
  * Common stuff for both V4L1 and V4L2

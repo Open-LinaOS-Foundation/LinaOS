@@ -1,8 +1,8 @@
 /*
  * NBUS driver for TS-4600 based boards
  *
- * Copyright (c) 2016 - Savoir-faire Linux
- * Author: Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinux.com>
+ * Copyright (c) 2016 - Savoir-faire LinaOS
+ * Author: Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinaos.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -13,15 +13,15 @@
  * TS-4600 SoM.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/ts-nbus.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/ts-nbus.h>
 
 #define TS_NBUS_DIRECTION_IN  0
 #define TS_NBUS_DIRECTION_OUT 1
@@ -364,6 +364,6 @@ static struct platform_driver ts_nbus_driver = {
 module_platform_driver(ts_nbus_driver);
 
 MODULE_ALIAS("platform:ts_nbus");
-MODULE_AUTHOR("Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinux.com>");
+MODULE_AUTHOR("Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinaos.com>");
 MODULE_DESCRIPTION("Technologic Systems NBUS");
 MODULE_LICENSE("GPL v2");

@@ -18,9 +18,9 @@
 #ifndef __DESC_H__
 #define __DESC_H__
 
-#include <linux/bits.h>
-#include <linux/types.h>
-#include <linux/mm.h>
+#include <linaos/bits.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
 
 /* max transmit or receive buffer size */
 #define CB_MAX_BUF_SIZE     2900U       /* NOTE: must be multiple of 4 */

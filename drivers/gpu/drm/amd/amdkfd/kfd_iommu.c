@@ -20,15 +20,15 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/kconfig.h>
+#include <linaos/kconfig.h>
 
 #if IS_REACHABLE(CONFIG_AMD_IOMMU_V2)
 
-#include <linux/printk.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/amd-iommu.h>
+#include <linaos/printk.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/amd-iommu.h>
 #include "kfd_priv.h"
 #include "kfd_dbgmgr.h"
 #include "kfd_topology.h"

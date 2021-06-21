@@ -4,7 +4,7 @@
  * Copyright (c)  2009-2013 QLogic Corporation
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "qlcnic.h"
 
 #define QLC_DCB_NUM_PARAM		3

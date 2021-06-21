@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * NVM Express target device driver tracepoints
- * Copyright (c) 2018 Johannes Thumshirn, SUSE Linux GmbH
+ * Copyright (c) 2018 Johannes Thumshirn, SUSE LinaOS GmbH
  *
  * This is entirely based on drivers/nvme/host/trace.h
  */
@@ -12,9 +12,9 @@
 #if !defined(_TRACE_NVMET_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NVMET_H
 
-#include <linux/nvme.h>
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <linaos/nvme.h>
+#include <linaos/tracepoint.h>
+#include <linaos/trace_seq.h>
 
 #include "nvmet.h"
 

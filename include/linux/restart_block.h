@@ -5,9 +5,9 @@
 #ifndef __LINUX_RESTART_BLOCK_H
 #define __LINUX_RESTART_BLOCK_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/time64.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/time64.h>
 
 struct timespec;
 struct old_timespec32;

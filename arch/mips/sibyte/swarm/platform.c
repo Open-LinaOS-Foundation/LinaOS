@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
 
 #include <asm/sibyte/board.h>
 #include <asm/sibyte/sb1250_genbus.h>

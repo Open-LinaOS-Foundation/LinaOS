@@ -9,10 +9,10 @@
 #ifndef _TCAN4X5X_H
 #define _TCAN4X5X_H
 
-#include <linux/gpio/consumer.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spi/spi.h>
 
 #include "m_can.h"
 

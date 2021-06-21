@@ -9,8 +9,8 @@
  */
 
 #include "net_driver.h"
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 #include <net/gre.h>
 #include "efx_common.h"
 #include "efx_channels.h"

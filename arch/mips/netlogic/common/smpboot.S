@@ -98,8 +98,8 @@ END(nlm_boot_secondary_cpus)
 /*
  * In case of RMIboot bootloader which is used on XLR boards, the CPUs
  * be already woken up and waiting in bootloader code.
- * This will get them out of the bootloader code and into linux. Needed
- * because the bootloader area will be taken and initialized by linux.
+ * This will get them out of the bootloader code and into linaos. Needed
+ * because the bootloader area will be taken and initialized by linaos.
  */
 NESTED(nlm_rmiboot_preboot, 16, sp)
 	mfc0	t0, $15, 1	/* read ebase */

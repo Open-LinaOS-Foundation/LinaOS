@@ -10,7 +10,7 @@ controller, an RS232-compatible serial port, a USB function port, and
 one CompactFlash+ slot on the back. Pictures can be found at the
 Intrinsyc website, http://www.intrinsyc.com.
 
-This document describes the support in the Linux kernel for the
+This document describes the support in the LinaOS kernel for the
 Intrinsyc CerfBoard.
 
 Supported in this version
@@ -27,9 +27,9 @@ both BOOTP and TFTP. Detailed instructions should have come with your
 evaluation kit on how to use the bootloader. This series of commands
 will suffice::
 
-   make ARCH=arm CROSS_COMPILE=arm-linux- cerfcube_defconfig
-   make ARCH=arm CROSS_COMPILE=arm-linux- zImage
-   make ARCH=arm CROSS_COMPILE=arm-linux- modules
+   make ARCH=arm CROSS_COMPILE=arm-linaos- cerfcube_defconfig
+   make ARCH=arm CROSS_COMPILE=arm-linaos- zImage
+   make ARCH=arm CROSS_COMPILE=arm-linaos- modules
    cp arch/arm/boot/zImage <TFTP directory>
 
 support@intrinsyc.com

@@ -71,25 +71,25 @@
 		user_pb1 {
 			label = "user_pb1";
 			gpios = <&pioB 25 GPIO_ACTIVE_LOW>;
-			linux,code = <0x100>;
+			linaos,code = <0x100>;
 		};
 
 		user_pb2 {
 			label = "user_pb2";
 			gpios = <&pioB 13 GPIO_ACTIVE_LOW>;
-			linux,code = <0x101>;
+			linaos,code = <0x101>;
 		};
 
 		user_pb3 {
 			label = "user_pb3";
 			gpios = <&pioA 26 GPIO_ACTIVE_LOW>;
-			linux,code = <0x102>;
+			linaos,code = <0x102>;
 		};
 
 		user_pb4 {
 			label = "user_pb4";
 			gpios = <&pioC 9 GPIO_ACTIVE_LOW>;
-			linux,code = <0x103>;
+			linaos,code = <0x103>;
 		};
 	};
 };

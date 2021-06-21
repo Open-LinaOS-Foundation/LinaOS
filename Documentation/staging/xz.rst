@@ -1,5 +1,5 @@
 ============================
-XZ data compression in Linux
+XZ data compression in LinaOS
 ============================
 
 Introduction
@@ -11,12 +11,12 @@ algorithm (filter) is LZMA2. Additional filters can be used to improve
 compression ratio even further. E.g. Branch/Call/Jump (BCJ) filters
 improve compression ratio of executable data.
 
-The XZ decompressor in Linux is called XZ Embedded. It supports
+The XZ decompressor in LinaOS is called XZ Embedded. It supports
 the LZMA2 filter and optionally also BCJ filters. CRC32 is supported
 for integrity checking. The home page of XZ Embedded is at
 <https://tukaani.org/xz/embedded.html>, where you can find the
 latest version and also information about using the code outside
-the Linux kernel.
+the LinaOS kernel.
 
 For userspace, XZ Utils provide a zlib-like compression library
 and a gzip-like command line tool. XZ Utils can be downloaded from
@@ -27,7 +27,7 @@ XZ related components in the kernel
 
 The xz_dec module provides XZ decompressor with single-call (buffer
 to buffer) and multi-call (stateful) APIs. The usage of the xz_dec
-module is documented in include/linux/xz.h.
+module is documented in include/linaos/xz.h.
 
 The xz_dec_test module is for testing xz_dec. xz_dec_test is not
 useful unless you are hacking the XZ decompressor. xz_dec_test
@@ -39,7 +39,7 @@ See the xz_dec_test source code for the details.
 For decompressing the kernel image, initramfs, and initrd, there
 is a wrapper function in lib/decompress_unxz.c. Its API is the
 same as in other decompress_*.c files, which is defined in
-include/linux/decompress/generic.h.
+include/linaos/decompress/generic.h.
 
 scripts/xz_wrap.sh is a wrapper for the xz command line tool found
 from XZ Utils. The wrapper sets compression options to values suitable
@@ -98,7 +98,7 @@ into the kernel.
 Support for limited random-access reading is planned for the
 decompression code. I don't know if it could have any use in the
 kernel, but I know that it would be useful in some embedded projects
-outside the Linux kernel.
+outside the LinaOS kernel.
 
 Conformance to the .xz file format specification
 ================================================

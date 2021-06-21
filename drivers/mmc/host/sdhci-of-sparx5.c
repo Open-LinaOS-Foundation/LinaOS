@@ -9,13 +9,13 @@
  * Author: Lars Povlsen <lars.povlsen@microchip.com>
  */
 
-#include <linux/sizes.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/of_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/dma-mapping.h>
+#include <linaos/sizes.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/dma-mapping.h>
 
 #include "sdhci-pltfm.h"
 

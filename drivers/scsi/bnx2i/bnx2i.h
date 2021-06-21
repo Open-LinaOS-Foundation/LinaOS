@@ -17,21 +17,21 @@
 #ifndef _BNX2I_H_
 #define _BNX2I_H_
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
-#include <linux/in.h>
-#include <linux/kfifo.h>
-#include <linux/netdevice.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/cpu.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/sched/signal.h>
+#include <linaos/in.h>
+#include <linaos/kfifo.h>
+#include <linaos/netdevice.h>
+#include <linaos/completion.h>
+#include <linaos/kthread.h>
+#include <linaos/cpu.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

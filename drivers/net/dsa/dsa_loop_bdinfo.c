@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/phy.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/phy.h>
 #include <net/dsa.h>
 
 #include "dsa_loop.h"

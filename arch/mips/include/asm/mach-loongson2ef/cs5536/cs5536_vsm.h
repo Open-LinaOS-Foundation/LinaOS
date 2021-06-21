@@ -9,7 +9,7 @@
 #ifndef _CS5536_VSM_H
 #define _CS5536_VSM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef void (*cs5536_pci_vsm_write)(int reg, u32 value);
 typedef u32 (*cs5536_pci_vsm_read)(int reg);

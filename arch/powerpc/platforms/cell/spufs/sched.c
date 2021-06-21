@@ -9,25 +9,25 @@
 
 #undef DEBUG
 
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/rt.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/vmalloc.h>
-#include <linux/smp.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/numa.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/pid_namespace.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/errno.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/sched/rt.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
+#include <linaos/vmalloc.h>
+#include <linaos/smp.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/numa.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/kthread.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 
 #include <asm/io.h>
 #include <asm/mmu_context.h>

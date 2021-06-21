@@ -6,20 +6,20 @@
  *   Haiyang Zhang <haiyangz@microsoft.com>
  *   Hank Janssen  <hjanssen@microsoft.com>
  */
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/nls.h>
-#include <linux/vmalloc.h>
-#include <linux/rtnetlink.h>
-#include <linux/ucs2_string.h>
+#include <linaos/ethtool.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/nls.h>
+#include <linaos/vmalloc.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/ucs2_string.h>
 
 #include "hyperv_net.h"
 #include "netvsc_trace.h"
@@ -1356,7 +1356,7 @@ static int rndis_netdev_set_hwcaps(struct rndis_device *rndis_device,
 	/* A value of zero means "no change"; now turn on what we want. */
 	memset(&offloads, 0, sizeof(struct ndis_offload_params));
 
-	/* Linux does not care about IP checksum, always does in kernel */
+	/* LinaOS does not care about IP checksum, always does in kernel */
 	offloads.ip_v4_csum = NDIS_OFFLOAD_PARAMETERS_TX_RX_DISABLED;
 
 	/* Reset previously set hw_features flags */

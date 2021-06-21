@@ -7,23 +7,23 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/fb.h>
-#include <linux/dmi.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
-#include <linux/acpi.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/ctype.h>
-#include <linux/efi.h>
-#include <linux/suspend.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/backlight.h>
+#include <linaos/leds.h>
+#include <linaos/fb.h>
+#include <linaos/dmi.h>
+#include <linaos/platform_device.h>
+#include <linaos/rfkill.h>
+#include <linaos/acpi.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/ctype.h>
+#include <linaos/efi.h>
+#include <linaos/suspend.h>
 #include <acpi/video.h>
 
 /*
@@ -102,7 +102,7 @@ struct sabi_commands {
 	u16 set_recovery_mode;
 
 	/*
-	 * on seclinux: 0 is low, 1 is high,
+	 * on seclinaos: 0 is low, 1 is high,
 	 * on swsmi: 0 is normal, 1 is silent, 2 is turbo
 	 */
 	u16 get_performance_level;
@@ -128,10 +128,10 @@ struct sabi_commands {
 	u16 kbd_backlight;
 
 	/*
-	 * Tell the BIOS that Linux is running on this machine.
+	 * Tell the BIOS that LinaOS is running on this machine.
 	 * 81 is on, 80 is off
 	 */
-	u16 set_linux;
+	u16 set_linaos;
 };
 
 struct sabi_performance_level {
@@ -199,7 +199,7 @@ static const struct sabi_config sabi_configs[] = {
 
 			.kbd_backlight = 0xFFFF,
 
-			.set_linux = 0x0a,
+			.set_linaos = 0x0a,
 		},
 
 		.performance_levels = {
@@ -262,7 +262,7 @@ static const struct sabi_config sabi_configs[] = {
 
 			.kbd_backlight = 0x78,
 
-			.set_linux = 0xff,
+			.set_linaos = 0xff,
 		},
 
 		.performance_levels = {
@@ -577,7 +577,7 @@ static const struct backlight_ops backlight_ops = {
 	.update_status	= update_status,
 };
 
-static int seclinux_rfkill_set(void *data, bool blocked)
+static int seclinaos_rfkill_set(void *data, bool blocked)
 {
 	struct samsung_rfkill *srfkill = data;
 	struct samsung_laptop *samsung = srfkill->samsung;
@@ -587,8 +587,8 @@ static int seclinux_rfkill_set(void *data, bool blocked)
 				 !blocked);
 }
 
-static const struct rfkill_ops seclinux_rfkill_ops = {
-	.set_block = seclinux_rfkill_set,
+static const struct rfkill_ops seclinaos_rfkill_ops = {
+	.set_block = seclinaos_rfkill_set,
 };
 
 static int swsmi_wireless_status(struct samsung_laptop *samsung,
@@ -982,10 +982,10 @@ static int samsung_new_rfkill(struct samsung_laptop *samsung,
 	return 0;
 }
 
-static int __init samsung_rfkill_init_seclinux(struct samsung_laptop *samsung)
+static int __init samsung_rfkill_init_seclinaos(struct samsung_laptop *samsung)
 {
 	return samsung_new_rfkill(samsung, &samsung->wlan, "samsung-wlan",
-				  RFKILL_TYPE_WLAN, &seclinux_rfkill_ops, -1);
+				  RFKILL_TYPE_WLAN, &seclinaos_rfkill_ops, -1);
 }
 
 static int __init samsung_rfkill_init_swsmi(struct samsung_laptop *samsung)
@@ -995,10 +995,10 @@ static int __init samsung_rfkill_init_swsmi(struct samsung_laptop *samsung)
 
 	ret = swsmi_wireless_status(samsung, &data);
 	if (ret) {
-		/* Some swsmi laptops use the old seclinux way to control
+		/* Some swsmi laptops use the old seclinaos way to control
 		 * wireless devices */
 		if (ret == -EINVAL)
-			ret = samsung_rfkill_init_seclinux(samsung);
+			ret = samsung_rfkill_init_seclinaos(samsung);
 		return ret;
 	}
 
@@ -1032,7 +1032,7 @@ exit:
 static int __init samsung_rfkill_init(struct samsung_laptop *samsung)
 {
 	if (samsung->config->sabi_version == 2)
-		return samsung_rfkill_init_seclinux(samsung);
+		return samsung_rfkill_init_seclinaos(samsung);
 	if (samsung->config->sabi_version == 3)
 		return samsung_rfkill_init_swsmi(samsung);
 	return 0;
@@ -1315,9 +1315,9 @@ static void samsung_sabi_exit(struct samsung_laptop *samsung)
 {
 	const struct sabi_config *config = samsung->config;
 
-	/* Turn off "Linux" mode in the BIOS */
-	if (config && config->commands.set_linux != 0xff)
-		sabi_set_commandb(samsung, config->commands.set_linux, 0x80);
+	/* Turn off "LinaOS" mode in the BIOS */
+	if (config && config->commands.set_linaos != 0xff)
+		sabi_set_commandb(samsung, config->commands.set_linaos, 0x80);
 
 	if (samsung->sabi_iface) {
 		iounmap(samsung->sabi_iface);
@@ -1440,12 +1440,12 @@ static int __init samsung_sabi_init(struct samsung_laptop *samsung)
 		goto exit;
 	}
 
-	/* Turn on "Linux" mode in the BIOS */
-	if (commands->set_linux != 0xff) {
+	/* Turn on "LinaOS" mode in the BIOS */
+	if (commands->set_linaos != 0xff) {
 		int retval = sabi_set_commandb(samsung,
-					       commands->set_linux, 0x81);
+					       commands->set_linaos, 0x81);
 		if (retval) {
-			pr_warn("Linux mode was not set!\n");
+			pr_warn("LinaOS mode was not set!\n");
 			ret = -ENODEV;
 			goto exit;
 		}

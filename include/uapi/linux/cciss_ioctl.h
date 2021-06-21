@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPICCISS_IOCTLH
 #define _UAPICCISS_IOCTLH
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <linux/cciss_defs.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/cciss_defs.h>
 
 #define CCISS_IOC_MAGIC 'B'
 

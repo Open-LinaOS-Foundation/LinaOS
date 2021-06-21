@@ -1,5 +1,5 @@
 /*
- *  linux/include/linux/console.h
+ *  linaos/include/linaos/console.h
  *
  *  Copyright (C) 1993        Hamish Macdonald
  *
@@ -14,8 +14,8 @@
 #ifndef _LINUX_CONSOLE_H_
 #define _LINUX_CONSOLE_H_ 1
 
-#include <linux/atomic.h>
-#include <linux/types.h>
+#include <linaos/atomic.h>
+#include <linaos/types.h>
 
 struct vc_data;
 struct console_font_op;

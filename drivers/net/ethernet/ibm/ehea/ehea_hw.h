@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea_hw.h
+ *  linaos/drivers/net/ethernet/ibm/ehea/ehea_hw.h
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *

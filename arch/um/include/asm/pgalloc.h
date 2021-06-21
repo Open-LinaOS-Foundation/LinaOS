@@ -8,7 +8,7 @@
 #ifndef __UM_PGALLOC_H
 #define __UM_PGALLOC_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #include <asm-generic/pgalloc.h>
 

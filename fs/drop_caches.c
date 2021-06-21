@@ -3,12 +3,12 @@
  * Implement the manual drop-all-pagecache function
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/writeback.h>
-#include <linux/sysctl.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/writeback.h>
+#include <linaos/sysctl.h>
+#include <linaos/gfp.h>
 #include "internal.h"
 
 /* A global variable is a bit ugly, but it keeps the code simple */

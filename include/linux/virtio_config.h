@@ -2,12 +2,12 @@
 #ifndef _LINUX_VIRTIO_CONFIG_H
 #define _LINUX_VIRTIO_CONFIG_H
 
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/virtio.h>
-#include <linux/virtio_byteorder.h>
-#include <linux/compiler_types.h>
-#include <uapi/linux/virtio_config.h>
+#include <linaos/err.h>
+#include <linaos/bug.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_byteorder.h>
+#include <linaos/compiler_types.h>
+#include <uapi/linaos/virtio_config.h>
 
 struct irq_affinity;
 

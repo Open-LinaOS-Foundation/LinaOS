@@ -4,19 +4,19 @@
  *
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/err.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/if_vlan.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/err.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/if_vlan.h>
 
 #include <bcm63xx_dev_enet.h>
 #include "bcm63xx_enet.h"

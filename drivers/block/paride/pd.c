@@ -124,7 +124,7 @@
    by default.
 
 */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 static int verbose = 0;
 static int major = PD_MAJOR;
@@ -144,19 +144,19 @@ enum {D_PRT, D_PRO, D_UNI, D_MOD, D_GEO, D_SBY, D_DLY, D_SLV};
 
 /* end of parameters */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>	/* for the eject ioctl */
-#include <linux/blk-mq.h>
-#include <linux/blkpg.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/hdreg.h>
+#include <linaos/cdrom.h>	/* for the eject ioctl */
+#include <linaos/blk-mq.h>
+#include <linaos/blkpg.h>
+#include <linaos/kernel.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/workqueue.h>
 
 static DEFINE_MUTEX(pd_mutex);
 static DEFINE_SPINLOCK(pd_lock);

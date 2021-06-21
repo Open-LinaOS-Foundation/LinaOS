@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// linux/sound/bcm/bcm63xx-pcm-whistler.c
+// linaos/sound/bcm/bcm63xx-pcm-whistler.c
 // BCM63xx whistler pcm interface
 // Copyright (c) 2020 Broadcom Corporation
 // Author: Kevin-Ke Li <kevin-ke.li@broadcom.com>
 
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
 #include <sound/pcm_params.h>
-#include <linux/regmap.h>
-#include <linux/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/of_device.h>
 #include <sound/soc.h>
 #include "bcm63xx-i2s.h"
 

@@ -4,9 +4,9 @@
  * Copyright (C) 2013  Magnus Damm
  * Copyright (C) 2012  Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
 #include "sh_pfc.h"
 

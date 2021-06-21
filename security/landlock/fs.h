@@ -9,9 +9,9 @@
 #ifndef _SECURITY_LANDLOCK_FS_H
 #define _SECURITY_LANDLOCK_FS_H
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/rcupdate.h>
 
 #include "ruleset.h"
 #include "setup.h"

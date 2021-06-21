@@ -4,9 +4,9 @@
  *
  * IOTLB implementation for vhost.
  */
-#include <linux/slab.h>
-#include <linux/vhost_iotlb.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/vhost_iotlb.h>
+#include <linaos/module.h>
 
 #define MOD_VERSION  "0.1"
 #define MOD_DESC     "VHOST IOTLB"

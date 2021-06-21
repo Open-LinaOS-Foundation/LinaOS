@@ -39,7 +39,7 @@ properties:
   gpios-states:
     description: |
       On operating systems, that don't support reading back gpio values in
-      output mode (most notably linux), this array provides the state of GPIO
+      output mode (most notably linaos), this array provides the state of GPIO
       pins set when requesting them from the gpio controller. Systems, that are
       capable of preserving state when requesting the lines, are free to ignore
       this property.

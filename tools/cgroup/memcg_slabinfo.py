@@ -7,10 +7,10 @@ from os import stat
 import argparse
 import sys
 
-from drgn.helpers.linux import list_for_each_entry, list_empty
-from drgn.helpers.linux import for_each_page
-from drgn.helpers.linux.cpumask import for_each_online_cpu
-from drgn.helpers.linux.percpu import per_cpu_ptr
+from drgn.helpers.linaos import list_for_each_entry, list_empty
+from drgn.helpers.linaos import for_each_page
+from drgn.helpers.linaos.cpumask import for_each_online_cpu
+from drgn.helpers.linaos.percpu import per_cpu_ptr
 from drgn import container_of, FaultError, Object
 
 

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <linaos/ceph/ceph_debug.h>
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/wait.h>
-#include <linux/writeback.h>
-#include <linux/iversion.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/wait.h>
+#include <linaos/writeback.h>
+#include <linaos/iversion.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "cache.h"
-#include <linux/ceph/decode.h>
-#include <linux/ceph/messenger.h>
+#include <linaos/ceph/decode.h>
+#include <linaos/ceph/messenger.h>
 
 /*
  * Capability management

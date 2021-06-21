@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 /*
  * insn_page is a special 4k aligned dummy function for kprobes.

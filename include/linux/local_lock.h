@@ -2,7 +2,7 @@
 #ifndef _LINUX_LOCAL_LOCK_H
 #define _LINUX_LOCAL_LOCK_H
 
-#include <linux/local_lock_internal.h>
+#include <linaos/local_lock_internal.h>
 
 /**
  * local_lock_init - Runtime initialize a lock instance

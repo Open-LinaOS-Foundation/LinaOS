@@ -6,15 +6,15 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/phy/omap_control_phy.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/phy/omap_control_phy.h>
 
 /**
  * omap_control_pcie_pcs - set the PCS delay count

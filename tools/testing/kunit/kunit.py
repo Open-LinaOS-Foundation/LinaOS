@@ -50,12 +50,12 @@ def get_kernel_root_path() -> str:
 		sys.exit(1)
 	return parts[0]
 
-def config_tests(linux: kunit_kernel.LinuxSourceTree,
+def config_tests(linaos: kunit_kernel.LinaOSSourceTree,
 		 request: KunitConfigRequest) -> KunitResult:
 	kunit_parser.print_with_timestamp('Configuring KUnit Kernel ...')
 
 	config_start = time.time()
-	success = linux.build_reconfig(request.build_dir, request.make_options)
+	success = linaos.build_reconfig(request.build_dir, request.make_options)
 	config_end = time.time()
 	if not success:
 		return KunitResult(KunitStatus.CONFIG_FAILURE,
@@ -65,12 +65,12 @@ def config_tests(linux: kunit_kernel.LinuxSourceTree,
 			   'configured kernel successfully',
 			   config_end - config_start)
 
-def build_tests(linux: kunit_kernel.LinuxSourceTree,
+def build_tests(linaos: kunit_kernel.LinaOSSourceTree,
 		request: KunitBuildRequest) -> KunitResult:
 	kunit_parser.print_with_timestamp('Building KUnit Kernel ...')
 
 	build_start = time.time()
-	success = linux.build_um_kernel(request.alltests,
+	success = linaos.build_um_kernel(request.alltests,
 					request.jobs,
 					request.build_dir,
 					request.make_options)
@@ -87,11 +87,11 @@ def build_tests(linux: kunit_kernel.LinuxSourceTree,
 			   'built kernel successfully',
 			   build_end - build_start)
 
-def exec_tests(linux: kunit_kernel.LinuxSourceTree,
+def exec_tests(linaos: kunit_kernel.LinaOSSourceTree,
 	       request: KunitExecRequest) -> KunitResult:
 	kunit_parser.print_with_timestamp('Starting KUnit Kernel ...')
 	test_start = time.time()
-	result = linux.run_kernel(
+	result = linaos.run_kernel(
 		timeout=None if request.alltests else request.timeout,
                 filter_glob=request.filter_glob,
 		build_dir=request.build_dir)
@@ -132,26 +132,26 @@ def parse_tests(request: KunitParseRequest) -> KunitResult:
 				parse_end - parse_start)
 
 
-def run_tests(linux: kunit_kernel.LinuxSourceTree,
+def run_tests(linaos: kunit_kernel.LinaOSSourceTree,
 	      request: KunitRequest) -> KunitResult:
 	run_start = time.time()
 
 	config_request = KunitConfigRequest(request.build_dir,
 					    request.make_options)
-	config_result = config_tests(linux, config_request)
+	config_result = config_tests(linaos, config_request)
 	if config_result.status != KunitStatus.SUCCESS:
 		return config_result
 
 	build_request = KunitBuildRequest(request.jobs, request.build_dir,
 					  request.alltests,
 					  request.make_options)
-	build_result = build_tests(linux, build_request)
+	build_result = build_tests(linaos, build_request)
 	if build_result.status != KunitStatus.SUCCESS:
 		return build_result
 
 	exec_request = KunitExecRequest(request.timeout, request.build_dir,
 					request.alltests, request.filter_glob)
-	exec_result = exec_tests(linux, exec_request)
+	exec_result = exec_tests(linaos, exec_request)
 	if exec_result.status != KunitStatus.SUCCESS:
 		return exec_result
 
@@ -222,7 +222,7 @@ def add_parse_opts(parser) -> None:
 			    'filename is specified',
 			    type=str, const='stdout', default=None)
 
-def main(argv, linux=None):
+def main(argv, linaos=None):
 	parser = argparse.ArgumentParser(
 			description='Helps writing and running KUnit tests.')
 	subparser = parser.add_subparsers(dest='subcommand')
@@ -269,8 +269,8 @@ def main(argv, linux=None):
 		if not os.path.exists(cli_args.build_dir):
 			os.mkdir(cli_args.build_dir)
 
-		if not linux:
-			linux = kunit_kernel.LinuxSourceTree(cli_args.build_dir, kunitconfig_path=cli_args.kunitconfig)
+		if not linaos:
+			linaos = kunit_kernel.LinaOSSourceTree(cli_args.build_dir, kunitconfig_path=cli_args.kunitconfig)
 
 		request = KunitRequest(cli_args.raw_output,
 				       cli_args.timeout,
@@ -280,7 +280,7 @@ def main(argv, linux=None):
 				       cli_args.filter_glob,
 				       cli_args.json,
 				       cli_args.make_options)
-		result = run_tests(linux, request)
+		result = run_tests(linaos, request)
 		if result.status != KunitStatus.SUCCESS:
 			sys.exit(1)
 	elif cli_args.subcommand == 'config':
@@ -288,40 +288,40 @@ def main(argv, linux=None):
 				not os.path.exists(cli_args.build_dir)):
 			os.mkdir(cli_args.build_dir)
 
-		if not linux:
-			linux = kunit_kernel.LinuxSourceTree(cli_args.build_dir, kunitconfig_path=cli_args.kunitconfig)
+		if not linaos:
+			linaos = kunit_kernel.LinaOSSourceTree(cli_args.build_dir, kunitconfig_path=cli_args.kunitconfig)
 
 		request = KunitConfigRequest(cli_args.build_dir,
 					     cli_args.make_options)
-		result = config_tests(linux, request)
+		result = config_tests(linaos, request)
 		kunit_parser.print_with_timestamp((
 			'Elapsed time: %.3fs\n') % (
 				result.elapsed_time))
 		if result.status != KunitStatus.SUCCESS:
 			sys.exit(1)
 	elif cli_args.subcommand == 'build':
-		if not linux:
-			linux = kunit_kernel.LinuxSourceTree(cli_args.build_dir, kunitconfig_path=cli_args.kunitconfig)
+		if not linaos:
+			linaos = kunit_kernel.LinaOSSourceTree(cli_args.build_dir, kunitconfig_path=cli_args.kunitconfig)
 
 		request = KunitBuildRequest(cli_args.jobs,
 					    cli_args.build_dir,
 					    cli_args.alltests,
 					    cli_args.make_options)
-		result = build_tests(linux, request)
+		result = build_tests(linaos, request)
 		kunit_parser.print_with_timestamp((
 			'Elapsed time: %.3fs\n') % (
 				result.elapsed_time))
 		if result.status != KunitStatus.SUCCESS:
 			sys.exit(1)
 	elif cli_args.subcommand == 'exec':
-		if not linux:
-			linux = kunit_kernel.LinuxSourceTree(cli_args.build_dir)
+		if not linaos:
+			linaos = kunit_kernel.LinaOSSourceTree(cli_args.build_dir)
 
 		exec_request = KunitExecRequest(cli_args.timeout,
 						cli_args.build_dir,
 						cli_args.alltests,
 						cli_args.filter_glob)
-		exec_result = exec_tests(linux, exec_request)
+		exec_result = exec_tests(linaos, exec_request)
 		parse_request = KunitParseRequest(cli_args.raw_output,
 						  exec_result.result,
 						  cli_args.build_dir,

@@ -1,26 +1,26 @@
-What:		/sys/fs/selinux/disable
+What:		/sys/fs/selinaos/disable
 Date:		April 2005 (predates git)
 KernelVersion:	2.6.12-rc2 (predates git)
-Contact:	selinux@vger.kernel.org
+Contact:	selinaos@vger.kernel.org
 Description:
 
-	The selinuxfs "disable" node allows SELinux to be disabled at runtime
+	The selinaosfs "disable" node allows SELinaOS to be disabled at runtime
 	prior to a policy being loaded into the kernel.  If disabled via this
-	mechanism, SELinux will remain disabled until the system is rebooted.
+	mechanism, SELinaOS will remain disabled until the system is rebooted.
 
-	The preferred method of disabling SELinux is via the "selinux=0" boot
-	parameter, but the selinuxfs "disable" node was created to make it
+	The preferred method of disabling SELinaOS is via the "selinaos=0" boot
+	parameter, but the selinaosfs "disable" node was created to make it
 	easier for systems with primitive bootloaders that did not allow for
 	easy modification of the kernel command line.  Unfortunately, allowing
-	for SELinux to be disabled at runtime makes it difficult to secure the
+	for SELinaOS to be disabled at runtime makes it difficult to secure the
 	kernel's LSM hooks using the "__ro_after_init" feature.
 
-	Thankfully, the need for the SELinux runtime disable appears to be
-	gone, the default Kconfig configuration disables this selinuxfs node,
+	Thankfully, the need for the SELinaOS runtime disable appears to be
+	gone, the default Kconfig configuration disables this selinaosfs node,
 	and only one of the major distributions, Fedora, supports disabling
-	SELinux at runtime.  Fedora is in the process of removing the
-	selinuxfs "disable" node and once that is complete we will start the
+	SELinaOS at runtime.  Fedora is in the process of removing the
+	selinaosfs "disable" node and once that is complete we will start the
 	slow process of removing this code from the kernel.
 
-	More information on /sys/fs/selinux/disable can be found under the
+	More information on /sys/fs/selinaos/disable can be found under the
 	CONFIG_SECURITY_SELINUX_DISABLE Kconfig option.

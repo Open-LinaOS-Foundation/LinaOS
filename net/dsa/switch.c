@@ -2,14 +2,14 @@
 /*
  * Handling of a single switch chip, part of a switch fabric
  *
- * Copyright (c) 2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2017 Savoir-faire LinaOS Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  */
 
-#include <linux/if_bridge.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/if_vlan.h>
+#include <linaos/if_bridge.h>
+#include <linaos/netdevice.h>
+#include <linaos/notifier.h>
+#include <linaos/if_vlan.h>
 #include <net/switchdev.h>
 
 #include "dsa_priv.h"

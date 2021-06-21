@@ -10,12 +10,12 @@
  * Description:
  * This driver is developed for Xilinx GMII2RGMII Converter
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
-#include <linux/of_mdio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/mii.h>
+#include <linaos/mdio.h>
+#include <linaos/phy.h>
+#include <linaos/of_mdio.h>
 
 #define XILINX_GMII2RGMII_REG		0x10
 #define XILINX_GMII2RGMII_SPEED_MASK	(BMCR_SPEED1000 | BMCR_SPEED100)

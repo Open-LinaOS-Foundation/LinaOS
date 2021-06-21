@@ -2,12 +2,12 @@
 #ifndef _ASM_IA64_PCI_H
 #define _ASM_IA64_PCI_H
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/scatterlist.h>
 
 #include <asm/io.h>
 #include <asm/hw_irq.h>

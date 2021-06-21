@@ -4,15 +4,15 @@
  * Copyright IBM Corp. 2008
  *
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
- *          Christian Ehrhardt <ehrhardt@linux.vnet.ibm.com>
+ *          Christian Ehrhardt <ehrhardt@linaos.vnet.ibm.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <linaos/kvm_host.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
 
 #include <asm/time.h>
 #include <asm-generic/div64.h>

@@ -18,7 +18,7 @@ struct kvm_memslots;
 
 enum kvm_mr_change;
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/kvm_types.h>
 

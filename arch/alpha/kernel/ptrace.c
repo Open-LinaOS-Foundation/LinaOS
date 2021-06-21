@@ -5,20 +5,20 @@
 /* mangled further by Bob Manson (manson@santafe.edu) */
 /* more mutilation by David Mosberger (davidm@azstarnet.com) */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/tracehook.h>
-#include <linux/audit.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/security.h>
+#include <linaos/signal.h>
+#include <linaos/tracehook.h>
+#include <linaos/audit.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/fpu.h>
 
 #include "proto.h"

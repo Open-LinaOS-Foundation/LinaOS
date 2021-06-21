@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/plat-versatile/platsmp.c
+ *  linaos/arch/arm/plat-versatile/platsmp.c
  *
  *  Copyright (C) 2002 ARM Ltd.
  *  All Rights Reserved
@@ -10,12 +10,12 @@
  * woken, and where there is no way to hot-unplug CPUs.  Real platforms
  * should not copy this code.
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/smp.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/jiffies.h>
+#include <linaos/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

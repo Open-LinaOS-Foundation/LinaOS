@@ -6,16 +6,16 @@
  *	Dave Gerlach
  */
 
-#include <linux/err.h>
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sram.h>
-#include <linux/ti-emif-sram.h>
+#include <linaos/err.h>
+#include <linaos/genalloc.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/sram.h>
+#include <linaos/ti-emif-sram.h>
 
 #include "emif.h"
 

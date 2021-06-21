@@ -77,7 +77,7 @@
 };
 
 &kpp {
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(0, 0, KEY_UP)
 		MATRIX_KEY(0, 1, KEY_DOWN)
 		MATRIX_KEY(1, 0, KEY_RIGHT)

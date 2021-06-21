@@ -4,7 +4,7 @@
  * Copyright (c) 2010-2012 Broadcom. All rights reserved.
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #include "vchiq_core.h"
 #include "vchiq_arm.h"
 #include "vchiq_debugfs.h"

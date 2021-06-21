@@ -11,7 +11,7 @@
 #ifndef __SCLP_RW_H__
 #define __SCLP_RW_H__
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct mto {
 	u16 length;

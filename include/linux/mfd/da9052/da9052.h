@@ -10,14 +10,14 @@
 #ifndef __MFD_DA9052_DA9052_H
 #define __MFD_DA9052_DA9052_H
 
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/mfd/core.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
+#include <linaos/list.h>
+#include <linaos/mfd/core.h>
 
-#include <linux/mfd/da9052/reg.h>
+#include <linaos/mfd/da9052/reg.h>
 
 /* Common - HWMON Channel Definations */
 #define DA9052_ADC_VDDOUT	0

@@ -7,8 +7,8 @@
 #ifndef __DRV_CLK_GATE_H
 #define __DRV_CLK_GATE_H
 
-#include <linux/regmap.h>
-#include <linux/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/clk-provider.h>
 
 struct clk;
 

@@ -1,9 +1,9 @@
 /*
- *  linux/arch/m68k/tools/amiga/dmesg.c -- Retrieve the kernel messages stored
+ *  linaos/arch/m68k/tools/amiga/dmesg.c -- Retrieve the kernel messages stored
  *					   in Chip RAM with the kernel command
  *					   line option `debug=mem'.
  *
- *  © Copyright 1996 by Geert Uytterhoeven <geert@linux-m68k.org>
+ *  © Copyright 1996 by Geert Uytterhoeven <geert@linaos-m68k.org>
  *
  *
  *  Usage:
@@ -13,7 +13,7 @@
  *
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the LinaOS
  *  distribution for more details.
  */
 

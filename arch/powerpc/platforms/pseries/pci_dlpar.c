@@ -9,8 +9,8 @@
  * Updates, 2005, Linas Vepstas <linas@austin.ibm.com>
  */
 
-#include <linux/pci.h>
-#include <linux/export.h>
+#include <linaos/pci.h>
+#include <linaos/export.h>
 #include <asm/pci-bridge.h>
 #include <asm/ppc-pci.h>
 #include <asm/firmware.h>

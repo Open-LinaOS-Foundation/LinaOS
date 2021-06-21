@@ -3,23 +3,23 @@
  * (C) 1997 Linus Torvalds
  * (C) 1999 Andrea Arcangeli <andrea@suse.de> (dynamic inode allocation)
  */
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/backing-dev.h>
-#include <linux/hash.h>
-#include <linux/swap.h>
-#include <linux/security.h>
-#include <linux/cdev.h>
-#include <linux/memblock.h>
-#include <linux/fsnotify.h>
-#include <linux/mount.h>
-#include <linux/posix_acl.h>
-#include <linux/prefetch.h>
-#include <linux/buffer_head.h> /* for inode_has_buffers */
-#include <linux/ratelimit.h>
-#include <linux/list_lru.h>
-#include <linux/iversion.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/backing-dev.h>
+#include <linaos/hash.h>
+#include <linaos/swap.h>
+#include <linaos/security.h>
+#include <linaos/cdev.h>
+#include <linaos/memblock.h>
+#include <linaos/fsnotify.h>
+#include <linaos/mount.h>
+#include <linaos/posix_acl.h>
+#include <linaos/prefetch.h>
+#include <linaos/buffer_head.h> /* for inode_has_buffers */
+#include <linaos/ratelimit.h>
+#include <linaos/list_lru.h>
+#include <linaos/iversion.h>
 #include <trace/events/writeback.h>
 #include "internal.h"
 
@@ -2248,7 +2248,7 @@ EXPORT_SYMBOL(inode_dio_wait);
  *
  * In the long run, i_mutex is overkill, and we should probably look
  * at using the i_lock spinlock to protect i_flags, and then make sure
- * it is so documented in include/linux/fs.h and that all code follows
+ * it is so documented in include/linaos/fs.h and that all code follows
  * the locking convention!!
  */
 void inode_set_flags(struct inode *inode, unsigned int flags,

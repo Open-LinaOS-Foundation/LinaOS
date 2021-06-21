@@ -95,7 +95,7 @@ this documentation.
 
 3. Add::
 
-	#include <linux/phylink.h>
+	#include <linaos/phylink.h>
 
    to the driver's list of header files.
 

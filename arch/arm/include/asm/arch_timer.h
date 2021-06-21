@@ -5,9 +5,9 @@
 #include <asm/barrier.h>
 #include <asm/errno.h>
 #include <asm/hwcap.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/types.h>
+#include <linaos/clocksource.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
 
 #include <clocksource/arm_arch_timer.h>
 

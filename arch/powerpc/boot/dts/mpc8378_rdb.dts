@@ -348,7 +348,7 @@
 
 		/* IPIC
 		 * interrupts cell = <intr #, sense>
-		 * sense values match linux IORESOURCE_IRQ_* defines:
+		 * sense values match linaos IORESOURCE_IRQ_* defines:
 		 * sense == 8: Level, low assertion
 		 * sense == 2: Edge, high-to-low change
 		 */
@@ -476,7 +476,7 @@
 
 		hdd {
 			gpios = <&mcu_pio 1 0>;
-			linux,default-trigger = "disk-activity";
+			linaos,default-trigger = "disk-activity";
 		};
 	};
 };

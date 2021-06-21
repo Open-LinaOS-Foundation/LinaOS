@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ============================================
-The Linux PCI driver implementer's API guide
+The LinaOS PCI driver implementer's API guide
 ============================================
 
 .. class:: toc-title

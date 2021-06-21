@@ -7,10 +7,10 @@
  * Author: Annaliese McDermond <nh6z@nh6z.net>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/regmap.h>
-#include <linux/device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/regmap.h>
+#include <linaos/device.h>
 
 #include "tlv320aic32x4.h"
 

@@ -9,17 +9,17 @@
  * {C} Copyright 2014 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_device.h>
 
 
 #define SURFACE_BUTTON_OBJ_NAME		"TEV2"

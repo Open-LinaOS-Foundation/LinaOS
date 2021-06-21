@@ -8,17 +8,17 @@
  * for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/bitops.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h> /* for USER_DS macros */
+#include <linaos/cpu.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/pm.h>
+#include <linaos/tick.h>
+#include <linaos/bitops.h>
+#include <linaos/ptrace.h>
+#include <linaos/uaccess.h> /* for USER_DS macros */
 #include <asm/cacheflush.h>
 
 void show_regs(struct pt_regs *regs)
@@ -128,7 +128,7 @@ void start_thread(struct pt_regs *regs, unsigned long pc, unsigned long usp)
 	regs->msr &= ~MSR_VM;
 }
 
-#include <linux/elfcore.h>
+#include <linaos/elfcore.h>
 /*
  * Set up a thread for executing a new program
  */

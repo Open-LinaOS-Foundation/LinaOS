@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -13,7 +13,7 @@
 #ifndef BOOT_VIDEO_H
 #define BOOT_VIDEO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * This code uses an extended set of video mode numbers. These include:

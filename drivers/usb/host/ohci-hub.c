@@ -610,7 +610,7 @@ static int ohci_start_port_reset (struct usb_hcd *hcd, unsigned port)
 /* this timer value might be vendor-specific ... */
 #define	PORT_RESET_HW_MSEC	10
 
-/* wrap-aware logic morphed from <linux/jiffies.h> */
+/* wrap-aware logic morphed from <linaos/jiffies.h> */
 #define tick_before(t1,t2) ((s16)(((s16)(t1))-((s16)(t2))) < 0)
 
 /* called from some task, normally hub_wq */

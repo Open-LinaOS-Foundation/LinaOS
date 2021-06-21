@@ -15,16 +15,16 @@
 #include <asm/processor.h>
 #include <asm/coprocessor.h>
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/thread_info.h>
+#include <linaos/ptrace.h>
+#include <linaos/mm.h>
+#include <linaos/kbuild.h>
 
 #include <asm/ptrace.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 int main(void)
 {

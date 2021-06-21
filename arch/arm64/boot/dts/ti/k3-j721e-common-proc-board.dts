@@ -24,13 +24,13 @@
 
 		sw10: sw10 {
 			label = "GPIO Key USER1";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&main_gpio0 0 GPIO_ACTIVE_LOW>;
 		};
 
 		sw11: sw11 {
 			label = "GPIO Key USER2";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			gpios = <&wkup_gpio0 7 GPIO_ACTIVE_LOW>;
 		};
 	};

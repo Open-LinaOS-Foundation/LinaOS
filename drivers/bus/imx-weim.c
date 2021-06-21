@@ -7,13 +7,13 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linaos/regmap.h>
 
 struct imx_weim_devtype {
 	unsigned int	cs_count;

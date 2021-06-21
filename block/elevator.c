@@ -23,20 +23,20 @@
  * - completely modularize elevator setup and teardown
  *
  */
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/elevator.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/blktrace_api.h>
-#include <linux/hash.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/blk-cgroup.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/blkdev.h>
+#include <linaos/elevator.h>
+#include <linaos/bio.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/compiler.h>
+#include <linaos/blktrace_api.h>
+#include <linaos/hash.h>
+#include <linaos/uaccess.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/blk-cgroup.h>
 
 #include <trace/events/block.h>
 

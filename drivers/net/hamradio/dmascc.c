@@ -7,27 +7,27 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
-#include <linux/sockios.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/if_arp.h>
+#include <linaos/in.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/sockios.h>
+#include <linaos/workqueue.h>
+#include <linaos/atomic.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <net/ax25.h>
 #include "z8530.h"
 

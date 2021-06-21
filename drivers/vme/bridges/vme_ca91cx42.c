@@ -11,21 +11,21 @@
  * Derived from ca91c042.c by Michael Wyrick
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/poll.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/vme.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/poll.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/vme.h>
 
 #include "../vme_bridge.h"
 #include "vme_ca91cx42.h"

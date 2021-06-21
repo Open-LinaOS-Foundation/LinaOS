@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/fs.h>
-#include <linux/qnx4_fs.h>
+#include <linaos/fs.h>
+#include <linaos/qnx4_fs.h>
 
 #define QNX4_DEBUG 0
 

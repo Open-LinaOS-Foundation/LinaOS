@@ -8,7 +8,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_DISPLAY_H
 #define __ARCH_ARM_MACH_OMAP2_DISPLAY_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 struct omap_dss_dispc_dev_attr {
 	u8	manager_count;

@@ -1,5 +1,5 @@
 /*
- *  linux/include/sunrpc/gss_err.h
+ *  linaos/include/sunrpc/gss_err.h
  *
  *  Adapted from MIT Kerberos 5-1.2.1 include/gssapi/gssapi.h
  *

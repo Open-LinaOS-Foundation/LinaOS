@@ -2,14 +2,14 @@
 /*
  * Copyright (c) 2014 Anna Schumaker <Anna.Schumaker@Netapp.com>
  */
-#include <linux/fs.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_xdr.h>
-#include <linux/nfs_fs.h>
+#include <linaos/fs.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs3.h>
+#include <linaos/nfs4.h>
+#include <linaos/nfs_xdr.h>
+#include <linaos/nfs_fs.h>
 #include "nfs4_fs.h"
 #include "nfs42.h"
 #include "iostat.h"

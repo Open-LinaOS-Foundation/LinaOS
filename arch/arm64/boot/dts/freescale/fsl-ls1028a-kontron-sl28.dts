@@ -35,14 +35,14 @@
 		power-button {
 			interrupts-extended = <&sl28cpld_intc
 					       4 IRQ_TYPE_EDGE_BOTH>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			label = "Power";
 		};
 
 		sleep-button {
 			interrupts-extended = <&sl28cpld_intc
 					       5 IRQ_TYPE_EDGE_BOTH>;
-			linux,code = <KEY_SLEEP>;
+			linaos,code = <KEY_SLEEP>;
 			label = "Sleep";
 		};
 	};
@@ -52,8 +52,8 @@
 		poll-interval = <200>;
 
 		lid-switch {
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
 			gpios = <&sl28cpld_gpio3 4 GPIO_ACTIVE_LOW>;
 			label = "Lid";
 		};

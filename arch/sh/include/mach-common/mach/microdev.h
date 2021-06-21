@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/include/asm-sh/microdev.h
+ * linaos/include/asm-sh/microdev.h
  *
  * Copyright (C) 2003 Sean McGoogan (Sean.McGoogan@superh.com)
  *
@@ -32,7 +32,7 @@ extern void microdev_print_fpga_intc_status(void);
 
 
 /*
- * The following are the IRQ numbers for the Linux Kernel for external
+ * The following are the IRQ numbers for the LinaOS Kernel for external
  * interrupts.  i.e. the numbers seen by 'cat /proc/interrupt'.
  */
 #define MICRODEV_LINUX_IRQ_KEYBOARD	 1	/* SuperIO Keyboard */

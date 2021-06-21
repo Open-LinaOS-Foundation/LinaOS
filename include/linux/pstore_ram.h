@@ -8,13 +8,13 @@
 #ifndef __LINUX_PSTORE_RAM_H__
 #define __LINUX_PSTORE_RAM_H__
 
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/pstore.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/pstore.h>
+#include <linaos/types.h>
 
 /*
  * Choose whether access to the RAM zone requires locking or not.  If a zone

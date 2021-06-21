@@ -13,10 +13,10 @@
 
 #define pr_fmt(fmt) "SPEAr3xx: " fmt
 
-#include <linux/amba/pl022.h>
-#include <linux/amba/pl080.h>
-#include <linux/clk.h>
-#include <linux/io.h>
+#include <linaos/amba/pl022.h>
+#include <linaos/amba/pl080.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
 #include <asm/mach/map.h>
 #include "pl080.h"
 #include "generic.h"

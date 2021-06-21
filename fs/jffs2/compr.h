@@ -12,15 +12,15 @@
 #ifndef __JFFS2_COMPR_H__
 #define __JFFS2_COMPR_H__
 
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/jffs2.h>
+#include <linaos/kernel.h>
+#include <linaos/vmalloc.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/jffs2.h>
 #include "jffs2_fs_i.h"
 #include "jffs2_fs_sb.h"
 #include "nodelist.h"

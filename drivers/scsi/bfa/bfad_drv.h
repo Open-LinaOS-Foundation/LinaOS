@@ -5,7 +5,7 @@
  * All rights reserved
  * www.qlogic.com
  *
- * Linux driver for QLogic BR-series Fibre Channel Host Bus Adapter.
+ * LinaOS driver for QLogic BR-series Fibre Channel Host Bus Adapter.
  */
 
 /*
@@ -13,24 +13,24 @@
  */
 
 /*
- *  bfa_drv.h Linux driver data structures.
+ *  bfa_drv.h LinaOS driver data structures.
  */
 
 #ifndef __BFAD_DRV_H__
 #define __BFAD_DRV_H__
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/aer.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/vmalloc.h>
+#include <linaos/workqueue.h>
+#include <linaos/bitops.h>
+#include <linaos/aer.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_tcq.h>

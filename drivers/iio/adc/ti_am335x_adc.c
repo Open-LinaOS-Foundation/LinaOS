@@ -13,25 +13,25 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/iio/iio.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/iio/machine.h>
+#include <linaos/iio/driver.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <linaos/mfd/ti_am335x_tscadc.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/kfifo_buf.h>
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
 
 #define DMA_BUFFER_SIZE		SZ_2K
 

@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * These are the public elements of the Linux kernel AX.25 code. A similar
+ * These are the public elements of the LinaOS kernel AX.25 code. A similar
  * file netrom.h exists for the NET/ROM protocol.
  */
 
 #ifndef	AX25_KERNEL_H
 #define	AX25_KERNEL_H
 
-#include <linux/socket.h>
+#include <linaos/socket.h>
 
 #define AX25_MTU	256
 #define AX25_MAX_DIGIS  8

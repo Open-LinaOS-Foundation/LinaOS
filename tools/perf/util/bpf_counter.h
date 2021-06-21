@@ -2,7 +2,7 @@
 #ifndef __PERF_BPF_COUNTER_H
 #define __PERF_BPF_COUNTER_H 1
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct evsel;
 struct target;
@@ -40,7 +40,7 @@ int bpf_counter__install_pe(struct evsel *evsel, int cpu, int fd);
 
 #else /* HAVE_BPF_SKEL */
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 static inline int bpf_counter__load(struct evsel *evsel __maybe_unused,
 				    struct target *target __maybe_unused)

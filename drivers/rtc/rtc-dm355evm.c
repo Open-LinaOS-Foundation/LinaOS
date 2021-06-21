@@ -4,13 +4,13 @@
  *
  * Copyright (c) 2008 by David Brownell
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/rtc.h>
+#include <linaos/platform_device.h>
 
-#include <linux/mfd/dm355evm_msp.h>
-#include <linux/module.h>
+#include <linaos/mfd/dm355evm_msp.h>
+#include <linaos/module.h>
 
 
 /*

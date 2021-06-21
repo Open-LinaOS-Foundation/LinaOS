@@ -18,7 +18,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <net/if.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 

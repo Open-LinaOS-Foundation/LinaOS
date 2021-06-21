@@ -4,20 +4,20 @@
  */
 
 /*
- * Driver for Amiga joysticks for Linux/m68k
+ * Driver for Amiga joysticks for LinaOS/m68k
  */
 
 /*
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>

@@ -8,7 +8,7 @@
 #ifndef __ASM_SWITCH_TO_H
 #define __ASM_SWITCH_TO_H
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 #include <asm/fpu/api.h>
 #include <asm/ptrace.h>
 #include <asm/guarded_storage.h>

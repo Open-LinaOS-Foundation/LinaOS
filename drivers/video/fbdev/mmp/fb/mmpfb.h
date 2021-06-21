@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/drivers/video/mmp/fb/mmpfb.h
+ * linaos/drivers/video/mmp/fb/mmpfb.h
  * Framebuffer driver for Marvell Display controller.
  *
  * Copyright (C) 2012 Marvell Technology Group Ltd.
@@ -11,7 +11,7 @@
 #define _MMP_FB_H_
 
 #include <video/mmp_disp.h>
-#include <linux/fb.h>
+#include <linaos/fb.h>
 
 /* LCD controller private state. */
 struct mmpfb_info {

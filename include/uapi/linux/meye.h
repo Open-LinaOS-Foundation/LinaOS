@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- * Motion Eye video4linux driver for Sony Vaio PictureBook
+ * Motion Eye video4linaos driver for Sony Vaio PictureBook
  *
  * Copyright (C) 2001-2003 Stelian Pop <stelian@popies.net>
  *
  * Copyright (C) 2001-2002 Alcôve <www.alcove.com>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@valinaos.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
- * Some parts borrowed from various video4linux drivers, especially
+ * Some parts borrowed from various video4linaos drivers, especially
  * bttv-driver.c and zoran.c, see original files for credits.
  *
  * This program is free software; you can redistribute it and/or modify

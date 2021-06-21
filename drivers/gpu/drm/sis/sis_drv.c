@@ -1,7 +1,7 @@
-/* sis.c -- sis driver -*- linux-c -*-
+/* sis.c -- sis driver -*- linaos-c -*-
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -25,8 +25,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

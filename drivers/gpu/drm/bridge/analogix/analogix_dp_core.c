@@ -6,17 +6,17 @@
 * Author: Jingoo Han <jg1.han@samsung.com>
 */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
 
 #include <drm/bridge/analogix_dp.h>
 #include <drm/drm_atomic.h>

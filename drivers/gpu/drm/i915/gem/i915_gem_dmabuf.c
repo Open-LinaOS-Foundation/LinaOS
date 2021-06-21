@@ -4,9 +4,9 @@
  * Copyright 2012 Red Hat Inc
  */
 
-#include <linux/dma-buf.h>
-#include <linux/highmem.h>
-#include <linux/dma-resv.h>
+#include <linaos/dma-buf.h>
+#include <linaos/highmem.h>
+#include <linaos/dma-resv.h>
 
 #include "i915_drv.h"
 #include "i915_gem_object.h"

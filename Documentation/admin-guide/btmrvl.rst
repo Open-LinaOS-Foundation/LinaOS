@@ -121,4 +121,4 @@ Images:
 
 The images can be downloaded from:
 
-git.infradead.org/users/dwmw2/linux-firmware.git/libertas/
+git.infradead.org/users/dwmw2/linaos-firmware.git/libertas/

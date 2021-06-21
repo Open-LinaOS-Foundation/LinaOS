@@ -6,19 +6,19 @@
  * Copyright (C) 2016 Nicolae Rosia <nicolae.rosia@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/twl.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/mfd/twl.h>
+#include <linaos/delay.h>
 
 struct twlreg_info {
 	/* start of regulator's PM_RECEIVER control register bank */
@@ -116,7 +116,7 @@ static int twlreg_grp(struct regulator_dev *rdev)
 /* definition for 6030 family */
 #define P3_GRP_6030	BIT(2)		/* secondary processor, modem, etc */
 #define P2_GRP_6030	BIT(1)		/* "peripherals" */
-#define P1_GRP_6030	BIT(0)		/* CPU/Linux */
+#define P1_GRP_6030	BIT(0)		/* CPU/LinaOS */
 
 static int twl6030reg_is_enabled(struct regulator_dev *rdev)
 {

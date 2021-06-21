@@ -13,9 +13,9 @@
  ******************************************************************************/
 #ifndef VXGE_CONFIG_H
 #define VXGE_CONFIG_H
-#include <linux/hardirq.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/hardirq.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
 
 #ifndef VXGE_CACHE_LINE_SIZE

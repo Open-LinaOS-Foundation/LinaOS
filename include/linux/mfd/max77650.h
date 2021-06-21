@@ -9,7 +9,7 @@
 #ifndef MAX77650_H
 #define MAX77650_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 #define MAX77650_REG_INT_GLBL		0x00
 #define MAX77650_REG_INT_CHG		0x01

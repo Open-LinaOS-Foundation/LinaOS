@@ -5,7 +5,7 @@
  * Copyright (C) 2017 Intel Corporation
  *
  * Author:
- *	Kirill A. Shutemov <kirill.shutemov@linux.intel.com>
+ *	Kirill A. Shutemov <kirill.shutemov@linaos.intel.com>
  */
 
 #include <asm/cpufeature.h>

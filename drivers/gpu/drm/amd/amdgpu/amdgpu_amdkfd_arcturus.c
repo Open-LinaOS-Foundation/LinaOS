@@ -19,10 +19,10 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/fdtable.h>
-#include <linux/uaccess.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/fdtable.h>
+#include <linaos/uaccess.h>
+#include <linaos/firmware.h>
 #include "amdgpu.h"
 #include "amdgpu_amdkfd.h"
 #include "sdma0/sdma0_4_2_2_offset.h"

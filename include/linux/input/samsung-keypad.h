@@ -9,7 +9,7 @@
 #ifndef __SAMSUNG_KEYPAD_H
 #define __SAMSUNG_KEYPAD_H
 
-#include <linux/input/matrix_keypad.h>
+#include <linaos/input/matrix_keypad.h>
 
 #define SAMSUNG_MAX_ROWS	8
 #define SAMSUNG_MAX_COLS	8

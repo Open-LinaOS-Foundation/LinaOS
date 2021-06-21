@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *    Hypervisor filesystem for Linux on s390. z/VM implementation.
+ *    Hypervisor filesystem for LinaOS on s390. z/VM implementation.
  *
  *    Copyright IBM Corp. 2006
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
 #include <asm/diag.h>
 #include <asm/ebcdic.h>
 #include <asm/timex.h>

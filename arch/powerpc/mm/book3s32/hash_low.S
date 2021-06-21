@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
  *  Adapted for Power Macintosh by Paul Mackerras.
@@ -14,8 +14,8 @@
  *  hash table, so this file is not used on them.)
  */
 
-#include <linux/pgtable.h>
-#include <linux/init.h>
+#include <linaos/pgtable.h>
+#include <linaos/init.h>
 #include <asm/reg.h>
 #include <asm/page.h>
 #include <asm/cputable.h>
@@ -61,7 +61,7 @@ _GLOBAL(hash_page)
 	bne-	10b
 	isync
 #endif
-	/* Get PTE (linux-style) and check access */
+	/* Get PTE (linaos-style) and check access */
 	lis	r0, TASK_SIZE@h		/* check if kernel address */
 	cmplw	0,r4,r0
 	mfspr	r8,SPRN_SPRG_THREAD	/* current task's THREAD (phys) */
@@ -102,13 +102,13 @@ _GLOBAL(hash_page)
 #endif
 
 	/*
-	 * Update the linux PTE atomically.  We do the lwarx up-front
+	 * Update the linaos PTE atomically.  We do the lwarx up-front
 	 * because almost always, there won't be a permission violation
 	 * and there won't already be an HPTE, and thus we will have
 	 * to update the PTE to set _PAGE_HASHPTE.  -- paulus.
 	 */
 .Lretry:
-	lwarx	r6,0,r8			/* get linux-style pte, flag word */
+	lwarx	r6,0,r8			/* get linaos-style pte, flag word */
 #ifdef CONFIG_PPC_KUAP
 	mfsrin	r5,r4
 	rlwinm	r0,r9,28,_PAGE_RW	/* MSR[PR] => _PAGE_RW */
@@ -209,7 +209,7 @@ _GLOBAL(add_hash_page)
 #endif
 
 	/*
-	 * Fetch the linux pte and test and set _PAGE_HASHPTE atomically.
+	 * Fetch the linaos pte and test and set _PAGE_HASHPTE atomically.
 	 * If _PAGE_HASHPTE was already set, we don't replace the existing
 	 * HPTE, so we just unlock and return.
 	 */
@@ -266,13 +266,13 @@ _ASM_NOKPROBE_SYMBOL(add_hash_page)
  * This routine adds a hardware PTE to the hash table.
  * It is designed to be called with the MMU either on or off.
  * r3 contains the VSID, r4 contains the virtual address,
- * r5 contains the linux PTE, r6 contains the old value of the
- * linux PTE (before setting _PAGE_HASHPTE). r10 contains the
+ * r5 contains the linaos PTE, r6 contains the old value of the
+ * linaos PTE (before setting _PAGE_HASHPTE). r10 contains the
  * upper half of the PTE if CONFIG_PTE_64BIT.
  * On SMP, the caller should have the mmu_hash_lock held.
  * We assume that the caller has (or will) set the _PAGE_HASHPTE
- * bit in the linux PTE in memory.  The value passed in r6 should
- * be the old linux PTE value; if it doesn't have _PAGE_HASHPTE set
+ * bit in the linaos PTE in memory.  The value passed in r6 should
+ * be the old linaos PTE value; if it doesn't have _PAGE_HASHPTE set
  * this routine will skip the search for an existing HPTE.
  * This procedure modifies r0, r3 - r6, r8, cr0.
  *  -- paulus.
@@ -304,7 +304,7 @@ Hash_msk = (((1 << Hash_bits) - 1) * 64)
 
 __REF
 _GLOBAL(create_hpte)
-	/* Convert linux-style PTE (r5) to low word of PPC-style PTE (r8) */
+	/* Convert linaos-style PTE (r5) to low word of PPC-style PTE (r8) */
 	rlwinm	r8,r5,32-9,30,30	/* _PAGE_RW -> PP msb */
 	rlwinm	r0,r5,32-6,30,30	/* _PAGE_DIRTY -> PP msb */
 	and	r8,r8,r0		/* writable if _RW & _DIRTY */
@@ -337,7 +337,7 @@ END_FTR_SECTION_IFCLR(CPU_FTR_NEED_COHERENT)
 	li	r0,8			/* PTEs/group */
 
 	/*
-	 * Test the _PAGE_HASHPTE bit in the old linux PTE, and skip the search
+	 * Test the _PAGE_HASHPTE bit in the old linaos PTE, and skip the search
 	 * if it is clear, meaning that the HPTE isn't there already...
 	 */
 	andi.	r6,r6,_PAGE_HASHPTE
@@ -522,7 +522,7 @@ _GLOBAL(flush_hash_pages)
 #endif
 
 	/*
-	 * Check the _PAGE_HASHPTE bit in the linux PTE.  If it is
+	 * Check the _PAGE_HASHPTE bit in the linaos PTE.  If it is
 	 * already clear, we're done (for this pte).  If not,
 	 * clear it (atomically) and proceed.  -- paulus.
 	 */

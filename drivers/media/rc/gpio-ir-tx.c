@@ -3,13 +3,13 @@
  * Copyright (C) 2017 Sean Young <sean@mess.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME	"gpio-ir-tx"

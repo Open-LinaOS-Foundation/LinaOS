@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* linux/arch/arm/mach-s3c64xx/include/mach/irqs.h
+/* linaos/arch/arm/mach-s3c64xx/include/mach/irqs.h
  *
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *
  * S3C64XX - IRQ support
  */

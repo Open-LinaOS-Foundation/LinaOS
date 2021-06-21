@@ -2,8 +2,8 @@
 #ifndef ASMARM_ARCH_MMC_H
 #define ASMARM_ARCH_MMC_H
 
-#include <linux/interrupt.h>
-#include <linux/mmc/host.h>
+#include <linaos/interrupt.h>
+#include <linaos/mmc/host.h>
 
 struct device;
 

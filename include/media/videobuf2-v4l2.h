@@ -12,7 +12,7 @@
 #ifndef _MEDIA_VIDEOBUF2_V4L2_H
 #define _MEDIA_VIDEOBUF2_V4L2_H
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/videobuf2-core.h>
 
 #if VB2_MAX_FRAME != VIDEO_MAX_FRAME

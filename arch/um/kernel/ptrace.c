@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/audit.h>
-#include <linux/ptrace.h>
-#include <linux/sched.h>
-#include <linux/tracehook.h>
-#include <linux/uaccess.h>
+#include <linaos/audit.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched.h>
+#include <linaos/tracehook.h>
+#include <linaos/uaccess.h>
 #include <asm/ptrace-abi.h>
 
 void user_enable_single_step(struct task_struct *child)

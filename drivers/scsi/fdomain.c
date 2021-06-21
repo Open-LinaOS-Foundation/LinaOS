@@ -32,7 +32,7 @@
  *
  * DESCRIPTION:
  *
- * This is the Linux low-level SCSI driver for Future Domain TMC-1660/1680
+ * This is the LinaOS low-level SCSI driver for Future Domain TMC-1660/1680
  * TMC-1650/1670, and TMC-3260 SCSI host adapters.  The 1650 and 1670 have a
  * 25-pin external connector, whereas the 1660 and 1680 have a SCSI-2 50-pin
  * high-density external connector.  The 1670 and 1680 have floppy disk
@@ -79,11 +79,11 @@
  * 6-1.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/workqueue.h>
 #include <scsi/scsicam.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

@@ -11,10 +11,10 @@
  * <mtddef>  := <mtd-id>:<partdef>[,<partdef>]
  * <partdef> := <size>[@<offset>][<name>][ro][lk][slc]
  * <mtd-id>  := unique name used in mapping driver/device (mtd->name)
- * <size>    := standard linux memsize OR "-" to denote all remaining space
+ * <size>    := standard linaos memsize OR "-" to denote all remaining space
  *              size is automatically truncated at end of device
  *              if specified or truncated size is 0 the part is skipped
- * <offset>  := standard linux memsize
+ * <offset>  := standard linaos memsize
  *              if omitted the part will immediately follow the previous part
  *              or 0 if the first part
  * <name>    := '(' NAME ')'
@@ -37,12 +37,12 @@
 
 #define pr_fmt(fmt)	"mtd: " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/module.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
 
 /* debug macro */
 #if 0

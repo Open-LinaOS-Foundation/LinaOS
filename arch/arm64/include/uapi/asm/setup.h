@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Based on arch/arm/include/asm/setup.h
  *
@@ -20,7 +20,7 @@
 #ifndef __ASM_SETUP_H
 #define __ASM_SETUP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define COMMAND_LINE_SIZE	2048
 

@@ -2,8 +2,8 @@
 #ifndef _LINUX_ONCE_H
 #define _LINUX_ONCE_H
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
+#include <linaos/types.h>
+#include <linaos/jump_label.h>
 
 bool __do_once_start(bool *done, unsigned long *flags);
 void __do_once_done(bool *done, struct static_key_true *once_key,

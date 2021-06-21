@@ -9,15 +9,15 @@
  * enumerate the device using PCI.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/debugfs.h>
-#include <linux/capability.h>
-#include <linux/pm_qos.h>
-#include <linux/wait.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/pci.h>
+#include <linaos/debugfs.h>
+#include <linaos/capability.h>
+#include <linaos/pm_qos.h>
+#include <linaos/wait.h>
 
 #include <asm/iosf_mbi.h>
 
@@ -566,6 +566,6 @@ static void __exit iosf_mbi_exit(void)
 module_init(iosf_mbi_init);
 module_exit(iosf_mbi_exit);
 
-MODULE_AUTHOR("David E. Box <david.e.box@linux.intel.com>");
+MODULE_AUTHOR("David E. Box <david.e.box@linaos.intel.com>");
 MODULE_DESCRIPTION("IOSF Mailbox Interface accessor");
 MODULE_LICENSE("GPL v2");

@@ -8,10 +8,10 @@
  * Copyright (C) 2007 - 2009 Motorola, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/motorola-cpcap.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/motorola-cpcap.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

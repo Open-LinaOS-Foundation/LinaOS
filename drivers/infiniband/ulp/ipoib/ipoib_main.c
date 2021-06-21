@@ -34,22 +34,22 @@
 
 #include "ipoib.h"
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/vmalloc.h>
 
-#include <linux/if_arp.h>	/* For ARPHRD_xxx */
+#include <linaos/if_arp.h>	/* For ARPHRD_xxx */
 
-#include <linux/ip.h>
-#include <linux/in.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
 
-#include <linux/jhash.h>
+#include <linaos/jhash.h>
 #include <net/arp.h>
 #include <net/addrconf.h>
-#include <linux/inetdevice.h>
+#include <linaos/inetdevice.h>
 #include <rdma/ib_cache.h>
 
 MODULE_AUTHOR("Roland Dreier");

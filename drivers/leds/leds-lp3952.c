@@ -6,19 +6,19 @@
  *	Author: Tony Makkiel <tony.makkiel@daqri.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/leds-lp3952.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/leds-lp3952.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
 
 static int lp3952_register_write(struct i2c_client *client, u8 reg, u8 val)
 {

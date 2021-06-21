@@ -10,21 +10,21 @@
  *
  * Copyright 2001 - 2006 Tensilica Inc.
  */
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/kdev_t.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/clk-provider.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/errno.h>
+#include <linaos/reboot.h>
+#include <linaos/kdev_t.h>
+#include <linaos/types.h>
+#include <linaos/major.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
 
 #include <asm/timex.h>
 #include <asm/processor.h>
@@ -135,10 +135,10 @@ arch_initcall(machine_setup);
 
 #else
 
-#include <linux/serial_8250.h>
-#include <linux/if.h>
+#include <linaos/serial_8250.h>
+#include <linaos/if.h>
 #include <net/ethoc.h>
-#include <linux/usb/c67x00.h>
+#include <linaos/usb/c67x00.h>
 
 /*----------------------------------------------------------------------------
  *  Ethernet -- OpenCores Ethernet MAC (ethoc driver)

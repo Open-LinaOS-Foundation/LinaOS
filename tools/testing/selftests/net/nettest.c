@@ -10,7 +10,7 @@
 #include <sys/ioctl.h>
 #include <sys/socket.h>
 #include <sys/wait.h>
-#include <linux/tcp.h>
+#include <linaos/tcp.h>
 #include <arpa/inet.h>
 #include <net/if.h>
 #include <netinet/in.h>

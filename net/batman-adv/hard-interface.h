@@ -9,13 +9,13 @@
 
 #include "main.h"
 
-#include <linux/compiler.h>
-#include <linux/kref.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/kref.h>
+#include <linaos/netdevice.h>
+#include <linaos/notifier.h>
+#include <linaos/rcupdate.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
 #include <net/net_namespace.h>
 
 /**

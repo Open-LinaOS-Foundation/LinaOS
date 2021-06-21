@@ -5,22 +5,22 @@
  * Copyright 2010-2011 Analog Devices Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/list.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/list.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
 #include <asm/div64.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 #include "dds.h"
 
 #include "ad9834.h"

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/gfp.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
+#include <linaos/ata.h>
+#include <linaos/libata.h>
 
 #include <asm/dma.h>
 #include <asm/ecard.h>
@@ -625,7 +625,7 @@ static void __exit pata_icside_exit(void)
 	ecard_remove_driver(&pata_icside_driver);
 }
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.linaos.org.uk>");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("ICS PATA driver");
 

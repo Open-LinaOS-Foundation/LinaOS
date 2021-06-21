@@ -11,11 +11,11 @@
  *	Xinwei Kong <kong.kongxinwei@hisilicon.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

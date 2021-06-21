@@ -11,14 +11,14 @@
 #ifndef _CAVIUM_MMC_H_
 #define _CAVIUM_MMC_H_
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/mmc/host.h>
-#include <linux/of.h>
-#include <linux/scatterlist.h>
-#include <linux/semaphore.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/io.h>
+#include <linaos/mmc/host.h>
+#include <linaos/of.h>
+#include <linaos/scatterlist.h>
+#include <linaos/semaphore.h>
 
 #define CAVIUM_MAX_MMC		4
 

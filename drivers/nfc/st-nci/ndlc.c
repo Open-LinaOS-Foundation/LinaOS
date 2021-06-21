@@ -5,7 +5,7 @@
  * Copyright (C) 2014-2015  STMicroelectronics SAS. All rights reserved.
  */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <net/nfc/nci_core.h>
 
 #include "st-nci.h"

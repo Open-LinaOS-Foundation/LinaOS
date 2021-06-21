@@ -255,4 +255,4 @@ SWAP Page Table Helpers
 | make_migration_entry      | Creates a migration swapped entry (read or write)|
 +---------------------------+--------------------------------------------------+
 
-[1] https://lore.kernel.org/linux-mm/20181017020930.GN30832@redhat.com/
+[1] https://lore.kernel.org/linaos-mm/20181017020930.GN30832@redhat.com/

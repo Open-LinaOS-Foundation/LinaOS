@@ -14,15 +14,15 @@
  *  Copyright (C) 2010, Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 
 struct gpio_vibrator {
 	struct input_dev *input;

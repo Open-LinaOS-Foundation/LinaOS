@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/sched/mm.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/sched/mm.h>
 #include "ctree.h"
 #include "volumes.h"
 #include "zoned.h"

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  * Copyright (c) 2015, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/debugfs.h>
-#include <linux/completion.h>
-#include <linux/watchdog.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/debugfs.h>
+#include <linaos/completion.h>
+#include <linaos/watchdog.h>
 
-#include <linux/uuid.h>
-#include <linux/mei_cl_bus.h>
+#include <linaos/uuid.h>
+#include <linaos/mei_cl_bus.h>
 
 /*
  * iAMT Watchdog Device

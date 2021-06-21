@@ -6,10 +6,10 @@
  * Copyright (C) 2006 Lennert Buytenhek <buytenh@wantstofly.org>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
 
 #define IOP3XX_GPOE	0x0000
 #define IOP3XX_GPID	0x0004

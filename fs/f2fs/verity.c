@@ -24,7 +24,7 @@
  * since there can be a hole between i_size and the start of the Merkle tree.
  */
 
-#include <linux/f2fs_fs.h>
+#include <linaos/f2fs_fs.h>
 
 #include "f2fs.h"
 #include "xattr.h"

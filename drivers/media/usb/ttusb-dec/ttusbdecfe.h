@@ -2,13 +2,13 @@
 /*
  * TTUSB DEC Driver
  *
- * Copyright (C) 2003-2004 Alex Woods <linux-dvb@giblets.org>
+ * Copyright (C) 2003-2004 Alex Woods <linaos-dvb@giblets.org>
  */
 
 #ifndef TTUSBDECFE_H
 #define TTUSBDECFE_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct ttusbdecfe_config
 {

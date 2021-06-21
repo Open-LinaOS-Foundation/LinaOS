@@ -20,22 +20,22 @@
  * Vojtech Pavlik, Simunkova 1594, Prague 8, 182 00 Czech Republic
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/bitops.h>
+#include <linaos/gfp.h>
+#include <linaos/uaccess.h>
 
 #undef DEBUG
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 
 /*
  * Version information.

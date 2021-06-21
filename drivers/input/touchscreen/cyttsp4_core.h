@@ -15,15 +15,15 @@
 #ifndef _LINUX_CYTTSP4_CORE_H
 #define _LINUX_CYTTSP4_CORE_H
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/platform_data/cyttsp4.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
+#include <linaos/module.h>
+#include <linaos/stringify.h>
+#include <linaos/types.h>
+#include <linaos/platform_data/cyttsp4.h>
 
 #define CY_REG_BASE			0x00
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * w83l786ng.c - Linux kernel driver for hardware monitoring
+ * w83l786ng.c - LinaOS kernel driver for hardware monitoring
  * Copyright (c) 2007 Kevin Lo <kevlo@kevlo.org>
  */
 
@@ -11,16 +11,16 @@
  * w83l786ng	3	2	2	2	0x7b	0x5ca3	yes	no
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-vid.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-vid.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/jiffies.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2e, 0x2f, I2C_CLIENT_END };

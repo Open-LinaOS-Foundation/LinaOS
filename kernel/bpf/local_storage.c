@@ -1,13 +1,13 @@
 //SPDX-License-Identifier: GPL-2.0
-#include <linux/bpf-cgroup.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/bug.h>
-#include <linux/filter.h>
-#include <linux/mm.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <uapi/linux/btf.h>
+#include <linaos/bpf-cgroup.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
+#include <linaos/bug.h>
+#include <linaos/filter.h>
+#include <linaos/mm.h>
+#include <linaos/rbtree.h>
+#include <linaos/slab.h>
+#include <uapi/linaos/btf.h>
 
 #ifdef CONFIG_CGROUP_BPF
 

@@ -10,7 +10,7 @@ Documentation/devicetree/bindings/mfd/mt6397.txt
 
 Required properties:
 - compatible: "mediatek,mt6397-keys" or "mediatek,mt6323-keys"
-- linux,keycodes: See Documentation/devicetree/bindings/input/input.yaml
+- linaos,keycodes: See Documentation/devicetree/bindings/input/input.yaml
 
 Optional Properties:
 - wakeup-source: See Documentation/devicetree/bindings/power/wakeup-source.txt
@@ -31,12 +31,12 @@ Example:
 			power-off-time-sec = <0>;
 
 			power {
-				linux,keycodes = <116>;
+				linaos,keycodes = <116>;
 				wakeup-source;
 			};
 
 			home {
-				linux,keycodes = <114>;
+				linaos,keycodes = <114>;
 			};
 		};
 

@@ -7,18 +7,18 @@
  *				Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/mutex.h>
-#include <linux/bitmap.h>
-#include <linux/rwsem.h>
-#include <linux/idr.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/mutex.h>
+#include <linaos/bitmap.h>
+#include <linaos/rwsem.h>
+#include <linaos/idr.h>
 #include <net/sock.h>
 #include <net/genetlink.h>
 

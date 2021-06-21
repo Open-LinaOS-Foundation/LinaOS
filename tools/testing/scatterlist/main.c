@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 #define MAX_PAGES (64)
 

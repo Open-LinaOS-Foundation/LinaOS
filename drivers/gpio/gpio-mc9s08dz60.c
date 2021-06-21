@@ -5,11 +5,11 @@
  * Author: Wu Guoxing <b39297@freescale.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/gpio/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio/driver.h>
 
 #define GPIO_GROUP_NUM 2
 #define GPIO_NUM_PER_GROUP 8

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/wmt_ge_rops.c
+ *  linaos/drivers/video/wmt_ge_rops.c
  *
  *  Accelerators for raster operations using WonderMedia Graphics Engine
  *
  *  Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/fb.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/fb.h>
+#include <linaos/platform_device.h>
 #include "core/fb_draw.h"
 #include "wmt_ge_rops.h"
 

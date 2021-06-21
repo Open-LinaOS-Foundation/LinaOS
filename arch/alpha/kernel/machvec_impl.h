@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	linux/arch/alpha/kernel/machvec_impl.h
+ *	linaos/arch/alpha/kernel/machvec_impl.h
  *
  *	Copyright (C) 1997, 1998  Richard Henderson
  *

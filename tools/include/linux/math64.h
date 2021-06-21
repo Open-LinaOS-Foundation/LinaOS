@@ -2,7 +2,7 @@
 #ifndef _LINUX_MATH64_H
 #define _LINUX_MATH64_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef __x86_64__
 static inline u64 mul_u64_u64_div64(u64 a, u64 b, u64 c)

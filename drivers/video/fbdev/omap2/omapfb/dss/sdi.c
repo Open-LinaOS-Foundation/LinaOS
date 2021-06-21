@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/sdi.c
+ * linaos/drivers/video/omap2/dss/sdi.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -8,15 +8,15 @@
 
 #define DSS_SUBSYS_NAME "SDI"
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/component.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/export.h>
+#include <linaos/platform_device.h>
+#include <linaos/string.h>
+#include <linaos/of.h>
+#include <linaos/component.h>
 
 #include <video/omapfb_dss.h>
 #include "dss.h"

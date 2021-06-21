@@ -4,9 +4,9 @@
  * Author: Pi-Cheng Chen <pi-cheng.chen@linaro.org>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/slab.h>
 
 #include "clk-mtk.h"
 #include "clk-cpumux.h"

@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/sort.h>
+#include <linaos/sort.h>
 
 #include "gt/intel_gt.h"
 #include "gt/intel_engine_user.h"

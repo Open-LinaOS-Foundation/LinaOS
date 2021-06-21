@@ -3,13 +3,13 @@
  * store hypervisor information instruction emulation functions.
  *
  * Copyright IBM Corp. 2016
- * Author(s): Janosch Frank <frankja@linux.vnet.ibm.com>
+ * Author(s): Janosch Frank <frankja@linaos.vnet.ibm.com>
  */
-#include <linux/errno.h>
-#include <linux/pagemap.h>
-#include <linux/vmalloc.h>
-#include <linux/syscalls.h>
-#include <linux/mutex.h>
+#include <linaos/errno.h>
+#include <linaos/pagemap.h>
+#include <linaos/vmalloc.h>
+#include <linaos/syscalls.h>
+#include <linaos/mutex.h>
 #include <asm/asm-offsets.h>
 #include <asm/sclp.h>
 #include <asm/diag.h>

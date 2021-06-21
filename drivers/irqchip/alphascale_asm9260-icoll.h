@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Copyright (C) 2014 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (C) 2014 Oleksij Rempel <linaos@rempel-privat.de>
  */
 
 #ifndef _ALPHASCALE_ASM9260_ICOLL_H

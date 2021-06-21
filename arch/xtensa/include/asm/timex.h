@@ -24,7 +24,7 @@
 # define LINUX_TIMER     2
 # define LINUX_TIMER_INT XCHAL_TIMER2_INTERRUPT
 #else
-# error "Bad timer number for Linux configurations!"
+# error "Bad timer number for LinaOS configurations!"
 #endif
 
 extern unsigned long ccount_freq;
@@ -49,12 +49,12 @@ static inline void set_ccount (unsigned long ccount)
 	xtensa_set_sr(ccount, ccount);
 }
 
-static inline unsigned long get_linux_timer (void)
+static inline unsigned long get_linaos_timer (void)
 {
 	return xtensa_get_sr(SREG_CCOMPARE + LINUX_TIMER);
 }
 
-static inline void set_linux_timer (unsigned long ccompare)
+static inline void set_linaos_timer (unsigned long ccompare)
 {
 	xtensa_set_sr(ccompare, SREG_CCOMPARE + LINUX_TIMER);
 }

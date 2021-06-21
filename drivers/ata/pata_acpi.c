@@ -5,16 +5,16 @@
  *	(c) 2007 Red Hat
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/acpi.h>
-#include <linux/libata.h>
-#include <linux/ata.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/gfp.h>
+#include <linaos/acpi.h>
+#include <linaos/libata.h>
+#include <linaos/ata.h>
 #include <scsi/scsi_host.h>
 
 #define DRV_NAME	"pata_acpi"

@@ -9,23 +9,23 @@
  * Copyright:	(C) 2011 Texas Instruments, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/twl6040.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_platform.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/twl6040.h>
+#include <linaos/regulator/consumer.h>
 
 #define VIBRACTRL_MEMBER(reg) ((reg == TWL6040_REG_VIBCTLL) ? 0 : 1)
 #define TWL6040_NUM_SUPPLIES	(2)

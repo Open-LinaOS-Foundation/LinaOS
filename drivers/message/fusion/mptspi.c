@@ -1,10 +1,10 @@
 /*
- *  linux/drivers/message/fusion/mptspi.c
+ *  linaos/drivers/message/fusion/mptspi.c
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinaOS@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -44,18 +44,18 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>	/* for mdelay */
-#include <linux/interrupt.h>
-#include <linux/reboot.h>	/* notifier code */
-#include <linux/workqueue.h>
-#include <linux/raid_class.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/kdev_t.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>	/* for mdelay */
+#include <linaos/interrupt.h>
+#include <linaos/reboot.h>	/* notifier code */
+#include <linaos/workqueue.h>
+#include <linaos/raid_class.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -1432,7 +1432,7 @@ mptspi_probe(struct pci_dev *pdev, const struct pci_device_id *id)
 	sh->max_cmd_len = 16;
 
 	/* Yikes!  This is important!
-	 * Otherwise, by default, linux
+	 * Otherwise, by default, linaos
 	 * only scans target IDs 0-7!
 	 * pfactsN->MaxDevices unreliable
 	 * (not supported in early

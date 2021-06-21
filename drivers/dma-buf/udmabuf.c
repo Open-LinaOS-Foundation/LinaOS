@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cred.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/memfd.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/udmabuf.h>
+#include <linaos/cred.h>
+#include <linaos/device.h>
+#include <linaos/dma-buf.h>
+#include <linaos/highmem.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/memfd.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/slab.h>
+#include <linaos/udmabuf.h>
 
 static const u32    list_limit = 1024;  /* udmabuf_create_list->count limit */
 static const size_t size_limit_mb = 64; /* total dmabuf size, in megabytes  */

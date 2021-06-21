@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/fsl_devices.h
+ * include/linaos/fsl_devices.h
  *
  * Definitions for any platform device related flags or structures for
  * Freescale processor devices
@@ -17,7 +17,7 @@
 				PHY CLK to become stable - 10ms*/
 #define FSL_USB_PHY_CLK_TIMEOUT	10000	/* uSec */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Some conventions on how we handle peripherals on Freescale chips

@@ -6,16 +6,16 @@
  *	Lokesh Vutla <lokeshvutla@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/soc/ti/ti_sci_protocol.h>
 
 /**
  * struct ti_sci_intr_irq_domain - Structure representing a TISCI based
@@ -102,7 +102,7 @@ static int ti_sci_intr_xlate_irq(struct ti_sci_intr_irq_domain *intr, u32 irq)
 /**
  * ti_sci_intr_irq_domain_free() - Free the specified IRQs from the domain.
  * @domain:	Domain to which the irqs belong
- * @virq:	Linux virtual IRQ to be freed.
+ * @virq:	LinaOS virtual IRQ to be freed.
  * @nr_irqs:	Number of continuous irqs to be freed
  */
 static void ti_sci_intr_irq_domain_free(struct irq_domain *domain,
@@ -126,7 +126,7 @@ static void ti_sci_intr_irq_domain_free(struct irq_domain *domain,
 /**
  * ti_sci_intr_alloc_parent_irq() - Allocate parent IRQ
  * @domain:	Pointer to the interrupt router IRQ domain
- * @virq:	Corresponding Linux virtual IRQ number
+ * @virq:	Corresponding LinaOS virtual IRQ number
  * @hwirq:	Corresponding hwirq for the IRQ within this IRQ domain
  *
  * Returns intr output irq if all went well else appropriate error pointer.
@@ -185,7 +185,7 @@ err_irqs:
 /**
  * ti_sci_intr_irq_domain_alloc() - Allocate Interrupt router IRQs
  * @domain:	Point to the interrupt router IRQ domain
- * @virq:	Corresponding Linux virtual IRQ number
+ * @virq:	Corresponding LinaOS virtual IRQ number
  * @nr_irqs:	Continuous irqs to be allocated
  * @data:	Pointer to firmware specifier
  *

@@ -45,16 +45,16 @@
  *
  */
 
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/prefetch.h>
+#include <linaos/spinlock.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/prefetch.h>
 #include <rdma/ib_verbs.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "hfi.h"
 #include "trace.h"

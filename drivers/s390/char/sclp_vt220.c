@@ -7,27 +7,27 @@
  * Author(s): Peter Oberparleiter <Peter.Oberparleiter@de.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/kdev_t.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
+#include <linaos/kernel.h>
+#include <linaos/sysrq.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/major.h>
+#include <linaos/console.h>
+#include <linaos/kdev_t.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "sclp.h"
 #include "ctrlchar.h"
 
@@ -729,7 +729,7 @@ static const struct tty_operations sclp_vt220_ops = {
 };
 
 /*
- * Register driver with SCLP and Linux and initialize internal tty structures.
+ * Register driver with SCLP and LinaOS and initialize internal tty structures.
  */
 static int __init sclp_vt220_tty_init(void)
 {
@@ -882,7 +882,7 @@ sclp_vt220_con_init(void)
 	rc = __sclp_vt220_init(sclp_console_pages);
 	if (rc)
 		return rc;
-	/* Attach linux console */
+	/* Attach linaos console */
 	atomic_notifier_chain_register(&panic_notifier_list, &on_panic_nb);
 	register_reboot_notifier(&on_reboot_nb);
 	register_console(&sclp_vt220_console);

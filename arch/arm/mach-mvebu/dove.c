@@ -8,10 +8,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/mbus.h>
-#include <linux/of.h>
-#include <linux/soc/dove/pmu.h>
+#include <linaos/init.h>
+#include <linaos/mbus.h>
+#include <linaos/of.h>
+#include <linaos/soc/dove/pmu.h>
 #include <asm/hardware/cache-tauros2.h>
 #include <asm/mach/arch.h>
 #include "common.h"

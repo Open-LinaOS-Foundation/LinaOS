@@ -13,7 +13,7 @@
 #ifndef __CLK_MVEBU_COMMON_H_
 #define __CLK_MVEBU_COMMON_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 extern spinlock_t ctrl_gating_lock;
 

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2019 HiSilicon Limited. */
-#include <linux/bitfield.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <linaos/bitfield.h>
+#include <linaos/dmaengine.h>
+#include <linaos/init.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
 #include "virt-dma.h"
 
 #define HISI_DMA_SQ_BASE_L		0x0

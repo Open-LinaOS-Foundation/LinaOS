@@ -19,18 +19,18 @@
 
 #define pr_fmt(fmt) "dvbdev: " fmt
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/cdev.h>
+#include <linaos/mutex.h>
 #include <media/dvbdev.h>
 
 /* Due to enum tuner_pad_index */

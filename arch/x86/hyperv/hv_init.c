@@ -7,27 +7,27 @@
  * Author : K. Y. Srinivasan <kys@microsoft.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/types.h>
-#include <linux/bitfield.h>
+#include <linaos/acpi.h>
+#include <linaos/efi.h>
+#include <linaos/types.h>
+#include <linaos/bitfield.h>
 #include <asm/apic.h>
 #include <asm/desc.h>
 #include <asm/hypervisor.h>
 #include <asm/hyperv-tlfs.h>
 #include <asm/mshyperv.h>
 #include <asm/idtentry.h>
-#include <linux/kexec.h>
-#include <linux/version.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/hyperv.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/cpuhotplug.h>
-#include <linux/syscore_ops.h>
+#include <linaos/kexec.h>
+#include <linaos/version.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/hyperv.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/syscore_ops.h>
 #include <clocksource/hyperv_timer.h>
-#include <linux/highmem.h>
+#include <linaos/highmem.h>
 
 int hyperv_init_cpuhp;
 u64 hv_current_partition_id = ~0ull;

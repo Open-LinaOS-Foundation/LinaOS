@@ -8,12 +8,12 @@
  *	      Ajit Pal Singh <ajitpal.singh@st.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/sched_clock.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/init.h>
+#include <linaos/of_address.h>
+#include <linaos/sched_clock.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/mfd/st-lpc.h>
 

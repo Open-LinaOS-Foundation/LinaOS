@@ -6,7 +6,7 @@
 #if !defined(_TRACE_FSI_MASTER_GPIO_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FSI_MASTER_GPIO_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(fsi_master_gpio_in,
 	TP_PROTO(const struct fsi_master_gpio *master, int bits, uint64_t msg),

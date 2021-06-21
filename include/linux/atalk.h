@@ -4,7 +4,7 @@
 
 
 #include <net/sock.h>
-#include <uapi/linux/atalk.h>
+#include <uapi/linaos/atalk.h>
 
 struct atalk_route {
 	struct net_device  *dev;

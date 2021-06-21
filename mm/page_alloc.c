@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/page_alloc.c
+ *  linaos/mm/page_alloc.c
  *
  *  Manages the free list, the system allocates free pages here.
  *  Note that kmalloc() lives in slab.c
@@ -15,63 +15,63 @@
  *          (lots of bits borrowed from Ingo Molnar & Andrew Morton)
  */
 
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/jiffies.h>
-#include <linux/memblock.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/kasan.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/pagevec.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/ratelimit.h>
-#include <linux/oom.h>
-#include <linux/topology.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/memory_hotplug.h>
-#include <linux/nodemask.h>
-#include <linux/vmalloc.h>
-#include <linux/vmstat.h>
-#include <linux/mempolicy.h>
-#include <linux/memremap.h>
-#include <linux/stop_machine.h>
-#include <linux/random.h>
-#include <linux/sort.h>
-#include <linux/pfn.h>
-#include <linux/backing-dev.h>
-#include <linux/fault-inject.h>
-#include <linux/page-isolation.h>
-#include <linux/debugobjects.h>
-#include <linux/kmemleak.h>
-#include <linux/compaction.h>
+#include <linaos/stddef.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/swap.h>
+#include <linaos/interrupt.h>
+#include <linaos/pagemap.h>
+#include <linaos/jiffies.h>
+#include <linaos/memblock.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/kasan.h>
+#include <linaos/module.h>
+#include <linaos/suspend.h>
+#include <linaos/pagevec.h>
+#include <linaos/blkdev.h>
+#include <linaos/slab.h>
+#include <linaos/ratelimit.h>
+#include <linaos/oom.h>
+#include <linaos/topology.h>
+#include <linaos/sysctl.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuset.h>
+#include <linaos/memory_hotplug.h>
+#include <linaos/nodemask.h>
+#include <linaos/vmalloc.h>
+#include <linaos/vmstat.h>
+#include <linaos/mempolicy.h>
+#include <linaos/memremap.h>
+#include <linaos/stop_machine.h>
+#include <linaos/random.h>
+#include <linaos/sort.h>
+#include <linaos/pfn.h>
+#include <linaos/backing-dev.h>
+#include <linaos/fault-inject.h>
+#include <linaos/page-isolation.h>
+#include <linaos/debugobjects.h>
+#include <linaos/kmemleak.h>
+#include <linaos/compaction.h>
 #include <trace/events/kmem.h>
 #include <trace/events/oom.h>
-#include <linux/prefetch.h>
-#include <linux/mm_inline.h>
-#include <linux/mmu_notifier.h>
-#include <linux/migrate.h>
-#include <linux/hugetlb.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/mm.h>
-#include <linux/page_owner.h>
-#include <linux/kthread.h>
-#include <linux/memcontrol.h>
-#include <linux/ftrace.h>
-#include <linux/lockdep.h>
-#include <linux/nmi.h>
-#include <linux/psi.h>
-#include <linux/padata.h>
-#include <linux/khugepaged.h>
-#include <linux/buffer_head.h>
+#include <linaos/prefetch.h>
+#include <linaos/mm_inline.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/migrate.h>
+#include <linaos/hugetlb.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/mm.h>
+#include <linaos/page_owner.h>
+#include <linaos/kthread.h>
+#include <linaos/memcontrol.h>
+#include <linaos/ftrace.h>
+#include <linaos/lockdep.h>
+#include <linaos/nmi.h>
+#include <linaos/psi.h>
+#include <linaos/padata.h>
+#include <linaos/khugepaged.h>
+#include <linaos/buffer_head.h>
 #include <asm/sections.h>
 #include <asm/tlbflush.h>
 #include <asm/div64.h>
@@ -134,7 +134,7 @@ DEFINE_STATIC_KEY_TRUE(vm_numa_stat_key);
  * N.B., Do NOT reference the '_numa_mem_' per cpu variable directly.
  * It will not be defined when CONFIG_HAVE_MEMORYLESS_NODES is not defined.
  * Use the accessor functions set_numa_mem(), numa_mem_id() and cpu_to_mem()
- * defined in <linux/topology.h>.
+ * defined in <linaos/topology.h>.
  */
 DEFINE_PER_CPU(int, _numa_mem_);		/* Kernel "local memory" node */
 EXPORT_PER_CPU_SYMBOL(_numa_mem_);
@@ -7085,7 +7085,7 @@ void __init set_pageblock_order(void)
 /*
  * When CONFIG_HUGETLB_PAGE_SIZE_VARIABLE is not set, set_pageblock_order()
  * is unused as pageblock_order is set at compile-time. See
- * include/linux/pageblock-flags.h for the values of pageblock_order based on
+ * include/linaos/pageblock-flags.h for the values of pageblock_order based on
  * the kernel config
  */
 void __init set_pageblock_order(void)
@@ -7899,7 +7899,7 @@ void __init mem_init_print_info(void)
 	 * Detect special cases and adjust section sizes accordingly:
 	 * 1) .init.* may be embedded into .data sections
 	 * 2) .init.text.* may be out of [__init_begin, __init_end],
-	 *    please refer to arch/tile/kernel/vmlinux.lds.S.
+	 *    please refer to arch/tile/kernel/vmlinaos.lds.S.
 	 * 3) .rodata.* may be embedded into .text or .data sections.
 	 */
 #define adj_init_size(start, end, size, pos, adj) \

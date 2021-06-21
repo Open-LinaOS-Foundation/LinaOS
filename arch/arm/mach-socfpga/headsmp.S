@@ -4,8 +4,8 @@
  *  Copyright (c) u-boot contributors
  *  Copyright (c) 2012 Pavel Machek <pavel@denx.de>
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/memory.h>
 #include <asm/assembler.h>
 

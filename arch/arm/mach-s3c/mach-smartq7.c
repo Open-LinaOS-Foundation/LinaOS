@@ -2,13 +2,13 @@
 //
 // Copyright (C) 2010 Maurus Cuelenaere
 
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

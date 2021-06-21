@@ -10,14 +10,14 @@
  * SMC call initial support done by Grzegorz Jaszczyk.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
 
 #define MVEBU_A3700_COMPHY_LANES		3
 #define MVEBU_A3700_COMPHY_PORTS		2

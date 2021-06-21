@@ -6,7 +6,7 @@
  * TLB flushing for 64-bit hash-MMU CPUs
  */
 
-#include <linux/percpu.h>
+#include <linaos/percpu.h>
 #include <asm/page.h>
 
 #define PPC64_TLB_BATCH_NR 192

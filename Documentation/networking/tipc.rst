@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =================
-Linux Kernel TIPC
+LinaOS Kernel TIPC
 =================
 
 TIPC (Transparent Inter Process Communication) is a protocol that is

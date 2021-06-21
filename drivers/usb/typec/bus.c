@@ -3,10 +3,10 @@
  * Bus for USB Type-C Alternate Modes
  *
  * Copyright (C) 2018 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  */
 
-#include <linux/usb/pd_vdo.h>
+#include <linaos/usb/pd_vdo.h>
 
 #include "bus.h"
 #include "class.h"

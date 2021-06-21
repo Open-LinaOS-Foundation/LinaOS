@@ -8,15 +8,15 @@
 
 #define pr_fmt(fmt) "ep93xx " KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/clkdev.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <linaos/kernel.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/clkdev.h>
+#include <linaos/soc/cirrus/ep93xx.h>
 
 #include "hardware.h"
 

@@ -3,7 +3,7 @@
  * SH7760/SH7763 LCDC Framebuffer driver.
  *
  * (c) 2006-2008 MSC Vertriebsges.m.b.H.,
- *             Manuel Lauss <mano@roarinelk.homelinux.net>
+ *             Manuel Lauss <mano@roarinelk.homelinaos.net>
  * (c) 2008 Nobuhiro Iwamatsu <iwamatsu.nobuhiro@renesas.com>
  *
  * PLEASE HAVE A LOOK AT Documentation/fb/sh7760fb.rst!
@@ -14,16 +14,16 @@
  * sh7760_setcolreg get from drivers/video/sh_mobile_lcdcfb.c
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/fb.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <asm/sh7760fb.h>
 

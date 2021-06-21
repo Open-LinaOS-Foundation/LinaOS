@@ -5,20 +5,20 @@
  * Copyright (c) 2013, Carlo Caione <carlo.caione@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/types.h>
 
 #define SUNXI_LOSC_CTRL				0x0000
 #define SUNXI_LOSC_CTRL_RTC_HMS_ACC		BIT(8)

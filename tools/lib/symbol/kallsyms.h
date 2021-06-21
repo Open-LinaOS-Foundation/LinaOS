@@ -3,8 +3,8 @@
 #define __TOOLS_KALLSYMS_H_ 1
 
 #include <elf.h>
-#include <linux/ctype.h>
-#include <linux/types.h>
+#include <linaos/ctype.h>
+#include <linaos/types.h>
 
 #ifndef KSYM_NAME_LEN
 #define KSYM_NAME_LEN 256

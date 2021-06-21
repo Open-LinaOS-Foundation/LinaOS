@@ -11,7 +11,7 @@
 #ifndef _EXYNOS_DRM_DRV_H_
 #define _EXYNOS_DRM_DRV_H_
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_device.h>

@@ -81,7 +81,7 @@ Module Parameters
 
 The kvm module has 3 tuneable module parameters to adjust the global max
 polling interval as well as the rate at which the polling interval is grown and
-shrunk. These variables are defined in include/linux/kvm_host.h and as module
+shrunk. These variables are defined in include/linaos/kvm_host.h and as module
 parameters in virt/kvm/kvm_main.c, or arch/powerpc/kvm/book3s_hv.c in the
 powerpc kvm-hv case.
 

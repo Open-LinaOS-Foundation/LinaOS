@@ -6,8 +6,8 @@
  * Author: Alex Bennée <alex.bennee@linaro.org>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/hw_breakpoint.h>
+#include <linaos/kvm_host.h>
+#include <linaos/hw_breakpoint.h>
 
 #include <asm/debug-monitors.h>
 #include <asm/kvm_asm.h>

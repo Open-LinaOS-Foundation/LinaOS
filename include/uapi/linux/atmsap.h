@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* atmsap.h - ATM Service Access Point addressing definitions */
 
 /* Written 1995-1999 by Werner Almesberger, EPFL LRC/ICA */
@@ -7,7 +7,7 @@
 #ifndef _LINUX_ATMSAP_H
 #define _LINUX_ATMSAP_H
 
-#include <linux/atmapi.h>
+#include <linaos/atmapi.h>
 
 /*
  * BEGIN_xx and END_xx markers are used for automatic generation of

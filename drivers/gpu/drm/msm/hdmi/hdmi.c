@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014 The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_gpio.h>
 
 #include <sound/hdmi-codec.h>
 #include "hdmi.h"

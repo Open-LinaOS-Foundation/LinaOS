@@ -3,12 +3,12 @@
  * Add configfs and memory store: Kyungchan Koh <kkc6196@fb.com> and
  * Shaohua Li <shli@fb.com>
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
 #include "null_blk.h"
 
 #define PAGE_SECTORS_SHIFT	(PAGE_SHIFT - SECTOR_SHIFT)

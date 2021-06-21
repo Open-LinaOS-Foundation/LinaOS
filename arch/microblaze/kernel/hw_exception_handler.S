@@ -7,10 +7,10 @@
  * Copyright (C) 2008-2009 Michal Simek <monstr@monstr.eu>
  * Copyright (C) 2008-2009 PetaLogix
  *
- * uClinux customisation (C) 2005 John Williams
+ * uClinaos customisation (C) 2005 John Williams
  *
  * MMU code derived from arch/ppc/kernel/head_4xx.S:
- *	Copyright (C) 1995-1996 Gary Thomas <gdt@linuxppc.org>
+ *	Copyright (C) 1995-1996 Gary Thomas <gdt@linaosppc.org>
  *		Initial PowerPC version.
  *	Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
  *		Rewritten for PReP
@@ -67,8 +67,8 @@
 
 #include <asm/entry.h>
 #include <asm/current.h>
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/pgtable.h>
 
 #include <asm/mmu.h>
 #include <asm/signal.h>
@@ -529,19 +529,19 @@ ex_handler_done:
 		bsrli	r6, r3, PTE_SHIFT /* Compute PTE address */
 		andi	r6, r6, PAGE_SIZE - 4
 		or	r5, r5, r6
-		lwi	r4, r5, 0		/* Get Linux PTE */
+		lwi	r4, r5, 0		/* Get LinaOS PTE */
 
 		andi	r6, r4, _PAGE_RW	/* Is it writeable? */
 		beqi	r6, ex2			/* Bail if not */
 
 		/* Update 'changed' */
 		ori	r4, r4, _PAGE_DIRTY|_PAGE_ACCESSED|_PAGE_HWWRITE
-		swi	r4, r5, 0		/* Update Linux page table */
+		swi	r4, r5, 0		/* Update LinaOS page table */
 
-		/* Most of the Linux PTE is ready to load into the TLB LO.
+		/* Most of the LinaOS PTE is ready to load into the TLB LO.
 		 * We set ZSEL, where only the LS-bit determines user access.
 		 * We set execute, because we don't have the granularity to
-		 * properly set this at the page level (Linux problem).
+		 * properly set this at the page level (LinaOS problem).
 		 * If shared is set, we cause a zero PID->TID load.
 		 * Many of these bits are software only. Bits we don't set
 		 * here we (properly should) assume have the appropriate value.
@@ -630,7 +630,7 @@ ex_handler_done:
 		bsrli	r6, r3, PTE_SHIFT /* Compute PTE address */
 		andi	r6, r6, PAGE_SIZE - 4
 		or	r5, r5, r6
-		lwi	r4, r5, 0		/* Get Linux PTE */
+		lwi	r4, r5, 0		/* Get LinaOS PTE */
 
 		andi	r6, r4, _PAGE_PRESENT
 		beqi	r6, ex7
@@ -638,10 +638,10 @@ ex_handler_done:
 		ori	r4, r4, _PAGE_ACCESSED
 		swi	r4, r5, 0
 
-		/* Most of the Linux PTE is ready to load into the TLB LO.
+		/* Most of the LinaOS PTE is ready to load into the TLB LO.
 		 * We set ZSEL, where only the LS-bit determines user access.
 		 * We set execute, because we don't have the granularity to
-		 * properly set this at the page level (Linux problem).
+		 * properly set this at the page level (LinaOS problem).
 		 * If shared is set, we cause a zero PID->TID load.
 		 * Many of these bits are software only. Bits we don't set
 		 * here we (properly should) assume have the appropriate value.
@@ -701,7 +701,7 @@ ex_handler_done:
 		bsrli	r6, r3, PTE_SHIFT /* Compute PTE address */
 		andi	r6, r6, PAGE_SIZE - 4
 		or	r5, r5, r6
-		lwi	r4, r5, 0		/* Get Linux PTE */
+		lwi	r4, r5, 0		/* Get LinaOS PTE */
 
 		andi	r6, r4, _PAGE_PRESENT
 		beqi	r6, ex10
@@ -709,10 +709,10 @@ ex_handler_done:
 		ori	r4, r4, _PAGE_ACCESSED
 		swi	r4, r5, 0
 
-		/* Most of the Linux PTE is ready to load into the TLB LO.
+		/* Most of the LinaOS PTE is ready to load into the TLB LO.
 		 * We set ZSEL, where only the LS-bit determines user access.
 		 * We set execute, because we don't have the granularity to
-		 * properly set this at the page level (Linux problem).
+		 * properly set this at the page level (LinaOS problem).
 		 * If shared is set, we cause a zero PID->TID load.
 		 * Many of these bits are software only. Bits we don't set
 		 * here we (properly should) assume have the appropriate value.
@@ -732,7 +732,7 @@ ex_handler_done:
 
 /* Both the instruction and data TLB miss get to this point to load the TLB.
  *	r3 - EA of fault
- *	r4 - TLB LO (info from Linux PTE)
+ *	r4 - TLB LO (info from LinaOS PTE)
  *	r5, r6 - available to use
  *	PID - loaded with proper value when we get here
  *	Upon exit, we reload everything and RFI.

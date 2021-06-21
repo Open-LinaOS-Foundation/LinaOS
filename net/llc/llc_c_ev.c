@@ -33,7 +33,7 @@
  *
  * See the GNU General Public License for more details.
  */
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/llc_conn.h>
 #include <net/llc_sap.h>
 #include <net/sock.h>

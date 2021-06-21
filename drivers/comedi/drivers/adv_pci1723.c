@@ -3,7 +3,7 @@
  * adv_pci1723.c
  * Comedi driver for the Advantech PCI-1723 card.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -31,7 +31,7 @@
  * 3. Implement calibration.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedi_pci.h"
 

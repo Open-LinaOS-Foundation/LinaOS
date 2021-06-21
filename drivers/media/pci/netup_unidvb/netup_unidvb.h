@@ -9,9 +9,9 @@
  * Copyright (C) 2014 Abylay Ospan <aospan@netup.ru>
  */
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
+#include <linaos/pci.h>
+#include <linaos/i2c.h>
+#include <linaos/workqueue.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/videobuf2-dvb.h>

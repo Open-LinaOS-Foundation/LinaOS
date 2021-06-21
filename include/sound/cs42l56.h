@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/cs42l56.h -- Platform data for CS42L56
+ * linaos/sound/cs42l56.h -- Platform data for CS42L56
  *
  * Copyright (c) 2014 Cirrus Logic Inc.
  */

@@ -10,8 +10,8 @@
 #ifndef __XGENE_ENET_CLE_H__
 #define __XGENE_ENET_CLE_H__
 
-#include <linux/io.h>
-#include <linux/random.h>
+#include <linaos/io.h>
+#include <linaos/random.h>
 
 /* Register offsets */
 #define INDADDR			0x04

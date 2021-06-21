@@ -7,11 +7,11 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linaos/device.h>
+#include <linaos/interconnect.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
 #include <dt-bindings/interconnect/qcom,sdx55.h>
 
 #include "bcm-voter.h"

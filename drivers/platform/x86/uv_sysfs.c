@@ -6,11 +6,11 @@
  *  Copyright (c) Justin Ernst
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/kobject.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/kobject.h>
 #include <asm/uv/bios.h>
 #include <asm/uv/uv.h>
 #include <asm/uv/uv_hub.h>

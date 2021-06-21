@@ -5,13 +5,13 @@
  * Copyright (C) 2012-2014 Intel Corporation. All rights reserved.
  *
  * Author: Yang, Bin <bin.yang@intel.com>
- * Author: Zhu, Lejun <lejun.zhu@linux.intel.com>
+ * Author: Zhu, Lejun <lejun.zhu@linaos.intel.com>
  */
 
 #ifndef __INTEL_SOC_PMIC_H__
 #define __INTEL_SOC_PMIC_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /**
  * struct intel_soc_pmic - Intel SoC PMIC data

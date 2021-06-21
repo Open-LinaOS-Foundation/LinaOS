@@ -14,15 +14,15 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6507x.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tps6507x.h>
 
 static const struct mfd_cell tps6507x_devs[] = {
 	{

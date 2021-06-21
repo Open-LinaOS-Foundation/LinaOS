@@ -5,12 +5,12 @@
  * Author: Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  */
 
-#include <linux/iova.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
+#include <linaos/iova.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/bitops.h>
+#include <linaos/cpu.h>
 
 /* The anchor node sits above the top of the usable address space */
 #define IOVA_ANCHOR	~0UL

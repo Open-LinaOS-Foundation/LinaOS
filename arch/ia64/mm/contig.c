@@ -7,19 +7,19 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>
  * Copyright (C) 2000, Rohit Seth <rohit.seth@intel.com>
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 2003 Silicon Graphics, Inc. All rights reserved.
  *
  * Routines used by ia64 machines with contiguous (or virtually contiguous)
  * memory.
  */
-#include <linux/efi.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/swap.h>
-#include <linux/sizes.h>
+#include <linaos/efi.h>
+#include <linaos/memblock.h>
+#include <linaos/mm.h>
+#include <linaos/nmi.h>
+#include <linaos/swap.h>
+#include <linaos/sizes.h>
 
 #include <asm/efi.h>
 #include <asm/meminit.h>

@@ -5,10 +5,10 @@
 #ifndef __BCM47XX_NVRAM_H
 #define __BCM47XX_NVRAM_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/vmalloc.h>
 
 #ifdef CONFIG_BCM47XX_NVRAM
 int bcm47xx_nvram_init_from_mem(u32 base, u32 lim);

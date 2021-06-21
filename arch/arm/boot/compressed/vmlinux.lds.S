@@ -2,7 +2,7 @@
 /*
  *  Copyright (C) 2000 Russell King
  */
-#include <asm/vmlinux.lds.h>
+#include <asm/vmlinaos.lds.h>
 
 #ifdef CONFIG_CPU_ENDIAN_BE8
 #define ZIMAGE_MAGIC(x) ( (((x) >> 24) & 0x000000ff) | \

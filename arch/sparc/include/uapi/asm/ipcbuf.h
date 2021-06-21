@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __SPARC_IPCBUF_H
 #define __SPARC_IPCBUF_H
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 
 /*
  * The ipc64_perm structure for sparc/sparc64 architecture.

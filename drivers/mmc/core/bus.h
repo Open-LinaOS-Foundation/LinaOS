@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/mmc/core/bus.h
+ *  linaos/drivers/mmc/core/bus.h
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2007 Pierre Ossman
@@ -8,7 +8,7 @@
 #ifndef _MMC_CORE_BUS_H
 #define _MMC_CORE_BUS_H
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 struct mmc_host;
 struct mmc_card;

@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
 
 #include "rvu_reg.h"
 #include "mbox.h"

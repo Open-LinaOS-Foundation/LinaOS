@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/io-mapping.h>
+#include <linaos/mm.h>
+#include <linaos/io-mapping.h>
 
 
 #include "i915_drv.h"

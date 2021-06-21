@@ -7,18 +7,18 @@
  */
 
 #include <dt-bindings/pinctrl/at91.h>
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/slab.h>
 #include "core.h"
 #include "pinconf.h"
 #include "pinctrl-utils.h"
@@ -1193,7 +1193,7 @@ static int atmel_pinctrl_probe(struct platform_device *pdev)
 					 handle_simple_irq);
 		irq_set_chip_data(irq, atmel_pioctrl);
 		dev_dbg(dev,
-			"atmel gpio irq domain: hwirq: %d, linux irq: %d\n",
+			"atmel gpio irq domain: hwirq: %d, linaos irq: %d\n",
 			i, irq);
 	}
 

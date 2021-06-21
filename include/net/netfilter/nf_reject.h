@@ -2,8 +2,8 @@
 #ifndef _NF_REJECT_H
 #define _NF_REJECT_H
 
-#include <linux/types.h>
-#include <uapi/linux/in.h>
+#include <linaos/types.h>
+#include <uapi/linaos/in.h>
 
 static inline bool nf_reject_verify_csum(__u8 proto)
 {

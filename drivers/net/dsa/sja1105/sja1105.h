@@ -5,12 +5,12 @@
 #ifndef _SJA1105_H
 #define _SJA1105_H
 
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
-#include <linux/dsa/sja1105.h>
-#include <linux/dsa/8021q.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/timecounter.h>
+#include <linaos/dsa/sja1105.h>
+#include <linaos/dsa/8021q.h>
 #include <net/dsa.h>
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include "sja1105_static_config.h"
 
 #define SJA1105_NUM_PORTS		5

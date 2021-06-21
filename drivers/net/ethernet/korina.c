@@ -33,31 +33,31 @@
  *  should stick to this procedure.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/iopoll.h>
-#include <linux/in.h>
-#include <linux/of_device.h>
-#include <linux/of_net.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/pgtable.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/sched.h>
+#include <linaos/ctype.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/iopoll.h>
+#include <linaos/in.h>
+#include <linaos/of_device.h>
+#include <linaos/of_net.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/platform_device.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/crc32.h>
+#include <linaos/pgtable.h>
+#include <linaos/clk.h>
 
 #define DRV_NAME	"korina"
 #define DRV_VERSION	"0.20"

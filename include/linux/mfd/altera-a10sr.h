@@ -10,11 +10,11 @@
 #ifndef __MFD_ALTERA_A10SR_H
 #define __MFD_ALTERA_A10SR_H
 
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/mfd/core.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/list.h>
+#include <linaos/mfd/core.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 /* Write registers are always on even addresses */
 #define  WRITE_REG_MASK              0xFE

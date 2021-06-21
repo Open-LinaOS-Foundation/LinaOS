@@ -116,7 +116,7 @@ static inline int cs5535_pic_unreqz_select_high(unsigned int group,
 #define AMD_VSA_SIG		0x4132  /* signature is ascii 'VSA2' */
 #define GSW_VSA_SIG		0x534d  /* General Software signature */
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 static inline int cs5535_has_vsa2(void)
 {

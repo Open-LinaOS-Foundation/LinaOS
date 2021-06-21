@@ -36,10 +36,10 @@
  * to lock the reader.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/scatterlist.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/stddef.h>
+#include <linaos/scatterlist.h>
 
 struct __kfifo {
 	unsigned int	in;

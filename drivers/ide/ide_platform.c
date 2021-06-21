@@ -7,16 +7,16 @@
  * Maintainer: Kumar Gala <galak@kernel.crashing.org>
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/ide.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/ata_platform.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/ide.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/ata_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 static void plat_ide_setup_ports(struct ide_hw *hw, void __iomem *base,
 				 void __iomem *ctrl,

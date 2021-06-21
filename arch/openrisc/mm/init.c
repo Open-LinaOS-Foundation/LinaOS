@@ -2,7 +2,7 @@
 /*
  * OpenRISC idle.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,22 +11,22 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>	/* for initrd_* */
-#include <linux/pagemap.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/smp.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/blkdev.h>	/* for initrd_* */
+#include <linaos/pagemap.h>
 
 #include <asm/pgalloc.h>
 #include <asm/dma.h>
@@ -73,7 +73,7 @@ static void __init map_ram(void)
 	pte_t *pte;
 	u64 i;
 	/* These mark extents of read-only kernel pages...
-	 * ...from vmlinux.lds.S
+	 * ...from vmlinaos.lds.S
 	 */
 
 	v = PAGE_OFFSET;

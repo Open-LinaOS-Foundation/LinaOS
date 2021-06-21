@@ -1,14 +1,14 @@
 
 /*
  *  Convert a logo in ASCII PNM format to C source suitable for inclusion in
- *  the Linux kernel
+ *  the LinaOS kernel
  *
- *  (C) Copyright 2001-2003 by Geert Uytterhoeven <geert@linux-m68k.org>
+ *  (C) Copyright 2001-2003 by Geert Uytterhoeven <geert@linaos-m68k.org>
  *
  *  --------------------------------------------------------------------------
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License. See the file COPYING in the main directory of the Linux
+ *  License. See the file COPYING in the main directory of the LinaOS
  *  distribution for more details.
  */
 
@@ -23,7 +23,7 @@
 
 static const char *programname;
 static const char *filename;
-static const char *logoname = "linux_logo";
+static const char *logoname = "linaos_logo";
 static const char *outputname;
 static FILE *out;
 
@@ -241,9 +241,9 @@ static void write_header(void)
     fputs(" *\n", out);
     fprintf(out, " *  It was automatically generated from %s\n", filename);
     fputs(" *\n", out);
-    fprintf(out, " *  Linux logo %s\n", logoname);
+    fprintf(out, " *  LinaOS logo %s\n", logoname);
     fputs(" */\n\n", out);
-    fputs("#include <linux/linux_logo.h>\n\n", out);
+    fputs("#include <linaos/linaos_logo.h>\n\n", out);
     fprintf(out, "static unsigned char %s_data[] __initdata = {\n",
 	    logoname);
 }
@@ -251,7 +251,7 @@ static void write_header(void)
 static void write_footer(void)
 {
     fputs("\n};\n\n", out);
-    fprintf(out, "const struct linux_logo %s __initconst = {\n", logoname);
+    fprintf(out, "const struct linaos_logo %s __initconst = {\n", logoname);
     fprintf(out, "\t.type\t\t= %s,\n", logo_types[logo_type]);
     fprintf(out, "\t.width\t\t= %d,\n", logo_width);
     fprintf(out, "\t.height\t\t= %d,\n", logo_height);
@@ -434,7 +434,7 @@ static void usage(void)
 	"\n"
 	"Valid options:\n"
 	"    -h          : display this usage information\n"
-	"    -n <name>   : specify logo name (default: linux_logo)\n"
+	"    -n <name>   : specify logo name (default: linaos_logo)\n"
 	"    -o <output> : output to file <output> instead of stdout\n"
 	"    -t <type>   : specify logo type, one of\n"
 	"                      mono    : monochrome black/white\n"

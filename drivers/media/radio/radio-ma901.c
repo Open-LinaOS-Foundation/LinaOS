@@ -4,23 +4,23 @@
  * into the USB port and an analog audio input or headphones, so this thing
  * only deals with initialization, frequency setting, volume.
  *
- * Copyright (c) 2012 Alexey Klimov <klimov.linux@gmail.com>
+ * Copyright (c) 2012 Alexey Klimov <klimov.linaos@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/videodev2.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <linaos/usb.h>
+#include <linaos/mutex.h>
 
-#define DRIVER_AUTHOR "Alexey Klimov <klimov.linux@gmail.com>"
+#define DRIVER_AUTHOR "Alexey Klimov <klimov.linaos@gmail.com>"
 #define DRIVER_DESC "Masterkit MA901 USB FM radio driver"
 #define DRIVER_VERSION "0.0.1"
 

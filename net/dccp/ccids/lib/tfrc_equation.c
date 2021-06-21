@@ -6,7 +6,7 @@
  *  Copyright (c) 2003 Nils-Erik Mattsson, Joacim Haggmark, Magnus Erixzon
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../../dccp.h"
 #include "tfrc.h"
 

@@ -18,7 +18,7 @@
 #ifndef __RSI_USB_INTF__
 #define __RSI_USB_INTF__
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 #include "rsi_main.h"
 #include "rsi_common.h"
 

@@ -16,7 +16,7 @@ int parse_libpfm_events_option(const struct option *opt, const char *str,
 void print_libpfm_events(bool name_only, bool long_desc);
 
 #else
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 static inline int parse_libpfm_events_option(
 	const struct option *opt __maybe_unused,

@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_INTEL_SCU_IPC_H_
 #define  _ASM_X86_INTEL_SCU_IPC_H_
 
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 struct device;
 struct intel_scu_ipc_dev;

@@ -3,13 +3,13 @@
  * Copyright (C) 2015, 2016 Cavium, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/of_pci.h>
-#include <linux/of.h>
-#include <linux/pci-ecam.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/of_pci.h>
+#include <linaos/of.h>
+#include <linaos/pci-ecam.h>
+#include <linaos/platform_device.h>
 
 #if defined(CONFIG_PCI_HOST_THUNDER_ECAM) || (defined(CONFIG_ACPI) && defined(CONFIG_PCI_QUIRKS))
 

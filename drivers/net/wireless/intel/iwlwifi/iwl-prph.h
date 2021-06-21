@@ -6,7 +6,7 @@
  */
 #ifndef	__iwl_prph_h__
 #define __iwl_prph_h__
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 /*
  * Registers in this file are internal, not PCI bus memory mapped.

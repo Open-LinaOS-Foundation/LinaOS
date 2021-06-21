@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/leds-pwm.c
+ * linaos/drivers/leds-pwm.c
  *
  * simple PWM based LED control
  *
@@ -9,14 +9,14 @@
  * based on leds-gpio.c by Raphael Assenat <raph@8d.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/leds.h>
+#include <linaos/err.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
 
 struct led_pwm {
 	const char	*name;

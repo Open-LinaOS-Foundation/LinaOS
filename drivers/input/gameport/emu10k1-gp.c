@@ -4,7 +4,7 @@
  */
 
 /*
- * EMU10k1 - SB Live / Audigy - gameport driver for Linux
+ * EMU10k1 - SB Live / Audigy - gameport driver for LinaOS
  */
 
 /*
@@ -12,11 +12,11 @@
 
 #include <asm/io.h>
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/gameport.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/gameport.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("EMU10k1 gameport driver");

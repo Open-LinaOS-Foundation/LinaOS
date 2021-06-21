@@ -5,17 +5,17 @@
  * Copyright 2018 Analog Devices Inc.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/mod_devicetable.h>
-#include <linux/power_supply.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/power_supply.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 /* ADP5061 registers definition */
 #define ADP5061_ID			0x00

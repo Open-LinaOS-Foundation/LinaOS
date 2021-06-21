@@ -11,9 +11,9 @@
 #include <arpa/inet.h>
 
 #include <libmnl/libmnl.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_queue.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_queue.h>
 
 struct options {
 	bool count_packets;

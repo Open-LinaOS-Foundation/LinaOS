@@ -25,7 +25,7 @@ __all:
 # their own directory. If in some directory we have a dependency on
 # a file in another dir (which doesn't happen often, but it's often
 # unavoidable when linking the built-in.a targets which finally
-# turn into vmlinux), we will call a sub make in that other dir, and
+# turn into vmlinaos), we will call a sub make in that other dir, and
 # after that we are sure that everything which is in that other dir
 # is now up to date.
 #
@@ -256,7 +256,7 @@ export building_out_of_srctree srctree objtree VPATH
 # Detect when mixed targets is specified, and make a second invocation
 # of make so .config is not included in this case either (for *config).
 
-version_h := include/generated/uapi/linux/version.h
+version_h := include/generated/uapi/linaos/version.h
 
 clean-targets := %clean mrproper cleandocs
 no-dot-config-targets := $(clean-targets) \
@@ -373,7 +373,7 @@ include $(srctree)/scripts/subarch.include
 # during compilation. Only gcc and related bin-utils executables
 # are prefixed with $(CROSS_COMPILE).
 # CROSS_COMPILE can be set on the command line
-# make CROSS_COMPILE=ia64-linux-
+# make CROSS_COMPILE=ia64-linaos-
 # Alternatively CROSS_COMPILE can be set in the environment.
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
@@ -471,7 +471,7 @@ LZ4		= lz4c
 XZ		= xz
 ZSTD		= zstd
 
-CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
+CHECKFLAGS     := -D__linaos__ -Dlinaos -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void -Wno-unknown-attribute $(CF)
 NOSTDINC_FLAGS :=
 CFLAGS_MODULE   =
@@ -479,7 +479,7 @@ AFLAGS_MODULE   =
 LDFLAGS_MODULE  =
 CFLAGS_KERNEL	=
 AFLAGS_KERNEL	=
-LDFLAGS_vmlinux =
+LDFLAGS_vmlinaos =
 
 # Use USERINCLUDE when you must reference the UAPI directories only.
 USERINCLUDE    := \
@@ -487,8 +487,8 @@ USERINCLUDE    := \
 		-I$(objtree)/arch/$(SRCARCH)/include/generated/uapi \
 		-I$(srctree)/include/uapi \
 		-I$(objtree)/include/generated/uapi \
-                -include $(srctree)/include/linux/compiler-version.h \
-                -include $(srctree)/include/linux/kconfig.h
+                -include $(srctree)/include/linaos/compiler-version.h \
+                -include $(srctree)/include/linaos/kconfig.h
 
 # Use LINUXINCLUDE when you must reference the include/ directory.
 # Needed to be compatible with the O= option
@@ -615,7 +615,7 @@ config: outputmakefile scripts_basic FORCE
 
 else #!config-build
 # ===========================================================================
-# Build targets only - this includes vmlinux, arch specific targets, clean
+# Build targets only - this includes vmlinaos, arch specific targets, clean
 # targets and others. In general all targets except *config targets.
 
 # If building an external module we do not care about the all: rule
@@ -657,7 +657,7 @@ include include/config/auto.conf
 endif
 
 ifeq ($(KBUILD_EXTMOD),)
-# Objects we will link into vmlinux / subdirs we need to visit
+# Objects we will link into vmlinaos / subdirs we need to visit
 core-y		:= init/ usr/
 drivers-y	:= drivers/ sound/
 drivers-$(CONFIG_SAMPLES) += samples/
@@ -669,8 +669,8 @@ endif # KBUILD_EXTMOD
 # The all: target is the default when no target is given on the
 # command line.
 # This allow a user to issue only 'make' to build a kernel including modules
-# Defaults to vmlinux, but the arch makefile usually adds further targets
-all: vmlinux
+# Defaults to vmlinaos, but the arch makefile usually adds further targets
+all: vmlinaos
 
 CFLAGS_GCOV	:= -fprofile-arcs -ftest-coverage \
 	$(call cc-option,-fno-tree-loop-im) \
@@ -789,7 +789,7 @@ else
 
 # Warn about unmarked fall-throughs in switch statement.
 # Disabled for clang while comment to attribute conversion happens and
-# https://github.com/ClangBuiltLinux/linux/issues/636 is discussed.
+# https://github.com/ClangBuiltLinaOS/linaos/issues/636 is discussed.
 KBUILD_CFLAGS += $(call cc-option,-Wimplicit-fallthrough,)
 endif
 
@@ -908,7 +908,7 @@ endif
 
 ifdef CONFIG_LD_DEAD_CODE_DATA_ELIMINATION
 KBUILD_CFLAGS_KERNEL += -ffunction-sections -fdata-sections
-LDFLAGS_vmlinux += --gc-sections
+LDFLAGS_vmlinaos += --gc-sections
 endif
 
 ifdef CONFIG_SHADOW_CALL_STACK
@@ -1032,20 +1032,20 @@ KBUILD_AFLAGS   += $(KAFLAGS)
 KBUILD_CFLAGS   += $(KCFLAGS)
 
 KBUILD_LDFLAGS_MODULE += --build-id=sha1
-LDFLAGS_vmlinux += --build-id=sha1
+LDFLAGS_vmlinaos += --build-id=sha1
 
 ifeq ($(CONFIG_STRIP_ASM_SYMS),y)
-LDFLAGS_vmlinux	+= $(call ld-option, -X,)
+LDFLAGS_vmlinaos	+= $(call ld-option, -X,)
 endif
 
 ifeq ($(CONFIG_RELR),y)
-LDFLAGS_vmlinux	+= --pack-dyn-relocs=relr
+LDFLAGS_vmlinaos	+= --pack-dyn-relocs=relr
 endif
 
 # We never want expected sections to be placed heuristically by the
 # linker. All sections should be explicitly named in the linker script.
 ifdef CONFIG_LD_ORPHAN_WARN
-LDFLAGS_vmlinux += --orphan-handling=warn
+LDFLAGS_vmlinaos += --orphan-handling=warn
 endif
 
 # Align the bit size of userspace programs with the kernel
@@ -1066,7 +1066,7 @@ CHECKFLAGS += $(if $(CONFIG_64BIT),-m64,-m32)
 # set in the environment
 # Also any assignments in arch/$(ARCH)/Makefile take precedence over
 # this default value
-export KBUILD_IMAGE ?= vmlinux
+export KBUILD_IMAGE ?= vmlinaos
 
 #
 # INSTALL_PATH specifies where to place the updated kernel and system map
@@ -1133,11 +1133,11 @@ export MODULES_NSDEPS := $(extmod_prefix)modules.nsdeps
 ifeq ($(KBUILD_EXTMOD),)
 core-y		+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/
 
-vmlinux-dirs	:= $(patsubst %/,%,$(filter %/, \
+vmlinaos-dirs	:= $(patsubst %/,%,$(filter %/, \
 		     $(core-y) $(core-m) $(drivers-y) $(drivers-m) \
 		     $(libs-y) $(libs-m)))
 
-vmlinux-alldirs	:= $(sort $(vmlinux-dirs) Documentation \
+vmlinaos-alldirs	:= $(sort $(vmlinaos-dirs) Documentation \
 		     $(patsubst %/,%,$(filter %/, $(core-) \
 			$(drivers-) $(libs-))))
 
@@ -1145,10 +1145,10 @@ subdir-modorder := $(addsuffix modules.order,$(filter %/, \
 			$(core-y) $(core-m) $(libs-y) $(libs-m) \
 			$(drivers-y) $(drivers-m)))
 
-build-dirs	:= $(vmlinux-dirs)
-clean-dirs	:= $(vmlinux-alldirs)
+build-dirs	:= $(vmlinaos-dirs)
+clean-dirs	:= $(vmlinaos-alldirs)
 
-# Externally visible symbols (used by link-vmlinux.sh)
+# Externally visible symbols (used by link-vmlinaos.sh)
 KBUILD_VMLINUX_OBJS := $(head-y) $(patsubst %/,%/built-in.a, $(core-y))
 KBUILD_VMLINUX_OBJS += $(addsuffix built-in.a, $(filter %/, $(libs-y)))
 ifdef CONFIG_MODULES
@@ -1160,11 +1160,11 @@ endif
 KBUILD_VMLINUX_OBJS += $(patsubst %/,%/built-in.a, $(drivers-y))
 
 export KBUILD_VMLINUX_OBJS KBUILD_VMLINUX_LIBS
-export KBUILD_LDS          := arch/$(SRCARCH)/kernel/vmlinux.lds
+export KBUILD_LDS          := arch/$(SRCARCH)/kernel/vmlinaos.lds
 # used by scripts/Makefile.package
-export KBUILD_ALLDIRS := $(sort $(filter-out arch/%,$(vmlinux-alldirs)) LICENSES arch include scripts tools)
+export KBUILD_ALLDIRS := $(sort $(filter-out arch/%,$(vmlinaos-alldirs)) LICENSES arch include scripts tools)
 
-vmlinux-deps := $(KBUILD_LDS) $(KBUILD_VMLINUX_OBJS) $(KBUILD_VMLINUX_LIBS)
+vmlinaos-deps := $(KBUILD_LDS) $(KBUILD_VMLINUX_OBJS) $(KBUILD_VMLINUX_LIBS)
 
 # Recurse until adjust_autoksyms.sh is satisfied
 PHONY += autoksyms_recursive
@@ -1176,7 +1176,7 @@ KBUILD_MODULES := 1
 
 autoksyms_recursive: descend modules.order
 	$(Q)$(CONFIG_SHELL) $(srctree)/scripts/adjust_autoksyms.sh \
-	  "$(MAKE) -f $(srctree)/Makefile vmlinux"
+	  "$(MAKE) -f $(srctree)/Makefile vmlinaos"
 endif
 
 autoksyms_h := $(if $(CONFIG_TRIM_UNUSED_KSYMS), include/generated/autoksyms.h)
@@ -1190,19 +1190,19 @@ $(autoksyms_h):
 
 ARCH_POSTLINK := $(wildcard $(srctree)/arch/$(SRCARCH)/Makefile.postlink)
 
-# Final link of vmlinux with optional arch pass after final link
-cmd_link-vmlinux =                                                 \
-	$(CONFIG_SHELL) $< "$(LD)" "$(KBUILD_LDFLAGS)" "$(LDFLAGS_vmlinux)";    \
+# Final link of vmlinaos with optional arch pass after final link
+cmd_link-vmlinaos =                                                 \
+	$(CONFIG_SHELL) $< "$(LD)" "$(KBUILD_LDFLAGS)" "$(LDFLAGS_vmlinaos)";    \
 	$(if $(ARCH_POSTLINK), $(MAKE) -f $(ARCH_POSTLINK) $@, true)
 
-vmlinux: scripts/link-vmlinux.sh autoksyms_recursive $(vmlinux-deps) FORCE
-	+$(call if_changed_dep,link-vmlinux)
+vmlinaos: scripts/link-vmlinaos.sh autoksyms_recursive $(vmlinaos-deps) FORCE
+	+$(call if_changed_dep,link-vmlinaos)
 
-targets := vmlinux
+targets := vmlinaos
 
 # The actual objects are generated when descending,
 # make sure no implicit rule kicks in
-$(sort $(vmlinux-deps) $(subdir-modorder)): descend ;
+$(sort $(vmlinaos-deps) $(subdir-modorder)): descend ;
 
 filechk_kernel.release = \
 	echo "$(KERNELVERSION)$$($(CONFIG_SHELL) $(srctree)/scripts/setlocalversion $(srctree))"
@@ -1346,8 +1346,8 @@ headers: $(version_h) scripts_unifdef uapi-asm-generic archheaders archscripts
 PHONY += headers_check
 headers_check:
 	@echo >&2 "=================== WARNING ==================="
-	@echo >&2 "Since Linux 5.5, 'make headers_check' is no-op,"
-	@echo >&2 "and will be removed after Linux 5.15 release."
+	@echo >&2 "Since LinaOS 5.5, 'make headers_check' is no-op,"
+	@echo >&2 "and will be removed after LinaOS 5.15 release."
 	@echo >&2 "Please remove headers_check from your scripts."
 	@echo >&2 "==============================================="
 
@@ -1446,7 +1446,7 @@ endif
 # using awk while concatenating to the final file.
 
 PHONY += modules
-modules: $(if $(KBUILD_BUILTIN),vmlinux) modules_check modules_prepare
+modules: $(if $(KBUILD_BUILTIN),vmlinaos) modules_check modules_prepare
 
 cmd_modules_order = $(AWK) '!x[$$0]++' $(real-prereqs) > $@
 
@@ -1504,7 +1504,7 @@ endif # CONFIG_MODULES
 # make distclean Remove editor backup files, patch leftover files and the like
 
 # Directories & files removed with 'make clean'
-CLEAN_FILES += include/ksym vmlinux.symvers modules-only.symvers \
+CLEAN_FILES += include/ksym vmlinaos.symvers modules-only.symvers \
 	       modules.builtin modules.builtin.modinfo modules.nsdeps \
 	       compile_commands.json .thinlto-cache
 
@@ -1516,20 +1516,20 @@ MRPROPER_FILES += include/config include/generated          \
 		  Module.symvers \
 		  certs/signing_key.pem certs/signing_key.x509 \
 		  certs/x509.genkey \
-		  vmlinux-gdb.py \
+		  vmlinaos-gdb.py \
 		  *.spec
 
 # clean - Delete most, but leave enough to build external modules
 #
 clean: rm-files := $(CLEAN_FILES)
 
-PHONY += archclean vmlinuxclean
+PHONY += archclean vmlinaosclean
 
-vmlinuxclean:
-	$(Q)$(CONFIG_SHELL) $(srctree)/scripts/link-vmlinux.sh clean
+vmlinaosclean:
+	$(Q)$(CONFIG_SHELL) $(srctree)/scripts/link-vmlinaos.sh clean
 	$(Q)$(if $(ARCH_POSTLINK), $(MAKE) -f $(ARCH_POSTLINK) clean)
 
-clean: archclean vmlinuxclean resolve_btfids_clean
+clean: archclean vmlinaosclean resolve_btfids_clean
 
 # mrproper - Delete all generated files, including .config
 #
@@ -1585,7 +1585,7 @@ help:
 	@echo  ''
 	@echo  'Other generic targets:'
 	@echo  '  all		  - Build all targets marked with [*]'
-	@echo  '* vmlinux	  - Build the bare kernel'
+	@echo  '* vmlinaos	  - Build the bare kernel'
 	@echo  '* modules	  - Build all modules'
 	@echo  '  modules_install - Install all modules to INSTALL_MOD_PATH (default: /)'
 	@echo  '  dir/            - Build all files in dir and below'
@@ -1706,7 +1706,7 @@ $(DOC_TARGETS):
 PHONY += scripts_gdb
 scripts_gdb: prepare0
 	$(Q)$(MAKE) $(build)=scripts/gdb
-	$(Q)ln -fsn $(abspath $(srctree)/scripts/gdb/vmlinux-gdb.py)
+	$(Q)ln -fsn $(abspath $(srctree)/scripts/gdb/vmlinaos-gdb.py)
 
 ifdef CONFIG_GDB_SCRIPTS
 all: scripts_gdb
@@ -1947,7 +1947,7 @@ else
 CHECKSTACK_ARCH := $(ARCH)
 endif
 checkstack:
-	$(OBJDUMP) -d vmlinux $$(find . -name '*.ko') | \
+	$(OBJDUMP) -d vmlinaos $$(find . -name '*.ko') | \
 	$(PERL) $(srctree)/scripts/checkstack.pl $(CHECKSTACK_ARCH)
 
 kernelrelease:

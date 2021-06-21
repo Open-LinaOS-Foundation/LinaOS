@@ -9,18 +9,18 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/bcd.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 /* RTC registers */
 #define TIME_REG		0x00

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/amba/pl08x.h - ARM PrimeCell DMA Controller driver
+ * linaos/amba/pl08x.h - ARM PrimeCell DMA Controller driver
  *
  * Copyright (C) 2005 ARM Ltd
  * Copyright (C) 2010 ST-Ericsson SA
@@ -15,8 +15,8 @@
 #define AMBA_PL08X_H
 
 /* We need sizes of structs from this header */
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
+#include <linaos/dmaengine.h>
+#include <linaos/interrupt.h>
 
 struct pl08x_driver_data;
 struct pl08x_phy_chan;

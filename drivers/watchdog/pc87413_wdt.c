@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- *      NS pc87413-wdt Watchdog Timer driver for Linux 2.6.x.x
+ *      NS pc87413-wdt Watchdog Timer driver for LinaOS 2.6.x.x
  *
  *      This code is based on wdt.c with original copyright.
  *
@@ -16,20 +16,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/notifier.h>
+#include <linaos/fs.h>
+#include <linaos/reboot.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/moduleparam.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 /* #define DEBUG 1 */

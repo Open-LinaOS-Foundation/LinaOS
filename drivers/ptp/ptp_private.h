@@ -7,14 +7,14 @@
 #ifndef _PTP_PRIVATE_H_
 #define _PTP_PRIVATE_H_
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/posix-clock.h>
-#include <linux/ptp_clock.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/time.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/posix-clock.h>
+#include <linaos/ptp_clock.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/time.h>
 
 #define PTP_MAX_TIMESTAMPS 128
 #define PTP_BUF_TIMESTAMPS 30

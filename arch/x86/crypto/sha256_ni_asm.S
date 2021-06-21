@@ -19,7 +19,7 @@
  *
  * Contact Information:
  * 	Sean Gulley <sean.m.gulley@intel.com>
- * 	Tim Chen <tim.c.chen@linux.intel.com>
+ * 	Tim Chen <tim.c.chen@linaos.intel.com>
  *
  * BSD LICENSE
  *
@@ -53,7 +53,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define DIGEST_PTR	%rdi	/* 1st arg */
 #define DATA_PTR	%rsi	/* 2nd arg */

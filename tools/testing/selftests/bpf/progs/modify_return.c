@@ -4,7 +4,7 @@
  * Copyright 2020 Google LLC.
  */
 
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 

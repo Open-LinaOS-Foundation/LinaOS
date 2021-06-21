@@ -35,27 +35,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/quota.h>
-#include <linux/dqblk_xfs.h>
-#include <linux/lockref.h>
-#include <linux/list_lru.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist_bl.h>
-#include <linux/bit_spinlock.h>
-#include <linux/jhash.h>
-#include <linux/vmalloc.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/completion.h>
+#include <linaos/buffer_head.h>
+#include <linaos/sort.h>
+#include <linaos/fs.h>
+#include <linaos/bio.h>
+#include <linaos/gfs2_ondisk.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/quota.h>
+#include <linaos/dqblk_xfs.h>
+#include <linaos/lockref.h>
+#include <linaos/list_lru.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rculist_bl.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/jhash.h>
+#include <linaos/vmalloc.h>
 
 #include "gfs2.h"
 #include "incore.h"

@@ -6,32 +6,32 @@
  * Copyright (C) 2017 Red Hat
  */
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-iommu.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/io-pgtable.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/kconfig.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_iommu.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/qcom_scm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/atomic.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
+#include <linaos/io-pgtable.h>
+#include <linaos/iommu.h>
+#include <linaos/iopoll.h>
+#include <linaos/kconfig.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_iommu.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include "arm-smmu.h"
 

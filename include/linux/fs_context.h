@@ -8,11 +8,11 @@
 #ifndef _LINUX_FS_CONTEXT_H
 #define _LINUX_FS_CONTEXT_H
 
-#include <linux/kernel.h>
-#include <linux/refcount.h>
-#include <linux/errno.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/refcount.h>
+#include <linaos/errno.h>
+#include <linaos/security.h>
+#include <linaos/mutex.h>
 
 struct cred;
 struct dentry;
@@ -99,7 +99,7 @@ struct fs_context {
 	const struct cred	*cred;		/* The mounter's credentials */
 	struct p_log		log;		/* Logging buffer */
 	const char		*source;	/* The source name (eg. dev path) */
-	void			*security;	/* Linux S&M options */
+	void			*security;	/* LinaOS S&M options */
 	void			*s_fs_info;	/* Proposed s_fs_info */
 	unsigned int		sb_flags;	/* Proposed superblock flags (SB_*) */
 	unsigned int		sb_flags_mask;	/* Superblock flags that were changed */

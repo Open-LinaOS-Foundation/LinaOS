@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/include/asm-arm/hardware/serial_amba.h
+ *  linaos/include/asm-arm/hardware/serial_amba.h
  *
  *  Internal header file for AMBA serial ports
  *
@@ -10,7 +10,7 @@
 #ifndef ASM_ARM_HARDWARE_SERIAL_AMBA_H
 #define ASM_ARM_HARDWARE_SERIAL_AMBA_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* -------------------------------------------------------------------------------
  *  From AMBA UART (PL010) Block Specification

@@ -3,13 +3,13 @@
  * Copyright (C) 2015 Mans Rullgard <mans@mansr.com>
  */
 
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME "tango-ir"
@@ -185,7 +185,7 @@ static int tango_ir_probe(struct platform_device *pdev)
 	if (!rc)
 		return -ENOMEM;
 
-	of_property_read_string(dev->of_node, "linux,rc-map-name", &map_name);
+	of_property_read_string(dev->of_node, "linaos,rc-map-name", &map_name);
 
 	rc->device_name = DRIVER_NAME;
 	rc->driver_name = DRIVER_NAME;

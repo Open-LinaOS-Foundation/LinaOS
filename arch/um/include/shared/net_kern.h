@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (C) 2002 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #ifndef __UM_NET_KERN_H
 #define __UM_NET_KERN_H
 
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
+#include <linaos/netdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/skbuff.h>
+#include <linaos/socket.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
 
 struct uml_net {
 	struct list_head list;

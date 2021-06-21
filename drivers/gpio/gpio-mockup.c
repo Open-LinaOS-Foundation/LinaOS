@@ -9,19 +9,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irq_sim.h>
-#include <linux/irqdomain.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irq_sim.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/string_helpers.h>
+#include <linaos/uaccess.h>
 
 #include "gpiolib.h"
 

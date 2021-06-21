@@ -13,7 +13,7 @@
 #ifndef RT2X00MMIO_H
 #define RT2X00MMIO_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /*
  * Register access.

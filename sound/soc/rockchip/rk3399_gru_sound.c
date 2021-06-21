@@ -5,15 +5,15 @@
  * Copyright (c) 2016, ROCKCHIP CORPORATION.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/gpio.h>
+#include <linaos/of_gpio.h>
+#include <linaos/delay.h>
+#include <linaos/spi/spi.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

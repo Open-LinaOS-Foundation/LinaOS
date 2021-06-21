@@ -7,7 +7,7 @@
 #ifndef __MESON_CLK_DUALDIV_H
 #define __MESON_CLK_DUALDIV_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 #include "parm.h"
 
 struct meson_clk_dualdiv_param {

@@ -49,8 +49,8 @@
  * This file contains HFI1 support for VNIC functionality
  */
 
-#include <linux/io.h>
-#include <linux/if_vlan.h>
+#include <linaos/io.h>
+#include <linaos/if_vlan.h>
 
 #include "vnic.h"
 #include "netdev.h"

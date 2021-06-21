@@ -7,13 +7,13 @@
  *		Feng Kan <fkan@apm.com>
  */
 
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/of_platform.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
+#include <linaos/irq.h>
+#include <linaos/pci.h>
+#include <linaos/msi.h>
+#include <linaos/of_platform.h>
+#include <linaos/interrupt.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
 #include <asm/prom.h>
 #include <asm/hw_irq.h>
 #include <asm/ppc-pci.h>

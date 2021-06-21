@@ -6,9 +6,9 @@
  * Init code from UTFT library by Henning Karlsen
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 #include <video/mipi_display.h>
 
 #include "fbtft.h"

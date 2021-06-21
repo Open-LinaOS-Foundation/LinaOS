@@ -5,11 +5,11 @@
  * Copyright 2001 Benjamin Herrenschmidt (benh@kernel.crashing.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/apm-emulation.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/apm-emulation.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
 
 #define APM_CRITICAL		10
 #define APM_LOW			30

@@ -9,8 +9,8 @@
 
 #include "main.h"
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/types.h>
 
 /**
  * enum batadv_bandwidth_units - bandwidth unit types

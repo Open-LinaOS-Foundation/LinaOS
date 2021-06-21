@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-/* -*- linux-c -*-
+/* -*- linaos-c -*-
  * sysctl_net_core.c: sysctl interface to net core subsystem.
  *
  * Begun April 1, 1996, Mike Shaver.
  * Added /proc/sys/net/core directory entry (empty =) ). [MS]
  */
 
-#include <linux/mm.h>
-#include <linux/sysctl.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/mm.h>
+#include <linaos/sysctl.h>
+#include <linaos/module.h>
+#include <linaos/socket.h>
+#include <linaos/netdevice.h>
+#include <linaos/ratelimit.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 
 #include <net/ip.h>
 #include <net/sock.h>

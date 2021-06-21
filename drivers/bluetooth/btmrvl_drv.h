@@ -19,18 +19,18 @@
  *
  */
 
-#include <linux/kthread.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
 #include <net/bluetooth/bluetooth.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_irq.h>
+#include <linaos/err.h>
+#include <linaos/gfp.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of_irq.h>
 
 #define BTM_HEADER_LEN			4
 #define BTM_UPLD_SIZE			2312

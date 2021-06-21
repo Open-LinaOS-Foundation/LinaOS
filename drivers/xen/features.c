@@ -6,9 +6,9 @@
  *
  * Copyright (c) 2006, Ian Campbell, XenSource Inc.
  */
-#include <linux/types.h>
-#include <linux/cache.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/cache.h>
+#include <linaos/export.h>
 
 #include <asm/xen/hypercall.h>
 

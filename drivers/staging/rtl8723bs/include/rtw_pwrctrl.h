@@ -7,7 +7,7 @@
 #ifndef __RTW_PWRCTRL_H_
 #define __RTW_PWRCTRL_H_
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 #define FW_PWR0	0
 #define FW_PWR1		1

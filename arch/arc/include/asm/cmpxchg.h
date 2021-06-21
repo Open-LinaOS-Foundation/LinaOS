@@ -6,7 +6,7 @@
 #ifndef __ASM_ARC_CMPXCHG_H
 #define __ASM_ARC_CMPXCHG_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/barrier.h>
 #include <asm/smp.h>

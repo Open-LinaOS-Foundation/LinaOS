@@ -17,19 +17,19 @@
  * same table format for all controllers and can then just have one
  * big table
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ide.h>
-#include <linux/notifier.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/pci.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/ide.h>
+#include <linaos/notifier.h>
+#include <linaos/module.h>
+#include <linaos/reboot.h>
+#include <linaos/pci.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

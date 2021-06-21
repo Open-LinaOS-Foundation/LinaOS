@@ -3,10 +3,10 @@
  * Copyright (C) 2003-2008 Takahiro Hirofuchi
  */
 
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/file.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
 
 #include "usbip_common.h"
 #include "stub.h"

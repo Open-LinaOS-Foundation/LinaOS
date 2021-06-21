@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (c) 2013-2016, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) LinaOS driver
  */
 
 #ifndef _MEI_HW_TXE_H_
 #define _MEI_HW_TXE_H_
 
-#include <linux/irqreturn.h>
+#include <linaos/irqreturn.h>
 
 #include "hw.h"
 #include "hw-txe-regs.h"

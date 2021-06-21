@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/uio_driver.h
+ * include/linaos/uio_driver.h
  *
  * Copyright(C) 2005, Benedikt Spranger <b.spranger@linutronix.de>
  * Copyright(C) 2005, Thomas Gleixner <tglx@linutronix.de>
@@ -13,9 +13,9 @@
 #ifndef _UIO_DRIVER_H_
 #define _UIO_DRIVER_H_
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
 
 struct module;
 struct uio_map;

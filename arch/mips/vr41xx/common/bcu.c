@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2002	MontaVista Software Inc.
  *    Author: Yoichi Yuasa <source@mvista.com>
- *  Copyright (C) 2003-2005  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2005  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 /*
  * Changes:
@@ -12,13 +12,13 @@
  *  - New creation, NEC VR4122 and VR4131 are supported.
  *  - Added support for NEC VR4111 and VR4121.
  *
- *  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Yoichi Yuasa <yuasa@linaos-mips.org>
  *  - Added support for NEC VR4133.
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/types.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
+#include <linaos/types.h>
 
 #include <asm/cpu-type.h>
 #include <asm/cpu.h>

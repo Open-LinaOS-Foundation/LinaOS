@@ -10,7 +10,7 @@
 #ifndef __MTD_NAND_ECC_SW_HAMMING_H__
 #define __MTD_NAND_ECC_SW_HAMMING_H__
 
-#include <linux/mtd/nand.h>
+#include <linaos/mtd/nand.h>
 
 /**
  * struct nand_ecc_sw_hamming_conf - private software Hamming ECC engine structure

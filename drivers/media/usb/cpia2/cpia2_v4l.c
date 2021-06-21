@@ -18,13 +18,13 @@
 
 #define CPIA_VERSION "3.0.1"
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/videodev2.h>
-#include <linux/stringify.h>
+#include <linaos/module.h>
+#include <linaos/time.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/videodev2.h>
+#include <linaos/stringify.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
 

@@ -14,27 +14,27 @@
  * https://lore.kernel.org/lkml/1315556546-7445-1-git-send-email-dg77.kim@samsung.com/
  * Based partly on a submission by
  * Jonathan Bakker and Paweł Chmiel in january 2019:
- * https://lore.kernel.org/linux-input/20190125175045.22576-1-pawel.mikolaj.chmiel@gmail.com/
+ * https://lore.kernel.org/linaos-input/20190125175045.22576-1-pawel.mikolaj.chmiel@gmail.com/
  * Based partly on code from the Samsung GT-S7710 by <mjchen@sta.samsung.com>
  * Based partly on the code in LG Electronics GP2AP00200F driver by
  * Kenobi Lee <sungyoung.lee@lge.com> and EunYoung Cho <ey.cho@lge.com>
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/consumer.h> /* To get our ADC channel */
-#include <linux/iio/types.h> /* To deal with our ADC channel */
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/bits.h>
-#include <linux/math64.h>
-#include <linux/pm.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/consumer.h> /* To get our ADC channel */
+#include <linaos/iio/types.h> /* To deal with our ADC channel */
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/interrupt.h>
+#include <linaos/bits.h>
+#include <linaos/math64.h>
+#include <linaos/pm.h>
 
 #define GP2AP002_PROX_CHANNEL 0
 #define GP2AP002_ALS_CHANNEL 1

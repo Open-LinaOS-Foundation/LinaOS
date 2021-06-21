@@ -11,9 +11,9 @@
  *
  * See the GNU General Public License for more details.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <net/llc.h>
 #include <net/llc_sap.h>
 #include <net/llc_conn.h>

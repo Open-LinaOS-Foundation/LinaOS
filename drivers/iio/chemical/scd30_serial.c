@@ -4,17 +4,17 @@
  *
  * Copyright (c) 2020 Tomasz Duszynski <tomasz.duszynski@octakon.com>
  */
-#include <linux/crc16.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/iio/iio.h>
-#include <linux/jiffies.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/serdev.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/crc16.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/iio/iio.h>
+#include <linaos/jiffies.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/serdev.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <asm/unaligned.h>
 
 #include "scd30.h"

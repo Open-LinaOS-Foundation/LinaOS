@@ -12,8 +12,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/types.h>
-#include <linux/device-mapper.h>
+#include <linaos/types.h>
+#include <linaos/device-mapper.h>
 
 typedef sector_t region_t;
 

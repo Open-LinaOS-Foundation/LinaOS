@@ -10,10 +10,10 @@
 #ifndef _NILFS_SEGBUF_H
 #define _NILFS_SEGBUF_H
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/bio.h>
-#include <linux/completion.h>
+#include <linaos/fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/bio.h>
+#include <linaos/completion.h>
 
 /**
  * struct nilfs_segsum_info - On-memory segment summary

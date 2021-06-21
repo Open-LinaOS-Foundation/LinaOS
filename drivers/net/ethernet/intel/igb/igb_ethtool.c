@@ -3,18 +3,18 @@
 
 /* ethtool support for igb */
 
-#include <linux/vmalloc.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/ethtool.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/highmem.h>
-#include <linux/mdio.h>
+#include <linaos/vmalloc.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/if_ether.h>
+#include <linaos/ethtool.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/highmem.h>
+#include <linaos/mdio.h>
 
 #include "igb.h"
 

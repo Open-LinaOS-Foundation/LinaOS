@@ -2,13 +2,13 @@
 /*
  * Page management definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_PAGE_H
 #define _ASM_PAGE_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /*  This is probably not the most graceful way to handle this.  */
 
@@ -59,7 +59,7 @@
 /*
  * This is for PFN_DOWN, which mm.h needs.  Seems the right place to pull it in.
  */
-#include <linux/pfn.h>
+#include <linaos/pfn.h>
 
 /*
  * We implement a two-level architecture-specific page table structure.
@@ -86,7 +86,7 @@ typedef struct page *pgtable_t;
 #define __pa(x) ((unsigned long)(x) - PAGE_OFFSET + PHYS_OFFSET)
 #define __va(x) ((void *)((unsigned long)(x) - PHYS_OFFSET + PAGE_OFFSET))
 
-/* The "page frame" descriptor is defined in linux/mm.h */
+/* The "page frame" descriptor is defined in linaos/mm.h */
 struct page;
 
 /* Returns page frame descriptor for virtual address. */

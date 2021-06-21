@@ -8,10 +8,10 @@
 
 #include <kunit/test.h>
 #include <kunit/test-bug.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/sched/debug.h>
-#include <linux/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched.h>
 
 #include "debugfs.h"
 #include "string-stream.h"

@@ -8,7 +8,7 @@
 #ifndef __DMA_MMP_TDMA_H
 #define __DMA_MMP_TDMA_H
 
-#include <linux/genalloc.h>
+#include <linaos/genalloc.h>
 
 /* ARBITRARY:  SRAM allocations are multiples of this 2^N size */
 #define SRAM_GRANULARITY	512

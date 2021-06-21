@@ -48,9 +48,9 @@
 	};
 
 	partition@200000 {
-		/* 4MB for Linux Kernel Image */
+		/* 4MB for LinaOS Kernel Image */
 		reg = <0x00200000 0x00400000>;
-		label = "NAND Linux Kernel Image";
+		label = "NAND LinaOS Kernel Image";
 	};
 
 	partition@600000 {

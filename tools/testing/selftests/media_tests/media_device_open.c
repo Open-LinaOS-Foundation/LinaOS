@@ -32,7 +32,7 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include <sys/stat.h>
-#include <linux/media.h>
+#include <linaos/media.h>
 
 #include "../kselftest.h"
 

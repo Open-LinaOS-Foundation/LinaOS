@@ -5,15 +5,15 @@
  * Copyright (C) 2007-2016 Oracle Corporation
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/vbox_err.h>
-#include <linux/vbox_utils.h>
-#include <linux/vmalloc.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/vbox_err.h>
+#include <linaos/vbox_utils.h>
+#include <linaos/vmalloc.h>
 #include "vboxguest_core.h"
 #include "vboxguest_version.h"
 
@@ -1048,7 +1048,7 @@ void vbg_core_exit(struct vbg_dev *gdev)
 /**
  * Creates a VBoxGuest user session.
  *
- * vboxguest_linux.c calls this when userspace opens the char-device.
+ * vboxguest_linaos.c calls this when userspace opens the char-device.
  * Return: A pointer to the new session or an ERR_PTR on error.
  * @gdev:		The Guest extension device.
  * @requestor:		VMMDEV_REQUESTOR_* flags
@@ -1640,7 +1640,7 @@ static int vbg_ioctl_check_balloon(struct vbg_dev *gdev,
 
 	balloon_info->u.out.balloon_chunks = gdev->mem_balloon.chunks;
 	/*
-	 * Under Linux we handle VMMDEV_EVENT_BALLOON_CHANGE_REQUEST
+	 * Under LinaOS we handle VMMDEV_EVENT_BALLOON_CHANGE_REQUEST
 	 * events entirely in the kernel, see vbg_core_isr().
 	 */
 	balloon_info->u.out.handle_in_r3 = false;
@@ -1820,7 +1820,7 @@ irqreturn_t vbg_core_isr(int irq, void *dev_id)
 	}
 
 	if (mouse_position_changed)
-		vbg_linux_mouse_event(gdev);
+		vbg_linaos_mouse_event(gdev);
 
 	return IRQ_HANDLED;
 }

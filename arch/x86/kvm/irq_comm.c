@@ -9,10 +9,10 @@
  * Copyright 2010 Red Hat, Inc. and/or its affiliates.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/rculist.h>
+#include <linaos/kvm_host.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/rculist.h>
 
 #include <trace/events/kvm.h>
 

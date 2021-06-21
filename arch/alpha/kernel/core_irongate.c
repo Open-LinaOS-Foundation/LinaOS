@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_irongate.c
+ *	linaos/arch/alpha/kernel/core_irongate.c
  *
  * Based on code written by David A. Rusling (david.rusling@reo.mts.dec.com).
  *
@@ -15,12 +15,12 @@
 #include <asm/core_irongate.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/memblock.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/initrd.h>
+#include <linaos/memblock.h>
 
 #include <asm/ptrace.h>
 #include <asm/cacheflush.h>
@@ -298,10 +298,10 @@ irongate_init_arch(void)
 /*
  * IO map and AGP support
  */
-#include <linux/vmalloc.h>
-#include <linux/agp_backend.h>
-#include <linux/agpgart.h>
-#include <linux/export.h>
+#include <linaos/vmalloc.h>
+#include <linaos/agp_backend.h>
+#include <linaos/agpgart.h>
+#include <linaos/export.h>
 
 #define GET_PAGE_DIR_OFF(addr) (addr >> 22)
 #define GET_PAGE_DIR_IDX(addr) (GET_PAGE_DIR_OFF(addr))

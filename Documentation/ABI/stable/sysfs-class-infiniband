@@ -6,7 +6,7 @@ What:		/sys/class/infiniband/<device>/node_guid
 What:		/sys/class/infiniband/<device>/sys_image_guid
 Date:		Apr, 2005
 KernelVersion:	v2.6.12
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ===========================================
 		node_type:	(RO) Node type (CA, RNIC, usNIC, usNIC UDP,
@@ -21,7 +21,7 @@ Description:
 What:		/sys/class/infiniband/<device>/node_desc
 Date:		Feb, 2006
 KernelVersion:	v2.6.17
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		(RW) Update the node description with information such as the
 		node's hostname, so that IB network management software can tie
@@ -31,7 +31,7 @@ Description:
 What:		/sys/class/infiniband/<device>/fw_ver
 Date:		Jun, 2016
 KernelVersion:	v4.10
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		(RO) Display firmware version
 
@@ -46,7 +46,7 @@ What:		/sys/class/infiniband/<device>/ports/<port-num>/phys_state
 What:		/sys/class/infiniband/<device>/ports/<port-num>/cap_mask
 Date:		Apr, 2005
 KernelVersion:	v2.6.12
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 
 		=============== ===============================================
@@ -77,7 +77,7 @@ Description:
 What:		/sys/class/infiniband/<device>/ports/<port-num>/link_layer
 Date:		Oct, 2010
 KernelVersion:	v2.6.37
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		(RO) Link layer type information (Infiniband or Ethernet type)
 
@@ -105,7 +105,7 @@ What:		/sys/class/infiniband/<device>/ports/<port-num>/counters/VL15_dropped
 What:		/sys/class/infiniband/<device>/ports/<port-num>/counters/port_xmit_wait
 Date:		Apr, 2005
 KernelVersion:	v2.6.12
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		**Errors info**:
 
@@ -200,7 +200,7 @@ What:		/sys/class/infiniband/<device-name>/hw_counters/lifespan
 What:		/sys/class/infiniband/<device-name>/ports/<port-num>/hw_counters/lifespan
 Date:		May, 2016
 KernelVersion:	4.6
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		The optional "hw_counters" subdirectory can be under either the
 		parent device or the port subdirectories or both. If present,
@@ -219,14 +219,14 @@ Description:
 What:		/sys/class/infiniband/<hca>/ports/<port-number>/gid_attrs/ndevs/<gid-index>
 Date:		November 29, 2015
 KernelVersion:	4.4.0
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description: 	The net-device's name associated with the GID resides
 		at index <gid-index>.
 
 What:		/sys/class/infiniband/<hca>/ports/<port-number>/gid_attrs/types/<gid-index>
 Date:		November 29, 2015
 KernelVersion:	4.4.0
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description: 	The RoCE type of the associated GID resides at index <gid-index>.
 		This could either be "IB/RoCE v1" for IB and RoCE v1 based GIDs
 		or "RoCE v2" for RoCE v2 based GIDs.
@@ -238,7 +238,7 @@ What:		/sys/class/infiniband_mad/issmN/ibdev
 What:		/sys/class/infiniband_mad/issmN/port
 Date:		Apr, 2005
 KernelVersion:	v2.6.12
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		Each port of each InfiniBand device has a "umad" device and an
 		"issm" device attached. For example, a two-port HCA will have
@@ -255,7 +255,7 @@ Description:
 What:		/sys/class/infiniband_mad/abi_version
 Date:		Apr, 2005
 KernelVersion:	v2.6.12
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		(RO) Value is incremented if any changes are made that break
 		userspace ABI compatibility of umad & issm devices.
@@ -265,7 +265,7 @@ What:		/sys/class/infiniband_verbs/uverbsN/ibdev
 What:		/sys/class/infiniband_verbs/uverbsN/abi_version
 Date:		Sept, 2005
 KernelVersion:	v2.6.14
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ===========================================
 		ibdev:		(RO) Display Infiniband (IB) device name
@@ -278,7 +278,7 @@ Description:
 What:		/sys/class/infiniband_verbs/abi_version
 Date:		Sep, 2005
 KernelVersion:	v2.6.14
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		(RO) Value is incremented if any changes are made that break
 		userspace ABI compatibility of uverbs devices.
@@ -292,7 +292,7 @@ What:		/sys/class/infiniband/mthcaX/hca_type
 What:		/sys/class/infiniband/mthcaX/board_id
 Date:		Apr, 2005
 KernelVersion:	v2.6.12
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ================================================
 		hw_rev:		(RO) Hardware revision number
@@ -312,7 +312,7 @@ What:		/sys/class/infiniband/mlx4_X/hca_type
 What:		/sys/class/infiniband/mlx4_X/board_id
 Date:		Sep, 2007
 KernelVersion:	v2.6.24
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ===============================
 		hw_rev:		(RO) Hardware revision number
@@ -331,7 +331,7 @@ What:		/sys/class/infiniband/mlx4_X/iov/ports/<pci-slot-num>/ports/<m>/gid_idx/0
 What:		/sys/class/infiniband/mlx4_X/iov/ports/<pci-slot-num>/ports/<m>/pkey_idx/<n>
 Date:		Aug, 2012
 KernelVersion:	v3.6.15
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		The sysfs iov directory is used to manage and examine the port
 		P_Key and guid paravirtualization. This directory is added only
@@ -382,7 +382,7 @@ What:		/sys/class/infiniband/mlx4_X/iov/<pci-slot-num>/ports/<m>/smi_enabled
 What:           /sys/class/infiniband/mlx4_X/iov/<pci-slot-num>/ports/<m>/enable_smi_admin
 Date:		May, 2014
 KernelVersion:	v3.15.7
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		Enabling QP0 on VFs for selected VF/port. By default, no VFs are
 		enabled for QP0 operation.
@@ -408,7 +408,7 @@ What:		/sys/class/infiniband/cxgb4_X/hca_type
 What:		/sys/class/infiniband/cxgb4_X/board_id
 Date:		Apr, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 
 		=============== =============================================
@@ -439,7 +439,7 @@ What:		/sys/class/infiniband/qibX/nfreectxts
 What:		/sys/class/infiniband/qibX/chip_reset
 Date:		May, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ======================================================
 		version:	(RO) Display version information of installed software
@@ -474,7 +474,7 @@ Description:
 What:		/sys/class/infiniband/qibX/ports/N/sl2vl/[0-15]
 Date:		May, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		(RO) The directory contains 16 files numbered 0-15 that specify
 		the Service Level (SL). Listing the SL files returns the Virtual
@@ -484,7 +484,7 @@ What:		/sys/class/infiniband/qibX/ports/N/CCMgtA/cc_settings_bin
 What:		/sys/class/infiniband/qibX/ports/N/CCMgtA/cc_table_bin
 Date:		May, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		Per-port congestion control. Both are binary attributes.
 
@@ -506,7 +506,7 @@ What:		/sys/class/infiniband/qibX/ports/N/linkstate/status
 What:		/sys/class/infiniband/qibX/ports/N/linkstate/status_str
 Date:		May, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		[to be documented]
 
@@ -535,7 +535,7 @@ What:		/sys/class/infiniband/qibX/ports/N/diag_counters/dma_wait
 What:		/sys/class/infiniband/qibX/ports/N/diag_counters/unaligned
 Date:		May, 2010
 KernelVersion:	v2.6.35
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		[to be documented]
 
@@ -549,7 +549,7 @@ What:		/sys/class/infiniband/mlx5_X/reg_pages
 What:		/sys/class/infiniband/mlx5_X/fw_pages
 Date:		Jul, 2013
 KernelVersion:	v3.11
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		[to be documented]
 
@@ -567,7 +567,7 @@ Date:		Sep, 2013
 KernelVersion:	v3.14
 Contact:	Christian Benvenuti <benve@cisco.com>,
 		Dave Goodell <dgoodell@cisco.com>,
-		linux-rdma@vger.kernel.org
+		linaos-rdma@vger.kernel.org
 Description:
 
 		=============== ===============================================
@@ -591,7 +591,7 @@ Date:		Sep, 2013
 KernelVersion:	v3.14
 Contact:	Christian Benvenuti <benve@cisco.com>,
 		Dave Goodell <dgoodell@cisco.com>,
-		linux-rdma@vger.kernel.org
+		linaos-rdma@vger.kernel.org
 Description:
 		[to be documented]
 
@@ -608,7 +608,7 @@ Description:
 What:		/sys/class/infiniband/ocrdmaX/hca_type
 Date:		Jun, 2014
 KernelVersion:	v3.16
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		hca_type:	(RO) Display FW version
 
@@ -626,7 +626,7 @@ What:		/sys/class/infiniband/hfi1_X/nfreectxts
 What:		/sys/class/infiniband/hfi1_X/tempsense
 Date:		May, 2016
 KernelVersion:	v4.6
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== =============================================
 		hw_rev:		(RO) Hardware revision number
@@ -655,7 +655,7 @@ What:		/sys/class/infiniband/hfi1_X/ports/N/CCMgtA/cc_table_bin
 What:		/sys/class/infiniband/hfi1_X/ports/N/CCMgtA/cc_prescan
 Date:		May, 2016
 KernelVersion:	v4.6
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		Per-port congestion control.
 
@@ -680,7 +680,7 @@ What:		/sys/class/infiniband/hfi1_X/ports/N/sl2sc/[0-31]
 What:		/sys/class/infiniband/hfi1_X/ports/N/vl2mtu/[0-15]
 Date:		May, 2016
 KernelVersion:	v4.6
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ===================================================
 		sc2vl/:		(RO) 32 files (0 - 31) used to translate sl->vl
@@ -695,7 +695,7 @@ What:		/sys/class/infiniband/hfi1_X/sdma_N/cpu_list
 What:		/sys/class/infiniband/hfi1_X/sdma_N/vl
 Date:		Sept, 2016
 KernelVersion:	v4.8
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		sdma<N>/ contains one directory per sdma engine (0 - 15)
 
@@ -740,7 +740,7 @@ What:		/sys/class/infiniband/i40iwX/hca_type
 What:		/sys/class/infiniband/i40iwX/board_id
 Date:		Jan, 2016
 KernelVersion:	v4.10
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ==== ========================
 		hw_rev:		(RO) Hardware revision number
@@ -758,7 +758,7 @@ What:		/sys/class/infiniband/qedrX/hw_rev
 What:		/sys/class/infiniband/qedrX/hca_type
 Date:		Oct, 2016
 KernelVersion:	v4.10
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 
 		=============== ==== ========================
@@ -776,7 +776,7 @@ What:		/sys/class/infiniband/vmw_pvrdmaX/hca_type
 What:		/sys/class/infiniband/vmw_pvrdmaX/board_id
 Date:		Oct, 2016
 KernelVersion:	v4.10
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 
 		=============== ==== =====================================
@@ -795,7 +795,7 @@ What:		/sys/class/infiniband/bnxt_reX/hw_rev
 What:		/sys/class/infiniband/bnxt_reX/hca_type
 Date:		Feb, 2017
 KernelVersion:	v4.11
-Contact:	linux-rdma@vger.kernel.org
+Contact:	linaos-rdma@vger.kernel.org
 Description:
 		=============== ==== =========================
 		hw_rev:		(RO) Hardware revision number

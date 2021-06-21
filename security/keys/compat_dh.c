@@ -4,7 +4,7 @@
  * Copyright (C) 2016 Stephan Mueller <smueller@chronox.de>
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 

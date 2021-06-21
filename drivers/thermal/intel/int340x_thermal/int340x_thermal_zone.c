@@ -3,12 +3,12 @@
  * int340x_thermal_zone.c
  * Copyright (c) 2015, Intel Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/thermal.h>
-#include <linux/units.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/thermal.h>
+#include <linaos/units.h>
 #include "int340x_thermal_zone.h"
 
 static int int340x_thermal_get_zone_temp(struct thermal_zone_device *zone,
@@ -297,6 +297,6 @@ void int340x_thermal_zone_remove(struct int34x_thermal_zone
 EXPORT_SYMBOL_GPL(int340x_thermal_zone_remove);
 
 MODULE_AUTHOR("Aaron Lu <aaron.lu@intel.com>");
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel INT340x common thermal zone handler");
 MODULE_LICENSE("GPL v2");

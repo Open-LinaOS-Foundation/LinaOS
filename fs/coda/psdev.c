@@ -5,41 +5,41 @@
  *
  * 		Author: 	Alan Cox <alan@lxorguk.ukuu.org.uk>
  * 
- *              Adapted to become the Linux 2.0 Coda pseudo device
+ *              Adapted to become the LinaOS 2.0 Coda pseudo device
  *              Peter  Braam  <braam@maths.ox.ac.uk> 
  *              Michael Callahan <mjc@emmy.smith.edu>           
  *
- *              Changes for Linux 2.1
+ *              Changes for LinaOS 2.1
  *              Copyright (c) 1997 Carnegie-Mellon University
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/time.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/pid_namespace.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/major.h>
+#include <linaos/time.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/fcntl.h>
+#include <linaos/delay.h>
+#include <linaos/skbuff.h>
+#include <linaos/proc_fs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/pid_namespace.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/coda.h>
+#include <linaos/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_linaos.h"
 
 #include "coda_int.h"
 

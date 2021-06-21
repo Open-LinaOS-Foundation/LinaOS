@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt) "cpufreq: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 #include <asm/ist.h>
 #include <asm/cpu_device_id.h>
 

@@ -12,14 +12,14 @@
  * GNU General Public License version 2 for more details.
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/spi/spi.h>
 
 #define DEFAULT_NGPIO 8
 

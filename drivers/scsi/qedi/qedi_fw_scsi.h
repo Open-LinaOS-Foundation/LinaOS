@@ -7,10 +7,10 @@
 #ifndef _QEDI_FW_SCSI_H_
 #define _QEDI_FW_SCSI_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 #include "qedi_hsi.h"
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/qed_if.h>
 
 struct scsi_sgl_task_params {
 	struct scsi_sge	*sgl;

@@ -8,7 +8,7 @@ ARCnet Hardware
 
    1) This file is a supplement to arcnet.txt.  Please read that for general
       driver configuration help.
-   2) This file is no longer Linux-specific.  It should probably be moved out
+   2) This file is no longer LinaOS-specific.  It should probably be moved out
       of the kernel sources.  Ideas?
 
 Because so many people (myself included) seem to have obtained ARCnet cards
@@ -266,7 +266,7 @@ Setting the Jumpers
 All ARCnet cards should have a total of four or five different settings:
 
   - the I/O address:  this is the "port" your ARCnet card is on.  Probed
-    values in the Linux ARCnet driver are only from 0x200 through 0x3F0. (If
+    values in the LinaOS ARCnet driver are only from 0x200 through 0x3F0. (If
     your card has additional ones, which is possible, please tell me.) This
     should not be the same as any other device on your system.  According to
     a doc I got from Novell, MS Windows prefers values of 0x300 or more,
@@ -280,7 +280,7 @@ All ARCnet cards should have a total of four or five different settings:
 	     on 16-bit cards, it might be 2 (9), 3, 4, 5, 7, or 10-15.
 
     Make sure this is different from any other card on your system.  Note
-    that IRQ2 is the same as IRQ9, as far as Linux is concerned.  You can
+    that IRQ2 is the same as IRQ9, as far as LinaOS is concerned.  You can
     "cat /proc/interrupts" for a somewhat complete list of which ones are in
     use at any given time.  Here is a list of common usages from Vojtech
     Pavlik <vojtech@suse.cz>:
@@ -771,7 +771,7 @@ PC500/PC550 Longboard (16-bit cards)
 	coded switch, on the short board directly by jumper.
 
 [Avery's note: pay special attention to that: the long board HAS NO SHARED
-MEMORY.  This means the current Linux-ARCnet driver can't use these cards.
+MEMORY.  This means the current LinaOS-ARCnet driver can't use these cards.
 I have obtained a PC500Longboard and will be doing some experiments on it in
 the future, but don't hold your breath.  Thanks again to Juergen Seifert for
 his advice about this!]
@@ -1030,7 +1030,7 @@ LCS-8830(-T) (8 and 16-bit cards)
 ---------------------------------
 
   - from Mathias Katzer <mkatzer@HRZ.Uni-Bielefeld.DE>
-  - Marek Michalkiewicz <marekm@i17linuxb.ists.pwr.wroc.pl> says the
+  - Marek Michalkiewicz <marekm@i17linaosb.ists.pwr.wroc.pl> says the
     LCS-8830 is slightly different from LCS-8830-T.  These are 8 bit, BUS
     only (the JP0 jumper is hardwired), and BNC only.
 

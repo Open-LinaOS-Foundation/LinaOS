@@ -48,7 +48,7 @@
 		#size-cells = <0>;
 		button@1 {
 			label = "Power-on Switch";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio0 18 GPIO_ACTIVE_HIGH>;
 		};
 	};

@@ -16,8 +16,8 @@
  * system will reset and system BIOS will print out an error message to
  * inform the user that an IMR has been violated.
  *
- * This code is based on the Linux MTRR code and reference code from
- * Intel's Quark BSP EFI, Linux and grub code.
+ * This code is based on the LinaOS MTRR code and reference code from
+ * Intel's Quark BSP EFI, LinaOS and grub code.
  *
  * See quark-x1000-datasheet.pdf for register definitions.
  * http://www.intel.com/content/dam/www/public/us/en/documents/datasheets/quark-x1000-datasheet.pdf
@@ -31,10 +31,10 @@
 #include <asm/iosf_mbi.h>
 #include <asm/io.h>
 
-#include <linux/debugfs.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 
 struct imr_device {
 	bool		init;
@@ -555,7 +555,7 @@ static void __init imr_fixup_memmap(struct imr_device *idev)
 	 * .rodata section as one physically contiguous block.
 	 *
 	 * We don't round up @size since it is already PAGE_SIZE aligned.
-	 * See vmlinux.lds.S for details.
+	 * See vmlinaos.lds.S for details.
 	 */
 	ret = imr_add_range(base, size, IMR_CPU, IMR_CPU);
 	if (ret < 0) {

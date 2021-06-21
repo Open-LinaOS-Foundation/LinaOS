@@ -5,15 +5,15 @@
  * Copyright (C) 2014  Renesas Electronics Corporation
  * Copyright (C) 2013  Magnus Damm
  */
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
-#include <linux/suspend.h>
-#include <linux/threads.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/of_address.h>
+#include <linaos/smp.h>
+#include <linaos/suspend.h>
+#include <linaos/threads.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
 #include <asm/proc-fns.h>

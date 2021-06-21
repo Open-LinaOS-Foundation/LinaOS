@@ -9,12 +9,12 @@
  * Harald Hoyer's description of the device.
  */
 
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/libps2.h>
+#include <linaos/dmi.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include "psmouse.h"
 #include "lifebook.h"

@@ -3,17 +3,17 @@
  * PXA2xx SPI DMA engine support.
  *
  * Copyright (C) 2013, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/scatterlist.h>
-#include <linux/sizes.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/pxa2xx_ssp.h>
+#include <linaos/scatterlist.h>
+#include <linaos/sizes.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
 
 #include "spi-pxa2xx.h"
 

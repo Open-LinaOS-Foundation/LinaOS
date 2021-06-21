@@ -9,12 +9,12 @@
 #ifndef _LIBFCOE_H
 #define _LIBFCOE_H
 
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/random.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/workqueue.h>
+#include <linaos/random.h>
 #include <scsi/fc/fc_fcoe.h>
 #include <scsi/libfc.h>
 #include <scsi/fcoe_sysfs.h>

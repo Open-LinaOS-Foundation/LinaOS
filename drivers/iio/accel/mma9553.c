@@ -4,15 +4,15 @@
  * Copyright (c) 2014, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/pm_runtime.h>
 #include "mma9551_core.h"
 
 #define MMA9553_DRV_NAME			"mma9553"

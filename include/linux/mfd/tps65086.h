@@ -17,8 +17,8 @@
 #ifndef __LINUX_MFD_TPS65086_H
 #define __LINUX_MFD_TPS65086_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /* List of registers for TPS65086 */
 #define TPS65086_DEVICEID		0x01

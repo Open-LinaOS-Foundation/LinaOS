@@ -25,15 +25,15 @@
  * process is reset, we reclaim the memory available.  There is
  * currently no deallocator for this memory.
  */
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

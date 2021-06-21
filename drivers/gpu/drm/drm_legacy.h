@@ -28,7 +28,7 @@
  * should no longer be using. They cannot be removed as legacy
  * drivers use them, and removing them are API breaks.
  */
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include <drm/drm.h>
 #include <drm/drm_device.h>

@@ -11,7 +11,7 @@
 #ifndef _LP8755_H
 #define _LP8755_H
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 #define LP8755_NAME "lp8755-regulator"
 /*

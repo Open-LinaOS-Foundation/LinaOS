@@ -14,11 +14,11 @@
 #ifndef LRU_CACHE_H
 #define LRU_CACHE_H
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/string.h> /* for memset */
-#include <linux/seq_file.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/string.h> /* for memset */
+#include <linaos/seq_file.h>
 
 /*
 This header file (and its .c file; kernel-doc of functions see there)

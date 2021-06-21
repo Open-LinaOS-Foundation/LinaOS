@@ -13,7 +13,7 @@ targets := $(obj-vdso) vdso.so vdso.so.dbg
 obj-vdso := $(addprefix $(obj)/, $(obj-vdso))
 
 ccflags-y := -shared -fno-common -fno-builtin -nostdlib -fPIC -Wl,-shared -g \
-	-Wl,-soname=linux-vdso.so.1 -Wl,--hash-style=sysv
+	-Wl,-soname=linaos-vdso.so.1 -Wl,--hash-style=sysv
 
 # Disable gcov profiling for VDSO code
 GCOV_PROFILE := n

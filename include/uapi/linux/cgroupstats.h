@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: LGPL-2.1 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1 WITH LinaOS-syscall-note */
 /* cgroupstats.h - exporting per-cgroup statistics
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@linaos.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -16,8 +16,8 @@
 #ifndef _LINUX_CGROUPSTATS_H
 #define _LINUX_CGROUPSTATS_H
 
-#include <linux/types.h>
-#include <linux/taskstats.h>
+#include <linaos/types.h>
+#include <linaos/taskstats.h>
 
 /*
  * Data shared between user space and kernel space on a per cgroup

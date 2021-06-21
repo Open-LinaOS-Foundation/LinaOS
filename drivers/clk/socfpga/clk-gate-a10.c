@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2015 Altera Corporation. All rights reserved
  */
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 #include "clk.h"
 

@@ -8,7 +8,7 @@
  * - redirecting towards the correct front port based on TX VLAN and popping
  *   that on egress
  */
-#include <linux/dsa/8021q.h>
+#include <linaos/dsa/8021q.h>
 #include <soc/mscc/ocelot.h>
 #include <soc/mscc/ocelot_ptp.h>
 #include "dsa_priv.h"

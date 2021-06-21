@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -14,8 +14,8 @@
 #ifndef _WIFI_H_
 #define _WIFI_H_
 
-#include <linux/compiler.h>
-#include <linux/ieee80211.h>
+#include <linaos/compiler.h>
+#include <linaos/ieee80211.h>
 
 #define WLAN_HDR_A3_LEN		24
 #define WLAN_HDR_A3_QOS_LEN	26

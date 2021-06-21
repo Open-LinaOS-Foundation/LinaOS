@@ -6,17 +6,17 @@
  * Copyright (c) 2004 Dmitry Torokhov
  */
 
-#include <linux/kref.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/major.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <linaos/kref.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/module.h>
+#include <linaos/serio.h>
+#include <linaos/major.h>
+#include <linaos/device.h>
+#include <linaos/miscdevice.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
 
 #define DRIVER_DESC	"Raw serio driver"
 

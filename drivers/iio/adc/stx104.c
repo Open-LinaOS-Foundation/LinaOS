@@ -3,19 +3,19 @@
  * IIO driver for the Apex Embedded Systems STX104
  * Copyright (C) 2016 William Breathitt Gray
  */
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/types.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/isa.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/types.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/isa.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/spinlock.h>
 
 #define STX104_OUT_CHAN(chan) {				\
 	.type = IIO_VOLTAGE,				\

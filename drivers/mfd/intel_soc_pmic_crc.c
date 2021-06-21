@@ -5,13 +5,13 @@
  * Copyright (C) 2013, 2014 Intel Corporation. All rights reserved.
  *
  * Author: Yang, Bin <bin.yang@intel.com>
- * Author: Zhu, Lejun <lejun.zhu@linux.intel.com>
+ * Author: Zhu, Lejun <lejun.zhu@linaos.intel.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/intel_soc_pmic.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/intel_soc_pmic.h>
 
 #include "intel_soc_pmic_core.h"
 

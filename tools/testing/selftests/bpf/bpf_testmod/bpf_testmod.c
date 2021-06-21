@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Facebook */
-#include <linux/error-injection.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/percpu-defs.h>
-#include <linux/sysfs.h>
-#include <linux/tracepoint.h>
+#include <linaos/error-injection.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/sysfs.h>
+#include <linaos/tracepoint.h>
 #include "bpf_testmod.h"
 
 #define CREATE_TRACE_POINTS

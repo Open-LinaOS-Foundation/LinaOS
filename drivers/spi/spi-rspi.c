@@ -9,22 +9,22 @@
  * Copyright (C) 2011 Renesas Solutions Corp.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sh_dma.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/rspi.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sh_dma.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/rspi.h>
+#include <linaos/spinlock.h>
 
 #define RSPI_SPCR		0x00	/* Control Register */
 #define RSPI_SSLP		0x01	/* Slave Select Polarity Register */

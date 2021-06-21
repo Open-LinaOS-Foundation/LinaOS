@@ -5,10 +5,10 @@
  * Copyright 2016 Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/leds.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/notifier.h>
+#include <linaos/leds.h>
 #include "../leds.h"
 
 static struct led_trigger *trigger;

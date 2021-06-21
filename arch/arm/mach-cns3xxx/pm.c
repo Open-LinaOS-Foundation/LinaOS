@@ -3,11 +3,11 @@
  * Copyright 2008 Cavium Networks
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/atomic.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/atomic.h>
 #include "cns3xxx.h"
 #include "pm.h"
 #include "core.h"

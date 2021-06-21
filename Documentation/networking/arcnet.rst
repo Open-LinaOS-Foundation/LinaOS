@@ -22,7 +22,7 @@ lines.  Hey, I'm in Computer Science, not English.  Give me a break.
 The point is:  I REALLY REALLY REALLY REALLY REALLY want to hear from you if
 you test this and get it working.  Or if you don't.  Or anything.
 
-ARCnet 0.32 ALPHA first made it into the Linux kernel 1.1.80 - this was
+ARCnet 0.32 ALPHA first made it into the LinaOS kernel 1.1.80 - this was
 nice, but after that even FEWER people started writing to me because they
 didn't even have to install the patch.  <sigh>
 
@@ -43,7 +43,7 @@ Come on, be a sport!  Send me a success report!
 
    My e-mail address is: apenwarr@worldvisions.ca
 
-These are the ARCnet drivers for Linux.
+These are the ARCnet drivers for LinaOS.
 
 This new release (2.91) has been put together by David Woodhouse
 <dwmw2@infradead.org>, in an attempt to tidy up the driver after adding support
@@ -63,17 +63,17 @@ Where do I discuss these drivers?
 ---------------------------------
 
 Tomasz has been so kind as to set up a new and improved mailing list.
-Subscribe by sending a message with the BODY "subscribe linux-arcnet YOUR
+Subscribe by sending a message with the BODY "subscribe linaos-arcnet YOUR
 REAL NAME" to listserv@tichy.ch.uj.edu.pl.  Then, to submit messages to the
-list, mail to linux-arcnet@tichy.ch.uj.edu.pl.
+list, mail to linaos-arcnet@tichy.ch.uj.edu.pl.
 
 There are archives of the mailing list at:
 
 	http://epistolary.org/mailman/listinfo.cgi/arcnet
 
-The people on linux-net@vger.kernel.org (now defunct, replaced by
+The people on linaos-net@vger.kernel.org (now defunct, replaced by
 netdev@vger.kernel.org) have also been known to be very helpful, especially
-when we're talking about ALPHA Linux kernels that may or may not work right
+when we're talking about ALPHA LinaOS kernels that may or may not work right
 in the first place.
 
 
@@ -119,10 +119,10 @@ All you will need to do in order to install the driver is::
 
 If you obtained this ARCnet package as an upgrade to the ARCnet driver in
 your current kernel, you will need to first copy arcnet.c over the one in
-the linux/drivers/net directory.
+the linaos/drivers/net directory.
 
 You will know the driver is installed properly if you get some ARCnet
-messages when you reboot into the new Linux kernel.
+messages when you reboot into the new LinaOS kernel.
 
 There are four chipset options:
 
@@ -195,7 +195,7 @@ If you load the chipset support as a module, the options are::
 Loadable Module Support
 -----------------------
 
-Configure and rebuild Linux.  When asked, answer 'm' to "Generic ARCnet
+Configure and rebuild LinaOS.  When asked, answer 'm' to "Generic ARCnet
 support" and to support for your ARCnet chipset if you want to use the
 loadable module. You can also say 'y' to "Generic ARCnet support" and 'm'
 to the chipset support if you wish.
@@ -214,7 +214,7 @@ and works as a module, so most of this is now unnecessary.)
 
 For example::
 
-	cd /usr/src/linux/modules
+	cd /usr/src/linaos/modules
 	insmod arcnet.o
 	insmod com90xx.o
 	insmod com20020.o io=0x2e0 device=eth1
@@ -228,7 +228,7 @@ probe for your card automatically when you boot. If you use a different
 chipset driver complied into the kernel, you must give the necessary options
 on the kernel command line, as detailed above.
 
-Go read the NET-2-HOWTO and ETHERNET-HOWTO for Linux; they should be
+Go read the NET-2-HOWTO and ETHERNET-HOWTO for LinaOS; they should be
 available where you picked up this driver.  Think of your ARCnet as a
 souped-up (or down, as the case may be) Ethernet card.
 
@@ -240,14 +240,14 @@ is DIFFERENT.
 Multiple Cards in One Computer
 ------------------------------
 
-Linux has pretty good support for this now, but since I've been busy, the
+LinaOS has pretty good support for this now, but since I've been busy, the
 ARCnet driver has somewhat suffered in this respect. COM90xx support, if
 compiled into the kernel, will (try to) autodetect all the installed cards.
 
 If you have other cards, with support compiled into the kernel, then you can
 just repeat the options on the kernel command line, e.g.::
 
-	LILO: linux com20020=0x2e0 com20020=0x380 com90io=0x260
+	LILO: linaos com20020=0x2e0 com20020=0x380 com90io=0x260
 
 If you have the chipset support built as a loadable module, then you need to
 do something like this::
@@ -263,10 +263,10 @@ How do I get it to work with...?
 --------------------------------
 
 NFS:
-	Should be fine linux->linux, just pretend you're using Ethernet cards.
+	Should be fine linaos->linaos, just pretend you're using Ethernet cards.
 	oak.oakland.edu:/simtel/msdos/nfs has some nice DOS clients.  There
 	is also a DOS-based NFS server called SOSS.  It doesn't multitask
-	quite the way Linux does (actually, it doesn't multitask AT ALL) but
+	quite the way LinaOS does (actually, it doesn't multitask AT ALL) but
 	you never know what you might need.
 
 	With AmiTCP (and possibly others), you may need to set the following
@@ -294,11 +294,11 @@ LAN Manager and Windows for Workgroups:
 	are incompatible with the Internet standard.  They try to pretend
 	the cards are Ethernet, and confuse everyone else on the network.
 
-	However, v2.00 and higher of the Linux ARCnet driver supports this
+	However, v2.00 and higher of the LinaOS ARCnet driver supports this
 	protocol via the 'arc0e' device.  See the section on "Multiprotocol
 	Support" for more information.
 
-	Using the freeware Samba server and clients for Linux, you can now
+	Using the freeware Samba server and clients for LinaOS, you can now
 	interface quite nicely with TCP/IP-based WfWg or Lan Manager
 	networks.
 
@@ -306,7 +306,7 @@ Windows 95:
 	Tools are included with Win95 that let you use either the LANMAN
 	style network drivers (NDIS) or Novell drivers (ODI) to handle your
 	ARCnet packets.  If you use ODI, you'll need to use the 'arc0'
-	device with Linux.  If you use NDIS, then try the 'arc0e' device.
+	device with LinaOS.  If you use NDIS, then try the 'arc0e' device.
 	See the "Multiprotocol Support" section below if you need arc0e,
 	you're completely insane, and/or you need to build some kind of
 	hybrid network that uses both encapsulation types.
@@ -323,7 +323,7 @@ OS/2:
 
 NetBSD/AmiTCP:
 	These use an old version of the Internet standard ARCnet
-	protocol (RFC1051) which is compatible with the Linux driver v2.10
+	protocol (RFC1051) which is compatible with the LinaOS driver v2.10
 	ALPHA and above using the arc0s device. (See "Multiprotocol ARCnet"
 	below.)  ** Newer versions of NetBSD apparently support RFC1201.
 
@@ -350,7 +350,7 @@ The ARCnet driver v2.10 ALPHA supports three protocols, each on its own
 		Microsoft's NDIS ARCnet driver, like the one in WfWg and
 		LANMAN.  Because the MTU of 493 is actually smaller than the
 		one "required" by TCP/IP (576), there is a chance that some
-		network operations will not function properly.  The Linux
+		network operations will not function properly.  The LinaOS
 		TCP/IP layer can compensate in most cases, however, by
 		automatically fragmenting the TCP/IP packets to make them
 		fit.  arc0e also works slightly more slowly than arc0, for
@@ -373,7 +373,7 @@ The ARCnet driver v2.10 ALPHA supports three protocols, each on its own
 
 You can choose not to compile arc0e and arc0s into the driver if you want -
 this will save you a bit of memory and avoid confusion when eg. trying to
-use the "NFS-root" stuff in recent Linux kernels.
+use the "NFS-root" stuff in recent LinaOS kernels.
 
 The arc0e and arc0s devices are created automatically when you first
 ifconfig the arc0 device.  To actually use them, though, you need to also
@@ -412,12 +412,12 @@ can set up your network then:
    my home network; I don't have any NetBSD or AmiTCP computers, so I only
    use arc0s during limited testing.
 
-   I have three computers on my home network; two Linux boxes (which prefer
+   I have three computers on my home network; two LinaOS boxes (which prefer
    RFC1201 protocol, for reasons listed above), and one XT that can't run
-   Linux but runs the free Microsoft LANMAN Client instead.
+   LinaOS but runs the free Microsoft LANMAN Client instead.
 
-   Worse, one of the Linux computers (freedom) also has a modem and acts as
-   a router to my Internet provider.  The other Linux box (insight) also has
+   Worse, one of the LinaOS computers (freedom) also has a modem and acts as
+   a router to my Internet provider.  The other LinaOS box (insight) also has
    its own IP address and needs to use freedom as its default gateway.  The
    XT (patience), however, does not have its own Internet IP address and so
    I assigned it one on a "private subnet" (as defined by RFC1597).
@@ -457,7 +457,7 @@ can set up your network then:
    Client, which means I need the arc0e device.  It needs to be able to talk
    to both insight and freedom, and also use freedom as a gateway to the
    Internet.  (Recall that patience has a "private IP address" which won't
-   work on the Internet; that's okay, I configured Linux IP masquerading on
+   work on the Internet; that's okay, I configured LinaOS IP masquerading on
    freedom for this subnet).
 
    So patience (necessarily; I don't have another IP number from my
@@ -566,7 +566,7 @@ Ping-pong buffers are implemented both ways.
 
 If your debug level includes D_DURING and you did NOT define SLOW_XMIT_COPY,
 the buffers are cleared to a constant value of 0x42 every time the card is
-reset (which should only happen when you do an ifconfig up, or when Linux
+reset (which should only happen when you do an ifconfig up, or when LinaOS
 decides that the driver is broken).  During a transmit, unused parts of the
 buffer will be cleared to 0x42 as well.  This is to make it easier to figure
 out which bytes are being used by a packet.

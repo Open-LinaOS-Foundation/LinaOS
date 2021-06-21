@@ -9,7 +9,7 @@
 #ifndef __ASM_MIPS_DEC_RTC_DEC_H
 #define __ASM_MIPS_DEC_RTC_DEC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/addrspace.h>
 #include <asm/dec/system.h>
 

@@ -5,9 +5,9 @@
  * Copyright (C) 2014-2015 Intel Corporation.
  */
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/debugfs.h>
 
 #include "intel_th.h"
 #include "debug.h"

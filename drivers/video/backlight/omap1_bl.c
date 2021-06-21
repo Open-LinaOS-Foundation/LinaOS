@@ -5,14 +5,14 @@
  * Copyright (c) 2006 Andrzej Zaborowski  <balrog@zabor.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
-#include <linux/platform_data/omap1_bl.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/slab.h>
+#include <linaos/platform_data/omap1_bl.h>
 
 #include <mach/hardware.h>
 #include <mach/mux.h>

@@ -2,7 +2,7 @@
 /*
  * OpenRISC fault.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,13 +11,13 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/extable.h>
-#include <linux/sched/signal.h>
-#include <linux/perf_event.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/extable.h>
+#include <linaos/sched/signal.h>
+#include <linaos/perf_event.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/siginfo.h>
 #include <asm/signal.h>
 

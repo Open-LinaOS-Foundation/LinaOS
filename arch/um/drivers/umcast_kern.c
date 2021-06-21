@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * user-mode-linux networking multicast transport
+ * user-mode-linaos networking multicast transport
  * Copyright (C) 2001 by Harald Welte <laforge@gnumonks.org>
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  *
  * based on the existing uml-networking code, which is
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org) and
@@ -11,8 +11,8 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
 #include "umcast.h"
 #include <net_kern.h>
 

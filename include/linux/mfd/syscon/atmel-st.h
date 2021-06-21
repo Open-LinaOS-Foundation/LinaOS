@@ -10,7 +10,7 @@
 #ifndef _LINUX_MFD_SYSCON_ATMEL_ST_H
 #define _LINUX_MFD_SYSCON_ATMEL_ST_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define AT91_ST_CR	0x00	/* Control Register */
 #define		AT91_ST_WDRST	BIT(0)	/* Watchdog Timer Restart */

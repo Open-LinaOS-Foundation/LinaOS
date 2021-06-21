@@ -6,15 +6,15 @@
  * Copyright (C) 2016 Pengutronix, Michael Tretter <kernel@pengutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/platform_device.h>
+#include <linaos/videodev2.h>
+#include <linaos/slab.h>
 
 #include "imx-vdoa.h"
 

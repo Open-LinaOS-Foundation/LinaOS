@@ -14,21 +14,21 @@
  *   Scott Murray <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>	/* try_module_get & module_put */
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>	/* try_module_get & module_put */
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/kobject.h>
+#include <linaos/sysfs.h>
+#include <linaos/pagemap.h>
+#include <linaos/init.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/uaccess.h>
 #include "../pci.h"
 #include "cpci_hotplug.h"
 

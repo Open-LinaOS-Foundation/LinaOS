@@ -17,11 +17,11 @@
 #ifndef __LINUX_TPM_H__
 #define __LINUX_TPM_H__
 
-#include <linux/hw_random.h>
-#include <linux/acpi.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
+#include <linaos/hw_random.h>
+#include <linaos/acpi.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
+#include <linaos/highmem.h>
 #include <crypto/hash_info.h>
 
 #define TPM_DIGEST_SIZE 20	/* Max TPM v1.2 PCR size */

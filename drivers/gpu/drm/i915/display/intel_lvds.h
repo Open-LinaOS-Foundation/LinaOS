@@ -6,7 +6,7 @@
 #ifndef __INTEL_LVDS_H__
 #define __INTEL_LVDS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "i915_reg.h"
 

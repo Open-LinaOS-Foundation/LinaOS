@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-h2.c
+ * linaos/arch/arm/mach-omap1/board-h2.c
  *
  * Board specific inits for OMAP-1610 H2
  *
@@ -15,30 +15,30 @@
  * H2 specific changes and cleanup
  * Copyright (C) 2004 Nokia Corporation by Imre Deak <imre.deak@nokia.com>
  */
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/platnand.h>
-#include <linux/mtd/physmap.h>
-#include <linux/input.h>
-#include <linux/mfd/tps65010.h>
-#include <linux/smc91x.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/leds.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/input.h>
+#include <linaos/mfd/tps65010.h>
+#include <linaos/smc91x.h>
+#include <linaos/omapfb.h>
+#include <linaos/platform_data/gpio-omap.h>
+#include <linaos/leds.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
 #include <mach/mux.h>
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 #include <mach/tc.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/platform_data/keypad-omap.h>
 #include "flash.h"
 
 #include <mach/hardware.h>

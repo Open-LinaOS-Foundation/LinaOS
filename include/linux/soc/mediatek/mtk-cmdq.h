@@ -7,9 +7,9 @@
 #ifndef __MTK_CMDQ_H__
 #define __MTK_CMDQ_H__
 
-#include <linux/mailbox_client.h>
-#include <linux/mailbox/mtk-cmdq-mailbox.h>
-#include <linux/timer.h>
+#include <linaos/mailbox_client.h>
+#include <linaos/mailbox/mtk-cmdq-mailbox.h>
+#include <linaos/timer.h>
 
 #define CMDQ_ADDR_HIGH(addr)	((u32)(((addr) >> 16) & GENMASK(31, 0)))
 #define CMDQ_ADDR_LOW(addr)	((u16)(addr) | BIT(1))

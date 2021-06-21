@@ -2,7 +2,7 @@
 #ifndef _LINUX_ERROR_INJECTION_H
 #define _LINUX_ERROR_INJECTION_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm-generic/error-injection.h>
 
 #ifdef CONFIG_FUNCTION_ERROR_INJECTION

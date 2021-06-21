@@ -4,13 +4,13 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kmod.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/mtd.h>
 
 static DEFINE_SPINLOCK(chip_drvs_lock);
 static LIST_HEAD(chip_drvs_list);

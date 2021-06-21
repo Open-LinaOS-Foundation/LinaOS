@@ -8,17 +8,17 @@
  * the Free Software Foundation.
  */
 
-#include <linux/ctype.h>
-#include <linux/stringify.h>
-#include <linux/ethtool.h>
-#include <linux/linkmode.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/firmware.h>
-#include <linux/utsname.h>
-#include <linux/time.h>
+#include <linaos/ctype.h>
+#include <linaos/stringify.h>
+#include <linaos/ethtool.h>
+#include <linaos/linkmode.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/etherdevice.h>
+#include <linaos/crc32.h>
+#include <linaos/firmware.h>
+#include <linaos/utsname.h>
+#include <linaos/time.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"
 #include "bnxt_xdp.h"

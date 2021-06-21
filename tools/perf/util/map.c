@@ -8,7 +8,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <uapi/linux/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
+#include <uapi/linaos/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
 #include "dso.h"
 #include "map.h"
 #include "map_symbol.h"
@@ -17,8 +17,8 @@
 #include "build-id.h"
 #include "debug.h"
 #include "machine.h"
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include "srcline.h"
 #include "namespaces.h"
 #include "unwind.h"
@@ -208,7 +208,7 @@ out_delete:
 
 /*
  * Constructor variant for modules (where we know from /proc/modules where
- * they are loaded) and for vmlinux, where only after we load all the
+ * they are loaded) and for vmlinaos, where only after we load all the
  * symbols we'll know where it starts and ends.
  */
 struct map *map__new2(u64 start, struct dso *dso)
@@ -467,7 +467,7 @@ u64 map__rip_2objdump(struct map *map, u64 rip)
 	struct kmap *kmap = __map__kmap(map);
 
 	/*
-	 * vmlinux does not have program headers for PTI entry trampolines and
+	 * vmlinaos does not have program headers for PTI entry trampolines and
 	 * kcore may not either. However the trampoline object code is on the
 	 * main kernel map, so just use that instead.
 	 */

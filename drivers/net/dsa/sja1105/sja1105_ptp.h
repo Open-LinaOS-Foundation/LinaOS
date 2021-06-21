@@ -4,7 +4,7 @@
 #ifndef _SJA1105_PTP_H
 #define _SJA1105_PTP_H
 
-#include <linux/timer.h>
+#include <linaos/timer.h>
 
 #if IS_ENABLED(CONFIG_NET_DSA_SJA1105_PTP)
 

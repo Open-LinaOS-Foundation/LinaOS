@@ -40,7 +40,7 @@
  * The watchdog/timer subdevice is not currently supported.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedi_pci.h"
 #include "amcc_s5933.h"

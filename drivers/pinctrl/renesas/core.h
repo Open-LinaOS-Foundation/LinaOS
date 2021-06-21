@@ -7,7 +7,7 @@
 #ifndef __SH_PFC_CORE_H__
 #define __SH_PFC_CORE_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "sh_pfc.h"
 

@@ -10,10 +10,10 @@
  *		IPv6 support
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv6.h>
 #include <net/ipv6.h>
 #include <net/xfrm.h>
 

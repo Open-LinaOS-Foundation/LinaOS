@@ -6,12 +6,12 @@
  * Copyright (C) 2017 Facebook
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/elevator.h>
-#include <linux/module.h>
-#include <linux/sbitmap.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/elevator.h>
+#include <linaos/module.h>
+#include <linaos/sbitmap.h>
 
 #include <trace/events/block.h>
 

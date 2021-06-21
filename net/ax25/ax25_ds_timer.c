@@ -4,27 +4,27 @@
  * Copyright (C) Jonathan Naylor G4KLX (g4klx@g4klx.demon.co.uk)
  * Copyright (C) Joerg Reuter DL1BKE (jreuter@yaina.de)
  */
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/spinlock.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
 #include <net/tcp_states.h>
 #include <net/ax25.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <linaos/uaccess.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
 
 static void ax25_ds_timeout(struct timer_list *);
 

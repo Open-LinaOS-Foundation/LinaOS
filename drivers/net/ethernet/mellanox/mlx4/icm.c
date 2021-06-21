@@ -31,12 +31,12 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
 
-#include <linux/mlx4/cmd.h>
+#include <linaos/mlx4/cmd.h>
 
 #include "mlx4.h"
 #include "icm.h"

@@ -12,10 +12,10 @@
  * The current period is completed when HW is reconfigured.
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
 
 #include <soc/bcm2835/raspberrypi-firmware.h>
 #include <dt-bindings/pwm/raspberrypi,firmware-poe-pwm.h>

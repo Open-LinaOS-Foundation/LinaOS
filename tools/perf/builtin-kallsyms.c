@@ -8,7 +8,7 @@
  */
 #include <inttypes.h>
 #include "builtin.h"
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <subcmd/parse-options.h>
 #include "debug.h"
 #include "dso.h"
@@ -61,7 +61,7 @@ int cmd_kallsyms(int argc, const char **argv)
 		usage_with_options(kallsyms_usage, options);
 
 	symbol_conf.sort_by_name = true;
-	symbol_conf.try_vmlinux_path = (symbol_conf.vmlinux_name == NULL);
+	symbol_conf.try_vmlinaos_path = (symbol_conf.vmlinaos_name == NULL);
 	if (symbol__init(NULL) < 0)
 		return -1;
 

@@ -7,20 +7,20 @@
  * Author: Krystian Garbaciak, Dialog Semiconductor
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/da9063/core.h>
-#include <linux/mfd/da9063/registers.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/da9063/core.h>
+#include <linaos/mfd/da9063/registers.h>
 
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/of.h>
+#include <linaos/regulator/of_regulator.h>
 
 /*
  * Raw I2C access required for just accessing chip and variant info before we

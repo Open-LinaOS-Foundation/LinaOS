@@ -4,26 +4,26 @@
  *	Library for filesystems writers.
  */
 
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/quotaops.h>
-#include <linux/mutex.h>
-#include <linux/namei.h>
-#include <linux/exportfs.h>
-#include <linux/writeback.h>
-#include <linux/buffer_head.h> /* sync_mapping_buffers */
-#include <linux/fs_context.h>
-#include <linux/pseudo_fs.h>
-#include <linux/fsnotify.h>
-#include <linux/unicode.h>
-#include <linux/fscrypt.h>
+#include <linaos/blkdev.h>
+#include <linaos/export.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/cred.h>
+#include <linaos/mount.h>
+#include <linaos/vfs.h>
+#include <linaos/quotaops.h>
+#include <linaos/mutex.h>
+#include <linaos/namei.h>
+#include <linaos/exportfs.h>
+#include <linaos/writeback.h>
+#include <linaos/buffer_head.h> /* sync_mapping_buffers */
+#include <linaos/fs_context.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/fsnotify.h>
+#include <linaos/unicode.h>
+#include <linaos/fscrypt.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 
@@ -1001,7 +1001,7 @@ EXPORT_SYMBOL_GPL(simple_attr_write);
  * @get_inode:	filesystem callback to retrieve inode
  *
  * This function decodes @fid as long as it has one of the well-known
- * Linux filehandle types and calls @get_inode on it to retrieve the
+ * LinaOS filehandle types and calls @get_inode on it to retrieve the
  * inode for the object specified in the file handle.
  */
 struct dentry *generic_fh_to_dentry(struct super_block *sb, struct fid *fid,
@@ -1033,7 +1033,7 @@ EXPORT_SYMBOL_GPL(generic_fh_to_dentry);
  * @get_inode:	filesystem callback to retrieve inode
  *
  * This function decodes @fid as long as it has one of the well-known
- * Linux filehandle types and calls @get_inode on it to retrieve the
+ * LinaOS filehandle types and calls @get_inode on it to retrieve the
  * inode for the _parent_ object specified in the file handle if it
  * is specified in the file handle, or NULL otherwise.
  */

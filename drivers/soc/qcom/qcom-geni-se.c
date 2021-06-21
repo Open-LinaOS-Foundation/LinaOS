@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2017-2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2017-2018, The LinaOS Foundation. All rights reserved.
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/qcom-geni-se.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/qcom-geni-se.h>
 
 /**
  * DOC: Overview
@@ -476,7 +476,7 @@ static void geni_se_clks_off(struct geni_se *se)
  *                           engine
  * @se:	Pointer to the concerned serial engine.
  *
- * Return: 0 on success, standard Linux error codes on failure/error.
+ * Return: 0 on success, standard LinaOS error codes on failure/error.
  */
 int geni_se_resources_off(struct geni_se *se)
 {
@@ -516,7 +516,7 @@ static int geni_se_clks_on(struct geni_se *se)
  *                          engine
  * @se:	Pointer to the concerned serial engine.
  *
- * Return: 0 on success, standard Linux error codes on failure/error.
+ * Return: 0 on success, standard LinaOS error codes on failure/error.
  */
 int geni_se_resources_on(struct geni_se *se)
 {
@@ -548,7 +548,7 @@ EXPORT_SYMBOL(geni_se_resources_on);
  * programmed into DFS.
  *
  * Return: number of valid performance levels in the table on success,
- *	   standard Linux error codes on failure.
+ *	   standard LinaOS error codes on failure.
  */
 int geni_se_clk_tbl_get(struct geni_se *se, unsigned long **tbl)
 {
@@ -595,7 +595,7 @@ EXPORT_SYMBOL(geni_se_clk_tbl_get);
  * - if @exact is true  then @res_freq / <an_integer> == @req_freq
  * - if @exact is false then @res_freq / <an_integer> <= @req_freq
  *
- * Return: 0 on success, standard Linux error codes on failure.
+ * Return: 0 on success, standard LinaOS error codes on failure.
  */
 int geni_se_clk_freq_match(struct geni_se *se, unsigned long req_freq,
 			   unsigned int *index, unsigned long *res_freq,
@@ -653,7 +653,7 @@ EXPORT_SYMBOL(geni_se_clk_freq_match);
  *
  * This function is used to prepare the buffers for DMA TX.
  *
- * Return: 0 on success, standard Linux error codes on failure.
+ * Return: 0 on success, standard LinaOS error codes on failure.
  */
 int geni_se_tx_dma_prep(struct geni_se *se, void *buf, size_t len,
 			dma_addr_t *iova)
@@ -689,7 +689,7 @@ EXPORT_SYMBOL(geni_se_tx_dma_prep);
  *
  * This function is used to prepare the buffers for DMA RX.
  *
- * Return: 0 on success, standard Linux error codes on failure.
+ * Return: 0 on success, standard LinaOS error codes on failure.
  */
 int geni_se_rx_dma_prep(struct geni_se *se, void *buf, size_t len,
 			dma_addr_t *iova)

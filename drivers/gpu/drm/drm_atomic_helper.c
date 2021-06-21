@@ -25,8 +25,8 @@
  * Daniel Vetter <daniel.vetter@ffwll.ch>
  */
 
-#include <linux/dma-fence.h>
-#include <linux/ktime.h>
+#include <linaos/dma-fence.h>
+#include <linaos/ktime.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

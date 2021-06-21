@@ -2,9 +2,9 @@
 #ifndef __LINUX_XILINX_LL_TEMAC_H
 #define __LINUX_XILINX_LL_TEMAC_H
 
-#include <linux/if_ether.h>
-#include <linux/phy.h>
-#include <linux/spinlock.h>
+#include <linaos/if_ether.h>
+#include <linaos/phy.h>
+#include <linaos/spinlock.h>
 
 struct ll_temac_platform_data {
 	bool txcsum;		/* Enable/disable TX checksum */

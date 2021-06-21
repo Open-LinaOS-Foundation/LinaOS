@@ -17,7 +17,7 @@
 #ifndef	_BRCM_D11_H_
 #define	_BRCM_D11_H_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #include <defs.h>
 #include "pub.h"

@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =====================
-TLAN driver for Linux
+TLAN driver for LinaOS
 =====================
 
 :Version: 1.14a

@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/crc32.h>
-#include <linux/jffs2.h>
-#include <linux/xattr.h>
-#include <linux/mtd/mtd.h>
-#include <linux/security.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/time.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/crc32.h>
+#include <linaos/jffs2.h>
+#include <linaos/xattr.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/security.h>
 #include "nodelist.h"
 
 /* ---- Initial Security Label(s) Attachment callback --- */

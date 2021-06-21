@@ -7,7 +7,7 @@
 #include "dm_common.h"
 #include "fw_common.h"
 #include "phy_common.h"
-#include <linux/export.h>
+#include <linaos/export.h>
 
 u32 rtl92c_phy_query_bb_reg(struct ieee80211_hw *hw, u32 regaddr, u32 bitmask)
 {

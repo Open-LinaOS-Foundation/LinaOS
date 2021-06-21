@@ -256,8 +256,8 @@ int main(int argc, char **argv)
 	}
 
 	fprintf(out_file, "/* Automatically generated - do not edit */\n");
-	fprintf(out_file, "#include <linux/linkage.h>\n");
-	fprintf(out_file, "#include <linux/mm.h>\n");
+	fprintf(out_file, "#include <linaos/linkage.h>\n");
+	fprintf(out_file, "#include <linaos/mm.h>\n");
 	fprintf(out_file, "#include <asm/vdso.h>\n");
 	fprintf(out_file, "static int vdso_mremap(\n");
 	fprintf(out_file, "	const struct vm_special_mapping *sm,\n");

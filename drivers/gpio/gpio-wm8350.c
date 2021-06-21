@@ -8,16 +8,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/mfd/core.h>
+#include <linaos/platform_device.h>
+#include <linaos/seq_file.h>
 
-#include <linux/mfd/wm8350/core.h>
-#include <linux/mfd/wm8350/gpio.h>
+#include <linaos/mfd/wm8350/core.h>
+#include <linaos/mfd/wm8350/gpio.h>
 
 struct wm8350_gpio_data {
 	struct wm8350 *wm8350;

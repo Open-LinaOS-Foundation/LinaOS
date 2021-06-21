@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_IPSEC_H
 #define _LINUX_IPSEC_H
 
 /* The definitions, required to talk to KAME racoon IKE. */
 
-#include <linux/pfkeyv2.h>
+#include <linaos/pfkeyv2.h>
 
 #define IPSEC_PORT_ANY		0
 #define IPSEC_ULPROTO_ANY	255

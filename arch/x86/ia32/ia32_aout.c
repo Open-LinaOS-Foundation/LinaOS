@@ -6,40 +6,40 @@
  *  Hacked together by Andi Kleen
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/a.out.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/binfmts.h>
-#include <linux/personality.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/perf_event.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/a.out.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/stat.h>
+#include <linaos/fcntl.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/binfmts.h>
+#include <linaos/personality.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/perf_event.h>
+#include <linaos/sched/task_stack.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/user32.h>
 #include <asm/ia32.h>
 
 #undef WARN_OLD
 
-static int load_aout_binary(struct linux_binprm *);
+static int load_aout_binary(struct linaos_binprm *);
 static int load_aout_library(struct file *);
 
-static struct linux_binfmt aout_format = {
+static struct linaos_binfmt aout_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_aout_binary,
 	.load_shlib	= load_aout_library,
@@ -60,7 +60,7 @@ static int set_brk(unsigned long start, unsigned long end)
  * memory and creates the pointer tables from them, and puts their
  * addresses on the "stack", returning the new stack pointer value.
  */
-static u32 __user *create_aout_tables(char __user *p, struct linux_binprm *bprm)
+static u32 __user *create_aout_tables(char __user *p, struct linaos_binprm *bprm)
 {
 	u32 __user *argv, *envp, *sp;
 	int argc = bprm->argc, envc = bprm->envc;
@@ -101,7 +101,7 @@ static u32 __user *create_aout_tables(char __user *p, struct linux_binprm *bprm)
  * These are the functions used to load a.out style executables and shared
  * libraries.  There is no binary dependent code anywhere else.
  */
-static int load_aout_binary(struct linux_binprm *bprm)
+static int load_aout_binary(struct linaos_binprm *bprm)
 {
 	unsigned long error, fd_offset, rlim;
 	struct pt_regs *regs = current_pt_regs();

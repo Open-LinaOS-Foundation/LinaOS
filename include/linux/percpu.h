@@ -2,13 +2,13 @@
 #ifndef __LINUX_PERCPU_H
 #define __LINUX_PERCPU_H
 
-#include <linux/mmdebug.h>
-#include <linux/preempt.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/printk.h>
-#include <linux/pfn.h>
-#include <linux/init.h>
+#include <linaos/mmdebug.h>
+#include <linaos/preempt.h>
+#include <linaos/smp.h>
+#include <linaos/cpumask.h>
+#include <linaos/printk.h>
+#include <linaos/pfn.h>
+#include <linaos/init.h>
 
 #include <asm/percpu.h>
 

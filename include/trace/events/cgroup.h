@@ -5,8 +5,8 @@
 #if !defined(_TRACE_CGROUP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_CGROUP_H
 
-#include <linux/cgroup.h>
-#include <linux/tracepoint.h>
+#include <linaos/cgroup.h>
+#include <linaos/tracepoint.h>
 
 DECLARE_EVENT_CLASS(cgroup_root,
 

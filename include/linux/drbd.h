@@ -16,16 +16,16 @@
 #include <asm/types.h>
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 #else
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <limits.h>
 
-/* Although the Linux source code makes a difference between
+/* Although the LinaOS source code makes a difference between
    generic endianness and the bitfields' endianness, there is no
-   architecture as of Linux-2.6.24-rc4 where the bitfields' endianness
+   architecture as of LinaOS-2.6.24-rc4 where the bitfields' endianness
    does not match the generic endianness. */
 
 #if __BYTE_ORDER == __LITTLE_ENDIAN

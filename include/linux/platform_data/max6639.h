@@ -2,7 +2,7 @@
 #ifndef _LINUX_MAX6639_H
 #define _LINUX_MAX6639_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* platform data for the MAX6639 temperature sensor and fan control */
 

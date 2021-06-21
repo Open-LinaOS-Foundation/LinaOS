@@ -1,5 +1,5 @@
 /*
- * linux/arch/nios2/kernel/entry.S
+ * linaos/arch/nios2/kernel/entry.S
  *
  * Copyright (C) 2013-2014  Altera Corporation
  * Copyright (C) 2009, Wind River Systems Inc
@@ -16,16 +16,16 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Linux/m68k support by Hamish Macdonald
+ * LinaOS/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  * ColdFire support by Greg Ungerer (gerg@snapgear.com)
  * 5307 fixes by David W. Miller
- * linux 2.4 support David McCullough <davidm@snapgear.com>
+ * linaos 2.4 support David McCullough <davidm@snapgear.com>
  */
 
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <linaos/sys.h>
+#include <linaos/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/asm-macros.h>
 #include <asm/thread_info.h>

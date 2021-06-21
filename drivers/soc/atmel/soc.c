@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt)	"AT91: " fmt
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #include "soc.h"
 

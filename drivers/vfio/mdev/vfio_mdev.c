@@ -7,13 +7,13 @@
  *             Kirti Wankhede <kwankhede@nvidia.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vfio.h>
-#include <linux/mdev.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/vfio.h>
+#include <linaos/mdev.h>
 
 #include "mdev_private.h"
 

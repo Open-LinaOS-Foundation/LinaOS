@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: GPL-2.0+
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
+#include <linaos/bitfield.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 
 #define MESON_SOCINFO_MAJOR_VER_MESON6		0x16
 #define MESON_SOCINFO_MAJOR_VER_MESON8		0x19

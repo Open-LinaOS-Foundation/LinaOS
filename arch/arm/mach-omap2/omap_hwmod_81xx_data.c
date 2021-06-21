@@ -15,9 +15,9 @@
  *
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
-#include <linux/platform_data/hsmmc-omap.h>
+#include <linaos/platform_data/hsmmc-omap.h>
 
 #include "omap_hwmod_common_data.h"
 #include "cm81xx.h"

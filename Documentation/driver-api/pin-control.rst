@@ -2,7 +2,7 @@
 PINCTRL (PIN CONTROL) subsystem
 ===============================
 
-This document outlines the pin control subsystem in Linux
+This document outlines the pin control subsystem in LinaOS
 
 This subsystem deals with:
 
@@ -59,7 +59,7 @@ Here is an example of a PGA (Pin Grid Array) chip seen from underneath::
 To register a pin controller and name all the pins on this package we can do
 this in our driver::
 
-	#include <linux/pinctrl/pinctrl.h>
+	#include <linaos/pinctrl/pinctrl.h>
 
 	const struct pinctrl_pin_desc foo_pins[] = {
 		PINCTRL_PIN(0, "A8"),
@@ -134,7 +134,7 @@ on { 24, 25 }.
 These two groups are presented to the pin control subsystem by implementing
 some generic pinctrl_ops like this::
 
-	#include <linux/pinctrl/pinctrl.h>
+	#include <linaos/pinctrl/pinctrl.h>
 
 	struct foo_group {
 		const char *name;
@@ -219,8 +219,8 @@ above, is entirely defined by the pin controller driver.
 The pin configuration driver implements callbacks for changing pin
 configuration in the pin controller ops like this::
 
-	#include <linux/pinctrl/pinctrl.h>
-	#include <linux/pinctrl/pinconf.h>
+	#include <linaos/pinctrl/pinctrl.h>
+	#include <linaos/pinctrl/pinconf.h>
 	#include "platform_x_pindefs.h"
 
 	static int foo_pin_config_get(struct pinctrl_dev *pctldev,
@@ -576,8 +576,8 @@ A simple driver for the above example will work by setting bits 0, 1, 2, 3 or 4
 into some register named MUX to select a certain function with a certain
 group of pins would work something like this::
 
-	#include <linux/pinctrl/pinctrl.h>
-	#include <linux/pinctrl/pinmux.h>
+	#include <linaos/pinctrl/pinctrl.h>
+	#include <linaos/pinctrl/pinmux.h>
 
 	struct foo_group {
 		const char *name;
@@ -742,7 +742,7 @@ Pin control interaction with the GPIO subsystem
 ===============================================
 
 Note that the following implies that the use case is to use a certain pin
-from the Linux kernel using the API in <linux/gpio.h> with gpio_request()
+from the LinaOS kernel using the API in <linaos/gpio.h> with gpio_request()
 and similar functions. There are cases where you may be using something
 that your datasheet calls "GPIO mode", but actually is just an electrical
 configuration for a certain device. See the section below named
@@ -794,7 +794,7 @@ is taken to mean different things than what the kernel does, the developer
 may be confused by a datasheet talking about a pin being possible to set
 into "GPIO mode". It appears that what hardware engineers mean with
 "GPIO mode" is not necessarily the use case that is implied in the kernel
-interface <linux/gpio.h>: a pin that you grab from kernel code and then
+interface <linaos/gpio.h>: a pin that you grab from kernel code and then
 either listen for input or drive high/low to assert/deassert some
 external line.
 
@@ -890,7 +890,7 @@ module rather than the GPIO HW module.
 Electrical properties of the pin such as biasing and drive strength
 may be placed at some pin-specific register in all cases or as part
 of the GPIO register in case (B) especially. This doesn't mean that such
-properties necessarily pertain to what the Linux kernel calls "GPIO".
+properties necessarily pertain to what the LinaOS kernel calls "GPIO".
 
 Example: a pin is usually muxed in to be used as a UART TX line. But during
 system sleep, we need to put this pin into "GPIO mode" and ground it.
@@ -905,8 +905,8 @@ wake up and maybe even gpio_request/gpio_free as part of this cycle. This
 all gets very complicated.
 
 The solution is to not think that what the datasheet calls "GPIO mode"
-has to be handled by the <linux/gpio.h> interface. Instead view this as
-a certain pin config setting. Look in e.g. <linux/pinctrl/pinconf-generic.h>
+has to be handled by the <linaos/gpio.h> interface. Instead view this as
+a certain pin config setting. Look in e.g. <linaos/pinctrl/pinconf-generic.h>
 and you find this in the documentation:
 
   PIN_CONFIG_OUTPUT:
@@ -917,7 +917,7 @@ So it is perfectly possible to push a pin into "GPIO mode" and drive the
 line low as part of the usual pin control map. So for example your UART
 driver may look like this::
 
-	#include <linux/pinctrl/consumer.h>
+	#include <linaos/pinctrl/consumer.h>
 
 	struct pinctrl          *pinctrl;
 	struct pinctrl_state    *pins_default;
@@ -970,7 +970,7 @@ GPIO subsystem. It is just an electrical configuration used by that device
 when going to sleep, it might imply that the pin is set into something the
 datasheet calls "GPIO mode", but that is not the point: it is still used
 by that UART device to control the pins that pertain to that very UART
-driver, putting them into modes needed by the UART. GPIO in the Linux
+driver, putting them into modes needed by the UART. GPIO in the LinaOS
 kernel sense are just some 1-bit line, and is a different use case.
 
 How the registers are poked to attain the push or pull, and output low
@@ -997,7 +997,7 @@ A pin controller configuration for a machine looks pretty much like a simple
 regulator configuration, so for the example array above we want to enable i2c
 and spi on the second function mapping::
 
-	#include <linux/pinctrl/machine.h>
+	#include <linaos/pinctrl/machine.h>
 
 	static const struct pinctrl_map mapping[] __initconst = {
 		{
@@ -1213,7 +1213,7 @@ current in sleep mode.
 A driver may request a certain control state to be activated, usually just the
 default state like this::
 
-	#include <linux/pinctrl/consumer.h>
+	#include <linaos/pinctrl/consumer.h>
 
 	struct foo_state {
 	struct pinctrl *p;
@@ -1307,8 +1307,8 @@ themselves, but again sometimes this is unavoidable.
 
 So say that your driver is fetching its resources like this::
 
-	#include <linux/pinctrl/consumer.h>
-	#include <linux/gpio.h>
+	#include <linaos/pinctrl/consumer.h>
+	#include <linaos/gpio.h>
 
 	struct pinctrl *pinctrl;
 	int gpio;
@@ -1387,7 +1387,7 @@ This snippet first initializes a state object for both groups (in foo_probe()),
 then muxes the function in the pins defined by group A, and finally muxes it in
 on the pins defined by group B::
 
-	#include <linux/pinctrl/consumer.h>
+	#include <linaos/pinctrl/consumer.h>
 
 	struct pinctrl *p;
 	struct pinctrl_state *s1, *s2;

@@ -7,24 +7,24 @@
  * discipline handling modules (like SLIP).
  */
 
-#include <linux/types.h>
-#include <linux/termios.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/kernel.h>
-#include <linux/major.h>
-#include <linux/tty.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
+#include <linaos/types.h>
+#include <linaos/termios.h>
+#include <linaos/errno.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kernel.h>
+#include <linaos/major.h>
+#include <linaos/tty.h>
+#include <linaos/fcntl.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/mutex.h>
+#include <linaos/compat.h>
 #include "tty.h"
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #undef TTY_DEBUG_WAIT_UNTIL_SENT
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux network driver for QLogic BR-series Converged Network Adapter.
+ * LinaOS network driver for QLogic BR-series Converged Network Adapter.
  */
 /*
  * Copyright (c) 2005-2014 Brocade Communications Systems, Inc.
@@ -8,17 +8,17 @@
  * All rights reserved
  * www.qlogic.com
  */
-#include <linux/bitops.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/prefetch.h>
-#include <linux/module.h>
+#include <linaos/bitops.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/etherdevice.h>
+#include <linaos/in.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_ether.h>
+#include <linaos/ip.h>
+#include <linaos/prefetch.h>
+#include <linaos/module.h>
 
 #include "bnad.h"
 #include "bna.h"

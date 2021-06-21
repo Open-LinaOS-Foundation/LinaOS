@@ -20,7 +20,7 @@
 #include <fcntl.h>
 #include <net/if.h>
 #include <inttypes.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf.h>
 
 #include "bpf_insn.h"

@@ -20,7 +20,7 @@
 #define MAX_MODULE_READY_TIME		2000
 
 # ifndef __ASSEMBLER__
-#include <linux/clk/ti.h>
+#include <linaos/clk/ti.h>
 
 #include "prcm-common.h"
 

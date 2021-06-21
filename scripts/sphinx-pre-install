@@ -428,7 +428,7 @@ sub give_redhat_hints()
 
 			printf("Note: texlive packages on RHEL/CENTOS <= 7 are incomplete. Can't support PDF output\n");
 			printf("If you want to build PDF, please read:\n");
-			printf("\thttps://www.systutorials.com/241660/how-to-install-tex-live-on-centos-7-linux/\n");
+			printf("\thttps://www.systutorials.com/241660/how-to-install-tex-live-on-centos-7-linaos/\n");
 		}
 	} else {
 		if ($rel && $rel < 26) {
@@ -553,7 +553,7 @@ sub give_mageia_hints()
 	printf("You should run:\n\n\tsudo $packager_cmd $install\n");
 }
 
-sub give_arch_linux_hints()
+sub give_arch_linaos_hints()
 {
 	my %map = (
 		"sphinx_rtd_theme"	=> "python-sphinx_rtd_theme",
@@ -565,12 +565,12 @@ sub give_arch_linux_hints()
 		"rsvg-convert"		=> "extra/librsvg",
 	);
 
-	my @archlinux_tex_pkgs = (
+	my @archlinaos_tex_pkgs = (
 		"texlive-core",
 		"texlive-latexextra",
 		"ttf-dejavu",
 	);
-	check_pacman_missing(\@archlinux_tex_pkgs, 2) if ($pdf);
+	check_pacman_missing(\@archlinaos_tex_pkgs, 2) if ($pdf);
 
 	if ($pdf) {
 		check_missing_file(["/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc"],
@@ -628,7 +628,7 @@ sub give_gentoo_hints()
 sub check_distros()
 {
 	# Distro-specific hints
-	if ($system_release =~ /Red Hat Enterprise Linux/) {
+	if ($system_release =~ /Red Hat Enterprise LinaOS/) {
 		give_redhat_hints;
 		return;
 	}
@@ -636,11 +636,11 @@ sub check_distros()
 		give_redhat_hints;
 		return;
 	}
-	if ($system_release =~ /Scientific Linux/) {
+	if ($system_release =~ /Scientific LinaOS/) {
 		give_redhat_hints;
 		return;
 	}
-	if ($system_release =~ /Oracle Linux Server/) {
+	if ($system_release =~ /Oracle LinaOS Server/) {
 		give_redhat_hints;
 		return;
 	}
@@ -668,8 +668,8 @@ sub check_distros()
 		give_mageia_hints;
 		return;
 	}
-	if ($system_release =~ /Arch Linux/) {
-		give_arch_linux_hints;
+	if ($system_release =~ /Arch LinaOS/) {
+		give_arch_linaos_hints;
 		return;
 	}
 	if ($system_release =~ /Gentoo/) {

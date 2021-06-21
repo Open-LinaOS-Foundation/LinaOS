@@ -9,8 +9,8 @@
 #define _CRYPTO_INTERNAL_GENIV_H
 
 #include <crypto/internal/aead.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 
 struct aead_geniv_ctx {
 	spinlock_t lock;

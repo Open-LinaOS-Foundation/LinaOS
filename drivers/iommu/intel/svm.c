@@ -5,19 +5,19 @@
  * Authors: David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/intel-iommu.h>
-#include <linux/mmu_notifier.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/intel-svm.h>
-#include <linux/rculist.h>
-#include <linux/pci.h>
-#include <linux/pci-ats.h>
-#include <linux/dmar.h>
-#include <linux/interrupt.h>
-#include <linux/mm_types.h>
-#include <linux/ioasid.h>
+#include <linaos/intel-iommu.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
+#include <linaos/intel-svm.h>
+#include <linaos/rculist.h>
+#include <linaos/pci.h>
+#include <linaos/pci-ats.h>
+#include <linaos/dmar.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm_types.h>
+#include <linaos/ioasid.h>
 #include <asm/page.h>
 #include <asm/fpu/api.h>
 

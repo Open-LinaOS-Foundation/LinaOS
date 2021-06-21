@@ -3,12 +3,12 @@
  *  Copyright (C) 2008 Sascha Hauer <s.hauer@pengutronix.de>, Pengutronix
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 #include <dt-bindings/clock/imx1-clock.h>
 #include <soc/imx/timer.h>
 #include <asm/irq.h>

@@ -12,14 +12,14 @@
 
 #include "bcma_private.h"
 
-#include <linux/bcma/bcma.h>
+#include <linaos/bcma/bcma.h>
 
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/time.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
+#include <linaos/time.h>
 #ifdef CONFIG_BCM47XX
-#include <linux/bcm47xx_nvram.h>
+#include <linaos/bcm47xx_nvram.h>
 #endif
 
 enum bcma_boot_dev {

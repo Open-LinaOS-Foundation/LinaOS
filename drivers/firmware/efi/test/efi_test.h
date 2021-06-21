@@ -9,7 +9,7 @@
 #ifndef _DRIVERS_FIRMWARE_EFI_TEST_H_
 #define _DRIVERS_FIRMWARE_EFI_TEST_H_
 
-#include <linux/efi.h>
+#include <linaos/efi.h>
 
 struct efi_getvariable {
 	efi_char16_t	*variable_name;

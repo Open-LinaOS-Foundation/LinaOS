@@ -4,37 +4,37 @@
  *
  * Copyright (C) 2004-2008 Atmel Corporation
  */
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/types.h>
+#include <linaos/blkdev.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/scatterlist.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/types.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/sdio.h>
 
-#include <linux/atmel-mci.h>
-#include <linux/atmel_pdc.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/atmel-mci.h>
+#include <linaos/atmel_pdc.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include <asm/cacheflush.h>
 #include <asm/io.h>

@@ -9,11 +9,11 @@
  * Copyright (C) 2016 Cavium, Inc.
  */
 
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
+#include <linaos/hw_random.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
 
 struct cavium_rng {
 	struct hwrng ops;

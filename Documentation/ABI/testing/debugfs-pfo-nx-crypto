@@ -1,7 +1,7 @@
 What:		/sys/kernel/debug/nx-crypto/*
 Date:		March 2012
 KernelVersion:	3.4
-Contact:	Kent Yoder <key@linux.vnet.ibm.com>
+Contact:	Kent Yoder <key@linaos.vnet.ibm.com>
 Description:
 
 These debugfs interfaces are built by the nx-crypto driver, built in

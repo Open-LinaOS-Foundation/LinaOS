@@ -4,10 +4,10 @@
  *
  * Copyright (c) 2018 Politecnico di Torino
  */
-#include <linux/bpf.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/capability.h>
+#include <linaos/bpf.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/capability.h>
 #include "percpu_freelist.h"
 
 #define QUEUE_STACK_CREATE_FLAG_MASK \

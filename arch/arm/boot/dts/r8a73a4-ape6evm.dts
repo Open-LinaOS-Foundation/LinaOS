@@ -105,38 +105,38 @@
 
 		zero-key {
 			gpios = <&pfc 324 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_0>;
+			linaos,code = <KEY_0>;
 			label = "S16";
 			wakeup-source;
 		};
 
 		menu-key {
 			gpios = <&pfc 325 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_MENU>;
+			linaos,code = <KEY_MENU>;
 			label = "S17";
 		};
 
 		home-key {
 			gpios = <&pfc 326 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			label = "S18";
 		};
 
 		back-key {
 			gpios = <&pfc 327 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 			label = "S19";
 		};
 
 		volup-key {
 			gpios = <&pfc 328 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			label = "S20";
 		};
 
 		voldown-key {
 			gpios = <&pfc 329 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			label = "S21";
 		};
 	};

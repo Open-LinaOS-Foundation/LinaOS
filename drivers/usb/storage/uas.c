@@ -8,15 +8,15 @@
  * Copyright Sarah Sharp for Intel Corp, 2010
  */
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb_usual.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/storage.h>
-#include <linux/usb/uas.h>
+#include <linaos/blkdev.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/usb_usual.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/storage.h>
+#include <linaos/usb/uas.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>

@@ -3,8 +3,8 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/pm_qos.h>
-#include <linux/sort.h>
+#include <linaos/pm_qos.h>
+#include <linaos/sort.h>
 
 #include "intel_engine_heartbeat.h"
 #include "intel_engine_pm.h"

@@ -4,26 +4,26 @@
  *
  * All enquiries to support@picochip.com
  */
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/platform_data/gpio-dwapb.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/reset.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_data/gpio-dwapb.h>
+#include <linaos/slab.h>
 
 #include "gpiolib.h"
 #include "gpiolib-acpi.h"

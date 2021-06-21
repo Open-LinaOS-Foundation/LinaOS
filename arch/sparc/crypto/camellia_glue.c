@@ -6,11 +6,11 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/crypto.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/crypto.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/skcipher.h>
 

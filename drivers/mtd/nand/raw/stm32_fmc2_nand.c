@@ -4,21 +4,21 @@
  * Author: Christophe Kerello <christophe.kerello@st.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of_address.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
+#include <linaos/bitfield.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/of_address.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
 
 /* Bad block marker length */
 #define FMC2_BBM_LEN			2

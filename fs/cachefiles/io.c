@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/uio.h>
-#include <linux/sched/mm.h>
-#include <linux/netfs.h>
+#include <linaos/mount.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/uio.h>
+#include <linaos/sched/mm.h>
+#include <linaos/netfs.h>
 #include "internal.h"
 
 struct cachefiles_kiocb {

@@ -3,10 +3,10 @@
 #ifndef _DRM_CLIENT_H_
 #define _DRM_CLIENT_H_
 
-#include <linux/dma-buf-map.h>
-#include <linux/lockdep.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/lockdep.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_crtc.h>

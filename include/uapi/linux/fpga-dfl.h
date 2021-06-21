@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Header File for FPGA DFL User API
  *
@@ -8,14 +8,14 @@
  *   Kang Luwei <luwei.kang@intel.com>
  *   Zhang Yi <yi.z.zhang@intel.com>
  *   Wu Hao <hao.wu@intel.com>
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  */
 
 #ifndef _UAPI_LINUX_FPGA_DFL_H
 #define _UAPI_LINUX_FPGA_DFL_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 #define DFL_FPGA_API_VERSION 0
 
@@ -23,7 +23,7 @@
  * The IOCTL interface for DFL based FPGA is designed for extensibility by
  * embedding the structure length (argsz) and flags into structures passed
  * between kernel and userspace. This design referenced the VFIO IOCTL
- * interface (include/uapi/linux/vfio.h).
+ * interface (include/uapi/linaos/vfio.h).
  */
 
 #define DFL_FPGA_MAGIC 0xB6

@@ -2,7 +2,7 @@
 /*
  *  tb0226.h, Include file for TANBAC TB0226.
  *
- *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef __TANBAC_TB0226_H
 #define __TANBAC_TB0226_H

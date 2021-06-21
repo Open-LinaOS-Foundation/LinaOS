@@ -2,9 +2,9 @@
 #ifndef _ARCH_MIPS_LOCAL_H
 #define _ARCH_MIPS_LOCAL_H
 
-#include <linux/percpu.h>
-#include <linux/bitops.h>
-#include <linux/atomic.h>
+#include <linaos/percpu.h>
+#include <linaos/bitops.h>
+#include <linaos/atomic.h>
 #include <asm/cmpxchg.h>
 #include <asm/compiler.h>
 #include <asm/war.h>

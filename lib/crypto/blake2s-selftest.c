@@ -4,7 +4,7 @@
  */
 
 #include <crypto/internal/blake2s.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 /*
  * blake2s_testvecs[] generated with the program below (using libb2-dev and

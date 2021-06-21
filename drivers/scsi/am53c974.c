@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * AMD am53c974 driver.
- * Copyright (c) 2014 Hannes Reinecke, SUSE Linux GmbH
+ * Copyright (c) 2014 Hannes Reinecke, SUSE LinaOS GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
 
 #include <scsi/scsi_host.h>
 

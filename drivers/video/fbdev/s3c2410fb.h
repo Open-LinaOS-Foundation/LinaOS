@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/s3c2410fb.h
+ * linaos/drivers/video/s3c2410fb.h
  *	Copyright (c) 2004 Arnaud Patard
  *
  *  S3C2410 LCD Framebuffer Driver

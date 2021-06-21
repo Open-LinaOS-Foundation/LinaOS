@@ -2,8 +2,8 @@
 #ifndef __MACH_SUNXI_CLK_FACTORS_H
 #define __MACH_SUNXI_CLK_FACTORS_H
 
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <linaos/clk-provider.h>
+#include <linaos/spinlock.h>
 
 #define SUNXI_FACTORS_NOT_APPLICABLE	(0)
 

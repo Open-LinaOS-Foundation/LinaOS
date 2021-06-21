@@ -7,12 +7,12 @@
  * based on jz4740-nand.c
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 #include "ingenic_ecc.h"
 

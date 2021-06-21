@@ -8,24 +8,24 @@
  * SMP support for BMIPS
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/reboot.h>
-#include <linux/io.h>
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/reboot.h>
+#include <linaos/io.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/kexec.h>
 
 #include <asm/time.h>
 #include <asm/processor.h>
@@ -395,7 +395,7 @@ void __ref play_dead(void)
 
 	/*
 	 * Wakeup is on SW0 or SW1; disable everything else
-	 * Use BEV !IV (BMIPS_WARM_RESTART_VEC) to avoid the regular Linux
+	 * Use BEV !IV (BMIPS_WARM_RESTART_VEC) to avoid the regular LinaOS
 	 * IRQ handlers; this clears ST0_IE and returns immediately.
 	 */
 	clear_c0_cause(CAUSEF_IV | C_SW0 | C_SW1);

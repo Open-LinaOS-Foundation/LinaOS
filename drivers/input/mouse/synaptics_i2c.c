@@ -10,15 +10,15 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/pm.h>
 
 #define DRIVER_NAME		"synaptics_i2c"
 /* maximum product id is 15 characters */

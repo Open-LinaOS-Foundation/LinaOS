@@ -20,37 +20,37 @@
 
 		button-next {
 			label = "Next";
-			linux,code = <KEY_NEXT>;
+			linaos,code = <KEY_NEXT>;
 			press-threshold-microvolt = <1116000>; /* 62% */
 		};
 
 		button-prev {
 			label = "Previous";
-			linux,code = <KEY_PREVIOUS>;
+			linaos,code = <KEY_PREVIOUS>;
 			press-threshold-microvolt = <900000>; /* 50% */
 		};
 
 		button-wifi {
 			label = "Wifi";
-			linux,code = <KEY_WLAN>;
+			linaos,code = <KEY_WLAN>;
 			press-threshold-microvolt = <684000>; /* 38% */
 		};
 
 		button-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <468000>; /* 26% */
 		};
 
 		button-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <252000>; /* 14% */
 		};
 
 		button-voice {
 			label = "Voice";
-			linux,code = <KEY_VOICECOMMAND>;
+			linaos,code = <KEY_VOICECOMMAND>;
 			press-threshold-microvolt = <0>; /* 0% */
 		};
 	};
@@ -81,7 +81,7 @@
 
 	spdif_dit: audio-codec-2 {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dit";
+		compatible = "linaos,spdif-dit";
 		status = "okay";
 		sound-name-prefix = "DIT";
 	};
@@ -97,7 +97,7 @@
 
 	spdif_dir: audio-codec-4 {
 		#sound-dai-cells = <0>;
-		compatible = "linux,spdif-dir";
+		compatible = "linaos,spdif-dir";
 		status = "okay";
 		sound-name-prefix = "DIR";
 	};

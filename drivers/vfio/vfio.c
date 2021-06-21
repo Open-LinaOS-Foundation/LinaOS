@@ -10,28 +10,28 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/cdev.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/anon_inodes.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/rwsem.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
+#include <linaos/cdev.h>
+#include <linaos/compat.h>
+#include <linaos/device.h>
+#include <linaos/file.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/fs.h>
+#include <linaos/idr.h>
+#include <linaos/iommu.h>
+#include <linaos/list.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/rwsem.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/uaccess.h>
+#include <linaos/vfio.h>
+#include <linaos/wait.h>
+#include <linaos/sched/signal.h>
 
 #define DRIVER_VERSION	"0.3"
 #define DRIVER_AUTHOR	"Alex Williamson <alex.williamson@redhat.com>"

@@ -4,20 +4,20 @@
  * Copyright (C) 2012 Intel, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
 
 enum {
 	FB_GET_WIDTH        = 0x00,

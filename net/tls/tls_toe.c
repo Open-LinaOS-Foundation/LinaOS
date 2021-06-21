@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/spinlock.h>
 #include <net/inet_connection_sock.h>
 #include <net/tls.h>
 #include <net/tls_toe.h>

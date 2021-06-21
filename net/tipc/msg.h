@@ -37,7 +37,7 @@
 #ifndef _TIPC_MSG_H
 #define _TIPC_MSG_H
 
-#include <linux/tipc.h>
+#include <linaos/tipc.h>
 #include "core.h"
 
 /*

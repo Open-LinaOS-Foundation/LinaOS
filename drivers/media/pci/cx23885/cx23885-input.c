@@ -9,7 +9,7 @@
  *  Copyright (C) 2009  Andy Walls <awalls@md.metrocast.net>
  *
  *  However, the cx23885_input_{init,fini} functions contained herein are
- *  derived from Linux kernel files linux/media/video/.../...-input.c marked as:
+ *  derived from LinaOS kernel files linaos/media/video/.../...-input.c marked as:
  *
  *  Copyright (C) 2008 <srinivasa.deevi at conexant dot com>
  *  Copyright (C) 2005 Ludovico Cavedon <cavedon@sssup.it>
@@ -24,7 +24,7 @@
 #include "cx23885.h"
 #include "cx23885-input.h"
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <media/rc-core.h>
 #include <media/v4l2-subdev.h>
 

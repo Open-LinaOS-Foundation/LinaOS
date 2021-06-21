@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (C) 2010: YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+/* Copyright (C) 2010: YOSHIFUJI Hideaki <yoshfuji@linaos-ipv6.org>
  * Copyright (C) 2015: Linus Lüssing <linus.luessing@c0d3.blue>
  *
  * Based on the MLD support added to br_multicast.c by YOSHIFUJI Hideaki.
  */
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/ipv6.h>
 #include <net/mld.h>
 #include <net/addrconf.h>

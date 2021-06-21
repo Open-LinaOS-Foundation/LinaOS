@@ -19,17 +19,17 @@
 #ifndef _CIFS_GLOB_H
 #define _CIFS_GLOB_H
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/workqueue.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/inet.h>
+#include <linaos/slab.h>
+#include <linaos/mempool.h>
+#include <linaos/workqueue.h>
 #include "cifs_fs_sb.h"
 #include "cifsacl.h"
 #include <crypto/internal/hash.h>
-#include <linux/scatterlist.h>
-#include <uapi/linux/cifs/cifs_mount.h>
+#include <linaos/scatterlist.h>
+#include <uapi/linaos/cifs/cifs_mount.h>
 #include "smb2pdu.h"
 
 #define CIFS_MAGIC_NUMBER 0xFF534D42      /* the first four bytes of SMB PDUs */
@@ -246,7 +246,7 @@ struct smb_version_operations {
 	 * Otherwise, the returned data length is in message field DataLength.
 	 */
 	unsigned int (*read_data_length)(char *, bool in_remaining);
-	/* map smb to linux error */
+	/* map smb to linaos error */
 	int (*map_error)(char *, bool);
 	/* find mid corresponding to the response message */
 	struct mid_q_entry * (*find_mid)(struct TCP_Server_Info *, char *);
@@ -902,7 +902,7 @@ struct cifs_ses {
 	char *serverNOS;	/* name of network operating system of server */
 	char *serverDomain;	/* security realm of server */
 	__u64 Suid;		/* remote smb uid  */
-	kuid_t linux_uid;	/* overriding owner of files on the mount */
+	kuid_t linaos_uid;	/* overriding owner of files on the mount */
 	kuid_t cred_uid;	/* owner of credentials */
 	unsigned int capabilities;
 	char ip_addr[INET6_ADDRSTRLEN + 1]; /* Max ipv6 (or v4) addr string len */
@@ -1061,7 +1061,7 @@ struct cifs_tcon {
 	bool nohandlecache:1; /* if strange server resource prob can turn off */
 	bool nodelete:1;
 	bool seal:1;      /* transport encryption for this mounted share */
-	bool unix_ext:1;  /* if false disable Linux extensions to CIFS protocol
+	bool unix_ext:1;  /* if false disable LinaOS extensions to CIFS protocol
 				for this mount even if server would support */
 	bool posix_extensions; /* if true SMB3.11 posix extensions enabled */
 	bool local_lease:1; /* check leases (only) on local system not remote */
@@ -1876,7 +1876,7 @@ extern unsigned int global_secflags;	/* if on, session setup sent
 extern unsigned int sign_CIFS_PDUs;  /* enable smb packet signing */
 extern bool enable_gcm_256; /* allow optional negotiate of strongest signing (aes-gcm-256) */
 extern bool require_gcm_256; /* require use of strongest signing (aes-gcm-256) */
-extern bool linuxExtEnabled;/*enable Linux/Unix CIFS extensions*/
+extern bool linaosExtEnabled;/*enable LinaOS/Unix CIFS extensions*/
 extern unsigned int CIFSMaxBufSize;  /* max size not including hdr */
 extern unsigned int cifs_min_rcv;    /* min size of big ntwrk buf pool */
 extern unsigned int cifs_min_small;  /* min size of small buf pool */

@@ -10,8 +10,8 @@
 #ifndef SP8870_H
 #define SP8870_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/firmware.h>
 
 struct sp8870_config
 {

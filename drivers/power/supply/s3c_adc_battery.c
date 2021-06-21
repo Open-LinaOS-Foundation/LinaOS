@@ -4,20 +4,20 @@
 // Copyright (c) Vasily Khoruzhick
 // Based on h1940_battery.c by Arnaud Patard
 
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/leds.h>
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/s3c_adc_battery.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/leds.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/err.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/s3c_adc_battery.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 
-#include <linux/soc/samsung/s3c-adc.h>
+#include <linaos/soc/samsung/s3c-adc.h>
 
 #define BAT_POLL_INTERVAL		10000 /* ms */
 #define JITTER_DELAY			500 /* ms */

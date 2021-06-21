@@ -5,10 +5,10 @@
  * Copyright (C) 2010 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
+#include <linaos/kernel.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
 
 struct gfb_info {
 	struct fb_info		*info;

@@ -225,7 +225,7 @@
 #include "twl4030_omap3.dtsi"
 
 &twl_keypad {
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(0x00, 0x00, KEY_VOLUMEUP)
 		MATRIX_KEY(0x01, 0x00, KEY_VOLUMEDOWN)
 		MATRIX_KEY(0x02, 0x00, KEY_SELECT)

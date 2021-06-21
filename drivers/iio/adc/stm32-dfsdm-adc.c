@@ -6,23 +6,23 @@
  * Author: Arnaud Pouliquen <arnaud.pouliquen@st.com>.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/iio/adc/stm32-dfsdm-adc.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/hw-consumer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/timer/stm32-lptim-trigger.h>
-#include <linux/iio/timer/stm32-timer-trigger.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/iio/adc/stm32-dfsdm-adc.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/hw-consumer.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/timer/stm32-lptim-trigger.h>
+#include <linaos/iio/timer/stm32-timer-trigger.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #include "stm32-dfsdm.h"
 

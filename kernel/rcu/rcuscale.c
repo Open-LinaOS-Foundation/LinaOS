@@ -4,46 +4,46 @@
  *
  * Copyright (C) IBM Corporation, 2015
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
  */
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/err.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/rcupdate.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/moduleparam.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/freezer.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/stat.h>
+#include <linaos/srcu.h>
+#include <linaos/slab.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
-#include <linux/vmalloc.h>
-#include <linux/rcupdate_trace.h>
+#include <linaos/torture.h>
+#include <linaos/vmalloc.h>
+#include <linaos/rcupdate_trace.h>
 
 #include "rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linaos.ibm.com>");
 
 #define SCALE_FLAG "-scale:"
 #define SCALEOUT_STRING(s) \

@@ -4,16 +4,16 @@
  * Copyright (C) 2012 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/hdmi.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/hdmi.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/reset.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc.h>
@@ -506,7 +506,7 @@ static int tegra_hdmi_setup_audio(struct tegra_hdmi *hdmi)
 		 * XXX: This seems to be a remnant of MCP days when this was
 		 * used to work around issues with monitors not being able to
 		 * play back system startup sounds early. It is possibly not
-		 * needed on Linux at all.
+		 * needed on LinaOS at all.
 		 */
 		if (hdmi->format.channels == 2)
 			value = SOR_AUDIO_CNTRL0_INJECT_NULLSMPL;

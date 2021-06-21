@@ -4,13 +4,13 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 

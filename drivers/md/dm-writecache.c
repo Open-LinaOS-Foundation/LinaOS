@@ -5,16 +5,16 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/kthread.h>
-#include <linux/dm-io.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/dax.h>
-#include <linux/pfn_t.h>
-#include <linux/libnvdimm.h>
+#include <linaos/device-mapper.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/vmalloc.h>
+#include <linaos/kthread.h>
+#include <linaos/dm-io.h>
+#include <linaos/dm-kcopyd.h>
+#include <linaos/dax.h>
+#include <linaos/pfn_t.h>
+#include <linaos/libnvdimm.h>
 
 #define DM_MSG_PREFIX "writecache"
 

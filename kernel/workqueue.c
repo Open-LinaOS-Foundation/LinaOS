@@ -12,7 +12,7 @@
  *
  * Made to use alloc_percpu by Christoph Lameter.
  *
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE LinaOS Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  *
  * This is the generic async execution mechanism.  Work items as are
@@ -25,32 +25,32 @@
  * Please read Documentation/core-api/workqueue.rst for details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/hardirq.h>
-#include <linux/mempolicy.h>
-#include <linux/freezer.h>
-#include <linux/debug_locks.h>
-#include <linux/lockdep.h>
-#include <linux/idr.h>
-#include <linux/jhash.h>
-#include <linux/hashtable.h>
-#include <linux/rculist.h>
-#include <linux/nodemask.h>
-#include <linux/moduleparam.h>
-#include <linux/uaccess.h>
-#include <linux/sched/isolation.h>
-#include <linux/nmi.h>
-#include <linux/kvm_para.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/signal.h>
+#include <linaos/completion.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/kthread.h>
+#include <linaos/hardirq.h>
+#include <linaos/mempolicy.h>
+#include <linaos/freezer.h>
+#include <linaos/debug_locks.h>
+#include <linaos/lockdep.h>
+#include <linaos/idr.h>
+#include <linaos/jhash.h>
+#include <linaos/hashtable.h>
+#include <linaos/rculist.h>
+#include <linaos/nodemask.h>
+#include <linaos/moduleparam.h>
+#include <linaos/uaccess.h>
+#include <linaos/sched/isolation.h>
+#include <linaos/nmi.h>
+#include <linaos/kvm_para.h>
 
 #include "workqueue_internal.h"
 

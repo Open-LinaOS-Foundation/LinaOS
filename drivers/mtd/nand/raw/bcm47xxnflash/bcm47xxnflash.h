@@ -6,8 +6,8 @@
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 #endif
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
 
 struct bcm47xxnflash {
 	struct bcma_drv_cc *cc;

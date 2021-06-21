@@ -9,26 +9,26 @@
 
 #define DSS_SUBSYS_NAME "DISPC"
 
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/hardirq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/component.h>
-#include <linux/sys_soc.h>
+#include <linaos/kernel.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/vmalloc.h>
+#include <linaos/export.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/seq_file.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/hardirq.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sizes.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/component.h>
+#include <linaos/sys_soc.h>
 #include <drm/drm_fourcc.h>
 #include <drm/drm_blend.h>
 

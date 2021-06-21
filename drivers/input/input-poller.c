@@ -3,13 +3,13 @@
  * Support for polling mode for input devices.
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/input.h>
+#include <linaos/jiffies.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 #include "input-poller.h"
 
 struct input_dev_poller {

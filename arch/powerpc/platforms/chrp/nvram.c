@@ -5,11 +5,11 @@
  * /dev/nvram driver for PPC
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/rtas.h>

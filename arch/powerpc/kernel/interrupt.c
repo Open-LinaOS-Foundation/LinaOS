@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <linux/context_tracking.h>
-#include <linux/err.h>
-#include <linux/compat.h>
+#include <linaos/context_tracking.h>
+#include <linaos/err.h>
+#include <linaos/compat.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/kup.h>

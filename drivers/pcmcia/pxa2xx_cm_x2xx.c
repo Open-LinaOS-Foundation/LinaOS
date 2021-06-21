@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa/pxa_cm_x2xx.c
+ * linaos/drivers/pcmcia/pxa/pxa_cm_x2xx.c
  *
  * Compulab Ltd., 2003, 2007, 2008
  * Mike Rapoport <mike@compulab.co.il>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <asm/mach-types.h>
 #include <mach/hardware.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) ST-Ericsson AB 2010
  * Author:	Sjur Brendeland
@@ -7,9 +7,9 @@
 
 #ifndef IF_CAIF_H_
 #define IF_CAIF_H_
-#include <linux/sockios.h>
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
 
 /**
  * enum ifla_caif - CAIF NetlinkRT parameters.

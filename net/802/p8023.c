@@ -9,12 +9,12 @@
  *	has done anything like the old IPX.
  */
 
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/in.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 
 #include <net/datalink.h>
 #include <net/p8022.h>

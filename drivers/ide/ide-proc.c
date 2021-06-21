@@ -15,18 +15,18 @@
  *   echo "name:val" >/proc/ide/ide0/hda/settings
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/ctype.h>
-#include <linux/ide.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
+#include <linaos/ctype.h>
+#include <linaos/ide.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 

@@ -32,19 +32,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/random.h>
-#include <linux/jiffies.h>
-#include <linux/lockdep.h>
-#include <linux/inet.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/parser.h>
+#include <linaos/random.h>
+#include <linaos/jiffies.h>
+#include <linaos/lockdep.h>
+#include <linaos/inet.h>
 #include <rdma/ib_cache.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

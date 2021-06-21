@@ -5,9 +5,9 @@
 #ifndef __DAX_PRIVATE_H__
 #define __DAX_PRIVATE_H__
 
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
+#include <linaos/idr.h>
 
 /* private routines between core files */
 struct dax_device;

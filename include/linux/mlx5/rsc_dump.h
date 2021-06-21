@@ -1,7 +1,7 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies inc. */
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 #ifndef __MLX5_RSC_DUMP
 #define __MLX5_RSC_DUMP

@@ -12,32 +12,32 @@
  *		Initial version
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/init.h>
-#include <linux/backing-dev.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/blkdev.h>
-#include <linux/mpage.h>
-#include <linux/rmap.h>
-#include <linux/percpu.h>
-#include <linux/smp.h>
-#include <linux/sysctl.h>
-#include <linux/cpu.h>
-#include <linux/syscalls.h>
-#include <linux/buffer_head.h> /* __set_page_dirty_buffers */
-#include <linux/pagevec.h>
-#include <linux/timer.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/signal.h>
-#include <linux/mm_inline.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/writeback.h>
+#include <linaos/init.h>
+#include <linaos/backing-dev.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/blkdev.h>
+#include <linaos/mpage.h>
+#include <linaos/rmap.h>
+#include <linaos/percpu.h>
+#include <linaos/smp.h>
+#include <linaos/sysctl.h>
+#include <linaos/cpu.h>
+#include <linaos/syscalls.h>
+#include <linaos/buffer_head.h> /* __set_page_dirty_buffers */
+#include <linaos/pagevec.h>
+#include <linaos/timer.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm_inline.h>
 #include <trace/events/writeback.h>
 
 #include "internal.h"

@@ -6,7 +6,7 @@
  * John Heffner <jheffner@sc.edu>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/tcp.h>
 
 /* These factors derived from the recommended values in the aer:

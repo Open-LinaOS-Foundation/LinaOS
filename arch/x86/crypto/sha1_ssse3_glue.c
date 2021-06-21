@@ -9,19 +9,19 @@
  *
  * Copyright (c) Alan Smithee.
  * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- * Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) Jean-Francois Dive <jef@linaosbe.org>
  * Copyright (c) Mathias Krause <minipli@googlemail.com>
- * Copyright (c) Chandramouli Narayanan <mouli@linux.intel.com>
+ * Copyright (c) Chandramouli Narayanan <mouli@linaos.intel.com>
  */
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
 #include <crypto/internal/hash.h>
 #include <crypto/internal/simd.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 #include <crypto/sha1.h>
 #include <crypto/sha1_base.h>
 #include <asm/simd.h>

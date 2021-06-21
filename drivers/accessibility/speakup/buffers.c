@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/console.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/console.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #include "speakup.h"
 #include "spk_priv.h"
@@ -16,7 +16,7 @@ static u16 *buffer_end = synth_buffer + SYNTH_BUF_SIZE - 1;
 /* These try to throttle applications by stopping the TTYs
  * Note: we need to make sure that we will restart them eventually, which is
  * usually not possible to do from the notifiers. TODO: it should be possible
- * starting from linux 2.6.26.
+ * starting from linaos 2.6.26.
  *
  * So we only stop when we know alive == 1 (else we discard the data anyway),
  * and the alive synth will eventually call start_ttys from the thread context.

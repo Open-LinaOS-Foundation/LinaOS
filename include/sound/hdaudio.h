@@ -6,11 +6,11 @@
 #ifndef __SOUND_HDAUDIO_H
 #define __SOUND_HDAUDIO_H
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/timecounter.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/timecounter.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/memalloc.h>

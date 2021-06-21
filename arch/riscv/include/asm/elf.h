@@ -76,8 +76,8 @@ do {								\
 		get_cache_geometry(2, CACHE_TYPE_UNIFIED));	\
 } while (0)
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES
-struct linux_binprm;
-extern int arch_setup_additional_pages(struct linux_binprm *bprm,
+struct linaos_binprm;
+extern int arch_setup_additional_pages(struct linaos_binprm *bprm,
 	int uses_interp);
 #endif /* CONFIG_MMU */
 

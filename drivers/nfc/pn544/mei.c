@@ -5,9 +5,9 @@
  * HCI based Driver for NXP pn544 NFC Chip
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/nfc.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/nfc.h>
 #include <net/nfc/hci.h>
 #include <net/nfc/llc.h>
 

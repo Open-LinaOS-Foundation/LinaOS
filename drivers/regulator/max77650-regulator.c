@@ -5,12 +5,12 @@
 //
 // Regulator driver for MAXIM 77650/77651 charger/power-supply.
 
-#include <linux/of.h>
-#include <linux/mfd/max77650.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <linaos/of.h>
+#include <linaos/mfd/max77650.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
 
 #define MAX77650_REGULATOR_EN_CTRL_MASK		GENMASK(3, 0)
 #define MAX77650_REGULATOR_EN_CTRL_BITS(_reg) \

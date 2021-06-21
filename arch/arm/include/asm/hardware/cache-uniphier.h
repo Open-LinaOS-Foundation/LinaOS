@@ -7,7 +7,7 @@
 #ifndef __CACHE_UNIPHIER_H
 #define __CACHE_UNIPHIER_H
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 #ifdef CONFIG_CACHE_UNIPHIER
 int uniphier_cache_init(void);

@@ -5,15 +5,15 @@
  * Copyright (C) 2017 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
 
 /* bits [31:27] are read-only */
 #define U2P_R0							0x0

@@ -22,34 +22,34 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/bitops.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/tty_flip.h>
-#include <linux/tty_driver.h>
-#include <linux/serial.h>
-#include <linux/kfifo.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/fcntl.h>
+#include <linaos/sched/signal.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/ctype.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/bitops.h>
+#include <linaos/file.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/tty_flip.h>
+#include <linaos/tty_driver.h>
+#include <linaos/serial.h>
+#include <linaos/kfifo.h>
+#include <linaos/skbuff.h>
 #include <net/arp.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/gsmmux.h>
+#include <linaos/ip.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/gsmmux.h>
 #include "tty.h"
 
 static int debug;
@@ -1071,7 +1071,7 @@ static void gsm_process_modem(struct tty_struct *tty, struct gsm_dlci *dlci,
  *
  *	We have received a modem status control message. This is used by
  *	the GSM mux protocol to pass virtual modem line status and optionally
- *	to indicate break signals. Unpack it, convert to Linux representation
+ *	to indicate break signals. Unpack it, convert to LinaOS representation
  *	and if need be stuff a break message down the tty.
  */
 
@@ -1508,7 +1508,7 @@ static void gsm_dlci_t1(struct timer_list *t)
  *	gsm_dlci_begin_open	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence opening a DLCI from the Linux side. We issue SABM messages
+ *	Commence opening a DLCI from the LinaOS side. We issue SABM messages
  *	to the modem which should then reply with a UA or ADM, at which point
  *	we will move into open state. Opening is done asynchronously with retry
  *	running off timers and the responses.
@@ -1529,7 +1529,7 @@ static void gsm_dlci_begin_open(struct gsm_dlci *dlci)
  *	gsm_dlci_begin_close	-	start channel open procedure
  *	@dlci: DLCI to open
  *
- *	Commence closing a DLCI from the Linux side. We issue DISC messages
+ *	Commence closing a DLCI from the LinaOS side. We issue DISC messages
  *	to the modem which should then reply with a UA, at which point we
  *	will move into closed state. Closing is done asynchronously with retry
  *	off timers. We may also receive a DM reply from the other end which

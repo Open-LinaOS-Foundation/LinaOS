@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/cpumask.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/sched.h>
-#include <linux/sched/stat.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/time_namespace.h>
-#include <linux/irqnr.h>
-#include <linux/sched/cputime.h>
-#include <linux/tick.h>
+#include <linaos/cpumask.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/proc_fs.h>
+#include <linaos/sched.h>
+#include <linaos/sched/stat.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/time_namespace.h>
+#include <linaos/irqnr.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/tick.h>
 
 #ifndef arch_irq_stat_cpu
 #define arch_irq_stat_cpu(cpu) 0

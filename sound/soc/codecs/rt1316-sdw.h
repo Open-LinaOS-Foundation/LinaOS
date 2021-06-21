@@ -8,10 +8,10 @@
 #ifndef __RT1316_SDW_H__
 #define __RT1316_SDW_H__
 
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <linaos/regmap.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_type.h>
+#include <linaos/soundwire/sdw_registers.h>
 #include <sound/soc.h>
 
 /* RT1316 SDCA Control - function number */

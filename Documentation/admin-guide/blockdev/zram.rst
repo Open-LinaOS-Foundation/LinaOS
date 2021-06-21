@@ -20,15 +20,15 @@ Usage
 There are several ways to configure and manage zram device(-s):
 
 a) using zram and zram_control sysfs attributes
-b) using zramctl utility, provided by util-linux (util-linux@vger.kernel.org).
+b) using zramctl utility, provided by util-linaos (util-linaos@vger.kernel.org).
 
 In this document we will describe only 'manual' zram configuration steps,
 IOW, zram and zram_control sysfs attributes.
 
-In order to get a better idea about zramctl please consult util-linux
+In order to get a better idea about zramctl please consult util-linaos
 documentation, zramctl man-page or `zramctl --help`. Please be informed
-that zram maintainers do not develop/maintain util-linux or zramctl, should
-you have any questions please contact util-linux@vger.kernel.org
+that zram maintainers do not develop/maintain util-linaos or zramctl, should
+you have any questions please contact util-linaos@vger.kernel.org
 
 Following shows a typical sequence of steps for using zram.
 

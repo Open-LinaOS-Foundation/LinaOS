@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  *
@@ -11,9 +11,9 @@
 #define __ASM_ARC_BYTEORDER_H
 
 #ifdef __BIG_ENDIAN__
-#include <linux/byteorder/big_endian.h>
+#include <linaos/byteorder/big_endian.h>
 #else
-#include <linux/byteorder/little_endian.h>
+#include <linaos/byteorder/little_endian.h>
 #endif
 
 #endif /* ASM_ARC_BYTEORDER_H */

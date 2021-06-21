@@ -27,7 +27,7 @@
  * Contributors:
  *    Zhi Wang <zhi.a.wang@intel.com>
  *    Changbin Du <changbin.du@intel.com>
- *    Zhenyu Wang <zhenyuw@linux.intel.com>
+ *    Zhenyu Wang <zhenyuw@linaos.intel.com>
  *    Tina Zhang <tina.zhang@intel.com>
  *    Bing Niu <bing.niu@intel.com>
  *
@@ -36,7 +36,7 @@
 #ifndef __GVT_RENDER_H__
 #define __GVT_RENDER_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "gt/intel_engine_types.h"
 #include "gt/intel_lrc_reg.h"

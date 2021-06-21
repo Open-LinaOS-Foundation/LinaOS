@@ -21,10 +21,10 @@
 #ifndef	__HMM_H__
 #define	__HMM_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 
 #include "hmm/hmm_pool.h"
 #include "ia_css_types.h"

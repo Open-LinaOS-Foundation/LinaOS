@@ -41,7 +41,7 @@ Background
 ----------
 
 In addition to modularizing the transport protocol used for carrying
-SCSI commands ("fabrics"), the Linux kernel target, LIO, also modularizes
+SCSI commands ("fabrics"), the LinaOS kernel target, LIO, also modularizes
 the actual data storage as well. These are referred to as "backstores"
 or "storage engines". The target comes with backstores that allow a
 file, a block device, RAM, or another SCSI device to be used for the
@@ -345,7 +345,7 @@ a) Discovering and configuring TCMU UIO devices::
 
 c) Managing the command ring::
 
-      #include <linux/target_core_user.h>
+      #include <linaos/target_core_user.h>
 
       int handle_device_events(int fd, void *map)
       {

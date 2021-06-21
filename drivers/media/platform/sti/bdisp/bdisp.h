@@ -4,10 +4,10 @@
  * Authors: Fabien Dessenne <fabien.dessenne@st.com> for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/ktime.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/ktime.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

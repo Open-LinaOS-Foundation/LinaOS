@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/nommu.c
+ *  linaos/arch/arm/mm/nommu.c
  *
- * ARM uCLinux supporting functions.
+ * ARM uCLinaOS supporting functions.
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
+#include <linaos/kernel.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

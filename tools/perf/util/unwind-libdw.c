@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <elfutils/libdw.h>
 #include <elfutils/libdwfl.h>
 #include <inttypes.h>
@@ -12,8 +12,8 @@
 #include "map.h"
 #include "symbol.h"
 #include "thread.h"
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <linaos/types.h>
+#include <linaos/zalloc.h>
 #include "event.h"
 #include "perf_regs.h"
 #include "callchain.h"

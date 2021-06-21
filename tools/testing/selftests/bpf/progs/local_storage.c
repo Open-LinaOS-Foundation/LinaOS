@@ -4,7 +4,7 @@
  * Copyright 2020 Google LLC.
  */
 
-#include "vmlinux.h"
+#include "vmlinaos.h"
 #include <errno.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
@@ -155,7 +155,7 @@ int BPF_PROG(socket_post_create, struct socket *sock, int family, int type,
  * process was originally executing.
  */
 SEC("lsm/bprm_committed_creds")
-void BPF_PROG(exec, struct linux_binprm *bprm)
+void BPF_PROG(exec, struct linaos_binprm *bprm)
 {
 	__u32 pid = bpf_get_current_pid_tgid() >> 32;
 	struct local_storage *storage;

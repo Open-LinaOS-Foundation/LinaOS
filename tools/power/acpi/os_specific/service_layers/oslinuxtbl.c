@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /******************************************************************************
  *
- * Module Name: oslinuxtbl - Linux OSL for obtaining ACPI tables
+ * Module Name: oslinaostbl - LinaOS OSL for obtaining ACPI tables
  *
  * Copyright (C) 2000 - 2021, Intel Corp.
  *
@@ -10,7 +10,7 @@
 #include "acpidump.h"
 
 #define _COMPONENT          ACPI_OS_SERVICES
-ACPI_MODULE_NAME("oslinuxtbl")
+ACPI_MODULE_NAME("oslinaostbl")
 
 #ifndef PATH_MAX
 #define PATH_MAX 256
@@ -678,7 +678,7 @@ static acpi_status osl_table_initialize(void)
  *
  * DESCRIPTION: Add ACPI tables to the table list from memory.
  *
- * NOTE:        This works on Linux as table customization does not modify the
+ * NOTE:        This works on LinaOS as table customization does not modify the
  *              addresses stored in RSDP/RSDT/XSDT/FADT.
  *
  *****************************************************************************/
@@ -1287,7 +1287,7 @@ exit:
  *
  * FUNCTION:    osl_get_customized_table
  *
- * PARAMETERS:  pathname        - Directory to find Linux customized table
+ * PARAMETERS:  pathname        - Directory to find LinaOS customized table
  *              signature       - ACPI Signature for desired table. Must be
  *                                a null terminated 4-character string.
  *              instance        - Multiple table support for SSDT/UEFI (0...n)

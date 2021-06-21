@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/video/mmp/panel/tpo_tj032md01bw.c
+ * linaos/drivers/video/mmp/panel/tpo_tj032md01bw.c
  * active panel using spi interface to do init
  *
  * Copyright (C) 2012 Marvell Technology Group Ltd.
@@ -9,15 +9,15 @@
  *          Zhou Zhu <zzhu3@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/spi/spi.h>
 #include <video/mmp_disp.h>
 
 static u16 init[] = {

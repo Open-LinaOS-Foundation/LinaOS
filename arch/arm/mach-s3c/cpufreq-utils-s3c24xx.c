@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 //
 // Copyright (c) 2009 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 //
 // S3C24XX CPU Frequency scaling - utils for S3C2410/S3C2440/S3C2442
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/cpufreq.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/cpufreq.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
 
 #include "map.h"
 #include "regs-clock.h"
 
-#include <linux/soc/samsung/s3c-cpufreq-core.h>
+#include <linaos/soc/samsung/s3c-cpufreq-core.h>
 
 #include "regs-mem-s3c24xx.h"
 

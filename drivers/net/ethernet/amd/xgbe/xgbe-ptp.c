@@ -114,10 +114,10 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
+#include <linaos/clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/net_tstamp.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

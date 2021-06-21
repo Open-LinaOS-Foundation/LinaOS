@@ -10,8 +10,8 @@
 #define _MT_6797_AFE_COMMON_H_
 
 #include <sound/soc.h>
-#include <linux/list.h>
-#include <linux/regmap.h>
+#include <linaos/list.h>
+#include <linaos/regmap.h>
 #include "../common/mtk-base-afe.h"
 
 enum {

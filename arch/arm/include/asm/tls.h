@@ -2,7 +2,7 @@
 #ifndef __ASMARM_TLS_H
 #define __ASMARM_TLS_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/thread_info.h>
 
 #ifdef __ASSEMBLY__

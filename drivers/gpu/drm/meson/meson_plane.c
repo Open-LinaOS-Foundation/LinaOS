@@ -9,7 +9,7 @@
  *     Jasper St. Pierre <jstpierre@mecheye.net>
  */
 
-#include <linux/bitfield.h>
+#include <linaos/bitfield.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

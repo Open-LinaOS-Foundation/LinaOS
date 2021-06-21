@@ -6,13 +6,13 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 
 #ifndef SMC_CLOSE_H
 #define SMC_CLOSE_H
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 #include "smc.h"
 

@@ -41,15 +41,15 @@
  * Add adapter resets
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
 
 static int blacklist[] = {
 	PCI_DEVICE_ID_SI_540,

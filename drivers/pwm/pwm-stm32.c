@@ -8,13 +8,13 @@
  *             pwm-atmel.c from Bo Shen
  */
 
-#include <linux/bitfield.h>
-#include <linux/mfd/stm32-timers.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <linaos/bitfield.h>
+#include <linaos/mfd/stm32-timers.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
 
 #define CCMR_CHANNEL_SHIFT 8
 #define CCMR_CHANNEL_MASK  0xFF

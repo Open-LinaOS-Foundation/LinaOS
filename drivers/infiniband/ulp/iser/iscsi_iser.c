@@ -45,24 +45,24 @@
  *      Erez Zilber
  */
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/hardirq.h>
-#include <linux/kfifo.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/ioctl.h>
-#include <linux/cdev.h>
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/hardirq.h>
+#include <linaos/kfifo.h>
+#include <linaos/blkdev.h>
+#include <linaos/init.h>
+#include <linaos/ioctl.h>
+#include <linaos/cdev.h>
+#include <linaos/in.h>
+#include <linaos/net.h>
+#include <linaos/scatterlist.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 #include <net/sock.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

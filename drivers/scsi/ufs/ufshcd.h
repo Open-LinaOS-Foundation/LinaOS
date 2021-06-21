@@ -2,7 +2,7 @@
 /*
  * Universal Flash Storage Host controller driver
  * Copyright (C) 2011-2013 Samsung India Software Operations
- * Copyright (c) 2013-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, The LinaOS Foundation. All rights reserved.
  *
  * Authors:
  *	Santosh Yaraganavi <santosh.sy@samsung.com>
@@ -12,27 +12,27 @@
 #ifndef _UFSHCD_H
 #define _UFSHCD_H
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/regulator/consumer.h>
-#include <linux/bitfield.h>
-#include <linux/devfreq.h>
-#include <linux/keyslot-manager.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/rwsem.h>
+#include <linaos/workqueue.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
+#include <linaos/bitops.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/bitfield.h>
+#include <linaos/devfreq.h>
+#include <linaos/keyslot-manager.h>
 #include "unipro.h"
 
 #include <asm/irq.h>

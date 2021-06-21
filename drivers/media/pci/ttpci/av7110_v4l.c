@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * av7110_v4l.c: av7110 video4linux interface for DVB and Siemens DVB-C analog module
+ * av7110_v4l.c: av7110 video4linaos interface for DVB and Siemens DVB-C analog module
  *
  * Copyright (C) 1999-2002 Ralph  Metzler
  *                       & Marcus Metzler for convergence integrated media GmbH
@@ -8,17 +8,17 @@
  * originally based on code by:
  * Copyright (C) 1998,1999 Christian Theiss <mistert@rz.fh-augsburg.de>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/timer.h>
-#include <linux/poll.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/timer.h>
+#include <linaos/poll.h>
 
 #include "av7110.h"
 #include "av7110_hw.h"

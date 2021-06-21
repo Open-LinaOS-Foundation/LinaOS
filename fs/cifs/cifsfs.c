@@ -23,22 +23,22 @@
 
 /* Note that BB means BUGBUG (ie something to fix eventually) */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/vfs.h>
-#include <linux/mempool.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/namei.h>
-#include <linux/random.h>
-#include <linux/uuid.h>
-#include <linux/xattr.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/seq_file.h>
+#include <linaos/vfs.h>
+#include <linaos/mempool.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/namei.h>
+#include <linaos/random.h>
+#include <linaos/uuid.h>
+#include <linaos/xattr.h>
 #include <net/ipv6.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -47,8 +47,8 @@
 #include "cifsproto.h"
 #include "cifs_debug.h"
 #include "cifs_fs_sb.h"
-#include <linux/mm.h>
-#include <linux/key-type.h>
+#include <linaos/mm.h>
+#include <linaos/key-type.h>
 #include "cifs_spnego.h"
 #include "fscache.h"
 #include "smb2pdu.h"
@@ -72,7 +72,7 @@
 int cifsFYI = 0;
 bool traceSMB;
 bool enable_oplocks = true;
-bool linuxExtEnabled = true;
+bool linaosExtEnabled = true;
 bool lookupCacheEnabled = true;
 bool disable_legacy_dialects; /* false by default */
 bool enable_gcm_256 = true;
@@ -556,14 +556,14 @@ cifs_show_options(struct seq_file *s, struct dentry *root)
 	}
 
 	seq_printf(s, ",uid=%u",
-		   from_kuid_munged(&init_user_ns, cifs_sb->ctx->linux_uid));
+		   from_kuid_munged(&init_user_ns, cifs_sb->ctx->linaos_uid));
 	if (cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_UID)
 		seq_puts(s, ",forceuid");
 	else
 		seq_puts(s, ",noforceuid");
 
 	seq_printf(s, ",gid=%u",
-		   from_kgid_munged(&init_user_ns, cifs_sb->ctx->linux_gid));
+		   from_kgid_munged(&init_user_ns, cifs_sb->ctx->linaos_gid));
 	if (cifs_sb->mnt_cifs_flags & CIFS_MOUNT_OVERR_GID)
 		seq_puts(s, ",forcegid");
 	else

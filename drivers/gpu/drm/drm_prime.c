@@ -26,9 +26,9 @@
  *
  */
 
-#include <linux/export.h>
-#include <linux/dma-buf.h>
-#include <linux/rbtree.h>
+#include <linaos/export.h>
+#include <linaos/dma-buf.h>
+#include <linaos/rbtree.h>
 
 #include <drm/drm.h>
 #include <drm/drm_drv.h>

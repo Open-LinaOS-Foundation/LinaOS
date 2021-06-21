@@ -10,7 +10,7 @@
  * Author: Doug Thompson <dougthompson@xmission.com>
  *
  */
-#include <linux/edac.h>
+#include <linaos/edac.h>
 
 #include "edac_mc.h"
 #include "edac_module.h"

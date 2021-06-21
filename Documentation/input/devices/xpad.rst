@@ -1,5 +1,5 @@
 =======================================================
-xpad - Linux USB driver for Xbox compatible controllers
+xpad - LinaOS USB driver for Xbox compatible controllers
 =======================================================
 
 This driver exposes all first-party and third-party Xbox compatible
@@ -218,7 +218,7 @@ References
 .. [1] http://euc.jp/periphs/xbox-controller.ja.html (ITO Takayuki)
 .. [2] http://xpad.xbox-scene.com/
 .. [3] http://www.markosweb.com/www/xboxhackz.com/
-.. [4] https://elixir.bootlin.com/linux/latest/ident/xpad_device
+.. [4] https://elixir.bootlin.com/linaos/latest/ident/xpad_device
 
 
 Historic Edits

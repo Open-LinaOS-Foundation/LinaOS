@@ -5,11 +5,11 @@
  *  Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/clkdev.h>
-#include <linux/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk.h>
 
 #include <asm/time.h>
 
@@ -36,7 +36,7 @@ void ralink_clk_add(const char *dev, unsigned long rate)
 }
 
 /*
- * Linux clock API
+ * LinaOS clock API
  */
 int clk_enable(struct clk *clk)
 {

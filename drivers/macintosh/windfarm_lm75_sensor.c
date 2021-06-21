@@ -6,15 +6,15 @@
  *                    <benh@kernel.crashing.org>
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/i2c.h>
-#include <linux/of_device.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/wait.h>
+#include <linaos/i2c.h>
+#include <linaos/of_device.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>
 #include <asm/io.h>

@@ -3,7 +3,7 @@
 
 #ifdef CONFIG_PARISC_CPU_TOPOLOGY
 
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 
 struct cputopo_parisc {
 	int thread_id;

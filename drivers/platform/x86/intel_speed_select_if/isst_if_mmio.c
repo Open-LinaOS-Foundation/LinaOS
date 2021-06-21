@@ -4,14 +4,14 @@
  * Copyright (c) 2019, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sched/signal.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/isst_if.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/isst_if.h>
 
 #include "isst_if_common.h"
 

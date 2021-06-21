@@ -2,7 +2,7 @@
 /*
  * Comedi driver for NI AT-MIO E series cards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2001 David A. Schleef <ds@schleef.org>
  */
 
@@ -71,11 +71,11 @@
  * - deal with at-mio-16de-10 revision D to N changes, etc.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 #include "../comedidev.h"
 
-#include <linux/isapnp.h>
+#include <linaos/isapnp.h>
 
 #include "ni_stc.h"
 #include "8255.h"

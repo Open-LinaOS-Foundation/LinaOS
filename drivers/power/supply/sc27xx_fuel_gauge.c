@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Spreadtrum Communications Inc.
 
-#include <linux/gpio/consumer.h>
-#include <linux/iio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 /* PMIC global control registers definition */
 #define SC27XX_MODULE_EN0		0xc08

@@ -2,27 +2,27 @@
 /*
  * Copyright (C) 2017 - 2019 Cambridge Greys Limited
  * Copyright (C) 2011 - 2014 Cisco Systems Inc
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org) and
  * James Leu (jleu@mindspring.net).
  * Copyright (C) 2001 by various other people who didn't put their name here.
  */
 
-#include <linux/memblock.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/fs.h>
-#include <uapi/linux/filter.h>
+#include <linaos/memblock.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/inetdevice.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/firmware.h>
+#include <linaos/fs.h>
+#include <uapi/linaos/filter.h>
 #include <init.h>
 #include <irq_kern.h>
 #include <irq_user.h>

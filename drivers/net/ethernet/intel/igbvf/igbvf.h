@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright(c) 2009 - 2018 Intel Corporation. */
 
-/* Linux PRO/1000 Ethernet Driver main header file */
+/* LinaOS PRO/1000 Ethernet Driver main header file */
 
 #ifndef _IGBVF_H_
 #define _IGBVF_H_
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/io.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
 
 #include "vf.h"
 

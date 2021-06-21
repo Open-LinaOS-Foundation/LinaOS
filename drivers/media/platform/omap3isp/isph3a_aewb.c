@@ -12,8 +12,8 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include "isp.h"
 #include "isph3a.h"

@@ -14,14 +14,14 @@
  *  - Optionally support the FIFO
  */
 
-#include <linux/i2c.h>
-#include <linux/limits.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/limits.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define DPS310_DEV_NAME		"dps310"
 

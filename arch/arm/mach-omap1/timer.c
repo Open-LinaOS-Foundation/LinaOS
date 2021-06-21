@@ -2,7 +2,7 @@
  * OMAP1 Dual-Mode Timers - platform device registration
  *
  * Contains first level initialization routines which internally
- * generates timer device information and registers with linux
+ * generates timer device information and registers with linaos
  * device model. It also has a low level function to change the timer
  * input clock source.
  *
@@ -20,12 +20,12 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/dmtimer-omap.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/dmtimer-omap.h>
 
 #include <clocksource/timer-ti-dm.h>
 

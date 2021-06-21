@@ -6,37 +6,37 @@
 // Copyright 2011 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/delay.h>
-#include <linux/mmc/host.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/dm9000.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/driver.h>
-#include <linux/spi/spi.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/leds.h>
+#include <linaos/delay.h>
+#include <linaos/mmc/host.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/dm9000.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/spi/spi.h>
 
-#include <linux/platform_data/pca953x.h>
-#include <linux/platform_data/s3c-hsotg.h>
+#include <linaos/platform_data/pca953x.h>
+#include <linaos/platform_data/s3c-hsotg.h>
 
 #include <video/platform_lcd.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/gpio.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/mfd/wm831x/pdata.h>
+#include <linaos/mfd/wm831x/irq.h>
+#include <linaos/mfd/wm831x/gpio.h>
 
 #include <sound/wm1250-ev1.h>
 
@@ -52,13 +52,13 @@
 #include "fb.h"
 #include "sdhci.h"
 #include "gpio-cfg.h"
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <linaos/platform_data/spi-s3c64xx.h>
 
 #include "keypad.h"
 #include "devs.h"
 #include "cpu.h"
-#include <linux/soc/samsung/s3c-adc.h>
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/soc/samsung/s3c-adc.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 #include "pm.h"
 
 #include "s3c64xx.h"

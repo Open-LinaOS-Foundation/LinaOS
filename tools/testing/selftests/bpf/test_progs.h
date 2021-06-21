@@ -9,17 +9,17 @@
 #include <time.h>
 #include <signal.h>
 
-#include <linux/types.h>
+#include <linaos/types.h>
 typedef __u16 __sum16;
 #include <arpa/inet.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/filter.h>
-#include <linux/perf_event.h>
-#include <linux/socket.h>
-#include <linux/unistd.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/filter.h>
+#include <linaos/perf_event.h>
+#include <linaos/socket.h>
+#include <linaos/unistd.h>
 
 #include <sys/ioctl.h>
 #include <sys/wait.h>
@@ -27,8 +27,8 @@ typedef __u16 __sum16;
 #include <sys/time.h>
 #include <fcntl.h>
 #include <pthread.h>
-#include <linux/bpf.h>
-#include <linux/err.h>
+#include <linaos/bpf.h>
+#include <linaos/err.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 

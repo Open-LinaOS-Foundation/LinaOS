@@ -6,7 +6,7 @@
 #ifndef BCM_VK_MSG_H
 #define BCM_VK_MSG_H
 
-#include <uapi/linux/misc/bcm_vk.h>
+#include <uapi/linaos/misc/bcm_vk.h>
 #include "bcm_vk_sg.h"
 
 /* Single message queue control structure */

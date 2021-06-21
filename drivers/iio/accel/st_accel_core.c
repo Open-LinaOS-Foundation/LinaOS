@@ -7,21 +7,21 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/buffer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/buffer.h>
 
-#include <linux/iio/common/st_sensors.h>
+#include <linaos/iio/common/st_sensors.h>
 #include "st_accel.h"
 
 #define ST_ACCEL_NUMBER_DATA_CHANNELS		3

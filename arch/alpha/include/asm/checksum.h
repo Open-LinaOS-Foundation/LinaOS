@@ -2,7 +2,7 @@
 #ifndef _ALPHA_CHECKSUM_H
 #define _ALPHA_CHECKSUM_H
 
-#include <linux/in6.h>
+#include <linaos/in6.h>
 
 /*
  *	This is a version of ip_compute_csum() optimized for IP headers,

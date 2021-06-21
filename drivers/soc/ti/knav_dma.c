@@ -14,18 +14,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/dma-direction.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_dma.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ti/knav_dma.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/io.h>
+#include <linaos/sched.h>
+#include <linaos/module.h>
+#include <linaos/dma-direction.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of_dma.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/soc/ti/knav_dma.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 #define REG_MASK		0xffffffff
 

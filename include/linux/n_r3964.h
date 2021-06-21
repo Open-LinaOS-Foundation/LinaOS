@@ -1,4 +1,4 @@
-/* r3964 linediscipline for linux
+/* r3964 linediscipline for linaos
  *
  * -----------------------------------------------------------
  * Copyright by
@@ -47,8 +47,8 @@
 #define __LINUX_N_R3964_H__
 
 
-#include <linux/param.h>
-#include <uapi/linux/n_r3964.h>
+#include <linaos/param.h>
+#include <uapi/linaos/n_r3964.h>
 
 /*
  * Common ascii handshake characters:

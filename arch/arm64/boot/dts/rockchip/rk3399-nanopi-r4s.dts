@@ -52,7 +52,7 @@
 			debounce-interval = <50>;
 			gpios = <&gpio1 RK_PC6 GPIO_ACTIVE_LOW>;
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 		};
 	};
 

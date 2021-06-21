@@ -3,8 +3,8 @@
  * Copyright (c) 2011 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
 #include <asm/irq_cpu.h>
 
 #include <loongson1.h>

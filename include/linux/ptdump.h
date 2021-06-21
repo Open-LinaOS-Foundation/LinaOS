@@ -3,7 +3,7 @@
 #ifndef _LINUX_PTDUMP_H
 #define _LINUX_PTDUMP_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 struct ptdump_range {
 	unsigned long start;

@@ -7,7 +7,7 @@
 #ifndef LINUX_ATM_TCP_H
 #define LINUX_ATM_TCP_H
 
-#include <uapi/linux/atm_tcp.h>
+#include <uapi/linaos/atm_tcp.h>
 
 
 struct atm_tcp_ops {

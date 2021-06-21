@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
     Public ivtv API header
     Copyright (C) 2003-2004  Kevin Thayer <nufan_wfk at yahoo.com>
@@ -22,9 +22,9 @@
 #ifndef __LINUX_IVTV_H__
 #define __LINUX_IVTV_H__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 
 /* ivtv knows several distinct output modes: MPEG streaming,
    YUV streaming, YUV updates through user DMA and the passthrough

@@ -8,15 +8,15 @@
  * NAND support by Christian Gan <cgan@iders.ca>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/backing-dev.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/backing-dev.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/concat.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/concat.h>
 
 #include <asm/div64.h>
 

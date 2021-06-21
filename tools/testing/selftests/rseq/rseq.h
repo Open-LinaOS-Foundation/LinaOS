@@ -16,7 +16,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/rseq.h>
+#include <linaos/rseq.h>
 
 /*
  * Empty code injection macros, override when testing.

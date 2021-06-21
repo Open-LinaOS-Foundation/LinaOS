@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/regset.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/regset.h>
 
 static int __regset_get(struct task_struct *target,
 			const struct user_regset *regset,

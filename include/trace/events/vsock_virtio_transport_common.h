@@ -6,7 +6,7 @@
     defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_VSOCK_VIRTIO_TRANSPORT_COMMON_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_DEFINE_ENUM(VIRTIO_VSOCK_TYPE_STREAM);
 

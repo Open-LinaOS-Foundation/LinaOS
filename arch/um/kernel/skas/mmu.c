@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2015 Thomas Meyer (thomas@m3y3r.de)
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
 
 #include <asm/pgalloc.h>
 #include <asm/sections.h>

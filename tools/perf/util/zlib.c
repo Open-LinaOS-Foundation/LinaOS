@@ -6,7 +6,7 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 #include <zlib.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <internal/lib.h>
 
 #include "util/compress.h"

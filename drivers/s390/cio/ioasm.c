@@ -3,7 +3,7 @@
  * Channel subsystem I/O instructions.
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 
 #include <asm/chpid.h>
 #include <asm/schid.h>

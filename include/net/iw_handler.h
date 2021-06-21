@@ -76,7 +76,7 @@
  *	# net/core/wireless.c
  *
  * The driver export the list of handlers in :
- *	# include/linux/netdevice.h (one place)
+ *	# include/linaos/netdevice.h (one place)
  *
  * The new driver API is available for WIRELESS_EXT >= 13.
  * Good luck with migration to the new API ;-)
@@ -171,7 +171,7 @@
  * This header is <net/iw_handler.h>
  * ---------------------------------
  * 1) This header is kernel space only and should not be exported to
- * user space. Headers in "include/linux/" are exported, headers in
+ * user space. Headers in "include/linaos/" are exported, headers in
  * "include/net/" are not.
  *
  * Mixed 32/64 bit issues
@@ -198,8 +198,8 @@
 
 /***************************** INCLUDES *****************************/
 
-#include <linux/wireless.h>		/* IOCTL user space API */
-#include <linux/if_ether.h>
+#include <linaos/wireless.h>		/* IOCTL user space API */
+#include <linaos/if_ether.h>
 
 /***************************** VERSION *****************************/
 /*
@@ -215,7 +215,7 @@
  *
  * V2 to V3
  * --------
- *	- Move event definition in <linux/wireless.h>
+ *	- Move event definition in <linaos/wireless.h>
  *	- Add Wireless Event support :
  *		o wireless_send_event() prototype
  *		o iwe_stream_add_event/point() inline functions
@@ -319,7 +319,7 @@ typedef int (*iw_handler)(struct net_device *dev, struct iw_request_info *info,
  * This define all the handler that the driver export.
  * As you need only one per driver type, please use a static const
  * shared by all driver instances... Same for the members...
- * This will be linked from net_device in <linux/netdevice.h>
+ * This will be linked from net_device in <linaos/netdevice.h>
  */
 struct iw_handler_def {
 

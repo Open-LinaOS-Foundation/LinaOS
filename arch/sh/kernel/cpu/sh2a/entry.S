@@ -8,7 +8,7 @@
  * Based on arch/sh/kernel/cpu/sh2/entry.S
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/thread_info.h>
 #include <cpu/mmu_context.h>

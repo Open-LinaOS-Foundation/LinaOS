@@ -1,5 +1,5 @@
 /*
- *  linux/arch/m68k/kernel/traps.c
+ *  linaos/arch/m68k/kernel/traps.c
  *
  *  Copyright (C) 1993, 1994 by Hamish Macdonald
  *
@@ -18,22 +18,22 @@
  * Sets up all exception vectors
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/signal.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/user.h>
-#include <linux/string.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/kallsyms.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/signal.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/user.h>
+#include <linaos/string.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/ptrace.h>
+#include <linaos/kallsyms.h>
 
 #include <asm/setup.h>
 #include <asm/fpu.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/traps.h>
 #include <asm/machdep.h>
 #include <asm/siginfo.h>

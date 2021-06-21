@@ -43,8 +43,8 @@
  * WITH YOU.
  ***********************license end**************************************/
 
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
 
 #include "common.h"
 #include "zip_deflate.h"

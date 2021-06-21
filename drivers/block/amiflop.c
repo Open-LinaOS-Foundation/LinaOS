@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/amiga/amiflop.c
+ *  linaos/amiga/amiflop.c
  *
  *  Copyright (C) 1993  Greg Harp
  *  Portions of this driver are based on code contributed by Brad Pepers
@@ -54,22 +54,22 @@
  * - fixed some race conditions (who finds the next may send it to me ;-)
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
-#include <linux/fd.h>
-#include <linux/hdreg.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/blk-mq.h>
-#include <linux/elevator.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/fd.h>
+#include <linaos/hdreg.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/fs.h>
+#include <linaos/blk-mq.h>
+#include <linaos/elevator.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
 #include <asm/irq.h>

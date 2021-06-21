@@ -10,7 +10,7 @@
 #ifndef _VIDEOBUF_DMA_CONTIG_H
 #define _VIDEOBUF_DMA_CONTIG_H
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <media/videobuf-core.h>
 
 void videobuf_queue_dma_contig_init(struct videobuf_queue *q,

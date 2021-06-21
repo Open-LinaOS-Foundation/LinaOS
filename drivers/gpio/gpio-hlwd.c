@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0+
-// Copyright (C) 2008-2009 The GameCube Linux Team
+// Copyright (C) 2008-2009 The GameCube LinaOS Team
 // Copyright (C) 2008,2009 Albert Herranz
 // Copyright (C) 2017-2018 Jonathan Neuschäfer
 //
 // Nintendo Wii (Hollywood) GPIO driver
 
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
 
 /*
  * Register names and offsets courtesy of WiiBrew:

@@ -9,24 +9,24 @@
  * Copyright 2004 Motorola Inc.
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/pagemap.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/syscalls.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/vme.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/poll.h>
+#include <linaos/highmem.h>
+#include <linaos/interrupt.h>
+#include <linaos/pagemap.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/syscalls.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/vme.h>
 
 #include "vme_bridge.h"
 

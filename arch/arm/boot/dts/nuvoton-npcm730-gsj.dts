@@ -40,7 +40,7 @@
 
 		led-bmc-live {
 			gpios = <&gpio4 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		LED_U2_0_LOCATE {

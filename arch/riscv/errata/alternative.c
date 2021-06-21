@@ -6,9 +6,9 @@
  * Copyright (C) 2021 Sifive.
  */
 
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/uaccess.h>
 #include <asm/alternative.h>
 #include <asm/sections.h>
 #include <asm/vendorid_list.h>

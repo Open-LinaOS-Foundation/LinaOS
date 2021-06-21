@@ -273,8 +273,8 @@
 #ifndef _IMX_PCM_RPMSG_H
 #define _IMX_PCM_RPMSG_H
 
-#include <linux/pm_qos.h>
-#include <linux/interrupt.h>
+#include <linaos/pm_qos.h>
+#include <linaos/interrupt.h>
 #include <sound/dmaengine_pcm.h>
 
 #define RPMSG_TIMEOUT 1000

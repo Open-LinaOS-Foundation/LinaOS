@@ -10,28 +10,28 @@
  *	Safe accesses to vmalloc/direct-mapped discontiguous areas, Kanoj Sarcar <kanoj@sgi.com>
  */
 
-#include <linux/crash_core.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/kcore.h>
-#include <linux/user.h>
-#include <linux/capability.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/notifier.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/printk.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/crash_core.h>
+#include <linaos/mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/kcore.h>
+#include <linaos/user.h>
+#include <linaos/capability.h>
+#include <linaos/elf.h>
+#include <linaos/elfcore.h>
+#include <linaos/notifier.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/printk.h>
+#include <linaos/memblock.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
-#include <linux/list.h>
-#include <linux/ioport.h>
-#include <linux/memory.h>
-#include <linux/sched/task.h>
-#include <linux/security.h>
+#include <linaos/list.h>
+#include <linaos/ioport.h>
+#include <linaos/memory.h>
+#include <linaos/sched/task.h>
+#include <linaos/security.h>
 #include <asm/sections.h>
 #include "internal.h"
 
@@ -414,7 +414,7 @@ read_kcore(struct file *file, char __user *buffer, size_t buflen, loff_t *fpos)
 		struct elf_prstatus prstatus = {};
 		struct elf_prpsinfo prpsinfo = {
 			.pr_sname = 'R',
-			.pr_fname = "vmlinux",
+			.pr_fname = "vmlinaos",
 		};
 		char *notes;
 		size_t i = 0;

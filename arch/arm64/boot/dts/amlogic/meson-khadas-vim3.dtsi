@@ -35,7 +35,7 @@
 
 		button-function {
 			label = "Function";
-			linux,code = <KEY_FN>;
+			linaos,code = <KEY_FN>;
 			press-threshold-microvolt = <10000>;
 		};
 	};
@@ -47,7 +47,7 @@
 			color = <LED_COLOR_ID_WHITE>;
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio_ao GPIOAO_4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-red {
@@ -68,7 +68,7 @@
 
 		power-button {
 			label = "power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_7 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -346,7 +346,7 @@
 	status = "okay";
 	pinctrl-0 = <&remote_input_ao_pins>;
 	pinctrl-names = "default";
-	linux,rc-map-name = "rc-khadas";
+	linaos,rc-map-name = "rc-khadas";
 };
 
 &pcie {

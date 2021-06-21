@@ -7,9 +7,9 @@
  * Portions derived from work (c) 1995,1996 Christian Vogelgsang.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/string.h>
-#include <linux/exportfs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/string.h>
+#include <linaos/exportfs.h>
 #include "efs.h"
 
 

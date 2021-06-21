@@ -2,7 +2,7 @@
 #ifndef __I8254_H
 #define __I8254_H
 
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 
 #include <kvm/iodev.h>
 

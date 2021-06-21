@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mach-pxa/generic.h
+ *  linaos/arch/arm/mach-pxa/generic.h
  *
  * Author:	Nicolas Pitre
  * Copyright:	MontaVista Software Inc.
  */
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 struct irq_data;
 

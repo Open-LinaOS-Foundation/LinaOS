@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * Lexical analysis for genksyms.
- * Copyright 1996, 1997 Linux International.
+ * Copyright 1996, 1997 LinaOS International.
  *
  * New implementation contributed by Richard Henderson <rth@tamu.edu>
  * Based on original work by Bjorn Ekwall <bj0rn@blox.se>
  *
- * Taken from Linux modutils 2.4.22.
+ * Taken from LinaOS modutils 2.4.22.
  */
 
 %{
@@ -94,7 +94,7 @@ MC_TOKEN		([~%^&*+=|<>/-]=)|(&&)|("||")|(->)|(<<)|(>>)
  *    enum e { a, b }; struct s { int a, b; }
  * but in this case, the only effect will be, that the ABI checksums become
  * more volatile, which is acceptable. Also, such collisions are quite rare,
- * so far it was only observed in include/linux/telephony.h.
+ * so far it was only observed in include/linaos/telephony.h.
  */
 #define _APP(T,L)	do {						   \
 			  cur_node = next_node;				   \

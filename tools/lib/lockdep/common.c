@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <stddef.h>
 #include <stdbool.h>
-#include <linux/compiler.h>
-#include <linux/lockdep.h>
+#include <linaos/compiler.h>
+#include <linaos/lockdep.h>
 #include <unistd.h>
 #include <sys/syscall.h>
 

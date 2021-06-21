@@ -5,8 +5,8 @@
 /* Fit everything into one 128MB HAE window. */
 #define T2_ONE_HAE_WINDOW 1
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
 #include <asm/compiler.h>
 
 /*

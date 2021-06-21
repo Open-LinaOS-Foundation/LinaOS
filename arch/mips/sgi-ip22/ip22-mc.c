@@ -4,15 +4,15 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1999 Andrew R. Baker (andrewb@uab.edu) - Indigo2 changes
- * Copyright (C) 2003 Ladislav Michl  (ladis@linux-mips.org)
+ * Copyright (C) 2003 Ladislav Michl  (ladis@linaos-mips.org)
  * Copyright (C) 2004 Peter Fuerst    (pf@net.alphadv.de) - IP28
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
+#include <linaos/spinlock.h>
 
 #include <asm/io.h>
 #include <asm/bootinfo.h>

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/module.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 #include <asm/irq.h>
 
 #define INTC_IRQS		64

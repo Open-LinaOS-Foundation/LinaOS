@@ -6,10 +6,10 @@
 #ifndef OPTEE_PRIVATE_H
 #define OPTEE_PRIVATE_H
 
-#include <linux/arm-smccc.h>
-#include <linux/semaphore.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/semaphore.h>
+#include <linaos/tee_drv.h>
+#include <linaos/types.h>
 #include "optee_msg.h"
 
 #define OPTEE_MAX_ARG_SIZE	1024

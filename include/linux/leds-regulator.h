@@ -32,7 +32,7 @@
  * };
  */
 
-#include <linux/leds.h>
+#include <linaos/leds.h>
 
 struct led_regulator_platform_data {
 	char *name;                     /* LED name as expected by LED class */

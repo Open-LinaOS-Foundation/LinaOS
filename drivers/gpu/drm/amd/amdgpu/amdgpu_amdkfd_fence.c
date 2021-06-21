@@ -20,13 +20,13 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/dma-fence.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/stacktrace.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
+#include <linaos/dma-fence.h>
+#include <linaos/spinlock.h>
+#include <linaos/atomic.h>
+#include <linaos/stacktrace.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/sched/mm.h>
 #include "amdgpu_amdkfd.h"
 
 static const struct dma_fence_ops amdkfd_fence_ops;

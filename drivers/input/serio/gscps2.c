@@ -3,9 +3,9 @@
  *
  * Copyright (c) 2004-2006 Helge Deller <deller@gmx.de>
  * Copyright (c) 2002 Laurent Canet <canetl@esiee.fr>
- * Copyright (c) 2002 Thibaut Varene <varenet@parisc-linux.org>
+ * Copyright (c) 2002 Thibaut Varene <varenet@parisc-linaos.org>
  *
- * Pieces of code based on linux-2.4's hp_mouse.c & hp_keyb.c
+ * Pieces of code based on linaos-2.4's hp_mouse.c & hp_keyb.c
  *	Copyright (c) 1999 Alex deVries <alex@onefishtwo.ca>
  *	Copyright (c) 1999-2000 Philipp Rumpf <prumpf@tux.org>
  *	Copyright (c) 2000 Xavier Debacker <debackex@esiee.fr>
@@ -22,21 +22,21 @@
  *                 was usable/enabled ?)
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/serio.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/serio.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <asm/parisc-device.h>
 
-MODULE_AUTHOR("Laurent Canet <canetl@esiee.fr>, Thibaut Varene <varenet@parisc-linux.org>, Helge Deller <deller@gmx.de>");
+MODULE_AUTHOR("Laurent Canet <canetl@esiee.fr>, Thibaut Varene <varenet@parisc-linaos.org>, Helge Deller <deller@gmx.de>");
 MODULE_DESCRIPTION("HP GSC PS2 port driver");
 MODULE_LICENSE("GPL");
 

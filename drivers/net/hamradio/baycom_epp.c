@@ -25,22 +25,22 @@
 
 /*****************************************************************************/
 
-#include <linux/crc-ccitt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/fs.h>
-#include <linux/parport.h>
-#include <linux/if_arp.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
+#include <linaos/crc-ccitt.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
+#include <linaos/workqueue.h>
+#include <linaos/fs.h>
+#include <linaos/parport.h>
+#include <linaos/if_arp.h>
+#include <linaos/hdlcdrv.h>
+#include <linaos/baycom.h>
+#include <linaos/jiffies.h>
+#include <linaos/random.h>
 #include <net/ax25.h> 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /* --------------------------------------------------------------------- */
 
@@ -286,7 +286,7 @@ static inline void baycom_int_freq(struct baycom_state *bc)
 
 static char const eppconfig_path[] = "/usr/sbin/eppfpga";
 
-static char *envp[] = { "HOME=/", "TERM=linux", "PATH=/usr/bin:/bin", NULL };
+static char *envp[] = { "HOME=/", "TERM=linaos", "PATH=/usr/bin:/bin", NULL };
 
 /* eppconfig: called during ifconfig up to configure the modem */
 static int eppconfig(struct baycom_state *bc)

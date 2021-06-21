@@ -10,20 +10,20 @@
  *	Copyright (C) 2006 TOPTICA Photonics AG., Dragos Carp
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/completion.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/spi/spi.h>
-#include <linux/fsl_devices.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/completion.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/spi/spi.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/gpio.h>
 #include <asm/mpc52xx_psc.h>
 
 enum {

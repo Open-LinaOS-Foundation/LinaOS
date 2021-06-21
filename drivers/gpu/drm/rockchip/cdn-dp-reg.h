@@ -7,7 +7,7 @@
 #ifndef _CDN_DP_REG_H
 #define _CDN_DP_REG_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #define ADDR_IMEM		0x10000
 #define ADDR_DMEM		0x20000

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ * (C) 2002 - 2003 Dominik Brodowski <linaos@brodo.de>
  *
  *  Library for common functions for Intel SpeedStep v.1 and v.2 support
  *
@@ -9,11 +9,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
 
 #include <asm/msr.h>
 #include <asm/tsc.h>
@@ -210,7 +210,7 @@ static unsigned int pentium4_get_frequency(void)
 
 	if (!fsb)
 		printk(KERN_DEBUG PFX "couldn't detect FSB speed. "
-				"Please send an e-mail to <linux@brodo.de>\n");
+				"Please send an e-mail to <linaos@brodo.de>\n");
 
 	/* Multiplier. */
 	mult = msr_lo >> 24;
@@ -474,6 +474,6 @@ MODULE_PARM_DESC(relaxed_check,
 		"Don't do all checks for speedstep capability.");
 #endif
 
-MODULE_AUTHOR("Dominik Brodowski <linux@brodo.de>");
+MODULE_AUTHOR("Dominik Brodowski <linaos@brodo.de>");
 MODULE_DESCRIPTION("Library for Intel SpeedStep 1 or 2 cpufreq drivers.");
 MODULE_LICENSE("GPL");

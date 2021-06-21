@@ -5,7 +5,7 @@
 #if !defined(_TRACE_V4L2_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_V4L2_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <media/videobuf2-v4l2.h>
 
 /* Enums require being exported to userspace, for user tool parsing */

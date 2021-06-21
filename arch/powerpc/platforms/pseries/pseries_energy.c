@@ -7,14 +7,14 @@
  * platform energy management capabilities.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/cpu.h>
+#include <linaos/of.h>
 #include <asm/cputhreads.h>
 #include <asm/page.h>
 #include <asm/hvcall.h>

@@ -20,11 +20,11 @@
  *   Authors: Maxim Locktyukhin <maxim.locktyukhin@intel.com>
  *            Ronen Zohar <ronen.zohar@intel.com>
  *
- * Converted to AT&T syntax and adapted for inclusion in the Linux kernel:
+ * Converted to AT&T syntax and adapted for inclusion in the LinaOS kernel:
  *   Author: Mathias Krause <minipli@googlemail.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define CTX	%rdi	// arg1
 #define BUF	%rsi	// arg2

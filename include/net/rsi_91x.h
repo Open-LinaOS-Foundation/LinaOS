@@ -17,7 +17,7 @@
 #ifndef __RSI_HEADER_H__
 #define __RSI_HEADER_H__
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 /* HAL queue information */
 #define RSI_COEX_Q			0x0

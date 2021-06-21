@@ -39,7 +39,7 @@
 
 #ifdef CONFIG_MLX5_EN_TLS
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include "en.h"
 #include "en/txrx.h"
 

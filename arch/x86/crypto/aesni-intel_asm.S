@@ -25,7 +25,7 @@
  *    Author: Mathias Krause <minipli@googlemail.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/frame.h>
 #include <asm/nospec-branch.h>
 

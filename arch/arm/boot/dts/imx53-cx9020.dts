@@ -102,12 +102,12 @@
 		};
 
 		sd1-b {
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			gpios = <&gpio3 20 GPIO_ACTIVE_HIGH>;
 		};
 
 		sd2-b {
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			gpios = <&gpio3 17 GPIO_ACTIVE_HIGH>;
 		};
 	};

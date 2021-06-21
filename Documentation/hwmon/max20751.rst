@@ -13,7 +13,7 @@ Supported chips:
 
     Application note: https://pdfserv.maximintegrated.com/en/an/AN5941.pdf
 
-Author: Guenter Roeck <linux@roeck-us.net>
+Author: Guenter Roeck <linaos@roeck-us.net>
 
 
 Description

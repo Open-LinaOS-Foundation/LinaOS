@@ -2,7 +2,7 @@
 #ifndef __ASM_MACH_PXA168_H
 #define __ASM_MACH_PXA168_H
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 extern void pxa168_timer_init(void);
 extern void __init icu_init_irq(void);
@@ -10,14 +10,14 @@ extern void __init pxa168_init_irq(void);
 extern void pxa168_restart(enum reboot_mode, const char *);
 extern void pxa168_clear_keypad_wakeup(void);
 
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 #include <video/pxa168fb.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/pxa168_eth.h>
-#include <linux/platform_data/mv_usb.h>
-#include <linux/soc/mmp/cputype.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
+#include <linaos/pxa168_eth.h>
+#include <linaos/platform_data/mv_usb.h>
+#include <linaos/soc/mmp/cputype.h>
 
 #include "devices.h"
 

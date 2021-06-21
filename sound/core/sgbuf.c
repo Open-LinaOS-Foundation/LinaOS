@@ -5,10 +5,10 @@
  *  Copyright (c) by Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/export.h>
 #include <sound/memalloc.h>
 
 

@@ -10,17 +10,17 @@
 #define KMSG_COMPONENT "qeth"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/hashtable.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_bridge.h>
+#include <linaos/list.h>
+#include <linaos/hash.h>
+#include <linaos/hashtable.h>
 #include <net/switchdev.h>
 #include <asm/chsc.h>
 #include <asm/css_chars.h>

@@ -2,7 +2,7 @@
 #ifndef __PACKET_INTERNAL_H__
 #define __PACKET_INTERNAL_H__
 
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 
 struct packet_mclist {
 	struct packet_mclist	*next;

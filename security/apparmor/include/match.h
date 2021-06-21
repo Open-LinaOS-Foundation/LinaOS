@@ -11,7 +11,7 @@
 #ifndef __AA_MATCH_H
 #define __AA_MATCH_H
 
-#include <linux/kref.h>
+#include <linaos/kref.h>
 
 #define DFA_NOMATCH			0
 #define DFA_START			1

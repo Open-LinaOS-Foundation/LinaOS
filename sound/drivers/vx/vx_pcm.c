@@ -30,8 +30,8 @@
  *  - scheduled action on the stream.
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 #include <sound/core.h>
 #include <sound/asoundef.h>
 #include <sound/pcm.h>

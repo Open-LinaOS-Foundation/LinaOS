@@ -7,25 +7,25 @@
  * Keymile 83xx platform specific routines.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/root_dev.h>
-#include <linux/initrd.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/reboot.h>
+#include <linaos/pci.h>
+#include <linaos/kdev_t.h>
+#include <linaos/major.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/seq_file.h>
+#include <linaos/root_dev.h>
+#include <linaos/initrd.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_device.h>
 
-#include <linux/atomic.h>
-#include <linux/time.h>
-#include <linux/io.h>
+#include <linaos/atomic.h>
+#include <linaos/time.h>
+#include <linaos/io.h>
 #include <asm/machdep.h>
 #include <asm/ipic.h>
 #include <asm/irq.h>

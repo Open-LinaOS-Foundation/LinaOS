@@ -1,5 +1,5 @@
 =============================
-The Linux Input Documentation
+The LinaOS Input Documentation
 =============================
 
 Contents:

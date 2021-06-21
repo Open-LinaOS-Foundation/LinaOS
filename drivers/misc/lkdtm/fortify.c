@@ -5,8 +5,8 @@
  * Add tests related to fortified functions in this file.
  */
 #include "lkdtm.h"
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 
 /*

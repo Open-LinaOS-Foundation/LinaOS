@@ -8,7 +8,7 @@
 #ifndef __ARCH_SPARC64_ATOMIC__
 #define __ARCH_SPARC64_ATOMIC__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/cmpxchg.h>
 #include <asm/barrier.h>
 

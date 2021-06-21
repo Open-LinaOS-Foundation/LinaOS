@@ -9,8 +9,8 @@
 #ifndef __INTERFACE_H
 #define __INTERFACE_H
 
-#include <linux/types.h>
-#include <linux/device.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
 
 enum gb_interface_type {
 	GB_INTERFACE_TYPE_INVALID = 0,

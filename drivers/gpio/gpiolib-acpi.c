@@ -3,20 +3,20 @@
  * ACPI helpers for GPIO API
  *
  * Copyright (C) 2012, Intel Corporation
- * Authors: Mathias Nyman <mathias.nyman@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mathias Nyman <mathias.nyman@linaos.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/export.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/dmi.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/export.h>
+#include <linaos/acpi.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/pinctrl/pinctrl.h>
 
 #include "gpiolib.h"
 #include "gpiolib-acpi.h"
@@ -44,7 +44,7 @@ struct acpi_gpiolib_dmi_quirk {
  * @handle:	  handle of ACPI method to execute when the IRQ triggers
  * @handler:	  handler function to pass to request_irq() when requesting the IRQ
  * @pin:	  GPIO pin number on the struct gpio_chip
- * @irq:	  Linux IRQ number for the event, for request_irq() / free_irq()
+ * @irq:	  LinaOS IRQ number for the event, for request_irq() / free_irq()
  * @irqflags:	  flags to pass to request_irq() when requesting the IRQ
  * @irq_is_wake:  If the ACPI flags indicate the IRQ is a wakeup source
  * @irq_requested:True if request_irq() has been done
@@ -106,7 +106,7 @@ static int acpi_gpiochip_find(struct gpio_chip *gc, void *data)
  * @path:	ACPI GPIO controller full path name, (e.g. "\\_SB.GPO1")
  * @pin:	ACPI GPIO pin number (0-based, controller-relative)
  *
- * Return: GPIO descriptor to use with Linux generic GPIO API, or ERR_PTR
+ * Return: GPIO descriptor to use with LinaOS generic GPIO API, or ERR_PTR
  * error value. Specifically returns %-EPROBE_DEFER if the referenced GPIO
  * controller does not have GPIO chip registered at the moment. This is to
  * support probe deferral.
@@ -793,7 +793,7 @@ static int acpi_gpio_property_lookup(struct fwnode_handle *fwnode,
  * @info: info pointer to fill in (optional)
  *
  * Function goes through ACPI resources for @adev and based on @index looks
- * up a GpioIo/GpioInt resource, translates it to the Linux GPIO descriptor,
+ * up a GpioIo/GpioInt resource, translates it to the LinaOS GPIO descriptor,
  * and returns it. @index matches GpioIo/GpioInt resources only so if there
  * are total %3 GPIO resources, the index goes from %0 to %2.
  *
@@ -945,13 +945,13 @@ struct gpio_desc *acpi_node_get_gpiod(struct fwnode_handle *fwnode,
 }
 
 /**
- * acpi_dev_gpio_irq_get_by() - Find GpioInt and translate it to Linux IRQ number
+ * acpi_dev_gpio_irq_get_by() - Find GpioInt and translate it to LinaOS IRQ number
  * @adev: pointer to a ACPI device to get IRQ from
  * @name: optional name of GpioInt resource
  * @index: index of GpioInt resource (starting from %0)
  *
  * If the device has one or more GpioInt resources, this function can be
- * used to translate from the GPIO offset in the resource to the Linux IRQ
+ * used to translate from the GPIO offset in the resource to the LinaOS IRQ
  * number.
  *
  * The function is idempotent, though each time it runs it will configure GPIO
@@ -960,7 +960,7 @@ struct gpio_desc *acpi_node_get_gpiod(struct fwnode_handle *fwnode,
  * The function takes optional @name parameter. If the resource has a property
  * name, then only those will be taken into account.
  *
- * Return: Linux IRQ number (> %0) on success, negative errno on failure.
+ * Return: LinaOS IRQ number (> %0) on success, negative errno on failure.
  */
 int acpi_dev_gpio_irq_get_by(struct acpi_device *adev, const char *name, int index)
 {

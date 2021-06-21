@@ -4,9 +4,9 @@
  * Copyright (c) 2017 Microchip Technology
  */
 
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/etherdevice.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include <net/dsa.h>
 #include "dsa_priv.h"
 

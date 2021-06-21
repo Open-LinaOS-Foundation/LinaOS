@@ -6,10 +6,10 @@
  * Author : Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ipaq-micro.h>
-#include <linux/leds.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/ipaq-micro.h>
+#include <linaos/leds.h>
 
 #define LED_YELLOW	0x00
 #define LED_GREEN	0x01

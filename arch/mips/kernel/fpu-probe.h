@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <asm/cpu.h>
 #include <asm/cpu-info.h>

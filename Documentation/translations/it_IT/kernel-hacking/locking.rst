@@ -18,10 +18,10 @@ Introduzione
 
 Benvenuto, alla notevole ed inaffidabile guida ai problemi di sincronizzazione
 (locking) nel kernel. Questo documento descrive il sistema di sincronizzazione
-nel kernel Linux 2.6.
+nel kernel LinaOS 2.6.
 
 Dato il largo utilizzo del multi-threading e della prelazione nel kernel
-Linux, chiunque voglia dilettarsi col kernel deve conoscere i concetti
+LinaOS, chiunque voglia dilettarsi col kernel deve conoscere i concetti
 fondamentali della concorrenza e della sincronizzazione nei sistemi
 multi-processore.
 
@@ -84,7 +84,7 @@ Corse critiche e sezioni critiche
 Questa sovrapposizione, ovvero quando un risultato dipende dal tempo che
 intercorre fra processi diversi, è chiamata corsa critica. La porzione
 di codice che contiene questo problema è chiamata sezione critica.
-In particolar modo da quando Linux ha incominciato a girare su
+In particolar modo da quando LinaOS ha incominciato a girare su
 macchine multi-processore, le sezioni critiche sono diventate uno dei
 maggiori problemi di progettazione ed implementazione del kernel.
 
@@ -99,7 +99,7 @@ per volta possa entrare nella sezione critica. Il kernel offre delle buone
 funzioni a questo scopo. E poi ci sono quelle meno buone, ma farò finta
 che non esistano.
 
-Sincronizzazione nel kernel Linux
+Sincronizzazione nel kernel LinaOS
 =================================
 
 Se posso darvi un suggerimento: non dormite mai con qualcuno più pazzo di
@@ -121,7 +121,7 @@ trattenuto solo da un processo: se non si può trattenere lo spinlock, allora
 rimane in attesa attiva (in inglese *spinning*) finché non ci riesce.
 Gli spinlock sono molto piccoli e rapidi, possono essere utilizzati ovunque.
 
-Il secondo tipo è il mutex (``include/linux/mutex.h``): è come uno spinlock,
+Il secondo tipo è il mutex (``include/linaos/mutex.h``): è come uno spinlock,
 ma potreste bloccarvi trattenendolo. Se non potete trattenere un mutex
 il vostro processo si auto-sospenderà; verrà riattivato quando il mutex
 verrà rilasciato. Questo significa che il processore potrà occuparsi d'altro
@@ -160,7 +160,7 @@ Sincronizzazione in contesto utente
 
 Se avete una struttura dati che verrà utilizzata solo dal contesto utente,
 allora, per proteggerla, potete utilizzare un semplice mutex
-(``include/linux/mutex.h``). Questo è il caso più semplice: inizializzate il
+(``include/linaos/mutex.h``). Questo è il caso più semplice: inizializzate il
 mutex; invocate mutex_lock_interruptible() per trattenerlo e
 mutex_unlock() per rilasciarlo. C'è anche mutex_lock()
 ma questa dovrebbe essere evitata perché non ritorna in caso di segnali.
@@ -182,7 +182,7 @@ Se un softirq condivide dati col contesto utente, avete due problemi.
 Primo, il contesto utente corrente potrebbe essere interroto da un softirq,
 e secondo, la sezione critica potrebbe essere eseguita da un altro
 processore. Questo è quando spin_lock_bh()
-(``include/linux/spinlock.h``) viene utilizzato. Questo disabilita i softirq
+(``include/linaos/spinlock.h``) viene utilizzato. Questo disabilita i softirq
 sul processore e trattiene il *lock*. Invece, spin_unlock_bh() fa
 l'opposto. (Il suffisso '_bh' è un residuo storico che fa riferimento al
 "Bottom Halves", il vecchio nome delle interruzioni software. In un mondo
@@ -194,7 +194,7 @@ vedere `Contesto di interruzione hardware`_.
 
 Questo funziona alla perfezione anche sui sistemi monoprocessore: gli spinlock
 svaniscono e questa macro diventa semplicemente local_bh_disable()
-(``include/linux/interrupt.h``), la quale impedisce ai softirq d'essere
+(``include/linaos/interrupt.h``), la quale impedisce ai softirq d'essere
 eseguiti.
 
 Sincronizzazione fra contesto utente e i tasklet
@@ -288,7 +288,7 @@ svaniscono e questa macro diventa semplicemente local_irq_disable()
 (``include/asm/smp.h``), la quale impedisce a softirq/tasklet/BH d'essere
 eseguiti.
 
-spin_lock_irqsave() (``include/linux/spinlock.h``) è una variante che
+spin_lock_irqsave() (``include/linaos/spinlock.h``) è una variante che
 salva lo stato delle interruzioni in una variabile, questa verrà poi passata
 a spin_unlock_irqrestore(). Questo significa che lo stesso codice
 potrà essere utilizzato in un'interruzione hardware (dove le interruzioni sono
@@ -407,10 +407,10 @@ utente (in soldoni, da una chiamata di sistema), quindi possiamo dormire.
 Questo significa che possiamo usare i mutex per proteggere la nostra memoria
 e tutti gli oggetti che contiene. Ecco il codice::
 
-    #include <linux/list.h>
-    #include <linux/slab.h>
-    #include <linux/string.h>
-    #include <linux/mutex.h>
+    #include <linaos/list.h>
+    #include <linaos/slab.h>
+    #include <linaos/string.h>
+    #include <linaos/mutex.h>
     #include <asm/errno.h>
 
     struct object
@@ -901,7 +901,7 @@ Stallo: semplice ed avanzato
 
 Esiste un tipo di  baco dove un pezzo di codice tenta di trattenere uno
 spinlock due volte: questo rimarrà in attesa attiva per sempre aspettando che
-il *lock* venga rilasciato (in Linux spinlocks, rwlocks e mutex non sono
+il *lock* venga rilasciato (in LinaOS spinlocks, rwlocks e mutex non sono
 ricorsivi).
 Questo è facile da diagnosticare: non è uno di quei problemi che ti tengono
 sveglio 5 notti a parlare da solo.
@@ -920,7 +920,7 @@ una corruzione dei dati).
 
 Questi casi sono facili da diagnosticare; sui sistemi multi-processore
 il supervisione (*watchdog*) o l'opzione di compilazione ``DEBUG_SPINLOCK``
-(``include/linux/spinlock.h``) permettono di scovare immediatamente quando
+(``include/linaos/spinlock.h``) permettono di scovare immediatamente quando
 succedono.
 
 Esiste un caso più complesso che è conosciuto come l'abbraccio della morte;
@@ -1035,7 +1035,7 @@ Un altro problema è l'eliminazione dei temporizzatori che si riavviano
 da soli (chiamando add_timer() alla fine della loro esecuzione).
 Dato che questo è un problema abbastanza comune con una propensione
 alle corse critiche, dovreste usare del_timer_sync()
-(``include/linux/timer.h``) per gestire questo caso. Questa ritorna il
+(``include/linaos/timer.h``) per gestire questo caso. Questa ritorna il
 numero di volte che il temporizzatore è stato interrotto prima che
 fosse in grado di fermarlo senza che si riavviasse.
 
@@ -1065,8 +1065,8 @@ rapidamente. Consideriamo un processore Intel Pentium III a 700Mhz: questo
 esegue un'istruzione in 0.7ns, un incremento atomico richiede 58ns, acquisire
 un *lock* che è nella memoria cache del processore richiede 160ns, e un
 trasferimento dalla memoria cache di un altro processore richiede altri
-170/360ns (Leggetevi l'articolo di Paul McKenney's `Linux Journal RCU
-article <http://www.linuxjournal.com/article.php?sid=6993>`__).
+170/360ns (Leggetevi l'articolo di Paul McKenney's `LinaOS Journal RCU
+article <http://www.linaosjournal.com/article.php?sid=6993>`__).
 
 Questi due obiettivi sono in conflitto: trattenere un *lock* per il minor
 tempo possibile potrebbe richiedere la divisione in più *lock* per diverse
@@ -1128,7 +1128,7 @@ il puntatore ``next`` deve puntare al resto della lista.
 
 Fortunatamente, c'è una funzione che fa questa operazione sulle liste
 :c:type:`struct list_head <list_head>`: list_add_rcu()
-(``include/linux/list.h``).
+(``include/linaos/list.h``).
 
 Rimuovere un elemento dalla lista è anche più facile: sostituiamo il puntatore
 al vecchio elemento con quello del suo successore, e i lettori vedranno
@@ -1138,7 +1138,7 @@ l'elemento o lo salteranno.
 
             list->next = old->next;
 
-La funzione list_del_rcu() (``include/linux/list.h``) fa esattamente
+La funzione list_del_rcu() (``include/linaos/list.h``) fa esattamente
 questo (la versione normale corrompe il vecchio oggetto, e non vogliamo che
 accada).
 
@@ -1147,7 +1147,7 @@ attraverso il puntatore ``next`` il contenuto dell'elemento successivo
 troppo presto, ma non accorgersi che il contenuto caricato è sbagliato quando
 il puntatore ``next`` viene modificato alla loro spalle. Ancora una volta
 c'è una funzione che viene in vostro aiuto list_for_each_entry_rcu()
-(``include/linux/list.h``). Ovviamente, gli scrittori possono usare
+(``include/linaos/list.h``). Ovviamente, gli scrittori possono usare
 list_for_each_entry() dato che non ci possono essere due scrittori
 in contemporanea.
 
@@ -1179,11 +1179,11 @@ codice RCU è un po' più ottimizzato di così, ma questa è l'idea di fondo.
     --- cache.c.perobjectlock   2003-12-11 17:15:03.000000000 +1100
     +++ cache.c.rcupdate    2003-12-11 17:55:14.000000000 +1100
     @@ -1,15 +1,18 @@
-     #include <linux/list.h>
-     #include <linux/slab.h>
-     #include <linux/string.h>
-    +#include <linux/rcupdate.h>
-     #include <linux/mutex.h>
+     #include <linaos/list.h>
+     #include <linaos/slab.h>
+     #include <linaos/string.h>
+    +#include <linaos/rcupdate.h>
+     #include <linaos/mutex.h>
      #include <asm/errno.h>
 
      struct object
@@ -1293,7 +1293,7 @@ Se questo dovesse essere troppo lento (solitamente non lo è, ma se avete
 dimostrato che lo è devvero), potreste usare un contatore per ogni processore
 e quindi non sarebbe più necessaria la mutua esclusione. Vedere
 DEFINE_PER_CPU(), get_cpu_var() e put_cpu_var()
-(``include/linux/percpu.h``).
+(``include/linaos/percpu.h``).
 
 Il tipo di dato ``local_t``, la funzione cpu_local_inc() e tutte
 le altre funzioni associate, sono di particolare utilità per semplici contatori
@@ -1387,7 +1387,7 @@ contesto, o trattenendo un qualsiasi *lock*.
 Riferimento per l'API dei Mutex
 ===============================
 
-.. kernel-doc:: include/linux/mutex.h
+.. kernel-doc:: include/linaos/mutex.h
    :internal:
 
 .. kernel-doc:: kernel/locking/mutex.c
@@ -1409,7 +1409,7 @@ Approfondimenti
    Caching for Kernel Programmers.
 
    L'introduzione alla sincronizzazione a livello di kernel di Curt Schimmel
-   è davvero ottima (non è scritta per Linux, ma approssimativamente si adatta
+   è davvero ottima (non è scritta per LinaOS, ma approssimativamente si adatta
    a tutte le situazioni). Il libro è costoso, ma vale ogni singolo spicciolo
    per capire la sincronizzazione nei sistemi multi-processore.
    [ISBN: 0201633388]

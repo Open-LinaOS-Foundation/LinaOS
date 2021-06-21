@@ -7,15 +7,15 @@
  * Contact: Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
 
 #include "clk-div6.h"
 

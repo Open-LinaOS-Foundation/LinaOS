@@ -4,19 +4,19 @@
  * The term "Broadcom" refers to Broadcom Limited and/or its subsidiaries.
  *
  * Contact Information:
- * linux-drivers@broadcom.com
+ * linaos-drivers@broadcom.com
  */
 
 #ifndef _BEISCSI_MAIN_
 #define _BEISCSI_MAIN_
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ctype.h>
-#include <linux/module.h>
-#include <linux/aer.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/if_ether.h>
+#include <linaos/in.h>
+#include <linaos/ctype.h>
+#include <linaos/module.h>
+#include <linaos/aer.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

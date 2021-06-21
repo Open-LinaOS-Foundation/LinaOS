@@ -5,10 +5,10 @@
  * Copyright (C) 1997, 2001 Ralf Baechle (ralf@gnu.org),
  * derived from r4xx0.c by David S. Miller (davem@davemloft.net).
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
 
 #include <asm/bcache.h>
 #include <asm/page.h>

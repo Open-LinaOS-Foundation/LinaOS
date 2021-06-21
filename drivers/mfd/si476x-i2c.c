@@ -8,17 +8,17 @@
  *
  * Author: Andrey Smirnov <andrew.smirnov@gmail.com>
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
 
-#include <linux/mfd/si476x-core.h>
+#include <linaos/mfd/si476x-core.h>
 
 #define SI476X_MAX_IO_ERRORS		10
 #define SI476X_DRIVER_RDS_FIFO_DEPTH	128

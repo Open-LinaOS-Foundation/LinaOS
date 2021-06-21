@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/palmtc.c
+ * linaos/arch/arm/mach-pxa/palmtc.c
  *
  * Support for the Palm Tungsten|C
  *
@@ -11,18 +11,18 @@
  *		Chetan S. Kumar <shivakumar.chetan@gmail.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/input.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/gpio/machine.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/ucb1400.h>
-#include <linux/power_supply.h>
-#include <linux/gpio_keys.h>
-#include <linux/mtd/physmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/input.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/ucb1400.h>
+#include <linaos/power_supply.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/mtd/physmap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -31,9 +31,9 @@
 #include "pxa25x.h"
 #include <mach/audio.h>
 #include <mach/palmtc.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/irda-pxaficp.h>
 #include "udc.h"
 
 #include "generic.h"
@@ -428,7 +428,7 @@ static struct mtd_partition palmtc_flash_parts[] = {
 		.size	= 0x40000,
 	},
 	{
-		.name	= "Linux Kernel",
+		.name	= "LinaOS Kernel",
 		.offset	= 0x40000,
 		.size	= 0x2c0000,
 	},

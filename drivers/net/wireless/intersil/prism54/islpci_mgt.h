@@ -7,9 +7,9 @@
 #ifndef _ISLPCI_MGT_H
 #define _ISLPCI_MGT_H
 
-#include <linux/wireless.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/wireless.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 
 /*
  *  Function definitions

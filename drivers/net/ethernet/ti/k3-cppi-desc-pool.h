@@ -7,8 +7,8 @@
 #ifndef K3_CPPI_DESC_POOL_H_
 #define K3_CPPI_DESC_POOL_H_
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
 struct k3_cppi_desc_pool;
 

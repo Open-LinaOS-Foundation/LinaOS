@@ -11,9 +11,9 @@
 
 #include "hid-ids.h"
 
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
 
 #define PLT_HID_1_0_PAGE	0xffa00000
 #define PLT_HID_2_0_PAGE	0xffa20000

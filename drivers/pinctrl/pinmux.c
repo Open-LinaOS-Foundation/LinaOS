@@ -12,20 +12,20 @@
  */
 #define pr_fmt(fmt) "pinmux core: " fmt
 
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/radix-tree.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linaos/ctype.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/radix-tree.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/string.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinmux.h>
 #include "core.h"
 #include "pinmux.h"
 

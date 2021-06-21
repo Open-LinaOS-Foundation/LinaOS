@@ -4,14 +4,14 @@
  * z/Architecture Vector Extension Facility.
  *
  * Copyright IBM Corp. 2015
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
  */
 #define KMSG_COMPONENT	"crc32-vx"
 #define pr_fmt(fmt)	KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/crc32.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
+#include <linaos/crc32.h>
 #include <crypto/internal/hash.h>
 #include <asm/fpu/api.h>
 
@@ -301,7 +301,7 @@ static void __exit crc_vx_mod_exit(void)
 module_cpu_feature_match(VXRS, crc_vx_mod_init);
 module_exit(crc_vx_mod_exit);
 
-MODULE_AUTHOR("Hendrik Brueckner <brueckner@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>");
 MODULE_LICENSE("GPL");
 
 MODULE_ALIAS_CRYPTO("crc32");

@@ -2,8 +2,8 @@
 #ifndef LINUX_POWERPC_PERF_HV_COMMON_H_
 #define LINUX_POWERPC_PERF_HV_COMMON_H_
 
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <linaos/perf_event.h>
+#include <linaos/types.h>
 
 struct hv_perf_caps {
 	u16 version;

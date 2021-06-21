@@ -4,12 +4,12 @@
  * Author: Jitao Shi <jitao.shi@mediatek.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regulator/consumer.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_crtc.h>

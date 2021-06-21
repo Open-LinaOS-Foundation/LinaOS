@@ -1,5 +1,5 @@
 /************************************************************************
- * s2io.c: A Linux PCI-X Ethernet driver for Neterion 10GbE Server NIC
+ * s2io.c: A LinaOS PCI-X Ethernet driver for Neterion 10GbE Server NIC
  * Copyright(c) 2002-2010 Exar Corp.
  *
  * This software may be used and distributed according to the terms of
@@ -52,32 +52,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mdio.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/ioctl.h>
-#include <linux/timex.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mdio.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/stddef.h>
+#include <linaos/ioctl.h>
+#include <linaos/timex.h>
+#include <linaos/ethtool.h>
+#include <linaos/workqueue.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/slab.h>
+#include <linaos/prefetch.h>
 #include <net/tcp.h>
 #include <net/checksum.h>
 

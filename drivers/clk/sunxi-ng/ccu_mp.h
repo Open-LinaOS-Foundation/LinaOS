@@ -6,8 +6,8 @@
 #ifndef _CCU_MP_H_
 #define _CCU_MP_H_
 
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
+#include <linaos/bitops.h>
+#include <linaos/clk-provider.h>
 
 #include "ccu_common.h"
 #include "ccu_div.h"

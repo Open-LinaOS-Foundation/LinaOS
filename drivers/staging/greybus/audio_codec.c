@@ -4,12 +4,12 @@
  * Copyright 2016 Google Inc.
  * Copyright 2016 Linaro Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
-#include <uapi/linux/input.h>
+#include <uapi/linaos/input.h>
 
 #include "audio_codec.h"
 #include "audio_apbridgea.h"

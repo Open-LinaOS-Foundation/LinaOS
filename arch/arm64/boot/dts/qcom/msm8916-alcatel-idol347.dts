@@ -29,12 +29,12 @@
 		volume-up {
 			label = "Volume Up";
 			gpios = <&msmgpio 107 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 	};
 
 	usb_id: usb-id {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linaos,extcon-usb-gpio";
 		id-gpio = <&msmgpio 69 GPIO_ACTIVE_HIGH>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&usb_id_default>;
@@ -99,7 +99,7 @@
 
 &pm8916_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	linaos,code = <KEY_VOLUMEDOWN>;
 };
 
 &pm8916_vib {

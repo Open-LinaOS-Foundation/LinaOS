@@ -13,18 +13,18 @@
  * This file handles the architecture-dependent parts of hardware exceptions
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kallsyms.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/kallsyms.h>
 
 #include <asm/exceptions.h>
 #include <asm/entry.h>		/* For KM CPU var */
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
 #include <asm/current.h>
 #include <asm/cacheflush.h>
 

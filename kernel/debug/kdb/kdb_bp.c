@@ -9,14 +9,14 @@
  * Copyright (c) 2009 Wind River Systems, Inc.  All Rights Reserved.
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/kdb.h>
-#include <linux/kgdb.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kdb.h>
+#include <linaos/kgdb.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
 #include "kdb_private.h"
 
 /*

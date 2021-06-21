@@ -14,12 +14,12 @@
 
 #define	ON20_VERSION	"1.01"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 #include <asm/io.h>
 
 #include "paride.h"

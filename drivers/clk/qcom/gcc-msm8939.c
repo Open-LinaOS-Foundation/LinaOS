@@ -3,16 +3,16 @@
  * Copyright 2020 Linaro Limited
  */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/reset-controller.h>
 
 #include <dt-bindings/clock/qcom,gcc-msm8939.h>
 #include <dt-bindings/reset/qcom,gcc-msm8939.h>

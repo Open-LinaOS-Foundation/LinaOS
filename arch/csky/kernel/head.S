@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/page.h>
 #include <abi/entry.h>
 

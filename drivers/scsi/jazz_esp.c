@@ -4,14 +4,14 @@
  * Copyright (C) 2007 Thomas Bogendörfer (tsbogend@alpha.frankende)
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>

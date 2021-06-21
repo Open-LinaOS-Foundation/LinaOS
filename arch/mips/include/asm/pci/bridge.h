@@ -12,8 +12,8 @@
 #ifndef _ASM_PCI_BRIDGE_H
 #define _ASM_PCI_BRIDGE_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
 #include <asm/xtalk/xwidget.h>		/* generic widget header */
 #include <asm/sn/types.h>
 

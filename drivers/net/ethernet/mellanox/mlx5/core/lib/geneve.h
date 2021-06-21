@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2019 Mellanox Technologies. */
 
 #ifndef __MLX5_GENEVE_H__
 #define __MLX5_GENEVE_H__
 
 #include <net/geneve.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 struct mlx5_geneve;
 

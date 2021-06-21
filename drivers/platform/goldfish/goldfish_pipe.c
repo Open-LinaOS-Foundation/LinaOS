@@ -47,22 +47,22 @@
  * exchange is properly mapped during a transfer.
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/miscdevice.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/acpi.h>
-#include <linux/bug.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/miscdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mm.h>
+#include <linaos/acpi.h>
+#include <linaos/bug.h>
 #include "goldfish_pipe_qemu.h"
 
 /*

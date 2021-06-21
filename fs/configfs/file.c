@@ -8,14 +8,14 @@
  * configfs Copyright (C) 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/vmalloc.h>
+#include <linaos/uaccess.h>
 
-#include <linux/configfs.h>
+#include <linaos/configfs.h>
 #include "configfs_internal.h"
 
 /*

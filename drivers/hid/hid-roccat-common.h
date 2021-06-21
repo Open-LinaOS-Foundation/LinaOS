@@ -9,8 +9,8 @@
 /*
  */
 
-#include <linux/usb.h>
-#include <linux/types.h>
+#include <linaos/usb.h>
+#include <linaos/types.h>
 
 enum roccat_common2_commands {
 	ROCCAT_COMMON_COMMAND_CONTROL = 0x4,

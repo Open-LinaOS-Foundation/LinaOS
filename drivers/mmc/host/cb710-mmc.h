@@ -7,7 +7,7 @@
 #ifndef LINUX_CB710_MMC_H
 #define LINUX_CB710_MMC_H
 
-#include <linux/cb710.h>
+#include <linaos/cb710.h>
 
 /* per-MMC-reader structure */
 struct cb710_mmc_reader {

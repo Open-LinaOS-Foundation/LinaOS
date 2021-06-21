@@ -41,13 +41,13 @@
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
 
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/sysctl.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/sysctl.h>
+#include <linaos/workqueue.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/svc_rdma.h>
 
 #define RPCDBG_FACILITY	RPCDBG_SVCXPRT
 

@@ -6,21 +6,21 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/nmi.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/lockdep.h>
-#include <linux/export.h>
-#include <linux/sysctl.h>
-#include <linux/suspend.h>
-#include <linux/utsname.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/sysctl.h>
+#include <linaos/mm.h>
+#include <linaos/cpu.h>
+#include <linaos/nmi.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/freezer.h>
+#include <linaos/kthread.h>
+#include <linaos/lockdep.h>
+#include <linaos/export.h>
+#include <linaos/sysctl.h>
+#include <linaos/suspend.h>
+#include <linaos/utsname.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/sysctl.h>
 
 #include <trace/events/sched.h>
 

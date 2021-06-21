@@ -8,7 +8,7 @@
 #ifndef ALLEGRO_MAIL_H
 #define ALLEGRO_MAIL_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 enum mcu_msg_type {
 	MCU_MSG_TYPE_INIT = 0x0000,

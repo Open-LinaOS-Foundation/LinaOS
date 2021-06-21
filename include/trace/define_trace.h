@@ -21,7 +21,7 @@
 /* Prevent recursion */
 #undef CREATE_TRACE_POINTS
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #undef TRACE_EVENT
 #define TRACE_EVENT(name, proto, args, tstruct, assign, print)	\

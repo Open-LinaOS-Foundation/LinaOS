@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2003 - 2006  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 #include <asm/cacheflush.h>
 #include <mach/sysasic.h>
 #include <mach/dma.h>
@@ -192,6 +192,6 @@ static void __exit g2_dma_exit(void)
 subsys_initcall(g2_dma_init);
 module_exit(g2_dma_exit);
 
-MODULE_AUTHOR("Paul Mundt <lethal@linux-sh.org>");
+MODULE_AUTHOR("Paul Mundt <lethal@linaos-sh.org>");
 MODULE_DESCRIPTION("G2 bus DMA driver");
 MODULE_LICENSE("GPL v2");

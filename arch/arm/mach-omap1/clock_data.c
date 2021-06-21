@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-omap1/clock_data.c
+ *  linaos/arch/arm/mach-omap1/clock_data.c
  *
  *  Copyright (C) 2004 - 2005, 2009-2010 Nokia Corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>
@@ -11,11 +11,11 @@
  *   chips that they are present on.
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/cpufreq.h>
+#include <linaos/delay.h>
 
 #include <asm/mach-types.h>  /* for machine_is_* */
 

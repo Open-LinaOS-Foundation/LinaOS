@@ -4,7 +4,7 @@
 
 #define pr_fmt(fmt) "lkdtm: " fmt
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /* bugs.c */
 void __init lkdtm_bugs_init(int *recur_param);

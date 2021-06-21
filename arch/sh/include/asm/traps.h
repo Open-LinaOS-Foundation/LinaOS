@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_TRAPS_H
 #define __ASM_SH_TRAPS_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 # include <asm/traps_32.h>
 

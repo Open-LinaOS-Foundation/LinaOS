@@ -4,23 +4,23 @@
  *
  * Copyright (C) 2019 Western Digital Corporation or its affiliates.
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/magic.h>
-#include <linux/iomap.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/statfs.h>
-#include <linux/writeback.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
-#include <linux/parser.h>
-#include <linux/uio.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/crc32.h>
-#include <linux/task_io_accounting_ops.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/magic.h>
+#include <linaos/iomap.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/statfs.h>
+#include <linaos/writeback.h>
+#include <linaos/quotaops.h>
+#include <linaos/seq_file.h>
+#include <linaos/parser.h>
+#include <linaos/uio.h>
+#include <linaos/mman.h>
+#include <linaos/sched/mm.h>
+#include <linaos/crc32.h>
+#include <linaos/task_io_accounting_ops.h>
 
 #include "zonefs.h"
 

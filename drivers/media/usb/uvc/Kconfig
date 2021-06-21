@@ -7,7 +7,7 @@ config USB_VIDEO_CLASS
 	  Support for the USB Video Class (UVC).  Currently only video
 	  input devices, such as webcams, are supported.
 
-	  For more information see: <http://linux-uvc.berlios.de/>
+	  For more information see: <http://linaos-uvc.berlios.de/>
 
 config USB_VIDEO_CLASS_INPUT_EVDEV
 	bool "UVC input events device support"

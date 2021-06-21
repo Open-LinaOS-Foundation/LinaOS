@@ -5,15 +5,15 @@
  * Parts of this file were based on sources as follows:
  *
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@linaos.ie>
  * Copyright (C) 2011 Texas Instruments
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/version.h>
-#include <linux/dma-buf.h>
-#include <linux/of_graph.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/version.h>
+#include <linaos/dma-buf.h>
+#include <linaos/of_graph.h>
 
 #include <drm/drm_fb_cma_helper.h>
 #include <drm/drm_fourcc.h>

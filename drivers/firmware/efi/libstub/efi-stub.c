@@ -9,8 +9,8 @@
  *     Mark Salter <msalter@redhat.com>
  */
 
-#include <linux/efi.h>
-#include <linux/libfdt.h>
+#include <linaos/efi.h>
+#include <linaos/libfdt.h>
 #include <asm/efi.h>
 
 #include "efistub.h"
@@ -75,7 +75,7 @@ static struct screen_info *setup_graphics(void)
 
 static void install_memreserve_table(void)
 {
-	struct linux_efi_memreserve *rsv;
+	struct linaos_efi_memreserve *rsv;
 	efi_guid_t memreserve_table_guid = LINUX_EFI_MEMRESERVE_TABLE_GUID;
 	efi_status_t status;
 
@@ -190,7 +190,7 @@ efi_status_t __efiapi efi_pe_entry(efi_handle_t handle,
 		}
 	}
 
-	efi_info("Booting Linux Kernel...\n");
+	efi_info("Booting LinaOS Kernel...\n");
 
 	si = setup_graphics();
 

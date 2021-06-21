@@ -3,11 +3,11 @@
  * Copyright (c) 2014-2015 Qualcomm Atheros, Inc.
  */
 
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/thermal.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
 #include "core.h"
 #include "debug.h"
 #include "wmi-ops.h"
@@ -186,7 +186,7 @@ int ath10k_thermal_register(struct ath10k *ar)
 		return 0;
 
 	/* Avoid linking error on devm_hwmon_device_register_with_groups, I
-	 * guess linux/hwmon.h is missing proper stubs.
+	 * guess linaos/hwmon.h is missing proper stubs.
 	 */
 	if (!IS_REACHABLE(CONFIG_HWMON))
 		return 0;

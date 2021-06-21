@@ -36,8 +36,8 @@
  */
 
 #include <net/sock.h>
-#include <linux/list_sort.h>
-#include <linux/rbtree_augmented.h>
+#include <linaos/list_sort.h>
+#include <linaos/rbtree_augmented.h>
 #include "core.h"
 #include "netlink.h"
 #include "name_table.h"

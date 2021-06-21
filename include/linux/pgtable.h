@@ -2,15 +2,15 @@
 #ifndef _LINUX_PGTABLE_H
 #define _LINUX_PGTABLE_H
 
-#include <linux/pfn.h>
+#include <linaos/pfn.h>
 #include <asm/pgtable.h>
 
 #ifndef __ASSEMBLY__
 #ifdef CONFIG_MMU
 
-#include <linux/mm_types.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
+#include <linaos/mm_types.h>
+#include <linaos/bug.h>
+#include <linaos/errno.h>
 #include <asm-generic/pgtable_uffd.h>
 
 #if 5 - defined(__PAGETABLE_P4D_FOLDED) - defined(__PAGETABLE_PUD_FOLDED) - \
@@ -1287,9 +1287,9 @@ static inline int pmd_none_or_trans_huge_or_clear_bad(pmd_t *pmd)
 	/*
 	 * !pmd_present() checks for pmd migration entries
 	 *
-	 * The complete check uses is_pmd_migration_entry() in linux/swapops.h
+	 * The complete check uses is_pmd_migration_entry() in linaos/swapops.h
 	 * But using that requires moving current function and pmd_trans_unstable()
-	 * to linux/swapops.h to resolve dependency, which is too much code move.
+	 * to linaos/swapops.h to resolve dependency, which is too much code move.
 	 *
 	 * !pmd_present() is equivalent to is_pmd_migration_entry() currently,
 	 * because !pmd_present() pages can only be under migration not swapped

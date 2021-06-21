@@ -1,5 +1,5 @@
 /*
- * IEEE 802.2 User Interface SAPs for Linux, data structures and indicators.
+ * IEEE 802.2 User Interface SAPs for LinaOS, data structures and indicators.
  *
  * Copyright (c) 2001 by Jay Schulist <jschlst@samba.org>
  *
@@ -13,7 +13,7 @@
 #ifndef __LINUX_LLC_H
 #define __LINUX_LLC_H
 
-#include <uapi/linux/llc.h>
+#include <uapi/linaos/llc.h>
 
 #define LLC_SAP_DYN_START	0xC0
 #define LLC_SAP_DYN_STOP	0xDE

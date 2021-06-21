@@ -9,11 +9,11 @@
  * version 2.  This program is licensed "as is" without any warranty of
  * any kind, whether express or implied.
  */
-#include <linux/workqueue.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_8250.h>
+#include <linaos/workqueue.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/serial_reg.h>
+#include <linaos/serial_8250.h>
 #include <asm/io.h>
 #include <asm/prom.h>
 #include <asm/termbits.h>

@@ -2,7 +2,7 @@
 #ifndef __KVM_X86_VMX_INSN_H
 #define __KVM_X86_VMX_INSN_H
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #include <asm/kvm_host.h>
 #include <asm/vmx.h>

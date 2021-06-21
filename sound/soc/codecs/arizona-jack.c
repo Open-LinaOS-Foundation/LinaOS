@@ -5,24 +5,24 @@
  *  Copyright (C) 2012-2014 Wolfson Microelectronics plc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/input.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
 
 #include <sound/jack.h>
 #include <sound/soc.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <linaos/mfd/arizona/core.h>
+#include <linaos/mfd/arizona/pdata.h>
+#include <linaos/mfd/arizona/registers.h>
 #include <dt-bindings/mfd/arizona.h>
 
 #include "arizona.h"

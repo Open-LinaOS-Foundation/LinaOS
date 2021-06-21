@@ -5,19 +5,19 @@
  * Copyright 2009-2010 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/leds.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
-#include <linux/platform_data/adp8860.h>
+#include <linaos/platform_data/adp8860.h>
 #define ADP8860_EXT_FEATURES
 #define ADP8860_USE_LEDS
 

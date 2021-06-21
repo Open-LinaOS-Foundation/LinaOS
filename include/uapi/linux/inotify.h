@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * Inode based directory notification for Linux
+ * Inode based directory notification for LinaOS
  *
  * Copyright (C) 2005 John McCutchan
  */
@@ -9,8 +9,8 @@
 #define _UAPI_LINUX_INOTIFY_H
 
 /* For O_CLOEXEC and O_NONBLOCK */
-#include <linux/fcntl.h>
-#include <linux/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/types.h>
 
 /*
  * struct inotify_event - structure read from the inotify device for each event

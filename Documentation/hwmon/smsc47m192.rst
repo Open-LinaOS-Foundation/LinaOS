@@ -20,7 +20,7 @@ Supported chips:
 
 
 Author:
-      - Hartmut Rick <linux@rick.claranet.de>
+      - Hartmut Rick <linaos@rick.claranet.de>
 
       - Special thanks to Jean Delvare for careful checking
 	of the code and many helpful comments and suggestions.

@@ -12,13 +12,13 @@
 #include <scsi/scsi_transport_iscsi.h>
 #include <scsi/libiscsi.h>
 #include <scsi/scsi_host.h>
-#include <linux/uio_driver.h>
+#include <linaos/uio_driver.h>
 
 #include "qedi_hsi.h"
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/qed_if.h>
 #include "qedi_dbg.h"
-#include <linux/qed/qed_iscsi_if.h>
-#include <linux/qed/qed_ll2_if.h>
+#include <linaos/qed/qed_iscsi_if.h>
+#include <linaos/qed/qed_ll2_if.h>
 #include "qedi_version.h"
 #include "qedi_nvm_iscsi_cfg.h"
 

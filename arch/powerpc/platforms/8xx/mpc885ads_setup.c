@@ -13,21 +13,21 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
 
-#include <linux/fs_enet_pd.h>
-#include <linux/fs_uart_pd.h>
-#include <linux/fsl_devices.h>
-#include <linux/mii.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/fs_enet_pd.h>
+#include <linaos/fs_uart_pd.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/mii.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 #include <asm/delay.h>
 #include <asm/io.h>

@@ -8,9 +8,9 @@
 #ifndef _KERNEL_WORKQUEUE_INTERNAL_H
 #define _KERNEL_WORKQUEUE_INTERNAL_H
 
-#include <linux/workqueue.h>
-#include <linux/kthread.h>
-#include <linux/preempt.h>
+#include <linaos/workqueue.h>
+#include <linaos/kthread.h>
+#include <linaos/preempt.h>
 
 struct worker_pool;
 

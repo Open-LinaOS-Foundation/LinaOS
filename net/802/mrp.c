@@ -7,14 +7,14 @@
  *	Adapted from code in net/802/garp.c
  *	Copyright (c) 2008 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <net/mrp.h>
 #include <asm/unaligned.h>
 

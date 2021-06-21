@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68knommu/kernel/setup.c
+ *  linaos/arch/m68knommu/kernel/setup.c
  *
  *  Copyright (C) 1999-2007  Greg Ungerer (gerg@snapgear.com)
- *  Copyright (C) 1998,1999  D. Jeff Dionne <jeff@uClinux.org>
+ *  Copyright (C) 1998,1999  D. Jeff Dionne <jeff@uClinaos.org>
  *  Copyleft  ()) 2000       James D. Schettine {james@telos-systems.com}
  *  Copyright (C) 1998       Kenneth Albanowski <kjahds@kjahds.com>
  *  Copyright (C) 1995       Hamish Macdonald
@@ -17,22 +17,22 @@
  * This file handles the architecture-dependent parts of system setup
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/rtc.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/console.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/memblock.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/initrd.h>
+#include <linaos/root_dev.h>
+#include <linaos/rtc.h>
 
 #include <asm/setup.h>
 #include <asm/bootinfo.h>
@@ -101,13 +101,13 @@ void __init setup_arch(char **cmdline_p)
 
 	process_uboot_commandline(&command_line[0], sizeof(command_line));
 
-	pr_info("uClinux with CPU " CPU_NAME "\n");
+	pr_info("uClinaos with CPU " CPU_NAME "\n");
 
 #ifdef CONFIG_UCDIMM
 	pr_info("uCdimm by Lineo, Inc. <www.lineo.com>\n");
 #endif
 #ifdef CONFIG_M68328
-	pr_info("68328 support D. Jeff Dionne <jeff@uclinux.org>\n");
+	pr_info("68328 support D. Jeff Dionne <jeff@uclinaos.org>\n");
 	pr_info("68328 support Kenneth Albanowski <kjahds@kjshds.com>\n");
 #endif
 #ifdef CONFIG_M68EZ328
@@ -133,7 +133,7 @@ void __init setup_arch(char **cmdline_p)
 	pr_info("TRG SuperPilot FLASH card support <info@trgnet.com>\n");
 #endif
 #if defined( CONFIG_PILOT ) && defined( CONFIG_M68EZ328 )
-	pr_info("PalmV support by Lineo Inc. <jeff@uclinux.com>\n");
+	pr_info("PalmV support by Lineo Inc. <jeff@uclinaos.com>\n");
 #endif
 #ifdef CONFIG_DRAGEN2
 	pr_info("DragonEngine II board support by Georges Menie\n");

@@ -5,7 +5,7 @@
 #if !defined(_TRACE_IPI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_IPI_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /**
  * ipi_raise - called when a smp cross call is made

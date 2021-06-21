@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright 2014 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright 2014 Oleksij Rempel <linaos@rempel-privat.de>
  */
 
 #ifndef _DT_BINDINGS_CLK_ASM9260_H

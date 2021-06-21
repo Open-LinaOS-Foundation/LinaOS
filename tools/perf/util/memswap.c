@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <byteswap.h>
 #include "memswap.h"
-#include <linux/types.h>
+#include <linaos/types.h>
 
 void mem_bswap_32(void *src, int byte_size)
 {

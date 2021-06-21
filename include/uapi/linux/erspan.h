@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * ERSPAN Tunnel Metadata
  *
@@ -13,7 +13,7 @@
 #ifndef _UAPI_ERSPAN_H
 #define _UAPI_ERSPAN_H
 
-#include <linux/types.h>	/* For __beXX in userspace */
+#include <linaos/types.h>	/* For __beXX in userspace */
 #include <asm/byteorder.h>
 
 /* ERSPAN version 2 metadata header */

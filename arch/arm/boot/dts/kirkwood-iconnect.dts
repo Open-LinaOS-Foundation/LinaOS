@@ -16,8 +16,8 @@
 	chosen {
 		bootargs = "console=ttyS0,115200n8 earlyprintk";
 		stdout-path = &uart0;
-		linux,initrd-start = <0x4500040>;
-		linux,initrd-end   = <0x4800000>;
+		linaos,initrd-start = <0x4500040>;
+		linaos,initrd-end   = <0x4800000>;
 	};
 
 	ocp@f1000000 {
@@ -129,13 +129,13 @@
 
 		otb {
 			label = "OTB Button";
-			linux,code = <KEY_COPY>;
+			linaos,code = <KEY_COPY>;
 			gpios = <&gpio1 3 GPIO_ACTIVE_LOW>;
 			debounce-interval = <100>;
 		};
 		reset {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
 			debounce-interval = <100>;
 		};

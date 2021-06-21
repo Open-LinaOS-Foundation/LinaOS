@@ -7,14 +7,14 @@
  * Author : Raghavendra Chandra Ganiga <ravi23ganiga@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
-#include <linux/regmap.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/spi/spi.h>
+#include <linaos/bcd.h>
+#include <linaos/regmap.h>
 
 /* Registers in ds1347 rtc */
 

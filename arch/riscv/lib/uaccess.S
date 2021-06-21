@@ -1,4 +1,4 @@
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm-generic/export.h>
 #include <asm/asm.h>
 #include <asm/csr.h>

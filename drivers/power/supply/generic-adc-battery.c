@@ -9,20 +9,20 @@
  * more details.
  *
  */
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
-#include <linux/power/generic-adc-battery.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/err.h>
+#include <linaos/timer.h>
+#include <linaos/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/iio/types.h>
+#include <linaos/power/generic-adc-battery.h>
 
 #define JITTER_DEFAULT 10 /* hope 10ms is enough */
 

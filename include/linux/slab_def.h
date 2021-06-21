@@ -2,11 +2,11 @@
 #ifndef _LINUX_SLAB_DEF_H
 #define	_LINUX_SLAB_DEF_H
 
-#include <linux/kfence.h>
-#include <linux/reciprocal_div.h>
+#include <linaos/kfence.h>
+#include <linaos/reciprocal_div.h>
 
 /*
- * Definitions unique to the original Linux SLAB allocator.
+ * Definitions unique to the original LinaOS SLAB allocator.
  */
 
 struct kmem_cache {

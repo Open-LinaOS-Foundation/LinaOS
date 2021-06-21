@@ -7,16 +7,16 @@
  *             initial version
  */
 
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/mouse-pxa930_trkball.h>
+#include <linaos/platform_data/mouse-pxa930_trkball.h>
 
 /* Trackball Controller Register Definitions */
 #define TBCR		(0x000C)

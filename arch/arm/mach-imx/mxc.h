@@ -7,7 +7,7 @@
 #ifndef __ASM_ARCH_MXC_H__
 #define __ASM_ARCH_MXC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <soc/imx/cpu.h>
 
 #ifndef __ASM_ARCH_MXC_HARDWARE_H__

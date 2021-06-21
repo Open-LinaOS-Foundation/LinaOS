@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-sa1100/shannon.c
+ * linaos/arch/arm/mach-sa1100/shannon.c
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/gpio/machine.h>
-#include <linux/kernel.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/tty.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/tty.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
 
 #include <video/sa1100fb.h>
 
@@ -23,7 +23,7 @@
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <linaos/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/shannon.h>
 #include <mach/irqs.h>
 

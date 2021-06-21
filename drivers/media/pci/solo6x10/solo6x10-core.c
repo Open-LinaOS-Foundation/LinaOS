@@ -9,15 +9,15 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/videodev2.h>
+#include <linaos/delay.h>
+#include <linaos/sysfs.h>
+#include <linaos/ktime.h>
+#include <linaos/slab.h>
 
 #include "solo6x10.h"
 #include "solo6x10-tw28.h"

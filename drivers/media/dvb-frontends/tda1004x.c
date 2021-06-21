@@ -16,12 +16,12 @@
 #define TDA10045_DEFAULT_FIRMWARE "dvb-fe-tda10045.fw"
 #define TDA10046_DEFAULT_FIRMWARE "dvb-fe-tda10046.fw"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/jiffies.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "tda1004x.h"

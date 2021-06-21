@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright (c) 2016-2017 Hisilicon Limited.
 
-#include <linux/etherdevice.h>
-#include <linux/string.h>
-#include <linux/phy.h>
-#include <linux/sfp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/string.h>
+#include <linaos/phy.h>
+#include <linaos/sfp.h>
 
 #include "hns3_enet.h"
 

@@ -9,9 +9,9 @@
  *
  * You could find the datasheet in Documentation/arm/sunxi.rst
  */
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/scatterlist.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/scatterlist.h>
 #include <crypto/internal/hash.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>

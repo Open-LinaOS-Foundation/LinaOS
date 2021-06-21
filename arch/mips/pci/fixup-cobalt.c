@@ -8,10 +8,10 @@
  * Copyright (C) 1995, 1996, 1997, 2002, 2003 by Ralf Baechle
  * Copyright (C) 2001, 2002, 2003 by Liam Davies (ldavies@agile.tv)
  */
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 
 #include <asm/io.h>
 #include <asm/gt64120.h>

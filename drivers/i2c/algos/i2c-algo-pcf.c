@@ -13,12 +13,12 @@
  * messages, proper stop/repstart signaling during receive, added detect code
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pcf.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-pcf.h>
 #include "i2c-algo-pcf.h"
 
 

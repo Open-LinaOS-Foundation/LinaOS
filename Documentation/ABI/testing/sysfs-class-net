@@ -34,7 +34,7 @@ Description:
 		Indicates the hardware address size in bytes.
 		Values vary based on the lower-level protocol used by the
 		interface (Ethernet, FDDI, ATM, IEEE 802.15.4...). See
-		include/uapi/linux/if_*.h for actual values.
+		include/uapi/linaos/if_*.h for actual values.
 
 What:		/sys/class/net/<iface>/address
 Date:		April 2005
@@ -174,7 +174,7 @@ KernelVersion:	2.6.12
 Contact:	netdev@vger.kernel.org
 Description:
 		Indicates the interface flags as a bitmask in hexadecimal. See
-		include/uapi/linux/if.h for a list of all possible values and
+		include/uapi/linaos/if.h for a list of all possible values and
 		the flags semantics.
 
 What:		/sys/class/net/<iface>/ifalias
@@ -296,7 +296,7 @@ KernelVersion:	2.6.12
 Contact:	netdev@vger.kernel.org
 Description:
 		Indicates the interface protocol type as a decimal value. See
-		include/uapi/linux/if_arp.h for all possible values.
+		include/uapi/linaos/if_arp.h for all possible values.
 
 What:		/sys/class/net/<iface>/phys_switch_id
 Date:		November 2014

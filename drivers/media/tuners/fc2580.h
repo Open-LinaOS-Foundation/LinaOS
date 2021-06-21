@@ -10,7 +10,7 @@
 
 #include <media/dvb_frontend.h>
 #include <media/v4l2-subdev.h>
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 
 /*
  * I2C address

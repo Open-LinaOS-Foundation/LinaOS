@@ -3,7 +3,7 @@
  * pcmad.c
  * Hardware driver for Winsystems PCM-A/D12 and PCM-A/D16
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000,2001 David A. Schleef <ds@schleef.org>
  */
 
@@ -28,7 +28,7 @@
  *	   1 = two's complement (+-10V input range)
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 #define PCMAD_STATUS		0

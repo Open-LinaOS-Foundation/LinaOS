@@ -11,18 +11,18 @@
  * Copyright (C) 2007 Marvell Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/sched/debug.h>
-#include <linux/stringify.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/stop_machine.h>
+#include <linaos/sched/debug.h>
+#include <linaos/stringify.h>
 #include <asm/traps.h>
 #include <asm/opcodes.h>
 #include <asm/cacheflush.h>
-#include <linux/percpu.h>
-#include <linux/bug.h>
+#include <linaos/percpu.h>
+#include <linaos/bug.h>
 #include <asm/patch.h>
 #include <asm/sections.h>
 

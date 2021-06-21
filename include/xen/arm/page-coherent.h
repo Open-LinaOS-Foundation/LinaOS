@@ -2,7 +2,7 @@
 #ifndef _XEN_ARM_PAGE_COHERENT_H
 #define _XEN_ARM_PAGE_COHERENT_H
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include <asm/page.h>
 
 static inline void *xen_alloc_coherent_pages(struct device *hwdev, size_t size,

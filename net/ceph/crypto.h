@@ -2,8 +2,8 @@
 #ifndef _FS_CEPH_CRYPTO_H
 #define _FS_CEPH_CRYPTO_H
 
-#include <linux/ceph/types.h>
-#include <linux/ceph/buffer.h>
+#include <linaos/ceph/types.h>
+#include <linaos/ceph/buffer.h>
 
 #define CEPH_KEY_LEN			16
 #define CEPH_MAX_CON_SECRET_LEN		64

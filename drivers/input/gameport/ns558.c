@@ -5,7 +5,7 @@
  */
 
 /*
- * NS558 based standard IBM game port driver for Linux
+ * NS558 based standard IBM game port driver for LinaOS
  */
 
 /*
@@ -13,13 +13,13 @@
 
 #include <asm/io.h>
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/gameport.h>
-#include <linux/slab.h>
-#include <linux/pnp.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/gameport.h>
+#include <linaos/slab.h>
+#include <linaos/pnp.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Classic gameport (ISA/PnP) driver");

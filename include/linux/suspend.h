@@ -2,12 +2,12 @@
 #ifndef _LINUX_SUSPEND_H
 #define _LINUX_SUSPEND_H
 
-#include <linux/swap.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/mm.h>
-#include <linux/freezer.h>
+#include <linaos/swap.h>
+#include <linaos/notifier.h>
+#include <linaos/init.h>
+#include <linaos/pm.h>
+#include <linaos/mm.h>
+#include <linaos/freezer.h>
 #include <asm/errno.h>
 
 #ifdef CONFIG_VT
@@ -555,7 +555,7 @@ extern __printf(2, 3) void __pm_pr_dbg(bool defer, const char *fmt, ...);
 #define pm_print_times_enabled	(false)
 #define pm_debug_messages_on	(false)
 
-#include <linux/printk.h>
+#include <linaos/printk.h>
 
 #define __pm_pr_dbg(defer, fmt, ...) \
 	no_printk(KERN_DEBUG fmt, ##__VA_ARGS__)

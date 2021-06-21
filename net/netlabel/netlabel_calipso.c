@@ -14,18 +14,18 @@
  * (c) Copyright Huw Davies <huw@codeweavers.com>, 2015
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/audit.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
 #include <net/netlabel.h>
 #include <net/calipso.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "netlabel_user.h"
 #include "netlabel_calipso.h"

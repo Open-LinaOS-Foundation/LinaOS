@@ -1,13 +1,13 @@
 What:		/sys/bus/intel_th/devices/<intel_th_id>-msc<msc-id>/wrap
 Date:		June 2015
 KernelVersion:	4.3
-Contact:	Alexander Shishkin <alexander.shishkin@linux.intel.com>
+Contact:	Alexander Shishkin <alexander.shishkin@linaos.intel.com>
 Description:	(RW) Configure MSC buffer wrapping. 1 == wrapping enabled.
 
 What:		/sys/bus/intel_th/devices/<intel_th_id>-msc<msc-id>/mode
 Date:		June 2015
 KernelVersion:	4.3
-Contact:	Alexander Shishkin <alexander.shishkin@linux.intel.com>
+Contact:	Alexander Shishkin <alexander.shishkin@linaos.intel.com>
 Description:	(RW) Configure MSC operating mode:
 
 		  - "single", for contiguous buffer mode (high-order alloc);
@@ -23,7 +23,7 @@ Description:	(RW) Configure MSC operating mode:
 What:		/sys/bus/intel_th/devices/<intel_th_id>-msc<msc-id>/nr_pages
 Date:		June 2015
 KernelVersion:	4.3
-Contact:	Alexander Shishkin <alexander.shishkin@linux.intel.com>
+Contact:	Alexander Shishkin <alexander.shishkin@linaos.intel.com>
 Description:	(RW) Configure MSC buffer size for "single" or "multi" modes.
 
 		In single mode, this is a single number of pages, has to be
@@ -38,7 +38,7 @@ Description:	(RW) Configure MSC buffer size for "single" or "multi" modes.
 What:		/sys/bus/intel_th/devices/<intel_th_id>-msc<msc-id>/win_switch
 Date:		May 2019
 KernelVersion:	5.2
-Contact:	Alexander Shishkin <alexander.shishkin@linux.intel.com>
+Contact:	Alexander Shishkin <alexander.shishkin@linaos.intel.com>
 Description:	(RW) Trigger window switch for the MSC's buffer, in
 		multi-window mode. In "multi" mode, accepts writes of "1", thereby
 		triggering a window switch for the buffer. Returns an error in any
@@ -47,7 +47,7 @@ Description:	(RW) Trigger window switch for the MSC's buffer, in
 What:		/sys/bus/intel_th/devices/<intel_th_id>-msc<msc-id>/stop_on_full
 Date:		March 2020
 KernelVersion:	5.7
-Contact:	Alexander Shishkin <alexander.shishkin@linux.intel.com>
+Contact:	Alexander Shishkin <alexander.shishkin@linaos.intel.com>
 Description:	(RW) Configure whether trace stops when the last available window
 		becomes full (1/y/Y) or wraps around and continues until the next
 		window becomes available again (0/n/N).

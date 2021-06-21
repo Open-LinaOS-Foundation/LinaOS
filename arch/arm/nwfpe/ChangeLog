@@ -6,7 +6,7 @@
 	* Make 80-bit precision a compile-time option. (1%)
 	* Only initialize FPE state once in repeat-FP situations. (6%)
 
-2002-01-19  Russell King <rmk@arm.linux.org.uk>
+2002-01-19  Russell King <rmk@arm.linaos.org.uk>
 
 	* fpa11.h - Add documentation
 	          - remove userRegisters pointer from this structure.

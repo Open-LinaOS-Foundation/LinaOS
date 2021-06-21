@@ -2,12 +2,12 @@
 #ifndef __FIRMWARE_LOADER_H
 #define __FIRMWARE_LOADER_H
 
-#include <linux/bitops.h>
-#include <linux/firmware.h>
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/completion.h>
+#include <linaos/bitops.h>
+#include <linaos/firmware.h>
+#include <linaos/types.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/completion.h>
 
 #include <generated/utsrelease.h>
 

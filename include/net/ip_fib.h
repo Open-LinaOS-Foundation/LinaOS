@@ -13,14 +13,14 @@
 #define _NET_IP_FIB_H
 
 #include <net/flow.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
+#include <linaos/seq_file.h>
+#include <linaos/rcupdate.h>
 #include <net/fib_notifier.h>
 #include <net/fib_rules.h>
 #include <net/inetpeer.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/refcount.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/refcount.h>
 
 struct fib_config {
 	u8			fc_dst_len;

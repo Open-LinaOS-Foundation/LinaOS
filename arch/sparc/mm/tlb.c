@@ -4,12 +4,12 @@
  * Copyright (C) 2004 David S. Miller <davem@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/preempt.h>
-#include <linux/pagemap.h>
+#include <linaos/kernel.h>
+#include <linaos/percpu.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/preempt.h>
+#include <linaos/pagemap.h>
 
 #include <asm/tlbflush.h>
 #include <asm/cacheflush.h>

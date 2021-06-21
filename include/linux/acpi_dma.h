@@ -5,16 +5,16 @@
  * Based on of_dma.h
  *
  * Copyright (C) 2013, Intel Corporation
- * Author: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ * Author: Andy Shevchenko <andriy.shevchenko@linaos.intel.com>
  */
 
 #ifndef __LINUX_ACPI_DMA_H
 #define __LINUX_ACPI_DMA_H
 
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/dmaengine.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/dmaengine.h>
 
 /**
  * struct acpi_dma_spec - slave device DMA resources

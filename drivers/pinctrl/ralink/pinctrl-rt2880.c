@@ -3,18 +3,18 @@
  *  Copyright (C) 2013 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/machine.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 #include <asm/mach-ralink/pinmux.h>

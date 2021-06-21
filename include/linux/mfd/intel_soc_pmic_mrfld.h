@@ -8,7 +8,7 @@
 #ifndef __INTEL_SOC_PMIC_MRFLD_H__
 #define __INTEL_SOC_PMIC_MRFLD_H__
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 #define BCOVE_ID		0x00
 

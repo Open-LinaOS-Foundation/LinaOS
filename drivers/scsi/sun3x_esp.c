@@ -4,16 +4,16 @@
  * Copyright (C) 2007,2008 Thomas Bogendoerfer (tsbogend@alpha.franken.de)
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 #include <asm/sun3x.h>
 #include <asm/dma.h>

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_X86_PTRACE_H
 #define _UAPI_ASM_X86_PTRACE_H
 
-#include <linux/compiler.h>	/* For __user */
+#include <linaos/compiler.h>	/* For __user */
 #include <asm/ptrace-abi.h>
 #include <asm/processor-flags.h>
 

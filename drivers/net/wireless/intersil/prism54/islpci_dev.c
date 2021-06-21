@@ -5,17 +5,17 @@
  *  Copyright (C) 2003 Luis R. Rodriguez <mcgrof@ruslug.rutgers.edu>
  */
 
-#include <linux/hardirq.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/hardirq.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/if_arp.h>
+#include <linaos/netdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/pci.h>
+#include <linaos/sched.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/if_arp.h>
 
 #include <asm/io.h>
 

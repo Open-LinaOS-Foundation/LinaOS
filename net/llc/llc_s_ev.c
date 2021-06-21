@@ -14,7 +14,7 @@
  *
  * See the GNU General Public License for more details.
  */
-#include <linux/socket.h>
+#include <linaos/socket.h>
 #include <net/sock.h>
 #include <net/llc_if.h>
 #include <net/llc_s_ev.h>

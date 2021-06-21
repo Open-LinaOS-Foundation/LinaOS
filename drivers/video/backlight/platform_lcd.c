@@ -7,13 +7,13 @@
  * Generic platform-device LCD power control interface.
 */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/lcd.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/lcd.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #include <video/platform_lcd.h>
 
@@ -152,6 +152,6 @@ static struct platform_driver platform_lcd_driver = {
 
 module_platform_driver(platform_lcd_driver);
 
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-linaos@fluff.org>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:platform-lcd");

@@ -34,10 +34,10 @@
  * the same DMA mappings?
  */
 
-#include <linux/pagemap.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/pagemap.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm_device.h>
 #include <drm/via_drm.h>

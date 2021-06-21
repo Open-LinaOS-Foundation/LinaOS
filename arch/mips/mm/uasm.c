@@ -9,7 +9,7 @@
  *
  * Copyright (C) 2004, 2005, 2006, 2008	 Thiemo Seufer
  * Copyright (C) 2005, 2007  Maciej W. Rozycki
- * Copyright (C) 2006  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006  Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2012, 2013  MIPS Technologies, Inc.  All rights reserved.
  */
 

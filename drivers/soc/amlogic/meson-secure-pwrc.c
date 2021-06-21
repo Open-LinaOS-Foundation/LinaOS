@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
 #include <dt-bindings/power/meson-a1-power.h>
-#include <linux/arm-smccc.h>
-#include <linux/firmware/meson/meson_sm.h>
-#include <linux/module.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/firmware/meson/meson_sm.h>
+#include <linaos/module.h>
 
 #define PWRC_ON		1
 #define PWRC_OFF	0

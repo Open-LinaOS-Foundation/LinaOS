@@ -2,7 +2,7 @@
 /*
  *  Driver for GRLIB serial ports (APBUART)
  *
- *  Based on linux/drivers/serial/amba.c
+ *  Based on linaos/drivers/serial/amba.c
  *
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
  *  Copyright (C) 2003 Konrad Eisele <eiselekd@web.de>
@@ -11,23 +11,23 @@
  *  Copyright (C) 2009 Kristoffer Glembo <kristoffer@gaisler.com>, Aeroflex Gaisler AB
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/kthread.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/serial_core.h>
+#include <linaos/module.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/serial.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/kthread.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/serial_core.h>
 #include <asm/irq.h>
 
 #include "apbuart.h"

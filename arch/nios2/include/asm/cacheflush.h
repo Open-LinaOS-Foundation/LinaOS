@@ -10,7 +10,7 @@
 #ifndef _ASM_NIOS2_CACHEFLUSH_H
 #define _ASM_NIOS2_CACHEFLUSH_H
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 
 /*
  * This flag is used to indicate that the page pointed to by a pte is clean

@@ -10,8 +10,8 @@
 #ifndef _NILFS_DIRECT_H
 #define _NILFS_DIRECT_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
 #include "bmap.h"
 
 

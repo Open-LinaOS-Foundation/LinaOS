@@ -6,10 +6,10 @@
 // Copyright (c) 2010 by Mauro Carvalho Chehab
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* Terratec Cinergy Hybrid T USB XS
-   Devin Heitmueller <dheitmueller@linuxtv.org>
+   Devin Heitmueller <dheitmueller@linaostv.org>
  */
 
 static struct rc_map_table terratec_cinergy_xs[] = {

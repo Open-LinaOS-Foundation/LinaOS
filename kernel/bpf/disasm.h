@@ -6,9 +6,9 @@
 #ifndef __BPF_DISASM_H__
 #define __BPF_DISASM_H__
 
-#include <linux/bpf.h>
-#include <linux/kernel.h>
-#include <linux/stringify.h>
+#include <linaos/bpf.h>
+#include <linaos/kernel.h>
+#include <linaos/stringify.h>
 #ifndef __KERNEL__
 #include <stdio.h>
 #include <string.h>

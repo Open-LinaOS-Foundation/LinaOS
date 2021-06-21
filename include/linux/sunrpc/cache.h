@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/sunrpc/cache.h
+ * include/linaos/sunrpc/cache.h
  *
  * Generic code for various authentication-related caches
  * used by sunrpc clients and servers.
@@ -11,10 +11,10 @@
 #ifndef _LINUX_SUNRPC_CACHE_H_
 #define _LINUX_SUNRPC_CACHE_H_
 
-#include <linux/kref.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/proc_fs.h>
+#include <linaos/kref.h>
+#include <linaos/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/proc_fs.h>
 
 /*
  * Each cache requires:

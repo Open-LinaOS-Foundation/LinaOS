@@ -9,12 +9,12 @@
 
 #include "bcma_private.h"
 
-#include <linux/bcma/bcma.h>
-#include <linux/bcma/bcma_regs.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/bcma/bcma_regs.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
 
 static int(*get_fallback_sprom)(struct bcma_bus *dev, struct ssb_sprom *out);
 

@@ -13,10 +13,10 @@
 #include "util/annotate.h"
 #include "util/color.h"
 #include "util/dso.h"
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
+#include <linaos/err.h>
+#include <linaos/zalloc.h>
 #include "util/map.h"
 #include "util/symbol.h"
 #include "util/map_symbol.h"
@@ -56,16 +56,16 @@
 #include <errno.h>
 #include <inttypes.h>
 #include <regex.h>
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include <signal.h>
-#include <linux/bitmap.h>
-#include <linux/string.h>
-#include <linux/stringify.h>
-#include <linux/time64.h>
+#include <linaos/bitmap.h>
+#include <linaos/string.h>
+#include <linaos/stringify.h>
+#include <linaos/time64.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <linux/mman.h>
+#include <linaos/mman.h>
 
 struct report {
 	struct perf_tool	tool;
@@ -583,7 +583,7 @@ static void report__warn_kptr_restrict(const struct report *rep)
 	     (kernel_kmap->ref_reloc_sym == NULL ||
 	      kernel_kmap->ref_reloc_sym->addr == 0))) {
 		const char *desc =
-		    "As no suitable kallsyms nor vmlinux was found, kernel samples\n"
+		    "As no suitable kallsyms nor vmlinaos was found, kernel samples\n"
 		    "can't be resolved.";
 
 		if (kernel_map && map__has_symbols(kernel_map)) {
@@ -1178,10 +1178,10 @@ int cmd_report(int argc, const char **argv)
 	OPT_BOOLEAN(0, "stats", &report.stats_mode, "Display event stats"),
 	OPT_BOOLEAN(0, "tasks", &report.tasks_mode, "Display recorded tasks"),
 	OPT_BOOLEAN(0, "mmaps", &report.mmaps_mode, "Display recorded tasks memory maps"),
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
-	OPT_BOOLEAN(0, "ignore-vmlinux", &symbol_conf.ignore_vmlinux,
-                    "don't load vmlinux even if found"),
+	OPT_STRING('k', "vmlinaos", &symbol_conf.vmlinaos_name,
+		   "file", "vmlinaos pathname"),
+	OPT_BOOLEAN(0, "ignore-vmlinaos", &symbol_conf.ignore_vmlinaos,
+                    "don't load vmlinaos even if found"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('f', "force", &symbol_conf.force, "don't complain, do it"),
@@ -1366,9 +1366,9 @@ int cmd_report(int argc, const char **argv)
 	if (quiet)
 		perf_quiet_option();
 
-	if (symbol_conf.vmlinux_name &&
-	    access(symbol_conf.vmlinux_name, R_OK)) {
-		pr_err("Invalid file: %s\n", symbol_conf.vmlinux_name);
+	if (symbol_conf.vmlinaos_name &&
+	    access(symbol_conf.vmlinaos_name, R_OK)) {
+		pr_err("Invalid file: %s\n", symbol_conf.vmlinaos_name);
 		return -EINVAL;
 	}
 	if (symbol_conf.kallsyms_name &&

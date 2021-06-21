@@ -7,16 +7,16 @@
 //
 // TI Common Platform Interrupt Controller (cp_intc) driver
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/irq-davinci-cp-intc.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/irq-davinci-cp-intc.h>
+#include <linaos/irqdomain.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #include <asm/exception.h>
 

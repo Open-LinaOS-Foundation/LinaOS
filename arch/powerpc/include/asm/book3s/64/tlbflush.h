@@ -4,7 +4,7 @@
 
 #define MMU_NO_CONTEXT	~0UL
 
-#include <linux/mm_types.h>
+#include <linaos/mm_types.h>
 #include <asm/book3s/64/tlbflush-hash.h>
 #include <asm/book3s/64/tlbflush-radix.h>
 

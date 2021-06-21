@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* x_tables module for matching the IPv4/IPv6 DSCP field
  *
  * (C) 2002 Harald Welte <laforge@gnumonks.org>
@@ -11,7 +11,7 @@
 #ifndef _XT_DSCP_H
 #define _XT_DSCP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define XT_DSCP_MASK	0xfc	/* 11111100 */
 #define XT_DSCP_SHIFT	2

@@ -6,11 +6,11 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL COOKIE
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/key.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/key.h>
 #include <keys/user-type.h>
 #include "internal.h"
 

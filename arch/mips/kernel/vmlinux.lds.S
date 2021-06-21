@@ -15,7 +15,7 @@
 #define EMITS_PT_NOTE
 #endif
 
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 
 #undef mips
 #define mips mips

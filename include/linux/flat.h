@@ -5,7 +5,7 @@
  *                          The Silver Hammer Group, Ltd.
  *
  * This file provides the definitions and structures needed to
- * support uClinux flat-format executables.
+ * support uClinaos flat-format executables.
  */
 #ifndef _LINUX_FLAT_H
 #define _LINUX_FLAT_H

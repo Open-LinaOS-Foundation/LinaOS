@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Raytheon wireless LAN PCMCIA card driver for Linux 
+/* Raytheon wireless LAN PCMCIA card driver for LinaOS 
    A  PCMCIA client driver for the Raylink wireless network card
    Written by Corey Thomas
 */

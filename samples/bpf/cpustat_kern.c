@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/version.h>
-#include <linux/ptrace.h>
-#include <uapi/linux/bpf.h>
+#include <linaos/version.h>
+#include <linaos/ptrace.h>
+#include <uapi/linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 /*

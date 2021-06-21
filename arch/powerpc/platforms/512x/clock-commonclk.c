@@ -7,15 +7,15 @@
  * common clock driver support for the MPC512x platform
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include <asm/mpc5121.h>
 #include <dt-bindings/clock/mpc512x-clock.h>
@@ -494,7 +494,7 @@ static void mpc512x_clk_setup_ref_clock(struct device_node *np, int bus_freq,
 
 /*
  * note that this declaration raises a checkpatch warning, but
- * it's the very data type dictated by <linux/clk-provider.h>,
+ * it's the very data type dictated by <linaos/clk-provider.h>,
  * "fixing" this warning will break compilation
  */
 static const char *parent_names_mux0_spdif[] = {

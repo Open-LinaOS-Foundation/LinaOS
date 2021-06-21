@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2008,2009 Katalix Systems Ltd
  */
-#include <linux/refcount.h>
+#include <linaos/refcount.h>
 
 #ifndef _L2TP_CORE_H_
 #define _L2TP_CORE_H_

@@ -10,13 +10,13 @@
  * http://wizwiki.net/wiki/lib/exe/fetch.php?media=products:w5500:w5500_ds_v106e_141230.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/of_net.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/of_net.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
 
 #include "w5100.h"
 

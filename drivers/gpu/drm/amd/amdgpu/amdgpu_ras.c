@@ -21,12 +21,12 @@
  *
  *
  */
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/reboot.h>
-#include <linux/syscalls.h>
+#include <linaos/debugfs.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/reboot.h>
+#include <linaos/syscalls.h>
 
 #include "amdgpu.h"
 #include "amdgpu_ras.h"

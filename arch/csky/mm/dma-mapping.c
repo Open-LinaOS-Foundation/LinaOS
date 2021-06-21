@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/cache.h>
-#include <linux/dma-map-ops.h>
-#include <linux/genalloc.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/version.h>
+#include <linaos/cache.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/genalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/version.h>
 #include <asm/cache.h>
 
 static inline void cache_op(phys_addr_t paddr, size_t size,

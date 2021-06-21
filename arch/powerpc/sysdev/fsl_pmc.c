@@ -7,15 +7,15 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/suspend.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
 
 struct pmc_regs {
 	__be32 devdisr;

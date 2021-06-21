@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #include "i915_drv.h"
 #include "intel_atomic.h"

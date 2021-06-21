@@ -4,13 +4,13 @@
  * George McCollister <george.mccollister@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/if_vlan.h>
-#include <linux/of.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/mdio.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/if_vlan.h>
+#include <linaos/of.h>
 #include "xrs700x.h"
 #include "xrs700x_reg.h"
 

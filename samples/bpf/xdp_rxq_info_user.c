@@ -20,7 +20,7 @@ static const char *__doc__ = " XDP RX-queue info extract example\n\n"
 #include <time.h>
 
 #include <arpa/inet.h>
-#include <linux/if_link.h>
+#include <linaos/if_link.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>

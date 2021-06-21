@@ -8,8 +8,8 @@
 #ifndef _9P_CACHE_H
 #define _9P_CACHE_H
 #ifdef CONFIG_9P_FSCACHE
-#include <linux/fscache.h>
-#include <linux/spinlock.h>
+#include <linaos/fscache.h>
+#include <linaos/spinlock.h>
 
 extern struct fscache_netfs v9fs_cache_netfs;
 extern const struct fscache_cookie_def v9fs_cache_session_index_def;

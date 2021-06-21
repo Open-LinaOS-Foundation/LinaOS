@@ -8,12 +8,12 @@
  * that made this driver possible.
  */
 
-#include <linux/tifm.h>
-#include <linux/memstick.h>
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
-#include <linux/log2.h>
-#include <linux/module.h>
+#include <linaos/tifm.h>
+#include <linaos/memstick.h>
+#include <linaos/highmem.h>
+#include <linaos/scatterlist.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
 #include <asm/io.h>
 
 #define DRIVER_NAME "tifm_ms"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/mtd/onenand_regs.h
+ *  linaos/include/linaos/mtd/onenand_regs.h
  *
  *  OneNAND Register header file
  *

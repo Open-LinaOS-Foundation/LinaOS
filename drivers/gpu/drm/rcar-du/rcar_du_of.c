@@ -8,13 +8,13 @@
  * Copyright (C) 2015 Texas Instruments
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_graph.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_graph.h>
+#include <linaos/slab.h>
 
 #include "rcar_du_crtc.h"
 #include "rcar_du_drv.h"

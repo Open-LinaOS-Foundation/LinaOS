@@ -3,14 +3,14 @@
  * Copyright (c) 2004 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
+#include <linaos/export.h>
+#include <linaos/moduleparam.h>
 
 #include "w1_internal.h"
 #include "w1_netlink.h"

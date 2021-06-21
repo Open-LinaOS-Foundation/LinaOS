@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/cgroup-defs.h - basic definitions for cgroup
+ * linaos/cgroup-defs.h - basic definitions for cgroup
  *
  * This file provides basic type and interface.  Include this file directly
  * only if necessary to avoid cyclic dependencies.
@@ -8,19 +8,19 @@
 #ifndef _LINUX_CGROUP_DEFS_H
 #define _LINUX_CGROUP_DEFS_H
 
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/refcount.h>
-#include <linux/percpu-refcount.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/workqueue.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/psi_types.h>
+#include <linaos/limits.h>
+#include <linaos/list.h>
+#include <linaos/idr.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
+#include <linaos/rcupdate.h>
+#include <linaos/refcount.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/percpu-rwsem.h>
+#include <linaos/u64_stats_sync.h>
+#include <linaos/workqueue.h>
+#include <linaos/bpf-cgroup.h>
+#include <linaos/psi_types.h>
 
 #ifdef CONFIG_CGROUPS
 
@@ -41,7 +41,7 @@ struct poll_table_struct;
 /* define the enumeration of all cgroup subsystems */
 #define SUBSYS(_x) _x ## _cgrp_id,
 enum cgroup_subsys_id {
-#include <linux/cgroup_subsys.h>
+#include <linaos/cgroup_subsys.h>
 	CGROUP_SUBSYS_COUNT,
 };
 #undef SUBSYS

@@ -8,7 +8,7 @@
 #ifndef _LINUX_OID_REGISTRY_H
 #define _LINUX_OID_REGISTRY_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * OIDs are turned into these values if possible, or OID__NR if not held here.

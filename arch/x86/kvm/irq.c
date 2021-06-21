@@ -8,8 +8,8 @@
  *   Yaozu (Eddie) Dong <Eddie.dong@intel.com>
  */
 
-#include <linux/export.h>
-#include <linux/kvm_host.h>
+#include <linaos/export.h>
+#include <linaos/kvm_host.h>
 
 #include "irq.h"
 #include "i8254.h"

@@ -10,7 +10,7 @@
 #ifndef _SAS_ATA_H_
 #define _SAS_ATA_H_
 
-#include <linux/libata.h>
+#include <linaos/libata.h>
 #include <scsi/libsas.h>
 
 #ifdef CONFIG_SCSI_SAS_ATA

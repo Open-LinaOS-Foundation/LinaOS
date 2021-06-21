@@ -5,17 +5,17 @@
  *        Neil Zhang <zhangwm@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/of.h>
-#include <linux/platform_data/mv_usb.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/of.h>
+#include <linaos/platform_data/mv_usb.h>
+#include <linaos/io.h>
 
-#include <linux/usb/hcd.h>
+#include <linaos/usb/hcd.h>
 
 #include "ehci.h"
 

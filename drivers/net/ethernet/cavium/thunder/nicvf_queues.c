@@ -3,11 +3,11 @@
  * Copyright (C) 2015 Cavium, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ip.h>
-#include <linux/etherdevice.h>
-#include <linux/iommu.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/ip.h>
+#include <linaos/etherdevice.h>
+#include <linaos/iommu.h>
 #include <net/ip.h>
 #include <net/tso.h>
 

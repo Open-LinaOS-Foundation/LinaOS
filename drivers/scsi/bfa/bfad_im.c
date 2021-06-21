@@ -5,14 +5,14 @@
  * All rights reserved
  * www.qlogic.com
  *
- * Linux driver for QLogic BR-series Fibre Channel Host Bus Adapter.
+ * LinaOS driver for QLogic BR-series Fibre Channel Host Bus Adapter.
  */
 
 /*
- *  bfad_im.c Linux driver IM module.
+ *  bfad_im.c LinaOS driver IM module.
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 
 #include "bfad_drv.h"
 #include "bfad_im.h"

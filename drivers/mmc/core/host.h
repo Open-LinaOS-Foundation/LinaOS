@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/mmc/core/host.h
+ *  linaos/drivers/mmc/core/host.h
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *  Copyright 2007 Pierre Ossman
@@ -8,7 +8,7 @@
 #ifndef _MMC_CORE_HOST_H
 #define _MMC_CORE_HOST_H
 
-#include <linux/mmc/host.h>
+#include <linaos/mmc/host.h>
 
 int mmc_register_host_class(void);
 void mmc_unregister_host_class(void);

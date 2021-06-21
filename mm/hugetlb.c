@@ -3,43 +3,43 @@
  * Generic hugetlb support.
  * (C) Nadia Yvette Chambers, April 2004
  */
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/sysctl.h>
-#include <linux/highmem.h>
-#include <linux/mmu_notifier.h>
-#include <linux/nodemask.h>
-#include <linux/pagemap.h>
-#include <linux/mempolicy.h>
-#include <linux/compiler.h>
-#include <linux/cpuset.h>
-#include <linux/mutex.h>
-#include <linux/memblock.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/mmdebug.h>
-#include <linux/sched/signal.h>
-#include <linux/rmap.h>
-#include <linux/string_helpers.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/jhash.h>
-#include <linux/numa.h>
-#include <linux/llist.h>
-#include <linux/cma.h>
+#include <linaos/list.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/sysctl.h>
+#include <linaos/highmem.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/nodemask.h>
+#include <linaos/pagemap.h>
+#include <linaos/mempolicy.h>
+#include <linaos/compiler.h>
+#include <linaos/cpuset.h>
+#include <linaos/mutex.h>
+#include <linaos/memblock.h>
+#include <linaos/sysfs.h>
+#include <linaos/slab.h>
+#include <linaos/sched/mm.h>
+#include <linaos/mmdebug.h>
+#include <linaos/sched/signal.h>
+#include <linaos/rmap.h>
+#include <linaos/string_helpers.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/jhash.h>
+#include <linaos/numa.h>
+#include <linaos/llist.h>
+#include <linaos/cma.h>
 
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 
-#include <linux/io.h>
-#include <linux/hugetlb.h>
-#include <linux/hugetlb_cgroup.h>
-#include <linux/node.h>
-#include <linux/page_owner.h>
+#include <linaos/io.h>
+#include <linaos/hugetlb.h>
+#include <linaos/hugetlb_cgroup.h>
+#include <linaos/node.h>
+#include <linaos/page_owner.h>
 #include "internal.h"
 
 int hugetlb_max_hstate __read_mostly;

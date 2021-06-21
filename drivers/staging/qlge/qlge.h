@@ -6,11 +6,11 @@
 #ifndef _QLGE_H_
 #define _QLGE_H_
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_vlan.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/if_vlan.h>
 
 /*
  * General definitions...

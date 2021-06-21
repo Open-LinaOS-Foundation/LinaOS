@@ -13,15 +13,15 @@
  *  authors:
  *  Copyright (c) 2003 Nils-Erik Mattsson, Joacim Haggmark, Magnus Erixzon
  *
- *  Changes to meet Linux coding standards, to make it meet latest ccid3 draft
+ *  Changes to meet LinaOS coding standards, to make it meet latest ccid3 draft
  *  and to make it work as a loadable module in the DCCP stack written by
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>.
  *
  *  Copyright (c) 2005 Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 #include "packet_history.h"
 #include "../../dccp.h"
 

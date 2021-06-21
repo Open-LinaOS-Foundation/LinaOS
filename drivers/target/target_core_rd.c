@@ -11,13 +11,13 @@
  *
  ******************************************************************************/
 
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/parser.h>
+#include <linaos/highmem.h>
+#include <linaos/timer.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 #include <scsi/scsi_proto.h>
 
 #include <target/target_core_base.h>

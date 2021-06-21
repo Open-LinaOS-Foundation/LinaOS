@@ -8,18 +8,18 @@
  * Copyright (C) 2005 Stephen Street / StreetFire Sound Labs
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/spi/spi.h>
 
 #define SPI_SH_TBR		0x00
 #define SPI_SH_RBR		0x00

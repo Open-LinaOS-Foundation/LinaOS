@@ -28,8 +28,8 @@
 #include <sys/mount.h>
 #include <sys/statfs.h>
 #include <sys/mman.h>
-#include "../../include/uapi/linux/magic.h"
-#include "../../include/uapi/linux/kernel-page-flags.h"
+#include "../../include/uapi/linaos/magic.h"
+#include "../../include/uapi/linaos/kernel-page-flags.h"
 #include <api/fs/fs.h>
 
 #ifndef MAX_PATH

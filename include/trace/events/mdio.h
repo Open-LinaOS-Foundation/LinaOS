@@ -5,7 +5,7 @@
 #if !defined(_TRACE_MDIO_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MDIO_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT_CONDITION(mdio_access,
 

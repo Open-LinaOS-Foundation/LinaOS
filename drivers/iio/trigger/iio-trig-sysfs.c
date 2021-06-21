@@ -3,15 +3,15 @@
  * Copyright 2011 Analog Devices Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/irq_work.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/irq_work.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/trigger.h>
 
 struct iio_sysfs_trig {
 	struct iio_trigger *trig;

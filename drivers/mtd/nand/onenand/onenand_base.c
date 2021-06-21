@@ -15,17 +15,17 @@
  *	OTP support
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/onenand.h>
+#include <linaos/mtd/partitions.h>
 
 #include <asm/io.h>
 

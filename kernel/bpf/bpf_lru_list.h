@@ -4,8 +4,8 @@
 #ifndef __BPF_LRU_LIST_H_
 #define __BPF_LRU_LIST_H_
 
-#include <linux/list.h>
-#include <linux/spinlock_types.h>
+#include <linaos/list.h>
+#include <linaos/spinlock_types.h>
 
 #define NR_BPF_LRU_LIST_T	(3)
 #define NR_BPF_LRU_LIST_COUNT	(2)

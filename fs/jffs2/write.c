@@ -11,11 +11,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/crc32.h>
-#include <linux/pagemap.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/crc32.h>
+#include <linaos/pagemap.h>
+#include <linaos/mtd/mtd.h>
 #include "nodelist.h"
 #include "compr.h"
 

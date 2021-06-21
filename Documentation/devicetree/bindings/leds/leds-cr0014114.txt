@@ -17,7 +17,7 @@ LED sub-node properties:
 	see Documentation/devicetree/bindings/leds/common.txt
 - label :
 	see Documentation/devicetree/bindings/leds/common.txt (deprecated)
-- linux,default-trigger : (optional)
+- linaos,default-trigger : (optional)
 	see Documentation/devicetree/bindings/leds/common.txt
 
 Example

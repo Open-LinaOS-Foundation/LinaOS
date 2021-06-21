@@ -1,8 +1,8 @@
 ==============
-OpenRISC Linux
+OpenRISC LinaOS
 ==============
 
-This is a port of Linux to the OpenRISC class of microprocessors; the initial
+This is a port of LinaOS to the OpenRISC class of microprocessors; the initial
 target architecture, specifically, is the 32-bit OpenRISC 1000 family (or1k).
 
 For information about OpenRISC processors and ongoing development:
@@ -14,10 +14,10 @@ For information about OpenRISC processors and ongoing development:
 
 ---------------------------------------------------------------------
 
-Build instructions for OpenRISC toolchain and Linux
+Build instructions for OpenRISC toolchain and LinaOS
 ===================================================
 
-In order to build and run Linux for OpenRISC, you'll need at least a basic
+In order to build and run LinaOS for OpenRISC, you'll need at least a basic
 toolchain and, perhaps, the architectural simulator.  Steps to get these bits
 in place are outlined here.
 
@@ -35,10 +35,10 @@ or Stafford's toolchain build and release scripts.
 
 2) Building
 
-Build the Linux kernel as usual::
+Build the LinaOS kernel as usual::
 
-	make ARCH=openrisc CROSS_COMPILE="or1k-linux-" defconfig
-	make ARCH=openrisc CROSS_COMPILE="or1k-linux-"
+	make ARCH=openrisc CROSS_COMPILE="or1k-linaos-" defconfig
+	make ARCH=openrisc CROSS_COMPILE="or1k-linaos-"
 
 3) Running on FPGA (optional)
 
@@ -63,13 +63,13 @@ tools.  Binaries are loaded onto the board with openocd.
 
 	telnet localhost 4444
 	> init
-	> halt; load_image vmlinux ; reset
+	> halt; load_image vmlinaos ; reset
 
 4) Running on a Simulator (optional)
 
 QEMU is a processor emulator which we recommend for simulating the OpenRISC
 platform.  Please follow the OpenRISC instructions on the QEMU website to get
-Linux running on QEMU.  You can build QEMU yourself, but your Linux distribution
+LinaOS running on QEMU.  You can build QEMU yourself, but your LinaOS distribution
 likely provides binary packages to support OpenRISC.
 
 	=============	======================================================
@@ -96,7 +96,7 @@ History
 ========
 
 18-11-2003	Matjaz Breskvar (phoenix@bsemi.com)
-	initial port of linux to OpenRISC/or32 architecture.
+	initial port of linaos to OpenRISC/or32 architecture.
         all the core stuff is implemented and seams usable.
 
 08-12-2003	Matjaz Breskvar (phoenix@bsemi.com)
@@ -108,7 +108,7 @@ History
 10-04-2004	Matjaz Breskvar (phoenix@bsemi.com)
 	alot of bugfixes all over.
 	ethernet support, functional http and telnet servers.
-	running many standard linux apps.
+	running many standard linaos apps.
 
 26-06-2004	Matjaz Breskvar (phoenix@bsemi.com)
 	port to 2.6.x
@@ -118,4 +118,4 @@ History
 	added opencores framebuffer driver.
 
 09-10-2010    Jonas Bonn (jonas@southpole.se)
-	major rewrite to bring up to par with upstream Linux 2.6.36
+	major rewrite to bring up to par with upstream LinaOS 2.6.36

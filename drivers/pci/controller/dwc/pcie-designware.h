@@ -11,14 +11,14 @@
 #ifndef _PCIE_DESIGNWARE_H
 #define _PCIE_DESIGNWARE_H
 
-#include <linux/bitfield.h>
-#include <linux/dma-mapping.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
+#include <linaos/bitfield.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
+#include <linaos/pci.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <linaos/pci-epc.h>
+#include <linaos/pci-epf.h>
 
 /* Parameters for the waiting for link up routine */
 #define LINK_WAIT_MAX_RETRIES		10

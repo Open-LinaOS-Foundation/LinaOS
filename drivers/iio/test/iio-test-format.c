@@ -5,7 +5,7 @@
  */
 
 #include <kunit/test.h>
-#include <linux/iio/iio.h>
+#include <linaos/iio/iio.h>
 
 #define IIO_TEST_FORMAT_EXPECT_EQ(_test, _buf, _ret, _val) do { \
 		KUNIT_EXPECT_EQ(_test, (int)strlen(_buf), _ret); \

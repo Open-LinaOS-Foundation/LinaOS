@@ -2,8 +2,8 @@
 #ifndef _LINUX_UNICODE_H
 #define _LINUX_UNICODE_H
 
-#include <linux/init.h>
-#include <linux/dcache.h>
+#include <linaos/init.h>
+#include <linaos/dcache.h>
 
 struct unicode_map {
 	const char *charset;

@@ -15,14 +15,14 @@
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/xts.h>
 #include <asm/cpacf.h>

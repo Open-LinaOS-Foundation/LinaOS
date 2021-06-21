@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Compiler-dependent intrinsics.
  *
@@ -11,7 +11,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 /* include compiler specific intrinsics */
 #include <asm/ia64regs.h>
 #ifdef __INTEL_COMPILER

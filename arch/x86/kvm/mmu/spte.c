@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * Macros and functions to access KVM PTEs (also known as SPTEs)
  *
@@ -9,7 +9,7 @@
  */
 
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 #include "mmu.h"
 #include "mmu_internal.h"
 #include "x86.h"

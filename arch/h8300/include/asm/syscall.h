@@ -4,11 +4,11 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <uapi/linux/audit.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <uapi/linaos/audit.h>
 
 static inline int
 syscall_get_nr(struct task_struct *task, struct pt_regs *regs)

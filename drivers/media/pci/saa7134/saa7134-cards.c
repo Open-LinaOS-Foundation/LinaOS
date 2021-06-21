@@ -10,10 +10,10 @@
 #include "saa7134.h"
 #include "saa7134-reg.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
 #include "tuner-xc2028.h"
 #include <media/v4l2-common.h>
@@ -95,7 +95,7 @@ struct saa7134_board saa7134_boards[] = {
 		},
 	},
 	[SAA7134_BOARD_FLYVIDEO3000] = {
-		/* "Marco d'Itri" <md@Linux.IT> */
+		/* "Marco d'Itri" <md@LinaOS.IT> */
 		.name		= "LifeView FlyVIDEO3000",
 		.audio_clock	= 0x00200000,
 		.tuner_type	= TUNER_PHILIPS_PAL,
@@ -792,7 +792,7 @@ struct saa7134_board saa7134_boards[] = {
 		}},
 	},
 	[SAA7134_BOARD_10MOONSTVMASTER] = {
-		/* "lilicheng" <llc@linuxfans.org> */
+		/* "lilicheng" <llc@linaosfans.org> */
 		.name           = "10MOONS PCI TV CAPTURE CARD",
 		.audio_clock    = 0x00200000,
 		.tuner_type     = TUNER_LG_PAL_NEW_TAPC,
@@ -2497,7 +2497,7 @@ struct saa7134_board saa7134_boards[] = {
 		}},
 	},
 	[SAA7134_BOARD_AVERMEDIA_AVERTVHD_A180] = {
-		/* Michael Krufky <mkrufky@linuxtv.org>
+		/* Michael Krufky <mkrufky@linaostv.org>
 		 * Uses Alps Electric TDHU2, containing NXT2004 ATSC Decoder
 		 * AFAIK, there is no analog demod, thus,
 		 * no support for analog television.

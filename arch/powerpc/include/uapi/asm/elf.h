@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * ELF register definitions..
  *
@@ -11,7 +11,7 @@
 #define _UAPI_ASM_POWERPC_ELF_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/ptrace.h>
 #include <asm/cputable.h>

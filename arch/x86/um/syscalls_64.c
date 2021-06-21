@@ -1,14 +1,14 @@
 /*
- * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Copyright 2003 PathScale, Inc.
  *
  * Licensed under the GPL
  */
 
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 #include <asm/prctl.h> /* XXX This should get the constants from libc */
 #include <os.h>
 

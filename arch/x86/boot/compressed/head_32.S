@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/boot/head.S
+ *  linaos/boot/head.S
  *
  *  Copyright (C) 1991, 1992, 1993  Linus Torvalds
  */
@@ -24,8 +24,8 @@
  */
 	.text
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/boot.h>

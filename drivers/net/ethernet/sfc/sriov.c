@@ -3,7 +3,7 @@
  * Driver for Solarflare network controllers and boards
  * Copyright 2014-2015 Solarflare Communications Inc.
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "net_driver.h"
 #include "nic.h"
 #include "sriov.h"

@@ -9,26 +9,26 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
 
-#include <linux/irqchip/chained_irq.h>
+#include <linaos/irqchip/chained_irq.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
-#include <linux/platform_data/pinctrl-single.h>
+#include <linaos/platform_data/pinctrl-single.h>
 
 #include "core.h"
 #include "devicetree.h"

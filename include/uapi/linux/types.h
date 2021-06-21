@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_TYPES_H
 #define _UAPI_LINUX_TYPES_H
 
@@ -11,12 +11,12 @@
 #endif /* __EXPORTED_HEADERS__ */
 #endif
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 
 
 /*
- * Below are truly Linux-specific types that should never collide with
- * any application/library that wants linux/types.h.
+ * Below are truly LinaOS-specific types that should never collide with
+ * any application/library that wants linaos/types.h.
  */
 
 #ifdef __CHECKER__

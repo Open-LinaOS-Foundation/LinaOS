@@ -5,9 +5,9 @@
 #ifndef _VC4_DRV_H_
 #define _VC4_DRV_H_
 
-#include <linux/delay.h>
-#include <linux/refcount.h>
-#include <linux/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/refcount.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_debugfs.h>

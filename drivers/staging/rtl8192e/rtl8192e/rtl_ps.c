@@ -13,7 +13,7 @@
 #include "r8192E_phyreg.h"
 #include "r8190P_rtl8256.h" /* RTL8225 Radio frontend */
 #include "r8192E_cmdpkt.h"
-#include <linux/jiffies.h>
+#include <linaos/jiffies.h>
 
 static void _rtl92e_hw_sleep(struct net_device *dev)
 {

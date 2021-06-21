@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #include <stdio.h>
@@ -11,7 +11,7 @@
 #include <string.h>
 #include <sys/ioctl.h>
 #include <net/if.h>
-#include <linux/if_tun.h>
+#include <linaos/if_tun.h>
 #include <arpa/inet.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -19,11 +19,11 @@
 #include <sys/socket.h>
 #include <sys/un.h>
 #include <netinet/ip.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
 #include <sys/wait.h>
 #include <sys/uio.h>
-#include <linux/virtio_net.h>
+#include <linaos/virtio_net.h>
 #include <netdb.h>
 #include <stdlib.h>
 #include <os.h>

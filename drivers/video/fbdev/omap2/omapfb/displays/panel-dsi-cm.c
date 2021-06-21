@@ -8,19 +8,19 @@
 
 /* #define DEBUG */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
+#include <linaos/backlight.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
 
 #include <video/omapfb_dss.h>
 #include <video/mipi_display.h>

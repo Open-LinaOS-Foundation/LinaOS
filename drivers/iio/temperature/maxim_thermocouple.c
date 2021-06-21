@@ -6,19 +6,19 @@
  * Author: <matt.ranostay@konsulko.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
 
 #define MAXIM_THERMOCOUPLE_DRV_NAME	"maxim_thermocouple"
 

@@ -3,7 +3,7 @@ Sony Notebook Control Driver (SNC) Readme
 =========================================
 
 	- Copyright (C) 2004- 2005 Stelian Pop <stelian@popies.net>
-	- Copyright (C) 2007 Mattia Dongili <malattia@linux.it>
+	- Copyright (C) 2007 Mattia Dongili <malattia@linaos.it>
 
 This mini-driver drives the SNC and SPIC device present in the ACPI BIOS of the
 Sony Vaio laptops. This driver mixes both devices functions under the same
@@ -154,7 +154,7 @@ files and find out what is the impact on your laptop.
 Should you find anything interesting, please report it back to me,
 I will not disavow all knowledge of your actions :)
 
-See also http://www.linux.it/~malattia/wiki/index.php/Sony_drivers for other
+See also http://www.linaos.it/~malattia/wiki/index.php/Sony_drivers for other
 useful info.
 
 Bugs/Limitations:

@@ -3,17 +3,17 @@
  * c67x00.h: Cypress C67X00 USB register and field definitions
  *
  * Copyright (C) 2006-2008 Barco N.V.
- *    Derived from the Cypress cy7c67200/300 ezusb linux driver and
- *    based on multiple host controller drivers inside the linux kernel.
+ *    Derived from the Cypress cy7c67200/300 ezusb linaos driver and
+ *    based on multiple host controller drivers inside the linaos kernel.
  */
 
 #ifndef _USB_C67X00_H
 #define _USB_C67X00_H
 
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
 
 /* ---------------------------------------------------------------------
  * Cypress C67x00 register definitions

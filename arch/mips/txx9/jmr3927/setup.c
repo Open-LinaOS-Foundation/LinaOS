@@ -24,16 +24,16 @@
  *              ahennessy@mvista.com
  *
  * Copyright (C) 2000-2001 Toshiba Corporation
- * Copyright (C) 2007 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2007 Ralf Baechle (ralf@linaos-mips.org)
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
 #include <asm/reboot.h>
 #include <asm/txx9pio.h>
 #include <asm/txx9/generic.h>

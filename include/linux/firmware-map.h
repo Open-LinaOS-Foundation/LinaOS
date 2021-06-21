@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/firmware-map.h:
+ * include/linaos/firmware-map.h:
  *  Copyright (C) 2008 SUSE LINUX Products GmbH
  *  by Bernhard Walle <bernhard.walle@gmx.de>
  */
 #ifndef _LINUX_FIRMWARE_MAP_H
 #define _LINUX_FIRMWARE_MAP_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 /*
  * provide a dummy interface if CONFIG_FIRMWARE_MEMMAP is disabled

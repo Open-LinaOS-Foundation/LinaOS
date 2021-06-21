@@ -3,17 +3,17 @@
  * Copyright (c) 2016, NVIDIA Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/reset.h>
 
-#include <linux/usb.h>
-#include <linux/usb/chipidea.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/of.h>
-#include <linux/usb/phy.h>
+#include <linaos/usb.h>
+#include <linaos/usb/chipidea.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/of.h>
+#include <linaos/usb/phy.h>
 
 #include "../host/ehci.h"
 

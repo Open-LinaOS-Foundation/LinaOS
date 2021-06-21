@@ -3,9 +3,9 @@
  * Copyright 2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/sched/types.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/sched/types.h>
 
 #include <media/cec-pin.h>
 #include "cec-pin-priv.h"

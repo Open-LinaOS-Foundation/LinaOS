@@ -3,7 +3,7 @@
  *	arch/alpha/lib/srm_printk.c
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/console.h>
 
 long

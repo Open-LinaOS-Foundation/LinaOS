@@ -21,13 +21,13 @@
  *
  */
 
-#include <linux/ratelimit.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/sched.h>
+#include <linaos/ratelimit.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/sched.h>
 #include "kfd_priv.h"
 #include "kfd_device_queue_manager.h"
 #include "kfd_mqd_manager.h"

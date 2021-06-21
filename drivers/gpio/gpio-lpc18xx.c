@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
 
 /* LPC18xx GPIO register offsets */
 #define LPC18XX_REG_DIR(n)	(0x2000 + n * sizeof(u32))

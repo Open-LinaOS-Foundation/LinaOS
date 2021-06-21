@@ -5,10 +5,10 @@
  * Emilio López <emilio@elopez.com.ar>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
 
 #define SUNXI_OSC24M_GATE	0
 

@@ -3,9 +3,9 @@
  * Copyright (c) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/string.h>
+#include <linaos/errno.h>
+#include <linaos/of.h>
+#include <linaos/string.h>
 #include <asm/cpu_ops.h>
 #include <asm/sbi.h>
 #include <asm/smp.h>

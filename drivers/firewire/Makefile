@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux IEEE 1394 implementation
+# Makefile for the LinaOS IEEE 1394 implementation
 #
 
 firewire-core-y += core-card.o core-cdev.o core-device.o \

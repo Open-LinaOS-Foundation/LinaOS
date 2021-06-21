@@ -36,9 +36,9 @@
 
 #include "udfdecl.h"
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
 
 void
 udf_disk_stamp_to_time(struct timespec64 *dest, struct timestamp src)

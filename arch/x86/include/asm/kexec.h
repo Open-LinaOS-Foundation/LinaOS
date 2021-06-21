@@ -20,8 +20,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
 
 #include <asm/page.h>
 #include <asm/ptrace.h>

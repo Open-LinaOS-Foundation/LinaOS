@@ -67,7 +67,7 @@ If the target is not listed above, it is constrained by default (not tested).
 
 Examples
 ========
-An example of booting to a linear array made up of user-mode linux block
+An example of booting to a linear array made up of user-mode linaos block
 devices::
 
   dm-mod.create="lroot,,,rw, 0 4096 linear 98:16 0, 4096 4096 linear 98:32 0" root=/dev/dm-0

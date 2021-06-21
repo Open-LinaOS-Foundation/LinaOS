@@ -3,14 +3,14 @@
  * Copyright (C) 2016 HiSilicon Co., Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/hw_random.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/random.h>
 
 #define RNG_SEED	0x0
 #define RNG_CTRL	0x4

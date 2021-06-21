@@ -3,7 +3,7 @@
 #define _ASM_X86_PROCESSOR_FLAGS_H
 
 #include <uapi/asm/processor-flags.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/mem_encrypt.h>
 
 #ifdef CONFIG_VM86
 #define X86_VM_MASK	X86_EFLAGS_VM
@@ -20,7 +20,7 @@
  * Otherwise (non-PAE, non-PCID), CR3[3] is PWT, CR3[4] is PCD, and
  * CR3[2:0] and CR3[11:5] are ignored.
  *
- * In all cases, Linux puts zeros in the low ignored bits and in PWT and PCD.
+ * In all cases, LinaOS puts zeros in the low ignored bits and in PWT and PCD.
  *
  * CR3[63] is always read as zero.  If CR4.PCIDE is set, then CR3[63] may be
  * written as 1 to prevent the write to CR3 from flushing the TLB.

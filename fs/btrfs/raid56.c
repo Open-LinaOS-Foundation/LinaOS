@@ -4,15 +4,15 @@
  * Copyright (C) 2012 Intel Corp. All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/raid/pq.h>
-#include <linux/hash.h>
-#include <linux/list_sort.h>
-#include <linux/raid/xor.h>
-#include <linux/mm.h>
+#include <linaos/sched.h>
+#include <linaos/bio.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/raid/pq.h>
+#include <linaos/hash.h>
+#include <linaos/list_sort.h>
+#include <linaos/raid/xor.h>
+#include <linaos/mm.h>
 #include "misc.h"
 #include "ctree.h"
 #include "disk-io.h"

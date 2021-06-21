@@ -9,7 +9,7 @@
 #ifndef __LINUX_ST95HF_SPI_H
 #define __LINUX_ST95HF_SPI_H
 
-#include <linux/spi/spi.h>
+#include <linaos/spi/spi.h>
 
 /* Basic ST95HF SPI CMDs */
 #define ST95HF_COMMAND_SEND	0x0

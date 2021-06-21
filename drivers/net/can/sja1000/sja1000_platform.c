@@ -4,20 +4,20 @@
  * Copyright (C) 2007 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/sja1000.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/platform/sja1000.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
 
 #include "sja1000.h"
 

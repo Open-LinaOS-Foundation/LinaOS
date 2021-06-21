@@ -11,20 +11,20 @@
  * Reworked and extended by Piotr Ziecik <kosmo@semihalf.com>.
  */
 
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/gfp.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mpc5121.h>
 

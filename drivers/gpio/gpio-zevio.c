@@ -5,15 +5,15 @@
  * Author: Fabian Vogt <fabian@ritter-vogt.de>
  */
 
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/gpio/driver.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/slab.h>
+#include <linaos/gpio/driver.h>
 
 /*
  * Memory layout:

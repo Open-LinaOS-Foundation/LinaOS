@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OpenRISC Linux
+ * OpenRISC LinaOS
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -28,7 +28,7 @@
 #include <asm/fixmap.h>
 
 /*
- * The Linux memory management assumes a three-level page table setup. On
+ * The LinaOS memory management assumes a three-level page table setup. On
  * or32, we use that, but "fold" the mid level into the top-level page
  * table. Since the MMU TLB is software loaded through an interrupt, it
  * supports any page table structure, so we could have used a three-level

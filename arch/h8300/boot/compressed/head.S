@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/arch/h8300/boot/compressed/head.S
+ *  linaos/arch/h8300/boot/compressed/head.S
  *
  *  Copyright (C) 2006 Yoshinori Sato
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 	.section	.text..startup,"ax"
 	.global	startup

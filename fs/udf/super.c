@@ -40,29 +40,29 @@
 
 #include "udfdecl.h"
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/stat.h>
-#include <linux/cdrom.h>
-#include <linux/nls.h>
-#include <linux/vfs.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/bitmap.h>
-#include <linux/crc-itu-t.h>
-#include <linux/log2.h>
+#include <linaos/blkdev.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/parser.h>
+#include <linaos/stat.h>
+#include <linaos/cdrom.h>
+#include <linaos/nls.h>
+#include <linaos/vfs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/mount.h>
+#include <linaos/seq_file.h>
+#include <linaos/bitmap.h>
+#include <linaos/crc-itu-t.h>
+#include <linaos/log2.h>
 #include <asm/byteorder.h>
 
 #include "udf_sb.h"
 #include "udf_i.h"
 
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/uaccess.h>
 
 enum {
 	VDS_POS_PRIMARY_VOL_DESC,

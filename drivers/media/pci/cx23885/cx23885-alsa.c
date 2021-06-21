@@ -11,13 +11,13 @@
 #include "cx23885.h"
 #include "cx23885-reg.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/vmalloc.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pci.h>
 
 #include <asm/delay.h>
 

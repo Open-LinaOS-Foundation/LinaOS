@@ -6,21 +6,21 @@
  * Author: Jianjun Wang <jianjun.wang@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/msi.h>
+#include <linaos/pci.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
 
 #include "../pci.h"
 

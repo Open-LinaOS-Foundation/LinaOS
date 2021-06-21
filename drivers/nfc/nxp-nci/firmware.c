@@ -10,9 +10,9 @@
  * Copyright (C) 2012  Intel Corporation. All rights reserved.
  */
 
-#include <linux/completion.h>
-#include <linux/firmware.h>
-#include <linux/nfc.h>
+#include <linaos/completion.h>
+#include <linaos/firmware.h>
+#include <linaos/nfc.h>
 #include <asm/unaligned.h>
 
 #include "nxp-nci.h"

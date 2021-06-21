@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include "udc.h"
-#include <linux/platform_data/usb-pxa3xx-ulpi.h>
-#include <linux/platform_data/video-pxafb.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/usb-pxa3xx-ulpi.h>
+#include <linaos/platform_data/video-pxafb.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/irda-pxaficp.h>
 #include <mach/irqs.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/keypad-pxa27x.h>
-#include <linux/platform_data/media/camera-pxa.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/media/camera-pxa.h>
 #include <mach/audio.h>
 #include <mach/hardware.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/platform_data/mtd-nand-pxa3xx.h>
+#include <linaos/platform_data/mmp_dma.h>
+#include <linaos/platform_data/mtd-nand-pxa3xx.h>
 
 #include "devices.h"
 #include "generic.h"

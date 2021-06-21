@@ -6,7 +6,7 @@
 #ifndef __SOC_TEGRA_PM_H__
 #define __SOC_TEGRA_PM_H__
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 enum tegra_suspend_mode {
 	TEGRA_SUSPEND_NONE = 0,

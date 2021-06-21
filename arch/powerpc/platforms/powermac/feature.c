@@ -11,19 +11,19 @@
  *   - Refcount some clocks (see darwin)
  *   - Split split split...
  */
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/spinlock.h>
+#include <linaos/adb.h>
+#include <linaos/pmu.h>
+#include <linaos/ioport.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
 #include <asm/sections.h>
 #include <asm/errno.h>
 #include <asm/ohare.h>

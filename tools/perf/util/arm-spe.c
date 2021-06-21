@@ -8,11 +8,11 @@
 #include <endian.h>
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/types.h>
-#include <linux/zalloc.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/types.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 #include <unistd.h>
 

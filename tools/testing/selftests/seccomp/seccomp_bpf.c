@@ -21,13 +21,13 @@
 #endif
 
 #include <errno.h>
-#include <linux/filter.h>
+#include <linaos/filter.h>
 #include <sys/prctl.h>
 #include <sys/ptrace.h>
 #include <sys/user.h>
-#include <linux/prctl.h>
-#include <linux/ptrace.h>
-#include <linux/seccomp.h>
+#include <linaos/prctl.h>
+#include <linaos/ptrace.h>
+#include <linaos/seccomp.h>
 #include <pthread.h>
 #include <semaphore.h>
 #include <signal.h>
@@ -36,7 +36,7 @@
 #include <string.h>
 #include <time.h>
 #include <limits.h>
-#include <linux/elf.h>
+#include <linaos/elf.h>
 #include <sys/uio.h>
 #include <sys/utsname.h>
 #include <sys/fcntl.h>
@@ -44,7 +44,7 @@
 #include <sys/times.h>
 #include <sys/socket.h>
 #include <sys/ioctl.h>
-#include <linux/kcmp.h>
+#include <linaos/kcmp.h>
 #include <sys/resource.h>
 
 #include <unistd.h>
@@ -1788,7 +1788,7 @@ TEST_F(TRACE_poke, getpid_runs_normally)
 # define SYSCALL_NUM(_regs)				\
 	({						\
 		typeof((_regs).regs[2]) _nr;		\
-		if ((_regs).regs[2] == __NR_O32_Linux)	\
+		if ((_regs).regs[2] == __NR_O32_LinaOS)	\
 			_nr = (_regs).regs[4];		\
 		else					\
 			_nr = (_regs).regs[2];		\
@@ -1796,7 +1796,7 @@ TEST_F(TRACE_poke, getpid_runs_normally)
 	})
 # define SYSCALL_NUM_SET(_regs, _nr)			\
 	do {						\
-		if ((_regs).regs[2] == __NR_O32_Linux)	\
+		if ((_regs).regs[2] == __NR_O32_LinaOS)	\
 			(_regs).regs[4] = _nr;		\
 		else					\
 			(_regs).regs[2] = _nr;		\
@@ -1877,7 +1877,7 @@ const bool ptrace_entry_set_syscall_ret =
 
 /*
  * Use PTRACE_GETREGS and PTRACE_SETREGS when available. This is useful for
- * architectures without HAVE_ARCH_TRACEHOOK (e.g. User-mode Linux).
+ * architectures without HAVE_ARCH_TRACEHOOK (e.g. User-mode LinaOS).
  */
 #if defined(__x86_64__) || defined(__i386__) || defined(__mips__)
 # define ARCH_GETREGS(_regs)	ptrace(PTRACE_GETREGS, tracee, 0, &(_regs))

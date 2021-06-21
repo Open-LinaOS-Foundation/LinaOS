@@ -5,7 +5,7 @@
 #ifndef DPAA2_ETH_DEBUGFS_H
 #define DPAA2_ETH_DEBUGFS_H
 
-#include <linux/dcache.h>
+#include <linaos/dcache.h>
 
 struct dpaa2_eth_priv;
 

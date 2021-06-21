@@ -13,13 +13,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/amba/pl08x.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/amba/pl080.h>
+#include <linaos/amba/pl08x.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/amba/pl080.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/time.h>
 #include <asm/mach/map.h>

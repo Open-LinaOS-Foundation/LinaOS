@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/cyber2000fb.c
+ *  linaos/drivers/video/cyber2000fb.c
  *
  *  Copyright (C) 1998-2002 Russell King
  *
@@ -33,19 +33,19 @@
  * (which, incidentally, is about the same saving as a 2.5in hard disk
  * entering standby mode.)
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 
 
 #ifdef __arm__

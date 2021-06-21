@@ -9,7 +9,7 @@
  */
 
 #include <stdio.h>
-#include <linux/rtc.h>
+#include <linaos/rtc.h>
 #include <sys/ioctl.h>
 #include <sys/time.h>
 #include <sys/types.h>

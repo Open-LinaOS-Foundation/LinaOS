@@ -13,22 +13,22 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006 - 2008
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/audit.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/socket.h>
+#include <linaos/string.h>
+#include <linaos/skbuff.h>
+#include <linaos/audit.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/notifier.h>
+#include <linaos/netdevice.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
@@ -37,7 +37,7 @@
 #include <net/net_namespace.h>
 #include <net/netlabel.h>
 #include <asm/bug.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "netlabel_user.h"
 #include "netlabel_addrlist.h"

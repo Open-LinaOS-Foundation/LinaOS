@@ -4,22 +4,22 @@
  * Copyright(c) 2003 - 2011 Intel Corporation. All rights reserved.
  *
  * Contact Information:
- *  Intel Linux Wireless <ilw@linux.intel.com>
+ *  Intel LinaOS Wireless <ilw@linaos.intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/units.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/units.h>
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <asm/unaligned.h>
 
 #include "common.h"

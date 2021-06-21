@@ -2,13 +2,13 @@
 /*
  *    Support for LG2160 - ATSC/MH
  *
- *    Copyright (C) 2010 Michael Krufky <mkrufky@linuxtv.org>
+ *    Copyright (C) 2010 Michael Krufky <mkrufky@linaostv.org>
  */
 
 #ifndef _LG2160_H_
 #define _LG2160_H_
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <media/dvb_frontend.h>
 
 enum lg_chip_type {

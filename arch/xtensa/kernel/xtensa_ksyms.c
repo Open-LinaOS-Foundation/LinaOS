@@ -12,14 +12,14 @@
  * Joe Taylor <joe@tensilica.com>
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
 #include <asm/irq.h>
-#include <linux/in6.h>
+#include <linaos/in6.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/checksum.h>
 #include <asm/dma.h>

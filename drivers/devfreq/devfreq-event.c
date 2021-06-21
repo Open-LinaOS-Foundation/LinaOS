@@ -8,14 +8,14 @@
  * This driver is based on drivers/devfreq/devfreq.c.
  */
 
-#include <linux/devfreq-event.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/of.h>
+#include <linaos/devfreq-event.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
 
 static struct class *devfreq_event_class;
 

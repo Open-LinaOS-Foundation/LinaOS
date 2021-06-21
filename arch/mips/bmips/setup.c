@@ -7,18 +7,18 @@
  * Copyright (C) 2014 Kevin Cernekee <cernekee@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
-#include <linux/libfdt.h>
-#include <linux/smp.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/memblock.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
+#include <linaos/libfdt.h>
+#include <linaos/smp.h>
 #include <asm/addrspace.h>
 #include <asm/bmips.h>
 #include <asm/bootinfo.h>
@@ -52,7 +52,7 @@ static void bcm3384_viper_quirks(void)
 {
 	/*
 	 * Some experimental CM boxes are set up to let CM own the Viper TP0
-	 * and let Linux own TP1.  This requires moving the kernel
+	 * and let LinaOS own TP1.  This requires moving the kernel
 	 * load address to a non-conflicting region (e.g. via
 	 * CONFIG_PHYSICAL_START) and supplying an alternate DTB.
 	 * If we detect this condition, we need to move the MIPS exception

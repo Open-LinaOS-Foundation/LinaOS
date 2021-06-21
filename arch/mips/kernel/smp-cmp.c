@@ -7,14 +7,14 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/sched/task_stack.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/smp.h>
+#include <linaos/cpumask.h>
+#include <linaos/interrupt.h>
+#include <linaos/compiler.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/cpu.h>
 #include <asm/processor.h>

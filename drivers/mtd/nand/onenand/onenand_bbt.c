@@ -11,10 +11,10 @@
  *    Split BBT core and chip specific BBT.
  */
 
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/onenand.h>
+#include <linaos/export.h>
 
 /**
  * check_short_pattern - [GENERIC] check if a pattern is in the buffer

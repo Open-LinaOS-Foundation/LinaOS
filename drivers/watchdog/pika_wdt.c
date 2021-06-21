@@ -8,23 +8,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/reboot.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/reboot.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/bitops.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
 
 #define DRV_NAME "PIKA-WDT"
 

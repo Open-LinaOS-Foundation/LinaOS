@@ -9,16 +9,16 @@
 //
 // Author: Laxman Dewangan <ldewangan@nvidia.com>
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mfd/tps80031.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/tps80031.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/slab.h>
 
 /* Flags for DCDC Voltage reading */
 #define DCDC_OFFSET_EN		BIT(0)

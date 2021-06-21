@@ -5,7 +5,7 @@
 
  */
 
-#include <linux/via-core.h>
+#include <linaos/via-core.h>
 #include "global.h"
 
 void viafb_get_device_support_state(u32 *support_state)

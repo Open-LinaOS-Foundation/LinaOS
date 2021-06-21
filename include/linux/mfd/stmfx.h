@@ -7,7 +7,7 @@
 #ifndef MFD_STMFX_H
 #define MFD_STMFX_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /* General */
 #define STMFX_REG_CHIP_ID		0x00 /* R */

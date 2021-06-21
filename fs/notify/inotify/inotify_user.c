@@ -13,24 +13,24 @@
  * inotify was largely rewriten to make use of the fsnotify infrastructure
  */
 
-#include <linux/file.h>
-#include <linux/fs.h> /* struct inode */
-#include <linux/fsnotify_backend.h>
-#include <linux/idr.h>
-#include <linux/init.h> /* fs_initcall */
-#include <linux/inotify.h>
-#include <linux/kernel.h> /* roundup() */
-#include <linux/namei.h> /* LOOKUP_FOLLOW */
-#include <linux/sched/signal.h>
-#include <linux/slab.h> /* struct kmem_cache */
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/anon_inodes.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/memcontrol.h>
-#include <linux/security.h>
+#include <linaos/file.h>
+#include <linaos/fs.h> /* struct inode */
+#include <linaos/fsnotify_backend.h>
+#include <linaos/idr.h>
+#include <linaos/init.h> /* fs_initcall */
+#include <linaos/inotify.h>
+#include <linaos/kernel.h> /* roundup() */
+#include <linaos/namei.h> /* LOOKUP_FOLLOW */
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h> /* struct kmem_cache */
+#include <linaos/syscalls.h>
+#include <linaos/types.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/uaccess.h>
+#include <linaos/poll.h>
+#include <linaos/wait.h>
+#include <linaos/memcontrol.h>
+#include <linaos/security.h>
 
 #include "inotify.h"
 #include "../fdinfo.h"
@@ -53,7 +53,7 @@ struct kmem_cache *inotify_inode_mark_cachep __read_mostly;
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 
 struct ctl_table inotify_table[] = {
 	{

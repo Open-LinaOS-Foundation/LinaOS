@@ -6,17 +6,17 @@
  *          Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/videodev2.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/videodev2.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/wait.h>
+#include <linaos/atomic.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
@@ -234,7 +234,7 @@ static int uvc_v4l2_try_format(struct uvc_streaming *stream,
 	 * The workaround could probably be enabled for all webcams, so the
 	 * quirk can be removed if needed. It's currently useful to detect
 	 * webcam bugs and fix them before they hit the market (providing
-	 * developers test their webcams with the Linux driver as well as with
+	 * developers test their webcams with the LinaOS driver as well as with
 	 * the Windows driver).
 	 */
 	mutex_lock(&stream->mutex);

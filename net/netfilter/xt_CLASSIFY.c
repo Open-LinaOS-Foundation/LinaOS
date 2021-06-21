@@ -7,16 +7,16 @@
 /* (C) 2001-2002 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
 #include <net/checksum.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_CLASSIFY.h>
-#include <linux/netfilter_arp.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_CLASSIFY.h>
+#include <linaos/netfilter_arp.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_LICENSE("GPL");

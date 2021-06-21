@@ -6,16 +6,16 @@
  * Copyright (C) 2009 Sascha Hauer, Pengutronix
  */
 
-#include <linux/mfd/mc13xxx.h>
-#include <linux/platform_device.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/hwmon.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
+#include <linaos/mfd/mc13xxx.h>
+#include <linaos/platform_device.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/hwmon.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
 
 #define DRIVER_NAME	"mc13783-adc"
 

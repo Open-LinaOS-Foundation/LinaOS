@@ -58,14 +58,14 @@
 		compatible = "gpio-keys";
 
 		key-a {
-			linux,code = <KEY_A>;
+			linaos,code = <KEY_A>;
 			label = "SW2";
 			wakeup-source;
 			debounce-interval = <20>;
 			gpios = <&gpio3 20 GPIO_ACTIVE_LOW>;
 		};
 		key-b {
-			linux,code = <KEY_B>;
+			linaos,code = <KEY_B>;
 			label = "SW3";
 			wakeup-source;
 			debounce-interval = <20>;

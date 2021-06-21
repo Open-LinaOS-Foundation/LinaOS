@@ -3,7 +3,7 @@ DAWR issues on POWER9
 =====================
 
 On POWER9 the Data Address Watchpoint Register (DAWR) can cause a checkstop
-if it points to cache inhibited (CI) memory. Currently Linux has no way to
+if it points to cache inhibited (CI) memory. Currently LinaOS has no way to
 distinguish CI memory when configuring the DAWR, so (for now) the DAWR is
 disabled by this commit::
 
@@ -27,7 +27,7 @@ PPC_PTRACE_GETHWDBGINFO call. This results in GDB falling back to
 software emulation of the watchpoint (which is slow).
 
 h_set_mode(DAWR) and h_set_dabr() will now return an error to the
-guest on a POWER9 host. Current Linux guests ignore this error, so
+guest on a POWER9 host. Current LinaOS guests ignore this error, so
 they will silently not get the DAWR.
 
 kvmppc_set_one_reg() will store the value in the vcpu but won't

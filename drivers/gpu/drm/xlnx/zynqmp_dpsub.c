@@ -9,12 +9,12 @@
  * - Laurent Pinchart <laurent.pinchart@ideasonboard.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/of_reserved_mem.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_device.h>

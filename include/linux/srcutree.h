@@ -5,14 +5,14 @@
  *
  * Copyright (C) IBM Corporation, 2017
  *
- * Author: Paul McKenney <paulmck@linux.ibm.com>
+ * Author: Paul McKenney <paulmck@linaos.ibm.com>
  */
 
 #ifndef _LINUX_SRCU_TREE_H
 #define _LINUX_SRCU_TREE_H
 
-#include <linux/rcu_node_tree.h>
-#include <linux/completion.h>
+#include <linaos/rcu_node_tree.h>
+#include <linaos/completion.h>
 
 struct srcu_node;
 struct srcu_struct;
@@ -118,7 +118,7 @@ struct srcu_struct {
  *
  *	init_srcu_struct(&my_srcu);
  *
- * See include/linux/percpu-defs.h for the rules on per-CPU variables.
+ * See include/linaos/percpu-defs.h for the rules on per-CPU variables.
  */
 #ifdef MODULE
 # define __DEFINE_SRCU(name, is_static)					\

@@ -8,10 +8,10 @@
  * Derived from Coyote
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
 #include <asm/mach/pci.h>

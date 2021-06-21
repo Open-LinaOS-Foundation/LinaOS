@@ -3,9 +3,9 @@
  * Copyright (C) 2009 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/sort.h>
 #include "ctree.h"
 #include "delayed-ref.h"
 #include "transaction.h"

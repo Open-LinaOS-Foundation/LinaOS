@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/prime_numbers.h>
-#include <linux/pm_qos.h>
-#include <linux/sort.h>
+#include <linaos/prime_numbers.h>
+#include <linaos/pm_qos.h>
+#include <linaos/sort.h>
 
 #include "gem/i915_gem_pm.h"
 #include "gem/selftests/mock_context.h"

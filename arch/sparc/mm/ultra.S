@@ -5,7 +5,7 @@
  * Copyright (C) 1997, 2000, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/asi.h>
 #include <asm/page.h>
 #include <asm/spitfire.h>

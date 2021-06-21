@@ -38,7 +38,7 @@
 #ifndef VIRTIO_GPU_HW_H
 #define VIRTIO_GPU_HW_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * VIRTIO_GPU_CMD_CTX_*

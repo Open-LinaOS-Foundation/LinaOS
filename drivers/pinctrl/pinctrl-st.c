@@ -5,22 +5,22 @@
  *	Srinivas Kandagatla <srinivas.kandagatla@st.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_gpio.h> /* of_get_named_gpio() */
-#include <linux/of_address.h>
-#include <linux/gpio/driver.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_gpio.h> /* of_get_named_gpio() */
+#include <linaos/of_address.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/platform_device.h>
 #include "core.h"
 
 /* PIO Block registers */

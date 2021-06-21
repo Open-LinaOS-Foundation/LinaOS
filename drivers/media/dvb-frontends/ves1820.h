@@ -9,7 +9,7 @@
 #ifndef VES1820_H
 #define VES1820_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 #define VES1820_SELAGC_PWM 0
 #define VES1820_SELAGC_SIGNAMPERR 1

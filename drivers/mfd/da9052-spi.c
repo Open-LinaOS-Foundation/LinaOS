@@ -7,14 +7,14 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/mfd/core.h>
-#include <linux/spi/spi.h>
-#include <linux/err.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/mfd/core.h>
+#include <linaos/spi/spi.h>
+#include <linaos/err.h>
 
-#include <linux/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/da9052.h>
 
 static int da9052_spi_probe(struct spi_device *spi)
 {

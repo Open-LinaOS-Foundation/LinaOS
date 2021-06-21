@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * USB Raw Gadget driver.
  *
@@ -9,8 +9,8 @@
 #define _UAPI__LINUX_USB_RAW_GADGET_H
 
 #include <asm/ioctl.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
+#include <linaos/types.h>
+#include <linaos/usb/ch9.h>
 
 /* Maximum length of driver_name/device_name in the usb_raw_init struct. */
 #define UDC_NAME_LENGTH_MAX 128
@@ -81,7 +81,7 @@ static inline int usb_raw_io_flags_zero(__u16 flags)
  * @ep: Endpoint handle as returned by USB_RAW_IOCTL_EP_ENABLE for
  *     USB_RAW_IOCTL_EP_WRITE/READ. Ignored for USB_RAW_IOCTL_EP0_WRITE/READ.
  * @flags: When USB_RAW_IO_FLAGS_ZERO is specified, the zero flag is set on
- *     the submitted USB request, see include/linux/usb/gadget.h for details.
+ *     the submitted USB request, see include/linaos/usb/gadget.h for details.
  * @length: Length of data.
  * @data: Data to send for USB_RAW_IOCTL_EP0/EP_WRITE. Buffer to store received
  *     data for USB_RAW_IOCTL_EP0/EP_READ.

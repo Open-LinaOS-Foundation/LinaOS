@@ -31,11 +31,11 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/jiffies.h>
 
 #include "mlx4.h"
 

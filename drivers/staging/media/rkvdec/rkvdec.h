@@ -11,10 +11,10 @@
 #ifndef RKVDEC_H_
 #define RKVDEC_H_
 
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
-#include <linux/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/videodev2.h>
+#include <linaos/wait.h>
+#include <linaos/clk.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

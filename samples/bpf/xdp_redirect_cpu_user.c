@@ -17,10 +17,10 @@ static const char *__doc__ =
 #include <getopt.h>
 #include <net/if.h>
 #include <time.h>
-#include <linux/limits.h>
+#include <linaos/limits.h>
 
 #include <arpa/inet.h>
-#include <linux/if_link.h>
+#include <linaos/if_link.h>
 
 /* How many xdp_progs are defined in _kern.c */
 #define MAX_PROG 6

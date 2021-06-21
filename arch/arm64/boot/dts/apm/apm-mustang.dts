@@ -24,8 +24,8 @@
 		compatible = "gpio-keys";
 		button@1 {
 			label = "POWER";
-			linux,code = <116>;
-			linux,input-type = <0x1>;
+			linaos,code = <116>;
+			linaos,input-type = <0x1>;
 			interrupt-parent = <&sbgpio>;
 			interrupts = <0x5 0x1>;
 		};

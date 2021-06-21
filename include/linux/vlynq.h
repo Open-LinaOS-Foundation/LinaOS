@@ -6,8 +6,8 @@
 #ifndef __VLYNQ_H__
 #define __VLYNQ_H__
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
 struct module;
 

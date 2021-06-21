@@ -7,14 +7,14 @@
  * Author: Cyrille Pitchen <cyrille.pitchen@atmel.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/mfd/syscon.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

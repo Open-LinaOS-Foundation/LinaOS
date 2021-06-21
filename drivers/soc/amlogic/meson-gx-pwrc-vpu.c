@@ -5,16 +5,16 @@
  * SPDX-License-Identifier: GPL-2.0+
  */
 
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/module.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/bitfield.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_device.h>
+#include <linaos/reset.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
 
 /* AO Offsets */
 

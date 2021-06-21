@@ -10,7 +10,7 @@
  * Author: Andrzej Pietrasiewicz <andrzejtp2010@gmail.com>
  */
 
-#include <linux/sort.h>
+#include <linaos/sort.h>
 
 #include "u_uvc.h"
 #include "uvc_configfs.h"

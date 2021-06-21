@@ -11,12 +11,12 @@
 
 
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
 #include <sound/core.h>
 #include <sound/tlv.h>
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "ice1712.h"
 #include "envy24ht.h"

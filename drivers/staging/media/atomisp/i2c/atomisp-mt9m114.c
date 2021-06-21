@@ -16,21 +16,21 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include "../include/linux/atomisp_gmin_platform.h"
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
+#include "../include/linaos/atomisp_gmin_platform.h"
 #include <media/v4l2-device.h>
 
 #include "mt9m114.h"

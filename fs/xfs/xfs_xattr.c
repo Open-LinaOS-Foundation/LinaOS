@@ -16,7 +16,7 @@
 #include "xfs_acl.h"
 #include "xfs_da_btree.h"
 
-#include <linux/posix_acl_xattr.h>
+#include <linaos/posix_acl_xattr.h>
 
 
 static int

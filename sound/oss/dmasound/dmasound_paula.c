@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/sound/oss/dmasound/dmasound_paula.c
+ *  linaos/sound/oss/dmasound/dmasound_paula.c
  *
  *  Amiga `Paula' DMA Sound Driver
  *
- *  See linux/sound/oss/dmasound/dmasound_core.c for copyright and credits
+ *  See linaos/sound/oss/dmasound/dmasound_core.c for copyright and credits
  *  prior to 28/01/2001
  *
  *  28/01/2001 [0.1] Iain Sandoe
@@ -16,15 +16,15 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/soundcard.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/soundcard.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/setup.h>
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>

@@ -6,7 +6,7 @@
 #include "../base.h"
 #include "../efuse.h"
 #include "fw_common.h"
-#include <linux/module.h>
+#include <linaos/module.h>
 
 void rtl8723_enable_fw_download(struct ieee80211_hw *hw, bool enable)
 {

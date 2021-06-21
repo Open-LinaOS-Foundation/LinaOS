@@ -16,10 +16,10 @@
 #ifndef __BCM63XX_PMB_H
 #define __BCM63XX_PMB_H
 
-#include <linux/io.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/err.h>
+#include <linaos/io.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
 
 /* PMB Master controller register */
 #define PMB_CTRL		0x00

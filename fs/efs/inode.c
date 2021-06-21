@@ -8,11 +8,11 @@
  *              and from work (c) 1998 Mike Shaver.
  */
 
-#include <linux/buffer_head.h>
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
 #include "efs.h"
-#include <linux/efs_fs_sb.h>
+#include <linaos/efs_fs_sb.h>
 
 static int efs_readpage(struct file *file, struct page *page)
 {

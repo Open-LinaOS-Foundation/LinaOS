@@ -49,7 +49,7 @@
 
 / {
 	model = "Olimex A33-OLinuXino";
-	compatible = "olimex,a33-olinuxino","allwinner,sun8i-a33";
+	compatible = "olimex,a33-olinaosino","allwinner,sun8i-a33";
 
 	aliases {
 		serial0 = &uart0;
@@ -63,7 +63,7 @@
 		compatible = "gpio-leds";
 
 		led {
-			label = "a33-olinuxino:green:usr";
+			label = "a33-olinaosino:green:usr";
 			gpios = <&pio 1 7 GPIO_ACTIVE_HIGH>;
 		};
 	};

@@ -22,7 +22,7 @@ Copyright (C) 2012-2019 by the following authors:
 - Wladimir J. van der Laan <laanwj@gmail.com>
 - Christian Gmeiner <christian.gmeiner@gmail.com>
 - Lucas Stach <l.stach@pengutronix.de>
-- Russell King <rmk@arm.linux.org.uk>
+- Russell King <rmk@arm.linaos.org.uk>
 
 Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),

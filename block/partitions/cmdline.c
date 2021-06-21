@@ -15,7 +15,7 @@
  *
  */
 
-#include <linux/cmdline-parser.h>
+#include <linaos/cmdline-parser.h>
 
 #include "check.h"
 

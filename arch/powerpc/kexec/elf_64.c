@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Load ELF vmlinux file for the kexec_file_load syscall.
+ * Load ELF vmlinaos file for the kexec_file_load syscall.
  *
  * Copyright (C) 2004  Adam Litke (agl@us.ibm.com)
  * Copyright (C) 2004  IBM Corp.
@@ -10,19 +10,19 @@
  *
  * Based on kexec-tools' kexec-elf-exec.c and kexec-elf-ppc64.c.
  * Heavily modified for the kernel by
- * Thiago Jung Bauermann <bauerman@linux.vnet.ibm.com>.
+ * Thiago Jung Bauermann <bauerman@linaos.vnet.ibm.com>.
  */
 
 #define pr_fmt(fmt)	"kexec_elf: " fmt
 
-#include <linux/elf.h>
-#include <linux/kexec.h>
-#include <linux/libfdt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/elf.h>
+#include <linaos/kexec.h>
+#include <linaos/libfdt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 static void *elf64_load(struct kimage *image, char *kernel_buf,
 			unsigned long kernel_len, char *initrd,

@@ -20,7 +20,7 @@ config VIDEO_IVTV
 	select VIDEO_UPD64031A
 	select VIDEO_UPD64083
 	help
-	  This is a video4linux driver for Conexant cx23416 or cx23415 based
+	  This is a video4linaos driver for Conexant cx23416 or cx23415 based
 	  PCI personal video recorder devices.
 
 	  This is used in devices such as the Hauppauge PVR-150/250/350/500

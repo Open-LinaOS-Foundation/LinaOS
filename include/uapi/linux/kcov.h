@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_KCOV_IOCTLS_H
 #define _LINUX_KCOV_IOCTLS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Argument for KCOV_REMOTE_ENABLE ioctl, see Documentation/dev-tools/kcov.rst

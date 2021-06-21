@@ -6,15 +6,15 @@
  */
 
 #define pr_fmt(fmt) "blacklist: "fmt
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/key.h>
-#include <linux/key-type.h>
-#include <linux/sched.h>
-#include <linux/ctype.h>
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/uidgid.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/key.h>
+#include <linaos/key-type.h>
+#include <linaos/sched.h>
+#include <linaos/ctype.h>
+#include <linaos/err.h>
+#include <linaos/seq_file.h>
+#include <linaos/uidgid.h>
 #include <keys/system_keyring.h>
 #include "blacklist.h"
 #include "common.h"

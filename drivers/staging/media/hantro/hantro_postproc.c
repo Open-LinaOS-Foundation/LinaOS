@@ -5,8 +5,8 @@
  * Copyright (C) 2019 Collabora, Ltd.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/types.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/types.h>
 
 #include "hantro.h"
 #include "hantro_hw.h"

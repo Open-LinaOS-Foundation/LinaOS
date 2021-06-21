@@ -14,15 +14,15 @@
  * Author: Mike Lockwood <lockwood@android.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 
 #include "extcon.h"
 

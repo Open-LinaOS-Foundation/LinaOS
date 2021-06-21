@@ -4,7 +4,7 @@
  * Along with common page table handling code
  *
  *  Derived from arch/powerpc/mm/tlb_64.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -17,12 +17,12 @@
  *      Rework for PPC64 port.
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/hugetlb.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/mm.h>
+#include <linaos/percpu.h>
+#include <linaos/hardirq.h>
+#include <linaos/hugetlb.h>
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>
 #include <asm/hugetlb.h>
@@ -174,7 +174,7 @@ static pte_t set_access_flags_filter(pte_t pte, struct vm_area_struct *vma,
 }
 
 /*
- * set_pte stores a linux PTE into the linux page table.
+ * set_pte stores a linaos PTE into the linaos page table.
  */
 void set_pte_at(struct mm_struct *mm, unsigned long addr, pte_t *ptep,
 		pte_t pte)
@@ -335,7 +335,7 @@ EXPORT_SYMBOL_GPL(vmalloc_to_phys);
  * This function need to be called with interrupts disabled. We use this variant
  * when we have MSR[EE] = 0 but the paca->irq_soft_mask = IRQS_ENABLED
  */
-pte_t *__find_linux_pte(pgd_t *pgdir, unsigned long ea,
+pte_t *__find_linaos_pte(pgd_t *pgdir, unsigned long ea,
 			bool *is_thp, unsigned *hpage_shift)
 {
 	pgd_t *pgdp;
@@ -451,4 +451,4 @@ out:
 		*hpage_shift = pdshift;
 	return ret_pte;
 }
-EXPORT_SYMBOL_GPL(__find_linux_pte);
+EXPORT_SYMBOL_GPL(__find_linaos_pte);

@@ -5,12 +5,12 @@
 // Copyright(c) 2021 Realtek Semiconductor Corp.
 //
 //
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/list.h>
+#include <linaos/compiler.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include <subcmd/pager.h>
 #include <sys/types.h>
 #include <errno.h>

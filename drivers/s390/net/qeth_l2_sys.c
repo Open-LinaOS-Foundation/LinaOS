@@ -4,7 +4,7 @@
  *    Author(s): Eugene Crosser <eugene.crosser@ru.ibm.com>
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <asm/ebcdic.h>
 #include "qeth_core.h"
 #include "qeth_l2.h"

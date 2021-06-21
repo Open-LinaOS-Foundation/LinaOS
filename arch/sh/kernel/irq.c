@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/kernel/irq.c
+ * linaos/arch/sh/kernel/irq.c
  *
  *	Copyright (C) 1992, 1998 Linus Torvalds, Ingo Molnar
  *
  *
  * SuperH version:  Copyright (C) 1999  Niibe Yutaka
  */
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel_stat.h>
-#include <linux/seq_file.h>
-#include <linux/ftrace.h>
-#include <linux/delay.h>
-#include <linux/ratelimit.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/seq_file.h>
+#include <linaos/ftrace.h>
+#include <linaos/delay.h>
+#include <linaos/ratelimit.h>
 #include <asm/processor.h>
 #include <asm/machvec.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/thread_info.h>
 #include <cpu/mmu_context.h>
 #include <asm/softirq_stack.h>

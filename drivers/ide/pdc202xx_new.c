@@ -3,22 +3,22 @@
  *  Promise TX2/TX4/TX2000/133 IDE driver
  *
  *  Split from:
- *  linux/drivers/ide/pdc202xx.c	Version 0.35	Mar. 30, 2002
- *  Copyright (C) 1998-2002		Andre Hedrick <andre@linux-ide.org>
+ *  linaos/drivers/ide/pdc202xx.c	Version 0.35	Mar. 30, 2002
+ *  Copyright (C) 1998-2002		Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 2005-2007		MontaVista Software, Inc.
  *  Portions Copyright (C) 1999 Promise Technology, Inc.
  *  Author: Frank Tiernan (frankt@promise.com)
  *  Released under terms of General Public License
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
-#include <linux/ktime.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
+#include <linaos/ktime.h>
 
 #include <asm/io.h>
 

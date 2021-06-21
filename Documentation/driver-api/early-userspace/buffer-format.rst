@@ -73,7 +73,7 @@ c_chksum      8 bytes		 Checksum of data field if c_magic is 070702;
 ============= ================== ==============================================
 
 The c_mode field matches the contents of st_mode returned by stat(2)
-on Linux, and encodes the file type and file permissions.
+on LinaOS, and encodes the file type and file permissions.
 
 The c_filesize should be zero for any file which is not a regular file
 or symlink.

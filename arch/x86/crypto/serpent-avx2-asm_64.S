@@ -9,7 +9,7 @@
  *      <Johannes.Goetzfried@informatik.stud.uni-erlangen.de>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/frame.h>
 #include "glue_helper-asm-avx2.S"
 

@@ -2,9 +2,9 @@
 #ifndef _LINUX_FIRMWARE_H
 #define _LINUX_FIRMWARE_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/gfp.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/gfp.h>
 
 #define FW_ACTION_NOHOTPLUG 0
 #define FW_ACTION_HOTPLUG 1

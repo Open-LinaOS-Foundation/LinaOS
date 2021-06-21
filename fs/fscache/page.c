@@ -6,11 +6,11 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL PAGE
-#include <linux/module.h>
-#include <linux/fscache-cache.h>
-#include <linux/buffer_head.h>
-#include <linux/pagevec.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/fscache-cache.h>
+#include <linaos/buffer_head.h>
+#include <linaos/pagevec.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 /*

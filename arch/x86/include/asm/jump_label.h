@@ -11,8 +11,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stringify.h>
-#include <linux/types.h>
+#include <linaos/stringify.h>
+#include <linaos/types.h>
 
 static __always_inline bool arch_static_branch(struct static_key * const key, const bool branch)
 {

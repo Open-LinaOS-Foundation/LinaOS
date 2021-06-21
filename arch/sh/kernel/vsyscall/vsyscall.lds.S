@@ -7,9 +7,9 @@
 #include <asm/asm-offsets.h>
 
 #ifdef CONFIG_CPU_LITTLE_ENDIAN
-OUTPUT_FORMAT("elf32-sh-linux", "elf32-sh-linux", "elf32-sh-linux")
+OUTPUT_FORMAT("elf32-sh-linaos", "elf32-sh-linaos", "elf32-sh-linaos")
 #else
-OUTPUT_FORMAT("elf32-shbig-linux", "elf32-shbig-linux", "elf32-shbig-linux")
+OUTPUT_FORMAT("elf32-shbig-linaos", "elf32-shbig-linaos", "elf32-shbig-linaos")
 #endif
 OUTPUT_ARCH(sh)
 

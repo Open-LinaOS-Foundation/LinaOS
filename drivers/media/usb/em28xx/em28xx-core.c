@@ -20,13 +20,13 @@
 
 #include "em28xx.h"
 
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/vmalloc.h>
 #include <sound/ac97_codec.h>
 #include <media/v4l2-common.h>
 

@@ -3,9 +3,9 @@
  *  Copyright (C) 1996-2000 Russell King - Converted to ARM.
  *  Original Copyright (C) 1995  Linus Torvalds
  */
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/reboot.h>
 
 #include <asm/cacheflush.h>
 #include <asm/idmap.h>

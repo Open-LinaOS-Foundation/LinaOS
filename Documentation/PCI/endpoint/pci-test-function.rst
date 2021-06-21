@@ -8,7 +8,7 @@ PCI Test Function
 
 Traditionally PCI RC has always been validated by using standard
 PCI cards like ethernet PCI cards or USB PCI cards or SATA PCI cards.
-However with the addition of EP-core in linux kernel, it is possible
+However with the addition of EP-core in linaos kernel, it is possible
 to configure a PCI controller that can operate in EP mode to work as
 a test device.
 

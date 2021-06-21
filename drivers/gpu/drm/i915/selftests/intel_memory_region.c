@@ -3,8 +3,8 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
-#include <linux/sort.h>
+#include <linaos/prime_numbers.h>
+#include <linaos/sort.h>
 
 #include "../i915_selftest.h"
 

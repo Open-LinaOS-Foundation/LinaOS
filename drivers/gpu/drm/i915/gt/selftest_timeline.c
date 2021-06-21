@@ -3,7 +3,7 @@
  * Copyright © 2017-2018 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
+#include <linaos/prime_numbers.h>
 
 #include "intel_context.h"
 #include "intel_engine_heartbeat.h"

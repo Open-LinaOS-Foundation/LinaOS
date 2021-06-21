@@ -5,17 +5,17 @@
  *
  * Copyright (C) 2004, 2005, 2006, 2008	 Thiemo Seufer
  * Copyright (C) 2005  Maciej W. Rozycki
- * Copyright (C) 2006  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2006  Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2012, 2013  MIPS Technologies, Inc.  All rights reserved.
  */
 
 #ifndef __ASM_UASM_H
 #define __ASM_UASM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_EXPORT_UASM
-#include <linux/export.h>
+#include <linaos/export.h>
 #define UASM_EXPORT_SYMBOL(sym) EXPORT_SYMBOL(sym)
 #else
 #define UASM_EXPORT_SYMBOL(sym)

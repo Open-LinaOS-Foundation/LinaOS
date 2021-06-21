@@ -16,19 +16,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/clk.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/timex.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/clk.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/bitops.h>
+#include <linaos/uaccess.h>
+#include <linaos/timex.h>
 
 #ifdef CONFIG_ARCH_PXA
 #include <mach/regs-ost.h>

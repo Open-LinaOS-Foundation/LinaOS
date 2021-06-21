@@ -23,19 +23,19 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>
+#include <linaos/cpufreq.h>
+#include <linaos/compiler.h>
+#include <linaos/slab.h>
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
 
 #include <acpi/processor.h>
 

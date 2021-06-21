@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The LinaOS Foundation. All rights reserved.
  *
  * Description: CoreSight Program Flow Trace driver
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
-#include <linux/stat.h>
-#include <linux/pm_runtime.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/coresight.h>
-#include <linux/coresight-pmu.h>
-#include <linux/amba/bus.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/clk.h>
-#include <linux/perf_event.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/smp.h>
+#include <linaos/sysfs.h>
+#include <linaos/stat.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/cpu.h>
+#include <linaos/of.h>
+#include <linaos/coresight.h>
+#include <linaos/coresight-pmu.h>
+#include <linaos/amba/bus.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
+#include <linaos/clk.h>
+#include <linaos/perf_event.h>
 #include <asm/sections.h>
 
 #include "coresight-etm.h"

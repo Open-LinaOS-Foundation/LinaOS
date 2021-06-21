@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2017-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2017-2020, The LinaOS Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm-dp] %s: " fmt, __func__
 
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-dp.h>
-#include <linux/rational.h>
+#include <linaos/delay.h>
+#include <linaos/iopoll.h>
+#include <linaos/phy/phy.h>
+#include <linaos/phy/phy-dp.h>
+#include <linaos/rational.h>
 #include <drm/drm_dp_helper.h>
 #include <drm/drm_print.h>
 

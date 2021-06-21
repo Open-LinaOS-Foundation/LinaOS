@@ -37,10 +37,10 @@
  *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/crc32.h>
 #include <net/mac80211.h>
 #include "carl9170.h"
 #include "hw.h"
@@ -255,7 +255,7 @@ void carl9170_handle_command_response(struct ar9170 *ar, void *buf, u32 len)
 			break;
 
 		wiphy_info(ar->hw->wiphy, "FW: RADAR! Please report this "
-		       "incident to linux-wireless@vger.kernel.org !\n");
+		       "incident to linaos-wireless@vger.kernel.org !\n");
 		break;
 
 	case CARL9170_RSP_GPIO:

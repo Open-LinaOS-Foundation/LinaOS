@@ -7,14 +7,14 @@
  * Heavily inspired by w1_DS2433 driver from Ben Gardner <bgardner@wabtec.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 #define W1_EEPROM_DS2431	0x2D
 

@@ -8,7 +8,7 @@
 #ifndef _SPARC_IDPROM_H
 #define _SPARC_IDPROM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct idprom {
 	u8		id_format;	/* Format identifier (always 0x01) */

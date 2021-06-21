@@ -13,9 +13,9 @@
 #ifndef _LINUX_CONSOLE_STRUCT_H
 #define _LINUX_CONSOLE_STRUCT_H
 
-#include <linux/wait.h>
-#include <linux/vt.h>
-#include <linux/workqueue.h>
+#include <linaos/wait.h>
+#include <linaos/vt.h>
+#include <linaos/workqueue.h>
 
 struct uni_pagedir;
 struct uni_screen;
@@ -70,7 +70,7 @@ struct vc_state {
  *                         | initializing Z       |   |
  *                         |                      |  /
  * vc_visible_origin ---> ^+----------------------+-:
- * (changes by scroll)    || Welcome to linux     |  \
+ * (changes by scroll)    || Welcome to linaos     |  \
  *                        ||                      |   |
  *           vc_rows --->< | login: root          |   |  visible on console
  *                        || password:            |    > (vc_screenbuf_size is

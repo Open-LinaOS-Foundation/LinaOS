@@ -14,7 +14,7 @@
 #ifndef __ES58X_FD_H__
 #define __ES58X_FD_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ES582_1_NUM_CAN_CH 2
 #define ES584_1_NUM_CAN_CH 1

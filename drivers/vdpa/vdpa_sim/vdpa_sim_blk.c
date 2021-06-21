@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/blkdev.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
-#include <linux/blkdev.h>
-#include <uapi/linux/virtio_blk.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/blkdev.h>
+#include <linaos/vringh.h>
+#include <linaos/vdpa.h>
+#include <linaos/blkdev.h>
+#include <uapi/linaos/virtio_blk.h>
 
 #include "vdpa_sim.h"
 

@@ -33,28 +33,28 @@
 #ifndef MLX5_DRIVER_H
 #define MLX5_DRIVER_H
 
-#include <linux/kernel.h>
-#include <linux/completion.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/spinlock_types.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/xarray.h>
-#include <linux/workqueue.h>
-#include <linux/mempool.h>
-#include <linux/interrupt.h>
-#include <linux/idr.h>
-#include <linux/notifier.h>
-#include <linux/refcount.h>
-#include <linux/auxiliary_bus.h>
+#include <linaos/kernel.h>
+#include <linaos/completion.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/semaphore.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/xarray.h>
+#include <linaos/workqueue.h>
+#include <linaos/mempool.h>
+#include <linaos/interrupt.h>
+#include <linaos/idr.h>
+#include <linaos/notifier.h>
+#include <linaos/refcount.h>
+#include <linaos/auxiliary_bus.h>
 
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/doorbell.h>
-#include <linux/mlx5/eq.h>
-#include <linux/timecounter.h>
-#include <linux/ptp_clock_kernel.h>
+#include <linaos/mlx5/device.h>
+#include <linaos/mlx5/doorbell.h>
+#include <linaos/mlx5/eq.h>
+#include <linaos/timecounter.h>
+#include <linaos/ptp_clock_kernel.h>
 #include <net/devlink.h>
 
 #define MLX5_ADEV_NAME "mlx5_core"

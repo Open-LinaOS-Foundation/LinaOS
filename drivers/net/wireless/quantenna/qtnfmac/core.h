@@ -4,23 +4,23 @@
 #ifndef _QTN_FMAC_CORE_H_
 #define _QTN_FMAC_CORE_H_
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/semaphore.h>
+#include <linaos/ip.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
 #include <net/sock.h>
 #include <net/lib80211.h>
 #include <net/cfg80211.h>
-#include <linux/vmalloc.h>
-#include <linux/firmware.h>
-#include <linux/ctype.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <linaos/vmalloc.h>
+#include <linaos/firmware.h>
+#include <linaos/ctype.h>
+#include <linaos/workqueue.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
 
 #include "qlink.h"
 #include "trans.h"

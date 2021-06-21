@@ -11,9 +11,9 @@
 #ifndef __OMAPFB_H
 #define __OMAPFB_H
 
-#include <linux/fb.h>
-#include <linux/mutex.h>
-#include <linux/omapfb.h>
+#include <linaos/fb.h>
+#include <linaos/mutex.h>
+#include <linaos/omapfb.h>
 
 #define OMAPFB_EVENT_READY	1
 #define OMAPFB_EVENT_DISABLED	2

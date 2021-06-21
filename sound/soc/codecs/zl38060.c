@@ -14,13 +14,13 @@
 // - chip must be strapped for "host boot": in this mode, firmware will be
 //   provided by this driver.
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
-#include <linux/ihex.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/property.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regmap.h>
+#include <linaos/module.h>
+#include <linaos/ihex.h>
 
 #include <sound/pcm_params.h>
 #include <sound/core.h>
@@ -173,7 +173,7 @@ static int zl38_load_firmware(struct device *dev, struct regmap *regmap)
 	 * 2. convert downloaded firmware from srec to ihex. Simple tool:
 	 *    https://gitlab.com/TheSven73/s3-to-irec
 	 * 3. convert ihex to binary (.fw) using ihex2fw tool which is included
-	 *    with the Linux kernel sources
+	 *    with the LinaOS kernel sources
 	 */
 	err = request_ihex_firmware(&fw, "zl38060.fw", dev);
 	if (err)

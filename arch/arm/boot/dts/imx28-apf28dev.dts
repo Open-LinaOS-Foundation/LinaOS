@@ -200,7 +200,7 @@
 		user {
 			label = "Heartbeat";
 			gpios = <&gpio0 21 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -218,7 +218,7 @@
 		user-button {
 			label = "User button";
 			gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
-			linux,code = <0x100>;
+			linaos,code = <0x100>;
 			wakeup-source;
 		};
 	};

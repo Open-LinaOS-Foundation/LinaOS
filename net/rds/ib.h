@@ -4,9 +4,9 @@
 
 #include <rdma/ib_verbs.h>
 #include <rdma/rdma_cm.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 #include "rds.h"
 #include "rdma_transport.h"
 

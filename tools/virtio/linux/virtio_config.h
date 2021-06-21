@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/virtio_byteorder.h>
-#include <linux/virtio.h>
-#include <uapi/linux/virtio_config.h>
+#include <linaos/virtio_byteorder.h>
+#include <linaos/virtio.h>
+#include <uapi/linaos/virtio_config.h>
 
 /*
  * __virtio_test_bit - helper to test feature bits. For use by transports.

@@ -13,7 +13,7 @@
 #ifndef _ISP1760_CORE_H_
 #define _ISP1760_CORE_H_
 
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 #include "isp1760-hcd.h"
 #include "isp1760-udc.h"

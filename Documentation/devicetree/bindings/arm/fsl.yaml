@@ -26,7 +26,7 @@ properties:
         items:
           - enum:
               - fsl,imx23-evk
-              - olimex,imx23-olinuxino
+              - olimex,imx23-olinaosino
           - const: fsl,imx23
 
       - description: i.MX25 Product Development Kit

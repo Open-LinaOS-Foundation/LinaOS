@@ -1,6 +1,6 @@
-# SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
+# SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note
 #
-# Linux system call numbers and entry vectors for ia64
+# LinaOS system call numbers and entry vectors for ia64
 #
 # The format is:
 # <number> <abi> <name> <entry point>

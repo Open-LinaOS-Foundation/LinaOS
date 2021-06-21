@@ -19,9 +19,9 @@ config NFSD
 	  case you can choose N here.
 
 	  To export local file systems using NFS, you also need to install
-	  user space programs which can be found in the Linux nfs-utils
-	  package, available from http://linux-nfs.org/.  More detail about
-	  the Linux NFS server implementation is available via the
+	  user space programs which can be found in the LinaOS nfs-utils
+	  package, available from http://linaos-nfs.org/.  More detail about
+	  the LinaOS NFS server implementation is available via the
 	  exports(5) man page.
 
 	  Below you can choose which versions of the NFS protocol are
@@ -83,8 +83,8 @@ config NFSD_V4
 	  version 4 of the NFS protocol (RFC 3530).
 
 	  To export files using NFSv4, you need to install additional user
-	  space programs which can be found in the Linux nfs-utils package,
-	  available from http://linux-nfs.org/.
+	  space programs which can be found in the LinaOS nfs-utils package,
+	  available from http://linaos-nfs.org/.
 
 	  If unsure, say N.
 
@@ -153,8 +153,8 @@ config NFSD_V4_SECURITY_LABEL
 
 	Say Y here if you want enable fine-grained security label attribute
 	support for NFS version 4.  Security labels allow security modules like
-	SELinux and Smack to label files to facilitate enforcement of their policies.
+	SELinaOS and Smack to label files to facilitate enforcement of their policies.
 	Without this an NFSv4 mount will have the same label on each file.
 
-	If you do not wish to enable fine-grained security labels SELinux or
+	If you do not wish to enable fine-grained security labels SELinaOS or
 	Smack policies on NFSv4 files, say N.

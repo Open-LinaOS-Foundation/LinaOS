@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/mmc/host/au1xmmc.c - AU1XX0 MMC driver
+ * linaos/drivers/mmc/host/au1xmmc.c - AU1XX0 MMC driver
  *
  *  Copyright (c) 2005, Advanced Micro Devices, Inc.
  *
@@ -30,18 +30,18 @@
  * (the low to high transition will not occur).
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/highmem.h>
-#include <linux/leds.h>
-#include <linux/mmc/host.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/highmem.h>
+#include <linaos/leds.h>
+#include <linaos/mmc/host.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 #include <asm/mach-au1x00/au1000.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/affs/amigaffs.c
+ *  linaos/fs/affs/amigaffs.c
  *
  *  (c) 1996  Hans-Joachim Widmaier - Rewritten
  *
@@ -9,8 +9,8 @@
  *  Please send bug reports to: hjw@zvw.de
  */
 
-#include <linux/math64.h>
-#include <linux/iversion.h>
+#include <linaos/math64.h>
+#include <linaos/iversion.h>
 #include "affs.h"
 
 /*

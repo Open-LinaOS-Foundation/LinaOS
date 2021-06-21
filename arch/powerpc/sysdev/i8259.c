@@ -4,10 +4,10 @@
  */
 #undef DEBUG
 
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
 #include <asm/io.h>
 #include <asm/i8259.h>
 #include <asm/prom.h>

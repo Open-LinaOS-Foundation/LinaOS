@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include <net/flow_offload.h>
-#include <linux/rtnetlink.h>
-#include <linux/mutex.h>
-#include <linux/rhashtable.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/mutex.h>
+#include <linaos/rhashtable.h>
 
 struct flow_rule *flow_rule_alloc(unsigned int num_actions)
 {

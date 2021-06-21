@@ -5,7 +5,7 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/asm-uaccess.h>
 #include <asm/assembler.h>

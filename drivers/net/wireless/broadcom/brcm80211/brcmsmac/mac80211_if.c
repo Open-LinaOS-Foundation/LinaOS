@@ -18,12 +18,12 @@
 #define __UNDEF_NO_VERSION__
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/etherdevice.h>
-#include <linux/sched.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/etherdevice.h>
+#include <linaos/sched.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/bcma/bcma.h>
 #include <net/mac80211.h>
 #include <defs.h>
 #include "phy/phy_int.h"
@@ -222,7 +222,7 @@ static const struct ieee80211_supported_band brcms_band_2GHz_nphy_template = {
 	.bitrates = legacy_ratetable,
 	.n_bitrates = ARRAY_SIZE(legacy_ratetable),
 	.ht_cap = {
-		   /* from include/linux/ieee80211.h */
+		   /* from include/linaos/ieee80211.h */
 		   .cap = IEEE80211_HT_CAP_GRN_FLD |
 			  IEEE80211_HT_CAP_SGI_20 | IEEE80211_HT_CAP_SGI_40,
 		   .ht_supported = true,
@@ -297,7 +297,7 @@ static void brcms_free(struct brcms_info *wl)
 
 	if (wl->pub) {
 		brcms_debugfs_detach(wl->pub);
-		brcms_c_module_unregister(wl->pub, "linux", wl);
+		brcms_c_module_unregister(wl->pub, "linaos", wl);
 	}
 
 	/* free common resources */
@@ -1172,7 +1172,7 @@ static struct brcms_info *brcms_attach(struct bcma_device *pdev)
 	wl->irq = pdev->irq;
 
 	/* register module */
-	brcms_c_module_register(wl->pub, "linux", wl, NULL);
+	brcms_c_module_register(wl->pub, "linaos", wl, NULL);
 
 	if (ieee_hw_init(hw)) {
 		wiphy_err(wl->wiphy, "wl%d: %s: ieee_hw_init failed!\n", unit,

@@ -3,11 +3,11 @@
  * Copyright (C) 2019 Mentor Graphics Inc.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/sizes.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/sizes.h>
 #include "ipu-prv.h"
 
 #define QUANT_MAP(q)					\

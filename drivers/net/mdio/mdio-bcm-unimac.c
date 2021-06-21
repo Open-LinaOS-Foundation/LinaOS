@@ -5,18 +5,18 @@
  * Copyright (C) 2014-2017 Broadcom
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_platform.h>
-#include <linux/phy.h>
-#include <linux/platform_data/mdio-bcm-unimac.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy.h>
+#include <linaos/platform_data/mdio-bcm-unimac.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
 
 #define MDIO_CMD		0x00
 #define  MDIO_START_BUSY	(1 << 29)

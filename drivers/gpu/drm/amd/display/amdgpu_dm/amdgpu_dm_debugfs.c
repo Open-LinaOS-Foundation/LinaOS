@@ -23,7 +23,7 @@
  *
  */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "dc.h"
 #include "amdgpu.h"

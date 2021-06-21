@@ -23,17 +23,17 @@
 #define DEBUG_NCQ
 #endif
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/dmaengine.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/libata.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/libata.h>
+#include <linaos/slab.h>
 
 #include "libata.h"
 
@@ -190,8 +190,8 @@ static void sata_dwc_clear_dmacr(struct sata_dwc_device_port *hsdevp, u8 tag);
 
 #ifdef CONFIG_SATA_DWC_OLD_DMA
 
-#include <linux/platform_data/dma-dw.h>
-#include <linux/dma/dw.h>
+#include <linaos/platform_data/dma-dw.h>
+#include <linaos/dma/dw.h>
 
 static struct dw_dma_slave sata_dwc_dma_dws = {
 	.src_id = 0,

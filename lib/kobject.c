@@ -10,12 +10,12 @@
  * about using the kobject interface.
  */
 
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <linaos/kobject.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
 
 /**
  * kobject_namespace() - Return @kobj's namespace tag.

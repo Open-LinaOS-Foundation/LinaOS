@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * <linux/usb/midi.h> -- USB MIDI definitions.
+ * <linaos/usb/midi.h> -- USB MIDI definitions.
  *
  * Copyright (C) 2006 Thumtronics Pty Ltd.
  * Developed for Thumtronics by Grey Innovation
@@ -19,7 +19,7 @@
 #ifndef __LINUX_USB_MIDI_H
 #define __LINUX_USB_MIDI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* A.1  MS Class-Specific Interface Descriptor Subtypes */
 #define USB_MS_HEADER		0x01

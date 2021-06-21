@@ -9,8 +9,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
 
 #include "test_util.h"
 #include "kvm_util.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/arch/arm/mach-omap2/sleep.S
+ * linaos/arch/arm/mach-omap2/sleep.S
  *
  * (C) Copyright 2004
  * Texas Instruments, <www.ti.com>
@@ -11,7 +11,7 @@
  * Igor Stoppa <igor.stoppa@nokia.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 #include "omap24xx.h"

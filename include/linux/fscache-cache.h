@@ -14,9 +14,9 @@
 #ifndef _LINUX_FSCACHE_CACHE_H
 #define _LINUX_FSCACHE_CACHE_H
 
-#include <linux/fscache.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
+#include <linaos/fscache.h>
+#include <linaos/sched.h>
+#include <linaos/workqueue.h>
 
 #define NR_MAXCACHES BITS_PER_LONG
 

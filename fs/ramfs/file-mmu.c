@@ -1,11 +1,11 @@
 /* file-mmu.c: ramfs MMU-based file operations
  *
- * Resizable simple ram filesystem for Linux.
+ * Resizable simple ram filesystem for LinaOS.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *               2000 Transmeta Corp.
  *
- * Usage limits added by David Gibson, Linuxcare Australia.
+ * Usage limits added by David Gibson, LinaOScare Australia.
  * This file is released under the GPL.
  */
 
@@ -24,10 +24,10 @@
  * caches is sufficient.
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/ramfs.h>
-#include <linux/sched.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/ramfs.h>
+#include <linaos/sched.h>
 
 #include "internal.h"
 

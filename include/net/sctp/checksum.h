@@ -9,7 +9,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Dinakaran Joseph
@@ -23,10 +23,10 @@
 #ifndef __sctp_checksum_h__
 #define __sctp_checksum_h__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <net/sctp/sctp.h>
-#include <linux/crc32c.h>
-#include <linux/crc32.h>
+#include <linaos/crc32c.h>
+#include <linaos/crc32.h>
 
 static inline __wsum sctp_csum_update(const void *buff, int len, __wsum sum)
 {

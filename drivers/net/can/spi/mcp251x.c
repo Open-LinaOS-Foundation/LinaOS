@@ -19,29 +19,29 @@
  * Copyright 2007
  */
 
-#include <linux/bitfield.h>
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/can/led.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/freezer.h>
-#include <linux/gpio.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
+#include <linaos/bitfield.h>
+#include <linaos/can/core.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/led.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/freezer.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/uaccess.h>
 
 /* SPI interface instruction set */
 #define INSTRUCTION_WRITE	0x02

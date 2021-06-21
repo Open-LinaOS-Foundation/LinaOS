@@ -5,12 +5,12 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
+#include <linaos/vmw_vmci_defs.h>
+#include <linaos/vmw_vmci_api.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/bug.h>
 
 #include "vmci_datagram.h"
 #include "vmci_resource.h"

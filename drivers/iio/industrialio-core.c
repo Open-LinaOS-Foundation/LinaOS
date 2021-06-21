@@ -8,30 +8,30 @@
 
 #define pr_fmt(fmt) "iio-core: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/idr.h>
-#include <linux/kdev_t.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/property.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/anon_inodes.h>
-#include <linux/debugfs.h>
-#include <linux/mutex.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/iio-opaque.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/idr.h>
+#include <linaos/kdev_t.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/property.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/cdev.h>
+#include <linaos/slab.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/debugfs.h>
+#include <linaos/mutex.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/iio-opaque.h>
 #include "iio_core.h"
 #include "iio_core_trigger.h"
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/buffer_impl.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/buffer_impl.h>
 
 /* IDA to assign each registered device a unique id */
 static DEFINE_IDA(iio_ida);
@@ -202,7 +202,7 @@ static int iio_sysfs_match_string_with_gaps(const char * const *array, size_t n,
 
 #if defined(CONFIG_DEBUG_FS)
 /*
- * There's also a CONFIG_DEBUG_FS guard in include/linux/iio/iio.h for
+ * There's also a CONFIG_DEBUG_FS guard in include/linaos/iio/iio.h for
  * iio_get_debugfs_dentry() to make it inline if CONFIG_DEBUG_FS is undefined
  */
 struct dentry *iio_get_debugfs_dentry(struct iio_dev *indio_dev)

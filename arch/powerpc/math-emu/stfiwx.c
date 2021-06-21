@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/uaccess.h>
 
 int
 stfiwx(u32 *frS, void *ea)

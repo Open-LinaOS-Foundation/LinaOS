@@ -7,8 +7,8 @@
  *                2012 Joachim Eastwood <manabian@gmail.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mach/arch.h>
 

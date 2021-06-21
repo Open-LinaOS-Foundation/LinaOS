@@ -10,9 +10,9 @@
 #ifndef _CPPC_ACPI_H
 #define _CPPC_ACPI_H
 
-#include <linux/acpi.h>
-#include <linux/cpufreq.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/cpufreq.h>
+#include <linaos/types.h>
 
 #include <acpi/pcc.h>
 #include <acpi/processor.h>

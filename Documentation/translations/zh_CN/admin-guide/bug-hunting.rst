@@ -106,7 +106,7 @@ syslog文件，通常是 ``/var/log/messages`` （取决于 ``/etc/syslog.conf``
 gdb
 ^^^^
 
-GNU 调试器（GNU debugger， ``gdb`` ）是从 ``vmlinux`` 文件中找出OOPS的确切
+GNU 调试器（GNU debugger， ``gdb`` ）是从 ``vmlinaos`` 文件中找出OOPS的确切
 文件和行号的最佳方法。
 
 在使用 ``CONFIG_DEBUG_INFO`` 编译的内核上使用gdb效果最好。可通过运行以下命令
@@ -120,7 +120,7 @@ GNU 调试器（GNU debugger， ``gdb`` ）是从 ``vmlinux`` 文件中找出OOP
 
 并使用GDB来将其翻译成可读形式::
 
-  $ gdb vmlinux
+  $ gdb vmlinaos
   (gdb) l *0xc021e50e
 
 如果没有启用 ``CONFIG_DEBUG_INFO`` ，则使用OOPS的函数偏移::
@@ -130,8 +130,8 @@ GNU 调试器（GNU debugger， ``gdb`` ）是从 ``vmlinux`` 文件中找出OOP
 并在启用 ``CONFIG_DEBUG_INFO`` 的情况下重新编译内核::
 
   $ ./scripts/config -d COMPILE_TEST -e DEBUG_KERNEL -e DEBUG_INFO
-  $ make vmlinux
-  $ gdb vmlinux
+  $ make vmlinaos
+  $ gdb vmlinaos
   (gdb) l *vt_ioctl+0xda8
   0x1888 is in vt_ioctl (drivers/tty/vt/vt_ioctl.c:293).
   288	{
@@ -243,8 +243,8 @@ objdump
 	Mauro Carvalho Chehab <mchehab@kernel.org> (maintainer:MEDIA INPUT INFRASTRUCTURE (V4L/DVB),commit_signer:1/1=100%)
 	Tejun Heo <tj@kernel.org> (commit_signer:1/1=100%)
 	Bhaktipriya Shridhar <bhaktipriya96@gmail.com> (commit_signer:1/1=100%,authored:1/1=100%,added_lines:4/4=100%,removed_lines:9/9=100%)
-	linux-media@vger.kernel.org (open list:GSPCA USB WEBCAM DRIVER)
-	linux-kernel@vger.kernel.org (open list)
+	linaos-media@vger.kernel.org (open list:GSPCA USB WEBCAM DRIVER)
+	linaos-kernel@vger.kernel.org (open list)
 
 请注意它将指出：
 
@@ -252,16 +252,16 @@ objdump
   和Bhaktipriya（在这个特定的案例中，没有人真正参与这个文件的开发）；
 - 驱动维护人员（Hans Verkuil）；
 - 子系统维护人员（Mauro Carvalho Chehab）；
-- 驱动程序和/或子系统邮件列表（linux-media@vger.kernel.org）；
-- Linux内核邮件列表（linux-kernel@vger.kernel.org）。
+- 驱动程序和/或子系统邮件列表（linaos-media@vger.kernel.org）；
+- LinaOS内核邮件列表（linaos-kernel@vger.kernel.org）。
 
-通常，修复缺陷的最快方法是将它报告给用于开发相关代码的邮件列表（linux-media
+通常，修复缺陷的最快方法是将它报告给用于开发相关代码的邮件列表（linaos-media
 ML），抄送驱动程序维护者（Hans）。
 
 如果你完全不知道该把报告寄给谁，且 ``get_maintainer.pl`` 也没有提供任何有用
-的信息，请发送到linux-kernel@vger.kernel.org。
+的信息，请发送到linaos-kernel@vger.kernel.org。
 
-感谢您的帮助，这使Linux尽可能稳定:-)
+感谢您的帮助，这使LinaOS尽可能稳定:-)
 
 修复缺陷
 ---------

@@ -11,7 +11,7 @@
  * return an error value in addition to the "real"
  * return value.
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/thread_info.h>
 #include <asm/errno.h>
 #include <asm/asm.h>

@@ -62,7 +62,7 @@
  */
 
 /* for task_struct */
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 /* bits that are frequently given and infrequently matched in the low word */
 /* NOTE: If you add a flag, you need to also update masklog.c! */
@@ -188,8 +188,8 @@ do {									\
 	}								\
 } while (0)
 
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
+#include <linaos/kobject.h>
+#include <linaos/sysfs.h>
 int mlog_sys_init(struct kset *o2cb_subsys);
 void mlog_sys_shutdown(void);
 

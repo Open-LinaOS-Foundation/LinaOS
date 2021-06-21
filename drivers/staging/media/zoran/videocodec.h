@@ -123,7 +123,7 @@ M                       zr36055[1] 0001 0000c001 00000000 (zr36050[1])
 #ifndef __LINUX_VIDEOCODEC_H
 #define __LINUX_VIDEOCODEC_H
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 #define CODEC_DO_COMPRESSION 0
 #define CODEC_DO_EXPANSION   1

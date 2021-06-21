@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/export.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/if_vlan.h>
 #include <net/dsa.h>
 #include <net/dst_metadata.h>
 #include <net/ip.h>
@@ -12,27 +12,27 @@
 #include <net/gre.h>
 #include <net/pptp.h>
 #include <net/tipc.h>
-#include <linux/igmp.h>
-#include <linux/icmp.h>
-#include <linux/sctp.h>
-#include <linux/dccp.h>
-#include <linux/if_tunnel.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/stddef.h>
-#include <linux/if_ether.h>
-#include <linux/mpls.h>
-#include <linux/tcp.h>
-#include <linux/ptp_classify.h>
+#include <linaos/igmp.h>
+#include <linaos/icmp.h>
+#include <linaos/sctp.h>
+#include <linaos/dccp.h>
+#include <linaos/if_tunnel.h>
+#include <linaos/if_pppox.h>
+#include <linaos/ppp_defs.h>
+#include <linaos/stddef.h>
+#include <linaos/if_ether.h>
+#include <linaos/mpls.h>
+#include <linaos/tcp.h>
+#include <linaos/ptp_classify.h>
 #include <net/flow_dissector.h>
 #include <scsi/fc/fc_fcoe.h>
-#include <uapi/linux/batadv_packet.h>
-#include <linux/bpf.h>
+#include <uapi/linaos/batadv_packet.h>
+#include <linaos/bpf.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_labels.h>
 #endif
-#include <linux/bpf-netns.h>
+#include <linaos/bpf-netns.h>
 
 static void dissector_set_key(struct flow_dissector *flow_dissector,
 			      enum flow_dissector_key_id key_id)

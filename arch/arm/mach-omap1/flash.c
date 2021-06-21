@@ -3,9 +3,9 @@
  * Flash support for OMAP1
  */
 
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <linaos/io.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
 
 #include <mach/tc.h>
 #include "flash.h"

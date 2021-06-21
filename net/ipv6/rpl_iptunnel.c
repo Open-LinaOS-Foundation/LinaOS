@@ -4,7 +4,7 @@
  * (C) 2020 Alexander Aring <alex.aring@gmail.com>
  */
 
-#include <linux/rpl_iptunnel.h>
+#include <linaos/rpl_iptunnel.h>
 
 #include <net/dst_cache.h>
 #include <net/ip6_route.h>

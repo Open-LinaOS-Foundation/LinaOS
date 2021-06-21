@@ -5,8 +5,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/platform_data/eth-ep93xx.h>
-#include <linux/reboot.h>
+#include <linaos/platform_data/eth-ep93xx.h>
+#include <linaos/reboot.h>
 
 struct device;
 struct i2c_board_info;

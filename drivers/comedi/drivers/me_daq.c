@@ -20,9 +20,9 @@
  *    Analog Input, Analog Output, Digital I/O
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
 
 #include "../comedi_pci.h"
 

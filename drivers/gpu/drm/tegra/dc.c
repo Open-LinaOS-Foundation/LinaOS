@@ -4,14 +4,14 @@
  * Copyright (C) 2012 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
 
 #include <soc/tegra/pmc.h>
 

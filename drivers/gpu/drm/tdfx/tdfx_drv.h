@@ -1,8 +1,8 @@
-/* tdfx.h -- 3dfx DRM template customization -*- linux-c -*-
- * Created: Wed Feb 14 12:32:32 2001 by gareth@valinux.com
+/* tdfx.h -- 3dfx DRM template customization -*- linaos-c -*-
+ * Created: Wed Feb 14 12:32:32 2001 by gareth@valinaos.com
  */
 /*
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -25,7 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
 #ifndef __TDFX_H__
@@ -34,7 +34,7 @@
 /* General customization:
  */
 
-#define DRIVER_AUTHOR		"VA Linux Systems Inc."
+#define DRIVER_AUTHOR		"VA LinaOS Systems Inc."
 
 #define DRIVER_NAME		"tdfx"
 #define DRIVER_DESC		"3dfx Banshee/Voodoo3+"

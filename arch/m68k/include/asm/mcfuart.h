@@ -13,8 +13,8 @@
 #define	mcfuart_h
 /****************************************************************************/
 
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/platform_device.h>
 
 struct mcf_platform_uart {
 	unsigned long	mapbase;	/* Physical address base */

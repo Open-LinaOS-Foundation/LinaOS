@@ -8,12 +8,12 @@
  * memory areas, even if they are not shared by fork().
  */
 
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/sched.h>
-#include <linux/sched/coredump.h>
+#include <linaos/bitops.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/rmap.h>
+#include <linaos/sched.h>
+#include <linaos/sched/coredump.h>
 
 struct stable_node;
 struct mem_cgroup;

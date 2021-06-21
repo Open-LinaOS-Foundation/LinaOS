@@ -13,7 +13,7 @@
  *	Copyright (c) 2012 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>

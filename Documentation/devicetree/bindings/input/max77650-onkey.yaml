@@ -20,7 +20,7 @@ properties:
   compatible:
     const: maxim,max77650-onkey
 
-  linux,code:
+  linaos,code:
     $ref: /schemas/types.yaml#/definitions/uint32
     description:
       The key-code to be reported when the key is pressed. Defaults

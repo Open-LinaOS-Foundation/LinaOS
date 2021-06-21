@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_X86_CPU_RESCTRL
 
-#include <linux/sched.h>
-#include <linux/jump_label.h>
+#include <linaos/sched.h>
+#include <linaos/jump_label.h>
 
 #define IA32_PQR_ASSOC	0x0c8f
 

@@ -5,15 +5,15 @@
  * Copyright (C) 2017 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/devm-helpers.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/thermal.h>
-#include <linux/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/devm-helpers.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/thermal.h>
+#include <linaos/workqueue.h>
 
 #define MAX_SPEED 3
 

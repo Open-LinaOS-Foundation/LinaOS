@@ -22,8 +22,8 @@
  *   [1] - IRQ (optional, needed for async command support)
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 
 #include "../comedidev.h"
 

@@ -2,8 +2,8 @@
 #ifndef _LINUX_RCUWAIT_H_
 #define _LINUX_RCUWAIT_H_
 
-#include <linux/rcupdate.h>
-#include <linux/sched/signal.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched/signal.h>
 
 /*
  * rcuwait provides a way of blocking and waking up a single

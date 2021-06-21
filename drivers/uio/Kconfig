@@ -138,7 +138,7 @@ config UIO_PRUSS
 
 	  More info on API is available at below wiki
 
-	  http://processors.wiki.ti.com/index.php/PRU_Linux_Application_Loader
+	  http://processors.wiki.ti.com/index.php/PRU_LinaOS_Application_Loader
 
 	  To compile this driver as a module, choose M here: the module
 	  will be called uio_pruss.

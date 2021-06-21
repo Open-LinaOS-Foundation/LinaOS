@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) "list_sort_test: " fmt
 
-#include <linux/kernel.h>
-#include <linux/list_sort.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <linaos/kernel.h>
+#include <linaos/list_sort.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
 
 /*
  * The pattern of set bits in the list length determines which cases

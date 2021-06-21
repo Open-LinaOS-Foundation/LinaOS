@@ -4,29 +4,29 @@
  *
  *  SCSI error/timeout handling
  *      Initial versions: Eric Youngdale.  Based upon conversations with
- *                        Leonard Zubkoff and David Miller at Linux Expo,
+ *                        Leonard Zubkoff and David Miller at LinaOS Expo,
  *                        ideas originating from all over the place.
  *
  *	Restructured scsi_unjam_host and associated functions.
  *	September 04, 2002 Mike Anderson (andmike@us.ibm.com)
  *
- *	Forward port of Russell King's (rmk@arm.linux.org.uk) changes and
+ *	Forward port of Russell King's (rmk@arm.linaos.org.uk) changes and
  *	minor cleanups.
  *	September 30, 2002 Mike Anderson (andmike@us.ibm.com)
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/gfp.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/freezer.h>
+#include <linaos/kthread.h>
+#include <linaos/interrupt.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -441,13 +441,13 @@ static void scsi_report_sense(struct scsi_device *sdev,
 			sdev_printk(KERN_WARNING, sdev,
 				    "Warning! Received an indication that the "
 				    "LUN assignments on this target have "
-				    "changed. The Linux SCSI layer does not "
+				    "changed. The LinaOS SCSI layer does not "
 				    "automatically remap LUN assignments.\n");
 		} else if (sshdr->asc == 0x3f)
 			sdev_printk(KERN_WARNING, sdev,
 				    "Warning! Received an indication that the "
 				    "operating parameters on this target have "
-				    "changed. The Linux SCSI layer does not "
+				    "changed. The LinaOS SCSI layer does not "
 				    "automatically adjust these parameters.\n");
 
 		if (sshdr->asc == 0x38 && sshdr->ascq == 0x07) {

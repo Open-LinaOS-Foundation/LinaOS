@@ -5,17 +5,17 @@
 // Copyright (C) 2008 Openmoko, Inc.
 // Copyright (C) 2004-2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //
 // Samsung common power management (suspend to RAM) debug support
 
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/io.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/io.h>
 
 #include <asm/mach/map.h>
 
-#include <linux/soc/samsung/s3c-pm.h>
+#include <linaos/soc/samsung/s3c-pm.h>
 
 static struct pm_uart_save uart_save;
 

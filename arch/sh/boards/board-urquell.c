@@ -8,20 +8,20 @@
  * Based on board-sh7785lcr.c
  * Copyright (C) 2008  Yoshihiro Shimoda
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
-#include <linux/smc91x.h>
-#include <linux/mtd/physmap.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/sh_intc.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/smc91x.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/irq.h>
+#include <linaos/clk.h>
+#include <linaos/sh_intc.h>
 #include <mach/urquell.h>
 #include <cpu/sh7786.h>
 #include <asm/heartbeat.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/smp-ops.h>
 
 /*

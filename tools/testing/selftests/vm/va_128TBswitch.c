@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  *
- * Authors: Kirill A. Shutemov <kirill.shutemov@linux.intel.com>
- * Authors: Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Authors: Kirill A. Shutemov <kirill.shutemov@linaos.intel.com>
+ * Authors: Aneesh Kumar K.V <aneesh.kumar@linaos.vnet.ibm.com>
  */
 
 #include <stdio.h>

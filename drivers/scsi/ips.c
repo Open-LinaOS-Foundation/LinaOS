@@ -43,7 +43,7 @@
 /* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA */
 /*                                                                           */
 /* Bugs/Comments/Suggestions about this driver should be mailed to:          */
-/*      ipslinux@adaptec.com        	                                     */
+/*      ipslinaos@adaptec.com        	                                     */
 /*                                                                           */
 /* For system support issues, contact your local IBM Customer support.       */
 /* Directions to find IBM Customer Support for each country can be found at: */
@@ -79,7 +79,7 @@
 /*          - Add ability to flash BIOS                                      */
 /* 4.00.04  - Rename structures/constants to be prefixed with IPS_           */
 /* 4.00.05  - Remove wish_block from init routine                            */
-/*          - Use linux/spinlock.h instead of asm/spinlock.h for kernels     */
+/*          - Use linaos/spinlock.h instead of asm/spinlock.h for kernels     */
 /*            2.3.18 and later                                               */
 /*          - Sync with other changes from the 2.3 kernels                   */
 /* 4.00.06  - Fix timeout with initial FFDC command                          */
@@ -164,21 +164,21 @@
 #include <asm/io.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
+#include <linaos/stddef.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/reboot.h>
+#include <linaos/interrupt.h>
 
-#include <linux/blkdev.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
+#include <linaos/blkdev.h>
+#include <linaos/types.h>
+#include <linaos/dma-mapping.h>
 
 #include <scsi/sg.h>
 #include "scsi.h"
@@ -186,14 +186,14 @@
 
 #include "ips.h"
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/stat.h>
+#include <linaos/stat.h>
 
-#include <linux/spinlock.h>
-#include <linux/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>
 
-#include <linux/smp.h>
+#include <linaos/smp.h>
 
 #ifdef MODULE
 static char *ips = NULL;
@@ -1032,7 +1032,7 @@ static int ips_eh_reset(struct scsi_cmnd *SC)
 /*   Send a command to the controller                                       */
 /*                                                                          */
 /* NOTE:                                                                    */
-/*    Linux obtains io_request_lock before calling this function            */
+/*    LinaOS obtains io_request_lock before calling this function            */
 /*                                                                          */
 /****************************************************************************/
 static int ips_queue_lck(struct scsi_cmnd *SC, void (*done) (struct scsi_cmnd *))
@@ -3242,7 +3242,7 @@ ips_done(ips_ha_t * ha, ips_scb_t * scb)
 /*                                                                          */
 /* Routine Description:                                                     */
 /*                                                                          */
-/*   Map Controller Error codes to Linux Error Codes                        */
+/*   Map Controller Error codes to LinaOS Error Codes                        */
 /*                                                                          */
 /****************************************************************************/
 static int
@@ -5640,7 +5640,7 @@ ips_write_driver_status(ips_ha_t * ha, int intr)
 		return (0);
 	}
 
-	/* IF NVRAM Page 5 is OK, Use it for Slot Number Info Because Linux Doesn't Do Slots */
+	/* IF NVRAM Page 5 is OK, Use it for Slot Number Info Because LinaOS Doesn't Do Slots */
 	ha->slot_num = ha->nvram->adapter_slot;
 
 	return (1);

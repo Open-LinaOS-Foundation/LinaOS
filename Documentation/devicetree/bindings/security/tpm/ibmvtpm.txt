@@ -19,9 +19,9 @@ Required properties:
                           IOA
 - ibm,loc-code          : specifies the unique and persistent location code
                           associated with this virtual I/O Adapters
-- linux,sml-base        : 64-bit base address of the reserved memory allocated
+- linaos,sml-base        : 64-bit base address of the reserved memory allocated
                           for the firmware event log
-- linux,sml-size        : size of the memory allocated for the firmware event log
+- linaos,sml-size        : size of the memory allocated for the firmware event log
 
 Example (IBM Virtual Trusted Platform Module)
 ---------------------------------------------
@@ -32,10 +32,10 @@ Example (IBM Virtual Trusted Platform Module)
                         device_type = "IBM,vtpm";
                         ibm,my-drc-index = <0x30000003>;
                         ibm,#dma-address-cells = <0x2>;
-                        linux,sml-base = <0xc60e 0x0>;
+                        linaos,sml-base = <0xc60e 0x0>;
                         interrupts = <0xa0003 0x0>;
                         ibm,my-dma-window = <0x10000003 0x0 0x0 0x0 0x10000000>;
                         ibm,loc-code = "U8286.41A.10082DV-V3-C3";
                         reg = <0x30000003>;
-                        linux,sml-size = <0xbce10200>;
+                        linaos,sml-size = <0xbce10200>;
                 };

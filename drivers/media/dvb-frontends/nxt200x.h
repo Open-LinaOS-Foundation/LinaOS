@@ -10,8 +10,8 @@
 #ifndef NXT200X_H
 #define NXT200X_H
 
-#include <linux/dvb/frontend.h>
-#include <linux/firmware.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/firmware.h>
 
 typedef enum nxt_chip_t {
 		NXTUNDEFINED,

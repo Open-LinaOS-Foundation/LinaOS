@@ -3,17 +3,17 @@
 * Simple driver for Texas Instruments LM3639 Backlight + Flash LED driver chip
 * Copyright (C) 2012 Texas Instruments
 */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/platform_data/lm3639_bl.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/leds.h>
+#include <linaos/backlight.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/interrupt.h>
+#include <linaos/regmap.h>
+#include <linaos/platform_data/lm3639_bl.h>
 
 #define REG_DEV_ID	0x00
 #define REG_CHECKSUM	0x01

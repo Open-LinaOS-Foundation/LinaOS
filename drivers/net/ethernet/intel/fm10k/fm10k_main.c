@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2019 Intel Corporation. */
 
-#include <linux/types.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
 #include <net/ipv6.h>
 #include <net/ip.h>
 #include <net/tcp.h>
-#include <linux/if_macvlan.h>
-#include <linux/prefetch.h>
+#include <linaos/if_macvlan.h>
+#include <linaos/prefetch.h>
 
 #include "fm10k.h"
 
@@ -17,7 +17,7 @@ static const char fm10k_driver_string[] = DRV_SUMMARY;
 static const char fm10k_copyright[] =
 	"Copyright(c) 2013 - 2019 Intel Corporation.";
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linaos.nics@intel.com>");
 MODULE_DESCRIPTION(DRV_SUMMARY);
 MODULE_LICENSE("GPL v2");
 

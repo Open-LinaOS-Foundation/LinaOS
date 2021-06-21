@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for LinaOS.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,8 +35,8 @@
 #ifndef __CSIO_MB_H__
 #define __CSIO_MB_H__
 
-#include <linux/timer.h>
-#include <linux/completion.h>
+#include <linaos/timer.h>
+#include <linaos/completion.h>
 
 #include "t4fw_api.h"
 #include "t4fw_api_stor.h"

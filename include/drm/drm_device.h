@@ -1,10 +1,10 @@
 #ifndef _DRM_DEVICE_H_
 #define _DRM_DEVICE_H_
 
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
+#include <linaos/idr.h>
 
 #include <drm/drm_hashtab.h>
 #include <drm/drm_mode_config.h>

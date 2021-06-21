@@ -24,11 +24,11 @@
 #include <error.h>
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/errqueue.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ipv6.h>
-#include <linux/net_tstamp.h>
+#include <linaos/errqueue.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/ipv6.h>
+#include <linaos/net_tstamp.h>
 #include <netdb.h>
 #include <net/if.h>
 #include <netinet/in.h>

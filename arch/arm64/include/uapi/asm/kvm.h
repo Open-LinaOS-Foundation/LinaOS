@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2012,2013 - ARM Ltd
  * Author: Marc Zyngier <marc.zyngier@arm.com>
@@ -32,8 +32,8 @@
 #define KVM_NR_SPSR	5
 
 #ifndef __ASSEMBLY__
-#include <linux/psci.h>
-#include <linux/types.h>
+#include <linaos/psci.h>
+#include <linaos/types.h>
 #include <asm/ptrace.h>
 #include <asm/sve_context.h>
 

@@ -5,7 +5,7 @@
  * Copyright (C) 2013 Antti Palosaari <crope@iki.fi>
  *
  * GNU Radio plugin "gr-kernel" for device usage will be on:
- * https://git.linuxtv.org/anttip/gr-kernel.git
+ * https://git.linaostv.org/anttip/gr-kernel.git
  */
 
 #include "rtl2832_sdr.h"
@@ -18,10 +18,10 @@
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-vmalloc.h>
 
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/math64.h>
-#include <linux/regmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/jiffies.h>
+#include <linaos/math64.h>
+#include <linaos/regmap.h>
 
 static bool rtl2832_sdr_emulated_fmt;
 module_param_named(emulated_formats, rtl2832_sdr_emulated_fmt, bool, 0644);

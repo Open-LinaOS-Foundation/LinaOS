@@ -9,7 +9,7 @@
  * Copyright (c) 2003-2004, MontaVista Software, Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/ptrace.h>
 #include <asm/thread_info.h>
 #include <asm/asm-offsets.h>

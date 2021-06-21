@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2016 Linaro Ltd
  * Copyright (C) 2015 Sony Mobile Communications Inc
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/elf.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/qcom_scm.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/mdt_loader.h>
+#include <linaos/device.h>
+#include <linaos/elf.h>
+#include <linaos/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/mdt_loader.h>
 
 static bool mdt_phdr_valid(const struct elf32_phdr *phdr)
 {

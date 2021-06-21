@@ -24,12 +24,12 @@
  * not any responsibility to update it.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/compiler.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/compiler.h>
 
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #ifdef __HAVE_ARCH_MEMCPY
 #ifndef CONFIG_OPT_LIB_FUNCTION

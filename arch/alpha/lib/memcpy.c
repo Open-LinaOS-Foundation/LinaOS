@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/lib/memcpy.c
+ *  linaos/arch/alpha/lib/memcpy.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  */
@@ -16,8 +16,8 @@
  * "bge reg, xx"). I hope alpha-gcc will be fixed to notice this eventually..
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
 
 /*
  * This should be done in one go with ldq_u*2/mask/stq_u. Do it

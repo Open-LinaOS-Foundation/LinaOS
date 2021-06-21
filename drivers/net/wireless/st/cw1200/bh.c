@@ -11,10 +11,10 @@
  * Author: Ajitpal Singh <ajitpal.singh@stericsson.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/mac80211.h>
-#include <linux/kthread.h>
-#include <linux/timer.h>
+#include <linaos/kthread.h>
+#include <linaos/timer.h>
 
 #include "cw1200.h"
 #include "bh.h"

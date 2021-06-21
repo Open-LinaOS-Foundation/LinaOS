@@ -8,7 +8,7 @@
  * Copyright 2020-2021 NXP Semiconductors
  */
 
-#include <linux/if_bridge.h>
+#include <linaos/if_bridge.h>
 #include <net/pkt_cls.h>
 #include "ocelot.h"
 #include "ocelot_vcap.h"

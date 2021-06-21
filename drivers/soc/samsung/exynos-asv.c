@@ -9,13 +9,13 @@
  * Samsung Exynos SoC Adaptive Supply Voltage support
  */
 
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/of.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/soc/samsung/exynos-chipid.h>
+#include <linaos/cpu.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/of.h>
+#include <linaos/pm_opp.h>
+#include <linaos/regmap.h>
+#include <linaos/soc/samsung/exynos-chipid.h>
 
 #include "exynos-asv.h"
 #include "exynos5422-asv.h"

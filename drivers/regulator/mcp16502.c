@@ -8,16 +8,16 @@
 //
 // Inspired from tps65086-regulator.c
 
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/suspend.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/suspend.h>
+#include <linaos/gpio/consumer.h>
 
 #define VDD_LOW_SEL 0x0D
 #define VDD_HIGH_SEL 0x3F

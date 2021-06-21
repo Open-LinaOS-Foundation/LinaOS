@@ -12,9 +12,9 @@
  *	directory of this archive for more details.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/tc.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/tc.h>
 
 /**
  * tc_register_driver - register a new TC driver

@@ -2,8 +2,8 @@
 #ifndef __ARCH_M68K_ATOMIC__
 #define __ARCH_M68K_ATOMIC__
 
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <linaos/types.h>
+#include <linaos/irqflags.h>
 #include <asm/cmpxchg.h>
 #include <asm/barrier.h>
 

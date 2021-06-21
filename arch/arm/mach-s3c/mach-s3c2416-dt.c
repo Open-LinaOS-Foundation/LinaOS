@@ -11,9 +11,9 @@
 // Copyright (c) 2010-2011 Linaro Ltd.
 //		www.linaro.org
 
-#include <linux/clocksource.h>
-#include <linux/irqchip.h>
-#include <linux/serial_s3c.h>
+#include <linaos/clocksource.h>
+#include <linaos/irqchip.h>
+#include <linaos/serial_s3c.h>
 
 #include <asm/mach/arch.h>
 #include "map.h"

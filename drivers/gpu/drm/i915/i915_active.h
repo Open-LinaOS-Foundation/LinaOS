@@ -7,7 +7,7 @@
 #ifndef _I915_ACTIVE_H_
 #define _I915_ACTIVE_H_
 
-#include <linux/lockdep.h>
+#include <linaos/lockdep.h>
 
 #include "i915_active_types.h"
 #include "i915_request.h"

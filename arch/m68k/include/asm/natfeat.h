@@ -6,7 +6,7 @@
  * This software may be used and distributed according to the terms of
  * the GNU General Public License (GPL), incorporated herein by reference.
  */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef _NATFEAT_H
 #define _NATFEAT_H

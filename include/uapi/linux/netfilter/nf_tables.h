@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_NF_TABLES_H
 #define _LINUX_NF_TABLES_H
 
@@ -1367,7 +1367,7 @@ enum nft_nat_types {
  * @NFTA_NAT_REG_ADDR_MAX: source register of address range end (NLA_U32: nft_registers)
  * @NFTA_NAT_REG_PROTO_MIN: source register of proto range start (NLA_U32: nft_registers)
  * @NFTA_NAT_REG_PROTO_MAX: source register of proto range end (NLA_U32: nft_registers)
- * @NFTA_NAT_FLAGS: NAT flags (see NF_NAT_RANGE_* in linux/netfilter/nf_nat.h) (NLA_U32)
+ * @NFTA_NAT_FLAGS: NAT flags (see NF_NAT_RANGE_* in linaos/netfilter/nf_nat.h) (NLA_U32)
  */
 enum nft_nat_attributes {
 	NFTA_NAT_UNSPEC,
@@ -1401,7 +1401,7 @@ enum nft_tproxy_attributes {
 /**
  * enum nft_masq_attributes - nf_tables masquerade expression attributes
  *
- * @NFTA_MASQ_FLAGS: NAT flags (see NF_NAT_RANGE_* in linux/netfilter/nf_nat.h) (NLA_U32)
+ * @NFTA_MASQ_FLAGS: NAT flags (see NF_NAT_RANGE_* in linaos/netfilter/nf_nat.h) (NLA_U32)
  * @NFTA_MASQ_REG_PROTO_MIN: source register of proto range start (NLA_U32: nft_registers)
  * @NFTA_MASQ_REG_PROTO_MAX: source register of proto range end (NLA_U32: nft_registers)
  */
@@ -1419,7 +1419,7 @@ enum nft_masq_attributes {
  *
  * @NFTA_REDIR_REG_PROTO_MIN: source register of proto range start (NLA_U32: nft_registers)
  * @NFTA_REDIR_REG_PROTO_MAX: source register of proto range end (NLA_U32: nft_registers)
- * @NFTA_REDIR_FLAGS: NAT flags (see NF_NAT_RANGE_* in linux/netfilter/nf_nat.h) (NLA_U32)
+ * @NFTA_REDIR_FLAGS: NAT flags (see NF_NAT_RANGE_* in linaos/netfilter/nf_nat.h) (NLA_U32)
  */
 enum nft_redir_attributes {
 	NFTA_REDIR_UNSPEC,

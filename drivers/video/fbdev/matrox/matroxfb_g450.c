@@ -17,7 +17,7 @@
 #include "matroxfb_misc.h"
 #include "matroxfb_DAC1064.h"
 #include "g450_pll.h"
-#include <linux/matroxfb.h>
+#include <linaos/matroxfb.h>
 #include <asm/div64.h>
 
 #include "matroxfb_g450.h"

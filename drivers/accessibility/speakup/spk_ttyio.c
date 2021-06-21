@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/slab.h>
 
 #include "speakup.h"
 #include "spk_types.h"

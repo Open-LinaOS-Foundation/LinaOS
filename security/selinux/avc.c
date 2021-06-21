@@ -10,22 +10,22 @@
  *
  * Copyright (C) 2003 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/dcache.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/percpu.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/dcache.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/percpu.h>
+#include <linaos/list.h>
 #include <net/sock.h>
-#include <linux/un.h>
+#include <linaos/un.h>
 #include <net/af_unix.h>
-#include <linux/ip.h>
-#include <linux/audit.h>
-#include <linux/ipv6.h>
+#include <linaos/ip.h>
+#include <linaos/audit.h>
+#include <linaos/ipv6.h>
 #include <net/ipv6.h>
 #include "avc.h"
 #include "avc_ss.h"
@@ -86,33 +86,33 @@ struct avc_callback_node {
 DEFINE_PER_CPU(struct avc_cache_stats, avc_cache_stats) = { 0 };
 #endif
 
-struct selinux_avc {
+struct selinaos_avc {
 	unsigned int avc_cache_threshold;
 	struct avc_cache avc_cache;
 };
 
-static struct selinux_avc selinux_avc;
+static struct selinaos_avc selinaos_avc;
 
-void selinux_avc_init(struct selinux_avc **avc)
+void selinaos_avc_init(struct selinaos_avc **avc)
 {
 	int i;
 
-	selinux_avc.avc_cache_threshold = AVC_DEF_CACHE_THRESHOLD;
+	selinaos_avc.avc_cache_threshold = AVC_DEF_CACHE_THRESHOLD;
 	for (i = 0; i < AVC_CACHE_SLOTS; i++) {
-		INIT_HLIST_HEAD(&selinux_avc.avc_cache.slots[i]);
-		spin_lock_init(&selinux_avc.avc_cache.slots_lock[i]);
+		INIT_HLIST_HEAD(&selinaos_avc.avc_cache.slots[i]);
+		spin_lock_init(&selinaos_avc.avc_cache.slots_lock[i]);
 	}
-	atomic_set(&selinux_avc.avc_cache.active_nodes, 0);
-	atomic_set(&selinux_avc.avc_cache.lru_hint, 0);
-	*avc = &selinux_avc;
+	atomic_set(&selinaos_avc.avc_cache.active_nodes, 0);
+	atomic_set(&selinaos_avc.avc_cache.lru_hint, 0);
+	*avc = &selinaos_avc;
 }
 
-unsigned int avc_get_cache_threshold(struct selinux_avc *avc)
+unsigned int avc_get_cache_threshold(struct selinaos_avc *avc)
 {
 	return avc->avc_cache_threshold;
 }
 
-void avc_set_cache_threshold(struct selinux_avc *avc,
+void avc_set_cache_threshold(struct selinaos_avc *avc,
 			     unsigned int cache_threshold)
 {
 	avc->avc_cache_threshold = cache_threshold;
@@ -150,7 +150,7 @@ void __init avc_init(void)
 					0, SLAB_PANIC, NULL);
 }
 
-int avc_get_hash_stats(struct selinux_avc *avc, char *page)
+int avc_get_hash_stats(struct selinaos_avc *avc, char *page)
 {
 	int i, chain_len, max_chain_len, slots_used;
 	struct avc_node *node;
@@ -413,7 +413,7 @@ static inline u32 avc_xperms_audit_required(u32 requested,
 	return audited;
 }
 
-static inline int avc_xperms_audit(struct selinux_state *state,
+static inline int avc_xperms_audit(struct selinaos_state *state,
 				   u32 ssid, u32 tsid, u16 tclass,
 				   u32 requested, struct av_decision *avd,
 				   struct extended_perms_decision *xpd,
@@ -438,14 +438,14 @@ static void avc_node_free(struct rcu_head *rhead)
 	avc_cache_stats_incr(frees);
 }
 
-static void avc_node_delete(struct selinux_avc *avc, struct avc_node *node)
+static void avc_node_delete(struct selinaos_avc *avc, struct avc_node *node)
 {
 	hlist_del_rcu(&node->list);
 	call_rcu(&node->rhead, avc_node_free);
 	atomic_dec(&avc->avc_cache.active_nodes);
 }
 
-static void avc_node_kill(struct selinux_avc *avc, struct avc_node *node)
+static void avc_node_kill(struct selinaos_avc *avc, struct avc_node *node)
 {
 	avc_xperms_free(node->ae.xp_node);
 	kmem_cache_free(avc_node_cachep, node);
@@ -453,7 +453,7 @@ static void avc_node_kill(struct selinux_avc *avc, struct avc_node *node)
 	atomic_dec(&avc->avc_cache.active_nodes);
 }
 
-static void avc_node_replace(struct selinux_avc *avc,
+static void avc_node_replace(struct selinaos_avc *avc,
 			     struct avc_node *new, struct avc_node *old)
 {
 	hlist_replace_rcu(&old->list, &new->list);
@@ -461,7 +461,7 @@ static void avc_node_replace(struct selinux_avc *avc,
 	atomic_dec(&avc->avc_cache.active_nodes);
 }
 
-static inline int avc_reclaim_node(struct selinux_avc *avc)
+static inline int avc_reclaim_node(struct selinaos_avc *avc)
 {
 	struct avc_node *node;
 	int hvalue, try, ecx;
@@ -496,7 +496,7 @@ out:
 	return ecx;
 }
 
-static struct avc_node *avc_alloc_node(struct selinux_avc *avc)
+static struct avc_node *avc_alloc_node(struct selinaos_avc *avc)
 {
 	struct avc_node *node;
 
@@ -523,7 +523,7 @@ static void avc_node_populate(struct avc_node *node, u32 ssid, u32 tsid, u16 tcl
 	memcpy(&node->ae.avd, avd, sizeof(node->ae.avd));
 }
 
-static inline struct avc_node *avc_search_node(struct selinux_avc *avc,
+static inline struct avc_node *avc_search_node(struct selinaos_avc *avc,
 					       u32 ssid, u32 tsid, u16 tclass)
 {
 	struct avc_node *node, *ret = NULL;
@@ -556,7 +556,7 @@ static inline struct avc_node *avc_search_node(struct selinux_avc *avc,
  * then this function returns the avc_node.
  * Otherwise, this function returns NULL.
  */
-static struct avc_node *avc_lookup(struct selinux_avc *avc,
+static struct avc_node *avc_lookup(struct selinaos_avc *avc,
 				   u32 ssid, u32 tsid, u16 tclass)
 {
 	struct avc_node *node;
@@ -571,7 +571,7 @@ static struct avc_node *avc_lookup(struct selinux_avc *avc,
 	return NULL;
 }
 
-static int avc_latest_notif_update(struct selinux_avc *avc,
+static int avc_latest_notif_update(struct selinaos_avc *avc,
 				   int seqno, int is_insert)
 {
 	int ret = 0;
@@ -581,7 +581,7 @@ static int avc_latest_notif_update(struct selinux_avc *avc,
 	spin_lock_irqsave(&notif_lock, flag);
 	if (is_insert) {
 		if (seqno < avc->avc_cache.latest_notif) {
-			pr_warn("SELinux: avc:  seqno %d < latest_notif %d\n",
+			pr_warn("SELinaOS: avc:  seqno %d < latest_notif %d\n",
 			       seqno, avc->avc_cache.latest_notif);
 			ret = -EAGAIN;
 		}
@@ -612,7 +612,7 @@ static int avc_latest_notif_update(struct selinux_avc *avc,
  * the access vectors into a cache entry, returns
  * avc_node inserted. Otherwise, this function returns NULL.
  */
-static struct avc_node *avc_insert(struct selinux_avc *avc,
+static struct avc_node *avc_insert(struct selinaos_avc *avc,
 				   u32 ssid, u32 tsid, u16 tclass,
 				   struct av_decision *avd,
 				   struct avc_xperms_node *xp_node)
@@ -655,7 +655,7 @@ found:
 }
 
 /**
- * avc_audit_pre_callback - SELinux specific information
+ * avc_audit_pre_callback - SELinaOS specific information
  * will be called by generic audit code
  * @ab: the audit buffer
  * @a: audit_data
@@ -663,7 +663,7 @@ found:
 static void avc_audit_pre_callback(struct audit_buffer *ab, void *a)
 {
 	struct common_audit_data *ad = a;
-	struct selinux_audit_data *sad = ad->selinux_audit_data;
+	struct selinaos_audit_data *sad = ad->selinaos_audit_data;
 	u32 av = sad->audited;
 	const char **perms;
 	int i, perm;
@@ -696,7 +696,7 @@ static void avc_audit_pre_callback(struct audit_buffer *ab, void *a)
 }
 
 /**
- * avc_audit_post_callback - SELinux specific information
+ * avc_audit_post_callback - SELinaOS specific information
  * will be called by generic audit code
  * @ab: the audit buffer
  * @a: audit_data
@@ -704,7 +704,7 @@ static void avc_audit_pre_callback(struct audit_buffer *ab, void *a)
 static void avc_audit_post_callback(struct audit_buffer *ab, void *a)
 {
 	struct common_audit_data *ad = a;
-	struct selinux_audit_data *sad = ad->selinux_audit_data;
+	struct selinaos_audit_data *sad = ad->selinaos_audit_data;
 	char *scontext = NULL;
 	char *tcontext = NULL;
 	const char *tclass = NULL;
@@ -732,7 +732,7 @@ static void avc_audit_post_callback(struct audit_buffer *ab, void *a)
 	if (sad->denied)
 		audit_log_format(ab, " permissive=%u", sad->result ? 0 : 1);
 
-	trace_selinux_audited(sad, scontext, tcontext, tclass);
+	trace_selinaos_audited(sad, scontext, tcontext, tclass);
 	kfree(tcontext);
 	kfree(scontext);
 
@@ -759,13 +759,13 @@ static void avc_audit_post_callback(struct audit_buffer *ab, void *a)
 }
 
 /* This is the slow part of avc audit with big stack footprint */
-noinline int slow_avc_audit(struct selinux_state *state,
+noinline int slow_avc_audit(struct selinaos_state *state,
 			    u32 ssid, u32 tsid, u16 tclass,
 			    u32 requested, u32 audited, u32 denied, int result,
 			    struct common_audit_data *a)
 {
 	struct common_audit_data stack_data;
-	struct selinux_audit_data sad;
+	struct selinaos_audit_data sad;
 
 	if (WARN_ON(!tclass || tclass >= ARRAY_SIZE(secclass_map)))
 		return -EINVAL;
@@ -784,7 +784,7 @@ noinline int slow_avc_audit(struct selinux_state *state,
 	sad.result = result;
 	sad.state = state;
 
-	a->selinux_audit_data = &sad;
+	a->selinaos_audit_data = &sad;
 
 	common_lsm_audit(a, avc_audit_pre_callback, avc_audit_post_callback);
 	return 0;
@@ -832,7 +832,7 @@ out:
  * otherwise, this function updates the AVC entry. The original AVC-entry object
  * will release later by RCU.
  */
-static int avc_update_node(struct selinux_avc *avc,
+static int avc_update_node(struct selinaos_avc *avc,
 			   u32 event, u32 perms, u8 driver, u8 xperm, u32 ssid,
 			   u32 tsid, u16 tclass, u32 seqno,
 			   struct extended_perms_decision *xpd,
@@ -854,7 +854,7 @@ static int avc_update_node(struct selinux_avc *avc,
 	 * permissive mode that only appear when in enforcing mode.
 	 *
 	 * See the corresponding handling of MAY_NOT_BLOCK in avc_audit()
-	 * and selinux_inode_permission().
+	 * and selinaos_inode_permission().
 	 */
 	if (flags & AVC_NONBLOCKING)
 		return 0;
@@ -939,7 +939,7 @@ out:
 /**
  * avc_flush - Flush the cache
  */
-static void avc_flush(struct selinux_avc *avc)
+static void avc_flush(struct selinaos_avc *avc)
 {
 	struct hlist_head *head;
 	struct avc_node *node;
@@ -968,7 +968,7 @@ static void avc_flush(struct selinux_avc *avc)
  * avc_ss_reset - Flush the cache and revalidate migrated permissions.
  * @seqno: policy sequence number
  */
-int avc_ss_reset(struct selinux_avc *avc, u32 seqno)
+int avc_ss_reset(struct selinaos_avc *avc, u32 seqno)
 {
 	struct avc_callback_node *c;
 	int rc = 0, tmprc;
@@ -999,7 +999,7 @@ int avc_ss_reset(struct selinux_avc *avc, u32 seqno)
  * results in a bigger stack frame.
  */
 static noinline
-struct avc_node *avc_compute_av(struct selinux_state *state,
+struct avc_node *avc_compute_av(struct selinaos_state *state,
 				u32 ssid, u32 tsid,
 				u16 tclass, struct av_decision *avd,
 				struct avc_xperms_node *xp_node)
@@ -1011,7 +1011,7 @@ struct avc_node *avc_compute_av(struct selinux_state *state,
 	return avc_insert(state->avc, ssid, tsid, tclass, avd, xp_node);
 }
 
-static noinline int avc_denied(struct selinux_state *state,
+static noinline int avc_denied(struct selinaos_state *state,
 			       u32 ssid, u32 tsid,
 			       u16 tclass, u32 requested,
 			       u8 driver, u8 xperm, unsigned int flags,
@@ -1036,7 +1036,7 @@ static noinline int avc_denied(struct selinux_state *state,
  * as-is the case with ioctls, then multiple may be chained together and the
  * driver field is used to specify which set contains the permission.
  */
-int avc_has_extended_perms(struct selinux_state *state,
+int avc_has_extended_perms(struct selinaos_state *state,
 			   u32 ssid, u32 tsid, u16 tclass, u32 requested,
 			   u8 driver, u8 xperm, struct common_audit_data *ad)
 {
@@ -1133,7 +1133,7 @@ decision:
  * auditing, e.g. in cases where a lock must be held for the check but
  * should be released for the auditing.
  */
-inline int avc_has_perm_noaudit(struct selinux_state *state,
+inline int avc_has_perm_noaudit(struct selinaos_state *state,
 				u32 ssid, u32 tsid,
 				u16 tclass, u32 requested,
 				unsigned int flags,
@@ -1180,7 +1180,7 @@ inline int avc_has_perm_noaudit(struct selinux_state *state,
  * permissions are granted, -%EACCES if any permissions are denied, or
  * another -errno upon other errors.
  */
-int avc_has_perm(struct selinux_state *state, u32 ssid, u32 tsid, u16 tclass,
+int avc_has_perm(struct selinaos_state *state, u32 ssid, u32 tsid, u16 tclass,
 		 u32 requested, struct common_audit_data *auditdata)
 {
 	struct av_decision avd;
@@ -1196,7 +1196,7 @@ int avc_has_perm(struct selinux_state *state, u32 ssid, u32 tsid, u16 tclass,
 	return rc;
 }
 
-int avc_has_perm_flags(struct selinux_state *state,
+int avc_has_perm_flags(struct selinaos_state *state,
 		       u32 ssid, u32 tsid, u16 tclass, u32 requested,
 		       struct common_audit_data *auditdata,
 		       int flags)
@@ -1215,7 +1215,7 @@ int avc_has_perm_flags(struct selinux_state *state,
 	return rc;
 }
 
-u32 avc_policy_seqno(struct selinux_state *state)
+u32 avc_policy_seqno(struct selinaos_state *state)
 {
 	return state->avc->avc_cache.latest_notif;
 }
@@ -1227,14 +1227,14 @@ void avc_disable(void)
 	 * not destroying the avc_node_cachep it might be easy to fix, but
 	 * I don't know the memory barrier semantics well enough to know.  It's
 	 * possible that some other task dereferenced security_ops when
-	 * it still pointed to selinux operations.  If that is the case it's
+	 * it still pointed to selinaos operations.  If that is the case it's
 	 * possible that it is about to use the avc and is about to need the
 	 * avc_node_cachep.  I know I could wrap the security.c security_ops call
 	 * in an rcu_lock, but seriously, it's not worth it.  Instead I just flush
 	 * the cache and get that memory back.
 	 */
 	if (avc_node_cachep) {
-		avc_flush(selinux_state.avc);
+		avc_flush(selinaos_state.avc);
 		/* kmem_cache_destroy(avc_node_cachep); */
 	}
 }

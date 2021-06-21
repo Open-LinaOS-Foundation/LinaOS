@@ -10,7 +10,7 @@
 #ifndef FIMC_IS_PARAM_H_
 #define FIMC_IS_PARAM_H_
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #define FIMC_IS_CONFIG_TIMEOUT		3000 /* ms */
 #define IS_DEFAULT_WIDTH		1280

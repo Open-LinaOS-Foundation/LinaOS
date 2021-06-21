@@ -4,18 +4,18 @@
 //
 // Copyright (C) 2013,2014 Samsung Electornics
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/clkdev.h>
-#include <linux/regmap.h>
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/samsung/s2mps11.h>
-#include <linux/mfd/samsung/s2mps13.h>
-#include <linux/mfd/samsung/s2mps14.h>
-#include <linux/mfd/samsung/s5m8767.h>
-#include <linux/mfd/samsung/core.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/clkdev.h>
+#include <linaos/regmap.h>
+#include <linaos/clk-provider.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/samsung/s2mps11.h>
+#include <linaos/mfd/samsung/s2mps13.h>
+#include <linaos/mfd/samsung/s2mps14.h>
+#include <linaos/mfd/samsung/s5m8767.h>
+#include <linaos/mfd/samsung/core.h>
 
 #include <dt-bindings/clock/samsung,s2mps11.h>
 

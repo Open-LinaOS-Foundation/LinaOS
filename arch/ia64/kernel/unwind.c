@@ -6,7 +6,7 @@
  * 	- Change pt_regs_off() to make it less dependent on pt_regs structure.
  */
 /*
- * This file implements call frame unwind support for the Linux
+ * This file implements call frame unwind support for the LinaOS
  * kernel.  Parsing and processing the unwind information is
  * time-consuming, so this implementation translates the unwind
  * descriptors into unwind scripts.  These scripts are very simple
@@ -27,12 +27,12 @@
  *	o if both the unw.lock spinlock and a script's read-write lock must be
  *	  acquired, then the read-write lock must be acquired first.
  */
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/memblock.h>
+#include <linaos/elf.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 #include <asm/unwind.h>
 
@@ -42,7 +42,7 @@
 #include <asm/ptrace_offsets.h>
 #include <asm/rse.h>
 #include <asm/sections.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "entry.h"
 #include "unwind_i.h"
@@ -2208,7 +2208,7 @@ create_gate_table (void)
 	end = (struct unw_table_entry *) ((char *) start + punw->p_memsz);
 	size  = 0;
 
-	unw_add_unwind_table("linux-gate.so", segbase, 0, start, end);
+	unw_add_unwind_table("linaos-gate.so", segbase, 0, start, end);
 
 	for (entry = start; entry < end; ++entry)
 		size += 3*8 + 8 + 8*UNW_LENGTH(*(u64 *) (segbase + entry->info_offset));

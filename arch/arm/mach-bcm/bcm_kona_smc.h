@@ -14,7 +14,7 @@
 #ifndef BCM_KONA_SMC_H
 #define BCM_KONA_SMC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Broadcom Secure Service API service IDs, return codes, and exit codes */
 #define SSAPI_ENABLE_L2_CACHE		0x01000002

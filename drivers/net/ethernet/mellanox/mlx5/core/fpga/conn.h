@@ -34,8 +34,8 @@
 #ifndef __MLX5_FPGA_CONN_H__
 #define __MLX5_FPGA_CONN_H__
 
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/qp.h>
+#include <linaos/mlx5/cq.h>
+#include <linaos/mlx5/qp.h>
 
 #include "fpga/core.h"
 #include "fpga/sdk.h"

@@ -7,7 +7,7 @@
  *  -This is the more "natural" hand written assembler
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/entry.h>       /* For the SAVE_* macros */
 #include <asm/asm-offsets.h>
 

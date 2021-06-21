@@ -2,7 +2,7 @@
 #ifndef __ALPHA_MACHVEC_H
 #define __ALPHA_MACHVEC_H 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  *	This file gets pulled in by asm/io.h from user space. We don't
@@ -17,7 +17,7 @@
 struct task_struct;
 struct mm_struct;
 struct vm_area_struct;
-struct linux_hose_info;
+struct linaos_hose_info;
 struct pci_dev;
 struct pci_ops;
 struct pci_controller;

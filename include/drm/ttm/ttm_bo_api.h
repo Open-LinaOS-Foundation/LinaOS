@@ -34,13 +34,13 @@
 #include <drm/drm_gem.h>
 #include <drm/drm_hashtab.h>
 #include <drm/drm_vma_manager.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/bitmap.h>
-#include <linux/dma-resv.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
+#include <linaos/mm.h>
+#include <linaos/bitmap.h>
+#include <linaos/dma-resv.h>
 
 #include "ttm_resource.h"
 

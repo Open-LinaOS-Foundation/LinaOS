@@ -2,8 +2,8 @@
 #if !defined(_TRACE_SPUFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SPUFS_H
 
-#include <linux/tracepoint.h>
-#include <linux/stringify.h>
+#include <linaos/tracepoint.h>
+#include <linaos/stringify.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM spufs

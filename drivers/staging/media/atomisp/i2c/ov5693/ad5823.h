@@ -19,7 +19,7 @@
 #ifndef __AD5823_H__
 #define __AD5823_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define AD5823_VCM_ADDR	0x0c
 

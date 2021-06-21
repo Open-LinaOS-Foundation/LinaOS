@@ -10,18 +10,18 @@
  ******************************************************************************/
 
 #include <asm/page.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/usb/ch9.h>
-#include <linux/workqueue.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/workqueue.h>
 
 #include "usbatm.h"
 

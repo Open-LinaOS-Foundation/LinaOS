@@ -1,4 +1,4 @@
-/* radeon_prime.h -- Private header for radeon driver -*- linux-c -*-
+/* radeon_prime.h -- Private header for radeon driver -*- linaos-c -*-
  *
  * Copyright 2012 Advanced Micro Devices, Inc.
  *

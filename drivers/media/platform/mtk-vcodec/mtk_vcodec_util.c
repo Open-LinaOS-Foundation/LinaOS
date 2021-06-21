@@ -5,7 +5,7 @@
 *	Tiffany Lin <tiffany.lin@mediatek.com>
 */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "mtk_vcodec_drv.h"
 #include "mtk_vcodec_util.h"

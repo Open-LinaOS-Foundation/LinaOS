@@ -20,9 +20,9 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <sys/user.h>
-#include <linux/elf.h>
-#include <linux/types.h>
-#include <linux/auxvec.h>
+#include <linaos/elf.h>
+#include <linaos/types.h>
+#include <linaos/auxvec.h>
 #include "reg.h"
 #include "utils.h"
 

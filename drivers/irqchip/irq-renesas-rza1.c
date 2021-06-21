@@ -5,16 +5,16 @@
  * Copyright (C) 2019 Glider bvba
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 

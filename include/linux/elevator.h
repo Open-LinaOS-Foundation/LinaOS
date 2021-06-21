@@ -2,8 +2,8 @@
 #ifndef _LINUX_ELEVATOR_H
 #define _LINUX_ELEVATOR_H
 
-#include <linux/percpu.h>
-#include <linux/hashtable.h>
+#include <linaos/percpu.h>
+#include <linaos/hashtable.h>
 
 #ifdef CONFIG_BLOCK
 

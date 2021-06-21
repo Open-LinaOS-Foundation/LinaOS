@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/arcfb.c -- FB driver for Arc monochrome LCD board
+ * linaos/drivers/video/arcfb.c -- FB driver for Arc monochrome LCD board
  *
  * Copyright (C) 2005, Jaya Kumar <jayalk@intworks.biz>
  *
@@ -33,20 +33,20 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/arcfb.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/arcfb.h>
+#include <linaos/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define floor8(a) (a&(~0x07))
 #define floorXres(a,xres) (a&(~(xres - 1)))

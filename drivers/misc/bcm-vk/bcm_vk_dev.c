@@ -3,18 +3,18 @@
  * Copyright 2018-2020 Broadcom.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <uapi/linux/misc/bcm_vk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/fs.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/kref.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
+#include <uapi/linaos/misc/bcm_vk.h>
 
 #include "bcm_vk.h"
 

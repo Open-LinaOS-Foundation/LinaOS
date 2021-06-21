@@ -6,15 +6,15 @@
  * Author: Ulf Hansson <ulf.hansson@linaro.org>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500/ab8500-sysctrl.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/mfd/abx500/ab8500-sysctrl.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
 #include <dt-bindings/clock/ste-ab8500.h>
 #include "clk.h"
 

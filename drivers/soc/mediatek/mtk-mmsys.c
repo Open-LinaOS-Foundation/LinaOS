@@ -4,11 +4,11 @@
  * Author: James Liao <jamesjj.liao@mediatek.com>
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/soc/mediatek/mtk-mmsys.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/soc/mediatek/mtk-mmsys.h>
 
 #include "mtk-mmsys.h"
 #include "mt8167-mmsys.h"

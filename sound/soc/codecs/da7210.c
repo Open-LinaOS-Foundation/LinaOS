@@ -10,12 +10,12 @@
 //
 // Tested on SuperH Ecovec24 board with S16/S24 LE in 48KHz using I2S
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

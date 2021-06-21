@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc/mm/leon_m.c
+ *  linaos/arch/sparc/mm/leon_m.c
  *
  * Copyright (C) 2004 Konrad Eisele (eiselekd@web.de, konrad@gaisler.com) Gaisler Research
  * Copyright (C) 2009 Daniel Hellstrom (daniel@gaisler.com) Aeroflex Gaisler AB
@@ -10,8 +10,8 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
 #include <asm/asi.h>
 #include <asm/leon.h>
 #include <asm/tlbflush.h>

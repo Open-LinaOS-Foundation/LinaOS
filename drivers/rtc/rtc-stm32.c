@@ -4,16 +4,16 @@
  * Author:  Amelie Delaunay <amelie.delaunay@st.com>
  */
 
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/clk.h>
+#include <linaos/iopoll.h>
+#include <linaos/ioport.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
 
 #define DRIVER_NAME "stm32_rtc"
 

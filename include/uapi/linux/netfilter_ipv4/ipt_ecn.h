@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _IPT_ECN_H
 #define _IPT_ECN_H
 
-#include <linux/netfilter/xt_ecn.h>
+#include <linaos/netfilter/xt_ecn.h>
 #define ipt_ecn_info xt_ecn_info
 
 enum {

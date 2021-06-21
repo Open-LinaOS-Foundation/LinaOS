@@ -9,7 +9,7 @@
  * Copyright (c) Jay Lan, SGI. 2006
  *
  * Compile with
- *	gcc -I/usr/src/linux/include getdelays.c -o getdelays
+ *	gcc -I/usr/src/linaos/include getdelays.c -o getdelays
  */
 
 #include <stdio.h>
@@ -25,9 +25,9 @@
 #include <sys/wait.h>
 #include <signal.h>
 
-#include <linux/genetlink.h>
-#include <linux/taskstats.h>
-#include <linux/cgroupstats.h>
+#include <linaos/genetlink.h>
+#include <linaos/taskstats.h>
+#include <linaos/cgroupstats.h>
 
 /*
  * Generic macros for dealing with netlink sockets. Might be duplicated

@@ -11,10 +11,10 @@
  *                 Virtualized Server Adapter.
  * Copyright(c) 2002-2010 Exar Corp.
  ******************************************************************************/
-#include <linux/ethtool.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/etherdevice.h>
 
 #include "vxge-ethtool.h"
 

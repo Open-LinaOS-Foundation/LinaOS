@@ -2,7 +2,7 @@
 #ifndef _SCSI_SCSI_REQUEST_H
 #define _SCSI_SCSI_REQUEST_H
 
-#include <linux/blk-mq.h>
+#include <linaos/blk-mq.h>
 
 #define BLK_MAX_CDB	16
 

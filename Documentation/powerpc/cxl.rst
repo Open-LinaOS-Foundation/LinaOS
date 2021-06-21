@@ -39,7 +39,7 @@ Hardware overview
 
     The POWER8/9 chip has a Coherently Attached Processor Proxy (CAPP)
     unit which is part of the PCIe Host Bridge (PHB). This is managed
-    by Linux by calls into OPAL. Linux doesn't directly program the
+    by LinaOS by calls into OPAL. LinaOS doesn't directly program the
     CAPP.
 
     The FPGA (or coherently attached device) consists of two parts.

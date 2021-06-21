@@ -27,9 +27,9 @@
 #include "util/debug.h"
 #include "util/event.h"
 
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/zalloc.h>
 #include <sys/prctl.h>
 #include <sys/resource.h>
 #include <inttypes.h>
@@ -40,10 +40,10 @@
 #include <math.h>
 #include <api/fs/fs.h>
 #include <perf/cpumap.h>
-#include <linux/time64.h>
-#include <linux/err.h>
+#include <linaos/time64.h>
+#include <linaos/err.h>
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 
 #define PR_SET_NAME		15               /* Set process name */
 #define MAX_CPUS		4096
@@ -93,7 +93,7 @@ struct sched_atom {
 
 #define TASK_STATE_TO_CHAR_STR "RSDTtZXxKWP"
 
-/* task state bitmask, copied from include/linux/sched.h */
+/* task state bitmask, copied from include/linaos/sched.h */
 #define TASK_RUNNING		0
 #define TASK_INTERRUPTIBLE	1
 #define TASK_UNINTERRUPTIBLE	2
@@ -3445,8 +3445,8 @@ int cmd_sched(int argc, const char **argv)
 	OPT_PARENT(sched_options)
 	};
 	const struct option timehist_options[] = {
-	OPT_STRING('k', "vmlinux", &symbol_conf.vmlinux_name,
-		   "file", "vmlinux pathname"),
+	OPT_STRING('k', "vmlinaos", &symbol_conf.vmlinaos_name,
+		   "file", "vmlinaos pathname"),
 	OPT_STRING(0, "kallsyms", &symbol_conf.kallsyms_name,
 		   "file", "kallsyms pathname"),
 	OPT_BOOLEAN('g', "call-graph", &sched.show_callchain,

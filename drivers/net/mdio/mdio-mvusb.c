@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/usb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_mdio.h>
+#include <linaos/phy.h>
+#include <linaos/usb.h>
 
 #define USB_MARVELL_VID	0x1286
 

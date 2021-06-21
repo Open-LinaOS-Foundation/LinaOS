@@ -9,13 +9,13 @@
  * Copyright 2018-2020  Intel Corporation
  */
 
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/if_ether.h>
+#include <linaos/etherdevice.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <net/mac80211.h>
 #include <crypto/algapi.h>
 #include <asm/unaligned.h>

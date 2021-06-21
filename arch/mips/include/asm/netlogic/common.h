@@ -51,8 +51,8 @@
 #define BOOT_CPU_READY		2048
 
 #ifndef __ASSEMBLY__
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
+#include <linaos/cpumask.h>
+#include <linaos/spinlock.h>
 #include <asm/irq.h>
 #include <asm/mach-netlogic/multi-node.h>
 

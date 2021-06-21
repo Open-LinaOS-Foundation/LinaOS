@@ -5,8 +5,8 @@
  * Copyright (c) 2019-2020, NXP
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 #include <dt-bindings/interconnect/imx8mn.h>
 
 #include "imx.h"

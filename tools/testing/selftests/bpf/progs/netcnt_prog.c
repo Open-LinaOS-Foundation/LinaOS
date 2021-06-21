@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bpf.h>
-#include <linux/version.h>
+#include <linaos/bpf.h>
+#include <linaos/version.h>
 
 #include <bpf/bpf_helpers.h>
 #include "netcnt_common.h"

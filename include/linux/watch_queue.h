@@ -10,9 +10,9 @@
 #ifndef _LINUX_WATCH_QUEUE_H
 #define _LINUX_WATCH_QUEUE_H
 
-#include <uapi/linux/watch_queue.h>
-#include <linux/kref.h>
-#include <linux/rcupdate.h>
+#include <uapi/linaos/watch_queue.h>
+#include <linaos/kref.h>
+#include <linaos/rcupdate.h>
 
 #ifdef CONFIG_WATCH_QUEUE
 

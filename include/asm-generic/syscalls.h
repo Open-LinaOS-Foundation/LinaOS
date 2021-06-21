@@ -2,8 +2,8 @@
 #ifndef __ASM_GENERIC_SYSCALLS_H
 #define __ASM_GENERIC_SYSCALLS_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
+#include <linaos/compiler.h>
+#include <linaos/linkage.h>
 
 /*
  * Calling conventions for these system calls can differ, so

@@ -2,7 +2,7 @@
 #ifndef _CRYPTO_SHA256_GLUE_H
 #define _CRYPTO_SHA256_GLUE_H
 
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 
 extern struct shash_alg sha256_neon_algs[2];
 

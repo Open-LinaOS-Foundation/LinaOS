@@ -6,11 +6,11 @@
  *
  *  Copyright (C) 2005  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/clkdev.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 

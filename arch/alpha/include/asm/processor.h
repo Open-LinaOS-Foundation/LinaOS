@@ -8,7 +8,7 @@
 #ifndef __ASM_ALPHA_PROCESSOR_H
 #define __ASM_ALPHA_PROCESSOR_H
 
-#include <linux/personality.h>	/* for ADDR_LIMIT_32BIT */
+#include <linaos/personality.h>	/* for ADDR_LIMIT_32BIT */
 
 /*
  * We have a 42-bit user address space: 4TB user VM...

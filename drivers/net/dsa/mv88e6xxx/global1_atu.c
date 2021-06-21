@@ -3,12 +3,12 @@
  * Marvell 88E6xxx Address Translation Unit (ATU) support
  *
  * Copyright (c) 2008 Marvell Semiconductor
- * Copyright (c) 2017 Savoir-faire Linux, Inc.
+ * Copyright (c) 2017 Savoir-faire LinaOS, Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <linaos/bitfield.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
 
 #include "chip.h"
 #include "global1.h"

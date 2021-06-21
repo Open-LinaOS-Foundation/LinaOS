@@ -8,7 +8,7 @@
 
 #include <uapi/asm/ptrace.h>
 #include <asm/csr.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef __ASSEMBLY__
 

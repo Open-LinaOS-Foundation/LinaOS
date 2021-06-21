@@ -9,8 +9,8 @@
  */
 
 #define FSCACHE_DEBUG_LEVEL COOKIE
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include "internal.h"
 
 struct kmem_cache *fscache_cookie_jar;

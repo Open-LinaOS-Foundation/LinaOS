@@ -50,49 +50,49 @@
 
 		key-3 {
 			gpios = <&gpio5 10 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_3>;
+			linaos,code = <KEY_3>;
 			label = "SW3";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-4 {
 			gpios = <&gpio5 11 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_4>;
+			linaos,code = <KEY_4>;
 			label = "SW4";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-6 {
 			gpios = <&gpio5 12 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_6>;
+			linaos,code = <KEY_6>;
 			label = "SW6";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-a {
 			gpios = <&gpio3 9 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_A>;
+			linaos,code = <KEY_A>;
 			label = "SW12-1";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-b {
 			gpios = <&gpio3 10 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_B>;
+			linaos,code = <KEY_B>;
 			label = "SW12-2";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-c {
 			gpios = <&gpio3 11 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_C>;
+			linaos,code = <KEY_C>;
 			label = "SW12-3";
 			wakeup-source;
 			debounce-interval = <20>;
 		};
 		key-d {
 			gpios = <&gpio3 12 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_D>;
+			linaos,code = <KEY_D>;
 			label = "SW12-4";
 			wakeup-source;
 			debounce-interval = <20>;

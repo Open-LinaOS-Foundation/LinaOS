@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/ttc_dkb.c
+ *  linaos/arch/arm/mach-mmp/ttc_dkb.c
  *
  *  Support for the Marvell PXA910-based TTC_DKB Development Platform.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/onenand.h>
-#include <linux/interrupt.h>
-#include <linux/platform_data/pca953x.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/mfd/88pm860x.h>
-#include <linux/platform_data/mv_usb.h>
-#include <linux/spi/spi.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/onenand.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_data/pca953x.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/mfd/88pm860x.h>
+#include <linaos/platform_data/mv_usb.h>
+#include <linaos/spi/spi.h>
+#include <linaos/delay.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

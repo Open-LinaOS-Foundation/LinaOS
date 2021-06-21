@@ -10,19 +10,19 @@
  *  Based on drivers/serial/8250.c by Russell King.
  */
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/pm_runtime.h>
 
 #include "8250.h"
 

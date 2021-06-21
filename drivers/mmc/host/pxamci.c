@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/pxa.c - PXA MMCI driver
+ *  linaos/drivers/mmc/host/pxa.c - PXA MMCI driver
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *
@@ -13,29 +13,29 @@
  *	1 and 3 byte data transfers not supported
  *	max block length up to 1023
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/io.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gfp.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/slot-gpio.h>
+#include <linaos/io.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gfp.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 
 #include "pxamci.h"
 

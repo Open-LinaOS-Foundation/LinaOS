@@ -5,15 +5,15 @@
  * Copyright (C) 2017-2019 Cadence Design Systems Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

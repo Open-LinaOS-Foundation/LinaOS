@@ -9,28 +9,28 @@
  *    Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/perf_event.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/compat.h>
-#include <linux/smp.h>
-#include <linux/kdebug.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/extable.h>
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/hugetlb.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/perf_event.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/compat.h>
+#include <linaos/smp.h>
+#include <linaos/kdebug.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/extable.h>
+#include <linaos/hardirq.h>
+#include <linaos/kprobes.h>
+#include <linaos/uaccess.h>
+#include <linaos/hugetlb.h>
 #include <asm/asm-offsets.h>
 #include <asm/diag.h>
 #include <asm/gmap.h>
@@ -636,7 +636,7 @@ static LIST_HEAD(pfault_list);
 #define PF_COMPLETE	0x0080
 
 /*
- * The mechanism of our pfault code: if Linux is running as guest, runs a user
+ * The mechanism of our pfault code: if LinaOS is running as guest, runs a user
  * space process and the user space process accesses a page that the host has
  * paged out we get a pfault interrupt.
  *

@@ -11,8 +11,8 @@ The slides to this talk are available from:
 http://www.cs.columbia.edu/~nahum/w6998/papers/ols2006-hrtimers-slides.pdf
 
 The slides contain five figures (pages 2, 15, 18, 20, 22), which illustrate the
-changes in the time(r) related Linux subsystems. Figure #1 (p. 2) shows the
-design of the Linux time(r) system before hrtimers and other building blocks
+changes in the time(r) related LinaOS subsystems. Figure #1 (p. 2) shows the
+design of the LinaOS time(r) system before hrtimers and other building blocks
 got merged into mainline.
 
 Note: the paper and the slides are talking about "clock event source", while we
@@ -58,7 +58,7 @@ merged into the 2.6.18 kernel.
 Further information about the Generic Time Of Day framework is available in the
 OLS 2005 Proceedings Volume 1:
 
-	http://www.linuxsymposium.org/2005/linuxsymposium_procv1.pdf
+	http://www.linaossymposium.org/2005/linaossymposium_procv1.pdf
 
 The paper "We Are Not Getting Any Younger: A New Approach to Time and
 Timers" was written by J. Stultz, D.V. Hart, & N. Aravamudan.
@@ -97,7 +97,7 @@ clock event management decides, by using the specified property parameters, the
 set of system functions a clock event device will be used to support. This
 includes the distinction of per-CPU and per-system global event devices.
 
-System-level global event devices are used for the Linux periodic tick. Per-CPU
+System-level global event devices are used for the LinaOS periodic tick. Per-CPU
 event devices are used to provide local CPU functionality such as process
 accounting, profiling, and high resolution timers.
 

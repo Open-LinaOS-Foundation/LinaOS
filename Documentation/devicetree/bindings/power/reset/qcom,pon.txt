@@ -36,7 +36,7 @@ Example:
 			interrupts = <0x0 0x8 0 IRQ_TYPE_EDGE_BOTH>;
 			debounce = <15625>;
 			bias-pull-up;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 		};
 
 		resin {
@@ -44,6 +44,6 @@ Example:
 			interrupts = <0x0 0x8 1 IRQ_TYPE_EDGE_BOTH>;
 			debounce = <15625>;
 			bias-pull-up;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 	};

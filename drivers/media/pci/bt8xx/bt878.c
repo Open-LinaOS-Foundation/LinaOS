@@ -10,18 +10,18 @@
  * (c) 1999,2000 Gerd Knorr <kraxel@goldbach.in-berlin.de>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/pgtable.h>
 #include <asm/io.h>
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 #include <asm/page.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/kmod.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

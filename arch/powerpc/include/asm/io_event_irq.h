@@ -6,8 +6,8 @@
 #ifndef _ASM_POWERPC_IO_EVENT_IRQ_H
 #define _ASM_POWERPC_IO_EVENT_IRQ_H
 
-#include <linux/types.h>
-#include <linux/notifier.h>
+#include <linaos/types.h>
+#include <linaos/notifier.h>
 
 #define PSERIES_IOEI_RPC_MAX_LEN 216
 

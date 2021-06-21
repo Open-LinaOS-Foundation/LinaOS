@@ -5,8 +5,8 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 
 #include <net/sock.h>
 #include <net/af_rxrpc.h>

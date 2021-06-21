@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * PCI Bus Services, see include/linux/pci.h for further explanation.
+ * PCI Bus Services, see include/linaos/pci.h for further explanation.
  *
  * Copyright 1993 -- 1997 Drew Eckhardt, Frederic Potter,
  * David Mosberger-Tang
@@ -8,29 +8,29 @@
  * Copyright 1997 -- 2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/log2.h>
-#include <linux/logic_pio.h>
-#include <linux/pm_wakeup.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pci_hotplug.h>
-#include <linux/vmalloc.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/init.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/pci.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/log2.h>
+#include <linaos/logic_pio.h>
+#include <linaos/pm_wakeup.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/vmalloc.h>
 #include <asm/dma.h>
-#include <linux/aer.h>
+#include <linaos/aer.h>
 #include "pci.h"
 
 DEFINE_MUTEX(pci_slot_mutex);
@@ -2852,7 +2852,7 @@ static const struct dmi_system_id bridge_d3_blacklist[] = {
 	{
 		/*
 		 * Gigabyte X299 root port is not marked as hotplug capable
-		 * which allows Linux to power manage it.  However, this
+		 * which allows LinaOS to power manage it.  However, this
 		 * confuses the BIOS SMI handler so don't power manage root
 		 * ports on that system.
 		 */
@@ -6536,7 +6536,7 @@ static int of_pci_bus_find_domain_nr(struct device *parent)
 	} else {
 		if (parent)
 			pr_err("Node %pOF has ", parent->of_node);
-		pr_err("Inconsistent \"linux,pci-domain\" property in DT\n");
+		pr_err("Inconsistent \"linaos,pci-domain\" property in DT\n");
 		domain = -1;
 	}
 

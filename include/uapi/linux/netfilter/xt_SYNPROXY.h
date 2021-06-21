@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_SYNPROXY_H
 #define _XT_SYNPROXY_H
 
-#include <linux/netfilter/nf_synproxy.h>
+#include <linaos/netfilter/nf_synproxy.h>
 
 #define XT_SYNPROXY_OPT_MSS		NF_SYNPROXY_OPT_MSS
 #define XT_SYNPROXY_OPT_WSCALE		NF_SYNPROXY_OPT_WSCALE

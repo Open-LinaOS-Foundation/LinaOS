@@ -12,8 +12,8 @@
 
 #include "smscoreapi.h"
 
-#include <linux/types.h>
-#include <linux/input.h>
+#include <linaos/types.h>
+#include <linaos/input.h>
 
 #include "smsir.h"
 #include "sms-cards.h"

@@ -8,8 +8,8 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/mm.h>
-#include <linux/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/ioport.h>
 
 /*
  * devmem_is_allowed() checks to see if /dev/mem access to a certain address

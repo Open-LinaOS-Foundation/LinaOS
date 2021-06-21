@@ -259,4 +259,4 @@ to be defined prior to calling powercap_register_zone() to register that zone.
 
 To Free a power zone call powercap_unregister_zone().
 To free a control type object call powercap_unregister_control_type().
-Detailed API can be generated using kernel-doc on include/linux/powercap.h.
+Detailed API can be generated using kernel-doc on include/linaos/powercap.h.

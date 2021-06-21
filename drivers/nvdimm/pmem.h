@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef __NVDIMM_PMEM_H__
 #define __NVDIMM_PMEM_H__
-#include <linux/page-flags.h>
-#include <linux/badblocks.h>
-#include <linux/types.h>
-#include <linux/pfn_t.h>
-#include <linux/fs.h>
+#include <linaos/page-flags.h>
+#include <linaos/badblocks.h>
+#include <linaos/types.h>
+#include <linaos/pfn_t.h>
+#include <linaos/fs.h>
 
 /* this definition is in it's own header for tools/testing/nvdimm to consume */
 struct pmem_device {

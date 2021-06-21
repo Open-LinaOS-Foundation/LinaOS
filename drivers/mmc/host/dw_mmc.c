@@ -7,34 +7,34 @@
  * Copyright (C) 2009, 2010 Imagination Technologies Ltd.
  */
 
-#include <linux/blkdev.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/bitops.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linaos/blkdev.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sd.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/bitops.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/mmc/slot-gpio.h>
 
 #include "dw_mmc.h"
 

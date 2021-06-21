@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Data gathering module for Linux-VM Monitor Stream, Stage 1.
+ * Data gathering module for LinaOS-VM Monitor Stream, Stage 1.
  * Collects accumulated network statistics (Packets received/transmitted,
  * dropped, errors, ...).
  *
@@ -9,11 +9,11 @@
  * Author: Gerald Schaefer <gerald.schaefer@de.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/netdevice.h>
 #include <net/net_namespace.h>
 
 #include "appldata.h"
@@ -31,7 +31,7 @@ struct appldata_net_sum_data {
 	u32 sync_count_1;	/* after VM collected the record data, */
 	u32 sync_count_2;	/* sync_count_1 and sync_count_2 should be the
 				   same. If not, the record has been updated on
-				   the Linux side while VM was collecting the
+				   the LinaOS side while VM was collecting the
 				   (possibly corrupt) data */
 
 	u32 nr_interfaces;	/* nr. of network interfaces being monitored */
@@ -45,8 +45,8 @@ struct appldata_net_sum_data {
 	u64 tx_bytes;		/* total bytes transmitted       */
 	u64 rx_errors;		/* bad packets received          */
 	u64 tx_errors;		/* packet transmit problems      */
-	u64 rx_dropped;		/* no space in linux buffers     */
-	u64 tx_dropped;		/* no space available in linux   */
+	u64 rx_dropped;		/* no space in linaos buffers     */
+	u64 tx_dropped;		/* no space available in linaos   */
 	u64 collisions;		/* collisions while transmitting */
 } __packed;
 
@@ -160,4 +160,4 @@ module_exit(appldata_net_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Gerald Schaefer");
-MODULE_DESCRIPTION("Linux-VM Monitor Stream, accumulated network statistics");
+MODULE_DESCRIPTION("LinaOS-VM Monitor Stream, accumulated network statistics");

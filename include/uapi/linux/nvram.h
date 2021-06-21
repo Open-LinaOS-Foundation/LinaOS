@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_NVRAM_H
 #define _UAPI_LINUX_NVRAM_H
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 /* /dev/nvram ioctls */
 #define NVRAM_INIT	_IO('p', 0x40) /* initialize NVRAM and set checksum */

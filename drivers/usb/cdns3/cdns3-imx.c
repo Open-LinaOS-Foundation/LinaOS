@@ -5,17 +5,17 @@
  * Copyright (C) 2019 NXP
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/of_platform.h>
+#include <linaos/iopoll.h>
+#include <linaos/pm_runtime.h>
 #include "core.h"
 
 #define USB3_CORE_CTRL1    0x00

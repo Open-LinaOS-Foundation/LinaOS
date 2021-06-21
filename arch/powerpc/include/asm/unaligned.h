@@ -7,8 +7,8 @@
 /*
  * The PowerPC can do unaligned accesses itself based on its endian mode.
  */
-#include <linux/unaligned/access_ok.h>
-#include <linux/unaligned/generic.h>
+#include <linaos/unaligned/access_ok.h>
+#include <linaos/unaligned/generic.h>
 
 #ifdef __LITTLE_ENDIAN__
 #define get_unaligned	__get_unaligned_le

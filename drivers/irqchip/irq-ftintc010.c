@@ -7,17 +7,17 @@
  * Copyright (C) 2001-2006 Storlink, Corp.
  * Copyright (C) 2008-2009 Paulius Zaleckas <paulius.zaleckas@gmail.com>
  */
-#include <linux/bitops.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/versatile-fpga.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/cpu.h>
+#include <linaos/bitops.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/versatile-fpga.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/cpu.h>
 
 #include <asm/exception.h>
 #include <asm/mach/irq.h>

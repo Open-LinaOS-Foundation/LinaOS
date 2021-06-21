@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <stdint.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/stddef.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/pkt_cls.h>
-#include <linux/tcp.h>
+#include <linaos/bpf.h>
+#include <linaos/if_ether.h>
+#include <linaos/stddef.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/tcp.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

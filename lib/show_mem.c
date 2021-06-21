@@ -5,8 +5,8 @@
  * Copyright (C) 2008 Johannes Weiner <hannes@saeurebad.de>
  */
 
-#include <linux/mm.h>
-#include <linux/cma.h>
+#include <linaos/mm.h>
+#include <linaos/cma.h>
 
 void show_mem(unsigned int filter, nodemask_t *nodemask)
 {

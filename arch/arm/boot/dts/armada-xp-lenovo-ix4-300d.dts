@@ -141,25 +141,25 @@
 
 		power-button {
 			label = "Power Button";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio1 12 GPIO_ACTIVE_HIGH>;
 		};
 
 		reset-button {
 			label = "Reset Button";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio1 13 GPIO_ACTIVE_LOW>;
 		};
 
 		select-button {
 			label = "Select Button";
-			linux,code = <BTN_SELECT>;
+			linaos,code = <BTN_SELECT>;
 			gpios = <&gpio1 9 GPIO_ACTIVE_LOW>;
 		};
 
 		scroll-button {
 			label = "Scroll Button";
-			linux,code = <KEY_SCROLLDOWN>;
+			linaos,code = <KEY_SCROLLDOWN>;
 			gpios = <&gpio1 10 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -199,7 +199,7 @@
 			label = "ix4-300d:power:white";
 			gpios = <&gpio_spi 1 GPIO_ACTIVE_LOW>;
 			/* init blinking while booting */
-			linux,default-trigger = "timer";
+			linaos,default-trigger = "timer";
 			default-state = "on";
 		};
 

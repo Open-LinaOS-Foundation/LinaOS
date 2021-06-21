@@ -8,7 +8,7 @@
 #ifndef __LINUX_REGULATOR_DA9211_H
 #define __LINUX_REGULATOR_DA9211_H
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
 #define DA9211_MAX_REGULATORS	2
 

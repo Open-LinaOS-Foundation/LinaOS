@@ -34,7 +34,7 @@
 		sd_card_led: led-3 {
 			label = "sd_card_led";
 			gpios = <&gpio0 RK_PD2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 	};
 

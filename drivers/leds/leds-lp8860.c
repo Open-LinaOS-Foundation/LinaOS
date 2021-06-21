@@ -7,17 +7,17 @@
  * Author: Dan Murphy <dmurphy@ti.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/leds.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/slab.h>
 
 #define LP8860_DISP_CL1_BRT_MSB		0x00
 #define LP8860_DISP_CL1_BRT_LSB		0x01

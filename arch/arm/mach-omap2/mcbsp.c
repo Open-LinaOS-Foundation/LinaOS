@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/mcbsp.c
+ * linaos/arch/arm/mach-omap2/mcbsp.c
  *
  * Copyright (C) 2008 Instituto Nokia de Tecnologia
  * Contact: Eduardo Valentin <eduardo.valentin@indt.org.br>
  *
  * Multichannel mode not supported.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/platform_data/asoc-ti-mcbsp.h>
+#include <linaos/pm_runtime.h>
 
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 
 #include "soc.h"
 #include "omap_device.h"

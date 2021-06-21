@@ -7,15 +7,15 @@ Writing an ALSA Driver
 Preface
 =======
 
-This document describes how to write an `ALSA (Advanced Linux Sound
+This document describes how to write an `ALSA (Advanced LinaOS Sound
 Architecture) <http://www.alsa-project.org/>`__ driver. The document
 focuses mainly on PCI soundcards. In the case of other device types, the
 API might be different, too. However, at least the ALSA kernel API is
 consistent, and therefore it would be still a bit help for writing them.
 
 This document targets people who already have enough C language skills
-and have basic linux kernel programming knowledge. This document doesn't
-explain the general topic of linux kernel coding and doesn't cover
+and have basic linaos kernel programming knowledge. This document doesn't
+explain the general topic of linaos kernel coding and doesn't cover
 low-level driver implementation details. It only describes the standard
 way to write a PCI sound driver on ALSA.
 
@@ -119,7 +119,7 @@ i2c directory
 
 This contains the ALSA i2c components.
 
-Although there is a standard i2c layer on Linux, ALSA has its own i2c
+Although there is a standard i2c layer on LinaOS, ALSA has its own i2c
 code for some cards, because the soundcard needs only a simple operation
 and the standard i2c API is too complicated for such a purpose.
 
@@ -214,9 +214,9 @@ to details explained in the following section.
 
 ::
 
-      #include <linux/init.h>
-      #include <linux/pci.h>
-      #include <linux/slab.h>
+      #include <linaos/init.h>
+      #include <linaos/pci.h>
+      #include <linaos/slab.h>
       #include <sound/core.h>
       #include <sound/initval.h>
 
@@ -508,9 +508,9 @@ necessary.
 
 ::
 
-  #include <linux/init.h>
-  #include <linux/pci.h>
-  #include <linux/slab.h>
+  #include <linaos/init.h>
+  #include <linaos/pci.h>
+  #include <linaos/slab.h>
   #include <sound/core.h>
   #include <sound/initval.h>
 
@@ -518,10 +518,10 @@ where the last one is necessary only when module options are defined
 in the source file. If the code is split into several files, the files
 without module options don't need them.
 
-In addition to these headers, you'll need ``<linux/interrupt.h>`` for
-interrupt handling, and ``<linux/io.h>`` for I/O access. If you use the
+In addition to these headers, you'll need ``<linaos/interrupt.h>`` for
+interrupt handling, and ``<linaos/io.h>`` for I/O access. If you use the
 :c:func:`mdelay()` or :c:func:`udelay()` functions, you'll need
-to include ``<linux/delay.h>`` too.
+to include ``<linaos/delay.h>`` too.
 
 The ALSA interfaces like the PCM and control APIs are defined in other
 ``<sound/xxx.h>`` header files. They have to be included after
@@ -1173,7 +1173,7 @@ access to some functions related with hw_param.
 
 Each card device can have up to four pcm instances. A pcm instance
 corresponds to a pcm device file. The limitation of number of instances
-comes only from the available bit size of the Linux's device numbers.
+comes only from the available bit size of the LinaOS's device numbers.
 Once when 64bit device number is used, we'll have more pcm instances
 available.
 
@@ -2279,7 +2279,7 @@ Atomicity
 ---------
 
 One of the most important (and thus difficult to debug) problems in
-kernel programming are race conditions. In the Linux kernel, they are
+kernel programming are race conditions. In the LinaOS kernel, they are
 usually avoided via spin-locks, mutexes or semaphores. In general, if a
 race condition can happen in an interrupt handler, it has to be managed
 atomically, and you have to use a spinlock to protect the critical
@@ -4187,7 +4187,7 @@ alsa-driver tree, ``sound/pci`` directory in the case of PCI
 cards.
 
 In the following sections, the driver code is supposed to be put into
-Linux kernel tree. The two cases are covered: a driver consisting of a
+LinaOS kernel tree. The two cases are covered: a driver consisting of a
 single source file and one consisting of several source files.
 
 Driver with A Single Source File

@@ -458,15 +458,15 @@
 		volume-up {
 			label = "volume_up";
 			gpios = <&pm8941_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_VOLUMEUP>;
 		};
 
 		volume-down {
 			label = "volume_down";
 			gpios = <&pm8941_gpios 3 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,input-type = <1>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 		};
 	};
 

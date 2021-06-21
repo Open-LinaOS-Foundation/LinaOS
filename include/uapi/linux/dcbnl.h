@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (c) 2008-2011, Intel Corporation.
  *
@@ -21,7 +21,7 @@
 #ifndef __LINUX_DCBNL_H__
 #define __LINUX_DCBNL_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* IEEE 802.1Qaz std supported values */
 #define IEEE_8021QAZ_MAX_TCS	8

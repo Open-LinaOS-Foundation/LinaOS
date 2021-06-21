@@ -17,9 +17,9 @@
 
 #ifdef CONFIG_KPROBES
 
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/percpu.h>
 
 #define __ARCH_WANT_KPROBES_INSN_SLOT
 #define MAX_INSN_SIZE   2	/* last half is for kprobe-booster */

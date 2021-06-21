@@ -21,9 +21,9 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 #include "atom.h"
 #include "ppatomctrl.h"
 #include "atombios.h"

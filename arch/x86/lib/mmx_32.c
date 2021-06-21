@@ -17,11 +17,11 @@
  *		Improved for non-engineering-sample Athlons
  *
  */
-#include <linux/hardirq.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <linaos/hardirq.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
 
 #include <asm/fpu/api.h>
 #include <asm/asm.h>

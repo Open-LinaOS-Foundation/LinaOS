@@ -5,23 +5,23 @@
  * Copyright (C) 2011-2012 Jean-Christophe PLAGNIOL-VILLARD <plagnioj@jcrosoft.com>
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
 /* Since we request GPIOs from ourself */
-#include <linux/pinctrl/consumer.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include <soc/at91/pm.h>
 
@@ -38,7 +38,7 @@ struct at91_gpio_chip {
 	struct pinctrl_gpio_range range;
 	struct at91_gpio_chip	*next;		/* Bank sharing same clock */
 	int			pioc_hwirq;	/* PIO bank interrupt identifier on AIC */
-	int			pioc_virq;	/* PIO bank Linux virtual interrupt */
+	int			pioc_virq;	/* PIO bank LinaOS virtual interrupt */
 	int			pioc_idx;	/* PIO bank index */
 	void __iomem		*regbase;	/* PIO bank virtual address */
 	struct clk		*clock;		/* associated clock */

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: LGPL-2.1
-#include <linux/futex.h>
+#include <linaos/futex.h>
 
 #ifndef FUTEX_WAIT_BITSET
 #define FUTEX_WAIT_BITSET	  9

@@ -6,10 +6,10 @@
 
 #include "gve.h"
 #include "gve_adminq.h"
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/vmalloc.h>
-#include <linux/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/vmalloc.h>
+#include <linaos/skbuff.h>
 
 static inline void gve_tx_put_doorbell(struct gve_priv *priv,
 				       struct gve_queue_resources *q_resources,

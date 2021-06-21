@@ -18,13 +18,13 @@ To build the kernel with current defaults::
 	make oldconfig
 	make zImage
 
-The resulting kernel image should be available in linux/arch/arm/boot/zImage.
+The resulting kernel image should be available in linaos/arch/arm/boot/zImage.
 
 
 Installing a bootloader
 -----------------------
 
-A couple of bootloaders able to boot Linux on Assabet are available:
+A couple of bootloaders able to boot LinaOS on Assabet are available:
 
 BLOB (http://www.lartmaker.nl/lartware/blob/)
 
@@ -48,13 +48,13 @@ RedBoot (http://sources.redhat.com/redboot/)
 RedBoot is currently the recommended choice since it's the only one to have
 networking support, and is the most actively maintained.
 
-Brief examples on how to boot Linux with RedBoot are shown below.  But first
+Brief examples on how to boot LinaOS with RedBoot are shown below.  But first
 you need to have RedBoot installed in your flash memory.  A known to work
 precompiled RedBoot binary is available from the following location:
 
 - ftp://ftp.netwinder.org/users/n/nico/
-- ftp://ftp.arm.linux.org.uk/pub/linux/arm/people/nico/
-- ftp://ftp.handhelds.org/pub/linux/arm/sa-1100-patches/
+- ftp://ftp.arm.linaos.org.uk/pub/linaos/arm/people/nico/
+- ftp://ftp.handhelds.org/pub/linaos/arm/sa-1100-patches/
 
 Look for redboot-assabet*.tgz.  Some installation infos are provided in
 redboot-assabet*.txt.
@@ -96,7 +96,7 @@ If you rather want to use Y-Modem upload over the serial port::
 
 To write it to flash::
 
-	fis create "Linux kernel" -b 0x100000 -l 0xc0000
+	fis create "LinaOS kernel" -b 0x100000 -l 0xc0000
 
 
 Booting the kernel
@@ -112,7 +112,7 @@ by '-y ymodem'.
 
 Now the kernel can be retrieved from flash like this::
 
-	fis load "Linux kernel"
+	fis load "LinaOS kernel"
 
 or loaded as described previously.  To boot the kernel::
 
@@ -128,8 +128,8 @@ Using JFFS2
 Using JFFS2 (the Second Journalling Flash File System) is probably the most
 convenient way to store a writable filesystem into flash.  JFFS2 is used in
 conjunction with the MTD layer which is responsible for low-level flash
-management.  More information on the Linux MTD can be found on-line at:
-http://www.linux-mtd.infradead.org/.  A JFFS howto with some infos about
+management.  More information on the LinaOS MTD can be found on-line at:
+http://www.linaos-mtd.infradead.org/.  A JFFS howto with some infos about
 creating JFFS/JFFS2 images is available from the same site.
 
 For instance, a sample JFFS2 image can be retrieved from the same FTP sites
@@ -170,7 +170,7 @@ the remaining flash space as well.  To write it::
 	fis write -b 0x100000 -l 0x277424 -f 0x500E0000
 	fis create "JFFS2" -n -f 0x500E0000 -l 0x2e0000
 
-Now the filesystem is associated to a MTD "partition" once Linux has discovered
+Now the filesystem is associated to a MTD "partition" once LinaOS has discovered
 what they are in the boot process.  From Redboot, the 'fis list' command
 displays them::
 
@@ -179,33 +179,33 @@ displays them::
 	RedBoot           0x50000000  0x50000000  0x00020000  0x00000000
 	RedBoot config    0x503C0000  0x503C0000  0x00020000  0x00000000
 	FIS directory     0x503E0000  0x503E0000  0x00020000  0x00000000
-	Linux kernel      0x50020000  0x00100000  0x000C0000  0x00000000
+	LinaOS kernel      0x50020000  0x00100000  0x000C0000  0x00000000
 	JFFS2             0x500E0000  0x500E0000  0x002E0000  0x00000000
 
-However Linux should display something like::
+However LinaOS should display something like::
 
 	SA1100 flash: probing 32-bit flash bus
 	SA1100 flash: Found 2 x16 devices at 0x0 in 32-bit mode
 	Using RedBoot partition definition
 	Creating 5 MTD partitions on "SA1100 flash":
 	0x00000000-0x00020000 : "RedBoot"
-	0x00020000-0x000e0000 : "Linux kernel"
+	0x00020000-0x000e0000 : "LinaOS kernel"
 	0x000e0000-0x003c0000 : "JFFS2"
 	0x003c0000-0x003e0000 : "RedBoot config"
 	0x003e0000-0x00400000 : "FIS directory"
 
 What's important here is the position of the partition we are interested in,
-which is the third one.  Within Linux, this correspond to /dev/mtdblock2.
-Therefore to boot Linux with the kernel and its root filesystem in flash, we
+which is the third one.  Within LinaOS, this correspond to /dev/mtdblock2.
+Therefore to boot LinaOS with the kernel and its root filesystem in flash, we
 need this RedBoot command::
 
-	fis load "Linux kernel"
+	fis load "LinaOS kernel"
 	exec -b 0x100000 -l 0xc0000 -c "root=/dev/mtdblock2"
 
 Of course other filesystems than JFFS might be used, like cramfs for example.
 You might want to boot with a root filesystem over NFS, etc.  It is also
 possible, and sometimes more convenient, to flash a filesystem directly from
-within Linux while booted from a ramdisk or NFS.  The Linux MTD repository has
+within LinaOS while booted from a ramdisk or NFS.  The LinaOS MTD repository has
 many tools to deal with flash memory as well, to erase it for example.  JFFS2
 can then be mounted directly on a freshly erased partition and files can be
 copied over directly.  Etc...
@@ -218,7 +218,7 @@ All the commands above aren't so useful if they have to be typed in every
 time the Assabet is rebooted.  Therefore it's possible to automate the boot
 process using RedBoot's scripting capability.
 
-For example, I use this to boot Linux with both the kernel and the ramdisk
+For example, I use this to boot LinaOS with both the kernel and the ramdisk
 images retrieved from a TFTP server on the network::
 
 	RedBoot> fconfig

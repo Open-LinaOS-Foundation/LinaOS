@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/amba/bus.h
+ *  linaos/include/amba/bus.h
  *
  *  This device type deals with ARM PrimeCells and anything else that
  *  presents a proper CID (0xB105F00D) at the end of the I/O register
@@ -11,12 +11,12 @@
 #ifndef ASMARM_AMBA_H
 #define ASMARM_AMBA_H
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/err.h>
-#include <linux/resource.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/err.h>
+#include <linaos/resource.h>
+#include <linaos/regulator/consumer.h>
 
 #define AMBA_NR_IRQS	9
 #define AMBA_CID	0xb105f00d

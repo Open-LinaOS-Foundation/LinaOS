@@ -34,7 +34,7 @@
 #ifndef USNIC_IB_QP_GRP_H_
 #define USNIC_IB_QP_GRP_H_
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #include <rdma/ib_verbs.h>
 
 #include "usnic_ib.h"

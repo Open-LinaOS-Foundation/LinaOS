@@ -12,9 +12,9 @@
 // of what this PHY is able to support. For example, I only assume it
 // supports a single lane Serdes connection, but it may be that the PHY
 // is able to support more than that.
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
 
 enum {
 	MDIO_AN_C22 = 0xffe0,

@@ -5,14 +5,14 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/i2c.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/i2c.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

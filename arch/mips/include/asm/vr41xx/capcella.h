@@ -2,7 +2,7 @@
 /*
  *  capcella.h, Include file for ZAO Networks Capcella.
  *
- *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2002-2004  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef __ZAO_CAPCELLA_H
 #define __ZAO_CAPCELLA_H

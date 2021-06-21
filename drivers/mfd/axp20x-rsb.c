@@ -13,14 +13,14 @@
  * Author: Chen-Yu Tsai <wens@csie.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/err.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/sunxi-rsb.h>
+#include <linaos/acpi.h>
+#include <linaos/err.h>
+#include <linaos/mfd/axp20x.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/sunxi-rsb.h>
 
 static int axp20x_rsb_probe(struct sunxi_rsb_device *rdev)
 {

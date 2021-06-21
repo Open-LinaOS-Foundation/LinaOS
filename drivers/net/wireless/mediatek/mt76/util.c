@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Felix Fietkau <nbd@nbd.name>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "mt76.h"
 
 bool __mt76_poll(struct mt76_dev *dev, u32 offset, u32 mask, u32 val,

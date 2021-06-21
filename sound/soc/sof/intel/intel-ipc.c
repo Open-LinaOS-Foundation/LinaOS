@@ -5,14 +5,14 @@
 //
 // Copyright(c) 2019 Intel Corporation. All rights reserved.
 //
-// Authors: Guennadi Liakhovetski <guennadi.liakhovetski@linux.intel.com>
+// Authors: Guennadi Liakhovetski <guennadi.liakhovetski@linaos.intel.com>
 
 /* Intel-specific SOF IPC code */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 #include <sound/pcm.h>
 #include <sound/sof/stream.h>

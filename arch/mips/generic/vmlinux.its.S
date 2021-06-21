@@ -11,7 +11,7 @@
 			data = /incbin/(VMLINUX_BINARY);
 			type = "kernel";
 			arch = "mips";
-			os = "linux";
+			os = "linaos";
 			compression = VMLINUX_COMPRESSION;
 			load = /bits/ ADDR_BITS <VMLINUX_LOAD_ADDRESS>;
 			entry = /bits/ ADDR_BITS <VMLINUX_ENTRY_ADDRESS>;
@@ -25,7 +25,7 @@
 		default = "conf-default";
 
 		conf-default {
-			description = "Generic Linux kernel";
+			description = "Generic LinaOS kernel";
 			kernel = "kernel";
 		};
 	};

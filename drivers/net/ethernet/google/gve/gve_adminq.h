@@ -7,7 +7,7 @@
 #ifndef _GVE_ADMINQ_H
 #define _GVE_ADMINQ_H
 
-#include <linux/build_bug.h>
+#include <linaos/build_bug.h>
 
 /* Admin queue opcodes */
 enum gve_adminq_opcodes {

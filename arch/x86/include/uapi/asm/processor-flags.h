@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_X86_PROCESSOR_FLAGS_H
 #define _UAPI_ASM_X86_PROCESSOR_FLAGS_H
 /* Various flags defined: can be included from assembler. */
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /*
  * EFLAGS bits

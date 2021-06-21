@@ -13,25 +13,25 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/bitmap.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/of.h>
+#include <linaos/of_dma.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
 
-#include <linux/platform_data/edma.h>
+#include <linaos/platform_data/edma.h>
 
 #include "../dmaengine.h"
 #include "../virt-dma.h"
@@ -256,14 +256,14 @@ struct edma_cc {
 
 	/*
 	 * The slot_inuse bit for each PaRAM slot is clear unless the slot is
-	 * in use by Linux or if it is allocated to be used by DSP.
+	 * in use by LinaOS or if it is allocated to be used by DSP.
 	 */
 	unsigned long *slot_inuse;
 
 	/*
 	 * For tracking reserved channels used by DSP.
 	 * If the bit is cleared, the channel is allocated to be used by DSP
-	 * and Linux must not touch it.
+	 * and LinaOS must not touch it.
 	 */
 	unsigned long *channels_mask;
 
@@ -2440,7 +2440,7 @@ static int edma_probe(struct platform_device *pdev)
 					   reserved[i][1]);
 		}
 
-		/* Clear channels not usable for Linux */
+		/* Clear channels not usable for LinaOS */
 		reserved = info->rsv->rsv_chans;
 		if (reserved) {
 			for (i = 0; reserved[i][0] != -1; i++)

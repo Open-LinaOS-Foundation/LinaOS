@@ -9,17 +9,17 @@
  *  Copyright (c) 2010-2011 Ericsson AB
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/dln2.h>
-#include <linux/rculist.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/dln2.h>
+#include <linaos/rculist.h>
 
 struct dln2_header {
 	__le16 size;

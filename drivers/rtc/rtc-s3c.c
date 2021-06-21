@@ -6,26 +6,26 @@
  *
  * Copyright (c) 2004,2006 Simtec Electronics
  *	Ben Dooks, <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *
  * S3C2410/S3C2440/S3C24XX Internal RTC Driver
 */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/clk.h>
+#include <linaos/log2.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
 
 #include <asm/irq.h>
 #include "rtc-s3c.h"

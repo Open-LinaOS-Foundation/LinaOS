@@ -40,11 +40,11 @@
 #define _ASM_EBUS_H
 #ifdef __KERNEL__
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
 
 extern struct bus_type ibmebus_bus_type;
 

@@ -5,19 +5,19 @@
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/slab.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/fs_context.h>
+#include <linaos/slab.h>
+#include <linaos/namei.h>
+#include <linaos/ctype.h>
+#include <linaos/fs_context.h>
 
-#include <linux/sunrpc/svcsock.h>
-#include <linux/lockd/lockd.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/gss_krb5_enctypes.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/module.h>
-#include <linux/fsnotify.h>
+#include <linaos/sunrpc/svcsock.h>
+#include <linaos/lockd/lockd.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/gss_api.h>
+#include <linaos/sunrpc/gss_krb5_enctypes.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
+#include <linaos/module.h>
+#include <linaos/fsnotify.h>
 
 #include "idmap.h"
 #include "nfsd.h"

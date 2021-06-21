@@ -22,15 +22,15 @@
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
 
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/net.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/net.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
 #include <asm/processor.h>
-#include <linux/mempool.h>
-#include <linux/highmem.h>
+#include <linaos/mempool.h>
+#include <linaos/highmem.h>
 #include <crypto/aead.h>
 #include "smb2pdu.h"
 #include "cifsglob.h"
@@ -802,7 +802,7 @@ smb2_check_receive(struct mid_q_entry *mid, struct TCP_Server_Info *server,
 				 rc);
 	}
 
-	return map_smb2_to_linux_error(mid->resp_buf, log_error);
+	return map_smb2_to_linaos_error(mid->resp_buf, log_error);
 }
 
 struct mid_q_entry *

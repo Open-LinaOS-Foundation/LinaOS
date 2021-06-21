@@ -1,9 +1,9 @@
 #define pr_fmt(fmt)  "Hyper-V: " fmt
 
-#include <linux/hyperv.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/hyperv.h>
+#include <linaos/log2.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include <asm/fpu/api.h>
 #include <asm/mshyperv.h>
@@ -109,7 +109,7 @@ static void hyperv_flush_tlb_multi(const struct cpumask *cpus,
 		 * away with cheaper HVCALL_FLUSH_VIRTUAL_ADDRESS_{LIST,SPACE}
 		 * hypercalls. This is possible when the highest VP number in
 		 * the set is < 64. As VP numbers are usually in ascending order
-		 * and match Linux CPU ids, here is an optimization: we check
+		 * and match LinaOS CPU ids, here is an optimization: we check
 		 * the VP number for the highest bit in the supplied set first
 		 * so we can quickly find out if using *_EX hypercalls is a
 		 * must. We will also check all VP numbers when walking the

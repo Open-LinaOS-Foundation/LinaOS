@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/proc_fs.h>
-#include <linux/rculist.h>
-#include <linux/seq_file.h>
-#include <linux/socket.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/proc_fs.h>
+#include <linaos/rculist.h>
+#include <linaos/seq_file.h>
+#include <linaos/socket.h>
 #include <net/inet_sock.h>
 #include <net/kcm.h>
 #include <net/net_namespace.h>

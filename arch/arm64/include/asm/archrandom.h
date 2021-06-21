@@ -4,9 +4,9 @@
 
 #ifdef CONFIG_ARCH_RANDOM
 
-#include <linux/arm-smccc.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
 #include <asm/cpufeature.h>
 
 #define ARM_SMCCC_TRNG_MIN_VERSION	0x10000UL

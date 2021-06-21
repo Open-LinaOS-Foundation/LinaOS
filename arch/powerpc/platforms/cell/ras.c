@@ -5,13 +5,13 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/reboot.h>
+#include <linaos/kexec.h>
+#include <linaos/crash_dump.h>
 
 #include <asm/kexec.h>
 #include <asm/reg.h>

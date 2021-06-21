@@ -19,17 +19,17 @@
  *	    September 2004
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/suspend.h>
-#include <linux/w1.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/param.h>
+#include <linaos/jiffies.h>
+#include <linaos/workqueue.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/suspend.h>
+#include <linaos/w1.h>
+#include <linaos/of.h>
 
 static unsigned int cache_time = 1000;
 module_param(cache_time, uint, 0644);

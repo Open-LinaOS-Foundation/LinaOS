@@ -5,11 +5,11 @@
 /*
  * File can be included directly by headers who only want to access
  * tracepoint->key to guard out of line trace calls, or the definition of
- * trace_print_flags{_u64}. Otherwise linux/tracepoint.h should be used.
+ * trace_print_flags{_u64}. Otherwise linaos/tracepoint.h should be used.
  */
 
-#include <linux/atomic.h>
-#include <linux/static_key.h>
+#include <linaos/atomic.h>
+#include <linaos/static_key.h>
 
 struct static_call_key;
 

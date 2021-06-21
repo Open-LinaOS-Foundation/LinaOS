@@ -6,9 +6,9 @@
  *   Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/spi/spi.h>
 #include <asm/unaligned.h>
 
 #include "adt7x10.h"

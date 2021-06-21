@@ -8,29 +8,29 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/version.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/acpi.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/version.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of.h>
+#include <linaos/acpi.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/reset.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/of.h>
-#include <linux/usb/otg.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/of.h>
+#include <linaos/usb/otg.h>
 
 #include "core.h"
 #include "gadget.h"
@@ -959,7 +959,7 @@ static int dwc3_core_init(struct dwc3 *dwc)
 	hw_mode = DWC3_GHWPARAMS0_MODE(dwc->hwparams.hwparams0);
 
 	/*
-	 * Write Linux Version Code to our GUID register so it's easy to figure
+	 * Write LinaOS Version Code to our GUID register so it's easy to figure
 	 * out which kernel version a bug was found.
 	 */
 	dwc3_writel(dwc->regs, DWC3_GUID, LINUX_VERSION_CODE);
@@ -1288,7 +1288,7 @@ static void dwc3_get_properties(struct dwc3 *dwc)
 	dwc->hsphy_mode = of_usb_get_phy_mode(dev->of_node);
 
 	dwc->sysdev_is_parent = device_property_read_bool(dev,
-				"linux,sysdev_is_parent");
+				"linaos,sysdev_is_parent");
 	if (dwc->sysdev_is_parent)
 		dwc->sysdev = dwc->dev->parent;
 	else

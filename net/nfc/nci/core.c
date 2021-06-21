@@ -15,20 +15,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": %s: " fmt, __func__
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/completion.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
+#include <linaos/completion.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/bitops.h>
+#include <linaos/skbuff.h>
 
 #include "../nfc.h"
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
-#include <linux/nfc.h>
+#include <linaos/nfc.h>
 
 struct core_conn_create_data {
 	int length;

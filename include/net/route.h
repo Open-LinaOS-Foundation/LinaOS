@@ -27,13 +27,13 @@
 #include <net/ip_fib.h>
 #include <net/arp.h>
 #include <net/ndisc.h>
-#include <linux/in_route.h>
-#include <linux/rtnetlink.h>
-#include <linux/rcupdate.h>
-#include <linux/route.h>
-#include <linux/ip.h>
-#include <linux/cache.h>
-#include <linux/security.h>
+#include <linaos/in_route.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/rcupdate.h>
+#include <linaos/route.h>
+#include <linaos/ip.h>
+#include <linaos/cache.h>
+#include <linaos/security.h>
 
 /* IPv4 datagram length is stored into 16bit field (tot_len) */
 #define IP_MAX_MTU	0xFFFFU

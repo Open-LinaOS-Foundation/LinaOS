@@ -3,10 +3,10 @@
  * Copyright 2014  Google, Inc.
  */
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
 #include "internal.h"
 
 static DEFINE_MUTEX(pmsg_lock);

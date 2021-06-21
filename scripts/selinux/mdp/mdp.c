@@ -19,7 +19,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <linux/kconfig.h>
+#include <linaos/kconfig.h>
 
 static void usage(char *name)
 {
@@ -119,8 +119,8 @@ int main(int argc, char *argv[])
 	}
 
 	/* enable all policy capabilities */
-	for (i = 0; i < ARRAY_SIZE(selinux_policycap_names); i++)
-		fprintf(fout, "policycap %s;\n", selinux_policycap_names[i]);
+	for (i = 0; i < ARRAY_SIZE(selinaos_policycap_names); i++)
+		fprintf(fout, "policycap %s;\n", selinaos_policycap_names[i]);
 
 	/* types, roles, and allows */
 	fprintf(fout, "type base_t;\n");
@@ -241,7 +241,7 @@ int main(int argc, char *argv[])
 	GENFSCON("proc", "/");
 #endif
 #ifdef CONFIG_SECURITY_SELINUX
-	GENFSCON("selinuxfs", "/");
+	GENFSCON("selinaosfs", "/");
 #endif
 #ifdef CONFIG_SYSFS
 	GENFSCON("sysfs", "/");

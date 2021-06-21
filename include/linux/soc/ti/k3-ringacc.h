@@ -8,7 +8,7 @@
 #ifndef __SOC_TI_K3_RINGACC_API_H_
 #define __SOC_TI_K3_RINGACC_API_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct device_node;
 

@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@linaos.ie>
  * Copyright (c) 2008 Red Hat Inc.
  * Copyright (c) 2016 Intel Corporation
  *

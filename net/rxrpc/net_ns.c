@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 #include "ar-internal.h"
 
 unsigned int rxrpc_net_id;

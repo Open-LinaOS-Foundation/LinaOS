@@ -3,15 +3,15 @@
  * Intel Low Power Subsystem clocks.
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
- *	    Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@linaos.intel.com>
+ *	    Heikki Krogerus <heikki.krogerus@linaos.intel.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_data/x86/clk-lpss.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/x86/clk-lpss.h>
+#include <linaos/platform_device.h>
 
 static int lpt_clk_probe(struct platform_device *pdev)
 {

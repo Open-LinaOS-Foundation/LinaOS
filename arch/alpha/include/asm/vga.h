@@ -48,8 +48,8 @@ extern void scr_memcpyw(u16 *d, const u16 *s, unsigned int count);
 #define vga_writeb(v,a)	writeb(v, (u8 __iomem *)(a))
 
 #ifdef CONFIG_VGA_HOSE
-#include <linux/ioport.h>
-#include <linux/pci.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
 
 extern struct pci_controller *pci_vga_hose;
 

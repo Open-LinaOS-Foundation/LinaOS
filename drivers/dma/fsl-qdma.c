@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of_dma.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_dma.h>
+#include <linaos/dma-mapping.h>
 
 #include "virt-dma.h"
 #include "fsldma.h"

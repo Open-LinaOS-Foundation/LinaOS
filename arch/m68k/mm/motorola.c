@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/m68k/mm/motorola.c
+ * linaos/arch/m68k/mm/motorola.c
  *
  * Routines specific to the Motorola MMU, originally from:
- * linux/arch/m68k/init.c
+ * linaos/arch/m68k/init.c
  * which are Copyright (C) 1995 Hamish Macdonald
  *
  * Moved 8/20/1999 Sam Creasey
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/gfp.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 #include <asm/pgalloc.h>
 #include <asm/machdep.h>

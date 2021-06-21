@@ -5,8 +5,8 @@
  * Copyright (C) 2005, Intec Automation Inc.
  * Copyright (C) 2014, Freescale Semiconductor, Inc.
  */
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/spi-nor.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/spi-nor.h>
 
 #include "core.h"
 

@@ -3,7 +3,7 @@
  * Copyright (c) 2007-2012 Nicira, Inc.
  */
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include <net/genetlink.h>
 #include <net/netns/generic.h>
 

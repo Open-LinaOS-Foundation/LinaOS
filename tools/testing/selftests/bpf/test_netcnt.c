@@ -7,7 +7,7 @@
 #include <sys/sysinfo.h>
 #include <sys/time.h>
 
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 

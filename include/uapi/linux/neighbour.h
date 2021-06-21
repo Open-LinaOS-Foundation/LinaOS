@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __LINUX_NEIGHBOUR_H
 #define __LINUX_NEIGHBOUR_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <linaos/types.h>
+#include <linaos/netlink.h>
 
 struct ndmsg {
 	__u8		ndm_family;

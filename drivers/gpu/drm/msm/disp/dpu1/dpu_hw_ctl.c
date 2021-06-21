@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "dpu_hwio.h"
 #include "dpu_hw_ctl.h"
 #include "dpu_kms.h"

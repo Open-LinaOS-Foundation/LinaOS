@@ -4,7 +4,7 @@
  *            generic strncmp routine.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/export.h>
 
 	.text

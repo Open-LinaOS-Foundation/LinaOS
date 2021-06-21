@@ -14,7 +14,7 @@
 #include "trx.h"
 #include "led.h"
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static void rtl92s_init_aspm_vars(struct ieee80211_hw *hw)
 {

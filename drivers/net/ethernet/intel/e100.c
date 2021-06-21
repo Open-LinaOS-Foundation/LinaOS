@@ -124,28 +124,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/hardirq.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/string.h>
-#include <linux/firmware.h>
-#include <linux/rtnetlink.h>
+#include <linaos/hardirq.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mii.h>
+#include <linaos/if_vlan.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/string.h>
+#include <linaos/firmware.h>
+#include <linaos/rtnetlink.h>
 #include <asm/unaligned.h>
 
 

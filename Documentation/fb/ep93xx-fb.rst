@@ -4,7 +4,7 @@ Driver for EP93xx LCD controller
 
 The EP93xx LCD controller can drive both standard desktop monitors and
 embedded LCD displays. If you have a standard desktop monitor then you
-can use the standard Linux video mode database. In your board file::
+can use the standard LinaOS video mode database. In your board file::
 
 	static struct ep93xxfb_mach_info some_board_fb_info = {
 		.num_modes	= EP93XXFB_USE_MODEDB,
@@ -110,7 +110,7 @@ The video mode is set using the following syntax::
 	video=XRESxYRES[-BPP][@REFRESH]
 
 If the EP93xx video driver is built-in then the video mode is set on
-the Linux kernel command line, for example::
+the LinaOS kernel command line, for example::
 
 	video=ep93xx-fb:800x600-16@60
 
@@ -127,7 +127,7 @@ At least on the EP9315 there is a silicon bug which causes bit 27 of
 the VIDSCRNPAGE (framebuffer physical offset) to be tied low. There is
 an unofficial errata for this bug at::
 
-	https://marc.info/?l=linux-arm-kernel&m=110061245502000&w=2
+	https://marc.info/?l=linaos-arm-kernel&m=110061245502000&w=2
 
 By default the EP93xx framebuffer driver checks if the allocated physical
 address has bit 27 set. If it does, then the memory is freed and an

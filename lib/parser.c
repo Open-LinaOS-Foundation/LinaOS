@@ -3,12 +3,12 @@
  * lib/parser.c - simple parser for mount, etc. options.
  */
 
-#include <linux/ctype.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/parser.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/ctype.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/parser.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 /**
  * match_one - Determines if a string matches a simple pattern

@@ -5,10 +5,10 @@
 // Copyright (C) 2018 Synopsys
 // Author: Eugeniy Paltsev <Eugeniy.Paltsev@synopsys.com>
 
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 
 #define MAX_GPIO	32
 

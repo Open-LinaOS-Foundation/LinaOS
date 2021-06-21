@@ -5,9 +5,9 @@
  * WARNING: This controller is for cgroup core debugging only.
  * Its interfaces are unstable and subject to changes at any time.
  */
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 
 #include "cgroup-internal.h"
 

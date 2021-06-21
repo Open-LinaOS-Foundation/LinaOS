@@ -2,20 +2,20 @@
 #ifndef _FS_CEPH_OSD_CLIENT_H
 #define _FS_CEPH_OSD_CLIENT_H
 
-#include <linux/bitrev.h>
-#include <linux/completion.h>
-#include <linux/kref.h>
-#include <linux/mempool.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/ktime.h>
+#include <linaos/bitrev.h>
+#include <linaos/completion.h>
+#include <linaos/kref.h>
+#include <linaos/mempool.h>
+#include <linaos/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/ktime.h>
 
-#include <linux/ceph/types.h>
-#include <linux/ceph/osdmap.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/msgpool.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/pagelist.h>
+#include <linaos/ceph/types.h>
+#include <linaos/ceph/osdmap.h>
+#include <linaos/ceph/messenger.h>
+#include <linaos/ceph/msgpool.h>
+#include <linaos/ceph/auth.h>
+#include <linaos/ceph/pagelist.h>
 
 struct ceph_msg;
 struct ceph_snap_context;

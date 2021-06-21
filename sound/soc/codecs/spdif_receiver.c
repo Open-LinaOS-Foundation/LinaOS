@@ -12,13 +12,13 @@
  * Copyright:   (C) 2012  ST Microelectronics
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>
-#include <linux/of.h>
+#include <linaos/of.h>
 
 static const struct snd_soc_dapm_widget dir_widgets[] = {
 	SND_SOC_DAPM_INPUT("spdif-in"),
@@ -66,7 +66,7 @@ static int spdif_dir_probe(struct platform_device *pdev)
 
 #ifdef CONFIG_OF
 static const struct of_device_id spdif_dir_dt_ids[] = {
-	{ .compatible = "linux,spdif-dir", },
+	{ .compatible = "linaos,spdif-dir", },
 	{ }
 };
 MODULE_DEVICE_TABLE(of, spdif_dir_dt_ids);

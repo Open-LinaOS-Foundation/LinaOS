@@ -7,7 +7,7 @@
 #ifndef _LINUX_BTT_H
 #define _LINUX_BTT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BTT_SIG_LEN 16
 #define BTT_SIG "BTT_ARENA_INFO\0"
@@ -145,7 +145,7 @@ struct aligned_lock {
  *			handle incoming writes.
  * @version_major:	Metadata layout version major.
  * @version_minor:	Metadata layout version minor.
- * @sector_size:	The Linux sector size - 512 or 4096
+ * @sector_size:	The LinaOS sector size - 512 or 4096
  * @nextoff:		Offset in bytes to the start of the next arena.
  * @infooff:		Offset in bytes to the info block of this arena.
  * @dataoff:		Offset in bytes to the data area of this arena.
@@ -210,7 +210,7 @@ struct badblocks;
  * @rawsize:		Total size in bytes of the available backing device
  * @lbasize:		LBA size as requested and presented to upper layers.
  *			This is sector_size + size of any metadata.
- * @sector_size:	The Linux sector size - 512 or 4096
+ * @sector_size:	The LinaOS sector size - 512 or 4096
  * @lanes:		Per-lane spinlocks
  * @init_lock:		Mutex used for the BTT initialization
  * @init_state:		Flag describing the initialization state for the BTT

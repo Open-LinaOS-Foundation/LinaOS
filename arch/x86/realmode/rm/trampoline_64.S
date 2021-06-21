@@ -25,7 +25,7 @@
  *	entries.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/pgtable_types.h>
 #include <asm/page_types.h>
 #include <asm/msr.h>

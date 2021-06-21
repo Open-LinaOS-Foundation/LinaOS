@@ -5,10 +5,10 @@
 //
 // Samsung CPU Support
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <mach/map-base.h>
 #include "cpu.h"

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for LinaOS
  *
  * Copyright (C) 1999-2005 Krzysztof Halasa <khc@pm.waw.pl>
  */
@@ -8,10 +8,10 @@
 #define __HDLC_H
 
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/hdlc/ioctl.h>
-#include <uapi/linux/hdlc.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/hdlc/ioctl.h>
+#include <uapi/linaos/hdlc.h>
 
 /* This structure is a private property of HDLC protocols.
    Hardware drivers have no interest here */

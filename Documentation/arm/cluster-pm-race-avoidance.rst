@@ -30,7 +30,7 @@ cluster-level operations are only performed when it is truly safe to do
 so.
 
 Simple locking may not be sufficient to solve this problem, because
-mechanisms like Linux spinlocks may rely on coherency mechanisms which
+mechanisms like LinaOS spinlocks may rely on coherency mechanisms which
 are not immediately enabled when a cluster powers up.  Since enabling or
 disabling those mechanisms may itself be a non-atomic operation (such as
 writing some hardware registers and invalidating large caches), other
@@ -456,7 +456,7 @@ mechanism to choose which CPUs should play these roles.
 Last man:
 
 When shutting down the cluster, all the CPUs involved are initially
-executing Linux and hence coherent.  Therefore, ordinary spinlocks can
+executing LinaOS and hence coherent.  Therefore, ordinary spinlocks can
 be used to select a last man safely, before the CPUs become
 non-coherent.
 
@@ -530,4 +530,4 @@ collaboration with Nicolas Pitre and Achin Gupta.
 
 Copyright (C) 2012-2013  Linaro Limited
 Distributed under the terms of Version 2 of the GNU General Public
-License, as defined in linux/COPYING.
+License, as defined in linaos/COPYING.

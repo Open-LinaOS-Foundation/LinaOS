@@ -8,7 +8,7 @@
 #ifndef I3C_INTERNALS_H
 #define I3C_INTERNALS_H
 
-#include <linux/i3c/master.h>
+#include <linaos/i3c/master.h>
 
 extern struct bus_type i3c_bus_type;
 

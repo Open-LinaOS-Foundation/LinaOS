@@ -13,19 +13,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/sched.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/core.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/sched.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
+#include <linaos/mfd/ti_am335x_tscadc.h>
 
 static const struct regmap_config tscadc_regmap_config = {
 	.name = "ti_tscadc",

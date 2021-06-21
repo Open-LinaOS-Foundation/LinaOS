@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/proc_ns.h>
-#include <linux/magic.h>
-#include <linux/ktime.h>
-#include <linux/seq_file.h>
-#include <linux/user_namespace.h>
-#include <linux/nsfs.h>
-#include <linux/uaccess.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/proc_fs.h>
+#include <linaos/proc_ns.h>
+#include <linaos/magic.h>
+#include <linaos/ktime.h>
+#include <linaos/seq_file.h>
+#include <linaos/user_namespace.h>
+#include <linaos/nsfs.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 

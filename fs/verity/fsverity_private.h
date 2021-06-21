@@ -15,8 +15,8 @@
 #define pr_fmt(fmt) "fs-verity: " fmt
 
 #include <crypto/sha2.h>
-#include <linux/fsverity.h>
-#include <linux/mempool.h>
+#include <linaos/fsverity.h>
+#include <linaos/mempool.h>
 
 struct ahash_request;
 

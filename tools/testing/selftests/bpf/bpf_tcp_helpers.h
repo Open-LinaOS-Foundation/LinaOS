@@ -3,7 +3,7 @@
 #define __BPF_TCP_HELPERS_H
 
 #include <stdbool.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_core_read.h>
 #include <bpf/bpf_tracing.h>

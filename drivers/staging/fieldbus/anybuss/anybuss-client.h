@@ -8,11 +8,11 @@
 #ifndef __LINUX_ANYBUSS_CLIENT_H__
 #define __LINUX_ANYBUSS_CLIENT_H__
 
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/poll.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/poll.h>
 
-/* move to <linux/fieldbus_dev.h> when taking this out of staging */
+/* move to <linaos/fieldbus_dev.h> when taking this out of staging */
 #include "../fieldbus_dev.h"
 
 struct anybuss_host;

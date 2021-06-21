@@ -5,22 +5,22 @@
  * Copyright (c) 2003-2004, Jouni Malinen <jkmaline@cc.hut.fi>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/string.h>
-#include <linux/wireless.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_arp.h>
+#include <linaos/string.h>
+#include <linaos/wireless.h>
 
 #include "ieee80211.h"
 
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 #include <crypto/aead.h>
-    #include <linux/scatterlist.h>
+    #include <linaos/scatterlist.h>
 
 MODULE_AUTHOR("Jouni Malinen");
 MODULE_DESCRIPTION("Host AP crypt: CCMP");

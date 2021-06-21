@@ -8,9 +8,9 @@
 
 #define pr_fmt(fmt) "Power allocator: " fmt
 
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/rculist.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/thermal_power_allocator.h>

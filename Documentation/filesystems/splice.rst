@@ -16,7 +16,7 @@ pipes API
 Pipe interfaces are all for in-kernel (builtin image) use. They are not
 exported for use by modules.
 
-.. kernel-doc:: include/linux/pipe_fs_i.h
+.. kernel-doc:: include/linaos/pipe_fs_i.h
    :internal:
 
 .. kernel-doc:: fs/pipe.c

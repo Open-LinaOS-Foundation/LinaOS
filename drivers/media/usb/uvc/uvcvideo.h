@@ -3,17 +3,17 @@
 #define _USB_VIDEO_H_
 
 #ifndef __KERNEL__
-#error "The uvcvideo.h header is deprecated, use linux/uvcvideo.h instead."
+#error "The uvcvideo.h header is deprecated, use linaos/uvcvideo.h instead."
 #endif /* __KERNEL__ */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/poll.h>
-#include <linux/usb.h>
-#include <linux/usb/video.h>
-#include <linux/uvcvideo.h>
-#include <linux/videodev2.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/poll.h>
+#include <linaos/usb.h>
+#include <linaos/usb/video.h>
+#include <linaos/uvcvideo.h>
+#include <linaos/videodev2.h>
+#include <linaos/workqueue.h>
 #include <media/media-device.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

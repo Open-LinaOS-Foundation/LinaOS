@@ -5,10 +5,10 @@
  * Copyright 2018 Arm Limited
  * Author: Dave Martin <Dave.Martin@arm.com>
  */
-#include <linux/irqflags.h>
-#include <linux/sched.h>
-#include <linux/thread_info.h>
-#include <linux/kvm_host.h>
+#include <linaos/irqflags.h>
+#include <linaos/sched.h>
+#include <linaos/thread_info.h>
+#include <linaos/kvm_host.h>
 #include <asm/fpsimd.h>
 #include <asm/kvm_asm.h>
 #include <asm/kvm_hyp.h>

@@ -9,10 +9,10 @@
 #ifndef _LINUX_MFD_MT6397_RTC_H_
 #define _LINUX_MFD_MT6397_RTC_H_
 
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linaos/jiffies.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
 
 #define RTC_BBPU               0x0000
 #define RTC_BBPU_CBUSY         BIT(6)

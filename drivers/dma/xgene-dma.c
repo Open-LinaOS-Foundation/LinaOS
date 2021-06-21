@@ -9,17 +9,17 @@
  * NOTE: PM support is currently not available.
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dmapool.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
 
 #include "dmaengine.h"
 
@@ -1552,7 +1552,7 @@ static int xgene_dma_async_register(struct xgene_dma *pdma, int id)
 	INIT_LIST_HEAD(&dma_dev->channels);
 	list_add_tail(&chan->dma_chan.device_node, &dma_dev->channels);
 
-	/* Register with Linux async DMA framework*/
+	/* Register with LinaOS async DMA framework*/
 	ret = dma_async_device_register(dma_dev);
 	if (ret) {
 		chan_err(chan, "Failed to register async device %d", ret);
@@ -1753,7 +1753,7 @@ static int xgene_dma_probe(struct platform_device *pdev)
 	/* Configure and enable DMA engine */
 	xgene_dma_init_hw(pdma);
 
-	/* Register DMA device with linux async framework */
+	/* Register DMA device with linaos async framework */
 	ret = xgene_dma_init_async(pdma);
 	if (ret)
 		goto err_async_init;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/common.c
+ * linaos/arch/arm/mach-omap2/common.c
  *
  * Code common to all OMAP2+ machines.
  *
@@ -9,8 +9,8 @@
  * Tony Lindgren <tony@atomide.com>
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 
 #include "common.h"
 #include "omap-secure.h"

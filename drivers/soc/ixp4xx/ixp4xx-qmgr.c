@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Intel IXP4xx Queue Manager driver for Linux
+ * Intel IXP4xx Queue Manager driver for LinaOS
  *
  * Copyright (C) 2007 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ixp4xx/qmgr.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/soc/ixp4xx/qmgr.h>
 
 static struct qmgr_regs __iomem *qmgr_regs;
 static int qmgr_irq_1;

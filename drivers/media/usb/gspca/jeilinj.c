@@ -15,7 +15,7 @@
 
 #define MODULE_NAME "jeilinj"
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "gspca.h"
 #include "jpeg.h"
 

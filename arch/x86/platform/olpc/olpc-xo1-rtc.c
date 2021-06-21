@@ -5,10 +5,10 @@
  * Copyright (C) 2011 One Laptop per Child
  */
 
-#include <linux/mc146818rtc.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
+#include <linaos/mc146818rtc.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/of.h>
 
 #include <asm/msr.h>
 #include <asm/olpc.h>

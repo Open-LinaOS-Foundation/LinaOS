@@ -9,19 +9,19 @@
  *	Erik Gilling <konkers@google.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm.h>
 
 #define GPIO_BANK(x)		((x) >> 5)
 #define GPIO_PORT(x)		(((x) >> 3) & 0x3)
@@ -604,8 +604,8 @@ static void tegra_gpio_irq_release_resources(struct irq_data *d)
 
 #ifdef	CONFIG_DEBUG_FS
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 
 static int tegra_dbg_gpio_show(struct seq_file *s, void *unused)
 {

@@ -16,15 +16,15 @@
  *   https://www.silabs.com/documents/public/application-notes/an495-cp2112-interface-specification.pdf
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/driver.h>
-#include <linux/hid.h>
-#include <linux/hidraw.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/nls.h>
-#include <linux/usb/ch9.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/hid.h>
+#include <linaos/hidraw.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/nls.h>
+#include <linaos/usb/ch9.h>
 #include "hid-ids.h"
 
 #define CP2112_REPORT_MAX_LENGTH		64

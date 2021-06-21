@@ -11,7 +11,7 @@
 #include "error.h"
 
 #ifdef DEBUG
-#include <linux/highmem.h>
+#include <linaos/highmem.h>
 
 void caam_dump_sg(const char *prefix_str, int prefix_type,
 		  int rowsize, int groupsize, struct scatterlist *sg,

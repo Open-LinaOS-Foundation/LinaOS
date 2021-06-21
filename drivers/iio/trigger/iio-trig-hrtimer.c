@@ -8,13 +8,13 @@
  *	Author: Lars-Peter Clausen <lars@metafoo.de>
  * Copyright (C) 2015, Intel Corporation
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/hrtimer.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/hrtimer.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/sw_trigger.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/sw_trigger.h>
 
 /* Defined locally, not in time64.h yet. */
 #define PSEC_PER_SEC   1000000000000LL

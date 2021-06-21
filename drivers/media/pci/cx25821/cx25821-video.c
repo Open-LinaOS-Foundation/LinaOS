@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *  Based on Steven Toth <stoth@linuxtv.org> cx25821 driver
+ *  Based on Steven Toth <stoth@linaostv.org> cx25821 driver
  *  Parts adapted/taken from Eduardo Moscoso Rubino
  *  Copyright (C) 2009 Eduardo Moscoso Rubino <moscoso@TopoLogica.com>
  */

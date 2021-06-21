@@ -12,8 +12,8 @@
 #ifndef __LINUX_MFD_TPS65910_H
 #define __LINUX_MFD_TPS65910_H
 
-#include <linux/gpio.h>
-#include <linux/regmap.h>
+#include <linaos/gpio.h>
+#include <linaos/regmap.h>
 
 /* TPS chip id list */
 #define TPS65910			0

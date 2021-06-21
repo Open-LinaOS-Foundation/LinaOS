@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ==================================
-ATM (i)Chip IA Linux Driver Source
+ATM (i)Chip IA LinaOS Driver Source
 ==================================
 
 			      READ ME FISRT
@@ -15,7 +15,7 @@ ATM (i)Chip IA Linux Driver Source
 Description
 ===========
 
-This is the README file for the Interphase PCI ATM (i)Chip IA Linux driver
+This is the README file for the Interphase PCI ATM (i)Chip IA LinaOS driver
 source release.
 
 The features and limitations of this driver are as follows:

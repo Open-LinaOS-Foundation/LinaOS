@@ -5,7 +5,7 @@
 #ifndef _SPARC_SETUP_H
 #define _SPARC_SETUP_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include <uapi/asm/setup.h>
 

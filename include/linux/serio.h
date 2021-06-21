@@ -6,14 +6,14 @@
 #define _SERIO_H
 
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <uapi/linux/serio.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <uapi/linaos/serio.h>
 
 extern struct bus_type serio_bus;
 

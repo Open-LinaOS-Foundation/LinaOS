@@ -12,19 +12,19 @@
  * Copyright Linas Vepstas 2005, 2006
  */
 
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/spinlock.h>
-#include <linux/crash_dump.h>
+#include <linaos/atomic.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/of.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/rbtree.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/spinlock.h>
+#include <linaos/crash_dump.h>
 
 #include <asm/eeh.h>
 #include <asm/eeh_event.h>

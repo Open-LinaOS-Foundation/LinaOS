@@ -2,14 +2,14 @@
  * Copyright (C) 1995-2005 Mark Adler
  * For conditions of distribution and use, see copyright notice in zlib.h
  *
- * Based on zlib 1.2.3 but modified for the Linux Kernel by
+ * Based on zlib 1.2.3 but modified for the LinaOS Kernel by
  * Richard Purdie <richard@openedhand.com>
  *
  * Changes mainly for static instead of dynamic memory allocation
  *
  */
 
-#include <linux/zutil.h>
+#include <linaos/zutil.h>
 #include "inftrees.h"
 #include "inflate.h"
 #include "inffast.h"

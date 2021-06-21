@@ -3,10 +3,10 @@
  * Alpha IO and memory functions.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
 #include <asm/io.h>
 
 /* Out-of-line versions of the i/o routines that redirect into the 

@@ -5,18 +5,18 @@
  *  Copyright IBM Corp. 1999, 2013
  */
 
-#include <linux/kallsyms.h>
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/utsname.h>
-#include <linux/export.h>
-#include <linux/kdebug.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/kallsyms.h>
+#include <linaos/hardirq.h>
+#include <linaos/kprobes.h>
+#include <linaos/utsname.h>
+#include <linaos/export.h>
+#include <linaos/kdebug.h>
+#include <linaos/ptrace.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
 #include <asm/processor.h>
 #include <asm/debug.h>
 #include <asm/dis.h>

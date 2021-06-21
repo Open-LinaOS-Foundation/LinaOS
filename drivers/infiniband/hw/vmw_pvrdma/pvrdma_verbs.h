@@ -46,7 +46,7 @@
 #ifndef __PVRDMA_VERBS_H__
 #define __PVRDMA_VERBS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 union pvrdma_gid {
 	u8	raw[16];

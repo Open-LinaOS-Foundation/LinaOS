@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 
 static struct kmem_cache *pgd_cachep;
 #if PAGETABLE_LEVELS > 2

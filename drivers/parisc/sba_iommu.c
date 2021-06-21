@@ -2,7 +2,7 @@
 /*
 **  System Bus Adapter (SBA) I/O MMU manager
 **
-**	(c) Copyright 2000-2004 Grant Grundler <grundler @ parisc-linux x org>
+**	(c) Copyright 2000-2004 Grant Grundler <grundler @ parisc-linaos x org>
 **	(c) Copyright 2004 Naresh Kumar Inna <knaresh at india x hp x com>
 **	(c) Copyright 2000-2004 Hewlett-Packard Company
 **
@@ -16,18 +16,18 @@
 ** FIXME: add DMA hint support programming in both sba and lba modules.
 */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
 
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dma-map-ops.h>
-#include <linux/scatterlist.h>
-#include <linux/iommu-helper.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/pci.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/scatterlist.h>
+#include <linaos/iommu-helper.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -35,9 +35,9 @@
 
 #include <asm/hardware.h>	/* for register_parisc_driver() stuff */
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/module.h>
 
 #include <asm/ropes.h>
 #include <asm/mckinley.h>	/* for proc_mckinley_root */
@@ -850,7 +850,7 @@ sba_unmap_page(struct device *dev, dma_addr_t iova, size_t size,
 
 	spin_unlock_irqrestore(&ioc->res_lock, flags);
 
-	/* XXX REVISIT for 2.5 Linux - need syncdma for zero-copy support.
+	/* XXX REVISIT for 2.5 LinaOS - need syncdma for zero-copy support.
 	** For Astro based systems this isn't a big deal WRT performance.
 	** As long as 2.4 kernels copyin/copyout data from/to userspace,
 	** we don't need the syncdma. The issue here is I/O MMU cachelines
@@ -1534,7 +1534,7 @@ static void sba_hw_init(struct sba_device *sba_dev)
 		**   mem_kbd hpa 0xfee003f8 sba 0x0 pad 0x0 cl_class 0x7
 		**
 		** FIXME: Using GFX+USB console at power up but direct
-		**	linux to serial console is still broken.
+		**	linaos to serial console is still broken.
 		**	USB could generate DMA so we must reset USB.
 		**	The proper sequence would be:
 		**	o block console output

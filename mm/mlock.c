@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/mm/mlock.c
+ *	linaos/mm/mlock.c
  *
  *  (C) Copyright 1995 Linus Torvalds
  *  (C) Copyright 2002 Christoph Hellwig
  */
 
-#include <linux/capability.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/sched/user.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/mempolicy.h>
-#include <linux/syscalls.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/rmap.h>
-#include <linux/mmzone.h>
-#include <linux/hugetlb.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
+#include <linaos/capability.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/sched/user.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/pagemap.h>
+#include <linaos/pagevec.h>
+#include <linaos/mempolicy.h>
+#include <linaos/syscalls.h>
+#include <linaos/sched.h>
+#include <linaos/export.h>
+#include <linaos/rmap.h>
+#include <linaos/mmzone.h>
+#include <linaos/hugetlb.h>
+#include <linaos/memcontrol.h>
+#include <linaos/mm_inline.h>
 
 #include "internal.h"
 

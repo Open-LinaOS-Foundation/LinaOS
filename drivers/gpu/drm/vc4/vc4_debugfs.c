@@ -3,10 +3,10 @@
  *  Copyright © 2014 Broadcom
  */
 
-#include <linux/seq_file.h>
-#include <linux/circ_buf.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/circ_buf.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
 
 #include "vc4_drv.h"
 #include "vc4_regs.h"

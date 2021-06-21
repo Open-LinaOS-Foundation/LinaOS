@@ -8,7 +8,7 @@
 #ifndef IRQBYPASS_H
 #define IRQBYPASS_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct irq_bypass_consumer;
 
@@ -32,7 +32,7 @@ struct irq_bypass_consumer;
  * struct irq_bypass_producer - IRQ bypass producer definition
  * @node: IRQ bypass manager private list management
  * @token: opaque token to match between producer and consumer (non-NULL)
- * @irq: Linux IRQ number for the producer device
+ * @irq: LinaOS IRQ number for the producer device
  * @add_consumer: Connect the IRQ producer to an IRQ consumer (optional)
  * @del_consumer: Disconnect the IRQ producer from an IRQ consumer (optional)
  * @stop: Perform any quiesce operations necessary prior to add/del (optional)

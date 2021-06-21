@@ -3,23 +3,23 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2008 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2008 Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2012 MIPS Technologies, Inc.  All rights reserved.
  */
 
 #define pr_fmt(fmt) "irq-mips-gic: " fmt
 
-#include <linux/bitmap.h>
-#include <linux/clocksource.h>
-#include <linux/cpuhotplug.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of_address.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <linaos/bitmap.h>
+#include <linaos/clocksource.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_address.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
 
 #include <asm/mips-cps.h>
 #include <asm/setup.h>

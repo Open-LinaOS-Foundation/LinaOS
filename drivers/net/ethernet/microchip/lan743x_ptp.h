@@ -4,8 +4,8 @@
 #ifndef _LAN743X_PTP_H
 #define _LAN743X_PTP_H
 
-#include "linux/ptp_clock_kernel.h"
-#include "linux/netdevice.h"
+#include "linaos/ptp_clock_kernel.h"
+#include "linaos/netdevice.h"
 
 #define LAN7430_N_LED			4
 #define LAN7430_N_GPIO			4	/* multiplexed with PHY LEDs */

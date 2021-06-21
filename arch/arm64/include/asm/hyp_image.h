@@ -37,7 +37,7 @@
  *
  * A symbol with a well-known name is defined at the first byte. This
  * is used as a base for hyp relocations (see gen-hyprel.c). It must
- * be defined inside the section so the linker of `vmlinux` cannot
+ * be defined inside the section so the linker of `vmlinaos` cannot
  * separate it from the section data.
  */
 #define BEGIN_HYP_SECTION(NAME)				\

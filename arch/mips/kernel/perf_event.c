@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux performance counter support for MIPS.
+ * LinaOS performance counter support for MIPS.
  *
  * Copyright (C) 2010 MIPS Technologies, Inc.
  * Author: Deng-Cheng Zhu
@@ -11,8 +11,8 @@
  * support references the code of MIPS stacktrace.c.
  */
 
-#include <linux/perf_event.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/perf_event.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/stacktrace.h>
 

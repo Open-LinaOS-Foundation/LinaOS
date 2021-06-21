@@ -9,21 +9,21 @@
  * and an early endavour into mobile light and proximity sensors.
  */
 
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/consumer.h> /* To get our ADC channel */
-#include <linux/iio/types.h> /* To deal with our ADC channel */
-#include <linux/init.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/math64.h>
-#include <linux/pm.h>
+#include <linaos/module.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/consumer.h> /* To get our ADC channel */
+#include <linaos/iio/types.h> /* To deal with our ADC channel */
+#include <linaos/init.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/math64.h>
+#include <linaos/pm.h>
 
 #define CM3605_PROX_CHANNEL 0
 #define CM3605_ALS_CHANNEL 1

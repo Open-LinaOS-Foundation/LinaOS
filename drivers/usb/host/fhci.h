@@ -14,15 +14,15 @@
 #ifndef __FHCI_H
 #define __FHCI_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/kfifo.h>
-#include <linux/io.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/bug.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/kfifo.h>
+#include <linaos/io.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 #include <soc/fsl/qe/qe.h>
 #include <soc/fsl/qe/immap_qe.h>
 

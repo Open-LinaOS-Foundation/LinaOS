@@ -13,23 +13,23 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/ieee80211.h>
-#include <linux/if_arp.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
+#include <linaos/ieee80211.h>
+#include <linaos/if_arp.h>
+#include <linaos/ctype.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
 #include <net/cfg80211.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/rndis_host.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/usb/rndis_host.h>
 
 
 /* NOTE: All these are settings for Broadcom chipset */
@@ -1204,7 +1204,7 @@ static int set_infra_mode(struct usbnet *usbdev, int mode)
 	}
 
 	/* NDIS drivers clear keys when infrastructure mode is
-	 * changed. But Linux tools assume otherwise. So set the
+	 * changed. But LinaOS tools assume otherwise. So set the
 	 * keys */
 	restore_keys(usbdev);
 

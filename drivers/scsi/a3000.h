@@ -4,13 +4,13 @@
 
 /* $Id: a3000.h,v 1.4 1997/01/19 23:07:10 davem Exp $
  *
- * Header file for the Amiga 3000 built-in SCSI controller for Linux
+ * Header file for the Amiga 3000 built-in SCSI controller for LinaOS
  *
  * Written and (C) 1993, Hamish Macdonald, see a3000.c for more info
  *
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef CMD_PER_LUN
 #define CMD_PER_LUN		2

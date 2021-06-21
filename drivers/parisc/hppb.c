@@ -9,12 +9,12 @@
 **
 */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/ioport.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

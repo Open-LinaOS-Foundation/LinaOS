@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 1999-2003		Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1999-2003		Andre Hedrick <andre@linaos-ide.org>
  * Portions Copyright (C) 2001	        Sun Microsystems, Inc.
  * Portions Copyright (C) 2003		Red Hat Inc
  * Portions Copyright (C) 2007		Bartlomiej Zolnierkiewicz
@@ -120,18 +120,18 @@
  *	Sergei Shtylyov, <sshtylyov@ru.mvista.com> or <source@mvista.com>
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/blkdev.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
+#include <linaos/slab.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
 #define DRV_NAME "hpt366"

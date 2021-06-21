@@ -37,17 +37,17 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/jiffies.h>
-#include <linux/hash.h>
+#include <linaos/ip.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/jiffies.h>
+#include <linaos/hash.h>
 
 /* for sysctl */
-#include <linux/fs.h>
-#include <linux/sysctl.h>
+#include <linaos/fs.h>
+#include <linaos/sysctl.h>
 
 #include <net/ip_vs.h>
 

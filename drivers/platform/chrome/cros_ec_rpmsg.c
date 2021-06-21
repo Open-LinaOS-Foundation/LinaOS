@@ -2,16 +2,16 @@
 //
 // Copyright 2018 Google LLC.
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/rpmsg.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_device.h>
+#include <linaos/rpmsg.h>
+#include <linaos/slab.h>
 
 #include "cros_ec.h"
 

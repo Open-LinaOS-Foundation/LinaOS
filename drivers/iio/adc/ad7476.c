@@ -6,23 +6,23 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 struct ad7476_state;
 

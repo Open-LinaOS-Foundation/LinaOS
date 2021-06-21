@@ -61,7 +61,7 @@ Optional subnode-properties:
 
 Note that many of these properties are only valid for certain specific pins
 or groups. See the Tegra TRM and various pinmux spreadsheets for complete
-details regarding which groups support which functionality. The Linux pinctrl
+details regarding which groups support which functionality. The LinaOS pinctrl
 driver may also be a useful reference, since it consolidates, disambiguates,
 and corrects data from all those sources.
 

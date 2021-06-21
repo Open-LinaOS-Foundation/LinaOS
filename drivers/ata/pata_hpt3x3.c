@@ -6,20 +6,20 @@
  *	343 and 363 so it has been renamed.
  *
  *	Based on:
- *	linux/drivers/ide/pci/hpt34x.c		Version 0.40	Sept 10, 2002
- *	Copyright (C) 1998-2000	Andre Hedrick <andre@linux-ide.org>
+ *	linaos/drivers/ide/pci/hpt34x.c		Version 0.40	Sept 10, 2002
+ *	Copyright (C) 1998-2000	Andre Hedrick <andre@linaos-ide.org>
  *
  *	May be copied or modified under the terms of the GNU General Public
  *	License
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME	"pata_hpt3x3"
 #define DRV_VERSION	"0.6.1"

@@ -4,7 +4,7 @@
 #ifndef _CC_LLI_DEFS_H_
 #define _CC_LLI_DEFS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Max DLLI size
  *  AKA CC_DSCRPTR_QUEUE_WORD1_DIN_SIZE_BIT_SIZE

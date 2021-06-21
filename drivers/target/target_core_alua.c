@@ -10,14 +10,14 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/configfs.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fs.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/configfs.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/fcntl.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
 #include <scsi/scsi_proto.h>
 #include <asm/unaligned.h>
 

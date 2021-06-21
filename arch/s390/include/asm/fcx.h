@@ -9,7 +9,7 @@
 #ifndef _ASM_S390_FCX_H
 #define _ASM_S390_FCX_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define TCW_FORMAT_DEFAULT		0
 #define TCW_TIDAW_FORMAT_DEFAULT	0

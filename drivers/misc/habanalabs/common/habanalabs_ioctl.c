@@ -10,10 +10,10 @@
 #include <uapi/misc/habanalabs.h>
 #include "habanalabs.h"
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
 
 static u32 hl_debug_struct_size[HL_DEBUG_OP_TIMESTAMP + 1] = {
 	[HL_DEBUG_OP_ETR] = sizeof(struct hl_debug_params_etr),

@@ -2,7 +2,7 @@
 /*
  * Copyright (c) 2007 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *
  * S3C2443 clock register definitions
  */
@@ -10,7 +10,7 @@
 #ifndef __ASM_ARM_REGS_S3C2443_CLOCK
 #define __ASM_ARM_REGS_S3C2443_CLOCK
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "map-s3c.h"
 
 #define S3C2443_CLKREG(x)		((x) + S3C24XX_VA_CLKPWR)

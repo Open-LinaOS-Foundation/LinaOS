@@ -5,13 +5,13 @@
  * Author: Keerthy <j-keerthy@ti.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/lp87565.h>
+#include <linaos/mfd/lp87565.h>
 
 static const struct regmap_config lp87565_regmap_config = {
 	.reg_bits = 8,

@@ -2,9 +2,9 @@
 #ifndef __CMA_H__
 #define __CMA_H__
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/numa.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/numa.h>
 
 /*
  * There is always at least global CMA area and a few optional

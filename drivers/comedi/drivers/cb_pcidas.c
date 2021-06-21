@@ -7,7 +7,7 @@
  * Copyright (C) 2001-2003 Ivan Martinez <imr@oersted.dtu.dk>
  * Copyright (C) 2001,2002 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  */
 
@@ -51,9 +51,9 @@
  * analog triggering on 1602 series
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
 
 #include "../comedi_pci.h"
 

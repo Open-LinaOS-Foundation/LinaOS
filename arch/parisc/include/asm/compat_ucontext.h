@@ -2,7 +2,7 @@
 #ifndef _ASM_PARISC_COMPAT_UCONTEXT_H
 #define _ASM_PARISC_COMPAT_UCONTEXT_H
 
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 /* 32-bit ucontext as seen from an 64-bit kernel */
 struct compat_ucontext {

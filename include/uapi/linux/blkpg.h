@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI__LINUX_BLKPG_H
 #define _UAPI__LINUX_BLKPG_H
 
-#include <linux/compiler.h>
-#include <linux/ioctl.h>
+#include <linaos/compiler.h>
+#include <linaos/ioctl.h>
 
 #define BLKPG      _IO(0x12,105)
 

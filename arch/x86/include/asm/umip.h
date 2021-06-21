@@ -1,7 +1,7 @@
 #ifndef _ASM_X86_UMIP_H
 #define _ASM_X86_UMIP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/ptrace.h>
 
 #ifdef CONFIG_X86_UMIP

@@ -4,10 +4,10 @@
 #ifndef __LINUX_FBTFT_H
 #define __LINUX_FBTFT_H
 
-#include <linux/fb.h>
-#include <linux/spinlock.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_device.h>
+#include <linaos/fb.h>
+#include <linaos/spinlock.h>
+#include <linaos/spi/spi.h>
+#include <linaos/platform_device.h>
 
 #define FBTFT_ONBOARD_BACKLIGHT 2
 

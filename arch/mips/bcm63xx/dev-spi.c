@@ -7,12 +7,12 @@
  * Copyright (C) 2010 Tanguy Bouzeloc <tanguy.bouzeloc@efixo.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/clk.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
 
 #include <bcm63xx_cpu.h>
 #include <bcm63xx_dev_spi.h>

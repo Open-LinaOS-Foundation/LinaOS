@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2006 - 2009 Paul Mundt
  */
-#include <linux/irqflags.h>
-#include <linux/module.h>
+#include <linaos/irqflags.h>
+#include <linaos/module.h>
 
 void notrace arch_local_irq_restore(unsigned long flags)
 {

@@ -6,7 +6,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *   Vlad Yasevich     <vladislav.yasevich@hp.com>
@@ -15,8 +15,8 @@
 #ifndef __sctp_auth_h__
 #define __sctp_auth_h__
 
-#include <linux/list.h>
-#include <linux/refcount.h>
+#include <linaos/list.h>
+#include <linaos/refcount.h>
 
 struct sctp_endpoint;
 struct sctp_association;

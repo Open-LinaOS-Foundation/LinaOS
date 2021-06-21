@@ -4,19 +4,19 @@
  * Author: Kevin Tsai <ktsai@capellamicro.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <linux/regulator/consumer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/init.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/interrupt.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/init.h>
 
 /* Registers Address */
 #define CM32181_REG_ADDR_CMD		0x00

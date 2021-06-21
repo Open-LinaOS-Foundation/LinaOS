@@ -18,20 +18,20 @@
  *      Attach to the sighand only during read() and poll().
  */
 
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/list.h>
-#include <linux/anon_inodes.h>
-#include <linux/signalfd.h>
-#include <linux/syscalls.h>
-#include <linux/proc_fs.h>
-#include <linux/compat.h>
+#include <linaos/file.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>
+#include <linaos/list.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/signalfd.h>
+#include <linaos/syscalls.h>
+#include <linaos/proc_fs.h>
+#include <linaos/compat.h>
 
 void signalfd_cleanup(struct sighand_struct *sighand)
 {

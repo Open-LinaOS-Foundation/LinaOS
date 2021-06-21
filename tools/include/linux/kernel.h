@@ -5,8 +5,8 @@
 #include <stdarg.h>
 #include <stddef.h>
 #include <assert.h>
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
+#include <linaos/build_bug.h>
+#include <linaos/compiler.h>
 #include <endian.h>
 #include <byteswap.h>
 

@@ -6,7 +6,7 @@
  ******************************************************************************/
 #define _RTW_MLME_EXT_C_
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 #include <asm/unaligned.h>
 
 #include <osdep_service.h>

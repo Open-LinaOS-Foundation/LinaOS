@@ -11,7 +11,7 @@
 #ifndef _ASM_GENERIC_BITOPS_INSTRUMENTED_LOCK_H
 #define _ASM_GENERIC_BITOPS_INSTRUMENTED_LOCK_H
 
-#include <linux/instrumented.h>
+#include <linaos/instrumented.h>
 
 /**
  * clear_bit_unlock - Clear a bit in memory, for unlock

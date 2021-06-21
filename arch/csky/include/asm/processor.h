@@ -3,7 +3,7 @@
 #ifndef __ASM_CSKY_PROCESSOR_H
 #define __ASM_CSKY_PROCESSOR_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include <asm/segment.h>
 #include <asm/ptrace.h>
 #include <asm/current.h>

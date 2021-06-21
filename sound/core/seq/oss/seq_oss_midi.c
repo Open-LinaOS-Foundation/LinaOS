@@ -14,9 +14,9 @@
 #include "seq_oss_event.h"
 #include <sound/seq_midi_event.h>
 #include "../seq_lock.h"
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/nospec.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/nospec.h>
 
 
 /*

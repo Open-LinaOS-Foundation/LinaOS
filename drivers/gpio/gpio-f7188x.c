@@ -7,12 +7,12 @@
  * Author: Simon Guinot <simon.guinot@sequanux.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/bitops.h>
 
 #define DRVNAME "gpio-f7188x"
 

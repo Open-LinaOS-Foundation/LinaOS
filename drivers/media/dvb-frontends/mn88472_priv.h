@@ -11,8 +11,8 @@
 #include <media/dvb_frontend.h>
 #include <media/dvb_math.h>
 #include "mn88472.h"
-#include <linux/firmware.h>
-#include <linux/regmap.h>
+#include <linaos/firmware.h>
+#include <linaos/regmap.h>
 
 #define MN88472_FIRMWARE "dvb-demod-mn88472-02.fw"
 

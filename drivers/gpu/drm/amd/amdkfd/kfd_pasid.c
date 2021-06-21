@@ -20,7 +20,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "kfd_priv.h"
 #include "amdgpu_ids.h"
 

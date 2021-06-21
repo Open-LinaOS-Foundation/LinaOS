@@ -2,7 +2,7 @@
 Synopsys DesignWare Core SuperSpeed USB 3.0 Controller
 ===============================================================
 
-:Author: Felipe Balbi <felipe.balbi@linux.intel.com>
+:Author: Felipe Balbi <felipe.balbi@linaos.intel.com>
 :Date: April 2017
 
 Introduction
@@ -17,7 +17,7 @@ controller which can be configured in one of 4 ways:
 	3. Dual-Role configuration
 	4. Hub configuration
 
-Linux currently supports several versions of this controller. In all
+LinaOS currently supports several versions of this controller. In all
 likelyhood, the version in your SoC is already supported. At the time
 of this writing, known tested versions range from 2.02a to 3.10a. As a
 rule of thumb, anything above 2.02a should work reliably well.
@@ -153,7 +153,7 @@ problem. As soon as the fault is reproduced, make a copy of files
 		# cat /d/*dwc3*/regdump > /root/regdump.txt
 
 Make sure to compress ``trace.txt`` and ``regdump.txt`` in a tarball
-and email it to `me`_ with `linux-usb`_ in Cc. If you want to be extra
+and email it to `me`_ with `linaos-usb`_ in Cc. If you want to be extra
 sure that I'll help you, write your subject line in the following
 format:
 
@@ -172,7 +172,7 @@ Debugging
 First and foremost a disclaimer::
 
   DISCLAIMER: The information available on DebugFS and/or TraceFS can
-  change at any time at any Major Linux Kernel Release. If writing
+  change at any time at any Major LinaOS Kernel Release. If writing
   scripts, do **NOT** assume information to be available in the
   current format.
 
@@ -188,7 +188,7 @@ Synopsys Databook will be **really** valuable in this case.
 A USB Sniffer can be helpful at times but it's not entirely required,
 there's a lot that can be understood without looking at the wire.
 
-Feel free to email `me`_ and Cc `linux-usb`_ if you need any help.
+Feel free to email `me`_ and Cc `linaos-usb`_ if you need any help.
 
 ``DebugFS``
 -------------
@@ -706,6 +706,6 @@ Structures, Methods and Definitions
 .. [#debugfs] The Debug File System
 .. [#configfs] The Config File System
 .. [#cbw] Command Block Wrapper
-.. _Linus' tree: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
-.. _me: felipe.balbi@linux.intel.com
-.. _linux-usb: linux-usb@vger.kernel.org
+.. _Linus' tree: https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git/
+.. _me: felipe.balbi@linaos.intel.com
+.. _linaos-usb: linaos-usb@vger.kernel.org

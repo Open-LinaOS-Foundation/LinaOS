@@ -3,7 +3,7 @@
 * Copyright (C) 2012 Invensense, Inc.
 */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 #include "inv_mpu_iio.h"
 
 static unsigned int inv_scan_query_mpu6050(struct iio_dev *indio_dev)

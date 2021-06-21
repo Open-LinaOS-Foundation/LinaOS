@@ -6,10 +6,10 @@
 #ifndef __LINUX_OF_NET_H
 #define __LINUX_OF_NET_H
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 #ifdef CONFIG_OF_NET
-#include <linux/of.h>
+#include <linaos/of.h>
 
 struct net_device;
 extern int of_get_phy_mode(struct device_node *np, phy_interface_t *interface);

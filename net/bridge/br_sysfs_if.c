@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Sysfs attributes of bridge ports
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Stephen Hemminger		<shemminger@osdl.org>
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/if_bridge.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
-#include <linux/sched/signal.h>
+#include <linaos/capability.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_bridge.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched/signal.h>
 
 #include "br_private.h"
 

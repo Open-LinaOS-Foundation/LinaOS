@@ -2,8 +2,8 @@
 #ifndef _LINUX_FANOTIFY_H
 #define _LINUX_FANOTIFY_H
 
-#include <linux/sysctl.h>
-#include <uapi/linux/fanotify.h>
+#include <linaos/sysctl.h>
+#include <uapi/linaos/fanotify.h>
 
 extern struct ctl_table fanotify_table[]; /* for sysctl */
 

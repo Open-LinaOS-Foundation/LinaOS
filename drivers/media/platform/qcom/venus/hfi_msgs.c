@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2016, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
-#include <linux/hash.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/smem.h>
+#include <linaos/hash.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/soc/qcom/smem.h>
 #include <media/videobuf2-v4l2.h>
 
 #include "core.h"

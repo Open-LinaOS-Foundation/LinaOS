@@ -48,36 +48,36 @@ verify "$FBZIMAGE"
 genbzdisk() {
 	verify "$MTOOLSRC"
 	mformat a:
-	syslinux $FIMAGE
-	echo "$KCMDLINE" | mcopy - a:syslinux.cfg
+	syslinaos $FIMAGE
+	echo "$KCMDLINE" | mcopy - a:syslinaos.cfg
 	if [ -f "$FDINITRD" ] ; then
 		mcopy "$FDINITRD" a:initrd.img
 	fi
-	mcopy $FBZIMAGE a:linux
+	mcopy $FBZIMAGE a:linaos
 }
 
 genfdimage144() {
 	verify "$MTOOLSRC"
 	dd if=/dev/zero of=$FIMAGE bs=1024 count=1440 2> /dev/null
 	mformat v:
-	syslinux $FIMAGE
-	echo "$KCMDLINE" | mcopy - v:syslinux.cfg
+	syslinaos $FIMAGE
+	echo "$KCMDLINE" | mcopy - v:syslinaos.cfg
 	if [ -f "$FDINITRD" ] ; then
 		mcopy "$FDINITRD" v:initrd.img
 	fi
-	mcopy $FBZIMAGE v:linux
+	mcopy $FBZIMAGE v:linaos
 }
 
 genfdimage288() {
 	verify "$MTOOLSRC"
 	dd if=/dev/zero of=$FIMAGE bs=1024 count=2880 2> /dev/null
 	mformat w:
-	syslinux $FIMAGE
-	echo "$KCMDLINE" | mcopy - W:syslinux.cfg
+	syslinaos $FIMAGE
+	echo "$KCMDLINE" | mcopy - W:syslinaos.cfg
 	if [ -f "$FDINITRD" ] ; then
 		mcopy "$FDINITRD" w:initrd.img
 	fi
-	mcopy $FBZIMAGE w:linux
+	mcopy $FBZIMAGE w:linaos
 }
 
 geniso() {
@@ -85,37 +85,37 @@ geniso() {
 	rm -rf $tmp_dir
 	mkdir $tmp_dir
 	for i in lib lib64 share ; do
-		for j in syslinux ISOLINUX ; do
-			if [ -f /usr/$i/$j/isolinux.bin ] ; then
-				isolinux=/usr/$i/$j/isolinux.bin
+		for j in syslinaos ISOLINUX ; do
+			if [ -f /usr/$i/$j/isolinaos.bin ] ; then
+				isolinaos=/usr/$i/$j/isolinaos.bin
 			fi
 		done
-		for j in syslinux syslinux/modules/bios ; do
-			if [ -f /usr/$i/$j/ldlinux.c32 ]; then
-				ldlinux=/usr/$i/$j/ldlinux.c32
+		for j in syslinaos syslinaos/modules/bios ; do
+			if [ -f /usr/$i/$j/ldlinaos.c32 ]; then
+				ldlinaos=/usr/$i/$j/ldlinaos.c32
 			fi
 		done
-		if [ -n "$isolinux" -a -n "$ldlinux" ] ; then
+		if [ -n "$isolinaos" -a -n "$ldlinaos" ] ; then
 			break
 		fi
 	done
-	if [ -z "$isolinux" ] ; then
-		echo 'Need an isolinux.bin file, please install syslinux/isolinux.'
+	if [ -z "$isolinaos" ] ; then
+		echo 'Need an isolinaos.bin file, please install syslinaos/isolinaos.'
 		exit 1
 	fi
-	if [ -z "$ldlinux" ] ; then
-		echo 'Need an ldlinux.c32 file, please install syslinux/isolinux.'
+	if [ -z "$ldlinaos" ] ; then
+		echo 'Need an ldlinaos.c32 file, please install syslinaos/isolinaos.'
 		exit 1
 	fi
-	cp $isolinux $tmp_dir
-	cp $ldlinux $tmp_dir
-	cp $FBZIMAGE $tmp_dir/linux
-	echo "$KCMDLINE" > $tmp_dir/isolinux.cfg
+	cp $isolinaos $tmp_dir
+	cp $ldlinaos $tmp_dir
+	cp $FBZIMAGE $tmp_dir/linaos
+	echo "$KCMDLINE" > $tmp_dir/isolinaos.cfg
 	if [ -f "$FDINITRD" ] ; then
 		cp "$FDINITRD" $tmp_dir/initrd.img
 	fi
 	genisoimage -J -r -input-charset=utf-8 -quiet -o $FIMAGE \
-		-b isolinux.bin -c boot.cat -no-emul-boot -boot-load-size 4 \
+		-b isolinaos.bin -c boot.cat -no-emul-boot -boot-load-size 4 \
 		-boot-info-table $tmp_dir
 	isohybrid $FIMAGE 2>/dev/null || true
 	rm -rf $tmp_dir

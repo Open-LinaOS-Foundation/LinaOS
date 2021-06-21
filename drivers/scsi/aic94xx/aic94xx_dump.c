@@ -11,7 +11,7 @@
  * Print all cseq and lseq mip and mdp.
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "aic94xx.h"
 #include "aic94xx_reg.h"
 #include "aic94xx_reg_def.h"

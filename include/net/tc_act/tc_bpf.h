@@ -6,7 +6,7 @@
 #ifndef __NET_TC_BPF_H
 #define __NET_TC_BPF_H
 
-#include <linux/filter.h>
+#include <linaos/filter.h>
 #include <net/act_api.h>
 
 struct tcf_bpf {

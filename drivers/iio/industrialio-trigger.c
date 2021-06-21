@@ -4,19 +4,19 @@
  * Copyright (c) 2008 Jonathan Cameron
  */
 
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/idr.h>
+#include <linaos/err.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/trigger.h>
 #include "iio_core.h"
 #include "iio_core_trigger.h"
-#include <linux/iio/trigger_consumer.h>
+#include <linaos/iio/trigger_consumer.h>
 
 /* RFC - Question of approach
  * Make the common case (single sensor single trigger)

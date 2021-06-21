@@ -7,7 +7,7 @@
 #ifndef __IEEE80211_H
 #define __IEEE80211_H
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #define MGMT_QUEUE_NUM 5
 

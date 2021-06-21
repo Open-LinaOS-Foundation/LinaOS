@@ -9,11 +9,11 @@
  * Copyright (C) 2009 Igor M. Liplianin <liplianin@netup.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
 
 #include "stv0900.h"
 #include "stv0900_reg.h"

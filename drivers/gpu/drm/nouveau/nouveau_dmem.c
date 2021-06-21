@@ -37,8 +37,8 @@
 
 #include <nvhw/class/cla0b5.h>
 
-#include <linux/sched/mm.h>
-#include <linux/hmm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/hmm.h>
 
 /*
  * FIXME: this is ugly right now we are using TTM to allocate vram and we pin

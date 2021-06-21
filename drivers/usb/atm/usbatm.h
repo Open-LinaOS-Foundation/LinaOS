@@ -10,17 +10,17 @@
 #ifndef	_USBATM_H_
 #define	_USBATM_H_
 
-#include <linux/atm.h>
-#include <linux/atmdev.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/stringify.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
-#include <linux/ratelimit.h>
+#include <linaos/atm.h>
+#include <linaos/atmdev.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/stringify.h>
+#include <linaos/usb.h>
+#include <linaos/mutex.h>
+#include <linaos/ratelimit.h>
 
 /*
 #define VERBOSE_DEBUG

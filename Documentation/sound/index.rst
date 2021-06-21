@@ -1,5 +1,5 @@
 ===================================
-Linux Sound Subsystem Documentation
+LinaOS Sound Subsystem Documentation
 ===================================
 
 .. toctree::

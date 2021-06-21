@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/nfc.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/acpi.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/nfc.h>
+#include <linaos/of.h>
 #include <net/nfc/nci.h>
 
 #include "st-nci.h"

@@ -4,7 +4,7 @@
 #ifndef _TEST_IPTNL_COMMON_H
 #define _TEST_IPTNL_COMMON_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MAX_IPTNL_ENTRIES 256U
 

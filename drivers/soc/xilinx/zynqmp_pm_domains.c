@@ -9,15 +9,15 @@
  *  Rajan Vaja <rajan.vaja@xilinx.com>
  */
 
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/slab.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 
 #define ZYNQMP_NUM_DOMAINS		(100)
 /* Flag stating if PM nodes mapped to the PM domain has been requested */

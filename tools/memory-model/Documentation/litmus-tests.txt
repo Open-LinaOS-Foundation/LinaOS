@@ -1,4 +1,4 @@
-Linux-Kernel Memory Model Litmus Tests
+LinaOS-Kernel Memory Model Litmus Tests
 ======================================
 
 This file describes the LKMM litmus-test format by example, describes
@@ -34,8 +34,8 @@ Several thousand more example litmus tests are available on github
 and kernel.org:
 
 	https://github.com/paulmckrcu/litmus
-	https://git.kernel.org/pub/scm/linux/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/herd
-	https://git.kernel.org/pub/scm/linux/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/litmus
+	https://git.kernel.org/pub/scm/linaos/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/herd
+	https://git.kernel.org/pub/scm/linaos/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/litmus
 
 The -l and -L arguments to "git grep" can be quite helpful in identifying
 existing litmus tests that are similar to the one you need.  But even if
@@ -57,7 +57,7 @@ Message-Passing Example
 
 This section gives an overview of the format of a litmus test using an
 example based on the common message-passing use case.  This use case
-appears often in the Linux kernel.  For example, a flag (modeled by "y"
+appears often in the LinaOS kernel.  For example, a flag (modeled by "y"
 below) indicates that a buffer (modeled by "x" below) is now completely
 filled in and ready for use.  It would be very bad if the consumer saw the
 flag set, but, due to memory misordering, saw old values in the buffer.
@@ -92,7 +92,7 @@ of the full C language).  The remainder of line 1 is the name of
 the test, which by convention is the filename with the ".litmus"
 suffix stripped.  In this case, the actual test may be found in
 tools/memory-model/litmus-tests/MP+pooncerelease+poacquireonce.litmus
-in the Linux-kernel source tree.
+in the LinaOS-kernel source tree.
 
 Mechanically generated litmus tests will often have an optional
 double-quoted comment string on the second line.  Such strings are ignored
@@ -109,7 +109,7 @@ initialization must have non-empty initialization sections, as in the
 example that will be presented later in this document.
 
 Lines 5-9 show the first process and lines 11-18 the second process.  Each
-process corresponds to a Linux-kernel task (or kthread, workqueue, thread,
+process corresponds to a LinaOS-kernel task (or kthread, workqueue, thread,
 and so on; LKMM discussions often use these terms interchangeably).
 The name of the first process is "P0" and that of the second "P1".
 You can name your processes anything you like as long as the names consist
@@ -136,11 +136,11 @@ This will sometimes result in an error message, but can also cause the
 intended global to instead be silently treated as an undeclared local
 variable.
 
-Each process's code is similar to Linux-kernel C, as can be seen on lines
-7-8 and 13-17.  This code may use many of the Linux kernel's atomic
+Each process's code is similar to LinaOS-kernel C, as can be seen on lines
+7-8 and 13-17.  This code may use many of the LinaOS kernel's atomic
 operations, some of its exclusive-lock functions, and some of its RCU
 and SRCU functions.  An approximate list of the currently supported
-functions may be found in the linux-kernel.def file.
+functions may be found in the linaos-kernel.def file.
 
 The P0() process does "WRITE_ONCE(*x, 1)" on line 7.  Because "x" is a
 pointer in P0()'s parameter list, this does an unordered store to global
@@ -180,7 +180,7 @@ This example can be checked by running the following command, which
 absolutely must be run from the tools/memory-model directory and from
 this directory only:
 
-herd7 -conf linux-kernel.cfg litmus-tests/MP+pooncerelease+poacquireonce.litmus
+herd7 -conf linaos-kernel.cfg litmus-tests/MP+pooncerelease+poacquireonce.litmus
 
 The output is the result of something similar to a full state-space
 search, and is as follows:
@@ -311,7 +311,7 @@ LKMM supports the C-language "if" statement, which allows modeling of
 conditional branches.  In LKMM, conditional branches can affect ordering,
 but only if you are *very* careful (compilers are surprisingly able
 to optimize away conditional branches).  The following example shows
-the "load buffering" (LB) use case that is used in the Linux kernel to
+the "load buffering" (LB) use case that is used in the LinaOS kernel to
 synchronize between ring-buffer producers and consumers.  In the example
 below, P0() is one side checking to see if an operation may proceed and
 P1() is the other side completing its update.
@@ -426,7 +426,7 @@ The herd7 output is as follows:
 13 Hash=c7f30fe0faebb7d565405d55b7318ada
 
 (This output indicates that CPUs are permitted to "snoop their own
-store buffers", which all of Linux's CPU families other than s390 will
+store buffers", which all of LinaOS's CPU families other than s390 will
 happily do.  Such snooping results in disagreement among CPUs on the
 order of stores from different CPUs, which is rarely an issue.)
 
@@ -541,7 +541,7 @@ such as emulating reader-writer locking, which LKMM does not yet model.
 
 This litmus test may be found here:
 
-https://git.kernel.org/pub/scm/linux/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/herd/C-SB+l-o-o-u+l-o-o-u-X.litmus
+https://git.kernel.org/pub/scm/linaos/kernel/git/paulmck/perfbook.git/tree/CodeSamples/formal/herd/C-SB+l-o-o-u+l-o-o-u-X.litmus
 
 This test uses two global variables, "x1" and "x2", and also emulates a
 single global spinlock named "sl".  This spinlock is held by whichever
@@ -930,7 +930,7 @@ helpful when developing and debugging litmus tests.
 LIMITATIONS
 ===========
 
-Limitations of the Linux-kernel memory model (LKMM) include:
+Limitations of the LinaOS-kernel memory model (LKMM) include:
 
 1.	Compiler optimizations are not accurately modeled.  Of course,
 	the use of READ_ONCE() and WRITE_ONCE() limits the compiler's
@@ -980,11 +980,11 @@ Limitations of the Linux-kernel memory model (LKMM) include:
 	operations, locking primitives, and RCU is not provided.
 	For example, call_rcu() and rcu_barrier() are not supported.
 	However, a substantial amount of support is provided for these
-	operations, as shown in the linux-kernel.def file.
+	operations, as shown in the linaos-kernel.def file.
 
 	Here are specific limitations:
 
-	a.	When rcu_assign_pointer() is passed NULL, the Linux
+	a.	When rcu_assign_pointer() is passed NULL, the LinaOS
 		kernel provides no ordering, but LKMM models this
 		case as a store release.
 
@@ -995,7 +995,7 @@ Limitations of the Linux-kernel memory model (LKMM) include:
 
 		One exception of this limitation is atomic_add_unless(),
 		which is provided directly by herd7 (so no corresponding
-		definition in linux-kernel.def).  atomic_add_unless() is
+		definition in linaos-kernel.def).  atomic_add_unless() is
 		modeled by herd7 therefore it can be used in litmus tests.
 
 	c.	The call_rcu() function is not modeled.  As was shown above,
@@ -1013,7 +1013,7 @@ Limitations of the Linux-kernel memory model (LKMM) include:
 
 	e.	Although sleepable RCU (SRCU) is now modeled, there
 		are some subtle differences between its semantics and
-		those in the Linux kernel.  For example, the kernel
+		those in the LinaOS kernel.  For example, the kernel
 		might interpret the following sequence as two partially
 		overlapping SRCU read-side critical sections:
 
@@ -1054,7 +1054,7 @@ limited and in some ways non-standard:
 	these functions.
 
 4.	The only functions that can be invoked are those built directly
-	into herd7 or that are defined in the linux-kernel.def file.
+	into herd7 or that are defined in the linaos-kernel.def file.
 
 5.	The "switch", "do", "for", "while", and "goto" C statements are
 	not supported.	The "switch" statement can be emulated by the
@@ -1084,7 +1084,7 @@ limited and in some ways non-standard:
 	allocated variables.
 
 Some of these limitations may be overcome in the future, but others are
-more likely to be addressed by incorporating the Linux-kernel memory model
+more likely to be addressed by incorporating the LinaOS-kernel memory model
 into other tools.
 
 Finally, please note that LKMM is subject to change as hardware, use cases,

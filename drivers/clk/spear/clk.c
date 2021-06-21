@@ -9,8 +9,8 @@
  * SPEAr clk - Common routines
  */
 
-#include <linux/clk-provider.h>
-#include <linux/types.h>
+#include <linaos/clk-provider.h>
+#include <linaos/types.h>
 #include "clk.h"
 
 long clk_round_rate_index(struct clk_hw *hw, unsigned long drate,

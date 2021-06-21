@@ -8,7 +8,7 @@
 #ifndef SND_UNIPHIER_AIO_REG_H__
 #define SND_UNIPHIER_AIO_REG_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* soc-glue */
 #define SG_AOUTEN                       0x1c04

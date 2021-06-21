@@ -4,16 +4,16 @@
  *
  * Copyright 2019 Analog Devices Inc.
  */
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/fpga/adi-axi-common.h>
-#include <linux/hwmon.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/fpga/adi-axi-common.h>
+#include <linaos/hwmon.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 /* register map */
 #define ADI_REG_RSTN		0x0080

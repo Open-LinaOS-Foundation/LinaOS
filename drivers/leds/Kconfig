@@ -9,7 +9,7 @@ config LEDS_GPIO_REGISTER
 menuconfig NEW_LEDS
 	bool "LED Support"
 	help
-	  Say Y to enable Linux LED support.  This allows control of supported
+	  Say Y to enable LinaOS LED support.  This allows control of supported
 	  LEDs from both userspace and optionally, by kernel events (triggers).
 
 if NEW_LEDS

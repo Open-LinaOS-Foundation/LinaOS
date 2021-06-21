@@ -14,21 +14,21 @@
  *		Additions for address_space-based writeback
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/kthread.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/tracepoint.h>
-#include <linux/device.h>
-#include <linux/memcontrol.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/kthread.h>
+#include <linaos/writeback.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/tracepoint.h>
+#include <linaos/device.h>
+#include <linaos/memcontrol.h>
 #include "internal.h"
 
 /*

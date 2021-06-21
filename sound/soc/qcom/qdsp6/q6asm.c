@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The LinaOS Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/mutex.h>
-#include <linux/wait.h>
-#include <linux/module.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/device.h>
-#include <linux/of_platform.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/of.h>
+#include <linaos/mutex.h>
+#include <linaos/wait.h>
+#include <linaos/module.h>
+#include <linaos/soc/qcom/apr.h>
+#include <linaos/device.h>
+#include <linaos/of_platform.h>
+#include <linaos/spinlock.h>
+#include <linaos/kref.h>
+#include <linaos/of.h>
 #include <uapi/sound/asound.h>
 #include <uapi/sound/compress_params.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 #include "q6asm.h"
 #include "q6core.h"
 #include "q6dsp-errno.h"

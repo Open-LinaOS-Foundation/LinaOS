@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * 25-Jul-1998 Major changes to allow for ip chain table
  *
@@ -16,12 +16,12 @@
 #ifndef _UAPI_IP6_TABLES_H
 #define _UAPI_IP6_TABLES_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/if.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/if.h>
+#include <linaos/netfilter_ipv6.h>
 
-#include <linux/netfilter/x_tables.h>
+#include <linaos/netfilter/x_tables.h>
 
 #ifndef __KERNEL__
 #define IP6T_FUNCTION_MAXNAMELEN XT_FUNCTION_MAXNAMELEN
@@ -39,7 +39,7 @@
 #define IP6T_RETURN XT_RETURN
 
 /* Pre-iptables-1.4.0 */
-#include <linux/netfilter/xt_tcpudp.h>
+#include <linaos/netfilter/xt_tcpudp.h>
 #define ip6t_tcp xt_tcp
 #define ip6t_udp xt_udp
 #define IP6T_TCP_INV_SRCPT	XT_TCP_INV_SRCPT
@@ -163,10 +163,10 @@ struct ip6t_error {
 
 /*
  * New IP firewall options for [gs]etsockopt at the RAW IP level.
- * Unlike BSD Linux inherits IP options so you don't have to use
+ * Unlike BSD LinaOS inherits IP options so you don't have to use
  * a raw socket for this. Instead we check rights in the calls.
  *
- * ATTENTION: check linux/in6.h before adding new number here.
+ * ATTENTION: check linaos/in6.h before adding new number here.
  */
 #define IP6T_BASE_CTL			64
 

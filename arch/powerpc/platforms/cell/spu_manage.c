@@ -7,15 +7,15 @@
  * (C) Copyright 2007 TOSHIBA CORPORATION
  */
 
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/export.h>
+#include <linaos/ptrace.h>
+#include <linaos/wait.h>
+#include <linaos/mm.h>
+#include <linaos/io.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
 
 #include <asm/spu.h>
 #include <asm/spu_priv1.h>

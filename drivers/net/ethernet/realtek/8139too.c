@@ -1,6 +1,6 @@
 /*
 
-	8139too.c: A RealTek RTL-8139 Fast Ethernet driver for Linux.
+	8139too.c: A RealTek RTL-8139 Fast Ethernet driver for LinaOS.
 
 	Maintained by Jeff Garzik <jgarzik@pobox.com>
 	Copyright 2000-2002 Jeff Garzik
@@ -95,24 +95,24 @@
 #define DRV_VERSION	"0.9.28"
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/completion.h>
-#include <linux/crc32.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/delay.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/completion.h>
+#include <linaos/crc32.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/gfp.h>
+#include <linaos/if_vlan.h>
 #include <asm/irq.h>
 
 #define RTL8139_DRIVER_NAME   DRV_NAME " Fast Ethernet driver " DRV_VERSION

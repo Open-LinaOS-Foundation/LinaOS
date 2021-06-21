@@ -13,9 +13,9 @@
  * more details.
  */
 
-#include <linux/string.h> /* for memcpy() */
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/string.h> /* for memcpy() */
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include "hmm.h"
 

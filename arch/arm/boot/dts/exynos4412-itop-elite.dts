@@ -31,7 +31,7 @@
 			label = "red:system";
 			gpios = <&gpx1 0 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led3 {
@@ -46,31 +46,31 @@
 
 		home {
 			label = "GPIO Key Home";
-			linux,code = <KEY_HOME>;
+			linaos,code = <KEY_HOME>;
 			gpios = <&gpx1 1 GPIO_ACTIVE_LOW>;
 		};
 
 		back {
 			label = "GPIO Key Back";
-			linux,code = <KEY_BACK>;
+			linaos,code = <KEY_BACK>;
 			gpios = <&gpx1 2 GPIO_ACTIVE_LOW>;
 		};
 
 		sleep {
 			label = "GPIO Key Sleep";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpx3 3 GPIO_ACTIVE_LOW>;
 		};
 
 		vol-up {
 			label = "GPIO Key Vol+";
-			linux,code = <KEY_UP>;
+			linaos,code = <KEY_UP>;
 			gpios = <&gpx2 1 GPIO_ACTIVE_LOW>;
 		};
 
 		vol-down {
 			label = "GPIO Key Vol-";
-			linux,code = <KEY_DOWN>;
+			linaos,code = <KEY_DOWN>;
 			gpios = <&gpx2 0 GPIO_ACTIVE_LOW>;
 		};
 	};

@@ -4,7 +4,7 @@ Keyboard notifier
 
 One can use register_keyboard_notifier to get called back on keyboard
 events (see kbd_keycode() function for details).  The passed structure is
-keyboard_notifier_param (see <linux/keyboard.h>):
+keyboard_notifier_param (see <linaos/keyboard.h>):
 
 - 'vc' always provide the VC for which the keyboard event applies;
 - 'down' is 1 for a key press event, 0 for a key release;

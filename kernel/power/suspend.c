@@ -9,27 +9,27 @@
 
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/swait.h>
-#include <linux/ftrace.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuidle.h>
+#include <linaos/gfp.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/suspend.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/swait.h>
+#include <linaos/ftrace.h>
 #include <trace/events/power.h>
-#include <linux/compiler.h>
-#include <linux/moduleparam.h>
+#include <linaos/compiler.h>
+#include <linaos/moduleparam.h>
 
 #include "power.h"
 

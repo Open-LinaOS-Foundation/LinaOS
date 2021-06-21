@@ -7,18 +7,18 @@
  * in ptrace.c and signal.c.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/entry-common.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/export.h>
-#include <linux/nospec.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/entry-common.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/export.h>
+#include <linaos/nospec.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 
 #ifdef CONFIG_XEN_PV
 #include <xen/xen-ops.h>

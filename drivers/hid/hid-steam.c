@@ -33,15 +33,15 @@
  *   https://github.com/rodrigorc/steamctrl
  */
 
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
+#include <linaos/device.h>
+#include <linaos/input.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/rcupdate.h>
+#include <linaos/delay.h>
+#include <linaos/power_supply.h>
 #include "hid-ids.h"
 
 MODULE_LICENSE("GPL");

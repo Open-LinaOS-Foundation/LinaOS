@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux Plug-and-Play Support.
+# Makefile for the LinaOS Plug-and-Play Support.
 #
 
 obj-y		:= pnp.o

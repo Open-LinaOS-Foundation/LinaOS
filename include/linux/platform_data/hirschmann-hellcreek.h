@@ -9,7 +9,7 @@
 #ifndef _HIRSCHMANN_HELLCREEK_H_
 #define _HIRSCHMANN_HELLCREEK_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct hellcreek_platform_data {
 	const char *name;	/* Switch name */

@@ -10,7 +10,7 @@
  *                     The Silver Hammer Group, Ltd.
  *
  */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef _MC68EZ328_H_
 #define _MC68EZ328_H_

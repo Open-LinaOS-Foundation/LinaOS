@@ -6,11 +6,11 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 
 #include "pci-bcm63xx.h"
 

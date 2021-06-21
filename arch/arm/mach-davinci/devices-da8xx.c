@@ -6,17 +6,17 @@
  * Derived from code that was:
  *	Copyright (C) 2006 Komal Shah <komal_shah802003@yahoo.com>
  */
-#include <linux/ahci_platform.h>
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dmaengine.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/serial_8250.h>
+#include <linaos/ahci_platform.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/dmaengine.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/serial_8250.h>
 
 #include <mach/common.h>
 #include <mach/cputype.h>

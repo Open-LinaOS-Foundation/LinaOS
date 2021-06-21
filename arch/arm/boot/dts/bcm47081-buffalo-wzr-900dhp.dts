@@ -57,7 +57,7 @@
 		power0 {
 			label = "bcm53xx:green:power";
 			gpios = <&hc595 1 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		power1 {
@@ -68,7 +68,7 @@
 		router0 {
 			label = "bcm53xx:green:router";
 			gpios = <&hc595 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		router1 {
@@ -79,7 +79,7 @@
 		wan {
 			label = "bcm53xx:green:wan";
 			gpios = <&hc595 5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		wireless0 {
@@ -98,7 +98,7 @@
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 11 GPIO_ACTIVE_LOW>;
 		};
 	};

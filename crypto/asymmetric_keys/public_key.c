@@ -8,13 +8,13 @@
  */
 
 #define pr_fmt(fmt) "PKEY: "fmt
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/asn1.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/scatterlist.h>
+#include <linaos/asn1.h>
 #include <keys/asymmetric-subtype.h>
 #include <crypto/public_key.h>
 #include <crypto/akcipher.h>

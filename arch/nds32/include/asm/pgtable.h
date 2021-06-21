@@ -5,7 +5,7 @@
 #define _ASMNDS32_PGTABLE_H
 
 #include <asm-generic/pgtable-nopmd.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <asm/memory.h>
 #include <asm/nds32.h>
@@ -359,7 +359,7 @@ extern pgd_t swapper_pg_dir[PTRS_PER_PGD];
 #define __pte_to_swp_entry(pte)	     ((swp_entry_t) { pte_val(pte) })
 #define __swp_entry_to_pte(swp)	     ((pte_t) { (swp).val })
 
-/* Needs to be defined here and not in linux/mm.h, as it is arch dependent */
+/* Needs to be defined here and not in linaos/mm.h, as it is arch dependent */
 #define kern_addr_valid(addr)	(1)
 
 /*

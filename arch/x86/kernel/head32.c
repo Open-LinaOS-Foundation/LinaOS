@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/i386/kernel/head32.c -- prepare to run common code
+ *  linaos/arch/i386/kernel/head32.c -- prepare to run common code
  *
  *  Copyright (C) 2000 Andrea Arcangeli <andrea@suse.de> SuSE
  *  Copyright (C) 2007 Eric Biederman <ebiederm@xmission.com>
  */
 
-#include <linux/init.h>
-#include <linux/start_kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
+#include <linaos/init.h>
+#include <linaos/start_kernel.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
 
 #include <asm/desc.h>
 #include <asm/setup.h>

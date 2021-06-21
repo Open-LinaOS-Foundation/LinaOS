@@ -41,7 +41,7 @@ BPF program::
   0``, e.g. writes to numeric sysctl entries must always be at file position
   ``0``. See also ``kernel.sysctl_writes_strict`` sysctl.
 
-See `linux/bpf.h`_ for more details on how context field can be accessed.
+See `linaos/bpf.h`_ for more details on how context field can be accessed.
 
 3. Return code
 **************
@@ -90,7 +90,7 @@ string:
 * ``bpf_strtoul()`` to convert initial part of the string to unsigned long
   integer similar to user space `strtoul(3)`_;
 
-See `linux/bpf.h`_ for more details on helpers described here.
+See `linaos/bpf.h`_ for more details on helpers described here.
 
 5. Examples
 ***********
@@ -118,8 +118,8 @@ application running as root in a cgroup should not be allowed to
 detach/replace BPF program attached by administrator.
 
 .. Links
-.. _linux/bpf.h: ../../include/uapi/linux/bpf.h
-.. _strtol(3): http://man7.org/linux/man-pages/man3/strtol.3p.html
-.. _strtoul(3): http://man7.org/linux/man-pages/man3/strtoul.3p.html
+.. _linaos/bpf.h: ../../include/uapi/linaos/bpf.h
+.. _strtol(3): http://man7.org/linaos/man-pages/man3/strtol.3p.html
+.. _strtoul(3): http://man7.org/linaos/man-pages/man3/strtoul.3p.html
 .. _test_sysctl_prog.c:
    ../../tools/testing/selftests/bpf/progs/test_sysctl_prog.c

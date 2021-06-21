@@ -2,7 +2,7 @@
 #ifndef USB__GADGET__CONFIGFS__H
 #define USB__GADGET__CONFIGFS__H
 
-#include <linux/configfs.h>
+#include <linaos/configfs.h>
 
 void unregister_gadget_item(struct config_item *item);
 

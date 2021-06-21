@@ -9,8 +9,8 @@
 #ifndef __THERMAL_CORE_H__
 #define __THERMAL_CORE_H__
 
-#include <linux/device.h>
-#include <linux/thermal.h>
+#include <linaos/device.h>
+#include <linaos/thermal.h>
 
 #include "thermal_netlink.h"
 

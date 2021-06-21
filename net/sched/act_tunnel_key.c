@@ -4,11 +4,11 @@
  * Copyright (c) 2016, Mellanox Technologies. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
 #include <net/geneve.h>
 #include <net/vxlan.h>
 #include <net/erspan.h>
@@ -17,7 +17,7 @@
 #include <net/dst.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_tunnel_key.h>
+#include <linaos/tc_act/tc_tunnel_key.h>
 #include <net/tc_act/tc_tunnel_key.h>
 
 static unsigned int tunnel_key_net_id;

@@ -4,14 +4,14 @@
  * Copyright (c) 2011 Unixphere
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/rmi.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/rmi.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 #include "rmi_driver.h"
 #include "rmi_2d_sensor.h"
 

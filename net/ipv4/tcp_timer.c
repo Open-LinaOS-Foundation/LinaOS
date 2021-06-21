@@ -19,8 +19,8 @@
  *		Jorge Cwik, <jorge@laser.satlink.net>
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
 #include <net/tcp.h>
 
 static u32 tcp_clamp_rto_to_user_timeout(const struct sock *sk)

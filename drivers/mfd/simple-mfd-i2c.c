@@ -10,11 +10,11 @@
  * represented by child nodes in Device Tree will be subsequently registered.
  */
 
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
 
 static const struct regmap_config simple_regmap_config = {
 	.reg_bits = 8,

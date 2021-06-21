@@ -4,8 +4,8 @@
  *  Copyright (C) 2005 Mike Isely <isely@pobox.com>
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 #include "pvrusb2-sysfs.h"
 #include "pvrusb2-hdw.h"
 #include "pvrusb2-debug.h"

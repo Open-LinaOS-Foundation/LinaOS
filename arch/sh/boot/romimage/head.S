@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/arch/sh/boot/romimage/head.S
+ *  linaos/arch/sh/boot/romimage/head.S
  *
  * Board specific setup code, executed before zImage loader
  */
@@ -43,7 +43,7 @@ loaded_code_offs:
 loaded_code:
 #endif /* CONFIG_ROMIMAGE_MMCIF */
 
-	/* copy the empty_zero_page contents to where vmlinux expects it */
+	/* copy the empty_zero_page contents to where vmlinaos expects it */
 	mova	extra_data_pos, r0
 	mov.l	extra_data_size, r1
 	add	r1, r0

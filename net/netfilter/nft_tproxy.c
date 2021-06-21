@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/module.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linaos/module.h>
+#include <linaos/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tproxy.h>
 #include <net/inet_sock.h>
 #include <net/tcp.h>
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 #include <net/netfilter/ipv4/nf_defrag_ipv4.h>
 #if IS_ENABLED(CONFIG_NF_TABLES_IPV6)
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>

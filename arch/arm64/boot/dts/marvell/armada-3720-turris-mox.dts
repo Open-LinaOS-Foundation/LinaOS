@@ -35,7 +35,7 @@
 		red {
 			label = "mox:red:activity";
 			gpios = <&gpiosb 21 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 
@@ -44,7 +44,7 @@
 
 		reset {
 			label = "reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpiosb 20 GPIO_ACTIVE_LOW>;
 			debounce-interval = <60>;
 		};

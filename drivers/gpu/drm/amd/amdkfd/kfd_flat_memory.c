@@ -21,19 +21,19 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <uapi/linux/kfd_ioctl.h>
-#include <linux/time.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/compat.h>
+#include <uapi/linaos/kfd_ioctl.h>
+#include <linaos/time.h>
 #include "kfd_priv.h"
-#include <linux/mm.h>
-#include <linux/mman.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
 #include <asm/processor.h>
 
 /*

@@ -9,10 +9,10 @@ SYNOPSIS
 --------
 [verse]
 'perf kvm' [--host] [--guest] [--guestmount=<path>
-	[--guestkallsyms=<path> --guestmodules=<path> | --guestvmlinux=<path>]]
+	[--guestkallsyms=<path> --guestmodules=<path> | --guestvmlinaos=<path>]]
 	{top|record|report|diff|buildid-list} [<options>]
 'perf kvm' [--host] [--guest] [--guestkallsyms=<path> --guestmodules=<path>
-	| --guestvmlinux=<path>] {top|record|report|diff|buildid-list|stat} [<options>]
+	| --guestvmlinaos=<path>] {top|record|report|diff|buildid-list|stat} [<options>]
 'perf kvm stat [record|report|live] [<options>]
 
 DESCRIPTION
@@ -92,8 +92,8 @@ OPTIONS
 --guestmodules=<path>::
 	Guest os /proc/modules file copy. 'perf' kvm' reads it to get guest
 	kernel module information. Users copy it out from guest os.
---guestvmlinux=<path>::
-	Guest os kernel vmlinux.
+--guestvmlinaos=<path>::
+	Guest os kernel vmlinaos.
 -v::
 --verbose::
 	Be more verbose (show counter open errors, etc).

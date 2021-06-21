@@ -75,7 +75,7 @@ examples:
                 reg = <0>;
                 color = <LED_COLOR_ID_MULTI>;
                 function = LED_FUNCTION_POWER;
-                linux,default-trigger = "heartbeat";
+                linaos,default-trigger = "heartbeat";
             };
 
             multi-led@a {

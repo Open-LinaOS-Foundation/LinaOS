@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "atom-types.h"
 #include "atombios.h"
 #include "pppcielanes.h"

@@ -6,10 +6,10 @@
  *          Dave Airlie
  */
 
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>

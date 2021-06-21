@@ -4,14 +4,14 @@
  * Copyright 2010-2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/hugetlb.h>
-#include <linux/module.h>
-#include <linux/log2.h>
-#include <linux/sizes.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/hugetlb.h>
+#include <linaos/module.h>
+#include <linaos/log2.h>
+#include <linaos/sizes.h>
 
 #include <asm/trace.h>
 #include <asm/kvm_ppc.h>
@@ -256,7 +256,7 @@ long kvmppc_do_h_enter(struct kvm *kvm, unsigned long flags,
 			arch_spin_unlock(&kvm->mmu_lock.rlock.raw_lock);
 			return H_PARAMETER;
 		}
-		pte = kvmppc_read_update_linux_pte(ptep, writing);
+		pte = kvmppc_read_update_linaos_pte(ptep, writing);
 		if (pte_present(pte) && !pte_protnone(pte)) {
 			if (writing && !__pte_write(pte))
 				/* make the actual HPTE be read-only */
@@ -889,7 +889,7 @@ static int kvmppc_get_hpa(struct kvm_vcpu *vcpu, unsigned long mmu_seq,
 	ptep = find_kvm_host_pte(kvm, mmu_seq, hva, &shift);
 	if (!ptep)
 		return H_TOO_HARD;
-	pte = kvmppc_read_update_linux_pte(ptep, writing);
+	pte = kvmppc_read_update_linaos_pte(ptep, writing);
 	if (!pte_present(pte))
 		return H_TOO_HARD;
 

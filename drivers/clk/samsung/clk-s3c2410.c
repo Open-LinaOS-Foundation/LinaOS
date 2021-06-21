@@ -5,10 +5,10 @@
  * Common Clock Framework support for S3C2410 and following SoCs.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/samsung.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/samsung.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include <dt-bindings/clock/s3c2410.h>
 

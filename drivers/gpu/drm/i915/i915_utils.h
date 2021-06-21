@@ -25,11 +25,11 @@
 #ifndef __I915_UTILS_H
 #define __I915_UTILS_H
 
-#include <linux/list.h>
-#include <linux/overflow.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/list.h>
+#include <linaos/overflow.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 struct drm_i915_private;
 struct timer_list;

@@ -2,7 +2,7 @@
  *
  * See copyright notice in main.c
  */
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 #include <net/cfg80211.h>
 #include "hw.h"
 #include "main.h"

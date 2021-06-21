@@ -3,29 +3,29 @@
  * Copyright (C) 2011 Marvell International Ltd. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/mv_usb.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/notifier.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/pm.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/mv_usb.h>
+#include <linaos/clk.h>
 
 #include "mv_u3d.h"
 

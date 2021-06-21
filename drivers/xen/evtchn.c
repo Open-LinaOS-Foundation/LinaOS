@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,24 +33,24 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/major.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/poll.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/cpu.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/major.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/poll.h>
+#include <linaos/irq.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/cpu.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
 
 #include <xen/xen.h>
 #include <xen/events.h>

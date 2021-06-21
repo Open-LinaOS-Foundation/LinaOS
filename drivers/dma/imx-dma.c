@@ -8,24 +8,24 @@
 // Copyright 2010 Sascha Hauer, Pengutronix <s.hauer@pengutronix.de>
 // Copyright 2012 Javier Martin, Vista Silicon <javier.martin@vista-silicon.com>
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/dmaengine.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
 
 #include <asm/irq.h>
-#include <linux/platform_data/dma-imx.h>
+#include <linaos/platform_data/dma-imx.h>
 
 #include "dmaengine.h"
 #define IMXDMA_MAX_CHAN_DESCRIPTORS	16

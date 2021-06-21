@@ -7,27 +7,27 @@
  *
  * Based on the input subsystem driver, Copyright (C) 2011 Wistron Co.Ltd
  * Joseph Lai <joseph_lai@wistron.com> and trimmed down by
- * Alan Cox <alan@linux.intel.com> in turn based on bma023.c.
+ * Alan Cox <alan@linaos.intel.com> in turn based on bma023.c.
  * Device behaviour based on a misc driver posted by Nathan Royer in 2011.
  *
  * TODO: add support for setting up the low pass 3dB frequency.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
 
 #include "mpu3050.h"
 

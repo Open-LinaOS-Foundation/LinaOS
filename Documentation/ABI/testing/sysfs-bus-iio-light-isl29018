@@ -1,7 +1,7 @@
 What:		/sys/bus/iio/devices/iio:deviceX/proximity_on_chip_ambient_infrared_suppression
 Date:		January 2011
 KernelVersion:	2.6.37
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		From ISL29018 Data Sheet (FN6619.4, Oct 8, 2012) regarding the
 		infrared suppression:

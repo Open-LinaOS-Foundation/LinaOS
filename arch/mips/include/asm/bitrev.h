@@ -2,7 +2,7 @@
 #ifndef __MIPS_ASM_BITREV_H__
 #define __MIPS_ASM_BITREV_H__
 
-#include <linux/swab.h>
+#include <linaos/swab.h>
 
 static __always_inline __attribute_const__ u32 __arch_bitrev32(u32 x)
 {

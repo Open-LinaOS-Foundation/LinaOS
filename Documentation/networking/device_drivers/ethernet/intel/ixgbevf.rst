@@ -1,10 +1,10 @@
 .. SPDX-License-Identifier: GPL-2.0+
 
 ============================================================
-Linux Base Virtual Function Driver for Intel(R) 10G Ethernet
+LinaOS Base Virtual Function Driver for Intel(R) 10G Ethernet
 ============================================================
 
-Intel 10 Gigabit Virtual Function Linux driver.
+Intel 10 Gigabit Virtual Function LinaOS driver.
 Copyright(c) 1999-2018 Intel Corporation.
 
 Contents
@@ -19,7 +19,7 @@ that can only be activated on kernels that support SR-IOV.
 
 For questions related to hardware requirements, refer to the documentation
 supplied with your Intel adapter. All hardware requirements listed apply to use
-with Linux.
+with LinaOS.
 
 
 Identifying Your Adapter

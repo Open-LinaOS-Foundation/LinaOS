@@ -3,18 +3,18 @@
  * gpio_backlight.c - Simple GPIO-controlled backlight
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/gpio_backlight.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/backlight.h>
+#include <linaos/err.h>
+#include <linaos/fb.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/gpio_backlight.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 
 struct gpio_backlight {
 	struct device *fbdev;

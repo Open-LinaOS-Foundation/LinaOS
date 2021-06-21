@@ -11,7 +11,7 @@
  * This file is postprocessed using unroll.awk.
  */
 
-#include <linux/raid/pq.h>
+#include <linaos/raid/pq.h>
 #include <asm/fpu/api.h>
 
 asm(".include \"asm/vx-insn.h\"\n");

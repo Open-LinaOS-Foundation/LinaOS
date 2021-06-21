@@ -8,10 +8,10 @@
  * (These are defined separately to decouple sched.h from mm_types.h as much as possible.)
  */
 
-#include <linux/types.h>
-#include <linux/threads.h>
-#include <linux/atomic.h>
-#include <linux/cpumask.h>
+#include <linaos/types.h>
+#include <linaos/threads.h>
+#include <linaos/atomic.h>
+#include <linaos/cpumask.h>
 
 #include <asm/page.h>
 

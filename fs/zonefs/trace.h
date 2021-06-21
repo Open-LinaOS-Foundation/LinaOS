@@ -11,9 +11,9 @@
 #if !defined(_TRACE_ZONEFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_ZONEFS_H
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
-#include <linux/blkdev.h>
+#include <linaos/tracepoint.h>
+#include <linaos/trace_seq.h>
+#include <linaos/blkdev.h>
 
 #include "zonefs.h"
 

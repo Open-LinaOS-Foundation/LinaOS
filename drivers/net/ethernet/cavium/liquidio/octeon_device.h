@@ -22,7 +22,7 @@
 #ifndef _OCTEON_DEVICE_H_
 #define  _OCTEON_DEVICE_H_
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include <net/devlink.h>
 
 /** PCI VendorId Device Id */

@@ -5,7 +5,7 @@
  * This code is based on drivers/scsi/mpt3sas/mpt3sas_base.c
  * Copyright (C) 2012-2014  LSI Corporation
  * Copyright (C) 2013-2014 Avago Technologies
- *  (mailto: MPT-FusionLinux.pdl@avagotech.com)
+ *  (mailto: MPT-FusionLinaOS.pdl@avagotech.com)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -43,24 +43,24 @@
  * USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
-#include <linux/kthread.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kdev_t.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/time.h>
+#include <linaos/ktime.h>
+#include <linaos/kthread.h>
 #include <asm/page.h>        /* To get host page size per arch */
-#include <linux/aer.h>
+#include <linaos/aer.h>
 
 
 #include "mpt3sas_base.h"

@@ -14,12 +14,12 @@
 	};
 
 	extcon_usb1: extcon_usb1 {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linaos,extcon-usb-gpio";
 		id-gpio = <&pcf_gpio_21 1 GPIO_ACTIVE_HIGH>;
 	};
 
 	extcon_usb2: extcon_usb2 {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linaos,extcon-usb-gpio";
 		id-gpio = <&pcf_gpio_21 2 GPIO_ACTIVE_HIGH>;
 	};
 
@@ -92,13 +92,13 @@
 
 		USER1 {
 			label = "btnUser1";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&pcf_lcd 2 GPIO_ACTIVE_LOW>;
 		};
 
 		USER2 {
 			label = "btnUser2";
-			linux,code = <BTN_1>;
+			linaos,code = <BTN_1>;
 			gpios = <&pcf_lcd 3 GPIO_ACTIVE_LOW>;
 		};
 	};

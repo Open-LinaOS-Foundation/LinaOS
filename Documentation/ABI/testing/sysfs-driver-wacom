@@ -1,7 +1,7 @@
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/speed
 Date:		April 2010
 KernelVersion:	2.6.35
-Contact:	linux-bluetooth@vger.kernel.org
+Contact:	linaos-bluetooth@vger.kernel.org
 Description:
 		The /sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/speed file
 		controls reporting speed of Wacom bluetooth tablet. Reading
@@ -11,7 +11,7 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_led/led
 Date:		August 2014
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		Attribute group for control of the status LEDs and the OLEDs.
 		This attribute group is only available for Intuos 4 M, L,
@@ -22,7 +22,7 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_led/status0_luminance
 Date:		August 2014
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		<obsoleted by the LED class API now exported by the driver>
 		Writing to this file sets the status LED luminance (1..127)
@@ -32,7 +32,7 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_led/status1_luminance
 Date:		August 2014
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		<obsoleted by the LED class API now exported by the driver>
 		Writing to this file sets the status LED luminance (1..127)
@@ -41,7 +41,7 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_led/status_led0_select
 Date:		August 2014
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		<obsoleted by the LED class API now exported by the driver>
 		Writing to this file sets which one of the four (for Intuos 4
@@ -51,7 +51,7 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_led/status_led1_select
 Date:		August 2014
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		<obsoleted by the LED class API now exported by the driver>
 		Writing to this file sets which one of the left four (for Cintiq 21UX2
@@ -60,14 +60,14 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_led/buttons_luminance
 Date:		August 2014
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		Writing to this file sets the overall luminance level (0..15)
 		of all eight button OLED displays.
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_led/button<n>_rawimg
 Date:		August 2014
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		When writing a 1024 byte raw image in Wacom Intuos 4
 		interleaving format to the file, the image shows up on Button N
@@ -86,7 +86,7 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_remote/unpair_remote
 Date:		July 2015
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		Writing the character sequence '*' followed by a newline to
 		this file will delete all of the current pairings on the
@@ -95,7 +95,7 @@ Description:
 
 What:		/sys/bus/hid/devices/<bus>:<vid>:<pid>.<n>/wacom_remote/<serial_number>/remote_mode
 Date:		July 2015
-Contact:	linux-input@vger.kernel.org
+Contact:	linaos-input@vger.kernel.org
 Description:
 		<obsoleted by the LED class API now exported by the driver>
 		Reading from this file reports the mode status of the

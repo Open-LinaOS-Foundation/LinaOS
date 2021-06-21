@@ -5,15 +5,15 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ****************************************************************************/
 
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/export.h>
-#include <linux/inet.h>
-#include <linux/module.h>
+#include <linaos/configfs.h>
+#include <linaos/ctype.h>
+#include <linaos/export.h>
+#include <linaos/inet.h>
+#include <linaos/module.h>
 #include <net/ipv6.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>

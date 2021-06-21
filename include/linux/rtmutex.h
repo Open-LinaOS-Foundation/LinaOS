@@ -13,9 +13,9 @@
 #ifndef __LINUX_RT_MUTEX_H
 #define __LINUX_RT_MUTEX_H
 
-#include <linux/linkage.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock_types.h>
+#include <linaos/linkage.h>
+#include <linaos/rbtree.h>
+#include <linaos/spinlock_types.h>
 
 extern int max_lock_depth; /* for sysctl */
 

@@ -30,8 +30,8 @@
  * application start time.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
 
 #include <asm/octeon/cvmx.h>
 #include <asm/octeon/cvmx-spinlock.h>
@@ -185,8 +185,8 @@ int cvmx_bootmem_init(void *mem_desc_ptr)
 	 * it up to be directly usable by the application.  It is set
 	 * up as follows for the various runtime/ABI combinations:
 	 *
-	 * Linux 64 bit: Set XKPHYS bit
-	 * Linux 32 bit: use mmap to create mapping, use virtual address
+	 * LinaOS 64 bit: Set XKPHYS bit
+	 * LinaOS 32 bit: use mmap to create mapping, use virtual address
 	 * CVMX 64 bit:	 use physical address directly
 	 * CVMX 32 bit:	 use physical address directly
 	 *
@@ -579,7 +579,7 @@ static struct cvmx_bootmem_named_block_desc *
 	if (!(flags & CVMX_BOOTMEM_FLAG_NO_LOCKING))
 		cvmx_bootmem_lock();
 
-	/* Use XKPHYS for 64 bit linux */
+	/* Use XKPHYS for 64 bit linaos */
 	named_block_array_ptr = (struct cvmx_bootmem_named_block_desc *)
 	    cvmx_phys_to_ptr(cvmx_bootmem_desc->named_block_array_addr);
 

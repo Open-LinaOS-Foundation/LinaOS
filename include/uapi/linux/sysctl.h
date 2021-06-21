@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * sysctl.h: General linux system control interface
+ * sysctl.h: General linaos system control interface
  *
  * Begun 24 March 1995, Stephen Tweedie
  *
@@ -23,9 +23,9 @@
 #ifndef _UAPI_LINUX_SYSCTL_H
 #define _UAPI_LINUX_SYSCTL_H
 
-#include <linux/const.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/const.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 #define CTL_MAXNAME 10		/* how many path components do we allow in a
 				   call to sysctl?   In other words, what is

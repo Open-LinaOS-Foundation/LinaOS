@@ -3,11 +3,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/livepatch.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/printk.h>
+#include <linaos/livepatch.h>
 
 #define CONSOLE_LOGLEVEL_STATE 1
 /* Version 2 supports migration. */
@@ -26,7 +26,7 @@ static void callback_info(const char *callback, struct klp_object *obj)
 		pr_info("%s: %s -> %s\n", callback, obj->mod->name,
 			module_state[obj->mod->state]);
 	else
-		pr_info("%s: vmlinux\n", callback);
+		pr_info("%s: vmlinaos\n", callback);
 }
 
 static struct klp_patch patch;
@@ -149,7 +149,7 @@ static struct klp_func no_funcs[] = {
 
 static struct klp_object objs[] = {
 	{
-		.name = NULL,	/* vmlinux */
+		.name = NULL,	/* vmlinaos */
 		.funcs = no_funcs,
 		.callbacks = {
 			.pre_patch = pre_patch_callback,

@@ -6,7 +6,7 @@
  * Exynos low-level resume code
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/hardware/cache-l2x0.h>
 #include "smc.h"

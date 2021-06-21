@@ -2,12 +2,12 @@
 /*
  * Qualcomm ICE (Inline Crypto Engine) support.
  *
- * Copyright (c) 2014-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2019, The LinaOS Foundation. All rights reserved.
  * Copyright 2019 Google LLC
  */
 
-#include <linux/platform_device.h>
-#include <linux/qcom_scm.h>
+#include <linaos/platform_device.h>
+#include <linaos/qcom_scm.h>
 
 #include "ufshcd-crypto.h"
 #include "ufs-qcom.h"

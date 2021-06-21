@@ -9,7 +9,7 @@
 #ifndef __VSP1_DL_H__
 #define __VSP1_DL_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct vsp1_device;
 struct vsp1_dl_body;

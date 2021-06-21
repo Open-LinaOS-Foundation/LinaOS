@@ -9,12 +9,12 @@
  *  August, 2003
  *
  */
-#include <linux/if_arp.h>
+#include <linaos/if_arp.h>
 #include <net/arp.h>
-#include <linux/module.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_arpreply.h>
+#include <linaos/module.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter_bridge/ebtables.h>
+#include <linaos/netfilter_bridge/ebt_arpreply.h>
 
 static unsigned int
 ebt_arpreply_tg(struct sk_buff *skb, const struct xt_action_param *par)

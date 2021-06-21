@@ -9,12 +9,12 @@
  * (C) Copyright TOSHIBA CORPORATION 2005-2007
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
 
 #include <asm/ide.h>
 #include <asm/txx9/tx4938.h>

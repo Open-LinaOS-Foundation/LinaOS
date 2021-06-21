@@ -5,14 +5,14 @@
  * Copyright(C) 2007, 2008 Wolfson Microelectronics PLC.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/mfd/wm8350/pmic.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/leds.h>
+#include <linaos/err.h>
+#include <linaos/mfd/wm8350/pmic.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
 /* Microamps */
 static const int isink_cur[] = {

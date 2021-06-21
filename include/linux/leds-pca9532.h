@@ -10,8 +10,8 @@
 #ifndef __LINUX_PCA9532_H
 #define __LINUX_PCA9532_H
 
-#include <linux/leds.h>
-#include <linux/workqueue.h>
+#include <linaos/leds.h>
+#include <linaos/workqueue.h>
 #include <dt-bindings/leds/leds-pca9532.h>
 
 enum pca9532_state {

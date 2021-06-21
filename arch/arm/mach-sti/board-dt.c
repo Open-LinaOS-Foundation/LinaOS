@@ -4,8 +4,8 @@
  * Author(s): Srinivas Kandagatla <srinivas.kandagatla@st.com>
  */
 
-#include <linux/irq.h>
-#include <linux/of_platform.h>
+#include <linaos/irq.h>
+#include <linaos/of_platform.h>
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/mach/arch.h>
 

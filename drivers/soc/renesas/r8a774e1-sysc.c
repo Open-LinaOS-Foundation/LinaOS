@@ -7,7 +7,7 @@
  * Copyright (C) 2016-2017 Glider bvba
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <dt-bindings/power/r8a774e1-sysc.h>
 

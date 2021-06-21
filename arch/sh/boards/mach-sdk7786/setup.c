@@ -5,21 +5,21 @@
  * Copyright (C) 2010  Matt Fleming
  * Copyright (C) 2010  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/smsc911x.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/smsc911x.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
 #include <mach/fpga.h>
 #include <mach/irq.h>
 #include <asm/machvec.h>
 #include <asm/heartbeat.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/clock.h>
 #include <asm/reboot.h>
 #include <asm/smp-ops.h>

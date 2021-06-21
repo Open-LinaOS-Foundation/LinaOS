@@ -3,14 +3,14 @@
  * Copyright (C) 2018-2019 Linaro Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/hw_random.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uuid.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/hw_random.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/tee_drv.h>
+#include <linaos/uuid.h>
 
 #define DRIVER_NAME "optee-rng"
 

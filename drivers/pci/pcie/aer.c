@@ -15,19 +15,19 @@
 #define pr_fmt(fmt) "AER: " fmt
 #define dev_fmt pr_fmt
 
-#include <linux/bitops.h>
-#include <linux/cper.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/cper.h>
+#include <linaos/pci.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/pm.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/kfifo.h>
+#include <linaos/slab.h>
 #include <acpi/apei.h>
 #include <ras/ras_event.h>
 

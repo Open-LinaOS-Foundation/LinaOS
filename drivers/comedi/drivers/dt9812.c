@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2005 Anders Blomdell <anders.blomdell@control.lth.se>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  */
 
 /*
@@ -29,10 +29,10 @@
  *      says P1).
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/uaccess.h>
 
 #include "../comedi_usb.h"
 

@@ -4,10 +4,10 @@
  * Copyright (c) 2019 周琰杰 (Zhou Yanjie) <zhouyanjie@wanyeetech.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
 
 #include <dt-bindings/clock/x1000-cgu.h>
 

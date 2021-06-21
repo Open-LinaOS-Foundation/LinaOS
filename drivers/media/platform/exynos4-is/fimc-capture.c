@@ -6,18 +6,18 @@
  * Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/bug.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-mem2mem.h>

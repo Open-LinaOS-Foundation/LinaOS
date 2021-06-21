@@ -3,20 +3,20 @@
 
 /* Kernel module implementing an IP set type: the hash:net type */
 
-#include <linux/jhash.h>
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/random.h>
+#include <linaos/jhash.h>
+#include <linaos/module.h>
+#include <linaos/ip.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/random.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/ipset/pfxlen.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_hash.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/ipset/pfxlen.h>
+#include <linaos/netfilter/ipset/ip_set.h>
+#include <linaos/netfilter/ipset/ip_set_hash.h>
 
 #define IPSET_TYPE_REV_MIN	0
 /*				1    Range as input support for IPv4 added */

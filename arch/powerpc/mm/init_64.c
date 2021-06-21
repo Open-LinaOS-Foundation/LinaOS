@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -16,30 +16,30 @@
 
 #undef DEBUG
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/idr.h>
-#include <linux/nodemask.h>
-#include <linux/module.h>
-#include <linux/poison.h>
-#include <linux/memblock.h>
-#include <linux/hugetlb.h>
-#include <linux/slab.h>
-#include <linux/of_fdt.h>
-#include <linux/libfdt.h>
-#include <linux/memremap.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/stddef.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/highmem.h>
+#include <linaos/idr.h>
+#include <linaos/nodemask.h>
+#include <linaos/module.h>
+#include <linaos/poison.h>
+#include <linaos/memblock.h>
+#include <linaos/hugetlb.h>
+#include <linaos/slab.h>
+#include <linaos/of_fdt.h>
+#include <linaos/libfdt.h>
+#include <linaos/memremap.h>
 
 #include <asm/pgalloc.h>
 #include <asm/page.h>
@@ -48,7 +48,7 @@
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/mmu.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/smp.h>
 #include <asm/machdep.h>
 #include <asm/tlb.h>
@@ -89,7 +89,7 @@ static struct page * __meminit vmemmap_subsection_start(unsigned long vmemmap_ad
  * If any subsection in the 16G range mapped by vmemmap is valid we consider the
  * vmemmap populated (There is a page table entry already present). We can't do
  * a page table lookup here because with the hash translation we don't keep
- * vmemmap details in linux page table.
+ * vmemmap details in linaos page table.
  */
 static int __meminit vmemmap_populated(unsigned long vmemmap_addr, int vmemmap_map_size)
 {

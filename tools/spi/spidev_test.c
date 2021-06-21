@@ -18,10 +18,10 @@
 #include <fcntl.h>
 #include <time.h>
 #include <sys/ioctl.h>
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 #include <sys/stat.h>
-#include <linux/types.h>
-#include <linux/spi/spidev.h>
+#include <linaos/types.h>
+#include <linaos/spi/spidev.h>
 
 #define ARRAY_SIZE(a) (sizeof(a) / sizeof((a)[0]))
 

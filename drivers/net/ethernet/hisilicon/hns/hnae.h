@@ -23,14 +23,14 @@
  * "cb" means control block
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/phy.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/notifier.h>
+#include <linaos/phy.h>
+#include <linaos/types.h>
 
 #define HNAE_DRIVER_VERSION "2.0"
 #define HNAE_DRIVER_NAME "hns"

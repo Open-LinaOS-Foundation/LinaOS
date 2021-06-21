@@ -11,7 +11,7 @@
 #ifndef __LINUX_PUBLIC_GNTALLOC_H__
 #define __LINUX_PUBLIC_GNTALLOC_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Allocates a new page and creates a new grant reference.

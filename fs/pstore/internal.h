@@ -2,9 +2,9 @@
 #ifndef __PSTORE_INTERNAL_H__
 #define __PSTORE_INTERNAL_H__
 
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/pstore.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
+#include <linaos/pstore.h>
 
 extern unsigned long kmsg_bytes;
 

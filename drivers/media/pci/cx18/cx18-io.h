@@ -13,7 +13,7 @@
 
 /*
  * Readback and retry of MMIO access for reliability:
- * The concept was suggested by Steve Toth <stoth@linuxtv.org>.
+ * The concept was suggested by Steve Toth <stoth@linaostv.org>.
  * The implementation is the fault of Andy Walls <awalls@md.metrocast.net>.
  *
  * *write* functions are implied to retry the mmio unless suffixed with _noretry

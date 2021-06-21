@@ -10,7 +10,7 @@
 #ifndef _ASM_MICROBLAZE_CPUINFO_H
 #define _ASM_MICROBLAZE_CPUINFO_H
 
-#include <linux/of.h>
+#include <linaos/of.h>
 
 /* CPU Version and FPGA Family code conversion table type */
 struct cpu_ver_key {

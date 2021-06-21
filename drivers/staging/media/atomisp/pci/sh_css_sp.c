@@ -1595,12 +1595,12 @@ ia_css_pipe_set_irq_mask(struct ia_css_pipe *pipe,
 	assert(pipe);
 
 	assert(IA_CSS_PIPE_ID_NUM == NR_OF_PIPELINES);
-	/* Linux kernel does not have UINT16_MAX
-	 * Therefore decided to comment out these 2 asserts for Linux
+	/* LinaOS kernel does not have UINT16_MAX
+	 * Therefore decided to comment out these 2 asserts for LinaOS
 	 * Alternatives that were not chosen:
 	 * - add a conditional #define for UINT16_MAX
 	 * - compare with (uint16_t)~0 or 0xffff
-	 * - different assert for Linux and Windows
+	 * - different assert for LinaOS and Windows
 	 */
 
 	(void)HIVE_ADDR_host_sp_com; /* Suppres warnings in CRUN */

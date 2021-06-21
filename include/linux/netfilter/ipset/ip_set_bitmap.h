@@ -2,7 +2,7 @@
 #ifndef __IP_SET_BITMAP_H
 #define __IP_SET_BITMAP_H
 
-#include <uapi/linux/netfilter/ipset/ip_set_bitmap.h>
+#include <uapi/linaos/netfilter/ipset/ip_set_bitmap.h>
 
 #define IPSET_BITMAP_MAX_RANGE	0x0000FFFF
 

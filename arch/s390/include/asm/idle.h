@@ -8,9 +8,9 @@
 #ifndef _S390_IDLE_H
 #define _S390_IDLE_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/seqlock.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/seqlock.h>
 
 struct s390_idle_data {
 	seqcount_t seqcount;

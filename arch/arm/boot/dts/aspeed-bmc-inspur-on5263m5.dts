@@ -34,7 +34,7 @@
 	    bmc_alive {
 		label = "bmc_alive";
 		gpios = <&gpio ASPEED_GPIO(I, 1) GPIO_ACTIVE_LOW>;
-		linux,default-trigger = "timer";
+		linaos,default-trigger = "timer";
 	    };
 	};
 

@@ -14,7 +14,7 @@ Optional properties:
 						It is to use for reset IC.
 - touchscreen-size-x	: X axis size of touchscreen
 - touchscreen-size-y	: Y axis size of touchscreen
-- linux,keycodes	: Specifies an array of numeric keycode values to
+- linaos,keycodes	: Specifies an array of numeric keycode values to
 			be used for reporting button presses. The array can
 			contain up to 3 entries.
 
@@ -36,6 +36,6 @@ i2c@00000000 {
 		reset-gpios = <&gpx1 5 0>;
 		touchscreen-size-x = <1080>;
 		touchscreen-size-y = <1920>;
-		linux,keycodes = <KEY_HOME>, <KEY_MENU>, <KEY_BACK>;
+		linaos,keycodes = <KEY_HOME>, <KEY_MENU>, <KEY_BACK>;
 	};
 };

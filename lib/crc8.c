@@ -16,9 +16,9 @@
 
 #define pr_fmt(fmt)		KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/crc8.h>
-#include <linux/printk.h>
+#include <linaos/module.h>
+#include <linaos/crc8.h>
+#include <linaos/printk.h>
 
 /**
  * crc8_populate_msb - fill crc table for given polynomial in reverse bit order.

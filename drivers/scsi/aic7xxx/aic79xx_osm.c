@@ -1,7 +1,7 @@
 /*
- * Adaptec AIC79xx device driver for Linux.
+ * Adaptec AIC79xx device driver for LinaOS.
  *
- * $Id: //depot/aic7xxx/linux/drivers/scsi/aic7xxx/aic79xx_osm.c#171 $
+ * $Id: //depot/aic7xxx/linaos/drivers/scsi/aic7xxx/aic79xx_osm.c#171 $
  *
  * --------------------------------------------------------------------------
  * Copyright (c) 1994-2000 Justin T. Gibbs.
@@ -46,14 +46,14 @@
 #include "aic79xx_inline.h"
 #include <scsi/scsicam.h>
 
-static struct scsi_transport_template *ahd_linux_transport_template = NULL;
+static struct scsi_transport_template *ahd_linaos_transport_template = NULL;
 
-#include <linux/init.h>		/* __setup */
-#include <linux/mm.h>		/* For fetching system memory size */
-#include <linux/blkdev.h>		/* For block_size() */
-#include <linux/delay.h>	/* For ssleep/msleep */
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <linaos/init.h>		/* __setup */
+#include <linaos/mm.h>		/* For fetching system memory size */
+#include <linaos/blkdev.h>		/* For block_size() */
+#include <linaos/delay.h>	/* For ssleep/msleep */
+#include <linaos/device.h>
+#include <linaos/slab.h>
 
 /*
  * Bucket size for counting good commands in between bad ones.
@@ -176,7 +176,7 @@ static adapter_tag_info_t aic79xx_tag_info[] =
  * characteristics.  Set the defaults here; they can be overriden with
  * the proper insmod parameters.
  */
-struct ahd_linux_iocell_opts
+struct ahd_linaos_iocell_opts
 {
 	uint8_t	precomp;
 	uint8_t	slewrate;
@@ -194,7 +194,7 @@ struct ahd_linux_iocell_opts
 #define AIC79XX_PRECOMP_INDEX	0
 #define AIC79XX_SLEWRATE_INDEX	1
 #define AIC79XX_AMPLITUDE_INDEX	2
-static const struct ahd_linux_iocell_opts aic79xx_iocell_info[] =
+static const struct ahd_linaos_iocell_opts aic79xx_iocell_info[] =
 {
 	AIC79XX_DEFAULT_IOOPTS,
 	AIC79XX_DEFAULT_IOOPTS,
@@ -349,25 +349,25 @@ MODULE_PARM_DESC(aic79xx,
 "	options aic79xx 'aic79xx=verbose.tag_info:{{}.{}.{..10}}.seltime:1'\n"
 );
 
-static void ahd_linux_handle_scsi_status(struct ahd_softc *,
+static void ahd_linaos_handle_scsi_status(struct ahd_softc *,
 					 struct scsi_device *,
 					 struct scb *);
-static void ahd_linux_queue_cmd_complete(struct ahd_softc *ahd,
+static void ahd_linaos_queue_cmd_complete(struct ahd_softc *ahd,
 					 struct scsi_cmnd *cmd);
-static int ahd_linux_queue_abort_cmd(struct scsi_cmnd *cmd);
-static void ahd_linux_initialize_scsi_bus(struct ahd_softc *ahd);
-static u_int ahd_linux_user_tagdepth(struct ahd_softc *ahd,
+static int ahd_linaos_queue_abort_cmd(struct scsi_cmnd *cmd);
+static void ahd_linaos_initialize_scsi_bus(struct ahd_softc *ahd);
+static u_int ahd_linaos_user_tagdepth(struct ahd_softc *ahd,
 				     struct ahd_devinfo *devinfo);
-static void ahd_linux_device_queue_depth(struct scsi_device *);
-static int ahd_linux_run_command(struct ahd_softc*,
-				 struct ahd_linux_device *,
+static void ahd_linaos_device_queue_depth(struct scsi_device *);
+static int ahd_linaos_run_command(struct ahd_softc*,
+				 struct ahd_linaos_device *,
 				 struct scsi_cmnd *);
-static void ahd_linux_setup_tag_info_global(char *p);
+static void ahd_linaos_setup_tag_info_global(char *p);
 static int  aic79xx_setup(char *c);
 static void ahd_freeze_simq(struct ahd_softc *ahd);
 static void ahd_release_simq(struct ahd_softc *ahd);
 
-static int ahd_linux_unit;
+static int ahd_linaos_unit;
 
 
 /************************** OS Utility Wrappers *******************************/
@@ -376,7 +376,7 @@ void
 ahd_delay(long usec)
 {
 	/*
-	 * udelay on Linux can have problems for
+	 * udelay on LinaOS can have problems for
 	 * multi-millisecond waits.  Wait at most
 	 * 1024us per call.
 	 */
@@ -455,7 +455,7 @@ ahd_outsb(struct ahd_softc * ahd, long port, uint8_t *array, int count)
 	int i;
 
 	/*
-	 * There is probably a more efficient way to do this on Linux
+	 * There is probably a more efficient way to do this on LinaOS
 	 * but we don't use this for anything speed critical and this
 	 * should work.
 	 */
@@ -469,7 +469,7 @@ ahd_insb(struct ahd_softc * ahd, long port, uint8_t *array, int count)
 	int i;
 
 	/*
-	 * There is probably a more efficient way to do this on Linux
+	 * There is probably a more efficient way to do this on LinaOS
 	 * but we don't use this for anything speed critical and this
 	 * should work.
 	 */
@@ -528,10 +528,10 @@ ahd_pci_write_config(ahd_dev_softc_t pci, int reg, uint32_t value, int width)
 }
 
 /****************************** Inlines ***************************************/
-static void ahd_linux_unmap_scb(struct ahd_softc*, struct scb*);
+static void ahd_linaos_unmap_scb(struct ahd_softc*, struct scb*);
 
 static void
-ahd_linux_unmap_scb(struct ahd_softc *ahd, struct scb *scb)
+ahd_linaos_unmap_scb(struct ahd_softc *ahd, struct scb *scb)
 {
 	struct scsi_cmnd *cmd;
 
@@ -548,7 +548,7 @@ ahd_linux_unmap_scb(struct ahd_softc *ahd, struct scb *scb)
  * Return a string describing the driver.
  */
 static const char *
-ahd_linux_info(struct Scsi_Host *host)
+ahd_linaos_info(struct Scsi_Host *host)
 {
 	static char buffer[512];
 	char	ahd_info[256];
@@ -573,25 +573,25 @@ ahd_linux_info(struct Scsi_Host *host)
  * Queue an SCB to the controller.
  */
 static int
-ahd_linux_queue_lck(struct scsi_cmnd * cmd, void (*scsi_done) (struct scsi_cmnd *))
+ahd_linaos_queue_lck(struct scsi_cmnd * cmd, void (*scsi_done) (struct scsi_cmnd *))
 {
 	struct	 ahd_softc *ahd;
-	struct	 ahd_linux_device *dev = scsi_transport_device_data(cmd->device);
+	struct	 ahd_linaos_device *dev = scsi_transport_device_data(cmd->device);
 	int rtn = SCSI_MLQUEUE_HOST_BUSY;
 
 	ahd = *(struct ahd_softc **)cmd->device->host->hostdata;
 
 	cmd->scsi_done = scsi_done;
 	cmd->result = CAM_REQ_INPROG << 16;
-	rtn = ahd_linux_run_command(ahd, dev, cmd);
+	rtn = ahd_linaos_run_command(ahd, dev, cmd);
 
 	return rtn;
 }
 
-static DEF_SCSI_QCMD(ahd_linux_queue)
+static DEF_SCSI_QCMD(ahd_linaos_queue)
 
 static struct scsi_target **
-ahd_linux_target_in_softc(struct scsi_target *starget)
+ahd_linaos_target_in_softc(struct scsi_target *starget)
 {
 	struct	ahd_softc *ahd =
 		*((struct ahd_softc **)dev_to_shost(&starget->dev)->hostdata);
@@ -605,13 +605,13 @@ ahd_linux_target_in_softc(struct scsi_target *starget)
 }
 
 static int
-ahd_linux_target_alloc(struct scsi_target *starget)
+ahd_linaos_target_alloc(struct scsi_target *starget)
 {
 	struct	ahd_softc *ahd =
 		*((struct ahd_softc **)dev_to_shost(&starget->dev)->hostdata);
 	struct seeprom_config *sc = ahd->seep_config;
 	unsigned long flags;
-	struct scsi_target **ahd_targp = ahd_linux_target_in_softc(starget);
+	struct scsi_target **ahd_targp = ahd_linaos_target_in_softc(starget);
 	struct ahd_devinfo devinfo;
 	struct ahd_initiator_tinfo *tinfo;
 	struct ahd_tmode_tstate *tstate;
@@ -661,19 +661,19 @@ ahd_linux_target_alloc(struct scsi_target *starget)
 }
 
 static void
-ahd_linux_target_destroy(struct scsi_target *starget)
+ahd_linaos_target_destroy(struct scsi_target *starget)
 {
-	struct scsi_target **ahd_targp = ahd_linux_target_in_softc(starget);
+	struct scsi_target **ahd_targp = ahd_linaos_target_in_softc(starget);
 
 	*ahd_targp = NULL;
 }
 
 static int
-ahd_linux_slave_alloc(struct scsi_device *sdev)
+ahd_linaos_slave_alloc(struct scsi_device *sdev)
 {
 	struct	ahd_softc *ahd =
 		*((struct ahd_softc **)sdev->host->hostdata);
-	struct ahd_linux_device *dev;
+	struct ahd_linaos_device *dev;
 
 	if (bootverbose)
 		printk("%s: Slave Alloc %d\n", ahd_name(ahd), sdev->id);
@@ -698,12 +698,12 @@ ahd_linux_slave_alloc(struct scsi_device *sdev)
 }
 
 static int
-ahd_linux_slave_configure(struct scsi_device *sdev)
+ahd_linaos_slave_configure(struct scsi_device *sdev)
 {
 	if (bootverbose)
 		sdev_printk(KERN_INFO, sdev, "Slave Configure\n");
 
-	ahd_linux_device_queue_depth(sdev);
+	ahd_linaos_device_queue_depth(sdev);
 
 	/* Initial Domain Validation */
 	if (!spi_initial_dv(sdev->sdev_target))
@@ -717,7 +717,7 @@ ahd_linux_slave_configure(struct scsi_device *sdev)
  * Return the disk geometry for the given SCSI device.
  */
 static int
-ahd_linux_biosparam(struct scsi_device *sdev, struct block_device *bdev,
+ahd_linaos_biosparam(struct scsi_device *sdev, struct block_device *bdev,
 		    sector_t capacity, int geom[])
 {
 	int	 heads;
@@ -755,11 +755,11 @@ ahd_linux_biosparam(struct scsi_device *sdev, struct block_device *bdev,
  * Abort the current SCSI command(s).
  */
 static int
-ahd_linux_abort(struct scsi_cmnd *cmd)
+ahd_linaos_abort(struct scsi_cmnd *cmd)
 {
 	int error;
 	
-	error = ahd_linux_queue_abort_cmd(cmd);
+	error = ahd_linaos_queue_abort_cmd(cmd);
 
 	return error;
 }
@@ -768,10 +768,10 @@ ahd_linux_abort(struct scsi_cmnd *cmd)
  * Attempt to send a target reset message to the device that timed out.
  */
 static int
-ahd_linux_dev_reset(struct scsi_cmnd *cmd)
+ahd_linaos_dev_reset(struct scsi_cmnd *cmd)
 {
 	struct ahd_softc *ahd;
-	struct ahd_linux_device *dev;
+	struct ahd_linaos_device *dev;
 	struct scb *reset_scb;
 	u_int  cdb_byte;
 	int    retval = SUCCESS;
@@ -864,7 +864,7 @@ ahd_linux_dev_reset(struct scsi_cmnd *cmd)
  * Reset the SCSI bus.
  */
 static int
-ahd_linux_bus_reset(struct scsi_cmnd *cmd)
+ahd_linaos_bus_reset(struct scsi_cmnd *cmd)
 {
 	struct ahd_softc *ahd;
 	int    found;
@@ -893,24 +893,24 @@ struct scsi_host_template aic79xx_driver_template = {
 	.module			= THIS_MODULE,
 	.name			= "aic79xx",
 	.proc_name		= "aic79xx",
-	.show_info		= ahd_linux_show_info,
+	.show_info		= ahd_linaos_show_info,
 	.write_info	 	= ahd_proc_write_seeprom,
-	.info			= ahd_linux_info,
-	.queuecommand		= ahd_linux_queue,
-	.eh_abort_handler	= ahd_linux_abort,
-	.eh_device_reset_handler = ahd_linux_dev_reset,
-	.eh_bus_reset_handler	= ahd_linux_bus_reset,
+	.info			= ahd_linaos_info,
+	.queuecommand		= ahd_linaos_queue,
+	.eh_abort_handler	= ahd_linaos_abort,
+	.eh_device_reset_handler = ahd_linaos_dev_reset,
+	.eh_bus_reset_handler	= ahd_linaos_bus_reset,
 #if defined(__i386__)
-	.bios_param		= ahd_linux_biosparam,
+	.bios_param		= ahd_linaos_biosparam,
 #endif
 	.can_queue		= AHD_MAX_QUEUE,
 	.this_id		= -1,
 	.max_sectors		= 8192,
 	.cmd_per_lun		= 2,
-	.slave_alloc		= ahd_linux_slave_alloc,
-	.slave_configure	= ahd_linux_slave_configure,
-	.target_alloc		= ahd_linux_target_alloc,
-	.target_destroy		= ahd_linux_target_destroy,
+	.slave_alloc		= ahd_linaos_slave_alloc,
+	.slave_configure	= ahd_linaos_slave_configure,
+	.target_alloc		= ahd_linaos_target_alloc,
+	.target_destroy		= ahd_linaos_target_destroy,
 };
 
 /******************************** Bus DMA *************************************/
@@ -929,8 +929,8 @@ ahd_dma_tag_create(struct ahd_softc *ahd, bus_dma_tag_t parent,
 		return (ENOMEM);
 
 	/*
-	 * Linux is very simplistic about DMA memory.  For now don't
-	 * maintain all specification information.  Once Linux supplies
+	 * LinaOS is very simplistic about DMA memory.  For now don't
+	 * maintain all specification information.  Once LinaOS supplies
 	 * better facilities for doing these operations, or the
 	 * needs of this particular driver change, we might need to do
 	 * more here.
@@ -997,7 +997,7 @@ ahd_dmamap_unload(struct ahd_softc *ahd, bus_dma_tag_t dmat, bus_dmamap_t map)
 
 /********************* Platform Dependent Functions ***************************/
 static void
-ahd_linux_setup_iocell_info(u_long index, int instance, int targ, int32_t value)
+ahd_linaos_setup_iocell_info(u_long index, int instance, int targ, int32_t value)
 {
 
 	if ((instance >= 0)
@@ -1012,7 +1012,7 @@ ahd_linux_setup_iocell_info(u_long index, int instance, int targ, int32_t value)
 }
 
 static void
-ahd_linux_setup_tag_info_global(char *p)
+ahd_linaos_setup_tag_info_global(char *p)
 {
 	int tags, i, j;
 
@@ -1027,7 +1027,7 @@ ahd_linux_setup_tag_info_global(char *p)
 }
 
 static void
-ahd_linux_setup_tag_info(u_long arg, int instance, int targ, int32_t value)
+ahd_linaos_setup_tag_info(u_long arg, int instance, int targ, int32_t value)
 {
 
 	if ((instance >= 0) && (targ >= 0)
@@ -1120,7 +1120,7 @@ ahd_parse_brace_option(char *opt_name, char *opt_arg, char *end, int depth,
 }
 
 /*
- * Handle Linux boot parameters. This routine allows for assigning a value
+ * Handle LinaOS boot parameters. This routine allows for assigning a value
  * to a parameter with a ':' between the parameter and the value.
  * ie. aic79xx=stpwlev:1,extended
  */
@@ -1174,21 +1174,21 @@ aic79xx_setup(char *s)
 			continue;
 
 		if (strncmp(p, "global_tag_depth", n) == 0) {
-			ahd_linux_setup_tag_info_global(p + n);
+			ahd_linaos_setup_tag_info_global(p + n);
 		} else if (strncmp(p, "tag_info", n) == 0) {
 			s = ahd_parse_brace_option("tag_info", p + n, end,
-			    2, ahd_linux_setup_tag_info, 0);
+			    2, ahd_linaos_setup_tag_info, 0);
 		} else if (strncmp(p, "slewrate", n) == 0) {
 			s = ahd_parse_brace_option("slewrate",
-			    p + n, end, 1, ahd_linux_setup_iocell_info,
+			    p + n, end, 1, ahd_linaos_setup_iocell_info,
 			    AIC79XX_SLEWRATE_INDEX);
 		} else if (strncmp(p, "precomp", n) == 0) {
 			s = ahd_parse_brace_option("precomp",
-			    p + n, end, 1, ahd_linux_setup_iocell_info,
+			    p + n, end, 1, ahd_linaos_setup_iocell_info,
 			    AIC79XX_PRECOMP_INDEX);
 		} else if (strncmp(p, "amplitude", n) == 0) {
 			s = ahd_parse_brace_option("amplitude",
-			    p + n, end, 1, ahd_linux_setup_iocell_info,
+			    p + n, end, 1, ahd_linaos_setup_iocell_info,
 			    AIC79XX_AMPLITUDE_INDEX);
 		} else if (p[n] == ':') {
 			*(options[i].flag) = simple_strtoul(p + n + 1, NULL, 0);
@@ -1206,7 +1206,7 @@ __setup("aic79xx=", aic79xx_setup);
 uint32_t aic79xx_verbose;
 
 int
-ahd_linux_register_host(struct ahd_softc *ahd, struct scsi_host_template *template)
+ahd_linaos_register_host(struct ahd_softc *ahd, struct scsi_host_template *template)
 {
 	char	buf[80];
 	struct	Scsi_Host *host;
@@ -1231,7 +1231,7 @@ ahd_linux_register_host(struct ahd_softc *ahd, struct scsi_host_template *templa
 	host->max_channel = 0;
 	host->sg_tablesize = AHD_NSEG;
 	ahd_lock(ahd, &s);
-	ahd_set_unit(ahd, ahd_linux_unit++);
+	ahd_set_unit(ahd, ahd_linaos_unit++);
 	ahd_unlock(ahd, &s);
 	sprintf(buf, "scsi%d", host->host_no);
 	new_name = kmalloc(strlen(buf) + 1, GFP_ATOMIC);
@@ -1240,10 +1240,10 @@ ahd_linux_register_host(struct ahd_softc *ahd, struct scsi_host_template *templa
 		ahd_set_name(ahd, new_name);
 	}
 	host->unique_id = ahd->unit;
-	ahd_linux_initialize_scsi_bus(ahd);
+	ahd_linaos_initialize_scsi_bus(ahd);
 	ahd_intr_enable(ahd, TRUE);
 
-	host->transportt = ahd_linux_transport_template;
+	host->transportt = ahd_linaos_transport_template;
 
 	retval = scsi_add_host(host, &ahd->dev_softc->dev);
 	if (retval) {
@@ -1262,7 +1262,7 @@ ahd_linux_register_host(struct ahd_softc *ahd, struct scsi_host_template *templa
  * target.
  */
 static void
-ahd_linux_initialize_scsi_bus(struct ahd_softc *ahd)
+ahd_linaos_initialize_scsi_bus(struct ahd_softc *ahd)
 {
 	u_int target_id;
 	u_int numtarg;
@@ -1362,7 +1362,7 @@ ahd_platform_init(struct ahd_softc *ahd)
 	 * Lookup and commit any modified IO Cell options.
 	 */
 	if (ahd->unit < ARRAY_SIZE(aic79xx_iocell_info)) {
-		const struct ahd_linux_iocell_opts *iocell_opts;
+		const struct ahd_linaos_iocell_opts *iocell_opts;
 
 		iocell_opts = &aic79xx_iocell_info[ahd->unit];
 		if (iocell_opts->precomp != AIC79XX_DEFAULT_PRECOMP)
@@ -1388,7 +1388,7 @@ void
 ahd_platform_set_tags(struct ahd_softc *ahd, struct scsi_device *sdev,
 		      struct ahd_devinfo *devinfo, ahd_queue_alg alg)
 {
-	struct ahd_linux_device *dev;
+	struct ahd_linaos_device *dev;
 	int was_queuing;
 	int now_queuing;
 
@@ -1423,7 +1423,7 @@ ahd_platform_set_tags(struct ahd_softc *ahd, struct scsi_device *sdev,
 	if (now_queuing) {
 		u_int usertags;
 
-		usertags = ahd_linux_user_tagdepth(ahd, devinfo);
+		usertags = ahd_linaos_user_tagdepth(ahd, devinfo);
 		if (!was_queuing) {
 			/*
 			 * Start out aggressively and allow our
@@ -1476,7 +1476,7 @@ ahd_platform_abort_scbs(struct ahd_softc *ahd, int target, char channel,
 }
 
 static u_int
-ahd_linux_user_tagdepth(struct ahd_softc *ahd, struct ahd_devinfo *devinfo)
+ahd_linaos_user_tagdepth(struct ahd_softc *ahd, struct ahd_devinfo *devinfo)
 {
 	static int warned_user;
 	u_int tags;
@@ -1510,7 +1510,7 @@ ahd_linux_user_tagdepth(struct ahd_softc *ahd, struct ahd_devinfo *devinfo)
  * Determines the queue depth for a given device.
  */
 static void
-ahd_linux_device_queue_depth(struct scsi_device *sdev)
+ahd_linaos_device_queue_depth(struct scsi_device *sdev)
 {
 	struct	ahd_devinfo devinfo;
 	u_int	tags;
@@ -1521,7 +1521,7 @@ ahd_linux_device_queue_depth(struct scsi_device *sdev)
 			    sdev->sdev_target->id, sdev->lun,
 			    sdev->sdev_target->channel == 0 ? 'A' : 'B',
 			    ROLE_INITIATOR);
-	tags = ahd_linux_user_tagdepth(ahd, &devinfo);
+	tags = ahd_linaos_user_tagdepth(ahd, &devinfo);
 	if (tags != 0 && sdev->tagged_supported != 0) {
 
 		ahd_platform_set_tags(ahd, sdev, &devinfo, AHD_QUEUE_TAGGED);
@@ -1537,7 +1537,7 @@ ahd_linux_device_queue_depth(struct scsi_device *sdev)
 }
 
 static int
-ahd_linux_run_command(struct ahd_softc *ahd, struct ahd_linux_device *dev,
+ahd_linaos_run_command(struct ahd_softc *ahd, struct ahd_linaos_device *dev,
 		      struct scsi_cmnd *cmd)
 {
 	struct	 scb *scb;
@@ -1655,7 +1655,7 @@ ahd_linux_run_command(struct ahd_softc *ahd, struct ahd_linux_device *dev,
  * SCSI controller interrupt handler.
  */
 irqreturn_t
-ahd_linux_isr(int irq, void *dev_id)
+ahd_linaos_isr(int irq, void *dev_id)
 {
 	struct	ahd_softc *ahd;
 	u_long	flags;
@@ -1760,7 +1760,7 @@ void
 ahd_done(struct ahd_softc *ahd, struct scb *scb)
 {
 	struct scsi_cmnd *cmd;
-	struct	  ahd_linux_device *dev;
+	struct	  ahd_linaos_device *dev;
 
 	if ((scb->flags & SCB_ACTIVE) == 0) {
 		printk("SCB %d done'd twice\n", SCB_GET_TAG(scb));
@@ -1776,11 +1776,11 @@ ahd_done(struct ahd_softc *ahd, struct scb *scb)
 		cmd->result &= ~(CAM_DEV_QFRZN << 16);
 		dev->qfrozen--;
 	}
-	ahd_linux_unmap_scb(ahd, scb);
+	ahd_linaos_unmap_scb(ahd, scb);
 
 	/*
 	 * Guard against stale sense data.
-	 * The Linux mid-layer assumes that sense
+	 * The LinaOS mid-layer assumes that sense
 	 * was retrieved anytime the first byte of
 	 * the sense buffer looks "sane".
 	 */
@@ -1829,7 +1829,7 @@ ahd_done(struct ahd_softc *ahd, struct scb *scb)
 			ahd_set_transaction_status(scb, CAM_REQ_CMP);
 		}
 	} else if (ahd_get_transaction_status(scb) == CAM_SCSI_STATUS_ERROR) {
-		ahd_linux_handle_scsi_status(ahd, cmd->device, scb);
+		ahd_linaos_handle_scsi_status(ahd, cmd->device, scb);
 	}
 
 	if (dev->openings == 1
@@ -1862,15 +1862,15 @@ ahd_done(struct ahd_softc *ahd, struct scb *scb)
 	}
 
 	ahd_free_scb(ahd, scb);
-	ahd_linux_queue_cmd_complete(ahd, cmd);
+	ahd_linaos_queue_cmd_complete(ahd, cmd);
 }
 
 static void
-ahd_linux_handle_scsi_status(struct ahd_softc *ahd,
+ahd_linaos_handle_scsi_status(struct ahd_softc *ahd,
 			     struct scsi_device *sdev, struct scb *scb)
 {
 	struct	ahd_devinfo devinfo;
-	struct ahd_linux_device *dev = scsi_transport_device_data(sdev);
+	struct ahd_linaos_device *dev = scsi_transport_device_data(sdev);
 
 	ahd_compile_devinfo(&devinfo,
 			    ahd->our_id,
@@ -2012,7 +2012,7 @@ ahd_linux_handle_scsi_status(struct ahd_softc *ahd,
 }
 
 static void
-ahd_linux_queue_cmd_complete(struct ahd_softc *ahd, struct scsi_cmnd *cmd)
+ahd_linaos_queue_cmd_complete(struct ahd_softc *ahd, struct scsi_cmnd *cmd)
 {
 	int status;
 	int new_status = DID_OK;
@@ -2020,7 +2020,7 @@ ahd_linux_queue_cmd_complete(struct ahd_softc *ahd, struct scsi_cmnd *cmd)
 	int scsi_status;
 
 	/*
-	 * Map CAM error codes into Linux Error codes.  We
+	 * Map CAM error codes into LinaOS Error codes.  We
 	 * avoid the conversion so that the DV code has the
 	 * full error information available when making
 	 * state change decisions.
@@ -2132,10 +2132,10 @@ ahd_release_simq(struct ahd_softc *ahd)
 }
 
 static int
-ahd_linux_queue_abort_cmd(struct scsi_cmnd *cmd)
+ahd_linaos_queue_abort_cmd(struct scsi_cmnd *cmd)
 {
 	struct ahd_softc *ahd;
-	struct ahd_linux_device *dev;
+	struct ahd_linaos_device *dev;
 	struct scb *pending_scb;
 	u_int  saved_scbptr;
 	u_int  active_scbptr;
@@ -2361,7 +2361,7 @@ done:
 	return retval;
 }
 
-static void ahd_linux_set_width(struct scsi_target *starget, int width)
+static void ahd_linaos_set_width(struct scsi_target *starget, int width)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2375,7 +2375,7 @@ static void ahd_linux_set_width(struct scsi_target *starget, int width)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_period(struct scsi_target *starget, int period)
+static void ahd_linaos_set_period(struct scsi_target *starget, int period)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2428,7 +2428,7 @@ static void ahd_linux_set_period(struct scsi_target *starget, int period)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_offset(struct scsi_target *starget, int offset)
+static void ahd_linaos_set_offset(struct scsi_target *starget, int offset)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2463,7 +2463,7 @@ static void ahd_linux_set_offset(struct scsi_target *starget, int offset)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_dt(struct scsi_target *starget, int dt)
+static void ahd_linaos_set_dt(struct scsi_target *starget, int dt)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2487,7 +2487,7 @@ static void ahd_linux_set_dt(struct scsi_target *starget, int dt)
 	if (dt && spi_max_width(starget)) {
 		ppr_options |= MSG_EXT_PPR_DT_REQ;
 		if (!width)
-			ahd_linux_set_width(starget, 1);
+			ahd_linaos_set_width(starget, 1);
 	} else {
 		if (period <= 9)
 			period = 10; /* If resetting DT, period must be >= 25ns */
@@ -2505,7 +2505,7 @@ static void ahd_linux_set_dt(struct scsi_target *starget, int dt)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_qas(struct scsi_target *starget, int qas)
+static void ahd_linaos_set_qas(struct scsi_target *starget, int qas)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2544,7 +2544,7 @@ static void ahd_linux_set_qas(struct scsi_target *starget, int qas)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_iu(struct scsi_target *starget, int iu)
+static void ahd_linaos_set_iu(struct scsi_target *starget, int iu)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2584,7 +2584,7 @@ static void ahd_linux_set_iu(struct scsi_target *starget, int iu)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_rd_strm(struct scsi_target *starget, int rdstrm)
+static void ahd_linaos_set_rd_strm(struct scsi_target *starget, int rdstrm)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2620,7 +2620,7 @@ static void ahd_linux_set_rd_strm(struct scsi_target *starget, int rdstrm)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_wr_flow(struct scsi_target *starget, int wrflow)
+static void ahd_linaos_set_wr_flow(struct scsi_target *starget, int wrflow)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2656,7 +2656,7 @@ static void ahd_linux_set_wr_flow(struct scsi_target *starget, int wrflow)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_rti(struct scsi_target *starget, int rti)
+static void ahd_linaos_set_rti(struct scsi_target *starget, int rti)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2700,7 +2700,7 @@ static void ahd_linux_set_rti(struct scsi_target *starget, int rti)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_pcomp_en(struct scsi_target *starget, int pcomp)
+static void ahd_linaos_set_pcomp_en(struct scsi_target *starget, int pcomp)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2726,7 +2726,7 @@ static void ahd_linux_set_pcomp_en(struct scsi_target *starget, int pcomp)
 		uint8_t precomp;
 
 		if (ahd->unit < ARRAY_SIZE(aic79xx_iocell_info)) {
-			const struct ahd_linux_iocell_opts *iocell_opts;
+			const struct ahd_linaos_iocell_opts *iocell_opts;
 
 			iocell_opts = &aic79xx_iocell_info[ahd->unit];
 			precomp = iocell_opts->precomp;
@@ -2750,7 +2750,7 @@ static void ahd_linux_set_pcomp_en(struct scsi_target *starget, int pcomp)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_set_hold_mcs(struct scsi_target *starget, int hold)
+static void ahd_linaos_set_hold_mcs(struct scsi_target *starget, int hold)
 {
 	struct Scsi_Host *shost = dev_to_shost(starget->dev.parent);
 	struct ahd_softc *ahd = *((struct ahd_softc **)shost->hostdata);
@@ -2780,7 +2780,7 @@ static void ahd_linux_set_hold_mcs(struct scsi_target *starget, int hold)
 	ahd_unlock(ahd, &flags);
 }
 
-static void ahd_linux_get_signalling(struct Scsi_Host *shost)
+static void ahd_linaos_get_signalling(struct Scsi_Host *shost)
 {
 	struct ahd_softc *ahd = *(struct ahd_softc **)shost->hostdata;
 	unsigned long flags;
@@ -2800,34 +2800,34 @@ static void ahd_linux_get_signalling(struct Scsi_Host *shost)
 		spi_signalling(shost) = SPI_SIGNAL_UNKNOWN;
 }
 
-static struct spi_function_template ahd_linux_transport_functions = {
-	.set_offset	= ahd_linux_set_offset,
+static struct spi_function_template ahd_linaos_transport_functions = {
+	.set_offset	= ahd_linaos_set_offset,
 	.show_offset	= 1,
-	.set_period	= ahd_linux_set_period,
+	.set_period	= ahd_linaos_set_period,
 	.show_period	= 1,
-	.set_width	= ahd_linux_set_width,
+	.set_width	= ahd_linaos_set_width,
 	.show_width	= 1,
-	.set_dt		= ahd_linux_set_dt,
+	.set_dt		= ahd_linaos_set_dt,
 	.show_dt	= 1,
-	.set_iu		= ahd_linux_set_iu,
+	.set_iu		= ahd_linaos_set_iu,
 	.show_iu	= 1,
-	.set_qas	= ahd_linux_set_qas,
+	.set_qas	= ahd_linaos_set_qas,
 	.show_qas	= 1,
-	.set_rd_strm	= ahd_linux_set_rd_strm,
+	.set_rd_strm	= ahd_linaos_set_rd_strm,
 	.show_rd_strm	= 1,
-	.set_wr_flow	= ahd_linux_set_wr_flow,
+	.set_wr_flow	= ahd_linaos_set_wr_flow,
 	.show_wr_flow	= 1,
-	.set_rti	= ahd_linux_set_rti,
+	.set_rti	= ahd_linaos_set_rti,
 	.show_rti	= 1,
-	.set_pcomp_en	= ahd_linux_set_pcomp_en,
+	.set_pcomp_en	= ahd_linaos_set_pcomp_en,
 	.show_pcomp_en	= 1,
-	.set_hold_mcs	= ahd_linux_set_hold_mcs,
+	.set_hold_mcs	= ahd_linaos_set_hold_mcs,
 	.show_hold_mcs	= 1,
-	.get_signalling = ahd_linux_get_signalling,
+	.get_signalling = ahd_linaos_get_signalling,
 };
 
 static int __init
-ahd_linux_init(void)
+ahd_linaos_init(void)
 {
 	int	error = 0;
 
@@ -2837,26 +2837,26 @@ ahd_linux_init(void)
 	if (aic79xx)
 		aic79xx_setup(aic79xx);
 
-	ahd_linux_transport_template =
-		spi_attach_transport(&ahd_linux_transport_functions);
-	if (!ahd_linux_transport_template)
+	ahd_linaos_transport_template =
+		spi_attach_transport(&ahd_linaos_transport_functions);
+	if (!ahd_linaos_transport_template)
 		return -ENODEV;
 
-	scsi_transport_reserve_device(ahd_linux_transport_template,
-				      sizeof(struct ahd_linux_device));
+	scsi_transport_reserve_device(ahd_linaos_transport_template,
+				      sizeof(struct ahd_linaos_device));
 
-	error = ahd_linux_pci_init();
+	error = ahd_linaos_pci_init();
 	if (error)
-		spi_release_transport(ahd_linux_transport_template);
+		spi_release_transport(ahd_linaos_transport_template);
 	return error;
 }
 
 static void __exit
-ahd_linux_exit(void)
+ahd_linaos_exit(void)
 {
-	ahd_linux_pci_exit();
-	spi_release_transport(ahd_linux_transport_template);
+	ahd_linaos_pci_exit();
+	spi_release_transport(ahd_linaos_transport_template);
 }
 
-module_init(ahd_linux_init);
-module_exit(ahd_linux_exit);
+module_init(ahd_linaos_init);
+module_exit(ahd_linaos_exit);

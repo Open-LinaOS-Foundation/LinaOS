@@ -6,17 +6,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/fs.h>
+#include <linaos/watchdog.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
 #include "sch56xx-common.h"
 
 /* Insmod parameters */

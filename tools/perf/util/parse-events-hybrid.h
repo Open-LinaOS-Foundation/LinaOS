@@ -2,10 +2,10 @@
 #ifndef __PERF_PARSE_EVENTS_HYBRID_H
 #define __PERF_PARSE_EVENTS_HYBRID_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <stdbool.h>
-#include <linux/types.h>
-#include <linux/perf_event.h>
+#include <linaos/types.h>
+#include <linaos/perf_event.h>
 #include <string.h>
 
 int parse_events__add_numeric_hybrid(struct parse_events_state *parse_state,

@@ -2,7 +2,7 @@
 /*
  *  PCM DRM helpers
  */
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <drm/drm_edid.h>
 #include <sound/pcm.h>
 #include <sound/pcm_drm_eld.h>

@@ -1,7 +1,7 @@
 What:		/sys/bus/firewire/devices/fw[0-9]+/
 Date:		May 2007
 KernelVersion:	2.6.22
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 		IEEE 1394 node device attributes.
 		Read-only.  Mutable during the node device's lifetime.
@@ -20,7 +20,7 @@ Description:
 What:		/sys/bus/firewire/devices/fw[0-9]+/units
 Date:		June 2009
 KernelVersion:	2.6.31
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 		IEEE 1394 node device attribute.
 		Read-only.  Mutable during the node device's lifetime.
@@ -42,7 +42,7 @@ Users:		udev rules to set ownership and access permissions or ACLs of
 What:		/sys/bus/firewire/devices/fw[0-9]+/is_local
 Date:		July 2012
 KernelVersion:	3.6
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 		IEEE 1394 node device attribute.
 		Read-only and immutable.
@@ -54,7 +54,7 @@ Values:		1: The sysfs entry represents a local node (a controller card).
 What:		/sys/bus/firewire/devices/fw[0-9]+[.][0-9]+/
 Date:		May 2007
 KernelVersion:	2.6.22
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 		IEEE 1394 unit device attributes.
 		Read-only.  Immutable during the unit device's lifetime.
@@ -72,7 +72,7 @@ Description:
 What:		/sys/bus/firewire/devices/*/
 Date:		May 2007
 KernelVersion:	2.6.22
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 		Attributes common to IEEE 1394 node devices and unit devices.
 		Read-only.  Mutable during the node device's lifetime.
@@ -116,7 +116,7 @@ What:		/sys/bus/firewire/drivers/sbp2/fw*/host*/target*/*:*:*:*/ieee1394_id
 		/sys/bus/ieee1394/drivers/sbp2/fw*/host*/target*/*:*:*:*/ieee1394_id
 Date:		Feb 2004
 KernelVersion:	2.6.4
-Contact:	linux1394-devel@lists.sourceforge.net
+Contact:	linaos1394-devel@lists.sourceforge.net
 Description:
 		SCSI target port identifier and logical unit identifier of a
 		logical unit of an SBP-2 target.  The identifiers are specified

@@ -9,10 +9,10 @@
  */
 
 #include "hid-ids.h"
-#include <linux/hidraw.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linaos/hidraw.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
 
 #ifdef DEBUG
 static int ft260_debug = 1;

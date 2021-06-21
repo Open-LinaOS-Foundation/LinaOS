@@ -7,10 +7,10 @@
  * Authors: Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/extcon.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linaos/extcon.h>
+#include <linaos/of_graph.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
 
 #include "debug.h"
 #include "core.h"
@@ -454,7 +454,7 @@ static struct extcon_dev *dwc3_get_extcon(struct dwc3 *dwc)
 	 * This device property is for kernel internal use only and
 	 * is expected to be set by the glue code.
 	 */
-	if (device_property_read_string(dev, "linux,extcon-name", &name) == 0) {
+	if (device_property_read_string(dev, "linaos,extcon-name", &name) == 0) {
 		edev = extcon_get_extcon_dev(name);
 		if (!edev)
 			return ERR_PTR(-EPROBE_DEFER);

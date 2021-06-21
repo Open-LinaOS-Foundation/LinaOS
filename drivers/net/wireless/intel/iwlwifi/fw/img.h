@@ -6,7 +6,7 @@
  */
 #ifndef __iwl_fw_img_h__
 #define __iwl_fw_img_h__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "api/dbg-tlv.h"
 

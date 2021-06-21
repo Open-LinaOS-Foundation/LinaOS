@@ -14,9 +14,9 @@
  *	Abstract: rt2800 MMIO device routines.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
 
 #include "rt2x00.h"
 #include "rt2x00mmio.h"

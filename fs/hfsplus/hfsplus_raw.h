@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/hfsplus_raw.h
+ *  linaos/include/linaos/hfsplus_raw.h
  *
  * Copyright (C) 1999
  * Brad Boyer (flar@pants.nu)
@@ -14,7 +14,7 @@
 #ifndef _LINUX_HFSPLUS_RAW_H
 #define _LINUX_HFSPLUS_RAW_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Some constants */
 #define HFSPLUS_SECTOR_SIZE        512

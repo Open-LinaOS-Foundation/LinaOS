@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Line 6 Linux USB driver
+ * Line 6 LinaOS USB driver
  *
  * Copyright (C) 2004-2010 Markus Grabner (grabner@icg.tugraz.at)
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

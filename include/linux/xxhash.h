@@ -75,7 +75,7 @@
 #ifndef XXHASH_H
 #define XXHASH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*-****************************
  * Simple Hash Functions

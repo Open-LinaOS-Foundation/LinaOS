@@ -2,11 +2,11 @@
 #ifndef _LINUX_LIST_H
 #define _LINUX_LIST_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/poison.h>
-#include <linux/const.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/poison.h>
+#include <linaos/const.h>
+#include <linaos/kernel.h>
 
 /*
  * Circular doubly linked list implementation.

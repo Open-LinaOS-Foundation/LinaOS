@@ -5,14 +5,14 @@
  * Copyright (c) 2020 Nobuhiro Iwamatsu <nobuhiro1.iwamatsu@toshiba.co.jp>
  */
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 #include "pinctrl-common.h"
 #include "../core.h"
 #include "../pinconf.h"

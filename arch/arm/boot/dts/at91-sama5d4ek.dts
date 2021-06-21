@@ -278,7 +278,7 @@
 		pb_user1 {
 			label = "pb_user1";
 			gpios = <&pioE 13 GPIO_ACTIVE_HIGH>;
-			linux,code = <0x100>;
+			linaos,code = <0x100>;
 			wakeup-source;
 		};
 	};
@@ -301,7 +301,7 @@
 		d10 {
 			label = "d10";
 			gpios = <&pioE 8 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

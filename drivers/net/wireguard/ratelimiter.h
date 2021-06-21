@@ -6,7 +6,7 @@
 #ifndef _WG_RATELIMITER_H
 #define _WG_RATELIMITER_H
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 int wg_ratelimiter_init(void);
 void wg_ratelimiter_uninit(void);

@@ -5,13 +5,13 @@
  * Written 1998,1999 by Werner Almesberger, EPFL ICA
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/refcount.h>
 #include <net/act_api.h>
 #include <net/netlink.h>
 #include <net/pkt_cls.h>

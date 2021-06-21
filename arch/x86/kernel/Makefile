@@ -1,15 +1,15 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
 extra-y	:= head_$(BITS).o
 extra-y	+= head$(BITS).o
 extra-y	+= ebda.o
 extra-y	+= platform-quirks.o
-extra-y	+= vmlinux.lds
+extra-y	+= vmlinaos.lds
 
-CPPFLAGS_vmlinux.lds += -U$(UTS_MACHINE)
+CPPFLAGS_vmlinaos.lds += -U$(UTS_MACHINE)
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

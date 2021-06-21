@@ -51,7 +51,7 @@ static long snd_legacy_find_free_ioport(const long *port_table, long size)
 #endif
 
 #ifdef SNDRV_LEGACY_FIND_FREE_IRQ
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 static irqreturn_t snd_legacy_empty_irq_handler(int irq, void *dev_id)
 {

@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/core/mmc.c
+ *  linaos/drivers/mmc/core/mmc.c
  *
  *  Copyright (C) 2003-2004 Russell King, All Rights Reserved.
  *  Copyright (C) 2005-2007 Pierre Ossman, All Rights Reserved.
  *  MMCv4 support Copyright (C) 2006 Philip Langdale, All Rights Reserved.
  */
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/pm_runtime.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/pm_runtime.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/mmc.h>
 
 #include "core.h"
 #include "card.h"

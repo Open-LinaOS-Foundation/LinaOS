@@ -25,7 +25,7 @@ offsets). It is parsed as a u64 value, e.g.
 
 Note that if this property is set from UEFI (or a bootloader in EFI
 mode) when EFI_RNG_PROTOCOL is supported, it will be overwritten by
-the Linux EFI stub (which will populate the property itself, using
+the LinaOS EFI stub (which will populate the property itself, using
 EFI_RNG_PROTOCOL).
 
 stdout-path
@@ -63,12 +63,12 @@ where
 
 For example: 115200n8r
 
-Implementation note: Linux will look for the property "linux,stdout-path" or
+Implementation note: LinaOS will look for the property "linaos,stdout-path" or
 on PowerPC "stdout" if "stdout-path" is not found.  However, the
-"linux,stdout-path" and "stdout" properties are deprecated. New platforms
+"linaos,stdout-path" and "stdout" properties are deprecated. New platforms
 should only use the "stdout-path" property.
 
-linux,booted-from-kexec
+linaos,booted-from-kexec
 -----------------------
 
 This property is set (currently only on PowerPC, and only needed on
@@ -76,7 +76,7 @@ book3e) by some versions of kexec-tools to tell the new kernel that it
 is being booted by kexec, as the booting environment may differ (e.g.
 a different secondary CPU release mechanism)
 
-linux,usable-memory-range
+linaos,usable-memory-range
 -------------------------
 
 This property (arm64 only) holds a base address and size, describing a
@@ -91,7 +91,7 @@ e.g.
 
 / {
 	chosen {
-		linux,usable-memory-range = <0x9 0xf0000000 0x0 0x10000000>;
+		linaos,usable-memory-range = <0x9 0xf0000000 0x0 0x10000000>;
 	};
 };
 
@@ -103,7 +103,7 @@ While this property does not represent a real hardware, the address
 and the size are expressed in #address-cells and #size-cells,
 respectively, of the root node.
 
-linux,elfcorehdr
+linaos,elfcorehdr
 ----------------
 
 This property (currently used only on arm64) holds the memory range,
@@ -113,7 +113,7 @@ e.g.
 
 / {
 	chosen {
-		linux,elfcorehdr = <0x9 0xfffff000 0x0 0x800>;
+		linaos,elfcorehdr = <0x9 0xfffff000 0x0 0x800>;
 	};
 };
 
@@ -121,17 +121,17 @@ While this property does not represent a real hardware, the address
 and the size are expressed in #address-cells and #size-cells,
 respectively, of the root node.
 
-linux,initrd-start and linux,initrd-end
+linaos,initrd-start and linaos,initrd-end
 ---------------------------------------
 
 These properties hold the physical start and end address of an initrd that's
-loaded by the bootloader. Note that linux,initrd-start is inclusive, but
-linux,initrd-end is exclusive.
+loaded by the bootloader. Note that linaos,initrd-start is inclusive, but
+linaos,initrd-end is exclusive.
 e.g.
 
 / {
 	chosen {
-		linux,initrd-start = <0x82000000>;
-		linux,initrd-end = <0x82800000>;
+		linaos,initrd-start = <0x82000000>;
+		linaos,initrd-end = <0x82800000>;
 	};
 };

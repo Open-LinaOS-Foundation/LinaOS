@@ -7,9 +7,9 @@
 #ifndef __LINUX_IRQCHIP_IRQ_PARTITION_PERCPU_H
 #define __LINUX_IRQCHIP_IRQ_PARTITION_PERCPU_H
 
-#include <linux/fwnode.h>
-#include <linux/cpumask.h>
-#include <linux/irqdomain.h>
+#include <linaos/fwnode.h>
+#include <linaos/cpumask.h>
+#include <linaos/irqdomain.h>
 
 struct partition_affinity {
 	cpumask_t			mask;

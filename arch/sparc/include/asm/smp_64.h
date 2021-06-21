@@ -7,15 +7,15 @@
 #ifndef _SPARC64_SMP_H
 #define _SPARC64_SMP_H
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/asi.h>
 #include <asm/starfire.h>
 #include <asm/spitfire.h>
 
 #ifndef __ASSEMBLY__
 
-#include <linux/cpumask.h>
-#include <linux/cache.h>
+#include <linaos/cpumask.h>
+#include <linaos/cache.h>
 
 #endif /* !(__ASSEMBLY__) */
 
@@ -27,8 +27,8 @@
  *	Private routines/data
  */
 
-#include <linux/bitops.h>
-#include <linux/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/atomic.h>
 #include <asm/percpu.h>
 
 DECLARE_PER_CPU(cpumask_t, cpu_sibling_map);

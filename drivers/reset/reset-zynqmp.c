@@ -4,12 +4,12 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/of_device.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
+#include <linaos/of_device.h>
 
 #define ZYNQMP_NR_RESETS (ZYNQMP_PM_RESET_END - ZYNQMP_PM_RESET_START)
 #define ZYNQMP_RESET_ID ZYNQMP_PM_RESET_START

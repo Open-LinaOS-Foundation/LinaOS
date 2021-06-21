@@ -160,7 +160,7 @@ config IMA_APPRAISE
 	  and configure EVM.
 
 	  For more information on integrity appraisal refer to:
-	  <http://linux-ima.sourceforge.net>
+	  <http://linaos-ima.sourceforge.net>
 	  If unsure, say N.
 
 config IMA_ARCH_POLICY

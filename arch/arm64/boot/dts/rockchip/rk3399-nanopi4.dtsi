@@ -12,7 +12,7 @@
  */
 
 /dts-v1/;
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include "rk3399.dtsi"
 #include "rk3399-opp.dtsi"
 
@@ -115,7 +115,7 @@
 			debounce-interval = <100>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Key Power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -128,7 +128,7 @@
 		status_led: led-0 {
 			gpios = <&gpio0 RK_PB5 GPIO_ACTIVE_HIGH>;
 			label = "status_led";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

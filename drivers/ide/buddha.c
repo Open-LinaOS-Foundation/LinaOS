@@ -16,14 +16,14 @@
  *    - tune the timings using the speed-register
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/zorro.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/blkdev.h>
+#include <linaos/zorro.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>

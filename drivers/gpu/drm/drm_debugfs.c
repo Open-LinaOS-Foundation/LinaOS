@@ -23,11 +23,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/debugfs.h>
+#include <linaos/export.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_auth.h>

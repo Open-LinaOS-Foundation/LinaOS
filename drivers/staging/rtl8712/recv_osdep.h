@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,7 +16,7 @@
 
 #include "osdep_service.h"
 #include "drv_types.h"
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 void _r8712_init_recv_priv(struct recv_priv *precvpriv,
 			   struct _adapter *padapter);

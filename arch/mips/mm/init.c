@@ -8,29 +8,29 @@
  * Kevin D. Kissell, kevink@mips.com and Carsten Langgaard, carstenl@mips.com
  * Copyright (C) 2000 MIPS Technologies, Inc.  All rights reserved.
  */
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/pfn.h>
-#include <linux/hardirq.h>
-#include <linux/gfp.h>
-#include <linux/kcore.h>
-#include <linux/initrd.h>
+#include <linaos/bug.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/pagemap.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/highmem.h>
+#include <linaos/swap.h>
+#include <linaos/proc_fs.h>
+#include <linaos/pfn.h>
+#include <linaos/hardirq.h>
+#include <linaos/gfp.h>
+#include <linaos/kcore.h>
+#include <linaos/initrd.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cachectl.h>

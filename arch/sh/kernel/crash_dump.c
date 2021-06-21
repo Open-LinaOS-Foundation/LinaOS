@@ -5,10 +5,10 @@
  *	Created by: Hariprasad Nellitheertha (hari@in.ibm.com)
  *	Copyright (C) IBM Corporation, 2004. All rights reserved
  */
-#include <linux/errno.h>
-#include <linux/crash_dump.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/crash_dump.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 /**
  * copy_oldmem_page - copy one page from "oldmem"

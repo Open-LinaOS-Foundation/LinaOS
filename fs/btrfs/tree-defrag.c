@@ -3,7 +3,7 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "print-tree.h"

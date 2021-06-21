@@ -9,16 +9,16 @@
  * Linus Walleij <linus.walleij@stericsson.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/pm_wakeirq.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/pm_wakeirq.h>
 
 #define AB8500_RTC_SOFF_STAT_REG	0x00
 #define AB8500_RTC_CC_CONF_REG		0x01

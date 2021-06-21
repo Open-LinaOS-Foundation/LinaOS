@@ -9,7 +9,7 @@
 #ifndef __STM32_DAC_CORE_H
 #define __STM32_DAC_CORE_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /* STM32 DAC registers */
 #define STM32_DAC_CR		0x00

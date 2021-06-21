@@ -1,8 +1,8 @@
 =======================================
-Real Time Clock (RTC) Drivers for Linux
+Real Time Clock (RTC) Drivers for LinaOS
 =======================================
 
-When Linux developers talk about a "Real Time Clock", they usually mean
+When LinaOS developers talk about a "Real Time Clock", they usually mean
 something that tracks wall clock time and is battery backed so that it
 works even with system power off.  Such clocks will normally not track
 the local time zone or daylight savings time -- unless they dual boot
@@ -13,7 +13,7 @@ The newest non-PC hardware tends to just count seconds, like the time(2)
 system call reports, but RTCs also very commonly represent time using
 the Gregorian calendar and 24 hour time, as reported by gmtime(3).
 
-Linux has two largely-compatible userspace RTC API families you may
+LinaOS has two largely-compatible userspace RTC API families you may
 need to know about:
 
     *	/dev/rtc ... is the RTC provided by PC compatible systems,
@@ -95,7 +95,7 @@ whatever) then the kernel will keep its hands off the RTC, allowing you
 exclusive access to the device for your applications.
 
 The alarm and/or interrupt frequency are programmed into the RTC via
-various ioctl(2) calls as listed in ./include/linux/rtc.h
+various ioctl(2) calls as listed in ./include/linaos/rtc.h
 Rather than write 50 pages describing the ioctl() and so on, it is
 perhaps more useful to include a small test program that demonstrates
 how to use them, and demonstrates the features of the driver. This is
@@ -108,7 +108,7 @@ that will be using this driver.  See the code at the end of this document.
 New portable "RTC Class" drivers:  /dev/rtcN
 --------------------------------------------
 
-Because Linux supports many non-ACPI and non-PC platforms, some of which
+Because LinaOS supports many non-ACPI and non-PC platforms, some of which
 have more than one RTC style clock, it needed a more portable solution
 than expecting a single battery-backed MC146818 clone on every system.
 Accordingly, a new "RTC Class" framework has been defined.  It offers

@@ -32,8 +32,8 @@
  */
 
 #include <net/addrconf.h>
-#include <linux/etherdevice.h>
-#include <linux/mlx5/vport.h>
+#include <linaos/etherdevice.h>
+#include <linaos/mlx5/vport.h>
 
 #include "mlx5_core.h"
 #include "lib/mlx5.h"

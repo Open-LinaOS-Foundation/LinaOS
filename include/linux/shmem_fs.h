@@ -2,13 +2,13 @@
 #ifndef __SHMEM_FS_H
 #define __SHMEM_FS_H
 
-#include <linux/file.h>
-#include <linux/swap.h>
-#include <linux/mempolicy.h>
-#include <linux/pagemap.h>
-#include <linux/percpu_counter.h>
-#include <linux/xattr.h>
-#include <linux/fs_parser.h>
+#include <linaos/file.h>
+#include <linaos/swap.h>
+#include <linaos/mempolicy.h>
+#include <linaos/pagemap.h>
+#include <linaos/percpu_counter.h>
+#include <linaos/xattr.h>
+#include <linaos/fs_parser.h>
 
 /* inode in-kernel data */
 

@@ -2,7 +2,7 @@
 /*
  * Elliptic Curve (Russian) Digital Signature Algorithm for Cryptographic API
  *
- * Copyright (c) 2019 Vitaly Chikunov <vt@altlinux.org>
+ * Copyright (c) 2019 Vitaly Chikunov <vt@altlinaos.org>
  *
  * References:
  * GOST 34.10-2018, GOST R 34.10-2012, RFC 7091, ISO/IEC 14888-3:2018.
@@ -16,13 +16,13 @@
  * any later version.
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
+#include <linaos/module.h>
+#include <linaos/crypto.h>
 #include <crypto/streebog.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/akcipher.h>
-#include <linux/oid_registry.h>
-#include <linux/scatterlist.h>
+#include <linaos/oid_registry.h>
+#include <linaos/scatterlist.h>
 #include "ecrdsa_params.asn1.h"
 #include "ecrdsa_pub_key.asn1.h"
 #include "ecc.h"
@@ -292,6 +292,6 @@ module_init(ecrdsa_mod_init);
 module_exit(ecrdsa_mod_fini);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Vitaly Chikunov <vt@altlinux.org>");
+MODULE_AUTHOR("Vitaly Chikunov <vt@altlinaos.org>");
 MODULE_DESCRIPTION("EC-RDSA generic algorithm");
 MODULE_ALIAS_CRYPTO("ecrdsa-generic");

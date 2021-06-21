@@ -2,13 +2,13 @@
 /*
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *
  * S3C24xx - PM core support for arch/arm/plat-s3c/pm.c
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 
 #include "regs-clock.h"
 #include "regs-irq-s3c24xx.h"

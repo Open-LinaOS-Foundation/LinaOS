@@ -12,8 +12,8 @@
  * shared library.  Undoubtedly, some of these reasons will disappear and others will
  * be added over time.
  */
-#include <linux/elf.h>
-#include <linux/types.h>
+#include <linaos/elf.h>
+#include <linaos/types.h>
 
 extern void ia64_patch (u64 insn_addr, u64 mask, u64 val);	/* patch any insn slot */
 extern void ia64_patch_imm64 (u64 insn_addr, u64 val);		/* patch "movl" w/abs. value*/

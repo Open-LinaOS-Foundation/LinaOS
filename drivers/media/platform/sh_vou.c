@@ -5,19 +5,19 @@
  * Copyright (C) 2010, Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/module.h>
 
 #include <media/drv-intf/sh_vou.h>
 #include <media/v4l2-common.h>
@@ -996,7 +996,7 @@ static int sh_vou_s_selection(struct file *file, void *fh,
 
 	/*
 	 * No down-scaling. According to the API, current call has precedence:
-	 * https://linuxtv.org/downloads/v4l-dvb-apis/uapi/v4l/crop.html#cropping-structures
+	 * https://linaostv.org/downloads/v4l-dvb-apis/uapi/v4l/crop.html#cropping-structures
 	 */
 	vou_adjust_input(&geo, vou_dev->std);
 

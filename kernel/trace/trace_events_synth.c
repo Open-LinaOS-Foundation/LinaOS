@@ -2,20 +2,20 @@
 /*
  * trace_events_synth - synthetic trace events
  *
- * Copyright (C) 2015, 2020 Tom Zanussi <tom.zanussi@linux.intel.com>
+ * Copyright (C) 2015, 2020 Tom Zanussi <tom.zanussi@linaos.intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/security.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
-#include <linux/rculist.h>
-#include <linux/tracefs.h>
+#include <linaos/module.h>
+#include <linaos/kallsyms.h>
+#include <linaos/security.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
+#include <linaos/stacktrace.h>
+#include <linaos/rculist.h>
+#include <linaos/tracefs.h>
 
 /* for gfp flag names */
-#include <linux/trace_events.h>
+#include <linaos/trace_events.h>
 #include <trace/events/mmflags.h>
 
 #include "trace_synth.h"

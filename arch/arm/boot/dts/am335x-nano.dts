@@ -171,7 +171,7 @@
 	rs485-rts-active-high;
 	rs485-rx-during-tx;
 	rs485-rts-delay = <1 1>;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 };
 
 &uart2 {
@@ -181,7 +181,7 @@
 	rts-gpio = <&gpio2 15 GPIO_ACTIVE_HIGH>;
 	rs485-rts-active-high;
 	rs485-rts-delay = <1 1>;
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 };
 
 &uart3 {
@@ -251,7 +251,7 @@
 	nor@0,0 {
 		reg = <0 0x00000000 0x08000000>;
 		compatible = "cfi-flash";
-		linux,mtd-name = "spansion,s29gl010p11t";
+		linaos,mtd-name = "spansion,s29gl010p11t";
 		bank-width = <2>;
 
 		gpmc,mux-add-data = <2>;

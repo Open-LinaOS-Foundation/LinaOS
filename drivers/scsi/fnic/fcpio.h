@@ -18,7 +18,7 @@
 #ifndef _FCPIO_H_
 #define _FCPIO_H_
 
-#include <linux/if_ether.h>
+#include <linaos/if_ether.h>
 
 /*
  * This header file includes all of the data structures used for

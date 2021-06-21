@@ -23,8 +23,8 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_file.h>

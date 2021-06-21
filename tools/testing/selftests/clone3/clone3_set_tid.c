@@ -8,8 +8,8 @@
 
 #define _GNU_SOURCE
 #include <errno.h>
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

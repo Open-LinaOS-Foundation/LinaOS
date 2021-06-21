@@ -5,9 +5,9 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/security.h>
 #include "common.h"
 
 /* String table for operation mode. */

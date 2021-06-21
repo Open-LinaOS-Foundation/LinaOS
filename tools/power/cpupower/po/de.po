@@ -1,6 +1,6 @@
 # German translations for cpufrequtils package
 # German messages for cpufrequtils.
-# Copyright (C) 2004-2009 Dominik Brodowski <linux@dominikbrodowski.net>
+# Copyright (C) 2004-2009 Dominik Brodowski <linaos@dominikbrodowski.net>
 # This file is distributed under the same license as the cpufrequtils package.
 #
 msgid ""

@@ -37,19 +37,19 @@
  *   Modify the locking to make the test for "work to do" an atomic operation.
  */
 
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/smp.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/semaphore.h>
+#include <linaos/capability.h>
+#include <linaos/cpu.h>
+#include <linaos/types.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/module.h>
+#include <linaos/smp.h>
+#include <linaos/timer.h>
+#include <linaos/vmalloc.h>
+#include <linaos/semaphore.h>
 
 #include <asm/sal.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 MODULE_AUTHOR("Jesse Barnes <jbarnes@sgi.com>");
 MODULE_DESCRIPTION("/proc interface to IA-64 SAL features");

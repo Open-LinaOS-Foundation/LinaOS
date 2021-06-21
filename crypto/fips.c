@@ -5,13 +5,13 @@
  * Copyright (c) 2008 Neil Horman <nhorman@tuxdriver.com>
  */
 
-#include <linux/export.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sysctl.h>
-#include <linux/notifier.h>
+#include <linaos/export.h>
+#include <linaos/fips.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sysctl.h>
+#include <linaos/notifier.h>
 
 int fips_enabled;
 EXPORT_SYMBOL_GPL(fips_enabled);

@@ -10,8 +10,8 @@
 
 #ifndef __SKL_HDA_DSP_COMMON_H
 #define __SKL_HDA_DSP_COMMON_H
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/hda_codec.h>

@@ -27,14 +27,14 @@
 ** FIXME: Add support for PCI card hot-plug (OLARD).
 */
 
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>		/* for __init */
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/init.h>		/* for __init */
+#include <linaos/pci.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/pdc.h>
@@ -1412,7 +1412,7 @@ lba_hw_init(struct lba_device *d)
 	 * In SoftFail mode "~0L" is returned as a result of a timeout on the
 	 * pci bus. This is like how PCI busses on x86 and most other
 	 * architectures behave.  In order to increase compatibility with
-	 * existing (x86) PCI hardware and existing Linux drivers we enable
+	 * existing (x86) PCI hardware and existing LinaOS drivers we enable
 	 * Soft Faul mode on PA-RISC now too.
 	 */
         stat = READ_REG32(d->hba.base_addr + LBA_STAT_CTL);

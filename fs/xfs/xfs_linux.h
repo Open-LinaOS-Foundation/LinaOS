@@ -6,8 +6,8 @@
 #ifndef __XFS_LINUX__
 #define __XFS_LINUX__
 
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <linaos/types.h>
+#include <linaos/uuid.h>
 
 /*
  * Kernel specific type declarations for XFS
@@ -24,48 +24,48 @@ typedef __u32			xfs_nlink_t;
 #include "kmem.h"
 #include "mrlock.h"
 
-#include <linux/semaphore.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/crc32c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/file.h>
-#include <linux/swap.h>
-#include <linux/errno.h>
-#include <linux/sched/signal.h>
-#include <linux/bitops.h>
-#include <linux/major.h>
-#include <linux/pagemap.h>
-#include <linux/vfs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/proc_fs.h>
-#include <linux/sort.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/spinlock.h>
-#include <linux/random.h>
-#include <linux/ctype.h>
-#include <linux/writeback.h>
-#include <linux/capability.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/list_sort.h>
-#include <linux/ratelimit.h>
-#include <linux/rhashtable.h>
-#include <linux/xattr.h>
+#include <linaos/semaphore.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/slab.h>
+#include <linaos/crc32c.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/file.h>
+#include <linaos/swap.h>
+#include <linaos/errno.h>
+#include <linaos/sched/signal.h>
+#include <linaos/bitops.h>
+#include <linaos/major.h>
+#include <linaos/pagemap.h>
+#include <linaos/vfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/proc_fs.h>
+#include <linaos/sort.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/delay.h>
+#include <linaos/log2.h>
+#include <linaos/spinlock.h>
+#include <linaos/random.h>
+#include <linaos/ctype.h>
+#include <linaos/writeback.h>
+#include <linaos/capability.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/list_sort.h>
+#include <linaos/ratelimit.h>
+#include <linaos/rhashtable.h>
+#include <linaos/xattr.h>
 
 #include <asm/page.h>
 #include <asm/div64.h>
 #include <asm/param.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 
@@ -158,12 +158,12 @@ struct xstats {
 
 extern struct xstats xfsstats;
 
-static inline dev_t xfs_to_linux_dev_t(xfs_dev_t dev)
+static inline dev_t xfs_to_linaos_dev_t(xfs_dev_t dev)
 {
 	return MKDEV(sysv_major(dev) & 0x1ff, sysv_minor(dev));
 }
 
-static inline xfs_dev_t linux_to_xfs_dev_t(dev_t dev)
+static inline xfs_dev_t linaos_to_xfs_dev_t(dev_t dev)
 {
 	return sysv_encode_dev(dev);
 }
@@ -242,7 +242,7 @@ int xfs_rw_bdev(struct block_device *bdev, sector_t sector, unsigned int count,
 #endif
 
 /*
- * Starting in Linux 4.15, the %p (raw pointer value) printk modifier
+ * Starting in LinaOS 4.15, the %p (raw pointer value) printk modifier
  * prints a hashed version of the pointer to avoid leaking kernel
  * pointers into dmesg.  If we're trying to debug the kernel we want the
  * raw values, so override this behavior as best we can.

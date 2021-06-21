@@ -7,15 +7,15 @@
  * Author: Graeme Gregory <graeme.gregory@linaro.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/amba/bus.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/acpi.h>
+#include <linaos/amba/bus.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "internal.h"
 

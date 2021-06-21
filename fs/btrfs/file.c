@@ -3,19 +3,19 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/falloc.h>
-#include <linux/writeback.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/btrfs.h>
-#include <linux/uio.h>
-#include <linux/iversion.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/backing-dev.h>
+#include <linaos/falloc.h>
+#include <linaos/writeback.h>
+#include <linaos/compat.h>
+#include <linaos/slab.h>
+#include <linaos/btrfs.h>
+#include <linaos/uio.h>
+#include <linaos/iversion.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "transaction.h"

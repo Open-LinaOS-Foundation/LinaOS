@@ -6,7 +6,7 @@
 #define _FCOE_FW_FUNCS_H
 #include "drv_scsi_fw_funcs.h"
 #include "qedf_hsi.h"
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/qed_if.h>
 
 struct fcoe_task_params {
 	/* Output parameter [set/filled by the HSI function] */

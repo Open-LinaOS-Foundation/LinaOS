@@ -5,11 +5,11 @@
  *  Copyright (C) 2006 Alex Dubov <oakad@yahoo.com>
  */
 
-#include <linux/tifm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/module.h>
+#include <linaos/tifm.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/idr.h>
+#include <linaos/module.h>
 
 #define DRIVER_NAME "tifm_core"
 #define DRIVER_VERSION "0.8"

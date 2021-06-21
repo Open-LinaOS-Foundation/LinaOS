@@ -2,7 +2,7 @@
 #ifndef _LINUX_RESET_CONTROLLER_H_
 #define _LINUX_RESET_CONTROLLER_H_
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct reset_controller_dev;
 

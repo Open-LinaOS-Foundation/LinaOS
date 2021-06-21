@@ -2,14 +2,14 @@
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  * Copyright (c) 2016 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/jhash.h>
-#include <linux/filter.h>
-#include <linux/rculist_nulls.h>
-#include <linux/random.h>
-#include <uapi/linux/btf.h>
-#include <linux/rcupdate_trace.h>
+#include <linaos/bpf.h>
+#include <linaos/btf.h>
+#include <linaos/jhash.h>
+#include <linaos/filter.h>
+#include <linaos/rculist_nulls.h>
+#include <linaos/random.h>
+#include <uapi/linaos/btf.h>
+#include <linaos/rcupdate_trace.h>
 #include "percpu_freelist.h"
 #include "bpf_lru_list.h"
 #include "map_in_map.h"

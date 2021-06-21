@@ -5,7 +5,7 @@
 import gdb
 import sys
 
-from linux import utils, lists, constants
+from linaos import utils, lists, constants
 
 clk_core_type = utils.CachedType("struct clk_core")
 

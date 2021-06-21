@@ -6,10 +6,10 @@
  *                        Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/seq_kernel.h>
 #include <sound/seq_midi_event.h>

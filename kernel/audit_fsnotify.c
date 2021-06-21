@@ -6,17 +6,17 @@
  * Copyright 2005 IBM Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/audit.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/namei.h>
-#include <linux/netlink.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <linaos/kernel.h>
+#include <linaos/audit.h>
+#include <linaos/kthread.h>
+#include <linaos/mutex.h>
+#include <linaos/fs.h>
+#include <linaos/fsnotify_backend.h>
+#include <linaos/namei.h>
+#include <linaos/netlink.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/security.h>
 #include "audit.h"
 
 /*

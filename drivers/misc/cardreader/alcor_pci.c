@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Copyright (C) 2018 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (C) 2018 Oleksij Rempel <linaos@rempel-privat.de>
  *
  * Driver for Alcor Micro AU6601 and AU6621 controllers
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
 
-#include <linux/alcor_pci.h>
+#include <linaos/alcor_pci.h>
 
 #define DRV_NAME_ALCOR_PCI			"alcor_pci"
 
@@ -370,6 +370,6 @@ static struct pci_driver alcor_driver = {
 
 module_pci_driver(alcor_driver);
 
-MODULE_AUTHOR("Oleksij Rempel <linux@rempel-privat.de>");
+MODULE_AUTHOR("Oleksij Rempel <linaos@rempel-privat.de>");
 MODULE_DESCRIPTION("PCI driver for Alcor Micro AU6601 Secure Digital Host Controller Interface");
 MODULE_LICENSE("GPL");

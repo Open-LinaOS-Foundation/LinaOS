@@ -24,7 +24,7 @@
 #ifndef LINUX_MMC_MMC_H
 #define LINUX_MMC_MMC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Standard MMC commands (4.1)           type  argument     response */
    /* class 1 */

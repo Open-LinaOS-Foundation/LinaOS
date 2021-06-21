@@ -36,9 +36,9 @@
 #ifndef __IB_MAD_PRIV_H__
 #define __IB_MAD_PRIV_H__
 
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/workqueue.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/workqueue.h>
 #include <rdma/ib_mad.h>
 #include <rdma/ib_smi.h>
 #include <rdma/opa_smi.h>

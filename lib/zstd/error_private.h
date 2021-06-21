@@ -22,8 +22,8 @@
 /* ****************************************
 *  Dependencies
 ******************************************/
-#include <linux/types.h> /* size_t */
-#include <linux/zstd.h>  /* enum list */
+#include <linaos/types.h> /* size_t */
+#include <linaos/zstd.h>  /* enum list */
 
 /* ****************************************
 *  Compiler-specific

@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/atomic.h>
-#include <linux/seqlock.h>
-#include <linux/win_minmax.h>
+#include <linaos/atomic.h>
+#include <linaos/seqlock.h>
+#include <linaos/win_minmax.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>

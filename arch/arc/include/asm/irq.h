@@ -21,7 +21,7 @@
 #define FIRST_EXT_IRQ	24
 #endif
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include <asm-generic/irq.h>
 
 extern void arc_init_IRQ(void);

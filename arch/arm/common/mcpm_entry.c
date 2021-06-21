@@ -6,11 +6,11 @@
  * Copyright:   (C) 2012-2013  Linaro Limited
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/cpu_pm.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/irqflags.h>
+#include <linaos/cpu_pm.h>
 
 #include <asm/mcpm.h>
 #include <asm/cacheflush.h>

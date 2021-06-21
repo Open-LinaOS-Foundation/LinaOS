@@ -6,20 +6,20 @@
  *   Copyright (C) 2013-2016 Michael Lee <igvtee@gmail.com>
  */
 
-#include <linux/of_device.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/if_vlan.h>
-#include <linux/reset.h>
-#include <linux/tcp.h>
-#include <linux/interrupt.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/phylink.h>
-#include <linux/jhash.h>
+#include <linaos/of_device.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/if_vlan.h>
+#include <linaos/reset.h>
+#include <linaos/tcp.h>
+#include <linaos/interrupt.h>
+#include <linaos/pinctrl/devinfo.h>
+#include <linaos/phylink.h>
+#include <linaos/jhash.h>
 #include <net/dsa.h>
 
 #include "mtk_eth_soc.h"

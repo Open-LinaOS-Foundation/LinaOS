@@ -4,7 +4,7 @@
  *  comedi/drivers/tests/ni_routes_test.c
  *  Unit tests for NI routes (ni_routes.c module).
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - LinaOS Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,7 @@
  *  GNU General Public License for more details.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../ni_stc.h"
 #include "../ni_routes.h"

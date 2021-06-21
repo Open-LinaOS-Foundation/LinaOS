@@ -12,11 +12,11 @@
 #ifndef __ES58X_COMMON_H__
 #define __ES58X_COMMON_H__
 
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <linaos/types.h>
+#include <linaos/usb.h>
+#include <linaos/netdevice.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
 
 #include "es581_4.h"
 #include "es58x_fd.h"

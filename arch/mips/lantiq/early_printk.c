@@ -4,7 +4,7 @@
  *  Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
 
-#include <linux/cpu.h>
+#include <linaos/cpu.h>
 #include <lantiq_soc.h>
 #include <asm/setup.h>
 

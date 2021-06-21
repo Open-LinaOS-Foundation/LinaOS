@@ -6,7 +6,7 @@
 #ifndef _LINUX_OPENVSWITCH_H
 #define _LINUX_OPENVSWITCH_H 1
 
-#include <uapi/linux/openvswitch.h>
+#include <uapi/linaos/openvswitch.h>
 
 #define OVS_CLONE_ATTR_EXEC      0   /* Specify an u32 value. When nonzero,
 				      * actions in clone will not change flow

@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2020, Intel Corporation
  *
- * Authors: Alexander Antonov <alexander.antonov@linux.intel.com>
+ * Authors: Alexander Antonov <alexander.antonov@linaos.intel.com>
  */
 
 #ifndef _IOSTAT_H

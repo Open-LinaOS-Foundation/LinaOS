@@ -4,7 +4,7 @@
 #define _BR_PRIVATE_MRP_H_
 
 #include "br_private.h"
-#include <uapi/linux/mrp_bridge.h>
+#include <uapi/linaos/mrp_bridge.h>
 
 struct br_mrp {
 	/* list of mrp instances */

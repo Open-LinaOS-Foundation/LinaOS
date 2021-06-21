@@ -9,7 +9,7 @@
  *                2003 Herbert Valerio Riedel <hvr@gnu.org>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 .file "serpent-sse2-i586-asm_32.S"
 .text

@@ -11,18 +11,18 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/hw_random.h>
-#include <linux/workqueue.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/random.h>
+#include <linaos/hw_random.h>
+#include <linaos/workqueue.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #define RNG_RESET			0x01
 #define RNG_GEN_PRNG_HW_INIT		0x02

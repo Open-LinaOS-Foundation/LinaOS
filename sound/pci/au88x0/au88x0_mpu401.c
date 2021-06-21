@@ -7,8 +7,8 @@
  *   by Manuel Jander (mjande@embedded.cl).
  */
 
-#include <linux/time.h>
-#include <linux/init.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
 #include <sound/core.h>
 #include <sound/mpu401.h>
 #include "au88x0.h"

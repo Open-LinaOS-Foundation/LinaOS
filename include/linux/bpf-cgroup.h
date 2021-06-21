@@ -2,13 +2,13 @@
 #ifndef _BPF_CGROUP_H
 #define _BPF_CGROUP_H
 
-#include <linux/bpf.h>
-#include <linux/errno.h>
-#include <linux/jump_label.h>
-#include <linux/percpu.h>
-#include <linux/percpu-refcount.h>
-#include <linux/rbtree.h>
-#include <uapi/linux/bpf.h>
+#include <linaos/bpf.h>
+#include <linaos/errno.h>
+#include <linaos/jump_label.h>
+#include <linaos/percpu.h>
+#include <linaos/percpu-refcount.h>
+#include <linaos/rbtree.h>
+#include <uapi/linaos/bpf.h>
 
 struct sock;
 struct sockaddr;

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2017-2019 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2017-2019 The LinaOS Foundation. All rights reserved. */
 
-#include <linux/clk.h>
-#include <linux/interconnect.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_opp.h>
+#include <linaos/clk.h>
+#include <linaos/interconnect.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_opp.h>
 #include <soc/qcom/cmd-db.h>
 #include <drm/drm_gem.h>
 

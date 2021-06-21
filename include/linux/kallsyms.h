@@ -6,11 +6,11 @@
 #ifndef _LINUX_KALLSYMS_H
 #define _LINUX_KALLSYMS_H
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/stddef.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
 
 #include <asm/sections.h>
 

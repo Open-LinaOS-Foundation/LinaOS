@@ -11,17 +11,17 @@
  *  POSIX 1003.1e draft standard 17 ACLs.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
-#include <linux/export.h>
-#include <linux/user_namespace.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/posix_acl.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/xattr.h>
+#include <linaos/export.h>
+#include <linaos/user_namespace.h>
 
 static struct posix_acl **acl_by_type(struct inode *inode, int type)
 {

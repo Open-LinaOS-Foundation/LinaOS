@@ -4,7 +4,7 @@
  * Author: Michael S. Tsirkin <mst@redhat.com>
  *
  * Partial implementation of virtio 0.9. event index is used for signalling,
- * unconditionally. Design roughly follows linux kernel implementation in order
+ * unconditionally. Design roughly follows linaos kernel implementation in order
  * to be able to judge its performance.
  */
 #define _GNU_SOURCE
@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include <linux/virtio_ring.h>
+#include <linaos/virtio_ring.h>
 
 struct data {
 	void *data;

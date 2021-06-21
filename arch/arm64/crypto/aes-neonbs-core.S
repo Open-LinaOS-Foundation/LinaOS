@@ -14,7 +14,7 @@
  * for 32-bit ARM written by Andy Polyakov <appro@openssl.org>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 	.text

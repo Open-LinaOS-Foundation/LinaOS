@@ -10,26 +10,26 @@
  * Generic code for virtio server in host kernel.
  */
 
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/uio.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/kthread.h>
-#include <linux/cgroup.h>
-#include <linux/module.h>
-#include <linux/sort.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/nospec.h>
-#include <linux/kcov.h>
+#include <linaos/eventfd.h>
+#include <linaos/vhost.h>
+#include <linaos/uio.h>
+#include <linaos/mm.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/poll.h>
+#include <linaos/file.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/kthread.h>
+#include <linaos/cgroup.h>
+#include <linaos/module.h>
+#include <linaos/sort.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/interval_tree_generic.h>
+#include <linaos/nospec.h>
+#include <linaos/kcov.h>
 
 #include "vhost.h"
 

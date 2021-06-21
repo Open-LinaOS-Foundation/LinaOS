@@ -9,12 +9,12 @@
 
 #include "main.h"
 
-#include <linux/compiler.h>
-#include <linux/if_ether.h>
-#include <linux/jhash.h>
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/if_ether.h>
+#include <linaos/jhash.h>
+#include <linaos/netlink.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
 
 bool batadv_compare_orig(const struct hlist_node *node, const void *data2);
 int batadv_originator_init(struct batadv_priv *bat_priv);

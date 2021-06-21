@@ -2,7 +2,7 @@
 /*
  * Comedi driver for National Instruments PCI-DIO-32HS
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1999,2002 David A. Schleef <ds@schleef.org>
  */
 
@@ -38,10 +38,10 @@
 
 #define USE_DMA
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
 
 #include "../comedi_pci.h"
 

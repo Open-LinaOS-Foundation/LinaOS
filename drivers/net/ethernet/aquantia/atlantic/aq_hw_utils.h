@@ -12,7 +12,7 @@
 #ifndef AQ_HW_UTILS_H
 #define AQ_HW_UTILS_H
 
-#include <linux/iopoll.h>
+#include <linaos/iopoll.h>
 
 #include "aq_common.h"
 

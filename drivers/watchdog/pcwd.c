@@ -4,14 +4,14 @@
  * by Ken Hollis (khollis@bitgate.com)
  *
  * Permission granted from Simon Machell (smachell@berkprod.com)
- * Written for the Linux Kernel, and GPLed by Ken Hollis
+ * Written for the LinaOS Kernel, and GPLed by Ken Hollis
  *
  * 960107	Added request_region routines, modulized the whole thing.
  * 960108	Fixed end-of-file pointer (Thanks to Dan Hollis), added
  *		WD_TIMEOUT define.
  * 960216	Added eof marker on the file, and changed verbose messages.
  * 960716	Made functional and cosmetic changes to the source for
- *		inclusion in Linux 2.0.x kernels, thanks to Alan Cox.
+ *		inclusion in LinaOS 2.0.x kernels, thanks to Alan Cox.
  * 960717	Removed read/seek routines, replaced with ioctl.  Also, added
  *		check_region command due to Alan's suggestion.
  * 960821	Made changes to compile in newer 2.0.x kernels.  Added
@@ -34,7 +34,7 @@
  * 971210	Disable board on initialisation in case board already ticking.
  * 971222	Changed open/close for temperature handling
  *		Michael Meskes <meskes@debian.org>.
- * 980112	Used minor numbers from include/linux/miscdevice.h
+ * 980112	Used minor numbers from include/linaos/miscdevice.h
  * 990403	Clear reset status after reading control status register in
  *		pcwd_showprevstate(). [Marc Boucher <marc@mbsi.ca>]
  * 990605	Made changes to code to support Firmware 1.22a, added
@@ -54,24 +54,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>	/* For module specific items */
-#include <linux/moduleparam.h>	/* For new moduleparam's */
-#include <linux/types.h>	/* For standard types (like size_t) */
-#include <linux/errno.h>	/* For the -ENODEV/... values */
-#include <linux/kernel.h>	/* For printk/panic/... */
-#include <linux/delay.h>	/* For mdelay function */
-#include <linux/timer.h>	/* For timer related operations */
-#include <linux/jiffies.h>	/* For jiffies stuff */
-#include <linux/miscdevice.h>	/* For struct miscdevice */
-#include <linux/watchdog.h>	/* For the watchdog specific items */
-#include <linux/reboot.h>	/* For kernel_power_off() */
-#include <linux/init.h>		/* For __init/__exit/... */
-#include <linux/fs.h>		/* For file operations */
-#include <linux/isa.h>		/* For isa devices */
-#include <linux/ioport.h>	/* For io-port access */
-#include <linux/spinlock.h>	/* For spin_lock/spin_unlock/... */
-#include <linux/uaccess.h>	/* For copy_to_user/put_user/... */
-#include <linux/io.h>		/* For inb/outb/... */
+#include <linaos/module.h>	/* For module specific items */
+#include <linaos/moduleparam.h>	/* For new moduleparam's */
+#include <linaos/types.h>	/* For standard types (like size_t) */
+#include <linaos/errno.h>	/* For the -ENODEV/... values */
+#include <linaos/kernel.h>	/* For printk/panic/... */
+#include <linaos/delay.h>	/* For mdelay function */
+#include <linaos/timer.h>	/* For timer related operations */
+#include <linaos/jiffies.h>	/* For jiffies stuff */
+#include <linaos/miscdevice.h>	/* For struct miscdevice */
+#include <linaos/watchdog.h>	/* For the watchdog specific items */
+#include <linaos/reboot.h>	/* For kernel_power_off() */
+#include <linaos/init.h>		/* For __init/__exit/... */
+#include <linaos/fs.h>		/* For file operations */
+#include <linaos/isa.h>		/* For isa devices */
+#include <linaos/ioport.h>	/* For io-port access */
+#include <linaos/spinlock.h>	/* For spin_lock/spin_unlock/... */
+#include <linaos/uaccess.h>	/* For copy_to_user/put_user/... */
+#include <linaos/io.h>		/* For inb/outb/... */
 
 /* Module and version information */
 #define WATCHDOG_VERSION "1.20"

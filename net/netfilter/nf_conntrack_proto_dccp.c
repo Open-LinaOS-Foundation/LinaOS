@@ -4,18 +4,18 @@
  *
  * Copyright (c) 2005, 2006, 2008 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/dccp.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sysctl.h>
+#include <linaos/spinlock.h>
+#include <linaos/skbuff.h>
+#include <linaos/dccp.h>
+#include <linaos/slab.h>
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <linaos/netfilter/nfnetlink_conntrack.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
@@ -675,8 +675,8 @@ static int nlattr_to_dccp(struct nlattr *cda[], struct nf_conn *ct)
 
 #ifdef CONFIG_NF_CONNTRACK_TIMEOUT
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_cttimeout.h>
 
 static int dccp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				      struct net *net, void *data)

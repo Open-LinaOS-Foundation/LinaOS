@@ -8,9 +8,9 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/pci.h>
+#include <linaos/acpi.h>
+#include <linaos/efi.h>
+#include <linaos/pci.h>
 
 struct acpi_hid_uid {
 	struct acpi_device_id hid[2];

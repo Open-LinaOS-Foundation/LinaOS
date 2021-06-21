@@ -378,7 +378,7 @@ ts[1] used to hold hardware timestamps converted to system time.
 Instead, expose the hardware clock device on the NIC directly as
 a HW PTP clock source, to allow time conversion in userspace and
 optionally synchronize system time with a userspace PTP stack such
-as linuxptp. For the PTP clock API, see Documentation/driver-api/ptp.rst.
+as linaosptp. For the PTP clock API, see Documentation/driver-api/ptp.rst.
 
 Note that if the SO_TIMESTAMP or SO_TIMESTAMPNS option is enabled
 together with SO_TIMESTAMPING using SOF_TIMESTAMPING_SOFTWARE, a false
@@ -467,7 +467,7 @@ is again deprecated and ts[2] holds a hardware timestamp if set.
 
 Hardware time stamping must also be initialized for each device driver
 that is expected to do hardware time stamping. The parameter is defined in
-include/uapi/linux/net_tstamp.h as::
+include/uapi/linaos/net_tstamp.h as::
 
 	struct hwtstamp_config {
 		int flags;	/* no flags defined right now, must be zero */
@@ -539,7 +539,7 @@ not been implemented in all drivers.
 	    HWTSTAMP_FILTER_PTP_V1_L4_EVENT,
 
 	    /* for the complete list of values, please check
-	    * the include file include/uapi/linux/net_tstamp.h
+	    * the include file include/uapi/linaos/net_tstamp.h
 	    */
     };
 
@@ -617,7 +617,7 @@ jitter between the host port and its PTP partner. For this reason, some DSA
 switches include a timestamping clock of their own, and have the ability to
 perform network timestamping on their own MAC, such that path delays only
 measure wire and PHY propagation latencies. Timestamping DSA switches are
-supported in Linux and expose the same ABI as any other network interface (save
+supported in LinaOS and expose the same ABI as any other network interface (save
 for the fact that the DSA interfaces are in fact virtual in terms of network
 I/O, they do have their own PHC).  It is typical, but not mandatory, for all
 interfaces of a DSA switch to share the same PHC.
@@ -722,7 +722,7 @@ to each individual MAC driver for PHY timestamping support. This entails:
 
 These perform the same role as timestamping Ethernet PHYs, save for the fact
 that they are discrete devices and can therefore be used in conjunction with
-any PHY even if it doesn't support timestamping. In Linux, they are
+any PHY even if it doesn't support timestamping. In LinaOS, they are
 discoverable and attachable to a ``struct phy_device`` through Device Tree, and
 for the rest, they use the same mii_ts infrastructure as those. See
 Documentation/devicetree/bindings/ptp/timestamper.txt for more details.

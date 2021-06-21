@@ -8,9 +8,9 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio.h>
+#include <linaos/io.h>
 #include <plat/mpp.h>
 #include <plat/orion-gpio.h>
 #include "dove.h"

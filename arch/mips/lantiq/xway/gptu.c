@@ -5,11 +5,11 @@
  *  Copyright (C) 2012 Lantiq GmbH
  */
 
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
 
 #include <lantiq_soc.h>
 #include "../clk.h"

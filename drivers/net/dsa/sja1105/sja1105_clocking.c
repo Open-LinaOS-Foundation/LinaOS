@@ -2,7 +2,7 @@
 /* Copyright (c) 2016-2018, NXP Semiconductors
  * Copyright (c) 2018-2019, Vladimir Oltean <olteanv@gmail.com>
  */
-#include <linux/packing.h>
+#include <linaos/packing.h>
 #include "sja1105.h"
 
 #define SJA1105_SIZE_CGU_CMD	4

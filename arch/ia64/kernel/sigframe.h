@@ -8,7 +8,7 @@ struct sigscratch {
 struct sigframe {
 	/*
 	 * Place signal handler args where user-level unwinder can find them easily.
-	 * DO NOT MOVE THESE.  They are part of the IA-64 Linux ABI and there is
+	 * DO NOT MOVE THESE.  They are part of the IA-64 LinaOS ABI and there is
 	 * user-level code that depends on their presence!
 	 */
 	unsigned long arg0;		/* signum */

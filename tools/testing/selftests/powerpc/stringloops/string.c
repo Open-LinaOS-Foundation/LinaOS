@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copied from linux/lib/string.c
+ * Copied from linaos/lib/string.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */

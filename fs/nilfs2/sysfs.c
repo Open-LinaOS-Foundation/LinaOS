@@ -8,7 +8,7 @@
  * Written by Vyacheslav Dubeyko <Vyacheslav.Dubeyko@hgst.com>
  */
 
-#include <linux/kobject.h>
+#include <linaos/kobject.h>
 
 #include "nilfs.h"
 #include "mdt.h"

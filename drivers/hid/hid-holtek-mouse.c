@@ -9,9 +9,9 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
 
 #include "hid-ids.h"
 

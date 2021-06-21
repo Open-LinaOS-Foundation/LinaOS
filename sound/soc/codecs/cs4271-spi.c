@@ -5,9 +5,9 @@
  * Copyright (c) 2010 Alexander Sverdlin <subaparts@yandex.ru>
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include "cs4271.h"
 

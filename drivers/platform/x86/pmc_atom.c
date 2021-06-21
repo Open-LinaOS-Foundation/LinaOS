@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_data/x86/clk-pmc-atom.h>
-#include <linux/platform_data/x86/pmc_atom.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/dmi.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_data/x86/clk-pmc-atom.h>
+#include <linaos/platform_data/x86/pmc_atom.h>
+#include <linaos/platform_device.h>
+#include <linaos/pci.h>
+#include <linaos/seq_file.h>
 
 struct pmc_bit_map {
 	const char *name;
@@ -532,7 +532,7 @@ static int __init pmc_atom_init(void)
 device_initcall(pmc_atom_init);
 
 /*
-MODULE_AUTHOR("Aubrey Li <aubrey.li@linux.intel.com>");
+MODULE_AUTHOR("Aubrey Li <aubrey.li@linaos.intel.com>");
 MODULE_DESCRIPTION("Intel Atom SOC Power Management Controller Interface");
 MODULE_LICENSE("GPL v2");
 */

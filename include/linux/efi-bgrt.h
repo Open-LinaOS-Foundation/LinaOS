@@ -2,7 +2,7 @@
 #ifndef _LINUX_EFI_BGRT_H
 #define _LINUX_EFI_BGRT_H
 
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 
 #ifdef CONFIG_ACPI_BGRT
 

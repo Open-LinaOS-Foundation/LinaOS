@@ -6,14 +6,14 @@
  * (c) 2010 Arnaud Patard <arnaud.patard@rtp-net.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/mbus.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mbus.h>
 #include <sound/soc.h>
 #include "kirkwood.h"
 

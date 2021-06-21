@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * handle transition of Linux booting another kernel
+ * handle transition of LinaOS booting another kernel
  * Copyright (C) 2002-2005 Eric Biederman  <ebiederm@xmission.com>
  */
 
 #define pr_fmt(fmt)	"kexec: " fmt
 
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/string.h>
-#include <linux/gfp.h>
-#include <linux/reboot.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/vmalloc.h>
-#include <linux/efi.h>
+#include <linaos/mm.h>
+#include <linaos/kexec.h>
+#include <linaos/string.h>
+#include <linaos/gfp.h>
+#include <linaos/reboot.h>
+#include <linaos/numa.h>
+#include <linaos/ftrace.h>
+#include <linaos/io.h>
+#include <linaos/suspend.h>
+#include <linaos/vmalloc.h>
+#include <linaos/efi.h>
 
 #include <asm/init.h>
 #include <asm/tlbflush.h>

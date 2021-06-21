@@ -15,7 +15,7 @@
 #ifndef _SC_PM_API_H
 #define _SC_PM_API_H
 
-#include <linux/firmware/imx/sci.h>
+#include <linaos/firmware/imx/sci.h>
 
 /*
  * This type is used to indicate RPC PM function calls.

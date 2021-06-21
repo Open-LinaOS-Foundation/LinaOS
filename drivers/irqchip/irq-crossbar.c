@@ -5,13 +5,13 @@
  *  Copyright (C) 2013 Texas Instruments Incorporated - http://www.ti.com
  *  Author: Sricharan R <r.sricharan@ti.com>
  */
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/slab.h>
 
 #define IRQ_FREE	-1
 #define IRQ_RESERVED	-2

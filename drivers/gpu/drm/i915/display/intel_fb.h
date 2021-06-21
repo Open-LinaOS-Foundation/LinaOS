@@ -6,7 +6,7 @@
 #ifndef __INTEL_FB_H__
 #define __INTEL_FB_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_framebuffer;
 

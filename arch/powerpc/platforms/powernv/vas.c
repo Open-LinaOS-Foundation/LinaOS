@@ -5,17 +5,17 @@
 
 #define pr_fmt(fmt) "vas: " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/irqdomain.h>
+#include <linaos/interrupt.h>
 #include <asm/prom.h>
 #include <asm/xive.h>
 

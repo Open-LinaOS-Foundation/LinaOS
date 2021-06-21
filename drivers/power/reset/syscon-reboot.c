@@ -5,15 +5,15 @@
  * Copyright (c) 2013, Applied Micro Circuits Corporation
  * Author: Feng Kan <fkan@apm.com>
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/notifier.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
 
 struct syscon_reboot_context {
 	struct regmap *map;

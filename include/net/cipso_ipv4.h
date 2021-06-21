@@ -19,15 +19,15 @@
 #ifndef _CIPSO_IPV4_H
 #define _CIPSO_IPV4_H
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/net.h>
+#include <linaos/skbuff.h>
 #include <net/netlabel.h>
 #include <net/request_sock.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
 #include <asm/unaligned.h>
 
 /* known doi values */

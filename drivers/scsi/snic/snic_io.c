@@ -15,14 +15,14 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
 
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/mempool.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/mempool.h>
 #include <scsi/scsi_tcq.h>
 
 #include "snic_io.h"

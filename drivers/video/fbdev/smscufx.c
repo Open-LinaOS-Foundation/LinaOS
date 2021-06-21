@@ -19,16 +19,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/usb.h>
+#include <linaos/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 #include "edid.h"
 
 #define check_warn(status, fmt, args...) \

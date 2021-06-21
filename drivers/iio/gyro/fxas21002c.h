@@ -8,7 +8,7 @@
 #ifndef FXAS21002C_H_
 #define FXAS21002C_H_
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #define FXAS21002C_REG_STATUS		0x00
 #define FXAS21002C_REG_OUT_X_MSB	0x01

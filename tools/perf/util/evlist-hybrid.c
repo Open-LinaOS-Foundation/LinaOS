@@ -10,8 +10,8 @@
 #include "debug.h"
 #include <unistd.h>
 #include <stdlib.h>
-#include <linux/err.h>
-#include <linux/string.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
 #include <perf/evlist.h>
 #include <perf/evsel.h>
 #include <perf/cpumap.h>

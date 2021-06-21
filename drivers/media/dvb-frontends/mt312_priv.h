@@ -2,7 +2,7 @@
 /*
     Driver for Zarlink MT312 QPSK Frontend
 
-    Copyright (C) 2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2003 Andreas Oberritter <obi@linaostv.org>
 
 
 */

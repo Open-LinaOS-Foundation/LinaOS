@@ -30,12 +30,12 @@
 #define _S390_BITOPS_H
 
 #ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#error only <linaos/bitops.h> can be included directly
 #endif
 
-#include <linux/typecheck.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/typecheck.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 #include <asm/atomic_ops.h>
 #include <asm/barrier.h>
 

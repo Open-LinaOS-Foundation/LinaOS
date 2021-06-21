@@ -8,22 +8,22 @@
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/console.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/console.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/ioport.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/clps711x.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/clps711x.h>
 
 #include "serial_mctrl_gpio.h"
 

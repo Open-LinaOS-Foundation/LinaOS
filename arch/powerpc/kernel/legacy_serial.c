@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_core.h>
-#include <linux/console.h>
-#include <linux/pci.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/serial_reg.h>
+#include <linaos/kernel.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_core.h>
+#include <linaos/console.h>
+#include <linaos/pci.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/serial_reg.h>
 #include <asm/io.h>
 #include <asm/mmu.h>
 #include <asm/prom.h>
@@ -399,7 +399,7 @@ void __init find_legacy_serial_ports(void)
 	DBG(" -> find_legacy_serial_port()\n");
 
 	/* Now find out if one of these is out firmware console */
-	path = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	path = of_get_property(of_chosen, "linaos,stdout-path", NULL);
 	if (path == NULL)
 		path = of_get_property(of_chosen, "stdout-path", NULL);
 	if (path != NULL) {
@@ -407,7 +407,7 @@ void __init find_legacy_serial_ports(void)
 		if (stdout)
 			DBG("stdout is %pOF\n", stdout);
 	} else {
-		DBG(" no linux,stdout-path !\n");
+		DBG(" no linaos,stdout-path !\n");
 	}
 
 	/* Iterate over all the 16550 ports, looking for known parents */
@@ -626,7 +626,7 @@ static int __init check_legacy_serial_console(void)
 	}
 	/* We are getting a weird phandle from OF ... */
 	/* ... So use the full path instead */
-	name = of_get_property(of_chosen, "linux,stdout-path", NULL);
+	name = of_get_property(of_chosen, "linaos,stdout-path", NULL);
 	if (name == NULL)
 		name = of_get_property(of_chosen, "stdout-path", NULL);
 	if (name == NULL) {

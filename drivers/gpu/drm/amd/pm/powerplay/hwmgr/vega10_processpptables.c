@@ -20,10 +20,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
 
 #include "vega10_processpptables.h"
 #include "ppatomfwctrl.h"

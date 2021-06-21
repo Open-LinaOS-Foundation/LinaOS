@@ -6,17 +6,17 @@
  * Copyright (C) 2008 Intel Corp.
  *
  * Author: Sarah Sharp
- * Some code borrowed from the Linux EHCI driver.
+ * Some code borrowed from the LinaOS EHCI driver.
  */
 
 #ifndef __LINUX_XHCI_HCD_H
 #define __LINUX_XHCI_HCD_H
 
-#include <linux/usb.h>
-#include <linux/timer.h>
-#include <linux/kernel.h>
-#include <linux/usb/hcd.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/usb.h>
+#include <linaos/timer.h>
+#include <linaos/kernel.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 
 /* Code sharing between pci-quirks and xhci hcd */
 #include	"xhci-ext-caps.h"
@@ -474,7 +474,7 @@ struct xhci_op_regs {
  * Ring Segment Table (ERST) associated with it.  The event ring is comprised of
  * multiple segments of the same size.  The HC places events on the ring and
  * "updates the Cycle bit in the TRBs to indicate to software the current
- * position of the Enqueue Pointer." The HCD (Linux) processes those events and
+ * position of the Enqueue Pointer." The HCD (LinaOS) processes those events and
  * updates the dequeue pointer.
  */
 struct xhci_intr_reg {

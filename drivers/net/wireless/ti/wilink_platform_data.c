@@ -5,9 +5,9 @@
  * Copyright (C) 2010-2011 Texas Instruments, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/wl12xx.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/wl12xx.h>
 
 static struct wl1251_platform_data *wl1251_platform_data;
 

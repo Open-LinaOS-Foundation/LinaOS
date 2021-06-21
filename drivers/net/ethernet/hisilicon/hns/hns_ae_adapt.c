@@ -3,9 +3,9 @@
  * Copyright (c) 2014-2015 Hisilicon Limited.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
 
 #include "hnae.h"
 #include "hns_dsaf_mac.h"

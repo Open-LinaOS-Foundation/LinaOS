@@ -4,7 +4,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * This struct is used by asm and inline asm code to manually annotate the

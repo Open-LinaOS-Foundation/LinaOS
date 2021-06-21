@@ -7,7 +7,7 @@
  * Copyright (C) 2003-2004 by Jan-Benedict Glaw <jbglaw@lug-owl.de>
  *
  * The packet format was initially taken from a patch to GPM which is (C) 2001
- * by	Karsten Merker <merker@linuxtag.org>
+ * by	Karsten Merker <merker@linaostag.org>
  * and	Maciej W. Rozycki <macro@ds2.pg.gda.pl>
  * Later on, I had access to the device's documentation (referenced below).
  */
@@ -64,12 +64,12 @@
  * http://www.vt100.net/manx/details?pn=EK-104AA-TM-001;id=21;cp=1
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC "Driver for DEC VSXXX-AA and -GA mice and VSXXX-AB tablet"
 

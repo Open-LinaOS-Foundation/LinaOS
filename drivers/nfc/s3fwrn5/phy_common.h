@@ -11,7 +11,7 @@
 #ifndef __NFC_S3FWRN5_PHY_COMMON_H
 #define __NFC_S3FWRN5_PHY_COMMON_H
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 #include <net/nfc/nci_core.h>
 
 #include "s3fwrn5.h"

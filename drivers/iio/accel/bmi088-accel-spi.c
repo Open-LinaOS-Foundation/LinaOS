@@ -6,10 +6,10 @@
  * Copyright (c) 2018-2020, Topic Embedded Products
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
 
 #include "bmi088-accel.h"
 

@@ -10,28 +10,28 @@
  * Copyright 2002-2003, Stephen Frost, 2.5.x port by laforge@netfilter.org
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/init.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/jhash.h>
-#include <linux/bitops.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/list.h>
+#include <linaos/random.h>
+#include <linaos/jhash.h>
+#include <linaos/bitops.h>
+#include <linaos/skbuff.h>
+#include <linaos/inet.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_recent.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_recent.h>
 
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");
 MODULE_AUTHOR("Jan Engelhardt <jengelh@medozas.de>");

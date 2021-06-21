@@ -33,8 +33,8 @@
 #if !defined(_MLX5_FS_TP_) || defined(TRACE_HEADER_MULTI_READ)
 #define _MLX5_FS_TP_
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <linaos/tracepoint.h>
+#include <linaos/trace_seq.h>
 #include "../fs_core.h"
 
 #undef TRACE_SYSTEM

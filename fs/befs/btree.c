@@ -1,5 +1,5 @@
 /*
- * linux/fs/befs/btree.c
+ * linaos/fs/befs/btree.c
  *
  * Copyright (C) 2001-2002 Will Dyson <will_dyson@pobox.com>
  *
@@ -17,15 +17,15 @@
  * comp.sources.misc volume 10. This code is not copied from that
  * work, but it is partially based on it.
  *
- * Makoto Kato, author of the original BeFS for linux filesystem
+ * Makoto Kato, author of the original BeFS for linaos filesystem
  * driver.
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/buffer_head.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/buffer_head.h>
 
 #include "befs.h"
 #include "btree.h"

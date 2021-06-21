@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * xfi linux driver.
+ * xfi linaos driver.
  *
  * Copyright (C) 2008, Creative Technology Ltd. All Rights Reserved.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/moduleparam.h>
-#include <linux/pci_ids.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pci_ids.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include "ctatc.h"

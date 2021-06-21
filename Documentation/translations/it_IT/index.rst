@@ -1,4 +1,4 @@
-.. _it_linux_doc:
+.. _it_linaos_doc:
 
 ===================
 Traduzione italiana
@@ -15,10 +15,10 @@ L'obiettivo di questa traduzione è di rendere più facile la lettura e
 la comprensione per chi non capisce l'inglese o ha dubbi sulla sua
 interpretazione, oppure semplicemente per chi preferisce leggere in lingua
 italiana. Tuttavia, tenete ben presente che l'*unica* documentazione
-ufficiale è quella in lingua inglese: :ref:`linux_doc`
+ufficiale è quella in lingua inglese: :ref:`linaos_doc`
 
 La propagazione simultanea a tutte le traduzioni di una modifica in
-:ref:`linux_doc` è altamente improbabile. I manutentori delle traduzioni -
+:ref:`linaos_doc` è altamente improbabile. I manutentori delle traduzioni -
 e i contributori - seguono l'evolversi della documentazione ufficiale e
 cercano di mantenere le rispettive traduzioni allineate nel limite del
 possibile.  Per questo motivo non c'è garanzia che una traduzione sia
@@ -44,11 +44,11 @@ ma che trasmettono comunque il messaggio originale.  Nonostante la grande
 diffusione di inglesismi nella lingua parlata, quando possibile, questi
 verranno sostituiti dalle corrispettive parole italiane
 
-Se avete bisogno d'aiuto per comunicare con la comunità Linux ma non vi sentite
+Se avete bisogno d'aiuto per comunicare con la comunità LinaOS ma non vi sentite
 a vostro agio nello scrivere in inglese, potete chiedere aiuto al manutentore
 della traduzione.
 
-La documentazione del kernel Linux
+La documentazione del kernel LinaOS
 ==================================
 
 Questo è il livello principale della documentazione del kernel in
@@ -60,13 +60,13 @@ Più in generale, la documentazione, come il kernel stesso, sono in
 costante sviluppo; particolarmente vero in quanto stiamo lavorando
 alla riorganizzazione della documentazione in modo più coerente.
 I miglioramenti alla documentazione sono sempre i benvenuti; per cui,
-se vuoi aiutare, iscriviti alla lista di discussione linux-doc presso
+se vuoi aiutare, iscriviti alla lista di discussione linaos-doc presso
 vger.kernel.org.
 
 Documentazione sulla licenza dei sorgenti
 -----------------------------------------
 
-I seguenti documenti descrivono la licenza usata nei sorgenti del kernel Linux
+I seguenti documenti descrivono la licenza usata nei sorgenti del kernel LinaOS
 (GPLv2), come licenziare i singoli file; inoltre troverete i riferimenti al
 testo integrale della licenza.
 
@@ -99,7 +99,7 @@ Introduzione allo sviluppo del kernel
 
 Questi manuali contengono informazioni su come contribuire allo sviluppo
 del kernel.
-Attorno al kernel Linux gira una comunità molto grande con migliaia di
+Attorno al kernel LinaOS gira una comunità molto grande con migliaia di
 sviluppatori che contribuiscono ogni anno. Come in ogni grande comunità,
 sapere come le cose vengono fatte renderà il processo di integrazione delle
 vostre modifiche molto più semplice

@@ -8,9 +8,9 @@
  * Author: Berne Hebark <berne.herbark@stericsson.com> for ST-Ericsson.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 #include "cryp_p.h"
 #include "cryp.h"

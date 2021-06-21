@@ -1,7 +1,7 @@
 /*
  * Copyright 2016 Icenowy Zheng <icenowy@aosc.xyz>
  *
- * Based on sun5i-a13-olinuxino.dts, which is
+ * Based on sun5i-a13-olinaosino.dts, which is
  *   Copyright 2012 Maxime Ripard <maxime.ripard@free-electrons.com>
  *   Copyright 2013 Hans de Goede <hdegoede@redhat.com>
  *
@@ -120,7 +120,7 @@
 
 	button-984 {
 		label = "Home";
-		linux,code = <KEY_HOMEPAGE>;
+		linaos,code = <KEY_HOMEPAGE>;
 		channel = <0>;
 		voltage = <984126>;
 	};

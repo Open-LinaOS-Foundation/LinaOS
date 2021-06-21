@@ -7,14 +7,14 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gcd.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/gcd.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 #include <sound/pcm_params.h>

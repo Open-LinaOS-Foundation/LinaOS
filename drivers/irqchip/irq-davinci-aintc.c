@@ -4,13 +4,13 @@
 //
 // Interrupt handler for DaVinci boards.
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip/irq-davinci-aintc.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip/irq-davinci-aintc.h>
+#include <linaos/io.h>
+#include <linaos/irqdomain.h>
 
 #include <asm/exception.h>
 

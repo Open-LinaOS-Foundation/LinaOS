@@ -2,8 +2,8 @@
 #ifndef __SPARC_KERNEL_H
 #define __SPARC_KERNEL_H
 
-#include <linux/interrupt.h>
-#include <linux/ftrace.h>
+#include <linaos/interrupt.h>
+#include <linaos/ftrace.h>
 
 #include <asm/traps.h>
 #include <asm/head.h>
@@ -76,8 +76,8 @@ int sparc32_classify_syscall(unsigned int syscall);
 
 #ifdef CONFIG_SPARC32
 /* setup_32.c */
-struct linux_romvec;
-void sparc32_start_kernel(struct linux_romvec *rp);
+struct linaos_romvec;
+void sparc32_start_kernel(struct linaos_romvec *rp);
 
 /* cpu.c */
 void cpu_probe(void);
@@ -136,8 +136,8 @@ void leon_cross_call_irq(void);
 
 /* head_32.S */
 extern unsigned int t_nmi[];
-extern unsigned int linux_trap_ipi15_sun4d[];
-extern unsigned int linux_trap_ipi15_sun4m[];
+extern unsigned int linaos_trap_ipi15_sun4d[];
+extern unsigned int linaos_trap_ipi15_sun4m[];
 
 extern struct tt_entry trapbase;
 extern struct tt_entry trapbase_cpu1;

@@ -6,20 +6,20 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/phy/phy.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/phy/omap_control_phy.h>
-#include <linux/of_platform.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/phy/phy.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/delay.h>
+#include <linaos/phy/omap_control_phy.h>
+#include <linaos/of_platform.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
 #define	PLL_STATUS		0x00000004
 #define	PLL_GO			0x00000008

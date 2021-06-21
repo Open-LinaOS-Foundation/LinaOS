@@ -11,7 +11,7 @@
 #ifndef _XTENSA_PLATFORM_H
 #define _XTENSA_PLATFORM_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/bootparam.h>
 
 /*

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/colibri-pxa270.c
+ *  linaos/arch/arm/mach-pxa/colibri-pxa270.c
  *
  *  Support for Toradex PXA270 based Colibri module
  *  Daniel Mack <daniel@caiaq.de>
  *  Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/ucb1400.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/ucb1400.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 #include <asm/mach-types.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include <mach/audio.h>
 #include "colibri.h"

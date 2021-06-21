@@ -9,10 +9,10 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/tty.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/tty.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
 
 #include <sound/core.h>
 #include <sound/initval.h>

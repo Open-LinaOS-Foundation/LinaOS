@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
  *
- *  Copyright (C) 2007 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2007 Michael Krufky <mkrufky@linaostv.org>
  */
 
 #ifndef _PVRUSB2_FX2_CMD_H_

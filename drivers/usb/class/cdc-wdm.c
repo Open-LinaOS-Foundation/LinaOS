@@ -12,20 +12,20 @@
  *
  * Many thanks to Carl Nordbeck
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/poll.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/ioctl.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/poll.h>
+#include <linaos/usb.h>
+#include <linaos/usb/cdc.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/usb/cdc-wdm.h>
+#include <linaos/usb/cdc-wdm.h>
 
 #define DRIVER_AUTHOR "Oliver Neukum"
 #define DRIVER_DESC "USB Abstract Control Model driver for USB WCM Device Management"

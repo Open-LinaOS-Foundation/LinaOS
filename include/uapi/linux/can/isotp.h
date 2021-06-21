@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0-only WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
- * linux/can/isotp.h
+ * linaos/can/isotp.h
  *
  * Definitions for isotp CAN sockets (ISO 15765-2:2016)
  *
@@ -44,8 +44,8 @@
 #ifndef _UAPI_CAN_ISOTP_H
 #define _UAPI_CAN_ISOTP_H
 
-#include <linux/types.h>
-#include <linux/can.h>
+#include <linaos/types.h>
+#include <linaos/can.h>
 
 #define SOL_CAN_ISOTP (SOL_CAN_BASE + CAN_ISOTP)
 
@@ -154,7 +154,7 @@ struct can_isotp_ll_options {
 /*
  * Remark on CAN_ISOTP_DEFAULT_RECV_* values:
  *
- * We can strongly assume, that the Linux Kernel implementation of
+ * We can strongly assume, that the LinaOS Kernel implementation of
  * CAN_ISOTP is capable to run with BS=0, STmin=0 and WFTmax=0.
  * But as we like to be able to behave as a commonly available ECU,
  * these default settings can be changed via sockopts.

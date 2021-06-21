@@ -5,15 +5,15 @@
  * Copyright (C) 2012, Samsung Electronics Co., Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

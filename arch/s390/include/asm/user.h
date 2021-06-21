@@ -12,7 +12,7 @@
 #include <asm/ptrace.h>
 /* Core file format: The core file is written in such a way that gdb
    can understand it and provide useful information to the user (under
-   linux we use the 'trad-core' bfd).  There are quite a number of
+   linaos we use the 'trad-core' bfd).  There are quite a number of
    obstacles to being able to view the contents of the floating point
    registers, and until these are solved you will not be able to view the
    contents of them.  Actually, you can read in the core file and look at

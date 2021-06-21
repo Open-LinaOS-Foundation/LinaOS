@@ -3,7 +3,7 @@
 #include <net/tcp.h>
 
 #include <net/netfilter/nf_tables.h>
-#include <linux/netfilter/nfnetlink_osf.h>
+#include <linaos/netfilter/nfnetlink_osf.h>
 
 struct nft_osf {
 	u8			dreg;

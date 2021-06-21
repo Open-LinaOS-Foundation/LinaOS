@@ -8,29 +8,29 @@
 
 #define DRV_NAME	"uli526x"
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/bitops.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define uw32(reg, val)	iowrite32(val, ioaddr + (reg))
 #define ur32(reg)	ioread32(ioaddr + (reg))

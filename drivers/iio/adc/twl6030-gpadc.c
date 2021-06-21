@@ -14,14 +14,14 @@
  * Copyright (C) 2008 Nokia Corporation
  * Mikko Ylinen <mikko.k.ylinen@nokia.com>
  */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/mfd/twl.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/mfd/twl.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #define DRIVER_NAME		"twl6030_gpadc"
 

@@ -7,7 +7,7 @@
  * Authors: Younghwan Joo <yhwan.joo@samsung.com>
  *          Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 #include "fimc-is.h"
 #include "fimc-is-command.h"

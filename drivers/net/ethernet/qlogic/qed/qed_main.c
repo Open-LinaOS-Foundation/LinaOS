@@ -4,27 +4,27 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/stddef.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/stddef.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/crash_dump.h>
-#include <linux/crc32.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_ll2_if.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
+#include <linaos/ethtool.h>
+#include <linaos/etherdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/crash_dump.h>
+#include <linaos/crc32.h>
+#include <linaos/qed/qed_if.h>
+#include <linaos/qed/qed_ll2_if.h>
 #include <net/devlink.h>
-#include <linux/aer.h>
-#include <linux/phylink.h>
+#include <linaos/aer.h>
+#include <linaos/phylink.h>
 
 #include "qed.h"
 #include "qed_sriov.h"

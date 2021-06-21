@@ -19,21 +19,21 @@
  *     - Add DRM helper function for cdns_mhdp_lower_link_rate
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/firmware.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-dp.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/firmware.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/phy/phy-dp.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

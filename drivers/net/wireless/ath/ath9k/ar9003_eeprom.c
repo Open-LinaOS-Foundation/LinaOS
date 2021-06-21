@@ -15,7 +15,7 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "hw.h"
 #include "ar9003_phy.h"
 #include "ar9003_eeprom.h"

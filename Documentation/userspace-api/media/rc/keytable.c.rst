@@ -25,7 +25,7 @@ file: uapi/v4l/keytable.c
     #include <stdio.h>
     #include <stdlib.h>
     #include <string.h>
-    #include <linux/input.h>
+    #include <linaos/input.h>
     #include <sys/ioctl.h>
 
     #include "parse.h"

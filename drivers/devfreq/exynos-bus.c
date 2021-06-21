@@ -9,16 +9,16 @@
  * DEVFREQ framework and is based on drivers/devfreq/exynos/exynos4_bus.c.
  */
 
-#include <linux/clk.h>
-#include <linux/devfreq.h>
-#include <linux/devfreq-event.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_opp.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/devfreq.h>
+#include <linaos/devfreq-event.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pm_opp.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
 
 #define DEFAULT_SATURATION_RATIO	40
 

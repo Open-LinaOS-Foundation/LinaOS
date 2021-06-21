@@ -4,14 +4,14 @@
 
 #define pr_fmt(fmt) "nuvoton,npcm7xx-smp: " fmt
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/smp.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
 #include <asm/cacheflush.h>
 #include <asm/smp.h>
 #include <asm/smp_plat.h>

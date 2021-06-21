@@ -14,26 +14,26 @@
  * ----------------------------
  */
 
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/param.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/param.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/jiffies.h>
 
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
 
 /* ----------------------------
  *       driver parameters

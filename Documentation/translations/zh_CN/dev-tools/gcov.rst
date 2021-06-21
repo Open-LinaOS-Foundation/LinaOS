@@ -3,20 +3,20 @@
 :Original: Documentation/dev-tools/gcov.rst
 :Translator: 赵军奎 Bernard Zhao <bernard@vivo.com>
 
-在Linux内核里使用gcov做代码覆盖率检查
+在LinaOS内核里使用gcov做代码覆盖率检查
 =====================================
 
-gcov分析核心支持在Linux内核中启用GCC的覆盖率测试工具 gcov_ ，Linux内核
+gcov分析核心支持在LinaOS内核中启用GCC的覆盖率测试工具 gcov_ ，LinaOS内核
 运行时的代码覆盖率数据会以gcov兼容的格式导出到“gcov”debugfs目录中，可
 以通过gcov的 ``-o`` 选项（如下示例）获得指定文件的代码运行覆盖率统计数据
 （需要跳转到内核编译路径下并且要有root权限）::
 
-    # cd /tmp/linux-out
-    # gcov -o /sys/kernel/debug/gcov/tmp/linux-out/kernel spinlock.c
+    # cd /tmp/linaos-out
+    # gcov -o /sys/kernel/debug/gcov/tmp/linaos-out/kernel spinlock.c
 
 这将在当前目录中创建带有执行计数注释的源代码文件。
 在获得这些统计文件后，可以使用图形化的gcov前端工具（比如 lcov_ ），来实现
-自动化处理Linux内核的覆盖率运行数据，同时生成易于阅读的HTML格式文件。
+自动化处理LinaOS内核的覆盖率运行数据，同时生成易于阅读的HTML格式文件。
 
 可能的用途:
 
@@ -155,7 +155,7 @@ b) 若gcov运行在编译机上
 
     比如一个是示例的目录结构如下::
 
-      /tmp/linux:    内核源码目录
+      /tmp/linaos:    内核源码目录
       /tmp/out:      内核编译文件路径（make O=指定）
       /tmp/coverage: 从测试机器上面拷贝的数据文件路径
 

@@ -13,17 +13,17 @@
  * result, all CPUs are treated as if they're single-core and
  * single-threaded.
  */
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/irq_work.h>
-#include <linux/tick.h>
-#include <linux/nmi.h>
-#include <linux/cpuhotplug.h>
-#include <linux/stackprotector.h>
-#include <linux/pgtable.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/irq_work.h>
+#include <linaos/tick.h>
+#include <linaos/nmi.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/stackprotector.h>
+#include <linaos/pgtable.h>
 
 #include <asm/paravirt.h>
 #include <asm/idtentry.h>
@@ -187,7 +187,7 @@ static void __init xen_filter_cpu_maps(void)
 		}
 	}
 #ifdef CONFIG_HOTPLUG_CPU
-	/* This is akin to using 'nr_cpus' on the Linux command line.
+	/* This is akin to using 'nr_cpus' on the LinaOS command line.
 	 * Which is OK as when we use 'dom0_max_vcpus=X' we can only
 	 * have up to X, while nr_cpu_ids is greater than X. This
 	 * normally is not a problem, except when CPU hotplugging

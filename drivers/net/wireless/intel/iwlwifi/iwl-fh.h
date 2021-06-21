@@ -6,8 +6,8 @@
 #ifndef __iwl_fh_h__
 #define __iwl_fh_h__
 
-#include <linux/types.h>
-#include <linux/bitfield.h>
+#include <linaos/types.h>
+#include <linaos/bitfield.h>
 
 #include "iwl-trans.h"
 
@@ -16,7 +16,7 @@
 /****************************/
 
 /**
- * This I/O area is directly read/writable by driver (e.g. Linux uses writel())
+ * This I/O area is directly read/writable by driver (e.g. LinaOS uses writel())
  * Addresses are offsets from device's PCI hardware base address.
  */
 #define FH_MEM_LOWER_BOUND                   (0x1000)

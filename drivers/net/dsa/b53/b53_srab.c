@@ -16,13 +16,13 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/b53.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/b53.h>
+#include <linaos/of.h>
 
 #include "b53_priv.h"
 #include "b53_serdes.h"

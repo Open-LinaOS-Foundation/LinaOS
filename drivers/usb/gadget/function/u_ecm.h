@@ -13,7 +13,7 @@
 #ifndef U_ECM_H
 #define U_ECM_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 struct f_ecm_opts {
 	struct usb_function_instance	func_inst;

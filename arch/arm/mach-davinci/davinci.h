@@ -17,14 +17,14 @@
 #ifndef __DAVINCI_H
 #define __DAVINCI_H
 
-#include <linux/clk.h>
-#include <linux/videodev2.h>
-#include <linux/davinci_emac.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/platform_data/davinci_asp.h>
-#include <linux/platform_data/edma.h>
-#include <linux/platform_data/keyscan-davinci.h>
+#include <linaos/clk.h>
+#include <linaos/videodev2.h>
+#include <linaos/davinci_emac.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/platform_data/davinci_asp.h>
+#include <linaos/platform_data/edma.h>
+#include <linaos/platform_data/keyscan-davinci.h>
 #include <mach/hardware.h>
 
 #include <media/davinci/vpfe_capture.h>

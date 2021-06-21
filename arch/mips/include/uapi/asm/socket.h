@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -10,13 +10,13 @@
 #ifndef _UAPI_ASM_SOCKET_H
 #define _UAPI_ASM_SOCKET_H
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 #include <asm/sockios.h>
 
 /*
  * For setsockopt(2)
  *
- * This defines are ABI conformant as far as Linux supports these ...
+ * This defines are ABI conformant as far as LinaOS supports these ...
  */
 #define SOL_SOCKET	0xffff
 
@@ -45,7 +45,7 @@
 #define SO_PROTOCOL	0x1028	/* protocol type */
 #define SO_DOMAIN	0x1029	/* domain/socket family */
 
-/* linux-specific, might as well be the same as on i386 */
+/* linaos-specific, might as well be the same as on i386 */
 #define SO_NO_CHECK	11
 #define SO_PRIORITY	12
 #define SO_BSDCOMPAT	14

@@ -3,25 +3,25 @@
  *                Sun Microsystems SME boardsets.
  *
  * This driver does NOT provide access to the OBP-flash for
- * safety reasons-- use <linux>/drivers/sbus/char/flash.c instead.
+ * safety reasons-- use <linaos>/drivers/sbus/char/flash.c instead.
  *
  * Copyright (c) 2001 Eric Brower (ebrower@usa.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/slab.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
 
 #define UFLASH_OBPNAME	"flashprom"
 #define DRIVER_NAME	"sun_uflash"

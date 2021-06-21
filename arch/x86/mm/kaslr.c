@@ -20,11 +20,11 @@
  * physical memory mapping is the available physical memory.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/memblock.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/random.h>
+#include <linaos/memblock.h>
+#include <linaos/pgtable.h>
 
 #include <asm/setup.h>
 #include <asm/kaslr.h>

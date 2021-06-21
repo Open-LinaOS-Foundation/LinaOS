@@ -4,7 +4,7 @@
  * Author: Tony Xie <tony.xie@rock-chips.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/memory.h>
 

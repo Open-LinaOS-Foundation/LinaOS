@@ -10,10 +10,10 @@
  */
 
 #include "bcma_private.h"
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/bcma/bcma.h>
 #include <asm/paccess.h>
 
 /* Probe a 32bit value on the bus and catch bus exceptions.

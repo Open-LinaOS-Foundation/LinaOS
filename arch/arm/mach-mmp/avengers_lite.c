@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/avengers_lite.c
+ *  linaos/arch/arm/mach-mmp/avengers_lite.c
  *
  *  Support for the Marvell PXA168-based Avengers lite Development Platform.
  *
  *  Copyright (C) 2009-2010 Marvell International Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/gpio-pxa.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -21,7 +21,7 @@
 
 
 #include "common.h"
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 /* Avengers lite MFP configurations */
 static unsigned long avengers_lite_pin_config_V16F[] __initdata = {

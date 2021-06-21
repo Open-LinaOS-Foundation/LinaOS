@@ -6,7 +6,7 @@
 #ifndef __ADRENO_SMMU_PRIV_H
 #define __ADRENO_SMMU_PRIV_H
 
-#include <linux/io-pgtable.h>
+#include <linaos/io-pgtable.h>
 
 /**
  * struct adreno_smmu_priv - private interface between adreno-smmu and GPU

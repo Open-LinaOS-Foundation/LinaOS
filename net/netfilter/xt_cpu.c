@@ -10,10 +10,10 @@
 /* (C) 2010 Eric Dumazet
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter/xt_cpu.h>
-#include <linux/netfilter/x_tables.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/netfilter/xt_cpu.h>
+#include <linaos/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Eric Dumazet <eric.dumazet@gmail.com>");

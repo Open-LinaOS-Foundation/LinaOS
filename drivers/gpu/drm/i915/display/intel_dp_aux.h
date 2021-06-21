@@ -6,7 +6,7 @@
 #ifndef __INTEL_DP_AUX_H__
 #define __INTEL_DP_AUX_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_dp;
 

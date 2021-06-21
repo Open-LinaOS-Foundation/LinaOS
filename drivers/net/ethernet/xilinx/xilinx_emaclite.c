@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Xilinx EmacLite Linux driver for the Xilinx Ethernet MAC Lite device.
+ * Xilinx EmacLite LinaOS driver for the Xilinx Ethernet MAC Lite device.
  *
  * This is a new flat driver which is based on the original emac_lite
  * driver from John Williams <john.williams@xilinx.com>.
@@ -8,22 +8,22 @@
  * 2007 - 2013 (c) Xilinx, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/phy.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
 
 #define DRIVER_NAME "xilinx_emaclite"
 
@@ -1079,7 +1079,7 @@ static bool get_bool(struct platform_device *ofdev, const char *s)
  * @ed:         Pointer to ethtool_drvinfo structure
  *
  * This implements ethtool command for getting the driver information.
- * Issue "ethtool -i ethX" under linux prompt to execute this function.
+ * Issue "ethtool -i ethX" under linaos prompt to execute this function.
  */
 static void xemaclite_ethtools_get_drvinfo(struct net_device *ndev,
 					   struct ethtool_drvinfo *ed)

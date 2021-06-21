@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_X86_E820_H
 #define _UAPI_ASM_X86_E820_H
 #define E820MAP	0x2d0		/* our map */
@@ -55,7 +55,7 @@
 #define E820_RESERVED_KERN        128
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 struct e820entry {
 	__u64 addr;	/* start of memory segment */
 	__u64 size;	/* size of memory segment */

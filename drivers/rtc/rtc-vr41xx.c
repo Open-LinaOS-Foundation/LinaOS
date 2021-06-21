@@ -2,26 +2,26 @@
 /*
  *  Driver for NEC VR4100 series Real Time Clock unit.
  *
- *  Copyright (C) 2003-2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2008  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/compat.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/log2.h>
+#include <linaos/compat.h>
+#include <linaos/err.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/log2.h>
 
 #include <asm/div64.h>
 
-MODULE_AUTHOR("Yoichi Yuasa <yuasa@linux-mips.org>");
+MODULE_AUTHOR("Yoichi Yuasa <yuasa@linaos-mips.org>");
 MODULE_DESCRIPTION("NEC VR4100 series RTC driver");
 MODULE_LICENSE("GPL v2");
 

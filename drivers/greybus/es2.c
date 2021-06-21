@@ -5,13 +5,13 @@
  * Copyright 2014-2015 Google Inc.
  * Copyright 2014-2015 Linaro Ltd.
  */
-#include <linux/kthread.h>
-#include <linux/sizes.h>
-#include <linux/usb.h>
-#include <linux/kfifo.h>
-#include <linux/debugfs.h>
-#include <linux/list.h>
-#include <linux/greybus.h>
+#include <linaos/kthread.h>
+#include <linaos/sizes.h>
+#include <linaos/usb.h>
+#include <linaos/kfifo.h>
+#include <linaos/debugfs.h>
+#include <linaos/list.h>
+#include <linaos/greybus.h>
 #include <asm/unaligned.h>
 
 #include "arpc.h"
@@ -1457,4 +1457,4 @@ static struct usb_driver es2_ap_driver = {
 module_usb_driver(es2_ap_driver);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@linuxfoundation.org>");
+MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@linaosfoundation.org>");

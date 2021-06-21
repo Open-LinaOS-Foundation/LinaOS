@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * endian.h - Defines for endianness handling in NTFS Linux kernel driver.
- *	      Part of the Linux-NTFS project.
+ * endian.h - Defines for endianness handling in NTFS LinaOS kernel driver.
+ *	      Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */

@@ -6,8 +6,8 @@
 #ifndef __BRCMNAND_H__
 #define __BRCMNAND_H__
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
 
 struct platform_device;
 struct dev_pm_ops;

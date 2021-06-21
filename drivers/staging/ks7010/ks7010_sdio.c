@@ -7,13 +7,13 @@
  *   Copyright (C) 2016 Sang Engineering, Wolfram Sang
  */
 
-#include <linux/atomic.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/firmware.h>
+#include <linaos/jiffies.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/module.h>
+#include <linaos/workqueue.h>
 #include "ks_wlan.h"
 #include "ks_hostif.h"
 

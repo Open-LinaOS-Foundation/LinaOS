@@ -4,14 +4,14 @@
  * Copyright 2005-2012 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/bitrev.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/sizes.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/spinlock.h>
+#include <linaos/bitrev.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/sizes.h>
 #include "ipu-prv.h"
 
 /* IC Register Offsets */

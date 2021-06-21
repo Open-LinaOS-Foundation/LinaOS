@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-rpc/dma.c
+ *  linaos/arch/arm/mach-rpc/dma.c
  *
  *  Copyright (C) 1998 Russell King
  *
  *  DMA functions specific to RiscPC architecture
  */
-#include <linux/mman.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
+#include <linaos/mman.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
 
 #include <asm/page.h>
 #include <asm/dma.h>
 #include <asm/fiq.h>
 #include <asm/irq.h>
 #include <mach/hardware.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <asm/mach/dma.h>
 #include <asm/hardware/iomd.h>

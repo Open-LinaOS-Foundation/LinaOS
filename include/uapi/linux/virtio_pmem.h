@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause */
+/* SPDX-License-Identifier: (GPL-2.0 WITH LinaOS-syscall-note) OR BSD-3-Clause */
 /*
  * Definitions for virtio-pmem devices.
  *
@@ -10,9 +10,9 @@
 #ifndef _UAPI_LINUX_VIRTIO_PMEM_H
 #define _UAPI_LINUX_VIRTIO_PMEM_H
 
-#include <linux/types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <linaos/types.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/virtio_config.h>
 
 struct virtio_pmem_config {
 	__le64 start;

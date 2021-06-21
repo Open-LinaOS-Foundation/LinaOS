@@ -9,8 +9,8 @@
 #ifndef _TB_MSGS
 #define _TB_MSGS
 
-#include <linux/types.h>
-#include <linux/uuid.h>
+#include <linaos/types.h>
+#include <linaos/uuid.h>
 
 enum tb_cfg_space {
 	TB_CFG_HOPS = 0,

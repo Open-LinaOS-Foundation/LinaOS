@@ -1,35 +1,35 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/capability.h>
+#include <linaos/seq_file.h>
 
 /* We are an ethernet device */
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
 #include <net/sock.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/uaccess.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
 #include <net/checksum.h>   /* for ip_fast_csum() */
 #include <net/arp.h>
 #include <net/dst.h>
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 
 /* And atm device */
-#include <linux/atmdev.h>
-#include <linux/atmlec.h>
-#include <linux/atmmpc.h>
+#include <linaos/atmdev.h>
+#include <linaos/atmlec.h>
+#include <linaos/atmmpc.h>
 /* Modular too */
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "lec.h"
 #include "mpc.h"

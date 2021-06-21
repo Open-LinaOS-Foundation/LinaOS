@@ -8,21 +8,21 @@
  *
 
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/i2c-algo-pca.h>
-#include <linux/platform_data/i2c-pca-platform.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
+#include <linaos/errno.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c-algo-pca.h>
+#include <linaos/platform_data/i2c-pca-platform.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include <asm/irq.h>
 

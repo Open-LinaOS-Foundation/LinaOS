@@ -15,10 +15,10 @@
 #
 # Copyright IBM Corporation, 2018
 #
-# Author: Paul E. McKenney <paulmck@linux.vnet.ibm.com>
+# Author: Paul E. McKenney <paulmck@linaos.vnet.ibm.com>
 
 litmus=$1
-herdoptions=${LKMM_HERD_OPTIONS--conf linux-kernel.cfg}
+herdoptions=${LKMM_HERD_OPTIONS--conf linaos-kernel.cfg}
 
 if test -f "$litmus" -a -r "$litmus"
 then

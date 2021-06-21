@@ -42,11 +42,11 @@
  * Thomas Hellström <thomas-at-tungstengraphics-dot-com>
  */
 
-#include <linux/export.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stacktrace.h>
+#include <linaos/export.h>
+#include <linaos/interval_tree_generic.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/stacktrace.h>
 
 #include <drm/drm_mm.h>
 
@@ -54,7 +54,7 @@
  * DOC: Overview
  *
  * drm_mm provides a simple range allocator. The drivers are free to use the
- * resource allocator from the linux core if it suits them, the upside of drm_mm
+ * resource allocator from the linaos core if it suits them, the upside of drm_mm
  * is that it's in the DRM core. Which means that it's easier to extend for
  * some of the crazier special purpose needs of gpus.
  *
@@ -99,7 +99,7 @@
  */
 
 #ifdef CONFIG_DRM_DEBUG_MM
-#include <linux/stackdepot.h>
+#include <linaos/stackdepot.h>
 
 #define STACKDEPTH 32
 #define BUFSZ 4096

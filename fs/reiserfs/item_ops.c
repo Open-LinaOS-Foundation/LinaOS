@@ -2,7 +2,7 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
+#include <linaos/time.h>
 #include "reiserfs.h"
 
 /*

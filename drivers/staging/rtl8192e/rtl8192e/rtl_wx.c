@@ -4,7 +4,7 @@
  *
  * Contact Information: wlanfae <wlanfae@realtek.com>
  */
-#include <linux/string.h>
+#include <linaos/string.h>
 #include "rtl_core.h"
 #include "rtl_wx.h"
 

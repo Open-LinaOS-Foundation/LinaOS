@@ -18,7 +18,7 @@
 #ifndef _VNIC_WQ_COPY_H_
 #define _VNIC_WQ_COPY_H_
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "vnic_wq.h"
 #include "fcpio.h"
 

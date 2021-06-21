@@ -1,14 +1,14 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =====================================
-Scaling in the Linux Networking Stack
+Scaling in the LinaOS Networking Stack
 =====================================
 
 
 Introduction
 ============
 
-This document describes a set of complementary techniques in the Linux
+This document describes a set of complementary techniques in the LinaOS
 networking stack to increase parallelism and improve performance for
 multi-processor systems.
 

@@ -25,11 +25,11 @@
  *
  **************************************************************************/
 
-#include <linux/console.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/console.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/mem_encrypt.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_fb_helper.h>
@@ -42,7 +42,7 @@
 #include "vmwgfx_binding.h"
 #include "vmwgfx_drv.h"
 
-#define VMWGFX_DRIVER_DESC "Linux drm driver for VMware graphics devices"
+#define VMWGFX_DRIVER_DESC "LinaOS drm driver for VMware graphics devices"
 
 #define VMW_MIN_INITIAL_WIDTH 800
 #define VMW_MIN_INITIAL_HEIGHT 600

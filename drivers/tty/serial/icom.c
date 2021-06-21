@@ -8,38 +8,38 @@
   *
   * Based on code from serial.c
   */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/termios.h>
-#include <linux/fs.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/firmware.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/termios.h>
+#include <linaos/fs.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial.h>
+#include <linaos/serial_reg.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
+#include <linaos/kref.h>
+#include <linaos/firmware.h>
+#include <linaos/bitops.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "icom.h"
 

@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt)	"OF: overlay: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_fdt.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/libfdt.h>
-#include <linux/err.h>
-#include <linux/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_fdt.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/libfdt.h>
+#include <linaos/err.h>
+#include <linaos/idr.h>
 
 #include "of_private.h"
 
@@ -290,7 +290,7 @@ err_free_target_path:
  * is contained in the changeset.
  *
  * Some special properties are not added or updated (no error returned):
- * "name", "phandle", "linux,phandle".
+ * "name", "phandle", "linaos,phandle".
  *
  * Properties "#address-cells" and "#size-cells" are not updated if they
  * are already in the live tree, but if present in the live tree, the values
@@ -311,7 +311,7 @@ static int add_changeset_property(struct overlay_changeset *ovcs,
 	if (target->in_livetree)
 		if (!of_prop_cmp(overlay_prop->name, "name") ||
 		    !of_prop_cmp(overlay_prop->name, "phandle") ||
-		    !of_prop_cmp(overlay_prop->name, "linux,phandle"))
+		    !of_prop_cmp(overlay_prop->name, "linaos,phandle"))
 			return 0;
 
 	if (target->in_livetree)
@@ -432,7 +432,7 @@ static int add_changeset_node(struct overlay_changeset *ovcs,
 		if (!tchild->name)
 			tchild->name = "<NULL>";
 
-		/* ignore obsolete "linux,phandle" */
+		/* ignore obsolete "linaos,phandle" */
 		phandle = __of_get_property(node, "phandle", &size);
 		if (phandle && (size == 4))
 			tchild->phandle = be32_to_cpup(phandle);

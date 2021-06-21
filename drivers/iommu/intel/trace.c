@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2019 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@linaos.intel.com>
  */
 
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/intel_iommu.h>

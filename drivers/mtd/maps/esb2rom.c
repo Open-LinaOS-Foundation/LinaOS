@@ -11,19 +11,19 @@
  * Eric Biederman, of course, was a major help in this effort.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/list.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/mtd/flashchip.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/list.h>
 
 #define MOD_NAME KBUILD_BASENAME
 

@@ -5,11 +5,11 @@
  *  sof_sdw - ASOC Machine driver for Intel SoundWire platforms
  */
 
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <linaos/device.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_type.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
 #include "sof_sdw_common.h"
@@ -1297,8 +1297,8 @@ static struct platform_driver sof_sdw_driver = {
 module_platform_driver(sof_sdw_driver);
 
 MODULE_DESCRIPTION("ASoC SoundWire Generic Machine driver");
-MODULE_AUTHOR("Bard Liao <yung-chuan.liao@linux.intel.com>");
-MODULE_AUTHOR("Rander Wang <rander.wang@linux.intel.com>");
-MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>");
+MODULE_AUTHOR("Bard Liao <yung-chuan.liao@linaos.intel.com>");
+MODULE_AUTHOR("Rander Wang <rander.wang@linaos.intel.com>");
+MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:sof_sdw");

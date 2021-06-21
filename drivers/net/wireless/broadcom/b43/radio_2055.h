@@ -2,7 +2,7 @@
 #ifndef B43_RADIO_2055_H_
 #define B43_RADIO_2055_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "tables_nphy.h"
 

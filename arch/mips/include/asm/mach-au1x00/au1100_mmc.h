@@ -38,7 +38,7 @@
 #ifndef __ASM_AU1100_MMC_H
 #define __ASM_AU1100_MMC_H
 
-#include <linux/leds.h>
+#include <linaos/leds.h>
 
 struct au1xmmc_platform_data {
 	int(*cd_setup)(void *mmc_host, int on);

@@ -13,7 +13,7 @@
  * Marek Szyprowski, <m.szyprowski@samsung.com>
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include <media/videobuf2-dma-contig.h>
 #include <media/v4l2-device.h>

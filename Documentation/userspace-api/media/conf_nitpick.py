@@ -2,7 +2,7 @@
 
 # SPDX-License-Identifier: GPL-2.0
 
-project = 'Linux Media Subsystem Documentation'
+project = 'LinaOS Media Subsystem Documentation'
 
 # It is possible to run Sphinx in nickpick mode with:
 nitpicky = True

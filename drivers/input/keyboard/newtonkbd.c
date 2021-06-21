@@ -4,16 +4,16 @@
  */
 
 /*
- * Newton keyboard driver for Linux
+ * Newton keyboard driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"Newton keyboard driver"
 

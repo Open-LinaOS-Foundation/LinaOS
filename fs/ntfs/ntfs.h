@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * ntfs.h - Defines for NTFS Linux kernel driver.
+ * ntfs.h - Defines for NTFS LinaOS kernel driver.
  *
  * Copyright (c) 2001-2014 Anton Altaparmakov and Tuxera Inc.
  * Copyright (C) 2002 Richard Russon
@@ -9,14 +9,14 @@
 #ifndef _LINUX_NTFS_H
 #define _LINUX_NTFS_H
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/nls.h>
-#include <linux/smp.h>
-#include <linux/pagemap.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/fs.h>
+#include <linaos/nls.h>
+#include <linaos/smp.h>
+#include <linaos/pagemap.h>
 
 #include "types.h"
 #include "volume.h"

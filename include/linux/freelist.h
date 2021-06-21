@@ -2,7 +2,7 @@
 #ifndef FREELIST_H
 #define FREELIST_H
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 /*
  * Copyright: cameron@moodycamel.com

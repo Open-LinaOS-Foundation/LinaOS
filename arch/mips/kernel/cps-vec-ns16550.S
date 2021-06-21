@@ -9,7 +9,7 @@
 #include <asm/asm-offsets.h>
 #include <asm/mipsregs.h>
 #include <asm/regdef.h>
-#include <linux/serial_reg.h>
+#include <linaos/serial_reg.h>
 
 #define UART_TX_OFS	(UART_TX << CONFIG_MIPS_CPS_NS16550_SHIFT)
 #define UART_LSR_OFS	(UART_LSR << CONFIG_MIPS_CPS_NS16550_SHIFT)

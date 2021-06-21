@@ -2,23 +2,23 @@
 /*
  *  Driver for NEC VR4100 series Serial Interface Unit.
  *
- *  Copyright (C) 2004-2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2004-2008  Yoichi Yuasa <yuasa@linaos-mips.org>
  *
  *  Based on drivers/serial/8250.c, by Russell King.
  */
 
-#include <linux/console.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/console.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_reg.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 
 #include <asm/io.h>
 #include <asm/vr41xx/siu.h>

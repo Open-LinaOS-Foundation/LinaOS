@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Intel Corporation
  *
  * Authors:
- * Jarkko Sakkinen <jarkko.sakkinen@linux.intel.com>
+ * Jarkko Sakkinen <jarkko.sakkinen@linaos.intel.com>
  *
  * Maintained by: <tpmdd-devel@lists.sourceforge.net>
  *
@@ -11,7 +11,7 @@
  * used by the kernel internally.
  */
 
-#include <linux/gfp.h>
+#include <linaos/gfp.h>
 #include <asm/unaligned.h>
 #include "tpm.h"
 

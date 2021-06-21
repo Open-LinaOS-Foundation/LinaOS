@@ -30,7 +30,7 @@
  * This only works with compare-and-swap.  There is no other way to
  * atomically claim the lock and set the owner.
  */
-#include <linux/smp.h>
+#include <linaos/smp.h>
 extern volatile unsigned long cmos_lock;
 
 /*

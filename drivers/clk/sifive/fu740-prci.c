@@ -4,7 +4,7 @@
  * Copyright (C) 2020 Zong Li
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <dt-bindings/clock/sifive-fu740-prci.h>
 
@@ -49,7 +49,7 @@ static struct __prci_wrpll_data __prci_cltxpll_data = {
 	.cfg1_offs = PRCI_CLTXPLLCFG1_OFFSET,
 };
 
-/* Linux clock framework integration */
+/* LinaOS clock framework integration */
 
 static const struct clk_ops sifive_fu740_prci_wrpll_clk_ops = {
 	.set_rate = sifive_prci_wrpll_set_rate,

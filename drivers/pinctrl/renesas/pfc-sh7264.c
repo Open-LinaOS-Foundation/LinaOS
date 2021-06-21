@@ -5,8 +5,8 @@
  *  Copyright (C) 2012  Renesas Electronics Europe Ltd
  */
 
-#include <linux/kernel.h>
-#include <linux/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/gpio.h>
 #include <cpu/sh7264.h>
 
 #include "sh_pfc.h"

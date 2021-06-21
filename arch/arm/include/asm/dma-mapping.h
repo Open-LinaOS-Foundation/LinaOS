@@ -4,8 +4,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mm_types.h>
-#include <linux/scatterlist.h>
+#include <linaos/mm_types.h>
+#include <linaos/scatterlist.h>
 
 #include <xen/xen.h>
 #include <asm/xen/hypervisor.h>

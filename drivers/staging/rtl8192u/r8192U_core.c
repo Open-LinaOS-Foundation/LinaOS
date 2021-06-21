@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /******************************************************************************
  * Copyright(c) 2008 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192U
+ * LinaOS device driver for RTL8192U
  *
  * Based on the r8187 driver, which is:
  * Copyright 2004-2005 Andrea Merello <andrea.merello@gmail.com>, et al.
@@ -44,7 +44,7 @@ double __extendsfdf2(float a)
 
 #define CONFIG_RTL8192_IO_MAP
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "r8192U_hw.h"
 #include "r8192U.h"
 #include "r8190_rtl8256.h" /* RTL8225 Radio frontend */
@@ -54,10 +54,10 @@ double __extendsfdf2(float a)
 #include "r819xU_phyreg.h"
 #include "r819xU_cmdpkt.h"
 #include "r8192U_dm.h"
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/usb.h>
+#include <linaos/slab.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 /* FIXME: check if 2.6.7 is ok */
 
 #include "ieee80211/dot11d.h"
@@ -92,7 +92,7 @@ static const struct usb_device_id rtl8192_usb_id_tbl[] = {
 MODULE_LICENSE("GPL");
 MODULE_VERSION("V 1.1");
 MODULE_DEVICE_TABLE(usb, rtl8192_usb_id_tbl);
-MODULE_DESCRIPTION("Linux driver for Realtek RTL8192 USB WiFi cards");
+MODULE_DESCRIPTION("LinaOS driver for Realtek RTL8192 USB WiFi cards");
 
 static char *ifname = "wlan%d";
 static int hwwep = 1;  /* default use hw. set 0 to use software security */
@@ -819,7 +819,7 @@ void rtl8192_rtx_disable(struct net_device *dev)
 	skb_queue_purge(&priv->skb_queue);
 }
 
-/* The prototype of rx_isr has changed since one version of Linux Kernel */
+/* The prototype of rx_isr has changed since one version of LinaOS Kernel */
 static void rtl8192_rx_isr(struct urb *urb)
 {
 	struct sk_buff *skb = (struct sk_buff *)urb->context;
@@ -4828,7 +4828,7 @@ static int __init rtl8192_usb_module_init(void)
 		return ret;
 	}
 
-	pr_info("\nLinux kernel driver for RTL8192 based WLAN cards\n");
+	pr_info("\nLinaOS kernel driver for RTL8192 based WLAN cards\n");
 	pr_info("Copyright (c) 2007-2008, Realsil Wlan\n");
 	RT_TRACE(COMP_INIT, "Initializing module");
 	RT_TRACE(COMP_INIT, "Wireless extensions version %d", WIRELESS_EXT);

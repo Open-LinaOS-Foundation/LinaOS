@@ -5,15 +5,15 @@
  * Copyright 2007 IBM Corp
  */
 
-#include <linux/device_cgroup.h>
-#include <linux/cgroup.h>
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
+#include <linaos/device_cgroup.h>
+#include <linaos/cgroup.h>
+#include <linaos/ctype.h>
+#include <linaos/list.h>
+#include <linaos/uaccess.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/rcupdate.h>
+#include <linaos/mutex.h>
 
 #ifdef CONFIG_CGROUP_DEVICE
 

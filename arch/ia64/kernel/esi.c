@@ -5,10 +5,10 @@
  * Copyright (C) 2006 Hewlett-Packard Co
  * 	Alex Williamson <alex.williamson@hp.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
 
 #include <asm/esi.h>
 #include <asm/sal.h>

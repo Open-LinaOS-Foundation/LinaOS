@@ -2,8 +2,8 @@
 #ifndef __PERF_BPF_EVENT_H
 #define __PERF_BPF_EVENT_H
 
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
+#include <linaos/compiler.h>
+#include <linaos/rbtree.h>
 #include <pthread.h>
 #include <api/fd/array.h>
 #include <stdio.h>

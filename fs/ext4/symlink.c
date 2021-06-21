@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/symlink.c
+ *  linaos/fs/ext4/symlink.c
  *
  * Only fast symlinks left here - the rest is done by generic code. AV, 1999
  *
@@ -11,15 +11,15 @@
  *
  *  from
  *
- *  linux/fs/minix/symlink.c
+ *  linaos/fs/minix/symlink.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  ext4 symlink handling code
  */
 
-#include <linux/fs.h>
-#include <linux/namei.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
 #include "ext4.h"
 #include "xattr.h"
 

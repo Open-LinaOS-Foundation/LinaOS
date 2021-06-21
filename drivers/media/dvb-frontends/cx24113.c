@@ -2,15 +2,15 @@
 /*
  *  Driver for Conexant CX24113/CX24128 Tuner (Satellite)
  *
- *  Copyright (C) 2007-8 Patrick Boettcher <pb@linuxtv.org>
+ *  Copyright (C) 2007-8 Patrick Boettcher <pb@linaostv.org>
  *
  *  Developed for BBTI / Technisat
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
 #include <media/dvb_frontend.h>
 #include "cx24113.h"
@@ -595,7 +595,7 @@ EXPORT_SYMBOL(cx24113_attach);
 module_param(debug, int, 0644);
 MODULE_PARM_DESC(debug, "Activates frontend debugging (default:0)");
 
-MODULE_AUTHOR("Patrick Boettcher <pb@linuxtv.org>");
+MODULE_AUTHOR("Patrick Boettcher <pb@linaostv.org>");
 MODULE_DESCRIPTION("DVB Frontend module for Conexant CX24113/CX24128hardware");
 MODULE_LICENSE("GPL");
 

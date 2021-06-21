@@ -5,9 +5,9 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/irqchip.h>
+#include <linaos/kernel.h>
 
 #include <asm/cpu-features.h>
 #include <asm/irq_cpu.h>

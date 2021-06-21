@@ -6,25 +6,25 @@
  * Extensible Firmware Interface
  * Based on 'Extensible Firmware Interface Specification' version 0.9, April 30, 1999
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 1999, 2002-2003 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>
  */
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/proc_fs.h>
-#include <linux/rtc.h>
-#include <linux/ioport.h>
-#include <linux/pfn.h>
-#include <linux/pstore.h>
-#include <linux/range.h>
-#include <linux/reboot.h>
-#include <linux/uuid.h>
-#include <linux/screen_info.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
+#include <linaos/proc_fs.h>
+#include <linaos/rtc.h>
+#include <linaos/ioport.h>
+#include <linaos/pfn.h>
+#include <linaos/pstore.h>
+#include <linaos/range.h>
+#include <linaos/reboot.h>
+#include <linaos/uuid.h>
+#include <linaos/screen_info.h>
 
 #include <asm/page.h>
 
@@ -1165,12 +1165,12 @@ efi_status_t efi_random_get_seed(void);
 
 #define EFI_RANDOM_SEED_SIZE		64U
 
-struct linux_efi_random_seed {
+struct linaos_efi_random_seed {
 	u32	size;
 	u8	bits[];
 };
 
-struct linux_efi_tpm_eventlog {
+struct linaos_efi_tpm_eventlog {
 	u32	size;
 	u32	final_events_preboot_size;
 	u8	version;
@@ -1233,7 +1233,7 @@ extern struct efi_runtime_work efi_rts_work;
 /* Workqueue to queue EFI Runtime Services */
 extern struct workqueue_struct *efi_rts_wq;
 
-struct linux_efi_memreserve {
+struct linaos_efi_memreserve {
 	int		size;			// allocated size of the array
 	atomic_t	count;			// number of entries used
 	phys_addr_t	next;			// pa of next struct instance
@@ -1243,8 +1243,8 @@ struct linux_efi_memreserve {
 	} entry[];
 };
 
-#define EFI_MEMRESERVE_COUNT(size) (((size) - sizeof(struct linux_efi_memreserve)) \
-	/ sizeof_field(struct linux_efi_memreserve, entry[0]))
+#define EFI_MEMRESERVE_COUNT(size) (((size) - sizeof(struct linaos_efi_memreserve)) \
+	/ sizeof_field(struct linaos_efi_memreserve, entry[0]))
 
 void __init efi_arch_mem_reserve(phys_addr_t addr, u64 size);
 

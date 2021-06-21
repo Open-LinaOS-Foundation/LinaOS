@@ -1,6 +1,6 @@
 #!/bin/bash
 # SPDX-License-Identifier: GPL-2.0
-# Linux kernel coccicheck
+# LinaOS kernel coccicheck
 #
 # Read Documentation/dev-tools/coccinelle.rst
 #

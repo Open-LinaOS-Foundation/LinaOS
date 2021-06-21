@@ -7,21 +7,21 @@
 #define DRV_NAME       "gpio-aggregator"
 #define pr_fmt(fmt)	DRV_NAME ": " fmt
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/overflow.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/ctype.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/overflow.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
 
 
 /*

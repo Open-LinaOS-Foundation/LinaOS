@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_ASM_SOCKET_H
 #define _UAPI_ASM_SOCKET_H
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 #include <asm/sockios.h>
 
 /* For setsockopt(2) */
@@ -37,7 +37,7 @@
 #define SO_PROTOCOL	0x1028
 #define SO_DOMAIN	0x1029
 
-/* linux-specific, might as well be the same as on i386 */
+/* linaos-specific, might as well be the same as on i386 */
 #define SO_NO_CHECK	11
 #define SO_PRIORITY	12
 #define SO_BSDCOMPAT	14

@@ -65,7 +65,7 @@
 
 #include "qla_def.h"
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #define CREATE_TRACE_POINTS
 #include <trace/events/qla.h>
 

@@ -13,19 +13,19 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/mfd/axp20x.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
 
 #define AXP20X_GPIO0_FUNC_MASK		GENMASK(3, 0)
 #define AXP20X_GPIO1_FUNC_MASK		GENMASK(3, 0)
@@ -1020,7 +1020,7 @@ static int axp20x_set_dcdc_freq(struct platform_device *pdev, u32 dcdcfreq)
 		/*
 		 * AXP803/AXP813 DCDC work frequency setting has the same
 		 * range and step as AXP22X, but at a different register.
-		 * (See include/linux/mfd/axp20x.h)
+		 * (See include/linaos/mfd/axp20x.h)
 		 */
 		reg = AXP803_DCDC_FREQ_CTRL;
 		fallthrough;	/* to the check below */
@@ -1115,7 +1115,7 @@ static int axp20x_set_dcdc_workmode(struct regulator_dev *rdev, int id, u32 work
 	case AXP806_ID:
 		/*
 		 * AXP806 DCDC regulator IDs have the same range as AXP22X.
-		 * (See include/linux/mfd/axp20x.h)
+		 * (See include/linaos/mfd/axp20x.h)
 		 */
 		reg = AXP806_DCDC_MODE_CTRL2;
 		fallthrough;	/* to the check below */

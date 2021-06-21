@@ -30,20 +30,20 @@
  *
  * Copyright (c) 2006-2010 Patrick McHardy <kaber@trash.net>
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/udp.h>
 #include <net/checksum.h>
 #include <net/udp.h>
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_snmp.h>
+#include <linaos/netfilter/nf_conntrack_snmp.h>
 #include "nf_nat_snmp_basic.asn1.h"
 
 MODULE_LICENSE("GPL");

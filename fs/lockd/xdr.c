@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/lockd/xdr.c
+ * linaos/fs/lockd/xdr.c
  *
  * XDR support for lockd and the lock client.
  *
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/nfs.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/nfs.h>
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/lockd/lockd.h>
+#include <linaos/sunrpc/xdr.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/lockd/lockd.h>
 
-#include <uapi/linux/nfs2.h>
+#include <uapi/linaos/nfs2.h>
 
 #define NLMDBG_FACILITY		NLMDBG_XDR
 

@@ -9,10 +9,10 @@
 #ifndef _LINUX_LIVEPATCH_H_
 #define _LINUX_LIVEPATCH_H_
 
-#include <linux/module.h>
-#include <linux/ftrace.h>
-#include <linux/completion.h>
-#include <linux/list.h>
+#include <linaos/module.h>
+#include <linaos/ftrace.h>
+#include <linaos/completion.h>
+#include <linaos/list.h>
 
 #if IS_ENABLED(CONFIG_LIVEPATCH)
 
@@ -104,14 +104,14 @@ struct klp_callbacks {
 
 /**
  * struct klp_object - kernel object structure for live patching
- * @name:	module name (or NULL for vmlinux)
+ * @name:	module name (or NULL for vmlinaos)
  * @funcs:	function entries for functions to be patched in the object
  * @callbacks:	functions to be executed pre/post (un)patching
  * @kobj:	kobject for sysfs resources
  * @func_list:	dynamic list of the function entries
  * @node:	list node for klp_patch obj_list
  * @mod:	kernel module associated with the patched object
- *		(NULL for vmlinux)
+ *		(NULL for vmlinaos)
  * @dynamic:    temporary object for nop functions; dynamically allocated
  * @patched:	the object's funcs have been added to the klp_ops list
  */

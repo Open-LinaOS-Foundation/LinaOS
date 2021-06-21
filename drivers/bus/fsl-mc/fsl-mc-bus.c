@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) "fsl-mc: " fmt
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/limits.h>
-#include <linux/bitops.h>
-#include <linux/msi.h>
-#include <linux/dma-mapping.h>
-#include <linux/acpi.h>
-#include <linux/iommu.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/limits.h>
+#include <linaos/bitops.h>
+#include <linaos/msi.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/acpi.h>
+#include <linaos/iommu.h>
 
 #include "fsl-mc-private.h"
 
@@ -758,7 +758,7 @@ static void fsl_mc_device_release(struct device *dev)
 }
 
 /**
- * Add a newly discovered fsl-mc device to be visible in Linux
+ * Add a newly discovered fsl-mc device to be visible in LinaOS
  */
 int fsl_mc_device_add(struct fsl_mc_obj_desc *obj_desc,
 		      struct fsl_mc_io *mc_io,
@@ -896,7 +896,7 @@ EXPORT_SYMBOL_GPL(fsl_mc_device_add);
 
 /**
  * fsl_mc_device_remove - Remove an fsl-mc device from being visible to
- * Linux
+ * LinaOS
  *
  * @mc_dev: Pointer to an fsl-mc device
  */

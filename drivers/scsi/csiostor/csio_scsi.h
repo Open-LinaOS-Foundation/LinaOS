@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for LinaOS.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -35,8 +35,8 @@
 #ifndef __CSIO_SCSI_H__
 #define __CSIO_SCSI_H__
 
-#include <linux/spinlock_types.h>
-#include <linux/completion.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/completion.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

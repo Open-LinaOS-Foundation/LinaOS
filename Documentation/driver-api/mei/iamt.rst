@@ -98,4 +98,4 @@ If the Intel AMT is not enabled in the firmware then the watchdog client won't e
 on the me client bus and watchdog devices won't be exposed.
 
 ---
-linux-mei@linux.intel.com
+linaos-mei@linaos.intel.com

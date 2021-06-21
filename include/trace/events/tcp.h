@@ -5,12 +5,12 @@
 #if !defined(_TRACE_TCP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_TCP_H
 
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/tracepoint.h>
+#include <linaos/ipv6.h>
+#include <linaos/tcp.h>
+#include <linaos/tracepoint.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
-#include <linux/sock_diag.h>
+#include <linaos/sock_diag.h>
 
 #define TP_STORE_V4MAPPED(__entry, saddr, daddr)		\
 	do {							\

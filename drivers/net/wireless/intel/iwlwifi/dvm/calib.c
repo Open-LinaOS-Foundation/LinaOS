@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2005-2014 Intel Corporation
  */
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <net/mac80211.h>
 
 #include "iwl-trans.h"

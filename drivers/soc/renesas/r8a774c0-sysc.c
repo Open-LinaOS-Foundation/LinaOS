@@ -6,9 +6,9 @@
  * Based on Renesas R-Car E3 System Controller
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/sys_soc.h>
+#include <linaos/bits.h>
+#include <linaos/kernel.h>
+#include <linaos/sys_soc.h>
 
 #include <dt-bindings/power/r8a774c0-sysc.h>
 

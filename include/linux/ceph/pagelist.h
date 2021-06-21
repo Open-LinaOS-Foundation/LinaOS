@@ -3,9 +3,9 @@
 #define __FS_CEPH_PAGELIST_H
 
 #include <asm/byteorder.h>
-#include <linux/refcount.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linaos/refcount.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
 
 struct ceph_pagelist {
 	struct list_head head;

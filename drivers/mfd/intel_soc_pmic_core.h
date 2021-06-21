@@ -5,7 +5,7 @@
  * Copyright (C) 2012-2014 Intel Corporation. All rights reserved.
  *
  * Author: Yang, Bin <bin.yang@intel.com>
- * Author: Zhu, Lejun <lejun.zhu@linux.intel.com>
+ * Author: Zhu, Lejun <lejun.zhu@linaos.intel.com>
  */
 
 #ifndef __INTEL_SOC_PMIC_CORE_H__

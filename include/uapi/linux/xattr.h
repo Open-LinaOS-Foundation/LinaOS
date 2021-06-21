@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
-  File: linux/xattr.h
+  File: linaos/xattr.h
 
   Extended attributes handling.
 
@@ -10,7 +10,7 @@
   Copyright (c) 2020 Jan (janneke) Nieuwenhuizen <janneke@gnu.org>
 */
 
-#include <linux/libc-compat.h>
+#include <linaos/libc-compat.h>
 
 #ifndef _UAPI_LINUX_XATTR_H
 #define _UAPI_LINUX_XATTR_H
@@ -54,7 +54,7 @@
 #define XATTR_IMA_SUFFIX "ima"
 #define XATTR_NAME_IMA XATTR_SECURITY_PREFIX XATTR_IMA_SUFFIX
 
-#define XATTR_SELINUX_SUFFIX "selinux"
+#define XATTR_SELINUX_SUFFIX "selinaos"
 #define XATTR_NAME_SELINUX XATTR_SECURITY_PREFIX XATTR_SELINUX_SUFFIX
 
 #define XATTR_SMACK_SUFFIX "SMACK64"

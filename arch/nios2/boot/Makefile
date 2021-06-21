@@ -6,29 +6,29 @@
 # for more details.
 #
 
-UIMAGE_LOADADDR = $(shell $(NM) vmlinux | awk '$$NF == "_stext" {print $$1}')
-UIMAGE_ENTRYADDR = $(shell $(NM) vmlinux | awk '$$NF == "_start" {print $$1}')
+UIMAGE_LOADADDR = $(shell $(NM) vmlinaos | awk '$$NF == "_stext" {print $$1}')
+UIMAGE_ENTRYADDR = $(shell $(NM) vmlinaos | awk '$$NF == "_start" {print $$1}')
 UIMAGE_COMPRESSION = gzip
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary
+OBJCOPYFLAGS_vmlinaos.bin := -O binary
 
-targets += vmlinux.bin vmlinux.gz vmImage
+targets += vmlinaos.bin vmlinaos.gz vmImage
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinaos.gz: $(obj)/vmlinaos.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmImage: $(obj)/vmlinux.gz
+$(obj)/vmImage: $(obj)/vmlinaos.gz
 	$(call if_changed,uimage)
 	@$(kecho) 'Kernel: $@ is ready'
 
-$(obj)/zImage: $(obj)/compressed/vmlinux FORCE
+$(obj)/zImage: $(obj)/compressed/vmlinaos FORCE
 	$(call if_changed,objcopy)
 	@$(kecho) 'Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: $(obj)/vmlinux.gz FORCE
+$(obj)/compressed/vmlinaos: $(obj)/vmlinaos.gz FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
 install:

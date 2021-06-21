@@ -2,14 +2,14 @@
 /*
  * Copyright IBM Corp. 2018
  *
- * Author(s): Philipp Rudo <prudo@linux.vnet.ibm.com>
+ * Author(s): Philipp Rudo <prudo@linaos.vnet.ibm.com>
  */
 
 #ifndef _S390_PURGATORY_H_
 #define _S390_PURGATORY_H_
 #ifndef __ASSEMBLY__
 
-#include <linux/purgatory.h>
+#include <linaos/purgatory.h>
 
 int verify_sha256_digest(void);
 

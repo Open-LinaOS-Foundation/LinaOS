@@ -7,13 +7,13 @@
  */
 
 
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/perf_event.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/kprobes.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/perf_event.h>
+#include <linaos/signal.h>
+#include <linaos/uaccess.h>
+#include <linaos/kprobes.h>
 
 #include <asm/ptrace.h>
 #include <asm/tlbflush.h>

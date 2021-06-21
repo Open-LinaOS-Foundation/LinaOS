@@ -4,11 +4,11 @@
  * Copyright (C) 1999, 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/of_device.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/device.h>
+#include <linaos/of_device.h>
 
 #include <asm/prom.h>
 #include <asm/oplib.h>
@@ -356,7 +356,7 @@ static void pci_register_iommu_region(struct pci_pbm_info *pbm)
 
 void pci_determine_mem_io_space(struct pci_pbm_info *pbm)
 {
-	const struct linux_prom_pci_ranges *pbm_ranges;
+	const struct linaos_prom_pci_ranges *pbm_ranges;
 	int i, saw_mem, saw_io;
 	int num_pbm_ranges;
 
@@ -375,7 +375,7 @@ void pci_determine_mem_io_space(struct pci_pbm_info *pbm)
 	memset(&pbm->mem64_space, 0, sizeof(struct resource));
 
 	for (i = 0; i < num_pbm_ranges; i++) {
-		const struct linux_prom_pci_ranges *pr = &pbm_ranges[i];
+		const struct linaos_prom_pci_ranges *pr = &pbm_ranges[i];
 		unsigned long a, size, region_a;
 		u32 parent_phys_hi, parent_phys_lo;
 		u32 child_phys_mid, child_phys_lo;

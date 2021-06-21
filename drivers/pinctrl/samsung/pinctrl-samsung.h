@@ -13,13 +13,13 @@
 #ifndef __PINCTRL_SAMSUNG_H
 #define __PINCTRL_SAMSUNG_H
 
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/machine.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pinctrl/machine.h>
 
-#include <linux/gpio/driver.h>
+#include <linaos/gpio/driver.h>
 
 /**
  * enum pincfg_type - possible pin configuration types supported.
@@ -146,7 +146,7 @@ struct samsung_pin_bank_data {
  * @drvdata: link to controller driver data
  * @irq_domain: IRQ domain of the bank.
  * @gpio_chip: GPIO chip of the bank.
- * @grange: linux gpio pin range supported by this bank.
+ * @grange: linaos gpio pin range supported by this bank.
  * @irq_chip: link to irq chip for external gpio and wakeup interrupts.
  * @slock: spinlock protecting bank registers
  * @pm_save: saved register values during suspend

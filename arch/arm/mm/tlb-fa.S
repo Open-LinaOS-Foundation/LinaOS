@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/tlb-fa.S
+ *  linaos/arch/arm/mm/tlb-fa.S
  *
  *  Copyright (C) 2005 Faraday Corp.
  *  Copyright (C) 2008-2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
@@ -13,8 +13,8 @@
  *
  *  Processors: FA520 FA526 FA626
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/tlbflush.h>

@@ -12,7 +12,7 @@
 
 #ifdef CONFIG_ASSOCIATIVE_ARRAY
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ASSOC_ARRAY_KEY_CHUNK_SIZE BITS_PER_LONG /* Key data retrieved in chunks of this size */
 

@@ -46,16 +46,16 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/seq_file.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 /* Device specific zlib function definitions */
 #include "zip_device.h"

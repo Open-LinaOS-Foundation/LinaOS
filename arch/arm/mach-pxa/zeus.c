@@ -8,28 +8,28 @@
  *  Maintained by Marc Zyngier <maz@misterjones.org>
  */
 
-#include <linux/cpufreq.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/serial_8250.h>
-#include <linux/dm9000.h>
-#include <linux/mmc/host.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/pca953x.h>
-#include <linux/apm-emulation.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <linaos/cpufreq.h>
+#include <linaos/interrupt.h>
+#include <linaos/leds.h>
+#include <linaos/irq.h>
+#include <linaos/pm.h>
+#include <linaos/property.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/serial_8250.h>
+#include <linaos/dm9000.h>
+#include <linaos/mmc/host.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/platform_data/pca953x.h>
+#include <linaos/apm-emulation.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
 
 #include <asm/mach-types.h>
 #include <asm/suspend.h>
@@ -40,14 +40,14 @@
 #include "pxa27x.h"
 #include "devices.h"
 #include <mach/regs-uart.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 #include "pxa27x-udc.h"
 #include "udc.h"
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 #include "pm.h"
 #include <mach/audio.h>
-#include <linux/platform_data/pcmcia-pxa2xx_viper.h>
+#include <linaos/platform_data/pcmcia-pxa2xx_viper.h>
 #include "zeus.h"
 #include <mach/smemc.h>
 

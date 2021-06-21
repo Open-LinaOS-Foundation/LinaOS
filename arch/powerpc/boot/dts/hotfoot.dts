@@ -1,7 +1,7 @@
 /*
  * Device Tree Source for ESTeem 195E Hotfoot
  *
- * Copyright 2009 AbsoluteValue Systems <solomon@linux-wlan.com>
+ * Copyright 2009 AbsoluteValue Systems <solomon@linaos-wlan.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2.  This program is licensed "as is" without
@@ -157,7 +157,7 @@
 			};
 
 			EMAC0: ethernet@ef600800 {
-				linux,network-index = <0x0>;
+				linaos,network-index = <0x0>;
 				device_type = "network";
 				compatible = "ibm,emac-405ep", "ibm,emac";
 				interrupt-parent = <&UIC0>;
@@ -178,7 +178,7 @@
 			};
 
 			EMAC1: ethernet@ef600900 {
-				linux,network-index = <0x1>;
+				linaos,network-index = <0x1>;
 				device_type = "network";
 				compatible = "ibm,emac-405ep", "ibm,emac";
 				interrupt-parent = <&UIC0>;

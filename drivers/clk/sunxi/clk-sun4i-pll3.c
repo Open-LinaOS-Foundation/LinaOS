@@ -5,12 +5,12 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #define SUN4I_A10_PLL3_GATE_BIT	31
 #define SUN4I_A10_PLL3_DIV_WIDTH	7

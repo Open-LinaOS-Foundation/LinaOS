@@ -6,7 +6,7 @@
 #ifndef __OCTEON_BOOT_H__
 #define __OCTEON_BOOT_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct boot_init_vector {
 	/* First stage address - in ram instead of flash */
@@ -21,8 +21,8 @@ struct boot_init_vector {
 	uint32_t pad;
 };
 
-/* similar to bootloader's linux_app_boot_info but without global data */
-struct linux_app_boot_info {
+/* similar to bootloader's linaos_app_boot_info but without global data */
+struct linaos_app_boot_info {
 #ifdef __BIG_ENDIAN_BITFIELD
 	uint32_t labi_signature;
 	uint32_t start_core0_addr;
@@ -67,7 +67,7 @@ struct linux_app_boot_info {
 /* hardcoded in bootloader */
 #define	 LABI_ADDR_IN_BOOTLOADER			 0x700
 
-#define LINUX_APP_BOOT_BLOCK_NAME "linux-app-boot"
+#define LINUX_APP_BOOT_BLOCK_NAME "linaos-app-boot"
 
 #define LABI_SIGNATURE 0xAABBCC01
 

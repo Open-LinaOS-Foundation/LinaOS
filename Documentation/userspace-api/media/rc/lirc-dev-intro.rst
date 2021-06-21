@@ -6,7 +6,7 @@
 Introduction
 ************
 
-LIRC stands for Linux Infrared Remote Control. The LIRC device interface is
+LIRC stands for LinaOS Infrared Remote Control. The LIRC device interface is
 a bi-directional interface for transporting raw IR and decoded scancodes
 data between userspace and kernelspace. Fundamentally, it is just a chardev
 (/dev/lircX, for X = 0, 1, 2, ...), with a number of standard struct
@@ -30,7 +30,7 @@ What you should see for a chardev:
     $ ls -l /dev/lirc*
     crw-rw---- 1 root root 248, 0 Jul 2 22:20 /dev/lirc0
 
-Note that the package `v4l-utils <https://git.linuxtv.org/v4l-utils.git/>`_
+Note that the package `v4l-utils <https://git.linaostv.org/v4l-utils.git/>`_
 contains tools for working with LIRC devices:
 
  - ir-ctl: can receive raw IR and transmit IR, as well as query LIRC
@@ -140,7 +140,7 @@ on the following table.
 Data types used by LIRC_MODE_SCANCODE
 *************************************
 
-.. kernel-doc:: include/uapi/linux/lirc.h
+.. kernel-doc:: include/uapi/linaos/lirc.h
     :identifiers: lirc_scancode rc_proto
 
 ********************
@@ -168,4 +168,4 @@ The target must be the file descriptor for the LIRC device, and the
 attach type must be ``BPF_LIRC_MODE2``. No more than 64 BPF programs can be
 attached to a single LIRC device at a time.
 
-.. _bpf(2): http://man7.org/linux/man-pages/man2/bpf.2.html
+.. _bpf(2): http://man7.org/linaos/man-pages/man2/bpf.2.html

@@ -127,7 +127,7 @@ After the first KCM socket is created using the socket call as described
 above, additional sockets for the multiplexor can be created by cloning
 a KCM socket. This is accomplished by an ioctl on a KCM socket::
 
-  /* From linux/kcm.h */
+  /* From linaos/kcm.h */
   struct kcm_clone {
 	int fd;
   };
@@ -147,7 +147,7 @@ Attach transport sockets
 Attaching of transport sockets to a multiplexor is performed by calling an
 ioctl on a KCM socket for the multiplexor. e.g.::
 
-  /* From linux/kcm.h */
+  /* From linaos/kcm.h */
   struct kcm_attach {
 	int fd;
 	int bpf_fd;
@@ -173,7 +173,7 @@ Unattach transport sockets
 Unattaching a transport socket from a multiplexor is straightforward. An
 "unattach" ioctl is done with the kcm_unattach structure as the argument::
 
-  /* From linux/kcm.h */
+  /* From linaos/kcm.h */
   struct kcm_unattach {
 	int fd;
   };

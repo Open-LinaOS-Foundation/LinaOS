@@ -6,16 +6,16 @@
  * Copyright (C) 2004-2016 Cavium, Inc.
  */
 
-#include <linux/of_address.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/bitops.h>
-#include <linux/of_irq.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/of.h>
+#include <linaos/of_address.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/bitops.h>
+#include <linaos/of_irq.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
+#include <linaos/smp.h>
+#include <linaos/of.h>
 
 #include <asm/octeon/octeon.h>
 #include <asm/octeon/cvmx-ciu2-defs.h>

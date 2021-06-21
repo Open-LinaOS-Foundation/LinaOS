@@ -7,10 +7,10 @@
  * Init sequence taken from ITDB02_Graph16.cpp - (C)2010-2011 Henning Karlsen
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/gpio/consumer.h>
 
 #include "fbtft.h"
 

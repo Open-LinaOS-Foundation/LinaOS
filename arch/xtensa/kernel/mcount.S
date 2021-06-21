@@ -10,7 +10,7 @@
  * Copyright (C) 2013 Tensilica Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asmmacro.h>
 #include <asm/ftrace.h>
 

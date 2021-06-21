@@ -11,7 +11,7 @@
 #ifndef _ASM_GENERIC_BITOPS_INSTRUMENTED_ATOMIC_H
 #define _ASM_GENERIC_BITOPS_INSTRUMENTED_ATOMIC_H
 
-#include <linux/instrumented.h>
+#include <linaos/instrumented.h>
 
 /**
  * set_bit - Atomically set a bit in memory

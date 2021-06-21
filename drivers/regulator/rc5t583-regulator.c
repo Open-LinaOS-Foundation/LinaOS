@@ -9,15 +9,15 @@
  *      Copyright (C) 2011 RICOH COMPANY,LTD
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/gpio.h>
-#include <linux/mfd/rc5t583.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/mfd/rc5t583.h>
 
 struct rc5t583_regulator_info {
 	int			deepsleep_id;

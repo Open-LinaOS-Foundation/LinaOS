@@ -6,8 +6,8 @@
  * Copyright 2007 Sony Corp.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
 
 #include <asm/lv1call.h>
 #include <asm/ps3stor.h>

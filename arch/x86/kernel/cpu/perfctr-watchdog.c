@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/smp.h>
+#include <linaos/percpu.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/smp.h>
 #include <asm/nmi.h>
-#include <linux/kprobes.h>
+#include <linaos/kprobes.h>
 
 #include <asm/apic.h>
 #include <asm/perf_event.h>

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
@@ -67,7 +67,7 @@
  * empty. Otherwise, SP_main is aligned to 64 bit automatically
  * (CCR.STKALIGN set).
  *
- * Linux assumes that the interrupts are disabled when entering an
+ * LinaOS assumes that the interrupts are disabled when entering an
  * exception handler and it may BUG if this is not the case. Interrupts
  * are disabled during entry and reenabled in the exit macro.
  *
@@ -89,7 +89,7 @@
 	@ reloaded.
 	ldmia	r12!, {r0-r3}
 
-	@ Linux expects to have irqs off. Do it here before taking stack space
+	@ LinaOS expects to have irqs off. Do it here before taking stack space
 	cpsid	i
 
 	sub	sp, #PT_REGS_SIZE-S_IP
@@ -413,5 +413,5 @@
  */
 scno	.req	r7		@ syscall number
 tbl	.req	r8		@ syscall table pointer
-why	.req	r8		@ Linux syscall (!= 0)
+why	.req	r8		@ LinaOS syscall (!= 0)
 tsk	.req	r9		@ current thread_info

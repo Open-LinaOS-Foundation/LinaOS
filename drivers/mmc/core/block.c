@@ -17,35 +17,35 @@
  * Author:  Andrew Christian
  *          28 May 2002
  */
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/hdreg.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
-#include <linux/delay.h>
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/hdreg.h>
+#include <linaos/kdev_t.h>
+#include <linaos/blkdev.h>
+#include <linaos/cdev.h>
+#include <linaos/mutex.h>
+#include <linaos/scatterlist.h>
+#include <linaos/string_helpers.h>
+#include <linaos/delay.h>
+#include <linaos/capability.h>
+#include <linaos/compat.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/idr.h>
+#include <linaos/debugfs.h>
 
-#include <linux/mmc/ioctl.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <linaos/mmc/ioctl.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/mmc/sd.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "queue.h"
 #include "block.h"

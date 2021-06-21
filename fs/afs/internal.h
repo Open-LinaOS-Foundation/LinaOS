@@ -5,21 +5,21 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/rxrpc.h>
-#include <linux/key.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/ktime.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/rxrpc.h>
+#include <linaos/key.h>
+#include <linaos/workqueue.h>
+#include <linaos/sched.h>
 #define FSCACHE_USE_NEW_IO_API
-#include <linux/fscache.h>
-#include <linux/backing-dev.h>
-#include <linux/uuid.h>
-#include <linux/mm_types.h>
-#include <linux/dns_resolver.h>
+#include <linaos/fscache.h>
+#include <linaos/backing-dev.h>
+#include <linaos/uuid.h>
+#include <linaos/mm_types.h>
+#include <linaos/dns_resolver.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>

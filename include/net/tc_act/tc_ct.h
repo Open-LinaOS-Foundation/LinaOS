@@ -3,7 +3,7 @@
 #define __NET_TC_CT_H
 
 #include <net/act_api.h>
-#include <uapi/linux/tc_act/tc_ct.h>
+#include <uapi/linaos/tc_act/tc_ct.h>
 
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_nat.h>

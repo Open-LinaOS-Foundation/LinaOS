@@ -10,15 +10,15 @@
  *  Copyright (C) 2008 by IBM, Corp.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/uio.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
+#include <linaos/uio.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 #include "protocol.h"

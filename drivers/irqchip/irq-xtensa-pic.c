@@ -12,11 +12,11 @@
  * Kevin Chea
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/of.h>
 
 unsigned int cached_irq_mask;
 

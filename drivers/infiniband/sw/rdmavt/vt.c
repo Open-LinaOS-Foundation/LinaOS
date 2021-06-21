@@ -45,9 +45,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/dma-mapping.h>
 #include "vt.h"
 #include "cq.h"
 #include "trace.h"

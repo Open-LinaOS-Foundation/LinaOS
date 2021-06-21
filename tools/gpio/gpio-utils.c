@@ -14,7 +14,7 @@
 #include <fcntl.h>
 #include <getopt.h>
 #include <sys/ioctl.h>
-#include <linux/gpio.h>
+#include <linaos/gpio.h>
 #include "gpio-utils.h"
 
 #define CONSUMER "gpio-utils"
@@ -41,7 +41,7 @@
  *			index for the associated GPIO device.
  * @num_lines:		The number of lines to request.
  * @config:		The new config for requested gpio. Reference
- *			"linux/gpio.h" for config details.
+ *			"linaos/gpio.h" for config details.
  * @consumer:		The name of consumer, such as "sysfs",
  *			"powerkey". This is useful for other users to
  *			know who is using.

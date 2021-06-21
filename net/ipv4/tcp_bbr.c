@@ -56,12 +56,12 @@
  * otherwise TCP stack falls back to an internal pacing using one high
  * resolution timer per TCP socket and may use more resources.
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/tcp.h>
-#include <linux/inet_diag.h>
-#include <linux/inet.h>
-#include <linux/random.h>
-#include <linux/win_minmax.h>
+#include <linaos/inet_diag.h>
+#include <linaos/inet.h>
+#include <linaos/random.h>
+#include <linaos/win_minmax.h>
 
 /* Scale factor for rate in pkt/uSec unit to avoid truncation in bandwidth
  * estimation. The rate unit ~= (1500 bytes / 1 usec / 2^24) ~= 715 bps.

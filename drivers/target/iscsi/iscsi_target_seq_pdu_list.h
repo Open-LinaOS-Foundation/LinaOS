@@ -2,8 +2,8 @@
 #ifndef ISCSI_SEQ_AND_PDU_LIST_H
 #define ISCSI_SEQ_AND_PDU_LIST_H
 
-#include <linux/types.h>
-#include <linux/cache.h>
+#include <linaos/types.h>
+#include <linaos/cache.h>
 
 /* struct iscsi_pdu->status */
 #define DATAOUT_PDU_SENT			1

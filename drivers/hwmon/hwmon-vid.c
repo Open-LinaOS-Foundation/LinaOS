@@ -11,9 +11,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/hwmon-vid.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/hwmon-vid.h>
 
 /*
  * Common code for decoding VID pins.

@@ -6,10 +6,10 @@
  * Copyright (c) 2014 Finn Thain
  */
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
 #include <asm/setup.h>
 
 extern void mvme16x_cons_write(struct console *co,

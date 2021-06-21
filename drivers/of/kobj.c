@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #include "of_private.h"
 

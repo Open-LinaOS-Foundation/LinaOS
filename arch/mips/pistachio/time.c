@@ -5,11 +5,11 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
+#include <linaos/clk.h>
+#include <linaos/clocksource.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
 
 #include <asm/mips-cps.h>
 #include <asm/time.h>

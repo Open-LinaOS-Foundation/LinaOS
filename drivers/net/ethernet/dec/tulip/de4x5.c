@@ -1,5 +1,5 @@
 /*  de4x5.c: A DIGITAL DC21x4x DECchip and DE425/DE434/DE435/DE450/DE500
-             ethernet driver for Linux.
+             ethernet driver for LinaOS.
 
     Copyright 1994, 1995 Digital Equipment Corporation.
 
@@ -99,7 +99,7 @@
     To utilise this ability, you have to do 8 things:
 
     0) have a copy of the loadable modules code installed on your system.
-    1) copy de4x5.c from the  /linux/drivers/net directory to your favourite
+    1) copy de4x5.c from the  /linaos/drivers/net directory to your favourite
     temporary directory.
     2) for fixed  autoprobes (not  recommended),  edit the source code  near
     line 5594 to reflect the I/O address  you're using, or assign these when
@@ -184,7 +184,7 @@
     more than one DECchip based  card.  As a  side effect, I don't mess with
     the  device structure any  more which means that  if more than 1 card in
     2.0.x is    installed (4  in   2.1.x),  the  user   will have   to  edit
-    linux/drivers/net/Space.c  to make room for  them. Hence, module loading
+    linaos/drivers/net/Space.c  to make room for  them. Hence, module loading
     is  the preferred way to use   this driver, since  it  doesn't have this
     limitation.
 
@@ -254,7 +254,7 @@
       0.23    28-Feb-95   Added DC21041 and DC21140 support.
                           Fix missed frame counter value and initialisation.
 			  Fixed EISA probe.
-      0.24    11-Apr-95   Change delay routine to use <linux/udelay>.
+      0.24    11-Apr-95   Change delay routine to use <linaos/udelay>.
                           Change TX_BUFFS_AVAIL macro.
 			  Change media autodetection to allow manual setting.
 			  Completed DE500 (DC21140) support.
@@ -379,7 +379,7 @@
                           Fix bug in pci_probe() for 64 bit systems reported
 			   by <belliott@accessone.com>.
       0.533   9-Jan-98    Fix more 64 bit bugs reported by <jal@cs.brown.edu>.
-      0.534  24-Jan-98    Fix last (?) endian bug from <geert@linux-m68k.org>
+      0.534  24-Jan-98    Fix last (?) endian bug from <geert@linaos-m68k.org>
       0.535  21-Feb-98    Fix Ethernet Address PROM reset bug for DC21040.
       0.536  21-Mar-98    Change pci_probe() to use the pci_dev structure.
 			  **Incompatible with 2.0.x from here.**
@@ -428,7 +428,7 @@
       0.545  28-Nov-99    Further Moto SROM bug fix from
                            <mporter@eng.mcd.mot.com>
                           Remove double checking for DEBUG_RX in de4x5_dbg_rx()
-			   from report by <geert@linux-m68k.org>
+			   from report by <geert@linaos-m68k.org>
       0.546  22-Feb-01    Fixes Alpha XP1000 oops.  The srom_search function
                            was causing a page fault when initializing the
                            variable 'pb', on a non de4x5 PCI device, in this
@@ -443,36 +443,36 @@
     =========================================================================
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/eisa.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/unistd.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/moduleparam.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/eisa.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/crc32.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
+#include <linaos/unistd.h>
+#include <linaos/ctype.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/moduleparam.h>
+#include <linaos/bitops.h>
+#include <linaos/gfp.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #ifdef CONFIG_PPC_PMAC
 #include <asm/machdep.h>
 #endif /* CONFIG_PPC_PMAC */

@@ -10,7 +10,7 @@
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -20,28 +20,28 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/swap.h>
+#include <linaos/stddef.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/highmem.h>
+#include <linaos/memblock.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/mmu.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/smp.h>
 #include <asm/machdep.h>
 #include <asm/setup.h>

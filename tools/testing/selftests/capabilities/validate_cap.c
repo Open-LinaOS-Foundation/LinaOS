@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <cap-ng.h>
-#include <linux/capability.h>
+#include <linaos/capability.h>
 #include <stdbool.h>
 #include <string.h>
 #include <stdio.h>

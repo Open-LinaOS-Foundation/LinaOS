@@ -8,8 +8,8 @@
 #ifndef __ASM_CDMM_H
 #define __ASM_CDMM_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
 
 /**
  * struct mips_cdmm_device - Represents a single device on a CDMM bus.

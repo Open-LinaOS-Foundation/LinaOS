@@ -10,13 +10,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/cpu.h>
-#include <linux/mbus.h>
-#include <linux/clocksource.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/cpu.h>
+#include <linaos/mbus.h>
+#include <linaos/clocksource.h>
 #include <asm/system_misc.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

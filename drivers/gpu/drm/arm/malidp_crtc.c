@@ -6,8 +6,8 @@
  * ARM Mali DP500/DP550/DP650 driver (crtc operations)
  */
 
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/pm_runtime.h>
 
 #include <video/videomode.h>
 

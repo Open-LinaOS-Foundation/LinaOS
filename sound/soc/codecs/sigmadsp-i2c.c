@@ -5,10 +5,10 @@
  * Copyright 2009-2011 Analog Devices Inc.
  */
 
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
 
 #include "sigmadsp.h"

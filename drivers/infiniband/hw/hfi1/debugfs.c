@@ -44,15 +44,15 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ratelimit.h>
-#include <linux/fault-inject.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/ratelimit.h>
+#include <linaos/fault-inject.h>
 
 #include "hfi.h"
 #include "trace.h"

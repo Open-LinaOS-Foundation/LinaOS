@@ -8,7 +8,7 @@
 // Copyright (c) 2017-2019 Pengutronix,
 //                         Oleksij Rempel <kernel@pengutronix.de>
 
-#include <linux/can/skb.h>
+#include <linaos/can/skb.h>
 
 #include "j1939-priv.h"
 

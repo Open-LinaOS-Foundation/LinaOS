@@ -2,7 +2,7 @@
 #ifndef _SPARC64_DCU_H
 #define _SPARC64_DCU_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /* UltraSparc-III Data Cache Unit Control Register */
 #define DCU_CP	_AC(0x0002000000000000,UL) /* Phys Cache Enable w/o mmu	*/

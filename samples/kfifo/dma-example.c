@@ -5,9 +5,9 @@
  * Copyright (C) 2010 Stefani Seibold <stefani@seibold.net>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kfifo.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kfifo.h>
 
 /*
  * This module shows how to handle fifo dma operations.

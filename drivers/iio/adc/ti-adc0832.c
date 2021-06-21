@@ -7,15 +7,15 @@
  * Datasheet: https://www.ti.com/lit/ds/symlink/adc0832-n.pdf
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/regulator/consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/spi/spi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
 
 enum {
 	adc0831,

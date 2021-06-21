@@ -26,8 +26,8 @@
 #ifndef _AGP_COMPAT_IOCTL_H
 #define _AGP_COMPAT_IOCTL_H
 
-#include <linux/compat.h>
-#include <linux/agpgart.h>
+#include <linaos/compat.h>
+#include <linaos/agpgart.h>
 
 #define AGPIOC_INFO32       _IOR (AGPIOC_BASE, 0, compat_uptr_t)
 #define AGPIOC_ACQUIRE32    _IO  (AGPIOC_BASE, 1)

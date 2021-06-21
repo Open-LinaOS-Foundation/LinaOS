@@ -8,29 +8,29 @@
  *    Copyright (C) 2009 Integrated Device Technology, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/ata.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/compat.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/genhd.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/bio.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/kthread.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/ata.h>
+#include <linaos/delay.h>
+#include <linaos/hdreg.h>
+#include <linaos/uaccess.h>
+#include <linaos/random.h>
+#include <linaos/smp.h>
+#include <linaos/compat.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/genhd.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/bio.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/idr.h>
+#include <linaos/kthread.h>
 #include <../drivers/ata/ahci.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/prefetch.h>
-#include <linux/numa.h>
+#include <linaos/export.h>
+#include <linaos/debugfs.h>
+#include <linaos/prefetch.h>
+#include <linaos/numa.h>
 #include "mtip32xx.h"
 
 #define HW_CMD_SLOT_SZ		(MTIP_MAX_COMMAND_SLOTS * 32)

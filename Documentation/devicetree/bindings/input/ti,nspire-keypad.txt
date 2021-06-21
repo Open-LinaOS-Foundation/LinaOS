@@ -15,7 +15,7 @@ Required properties:
 
 - clocks: The clock this peripheral is attached to.
 
-- linux,keymap: The keymap to use
+- linaos,keymap: The keymap to use
 	(see Documentation/devicetree/bindings/input/matrix-keymap.txt)
 
 Optional properties:
@@ -34,7 +34,7 @@ input {
 
 	clocks = <&apb_pclk>;
 
-	linux,keymap = <
+	linaos,keymap = <
 	0x0000001c	0x0001001c	0x00040039
 	0x0005002c	0x00060015	0x0007000b
 	0x0008000f	0x0100002d	0x01010011

@@ -21,15 +21,15 @@
  *	usb-ohci-tc6393.c(C) Copyright 2004 Lineo Solutions, Inc.
  */
 
-/*#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/sched.h>*/
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tmio.h>
-#include <linux/dma-mapping.h>
+/*#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/namei.h>
+#include <linaos/sched.h>*/
+#include <linaos/platform_device.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/tmio.h>
+#include <linaos/dma-mapping.h>
 
 /*-------------------------------------------------------------------------*/
 

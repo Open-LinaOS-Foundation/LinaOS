@@ -4,14 +4,14 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/watchdog.h>
+#include <linaos/clk.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/watchdog.h>
 
 #define WDT_START_1		0xff00
 #define WDT_START_2		0x00ff

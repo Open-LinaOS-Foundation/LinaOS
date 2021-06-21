@@ -3,13 +3,13 @@
 #define __PERF_DSO
 
 #include <pthread.h>
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/types.h>
+#include <linaos/rbtree.h>
 #include <sys/types.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "build-id.h"
 
 struct machine;
@@ -367,7 +367,7 @@ void dso__reset_find_symbol_cache(struct dso *dso);
 size_t dso__fprintf_symbols_by_name(struct dso *dso, FILE *fp);
 size_t dso__fprintf(struct dso *dso, FILE *fp);
 
-static inline bool dso__is_vmlinux(struct dso *dso)
+static inline bool dso__is_vmlinaos(struct dso *dso)
 {
 	return dso->binary_type == DSO_BINARY_TYPE__VMLINUX ||
 	       dso->binary_type == DSO_BINARY_TYPE__GUEST_VMLINUX;

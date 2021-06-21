@@ -8,9 +8,9 @@
 #ifndef _LINUX_VIRTIO_DMA_BUF_H
 #define _LINUX_VIRTIO_DMA_BUF_H
 
-#include <linux/dma-buf.h>
-#include <linux/uuid.h>
-#include <linux/virtio.h>
+#include <linaos/dma-buf.h>
+#include <linaos/uuid.h>
+#include <linaos/virtio.h>
 
 /**
  * struct virtio_dma_buf_ops - operations possible on exported object dma-buf

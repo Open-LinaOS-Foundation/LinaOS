@@ -8,7 +8,7 @@
 #ifndef _GELIC_WIRELESS_H
 #define _GELIC_WIRELESS_H
 
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 #include <net/iw_handler.h>
 
 

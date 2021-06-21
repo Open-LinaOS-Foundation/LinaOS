@@ -4,7 +4,7 @@
 #include "iavf_type.h"
 #include "iavf_adminq.h"
 #include "iavf_prototype.h"
-#include <linux/avf/virtchnl.h>
+#include <linaos/avf/virtchnl.h>
 
 /**
  * iavf_set_mac_type - Sets MAC type

@@ -91,7 +91,7 @@
 		compatible = "gpio-leds";
 		led-green {
 			gpios = <&gpiog 6 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 		led-orange {
 			gpios = <&gpiod 4 GPIO_ACTIVE_LOW>;
@@ -111,7 +111,7 @@
 		autorepeat;
 		button@0 {
 			label = "User";
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
 		};
 	};

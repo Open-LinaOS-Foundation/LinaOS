@@ -8,11 +8,11 @@
  * Copyright (c) 2019 Baylibre SAS.
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
+#include <linaos/clk-provider.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset-controller.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
 #include "meson-aoclk.h"
 #include "g12a-aoclk.h"
 

@@ -4,7 +4,7 @@
 
 #include <asm/processor.h>
 #include <asm/alternative.h>
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include <uapi/asm/kvm_para.h>
 
 #ifdef CONFIG_KVM_GUEST

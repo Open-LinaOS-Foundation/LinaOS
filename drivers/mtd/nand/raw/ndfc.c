@@ -16,15 +16,15 @@
  *  Copyright 2008 PIKA Technologies
  *    Sean MacLennan <smaclennan@pikatech.com>
  */
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/ndfc.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/ndfc.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
 #include <asm/io.h>
 
 #define NDFC_MAX_CS    4

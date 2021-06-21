@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Hardware-accelerated CRC-32 variants for Linux on z Systems
+ * Hardware-accelerated CRC-32 variants for LinaOS on z Systems
  *
  * Use the z/Architecture Vector Extension Facility to accelerate the
  * computing of bitreflected CRC-32 checksums for IEEE 802.3 Ethernet
@@ -10,10 +10,10 @@
  * the least-significant bit first (Little-Endian).
  *
  * Copyright IBM Corp. 2015
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/nospec-insn.h>
 #include <asm/vx-insn.h>
 

@@ -23,16 +23,16 @@
  * 	http://www.arrownac.com/manufacturers/intel/s/nehalem/5500-datasheet-v2.pdf
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/edac.h>
-#include <linux/mmzone.h>
-#include <linux/smp.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/edac.h>
+#include <linaos/mmzone.h>
+#include <linaos/smp.h>
 #include <asm/mce.h>
 #include <asm/processor.h>
 #include <asm/div64.h>

@@ -6,16 +6,16 @@
 #ifndef __INTEL_ENGINE_TYPES__
 #define __INTEL_ENGINE_TYPES__
 
-#include <linux/average.h>
-#include <linux/hashtable.h>
-#include <linux/irq_work.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/rbtree.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/average.h>
+#include <linaos/hashtable.h>
+#include <linaos/irq_work.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/llist.h>
+#include <linaos/rbtree.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 #include "i915_gem.h"
 #include "i915_pmu.h"

@@ -22,7 +22,7 @@
 
 #include "genelf.h"
 #include "../util/jitdump.h"
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #ifndef NT_GNU_BUILD_ID
 #define NT_GNU_BUILD_ID 3

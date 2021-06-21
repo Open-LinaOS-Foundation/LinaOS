@@ -12,7 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 #include <asm/bootparam.h>
 

@@ -1,5 +1,5 @@
 /*
- * linux/include/asm-generic/topology.h
+ * linaos/include/asm-generic/topology.h
  *
  * Written by: Matthew Dobson, IBM Corporation
  *

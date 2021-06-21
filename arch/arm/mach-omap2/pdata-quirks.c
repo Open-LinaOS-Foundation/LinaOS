@@ -4,26 +4,26 @@
  *
  * Copyright (C) 2013 Texas Instruments
  */
-#include <linux/clk.h>
-#include <linux/davinci_emac.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/of_platform.h>
-#include <linux/wl12xx.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/power/smartreflex.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/fixed.h>
+#include <linaos/clk.h>
+#include <linaos/davinci_emac.h>
+#include <linaos/gpio.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/of_platform.h>
+#include <linaos/wl12xx.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
+#include <linaos/power/smartreflex.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/fixed.h>
 
-#include <linux/platform_data/pinctrl-single.h>
-#include <linux/platform_data/hsmmc-omap.h>
-#include <linux/platform_data/iommu-omap.h>
-#include <linux/platform_data/ti-sysc.h>
-#include <linux/platform_data/wkup_m3.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
-#include <linux/platform_data/ti-prm.h>
+#include <linaos/platform_data/pinctrl-single.h>
+#include <linaos/platform_data/hsmmc-omap.h>
+#include <linaos/platform_data/iommu-omap.h>
+#include <linaos/platform_data/ti-sysc.h>
+#include <linaos/platform_data/wkup_m3.h>
+#include <linaos/platform_data/asoc-ti-mcbsp.h>
+#include <linaos/platform_data/ti-prm.h>
 
 #include "clockdomain.h"
 #include "common.h"

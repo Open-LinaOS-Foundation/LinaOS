@@ -7,10 +7,10 @@
 #include "ecma_167.h"
 #include "osta_udf.h"
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/udf_fs_i.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
+#include <linaos/udf_fs_i.h>
 
 #include "udf_sb.h"
 #include "udfend.h"

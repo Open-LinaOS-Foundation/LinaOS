@@ -9,7 +9,7 @@
 #ifndef __MANIFEST_H
 #define __MANIFEST_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct gb_interface;
 bool gb_manifest_parse(struct gb_interface *intf, void *data, size_t size);

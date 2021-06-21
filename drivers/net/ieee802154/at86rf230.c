@@ -9,21 +9,21 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  * Alexander Aring <aar@pengutronix.de>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hrtimer.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/at86rf230.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
-#include <linux/of_gpio.h>
-#include <linux/ieee802154.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/hrtimer.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/at86rf230.h>
+#include <linaos/regmap.h>
+#include <linaos/skbuff.h>
+#include <linaos/of_gpio.h>
+#include <linaos/ieee802154.h>
+#include <linaos/debugfs.h>
 
 #include <net/mac802154.h>
 #include <net/cfg802154.h>

@@ -3,8 +3,8 @@
 #define ASM_X86_CAMELLIA_H
 
 #include <crypto/b128ops.h>
-#include <linux/crypto.h>
-#include <linux/kernel.h>
+#include <linaos/crypto.h>
+#include <linaos/kernel.h>
 
 #define CAMELLIA_MIN_KEY_SIZE	16
 #define CAMELLIA_MAX_KEY_SIZE	32

@@ -5,8 +5,8 @@
  * Author:     Luis Carlos Cobo <luisca@cozybit.com>
  */
 
-#include <linux/slab.h>
-#include <linux/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/etherdevice.h>
 #include <asm/unaligned.h>
 #include "wme.h"
 #include "mesh.h"

@@ -6,8 +6,8 @@
 // Mateusz Krawczuk <m.krawczuk@partner.samsung.com>
 // Tomasz Figa <t.figa@samsung.com>
 
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

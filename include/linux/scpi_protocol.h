@@ -8,7 +8,7 @@
 #ifndef _LINUX_SCPI_PROTOCOL_H
 #define _LINUX_SCPI_PROTOCOL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct scpi_opp {
 	u32 freq;

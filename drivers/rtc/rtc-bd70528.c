@@ -4,15 +4,15 @@
 //
 // RTC driver for ROHM BD70528 PMIC
 
-#include <linux/bcd.h>
-#include <linux/mfd/rohm-bd70528.h>
-#include <linux/mfd/rohm-bd71815.h>
-#include <linux/mfd/rohm-bd71828.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/mfd/rohm-bd70528.h>
+#include <linaos/mfd/rohm-bd71815.h>
+#include <linaos/mfd/rohm-bd71828.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
 
 /*
  * On BD71828 and BD71815 the ALM0 MASK is 14 bytes after the ALM0

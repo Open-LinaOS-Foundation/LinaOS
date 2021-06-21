@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/net/ether1.c
+ *  linaos/drivers/acorn/net/ether1.c
  *
  *  Copyright (C) 1996-2000 Russell King
  *
@@ -28,22 +28,22 @@
  * 1.07	RMK	13/05/2000	Updated for 2.3.99-pre8
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

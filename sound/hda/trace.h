@@ -5,8 +5,8 @@
 #if !defined(__HDAC_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __HDAC_TRACE_H
 
-#include <linux/tracepoint.h>
-#include <linux/device.h>
+#include <linaos/tracepoint.h>
+#include <linaos/device.h>
 #include <sound/hdaudio.h>
 
 #ifndef HDAC_MSG_MAX

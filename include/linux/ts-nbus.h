@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2016 - Savoir-faire Linux
- * Author: Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinux.com>
+ * Copyright (c) 2016 - Savoir-faire LinaOS
+ * Author: Sebastien Bourdelin <sebastien.bourdelin@savoirfairelinaos.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any

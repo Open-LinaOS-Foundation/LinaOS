@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* AF_VSOCK sock_diag(7) interface for querying open sockets */
 
 #ifndef _UAPI__VM_SOCKETS_DIAG_H__
 #define _UAPI__VM_SOCKETS_DIAG_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Request */
 struct vsock_diag_req {

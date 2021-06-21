@@ -6,8 +6,8 @@
 #ifndef __LINUX_CLK_PROVIDER_H
 #define __LINUX_CLK_PROVIDER_H
 
-#include <linux/of.h>
-#include <linux/of_clk.h>
+#include <linaos/of.h>
+#include <linaos/of_clk.h>
 
 /*
  * flags used across common struct clk.  these flags should only affect the

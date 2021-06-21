@@ -5,7 +5,7 @@
 #ifndef __ASM_PERCPU_H
 #define __ASM_PERCPU_H
 
-#include <linux/preempt.h>
+#include <linaos/preempt.h>
 
 #include <asm/alternative.h>
 #include <asm/cmpxchg.h>

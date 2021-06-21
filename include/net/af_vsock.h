@@ -8,9 +8,9 @@
 #ifndef __AF_VSOCK_H__
 #define __AF_VSOCK_H__
 
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/vm_sockets.h>
+#include <linaos/kernel.h>
+#include <linaos/workqueue.h>
+#include <uapi/linaos/vm_sockets.h>
 
 #include "vsock_addr.h"
 

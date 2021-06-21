@@ -1,5 +1,5 @@
 ========================
-Linux Switchtec Support
+LinaOS Switchtec Support
 ========================
 
 Microsemi's "Switchtec" line of PCI switch devices is already
@@ -97,6 +97,6 @@ the following configuration settings:
 NT EP BAR 2 will be dynamically configured as a Direct Window, and
 the configuration file does not need to configure it explicitly.
 
-Please refer to Documentation/driver-api/ntb.rst in Linux source tree for an overall
-understanding of the Linux NTB stack. ntb_hw_switchtec works as an NTB
+Please refer to Documentation/driver-api/ntb.rst in LinaOS source tree for an overall
+understanding of the LinaOS NTB stack. ntb_hw_switchtec works as an NTB
 Hardware Driver in this stack.

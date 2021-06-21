@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/scsi/arm/arxescsi.c
+ * linaos/drivers/scsi/arm/arxescsi.c
  *
  * Copyright (C) 1997-2000 Russell King, Stefan Hanske
  *
@@ -19,17 +19,17 @@
  *  02-04-2000	RMK	0.1.1	Updated for new error handling code.
  *  22-10-2000  SH		Updated for new registering scheme.
  */
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/proc_fs.h>
-#include <linux/unistd.h>
-#include <linux/stat.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/ioport.h>
+#include <linaos/proc_fs.h>
+#include <linaos/unistd.h>
+#include <linaos/stat.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>

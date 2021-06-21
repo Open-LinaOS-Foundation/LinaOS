@@ -4,14 +4,14 @@
  *
  * Qualcomm MSM Camera Subsystem - VFE (Video Front End) Module
  *
- * Copyright (c) 2013-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2015, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2015-2018 Linaro Ltd.
  */
 #ifndef QC_MSM_CAMSS_VFE_H
 #define QC_MSM_CAMSS_VFE_H
 
-#include <linux/clk.h>
-#include <linux/spinlock_types.h>
+#include <linaos/clk.h>
+#include <linaos/spinlock_types.h>
 #include <media/media-entity.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-subdev.h>

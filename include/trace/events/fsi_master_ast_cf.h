@@ -5,7 +5,7 @@
 #if !defined(_TRACE_FSI_MASTER_ACF_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FSI_MASTER_ACF_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(fsi_master_acf_copro_command,
 	TP_PROTO(const struct fsi_master_acf *master, uint32_t op),

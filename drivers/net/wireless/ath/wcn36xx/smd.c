@@ -16,10 +16,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/bitops.h>
-#include <linux/rpmsg.h>
+#include <linaos/etherdevice.h>
+#include <linaos/firmware.h>
+#include <linaos/bitops.h>
+#include <linaos/rpmsg.h>
 #include "smd.h"
 
 struct wcn36xx_cfg_val {

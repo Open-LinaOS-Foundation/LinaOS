@@ -15,9 +15,9 @@
  * GNU Lesser General Public License for more details.
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <asm/bug.h>
 #include <media/dvb_math.h>
 

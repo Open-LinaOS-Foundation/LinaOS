@@ -7,15 +7,15 @@
  *
  */
 
-#include <linux/bcd.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/bitops.h>
+#include <linaos/log2.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/rtc.h>
 
 #define RV8803_I2C_TRY_COUNT		4
 

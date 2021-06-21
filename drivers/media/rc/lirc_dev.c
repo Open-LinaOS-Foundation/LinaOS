@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/idr.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/device.h>
+#include <linaos/file.h>
+#include <linaos/idr.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
 
 #include "rc-core-priv.h"
-#include <uapi/linux/lirc.h>
+#include <uapi/linaos/lirc.h>
 
 #define LIRCBUF_SIZE	1024
 

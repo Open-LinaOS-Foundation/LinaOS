@@ -2,7 +2,7 @@
 TEE subsystem
 =============
 
-This document describes the TEE subsystem in Linux.
+This document describes the TEE subsystem in LinaOS.
 
 A TEE (Trusted Execution Environment) is a trusted OS running in some
 secure environment, for example, TrustZone on ARM CPUs, or a separate
@@ -13,14 +13,14 @@ This subsystem deals with:
 
 - Registration of TEE drivers
 
-- Managing shared memory between Linux and the TEE
+- Managing shared memory between LinaOS and the TEE
 
 - Providing a generic API to the TEE
 
 The TEE interface
 =================
 
-include/uapi/linux/tee.h defines the generic interface to a TEE.
+include/uapi/linaos/tee.h defines the generic interface to a TEE.
 
 User space (the client) connects to the driver by opening /dev/tee[0-9]* or
 /dev/teepriv[0-9]*.
@@ -43,7 +43,7 @@ User space (the client) connects to the driver by opening /dev/tee[0-9]* or
 - TEE_IOC_CLOSE_SESSION closes a session to a Trusted Application.
 
 There are two classes of clients, normal clients and supplicants. The latter is
-a helper process for the TEE to access resources in Linux, for example file
+a helper process for the TEE to access resources in LinaOS, for example file
 system access. A normal client opens /dev/tee[0-9]* and a supplicant opens
 /dev/teepriv[0-9].
 
@@ -77,7 +77,7 @@ TEE bus device enumeration is specific to underlying TEE implementation, so it
 is left open for TEE drivers to provide corresponding implementation.
 
 Then TEE client driver can talk to a matched Trusted Application using APIs
-listed in include/linux/tee_drv.h.
+listed in include/linaos/tee_drv.h.
 
 TEE client driver example
 -------------------------
@@ -141,7 +141,7 @@ additional functions specific for OP-TEE. The most interesting functions are:
 - OPTEE_SMC_CALL_WITH_ARG drives the OP-TEE message protocol
 
 - OPTEE_SMC_GET_SHM_CONFIG lets the driver and OP-TEE agree on which memory
-  range to used for shared memory between Linux and OP-TEE.
+  range to used for shared memory between LinaOS and OP-TEE.
 
 The GlobalPlatform TEE Client API [5] is implemented on top of the generic
 TEE API.
@@ -276,6 +276,6 @@ References
 [5] http://www.globalplatform.org/specificationsdevice.asp look for
     "TEE Client API Specification v1.0" and click download.
 
-[6] include/linux/psp-tee.h
+[6] include/linaos/psp-tee.h
 
 [7] drivers/tee/amdtee/amdtee_if.h

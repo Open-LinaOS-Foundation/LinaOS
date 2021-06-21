@@ -6,9 +6,9 @@
  * Sylwester Nawrocki <s.nawrocki@samsung.com>
 */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/regmap.h>
 
 #include <media/drv-intf/exynos-fimc.h>
 #include "media-dev.h"

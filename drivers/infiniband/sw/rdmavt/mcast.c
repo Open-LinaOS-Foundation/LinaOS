@@ -45,9 +45,9 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/rculist.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/rculist.h>
 #include <rdma/rdma_vt.h>
 #include <rdma/rdmavt_qp.h>
 

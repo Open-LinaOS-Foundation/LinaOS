@@ -3,7 +3,7 @@
  * Copyright (C) 2016 NVIDIA Corporation
  */
 
-#include <linux/reset-controller.h>
+#include <linaos/reset-controller.h>
 
 #include <soc/tegra/bpmp.h>
 #include <soc/tegra/bpmp-abi.h>

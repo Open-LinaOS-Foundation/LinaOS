@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/media/platform/s5p-jpeg/jpeg-hw.h
+/* linaos/drivers/media/platform/s5p-jpeg/jpeg-hw.h
  *
  * Copyright (c) 2011 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com
@@ -7,8 +7,8 @@
  * Author: Andrzej Pietrasiewicz <andrzejtp2010@gmail.com>
  */
 
-#include <linux/io.h>
-#include <linux/videodev2.h>
+#include <linaos/io.h>
+#include <linaos/videodev2.h>
 
 #include "jpeg-core.h"
 #include "jpeg-regs.h"

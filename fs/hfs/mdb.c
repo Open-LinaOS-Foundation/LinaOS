@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/mdb.c
+ *  linaos/fs/hfs/mdb.c
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
@@ -8,10 +8,10 @@
  * This file contains functions for reading/writing the MDB.
  */
 
-#include <linux/cdrom.h>
-#include <linux/genhd.h>
-#include <linux/nls.h>
-#include <linux/slab.h>
+#include <linaos/cdrom.h>
+#include <linaos/genhd.h>
+#include <linaos/nls.h>
+#include <linaos/slab.h>
 
 #include "hfs_fs.h"
 #include "btree.h"

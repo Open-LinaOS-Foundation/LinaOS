@@ -2,8 +2,8 @@
 #ifndef _TOOLS_LINUX_ASM_X86_ATOMIC_H
 #define _TOOLS_LINUX_ASM_X86_ATOMIC_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 #include "rmwcc.h"
 
 #define LOCK_PREFIX "\n\tlock; "

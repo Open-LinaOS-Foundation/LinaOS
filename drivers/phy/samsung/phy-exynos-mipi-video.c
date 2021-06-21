@@ -6,18 +6,18 @@
  * Author: Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/spinlock.h>
-#include <linux/soc/samsung/exynos-regs-pmu.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regmap.h>
+#include <linaos/spinlock.h>
+#include <linaos/soc/samsung/exynos-regs-pmu.h>
+#include <linaos/mfd/syscon.h>
 
 enum exynos_mipi_phy_id {
 	EXYNOS_MIPI_PHY_ID_NONE = -1,

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_UVESAFB_H
 #define _UAPI_UVESAFB_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct v86_regs {
 	__u32 ebx;

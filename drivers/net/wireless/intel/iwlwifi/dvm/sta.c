@@ -7,11 +7,11 @@
  * as portions of the ieee80211 subsystem header files.
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <net/mac80211.h>
 #include "iwl-trans.h"
 #include "dev.h"

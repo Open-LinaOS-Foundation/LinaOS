@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2015-2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2018 The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __DPU_ENCODER_PHYS_H__
 #define __DPU_ENCODER_PHYS_H__
 
-#include <linux/jiffies.h>
+#include <linaos/jiffies.h>
 
 #include "dpu_kms.h"
 #include "dpu_hw_intf.h"

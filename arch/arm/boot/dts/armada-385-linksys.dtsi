@@ -55,13 +55,13 @@
 
 		wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
 		};
 
 		reset {
 			label = "Factory Reset Button";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -79,7 +79,7 @@
 		sata {
 			gpios = <&gpio1 22 GPIO_ACTIVE_LOW>;
 			default-state = "off";
-			linux,default-trigger = "disk-activity";
+			linaos,default-trigger = "disk-activity";
 		};
 	};
 };

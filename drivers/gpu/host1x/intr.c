@@ -5,10 +5,10 @@
  * Copyright (c) 2010-2013, NVIDIA Corporation.
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/irq.h>
 
 #include <trace/events/host1x.h>
 #include "channel.h"

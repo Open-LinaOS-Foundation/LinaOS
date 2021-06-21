@@ -17,10 +17,10 @@
  * been made separate from ucb1x00-core/ucb1x00-ts on Russell's request.
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/ucb1400.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/ucb1400.h>
 
 unsigned int ucb1400_adc_read(struct snd_ac97 *ac97, u16 adc_channel,
 		int adcsync)

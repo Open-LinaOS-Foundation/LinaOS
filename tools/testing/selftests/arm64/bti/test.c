@@ -7,9 +7,9 @@
 #include "system.h"
 
 #include <stddef.h>
-#include <linux/errno.h>
-#include <linux/auxvec.h>
-#include <linux/signal.h>
+#include <linaos/errno.h>
+#include <linaos/auxvec.h>
+#include <linaos/signal.h>
 #include <asm/sigcontext.h>
 #include <asm/ucontext.h>
 

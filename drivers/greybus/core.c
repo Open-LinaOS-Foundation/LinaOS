@@ -9,7 +9,7 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #define CREATE_TRACE_POINTS
-#include <linux/greybus.h>
+#include <linaos/greybus.h>
 #include "greybus_trace.h"
 
 #define GB_BUNDLE_AUTOSUSPEND_MS	3000
@@ -346,4 +346,4 @@ static void __exit gb_exit(void)
 }
 module_exit(gb_exit);
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@linuxfoundation.org>");
+MODULE_AUTHOR("Greg Kroah-Hartman <gregkh@linaosfoundation.org>");

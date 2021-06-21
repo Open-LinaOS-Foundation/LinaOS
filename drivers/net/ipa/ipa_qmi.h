@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2020 Linaro Ltd.
  */
 #ifndef _IPA_QMI_H_
 #define _IPA_QMI_H_
 
-#include <linux/types.h>
-#include <linux/soc/qcom/qmi.h>
+#include <linaos/types.h>
+#include <linaos/soc/qcom/qmi.h>
 
 struct ipa;
 

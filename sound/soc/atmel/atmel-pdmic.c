@@ -6,11 +6,11 @@
  * Author: Songjun Wu <songjun.wu@atmel.com>
  */
 
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include <sound/core.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>

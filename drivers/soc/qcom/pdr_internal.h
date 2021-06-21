@@ -2,7 +2,7 @@
 #ifndef __QCOM_PDR_HELPER_INTERNAL__
 #define __QCOM_PDR_HELPER_INTERNAL__
 
-#include <linux/soc/qcom/pdr.h>
+#include <linaos/soc/qcom/pdr.h>
 
 #define SERVREG_LOCATOR_SERVICE				0x40
 #define SERVREG_NOTIFIER_SERVICE			0x42

@@ -18,16 +18,16 @@
  *	0.1	20/06/2002
  *		- first public version
  */
-#include <uapi/linux/uinput.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/overflow.h>
-#include <linux/input/mt.h>
+#include <uapi/linaos/uinput.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/overflow.h>
+#include <linaos/input/mt.h>
 #include "../input-compat.h"
 
 #define UINPUT_NAME		"uinput"

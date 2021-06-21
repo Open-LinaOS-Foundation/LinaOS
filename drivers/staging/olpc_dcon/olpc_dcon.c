@@ -10,20 +10,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/backlight.h>
-#include <linux/device.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
-#include <linux/reboot.h>
-#include <linux/olpc-ec.h>
+#include <linaos/kernel.h>
+#include <linaos/fb.h>
+#include <linaos/console.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/backlight.h>
+#include <linaos/device.h>
+#include <linaos/uaccess.h>
+#include <linaos/ctype.h>
+#include <linaos/reboot.h>
+#include <linaos/olpc-ec.h>
 #include <asm/tsc.h>
 #include <asm/olpc.h>
 

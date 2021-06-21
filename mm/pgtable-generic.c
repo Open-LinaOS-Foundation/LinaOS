@@ -2,14 +2,14 @@
 /*
  *  mm/pgtable-generic.c
  *
- *  Generic pgtable methods declared in linux/pgtable.h
+ *  Generic pgtable methods declared in linaos/pgtable.h
  *
  *  Copyright (C) 2010  Linus Torvalds
  */
 
-#include <linux/pagemap.h>
-#include <linux/hugetlb.h>
-#include <linux/pgtable.h>
+#include <linaos/pagemap.h>
+#include <linaos/hugetlb.h>
+#include <linaos/pgtable.h>
 #include <asm/tlb.h>
 
 /*

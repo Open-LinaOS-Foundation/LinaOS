@@ -5,18 +5,18 @@
  * (C) SGI 2006, Christoph Lameter
  * 	Cleaned up and restructured to ease the addition of alternative
  * 	implementations of SLAB allocators.
- * (C) Linux Foundation 2008-2013
+ * (C) LinaOS Foundation 2008-2013
  *      Unified interface for all slab allocators
  */
 
 #ifndef _LINUX_SLAB_H
 #define	_LINUX_SLAB_H
 
-#include <linux/gfp.h>
-#include <linux/overflow.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
-#include <linux/percpu-refcount.h>
+#include <linaos/gfp.h>
+#include <linaos/overflow.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
+#include <linaos/percpu-refcount.h>
 
 
 /*
@@ -133,7 +133,7 @@
 #define ZERO_OR_NULL_PTR(x) ((unsigned long)(x) <= \
 				(unsigned long)ZERO_SIZE_PTR)
 
-#include <linux/kasan.h>
+#include <linaos/kasan.h>
 
 struct mem_cgroup;
 /*
@@ -498,7 +498,7 @@ static __always_inline void *kmalloc_large(size_t size, gfp_t flags)
  * to be at least to the size.
  *
  * The @flags argument may be one of the GFP flags defined at
- * include/linux/gfp.h and described at
+ * include/linaos/gfp.h and described at
  * :ref:`Documentation/core-api/mm-api.rst <mm-api-gfp-flags>`
  *
  * The recommended usage of the @flags is described at

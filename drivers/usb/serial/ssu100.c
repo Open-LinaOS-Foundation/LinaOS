@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/serial.h>
+#include <linaos/usb.h>
+#include <linaos/usb/serial.h>
+#include <linaos/serial_reg.h>
+#include <linaos/uaccess.h>
 
 #define QT_OPEN_CLOSE_CHANNEL       0xca
 #define QT_SET_GET_DEVICE           0xc2

@@ -10,18 +10,18 @@
  *  Copyright (c) 2013 Anssi Hannula <anssi.hannula@iki.fi>
  *
  *  Authors:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@linaos.intel.com>
  *
  *  Maintained by:
- *			Wu Fengguang <wfg@linux.intel.com>
+ *			Wu Fengguang <wfg@linaos.intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/asoundef.h>

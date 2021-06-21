@@ -6,11 +6,11 @@
  *
  * (C) Copyright 1995 1996 Linus Torvalds
  */
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
 #include <asm/cacheflush.h>
 
 #include "pgalloc-track.h"

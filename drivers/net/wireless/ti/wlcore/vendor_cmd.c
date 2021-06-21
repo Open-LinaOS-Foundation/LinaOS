@@ -5,7 +5,7 @@
  * Copyright (C) 2014 Texas Instruments. All rights reserved.
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include <net/mac80211.h>
 #include <net/netlink.h>

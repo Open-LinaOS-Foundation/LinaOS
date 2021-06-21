@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 //#define DEBUG
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/hdreg.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/interrupt.h>
-#include <linux/virtio.h>
-#include <linux/virtio_blk.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
-#include <linux/idr.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-virtio.h>
-#include <linux/numa.h>
-#include <uapi/linux/virtio_ring.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/hdreg.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/interrupt.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_blk.h>
+#include <linaos/scatterlist.h>
+#include <linaos/string_helpers.h>
+#include <linaos/idr.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blk-mq-virtio.h>
+#include <linaos/numa.h>
+#include <uapi/linaos/virtio_ring.h>
 
 #define PART_BITS 4
 #define VQ_NAME_LEN 16

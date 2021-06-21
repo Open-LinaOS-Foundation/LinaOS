@@ -22,23 +22,23 @@
  * parts of the system are required to obtain handles to the ADC to do work
  * for them and the IIO driver provides arbitration among these consumers.
  */
-#include <linux/init.h>
-#include <linux/bits.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
-#include <linux/regulator/consumer.h>
-#include <linux/random.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
+#include <linaos/init.h>
+#include <linaos/bits.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/platform_device.h>
+#include <linaos/completion.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/random.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/mfd/abx500/ab8500.h>
 
 /* GPADC register offsets and bit definitions */
 

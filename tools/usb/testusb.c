@@ -14,7 +14,7 @@
  * transfer sizes (including short transfers).
  *
  * For more information on how this can be used and on USB testing
- * refer to <URL:http://www.linux-usb.org/usbtest/>.
+ * refer to <URL:http://www.linaos-usb.org/usbtest/>.
  */
 
 #include <stdio.h>
@@ -31,7 +31,7 @@
 #include <fcntl.h>
 
 #include <sys/ioctl.h>
-#include <linux/usbdevice_fs.h>
+#include <linaos/usbdevice_fs.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -54,7 +54,7 @@ struct usbtest_param {
 
 /*-------------------------------------------------------------------------*/
 
-/* #include <linux/usb_ch9.h> */
+/* #include <linaos/usb_ch9.h> */
 
 #define USB_DT_DEVICE			0x01
 #define USB_DT_INTERFACE		0x04
@@ -192,7 +192,7 @@ static int testdev_ifnum(FILE *fd)
 
 	/*----------------------------------------------------*/
 
-	/* "gadget zero", Linux-USB test software */
+	/* "gadget zero", LinaOS-USB test software */
 	if (dev.idVendor == 0x0525 && dev.idProduct == 0xa4a0)
 		return 0;
 

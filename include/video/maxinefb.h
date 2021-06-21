@@ -1,5 +1,5 @@
 /*
- *      linux/drivers/video/maxinefb.h
+ *      linaos/drivers/video/maxinefb.h
  *
  *      DECstation 5000/xx onboard framebuffer support, Copyright (C) 1999 by
  *      Michael Engel <engel@unix-ag.org> and Karsten Merker <merker@guug.de>

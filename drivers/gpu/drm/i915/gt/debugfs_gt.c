@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "debugfs_engines.h"
 #include "debugfs_gt.h"

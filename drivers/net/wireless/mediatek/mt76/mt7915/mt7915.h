@@ -4,8 +4,8 @@
 #ifndef __MT7915_H
 #define __MT7915_H
 
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
+#include <linaos/interrupt.h>
+#include <linaos/ktime.h>
 #include "../mt76.h"
 #include "regs.h"
 

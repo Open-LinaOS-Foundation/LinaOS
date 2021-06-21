@@ -8,16 +8,16 @@
  * Support for all devices (greater than 16) added by David Gathright.
  */
 
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/syscore_ops.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-map-ops.h> /* for dma_default_coherent */
+#include <linaos/clk.h>
+#include <linaos/export.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/vmalloc.h>
+#include <linaos/dma-map-ops.h> /* for dma_default_coherent */
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/tlbmisc.h>

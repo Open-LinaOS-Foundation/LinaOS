@@ -6,17 +6,17 @@
  * Author: Chanwoo Choi <cw00.choi@samsung.com>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/extcon-provider.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/extcon-provider.h>
 
 #include "extcon-rt8973a.h"
 

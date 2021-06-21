@@ -7,14 +7,14 @@
  *  NOTE: Do not use these any longer.
  *
  *  Use the generic dmaengine functions as defined in
- *  include/linux/dmaengine.h.
+ *  include/linaos/dmaengine.h.
  *
  *  Copyright (C) 2003 Nokia Corporation
  *  Author: Juha Yrjölä <juha.yrjola@nokia.com>
  *
  */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #define INT_DMA_LCD			(NR_IRQS_LEGACY + 25)
 

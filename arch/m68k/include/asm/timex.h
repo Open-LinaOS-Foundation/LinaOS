@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/asm-m68k/timex.h
+ * linaos/include/asm-m68k/timex.h
  *
  * m68k architecture timex specifications
  */

@@ -2,7 +2,7 @@
 #ifndef _LINUX_AHCI_REMAP_H
 #define _LINUX_AHCI_REMAP_H
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #define AHCI_VSCAP		0xa4
 #define AHCI_REMAP_CAP		0x800

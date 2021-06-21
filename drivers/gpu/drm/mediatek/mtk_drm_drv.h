@@ -6,7 +6,7 @@
 #ifndef MTK_DRM_DRV_H
 #define MTK_DRM_DRV_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 #include "mtk_drm_ddp_comp.h"
 
 #define MAX_CRTC	3

@@ -2,8 +2,8 @@
 #ifndef GENL_MAGIC_FUNC_H
 #define GENL_MAGIC_FUNC_H
 
-#include <linux/build_bug.h>
-#include <linux/genl_magic_struct.h>
+#include <linaos/build_bug.h>
+#include <linaos/genl_magic_struct.h>
 
 /*
  * Magic: declare tla policy						{{{1
@@ -222,7 +222,7 @@ const char *CONCAT_(GENL_MAGIC_FAMILY, _genl_cmd_to_str)(__u8 cmd)
 }
 
 #ifdef __KERNEL__
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 /*
  * Magic: define genl_ops						{{{1
  *									{{{2

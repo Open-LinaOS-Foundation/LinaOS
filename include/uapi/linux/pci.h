@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *	pci.h
  *
@@ -18,7 +18,7 @@
 #ifndef _UAPILINUX_PCI_H
 #define _UAPILINUX_PCI_H
 
-#include <linux/pci_regs.h>	/* The pci register defines */
+#include <linaos/pci_regs.h>	/* The pci register defines */
 
 /*
  * The PCI interface treats multi-function devices as independent

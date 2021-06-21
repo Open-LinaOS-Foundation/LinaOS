@@ -1,4 +1,4 @@
-The Linux kernel user's and administrator's guide
+The LinaOS kernel user's and administrator's guide
 =================================================
 
 The following is a collection of user-oriented documents that have been

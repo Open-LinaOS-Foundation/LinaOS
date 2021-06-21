@@ -23,12 +23,12 @@
  * Copyright (c) 2017 Josef Filzmaier <j.filzmaier@gmx.at>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/usb.h>
-#include <linux/skbuff.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
+#include <linaos/usb.h>
+#include <linaos/skbuff.h>
 
 #include <net/cfg802154.h>
 #include <net/mac802154.h>

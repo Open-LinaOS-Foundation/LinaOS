@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7722/setup.c
+ * linaos/arch/sh/boards/se/7722/setup.c
  *
  * Copyright (C) 2007 Nobuhiro Iwamatsu
  * Copyright (C) 2012 Paul Mundt
  *
  * Hitachi UL SolutionEngine 7722 Support.
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/input.h>
-#include <linux/input/sh_keysc.h>
-#include <linux/irqdomain.h>
-#include <linux/smc91x.h>
-#include <linux/sh_intc.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
+#include <linaos/input.h>
+#include <linaos/input/sh_keysc.h>
+#include <linaos/irqdomain.h>
+#include <linaos/smc91x.h>
+#include <linaos/sh_intc.h>
 #include <mach-se/mach/se7722.h>
 #include <mach-se/mach/mrshpc.h>
 #include <asm/machvec.h>

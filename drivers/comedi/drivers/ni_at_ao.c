@@ -3,7 +3,7 @@
  * ni_at_ao.c
  * Driver for NI AT-AO-6/10 boards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000,2002 David A. Schleef <ds@schleef.org>
  */
 
@@ -24,7 +24,7 @@
  *         1 for 0V to 10V unipolar
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedidev.h"
 

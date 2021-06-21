@@ -3,13 +3,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (c) 1994-1997, 99, 2000, 06, 07 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (c) 1994-1997, 99, 2000, 06, 07 Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (c) 1999, 2000  Silicon Graphics, Inc.
  */
-#include <linux/bitops.h>
-#include <linux/bits.h>
-#include <linux/irqflags.h>
-#include <linux/export.h>
+#include <linaos/bitops.h>
+#include <linaos/bits.h>
+#include <linaos/irqflags.h>
+#include <linaos/export.h>
 
 
 /**

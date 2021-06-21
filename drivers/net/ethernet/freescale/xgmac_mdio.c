@@ -11,15 +11,15 @@
  * kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/mdio.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/of_mdio.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/phy.h>
+#include <linaos/mdio.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_mdio.h>
 
 /* Number of microseconds to wait for a register to respond */
 #define TIMEOUT	1000

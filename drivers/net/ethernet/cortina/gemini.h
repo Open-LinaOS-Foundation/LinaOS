@@ -3,13 +3,13 @@
  *
  * Copyright (C) 2006 Storlink, Corp.
  * Copyright (C) 2008-2009 Paulius Zaleckas <paulius.zaleckas@teltonika.lt>
- * Copyright (C) 2010 Michał Mirosław <mirq-linux@rere.qmqm.pl>
+ * Copyright (C) 2010 Michał Mirosław <mirq-linaos@rere.qmqm.pl>
  * Copytight (C) 2017 Linus Walleij <linus.walleij@linaro.org>
  */
 #ifndef _GEMINI_ETHERNET_H
 #define _GEMINI_ETHERNET_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* Base Registers */
 #define TOE_NONTOE_QUE_HDR_BASE		0x2000

@@ -5,13 +5,13 @@
  * Copyright (C) 2014 Glider bvba
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/reboot.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/reboot.h>
 
 /* SYSC Register Bank 2 */
 #define RESCNT2		0x20		/* Reset Control Register 2 */

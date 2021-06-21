@@ -7,20 +7,20 @@
  * Copyright (c) 2006-2007 Freescale Semiconductor, Inc.
  */
 
-#include <linux/pm.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/suspend.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/export.h>
+#include <linaos/pm.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/wait.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/suspend.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/export.h>
 
 #include <asm/reg.h>
 #include <asm/io.h>

@@ -5,10 +5,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/swap.h>
+#include <linaos/mount.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/swap.h>
 #include "internal.h"
 
 /*

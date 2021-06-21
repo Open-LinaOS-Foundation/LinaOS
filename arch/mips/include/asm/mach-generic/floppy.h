@@ -8,12 +8,12 @@
 #ifndef __ASM_MACH_GENERIC_FLOPPY_H
 #define __ASM_MACH_GENERIC_FLOPPY_H
 
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
-#include <linux/mm.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/linkage.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
 
 #include <asm/bootinfo.h>
 #include <asm/cachectl.h>

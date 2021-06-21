@@ -8,22 +8,22 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/lsm_hooks.h>
-#include <linux/moduleparam.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/ptrace.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/audit.h>
-#include <linux/user_namespace.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/zlib.h>
+#include <linaos/lsm_hooks.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/ptrace.h>
+#include <linaos/ctype.h>
+#include <linaos/sysctl.h>
+#include <linaos/audit.h>
+#include <linaos/user_namespace.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/zlib.h>
 #include <net/sock.h>
-#include <uapi/linux/mount.h>
+#include <uapi/linaos/mount.h>
 
 #include "include/apparmor.h"
 #include "include/apparmorfs.h"
@@ -698,7 +698,7 @@ fail:
  * apparmor_bprm_committing_creds - do task cleanup on committing new creds
  * @bprm: binprm for the exec  (NOT NULL)
  */
-static void apparmor_bprm_committing_creds(struct linux_binprm *bprm)
+static void apparmor_bprm_committing_creds(struct linaos_binprm *bprm)
 {
 	struct aa_label *label = aa_current_raw_label();
 	struct aa_label *new_label = cred_label(bprm->cred);
@@ -720,7 +720,7 @@ static void apparmor_bprm_committing_creds(struct linux_binprm *bprm)
  * apparmor_bprm_committed_cred - do cleanup after new creds committed
  * @bprm: binprm for the exec  (NOT NULL)
  */
-static void apparmor_bprm_committed_creds(struct linux_binprm *bprm)
+static void apparmor_bprm_committed_creds(struct linaos_binprm *bprm)
 {
 	/* clear out temporary/transitional state from the context */
 	aa_clear_task_ctx_trans(task_ctx(current));

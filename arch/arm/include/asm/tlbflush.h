@@ -8,7 +8,7 @@
 #define _ASMARM_TLBFLUSH_H
 
 #ifndef __ASSEMBLY__
-# include <linux/mm_types.h>
+# include <linaos/mm_types.h>
 #endif
 
 #ifdef CONFIG_MMU
@@ -202,7 +202,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 struct cpu_tlb_fns {
 	void (*flush_user_range)(unsigned long, unsigned long, struct vm_area_struct *);

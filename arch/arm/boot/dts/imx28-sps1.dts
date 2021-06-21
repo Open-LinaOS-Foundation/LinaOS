@@ -144,14 +144,14 @@
 		led@1 {
 			label = "sps1-1:yellow:user";
 			gpios = <&gpio0 6 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			reg = <0>;
 		};
 
 		led@2 {
 			label = "sps1-2:red:user";
 			gpios = <&gpio0 3 0>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			reg = <1>;
 		};
 

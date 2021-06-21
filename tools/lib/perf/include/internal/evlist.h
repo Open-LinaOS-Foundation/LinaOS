@@ -2,7 +2,7 @@
 #ifndef __LIBPERF_INTERNAL_EVLIST_H
 #define __LIBPERF_INTERNAL_EVLIST_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <api/fd/array.h>
 #include <internal/evsel.h>
 

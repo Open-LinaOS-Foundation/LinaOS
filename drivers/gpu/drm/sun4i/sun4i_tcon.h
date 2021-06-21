@@ -12,9 +12,9 @@
 
 #include <drm/drm_crtc.h>
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/reset.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/reset.h>
 
 #define SUN4I_TCON_GCTL_REG			0x0
 #define SUN4I_TCON_GCTL_TCON_ENABLE			BIT(31)

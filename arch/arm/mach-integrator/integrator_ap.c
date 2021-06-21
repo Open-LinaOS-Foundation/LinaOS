@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/arch/arm/mach-integrator/integrator_ap.c
+ *  linaos/arch/arm/mach-integrator/integrator_ap.c
  *
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/syscore_ops.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/termios.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/amba/bus.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/termios.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

@@ -7,14 +7,14 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
 
-#include <linux/iio/common/st_sensors.h>
-#include <linux/iio/common/st_sensors_i2c.h>
+#include <linaos/iio/common/st_sensors.h>
+#include <linaos/iio/common/st_sensors_i2c.h>
 #include "st_magn.h"
 
 static const struct of_device_id st_magn_of_match[] = {

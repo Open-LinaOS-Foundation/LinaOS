@@ -30,13 +30,13 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
-#include <linux/syscore_ops.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/export.h>
+#include <linaos/syscore_ops.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1xxx_dbdma.h>
 

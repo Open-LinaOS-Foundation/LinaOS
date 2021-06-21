@@ -12,20 +12,20 @@
  * (the DT binding refers to this as "GPIO assisted NAND flash")
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/io.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/nand-gpio.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/delay.h>
 
 struct gpiomtd {
 	struct nand_controller	base;
@@ -60,7 +60,7 @@ static void gpio_nand_dosync(struct gpiomtd *gpiomtd)
 
 	if (gpiomtd->io_sync) {
 		/*
-		 * Linux memory barriers don't cater for what's required here.
+		 * LinaOS memory barriers don't cater for what's required here.
 		 * What's required is what's here - a read from a separate
 		 * region with a dependency on that read.
 		 */

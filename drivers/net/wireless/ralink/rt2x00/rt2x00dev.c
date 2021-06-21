@@ -11,12 +11,12 @@
 	Abstract: rt2x00 generic device routines.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
 
 #include "rt2x00.h"
 #include "rt2x00lib.h"

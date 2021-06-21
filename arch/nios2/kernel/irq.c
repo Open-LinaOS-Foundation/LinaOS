@@ -9,9 +9,9 @@
  * Copyright (C) 2007 Greg Ungerer <gerg@snapgear.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
 
 static u32 ienable;
 

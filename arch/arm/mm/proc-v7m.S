@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/proc-v7m.S
+ *  linaos/arch/arm/mm/proc-v7m.S
  *
  *  Copyright (C) 2008 ARM Ltd.
  *  Copyright (C) 2001 Deep Blue Solutions Ltd.
  *
  *  This is the "shell" of the ARMv7-M processor support.
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/memory.h>
 #include <asm/v7m.h>

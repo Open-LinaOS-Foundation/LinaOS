@@ -21,16 +21,16 @@
 #define KMSG_COMPONENT "diag288_wdt"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
-#include <linux/suspend.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/slab.h>
+#include <linaos/watchdog.h>
+#include <linaos/suspend.h>
 #include <asm/ebcdic.h>
 #include <asm/diag.h>
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #define MAX_CMDLEN 240
 #define DEFAULT_CMD "SYSTEM RESTART"
@@ -235,7 +235,7 @@ static struct watchdog_device wdt_dev = {
 static int wdt_suspend(void)
 {
 	if (test_and_set_bit(DIAG_WDOG_BUSY, &wdt_status)) {
-		pr_err("Linux cannot be suspended while the watchdog is in use\n");
+		pr_err("LinaOS cannot be suspended while the watchdog is in use\n");
 		return notifier_from_errno(-EBUSY);
 	}
 	return NOTIFY_DONE;

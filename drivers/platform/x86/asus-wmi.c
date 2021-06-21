@@ -7,35 +7,35 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinaos.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/rfkill.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/power_supply.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/platform_data/x86/asus-wmi.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/units.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/leds.h>
+#include <linaos/rfkill.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/power_supply.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/platform_data/x86/asus-wmi.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/dmi.h>
+#include <linaos/units.h>
 
 #include <acpi/battery.h>
 #include <acpi/video.h>

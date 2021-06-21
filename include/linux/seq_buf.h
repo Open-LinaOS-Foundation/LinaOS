@@ -2,7 +2,7 @@
 #ifndef _LINUX_SEQ_BUF_H
 #define _LINUX_SEQ_BUF_H
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 /*
  * Trace sequences are used to allow a function to call several other functions

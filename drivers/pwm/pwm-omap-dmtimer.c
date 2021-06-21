@@ -9,7 +9,7 @@
  * Also based on pwm-samsung.c
  *
  * Description:
- *   This file is the core OMAP support for the generic, Linux
+ *   This file is the core OMAP support for the generic, LinaOS
  *   PWM driver / controller, using the OMAP's dual-mode timers
  *   with a timer counter that goes up. When it overflows it gets
  *   reloaded with the load value and the pwm output goes up.
@@ -33,20 +33,20 @@
  *	- A fresh cycle is started.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 #include <clocksource/timer-ti-dm.h>
-#include <linux/platform_data/dmtimer-omap.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <linaos/platform_data/dmtimer-omap.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
 
 #define DM_TIMER_LOAD_MIN 0xfffffffe
 #define DM_TIMER_MAX      0xffffffff

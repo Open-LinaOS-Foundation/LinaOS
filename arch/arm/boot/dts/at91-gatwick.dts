@@ -22,7 +22,7 @@
 
 		reset-button {
 			label = "Reset Button";
-			linux,code = <KEY_SETUP>;
+			linaos,code = <KEY_SETUP>;
 			gpios = <&pioE 31 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};

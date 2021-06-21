@@ -47,7 +47,7 @@
  * for future transactions
  */
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 #include <rdma/ib_verbs.h>
 #include <rdma/rdmavt_qp.h>
 

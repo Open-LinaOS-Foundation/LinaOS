@@ -3,7 +3,7 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 #include "ixgb.h"
 
 char ixgb_driver_name[] = "ixgb";
@@ -97,7 +97,7 @@ static struct pci_driver ixgb_driver = {
 	.err_handler = &ixgb_err_handler
 };
 
-MODULE_AUTHOR("Intel Corporation, <linux.nics@intel.com>");
+MODULE_AUTHOR("Intel Corporation, <linaos.nics@intel.com>");
 MODULE_DESCRIPTION("Intel(R) PRO/10GbE Network Driver");
 MODULE_LICENSE("GPL v2");
 

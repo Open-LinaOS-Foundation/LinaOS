@@ -6,11 +6,11 @@
  *
  * Copyright (C) 2013-2014 Jens Axboe
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
-#include <linux/blk-mq.h>
-#include <linux/delay.h>
+#include <linaos/blk-mq.h>
+#include <linaos/delay.h>
 #include "blk.h"
 #include "blk-mq.h"
 #include "blk-mq-tag.h"

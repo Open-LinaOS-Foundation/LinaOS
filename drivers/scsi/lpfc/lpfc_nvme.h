@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex LinaOS Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2020 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.  *
@@ -21,9 +21,9 @@
  * included with this package.                                     *
  ********************************************************************/
 
-#include <linux/nvme.h>
-#include <linux/nvme-fc-driver.h>
-#include <linux/nvme-fc.h>
+#include <linaos/nvme.h>
+#include <linaos/nvme-fc-driver.h>
+#include <linaos/nvme-fc.h>
 
 #define LPFC_NVME_DEFAULT_SEGS		(64 + 1)	/* 256K IOs */
 

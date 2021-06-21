@@ -37,7 +37,7 @@ Generally, there are two purposes.
 (A) is required by highly virtualized environments and (B) is required by
 hardware which supports memory power management.
 
-Linux memory hotplug is designed for both purpose.
+LinaOS memory hotplug is designed for both purpose.
 
 Phases of memory hotplug
 ------------------------
@@ -209,7 +209,7 @@ On x86_64/ia64 platform, memory hotplug by ACPI is supported.
 
 In general, the firmware (ACPI) which supports memory hotplug defines
 memory class object of _HID "PNP0C80". When a notify is asserted to PNP0C80,
-Linux's ACPI handler does hot-add memory to the system and calls a hotplug udev
+LinaOS's ACPI handler does hot-add memory to the system and calls a hotplug udev
 script. This will be done automatically.
 
 But scripts for memory hotplug are not contained in generic udev package(now).
@@ -330,9 +330,9 @@ In general, memory offline can use 2 techniques.
 (1) reclaim and free all memory in the memory block.
 (2) migrate all pages in the memory block.
 
-In the current implementation, Linux's memory offline uses method (2), freeing
+In the current implementation, LinaOS's memory offline uses method (2), freeing
 all  pages in the memory block by page migration. But not all pages are
-migratable. Under current Linux, migratable pages are anonymous pages and
+migratable. Under current LinaOS, migratable pages are anonymous pages and
 page caches. For offlining a memory block by migration, the kernel has to
 guarantee that the memory block contains only migratable pages.
 

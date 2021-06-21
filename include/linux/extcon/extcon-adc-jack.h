@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/extcon/extcon-adc-jack.h
+ * include/linaos/extcon/extcon-adc-jack.h
  *
  * Analog Jack extcon driver with ADC-based detection capability.
  *
@@ -11,8 +11,8 @@
 #ifndef _EXTCON_ADC_JACK_H_
 #define _EXTCON_ADC_JACK_H_ __FILE__
 
-#include <linux/module.h>
-#include <linux/extcon.h>
+#include <linaos/module.h>
+#include <linaos/extcon.h>
 
 /**
  * struct adc_jack_cond - condition to use an extcon state

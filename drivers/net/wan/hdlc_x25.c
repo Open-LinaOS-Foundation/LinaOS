@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for LinaOS
  * X.25 support
  *
  * Copyright (C) 1999 - 2006 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/lapb.h>
-#include <linux/module.h>
-#include <linux/pkt_sched.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/gfp.h>
+#include <linaos/hdlc.h>
+#include <linaos/if_arp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/lapb.h>
+#include <linaos/module.h>
+#include <linaos/pkt_sched.h>
+#include <linaos/poll.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/skbuff.h>
 #include <net/x25device.h>
 
 struct x25_state {

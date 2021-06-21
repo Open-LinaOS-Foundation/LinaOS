@@ -13,7 +13,7 @@ Portions Copyright (c) 2004-2006 Silicon Graphics, Inc.
 
 Modified by Paul Jackson <pj@sgi.com>
 
-Modified by Christoph Lameter <cl@linux.com>
+Modified by Christoph Lameter <cl@linaos.com>
 
 .. CONTENTS:
 
@@ -84,7 +84,7 @@ tasks in each cgroup.
 ----------------------------
 
 There are multiple efforts to provide process aggregations in the
-Linux kernel, mainly for resource-tracking purposes. Such efforts
+LinaOS kernel, mainly for resource-tracking purposes. Such efforts
 include cpusets, CKRM/ResGroups, UserBeanCounters, and virtual server
 namespaces. These all require the basic notion of a
 grouping/partitioning of processes, with newly forked processes ending
@@ -279,7 +279,7 @@ Thus the set of tasks in a cgroup can be listed by iterating over
 each css_set that references the cgroup, and sub-iterating over
 each css_set's task set.
 
-The use of a Linux virtual file system (vfs) to represent the
+The use of a LinaOS virtual file system (vfs) to represent the
 cgroup hierarchy provides for a familiar permission and name space
 for cgroups, with a minimum of additional kernel code.
 
@@ -538,7 +538,7 @@ Accessing a task's cgroup pointer may be done in the following ways:
 
 Each subsystem should:
 
-- add an entry in linux/cgroup_subsys.h
+- add an entry in linaos/cgroup_subsys.h
 - define a cgroup_subsys object called <name>_cgrp_subsys
 
 Each subsystem may export the following methods. The only mandatory
@@ -676,7 +676,7 @@ using kernel memory and it's advised to keep the usage at minimum.  This
 is the reason why user defined extended attributes are not supported, since
 any user can do it and there's no limit in the value size.
 
-The current known users for this feature are SELinux to limit cgroup usage
+The current known users for this feature are SELinaOS to limit cgroup usage
 in containers and systemd for assorted meta data like main PID in a cgroup
 (systemd creates a cgroup per service).
 

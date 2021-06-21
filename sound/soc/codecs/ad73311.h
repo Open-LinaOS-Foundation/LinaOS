@@ -10,7 +10,7 @@
  * Modified:
  *               Copyright 2006 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.uclinaos.org/
  */
 
 #ifndef __AD73311_H__

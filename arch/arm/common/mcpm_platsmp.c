@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-vexpress/mcpm_platsmp.c
+ * linaos/arch/arm/mach-vexpress/mcpm_platsmp.c
  *
  * Created by:  Nicolas Pitre, November 2012
  * Copyright:   (C) 2012-2013  Linaro Limited
@@ -8,9 +8,9 @@
  * Code to handle secondary CPU bringup and hotplug for the cluster power API.
  */
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
 
 #include <asm/mcpm.h>
 #include <asm/smp.h>

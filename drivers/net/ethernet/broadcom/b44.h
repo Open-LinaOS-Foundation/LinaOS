@@ -2,7 +2,7 @@
 #ifndef _B44_H
 #define _B44_H
 
-#include <linux/brcmphy.h>
+#include <linaos/brcmphy.h>
 
 /* Register layout. (These correspond to struct _bcmenettregs in bcm4400.) */
 #define	B44_DEVCTRL	0x0000UL /* Device Control */

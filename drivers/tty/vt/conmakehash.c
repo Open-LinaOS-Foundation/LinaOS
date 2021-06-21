@@ -250,7 +250,7 @@ int main(int argc, char *argv[])
  *\n\
  */\n\
 \n\
-#include <linux/types.h>\n\
+#include <linaos/types.h>\n\
 \n\
 u8 dfont_unicount[%d] = \n\
 {\n\t", argv[1], fontlen);

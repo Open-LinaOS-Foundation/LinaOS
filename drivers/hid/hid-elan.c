@@ -7,11 +7,11 @@
  * Copyright (c) 2016 Alexandrov Stanislav <neko@nya.ai>
  */
 
-#include <linux/hid.h>
-#include <linux/input/mt.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <linaos/hid.h>
+#include <linaos/input/mt.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
 
 #include "hid-ids.h"
 

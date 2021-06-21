@@ -6,31 +6,31 @@
  * Copyright (C) 2001 PPC64 Team, IBM Corp
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/seq_file.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/utsname.h>
-#include <linux/tty.h>
-#include <linux/root_dev.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/unistd.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/memblock.h>
-#include <linux/pci.h>
-#include <linux/lockdep.h>
-#include <linux/memory.h>
-#include <linux/nmi.h>
-#include <linux/pgtable.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/reboot.h>
+#include <linaos/delay.h>
+#include <linaos/initrd.h>
+#include <linaos/seq_file.h>
+#include <linaos/ioport.h>
+#include <linaos/console.h>
+#include <linaos/utsname.h>
+#include <linaos/tty.h>
+#include <linaos/root_dev.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu.h>
+#include <linaos/unistd.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
+#include <linaos/memblock.h>
+#include <linaos/pci.h>
+#include <linaos/lockdep.h>
+#include <linaos/memory.h>
+#include <linaos/nmi.h>
+#include <linaos/pgtable.h>
 
 #include <asm/debugfs.h>
 #include <asm/io.h>
@@ -253,7 +253,7 @@ static void cpu_ready_for_interrupts(void)
 
 	/*
 	 * Set HFSCR:TM based on CPU features:
-	 * In the special case of TM no suspend (P9N DD2.1), Linux is
+	 * In the special case of TM no suspend (P9N DD2.1), LinaOS is
 	 * told TM is off via the dt-ftrs but told to (partially) use
 	 * it via OPAL_REINIT_CPUS_TM_SUSPEND_DISABLED. So HFSCR[TM]
 	 * will be off from dt-ftrs but we need to turn it on for the
@@ -458,7 +458,7 @@ static bool use_spinloop(void)
 	 * When book3e boots from kexec, the ePAPR spin table does
 	 * not get used.
 	 */
-	return of_property_read_bool(of_chosen, "linux,booted-from-kexec");
+	return of_property_read_bool(of_chosen, "linaos,booted-from-kexec");
 }
 
 void smp_release_cpus(void)

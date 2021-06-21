@@ -6,17 +6,17 @@
  *
  * Based on the driver from Huang Shijie and Christoph G. Baumann
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/stmp_device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/stmp_device.h>
 
 /* OCOTP registers and bits */
 

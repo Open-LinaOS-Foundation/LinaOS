@@ -7,7 +7,7 @@
 #define _RTW_RF_C_
 
 #include <drv_types.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 
 struct ch_freq {

@@ -5,11 +5,11 @@
  * Copyright (C) 2018-2019 SiFive, Inc.
  *
  */
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/device.h>
+#include <linaos/debugfs.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/device.h>
 #include <asm/cacheinfo.h>
 #include <soc/sifive/sifive_l2_cache.h>
 

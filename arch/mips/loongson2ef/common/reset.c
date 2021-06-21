@@ -6,8 +6,8 @@
  * Copyright (C) 2009 Lemote, Inc.
  * Author: Zhangjin Wu, wuzhangjin@gmail.com
  */
-#include <linux/init.h>
-#include <linux/pm.h>
+#include <linaos/init.h>
+#include <linaos/pm.h>
 
 #include <asm/idle.h>
 #include <asm/reboot.h>

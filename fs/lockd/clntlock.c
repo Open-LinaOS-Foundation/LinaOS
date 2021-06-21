@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/lockd/clntlock.c
+ * linaos/fs/lockd/clntlock.c
  *
  * Lock handling for the client side NLM implementation
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/nfs_fs.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/lockd/lockd.h>
-#include <linux/kthread.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/lockd/lockd.h>
+#include <linaos/kthread.h>
 
 #define NLMDBG_FACILITY		NLMDBG_CLIENT
 

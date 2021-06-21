@@ -3,7 +3,7 @@
 #ifndef _NET_IPV6_GRO_H
 #define _NET_IPV6_GRO_H
 
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/indirect_call_wrapper.h>
 
 struct list_head;
 struct sk_buff;

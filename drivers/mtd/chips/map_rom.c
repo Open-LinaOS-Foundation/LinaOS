@@ -3,17 +3,17 @@
  * (C) 2000 Red Hat. GPL'd.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
 
 static int maprom_read (struct mtd_info *, loff_t, size_t, size_t *, u_char *);
 static int maprom_write (struct mtd_info *, loff_t, size_t, size_t *, const u_char *);

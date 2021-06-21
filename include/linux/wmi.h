@@ -8,10 +8,10 @@
 #ifndef _LINUX_WMI_H
 #define _LINUX_WMI_H
 
-#include <linux/device.h>
-#include <linux/acpi.h>
-#include <linux/mod_devicetable.h>
-#include <uapi/linux/wmi.h>
+#include <linaos/device.h>
+#include <linaos/acpi.h>
+#include <linaos/mod_devicetable.h>
+#include <uapi/linaos/wmi.h>
 
 struct wmi_device {
 	struct device dev;

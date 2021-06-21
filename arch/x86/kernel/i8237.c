@@ -5,9 +5,9 @@
  * Written by Pierre Ossman, 2005.
  */
 
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/syscore_ops.h>
+#include <linaos/dmi.h>
+#include <linaos/init.h>
+#include <linaos/syscore_ops.h>
 
 #include <asm/dma.h>
 #include <asm/x86_init.h>

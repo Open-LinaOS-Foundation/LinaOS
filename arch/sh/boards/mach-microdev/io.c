@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/superh/microdev/io.c
+ * linaos/arch/sh/boards/superh/microdev/io.c
  *
  * Copyright (C) 2003 Sean McGoogan (Sean.McGoogan@superh.com)
  * Copyright (C) 2003, 2004 SuperH, Inc.
@@ -9,9 +9,9 @@
  * SuperH SH4-202 MicroDev board support.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/wait.h>
 #include <asm/io.h>
 #include <mach/microdev.h>
 

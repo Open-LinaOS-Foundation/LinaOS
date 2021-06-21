@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/kref.h>
-#include <linux/slab.h>
+#include <linaos/kref.h>
+#include <linaos/slab.h>
 #include <rdma/ib_umem.h>
 
 #include "mlx5_ib.h"

@@ -14,7 +14,7 @@ KCOV_INSTRUMENT := n
 KCSAN_SANITIZE := n
 
 ifneq ($(CONFIG_SCHED_OMIT_FRAME_POINTER),y)
-# According to Alan Modra <alan@linuxcare.com.au>, the -fno-omit-frame-pointer is
+# According to Alan Modra <alan@linaoscare.com.au>, the -fno-omit-frame-pointer is
 # needed for x86 only.  Why this used to be enabled for all architectures is beyond
 # me.  I suspect most platforms don't need this, but until we know that for sure
 # I turn this off for IA-64 only.  Andreas Schwab says it's also needed on m68k

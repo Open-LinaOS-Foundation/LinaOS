@@ -109,14 +109,14 @@
 		led3 {
 			label = "evmsk:green:mmc0";
 			gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led4 {
 			label = "evmsk:green:heartbeat";
 			gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 	};
@@ -128,26 +128,26 @@
 
 		switch1 {
 			label = "button0";
-			linux,code = <0x100>;
+			linaos,code = <0x100>;
 			gpios = <&gpio2 3 GPIO_ACTIVE_HIGH>;
 		};
 
 		switch2 {
 			label = "button1";
-			linux,code = <0x101>;
+			linaos,code = <0x101>;
 			gpios = <&gpio2 2 GPIO_ACTIVE_HIGH>;
 		};
 
 		switch3 {
 			label = "button2";
-			linux,code = <0x102>;
+			linaos,code = <0x102>;
 			gpios = <&gpio0 30 GPIO_ACTIVE_HIGH>;
 			wakeup-source;
 		};
 
 		switch4 {
 			label = "button3";
-			linux,code = <0x103>;
+			linaos,code = <0x103>;
 			gpios = <&gpio2 5 GPIO_ACTIVE_HIGH>;
 		};
 	};

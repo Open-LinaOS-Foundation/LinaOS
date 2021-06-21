@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/nfs/delegation.h
+ * linaos/fs/nfs/delegation.h
  *
  * Copyright (c) Trond Myklebust
  *

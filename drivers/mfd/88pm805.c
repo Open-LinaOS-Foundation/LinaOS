@@ -20,14 +20,14 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/88pm80x.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/88pm80x.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
 static const struct i2c_device_id pm80x_id_table[] = {
 	{"88PM805", 0},

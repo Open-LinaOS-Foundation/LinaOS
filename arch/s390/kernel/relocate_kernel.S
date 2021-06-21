@@ -7,7 +7,7 @@
  *
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/page.h>
 #include <asm/sigp.h>
 

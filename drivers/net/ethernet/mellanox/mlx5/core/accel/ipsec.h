@@ -34,8 +34,8 @@
 #ifndef __MLX5_ACCEL_IPSEC_H__
 #define __MLX5_ACCEL_IPSEC_H__
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/accel.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/accel.h>
 
 #ifdef CONFIG_MLX5_ACCEL
 

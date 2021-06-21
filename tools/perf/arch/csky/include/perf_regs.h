@@ -5,7 +5,7 @@
 #define ARCH_PERF_REGS_H
 
 #include <stdlib.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/perf_regs.h>
 
 #define PERF_REGS_MASK	((1ULL << PERF_REG_CSKY_MAX) - 1)

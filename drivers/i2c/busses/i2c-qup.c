@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2009-2013, 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2009-2013, 2016-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2014, Sony Mobile Communications AB.
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/scatterlist.h>
+#include <linaos/acpi.h>
+#include <linaos/atomic.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dmapool.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/scatterlist.h>
 
 /* QUP Registers */
 #define QUP_CONFIG		0x000

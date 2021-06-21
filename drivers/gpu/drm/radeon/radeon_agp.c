@@ -25,7 +25,7 @@
  *    Jerome Glisse <glisse@freedesktop.org>
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_agpsupport.h>
 #include <drm/drm_device.h>

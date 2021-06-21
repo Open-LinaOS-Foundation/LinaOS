@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
@@ -8,8 +8,8 @@
 #ifndef __MSM_KMS_H__
 #define __MSM_KMS_H__
 
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/regulator/consumer.h>
 
 #include "msm_drv.h"
 

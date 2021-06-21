@@ -3,7 +3,7 @@
  * Intel Low Power Subsystem clocks.
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@linaos.intel.com>
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 

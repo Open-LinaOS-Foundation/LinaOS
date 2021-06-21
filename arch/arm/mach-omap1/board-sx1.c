@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
-* linux/arch/arm/mach-omap1/board-sx1.c
+* linaos/arch/arm/mach-omap1/board-sx1.c
 *
 * Modified from board-generic.c
 *
@@ -11,21 +11,21 @@
 * Maintainters : Vladimir Ananiev (aka Vovan888), Sergge
 *		oslik.ru
 */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/notifier.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/physmap.h>
-#include <linux/types.h>
-#include <linux/i2c.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/platform_device.h>
+#include <linaos/notifier.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/types.h>
+#include <linaos/i2c.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
+#include <linaos/omapfb.h>
+#include <linaos/platform_data/keypad-omap.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
@@ -33,7 +33,7 @@
 
 #include "flash.h"
 #include <mach/mux.h>
-#include <linux/omap-dma.h>
+#include <linaos/omap-dma.h>
 #include <mach/tc.h>
 #include "board-sx1.h"
 

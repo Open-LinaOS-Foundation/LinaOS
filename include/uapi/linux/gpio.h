@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH LinaOS-syscall-note */
 /*
- * <linux/gpio.h> - userspace ABI for the GPIO character devices
+ * <linaos/gpio.h> - userspace ABI for the GPIO character devices
  *
  * Copyright (C) 2016 Linus Walleij
  *
@@ -11,9 +11,9 @@
 #ifndef _UAPI_GPIO_H_
 #define _UAPI_GPIO_H_
 
-#include <linux/const.h>
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/const.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 /*
  * The maximum size of name and label arrays.
@@ -24,7 +24,7 @@
 
 /**
  * struct gpiochip_info - Information about a certain GPIO chip
- * @name: the Linux kernel name of this GPIO chip
+ * @name: the LinaOS kernel name of this GPIO chip
  * @label: a functional name for this GPIO chip, such as a product
  * number, may be empty (i.e. label[0] == '\0')
  * @lines: number of GPIO lines on this chip

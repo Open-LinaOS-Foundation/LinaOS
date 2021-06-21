@@ -12,16 +12,16 @@
  * Copyright (C) 2007 MontaVista Software, Inc., <source@mvista.com>
  */
 
-#include <linux/ata.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/libata.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linaos/ata.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/libata.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
 
 #define DRV_NAME "pata_bk3710"
 

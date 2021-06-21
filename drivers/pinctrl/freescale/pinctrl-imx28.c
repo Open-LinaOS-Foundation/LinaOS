@@ -5,9 +5,9 @@
 // Author: Shawn Guo <shawn.guo@linaro.org>
 // Copyright 2012 Freescale Semiconductor, Inc.
 
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/pinctrl.h>
 #include "pinctrl-mxs.h"
 
 enum imx28_pin_enum {

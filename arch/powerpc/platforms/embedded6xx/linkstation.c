@@ -10,9 +10,9 @@
  * any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/initrd.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/initrd.h>
+#include <linaos/of_platform.h>
 
 #include <asm/time.h>
 #include <asm/prom.h>

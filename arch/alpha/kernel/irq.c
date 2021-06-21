@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/irq.c
+ *	linaos/arch/alpha/kernel/irq.c
  *
  *	Copyright (C) 1995 Linus Torvalds
  *
@@ -11,23 +11,23 @@
  * should be easier.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/random.h>
-#include <linux/irq.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <linaos/interrupt.h>
+#include <linaos/random.h>
+#include <linaos/irq.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/profile.h>
+#include <linaos/bitops.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 volatile unsigned long irq_err_count;
 DEFINE_PER_CPU(unsigned long, irq_pmi_count);

@@ -20,16 +20,16 @@
  * Samuel Thibault <samuel.thibault@ens-lyon.org>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/ioport.h>
+#include <linaos/blkdev.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
 #include <asm/io.h>
 
 #define DRV_NAME "qd65xx"

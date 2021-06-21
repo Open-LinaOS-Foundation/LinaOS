@@ -11,26 +11,26 @@
  *
  */
 
-#include <linux/crypto.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/init.h>
-#include <linux/security.h>
+#include <linaos/crypto.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/socket.h>
+#include <linaos/string.h>
+#include <linaos/net.h>
+#include <linaos/skbuff.h>
+#include <linaos/pfkeyv2.h>
+#include <linaos/ipsec.h>
+#include <linaos/init.h>
+#include <linaos/security.h>
 #include <net/sock.h>
 #include <net/xfrm.h>
 #include <net/netlink.h>
 #include <net/ah.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/in6.h>
+#include <linaos/in6.h>
 #endif
 #include <asm/unaligned.h>
 

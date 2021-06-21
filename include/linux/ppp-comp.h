@@ -7,7 +7,7 @@
 #ifndef _NET_PPP_COMP_H
 #define _NET_PPP_COMP_H
 
-#include <uapi/linux/ppp-comp.h>
+#include <uapi/linaos/ppp-comp.h>
 
 
 struct module;

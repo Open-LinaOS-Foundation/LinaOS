@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 #include "mlx5_core.h"
-#include <linux/mlx5/transobj.h>
+#include <linaos/mlx5/transobj.h>
 
 int mlx5_core_alloc_transport_domain(struct mlx5_core_dev *dev, u32 *tdn)
 {

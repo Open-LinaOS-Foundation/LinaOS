@@ -3,14 +3,14 @@
  * Copyright (c) 2012, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clk/tegra.h>
-#include <linux/reset-controller.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/clk/tegra.h>
+#include <linaos/reset-controller.h>
 
 #include <soc/tegra/fuse.h>
 

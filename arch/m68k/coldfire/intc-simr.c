@@ -10,12 +10,12 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/traps.h>

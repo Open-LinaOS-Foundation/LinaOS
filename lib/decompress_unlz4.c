@@ -9,12 +9,12 @@
 #define PREBOOT
 #include "lz4/lz4_decompress.c"
 #else
-#include <linux/decompress/unlz4.h>
+#include <linaos/decompress/unlz4.h>
 #endif
-#include <linux/types.h>
-#include <linux/lz4.h>
-#include <linux/decompress/mm.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/lz4.h>
+#include <linaos/decompress/mm.h>
+#include <linaos/compiler.h>
 
 #include <asm/unaligned.h>
 

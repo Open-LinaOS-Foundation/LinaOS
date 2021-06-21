@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/block/floppy.c
+ *  linaos/drivers/block/floppy.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1993, 1994  Alain Knaff
@@ -163,34 +163,34 @@
 
 /* do print messages for unexpected interrupts */
 static int print_unex = 1;
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/fdreg.h>
-#include <linux/fd.h>
-#include <linux/hdreg.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/bio.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/mc146818rtc.h>	/* CMOS defines */
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/async.h>
-#include <linux/compat.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/fdreg.h>
+#include <linaos/fd.h>
+#include <linaos/hdreg.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/bio.h>
+#include <linaos/string.h>
+#include <linaos/jiffies.h>
+#include <linaos/fcntl.h>
+#include <linaos/delay.h>
+#include <linaos/mc146818rtc.h>	/* CMOS defines */
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/mutex.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/async.h>
+#include <linaos/compat.h>
 
 /*
  * PS/2 floppies have much slower step rates than regular floppies.
@@ -250,10 +250,10 @@ static int allowed_drive_mask = 0x33;
 
 static int irqdma_allocated;
 
-#include <linux/blk-mq.h>
-#include <linux/blkpg.h>
-#include <linux/cdrom.h>	/* for the compatibility eject ioctl */
-#include <linux/completion.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blkpg.h>
+#include <linaos/cdrom.h>	/* for the compatibility eject ioctl */
+#include <linaos/completion.h>
 
 static LIST_HEAD(floppy_reqs);
 static struct request *current_req;

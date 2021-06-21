@@ -3,8 +3,8 @@
 
 #ifndef _QED_FCOE_IF_H
 #define _QED_FCOE_IF_H
-#include <linux/types.h>
-#include <linux/qed/qed_if.h>
+#include <linaos/types.h>
+#include <linaos/qed/qed_if.h>
 struct qed_fcoe_stats {
 	u64 fcoe_rx_byte_cnt;
 	u64 fcoe_rx_data_pkt_cnt;

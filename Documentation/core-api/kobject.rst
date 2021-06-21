@@ -2,7 +2,7 @@
 Everything you never wanted to know about kobjects, ksets, and ktypes
 =====================================================================
 
-:Author: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+:Author: Greg Kroah-Hartman <gregkh@linaosfoundation.org>
 :Last updated: December 19, 2007
 
 Based on an original article by Jon Corbet for lwn.net written October 1,
@@ -78,7 +78,7 @@ just a matter of using the kobj member.  Code that works with kobjects will
 often have the opposite problem, however: given a struct kobject pointer,
 what is the pointer to the containing structure?  You must avoid tricks
 (such as assuming that the kobject is at the beginning of the structure)
-and, instead, use the container_of() macro, found in ``<linux/kernel.h>``::
+and, instead, use the container_of() macro, found in ``<linaos/kernel.h>``::
 
     container_of(ptr, type, member)
 
@@ -210,7 +210,7 @@ statically and will warn the developer of this improper usage.
 If all that you want to use a kobject for is to provide a reference counter
 for your structure, please use the struct kref instead; a kobject would be
 overkill.  For more information on how to use struct kref, please see the
-file Documentation/core-api/kref.rst in the Linux kernel source tree.
+file Documentation/core-api/kref.rst in the LinaOS kernel source tree.
 
 
 Creating "simple" kobjects

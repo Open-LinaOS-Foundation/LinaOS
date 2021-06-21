@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/interconnect-provider.h>
-#include <linux/device.h>
-#include <linux/export.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
 
 /**
  * of_icc_bulk_get() - get interconnect paths

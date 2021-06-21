@@ -15,7 +15,7 @@
 #ifndef OMAP3_ISP_HIST_H
 #define OMAP3_ISP_HIST_H
 
-#include <linux/omap3isp.h>
+#include <linaos/omap3isp.h>
 
 #define ISPHIST_IN_BIT_WIDTH_CCDC	10
 

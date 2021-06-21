@@ -334,7 +334,7 @@
 	pinctrl-0 = <&pinctrl_kpp>;
 	/* sample keymap */
 	/* row/col 0,1 are mapped to KPP row/col 6,7 */
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(6, 6, KEY_POWER)
 		MATRIX_KEY(6, 7, KEY_KP0)
 		MATRIX_KEY(6, 2, KEY_KP1)

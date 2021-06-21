@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 config SECURITY_TOMOYO
-	bool "TOMOYO Linux Support"
+	bool "TOMOYO LinaOS Support"
 	depends on SECURITY
 	depends on NET
 	select SECURITYFS
@@ -10,7 +10,7 @@ config SECURITY_TOMOYO
 	select BUILD_BIN2C
 	default n
 	help
-	  This selects TOMOYO Linux, pathname-based access control.
+	  This selects TOMOYO LinaOS, pathname-based access control.
 	  Required userspace tools and further information may be
 	  found at <http://tomoyo.sourceforge.jp/>.
 	  If you are unsure how to answer this question, answer N.

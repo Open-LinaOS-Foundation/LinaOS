@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	linux/include/asm-alpha/err_common.h
+ *	linaos/include/asm-alpha/err_common.h
  *
  *	Copyright (C) 2000 Jeff Wiedemeier (Compaq Computer Corporation)
  *

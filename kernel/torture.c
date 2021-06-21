@@ -4,43 +4,43 @@
  *
  * Copyright (C) IBM Corporation, 2014
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linaos.ibm.com>
  *	Based on kernel/rcu/torture.c.
  */
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/trace_clock.h>
-#include <linux/ktime.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/err.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/moduleparam.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/freezer.h>
+#include <linaos/cpu.h>
+#include <linaos/delay.h>
+#include <linaos/stat.h>
+#include <linaos/slab.h>
+#include <linaos/trace_clock.h>
+#include <linaos/ktime.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
+#include <linaos/torture.h>
 #include "rcu/rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@linaos.ibm.com>");
 
 static bool disable_onoff_at_boot;
 module_param(disable_onoff_at_boot, bool, 0444);

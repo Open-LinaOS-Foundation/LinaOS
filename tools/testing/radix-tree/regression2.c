@@ -43,10 +43,10 @@
  * Upstream commit:
  * Not yet
  */
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/radix-tree.h>
+#include <linaos/kernel.h>
+#include <linaos/gfp.h>
+#include <linaos/slab.h>
+#include <linaos/radix-tree.h>
 #include <stdlib.h>
 #include <stdio.h>
 

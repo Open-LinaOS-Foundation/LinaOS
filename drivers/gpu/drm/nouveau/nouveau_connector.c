@@ -26,8 +26,8 @@
 
 #include <acpi/button.h>
 
-#include <linux/pm_runtime.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/vga_switcheroo.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_edid.h>

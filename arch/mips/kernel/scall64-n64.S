@@ -7,7 +7,7 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/asm.h>
 #include <asm/asmmacro.h>
 #include <asm/irqflags.h>
@@ -53,8 +53,8 @@ NESTED(handle_sys64, PT_SIZE, sp)
 	bnez	t0, syscall_trace_entry
 
 syscall_common:
-	dsubu	t2, v0, __NR_64_Linux
-	sltiu   t0, t2, __NR_64_Linux_syscalls
+	dsubu	t2, v0, __NR_64_LinaOS
+	sltiu   t0, t2, __NR_64_LinaOS_syscalls
 	beqz	t0, illegal_syscall
 
 	dsll	t0, t2, 3		# offset into table

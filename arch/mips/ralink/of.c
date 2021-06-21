@@ -6,16 +6,16 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sizes.h>
-#include <linux/of_fdt.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/sizes.h>
+#include <linaos/of_fdt.h>
+#include <linaos/kernel.h>
+#include <linaos/memblock.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
 
 #include <asm/reboot.h>
 #include <asm/bootinfo.h>

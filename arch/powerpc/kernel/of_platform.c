@@ -7,16 +7,16 @@
 
 #undef DEBUG
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/atomic.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/pci.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/atomic.h>
 
 #include <asm/errno.h>
 #include <asm/topology.h>

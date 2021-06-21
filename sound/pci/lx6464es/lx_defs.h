@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* -*- linux-c -*- *
+/* -*- linaos-c -*- *
  *
  * ALSA driver for the digigram lx6464es interface
  * adapted upstream headers

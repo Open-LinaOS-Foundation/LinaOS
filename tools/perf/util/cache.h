@@ -6,8 +6,8 @@
 #include <subcmd/pager.h>
 #include "../ui/ui.h"
 
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <linaos/compiler.h>
+#include <linaos/string.h>
 
 #define CMD_EXEC_PATH "--exec-path"
 #define CMD_DEBUGFS_DIR "--debugfs-dir="

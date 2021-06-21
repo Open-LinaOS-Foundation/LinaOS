@@ -7,14 +7,14 @@
 #ifndef __USBIP_VHCI_H
 #define __USBIP_VHCI_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/wait.h>
 
 struct vhci_device {
 	struct usb_device *udev;

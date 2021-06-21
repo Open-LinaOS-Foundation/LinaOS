@@ -8,7 +8,7 @@
 #ifndef GAUDI_FW_IF_H
 #define GAUDI_FW_IF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define GAUDI_EVENT_QUEUE_MSI_IDX	8
 #define GAUDI_NIC_PORT1_MSI_IDX		10

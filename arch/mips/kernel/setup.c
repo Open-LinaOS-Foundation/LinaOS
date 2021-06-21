@@ -10,25 +10,25 @@
  * Copyright (C) 1999 Silicon Graphics, Inc.
  * Copyright (C) 2000, 2001, 2002, 2007	 Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/screen_info.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/root_dev.h>
-#include <linux/highmem.h>
-#include <linux/console.h>
-#include <linux/pfn.h>
-#include <linux/debugfs.h>
-#include <linux/kexec.h>
-#include <linux/sizes.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/decompress/generic.h>
-#include <linux/of_fdt.h>
-#include <linux/dmi.h>
-#include <linux/crash_dump.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/export.h>
+#include <linaos/screen_info.h>
+#include <linaos/memblock.h>
+#include <linaos/initrd.h>
+#include <linaos/root_dev.h>
+#include <linaos/highmem.h>
+#include <linaos/console.h>
+#include <linaos/pfn.h>
+#include <linaos/debugfs.h>
+#include <linaos/kexec.h>
+#include <linaos/sizes.h>
+#include <linaos/device.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/decompress/generic.h>
+#include <linaos/of_fdt.h>
+#include <linaos/dmi.h>
+#include <linaos/crash_dump.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

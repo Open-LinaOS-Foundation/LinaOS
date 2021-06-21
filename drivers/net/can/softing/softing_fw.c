@@ -5,8 +5,8 @@
  * - Kurt Van Dijck, EIA Electronics
  */
 
-#include <linux/firmware.h>
-#include <linux/sched/signal.h>
+#include <linaos/firmware.h>
+#include <linaos/sched/signal.h>
 #include <asm/div64.h>
 #include <asm/io.h>
 

@@ -5,21 +5,21 @@
  * All rights reserved
  * www.qlogic.com
  *
- * Linux driver for QLogic BR-series Fibre Channel Host Bus Adapter.
+ * LinaOS driver for QLogic BR-series Fibre Channel Host Bus Adapter.
  */
 
 /*
- *  bfad.c Linux driver PCI interface module.
+ *  bfad.c LinaOS driver PCI interface module.
  */
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/uaccess.h>
 #include <asm/fcntl.h>
 
 #include "bfad_drv.h"

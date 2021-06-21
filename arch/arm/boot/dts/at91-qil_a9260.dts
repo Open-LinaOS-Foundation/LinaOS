@@ -192,7 +192,7 @@
 		user_led {
 			label = "user_led";
 			gpios = <&pioB 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -204,7 +204,7 @@
 		user_pb {
 			label = "user_pb";
 			gpios = <&pioB 10 GPIO_ACTIVE_LOW>;
-			linux,code = <28>;
+			linaos,code = <28>;
 			wakeup-source;
 		};
 	};

@@ -3,7 +3,7 @@
 config HAVE_CLK
 	bool
 	help
-	  The <linux/clk.h> calls support software clock gating and
+	  The <linaos/clk.h> calls support software clock gating and
 	  thus are a key power management tool on many systems.
 
 config CLKDEV_LOOKUP
@@ -17,7 +17,7 @@ config HAVE_LEGACY_CLK # TODO: Remove once all legacy users are migrated
 	bool
 	select HAVE_CLK
 	help
-	  Select this option when the clock API in <linux/clk.h> is implemented
+	  Select this option when the clock API in <linaos/clk.h> is implemented
 	  by platform/architecture code. This method is deprecated. Modern
 	  code should select COMMON_CLK instead and not define a custom
 	  'struct clk'.
@@ -32,7 +32,7 @@ menuconfig COMMON_CLK
 	help
 	  The common clock framework is a single definition of struct
 	  clk, useful across many platforms, as well as an
-	  implementation of the clock API in include/linux/clk.h.
+	  implementation of the clock API in include/linaos/clk.h.
 	  Architectures utilizing the common struct clk should select
 	  this option.
 

@@ -102,7 +102,7 @@ extern void cpu_do_resume(void *);
 
 extern struct processor processor;
 #if defined(CONFIG_BIG_LITTLE) && defined(CONFIG_HARDEN_BRANCH_PREDICTOR)
-#include <linux/smp.h>
+#include <linaos/smp.h>
 /*
  * This can't be a per-cpu variable because we need to access it before
  * per-cpu has been initialised.  We have a couple of functions that are

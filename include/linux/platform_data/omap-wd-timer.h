@@ -9,7 +9,7 @@
 #ifndef __LINUX_PLATFORM_DATA_OMAP_WD_TIMER_H
 #define __LINUX_PLATFORM_DATA_OMAP_WD_TIMER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Standardized OMAP reset source bits

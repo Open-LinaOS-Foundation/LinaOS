@@ -4,10 +4,10 @@
  *
  * Copyright 2019 Red Hat, Inc.
  */
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/vmalloc.h>
-#include <linux/kvm_dirty_ring.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kvm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/kvm_dirty_ring.h>
 #include <trace/events/kvm.h>
 #include "mmu_lock.h"
 

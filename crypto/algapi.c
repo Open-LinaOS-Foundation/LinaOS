@@ -6,16 +6,16 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/fips.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include "internal.h"
 

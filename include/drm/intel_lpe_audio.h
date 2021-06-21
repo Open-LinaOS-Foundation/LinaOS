@@ -24,8 +24,8 @@
 #ifndef _INTEL_LPE_AUDIO_H_
 #define _INTEL_LPE_AUDIO_H_
 
-#include <linux/types.h>
-#include <linux/spinlock_types.h>
+#include <linaos/types.h>
+#include <linaos/spinlock_types.h>
 
 struct platform_device;
 

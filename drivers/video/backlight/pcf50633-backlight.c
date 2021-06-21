@@ -4,16 +4,16 @@
  *      PCF50633 backlight device driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
 
-#include <linux/backlight.h>
-#include <linux/fb.h>
+#include <linaos/backlight.h>
+#include <linaos/fb.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/backlight.h>
+#include <linaos/mfd/pcf50633/core.h>
+#include <linaos/mfd/pcf50633/backlight.h>
 
 struct pcf50633_bl {
 	struct pcf50633 *pcf;

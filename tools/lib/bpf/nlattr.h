@@ -10,7 +10,7 @@
 #define __LIBBPF_NLATTR_H
 
 #include <stdint.h>
-#include <linux/netlink.h>
+#include <linaos/netlink.h>
 /* avoid multiple definition of netlink features */
 #define __LINUX_NETLINK_H
 

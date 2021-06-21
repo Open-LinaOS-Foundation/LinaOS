@@ -2,11 +2,11 @@
 // Copyright (C) 2018 ROHM Semiconductors
 // gpio-bd70528.c ROHM BD70528MWV gpio driver
 
-#include <linux/gpio/driver.h>
-#include <linux/mfd/rohm-bd70528.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/mfd/rohm-bd70528.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define GPIO_IN_REG(offset) (BD70528_REG_GPIO1_IN + (offset) * 2)
 #define GPIO_OUT_REG(offset) (BD70528_REG_GPIO1_OUT + (offset) * 2)

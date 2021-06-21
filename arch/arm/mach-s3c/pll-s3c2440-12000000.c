@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 //
 // Copyright (c) 2006-2007 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
-//	Vincent Sanders <vince@arm.linux.org.uk>
+//	Vincent Sanders <vince@arm.linaos.org.uk>
 //
 // S3C2440/S3C2442 CPU PLL tables (12MHz Crystal)
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
 
-#include <linux/soc/samsung/s3c-cpufreq-core.h>
-#include <linux/soc/samsung/s3c-pm.h>
+#include <linaos/soc/samsung/s3c-cpufreq-core.h>
+#include <linaos/soc/samsung/s3c-pm.h>
 
 /* This array should be sorted in ascending order of the frequencies */
 static struct cpufreq_frequency_table s3c2440_plls_12[] = {

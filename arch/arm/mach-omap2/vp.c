@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 
 #include "common.h"
 

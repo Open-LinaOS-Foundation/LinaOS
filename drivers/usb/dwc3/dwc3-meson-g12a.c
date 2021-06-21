@@ -14,21 +14,21 @@
  * - Dynamic OTG switching with ID change interrupt
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/reset.h>
-#include <linux/phy/phy.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/role.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/reset.h>
+#include <linaos/phy/phy.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/role.h>
+#include <linaos/regulator/consumer.h>
 
 /* USB2 Ports Control Registers, offsets are per-port */
 

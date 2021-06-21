@@ -7,11 +7,11 @@
  * Author: Jyri Sarha <jsarha@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/platform_device.h>
 #include <sound/soc.h>
 #include <sound/pcm_params.h>
 #include <sound/dmaengine_pcm.h>

@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/unistd_32.h>
 #include <asm/asm-offsets.h>
 

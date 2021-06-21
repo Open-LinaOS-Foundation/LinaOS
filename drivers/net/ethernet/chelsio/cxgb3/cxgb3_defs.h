@@ -32,7 +32,7 @@
 #ifndef _CHELSIO_DEFS_H
 #define _CHELSIO_DEFS_H
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/tcp.h>
 
 #include "t3cdev.h"

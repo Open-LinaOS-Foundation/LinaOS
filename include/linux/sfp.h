@@ -1,7 +1,7 @@
 #ifndef LINUX_SFP_H
 #define LINUX_SFP_H
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 
 struct sfp_eeprom_base {
 	u8 phys_id;

@@ -3,7 +3,7 @@
  *  Copyright (C) 1998-2000 Andrzej Krzysztofowicz, Maintainer
  *  Copyright (C) 1999-2000 CJ, cjtsai@ali.com.tw, Maintainer
  *
- *  Copyright (C) 1998-2000 Andre Hedrick (andre@linux-ide.org)
+ *  Copyright (C) 1998-2000 Andre Hedrick (andre@linaos-ide.org)
  *  May be copied or modified under the terms of the GNU General Public License
  *  Copyright (C) 2002 Alan Cox
  *  ALi (now ULi M5228) support by Clear Zhang <Clear.Zhang@ali.com.tw>
@@ -27,13 +27,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
+#include <linaos/dmi.h>
 
 #include <asm/io.h>
 

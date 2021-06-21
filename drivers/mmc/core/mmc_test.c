@@ -3,20 +3,20 @@
  *  Copyright 2007-2008 Pierre Ossman
  */
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/slab.h>
+#include <linaos/mmc/core.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/slab.h>
 
-#include <linux/scatterlist.h>
-#include <linux/swap.h>		/* For nr_free_buffer_pages() */
-#include <linux/list.h>
+#include <linaos/scatterlist.h>
+#include <linaos/swap.h>		/* For nr_free_buffer_pages() */
+#include <linaos/list.h>
 
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/seq_file.h>
+#include <linaos/module.h>
 
 #include "core.h"
 #include "card.h"

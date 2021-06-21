@@ -3,11 +3,11 @@
  * Copyright (c) 1996-2002 Russell King.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/errno.h>
-#include <linux/ide.h>
-#include <linux/init.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
+#include <linaos/errno.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
 
 #include <asm/ecard.h>
 

@@ -5,7 +5,7 @@
 
 #ifdef CONFIG_IA32_EMULATION
 
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 /*
  * 32 bit structures for IA32 support.
@@ -60,8 +60,8 @@ struct stat64 {
 #define IA32_STACK_TOP IA32_PAGE_OFFSET
 
 #ifdef __KERNEL__
-struct linux_binprm;
-extern int ia32_setup_arg_pages(struct linux_binprm *bprm,
+struct linaos_binprm;
+extern int ia32_setup_arg_pages(struct linaos_binprm *bprm,
 				unsigned long stack_top, int exec_stack);
 struct mm_struct;
 extern void ia32_pick_mmap_layout(struct mm_struct *mm);

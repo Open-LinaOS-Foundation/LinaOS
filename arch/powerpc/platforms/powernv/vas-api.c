@@ -4,12 +4,12 @@
  * Copyright (C) 2019 Haren Myneni, IBM Corp
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/cdev.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 #include <asm/vas.h>
 #include <uapi/asm/vas-api.h>
 #include "vas.h"

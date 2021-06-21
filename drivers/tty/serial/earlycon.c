@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/console.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/serial_core.h>
-#include <linux/sizes.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/acpi.h>
+#include <linaos/console.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/serial_core.h>
+#include <linaos/sizes.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/acpi.h>
 
 #ifdef CONFIG_FIX_EARLYCON_MEM
 #include <asm/fixmap.h>

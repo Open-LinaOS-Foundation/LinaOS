@@ -6,15 +6,15 @@
 //
 // Hardware interface for audio DSP on i.MX8M
 
-#include <linux/firmware.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/firmware.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/sof.h>
 #include <sound/sof/xtensa.h>
-#include <linux/firmware/imx/dsp.h>
+#include <linaos/firmware/imx/dsp.h>
 
 #include "../ops.h"
 #include "imx-common.h"

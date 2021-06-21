@@ -71,7 +71,7 @@ Linus's git tree.  When basing on mainline, start with a well-known release
 point - a stable or -rc release - rather than branching off the mainline at
 an arbitrary spot.
 
-It may become necessary to make versions against -mm, linux-next, or a
+It may become necessary to make versions against -mm, linaos-next, or a
 subsystem tree, though, to facilitate wider testing and review.  Depending
 on the area of your patch and what is going on elsewhere, basing a patch
 against these other trees can require a significant amount of work
@@ -290,7 +290,7 @@ copies should go to:
    original poster as well.
 
  - Send a copy to the relevant mailing list, or, if nothing else applies,
-   the linux-kernel list.
+   the linaos-kernel list.
 
  - If you are fixing a bug, think about whether the fix should go into the
    next stable update.  If so, stable@vger.kernel.org should get a copy of

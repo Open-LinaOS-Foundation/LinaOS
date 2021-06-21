@@ -9,11 +9,11 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 #include <asm/nettel.h>

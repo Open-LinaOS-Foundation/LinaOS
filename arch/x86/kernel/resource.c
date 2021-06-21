@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 #include <asm/e820/api.h>
 
 static void resource_clip(struct resource *res, resource_size_t start,

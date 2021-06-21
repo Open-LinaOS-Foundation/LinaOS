@@ -6,18 +6,18 @@
  *
  * Authors: Joao Pinto <Joao.Pinto@synopsys.com>
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/types.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/resource.h>
+#include <linaos/types.h>
+#include <linaos/regmap.h>
 
 #include "pcie-designware.h"
 

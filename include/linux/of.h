@@ -11,16 +11,16 @@
  * Updates for SPARC64 by David S. Miller
  * Derived from PowerPC and Sparc prom.h files by Stephen Rothwell, IBM Corp.
  */
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/kobject.h>
-#include <linux/mod_devicetable.h>
-#include <linux/spinlock.h>
-#include <linux/topology.h>
-#include <linux/notifier.h>
-#include <linux/property.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/kobject.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/spinlock.h>
+#include <linaos/topology.h>
+#include <linaos/notifier.h>
+#include <linaos/property.h>
+#include <linaos/list.h>
 
 #include <asm/byteorder.h>
 #include <asm/errno.h>

@@ -8,14 +8,14 @@
  * compiled as module, this file is compiled as module as well.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/of.h>
-#include <linux/usb/otg.h>
-#include <linux/of_platform.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/of.h>
+#include <linaos/usb/otg.h>
+#include <linaos/of_platform.h>
+#include <linaos/debugfs.h>
 #include "common.h"
 
 static const char *const ep_type_names[] = {

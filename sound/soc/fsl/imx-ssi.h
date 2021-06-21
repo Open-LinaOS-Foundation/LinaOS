@@ -181,8 +181,8 @@
 
 #define DRV_NAME "imx-ssi"
 
-#include <linux/dmaengine.h>
-#include <linux/platform_data/dma-imx.h>
+#include <linaos/dmaengine.h>
+#include <linaos/platform_data/dma-imx.h>
 #include <sound/dmaengine_pcm.h>
 #include "imx-pcm.h"
 

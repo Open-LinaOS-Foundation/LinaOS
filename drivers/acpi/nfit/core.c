@@ -2,19 +2,19 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/list_sort.h>
-#include <linux/libnvdimm.h>
-#include <linux/module.h>
-#include <linux/nospec.h>
-#include <linux/mutex.h>
-#include <linux/ndctl.h>
-#include <linux/sysfs.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/acpi.h>
-#include <linux/sort.h>
-#include <linux/io.h>
-#include <linux/nd.h>
+#include <linaos/list_sort.h>
+#include <linaos/libnvdimm.h>
+#include <linaos/module.h>
+#include <linaos/nospec.h>
+#include <linaos/mutex.h>
+#include <linaos/ndctl.h>
+#include <linaos/sysfs.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/acpi.h>
+#include <linaos/sort.h>
+#include <linaos/io.h>
+#include <linaos/nd.h>
 #include <asm/cacheflush.h>
 #include <acpi/nfit.h>
 #include "intel.h"
@@ -24,7 +24,7 @@
  * For readq() and writeq() on 32-bit builds, the hi-lo, lo-hi order is
  * irrelevant.
  */
-#include <linux/io-64-nonatomic-hi-lo.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
 
 static bool force_enable_dimms;
 module_param(force_enable_dimms, bool, S_IRUGO|S_IWUSR);
@@ -423,7 +423,7 @@ static int cmd_to_func(struct nfit_mem *nfit_mem, unsigned int cmd,
 	if (!nfit_mem)
 		return cmd;
 
-	/* Linux ND commands == NVDIMM_FAMILY_INTEL function numbers */
+	/* LinaOS ND commands == NVDIMM_FAMILY_INTEL function numbers */
 	if (nfit_mem->family == NVDIMM_FAMILY_INTEL)
 		return cmd;
 

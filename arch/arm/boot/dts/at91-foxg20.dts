@@ -151,7 +151,7 @@
 		user_led {
 			label = "user_led";
 			gpios = <&pioC 7 GPIO_ACTIVE_HIGH>;	/* PC7 */
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -161,7 +161,7 @@
 		btn {
 			label = "Button";
 			gpios = <&pioC 4 GPIO_ACTIVE_LOW>;
-			linux,code = <0x103>;
+			linaos,code = <0x103>;
 			wakeup-source;
 		};
 	};

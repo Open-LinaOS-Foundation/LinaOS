@@ -6,7 +6,7 @@
  * Copyright (C) 1996 David S. Miller (dm@sgi.com)
  * Compatibility with board caches, Ulf Carlsson
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/sgialib.h>
 #include <asm/bcache.h>
 #include <asm/setup.h>

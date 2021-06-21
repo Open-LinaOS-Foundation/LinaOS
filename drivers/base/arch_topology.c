@@ -6,20 +6,20 @@
  * Written by: Juri Lelli, ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sched/topology.h>
-#include <linux/cpuset.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <linaos/acpi.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/device.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/sched/topology.h>
+#include <linaos/cpuset.h>
+#include <linaos/cpumask.h>
+#include <linaos/init.h>
+#include <linaos/percpu.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
 
 static DEFINE_PER_CPU(struct scale_freq_data *, sft_data);
 static struct cpumask scale_freq_counters_mask;

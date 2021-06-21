@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * include/asm-xtensa/termbits.h
  *
@@ -15,7 +15,7 @@
 #define _XTENSA_TERMBITS_H
 
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 
 typedef unsigned char	cc_t;
 typedef unsigned int	speed_t;

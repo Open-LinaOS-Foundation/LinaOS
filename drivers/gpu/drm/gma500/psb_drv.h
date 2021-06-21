@@ -8,8 +8,8 @@
 #ifndef _PSB_DRV_H_
 #define _PSB_DRV_H_
 
-#include <linux/kref.h>
-#include <linux/mm_types.h>
+#include <linaos/kref.h>
+#include <linaos/mm_types.h>
 
 #include <drm/drm_device.h>
 
@@ -23,7 +23,7 @@
 #include "psb_intel_drv.h"
 #include "psb_reg.h"
 
-#define DRIVER_AUTHOR "Alan Cox <alan@linux.intel.com> and others"
+#define DRIVER_AUTHOR "Alan Cox <alan@linaos.intel.com> and others"
 
 #define DRIVER_NAME "gma500"
 #define DRIVER_DESC "DRM driver for the Intel GMA500, GMA600, GMA3600, GMA3650"

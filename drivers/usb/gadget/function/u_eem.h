@@ -13,7 +13,7 @@
 #ifndef U_EEM_H
 #define U_EEM_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 
 struct f_eem_opts {
 	struct usb_function_instance	func_inst;

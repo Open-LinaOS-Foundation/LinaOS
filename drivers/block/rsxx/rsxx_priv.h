@@ -3,7 +3,7 @@
 * Filename: rsxx_priv.h
 *
 * Authors: Joshua Morris <josh.h.morris@us.ibm.com>
-*	Philip Kelleher <pjk1939@linux.vnet.ibm.com>
+*	Philip Kelleher <pjk1939@linaos.vnet.ibm.com>
 *
 * (C) Copyright 2013 IBM Corporation
 */
@@ -11,20 +11,20 @@
 #ifndef __RSXX_PRIV_H__
 #define __RSXX_PRIV_H__
 
-#include <linux/semaphore.h>
+#include <linaos/semaphore.h>
 
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/workqueue.h>
-#include <linux/bio.h>
-#include <linux/vmalloc.h>
-#include <linux/timer.h>
-#include <linux/ioctl.h>
-#include <linux/delay.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysfs.h>
+#include <linaos/workqueue.h>
+#include <linaos/bio.h>
+#include <linaos/vmalloc.h>
+#include <linaos/timer.h>
+#include <linaos/ioctl.h>
+#include <linaos/delay.h>
 
 #include "rsxx.h"
 #include "rsxx_cfg.h"

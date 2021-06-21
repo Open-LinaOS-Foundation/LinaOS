@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_ELF_H
 #define _UAPI_LINUX_ELF_H
 
-#include <linux/types.h>
-#include <linux/elf-em.h>
+#include <linaos/types.h>
+#include <linaos/elf-em.h>
 
 /* 32-bit ELF base types. */
 typedef __u32	Elf32_Addr;

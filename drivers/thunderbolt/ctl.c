@@ -6,12 +6,12 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/dmapool.h>
-#include <linux/workqueue.h>
+#include <linaos/crc32.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/dmapool.h>
+#include <linaos/workqueue.h>
 
 #include "ctl.h"
 

@@ -3,8 +3,8 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <linaos/pci.h>
+#include <linaos/vgaarb.h>
 
 #include <drm/i915_drm.h>
 

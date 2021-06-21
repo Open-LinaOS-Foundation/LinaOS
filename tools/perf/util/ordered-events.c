@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/list.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <linaos/list.h>
+#include <linaos/compiler.h>
+#include <linaos/string.h>
 #include "ordered-events.h"
 #include "session.h"
 #include "asm/bug.h"

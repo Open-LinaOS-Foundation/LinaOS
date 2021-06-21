@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018-2020, The LinaOS Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 #include <sound/tlv.h>
-#include <linux/of_clk.h>
-#include <linux/clk-provider.h>
+#include <linaos/of_clk.h>
+#include <linaos/clk-provider.h>
 
 #define CDC_TX_CLK_RST_CTRL_MCLK_CONTROL (0x0000)
 #define CDC_TX_MCLK_EN_MASK		BIT(0)

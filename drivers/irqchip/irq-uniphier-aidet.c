@@ -6,16 +6,16 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/bitops.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 #define UNIPHIER_AIDET_NR_IRQS		256
 

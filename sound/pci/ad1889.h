@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Analog Devices 1889 audio driver
- * Copyright (C) 2004, Kyle McMartin <kyle@parisc-linux.org>
+ * Copyright (C) 2004, Kyle McMartin <kyle@parisc-linaos.org>
  */
 
 #ifndef __AD1889_H__

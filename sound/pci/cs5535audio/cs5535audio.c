@@ -7,13 +7,13 @@
  * This work was sponsored by CIS(M) Sdn Bhd.
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

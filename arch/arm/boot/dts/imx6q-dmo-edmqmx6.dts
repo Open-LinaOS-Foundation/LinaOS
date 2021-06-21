@@ -70,7 +70,7 @@
 		led-blue {
 			label = "blue";
 			gpios = <&stmpe_gpio1 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-green {

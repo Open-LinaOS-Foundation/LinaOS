@@ -8,7 +8,7 @@
 #define _MTK_DRM_PLANE_H_
 
 #include <drm/drm_crtc.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct mtk_plane_pending_state {
 	bool				config;

@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/module.h>
-#include <linux/posix-clock.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
+#include <linaos/module.h>
+#include <linaos/posix-clock.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/timekeeping.h>
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #include "ptp_private.h"
 

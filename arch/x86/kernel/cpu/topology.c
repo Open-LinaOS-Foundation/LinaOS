@@ -5,7 +5,7 @@
  * detection.
  */
 
-#include <linux/cpu.h>
+#include <linaos/cpu.h>
 #include <asm/apic.h>
 #include <asm/memtype.h>
 #include <asm/processor.h>

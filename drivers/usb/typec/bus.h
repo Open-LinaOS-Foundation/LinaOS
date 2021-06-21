@@ -3,7 +3,7 @@
 #ifndef __USB_TYPEC_ALTMODE_H__
 #define __USB_TYPEC_ALTMODE_H__
 
-#include <linux/usb/typec_altmode.h>
+#include <linaos/usb/typec_altmode.h>
 
 struct bus_type;
 struct typec_mux;

@@ -5,24 +5,24 @@
  * Copyright (c) 2015 Sabrina Dubroca <sd@queasysnail.net>
  */
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/socket.h>
+#include <linaos/module.h>
 #include <crypto/aead.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/refcount.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/refcount.h>
 #include <net/genetlink.h>
 #include <net/sock.h>
 #include <net/gro_cells.h>
 #include <net/macsec.h>
-#include <linux/phy.h>
-#include <linux/byteorder/generic.h>
-#include <linux/if_arp.h>
+#include <linaos/phy.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/if_arp.h>
 
-#include <uapi/linux/if_macsec.h>
+#include <uapi/linaos/if_macsec.h>
 
 #define MACSEC_SCI_LEN 8
 

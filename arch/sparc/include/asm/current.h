@@ -12,7 +12,7 @@
 #ifndef _SPARC_CURRENT_H
 #define _SPARC_CURRENT_H
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 
 #ifdef CONFIG_SPARC64
 register struct task_struct *current asm("g4");

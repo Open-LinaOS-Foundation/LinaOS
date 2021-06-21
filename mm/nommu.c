@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/nommu.c
+ *  linaos/mm/nommu.c
  *
  *  Replacement code for mm functions to support CPU's that don't
  *  have any form of memory management unit (thus no virtual memory).
@@ -9,35 +9,35 @@
  *
  *  Copyright (c) 2004-2008 David Howells <dhowells@redhat.com>
  *  Copyright (c) 2000-2003 David McCullough <davidm@snapgear.com>
- *  Copyright (c) 2000-2001 D Jeff Dionne <jeff@uClinux.org>
+ *  Copyright (c) 2000-2001 D Jeff Dionne <jeff@uClinaos.org>
  *  Copyright (c) 2002      Greg Ungerer <gerg@snapgear.com>
- *  Copyright (c) 2007-2010 Paul Mundt <lethal@linux-sh.org>
+ *  Copyright (c) 2007-2010 Paul Mundt <lethal@linaos-sh.org>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/vmacache.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/file.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/compiler.h>
-#include <linux/mount.h>
-#include <linux/personality.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/printk.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/vmacache.h>
+#include <linaos/mman.h>
+#include <linaos/swap.h>
+#include <linaos/file.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/compiler.h>
+#include <linaos/mount.h>
+#include <linaos/personality.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/audit.h>
+#include <linaos/printk.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>
@@ -1054,7 +1054,7 @@ enomem:
 }
 
 /*
- * handle mapping creation for uClinux
+ * handle mapping creation for uClinaos
  */
 unsigned long do_mmap(struct file *file,
 			unsigned long addr,

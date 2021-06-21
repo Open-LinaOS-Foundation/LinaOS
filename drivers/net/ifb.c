@@ -24,13 +24,13 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
 #include <net/pkt_sched.h>
 #include <net/net_namespace.h>
 

@@ -2,7 +2,7 @@
 /*
     Driver for Zarlink VP310/MT312/ZL10313 Satellite Channel Decoder
 
-    Copyright (C) 2003 Andreas Oberritter <obi@linuxtv.org>
+    Copyright (C) 2003 Andreas Oberritter <obi@linaostv.org>
     Copyright (C) 2008 Matthias Schwarzott <zzam@gentoo.org>
 
 
@@ -11,13 +11,13 @@
     http://products.zarlink.com/product_profiles/SL1935.htm
 */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "mt312_priv.h"
@@ -833,7 +833,7 @@ module_param(debug, int, 0644);
 MODULE_PARM_DESC(debug, "Turn on/off frontend debugging (default:off).");
 
 MODULE_DESCRIPTION("Zarlink VP310/MT312/ZL10313 DVB-S Demodulator driver");
-MODULE_AUTHOR("Andreas Oberritter <obi@linuxtv.org>");
+MODULE_AUTHOR("Andreas Oberritter <obi@linaostv.org>");
 MODULE_AUTHOR("Matthias Schwarzott <zzam@gentoo.org>");
 MODULE_LICENSE("GPL");
 

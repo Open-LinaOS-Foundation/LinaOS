@@ -29,7 +29,7 @@ static inline u32 str_hash(const char *str)
 
 static inline int elf_hash_bits(void)
 {
-	return vmlinux ? ELF_HASH_BITS : 16;
+	return vmlinaos ? ELF_HASH_BITS : 16;
 }
 
 #define elf_hash_add(hashtable, node, key) \

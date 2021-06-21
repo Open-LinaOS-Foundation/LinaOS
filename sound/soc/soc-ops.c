@@ -11,14 +11,14 @@
 //         with code, comments and ideas from :-
 //         Richard Purdie <richard@openedhand.com>
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/bitops.h>
+#include <linaos/ctype.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

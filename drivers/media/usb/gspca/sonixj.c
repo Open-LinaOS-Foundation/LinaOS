@@ -10,7 +10,7 @@
 
 #define MODULE_NAME "sonixj"
 
-#include <linux/input.h>
+#include <linaos/input.h>
 #include "gspca.h"
 #include "jpeg.h"
 

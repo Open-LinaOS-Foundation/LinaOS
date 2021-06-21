@@ -1,7 +1,7 @@
 What:		/sys/bus/iio/devices/iio:deviceX/in_allow_async_readout
 Date:		December 2015
 KernelVersion:	4.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		By default (value '0'), the capture thread checks for the Conversion
 		Ready Flag to being set prior to committing a new value to the sample
@@ -17,7 +17,7 @@ Description:
 What:		/sys/bus/iio/devices/iio:deviceX/in_shunt_resistor
 Date:		December 2015
 KernelVersion:	4.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		The value of the shunt resistor may be known only at runtime fom an
 		eeprom content read by a client application. This attribute allows to

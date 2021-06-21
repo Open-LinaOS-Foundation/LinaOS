@@ -2,7 +2,7 @@
 /*
     tda18271-priv.h - private header for the NXP TDA18271 silicon tuner
 
-    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linuxtv.org>
+    Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linaostv.org>
 
 */
 
@@ -11,9 +11,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
 #include "tuner-i2c.h"
 #include "tda18271.h"
 

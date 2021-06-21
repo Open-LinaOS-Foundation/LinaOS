@@ -16,8 +16,8 @@
 #include "dm-verity.h"
 #include "dm-verity-fec.h"
 #include "dm-verity-verify-sig.h"
-#include <linux/module.h>
-#include <linux/reboot.h>
+#include <linaos/module.h>
+#include <linaos/reboot.h>
 
 #define DM_MSG_PREFIX			"verity"
 

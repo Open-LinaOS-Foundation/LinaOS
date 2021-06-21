@@ -10,10 +10,10 @@
 #ifndef __VBOX_DRV_H__
 #define __VBOX_DRV_H__
 
-#include <linux/genalloc.h>
-#include <linux/io.h>
-#include <linux/irqreturn.h>
-#include <linux/string.h>
+#include <linaos/genalloc.h>
+#include <linaos/io.h>
+#include <linaos/irqreturn.h>
+#include <linaos/string.h>
 
 #include <drm/drm_encoder.h>
 #include <drm/drm_gem.h>

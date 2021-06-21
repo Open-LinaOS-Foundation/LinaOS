@@ -10,10 +10,10 @@
  * Added OMAP4/5 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
 #include <asm/fncpy.h>
 #include <asm/tlb.h>

@@ -4,8 +4,8 @@
  *  Routines for control of EMU10K1 MPU-401 in UART mode
  */
 
-#include <linux/time.h>
-#include <linux/init.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
 

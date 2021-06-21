@@ -9,15 +9,15 @@
 
 #define pr_fmt(fmt) "LoadPin: " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel_read_file.h>
-#include <linux/lsm_hooks.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/path.h>
-#include <linux/sched.h>	/* current */
-#include <linux/string_helpers.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/kernel_read_file.h>
+#include <linaos/lsm_hooks.h>
+#include <linaos/mount.h>
+#include <linaos/blkdev.h>
+#include <linaos/path.h>
+#include <linaos/sched.h>	/* current */
+#include <linaos/string_helpers.h>
 
 static void report_load(const char *origin, struct file *file, char *operation)
 {

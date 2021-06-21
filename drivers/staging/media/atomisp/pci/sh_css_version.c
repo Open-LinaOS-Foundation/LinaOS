@@ -13,8 +13,8 @@
  * more details.
  */
 
-#include "../../include/linux/atomisp.h"
-#include "../../include/linux/atomisp_platform.h"
+#include "../../include/linaos/atomisp.h"
+#include "../../include/linaos/atomisp_platform.h"
 #include "ia_css_version.h"
 #include "ia_css_version_data.h"
 #include "ia_css_err.h"

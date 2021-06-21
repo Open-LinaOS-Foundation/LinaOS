@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@linaos.ie>
  * Copyright (c) 2007, 2010 Intel Corporation
  *   Jesse Barnes <jesse.barnes@intel.com>
  *
@@ -23,8 +23,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_edid.h>

@@ -6,13 +6,13 @@
  *
  * TODO: Buffer, trigger, and IRQ support
  */
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #include "fxos8700.h"
 

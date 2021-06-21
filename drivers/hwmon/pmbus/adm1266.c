@@ -6,20 +6,20 @@
  * Copyright 2020 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/crc8.h>
-#include <linux/debugfs.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
+#include <linaos/bitfield.h>
+#include <linaos/crc8.h>
+#include <linaos/debugfs.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-smbus.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/nvmem-provider.h>
 #include "pmbus.h"
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
+#include <linaos/slab.h>
+#include <linaos/timekeeping.h>
 
 #define ADM1266_BLACKBOX_CONFIG	0xD3
 #define ADM1266_PDIO_CONFIG	0xD4

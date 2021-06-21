@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *  Rewritten by Cort Dougan (cort@cs.nmt.edu) for PReP
  *    Copyright (C) 1996 Cort Dougan <cort@cs.nmt.edu>
  *  Low-level exception handlers and MMU support
@@ -14,10 +14,10 @@
  *  embedded processors, including trap and interrupt dispatch.
  */
 
-#include <linux/init.h>
-#include <linux/magic.h>
-#include <linux/pgtable.h>
-#include <linux/sizes.h>
+#include <linaos/init.h>
+#include <linaos/magic.h>
+#include <linaos/pgtable.h>
+#include <linaos/sizes.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>
@@ -217,10 +217,10 @@ instruction_counter:
 	rlwimi	r11, r10, 0, _PAGE_GUARDED | _PAGE_ACCESSED
 	rlwimi	r11, r10, 32 - 9, _PMD_PAGE_512K
 	mtspr	SPRN_MI_TWC, r11
-	/* The Linux PTE won't go exactly into the MMU TLB.
+	/* The LinaOS PTE won't go exactly into the MMU TLB.
 	 * Software indicator bits 20 and 23 must be clear.
 	 * Software indicator bits 22, 24, 25, 26, and 27 must be
-	 * set.  All other Linux PTE bits control the behavior
+	 * set.  All other LinaOS PTE bits control the behavior
 	 * of the MMU.
 	 */
 	rlwinm	r10, r10, 0, ~0x0f00	/* Clear bits 20-23 */
@@ -266,19 +266,19 @@ instruction_counter:
 	mfspr	r10, SPRN_MD_TWC
 	lwz	r10, 0(r10)	/* Get the pte */
 
-	/* Insert Guarded and Accessed flags into the TWC from the Linux PTE.
-	 * It is bit 27 of both the Linux PTE and the TWC (at least
+	/* Insert Guarded and Accessed flags into the TWC from the LinaOS PTE.
+	 * It is bit 27 of both the LinaOS PTE and the TWC (at least
 	 * I got that right :-).  It will be better when we can put
-	 * this into the Linux pgd/pmd and load it in the operation
+	 * this into the LinaOS pgd/pmd and load it in the operation
 	 * above.
 	 */
 	rlwimi	r11, r10, 0, _PAGE_GUARDED | _PAGE_ACCESSED
 	rlwimi	r11, r10, 32 - 9, _PMD_PAGE_512K
 	mtspr	SPRN_MD_TWC, r11
 
-	/* The Linux PTE won't go exactly into the MMU TLB.
+	/* The LinaOS PTE won't go exactly into the MMU TLB.
 	 * Software indicator bits 24, 25, 26, and 27 must be
-	 * set.  All other Linux PTE bits control the behavior
+	 * set.  All other LinaOS PTE bits control the behavior
 	 * of the MMU.
 	 */
 	li	r11, RPN_PATTERN

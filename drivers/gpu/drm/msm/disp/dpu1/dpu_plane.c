@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (C) 2014-2018 The Linux Foundation. All rights reserved.
+ * Copyright (C) 2014-2018 The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
 #define pr_fmt(fmt)	"[drm:%s:%d] " fmt, __func__, __LINE__
 
-#include <linux/debugfs.h>
-#include <linux/dma-buf.h>
+#include <linaos/debugfs.h>
+#include <linaos/dma-buf.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_uapi.h>

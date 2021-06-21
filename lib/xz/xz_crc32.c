@@ -19,7 +19,7 @@
 
 /*
  * STATIC_RW_DATA is used in the pre-boot environment on some architectures.
- * See <linux/decompress/mm.h> for details.
+ * See <linaos/decompress/mm.h> for details.
  */
 #ifndef STATIC_RW_DATA
 #	define STATIC_RW_DATA static

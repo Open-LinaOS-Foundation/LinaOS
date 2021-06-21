@@ -5,15 +5,15 @@
  *  Copyright (c) 2003 Silicon Graphics, Inc.  All rights reserved.
  *  Copyright (c) 2004, 2005 James Bottomley <James.Bottomley@SteelEye.com>
  */
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/blkdev.h>
-#include <linux/mutex.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <linaos/ctype.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/workqueue.h>
+#include <linaos/blkdev.h>
+#include <linaos/mutex.h>
+#include <linaos/sysfs.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
 #include <scsi/scsi.h>
 #include "scsi_priv.h"
 #include <scsi/scsi_device.h>

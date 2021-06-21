@@ -9,21 +9,21 @@
  *  Based on max3107.c, by Aavamobile
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/spi/spi.h>
-#include <linux/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/spi/spi.h>
+#include <linaos/uaccess.h>
 
 #define MAX310X_NAME			"max310x"
 #define MAX310X_MAJOR			204

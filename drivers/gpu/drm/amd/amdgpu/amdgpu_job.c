@@ -21,9 +21,9 @@
  *
  *
  */
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
+#include <linaos/kthread.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
 
 #include "amdgpu.h"
 #include "amdgpu_trace.h"

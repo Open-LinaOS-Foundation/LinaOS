@@ -4,7 +4,7 @@
  * All rights reserved.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * linaos-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street

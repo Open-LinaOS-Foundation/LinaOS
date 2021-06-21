@@ -30,13 +30,13 @@
  * https://datasheets.maximintegrated.com/en/ds/MAX31953-MAX31963.pdf
  */
 
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/crc8.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
+#include <linaos/bitmap.h>
+#include <linaos/bitops.h>
+#include <linaos/crc8.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
 
 enum max3191x_mode {
 	STATUS_BYTE_ENABLED,

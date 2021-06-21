@@ -2,43 +2,43 @@
 /*
  * QLogic qlge NIC HBA Driver
  * Copyright (c)  2003-2008 QLogic Corporation
- * Author:     Linux qlge network device driver by
+ * Author:     LinaOS qlge network device driver by
  *                      Ron Mercer <ron.mercer@qlogic.com>
  */
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/pagemap.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dmapool.h>
-#include <linux/mempool.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pagemap.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/dmapool.h>
+#include <linaos/mempool.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 #include <net/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/prefetch.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/prefetch.h>
 #include <net/ip6_checksum.h>
 
 #include "qlge.h"

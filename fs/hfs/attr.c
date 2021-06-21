@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfs/attr.c
+ *  linaos/fs/hfs/attr.c
  *
  * (C) 2003 Ardis Technologies <roman@ardistech.com>
  *
@@ -8,8 +8,8 @@
  */
 
 
-#include <linux/fs.h>
-#include <linux/xattr.h>
+#include <linaos/fs.h>
+#include <linaos/xattr.h>
 
 #include "hfs_fs.h"
 #include "btree.h"

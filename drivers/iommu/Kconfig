@@ -394,7 +394,7 @@ config HYPERV_IOMMU
 	select IOMMU_API
 	default HYPERV
 	help
-	  Stub IOMMU driver to handle IRQs as to allow Hyper-V Linux
+	  Stub IOMMU driver to handle IRQs as to allow Hyper-V LinaOS
 	  guests to run with x2APIC mode enabled.
 
 config VIRTIO_IOMMU

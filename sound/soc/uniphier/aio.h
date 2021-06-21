@@ -8,8 +8,8 @@
 #ifndef SND_UNIPHIER_AIO_H__
 #define SND_UNIPHIER_AIO_H__
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>

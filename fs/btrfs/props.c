@@ -3,7 +3,7 @@
  * Copyright (C) 2014 Filipe David Borba Manana <fdmanana@gmail.com>
  */
 
-#include <linux/hashtable.h>
+#include <linaos/hashtable.h>
 #include "props.h"
 #include "btrfs_inode.h"
 #include "transaction.h"

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/pci.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/swiotlb.h>
-#include <linux/memblock.h>
-#include <linux/dma-direct.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/pci.h>
+#include <linaos/cache.h>
+#include <linaos/init.h>
+#include <linaos/swiotlb.h>
+#include <linaos/memblock.h>
+#include <linaos/dma-direct.h>
+#include <linaos/mem_encrypt.h>
 
 #include <asm/iommu.h>
 #include <asm/swiotlb.h>

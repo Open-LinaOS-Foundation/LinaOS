@@ -11,4 +11,4 @@
 /* Used by test.c files */
 #include <pthread.h>
 #include <stdlib.h>
-#include <linux/srcu.h>
+#include <linaos/srcu.h>

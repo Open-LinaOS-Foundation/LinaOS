@@ -6,7 +6,7 @@
 #if !defined(_TRACE_OCXL_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_OCXL_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 
 TRACE_EVENT(ocxl_mmu_notifier_range,
@@ -92,7 +92,7 @@ DECLARE_EVENT_CLASS(ocxl_context,
 		__entry->tidr = tidr;
 	),
 
-	TP_printk("linux pid=%d spa=0x%p pasid=0x%x pidr=0x%x tidr=0x%x",
+	TP_printk("linaos pid=%d spa=0x%p pasid=0x%x pidr=0x%x tidr=0x%x",
 		__entry->pid,
 		__entry->spa,
 		__entry->pasid,

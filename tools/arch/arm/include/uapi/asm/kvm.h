@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2012 - Virtual Open Systems and Columbia University
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
@@ -20,8 +20,8 @@
 #ifndef __ARM_KVM_H__
 #define __ARM_KVM_H__
 
-#include <linux/types.h>
-#include <linux/psci.h>
+#include <linaos/types.h>
+#include <linaos/psci.h>
 #include <asm/ptrace.h>
 
 #define __KVM_HAVE_GUEST_DEBUG

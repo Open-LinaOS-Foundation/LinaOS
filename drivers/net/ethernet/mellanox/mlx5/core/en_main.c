@@ -32,11 +32,11 @@
 
 #include <net/tc_act/tc_gact.h>
 #include <net/pkt_cls.h>
-#include <linux/mlx5/fs.h>
+#include <linaos/mlx5/fs.h>
 #include <net/vxlan.h>
 #include <net/geneve.h>
-#include <linux/bpf.h>
-#include <linux/if_bridge.h>
+#include <linaos/bpf.h>
+#include <linaos/if_bridge.h>
 #include <net/page_pool.h>
 #include <net/xdp_sock_drv.h>
 #include "eswitch.h"

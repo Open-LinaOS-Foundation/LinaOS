@@ -1,4 +1,4 @@
-/* mga_irq.c -- IRQ handling for radeon -*- linux-c -*-
+/* mga_irq.c -- IRQ handling for radeon -*- linaos-c -*-
  */
 /*
  * Copyright (C) The Weather Channel, Inc.  2002.  All Rights Reserved.

@@ -1,13 +1,13 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ===========================================
-PTP hardware clock infrastructure for Linux
+PTP hardware clock infrastructure for LinaOS
 ===========================================
 
   This patch set introduces support for IEEE 1588 PTP clocks in
-  Linux. Together with the SO_TIMESTAMPING socket options, this
+  LinaOS. Together with the SO_TIMESTAMPING socket options, this
   presents a standardized method for developing PTP user space
-  programs, synchronizing Linux with external clocks, and using the
+  programs, synchronizing LinaOS with external clocks, and using the
   ancillary features of PTP hardware clocks.
 
   A new class driver exports a kernel interface for specific clock
@@ -24,7 +24,7 @@ PTP hardware clock infrastructure for Linux
     - Time stamp external events
     - Period output signals configurable from user space
     - Low Pass Filter (LPF) access from user space
-    - Synchronization of the Linux system time via the PPS subsystem
+    - Synchronization of the LinaOS system time via the PPS subsystem
 
 PTP hardware clock kernel API
 =============================
@@ -58,7 +58,7 @@ PTP hardware clock user space API
 Writing clock drivers
 =====================
 
-   Clock drivers include include/linux/ptp_clock_kernel.h and register
+   Clock drivers include include/linaos/ptp_clock_kernel.h and register
    themselves by presenting a 'struct ptp_clock_info' to the
    registration method. Clock drivers must implement all of the
    functions in the interface. If a clock does not offer a particular

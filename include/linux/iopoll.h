@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2012-2014 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2014 The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _LINUX_IOPOLL_H
 #define _LINUX_IOPOLL_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ktime.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/ktime.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
 
 /**
  * read_poll_timeout - Periodically poll an address until a condition is

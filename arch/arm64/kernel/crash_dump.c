@@ -6,11 +6,11 @@
  * Author: AKASHI Takahiro <takahiro.akashi@linaro.org>
  */
 
-#include <linux/crash_dump.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/uaccess.h>
+#include <linaos/crash_dump.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
+#include <linaos/uaccess.h>
 #include <asm/memory.h>
 
 /**

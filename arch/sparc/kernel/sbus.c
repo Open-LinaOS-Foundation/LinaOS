@@ -5,17 +5,17 @@
  * Copyright (C) 1999 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/numa.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/numa.h>
 
 #include <asm/page.h>
 #include <asm/io.h>
@@ -61,7 +61,7 @@ void sbus_set_sbus64(struct device *dev, int bursts)
 {
 	struct iommu *iommu = dev->archdata.iommu;
 	struct platform_device *op = to_platform_device(dev);
-	const struct linux_prom_registers *regs;
+	const struct linaos_prom_registers *regs;
 	unsigned long cfg_reg;
 	int slot;
 	u64 val;
@@ -539,7 +539,7 @@ static void __init sysio_register_error_handlers(struct platform_device *op)
 /* Boot time initialization. */
 static void __init sbus_iommu_init(struct platform_device *op)
 {
-	const struct linux_prom64_registers *pr;
+	const struct linaos_prom64_registers *pr;
 	struct device_node *dp = op->dev.of_node;
 	struct iommu *iommu;
 	struct strbuf *strbuf;

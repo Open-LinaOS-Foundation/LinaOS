@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2004, Microtronix Datacom Ltd.
  *
@@ -19,7 +19,7 @@
 #ifndef _UAPI__ASM_SIGCONTEXT_H
 #define _UAPI__ASM_SIGCONTEXT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define MCONTEXT_VERSION 2
 

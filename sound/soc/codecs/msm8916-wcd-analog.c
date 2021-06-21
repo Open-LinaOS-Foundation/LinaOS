@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2016, The Linux Foundation. All rights reserved.
+// Copyright (c) 2016, The LinaOS Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/types.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

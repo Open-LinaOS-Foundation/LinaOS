@@ -7,7 +7,7 @@
  *
  * (C) Copyright IBM Corp. 2013
  *
- * Author: Frank Haverkamp <haver@linux.vnet.ibm.com>
+ * Author: Frank Haverkamp <haver@linaos.vnet.ibm.com>
  * Author: Joerg-Stephan Vogt <jsvogt@de.ibm.com>
  * Author: Michael Jung <mijung@gmx.net>
  * Author: Michael Ruettger <michael@ibmra.de>
@@ -18,18 +18,18 @@
  * ddcb_queue as well as ddcb_requ.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/stringify.h>
-#include <linux/pci.h>
-#include <linux/semaphore.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/cdev.h>
+#include <linaos/stringify.h>
+#include <linaos/pci.h>
+#include <linaos/semaphore.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/debugfs.h>
+#include <linaos/slab.h>
 
-#include <linux/genwqe/genwqe_card.h>
+#include <linaos/genwqe/genwqe_card.h>
 #include "genwqe_driver.h"
 
 #define GENWQE_MSI_IRQS			4  /* Just one supported, no MSIx */

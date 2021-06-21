@@ -26,24 +26,24 @@ suffix-$(CONFIG_KERNEL_LZMA)	:= lzma
 suffix-$(CONFIG_KERNEL_XZ)	:= xz
 suffix-$(CONFIG_KERNEL_LZO)	:= lzo
 
-targets := zImage vmlinux.srec romImage uImage uImage.srec uImage.gz \
+targets := zImage vmlinaos.srec romImage uImage uImage.srec uImage.gz \
 	   uImage.bz2 uImage.lzma uImage.xz uImage.lzo uImage.bin
-extra-y += vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2 vmlinux.bin.lzma \
-	   vmlinux.bin.xz vmlinux.bin.lzo
+extra-y += vmlinaos.bin vmlinaos.bin.gz vmlinaos.bin.bz2 vmlinaos.bin.lzma \
+	   vmlinaos.bin.xz vmlinaos.bin.lzo
 subdir- := compressed romimage
 
-$(obj)/zImage: $(obj)/compressed/vmlinux FORCE
+$(obj)/zImage: $(obj)/compressed/vmlinaos FORCE
 	$(call if_changed,objcopy)
 	@echo '  Kernel: $@ is ready'
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmlinaos: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
-$(obj)/romImage: $(obj)/romimage/vmlinux FORCE
+$(obj)/romImage: $(obj)/romimage/vmlinaos FORCE
 	$(call if_changed,objcopy)
 	@echo '  Kernel: $@ is ready'
 
-$(obj)/romimage/vmlinux: $(obj)/zImage FORCE
+$(obj)/romimage/vmlinaos: $(obj)/zImage FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/romimage $@
 
 KERNEL_MEMORY	:= $(shell /bin/bash -c 'printf "0x%08x" \
@@ -62,44 +62,44 @@ KERNEL_ENTRY	:= $(shell /bin/bash -c 'printf "0x%08x" \
 UIMAGE_LOADADDR = $(KERNEL_LOAD)
 UIMAGE_ENTRYADDR = $(KERNEL_ENTRY)
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/vmlinux.bin.gz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinaos.bin.gz: $(obj)/vmlinaos.bin FORCE
 	$(call if_changed,gzip)
 
-$(obj)/vmlinux.bin.bz2: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinaos.bin.bz2: $(obj)/vmlinaos.bin FORCE
 	$(call if_changed,bzip2)
 
-$(obj)/vmlinux.bin.lzma: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinaos.bin.lzma: $(obj)/vmlinaos.bin FORCE
 	$(call if_changed,lzma)
 
-$(obj)/vmlinux.bin.xz: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinaos.bin.xz: $(obj)/vmlinaos.bin FORCE
 	$(call if_changed,xzkern)
 
-$(obj)/vmlinux.bin.lzo: $(obj)/vmlinux.bin FORCE
+$(obj)/vmlinaos.bin.lzo: $(obj)/vmlinaos.bin FORCE
 	$(call if_changed,lzo)
 
-$(obj)/uImage.bz2: $(obj)/vmlinux.bin.bz2
+$(obj)/uImage.bz2: $(obj)/vmlinaos.bin.bz2
 	$(call if_changed,uimage,bzip2)
 
-$(obj)/uImage.gz: $(obj)/vmlinux.bin.gz
+$(obj)/uImage.gz: $(obj)/vmlinaos.bin.gz
 	$(call if_changed,uimage,gzip)
 
-$(obj)/uImage.lzma: $(obj)/vmlinux.bin.lzma
+$(obj)/uImage.lzma: $(obj)/vmlinaos.bin.lzma
 	$(call if_changed,uimage,lzma)
 
-$(obj)/uImage.xz: $(obj)/vmlinux.bin.xz
+$(obj)/uImage.xz: $(obj)/vmlinaos.bin.xz
 	$(call if_changed,uimage,xz)
 
-$(obj)/uImage.lzo: $(obj)/vmlinux.bin.lzo
+$(obj)/uImage.lzo: $(obj)/vmlinaos.bin.lzo
 	$(call if_changed,uimage,lzo)
 
-$(obj)/uImage.bin: $(obj)/vmlinux.bin
+$(obj)/uImage.bin: $(obj)/vmlinaos.bin
 	$(call if_changed,uimage,none)
 
-OBJCOPYFLAGS_vmlinux.srec := -I binary -O srec
-$(obj)/vmlinux.srec: $(obj)/compressed/vmlinux
+OBJCOPYFLAGS_vmlinaos.srec := -I binary -O srec
+$(obj)/vmlinaos.srec: $(obj)/compressed/vmlinaos
 	$(call if_changed,objcopy)
 
 OBJCOPYFLAGS_uImage.srec := -I binary -O srec

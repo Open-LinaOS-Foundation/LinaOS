@@ -7,8 +7,8 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_bridge.h>
 #include <drm/drm_crtc.h>

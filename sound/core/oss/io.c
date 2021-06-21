@@ -19,7 +19,7 @@
  *
  */
   
-#include <linux/time.h>
+#include <linaos/time.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

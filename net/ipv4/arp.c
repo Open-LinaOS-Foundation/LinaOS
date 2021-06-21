@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* linux/net/ipv4/arp.c
+/* linaos/net/ipv4/arp.c
  *
  * Copyright (C) 1994 by Florian  La Roche
  *
@@ -71,32 +71,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/capability.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/net.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/capability.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/errno.h>
+#include <linaos/in.h>
+#include <linaos/mm.h>
+#include <linaos/inet.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/fddidevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/stat.h>
+#include <linaos/init.h>
+#include <linaos/net.h>
+#include <linaos/rcupdate.h>
+#include <linaos/slab.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 #endif
 
 #include <net/net_namespace.h>
@@ -112,9 +112,9 @@
 #include <net/dst_metadata.h>
 #include <net/ip_tunnels.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/netfilter_arp.h>
+#include <linaos/netfilter_arp.h>
 
 /*
  *	Interface to generic neighbour cache.

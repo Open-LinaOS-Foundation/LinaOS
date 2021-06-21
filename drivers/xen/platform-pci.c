@@ -12,10 +12,10 @@
  */
 
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 
 #include <xen/platform_pci.h>
 #include <xen/grant_table.h>

@@ -10,16 +10,16 @@
  * Balaji Rao <balajirrao@openmoko.org>
  */
 
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/power/twl4030_madc_battery.h>
-#include <linux/iio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/param.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/slab.h>
+#include <linaos/sort.h>
+#include <linaos/power/twl4030_madc_battery.h>
+#include <linaos/iio/consumer.h>
 
 struct twl4030_madc_battery {
 	struct power_supply *psy;

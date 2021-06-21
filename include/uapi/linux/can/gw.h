@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0-only WITH LinaOS-syscall-note) OR BSD-3-Clause) */
 /*
- * linux/can/gw.h
+ * linaos/can/gw.h
  *
  * Definitions for CAN frame Gateway/Router/Bridge
  *
@@ -45,8 +45,8 @@
 #ifndef _UAPI_CAN_GW_H
 #define _UAPI_CAN_GW_H
 
-#include <linux/types.h>
-#include <linux/can.h>
+#include <linaos/types.h>
+#include <linaos/can.h>
 
 struct rtcanmsg {
 	__u8  can_family;
@@ -162,7 +162,7 @@ enum {
  *
  * CGW_FILTER (length 8 bytes):
  * Sets a CAN receive filter for the gateway job specified by the
- * struct can_filter described in include/linux/can.h
+ * struct can_filter described in include/linaos/can.h
  *
  * CGW_MOD_(AND|OR|XOR|SET) (length 17 bytes):
  * Specifies a modification that's done to a received CAN frame before it is

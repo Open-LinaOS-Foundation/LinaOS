@@ -7,15 +7,15 @@
  * Based on mtk_wdt.c
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
-#include <uapi/linux/psci.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
+#include <uapi/linaos/psci.h>
 
 #define DRV_NAME		"arm_smc_wdt"
 #define DRV_VERSION		"1.0"

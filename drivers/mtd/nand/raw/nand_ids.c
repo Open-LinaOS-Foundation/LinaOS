@@ -3,7 +3,7 @@
  *  Copyright (C) 2002 Thomas Gleixner (tglx@linutronix.de)
  */
 
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 
 #include "internals.h"
 

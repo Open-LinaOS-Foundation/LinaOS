@@ -4,14 +4,14 @@
  * Copyright (C) 2016 Red Hat, Inc.
  */
 
-#include <linux/fs.h>
-#include <linux/cred.h>
-#include <linux/ctype.h>
-#include <linux/namei.h>
-#include <linux/xattr.h>
-#include <linux/ratelimit.h>
-#include <linux/mount.h>
-#include <linux/exportfs.h>
+#include <linaos/fs.h>
+#include <linaos/cred.h>
+#include <linaos/ctype.h>
+#include <linaos/namei.h>
+#include <linaos/xattr.h>
+#include <linaos/ratelimit.h>
+#include <linaos/mount.h>
+#include <linaos/exportfs.h>
 #include "overlayfs.h"
 
 struct ovl_lookup_data {

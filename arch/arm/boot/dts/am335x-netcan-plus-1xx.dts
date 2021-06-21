@@ -24,7 +24,7 @@
 
 		led@1 {
 			label = "can_data";
-			linux,default-trigger = "netdev";
+			linaos,default-trigger = "netdev";
 			gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
 			default-state = "off";
 		};

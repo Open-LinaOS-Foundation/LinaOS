@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * UFS Transport SGIO v4 BSG Message Support
  *
@@ -8,7 +8,7 @@
 #ifndef SCSI_BSG_UFS_H
 #define SCSI_BSG_UFS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 /*
  * This file intended to be included by both kernel and user space
  */

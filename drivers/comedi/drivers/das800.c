@@ -4,7 +4,7 @@
  * Driver for Keitley das800 series boards and compatibles
  * Copyright (C) 2000 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -43,9 +43,9 @@
  *	stop_src:       TRIG_NONE | TRIG_COUNT
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 
 #include "../comedidev.h"
 

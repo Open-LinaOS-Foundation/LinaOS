@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * kirkwood-pogoplug-series-4.dts - Device tree file for PogoPlug Series 4
- * inspired by the board files made by Kevin Mihelich for ArchLinux,
+ * inspired by the board files made by Kevin Mihelich for ArchLinaOS,
  * and their DTS file.
  *
  * Copyright (C) 2015 Linus Walleij <linus.walleij@linaro.org>
@@ -11,7 +11,7 @@
 
 #include "kirkwood.dtsi"
 #include "kirkwood-6192.dtsi"
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 
 / {
 	model = "Cloud Engines PogoPlug Series 4";
@@ -37,7 +37,7 @@
 		eject {
 			debounce-interval = <50>;
 			wakeup-source;
-			linux,code = <KEY_EJECTCD>;
+			linaos,code = <KEY_EJECTCD>;
 			label = "Eject Button";
 			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
 		};

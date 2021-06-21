@@ -4,8 +4,8 @@
  * Copyright (C) 2013, 2014 Red Hat, Inc.
  */
 
-#include <linux/pe.h>
-#include <linux/sizes.h>
+#include <linaos/pe.h>
+#include <linaos/sizes.h>
 
 	.macro	efi_signature_nop
 #ifdef CONFIG_EFI

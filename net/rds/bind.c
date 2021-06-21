@@ -30,13 +30,13 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/if_arp.h>
-#include <linux/jhash.h>
-#include <linux/ratelimit.h>
+#include <linaos/in.h>
+#include <linaos/ipv6.h>
+#include <linaos/if_arp.h>
+#include <linaos/jhash.h>
+#include <linaos/ratelimit.h>
 #include "rds.h"
 
 static struct rhashtable bind_hash_table;

@@ -2,12 +2,12 @@
  *
  * See copyright notice in main.c
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
-#include <linux/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/if_arp.h>
+#include <linaos/wireless.h>
+#include <linaos/ieee80211.h>
+#include <linaos/etherdevice.h>
 #include <net/iw_handler.h>
 #include <net/cfg80211.h>
 #include <net/cfg80211-wext.h>

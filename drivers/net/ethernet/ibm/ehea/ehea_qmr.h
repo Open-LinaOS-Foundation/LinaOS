@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea_qmr.h
+ *  linaos/drivers/net/ethernet/ibm/ehea/ehea_qmr.h
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *
@@ -15,7 +15,7 @@
 #ifndef __EHEA_QMR_H__
 #define __EHEA_QMR_H__
 
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 #include "ehea.h"
 #include "ehea_hw.h"
 

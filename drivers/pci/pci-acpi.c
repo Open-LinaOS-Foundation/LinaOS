@@ -7,16 +7,16 @@
  * Copyright (C) 2004 Intel Corp.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/pci_hotplug.h>
-#include <linux/module.h>
-#include <linux/pci-acpi.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/irqdomain.h>
+#include <linaos/pci.h>
+#include <linaos/msi.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/module.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
 #include "pci.h"
 
 /*

@@ -2,7 +2,7 @@
 /*
  * OpenRISC entry.S
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -12,8 +12,8 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/pgtable.h>
 
 #include <asm/processor.h>
 #include <asm/unistd.h>

@@ -8,7 +8,7 @@
 #ifndef DVB_DUMMY_FE_H
 #define DVB_DUMMY_FE_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 #include <media/dvb_frontend.h>
 
 #if IS_REACHABLE(CONFIG_DVB_DUMMY_FE)

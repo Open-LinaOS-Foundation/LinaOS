@@ -31,27 +31,27 @@
     
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/timer.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/bitops.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 
 #include <pcmcia/ss.h>
 
-#include <linux/isapnp.h>
+#include <linaos/isapnp.h>
 
 /* ISA-bus controllers */
 #include "i82365.h"
@@ -631,7 +631,7 @@ static int __init identify(unsigned int port, u_short sock)
 /*======================================================================
 
     See if a card is present, powered up, in IO mode, and already
-    bound to a (non PC Card) Linux driver.  We leave these alone.
+    bound to a (non PC Card) LinaOS driver.  We leave these alone.
 
     We make an exception for cards that seem to be serial devices.
     

@@ -9,28 +9,28 @@
  * Inspired by st-asc.c from STMicroelectronics (c)
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/dma-direction.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/spinlock.h>
-#include <linux/sysrq.h>
-#include <linux/tty_flip.h>
-#include <linux/tty.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/dma-direction.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysrq.h>
+#include <linaos/tty_flip.h>
+#include <linaos/tty.h>
 
 #include "serial_mctrl_gpio.h"
 #include "stm32-usart.h"

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-2-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR BSD-2-Clause) */
 /*
     This file defines the kernel interface of FUSE
     Copyright (C) 2001-2008  Miklos Szeredi <miklos@szeredi.hu>
@@ -187,7 +187,7 @@
 #define _LINUX_FUSE_H
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <linaos/types.h>
 #else
 #include <stdint.h>
 #endif
@@ -331,7 +331,7 @@ struct fuse_file_lock {
  *			Upon write/truncate suid/sgid is only killed if caller
  *			does not have CAP_FSETID. Additionally upon
  *			write/truncate sgid is killed only if file has group
- *			execute permission. (Same as Linux VFS behavior).
+ *			execute permission. (Same as LinaOS VFS behavior).
  * FUSE_SETXATTR_EXT:	Server supports extended struct fuse_setxattr_in
  */
 #define FUSE_ASYNC_READ		(1 << 0)

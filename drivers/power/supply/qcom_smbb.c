@@ -16,18 +16,18 @@
  *  - HF-Buck
  */
 
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/extcon-provider.h>
-#include <linux/regulator/driver.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/regulator/driver.h>
 
 #define SMBB_CHG_VMAX		0x040
 #define SMBB_CHG_VSAFE		0x041

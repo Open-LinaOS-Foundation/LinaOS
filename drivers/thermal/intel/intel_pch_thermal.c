@@ -7,16 +7,16 @@
  *     Tushar Dave <tushar.n.dave@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/pm.h>
+#include <linaos/suspend.h>
+#include <linaos/thermal.h>
+#include <linaos/types.h>
+#include <linaos/units.h>
 
 /* Intel PCH thermal Device IDs */
 #define PCH_THERMAL_DID_HSW_1	0x9C24 /* Haswell PCH */

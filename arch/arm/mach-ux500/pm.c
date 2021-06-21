@@ -7,14 +7,14 @@
  * Author: Ulf Hansson <ulf.hansson@linaro.org> for Linaro.
  */
 
-#include <linux/kernel.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/platform_data/arm-ux500-pm.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/irqchip/arm-gic.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/suspend.h>
+#include <linaos/platform_data/arm-ux500-pm.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include "db8500-regs.h"
 

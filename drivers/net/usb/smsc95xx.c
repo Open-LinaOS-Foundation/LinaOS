@@ -5,21 +5,21 @@
  *
  *****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/bitrev.h>
-#include <linux/crc16.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
-#include <linux/slab.h>
-#include <linux/of_net.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
+#include <linaos/module.h>
+#include <linaos/kmod.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/bitrev.h>
+#include <linaos/crc16.h>
+#include <linaos/crc32.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/slab.h>
+#include <linaos/of_net.h>
+#include <linaos/mdio.h>
+#include <linaos/phy.h>
 #include "smsc95xx.h"
 
 #define SMSC_CHIPNAME			"smsc95xx"

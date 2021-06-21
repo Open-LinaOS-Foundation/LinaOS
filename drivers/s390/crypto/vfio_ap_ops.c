@@ -4,18 +4,18 @@
  *
  * Copyright IBM Corp. 2018
  *
- * Author(s): Tony Krowiak <akrowiak@linux.ibm.com>
- *	      Halil Pasic <pasic@linux.ibm.com>
- *	      Pierre Morel <pmorel@linux.ibm.com>
+ * Author(s): Tony Krowiak <akrowiak@linaos.ibm.com>
+ *	      Halil Pasic <pasic@linaos.ibm.com>
+ *	      Pierre Morel <pmorel@linaos.ibm.com>
  */
-#include <linux/string.h>
-#include <linux/vfio.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/bitops.h>
-#include <linux/kvm_host.h>
-#include <linux/module.h>
+#include <linaos/string.h>
+#include <linaos/vfio.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/ctype.h>
+#include <linaos/bitops.h>
+#include <linaos/kvm_host.h>
+#include <linaos/module.h>
 #include <asm/kvm.h>
 #include <asm/zcrypt.h>
 

@@ -7,7 +7,7 @@
 #ifndef __MESON_VID_PLL_DIV_H
 #define __MESON_VID_PLL_DIV_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 #include "parm.h"
 
 struct meson_vid_pll_div_data {

@@ -8,21 +8,21 @@
  * Copyright (C) 2006,2007 Pete Zaitcev (zaitcev@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/poll.h>
-#include <linux/compat.h>
-#include <linux/mm.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/time64.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/cdev.h>
+#include <linaos/export.h>
+#include <linaos/usb.h>
+#include <linaos/poll.h>
+#include <linaos/compat.h>
+#include <linaos/mm.h>
+#include <linaos/scatterlist.h>
+#include <linaos/slab.h>
+#include <linaos/time64.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "usb_mon.h"
 
@@ -1304,7 +1304,7 @@ static int mon_bin_wait_event(struct file *file, struct mon_reader_bin *rp)
 		if (file->f_flags & O_NONBLOCK) {
 			set_current_state(TASK_RUNNING);
 			remove_wait_queue(&rp->b_wait, &waita);
-			return -EWOULDBLOCK; /* Same as EAGAIN in Linux */
+			return -EWOULDBLOCK; /* Same as EAGAIN in LinaOS */
 		}
 		schedule();
 		if (signal_pending(current)) {

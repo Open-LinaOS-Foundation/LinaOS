@@ -9,15 +9,15 @@
  * Copyright (C) 2001 MIPS Technologies, Inc.
  * Copyright (C) 2007 by Thomas Bogendoerfer
  */
-#include <linux/eisa.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/screen_info.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/dma-mapping.h>
-#include <linux/pgtable.h>
+#include <linaos/eisa.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/console.h>
+#include <linaos/screen_info.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_8250.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pgtable.h>
 
 #include <asm/jazz.h>
 #include <asm/jazzdma.h>

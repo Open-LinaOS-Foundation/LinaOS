@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* radio-trust.c - Trust FM Radio card driver for Linux 2.2
+/* radio-trust.c - Trust FM Radio card driver for LinaOS 2.2
  * by Eric Lammerts <eric@scintilla.utwente.nl>
  *
  * Based on radio-aztech.c. Original notes:
  *
- * Adapted to support the Video for Linux API by
+ * Adapted to support the Video for LinaOS API by
  * Russell Kroll <rkroll@exploits.org>.  Based on original tuner code by:
  *
  * Quay Ly
@@ -16,12 +16,12 @@
  * Converted to V4L2 API by Mauro Carvalho Chehab <mchehab@kernel.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/videodev2.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include "radio-isa.h"

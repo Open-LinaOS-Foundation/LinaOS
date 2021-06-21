@@ -1,18 +1,18 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * VFIO Region definitions for ZPCI devices
  *
  * Copyright IBM Corp. 2020
  *
- * Author(s): Pierre Morel <pmorel@linux.ibm.com>
- *            Matthew Rosato <mjrosato@linux.ibm.com>
+ * Author(s): Pierre Morel <pmorel@linaos.ibm.com>
+ *            Matthew Rosato <mjrosato@linaos.ibm.com>
  */
 
 #ifndef _VFIO_ZDEV_H_
 #define _VFIO_ZDEV_H_
 
-#include <linux/types.h>
-#include <linux/vfio.h>
+#include <linaos/types.h>
+#include <linaos/vfio.h>
 
 /**
  * VFIO_DEVICE_INFO_CAP_ZPCI_BASE - Base PCI Function information

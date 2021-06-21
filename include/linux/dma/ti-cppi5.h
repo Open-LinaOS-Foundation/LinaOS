@@ -8,9 +8,9 @@
 #ifndef __TI_CPPI5_H__
 #define __TI_CPPI5_H__
 
-#include <linux/bitops.h>
-#include <linux/printk.h>
-#include <linux/bug.h>
+#include <linaos/bitops.h>
+#include <linaos/printk.h>
+#include <linaos/bug.h>
 
 /**
  * struct cppi5_desc_hdr_t - Descriptor header, present in all types of

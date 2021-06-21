@@ -29,8 +29,8 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/device.h>
-#include <linux/netdevice.h>
+#include <linaos/device.h>
+#include <linaos/netdevice.h>
 #include "en.h"
 #include "en/port.h"
 #include "en/port_buffer.h"

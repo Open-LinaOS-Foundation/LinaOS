@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * AMD SVM-SEV support
  *
  * Copyright 2010 Red Hat, Inc. and/or its affiliates.
  */
 
-#include <linux/kvm_types.h>
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
-#include <linux/highmem.h>
-#include <linux/psp-sev.h>
-#include <linux/pagemap.h>
-#include <linux/swap.h>
-#include <linux/misc_cgroup.h>
-#include <linux/processor.h>
-#include <linux/trace_events.h>
+#include <linaos/kvm_types.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kernel.h>
+#include <linaos/highmem.h>
+#include <linaos/psp-sev.h>
+#include <linaos/pagemap.h>
+#include <linaos/swap.h>
+#include <linaos/misc_cgroup.h>
+#include <linaos/processor.h>
+#include <linaos/trace_events.h>
 #include <asm/fpu/internal.h>
 
 #include <asm/trapnr.h>
@@ -36,7 +36,7 @@
  * module.
  *
  * We will not have MISC_CG_RES_SEV and MISC_CG_RES_SEV_ES entries in the enum
- * misc_res_type {} defined in linux/misc_cgroup.h.
+ * misc_res_type {} defined in linaos/misc_cgroup.h.
  *
  * Below macros allow compilation to succeed.
  */

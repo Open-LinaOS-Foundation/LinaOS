@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (C) 2016 National Instruments Corp. */
-#include <linux/leds.h>
-#include <linux/phy.h>
-#include <linux/phy_led_triggers.h>
-#include <linux/netdevice.h>
+#include <linaos/leds.h>
+#include <linaos/phy.h>
+#include <linaos/phy_led_triggers.h>
+#include <linaos/netdevice.h>
 
 static struct phy_led_trigger *phy_speed_to_led_trigger(struct phy_device *phy,
 							unsigned int speed)

@@ -19,9 +19,9 @@
 #define _LINUX_IF_EQL_H
 
 
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <uapi/linux/if_eql.h>
+#include <linaos/timer.h>
+#include <linaos/spinlock.h>
+#include <uapi/linaos/if_eql.h>
 
 typedef struct slave {
 	struct list_head	list;

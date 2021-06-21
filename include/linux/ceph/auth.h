@@ -2,8 +2,8 @@
 #ifndef _FS_CEPH_AUTH_H
 #define _FS_CEPH_AUTH_H
 
-#include <linux/ceph/types.h>
-#include <linux/ceph/buffer.h>
+#include <linaos/ceph/types.h>
+#include <linaos/ceph/buffer.h>
 
 /*
  * Abstract interface for communicating with the authenticate module.

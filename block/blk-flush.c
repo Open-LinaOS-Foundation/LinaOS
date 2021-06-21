@@ -63,12 +63,12 @@
  * merged in the usual way.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/gfp.h>
-#include <linux/blk-mq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/bio.h>
+#include <linaos/blkdev.h>
+#include <linaos/gfp.h>
+#include <linaos/blk-mq.h>
 
 #include "blk.h"
 #include "blk-mq.h"

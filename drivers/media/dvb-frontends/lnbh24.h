@@ -19,7 +19,7 @@
 #define LNBH24_TTX	0x40
 #define LNBH24_PCL	0x80
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 #if IS_REACHABLE(CONFIG_DVB_LNBP21)
 /* override_set and override_clear control which

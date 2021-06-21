@@ -37,7 +37,7 @@ Unless an entry contains a D classification, a device driver must not access
 this member. Some members may contain D classifications, but should only be
 access through certain macros or functions (eg ->flags).
 
-<linux/blkdev.h>
+<linaos/blkdev.h>
 
 =============================== ======= =======================================
 Member				Flag	Comment

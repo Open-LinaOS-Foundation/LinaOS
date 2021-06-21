@@ -24,7 +24,7 @@
  * Author: AMD
  */
 
-/* put it here temporarily until linux has the new addresses official defined */
+/* put it here temporarily until linaos has the new addresses official defined */
 /* DP Extended DSC Capabilities */
 #define DP_DSC_BRANCH_OVERALL_THROUGHPUT_0  0x0a0   /* DP 1.4a SCR */
 #define DP_DSC_BRANCH_OVERALL_THROUGHPUT_1  0x0a1

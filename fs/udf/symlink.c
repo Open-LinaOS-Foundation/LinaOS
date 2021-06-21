@@ -20,13 +20,13 @@
  */
 
 #include "udfdecl.h"
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/pagemap.h>
+#include <linaos/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/stat.h>
+#include <linaos/pagemap.h>
 #include "udf_i.h"
 
 static int udf_pc_to_char(struct super_block *sb, unsigned char *from,

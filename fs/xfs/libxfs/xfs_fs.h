@@ -768,7 +768,7 @@ struct xfs_scrub_metadata {
 
 
 /*
- * ioctl commands that are used by Linux filesystems
+ * ioctl commands that are used by LinaOS filesystems
  */
 #define XFS_IOC_GETXFLAGS	FS_IOC_GETFLAGS
 #define XFS_IOC_SETXFLAGS	FS_IOC_SETFLAGS

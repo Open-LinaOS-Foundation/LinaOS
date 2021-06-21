@@ -31,13 +31,13 @@
 
 		wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 11 GPIO_ACTIVE_LOW>;
 		};
 	};

@@ -4,9 +4,9 @@
  * Copyright (c) 2018, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/stm.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/stm.h>
 #include "stm.h"
 
 static ssize_t basic_write(struct stm_data *data, struct stm_output *output,
@@ -45,4 +45,4 @@ module_exit(basic_stm_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("Basic STM framing protocol driver");
-MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linux.intel.com>");
+MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linaos.intel.com>");

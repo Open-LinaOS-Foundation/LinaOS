@@ -10,27 +10,27 @@
  *			Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
  */
 
-#include <linux/err.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/log2.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/acpi.h>
-#include <linux/seq_file.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/bitops.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
+#include <linaos/err.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/log2.h>
+#include <linaos/io.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/acpi.h>
+#include <linaos/seq_file.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/bitops.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
 
 #include "core.h"
 #include "pinctrl-utils.h"

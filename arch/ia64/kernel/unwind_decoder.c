@@ -5,7 +5,7 @@
  *
  * Generic IA-64 unwind info decoder.
  *
- * This file is used both by the Linux kernel and objdump.  Please keep
+ * This file is used both by the LinaOS kernel and objdump.  Please keep
  * the two copies of this file in sync.
  *
  * You need to customize the decoder by defining the following

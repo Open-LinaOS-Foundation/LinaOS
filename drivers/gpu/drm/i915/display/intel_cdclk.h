@@ -6,7 +6,7 @@
 #ifndef __INTEL_CDCLK_H__
 #define __INTEL_CDCLK_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "i915_drv.h"
 #include "intel_display.h"

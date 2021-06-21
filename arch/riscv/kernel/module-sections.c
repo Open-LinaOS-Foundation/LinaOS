@@ -5,10 +5,10 @@
  * Copyright (C) 2018 Andes Technology Corporation <zong@andestech.com>
  */
 
-#include <linux/elf.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleloader.h>
 
 unsigned long module_emit_got_entry(struct module *mod, unsigned long val)
 {

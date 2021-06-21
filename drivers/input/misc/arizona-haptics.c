@@ -7,17 +7,17 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <linaos/mfd/arizona/core.h>
+#include <linaos/mfd/arizona/pdata.h>
+#include <linaos/mfd/arizona/registers.h>
 
 struct arizona_haptics {
 	struct arizona *arizona;

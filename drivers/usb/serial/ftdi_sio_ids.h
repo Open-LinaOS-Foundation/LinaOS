@@ -618,7 +618,7 @@
 
 /*
  * Blackfin gnICE JTAG
- * http://docs.blackfin.uclinux.org/doku.php?id=hw:jtag:gnice
+ * http://docs.blackfin.uclinaos.org/doku.php?id=hw:jtag:gnice
  */
 #define ADI_VID			0x0456
 #define ADI_GNICE_PID		0xF000

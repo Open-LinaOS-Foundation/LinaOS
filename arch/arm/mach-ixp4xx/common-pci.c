@@ -11,23 +11,23 @@
  * Copyright (C) 2003-2004 MontaVista Software, Inc.
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/export.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
 #include <asm/dma-mapping.h>
 
 #include <asm/cputype.h>
 #include <asm/irq.h>
-#include <linux/sizes.h>
+#include <linaos/sizes.h>
 #include <asm/mach/pci.h>
 #include <mach/hardware.h>
 

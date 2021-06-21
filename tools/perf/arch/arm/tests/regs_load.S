@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #define R0 0x00
 #define R1 0x08

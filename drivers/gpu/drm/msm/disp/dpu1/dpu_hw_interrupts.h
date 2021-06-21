@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _DPU_HW_INTERRUPTS_H
 #define _DPU_HW_INTERRUPTS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "dpu_hwio.h"
 #include "dpu_hw_catalog.h"

@@ -10,10 +10,10 @@
  * General Public License for more details.
  */
 
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/ip.h>
-#include <uapi/linux/in.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/if_ether.h>
+#include <uapi/linaos/ip.h>
+#include <uapi/linaos/in.h>
 #include <bpf/bpf_helpers.h>
 
 # define printk(fmt, ...)						\

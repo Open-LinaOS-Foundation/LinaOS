@@ -5,7 +5,7 @@
 #if !defined(_TRACE_MPTCP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MPTCP_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define show_mapping_status(status)					\
 	__print_symbolic(status,					\

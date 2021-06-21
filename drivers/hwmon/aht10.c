@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- * aht10.c - Linux hwmon driver for AHT10 Temperature and Humidity sensor
+ * aht10.c - LinaOS hwmon driver for AHT10 Temperature and Humidity sensor
  * Copyright (C) 2020 Johannes Cornelis Draaijer
  */
 
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/hwmon.h>
+#include <linaos/i2c.h>
+#include <linaos/ktime.h>
+#include <linaos/module.h>
 
 #define AHT10_MEAS_SIZE		6
 

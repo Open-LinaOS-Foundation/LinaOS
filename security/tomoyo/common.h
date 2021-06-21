@@ -12,26 +12,26 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/kmod.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/list.h>
-#include <linux/cred.h>
-#include <linux/poll.h>
-#include <linux/binfmts.h>
-#include <linux/highmem.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/un.h>
-#include <linux/lsm_hooks.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/file.h>
+#include <linaos/kmod.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/namei.h>
+#include <linaos/mount.h>
+#include <linaos/list.h>
+#include <linaos/cred.h>
+#include <linaos/poll.h>
+#include <linaos/binfmts.h>
+#include <linaos/highmem.h>
+#include <linaos/net.h>
+#include <linaos/inet.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/un.h>
+#include <linaos/lsm_hooks.h>
 #include <net/sock.h>
 #include <net/af_unix.h>
 #include <net/ip.h>
@@ -77,8 +77,8 @@ enum tomoyo_conditions_index {
 	TOMOYO_TASK_FSGID,           /* current_fsgid() */
 	TOMOYO_TASK_PID,             /* sys_getpid()   */
 	TOMOYO_TASK_PPID,            /* sys_getppid()  */
-	TOMOYO_EXEC_ARGC,            /* "struct linux_binprm *"->argc */
-	TOMOYO_EXEC_ENVC,            /* "struct linux_binprm *"->envc */
+	TOMOYO_EXEC_ARGC,            /* "struct linaos_binprm *"->argc */
+	TOMOYO_EXEC_ENVC,            /* "struct linaos_binprm *"->envc */
 	TOMOYO_TYPE_IS_SOCKET,       /* S_IFSOCK */
 	TOMOYO_TYPE_IS_SYMLINK,      /* S_IFLNK */
 	TOMOYO_TYPE_IS_FILE,         /* S_IFREG */
@@ -573,7 +573,7 @@ struct tomoyo_mini_stat {
 	dev_t rdev;
 };
 
-/* Structure for dumping argv[] and envp[] of "struct linux_binprm". */
+/* Structure for dumping argv[] and envp[] of "struct linaos_binprm". */
 struct tomoyo_page_dump {
 	struct page *page;    /* Previously dumped page. */
 	char *data;           /* Contents of "page". Size is PAGE_SIZE. */
@@ -621,7 +621,7 @@ struct tomoyo_envp {
 struct tomoyo_execve {
 	struct tomoyo_request_info r;
 	struct tomoyo_obj_info obj;
-	struct linux_binprm *bprm;
+	struct linaos_binprm *bprm;
 	const struct tomoyo_path_info *transition;
 	/* For dumping argv[] and envp[]. */
 	struct tomoyo_page_dump dump;
@@ -935,7 +935,7 @@ bool tomoyo_correct_path(const char *filename);
 bool tomoyo_correct_word(const char *string);
 bool tomoyo_domain_def(const unsigned char *buffer);
 bool tomoyo_domain_quota_is_ok(struct tomoyo_request_info *r);
-bool tomoyo_dump_page(struct linux_binprm *bprm, unsigned long pos,
+bool tomoyo_dump_page(struct linaos_binprm *bprm, unsigned long pos,
 		      struct tomoyo_page_dump *dump);
 bool tomoyo_memory_ok(void *ptr);
 bool tomoyo_number_matches_group(const unsigned long min,
@@ -973,7 +973,7 @@ void tomoyo_close_control(struct tomoyo_io_buffer *head);
 int tomoyo_env_perm(struct tomoyo_request_info *r, const char *env);
 int tomoyo_execute_permission(struct tomoyo_request_info *r,
 			      const struct tomoyo_path_info *filename);
-int tomoyo_find_next_domain(struct linux_binprm *bprm);
+int tomoyo_find_next_domain(struct linaos_binprm *bprm);
 int tomoyo_get_mode(const struct tomoyo_policy_namespace *ns, const u8 profile,
 		    const u8 index);
 int tomoyo_init_request_info(struct tomoyo_request_info *r,

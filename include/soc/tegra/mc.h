@@ -6,12 +6,12 @@
 #ifndef __SOC_TEGRA_MC_H__
 #define __SOC_TEGRA_MC_H__
 
-#include <linux/bits.h>
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/interconnect-provider.h>
-#include <linux/reset-controller.h>
-#include <linux/types.h>
+#include <linaos/bits.h>
+#include <linaos/debugfs.h>
+#include <linaos/err.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/reset-controller.h>
+#include <linaos/types.h>
 
 struct clk;
 struct device;

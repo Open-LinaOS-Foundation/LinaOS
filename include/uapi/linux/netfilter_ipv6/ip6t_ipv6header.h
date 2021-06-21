@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /* ipv6header match - matches IPv6 packets based
 on whether they contain certain headers */
 
@@ -9,7 +9,7 @@ on whether they contain certain headers */
 #ifndef __IPV6HEADER_H
 #define __IPV6HEADER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct ip6t_ipv6header_info {
 	__u8 matchflags;

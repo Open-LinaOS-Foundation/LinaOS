@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2019-2021 Linaro Ltd.
  */
 #ifndef _IPA_TABLE_H_
 #define _IPA_TABLE_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct ipa;
 

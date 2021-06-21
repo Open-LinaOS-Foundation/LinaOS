@@ -7,35 +7,35 @@
 
 #define pr_fmt(fmt)				"bcmgenet: " fmt
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/if_ether.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm.h>
-#include <linux/clk.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/if_ether.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm.h>
+#include <linaos/clk.h>
 #include <net/arp.h>
 
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/phy.h>
-#include <linux/platform_data/bcmgenet.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/phy.h>
+#include <linaos/platform_data/bcmgenet.h>
 
 #include <asm/unaligned.h>
 

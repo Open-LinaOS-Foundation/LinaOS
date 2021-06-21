@@ -7,9 +7,9 @@
  * Author: David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/pci.h>
 
 #ifdef ARCH_GENERIC_PCI_MMAP_RESOURCE
 

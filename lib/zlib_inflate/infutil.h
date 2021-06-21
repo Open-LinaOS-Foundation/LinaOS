@@ -11,7 +11,7 @@
 #ifndef _INFUTIL_H
 #define _INFUTIL_H
 
-#include <linux/zlib.h>
+#include <linaos/zlib.h>
 #ifdef CONFIG_ZLIB_DFLTCC
 #include "../zlib_dfltcc/dfltcc.h"
 #include <asm/page.h>

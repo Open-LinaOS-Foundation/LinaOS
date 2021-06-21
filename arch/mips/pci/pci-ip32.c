@@ -4,13 +4,13 @@
  * for more details.
  *
  * Copyright (C) 2000, 2001 Keith M Wesolowski
- * Copyright (C) 2004 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2004 by Ralf Baechle (ralf@linaos-mips.org)
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>
 

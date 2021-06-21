@@ -25,10 +25,10 @@
  *    Jerome Glisse <glisse@freedesktop.org>
  */
 
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/sync_file.h>
-#include <linux/dma-buf.h>
+#include <linaos/file.h>
+#include <linaos/pagemap.h>
+#include <linaos/sync_file.h>
+#include <linaos/dma-buf.h>
 
 #include <drm/amdgpu_drm.h>
 #include <drm/drm_syncobj.h>

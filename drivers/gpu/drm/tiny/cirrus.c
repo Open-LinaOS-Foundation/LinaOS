@@ -16,10 +16,10 @@
  * Copyright 1999-2001 Jeff Garzik <jgarzik@pobox.com>
  */
 
-#include <linux/console.h>
-#include <linux/dma-buf-map.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/console.h>
+#include <linaos/dma-buf-map.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <video/cirrus.h>
 #include <video/vga.h>

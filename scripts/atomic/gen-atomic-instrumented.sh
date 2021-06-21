@@ -172,9 +172,9 @@ cat << EOF
 #ifndef _ASM_GENERIC_ATOMIC_INSTRUMENTED_H
 #define _ASM_GENERIC_ATOMIC_INSTRUMENTED_H
 
-#include <linux/build_bug.h>
-#include <linux/compiler.h>
-#include <linux/instrumented.h>
+#include <linaos/build_bug.h>
+#include <linaos/compiler.h>
+#include <linaos/instrumented.h>
 
 EOF
 

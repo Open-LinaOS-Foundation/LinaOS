@@ -9,7 +9,7 @@
 #
 # Copyright (C) IBM Corporation, 2017
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 base=$1
 if test -r $base

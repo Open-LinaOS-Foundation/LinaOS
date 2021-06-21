@@ -7,7 +7,7 @@ CFS Scheduler
 ============
 
 CFS stands for "Completely Fair Scheduler," and is the new "desktop" process
-scheduler implemented by Ingo Molnar and merged in Linux 2.6.23.  It is the
+scheduler implemented by Ingo Molnar and merged in LinaOS 2.6.23.  It is the
 replacement for the previous vanilla scheduler's SCHED_OTHER interactivity
 code.
 
@@ -136,7 +136,7 @@ CFS implements three scheduling policies:
 SCHED_FIFO/_RR are implemented in sched/rt.c and are as specified by
 POSIX.
 
-The command chrt from util-linux-ng 2.13.1.1 can set all of these except
+The command chrt from util-linaos-ng 2.13.1.1 can set all of these except
 SCHED_IDLE.
 
 

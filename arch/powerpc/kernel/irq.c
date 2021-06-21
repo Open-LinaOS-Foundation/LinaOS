@@ -3,7 +3,7 @@
  *  Derived from arch/i386/kernel/irq.c
  *    Copyright (C) 1992 Linus Torvalds
  *  Adapted from arch/i386 by Gary Thomas
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *  Updated and modified by Cort Dougan <cort@fsmlabs.com>
  *    Copyright (C) 1996-2001 Cort Dougan
  *  Adapted for Power Macintosh by Paul Mackerras
@@ -26,34 +26,34 @@
 
 #undef DEBUG
 
-#include <linux/export.h>
-#include <linux/threads.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/timex.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <linaos/export.h>
+#include <linaos/threads.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/timex.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
+#include <linaos/seq_file.h>
+#include <linaos/cpumask.h>
+#include <linaos/profile.h>
+#include <linaos/bitops.h>
+#include <linaos/list.h>
+#include <linaos/radix-tree.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/debugfs.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pgtable.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/interrupt.h>
 #include <asm/io.h>
 #include <asm/irq.h>

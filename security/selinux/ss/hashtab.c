@@ -4,9 +4,9 @@
  *
  * Author : Stephen Smalley, <sds@tycho.nsa.gov>
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
 #include "hashtab.h"
 
 static struct kmem_cache *hashtab_node_cachep __ro_after_init;

@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "amdgpu.h"
 #include "amdgpu_pm.h"
@@ -34,9 +34,9 @@
 #include "si_dpm.h"
 #include "atom.h"
 #include "../include/pptable.h"
-#include <linux/math64.h>
-#include <linux/seq_file.h>
-#include <linux/firmware.h>
+#include <linaos/math64.h>
+#include <linaos/seq_file.h>
+#include <linaos/firmware.h>
 
 #define MC_CG_ARB_FREQ_F0           0x0a
 #define MC_CG_ARB_FREQ_F1           0x0b

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * advansys.c - Linux Host Driver for AdvanSys SCSI Adapters
+ * advansys.c - LinaOS Host Driver for AdvanSys SCSI Adapters
  *
  * Copyright (c) 1995-2000 Advanced System Products, Inc.
  * Copyright (c) 2000-2001 ConnectCom Solutions, Inc.
@@ -15,25 +15,25 @@
  * On June 18, 2001 Initio Corp. acquired ConnectCom's SCSI assets
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/isa.h>
-#include <linux/eisa.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/dmapool.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/proc_fs.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/isa.h>
+#include <linaos/eisa.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/dmapool.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -1771,7 +1771,7 @@ typedef struct adv_scsi_req_q {
  * to the Mid-Level SCSI request structure.
  *
  * Zero or more ADV_SG_BLOCK are used with each ADV_SCSI_REQ_Q. Each
- * ADV_SG_BLOCK structure holds 15 scatter-gather elements. Under Linux
+ * ADV_SG_BLOCK structure holds 15 scatter-gather elements. Under LinaOS
  * up to 255 scatter-gather elements may be used per request or
  * ADV_SCSI_REQ_Q.
  *
@@ -3126,7 +3126,7 @@ static void asc_prt_driver_conf(struct seq_file *m, struct Scsi_Host *shost)
 	struct asc_board *boardp = shost_priv(shost);
 
 	seq_printf(m,
-		"\nLinux Driver Configuration and Information for AdvanSys SCSI Host %d:\n",
+		"\nLinaOS Driver Configuration and Information for AdvanSys SCSI Host %d:\n",
 		shost->host_no);
 
 	seq_printf(m,
@@ -3474,7 +3474,7 @@ static void asc_prt_board_stats(struct seq_file *m, struct Scsi_Host *shost)
 	struct asc_stats *s = &boardp->asc_stats;
 
 	seq_printf(m,
-		   "\nLinux Driver Statistics for AdvanSys SCSI Host %d:\n",
+		   "\nLinaOS Driver Statistics for AdvanSys SCSI Host %d:\n",
 		   shost->host_no);
 
 	seq_printf(m,

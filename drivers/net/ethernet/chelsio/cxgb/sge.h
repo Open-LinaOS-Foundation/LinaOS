@@ -38,8 +38,8 @@
 #ifndef _CXGB_SGE_H_
 #define _CXGB_SGE_H_
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
 #include <asm/byteorder.h>
 
 struct sge_intr_counts {

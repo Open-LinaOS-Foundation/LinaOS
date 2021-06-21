@@ -14,9 +14,9 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/debugfs.h>
 #include "hsr_main.h"
 #include "hsr_framereg.h"
 

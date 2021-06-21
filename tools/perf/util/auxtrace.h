@@ -12,9 +12,9 @@
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdio.h> // FILE
-#include <linux/list.h>
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <linaos/list.h>
+#include <linaos/perf_event.h>
+#include <linaos/types.h>
 #include <asm/bitsperlong.h>
 #include <asm/barrier.h>
 

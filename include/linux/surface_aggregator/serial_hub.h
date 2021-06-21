@@ -12,11 +12,11 @@
 #ifndef _LINUX_SURFACE_AGGREGATOR_SERIAL_HUB_H
 #define _LINUX_SURFACE_AGGREGATOR_SERIAL_HUB_H
 
-#include <linux/crc-ccitt.h>
-#include <linux/kref.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <linaos/crc-ccitt.h>
+#include <linaos/kref.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/types.h>
 
 
 /* -- Data structures for SAM-over-SSH communication. ----------------------- */

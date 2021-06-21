@@ -7,14 +7,14 @@
 
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/hash.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/cryptouser.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/cryptouser.h>
 #include <net/netlink.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #include "internal.h"
 

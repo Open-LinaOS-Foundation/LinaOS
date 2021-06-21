@@ -5,7 +5,7 @@
  * Authors: Iyappan Subramanian <isubramanian@apm.com>
  */
 
-#include <linux/ethtool.h>
+#include <linaos/ethtool.h>
 #include "xgene_enet_main.h"
 
 struct xgene_gstrings_stats {

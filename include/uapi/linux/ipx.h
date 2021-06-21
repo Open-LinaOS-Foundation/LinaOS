@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _IPX_H_
 #define _IPX_H_
-#include <linux/libc-compat.h>	/* for compatibility with glibc netipx/ipx.h */
-#include <linux/types.h>
-#include <linux/sockios.h>
-#include <linux/socket.h>
+#include <linaos/libc-compat.h>	/* for compatibility with glibc netipx/ipx.h */
+#include <linaos/types.h>
+#include <linaos/sockios.h>
+#include <linaos/socket.h>
 #define IPX_NODE_LEN	6
 #define IPX_MTU		576
 

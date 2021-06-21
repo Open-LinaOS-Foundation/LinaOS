@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/affs/bitmap.c
+ *  linaos/fs/affs/bitmap.c
  *
  *  (c) 1996 Hans-Joachim Widmaier
  *
@@ -8,7 +8,7 @@
  *  block allocation, deallocation, calculation of free space.
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "affs.h"
 
 u32

@@ -2,20 +2,20 @@
 /*
  *  Driver for TANBAC TB0219 base board.
  *
- *  Copyright (C) 2005  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2005  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/platform_device.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/platform_device.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 
 #include <asm/io.h>
 #include <asm/reboot.h>
 #include <asm/vr41xx/giu.h>
 #include <asm/vr41xx/tb0219.h>
 
-MODULE_AUTHOR("Yoichi Yuasa <yuasa@linux-mips.org>");
+MODULE_AUTHOR("Yoichi Yuasa <yuasa@linaos-mips.org>");
 MODULE_DESCRIPTION("TANBAC TB0219 base board driver");
 MODULE_LICENSE("GPL");
 

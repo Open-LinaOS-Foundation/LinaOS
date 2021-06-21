@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2011-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2014, The LinaOS Foundation. All rights reserved.
  * Copyright (c) 2014,2015, Linaro Ltd.
  *
  * SAW power controller driver
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/qcom_scm.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/qcom_scm.h>
 
 #include <asm/proc-fns.h>
 #include <asm/suspend.h>

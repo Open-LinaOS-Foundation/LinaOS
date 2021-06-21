@@ -1,5 +1,5 @@
 /* cs89x0.c: A Crystal Semiconductor (Now Cirrus Logic) CS89[02]0
- *           driver for linux.
+ *           driver for linaos.
  * Written 1996 by Russell Nelson, with reference to skeleton.c
  * written 1993-1994 by Donald Becker.
  *
@@ -48,32 +48,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/jiffies.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/jiffies.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
+#include <linaos/io.h>
 
 #include <asm/irq.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #if ALLOW_DMA
 #include <asm/dma.h>
 #endif
@@ -1301,7 +1301,7 @@ static void __init reset_chip(struct net_device *dev)
 }
 
 /* This is the real probe routine.
- * Linux has a history of friendly device probes on the ISA bus.
+ * LinaOS has a history of friendly device probes on the ISA bus.
  * A good device probes avoids doing writes, and
  * verifies that the correct device exists and functions.
  * Return 0 on success.

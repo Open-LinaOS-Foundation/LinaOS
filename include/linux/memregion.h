@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _MEMREGION_H_
 #define _MEMREGION_H_
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
 
 struct memregion_info {
 	int target_node;

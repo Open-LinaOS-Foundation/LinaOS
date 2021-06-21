@@ -8,9 +8,9 @@
 #ifndef _LINUX_I2C_SMBUS_H
 #define _LINUX_I2C_SMBUS_H
 
-#include <linux/i2c.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linaos/i2c.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
 
 
 /**

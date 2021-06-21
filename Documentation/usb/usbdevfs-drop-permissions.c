@@ -8,7 +8,7 @@
 #include <inttypes.h>
 #include <unistd.h>
 
-#include <linux/usbdevice_fs.h>
+#include <linaos/usbdevice_fs.h>
 
 /* For building without an updated set of headers */
 #ifndef USBDEVFS_DROP_PRIVILEGES

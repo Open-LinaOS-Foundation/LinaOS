@@ -5,7 +5,7 @@
  *  Copyright (c) 2020 Dell Inc.
  */
 
-#include <linux/wmi.h>
+#include <linaos/wmi.h>
 #include "dell-wmi-sysman.h"
 
 static int call_password_interface(struct wmi_device *wdev, char *in_args, size_t size)

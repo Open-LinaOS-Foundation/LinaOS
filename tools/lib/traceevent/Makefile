@@ -61,7 +61,7 @@ export EVENT_PARSE_VERSION
 
 include ../../scripts/Makefile.include
 
-# copy a bit from Linux kbuild
+# copy a bit from LinaOS kbuild
 
 ifeq ("$(origin V)", "command line")
   VERBOSE = $(V)

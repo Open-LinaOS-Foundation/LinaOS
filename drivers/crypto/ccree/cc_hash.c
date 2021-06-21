@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2012-2019 ARM Limited (or its affiliates). */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <crypto/algapi.h>
 #include <crypto/hash.h>
 #include <crypto/md5.h>

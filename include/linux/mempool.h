@@ -5,8 +5,8 @@
 #ifndef _LINUX_MEMPOOL_H
 #define _LINUX_MEMPOOL_H
 
-#include <linux/wait.h>
-#include <linux/compiler.h>
+#include <linaos/wait.h>
+#include <linaos/compiler.h>
 
 struct kmem_cache;
 

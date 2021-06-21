@@ -8,17 +8,17 @@
  * Copyright (C) 1992 Linus Torvalds
  * Copyright (C) 1994 - 2000 Ralf Baechle
  */
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
-#include <linux/irq.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/of_irq.h>
+#include <linaos/spinlock.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/irq.h>
 
 #include <asm/i8259.h>
 #include <asm/io.h>
@@ -195,7 +195,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in LinaOS this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

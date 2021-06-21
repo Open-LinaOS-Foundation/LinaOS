@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/dma-buf-map.h>
+#include <linaos/dma-buf-map.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_fourcc.h>

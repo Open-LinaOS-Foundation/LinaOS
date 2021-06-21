@@ -16,12 +16,12 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/b53.h>
+#include <linaos/bits.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/b53.h>
 
 #include "b53_priv.h"
 

@@ -32,7 +32,7 @@
 
 #ifndef _SVGA_REG_H_
 #define _SVGA_REG_H_
-#include <linux/pci_ids.h>
+#include <linaos/pci_ids.h>
 
 #define INCLUDE_ALLOW_MODULE
 #define INCLUDE_ALLOW_USERLEVEL

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/include/linux/jbd2.h
+ * linaos/include/linaos/jbd2.h
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>
  *
@@ -19,15 +19,15 @@
 #define JBD2_DEBUG
 #else
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/journal-head.h>
-#include <linux/stddef.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/bit_spinlock.h>
-#include <linux/blkdev.h>
+#include <linaos/types.h>
+#include <linaos/buffer_head.h>
+#include <linaos/journal-head.h>
+#include <linaos/stddef.h>
+#include <linaos/mutex.h>
+#include <linaos/timer.h>
+#include <linaos/slab.h>
+#include <linaos/bit_spinlock.h>
+#include <linaos/blkdev.h>
 #include <crypto/hash.h>
 #endif
 
@@ -309,8 +309,8 @@ typedef struct journal_superblock_s
 
 #ifdef __KERNEL__
 
-#include <linux/fs.h>
-#include <linux/sched.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
 
 enum jbd_state_bits {
 	BH_JBD			/* Has an attached ext3 journal_head */

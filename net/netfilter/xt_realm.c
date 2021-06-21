@@ -4,14 +4,14 @@
  * (C) 2003 by Sampsa Ranta <sampsa@netsonic.fi>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
 #include <net/route.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter/xt_realm.h>
-#include <linux/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter/xt_realm.h>
+#include <linaos/netfilter/x_tables.h>
 
 MODULE_AUTHOR("Sampsa Ranta <sampsa@netsonic.fi>");
 MODULE_LICENSE("GPL");

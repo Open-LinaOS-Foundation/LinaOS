@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * -- <linux/cdrom.h>
- * General header file for linux CD-ROM drivers 
+ * -- <linaos/cdrom.h>
+ * General header file for linaos CD-ROM drivers 
  * Copyright (C) 1992         David Giller, rafetmad@oxy.edu
  *               1994, 1995   Eberhard Mönkeberg, emoenke@gwdg.de
  *               1996         David van Leeuwen, david@tm.tno.nl
@@ -11,10 +11,10 @@
 #ifndef	_LINUX_CDROM_H
 #define	_LINUX_CDROM_H
 
-#include <linux/fs.h>		/* not really needed, later.. */
-#include <linux/list.h>
+#include <linaos/fs.h>		/* not really needed, later.. */
+#include <linaos/list.h>
 #include <scsi/scsi_common.h>
-#include <uapi/linux/cdrom.h>
+#include <uapi/linaos/cdrom.h>
 
 struct packet_command
 {

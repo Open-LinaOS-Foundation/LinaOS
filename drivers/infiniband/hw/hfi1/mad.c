@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/net.h>
+#include <linaos/net.h>
 #include <rdma/opa_addr.h>
 #define OPA_NUM_PKEY_BLOCKS_PER_SMP (OPA_SMP_DR_DATA_SIZE \
 			/ (OPA_PARTITION_TABLE_BLK_SIZE * sizeof(u16)))

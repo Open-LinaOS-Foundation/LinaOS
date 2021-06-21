@@ -9,7 +9,7 @@
  *  device tree feature advertisement.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <uapi/asm/cputable.h>
 
 #ifdef CONFIG_PPC_DT_CPU_FTRS

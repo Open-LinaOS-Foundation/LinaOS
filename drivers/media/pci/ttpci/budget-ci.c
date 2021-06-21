@@ -9,14 +9,14 @@
  *
  * CI interface support (c) 2004 Andrew de Quincey <adq_dvb@lidskialf.net>
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
 #include <media/rc-core.h>
 
 #include "budget.h"

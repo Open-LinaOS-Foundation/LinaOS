@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/* ZD1211 USB-WLAN driver for Linux
+/* ZD1211 USB-WLAN driver for LinaOS
  *
  * Copyright (C) 2005-2007 Ulrich Kunitz <kune@deine-taler.de>
  * Copyright (C) 2006-2007 Daniel Drake <dsd@gentoo.org>
@@ -8,7 +8,7 @@
 #ifndef _ZD_MAC_H
 #define _ZD_MAC_H
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <net/mac80211.h>
 
 #include "zd_chip.h"

@@ -8,7 +8,7 @@
 #ifndef __NET_DCBNL_H__
 #define __NET_DCBNL_H__
 
-#include <linux/dcbnl.h>
+#include <linaos/dcbnl.h>
 
 struct dcb_app_type {
 	int	ifindex;

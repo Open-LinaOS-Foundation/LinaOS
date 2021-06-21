@@ -8,7 +8,7 @@
  * anyway...)
  *
  * Note that the open routine for N_TTY is guaranteed never to return
- * an error.  This is because Linux will fall back to setting a line
+ * an error.  This is because LinaOS will fall back to setting a line
  * to N_TTY if it can not switch to any other line discipline.
  *
  * Written by Theodore Ts'o, Copyright 1994.
@@ -28,27 +28,27 @@
  *		EAGAIN
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/bitops.h>
-#include <linux/audit.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
+#include <linaos/types.h>
+#include <linaos/major.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/fcntl.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/tty.h>
+#include <linaos/timer.h>
+#include <linaos/ctype.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/poll.h>
+#include <linaos/bitops.h>
+#include <linaos/audit.h>
+#include <linaos/file.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/ratelimit.h>
+#include <linaos/vmalloc.h>
 #include "tty.h"
 
 /*
@@ -414,7 +414,7 @@ static inline int is_continuation(unsigned char c, struct tty_struct *tty)
  *	doing OPOST processing and putting the results in the
  *	tty driver's write buffer.
  *
- *	Note that Linux currently ignores TABDLY, CRDLY, VTDLY, FFDLY
+ *	Note that LinaOS currently ignores TABDLY, CRDLY, VTDLY, FFDLY
  *	and NLDLY.  They simply aren't relevant in the world today.
  *	If you ever need them, add them here.
  *

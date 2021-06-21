@@ -5,7 +5,7 @@
  * Copyright (c) 2006-2007 Mauro Carvalho Chehab <mchehab@kernel.org>
  */
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 #define TM6000_URB_MSG_LEN 180
 

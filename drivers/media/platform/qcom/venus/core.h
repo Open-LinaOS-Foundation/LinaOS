@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2012-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2016, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
 
 #ifndef __VENUS_CORE_H_
 #define __VENUS_CORE_H_
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <media/videobuf2-v4l2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

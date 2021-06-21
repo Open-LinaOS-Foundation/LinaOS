@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
 # (C) Copyright IBM Corporation 2006.
-#	Author : Ram Pai (linuxram@us.ibm.com)
+#	Author : Ram Pai (linaosram@us.ibm.com)
 #
 # Usage: export_report.pl -k Module.symvers [-o report_file ] -f *.mod.c
 #

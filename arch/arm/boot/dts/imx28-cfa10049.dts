@@ -397,7 +397,7 @@
 			label = "rotary_button";
 			gpios = <&gpio3 26 1>;
 			debounce-interval = <10>;
-			linux,code = <28>;
+			linaos,code = <28>;
 		};
 	};
 
@@ -406,7 +406,7 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <&rotary_pins_cfa10049>;
 		gpios = <&gpio3 24 1>, <&gpio3 25 1>;
-		linux,axis = <1>; /* REL_Y */
+		linaos,axis = <1>; /* REL_Y */
 		rotary-encoder,relative-axis;
 	};
 

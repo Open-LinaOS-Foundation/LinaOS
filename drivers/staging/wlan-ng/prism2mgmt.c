@@ -6,7 +6,7 @@
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linaos-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linaos-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linaos-wlan.com
+ * http://www.linaos-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -58,20 +58,20 @@
  * --------------------------------------------------------------------
  */
 
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/if_arp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/wireless.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 #include <asm/byteorder.h>
-#include <linux/random.h>
-#include <linux/usb.h>
-#include <linux/bitops.h>
+#include <linaos/random.h>
+#include <linaos/usb.h>
+#include <linaos/bitops.h>
 
 #include "p80211types.h"
 #include "p80211hdr.h"

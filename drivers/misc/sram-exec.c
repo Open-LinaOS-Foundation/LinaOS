@@ -14,10 +14,10 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/device.h>
-#include <linux/genalloc.h>
-#include <linux/mm.h>
-#include <linux/sram.h>
+#include <linaos/device.h>
+#include <linaos/genalloc.h>
+#include <linaos/mm.h>
+#include <linaos/sram.h>
 
 #include <asm/fncpy.h>
 #include <asm/set_memory.h>

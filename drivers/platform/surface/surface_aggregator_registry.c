@@ -9,17 +9,17 @@
  * Copyright (C) 2020-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <linaos/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/device.h>
 
 
 /* -- Device registry. ------------------------------------------------------ */

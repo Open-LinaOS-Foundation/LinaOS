@@ -108,7 +108,7 @@ Viewing adapter settings
 
  .. note::
 
-    AQrate speeds (2.5/5 Gb/s) will be displayed only with linux kernels > 4.10.
+    AQrate speeds (2.5/5 Gb/s) will be displayed only with linaos kernels > 4.10.
     But you can still use these speeds::
 
 	ethtool -s eth0 autoneg off speed 2500

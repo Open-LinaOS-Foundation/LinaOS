@@ -9,19 +9,19 @@
 
 #define pr_fmt(fmt)	"dlpar: " fmt
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpu.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
 #include "of_helpers.h"
 #include "pseries.h"
 
 #include <asm/prom.h>
 #include <asm/machdep.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/rtas.h>
 
 static struct workqueue_struct *pseries_hp_wq;

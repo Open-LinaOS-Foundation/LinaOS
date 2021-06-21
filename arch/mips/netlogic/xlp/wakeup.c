@@ -32,8 +32,8 @@
  * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
+#include <linaos/kernel.h>
+#include <linaos/threads.h>
 
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>

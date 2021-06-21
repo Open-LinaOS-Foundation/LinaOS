@@ -4,9 +4,9 @@
  *
  * NVIDIA USB Type-C Alt Mode Driver
  */
-#include <linux/module.h>
-#include <linux/usb/typec_altmode.h>
-#include <linux/usb/typec_dp.h>
+#include <linaos/module.h>
+#include <linaos/usb/typec_altmode.h>
+#include <linaos/usb/typec_dp.h>
 #include "displayport.h"
 
 static int nvidia_altmode_probe(struct typec_altmode *alt)

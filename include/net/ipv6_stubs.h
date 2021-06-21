@@ -2,9 +2,9 @@
 #ifndef _IPV6_STUBS_H
 #define _IPV6_STUBS_H
 
-#include <linux/in6.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/in6.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/neighbour.h>

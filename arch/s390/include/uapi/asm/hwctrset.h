@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright IBM Corp. 2021
  * Interface implementation for communication with the CPU Measurement
  * counter facility device driver.
  *
- * Author(s): Thomas Richter <tmricht@linux.ibm.com>
+ * Author(s): Thomas Richter <tmricht@linaos.ibm.com>
  *
  * Define for ioctl() commands to communicate with the CPU Measurement
  * counter facility device driver.
@@ -13,8 +13,8 @@
 #ifndef _PERF_CPUM_CF_DIAG_H
 #define _PERF_CPUM_CF_DIAG_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 #define S390_HWCTR_DEVICE		"hwctr"
 #define S390_HWCTR_START_VERSION	1

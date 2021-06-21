@@ -13,18 +13,18 @@
 // #define	DEBUG			// error path messages, extra info
 // #define	VERBOSE			// more; success messages
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
-#include <linux/usb/usbnet.h>
-#include <linux/slab.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/kmod.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/workqueue.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/crc32.h>
+#include <linaos/usb/usbnet.h>
+#include <linaos/slab.h>
+#include <linaos/if_vlan.h>
 
 #define DRIVER_VERSION "22-Dec-2011"
 #define DRIVER_NAME "asix"

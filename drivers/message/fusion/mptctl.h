@@ -1,12 +1,12 @@
 /*
- *  linux/drivers/message/fusion/mptioctl.h
+ *  linaos/drivers/message/fusion/mptioctl.h
  *      Fusion MPT misc device (ioctl) driver.
  *      For use with PCI chip/adapter(s):
  *          LSIFC9xx/LSI409xx Fibre Channel
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinaOS@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/

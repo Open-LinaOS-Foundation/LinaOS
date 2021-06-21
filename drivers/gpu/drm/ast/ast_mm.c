@@ -26,7 +26,7 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_gem_vram_helper.h>
 #include <drm/drm_managed.h>

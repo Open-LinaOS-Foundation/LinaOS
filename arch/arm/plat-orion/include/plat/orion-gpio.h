@@ -11,9 +11,9 @@
 #ifndef __PLAT_GPIO_H
 #define __PLAT_GPIO_H
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/irqdomain.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/irqdomain.h>
 
 struct gpio_desc;
 

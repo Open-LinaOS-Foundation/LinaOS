@@ -11,13 +11,13 @@
 #ifndef __LINUX_MFD_PALMAS_H
 #define __LINUX_MFD_PALMAS_H
 
-#include <linux/usb/otg.h>
-#include <linux/leds.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/extcon-provider.h>
-#include <linux/of_gpio.h>
-#include <linux/usb/phy_companion.h>
+#include <linaos/usb/otg.h>
+#include <linaos/leds.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/of_gpio.h>
+#include <linaos/usb/phy_companion.h>
 
 #define PALMAS_NUM_CLIENTS		3
 

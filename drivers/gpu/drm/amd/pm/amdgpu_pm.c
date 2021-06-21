@@ -28,11 +28,11 @@
 #include "amdgpu_pm.h"
 #include "amdgpu_dpm.h"
 #include "atom.h"
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/nospec.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pci.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/nospec.h>
+#include <linaos/pm_runtime.h>
 #include <asm/processor.h>
 #include "hwmgr.h"
 

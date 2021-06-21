@@ -2,17 +2,17 @@
 /*
  * Copyright (c) 2005-2011 Atheros Communications Inc.
  * Copyright (c) 2011-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 
 #include "mac.h"
 
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
-#include <linux/etherdevice.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/bitfield.h>
+#include <linaos/etherdevice.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
+#include <linaos/bitfield.h>
 
 #include "hif.h"
 #include "core.h"

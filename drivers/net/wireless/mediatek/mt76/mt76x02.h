@@ -7,7 +7,7 @@
 #ifndef __MT76x02_H
 #define __MT76x02_H
 
-#include <linux/kfifo.h>
+#include <linaos/kfifo.h>
 
 #include "mt76.h"
 #include "mt76x02_regs.h"

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- linaos-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -10,7 +10,7 @@
 /*
  * Main module for the real-mode kernel code
  */
-#include <linux/build_bug.h>
+#include <linaos/build_bug.h>
 
 #include "boot.h"
 #include "string.h"

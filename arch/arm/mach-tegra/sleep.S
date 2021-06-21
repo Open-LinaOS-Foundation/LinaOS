@@ -9,7 +9,7 @@
  *         Gary King <gking@nvidia.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/cache.h>

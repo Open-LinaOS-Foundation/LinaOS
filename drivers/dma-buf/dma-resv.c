@@ -32,11 +32,11 @@
  * Authors: Thomas Hellstrom <thellstrom-at-vmware-dot-com>
  */
 
-#include <linux/dma-resv.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_notifier.h>
+#include <linaos/dma-resv.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/mmu_notifier.h>
 
 /**
  * DOC: Reservation Object Overview

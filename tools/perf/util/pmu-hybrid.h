@@ -2,9 +2,9 @@
 #ifndef __PMU_HYBRID_H
 #define __PMU_HYBRID_H
 
-#include <linux/perf_event.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
+#include <linaos/perf_event.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
 #include <stdbool.h>
 #include "pmu.h"
 

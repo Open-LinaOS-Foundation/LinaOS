@@ -7,14 +7,14 @@
  * Copyright 2012 by Servergy, Inc.
  */
 
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
-#include <linux/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/workqueue.h>
+#include <linaos/reboot.h>
+#include <linaos/interrupt.h>
 
 #include <asm/machdep.h>
 

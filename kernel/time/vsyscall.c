@@ -7,8 +7,8 @@
  * Based on the x86 specific implementation.
  */
 
-#include <linux/hrtimer.h>
-#include <linux/timekeeper_internal.h>
+#include <linaos/hrtimer.h>
+#include <linaos/timekeeper_internal.h>
 #include <vdso/datapage.h>
 #include <vdso/helpers.h>
 #include <vdso/vsyscall.h>

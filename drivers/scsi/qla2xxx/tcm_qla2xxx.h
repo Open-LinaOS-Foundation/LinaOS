@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #include <target/target_core_base.h>
-#include <linux/btree.h>
+#include <linaos/btree.h>
 
 /* length of ASCII WWPNs including pad */
 #define TCM_QLA2XXX_NAMELEN	32

@@ -14,14 +14,14 @@
  *
  * Copyright (C) 2000 Takaya Kinjo <t-kinjo@tc4.so-net.ne.jp>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@valinaos.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  */
 #ifndef _SONYPI_H_
 #define _SONYPI_H_
 
-#include <uapi/linux/sonypi.h>
+#include <uapi/linaos/sonypi.h>
 
 
 /* used only for communication between v4l and sonypi */

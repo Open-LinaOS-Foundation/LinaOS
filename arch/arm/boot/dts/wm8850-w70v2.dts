@@ -5,7 +5,7 @@
  *  - 'W70-V2' mainboard
  *  - HongLianYing 'HLY070ML268-21A' 7" LCD panel
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <linaos@prisktech.co.nz>
  */
 
 /dts-v1/;

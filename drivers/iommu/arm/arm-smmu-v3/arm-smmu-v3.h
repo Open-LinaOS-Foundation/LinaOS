@@ -8,11 +8,11 @@
 #ifndef _ARM_SMMU_V3_H
 #define _ARM_SMMU_V3_H
 
-#include <linux/bitfield.h>
-#include <linux/iommu.h>
-#include <linux/kernel.h>
-#include <linux/mmzone.h>
-#include <linux/sizes.h>
+#include <linaos/bitfield.h>
+#include <linaos/iommu.h>
+#include <linaos/kernel.h>
+#include <linaos/mmzone.h>
+#include <linaos/sizes.h>
 
 /* MMIO registers */
 #define ARM_SMMU_IDR0			0x0

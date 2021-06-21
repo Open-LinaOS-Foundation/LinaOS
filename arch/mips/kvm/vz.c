@@ -9,11 +9,11 @@
  * Authors: Yann Le Du <ledu@kymasys.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/preempt.h>
+#include <linaos/vmalloc.h>
 #include <asm/cacheflush.h>
 #include <asm/cacheops.h>
 #include <asm/cmpxchg.h>
@@ -26,7 +26,7 @@
 #include <asm/tlb.h>
 #include <asm/tlbex.h>
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include "interrupt.h"
 #ifdef CONFIG_CPU_LOONGSON64

@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #define bootlogo_width 160
 #define bootlogo_height 160

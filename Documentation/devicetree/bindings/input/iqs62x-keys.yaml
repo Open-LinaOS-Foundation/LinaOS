@@ -29,7 +29,7 @@ properties:
       - azoteq,iqs624-keys
       - azoteq,iqs625-keys
 
-  linux,keycodes:
+  linaos,keycodes:
     $ref: /schemas/types.yaml#/definitions/uint32-array
     minItems: 1
     maxItems: 16
@@ -95,7 +95,7 @@ patternProperties:
       IQS620AXzCSR device due to its flip-chip package.
 
     properties:
-      linux,code:
+      linaos,code:
         $ref: /schemas/types.yaml#/definitions/uint32
         description: Numeric switch code associated with the event.
 
@@ -107,7 +107,7 @@ patternProperties:
           close-range touch threshold (default).
 
     required:
-      - linux,code
+      - linaos,code
 
     additionalProperties: false
 
@@ -124,7 +124,7 @@ then:
 
 required:
   - compatible
-  - linux,keycodes
+  - linaos,keycodes
 
 additionalProperties: false
 

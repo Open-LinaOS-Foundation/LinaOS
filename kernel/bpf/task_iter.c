@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2020 Facebook */
 
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/pid_namespace.h>
-#include <linux/fs.h>
-#include <linux/fdtable.h>
-#include <linux/filter.h>
-#include <linux/btf_ids.h>
+#include <linaos/init.h>
+#include <linaos/namei.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/fs.h>
+#include <linaos/fdtable.h>
+#include <linaos/filter.h>
+#include <linaos/btf_ids.h>
 
 struct bpf_iter_seq_task_common {
 	struct pid_namespace *ns;

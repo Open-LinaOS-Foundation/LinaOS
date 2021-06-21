@@ -82,15 +82,15 @@
  */
 #ifndef WACOM_H
 #define WACOM_H
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/hid.h>
-#include <linux/kfifo.h>
-#include <linux/leds.h>
-#include <linux/usb/input.h>
-#include <linux/power_supply.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/hid.h>
+#include <linaos/kfifo.h>
+#include <linaos/leds.h>
+#include <linaos/usb/input.h>
+#include <linaos/power_supply.h>
 #include <asm/unaligned.h>
 
 /*

@@ -7,8 +7,8 @@
  * Copyright (C) 2001 - 2007  Paul Mundt
  * Copyright (C) 2003  Richard Curnow
  */
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 

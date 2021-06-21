@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *    ipl/reipl/dump support for Linux on s390.
+ *    ipl/reipl/dump support for LinaOS on s390.
  *
  *    Copyright IBM Corp. 2005, 2012
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
@@ -8,17 +8,17 @@
  *		 Volker Sameske <sameske@de.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/crash_dump.h>
-#include <linux/debug_locks.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/reboot.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/gfp.h>
+#include <linaos/crash_dump.h>
+#include <linaos/debug_locks.h>
 #include <asm/diag.h>
 #include <asm/ipl.h>
 #include <asm/smp.h>
@@ -566,7 +566,7 @@ static struct shutdown_action __refdata ipl_action = {
 };
 
 /*
- * reipl shutdown action: Reboot Linux on shutdown.
+ * reipl shutdown action: Reboot LinaOS on shutdown.
  */
 
 /* VM IPL PARM attributes */
@@ -1402,7 +1402,7 @@ static struct shutdown_action __refdata reipl_action = {
 };
 
 /*
- * dump shutdown action: Dump Linux on shutdown.
+ * dump shutdown action: Dump LinaOS on shutdown.
  */
 
 /* FCP dump device attributes */
@@ -1722,7 +1722,7 @@ static struct shutdown_action vmcmd_action = {SHUTDOWN_ACTION_VMCMD_STR,
 					      vmcmd_run, vmcmd_init};
 
 /*
- * stop shutdown action: Stop Linux on shutdown.
+ * stop shutdown action: Stop LinaOS on shutdown.
  */
 
 static void stop_run(struct shutdown_trigger *trigger)

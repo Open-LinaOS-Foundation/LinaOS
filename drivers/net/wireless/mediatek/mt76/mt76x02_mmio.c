@@ -4,8 +4,8 @@
  * Copyright (C) 2018 Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/irq.h>
 
 #include "mt76x02.h"
 #include "mt76x02_mcu.h"

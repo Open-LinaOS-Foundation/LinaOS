@@ -33,7 +33,7 @@
  * these functions directly.
  *
  */
-#include <linux/export.h>
+#include <linaos/export.h>
 
 #include <asm/octeon/octeon.h>
 

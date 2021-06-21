@@ -9,7 +9,7 @@ Introduction
 
 The generic NAND driver supports almost all NAND and AG-AND based chips
 and connects them to the Memory Technology Devices (MTD) subsystem of
-the Linux Kernel.
+the LinaOS Kernel.
 
 This documentation is provided for developers who want to implement
 board drivers or filesystem drivers suitable for NAND devices.
@@ -958,7 +958,7 @@ developer. Each struct member has a short description which is marked
 with an [XXX] identifier. See the chapter "Documentation hints" for an
 explanation.
 
-.. kernel-doc:: include/linux/mtd/rawnand.h
+.. kernel-doc:: include/linaos/mtd/rawnand.h
    :internal:
 
 Public Functions Provided

@@ -3,7 +3,7 @@
  * enumerations for HopeRf rf69 radio module
  *
  * Copyright (C) 2016 Wolf-Entwicklungen
- *	Marcus Wolf <linux@wolf-entwicklungen.de>
+ *	Marcus Wolf <linaos@wolf-entwicklungen.de>
  */
 
 #ifndef RF69_ENUM_H

@@ -3,7 +3,7 @@
 #ifndef BTRFS_SYSFS_H
 #define BTRFS_SYSFS_H
 
-#include <linux/kobject.h>
+#include <linaos/kobject.h>
 
 enum btrfs_feature_set {
 	FEAT_COMPAT,

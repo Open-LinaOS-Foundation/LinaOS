@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/income.c
+ * linaos/arch/arm/mach-pxa/income.c
  *
  * Support for Income s.r.o. SH-Dmaster PXA270 SBC
  *
@@ -9,28 +9,28 @@
  * Pavel Revak <palo@bielyvlk.sk>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/leds.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
 
 #include <mach/hardware.h>
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include "pxa27x.h"
 #include "pxa27x-udc.h"
-#include <linux/platform_data/video-pxafb.h>
+#include <linaos/platform_data/video-pxafb.h>
 
 #include "devices.h"
 #include "generic.h"

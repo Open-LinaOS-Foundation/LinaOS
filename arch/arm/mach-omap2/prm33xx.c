@@ -13,11 +13,11 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
 
 #include "powerdomain.h"
 #include "prm33xx.h"

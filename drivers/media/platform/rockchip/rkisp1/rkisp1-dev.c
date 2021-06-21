@@ -8,16 +8,16 @@
  * Copyright (C) 2017 Rockchip Electronics Co., Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-mipi-dphy.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_platform.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/phy/phy.h>
+#include <linaos/phy/phy-mipi-dphy.h>
 #include <media/v4l2-fwnode.h>
 
 #include "rkisp1-common.h"

@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fanotify.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/poll.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/compat.h>
-#include <linux/sched/signal.h>
-#include <linux/memcontrol.h>
-#include <linux/statfs.h>
-#include <linux/exportfs.h>
+#include <linaos/fanotify.h>
+#include <linaos/fcntl.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/fsnotify_backend.h>
+#include <linaos/init.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/poll.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/compat.h>
+#include <linaos/sched/signal.h>
+#include <linaos/memcontrol.h>
+#include <linaos/statfs.h>
+#include <linaos/exportfs.h>
 
 #include <asm/ioctls.h>
 
@@ -52,7 +52,7 @@ static int fanotify_max_queued_events __read_mostly;
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 
 struct ctl_table fanotify_table[] = {
 	{

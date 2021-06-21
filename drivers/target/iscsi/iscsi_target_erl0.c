@@ -5,11 +5,11 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ******************************************************************************/
 
-#include <linux/sched/signal.h>
+#include <linaos/sched/signal.h>
 
 #include <scsi/iscsi_proto.h>
 #include <target/target_core_base.h>

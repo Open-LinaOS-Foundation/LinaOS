@@ -8,7 +8,7 @@
  * Copyright (C) 2005 Khalid Aziz  <khalid.aziz@hp.com>
  * Copyright (C) 2005 Intel Corp,  Zou Nan hai <nanhai.zou@intel.com>
  */
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/asmmacro.h>
 #include <asm/kregs.h>
 #include <asm/page.h>

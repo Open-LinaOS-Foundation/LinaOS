@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/uio_driver.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/mfd/core.h>
+#include <linaos/platform_device.h>
+#include <linaos/ioport.h>
+#include <linaos/uio_driver.h>
 #include "pcie.h"
 
 /*  Core (Resource) Table Layout:

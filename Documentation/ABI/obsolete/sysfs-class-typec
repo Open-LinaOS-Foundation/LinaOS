@@ -3,14 +3,14 @@ under /sys/bus/typec (see Documentation/ABI/testing/sysfs-bus-typec).
 
 What:		/sys/class/typec/<port|partner|cable>/<dev>/svid
 Date:		April 2017
-Contact:	Heikki Krogerus <heikki.krogerus@linux.intel.com>
+Contact:	Heikki Krogerus <heikki.krogerus@linaos.intel.com>
 Description:
 		The SVID (Standard or Vendor ID) assigned by USB-IF for this
 		alternate mode.
 
 What:		/sys/class/typec/<port|partner|cable>/<dev>/mode<index>/
 Date:		April 2017
-Contact:	Heikki Krogerus <heikki.krogerus@linux.intel.com>
+Contact:	Heikki Krogerus <heikki.krogerus@linaos.intel.com>
 Description:
 		Every supported mode will have its own directory. The name of
 		a mode will be "mode<index>" (for example mode1), where <index>
@@ -19,21 +19,21 @@ Description:
 
 What:		/sys/class/typec/<port|partner|cable>/<dev>/mode<index>/description
 Date:		April 2017
-Contact:	Heikki Krogerus <heikki.krogerus@linux.intel.com>
+Contact:	Heikki Krogerus <heikki.krogerus@linaos.intel.com>
 Description:
 		Shows description of the mode. The description is optional for
 		the drivers, just like with the Billboard Devices.
 
 What:		/sys/class/typec/<port|partner|cable>/<dev>/mode<index>/vdo
 Date:		April 2017
-Contact:	Heikki Krogerus <heikki.krogerus@linux.intel.com>
+Contact:	Heikki Krogerus <heikki.krogerus@linaos.intel.com>
 Description:
 		Shows the VDO in hexadecimal returned by Discover Modes command
 		for this mode.
 
 What:		/sys/class/typec/<port|partner|cable>/<dev>/mode<index>/active
 Date:		April 2017
-Contact:	Heikki Krogerus <heikki.krogerus@linux.intel.com>
+Contact:	Heikki Krogerus <heikki.krogerus@linaos.intel.com>
 Description:
 		Shows if the mode is active or not. The attribute can be used
 		for entering/exiting the mode with partners and cable plugs, and

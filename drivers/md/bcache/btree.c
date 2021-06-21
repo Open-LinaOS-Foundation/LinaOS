@@ -26,16 +26,16 @@
 #include "debug.h"
 #include "extents.h"
 
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/hash.h>
-#include <linux/kthread.h>
-#include <linux/prefetch.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/clock.h>
-#include <linux/rculist.h>
-#include <linux/delay.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/hash.h>
+#include <linaos/kthread.h>
+#include <linaos/prefetch.h>
+#include <linaos/random.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched/clock.h>
+#include <linaos/rculist.h>
+#include <linaos/delay.h>
 #include <trace/events/bcache.h>
 
 /*

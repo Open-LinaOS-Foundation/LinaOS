@@ -7,17 +7,17 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/axp20x.h>
-#include <linux/platform_device.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/axp20x.h>
+#include <linaos/platform_device.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/machine.h>
+#include <linaos/iio/driver.h>
 
 /*
  * This mask enables all ADCs except for the battery temp-sensor (TS), that is
@@ -321,6 +321,6 @@ MODULE_DEVICE_TABLE(platform, axp288_adc_id_table);
 
 module_platform_driver(axp288_adc_driver);
 
-MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@linux.intel.com>");
+MODULE_AUTHOR("Jacob Pan <jacob.jun.pan@linaos.intel.com>");
 MODULE_DESCRIPTION("X-Powers AXP288 ADC Driver");
 MODULE_LICENSE("GPL");

@@ -19,15 +19,15 @@
  * Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA 02110-1335  USA
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/mc13783.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/mc13783.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 
 struct mc13783_pwrb {
 	struct input_dev *pwr;

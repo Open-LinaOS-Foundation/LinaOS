@@ -8,8 +8,8 @@
  *	Based on the patches by Rainer Zimmermann <mail@lightshed.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

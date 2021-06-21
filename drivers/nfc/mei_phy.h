@@ -2,9 +2,9 @@
 #ifndef __LOCAL_MEI_PHY_H_
 #define __LOCAL_MEI_PHY_H_
 
-#include <linux/mei_cl_bus.h>
+#include <linaos/mei_cl_bus.h>
 #include <net/nfc/hci.h>
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 
 #define MEI_NFC_UUID UUID_LE(0x0bb17a78, 0x2a8e, 0x4c50, \
 		0x94, 0xd4, 0x50, 0x26, 0x67, 0x23, 0x77, 0x5c)

@@ -13,27 +13,27 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/tty.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/cpu.h>
-#include <linux/pci.h>
-#include <linux/sched_clock.h>
-#include <linux/irqchip/irq-ixp4xx.h>
-#include <linux/platform_data/timer-ixp4xx.h>
-#include <linux/dma-map-ops.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/serial.h>
+#include <linaos/tty.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/cpu.h>
+#include <linaos/pci.h>
+#include <linaos/sched_clock.h>
+#include <linaos/irqchip/irq-ixp4xx.h>
+#include <linaos/platform_data/timer-ixp4xx.h>
+#include <linaos/dma-map-ops.h>
 #include <mach/udc.h>
 #include <mach/hardware.h>
 #include <mach/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 #include <asm/exception.h>
 #include <asm/irq.h>

@@ -11,14 +11,14 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/notifier.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/processor.h>
 #include <asm/io.h>

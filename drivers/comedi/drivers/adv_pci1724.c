@@ -6,7 +6,7 @@
  * Author:  Frank Mori Hess <fmh6jj@gmail.com>
  * Copyright (C) 2013 GnuBIO Inc
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  */
 
@@ -37,7 +37,7 @@
  * outputs in the desired range.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedi_pci.h"
 

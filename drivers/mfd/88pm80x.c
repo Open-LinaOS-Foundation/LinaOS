@@ -7,13 +7,13 @@
  * Joseph(Yossi) Hanin <yhanin@marvell.com>
  * Qiao Zhou <zhouqiao@marvell.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/mfd/88pm80x.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/88pm80x.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/err.h>
 
 /* 88pm80x chips have same definition for chip id register. */
 #define PM80X_CHIP_ID			(0x00)

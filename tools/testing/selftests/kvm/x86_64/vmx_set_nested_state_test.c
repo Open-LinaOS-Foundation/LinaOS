@@ -13,7 +13,7 @@
 #include "vmx.h"
 
 #include <errno.h>
-#include <linux/kvm.h>
+#include <linaos/kvm.h>
 #include <string.h>
 #include <sys/ioctl.h>
 #include <unistd.h>

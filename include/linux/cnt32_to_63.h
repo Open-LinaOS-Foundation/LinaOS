@@ -10,8 +10,8 @@
 #ifndef __LINUX_CNT32_TO_63_H__
 #define __LINUX_CNT32_TO_63_H__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 /* this is used only to give gcc a clue about good code generation */

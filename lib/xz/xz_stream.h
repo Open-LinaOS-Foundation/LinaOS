@@ -11,7 +11,7 @@
 #define XZ_STREAM_H
 
 #if defined(__KERNEL__) && !XZ_INTERNAL_CRC32
-#	include <linux/crc32.h>
+#	include <linaos/crc32.h>
 #	undef crc32
 #	define xz_crc32(buf, size, crc) \
 		(~crc32_le(~(uint32_t)(crc), buf, size))

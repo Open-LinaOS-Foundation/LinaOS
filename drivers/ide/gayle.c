@@ -8,15 +8,15 @@
  *  more details.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/ide.h>
-#include <linux/init.h>
-#include <linux/zorro.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/blkdev.h>
+#include <linaos/ide.h>
+#include <linaos/init.h>
+#include <linaos/zorro.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <asm/setup.h>
 #include <asm/amigahw.h>

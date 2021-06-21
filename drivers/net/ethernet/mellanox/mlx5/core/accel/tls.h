@@ -34,8 +34,8 @@
 #ifndef __MLX5_ACCEL_TLS_H__
 #define __MLX5_ACCEL_TLS_H__
 
-#include <linux/mlx5/driver.h>
-#include <linux/tls.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/tls.h>
 
 #ifdef CONFIG_MLX5_TLS
 int mlx5_ktls_create_key(struct mlx5_core_dev *mdev,

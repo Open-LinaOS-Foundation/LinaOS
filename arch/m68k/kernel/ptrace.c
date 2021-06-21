@@ -1,27 +1,27 @@
 /*
- *  linux/arch/m68k/kernel/ptrace.c
+ *  linaos/arch/m68k/kernel/ptrace.c
  *
  *  Copyright (C) 1994 by Hamish Macdonald
- *  Taken from linux/kernel/ptrace.c and modified for M680x0.
- *  linux/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
+ *  Taken from linaos/kernel/ptrace.c and modified for M680x0.
+ *  linaos/kernel/ptrace.c is by Ross Biro 1/23/92, edited by Linus Torvalds
  *
  * This file is subject to the terms and conditions of the GNU General
  * Public License.  See the file COPYING in the main directory of
  * this archive for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/signal.h>
-#include <linux/tracehook.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/signal.h>
+#include <linaos/tracehook.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/page.h>
 #include <asm/processor.h>
 

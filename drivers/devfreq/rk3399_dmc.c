@@ -4,21 +4,21 @@
  * Author: Lin Huang <hl@rock-chips.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/devfreq.h>
-#include <linux/devfreq-event.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/rwsem.h>
-#include <linux/suspend.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/devfreq.h>
+#include <linaos/devfreq-event.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/rwsem.h>
+#include <linaos/suspend.h>
 
 #include <soc/rockchip/rk3399_grf.h>
 #include <soc/rockchip/rockchip_sip.h>

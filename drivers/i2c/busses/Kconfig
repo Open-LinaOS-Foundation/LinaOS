@@ -358,7 +358,7 @@ config I2C_POWERMAC
 	depends on PPC_PMAC
 	default y
 	help
-	  This exposes the various PowerMac i2c interfaces to the linux i2c
+	  This exposes the various PowerMac i2c interfaces to the linaos i2c
 	  layer and to userland. It is used by various drivers on the PowerMac
 	  platform, and should generally be enabled.
 
@@ -1321,7 +1321,7 @@ config I2C_MLXCPLD
 	tristate "Mellanox I2C driver"
 	depends on X86_64 || COMPILE_TEST
 	help
-	  This exposes the Mellanox platform I2C busses to the linux I2C layer
+	  This exposes the Mellanox platform I2C busses to the linaos I2C layer
 	  for X86 based systems.
 	  Controller is implemented as CPLD logic.
 
@@ -1385,7 +1385,7 @@ config I2C_OPAL
 	depends on PPC_POWERNV
 	default y
 	help
-	  This exposes the PowerNV platform i2c busses to the linux i2c layer,
+	  This exposes the PowerNV platform i2c busses to the linaos i2c layer,
 	  the driver is based on the OPAL interfaces.
 
 	  This driver can also be built as a module. If so, the module will be

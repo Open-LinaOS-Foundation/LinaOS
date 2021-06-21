@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/jffs2.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/jffs2.h>
 #include "compr.h"
 
 /* _compress returns the compressed size, -1 if bigger */

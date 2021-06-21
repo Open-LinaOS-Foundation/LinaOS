@@ -10,7 +10,7 @@
  * and polynomial arithmetic that gen_crc64table.c follows to
  * generate the lookup table.
  *
- * Copyright 2018 SUSE Linux.
+ * Copyright 2018 SUSE LinaOS.
  *   Author: Coly Li <colyli@suse.de>
  */
 #include <inttypes.h>
@@ -45,8 +45,8 @@ static void print_crc64_table(void)
 	int i;
 
 	printf("/* this file is generated - do not edit */\n\n");
-	printf("#include <linux/types.h>\n");
-	printf("#include <linux/cache.h>\n\n");
+	printf("#include <linaos/types.h>\n");
+	printf("#include <linaos/cache.h>\n\n");
 	printf("static const u64 ____cacheline_aligned crc64table[256] = {\n");
 	for (i = 0; i < 256; i++) {
 		printf("\t0x%016" PRIx64 "ULL", crc64_table[i]);

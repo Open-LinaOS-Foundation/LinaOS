@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/pagelist.c
+ * linaos/fs/nfs/pagelist.c
  *
  * A set of helper functions for managing NFS read and write requests.
  * The main purpose of these routines is to provide support for the
@@ -10,17 +10,17 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/nfs.h>
-#include <linux/nfs3.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/nfs_mount.h>
-#include <linux/export.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/sched.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs3.h>
+#include <linaos/nfs4.h>
+#include <linaos/nfs_fs.h>
+#include <linaos/nfs_page.h>
+#include <linaos/nfs_mount.h>
+#include <linaos/export.h>
 
 #include "internal.h"
 #include "pnfs.h"

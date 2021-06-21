@@ -4,9 +4,9 @@
  *   Copyright (c) 1998-1999 by Frank van de Pol <fvdpol@coil.demon.nl>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 #include <sound/core.h>
 #include "seq_system.h"
 #include "seq_timer.h"

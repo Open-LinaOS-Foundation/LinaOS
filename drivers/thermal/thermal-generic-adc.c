@@ -6,12 +6,12 @@
  *
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
-#include <linux/iio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 
 struct gadc_thermal_info {
 	struct device *dev;

@@ -10,14 +10,14 @@
  *	Grzegorz Jaszczyk <grzegorz.jaszczyk@linaro.org> for Texas Instruments
  */
 
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/pruss_driver.h>
-#include <linux/remoteproc.h>
+#include <linaos/bitops.h>
+#include <linaos/debugfs.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/pruss_driver.h>
+#include <linaos/remoteproc.h>
 
 #include "remoteproc_internal.h"
 #include "remoteproc_elf_helpers.h"

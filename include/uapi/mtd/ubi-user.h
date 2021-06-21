@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright © International Business Machines Corp., 2006
  *
@@ -22,7 +22,7 @@
 #ifndef __UBI_USER_H__
 #define __UBI_USER_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * UBI device creation (the same as MTD device attachment)

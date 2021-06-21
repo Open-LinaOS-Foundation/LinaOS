@@ -5,14 +5,14 @@
  * Copyright (c) 2016 Paolo Abeni <pabeni@redhat.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/percpu.h>
+#include <linaos/kernel.h>
+#include <linaos/percpu.h>
 #include <net/dst_cache.h>
 #include <net/route.h>
 #if IS_ENABLED(CONFIG_IPV6)
 #include <net/ip6_fib.h>
 #endif
-#include <uapi/linux/in.h>
+#include <uapi/linaos/in.h>
 
 struct dst_cache_pcpu {
 	unsigned long refresh_ts;

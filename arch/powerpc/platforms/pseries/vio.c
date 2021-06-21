@@ -10,19 +10,19 @@
  *     Robert Jennings <rcjenn@us.ibm.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/dma-map-ops.h>
-#include <linux/kobject.h>
-#include <linux/kexec.h>
+#include <linaos/cpu.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/stat.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/console.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/kobject.h>
+#include <linaos/kexec.h>
 
 #include <asm/iommu.h>
 #include <asm/dma.h>

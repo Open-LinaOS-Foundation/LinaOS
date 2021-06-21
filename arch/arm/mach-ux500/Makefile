@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux kernel, U8500 machine.
+# Makefile for the linaos kernel, U8500 machine.
 #
 
 obj-y				:= pm.o

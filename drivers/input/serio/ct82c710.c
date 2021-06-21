@@ -4,22 +4,22 @@
  */
 
 /*
- *  82C710 C&T mouse port chip driver for Linux
+ *  82C710 C&T mouse port chip driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/serio.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/serio.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 

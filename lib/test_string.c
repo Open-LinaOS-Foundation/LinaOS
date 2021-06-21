@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 static __init int memset16_selftest(void)
 {

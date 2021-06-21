@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /*
  * Copyright (c) 2005 Mellanox Technologies. All rights reserved.
  * Copyright 2018-2019 Amazon.com, Inc. or its affiliates. All rights reserved.
  * Copyright 2019 Marvell. All rights reserved.
  */
-#include <linux/xarray.h>
+#include <linaos/xarray.h>
 #include "uverbs.h"
 #include "core_priv.h"
 

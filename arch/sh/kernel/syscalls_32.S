@@ -7,8 +7,8 @@
  *  Copyright (C) 1999, 2000, 2002  Niibe Yutaka
  *  Copyright (C) 2003  Paul Mundt
  */
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <linaos/sys.h>
+#include <linaos/linkage.h>
 
 #define __SYSCALL(nr, entry)	.long entry
 	.data

@@ -6,11 +6,11 @@
 #ifndef _ASM_FPU_H
 #define _ASM_FPU_H
 
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/ptrace.h>
-#include <linux/thread_info.h>
-#include <linux/bitops.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/ptrace.h>
+#include <linaos/thread_info.h>
+#include <linaos/bitops.h>
 
 #include <asm/mipsregs.h>
 #include <asm/cpu.h>

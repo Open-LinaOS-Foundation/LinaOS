@@ -2,21 +2,21 @@
 /*
  * Copyright (C) 2010 Texas Instruments Inc
  */
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/videodev2.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/videodev2.h>
+#include <linaos/slab.h>
 
-#include <linux/platform_data/i2c-davinci.h>
+#include <linaos/platform_data/i2c-davinci.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include <media/davinci/vpbe_types.h>
 #include <media/davinci/vpbe_venc.h>

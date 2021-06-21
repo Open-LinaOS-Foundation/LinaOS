@@ -8,7 +8,7 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/usb/ch9.h>
+#include <linaos/usb/ch9.h>
 
 static void usb_decode_get_status(__u8 bRequestType, __u16 wIndex,
 				  __u16 wLength, char *str, size_t size)

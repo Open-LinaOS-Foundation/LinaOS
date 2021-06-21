@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Character LCD driver for Linux
+ * Character LCD driver for LinaOS
  *
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  * Copyright (C) 2016-2017 Glider bvba
  */
 
-#include <linux/atomic.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/ctype.h>
+#include <linaos/fs.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/workqueue.h>
 
 #include <generated/utsrelease.h>
 
@@ -549,7 +549,7 @@ static void charlcd_puts(struct charlcd *lcd, const char *s)
 #ifdef CONFIG_PANEL_BOOT_MESSAGE
 #define LCD_INIT_TEXT CONFIG_PANEL_BOOT_MESSAGE
 #else
-#define LCD_INIT_TEXT "Linux-" UTS_RELEASE "\n"
+#define LCD_INIT_TEXT "LinaOS-" UTS_RELEASE "\n"
 #endif
 
 #ifdef CONFIG_CHARLCD_BL_ON

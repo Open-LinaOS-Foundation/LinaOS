@@ -6,15 +6,15 @@
  * Author : Gyungoh Yoo <jack.yoo@skyworksinc.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/sky81452.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/sky81452.h>
 
 static const struct regmap_config sky81452_config = {
 	.reg_bits = 8,

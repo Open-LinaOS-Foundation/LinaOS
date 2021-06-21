@@ -12,7 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 
 /* We calculate number of sg entries based on PAGE_SIZE */
 #define SG_ENTRIES_PER_NODE ((PAGE_SIZE - 16) / sizeof(struct opal_sg_entry))

@@ -1,9 +1,9 @@
 /*
- *  linux/drivers/scsi/esas2r/esas2r_io.c
+ *  linaos/drivers/scsi/esas2r/esas2r_io.c
  *      For use with ATTO ExpressSAS R6xx SAS/SATA RAID controllers
  *
  *  Copyright (c) 2001-2013 ATTO Technology, Inc.
- *  (mailto:linuxdrivers@attotech.com)mpt3sas/mpt3sas_trigger_diag.
+ *  (mailto:linaosdrivers@attotech.com)mpt3sas/mpt3sas_trigger_diag.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License

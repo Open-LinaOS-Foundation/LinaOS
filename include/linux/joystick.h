@@ -9,7 +9,7 @@
 #ifndef _LINUX_JOYSTICK_H
 #define _LINUX_JOYSTICK_H
 
-#include <uapi/linux/joystick.h>
+#include <uapi/linaos/joystick.h>
 
 #if BITS_PER_LONG == 64
 #define JS_DATA_SAVE_TYPE JS_DATA_SAVE_TYPE_64

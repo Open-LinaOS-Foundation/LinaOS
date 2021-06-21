@@ -6,7 +6,7 @@
 #ifndef __UM_PROCESSOR_I386_H
 #define __UM_PROCESSOR_I386_H
 
-#include <linux/string.h>
+#include <linaos/string.h>
 #include <asm/segment.h>
 #include <asm/ldt.h>
 

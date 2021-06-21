@@ -61,7 +61,7 @@ extern struct chan_waitqueues {
 } channel_wqs[RTLX_CHANNELS];
 
 /* each channel supports read and write.
-   linux (vpe0) reads lx_buffer and writes rt_buffer
+   linaos (vpe0) reads lx_buffer and writes rt_buffer
    SP (vpe1) reads rt_buffer and writes lx_buffer
 */
 struct rtlx_channel {

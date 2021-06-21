@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* Linux driver for Philips webcam
+/* LinaOS driver for Philips webcam
    Decompression for chipset version 2 et 3
    (C) 2004-2006  Luc Saillard (luc@saillard.org)
 
@@ -16,8 +16,8 @@
 #include "pwc-kiara.h"
 #include "pwc-dec23.h"
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 /*
  * USE_LOOKUP_TABLE_TO_CLAMP

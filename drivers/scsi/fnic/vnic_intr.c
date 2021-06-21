@@ -16,11 +16,11 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 #include "vnic_dev.h"
 #include "vnic_intr.h"
 

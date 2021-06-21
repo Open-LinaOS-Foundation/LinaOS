@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*****************************************************************************
- * Linux PPP over L2TP (PPPoX/PPPoL2TP) Sockets
+ * LinaOS PPP over L2TP (PPPoX/PPPoL2TP) Sockets
  *
  * PPPoX    --- Generic PPP encapsulation socket family
  * PPPoL2TP --- PPP over L2TP (RFC 2661)
@@ -55,38 +55,38 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/list.h>
+#include <linaos/uaccess.h>
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/kthread.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/jiffies.h>
 
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/if_pppox.h>
-#include <linux/if_pppol2tp.h>
+#include <linaos/netdevice.h>
+#include <linaos/net.h>
+#include <linaos/inetdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/ip.h>
+#include <linaos/udp.h>
+#include <linaos/if_pppox.h>
+#include <linaos/if_pppol2tp.h>
 #include <net/sock.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp_defs.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/file.h>
-#include <linux/hash.h>
-#include <linux/sort.h>
-#include <linux/proc_fs.h>
-#include <linux/l2tp.h>
-#include <linux/nsproxy.h>
+#include <linaos/ppp_channel.h>
+#include <linaos/ppp_defs.h>
+#include <linaos/ppp-ioctl.h>
+#include <linaos/file.h>
+#include <linaos/hash.h>
+#include <linaos/sort.h>
+#include <linaos/proc_fs.h>
+#include <linaos/l2tp.h>
+#include <linaos/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/ip.h>
@@ -94,7 +94,7 @@
 #include <net/inet_common.h>
 
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 #include "l2tp_core.h"
 

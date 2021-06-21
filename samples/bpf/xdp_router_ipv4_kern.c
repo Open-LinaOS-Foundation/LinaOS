@@ -5,15 +5,15 @@
  * as published by the Free Software Foundation.
  */
 #define KBUILD_MODNAME "foo"
-#include <uapi/linux/bpf.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <uapi/linaos/bpf.h>
+#include <linaos/in.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include <net/ip_fib.h>
 
 struct trie_value {

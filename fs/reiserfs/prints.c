@@ -2,11 +2,11 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
 #include "reiserfs.h"
-#include <linux/string.h>
-#include <linux/buffer_head.h>
+#include <linaos/string.h>
+#include <linaos/buffer_head.h>
 
 #include <stdarg.h>
 

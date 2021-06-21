@@ -4,12 +4,12 @@
  * for more details.
  */
 
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/vmalloc.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
+#include <linaos/moduleloader.h>
+#include <linaos/elf.h>
+#include <linaos/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
 
 #if 0
 #define DEBUGP(fmt, ...) printk(KERN_DEBUG pr_fmt(fmt), ##__VA_ARGS__)

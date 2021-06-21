@@ -3,11 +3,11 @@
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/termios.h>
-#include <linux/tty.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/termios.h>
+#include <linaos/tty.h>
+#include <linaos/export.h>
 #include "tty.h"
 
 

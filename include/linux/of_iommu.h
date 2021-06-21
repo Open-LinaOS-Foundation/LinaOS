@@ -2,9 +2,9 @@
 #ifndef __OF_IOMMU_H
 #define __OF_IOMMU_H
 
-#include <linux/device.h>
-#include <linux/iommu.h>
-#include <linux/of.h>
+#include <linaos/device.h>
+#include <linaos/iommu.h>
+#include <linaos/of.h>
 
 #ifdef CONFIG_OF_IOMMU
 

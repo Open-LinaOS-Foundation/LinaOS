@@ -9,12 +9,12 @@
  *	Copyright (C) 2002 Intel Corporation.
  *	Copyright (C) 2003-2004 MontaVista Software, Inc.
  *
- * Maintainer: http://www.nslu2-linux.org/
+ * Maintainer: http://www.nslu2-linaos.org/
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>
 

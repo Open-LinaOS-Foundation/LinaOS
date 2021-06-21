@@ -20,7 +20,7 @@
  */
 #ifndef _CIFSPROTO_H
 #define _CIFSPROTO_H
-#include <linux/nls.h>
+#include <linaos/nls.h>
 #include "trace.h"
 #ifdef CONFIG_CIFS_DFS_UPCALL
 #include "dfs_cache.h"
@@ -166,7 +166,7 @@ extern int decode_negTokenInit(unsigned char *security_blob, int length,
 			struct TCP_Server_Info *server);
 extern int cifs_convert_address(struct sockaddr *dst, const char *src, int len);
 extern void cifs_set_port(struct sockaddr *addr, const unsigned short int port);
-extern int map_smb_to_linux_error(char *buf, bool logErr);
+extern int map_smb_to_linaos_error(char *buf, bool logErr);
 extern int map_and_check_smb_error(struct mid_q_entry *mid, bool logErr);
 extern void header_assemble(struct smb_hdr *, char /* command */ ,
 			    const struct cifs_tcon *, int /* length of

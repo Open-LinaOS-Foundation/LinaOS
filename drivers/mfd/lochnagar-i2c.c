@@ -8,21 +8,21 @@
  * Author: Charles Keepax <ckeepax@opensource.cirrus.com>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/lockdep.h>
-#include <linux/mfd/core.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/lockdep.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
 
-#include <linux/mfd/lochnagar.h>
-#include <linux/mfd/lochnagar1_regs.h>
-#include <linux/mfd/lochnagar2_regs.h>
+#include <linaos/mfd/lochnagar.h>
+#include <linaos/mfd/lochnagar1_regs.h>
+#include <linaos/mfd/lochnagar2_regs.h>
 
 #define LOCHNAGAR_BOOT_RETRIES		10
 #define LOCHNAGAR_BOOT_DELAY_MS		350

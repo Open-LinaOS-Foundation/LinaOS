@@ -16,7 +16,7 @@
 #ifndef __IA_CSS_CTC_TYPES_H
 #define __IA_CSS_CTC_TYPES_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* @file
 * CSS-API header file for Chroma Tone Control parameters.

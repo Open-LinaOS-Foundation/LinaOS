@@ -431,7 +431,7 @@
 #define MAX_IOPAD_LATCH_TIME			100
 # ifndef __ASSEMBLER__
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 /**
  * omap_test_timeout - busy-loop, testing a condition
@@ -488,7 +488,7 @@ struct omap_prcm_irq {
  * @saved_mask: IRQENABLE regs are saved here during suspend
  * @priority_mask: 1 bit per IRQ, set to 1 if omap_prcm_irq.priority = true
  * @base_irq: base dynamic IRQ number, returned from irq_alloc_descs() in init
- * @suspended: set to true after Linux suspend code has called our ->prepare()
+ * @suspended: set to true after LinaOS suspend code has called our ->prepare()
  * @suspend_save_flag: set to true after IRQ masks have been saved and disabled
  *
  * @saved_mask, @priority_mask, @base_irq, @suspended, and

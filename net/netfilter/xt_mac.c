@@ -5,16 +5,16 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/etherdevice.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/xt_mac.h>
-#include <linux/netfilter/x_tables.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter/xt_mac.h>
+#include <linaos/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Netfilter Core Team <coreteam@netfilter.org>");

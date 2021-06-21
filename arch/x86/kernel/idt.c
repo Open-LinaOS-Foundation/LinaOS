@@ -2,7 +2,7 @@
 /*
  * Interrupt descriptor table related code
  */
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/set_memory.h>

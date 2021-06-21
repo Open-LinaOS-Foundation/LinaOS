@@ -238,7 +238,7 @@ xfs_iformat_data_fork(
 	case S_IFBLK:
 	case S_IFSOCK:
 		ip->i_disk_size = 0;
-		inode->i_rdev = xfs_to_linux_dev_t(xfs_dinode_get_rdev(dip));
+		inode->i_rdev = xfs_to_linaos_dev_t(xfs_dinode_get_rdev(dip));
 		return 0;
 	case S_IFREG:
 	case S_IFLNK:
@@ -643,7 +643,7 @@ xfs_iflush_fork(
 		if (iip->ili_fields & XFS_ILOG_DEV) {
 			ASSERT(whichfork == XFS_DATA_FORK);
 			xfs_dinode_put_rdev(dip,
-					linux_to_xfs_dev_t(VFS_I(ip)->i_rdev));
+					linaos_to_xfs_dev_t(VFS_I(ip)->i_rdev));
 		}
 		break;
 

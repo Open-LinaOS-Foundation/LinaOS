@@ -2,8 +2,8 @@
 #ifndef _M68K_IRQFLAGS_H
 #define _M68K_IRQFLAGS_H
 
-#include <linux/types.h>
-#include <linux/preempt.h>
+#include <linaos/types.h>
+#include <linaos/preempt.h>
 #include <asm/thread_info.h>
 #include <asm/entry.h>
 

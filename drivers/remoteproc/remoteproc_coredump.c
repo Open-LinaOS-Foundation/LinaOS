@@ -2,14 +2,14 @@
 /*
  * Coredump functionality for Remoteproc framework.
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/completion.h>
-#include <linux/devcoredump.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/remoteproc.h>
+#include <linaos/completion.h>
+#include <linaos/devcoredump.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/remoteproc.h>
 #include "remoteproc_internal.h"
 #include "remoteproc_elf_helpers.h"
 

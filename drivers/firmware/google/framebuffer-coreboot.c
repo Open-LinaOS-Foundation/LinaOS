@@ -9,12 +9,12 @@
  * Copyright 2017 Samuel Holland <samuel@sholland.org>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/simplefb.h>
+#include <linaos/platform_device.h>
 
 #include "coreboot_table.h"
 

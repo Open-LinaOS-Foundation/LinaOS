@@ -8,8 +8,8 @@
 #ifndef _HX4700_H_
 #define _HX4700_H_
 
-#include <linux/gpio.h>
-#include <linux/mfd/asic3.h>
+#include <linaos/gpio.h>
+#include <linaos/mfd/asic3.h>
 #include "irqs.h" /* PXA_NR_BUILTIN_GPIO */
 
 #define HX4700_ASIC3_GPIO_BASE	PXA_NR_BUILTIN_GPIO

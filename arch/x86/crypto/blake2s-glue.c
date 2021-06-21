@@ -7,11 +7,11 @@
 #include <crypto/internal/simd.h>
 #include <crypto/internal/hash.h>
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
+#include <linaos/types.h>
+#include <linaos/jump_label.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sizes.h>
 
 #include <asm/cpufeature.h>
 #include <asm/fpu/api.h>

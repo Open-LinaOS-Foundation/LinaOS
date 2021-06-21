@@ -3,7 +3,7 @@
  * Module: eeprom_93xx46
  * platform description for 93xx46 EEPROMs.
  */
-#include <linux/gpio/consumer.h>
+#include <linaos/gpio/consumer.h>
 
 struct eeprom_93xx46_platform_data {
 	unsigned char	flags;

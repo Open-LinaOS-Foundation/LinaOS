@@ -116,7 +116,7 @@
 		power_key: power-key {
 			label = "GPIO Key Power";
 			gpios = <&gpio3 23 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			debounce-interval = <100>;
 			wakeup-source;
 		};

@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for LinaOS.
  *
  * Copyright (c) 2003-2014 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,15 +32,15 @@
  * SOFTWARE.
  */
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/dma-mapping.h>
-#include <linux/jiffies.h>
-#include <linux/prefetch.h>
-#include <linux/export.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/ip.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/jiffies.h>
+#include <linaos/prefetch.h>
+#include <linaos/export.h>
 #include <net/xfrm.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
@@ -4580,8 +4580,8 @@ static void init_txq(struct adapter *adap, struct sge_txq *q, unsigned int id)
  *	t4_sge_alloc_eth_txq - allocate an Ethernet TX Queue
  *	@adap: the adapter
  *	@txq: the SGE Ethernet TX Queue to initialize
- *	@dev: the Linux Network Device
- *	@netdevq: the corresponding Linux TX Queue
+ *	@dev: the LinaOS Network Device
+ *	@netdevq: the corresponding LinaOS TX Queue
  *	@iqid: the Ingress Queue to which to deliver CIDX Update messages
  *	@dbqt: whether this TX Queue will use the SGE Doorbell Queue Timers
  */

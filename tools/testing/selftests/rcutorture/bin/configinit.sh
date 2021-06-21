@@ -13,7 +13,7 @@
 #
 # Copyright (C) IBM Corporation, 2013
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 T=${TMPDIR-/tmp}/configinit.sh.$$
 trap 'rm -rf $T' 0

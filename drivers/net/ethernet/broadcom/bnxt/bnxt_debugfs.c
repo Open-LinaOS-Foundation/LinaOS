@@ -7,11 +7,11 @@
  * the Free Software Foundation.
  */
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 #include "bnxt_hsi.h"
-#include <linux/dim.h>
+#include <linaos/dim.h>
 #include "bnxt.h"
 #include "bnxt_debugfs.h"
 

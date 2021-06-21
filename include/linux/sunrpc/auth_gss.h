@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/auth_gss.h
+ * linaos/include/linaos/sunrpc/auth_gss.h
  *
  * Declarations for RPCSEC_GSS
  *
@@ -13,10 +13,10 @@
 #ifndef _LINUX_SUNRPC_AUTH_GSS_H
 #define _LINUX_SUNRPC_AUTH_GSS_H
 
-#include <linux/refcount.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/gss_api.h>
+#include <linaos/refcount.h>
+#include <linaos/sunrpc/auth.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/sunrpc/gss_api.h>
 
 #define RPC_GSS_VERSION		1
 

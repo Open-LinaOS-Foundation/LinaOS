@@ -3,18 +3,18 @@
 
 /* Kernel module implementing an IP set type: the bitmap:port type */
 
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/netlink.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
+#include <linaos/module.h>
+#include <linaos/ip.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
+#include <linaos/netlink.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
 #include <net/netlink.h>
 
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_bitmap.h>
-#include <linux/netfilter/ipset/ip_set_getport.h>
+#include <linaos/netfilter/ipset/ip_set.h>
+#include <linaos/netfilter/ipset/ip_set_bitmap.h>
+#include <linaos/netfilter/ipset/ip_set_getport.h>
 
 #define IPSET_TYPE_REV_MIN	0
 /*				1	   Counter support added */

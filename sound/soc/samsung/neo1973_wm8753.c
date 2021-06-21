@@ -6,12 +6,12 @@
 // Author: Graeme Gregory <graeme@openmoko.org>
 // Copyright 2007 Wolfson Microelectronics PLC.
 // Author: Graeme Gregory
-//         graeme.gregory@wolfsonmicro.com or linux@wolfsonmicro.com
+//         graeme.gregory@wolfsonmicro.com or linaos@wolfsonmicro.com
 // Copyright 2009 Wolfson Microelectronics
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
 
 #include <sound/soc.h>
 

@@ -7,13 +7,13 @@
  * Authors:	Cao Qingtao <qingtao.cao@windriver.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/edac.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/edac.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/gfp.h>
 
 #include "edac_module.h"
 

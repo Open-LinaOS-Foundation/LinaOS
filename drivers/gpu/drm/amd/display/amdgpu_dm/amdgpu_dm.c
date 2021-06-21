@@ -59,13 +59,13 @@
 
 #include "ivsrcid/ivsrcid_vislands30.h"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/pm_runtime.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/component.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pci.h>
+#include <linaos/firmware.h>
+#include <linaos/component.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_uapi.h>
@@ -1734,7 +1734,7 @@ static int amdgpu_dm_smu_write_watermarks_table(struct amdgpu_device *adev)
 	if (!is_support_sw_smu(adev))
 		return 0;
 
-	/* This interface is for dGPU Navi1x.Linux dc-pplib interface depends
+	/* This interface is for dGPU Navi1x.LinaOS dc-pplib interface depends
 	 * on window driver dc implementation.
 	 * For Navi1x, clock settings of dcn watermarks are fixed. the settings
 	 * should be passed to smu during boot up and resume from s3.
@@ -1752,12 +1752,12 @@ static int amdgpu_dm_smu_write_watermarks_table(struct amdgpu_device *adev)
 	 * dcn10_init_hw
 	 * notify_wm_ranges
 	 * set_wm_ranges
-	 * -- Linux
+	 * -- LinaOS
 	 * smu_set_watermarks_for_clock_ranges
 	 * renoir_set_watermarks_table
 	 * smu_write_watermarks_table
 	 *
-	 * For Linux,
+	 * For LinaOS,
 	 * dc_hardware_init -> amdgpu_dm_init
 	 * dc_set_power_state --> dm_resume
 	 *

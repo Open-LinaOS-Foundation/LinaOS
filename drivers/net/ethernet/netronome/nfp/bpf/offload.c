@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt)	"NFP net bpf: " fmt
 
-#include <linux/bpf.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/mm.h>
+#include <linaos/bpf.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
 
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>

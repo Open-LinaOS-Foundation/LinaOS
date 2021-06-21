@@ -7,14 +7,14 @@
  * Author: Saravanan Sekar <sravanhome@gmail.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/mp2629.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/mp2629.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 static const struct mfd_cell mp2629_cell[] = {
 	{

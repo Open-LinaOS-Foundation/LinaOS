@@ -4,8 +4,8 @@
  *   Portions Copyright (C) Tino Reichardt, 2012
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
 #include "jfs_incore.h"
 #include "jfs_superblock.h"
 #include "jfs_dmap.h"

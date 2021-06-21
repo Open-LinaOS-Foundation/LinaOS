@@ -11,7 +11,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/io.h>
 
 /* This must match data at realmode/rm/header.S */

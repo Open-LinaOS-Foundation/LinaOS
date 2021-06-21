@@ -5,19 +5,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/tee_drv.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/workqueue.h>
 #include "optee_private.h"
 #include "optee_smc.h"
 #include "shm_pool.h"

@@ -2,7 +2,7 @@
 #ifndef _ASM_S390_PCI_INSN_H
 #define _ASM_S390_PCI_INSN_H
 
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 /* Load/Store status codes */
 #define ZPCI_PCI_ST_FUNC_NOT_ENABLED		4

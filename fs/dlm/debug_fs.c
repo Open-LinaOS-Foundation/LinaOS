@@ -8,12 +8,12 @@
 *******************************************************************************
 ******************************************************************************/
 
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/ctype.h>
+#include <linaos/debugfs.h>
+#include <linaos/slab.h>
 
 #include "dlm_internal.h"
 #include "lock.h"

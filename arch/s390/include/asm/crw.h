@@ -11,7 +11,7 @@
 #ifndef _ASM_S390_CRW_H
 #define _ASM_S390_CRW_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Channel Report Word

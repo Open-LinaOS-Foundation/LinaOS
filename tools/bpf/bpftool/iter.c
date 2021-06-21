@@ -3,7 +3,7 @@
 
 #define _GNU_SOURCE
 #include <unistd.h>
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <bpf/libbpf.h>
 
 #include "main.h"

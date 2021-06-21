@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Surface System Aggregator Module (SSAM) user-space EC interface.
  *
@@ -12,8 +12,8 @@
 #ifndef _UAPI_LINUX_SURFACE_AGGREGATOR_CDEV_H
 #define _UAPI_LINUX_SURFACE_AGGREGATOR_CDEV_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 /**
  * enum ssam_cdev_request_flags - Request flags for SSAM cdev request IOCTL.

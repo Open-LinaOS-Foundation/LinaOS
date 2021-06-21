@@ -47,7 +47,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Pingpong Linux driver
+ * PCIe NTB Pingpong LinaOS driver
  */
 
 /*
@@ -67,18 +67,18 @@
  * root@self# cat $DBG_DIR/count
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/bitops.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/bitops.h>
 
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/hrtimer.h>
-#include <linux/debugfs.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/hrtimer.h>
+#include <linaos/debugfs.h>
 
-#include <linux/ntb.h>
+#include <linaos/ntb.h>
 
 #define DRIVER_NAME		"ntb_pingpong"
 #define DRIVER_VERSION		"2.0"

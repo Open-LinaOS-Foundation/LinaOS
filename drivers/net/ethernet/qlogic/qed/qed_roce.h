@@ -6,8 +6,8 @@
 
 #ifndef _QED_ROCE_H
 #define _QED_ROCE_H
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
 
 #if IS_ENABLED(CONFIG_QED_RDMA)
 void qed_roce_dpm_dcbx(struct qed_hwfn *p_hwfn, struct qed_ptt *p_ptt);

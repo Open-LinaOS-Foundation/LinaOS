@@ -1,34 +1,34 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/mm/madvise.c
+ *	linaos/mm/madvise.c
  *
  * Copyright (C) 1999  Linus Torvalds
  * Copyright (C) 2002  Christoph Hellwig
  */
 
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/syscalls.h>
-#include <linux/mempolicy.h>
-#include <linux/page-isolation.h>
-#include <linux/page_idle.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/hugetlb.h>
-#include <linux/falloc.h>
-#include <linux/fadvise.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/uio.h>
-#include <linux/ksm.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/pagewalk.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/shmem_fs.h>
-#include <linux/mmu_notifier.h>
+#include <linaos/mman.h>
+#include <linaos/pagemap.h>
+#include <linaos/syscalls.h>
+#include <linaos/mempolicy.h>
+#include <linaos/page-isolation.h>
+#include <linaos/page_idle.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/hugetlb.h>
+#include <linaos/falloc.h>
+#include <linaos/fadvise.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/uio.h>
+#include <linaos/ksm.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/pagewalk.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/mmu_notifier.h>
 
 #include <asm/tlb.h>
 

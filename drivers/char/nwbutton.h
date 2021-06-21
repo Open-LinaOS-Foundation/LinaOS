@@ -4,7 +4,7 @@
 
 /*
  * 	NetWinder Button Driver-
- *	Copyright (C) Alex Holden <alex@linuxhacker.org> 1998, 1999.
+ *	Copyright (C) Alex Holden <alex@linaoshacker.org> 1998, 1999.
  */
 
 #ifdef __NWBUTTON_C	/* Actually compiling the driver itself */

@@ -6,11 +6,11 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
+#include <linaos/if_ether.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/udp.h>
 
 struct gre_base_hdr {
 	uint16_t flags;

@@ -2,24 +2,24 @@
 #ifndef __LINUX_DCACHE_H
 #define __LINUX_DCACHE_H
 
-#include <linux/atomic.h>
-#include <linux/list.h>
-#include <linux/math.h>
-#include <linux/rculist.h>
-#include <linux/rculist_bl.h>
-#include <linux/spinlock.h>
-#include <linux/seqlock.h>
-#include <linux/cache.h>
-#include <linux/rcupdate.h>
-#include <linux/lockref.h>
-#include <linux/stringhash.h>
-#include <linux/wait.h>
+#include <linaos/atomic.h>
+#include <linaos/list.h>
+#include <linaos/math.h>
+#include <linaos/rculist.h>
+#include <linaos/rculist_bl.h>
+#include <linaos/spinlock.h>
+#include <linaos/seqlock.h>
+#include <linaos/cache.h>
+#include <linaos/rcupdate.h>
+#include <linaos/lockref.h>
+#include <linaos/stringhash.h>
+#include <linaos/wait.h>
 
 struct path;
 struct vfsmount;
 
 /*
- * linux/include/linux/dcache.h
+ * linaos/include/linaos/dcache.h
  *
  * Dirent cache data structures
  *

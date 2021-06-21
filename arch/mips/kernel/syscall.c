@@ -7,26 +7,26 @@
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  * Copyright (C) 2001 MIPS Technologies, Inc.
  */
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/linkage.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/syscalls.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/unistd.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/compiler.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/elf.h>
-#include <linux/sched/task_stack.h>
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/linkage.h>
+#include <linaos/fs.h>
+#include <linaos/smp.h>
+#include <linaos/ptrace.h>
+#include <linaos/string.h>
+#include <linaos/syscalls.h>
+#include <linaos/file.h>
+#include <linaos/utsname.h>
+#include <linaos/unistd.h>
+#include <linaos/sem.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
+#include <linaos/compiler.h>
+#include <linaos/ipc.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/elf.h>
+#include <linaos/sched/task_stack.h>
 
 #include <asm/asm.h>
 #include <asm/asm-eva.h>
@@ -45,7 +45,7 @@
  * For historic reasons the pipe(2) syscall on MIPS has an unusual calling
  * convention.	It returns results in registers $v0 / $v1 which means there
  * is no need for it to do verify the validity of a userspace pointer
- * argument.  Historically that used to be expensive in Linux.	These days
+ * argument.  Historically that used to be expensive in LinaOS.	These days
  * the performance advantage is negligible.
  */
 asmlinkage int sysm_pipe(void)

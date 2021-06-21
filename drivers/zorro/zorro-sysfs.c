@@ -11,10 +11,10 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/zorro.h>
-#include <linux/stat.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/zorro.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
 
 #include <asm/byteorder.h>
 

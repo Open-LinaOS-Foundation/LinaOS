@@ -11,20 +11,20 @@
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/clk/tegra.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk/tegra.h>
 
 #include <media/cec-notifier.h>
 

@@ -10,7 +10,7 @@
 #include <osdep_service.h>
 #include <drv_types.h>
 #include "wifi.h"
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 
 #ifdef CONFIG_88EU_AP_MODE
 
@@ -330,7 +330,7 @@ struct ieee80211_snap_hdr {
 #define WLAN_GET_SEQ_FRAG(seq) ((seq) & RTW_IEEE80211_SCTL_FRAG)
 #define WLAN_GET_SEQ_SEQ(seq)  ((seq) & RTW_IEEE80211_SCTL_SEQ)
 
-/* Non standard?  Not in <linux/ieee80211.h> */
+/* Non standard?  Not in <linaos/ieee80211.h> */
 #define WLAN_REASON_EXPIRATION_CHK 65535
 
 #define IEEE80211_MGMT_HDR_LEN 24

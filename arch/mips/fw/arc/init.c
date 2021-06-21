@@ -7,8 +7,8 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
 
 #include <asm/bootinfo.h>
 #include <asm/sgialib.h>
@@ -17,7 +17,7 @@
 #undef DEBUG_PROM_INIT
 
 /* Master romvec interface. */
-struct linux_romvec *romvec;
+struct linaos_romvec *romvec;
 
 #if defined(CONFIG_64BIT) && defined(CONFIG_FW_ARC32)
 /* stack for calling 32bit ARC prom */

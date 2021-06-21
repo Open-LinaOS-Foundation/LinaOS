@@ -5,12 +5,12 @@
  *
  * Copyright (c) 2011-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@linaos-iscsi.org>
  *
  ******************************************************************************/
 
-#include <linux/configfs.h>
-#include <linux/export.h>
+#include <linaos/configfs.h>
+#include <linaos/export.h>
 #include <scsi/iscsi_proto.h>
 #include <target/target_core_base.h>
 

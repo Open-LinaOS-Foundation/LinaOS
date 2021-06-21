@@ -18,7 +18,7 @@ LSM hook:
 .. c:function:: int file_mprotect(struct vm_area_struct *vma, unsigned long reqprot, unsigned long prot);
 
 Other LSM hooks which can be instrumented can be found in
-``include/linux/lsm_hooks.h``.
+``include/linaos/lsm_hooks.h``.
 
 eBPF programs that use :doc:`/bpf/btf` do not need to include kernel headers
 for accessing information from the attached eBPF program's context. They can
@@ -41,17 +41,17 @@ that need to be accessed.
 .. note:: The order of the fields is irrelevant.
 
 This can be further simplified (if one has access to the BTF information at
-build time) by generating the ``vmlinux.h`` with:
+build time) by generating the ``vmlinaos.h`` with:
 
 .. code-block:: console
 
-	# bpftool btf dump file <path-to-btf-vmlinux> format c > vmlinux.h
+	# bpftool btf dump file <path-to-btf-vmlinaos> format c > vmlinaos.h
 
-.. note:: ``path-to-btf-vmlinux`` can be ``/sys/kernel/btf/vmlinux`` if the
+.. note:: ``path-to-btf-vmlinaos`` can be ``/sys/kernel/btf/vmlinaos`` if the
 	  build environment matches the environment the BPF programs are
 	  deployed in.
 
-The ``vmlinux.h`` can then simply be included in the BPF programs without
+The ``vmlinaos.h`` can then simply be included in the BPF programs without
 requiring the definition of the types.
 
 The eBPF programs can be declared using the``BPF_PROG``
@@ -135,8 +135,8 @@ userspace code in `tools/testing/selftests/bpf/prog_tests/test_lsm.c`_
 
 .. Links
 .. _tools/lib/bpf/bpf_tracing.h:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/lib/bpf/bpf_tracing.h
+   https://git.kernel.org/pub/scm/linaos/kernel/git/stable/linaos.git/tree/tools/lib/bpf/bpf_tracing.h
 .. _tools/testing/selftests/bpf/progs/lsm.c:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/bpf/progs/lsm.c
+   https://git.kernel.org/pub/scm/linaos/kernel/git/stable/linaos.git/tree/tools/testing/selftests/bpf/progs/lsm.c
 .. _tools/testing/selftests/bpf/prog_tests/test_lsm.c:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/bpf/prog_tests/test_lsm.c
+   https://git.kernel.org/pub/scm/linaos/kernel/git/stable/linaos.git/tree/tools/testing/selftests/bpf/prog_tests/test_lsm.c

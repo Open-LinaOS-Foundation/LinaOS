@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/errno.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/socket.h>
+#include <linaos/types.h>
 #include <net/checksum.h>
 #include <net/dst_cache.h>
 #include <net/ip.h>
@@ -13,7 +13,7 @@
 #include <net/ip6_route.h>
 #include <net/lwtunnel.h>
 #include <net/protocol.h>
-#include <uapi/linux/ila.h>
+#include <uapi/linaos/ila.h>
 #include "ila.h"
 
 struct ila_lwt {

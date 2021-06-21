@@ -7,19 +7,19 @@
  * Author: David Lopo
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/irqreturn.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg-fsm.h>
-#include <linux/usb/chipidea.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dmapool.h>
+#include <linaos/err.h>
+#include <linaos/irqreturn.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg-fsm.h>
+#include <linaos/usb/chipidea.h>
 
 #include "ci.h"
 #include "udc.h"

@@ -5,8 +5,8 @@
 #ifndef _DCCP_CCID2_H_
 #define _DCCP_CCID2_H_
 
-#include <linux/timer.h>
-#include <linux/types.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
 #include "../ccid.h"
 #include "../dccp.h"
 

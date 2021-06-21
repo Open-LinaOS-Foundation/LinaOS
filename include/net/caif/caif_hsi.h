@@ -10,7 +10,7 @@
 
 #include <net/caif/caif_layer.h>
 #include <net/caif/caif_device.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 /*
  * Maximum number of CAIF frames that can reside in the same HSI frame.

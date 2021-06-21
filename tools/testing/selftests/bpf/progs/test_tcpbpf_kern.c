@@ -2,14 +2,14 @@
 #include <stddef.h>
 #include <string.h>
 #include <netinet/in.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/tcp.h>
+#include <linaos/bpf.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_packet.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/tcp.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 #include "bpf_tcp_helpers.h"
@@ -20,7 +20,7 @@ int _version SEC("version") = 1;
 
 /**
  * SOL_TCP is defined in <netinet/tcp.h> while
- * TCP_SAVED_SYN is defined in already included <linux/tcp.h>
+ * TCP_SAVED_SYN is defined in already included <linaos/tcp.h>
  */
 #ifndef SOL_TCP
 #define SOL_TCP 6

@@ -42,7 +42,7 @@
 #include "msg.h"
 #include "bearer.h"
 #include <net/sock.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* Number of messages to send before rescheduling */
 #define MAX_SEND_MSG_COUNT	25

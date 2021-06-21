@@ -8,7 +8,7 @@
 #ifndef _IMG_IR_HW_H_
 #define _IMG_IR_HW_H_
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <media/rc-core.h>
 
 /* constants */

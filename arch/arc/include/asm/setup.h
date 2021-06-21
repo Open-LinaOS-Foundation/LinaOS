@@ -6,7 +6,7 @@
 #define __ASMARC_SETUP_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <uapi/asm/setup.h>
 
 #define COMMAND_LINE_SIZE 256

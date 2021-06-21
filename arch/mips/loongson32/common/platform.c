@@ -3,15 +3,15 @@
  * Copyright (c) 2011-2016 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/mtd/partitions.h>
-#include <linux/sizes.h>
-#include <linux/phy.h>
-#include <linux/serial_8250.h>
-#include <linux/stmmac.h>
-#include <linux/usb/ehci_pdriver.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/sizes.h>
+#include <linaos/phy.h>
+#include <linaos/serial_8250.h>
+#include <linaos/stmmac.h>
+#include <linaos/usb/ehci_pdriver.h>
 
 #include <platform.h>
 #include <loongson1.h>

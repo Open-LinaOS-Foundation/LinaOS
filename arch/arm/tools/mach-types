@@ -1,16 +1,16 @@
 # Database of machine macros and numbers
 #
-# This file is linux/arch/arm/tools/mach-types
+# This file is linaos/arch/arm/tools/mach-types
 #
 # Up to date versions of this file can be obtained from:
 #
-#   http://www.arm.linux.org.uk/developer/machines/download.php
+#   http://www.arm.linaos.org.uk/developer/machines/download.php
 #
 # Please do not send patches to this file; it is automatically generated!
 # To add an entry into this database, please see Documentation/arm/arm.rst,
 # or visit:
 #
-#   http://www.arm.linux.org.uk/developer/machines/?action=new
+#   http://www.arm.linaos.org.uk/developer/machines/?action=new
 #
 # This is a cut-down version of the file; it contains only machines that
 # are merged into mainline or have been edited in the machine database

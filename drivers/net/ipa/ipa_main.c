@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2021 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/qcom_scm.h>
-#include <linux/soc/qcom/mdt_loader.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/bitfield.h>
+#include <linaos/device.h>
+#include <linaos/bug.h>
+#include <linaos/io.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/soc/qcom/mdt_loader.h>
 
 #include "ipa.h"
 #include "ipa_clock.h"

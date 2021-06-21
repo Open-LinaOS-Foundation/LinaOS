@@ -10,9 +10,9 @@
 #ifndef _ASM_SYSCALL_H
 #define _ASM_SYSCALL_H	1
 
-#include <uapi/linux/audit.h>
-#include <linux/sched.h>
-#include <linux/err.h>
+#include <uapi/linaos/audit.h>
+#include <linaos/sched.h>
+#include <linaos/err.h>
 
 static inline long syscall_get_nr(struct task_struct *task,
 				  struct pt_regs *regs)

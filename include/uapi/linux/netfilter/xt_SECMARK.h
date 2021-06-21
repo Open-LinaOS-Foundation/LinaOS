@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_SECMARK_H_target
 #define _XT_SECMARK_H_target
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * This is intended for use by various security subsystems (but not
@@ -11,7 +11,7 @@
  * 'mode' refers to the specific security subsystem which the
  * packets are being marked for.
  */
-#define SECMARK_MODE_SEL	0x01		/* SELinux */
+#define SECMARK_MODE_SEL	0x01		/* SELinaOS */
 #define SECMARK_SECCTX_MAX	256
 
 struct xt_secmark_target_info {

@@ -5,8 +5,8 @@
  * Copyright (C) 2013, 2014 Red Hat, Inc.
  * Author: Mark Salter <msalter@redhat.com>
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 
 #include <asm/assembler.h>
 

@@ -7,9 +7,9 @@
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 
 #include <asm/fw/arc/types.h>
 #include <asm/sgialib.h>

@@ -7,13 +7,13 @@
  * Gregory CLEMENT <gregory.clement@free-electrons.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #define NUM_TBG	    4
 

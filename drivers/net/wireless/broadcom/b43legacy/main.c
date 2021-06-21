@@ -15,17 +15,17 @@
 
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/workqueue.h>
-#include <linux/sched/signal.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/firmware.h>
+#include <linaos/workqueue.h>
+#include <linaos/sched/signal.h>
+#include <linaos/skbuff.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
 #include <net/dst.h>
 #include <asm/unaligned.h>
 

@@ -30,9 +30,9 @@
  */
 
 #include <crypto/aead.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <linaos/highmem.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
 #include <net/dst.h>
 #include <net/inet_connection_sock.h>
 #include <net/tcp.h>

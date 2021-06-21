@@ -9,7 +9,7 @@
 
 /* size_t strlen (const char *s)  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 ENTRY(strlen)
 	mov	r4,r0
 	and	#3,r0

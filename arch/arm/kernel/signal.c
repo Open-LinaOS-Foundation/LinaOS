@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/signal.c
+ *  linaos/arch/arm/kernel/signal.c
  *
  *  Copyright (C) 1995-2009 Russell King
  */
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/uaccess.h>
-#include <linux/tracehook.h>
-#include <linux/uprobes.h>
-#include <linux/syscalls.h>
+#include <linaos/errno.h>
+#include <linaos/random.h>
+#include <linaos/signal.h>
+#include <linaos/personality.h>
+#include <linaos/uaccess.h>
+#include <linaos/tracehook.h>
+#include <linaos/uprobes.h>
+#include <linaos/syscalls.h>
 
 #include <asm/elf.h>
 #include <asm/cacheflush.h>

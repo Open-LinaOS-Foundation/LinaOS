@@ -15,19 +15,19 @@
  *
  *
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/slab.h>
 
 #include "../include/media/lm3554.h"
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
-#include <linux/acpi.h>
-#include "../include/linux/atomisp_gmin_platform.h"
-#include "../include/linux/atomisp.h"
+#include <linaos/acpi.h>
+#include "../include/linaos/atomisp_gmin_platform.h"
+#include "../include/linaos/atomisp.h"
 
 /* Registers */
 

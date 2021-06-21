@@ -4,7 +4,7 @@ VME Device Drivers
 Driver registration
 -------------------
 
-As with other subsystems within the Linux kernel, VME device drivers register
+As with other subsystems within the LinaOS kernel, VME device drivers register
 with the VME subsystem, typically called from the devices init routine.  This is
 achieved via a call to :c:func:`vme_register_driver`.
 
@@ -290,7 +290,7 @@ The function :c:func:`vme_bus_num` returns the bus ID of the provided bridge.
 VME API
 -------
 
-.. kernel-doc:: include/linux/vme.h
+.. kernel-doc:: include/linaos/vme.h
    :internal:
 
 .. kernel-doc:: drivers/vme/vme.c

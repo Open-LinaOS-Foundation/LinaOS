@@ -9,10 +9,10 @@
  * Thanks goes to Steven Rostedt for writing the original x86 version.
  */
 
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/syscalls.h>
+#include <linaos/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/ftrace.h>
+#include <linaos/syscalls.h>
 
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
@@ -376,7 +376,7 @@ out:
 #ifdef CONFIG_32BIT
 unsigned long __init arch_syscall_addr(int nr)
 {
-	return (unsigned long)sys_call_table[nr - __NR_O32_Linux];
+	return (unsigned long)sys_call_table[nr - __NR_O32_LinaOS];
 }
 #endif
 
@@ -385,14 +385,14 @@ unsigned long __init arch_syscall_addr(int nr)
 unsigned long __init arch_syscall_addr(int nr)
 {
 #ifdef CONFIG_MIPS32_N32
-	if (nr >= __NR_N32_Linux && nr < __NR_N32_Linux + __NR_N32_Linux_syscalls)
-		return (unsigned long)sysn32_call_table[nr - __NR_N32_Linux];
+	if (nr >= __NR_N32_LinaOS && nr < __NR_N32_LinaOS + __NR_N32_LinaOS_syscalls)
+		return (unsigned long)sysn32_call_table[nr - __NR_N32_LinaOS];
 #endif
-	if (nr >= __NR_64_Linux  && nr < __NR_64_Linux + __NR_64_Linux_syscalls)
-		return (unsigned long)sys_call_table[nr - __NR_64_Linux];
+	if (nr >= __NR_64_LinaOS  && nr < __NR_64_LinaOS + __NR_64_LinaOS_syscalls)
+		return (unsigned long)sys_call_table[nr - __NR_64_LinaOS];
 #ifdef CONFIG_MIPS32_O32
-	if (nr >= __NR_O32_Linux && nr < __NR_O32_Linux + __NR_O32_Linux_syscalls)
-		return (unsigned long)sys32_call_table[nr - __NR_O32_Linux];
+	if (nr >= __NR_O32_LinaOS && nr < __NR_O32_LinaOS + __NR_O32_LinaOS_syscalls)
+		return (unsigned long)sys32_call_table[nr - __NR_O32_LinaOS];
 #endif
 
 	return (unsigned long) &sys_ni_syscall;

@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _ALPHA_IOCTL_H
 #define _ALPHA_IOCTL_H
 
 /*
- * The original linux ioctl numbering scheme was just a general
+ * The original linaos ioctl numbering scheme was just a general
  * "anything goes" setup, where more or less random numbers were
  * assigned.  Sorry, I was clueless when I started out on this.
  *

@@ -7,7 +7,7 @@
 #ifndef __USB_EHCI_ORION_H
 #define __USB_EHCI_ORION_H
 
-#include <linux/mbus.h>
+#include <linaos/mbus.h>
 
 enum orion_ehci_phy_ver {
 	EHCI_PHY_ORION,

@@ -8,9 +8,9 @@
  * 32 Bit compat layer by Stefani Seibold <stefani@seibold.net>
  *  sponsored by Rohde & Schwarz GmbH & Co. KG Munich/Germany
  */
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/time.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 #include "../../../../lib/vdso/gettimeofday.c"
 

@@ -5,13 +5,13 @@
  * Author: Vitor Soares <vitor.soares@synopsys.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i3c/device.h>
-#include <linux/i3c/master.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i3c/device.h>
+#include <linaos/i3c/master.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 #include "st_lsm6dsx.h"
 

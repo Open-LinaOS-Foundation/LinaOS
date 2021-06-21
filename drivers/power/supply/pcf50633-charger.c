@@ -9,18 +9,18 @@
  * Harald Welte, Andy Green and Werner Almesberger
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/mbc.h>
+#include <linaos/mfd/pcf50633/core.h>
+#include <linaos/mfd/pcf50633/mbc.h>
 
 struct pcf50633_mbc {
 	struct pcf50633 *pcf;

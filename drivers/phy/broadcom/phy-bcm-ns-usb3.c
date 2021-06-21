@@ -10,17 +10,17 @@
  * Copyright (c) Broadcom Corp, 2012
  */
 
-#include <linux/bcma/bcma.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iopoll.h>
-#include <linux/mdio.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/slab.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/iopoll.h>
+#include <linaos/mdio.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/slab.h>
 
 #define BCM_NS_USB3_PHY_BASE_ADDR_REG	0x1f
 #define BCM_NS_USB3_PHY_PLL30_BLOCK	0x8000

@@ -1,6 +1,6 @@
 /*
  * Copyright IBM Corporation, 2010
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linaos.vnet.ibm.com>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2.1 of the GNU Lesser General Public License
@@ -12,10 +12,10 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/uio.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/uio.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

@@ -9,17 +9,17 @@
 
 #define pr_fmt(fmt) "mux-core: " fmt
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mux/consumer.h>
-#include <linux/mux/driver.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/idr.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mux/consumer.h>
+#include <linaos/mux/driver.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
 
 /*
  * The idle-as-is "state" is not an actual state that may be selected, it

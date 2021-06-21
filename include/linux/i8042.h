@@ -3,7 +3,7 @@
 #define _LINUX_I8042_H
 
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Standard commands.

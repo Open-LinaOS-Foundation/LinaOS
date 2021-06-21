@@ -30,7 +30,7 @@ The table below, taken from the NFSv4.1 document, lists
 the operations that are mandatory to implement (REQ), optional
 (OPT), and NFSv4.0 operations that are required not to implement (MNI)
 in minor version 1.  The first column indicates the operations that
-are not supported yet by the linux server implementation.
+are not supported yet by the linaos server implementation.
 
 The OPTIONAL features identified and their abbreviations are as follows:
 
@@ -38,7 +38,7 @@ The OPTIONAL features identified and their abbreviations are as follows:
 - **FDELG**	File Delegations
 - **DDELG**	Directory Delegations
 
-The following abbreviations indicate the linux server implementation status.
+The following abbreviations indicate the linaos server implementation status.
 
 - **I**	Implemented NFSv4.1 operations.
 - **NS**	Not Supported.
@@ -229,7 +229,7 @@ SSV:
 
 GSS on the backchannel:
   Again, theoretically required but not widely implemented (in
-  particular, the current Linux client doesn't request it).  We return
+  particular, the current LinaOS client doesn't request it).  We return
   NFS4ERR_ENCR_ALG_UNSUPP on CREATE_SESSION.
 
 DELEGPURGE:
@@ -253,4 +253,4 @@ Nonstandard compound limitations:
   fail to live up to the promise we made in CREATE_SESSION fore channel
   negotiation.
 
-See also http://wiki.linux-nfs.org/wiki/index.php/Server_4.0_and_4.1_issues.
+See also http://wiki.linaos-nfs.org/wiki/index.php/Server_4.0_and_4.1_issues.

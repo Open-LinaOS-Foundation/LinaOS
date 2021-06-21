@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <internal/xyarray.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 #include <stdlib.h>
 #include <string.h>
 

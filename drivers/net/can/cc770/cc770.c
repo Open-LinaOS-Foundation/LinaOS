@@ -7,26 +7,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ether.h>
+#include <linaos/skbuff.h>
+#include <linaos/delay.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/platform/cc770.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/platform/cc770.h>
 
 #include "cc770.h"
 

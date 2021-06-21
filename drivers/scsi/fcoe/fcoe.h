@@ -8,8 +8,8 @@
 #ifndef _FCOE_H_
 #define _FCOE_H_
 
-#include <linux/skbuff.h>
-#include <linux/kthread.h>
+#include <linaos/skbuff.h>
+#include <linaos/kthread.h>
 
 #define FCOE_MAX_QUEUE_DEPTH	256
 #define FCOE_MIN_QUEUE_DEPTH	32

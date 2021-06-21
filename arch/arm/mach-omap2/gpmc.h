@@ -7,4 +7,4 @@
  * Do not include this file in any new code, this will get removed
  * once omap3 boots in device tree only mode.
  */
-#include <linux/omap-gpmc.h>
+#include <linaos/omap-gpmc.h>

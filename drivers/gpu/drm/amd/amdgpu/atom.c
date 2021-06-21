@@ -22,9 +22,9 @@
  * Author: Stanislaw Skowronek
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
 #include <asm/unaligned.h>
 
 #include <drm/drm_util.h>

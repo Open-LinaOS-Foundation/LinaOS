@@ -16,11 +16,11 @@
  * - OTG test device
  */
 
-#include <linux/usb/otg.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/chipidea.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/usb/otg.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/chipidea.h>
+#include <linaos/regulator/consumer.h>
 
 #include "ci.h"
 #include "bits.h"
@@ -196,7 +196,7 @@ static const struct attribute_group inputs_attr_group = {
 
 /*
  * Keep this list in the same order as timers indexed
- * by enum otg_fsm_timer in include/linux/usb/otg-fsm.h
+ * by enum otg_fsm_timer in include/linaos/usb/otg-fsm.h
  */
 static unsigned otg_timer_ms[] = {
 	TA_WAIT_VRISE,
@@ -358,7 +358,7 @@ static int b_ssend_srp_tmout(struct ci_hdrc *ci)
 
 /*
  * Keep this list in the same order as timers indexed
- * by enum otg_fsm_timer in include/linux/usb/otg-fsm.h
+ * by enum otg_fsm_timer in include/linaos/usb/otg-fsm.h
  */
 static int (*otg_timer_handlers[])(struct ci_hdrc *) = {
 	a_wait_vrise_tmout,	/* A_WAIT_VRISE */

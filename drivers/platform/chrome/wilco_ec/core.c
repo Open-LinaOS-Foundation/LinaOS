@@ -7,12 +7,12 @@
  * This is the entry point for the drivers that control the Wilco EC.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_data/wilco-ec.h>
-#include <linux/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/device.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/wilco-ec.h>
+#include <linaos/platform_device.h>
 
 #include "../cros_ec_lpc_mec.h"
 

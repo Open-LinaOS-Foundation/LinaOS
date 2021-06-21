@@ -5,15 +5,15 @@
  * Copyright (C) 2016 Cogent Embedded Inc.
  */
 
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/bug.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #include "renesas-cpg-mssr.h"
 #include "rcar-gen2-cpg.h"

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _GUARDED_STORAGE_H
 #define _GUARDED_STORAGE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct gs_cb {
 	__u64 reserved;

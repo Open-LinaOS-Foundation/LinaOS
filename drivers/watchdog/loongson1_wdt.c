@@ -3,10 +3,10 @@
  * Copyright (c) 2016 Yang Ling <gnaygnil@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/watchdog.h>
 #include <loongson1.h>
 
 #define DEFAULT_HEARTBEAT	30

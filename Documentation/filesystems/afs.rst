@@ -232,7 +232,7 @@ The @sys Substitution
 The list of up to 16 @sys substitutions for the current network namespace can
 be configured by writing a list to /proc/fs/afs/sysname::
 
-	[root@andromeda ~]# echo foo amd64_linux_26 >/proc/fs/afs/sysname
+	[root@andromeda ~]# echo foo amd64_linaos_26 >/proc/fs/afs/sysname
 
 or cleared entirely by writing an empty list::
 
@@ -242,10 +242,10 @@ The current list for current network namespace can be retrieved by::
 
 	[root@andromeda ~]# cat /proc/fs/afs/sysname
 	foo
-	amd64_linux_26
+	amd64_linaos_26
 
 When @sys is being substituted for, each element of the list is tried in the
 order given.
 
 By default, the list will contain one item that conforms to the pattern
-"<arch>_linux_26", amd64 being the name for x86_64.
+"<arch>_linaos_26", amd64 being the name for x86_64.

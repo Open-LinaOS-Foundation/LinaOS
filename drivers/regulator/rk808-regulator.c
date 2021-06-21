@@ -12,16 +12,16 @@
  * Author: Wadim Egorov <w.egorov@phytec.de>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/mfd/rk808.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/mfd/rk808.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/gpio/consumer.h>
 
 /* Field Definitions */
 #define RK808_BUCK_VSEL_MASK	0x3f

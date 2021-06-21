@@ -10,12 +10,12 @@
  *  Copyright (C) 2004-2006 Ingo Molnar
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
-#include <linux/ring_buffer.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <linaos/ring_buffer.h>
+#include <linaos/debugfs.h>
+#include <linaos/uaccess.h>
+#include <linaos/ftrace.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
 
 #include "trace.h"
 

@@ -5,15 +5,15 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/gfp.h>
-#include <linux/fs_context.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/gfp.h>
+#include <linaos/fs_context.h>
 #include "internal.h"
 
 

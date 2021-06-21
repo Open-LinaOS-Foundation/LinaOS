@@ -10,8 +10,8 @@
  */
 
 #include "net_driver.h"
-#include <linux/module.h>
-#include <linux/aer.h>
+#include <linaos/module.h>
+#include <linaos/aer.h>
 #include "efx_common.h"
 #include "efx_channels.h"
 #include "io.h"

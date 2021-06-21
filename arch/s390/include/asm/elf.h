@@ -129,7 +129,7 @@
  * ELF register definitions..
  */
 
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 #include <asm/ptrace.h>
 #include <asm/syscall.h>
@@ -141,7 +141,7 @@ typedef s390_regs elf_gregset_t;
 typedef s390_fp_regs compat_elf_fpregset_t;
 typedef s390_compat_regs compat_elf_gregset_t;
 
-#include <linux/sched/mm.h>	/* for task_struct */
+#include <linaos/sched/mm.h>	/* for task_struct */
 #include <asm/mmu_context.h>
 
 #include <asm/vdso.h>
@@ -275,9 +275,9 @@ do {									    \
 			    (unsigned long)current->mm->context.vdso_base); \
 } while (0)
 
-struct linux_binprm;
+struct linaos_binprm;
 
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-int arch_setup_additional_pages(struct linux_binprm *, int);
+int arch_setup_additional_pages(struct linaos_binprm *, int);
 
 #endif

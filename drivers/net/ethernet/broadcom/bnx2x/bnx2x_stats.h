@@ -19,7 +19,7 @@
 #ifndef BNX2X_STATS_H
 #define BNX2X_STATS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct nig_stats {
 	u32 brb_discard;

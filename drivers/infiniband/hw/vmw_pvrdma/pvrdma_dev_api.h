@@ -46,7 +46,7 @@
 #ifndef __PVRDMA_DEV_API_H__
 #define __PVRDMA_DEV_API_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "pvrdma_verbs.h"
 
@@ -192,7 +192,7 @@ enum pvrdma_gos_bits {
 
 enum pvrdma_gos_type {
 	PVRDMA_GOS_TYPE_UNK,		/* Unknown. */
-	PVRDMA_GOS_TYPE_LINUX,		/* Linux. */
+	PVRDMA_GOS_TYPE_LINUX,		/* LinaOS. */
 };
 
 enum pvrdma_device_mode {

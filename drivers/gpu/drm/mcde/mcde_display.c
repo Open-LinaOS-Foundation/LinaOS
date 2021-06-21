@@ -4,11 +4,11 @@
  * Parts of this file were based on the MCDE driver by Marcus Lorentzon
  * (C) ST-Ericsson SA 2013
  */
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/regulator/consumer.h>
-#include <linux/media-bus-format.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/dma-buf.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/media-bus-format.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_fb_cma_helper.h>

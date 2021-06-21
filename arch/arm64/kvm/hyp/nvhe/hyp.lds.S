@@ -7,7 +7,7 @@
  */
 
 #include <asm/hyp_image.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmlinaos.lds.h>
 #include <asm/cache.h>
 #include <asm/memory.h>
 
@@ -19,7 +19,7 @@ SECTIONS {
 
 	/*
 	 * .hyp..data..percpu needs to be page aligned to maintain the same
-	 * alignment for when linking into vmlinux.
+	 * alignment for when linking into vmlinaos.
 	 */
 	. = ALIGN(PAGE_SIZE);
 	BEGIN_HYP_SECTION(.data..percpu)

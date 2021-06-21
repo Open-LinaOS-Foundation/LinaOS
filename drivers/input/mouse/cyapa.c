@@ -14,19 +14,19 @@
  * more details.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/pm_runtime.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
 #include "cyapa.h"
 
 

@@ -3,7 +3,7 @@
  * Copyright (C) 2017 Oracle.  All rights reserved.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "btrfs-tests.h"
 #include "../ctree.h"
 #include "../volumes.h"

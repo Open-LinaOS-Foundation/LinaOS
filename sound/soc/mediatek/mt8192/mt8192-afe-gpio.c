@@ -6,8 +6,8 @@
 // Author: Shane Chien <shane.chien@mediatek.com>
 //
 
-#include <linux/gpio.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/gpio.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include "mt8192-afe-common.h"
 #include "mt8192-afe-gpio.h"

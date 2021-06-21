@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/utsname.h>
-#include <linux/syscalls.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/utsname.h>
+#include <linaos/syscalls.h>
 #include <asm/current.h>
 #include <asm/mman.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 
 long old_mmap(unsigned long addr, unsigned long len,

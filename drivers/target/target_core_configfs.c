@@ -12,22 +12,22 @@
  *
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/unistd.h>
-#include <linux/string.h>
-#include <linux/parser.h>
-#include <linux/syscalls.h>
-#include <linux/configfs.h>
-#include <linux/spinlock.h>
+#include <linaos/utsname.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/namei.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
+#include <linaos/unistd.h>
+#include <linaos/string.h>
+#include <linaos/parser.h>
+#include <linaos/syscalls.h>
+#include <linaos/configfs.h>
+#include <linaos/spinlock.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>
@@ -1497,7 +1497,7 @@ static ssize_t target_wwn_vpd_unit_serial_store(struct config_item *item,
 	unsigned char buf[INQUIRY_VPD_SERIAL_LEN] = { };
 
 	/*
-	 * If Linux/SCSI subsystem_api_t plugin got a VPD Unit Serial
+	 * If LinaOS/SCSI subsystem_api_t plugin got a VPD Unit Serial
 	 * from the struct scsi_device level firmware, do not allow
 	 * VPD Unit Serial to be emulated.
 	 *
@@ -3626,7 +3626,7 @@ static void __exit target_core_exit_configfs(void)
 }
 
 MODULE_DESCRIPTION("Target_Core_Mod/ConfigFS");
-MODULE_AUTHOR("nab@Linux-iSCSI.org");
+MODULE_AUTHOR("nab@LinaOS-iSCSI.org");
 MODULE_LICENSE("GPL");
 
 module_init(target_core_init_configfs);

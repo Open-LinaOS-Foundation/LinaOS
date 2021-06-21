@@ -32,7 +32,7 @@
 #ifndef _VMWGFX_REG_H_
 #define _VMWGFX_REG_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define VMWGFX_INDEX_PORT     0x0
 #define VMWGFX_VALUE_PORT     0x1

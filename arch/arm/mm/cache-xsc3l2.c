@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2007 ARM Limited
  */
-#include <linux/init.h>
-#include <linux/highmem.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
 #include <asm/cp15.h>
 #include <asm/cputype.h>
 #include <asm/cacheflush.h>

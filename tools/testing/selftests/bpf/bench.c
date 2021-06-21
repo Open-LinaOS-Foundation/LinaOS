@@ -2,7 +2,7 @@
 /* Copyright (c) 2020 Facebook */
 #define _GNU_SOURCE
 #include <argp.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <sys/time.h>
 #include <sched.h>
 #include <fcntl.h>

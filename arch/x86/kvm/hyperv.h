@@ -21,7 +21,7 @@
 #ifndef __ARCH_X86_KVM_HYPERV_H__
 #define __ARCH_X86_KVM_HYPERV_H__
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 /*
  * The #defines related to the synthetic debugger are required by KDNet, but

@@ -14,15 +14,15 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/wait.h>
+#include <linaos/delay.h>
+#include <linaos/mutex.h>
+#include <linaos/io.h>
 
 #include "cxd2099.h"
 

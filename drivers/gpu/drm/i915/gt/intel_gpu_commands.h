@@ -6,7 +6,7 @@
 #ifndef _INTEL_GPU_COMMANDS_H_
 #define _INTEL_GPU_COMMANDS_H_
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /*
  * Target address alignments required for GPU access e.g.

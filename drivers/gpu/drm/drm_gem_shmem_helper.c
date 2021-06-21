@@ -3,12 +3,12 @@
  * Copyright 2018 Noralf Trønnes
  */
 
-#include <linux/dma-buf.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-buf.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm.h>
 #include <drm/drm_device.h>

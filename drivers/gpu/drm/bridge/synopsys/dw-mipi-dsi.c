@@ -8,14 +8,14 @@
  * Rockchip version from rockchip/dw-mipi-dsi.c with phy & bridge APIs.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/debugfs.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/debugfs.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
 
 #include <video/mipi_display.h>
 

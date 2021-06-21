@@ -3,7 +3,7 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/sort.h>
+#include <linaos/sort.h>
 
 #include "intel_gt_clock_utils.h"
 

@@ -19,9 +19,9 @@
 #include <netinet/ether.h>
 #include <net/if.h>
 
-#include <linux/bpf.h>
-#include <linux/if_link.h>
-#include <linux/if_xdp.h>
+#include <linaos/bpf.h>
+#include <linaos/if_link.h>
+#include <linaos/if_xdp.h>
 
 #include <bpf/libbpf.h>
 #include <bpf/xsk.h>

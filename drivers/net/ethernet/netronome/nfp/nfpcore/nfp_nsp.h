@@ -4,8 +4,8 @@
 #ifndef NSP_NSP_H
 #define NSP_NSP_H 1
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/if_ether.h>
 
 struct firmware;
 struct nfp_cpp;

@@ -4,8 +4,8 @@
 #ifndef __ASM_PMU_H
 #define __ASM_PMU_H
 
-#include <linux/interrupt.h>
-#include <linux/perf_event.h>
+#include <linaos/interrupt.h>
+#include <linaos/perf_event.h>
 #include <asm/unistd.h>
 #include <asm/bitfield.h>
 

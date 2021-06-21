@@ -19,12 +19,12 @@
  * if syslogd is configured to eliminate duplicate messages.)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/kprobes.h>
-#include <linux/ktime.h>
-#include <linux/limits.h>
-#include <linux/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kprobes.h>
+#include <linaos/ktime.h>
+#include <linaos/limits.h>
+#include <linaos/sched.h>
 
 static char func_name[NAME_MAX] = "kernel_clone";
 module_param_string(func, func_name, NAME_MAX, S_IRUGO);

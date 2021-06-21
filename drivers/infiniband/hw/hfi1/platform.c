@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include "hfi.h"
 #include "efivar.h"

@@ -4,17 +4,17 @@
  *
  * This contains most of the x86 vDSO kernel-side code.
  */
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/elf.h>
-#include <linux/cpu.h>
-#include <linux/ptrace.h>
-#include <linux/time_namespace.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/random.h>
+#include <linaos/elf.h>
+#include <linaos/cpu.h>
+#include <linaos/ptrace.h>
+#include <linaos/time_namespace.h>
 
 #include <asm/pvclock.h>
 #include <asm/vgtod.h>
@@ -54,7 +54,7 @@ void __init init_vdso_image(const struct vdso_image *image)
 }
 
 static const struct vm_special_mapping vvar_mapping;
-struct linux_binprm;
+struct linaos_binprm;
 
 static vm_fault_t vdso_fault(const struct vm_special_mapping *sm,
 		      struct vm_area_struct *vma, struct vm_fault *vmf)
@@ -386,7 +386,7 @@ static int load_vdso32(void)
 #endif
 
 #ifdef CONFIG_X86_64
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linaos_binprm *bprm, int uses_interp)
 {
 	if (!vdso64_enabled)
 		return 0;
@@ -395,7 +395,7 @@ int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
 }
 
 #ifdef CONFIG_COMPAT
-int compat_arch_setup_additional_pages(struct linux_binprm *bprm,
+int compat_arch_setup_additional_pages(struct linaos_binprm *bprm,
 				       int uses_interp, bool x32)
 {
 #ifdef CONFIG_X86_X32_ABI
@@ -413,7 +413,7 @@ int compat_arch_setup_additional_pages(struct linux_binprm *bprm,
 }
 #endif
 #else
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linaos_binprm *bprm, int uses_interp)
 {
 	return load_vdso32();
 }

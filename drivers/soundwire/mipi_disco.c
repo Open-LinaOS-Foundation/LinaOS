@@ -17,10 +17,10 @@
  *    here
  */
 
-#include <linux/device.h>
-#include <linux/property.h>
-#include <linux/mod_devicetable.h>
-#include <linux/soundwire/sdw.h>
+#include <linaos/device.h>
+#include <linaos/property.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/soundwire/sdw.h>
 #include "bus.h"
 
 /**

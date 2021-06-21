@@ -11,23 +11,23 @@
  *
  * ----------------------------------------------------------------------------
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/cpufreq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of_device.h>
-#include <linux/platform_data/i2c-davinci.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/clk.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/cpufreq.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_data/i2c-davinci.h>
+#include <linaos/pm_runtime.h>
 
 /* ----- global defines ----------------------------------------------- */
 

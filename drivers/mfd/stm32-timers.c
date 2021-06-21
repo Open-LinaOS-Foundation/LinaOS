@@ -4,11 +4,11 @@
  * Author: Benjamin Gaignard <benjamin.gaignard@st.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/mfd/stm32-timers.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/reset.h>
+#include <linaos/bitfield.h>
+#include <linaos/mfd/stm32-timers.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/reset.h>
 
 #define STM32_TIMERS_MAX_REGISTERS	0x3fc
 

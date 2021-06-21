@@ -3,7 +3,7 @@
     On Screen Display cx23415 Framebuffer driver
 
     This module presents the cx23415 OSD (onscreen display) framebuffer memory
-    as a standard Linux /dev/fb style framebuffer device. The framebuffer has
+    as a standard LinaOS /dev/fb style framebuffer device. The framebuffer has
     support for 8, 16 & 32 bpp packed pixel formats with alpha channel. In 16bpp
     mode, there is a choice of a three color depths (12, 15 or 16 bits), but no
     local alpha. The colorspace is selectable between rgb & yuv.
@@ -33,8 +33,8 @@
 #include "ivtv-mailbox.h"
 #include "ivtv-firmware.h"
 
-#include <linux/fb.h>
-#include <linux/ivtvfb.h>
+#include <linaos/fb.h>
+#include <linaos/ivtvfb.h>
 
 #ifdef CONFIG_X86_64
 #include <asm/memtype.h>

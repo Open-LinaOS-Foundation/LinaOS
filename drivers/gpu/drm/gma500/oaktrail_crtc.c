@@ -3,9 +3,9 @@
  * Copyright © 2009 Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm_fourcc.h>
 

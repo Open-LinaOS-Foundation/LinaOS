@@ -8,19 +8,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/bcd.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/completion.h>
-#include <linux/mfd/wm831x/core.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
+#include <linaos/rtc.h>
+#include <linaos/slab.h>
+#include <linaos/bcd.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioctl.h>
+#include <linaos/completion.h>
+#include <linaos/mfd/wm831x/core.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/random.h>
 
 /*
  * R16416 (0x4020) - RTC Write Counter

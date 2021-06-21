@@ -2,7 +2,7 @@
 #ifndef _ACPI_IO_H_
 #define _ACPI_IO_H_
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #include <asm/acpi.h>
 

@@ -2,7 +2,7 @@
 /*
  * driver/media/radio/radio-tea5764.c
  *
- * Driver for TEA5764 radio chip for linux 2.6.
+ * Driver for TEA5764 radio chip for linaos 2.6.
  * This driver is for TEA5764 chip from NXP, used in EZX phones from Motorola.
  * The I2C protocol is used for communicate with chip.
  *
@@ -18,12 +18,12 @@
  *  add platform_data support for IRQs platform dependencies
  *  add RDS support
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>			/* Initdata			*/
-#include <linux/videodev2.h>		/* kernel radio structs		*/
-#include <linux/i2c.h>			/* I2C				*/
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>			/* Initdata			*/
+#include <linaos/videodev2.h>		/* kernel radio structs		*/
+#include <linaos/i2c.h>			/* I2C				*/
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>
@@ -528,4 +528,4 @@ MODULE_VERSION(DRIVER_VERSION);
 module_param(use_xtal, int, 0);
 MODULE_PARM_DESC(use_xtal, "Chip have a xtal connected in board");
 module_param(radio_nr, int, 0);
-MODULE_PARM_DESC(radio_nr, "video4linux device number to use");
+MODULE_PARM_DESC(radio_nr, "video4linaos device number to use");

@@ -9,11 +9,11 @@
  *           Marc Dietrich <marvin24@gmx.de>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/serio.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/serio.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
 
 #include "nvec.h"
 

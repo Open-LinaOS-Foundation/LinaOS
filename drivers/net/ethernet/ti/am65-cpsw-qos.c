@@ -6,8 +6,8 @@
  * Enhanced Scheduler Traffic (EST - P802.1Qbv/D2.2)
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/time.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/time.h>
 
 #include "am65-cpsw-nuss.h"
 #include "am65-cpsw-qos.h"

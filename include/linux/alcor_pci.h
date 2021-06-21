@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
- * Copyright (C) 2018 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright (C) 2018 Oleksij Rempel <linaos@rempel-privat.de>
  *
  * Driver for Alcor Micro AU6601 and AU6621 controllers
  */

@@ -9,7 +9,7 @@ LDFLAGS += -pthread -O2 -ggdb -flto -fwhole-program
 
 main.o: main.c main.h
 ring.o: ring.c main.h
-ptr_ring.o: ptr_ring.c main.h ../../../include/linux/ptr_ring.h
+ptr_ring.o: ptr_ring.c main.h ../../../include/linaos/ptr_ring.h
 virtio_ring_0_9.o: virtio_ring_0_9.c main.h
 virtio_ring_poll.o: virtio_ring_poll.c virtio_ring_0_9.c main.h
 virtio_ring_inorder.o: virtio_ring_inorder.c virtio_ring_0_9.c main.h

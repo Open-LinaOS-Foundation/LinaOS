@@ -45,23 +45,23 @@
  * - <soc>_nand_: all SoC specific structures/functions
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/genalloc.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/atmel-matrix.h>
-#include <linux/mfd/syscon/atmel-smc.h>
-#include <linux/module.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/genalloc.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/atmel-matrix.h>
+#include <linaos/mfd/syscon/atmel-smc.h>
+#include <linaos/module.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/iopoll.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 #include <soc/at91/atmel-sfr.h>
 
 #include "pmecc.h"

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
 /*
- * Irqdomain for Linux to run as the root partition on Microsoft Hypervisor.
+ * Irqdomain for LinaOS to run as the root partition on Microsoft Hypervisor.
  *
  * Authors:
  *  Sunil Muthuswamy <sunilmut@microsoft.com>
  *  Wei Liu <wei.liu@kernel.org>
  */
 
-#include <linux/pci.h>
-#include <linux/irq.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
 #include <asm/mshyperv.h>
 
 static int hv_map_interrupt(union hv_device_id device_id, bool level,

@@ -6,8 +6,8 @@
 #ifndef INV_ICM42600_BUFFER_H_
 #define INV_ICM42600_BUFFER_H_
 
-#include <linux/kernel.h>
-#include <linux/bits.h>
+#include <linaos/kernel.h>
+#include <linaos/bits.h>
 
 struct inv_icm42600_state;
 

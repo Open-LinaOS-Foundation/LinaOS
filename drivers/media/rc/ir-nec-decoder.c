@@ -3,8 +3,8 @@
 //
 // Copyright (C) 2010 by Mauro Carvalho Chehab
 
-#include <linux/bitrev.h>
-#include <linux/module.h>
+#include <linaos/bitrev.h>
+#include <linaos/module.h>
 #include "rc-core-priv.h"
 
 #define NEC_NBITS		32

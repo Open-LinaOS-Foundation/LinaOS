@@ -5,18 +5,18 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/font.h>
-#include <linux/mutex.h>
-#include <linux/videodev2.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/fb.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/font.h>
+#include <linaos/mutex.h>
+#include <linaos/videodev2.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/fb.h>
 #include <media/videobuf2-vmalloc.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

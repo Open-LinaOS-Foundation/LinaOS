@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *	linux/arch/alpha/kernel/pci_impl.h
+ *	linaos/arch/alpha/kernel/pci_impl.h
  *
  * This file contains declarations and inline functions for interfacing
  * with the PCI initialization routines.

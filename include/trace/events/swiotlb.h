@@ -5,7 +5,7 @@
 #if !defined(_TRACE_SWIOTLB_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SWIOTLB_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(swiotlb_bounced,
 

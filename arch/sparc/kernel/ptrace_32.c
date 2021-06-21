@@ -6,24 +6,24 @@
  * Based upon code written by Ross Biro, Linus Torvalds, Bob Manson,
  * and David Mosberger.
  *
- * Added Linux support -miguel (weird, eh?, the original code was meant
+ * Added LinaOS support -miguel (weird, eh?, the original code was meant
  * to emulate SunOS).
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
-#include <linux/tracehook.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/ptrace.h>
+#include <linaos/user.h>
+#include <linaos/smp.h>
+#include <linaos/security.h>
+#include <linaos/signal.h>
+#include <linaos/regset.h>
+#include <linaos/elf.h>
+#include <linaos/tracehook.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/cacheflush.h>
 
 #include "kernel.h"

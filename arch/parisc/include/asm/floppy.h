@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*    Architecture specific parts of the Floppy driver
  *
- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ *    LinaOS/PA-RISC Project (http://www.parisc-linaos.org/)
  *    Copyright (C) 2000 Matthew Wilcox (willy a debian . org)
  *    Copyright (C) 2000 Dave Kennedy
  */
 #ifndef __ASM_PARISC_FLOPPY_H
 #define __ASM_PARISC_FLOPPY_H
 
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 
 /*

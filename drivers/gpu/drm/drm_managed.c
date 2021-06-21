@@ -7,9 +7,9 @@
 
 #include <drm/drm_managed.h>
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_print.h>

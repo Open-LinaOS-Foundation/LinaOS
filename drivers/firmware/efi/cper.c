@@ -12,16 +12,16 @@
  * Specification version 2.4.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/cper.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
-#include <linux/printk.h>
-#include <linux/bcd.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/time.h>
+#include <linaos/cper.h>
+#include <linaos/dmi.h>
+#include <linaos/acpi.h>
+#include <linaos/pci.h>
+#include <linaos/aer.h>
+#include <linaos/printk.h>
+#include <linaos/bcd.h>
 #include <acpi/ghes.h>
 #include <ras/ras_event.h>
 

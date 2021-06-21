@@ -12,10 +12,10 @@
 #ifndef _TRACEFS_H_
 #define _TRACEFS_H_
 
-#include <linux/fs.h>
-#include <linux/seq_file.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct file_operations;
 

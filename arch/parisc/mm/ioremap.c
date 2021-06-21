@@ -4,14 +4,14 @@
  *
  * (C) Copyright 1995 1996 Linus Torvalds
  * (C) Copyright 2001-2019 Helge Deller <deller@gmx.de>
- * (C) Copyright 2005 Kyle McMartin <kyle@parisc-linux.org>
+ * (C) Copyright 2005 Kyle McMartin <kyle@parisc-linaos.org>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
 
 /*
  * Generic mapping function (not visible outside):

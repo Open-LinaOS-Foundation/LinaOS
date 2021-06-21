@@ -10,13 +10,13 @@
  * Copyright (C) 2011 Tobias Waldvogel <tobias.waldvogel@gmail.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/bitops.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/libata.h>
+#include <linaos/bitops.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/clk.h>
 #include "sata_gemini.h"
 
 #define DRV_NAME "pata_ftide010"

@@ -19,7 +19,7 @@ facilities.  This is based around a number of principles:
  (3) Barring the top-level index (one entry per cached netfs), the index
      hierarchy for each netfs is structured according the whim of the netfs.
 
-This API is declared in <linux/fscache.h>.
+This API is declared in <linaos/fscache.h>.
 
 .. This document contains the following sections:
 
@@ -71,7 +71,7 @@ The fields are:
  (3) The cookie representing the primary index will be allocated according to
      another parameter passed into the registration function.
 
-For example, kAFS (linux/fs/afs/) uses the following definitions to describe
+For example, kAFS (linaos/fs/afs/) uses the following definitions to describe
 itself::
 
 	struct fscache_netfs afs_cache_netfs = {

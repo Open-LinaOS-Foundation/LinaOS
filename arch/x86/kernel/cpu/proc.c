@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/smp.h>
-#include <linux/timex.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/cpufreq.h>
+#include <linaos/smp.h>
+#include <linaos/timex.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/cpufreq.h>
 
 #include "cpu.h"
 

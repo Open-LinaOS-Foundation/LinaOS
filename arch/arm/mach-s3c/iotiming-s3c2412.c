@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 //
 // Copyright (c) 2006-2008 Simtec Electronics
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //	Ben Dooks <ben@simtec.co.uk>
 //
 // S3C2412/S3C2443 (PL093 based) IO timing support
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/cpufreq.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 
-#include <linux/amba/pl093.h>
+#include <linaos/amba/pl093.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
 #include "cpu.h"
-#include <linux/soc/samsung/s3c-cpufreq-core.h>
+#include <linaos/soc/samsung/s3c-cpufreq-core.h>
 
 #include "s3c2412.h"
 

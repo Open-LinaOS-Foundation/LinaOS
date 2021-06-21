@@ -28,28 +28,28 @@
 		led2 {
 			label = "beaglebone:green:heartbeat";
 			gpios = <&gpio1 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led3 {
 			label = "beaglebone:green:mmc0";
 			gpios = <&gpio1 22 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led4 {
 			label = "beaglebone:green:usr2";
 			gpios = <&gpio1 23 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu0";
+			linaos,default-trigger = "cpu0";
 			default-state = "off";
 		};
 
 		led5 {
 			label = "beaglebone:green:usr3";
 			gpios = <&gpio1 24 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			default-state = "off";
 		};
 	};
@@ -281,11 +281,11 @@
 	 * mode") at poweroff.  Most BeagleBone versions do not support RTC-only
 	 * mode and risk hardware damage if this mode is entered.
 	 *
-	 * For details, see linux-omap mailing list May 2015 thread
+	 * For details, see linaos-omap mailing list May 2015 thread
 	 *	[PATCH] ARM: dts: am335x-bone* enable pmic-shutdown-controller
 	 * In particular, messages:
-	 *	http://www.spinics.net/lists/linux-omap/msg118585.html
-	 *	http://www.spinics.net/lists/linux-omap/msg118615.html
+	 *	http://www.spinics.net/lists/linaos-omap/msg118585.html
+	 *	http://www.spinics.net/lists/linaos-omap/msg118615.html
 	 *
 	 * You can override this later with
 	 *	&tps {  /delete-property/ ti,pmic-shutdown-controller;  }

@@ -1,42 +1,42 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/swap.c
+ *  linaos/mm/swap.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
 /*
  * This file contains the default values for the operation of the
- * Linux VM subsystem. Fine-tuning documentation can be found in
+ * LinaOS VM subsystem. Fine-tuning documentation can be found in
  * Documentation/admin-guide/sysctl/vm.rst.
  * Started 18.12.91
  * Swap aging added 23.2.95, Stephen Tweedie.
  * Buffermem limits added 12.3.98, Rik van Riel.
  */
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/mman.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mm_inline.h>
-#include <linux/percpu_counter.h>
-#include <linux/memremap.h>
-#include <linux/percpu.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/backing-dev.h>
-#include <linux/memcontrol.h>
-#include <linux/gfp.h>
-#include <linux/uio.h>
-#include <linux/hugetlb.h>
-#include <linux/page_idle.h>
-#include <linux/local_lock.h>
-#include <linux/buffer_head.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/swap.h>
+#include <linaos/mman.h>
+#include <linaos/pagemap.h>
+#include <linaos/pagevec.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/mm_inline.h>
+#include <linaos/percpu_counter.h>
+#include <linaos/memremap.h>
+#include <linaos/percpu.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/backing-dev.h>
+#include <linaos/memcontrol.h>
+#include <linaos/gfp.h>
+#include <linaos/uio.h>
+#include <linaos/hugetlb.h>
+#include <linaos/page_idle.h>
+#include <linaos/local_lock.h>
+#include <linaos/buffer_head.h>
 
 #include "internal.h"
 

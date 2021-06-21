@@ -28,7 +28,7 @@
 
 		button-function {
 			label = "Update";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <10000>;
 		};
 	};
@@ -41,7 +41,7 @@
 
 		button@0 {
 			label = "power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_2 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -87,7 +87,7 @@
 };
 
 &ir {
-	linux,rc-map-name = "rc-mecool-kiii-pro";
+	linaos,rc-map-name = "rc-mecool-kiii-pro";
 };
 
 &sd_emmc_a {

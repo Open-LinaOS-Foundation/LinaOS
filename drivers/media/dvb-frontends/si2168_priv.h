@@ -10,9 +10,9 @@
 
 #include "si2168.h"
 #include <media/dvb_frontend.h>
-#include <linux/firmware.h>
-#include <linux/i2c-mux.h>
-#include <linux/kernel.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c-mux.h>
+#include <linaos/kernel.h>
 
 #define SI2168_A20_FIRMWARE "dvb-demod-si2168-a20-01.fw"
 #define SI2168_A30_FIRMWARE "dvb-demod-si2168-a30-01.fw"

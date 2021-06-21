@@ -33,7 +33,7 @@ with supports all digital TV delivery systems.
 
 .. note::
 
-   1. On Linux DVB API version 3, setting a frontend was done via
+   1. On LinaOS DVB API version 3, setting a frontend was done via
       struct :c:type:`dvb_frontend_parameters`.
 
    2. Don't use DVB API version 3 calls on hardware with supports
@@ -76,7 +76,7 @@ The code that would that would do the above is show in
     #include <stdio.h>
     #include <fcntl.h>
     #include <sys/ioctl.h>
-    #include <linux/dvb/frontend.h>
+    #include <linaos/dvb/frontend.h>
 
     static struct dtv_property props[] = {
 	{ .cmd = DTV_DELIVERY_SYSTEM, .u.data = SYS_DVBC_ANNEX_A },
@@ -110,7 +110,7 @@ The code that would that would do the above is show in
 
 .. attention:: While it is possible to directly call the Kernel code like the
    above example, it is strongly recommended to use
-   `libdvbv5 <https://linuxtv.org/docs/libdvbv5/index.html>`__, as it
+   `libdvbv5 <https://linaostv.org/docs/libdvbv5/index.html>`__, as it
    provides abstraction to work with the supported digital TV standards and
    provides methods for usual operations like program scanning and to
    read/write channel descriptor files.

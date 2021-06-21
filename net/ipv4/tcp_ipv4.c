@@ -9,9 +9,9 @@
  *		IPv4 specific functions
  *
  *		code split from:
- *		linux/ipv4/tcp.c
- *		linux/ipv4/tcp_input.c
- *		linux/ipv4/tcp_output.c
+ *		linaos/ipv4/tcp.c
+ *		linaos/ipv4/tcp_input.c
+ *		linaos/ipv4/tcp_output.c
  *
  *		See tcp.c for author information
  */
@@ -47,16 +47,16 @@
 
 #define pr_fmt(fmt) "TCP: " fmt
 
-#include <linux/bottom_half.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/cache.h>
-#include <linux/jhash.h>
-#include <linux/init.h>
-#include <linux/times.h>
-#include <linux/slab.h>
+#include <linaos/bottom_half.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/cache.h>
+#include <linaos/jhash.h>
+#include <linaos/init.h>
+#include <linaos/times.h>
+#include <linaos/slab.h>
 
 #include <net/net_namespace.h>
 #include <net/icmp.h>
@@ -70,16 +70,16 @@
 #include <net/secure_seq.h>
 #include <net/busy_poll.h>
 
-#include <linux/inet.h>
-#include <linux/ipv6.h>
-#include <linux/stddef.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/inetdevice.h>
-#include <linux/btf_ids.h>
+#include <linaos/inet.h>
+#include <linaos/ipv6.h>
+#include <linaos/stddef.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/inetdevice.h>
+#include <linaos/btf_ids.h>
 
 #include <crypto/hash.h>
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 
 #include <trace/events/tcp.h>
 
@@ -540,7 +540,7 @@ int tcp_v4_err(struct sk_buff *skb, u32 info)
 
 		if (code == ICMP_FRAG_NEEDED) { /* PMTU discovery (RFC1191) */
 			/* We are not interested in TCP_LISTEN and open_requests
-			 * (SYN-ACKs send out by Linux are always <576bytes so
+			 * (SYN-ACKs send out by LinaOS are always <576bytes so
 			 * they should go through unfragmented).
 			 */
 			if (sk->sk_state == TCP_LISTEN)
@@ -604,7 +604,7 @@ int tcp_v4_err(struct sk_buff *skb, u32 info)
 	 * Note, that in modern internet, where routing is unreliable
 	 * and in each dark corner broken firewalls sit, sending random
 	 * errors ordered by their masters even this two messages finally lose
-	 * their original sense (even Linux sends invalid PORT_UNREACHs)
+	 * their original sense (even LinaOS sends invalid PORT_UNREACHs)
 	 *
 	 * Now we are in compliance with RFCs.
 	 *							--ANK (980905)

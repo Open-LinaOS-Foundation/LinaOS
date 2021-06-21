@@ -10,36 +10,36 @@
 //
 // Copyright 2004-2009 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/workqueue.h>
+#include <linaos/init.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/bitops.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/semaphore.h>
+#include <linaos/spinlock.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
+#include <linaos/workqueue.h>
 
 #include <asm/irq.h>
-#include <linux/platform_data/dma-imx-sdma.h>
-#include <linux/platform_data/dma-imx.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <linaos/platform_data/dma-imx-sdma.h>
+#include <linaos/platform_data/dma-imx.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mfd/syscon/imx6q-iomuxc-gpr.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

@@ -11,18 +11,18 @@
  * - Use integer divider in FOD if applicable
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/rational.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/rational.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #include <dt-bindings/clk/versaclock.h>
 

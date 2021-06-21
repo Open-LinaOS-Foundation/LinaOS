@@ -12,32 +12,32 @@
  * Copyright (C) 2000, 2001, 2012 MIPS Technologies, Inc.  All rights reserved.
  * Copyright (C) 2014, Imagination Technologies Ltd.
  */
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/context_tracking.h>
-#include <linux/cpu_pm.h>
-#include <linux/kexec.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/extable.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/memblock.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/notifier.h>
-#include <linux/kdb.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/compiler.h>
+#include <linaos/context_tracking.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/kexec.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/extable.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/debug.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
+#include <linaos/kallsyms.h>
+#include <linaos/memblock.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
+#include <linaos/kgdb.h>
+#include <linaos/kdebug.h>
+#include <linaos/kprobes.h>
+#include <linaos/notifier.h>
+#include <linaos/kdb.h>
+#include <linaos/irq.h>
+#include <linaos/perf_event.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>
@@ -62,7 +62,7 @@
 #include <asm/siginfo.h>
 #include <asm/tlbdebug.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/watch.h>
 #include <asm/mmu_context.h>
 #include <asm/types.h>

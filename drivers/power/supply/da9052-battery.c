@@ -7,19 +7,19 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/delay.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/uaccess.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
+#include <linaos/delay.h>
+#include <linaos/freezer.h>
+#include <linaos/fs.h>
+#include <linaos/jiffies.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/uaccess.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/pdata.h>
-#include <linux/mfd/da9052/reg.h>
+#include <linaos/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/pdata.h>
+#include <linaos/mfd/da9052/reg.h>
 
 /* STATIC CONFIGURATION */
 #define DA9052_BAT_CUTOFF_VOLT		2800

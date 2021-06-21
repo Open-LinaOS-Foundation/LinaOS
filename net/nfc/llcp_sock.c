@@ -5,11 +5,11 @@
 
 #define pr_fmt(fmt) "llcp: %s: " fmt, __func__
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/nfc.h>
-#include <linux/sched/signal.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/nfc.h>
+#include <linaos/sched/signal.h>
 
 #include "nfc.h"
 #include "llcp.h"

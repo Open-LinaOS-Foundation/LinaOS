@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/compiler.h>
+#include <linaos/export.h>
+#include <linaos/compiler.h>
 
 unsigned long long notrace __bswapdi2(unsigned long long u)
 {

@@ -1,5 +1,5 @@
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * LinaOS driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop.c - main module part
  * Copyright (C) 2004-9 Patrick Boettcher <patrick.boettcher@posteo.de>
  * based on skystar2-driver Copyright (C) 2003 Vadim Catana, skystar@moldova.cc

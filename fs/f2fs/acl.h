@@ -5,14 +5,14 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  *
- * Portions of this code from linux/fs/ext2/acl.h
+ * Portions of this code from linaos/fs/ext2/acl.h
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
 #ifndef __F2FS_ACL_H__
 #define __F2FS_ACL_H__
 
-#include <linux/posix_acl_xattr.h>
+#include <linaos/posix_acl_xattr.h>
 
 #define F2FS_ACL_VERSION	0x0001
 

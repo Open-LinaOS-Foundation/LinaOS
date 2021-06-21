@@ -32,7 +32,7 @@
 #ifndef _ASM_ARC_PGTABLE_H
 #define _ASM_ARC_PGTABLE_H
 
-#include <linux/bits.h>
+#include <linaos/bits.h>
 #include <asm-generic/pgtable-nopmd.h>
 #include <asm/page.h>
 #include <asm/mmu.h>	/* to propagate CONFIG_ARC_MMU_VER <n> */
@@ -41,7 +41,7 @@
  * Page Table Flags
  *
  * ARC700 MMU only deals with softare managed TLB entries.
- * Page Tables are purely for Linux VM's consumption and the bits below are
+ * Page Tables are purely for LinaOS VM's consumption and the bits below are
  * suited to that (uniqueness). Hence some are not implemented in the TLB and
  * some have different value in TLB.
  * e.g. MMU v2: K_READ bit is 8 and so is GLOBAL (possible because they live in

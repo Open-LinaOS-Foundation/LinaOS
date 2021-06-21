@@ -26,11 +26,11 @@
 #ifndef DRM_PRINT_H_
 #define DRM_PRINT_H_
 
-#include <linux/compiler.h>
-#include <linux/printk.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
+#include <linaos/compiler.h>
+#include <linaos/printk.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/debugfs.h>
 
 #include <drm/drm.h>
 

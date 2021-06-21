@@ -11,7 +11,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
@@ -193,6 +193,6 @@ static struct platform_driver snd_bytcht_nocodec_mc_driver = {
 module_platform_driver(snd_bytcht_nocodec_mc_driver);
 
 MODULE_DESCRIPTION("ASoC Intel(R) Baytrail/Cherrytrail Nocodec Machine driver");
-MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart at linux.intel.com>");
+MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart at linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:bytcht_nocodec");

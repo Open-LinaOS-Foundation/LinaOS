@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *  Shared Memory Communications over RDMA (SMC-R) and RoCE
  *
@@ -6,7 +6,7 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Thomas Richter <tmricht@linux.vnet.ibm.com>
+ *  Author(s):  Thomas Richter <tmricht@linaos.vnet.ibm.com>
  */
 
 #ifndef _UAPI_LINUX_SMC_H_

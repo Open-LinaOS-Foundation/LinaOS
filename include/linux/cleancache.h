@@ -2,9 +2,9 @@
 #ifndef _LINUX_CLEANCACHE_H
 #define _LINUX_CLEANCACHE_H
 
-#include <linux/fs.h>
-#include <linux/exportfs.h>
-#include <linux/mm.h>
+#include <linaos/fs.h>
+#include <linaos/exportfs.h>
+#include <linaos/mm.h>
 
 #define CLEANCACHE_NO_POOL		-1
 #define CLEANCACHE_NO_BACKEND		-2

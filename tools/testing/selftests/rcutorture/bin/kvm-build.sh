@@ -1,13 +1,13 @@
 #!/bin/bash
 # SPDX-License-Identifier: GPL-2.0+
 #
-# Build a kvm-ready Linux kernel from the tree in the current directory.
+# Build a kvm-ready LinaOS kernel from the tree in the current directory.
 #
 # Usage: kvm-build.sh config-template resdir
 #
 # Copyright (C) IBM Corporation, 2011
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 if test -f "$TORTURE_STOPFILE"
 then
@@ -23,7 +23,7 @@ then
 fi
 resdir=${2}
 
-T=${TMPDIR-/tmp}/test-linux.sh.$$
+T=${TMPDIR-/tmp}/test-linaos.sh.$$
 trap 'rm -rf $T' 0
 mkdir $T
 

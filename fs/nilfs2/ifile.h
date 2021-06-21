@@ -12,8 +12,8 @@
 #ifndef _NILFS_IFILE_H
 #define _NILFS_IFILE_H
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
+#include <linaos/fs.h>
+#include <linaos/buffer_head.h>
 #include "mdt.h"
 #include "alloc.h"
 

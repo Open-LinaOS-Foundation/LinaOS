@@ -4,13 +4,13 @@
  * Author: YT SHEN <yt.shen@mediatek.com>
  */
 
-#include <linux/component.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
+#include <linaos/component.h>
+#include <linaos/iommu.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/dma-mapping.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

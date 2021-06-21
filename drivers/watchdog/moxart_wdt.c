@@ -10,15 +10,15 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
-#include <linux/moduleparam.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/watchdog.h>
+#include <linaos/moduleparam.h>
 
 #define REG_COUNT			0x4
 #define REG_MODE			0x8

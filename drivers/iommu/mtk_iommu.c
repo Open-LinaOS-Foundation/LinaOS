@@ -3,31 +3,31 @@
  * Copyright (c) 2015-2016 MediaTek Inc.
  * Author: Yong Wu <yong.wu@mediatek.com>
  */
-#include <linux/bitfield.h>
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-iommu.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_iommu.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/soc/mediatek/infracfg.h>
+#include <linaos/bitfield.h>
+#include <linaos/bug.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/device.h>
+#include <linaos/dma-direct.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iommu.h>
+#include <linaos/iopoll.h>
+#include <linaos/list.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/soc/mediatek/infracfg.h>
 #include <asm/barrier.h>
 #include <soc/mediatek/smi.h>
 

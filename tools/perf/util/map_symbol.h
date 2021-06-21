@@ -2,7 +2,7 @@
 #ifndef __PERF_MAP_SYMBOL
 #define __PERF_MAP_SYMBOL 1
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct maps;
 struct map;

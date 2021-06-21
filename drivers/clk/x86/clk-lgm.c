@@ -4,9 +4,9 @@
  * Zhu YiXin <yixin.zhu@intel.com>
  * Rahul Tanwar <rahul.tanwar@intel.com>
  */
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 #include <dt-bindings/clock/intel,lgm-clk.h>
 #include "clk-cgu.h"
 

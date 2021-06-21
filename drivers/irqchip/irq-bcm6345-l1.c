@@ -47,26 +47,26 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME	": " fmt
 
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
+#include <linaos/bitops.h>
+#include <linaos/cpumask.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/types.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
 
 #define IRQS_PER_WORD		32
 #define REG_BYTES_PER_IRQ_WORD	(sizeof(u32) * 2)

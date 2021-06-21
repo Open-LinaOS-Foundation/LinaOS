@@ -5,10 +5,10 @@
  * Copyright (c) 2014-2016, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/hid.h>
-#include <linux/intel-ish-client-if.h>
-#include <linux/sched.h>
+#include <linaos/module.h>
+#include <linaos/hid.h>
+#include <linaos/intel-ish-client-if.h>
+#include <linaos/sched.h>
 #include "ishtp-hid.h"
 
 /* Rx ring buffer pool size */
@@ -962,7 +962,7 @@ MODULE_AUTHOR("Daniel Drubin <daniel.drubin@intel.com>");
  * Several modification for multi instance support
  * suspend/resume and clean up
  */
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>");
 
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("ishtp:*");

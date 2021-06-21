@@ -10,13 +10,13 @@
  * Based on the MPC8548CDS support - Copyright 2005 Freescale Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/seq_file.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/reboot.h>
+#include <linaos/seq_file.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_platform.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>

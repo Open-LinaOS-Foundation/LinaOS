@@ -5,14 +5,14 @@
  * Copyright (C) 2007 Chris Smith <chris.smith@st.com>
  * Copyright (C) 2006 Lineo Solutions, Inc.
  */
-#include <linux/kprobes.h>
-#include <linux/extable.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/kdebug.h>
-#include <linux/slab.h>
+#include <linaos/kprobes.h>
+#include <linaos/extable.h>
+#include <linaos/ptrace.h>
+#include <linaos/preempt.h>
+#include <linaos/kdebug.h>
+#include <linaos/slab.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 DEFINE_PER_CPU(struct kprobe *, current_kprobe) = NULL;
 DEFINE_PER_CPU(struct kprobe_ctlblk, kprobe_ctlblk);

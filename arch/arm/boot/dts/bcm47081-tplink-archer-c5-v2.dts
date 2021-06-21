@@ -37,13 +37,13 @@
 			label = "bcm53xx:green:usb2-port1";
 			gpios = <&chipcommon 2 GPIO_ACTIVE_HIGH>;
 			trigger-sources = <&ohci_port1>, <&ehci_port1>;
-			linux,default-trigger = "usbport";
+			linaos,default-trigger = "usbport";
 		};
 
 		power {
 			label = "bcm53xx:green:power";
 			gpios = <&chipcommon 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		wan-green {
@@ -70,7 +70,7 @@
 			label = "bcm53xx:green:usb2-port2";
 			gpios = <&chipcommon 13 GPIO_ACTIVE_HIGH>;
 			trigger-sources = <&ohci_port2>, <&ehci_port2>;
-			linux,default-trigger = "usbport";
+			linaos,default-trigger = "usbport";
 		};
 	};
 
@@ -79,13 +79,13 @@
 
 		rfkill {
 			label = "WiFi";
-			linux,code = <KEY_RFKILL>;
+			linaos,code = <KEY_RFKILL>;
 			gpios = <&chipcommon 3 GPIO_ACTIVE_LOW>;
 		};
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 	};

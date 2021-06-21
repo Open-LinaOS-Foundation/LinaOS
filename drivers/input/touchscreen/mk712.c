@@ -31,14 +31,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
 #include <asm/io.h>
 
 MODULE_AUTHOR("Daniel Quinlan <quinlan@pathname.com>, Vojtech Pavlik <vojtech@suse.cz>");

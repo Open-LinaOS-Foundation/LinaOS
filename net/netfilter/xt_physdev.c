@@ -6,12 +6,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/if.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter/x_tables.h>
-#include <uapi/linux/netfilter/xt_physdev.h>
+#include <linaos/if.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/netfilter_bridge.h>
+#include <linaos/netfilter/x_tables.h>
+#include <uapi/linaos/netfilter/xt_physdev.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Bart De Schuymer <bdschuym@pandora.be>");

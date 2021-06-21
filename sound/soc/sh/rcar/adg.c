@@ -4,7 +4,7 @@
 //
 //  Copyright (C) 2013  Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 #include "rsnd.h"
 
 #define CLKA	0

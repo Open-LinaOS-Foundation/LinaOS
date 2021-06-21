@@ -20,7 +20,7 @@ config AUTOFS_FS
 	   automounter (amd), which is a pure user space daemon.
 
 	   To use the automounter you need the user-space tools from
-	   <https://www.kernel.org/pub/linux/daemons/autofs/>; you also want
+	   <https://www.kernel.org/pub/linaos/daemons/autofs/>; you also want
 	   to answer Y to "NFS file system support", below.
 
 	   To compile this support as a module, choose M here: the module will be

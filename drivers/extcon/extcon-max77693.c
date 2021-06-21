@@ -5,20 +5,20 @@
 // Copyright (C) 2012 Samsung Electrnoics
 // Chanwoo Choi <cw00.choi@samsung.com>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max77693.h>
-#include <linux/mfd/max77693-common.h>
-#include <linux/mfd/max77693-private.h>
-#include <linux/extcon-provider.h>
-#include <linux/regmap.h>
-#include <linux/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/max77693.h>
+#include <linaos/mfd/max77693-common.h>
+#include <linaos/mfd/max77693-private.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/irqdomain.h>
 
 #define	DEV_NAME			"max77693-muic"
 #define	DELAY_MS_DEFAULT		20000		/* unit: millisecond */

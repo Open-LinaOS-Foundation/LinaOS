@@ -46,13 +46,13 @@
 		power {
 			label = "bcm53xx:blue:power";
 			gpios = <&chipcommon 3 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		all {
 			label = "bcm53xx:blue:all";
 			gpios = <&chipcommon 4 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		2ghz {
@@ -72,19 +72,19 @@
 
 		rfkill {
 			label = "WiFi";
-			linux,code = <KEY_RFKILL>;
+			linaos,code = <KEY_RFKILL>;
 			gpios = <&chipcommon 7 GPIO_ACTIVE_LOW>;
 		};
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 11 GPIO_ACTIVE_LOW>;
 		};
 
 		wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 15 GPIO_ACTIVE_LOW>;
 		};
 	};

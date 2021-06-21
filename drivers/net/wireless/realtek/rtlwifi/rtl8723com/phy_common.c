@@ -4,7 +4,7 @@
 #include "../wifi.h"
 #include "phy_common.h"
 #include "../rtl8723ae/reg.h"
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* These routines are common to RTL8723AE and RTL8723bE */
 

@@ -100,7 +100,7 @@ void dt_fixup_mac_address_by_alias(const char *alias, const u8 *addr)
 
 void dt_fixup_mac_address(u32 index, const u8 *addr)
 {
-	void *devp = find_node_by_prop_value(NULL, "linux,network-index",
+	void *devp = find_node_by_prop_value(NULL, "linaos,network-index",
 	                                     (void*)&index, sizeof(index));
 
 	if (devp) {

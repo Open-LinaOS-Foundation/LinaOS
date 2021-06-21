@@ -3,7 +3,7 @@
 #ifndef __DRM_GEM_ATOMIC_HELPER_H__
 #define __DRM_GEM_ATOMIC_HELPER_H__
 
-#include <linux/dma-buf-map.h>
+#include <linaos/dma-buf-map.h>
 
 #include <drm/drm_plane.h>
 

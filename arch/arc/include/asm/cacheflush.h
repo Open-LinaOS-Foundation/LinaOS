@@ -15,7 +15,7 @@
 #ifndef _ASM_CACHEFLUSH_H
 #define _ASM_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/shmparam.h>
 
 /*

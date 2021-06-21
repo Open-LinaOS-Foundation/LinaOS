@@ -2,7 +2,7 @@
 #ifndef USB_F_MASS_STORAGE_H
 #define USB_F_MASS_STORAGE_H
 
-#include <linux/usb/composite.h>
+#include <linaos/usb/composite.h>
 #include "storage_common.h"
 
 struct fsg_module_parameters {

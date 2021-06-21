@@ -10,10 +10,10 @@
 #ifndef _FSL_MC_H_
 #define _FSL_MC_H_
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/interrupt.h>
-#include <uapi/linux/fsl_mc.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/interrupt.h>
+#include <uapi/linaos/fsl_mc.h>
 
 #define FSL_MC_VENDOR_FREESCALE	0x1957
 
@@ -159,7 +159,7 @@ struct fsl_mc_obj_desc {
 
 /**
  * struct fsl_mc_device - MC object device object
- * @dev: Linux driver model device object
+ * @dev: LinaOS driver model device object
  * @dma_mask: Default DMA mask
  * @flags: MC object device flags
  * @icid: Isolation context ID for the device

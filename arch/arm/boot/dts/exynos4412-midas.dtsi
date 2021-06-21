@@ -133,21 +133,21 @@
 
 		key-down {
 			gpios = <&gpx3 3 GPIO_ACTIVE_LOW>;
-			linux,code = <114>;
+			linaos,code = <114>;
 			label = "volume down";
 			debounce-interval = <10>;
 		};
 
 		key-up {
 			gpios = <&gpx2 2 GPIO_ACTIVE_LOW>;
-			linux,code = <115>;
+			linaos,code = <115>;
 			label = "volume up";
 			debounce-interval = <10>;
 		};
 
 		key-power {
 			gpios = <&gpx2 7 GPIO_ACTIVE_LOW>;
-			linux,code = <116>;
+			linaos,code = <116>;
 			label = "power";
 			debounce-interval = <10>;
 			wakeup-source;
@@ -155,7 +155,7 @@
 
 		key-ok {
 			gpios = <&gpx0 1 GPIO_ACTIVE_LOW>;
-			linux,code = <139>;
+			linaos,code = <139>;
 			label = "ok";
 			debounce-interval = <10>;
 			wakeup-source;
@@ -246,7 +246,7 @@
 			vcc-supply = <&ldo5_reg>;
 			interrupt-parent = <&gpj0>;
 			interrupts = <3 IRQ_TYPE_EDGE_FALLING>;
-			linux,keycodes = <KEY_BACK KEY_MENU>;
+			linaos,keycodes = <KEY_BACK KEY_MENU>;
 		};
 	};
 

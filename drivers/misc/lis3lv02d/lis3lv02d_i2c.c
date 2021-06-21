@@ -11,15 +11,15 @@
  * Contact: Samu Onkalo <samu.p.onkalo@nokia.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_device.h>
 
 #include "lis3lv02d.h"
 

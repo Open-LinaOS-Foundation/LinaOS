@@ -8,13 +8,13 @@
  * Author: Jacob Shin <jacob.shin@amd.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/percpu-defs.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/percpu-defs.h>
+#include <linaos/init.h>
+#include <linaos/mod_devicetable.h>
 
 #include <asm/msr.h>
 #include <asm/cpufeature.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux driver for TerraTec DMX 6Fire USB
+ * LinaOS driver for TerraTec DMX 6Fire USB
  *
  * Firmware loader
  *
@@ -9,10 +9,10 @@
  * Copyright:	(C) Torsten Schenk
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bitrev.h>
-#include <linux/kernel.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/bitrev.h>
+#include <linaos/kernel.h>
 
 #include "firmware.h"
 #include "chip.h"

@@ -9,25 +9,25 @@
  * Based largely on the MPC8548CDS support - Copyright 2005 Freescale Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/initrd.h>
-#include <linux/interrupt.h>
-#include <linux/fsl_devices.h>
-#include <linux/of_platform.h>
-#include <linux/pgtable.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/reboot.h>
+#include <linaos/pci.h>
+#include <linaos/kdev_t.h>
+#include <linaos/major.h>
+#include <linaos/console.h>
+#include <linaos/delay.h>
+#include <linaos/seq_file.h>
+#include <linaos/initrd.h>
+#include <linaos/interrupt.h>
+#include <linaos/fsl_devices.h>
+#include <linaos/of_platform.h>
+#include <linaos/pgtable.h>
 
 #include <asm/page.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/time.h>
 #include <asm/io.h>
 #include <asm/machdep.h>

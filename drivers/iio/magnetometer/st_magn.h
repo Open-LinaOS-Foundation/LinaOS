@@ -11,8 +11,8 @@
 #ifndef ST_MAGN_H
 #define ST_MAGN_H
 
-#include <linux/types.h>
-#include <linux/iio/common/st_sensors.h>
+#include <linaos/types.h>
+#include <linaos/iio/common/st_sensors.h>
 
 #define LSM303DLH_MAGN_DEV_NAME		"lsm303dlh_magn"
 #define LSM303DLHC_MAGN_DEV_NAME	"lsm303dlhc_magn"

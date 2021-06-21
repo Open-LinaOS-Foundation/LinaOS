@@ -57,49 +57,49 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kthread.h>
-#include <linux/rbtree.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/stacktrace.h>
-#include <linux/cache.h>
-#include <linux/percpu.h>
-#include <linux/memblock.h>
-#include <linux/pfn.h>
-#include <linux/mmzone.h>
-#include <linux/slab.h>
-#include <linux/thread_info.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/workqueue.h>
-#include <linux/crc32.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/jiffies.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/kthread.h>
+#include <linaos/rbtree.h>
+#include <linaos/fs.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/cpumask.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/rcupdate.h>
+#include <linaos/stacktrace.h>
+#include <linaos/cache.h>
+#include <linaos/percpu.h>
+#include <linaos/memblock.h>
+#include <linaos/pfn.h>
+#include <linaos/mmzone.h>
+#include <linaos/slab.h>
+#include <linaos/thread_info.h>
+#include <linaos/err.h>
+#include <linaos/uaccess.h>
+#include <linaos/string.h>
+#include <linaos/nodemask.h>
+#include <linaos/mm.h>
+#include <linaos/workqueue.h>
+#include <linaos/crc32.h>
 
 #include <asm/sections.h>
 #include <asm/processor.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
-#include <linux/kasan.h>
-#include <linux/kfence.h>
-#include <linux/kmemleak.h>
-#include <linux/memory_hotplug.h>
+#include <linaos/kasan.h>
+#include <linaos/kfence.h>
+#include <linaos/kmemleak.h>
+#include <linaos/memory_hotplug.h>
 
 /*
  * Kmemleak configuration and common defines.

@@ -6,7 +6,7 @@
  * Copyright (C) 2010 Steffen Klassert <steffen.klassert@secunet.com>
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <net/xfrm.h>
 
 u32 xfrm_replay_seqhi(struct xfrm_state *x, __be32 net_seq)

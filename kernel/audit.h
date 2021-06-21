@@ -6,11 +6,11 @@
  * Copyright 2005 IBM Corporation
  */
 
-#include <linux/fs.h>
-#include <linux/audit.h>
-#include <linux/skbuff.h>
-#include <uapi/linux/mqueue.h>
-#include <linux/tty.h>
+#include <linaos/fs.h>
+#include <linaos/audit.h>
+#include <linaos/skbuff.h>
+#include <uapi/linaos/mqueue.h>
+#include <linaos/tty.h>
 
 /* AUDIT_NAMES is the number of slots we reserve in the audit_context
  * for saving names from getname().  If we get more names we will allocate
@@ -231,7 +231,7 @@ struct audit_netlink_list {
 
 int audit_send_list_thread(void *_dest);
 
-extern int selinux_audit_rule_update(void);
+extern int selinaos_audit_rule_update(void);
 
 extern struct mutex audit_filter_mutex;
 extern int audit_del_rule(struct audit_entry *entry);

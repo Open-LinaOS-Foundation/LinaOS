@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux/parisc floating point code
+# Makefile for the linaos/parisc floating point code
 #
 
 # See arch/parisc/math-emu/README

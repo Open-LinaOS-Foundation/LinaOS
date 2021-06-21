@@ -16,12 +16,12 @@
  * to VFIO platform.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "../vfio_platform_private.h"
 

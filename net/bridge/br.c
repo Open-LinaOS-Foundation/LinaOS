@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Generic parts
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/llc.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/init.h>
+#include <linaos/llc.h>
 #include <net/llc.h>
 #include <net/stp.h>
 #include <net/switchdev.h>

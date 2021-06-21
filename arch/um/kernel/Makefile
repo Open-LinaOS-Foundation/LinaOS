@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux,intel}.com)
+# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linaos,intel}.com)
 #
 
 # Don't instrument UML-specific code; without this, we may crash when
@@ -8,11 +8,11 @@
 # kernel.
 KCOV_INSTRUMENT                := n
 
-CPPFLAGS_vmlinux.lds := -DSTART=$(LDS_START)		\
+CPPFLAGS_vmlinaos.lds := -DSTART=$(LDS_START)		\
                         -DELF_ARCH=$(LDS_ELF_ARCH)	\
                         -DELF_FORMAT=$(LDS_ELF_FORMAT)	\
 			$(LDS_EXTRA)
-extra-y := vmlinux.lds
+extra-y := vmlinaos.lds
 
 obj-y = config.o exec.o exitcode.o irq.o ksyms.o mem.o \
 	physmem.o process.o ptrace.o reboot.o sigio.o \

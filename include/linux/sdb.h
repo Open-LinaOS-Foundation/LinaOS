@@ -5,7 +5,7 @@
 #ifndef __SDB_H__
 #define __SDB_H__
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <linaos/types.h>
 #else
 #include <stdint.h>
 #endif

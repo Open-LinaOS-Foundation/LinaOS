@@ -6,7 +6,7 @@
 pcie8: pcie@60400000 {
 	compatible = "brcm,iproc-pcie-paxc-v2";
 	reg = <0 0x60400000 0 0x1000>;
-	linux,pci-domain = <8>;
+	linaos,pci-domain = <8>;
 
 	bus-range = <0x0 0x1>;
 

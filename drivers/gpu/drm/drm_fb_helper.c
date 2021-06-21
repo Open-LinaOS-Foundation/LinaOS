@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2006-2009 Red Hat Inc.
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@linaos.ie>
  *
  * DRM framebuffer helper functions
  *
@@ -24,18 +24,18 @@
  * OF THIS SOFTWARE.
  *
  * Authors:
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@linaos.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/console.h>
-#include <linux/dma-buf.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/vmalloc.h>
+#include <linaos/console.h>
+#include <linaos/dma-buf.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sysrq.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_crtc.h>

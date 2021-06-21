@@ -8,33 +8,33 @@
  * the swap device and, in the case where decompressing from RAM is faster
  * than reading from the swap device, can also improve workload performance.
  *
- * Copyright (C) 2012  Seth Jennings <sjenning@linux.vnet.ibm.com>
+ * Copyright (C) 2012  Seth Jennings <sjenning@linaos.vnet.ibm.com>
 */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/frontswap.h>
-#include <linux/rbtree.h>
-#include <linux/swap.h>
-#include <linux/crypto.h>
-#include <linux/scatterlist.h>
-#include <linux/mempool.h>
-#include <linux/zpool.h>
+#include <linaos/module.h>
+#include <linaos/cpu.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/frontswap.h>
+#include <linaos/rbtree.h>
+#include <linaos/swap.h>
+#include <linaos/crypto.h>
+#include <linaos/scatterlist.h>
+#include <linaos/mempool.h>
+#include <linaos/zpool.h>
 #include <crypto/acompress.h>
 
-#include <linux/mm_types.h>
-#include <linux/page-flags.h>
-#include <linux/swapops.h>
-#include <linux/writeback.h>
-#include <linux/pagemap.h>
-#include <linux/workqueue.h>
+#include <linaos/mm_types.h>
+#include <linaos/page-flags.h>
+#include <linaos/swapops.h>
+#include <linaos/writeback.h>
+#include <linaos/pagemap.h>
+#include <linaos/workqueue.h>
 
 /*********************************
 * statistics
@@ -1393,7 +1393,7 @@ static struct frontswap_ops zswap_frontswap_ops = {
 * debugfs functions
 **********************************/
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 static struct dentry *zswap_debugfs_root;
 

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef	AFFS_HARDBLOCKS_H
 #define	AFFS_HARDBLOCKS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Just the needed definitions for the RDB of an Amiga HD. */
 

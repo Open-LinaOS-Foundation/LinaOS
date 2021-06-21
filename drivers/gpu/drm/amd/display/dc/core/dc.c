@@ -22,8 +22,8 @@
  * Authors: AMD
  */
 
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 
 #include "dm_services.h"
 

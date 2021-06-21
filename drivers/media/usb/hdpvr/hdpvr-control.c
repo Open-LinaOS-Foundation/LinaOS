@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Hauppauge HD PVR USB driver - video 4 linux 2 interface
+ * Hauppauge HD PVR USB driver - video 4 linaos 2 interface
  *
  * Copyright (C) 2008      Janne Grunau (j@jannau.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/mutex.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-common.h>
 

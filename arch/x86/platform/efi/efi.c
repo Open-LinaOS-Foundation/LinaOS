@@ -3,15 +3,15 @@
  * Common EFI (Extensible Firmware Interface) support functions
  * Based on Extensible Firmware Interface Specification version 1.0
  *
- * Copyright (C) 1999 VA Linux Systems
- * Copyright (C) 1999 Walt Drummond <drummond@valinux.com>
+ * Copyright (C) 1999 VA LinaOS Systems
+ * Copyright (C) 1999 Walt Drummond <drummond@valinaos.com>
  * Copyright (C) 1999-2002 Hewlett-Packard Co.
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  *	Stephane Eranian <eranian@hpl.hp.com>
  * Copyright (C) 2005-2008 Intel Co.
  *	Fenghua Yu <fenghua.yu@intel.com>
  *	Bibo Mao <bibo.mao@intel.com>
- *	Chandramouli Narayanan <mouli@linux.intel.com>
+ *	Chandramouli Narayanan <mouli@linaos.intel.com>
  *	Huang Ying <ying.huang@intel.com>
  * Copyright (C) 2013 SuSE Labs
  *	Borislav Petkov <bp@suse.de> - runtime services VA mapping
@@ -31,19 +31,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/efi.h>
-#include <linux/efi-bgrt.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/time.h>
-#include <linux/io.h>
-#include <linux/reboot.h>
-#include <linux/bcd.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/efi.h>
+#include <linaos/efi-bgrt.h>
+#include <linaos/export.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/time.h>
+#include <linaos/io.h>
+#include <linaos/reboot.h>
+#include <linaos/bcd.h>
 
 #include <asm/setup.h>
 #include <asm/efi.h>

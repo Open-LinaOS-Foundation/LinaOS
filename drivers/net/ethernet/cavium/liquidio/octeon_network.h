@@ -23,7 +23,7 @@
 
 #ifndef __OCTEON_NETWORK_H__
 #define __OCTEON_NETWORK_H__
-#include <linux/ptp_clock_kernel.h>
+#include <linaos/ptp_clock_kernel.h>
 
 #define LIO_MAX_MTU_SIZE (OCTNET_MAX_FRM_SIZE - OCTNET_FRM_HEADER_SIZE)
 #define LIO_MIN_MTU_SIZE ETH_MIN_MTU

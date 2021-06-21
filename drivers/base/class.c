@@ -8,16 +8,16 @@
  * Copyright (c) 2003-2004 IBM Corp.
  */
 
-#include <linux/device/class.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/kdev_t.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/genhd.h>
-#include <linux/mutex.h>
+#include <linaos/device/class.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/kdev_t.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/genhd.h>
+#include <linaos/mutex.h>
 #include "base.h"
 
 #define to_class_attr(_attr) container_of(_attr, struct class_attribute, attr)

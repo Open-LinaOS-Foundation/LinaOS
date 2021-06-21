@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * logfile.h - Defines for NTFS kernel journal ($LogFile) handling.  Part of
- *	       the Linux-NTFS project.
+ *	       the LinaOS-NTFS project.
  *
  * Copyright (c) 2000-2005 Anton Altaparmakov
  */
@@ -11,7 +11,7 @@
 
 #ifdef NTFS_RW
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 #include "types.h"
 #include "endian.h"

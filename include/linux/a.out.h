@@ -2,10 +2,10 @@
 #ifndef __A_OUT_GNU_H__
 #define __A_OUT_GNU_H__
 
-#include <uapi/linux/a.out.h>
+#include <uapi/linaos/a.out.h>
 
 #ifndef __ASSEMBLY__
-#ifdef linux
+#ifdef linaos
 #include <asm/page.h>
 #if defined(__i386__) || defined(__mc68000__)
 #else

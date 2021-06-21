@@ -17,7 +17,7 @@
 #include <osdep_service.h>
 #include <drv_types.h>
 #include <hal_intf.h>
-#include <usb_ops_linux.h>
+#include <usb_ops_linaos.h>
 
 /* 2 OutSrc Header Files */
 

@@ -8,13 +8,13 @@
 
 #define pr_fmt(fmt) "DT idle-states: " fmt
 
-#include <linux/cpuidle.h>
-#include <linux/cpumask.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpumask.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 #include "dt_idle_states.h"
 

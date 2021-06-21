@@ -4,8 +4,8 @@
  * Author: James.Qian.Wang <james.qian.wang@arm.com>
  *
  */
-#include <linux/component.h>
-#include <linux/interrupt.h>
+#include <linaos/component.h>
+#include <linaos/interrupt.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

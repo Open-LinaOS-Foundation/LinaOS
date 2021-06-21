@@ -3,7 +3,7 @@
 #define __NITROX_CSR_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* EMU clusters */
 #define NR_CLUSTERS		4

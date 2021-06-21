@@ -8,7 +8,7 @@
 #ifndef __MTK_MDP_CORE_H__
 #define __MTK_MDP_CORE_H__
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-mem2mem.h>

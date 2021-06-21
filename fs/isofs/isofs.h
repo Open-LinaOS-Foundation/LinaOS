@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/iso_fs.h>
+#include <linaos/fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/exportfs.h>
+#include <linaos/iso_fs.h>
 #include <asm/unaligned.h>
 
 enum isofs_file_format {

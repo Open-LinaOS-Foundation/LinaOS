@@ -15,9 +15,9 @@
  */
 
 /*
- * This driver exists to allow userspace programs in Linux to allocate kernel
+ * This driver exists to allow userspace programs in LinaOS to allocate kernel
  * memory that will later be shared with another domain.  Without this device,
- * Linux userspace programs cannot create grant references.
+ * LinaOS userspace programs cannot create grant references.
  *
  * How this stuff works:
  *   X -> granting a page to Y
@@ -50,19 +50,19 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/atomic.h>
-#include <linux/module.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/highmem.h>
+#include <linaos/atomic.h>
+#include <linaos/module.h>
+#include <linaos/miscdevice.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/device.h>
+#include <linaos/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/highmem.h>
 
 #include <xen/xen.h>
 #include <xen/page.h>

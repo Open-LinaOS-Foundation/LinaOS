@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (C) 2020 Felix Fietkau <nbd@nbd.name> */
 
-#include <linux/kernel.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/debugfs.h>
 #include "mtk_eth_soc.h"
 
 struct mtk_flow_addr_info

@@ -19,13 +19,13 @@
  * calls to msleep.
  */
 
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/suspend.h>
-#include <linux/freezer.h>
-#include <linux/tpm_eventlog.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/suspend.h>
+#include <linaos/freezer.h>
+#include <linaos/tpm_eventlog.h>
 
 #include "tpm.h"
 

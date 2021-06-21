@@ -18,16 +18,16 @@
 #ifndef _UDP_H
 #define _UDP_H
 
-#include <linux/list.h>
-#include <linux/bug.h>
+#include <linaos/list.h>
+#include <linaos/bug.h>
 #include <net/inet_sock.h>
 #include <net/sock.h>
 #include <net/snmp.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/ipv6.h>
+#include <linaos/seq_file.h>
+#include <linaos/poll.h>
+#include <linaos/indirect_call_wrapper.h>
 
 /**
  *	struct udp_skb_cb  -  UDP(-Lite) private variables

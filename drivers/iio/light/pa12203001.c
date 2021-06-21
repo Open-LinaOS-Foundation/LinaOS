@@ -7,17 +7,17 @@
  * To do: Interrupt support.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/acpi.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/mutex.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
 #define PA12203001_DRIVER_NAME	"pa12203001"
 

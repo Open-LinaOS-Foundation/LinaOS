@@ -7,21 +7,21 @@
 #ifndef _QED_IF_H
 #define _QED_IF_H
 
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
+#include <linaos/ethtool.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/skbuff.h>
 #include <asm/byteorder.h>
-#include <linux/io.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/qed/common_hsi.h>
-#include <linux/qed/qed_chain.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/qed/common_hsi.h>
+#include <linaos/qed/qed_chain.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 #include <net/devlink.h>
 
 enum dcbx_protocol_type {

@@ -7,17 +7,17 @@
  * Contact: Luciano Coelho <luciano.coelho@nokia.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/swab.h>
-#include <linux/crc7.h>
-#include <linux/spi/spi.h>
-#include <linux/wl12xx.h>
-#include <linux/platform_device.h>
-#include <linux/of_irq.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/swab.h>
+#include <linaos/crc7.h>
+#include <linaos/spi/spi.h>
+#include <linaos/wl12xx.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/regulator/consumer.h>
 
 #include "wlcore.h"
 #include "wl12xx_80211.h"

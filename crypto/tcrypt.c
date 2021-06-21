@@ -6,7 +6,7 @@
  * (e.g. a char device).
  *
  * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
- * Copyright (c) 2002 Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) 2002 Jean-Francois Dive <jef@linaosbe.org>
  * Copyright (c) 2007 Nokia Siemens Networks
  *
  * Updated RFC4106 AES-GCM testing.
@@ -22,17 +22,17 @@
 #include <crypto/aead.h>
 #include <crypto/hash.h>
 #include <crypto/skcipher.h>
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/moduleparam.h>
-#include <linux/jiffies.h>
-#include <linux/timex.h>
-#include <linux/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/fips.h>
+#include <linaos/init.h>
+#include <linaos/gfp.h>
+#include <linaos/module.h>
+#include <linaos/scatterlist.h>
+#include <linaos/string.h>
+#include <linaos/moduleparam.h>
+#include <linaos/jiffies.h>
+#include <linaos/timex.h>
+#include <linaos/interrupt.h>
 #include "tcrypt.h"
 
 /*

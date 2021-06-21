@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2005-2008 Red Hat, Inc.  All rights reserved.
  *
@@ -10,7 +10,7 @@
 #ifndef _UAPI__DLM_PLOCK_DOT_H__
 #define _UAPI__DLM_PLOCK_DOT_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define DLM_PLOCK_MISC_NAME		"dlm_plock"
 

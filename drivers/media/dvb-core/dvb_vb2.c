@@ -11,10 +11,10 @@
  * the Free Software Foundation.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
 
 #include <media/dvbdev.h>
 #include <media/dvb_vb2.h>

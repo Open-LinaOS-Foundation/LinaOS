@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* oplib.h:  Describes the interface and available routines in the
- *           Linux Prom library.
+ *           LinaOS Prom library.
  *
  * Copyright (C) 1995, 2007 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 Jakub Jelinek (jj@sunsite.mff.cuni.cz)
@@ -46,16 +46,16 @@ extern unsigned int prom_boot_mapped_pc;
 extern unsigned int prom_boot_mapping_mode;
 extern unsigned long prom_boot_mapping_phys_high, prom_boot_mapping_phys_low;
 
-struct linux_mlist_p1275 {
-	struct linux_mlist_p1275 *theres_more;
+struct linaos_mlist_p1275 {
+	struct linaos_mlist_p1275 *theres_more;
 	unsigned long start_adr;
 	unsigned long num_bytes;
 };
 
-struct linux_mem_p1275 {
-	struct linux_mlist_p1275 **p1275_totphys;
-	struct linux_mlist_p1275 **p1275_prommap;
-	struct linux_mlist_p1275 **p1275_available; /* What we can use */
+struct linaos_mem_p1275 {
+	struct linaos_mlist_p1275 **p1275_totphys;
+	struct linaos_mlist_p1275 **p1275_prommap;
+	struct linaos_mlist_p1275 **p1275_available; /* What we can use */
 };
 
 /* The functions... */

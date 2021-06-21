@@ -1,4 +1,4 @@
-/* bnx2fc_io.c: QLogic Linux FCoE offload driver.
+/* bnx2fc_io.c: QLogic LinaOS FCoE offload driver.
  * IO manager and SCSI IO processing.
  *
  * Copyright (c) 2008-2013 Broadcom Corporation
@@ -1780,7 +1780,7 @@ static void bnx2fc_parse_fcp_rsp(struct bnx2fc_cmd *io_req,
 	if (num_rq) {
 
 		/*
-		 * We do not anticipate num_rq >1, as the linux defined
+		 * We do not anticipate num_rq >1, as the linaos defined
 		 * SCSI_SENSE_BUFFERSIZE is 96 bytes + 8 bytes of FCP_RSP_INFO
 		 * 256 bytes of single rq buffer is good enough to hold this.
 		 */

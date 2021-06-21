@@ -12,7 +12,7 @@
 
 #include "debug.h"
 #include "trace-event.h"
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 
 struct scripting_context *scripting_context;
 

@@ -3,21 +3,21 @@
  * Machine check exception handling.
  *
  * Copyright 2013 IBM Corporation
- * Author: Mahesh Salgaonkar <mahesh@linux.vnet.ibm.com>
+ * Author: Mahesh Salgaonkar <mahesh@linaos.vnet.ibm.com>
  */
 
 #undef DEBUG
 #define pr_fmt(fmt) "mce: " fmt
 
-#include <linux/hardirq.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/irq_work.h>
-#include <linux/extable.h>
-#include <linux/ftrace.h>
-#include <linux/memblock.h>
+#include <linaos/hardirq.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/percpu.h>
+#include <linaos/export.h>
+#include <linaos/irq_work.h>
+#include <linaos/extable.h>
+#include <linaos/ftrace.h>
+#include <linaos/memblock.h>
 
 #include <asm/interrupt.h>
 #include <asm/machdep.h>

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/arch/arm/mach-sa1100/generic.h
+ * linaos/arch/arm/mach-sa1100/generic.h
  *
  * Author: Nicolas Pitre
  */
-#include <linux/cpufreq.h>
-#include <linux/reboot.h>
+#include <linaos/cpufreq.h>
+#include <linaos/reboot.h>
 
 extern void sa1100_timer_init(void);
 extern void __init sa1100_map_io(void);

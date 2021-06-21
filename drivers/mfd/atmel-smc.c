@@ -8,8 +8,8 @@
  * Author: Boris Brezillon <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/mfd/syscon/atmel-smc.h>
-#include <linux/string.h>
+#include <linaos/mfd/syscon/atmel-smc.h>
+#include <linaos/string.h>
 
 /**
  * atmel_smc_cs_conf_init - initialize a SMC CS conf

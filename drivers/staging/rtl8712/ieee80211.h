@@ -3,7 +3,7 @@
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -14,7 +14,7 @@
 #ifndef __IEEE80211_H
 #define __IEEE80211_H
 
-#include <linux/ieee80211.h>
+#include <linaos/ieee80211.h>
 
 #define IEEE_CMD_SET_WPA_PARAM			1
 #define IEEE_CMD_SET_WPA_IE			2

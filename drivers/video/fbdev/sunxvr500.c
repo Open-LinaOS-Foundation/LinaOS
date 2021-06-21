@@ -5,11 +5,11 @@
  * Copyright (C) 2007 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/of_device.h>
+#include <linaos/kernel.h>
+#include <linaos/fb.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/of_device.h>
 
 #include <asm/io.h>
 

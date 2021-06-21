@@ -3,7 +3,7 @@
  * Copyright (C) 2012 Freescale Semiconductor, Inc.
  */
 
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/epapr_hcalls.h>
 #include <asm/reg.h>
 #include <asm/page.h>

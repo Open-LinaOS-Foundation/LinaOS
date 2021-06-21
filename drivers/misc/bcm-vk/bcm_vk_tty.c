@@ -3,9 +3,9 @@
  * Copyright 2018-2020 Broadcom.
  */
 
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
 
 #include "bcm_vk.h"
 

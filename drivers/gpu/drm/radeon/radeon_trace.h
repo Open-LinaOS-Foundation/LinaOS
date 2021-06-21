@@ -2,9 +2,9 @@
 #if !defined(_RADEON_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _RADEON_TRACE_H_
 
-#include <linux/stringify.h>
-#include <linux/tracepoint.h>
-#include <linux/types.h>
+#include <linaos/stringify.h>
+#include <linaos/tracepoint.h>
+#include <linaos/types.h>
 
 #include <drm/drm_file.h>
 

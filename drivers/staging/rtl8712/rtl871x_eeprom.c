@@ -3,9 +3,9 @@
  * rtl871x_eeprom.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * LinaOS device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:

@@ -4,7 +4,7 @@
  * Copyright (c) 2019, Tessares SA.
  */
 
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>

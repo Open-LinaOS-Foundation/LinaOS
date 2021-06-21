@@ -19,8 +19,8 @@
 #ifndef _LINUX_IF_ARP_H
 #define _LINUX_IF_ARP_H
 
-#include <linux/skbuff.h>
-#include <uapi/linux/if_arp.h>
+#include <linaos/skbuff.h>
+#include <uapi/linaos/if_arp.h>
 
 static inline struct arphdr *arp_hdr(const struct sk_buff *skb)
 {

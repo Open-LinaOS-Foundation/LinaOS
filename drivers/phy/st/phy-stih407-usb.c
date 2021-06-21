@@ -6,17 +6,17 @@
  *
  * Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
  */
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/mfd/syscon.h>
-#include <linux/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/phy/phy.h>
 
 #define PHYPARAM_REG	1
 #define PHYCTRL_REG	2

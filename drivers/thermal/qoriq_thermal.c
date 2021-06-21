@@ -2,16 +2,16 @@
 //
 // Copyright 2016 Freescale Semiconductor, Inc.
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sizes.h>
-#include <linux/thermal.h>
-#include <linux/units.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sizes.h>
+#include <linaos/thermal.h>
+#include <linaos/units.h>
 
 #include "thermal_core.h"
 #include "thermal_hwmon.h"

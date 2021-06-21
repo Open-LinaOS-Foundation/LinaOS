@@ -13,11 +13,11 @@
 #ifndef _LINUX_SURFACE_AGGREGATOR_DEVICE_H
 #define _LINUX_SURFACE_AGGREGATOR_DEVICE_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/types.h>
 
-#include <linux/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/controller.h>
 
 
 /* -- Surface System Aggregator Module bus. --------------------------------- */

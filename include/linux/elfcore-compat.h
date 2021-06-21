@@ -2,12 +2,12 @@
 #ifndef _LINUX_ELFCORE_COMPAT_H
 #define _LINUX_ELFCORE_COMPAT_H
 
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/compat.h>
+#include <linaos/elf.h>
+#include <linaos/elfcore.h>
+#include <linaos/compat.h>
 
 /*
- * Make sure these layouts match the linux/elfcore.h native definitions.
+ * Make sure these layouts match the linaos/elfcore.h native definitions.
  */
 
 struct compat_elf_siginfo

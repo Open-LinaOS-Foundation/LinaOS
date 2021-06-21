@@ -6,8 +6,8 @@
  * task->stack (kernel stack) handling interfaces:
  */
 
-#include <linux/sched.h>
-#include <linux/magic.h>
+#include <linaos/sched.h>
+#include <linaos/magic.h>
 
 #ifdef CONFIG_THREAD_INFO_IN_TASK
 

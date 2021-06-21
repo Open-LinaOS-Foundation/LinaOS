@@ -5,8 +5,8 @@
  * Copyright (C) 2006-2018 Oracle Corporation
  */
 
-#include <linux/namei.h>
-#include <linux/vbox_utils.h>
+#include <linaos/namei.h>
+#include <linaos/vbox_utils.h>
 #include "vfsmod.h"
 
 static int vboxsf_dir_open(struct inode *inode, struct file *file)

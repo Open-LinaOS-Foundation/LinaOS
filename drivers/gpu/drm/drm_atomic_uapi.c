@@ -33,10 +33,10 @@
 #include <drm/drm_writeback.h>
 #include <drm/drm_vblank.h>
 
-#include <linux/dma-fence.h>
-#include <linux/uaccess.h>
-#include <linux/sync_file.h>
-#include <linux/file.h>
+#include <linaos/dma-fence.h>
+#include <linaos/uaccess.h>
+#include <linaos/sync_file.h>
+#include <linaos/file.h>
 
 #include "drm_crtc_internal.h"
 
@@ -1072,7 +1072,7 @@ int drm_atomic_set_property(struct drm_atomic_state *state,
  * ongoing rendering, and automatically ensures that the atomic update waits
  * for any pending rendering to complete. For shared buffers represented with
  * a &struct dma_buf this is tracked in &struct dma_resv.
- * Implicit syncing is how Linux traditionally worked (e.g. DRI2/3 on X.org),
+ * Implicit syncing is how LinaOS traditionally worked (e.g. DRI2/3 on X.org),
  * whereas explicit fencing is what Android wants.
  *
  * "IN_FENCE_FD”:

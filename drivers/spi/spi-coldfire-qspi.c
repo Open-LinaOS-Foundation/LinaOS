@@ -5,18 +5,18 @@
  * Copyright 2010 Steven King <sfking@fdwdc.com>
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/spi/spi.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/spi/spi.h>
+#include <linaos/pm_runtime.h>
 
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

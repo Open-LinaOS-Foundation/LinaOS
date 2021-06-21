@@ -3,14 +3,14 @@
  * Copyright (C) 2000, 2001, 2002, 2003 Broadcom Corporation
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/memblock.h>
-#include <linux/pm.h>
-#include <linux/smp.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/linkage.h>
+#include <linaos/mm.h>
+#include <linaos/blkdev.h>
+#include <linaos/memblock.h>
+#include <linaos/pm.h>
+#include <linaos/smp.h>
 
 #include <asm/bootinfo.h>
 #include <asm/reboot.h>
@@ -47,7 +47,7 @@ int cfe_cons_handle;
 extern unsigned long initrd_start, initrd_end;
 #endif
 
-static void __noreturn cfe_linux_exit(void *arg)
+static void __noreturn cfe_linaos_exit(void *arg)
 {
 	int warm = *(int *)arg;
 
@@ -58,7 +58,7 @@ static void __noreturn cfe_linux_exit(void *arg)
 		if (!reboot_smp) {
 			/* Get CPU 0 to do the cfe_exit */
 			reboot_smp = 1;
-			smp_call_function(cfe_linux_exit, arg, 0);
+			smp_call_function(cfe_linaos_exit, arg, 0);
 		}
 	} else {
 		printk("Passing control back to CFE...\n");
@@ -68,18 +68,18 @@ static void __noreturn cfe_linux_exit(void *arg)
 	while (1);
 }
 
-static void __noreturn cfe_linux_restart(char *command)
+static void __noreturn cfe_linaos_restart(char *command)
 {
 	static const int zero;
 
-	cfe_linux_exit((void *)&zero);
+	cfe_linaos_exit((void *)&zero);
 }
 
-static void __noreturn cfe_linux_halt(void)
+static void __noreturn cfe_linaos_halt(void)
 {
 	static const int one = 1;
 
-	cfe_linux_exit((void *)&one);
+	cfe_linaos_exit((void *)&one);
 }
 
 static __init void prom_meminit(void)
@@ -229,9 +229,9 @@ void __init prom_init(void)
 	char **envp = (char **) fw_arg2;
 	int *prom_vec = (int *) fw_arg3;
 
-	_machine_restart   = cfe_linux_restart;
-	_machine_halt	   = cfe_linux_halt;
-	pm_power_off = cfe_linux_halt;
+	_machine_restart   = cfe_linaos_restart;
+	_machine_halt	   = cfe_linaos_halt;
+	pm_power_off = cfe_linaos_halt;
 
 	/*
 	 * Check if a loader was used; if NOT, the 4 arguments are

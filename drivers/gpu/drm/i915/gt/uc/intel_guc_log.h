@@ -6,9 +6,9 @@
 #ifndef _INTEL_GUC_LOG_H_
 #define _INTEL_GUC_LOG_H_
 
-#include <linux/mutex.h>
-#include <linux/relay.h>
-#include <linux/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/relay.h>
+#include <linaos/workqueue.h>
 
 #include "intel_guc_fwif.h"
 #include "i915_gem.h"

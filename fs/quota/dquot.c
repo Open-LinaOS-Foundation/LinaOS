@@ -54,34 +54,34 @@
  * (C) Copyright 1994 - 1997 Marco van Wieringen
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/mm.h>
-#include <linux/time.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/tty.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/kmod.h>
-#include <linux/namei.h>
-#include <linux/capability.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/mm.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/stat.h>
+#include <linaos/tty.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/security.h>
+#include <linaos/sched.h>
+#include <linaos/cred.h>
+#include <linaos/kmod.h>
+#include <linaos/namei.h>
+#include <linaos/capability.h>
+#include <linaos/quotaops.h>
+#include <linaos/blkdev.h>
 #include "../internal.h" /* ugh */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /*
  * There are five quota SMP locks:

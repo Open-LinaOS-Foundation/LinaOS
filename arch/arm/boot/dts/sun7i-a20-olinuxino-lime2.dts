@@ -49,7 +49,7 @@
 
 / {
 	model = "Olimex A20-OLinuXino-LIME2";
-	compatible = "olimex,a20-olinuxino-lime2", "allwinner,sun7i-a20";
+	compatible = "olimex,a20-olinaosino-lime2", "allwinner,sun7i-a20";
 
 	aliases {
 		serial0 = &uart0;
@@ -73,10 +73,10 @@
 	leds {
 		compatible = "gpio-leds";
 		pinctrl-names = "default";
-		pinctrl-0 = <&led_pins_olinuxinolime>;
+		pinctrl-0 = <&led_pins_olinaosinolime>;
 
 		led {
-			label = "a20-olinuxino-lime2:green:usr";
+			label = "a20-olinaosino-lime2:green:usr";
 			gpios = <&pio 7 2 GPIO_ACTIVE_HIGH>;
 			default-state = "on";
 		};
@@ -182,7 +182,7 @@
 	vcc-pf-supply = <&reg_vcc3v3>;
 	vcc-pg-supply = <&reg_ldo4>;
 
-	led_pins_olinuxinolime: led-pins {
+	led_pins_olinaosinolime: led-pins {
 		pins = "PH2";
 		function = "gpio_out";
 		drive-strength = <20>;

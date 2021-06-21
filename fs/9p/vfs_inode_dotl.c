@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/9p/vfs_inode_dotl.c
+ *  linaos/fs/9p/vfs_inode_dotl.c
  *
  * This file contains vfs inode ops for the 9P2000.L protocol.
  *
@@ -8,20 +8,20 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/inet.h>
-#include <linux/namei.h>
-#include <linux/idr.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/pagemap.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/inet.h>
+#include <linaos/namei.h>
+#include <linaos/idr.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/xattr.h>
+#include <linaos/posix_acl.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 
@@ -191,7 +191,7 @@ static int v9fs_mapped_dotl_flags(int flags)
 }
 
 /**
- * v9fs_open_to_dotl_flags- convert Linux specific open flags to
+ * v9fs_open_to_dotl_flags- convert LinaOS specific open flags to
  * plan 9 open flag.
  * @flags: flags to convert
  */

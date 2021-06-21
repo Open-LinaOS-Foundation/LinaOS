@@ -6,11 +6,11 @@
  * Author: Arnaud Pouliquen <arnaud.pouliquen@st.com>.
  */
 
-#include <linux/iio/iio.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
 
 static const struct iio_info iio_sd_mod_iio_info;
 

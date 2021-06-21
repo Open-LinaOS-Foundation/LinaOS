@@ -1,5 +1,5 @@
 ========================
-Force feedback for Linux
+Force feedback for LinaOS
 ========================
 
 :Author: Johann Deneux <johann.deneux@gmail.com> on 2001/04/22.
@@ -11,11 +11,11 @@ interactive.svg as well.
 Introduction
 ~~~~~~~~~~~~
 
-This document describes how to use force feedback devices under Linux. The
+This document describes how to use force feedback devices under LinaOS. The
 goal is not to support these devices as if they were simple input-only devices
 (as it is already the case), but to really enable the rendering of force
 effects.
-This document only describes the force feedback part of the Linux input
+This document only describes the force feedback part of the LinaOS input
 interface. Please read joydev/joystick.rst and input.rst before reading further
 this document.
 
@@ -57,7 +57,7 @@ Querying device capabilities
 
 ::
 
-    #include <linux/input.h>
+    #include <linaos/input.h>
     #include <sys/ioctl.h>
 
     #define BITS_TO_LONGS(x) \
@@ -109,7 +109,7 @@ Uploading effects to the device
 
 ::
 
-    #include <linux/input.h>
+    #include <linaos/input.h>
     #include <sys/ioctl.h>
 
     int ioctl(int file_descriptor, int request, struct ff_effect *effect);
@@ -126,7 +126,7 @@ allocate a new effect.
 
 Effects are file descriptor specific.
 
-See <uapi/linux/input.h> for a description of the ff_effect struct.  You
+See <uapi/linaos/input.h> for a description of the ff_effect struct.  You
 should also find help in a few sketches, contained in files shape.svg
 and interactive.svg:
 
@@ -156,7 +156,7 @@ Control of playing is done with write(). Below is an example:
 
 ::
 
-    #include <linux/input.h>
+    #include <linaos/input.h>
     #include <unistd.h>
 
 	struct input_event play;
@@ -261,5 +261,5 @@ and meanings of the fields of the event are as follows::
 
     - Status feedback is only supported by iforce driver. If you have
       a really good reason to use this, please contact
-      linux-joystick@atrey.karlin.mff.cuni.cz or anssi.hannula@gmail.com
+      linaos-joystick@atrey.karlin.mff.cuni.cz or anssi.hannula@gmail.com
       so that support for it can be added to the rest of the drivers.

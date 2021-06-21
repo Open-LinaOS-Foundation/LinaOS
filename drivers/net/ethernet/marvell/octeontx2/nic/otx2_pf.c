@@ -8,13 +8,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/of.h>
-#include <linux/if_vlan.h>
-#include <linux/iommu.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/etherdevice.h>
+#include <linaos/of.h>
+#include <linaos/if_vlan.h>
+#include <linaos/iommu.h>
 #include <net/ip.h>
 
 #include "otx2_reg.h"

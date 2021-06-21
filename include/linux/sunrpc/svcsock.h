@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/svcsock.h
+ * linaos/include/linaos/sunrpc/svcsock.h
  *
  * RPC server socket I/O.
  *
@@ -10,8 +10,8 @@
 #ifndef SUNRPC_SVCSOCK_H
 #define SUNRPC_SVCSOCK_H
 
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svc_xprt.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/sunrpc/svc_xprt.h>
 
 /*
  * RPC server socket.

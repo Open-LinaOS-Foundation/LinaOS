@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies Ltd */
 
 #ifndef __MLX5_SF_PRIV_H__
 #define __MLX5_SF_PRIV_H__
 
-#include <linux/mlx5/driver.h>
+#include <linaos/mlx5/driver.h>
 
 int mlx5_cmd_alloc_sf(struct mlx5_core_dev *dev, u16 function_id);
 int mlx5_cmd_dealloc_sf(struct mlx5_core_dev *dev, u16 function_id);

@@ -3,11 +3,11 @@
  * Copyright (C) 2014 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/irqdomain.h>
+#include <linaos/irqchip.h>
 #include <asm/irq.h>
 
 #define NR_EXCEPTIONS	16
@@ -58,7 +58,7 @@ void arc_init_IRQ(void)
 	/*
 	 * ARCv2 core intc provides multiple interrupt priorities (upto 16).
 	 * Typical builds though have only two levels (0-high, 1-low)
-	 * Linux by default uses lower prio 1 for most irqs, reserving 0 for
+	 * LinaOS by default uses lower prio 1 for most irqs, reserving 0 for
 	 * NMI style interrupts in future (say perf)
 	 */
 
@@ -115,7 +115,7 @@ void arcv2_irq_enable(struct irq_data *data)
 	write_aux_reg(AUX_IRQ_PRIORITY, ARCV2_IRQ_DEF_PRIO);
 
 	/*
-	 * hw auto enables (linux unmask) all by default
+	 * hw auto enables (linaos unmask) all by default
 	 * So no need to do IRQ_ENABLE here
 	 * XXX: However OSCI LAN need it
 	 */

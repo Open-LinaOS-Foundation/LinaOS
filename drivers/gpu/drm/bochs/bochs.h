@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/io.h>
-#include <linux/console.h>
+#include <linaos/io.h>
+#include <linaos/console.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

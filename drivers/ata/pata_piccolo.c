@@ -7,7 +7,7 @@
  *  Copyright 2005 Red Hat Inc, all rights reserved.
  *
  *  Elements from ide/pci/generic.c
- *	    Copyright (C) 2001-2002	Andre Hedrick <andre@linux-ide.org>
+ *	    Copyright (C) 2001-2002	Andre Hedrick <andre@linaos-ide.org>
  *	    Portions (C) Copyright 2002  Red Hat Inc <alan@redhat.com>
  *
  *  May be copied or modified under the terms of the GNU General Public License
@@ -15,13 +15,13 @@
  *  The timing data tables/programming info are courtesy of the NetBSD driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <linaos/libata.h>
 
 #define DRV_NAME "pata_piccolo"
 #define DRV_VERSION "0.0.1"

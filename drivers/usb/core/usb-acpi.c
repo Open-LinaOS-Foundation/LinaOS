@@ -4,14 +4,14 @@
  *
  * Copyright 2012 Red Hat <mjg@redhat.com>
  */
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
-#include <linux/usb/hcd.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/acpi.h>
+#include <linaos/pci.h>
+#include <linaos/usb/hcd.h>
 
 #include "hub.h"
 

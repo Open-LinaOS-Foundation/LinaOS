@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Intel Corporation
 
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
 
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>

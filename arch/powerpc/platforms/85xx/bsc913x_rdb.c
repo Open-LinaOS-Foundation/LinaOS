@@ -7,8 +7,8 @@
  * Copyright 2011-2012 Freescale Semiconductor Inc.
  */
 
-#include <linux/of_platform.h>
-#include <linux/pci.h>
+#include <linaos/of_platform.h>
+#include <linaos/pci.h>
 #include <asm/mpic.h>
 #include <sysdev/fsl_soc.h>
 #include <asm/udbg.h>

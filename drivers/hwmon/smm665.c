@@ -12,16 +12,16 @@
  * http://www.summitmicro.com/prod_select/summary/SMM766B/SMM766B_2122.pdf
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
 
 /* Internal reference voltage (VREF, x 1000 */
 #define SMM665_VREF_ADC_X1000	1250

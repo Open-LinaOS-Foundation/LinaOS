@@ -5,14 +5,14 @@
  * Author:
  * Mimi Zohar <zohar@us.ibm.com>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/xattr.h>
-#include <linux/magic.h>
-#include <linux/ima.h>
-#include <linux/evm.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/xattr.h>
+#include <linaos/magic.h>
+#include <linaos/ima.h>
+#include <linaos/evm.h>
 #include <keys/system_keyring.h>
 
 #include "ima.h"

@@ -31,4 +31,4 @@ else
 obj-y += ctx_sw_asm.o
 endif
 
-extra-y := vmlinux.lds head.o
+extra-y := vmlinaos.lds head.o

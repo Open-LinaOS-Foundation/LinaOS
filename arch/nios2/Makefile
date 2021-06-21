@@ -16,7 +16,7 @@
 
 KBUILD_DEFCONFIG := 3c120_defconfig
 
-UTS_SYSNAME = Linux
+UTS_SYSNAME = LinaOS
 
 export MMU
 
@@ -24,7 +24,7 @@ LIBGCC         := $(shell $(CC) $(KBUILD_CFLAGS) $(KCFLAGS) -print-libgcc-file-n
 
 KBUILD_AFLAGS += -march=r$(CONFIG_NIOS2_ARCH_REVISION)
 
-KBUILD_CFLAGS += -pipe -D__linux__ -D__ELF__
+KBUILD_CFLAGS += -pipe -D__linaos__ -D__ELF__
 KBUILD_CFLAGS += -march=r$(CONFIG_NIOS2_ARCH_REVISION)
 KBUILD_CFLAGS += $(if $(CONFIG_NIOS2_HW_MUL_SUPPORT),-mhw-mul,-mno-hw-mul)
 KBUILD_CFLAGS += $(if $(CONFIG_NIOS2_HW_MULX_SUPPORT),-mhw-mulx,-mno-hw-mulx)
@@ -56,7 +56,7 @@ all: vmImage
 archclean:
 	$(Q)$(MAKE) $(clean)=$(nios2-boot)
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmlinaos
 	$(Q)$(MAKE) $(build)=$(nios2-boot) $(nios2-boot)/$@
 
 install:

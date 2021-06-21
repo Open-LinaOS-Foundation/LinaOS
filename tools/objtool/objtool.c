@@ -20,7 +20,7 @@
 #include <unistd.h>
 #include <subcmd/exec-cmd.h>
 #include <subcmd/pager.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include <objtool/builtin.h>
 #include <objtool/objtool.h>
@@ -128,7 +128,7 @@ struct objtool_file *objtool_open_read(const char *_objname)
 	INIT_LIST_HEAD(&file.retpoline_call_list);
 	INIT_LIST_HEAD(&file.static_call_list);
 	INIT_LIST_HEAD(&file.mcount_loc_list);
-	file.c_file = !vmlinux && find_section_by_name(file.elf, ".comment");
+	file.c_file = !vmlinaos && find_section_by_name(file.elf, ".comment");
 	file.ignore_unreachables = no_unreachable;
 	file.hints = false;
 

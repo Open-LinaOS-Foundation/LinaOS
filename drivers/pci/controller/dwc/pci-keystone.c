@@ -9,24 +9,24 @@
  * Implementation based on pci-exynos.c and pcie-designware.c
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/syscon.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/resource.h>
-#include <linux/signal.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/msi.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/resource.h>
+#include <linaos/signal.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

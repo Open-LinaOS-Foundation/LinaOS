@@ -11,10 +11,10 @@
  *          Luke Diamand @ Broadcom
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <media/videobuf2-vmalloc.h>
 #include <media/videobuf2-dma-contig.h>
 #include <media/v4l2-device.h>
@@ -23,8 +23,8 @@
 #include <media/v4l2-fh.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-common.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
 
 #include "mmal-common.h"
 #include "mmal-encodings.h"

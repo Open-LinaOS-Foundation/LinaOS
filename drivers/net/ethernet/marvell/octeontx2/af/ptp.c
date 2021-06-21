@@ -4,10 +4,10 @@
  * Copyright (C) 2020 Marvell International Ltd.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/bitfield.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "ptp.h"
 #include "mbox.h"

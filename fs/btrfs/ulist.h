@@ -7,8 +7,8 @@
 #ifndef BTRFS_ULIST_H
 #define BTRFS_ULIST_H
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
 
 /*
  * ulist is a generic data structure to hold a collection of unique u64

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2019 Intel Corporation. */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/aer.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/aer.h>
 
 #include "fm10k.h"
 

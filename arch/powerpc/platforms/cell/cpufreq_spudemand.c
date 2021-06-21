@@ -7,13 +7,13 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/cpufreq.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/atomic.h>
+#include <linaos/cpufreq.h>
+#include <linaos/sched.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/atomic.h>
 #include <asm/machdep.h>
 #include <asm/spu.h>
 

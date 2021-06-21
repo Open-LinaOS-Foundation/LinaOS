@@ -2,8 +2,8 @@
 #ifndef SOUND_FIREWIRE_PACKETS_BUFFER_H_INCLUDED
 #define SOUND_FIREWIRE_PACKETS_BUFFER_H_INCLUDED
 
-#include <linux/dma-mapping.h>
-#include <linux/firewire.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firewire.h>
 
 /**
  * struct iso_packets_buffer - manages a buffer for many packets

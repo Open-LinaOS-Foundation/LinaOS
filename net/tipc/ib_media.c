@@ -38,7 +38,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/if_infiniband.h>
+#include <linaos/if_infiniband.h>
 #include "core.h"
 #include "bearer.h"
 

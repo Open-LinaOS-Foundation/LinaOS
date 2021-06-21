@@ -45,8 +45,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include <rdma/ib_umem.h>
 #include <rdma/rdma_vt.h>
 #include "vt.h"

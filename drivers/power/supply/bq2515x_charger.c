@@ -2,15 +2,15 @@
 // BQ2515X Battery Charger Driver
 // Copyright (C) 2020 Texas Instruments Incorporated - https://www.ti.com/
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/power_supply.h>
+#include <linaos/regmap.h>
+#include <linaos/types.h>
 
 #define BQ2515X_MANUFACTURER "Texas Instruments"
 

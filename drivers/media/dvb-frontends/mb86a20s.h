@@ -8,7 +8,7 @@
 #ifndef MB86A20S_H
 #define MB86A20S_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 /**
  * struct mb86a20s_config - Define the per-device attributes of the frontend

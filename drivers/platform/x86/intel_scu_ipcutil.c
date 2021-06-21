@@ -8,15 +8,15 @@
  * This driver provides IOCTL interfaces to call Intel SCU IPC driver API.
  */
 
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/fcntl.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 #include <asm/intel_scu_ipc.h>
 

@@ -6,10 +6,10 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/device.h>
-#include <linux/iommu.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/iommu.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 
 /*
  * We provide a common class "devices" group which initially has no attributes.

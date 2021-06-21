@@ -7,16 +7,16 @@
  * Copyright (c) 2020 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linaos/bitfield.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
 
 #include "core.h"
 #include "pinconf.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
-    i2c-isch.c - Linux kernel driver for Intel SCH chipset SMBus
+    i2c-isch.c - LinaOS kernel driver for Intel SCH chipset SMBus
     - Based on i2c-piix4.c
     Copyright (c) 1998 - 2002 Frodo Looijaard <frodol@dds.nl> and
     Philip Edelbrock <phil@netroedge.com>
@@ -15,14 +15,14 @@
    Note: we assume there can only be one device, with one SMBus interface.
 */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/stddef.h>
+#include <linaos/ioport.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
 
 /* SCH SMBus address offsets */
 #define SMBHSTCNT	(0 + sch_smba)

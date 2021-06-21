@@ -6,7 +6,7 @@
 // Copyright (c) 2010 by Mauro Carvalho Chehab
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* Mapping for the 28 key remote control as seen at
    http://www.sednacomputer.com/photo/cardbus-tv.jpg

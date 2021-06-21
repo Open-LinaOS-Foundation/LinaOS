@@ -7,7 +7,7 @@
  *   (c) 1999-2002 Matthew Dharm (mdharm-usb@one-eyed-alien.net)
  *
  * Initial work by:
- *   (c) 1999 Michael Gee (michael@linuxspecific.com)
+ *   (c) 1999 Michael Gee (michael@linaosspecific.com)
  *
  * This driver is based on the 'USB Mass Storage Class' document. This
  * describes in detail the protocol used to communicate with such
@@ -27,12 +27,12 @@
 #ifndef _USB_H_
 #define _USB_H_
 
-#include <linux/usb.h>
-#include <linux/usb_usual.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <linaos/usb.h>
+#include <linaos/usb_usual.h>
+#include <linaos/blkdev.h>
+#include <linaos/completion.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
 #include <scsi/scsi_host.h>
 
 struct us_data;

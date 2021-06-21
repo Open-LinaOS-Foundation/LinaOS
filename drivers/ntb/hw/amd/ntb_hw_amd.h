@@ -40,7 +40,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * AMD PCIe NTB Linux driver
+ * AMD PCIe NTB LinaOS driver
  *
  * Contact Information:
  * Xiangliang Yu <Xiangliang.Yu@amd.com>
@@ -49,8 +49,8 @@
 #ifndef NTB_HW_AMD_H
 #define NTB_HW_AMD_H
 
-#include <linux/ntb.h>
-#include <linux/pci.h>
+#include <linaos/ntb.h>
+#include <linaos/pci.h>
 
 #define AMD_LINK_HB_TIMEOUT	msecs_to_jiffies(1000)
 #define NTB_LNK_STA_SPEED_MASK	0x000F0000

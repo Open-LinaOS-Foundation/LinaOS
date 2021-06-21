@@ -2,20 +2,20 @@
 // Copyright (C) 2020 ROHM Semiconductors
 // ROHM BD9576MUF/BD9573MUF regulator driver
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/rohm-bd957x.h>
-#include <linux/mfd/rohm-generic.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/rohm-bd957x.h>
+#include <linaos/mfd/rohm-generic.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/slab.h>
 
 #define BD957X_VOUTS1_VOLT	3300000
 #define BD957X_VOUTS4_BASE_VOLT	1030000

@@ -380,7 +380,7 @@ config MACH_DECSTATION
 	select MIPS_L1_CACHE_SHIFT_4
 	help
 	  This enables support for DEC's MIPS based workstations.  For details
-	  see the Linux/MIPS FAQ on <http://www.linux-mips.org/> and the
+	  see the LinaOS/MIPS FAQ on <http://www.linaos-mips.org/> and the
 	  DECstation porting pages on <http://decstation.unix-ag.org/>.
 
 	  If you have one of the following DECstation Models you definitely
@@ -704,7 +704,7 @@ config SGI_IP22
 	select MIPS_L1_CACHE_SHIFT_7
 	help
 	  This are the SGI Indy, Challenge S and Indigo2, as well as certain
-	  OEM variants like the Tandem CMN B006S. To compile a Linux kernel
+	  OEM variants like the Tandem CMN B006S. To compile a LinaOS kernel
 	  that runs on these, say Y here.
 
 config SGI_IP27
@@ -734,7 +734,7 @@ config SGI_IP27
 	select NUMA
 	help
 	  This are the SGI Origin 200, Origin 2000 and Onyx 2 Graphics
-	  workstations.  To compile a Linux kernel that runs on these, say Y
+	  workstations.  To compile a LinaOS kernel that runs on these, say Y
 	  here.
 
 config SGI_IP28
@@ -768,7 +768,7 @@ config SGI_IP28
 	select WAR_R10000_LLSC
 	select MIPS_L1_CACHE_SHIFT_7
 	help
-	  This is the SGI Indigo2 with R10000 processor.  To compile a Linux
+	  This is the SGI Indigo2 with R10000 processor.  To compile a LinaOS
 	  kernel that runs on these, say Y here.
 
 config SGI_IP30
@@ -798,7 +798,7 @@ config SGI_IP30
 	select ARC_MEMORY
 	help
 	  These are the SGI Octane and Octane2 graphics workstations.  To
-	  compile a Linux kernel that runs on these, say Y here.
+	  compile a LinaOS kernel that runs on these, say Y here.
 
 config SGI_IP32
 	bool "SGI IP32 (O2)"
@@ -1262,7 +1262,7 @@ choice
 	help
 	  Some MIPS machines can be configured for either little or big endian
 	  byte order. These modes require different kernels and a different
-	  Linux distribution.  In general there is one preferred byteorder for a
+	  LinaOS distribution.  In general there is one preferred byteorder for a
 	  particular system but some systems are just as commonly used in the
 	  one or the other endianness.
 
@@ -1670,7 +1670,7 @@ config CPU_R3000
 	select CPU_SUPPORTS_32BIT_KERNEL
 	select CPU_SUPPORTS_HIGHMEM
 	help
-	  Please make sure to pick the right CPU type. Linux/MIPS is not
+	  Please make sure to pick the right CPU type. LinaOS/MIPS is not
 	  designed to be generic, i.e. Kernels compiled for R3000 CPUs will
 	  *not* work on R4000 machines and vice versa.  However, since most
 	  of the supported machines have an R4000 (or similar) CPU, R4x00
@@ -2243,7 +2243,7 @@ config PAGE_SIZE_4KB
 	bool "4kB"
 	depends on !CPU_LOONGSON2EF && !CPU_LOONGSON64
 	help
-	  This option select the standard 4kB Linux page size.  On some
+	  This option select the standard 4kB LinaOS page size.  On some
 	  R3000-family processors this is the only available page size.  Using
 	  4kB page size will minimize memory consumption and is therefore
 	  recommended for low memory systems.
@@ -2255,7 +2255,7 @@ config PAGE_SIZE_8KB
 	help
 	  Using 8kB page size will result in higher performance kernel at
 	  the price of higher memory consumption.  This option is available
-	  only on cnMIPS processors.  Note that you will need a suitable Linux
+	  only on cnMIPS processors.  Note that you will need a suitable LinaOS
 	  distribution to support this.
 
 config PAGE_SIZE_16KB
@@ -2265,7 +2265,7 @@ config PAGE_SIZE_16KB
 	  Using 16kB page size will result in higher performance kernel at
 	  the price of higher memory consumption.  This option is available on
 	  all non-R3000 family processors.  Note that you will need a suitable
-	  Linux distribution to support this.
+	  LinaOS distribution to support this.
 
 config PAGE_SIZE_32KB
 	bool "32kB"
@@ -2274,7 +2274,7 @@ config PAGE_SIZE_32KB
 	help
 	  Using 32kB page size will result in higher performance kernel at
 	  the price of higher memory consumption.  This option is available
-	  only on cnMIPS cores.  Note that you will need a suitable Linux
+	  only on cnMIPS cores.  Note that you will need a suitable LinaOS
 	  distribution to support this.
 
 config PAGE_SIZE_64KB
@@ -2340,7 +2340,7 @@ config SIBYTE_DMA_PAGEOPS
 	help
 	  Instead of using the CPU to zero and copy pages, use a Data Mover
 	  channel.  These DMA channels are otherwise unused by the standard
-	  SiByte Linux port.  Seems to give a small performance benefit.
+	  SiByte LinaOS port.  Seems to give a small performance benefit.
 
 config CPU_HAS_PREFETCH
 	bool
@@ -2464,12 +2464,12 @@ config MIPS_VPE_LOADER_MT
 	depends on MIPS_VPE_LOADER && !MIPS_CMP
 
 config MIPS_VPE_LOADER_TOM
-	bool "Load VPE program into memory hidden from linux"
+	bool "Load VPE program into memory hidden from linaos"
 	depends on MIPS_VPE_LOADER
 	default y
 	help
 	  The loader can use memory that is present but has been hidden from
-	  Linux using the kernel command line option "mem=xxMB". It's up to
+	  LinaOS using the kernel command line option "mem=xxMB". It's up to
 	  you to ensure the amount you put in the option and the space your
 	  program requires is less or equal to the amount physically present.
 
@@ -2558,7 +2558,7 @@ config CPU_HAS_SMARTMIPS
 	  SmartMIPS is a extension of the MIPS32 architecture aimed at
 	  increased security at both hardware and software level for
 	  smartcards.  Enabling this option will allow proper use of the
-	  SmartMIPS instructions by Linux applications.  However a kernel with
+	  SmartMIPS instructions by LinaOS applications.  However a kernel with
 	  this option will not work on a MIPS core without SmartMIPS core.  If
 	  you don't know you probably don't have SmartMIPS and should say N
 	  here.
@@ -3072,7 +3072,7 @@ config KEXEC
 	  kexec is a system call that implements the ability to shutdown your
 	  current kernel, and to start another kernel.  It is like a reboot
 	  but it is independent of the system firmware.   And like a reboot
-	  you can start any kernel with it, not just Linux.
+	  you can start any kernel with it, not just LinaOS.
 
 	  The name comes from the similarity to the exec system call.
 
@@ -3149,25 +3149,25 @@ choice
 		  Do not enable appended dtb support.
 
 	config MIPS_ELF_APPENDED_DTB
-		bool "vmlinux"
+		bool "vmlinaos"
 		help
 		  With this option, the boot code will look for a device tree binary
-		  DTB) included in the vmlinux ELF section .appended_dtb. By default
+		  DTB) included in the vmlinaos ELF section .appended_dtb. By default
 		  it is empty and the DTB can be appended using binutils command
 		  objcopy:
 
-		    objcopy --update-section .appended_dtb=<filename>.dtb vmlinux
+		    objcopy --update-section .appended_dtb=<filename>.dtb vmlinaos
 
 		  This is meant as a backward compatibility convenience for those
 		  systems with a bootloader that can't be upgraded to accommodate
 		  the documented boot protocol using a device tree.
 
 	config MIPS_RAW_APPENDED_DTB
-		bool "vmlinux.bin or vmlinuz.bin"
+		bool "vmlinaos.bin or vmlinuz.bin"
 		help
 		  With this option, the boot code will look for a device tree binary
-		  DTB) appended to raw vmlinux.bin or vmlinuz.bin.
-		  (e.g. cat vmlinux.bin <filename>.dtb > vmlinux_w_dtb).
+		  DTB) appended to raw vmlinaos.bin or vmlinuz.bin.
+		  (e.g. cat vmlinaos.bin <filename>.dtb > vmlinaos_w_dtb).
 
 		  This is meant as a backward compatibility convenience for those
 		  systems with a bootloader that can't be upgraded to accommodate
@@ -3176,7 +3176,7 @@ choice
 		  Beware that there is very little in terms of protection against
 		  this option being confused by leftover garbage in memory that might
 		  look like a DTB header after a reboot if no actual DTB is appended
-		  to vmlinux.bin.  Do not leave this option active in a production kernel
+		  to vmlinaos.bin.  Do not leave this option active in a production kernel
 		  if you don't intend to always append a DTB.
 endchoice
 
@@ -3251,8 +3251,8 @@ config TC
 	  <ftp://ftp.hp.com/pub/alphaserver/archive/triadd/>
 	  and:
 	  <http://www.computer-refuge.org/classiccmp/ftp.digital.com/pub/DEC/TriAdd/>
-	  Linux driver support status is documented at:
-	  <http://www.linux-mips.org/wiki/DECstation>
+	  LinaOS driver support status is documented at:
+	  <http://www.linaos-mips.org/wiki/DECstation>
 
 config MMU
 	bool
@@ -3307,7 +3307,7 @@ config MIPS32_O32
 	select SYSVIPC_COMPAT if SYSVIPC
 	help
 	  Select this option if you want to run o32 binaries.  These are pure
-	  32-bit binaries as used by the 32-bit Linux/MIPS port.  Most of
+	  32-bit binaries as used by the 32-bit LinaOS/MIPS port.  Most of
 	  existing binaries are in this format.
 
 	  If unsure, say Y.

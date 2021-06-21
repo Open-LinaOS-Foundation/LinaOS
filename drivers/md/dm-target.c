@@ -6,10 +6,10 @@
 
 #include "dm-core.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/bio.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/bio.h>
 
 #define DM_MSG_PREFIX "target"
 

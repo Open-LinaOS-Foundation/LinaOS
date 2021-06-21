@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/i2c.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 #include "tuner-i2c.h"

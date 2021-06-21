@@ -7,85 +7,85 @@
 #include "common.h"
 #include "../util/env.h"
 #include "../util/debug.h"
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 
 const char *const arc_triplets[] = {
-	"arc-linux-",
-	"arc-snps-linux-uclibc-",
-	"arc-snps-linux-gnu-",
+	"arc-linaos-",
+	"arc-snps-linaos-uclibc-",
+	"arc-snps-linaos-gnu-",
 	NULL
 };
 
 const char *const arm_triplets[] = {
 	"arm-eabi-",
-	"arm-linux-androideabi-",
-	"arm-unknown-linux-",
-	"arm-unknown-linux-gnu-",
-	"arm-unknown-linux-gnueabi-",
-	"arm-linux-gnu-",
-	"arm-linux-gnueabihf-",
+	"arm-linaos-androideabi-",
+	"arm-unknown-linaos-",
+	"arm-unknown-linaos-gnu-",
+	"arm-unknown-linaos-gnueabi-",
+	"arm-linaos-gnu-",
+	"arm-linaos-gnueabihf-",
 	"arm-none-eabi-",
 	NULL
 };
 
 const char *const arm64_triplets[] = {
-	"aarch64-linux-android-",
-	"aarch64-linux-gnu-",
+	"aarch64-linaos-android-",
+	"aarch64-linaos-gnu-",
 	NULL
 };
 
 const char *const powerpc_triplets[] = {
-	"powerpc-unknown-linux-gnu-",
-	"powerpc-linux-gnu-",
-	"powerpc64-unknown-linux-gnu-",
-	"powerpc64-linux-gnu-",
-	"powerpc64le-linux-gnu-",
+	"powerpc-unknown-linaos-gnu-",
+	"powerpc-linaos-gnu-",
+	"powerpc64-unknown-linaos-gnu-",
+	"powerpc64-linaos-gnu-",
+	"powerpc64le-linaos-gnu-",
 	NULL
 };
 
 const char *const s390_triplets[] = {
-	"s390-ibm-linux-",
-	"s390x-linux-gnu-",
+	"s390-ibm-linaos-",
+	"s390x-linaos-gnu-",
 	NULL
 };
 
 const char *const sh_triplets[] = {
-	"sh-unknown-linux-gnu-",
-	"sh64-unknown-linux-gnu-",
-	"sh-linux-gnu-",
-	"sh64-linux-gnu-",
+	"sh-unknown-linaos-gnu-",
+	"sh64-unknown-linaos-gnu-",
+	"sh-linaos-gnu-",
+	"sh64-linaos-gnu-",
 	NULL
 };
 
 const char *const sparc_triplets[] = {
-	"sparc-unknown-linux-gnu-",
-	"sparc64-unknown-linux-gnu-",
-	"sparc64-linux-gnu-",
+	"sparc-unknown-linaos-gnu-",
+	"sparc64-unknown-linaos-gnu-",
+	"sparc64-linaos-gnu-",
 	NULL
 };
 
 const char *const x86_triplets[] = {
-	"x86_64-pc-linux-gnu-",
-	"x86_64-unknown-linux-gnu-",
-	"i686-pc-linux-gnu-",
-	"i586-pc-linux-gnu-",
-	"i486-pc-linux-gnu-",
-	"i386-pc-linux-gnu-",
-	"i686-linux-android-",
-	"i686-android-linux-",
-	"x86_64-linux-gnu-",
-	"i586-linux-gnu-",
+	"x86_64-pc-linaos-gnu-",
+	"x86_64-unknown-linaos-gnu-",
+	"i686-pc-linaos-gnu-",
+	"i586-pc-linaos-gnu-",
+	"i486-pc-linaos-gnu-",
+	"i386-pc-linaos-gnu-",
+	"i686-linaos-android-",
+	"i686-android-linaos-",
+	"x86_64-linaos-gnu-",
+	"i586-linaos-gnu-",
 	NULL
 };
 
 const char *const mips_triplets[] = {
-	"mips-unknown-linux-gnu-",
-	"mipsel-linux-android-",
-	"mips-linux-gnu-",
-	"mips64-linux-gnu-",
-	"mips64el-linux-gnuabi64-",
-	"mips64-linux-gnuabi64-",
-	"mipsel-linux-gnu-",
+	"mips-unknown-linaos-gnu-",
+	"mipsel-linaos-android-",
+	"mips-linaos-gnu-",
+	"mips64-linaos-gnu-",
+	"mips64el-linaos-gnuabi64-",
+	"mips64-linaos-gnuabi64-",
+	"mipsel-linaos-gnu-",
 	NULL
 };
 

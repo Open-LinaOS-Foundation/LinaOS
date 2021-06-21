@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/acorn/scsi/msgqueue.h
+ *  linaos/drivers/acorn/scsi/msgqueue.h
  *
  *  Copyright (C) 1997 Russell King
  *

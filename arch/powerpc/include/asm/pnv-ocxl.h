@@ -3,8 +3,8 @@
 #ifndef _ASM_PNV_OCXL_H
 #define _ASM_PNV_OCXL_H
 
-#include <linux/bitfield.h>
-#include <linux/pci.h>
+#include <linaos/bitfield.h>
+#include <linaos/pci.h>
 
 #define PNV_OCXL_TL_MAX_TEMPLATE        63
 #define PNV_OCXL_TL_BITS_PER_RATE       4

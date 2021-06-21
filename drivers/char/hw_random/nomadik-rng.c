@@ -4,14 +4,14 @@
  *  Copyright 2009 Alessandro Rubini
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/amba/bus.h>
+#include <linaos/hw_random.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
 
 static struct clk *rng_clk;
 

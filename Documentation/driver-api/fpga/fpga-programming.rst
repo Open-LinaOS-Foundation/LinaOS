@@ -31,8 +31,8 @@ driver so it knows which manager to use.  The region also either has a list of
 bridges to control during programming or it has a pointer to a function that
 will generate that list.  Here's some sample code of what to do next::
 
-	#include <linux/fpga/fpga-mgr.h>
-	#include <linux/fpga/fpga-region.h>
+	#include <linaos/fpga/fpga-mgr.h>
+	#include <linaos/fpga/fpga-region.h>
 
 	struct fpga_image_info *info;
 	int ret;
@@ -94,10 +94,10 @@ API for programming an FPGA
 
 FPGA Manager flags
 
-.. kernel-doc:: include/linux/fpga/fpga-mgr.h
+.. kernel-doc:: include/linaos/fpga/fpga-mgr.h
    :doc: FPGA Manager flags
 
-.. kernel-doc:: include/linux/fpga/fpga-mgr.h
+.. kernel-doc:: include/linaos/fpga/fpga-mgr.h
    :functions: fpga_image_info
 
 .. kernel-doc:: drivers/fpga/fpga-mgr.c

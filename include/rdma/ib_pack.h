@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2004 Topspin Corporation.  All rights reserved.
  */
@@ -7,7 +7,7 @@
 #define IB_PACK_H
 
 #include <rdma/ib_verbs.h>
-#include <uapi/linux/if_ether.h>
+#include <uapi/linaos/if_ether.h>
 
 enum {
 	IB_LRH_BYTES		= 8,

@@ -20,16 +20,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 #include <media/media-devnode.h>
 #include <media/media-device.h>
@@ -290,13 +290,13 @@ void media_devnode_unregister(struct media_devnode *devnode)
 }
 
 /*
- *	Initialise media for linux
+ *	Initialise media for linaos
  */
 static int __init media_devnode_init(void)
 {
 	int ret;
 
-	pr_info("Linux media interface: v0.10\n");
+	pr_info("LinaOS media interface: v0.10\n");
 	ret = alloc_chrdev_region(&media_dev_t, 0, MEDIA_NUM_DEVICES,
 				  MEDIA_NAME);
 	if (ret < 0) {

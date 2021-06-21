@@ -6,7 +6,7 @@
 #ifndef __GEN2_ENGINE_CS_H__
 #define __GEN2_ENGINE_CS_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct i915_request;
 struct intel_engine_cs;

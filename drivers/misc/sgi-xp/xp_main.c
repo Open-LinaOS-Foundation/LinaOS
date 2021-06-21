@@ -15,8 +15,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
 #include "xp.h"
 
 /* define the XP debug device structures to be used with dev_dbg() et al */

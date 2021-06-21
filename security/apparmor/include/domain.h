@@ -8,8 +8,8 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/binfmts.h>
-#include <linux/types.h>
+#include <linaos/binfmts.h>
+#include <linaos/types.h>
 
 #include "label.h"
 
@@ -30,7 +30,7 @@ struct aa_domain {
 struct aa_label *x_table_lookup(struct aa_profile *profile, u32 xindex,
 				const char **name);
 
-int apparmor_bprm_creds_for_exec(struct linux_binprm *bprm);
+int apparmor_bprm_creds_for_exec(struct linaos_binprm *bprm);
 
 void aa_free_domain_entries(struct aa_domain *domain);
 int aa_change_hat(const char *hats[], int count, u64 token, int flags);

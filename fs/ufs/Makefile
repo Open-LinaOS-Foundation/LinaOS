@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the Linux ufs filesystem routines.
+# Makefile for the LinaOS ufs filesystem routines.
 #
 
 obj-$(CONFIG_UFS_FS) += ufs.o

@@ -11,19 +11,19 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel LinaOS Wireless <ilw@linaos.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 ******************************************************************************/
 
-#include <linux/hardirq.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
+#include <linaos/hardirq.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
 
 #include <net/lib80211.h>
-#include <linux/wireless.h>
+#include <linaos/wireless.h>
 
 #include "libipw.h"
 

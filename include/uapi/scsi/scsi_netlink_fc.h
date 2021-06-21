@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  *  FC Transport Netlink Interface
  *
@@ -7,7 +7,7 @@
 #ifndef SCSI_NETLINK_FC_H
 #define SCSI_NETLINK_FC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/scsi_netlink.h>
 
 /*

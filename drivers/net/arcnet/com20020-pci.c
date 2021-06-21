@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 PCI support
+ * LinaOS ARCnet driver - COM20020 PCI support
  * Contemporary Controls PCI20 and SOHARD SH-ARC PCI
  *
  * Written 1994-1999 by Avery Pennarun,
@@ -29,19 +29,19 @@
 
 #define pr_fmt(fmt) "arcnet:" KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/leds.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/list.h>
+#include <linaos/io.h>
+#include <linaos/leds.h>
 
 #include "arcdevice.h"
 #include "com20020.h"

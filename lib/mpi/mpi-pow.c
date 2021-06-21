@@ -13,8 +13,8 @@
  *	 however I decided to publish this code under the plain GPL.
  */
 
-#include <linux/sched.h>
-#include <linux/string.h>
+#include <linaos/sched.h>
+#include <linaos/string.h>
 #include "mpi-internal.h"
 #include "longlong.h"
 

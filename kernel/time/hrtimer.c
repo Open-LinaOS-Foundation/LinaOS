@@ -22,27 +22,27 @@
  *	et. al.
  */
 
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/hrtimer.h>
-#include <linux/notifier.h>
-#include <linux/syscalls.h>
-#include <linux/interrupt.h>
-#include <linux/tick.h>
-#include <linux/err.h>
-#include <linux/debugobjects.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/debug.h>
-#include <linux/timer.h>
-#include <linux/freezer.h>
-#include <linux/compat.h>
+#include <linaos/cpu.h>
+#include <linaos/export.h>
+#include <linaos/percpu.h>
+#include <linaos/hrtimer.h>
+#include <linaos/notifier.h>
+#include <linaos/syscalls.h>
+#include <linaos/interrupt.h>
+#include <linaos/tick.h>
+#include <linaos/err.h>
+#include <linaos/debugobjects.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/sysctl.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/deadline.h>
+#include <linaos/sched/nohz.h>
+#include <linaos/sched/debug.h>
+#include <linaos/timer.h>
+#include <linaos/freezer.h>
+#include <linaos/compat.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <trace/events/timer.h>
 

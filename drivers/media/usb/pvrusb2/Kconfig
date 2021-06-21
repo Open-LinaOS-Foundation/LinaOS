@@ -11,7 +11,7 @@ config VIDEO_PVRUSB2
 	select VIDEO_WM8775
 	select VIDEO_CS53L32A
 	help
-	  This is a video4linux driver for Conexant 23416 based
+	  This is a video4linaos driver for Conexant 23416 based
 	  usb2 personal video recorder devices.
 
 	  To compile this driver as a module, choose M here: the

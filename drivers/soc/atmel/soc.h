@@ -8,7 +8,7 @@
 #ifndef __AT91_SOC_H
 #define __AT91_SOC_H
 
-#include <linux/sys_soc.h>
+#include <linaos/sys_soc.h>
 
 struct at91_soc {
 	u32 cidr_match;

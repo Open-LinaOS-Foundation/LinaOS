@@ -46,7 +46,7 @@
  *
  */
 #include <asm/page.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 #include "mmu_rb.h"
 #include "user_exp_rcv.h"

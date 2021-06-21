@@ -2,13 +2,13 @@
 /*
  * Bit operations for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_BITOPS_H
 #define _ASM_BITOPS_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/byteorder.h>
 #include <asm/atomic.h>
 #include <asm/barrier.h>

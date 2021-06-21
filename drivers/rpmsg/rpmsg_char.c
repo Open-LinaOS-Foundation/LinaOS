@@ -9,18 +9,18 @@
  * Based on rpmsg performance statistics driver by Michal Simek, which in turn
  * was based on TI & Google OMX rpmsg driver.
  */
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/rpmsg.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/rpmsg.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/rpmsg.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/rpmsg.h>
 
 #include "rpmsg_internal.h"
 

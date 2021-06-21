@@ -13,18 +13,18 @@
 
 #define pr_fmt(fmt)	"kexec: " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/memblock.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/smp.h>
+#include <linaos/reboot.h>
+#include <linaos/kexec.h>
+#include <linaos/delay.h>
+#include <linaos/elf.h>
+#include <linaos/elfcore.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/memblock.h>
 
 #include <asm/processor.h>
 #include <asm/hardirq.h>
@@ -34,7 +34,7 @@
 #include <asm/e820/types.h>
 #include <asm/io_apic.h>
 #include <asm/hpet.h>
-#include <linux/kdebug.h>
+#include <linaos/kdebug.h>
 #include <asm/cpu.h>
 #include <asm/reboot.h>
 #include <asm/virtext.h>

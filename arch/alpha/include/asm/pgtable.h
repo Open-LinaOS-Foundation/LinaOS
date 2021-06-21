@@ -11,7 +11,7 @@
  * This hopefully works with any standard Alpha page-size, as defined
  * in <asm/page.h> (currently 8192).
  */
-#include <linux/mmzone.h>
+#include <linaos/mmzone.h>
 
 #include <asm/page.h>
 #include <asm/processor.h>	/* For TASK_SIZE */
@@ -78,7 +78,7 @@ struct vm_area_struct;
 /*
  * NOTE! The "accessed" bit isn't necessarily exact:  it can be kept exactly
  * by software (use the KRE/URE/KWE/UWE bits appropriately), but I'll fake it.
- * Under Linux/AXP, the "accessed" bit just means "read", and I'll just use
+ * Under LinaOS/AXP, the "accessed" bit just means "read", and I'll just use
  * the KRE/URE bits to watch for it. That way we don't need to overload the
  * KWE/UWE bits with both handling dirty and accessed.
  *

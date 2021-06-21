@@ -30,7 +30,7 @@
 #ifndef _INTEL_BIOS_H_
 #define _INTEL_BIOS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct intel_bios_encoder_data;

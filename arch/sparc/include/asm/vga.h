@@ -8,8 +8,8 @@
 #ifndef _LINUX_ASM_VGA_H_
 #define _LINUX_ASM_VGA_H_
 
-#include <linux/bug.h>
-#include <linux/string.h>
+#include <linaos/bug.h>
+#include <linaos/string.h>
 #include <asm/types.h>
 
 #define VT_BUF_HAVE_RW

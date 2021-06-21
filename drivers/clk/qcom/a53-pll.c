@@ -6,11 +6,11 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
+#include <linaos/clk-provider.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/module.h>
 
 #include "clk-pll.h"
 #include "clk-regmap.h"

@@ -7,15 +7,15 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/mtd.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 #include <asm/fsl_lbc.h>
 
 struct fsl_upm_nand {

@@ -6,10 +6,10 @@
  *  All rights reserved.
  */
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/cfi.h>
-#include <linux/time.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/cfi.h>
+#include <linaos/time.h>
 
 #include "cobalt-flash.h"
 

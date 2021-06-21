@@ -2,19 +2,19 @@
 // TI LM36274 LED chip family driver
 // Copyright (C) 2019 Texas Instruments Incorporated - https://www.ti.com/
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/leds.h>
-#include <linux/leds-ti-lmu-common.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/leds.h>
+#include <linaos/leds-ti-lmu-common.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
-#include <linux/mfd/ti-lmu.h>
-#include <linux/mfd/ti-lmu-register.h>
+#include <linaos/mfd/ti-lmu.h>
+#include <linaos/mfd/ti-lmu-register.h>
 
-#include <uapi/linux/uleds.h>
+#include <uapi/linaos/uleds.h>
 
 #define LM36274_MAX_STRINGS	4
 #define LM36274_BL_EN		BIT(4)

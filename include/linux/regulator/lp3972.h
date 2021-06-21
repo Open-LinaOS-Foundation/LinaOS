@@ -8,7 +8,7 @@
 #ifndef __LINUX_REGULATOR_LP3972_H
 #define __LINUX_REGULATOR_LP3972_H
 
-#include <linux/regulator/machine.h>
+#include <linaos/regulator/machine.h>
 
 #define LP3972_LDO1  0
 #define LP3972_LDO2  1

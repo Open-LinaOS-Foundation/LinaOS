@@ -8,8 +8,8 @@
  * XXX What about pad muxing?
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
 
 #include "prm.h"
 #include "common.h"

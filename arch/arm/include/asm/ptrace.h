@@ -10,7 +10,7 @@
 #include <uapi/asm/ptrace.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct pt_regs {
 	unsigned long uregs[18];
@@ -123,7 +123,7 @@ extern unsigned long profile_pc(struct pt_regs *regs);
 /*
  * kprobe-based event tracer support
  */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #define MAX_REG_OFFSET (offsetof(struct pt_regs, ARM_ORIG_r0))
 
 extern int regs_query_register_offset(const char *name);

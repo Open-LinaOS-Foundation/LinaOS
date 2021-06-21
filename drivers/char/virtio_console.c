@@ -4,27 +4,27 @@
  * Copyright (C) 2009, 2010, 2011 Red Hat, Inc.
  * Copyright (C) 2009, 2010, 2011 Amit Shah <amit.shah@redhat.com>
  */
-#include <linux/cdev.h>
-#include <linux/debugfs.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/fs.h>
-#include <linux/splice.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/virtio.h>
-#include <linux/virtio_console.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <linaos/cdev.h>
+#include <linaos/debugfs.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/freezer.h>
+#include <linaos/fs.h>
+#include <linaos/splice.h>
+#include <linaos/pagemap.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/poll.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_console.h>
+#include <linaos/wait.h>
+#include <linaos/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
 #include "../tty/hvc/hvc_console.h"
 
 #define is_rproc_enabled IS_ENABLED(CONFIG_REMOTEPROC)

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2019 Intel Corporation. All rights rsvd. */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/dmaengine.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <uapi/linux/idxd.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/dmaengine.h>
+#include <linaos/irq.h>
+#include <linaos/msi.h>
+#include <uapi/linaos/idxd.h>
 #include "../dmaengine.h"
 #include "idxd.h"
 #include "registers.h"

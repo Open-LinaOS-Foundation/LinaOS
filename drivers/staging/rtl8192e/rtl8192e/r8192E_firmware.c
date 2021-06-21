@@ -9,7 +9,7 @@
 #include "r8192E_hwimg.h"
 #include "r8192E_firmware.h"
 #include "r8192E_cmdpkt.h"
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 static bool _rtl92e_wait_for_fw(struct net_device *dev, u32 mask, u32 timeout)
 {

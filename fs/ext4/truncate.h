@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext4/truncate.h
+ * linaos/fs/ext4/truncate.h
  *
  * Common inline functions needed for truncate support
  */

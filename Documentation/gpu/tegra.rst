@@ -47,7 +47,7 @@ the subsystem specific bits are torn down and the clients destroyed in turn.
 Host1x Infrastructure Reference
 -------------------------------
 
-.. kernel-doc:: include/linux/host1x.h
+.. kernel-doc:: include/linaos/host1x.h
 
 .. kernel-doc:: drivers/gpu/host1x/bus.c
    :export:

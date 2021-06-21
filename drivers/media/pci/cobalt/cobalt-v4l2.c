@@ -8,11 +8,11 @@
  *  All rights reserved.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/math64.h>
-#include <linux/pci.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/math64.h>
+#include <linaos/pci.h>
+#include <linaos/v4l2-dv-timings.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-event.h>

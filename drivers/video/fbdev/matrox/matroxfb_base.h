@@ -26,22 +26,22 @@
 /* Guard accelerator accesses with spin_lock_irqsave... */
 #undef MATROXFB_USE_SPINLOCKS
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/selection.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/kd.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/console.h>
+#include <linaos/selection.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/timer.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/kd.h>
 
 #include <asm/io.h>
 #include <asm/unaligned.h>

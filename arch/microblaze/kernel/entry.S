@@ -15,8 +15,8 @@
  * Heavily modified by John Williams for Microblaze
  */
 
-#include <linux/sys.h>
-#include <linux/linkage.h>
+#include <linaos/sys.h>
+#include <linaos/linkage.h>
 
 #include <asm/entry.h>
 #include <asm/current.h>
@@ -28,7 +28,7 @@
 #include <asm/page.h>
 #include <asm/unistd.h>
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include <asm/signal.h>
 
 #undef DEBUG

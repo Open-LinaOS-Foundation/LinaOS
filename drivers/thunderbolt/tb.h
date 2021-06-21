@@ -9,10 +9,10 @@
 #ifndef TB_H_
 #define TB_H_
 
-#include <linux/nvmem-provider.h>
-#include <linux/pci.h>
-#include <linux/thunderbolt.h>
-#include <linux/uuid.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/pci.h>
+#include <linaos/thunderbolt.h>
+#include <linaos/uuid.h>
 
 #include "tb_regs.h"
 #include "ctl.h"

@@ -42,26 +42,26 @@ static const char version[] =
 			 )
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/workqueue.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/crc32.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/workqueue.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
 
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 #include <asm/io.h>
 

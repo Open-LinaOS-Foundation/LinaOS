@@ -25,21 +25,21 @@
  *
  */
 
-#include <linux/net.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/netfilter_decnet.h>
-#include <linux/spinlock.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
-#include <linux/jhash.h>
-#include <linux/atomic.h>
+#include <linaos/net.h>
+#include <linaos/module.h>
+#include <linaos/socket.h>
+#include <linaos/if_arp.h>
+#include <linaos/slab.h>
+#include <linaos/if_ether.h>
+#include <linaos/init.h>
+#include <linaos/proc_fs.h>
+#include <linaos/string.h>
+#include <linaos/netfilter_decnet.h>
+#include <linaos/spinlock.h>
+#include <linaos/seq_file.h>
+#include <linaos/rcupdate.h>
+#include <linaos/jhash.h>
+#include <linaos/atomic.h>
 #include <net/net_namespace.h>
 #include <net/neighbour.h>
 #include <net/dst.h>

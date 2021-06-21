@@ -7,13 +7,13 @@
 #ifndef BTRFS_DELAYED_INODE_H
 #define BTRFS_DELAYED_INODE_H
 
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <linaos/rbtree.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
 #include "ctree.h"
 
 /* types of the delayed item */

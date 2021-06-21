@@ -6,13 +6,13 @@
  * Copyright (C) 2012 Cavium, Inc.
  *
  * Copyright (C) 2009 Wind River Systems,
- *   written by Ralf Baechle <ralf@linux-mips.org>
+ *   written by Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/edac.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/edac.h>
 
 #include <asm/octeon/cvmx.h>
 
@@ -204,4 +204,4 @@ static struct platform_driver octeon_l2c_driver = {
 module_platform_driver(octeon_l2c_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Ralf Baechle <ralf@linux-mips.org>");
+MODULE_AUTHOR("Ralf Baechle <ralf@linaos-mips.org>");

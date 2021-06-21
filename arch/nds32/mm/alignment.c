@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
-#include <linux/sysctl.h>
+#include <linaos/proc_fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/sysctl.h>
 #include <asm/unaligned.h>
 
 #define DEBUG(enable, tagged, ...)				\

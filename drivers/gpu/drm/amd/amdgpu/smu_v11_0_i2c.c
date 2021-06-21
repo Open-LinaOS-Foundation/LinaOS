@@ -30,8 +30,8 @@
 #include <drm/drm_fixed.h>
 #include <drm/drm_drv.h>
 #include "amdgpu_amdkfd.h"
-#include <linux/i2c.h>
-#include <linux/pci.h>
+#include <linaos/i2c.h>
+#include <linaos/pci.h>
 
 /* error codes */
 #define I2C_OK                0

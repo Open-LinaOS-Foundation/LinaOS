@@ -9,9 +9,9 @@
  *	Shuo Liu <shuo.a.liu@intel.com>
  */
 
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 
 #include "acrn_drv.h"
 

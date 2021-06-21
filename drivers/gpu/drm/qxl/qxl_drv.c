@@ -1,4 +1,4 @@
-/* qxl_drv.c -- QXL driver -*- linux-c -*-
+/* qxl_drv.c -- QXL driver -*- linaos-c -*-
  *
  * Copyright 2011 Red Hat, Inc.
  * All Rights Reserved.
@@ -28,9 +28,9 @@
  */
 
 #include "qxl_drv.h"
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <drm/drm.h>
 #include <drm/drm_atomic_helper.h>

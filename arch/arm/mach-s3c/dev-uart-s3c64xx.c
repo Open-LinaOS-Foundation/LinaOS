@@ -3,15 +3,15 @@
 // Copyright 2008 Openmoko, Inc.
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armlinaos.simtec.co.uk/
 //
 // Base S3C64XX UART resource and device definitions
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/irq.h>

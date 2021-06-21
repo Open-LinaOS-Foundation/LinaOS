@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * include/linux/sizes.h
+ * include/linaos/sizes.h
  */
 #ifndef __LINUX_SIZES_H__
 #define __LINUX_SIZES_H__
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #define SZ_1				0x00000001
 #define SZ_2				0x00000002

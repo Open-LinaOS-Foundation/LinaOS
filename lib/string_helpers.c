@@ -5,18 +5,18 @@
  * Copyright 31 August 2008 James Bottomley
  * Copyright (C) 2013, Intel Corporation
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/limits.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/export.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/limits.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/string_helpers.h>
 
 /**
  * string_get_size - get the size in the specified units

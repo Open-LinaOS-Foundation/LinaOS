@@ -1,6 +1,6 @@
 What:		/sys/bus/iio/devices/iio:deviceX/buffer/length_align_bytes
 KernelVersion:	5.4
-Contact:	linux-iio@vger.kernel.org
+Contact:	linaos-iio@vger.kernel.org
 Description:
 		DMA buffers tend to have a alignment requirement for the
 		buffers. If this alignment requirement is not met samples might

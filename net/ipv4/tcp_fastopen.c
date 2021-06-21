@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/crypto.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/tcp.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
+#include <linaos/crypto.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/tcp.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rculist.h>
 #include <net/inetpeer.h>
 #include <net/tcp.h>
 

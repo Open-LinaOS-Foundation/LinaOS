@@ -63,35 +63,35 @@
 
 #define pr_fmt(fmt) "IPv4: " fmt
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/capability.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/stat.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/capability.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/stat.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/inet.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
+#include <linaos/inet.h>
+#include <linaos/igmp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
 #include <net/checksum.h>
 #include <net/ip.h>
 #include <net/protocol.h>
@@ -103,7 +103,7 @@
 #include <net/udp.h>
 #include <net/udplite.h>
 #include <net/ping.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
 #include <net/raw.h>
 #include <net/icmp.h>
@@ -113,7 +113,7 @@
 #include <net/net_namespace.h>
 #include <net/secure_seq.h>
 #ifdef CONFIG_IP_MROUTE
-#include <linux/mroute.h>
+#include <linaos/mroute.h>
 #endif
 #include <net/l3mdev.h>
 #include <net/compat.h>
@@ -1773,7 +1773,7 @@ static __net_init int ipv4_mib_init_net(struct net *net)
 		u64_stats_init(&af_inet_stats->syncp);
 	}
 
-	net->mib.net_statistics = alloc_percpu(struct linux_mib);
+	net->mib.net_statistics = alloc_percpu(struct linaos_mib);
 	if (!net->mib.net_statistics)
 		goto err_net_mib;
 	net->mib.udp_statistics = alloc_percpu(struct udp_mib);

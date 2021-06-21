@@ -39,7 +39,7 @@
 		- Adding/Editing Timeline Functions
 		- Adding/Editing Dev Timeline Source Functions
 		- Verifying your Custom Functions
-	- Testing on consumer linux Operating Systems
+	- Testing on consumer linaos Operating Systems
 		- Android
 
 ------------------------------------------------------------------
@@ -47,7 +47,7 @@
 ------------------------------------------------------------------
 
  This tool suite is designed to assist kernel and OS developers in optimizing
- their linux stack's suspend/resume & boot time. Using a kernel image built
+ their linaos stack's suspend/resume & boot time. Using a kernel image built
  with a few extra options enabled, the tools will execute a suspend or boot,
  and will capture dmesg and ftrace data. This data is transformed into a set of
  timelines and a callgraph to give a quick and detailed view of which devices
@@ -62,13 +62,13 @@
        - python
        - python-configparser (for python2 sleepgraph)
        - python-requests (for stresstester.py)
-       - linux-tools-common (for turbostat usage in sleepgraph)
+       - linaos-tools-common (for turbostat usage in sleepgraph)
 
        Ubuntu:
-          sudo apt-get install python python-configparser python-requests linux-tools-common
+          sudo apt-get install python python-configparser python-requests linaos-tools-common
 
        Fedora:
-          sudo dnf install python python-configparser python-requests linux-tools-common
+          sudo dnf install python python-configparser python-requests linaos-tools-common
 
     The tools can most easily be installed via git clone and make install
 

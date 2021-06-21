@@ -6,11 +6,11 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/component.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/component.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_print.h>

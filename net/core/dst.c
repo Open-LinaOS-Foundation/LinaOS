@@ -6,21 +6,21 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/workqueue.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <net/net_namespace.h>
-#include <linux/sched.h>
-#include <linux/prefetch.h>
+#include <linaos/sched.h>
+#include <linaos/prefetch.h>
 #include <net/lwtunnel.h>
 #include <net/xfrm.h>
 

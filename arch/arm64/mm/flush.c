@@ -6,9 +6,9 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
+#include <linaos/export.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cache.h>

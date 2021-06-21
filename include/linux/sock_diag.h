@@ -2,11 +2,11 @@
 #ifndef __SOCK_DIAG_H__
 #define __SOCK_DIAG_H__
 
-#include <linux/netlink.h>
-#include <linux/user_namespace.h>
+#include <linaos/netlink.h>
+#include <linaos/user_namespace.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
-#include <uapi/linux/sock_diag.h>
+#include <uapi/linaos/sock_diag.h>
 
 struct sk_buff;
 struct nlmsghdr;

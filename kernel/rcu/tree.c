@@ -6,9 +6,9 @@
  *
  * Authors: Dipankar Sarma <dipankar@in.ibm.com>
  *	    Manfred Spraul <manfred@colorfullife.com>
- *	    Paul E. McKenney <paulmck@linux.ibm.com>
+ *	    Paul E. McKenney <paulmck@linaos.ibm.com>
  *
- * Based on the original work by Paul McKenney <paulmck@linux.ibm.com>
+ * Based on the original work by Paul McKenney <paulmck@linaos.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
  *
  * For detailed explanation of Read-Copy Update mechanism see -
@@ -17,49 +17,49 @@
 
 #define pr_fmt(fmt) "rcu: " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/nmi.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/time.h>
-#include <linux/kernel_stat.h>
-#include <linux/wait.h>
-#include <linux/kthread.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/prefetch.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/trace_events.h>
-#include <linux/suspend.h>
-#include <linux/ftrace.h>
-#include <linux/tick.h>
-#include <linux/sysrq.h>
-#include <linux/kprobes.h>
-#include <linux/gfp.h>
-#include <linux/oom.h>
-#include <linux/smpboot.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/clock.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/kasan.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/rcupdate_wait.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/nmi.h>
+#include <linaos/atomic.h>
+#include <linaos/bitops.h>
+#include <linaos/export.h>
+#include <linaos/completion.h>
+#include <linaos/moduleparam.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/cpu.h>
+#include <linaos/mutex.h>
+#include <linaos/time.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/wait.h>
+#include <linaos/kthread.h>
+#include <uapi/linaos/sched/types.h>
+#include <linaos/prefetch.h>
+#include <linaos/delay.h>
+#include <linaos/random.h>
+#include <linaos/trace_events.h>
+#include <linaos/suspend.h>
+#include <linaos/ftrace.h>
+#include <linaos/tick.h>
+#include <linaos/sysrq.h>
+#include <linaos/kprobes.h>
+#include <linaos/gfp.h>
+#include <linaos/oom.h>
+#include <linaos/smpboot.h>
+#include <linaos/jiffies.h>
+#include <linaos/slab.h>
+#include <linaos/sched/isolation.h>
+#include <linaos/sched/clock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/kasan.h>
 #include "../time/tick-internal.h"
 
 #include "tree.h"
@@ -1097,7 +1097,7 @@ noinstr void rcu_nmi_enter(void)
  * idle mode, in other words, entering the mode in which read-side critical
  * sections can occur.  The caller must have disabled interrupts.
  *
- * Note that the Linux kernel is fully capable of entering an interrupt
+ * Note that the LinaOS kernel is fully capable of entering an interrupt
  * handler that it never exits, for example when doing upcalls to user mode!
  * This code assumes that the idle loop never does upcalls to user mode.
  * If your architecture's idle loop does do upcalls to user mode (or does

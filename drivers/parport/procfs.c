@@ -10,21 +10,21 @@
  * based on work by Grant Guenther <grant@torque.net>
  *              and Philip Blundell
  *
- * Cleaned up include files - Russell King <linux@arm.uk.linux.org>
+ * Cleaned up include files - Russell King <linaos@arm.uk.linaos.org>
  */
 
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/parport.h>
-#include <linux/ctype.h>
-#include <linux/sysctl.h>
-#include <linux/device.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/parport.h>
+#include <linaos/ctype.h>
+#include <linaos/sysctl.h>
+#include <linaos/device.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #if defined(CONFIG_SYSCTL) && defined(CONFIG_PROC_FS)
 

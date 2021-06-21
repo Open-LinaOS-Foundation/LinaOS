@@ -20,7 +20,7 @@ config VXFS_FS
 	  There is a userspace utility for HP-UX logical volumes which makes
 	  creating HP-UX logical volumes easy from HP-UX disk block device file
 	  or regular file with image of the disk. See:
-	         https://sourceforge.net/projects/linux-vxfs/
+	         https://sourceforge.net/projects/linaos-vxfs/
 
 	  To compile this as a module, choose M here: the module will be
 	  called freevxfs.  If unsure, say N.

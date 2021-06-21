@@ -14,7 +14,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -25,8 +25,8 @@
 
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 
 /* Initialize an SCTP inqueue.  */
 void sctp_inq_init(struct sctp_inq *queue)

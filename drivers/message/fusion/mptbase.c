@@ -1,12 +1,12 @@
 /*
- *  linux/drivers/message/fusion/mptbase.c
+ *  linaos/drivers/message/fusion/mptbase.c
  *      This is the Fusion MPT base driver which supports multiple
  *      (SCSI + LAN) specialized protocol drivers.
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinaOS@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -46,20 +46,20 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kdev_t.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/kthread.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kdev_t.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kthread.h>
 #include <scsi/scsi_host.h>
 
 #include "mptbase.h"
@@ -6647,7 +6647,7 @@ static int mpt_version_proc_show(struct seq_file *m, void *v)
 	int	 scsi, fc, sas, lan, ctl, targ, dmp;
 	char	*drvname;
 
-	seq_printf(m, "%s-%s\n", "mptlinux", MPT_LINUX_VERSION_COMMON);
+	seq_printf(m, "%s-%s\n", "mptlinaos", MPT_LINUX_VERSION_COMMON);
 	seq_printf(m, "  Fusion MPT base driver\n");
 
 	scsi = fc = sas = lan = ctl = targ = dmp = 0;

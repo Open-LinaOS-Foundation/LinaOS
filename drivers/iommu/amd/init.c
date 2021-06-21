@@ -8,19 +8,19 @@
 #define pr_fmt(fmt)     "AMD-Vi: " fmt
 #define dev_fmt(fmt)    pr_fmt(fmt)
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/list.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
-#include <linux/syscore_ops.h>
-#include <linux/interrupt.h>
-#include <linux/msi.h>
-#include <linux/irq.h>
-#include <linux/amd-iommu.h>
-#include <linux/export.h>
-#include <linux/kmemleak.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/pci.h>
+#include <linaos/acpi.h>
+#include <linaos/list.h>
+#include <linaos/bitmap.h>
+#include <linaos/slab.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/interrupt.h>
+#include <linaos/msi.h>
+#include <linaos/irq.h>
+#include <linaos/amd-iommu.h>
+#include <linaos/export.h>
+#include <linaos/kmemleak.h>
+#include <linaos/mem_encrypt.h>
 #include <asm/pci-direct.h>
 #include <asm/iommu.h>
 #include <asm/apic.h>
@@ -31,7 +31,7 @@
 #include <asm/irq_remapping.h>
 #include <asm/set_memory.h>
 
-#include <linux/crash_dump.h>
+#include <linaos/crash_dump.h>
 
 #include "amd_iommu.h"
 #include "../irq_remapping.h"

@@ -9,8 +9,8 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
 
 #include "hid-ids.h"
 

@@ -8,7 +8,7 @@
 #define __ARM64_KERNEL_IMAGE_H
 
 #ifndef LINKER_SCRIPT
-#error This file should only be included in vmlinux.lds.S
+#error This file should only be included in vmlinaos.lds.S
 #endif
 
 #include <asm/image.h>

@@ -11,23 +11,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/inet.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/in.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/string.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/inet.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
-#include <linux/uaccess.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
+#include <linaos/uaccess.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
 #include <net/lapb.h>
 
 /*

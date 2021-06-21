@@ -6,8 +6,8 @@
 #ifndef	_BRCM_HW_IDS_H_
 #define	_BRCM_HW_IDS_H_
 
-#include <linux/pci_ids.h>
-#include <linux/mmc/sdio_ids.h>
+#include <linaos/pci_ids.h>
+#include <linaos/mmc/sdio_ids.h>
 
 #define BRCM_USB_VENDOR_ID_BROADCOM	0x0a5c
 #define BRCM_USB_VENDOR_ID_LG		0x043e

@@ -3,7 +3,7 @@
 #define _ASM_X86_DELAY_H
 
 #include <asm-generic/delay.h>
-#include <linux/init.h>
+#include <linaos/init.h>
 
 void __init use_tsc_delay(void);
 void __init use_tpause_delay(void);

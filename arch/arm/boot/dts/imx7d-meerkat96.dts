@@ -65,28 +65,28 @@
 		led1 {
 			label = "green:user1";
 			gpios = <&gpio1 4 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led2 {
 			label = "green:user2";
 			gpios = <&gpio1 5 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led3 {
 			label = "green:user3";
 			gpios = <&gpio1 6 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			default-state = "off";
 		};
 
 		led4 {
 			label = "green:user4";
 			gpios = <&gpio1 7 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 			default-state = "off";
 			panic-indicator;
 		};
@@ -94,14 +94,14 @@
 		led5 {
 			label = "yellow:wlan";
 			gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "phy0tx";
+			linaos,default-trigger = "phy0tx";
 			default-state = "off";
 		};
 
 		led6 {
 			label = "blue:bt";
 			gpios = <&gpio5 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "bluetooth-power";
+			linaos,default-trigger = "bluetooth-power";
 			default-state = "off";
 		};
 	};

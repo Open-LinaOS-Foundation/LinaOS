@@ -35,23 +35,23 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/kdev_t.h>
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
+#include <linaos/param.h>
+#include <linaos/time.h>
+#include <linaos/mm.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/in.h>
+#include <linaos/pagemap.h>
+#include <linaos/proc_fs.h>
+#include <linaos/kdev_t.h>
+#include <linaos/module.h>
+#include <linaos/utsname.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/msg_prot.h>
+#include <linaos/sunrpc/gss_api.h>
+#include <linaos/nfs.h>
+#include <linaos/nfs4.h>
+#include <linaos/nfs_fs.h>
 
 #include "nfs4_fs.h"
 #include "nfs4trace.h"
@@ -1404,7 +1404,7 @@ static void encode_share_access(struct xdr_stream *xdr, u32 share_access)
 
 	p = reserve_space(xdr, 8);
 	*p++ = cpu_to_be32(share_access);
-	*p = cpu_to_be32(0);		/* for linux, share_deny = 0 always */
+	*p = cpu_to_be32(0);		/* for linaos, share_deny = 0 always */
 }
 
 static inline void encode_openhdr(struct xdr_stream *xdr, const struct nfs_openargs *arg)
@@ -7553,7 +7553,7 @@ nfs4_stat_to_errno(int stat)
 	/* If we cannot translate the error, the recovery routines should
 	 * handle it.
 	 * Note: remaining NFSv4 error codes have values > 10000, so should
-	 * not conflict with native Linux error codes.
+	 * not conflict with native LinaOS error codes.
 	 */
 	return -stat;
 }

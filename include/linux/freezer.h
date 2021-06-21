@@ -4,10 +4,10 @@
 #ifndef FREEZER_H_INCLUDED
 #define FREEZER_H_INCLUDED
 
-#include <linux/debug_locks.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <linaos/debug_locks.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/atomic.h>
 
 #ifdef CONFIG_FREEZER
 extern atomic_t system_freezing_cnt;	/* nr of freezing conds in effect */
@@ -255,7 +255,7 @@ static inline int freezable_schedule_hrtimeout_range(ktime_t *expires,
 /*
  * Freezer-friendly wrappers around wait_event_interruptible(),
  * wait_event_killable() and wait_event_interruptible_timeout(), originally
- * defined in <linux/wait.h>
+ * defined in <linaos/wait.h>
  */
 
 /* DO NOT ADD ANY NEW CALLERS OF THIS FUNCTION */

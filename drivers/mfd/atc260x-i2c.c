@@ -6,11 +6,11 @@
  * Copyright (C) 2020 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/mfd/atc260x/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/mfd/atc260x/core.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
 
 static int atc260x_i2c_probe(struct i2c_client *client,
 			     const struct i2c_device_id *id)

@@ -30,11 +30,11 @@
  * entry sequences are also HyperSparc pipeline friendly ;-)
  */
 
-/* Software trap for Linux system calls. */
+/* Software trap for LinaOS system calls. */
 #define LINUX_SYSCALL_TRAP \
         sethi %hi(sys_call_table), %l7; \
         or %l7, %lo(sys_call_table), %l7; \
-        b linux_sparc_syscall; \
+        b linaos_sparc_syscall; \
         rd %psr, %l0;
 
 #define BREAKPOINT_TRAP \

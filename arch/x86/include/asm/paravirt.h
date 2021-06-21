@@ -12,10 +12,10 @@
 #include <asm/paravirt_types.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/bug.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
-#include <linux/static_call_types.h>
+#include <linaos/bug.h>
+#include <linaos/types.h>
+#include <linaos/cpumask.h>
+#include <linaos/static_call_types.h>
 #include <asm/frame.h>
 
 u64 dummy_steal_clock(int cpu);

@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/oid_registry.h>
+#include <linaos/oid_registry.h>
 #include <crypto/pkcs7.h>
 #include "x509_parser.h"
 

@@ -3,20 +3,20 @@
  * Copyright IBM Corp. 2012
  *
  * Author(s):
- *   Jan Glauber <jang@linux.vnet.ibm.com>
+ *   Jan Glauber <jang@linaos.vnet.ibm.com>
  */
 
 #define KMSG_COMPONENT "zpci"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/uaccess.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/miscdevice.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
+#include <linaos/uaccess.h>
 #include <asm/pci_debug.h>
 #include <asm/pci_clp.h>
 #include <asm/clp.h>

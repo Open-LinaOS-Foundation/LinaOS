@@ -7,10 +7,10 @@
  * This code generates raw asm output which is post-processed to extract
  * and format the required data.
  */
-#include <linux/compiler.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
+#include <linaos/compiler.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
 #include <asm/cacheflush.h>
 #include <asm/kexec-internal.h>
 #include <asm/glue-df.h>
@@ -23,8 +23,8 @@
 #include <asm/suspend.h>
 #include <asm/vdso_datapage.h>
 #include <asm/hardware/cache-l2x0.h>
-#include <linux/kbuild.h>
-#include <linux/arm-smccc.h>
+#include <linaos/kbuild.h>
+#include <linaos/arm-smccc.h>
 #include "signal.h"
 
 /*

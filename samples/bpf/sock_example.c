@@ -17,14 +17,14 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <assert.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <string.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <linaos/if_ether.h>
+#include <linaos/ip.h>
 #include <stddef.h>
 #include <bpf/bpf.h>
 #include "bpf_insn.h"

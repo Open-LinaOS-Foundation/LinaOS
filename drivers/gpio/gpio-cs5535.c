@@ -5,13 +5,13 @@
  * Copyright (C) 2007-2009  Andres Salomon <dilinger@collabora.co.uk>
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/cs5535.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/cs5535.h>
 #include <asm/msr.h>
 
 #define DRV_NAME "cs5535-gpio"
@@ -54,7 +54,7 @@ static struct cs5535_gpio_chip {
 /*
  * The CS5535/CS5536 GPIOs support a number of extra features not defined
  * by the gpio_chip API, so these are exported.  For a full list of the
- * registers, see include/linux/cs5535.h.
+ * registers, see include/linaos/cs5535.h.
  */
 
 static void errata_outl(struct cs5535_gpio_chip *chip, u32 val,

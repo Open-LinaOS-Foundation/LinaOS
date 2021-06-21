@@ -11,12 +11,12 @@
 #ifndef _MEDIA_ENTITY_H
 #define _MEDIA_ENTITY_H
 
-#include <linux/bitmap.h>
-#include <linux/bug.h>
-#include <linux/fwnode.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/media.h>
+#include <linaos/bitmap.h>
+#include <linaos/bug.h>
+#include <linaos/fwnode.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/media.h>
 
 /* Enums used internally at the media controller to represent graphs */
 
@@ -183,7 +183,7 @@ enum media_pad_signal_type {
  * @index:	Pad index in the entity pads array, numbered from 0 to n
  * @sig_type:	Type of the signal inside a media pad
  * @flags:	Pad flags, as defined in
- *		:ref:`include/uapi/linux/media.h <media_header>`
+ *		:ref:`include/uapi/linaos/media.h <media_header>`
  *		(seek for ``MEDIA_PAD_FL_*``)
  */
 struct media_pad {
@@ -254,10 +254,10 @@ enum media_entity_type {
  * @name:	Entity name.
  * @obj_type:	Type of the object that implements the media_entity.
  * @function:	Entity main function, as defined in
- *		:ref:`include/uapi/linux/media.h <media_header>`
+ *		:ref:`include/uapi/linaos/media.h <media_header>`
  *		(seek for ``MEDIA_ENT_F_*``)
  * @flags:	Entity flags, as defined in
- *		:ref:`include/uapi/linux/media.h <media_header>`
+ *		:ref:`include/uapi/linaos/media.h <media_header>`
  *		(seek for ``MEDIA_ENT_FL_*``)
  * @num_pads:	Number of sink and source pads.
  * @num_links:	Total number of links, forward and back, enabled and disabled.
@@ -323,10 +323,10 @@ struct media_entity {
  * @graph_obj:		embedded graph object
  * @links:		List of links pointing to graph entities
  * @type:		Type of the interface as defined in
- *			:ref:`include/uapi/linux/media.h <media_header>`
+ *			:ref:`include/uapi/linaos/media.h <media_header>`
  *			(seek for ``MEDIA_INTF_T_*``)
  * @flags:		Interface flags as defined in
- *			:ref:`include/uapi/linux/media.h <media_header>`
+ *			:ref:`include/uapi/linaos/media.h <media_header>`
  *			(seek for ``MEDIA_INTF_FL_*``)
  *
  * .. note::
@@ -689,7 +689,7 @@ int media_get_pad_index(struct media_entity *entity, bool is_sink,
  * @sink:	pointer to &media_entity of the sink pad.
  * @sink_pad:	number of the sink pad in the pads array.
  * @flags:	Link flags, as defined in
- *		:ref:`include/uapi/linux/media.h <media_header>`
+ *		:ref:`include/uapi/linaos/media.h <media_header>`
  *		( seek for ``MEDIA_LNK_FL_*``)
  *
  * Valid values for flags:
@@ -726,7 +726,7 @@ __must_check int media_create_pad_link(struct media_entity *source,
  * @sink: pointer to &media_entity of the sink pad. If NULL, it will use
  *	all entities that matches the @sink_function.
  * @sink_pad: number of the sink pad in the pads array.
- * @flags: Link flags, as defined in include/uapi/linux/media.h.
+ * @flags: Link flags, as defined in include/uapi/linaos/media.h.
  * @allow_both_undefined: if %true, then both @source and @sink can be NULL.
  *	In such case, it will create a crossbar between all entities that
  *	matches @source_function to all entities that matches @sink_function.
@@ -863,7 +863,7 @@ struct media_pad *media_entity_remote_pad(const struct media_pad *pad);
  * @entity: The entity
  * @fwnode: Pointer to the fwnode_handle which should be used to find the pad
  * @direction_flags: Expected direction of the pad, as defined in
- *		     :ref:`include/uapi/linux/media.h <media_header>`
+ *		     :ref:`include/uapi/linaos/media.h <media_header>`
  *		     (seek for ``MEDIA_PAD_FL_*``)
  *
  * This function can be used to resolve the media pad number from
@@ -988,10 +988,10 @@ void __media_pipeline_stop(struct media_entity *entity);
  *
  * @mdev:	pointer to struct &media_device
  * @type:	type of the interface, as given by
- *		:ref:`include/uapi/linux/media.h <media_header>`
+ *		:ref:`include/uapi/linaos/media.h <media_header>`
  *		( seek for ``MEDIA_INTF_T_*``) macros.
  * @flags:	Interface flags, as defined in
- *		:ref:`include/uapi/linux/media.h <media_header>`
+ *		:ref:`include/uapi/linaos/media.h <media_header>`
  *		( seek for ``MEDIA_INTF_FL_*``)
  * @major:	Device node major number.
  * @minor:	Device node minor number.
@@ -1024,7 +1024,7 @@ struct media_link *
  * @entity:	pointer to %media_entity
  * @intf:	pointer to %media_interface
  * @flags:	Link flags, as defined in
- *		:ref:`include/uapi/linux/media.h <media_header>`
+ *		:ref:`include/uapi/linaos/media.h <media_header>`
  *		( seek for ``MEDIA_LNK_FL_*``)
  *
  *

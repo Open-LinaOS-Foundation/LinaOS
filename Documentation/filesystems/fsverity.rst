@@ -106,7 +106,7 @@ as follows:
 - ``version`` must be 1.
 - ``hash_algorithm`` must be the identifier for the hash algorithm to
   use for the Merkle tree, such as FS_VERITY_HASH_ALG_SHA256.  See
-  ``include/uapi/linux/fsverity.h`` for the list of possible values.
+  ``include/uapi/linaos/fsverity.h`` for the list of possible values.
 - ``block_size`` must be the Merkle tree block size.  Currently, this
   must be equal to the system page size, which is usually 4096 bytes.
   Other sizes may be supported in the future.  This value is not
@@ -221,7 +221,7 @@ FS_IOC_READ_VERITY_METADATA
 ---------------------------
 
 The FS_IOC_READ_VERITY_METADATA ioctl reads verity metadata from a
-verity file.  This ioctl is available since Linux v5.12.
+verity file.  This ioctl is available since LinaOS v5.12.
 
 This ioctl allows writing a server program that takes a verity file
 and serves it to a client program, such that the client can do its own
@@ -306,7 +306,7 @@ FS_IOC_ENABLE_VERITY instead, since parameters must be provided.
 statx
 -----
 
-Since Linux v5.5, the statx() system call sets STATX_ATTR_VERITY if
+Since LinaOS v5.5, the statx() system call sets STATX_ATTR_VERITY if
 the file has fs-verity enabled.  This can perform better than
 FS_IOC_GETFLAGS and FS_IOC_MEASURE_VERITY because it doesn't require
 opening the file, and opening verity files can be expensive.
@@ -466,7 +466,7 @@ fs-verity is currently supported by the ext4 and f2fs filesystems.
 The CONFIG_FS_VERITY kconfig option must be enabled to use fs-verity
 on either filesystem.
 
-``include/linux/fsverity.h`` declares the interface between the
+``include/linaos/fsverity.h`` declares the interface between the
 ``fs/verity/`` support layer and filesystems.  Briefly, filesystems
 must provide an ``fsverity_operations`` structure that provides
 methods to read and write the verity metadata to a filesystem-specific
@@ -478,7 +478,7 @@ pages have been read into the pagecache.  (See `Verifying data`_.)
 ext4
 ----
 
-ext4 supports fs-verity since Linux v5.4 and e2fsprogs v1.45.2.
+ext4 supports fs-verity since LinaOS v5.4 and e2fsprogs v1.45.2.
 
 To create verity files on an ext4 filesystem, the filesystem must have
 been formatted with ``-O verity`` or had ``tune2fs -O verity`` run on
@@ -514,7 +514,7 @@ also only supports extent-based files.
 f2fs
 ----
 
-f2fs supports fs-verity since Linux v5.4 and f2fs-tools v1.11.0.
+f2fs supports fs-verity since LinaOS v5.4 and f2fs-tools v1.11.0.
 
 To create verity files on an f2fs filesystem, the filesystem must have
 been formatted with ``-O verity``.
@@ -548,7 +548,7 @@ already verified).  Below, we describe how filesystems implement this.
 Pagecache
 ~~~~~~~~~
 
-For filesystems using Linux's pagecache, the ``->readpage()`` and
+For filesystems using LinaOS's pagecache, the ``->readpage()`` and
 ``->readpages()`` methods must be modified to verify pages before they
 are marked Uptodate.  Merely hooking ``->read_iter()`` would be
 insufficient, since ``->read_iter()`` is not used for memory maps.
@@ -562,7 +562,7 @@ Merkle tree pages via fsverity_operations::read_merkle_tree_page().
 
 fsverity_verify_page() returns false if verification failed; in this
 case, the filesystem must not set the page Uptodate.  Following this,
-as per the usual Linux pagecache behavior, attempts by userspace to
+as per the usual LinaOS pagecache behavior, attempts by userspace to
 read() from the part of the file containing the page will fail with
 EIO, and accesses to the page within a memory map will raise SIGBUS.
 
@@ -585,7 +585,7 @@ reading a previous data page.  However, random reads perform worse.
 Block device based filesystems
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Block device based filesystems (e.g. ext4 and f2fs) in Linux also use
+Block device based filesystems (e.g. ext4 and f2fs) in LinaOS also use
 the pagecache, so the above subsection applies too.  However, they
 also usually read many pages from a file at once, grouped into a
 structure called a "bio".  To make it easier for these types of
@@ -626,7 +626,7 @@ Userspace utility
 This document focuses on the kernel, but a userspace utility for
 fs-verity can be found at:
 
-	https://git.kernel.org/pub/scm/linux/kernel/git/ebiggers/fsverity-utils.git
+	https://git.kernel.org/pub/scm/linaos/kernel/git/ebiggers/fsverity-utils.git
 
 See the README.md file in the fsverity-utils source tree for details,
 including examples of setting up fs-verity protected files.
@@ -755,7 +755,7 @@ weren't already directly answered in other parts of this document.
 
 :Q: Why does the API use ioctls instead of setxattr() and getxattr()?
 :A: Abusing the xattr interface for basically arbitrary syscalls is
-    heavily frowned upon by most of the Linux filesystem developers.
+    heavily frowned upon by most of the LinaOS filesystem developers.
     An xattr should really just be an xattr on-disk, not an API to
     e.g. magically trigger construction of a Merkle tree.
 
@@ -767,7 +767,7 @@ weren't already directly answered in other parts of this document.
     verity metadata; one possibility is to store it past the end of
     the file and "hide" it from userspace by manipulating i_size.  The
     data verification functions provided by ``fs/verity/`` also assume
-    that the filesystem uses the Linux pagecache, but both local and
+    that the filesystem uses the LinaOS pagecache, but both local and
     remote filesystems normally do so.
 
 :Q: Why is anything filesystem-specific at all?  Shouldn't fs-verity

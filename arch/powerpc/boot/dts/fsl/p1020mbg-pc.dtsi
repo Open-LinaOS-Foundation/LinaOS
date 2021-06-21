@@ -48,9 +48,9 @@
 		};
 
 		partition@20000 {
-			/* 3.875 MB for Linux Kernel Image */
+			/* 3.875 MB for LinaOS Kernel Image */
 			reg = <0x00020000 0x003e0000>;
-			label = "NOR Linux Kernel Image";
+			label = "NOR LinaOS Kernel Image";
 		};
 
 		partition@400000 {

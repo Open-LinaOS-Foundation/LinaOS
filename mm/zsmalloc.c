@@ -30,33 +30,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/magic.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/magic.h>
+#include <linaos/bitops.h>
+#include <linaos/errno.h>
+#include <linaos/highmem.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/pgtable.h>
 #include <asm/tlbflush.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/vmalloc.h>
-#include <linux/preempt.h>
-#include <linux/spinlock.h>
-#include <linux/shrinker.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/zsmalloc.h>
-#include <linux/zpool.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/migrate.h>
-#include <linux/wait.h>
-#include <linux/pagemap.h>
-#include <linux/fs.h>
+#include <linaos/cpumask.h>
+#include <linaos/cpu.h>
+#include <linaos/vmalloc.h>
+#include <linaos/preempt.h>
+#include <linaos/spinlock.h>
+#include <linaos/shrinker.h>
+#include <linaos/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/zsmalloc.h>
+#include <linaos/zpool.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/migrate.h>
+#include <linaos/wait.h>
+#include <linaos/pagemap.h>
+#include <linaos/fs.h>
 
 #define ZSPAGE_MAGIC	0x58
 

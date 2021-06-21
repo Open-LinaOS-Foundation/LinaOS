@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /* Copyright (c) 2018 Mellanox Technologies */
 
 #ifndef __LIB_MLX5_EQ_H__
 #define __LIB_MLX5_EQ_H__
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/eq.h>
-#include <linux/mlx5/cq.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/eq.h>
+#include <linaos/mlx5/cq.h>
 
 #define MLX5_EQE_SIZE       (sizeof(struct mlx5_eqe))
 

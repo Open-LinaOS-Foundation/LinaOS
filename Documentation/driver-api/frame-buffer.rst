@@ -2,7 +2,7 @@ Frame Buffer Library
 ====================
 
 The frame buffer drivers depend heavily on four data structures. These
-structures are declared in include/linux/fb.h. They are fb_info,
+structures are declared in include/linaos/fb.h. They are fb_info,
 fb_var_screeninfo, fb_fix_screeninfo and fb_monospecs. The last
 three can be made available to and from userland.
 

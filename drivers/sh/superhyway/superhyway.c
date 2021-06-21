@@ -3,21 +3,21 @@
  *
  * SuperHyway Bus Driver
  *
- * Copyright (C) 2004, 2005  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2004, 2005  Paul Mundt <lethal@linaos-sh.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/superhyway.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/superhyway.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 
 static int superhyway_devices;
 

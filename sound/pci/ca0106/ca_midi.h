@@ -8,7 +8,7 @@
  *    See ca_midi.c
  */
 
-#include <linux/spinlock.h>
+#include <linaos/spinlock.h>
 #include <sound/rawmidi.h>
 #include <sound/mpu401.h>
 

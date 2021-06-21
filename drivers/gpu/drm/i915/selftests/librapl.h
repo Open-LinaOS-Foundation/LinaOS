@@ -6,7 +6,7 @@
 #ifndef SELFTEST_LIBRAPL_H
 #define SELFTEST_LIBRAPL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 u64 librapl_energy_uJ(void);
 

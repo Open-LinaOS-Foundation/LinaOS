@@ -8,12 +8,12 @@
  *  Copyright (C) 2008 Imre Kaloz <kaloz@openwrt.org>
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/platform_data/gpio-ath79.h>
-#include <linux/of_device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_data/gpio-ath79.h>
+#include <linaos/of_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/irq.h>
 
 #define AR71XX_GPIO_REG_OE		0x00
 #define AR71XX_GPIO_REG_IN		0x04

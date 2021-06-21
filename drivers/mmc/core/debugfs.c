@@ -4,17 +4,17 @@
  *
  * Copyright (C) 2008 Atmel Corporation
  */
-#include <linux/moduleparam.h>
-#include <linux/export.h>
-#include <linux/debugfs.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/fault-inject.h>
+#include <linaos/moduleparam.h>
+#include <linaos/export.h>
+#include <linaos/debugfs.h>
+#include <linaos/fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/fault-inject.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/host.h>
 
 #include "core.h"
 #include "card.h"

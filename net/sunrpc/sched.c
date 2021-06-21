@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/sched.c
+ * linaos/net/sunrpc/sched.c
  *
  * Scheduling for synchronous and asynchronous RPC requests.
  *
  * Copyright (C) 1996 Olaf Kirch, <okir@monad.swb.de>
  *
  * TCP NFS related read + write fixes
- * (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@linux.ie>
+ * (C) 1999 Dave Airlie, University of Limerick, Ireland <airlied@linaos.ie>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mempool.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/freezer.h>
-#include <linux/sched/mm.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/mempool.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/freezer.h>
+#include <linaos/sched/mm.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/metrics.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/metrics.h>
 
 #include "sunrpc.h"
 

@@ -6,18 +6,18 @@
  *  Copyright (c) 2014 Red Hat, Inc
  */
 
-#include <linux/kernel.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/rmi.h>
+#include <linaos/kernel.h>
+#include <linaos/hid.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/rmi.h>
 #include "hid-ids.h"
 
 #define RMI_MOUSE_REPORT_ID		0x01 /* Mouse emulation Report */

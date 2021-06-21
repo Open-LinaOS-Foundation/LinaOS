@@ -1,6 +1,6 @@
 .. _submitchecklist:
 
-Linux Kernel patch submission checklist
+LinaOS Kernel patch submission checklist
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Here are some basic things that developers should do if they want to see their
@@ -8,7 +8,7 @@ kernel patch submissions accepted more quickly.
 
 These are all above and beyond the documentation that is provided in
 :ref:`Documentation/process/submitting-patches.rst <submittingpatches>`
-and elsewhere regarding submitting Linux kernel patches.
+and elsewhere regarding submitting LinaOS kernel patches.
 
 
 1) If you use a facility then #include the file that defines/declares
@@ -87,7 +87,7 @@ and elsewhere regarding submitting Linux kernel patches.
 18) All new userspace interfaces are documented in ``Documentation/ABI/``.
     See ``Documentation/ABI/README`` for more information.
     Patches that change userspace interfaces should be CCed to
-    linux-api@vger.kernel.org.
+    linaos-api@vger.kernel.org.
 
 19) Has been checked with injection of at least slab and page-allocation
     failures.  See ``Documentation/fault-injection/``.

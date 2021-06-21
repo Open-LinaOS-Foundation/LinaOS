@@ -1,6 +1,6 @@
 What:		/sys/kernel/profiling
 Date:		September 2008
-Contact:	Dave Hansen <dave@linux.vnet.ibm.com>
+Contact:	Dave Hansen <dave@linaos.vnet.ibm.com>
 Description:
 		/sys/kernel/profiling is the runtime equivalent
 		of the boot-time profile= option.

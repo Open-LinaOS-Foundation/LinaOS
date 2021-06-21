@@ -3,14 +3,14 @@
  *  Copyright 2008 Michael Ellerman, IBM Corporation.
  */
 
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/cpuhotplug.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/kprobes.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <asm/tlbflush.h>
 #include <asm/page.h>

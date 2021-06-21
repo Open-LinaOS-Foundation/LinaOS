@@ -2,12 +2,12 @@
 /*
  *  init.c, Common initialization routines for NEC VR4100 series.
  *
- *  Copyright (C) 2003-2009  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2003-2009  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/string.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/irq.h>
+#include <linaos/string.h>
 
 #include <asm/bootinfo.h>
 #include <asm/time.h>

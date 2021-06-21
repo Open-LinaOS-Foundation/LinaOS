@@ -1,6 +1,6 @@
-#include <linux/ptrace.h>
-#include <linux/version.h>
-#include <uapi/linux/bpf.h>
+#include <linaos/ptrace.h>
+#include <linaos/version.h>
+#include <uapi/linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 struct {

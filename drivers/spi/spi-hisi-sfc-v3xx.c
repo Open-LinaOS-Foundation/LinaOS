@@ -5,17 +5,17 @@
 // Copyright (c) 2019 HiSilicon Technologies Co., Ltd.
 // Author: John Garry <john.garry@huawei.com>
 
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/dmi.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
+#include <linaos/bitops.h>
+#include <linaos/completion.h>
+#include <linaos/dmi.h>
+#include <linaos/interrupt.h>
+#include <linaos/iopoll.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi-mem.h>
 
 #define HISI_SFC_V3XX_VERSION (0x1f8)
 

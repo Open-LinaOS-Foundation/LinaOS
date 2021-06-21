@@ -19,7 +19,7 @@
  * Thus some part of the code might be dependent on PT3 specific config.
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "mxl301rf.h"
 
 struct mxl301rf_state {

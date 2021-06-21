@@ -4,8 +4,8 @@
  *
  * Copyright (C) IBM Corporation, 2012
  *
- * Authors: Robert Jennings <rcj@linux.vnet.ibm.com>
- *          Seth Jennings <sjenning@linux.vnet.ibm.com>
+ * Authors: Robert Jennings <rcj@linaos.vnet.ibm.com>
+ *          Seth Jennings <sjenning@linaos.vnet.ibm.com>
  */
 
 #include <asm/vio.h>
@@ -14,7 +14,7 @@
 #include "nx_csbcpb.h" /* struct nx_csbcpb */
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Robert Jennings <rcj@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Robert Jennings <rcj@linaos.vnet.ibm.com>");
 MODULE_DESCRIPTION("842 H/W Compression driver for IBM Power processors");
 MODULE_ALIAS_CRYPTO("842");
 MODULE_ALIAS_CRYPTO("842-nx");

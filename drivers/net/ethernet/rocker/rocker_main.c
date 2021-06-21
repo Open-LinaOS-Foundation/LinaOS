@@ -5,33 +5,33 @@
  * Copyright (c) 2014 Scott Feldman <sfeldma@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/sort.h>
-#include <linux/random.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/spinlock.h>
+#include <linaos/sort.h>
+#include <linaos/random.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/socket.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_bridge.h>
+#include <linaos/bitops.h>
+#include <linaos/ctype.h>
+#include <linaos/workqueue.h>
 #include <net/switchdev.h>
 #include <net/rtnetlink.h>
 #include <net/netevent.h>
 #include <net/arp.h>
 #include <net/fib_rules.h>
 #include <net/fib_notifier.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
 #include <generated/utsrelease.h>
 
 #include "rocker_hw.h"

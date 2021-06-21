@@ -1,13 +1,13 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# linux/arch/sh/boot/compressed/Makefile
+# linaos/arch/sh/boot/compressed/Makefile
 #
-# create a compressed vmlinux image from the original vmlinux
+# create a compressed vmlinaos image from the original vmlinaos
 #
 
-targets		:= vmlinux vmlinux.bin vmlinux.bin.gz \
-		   vmlinux.bin.bz2 vmlinux.bin.lzma \
-		   vmlinux.bin.xz vmlinux.bin.lzo \
+targets		:= vmlinaos vmlinaos.bin vmlinaos.bin.gz \
+		   vmlinaos.bin.bz2 vmlinaos.bin.lzma \
+		   vmlinaos.bin.xz vmlinaos.bin.lzo \
 		   head_32.o misc.o piggy.o
 
 OBJECTS = $(obj)/head_32.o $(obj)/misc.o $(obj)/cache.o
@@ -30,8 +30,8 @@ endif
 
 ccflags-remove-$(CONFIG_MCOUNT) += -pg
 
-LDFLAGS_vmlinux := --oformat $(ld-bfd) -Ttext $(IMAGE_OFFSET) -e startup \
-		   -T $(obj)/../../kernel/vmlinux.lds
+LDFLAGS_vmlinaos := --oformat $(ld-bfd) -Ttext $(IMAGE_OFFSET) -e startup \
+		   -T $(obj)/../../kernel/vmlinaos.lds
 
 #
 # Pull in the necessary libgcc bits from the in-kernel implementation.
@@ -47,28 +47,28 @@ KBUILD_CFLAGS += -I$(lib1funcs-dir) -DDISABLE_BRANCH_PROFILING
 $(addprefix $(obj)/,$(lib1funcs-y)): $(obj)/%: $(lib1funcs-dir)/% FORCE
 	$(call cmd,shipped)
 
-$(obj)/vmlinux: $(OBJECTS) $(obj)/piggy.o $(lib1funcs-obj) FORCE
+$(obj)/vmlinaos: $(OBJECTS) $(obj)/piggy.o $(lib1funcs-obj) FORCE
 	$(call if_changed,ld)
 
-$(obj)/vmlinux.bin: vmlinux FORCE
+$(obj)/vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-vmlinux.bin.all-y := $(obj)/vmlinux.bin
+vmlinaos.bin.all-y := $(obj)/vmlinaos.bin
 
-$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.gz: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,gzip)
-$(obj)/vmlinux.bin.bz2: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.bz2: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,bzip2)
-$(obj)/vmlinux.bin.lzma: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.lzma: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,lzma)
-$(obj)/vmlinux.bin.xz: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.xz: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,xzkern)
-$(obj)/vmlinux.bin.lzo: $(vmlinux.bin.all-y) FORCE
+$(obj)/vmlinaos.bin.lzo: $(vmlinaos.bin.all-y) FORCE
 	$(call if_changed,lzo)
 
 OBJCOPYFLAGS += -R .empty_zero_page
 
 LDFLAGS_piggy.o := -r --format binary --oformat $(ld-bfd) -T
 
-$(obj)/piggy.o: $(obj)/vmlinux.scr $(obj)/vmlinux.bin.$(suffix-y) FORCE
+$(obj)/piggy.o: $(obj)/vmlinaos.scr $(obj)/vmlinaos.bin.$(suffix-y) FORCE
 	$(call if_changed,ld)

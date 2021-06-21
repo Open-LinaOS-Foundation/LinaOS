@@ -6,11 +6,11 @@
 #ifndef _LINUX_IO_MAPPING_H
 #define _LINUX_IO_MAPPING_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/pgtable.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/bug.h>
+#include <linaos/io.h>
+#include <linaos/pgtable.h>
 #include <asm/page.h>
 
 /*
@@ -29,7 +29,7 @@ struct io_mapping {
 
 #ifdef CONFIG_HAVE_ATOMIC_IOMAP
 
-#include <linux/pfn.h>
+#include <linaos/pfn.h>
 #include <asm/iomap.h>
 /*
  * For small address space machines, mapping large objects
@@ -118,7 +118,7 @@ io_mapping_unmap(void __iomem *vaddr)
 
 #else  /* HAVE_ATOMIC_IOMAP */
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /* Create the io_mapping object*/
 static inline struct io_mapping *

@@ -15,25 +15,25 @@
 #define KMSG_COMPONENT "zram"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/bitops.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/device.h>
-#include <linux/genhd.h>
-#include <linux/highmem.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/string.h>
-#include <linux/vmalloc.h>
-#include <linux/err.h>
-#include <linux/idr.h>
-#include <linux/sysfs.h>
-#include <linux/debugfs.h>
-#include <linux/cpuhotplug.h>
-#include <linux/part_stat.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/bio.h>
+#include <linaos/bitops.h>
+#include <linaos/blkdev.h>
+#include <linaos/buffer_head.h>
+#include <linaos/device.h>
+#include <linaos/genhd.h>
+#include <linaos/highmem.h>
+#include <linaos/slab.h>
+#include <linaos/backing-dev.h>
+#include <linaos/string.h>
+#include <linaos/vmalloc.h>
+#include <linaos/err.h>
+#include <linaos/idr.h>
+#include <linaos/sysfs.h>
+#include <linaos/debugfs.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/part_stat.h>
 
 #include "zram_drv.h"
 

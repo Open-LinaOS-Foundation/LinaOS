@@ -11,7 +11,7 @@
 #ifndef __APPARMOR_H
 #define __APPARMOR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Class of mediation types in the AppArmor policy db

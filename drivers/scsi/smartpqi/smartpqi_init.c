@@ -9,17 +9,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/reboot.h>
-#include <linux/cciss_ioctl.h>
-#include <linux/blk-mq-pci.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched.h>
+#include <linaos/rtc.h>
+#include <linaos/bcd.h>
+#include <linaos/reboot.h>
+#include <linaos/cciss_ioctl.h>
+#include <linaos/blk-mq-pci.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
@@ -920,7 +920,7 @@ static int pqi_write_driver_version_to_host_wellness(
 	buffer->driver_version_tag[1] = 'V';
 	put_unaligned_le16(sizeof(buffer->driver_version),
 		&buffer->driver_version_length);
-	strncpy(buffer->driver_version, "Linux " DRIVER_VERSION,
+	strncpy(buffer->driver_version, "LinaOS " DRIVER_VERSION,
 		sizeof(buffer->driver_version) - 1);
 	buffer->driver_version[sizeof(buffer->driver_version) - 1] = '\0';
 	buffer->dont_write_tag[0] = 'D';

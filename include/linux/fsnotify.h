@@ -3,7 +3,7 @@
 #define _LINUX_FS_NOTIFY_H
 
 /*
- * include/linux/fsnotify.h - generic hooks for filesystem notification, to
+ * include/linaos/fsnotify.h - generic hooks for filesystem notification, to
  * reduce in-source duplication from both dnotify and inotify.
  *
  * We don't compile any of this away in some complicated menagerie of ifdefs.
@@ -12,10 +12,10 @@
  * (C) Copyright 2005 Robert Love
  */
 
-#include <linux/fsnotify_backend.h>
-#include <linux/audit.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
+#include <linaos/fsnotify_backend.h>
+#include <linaos/audit.h>
+#include <linaos/slab.h>
+#include <linaos/bug.h>
 
 /*
  * Notify this @dir inode about a change in a child directory entry.

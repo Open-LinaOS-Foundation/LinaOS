@@ -52,7 +52,7 @@
 		sw4 {
 			label = "USER_PB1";
 			gpios = <&pioA PIN_PD0 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_PROG1>;
+			linaos,code = <KEY_PROG1>;
 			wakeup-source;
 		};
 	};
@@ -76,7 +76,7 @@
 		blue {
 			label = "blue";
 			gpios = <&pioA PIN_PA31 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

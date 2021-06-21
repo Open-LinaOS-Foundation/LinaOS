@@ -6,9 +6,9 @@
  *  Chunfeng.Yun <chunfeng.yun@mediatek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 #include "xhci.h"
 #include "xhci-mtk.h"

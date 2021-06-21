@@ -33,7 +33,7 @@ or by the newly used code. Also it must be possible to find changes done by
 already installed livepatches.
 
 Each modified state is described by struct klp_state, see
-include/linux/livepatch.h.
+include/linaos/livepatch.h.
 
 Each livepatch defines an array of struct klp_states. They mention
 all states that the livepatch modifies.

@@ -9,9 +9,9 @@
  * Based on clock-sh4.c
  *  Copyright (C) 2005  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 #include <asm/processor.h>

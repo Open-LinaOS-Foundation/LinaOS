@@ -5,12 +5,12 @@
  * Copyright (c) 2008 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/pkt_sched.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/pkt_sched.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

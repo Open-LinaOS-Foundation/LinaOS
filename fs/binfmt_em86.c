@@ -1,29 +1,29 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/binfmt_em86.c
+ *  linaos/fs/binfmt_em86.c
  *
- *  Based on linux/fs/binfmt_script.c
+ *  Based on linaos/fs/binfmt_script.c
  *  Copyright (C) 1996  Martin von Löwis
  *  original #!-checking implemented by tytso.
  *
  *  em86 changes Copyright (C) 1997  Jim Paradis
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/binfmts.h>
-#include <linux/elf.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/errno.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/stat.h>
+#include <linaos/binfmts.h>
+#include <linaos/elf.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/file.h>
+#include <linaos/errno.h>
 
 
 #define EM86_INTERP	"/usr/bin/em86"
 #define EM86_I_NAME	"em86"
 
-static int load_em86(struct linux_binprm *bprm)
+static int load_em86(struct linaos_binprm *bprm)
 {
 	const char *i_name, *i_arg;
 	char *interp;
@@ -31,7 +31,7 @@ static int load_em86(struct linux_binprm *bprm)
 	int retval;
 	struct elfhdr	elf_ex;
 
-	/* Make sure this is a Linux/Intel ELF executable... */
+	/* Make sure this is a LinaOS/Intel ELF executable... */
 	elf_ex = *((struct elfhdr *)bprm->buf);
 
 	if (memcmp(elf_ex.e_ident, ELFMAG, SELFMAG) != 0)
@@ -89,7 +89,7 @@ static int load_em86(struct linux_binprm *bprm)
 	return 0;
 }
 
-static struct linux_binfmt em86_format = {
+static struct linaos_binfmt em86_format = {
 	.module		= THIS_MODULE,
 	.load_binary	= load_em86,
 };

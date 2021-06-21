@@ -5,7 +5,7 @@ TOMOYO
 What is TOMOYO?
 ===============
 
-TOMOYO is a name-based MAC extension (LSM module) for the Linux kernel.
+TOMOYO is a name-based MAC extension (LSM module) for the LinaOS kernel.
 
 LiveCD-based tutorials are available at
 
@@ -34,15 +34,15 @@ https://osdn.jp/projects/tomoyo/docs/?category_id=532&language_id=1 .
 Below lists are chosen from three aspects.
 
 What is TOMOYO?
-  TOMOYO Linux Overview
+  TOMOYO LinaOS Overview
     https://osdn.jp/projects/tomoyo/docs/lca2009-takeda.pdf
-  TOMOYO Linux: pragmatic and manageable security for Linux
+  TOMOYO LinaOS: pragmatic and manageable security for LinaOS
     https://osdn.jp/projects/tomoyo/docs/freedomhectaipei-tomoyo.pdf
-  TOMOYO Linux: A Practical Method to Understand and Protect Your Own Linux Box
+  TOMOYO LinaOS: A Practical Method to Understand and Protect Your Own LinaOS Box
     https://osdn.jp/projects/tomoyo/docs/PacSec2007-en-no-demo.pdf
 
 What can TOMOYO do?
-  Deep inside TOMOYO Linux
+  Deep inside TOMOYO LinaOS
     https://osdn.jp/projects/tomoyo/docs/lca2009-kumaneko.pdf
   The role of "pathname based access control" in security.
     https://osdn.jp/projects/tomoyo/docs/lfj2008-bof.pdf
@@ -57,7 +57,7 @@ What is future plan?
 We believe that inode based security and name based security are complementary
 and both should be used together. But unfortunately, so far, we cannot enable
 multiple LSM modules at the same time. We feel sorry that you have to give up
-SELinux/SMACK/AppArmor etc. when you want to use TOMOYO.
+SELinaOS/SMACK/AppArmor etc. when you want to use TOMOYO.
 
 We hope that LSM becomes stackable in future. Meanwhile, you can use non-LSM
 version of TOMOYO, available at http://tomoyo.osdn.jp/1.8/ .

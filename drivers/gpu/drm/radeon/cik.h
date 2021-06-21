@@ -1,4 +1,4 @@
-/* cik.h -- Private header for radeon driver -*- linux-c -*-
+/* cik.h -- Private header for radeon driver -*- linaos-c -*-
  * Copyright 2012 Advanced Micro Devices, Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a

@@ -8,7 +8,7 @@
     Copyright (C) 2001-2002 Convergence Integrated Media GmbH
 	  Holger Waechtler <holger@convergence.de>
 
-    Copyright (C) 2004 Steven Toth <stoth@linuxtv.org>
+    Copyright (C) 2004 Steven Toth <stoth@linaostv.org>
 
 
 */
@@ -16,7 +16,7 @@
 #ifndef CX22702_H
 #define CX22702_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct cx22702_config {
 	/* the demodulator's i2c address */

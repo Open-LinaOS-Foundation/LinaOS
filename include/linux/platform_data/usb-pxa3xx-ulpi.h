@@ -9,7 +9,7 @@
 #ifndef __PXA310_U2D__
 #define __PXA310_U2D__
 
-#include <linux/usb/ulpi.h>
+#include <linaos/usb/ulpi.h>
 
 struct pxa3xx_u2d_platform_data {
 

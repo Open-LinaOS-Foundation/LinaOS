@@ -5,30 +5,30 @@
  * virtio-net server in host kernel.
  */
 
-#include <linux/compat.h>
-#include <linux/eventfd.h>
-#include <linux/vhost.h>
-#include <linux/virtio_net.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/signal.h>
-#include <linux/vmalloc.h>
+#include <linaos/compat.h>
+#include <linaos/eventfd.h>
+#include <linaos/vhost.h>
+#include <linaos/virtio_net.h>
+#include <linaos/miscdevice.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/mutex.h>
+#include <linaos/workqueue.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/sched/clock.h>
+#include <linaos/sched/signal.h>
+#include <linaos/vmalloc.h>
 
-#include <linux/net.h>
-#include <linux/if_packet.h>
-#include <linux/if_arp.h>
-#include <linux/if_tun.h>
-#include <linux/if_macvlan.h>
-#include <linux/if_tap.h>
-#include <linux/if_vlan.h>
-#include <linux/skb_array.h>
-#include <linux/skbuff.h>
+#include <linaos/net.h>
+#include <linaos/if_packet.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_tun.h>
+#include <linaos/if_macvlan.h>
+#include <linaos/if_tap.h>
+#include <linaos/if_vlan.h>
+#include <linaos/skb_array.h>
+#include <linaos/skbuff.h>
 
 #include <net/sock.h>
 #include <net/xdp.h>

@@ -22,8 +22,8 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/ssb/ssb.h>
+#include <linaos/init.h>
+#include <linaos/ssb/ssb.h>
 #include <asm/time.h>
 #include <bcm47xx.h>
 #include <bcm47xx_board.h>

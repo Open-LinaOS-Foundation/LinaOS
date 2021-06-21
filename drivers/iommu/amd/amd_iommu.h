@@ -7,7 +7,7 @@
 #ifndef AMD_IOMMU_H
 #define AMD_IOMMU_H
 
-#include <linux/iommu.h>
+#include <linaos/iommu.h>
 
 #include "amd_iommu_types.h"
 

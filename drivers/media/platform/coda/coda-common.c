@@ -7,26 +7,26 @@
  *    Xavier Duret
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gcd.h>
-#include <linux/genalloc.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/of.h>
-#include <linux/ratelimit.h>
-#include <linux/reset.h>
+#include <linaos/clk.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/gcd.h>
+#include <linaos/genalloc.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kfifo.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/of.h>
+#include <linaos/ratelimit.h>
+#include <linaos/reset.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

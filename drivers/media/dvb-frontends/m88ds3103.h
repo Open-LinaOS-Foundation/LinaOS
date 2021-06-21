@@ -8,7 +8,7 @@
 #ifndef M88DS3103_H
 #define M88DS3103_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 /*
  * I2C address

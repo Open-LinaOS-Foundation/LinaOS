@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- *  linux/include/linux/nfs_fs.h
+ *  linaos/include/linaos/nfs_fs.h
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -10,7 +10,7 @@
 #ifndef _UAPI_LINUX_NFS_FS_H
 #define _UAPI_LINUX_NFS_FS_H
 
-#include <linux/magic.h>
+#include <linaos/magic.h>
 
 /* Default timeout values */
 #define NFS_DEF_UDP_TIMEO	(11)

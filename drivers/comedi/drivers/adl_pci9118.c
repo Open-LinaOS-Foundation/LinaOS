@@ -73,11 +73,11 @@
  * manual attachment.
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 #include "../comedi_pci.h"
 

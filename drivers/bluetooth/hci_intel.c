@@ -6,18 +6,18 @@
  *  Copyright (C) 2015  Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/wait.h>
+#include <linaos/tty.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/acpi.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

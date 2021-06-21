@@ -9,9 +9,9 @@
  * Copyright (C) 2003-2005 Alan Stern
  */
 
-#include <linux/usb.h>
-#include <linux/timer.h>
-#include <linux/usb/ch9.h>
+#include <linaos/usb.h>
+#include <linaos/timer.h>
+#include <linaos/usb/ch9.h>
 
 #include "vudc.h"
 

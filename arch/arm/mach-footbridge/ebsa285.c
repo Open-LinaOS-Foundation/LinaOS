@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-footbridge/ebsa285.c
+ * linaos/arch/arm/mach-footbridge/ebsa285.c
  *
  * EBSA285 machine fixup
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/leds.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/leds.h>
 
 #include <asm/hardware/dec21285.h>
 #include <asm/mach-types.h>

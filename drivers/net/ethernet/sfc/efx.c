@@ -5,20 +5,20 @@
  * Copyright 2005-2013 Solarflare Communications Inc.
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/topology.h>
-#include <linux/gfp.h>
-#include <linux/aer.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/notifier.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/in.h>
+#include <linaos/ethtool.h>
+#include <linaos/topology.h>
+#include <linaos/gfp.h>
+#include <linaos/aer.h>
+#include <linaos/interrupt.h>
 #include "net_driver.h"
 #include <net/gre.h>
 #include <net/udp_tunnel.h>

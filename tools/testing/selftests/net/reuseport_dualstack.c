@@ -16,8 +16,8 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <error.h>
-#include <linux/in.h>
-#include <linux/unistd.h>
+#include <linaos/in.h>
+#include <linaos/unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

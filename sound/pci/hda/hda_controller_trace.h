@@ -6,7 +6,7 @@
 #if !defined(_TRACE_HDA_CONTROLLER_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HDA_CONTROLLER_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 struct azx;
 struct azx_dev;

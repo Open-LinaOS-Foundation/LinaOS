@@ -53,31 +53,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/in.h>
+#include <linaos/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/phy.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/ioport.h>
+#include <linaos/crc32.h>
+#include <linaos/random.h>
+#include <linaos/phy.h>
 
 #include "et131x.h"
 
@@ -3098,7 +3098,7 @@ static void et131x_error_timer_handler(struct timer_list *t)
 		if (!phydev->link) {
 			if (!et1310_in_phy_coma(adapter)) {
 				/* NOTE - This was originally a 'sync with
-				 *  interrupt'. How to do that under Linux?
+				 *  interrupt'. How to do that under LinaOS?
 				 */
 				et131x_enable_interrupts(adapter);
 				et1310_enable_phy_coma(adapter);

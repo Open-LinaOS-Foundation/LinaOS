@@ -9,12 +9,12 @@
  *  https://info.isl.ntt.co.jp/crypt/eng/camellia/specifications.html
  */
 
-#include <linux/crypto.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
+#include <linaos/crypto.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
 #include <asm/unaligned.h>
 
 static const u32 camellia_sp1110[256] = {

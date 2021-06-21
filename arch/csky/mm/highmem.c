@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/module.h>
-#include <linux/highmem.h>
-#include <linux/smp.h>
-#include <linux/memblock.h>
+#include <linaos/module.h>
+#include <linaos/highmem.h>
+#include <linaos/smp.h>
+#include <linaos/memblock.h>
 #include <asm/fixmap.h>
 #include <asm/tlbflush.h>
 #include <asm/cacheflush.h>

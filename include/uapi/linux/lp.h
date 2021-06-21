@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * usr/include/linux/lp.h c.1991-1992 James Wiegand
+ * usr/include/linaos/lp.h c.1991-1992 James Wiegand
  * many modifications copyright (C) 1992 Michael K. Johnson
  * Interrupt support added 1993 Nigel Gamble
  * Removed 8255 status defines from inside __KERNEL__ Marcelo Tosatti 
@@ -8,8 +8,8 @@
 #ifndef _UAPI_LINUX_LP_H
 #define _UAPI_LINUX_LP_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 /*
  * Per POSIX guidelines, this module reserves the LP and lp prefixes

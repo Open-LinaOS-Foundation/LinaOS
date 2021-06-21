@@ -8,10 +8,10 @@
 #include "dm-space-map-common.h"
 #include "dm-space-map-metadata.h"
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/device-mapper.h>
-#include <linux/kernel.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/device-mapper.h>
+#include <linaos/kernel.h>
 
 #define DM_MSG_PREFIX "space map metadata"
 

@@ -3,11 +3,11 @@
  * cb_das16_cs.c
  * Driver for Computer Boards PC-CARD DAS16/16.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000, 2001, 2002 David A. Schleef <ds@schleef.org>
  *
  * PCMCIA support code for this driver is adapted from the dummy_cs.c
- * driver of the Linux PCMCIA Card Services package.
+ * driver of the LinaOS PCMCIA Card Services package.
  *
  * The initial developer of the original code is David A. Hinds
  * <dahinds@users.sourceforge.net>.  Portions created by David A. Hinds
@@ -24,9 +24,9 @@
  * Status: experimental
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
 
 #include "../comedi_pcmcia.h"
 

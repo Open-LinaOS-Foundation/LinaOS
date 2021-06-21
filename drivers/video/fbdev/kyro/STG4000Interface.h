@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/kyro/STG4000Interface.h
+ *  linaos/drivers/video/kyro/STG4000Interface.h
  *
  *  Copyright (C) 2002 STMicroelectronics
  *
@@ -11,7 +11,7 @@
 #ifndef _STG4000INTERFACE_H
 #define _STG4000INTERFACE_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <video/kyro.h>
 
 /*

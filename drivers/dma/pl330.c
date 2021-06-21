@@ -7,25 +7,25 @@
  *	Jaswinder Singh <jassi.brar@samsung.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/amba/bus.h>
-#include <linux/scatterlist.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/bug.h>
-#include <linux/reset.h>
+#include <linaos/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/amba/bus.h>
+#include <linaos/scatterlist.h>
+#include <linaos/of.h>
+#include <linaos/of_dma.h>
+#include <linaos/err.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/bug.h>
+#include <linaos/reset.h>
 
 #include "dmaengine.h"
 #define PL330_MAX_CHAN		8

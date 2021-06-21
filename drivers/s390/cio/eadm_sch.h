@@ -2,10 +2,10 @@
 #ifndef EADM_SCH_H
 #define EADM_SCH_H
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/timer.h>
-#include <linux/list.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
 #include "orb.h"
 
 struct eadm_private {

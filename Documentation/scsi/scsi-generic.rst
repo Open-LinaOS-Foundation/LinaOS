@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =======================================
-Notes on Linux SCSI Generic (sg) driver
+Notes on LinaOS SCSI Generic (sg) driver
 =======================================
 
                                                         20020126
@@ -22,7 +22,7 @@ and examples.
 
 Major versions of the sg driver
 ===============================
-There are three major versions of sg found in the linux kernel (lk):
+There are three major versions of sg found in the linaos kernel (lk):
       - sg version 1 (original) from 1992 to early 1999 (lk 2.2.5) .
 	It is based in the sg_header interface structure.
       - sg version 2 from lk 2.2.6 in the 2.2 series. It is based on
@@ -33,7 +33,7 @@ There are three major versions of sg found in the linux kernel (lk):
 
 Sg driver documentation
 =======================
-The most recent documentation of the sg driver is kept at the Linux
+The most recent documentation of the sg driver is kept at the LinaOS
 Documentation Project's (LDP) site:
 
 - http://www.tldp.org/HOWTO/SCSI-Generic-HOWTO
@@ -54,12 +54,12 @@ found at http://www.torque.net/sg/p/original/SCSI-Programming-HOWTO.txt
 and in the LDP archives.
 
 A changelog with brief notes can be found in the
-/usr/src/linux/include/scsi/sg.h file. Note that the glibc maintainers copy
+/usr/src/linaos/include/scsi/sg.h file. Note that the glibc maintainers copy
 and edit this file (removing its changelog for example) before placing it
 in /usr/include/scsi/sg.h . Driver debugging information and other notes
-can be found at the top of the /usr/src/linux/drivers/scsi/sg.c file.
+can be found at the top of the /usr/src/linaos/drivers/scsi/sg.c file.
 
-A more general description of the Linux SCSI subsystem of which sg is a
+A more general description of the LinaOS SCSI subsystem of which sg is a
 part can be found at http://www.tldp.org/HOWTO/SCSI-2.4-HOWTO .
 
 
@@ -81,9 +81,9 @@ Another approach is to look at the applications that use the sg driver.
 These include cdrecord, cdparanoia, SANE and cdrdao.
 
 
-Mapping of Linux kernel versions to sg driver versions
+Mapping of LinaOS kernel versions to sg driver versions
 ======================================================
-Here is a list of linux kernels in the 2.4 series that had new version
+Here is a list of linaos kernels in the 2.4 series that had new version
 of the sg driver:
 
      - lk 2.4.0 : sg version 3.1.17
@@ -92,9 +92,9 @@ of the sg driver:
      - lk 2.4.17 : sg version 3.1.22
 
 .. [#] There were 3 changes to sg version 3.1.20 by third parties in the
-       next six linux kernel versions.
+       next six linaos kernel versions.
 
-For reference here is a list of linux kernels in the 2.2 series that had
+For reference here is a list of linaos kernels in the 2.2 series that had
 new version of the sg driver:
 
      - lk 2.2.0 : original sg version [with no version number]

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/sched.h>
-#include <linux/ftrace.h>
+#include <linaos/sched.h>
+#include <linaos/ftrace.h>
 #include <asm/ptrace.h>
 #include <asm/bitops.h>
 #include <asm/stacktrace.h>

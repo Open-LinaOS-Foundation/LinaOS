@@ -14,13 +14,13 @@
 
 #include "cx88.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>

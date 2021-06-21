@@ -38,7 +38,7 @@ check_result "livepatch: kernel.ftrace_enabled = 0
 livepatch: enabling patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': initializing patching transition
 livepatch: failed to register ftrace handler for function 'cmdline_proc_show' (-16)
-livepatch: failed to patch object 'vmlinux'
+livepatch: failed to patch object 'vmlinaos'
 livepatch: failed to enable patch '$MOD_LIVEPATCH'
 livepatch: '$MOD_LIVEPATCH': canceling patching transition, going to unpatch
 livepatch: '$MOD_LIVEPATCH': completing unpatching transition

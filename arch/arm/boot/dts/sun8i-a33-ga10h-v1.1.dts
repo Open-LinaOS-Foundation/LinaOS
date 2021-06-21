@@ -71,7 +71,7 @@
 &lradc {
 	button-600 {
 		label = "Back";
-		linux,code = <KEY_BACK>;
+		linaos,code = <KEY_BACK>;
 		channel = <0>;
 		voltage = <600000>;
 	};

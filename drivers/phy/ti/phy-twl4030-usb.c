@@ -11,22 +11,22 @@
  *	- 3-pin mode support may be added in future.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/usb/otg.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/musb.h>
-#include <linux/usb/ulpi.h>
-#include <linux/mfd/twl.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/usb/otg.h>
+#include <linaos/phy/phy.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/usb/musb.h>
+#include <linaos/usb/ulpi.h>
+#include <linaos/mfd/twl.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
 
 /* Register defines */
 

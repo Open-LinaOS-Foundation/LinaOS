@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Interface to Linux block layer for MTD 'translation layers'.
+ * Interface to LinaOS block layer for MTD 'translation layers'.
  *
  * Copyright © 2003-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/mtd/mtd.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blkpg.h>
-#include <linux/spinlock.h>
-#include <linux/hdreg.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/fs.h>
+#include <linaos/mtd/blktrans.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blkpg.h>
+#include <linaos/spinlock.h>
+#include <linaos/hdreg.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
 
 #include "mtdcore.h"
 

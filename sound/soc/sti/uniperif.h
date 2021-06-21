@@ -8,7 +8,7 @@
 #ifndef __SND_ST_AUD_UNIPERIF_H
 #define __SND_ST_AUD_UNIPERIF_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #include <sound/dmaengine_pcm.h>
 

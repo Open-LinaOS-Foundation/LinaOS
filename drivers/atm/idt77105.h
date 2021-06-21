@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* drivers/atm/idt77105.h - IDT77105 (PHY) declarations */
  
-/* Written 1999 by Greg Banks, NEC Australia <gnb@linuxfan.com>. Based on suni.h */
+/* Written 1999 by Greg Banks, NEC Australia <gnb@linaosfan.com>. Based on suni.h */
  
 
 #ifndef DRIVER_ATM_IDT77105_H
 #define DRIVER_ATM_IDT77105_H
 
-#include <linux/atmdev.h>
-#include <linux/atmioc.h>
+#include <linaos/atmdev.h>
+#include <linaos/atmioc.h>
 
 
 /* IDT77105 registers */

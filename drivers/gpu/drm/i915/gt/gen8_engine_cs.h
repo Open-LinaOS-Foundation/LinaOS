@@ -6,8 +6,8 @@
 #ifndef __GEN8_ENGINE_CS_H__
 #define __GEN8_ENGINE_CS_H__
 
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include "i915_gem.h" /* GEM_BUG_ON */
 

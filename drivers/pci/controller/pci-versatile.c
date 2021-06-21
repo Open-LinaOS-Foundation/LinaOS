@@ -7,13 +7,13 @@
  *
  * 14/04/2005 Initial version, colin.king@philips.com
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_pci.h>
+#include <linaos/of_platform.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
 
 #include "../pci.h"
 

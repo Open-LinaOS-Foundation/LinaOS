@@ -9,9 +9,9 @@
 #ifndef _SECURITY_LANDLOCK_CRED_H
 #define _SECURITY_LANDLOCK_CRED_H
 
-#include <linux/cred.h>
-#include <linux/init.h>
-#include <linux/rcupdate.h>
+#include <linaos/cred.h>
+#include <linaos/init.h>
+#include <linaos/rcupdate.h>
 
 #include "ruleset.h"
 #include "setup.h"

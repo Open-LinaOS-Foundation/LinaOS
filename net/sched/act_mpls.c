@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2019 Netronome Systems, Inc. */
 
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mpls.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/tc_act/tc_mpls.h>
+#include <linaos/if_arp.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mpls.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/skbuff.h>
+#include <linaos/tc_act/tc_mpls.h>
 #include <net/mpls.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>

@@ -3,7 +3,7 @@ libperf(3)
 
 NAME
 ----
-libperf - Linux kernel perf event library
+libperf - LinaOS kernel perf event library
 
 
 SYNOPSIS
@@ -213,7 +213,7 @@ SYNOPSIS
 
 DESCRIPTION
 -----------
-The libperf library provides an API to access the linux kernel perf
+The libperf library provides an API to access the linaos kernel perf
 events subsystem.
 
 Following objects are key to the libperf interface:
@@ -234,7 +234,7 @@ The exported API functions bind these objects together.
 
 REPORTING BUGS
 --------------
-Report bugs to <linux-perf-users@vger.kernel.org>.
+Report bugs to <linaos-perf-users@vger.kernel.org>.
 
 LICENSE
 -------
@@ -242,7 +242,7 @@ libperf is Free Software licensed under the GNU LGPL 2.1
 
 RESOURCES
 ---------
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git
 
 SEE ALSO
 --------

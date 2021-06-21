@@ -7,11 +7,11 @@
 #include "dm.h"
 #include "dm-bio-prison-v2.h"
 
-#include <linux/spinlock.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
+#include <linaos/spinlock.h>
+#include <linaos/mempool.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/rwsem.h>
 
 /*----------------------------------------------------------------*/
 

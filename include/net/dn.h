@@ -2,7 +2,7 @@
 #ifndef _NET_DN_H
 #define _NET_DN_H
 
-#include <linux/dn.h>
+#include <linaos/dn.h>
 #include <net/sock.h>
 #include <net/flow.h>
 #include <asm/byteorder.h>

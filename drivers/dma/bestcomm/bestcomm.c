@@ -13,19 +13,19 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/mpc52xx.h>
 
-#include <linux/fsl/bestcomm/sram.h>
-#include <linux/fsl/bestcomm/bestcomm_priv.h>
-#include "linux/fsl/bestcomm/bestcomm.h"
+#include <linaos/fsl/bestcomm/sram.h>
+#include <linaos/fsl/bestcomm/bestcomm_priv.h>
+#include "linaos/fsl/bestcomm/bestcomm.h"
 
 #define DRIVER_NAME "bestcomm-core"
 

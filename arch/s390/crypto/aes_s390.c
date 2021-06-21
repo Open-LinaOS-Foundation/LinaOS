@@ -24,13 +24,13 @@
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/scatterwalk.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/fips.h>
-#include <linux/string.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/fips.h>
+#include <linaos/string.h>
 #include <crypto/xts.h>
 #include <asm/cpacf.h>
 

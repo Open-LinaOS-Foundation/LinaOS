@@ -8,16 +8,16 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_data/dma-mv_xor.h>
-#include <linux/platform_data/usb-ehci-orion.h>
-#include <linux/platform_device.h>
-#include <linux/soc/dove/pmu.h>
+#include <linaos/clk-provider.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_data/dma-mv_xor.h>
+#include <linaos/platform_data/usb-ehci-orion.h>
+#include <linaos/platform_device.h>
+#include <linaos/soc/dove/pmu.h>
 #include <asm/hardware/cache-tauros2.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

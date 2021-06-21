@@ -14,7 +14,7 @@ Find out what device you have
 
 Important Notice: The driver does NOT support Technisat USB 2 devices!
 
-First start your linux box with a shipped kernel:
+First start your linaos box with a shipped kernel:
 
 .. code-block:: none
 

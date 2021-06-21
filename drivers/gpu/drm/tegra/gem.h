@@ -8,7 +8,7 @@
 #ifndef __HOST1X_GEM_H
 #define __HOST1X_GEM_H
 
-#include <linux/host1x.h>
+#include <linaos/host1x.h>
 
 #include <drm/drm.h>
 #include <drm/drm_gem.h>

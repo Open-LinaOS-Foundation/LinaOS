@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Stowaway keyboard driver for Linux
+ * Stowaway keyboard driver for LinaOS
  */
 
 /*
  *  Copyright (c) 2006 Marek Vasut
  *
- *  Based on Newton keyboard driver for Linux
+ *  Based on Newton keyboard driver for LinaOS
  *  by Justin Cormack
  */
 
 /*
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
 
 #define DRIVER_DESC	"Stowaway keyboard driver"
 

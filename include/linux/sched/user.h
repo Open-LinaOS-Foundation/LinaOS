@@ -2,10 +2,10 @@
 #ifndef _LINUX_SCHED_USER_H
 #define _LINUX_SCHED_USER_H
 
-#include <linux/uidgid.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/ratelimit.h>
+#include <linaos/uidgid.h>
+#include <linaos/atomic.h>
+#include <linaos/refcount.h>
+#include <linaos/ratelimit.h>
 
 /*
  * Some day this will be a full-fledged user tracking system..

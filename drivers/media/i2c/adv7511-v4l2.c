@@ -11,16 +11,16 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/gpio.h>
-#include <linux/workqueue.h>
-#include <linux/hdmi.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/videodev2.h>
+#include <linaos/gpio.h>
+#include <linaos/workqueue.h>
+#include <linaos/hdmi.h>
+#include <linaos/v4l2-dv-timings.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>

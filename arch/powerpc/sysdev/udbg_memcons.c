@@ -14,7 +14,7 @@
  * Copyright (C) 2013 Alistair Popple, IBM Corp
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/barrier.h>
 #include <asm/page.h>
 #include <asm/processor.h>

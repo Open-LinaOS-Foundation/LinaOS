@@ -1,4 +1,4 @@
-#include <linux/signal.h>
+#include <linaos/signal.h>
 
 #define SIGUNKNOWN 0
 #define MAXMAPPED_SIG 35
@@ -50,7 +50,7 @@ static const int sig_map[MAXMAPPED_SIG] = {
 	[SIGEMT] = 32,		/* 7, - , 7 */
 #endif
 #if defined(SIGLOST) && SIGPWR != SIGLOST		/* sparc */
-	[SIGLOST] = 33,		/* unused on Linux */
+	[SIGLOST] = 33,		/* unused on LinaOS */
 #endif
 #if defined(SIGUNUSED) && \
     defined(SIGLOST) && defined(SIGSYS) && SIGLOST != SIGSYS

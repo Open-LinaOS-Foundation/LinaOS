@@ -22,11 +22,11 @@
  *
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include "i915_random.h"
 #include "i915_utils.h"

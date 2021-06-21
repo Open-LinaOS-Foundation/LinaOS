@@ -27,23 +27,23 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/memblock.h>
-#include <linux/pid_namespace.h>
-#include <linux/init_task.h>
-#include <linux/syscalls.h>
-#include <linux/proc_ns.h>
-#include <linux/refcount.h>
-#include <linux/anon_inodes.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/idr.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/rculist.h>
+#include <linaos/memblock.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/init_task.h>
+#include <linaos/syscalls.h>
+#include <linaos/proc_ns.h>
+#include <linaos/refcount.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/task.h>
+#include <linaos/idr.h>
 #include <net/sock.h>
-#include <uapi/linux/pidfd.h>
+#include <uapi/linaos/pidfd.h>
 
 struct pid init_struct_pid = {
 	.count		= REFCOUNT_INIT(1),

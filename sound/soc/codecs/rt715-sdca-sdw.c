@@ -6,14 +6,14 @@
 //
 //
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_type.h>
+#include <linaos/soundwire/sdw_registers.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 #include <sound/soc.h>
 #include "rt715-sdca.h"
 #include "rt715-sdca-sdw.h"

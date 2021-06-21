@@ -1,7 +1,7 @@
 /* include/video/s1d13xxxfb.h
  *
  * (c) 2004 Simtec Electronics
- * (c) 2005 Thibaut VARENE <varenet@parisc-linux.org>
+ * (c) 2005 Thibaut VARENE <varenet@parisc-linaos.org>
  *
  * Header file for Epson S1D13XXX driver code
  *

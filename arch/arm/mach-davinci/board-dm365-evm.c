@@ -12,37 +12,37 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/property.h>
-#include <linux/leds.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/slab.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/nvmem-provider.h>
-#include <linux/input.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/eeprom.h>
-#include <linux/v4l2-dv-timings.h>
-#include <linux/platform_data/ti-aemif.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/property.h>
+#include <linaos/leds.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/input.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/eeprom.h>
+#include <linaos/v4l2-dv-timings.h>
+#include <linaos/platform_data/ti-aemif.h>
+#include <linaos/regulator/fixed.h>
+#include <linaos/regulator/machine.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 
 #include <mach/mux.h>
 #include <mach/common.h>
-#include <linux/platform_data/i2c-davinci.h>
+#include <linaos/platform_data/i2c-davinci.h>
 #include <mach/serial.h>
-#include <linux/platform_data/mmc-davinci.h>
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/keyscan-davinci.h>
+#include <linaos/platform_data/mmc-davinci.h>
+#include <linaos/platform_data/mtd-davinci.h>
+#include <linaos/platform_data/keyscan-davinci.h>
 
 #include <media/i2c/ths7303.h>
 #include <media/i2c/tvp514x.h>

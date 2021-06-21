@@ -6,7 +6,7 @@
 #ifndef _SCSI_COMMON_H_
 #define _SCSI_COMMON_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/scsi_proto.h>
 
 static inline unsigned

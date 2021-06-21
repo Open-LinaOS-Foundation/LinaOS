@@ -8,18 +8,18 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/vmalloc.h>
-#include <linux/rtnetlink.h>
-#include <linux/prefetch.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/vmalloc.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/prefetch.h>
 
 #include <asm/sync_bitops.h>
 #include <asm/mshyperv.h>

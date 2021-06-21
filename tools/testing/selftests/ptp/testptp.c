@@ -23,7 +23,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#include <linux/ptp_clock.h>
+#include <linaos/ptp_clock.h>
 
 #define DEVICE "/dev/ptp0"
 

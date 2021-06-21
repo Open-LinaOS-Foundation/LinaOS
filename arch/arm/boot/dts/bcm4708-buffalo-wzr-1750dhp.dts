@@ -55,7 +55,7 @@
 			trigger-sources = <&ohci_port1>, <&ehci_port1>,
 					  <&xhci_port1>, <&ohci_port2>,
 					  <&ehci_port2>;
-			linux,default-trigger = "usbport";
+			linaos,default-trigger = "usbport";
 		};
 
 		power0 {
@@ -66,13 +66,13 @@
 		power1 {
 			label = "bcm53xx:white:power";
 			gpios = <&hc595 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		router0 {
 			label = "bcm53xx:blue:router";
 			gpios = <&hc595 3 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		router1 {
@@ -83,7 +83,7 @@
 		wan {
 			label = "bcm53xx:blue:wan";
 			gpios = <&hc595 5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		wireless0 {
@@ -102,33 +102,33 @@
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 11 GPIO_ACTIVE_LOW>;
 		};
 
 		aoss {
 			label = "AOSS";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 12 GPIO_ACTIVE_LOW>;
 		};
 
 		/* Commit mode set by switch? */
 		mode {
 			label = "Mode";
-			linux,code = <KEY_SETUP>;
+			linaos,code = <KEY_SETUP>;
 			gpios = <&chipcommon 13 GPIO_ACTIVE_LOW>;
 		};
 
 		/* Switch: AP mode */
 		sw_ap {
 			label = "AP";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&chipcommon 14 GPIO_ACTIVE_LOW>;
 		};
 
 		eject {
 			label = "USB eject";
-			linux,code = <KEY_EJECTCD>;
+			linaos,code = <KEY_EJECTCD>;
 			gpios = <&chipcommon 15 GPIO_ACTIVE_LOW>;
 		};
 	};

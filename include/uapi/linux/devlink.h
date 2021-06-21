@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
- * include/uapi/linux/devlink.h - Network physical device Netlink interface
+ * include/uapi/linaos/devlink.h - Network physical device Netlink interface
  * Copyright (c) 2016 Mellanox Technologies. All rights reserved.
  * Copyright (c) 2016 Jiri Pirko <jiri@mellanox.com>
  *
@@ -13,7 +13,7 @@
 #ifndef _UAPI_LINUX_DEVLINK_H_
 #define _UAPI_LINUX_DEVLINK_H_
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #define DEVLINK_GENL_NAME "devlink"
 #define DEVLINK_GENL_VERSION 0x1

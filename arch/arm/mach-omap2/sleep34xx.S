@@ -8,7 +8,7 @@
  * Texas Instruments, <www.ti.com>
  * Richard Woodruff <r-woodruff2@ti.com>
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 

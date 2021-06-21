@@ -1,5 +1,5 @@
 /* 
- * Copyright (C) 2000 - 2008 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2008 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Licensed under the GPL
  */
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux RFKILL support for RTL8187
+ * LinaOS RFKILL support for RTL8187
  *
  * Copyright (c) 2009 Herton Ronaldo Krzesinski <herton@mandriva.com.br>
  *
@@ -10,8 +10,8 @@
  * Thanks to Realtek for their support!
  */
 
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <linaos/types.h>
+#include <linaos/usb.h>
 #include <net/mac80211.h>
 
 #include "rtl8187.h"

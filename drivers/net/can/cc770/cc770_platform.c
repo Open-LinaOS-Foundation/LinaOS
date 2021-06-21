@@ -16,7 +16,7 @@
  *           .bcr = 0x40,
  *   };
  *
- * Please see include/linux/can/platform/cc770.h for description of
+ * Please see include/linaos/can/platform/cc770.h for description of
  * above fields.
  *
  * If the device tree is used, you need a CAN node definition in your
@@ -34,16 +34,16 @@
  * information.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/cc770.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/platform/cc770.h>
 
 #include "cc770.h"
 

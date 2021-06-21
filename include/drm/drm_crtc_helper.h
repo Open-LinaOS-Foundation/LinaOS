@@ -33,11 +33,11 @@
 #ifndef __DRM_CRTC_HELPER_H__
 #define __DRM_CRTC_HELPER_H__
 
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/idr.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/idr.h>
 
-#include <linux/fb.h>
+#include <linaos/fb.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_modeset_helper_vtables.h>

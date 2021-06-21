@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2019-2020 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/refcount.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-direction.h>
+#include <linaos/types.h>
+#include <linaos/bits.h>
+#include <linaos/bitfield.h>
+#include <linaos/refcount.h>
+#include <linaos/scatterlist.h>
+#include <linaos/dma-direction.h>
 
 #include "gsi.h"
 #include "gsi_private.h"
@@ -39,7 +39,7 @@
  * are allocated at transaction allocation time.
  *
  * Commands performed as part of a transaction are represented in an array
- * of Linux scatterlist structures.  This array is allocated with the
+ * of LinaOS scatterlist structures.  This array is allocated with the
  * transaction, and its entries are initialized using standard scatterlist
  * functions (such as sg_set_buf() or skb_to_sgvec()).
  *

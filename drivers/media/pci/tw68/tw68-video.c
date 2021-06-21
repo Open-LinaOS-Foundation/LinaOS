@@ -16,7 +16,7 @@
  *  Copyright (C) 2014 Hans Verkuil <hverkuil@xs4all.nl>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/videobuf2-dma-sg.h>

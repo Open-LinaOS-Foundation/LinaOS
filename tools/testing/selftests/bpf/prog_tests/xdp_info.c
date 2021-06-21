@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/if_link.h>
+#include <linaos/if_link.h>
 #include <test_progs.h>
 
 #define IFINDEX_LO 1

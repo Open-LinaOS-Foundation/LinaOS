@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/cpu_cooling.h
+ *  linaos/include/linaos/cpu_cooling.h
  *
  *  Copyright (C) 2012	Samsung Electronics Co., Ltd(http://www.samsung.com)
  *  Copyright (C) 2012  Amit Daniel <amit.kachhap@linaro.org>
@@ -13,9 +13,9 @@
 #ifndef __CPU_COOLING_H__
 #define __CPU_COOLING_H__
 
-#include <linux/of.h>
-#include <linux/thermal.h>
-#include <linux/cpumask.h>
+#include <linaos/of.h>
+#include <linaos/thermal.h>
+#include <linaos/cpumask.h>
 
 struct cpufreq_policy;
 

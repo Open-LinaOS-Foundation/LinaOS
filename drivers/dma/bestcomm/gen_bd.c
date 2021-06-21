@@ -7,19 +7,19 @@
  *                    Jeff Gibbons <jeff.gibbons@appspec.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <asm/errno.h>
 #include <asm/io.h>
 
 #include <asm/mpc52xx.h>
 #include <asm/mpc52xx_psc.h>
 
-#include <linux/fsl/bestcomm/bestcomm.h>
-#include <linux/fsl/bestcomm/bestcomm_priv.h>
-#include <linux/fsl/bestcomm/gen_bd.h>
+#include <linaos/fsl/bestcomm/bestcomm.h>
+#include <linaos/fsl/bestcomm/bestcomm_priv.h>
+#include <linaos/fsl/bestcomm/gen_bd.h>
 
 
 /* ======================================================================== */

@@ -22,37 +22,37 @@
  */
 
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/if_addr.h>
-#include <linux/if_ether.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/capability.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/signal.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/in.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/if_addr.h>
+#include <linaos/if_ether.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/notifier.h>
+#include <linaos/inetdevice.h>
+#include <linaos/igmp.h>
+#include <linaos/slab.h>
+#include <linaos/hash.h>
 #ifdef CONFIG_SYSCTL
-#include <linux/sysctl.h>
+#include <linaos/sysctl.h>
 #endif
-#include <linux/kmod.h>
-#include <linux/netconf.h>
+#include <linaos/kmod.h>
+#include <linaos/netconf.h>
 
 #include <net/arp.h>
 #include <net/ip.h>

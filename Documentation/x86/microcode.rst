@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ==========================
-The Linux Microcode Loader
+The LinaOS Microcode Loader
 ==========================
 
 :Authors: - Fenghua Yu <fenghua.yu@intel.com>

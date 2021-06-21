@@ -19,26 +19,26 @@
  */
 
 
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/async.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/uuid.h>
+#include <linaos/bits.h>
+#include <linaos/module.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/async.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/uaccess.h>
+#include <linaos/buffer_head.h>
+#include <linaos/slab.h>
+#include <linaos/firmware.h>
+#include <linaos/input/mt.h>
+#include <linaos/input/touchscreen.h>
+#include <linaos/acpi.h>
+#include <linaos/of.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/uuid.h>
 #include <asm/unaligned.h>
 
 /* Device, Driver information */

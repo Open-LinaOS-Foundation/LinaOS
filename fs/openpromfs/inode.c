@@ -5,20 +5,20 @@
  * Copyright (C) 1998      Eddie C. Dost  (ecd@skynet.be)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/magic.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/seq_file.h>
+#include <linaos/magic.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static DEFINE_MUTEX(op_mutex);
 

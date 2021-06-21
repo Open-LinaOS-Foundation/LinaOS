@@ -7,7 +7,7 @@
 #ifndef __LINUX_INTERCONNECT_PROVIDER_H
 #define __LINUX_INTERCONNECT_PROVIDER_H
 
-#include <linux/interconnect.h>
+#include <linaos/interconnect.h>
 
 #define icc_units_to_bps(bw)  ((bw) * 1000ULL)
 

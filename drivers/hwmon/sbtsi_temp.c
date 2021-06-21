@@ -7,14 +7,14 @@
  * Copyright (c) 2020, Kun Yi <kunyi@google.com>
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
 
 /*
  * SB-TSI registers only support SMBus byte data access. "_INT" registers are

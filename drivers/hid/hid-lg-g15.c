@@ -5,13 +5,13 @@
  *  Copyright (c) 2019 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/usb.h>
+#include <linaos/wait.h>
 
 #include "hid-ids.h"
 

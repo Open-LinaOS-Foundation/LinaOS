@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: LinaOS filesystem encryption layer
  *
  * Copyright (C) 2007 International Business Machines Corp.
  *   Author(s): Michael A. Halcrow <mahalcro@us.ibm.com>
  */
 
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/sched/signal.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/sched/signal.h>
 
 #include "ecryptfs_kernel.h"
 

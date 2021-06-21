@@ -28,8 +28,8 @@
  *   1   IRQ (not-used)
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
 #include "../comedidev.h"
 
 /*

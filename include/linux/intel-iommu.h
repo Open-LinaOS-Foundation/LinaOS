@@ -10,17 +10,17 @@
 #ifndef _INTEL_IOMMU_H_
 #define _INTEL_IOMMU_H_
 
-#include <linux/types.h>
-#include <linux/iova.h>
-#include <linux/io.h>
-#include <linux/idr.h>
-#include <linux/mmu_notifier.h>
-#include <linux/list.h>
-#include <linux/iommu.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/dmar.h>
-#include <linux/ioasid.h>
-#include <linux/bitfield.h>
+#include <linaos/types.h>
+#include <linaos/iova.h>
+#include <linaos/io.h>
+#include <linaos/idr.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/list.h>
+#include <linaos/iommu.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/dmar.h>
+#include <linaos/ioasid.h>
+#include <linaos/bitfield.h>
 
 #include <asm/cacheflush.h>
 #include <asm/iommu.h>

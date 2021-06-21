@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2014, Sony Mobile Communications AB.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The LinaOS Foundation. All rights reserved.
  * Author: Bjorn Andersson <bjorn.andersson@sonymobile.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/qcom_rpm.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/qcom_rpm.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/clk.h>
 
 #include <dt-bindings/mfd/qcom-rpm.h>
 

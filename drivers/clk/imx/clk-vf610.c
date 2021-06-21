@@ -3,10 +3,10 @@
  * Copyright 2012-2013 Freescale Semiconductor, Inc.
  */
 
-#include <linux/of_address.h>
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/syscore_ops.h>
+#include <linaos/of_address.h>
+#include <linaos/bits.h>
+#include <linaos/clk.h>
+#include <linaos/syscore_ops.h>
 #include <dt-bindings/clock/vf610-clock.h>
 
 #include "clk.h"

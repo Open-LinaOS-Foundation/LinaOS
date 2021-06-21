@@ -11,11 +11,11 @@
 #ifndef __LINUX_PINCTRL_PINCTRL_H
 #define __LINUX_PINCTRL_PINCTRL_H
 
-#include <linux/radix-tree.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/pinctrl-state.h>
-#include <linux/pinctrl/devinfo.h>
+#include <linaos/radix-tree.h>
+#include <linaos/list.h>
+#include <linaos/seq_file.h>
+#include <linaos/pinctrl/pinctrl-state.h>
+#include <linaos/pinctrl/devinfo.h>
 
 struct device;
 struct pinctrl_dev;

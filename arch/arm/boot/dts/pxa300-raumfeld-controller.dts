@@ -115,7 +115,7 @@
 	dock-detect {
 		label = "dock detect";
 		gpios = <&gpio 116 GPIO_ACTIVE_LOW>;
-		linux,code = <KEY_F5>;
+		linaos,code = <KEY_F5>;
 	};
 };
 

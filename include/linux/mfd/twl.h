@@ -11,8 +11,8 @@
 #ifndef __TWL_H_
 #define __TWL_H_
 
-#include <linux/types.h>
-#include <linux/input/matrix_keypad.h>
+#include <linaos/types.h>
+#include <linaos/input/matrix_keypad.h>
 
 /*
  * Using the twl4030 core we address registers using a pair
@@ -535,7 +535,7 @@ static inline int twl6030_mmc_card_detect(struct device *dev, int slot)
 
 #define TOTAL_RESOURCES		28
 /*
- * Power Bus Message Format ... these can be sent individually by Linux,
+ * Power Bus Message Format ... these can be sent individually by LinaOS,
  * but are usually part of downloaded scripts that are run when various
  * power events are triggered.
  *
@@ -783,7 +783,7 @@ int twl4030_sih_setup(struct device *dev, int module, int irq_base);
 
 /*----------------------------------------------------------------------*/
 
-/* Linux-specific regulator identifiers ... for now, we only support
+/* LinaOS-specific regulator identifiers ... for now, we only support
  * the LDOs, and leave the three buck converters alone.  VDD1 and VDD2
  * need to tie into hardware based voltage scaling (cpufreq etc), while
  * VIO is generally fixed.

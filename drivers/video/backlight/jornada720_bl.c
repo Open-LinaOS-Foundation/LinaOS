@@ -5,12 +5,12 @@
  * Copyright (C) 2006-2009 Kristoffer Ericson <kristoffer.ericson@gmail.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/backlight.h>
+#include <linaos/device.h>
+#include <linaos/fb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include <mach/jornada720.h>
 #include <mach/hardware.h>

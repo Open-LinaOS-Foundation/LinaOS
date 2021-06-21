@@ -27,7 +27,7 @@
  *	Andi Kleen		:	Add support for /proc/net/netstat
  *	Arnaldo C. Melo		:	Convert to seq_file
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <net/net_namespace.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
@@ -35,11 +35,11 @@
 #include <net/mptcp.h>
 #include <net/udp.h>
 #include <net/udplite.h>
-#include <linux/bottom_half.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/export.h>
+#include <linaos/bottom_half.h>
+#include <linaos/inetdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/export.h>
 #include <net/sock.h>
 #include <net/raw.h>
 

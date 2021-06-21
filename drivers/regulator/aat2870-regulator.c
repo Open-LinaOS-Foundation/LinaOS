@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/regulator/aat2870-regulator.c
+ * linaos/drivers/regulator/aat2870-regulator.c
  *
  * Copyright (c) 2011, NVIDIA Corporation.
  * Author: Jin Park <jinyoungp@nvidia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/aat2870.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/mfd/aat2870.h>
 
 struct aat2870_regulator {
 	struct aat2870_data *aat2870;

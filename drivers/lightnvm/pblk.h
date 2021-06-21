@@ -21,16 +21,16 @@
 #ifndef PBLK_H_
 #define PBLK_H_
 
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/bio.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/vmalloc.h>
-#include <linux/crc32.h>
-#include <linux/uuid.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/bio.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/vmalloc.h>
+#include <linaos/crc32.h>
+#include <linaos/uuid.h>
 
-#include <linux/lightnvm.h>
+#include <linaos/lightnvm.h>
 
 /* Run only GC if less than 1/X blocks are free */
 #define GC_LIMIT_INVERSE 5

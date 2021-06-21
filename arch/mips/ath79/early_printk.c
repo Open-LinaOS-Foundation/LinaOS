@@ -6,9 +6,9 @@
  *  Copyright (C) 2008 Imre Kaloz <kaloz@openwrt.org>
  */
 
-#include <linux/io.h>
-#include <linux/errno.h>
-#include <linux/serial_reg.h>
+#include <linaos/io.h>
+#include <linaos/errno.h>
+#include <linaos/serial_reg.h>
 #include <asm/addrspace.h>
 #include <asm/setup.h>
 

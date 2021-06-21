@@ -3,21 +3,21 @@
  * Performance event support for the System z CPU-measurement Sampling Facility
  *
  * Copyright IBM Corp. 2013, 2018
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
  */
 #define KMSG_COMPONENT	"cpum_sf"
 #define pr_fmt(fmt)	KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
-#include <linux/pid.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/perf_event.h>
+#include <linaos/percpu.h>
+#include <linaos/pid.h>
+#include <linaos/notifier.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/moduleparam.h>
 #include <asm/cpu_mf.h>
 #include <asm/irq.h>
 #include <asm/debug.h>
@@ -380,7 +380,7 @@ static int allocate_buffers(struct cpu_hw_sf *cpuhw, struct hw_perf_event *hwc)
 	 *    1. The sampling size is 32 bytes for basic sampling. This size
 	 *	 is the same for all machine types. Diagnostic
 	 *	 sampling uses auxlilary data buffer setup which provides the
-	 *	 memory for SDBs using linux common code auxiliary trace
+	 *	 memory for SDBs using linaos common code auxiliary trace
 	 *	 setup.
 	 *
 	 *    2. Function alloc_sampling_buffer() sets the Alert Request

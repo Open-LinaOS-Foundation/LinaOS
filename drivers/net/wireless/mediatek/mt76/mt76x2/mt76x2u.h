@@ -6,7 +6,7 @@
 #ifndef __MT76x2U_H
 #define __MT76x2U_H
 
-#include <linux/device.h>
+#include <linaos/device.h>
 
 #include "mt76x2.h"
 #include "mcu.h"

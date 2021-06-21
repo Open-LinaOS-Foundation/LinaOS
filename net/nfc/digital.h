@@ -10,8 +10,8 @@
 #include <net/nfc/nfc.h>
 #include <net/nfc/digital.h>
 
-#include <linux/crc-ccitt.h>
-#include <linux/crc-itu-t.h>
+#include <linaos/crc-ccitt.h>
+#include <linaos/crc-itu-t.h>
 
 #define PROTOCOL_ERR(req) pr_err("%d: NFC Digital Protocol error: %s\n", \
 				 __LINE__, req)

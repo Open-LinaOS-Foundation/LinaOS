@@ -4,7 +4,7 @@
 // Copyright (c) 2017 Jonas Karlman
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table pine64[] = {
 	{ 0x40404d, KEY_POWER },

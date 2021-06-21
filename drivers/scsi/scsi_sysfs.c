@@ -7,12 +7,12 @@
  * Created to pull SCSI mid layer sysfs routines into one file.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/device.h>
+#include <linaos/pm_runtime.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_device.h>

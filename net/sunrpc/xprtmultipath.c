@@ -7,17 +7,17 @@
  * Trond Myklebust <trond.myklebust@primarydata.com>
  *
  */
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/rculist.h>
+#include <linaos/slab.h>
 #include <asm/cmpxchg.h>
-#include <linux/spinlock.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/xprtmultipath.h>
+#include <linaos/spinlock.h>
+#include <linaos/sunrpc/xprt.h>
+#include <linaos/sunrpc/addr.h>
+#include <linaos/sunrpc/xprtmultipath.h>
 
 typedef struct rpc_xprt *(*xprt_switch_find_xprt_t)(struct rpc_xprt_switch *xps,
 		const struct rpc_xprt *cur);

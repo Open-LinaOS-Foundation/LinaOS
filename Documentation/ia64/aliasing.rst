@@ -12,7 +12,7 @@ Memory Attributes
 
     Itanium supports several attributes for virtual memory references.
     The attribute is part of the virtual translation, i.e., it is
-    contained in the TLB entry.  The ones of most interest to the Linux
+    contained in the TLB entry.  The ones of most interest to the LinaOS
     kernel are:
 
 	==		======================
@@ -40,7 +40,7 @@ Memory Map
     Platform firmware describes the physical memory map and the
     supported attributes for each region.  At boot-time, the kernel uses
     the EFI GetMemoryMap() interface.  ACPI can also describe memory
-    devices and the attributes they support, but Linux/ia64 currently
+    devices and the attributes they support, but LinaOS/ia64 currently
     doesn't use this information.
 
     The kernel uses the efi_memmap table returned from GetMemoryMap() to
@@ -50,11 +50,11 @@ Memory Map
     regions from the map.
 
     The kernel maintains another table, kern_memmap, which describes the
-    memory Linux is actually using and the attribute for each region.
+    memory LinaOS is actually using and the attribute for each region.
     This contains only system memory; it does not contain MMIO space.
 
     The kern_memmap table typically contains only a subset of the system
-    memory described by the efi_memmap.  Linux/ia64 can't use all memory
+    memory described by the efi_memmap.  LinaOS/ia64 can't use all memory
     in the system because of constraints imposed by the identity mapping
     scheme.
 
@@ -64,11 +64,11 @@ Memory Map
 Kernel Identify Mappings
 ========================
 
-    Linux/ia64 identity mappings are done with large pages, currently
+    LinaOS/ia64 identity mappings are done with large pages, currently
     either 16MB or 64MB, referred to as "granules."  Cacheable mappings
     are speculative[2], so the processor can read any location in the
     page at any time, independent of the programmer's intentions.  This
-    means that to avoid attribute aliasing, Linux can create a cacheable
+    means that to avoid attribute aliasing, LinaOS can create a cacheable
     identity mapping only when the entire granule supports cacheable
     access.
 

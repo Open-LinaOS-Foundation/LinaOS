@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2017, Intel Corporation
  * Authors: Michael Jamet <michael.jamet@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/uuid.h>
-#include <linux/thunderbolt.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/uuid.h>
+#include <linaos/thunderbolt.h>
 
 struct tb_property_entry {
 	u32 key_hi;

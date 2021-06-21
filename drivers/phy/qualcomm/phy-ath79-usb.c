@@ -5,10 +5,10 @@
  * Copyright (C) 2015-2018 Alban Bedel <albeu@free.fr>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/reset.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/reset.h>
 
 struct ath79_usb_phy {
 	struct reset_control *reset;

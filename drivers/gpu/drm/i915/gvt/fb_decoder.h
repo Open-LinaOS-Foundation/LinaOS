@@ -36,7 +36,7 @@
 #ifndef _GVT_FB_DECODER_H_
 #define _GVT_FB_DECODER_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include "display/intel_display.h"
 

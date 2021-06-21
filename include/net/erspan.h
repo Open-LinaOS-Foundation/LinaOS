@@ -58,7 +58,7 @@
  * GRE proto ERSPAN type I/II = 0x88BE, type III = 0x22EB
  */
 
-#include <uapi/linux/erspan.h>
+#include <uapi/linaos/erspan.h>
 
 #define ERSPAN_VERSION	0x1	/* ERSPAN type II */
 #define VER_MASK	0xf000

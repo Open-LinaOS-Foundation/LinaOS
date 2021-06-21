@@ -1,4 +1,4 @@
-KS7010 Linux driver
+KS7010 LinaOS driver
 ===================
 
 This driver is based on source code from the Ben Nanonote extra repository [1]
@@ -29,5 +29,5 @@ Now the TODOs:
   custom ones here
 
 Please send any patches to:
-Greg Kroah-Hartman <gregkh@linuxfoundation.org>
-Linux Driver Project Developer List <driverdev-devel@linuxdriverproject.org>
+Greg Kroah-Hartman <gregkh@linaosfoundation.org>
+LinaOS Driver Project Developer List <driverdev-devel@linaosdriverproject.org>

@@ -14,22 +14,22 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/rculist.h>
-#include <linux/sh_dma.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/dmaengine.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kdebug.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/rculist.h>
+#include <linaos/sh_dma.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include "../dmaengine.h"
 #include "shdma.h"

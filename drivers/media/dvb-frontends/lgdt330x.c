@@ -8,7 +8,7 @@
 /*
  *                      NOTES ABOUT THIS DRIVER
  *
- * This Linux driver supports:
+ * This LinaOS driver supports:
  *   DViCO FusionHDTV 3 Gold-Q
  *   DViCO FusionHDTV 3 Gold-T
  *   DViCO FusionHDTV 5 Gold
@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
 #include <asm/byteorder.h>
 
 #include <media/dvb_frontend.h>
@@ -431,7 +431,7 @@ static int lgdt330x_set_parameters(struct dvb_frontend *fe)
 	/* Keep track of the new frequency */
 	/*
 	 * FIXME this is the wrong way to do this...
-	 * The tuner is shared with the video4linux analog API
+	 * The tuner is shared with the video4linaos analog API
 	 */
 	state->current_frequency = p->frequency;
 

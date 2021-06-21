@@ -3,11 +3,11 @@
  * Copyright (C) 2017 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 #if defined(CONFIG_ARCH_TEGRA_186_SOC)
 #include <dt-bindings/memory/tegra186-mc.h>

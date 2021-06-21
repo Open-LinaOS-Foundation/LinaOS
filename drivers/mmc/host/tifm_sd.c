@@ -8,11 +8,11 @@
  */
 
 
-#include <linux/tifm.h>
-#include <linux/mmc/host.h>
-#include <linux/highmem.h>
-#include <linux/scatterlist.h>
-#include <linux/module.h>
+#include <linaos/tifm.h>
+#include <linaos/mmc/host.h>
+#include <linaos/highmem.h>
+#include <linaos/scatterlist.h>
+#include <linaos/module.h>
 #include <asm/io.h>
 
 #define DRIVER_NAME "tifm_sd"

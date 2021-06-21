@@ -6,13 +6,13 @@
  * Copyright (C) 2000 - 2001 by Kanoj Sarcar (kanoj@sgi.com)
  * Copyright (C) 2000 - 2001 by Silicon Graphics, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/cpumask.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/cpumask.h>
 #include <asm/bootinfo.h>
 #include <asm/cpu.h>
 #include <asm/io.h>

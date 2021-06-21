@@ -4,16 +4,16 @@
  *  PWM beeper driver
  */
 
-#include <linux/input.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/input.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/pwm.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 struct pwm_beeper {
 	struct input_dev *input;

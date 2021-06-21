@@ -9,7 +9,7 @@
 #define FS_9P_V9FS_VFS_H
 
 /* plan9 semantics are that created files are implicitly opened.
- * But linux semantics are that you call create, then open.
+ * But linaos semantics are that you call create, then open.
  * the plan9 approach is superior as it provides an atomic
  * open.
  * we track the create fid here. When the file is opened, if fidopen is

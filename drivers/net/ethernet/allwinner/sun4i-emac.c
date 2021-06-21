@@ -1,10 +1,10 @@
 /*
- * Allwinner EMAC Fast Ethernet driver for Linux.
+ * Allwinner EMAC Fast Ethernet driver for LinaOS.
  *
  * Copyright 2012-2013 Stefan Roese <sr@denx.de>
  * Copyright 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  *
- * Based on the Linux driver provided by Allwinner:
+ * Based on the LinaOS driver provided by Allwinner:
  * Copyright (C) 1997  Sten Wang
  *
  * This file is licensed under the terms of the GNU General Public
@@ -12,23 +12,23 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/gpio.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/soc/sunxi/sunxi_sram.h>
+#include <linaos/clk.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/gpio.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/mii.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_mdio.h>
+#include <linaos/of_net.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy.h>
+#include <linaos/soc/sunxi/sunxi_sram.h>
 
 #include "sun4i-emac.h"
 

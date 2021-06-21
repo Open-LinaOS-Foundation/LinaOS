@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 #ifndef _ASM_POWERPC_BYTEORDER_H
 #define _ASM_POWERPC_BYTEORDER_H
 
@@ -9,9 +9,9 @@
  * 2 of the License, or (at your option) any later version.
  */
 #ifdef __LITTLE_ENDIAN__
-#include <linux/byteorder/little_endian.h>
+#include <linaos/byteorder/little_endian.h>
 #else
-#include <linux/byteorder/big_endian.h>
+#include <linaos/byteorder/big_endian.h>
 #endif
 
 #endif /* _ASM_POWERPC_BYTEORDER_H */

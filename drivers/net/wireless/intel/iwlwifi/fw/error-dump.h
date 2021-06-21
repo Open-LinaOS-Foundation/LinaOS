@@ -7,7 +7,7 @@
 #ifndef __fw_error_dump_h__
 #define __fw_error_dump_h__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "fw/api/cmdhdr.h"
 
 #define IWL_FW_ERROR_DUMP_BARKER	0x14789632
@@ -34,7 +34,7 @@
  *	paged to the DRAM.
  * @IWL_FW_ERROR_DUMP_RADIO_REG: Dump the radio registers.
  * @IWL_FW_ERROR_DUMP_EXTERNAL: used only by external code utilities, and
- *	for that reason is not in use in any other place in the Linux Wi-Fi
+ *	for that reason is not in use in any other place in the LinaOS Wi-Fi
  *	stack.
  * @IWL_FW_ERROR_DUMP_MEM_CFG: the addresses and sizes of fifos in the smem,
  *	which we get from the fw after ALIVE. The content is structured as

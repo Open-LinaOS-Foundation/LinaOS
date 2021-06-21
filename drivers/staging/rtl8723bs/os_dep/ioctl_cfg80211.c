@@ -6,10 +6,10 @@
  ******************************************************************************/
 #define  _IOCTL_CFG80211_C_
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
-#include <linux/jiffies.h>
+#include <linaos/jiffies.h>
 
 #include <rtw_wifi_regd.h>
 

@@ -6,8 +6,8 @@
 #ifndef __INTEL_SSEU_H__
 #define __INTEL_SSEU_H__
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 
 #include "i915_gem.h"
 

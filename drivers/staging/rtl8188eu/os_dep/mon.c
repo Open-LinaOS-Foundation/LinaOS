@@ -5,8 +5,8 @@
  * Copyright (C) 2015 Jakub Sitnicki
  */
 
-#include <linux/ieee80211.h>
-#include <linux/netdevice.h>
+#include <linaos/ieee80211.h>
+#include <linaos/netdevice.h>
 #include <net/cfg80211.h>
 
 #include <drv_types.h>

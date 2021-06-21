@@ -7,13 +7,13 @@
 
 /* File aq_drvinfo.c: Definition of common code for firmware info in sys.*/
 
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/hwmon.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/kobject.h>
+#include <linaos/module.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/hwmon.h>
+#include <linaos/uaccess.h>
 
 #include "aq_drvinfo.h"
 #include "aq_nic.h"

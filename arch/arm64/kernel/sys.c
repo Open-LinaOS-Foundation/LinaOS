@@ -6,14 +6,14 @@
  * Author: Catalin Marinas <catalin.marinas@arm.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
 
 #include <asm/cpufeature.h>
 #include <asm/syscall.h>

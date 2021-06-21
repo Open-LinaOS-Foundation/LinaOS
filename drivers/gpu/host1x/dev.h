@@ -6,11 +6,11 @@
 #ifndef HOST1X_DEV_H
 #define HOST1X_DEV_H
 
-#include <linux/device.h>
-#include <linux/iommu.h>
-#include <linux/iova.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <linaos/device.h>
+#include <linaos/iommu.h>
+#include <linaos/iova.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
 
 #include "cdma.h"
 #include "channel.h"

@@ -17,14 +17,14 @@
 
 #define pr_fmt(fmt) "mvebu-soc-id: " fmt
 
-#include <linux/clk.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/clk.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 #include "common.h"
 #include "mvebu-soc-id.h"
 

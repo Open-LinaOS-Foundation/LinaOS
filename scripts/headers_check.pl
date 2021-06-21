@@ -12,7 +12,7 @@
 #
 # 1) for each include statement it checks if the
 #    included file actually exists.
-#    Only include files located in asm* and linux* are checked.
+#    Only include files located in asm* and linaos* are checked.
 #    The rest are assumed to be system include files.
 #
 # 2) It is checked that prototypes does not use "extern"
@@ -50,7 +50,7 @@ exit $ret;
 
 sub check_include
 {
-	if ($line =~ m/^\s*#\s*include\s+<((asm|linux).*)>/) {
+	if ($line =~ m/^\s*#\s*include\s+<((asm|linaos).*)>/) {
 		my $inc = $1;
 		my $found;
 		$found = stat($dir . "/" . $inc);
@@ -89,27 +89,27 @@ sub check_config
 	}
 }
 
-my $linux_asm_types;
+my $linaos_asm_types;
 sub check_asm_types
 {
 	if ($filename =~ /types.h|int-l64.h|int-ll64.h/o) {
 		return;
 	}
 	if ($lineno == 1) {
-		$linux_asm_types = 0;
-	} elsif ($linux_asm_types >= 1) {
+		$linaos_asm_types = 0;
+	} elsif ($linaos_asm_types >= 1) {
 		return;
 	}
 	if ($line =~ m/^\s*#\s*include\s+<asm\/types.h>/) {
-		$linux_asm_types = 1;
+		$linaos_asm_types = 1;
 		printf STDERR "$filename:$lineno: " .
-		"include of <linux/types.h> is preferred over <asm/types.h>\n"
+		"include of <linaos/types.h> is preferred over <asm/types.h>\n"
 		# Warn until headers are all fixed
 		#$ret = 1;
 	}
 }
 
-my $linux_types;
+my $linaos_types;
 my %import_stack = ();
 sub check_include_typesh
 {
@@ -131,8 +131,8 @@ sub check_include_typesh
 
 	my $line;
 	while ($line = <$fh>) {
-		if ($line =~ m/^\s*#\s*include\s+<linux\/types.h>/) {
-			$linux_types = 1;
+		if ($line =~ m/^\s*#\s*include\s+<linaos\/types.h>/) {
+			$linaos_types = 1;
 			last;
 		}
 		if (my $included = ($line =~ /^\s*#\s*include\s+[<"](\S+)[>"]/)[0]) {
@@ -149,12 +149,12 @@ sub check_sizetypes
 		return;
 	}
 	if ($lineno == 1) {
-		$linux_types = 0;
-	} elsif ($linux_types >= 1) {
+		$linaos_types = 0;
+	} elsif ($linaos_types >= 1) {
 		return;
 	}
-	if ($line =~ m/^\s*#\s*include\s+<linux\/types.h>/) {
-		$linux_types = 1;
+	if ($line =~ m/^\s*#\s*include\s+<linaos\/types.h>/) {
+		$linaos_types = 1;
 		return;
 	}
 	if (my $included = ($line =~ /^\s*#\s*include\s+[<"](\S+)[>"]/)[0]) {
@@ -163,8 +163,8 @@ sub check_sizetypes
 	if ($line =~ m/__[us](8|16|32|64)\b/) {
 		printf STDERR "$filename:$lineno: " .
 		              "found __[us]{8,16,32,64} type " .
-		              "without #include <linux/types.h>\n";
-		$linux_types = 2;
+		              "without #include <linaos/types.h>\n";
+		$linaos_types = 2;
 		# Warn until headers are all fixed
 		#$ret = 1;
 	}

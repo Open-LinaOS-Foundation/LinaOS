@@ -6,13 +6,13 @@
 /*
  */
 
-#include <linux/irqdomain.h>
-#include <linux/threads.h>
-#include <linux/list.h>
-#include <linux/radix-tree.h>
+#include <linaos/irqdomain.h>
+#include <linaos/threads.h>
+#include <linaos/list.h>
+#include <linaos/radix-tree.h>
 
 #include <asm/types.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 
 extern atomic_t ppc_n_lost_interrupts;

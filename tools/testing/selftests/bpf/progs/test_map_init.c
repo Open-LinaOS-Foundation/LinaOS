@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2020 Tessares SA <http://www.tessares.net> */
 
-#include "vmlinux.h"
+#include "vmlinaos.h"
 #include <bpf/bpf_helpers.h>
 
 __u64 inKey = 0;

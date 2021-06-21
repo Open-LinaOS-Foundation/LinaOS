@@ -9,7 +9,7 @@
 #define _ASM_RISCV_THREAD_INFO_H
 
 #include <asm/page.h>
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /* thread information allocation */
 #ifdef CONFIG_64BIT

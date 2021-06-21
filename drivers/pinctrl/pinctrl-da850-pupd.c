@@ -5,16 +5,16 @@
  * Copyright (C) 2016  David Lechner
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/platform_device.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/platform_device.h>
 
 #define DA850_PUPD_ENA		0x00
 #define DA850_PUPD_SEL		0x04

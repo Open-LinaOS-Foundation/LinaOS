@@ -8,9 +8,9 @@
 #ifndef _IMX_DSP_IPC_H
 #define _IMX_DSP_IPC_H
 
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/mailbox_client.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/mailbox_client.h>
 
 #define DSP_MU_CHAN_NUM		4
 

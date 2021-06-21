@@ -5,13 +5,13 @@
  * Copyright (C) 2009/2010 Stefani Seibold <stefani@seibold.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/log2.h>
-#include <linux/uaccess.h>
-#include <linux/kfifo.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/log2.h>
+#include <linaos/uaccess.h>
+#include <linaos/kfifo.h>
 
 /*
  * internal helper to calculate the unused elements in a fifo

@@ -12,13 +12,13 @@ config VGA_CONSOLE
 		!ARM64 && !ARC && !MICROBLAZE && !OPENRISC && !NDS32 && !S390
 	default y
 	help
-	  Saying Y here will allow you to use Linux in text mode through a
+	  Saying Y here will allow you to use LinaOS in text mode through a
 	  display that complies with the generic VGA standard. Virtually
 	  everyone wants that.
 
 	  The program SVGATextMode can be used to utilize SVGA video cards to
 	  their full potential in text mode. Download it from
-	  <ftp://ibiblio.org/pub/Linux/utils/console/>.
+	  <ftp://ibiblio.org/pub/LinaOS/utils/console/>.
 
 	  Say Y.
 
@@ -28,7 +28,7 @@ config MDA_CONSOLE
 	help
 	  Say Y here if you have an old MDA or monochrome Hercules graphics
 	  adapter in your system acting as a second head ( = video card). You
-	  will then be able to use two monitors with your Linux system. Do not
+	  will then be able to use two monitors with your LinaOS system. Do not
 	  say Y here if your MDA card is the primary card in your system; the
 	  normal VGA driver will handle it.
 

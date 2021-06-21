@@ -6,7 +6,7 @@
  * Copyright (C) 2019 Renesas Electronics Corporation
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include "common.h"
 #include "mod.h"

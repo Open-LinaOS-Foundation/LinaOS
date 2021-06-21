@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux LED driver for RTL8187
+ * LinaOS LED driver for RTL8187
  *
  * Copyright 2009 Larry Finger <Larry.Finger@lwfinger.net>
  *
@@ -13,8 +13,8 @@
 #ifdef CONFIG_RTL8187_LEDS
 
 #include <net/mac80211.h>
-#include <linux/usb.h>
-#include <linux/eeprom_93cx6.h>
+#include <linaos/usb.h>
+#include <linaos/eeprom_93cx6.h>
 
 #include "rtl8187.h"
 #include "leds.h"

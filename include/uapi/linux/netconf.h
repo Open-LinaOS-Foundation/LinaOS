@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_LINUX_NETCONF_H_
 #define _UAPI_LINUX_NETCONF_H_
 
-#include <linux/types.h>
-#include <linux/netlink.h>
+#include <linaos/types.h>
+#include <linaos/netlink.h>
 
 struct netconfmsg {
 	__u8	ncm_family;

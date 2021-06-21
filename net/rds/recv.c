@@ -30,13 +30,13 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/rds.h>
+#include <linaos/in.h>
+#include <linaos/export.h>
+#include <linaos/time.h>
+#include <linaos/rds.h>
 
 #include "rds.h"
 

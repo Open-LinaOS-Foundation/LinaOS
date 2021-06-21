@@ -2,11 +2,11 @@
 /*
  * Copyright (c) 2017-2019 Borislav Petkov, SUSE Labs.
  */
-#include <linux/mm.h>
-#include <linux/gfp.h>
-#include <linux/ras.h>
-#include <linux/kernel.h>
-#include <linux/workqueue.h>
+#include <linaos/mm.h>
+#include <linaos/gfp.h>
+#include <linaos/ras.h>
+#include <linaos/kernel.h>
+#include <linaos/workqueue.h>
 
 #include <asm/mce.h>
 

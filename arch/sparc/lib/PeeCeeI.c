@@ -5,7 +5,7 @@
  * Copyright (C) 1997 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>

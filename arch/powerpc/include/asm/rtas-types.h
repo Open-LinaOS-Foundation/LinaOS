@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_RTAS_TYPES_H
 #define _ASM_POWERPC_RTAS_TYPES_H
 
-#include <linux/spinlock_types.h>
+#include <linaos/spinlock_types.h>
 
 typedef __be32 rtas_arg_t;
 

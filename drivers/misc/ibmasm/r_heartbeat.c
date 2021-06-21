@@ -7,7 +7,7 @@
  * Author: Max Asböck <amax@us.ibm.com>
  */
 
-#include <linux/sched/signal.h>
+#include <linaos/sched/signal.h>
 #include "ibmasm.h"
 #include "dot_command.h"
 

@@ -2,8 +2,8 @@
 #ifndef __MAC802154_DRIVER_OPS
 #define __MAC802154_DRIVER_OPS
 
-#include <linux/types.h>
-#include <linux/rtnetlink.h>
+#include <linaos/types.h>
+#include <linaos/rtnetlink.h>
 
 #include <net/mac802154.h>
 

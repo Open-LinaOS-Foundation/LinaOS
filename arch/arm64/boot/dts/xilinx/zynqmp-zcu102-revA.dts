@@ -46,7 +46,7 @@
 		sw19 {
 			label = "sw19";
 			gpios = <&gpio 22 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_DOWN>;
+			linaos,code = <KEY_DOWN>;
 			wakeup-source;
 			autorepeat;
 		};
@@ -57,7 +57,7 @@
 		heartbeat-led {
 			label = "heartbeat";
 			gpios = <&gpio 23 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

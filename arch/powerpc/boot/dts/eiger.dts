@@ -214,7 +214,7 @@
 							reg = <0x00200000 0x00100000>;
 						};
 						partition@300000 {
-							label = "linux";
+							label = "linaos";
 							reg = <0x00300000 0x00300000>;
 						};
 						partition@600000 {

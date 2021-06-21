@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 #ifndef _SOFTING_DEVICE_H_
 #define _SOFTING_DEVICE_H_

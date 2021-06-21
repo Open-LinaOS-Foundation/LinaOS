@@ -8,9 +8,9 @@
 #ifndef CMDLINEPARSEH
 #define CMDLINEPARSEH
 
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/fs.h>
+#include <linaos/slab.h>
 
 /* partition flags */
 #define PF_RDONLY                   0x01 /* Device is read only */

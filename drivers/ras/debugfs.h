@@ -2,7 +2,7 @@
 #ifndef __RAS_DEBUGFS_H__
 #define __RAS_DEBUGFS_H__
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 extern struct dentry *ras_debugfs_dir;
 

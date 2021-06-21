@@ -1,5 +1,5 @@
 /*
- * Copyright 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright 2006 Dave Airlie <airlied@linaos.ie>
  * Copyright © 2006-2009 Intel Corporation
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -26,10 +26,10 @@
  *	Jesse Barnes <jesse.barnes@intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/hdmi.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/hdmi.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc.h>

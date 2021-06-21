@@ -17,7 +17,7 @@
 #ifndef _SMC911X_H_
 #define _SMC911X_H_
 
-#include <linux/smc911x.h>
+#include <linaos/smc911x.h>
 /*
  * Use the DMA feature on PXA chips
  */
@@ -202,7 +202,7 @@ static inline void SMC_outsl(struct smc911x_local *lp, int reg,
 /*
  * Use a DMA for RX and TX packets.
  */
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 static dma_addr_t rx_dmabuf, tx_dmabuf;
 static int rx_dmalen, tx_dmalen;

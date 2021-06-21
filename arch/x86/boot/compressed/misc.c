@@ -182,7 +182,7 @@ static void handle_relocations(void *output, unsigned long output_len,
 	unsigned long max_addr = min_addr + (VO___bss_start - VO__text);
 
 	/*
-	 * Calculate the delta between where vmlinux was linked to load
+	 * Calculate the delta between where vmlinaos was linked to load
 	 * and where it was actually loaded.
 	 */
 	delta = min_addr - LOAD_PHYSICAL_ADDR;
@@ -434,7 +434,7 @@ asmlinkage __visible void *extract_kernel(void *rmode, memptr heap,
 		error("Destination virtual address changed when not relocatable");
 #endif
 
-	debug_putstr("\nDecompressing Linux... ");
+	debug_putstr("\nDecompressing LinaOS... ");
 	__decompress(input_data, input_len, NULL, NULL, output, output_len,
 			NULL, error);
 	parse_elf(output);

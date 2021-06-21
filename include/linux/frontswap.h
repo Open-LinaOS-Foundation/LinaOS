@@ -2,10 +2,10 @@
 #ifndef _LINUX_FRONTSWAP_H
 #define _LINUX_FRONTSWAP_H
 
-#include <linux/swap.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/jump_label.h>
+#include <linaos/swap.h>
+#include <linaos/mm.h>
+#include <linaos/bitops.h>
+#include <linaos/jump_label.h>
 
 /*
  * Return code to denote that requested number of

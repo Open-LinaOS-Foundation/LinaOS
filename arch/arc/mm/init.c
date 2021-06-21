@@ -3,16 +3,16 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
 #ifdef CONFIG_BLK_DEV_INITRD
-#include <linux/initrd.h>
+#include <linaos/initrd.h>
 #endif
-#include <linux/of_fdt.h>
-#include <linux/swap.h>
-#include <linux/module.h>
-#include <linux/highmem.h>
+#include <linaos/of_fdt.h>
+#include <linaos/swap.h>
+#include <linaos/module.h>
+#include <linaos/highmem.h>
 #include <asm/page.h>
 #include <asm/sections.h>
 #include <asm/arcregs.h>

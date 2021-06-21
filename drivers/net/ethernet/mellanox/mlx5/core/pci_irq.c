@@ -1,13 +1,13 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/module.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/module.h>
+#include <linaos/mlx5/driver.h>
 #include "mlx5_core.h"
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <linaos/cpu_rmap.h>
 #endif
 
 #define MLX5_MAX_IRQ_NAME (32)

@@ -5,10 +5,10 @@
  *  Copyright (C) 2000 Russell King
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 struct tag;
 struct pt_regs;

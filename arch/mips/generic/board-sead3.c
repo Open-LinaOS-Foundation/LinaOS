@@ -6,10 +6,10 @@
 
 #define pr_fmt(fmt) "sead3: " fmt
 
-#include <linux/errno.h>
-#include <linux/libfdt.h>
-#include <linux/printk.h>
-#include <linux/sizes.h>
+#include <linaos/errno.h>
+#include <linaos/libfdt.h>
+#include <linaos/printk.h>
+#include <linaos/sizes.h>
 
 #include <asm/fw/fw.h>
 #include <asm/io.h>

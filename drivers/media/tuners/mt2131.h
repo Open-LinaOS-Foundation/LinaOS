@@ -2,7 +2,7 @@
 /*
  *  Driver for Microtune MT2131 "QAM/8VSB single chip tuner"
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@linaostv.org>
  */
 
 #ifndef __MT2131_H__

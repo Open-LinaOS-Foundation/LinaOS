@@ -5,9 +5,9 @@
 
 #include <net/ip.h>
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/ipv6.h>
+#include <linaos/ipv6.h>
 #endif
-#include <uapi/linux/errqueue.h>
+#include <uapi/linaos/errqueue.h>
 
 #define SKB_EXT_ERR(skb) ((struct sock_exterr_skb *) ((skb)->cb))
 

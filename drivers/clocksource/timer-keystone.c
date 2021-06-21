@@ -7,12 +7,12 @@
  * Author: Ivan Khoronzhuk <ivan.khoronzhuk@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/clk.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #define TIMER_NAME			"timer-keystone"
 

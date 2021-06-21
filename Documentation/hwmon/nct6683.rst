@@ -13,7 +13,7 @@ Supported chips:
 
 Authors:
 
-	Guenter Roeck <linux@roeck-us.net>
+	Guenter Roeck <linaos@roeck-us.net>
 
 Description
 -----------

@@ -2,9 +2,9 @@
 /*
  * Copyright Altera Corporation (C) 2016. All rights reserved.
  */
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
+#include <linaos/io.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_address.h>
 
 #include "core.h"
 

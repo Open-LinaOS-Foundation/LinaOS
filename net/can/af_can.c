@@ -40,26 +40,26 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/uaccess.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/can/can-ml.h>
-#include <linux/ratelimit.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/rcupdate.h>
+#include <linaos/uaccess.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/socket.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/can.h>
+#include <linaos/can/core.h>
+#include <linaos/can/skb.h>
+#include <linaos/can/can-ml.h>
+#include <linaos/ratelimit.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 

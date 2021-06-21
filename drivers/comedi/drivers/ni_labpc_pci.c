@@ -20,8 +20,8 @@
  * 340914a (pci-1200)
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 
 #include "../comedi_pci.h"
 

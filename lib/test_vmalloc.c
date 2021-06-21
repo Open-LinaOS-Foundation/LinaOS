@@ -4,19 +4,19 @@
  * Test module for stress and analyze performance of vmalloc allocator.
  * (C) 2018 Uladzislau Rezki (Sony) <urezki@gmail.com>
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
-#include <linux/kthread.h>
-#include <linux/moduleparam.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/rwsem.h>
-#include <linux/mm.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/vmalloc.h>
+#include <linaos/random.h>
+#include <linaos/kthread.h>
+#include <linaos/moduleparam.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/rwsem.h>
+#include <linaos/mm.h>
+#include <linaos/rcupdate.h>
+#include <linaos/slab.h>
 
 #define __param(type, name, init, msg)		\
 	static type name = init;				\

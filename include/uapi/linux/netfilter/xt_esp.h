@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_ESP_H
 #define _XT_ESP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct xt_esp {
 	__u32 spis[2];	/* Security Parameter Index */

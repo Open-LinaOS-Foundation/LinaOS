@@ -6,19 +6,19 @@
  * Copyright (C) 2004 Kay Sievers <kay.sievers@vrfy.org>
  */
 
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kexec.h>
-#include <linux/profile.h>
-#include <linux/stat.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/compiler.h>
+#include <linaos/kobject.h>
+#include <linaos/string.h>
+#include <linaos/sysfs.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/kexec.h>
+#include <linaos/profile.h>
+#include <linaos/stat.h>
+#include <linaos/sched.h>
+#include <linaos/capability.h>
+#include <linaos/compiler.h>
 
-#include <linux/rcupdate.h>	/* rcu_expedited and rcu_normal */
+#include <linaos/rcupdate.h>	/* rcu_expedited and rcu_normal */
 
 #define KERNEL_ATTR_RO(_name) \
 static struct kobj_attribute _name##_attr = __ATTR_RO(_name)

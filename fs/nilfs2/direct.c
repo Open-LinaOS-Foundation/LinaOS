@@ -7,7 +7,7 @@
  * Written by Koji Sato.
  */
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include "nilfs.h"
 #include "page.h"
 #include "direct.h"

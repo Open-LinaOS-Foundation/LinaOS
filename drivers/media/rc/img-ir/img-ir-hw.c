@@ -10,11 +10,11 @@
  * resulting input.
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
 #include <media/rc-core.h>
 #include "img-ir.h"
 

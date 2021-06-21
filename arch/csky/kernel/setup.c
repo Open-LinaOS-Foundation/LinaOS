@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/console.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/start_kernel.h>
-#include <linux/dma-map-ops.h>
-#include <linux/screen_info.h>
+#include <linaos/console.h>
+#include <linaos/memblock.h>
+#include <linaos/initrd.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/start_kernel.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/screen_info.h>
 #include <asm/sections.h>
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>

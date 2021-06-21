@@ -9,7 +9,7 @@
 
 #include <sound/pcm.h>
 #include <sound/soc.h>
-#include <linux/dmaengine.h>
+#include <linaos/dmaengine.h>
 
 /**
  * snd_pcm_substream_to_dma_direction - Get dma_transfer_direction for a PCM

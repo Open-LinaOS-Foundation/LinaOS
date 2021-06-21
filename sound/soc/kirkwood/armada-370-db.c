@@ -5,14 +5,14 @@
  * Thomas Petazzoni <thomas.petazzoni@free-electrons.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 #include <sound/soc.h>
-#include <linux/of.h>
-#include <linux/platform_data/asoc-kirkwood.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/asoc-kirkwood.h>
 #include "../codecs/cs42l51.h"
 
 static int a370db_hw_params(struct snd_pcm_substream *substream,

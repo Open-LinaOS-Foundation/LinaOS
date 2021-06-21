@@ -16,7 +16,7 @@ FUNCTIONALITY CONSTANTS
 -----------------------
 
 For the most up-to-date list of functionality constants, please check
-<uapi/linux/i2c.h>!
+<uapi/linaos/i2c.h>!
 
   =============================== ==============================================
   I2C_FUNC_I2C                    Plain i2c-level commands (Pure SMBus

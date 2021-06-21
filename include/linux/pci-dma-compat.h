@@ -5,7 +5,7 @@
 #ifndef _ASM_GENERIC_PCI_DMA_COMPAT_H
 #define _ASM_GENERIC_PCI_DMA_COMPAT_H
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 /* This defines the direction arg to the DMA mapping routines. */
 #define PCI_DMA_BIDIRECTIONAL	DMA_BIDIRECTIONAL

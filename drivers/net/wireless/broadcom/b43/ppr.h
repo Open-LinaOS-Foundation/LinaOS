@@ -2,7 +2,7 @@
 #ifndef LINUX_B43_PPR_H_
 #define LINUX_B43_PPR_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define B43_PPR_CCK_RATES_NUM		4
 #define B43_PPR_OFDM_RATES_NUM		8

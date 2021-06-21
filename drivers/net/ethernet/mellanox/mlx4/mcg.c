@@ -31,12 +31,12 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/etherdevice.h>
+#include <linaos/string.h>
+#include <linaos/etherdevice.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/qp.h>
-#include <linux/export.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/mlx4/qp.h>
+#include <linaos/export.h>
 
 #include "mlx4.h"
 

@@ -5,14 +5,14 @@
  * Derived from driver/rtc/rtc-au1xxx.c
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/rtc.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
 #include <loongson1.h>
 
 #define LS1X_RTC_REG_OFFSET	(LS1X_RTC_BASE + 0x20)

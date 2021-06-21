@@ -3,15 +3,15 @@
  * Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/bitfield.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 /* FIC Registers */
 #define AL_FIC_CAUSE		0x00

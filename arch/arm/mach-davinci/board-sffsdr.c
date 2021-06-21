@@ -10,23 +10,23 @@
  * Copyright (C) 2007 MontaVista Software, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/property.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/property.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
 
 #include <mach/common.h>
-#include <linux/platform_data/i2c-davinci.h>
+#include <linaos/platform_data/i2c-davinci.h>
 #include <mach/serial.h>
 #include <mach/mux.h>
-#include <linux/platform_data/usb-davinci.h>
+#include <linaos/platform_data/usb-davinci.h>
 
 #include "davinci.h"
 
@@ -39,13 +39,13 @@ static struct mtd_partition davinci_sffsdr_nandflash_partition[] = {
 	 * Integrity Data:     Blocks 100-END
 	 */
 	{
-		.name		= "Linux Kernel",
+		.name		= "LinaOS Kernel",
 		.offset		= 32 * SZ_128K,
 		.size		= 16 * SZ_128K, /* 2 Mb */
 		.mask_flags	= MTD_WRITEABLE, /* Force read-only */
 	},
 	{
-		.name		= "Linux ROOT",
+		.name		= "LinaOS ROOT",
 		.offset		= MTDPART_OFS_APPEND,
 		.size		= 256 * SZ_128K, /* 32 Mb */
 		.mask_flags	= 0, /* R/W */

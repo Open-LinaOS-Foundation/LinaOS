@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/cache-v4wb.S
+ *  linaos/arch/arm/mm/cache-v4wb.S
  *
  *  Copyright (C) 1997-2002 Russell king
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/assembler.h>
 #include <asm/memory.h>
 #include <asm/page.h>

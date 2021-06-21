@@ -9,9 +9,9 @@
 #ifndef _ASM_GENERIC_HYPERV_TLFS_H
 #define _ASM_GENERIC_HYPERV_TLFS_H
 
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/time64.h>
+#include <linaos/types.h>
+#include <linaos/bits.h>
+#include <linaos/time64.h>
 
 /*
  * While not explicitly listed in the TLFS, Hyper-V always runs with a page size
@@ -109,18 +109,18 @@ struct ms_hyperv_tsc_page {
  *
  * msdn.microsoft.com/en-us/library/windows/hardware/ff542653%28v=vs.85%29.aspx
  *
- * While the current guideline does not specify how Linux guest ID(s)
+ * While the current guideline does not specify how LinaOS guest ID(s)
  * need to be generated, our plan is to publish the guidelines for
- * Linux and other guest operating systems that currently are hosted
+ * LinaOS and other guest operating systems that currently are hosted
  * on Hyper-V. The implementation here conforms to this yet
  * unpublished guidelines.
  *
  *
  * Bit(s)
  * 63 - Indicates if the OS is Open Source or not; 1 is Open Source
- * 62:56 - Os Type; Linux is 0x100
+ * 62:56 - Os Type; LinaOS is 0x100
  * 55:48 - Distro specific identification
- * 47:16 - Linux kernel version number
+ * 47:16 - LinaOS kernel version number
  * 15:0  - Distro specific identification
  *
  *

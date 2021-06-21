@@ -27,7 +27,7 @@
 		MATRIX_KEY(0x01, 0x09, 0)	/* T9 */
 		MATRIX_KEY(0x00, 0x04, 0)	/* T10 */
 	>;
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(0x00, 0x02, KEY_BACK)
 		MATRIX_KEY(0x03, 0x02, KEY_REFRESH)
 		MATRIX_KEY(0x02, 0x02, KEY_ZOOM)

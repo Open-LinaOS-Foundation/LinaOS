@@ -7,11 +7,11 @@
  *	Boris Brezillon <boris.brezillon@bootlin.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/of_graph.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/of_graph.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

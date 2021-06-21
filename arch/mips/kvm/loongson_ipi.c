@@ -8,7 +8,7 @@
  * Authors: Huacai Chen <chenhc@lemote.com>
  */
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #define IPI_BASE            0x3ff01000ULL
 

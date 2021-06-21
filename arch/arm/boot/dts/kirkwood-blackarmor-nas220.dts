@@ -37,13 +37,13 @@
 
 		reset {
 			label = "Reset";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
 		};
 
 		button {
 			label = "Power";
-			linux,code = <KEY_SLEEP>;
+			linaos,code = <KEY_SLEEP>;
 			gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -54,7 +54,7 @@
 		blue-power {
 			label = "nas220:blue:power";
 			gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 

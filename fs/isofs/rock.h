@@ -74,7 +74,7 @@ struct RR_TF_s {
 	struct stamp times[];	/* Variable number of these beasts */
 } __attribute__ ((packed));
 
-/* Linux-specific extension for transparent decompression */
+/* LinaOS-specific extension for transparent decompression */
 struct RR_ZF_s {
 	__u8 algorithm[2];
 	__u8 parms[2];

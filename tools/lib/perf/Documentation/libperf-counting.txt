@@ -198,7 +198,7 @@ We close the whole events list (both events) and remove it together with the thr
 
 REPORTING BUGS
 --------------
-Report bugs to <linux-perf-users@vger.kernel.org>.
+Report bugs to <linaos-perf-users@vger.kernel.org>.
 
 LICENSE
 -------
@@ -206,7 +206,7 @@ libperf is Free Software licensed under the GNU LGPL 2.1
 
 RESOURCES
 ---------
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git
 
 SEE ALSO
 --------

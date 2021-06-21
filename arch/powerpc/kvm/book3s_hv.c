@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright 2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE LinaOS Products GmbH. All rights reserved.
  *
  * Authors:
  *    Paul Mackerras <paulus@au1.ibm.com>
@@ -15,33 +15,33 @@
  * by Alexander Graf <agraf@suse.de>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/stat.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/page-flags.h>
-#include <linux/srcu.h>
-#include <linux/miscdevice.h>
-#include <linux/debugfs.h>
-#include <linux/gfp.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/irqbypass.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/of.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/preempt.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/stat.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
+#include <linaos/fs.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/spinlock.h>
+#include <linaos/page-flags.h>
+#include <linaos/srcu.h>
+#include <linaos/miscdevice.h>
+#include <linaos/debugfs.h>
+#include <linaos/gfp.h>
+#include <linaos/vmalloc.h>
+#include <linaos/highmem.h>
+#include <linaos/hugetlb.h>
+#include <linaos/kvm_irqfd.h>
+#include <linaos/irqbypass.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/of.h>
 
 #include <asm/ftrace.h>
 #include <asm/reg.h>
@@ -52,7 +52,7 @@
 #include <asm/disassemble.h>
 #include <asm/cputable.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/interrupt.h>
 #include <asm/io.h>
 #include <asm/kvm_ppc.h>

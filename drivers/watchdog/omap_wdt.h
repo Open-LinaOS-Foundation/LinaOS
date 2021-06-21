@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
- *  linux/drivers/char/watchdog/omap_wdt.h
+ *  linaos/drivers/char/watchdog/omap_wdt.h
  *
  *  BRIEF MODULE DESCRIPTION
  *      OMAP Watchdog timer register definitions

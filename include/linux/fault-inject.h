@@ -4,10 +4,10 @@
 
 #ifdef CONFIG_FAULT_INJECTION
 
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/ratelimit.h>
-#include <linux/atomic.h>
+#include <linaos/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/ratelimit.h>
+#include <linaos/atomic.h>
 
 /*
  * For explanation of the elements of this struct, see

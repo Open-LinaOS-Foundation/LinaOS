@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/dma-mapping.h>
 #include "ahb.h"
 #include "debug.h"
 #include "hif.h"
-#include <linux/remoteproc.h>
+#include <linaos/remoteproc.h>
 
 static const struct of_device_id ath11k_ahb_of_match[] = {
 	/* TODO: Should we change the compatible string to something similar

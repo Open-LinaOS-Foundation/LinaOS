@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies. */
 
-#include <linux/smp.h>
+#include <linaos/smp.h>
 #include "dr_types.h"
 
 #define QUEUE_SIZE 128

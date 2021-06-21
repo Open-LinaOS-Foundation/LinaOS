@@ -21,7 +21,7 @@
 		power {
 			label = "Wake-Up";
 			gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};

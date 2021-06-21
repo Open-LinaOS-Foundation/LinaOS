@@ -2,7 +2,7 @@
 #ifndef __ORDERED_EVENTS_H
 #define __ORDERED_EVENTS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct perf_sample;
 

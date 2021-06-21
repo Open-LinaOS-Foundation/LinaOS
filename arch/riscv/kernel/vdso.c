@@ -6,11 +6,11 @@
  * Copyright (C) 2015 Regents of the University of California
  */
 
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/binfmts.h>
-#include <linux/err.h>
+#include <linaos/elf.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/binfmts.h>
+#include <linaos/err.h>
 #include <asm/page.h>
 #ifdef CONFIG_GENERIC_TIME_VSYSCALL
 #include <vdso/datapage.h>
@@ -56,7 +56,7 @@ static int __init vdso_init(void)
 }
 arch_initcall(vdso_init);
 
-int arch_setup_additional_pages(struct linux_binprm *bprm,
+int arch_setup_additional_pages(struct linaos_binprm *bprm,
 	int uses_interp)
 {
 	struct mm_struct *mm = current->mm;

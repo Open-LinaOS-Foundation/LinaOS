@@ -1,71 +1,71 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/exit.c
+ *  linaos/kernel/exit.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/completion.h>
-#include <linux/personality.h>
-#include <linux/tty.h>
-#include <linux/iocontext.h>
-#include <linux/key.h>
-#include <linux/cpu.h>
-#include <linux/acct.h>
-#include <linux/tsacct_kern.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/freezer.h>
-#include <linux/binfmts.h>
-#include <linux/nsproxy.h>
-#include <linux/pid_namespace.h>
-#include <linux/ptrace.h>
-#include <linux/profile.h>
-#include <linux/mount.h>
-#include <linux/proc_fs.h>
-#include <linux/kthread.h>
-#include <linux/mempolicy.h>
-#include <linux/taskstats_kern.h>
-#include <linux/delayacct.h>
-#include <linux/cgroup.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/posix-timers.h>
-#include <linux/cn_proc.h>
-#include <linux/mutex.h>
-#include <linux/futex.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/audit.h> /* for audit_free() */
-#include <linux/resource.h>
-#include <linux/blkdev.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/tracehook.h>
-#include <linux/fs_struct.h>
-#include <linux/init_task.h>
-#include <linux/perf_event.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/sched/autogroup.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/stat.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/cputime.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/capability.h>
+#include <linaos/completion.h>
+#include <linaos/personality.h>
+#include <linaos/tty.h>
+#include <linaos/iocontext.h>
+#include <linaos/key.h>
+#include <linaos/cpu.h>
+#include <linaos/acct.h>
+#include <linaos/tsacct_kern.h>
+#include <linaos/file.h>
+#include <linaos/fdtable.h>
+#include <linaos/freezer.h>
+#include <linaos/binfmts.h>
+#include <linaos/nsproxy.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/ptrace.h>
+#include <linaos/profile.h>
+#include <linaos/mount.h>
+#include <linaos/proc_fs.h>
+#include <linaos/kthread.h>
+#include <linaos/mempolicy.h>
+#include <linaos/taskstats_kern.h>
+#include <linaos/delayacct.h>
+#include <linaos/cgroup.h>
+#include <linaos/syscalls.h>
+#include <linaos/signal.h>
+#include <linaos/posix-timers.h>
+#include <linaos/cn_proc.h>
+#include <linaos/mutex.h>
+#include <linaos/futex.h>
+#include <linaos/pipe_fs_i.h>
+#include <linaos/audit.h> /* for audit_free() */
+#include <linaos/resource.h>
+#include <linaos/blkdev.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/tracehook.h>
+#include <linaos/fs_struct.h>
+#include <linaos/init_task.h>
+#include <linaos/perf_event.h>
 #include <trace/events/sched.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/oom.h>
-#include <linux/writeback.h>
-#include <linux/shm.h>
-#include <linux/kcov.h>
-#include <linux/random.h>
-#include <linux/rcuwait.h>
-#include <linux/compat.h>
-#include <linux/io_uring.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/oom.h>
+#include <linaos/writeback.h>
+#include <linaos/shm.h>
+#include <linaos/kcov.h>
+#include <linaos/random.h>
+#include <linaos/rcuwait.h>
+#include <linaos/compat.h>
+#include <linaos/io_uring.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/mmu_context.h>
 

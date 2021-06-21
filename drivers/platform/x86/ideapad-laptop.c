@@ -8,28 +8,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/i8042.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/platform_profile.h>
-#include <linux/rfkill.h>
-#include <linux/seq_file.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/backlight.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/debugfs.h>
+#include <linaos/device.h>
+#include <linaos/dmi.h>
+#include <linaos/fb.h>
+#include <linaos/i8042.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_profile.h>
+#include <linaos/rfkill.h>
+#include <linaos/seq_file.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
 
 #include <acpi/video.h>
 

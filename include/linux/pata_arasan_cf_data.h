@@ -1,5 +1,5 @@
 /*
- * include/linux/pata_arasan_cf_data.h
+ * include/linaos/pata_arasan_cf_data.h
  *
  * Arasan Compact Flash host controller platform data header file
  *
@@ -14,7 +14,7 @@
 #ifndef _PATA_ARASAN_CF_DATA_H
 #define _PATA_ARASAN_CF_DATA_H
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 struct arasan_cf_pdata {
 	u8 cf_if_clk;

@@ -12,7 +12,7 @@
 #if !defined(_TRACE_VFIO_PCI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_VFIO_PCI_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(vfio_pci_nvgpu_mmap_fault,
 	TP_PROTO(struct pci_dev *pdev, unsigned long hpa, unsigned long ua,

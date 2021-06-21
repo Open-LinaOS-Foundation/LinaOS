@@ -7,12 +7,12 @@
  *
  **************************************************************************/
 
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
 
 #include <asm/set_memory.h>
 

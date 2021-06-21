@@ -2,17 +2,17 @@
 /*
  * ADLX345/346 Three-Axis Digital Accelerometers (I2C Interface)
  *
- * Enter bugs at http://blackfin.uclinux.org/
+ * Enter bugs at http://blackfin.uclinaos.org/
  *
  * Copyright (C) 2009 Michael Hennerich, Analog Devices Inc.
  */
 
-#include <linux/input.h>	/* BUS_I2C */
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/types.h>
-#include <linux/pm.h>
+#include <linaos/input.h>	/* BUS_I2C */
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/types.h>
+#include <linaos/pm.h>
 #include "adxl34x.h"
 
 static int adxl34x_smbus_read(struct device *dev, unsigned char reg)
@@ -166,6 +166,6 @@ static struct i2c_driver adxl34x_driver = {
 
 module_i2c_driver(adxl34x_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinaos.org>");
 MODULE_DESCRIPTION("ADXL345/346 Three-Axis Digital Accelerometer I2C Bus Driver");
 MODULE_LICENSE("GPL");

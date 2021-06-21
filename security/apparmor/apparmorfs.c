@@ -8,22 +8,22 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/ctype.h>
-#include <linux/security.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/capability.h>
-#include <linux/rcupdate.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/poll.h>
-#include <linux/zlib.h>
-#include <uapi/linux/major.h>
-#include <uapi/linux/magic.h>
+#include <linaos/ctype.h>
+#include <linaos/security.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/seq_file.h>
+#include <linaos/uaccess.h>
+#include <linaos/mount.h>
+#include <linaos/namei.h>
+#include <linaos/capability.h>
+#include <linaos/rcupdate.h>
+#include <linaos/fs.h>
+#include <linaos/fs_context.h>
+#include <linaos/poll.h>
+#include <linaos/zlib.h>
+#include <uapi/linaos/major.h>
+#include <uapi/linaos/magic.h>
 
 #include "include/apparmor.h"
 #include "include/apparmorfs.h"

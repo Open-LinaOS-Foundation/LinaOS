@@ -2,7 +2,7 @@
 /*
  * Timer support for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_TIMER_REGS_H

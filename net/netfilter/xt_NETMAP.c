@@ -4,15 +4,15 @@
  * Copyright (c) 2011 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/ipv6.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/x_tables.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/ipv6.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter/x_tables.h>
 #include <net/netfilter/nf_nat.h>
 
 static unsigned int

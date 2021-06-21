@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio T4 Ethernet driver for Linux.
+ * This file is part of the Chelsio T4 Ethernet driver for LinaOS.
  *
  * Copyright (c) 2003-2016 Chelsio Communications, Inc. All rights reserved.
  *
@@ -37,23 +37,23 @@
 
 #include "t4_hw.h"
 
-#include <linux/bitops.h>
-#include <linux/cache.h>
-#include <linux/ethtool.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/rhashtable.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/ptp_classify.h>
-#include <linux/crash_dump.h>
-#include <linux/thermal.h>
+#include <linaos/bitops.h>
+#include <linaos/cache.h>
+#include <linaos/ethtool.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/vmalloc.h>
+#include <linaos/rhashtable.h>
+#include <linaos/etherdevice.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/ptp_classify.h>
+#include <linaos/crash_dump.h>
+#include <linaos/thermal.h>
 #include <asm/io.h>
 #include "t4_chip_type.h"
 #include "cxgb4_uld.h"

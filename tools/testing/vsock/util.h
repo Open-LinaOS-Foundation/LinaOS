@@ -3,7 +3,7 @@
 #define UTIL_H
 
 #include <sys/socket.h>
-#include <linux/vm_sockets.h>
+#include <linaos/vm_sockets.h>
 
 /* Tests can either run as the client or the server */
 enum test_mode {

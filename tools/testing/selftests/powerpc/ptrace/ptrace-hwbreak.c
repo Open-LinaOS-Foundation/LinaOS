@@ -21,7 +21,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/syscall.h>
-#include <linux/limits.h>
+#include <linaos/limits.h>
 #include "ptrace.h"
 
 #define SPRN_PVR	0x11F

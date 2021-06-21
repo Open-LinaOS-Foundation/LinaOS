@@ -13,7 +13,7 @@
  *	     Deniz Karakoyunlu
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/frame.h>
 
 .section	.rodata.cst16.bswap_mask, "aM", @progbits, 16

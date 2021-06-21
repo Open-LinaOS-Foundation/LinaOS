@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  * Copyright (C) 2001-2004 Aurelien Jarno <aurelien@aurel32.net>
- * Ported to Linux 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
+ * Ported to LinaOS 2.6 by Aurelien Jarno <aurelien@aurel32.net> with
  * the help of Jean Delvare <jdelvare@suse.de>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
 
 /* Insmod parameters */
 

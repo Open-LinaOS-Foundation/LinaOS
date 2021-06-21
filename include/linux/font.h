@@ -11,7 +11,7 @@
 #ifndef _VIDEO_FONT_H
 #define _VIDEO_FONT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct font_desc {
     int idx;

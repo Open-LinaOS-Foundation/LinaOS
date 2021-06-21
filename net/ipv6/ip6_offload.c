@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPV6 GSO/GRO offload support
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  */
 
-#include <linux/kernel.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/printk.h>
+#include <linaos/kernel.h>
+#include <linaos/socket.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/printk.h>
 
 #include <net/protocol.h>
 #include <net/ipv6.h>

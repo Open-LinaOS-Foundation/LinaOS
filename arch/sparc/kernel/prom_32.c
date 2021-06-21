@@ -11,11 +11,11 @@
  *  Adapted for sparc32 by David S. Miller davem@davemloft.net
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
 
 #include <asm/prom.h>
 #include <asm/oplib.h>
@@ -57,7 +57,7 @@ void * __init prom_early_alloc(unsigned long size)
 static void __init sparc32_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom_registers *regs;
+	struct linaos_prom_registers *regs;
 	struct property *rprop;
 
 	rprop = of_find_property(dp, "reg", NULL);
@@ -74,7 +74,7 @@ static void __init sparc32_path_component(struct device_node *dp, char *tmp_buf)
 static void __init sbus_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom_registers *regs;
+	struct linaos_prom_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);
@@ -92,7 +92,7 @@ static void __init sbus_path_component(struct device_node *dp, char *tmp_buf)
 static void __init pci_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom_pci_registers *regs;
+	struct linaos_prom_pci_registers *regs;
 	struct property *prop;
 	unsigned int devfn;
 
@@ -118,7 +118,7 @@ static void __init pci_path_component(struct device_node *dp, char *tmp_buf)
 static void __init ebus_path_component(struct device_node *dp, char *tmp_buf)
 {
 	const char *name = of_get_property(dp, "name", NULL);
-	struct linux_prom_registers *regs;
+	struct linaos_prom_registers *regs;
 	struct property *prop;
 
 	prop = of_find_property(dp, "reg", NULL);

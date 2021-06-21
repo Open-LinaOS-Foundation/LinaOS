@@ -8,12 +8,12 @@
 #ifndef _NETROM_H
 #define _NETROM_H 
 
-#include <linux/netrom.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/netrom.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
-#include <linux/refcount.h>
-#include <linux/seq_file.h>
+#include <linaos/refcount.h>
+#include <linaos/seq_file.h>
 
 #define	NR_NETWORK_LEN			15
 #define	NR_TRANSPORT_LEN		5

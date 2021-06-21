@@ -6,7 +6,7 @@
 #ifndef I915_TIMELINE_H
 #define I915_TIMELINE_H
 
-#include <linux/lockdep.h>
+#include <linaos/lockdep.h>
 
 #include "i915_active.h"
 #include "i915_syncmap.h"

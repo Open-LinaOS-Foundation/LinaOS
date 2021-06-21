@@ -3,8 +3,8 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/pm.h>
-#include <linux/acpi.h>
+#include <linaos/pm.h>
+#include <linaos/acpi.h>
 
 struct usb_hub_descriptor;
 struct usb_dev_state;

@@ -6,13 +6,13 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/stat.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
 #include <net/sock.h>
 
 #include "usbip_common.h"

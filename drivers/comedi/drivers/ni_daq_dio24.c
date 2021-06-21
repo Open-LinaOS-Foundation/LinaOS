@@ -22,7 +22,7 @@
  * the PCMCIA interface.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedi_pcmcia.h"
 
 #include "8255.h"

@@ -5,7 +5,7 @@
  * Copyright (c) 2018, Oracle and/or its affiliates
  */
 
-#include <linux/moduleparam.h>
+#include <linaos/moduleparam.h>
 #include "nvme.h"
 
 static DECLARE_FAULT_ATTR(fail_default_attr);

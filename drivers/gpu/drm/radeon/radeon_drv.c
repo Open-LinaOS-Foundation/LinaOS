@@ -2,11 +2,11 @@
  * \file radeon_drv.c
  * ATI Radeon driver
  *
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Gareth Hughes <gareth@valinaos.com>
  */
 
 /*
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -30,13 +30,13 @@
  */
 
 
-#include <linux/compat.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/mmu_notifier.h>
-#include <linux/pci.h>
+#include <linaos/compat.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/vga_switcheroo.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_agpsupport.h>
 #include <drm/drm_crtc_helper.h>

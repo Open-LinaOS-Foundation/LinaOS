@@ -9,12 +9,12 @@
 
 #define pr_fmt(fmt) "energy_model: " fmt
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/debugfs.h>
-#include <linux/energy_model.h>
-#include <linux/sched/topology.h>
-#include <linux/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/debugfs.h>
+#include <linaos/energy_model.h>
+#include <linaos/sched/topology.h>
+#include <linaos/slab.h>
 
 /*
  * Mutex serializing the registrations of performance domains and letting

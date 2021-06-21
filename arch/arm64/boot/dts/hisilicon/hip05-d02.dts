@@ -35,7 +35,7 @@
 		pwrbutton {
 			label = "Power Button";
 			gpios = <&porta 8 GPIO_ACTIVE_LOW>;
-			linux,code = <116>;
+			linaos,code = <116>;
 			debounce-interval = <0>;
 		};
 	};
@@ -68,7 +68,7 @@
 			reg = <0x0 0x300000>;
 		};
 		partition@300000 {
-			label = "Linux";
+			label = "LinaOS";
 			reg = <0x300000 0xa00000>;
 		};
 		partition@1000000 {

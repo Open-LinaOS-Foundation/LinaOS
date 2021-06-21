@@ -30,7 +30,7 @@ Whole project consists of four parts:
 
 [Requirements]
     - USB/IP device drivers
-        Found in the drivers/usb/usbip/ directory of the Linux kernel tree.
+        Found in the drivers/usb/usbip/ directory of the LinaOS kernel tree.
 
     - libudev >= 2.0
 	libudev library
@@ -249,9 +249,9 @@ Detach the imported device:
       (using USB gadget susbsys, not usbip bind command)
     - Shutdown firewall.
 	- usbip now uses TCP port 3240.
-    - Disable SELinux.
+    - Disable SELinaOS.
     - Check the kernel and daemon messages.
 
 
 [Contact]
-    Mailing List: linux-usb@vger.kernel.org
+    Mailing List: linaos-usb@vger.kernel.org

@@ -1,15 +1,15 @@
 /*
  * Copyright (C) 2003 PathScale, Inc.
- * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2003 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  * Licensed under the GPL
  */
 
 
-#include <linux/personality.h>
-#include <linux/ptrace.h>
-#include <linux/kernel.h>
+#include <linaos/personality.h>
+#include <linaos/ptrace.h>
+#include <linaos/kernel.h>
 #include <asm/unistd.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/ucontext.h>
 #include <frame_kern.h>
 #include <skas.h>

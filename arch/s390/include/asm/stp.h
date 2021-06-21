@@ -6,7 +6,7 @@
 #ifndef __S390_STP_H
 #define __S390_STP_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /* notifier for syncs */
 extern struct atomic_notifier_head s390_epoch_delta_notifier;

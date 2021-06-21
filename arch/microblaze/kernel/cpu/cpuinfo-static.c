@@ -8,9 +8,9 @@
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
 #include <asm/cpuinfo.h>
 #include <asm/pvr.h>
 

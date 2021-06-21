@@ -4,12 +4,12 @@
  * Author: Shannon Zhao <shannon.zhao@linaro.org>
  */
 
-#include <linux/cpu.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/perf_event.h>
-#include <linux/perf/arm_pmu.h>
-#include <linux/uaccess.h>
+#include <linaos/cpu.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/perf_event.h>
+#include <linaos/perf/arm_pmu.h>
+#include <linaos/uaccess.h>
 #include <asm/kvm_emulate.h>
 #include <kvm/arm_pmu.h>
 #include <kvm/arm_vgic.h>

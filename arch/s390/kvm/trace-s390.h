@@ -2,7 +2,7 @@
 #if !defined(_TRACE_KVMS390_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KVMS390_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM kvm-s390

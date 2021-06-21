@@ -6,21 +6,21 @@
  *  David Lebrun <david.lebrun@uclouvain.be>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
-#include <linux/mroute6.h>
-#include <linux/slab.h>
-#include <linux/rhashtable.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/in6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/mroute6.h>
+#include <linaos/slab.h>
+#include <linaos/rhashtable.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv6.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -38,7 +38,7 @@
 #include <net/seg6.h>
 #include <net/genetlink.h>
 #include <net/seg6_hmac.h>
-#include <linux/random.h>
+#include <linaos/random.h>
 
 static DEFINE_PER_CPU(char [SEG6_HMAC_RING_SIZE], hmac_ring);
 

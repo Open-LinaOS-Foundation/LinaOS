@@ -22,9 +22,9 @@
  *
  */
 
-#include <linux/bits.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <linaos/bits.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
 #include "device.h"
 #include "mac.h"
 #include "baseband.h"

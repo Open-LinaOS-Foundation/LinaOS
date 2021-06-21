@@ -9,8 +9,8 @@
 #include "habanalabs.h"
 #include "../include/hw_ip/mmu/mmu_general.h"
 
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
 
 #define HL_MMU_DEBUG	0
 

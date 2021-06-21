@@ -13,9 +13,9 @@
 #include <sound/seq_oss_legacy.h>
 #include "../seq_lock.h"
 #include "../seq_clientmgr.h"
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 
 
 /*

@@ -76,21 +76,21 @@
  *	* Comb the init routine.  It's still a bit cludgy on a few things.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/ioctl.h>
 #include <asm/io.h>
-#include <linux/pci.h>
-#include <linux/mtd/mtd.h>
+#include <linaos/pci.h>
+#include <linaos/mtd/mtd.h>
 
 #define PMC551_VERSION \
 	"Ramix PMC551 PCI Mezzanine Ram Driver. (C) 1999,2000 Nortel Networks.\n"
@@ -338,7 +338,7 @@ static int pmc551_write(struct mtd_info *mtd, loff_t to, size_t len,
  *
  * This function basically kick starts the DRAM oboard the card and gets it
  * ready to be used.  Before this is done the device reads VERY erratic, so
- * much that it can crash the Linux 2.2.x series kernels when a user cat's
+ * much that it can crash the LinaOS 2.2.x series kernels when a user cat's
  * /proc/pci .. though that is mainly a kernel bug in handling the PCI DEVSEL
  * register.  FIXME: stop spinning on registers .. must implement a timeout
  * mechanism

@@ -6,15 +6,15 @@
  * Copyright (c) 2014-2016 Jiri Pirko <jiri@mellanox.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/hashtable.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/hashtable.h>
+#include <linaos/crc32.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/if_bridge.h>
 #include <net/neighbour.h>
 #include <net/switchdev.h>
 #include <net/ip_fib.h>

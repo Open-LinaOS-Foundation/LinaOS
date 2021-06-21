@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2000, 2001 Broadcom Corporation
  */
-#include <linux/init.h>
+#include <linaos/init.h>
 
 extern void sb1250_clocksource_init(void);
 extern void sb1250_clockevent_init(void);

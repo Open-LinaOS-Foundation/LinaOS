@@ -12,8 +12,8 @@
  * Author: Edgar Bernardi Righi <edgar.righi@lsitec.org.br>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/platform_device.h>
 
 #include "owl-common.h"
 #include "owl-composite.h"

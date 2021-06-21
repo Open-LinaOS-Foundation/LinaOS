@@ -3,7 +3,7 @@
  * Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/of_reserved_mem.h>
+#include <linaos/of_reserved_mem.h>
 
 #include "tegra210-emc.h"
 

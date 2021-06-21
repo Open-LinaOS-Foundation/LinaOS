@@ -8,7 +8,7 @@
 #ifndef __NET_STRPARSER_H_
 #define __NET_STRPARSER_H_
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
 
 #define STRP_STATS_ADD(stat, count) ((stat) += (count))

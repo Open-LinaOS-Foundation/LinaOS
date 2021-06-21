@@ -9,10 +9,10 @@
 #ifndef _LINUX_BACKLIGHT_H
 #define _LINUX_BACKLIGHT_H
 
-#include <linux/device.h>
-#include <linux/fb.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
+#include <linaos/device.h>
+#include <linaos/fb.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
 
 /**
  * enum backlight_update_reason - what method was used to update backlight

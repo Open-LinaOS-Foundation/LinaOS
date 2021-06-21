@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/interrupt.h>
 
 #include "lmc_debug.h"
 
@@ -62,4 +62,4 @@ void lmcEventLog(u32 EventNum, u32 arg2, u32 arg3)
 }
 #endif  /*  DEBUG  */
 
-/* --------------------------- end if_lmc_linux.c ------------------------ */
+/* --------------------------- end if_lmc_linaos.c ------------------------ */

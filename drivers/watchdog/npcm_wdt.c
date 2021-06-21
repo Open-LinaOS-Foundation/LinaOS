@@ -2,15 +2,15 @@
 // Copyright (c) 2018 Nuvoton Technology corporation.
 // Copyright (c) 2018 IBM Corp.
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/watchdog.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/watchdog.h>
 
 #define NPCM_WTCR	0x1C
 

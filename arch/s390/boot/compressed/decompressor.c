@@ -7,8 +7,8 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 #include <asm/page.h>
 #include "decompressor.h"
 
@@ -67,11 +67,11 @@ unsigned long mem_safe_offset(void)
 {
 	/*
 	 * due to 4MB HEAD_SIZE for bzip2
-	 * 'decompress_offset + vmlinux.image_size' could be larger than
+	 * 'decompress_offset + vmlinaos.image_size' could be larger than
 	 * kernel at final position + its .bss, so take the larger of two
 	 */
-	return max(decompress_offset + vmlinux.image_size,
-		   vmlinux.default_lma + vmlinux.image_size + vmlinux.bss_size);
+	return max(decompress_offset + vmlinaos.image_size,
+		   vmlinaos.default_lma + vmlinaos.image_size + vmlinaos.bss_size);
 }
 
 void *decompress_kernel(void)

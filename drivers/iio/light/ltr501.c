@@ -9,19 +9,19 @@
  * TODO: IR LED characteristics
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/regmap.h>
+#include <linaos/acpi.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/events.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/triggered_buffer.h>
 
 #define LTR501_DRV_NAME "ltr501"
 

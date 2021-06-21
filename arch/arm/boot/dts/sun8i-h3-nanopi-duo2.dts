@@ -42,7 +42,7 @@
 
 		k1 {
 			label = "k1";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&r_pio 0 3 GPIO_ACTIVE_LOW>; /* PL3 */
 		};
 	};

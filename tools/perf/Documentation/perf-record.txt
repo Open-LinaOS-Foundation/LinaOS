@@ -481,8 +481,8 @@ Path to clang binary to use for compiling BPF scriptlets.
 Options passed to clang when compiling BPF scriptlets.
 (enabled when BPF support is on)
 
---vmlinux=PATH::
-Specify vmlinux path which has debuginfo.
+--vmlinaos=PATH::
+Specify vmlinaos path which has debuginfo.
 (enabled when BPF prologue is on)
 
 --buildid-all::

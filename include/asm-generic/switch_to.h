@@ -10,7 +10,7 @@
 #ifndef __ASM_GENERIC_SWITCH_TO_H
 #define __ASM_GENERIC_SWITCH_TO_H
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 
 /*
  * Context switching is now performed out-of-line in switch_to.S

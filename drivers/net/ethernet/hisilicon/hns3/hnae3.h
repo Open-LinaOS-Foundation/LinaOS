@@ -21,16 +21,16 @@
  * "cb" means control block
  */
 
-#include <linux/acpi.h>
-#include <linux/dcbnl.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pkt_sched.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/dcbnl.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/ethtool.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/pkt_sched.h>
+#include <linaos/types.h>
 #include <net/pkt_cls.h>
 
 #define HNAE3_MOD_VERSION "1.0"

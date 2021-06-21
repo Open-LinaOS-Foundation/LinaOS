@@ -6,9 +6,9 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  */
 
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
+#include <linaos/i2c.h>
+#include <linaos/rtc.h>
+#include <linaos/module.h>
 
 /* Registers */
 

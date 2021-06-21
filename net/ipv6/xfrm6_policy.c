@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
 #include <net/addrconf.h>
 #include <net/dst.h>
 #include <net/xfrm.h>

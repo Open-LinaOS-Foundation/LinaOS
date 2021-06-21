@@ -6,7 +6,7 @@
  * Copyright(c) 2018 - 2019 Intel Corporation
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
@@ -14,7 +14,7 @@
 #if !defined(__IWLWIFI_DEVICE_TRACE_DATA) || defined(TRACE_HEADER_MULTI_READ)
 #define __IWLWIFI_DEVICE_TRACE_DATA
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM iwlwifi_data

@@ -9,17 +9,17 @@
  *
  * Copyright (C) 2008-2014 Mathieu Desnoyers <mathieu.desnoyers@efficios.com>
  *
- * Heavily inspired from the Linux Kernel Markers.
+ * Heavily inspired from the LinaOS Kernel Markers.
  */
 
-#include <linux/smp.h>
-#include <linux/srcu.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
-#include <linux/rcupdate.h>
-#include <linux/tracepoint-defs.h>
-#include <linux/static_call.h>
+#include <linaos/smp.h>
+#include <linaos/srcu.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/cpumask.h>
+#include <linaos/rcupdate.h>
+#include <linaos/tracepoint-defs.h>
+#include <linaos/static_call.h>
 
 struct module;
 struct tracepoint;

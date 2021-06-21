@@ -56,9 +56,9 @@
 #define _ISCI_PROBE_ROMS_H_
 
 #ifdef __KERNEL__
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/efi.h>
+#include <linaos/firmware.h>
+#include <linaos/pci.h>
+#include <linaos/efi.h>
 #include "isci.h"
 
 #define SCIC_SDS_PARM_NO_SPEED   0

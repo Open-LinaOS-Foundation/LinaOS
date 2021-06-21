@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/mmzone.h>
-#include <linux/proc_fs.h>
-#include <linux/percpu.h>
-#include <linux/seq_file.h>
-#include <linux/swap.h>
-#include <linux/vmstat.h>
-#include <linux/atomic.h>
-#include <linux/vmalloc.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/mman.h>
+#include <linaos/mmzone.h>
+#include <linaos/proc_fs.h>
+#include <linaos/percpu.h>
+#include <linaos/seq_file.h>
+#include <linaos/swap.h>
+#include <linaos/vmstat.h>
+#include <linaos/atomic.h>
+#include <linaos/vmalloc.h>
 #ifdef CONFIG_CMA
-#include <linux/cma.h>
+#include <linaos/cma.h>
 #endif
 #include <asm/page.h>
 #include "internal.h"

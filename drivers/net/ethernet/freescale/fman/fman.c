@@ -33,16 +33,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fsl/guts.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/interrupt.h>
-#include <linux/libfdt_env.h>
+#include <linaos/fsl/guts.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/libfdt_env.h>
 
 #include "fman.h"
 #include "fman_muram.h"

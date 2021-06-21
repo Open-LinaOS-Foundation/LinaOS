@@ -30,7 +30,7 @@
 			pinctrl-0 = <&pinctrl_led3>;
 			label = "heartbeat";
 			gpios = <&gpio4 28 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

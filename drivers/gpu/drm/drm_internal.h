@@ -21,7 +21,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 
 #include <drm/drm_ioctl.h>
 #include <drm/drm_vblank.h>

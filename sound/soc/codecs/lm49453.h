@@ -8,7 +8,7 @@
 #ifndef _LM49453_H
 #define _LM49453_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* LM49453_P0 register space for page0 */
 #define LM49453_P0_PMC_SETUP_REG			0x00

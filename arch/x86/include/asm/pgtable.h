@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_PGTABLE_H
 #define _ASM_X86_PGTABLE_H
 
-#include <linux/mem_encrypt.h>
+#include <linaos/mem_encrypt.h>
 #include <asm/page.h>
 #include <asm/pgtable_types.h>
 
@@ -746,9 +746,9 @@ static inline pgd_t pti_set_user_pgtbl(pgd_t *pgdp, pgd_t pgd)
 #endif
 
 #ifndef __ASSEMBLY__
-#include <linux/mm_types.h>
-#include <linux/mmdebug.h>
-#include <linux/log2.h>
+#include <linaos/mm_types.h>
+#include <linaos/mmdebug.h>
+#include <linaos/log2.h>
 #include <asm/fixmap.h>
 
 static inline int pte_none(pte_t pte)
@@ -801,7 +801,7 @@ static inline int pmd_present(pmd_t pmd)
 #ifdef CONFIG_NUMA_BALANCING
 /*
  * These work without NUMA balancing but the kernel does not care. See the
- * comment in include/linux/pgtable.h
+ * comment in include/linaos/pgtable.h
  */
 static inline int pte_protnone(pte_t pte)
 {
@@ -831,7 +831,7 @@ static inline unsigned long pmd_page_vaddr(pmd_t pmd)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linaos/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pmd_page(pmd)	pfn_to_page(pmd_pfn(pmd))
 
@@ -840,7 +840,7 @@ static inline unsigned long pmd_page_vaddr(pmd_t pmd)
  * and a page entry and page directory to the page they refer to.
  *
  * (Currently stuck as a macro because of indirect forward reference
- * to linux/mm.h:page_to_nid())
+ * to linaos/mm.h:page_to_nid())
  */
 #define mk_pte(page, pgprot)   pfn_pte(page_to_pfn(page), (pgprot))
 
@@ -872,7 +872,7 @@ static inline unsigned long pud_page_vaddr(pud_t pud)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linaos/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pud_page(pud)	pfn_to_page(pud_pfn(pud))
 
@@ -913,7 +913,7 @@ static inline unsigned long p4d_page_vaddr(p4d_t p4d)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linaos/mmzone.h's __section_mem_map_addr() definition:
  */
 #define p4d_page(p4d)	pfn_to_page(p4d_pfn(p4d))
 
@@ -948,7 +948,7 @@ static inline unsigned long pgd_page_vaddr(pgd_t pgd)
 
 /*
  * Currently stuck as a macro due to indirect forward reference to
- * linux/mmzone.h's __section_mem_map_addr() definition:
+ * linaos/mmzone.h's __section_mem_map_addr() definition:
  */
 #define pgd_page(pgd)	pfn_to_page(pgd_pfn(pgd))
 

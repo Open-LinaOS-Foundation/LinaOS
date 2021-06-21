@@ -11,7 +11,7 @@
 #ifndef _GOVERNOR_H
 #define _GOVERNOR_H
 
-#include <linux/devfreq.h>
+#include <linaos/devfreq.h>
 
 #define DEVFREQ_NAME_LEN			16
 

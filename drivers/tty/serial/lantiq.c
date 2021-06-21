@@ -8,23 +8,23 @@
  * Copyright (C) 2010 Thomas Langer, <thomas.langer@lantiq.com>
  */
 
-#include <linux/clk.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/lantiq.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/clk.h>
+#include <linaos/console.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/lantiq.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/serial.h>
+#include <linaos/serial_core.h>
+#include <linaos/slab.h>
+#include <linaos/sysrq.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 
 #define PORT_LTQ_ASC		111
 #define MAXPORTS		2

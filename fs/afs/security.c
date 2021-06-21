@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/hashtable.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/ctype.h>
+#include <linaos/sched.h>
+#include <linaos/hashtable.h>
 #include <keys/rxrpc-type.h>
 #include "internal.h"
 

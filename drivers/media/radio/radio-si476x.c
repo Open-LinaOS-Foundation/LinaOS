@@ -8,14 +8,14 @@
  * Author: Andrey Smirnov <andrew.smirnov@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/videodev2.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/atomic.h>
+#include <linaos/videodev2.h>
+#include <linaos/mutex.h>
+#include <linaos/debugfs.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
@@ -23,7 +23,7 @@
 #include <media/v4l2-device.h>
 
 #include <media/drv-intf/si476x.h>
-#include <linux/mfd/si476x-core.h>
+#include <linaos/mfd/si476x-core.h>
 
 #define FM_FREQ_RANGE_LOW   64000000
 #define FM_FREQ_RANGE_HIGH 108000000

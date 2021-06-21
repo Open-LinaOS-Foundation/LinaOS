@@ -2,12 +2,12 @@
 #ifndef _LINUX_SCHED_MM_H
 #define _LINUX_SCHED_MM_H
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/gfp.h>
-#include <linux/sync_core.h>
+#include <linaos/kernel.h>
+#include <linaos/atomic.h>
+#include <linaos/sched.h>
+#include <linaos/mm_types.h>
+#include <linaos/gfp.h>
+#include <linaos/sync_core.h>
 
 /*
  * Routines for handling mm_structs

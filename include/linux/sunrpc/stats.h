@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/stats.h
+ * linaos/include/linaos/sunrpc/stats.h
  *
  * Client statistics collection for SUN RPC
  *
@@ -10,7 +10,7 @@
 #ifndef _LINUX_SUNRPC_STATS_H
 #define _LINUX_SUNRPC_STATS_H
 
-#include <linux/proc_fs.h>
+#include <linaos/proc_fs.h>
 
 struct rpc_stat {
 	const struct rpc_program *program;

@@ -3,10 +3,10 @@
  * Copyright (c) 2012-2016 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
 
 #include <loongson1.h>
 #include "clk.h"

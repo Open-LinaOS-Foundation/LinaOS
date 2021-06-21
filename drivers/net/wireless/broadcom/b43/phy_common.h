@@ -2,8 +2,8 @@
 #ifndef LINUX_B43_PHY_COMMON_H_
 #define LINUX_B43_PHY_COMMON_H_
 
-#include <linux/types.h>
-#include <linux/nl80211.h>
+#include <linaos/types.h>
+#include <linaos/nl80211.h>
 
 struct b43_wldev;
 

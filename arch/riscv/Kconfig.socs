@@ -53,7 +53,7 @@ config SOC_CANAAN_K210_DTB_BUILTIN
 	select OF
 	select BUILTIN_DTB
 	help
-	  Build a device tree for the Kendryte K210 into the Linux image.
+	  Build a device tree for the Kendryte K210 into the LinaOS image.
 	  This option should be selected if no bootloader is being used.
 	  If unsure, say Y.
 

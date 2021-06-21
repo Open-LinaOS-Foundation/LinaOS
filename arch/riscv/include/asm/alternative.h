@@ -12,9 +12,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
 #include <asm/hwcap.h>
 
 void __init apply_boot_alternatives(void);

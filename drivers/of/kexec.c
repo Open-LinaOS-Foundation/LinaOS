@@ -9,20 +9,20 @@
  *  Copyright (C) 2016  IBM Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/memblock.h>
-#include <linux/libfdt.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/random.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/kexec.h>
+#include <linaos/memblock.h>
+#include <linaos/libfdt.h>
+#include <linaos/of.h>
+#include <linaos/of_fdt.h>
+#include <linaos/random.h>
+#include <linaos/types.h>
 
 /* relevant device tree properties */
-#define FDT_PROP_KEXEC_ELFHDR	"linux,elfcorehdr"
-#define FDT_PROP_MEM_RANGE	"linux,usable-memory-range"
-#define FDT_PROP_INITRD_START	"linux,initrd-start"
-#define FDT_PROP_INITRD_END	"linux,initrd-end"
+#define FDT_PROP_KEXEC_ELFHDR	"linaos,elfcorehdr"
+#define FDT_PROP_MEM_RANGE	"linaos,usable-memory-range"
+#define FDT_PROP_INITRD_START	"linaos,initrd-start"
+#define FDT_PROP_INITRD_END	"linaos,initrd-end"
 #define FDT_PROP_BOOTARGS	"bootargs"
 #define FDT_PROP_KASLR_SEED	"kaslr-seed"
 #define FDT_PROP_RNG_SEED	"rng-seed"
@@ -139,7 +139,7 @@ int ima_get_kexec_buffer(void **addr, size_t *size)
 	if (!IS_ENABLED(CONFIG_HAVE_IMA_KEXEC))
 		return -ENOTSUPP;
 
-	prop = of_get_property(of_chosen, "linux,ima-kexec-buffer", &len);
+	prop = of_get_property(of_chosen, "linaos,ima-kexec-buffer", &len);
 	if (!prop)
 		return -ENOENT;
 
@@ -166,7 +166,7 @@ int ima_free_kexec_buffer(void)
 	if (!IS_ENABLED(CONFIG_HAVE_IMA_KEXEC))
 		return -ENOTSUPP;
 
-	prop = of_find_property(of_chosen, "linux,ima-kexec-buffer", NULL);
+	prop = of_find_property(of_chosen, "linaos,ima-kexec-buffer", NULL);
 	if (!prop)
 		return -ENOENT;
 
@@ -201,12 +201,12 @@ static void remove_ima_buffer(void *fdt, int chosen_node)
 	if (!IS_ENABLED(CONFIG_HAVE_IMA_KEXEC))
 		return;
 
-	prop = fdt_getprop(fdt, chosen_node, "linux,ima-kexec-buffer", &len);
+	prop = fdt_getprop(fdt, chosen_node, "linaos,ima-kexec-buffer", &len);
 	if (!prop)
 		return;
 
 	ret = do_get_kexec_buffer(prop, len, &addr, &size);
-	fdt_delprop(fdt, chosen_node, "linux,ima-kexec-buffer");
+	fdt_delprop(fdt, chosen_node, "linaos,ima-kexec-buffer");
 	if (ret)
 		return;
 
@@ -233,7 +233,7 @@ static int setup_ima_buffer(const struct kimage *image, void *fdt,
 		return 0;
 
 	ret = fdt_appendprop_addrrange(fdt, 0, chosen_node,
-				       "linux,ima-kexec-buffer",
+				       "linaos,ima-kexec-buffer",
 				       image->ima_buffer_addr,
 				       image->ima_buffer_size);
 	if (ret < 0)
@@ -318,13 +318,13 @@ void *of_kexec_alloc_and_setup_fdt(const struct kimage *image,
 		goto out;
 
 	/* Did we boot using an initrd? */
-	prop = fdt_getprop(fdt, chosen_node, "linux,initrd-start", NULL);
+	prop = fdt_getprop(fdt, chosen_node, "linaos,initrd-start", NULL);
 	if (prop) {
 		u64 tmp_start, tmp_end, tmp_size;
 
 		tmp_start = fdt64_to_cpu(*((const fdt64_t *) prop));
 
-		prop = fdt_getprop(fdt, chosen_node, "linux,initrd-end", NULL);
+		prop = fdt_getprop(fdt, chosen_node, "linaos,initrd-end", NULL);
 		if (!prop) {
 			ret = -EINVAL;
 			goto out;
@@ -372,7 +372,7 @@ void *of_kexec_alloc_and_setup_fdt(const struct kimage *image,
 	}
 
 	if (image->type == KEXEC_TYPE_CRASH) {
-		/* add linux,elfcorehdr */
+		/* add linaos,elfcorehdr */
 		ret = fdt_appendprop_addrrange(fdt, 0, chosen_node,
 				FDT_PROP_KEXEC_ELFHDR,
 				image->elf_load_addr,
@@ -389,7 +389,7 @@ void *of_kexec_alloc_and_setup_fdt(const struct kimage *image,
 		if (ret)
 			goto out;
 
-		/* add linux,usable-memory-range */
+		/* add linaos,usable-memory-range */
 		ret = fdt_appendprop_addrrange(fdt, 0, chosen_node,
 				FDT_PROP_MEM_RANGE,
 				crashk_res.start,
@@ -441,7 +441,7 @@ void *of_kexec_alloc_and_setup_fdt(const struct kimage *image,
 				FDT_PROP_RNG_SEED);
 	}
 
-	ret = fdt_setprop(fdt, chosen_node, "linux,booted-from-kexec", NULL, 0);
+	ret = fdt_setprop(fdt, chosen_node, "linaos,booted-from-kexec", NULL, 0);
 	if (ret)
 		goto out;
 

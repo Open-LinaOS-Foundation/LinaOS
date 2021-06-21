@@ -2,8 +2,8 @@
 /*
  * Maxim MAX197 A/D Converter Driver
  *
- * Copyright (c) 2012 Savoir-faire Linux Inc.
- *          Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2012 Savoir-faire LinaOS Inc.
+ *          Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  *
  * For further information, see the Documentation/hwmon/max197.rst file.
  */

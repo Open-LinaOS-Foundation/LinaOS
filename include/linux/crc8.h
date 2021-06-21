@@ -16,7 +16,7 @@
 #ifndef __CRC8_H_
 #define __CRC8_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* see usage of this value in crc8() description */
 #define CRC8_INIT_VALUE		0xFF

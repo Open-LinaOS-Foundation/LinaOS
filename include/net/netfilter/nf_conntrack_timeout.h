@@ -3,9 +3,9 @@
 #define _NF_CONNTRACK_TIMEOUT_H
 
 #include <net/net_namespace.h>
-#include <linux/netfilter/nf_conntrack_common.h>
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
-#include <linux/refcount.h>
+#include <linaos/netfilter/nf_conntrack_common.h>
+#include <linaos/netfilter/nf_conntrack_tuple_common.h>
+#include <linaos/refcount.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_extend.h>
 

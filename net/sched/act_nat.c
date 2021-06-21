@@ -5,17 +5,17 @@
  * Copyright (c) 2007 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netfilter.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tc_act/tc_nat.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netfilter.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/tc_act/tc_nat.h>
 #include <net/act_api.h>
 #include <net/pkt_cls.h>
 #include <net/icmp.h>

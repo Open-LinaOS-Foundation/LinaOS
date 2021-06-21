@@ -11,18 +11,18 @@
 
 #define DEBUG
 
-#include <linux/device.h>
+#include <linaos/device.h>
 #undef DEBUG
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/rslib.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/rslib.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <asm/io.h>
 
 #define CAFE_NAND_CTRL1		0x00

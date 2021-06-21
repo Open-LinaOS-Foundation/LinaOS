@@ -11,20 +11,20 @@ maintainers:
 
 description: |
   A simple common binding for matrix-connected key boards. Currently targeted at
-  defining the keys in the scope of linux key codes since that is a stable and
+  defining the keys in the scope of linaos key codes since that is a stable and
   standardized interface at this time.
 
   Some users of this binding might choose to specify secondary keymaps for
   cases where there is a modifier key such as a Fn key. Proposed names
-  for said properties are "linux,fn-keymap" or with another descriptive
+  for said properties are "linaos,fn-keymap" or with another descriptive
   word for the modifier other from "Fn".
 
 properties:
-  linux,keymap:
+  linaos,keymap:
     $ref: '/schemas/types.yaml#/definitions/uint32-array'
     description: |
       An array of packed 1-cell entries containing the equivalent of row,
-      column and linux key-code. The 32-bit big endian cell is packed as:
+      column and linaos key-code. The 32-bit big endian cell is packed as:
           row << 24 | column << 16 | key-code
 
   keypad,num-rows:
@@ -41,7 +41,7 @@ examples:
   - |
     keypad {
         /* ... */
-        linux,keymap = < 0x00030012
+        linaos,keymap = < 0x00030012
                          0x0102003a >;
         keypad,num-rows = <2>;
         keypad,num-columns = <8>;

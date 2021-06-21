@@ -11,37 +11,37 @@
  * (part of code stolen from loop.c)
  */
 
-#include <linux/major.h>
+#include <linaos/major.h>
 
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/fs.h>
-#include <linux/bio.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/ioctl.h>
-#include <linux/mutex.h>
-#include <linux/compiler.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/fs.h>
+#include <linaos/bio.h>
+#include <linaos/stat.h>
+#include <linaos/errno.h>
+#include <linaos/file.h>
+#include <linaos/ioctl.h>
+#include <linaos/mutex.h>
+#include <linaos/compiler.h>
+#include <linaos/completion.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
-#include <linux/net.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/debugfs.h>
-#include <linux/blk-mq.h>
+#include <linaos/net.h>
+#include <linaos/kthread.h>
+#include <linaos/types.h>
+#include <linaos/debugfs.h>
+#include <linaos/blk-mq.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/types.h>
 
-#include <linux/nbd.h>
-#include <linux/nbd-netlink.h>
+#include <linaos/nbd.h>
+#include <linaos/nbd-netlink.h>
 #include <net/genetlink.h>
 
 #define CREATE_TRACE_POINTS

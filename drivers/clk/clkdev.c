@@ -6,18 +6,18 @@
  *
  * Helper for the clk API to assist looking up a struct clk.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/mutex.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/clk-provider.h>
+#include <linaos/of.h>
 
 #include "clk.h"
 

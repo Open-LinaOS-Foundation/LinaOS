@@ -7,7 +7,7 @@
 #ifndef __ASM_POWERPC_REG_FSL_EMB_H__
 #define __ASM_POWERPC_REG_FSL_EMB_H__
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #ifndef __ASSEMBLY__
 /* Performance Monitor Registers */

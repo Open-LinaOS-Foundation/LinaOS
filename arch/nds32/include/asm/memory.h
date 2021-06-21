@@ -4,8 +4,8 @@
 #ifndef __ASM_NDS32_MEMORY_H
 #define __ASM_NDS32_MEMORY_H
 
-#include <linux/compiler.h>
-#include <linux/sizes.h>
+#include <linaos/compiler.h>
+#include <linaos/sizes.h>
 
 #ifndef __ASSEMBLY__
 #include <asm/page.h>

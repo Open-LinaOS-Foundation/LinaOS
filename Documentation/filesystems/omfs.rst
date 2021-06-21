@@ -14,12 +14,12 @@ filesystem driver may be used to read and write disks from these
 devices.
 
 Note, it is not recommended that this FS be used in place of a general
-filesystem for your own streaming media device.  Native Linux filesystems
+filesystem for your own streaming media device.  Native LinaOS filesystems
 will likely perform better.
 
 More information is available at:
 
-    http://linux-karma.sf.net/
+    http://linaos-karma.sf.net/
 
 Various utilities, including mkomfs and omfsck, are included with
 omfsprogs, available at:

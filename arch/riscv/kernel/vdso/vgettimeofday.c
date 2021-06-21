@@ -6,8 +6,8 @@
  * Copyright (C) 2020 SiFive
  */
 
-#include <linux/time.h>
-#include <linux/types.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
 
 extern
 int __vdso_clock_gettime(clockid_t clock, struct __kernel_timespec *ts);

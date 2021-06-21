@@ -7,26 +7,26 @@
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
 
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/of_platform.h>
-#include <linux/hsi/hsi.h>
-#include <linux/idr.h>
+#include <linaos/compiler.h>
+#include <linaos/err.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/delay.h>
+#include <linaos/seq_file.h>
+#include <linaos/scatterlist.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/debugfs.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of_platform.h>
+#include <linaos/hsi/hsi.h>
+#include <linaos/idr.h>
 
 #include "omap_ssi_regs.h"
 #include "omap_ssi.h"

@@ -11,12 +11,12 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/string.h> /* for memset */
-#include <linux/seq_file.h> /* for seq_printf */
-#include <linux/lru_cache.h>
+#include <linaos/module.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/string.h> /* for memset */
+#include <linaos/seq_file.h> /* for seq_printf */
+#include <linaos/lru_cache.h>
 
 MODULE_AUTHOR("Philipp Reisner <phil@linbit.com>, "
 	      "Lars Ellenberg <lars@linbit.com>");

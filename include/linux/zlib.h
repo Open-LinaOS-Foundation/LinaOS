@@ -30,13 +30,13 @@
 #ifndef _ZLIB_H
 #define _ZLIB_H
 
-#include <linux/zconf.h>
+#include <linaos/zconf.h>
 
 /* zlib deflate based on ZLIB_VERSION "1.1.3" */
 /* zlib inflate based on ZLIB_VERSION "1.2.3" */
 
 /*
-  This is a modified version of zlib for use inside the Linux kernel.
+  This is a modified version of zlib for use inside the LinaOS kernel.
   The main changes are to perform all memory allocation in advance.
 
   Inflation Changes:

@@ -4,7 +4,7 @@
  * Author: Tomi Valkeinen <tomi.valkeinen@ti.com>
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

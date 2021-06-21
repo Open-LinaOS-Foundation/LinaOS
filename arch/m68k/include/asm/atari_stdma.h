@@ -4,7 +4,7 @@
 #define _atari_stdma_h
 
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 
 /***************************** Prototypes *****************************/

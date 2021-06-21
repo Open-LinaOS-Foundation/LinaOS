@@ -36,7 +36,7 @@ void ovs_ct_free_action(const struct nlattr *a);
 			   OVS_CS_F_INVALID | OVS_CS_F_TRACKED | \
 			   OVS_CS_F_SRC_NAT | OVS_CS_F_DST_NAT)
 #else
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 static inline int ovs_ct_init(struct net *net) { return 0; }
 

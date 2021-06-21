@@ -10,20 +10,20 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fsi.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/fsi.h>
+#include <linaos/i2c.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #define FSI_ENGID_I2C		0x7
 

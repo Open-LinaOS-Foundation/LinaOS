@@ -3,8 +3,8 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/kmemleak.h>
-#include <linux/slab.h>
+#include <linaos/kmemleak.h>
+#include <linaos/slab.h>
 
 #include "i915_buddy.h"
 

@@ -47,16 +47,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/ctype.h>
-#include <linux/nl80211.h>
-#include <linux/platform_device.h>
-#include <linux/verification.h>
-#include <linux/moduleparam.h>
-#include <linux/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/ctype.h>
+#include <linaos/nl80211.h>
+#include <linaos/platform_device.h>
+#include <linaos/verification.h>
+#include <linaos/moduleparam.h>
+#include <linaos/firmware.h>
 #include <net/cfg80211.h>
 #include "core.h"
 #include "reg.h"

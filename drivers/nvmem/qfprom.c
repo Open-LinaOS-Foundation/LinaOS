@@ -3,17 +3,17 @@
  * Copyright (C) 2015 Srinivas Kandagatla <srinivas.kandagatla@linaro.org>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/nvmem-provider.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regulator/consumer.h>
 
 /* Blow timer clock frequency in Mhz */
 #define QFPROM_BLOW_TIMER_OFFSET 0x03c

@@ -12,9 +12,9 @@
 #define KMSG_COMPONENT "ctcm"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/sysfs.h>
+#include <linaos/slab.h>
 #include "ctcm_main.h"
 
 /*

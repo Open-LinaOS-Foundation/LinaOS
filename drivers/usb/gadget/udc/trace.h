@@ -3,7 +3,7 @@
  * udc.c - Core UDC Framework
  *
  * Copyright (C) 2016 Intel Corporation
- * Author: Felipe Balbi <felipe.balbi@linux.intel.com>
+ * Author: Felipe Balbi <felipe.balbi@linaos.intel.com>
  */
 
 #undef TRACE_SYSTEM
@@ -12,10 +12,10 @@
 #if !defined(__UDC_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __UDC_TRACE_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <linaos/types.h>
+#include <linaos/tracepoint.h>
 #include <asm/byteorder.h>
-#include <linux/usb/gadget.h>
+#include <linaos/usb/gadget.h>
 
 DECLARE_EVENT_CLASS(udc_log_gadget,
 	TP_PROTO(struct usb_gadget *g, int ret),

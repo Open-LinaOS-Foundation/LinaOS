@@ -4,7 +4,7 @@
 #ifndef _QTN_FMAC_DEBUG_H_
 #define _QTN_FMAC_DEBUG_H_
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "core.h"
 #include "bus.h"

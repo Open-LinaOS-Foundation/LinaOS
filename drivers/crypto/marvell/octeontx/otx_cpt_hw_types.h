@@ -11,7 +11,7 @@
 #ifndef __OTX_CPT_HW_TYPES_H
 #define __OTX_CPT_HW_TYPES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Device IDs */
 #define OTX_CPT_PCI_PF_DEVICE_ID 0xa040

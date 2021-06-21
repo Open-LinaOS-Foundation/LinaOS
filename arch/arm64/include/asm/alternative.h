@@ -6,9 +6,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
 
 struct alt_instr {
 	s32 orig_offset;	/* offset to original instruction */

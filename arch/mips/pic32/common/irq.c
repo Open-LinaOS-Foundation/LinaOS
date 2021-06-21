@@ -3,8 +3,8 @@
  * Joshua Henderson <joshua.henderson@microchip.com>
  * Copyright (C) 2015 Microchip Technology Inc.  All rights reserved.
  */
-#include <linux/init.h>
-#include <linux/irqchip.h>
+#include <linaos/init.h>
+#include <linaos/irqchip.h>
 #include <asm/irq.h>
 
 void __init arch_init_irq(void)

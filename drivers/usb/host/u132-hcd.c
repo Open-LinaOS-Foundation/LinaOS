@@ -9,8 +9,8 @@
 * tony.olech@elandigitalsystems.com
 *
 * This driver was written by Tony Olech(tony.olech@elandigitalsystems.com)
-* based on various USB host drivers in the 2.6.15 linux kernel
-* with constant reference to the 3rd Edition of Linux Device Drivers
+* based on various USB host drivers in the 2.6.15 linaos kernel
+* with constant reference to the 3rd Edition of LinaOS Device Drivers
 * published by O'Reilly
 *
 * The U132 adapter is a USB to CardBus adapter specifically designed
@@ -31,24 +31,24 @@
 * via an ELAN U132 adapter.
 *
 */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/pci_ids.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/workqueue.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/pci_ids.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/workqueue.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/byteorder.h>
@@ -56,7 +56,7 @@
 	/* FIXME ohci.h is ONLY for internal use by the OHCI driver.
 	 * If you're going to try stuff like this, you need to split
 	 * out shareable stuff (register declarations?) into its own
-	 * file, maybe name <linux/usb/ohci.h>
+	 * file, maybe name <linaos/usb/ohci.h>
 	 */
 
 #include "ohci.h"
@@ -2627,7 +2627,7 @@ static int u132_roothub_portstatus(struct u132 *u132, __le32 *desc, u16 wIndex)
 /* this timer value might be vendor-specific ... */
 #define PORT_RESET_HW_MSEC 10
 #define PORT_RESET_MSEC 10
-/* wrap-aware logic morphed from <linux/jiffies.h> */
+/* wrap-aware logic morphed from <linaos/jiffies.h> */
 #define tick_before(t1, t2) ((s16)(((s16)(t1))-((s16)(t2))) < 0)
 static int u132_roothub_portreset(struct u132 *u132, int port_index)
 {

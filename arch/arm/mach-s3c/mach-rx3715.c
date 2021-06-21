@@ -5,32 +5,32 @@
 //
 // https://www.handhelds.org/projects/rx3715.html
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/memblock.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/serial.h>
-#include <linux/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/memblock.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/serial.h>
+#include <linaos/io.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/nand-ecc-sw-hamming.h>
+#include <linaos/mtd/partitions.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/irq.h>
 #include <asm/mach/map.h>
 
-#include <linux/platform_data/mtd-nand-s3c2410.h>
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/mtd-nand-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
@@ -208,7 +208,7 @@ static void __init rx3715_init_machine(void)
 }
 
 MACHINE_START(RX3715, "IPAQ-RX3715")
-	/* Maintainer: Ben Dooks <ben-linux@fluff.org> */
+	/* Maintainer: Ben Dooks <ben-linaos@fluff.org> */
 	.atag_offset	= 0x100,
 	.map_io		= rx3715_map_io,
 	.reserve	= rx3715_reserve,

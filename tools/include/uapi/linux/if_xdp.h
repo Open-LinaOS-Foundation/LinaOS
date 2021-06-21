@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * if_xdp: XDP socket user-space interface
  * Copyright(c) 2018 Intel Corporation.
@@ -10,7 +10,7 @@
 #ifndef _LINUX_IF_XDP_H
 #define _LINUX_IF_XDP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Options for the sxdp_flags field */
 #define XDP_SHARED_UMEM	(1 << 0)

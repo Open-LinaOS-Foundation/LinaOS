@@ -8,7 +8,7 @@
  * Copyright (C) 2012-2018 ARM Limited
  */
 
-#include <linux/const.h>
+#include <linaos/const.h>
 #include <asm/page.h>
 #include <asm/vdso.h>
 

@@ -3,7 +3,7 @@
  * Copyright IBM Corp. 2018
  * Auxtrace support for s390 CPU-Measurement Sampling Facility
  *
- * Author(s):  Thomas Richter <tmricht@linux.ibm.com>
+ * Author(s):  Thomas Richter <tmricht@linaos.ibm.com>
  */
 
 #ifndef INCLUDE__PERF_S390_CPUMSF_H

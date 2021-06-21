@@ -3,7 +3,7 @@
 #ifndef __ASM_CSKY_SPINLOCK_H
 #define __ASM_CSKY_SPINLOCK_H
 
-#include <linux/spinlock_types.h>
+#include <linaos/spinlock_types.h>
 #include <asm/barrier.h>
 
 /*

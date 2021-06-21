@@ -5,7 +5,7 @@
 #if !defined(_TRACE_PSEUDO_LOCK_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PSEUDO_LOCK_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(pseudo_lock_mem_latency,
 	    TP_PROTO(u32 latency),

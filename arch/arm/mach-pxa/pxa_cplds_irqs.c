@@ -7,16 +7,16 @@
  * Cplds motherboard driver, supporting lubbock and mainstone SoC board.
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
 
 #define FPGA_IRQ_MASK_EN 0x0
 #define FPGA_IRQ_SET_CLR 0x10

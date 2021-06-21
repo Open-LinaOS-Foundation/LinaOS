@@ -10,7 +10,7 @@
 #ifndef __HSR_FORWARD_H
 #define __HSR_FORWARD_H
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include "hsr_main.h"
 
 void hsr_forward_skb(struct sk_buff *skb, struct hsr_port *port);

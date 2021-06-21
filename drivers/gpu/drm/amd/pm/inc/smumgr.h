@@ -22,7 +22,7 @@
  */
 #ifndef _SMUMGR_H_
 #define _SMUMGR_H_
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "amd_powerplay.h"
 #include "hwmgr.h"
 

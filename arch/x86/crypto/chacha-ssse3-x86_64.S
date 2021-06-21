@@ -5,7 +5,7 @@
  * Copyright (C) 2015 Martin Willi
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/frame.h>
 
 .section	.rodata.cst16.ROT8, "aM", @progbits, 16

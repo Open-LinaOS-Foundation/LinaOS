@@ -10,35 +10,35 @@
  *  Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  *  Contact Information:
- *  James P. Ketrenos <ipw2100-admin@linux.intel.com>
+ *  James P. Ketrenos <ipw2100-admin@linaos.intel.com>
  *  Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  ******************************************************************************/
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
-#include <linux/uaccess.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/if_arp.h>
+#include <linaos/in6.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/proc_fs.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/tcp.h>
+#include <linaos/types.h>
+#include <linaos/wireless.h>
+#include <linaos/etherdevice.h>
+#include <linaos/uaccess.h>
 #include <net/arp.h>
 
 #include "ieee80211.h"
 
 MODULE_DESCRIPTION("802.11 data/management/control stack");
-MODULE_AUTHOR("Copyright (C) 2004 Intel Corporation <jketreno@linux.intel.com>");
+MODULE_AUTHOR("Copyright (C) 2004 Intel Corporation <jketreno@linaos.intel.com>");
 MODULE_LICENSE("GPL");
 
 #define DRV_NAME "ieee80211"

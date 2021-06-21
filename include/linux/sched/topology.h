@@ -2,9 +2,9 @@
 #ifndef _LINUX_SCHED_TOPOLOGY_H
 #define _LINUX_SCHED_TOPOLOGY_H
 
-#include <linux/topology.h>
+#include <linaos/topology.h>
 
-#include <linux/sched/idle.h>
+#include <linaos/sched/idle.h>
 
 /*
  * sched-domains (multiprocessor balancing) declarations:
@@ -14,14 +14,14 @@
 /* Generate SD flag indexes */
 #define SD_FLAG(name, mflags) __##name,
 enum {
-	#include <linux/sched/sd_flags.h>
+	#include <linaos/sched/sd_flags.h>
 	__SD_FLAG_CNT,
 };
 #undef SD_FLAG
 /* Generate SD flag bits */
 #define SD_FLAG(name, mflags) name = 1 << __##name,
 enum {
-	#include <linux/sched/sd_flags.h>
+	#include <linaos/sched/sd_flags.h>
 };
 #undef SD_FLAG
 

@@ -4,21 +4,21 @@
  * sound/soc/dwc/designware_i2s.c
  *
  * Copyright (C) 2010 ST Microelectronics
- * Rajeev Kumar <rajeevkumar.linux@gmail.com>
+ * Rajeev Kumar <rajeevkumar.linaos@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
 #include <sound/designware_i2s.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -759,7 +759,7 @@ static struct platform_driver dw_i2s_driver = {
 
 module_platform_driver(dw_i2s_driver);
 
-MODULE_AUTHOR("Rajeev Kumar <rajeevkumar.linux@gmail.com>");
+MODULE_AUTHOR("Rajeev Kumar <rajeevkumar.linaos@gmail.com>");
 MODULE_DESCRIPTION("DESIGNWARE I2S SoC Interface");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:designware_i2s");

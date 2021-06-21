@@ -7,7 +7,7 @@
 #ifndef __DRV_CLK_MTK_MUX_H
 #define __DRV_CLK_MTK_MUX_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 
 struct mtk_clk_mux {
 	struct clk_hw hw;

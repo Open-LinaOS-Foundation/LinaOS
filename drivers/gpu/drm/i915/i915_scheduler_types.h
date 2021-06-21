@@ -7,7 +7,7 @@
 #ifndef _I915_SCHEDULER_TYPES_H_
 #define _I915_SCHEDULER_TYPES_H_
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #include "gt/intel_engine_types.h"
 #include "i915_priolist_types.h"

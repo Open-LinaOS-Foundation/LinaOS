@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2013, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/pm.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/reboot.h>
+#include <linaos/pm.h>
 
 static void __iomem *msm_ps_hold;
 static int deassert_pshold(struct notifier_block *nb, unsigned long action,

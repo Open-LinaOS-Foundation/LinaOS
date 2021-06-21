@@ -42,15 +42,15 @@
 
 #include "amdgpu_ctx.h"
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/rbtree.h>
-#include <linux/hashtable.h>
-#include <linux/dma-fence.h>
-#include <linux/pci.h>
-#include <linux/aer.h>
+#include <linaos/atomic.h>
+#include <linaos/wait.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
+#include <linaos/rbtree.h>
+#include <linaos/hashtable.h>
+#include <linaos/dma-fence.h>
+#include <linaos/pci.h>
+#include <linaos/aer.h>
 
 #include <drm/ttm/ttm_bo_api.h>
 #include <drm/ttm/ttm_bo_driver.h>

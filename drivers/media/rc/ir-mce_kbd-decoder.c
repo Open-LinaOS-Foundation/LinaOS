@@ -6,7 +6,7 @@
  *
  * Copyright (C) 2011 by Jarod Wilson <jarod@redhat.com>
  */
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "rc-core-priv.h"
 

@@ -10,8 +10,8 @@
 #ifndef CPM_UART_H
 #define CPM_UART_H
 
-#include <linux/platform_device.h>
-#include <linux/fs_uart_pd.h>
+#include <linaos/platform_device.h>
+#include <linaos/fs_uart_pd.h>
 
 struct gpio_desc;
 

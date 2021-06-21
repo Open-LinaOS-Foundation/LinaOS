@@ -5,15 +5,15 @@
  * Copyright (c) 2011 Analog Devices Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/gpio.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/gpio.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
@@ -852,5 +852,5 @@ static struct i2c_driver vs6624_driver = {
 module_i2c_driver(vs6624_driver);
 
 MODULE_DESCRIPTION("VS6624 sensor driver");
-MODULE_AUTHOR("Scott Jiang <Scott.Jiang.Linux@gmail.com>");
+MODULE_AUTHOR("Scott Jiang <Scott.Jiang.LinaOS@gmail.com>");
 MODULE_LICENSE("GPL v2");

@@ -15,7 +15,7 @@
 		keypad,num-columns = <13>;
 		google,needs-ghost-filter;
 
-		linux,keymap = <
+		linaos,keymap = <
 			CROS_STD_TOP_ROW_KEYMAP
 			CROS_STD_MAIN_KEYMAP
 		>;

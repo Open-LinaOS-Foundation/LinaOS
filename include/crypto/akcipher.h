@@ -7,7 +7,7 @@
  */
 #ifndef _CRYPTO_AKCIPHER_H
 #define _CRYPTO_AKCIPHER_H
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 
 /**
  * struct akcipher_request - public key request

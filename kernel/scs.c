@@ -5,12 +5,12 @@
  * Copyright (C) 2019 Google LLC
  */
 
-#include <linux/cpuhotplug.h>
-#include <linux/kasan.h>
-#include <linux/mm.h>
-#include <linux/scs.h>
-#include <linux/vmalloc.h>
-#include <linux/vmstat.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/kasan.h>
+#include <linaos/mm.h>
+#include <linaos/scs.h>
+#include <linaos/vmalloc.h>
+#include <linaos/vmstat.h>
 
 static void __scs_account(void *s, int account)
 {

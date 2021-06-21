@@ -7,15 +7,15 @@
  *               2009 Johannes Dickgreber <tanzy@gmx.de>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/rtc/ds1685.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/notifier.h>
+#include <linaos/delay.h>
+#include <linaos/rtc/ds1685.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm.h>
 
 #include <asm/reboot.h>
 #include <asm/sgi/heart.h>

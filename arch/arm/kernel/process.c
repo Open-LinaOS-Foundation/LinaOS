@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/process.c
+ *  linaos/arch/arm/kernel/process.c
  *
  *  Copyright (C) 1996-2000 Russell King - Converted to ARM.
  *  Original Copyright (C) 1995  Linus Torvalds
  */
 #include <stdarg.h>
 
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/leds.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/user.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/elfcore.h>
+#include <linaos/pm.h>
+#include <linaos/tick.h>
+#include <linaos/utsname.h>
+#include <linaos/uaccess.h>
+#include <linaos/random.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/leds.h>
 
 #include <asm/processor.h>
 #include <asm/thread_notify.h>
@@ -39,7 +39,7 @@
 #include "signal.h"
 
 #if defined(CONFIG_STACKPROTECTOR) && !defined(CONFIG_STACKPROTECTOR_PER_TASK)
-#include <linux/stackprotector.h>
+#include <linaos/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif
@@ -400,7 +400,7 @@ static const struct vm_special_mapping sigpage_mapping = {
 	.mremap = sigpage_mremap,
 };
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linaos_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	struct vm_area_struct *vma;

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * SafeSetID Linux Security Module
+ * SafeSetID LinaOS Security Module
  *
  * Author: Micah Morton <mortonm@chromium.org>
  *
@@ -14,9 +14,9 @@
 #ifndef _SAFESETID_H
 #define _SAFESETID_H
 
-#include <linux/types.h>
-#include <linux/uidgid.h>
-#include <linux/hashtable.h>
+#include <linaos/types.h>
+#include <linaos/uidgid.h>
+#include <linaos/hashtable.h>
 
 /* Flag indicating whether initialization completed */
 extern int safesetid_initialized;

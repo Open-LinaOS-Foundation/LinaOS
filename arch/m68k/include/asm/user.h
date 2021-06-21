@@ -4,7 +4,7 @@
 
 /* Core file format: The core file is written in such a way that gdb
    can understand it and provide useful information to the user (under
-   linux we use the 'trad-core' bfd).  There are quite a number of
+   linaos we use the 'trad-core' bfd).  There are quite a number of
    obstacles to being able to view the contents of the floating point
    registers, and until these are solved you will not be able to view the
    contents of them.  Actually, you can read in the core file and look at
@@ -34,7 +34,7 @@ struct user_m68kfp_struct {
 	unsigned long  fpcntl[3];	/* fp control regs */
 };
 
-/* This is the old layout of "struct pt_regs" as of Linux 1.x, and
+/* This is the old layout of "struct pt_regs" as of LinaOS 1.x, and
    is still the layout used by user (the new pt_regs doesn't have
    all registers). */
 struct user_regs_struct {

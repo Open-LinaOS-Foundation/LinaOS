@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/drivers/mmc/core/mmc_ops.h
+ *  linaos/drivers/mmc/core/mmc_ops.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
@@ -8,7 +8,7 @@
 #ifndef _MMC_MMC_OPS_H
 #define _MMC_MMC_OPS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum mmc_busy_cmd {
 	MMC_BUSY_CMD6,

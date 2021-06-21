@@ -7,8 +7,8 @@
 #ifndef _ASM_STACKPROTECTOR_H
 #define _ASM_STACKPROTECTOR_H
 
-#include <linux/random.h>
-#include <linux/version.h>
+#include <linaos/random.h>
+#include <linaos/version.h>
 #include <asm/reg.h>
 #include <asm/current.h>
 #include <asm/paca.h>

@@ -9,12 +9,12 @@
 
 #define pr_fmt(fmt) "TCP: " fmt
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/jhash.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/gfp.h>
+#include <linaos/jhash.h>
 #include <net/tcp.h>
 
 static DEFINE_SPINLOCK(tcp_cong_list_lock);

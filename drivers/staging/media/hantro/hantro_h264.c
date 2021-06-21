@@ -10,7 +10,7 @@
  *	Tomasz Figa <tfiga@chromium.org>
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <media/v4l2-h264.h>
 #include <media/v4l2-mem2mem.h>
 

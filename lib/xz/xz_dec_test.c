@@ -7,12 +7,12 @@
  * You can do whatever you want with this file.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/crc32.h>
-#include <linux/xz.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/crc32.h>
+#include <linaos/xz.h>
 
 /* Maximum supported dictionary size */
 #define DICT_MAX (1 << 20)
@@ -214,7 +214,7 @@ MODULE_VERSION("1.0");
 MODULE_AUTHOR("Lasse Collin <lasse.collin@tukaani.org>");
 
 /*
- * This code is in the public domain, but in Linux it's simplest to just
+ * This code is in the public domain, but in LinaOS it's simplest to just
  * say it's GPL and consider the authors as the copyright holders.
  */
 MODULE_LICENSE("GPL");

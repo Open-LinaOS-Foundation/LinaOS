@@ -30,10 +30,10 @@
  * SOFTWARE.
  *
  */
-#include <linux/bitmap.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/bitmap.h>
+#include <linaos/file.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include <net/inet_sock.h>
 
 #include "usnic_transport.h"

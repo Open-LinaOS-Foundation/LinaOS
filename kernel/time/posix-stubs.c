@@ -6,16 +6,16 @@
  * Copyright:   (C) 2016 Linaro Limited
  */
 
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/syscalls.h>
-#include <linux/ktime.h>
-#include <linux/timekeeping.h>
-#include <linux/posix-timers.h>
-#include <linux/time_namespace.h>
-#include <linux/compat.h>
+#include <linaos/linkage.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/syscalls.h>
+#include <linaos/ktime.h>
+#include <linaos/timekeeping.h>
+#include <linaos/posix-timers.h>
+#include <linaos/time_namespace.h>
+#include <linaos/compat.h>
 
 #ifdef CONFIG_ARCH_HAS_SYSCALL_WRAPPER
 /* Architectures may override SYS_NI and COMPAT_SYS_NI */

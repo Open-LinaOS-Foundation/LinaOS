@@ -31,8 +31,8 @@
 #ifndef __DPAA_H
 #define __DPAA_H
 
-#include <linux/netdevice.h>
-#include <linux/refcount.h>
+#include <linaos/netdevice.h>
+#include <linaos/refcount.h>
 #include <soc/fsl/qman.h>
 #include <soc/fsl/bman.h>
 

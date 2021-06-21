@@ -6,7 +6,7 @@
 #ifndef _CRYPTO_ARC4_H
 #define _CRYPTO_ARC4_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define ARC4_MIN_KEY_SIZE	1
 #define ARC4_MAX_KEY_SIZE	256

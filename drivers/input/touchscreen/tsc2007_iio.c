@@ -4,8 +4,8 @@
  *	Nikolaus Schaller <hns@goldelico.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
 #include "tsc2007.h"
 
 struct tsc2007_iio {

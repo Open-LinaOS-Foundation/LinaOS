@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _LINUX_BCACHE_H
 #define _LINUX_BCACHE_H
 
@@ -6,7 +6,7 @@
  * Bcache on disk data structures
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BITMASK(name, type, field, offset, size)		\
 static inline __u64 name(const type *k)				\

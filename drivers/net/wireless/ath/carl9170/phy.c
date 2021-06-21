@@ -36,7 +36,7 @@
  *    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/bitrev.h>
+#include <linaos/bitrev.h>
 #include "carl9170.h"
 #include "cmd.h"
 #include "phy.h"

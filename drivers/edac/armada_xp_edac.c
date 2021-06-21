@@ -3,9 +3,9 @@
  * Copyright (C) 2017 Pengutronix, Jan Luebbe <kernel@pengutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/edac.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/edac.h>
+#include <linaos/of_platform.h>
 
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/hardware/cache-aurora-l2.h>

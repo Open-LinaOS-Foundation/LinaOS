@@ -7,4 +7,4 @@ FEATURE-DUMP.bpftool
 feature
 libbpf
 /*.skel.h
-/vmlinux.h
+/vmlinaos.h

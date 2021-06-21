@@ -13,8 +13,8 @@
 #ifndef _PPC64PHP_H
 #define _PPC64PHP_H
 
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
 
 #define DR_INDICATOR 9002
 #define DR_ENTITY_SENSE 9003

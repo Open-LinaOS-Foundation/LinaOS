@@ -51,7 +51,7 @@
 #endif
 
 #ifndef __KERNEL__
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <stdlib.h>
 
 struct agp_version {

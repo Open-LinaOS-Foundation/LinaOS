@@ -6,7 +6,7 @@
 #ifndef __XFS_IOMAP_H__
 #define __XFS_IOMAP_H__
 
-#include <linux/iomap.h>
+#include <linaos/iomap.h>
 
 struct xfs_inode;
 struct xfs_bmbt_irec;

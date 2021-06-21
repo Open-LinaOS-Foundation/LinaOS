@@ -6,8 +6,8 @@
 
 #define pr_fmt(fmt) "MPTCP: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 #include <net/sock.h>
 #include <net/protocol.h>
 #include <net/tcp.h>

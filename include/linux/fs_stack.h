@@ -6,7 +6,7 @@
  * filesystems; none of these functions require i_mutex to be held.
  */
 
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 /* externs for fs/stack.c */
 extern void fsstack_copy_attr_all(struct inode *dest, const struct inode *src);

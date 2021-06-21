@@ -3,7 +3,7 @@
 #define _GNU_SOURCE
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/netlink.h>
+#include <linaos/netlink.h>
 #include <signal.h>
 #include <stdbool.h>
 #include <stdio.h>

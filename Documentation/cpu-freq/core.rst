@@ -5,7 +5,7 @@ General description of the CPUFreq core and CPUFreq notifiers
 =============================================================
 
 Authors:
-	- Dominik Brodowski  <linux@brodo.de>
+	- Dominik Brodowski  <linaos@brodo.de>
 	- David Kimdon <dwhedon@debian.org>
 	- Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 	- Viresh Kumar <viresh.kumar@linaro.org>
@@ -40,7 +40,7 @@ policy doesn't get freed while being used.
 ====================
 
 CPUFreq notifiers conform to the standard kernel notifier interface.
-See linux/include/linux/notifier.h for details on notifiers.
+See linaos/include/linaos/notifier.h for details on notifiers.
 
 There are two different CPUFreq notifiers - policy notifiers and
 transition notifiers.

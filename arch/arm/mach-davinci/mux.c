@@ -3,7 +3,7 @@
  *
  * Author: Vladimir Barinov, MontaVista Software, Inc. <source@mvista.com>
  *
- * Based on linux/arch/arm/plat-omap/mux.c:
+ * Based on linaos/arch/arm/plat-omap/mux.c:
  * Copyright (C) 2003 - 2005 Nokia Corporation
  *
  * Written by Tony Lindgren
@@ -18,9 +18,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
 
 #include <mach/mux.h>
 #include <mach/common.h>

@@ -20,8 +20,8 @@
 #ifndef _LINUX_IF_FDDI_H
 #define _LINUX_IF_FDDI_H
 
-#include <linux/netdevice.h>
-#include <uapi/linux/if_fddi.h>
+#include <linaos/netdevice.h>
+#include <uapi/linaos/if_fddi.h>
 
 /* Define FDDI statistics structure */
 struct fddi_statistics {

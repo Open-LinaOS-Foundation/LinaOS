@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _ASM_X86_PTRACE_ABI_H
 #define _ASM_X86_PTRACE_ABI_H
 
@@ -88,7 +88,7 @@
 #define PTRACE_SINGLEBLOCK	33	/* resume execution until next branch */
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 #endif
 
 #endif /* _ASM_X86_PTRACE_ABI_H */

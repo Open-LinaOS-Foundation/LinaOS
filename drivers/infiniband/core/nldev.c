@@ -30,10 +30,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/pid.h>
-#include <linux/pid_namespace.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/pid.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/mutex.h>
 #include <net/netlink.h>
 #include <rdma/rdma_cm.h>
 #include <rdma/rdma_netlink.h>

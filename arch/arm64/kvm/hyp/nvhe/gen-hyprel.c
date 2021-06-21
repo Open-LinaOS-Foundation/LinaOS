@@ -12,12 +12,12 @@
  * be converted before they are used by hyp code.
  *
  * The input of this program is the relocatable ELF object containing
- * all hyp code/data, not yet linked into vmlinux. Hyp section names
+ * all hyp code/data, not yet linked into vmlinaos. Hyp section names
  * should have been prefixed with `.hyp` at this point.
  *
  * The output (printed to stdout) is an assembly file containing
  * an array of 32-bit integers and static relocations that instruct
- * the linker of `vmlinux` to populate the array entries with offsets
+ * the linker of `vmlinaos` to populate the array entries with offsets
  * to positions in the kernel binary containing VAs used by hyp code.
  *
  * Note that dynamic relocations could be used for the same purpose.
@@ -311,7 +311,7 @@ static void emit_section_prologue(const char *sh_orig_name)
  * Print ASM statements to create a hyp relocation entry for a given
  * R_AARCH64_ABS64 relocation.
  *
- * The linker of vmlinux will populate the position given by `rela` with
+ * The linker of vmlinaos will populate the position given by `rela` with
  * an absolute 64-bit kernel VA. If the kernel is relocatable, it will
  * also generate a dynamic relocation entry so that the kernel can shift
  * the address at runtime for KASLR.
@@ -319,7 +319,7 @@ static void emit_section_prologue(const char *sh_orig_name)
  * Emit a 32-bit offset from the current address to the position given
  * by `rela`. This way the kernel can iterate over all kernel VAs used
  * by hyp at runtime and convert them to hyp VAs. However, that offset
- * will not be known until linking of `vmlinux`, so emit a PREL32
+ * will not be known until linking of `vmlinaos`, so emit a PREL32
  * relocation referencing a symbol that the hyp linker script put at
  * the beginning of the relocated section + the offset from `rela`.
  */
@@ -332,7 +332,7 @@ static void emit_rela_abs64(Elf64_Rela *rela, const char *sh_orig_name)
 	printf(".word 0\n");
 
 	/*
-	 * Create a PREL32 relocation which instructs the linker of `vmlinux`
+	 * Create a PREL32 relocation which instructs the linker of `vmlinaos`
 	 * to insert offset to position <base> + <offset>, where <base> is
 	 * a symbol at the beginning of the relocated section, and <offset>
 	 * is `rela->r_offset`.

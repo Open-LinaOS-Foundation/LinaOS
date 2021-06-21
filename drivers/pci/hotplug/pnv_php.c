@@ -5,10 +5,10 @@
  * Copyright Gavin Shan, IBM Corporation 2016.
  */
 
-#include <linux/libfdt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
+#include <linaos/libfdt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
 
 #include <asm/opal.h>
 #include <asm/pnv-pci.h>

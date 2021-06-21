@@ -4,13 +4,13 @@
  * Copyright (C) 2018 Linaro Ltd.
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/syscore_ops.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/syscore_ops.h>
 
 #define SC27XX_PWR_PD_HW	0xc2c
 #define SC27XX_PWR_OFF_EN	BIT(0)

@@ -4,12 +4,12 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/cpu.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/cpu.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_host.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/uaccess.h>
 
 #include <clocksource/arm_arch_timer.h>
 #include <asm/arch_timer.h>

@@ -14,33 +14,33 @@
  *  by Maxim Krasnyansky and Marcel Holtmann.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/poll.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
+#include <linaos/poll.h>
 
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/signal.h>
-#include <linux/ioctl.h>
-#include <linux/of.h>
-#include <linux/serdev.h>
-#include <linux/skbuff.h>
-#include <linux/ti_wilink_st.h>
-#include <linux/clk.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/signal.h>
+#include <linaos/ioctl.h>
+#include <linaos/of.h>
+#include <linaos/serdev.h>
+#include <linaos/skbuff.h>
+#include <linaos/ti_wilink_st.h>
+#include <linaos/clk.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>
-#include <linux/gpio/consumer.h>
-#include <linux/nvmem-consumer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/nvmem-consumer.h>
 
 #include "hci_uart.h"
 

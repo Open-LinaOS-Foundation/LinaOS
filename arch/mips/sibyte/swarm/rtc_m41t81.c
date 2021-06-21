@@ -5,9 +5,9 @@
  * Copyright (C) 2002 MontaVista Software Inc.
  * Author: jsun@mvista.com or jsun@junsun.net
  */
-#include <linux/bcd.h>
-#include <linux/types.h>
-#include <linux/time.h>
+#include <linaos/bcd.h>
+#include <linaos/types.h>
+#include <linaos/time.h>
 
 #include <asm/time.h>
 #include <asm/addrspace.h>

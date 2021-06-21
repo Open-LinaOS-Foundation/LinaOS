@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: ISC
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/debugfs.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/platform_device.h>
-#include <linux/qcom_scm.h>
-#include <linux/string.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/debugfs.h>
+#include <linaos/idr.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/module.h>
+#include <linaos/net.h>
+#include <linaos/platform_device.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/string.h>
 #include <net/sock.h>
 
 #include "debug.h"

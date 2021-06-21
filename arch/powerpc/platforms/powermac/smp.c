@@ -17,23 +17,23 @@
  * Support for DayStar quad CPU cards
  * Copyright (C) XLR8, Inc. 1994-2000
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/hotplug.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/cpu.h>
-#include <linux/compiler.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/hardirq.h>
+#include <linaos/cpu.h>
+#include <linaos/compiler.h>
+#include <linaos/pgtable.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/code-patching.h>
 #include <asm/irq.h>
 #include <asm/page.h>

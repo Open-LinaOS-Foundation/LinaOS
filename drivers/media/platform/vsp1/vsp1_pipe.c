@@ -7,10 +7,10 @@
  * Contact: Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
 
 #include <media/media-entity.h>
 #include <media/v4l2-subdev.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Video capture interface for Linux version 2
+ * Video capture interface for LinaOS version 2
  *
  * A generic framework to process V4L2 ioctl commands.
  *
@@ -8,15 +8,15 @@
  *              Mauro Carvalho Chehab <mchehab@kernel.org> (version 2)
  */
 
-#include <linux/compat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/version.h>
+#include <linaos/compat.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/version.h>
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -77,7 +77,7 @@ static const struct std_descr standards[] = {
 	{ 0,			"Unknown"   }
 };
 
-/* video4linux standard ID conversion to standard name
+/* video4linaos standard ID conversion to standard name
  */
 const char *v4l2_norm_to_name(v4l2_std_id id)
 {

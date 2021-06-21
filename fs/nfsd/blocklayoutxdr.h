@@ -2,7 +2,7 @@
 #ifndef _NFSD_BLOCKLAYOUTXDR_H
 #define _NFSD_BLOCKLAYOUTXDR_H 1
 
-#include <linux/blkdev.h>
+#include <linaos/blkdev.h>
 #include "xdr4.h"
 
 struct iomap;

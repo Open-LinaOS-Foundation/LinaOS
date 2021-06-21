@@ -3,18 +3,18 @@
  * kcomedilib/kcomedilib.c
  * a comedlib interface for kernel modules
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/io.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/fcntl.h>
+#include <linaos/mm.h>
+#include <linaos/io.h>
 
 #include "../comedi.h"
 #include "../comedilib.h"

@@ -3,7 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #include "../util/callchain.h"
 #include "../util/debug.h"

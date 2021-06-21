@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Test cases for <linux/hash.h> and <linux/stringhash.h>
+ * Test cases for <linaos/hash.h> and <linaos/stringhash.h>
  * This just verifies that various ways of computing a hash
  * produce the same thing and, for cases where a k-bit hash
  * value is requested, is of the requested size.
@@ -16,12 +16,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt "\n"
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/hash.h>
-#include <linux/stringhash.h>
-#include <linux/printk.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/hash.h>
+#include <linaos/stringhash.h>
+#include <linaos/printk.h>
 
 /* 32-bit XORSHIFT generator.  Seed must not be zero. */
 static u32 __init __attribute_const__

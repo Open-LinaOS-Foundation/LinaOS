@@ -4,9 +4,9 @@
 
 import gdb
 
-from linux.utils import CachedType
-from linux.utils import container_of
-from linux.lists import list_for_each_entry
+from linaos.utils import CachedType
+from linaos.utils import container_of
+from linaos.lists import list_for_each_entry
 
 
 device_private_type = CachedType('struct device_private')

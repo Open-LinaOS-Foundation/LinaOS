@@ -106,7 +106,7 @@
  * preemption, but just sampling the new tail pointer).
  *
  */
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include "i915_drv.h"
 #include "i915_trace.h"

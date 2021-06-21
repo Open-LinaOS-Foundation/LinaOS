@@ -3,13 +3,13 @@
  * Copyright (C) 2008 Marvell International Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
 
 #include <mach/generic.h>
 #include <mach/pxa3xx-regs.h>

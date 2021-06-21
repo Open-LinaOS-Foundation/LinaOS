@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * JMicron JMC2x0 series PCIe Ethernet Linux Device Driver
+ * JMicron JMC2x0 series PCIe Ethernet LinaOS Device Driver
  *
  * Copyright 2008 JMicron Technology Corporation
  * https://www.jmicron.com/
@@ -11,23 +11,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if_vlan.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/crc32.h>
+#include <linaos/delay.h>
+#include <linaos/spinlock.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/slab.h>
 #include <net/ip6_checksum.h>
 #include "jme.h"
 

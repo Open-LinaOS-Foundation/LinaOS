@@ -6,12 +6,12 @@
  *
  * PCI manipulation via device_nodes.
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/gfp.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>

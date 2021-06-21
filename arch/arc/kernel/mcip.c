@@ -5,10 +5,10 @@
  * Copyright (C) 2013 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/smp.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/spinlock.h>
+#include <linaos/smp.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/spinlock.h>
 #include <soc/arc/mcip.h>
 #include <asm/irqflags-arcv2.h>
 #include <asm/setup.h>
@@ -109,7 +109,7 @@ static void mcip_ipi_send(int cpu)
 
 	/*
 	 * If receiver already has a pending interrupt, elide sending this one.
-	 * Linux cross core calling works well with concurrent IPIs
+	 * LinaOS cross core calling works well with concurrent IPIs
 	 * coalesced into one
 	 * see arch/arc/kernel/smp.c: ipi_send_msg_one()
 	 */
@@ -190,9 +190,9 @@ struct plat_smp_ops plat_smp_ops = {
  * It physically resides in the MCIP hw block
  */
 
-#include <linux/irqchip.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
 
 /*
  * Set the DEST for @cmn_irq to @cpu_mask (1 bit per core)

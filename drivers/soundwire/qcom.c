@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019, Linaro Limited
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/slimbus.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/slimbus.h>
+#include <linaos/soundwire/sdw.h>
+#include <linaos/soundwire/sdw_registers.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include "bus.h"

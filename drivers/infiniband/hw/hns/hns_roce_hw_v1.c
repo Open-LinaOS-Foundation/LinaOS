@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 #include <rdma/ib_umem.h>
 #include "hns_roce_common.h"
 #include "hns_roce_device.h"

@@ -9,10 +9,10 @@
 
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <linux/stddef.h>
-#include <linux/perf_event.h>
-#include <linux/refcount.h>
-#include <linux/types.h>
+#include <linaos/stddef.h>
+#include <linaos/perf_event.h>
+#include <linaos/refcount.h>
+#include <linaos/types.h>
 
 #ifndef HAVE_SETNS_SUPPORT
 int setns(int fd, int nstype);

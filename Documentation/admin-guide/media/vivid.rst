@@ -3,7 +3,7 @@
 The Virtual Video Test Driver (vivid)
 =====================================
 
-This driver emulates video4linux hardware of various types: video capture, video
+This driver emulates video4linaos hardware of various types: video capture, video
 output, vbi capture and output, metadata capture and output, radio receivers and
 transmitters, touch capture and a software defined radio receiver. In addition a
 simple framebuffer device is available for testing capture and output overlays.

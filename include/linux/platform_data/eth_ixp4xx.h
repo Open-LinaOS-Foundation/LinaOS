@@ -2,7 +2,7 @@
 #ifndef __PLATFORM_DATA_ETH_IXP4XX
 #define __PLATFORM_DATA_ETH_IXP4XX
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define IXP4XX_ETH_NPEA		0x00
 #define IXP4XX_ETH_NPEB		0x10

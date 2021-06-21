@@ -1,9 +1,9 @@
 /*
- *  linux/drivers/scsi/esas2r/esas2r_int.c
+ *  linaos/drivers/scsi/esas2r/esas2r_int.c
  *      esas2r interrupt handling
  *
  *  Copyright (c) 2001-2013 ATTO Technology, Inc.
- *  (mailto:linuxdrivers@attotech.com)
+ *  (mailto:linaosdrivers@attotech.com)
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 /*

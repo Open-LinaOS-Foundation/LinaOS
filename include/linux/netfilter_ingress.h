@@ -2,8 +2,8 @@
 #ifndef _NETFILTER_INGRESS_H_
 #define _NETFILTER_INGRESS_H_
 
-#include <linux/netfilter.h>
-#include <linux/netdevice.h>
+#include <linaos/netfilter.h>
+#include <linaos/netdevice.h>
 
 #ifdef CONFIG_NETFILTER_INGRESS
 static inline bool nf_hook_ingress_active(const struct sk_buff *skb)

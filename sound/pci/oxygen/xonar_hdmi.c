@@ -5,8 +5,8 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 #include <sound/asoundef.h>
 #include <sound/control.h>
 #include <sound/core.h>

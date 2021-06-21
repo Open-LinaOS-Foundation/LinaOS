@@ -4,9 +4,9 @@
  * Copyright (C) 2011 Novell Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/uuid.h>
-#include <linux/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/uuid.h>
+#include <linaos/fs.h>
 #include "ovl_entry.h"
 
 #undef pr_fmt

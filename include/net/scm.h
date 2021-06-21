@@ -2,13 +2,13 @@
 #ifndef __LINUX_NET_SCM_H
 #define __LINUX_NET_SCM_H
 
-#include <linux/limits.h>
-#include <linux/net.h>
-#include <linux/cred.h>
-#include <linux/security.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/sched/signal.h>
+#include <linaos/limits.h>
+#include <linaos/net.h>
+#include <linaos/cred.h>
+#include <linaos/security.h>
+#include <linaos/pid.h>
+#include <linaos/nsproxy.h>
+#include <linaos/sched/signal.h>
 
 /* Well, we should have at least one descriptor open
  * to accept passed FDs 8)

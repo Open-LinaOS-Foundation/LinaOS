@@ -2,8 +2,8 @@
 #ifndef __ASM_MMAN_H__
 #define __ASM_MMAN_H__
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 #include <uapi/asm/mman.h>
 
 static inline unsigned long arch_calc_vm_prot_bits(unsigned long prot,

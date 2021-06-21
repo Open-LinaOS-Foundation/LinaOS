@@ -7,7 +7,7 @@
 #ifndef _SUN4I_FRONTEND_H_
 #define _SUN4I_FRONTEND_H_
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 #define SUN4I_FRONTEND_EN_REG			0x000
 #define SUN4I_FRONTEND_EN_EN				BIT(0)

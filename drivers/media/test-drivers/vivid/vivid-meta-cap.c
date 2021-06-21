@@ -3,11 +3,11 @@
  * vivid-meta-cap.c - meta capture support functions.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/videodev2.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
-#include <linux/usb/video.h>
+#include <linaos/usb/video.h>
 
 #include "vivid-core.h"
 #include "vivid-kthread-cap.h"

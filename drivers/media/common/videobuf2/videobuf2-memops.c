@@ -11,13 +11,13 @@
  * the Free Software Foundation.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/file.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/file.h>
 
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-memops.h>

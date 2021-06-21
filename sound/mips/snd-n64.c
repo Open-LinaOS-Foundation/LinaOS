@@ -5,14 +5,14 @@
  *   Copyright 2021 Lauri Kasanen
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 #include <sound/control.h>
 #include <sound/core.h>

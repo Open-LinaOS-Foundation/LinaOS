@@ -8,8 +8,8 @@
  * See MAINTAINERS file for support contact information.
  */
 
-#include <linux/device.h>
-#include <linux/firmware.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
 
 struct rtl8169_private;
 typedef void (*rtl_fw_write_t)(struct rtl8169_private *tp, int reg, int val);

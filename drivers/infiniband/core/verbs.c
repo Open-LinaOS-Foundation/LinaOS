@@ -36,15 +36,15 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/export.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
 #include <net/addrconf.h>
-#include <linux/security.h>
+#include <linaos/security.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_cache.h>

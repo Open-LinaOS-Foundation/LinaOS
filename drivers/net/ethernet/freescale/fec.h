@@ -14,10 +14,10 @@
 #define	FEC_H
 /****************************************************************************/
 
-#include <linux/clocksource.h>
-#include <linux/net_tstamp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
+#include <linaos/clocksource.h>
+#include <linaos/net_tstamp.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/timecounter.h>
 
 #if defined(CONFIG_M523x) || defined(CONFIG_M527x) || defined(CONFIG_M528x) || \
     defined(CONFIG_M520x) || defined(CONFIG_M532x) || defined(CONFIG_ARM) || \

@@ -13,12 +13,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/sched.h>	/* set_cpus_allowed() */
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linaos/cpufreq.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>	/* set_cpus_allowed() */
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
 
 #include <asm/idle.h>
 

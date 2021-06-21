@@ -5,15 +5,15 @@
  * Copyright (C) 2012 Vayavya Labs Pvt. Ltd.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
 #include "dw_mmc.h"
 
 #define PCI_BAR_NO 2

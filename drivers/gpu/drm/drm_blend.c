@@ -24,9 +24,9 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/sort.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_blend.h>

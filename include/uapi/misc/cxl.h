@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright 2014 IBM Corp.
  *
@@ -11,8 +11,8 @@
 #ifndef _UAPI_MISC_CXL_H
 #define _UAPI_MISC_CXL_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <linaos/types.h>
+#include <linaos/ioctl.h>
 
 
 struct cxl_ioctl_start_work {

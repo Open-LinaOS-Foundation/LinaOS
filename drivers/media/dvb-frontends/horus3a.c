@@ -10,10 +10,10 @@
  * Copyright (C) 2014 Abylay Ospan <aospan@netup.ru>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
-#include <linux/types.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/types.h>
 #include "horus3a.h"
 #include <media/dvb_frontend.h>
 

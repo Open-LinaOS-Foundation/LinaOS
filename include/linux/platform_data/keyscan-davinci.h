@@ -8,7 +8,7 @@
 #ifndef DAVINCI_KEYSCAN_H
 #define DAVINCI_KEYSCAN_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 enum davinci_matrix_types {
 	DAVINCI_KEYSCAN_MATRIX_4X4,

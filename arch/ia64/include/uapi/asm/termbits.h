@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _ASM_IA64_TERMBITS_H
 #define _ASM_IA64_TERMBITS_H
 
@@ -11,7 +11,7 @@
  * 99/01/28	Added new baudrates
  */
 
-#include <linux/posix_types.h>
+#include <linaos/posix_types.h>
 
 typedef unsigned char	cc_t;
 typedef unsigned int	speed_t;

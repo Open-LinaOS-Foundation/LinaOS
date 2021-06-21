@@ -10,7 +10,7 @@
 #ifndef __MFD_TI_LMU_REGISTER_H__
 #define __MFD_TI_LMU_REGISTER_H__
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 /* LM3631 */
 #define LM3631_REG_DEVCTRL			0x00

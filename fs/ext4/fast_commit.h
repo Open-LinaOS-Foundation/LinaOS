@@ -5,7 +5,7 @@
 
 /*
  * Note this file is present in e2fsprogs/lib/ext2fs/fast_commit.h and
- * linux/fs/ext4/fast_commit.h. These file should always be byte identical.
+ * linaos/fs/ext4/fast_commit.h. These file should always be byte identical.
  */
 
 /* Fast commit tags */

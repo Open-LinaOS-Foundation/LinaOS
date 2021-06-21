@@ -4,12 +4,12 @@
  * Copyright (C) 2012-2013, NVIDIA Corporation
  */
 
-#include <linux/debugfs.h>
-#include <linux/host1x.h>
-#include <linux/of.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/of_device.h>
+#include <linaos/debugfs.h>
+#include <linaos/host1x.h>
+#include <linaos/of.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/of_device.h>
 
 #include "bus.h"
 #include "dev.h"

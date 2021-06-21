@@ -3,12 +3,12 @@
  * Copyright (c) 2013-2014 Linaro Ltd.
  * Copyright (c) 2013-2014 HiSilicon Limited.
  */
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/of_address.h>
+#include <linaos/init.h>
+#include <linaos/smp.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/memblock.h>
+#include <linaos/of_address.h>
 
 #include <asm/cputype.h>
 #include <asm/cp15.h>

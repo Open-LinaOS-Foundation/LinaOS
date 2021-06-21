@@ -11,9 +11,9 @@
  *	Copyright (C) 2003-2004 MontaVista Software, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 #include <asm/mach/pci.h>
 #include <asm/mach-types.h>
 

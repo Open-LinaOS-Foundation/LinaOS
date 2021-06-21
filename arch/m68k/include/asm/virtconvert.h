@@ -8,8 +8,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
-#include <linux/mmzone.h>
+#include <linaos/compiler.h>
+#include <linaos/mmzone.h>
 #include <asm/setup.h>
 #include <asm/page.h>
 

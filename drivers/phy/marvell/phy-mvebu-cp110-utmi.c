@@ -8,16 +8,16 @@
  * Marvell CP110 UTMI PHY driver
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/usb/of.h>
-#include <linux/usb/otg.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/usb/of.h>
+#include <linaos/usb/otg.h>
 
 #define UTMI_PHY_PORTS				2
 

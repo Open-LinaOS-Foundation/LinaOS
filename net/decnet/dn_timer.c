@@ -16,15 +16,15 @@
  *       David S. Miller       : New socket locking
  *       Steve Whitehouse      : Timer grabs socket ref.
  */
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
+#include <linaos/net.h>
+#include <linaos/socket.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/timer.h>
+#include <linaos/spinlock.h>
 #include <net/sock.h>
-#include <linux/atomic.h>
-#include <linux/jiffies.h>
+#include <linaos/atomic.h>
+#include <linaos/jiffies.h>
 #include <net/flow.h>
 #include <net/dn.h>
 

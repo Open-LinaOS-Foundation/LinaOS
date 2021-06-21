@@ -9,15 +9,15 @@
  *	Copyright (C) 1997, 1998 Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  */
 
-#include <linux/types.h>
-#include <linux/zorro.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/zorro.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
 
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/amigahw.h>
 #include <asm/setup.h>
 

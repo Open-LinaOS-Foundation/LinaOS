@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 /*
- * include/linux/platform_data/ams-delta-fiq.h
+ * include/linaos/platform_data/ams-delta-fiq.h
  *
  * Taken from the original Amstrad modifications to fiq.h
  *

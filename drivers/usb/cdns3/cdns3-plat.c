@@ -12,10 +12,10 @@
  *         Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #include "core.h"
 #include "gadget-export.h"
@@ -171,7 +171,7 @@ err_phy3_init:
 
 /**
  * cdns3_remove - unbind drd driver and clean up
- * @pdev: Pointer to Linux platform device
+ * @pdev: Pointer to LinaOS platform device
  *
  * Returns 0 on success otherwise negative errno
  */

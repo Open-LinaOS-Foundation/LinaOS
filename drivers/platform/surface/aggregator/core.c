@@ -10,18 +10,18 @@
  * Copyright (C) 2019-2020 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/serdev.h>
-#include <linux/sysfs.h>
+#include <linaos/acpi.h>
+#include <linaos/atomic.h>
+#include <linaos/completion.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/kernel.h>
+#include <linaos/kref.h>
+#include <linaos/module.h>
+#include <linaos/pm.h>
+#include <linaos/serdev.h>
+#include <linaos/sysfs.h>
 
-#include <linux/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/controller.h>
 
 #include "bus.h"
 #include "controller.h"

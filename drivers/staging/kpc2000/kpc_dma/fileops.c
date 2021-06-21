@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0+
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>   /* printk() */
-#include <linux/slab.h>     /* kmalloc() */
-#include <linux/fs.h>       /* everything... */
-#include <linux/errno.h>    /* error codes */
-#include <linux/types.h>    /* size_t */
-#include <linux/cdev.h>
-#include <linux/uaccess.h>  /* copy_*_user */
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>   /* printk() */
+#include <linaos/slab.h>     /* kmalloc() */
+#include <linaos/fs.h>       /* everything... */
+#include <linaos/errno.h>    /* error codes */
+#include <linaos/types.h>    /* size_t */
+#include <linaos/cdev.h>
+#include <linaos/uaccess.h>  /* copy_*_user */
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
 #include "kpc_dma_driver.h"
 #include "uapi.h"
 

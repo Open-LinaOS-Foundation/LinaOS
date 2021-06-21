@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "IDT_82p33xxx: " fmt
 
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/timekeeping.h>
-#include <linux/bitops.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/ptp_clock_kernel.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/timekeeping.h>
+#include <linaos/bitops.h>
 
 #include "ptp_private.h"
 #include "ptp_idt82p33.h"

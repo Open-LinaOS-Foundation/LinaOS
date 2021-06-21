@@ -9,7 +9,7 @@
 #ifndef __ASM_KVM_FPU_H__
 #define __ASM_KVM_FPU_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern void fps_fres(u64 *fpscr, u32 *dst, u32 *src1);
 extern void fps_frsqrte(u64 *fpscr, u32 *dst, u32 *src1);

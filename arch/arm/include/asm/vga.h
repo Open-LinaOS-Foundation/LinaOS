@@ -2,7 +2,7 @@
 #ifndef ASMARM_VGA_H
 #define ASMARM_VGA_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 extern unsigned long vga_base;
 

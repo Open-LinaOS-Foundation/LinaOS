@@ -15,7 +15,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 /*
  * Force strict CPU ordering. And yes, this is required on UP too when we're

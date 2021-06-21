@@ -4,15 +4,15 @@
  * Author: Ran Bi <ran.bi@mediatek.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
 
 #define MT2712_BBPU		0x0000
 #define MT2712_BBPU_CLRPKY	BIT(4)

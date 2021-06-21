@@ -10,25 +10,25 @@
  */
 #define pr_fmt(fmt) "debug_vm_pgtable: [%-25s]: " fmt, __func__
 
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel.h>
-#include <linux/kconfig.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mm_types.h>
-#include <linux/module.h>
-#include <linux/pfn_t.h>
-#include <linux/printk.h>
-#include <linux/pgtable.h>
-#include <linux/random.h>
-#include <linux/spinlock.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/start_kernel.h>
-#include <linux/sched/mm.h>
-#include <linux/io.h>
+#include <linaos/gfp.h>
+#include <linaos/highmem.h>
+#include <linaos/hugetlb.h>
+#include <linaos/kernel.h>
+#include <linaos/kconfig.h>
+#include <linaos/mm.h>
+#include <linaos/mman.h>
+#include <linaos/mm_types.h>
+#include <linaos/module.h>
+#include <linaos/pfn_t.h>
+#include <linaos/printk.h>
+#include <linaos/pgtable.h>
+#include <linaos/random.h>
+#include <linaos/spinlock.h>
+#include <linaos/swap.h>
+#include <linaos/swapops.h>
+#include <linaos/start_kernel.h>
+#include <linaos/sched/mm.h>
+#include <linaos/io.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 

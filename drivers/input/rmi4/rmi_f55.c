@@ -4,10 +4,10 @@
  * Copyright (C) 2016 Zodiac Inflight Innovations
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/rmi.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/kernel.h>
+#include <linaos/rmi.h>
+#include <linaos/slab.h>
 #include "rmi_driver.h"
 
 #define F55_NAME		"rmi4_f55"

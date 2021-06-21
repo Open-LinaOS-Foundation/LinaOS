@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2017 James.Bottomley@HansenPartnership.com
  */
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "tpm-dev.h"
 
 struct tpmrm_priv {

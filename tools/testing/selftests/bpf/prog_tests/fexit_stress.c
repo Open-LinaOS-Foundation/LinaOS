@@ -40,9 +40,9 @@ void test_fexit_stress(void)
 		.insns_cnt = sizeof(skb_program) / sizeof(struct bpf_insn),
 	};
 
-	err = libbpf_find_vmlinux_btf_id("bpf_fentry_test1",
+	err = libbpf_find_vmlinaos_btf_id("bpf_fentry_test1",
 					 load_attr.expected_attach_type);
-	if (CHECK(err <= 0, "find_vmlinux_btf_id", "failed: %d\n", err))
+	if (CHECK(err <= 0, "find_vmlinaos_btf_id", "failed: %d\n", err))
 		goto out;
 	load_attr.attach_btf_id = err;
 

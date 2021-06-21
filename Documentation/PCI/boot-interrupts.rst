@@ -4,7 +4,7 @@
 Boot Interrupts
 ===============
 
-:Author: - Sean V Kelley <sean.v.kelley@linux.intel.com>
+:Author: - Sean V Kelley <sean.v.kelley@linaos.intel.com>
 
 Overview
 ========
@@ -28,8 +28,8 @@ Issue
 
 When in-band legacy INTx messages are forwarded to the PCH, they in turn
 trigger a new interrupt for which the OS likely lacks a handler. When an
-interrupt goes unhandled over time, they are tracked by the Linux kernel as
-Spurious Interrupts. The IRQ will be disabled by the Linux kernel after it
+interrupt goes unhandled over time, they are tracked by the LinaOS kernel as
+Spurious Interrupts. The IRQ will be disabled by the LinaOS kernel after it
 reaches a specific count with the error "nobody cared". This disabled IRQ
 now prevents valid usage by an existing interrupt which may happen to share
 the IRQ line::
@@ -110,7 +110,7 @@ In the absence of a way to directly disable the routing, another approach
 has been to make use of PCI Interrupt pin to INTx routing tables for
 purposes of redirecting the interrupt handler to the rerouted interrupt
 line by default.  Therefore, on chipsets where this INTx routing cannot be
-disabled, the Linux kernel will reroute the valid interrupt to its legacy
+disabled, the LinaOS kernel will reroute the valid interrupt to its legacy
 interrupt. This redirection of the handler will prevent the occurrence of
 the spurious interrupt detection which would ordinarily disable the IRQ
 line due to excessive unhandled counts. [2]_
@@ -152,7 +152,7 @@ If you have any legacy PCI interrupt questions that aren't answered, email me.
 
 Cheers,
     Sean V Kelley
-    sean.v.kelley@linux.intel.com
+    sean.v.kelley@linaos.intel.com
 
 .. [1] https://lore.kernel.org/r/12131949181903-git-send-email-sassmann@suse.de/
 .. [2] https://lore.kernel.org/r/12131949182094-git-send-email-sassmann@suse.de/

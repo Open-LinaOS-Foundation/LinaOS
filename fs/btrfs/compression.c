@@ -3,20 +3,20 @@
  * Copyright (C) 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/log2.h>
+#include <linaos/kernel.h>
+#include <linaos/bio.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/highmem.h>
+#include <linaos/time.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/backing-dev.h>
+#include <linaos/writeback.h>
+#include <linaos/slab.h>
+#include <linaos/sched/mm.h>
+#include <linaos/log2.h>
 #include <crypto/hash.h>
 #include "misc.h"
 #include "ctree.h"

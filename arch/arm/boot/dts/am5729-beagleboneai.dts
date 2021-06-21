@@ -107,35 +107,35 @@
 		led0 {
 			label = "beaglebone:green:usr0";
 			gpios = <&gpio3 17 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "off";
 		};
 
 		led1 {
 			label = "beaglebone:green:usr1";
 			gpios = <&gpio5 5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 			default-state = "off";
 		};
 
 		led2 {
 			label = "beaglebone:green:usr2";
 			gpios = <&gpio3 15 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "cpu";
+			linaos,default-trigger = "cpu";
 			default-state = "off";
 		};
 
 		led3 {
 			label = "beaglebone:green:usr3";
 			gpios = <&gpio3 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 			default-state = "off";
 		};
 
 		led4 {
 			label = "beaglebone:green:usr4";
 			gpios = <&gpio3 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "netdev";
+			linaos,default-trigger = "netdev";
 			default-state = "off";
 		};
 	};
@@ -195,7 +195,7 @@
 	};
 
 	extcon_usb1: extcon_usb1 {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "linaos,extcon-usb-gpio";
 		ti,enable-id-detection;
 		id-gpio = <&gpio3 13 GPIO_ACTIVE_HIGH>;
 	};

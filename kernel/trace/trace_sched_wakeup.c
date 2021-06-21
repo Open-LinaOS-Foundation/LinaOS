@@ -10,12 +10,12 @@
  *  Copyright (C) 2004-2006 Ingo Molnar
  *  Copyright (C) 2004 Nadia Yvette Chambers
  */
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/ftrace.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/deadline.h>
+#include <linaos/module.h>
+#include <linaos/kallsyms.h>
+#include <linaos/uaccess.h>
+#include <linaos/ftrace.h>
+#include <linaos/sched/rt.h>
+#include <linaos/sched/deadline.h>
 #include <trace/events/sched.h>
 #include "trace.h"
 

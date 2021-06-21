@@ -13,20 +13,20 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/stat.h>
-#include <linux/export.h>
-#include <linux/topology.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/security.h>
-#include <linux/slab.h>
-#include <linux/vgaarb.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/pci.h>
+#include <linaos/stat.h>
+#include <linaos/export.h>
+#include <linaos/topology.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/capability.h>
+#include <linaos/security.h>
+#include <linaos/slab.h>
+#include <linaos/vgaarb.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
 #include "pci.h"
 
 static int sysfs_initialized;	/* = 0 */

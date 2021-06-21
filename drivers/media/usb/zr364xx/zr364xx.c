@@ -15,12 +15,12 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/usb.h>
+#include <linaos/vmalloc.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>

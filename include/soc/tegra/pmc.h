@@ -10,7 +10,7 @@
 #ifndef __SOC_TEGRA_PMC_H__
 #define __SOC_TEGRA_PMC_H__
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 #include <soc/tegra/pm.h>
 

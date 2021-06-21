@@ -4,12 +4,12 @@
  * Copyright (C) 2018,2019 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/soc/mmp/cputype.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/soc/mmp/cputype.h>
 
 #define USB2_PLL_REG0		0x4
 #define USB2_PLL_REG1		0x8

@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: GPL-2.0
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/rtc.h>
 
 #define SPRD_RTC_SEC_CNT_VALUE		0x0
 #define SPRD_RTC_MIN_CNT_VALUE		0x4

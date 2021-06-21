@@ -10,7 +10,7 @@
  *	<rmthomas--a.t--sciolus.org>
  */
 
-#include <linux/i2c.h>
+#include <linaos/i2c.h>
 #include <sound/core.h>
 #include <sound/ac97_codec.h>
 #include <media/videobuf2-v4l2.h>

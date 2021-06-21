@@ -2,9 +2,9 @@
 /*
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
 #include "usbaudio.h"
 #include "helper.h"

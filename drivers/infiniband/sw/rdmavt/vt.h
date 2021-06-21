@@ -49,7 +49,7 @@
  */
 
 #include <rdma/rdma_vt.h>
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "pd.h"
 #include "qp.h"
 #include "ah.h"

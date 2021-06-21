@@ -5,13 +5,13 @@
  * Copyright 2016 Noralf Trønnes
  */
 
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/dma-buf.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/spi/spi.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_damage_helper.h>

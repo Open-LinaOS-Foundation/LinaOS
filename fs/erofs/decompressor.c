@@ -5,8 +5,8 @@
  * Created by Gao Xiang <gaoxiang25@huawei.com>
  */
 #include "compress.h"
-#include <linux/module.h>
-#include <linux/lz4.h>
+#include <linaos/module.h>
+#include <linaos/lz4.h>
 
 #ifndef LZ4_DISTANCE_MAX	/* history window size */
 #define LZ4_DISTANCE_MAX 65535	/* set to maximum value by default */

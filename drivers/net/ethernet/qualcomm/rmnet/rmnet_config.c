@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2018, The LinaOS Foundation. All rights reserved.
  *
  * RMNET configuration engine
  */
 
 #include <net/sock.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/netlink.h>
+#include <linaos/netdevice.h>
 #include "rmnet_config.h"
 #include "rmnet_handlers.h"
 #include "rmnet_vnd.h"

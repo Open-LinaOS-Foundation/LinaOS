@@ -9,8 +9,8 @@
 
 #include "main.h"
 
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <linaos/types.h>
+#include <uapi/linaos/batadv_packet.h>
 
 void batadv_tvlv_container_register(struct batadv_priv *bat_priv,
 				    u8 type, u8 version,

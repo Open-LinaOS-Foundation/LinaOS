@@ -3,7 +3,7 @@
 %option bison-bridge
 
 %{
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include "expr.h"
 #include "expr-bison.h"
 

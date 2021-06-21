@@ -5,16 +5,16 @@
  * Copyright (C) 2016 Rafał Miłecki <zajec5@gmail.com>
  */
 
-#include <linux/bcma/bcma.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 struct bcm_ns_usb2 {
 	struct device *dev;

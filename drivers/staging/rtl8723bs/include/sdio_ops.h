@@ -8,7 +8,7 @@
 #define __SDIO_OPS_H__
 
 
-#include <sdio_ops_linux.h>
+#include <sdio_ops_linaos.h>
 
 extern void sdio_set_intf_ops(struct adapter *padapter, struct _io_ops *pops);
 

@@ -6,7 +6,7 @@
 // Copyright (c) 2010 by Mauro Carvalho Chehab
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* Encore ENLTV2-FM  - silver plastic - "Wand Media" written at the botton
     Mauro Carvalho Chehab <mchehab@kernel.org> */

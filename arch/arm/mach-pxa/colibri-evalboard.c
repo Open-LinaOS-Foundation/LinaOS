@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/colibri-evalboard.c
+ *  linaos/arch/arm/mach-pxa/colibri-evalboard.c
  *
  *  Support for Toradex Colibri Evaluation Carrier Board
  *  Daniel Mack <daniel@caiaq.de>
  *  Marek Vasut <marek.vasut@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/machine.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/gpio/machine.h>
 #include <asm/mach-types.h>
 #include <mach/hardware.h>
 #include <asm/mach/arch.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
 #include <asm/io.h>
 
 #include "pxa27x.h"
 #include "colibri.h"
-#include <linux/platform_data/mmc-pxamci.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include "pxa27x-udc.h"
 
 #include "generic.h"

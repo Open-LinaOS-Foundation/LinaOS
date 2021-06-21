@@ -7,7 +7,7 @@
  * implements memory access pattern based NUMA-balancing:
  */
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 #define TNF_MIGRATED	0x01
 #define TNF_NO_GROUP	0x02

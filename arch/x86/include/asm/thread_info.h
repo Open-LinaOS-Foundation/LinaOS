@@ -8,7 +8,7 @@
 #ifndef _ASM_X86_THREAD_INFO_H
 #define _ASM_X86_THREAD_INFO_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/page.h>
 #include <asm/percpu.h>
 #include <asm/types.h>
@@ -51,7 +51,7 @@
 #ifndef __ASSEMBLY__
 struct task_struct;
 #include <asm/cpufeature.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
 struct thread_info {
 	unsigned long		flags;		/* low level flags */

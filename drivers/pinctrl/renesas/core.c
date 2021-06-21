@@ -10,20 +10,20 @@
 
 #define DRV_NAME "sh-pfc"
 
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/platform_device.h>
-#include <linux/psci.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/platform_device.h>
+#include <linaos/psci.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
 
 #include "core.h"
 

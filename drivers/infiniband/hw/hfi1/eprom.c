@@ -44,7 +44,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
-#include <linux/delay.h>
+#include <linaos/delay.h>
 #include "hfi.h"
 #include "common.h"
 #include "eprom.h"

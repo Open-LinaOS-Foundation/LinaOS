@@ -6,8 +6,8 @@
  *  Copyright 2007 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
 #include <asm/lv1call.h>
 #include <asm/ps3.h>
 

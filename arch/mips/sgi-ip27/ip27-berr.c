@@ -7,12 +7,12 @@
  * Copyright (C) 1999, 2000 by Silicon Graphics
  * Copyright (C) 2002  Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>	/* for SIGBUS */
-#include <linux/sched.h>	/* schow_regs(), force_sig() */
-#include <linux/sched/debug.h>
-#include <linux/sched/signal.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/signal.h>	/* for SIGBUS */
+#include <linaos/sched.h>	/* schow_regs(), force_sig() */
+#include <linaos/sched/debug.h>
+#include <linaos/sched/signal.h>
 
 #include <asm/ptrace.h>
 #include <asm/sn/addrs.h>
@@ -20,7 +20,7 @@
 #include <asm/sn/arch.h>
 #include <asm/tlbdebug.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 static void dump_hub_information(unsigned long errst0, unsigned long errst1)
 {

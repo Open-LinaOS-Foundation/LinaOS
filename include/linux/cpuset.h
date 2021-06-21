@@ -9,13 +9,13 @@
  *
  */
 
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/sched/task.h>
-#include <linux/cpumask.h>
-#include <linux/nodemask.h>
-#include <linux/mm.h>
-#include <linux/jump_label.h>
+#include <linaos/sched.h>
+#include <linaos/sched/topology.h>
+#include <linaos/sched/task.h>
+#include <linaos/cpumask.h>
+#include <linaos/nodemask.h>
+#include <linaos/mm.h>
+#include <linaos/jump_label.h>
 
 #ifdef CONFIG_CPUSETS
 

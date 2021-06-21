@@ -6,11 +6,11 @@
 #ifndef __INTEL_CONTEXT_TYPES__
 #define __INTEL_CONTEXT_TYPES__
 
-#include <linux/average.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <linaos/average.h>
+#include <linaos/kref.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
 
 #include "i915_active_types.h"
 #include "i915_utils.h"

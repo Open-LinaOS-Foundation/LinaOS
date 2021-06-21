@@ -7,15 +7,15 @@
  *
  *  Copyright IBM Corp. 2016, 2018
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 
-#include <linux/in.h>
-#include <linux/inetdevice.h>
-#include <linux/if_ether.h>
-#include <linux/sched/signal.h>
-#include <linux/utsname.h>
-#include <linux/ctype.h>
+#include <linaos/in.h>
+#include <linaos/inetdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/sched/signal.h>
+#include <linaos/utsname.h>
+#include <linaos/ctype.h>
 
 #include <net/addrconf.h>
 #include <net/sock.h>

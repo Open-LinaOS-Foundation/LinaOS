@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel_stat.h>
+#include <linaos/slab.h>
+#include <linaos/compat.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/miscdevice.h>
+#include <linaos/kernel_stat.h>
 
 #include <asm/cio.h>
 #include <asm/chsc.h>

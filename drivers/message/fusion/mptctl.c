@@ -1,11 +1,11 @@
 /*
- *  linux/drivers/message/fusion/mptctl.c
+ *  linaos/drivers/message/fusion/mptctl.c
  *      mpt Ioctl driver.
  *      For use with LSI PCI chip/adapters
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinaOS@lsi.com)
  *
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
@@ -45,20 +45,20 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/delay.h>	/* for mdelay */
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>	/* for mdelay */
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/compat.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -159,7 +159,7 @@ static struct fasync_struct *async_queue=NULL;
 //                  ^----------------- 80 + 512
 #define MAX_SGL_BYTES		((MAX_FRAGS_SPILL1 + 1 + (4 * FRAGS_PER_BUCKET)) * 8)
 
-/* linux only seems to ever give 128kB MAX contiguous (GFP_USER) mem bytes */
+/* linaos only seems to ever give 128kB MAX contiguous (GFP_USER) mem bytes */
 #define MAX_KMALLOC_SZ		(128*1024)
 
 #define MPT_IOCTL_DEFAULT_TIMEOUT 10	/* Default timeout value (seconds) */

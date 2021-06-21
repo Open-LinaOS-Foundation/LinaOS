@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,20 +33,20 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/workqueue.h>
-#include <linux/ratelimit.h>
-#include <linux/moduleparam.h>
+#include <linaos/memblock.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/hardirq.h>
+#include <linaos/workqueue.h>
+#include <linaos/ratelimit.h>
+#include <linaos/moduleparam.h>
 #ifdef CONFIG_XEN_GRANT_DMA_ALLOC
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #endif
 
 #include <xen/xen.h>

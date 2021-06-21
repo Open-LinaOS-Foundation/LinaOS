@@ -3,7 +3,7 @@
 #ifndef __QCOM_CLK_KRAIT_H
 #define __QCOM_CLK_KRAIT_H
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 
 struct krait_mux_clk {
 	unsigned int	*parent_map;

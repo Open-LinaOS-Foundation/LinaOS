@@ -5,15 +5,15 @@
  * Copyright (C) 2011-2013 One Laptop Per Child
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/serio.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/serio.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
 /*
  * The OLPC XO-1.75 and XO-4 laptops do not have a hardware PS/2 controller.

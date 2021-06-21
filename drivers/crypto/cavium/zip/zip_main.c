@@ -451,7 +451,7 @@ static void zip_unregister_compression_device(void)
  * debugfs functions
  */
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 /* Displays ZIP device statistics */
 static int zip_stats_show(struct seq_file *s, void *unused)

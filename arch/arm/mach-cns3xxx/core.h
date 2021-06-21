@@ -8,7 +8,7 @@
 #ifndef __CNS3XXX_CORE_H
 #define __CNS3XXX_CORE_H
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 extern void cns3xxx_timer_init(void);
 

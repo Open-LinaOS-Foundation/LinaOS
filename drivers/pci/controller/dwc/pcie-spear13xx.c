@@ -9,15 +9,15 @@
  * Mohit Kumar <mohit.kumar.dhaka@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
+#include <linaos/clk.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/pci.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/resource.h>
 
 #include "pcie-designware.h"
 

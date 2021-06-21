@@ -8,8 +8,8 @@
 #ifndef __LINUX_ANYBUSS_CONTROLLER_H__
 #define __LINUX_ANYBUSS_CONTROLLER_H__
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /*
  * To instantiate an Anybus-S host, a controller should provide the following:

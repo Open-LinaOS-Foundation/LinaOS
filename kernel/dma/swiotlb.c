@@ -20,32 +20,32 @@
 
 #define pr_fmt(fmt) "software IO TLB: " fmt
 
-#include <linux/cache.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/swiotlb.h>
-#include <linux/pfn.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/gfp.h>
-#include <linux/scatterlist.h>
-#include <linux/mem_encrypt.h>
-#include <linux/set_memory.h>
+#include <linaos/cache.h>
+#include <linaos/dma-direct.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/swiotlb.h>
+#include <linaos/pfn.h>
+#include <linaos/types.h>
+#include <linaos/ctype.h>
+#include <linaos/highmem.h>
+#include <linaos/gfp.h>
+#include <linaos/scatterlist.h>
+#include <linaos/mem_encrypt.h>
+#include <linaos/set_memory.h>
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #endif
 
 #include <asm/io.h>
 #include <asm/dma.h>
 
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/iommu-helper.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/iommu-helper.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/swiotlb.h>

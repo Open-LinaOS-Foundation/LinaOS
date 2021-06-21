@@ -5,8 +5,8 @@
  *
  */
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
 #include "bpf_jit.h"
 
 #define RV_REG_TCC RV_REG_A6

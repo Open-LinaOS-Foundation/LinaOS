@@ -10,8 +10,8 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/affs_hardblocks.h>
+#include <linaos/types.h>
+#include <linaos/affs_hardblocks.h>
 
 #include "check.h"
 

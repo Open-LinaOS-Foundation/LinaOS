@@ -6,11 +6,11 @@ Overview / What is SocketCAN
 ============================
 
 The socketcan package is an implementation of CAN protocols
-(Controller Area Network) for Linux.  CAN is a networking technology
+(Controller Area Network) for LinaOS.  CAN is a networking technology
 which has widespread use in automation, embedded devices, and
 automotive fields.  While there have been other CAN implementations
-for Linux based on character devices, SocketCAN uses the Berkeley
-socket API, the Linux network stack and implements the CAN device
+for LinaOS based on character devices, SocketCAN uses the Berkeley
+socket API, the LinaOS network stack and implements the CAN device
 drivers as network interfaces.  The CAN socket API has been designed
 as similar as possible to the TCP/IP protocols to allow programmers,
 familiar with network programming, to easily learn how to use CAN
@@ -22,7 +22,7 @@ sockets.
 Motivation / Why Using the Socket API
 =====================================
 
-There have been CAN implementations for Linux before SocketCAN so the
+There have been CAN implementations for LinaOS before SocketCAN so the
 question arises, why we have started another project.  Most existing
 implementations come as a device driver for some CAN hardware, they
 are based on character devices and provide comparatively little
@@ -39,9 +39,9 @@ new driver's API.
 
 SocketCAN was designed to overcome all of these limitations.  A new
 protocol family has been implemented which provides a socket interface
-to user space applications and which builds upon the Linux network
+to user space applications and which builds upon the LinaOS network
 layer, enabling use all of the provided queueing functionality.  A device
-driver for CAN controller hardware registers itself with the Linux
+driver for CAN controller hardware registers itself with the LinaOS
 network layer as a network device, so that CAN frames from the
 controller can be passed up to the network layer and on to the CAN
 protocol family module and also vice-versa.  Also, the protocol family
@@ -67,7 +67,7 @@ solution for a couple of reasons:
   socket(2) and using bind(2) to select a CAN interface and CAN ID, an
   application would have to do all these operations using ioctl(2)s.
 
-* **Code duplication:**  A character device cannot make use of the Linux
+* **Code duplication:**  A character device cannot make use of the LinaOS
   network queueing code, so all that code would have to be duplicated
   for CAN networking.
 
@@ -93,11 +93,11 @@ solution for a couple of reasons:
   CAN frames between them, (sophisticated) queueing of CAN frames, and
   providing an API for device drivers to register with.  However, then
   it would be no more difficult, or may be even easier, to use the
-  networking framework provided by the Linux kernel, and this is what
+  networking framework provided by the LinaOS kernel, and this is what
   SocketCAN does.
 
-The use of the networking framework of the Linux kernel is just the
-natural and most appropriate way to implement CAN for Linux.
+The use of the networking framework of the LinaOS kernel is just the
+natural and most appropriate way to implement CAN for LinaOS.
 
 
 .. _socketcan-concept:
@@ -107,7 +107,7 @@ SocketCAN Concept
 
 As described in :ref:`socketcan-motivation` the main goal of SocketCAN is to
 provide a socket interface to user space applications which builds
-upon the Linux network layer. In contrast to the commonly known
+upon the LinaOS network layer. In contrast to the commonly known
 TCP/IP and ethernet networking, the CAN bus is a broadcast-only(!)
 medium that has no MAC-layer addressing like ethernet. The CAN-identifier
 (can_id) is used for arbitration on the CAN-bus. Therefore the CAN-IDs
@@ -160,7 +160,7 @@ example (2) as it would receive in example (1) there is need for
 some kind of local loopback of the sent CAN frames on the appropriate
 node.
 
-The Linux network devices (by default) just can handle the
+The LinaOS network devices (by default) just can handle the
 transmission and reception of media dependent frames. Due to the
 arbitration on the CAN bus the transmission of a low prio CAN-ID
 may be delayed by the reception of a high prio CAN frame. To
@@ -200,7 +200,7 @@ be requested by the user application using the common CAN filter
 mechanisms. Inside this filter definition the (interested) type of
 errors may be selected. The reception of error messages is disabled
 by default. The format of the CAN error message frame is briefly
-described in the Linux header file "include/uapi/linux/can/error.h".
+described in the LinaOS header file "include/uapi/linaos/can/error.h".
 
 
 How to use SocketCAN
@@ -229,7 +229,7 @@ on the socket as usual. There are also CAN specific socket options
 described below.
 
 The Classical CAN frame structure (aka CAN 2.0B), the CAN FD frame structure
-and the sockaddr structure are defined in include/linux/can.h:
+and the sockaddr structure are defined in include/linaos/can.h:
 
 .. code-block:: C
 
@@ -406,7 +406,7 @@ the CAN_RAW socket supports a new socket option CAN_RAW_FD_FRAMES that
 switches the socket into a mode that allows the handling of CAN FD frames
 and Classical CAN frames simultaneously (see :ref:`socketcan-rawfd`).
 
-The struct canfd_frame is defined in include/linux/can.h:
+The struct canfd_frame is defined in include/linaos/can.h:
 
 .. code-block:: C
 
@@ -436,7 +436,7 @@ the mapping to the bus-relevant data length code (DLC), see :ref:`socketcan-can-
 
 The length of the two CAN(FD) frame structures define the maximum transfer
 unit (MTU) of the CAN(FD) network interface and skbuff data length. Two
-definitions are specified for CAN specific MTUs in include/linux/can.h:
+definitions are specified for CAN specific MTUs in include/linaos/can.h:
 
 .. code-block:: C
 
@@ -461,7 +461,7 @@ defaults are set at RAW socket binding time:
 
 These default settings may be changed before or after binding the socket.
 To use the referenced definitions of the socket options for CAN_RAW
-sockets, include <linux/can/raw.h>.
+sockets, include <linaos/can/raw.h>.
 
 
 .. _socketcan-rawfilter:
@@ -472,7 +472,7 @@ RAW socket option CAN_RAW_FILTER
 The reception of CAN frames using CAN_RAW sockets can be controlled
 by defining 0 .. n filters with the CAN_RAW_FILTER socket option.
 
-The CAN filter structure is defined in include/linux/can.h:
+The CAN filter structure is defined in include/linaos/can.h:
 
 .. code-block:: C
 
@@ -565,7 +565,7 @@ application in the same way as other CAN frames. The possible
 errors are divided into different error classes that may be filtered
 using the appropriate error mask. To register for every possible
 error condition CAN_ERR_MASK can be used as value for the error mask.
-The values for the error mask are defined in linux/can/error.h:
+The values for the error mask are defined in linaos/can/error.h:
 
 .. code-block:: C
 
@@ -667,7 +667,7 @@ Implementation hint for new CAN applications:
 
 To build a CAN FD aware application use struct canfd_frame as basic CAN
 data structure for CAN_RAW based applications. When the application is
-executed on an older Linux kernel and switching the CAN_RAW_FD_FRAMES
+executed on an older LinaOS kernel and switching the CAN_RAW_FD_FRAMES
 socket option returns an error: No problem. You'll get Classical CAN frames
 or CAN FD frames and can process them the same way.
 
@@ -727,7 +727,7 @@ A BCM socket is not intended for sending individual CAN frames using the
 struct can_frame as known from the CAN_RAW socket. Instead a special BCM
 configuration message is defined. The basic BCM configuration message used
 to communicate with the broadcast manager and the available operations are
-defined in the linux/can/bcm.h include. The BCM message consists of a
+defined in the linaos/can/bcm.h include. The BCM message consists of a
 message header with a command ('opcode') followed by zero or more CAN frames.
 The broadcast manager sends responses to user space in the same form:
 
@@ -744,7 +744,7 @@ The broadcast manager sends responses to user space in the same form:
     };
 
 The aligned payload 'frames' uses the same basic CAN frame structure defined
-at the beginning of :ref:`socketcan-rawfd` and in the include/linux/can.h include. All
+at the beginning of :ref:`socketcan-rawfd` and in the include/linaos/can.h include. All
 messages to the broadcast manager from user space have this structure.
 
 Note a CAN_BCM socket must be connected instead of bound after socket
@@ -1063,16 +1063,16 @@ Additional procfs files in /proc/net/can::
 
     stats       - SocketCAN core statistics (rx/tx frames, match ratios, ...)
     reset_stats - manual statistic reset
-    version     - prints SocketCAN core and ABI version (removed in Linux 5.10)
+    version     - prints SocketCAN core and ABI version (removed in LinaOS 5.10)
 
 
 Writing Own CAN Protocol Modules
 --------------------------------
 
 To implement a new protocol in the protocol family PF_CAN a new
-protocol has to be defined in include/linux/can.h .
+protocol has to be defined in include/linaos/can.h .
 The prototypes and definitions to use the SocketCAN core can be
-accessed by including include/linux/can/core.h .
+accessed by including include/linaos/can/core.h .
 In addition to functions that register the CAN protocol and the
 CAN device notifier chain there are functions to subscribe CAN
 frames received by CAN interfaces and to send CAN frames::
@@ -1164,7 +1164,7 @@ frames without real CAN controller hardware. Virtual CAN network
 devices are usually named 'vcanX', like vcan0 vcan1 vcan2 ...
 When compiled as a module the virtual CAN driver module is called vcan.ko
 
-Since Linux Kernel version 2.6.24 the vcan driver supports the Kernel
+Since LinaOS Kernel version 2.6.24 the vcan driver supports the Kernel
 netlink interface to create vcan network devices. The creation and
 removal of vcan network devices can be managed with the ip(8) tool::
 
@@ -1197,7 +1197,7 @@ Netlink interface to set/get devices properties
 
 The CAN device must be configured via netlink interface. The supported
 netlink message types are defined and briefly described in
-"include/linux/can/netlink.h". CAN link support for the program "ip"
+"include/linaos/can/netlink.h". CAN link support for the program "ip"
 of the IPROUTE2 utility suite is available and it can be used as shown
 below:
 
@@ -1365,7 +1365,7 @@ second bit timing has to be specified in order to enable the CAN FD bitrate.
 
 Additionally CAN FD capable CAN controllers support up to 64 bytes of
 payload. The representation of this length in can_frame.len and
-canfd_frame.len for userspace applications and inside the Linux network
+canfd_frame.len for userspace applications and inside the LinaOS network
 layer is a plain value from 0 .. 64 instead of the CAN 'data length code'.
 The data length code was a 1:1 mapping to the payload length in the Classical
 CAN frames anyway. The payload length to the bus-relevant DLC mapping is
@@ -1447,8 +1447,8 @@ older kernel versions.
 SocketCAN Resources
 ===================
 
-The Linux CAN / SocketCAN project resources (project site / mailing list)
-are referenced in the MAINTAINERS file in the Linux source tree.
+The LinaOS CAN / SocketCAN project resources (project site / mailing list)
+are referenced in the MAINTAINERS file in the LinaOS source tree.
 Search for CAN NETWORK [LAYERS|DRIVERS].
 
 Credits

@@ -9,8 +9,8 @@
 #ifndef __UX500_CLK_H
 #define __UX500_CLK_H
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
 
 struct clk;
 

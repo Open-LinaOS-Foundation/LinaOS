@@ -7,13 +7,13 @@
  * Copyright: (C) 2015 Texas Instruments, Inc.
  */
 
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/input.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/consumer.h>
 
 /* Contol registers */
 #define DRV2665_STATUS	0x00

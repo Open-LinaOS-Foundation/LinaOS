@@ -2,14 +2,14 @@
 //
 // Copyright (c) 2021 MediaTek Inc.
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/mt6315-regulator.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/spmi.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/mt6315-regulator.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/spmi.h>
 
 #define MT6315_BUCK_MODE_AUTO		0
 #define MT6315_BUCK_MODE_FORCE_PWM	1

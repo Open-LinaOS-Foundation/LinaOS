@@ -7,14 +7,14 @@
  * Copyright (c) 2015, Intel Corporation.
  */
 
-#include <linux/badblocks.h>
-#include <linux/seqlock.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/slab.h>
+#include <linaos/badblocks.h>
+#include <linaos/seqlock.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
 
 /**
  * badblocks_check() - check a given range for bad sectors

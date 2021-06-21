@@ -4,13 +4,13 @@
 //
 // Copyright 2018, Michael Ellerman, IBM Corporation.
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/memblock.h>
-#include <linux/nospec.h>
-#include <linux/prctl.h>
-#include <linux/seq_buf.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/memblock.h>
+#include <linaos/nospec.h>
+#include <linaos/prctl.h>
+#include <linaos/seq_buf.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/code-patching.h>

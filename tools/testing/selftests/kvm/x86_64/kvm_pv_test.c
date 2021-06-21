@@ -5,7 +5,7 @@
  * Tests for KVM paravirtual feature disablement
  */
 #include <asm/kvm_para.h>
-#include <linux/kvm_para.h>
+#include <linaos/kvm_para.h>
 #include <stdint.h>
 
 #include "test_util.h"

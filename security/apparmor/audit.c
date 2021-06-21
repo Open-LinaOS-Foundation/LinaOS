@@ -8,8 +8,8 @@
  * Copyright 2009-2010 Canonical Ltd.
  */
 
-#include <linux/audit.h>
-#include <linux/socket.h>
+#include <linaos/audit.h>
+#include <linaos/socket.h>
 
 #include "include/apparmor.h"
 #include "include/audit.h"

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *
  * Copyright (C) 2002,2003 Jun Nakajima <jun.nakajima@intel.com>
@@ -7,8 +7,8 @@
 #ifndef _UAPI_ASM_IA64_GCC_INTRIN_H
 #define _UAPI_ASM_IA64_GCC_INTRIN_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
 
 /* define this macro to get some asm stmts included in 'c' files */
 #define ASM_SUPPORTED

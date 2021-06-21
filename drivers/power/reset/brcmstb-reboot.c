@@ -11,22 +11,22 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/notifier.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/smp.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/notifier.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/printk.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
+#include <linaos/smp.h>
+#include <linaos/mfd/syscon.h>
 
 #define RESET_SOURCE_ENABLE_REG 1
 #define SW_MASTER_RESET_REG 2

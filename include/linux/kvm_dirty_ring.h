@@ -1,7 +1,7 @@
 #ifndef KVM_DIRTY_RING_H
 #define KVM_DIRTY_RING_H
 
-#include <linux/kvm.h>
+#include <linaos/kvm.h>
 
 /**
  * kvm_dirty_ring: KVM internal dirty ring structure

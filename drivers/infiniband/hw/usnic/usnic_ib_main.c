@@ -39,13 +39,13 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <linaos/module.h>
+#include <linaos/inetdevice.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
 
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>

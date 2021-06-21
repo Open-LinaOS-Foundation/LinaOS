@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SEGMENT_H
 #define _ASM_X86_SEGMENT_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 #include <asm/alternative.h>
 
 /*
@@ -57,7 +57,7 @@
 
 #ifdef CONFIG_X86_32
 /*
- * The layout of the per-CPU GDT under Linux:
+ * The layout of the per-CPU GDT under LinaOS:
  *
  *   0 - null								<=== cacheline #1
  *   1 - reserved

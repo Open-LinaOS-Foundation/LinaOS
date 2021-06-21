@@ -6,8 +6,8 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/kernel.h>
-#include <linux/log2.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
 
 size_t strarray__scnprintf_flags(struct strarray *sa, char *bf, size_t size, bool show_prefix, unsigned long flags)
 {

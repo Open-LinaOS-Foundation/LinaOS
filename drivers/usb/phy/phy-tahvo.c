@@ -12,16 +12,16 @@
  * Modified for Retu/Tahvo MFD by Aaro Koskinen.
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/usb.h>
-#include <linux/extcon-provider.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb/otg.h>
-#include <linux/mfd/retu.h>
-#include <linux/usb/gadget.h>
-#include <linux/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/usb.h>
+#include <linaos/extcon-provider.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/usb/otg.h>
+#include <linaos/mfd/retu.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/platform_device.h>
 
 #define DRIVER_NAME     "tahvo-usb"
 

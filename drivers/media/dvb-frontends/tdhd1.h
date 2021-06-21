@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2008 Oliver Endriss <o.endriss@gmx.de>
  *
- * The project's page is at https://linuxtv.org
+ * The project's page is at https://linaostv.org
  */
 
 #ifndef TDHD1_H

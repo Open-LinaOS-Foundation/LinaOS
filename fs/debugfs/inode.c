@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2004,2019 Greg Kroah-Hartman <greg@kroah.com>
  *  Copyright (C) 2004 IBM Inc.
- *  Copyright (C) 2019 Linux Foundation <gregkh@linuxfoundation.org>
+ *  Copyright (C) 2019 LinaOS Foundation <gregkh@linaosfoundation.org>
  *
  *  debugfs is for people to use instead of /proc or /sys.
  *  See ./Documentation/core-api/kernel-api.rst for more details.
@@ -12,21 +12,21 @@
 
 #define pr_fmt(fmt)	"debugfs: " fmt
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/namei.h>
-#include <linux/debugfs.h>
-#include <linux/fsnotify.h>
-#include <linux/string.h>
-#include <linux/seq_file.h>
-#include <linux/parser.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/pagemap.h>
+#include <linaos/init.h>
+#include <linaos/kobject.h>
+#include <linaos/namei.h>
+#include <linaos/debugfs.h>
+#include <linaos/fsnotify.h>
+#include <linaos/string.h>
+#include <linaos/seq_file.h>
+#include <linaos/parser.h>
+#include <linaos/magic.h>
+#include <linaos/slab.h>
+#include <linaos/security.h>
 
 #include "internal.h"
 

@@ -9,9 +9,9 @@
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/crypto.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/crypto.h>
 #include <asm/vio.h>
 
 #include "nx_csbcpb.h"

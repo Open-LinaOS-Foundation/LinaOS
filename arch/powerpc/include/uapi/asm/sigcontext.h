@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 #ifndef _ASM_POWERPC_SIGCONTEXT_H
 #define _ASM_POWERPC_SIGCONTEXT_H
 
@@ -8,7 +8,7 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #include <asm/ptrace.h>
 #ifdef __powerpc64__
 #include <asm/elf.h>

@@ -9,12 +9,12 @@
  * (C) 2013 Daniel Borkmann <dborkman@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
-#include <linux/idr.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/filter.h>
+#include <linaos/bpf.h>
+#include <linaos/idr.h>
 
 #include <net/rtnetlink.h>
 #include <net/pkt_cls.h>

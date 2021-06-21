@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/console.h>
+#include <linaos/kexec.h>
+#include <linaos/delay.h>
 #include <asm/cacheflush.h>
 #include <asm/sections.h>
 

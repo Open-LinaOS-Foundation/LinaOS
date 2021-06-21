@@ -7,7 +7,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "vdso.h"
 #include "dso.h"
@@ -16,8 +16,8 @@
 #include "symbol.h"
 #include "machine.h"
 #include "thread.h"
-#include "linux/string.h"
-#include <linux/zalloc.h>
+#include "linaos/string.h"
+#include <linaos/zalloc.h>
 #include "debug.h"
 
 /*

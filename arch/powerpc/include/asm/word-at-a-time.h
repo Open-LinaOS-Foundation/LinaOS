@@ -5,7 +5,7 @@
  * Word-at-a-time interfaces for PowerPC.
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/asm-compat.h>
 #include <asm/ppc_asm.h>
 

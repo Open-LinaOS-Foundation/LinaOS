@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * k8temp.c - Linux kernel module for hardware monitoring
+ * k8temp.c - LinaOS kernel module for hardware monitoring
  *
  * Copyright (C) 2006 Rudolf Marek <r.marek@assembler.cz>
  *
  * Inspired from the w83785 and amd756 drivers.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/hwmon.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
 #include <asm/processor.h>
 
 #define TEMP_FROM_REG(val)	(((((val) >> 16) & 0xff) - 49) * 1000)

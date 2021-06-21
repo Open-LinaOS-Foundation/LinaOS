@@ -5,7 +5,7 @@
 #ifndef __ASM_DAIFFLAGS_H
 #define __ASM_DAIFFLAGS_H
 
-#include <linux/irqflags.h>
+#include <linaos/irqflags.h>
 
 #include <asm/arch_gicv3.h>
 #include <asm/barrier.h>

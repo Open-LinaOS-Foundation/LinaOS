@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/h8300/mm/fault.c
+ *  linaos/arch/h8300/mm/fault.c
  *
  *  Copyright (C) 1998  D. Jeff Dionne <jeff@lineo.ca>,
  *  Copyright (C) 2000  Lineo, Inc.  (www.lineo.com)
  *
  *  Based on:
  *
- *  linux/arch/m68knommu/mm/fault.c
- *  linux/arch/m68k/mm/fault.c
+ *  linaos/arch/m68knommu/mm/fault.c
+ *  linaos/arch/m68k/mm/fault.c
  *
  *  Copyright (C) 1995  Hamish Macdonald
  */
 
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
+#include <linaos/mman.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
 
 
 void die(const char *str, struct pt_regs *fp, unsigned long err);

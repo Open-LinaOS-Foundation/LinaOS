@@ -9,26 +9,26 @@
 #include "dm-rq.h"
 #include "dm-uevent.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/blkpg.h>
-#include <linux/bio.h>
-#include <linux/mempool.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/uio.h>
-#include <linux/hdreg.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/pr.h>
-#include <linux/refcount.h>
-#include <linux/part_stat.h>
-#include <linux/blk-crypto.h>
-#include <linux/keyslot-manager.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/blkpg.h>
+#include <linaos/bio.h>
+#include <linaos/mempool.h>
+#include <linaos/dax.h>
+#include <linaos/slab.h>
+#include <linaos/idr.h>
+#include <linaos/uio.h>
+#include <linaos/hdreg.h>
+#include <linaos/delay.h>
+#include <linaos/wait.h>
+#include <linaos/pr.h>
+#include <linaos/refcount.h>
+#include <linaos/part_stat.h>
+#include <linaos/blk-crypto.h>
+#include <linaos/keyslot-manager.h>
 
 #define DM_MSG_PREFIX "core"
 

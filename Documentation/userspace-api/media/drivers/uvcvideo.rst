@@ -1,13 +1,13 @@
 .. SPDX-License-Identifier: GPL-2.0
 
-The Linux USB Video Class (UVC) driver
+The LinaOS USB Video Class (UVC) driver
 ======================================
 
 This file documents some driver-specific aspects of the UVC driver, such as
 driver-specific ioctls and implementation notes.
 
-Questions and remarks can be sent to the Linux UVC development mailing list at
-linux-uvc-devel@lists.berlios.de.
+Questions and remarks can be sent to the LinaOS UVC development mailing list at
+linaos-uvc-devel@lists.berlios.de.
 
 
 Extension Unit (XU) support
@@ -17,7 +17,7 @@ Introduction
 ~~~~~~~~~~~~
 
 The UVC specification allows for vendor-specific extensions through extension
-units (XUs). The Linux UVC driver supports extension unit controls (XU controls)
+units (XUs). The LinaOS UVC driver supports extension unit controls (XU controls)
 through two separate mechanisms:
 
   - through mappings of XU controls to V4L2 controls

@@ -2,13 +2,13 @@
 /*
  * TLB flush support for Hexagon
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_TLBFLUSH_H
 #define _ASM_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/processor.h>
 
 /*

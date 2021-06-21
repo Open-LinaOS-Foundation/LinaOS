@@ -8,16 +8,16 @@
  *     Copyright IBM Corp. 2003, 2009
  */
 
-#include <linux/memblock.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/compat.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/memblock.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/compat.h>
+#include <linaos/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

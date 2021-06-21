@@ -10,8 +10,8 @@
 #ifndef _PCB_CONFIG_H_
 #define _PCB_CONFIG_H_
 
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 
 /***************************************************************************
 				* Class Information *

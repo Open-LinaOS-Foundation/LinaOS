@@ -5,15 +5,15 @@
  * Copyright (C) 2014  Ulrich Hecht
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk/renesas.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/spinlock.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clk/renesas.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/spinlock.h>
 
 struct r8a73a4_cpg {
 	struct clk_onecell_data data;

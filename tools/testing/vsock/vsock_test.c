@@ -13,7 +13,7 @@
 #include <string.h>
 #include <errno.h>
 #include <unistd.h>
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #include "timeout.h"
 #include "control.h"

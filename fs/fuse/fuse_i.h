@@ -13,24 +13,24 @@
 # define pr_fmt(fmt) "fuse: " fmt
 #endif
 
-#include <linux/fuse.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/backing-dev.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/rbtree.h>
-#include <linux/poll.h>
-#include <linux/workqueue.h>
-#include <linux/kref.h>
-#include <linux/xattr.h>
-#include <linux/pid_namespace.h>
-#include <linux/refcount.h>
-#include <linux/user_namespace.h>
+#include <linaos/fuse.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/wait.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/backing-dev.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/rbtree.h>
+#include <linaos/poll.h>
+#include <linaos/workqueue.h>
+#include <linaos/kref.h>
+#include <linaos/xattr.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/refcount.h>
+#include <linaos/user_namespace.h>
 
 /** Default max number of pages that can be used in a single read request */
 #define FUSE_DEFAULT_MAX_PAGES_PER_REQ 32

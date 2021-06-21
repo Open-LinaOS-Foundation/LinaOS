@@ -9,12 +9,12 @@
  *  input is done also via polling. Do not expect good performance.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/export.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/errno.h>
+#include <linaos/export.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 

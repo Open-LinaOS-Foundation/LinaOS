@@ -9,7 +9,7 @@
 #ifndef _GVE_DESC_H_
 #define _GVE_DESC_H_
 
-#include <linux/build_bug.h>
+#include <linaos/build_bug.h>
 
 /* A note on seg_addrs
  *

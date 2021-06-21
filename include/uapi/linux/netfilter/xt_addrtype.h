@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_ADDRTYPE_H
 #define _XT_ADDRTYPE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum {
 	XT_ADDRTYPE_INVERT_SOURCE	= 0x0001,

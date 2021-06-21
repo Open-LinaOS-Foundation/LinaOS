@@ -117,7 +117,7 @@ config MACH_OMAP_PALMTE
 	help
 	  Support for the Palm Tungsten E PDA.  To boot the kernel, you'll
 	  need a PalmOS compatible bootloader; check out
-	  http://palmtelinux.sourceforge.net/ for more information.
+	  http://palmtelinaos.sourceforge.net/ for more information.
 	  Say Y here if you have this PDA model, say N otherwise.
 
 config MACH_OMAP_PALMZ71
@@ -174,7 +174,7 @@ config MACH_OMAP_GENERIC
 	depends on ARCH_OMAP15XX || ARCH_OMAP16XX
 	help
           Support for generic OMAP-1510, 1610 or 1710 board with
-          no FPGA. Can be used as template for porting Linux to
+          no FPGA. Can be used as template for porting LinaOS to
           custom OMAP boards. Say Y here if you have a custom
           board.
 

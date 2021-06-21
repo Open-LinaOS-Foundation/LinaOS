@@ -10,9 +10,9 @@
  * Author: Christian Krafft <krafft@de.ibm.com>
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
 #include <asm/machdep.h>
 #include <asm/hw_irq.h>
 #include <asm/cell-regs.h>

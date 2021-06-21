@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/drivers/usb/gadget/pxa27x_udc.h
+ * linaos/drivers/usb/gadget/pxa27x_udc.h
  * Intel PXA27x on-chip full speed USB device controller
  *
  * Inspired by original driver by Frank Becker, David Brownell, and others.
@@ -10,10 +10,10 @@
 #ifndef __LINUX_USB_GADGET_PXA27X_H
 #define __LINUX_USB_GADGET_PXA27X_H
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/usb/otg.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/usb/otg.h>
 
 /*
  * Register definitions

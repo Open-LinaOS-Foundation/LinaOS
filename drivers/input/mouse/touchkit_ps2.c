@@ -12,11 +12,11 @@
  * http://home.eeti.com.tw/web20/drivers/Software%20Programming%20Guide_v2.0.pdf 
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/libps2.h>
 
 #include "psmouse.h"
 #include "touchkit_ps2.h"

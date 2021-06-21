@@ -2,7 +2,7 @@
 //
 // SH7760 ("camelot") DMABRG audio DMA unit support
 //
-// Copyright (C) 2007 Manuel Lauss <mano@roarinelk.homelinux.net>
+// Copyright (C) 2007 Manuel Lauss <mano@roarinelk.homelinaos.net>
 //
 // The SH7760 DMABRG provides 4 dma channels (2x rec, 2x play), which
 // trigger an interrupt when one half of the programmed transfer size
@@ -10,11 +10,11 @@
 //
 // FIXME: little-endian only for now
 
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -331,4 +331,4 @@ module_platform_driver(sh7760_pcm_driver);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("SH7760 Audio DMA (DMABRG) driver");
-MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homelinux.net>");
+MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homelinaos.net>");

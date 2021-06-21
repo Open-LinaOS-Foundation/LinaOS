@@ -71,7 +71,7 @@ int zpa2326_probe(struct device        *parent,
 void zpa2326_remove(const struct device *parent);
 
 #ifdef CONFIG_PM
-#include <linux/pm.h>
+#include <linaos/pm.h>
 extern const struct dev_pm_ops zpa2326_pm_ops;
 #define ZPA2326_PM_OPS (&zpa2326_pm_ops)
 #else

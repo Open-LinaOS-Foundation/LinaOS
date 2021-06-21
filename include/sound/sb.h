@@ -9,8 +9,8 @@
 
 #include <sound/pcm.h>
 #include <sound/rawmidi.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 enum sb_hw_type {
 	SB_HW_AUTO,

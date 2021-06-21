@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * userio: virtual serio device support
  * Copyright (C) 2015 Red Hat
@@ -22,7 +22,7 @@
 #ifndef _USERIO_H
 #define _USERIO_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 enum userio_cmd_type {
 	USERIO_CMD_REGISTER = 0,

@@ -9,8 +9,8 @@
 #include <crypto/internal/simd.h>
 #include <crypto/sha2.h>
 #include <crypto/sha512_base.h>
-#include <linux/crypto.h>
-#include <linux/module.h>
+#include <linaos/crypto.h>
+#include <linaos/module.h>
 
 #include <asm/simd.h>
 #include <asm/neon.h>

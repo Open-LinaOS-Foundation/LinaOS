@@ -22,18 +22,18 @@
  * Contributors: Andreas Larsson <andreas@gaisler.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/can/dev.h>
-#include <linux/spinlock.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/can/dev.h>
+#include <linaos/spinlock.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #define DRV_NAME	"grcan"
 

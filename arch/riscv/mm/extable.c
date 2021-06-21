@@ -7,9 +7,9 @@
  */
 
 
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <linaos/extable.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

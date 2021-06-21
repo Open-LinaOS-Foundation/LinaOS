@@ -5,15 +5,15 @@
  * Author      Karsten Keil <kkeil@suse.de>
  *             based on the w6692 I4L driver from Petr Novak <petr.novak@i.cz>
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4linaos.de>
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/mISDNhw.h>
+#include <linaos/slab.h>
 #include "w6692.h"
 
 #define W6692_REV	"2.0"

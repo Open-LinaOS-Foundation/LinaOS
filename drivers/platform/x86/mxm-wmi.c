@@ -4,11 +4,11 @@
  *
  * Copyright(C) 2010 Red Hat.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mxm-wmi.h>
-#include <linux/acpi.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/mxm-wmi.h>
+#include <linaos/acpi.h>
 
 MODULE_AUTHOR("Dave Airlie");
 MODULE_DESCRIPTION("MXM WMI Driver");

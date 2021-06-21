@@ -12,5 +12,5 @@ examples got out of date and doesn't even compile nowadays.
 Also, nowadays, the best is to use the libdvbv5 DVB API nowadays,
 with is fully documented.
 
-Please refer to the `libdvbv5 <https://linuxtv.org/docs/libdvbv5/index.html>`__
+Please refer to the `libdvbv5 <https://linaostv.org/docs/libdvbv5/index.html>`__
 for updated/recommended examples.

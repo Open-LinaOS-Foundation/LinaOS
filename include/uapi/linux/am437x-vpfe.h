@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2013 - 2014 Texas Instruments, Inc.
  *
@@ -22,7 +22,7 @@
 #ifndef AM437X_VPFE_USER_H
 #define AM437X_VPFE_USER_H
 
-#include <linux/videodev2.h>
+#include <linaos/videodev2.h>
 
 enum vpfe_ccdc_data_size {
 	VPFE_CCDC_DATA_16BITS = 0,

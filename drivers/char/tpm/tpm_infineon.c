@@ -8,11 +8,11 @@
  * Copyright (C) 2005, Marcel Selhorst <tpmdd@selhorst.net>
  * Sirrix AG - security technologies <tpmdd@sirrix.com> and
  * Applied Data Security Group, Ruhr-University Bochum, Germany
- * Project-Homepage: http://www.trust.rub.de/projects/linux-device-driver-infineon-tpm/ 
+ * Project-Homepage: http://www.trust.rub.de/projects/linaos-device-driver-infineon-tpm/ 
  */
 
-#include <linux/init.h>
-#include <linux/pnp.h>
+#include <linaos/init.h>
+#include <linaos/pnp.h>
 #include "tpm.h"
 
 /* Infineon specific definitions */

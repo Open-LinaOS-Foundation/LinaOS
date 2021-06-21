@@ -2,8 +2,8 @@
 #ifndef __LINUX_VMACACHE_H
 #define __LINUX_VMACACHE_H
 
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <linaos/sched.h>
+#include <linaos/mm.h>
 
 static inline void vmacache_flush(struct task_struct *tsk)
 {

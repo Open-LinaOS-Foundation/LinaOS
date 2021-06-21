@@ -5,24 +5,24 @@
  * (c) 2009 Manuel Lauss <manuel.lauss@googlemail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/init.h>
-#include <linux/input.h>	/* KEY_* codes */
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/interrupt.h>
-#include <linux/ata_platform.h>
-#include <linux/mmc/host.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/platnand.h>
-#include <linux/platform_device.h>
-#include <linux/smsc911x.h>
-#include <linux/wm97xx.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/init.h>
+#include <linaos/input.h>	/* KEY_* codes */
+#include <linaos/i2c.h>
+#include <linaos/io.h>
+#include <linaos/leds.h>
+#include <linaos/interrupt.h>
+#include <linaos/ata_platform.h>
+#include <linaos/mmc/host.h>
+#include <linaos/module.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/platnand.h>
+#include <linaos/platform_device.h>
+#include <linaos/smsc911x.h>
+#include <linaos/wm97xx.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/gpio-au1300.h>

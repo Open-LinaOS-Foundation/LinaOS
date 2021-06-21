@@ -7,21 +7,21 @@
  * Authors:  Pierre-Hugues Husson <phhusson@free.fr>
  *           Ilya Petrov <ilya.muromec@gmail.com>
  *           Marc Dietrich <marvin24@gmx.de>
- *           Julian Andres Klode <jak@jak-linux.org>
+ *           Julian Andres Klode <jak@jak-linaos.org>
  */
 
 #ifndef __LINUX_MFD_NVEC
 #define __LINUX_MFD_NVEC
 
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <linaos/atomic.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/notifier.h>
+#include <linaos/reset.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
 
 /* NVEC_POOL_SIZE - Size of the pool in &struct nvec_msg */
 #define NVEC_POOL_SIZE	64

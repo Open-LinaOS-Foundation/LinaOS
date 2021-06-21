@@ -24,7 +24,7 @@
  *
  * Authors:
  *    Zhi Wang <zhi.a.wang@intel.com>
- *    Zhenyu Wang <zhenyuw@linux.intel.com>
+ *    Zhenyu Wang <zhenyuw@linaos.intel.com>
  *    Xiao Zheng <xiao.zheng@intel.com>
  *
  * Contributors:

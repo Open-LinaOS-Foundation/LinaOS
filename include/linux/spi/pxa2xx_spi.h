@@ -2,10 +2,10 @@
 /*
  * Copyright (C) 2005 Stephen Street / StreetFire Sound Labs
  */
-#ifndef __linux_pxa2xx_spi_h
-#define __linux_pxa2xx_spi_h
+#ifndef __linaos_pxa2xx_spi_h
+#define __linaos_pxa2xx_spi_h
 
-#include <linux/pxa2xx_ssp.h>
+#include <linaos/pxa2xx_ssp.h>
 
 #define PXA2XX_CS_ASSERT (0x01)
 #define PXA2XX_CS_DEASSERT (0x02)
@@ -44,7 +44,7 @@ struct pxa2xx_spi_chip {
 
 #if defined(CONFIG_ARCH_PXA) || defined(CONFIG_ARCH_MMP)
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 
 extern void pxa2xx_set_spi_info(unsigned id, struct pxa2xx_spi_controller *info);
 

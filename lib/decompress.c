@@ -5,20 +5,20 @@
  * Detect the decompression method based on magic number
  */
 
-#include <linux/decompress/generic.h>
+#include <linaos/decompress/generic.h>
 
-#include <linux/decompress/bunzip2.h>
-#include <linux/decompress/unlzma.h>
-#include <linux/decompress/unxz.h>
-#include <linux/decompress/inflate.h>
-#include <linux/decompress/unlzo.h>
-#include <linux/decompress/unlz4.h>
-#include <linux/decompress/unzstd.h>
+#include <linaos/decompress/bunzip2.h>
+#include <linaos/decompress/unlzma.h>
+#include <linaos/decompress/unxz.h>
+#include <linaos/decompress/inflate.h>
+#include <linaos/decompress/unlzo.h>
+#include <linaos/decompress/unlz4.h>
+#include <linaos/decompress/unzstd.h>
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/printk.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/printk.h>
 
 #ifndef CONFIG_DECOMPRESS_GZIP
 # define gunzip NULL

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  PC Speaker beeper driver for Linux
+ *  PC Speaker beeper driver for LinaOS
  *
  *  Copyright (c) 2002 Vojtech Pavlik
  *  Copyright (c) 1992 Orest Zborowski
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i8253.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/timex.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i8253.h>
+#include <linaos/input.h>
+#include <linaos/platform_device.h>
+#include <linaos/timex.h>
+#include <linaos/io.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("PC Speaker beeper driver");

@@ -143,12 +143,12 @@ sparc_exit:
 	 stb	%g0, [%g6 + TI_WSAVED]
 	.size	sparc_exit,.-sparc_exit
 
-linux_sparc_ni_syscall:
+linaos_sparc_ni_syscall:
 	sethi	%hi(sys_ni_syscall), %l7
 	ba,pt	%xcc, 4f
 	 or	%l7, %lo(sys_ni_syscall), %l7
 
-linux_syscall_trace32:
+linaos_syscall_trace32:
 	call	syscall_trace_enter
 	 add	%sp, PTREGS_OFF, %o0
 	brnz,pn	%o0, 3f
@@ -178,7 +178,7 @@ linux_syscall_trace32:
 	ba,pt	%xcc, 5f
 	 srl	%i3, 0, %o3
 
-linux_syscall_trace:
+linaos_syscall_trace:
 	call	syscall_trace_enter
 	 add	%sp, PTREGS_OFF, %o0
 	brnz,pn	%o0, 3f
@@ -209,13 +209,13 @@ linux_syscall_trace:
 	 mov	%i4, %o4
 
 
-	/* Linux 32-bit system calls enter here... */
+	/* LinaOS 32-bit system calls enter here... */
 	.align	32
-	.globl	linux_sparc_syscall32
-linux_sparc_syscall32:
+	.globl	linaos_sparc_syscall32
+linaos_sparc_syscall32:
 	/* Direct access to user regs, much faster. */
 	cmp	%g1, NR_syscalls			! IEU1	Group
-	bgeu,pn	%xcc, linux_sparc_ni_syscall		! CTI
+	bgeu,pn	%xcc, linaos_sparc_ni_syscall		! CTI
 	 srl	%i0, 0, %o0				! IEU0
 	sll	%g1, 2, %l4				! IEU0	Group
 	srl	%i4, 0, %o4				! IEU1
@@ -226,20 +226,20 @@ linux_sparc_syscall32:
 	srl	%i3, 0, %o3				! IEU0
 	srl	%i2, 0, %o2				! IEU0	Group
 	andcc	%l0, (_TIF_SYSCALL_TRACE|_TIF_SECCOMP|_TIF_SYSCALL_AUDIT|_TIF_SYSCALL_TRACEPOINT|_TIF_NOHZ), %g0
-	bne,pn	%icc, linux_syscall_trace32		! CTI
+	bne,pn	%icc, linaos_syscall_trace32		! CTI
 	 mov	%i0, %l5				! IEU1
 5:	call	%l7					! CTI	Group brk forced
 	 srl	%i5, 0, %o5				! IEU1
 	ba,pt	%xcc, 3f
 	 sra	%o0, 0, %o0
 
-	/* Linux native system calls enter here... */
+	/* LinaOS native system calls enter here... */
 	.align	32
-	.globl	linux_sparc_syscall
-linux_sparc_syscall:
+	.globl	linaos_sparc_syscall
+linaos_sparc_syscall:
 	/* Direct access to user regs, much faster. */
 	cmp	%g1, NR_syscalls			! IEU1	Group
-	bgeu,pn	%xcc, linux_sparc_ni_syscall		! CTI
+	bgeu,pn	%xcc, linaos_sparc_ni_syscall		! CTI
 	 mov	%i0, %o0				! IEU0
 	sll	%g1, 2, %l4				! IEU0	Group
 	mov	%i1, %o1				! IEU1
@@ -250,7 +250,7 @@ linux_sparc_syscall:
 	mov	%i3, %o3				! IEU1
 	mov	%i4, %o4				! IEU0	Group
 	andcc	%l0, (_TIF_SYSCALL_TRACE|_TIF_SECCOMP|_TIF_SYSCALL_AUDIT|_TIF_SYSCALL_TRACEPOINT|_TIF_NOHZ), %g0
-	bne,pn	%icc, linux_syscall_trace		! CTI	Group
+	bne,pn	%icc, linaos_syscall_trace		! CTI	Group
 	 mov	%i0, %l5				! IEU0
 2:	call	%l7					! CTI	Group brk forced
 	 mov	%i5, %o5				! IEU0
@@ -272,7 +272,7 @@ ret_sys_call:
 	andn	%g3, %g2, %g3
 3:
 	stx	%g3, [%sp + PTREGS_OFF + PT_V9_TSTATE]	
-	bne,pn	%icc, linux_syscall_trace2
+	bne,pn	%icc, linaos_syscall_trace2
 	 add	%l1, 0x4, %l2			! npc = npc+4
 	stx	%l1, [%sp + PTREGS_OFF + PT_V9_TPC]
 	ba,pt	%xcc, rtrap
@@ -293,7 +293,7 @@ ret_sys_call:
 	ba,pt	%xcc, 3b
 	 or	%g3, %g2, %g3
 
-linux_syscall_trace2:
+linaos_syscall_trace2:
 	call	syscall_trace_leave
 	 add	%sp, PTREGS_OFF, %o0
 	stx	%l1, [%sp + PTREGS_OFF + PT_V9_TPC]

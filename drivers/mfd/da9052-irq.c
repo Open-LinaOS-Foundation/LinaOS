@@ -10,17 +10,17 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <linaos/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/reg.h>
 
 #define DA9052_NUM_IRQ_REGS		4
 #define DA9052_IRQ_MASK_POS_1		0x01

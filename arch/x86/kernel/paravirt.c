@@ -6,15 +6,15 @@
     2007 - x86_64 support added by Glauber de Oliveira Costa, Red Hat Inc
 */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/efi.h>
-#include <linux/bcd.h>
-#include <linux/highmem.h>
-#include <linux/kprobes.h>
-#include <linux/pgtable.h>
-#include <linux/static_call.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/efi.h>
+#include <linaos/bcd.h>
+#include <linaos/highmem.h>
+#include <linaos/kprobes.h>
+#include <linaos/pgtable.h>
+#include <linaos/static_call.h>
 
 #include <asm/bug.h>
 #include <asm/paravirt.h>

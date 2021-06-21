@@ -10,9 +10,9 @@
 
 /* Header files */
 #include <media/v4l2-dev.h>
-#include <linux/videodev2.h>
-#include <linux/clk.h>
-#include <linux/i2c.h>
+#include <linaos/videodev2.h>
+#include <linaos/clk.h>
+#include <linaos/i2c.h>
 #include <media/v4l2-fh.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-device.h>

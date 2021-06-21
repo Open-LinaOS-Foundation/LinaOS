@@ -2,7 +2,7 @@
 #ifndef __USB_TYPEC_DP_H
 #define __USB_TYPEC_DP_H
 
-#include <linux/usb/typec_altmode.h>
+#include <linaos/usb/typec_altmode.h>
 
 #define USB_TYPEC_DP_SID	0xff01
 /* USB IF has not assigned a Standard ID (SID) for VirtualLink,

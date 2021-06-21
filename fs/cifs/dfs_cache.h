@@ -8,8 +8,8 @@
 #ifndef _CIFS_DFS_CACHE_H
 #define _CIFS_DFS_CACHE_H
 
-#include <linux/nls.h>
-#include <linux/list.h>
+#include <linaos/nls.h>
+#include <linaos/list.h>
 #include "cifsglob.h"
 
 struct dfs_cache_tgt_list {

@@ -3,15 +3,15 @@
  * Copyright 2020 Noralf Trønnes
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/lz4.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/string_helpers.h>
-#include <linux/usb.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <linaos/dma-buf.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/lz4.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/string_helpers.h>
+#include <linaos/usb.h>
+#include <linaos/vmalloc.h>
+#include <linaos/workqueue.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_damage_helper.h>

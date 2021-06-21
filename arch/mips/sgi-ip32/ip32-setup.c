@@ -7,13 +7,13 @@
  *
  * Copyright (C) 2000 Harald Koerfgen
  * Copyright (C) 2002, 2003, 2005 Ilya A. Volynets
- * Copyright (C) 2006 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2006 Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/param.h>
-#include <linux/sched.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/param.h>
+#include <linaos/sched.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mipsregs.h>

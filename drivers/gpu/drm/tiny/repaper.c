@@ -13,14 +13,14 @@
  * https://github.com/repaper/gratis
  */
 
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/sched/clock.h>
-#include <linux/spi/spi.h>
-#include <linux/thermal.h>
+#include <linaos/delay.h>
+#include <linaos/dma-buf.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/property.h>
+#include <linaos/sched/clock.h>
+#include <linaos/spi/spi.h>
+#include <linaos/thermal.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_connector.h>

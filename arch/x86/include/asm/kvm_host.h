@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for LinaOS
  *
  * This header defines architecture specific interfaces, x86 version
  */
@@ -8,22 +8,22 @@
 #ifndef _ASM_X86_KVM_HOST_H
 #define _ASM_X86_KVM_HOST_H
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/mmu_notifier.h>
-#include <linux/tracepoint.h>
-#include <linux/cpumask.h>
-#include <linux/irq_work.h>
-#include <linux/irq.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/tracepoint.h>
+#include <linaos/cpumask.h>
+#include <linaos/irq_work.h>
+#include <linaos/irq.h>
 
-#include <linux/kvm.h>
-#include <linux/kvm_para.h>
-#include <linux/kvm_types.h>
-#include <linux/perf_event.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/clocksource.h>
-#include <linux/irqbypass.h>
-#include <linux/hyperv.h>
+#include <linaos/kvm.h>
+#include <linaos/kvm_para.h>
+#include <linaos/kvm_types.h>
+#include <linaos/perf_event.h>
+#include <linaos/pvclock_gtod.h>
+#include <linaos/clocksource.h>
+#include <linaos/irqbypass.h>
+#include <linaos/hyperv.h>
 
 #include <asm/apic.h>
 #include <asm/pvclock-abi.h>

@@ -5,12 +5,12 @@
  * Copyright (C) 2010 Digital Devices GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/i2c.h>
 #include <asm/div64.h>
 
 #include <media/dvb_frontend.h>

@@ -8,8 +8,8 @@
 #if !defined(_TRACE_NFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NFS_H
 
-#include <linux/tracepoint.h>
-#include <linux/iversion.h>
+#include <linaos/tracepoint.h>
+#include <linaos/iversion.h>
 
 TRACE_DEFINE_ENUM(DT_UNKNOWN);
 TRACE_DEFINE_ENUM(DT_FIFO);

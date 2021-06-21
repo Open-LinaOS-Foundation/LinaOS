@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/mm/numa.c
+ *  linaos/arch/alpha/mm/numa.c
  *
  *  DISCONTIGMEM NUMA alpha support.
  *
  *  Copyright (C) 2001 Andrea Arcangeli <andrea@suse.de> SuSE
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/swap.h>
-#include <linux/initrd.h>
-#include <linux/pfn.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/swap.h>
+#include <linaos/initrd.h>
+#include <linaos/pfn.h>
+#include <linaos/module.h>
 
 #include <asm/hwrpb.h>
 #include <asm/sections.h>

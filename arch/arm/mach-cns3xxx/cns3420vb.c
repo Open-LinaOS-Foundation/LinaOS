@@ -10,19 +10,19 @@
  *		  Anton Vorontsov <avorontsov@mvista.com>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_core.h>
-#include <linux/serial_8250.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mtd/partitions.h>
-#include <linux/usb/ehci_pdriver.h>
-#include <linux/usb/ohci_pdriver.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_8250.h>
+#include <linaos/platform_device.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/usb/ehci_pdriver.h>
+#include <linaos/usb/ohci_pdriver.h>
 #include <asm/setup.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

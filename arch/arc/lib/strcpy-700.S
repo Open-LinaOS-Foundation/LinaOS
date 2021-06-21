@@ -13,7 +13,7 @@
    there, but the it is not likely to be taken often, and it
    would also be likey to cost an unaligned mispredict at the next call.  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 ENTRY_CFI(strcpy)
 	or	r2,r0,r1

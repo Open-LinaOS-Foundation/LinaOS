@@ -3,18 +3,18 @@
  * comedidev.h
  * header file for kernel-only structures, variables, and constants
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
 #ifndef _COMEDIDEV_H
 #define _COMEDIDEV_H
 
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/spinlock_types.h>
-#include <linux/rwsem.h>
-#include <linux/kref.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock_types.h>
+#include <linaos/rwsem.h>
+#include <linaos/kref.h>
 
 #include "comedi.h"
 

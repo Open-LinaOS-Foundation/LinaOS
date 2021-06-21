@@ -7,8 +7,8 @@
 #ifndef PTP_IDT82P33_H
 #define PTP_IDT82P33_H
 
-#include <linux/ktime.h>
-#include <linux/workqueue.h>
+#include <linaos/ktime.h>
+#include <linaos/workqueue.h>
 
 
 /* Register Map - AN888_SMUforIEEE_SynchEther_82P33xxx_RevH.pdf */

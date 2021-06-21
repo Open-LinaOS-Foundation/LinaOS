@@ -3,15 +3,15 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/usb/hcd.h>
-#include <linux/scatterlist.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/bitops.h>
+#include <linaos/slab.h>
+#include <linaos/log2.h>
+#include <linaos/usb.h>
+#include <linaos/wait.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/scatterlist.h>
 
 #define to_urb(d) container_of(d, struct urb, kref)
 
@@ -301,7 +301,7 @@ EXPORT_SYMBOL_GPL(usb_urb_ep_type_check);
  * start work on later requests before driver software has finished the
  * completion processing for earlier (successful) requests.
  *
- * As of Linux 2.6, all USB endpoint transfer queues support depths greater
+ * As of LinaOS 2.6, all USB endpoint transfer queues support depths greater
  * than one.  This was previously a HCD-specific behavior, except for ISO
  * transfers.  Non-isochronous endpoint queues are inactive during cleanup
  * after faults (transfer errors or cancellation).

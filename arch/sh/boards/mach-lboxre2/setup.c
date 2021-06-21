@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/lbox/setup.c
+ * linaos/arch/sh/boards/lbox/setup.c
  *
  * Copyright (C) 2007 Nobuhiro Iwamatsu
  *
  * NTT COMWARE L-BOX RE2 Support
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
 #include <asm/machvec.h>
 #include <asm/addrspace.h>
 #include <mach/lboxre2.h>

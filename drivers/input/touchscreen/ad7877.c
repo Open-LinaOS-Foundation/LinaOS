@@ -5,7 +5,7 @@
  * Description:	AD7877 based touchscreen, sensor (ADCs), DAC and GPIO driver
  * Based on:	ads7846.c
  *
- * Bugs:        Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:        Enter bugs at http://blackfin.uclinaos.org/
  *
  * History:
  * Copyright (c) 2005 David Brownell
@@ -22,15 +22,15 @@
  */
 
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ad7877.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ad7877.h>
+#include <linaos/module.h>
 #include <asm/irq.h>
 
 #define	TS_PEN_UP_TIMEOUT	msecs_to_jiffies(100)
@@ -332,7 +332,7 @@ static int ad7877_process_data(struct ad7877 *ts)
 	 * The preprocessing function consists of an averaging filter.
 	 * The combination of 'first conversion delay' and averaging provides a robust solution,
 	 * discarding the spurious noise in the signal and keeping only the data of interest.
-	 * The size of the averaging filter is programmable. (dev.platform_data, see linux/spi/ad7877.h)
+	 * The size of the averaging filter is programmable. (dev.platform_data, see linaos/spi/ad7877.h)
 	 * Other user-programmable conversion controls include variable acquisition time,
 	 * and first conversion delay. Up to 16 averages can be taken per conversion.
 	 */
@@ -818,7 +818,7 @@ static struct spi_driver ad7877_driver = {
 
 module_spi_driver(ad7877_driver);
 
-MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinux.org>");
+MODULE_AUTHOR("Michael Hennerich <hennerich@blackfin.uclinaos.org>");
 MODULE_DESCRIPTION("AD7877 touchscreen Driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("spi:ad7877");

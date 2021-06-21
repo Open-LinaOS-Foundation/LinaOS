@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ftrace.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mm_types.h>
-#include <linux/pgtable.h>
+#include <linaos/ftrace.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/mm_types.h>
+#include <linaos/pgtable.h>
 
 #include <asm/bugs.h>
 #include <asm/cacheflush.h>

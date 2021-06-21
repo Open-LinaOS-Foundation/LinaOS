@@ -28,8 +28,8 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/crc32.h>
+#include <linaos/firmware.h>
+#include <linaos/crc32.h>
 
 #include "i915_drv.h"
 #include "gvt.h"

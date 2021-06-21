@@ -9,8 +9,8 @@
 #ifndef __ASM_TXX9_TX4927PCIC_H
 #define __ASM_TXX9_TX4927PCIC_H
 
-#include <linux/pci.h>
-#include <linux/irqreturn.h>
+#include <linaos/pci.h>
+#include <linaos/irqreturn.h>
 
 struct tx4927_pcic_reg {
 	u32 pciid;
@@ -75,20 +75,20 @@ struct tx4927_pcic_reg {
 };
 
 /* bits for PCICMD */
-/* see PCI_COMMAND_XXX in linux/pci_regs.h */
+/* see PCI_COMMAND_XXX in linaos/pci_regs.h */
 
 /* bits for PCISTAT */
-/* see PCI_STATUS_XXX in linux/pci_regs.h */
+/* see PCI_STATUS_XXX in linaos/pci_regs.h */
 
 /* bits for IOBA/MBA */
-/* see PCI_BASE_ADDRESS_XXX in linux/pci_regs.h */
+/* see PCI_BASE_ADDRESS_XXX in linaos/pci_regs.h */
 
 /* bits for G2PSTATUS/G2PMASK */
 #define TX4927_PCIC_G2PSTATUS_ALL	0x00000003
 #define TX4927_PCIC_G2PSTATUS_TTOE	0x00000002
 #define TX4927_PCIC_G2PSTATUS_RTOE	0x00000001
 
-/* bits for PCIMASK (see also PCI_STATUS_XXX in linux/pci_regs.h */
+/* bits for PCIMASK (see also PCI_STATUS_XXX in linaos/pci_regs.h */
 #define TX4927_PCIC_PCISTATUS_ALL	0x0000f900
 
 /* bits for PBACFG */

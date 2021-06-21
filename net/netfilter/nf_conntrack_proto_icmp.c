@@ -4,15 +4,15 @@
  * (C) 2006-2010 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/netfilter.h>
-#include <linux/in.h>
-#include <linux/icmp.h>
-#include <linux/seq_file.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/netfilter.h>
+#include <linaos/in.h>
+#include <linaos/icmp.h>
+#include <linaos/seq_file.h>
 #include <net/ip.h>
 #include <net/checksum.h>
-#include <linux/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv4.h>
 #include <net/netfilter/nf_conntrack_tuple.h>
 #include <net/netfilter/nf_conntrack_l4proto.h>
 #include <net/netfilter/nf_conntrack_core.h>
@@ -250,8 +250,8 @@ int nf_conntrack_icmpv4_error(struct nf_conn *tmpl,
 
 #if IS_ENABLED(CONFIG_NF_CT_NETLINK)
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_conntrack.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_conntrack.h>
 
 static int icmp_tuple_to_nlattr(struct sk_buff *skb,
 				const struct nf_conntrack_tuple *t)
@@ -316,8 +316,8 @@ static unsigned int icmp_nlattr_tuple_size(void)
 
 #ifdef CONFIG_NF_CONNTRACK_TIMEOUT
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_cttimeout.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/nfnetlink_cttimeout.h>
 
 static int icmp_timeout_nlattr_to_obj(struct nlattr *tb[],
 				      struct net *net, void *data)

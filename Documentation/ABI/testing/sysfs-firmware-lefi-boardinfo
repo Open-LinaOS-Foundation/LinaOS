@@ -14,7 +14,7 @@ Description:
 
 		For example:
 
-		[loongson@linux ~]$ cat /sys/firmware/lefi/boardinfo
+		[loongson@linaos ~]$ cat /sys/firmware/lefi/boardinfo
 		Board Info
 		Manufacturer            : LEMOTE
 		Board Name              : LEMOTE-LS3A4000-7A1000-1w-V01-pc
@@ -30,6 +30,6 @@ Description:
 		exists SMBIOS in firmware, but the fact is that there is no SMBIOS on
 		some machines, we can see nothing when execute dmidecode, like this:
 
-		[root@linux loongson]# dmidecode
+		[root@linaos loongson]# dmidecode
 		# dmidecode 2.12
 		# No SMBIOS nor DMI entry point found, sorry.

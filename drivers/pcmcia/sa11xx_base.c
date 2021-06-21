@@ -30,14 +30,14 @@
 
 ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
 
 #include <mach/hardware.h>
 #include <asm/irq.h>
@@ -259,5 +259,5 @@ int sa11xx_drv_pcmcia_probe(struct device *dev, struct pcmcia_low_level *ops,
 EXPORT_SYMBOL(sa11xx_drv_pcmcia_probe);
 
 MODULE_AUTHOR("John Dorsey <john+@cs.cmu.edu>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: SA-11xx core socket driver");
+MODULE_DESCRIPTION("LinaOS PCMCIA Card Services: SA-11xx core socket driver");
 MODULE_LICENSE("Dual MPL/GPL");

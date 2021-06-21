@@ -2,7 +2,7 @@
 #ifndef __HISILICON_CORE_H
 #define __HISILICON_CORE_H
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 extern void hi3xxx_set_cpu_jump(int cpu, void *jump_addr);
 extern int hi3xxx_get_cpu_jump(int cpu);

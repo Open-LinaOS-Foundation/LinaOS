@@ -31,7 +31,7 @@
 #ifndef _TTM_PLACEMENT_H_
 #define _TTM_PLACEMENT_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Memory regions for data placement.

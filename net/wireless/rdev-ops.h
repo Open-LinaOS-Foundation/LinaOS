@@ -2,7 +2,7 @@
 #ifndef __CFG80211_RDEV_OPS
 #define __CFG80211_RDEV_OPS
 
-#include <linux/rtnetlink.h>
+#include <linaos/rtnetlink.h>
 #include <net/cfg80211.h>
 #include "core.h"
 #include "trace.h"

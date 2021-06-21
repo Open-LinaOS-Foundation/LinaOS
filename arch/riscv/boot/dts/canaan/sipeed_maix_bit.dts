@@ -49,7 +49,7 @@
 
 		boot {
 			label = "BOOT";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&gpio0 0 GPIO_ACTIVE_LOW>;
 		};
 	};

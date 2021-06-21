@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/cdev.h>
-#include <linux/cred.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uaccess.h>
+#include <linaos/cdev.h>
+#include <linaos/cred.h>
+#include <linaos/fs.h>
+#include <linaos/idr.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/tee_drv.h>
+#include <linaos/uaccess.h>
 #include <crypto/hash.h>
 #include <crypto/sha1.h>
 #include "tee_private.h"
@@ -208,7 +208,7 @@ int tee_session_calc_client_uuid(uuid_t *uuid, u32 connection_method,
 	}
 
 	/*
-	 * In Linux environment client UUID is based on UUIDv5.
+	 * In LinaOS environment client UUID is based on UUIDv5.
 	 *
 	 * Determine client UUID with following semantics for 'name':
 	 *

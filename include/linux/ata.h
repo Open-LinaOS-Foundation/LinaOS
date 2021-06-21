@@ -13,9 +13,9 @@
 #ifndef __LINUX_ATA_H__
 #define __LINUX_ATA_H__
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 /* defines only for the constants which don't work well as enums */

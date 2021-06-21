@@ -2,14 +2,14 @@
 #ifndef __PERF_MAP_H
 #define __PERF_MAP_H
 
-#include <linux/refcount.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct dso;
 struct maps;

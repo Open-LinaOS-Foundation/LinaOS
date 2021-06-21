@@ -10,7 +10,7 @@
 #ifndef _LINUX_MUX_CONSUMER_H
 #define _LINUX_MUX_CONSUMER_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 struct device;
 struct mux_control;

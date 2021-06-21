@@ -6,10 +6,10 @@
  * License as published by the Free Software Foundation.
  */
 #define KBUILD_MODNAME "foo"
-#include <linux/ptrace.h>
-#include <linux/version.h>
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/in6.h>
+#include <linaos/ptrace.h>
+#include <linaos/version.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/in6.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_core_read.h>

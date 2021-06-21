@@ -2,20 +2,20 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
- *             Uma Krishnan <ukrishn@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Matthew R. Ochs <mrochs@linaos.vnet.ibm.com>, IBM Corporation
+ *             Uma Krishnan <ukrishn@linaos.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2018 IBM Corporation
  */
 
-#include <linux/file.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
-#include <linux/interrupt.h>
+#include <linaos/file.h>
+#include <linaos/idr.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/poll.h>
+#include <linaos/sched/signal.h>
+#include <linaos/interrupt.h>
 #include <asm/xive.h>
 #include <misc/ocxl.h>
 

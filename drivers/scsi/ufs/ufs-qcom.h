@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2013-2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2015, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef UFS_QCOM_H_
 #define UFS_QCOM_H_
 
-#include <linux/reset-controller.h>
-#include <linux/reset.h>
+#include <linaos/reset-controller.h>
+#include <linaos/reset.h>
 
 #define MAX_UFS_QCOM_HOSTS	1
 #define MAX_U32                 (~(u32)0)

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Kconfig for uClinux(non-paged MM) depend configurations
+# Kconfig for uClinaos(non-paged MM) depend configurations
 # Hyok S. Choi <hyok.choi@samsung.com>
 # 
 

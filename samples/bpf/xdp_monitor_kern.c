@@ -3,7 +3,7 @@
  *
  * XDP monitor tool, based on tracepoints
  */
-#include <uapi/linux/bpf.h>
+#include <uapi/linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 struct {

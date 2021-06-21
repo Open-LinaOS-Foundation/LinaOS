@@ -290,7 +290,7 @@ struct xenkbd_motion {
  * +----------------+----------------+----------------+----------------+
  *
  * pressed - uint8_t, 1 if pressed; 0 otherwise
- * keycode - uint32_t, KEY_* from linux/input.h
+ * keycode - uint32_t, KEY_* from linaos/input.h
  */
 
 struct xenkbd_key {
@@ -354,7 +354,7 @@ struct xenkbd_position {
  * is in the [0; XENKBD_FIELD_NUM_CONTACTS - 1] range.
  *
  * For further information please refer to documentation on Wayland [1],
- * Linux [2] and Windows [3] multi-touch support.
+ * LinaOS [2] and Windows [3] multi-touch support.
  *
  * [1] https://cgit.freedesktop.org/wayland/wayland/tree/protocol/wayland.xml
  * [2] https://www.kernel.org/doc/Documentation/input/multi-touch-protocol.rst

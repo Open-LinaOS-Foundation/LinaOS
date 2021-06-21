@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Userspace interface to the pkey device driver
  *
@@ -11,8 +11,8 @@
 #ifndef _UAPI_PKEY_H
 #define _UAPI_PKEY_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <linaos/ioctl.h>
+#include <linaos/types.h>
 
 /*
  * Ioctl calls supported by the pkey device driver

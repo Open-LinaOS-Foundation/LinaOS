@@ -11,7 +11,7 @@ Getting started quick
 - Compile and install kernel and modules, reboot.
 
 - You need the udftools package (pktsetup, mkudffs, cdrwtool).
-  Download from http://sourceforge.net/projects/linux-udf/
+  Download from http://sourceforge.net/projects/linaos-udf/
 
 - Grab a new CD-RW disc and format it (assuming CD-RW is hdc, substitute
   as appropriate)::
@@ -100,7 +100,7 @@ Notes
 Using the pktcdvd sysfs interface
 ---------------------------------
 
-Since Linux 2.6.20, the pktcdvd module has a sysfs interface
+Since LinaOS 2.6.20, the pktcdvd module has a sysfs interface
 and can be controlled by it. For example the "pktcdvd" tool uses
 this interface. (see http://tom.ist-im-web.de/download/pktcdvd )
 
@@ -135,5 +135,5 @@ For a description of the debugfs interface look into the file:
 Links
 -----
 
-See http://fy.chalmers.se/~appro/linux/DVD+RW/ for more information
+See http://fy.chalmers.se/~appro/linaos/DVD+RW/ for more information
 about DVD writing.

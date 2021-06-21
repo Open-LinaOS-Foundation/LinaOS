@@ -16,22 +16,22 @@
  * License terms:
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500-sysctrl.h>
-#include <linux/mfd/abx500/ab8500-codec.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/mfd/abx500/ab8500.h>
+#include <linaos/mfd/abx500.h>
+#include <linaos/mfd/abx500/ab8500-sysctrl.h>
+#include <linaos/mfd/abx500/ab8500-codec.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/of.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

@@ -7,12 +7,12 @@
  *		Alan Cox. <alan@redhat.com>
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/smp_types.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/cpumask.h>
+#include <linaos/init.h>
+#include <linaos/smp_types.h>
 
 typedef void (*smp_call_func_t)(void *info);
 typedef bool (*smp_cond_func_t)(int cpu, void *info);
@@ -107,10 +107,10 @@ static inline void on_each_cpu_cond(smp_cond_func_t cond_func,
 
 #ifdef CONFIG_SMP
 
-#include <linux/preempt.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/thread_info.h>
+#include <linaos/preempt.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/thread_info.h>
 #include <asm/smp.h>
 
 /*

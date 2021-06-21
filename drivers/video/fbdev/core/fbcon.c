@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fbcon.c -- Low level frame buffer based console driver
+ *  linaos/drivers/video/fbcon.c -- Low level frame buffer based console driver
  *
  *	Copyright (C) 1995 Geert Uytterhoeven
  *
@@ -27,7 +27,7 @@
  *  Hardware cursor support added by Emmanuel Marty (core@ggi-project.org)
  *  Smart redraw scrolling, arbitrary font width support, 512char font support
  *  and software scrollback added by 
- *                         Jakub Jelinek (jj@ultra.linux.cz)
+ *                         Jakub Jelinek (jj@ultra.linaos.cz)
  *
  *  Random hacking by Martin Mares <mj@ucw.cz>
  *
@@ -56,25 +56,25 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>	/* MSch: for IRQ probe */
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/fbcon.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/font.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h> /* For counting font checksums */
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>	/* MSch: for IRQ probe */
+#include <linaos/console.h>
+#include <linaos/string.h>
+#include <linaos/kd.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
+#include <linaos/fbcon.h>
+#include <linaos/vt_kern.h>
+#include <linaos/selection.h>
+#include <linaos/font.h>
+#include <linaos/smp.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/crc32.h> /* For counting font checksums */
+#include <linaos/uaccess.h>
 #include <asm/fb.h>
 #include <asm/irq.h>
 
@@ -2460,7 +2460,7 @@ static int fbcon_set_font(struct vc_data *vc, struct console_font *font,
 		memcpy(new_data + i*h*pitch, data +  i*32*pitch, h*pitch);
 	}
 
-	/* Since linux has a nice crc32 function use it for counting font
+	/* Since linaos has a nice crc32 function use it for counting font
 	 * checksums. */
 	csum = crc32(0, new_data, size);
 

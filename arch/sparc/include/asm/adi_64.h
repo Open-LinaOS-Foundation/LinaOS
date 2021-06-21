@@ -7,7 +7,7 @@
 #ifndef __ASM_SPARC64_ADI_H
 #define __ASM_SPARC64_ADI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef __ASSEMBLY__
 

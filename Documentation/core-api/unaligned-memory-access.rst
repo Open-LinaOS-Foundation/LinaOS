@@ -10,7 +10,7 @@ Unaligned Memory Accesses
   Vadim Lobanov
 
 
-Linux runs on a wide variety of architectures which have varying behaviour
+LinaOS runs on a wide variety of architectures which have varying behaviour
 when it comes to memory access. This document presents some details about
 unaligned accesses, why you need to write code that doesn't cause them,
 and how to write such code!
@@ -147,7 +147,7 @@ Code that causes unaligned access
 
 With the above in mind, let's move onto a real life example of a function
 that can cause an unaligned memory access. The following function taken
-from include/linux/etherdevice.h is an optimized routine to compare two
+from include/linaos/etherdevice.h is an optimized routine to compare two
 ethernet MAC addresses for equality::
 
   bool ether_addr_equal(const u8 *addr1, const u8 *addr2)

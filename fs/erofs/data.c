@@ -5,7 +5,7 @@
  * Created by Gao Xiang <gaoxiang25@huawei.com>
  */
 #include "internal.h"
-#include <linux/prefetch.h>
+#include <linaos/prefetch.h>
 
 #include <trace/events/erofs.h>
 

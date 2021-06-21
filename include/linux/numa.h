@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _LINUX_NUMA_H
 #define _LINUX_NUMA_H
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_NODES_SHIFT
 #define NODES_SHIFT     CONFIG_NODES_SHIFT
@@ -21,7 +21,7 @@
 #endif
 
 #ifdef CONFIG_NUMA
-#include <linux/printk.h>
+#include <linaos/printk.h>
 #include <asm/sparsemem.h>
 
 /* Generic implementation available */

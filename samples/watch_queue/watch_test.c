@@ -16,9 +16,9 @@
 #include <errno.h>
 #include <sys/ioctl.h>
 #include <limits.h>
-#include <linux/watch_queue.h>
-#include <linux/unistd.h>
-#include <linux/keyctl.h>
+#include <linaos/watch_queue.h>
+#include <linaos/unistd.h>
+#include <linaos/keyctl.h>
 
 #ifndef KEYCTL_WATCH_KEY
 #define KEYCTL_WATCH_KEY -1

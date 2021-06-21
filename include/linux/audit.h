@@ -9,10 +9,10 @@
 #ifndef _LINUX_AUDIT_H_
 #define _LINUX_AUDIT_H_
 
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <uapi/linux/audit.h>
-#include <uapi/linux/netfilter/nf_tables.h>
+#include <linaos/sched.h>
+#include <linaos/ptrace.h>
+#include <uapi/linaos/audit.h>
+#include <uapi/linaos/netfilter/nf_tables.h>
 
 #define AUDIT_INO_UNSET ((unsigned long)-1)
 #define AUDIT_DEV_UNSET ((dev_t)-1)
@@ -28,7 +28,7 @@ struct audit_context;
 struct inode;
 struct netlink_skb_parms;
 struct path;
-struct linux_binprm;
+struct linaos_binprm;
 struct mq_attr;
 struct mqstat;
 struct audit_watch;
@@ -385,7 +385,7 @@ static inline void audit_ptrace(struct task_struct *t)
 				/* Private API (for audit.c only) */
 extern void __audit_ipc_obj(struct kern_ipc_perm *ipcp);
 extern void __audit_ipc_set_perm(unsigned long qbytes, uid_t uid, gid_t gid, umode_t mode);
-extern void __audit_bprm(struct linux_binprm *bprm);
+extern void __audit_bprm(struct linaos_binprm *bprm);
 extern int __audit_socketcall(int nargs, unsigned long *args);
 extern int __audit_sockaddr(int len, void *addr);
 extern void __audit_fd_pair(int fd1, int fd2);
@@ -393,7 +393,7 @@ extern void __audit_mq_open(int oflag, umode_t mode, struct mq_attr *attr);
 extern void __audit_mq_sendrecv(mqd_t mqdes, size_t msg_len, unsigned int msg_prio, const struct timespec64 *abs_timeout);
 extern void __audit_mq_notify(mqd_t mqdes, const struct sigevent *notification);
 extern void __audit_mq_getsetattr(mqd_t mqdes, struct mq_attr *mqstat);
-extern int __audit_log_bprm_fcaps(struct linux_binprm *bprm,
+extern int __audit_log_bprm_fcaps(struct linaos_binprm *bprm,
 				  const struct cred *new,
 				  const struct cred *old);
 extern void __audit_log_capset(const struct cred *new, const struct cred *old);
@@ -420,7 +420,7 @@ static inline void audit_ipc_set_perm(unsigned long qbytes, uid_t uid, gid_t gid
 	if (unlikely(!audit_dummy_context()))
 		__audit_ipc_set_perm(qbytes, uid, gid, mode);
 }
-static inline void audit_bprm(struct linux_binprm *bprm)
+static inline void audit_bprm(struct linaos_binprm *bprm)
 {
 	if (unlikely(!audit_dummy_context()))
 		__audit_bprm(bprm);
@@ -472,7 +472,7 @@ static inline void audit_mq_getsetattr(mqd_t mqdes, struct mq_attr *mqstat)
 		__audit_mq_getsetattr(mqdes, mqstat);
 }
 
-static inline int audit_log_bprm_fcaps(struct linux_binprm *bprm,
+static inline int audit_log_bprm_fcaps(struct linaos_binprm *bprm,
 				       const struct cred *new,
 				       const struct cred *old)
 {
@@ -604,7 +604,7 @@ static inline void audit_ipc_obj(struct kern_ipc_perm *ipcp)
 static inline void audit_ipc_set_perm(unsigned long qbytes, uid_t uid,
 					gid_t gid, umode_t mode)
 { }
-static inline void audit_bprm(struct linux_binprm *bprm)
+static inline void audit_bprm(struct linaos_binprm *bprm)
 { }
 static inline int audit_socketcall(int nargs, unsigned long *args)
 {
@@ -633,7 +633,7 @@ static inline void audit_mq_notify(mqd_t mqdes,
 { }
 static inline void audit_mq_getsetattr(mqd_t mqdes, struct mq_attr *mqstat)
 { }
-static inline int audit_log_bprm_fcaps(struct linux_binprm *bprm,
+static inline int audit_log_bprm_fcaps(struct linaos_binprm *bprm,
 				       const struct cred *new,
 				       const struct cred *old)
 {

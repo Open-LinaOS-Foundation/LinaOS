@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/pgtable.h>
 
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/thread_info.h>
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <linaos/string.h>
+#include <linaos/bitops.h>
+#include <linaos/smp.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
+#include <linaos/thread_info.h>
+#include <linaos/init.h>
+#include <linaos/uaccess.h>
 
 #include <asm/cpufeature.h>
 #include <asm/msr.h>
@@ -27,7 +27,7 @@
 #include <asm/thermal.h>
 
 #ifdef CONFIG_X86_64
-#include <linux/topology.h>
+#include <linaos/topology.h>
 #endif
 
 #include "cpu.h"

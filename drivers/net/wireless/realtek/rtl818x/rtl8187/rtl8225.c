@@ -13,7 +13,7 @@
  * for their support!
  */
 
-#include <linux/usb.h>
+#include <linaos/usb.h>
 #include <net/mac80211.h>
 
 #include "rtl8187.h"

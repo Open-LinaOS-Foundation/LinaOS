@@ -9,7 +9,7 @@
 #ifndef VIRTIO_CAIF_H
 #define VIRTIO_CAIF_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 struct virtio_caif_transf_config {
 	__virtio16 headroom;
 	__virtio16 tailroom;

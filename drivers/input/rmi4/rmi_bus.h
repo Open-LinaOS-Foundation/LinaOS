@@ -7,7 +7,7 @@
 #ifndef _RMI_BUS_H
 #define _RMI_BUS_H
 
-#include <linux/rmi.h>
+#include <linaos/rmi.h>
 
 struct rmi_device;
 

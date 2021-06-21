@@ -2,23 +2,23 @@
 #ifndef _LINUX__INIT_TASK_H
 #define _LINUX__INIT_TASK_H
 
-#include <linux/rcupdate.h>
-#include <linux/irqflags.h>
-#include <linux/utsname.h>
-#include <linux/lockdep.h>
-#include <linux/ftrace.h>
-#include <linux/ipc.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/securebits.h>
-#include <linux/seqlock.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/sched/autogroup.h>
+#include <linaos/rcupdate.h>
+#include <linaos/irqflags.h>
+#include <linaos/utsname.h>
+#include <linaos/lockdep.h>
+#include <linaos/ftrace.h>
+#include <linaos/ipc.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/user_namespace.h>
+#include <linaos/securebits.h>
+#include <linaos/seqlock.h>
+#include <linaos/rbtree.h>
+#include <linaos/refcount.h>
+#include <linaos/sched/autogroup.h>
 #include <net/net_namespace.h>
-#include <linux/sched/rt.h>
-#include <linux/livepatch.h>
-#include <linux/mm_types.h>
+#include <linaos/sched/rt.h>
+#include <linaos/livepatch.h>
+#include <linaos/mm_types.h>
 
 #include <asm/thread_info.h>
 

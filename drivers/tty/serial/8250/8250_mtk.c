@@ -5,20 +5,20 @@
  * Copyright (c) 2014 MundoReader S.L.
  * Author: Matthias Brugger <matthias.bgg@gmail.com>
  */
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/console.h>
-#include <linux/dma-mapping.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_reg.h>
+#include <linaos/console.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
 
 #include "8250.h"
 

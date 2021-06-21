@@ -5,9 +5,9 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/cordic.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/cordic.h>
 
 #include <brcm_hw_ids.h>
 #include <aiutils.h>

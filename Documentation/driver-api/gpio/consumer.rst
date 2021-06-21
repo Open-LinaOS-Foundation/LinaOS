@@ -14,7 +14,7 @@ Drivers that can't work without standard GPIO calls should have Kconfig entries
 that depend on GPIOLIB or select GPIOLIB. The functions that allow a driver to
 obtain and use GPIOs are available by including the following file::
 
-	#include <linux/gpio/consumer.h>
+	#include <linaos/gpio/consumer.h>
 
 There are static inline stubs for all functions in the header file in the case
 where GPIOLIB is disabled. When these stubs are called they will emit
@@ -34,7 +34,7 @@ All the functions that work with the descriptor-based GPIO interface are
 prefixed with ``gpiod_``. The ``gpio_`` prefix is used for the legacy
 interface. No other function in the kernel should use these prefixes. The use
 of the legacy functions is strongly discouraged, new code should use
-<linux/gpio/consumer.h> and descriptors exclusively.
+<linaos/gpio/consumer.h> and descriptors exclusively.
 
 
 Obtaining and Disposing GPIOs

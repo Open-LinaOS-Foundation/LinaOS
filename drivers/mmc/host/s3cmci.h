@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
+ *  linaos/drivers/mmc/s3cmci.h - Samsung S3C MCI driver
  *
  *  Copyright (C) 2004-2006 Thomas Kleffel, All Rights Reserved.
  */

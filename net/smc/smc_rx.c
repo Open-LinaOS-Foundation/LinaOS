@@ -7,12 +7,12 @@
  *
  * Copyright IBM Corp. 2016
  *
- * Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ * Author(s):  Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 
-#include <linux/net.h>
-#include <linux/rcupdate.h>
-#include <linux/sched/signal.h>
+#include <linaos/net.h>
+#include <linaos/rcupdate.h>
+#include <linaos/sched/signal.h>
 
 #include <net/sock.h>
 

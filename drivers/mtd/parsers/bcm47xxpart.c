@@ -5,14 +5,14 @@
  * Copyright © 2012 Rafał Miłecki <zajec5@gmail.com>
  */
 
-#include <linux/bcm47xx_nvram.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/bcm47xx_nvram.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
 
-#include <uapi/linux/magic.h>
+#include <uapi/linaos/magic.h>
 
 /*
  * NAND flash on Netgear R6250 was verified to contain 15 partitions.

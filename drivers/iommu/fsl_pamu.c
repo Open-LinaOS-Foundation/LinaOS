@@ -8,9 +8,9 @@
 
 #include "fsl_pamu.h"
 
-#include <linux/fsl/guts.h>
-#include <linux/interrupt.h>
-#include <linux/genalloc.h>
+#include <linaos/fsl/guts.h>
+#include <linaos/interrupt.h>
+#include <linaos/genalloc.h>
 
 #include <asm/mpc85xx.h>
 

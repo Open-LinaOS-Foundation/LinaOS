@@ -6,10 +6,10 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <linaos/kernel.h>
+#include <linaos/netlink.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/tcp.h>

@@ -2,13 +2,13 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/genhd.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <linaos/blkdev.h>
+#include <linaos/device.h>
+#include <linaos/genhd.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
 #include "nd-core.h"
 #include "btt.h"
 #include "nd.h"

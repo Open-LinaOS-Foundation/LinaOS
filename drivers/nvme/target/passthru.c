@@ -8,7 +8,7 @@
  *
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../host/nvme.h"
 #include "nvmet.h"

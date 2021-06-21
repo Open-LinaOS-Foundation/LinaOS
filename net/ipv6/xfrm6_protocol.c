@@ -10,10 +10,10 @@
  * net/ipv4/xfrm4_protocol.c
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/skbuff.h>
-#include <linux/icmpv6.h>
+#include <linaos/init.h>
+#include <linaos/mutex.h>
+#include <linaos/skbuff.h>
+#include <linaos/icmpv6.h>
 #include <net/ip6_route.h>
 #include <net/ipv6.h>
 #include <net/protocol.h>

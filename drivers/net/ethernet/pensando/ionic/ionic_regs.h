@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: (GPL-2.0 OR Linux-OpenIB) OR BSD-2-Clause */
+/* SPDX-License-Identifier: (GPL-2.0 OR LinaOS-OpenIB) OR BSD-2-Clause */
 /* Copyright (c) 2018-2019 Pensando Systems, Inc.  All rights reserved. */
 
 #ifndef IONIC_REGS_H
 #define IONIC_REGS_H
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 /** struct ionic_intr - interrupt control register set.
  * @coal_init:			coalesce timer initial value.

@@ -5,9 +5,9 @@
  *  sof_sdw_rt700 - Helpers to handle RT700 from generic machine driver
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/input.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/input.h>
 #include <sound/control.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>

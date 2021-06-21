@@ -6,17 +6,17 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/property.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/hwspinlock.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/err.h>
+#include <linaos/property.h>
+#include <linaos/rbtree.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/log2.h>
+#include <linaos/hwspinlock.h>
 #include <asm/unaligned.h>
 
 #define CREATE_TRACE_POINTS

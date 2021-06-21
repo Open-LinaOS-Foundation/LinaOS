@@ -9,8 +9,8 @@
  */
 
 #include <crypto/internal/hash.h>
-#include <linux/module.h>
-#include <linux/cpufeature.h>
+#include <linaos/module.h>
+#include <linaos/cpufeature.h>
 #include <asm/cpacf.h>
 
 #define GHASH_BLOCK_SIZE	16

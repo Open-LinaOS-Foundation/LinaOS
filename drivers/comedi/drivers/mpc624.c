@@ -3,7 +3,7 @@
  * mpc624.c
  * Hardware driver for a Micro/sys inc. MPC-624 PC/104 board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -43,10 +43,10 @@
  *	   1	-10.1V .. +10.1V
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
-#include <linux/delay.h>
+#include <linaos/delay.h>
 
 /* Offsets of different ports */
 #define MPC624_MASTER_CONTROL	0 /* not used */

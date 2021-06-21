@@ -6,16 +6,16 @@
  *  Copyright (C) 2005-2008  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/quirks.h>
-#include <linux/firmware.h>
-#include <linux/iopoll.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/suspend.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/dmi.h>
+#include <linaos/module.h>
+#include <linaos/usb.h>
+#include <linaos/usb/quirks.h>
+#include <linaos/firmware.h>
+#include <linaos/iopoll.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/suspend.h>
+#include <linaos/gpio/consumer.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

@@ -3,10 +3,10 @@
 #define _LINUX_TIMENS_H
 
 
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/err.h>
+#include <linaos/sched.h>
+#include <linaos/nsproxy.h>
+#include <linaos/ns_common.h>
+#include <linaos/err.h>
 
 struct user_namespace;
 extern struct user_namespace init_user_ns;

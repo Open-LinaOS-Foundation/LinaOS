@@ -11,28 +11,28 @@
 
 
   Contact Information:
-  Intel Linux Wireless <ilw@linux.intel.com>
+  Intel LinaOS Wireless <ilw@linaos.intel.com>
   Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
 
 *******************************************************************************/
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/if_arp.h>
-#include <linux/in6.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
-#include <linux/wireless.h>
-#include <linux/etherdevice.h>
-#include <linux/uaccess.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/if_arp.h>
+#include <linaos/in6.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/tcp.h>
+#include <linaos/types.h>
+#include <linaos/wireless.h>
+#include <linaos/etherdevice.h>
+#include <linaos/uaccess.h>
 #include <net/net_namespace.h>
 #include <net/arp.h>
 
@@ -42,7 +42,7 @@
 #define DRV_NAME        "libipw"
 #define DRV_PROCNAME	"ieee80211"
 #define DRV_VERSION	LIBIPW_VERSION
-#define DRV_COPYRIGHT   "Copyright (C) 2004-2005 Intel Corporation <jketreno@linux.intel.com>"
+#define DRV_COPYRIGHT   "Copyright (C) 2004-2005 Intel Corporation <jketreno@linaos.intel.com>"
 
 MODULE_VERSION(DRV_VERSION);
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
@@ -288,7 +288,7 @@ static void __exit libipw_exit(void)
 }
 
 #ifdef CONFIG_LIBIPW_DEBUG
-#include <linux/moduleparam.h>
+#include <linaos/moduleparam.h>
 module_param(debug, int, 0444);
 MODULE_PARM_DESC(debug, "debug output mask");
 #endif				/* CONFIG_LIBIPW_DEBUG */

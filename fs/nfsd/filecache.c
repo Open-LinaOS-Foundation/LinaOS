@@ -4,14 +4,14 @@
  * (c) 2015 - Jeff Layton <jeff.layton@primarydata.com>
  */
 
-#include <linux/hash.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/sched.h>
-#include <linux/list_lru.h>
-#include <linux/fsnotify_backend.h>
-#include <linux/fsnotify.h>
-#include <linux/seq_file.h>
+#include <linaos/hash.h>
+#include <linaos/slab.h>
+#include <linaos/file.h>
+#include <linaos/sched.h>
+#include <linaos/list_lru.h>
+#include <linaos/fsnotify_backend.h>
+#include <linaos/fsnotify.h>
+#include <linaos/seq_file.h>
 
 #include "vfs.h"
 #include "nfsd.h"

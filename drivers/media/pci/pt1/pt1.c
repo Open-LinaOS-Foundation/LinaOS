@@ -8,20 +8,20 @@
  *	by Tomoaki Ishikawa <tomy@users.sourceforge.jp>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/hrtimer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/ratelimit.h>
-#include <linux/string.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
+#include <linaos/hrtimer.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pci.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/ratelimit.h>
+#include <linaos/string.h>
+#include <linaos/i2c.h>
 
 #include <media/dvbdev.h>
 #include <media/dvb_demux.h>

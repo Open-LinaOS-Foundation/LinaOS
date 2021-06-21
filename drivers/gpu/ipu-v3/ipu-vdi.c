@@ -3,7 +3,7 @@
  * Copyright (C) 2012-2016 Mentor Graphics Inc.
  * Copyright (C) 2005-2009 Freescale Semiconductor, Inc.
  */
-#include <linux/io.h>
+#include <linaos/io.h>
 #include "ipu-prv.h"
 
 struct ipu_vdi {

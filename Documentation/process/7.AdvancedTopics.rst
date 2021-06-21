@@ -6,7 +6,7 @@ Advanced topics
 At this point, hopefully, you have a handle on how the development process
 works.  There is still more to learn, however!  This section will cover a
 number of topics which can be helpful for developers wanting to become a
-regular part of the Linux kernel development process.
+regular part of the LinaOS kernel development process.
 
 Managing patches with git
 -------------------------
@@ -93,7 +93,7 @@ you try to push changes which do not result in a fast-forward merge
 (i.e. changes which do not share the same history).  It is possible to
 override this check, and there may be times when it is necessary to rewrite
 an exported tree.  Moving changesets between trees to avoid conflicts in
-linux-next is one example.  But such actions should be rare.  This is one
+linaos-next is one example.  But such actions should be rare.  This is one
 of the reasons why development should be done in private branches (which
 can be rewritten if necessary) and only moved into public branches when
 it's in a reasonably advanced state.
@@ -132,7 +132,7 @@ branch stick closely to the associated topic; a "driver fixes" branch
 should not be making changes to the core memory management code.  And, most
 importantly, do not use a git tree to bypass the review process.  Post an
 occasional summary of the tree to the relevant list, and, when the time is
-right, request that the tree be included in linux-next.
+right, request that the tree be included in linaos-next.
 
 If and when others start to send patches for inclusion into your tree,
 don't forget to review them.  Also ensure that you maintain the correct

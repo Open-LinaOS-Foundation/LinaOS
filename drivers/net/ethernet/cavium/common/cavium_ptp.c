@@ -3,10 +3,10 @@
  * Copyright (c) 2003-2015, 2017 Cavium, Inc.
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/timecounter.h>
-#include <linux/pci.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/timecounter.h>
+#include <linaos/pci.h>
 
 #include "cavium_ptp.h"
 

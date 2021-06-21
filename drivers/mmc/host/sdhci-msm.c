@@ -2,21 +2,21 @@
 /*
  * drivers/mmc/host/sdhci-msm.c - Qualcomm SDHCI Platform driver
  *
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/delay.h>
-#include <linux/mmc/mmc.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/iopoll.h>
-#include <linux/qcom_scm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/interconnect.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/delay.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_opp.h>
+#include <linaos/slab.h>
+#include <linaos/iopoll.h>
+#include <linaos/qcom_scm.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/interconnect.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include "sdhci-pltfm.h"
 #include "cqhci.h"

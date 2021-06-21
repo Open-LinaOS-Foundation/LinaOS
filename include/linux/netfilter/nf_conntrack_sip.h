@@ -2,8 +2,8 @@
 #ifndef __NF_CONNTRACK_SIP_H__
 #define __NF_CONNTRACK_SIP_H__
 
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/types.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 
 #define SIP_PORT	5060

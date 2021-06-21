@@ -9,10 +9,10 @@
  *  - Dream SAM9233+GMS950400+RAM+ROM: Wavetable MIDI, connected to MPU401
  */
 
-#include <linux/init.h>
-#include <linux/isa.h>
-#include <linux/module.h>
-#include <linux/gameport.h>
+#include <linaos/init.h>
+#include <linaos/isa.h>
+#include <linaos/module.h>
+#include <linaos/gameport.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/wss.h>
@@ -23,7 +23,7 @@
 #define SNDRV_LEGACY_FIND_FREE_DMA
 #include <sound/initval.h>
 
-MODULE_AUTHOR("Ondrej Zary <linux@rainbow-software.org>");
+MODULE_AUTHOR("Ondrej Zary <linaos@rainbow-software.org>");
 MODULE_DESCRIPTION("C-Media CMI8328");
 MODULE_LICENSE("GPL");
 

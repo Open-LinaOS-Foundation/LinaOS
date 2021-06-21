@@ -3,11 +3,11 @@
 #define __LINUX_NETLINK_H
 
 
-#include <linux/capability.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
+#include <linaos/capability.h>
+#include <linaos/skbuff.h>
+#include <linaos/export.h>
 #include <net/scm.h>
-#include <uapi/linux/netlink.h>
+#include <uapi/linaos/netlink.h>
 
 struct net;
 

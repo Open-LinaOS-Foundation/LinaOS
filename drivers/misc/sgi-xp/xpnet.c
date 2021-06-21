@@ -21,10 +21,10 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
 #include "xp.h"
 
 /*

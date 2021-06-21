@@ -12,13 +12,13 @@
  * http://www.thefengs.com/wuchang/blue/CSE-TR-387-99.pdf
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/random.h>
-#include <linux/siphash.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/random.h>
+#include <linaos/siphash.h>
 #include <net/ip.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

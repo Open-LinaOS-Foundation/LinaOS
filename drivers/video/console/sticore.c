@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/video/console/sticore.c -
+ *  linaos/drivers/video/console/sticore.c -
  *	core code for console driver using HP's STI firmware
  *
  *	Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>
@@ -16,13 +16,13 @@
 
 #define pr_fmt(fmt) "%s: " fmt, KBUILD_MODNAME
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/font.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/font.h>
 
 #include <asm/hardware.h>
 #include <asm/page.h>
@@ -295,7 +295,7 @@ static int __init sti_setup(char *str)
 }
 
 /*	Assuming the machine has multiple STI consoles (=graphic cards) which
- *	all get detected by sticon, the user may define with the linux kernel
+ *	all get detected by sticon, the user may define with the linaos kernel
  *	parameter sti=<x> which of them will be the initial boot-console.
  *	<x> is a number between 0 and MAX_STI_ROMS, with 0 as the default 
  *	STI screen.
@@ -315,7 +315,7 @@ static int sti_font_setup(char *str)
 	/*
 	 * The default font can be selected in various ways.
 	 * a) sti_font=VGA8x16, sti_font=10x20, sti_font=10*20 selects
-	 *    an built-in Linux framebuffer font.
+	 *    an built-in LinaOS framebuffer font.
 	 * b) sti_font=<index>, where index is (1..x) with 1 selecting
 	 *    the first HP STI ROM built-in font..
 	 */
@@ -336,11 +336,11 @@ static int sti_font_setup(char *str)
 	return 1;
 }
 
-/*	The optional linux kernel parameter "sti_font" defines which font
+/*	The optional linaos kernel parameter "sti_font" defines which font
  *	should be used by the sticon driver to draw characters to the screen.
  *	Possible values are:
  *	- sti_font=<fb_fontname>:
- *		<fb_fontname> is the name of one of the linux-kernel built-in 
+ *		<fb_fontname> is the name of one of the linaos-kernel built-in 
  *		framebuffer font names (e.g. VGA8x16, SUN22x18). 
  *		This is only available if the fonts have been statically compiled 
  *		in with e.g. the CONFIG_FONT_8x16 or CONFIG_FONT_SUN12x22 options.

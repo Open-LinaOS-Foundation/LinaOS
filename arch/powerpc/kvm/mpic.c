@@ -23,13 +23,13 @@
  * THE SOFTWARE.
  */
 
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/kvm_host.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/mutex.h>
+#include <linaos/kvm_host.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/uaccess.h>
 #include <asm/mpic.h>
 #include <asm/kvm_para.h>
 #include <asm/kvm_ppc.h>

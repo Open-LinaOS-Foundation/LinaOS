@@ -6,7 +6,7 @@
 #ifndef __LINUX_MFD_MC13892_H
 #define __LINUX_MFD_MC13892_H
 
-#include <linux/mfd/mc13xxx.h>
+#include <linaos/mfd/mc13xxx.h>
 
 #define MC13892_SW1		0
 #define MC13892_SW2		1

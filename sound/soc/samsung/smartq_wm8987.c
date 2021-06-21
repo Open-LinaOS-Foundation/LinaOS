@@ -3,11 +3,11 @@
 // Copyright 2010 Maurus Cuelenaere <mcuelenaere@gmail.com>
 //
 // Based on smdk6410_wm8987.c
-//     Copyright 2007 Wolfson Microelectronics PLC. - linux@wolfsonmicro.com
+//     Copyright 2007 Wolfson Microelectronics PLC. - linaos@wolfsonmicro.com
 //     Graeme Gregory - graeme.gregory@wolfsonmicro.com
 
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
 
 #include <sound/soc.h>
 #include <sound/jack.h>

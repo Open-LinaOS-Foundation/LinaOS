@@ -21,15 +21,15 @@ config AIRO
 	select WEXT_SPY
 	select WEXT_PRIV
 	help
-	  This is the standard Linux driver to support Cisco/Aironet ISA and
+	  This is the standard LinaOS driver to support Cisco/Aironet ISA and
 	  PCI 802.11 wireless cards.
 	  It supports the new 802.11b cards from Cisco (Cisco 34X, Cisco 35X
 	  - with or without encryption) as well as card before the Cisco
 	  acquisition (Aironet 4500, Aironet 4800, Aironet 4800B).
 
-	  This driver support both the standard Linux Wireless Extensions
-	  and Cisco proprietary API, so both the Linux Wireless Tools and the
-	  Cisco Linux utilities can be used to configure the card.
+	  This driver support both the standard LinaOS Wireless Extensions
+	  and Cisco proprietary API, so both the LinaOS Wireless Tools and the
+	  Cisco LinaOS utilities can be used to configure the card.
 
 	  The driver can be compiled as a module and will be named "airo".
 
@@ -43,17 +43,17 @@ config AIRO_CS
 	select CRYPTO_AES
 	select CRYPTO_CTR
 	help
-	  This is the standard Linux driver to support Cisco/Aironet PCMCIA
+	  This is the standard LinaOS driver to support Cisco/Aironet PCMCIA
 	  802.11 wireless cards.  This driver is the same as the Aironet
-	  driver part of the Linux Pcmcia package.
+	  driver part of the LinaOS Pcmcia package.
 	  It supports the new 802.11b cards from Cisco (Cisco 34X, Cisco 35X
 	  - with or without encryption) as well as card before the Cisco
 	  acquisition (Aironet 4500, Aironet 4800, Aironet 4800B). It also
 	  supports OEM of Cisco such as the DELL TrueMobile 4800 and Xircom
 	  802.11b cards.
 
-	  This driver support both the standard Linux Wireless Extensions
-	  and Cisco proprietary API, so both the Linux Wireless Tools and the
-	  Cisco Linux utilities can be used to configure the card.
+	  This driver support both the standard LinaOS Wireless Extensions
+	  and Cisco proprietary API, so both the LinaOS Wireless Tools and the
+	  Cisco LinaOS utilities can be used to configure the card.
 
 endif # WLAN_VENDOR_CISCO

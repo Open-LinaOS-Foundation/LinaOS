@@ -5,14 +5,14 @@
  * Copyright (C) 2019 Bootlin.
  *
  */
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/random.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/random.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 #define SFR_SN0		0x4c
 #define SFR_SN_SIZE	8

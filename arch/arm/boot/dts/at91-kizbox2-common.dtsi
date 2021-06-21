@@ -39,21 +39,21 @@
 		prog {
 			label = "PB_PROG";
 			gpios = <&pioE 27 GPIO_ACTIVE_LOW>;
-			linux,code = <0x102>;
+			linaos,code = <0x102>;
 			wakeup-source;
 		};
 
 		reset {
 			label = "PB_RST";
 			gpios = <&pioE 29 GPIO_ACTIVE_LOW>;
-			linux,code = <0x100>;
+			linaos,code = <0x100>;
 			wakeup-source;
 		};
 
 		user {
 			label = "PB_USER";
 			gpios = <&pioE 31 GPIO_ACTIVE_HIGH>;
-			linux,code = <0x101>;
+			linaos,code = <0x101>;
 			wakeup-source;
 		};
 	};
@@ -65,21 +65,21 @@
 			label = "pwm:blue:user";
 			pwms = <&pwm0 2 10000000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "none";
+			linaos,default-trigger = "none";
 		};
 
 		led-2 {
 			label = "pwm:green:user";
 			pwms = <&pwm0 1 10000000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		led-3 {
 			label = "pwm:red:user";
 			pwms = <&pwm0 0 10000000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 	};
 };

@@ -680,7 +680,7 @@ VFL_TYPE_RADIO: 用于广播调谐器的 radioX
 由于这种情况下，你会忽略无法选择特定设备节点号的警告，则可调用
 video_register_device_no_warn() 函数避免警告信息的产生。
 
-只要设备节点被创建，一些属性也会同时创建。在 /sys/class/video4linux
+只要设备节点被创建，一些属性也会同时创建。在 /sys/class/video4linaos
 目录中你会找到这些设备。例如进入其中的 video0 目录，你会看到‘name’和
 ‘index’属性。‘name’属性值就是 video_device 结构体中的‘name’域。
 

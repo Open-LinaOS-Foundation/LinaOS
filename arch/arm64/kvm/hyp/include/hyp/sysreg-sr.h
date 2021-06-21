@@ -7,8 +7,8 @@
 #ifndef __ARM64_KVM_HYP_SYSREG_SR_H__
 #define __ARM64_KVM_HYP_SYSREG_SR_H__
 
-#include <linux/compiler.h>
-#include <linux/kvm_host.h>
+#include <linaos/compiler.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/kprobes.h>
 #include <asm/kvm_asm.h>

@@ -1,18 +1,18 @@
 /*
- * linux/arch/m68k/amiga/amisound.c
+ * linaos/arch/m68k/amiga/amisound.c
  *
- * amiga sound driver for Linux/m68k
+ * amiga sound driver for LinaOS/m68k
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/module.h>
 
 #include <asm/amigahw.h>
 

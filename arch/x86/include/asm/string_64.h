@@ -3,7 +3,7 @@
 #define _ASM_X86_STRING_64_H
 
 #ifdef __KERNEL__
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 
 /* Written 2002 by Andi Kleen */
 

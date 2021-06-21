@@ -5,13 +5,13 @@
  * Copyright 2020 Kontron Europe GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/regmap.h>
+#include <linaos/watchdog.h>
 
 /*
  * Watchdog timer block registers.

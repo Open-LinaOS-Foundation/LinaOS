@@ -7,7 +7,7 @@
 #define __W1_NETLINK_H
 
 #include <asm/types.h>
-#include <linux/connector.h>
+#include <linaos/connector.h>
 
 #include "w1_internal.h"
 

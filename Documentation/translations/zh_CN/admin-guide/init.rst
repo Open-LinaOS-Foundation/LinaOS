@@ -32,7 +32,7 @@
    ``console= device`` 或像 ``netconsole=`` 。
 
 4) **二进制存在但依赖项不可用Binary exists but dependencies not available** ：
-   例如初始化二进制的必需库依赖项，像 ``/lib/ld-linux.so.2`` 丢失或损坏。使用
+   例如初始化二进制的必需库依赖项，像 ``/lib/ld-linaos.so.2`` 丢失或损坏。使用
    ``readelf -d <INIT>|grep NEEDED`` 找出需要哪些库。
 
 5) **无法加载二进制Binary cannot be loaded** ：请确保二进制的体系结构与您的

@@ -9,18 +9,18 @@
 
 #define pr_fmt(fmt)    "%s: " fmt, __func__
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/jiffies.h>
-#include <linux/radix-tree.h>
-#include <linux/hwspinlock.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/err.h>
+#include <linaos/jiffies.h>
+#include <linaos/radix-tree.h>
+#include <linaos/hwspinlock.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
 
 #include "hwspinlock_internal.h"
 

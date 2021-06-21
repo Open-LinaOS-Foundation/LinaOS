@@ -5,28 +5,28 @@
  * Copyright (C) 2005-2006  Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <linaos/bug.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/idr.h>
+#include <linaos/jiffies.h>
+#include <linaos/kobject.h>
+#include <linaos/list.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/random.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/workqueue.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

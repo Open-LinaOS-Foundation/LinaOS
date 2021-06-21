@@ -5,11 +5,11 @@
  * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
 #include "ext4.h"
-#include <linux/fsmap.h>
+#include <linaos/fsmap.h>
 #include "fsmap.h"
 #include "mballoc.h"
-#include <linux/sort.h>
-#include <linux/list_sort.h>
+#include <linaos/sort.h>
+#include <linaos/list_sort.h>
 #include <trace/events/ext4.h>
 
 /* Convert an ext4_fsmap to an fsmap. */

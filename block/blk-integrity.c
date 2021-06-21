@@ -6,13 +6,13 @@
  * Written by: Martin K. Petersen <martin.petersen@oracle.com>
  */
 
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/mempool.h>
-#include <linux/bio.h>
-#include <linux/scatterlist.h>
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/mempool.h>
+#include <linaos/bio.h>
+#include <linaos/scatterlist.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 
 #include "blk.h"
 

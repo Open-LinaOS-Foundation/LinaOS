@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __QCOM_TSENS_H__
@@ -17,10 +17,10 @@
 #define THRESHOLD_MAX_ADC_CODE	0x3ff
 #define THRESHOLD_MIN_ADC_CODE	0x0
 
-#include <linux/interrupt.h>
-#include <linux/thermal.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/thermal.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 struct tsens_priv;
 

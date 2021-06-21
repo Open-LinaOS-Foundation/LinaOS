@@ -33,19 +33,19 @@
  * For now, we never request an IRQ from the PCF8584, and poll it instead.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pcf.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-pcf.h>
 
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
-#include <linux/zorro.h>
+#include <linaos/zorro.h>
 
 #include "../algos/i2c-algo-pcf.h"
 

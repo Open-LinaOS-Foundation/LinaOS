@@ -17,7 +17,7 @@
  * this warranty disclaimer.
  */
 
-#include <linux/firmware.h>
+#include <linaos/firmware.h>
 
 #include "decl.h"
 #include "ioctl.h"

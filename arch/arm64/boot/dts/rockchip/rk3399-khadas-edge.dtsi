@@ -5,7 +5,7 @@
  */
 
 /dts-v1/;
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/pwm/pwm.h>
 #include "rk3399.dtsi"
 #include "rk3399-opp.dtsi"
@@ -124,7 +124,7 @@
 
 		recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			linaos,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <18000>;
 		};
 	};
@@ -139,7 +139,7 @@
 			debounce-interval = <100>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Key Power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -147,7 +147,7 @@
 	ir-receiver {
 		compatible = "gpio-ir-receiver";
 		gpios = <&gpio1 RK_PB6 GPIO_ACTIVE_LOW>;
-		linux,rc-map-name = "rc-khadas";
+		linaos,rc-map-name = "rc-khadas";
 		pinctrl-names = "default";
 		pinctrl-0 = <&ir_rx>;
 	};
@@ -159,7 +159,7 @@
 
 		sys_led: led-0 {
 			label = "sys_led";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			gpios = <&gpio0 RK_PA6 GPIO_ACTIVE_HIGH>;
 		};
 

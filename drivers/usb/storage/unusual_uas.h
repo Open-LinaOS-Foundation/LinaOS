@@ -25,7 +25,7 @@
  *	  explanation of the reason for the entry),
  *	- lsusb -v output for the device
  * Send your submission to Hans de Goede <hdegoede@redhat.com>
- * and don't forget to CC: the USB development list <linux-usb@vger.kernel.org>
+ * and don't forget to CC: the USB development list <linaos-usb@vger.kernel.org>
  */
 
 /* Reported-by: Till Dörges <doerges@pre-sense.de> */
@@ -83,7 +83,7 @@ UNUSUAL_DEV(0x152d, 0x0567, 0x0000, 0x9999,
 		USB_SC_DEVICE, USB_PR_DEVICE, NULL,
 		US_FL_BROKEN_FUA | US_FL_NO_REPORT_OPCODES),
 
-/* Reported-by: David Kozub <zub@linux.fjfi.cvut.cz> */
+/* Reported-by: David Kozub <zub@linaos.fjfi.cvut.cz> */
 UNUSUAL_DEV(0x152d, 0x0578, 0x0000, 0x9999,
 		"JMicron",
 		"JMS567",

@@ -4,14 +4,14 @@
  *  Copyright (C) 2007, 2008 Rusty Russell IBM Corporation
  */
 
-#include <linux/err.h>
-#include <linux/hw_random.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/virtio.h>
-#include <linux/virtio_rng.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/hw_random.h>
+#include <linaos/scatterlist.h>
+#include <linaos/spinlock.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_rng.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 
 static DEFINE_IDA(rng_index_ida);
 

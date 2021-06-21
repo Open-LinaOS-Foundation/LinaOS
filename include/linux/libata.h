@@ -10,19 +10,19 @@
 #ifndef __LINUX_LIBATA_H__
 #define __LINUX_LIBATA_H__
 
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/io.h>
-#include <linux/ata.h>
-#include <linux/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/io.h>
+#include <linaos/ata.h>
+#include <linaos/workqueue.h>
 #include <scsi/scsi_host.h>
-#include <linux/acpi.h>
-#include <linux/cdrom.h>
-#include <linux/sched.h>
-#include <linux/async.h>
+#include <linaos/acpi.h>
+#include <linaos/cdrom.h>
+#include <linaos/sched.h>
+#include <linaos/async.h>
 
 /*
  * Define if arch has non-standard setup.  This is a _PCI_ standard

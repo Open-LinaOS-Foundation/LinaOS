@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2002 Andreas Gruenbacher <a.gruenbacher@computer.org>
  * Copyright (C) 2016 Red Hat, Inc.
@@ -18,7 +18,7 @@
 #ifndef __UAPI_POSIX_ACL_XATTR_H
 #define __UAPI_POSIX_ACL_XATTR_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Supported ACL a_version fields */
 #define POSIX_ACL_XATTR_VERSION	0x0002

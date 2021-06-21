@@ -5,8 +5,8 @@
  * Copyright (c) 2012 Steffen Trumtrar <s.trumtrar@pengutronix.de>, Pengutronix
  */
 
-#include <linux/export.h>
-#include <linux/slab.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
 #include <video/display_timing.h>
 
 void display_timings_release(struct display_timings *disp)

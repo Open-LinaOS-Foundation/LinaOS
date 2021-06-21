@@ -7,7 +7,7 @@
 #define _ASM_ARC_PCI_H
 
 #ifdef __KERNEL__
-#include <linux/ioport.h>
+#include <linaos/ioport.h>
 
 #define PCIBIOS_MIN_IO 0x100
 #define PCIBIOS_MIN_MEM 0x100000

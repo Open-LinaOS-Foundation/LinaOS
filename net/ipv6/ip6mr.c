@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Linux IPv6 multicast routing support for BSD pim6sd
+ *	LinaOS IPv6 multicast routing support for BSD pim6sd
  *	Based on net/ipv4/ipmr.c.
  *
  *	(c) 2004 Mickael Hoerdt, <hoerdt@clarinet.u-strasbg.fr>
@@ -8,47 +8,47 @@
  *	(c) 2004 Jean-Philippe Andriot, <jean-philippe.andriot@6WIND.com>
  *		6WIND, Paris, France
  *	Copyright (C)2007,2008 USAGI/WIDE Project
- *		YOSHIFUJI Hideaki <yoshfuji@linux-ipv6.org>
+ *		YOSHIFUJI Hideaki <yoshfuji@linaos-ipv6.org>
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/compat.h>
-#include <linux/rhashtable.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/fcntl.h>
+#include <linaos/stat.h>
+#include <linaos/socket.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/compat.h>
+#include <linaos/rhashtable.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/raw.h>
-#include <linux/notifier.h>
-#include <linux/if_arp.h>
+#include <linaos/notifier.h>
+#include <linaos/if_arp.h>
 #include <net/checksum.h>
 #include <net/netlink.h>
 #include <net/fib_rules.h>
 
 #include <net/ipv6.h>
 #include <net/ip6_route.h>
-#include <linux/mroute6.h>
-#include <linux/pim.h>
+#include <linaos/mroute6.h>
+#include <linaos/pim.h>
 #include <net/addrconf.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/export.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/export.h>
 #include <net/ip6_checksum.h>
-#include <linux/netconf.h>
+#include <linaos/netconf.h>
 #include <net/ip_tunnels.h>
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 struct ip6mr_rule {
 	struct fib_rule		common;

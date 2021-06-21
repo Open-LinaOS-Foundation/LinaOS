@@ -4,23 +4,23 @@
 //	David Anders <danders@amltd.com>
 //
 // @History:
-// derived from linux/arch/arm/mach-s3c2410/mach-bast.c, written by
+// derived from linaos/arch/arm/mach-s3c2410/mach-bast.c, written by
 // Ben Dooks <ben@simtec.co.uk>
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/proc_fs.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/timer.h>
+#include <linaos/init.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/proc_fs.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial_s3c.h>
+#include <linaos/io.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -29,20 +29,20 @@
 
 #include <asm/irq.h>
 #include <asm/mach-types.h>
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 
 #include "regs-gpio.h"
 #include "gpio-samsung.h"
 
-#include <linux/platform_data/i2c-s3c2410.h>
+#include <linaos/platform_data/i2c-s3c2410.h>
 #include "devs.h"
 #include "cpu.h"
 #include "gpio-cfg.h"
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/physmap.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/physmap.h>
 
 #include "s3c24xx.h"
 

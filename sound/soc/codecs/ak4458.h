@@ -9,7 +9,7 @@
 #ifndef _AK4458_H
 #define _AK4458_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 /* Settings */
 

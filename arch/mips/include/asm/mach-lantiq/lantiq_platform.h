@@ -7,7 +7,7 @@
 #ifndef _LANTIQ_PLATFORM_H__
 #define _LANTIQ_PLATFORM_H__
 
-#include <linux/socket.h>
+#include <linaos/socket.h>
 
 /* struct used to pass info to network drivers */
 struct ltq_eth_data {

@@ -1,8 +1,8 @@
-/* i810_drv.h -- Private header for the Matrox g200/g400 driver -*- linux-c -*-
+/* i810_drv.h -- Private header for the Matrox g200/g400 driver -*- linaos-c -*-
  * Created: Mon Dec 13 01:50:01 1999 by jhartmann@precisioninsight.com
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -24,8 +24,8 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  *
- * Authors: Rickard E. (Rik) Faith <faith@valinux.com>
- *	    Jeff Hartmann <jhartmann@valinux.com>
+ * Authors: Rickard E. (Rik) Faith <faith@valinaos.com>
+ *	    Jeff Hartmann <jhartmann@valinaos.com>
  *
  */
 
@@ -39,7 +39,7 @@
 /* General customization:
  */
 
-#define DRIVER_AUTHOR		"VA Linux Systems Inc."
+#define DRIVER_AUTHOR		"VA LinaOS Systems Inc."
 
 #define DRIVER_NAME		"i810"
 #define DRIVER_DESC		"Intel i810"

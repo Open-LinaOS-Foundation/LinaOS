@@ -14,7 +14,7 @@ for the CPU. Then there could be several contiguous ranges at
 completely distinct addresses. And, don't forget about NUMA, where
 different memory banks are attached to different CPUs.
 
-Linux abstracts this diversity using one of the three memory models:
+LinaOS abstracts this diversity using one of the three memory models:
 FLATMEM, DISCONTIGMEM and SPARSEMEM. Each architecture defines what
 memory models it supports, what the default memory model is and
 whether it is possible to manually override that default.
@@ -67,7 +67,7 @@ DISCONTIGMEM
 ============
 
 The DISCONTIGMEM model treats the physical memory as a collection of
-`nodes` similarly to how Linux NUMA support does. For each node Linux
+`nodes` similarly to how LinaOS NUMA support does. For each node LinaOS
 constructs an independent memory management subsystem represented by
 `struct pglist_data` (or `pg_data_t` for short). Among other
 things, `pg_data_t` holds the `node_mem_map` array that maps
@@ -103,7 +103,7 @@ the offset of the `struct page` from the `node_mem_map` plus
 SPARSEMEM
 =========
 
-SPARSEMEM is the most versatile memory model available in Linux and it
+SPARSEMEM is the most versatile memory model available in LinaOS and it
 is the only memory model that supports several advanced features such
 as hot-plug and hot-remove of the physical memory, alternative memory
 maps for non-volatile memory devices and deferred initialization of

@@ -41,11 +41,11 @@
  *     OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "sun7i-a20-olinuxino-micro.dts"
+#include "sun7i-a20-olinaosino-micro.dts"
 
 / {
 	model = "Olimex A20-OLinuXino-MICRO-eMMC";
-	compatible = "olimex,a20-olinuxino-micro-emmc", "allwinner,sun7i-a20";
+	compatible = "olimex,a20-olinaosino-micro-emmc", "allwinner,sun7i-a20";
 
 	mmc2_pwrseq: pwrseq {
 		compatible = "mmc-pwrseq-emmc";

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * This file contains the routines setting up the linux page tables.
+ * This file contains the routines setting up the linaos page tables.
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -14,15 +14,15 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
 
 #include <asm/pgalloc.h>
 #include <asm/fixmap.h>

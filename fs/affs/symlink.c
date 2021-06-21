@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/affs/symlink.c
+ *  linaos/fs/affs/symlink.c
  *
  *  1995  Hans-Joachim Widmaier - Modified for affs.
  *

@@ -9,19 +9,19 @@
  *  SPI master mode controller driver, used in STMicroelectronics devices.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
 
 /* SSC registers */
 #define SSC_BRG				0x000

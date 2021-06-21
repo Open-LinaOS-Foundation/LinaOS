@@ -5,12 +5,12 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
-#include <linux/hw_random.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/random.h>
+#include <linaos/hw_random.h>
 
 static int powernv_rng_read(struct hwrng *rng, void *data, size_t max, bool wait)
 {

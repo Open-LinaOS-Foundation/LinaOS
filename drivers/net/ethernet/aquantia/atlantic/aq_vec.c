@@ -14,7 +14,7 @@
 #include "aq_ring.h"
 #include "aq_hw.h"
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 
 struct aq_vec_s {
 	const struct aq_hw_ops *aq_hw_ops;

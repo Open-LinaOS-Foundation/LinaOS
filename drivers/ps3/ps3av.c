@@ -6,13 +6,13 @@
  *  Copyright 2007 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/ioctl.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/notifier.h>
+#include <linaos/ioctl.h>
+#include <linaos/fb.h>
+#include <linaos/slab.h>
 
 #include <asm/firmware.h>
 #include <asm/ps3av.h>

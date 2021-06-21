@@ -11,7 +11,7 @@
 #ifndef __VIA_MODESETTING_H__
 #define __VIA_MODESETTING_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 
 #define VIA_PITCH_SIZE	(1<<3)

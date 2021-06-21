@@ -18,21 +18,21 @@
  * allocated and used.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/mutex.h>
-#include <linux/namei.h>
-#include <linux/path.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/mount.h>
+#include <linaos/mutex.h>
+#include <linaos/namei.h>
+#include <linaos/path.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 
-#include <linux/fsnotify_backend.h>
+#include <linaos/fsnotify_backend.h>
 #include "fsnotify.h"
 
 static atomic_t fsnotify_sync_cookie = ATOMIC_INIT(0);

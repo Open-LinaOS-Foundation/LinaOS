@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *
- *			Linux MegaRAID device driver
+ *			LinaOS MegaRAID device driver
  *
  * Copyright (c) 2002  LSI Logic Corporation.
  *
@@ -16,34 +16,34 @@
  * Version : v2.00.4 Mon Nov 14 14:02:43 EST 2005 - Seokmann Ju
  * 						<Seokmann.Ju@lsil.com>
  *
- * Description: Linux device driver for LSI Logic MegaRAID controller
+ * Description: LinaOS device driver for LSI Logic MegaRAID controller
  *
  * Supported controllers: MegaRAID 418, 428, 438, 466, 762, 467, 471, 490, 493
  *					518, 520, 531, 532
  *
  * This driver is supported by LSI Logic, with assistance from Red Hat, Dell,
  * and others. Please send updates to the mailing list
- * linux-scsi@vger.kernel.org .
+ * linaos-scsi@vger.kernel.org .
  */
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/blkdev.h>
-#include <linux/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/blkdev.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/reboot.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/reboot.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 #include <scsi/scsicam.h>
 
 #include "scsi.h"
@@ -1567,7 +1567,7 @@ mega_cmd_done(adapter_t *adapter, u8 completed[], int nstatus, int status)
 		/* clear result; otherwise, success returns corrupt value */
 		cmd->result = 0;
 
-		/* Convert MegaRAID status to Linux error code */
+		/* Convert MegaRAID status to LinaOS error code */
 		switch (status) {
 		case 0x00:	/* SUCCESS , i.e. SCSI_STATUS_GOOD */
 			cmd->result |= (DID_OK << 16);

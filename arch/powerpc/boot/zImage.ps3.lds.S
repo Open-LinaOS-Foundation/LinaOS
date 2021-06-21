@@ -4,9 +4,9 @@ ENTRY(_zimage_start)
 EXTERN(_zimage_start)
 SECTIONS
 {
-  _vmlinux_start =  .;
-  .kernel:vmlinux.bin : { *(.kernel:vmlinux.bin) }
-  _vmlinux_end =  .;
+  _vmlinaos_start =  .;
+  .kernel:vmlinaos.bin : { *(.kernel:vmlinaos.bin) }
+  _vmlinaos_end =  .;
 
   . = ALIGN(4096);
   _dtb_start = .;

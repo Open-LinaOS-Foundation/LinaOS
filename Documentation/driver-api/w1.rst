@@ -7,12 +7,12 @@ W1: Dallas' 1-wire bus
 W1 API internal to the kernel
 =============================
 
-include/linux/w1.h
+include/linaos/w1.h
 ~~~~~~~~~~~~~~~~~~
 
 W1 kernel API functions.
 
-.. kernel-doc:: include/linux/w1.h
+.. kernel-doc:: include/linaos/w1.h
    :internal:
 
 drivers/w1/w1.c

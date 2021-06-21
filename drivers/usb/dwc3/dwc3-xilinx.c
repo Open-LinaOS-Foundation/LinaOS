@@ -6,22 +6,22 @@
  *          Anurag Kumar Vulisha <anurag.kumar.vulisha@xilinx.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/of_platform.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/reset.h>
+#include <linaos/of_address.h>
+#include <linaos/delay.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
+#include <linaos/io.h>
 
-#include <linux/phy/phy.h>
+#include <linaos/phy/phy.h>
 
 /* USB phy reset mask register */
 #define XLNX_USB_PHY_RST_EN			0x001C

@@ -13,7 +13,7 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include <linux/export.h>
+#include <linaos/export.h>
 #include "hw.h"
 #include "ar9003_mac.h"
 #include "ar9003_mci.h"

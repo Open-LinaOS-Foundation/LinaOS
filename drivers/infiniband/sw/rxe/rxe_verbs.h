@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright (c) 2016 Mellanox Technologies Ltd. All rights reserved.
  * Copyright (c) 2015 System Fabric Works, Inc. All rights reserved.
@@ -7,8 +7,8 @@
 #ifndef RXE_VERBS_H
 #define RXE_VERBS_H
 
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/workqueue.h>
 #include <rdma/rdma_user_rxe.h>
 #include "rxe_pool.h"
 #include "rxe_task.h"

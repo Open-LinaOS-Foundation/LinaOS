@@ -152,7 +152,7 @@ Tegra194 RC mode:
 		#size-cells = <2>;
 		device_type = "pci";
 		num-lanes = <8>;
-		linux,pci-domain = <0>;
+		linaos,pci-domain = <0>;
 
 		pinctrl-names = "default";
 		pinctrl-0 = <&pex_rst_c5_out_state>, <&clkreq_c5_bi_dir_state>;

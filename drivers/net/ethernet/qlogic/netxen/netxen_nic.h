@@ -8,24 +8,24 @@
 #ifndef _NETXEN_NIC_H_
 #define _NETXEN_NIC_H_
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/firmware.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/pci.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/tcp.h>
+#include <linaos/skbuff.h>
+#include <linaos/firmware.h>
 
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/timer.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/timer.h>
 
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>

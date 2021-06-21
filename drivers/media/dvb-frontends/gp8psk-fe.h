@@ -6,7 +6,7 @@
 #ifndef GP8PSK_FE_H
 #define GP8PSK_FE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* gp8psk commands */
 

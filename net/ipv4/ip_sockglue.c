@@ -16,24 +16,24 @@
  *		Mike McLagan	:	Routing by source
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/icmp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/tcp_states.h>
-#include <linux/udp.h>
-#include <linux/igmp.h>
-#include <linux/netfilter.h>
-#include <linux/route.h>
-#include <linux/mroute.h>
+#include <linaos/udp.h>
+#include <linaos/igmp.h>
+#include <linaos/netfilter.h>
+#include <linaos/route.h>
+#include <linaos/mroute.h>
 #include <net/inet_ecn.h>
 #include <net/route.h>
 #include <net/xfrm.h>
@@ -44,10 +44,10 @@
 #endif
 #include <net/ip_fib.h>
 
-#include <linux/errqueue.h>
-#include <linux/uaccess.h>
+#include <linaos/errqueue.h>
+#include <linaos/uaccess.h>
 
-#include <linux/bpfilter.h>
+#include <linaos/bpfilter.h>
 
 /*
  *	SOL_IP control messages.

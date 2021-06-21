@@ -4,7 +4,7 @@
 #if !defined(_TRACE_HYPERV_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_HYPERV_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #if IS_ENABLED(CONFIG_HYPERV)
 

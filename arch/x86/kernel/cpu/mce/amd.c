@@ -7,18 +7,18 @@
  *
  *  All MC4_MISCi registers are shared between cores on a node.
  */
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/kobject.h>
-#include <linux/percpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/kobject.h>
+#include <linaos/percpu.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/sysfs.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/smp.h>
+#include <linaos/string.h>
 
 #include <asm/amd_nb.h>
 #include <asm/traps.h>

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "bitops.h"
 
 #include <asm/processor-flags.h>

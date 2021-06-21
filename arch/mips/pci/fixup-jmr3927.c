@@ -27,7 +27,7 @@
  *  with this program; if not, write  to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/txx9/pci.h>
 #include <asm/txx9/jmr3927.h>
 

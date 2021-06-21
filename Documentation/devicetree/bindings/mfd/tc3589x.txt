@@ -43,7 +43,7 @@ Optional nodes:
 
 - Keypad
   This keypad is the same on all variants, supporting up to 96 different
-  keys. The linux-specific properties are modeled on those already existing
+  keys. The linaos-specific properties are modeled on those already existing
   in other input drivers.
  - compatible : must be "toshiba,tc3589x-keypad"
  - debounce-delay-ms : debounce interval in milliseconds
@@ -51,11 +51,11 @@ Optional nodes:
    bindings/input/matrix-keymap.txt
  - keypad,num-columns : number of columns in the matrix, see
    bindings/input/matrix-keymap.txt
- - linux,keymap: the definition can be found in
+ - linaos,keymap: the definition can be found in
    bindings/input/matrix-keymap.txt
- - linux,no-autorepeat: do no enable autorepeat feature.
+ - linaos,no-autorepeat: do no enable autorepeat feature.
  - wakeup-source: use any event on keypad as wakeup event.
-		  (Legacy property supported: "linux,wakeup")
+		  (Legacy property supported: "linaos,wakeup")
 
 Example:
 
@@ -83,8 +83,8 @@ tc35893@44 {
 		debounce-delay-ms = <4>;
 		keypad,num-columns = <8>;
 		keypad,num-rows = <8>;
-		linux,no-autorepeat;
-		linux,keymap = <0x0301006b
+		linaos,no-autorepeat;
+		linaos,keymap = <0x0301006b
 				0x04010066
 				0x06040072
 				0x040200d7

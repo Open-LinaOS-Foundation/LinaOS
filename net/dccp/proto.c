@@ -6,18 +6,18 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/in.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/slab.h>
+#include <linaos/dccp.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/in.h>
+#include <linaos/if_arp.h>
+#include <linaos/init.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
 #include <net/checksum.h>
 
 #include <net/inet_sock.h>
@@ -26,10 +26,10 @@
 #include <net/xfrm.h>
 
 #include <asm/ioctls.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/poll.h>
 
 #include "ccid.h"
 #include "dccp.h"

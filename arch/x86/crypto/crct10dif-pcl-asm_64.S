@@ -7,7 +7,7 @@
 #     Erdinc Ozturk <erdinc.ozturk@intel.com>
 #     Vinodh Gopal <vinodh.gopal@intel.com>
 #     James Guilford <james.guilford@intel.com>
-#     Tim Chen <tim.c.chen@linux.intel.com>
+#     Tim Chen <tim.c.chen@linaos.intel.com>
 #
 # This software is available to you under a choice of one of two
 # licenses.  You may choose to be licensed under the terms of the GNU
@@ -50,7 +50,7 @@
 #  /white-papers/fast-crc-computation-generic-polynomials-pclmulqdq-paper.pdf
 #
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 .text
 

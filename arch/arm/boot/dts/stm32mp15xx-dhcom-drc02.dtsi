@@ -140,7 +140,7 @@
  */
 
 &uart8 {	/* RS485 */
-	linux,rs485-enabled-at-boot-time;
+	linaos,rs485-enabled-at-boot-time;
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart8_pins_a>;
 	rts-gpios = <&gpioe 6 GPIO_ACTIVE_HIGH>;

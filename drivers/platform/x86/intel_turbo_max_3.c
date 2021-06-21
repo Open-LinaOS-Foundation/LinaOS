@@ -4,16 +4,16 @@
  * Copyright (c) 2017, Intel Corporation.
  * All rights reserved.
  *
- * Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+ * Author: Srinivas Pandruvada <srinivas.pandruvada@linaos.intel.com>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpufeature.h>
-#include <linux/cpuhotplug.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/topology.h>
-#include <linux/workqueue.h>
+#include <linaos/cpufeature.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/topology.h>
+#include <linaos/workqueue.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

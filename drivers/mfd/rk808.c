@@ -12,13 +12,13 @@
  * Author: Wadim Egorov <w.egorov@phytec.de>
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/rk808.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/rk808.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 
 struct rk808_reg_data {
 	int addr;

@@ -8,7 +8,7 @@
 #ifndef _LINUX_ELF_FDPIC_H
 #define _LINUX_ELF_FDPIC_H
 
-#include <uapi/linux/elf-fdpic.h>
+#include <uapi/linaos/elf-fdpic.h>
 
 /*
  * binfmt binary parameters structure

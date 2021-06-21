@@ -2,11 +2,11 @@
 /*
  * Clause 45 PHY support
  */
-#include <linux/ethtool.h>
-#include <linux/export.h>
-#include <linux/mdio.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
+#include <linaos/ethtool.h>
+#include <linaos/export.h>
+#include <linaos/mdio.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
 
 /**
  * genphy_c45_pma_can_sleep - checks if the PMA have sleep support

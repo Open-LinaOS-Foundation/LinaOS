@@ -6,10 +6,10 @@
 #ifndef MV_XOR_H
 #define MV_XOR_H
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/dmaengine.h>
-#include <linux/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/dmaengine.h>
+#include <linaos/interrupt.h>
 
 #define MV_XOR_POOL_SIZE		(MV_XOR_SLOT_SIZE * 3072)
 #define MV_XOR_SLOT_SIZE		64

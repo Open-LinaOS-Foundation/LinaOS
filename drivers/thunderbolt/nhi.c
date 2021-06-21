@@ -9,15 +9,15 @@
  * Copyright (C) 2018, Intel Corporation
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/property.h>
-#include <linux/platform_data/x86/apple.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/property.h>
+#include <linaos/platform_data/x86/apple.h>
 
 #include "nhi.h"
 #include "nhi_regs.h"

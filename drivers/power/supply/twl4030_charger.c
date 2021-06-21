@@ -8,17 +8,17 @@
  * Copyright (C) 2008 Texas Instruments, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/twl.h>
-#include <linux/power_supply.h>
-#include <linux/notifier.h>
-#include <linux/usb/otg.h>
-#include <linux/iio/consumer.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/twl.h>
+#include <linaos/power_supply.h>
+#include <linaos/notifier.h>
+#include <linaos/usb/otg.h>
+#include <linaos/iio/consumer.h>
 
 #define TWL4030_BCIMDEN		0x00
 #define TWL4030_BCIMDKEY	0x01

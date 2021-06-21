@@ -9,7 +9,7 @@
 
 #ifdef CONFIG_PPC_KUAP
 
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 static inline void kuap_update_sr(u32 sr, u32 addr, u32 end)
 {

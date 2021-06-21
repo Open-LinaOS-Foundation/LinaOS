@@ -6,18 +6,18 @@
  * Copyright (C) 2021 Google LLC
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/iio/sysfs.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/scmi_protocol.h>
-#include <linux/time.h>
-#include <linux/types.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/kfifo_buf.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/scmi_protocol.h>
+#include <linaos/time.h>
+#include <linaos/types.h>
 
 #define SCMI_IIO_NUM_OF_AXIS 3
 

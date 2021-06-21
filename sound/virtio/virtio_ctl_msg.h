@@ -6,8 +6,8 @@
 #ifndef VIRTIO_SND_MSG_H
 #define VIRTIO_SND_MSG_H
 
-#include <linux/atomic.h>
-#include <linux/virtio.h>
+#include <linaos/atomic.h>
+#include <linaos/virtio.h>
 
 struct virtio_snd;
 struct virtio_snd_msg;

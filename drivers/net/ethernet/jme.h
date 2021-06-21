@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * JMicron JMC2x0 series PCIe Ethernet Linux Device Driver
+ * JMicron JMC2x0 series PCIe Ethernet LinaOS Device Driver
  *
  * Copyright 2008 JMicron Technology Corporation
  * https://www.jmicron.com/
@@ -11,7 +11,7 @@
 
 #ifndef __JME_H_INCLUDED__
 #define __JME_H_INCLUDED__
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #define DRV_NAME	"jme"
 #define DRV_VERSION	"1.0.8"

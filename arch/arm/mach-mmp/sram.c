@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-mmp/sram.c
+ *  linaos/arch/arm/mach-mmp/sram.c
  *
  *  based on mach-davinci/sram.c - DaVinci simple SRAM allocator
  *
@@ -10,16 +10,16 @@
  *  Add for mmp sram support - Leo Yan <leoy@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/genalloc.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/genalloc.h>
 
-#include <linux/platform_data/dma-mmp_tdma.h>
+#include <linaos/platform_data/dma-mmp_tdma.h>
 
 struct sram_bank_info {
 	char *pool_name;

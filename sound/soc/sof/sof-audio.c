@@ -5,7 +5,7 @@
 //
 // Copyright(c) 2019 Intel Corporation. All rights reserved.
 //
-// Author: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
+// Author: Ranjani Sridharan <ranjani.sridharan@linaos.intel.com>
 //
 
 #include "sof-audio.h"

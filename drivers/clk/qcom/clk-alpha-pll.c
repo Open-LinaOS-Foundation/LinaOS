@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015, 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/clk-provider.h>
+#include <linaos/regmap.h>
+#include <linaos/delay.h>
 
 #include "clk-alpha-pll.h"
 #include "common.h"

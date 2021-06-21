@@ -8,7 +8,7 @@
 #ifndef _KOMEDA_FORMAT_CAPS_H_
 #define _KOMEDA_FORMAT_CAPS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <uapi/drm/drm_fourcc.h>
 #include <drm/drm_fourcc.h>
 

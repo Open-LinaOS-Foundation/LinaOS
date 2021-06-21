@@ -9,7 +9,7 @@
 // wait until that is scheduled, hence we use poll to check for read
 // readiness.
 
-#include <linux/lirc.h>
+#include <linaos/lirc.h>
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>

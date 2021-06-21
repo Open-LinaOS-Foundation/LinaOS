@@ -5,7 +5,7 @@
 // Copyright (C) 2017 Spreadtrum, Inc.
 // Author: Chunyan Zhang <chunyan.zhang@spreadtrum.com>
 
-#include <linux/clk-provider.h>
+#include <linaos/clk-provider.h>
 
 #include "composite.h"
 

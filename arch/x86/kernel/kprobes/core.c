@@ -26,28 +26,28 @@
  *		<arjan@infradead.org> and Jim Keniston <jkenisto@us.ibm.com>
  *		unified x86 kprobes code.
  */
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
-#include <linux/preempt.h>
-#include <linux/sched/debug.h>
-#include <linux/perf_event.h>
-#include <linux/extable.h>
-#include <linux/kdebug.h>
-#include <linux/kallsyms.h>
-#include <linux/ftrace.h>
-#include <linux/kasan.h>
-#include <linux/moduleloader.h>
-#include <linux/objtool.h>
-#include <linux/vmalloc.h>
-#include <linux/pgtable.h>
+#include <linaos/kprobes.h>
+#include <linaos/ptrace.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/hardirq.h>
+#include <linaos/preempt.h>
+#include <linaos/sched/debug.h>
+#include <linaos/perf_event.h>
+#include <linaos/extable.h>
+#include <linaos/kdebug.h>
+#include <linaos/kallsyms.h>
+#include <linaos/ftrace.h>
+#include <linaos/kasan.h>
+#include <linaos/moduleloader.h>
+#include <linaos/objtool.h>
+#include <linaos/vmalloc.h>
+#include <linaos/pgtable.h>
 
 #include <asm/text-patching.h>
 #include <asm/cacheflush.h>
 #include <asm/desc.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/alternative.h>
 #include <asm/insn.h>
 #include <asm/debugreg.h>

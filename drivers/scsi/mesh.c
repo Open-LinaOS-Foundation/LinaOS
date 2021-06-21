@@ -19,19 +19,19 @@
  * - retry arbitration if lost (unless higher levels do this for us)
  * - power down the chip when no device is detected
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/pgtable.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/blkdev.h>
+#include <linaos/proc_fs.h>
+#include <linaos/stat.h>
+#include <linaos/interrupt.h>
+#include <linaos/reboot.h>
+#include <linaos/spinlock.h>
+#include <linaos/pci.h>
+#include <linaos/pgtable.h>
 #include <asm/dbdma.h>
 #include <asm/io.h>
 #include <asm/prom.h>

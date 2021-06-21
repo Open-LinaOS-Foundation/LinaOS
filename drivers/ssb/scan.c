@@ -14,10 +14,10 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/pci.h>
-#include <linux/io.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/ssb/ssb_regs.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/ds.h>

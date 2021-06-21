@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// linux/sound/soc/bcm/bcm63xx-i2s.h
+// linaos/sound/soc/bcm/bcm63xx-i2s.h
 // Copyright (c) 2020 Broadcom Corporation
 // Author: Kevin-Ke Li <kevin-ke.li@broadcom.com>
 

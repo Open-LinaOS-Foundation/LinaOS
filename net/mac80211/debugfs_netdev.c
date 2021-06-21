@@ -5,15 +5,15 @@
  * Copyright (C) 2020 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/if.h>
+#include <linaos/if_ether.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/slab.h>
+#include <linaos/notifier.h>
 #include <net/mac80211.h>
 #include <net/cfg80211.h>
 #include "ieee80211_i.h"

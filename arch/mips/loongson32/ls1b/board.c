@@ -3,9 +3,9 @@
  * Copyright (c) 2011-2016 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/leds.h>
-#include <linux/mtd/partitions.h>
-#include <linux/sizes.h>
+#include <linaos/leds.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/sizes.h>
 
 #include <loongson1.h>
 #include <dma.h>

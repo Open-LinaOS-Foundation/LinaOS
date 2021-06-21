@@ -5,7 +5,7 @@
 #ifndef DRIVERS_NET_ETHERNET_TI_AM65_CPSW_SWITCHDEV_H_
 #define DRIVERS_NET_ETHERNET_TI_AM65_CPSW_SWITCHDEV_H_
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 #if IS_ENABLED(CONFIG_TI_K3_AM65_CPSW_SWITCHDEV)
 static inline void am65_cpsw_nuss_set_offload_fwd_mark(struct sk_buff *skb, bool val)

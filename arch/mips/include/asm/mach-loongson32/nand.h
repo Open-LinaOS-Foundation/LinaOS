@@ -8,8 +8,8 @@
 #ifndef __ASM_MACH_LOONGSON32_NAND_H
 #define __ASM_MACH_LOONGSON32_NAND_H
 
-#include <linux/dmaengine.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/dmaengine.h>
+#include <linaos/mtd/partitions.h>
 
 struct plat_ls1x_nand {
 	struct mtd_partition *parts;

@@ -3,13 +3,13 @@
  * Copyright (C) 2010 Red Hat, Inc.
  * Copyright (c) 2016-2018 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/backing-dev.h>
-#include <linux/uio.h>
-#include <linux/task_io_accounting_ops.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/fs.h>
+#include <linaos/iomap.h>
+#include <linaos/backing-dev.h>
+#include <linaos/uio.h>
+#include <linaos/task_io_accounting_ops.h>
 #include "trace.h"
 
 #include "../internal.h"

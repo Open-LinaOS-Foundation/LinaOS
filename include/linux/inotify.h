@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Inode based directory notification for Linux
+ * Inode based directory notification for LinaOS
  *
  * Copyright (C) 2005 John McCutchan
  */
 #ifndef _LINUX_INOTIFY_H
 #define _LINUX_INOTIFY_H
 
-#include <linux/sysctl.h>
-#include <uapi/linux/inotify.h>
+#include <linaos/sysctl.h>
+#include <uapi/linaos/inotify.h>
 
 extern struct ctl_table inotify_table[]; /* for sysctl */
 

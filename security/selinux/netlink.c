@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Netlink event notifications for SELinux.
+ * Netlink event notifications for SELinaOS.
  *
  * Author: James Morris <jmorris@redhat.com>
  *
  * Copyright (C) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/skbuff.h>
-#include <linux/selinux_netlink.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/skbuff.h>
+#include <linaos/selinaos_netlink.h>
 #include <net/net_namespace.h>
 #include <net/netlink.h>
 
@@ -91,7 +91,7 @@ out:
 out_kfree_skb:
 	kfree_skb(skb);
 oom:
-	pr_err("SELinux:  OOM in %s\n", __func__);
+	pr_err("SELinaOS:  OOM in %s\n", __func__);
 	goto out;
 }
 
@@ -114,7 +114,7 @@ static int __init selnl_init(void)
 
 	selnl = netlink_kernel_create(&init_net, NETLINK_SELINUX, &cfg);
 	if (selnl == NULL)
-		panic("SELinux:  Cannot create netlink socket.");
+		panic("SELinaOS:  Cannot create netlink socket.");
 	return 0;
 }
 

@@ -146,8 +146,8 @@ do {								\
 } while (0)
 #endif
 #define ARCH_HAS_SETUP_ADDITIONAL_PAGES 1
-struct linux_binprm;
-int arch_setup_additional_pages(struct linux_binprm *, int);
+struct linaos_binprm;
+int arch_setup_additional_pages(struct linaos_binprm *, int);
 #endif
 
 #endif

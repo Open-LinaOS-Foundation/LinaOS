@@ -20,7 +20,7 @@
  *   along with this library; if not, write to the Free Software
  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include "cifsglob.h"
 #include "cifs_debug.h"
 #include "smb2pdu.h"
@@ -2450,7 +2450,7 @@ smb2_print_status(__le32 status)
 }
 
 int
-map_smb2_to_linux_error(char *buf, bool log_err)
+map_smb2_to_linaos_error(char *buf, bool log_err)
 {
 	struct smb2_sync_hdr *shdr = (struct smb2_sync_hdr *)buf;
 	unsigned int i;

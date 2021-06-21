@@ -16,7 +16,7 @@
 
 #include "hw.h"
 #include "hw-ops.h"
-#include <linux/export.h>
+#include <linaos/export.h>
 
 /* Common calibration code */
 

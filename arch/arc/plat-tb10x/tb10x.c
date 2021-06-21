@@ -7,7 +7,7 @@
  * Author: Christian Ruppert <christian.ruppert@abilis.com>
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/mach_desc.h>
 
 static const char *tb10x_compat[] __initdata = {

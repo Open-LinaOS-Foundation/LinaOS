@@ -7,7 +7,7 @@
  *	Based on advantechwdt.c which is based on acquirewdt.c which
  *	is based on wdt.c.
  *
- *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@linux.org.pl>
+ *	(c) Copyright 2000-2001 Marek Michalkiewicz <marekm@linaos.org.pl>
  *
  *	Based on acquirewdt.c which is based on wdt.c.
  *	Original copyright messages:
@@ -29,18 +29,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/ioport.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/moduleparam.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 
 static struct platform_device *ibwdt_platform_device;

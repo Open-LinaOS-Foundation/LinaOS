@@ -3,12 +3,12 @@
  * Copyright (C) 2012 Rabin Vincent <rabin at rab.in>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/wait.h>
-#include <linux/uprobes.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/wait.h>
+#include <linaos/uprobes.h>
+#include <linaos/module.h>
 
 #include "../decode.h"
 #include "../decode-arm.h"

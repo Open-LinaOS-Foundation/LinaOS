@@ -11,7 +11,7 @@
 #include <sys/ioctl.h>
 #include <sys/mman.h>
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 #include <test_util.h>
 #include <kvm_util.h>

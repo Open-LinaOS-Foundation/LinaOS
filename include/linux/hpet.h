@@ -2,7 +2,7 @@
 #ifndef	__HPET__
 #define	__HPET__ 1
 
-#include <uapi/linux/hpet.h>
+#include <uapi/linaos/hpet.h>
 
 
 /*

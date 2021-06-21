@@ -3,8 +3,8 @@
 #define _FS_NFSD_PNFS_H 1
 
 #ifdef CONFIG_NFSD_V4
-#include <linux/exportfs.h>
-#include <linux/nfsd/export.h>
+#include <linaos/exportfs.h>
+#include <linaos/nfsd/export.h>
 
 #include "state.h"
 #include "xdr4.h"

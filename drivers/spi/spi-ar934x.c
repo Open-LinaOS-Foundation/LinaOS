@@ -9,13 +9,13 @@
 // Copyright (C) 2011-2013 Gabor Juhos <juhosg@openwrt.org>
 // Copyright (C) 2014-2015 Felix Fietkau <nbd@nbd.name>
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/spi/spi.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/spi/spi.h>
 
 #define DRIVER_NAME "spi-ar934x"
 

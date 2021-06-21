@@ -1,4 +1,4 @@
 # SPDX-License-Identifier: GPL-2.0-only
-vmlinux
-vmlinux.lds
-vmlinux.syms
+vmlinaos
+vmlinaos.lds
+vmlinaos.syms

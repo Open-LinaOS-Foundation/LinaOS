@@ -15,11 +15,11 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/pci.h>
+#include <linaos/string.h>
 #include "cpci_hotplug.h"
 
 #define DRIVER_VERSION	"0.1"

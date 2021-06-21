@@ -9,7 +9,7 @@ Memory hotplug event notifier
 
 Hotplugging events are sent to a notification queue.
 
-There are six types of notification defined in ``include/linux/memory.h``:
+There are six types of notification defined in ``include/linaos/memory.h``:
 
 MEM_GOING_ONLINE
   Generated before new memory becomes available in order to be able to
@@ -76,7 +76,7 @@ The third argument (arg) passes a pointer of struct memory_notify::
 
 The callback routine shall return one of the values
 NOTIFY_DONE, NOTIFY_OK, NOTIFY_BAD, NOTIFY_STOP
-defined in ``include/linux/notifier.h``
+defined in ``include/linaos/notifier.h``
 
 NOTIFY_DONE and NOTIFY_OK have no effect on the further processing.
 

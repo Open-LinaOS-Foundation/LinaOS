@@ -7,26 +7,26 @@
  * Copyright (c) 2000-2004 by David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/otg.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/dmapool.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/hrtimer.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
+#include <linaos/usb/otg.h>
+#include <linaos/moduleparam.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/debugfs.h>
+#include <linaos/slab.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

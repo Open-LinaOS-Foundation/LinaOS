@@ -13,8 +13,8 @@
 #ifndef __DVB_HORUS3A_H__
 #define __DVB_HORUS3A_H__
 
-#include <linux/dvb/frontend.h>
-#include <linux/i2c.h>
+#include <linaos/dvb/frontend.h>
+#include <linaos/i2c.h>
 
 /**
  * struct horus3a_config - the configuration of Horus3A tuner driver

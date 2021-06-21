@@ -41,7 +41,7 @@
 		power-white {
 			label = "bcm53xx:white:power";
 			gpios = <&chipcommon 6 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		router-amber {
@@ -82,39 +82,39 @@
 
 		power {
 			label = "Power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&chipcommon 1 GPIO_ACTIVE_LOW>;
 		};
 
 		restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			linaos,code = <KEY_RESTART>;
 			gpios = <&chipcommon 15 GPIO_ACTIVE_LOW>;
 		};
 
 		aoss {
 			label = "AOSS";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 16 GPIO_ACTIVE_LOW>;
 		};
 
 		/* Commit mode set by switch? */
 		mode {
 			label = "Mode";
-			linux,code = <KEY_SETUP>;
+			linaos,code = <KEY_SETUP>;
 			gpios = <&chipcommon 17 GPIO_ACTIVE_LOW>;
 		};
 
 		/* Switch: AP mode */
 		sw_ap {
 			label = "AP";
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			gpios = <&chipcommon 18 GPIO_ACTIVE_LOW>;
 		};
 
 		eject {
 			label = "USB eject";
-			linux,code = <KEY_EJECTCD>;
+			linaos,code = <KEY_EJECTCD>;
 			gpios = <&chipcommon 20 GPIO_ACTIVE_LOW>;
 		};
 	};

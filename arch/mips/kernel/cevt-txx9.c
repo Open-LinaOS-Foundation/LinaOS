@@ -3,18 +3,18 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Based on linux/arch/mips/kernel/cevt-r4k.c,
- *	    linux/arch/mips/jmr3927/rbhma3100/setup.c
+ * Based on linaos/arch/mips/kernel/cevt-r4k.c,
+ *	    linaos/arch/mips/jmr3927/rbhma3100/setup.c
  *
  * Copyright 2001 MontaVista Software Inc.
  * Copyright (C) 2000-2001 Toshiba Corporation
  * Copyright (C) 2007 MIPS Technologies, Inc.
- * Copyright (C) 2007 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2007 Ralf Baechle <ralf@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched_clock.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/sched_clock.h>
 #include <asm/time.h>
 #include <asm/txx9tmr.h>
 

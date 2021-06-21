@@ -2,9 +2,9 @@
 #ifndef _LINUX_BPFILTER_H
 #define _LINUX_BPFILTER_H
 
-#include <uapi/linux/bpfilter.h>
-#include <linux/usermode_driver.h>
-#include <linux/sockptr.h>
+#include <uapi/linaos/bpfilter.h>
+#include <linaos/usermode_driver.h>
+#include <linaos/sockptr.h>
 
 struct sock;
 int bpfilter_ip_set_sockopt(struct sock *sk, int optname, sockptr_t optval,

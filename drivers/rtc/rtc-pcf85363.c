@@ -6,17 +6,17 @@
  *
  * Copyright (C) 2017 Eric Nelson
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/bcd.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/rtc.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/bcd.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/regmap.h>
 
 /*
  * Date/Time registers

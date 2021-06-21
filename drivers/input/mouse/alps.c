@@ -12,12 +12,12 @@
  * tpconfig utility (by C. Scott Ananian and Bruce Kall).
  */
 
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/serio.h>
-#include <linux/libps2.h>
-#include <linux/dmi.h>
+#include <linaos/slab.h>
+#include <linaos/input.h>
+#include <linaos/input/mt.h>
+#include <linaos/serio.h>
+#include <linaos/libps2.h>
+#include <linaos/dmi.h>
 
 #include "psmouse.h"
 #include "alps.h"

@@ -16,9 +16,9 @@
  *      - Removed unused variable 'inet6_protocol_base'
  *      - Modified inet6_del_protocol() to correctly maintain copy bit.
  */
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
 #include <net/protocol.h>
 
 #if IS_ENABLED(CONFIG_IPV6)

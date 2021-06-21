@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2002  David McCullough <davidm@snapgear.com>
- * Copyright (C) 2003  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2003  Paul Mundt <lethal@linaos-sh.org>
  *
  * Based on files with the following comments:
  *
@@ -10,12 +10,12 @@
  *           Modified for 7751 Solution Engine by
  *           Ian da Silva and Jeremy Siegel, 2001.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/timer.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
 #include <asm/machvec.h>
 #include <mach/secureedge5410.h>
 #include <asm/irq.h>

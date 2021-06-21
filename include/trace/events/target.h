@@ -5,8 +5,8 @@
 #if !defined(_TRACE_TARGET_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_TARGET_H
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <linaos/tracepoint.h>
+#include <linaos/trace_seq.h>
 #include <scsi/scsi_proto.h>
 #include <scsi/scsi_tcq.h>
 #include <target/target_core_base.h>

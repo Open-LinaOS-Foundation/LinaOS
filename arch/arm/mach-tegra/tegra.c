@@ -7,26 +7,26 @@
  * Copyright (C) 2010 Google, Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/clk/tegra.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pda_power.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/usb/tegra_usb_phy.h>
+#include <linaos/clk.h>
+#include <linaos/clk/tegra.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdomain.h>
+#include <linaos/kernel.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pda_power.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_8250.h>
+#include <linaos/slab.h>
+#include <linaos/sys_soc.h>
+#include <linaos/usb/tegra_usb_phy.h>
 
-#include <linux/firmware/trusted_foundations.h>
+#include <linaos/firmware/trusted_foundations.h>
 
 #include <soc/tegra/fuse.h>
 #include <soc/tegra/pmc.h>

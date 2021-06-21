@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: ISC
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "mt7603.h"
 #include "mac.h"
 #include "eeprom.h"

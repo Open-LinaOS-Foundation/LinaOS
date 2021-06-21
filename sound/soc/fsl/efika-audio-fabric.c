@@ -10,14 +10,14 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/dma-mapping.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

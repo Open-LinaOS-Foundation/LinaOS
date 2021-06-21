@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  *	Berkeley style UIO structures	-	Alan Cox 1994.
  *
@@ -10,8 +10,8 @@
 #ifndef _UAPI__LINUX_UIO_H
 #define _UAPI__LINUX_UIO_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
 
 
 struct iovec

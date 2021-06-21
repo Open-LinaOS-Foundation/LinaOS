@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/video/mmp/hw/mmp_spi.c
+ * linaos/drivers/video/mmp/hw/mmp_spi.c
  * using the spi in LCD controler for commands send
  *
  * Copyright (C) 2012 Marvell Technology Group Ltd.
@@ -8,11 +8,11 @@
  *          Lisa Du <cldu@marvell.com>
  *          Zhou Zhu <zzhu3@marvell.com>
  */
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/spi/spi.h>
 #include "mmp_ctrl.h"
 
 /**

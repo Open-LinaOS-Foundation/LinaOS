@@ -487,11 +487,11 @@ patternProperties:
               Specifies the hysteresis for the event (touch and deep-touch
               events only).
 
-          linux,code:
+          linaos,code:
             $ref: /schemas/types.yaml#/definitions/uint32
             description: Numeric key or switch code associated with the event.
 
-          linux,input-type:
+          linaos,input-type:
             $ref: /schemas/types.yaml#/definitions/uint32
             enum: [1, 5]
             description:
@@ -500,7 +500,7 @@ patternProperties:
               switches and all others are interpreted as keys.
 
         dependencies:
-          linux,input-type: ["linux,code"]
+          linaos,input-type: ["linaos,code"]
 
         additionalProperties: false
 
@@ -678,7 +678,7 @@ patternProperties:
         description:
           Specifies the raw count filter strength during low-power mode.
 
-      linux,keycodes:
+      linaos,keycodes:
         $ref: /schemas/types.yaml#/definitions/uint32-array
         minItems: 1
         maxItems: 6
@@ -726,10 +726,10 @@ patternProperties:
           travel in order to be interpreted as a flick or swipe.
 
     dependencies:
-      azoteq,gesture-swipe: ["linux,keycodes"]
-      azoteq,timeout-tap-ms: ["linux,keycodes"]
-      azoteq,timeout-swipe-ms: ["linux,keycodes"]
-      azoteq,thresh-swipe: ["linux,keycodes"]
+      azoteq,gesture-swipe: ["linaos,keycodes"]
+      azoteq,timeout-tap-ms: ["linaos,keycodes"]
+      azoteq,timeout-swipe-ms: ["linaos,keycodes"]
+      azoteq,thresh-swipe: ["linaos,keycodes"]
 
     additionalProperties: false
 
@@ -776,7 +776,7 @@ examples:
                                                <5>, <6>, <7>;
 
                             event-prox {
-                                    linux,code = <KEY_POWER>;
+                                    linaos,code = <KEY_POWER>;
                             };
                     };
 
@@ -798,7 +798,7 @@ examples:
                             azoteq,proj-bias = <1>;
                             azoteq,sense-freq = <2>;
 
-                            linux,keycodes = <KEY_VOLUMEUP>,
+                            linaos,keycodes = <KEY_VOLUMEUP>,
                                              <KEY_VOLUMEDOWN>,
                                              <KEY_NEXTSONG>,
                                              <KEY_PREVIOUSSONG>,
@@ -834,7 +834,7 @@ examples:
                             azoteq,meas-cap-decrease;
 
                             event-touch {
-                                    linux,code = <SW_LID>;
+                                    linaos,code = <SW_LID>;
                             };
                     };
             };

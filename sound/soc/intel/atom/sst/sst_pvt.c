@@ -11,13 +11,13 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/kobject.h>
-#include <linux/pci.h>
-#include <linux/fs.h>
-#include <linux/firmware.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
+#include <linaos/kobject.h>
+#include <linaos/pci.h>
+#include <linaos/fs.h>
+#include <linaos/firmware.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
 #include <sound/asound.h>
 #include <sound/core.h>
 #include <sound/pcm.h>

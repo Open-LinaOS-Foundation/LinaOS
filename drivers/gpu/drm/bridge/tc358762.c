@@ -10,10 +10,10 @@
  *  Eric Anholt <eric@anholt.net>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/of_graph.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

@@ -2,8 +2,8 @@
 #ifndef TARGET_CORE_RD_H
 #define TARGET_CORE_RD_H
 
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 #include <target/target_core_base.h>
 
 #define RD_HBA_VERSION		"v4.0"

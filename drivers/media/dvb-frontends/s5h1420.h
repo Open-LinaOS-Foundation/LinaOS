@@ -5,12 +5,12 @@
  *    PnpNetwork PN1010 QPSK Demodulator
  *
  * Copyright (C) 2005 Andrew de Quincey <adq_dvb@lidskialf.net>
- * Copyright (C) 2005-8 Patrick Boettcher <pb@linuxtv.org>
+ * Copyright (C) 2005-8 Patrick Boettcher <pb@linaostv.org>
  */
 #ifndef S5H1420_H
 #define S5H1420_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct s5h1420_config
 {

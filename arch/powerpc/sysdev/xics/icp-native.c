@@ -3,16 +3,16 @@
  * Copyright 2011 IBM Corporation.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/irq.h>
+#include <linaos/smp.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/cpu.h>
+#include <linaos/of.h>
+#include <linaos/spinlock.h>
+#include <linaos/module.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>
@@ -127,7 +127,7 @@ static unsigned int icp_native_get_irq(void)
 		return irq;
 	}
 
-	/* We don't have a linux mapping, so have rtas mask it. */
+	/* We don't have a linaos mapping, so have rtas mask it. */
 	xics_mask_unknown_vec(vec);
 
 	/* We might learn about it later, so EOI it */
@@ -215,7 +215,7 @@ static int __init icp_native_map_one_cpu(int hw_id, unsigned long addr,
 	int i, cpu = -1;
 
 	/* This may look gross but it's good enough for now, we don't quite
-	 * have a hard -> linux processor id matching.
+	 * have a hard -> linaos processor id matching.
 	 */
 	for_each_possible_cpu(i) {
 		if (!cpu_present(i))

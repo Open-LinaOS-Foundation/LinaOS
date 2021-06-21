@@ -3,31 +3,31 @@
  * Collaborative memory management interface.
  *
  * Copyright (C) 2008 IBM Corporation
- * Author(s): Brian King (brking@linux.vnet.ibm.com),
+ * Author(s): Brian King (brking@linaos.vnet.ibm.com),
  */
 
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/gfp.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/oom.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/stringify.h>
-#include <linux/swap.h>
-#include <linux/device.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/magic.h>
-#include <linux/balloon_compaction.h>
+#include <linaos/ctype.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/gfp.h>
+#include <linaos/kthread.h>
+#include <linaos/module.h>
+#include <linaos/oom.h>
+#include <linaos/reboot.h>
+#include <linaos/sched.h>
+#include <linaos/stringify.h>
+#include <linaos/swap.h>
+#include <linaos/device.h>
+#include <linaos/mount.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/magic.h>
+#include <linaos/balloon_compaction.h>
 #include <asm/firmware.h>
 #include <asm/hvcall.h>
 #include <asm/mmu.h>
-#include <linux/uaccess.h>
-#include <linux/memory.h>
+#include <linaos/uaccess.h>
+#include <linaos/memory.h>
 #include <asm/plpar_wrappers.h>
 
 #include "pseries.h"
@@ -54,7 +54,7 @@ static bool __read_mostly simulate;
 static unsigned long simulate_loan_target_kb;
 static struct device cmm_dev;
 
-MODULE_AUTHOR("Brian King <brking@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Brian King <brking@linaos.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM System p Collaborative Memory Manager");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(CMM_DRIVER_VERSION);

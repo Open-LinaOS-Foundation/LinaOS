@@ -5,8 +5,8 @@
  * Copyright (C) 2018 Florian Fainelli <f.fainelli@gmail.com>
  */
 
-#include <linux/phy.h>
-#include <linux/types.h>
+#include <linaos/phy.h>
+#include <linaos/types.h>
 
 /* Non-standard page used to access SerDes PHY registers on NorthStar Plus */
 #define B53_SERDES_PAGE			0x16

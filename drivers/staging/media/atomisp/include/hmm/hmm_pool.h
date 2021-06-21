@@ -20,12 +20,12 @@
 #ifndef __HMM_POOL_H__
 #define __HMM_POOL_H__
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/kref.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/kref.h>
 #include "hmm_common.h"
 #include "hmm/hmm_bo.h"
 

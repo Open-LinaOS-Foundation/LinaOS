@@ -7,11 +7,11 @@
 #include <hyp/switch.h>
 #include <hyp/sysreg-sr.h>
 
-#include <linux/arm-smccc.h>
-#include <linux/kvm_host.h>
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <uapi/linux/psci.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/kvm_host.h>
+#include <linaos/types.h>
+#include <linaos/jump_label.h>
+#include <uapi/linaos/psci.h>
 
 #include <kvm/arm_psci.h>
 

@@ -26,7 +26,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 #include <errno.h>
-#include <linux/futex.h>
+#include <linaos/futex.h>
 #include <libgen.h>
 
 #include "logging.h"

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/amba/mmci.h
+ *  include/linaos/amba/mmci.h
  */
 #ifndef AMBA_MMCI_H
 #define AMBA_MMCI_H
 
-#include <linux/mmc/host.h>
+#include <linaos/mmc/host.h>
 
 /**
  * struct mmci_platform_data - platform configuration for the MMCI

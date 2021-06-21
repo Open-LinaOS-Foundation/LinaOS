@@ -7,7 +7,7 @@
 #ifndef WILC_WLAN_IF_H
 #define WILC_WLAN_IF_H
 
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include "fw.h"
 
 /********************************************

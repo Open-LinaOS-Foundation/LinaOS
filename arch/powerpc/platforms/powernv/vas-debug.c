@@ -5,10 +5,10 @@
 
 #define pr_fmt(fmt) "vas: " fmt
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
 #include "vas.h"
 
 static struct dentry *vas_debugfs;

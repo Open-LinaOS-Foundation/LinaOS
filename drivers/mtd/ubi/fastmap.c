@@ -5,8 +5,8 @@
  * Author: Richard Weinberger <richard@nod.at>
  */
 
-#include <linux/crc32.h>
-#include <linux/bitmap.h>
+#include <linaos/crc32.h>
+#include <linaos/bitmap.h>
 #include "ubi.h"
 
 /**

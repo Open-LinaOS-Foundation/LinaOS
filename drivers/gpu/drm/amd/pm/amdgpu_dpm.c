@@ -30,7 +30,7 @@
 #include "amd_pcie.h"
 #include "amdgpu_display.h"
 #include "hwmgr.h"
-#include <linux/power_supply.h>
+#include <linaos/power_supply.h>
 
 #define WIDTH_4K 3840
 

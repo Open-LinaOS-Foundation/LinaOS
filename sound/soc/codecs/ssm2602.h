@@ -8,13 +8,13 @@
  * Modified:
  *               Copyright 2008 Analog Devices Inc.
  *
- * Bugs:         Enter bugs at http://blackfin.uclinux.org/
+ * Bugs:         Enter bugs at http://blackfin.uclinaos.org/
  */
 
 #ifndef _SSM2602_H
 #define _SSM2602_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 struct device;
 

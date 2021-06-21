@@ -3,7 +3,7 @@
 #ifndef __HISI_HPRE_H
 #define __HISI_HPRE_H
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include "../qm.h"
 
 #define HPRE_SQE_SIZE			sizeof(struct hpre_sqe)

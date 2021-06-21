@@ -18,7 +18,7 @@
 #define __RSI_DEBUGFS_H__
 
 #include "rsi_main.h"
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #ifndef CONFIG_RSI_DEBUGFS
 static inline int rsi_init_dbgfs(struct rsi_hw *adapter)

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: (GPL-2.0 OR MPL-1.1)
 /* src/p80211/p80211knetdev.c
  *
- * Linux Kernel net device interface
+ * LinaOS Kernel net device interface
  *
  * Copyright (C) 1999 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * linaos-wlan
  *
  *   The contents of this file are subject to the Mozilla Public
  *   License Version 1.1 (the "License"); you may not use this file
@@ -31,12 +31,12 @@
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the linaos-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@linaos-wlan.com
+ * http://www.linaos-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -45,33 +45,33 @@
  *
  * --------------------------------------------------------------------
  *
- * The functions required for a Linux network device are defined here.
+ * The functions required for a LinaOS network device are defined here.
  *
  * --------------------------------------------------------------------
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/kmod.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
-#include <linux/sockios.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/byteorder/generic.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/proc_fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/kmod.h>
+#include <linaos/if_arp.h>
+#include <linaos/wireless.h>
+#include <linaos/sockios.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_ether.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/bitops.h>
+#include <linaos/uaccess.h>
 #include <asm/byteorder.h>
 
 #ifdef SIOCETHTOOL
-#include <linux/ethtool.h>
+#include <linaos/ethtool.h>
 #endif
 
 #include <net/iw_handler.h>
@@ -115,7 +115,7 @@ MODULE_PARM_DESC(wlan_wext_write, "enable write wireless extensions");
 /*----------------------------------------------------------------
  * p80211knetdev_init
  *
- * Init method for a Linux netdevice.  Called in response to
+ * Init method for a LinaOS netdevice.  Called in response to
  * register_netdev.
  *
  * Arguments:
@@ -137,13 +137,13 @@ static int p80211knetdev_init(struct net_device *netdev)
 /*----------------------------------------------------------------
  * p80211knetdev_open
  *
- * Linux netdevice open method.  Following a successful call here,
+ * LinaOS netdevice open method.  Following a successful call here,
  * the device is supposed to be ready for tx and rx.  In our
  * situation that may not be entirely true due to the state of the
  * MAC below.
  *
  * Arguments:
- *	netdev		Linux network device structure
+ *	netdev		LinaOS network device structure
  *
  * Returns:
  *	zero on success, non-zero otherwise
@@ -175,11 +175,11 @@ static int p80211knetdev_open(struct net_device *netdev)
 /*----------------------------------------------------------------
  * p80211knetdev_stop
  *
- * Linux netdevice stop (close) method.  Following this call,
+ * LinaOS netdevice stop (close) method.  Following this call,
  * no frames should go up or down through this interface.
  *
  * Arguments:
- *	netdev		Linux network device structure
+ *	netdev		LinaOS network device structure
  *
  * Returns:
  *	zero on success, non-zero otherwise
@@ -304,11 +304,11 @@ static void p80211netdev_rx_bh(struct tasklet_struct *t)
 /*----------------------------------------------------------------
  * p80211knetdev_hard_start_xmit
  *
- * Linux netdevice method for transmitting a frame.
+ * LinaOS netdevice method for transmitting a frame.
  *
  * Arguments:
- *	skb	Linux sk_buff containing the frame.
- *	netdev	Linux netdevice.
+ *	skb	LinaOS sk_buff containing the frame.
+ *	netdev	LinaOS netdevice.
  *
  * Side effects:
  *	If the lower layers report that buffers are full. netdev->tbusy
@@ -512,12 +512,12 @@ static int p80211netdev_ethtool(struct wlandevice *wlandev,
 /*----------------------------------------------------------------
  * p80211knetdev_do_ioctl
  *
- * Handle an ioctl call on one of our devices.  Everything Linux
+ * Handle an ioctl call on one of our devices.  Everything LinaOS
  * ioctl specific is done here.  Then we pass the contents of the
  * ifr->data to the request message handler.
  *
  * Arguments:
- *	dev	Linux kernel netdevice
+ *	dev	LinaOS kernel netdevice
  *	ifr	Our private ioctl request structure, typed for the
  *		generic struct ifreq so we can use ptr to func
  *		w/o cast.
@@ -595,7 +595,7 @@ bail:
  *
  * Handles the ioctl for changing the MACAddress of a netdevice
  *
- * references: linux/netdevice.h and drivers/net/net_init.c
+ * references: linaos/netdevice.h and drivers/net/net_init.c
  *
  * NOTE: [MSM] We only prevent address changes when the netdev is
  * up.  We don't control anything based on dot11 state.  If the
@@ -693,7 +693,7 @@ static const struct net_device_ops p80211_netdev_ops = {
  *
  * Roughly matches the functionality of ether_setup.  Here
  * we set up any members of the wlandevice structure that are common
- * to all devices.  Additionally, we allocate a linux 'struct device'
+ * to all devices.  Additionally, we allocate a linaos 'struct device'
  * and perform the same setup as ether_setup.
  *
  * Note: It's important that the caller have setup the wlandev->name
@@ -804,10 +804,10 @@ void wlan_unsetup(struct wlandevice *wlandev)
  * Roughly matches the functionality of register_netdev.  This function
  * is called after the driver has successfully probed and set up the
  * resources for the device.  It's now ready to become a named device
- * in the Linux system.
+ * in the LinaOS system.
  *
  * First we allocate a name for the device (if not already set), then
- * we call the Linux function register_netdevice.
+ * we call the LinaOS function register_netdevice.
  *
  * Arguments:
  *	wlandev		ptr to the wlandev structure for the
@@ -829,7 +829,7 @@ int register_wlandev(struct wlandevice *wlandev)
  * Roughly matches the functionality of unregister_netdev.  This
  * function is called to remove a named device from the system.
  *
- * First we tell linux that the device should no longer exist.
+ * First we tell linaos that the device should no longer exist.
  * Then we remove it from the list of known wlan devices.
  *
  * Arguments:

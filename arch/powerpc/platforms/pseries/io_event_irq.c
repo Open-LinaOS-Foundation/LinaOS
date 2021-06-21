@@ -3,14 +3,14 @@
  * Copyright 2010 2011 Mark Nelson and Tseng-Hui (Frank) Lin, IBM Corporation
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/of.h>
+#include <linaos/list.h>
+#include <linaos/notifier.h>
 
 #include <asm/machdep.h>
 #include <asm/rtas.h>

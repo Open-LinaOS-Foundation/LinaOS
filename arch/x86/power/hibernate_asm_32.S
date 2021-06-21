@@ -7,7 +7,7 @@
  * your own stack under you is bad idea.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/segment.h>
 #include <asm/page_types.h>
 #include <asm/asm-offsets.h>

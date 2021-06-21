@@ -8,9 +8,9 @@
  *	Seung-Woo Kim <sw0312.kim@samsung.com>
  */
 
-#include <linux/console.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
+#include <linaos/console.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/vmalloc.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_fb_helper.h>

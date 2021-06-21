@@ -3,27 +3,27 @@
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/blkpg.h>
-#include <linux/magic.h>
-#include <linux/major.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/map.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/mutex.h>
+#include <linaos/backing-dev.h>
+#include <linaos/compat.h>
+#include <linaos/mount.h>
+#include <linaos/blkpg.h>
+#include <linaos/magic.h>
+#include <linaos/major.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/map.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "mtdcore.h"
 

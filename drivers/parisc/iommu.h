@@ -1,7 +1,7 @@
 #ifndef _IOMMU_H
 #define _IOMMU_H 1
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 struct parisc_device;
 struct ioc;

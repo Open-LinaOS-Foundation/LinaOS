@@ -5,31 +5,31 @@
  *	   Neil Zhang <zhangwm@marvell.com>
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
-#include <linux/pm.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/platform_data/mv_usb.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmapool.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/err.h>
+#include <linaos/timer.h>
+#include <linaos/list.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg.h>
+#include <linaos/pm.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/platform_data/mv_usb.h>
 #include <asm/unaligned.h>
 
 #include "mv_udc.h"

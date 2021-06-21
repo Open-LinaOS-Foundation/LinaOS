@@ -30,12 +30,12 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/mlx5/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/hardirq.h>
+#include <linaos/mlx5/driver.h>
 #include <rdma/ib_verbs.h>
-#include <linux/mlx5/cq.h>
+#include <linaos/mlx5/cq.h>
 #include "mlx5_core.h"
 #include "lib/eq.h"
 

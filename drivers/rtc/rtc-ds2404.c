@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2012 Sven Schnelle <svens@stackframe.org>
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/rtc.h>
-#include <linux/types.h>
-#include <linux/bcd.h>
-#include <linux/platform_data/rtc-ds2404.h>
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/rtc.h>
+#include <linaos/types.h>
+#include <linaos/bcd.h>
+#include <linaos/platform_data/rtc-ds2404.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/slab.h>
 
-#include <linux/io.h>
+#include <linaos/io.h>
 
 #define DS2404_STATUS_REG 0x200
 #define DS2404_CONTROL_REG 0x201

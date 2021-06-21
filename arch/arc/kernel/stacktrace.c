@@ -21,11 +21,11 @@
  *  -Initial implementation
  */
 
-#include <linux/ptrace.h>
-#include <linux/export.h>
-#include <linux/stacktrace.h>
-#include <linux/kallsyms.h>
-#include <linux/sched/debug.h>
+#include <linaos/ptrace.h>
+#include <linaos/export.h>
+#include <linaos/stacktrace.h>
+#include <linaos/kallsyms.h>
+#include <linaos/sched/debug.h>
 
 #include <asm/arcregs.h>
 #include <asm/unwind.h>

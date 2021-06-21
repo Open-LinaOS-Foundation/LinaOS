@@ -4,14 +4,14 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/err.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <linaos/err.h>
+#include <linaos/firmware/imx/sci.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/thermal.h>
 
 #include "thermal_core.h"
 #include "thermal_hwmon.h"

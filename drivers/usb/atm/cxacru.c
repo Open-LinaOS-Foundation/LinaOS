@@ -15,15 +15,15 @@
  *  into usbatm), and the userspace firmware loading utility.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/mutex.h>
 #include <asm/unaligned.h>
 
 #include "usbatm.h"

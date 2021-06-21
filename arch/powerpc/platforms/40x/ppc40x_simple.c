@@ -18,8 +18,8 @@
 #include <asm/udbg.h>
 #include <asm/uic.h>
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <linaos/init.h>
+#include <linaos/of_platform.h>
 
 static const struct of_device_id ppc40x_of_bus[] __initconst = {
 	{ .compatible = "ibm,plb3", },

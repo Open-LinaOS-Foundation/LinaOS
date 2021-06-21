@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/kernel/capability.c
+ * linaos/kernel/capability.c
  *
  * Copyright (C) 1997  Andrew Main <zefram@fysh.org>
  *
@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/uaccess.h>
+#include <linaos/audit.h>
+#include <linaos/capability.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/security.h>
+#include <linaos/syscalls.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/user_namespace.h>
+#include <linaos/uaccess.h>
 
 /*
  * Leveraged for setting/resetting capabilities
@@ -40,7 +40,7 @@ __setup("no_file_caps", file_caps_disable);
 /*
  * More recent versions of libcap are available from:
  *
- *   http://www.kernel.org/pub/linux/libs/security/linux-privs/
+ *   http://www.kernel.org/pub/linaos/libs/security/linaos-privs/
  */
 
 static void warn_legacy_capability_use(void)
@@ -52,7 +52,7 @@ static void warn_legacy_capability_use(void)
 }
 
 /*
- * Version 2 capabilities worked fine, but the linux/capability.h file
+ * Version 2 capabilities worked fine, but the linaos/capability.h file
  * that accompanied their introduction encouraged their use without
  * the necessary user-space source code changes. As such, we have
  * created a version 3 with equivalent functionality to version 2, but

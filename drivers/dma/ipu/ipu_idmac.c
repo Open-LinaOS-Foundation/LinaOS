@@ -6,20 +6,20 @@
  * Copyright (C) 2005-2007 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/dma/ipu-dma.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/clk.h>
+#include <linaos/vmalloc.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/dma/ipu-dma.h>
 
 #include "../dmaengine.h"
 #include "ipu_intern.h"

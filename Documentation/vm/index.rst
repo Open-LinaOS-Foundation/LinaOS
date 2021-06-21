@@ -1,8 +1,8 @@
 =====================================
-Linux Memory Management Documentation
+LinaOS Memory Management Documentation
 =====================================
 
-This is a collection of documents about the Linux memory management (mm)
+This is a collection of documents about the LinaOS memory management (mm)
 subsystem.  If you are looking for advice on simply allocating memory,
 see the :ref:`memory_allocation`.
 
@@ -10,7 +10,7 @@ User guides for MM features
 ===========================
 
 The following documents provide guides for controlling and tuning
-various features of the Linux memory management
+various features of the LinaOS memory management
 
 .. toctree::
    :maxdepth: 1

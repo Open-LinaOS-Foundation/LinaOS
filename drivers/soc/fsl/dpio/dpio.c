@@ -4,8 +4,8 @@
  * Copyright 2016 NXP
  *
  */
-#include <linux/kernel.h>
-#include <linux/fsl/mc.h>
+#include <linaos/kernel.h>
+#include <linaos/fsl/mc.h>
 
 #include "dpio.h"
 #include "dpio-cmd.h"

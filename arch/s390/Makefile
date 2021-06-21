@@ -18,7 +18,7 @@ KBUILD_AFLAGS	+= -m64
 KBUILD_CFLAGS	+= -m64
 ifeq ($(CONFIG_RELOCATABLE),y)
 KBUILD_CFLAGS	+= -fPIE
-LDFLAGS_vmlinux	:= -pie
+LDFLAGS_vmlinaos	:= -pie
 endif
 aflags_dwarf	:= -Wa,-gdwarf-2
 KBUILD_AFLAGS_DECOMPRESSOR := $(CLANG_FLAGS) -m64 -D__ASSEMBLY__
@@ -146,7 +146,7 @@ KBUILD_IMAGE	:= $(boot)/bzImage
 install:
 	$(Q)$(MAKE) $(build)=$(boot) $@
 
-bzImage: vmlinux
+bzImage: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 zfcpdump:

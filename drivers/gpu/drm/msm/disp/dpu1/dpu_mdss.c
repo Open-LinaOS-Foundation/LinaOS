@@ -1,12 +1,12 @@
 /*
  * SPDX-License-Identifier: GPL-2.0
- * Copyright (c) 2018, The Linux Foundation
+ * Copyright (c) 2018, The LinaOS Foundation
  */
 
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdesc.h>
-#include <linux/irqchip/chained_irq.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqdesc.h>
+#include <linaos/irqchip/chained_irq.h>
 #include "dpu_kms.h"
 
 #define to_dpu_mdss(x) container_of(x, struct dpu_mdss, base)

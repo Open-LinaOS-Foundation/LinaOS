@@ -6,8 +6,8 @@
  * Copyright 2014 Linaro Ltd.
  */
 
-#include <linux/debugfs.h>
-#include <linux/greybus.h>
+#include <linaos/debugfs.h>
+#include <linaos/greybus.h>
 
 static struct dentry *gb_debug_root;
 

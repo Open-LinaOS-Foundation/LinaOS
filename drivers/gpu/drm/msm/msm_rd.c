@@ -29,11 +29,11 @@
  * or shader programs (if not emitted inline in cmdstream).
  */
 
-#include <linux/circ_buf.h>
-#include <linux/debugfs.h>
-#include <linux/kfifo.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
+#include <linaos/circ_buf.h>
+#include <linaos/debugfs.h>
+#include <linaos/kfifo.h>
+#include <linaos/uaccess.h>
+#include <linaos/wait.h>
 
 #include <drm/drm_file.h>
 

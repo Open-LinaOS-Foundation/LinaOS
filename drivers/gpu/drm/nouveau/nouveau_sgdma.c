@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
-#include <linux/pagemap.h>
-#include <linux/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
 
 #include "nouveau_drv.h"
 #include "nouveau_mem.h"

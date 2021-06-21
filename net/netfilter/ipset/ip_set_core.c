@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linaos.nu>
  *                         Patrick Schaaf <bof@bof.de>
  * Copyright (C) 2003-2013 Jozsef Kadlecsik <kadlec@netfilter.org>
  */
 
 /* Kernel module for IP set management */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/ip.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/rculist.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ip.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/rculist.h>
 #include <net/netlink.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 
-#include <linux/netfilter.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/ipset/ip_set.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/nfnetlink.h>
+#include <linaos/netfilter/ipset/ip_set.h>
 
 static LIST_HEAD(ip_set_type_list);		/* all registered set types */
 static DEFINE_MUTEX(ip_set_type_mutex);		/* protects ip_set_type_list */

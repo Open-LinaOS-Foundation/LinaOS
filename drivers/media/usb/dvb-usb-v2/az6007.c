@@ -5,7 +5,7 @@
  * Copyright (c) Henry Wang <Henry.wang@AzureWave.com>
  *
  * This driver was made publicly available by Terratec, at:
- *	http://linux.terratec.de/files/TERRATEC_H7/20110323_TERRATEC_H7_Linux.tar.gz
+ *	http://linaos.terratec.de/files/TERRATEC_H7/20110323_TERRATEC_H7_LinaOS.tar.gz
  * The original driver's license is GPL, as declared with MODULE_LICENSE()
  *
  * Copyright (c) 2010-2012 Mauro Carvalho Chehab

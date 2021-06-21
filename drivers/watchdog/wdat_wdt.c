@@ -3,15 +3,15 @@
  * ACPI Hardware Watchdog (WDAT) driver.
  *
  * Copyright (C) 2016, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/watchdog.h>
+#include <linaos/acpi.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/watchdog.h>
 
 #define MAX_WDAT_ACTIONS ACPI_WDAT_ACTION_RESERVED
 
@@ -543,7 +543,7 @@ static struct platform_driver wdat_wdt_driver = {
 
 module_platform_driver(wdat_wdt_driver);
 
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_DESCRIPTION("ACPI Hardware Watchdog (WDAT) driver");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:wdat_wdt");

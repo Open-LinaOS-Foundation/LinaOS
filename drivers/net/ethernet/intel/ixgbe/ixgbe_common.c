@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 1999 - 2018 Intel Corporation. */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/netdevice.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/netdevice.h>
 
 #include "ixgbe.h"
 #include "ixgbe_common.h"

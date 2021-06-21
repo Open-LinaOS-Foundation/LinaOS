@@ -8,11 +8,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/msi.h>
-#include <linux/fsl/mc.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/msi.h>
+#include <linaos/fsl/mc.h>
 
 #include "fsl-mc-private.h"
 
@@ -77,7 +77,7 @@ static int __fsl_mc_device_remove(struct device *dev, void *data)
  * present in the DPRC in the MC.
  * @num_child_objects_in_mc: number of entries in obj_desc_array
  *
- * Synchronizes the state of the Linux bus driver with the actual state of
+ * Synchronizes the state of the LinaOS bus driver with the actual state of
  * the MC by removing devices that represent MC objects that have
  * been dynamically removed in the physical DPRC.
  */
@@ -87,7 +87,7 @@ void dprc_remove_devices(struct fsl_mc_device *mc_bus_dev,
 {
 	if (num_child_objects_in_mc != 0) {
 		/*
-		 * Remove child objects that are in the DPRC in Linux,
+		 * Remove child objects that are in the DPRC in LinaOS,
 		 * but not in the MC:
 		 */
 		struct fsl_mc_child_objs objs;
@@ -99,7 +99,7 @@ void dprc_remove_devices(struct fsl_mc_device *mc_bus_dev,
 	} else {
 		/*
 		 * There are no child objects for this DPRC in the MC.
-		 * So, remove all the child devices from Linux:
+		 * So, remove all the child devices from LinaOS:
 		 */
 		device_for_each_child(&mc_bus_dev->dev, NULL,
 				      __fsl_mc_device_remove);
@@ -168,7 +168,7 @@ static void fsl_mc_obj_device_add(struct fsl_mc_device *mc_bus_dev,
 	struct fsl_mc_device *child_dev;
 
 	/*
-	 * Check if device is already known to Linux:
+	 * Check if device is already known to LinaOS:
 	 */
 	child_dev = fsl_mc_device_lookup(obj_desc, mc_bus_dev);
 	if (child_dev) {
@@ -190,7 +190,7 @@ static void fsl_mc_obj_device_add(struct fsl_mc_device *mc_bus_dev,
  * present in the physical DPRC.
  * @num_child_objects_in_mc: number of entries in obj_desc_array
  *
- * Synchronizes the state of the Linux bus driver with the actual
+ * Synchronizes the state of the LinaOS bus driver with the actual
  * state of the MC by adding objects that have been newly discovered
  * in the physical DPRC.
  */
@@ -226,7 +226,7 @@ static void dprc_add_new_devices(struct fsl_mc_device *mc_bus_dev,
  * otherwise the interrupt allocation is delayed
  *
  * Detects objects added and removed from a DPRC and synchronizes the
- * state of the Linux bus driver, MC by adding and removing
+ * state of the LinaOS bus driver, MC by adding and removing
  * devices accordingly.
  * Two types of devices can be found in a DPRC: allocatable objects (e.g.,
  * dpbp, dpmcp) and non-allocatable devices (e.g., dprc, dpni).
@@ -347,11 +347,11 @@ int dprc_scan_objects(struct fsl_mc_device *mc_bus_dev,
 }
 
 /**
- * dprc_scan_container - Scans a physical DPRC and synchronizes Linux bus state
+ * dprc_scan_container - Scans a physical DPRC and synchronizes LinaOS bus state
  *
  * @mc_bus_dev: pointer to the fsl-mc device that represents a DPRC object
  *
- * Scans the physical DPRC and synchronizes the state of the Linux
+ * Scans the physical DPRC and synchronizes the state of the LinaOS
  * bus driver with the actual state of the MC by adding and removing
  * devices as appropriate.
  */
@@ -829,7 +829,7 @@ EXPORT_SYMBOL_GPL(dprc_cleanup);
  *
  * @mc_dev: Pointer to fsl-mc device representing the DPRC
  *
- * It removes the DPRC's child objects from Linux (not from the MC) and
+ * It removes the DPRC's child objects from LinaOS (not from the MC) and
  * closes the DPRC device in the MC.
  * It tears down the interrupts that were configured for the DPRC device.
  * It destroys the interrupt pool associated with this MC bus.

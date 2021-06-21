@@ -14,21 +14,21 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/cpu.h>
-#include <linux/audit.h>
-#include <linux/rhashtable.h>
-#include <linux/if_tunnel.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/kmod.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/workqueue.h>
+#include <linaos/notifier.h>
+#include <linaos/netdevice.h>
+#include <linaos/netfilter.h>
+#include <linaos/module.h>
+#include <linaos/cache.h>
+#include <linaos/cpu.h>
+#include <linaos/audit.h>
+#include <linaos/rhashtable.h>
+#include <linaos/if_tunnel.h>
 #include <net/dst.h>
 #include <net/flow.h>
 #include <net/xfrm.h>
@@ -3952,7 +3952,7 @@ EXPORT_SYMBOL(xfrm_if_unregister_cb);
 static int __net_init xfrm_statistics_init(struct net *net)
 {
 	int rv;
-	net->mib.xfrm_statistics = alloc_percpu(struct linux_xfrm_mib);
+	net->mib.xfrm_statistics = alloc_percpu(struct linaos_xfrm_mib);
 	if (!net->mib.xfrm_statistics)
 		return -ENOMEM;
 	rv = xfrm_proc_init(net);

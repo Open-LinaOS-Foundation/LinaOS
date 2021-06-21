@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/mm/kmap.c
+ *  linaos/arch/m68k/mm/kmap.c
  *
  *  Copyright (C) 1997 Roman Hodek
  *
@@ -8,13 +8,13 @@
  *	     used by other architectures		/Roman Zippel
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/setup.h>
 #include <asm/segment.h>

@@ -8,15 +8,15 @@
  *      and others.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nubus.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/nubus.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 #include <asm/setup.h>
 #include <asm/page.h>
 #include <asm/hwtest.h>

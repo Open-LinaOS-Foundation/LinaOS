@@ -7,19 +7,19 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/mfd/da9052/da9052.h>
+#include <linaos/mfd/da9052/reg.h>
+#include <linaos/regulator/consumer.h>
 
 struct da9052_hwmon {
 	struct da9052		*da9052;

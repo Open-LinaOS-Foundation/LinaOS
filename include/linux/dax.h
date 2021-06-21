@@ -2,9 +2,9 @@
 #ifndef _LINUX_DAX_H
 #define _LINUX_DAX_H
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/radix-tree.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/radix-tree.h>
 
 /* Flag for synchronous flush */
 #define DAXDEV_F_SYNC (1UL << 0)

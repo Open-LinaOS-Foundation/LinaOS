@@ -3,7 +3,7 @@
 #define __ASM_SH_SE7724_H
 
 /*
- * linux/include/asm-sh/se7724.h
+ * linaos/include/asm-sh/se7724.h
  *
  * Copyright (C) 2009 Renesas Solutions Corp.
  *
@@ -14,7 +14,7 @@
  * Based on se7722.h
  * Copyright (C) 2007  Nobuhiro Iwamatsu
  */
-#include <linux/sh_intc.h>
+#include <linaos/sh_intc.h>
 #include <asm/addrspace.h>
 
 /* SH Eth */

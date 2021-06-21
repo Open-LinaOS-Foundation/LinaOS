@@ -6,22 +6,22 @@
  * Chrome OS EC.
  */
 
-#include <linux/acpi.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_data/cros_usbpd_notify.h>
-#include <linux/platform_device.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/pd_vdo.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/typec_altmode.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_tbt.h>
-#include <linux/usb/role.h>
+#include <linaos/acpi.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_data/cros_usbpd_notify.h>
+#include <linaos/platform_device.h>
+#include <linaos/usb/pd.h>
+#include <linaos/usb/pd_vdo.h>
+#include <linaos/usb/typec.h>
+#include <linaos/usb/typec_altmode.h>
+#include <linaos/usb/typec_dp.h>
+#include <linaos/usb/typec_mux.h>
+#include <linaos/usb/typec_tbt.h>
+#include <linaos/usb/role.h>
 
 #define DRV_NAME "cros-ec-typec"
 

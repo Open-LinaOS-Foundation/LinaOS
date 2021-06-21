@@ -8,10 +8,10 @@
 
 #include "ad5592r-base.h"
 
-#include <linux/bitops.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/bitops.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
 
 #define AD5593R_MODE_CONF		(0 << 4)
 #define AD5593R_MODE_DAC_WRITE		(1 << 4)

@@ -1,7 +1,7 @@
 
 /*
  *	The firmware this driver downloads into the Localtalk card is a
- *	separate program and is not GPL'd source code, even though the Linux
+ *	separate program and is not GPL'd source code, even though the LinaOS
  *	side driver and the routine that loads this data into the card are.
  *	
  *	It is taken from the COPS SDK and is under the following license
@@ -18,7 +18,7 @@
  */
 
 
-/*      cops_ffdrv.h: LocalTalk driver firmware dump for Linux.
+/*      cops_ffdrv.h: LocalTalk driver firmware dump for LinaOS.
  *
  *      Authors:
  *      - Jay Schulist <jschlst@samba.org>

@@ -15,18 +15,18 @@
  * it under the terms of the GNU General Public License version 2 as
  * published by the Free Software Foundation.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/cdev.h>
-#include <linux/vfio.h>
-#include <linux/iommu.h>
-#include <linux/sysfs.h>
-#include <linux/mdev.h>
-#include <linux/pci.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/cdev.h>
+#include <linaos/vfio.h>
+#include <linaos/iommu.h>
+#include <linaos/sysfs.h>
+#include <linaos/mdev.h>
+#include <linaos/pci.h>
 #include <drm/drm_fourcc.h>
 #include "mdpy-defs.h"
 

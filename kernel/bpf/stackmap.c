@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2016 Facebook
  */
-#include <linux/bpf.h>
-#include <linux/jhash.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/stacktrace.h>
-#include <linux/perf_event.h>
-#include <linux/irq_work.h>
-#include <linux/btf_ids.h>
-#include <linux/buildid.h>
+#include <linaos/bpf.h>
+#include <linaos/jhash.h>
+#include <linaos/filter.h>
+#include <linaos/kernel.h>
+#include <linaos/stacktrace.h>
+#include <linaos/perf_event.h>
+#include <linaos/irq_work.h>
+#include <linaos/btf_ids.h>
+#include <linaos/buildid.h>
 #include "percpu_freelist.h"
 
 #define STACK_CREATE_FLAG_MASK					\

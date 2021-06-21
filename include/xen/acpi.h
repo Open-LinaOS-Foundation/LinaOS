@@ -8,7 +8,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,12 +33,12 @@
 #ifndef _XEN_ACPI_H
 #define _XEN_ACPI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef CONFIG_XEN_DOM0
 #include <asm/xen/hypervisor.h>
 #include <xen/xen.h>
-#include <linux/acpi.h>
+#include <linaos/acpi.h>
 
 int xen_acpi_notify_hypervisor_sleep(u8 sleep_state,
 				     u32 pm1a_cnt, u32 pm1b_cnd);

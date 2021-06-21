@@ -4,24 +4,24 @@
 #ifndef _LINUX_BPF_H
 #define _LINUX_BPF_H 1
 
-#include <uapi/linux/bpf.h>
+#include <uapi/linaos/bpf.h>
 
-#include <linux/workqueue.h>
-#include <linux/file.h>
-#include <linux/percpu.h>
-#include <linux/err.h>
-#include <linux/rbtree_latch.h>
-#include <linux/numa.h>
-#include <linux/mm_types.h>
-#include <linux/wait.h>
-#include <linux/refcount.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/kallsyms.h>
-#include <linux/capability.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/percpu-refcount.h>
+#include <linaos/workqueue.h>
+#include <linaos/file.h>
+#include <linaos/percpu.h>
+#include <linaos/err.h>
+#include <linaos/rbtree_latch.h>
+#include <linaos/numa.h>
+#include <linaos/mm_types.h>
+#include <linaos/wait.h>
+#include <linaos/refcount.h>
+#include <linaos/mutex.h>
+#include <linaos/module.h>
+#include <linaos/kallsyms.h>
+#include <linaos/capability.h>
+#include <linaos/sched/mm.h>
+#include <linaos/slab.h>
+#include <linaos/percpu-refcount.h>
 
 struct bpf_verifier_env;
 struct bpf_verifier_log;
@@ -174,7 +174,7 @@ struct bpf_map {
 	struct mem_cgroup *memcg;
 #endif
 	char name[BPF_OBJ_NAME_LEN];
-	u32 btf_vmlinux_value_type_id;
+	u32 btf_vmlinaos_value_type_id;
 	bool bypass_spec_v1;
 	bool frozen; /* write-once; write-protected by freeze_mutex */
 	/* 22 bytes hole */
@@ -253,7 +253,7 @@ static inline bool bpf_map_offload_neutral(const struct bpf_map *map)
 
 static inline bool bpf_map_support_seq_show(const struct bpf_map *map)
 {
-	return (map->btf_value_type_id || map->btf_vmlinux_value_type_id) &&
+	return (map->btf_value_type_id || map->btf_vmlinaos_value_type_id) &&
 		map->ops->map_seq_show_elem;
 }
 
@@ -1260,7 +1260,7 @@ extern const struct file_operations bpf_iter_fops;
 #define BPF_MAP_TYPE(_id, _ops) \
 	extern const struct bpf_map_ops _ops;
 #define BPF_LINK_TYPE(_id, _name)
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_MAP_TYPE
 #undef BPF_LINK_TYPE
@@ -1486,7 +1486,7 @@ int bpf_check(struct bpf_prog **fp, union bpf_attr *attr,
 void bpf_patch_call_args(struct bpf_insn *insn, u32 stack_depth);
 #endif
 
-struct btf *bpf_get_btf_vmlinux(void);
+struct btf *bpf_get_btf_vmlinaos(void);
 
 /* Map specifics */
 struct xdp_buff;

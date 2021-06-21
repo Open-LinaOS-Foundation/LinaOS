@@ -11,7 +11,7 @@ February 14th 2006
    Several other Avermedia devices are supported. For a more
    broader and updated content about that, please check:
 
-   https://linuxtv.org/wiki/index.php/AVerMedia
+   https://linaostv.org/wiki/index.php/AVerMedia
 
 The Avermedia DVB-T
 ~~~~~~~~~~~~~~~~~~~
@@ -25,7 +25,7 @@ The Avermedia DVB-T is a budget PCI DVB card. It has 3 inputs:
 The  RF  Tuner  Input  is the input to the tuner module of the
 card.  The  Tuner  is  otherwise known as the "Frontend" . The
 Frontend of the Avermedia DVB-T is a Microtune 7202D. A timely
-post  to  the  linux-dvb  mailing  list  ascertained  that the
+post  to  the  linaos-dvb  mailing  list  ascertained  that the
 Microtune  7202D  is  supported  by the sp887x driver which is
 found in the dvb-hw CVS module.
 

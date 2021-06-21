@@ -11,8 +11,8 @@
 #ifndef NET_9P_CLIENT_H
 #define NET_9P_CLIENT_H
 
-#include <linux/utsname.h>
-#include <linux/idr.h>
+#include <linaos/utsname.h>
+#include <linaos/idr.h>
 
 /* Number of requests per row */
 #define P9_ROW_MAXTAG 255

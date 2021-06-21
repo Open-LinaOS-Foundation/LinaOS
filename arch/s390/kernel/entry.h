@@ -2,9 +2,9 @@
 #ifndef _ENTRY_H
 #define _ENTRY_H
 
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/signal.h>
+#include <linaos/percpu.h>
+#include <linaos/types.h>
+#include <linaos/signal.h>
 #include <asm/ptrace.h>
 #include <asm/idle.h>
 

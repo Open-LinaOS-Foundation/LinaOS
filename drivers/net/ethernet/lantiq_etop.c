@@ -4,27 +4,27 @@
  *   Copyright (C) 2011 John Crispin <blogic@openwrt.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/uaccess.h>
-#include <linux/in.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/platform_device.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/uaccess.h>
+#include <linaos/in.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/phy.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/skbuff.h>
+#include <linaos/mm.h>
+#include <linaos/platform_device.h>
+#include <linaos/ethtool.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/module.h>
 
 #include <asm/checksum.h>
 

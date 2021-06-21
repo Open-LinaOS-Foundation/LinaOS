@@ -4,7 +4,7 @@
  * Author: Andrew Scull <ascull@google.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/assembler.h>
 #include <asm/kvm_asm.h>

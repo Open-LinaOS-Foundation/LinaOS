@@ -8,8 +8,8 @@
 #ifndef EF4_IO_H
 #define EF4_IO_H
 
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 
 /**************************************************************************
  *

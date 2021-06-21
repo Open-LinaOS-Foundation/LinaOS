@@ -5,8 +5,8 @@
 #ifndef __LINUX_ARM_SMCCC_H
 #define __LINUX_ARM_SMCCC_H
 
-#include <linux/init.h>
-#include <uapi/linux/const.h>
+#include <linaos/init.h>
+#include <uapi/linaos/const.h>
 
 /*
  * This file provides common defines for ARM SMC Calling Convention as
@@ -185,8 +185,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <linaos/linkage.h>
+#include <linaos/types.h>
 
 enum arm_smccc_conduit {
 	SMCCC_CONDUIT_NONE,

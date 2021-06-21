@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * CXL Flash Device Driver
  *
- * Written by: Manoj N. Kumar <manoj@linux.vnet.ibm.com>, IBM Corporation
- *             Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Manoj N. Kumar <manoj@linaos.vnet.ibm.com>, IBM Corporation
+ *             Matthew R. Ochs <mrochs@linaos.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2015 IBM Corporation
  *
@@ -16,7 +16,7 @@
 #ifndef _CXLFLASH_IOCTL_H
 #define _CXLFLASH_IOCTL_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Structure and definitions for all CXL Flash ioctls

@@ -4,12 +4,12 @@
 /*  IBM System i and System p Virtual NIC Device Driver                   */
 /*  Copyright (C) 2014 IBM Corp.                                          */
 /*  Santiago Leon (santi_leon@yahoo.com)                                  */
-/*  Thomas Falcon (tlfalcon@linux.vnet.ibm.com)                           */
-/*  John Allen (jallen@linux.vnet.ibm.com)                                */
+/*  Thomas Falcon (tlfalcon@linaos.vnet.ibm.com)                           */
+/*  John Allen (jallen@linaos.vnet.ibm.com)                                */
 /*                                                                        */
 /*                                                                        */
 /* This module contains the implementation of a virtual ethernet device   */
-/* for use with IBM i/pSeries LPAR Linux.  It utilizes the logical LAN    */
+/* for use with IBM i/pSeries LPAR LinaOS.  It utilizes the logical LAN    */
 /* option of the RS/6000 Platform Architecture to interface with virtual */
 /* ethernet NICs that are presented to the partition by the hypervisor.   */
 /*                                                                        */

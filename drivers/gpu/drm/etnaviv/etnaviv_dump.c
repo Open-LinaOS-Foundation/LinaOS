@@ -3,8 +3,8 @@
  * Copyright (C) 2015-2018 Etnaviv Project
  */
 
-#include <linux/devcoredump.h>
-#include <linux/moduleparam.h>
+#include <linaos/devcoredump.h>
+#include <linaos/moduleparam.h>
 
 #include "etnaviv_cmdbuf.h"
 #include "etnaviv_dump.h"

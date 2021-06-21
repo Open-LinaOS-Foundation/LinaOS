@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  *    Copyright IBM Corp. 2021
- *    Author(s): Vineeth Vijayan <vneethv@linux.ibm.com>
+ *    Author(s): Vineeth Vijayan <vneethv@linaos.ibm.com>
  */
 
 #ifndef CIO_CRW_INJECT_H

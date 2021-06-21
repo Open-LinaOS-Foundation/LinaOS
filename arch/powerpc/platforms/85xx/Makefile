@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the PowerPC 85xx linux kernel.
+# Makefile for the PowerPC 85xx linaos kernel.
 #
 obj-$(CONFIG_SMP) += smp.o
 obj-$(CONFIG_FSL_PMC)		  += mpc85xx_pm_ops.o

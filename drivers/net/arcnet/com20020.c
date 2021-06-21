@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 chipset support
+ * LinaOS ARCnet driver - COM20020 chipset support
  *
  * Written 1997 by David Woodhouse.
  * Written 1994-1999 by Avery Pennarun.
@@ -28,16 +28,16 @@
 
 #define pr_fmt(fmt) "arcnet:" KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
 
 #include "arcdevice.h"
 #include "com20020.h"

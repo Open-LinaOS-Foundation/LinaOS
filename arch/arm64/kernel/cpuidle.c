@@ -6,12 +6,12 @@
  * Author: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/psci.h>
+#include <linaos/acpi.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpu_pm.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/psci.h>
 
 #include <asm/cpuidle.h>
 #include <asm/cpu_ops.h>

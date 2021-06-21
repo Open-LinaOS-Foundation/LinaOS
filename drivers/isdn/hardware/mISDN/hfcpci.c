@@ -3,7 +3,7 @@
  *
  * hfcpci.c     low level driver for CCD's hfc-pci based cards
  *
- * Author     Werner Cornelius (werner@isdn4linux.de)
+ * Author     Werner Cornelius (werner@isdn4linaos.de)
  *            based on existing driver for CCD hfc ISA cards
  *            type approval valid for HFC-S PCI A based card
  *
@@ -30,12 +30,12 @@
  *	If the kernel uses 300 Hz, steps of about 26 samples are possible.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/mISDNhw.h>
+#include <linaos/slab.h>
 
 #include "hfc_pci.h"
 

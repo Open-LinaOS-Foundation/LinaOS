@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/bfind.c
+ *  linaos/fs/hfsplus/bfind.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,7 +9,7 @@
  * Search routines for btrees
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "hfsplus_fs.h"
 
 int hfs_find_init(struct hfs_btree *tree, struct hfs_find_data *fd)

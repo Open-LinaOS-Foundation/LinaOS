@@ -10,23 +10,23 @@
  * Copyright (C) 2015 Martin Sperl
  */
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spinlock.h>
 
 /* define polling limits */
 static unsigned int polling_limit_us = 30;

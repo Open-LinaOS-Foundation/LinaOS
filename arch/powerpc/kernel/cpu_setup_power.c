@@ -9,7 +9,7 @@
 
 #include <asm/reg.h>
 #include <asm/synch.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include <asm/cputable.h>
 #include <asm/cpu_setup_power.h>
 

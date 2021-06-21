@@ -13,7 +13,7 @@
 #ifndef __THERMAL_HWMON_H__
 #define __THERMAL_HWMON_H__
 
-#include <linux/thermal.h>
+#include <linaos/thermal.h>
 
 #ifdef CONFIG_THERMAL_HWMON
 int thermal_add_hwmon_sysfs(struct thermal_zone_device *tz);

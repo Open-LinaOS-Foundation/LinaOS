@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/module.h>
-#include <linux/version.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/debug.h>
-#include <linux/delay.h>
-#include <linux/kallsyms.h>
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linaos/module.h>
+#include <linaos/version.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/sched/debug.h>
+#include <linaos/delay.h>
+#include <linaos/kallsyms.h>
+#include <linaos/uaccess.h>
+#include <linaos/ptrace.h>
 
 #include <asm/elf.h>
 #include <abi/reg_ops.h>
@@ -17,7 +17,7 @@
 struct cpuinfo_csky cpu_data[NR_CPUS];
 
 #ifdef CONFIG_STACKPROTECTOR
-#include <linux/stackprotector.h>
+#include <linaos/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

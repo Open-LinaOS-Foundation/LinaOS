@@ -11,11 +11,11 @@ Setting up NFS/RDMA
 Overview
 ========
 
-This document describes how to install and setup the Linux NFS/RDMA client
+This document describes how to install and setup the LinaOS NFS/RDMA client
 and server software.
 
-The NFS/RDMA client was first included in Linux 2.6.24. The NFS/RDMA server
-was first included in the following release, Linux 2.6.25.
+The NFS/RDMA client was first included in LinaOS 2.6.24. The NFS/RDMA server
+was first included in the following release, LinaOS 2.6.25.
 
 In our testing, we have obtained excellent performance results (full 10Gbit
 wire bandwidth at minimal client CPU) under many workloads. The code passes
@@ -41,11 +41,11 @@ use with NFS/RDMA.
   Testing has been performed using several Mellanox-based IB cards, the
   Ammasso AMS1100 iWARP adapter, and the Chelsio cxgb3 iWARP adapter.
 
-- Install a Linux distribution and tools
+- Install a LinaOS distribution and tools
 
   The first kernel release to contain both the NFS/RDMA client and server was
-  Linux 2.6.25  Therefore, a distribution compatible with this and subsequent
-  Linux kernel release should be installed.
+  LinaOS 2.6.25  Therefore, a distribution compatible with this and subsequent
+  LinaOS kernel release should be installed.
 
   The procedures described in this document have been tested with
   distributions from Red Hat's Fedora Project (http://fedora.redhat.com/).
@@ -65,7 +65,7 @@ use with NFS/RDMA.
   If the version is less than 1.1.2 or the command does not exist,
   you should install the latest version of nfs-utils.
 
-  Download the latest package from: https://www.kernel.org/pub/linux/utils/nfs
+  Download the latest package from: https://www.kernel.org/pub/linaos/utils/nfs
 
   Uncompress the package and follow the installation instructions.
 
@@ -102,11 +102,11 @@ use with NFS/RDMA.
       nfs-utils on the server. Furthermore, only the mount.nfs command from
       nfs-utils-1.1.2 is needed on the client.
 
-- Install a Linux kernel with NFS/RDMA
+- Install a LinaOS kernel with NFS/RDMA
 
-  The NFS/RDMA client and server are both included in the mainline Linux
-  kernel version 2.6.25 and later. This and other versions of the Linux
-  kernel can be found at: https://www.kernel.org/pub/linux/kernel/
+  The NFS/RDMA client and server are both included in the mainline LinaOS
+  kernel version 2.6.25 and later. This and other versions of the LinaOS
+  kernel can be found at: https://www.kernel.org/pub/linaos/kernel/
 
   Download the sources and place them in an appropriate location.
 

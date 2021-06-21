@@ -6,13 +6,13 @@
 #ifndef INV_ICM42600_H_
 #define INV_ICM42600_H_
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/regmap.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm.h>
-#include <linux/iio/iio.h>
+#include <linaos/bits.h>
+#include <linaos/bitfield.h>
+#include <linaos/regmap.h>
+#include <linaos/mutex.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pm.h>
+#include <linaos/iio/iio.h>
 
 #include "inv_icm42600_buffer.h"
 

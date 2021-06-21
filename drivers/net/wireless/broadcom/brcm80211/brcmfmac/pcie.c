@@ -3,15 +3,15 @@
  * Copyright (c) 2014 Broadcom Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/bcma/bcma.h>
-#include <linux/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/sched.h>
 #include <asm/unaligned.h>
 
 #include <soc.h>

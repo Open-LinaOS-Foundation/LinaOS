@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/pcmcia/pxa2xx_lubbock.c
+ * linaos/drivers/pcmcia/pxa2xx_lubbock.c
  *
  * Author:	George Davis
  * Created:	Jan 10, 2002
  * Copyright:	MontaVista Software Inc.
  *
- * Originally based upon linux/drivers/pcmcia/sa1100_neponset.c
+ * Originally based upon linaos/drivers/pcmcia/sa1100_neponset.c
  *
  * Lubbock PCMCIA specific routines.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
 
 #include <mach/hardware.h>
 #include <asm/hardware/sa1111.h>

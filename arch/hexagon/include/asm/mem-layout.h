@@ -2,13 +2,13 @@
 /*
  * Memory layout definitions for the Hexagon architecture
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef _ASM_HEXAGON_MEM_LAYOUT_H
 #define _ASM_HEXAGON_MEM_LAYOUT_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 /*
  * Have to do this for ginormous numbers, else they get printed as

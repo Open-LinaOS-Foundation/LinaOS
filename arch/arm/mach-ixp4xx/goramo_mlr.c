@@ -4,15 +4,15 @@
  * Copyright (C) 2006-2009 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/hdlc.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/platform_data/wan_ixp4xx_hss.h>
-#include <linux/serial_8250.h>
+#include <linaos/delay.h>
+#include <linaos/gpio.h>
+#include <linaos/hdlc.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/platform_data/wan_ixp4xx_hss.h>
+#include <linaos/serial_8250.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>

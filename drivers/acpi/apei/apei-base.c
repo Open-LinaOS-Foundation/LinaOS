@@ -18,16 +18,16 @@
  *	Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/kref.h>
-#include <linux/rculist.h>
-#include <linux/interrupt.h>
-#include <linux/debugfs.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/acpi.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/kref.h>
+#include <linaos/rculist.h>
+#include <linaos/interrupt.h>
+#include <linaos/debugfs.h>
 #include <asm/unaligned.h>
 
 #include "apei-internal.h"

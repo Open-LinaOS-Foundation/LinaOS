@@ -5,17 +5,17 @@
  * Copyright (c) 2015 ROCKCHIP, Co. Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/err.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/of_address.h>
-#include <linux/of_clk.h>
-#include <linux/of_platform.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/err.h>
+#include <linaos/pm_clock.h>
+#include <linaos/pm_domain.h>
+#include <linaos/of_address.h>
+#include <linaos/of_clk.h>
+#include <linaos/of_platform.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 #include <dt-bindings/power/px30-power.h>
 #include <dt-bindings/power/rk3036-power.h>
 #include <dt-bindings/power/rk3066-power.h>

@@ -8,8 +8,8 @@
 #ifndef _LINUX_CUDA_H
 #define _LINUX_CUDA_H
 
-#include <linux/rtc.h>
-#include <uapi/linux/cuda.h>
+#include <linaos/rtc.h>
+#include <uapi/linaos/cuda.h>
 
 
 extern int find_via_cuda(void);

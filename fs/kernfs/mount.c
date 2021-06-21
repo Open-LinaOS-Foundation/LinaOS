@@ -3,19 +3,19 @@
  * fs/kernfs/mount.c - kernfs mount implementation
  *
  * Copyright (c) 2001-3 Patrick Mochel
- * Copyright (c) 2007 SUSE Linux Products GmbH
+ * Copyright (c) 2007 SUSE LinaOS Products GmbH
  * Copyright (c) 2007, 2013 Tejun Heo <tj@kernel.org>
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/namei.h>
-#include <linux/seq_file.h>
-#include <linux/exportfs.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/init.h>
+#include <linaos/magic.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/namei.h>
+#include <linaos/seq_file.h>
+#include <linaos/exportfs.h>
 
 #include "kernfs-internal.h"
 

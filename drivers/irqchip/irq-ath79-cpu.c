@@ -10,9 +10,9 @@
  *  Parts of this file are based on Atheros' 2.6.15/2.6.31 BSP
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqchip.h>
-#include <linux/of.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip.h>
+#include <linaos/of.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mach-ath79/ath79.h>

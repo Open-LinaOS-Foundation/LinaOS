@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/kthread.h>
-#include <linux/sched/mm.h>
-#include <linux/uaccess.h>
-#include <uapi/linux/sched/types.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kthread.h>
+#include <linaos/sched/mm.h>
+#include <linaos/uaccess.h>
+#include <uapi/linaos/sched/types.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_file.h>
@@ -319,7 +319,7 @@ static int get_mdp_ver(struct platform_device *pdev)
 	return (int) (unsigned long) of_device_get_match_data(dev);
 }
 
-#include <linux/of_address.h>
+#include <linaos/of_address.h>
 
 bool msm_use_mmu(struct drm_device *dev)
 {

@@ -4,12 +4,12 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/reset-controller.h>
-#include <linux/smp.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/reset-controller.h>
+#include <linaos/smp.h>
 #include <asm/smp_plat.h>
 #include "common.h"
 

@@ -11,14 +11,14 @@
  *               Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 #include "fhci.h"
 
 /* maps the hardware error code to the USB error code */

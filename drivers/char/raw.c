@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/char/raw.c
+ * linaos/drivers/char/raw.c
  *
  * Front-end raw character devices.  These can be bound to any block
  * devices to provide genuine Unix raw character device semantics.
@@ -9,23 +9,23 @@
  * device are used to bind the other minor numbers to block devices.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/module.h>
-#include <linux/raw.h>
-#include <linux/capability.h>
-#include <linux/uio.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/gfp.h>
-#include <linux/compat.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/major.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/module.h>
+#include <linaos/raw.h>
+#include <linaos/capability.h>
+#include <linaos/uio.h>
+#include <linaos/cdev.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/gfp.h>
+#include <linaos/compat.h>
+#include <linaos/vmalloc.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 struct raw_device_data {
 	dev_t binding;
@@ -66,7 +66,7 @@ static int raw_open(struct inode *inode, struct file *filp)
 
 	pr_warn_ratelimited(
 		"process %s (pid %d) is using the deprecated raw device\n"
-		"support will be removed in Linux 5.14.\n",
+		"support will be removed in LinaOS 5.14.\n",
 		current->comm, current->pid);
 
 	mutex_lock(&raw_mutex);

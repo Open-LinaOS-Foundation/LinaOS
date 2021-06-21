@@ -8,17 +8,17 @@
  *	   Feng Kan <fkan@apm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/hw_random.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/timer.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/hw_random.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
+#include <linaos/timer.h>
 
 #define RNG_MAX_DATUM			4
 #define MAX_TRY				100

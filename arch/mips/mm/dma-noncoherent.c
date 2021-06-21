@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2000  Ani Joshi <ajoshi@unixbox.com>
- * Copyright (C) 2000, 2001, 06	 Ralf Baechle <ralf@linux-mips.org>
+ * Copyright (C) 2000, 2001, 06	 Ralf Baechle <ralf@linaos-mips.org>
  * swiped from i386, and cloned for MIPS by Geert, polished by Ralf.
  */
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/highmem.h>
+#include <linaos/dma-direct.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/highmem.h>
 
 #include <asm/cache.h>
 #include <asm/cpu-type.h>
@@ -17,7 +17,7 @@
  * fill random cachelines with stale data at any time, requiring an extra
  * flush post-DMA.
  *
- * Warning on the terminology - Linux calls an uncached area coherent;  MIPS
+ * Warning on the terminology - LinaOS calls an uncached area coherent;  MIPS
  * terminology calls memory areas with hardware maintained coherency coherent.
  *
  * Note that the R14000 and R16000 should also be checked for in this condition.

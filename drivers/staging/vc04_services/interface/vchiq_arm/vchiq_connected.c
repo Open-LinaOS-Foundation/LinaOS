@@ -3,8 +3,8 @@
 
 #include "vchiq_connected.h"
 #include "vchiq_core.h"
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 #define  MAX_CALLBACKS  10
 

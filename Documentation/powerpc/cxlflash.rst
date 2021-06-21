@@ -15,7 +15,7 @@ Introduction
     be mapped to the device's memory (IOMMU bypass) nor does it require
     memory to be pinned.
 
-    On Linux, Coherent Accelerator (CXL) kernel services present CAPI
+    On LinaOS, Coherent Accelerator (CXL) kernel services present CAPI
     devices as a PCI device by implementing a virtual PCI host bridge.
     This abstraction simplifies the infrastructure and programming
     model, allowing for drivers to look similar to other native PCI
@@ -401,7 +401,7 @@ HT_CXLFLASH_LUN_PROVISION
     to a space issue, the target port can be queried for its current LUN
     geometry.
 
-    To remove a LUN, the device must first be disassociated from the Linux
+    To remove a LUN, the device must first be disassociated from the LinaOS
     SCSI subsystem. The LUN deletion can then be initiated by specifying a
     target port and LUN ID. Upon success, the LUN geometry associated with
     the port will be updated to reflect new number of provisioned LUNs and

@@ -6,16 +6,16 @@
  *
  * Conversion to hwmon from IIO done by Jonathan Cameron <jic23@cam.ac.uk>
  */
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/bitops.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
+#include <linaos/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
+#include <linaos/bitops.h>
 
 /*
  * AD7314 temperature masks

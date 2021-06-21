@@ -4,13 +4,13 @@
  *
  * Copyright 2015 Álvaro Fernández Rojas <noltari@gmail.com>
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
 
 #define BCM6358_REG_MODE		0x0
 #define BCM6358_REG_CTRL		0x4

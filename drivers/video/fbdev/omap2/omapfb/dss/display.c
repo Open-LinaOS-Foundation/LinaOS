@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/display.c
+ * linaos/drivers/video/omap2/dss/display.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,11 +11,11 @@
 
 #define DSS_SUBSYS_NAME "DISPLAY"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
 
 #include <video/omapfb_dss.h>
 #include "dss.h"

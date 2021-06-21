@@ -2,7 +2,7 @@
 #ifndef __LINUX_KVM_PARA_H
 #define __LINUX_KVM_PARA_H
 
-#include <uapi/linux/kvm_para.h>
+#include <uapi/linaos/kvm_para.h>
 
 
 static inline bool kvm_para_has_feature(unsigned int feature)

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPI_NFNETLINK_H
 #define _UAPI_NFNETLINK_H
-#include <linux/types.h>
-#include <linux/netfilter/nfnetlink_compat.h>
+#include <linaos/types.h>
+#include <linaos/netfilter/nfnetlink_compat.h>
 
 enum nfnetlink_groups {
 	NFNLGRP_NONE,

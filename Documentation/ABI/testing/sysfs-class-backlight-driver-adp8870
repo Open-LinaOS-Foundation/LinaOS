@@ -9,7 +9,7 @@ What:		/sys/class/backlight/<backlight>/l4_indoor_max
 What:		/sys/class/backlight/<backlight>/l5_dark_max
 Date:		May 2011
 KernelVersion:	3.0
-Contact:	device-drivers-devel@blackfin.uclinux.org
+Contact:	device-drivers-devel@blackfin.uclinaos.org
 Description:
 		Control the maximum brightness for <ambient light zone>
 		on this <backlight>. Values are between 0 and 127. This file
@@ -23,7 +23,7 @@ What:		/sys/class/backlight/<backlight>/l4_indoor_dim
 What:		/sys/class/backlight/<backlight>/l5_dark_dim
 Date:		May 2011
 KernelVersion:	3.0
-Contact:	device-drivers-devel@blackfin.uclinux.org
+Contact:	device-drivers-devel@blackfin.uclinaos.org
 Description:
 		Control the dim brightness for <ambient light zone>
 		on this <backlight>. Values are between 0 and 127, typically

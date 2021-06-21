@@ -32,9 +32,9 @@
 
 		power {
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			label = "GPIO Key Power";
-			linux,input-type = <1>;
+			linaos,input-type = <1>;
 			wakeup-source;
 			debounce-interval = <100>;
 		};

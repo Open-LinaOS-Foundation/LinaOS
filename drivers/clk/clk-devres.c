@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/gfp.h>
 
 static void devm_clk_release(struct device *dev, void *res)
 {

@@ -2,13 +2,13 @@
  * \file ati_pcigart.c
  * ATI PCI GART support
  *
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Gareth Hughes <gareth@valinaos.com>
  */
 
 /*
- * Created: Wed Dec 13 21:52:19 2000 by gareth@valinux.com
+ * Created: Wed Dec 13 21:52:19 2000 by gareth@valinaos.com
  *
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -31,8 +31,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_legacy.h>

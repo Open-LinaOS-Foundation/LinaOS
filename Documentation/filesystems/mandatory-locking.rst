@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =====================================================
-Mandatory File Locking For The Linux Operating System
+Mandatory File Locking For The LinaOS Operating System
 =====================================================
 
 		Andy Walker <andy@lysaker.kvaerner.no>
@@ -13,7 +13,7 @@ Mandatory File Locking For The Linux Operating System
 0. Why you should avoid mandatory locking
 -----------------------------------------
 
-The Linux implementation is prey to a number of difficult-to-fix race
+The LinaOS implementation is prey to a number of difficult-to-fix race
 conditions which in practice make it not dependable:
 
 	- The write system call checks for a mandatory lock only once
@@ -96,7 +96,7 @@ by these three reference systems. There are many anomalies.
 All the reference systems reject all calls to open() for a file on which
 another process has outstanding mandatory locks. This is in direct
 contravention of SVID 3, which states that only calls to open() with the
-O_TRUNC flag set should be rejected. The Linux implementation follows the SVID
+O_TRUNC flag set should be rejected. The LinaOS implementation follows the SVID
 definition, which is the "Right Thing", since only calls with O_TRUNC can
 modify the contents of the file.
 

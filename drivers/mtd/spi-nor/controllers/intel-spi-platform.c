@@ -3,12 +3,12 @@
  * Intel PCH/PCU SPI flash platform driver.
  *
  * Copyright (C) 2016, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@linaos.intel.com>
  */
 
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <linaos/ioport.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
 
 #include "intel-spi.h"
 
@@ -49,6 +49,6 @@ static struct platform_driver intel_spi_platform_driver = {
 module_platform_driver(intel_spi_platform_driver);
 
 MODULE_DESCRIPTION("Intel PCH/PCU SPI flash platform driver");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:intel-spi");

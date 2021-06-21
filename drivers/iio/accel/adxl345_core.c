@@ -7,11 +7,11 @@
  * Datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
 
 #include "adxl345.h"
 

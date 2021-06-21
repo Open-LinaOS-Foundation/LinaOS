@@ -7,15 +7,15 @@
 
 #define pr_fmt(fmt) "radix-mmu: " fmt
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/sched/mm.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/string_helpers.h>
-#include <linux/memory.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/sched/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/of_fdt.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/string_helpers.h>
+#include <linaos/memory.h>
 
 #include <asm/pgalloc.h>
 #include <asm/mmu_context.h>
@@ -1073,7 +1073,7 @@ void radix__ptep_modify_prot_commit(struct vm_area_struct *vma,
 	/*
 	 * To avoid NMMU hang while relaxing access we need to flush the tlb before
 	 * we set the new value. We need to do this only for radix, because hash
-	 * translation does flush when updating the linux pte.
+	 * translation does flush when updating the linaos pte.
 	 */
 	if (is_pte_rw_upgrade(pte_val(old_pte), pte_val(pte)) &&
 	    (atomic_read(&mm->context.copros) > 0))

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #include <stdio.h>
@@ -10,7 +10,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <signal.h>
-#include <linux/falloc.h>
+#include <linaos/falloc.h>
 #include <sys/ioctl.h>
 #include <sys/mount.h>
 #include <sys/socket.h>

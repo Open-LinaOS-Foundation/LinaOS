@@ -12,7 +12,7 @@
 #define _ASM_SGI_SN0_HUBNI_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <linaos/types.h>
 #endif
 
 /*

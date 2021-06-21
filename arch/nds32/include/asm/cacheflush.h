@@ -4,7 +4,7 @@
 #ifndef __NDS32_CACHEFLUSH_H__
 #define __NDS32_CACHEFLUSH_H__
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #define PG_dcache_dirty PG_arch_1
 

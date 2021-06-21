@@ -9,15 +9,15 @@
  * Send feedback to <kristen.c.accardi@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/acpi.h>
-#include <linux/pci-acpi.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/pci_hotplug.h>
+#include <linaos/acpi.h>
+#include <linaos/pci-acpi.h>
+#include <linaos/slab.h>
 
 #define MY_NAME	"acpi_pcihp"
 

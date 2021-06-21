@@ -1,7 +1,7 @@
 /*
  * Device Tree Source for AMCC Sequoia
  *
- * Based on Bamboo code by Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Based on Bamboo code by Josh Boyer <jwboyer@linaos.vnet.ibm.com>
  * Copyright (c) 2006, 2007 IBM Corp.
  *
  * FIXME: Draft only!

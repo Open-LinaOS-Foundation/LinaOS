@@ -5,13 +5,13 @@
  *  Copyright (C) 2014 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon/clps711x.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/syscon/clps711x.h>
 
 #include <dt-bindings/clock/clps711x-clock.h>
 

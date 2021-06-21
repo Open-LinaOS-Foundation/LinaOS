@@ -6,9 +6,9 @@
 #if !defined(_TRACE_PREEMPTIRQ_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_PREEMPTIRQ_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
-#include <linux/string.h>
+#include <linaos/ktime.h>
+#include <linaos/tracepoint.h>
+#include <linaos/string.h>
 #include <asm/sections.h>
 
 DECLARE_EVENT_CLASS(preemptirq_template,

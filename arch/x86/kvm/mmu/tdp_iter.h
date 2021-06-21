@@ -3,7 +3,7 @@
 #ifndef __KVM_X86_MMU_TDP_ITER_H
 #define __KVM_X86_MMU_TDP_ITER_H
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include "mmu.h"
 

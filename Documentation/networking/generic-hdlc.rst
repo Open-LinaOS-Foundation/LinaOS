@@ -15,7 +15,7 @@ Generic HDLC layer currently supports:
      interfaces can share a single PVC.
    - ARP support (no InARP support in the kernel - there is an
      experimental InARP user-space daemon available on:
-     http://www.kernel.org/pub/linux/utils/net/hdlc/).
+     http://www.kernel.org/pub/linaos/utils/net/hdlc/).
 
 2. raw HDLC - either IP (IPv4) interface or Ethernet device emulation
 3. Cisco HDLC
@@ -33,7 +33,7 @@ Make sure the hdlc.o and the hardware driver are loaded. It should
 create a number of "hdlc" (hdlc0 etc) network devices, one for each
 WAN port. You'll need the "sethdlc" utility, get it from:
 
-	http://www.kernel.org/pub/linux/utils/net/hdlc/
+	http://www.kernel.org/pub/linaos/utils/net/hdlc/
 
 Compile sethdlc.c utility::
 
@@ -167,4 +167,4 @@ Attaching this info to bug reports would be helpful. Anyway, let me know
 if you have problems using this.
 
 For patches and other info look at:
-<http://www.kernel.org/pub/linux/utils/net/hdlc/>.
+<http://www.kernel.org/pub/linaos/utils/net/hdlc/>.

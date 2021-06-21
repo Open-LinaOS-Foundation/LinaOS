@@ -4,26 +4,26 @@
  *
  * Copyright IBM Corporation, 2008
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@linaos.ibm.com>
  *
  * For detailed explanation of Read-Copy Update mechanism see -
  *		Documentation/RCU
  */
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/cpu.h>
-#include <linux/prefetch.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/completion.h>
+#include <linaos/interrupt.h>
+#include <linaos/notifier.h>
+#include <linaos/rcupdate_wait.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/mutex.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/time.h>
+#include <linaos/cpu.h>
+#include <linaos/prefetch.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 
 #include "rcu.h"
 

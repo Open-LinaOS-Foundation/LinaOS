@@ -5,18 +5,18 @@
  * Freescale DCU drm device driver
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/console.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/console.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

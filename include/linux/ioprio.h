@@ -2,9 +2,9 @@
 #ifndef IOPRIO_H
 #define IOPRIO_H
 
-#include <linux/sched.h>
-#include <linux/sched/rt.h>
-#include <linux/iocontext.h>
+#include <linaos/sched.h>
+#include <linaos/sched/rt.h>
+#include <linaos/iocontext.h>
 
 /*
  * Gives us 8 prio classes with 13-bits of data for each class

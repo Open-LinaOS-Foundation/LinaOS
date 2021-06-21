@@ -9,7 +9,7 @@
 #ifndef DIM2_OS62420_H
 #define	DIM2_OS62420_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct dim2_regs {
 	u32 MLBC0;       /* 0x00 */

@@ -6,7 +6,7 @@
  *
  * Based on the am35x "glue layer" code.
  *
- * This file is part of the Inventra Controller Driver for Linux.
+ * This file is part of the Inventra Controller Driver for LinaOS.
  *
  * musb_dsps.c will be a common file for all the TI DSPS platforms
  * such as dm64x, dm36x, dm35x, da8x, am35x and ti81x.
@@ -14,23 +14,23 @@
  * da8xx.c would be merged to this file after testing.
  */
 
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm_runtime.h>
-#include <linux/module.h>
-#include <linux/usb/usb_phy_generic.h>
-#include <linux/platform_data/usb-omap.h>
-#include <linux/sizes.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/usb/usb_phy_generic.h>
+#include <linaos/platform_data/usb-omap.h>
+#include <linaos/sizes.h>
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/usb/of.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/usb/of.h>
 
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 
 #include "musb_core.h"
 

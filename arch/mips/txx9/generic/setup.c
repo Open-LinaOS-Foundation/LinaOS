@@ -1,5 +1,5 @@
 /*
- * Based on linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on linaos/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * 2003-2005 (c) MontaVista Software, Inc.
@@ -9,25 +9,25 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/export.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/txx9/ndfmc.h>
-#include <linux/serial_core.h>
-#include <linux/mtd/physmap.h>
-#include <linux/leds.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/export.h>
+#include <linaos/clk-provider.h>
+#include <linaos/clkdev.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/txx9/ndfmc.h>
+#include <linaos/serial_core.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/leds.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
 #include <asm/bootinfo.h>
 #include <asm/idle.h>
 #include <asm/time.h>

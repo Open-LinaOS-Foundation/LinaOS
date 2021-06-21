@@ -1,29 +1,29 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Copyright (c) 2018 Facebook */
 
-#include <uapi/linux/btf.h>
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/bpf_perf_event.h>
-#include <uapi/linux/types.h>
-#include <linux/seq_file.h>
-#include <linux/compiler.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/anon_inodes.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/idr.h>
-#include <linux/sort.h>
-#include <linux/bpf_verifier.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/skmsg.h>
-#include <linux/perf_event.h>
-#include <linux/bsearch.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
+#include <uapi/linaos/btf.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/bpf_perf_event.h>
+#include <uapi/linaos/types.h>
+#include <linaos/seq_file.h>
+#include <linaos/compiler.h>
+#include <linaos/ctype.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/file.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/idr.h>
+#include <linaos/sort.h>
+#include <linaos/bpf_verifier.h>
+#include <linaos/btf.h>
+#include <linaos/btf_ids.h>
+#include <linaos/skmsg.h>
+#include <linaos/perf_event.h>
+#include <linaos/bsearch.h>
+#include <linaos/kobject.h>
+#include <linaos/sysfs.h>
 #include <net/sock.h>
 
 /* BTF (BPF Type Format) is the meta data format which describes
@@ -4343,7 +4343,7 @@ errout:
 
 extern char __weak __start_BTF[];
 extern char __weak __stop_BTF[];
-extern struct btf *btf_vmlinux;
+extern struct btf *btf_vmlinaos;
 
 #define BPF_MAP_TYPE(_id, _ops)
 #define BPF_LINK_TYPE(_id, _name)
@@ -4352,7 +4352,7 @@ static union {
 #define BPF_PROG_TYPE(_id, _name, prog_ctx_type, kern_ctx_type) \
 	prog_ctx_type _id##_prog; \
 	kern_ctx_type _id##_kern;
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 #undef BPF_PROG_TYPE
 	} *__t;
 	/* 't' is written once under lock. Read many times. */
@@ -4361,14 +4361,14 @@ static union {
 enum {
 #define BPF_PROG_TYPE(_id, _name, prog_ctx_type, kern_ctx_type) \
 	__ctx_convert##_id,
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 #undef BPF_PROG_TYPE
 	__ctx_convert_unused, /* to avoid empty enum in extreme .config */
 };
 static u8 bpf_ctx_convert_map[] = {
 #define BPF_PROG_TYPE(_id, _name, prog_ctx_type, kern_ctx_type) \
 	[_id] = __ctx_convert##_id,
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 #undef BPF_PROG_TYPE
 	0, /* avoid empty array */
 };
@@ -4387,7 +4387,7 @@ btf_get_prog_ctx_type(struct bpf_verifier_log *log, const struct btf *btf,
 
 	conv_struct = bpf_ctx_convert.t;
 	if (!conv_struct) {
-		bpf_log(log, "btf_vmlinux is malformed\n");
+		bpf_log(log, "btf_vmlinaos is malformed\n");
 		return NULL;
 	}
 	t = btf_type_by_id(btf, t->type);
@@ -4408,17 +4408,17 @@ btf_get_prog_ctx_type(struct bpf_verifier_log *log, const struct btf *btf,
 	}
 	/* prog_type is valid bpf program type. No need for bounds check. */
 	ctx_type = btf_type_member(conv_struct) + bpf_ctx_convert_map[prog_type] * 2;
-	/* ctx_struct is a pointer to prog_ctx_type in vmlinux.
+	/* ctx_struct is a pointer to prog_ctx_type in vmlinaos.
 	 * Like 'struct __sk_buff'
 	 */
-	ctx_struct = btf_type_by_id(btf_vmlinux, ctx_type->type);
+	ctx_struct = btf_type_by_id(btf_vmlinaos, ctx_type->type);
 	if (!ctx_struct)
 		/* should not happen */
 		return NULL;
-	ctx_tname = btf_name_by_offset(btf_vmlinux, ctx_struct->name_off);
+	ctx_tname = btf_name_by_offset(btf_vmlinaos, ctx_struct->name_off);
 	if (!ctx_tname) {
 		/* should not happen */
-		bpf_log(log, "Please fix kernel include/linux/bpf_types.h\n");
+		bpf_log(log, "Please fix kernel include/linaos/bpf_types.h\n");
 		return NULL;
 	}
 	/* only compare that prog's ctx type name is the same as
@@ -4433,25 +4433,25 @@ btf_get_prog_ctx_type(struct bpf_verifier_log *log, const struct btf *btf,
 	return ctx_type;
 }
 
-static const struct bpf_map_ops * const btf_vmlinux_map_ops[] = {
+static const struct bpf_map_ops * const btf_vmlinaos_map_ops[] = {
 #define BPF_PROG_TYPE(_id, _name, prog_ctx_type, kern_ctx_type)
 #define BPF_LINK_TYPE(_id, _name)
 #define BPF_MAP_TYPE(_id, _ops) \
 	[_id] = &_ops,
-#include <linux/bpf_types.h>
+#include <linaos/bpf_types.h>
 #undef BPF_PROG_TYPE
 #undef BPF_LINK_TYPE
 #undef BPF_MAP_TYPE
 };
 
-static int btf_vmlinux_map_ids_init(const struct btf *btf,
+static int btf_vmlinaos_map_ids_init(const struct btf *btf,
 				    struct bpf_verifier_log *log)
 {
 	const struct bpf_map_ops *ops;
 	int i, btf_id;
 
-	for (i = 0; i < ARRAY_SIZE(btf_vmlinux_map_ops); ++i) {
-		ops = btf_vmlinux_map_ops[i];
+	for (i = 0; i < ARRAY_SIZE(btf_vmlinaos_map_ops); ++i) {
+		ops = btf_vmlinaos_map_ops[i];
 		if (!ops || (!ops->map_btf_name && !ops->map_btf_id))
 			continue;
 		if (!ops->map_btf_name || !ops->map_btf_id) {
@@ -4468,7 +4468,7 @@ static int btf_vmlinux_map_ids_init(const struct btf *btf,
 	return 0;
 }
 
-static int btf_translate_to_vmlinux(struct bpf_verifier_log *log,
+static int btf_translate_to_vmlinaos(struct bpf_verifier_log *log,
 				     struct btf *btf,
 				     const struct btf_type *t,
 				     enum bpf_prog_type prog_type,
@@ -4486,7 +4486,7 @@ static int btf_translate_to_vmlinux(struct bpf_verifier_log *log,
 BTF_ID_LIST(bpf_ctx_convert_btf_id)
 BTF_ID(struct, bpf_ctx_convert)
 
-struct btf *btf_parse_vmlinux(void)
+struct btf *btf_parse_vmlinaos(void)
 {
 	struct btf_verifier_env *env = NULL;
 	struct bpf_verifier_log *log;
@@ -4510,7 +4510,7 @@ struct btf *btf_parse_vmlinux(void)
 	btf->data = __start_BTF;
 	btf->data_size = __stop_BTF - __start_BTF;
 	btf->kernel_btf = true;
-	snprintf(btf->name, sizeof(btf->name), "vmlinux");
+	snprintf(btf->name, sizeof(btf->name), "vmlinaos");
 
 	err = btf_parse_hdr(env);
 	if (err)
@@ -4526,11 +4526,11 @@ struct btf *btf_parse_vmlinux(void)
 	if (err)
 		goto errout;
 
-	/* btf_parse_vmlinux() runs under bpf_verifier_lock */
+	/* btf_parse_vmlinaos() runs under bpf_verifier_lock */
 	bpf_ctx_convert.t = btf_type_by_id(btf, bpf_ctx_convert_btf_id[0]);
 
 	/* find bpf map structs for map_ptr access checking */
-	err = btf_vmlinux_map_ids_init(btf, log);
+	err = btf_vmlinaos_map_ids_init(btf, log);
 	if (err < 0)
 		goto errout;
 
@@ -4563,7 +4563,7 @@ static struct btf *btf_parse_module(const char *module_name, const void *data, u
 	struct btf *btf = NULL, *base_btf;
 	int err;
 
-	base_btf = bpf_get_btf_vmlinux();
+	base_btf = bpf_get_btf_vmlinaos();
 	if (IS_ERR(base_btf))
 		return base_btf;
 	if (!base_btf)
@@ -4777,7 +4777,7 @@ bool btf_ctx_access(int off, int size, enum bpf_access_type type,
 
 		if (ctx_arg_info->offset == off) {
 			info->reg_type = ctx_arg_info->reg_type;
-			info->btf = btf_vmlinux;
+			info->btf = btf_vmlinaos;
 			info->btf_id = ctx_arg_info->btf_id;
 			return true;
 		}
@@ -4792,9 +4792,9 @@ bool btf_ctx_access(int off, int size, enum bpf_access_type type,
 		else
 			tgt_type = tgt_prog->type;
 
-		ret = btf_translate_to_vmlinux(log, btf, t, tgt_type, arg);
+		ret = btf_translate_to_vmlinaos(log, btf, t, tgt_type, arg);
 		if (ret > 0) {
-			info->btf = btf_vmlinux;
+			info->btf = btf_vmlinaos;
 			info->btf_id = ret;
 			return true;
 		} else {
@@ -5099,7 +5099,7 @@ int btf_struct_access(struct bpf_verifier_log *log, const struct btf *btf,
 /* Check that two BTF types, each specified as an BTF object + id, are exactly
  * the same. Trivial ID check is not enough due to module BTFs, because we can
  * end up with two different module BTFs, but IDs point to the common type in
- * vmlinux BTF.
+ * vmlinaos BTF.
  */
 static bool btf_types_are_same(const struct btf *btf1, u32 id1,
 			       const struct btf *btf2, u32 id2)
@@ -5456,7 +5456,7 @@ static int btf_check_func_arg_match(struct bpf_verifier_env *env,
 				reg_btf = reg->btf;
 				reg_ref_id = reg->btf_id;
 			} else if (reg2btf_ids[reg->type]) {
-				reg_btf = btf_vmlinux;
+				reg_btf = btf_vmlinaos;
 				reg_ref_id = *reg2btf_ids[reg->type];
 			} else {
 				bpf_log(log, "kernel function %s args#%d expected pointer to %s %s but R%d is not a pointer to btf_id\n",
@@ -5938,7 +5938,7 @@ bool btf_is_kernel(const struct btf *btf)
 
 bool btf_is_module(const struct btf *btf)
 {
-	return btf->kernel_btf && strcmp(btf->name, "vmlinux") != 0;
+	return btf->kernel_btf && strcmp(btf->name, "vmlinaos") != 0;
 }
 
 static int btf_id_cmp_func(const void *a, const void *b)

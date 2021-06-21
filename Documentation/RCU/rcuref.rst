@@ -7,7 +7,7 @@ Reference-count design for elements of lists/arrays protected by RCU
 
 Please note that the percpu-ref feature is likely your first
 stop if you need to combine reference counts and RCU.  Please see
-include/linux/percpu-refcount.h for more information.  However, in
+include/linaos/percpu-refcount.h for more information.  However, in
 those unusual cases where percpu-ref would consume too much memory,
 please read on.
 

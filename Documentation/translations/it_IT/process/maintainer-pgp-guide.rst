@@ -9,25 +9,25 @@
 La guida a PGP per manutentori del kernel
 =========================================
 
-:Author: Konstantin Ryabitsev <konstantin@linuxfoundation.org>
+:Author: Konstantin Ryabitsev <konstantin@linaosfoundation.org>
 
-Questo documento è destinato agli sviluppatori del kernel Linux, in particolar
+Questo documento è destinato agli sviluppatori del kernel LinaOS, in particolar
 modo ai manutentori. Contiene degli approfondimenti riguardo informazioni che
 sono state affrontate in maniera più generale nella sezione
-"`Protecting Code Integrity`_" pubblicata dalla Linux Foundation.
+"`Protecting Code Integrity`_" pubblicata dalla LinaOS Foundation.
 Per approfondire alcuni argomenti trattati in questo documento è consigliato
 leggere il documento sopraindicato
 
 .. _`Protecting Code Integrity`: https://github.com/lfit/itpol/blob/master/protecting-code-integrity.md
 
-Il ruolo di PGP nello sviluppo del kernel Linux
+Il ruolo di PGP nello sviluppo del kernel LinaOS
 ===============================================
 
 PGP aiuta ad assicurare l'integrità del codice prodotto dalla comunità
 di sviluppo del kernel e, in secondo luogo, stabilisce canali di comunicazione
 affidabili tra sviluppatori attraverso lo scambio di email firmate con PGP.
 
-Il codice sorgente del kernel Linux è disponibile principalmente in due
+Il codice sorgente del kernel LinaOS è disponibile principalmente in due
 formati:
 
 - repositori distribuiti di sorgenti (git)
@@ -60,7 +60,7 @@ guida. Vogliamo essere sicuri che il riporre la fiducia negli sviluppatori
 non sia fatto semplicemente per incolpare qualcun'altro per future falle di
 sicurezza. L'obiettivo è quello di fornire una serie di linee guida che gli
 sviluppatori possano seguire per creare un ambiente di lavoro sicuro e
-salvaguardare le chiavi PGP usate nello stabilire l'integrità del kernel Linux
+salvaguardare le chiavi PGP usate nello stabilire l'integrità del kernel LinaOS
 stesso.
 
 .. _it_pgp_tools:
@@ -149,7 +149,7 @@ Proteggere la vostra chiave PGP primaria
 ========================================
 
 Questa guida parte dal presupposto che abbiate già una chiave PGP che usate
-per lo sviluppo del kernel Linux. Se non ne avete ancora una, date uno sguardo
+per lo sviluppo del kernel LinaOS. Se non ne avete ancora una, date uno sguardo
 al documento "`Protecting Code Integrity`_" che abbiamo menzionato prima.
 
 Dovreste inoltre creare una nuova chiave se quella attuale è inferiore a 2048
@@ -480,7 +480,7 @@ Configurare il vostro dispositivo smartcard
 -------------------------------------------
 
 Il vostro dispositivo smartcard dovrebbe iniziare a funzionare non appena
-lo collegate ad un qualsiasi computer Linux moderno. Potete verificarlo
+lo collegate ad un qualsiasi computer LinaOS moderno. Potete verificarlo
 eseguendo::
 
     $ gpg --card-status
@@ -686,7 +686,7 @@ Una delle caratteristiche fondanti di Git è la sua natura decentralizzata --
 una volta che il repositorio è stato clonato sul vostro sistema, avete la
 storia completa del progetto, inclusi i suoi tag, i commit ed i rami. Tuttavia,
 con i centinaia di repositori clonati che ci sono in giro, come si fa a
-verificare che la loro copia di linux.git non è stata manomessa da qualcuno?
+verificare che la loro copia di linaos.git non è stata manomessa da qualcuno?
 
 Oppure, cosa succede se viene scoperta una backdoor nel codice e la riga
 "Autore" dice che sei stato tu, mentre tu sei abbastanza sicuro di
@@ -766,7 +766,7 @@ Come usare commit firmati
 -------------------------
 
 Creare dei commit firmati è facile, ma è molto più difficile utilizzarli
-nello sviluppo del kernel linux per via del fatto che ci si affida alle
+nello sviluppo del kernel linaos per via del fatto che ci si affida alle
 liste di discussione e questo modo di procedere non mantiene le firme PGP
 nei commit. In aggiunta, quando si usa *rebase* nel proprio repositorio
 locale per allinearsi al kernel anche le proprie firme PGP verranno scartate.

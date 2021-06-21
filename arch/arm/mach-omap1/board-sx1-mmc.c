@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-sx1-mmc.c
+ * linaos/arch/arm/mach-omap1/board-sx1-mmc.c
  *
  * Copyright (C) 2007 Instituto Nokia de Tecnologia - INdT
  * Author: Carlos Eduardo Aguiar <carlos.aguiar@indt.org.br>
  *
- * This code is based on linux/arch/arm/mach-omap1/board-h2-mmc.c, which is:
+ * This code is based on linaos/arch/arm/mach-omap1/board-h2-mmc.c, which is:
  * Copyright (C) 2007 Instituto Nokia de Tecnologia - INdT
  */
 
-#include <linux/gpio.h>
-#include <linux/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_device.h>
 
 #include <mach/hardware.h>
 #include "board-sx1.h"

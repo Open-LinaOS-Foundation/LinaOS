@@ -6,7 +6,7 @@
 #if !defined(_TRACE_FSI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FSI_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(fsi_master_read,
 	TP_PROTO(const struct fsi_master *master, int link, int id,

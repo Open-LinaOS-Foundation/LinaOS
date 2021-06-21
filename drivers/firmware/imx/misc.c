@@ -9,7 +9,7 @@
  *
  */
 
-#include <linux/firmware/imx/svc/misc.h>
+#include <linaos/firmware/imx/svc/misc.h>
 
 struct imx_sc_msg_req_misc_set_ctrl {
 	struct imx_sc_rpc_msg hdr;

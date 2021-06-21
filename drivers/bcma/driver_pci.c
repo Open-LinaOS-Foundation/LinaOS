@@ -10,8 +10,8 @@
  */
 
 #include "bcma_private.h"
-#include <linux/export.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/export.h>
+#include <linaos/bcma/bcma.h>
 
 /**************************************************
  * R/W ops.

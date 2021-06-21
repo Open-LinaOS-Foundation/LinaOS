@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2015-2017 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2017 The LinaOS Foundation. All rights reserved.
  */
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/percpu.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/bug.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/cpumask.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/percpu.h>
+#include <linaos/perf_event.h>
+#include <linaos/platform_device.h>
+#include <linaos/smp.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
 
 #include <asm/barrier.h>
 #include <asm/local64.h>

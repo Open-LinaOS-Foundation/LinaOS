@@ -13,18 +13,18 @@
  * Copyright IBM Corp. 2012,2015
  *
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@linaos.vnet.ibm.com>
  */
 
 #define KMSG_COMPONENT "bpf_jit"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/init.h>
-#include <linux/bpf.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/filter.h>
+#include <linaos/init.h>
+#include <linaos/bpf.h>
+#include <linaos/mm.h>
+#include <linaos/kernel.h>
 #include <asm/cacheflush.h>
 #include <asm/dis.h>
 #include <asm/facility.h>

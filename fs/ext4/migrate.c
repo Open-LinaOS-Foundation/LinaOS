@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: LGPL-2.1
 /*
  * Copyright IBM Corporation, 2007
- * Author Aneesh Kumar K.V <aneesh.kumar@linux.vnet.ibm.com>
+ * Author Aneesh Kumar K.V <aneesh.kumar@linaos.vnet.ibm.com>
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "ext4_jbd2.h"
 #include "ext4_extents.h"
 

@@ -29,16 +29,16 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
+#include <linaos/module.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/skbuff.h>
+#include <linaos/timer.h>
+#include <linaos/notifier.h>
+#include <linaos/inetdevice.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/if_vlan.h>
 
 #include <net/neighbour.h>
 #include <net/netevent.h>

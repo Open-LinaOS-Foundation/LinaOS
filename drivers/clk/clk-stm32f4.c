@@ -5,17 +5,17 @@
  * Inspired by clk-asm9260.c .
  */
 
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/clk-provider.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 
 /*
  * Include list of clocks wich are not derived from system clock (SYSCLOCK)

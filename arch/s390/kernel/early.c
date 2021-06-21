@@ -8,16 +8,16 @@
 #define KMSG_COMPONENT "setup"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/compiler.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/lockdep.h>
-#include <linux/extable.h>
-#include <linux/pfn.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/ctype.h>
+#include <linaos/lockdep.h>
+#include <linaos/extable.h>
+#include <linaos/pfn.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
 #include <asm/diag.h>
 #include <asm/ebcdic.h>
 #include <asm/ipl.h>
@@ -284,9 +284,9 @@ static void __init check_image_bootable(void)
 	if (!memcmp(EP_STRING, (void *)EP_OFFSET, strlen(EP_STRING)))
 		return;
 
-	sclp_early_printk("Linux kernel boot failure: An attempt to boot a vmlinux ELF image failed.\n");
+	sclp_early_printk("LinaOS kernel boot failure: An attempt to boot a vmlinaos ELF image failed.\n");
 	sclp_early_printk("This image does not contain all parts necessary for starting up. Use\n");
-	sclp_early_printk("bzImage or arch/s390/boot/compressed/vmlinux instead.\n");
+	sclp_early_printk("bzImage or arch/s390/boot/compressed/vmlinaos instead.\n");
 	disabled_wait();
 }
 

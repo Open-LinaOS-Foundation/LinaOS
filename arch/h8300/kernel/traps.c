@@ -1,8 +1,8 @@
 /*
- * linux/arch/h8300/boot/traps.c -- general exception handling code
+ * linaos/arch/h8300/boot/traps.c -- general exception handling code
  * H8/300 support Yoshinori Sato <ysato@users.sourceforge.jp>
  *
- * Cloned from Linux/m68k.
+ * Cloned from LinaOS/m68k.
  *
  * No original Copyright holder listed,
  * Probable original (C) Roman Zippel (assigned DJD, 1999)
@@ -14,15 +14,15 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/mm_types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/bug.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/mm_types.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/bug.h>
 
 #include <asm/irq.h>
 #include <asm/traps.h>

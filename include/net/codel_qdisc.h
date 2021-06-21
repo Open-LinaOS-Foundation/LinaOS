@@ -46,7 +46,7 @@
  * Source : Kathleen Nichols and Van Jacobson
  * http://queue.acm.org/detail.cfm?id=2209336
  *
- * Implemented on linux by Dave Taht and Eric Dumazet
+ * Implemented on linaos by Dave Taht and Eric Dumazet
  */
 
 /* Qdiscs using codel plugin must use codel_skb_cb in their own cb[] */

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/kernel/adc.c -- SH3 on-chip ADC support
+ * linaos/arch/sh/kernel/adc.c -- SH3 on-chip ADC support
  *
  *  Copyright (C) 2004  Andriy Skulysh <askulysh@image.kiev.ua>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <asm/adc.h>
 #include <asm/io.h>
 

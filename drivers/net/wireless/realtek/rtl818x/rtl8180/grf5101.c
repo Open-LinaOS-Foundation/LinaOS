@@ -16,8 +16,8 @@
  * from which this code is derived!
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 #include <net/mac80211.h>
 
 #include "rtl8180.h"

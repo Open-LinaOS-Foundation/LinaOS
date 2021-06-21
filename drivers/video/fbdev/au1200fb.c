@@ -6,7 +6,7 @@
  * Author: AMD
  *
  * Based on:
- * linux/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
+ * linaos/drivers/video/skeletonfb.c -- Skeleton for a frame buffer device
  *  Created 28 Dec 1997 by Geert Uytterhoeven
  *
  *  This program is free software; you can redistribute	 it and/or modify it
@@ -30,20 +30,20 @@
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ctype.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ctype.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1200fb.h>	/* platform_data */

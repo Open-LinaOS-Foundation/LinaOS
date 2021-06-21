@@ -6,16 +6,16 @@
  * Author: John Hsu <KCHSU0@nuvoton.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/acpi.h>
-#include <linux/math64.h>
-#include <linux/semaphore.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/clk.h>
+#include <linaos/acpi.h>
+#include <linaos/math64.h>
+#include <linaos/semaphore.h>
 
 #include <sound/initval.h>
 #include <sound/tlv.h>

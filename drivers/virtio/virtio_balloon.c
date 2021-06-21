@@ -6,21 +6,21 @@
  *  Copyright 2008 Rusty Russell IBM Corporation
  */
 
-#include <linux/virtio.h>
-#include <linux/virtio_balloon.h>
-#include <linux/swap.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/balloon_compaction.h>
-#include <linux/oom.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/magic.h>
-#include <linux/pseudo_fs.h>
-#include <linux/page_reporting.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_balloon.h>
+#include <linaos/swap.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/balloon_compaction.h>
+#include <linaos/oom.h>
+#include <linaos/wait.h>
+#include <linaos/mm.h>
+#include <linaos/mount.h>
+#include <linaos/magic.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/page_reporting.h>
 
 /*
  * Balloon device works in 4K page units.  So each page is pointed to by
@@ -138,7 +138,7 @@ static u32 page_to_balloon_pfn(struct page *page)
 	unsigned long pfn = page_to_pfn(page);
 
 	BUILD_BUG_ON(PAGE_SHIFT < VIRTIO_BALLOON_PFN_SHIFT);
-	/* Convert pfn from Linux page size to balloon page size. */
+	/* Convert pfn from LinaOS page size to balloon page size. */
 	return pfn * VIRTIO_BALLOON_PAGES_PER_PAGE;
 }
 

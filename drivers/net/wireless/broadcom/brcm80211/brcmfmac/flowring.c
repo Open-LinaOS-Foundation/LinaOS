@@ -4,9 +4,9 @@
  */
 
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <linaos/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
 #include <brcmu_utils.h>
 
 #include "core.h"

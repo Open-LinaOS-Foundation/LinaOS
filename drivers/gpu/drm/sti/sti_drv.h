@@ -7,7 +7,7 @@
 #ifndef _STI_DRV_H_
 #define _STI_DRV_H_
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 struct drm_device;
 struct drm_property;

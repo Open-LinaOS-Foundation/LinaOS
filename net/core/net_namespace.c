@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/workqueue.h>
-#include <linux/rtnetlink.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/idr.h>
-#include <linux/rculist.h>
-#include <linux/nsproxy.h>
-#include <linux/fs.h>
-#include <linux/proc_ns.h>
-#include <linux/file.h>
-#include <linux/export.h>
-#include <linux/user_namespace.h>
-#include <linux/net_namespace.h>
-#include <linux/sched/task.h>
-#include <linux/uidgid.h>
-#include <linux/cookie.h>
+#include <linaos/workqueue.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/cache.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/delay.h>
+#include <linaos/sched.h>
+#include <linaos/idr.h>
+#include <linaos/rculist.h>
+#include <linaos/nsproxy.h>
+#include <linaos/fs.h>
+#include <linaos/proc_ns.h>
+#include <linaos/file.h>
+#include <linaos/export.h>
+#include <linaos/user_namespace.h>
+#include <linaos/net_namespace.h>
+#include <linaos/sched/task.h>
+#include <linaos/uidgid.h>
+#include <linaos/cookie.h>
 
 #include <net/sock.h>
 #include <net/netlink.h>

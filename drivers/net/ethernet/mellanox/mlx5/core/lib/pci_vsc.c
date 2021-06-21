@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2019 Mellanox Technologies */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include "mlx5_core.h"
 #include "pci_vsc.h"
 

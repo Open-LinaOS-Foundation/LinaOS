@@ -29,10 +29,10 @@
 #ifndef _LINUX_USBDEVICE_FS_H
 #define _LINUX_USBDEVICE_FS_H
 
-#include <uapi/linux/usbdevice_fs.h>
+#include <uapi/linaos/usbdevice_fs.h>
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <linaos/compat.h>
 
 struct usbdevfs_ctrltransfer32 {
         u8 bRequestType;

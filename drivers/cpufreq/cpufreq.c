@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/cpufreq/cpufreq.c
+ *  linaos/drivers/cpufreq/cpufreq.c
  *
  *  Copyright (C) 2001 Russell King
- *            (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ *            (C) 2002 - 2003 Dominik Brodowski <linaos@brodo.de>
  *            (C) 2013 Viresh Kumar <viresh.kumar@linaro.org>
  *
  *  Oct 2005 - Ashok Raj <ashok.raj@intel.com>
@@ -14,20 +14,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu_cooling.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/tick.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpu_cooling.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/pm_qos.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/tick.h>
 #include <trace/events/power.h>
 
 static LIST_HEAD(cpufreq_policy_list);

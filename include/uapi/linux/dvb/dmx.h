@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH LinaOS-syscall-note */
 /*
  * dmx.h
  *
@@ -25,7 +25,7 @@
 #ifndef _UAPI_DVBDMX_H_
 #define _UAPI_DVBDMX_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #ifndef __KERNEL__
 #include <time.h>
 #endif

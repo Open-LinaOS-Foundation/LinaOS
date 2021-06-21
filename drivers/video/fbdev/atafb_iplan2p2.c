@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/iplan2p2.c -- Low level frame buffer operations for
+ *  linaos/drivers/video/iplan2p2.c -- Low level frame buffer operations for
  *				      interleaved bitplanes à la Atari (2
  *				      planes, 2 bytes interleave)
  *
@@ -10,8 +10,8 @@
  *  more details.
  */
 
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <linaos/string.h>
+#include <linaos/fb.h>
 
 #include <asm/setup.h>
 

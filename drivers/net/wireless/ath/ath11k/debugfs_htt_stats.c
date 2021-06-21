@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/vmalloc.h>
+#include <linaos/vmalloc.h>
 #include "core.h"
 #include "dp_tx.h"
 #include "dp_rx.h"

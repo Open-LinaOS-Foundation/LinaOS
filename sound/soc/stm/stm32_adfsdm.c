@@ -7,15 +7,15 @@
  *          Olivier Moysan <olivier.moysan@st.com>
  */
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/adc/stm32-dfsdm-adc.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/consumer.h>
+#include <linaos/iio/adc/stm32-dfsdm-adc.h>
 
 #include <sound/pcm.h>
 #include <sound/soc.h>

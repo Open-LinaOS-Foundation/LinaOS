@@ -43,40 +43,40 @@
 /*#define DBGRBUF(info) dump_rbufs(info)*/
 
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioctl.h>
-#include <linux/termios.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/hdlc.h>
-#include <linux/synclink.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial.h>
+#include <linaos/major.h>
+#include <linaos/string.h>
+#include <linaos/fcntl.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/ioctl.h>
+#include <linaos/termios.h>
+#include <linaos/bitops.h>
+#include <linaos/workqueue.h>
+#include <linaos/hdlc.h>
+#include <linaos/synclink.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/dma.h>
 #include <asm/types.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #if defined(CONFIG_HDLC) || (defined(CONFIG_HDLC_MODULE) && defined(CONFIG_SYNCLINK_GT_MODULE))
 #define SYNCLINK_GENERIC_HDLC 1

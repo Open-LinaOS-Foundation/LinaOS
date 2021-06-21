@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Implementation of various system calls for Linux/PowerPC
+ *  Implementation of various system calls for LinaOS/PowerPC
  *
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@linaosppc.org)
  *
  * Derived from "arch/i386/kernel/sys_i386.c"
  * Adapted from the i386 version by Gary Thomas
@@ -10,28 +10,28 @@
  * and Paul Mackerras (paulus@cs.anu.edu.au).
  *
  * This file contains various random system calls that
- * have a non-standard calling sequence on the Linux/PPC
+ * have a non-standard calling sequence on the LinaOS/PPC
  * platform.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/mman.h>
-#include <linux/sys.h>
-#include <linux/ipc.h>
-#include <linux/utsname.h>
-#include <linux/file.h>
-#include <linux/personality.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/syscalls.h>
+#include <linaos/mm.h>
+#include <linaos/fs.h>
+#include <linaos/smp.h>
+#include <linaos/sem.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
+#include <linaos/stat.h>
+#include <linaos/mman.h>
+#include <linaos/sys.h>
+#include <linaos/ipc.h>
+#include <linaos/utsname.h>
+#include <linaos/file.h>
+#include <linaos/personality.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/syscalls.h>
 #include <asm/time.h>
 #include <asm/unistd.h>

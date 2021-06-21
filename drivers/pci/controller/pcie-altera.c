@@ -6,18 +6,18 @@
  * Description: Altera PCIe host controller driver
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "../pci.h"
 

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/video/s3c-fb.c
+/* linaos/drivers/video/s3c-fb.c
  *
  * Copyright 2008 Openmoko Inc.
  * Copyright 2008-2010 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *
  * Samsung SoC Framebuffer driver
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_data/video_s3c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/clk.h>
+#include <linaos/fb.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/platform_data/video_s3c.h>
 
 #include <video/samsung_fimd.h>
 

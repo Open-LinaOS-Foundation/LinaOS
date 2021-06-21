@@ -4,7 +4,7 @@
  * Author: Jacob Chen <jacob-chen@iotwrt.com>
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include "rga-hw.h"
 #include "rga.h"

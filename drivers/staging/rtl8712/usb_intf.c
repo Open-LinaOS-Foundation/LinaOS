@@ -3,9 +3,9 @@
  * usb_intf.c
  *
  * Copyright(c) 2007 - 2010 Realtek Corporation. All rights reserved.
- * Linux device driver for RTL8192SU
+ * LinaOS device driver for RTL8192SU
  *
- * Modifications for inclusion into the Linux staging tree are
+ * Modifications for inclusion into the LinaOS staging tree are
  * Copyright(c) 2010 Larry Finger. All rights reserved.
  *
  * Contact information:
@@ -16,9 +16,9 @@
 
 #define _HCI_INTF_C_
 
-#include <linux/usb.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
+#include <linaos/usb.h>
+#include <linaos/module.h>
+#include <linaos/firmware.h>
 
 #include "osdep_service.h"
 #include "drv_types.h"

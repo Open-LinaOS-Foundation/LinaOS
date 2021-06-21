@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
 
 #define RT4801_REG_VOP	0x00
 #define RT4801_REG_VON	0x01

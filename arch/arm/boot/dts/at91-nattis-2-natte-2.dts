@@ -20,7 +20,7 @@
 
 		wakeup {
 			label = "Wakeup";
-			linux,code = <10>;
+			linaos,code = <10>;
 			wakeup-source;
 			gpios = <&pioB 27 GPIO_ACTIVE_LOW>;
 		};

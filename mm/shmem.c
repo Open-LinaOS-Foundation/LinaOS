@@ -1,5 +1,5 @@
 /*
- * Resizable virtual memory filesystem for Linux.
+ * Resizable virtual memory filesystem for LinaOS.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *		 2000 Transmeta Corp.
@@ -21,23 +21,23 @@
  * This file is released under the GPL.
  */
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/vfs.h>
-#include <linux/mount.h>
-#include <linux/ramfs.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched/signal.h>
-#include <linux/export.h>
-#include <linux/swap.h>
-#include <linux/uio.h>
-#include <linux/khugepaged.h>
-#include <linux/hugetlb.h>
-#include <linux/frontswap.h>
-#include <linux/fs_parser.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/vfs.h>
+#include <linaos/mount.h>
+#include <linaos/ramfs.h>
+#include <linaos/pagemap.h>
+#include <linaos/file.h>
+#include <linaos/mm.h>
+#include <linaos/random.h>
+#include <linaos/sched/signal.h>
+#include <linaos/export.h>
+#include <linaos/swap.h>
+#include <linaos/uio.h>
+#include <linaos/khugepaged.h>
+#include <linaos/hugetlb.h>
+#include <linaos/frontswap.h>
+#include <linaos/fs_parser.h>
 
 #include <asm/tlbflush.h> /* for arch/microblaze update_mmu_cache() */
 
@@ -50,38 +50,38 @@ static struct vfsmount *shm_mnt;
  * which makes it a completely usable filesystem.
  */
 
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/mman.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/backing-dev.h>
-#include <linux/shmem_fs.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/pagevec.h>
-#include <linux/percpu_counter.h>
-#include <linux/falloc.h>
-#include <linux/splice.h>
-#include <linux/security.h>
-#include <linux/swapops.h>
-#include <linux/mempolicy.h>
-#include <linux/namei.h>
-#include <linux/ctype.h>
-#include <linux/migrate.h>
-#include <linux/highmem.h>
-#include <linux/seq_file.h>
-#include <linux/magic.h>
-#include <linux/syscalls.h>
-#include <linux/fcntl.h>
-#include <uapi/linux/memfd.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/rmap.h>
-#include <linux/uuid.h>
+#include <linaos/xattr.h>
+#include <linaos/exportfs.h>
+#include <linaos/posix_acl.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/mman.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/backing-dev.h>
+#include <linaos/shmem_fs.h>
+#include <linaos/writeback.h>
+#include <linaos/blkdev.h>
+#include <linaos/pagevec.h>
+#include <linaos/percpu_counter.h>
+#include <linaos/falloc.h>
+#include <linaos/splice.h>
+#include <linaos/security.h>
+#include <linaos/swapops.h>
+#include <linaos/mempolicy.h>
+#include <linaos/namei.h>
+#include <linaos/ctype.h>
+#include <linaos/migrate.h>
+#include <linaos/highmem.h>
+#include <linaos/seq_file.h>
+#include <linaos/magic.h>
+#include <linaos/syscalls.h>
+#include <linaos/fcntl.h>
+#include <uapi/linaos/memfd.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/rmap.h>
+#include <linaos/uuid.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "internal.h"
 
@@ -4211,7 +4211,7 @@ int shmem_zero_setup(struct vm_area_struct *vma)
 
 	/*
 	 * Cloning a new file under mmap_lock leads to a lock ordering conflict
-	 * between XFS directory reading and selinux: since this file is only
+	 * between XFS directory reading and selinaos: since this file is only
 	 * accessible to the user through its mapping, use S_PRIVATE flag to
 	 * bypass file security, in the same way as shmem_kernel_file_setup().
 	 */

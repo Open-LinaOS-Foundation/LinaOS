@@ -11,9 +11,9 @@
 #include <asm-generic/kprobes.h>
 
 #ifdef CONFIG_KPROBES
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/notifier.h>
+#include <linaos/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/notifier.h>
 
 #define __ARCH_WANT_KPROBES_INSN_SLOT
 #define MAX_INSN_SIZE			2

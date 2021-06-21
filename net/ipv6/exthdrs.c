@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Extension Header handling for IPv6
- *	Linux INET6 implementation
+ *	LinaOS INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
@@ -17,16 +17,16 @@
  *				  handlers as inet6_protocol{}.
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/in6.h>
+#include <linaos/icmpv6.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
 
 #include <net/dst.h>
 #include <net/sock.h>
@@ -43,14 +43,14 @@
 #if IS_ENABLED(CONFIG_IPV6_MIP6)
 #include <net/xfrm.h>
 #endif
-#include <linux/seg6.h>
+#include <linaos/seg6.h>
 #include <net/seg6.h>
 #ifdef CONFIG_IPV6_SEG6_HMAC
 #include <net/seg6_hmac.h>
 #endif
 #include <net/rpl.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 /*
  *	Parsing tlv encoded headers.

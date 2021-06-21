@@ -9,15 +9,15 @@
  * (look for filenames containing 'i2c-demux-pinctrl' in Documentation/)
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 
 struct i2c_demux_pinctrl_chan {
 	struct device_node *parent_np;

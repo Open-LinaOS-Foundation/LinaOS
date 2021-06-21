@@ -9,8 +9,8 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/blkdev.h>
 
 #include "rnbd-srv.h"
 #include "rnbd-srv-dev.h"

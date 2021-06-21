@@ -8,16 +8,16 @@
 
 #include "fuse_i.h"
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/swap.h>
-#include <linux/falloc.h>
-#include <linux/uio.h>
-#include <linux/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
+#include <linaos/module.h>
+#include <linaos/swap.h>
+#include <linaos/falloc.h>
+#include <linaos/uio.h>
+#include <linaos/fs.h>
 
 static int fuse_send_open(struct fuse_mount *fm, u64 nodeid,
 			  unsigned int open_flags, int opcode,

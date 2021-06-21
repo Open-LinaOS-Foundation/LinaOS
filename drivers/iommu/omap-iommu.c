@@ -9,26 +9,26 @@
  *		Paul Mundt and Toshihiro Kobayashi
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/iommu.h>
-#include <linux/omap-iommu.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_iommu.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/iommu.h>
+#include <linaos/omap-iommu.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/of.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/syscon.h>
 
-#include <linux/platform_data/iommu-omap.h>
+#include <linaos/platform_data/iommu-omap.h>
 
 #include "omap-iopgtable.h"
 #include "omap-iommu.h"

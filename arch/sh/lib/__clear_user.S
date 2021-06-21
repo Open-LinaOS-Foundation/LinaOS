@@ -6,7 +6,7 @@
  * Copyright (C) 2001, 2002  Niibe Yutaka
  * Copyright (C) 2006  Paul Mundt
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/page.h>
 
 ENTRY(__clear_user)

@@ -10,8 +10,8 @@
 #ifndef __RCAR_DU_DRV_H__
 #define __RCAR_DU_DRV_H__
 
-#include <linux/kernel.h>
-#include <linux/wait.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
 
 #include <drm/drm_device.h>
 

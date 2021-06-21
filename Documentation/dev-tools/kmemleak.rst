@@ -150,7 +150,7 @@ In this situation, you may reclaim memory with::
 Kmemleak API
 ------------
 
-See the include/linux/kmemleak.h header for the functions prototype.
+See the include/linaos/kmemleak.h header for the functions prototype.
 
 - ``kmemleak_init``		 - initialize kmemleak
 - ``kmemleak_alloc``		 - notify of a memory block allocation

@@ -3,13 +3,13 @@
 #ifndef __DRIVER_USB_TYPEC_UCSI_H
 #define __DRIVER_USB_TYPEC_UCSI_H
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/types.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/role.h>
+#include <linaos/bitops.h>
+#include <linaos/device.h>
+#include <linaos/power_supply.h>
+#include <linaos/types.h>
+#include <linaos/usb/typec.h>
+#include <linaos/usb/pd.h>
+#include <linaos/usb/role.h>
 
 /* -------------------------------------------------------------------------- */
 

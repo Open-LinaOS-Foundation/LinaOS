@@ -3,7 +3,7 @@
 #ifndef __QCOM_IRQ_H
 #define __QCOM_IRQ_H
 
-#include <linux/irqdomain.h>
+#include <linaos/irqdomain.h>
 
 #define GPIO_NO_WAKE_IRQ	~0U
 

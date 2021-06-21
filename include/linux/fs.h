@@ -2,48 +2,48 @@
 #ifndef _LINUX_FS_H
 #define _LINUX_FS_H
 
-#include <linux/linkage.h>
-#include <linux/wait_bit.h>
-#include <linux/kdev_t.h>
-#include <linux/dcache.h>
-#include <linux/path.h>
-#include <linux/stat.h>
-#include <linux/cache.h>
-#include <linux/list.h>
-#include <linux/list_lru.h>
-#include <linux/llist.h>
-#include <linux/radix-tree.h>
-#include <linux/xarray.h>
-#include <linux/rbtree.h>
-#include <linux/init.h>
-#include <linux/pid.h>
-#include <linux/bug.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/mm_types.h>
-#include <linux/capability.h>
-#include <linux/semaphore.h>
-#include <linux/fcntl.h>
-#include <linux/rculist_bl.h>
-#include <linux/atomic.h>
-#include <linux/shrinker.h>
-#include <linux/migrate_mode.h>
-#include <linux/uidgid.h>
-#include <linux/lockdep.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/delayed_call.h>
-#include <linux/uuid.h>
-#include <linux/errseq.h>
-#include <linux/ioprio.h>
-#include <linux/fs_types.h>
-#include <linux/build_bug.h>
-#include <linux/stddef.h>
-#include <linux/mount.h>
-#include <linux/cred.h>
+#include <linaos/linkage.h>
+#include <linaos/wait_bit.h>
+#include <linaos/kdev_t.h>
+#include <linaos/dcache.h>
+#include <linaos/path.h>
+#include <linaos/stat.h>
+#include <linaos/cache.h>
+#include <linaos/list.h>
+#include <linaos/list_lru.h>
+#include <linaos/llist.h>
+#include <linaos/radix-tree.h>
+#include <linaos/xarray.h>
+#include <linaos/rbtree.h>
+#include <linaos/init.h>
+#include <linaos/pid.h>
+#include <linaos/bug.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/mm_types.h>
+#include <linaos/capability.h>
+#include <linaos/semaphore.h>
+#include <linaos/fcntl.h>
+#include <linaos/rculist_bl.h>
+#include <linaos/atomic.h>
+#include <linaos/shrinker.h>
+#include <linaos/migrate_mode.h>
+#include <linaos/uidgid.h>
+#include <linaos/lockdep.h>
+#include <linaos/percpu-rwsem.h>
+#include <linaos/workqueue.h>
+#include <linaos/delayed_call.h>
+#include <linaos/uuid.h>
+#include <linaos/errseq.h>
+#include <linaos/ioprio.h>
+#include <linaos/fs_types.h>
+#include <linaos/build_bug.h>
+#include <linaos/stddef.h>
+#include <linaos/mount.h>
+#include <linaos/cred.h>
 
 #include <asm/byteorder.h>
-#include <uapi/linux/fs.h>
+#include <uapi/linaos/fs.h>
 
 struct backing_dev_info;
 struct bdi_writeback;
@@ -240,7 +240,7 @@ struct iattr {
 /*
  * Includes for diskquotas.
  */
-#include <linux/quota.h>
+#include <linaos/quota.h>
 
 /*
  * Maximum number of layers of fs stack.  Needs to be limited to
@@ -331,7 +331,7 @@ struct kiocb {
 	void			*private;
 	int			ki_flags;
 	u16			ki_hint;
-	u16			ki_ioprio; /* See linux/ioprio.h */
+	u16			ki_ioprio; /* See linaos/ioprio.h */
 	union {
 		unsigned int		ki_cookie; /* for ->iopoll */
 		struct wait_page_queue	*ki_waitq; /* for async buffered IO */
@@ -572,7 +572,7 @@ static inline void mapping_allow_writable(struct address_space *mapping)
  * Use sequence counter to get consistent i_size on 32-bit processors.
  */
 #if BITS_PER_LONG==32 && defined(CONFIG_SMP)
-#include <linux/seqlock.h>
+#include <linaos/seqlock.h>
 #define __NEED_I_SIZE_ORDERED
 #define i_size_ordered_init(inode) seqcount_init(&inode->i_size_seqcount)
 #else
@@ -1043,7 +1043,7 @@ bool locks_in_grace(struct net *);
 bool opens_in_grace(struct net *);
 
 /* that will die - we need it for nfs_lock_info */
-#include <linux/nfs_fs_i.h>
+#include <linaos/nfs_fs_i.h>
 
 /*
  * struct file_lock represents a generic "file lock". It's used to represent
@@ -2214,7 +2214,7 @@ struct super_operations {
  * Unfortunately, it is possible to change a filesystems flags with it mounted
  * with files in use.  This means that all of the inodes will not have their
  * i_flags updated.  Hence, i_flags no longer inherit the superblock mount
- * flags, so these have to be checked separately. -- rmk@arm.uk.linux.org
+ * flags, so these have to be checked separately. -- rmk@arm.uk.linaos.org
  */
 #define __IS_FLG(inode, flg)	((inode)->i_sb->s_flags & (flg))
 
@@ -3122,7 +3122,7 @@ extern bool path_is_under(const struct path *, const struct path *);
 
 extern char *file_path(struct file *, char *, int);
 
-#include <linux/err.h>
+#include <linaos/err.h>
 
 /* needed for stackable file system support */
 extern loff_t default_llseek(struct file *file, loff_t offset, int whence);

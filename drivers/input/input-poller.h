@@ -5,7 +5,7 @@
 /*
  * Support for polling mode for input devices.
  */
-#include <linux/sysfs.h>
+#include <linaos/sysfs.h>
 
 struct input_dev_poller;
 

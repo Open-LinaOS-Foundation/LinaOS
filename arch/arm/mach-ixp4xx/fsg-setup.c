@@ -12,19 +12,19 @@
  *	Copyright (C) 2005 Tower Technologies
  *
  * Author: Rod Whitby <rod@whitby.id.au>
- * Maintainers: http://www.nslu2-linux.org/
+ * Maintainers: http://www.nslu2-linaos.org/
  *
  */
-#include <linux/gpio.h>
-#include <linux/if_ether.h>
-#include <linux/irq.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/leds.h>
-#include <linux/reboot.h>
-#include <linux/i2c.h>
-#include <linux/gpio/machine.h>
-#include <linux/io.h>
+#include <linaos/gpio.h>
+#include <linaos/if_ether.h>
+#include <linaos/irq.h>
+#include <linaos/serial.h>
+#include <linaos/serial_8250.h>
+#include <linaos/leds.h>
+#include <linaos/reboot.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/io.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/flash.h>
@@ -295,7 +295,7 @@ static void __init fsg_init(void)
 }
 
 MACHINE_START(FSG, "Freecom FSG-3")
-	/* Maintainer: www.nslu2-linux.org */
+	/* Maintainer: www.nslu2-linaos.org */
 	.map_io		= ixp4xx_map_io,
 	.init_early	= ixp4xx_init_early,
 	.init_irq	= ixp4xx_init_irq,

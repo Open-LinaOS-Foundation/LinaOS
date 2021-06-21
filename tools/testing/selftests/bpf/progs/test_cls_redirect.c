@@ -6,16 +6,16 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <linux/bpf.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/if_ether.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/pkt_cls.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <linaos/bpf.h>
+#include <linaos/icmp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/if_ether.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/tcp.h>
+#include <linaos/udp.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
@@ -114,7 +114,7 @@ static const ret_t CONTINUE_PROCESSING = -1;
 			return __ret;             \
 	} while (0)
 
-/* Linux packet pointers are either aligned to NET_IP_ALIGN (aka 2 bytes),
+/* LinaOS packet pointers are either aligned to NET_IP_ALIGN (aka 2 bytes),
  * or not aligned if the arch supports efficient unaligned access.
  *
  * Since the verifier ensures that eBPF packet accesses follow these rules,

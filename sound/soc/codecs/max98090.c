@@ -5,16 +5,16 @@
  * Copyright 2011-2012 Maxim Integrated Products
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

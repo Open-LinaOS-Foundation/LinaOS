@@ -7,9 +7,9 @@
  * SuperH SH4-202 MicroDev board support.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
 #include <asm/io.h>
 #include <mach/microdev.h>
 

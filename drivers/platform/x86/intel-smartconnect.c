@@ -3,8 +3,8 @@
  *  Copyright 2013 Matthew Garrett <mjg59@srcf.ucam.org>
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
+#include <linaos/acpi.h>
+#include <linaos/module.h>
 
 MODULE_LICENSE("GPL");
 

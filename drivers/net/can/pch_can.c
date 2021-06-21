@@ -4,20 +4,20 @@
  * Copyright (C) 2010 LAPIS SEMICONDUCTOR CO., LTD.
  */
 
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
 
 #define PCH_CTRL_INIT		BIT(0) /* The INIT bit of CANCONT register. */
 #define PCH_CTRL_IE		BIT(1) /* The IE bit of CAN control register */

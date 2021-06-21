@@ -14,14 +14,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/miscdevice.h>
+#include <linaos/watchdog.h>
+#include <linaos/uaccess.h>
 #include <mach/hardware.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;

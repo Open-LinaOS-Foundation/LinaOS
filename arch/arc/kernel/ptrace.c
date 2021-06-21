@@ -3,12 +3,12 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/ptrace.h>
-#include <linux/tracehook.h>
-#include <linux/sched/task_stack.h>
-#include <linux/regset.h>
-#include <linux/unistd.h>
-#include <linux/elf.h>
+#include <linaos/ptrace.h>
+#include <linaos/tracehook.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/regset.h>
+#include <linaos/unistd.h>
+#include <linaos/elf.h>
 
 static struct callee_regs *task_callee_regs(struct task_struct *tsk)
 {

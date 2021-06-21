@@ -40,24 +40,24 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/hrtimer.h>
-#include <linux/list.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/uio.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/if_arp.h>
-#include <linux/skbuff.h>
-#include <linux/can.h>
-#include <linux/can/core.h>
-#include <linux/can/skb.h>
-#include <linux/can/bcm.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/hrtimer.h>
+#include <linaos/list.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/uio.h>
+#include <linaos/net.h>
+#include <linaos/netdevice.h>
+#include <linaos/socket.h>
+#include <linaos/if_arp.h>
+#include <linaos/skbuff.h>
+#include <linaos/can.h>
+#include <linaos/can/core.h>
+#include <linaos/can/skb.h>
+#include <linaos/can/bcm.h>
+#include <linaos/slab.h>
 #include <net/sock.h>
 #include <net/net_namespace.h>
 

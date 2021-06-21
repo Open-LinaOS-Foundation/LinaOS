@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 #include <asm/mips-boards/piix4.h>
 
 /* PCI interrupt pins */

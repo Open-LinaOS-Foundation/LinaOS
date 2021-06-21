@@ -3,7 +3,7 @@
 #ifndef BD99954_CHARGER_H
 #define BD99954_CHARGER_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #define BD9995X_MANUFACTURER "Rohm Semiconductor"
 #define BD9995X_IRQ_PIN      "bd9995x_irq"

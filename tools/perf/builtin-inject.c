@@ -26,11 +26,11 @@
 #include "util/thread.h"
 #include "util/namespaces.h"
 
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <subcmd/parse-options.h>
-#include <uapi/linux/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
+#include <uapi/linaos/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
 
-#include <linux/list.h>
+#include <linaos/list.h>
 #include <errno.h>
 #include <signal.h>
 

@@ -2,10 +2,10 @@
 /*
  * Copyright (c) 2014-2016 Christoph Hellwig.
  */
-#include <linux/sunrpc/svc.h>
-#include <linux/exportfs.h>
-#include <linux/iomap.h>
-#include <linux/nfs4.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/exportfs.h>
+#include <linaos/iomap.h>
+#include <linaos/nfs4.h>
 
 #include "nfsd.h"
 #include "blocklayoutxdr.h"

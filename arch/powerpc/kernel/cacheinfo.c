@@ -9,15 +9,15 @@
 
 #define pr_fmt(fmt) "cacheinfo: " fmt
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/kernel.h>
+#include <linaos/kobject.h>
+#include <linaos/list.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/percpu.h>
+#include <linaos/slab.h>
 #include <asm/prom.h>
 #include <asm/cputhreads.h>
 #include <asm/smp.h>
@@ -229,7 +229,7 @@ static int cache_size_kb(const struct cache *cache, unsigned int *ret)
 	return 0;
 }
 
-/* not cache_line_size() because that's a macro in include/linux/cache.h */
+/* not cache_line_size() because that's a macro in include/linaos/cache.h */
 static int cache_get_line_size(const struct cache *cache, unsigned int *ret)
 {
 	const __be32 *line_size;

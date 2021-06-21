@@ -4,14 +4,14 @@
  * Author: Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

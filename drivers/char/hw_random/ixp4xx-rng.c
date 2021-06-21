@@ -14,13 +14,13 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/hw_random.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/hw_random.h>
 
 #include <asm/io.h>
 #include <mach/hardware.h>

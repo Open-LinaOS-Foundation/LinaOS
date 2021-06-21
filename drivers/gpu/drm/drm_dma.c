@@ -2,15 +2,15 @@
  * \file drm_dma.c
  * DMA IOCTL and function support
  *
- * \author Rickard E. (Rik) Faith <faith@valinux.com>
- * \author Gareth Hughes <gareth@valinux.com>
+ * \author Rickard E. (Rik) Faith <faith@valinaos.com>
+ * \author Gareth Hughes <gareth@valinaos.com>
  */
 
 /*
- * Created: Fri Mar 19 14:30:16 1999 by faith@valinux.com
+ * Created: Fri Mar 19 14:30:16 1999 by faith@valinaos.com
  *
  * Copyright 1999, 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -33,8 +33,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_print.h>

@@ -2,10 +2,10 @@
 #ifndef _NET_IP6_TUNNEL_H
 #define _NET_IP6_TUNNEL_H
 
-#include <linux/ipv6.h>
-#include <linux/netdevice.h>
-#include <linux/if_tunnel.h>
-#include <linux/ip6_tunnel.h>
+#include <linaos/ipv6.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_tunnel.h>
+#include <linaos/ip6_tunnel.h>
 #include <net/ip_tunnels.h>
 #include <net/dst_cache.h>
 

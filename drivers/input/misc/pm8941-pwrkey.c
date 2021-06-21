@@ -4,18 +4,18 @@
  * Copyright (c) 2014, Sony Mobile Communications Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <linaos/delay.h>
+#include <linaos/errno.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/log2.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/reboot.h>
+#include <linaos/regmap.h>
 
 #define PON_REV2			0x01
 
@@ -215,11 +215,11 @@ static int pm8941_pwrkey_probe(struct platform_device *pdev)
 		return error;
 	}
 
-	error = of_property_read_u32(pdev->dev.of_node, "linux,code",
+	error = of_property_read_u32(pdev->dev.of_node, "linaos,code",
 				     &pwrkey->code);
 	if (error) {
 		dev_dbg(&pdev->dev,
-			"no linux,code assuming power (%d)\n", error);
+			"no linaos,code assuming power (%d)\n", error);
 		pwrkey->code = KEY_POWER;
 	}
 

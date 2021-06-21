@@ -1,16 +1,16 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# linux/arch/parisc/boot/compressed/Makefile
+# linaos/arch/parisc/boot/compressed/Makefile
 #
-# create a compressed self-extracting vmlinux image from the original vmlinux
+# create a compressed self-extracting vmlinaos image from the original vmlinaos
 #
 
 KCOV_INSTRUMENT := n
 GCOV_PROFILE := n
 UBSAN_SANITIZE := n
 
-targets := vmlinux.lds vmlinux vmlinux.bin vmlinux.bin.gz vmlinux.bin.bz2
-targets += vmlinux.bin.xz vmlinux.bin.lzma vmlinux.bin.lzo vmlinux.bin.lz4
+targets := vmlinaos.lds vmlinaos vmlinaos.bin vmlinaos.bin.gz vmlinaos.bin.bz2
+targets += vmlinaos.bin.xz vmlinaos.bin.lzma vmlinaos.bin.lzo vmlinaos.bin.lz4
 targets += misc.o piggy.o sizes.h head.o real2.o firmware.o
 targets += real2.S firmware.c
 
@@ -25,8 +25,8 @@ endif
 
 OBJECTS += $(obj)/head.o $(obj)/real2.o $(obj)/firmware.o $(obj)/misc.o $(obj)/piggy.o
 
-LDFLAGS_vmlinux := -X -e startup --as-needed -T
-$(obj)/vmlinux: $(obj)/vmlinux.lds $(OBJECTS) $(LIBGCC)
+LDFLAGS_vmlinaos := -X -e startup --as-needed -T
+$(obj)/vmlinaos: $(obj)/vmlinaos.lds $(OBJECTS) $(LIBGCC)
 	$(call if_changed,ld)
 
 sed-sizes := -e 's/^\([0-9a-fA-F]*\) . \(__bss_start\|_end\|parisc_kernel_start\)$$/\#define SZ\2 0x\1/p'
@@ -34,7 +34,7 @@ sed-sizes := -e 's/^\([0-9a-fA-F]*\) . \(__bss_start\|_end\|parisc_kernel_start\
 quiet_cmd_sizes = GEN $@
       cmd_sizes = $(NM) $< | sed -n $(sed-sizes) > $@
 
-$(obj)/sizes.h: vmlinux
+$(obj)/sizes.h: vmlinaos
 	$(call if_changed,sizes)
 
 AFLAGS_head.o += -I$(objtree)/$(obj) -DBOOTLOADER
@@ -54,14 +54,14 @@ $(obj)/real2.S: $(srctree)/arch/$(SRCARCH)/kernel/real2.S
 
 $(obj)/misc.o: $(obj)/sizes.h
 
-CPPFLAGS_vmlinux.lds += -I$(objtree)/$(obj) -DBOOTLOADER
-$(obj)/vmlinux.lds: $(obj)/sizes.h
+CPPFLAGS_vmlinaos.lds += -I$(objtree)/$(obj) -DBOOTLOADER
+$(obj)/vmlinaos.lds: $(obj)/sizes.h
 
-OBJCOPYFLAGS_vmlinux.bin := -R .comment -R .note -S
-$(obj)/vmlinux.bin: vmlinux FORCE
+OBJCOPYFLAGS_vmlinaos.bin := -R .comment -R .note -S
+$(obj)/vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-vmlinux.bin.all-y := $(obj)/vmlinux.bin
+vmlinaos.bin.all-y := $(obj)/vmlinaos.bin
 
 suffix-$(CONFIG_KERNEL_GZIP)  := gz
 suffix-$(CONFIG_KERNEL_BZIP2) := bz2
@@ -70,19 +70,19 @@ suffix-$(CONFIG_KERNEL_LZMA)  := lzma
 suffix-$(CONFIG_KERNEL_LZO)  := lzo
 suffix-$(CONFIG_KERNEL_XZ)  := xz
 
-$(obj)/vmlinux.bin.gz: $(vmlinux.bin.all-y)
+$(obj)/vmlinaos.bin.gz: $(vmlinaos.bin.all-y)
 	$(call if_changed,gzip)
-$(obj)/vmlinux.bin.bz2: $(vmlinux.bin.all-y)
+$(obj)/vmlinaos.bin.bz2: $(vmlinaos.bin.all-y)
 	$(call if_changed,bzip2)
-$(obj)/vmlinux.bin.lz4: $(vmlinux.bin.all-y)
+$(obj)/vmlinaos.bin.lz4: $(vmlinaos.bin.all-y)
 	$(call if_changed,lz4)
-$(obj)/vmlinux.bin.lzma: $(vmlinux.bin.all-y)
+$(obj)/vmlinaos.bin.lzma: $(vmlinaos.bin.all-y)
 	$(call if_changed,lzma)
-$(obj)/vmlinux.bin.lzo: $(vmlinux.bin.all-y)
+$(obj)/vmlinaos.bin.lzo: $(vmlinaos.bin.all-y)
 	$(call if_changed,lzo)
-$(obj)/vmlinux.bin.xz: $(vmlinux.bin.all-y)
+$(obj)/vmlinaos.bin.xz: $(vmlinaos.bin.all-y)
 	$(call if_changed,xzkern)
 
 LDFLAGS_piggy.o := -r --format binary --oformat $(LD_BFD) -T
-$(obj)/piggy.o: $(obj)/vmlinux.scr $(obj)/vmlinux.bin.$(suffix-y)
+$(obj)/piggy.o: $(obj)/vmlinaos.scr $(obj)/vmlinaos.bin.$(suffix-y)
 	$(call if_changed,ld)

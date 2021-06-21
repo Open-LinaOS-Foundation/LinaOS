@@ -7,9 +7,9 @@
 // Copyright 2007 Dension Audio Systems Ltd.
 // Author: Zoltan Devai
 
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/module.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/module.h>
 
 #include <sound/soc.h>
 #include <sound/s3c24xx_uda134x.h>

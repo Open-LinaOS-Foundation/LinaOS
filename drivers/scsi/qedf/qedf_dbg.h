@@ -6,17 +6,17 @@
 #ifndef _QEDF_DBG_H_
 #define _QEDF_DBG_H_
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/compiler.h>
+#include <linaos/string.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_transport.h>
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
-#include <linux/qed/common_hsi.h>
-#include <linux/qed/qed_if.h>
+#include <linaos/qed/common_hsi.h>
+#include <linaos/qed/qed_if.h>
 
 extern uint qedf_debug;
 

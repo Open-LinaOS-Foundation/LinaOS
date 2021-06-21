@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/mfd/ucb1x00.h
+ *  linaos/include/mfd/ucb1x00.h
  *
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  */
 #ifndef UCB1200_H
 #define UCB1200_H
 
-#include <linux/device.h>
-#include <linux/mfd/mcp.h>
-#include <linux/gpio.h>
-#include <linux/mutex.h>
+#include <linaos/device.h>
+#include <linaos/mfd/mcp.h>
+#include <linaos/gpio.h>
+#include <linaos/mutex.h>
 
 #define UCB_IO_DATA	0x00
 #define UCB_IO_DIR	0x01

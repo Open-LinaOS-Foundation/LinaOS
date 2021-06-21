@@ -8,7 +8,7 @@
 
 #ifdef CONFIG_PCI
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #include <asm/pci-bridge.h>
 
 extern unsigned long isa_io_base;

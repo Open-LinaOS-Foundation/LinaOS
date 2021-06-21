@@ -24,9 +24,9 @@
  *     Alex Deucher <alexander.deucher@amd.com>
  */
 
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
+#include <linaos/types.h>
+#include <linaos/bug.h>
+#include <linaos/kernel.h>
 
 const u32 cik_default_state[] =
 {

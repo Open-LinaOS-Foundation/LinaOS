@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2013-2014, 2016-2018 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2014, 2016-2018 The LinaOS Foundation. All rights reserved.
  *
  * RMNET Data configuration engine
  */
 
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/gro_cells.h>
 
 #ifndef _RMNET_CONFIG_H_

@@ -4,11 +4,11 @@
  */
 
 /*
- * LK keyboard driver for Linux, based on sunkbd.c (C) by Vojtech Pavlik
+ * LK keyboard driver for LinaOS, based on sunkbd.c (C) by Vojtech Pavlik
  */
 
 /*
- * DEC LK201 and LK401 keyboard driver for Linux (primary for DECstations
+ * DEC LK201 and LK401 keyboard driver for LinaOS (primary for DECstations
  * and VAXstations, but can also be used on any standard RS232 with an
  * adaptor).
  *
@@ -49,13 +49,13 @@
 /*
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/serio.h>
+#include <linaos/workqueue.h>
 
 #define DRIVER_DESC	"LK keyboard driver"
 

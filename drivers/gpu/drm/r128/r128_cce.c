@@ -1,9 +1,9 @@
-/* r128_cce.c -- ATI Rage 128 driver -*- linux-c -*-
+/* r128_cce.c -- ATI Rage 128 driver -*- linaos-c -*-
  * Created: Wed Apr  5 19:24:19 2000 by kevin@precisioninsight.com
  */
 /*
  * Copyright 2000 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Sunnyvale, California.
+ * Copyright 2000 VA LinaOS Systems, Inc., Sunnyvale, California.
  * All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -26,16 +26,16 @@
  * DEALINGS IN THE SOFTWARE.
  *
  * Authors:
- *    Gareth Hughes <gareth@valinux.com>
+ *    Gareth Hughes <gareth@valinaos.com>
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include <drm/drm_agpsupport.h>
 #include <drm/drm_device.h>

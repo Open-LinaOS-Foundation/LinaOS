@@ -3,13 +3,13 @@
 
 #define pr_fmt(fmt)	"NFP net bpf: " fmt
 
-#include <linux/bug.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
-#include <linux/pkt_cls.h>
-#include <linux/reciprocal_div.h>
-#include <linux/unistd.h>
+#include <linaos/bug.h>
+#include <linaos/bpf.h>
+#include <linaos/filter.h>
+#include <linaos/kernel.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/reciprocal_div.h>
+#include <linaos/unistd.h>
 
 #include "main.h"
 #include "../nfp_asm.h"

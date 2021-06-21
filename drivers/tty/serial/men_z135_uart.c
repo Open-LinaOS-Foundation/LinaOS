@@ -7,15 +7,15 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ":" fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/serial_core.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/tty_flip.h>
-#include <linux/bitops.h>
-#include <linux/mcb.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/serial_core.h>
+#include <linaos/ioport.h>
+#include <linaos/io.h>
+#include <linaos/tty_flip.h>
+#include <linaos/bitops.h>
+#include <linaos/mcb.h>
 
 #define MEN_Z135_MAX_PORTS		12
 #define MEN_Z135_BASECLK		29491200

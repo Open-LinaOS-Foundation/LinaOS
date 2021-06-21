@@ -10,8 +10,8 @@
  *	Cliff Brake, (c) 2001
  */
 
-#include <linux/linkage.h>
-#include <linux/serial_s3c.h>
+#include <linaos/linkage.h>
+#include <linaos/serial_s3c.h>
 #include <asm/assembler.h>
 #include "map.h"
 

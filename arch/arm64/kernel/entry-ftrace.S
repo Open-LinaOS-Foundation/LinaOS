@@ -6,7 +6,7 @@
  * Author: AKASHI Takahiro <takahiro.akashi@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asm-offsets.h>
 #include <asm/assembler.h>
 #include <asm/ftrace.h>

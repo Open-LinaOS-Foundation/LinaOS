@@ -6,7 +6,7 @@
 
 #ifndef _QED_SRIOV_H
 #define _QED_SRIOV_H
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "qed_vf.h"
 
 #define QED_ETH_VF_NUM_MAC_FILTERS 1

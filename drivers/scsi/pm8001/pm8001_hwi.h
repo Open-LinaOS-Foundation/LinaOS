@@ -40,7 +40,7 @@
 #ifndef _PMC8001_REG_H_
 #define _PMC8001_REG_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <scsi/libsas.h>
 
 

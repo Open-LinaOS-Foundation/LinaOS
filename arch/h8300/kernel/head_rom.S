@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/thread_info.h>
 
 #if defined(CONFIG_CPU_H8300H)
@@ -78,7 +78,7 @@ _start:
 #endif
 	sub.l	er0,er0
 	jsr	@h8300_fdt_init
-	/* linux kernel start */
+	/* linaos kernel start */
 #if defined(CONFIG_CPU_H8300H)
 	ldc	#0xd0,ccr	/* running kernel */
 	mov.l	#SYSCR,er0

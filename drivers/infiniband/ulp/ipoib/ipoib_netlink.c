@@ -30,9 +30,9 @@
  * SOFTWARE.
  */
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>      /* For ARPHRD_xxx */
-#include <linux/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>      /* For ARPHRD_xxx */
+#include <linaos/module.h>
 #include <net/rtnetlink.h>
 #include "ipoib.h"
 

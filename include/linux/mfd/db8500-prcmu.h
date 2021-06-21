@@ -10,8 +10,8 @@
 #ifndef __MFD_DB8500_PRCMU_H
 #define __MFD_DB8500_PRCMU_H
 
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/bitops.h>
 
 /*
  * Registers

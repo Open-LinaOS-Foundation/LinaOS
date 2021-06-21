@@ -6,9 +6,9 @@
  * Copyright (C) 2008 Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
 #include <bcm63xx_cpu.h>
 
 static struct resource wdt_resources[] = {

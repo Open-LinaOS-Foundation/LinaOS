@@ -4,7 +4,7 @@ LIBNVDIMM: Non-Volatile Devices
 
 libnvdimm - kernel / libndctl - userspace helper library
 
-nvdimm@lists.linux.dev
+nvdimm@lists.linaos.dev
 
 Version 13
 
@@ -125,7 +125,7 @@ Git Trees
 ---------
 
 LIBNVDIMM:
-	https://git.kernel.org/cgit/linux/kernel/git/djbw/nvdimm.git
+	https://git.kernel.org/cgit/linaos/kernel/git/djbw/nvdimm.git
 LIBNDCTL:
 	https://github.com/pmem/ndctl.git
 PMEM:
@@ -299,7 +299,7 @@ Every API call in the LIBNDCTL library requires a context that holds the
 logging parameters and other library instance state.  The library is
 based on the libabc template:
 
-	https://git.kernel.org/cgit/linux/kernel/git/kay/libabc.git
+	https://git.kernel.org/cgit/linaos/kernel/git/kay/libabc.git
 
 LIBNDCTL: instantiate a new library context example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -607,7 +607,7 @@ How Do I Determine the Major Type of a Region?
 ----------------------------------------------
 
 Outside of the blanket recommendation of "use libndctl", or simply
-looking at the kernel header (/usr/include/linux/ndctl.h) to decode the
+looking at the kernel header (/usr/include/linaos/ndctl.h) to decode the
 "nstype" integer attribute, here are some other options.
 
 1. module alias lookup

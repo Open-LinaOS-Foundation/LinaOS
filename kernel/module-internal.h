@@ -5,7 +5,7 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/elf.h>
+#include <linaos/elf.h>
 #include <asm/module.h>
 
 struct load_info {

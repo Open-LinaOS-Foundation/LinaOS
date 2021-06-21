@@ -7,39 +7,39 @@
  * Copyright (C) 2007 Herbert Valerio Riedel <hvr@gnu.org>
  *
  * Thanks go to Michael Burian and Ray Lehtiniemi for their key
- * role in the ep93xx linux community.
+ * role in the ep93xx linaos community.
  */
 
 #define pr_fmt(fmt) "ep93xx " KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/sys_soc.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
-#include <linux/termios.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/mtd/physmap.h>
-#include <linux/i2c.h>
-#include <linux/gpio/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/export.h>
-#include <linux/irqchip/arm-vic.h>
-#include <linux/reboot.h>
-#include <linux/usb/ohci_pdriver.h>
-#include <linux/random.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/sys_soc.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/gpio.h>
+#include <linaos/leds.h>
+#include <linaos/termios.h>
+#include <linaos/amba/bus.h>
+#include <linaos/amba/serial.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/spi/spi.h>
+#include <linaos/export.h>
+#include <linaos/irqchip/arm-vic.h>
+#include <linaos/reboot.h>
+#include <linaos/usb/ohci_pdriver.h>
+#include <linaos/random.h>
 
 #include "hardware.h"
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/keypad-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
-#include <linux/soc/cirrus/ep93xx.h>
+#include <linaos/platform_data/video-ep93xx.h>
+#include <linaos/platform_data/keypad-ep93xx.h>
+#include <linaos/platform_data/spi-ep93xx.h>
+#include <linaos/soc/cirrus/ep93xx.h>
 
 #include "gpio-ep93xx.h"
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/* linux/arch/sparc/kernel/time.c
+/* linaos/arch/sparc/kernel/time.c
  *
  * Copyright (C) 1995 David S. Miller (davem@davemloft.net)
  * Copyright (C) 1996 Thomas K. Dyas (tdyas@eden.rutgers.edu)
@@ -15,26 +15,26 @@
  * 1997-09-10	Updated NTP code according to technical memorandum Jan '96
  *		"A Kernel Model for Precision Timekeeping" by Dave Mills
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/rtc/m48t59.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/profile.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/time.h>
+#include <linaos/rtc/m48t59.h>
+#include <linaos/timex.h>
+#include <linaos/clocksource.h>
+#include <linaos/clockchips.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/ioport.h>
+#include <linaos/profile.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 #include <asm/mc146818rtc.h>
 #include <asm/oplib.h>

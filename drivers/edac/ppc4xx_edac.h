@@ -11,7 +11,7 @@
 #ifndef __PPC4XX_EDAC_H
 #define __PPC4XX_EDAC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Macro for generating register field mnemonics

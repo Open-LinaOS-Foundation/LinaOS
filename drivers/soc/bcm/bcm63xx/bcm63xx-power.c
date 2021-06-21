@@ -9,12 +9,12 @@
 #include <dt-bindings/soc/bcm6328-pm.h>
 #include <dt-bindings/soc/bcm6362-pm.h>
 #include <dt-bindings/soc/bcm63268-pm.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_domain.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
 struct bcm63xx_power_dev {
 	struct generic_pm_domain genpd;

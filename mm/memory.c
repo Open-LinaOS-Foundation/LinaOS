@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/memory.c
+ *  linaos/mm/memory.c
  *
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
@@ -39,47 +39,47 @@
  * Aug/Sep 2004 Changed to four level page tables (Andi Kleen)
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task.h>
-#include <linux/hugetlb.h>
-#include <linux/mman.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/memremap.h>
-#include <linux/ksm.h>
-#include <linux/rmap.h>
-#include <linux/export.h>
-#include <linux/delayacct.h>
-#include <linux/init.h>
-#include <linux/pfn_t.h>
-#include <linux/writeback.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/swapops.h>
-#include <linux/elf.h>
-#include <linux/gfp.h>
-#include <linux/migrate.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/dax.h>
-#include <linux/oom.h>
-#include <linux/numa.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/coredump.h>
+#include <linaos/sched/numa_balancing.h>
+#include <linaos/sched/task.h>
+#include <linaos/hugetlb.h>
+#include <linaos/mman.h>
+#include <linaos/swap.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/memremap.h>
+#include <linaos/ksm.h>
+#include <linaos/rmap.h>
+#include <linaos/export.h>
+#include <linaos/delayacct.h>
+#include <linaos/init.h>
+#include <linaos/pfn_t.h>
+#include <linaos/writeback.h>
+#include <linaos/memcontrol.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/swapops.h>
+#include <linaos/elf.h>
+#include <linaos/gfp.h>
+#include <linaos/migrate.h>
+#include <linaos/string.h>
+#include <linaos/debugfs.h>
+#include <linaos/userfaultfd_k.h>
+#include <linaos/dax.h>
+#include <linaos/oom.h>
+#include <linaos/numa.h>
+#include <linaos/perf_event.h>
+#include <linaos/ptrace.h>
+#include <linaos/vmalloc.h>
 
 #include <trace/events/kmem.h>
 
 #include <asm/io.h>
 #include <asm/mmu_context.h>
 #include <asm/pgalloc.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>
 

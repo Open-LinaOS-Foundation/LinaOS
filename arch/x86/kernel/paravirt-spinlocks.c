@@ -3,9 +3,9 @@
  * Split spinlock implementation out into its own file, so it can be
  * compiled in a FTRACE-compatible way.
  */
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/jump_label.h>
+#include <linaos/spinlock.h>
+#include <linaos/export.h>
+#include <linaos/jump_label.h>
 
 #include <asm/paravirt.h>
 

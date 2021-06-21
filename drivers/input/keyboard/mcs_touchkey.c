@@ -7,14 +7,14 @@
  * Author: Joonyoung Shim <jy0922.shim@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/slab.h>
-#include <linux/platform_data/mcs.h>
-#include <linux/pm.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/irq.h>
+#include <linaos/slab.h>
+#include <linaos/platform_data/mcs.h>
+#include <linaos/pm.h>
 
 /* MCS5000 Touchkey */
 #define MCS5000_TOUCHKEY_STATUS		0x04

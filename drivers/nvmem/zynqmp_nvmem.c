@@ -3,11 +3,11 @@
  * Copyright (C) 2019 Xilinx, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 
 #define SILICON_REVISION_MASK 0xF
 

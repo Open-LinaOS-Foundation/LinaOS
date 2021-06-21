@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <net/mac80211.h>
-#include <linux/bcma/bcma_driver_chipcommon.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/bcma/bcma_driver_chipcommon.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio/consumer.h>
 
 #include "mac80211_if.h"
 #include "pub.h"

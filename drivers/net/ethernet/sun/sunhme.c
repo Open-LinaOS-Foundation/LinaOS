@@ -14,48 +14,48 @@
  *     argument : macaddr=0x00,0x10,0x20,0x30,0x40,0x50
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/crc32.h>
-#include <linux/random.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/in.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/crc32.h>
+#include <linaos/random.h>
+#include <linaos/errno.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/mm.h>
+#include <linaos/bitops.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
 #include <asm/byteorder.h>
 
 #ifdef CONFIG_SPARC
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 #include <asm/idprom.h>
 #include <asm/openprom.h>
 #include <asm/oplib.h>
 #include <asm/prom.h>
 #include <asm/auxio.h>
 #endif
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include <asm/irq.h>
 
 #ifdef CONFIG_PCI
-#include <linux/pci.h>
+#include <linaos/pci.h>
 #endif
 
 #include "sunhme.h"
@@ -2518,7 +2518,7 @@ static void hme_get_drvinfo(struct net_device *dev, struct ethtool_drvinfo *info
 	}
 #ifdef CONFIG_SBUS
 	else {
-		const struct linux_prom_registers *regs;
+		const struct linaos_prom_registers *regs;
 		struct platform_device *op = hp->happy_dev;
 		regs = of_get_property(op->dev.of_node, "regs", NULL);
 		if (regs)

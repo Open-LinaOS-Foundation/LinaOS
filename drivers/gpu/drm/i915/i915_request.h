@@ -25,11 +25,11 @@
 #ifndef I915_REQUEST_H
 #define I915_REQUEST_H
 
-#include <linux/dma-fence.h>
-#include <linux/hrtimer.h>
-#include <linux/irq_work.h>
-#include <linux/llist.h>
-#include <linux/lockdep.h>
+#include <linaos/dma-fence.h>
+#include <linaos/hrtimer.h>
+#include <linaos/irq_work.h>
+#include <linaos/llist.h>
+#include <linaos/lockdep.h>
 
 #include "gem/i915_gem_context_types.h"
 #include "gt/intel_context_types.h"

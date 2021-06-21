@@ -2,26 +2,26 @@
 /* Copyright (c) 2011-2015 PLUMgrid, http://plumgrid.com
  * Copyright (c) 2016 Facebook
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/bpf.h>
-#include <linux/bpf_perf_event.h>
-#include <linux/btf.h>
-#include <linux/filter.h>
-#include <linux/uaccess.h>
-#include <linux/ctype.h>
-#include <linux/kprobes.h>
-#include <linux/spinlock.h>
-#include <linux/syscalls.h>
-#include <linux/error-injection.h>
-#include <linux/btf_ids.h>
-#include <linux/bpf_lsm.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_perf_event.h>
+#include <linaos/btf.h>
+#include <linaos/filter.h>
+#include <linaos/uaccess.h>
+#include <linaos/ctype.h>
+#include <linaos/kprobes.h>
+#include <linaos/spinlock.h>
+#include <linaos/syscalls.h>
+#include <linaos/error-injection.h>
+#include <linaos/btf_ids.h>
+#include <linaos/bpf_lsm.h>
 
 #include <net/bpf_sk_storage.h>
 
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/btf.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/btf.h>
 
 #include <asm/tlb.h>
 
@@ -904,7 +904,7 @@ static int bpf_btf_printf_prepare(struct btf_ptr *ptr, u32 btf_ptr_size,
 	if (btf_ptr_size != sizeof(struct btf_ptr))
 		return -EINVAL;
 
-	*btf = bpf_get_btf_vmlinux();
+	*btf = bpf_get_btf_vmlinaos();
 
 	if (IS_ERR_OR_NULL(*btf))
 		return IS_ERR(*btf) ? PTR_ERR(*btf) : -EINVAL;

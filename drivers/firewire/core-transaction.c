@@ -5,26 +5,26 @@
  * Copyright (C) 2004-2006 Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/rculist.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/bug.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/firewire.h>
+#include <linaos/firewire-constants.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/idr.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/rculist.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
 #include <asm/byteorder.h>
 

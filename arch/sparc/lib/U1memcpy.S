@@ -2,11 +2,11 @@
 /* U1memcpy.S: UltraSPARC-I/II/IIi/IIe optimized memcpy.
  *
  * Copyright (C) 1997, 2004 David S. Miller (davem@redhat.com)
- * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1996, 1997, 1998, 1999 Jakub Jelinek (jj@ultra.linaos.cz)
  */
 
 #ifdef __KERNEL__
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/visasm.h>
 #include <asm/asi.h>
 #include <asm/export.h>

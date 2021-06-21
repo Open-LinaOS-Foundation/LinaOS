@@ -6,28 +6,28 @@
  * Copyright 2010, 2011 David Jander <david@protonic.nl>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/hrtimer.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/workqueue.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/spinlock.h>
+#include <linaos/hrtimer.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/sched.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/sysctl.h>
+#include <linaos/proc_fs.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/input.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/workqueue.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/spinlock.h>
 #include <dt-bindings/input/gpio-keys.h>
 
 struct gpio_button_data {
@@ -757,7 +757,7 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 			button->irq =
 				irq_of_parse_and_map(to_of_node(child), 0);
 
-		if (fwnode_property_read_u32(child, "linux,code",
+		if (fwnode_property_read_u32(child, "linaos,code",
 					     &button->code)) {
 			dev_err(dev, "Button without keycode\n");
 			fwnode_handle_put(child);
@@ -766,7 +766,7 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 
 		fwnode_property_read_string(child, "label", &button->desc);
 
-		if (fwnode_property_read_u32(child, "linux,input-type",
+		if (fwnode_property_read_u32(child, "linaos,input-type",
 					     &button->type))
 			button->type = EV_KEY;
 
@@ -779,7 +779,7 @@ gpio_keys_get_devtree_pdata(struct device *dev)
 					 &button->wakeup_event_action);
 
 		button->can_disable =
-			fwnode_property_read_bool(child, "linux,can-disable");
+			fwnode_property_read_bool(child, "linaos,can-disable");
 
 		if (fwnode_property_read_u32(child, "debounce-interval",
 					 &button->debounce_interval))
@@ -854,7 +854,7 @@ static int gpio_keys_probe(struct platform_device *pdev)
 	input->keycodesize = sizeof(ddata->keymap[0]);
 	input->keycodemax = pdata->nbuttons;
 
-	/* Enable auto repeat feature of Linux input subsystem */
+	/* Enable auto repeat feature of LinaOS input subsystem */
 	if (pdata->rep)
 		__set_bit(EV_REP, input->evbit);
 

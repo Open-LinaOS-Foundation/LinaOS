@@ -13,9 +13,9 @@
 #ifndef _CHARGER_MANAGER_H
 #define _CHARGER_MANAGER_H
 
-#include <linux/power_supply.h>
-#include <linux/extcon.h>
-#include <linux/alarmtimer.h>
+#include <linaos/power_supply.h>
+#include <linaos/extcon.h>
+#include <linaos/alarmtimer.h>
 
 enum data_source {
 	CM_BATTERY_PRESENT,

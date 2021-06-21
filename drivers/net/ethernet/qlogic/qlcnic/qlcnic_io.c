@@ -4,12 +4,12 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/ipv6.h>
 #include <net/checksum.h>
-#include <linux/printk.h>
+#include <linaos/printk.h>
 
 #include "qlcnic.h"
 

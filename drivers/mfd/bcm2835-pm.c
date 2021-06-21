@@ -6,16 +6,16 @@
  * the WDT and power drivers.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mfd/bcm2835-pm.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/mfd/bcm2835-pm.h>
+#include <linaos/mfd/core.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
 
 static const struct mfd_cell bcm2835_pm_devs[] = {
 	{ .name = "bcm2835-wdt" },

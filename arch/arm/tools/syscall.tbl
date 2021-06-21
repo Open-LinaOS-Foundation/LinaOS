@@ -1,5 +1,5 @@
 #
-# Linux system call numbers and entry vectors
+# LinaOS system call numbers and entry vectors
 #
 # The format is:
 # <num>	<abi>	<name>			[<entry point>			[<oabi compat entry point>]]

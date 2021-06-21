@@ -22,7 +22,7 @@
  */
 #include "ecdh_helper.h"
 
-#include <linux/scatterlist.h>
+#include <linaos/scatterlist.h>
 #include <crypto/ecdh.h>
 
 struct ecdh_completion {

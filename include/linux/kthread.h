@@ -2,8 +2,8 @@
 #ifndef _LINUX_KTHREAD_H
 #define _LINUX_KTHREAD_H
 /* Simple interface for creating and stopping kernel threads without mess. */
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
 
 struct mm_struct;
 

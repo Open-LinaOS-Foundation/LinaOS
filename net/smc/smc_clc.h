@@ -7,7 +7,7 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@linaos.vnet.ibm.com>
  */
 
 #ifndef _SMC_CLC_H
@@ -151,7 +151,7 @@ struct smc_clc_smcd_v2_extension {
 	struct smc_clc_smcd_gid_chid gidchid[];
 };
 
-struct smc_clc_msg_proposal {	/* clc proposal message sent by Linux */
+struct smc_clc_msg_proposal {	/* clc proposal message sent by LinaOS */
 	struct smc_clc_msg_hdr hdr;
 	struct smc_clc_msg_local lcl;
 	__be16 iparea_offset;	/* offset to IP address information area */

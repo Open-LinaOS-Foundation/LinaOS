@@ -9,19 +9,19 @@
  *    -- Initial Write (Borrowed heavily from ARM)
  */
 
-#include <linux/spinlock.h>
-#include <linux/sched/mm.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
-#include <linux/atomic.h>
-#include <linux/cpumask.h>
-#include <linux/reboot.h>
-#include <linux/irqdomain.h>
-#include <linux/export.h>
-#include <linux/of_fdt.h>
+#include <linaos/spinlock.h>
+#include <linaos/sched/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/profile.h>
+#include <linaos/mm.h>
+#include <linaos/cpu.h>
+#include <linaos/irq.h>
+#include <linaos/atomic.h>
+#include <linaos/cpumask.h>
+#include <linaos/reboot.h>
+#include <linaos/irqdomain.h>
+#include <linaos/export.h>
+#include <linaos/of_fdt.h>
 
 #include <asm/processor.h>
 #include <asm/setup.h>

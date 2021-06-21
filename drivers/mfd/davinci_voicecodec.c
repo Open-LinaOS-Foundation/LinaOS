@@ -7,18 +7,18 @@
  * Author: Miguel Aguilar <miguel.aguilar@ridgerun.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/regmap.h>
 
 #include <sound/pcm.h>
 
-#include <linux/mfd/davinci_voicecodec.h>
+#include <linaos/mfd/davinci_voicecodec.h>
 
 static const struct regmap_config davinci_vc_regmap = {
 	.reg_bits = 32,

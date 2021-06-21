@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The LinaOS Foundation. All rights reserved.
  */
 
 #include <asm/div64.h>
-#include <linux/interconnect-provider.h>
-#include <linux/list_sort.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/interconnect-provider.h>
+#include <linaos/list_sort.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 #include <soc/qcom/rpmh.h>
 #include <soc/qcom/tcs.h>

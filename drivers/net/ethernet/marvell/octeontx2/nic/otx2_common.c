@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/pci.h>
 #include <net/tso.h>
 
 #include "otx2_reg.h"

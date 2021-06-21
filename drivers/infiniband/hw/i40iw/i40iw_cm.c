@@ -32,24 +32,24 @@
 *
 *******************************************************************************/
 
-#include <linux/atomic.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/init.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/notifier.h>
-#include <linux/net.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/random.h>
-#include <linux/list.h>
-#include <linux/threads.h>
-#include <linux/highmem.h>
+#include <linaos/atomic.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/init.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_vlan.h>
+#include <linaos/notifier.h>
+#include <linaos/net.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/time.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/random.h>
+#include <linaos/list.h>
+#include <linaos/threads.h>
+#include <linaos/highmem.h>
 #include <net/arp.h>
 #include <net/ndisc.h>
 #include <net/neighbour.h>

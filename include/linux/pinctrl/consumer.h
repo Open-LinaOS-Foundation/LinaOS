@@ -11,10 +11,10 @@
 #ifndef __LINUX_PINCTRL_CONSUMER_H
 #define __LINUX_PINCTRL_CONSUMER_H
 
-#include <linux/err.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/pinctrl/pinctrl-state.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
+#include <linaos/seq_file.h>
+#include <linaos/pinctrl/pinctrl-state.h>
 
 /* This struct is private to the core and should be regarded as a cookie */
 struct pinctrl;

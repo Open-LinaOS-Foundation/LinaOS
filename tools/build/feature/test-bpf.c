@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <asm/unistd.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <unistd.h>
 
 #ifndef __NR_bpf

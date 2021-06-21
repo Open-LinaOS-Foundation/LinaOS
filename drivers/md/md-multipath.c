@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * multipath.c : Multiple Devices driver for Linux
+ * multipath.c : Multiple Devices driver for LinaOS
  *
  * Copyright (C) 1999, 2000, 2001 Ingo Molnar, Red Hat
  *
@@ -11,11 +11,11 @@
  * derived from raid1.c.
  */
 
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/raid/md_u.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/blkdev.h>
+#include <linaos/module.h>
+#include <linaos/raid/md_u.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 #include "md.h"
 #include "md-multipath.h"
 

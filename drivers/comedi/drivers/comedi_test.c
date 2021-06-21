@@ -10,7 +10,7 @@
  * Copyright (C) 2002 Joachim Wuttke <Joachim.Wuttke@icn.siemens.de>
  * Copyright (C) 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -44,16 +44,16 @@
  * zero volts).
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "../comedidev.h"
 
 #include <asm/div64.h>
 
-#include <linux/timer.h>
-#include <linux/ktime.h>
-#include <linux/jiffies.h>
-#include <linux/device.h>
-#include <linux/kdev_t.h>
+#include <linaos/timer.h>
+#include <linaos/ktime.h>
+#include <linaos/jiffies.h>
+#include <linaos/device.h>
+#include <linaos/kdev_t.h>
 
 #define N_CHANS 8
 #define DEV_NAME "comedi_testd"

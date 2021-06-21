@@ -3,11 +3,11 @@
 /* Authors: Bernard Metzler <bmt@zurich.ibm.com> */
 /* Copyright (c) 2008-2019, IBM Corporation */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
-#include <linux/xarray.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/vmalloc.h>
+#include <linaos/xarray.h>
 
 #include <rdma/iw_cm.h>
 #include <rdma/ib_verbs.h>

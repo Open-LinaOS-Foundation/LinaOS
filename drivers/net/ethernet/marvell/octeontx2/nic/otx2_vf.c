@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Marvell OcteonTx2 RVU Virtual Function ethernet driver */
 
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include "otx2_common.h"
 #include "otx2_reg.h"

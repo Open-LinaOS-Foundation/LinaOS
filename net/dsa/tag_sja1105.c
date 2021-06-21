@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019, Vladimir Oltean <olteanv@gmail.com>
  */
-#include <linux/if_vlan.h>
-#include <linux/dsa/sja1105.h>
-#include <linux/dsa/8021q.h>
-#include <linux/packing.h>
+#include <linaos/if_vlan.h>
+#include <linaos/dsa/sja1105.h>
+#include <linaos/dsa/8021q.h>
+#include <linaos/packing.h>
 #include "dsa_priv.h"
 
 /* Similar to is_link_local_ether_addr(hdr->h_dest) but also covers PTP */

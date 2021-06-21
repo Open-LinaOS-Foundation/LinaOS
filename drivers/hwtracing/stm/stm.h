@@ -10,7 +10,7 @@
 #ifndef _STM_STM_H_
 #define _STM_STM_H_
 
-#include <linux/configfs.h>
+#include <linaos/configfs.h>
 
 struct stp_policy;
 struct stp_policy_node;

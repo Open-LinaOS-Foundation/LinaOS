@@ -8,14 +8,14 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/stmmac.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_net.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/stmmac.h>
 
 #include "stmmac_platform.h"
 

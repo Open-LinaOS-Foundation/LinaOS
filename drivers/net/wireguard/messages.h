@@ -10,9 +10,9 @@
 #include <crypto/chacha20poly1305.h>
 #include <crypto/blake2s.h>
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/skbuff.h>
+#include <linaos/kernel.h>
+#include <linaos/param.h>
+#include <linaos/skbuff.h>
 
 enum noise_lengths {
 	NOISE_PUBLIC_KEY_LEN = CURVE25519_KEY_SIZE,

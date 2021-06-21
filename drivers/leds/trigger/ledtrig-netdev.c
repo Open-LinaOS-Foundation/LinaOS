@@ -10,18 +10,18 @@
 //  Copyright 2005-2006 Openedhand Ltd.
 //  Author: Richard Purdie <rpurdie@openedhand.com>
 
-#include <linux/atomic.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
+#include <linaos/atomic.h>
+#include <linaos/ctype.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/leds.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/timer.h>
 #include "../leds.h"
 
 /*

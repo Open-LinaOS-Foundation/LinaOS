@@ -2,12 +2,12 @@
 #ifndef _LINUX_OF_DEVICE_H
 #define _LINUX_OF_DEVICE_H
 
-#include <linux/cpu.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h> /* temporary until merge */
+#include <linaos/cpu.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_platform.h> /* temporary until merge */
 
-#include <linux/of.h>
-#include <linux/mod_devicetable.h>
+#include <linaos/of.h>
+#include <linaos/mod_devicetable.h>
 
 struct device;
 

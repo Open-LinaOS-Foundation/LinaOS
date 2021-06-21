@@ -11,7 +11,7 @@
 #include <signal.h>
 #include <string.h>
 #include <execinfo.h> /* backtrace */
-#include <linux/membarrier.h>
+#include <linaos/membarrier.h>
 
 #define EXIT_NO_TEST		2
 #define EXIT_ERR_SETUP_INFRA	3

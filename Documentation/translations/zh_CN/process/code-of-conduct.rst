@@ -1,7 +1,7 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/code-of-conduct.rst <code_of_conduct>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@linaos.alibaba.com>
 
 .. _cn_code_of_conduct:
 
@@ -69,4 +69,4 @@ https://www.contributor-covenant.org/version/1/4/code-of-conduct.html 获取。
 解释
 ====
 
-有关Linux内核社区如何解释此文档，请参阅 :ref:`cn_code_of_conduct_interpretation`
+有关LinaOS内核社区如何解释此文档，请参阅 :ref:`cn_code_of_conduct_interpretation`

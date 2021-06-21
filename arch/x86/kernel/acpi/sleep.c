@@ -6,17 +6,17 @@
  *  Copyright (C) 2001-2003 Pavel Machek <pavel@ucw.cz>
  */
 
-#include <linux/acpi.h>
-#include <linux/memblock.h>
-#include <linux/dmi.h>
-#include <linux/cpumask.h>
-#include <linux/pgtable.h>
+#include <linaos/acpi.h>
+#include <linaos/memblock.h>
+#include <linaos/dmi.h>
+#include <linaos/cpumask.h>
+#include <linaos/pgtable.h>
 #include <asm/segment.h>
 #include <asm/desc.h>
 #include <asm/cacheflush.h>
 #include <asm/realmode.h>
 
-#include <linux/ftrace.h>
+#include <linaos/ftrace.h>
 #include "../../realmode/rm/wakeup.h"
 #include "sleep.h"
 

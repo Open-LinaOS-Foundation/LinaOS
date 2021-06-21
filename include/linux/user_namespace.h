@@ -2,14 +2,14 @@
 #ifndef _LINUX_USER_NAMESPACE_H
 #define _LINUX_USER_NAMESPACE_H
 
-#include <linux/kref.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/rwsem.h>
-#include <linux/sysctl.h>
-#include <linux/err.h>
+#include <linaos/kref.h>
+#include <linaos/nsproxy.h>
+#include <linaos/ns_common.h>
+#include <linaos/sched.h>
+#include <linaos/workqueue.h>
+#include <linaos/rwsem.h>
+#include <linaos/sysctl.h>
+#include <linaos/err.h>
 
 #define UID_GID_MAP_MAX_BASE_EXTENTS 5
 #define UID_GID_MAP_MAX_EXTENTS 340

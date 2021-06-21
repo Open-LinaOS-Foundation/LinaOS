@@ -6,7 +6,7 @@
  * Author: Ryder Lee <ryder.lee@mediatek.com>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <sound/soc.h>
 
 #include "mt2701-afe-common.h"

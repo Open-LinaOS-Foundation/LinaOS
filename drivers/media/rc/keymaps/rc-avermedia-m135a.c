@@ -5,7 +5,7 @@
 // Copyright (c) 2010 by Herton Ronaldo Krzesinski <herton@mandriva.com.br>
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /*
  * Avermedia M135A with RM-JX and RM-K6 remote controls

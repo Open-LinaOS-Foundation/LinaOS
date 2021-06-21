@@ -9,11 +9,11 @@
  */
 
 #include "cx231xx.h"
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 #include <media/v4l2-common.h>
 #include <media/tuner.h>
 

@@ -9,7 +9,7 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 

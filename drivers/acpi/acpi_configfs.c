@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "ACPI configfs: " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/configfs.h>
-#include <linux/acpi.h>
-#include <linux/security.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/configfs.h>
+#include <linaos/acpi.h>
+#include <linaos/security.h>
 
 #include "acpica/accommon.h"
 #include "acpica/actables.h"

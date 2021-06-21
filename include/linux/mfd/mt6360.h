@@ -6,7 +6,7 @@
 #ifndef __MT6360_H__
 #define __MT6360_H__
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 enum {
 	MT6360_SLAVE_PMU = 0,

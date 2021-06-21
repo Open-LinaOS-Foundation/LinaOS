@@ -1,4 +1,4 @@
-/* linux/drivers/video/s3c2410fb.c
+/* linaos/drivers/video/s3c2410fb.c
  *	Copyright (c) 2004,2005 Arnaud Patard
  *	Copyright (c) 2004-2008 Ben Dooks
  *
@@ -13,30 +13,30 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/io.h>
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/cpufreq.h>
+#include <linaos/io.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 
 #include <asm/div64.h>
 
 #include <asm/mach/map.h>
 
 #ifdef CONFIG_PM
-#include <linux/pm.h>
+#include <linaos/pm.h>
 #endif
 
 #include "s3c2410fb.h"
@@ -1135,7 +1135,7 @@ module_init(s3c2410fb_init);
 module_exit(s3c2410fb_cleanup);
 
 MODULE_AUTHOR("Arnaud Patard <arnaud.patard@rtp-net.org>");
-MODULE_AUTHOR("Ben Dooks <ben-linux@fluff.org>");
+MODULE_AUTHOR("Ben Dooks <ben-linaos@fluff.org>");
 MODULE_DESCRIPTION("Framebuffer driver for the s3c2410");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:s3c2410-lcd");

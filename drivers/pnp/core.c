@@ -5,17 +5,17 @@
  * Copyright 2002 Adam Belay <ambx1@neo.rr.com>
  */
 
-#include <linux/pnp.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/dma-mapping.h>
+#include <linaos/pnp.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/dma-mapping.h>
 
 #include "base.h"
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: (GPL-2.0 WITH Linux-syscall-note) */
+/* SPDX-License-Identifier: (GPL-2.0 WITH LinaOS-syscall-note) */
 /* Copyright (C) B.A.T.M.A.N. contributors:
  *
  * Marek Lindner, Simon Wunderlich
@@ -8,8 +8,8 @@
 #define _UAPI_LINUX_BATADV_PACKET_H_
 
 #include <asm/byteorder.h>
-#include <linux/if_ether.h>
-#include <linux/types.h>
+#include <linaos/if_ether.h>
+#include <linaos/types.h>
 
 /**
  * batadv_tp_is_error() - Check throughput meter return code for error

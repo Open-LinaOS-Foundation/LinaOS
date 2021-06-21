@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB */
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -6,14 +6,14 @@
 #ifndef ENA_H
 #define ENA_H
 
-#include <linux/bitops.h>
-#include <linux/dim.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/inetdevice.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/bitops.h>
+#include <linaos/dim.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/inetdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/skbuff.h>
 
 #include "ena_com.h"
 #include "ena_eth_com.h"

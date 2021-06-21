@@ -13,7 +13,7 @@
 #include <sys/wait.h>
 #include <stdlib.h>
 #include <signal.h>
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <string.h>
 #include <time.h>
 #include <sys/resource.h>

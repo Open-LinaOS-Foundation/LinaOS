@@ -2,8 +2,8 @@
 #ifndef _ASM_S390_STACKTRACE_H
 #define _ASM_S390_STACKTRACE_H
 
-#include <linux/uaccess.h>
-#include <linux/ptrace.h>
+#include <linaos/uaccess.h>
+#include <linaos/ptrace.h>
 #include <asm/switch_to.h>
 
 enum stack_type {

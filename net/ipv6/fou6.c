@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/icmpv6.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/errno.h>
+#include <linaos/socket.h>
+#include <linaos/skbuff.h>
+#include <linaos/ip.h>
+#include <linaos/udp.h>
+#include <linaos/icmpv6.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
 #include <net/fou.h>
 #include <net/ip.h>
 #include <net/ip6_tunnel.h>

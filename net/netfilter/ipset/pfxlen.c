@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/netfilter/ipset/pfxlen.h>
+#include <linaos/export.h>
+#include <linaos/netfilter/ipset/pfxlen.h>
 
 /* Prefixlen maps for fast conversions, by Jan Engelhardt. */
 

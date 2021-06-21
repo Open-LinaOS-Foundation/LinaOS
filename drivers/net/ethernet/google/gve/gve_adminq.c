@@ -4,8 +4,8 @@
  * Copyright (C) 2015-2019 Google, Inc.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
+#include <linaos/etherdevice.h>
+#include <linaos/pci.h>
 #include "gve.h"
 #include "gve_adminq.h"
 #include "gve_register.h"

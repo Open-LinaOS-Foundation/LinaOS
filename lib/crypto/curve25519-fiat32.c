@@ -12,7 +12,7 @@
 
 #include <asm/unaligned.h>
 #include <crypto/curve25519.h>
-#include <linux/string.h>
+#include <linaos/string.h>
 
 /* fe means field element. Here the field is \Z/(2^255-19). An element t,
  * entries t[0]...t[9], represents the integer t[0]+2^26 t[1]+2^51 t[2]+2^77

@@ -24,19 +24,19 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/irqnr.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/cpuhotplug.h>
-#include <linux/atomic.h>
-#include <linux/ktime.h>
+#include <linaos/linkage.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/memblock.h>
+#include <linaos/slab.h>
+#include <linaos/irqnr.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/atomic.h>
+#include <linaos/ktime.h>
 
 #ifdef CONFIG_X86
 #include <asm/desc.h>
@@ -1792,7 +1792,7 @@ static int xen_rebind_evtchn_to_cpu(struct irq_info *info, unsigned int tcpu)
 	/*
 	 * If this fails, it usually just indicates that we're dealing with a
 	 * virq or IPI channel, which don't actually need to be rebound. Ignore
-	 * it, but don't do the xenlinux-level rebind in that case.
+	 * it, but don't do the xenlinaos-level rebind in that case.
 	 */
 	if (HYPERVISOR_event_channel_op(EVTCHNOP_bind_vcpu, &bind_vcpu) >= 0)
 		bind_evtchn_to_cpu(evtchn, tcpu, false);

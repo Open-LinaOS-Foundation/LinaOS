@@ -9,7 +9,7 @@
  */
 
 #include "emux_voice.h"
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #ifdef SNDRV_EMUX_USE_RAW_EFFECT
 /*

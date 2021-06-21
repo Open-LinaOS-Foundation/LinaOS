@@ -45,7 +45,7 @@
 		led1 {
 			label = "system::live";
 			gpios = <&gpio6 16 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led2 {
@@ -109,7 +109,7 @@
 };
 
 &kpp {
-	linux,keymap = <
+	linaos,keymap = <
 		MATRIX_KEY(0, 0, KEY_UP)
 		MATRIX_KEY(0, 1, KEY_DOWN)
 		MATRIX_KEY(1, 0, KEY_RIGHT)

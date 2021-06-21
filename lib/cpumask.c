@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/numa.h>
+#include <linaos/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/bitops.h>
+#include <linaos/cpumask.h>
+#include <linaos/export.h>
+#include <linaos/memblock.h>
+#include <linaos/numa.h>
 
 /**
  * cpumask_next - get the next cpu in a cpumask
@@ -102,7 +102,7 @@ EXPORT_SYMBOL(cpumask_next_wrap);
  * @flags: GFP_ flags
  *
  * Only defined when CONFIG_CPUMASK_OFFSTACK=y, otherwise is
- * a nop returning a constant 1 (in <linux/cpumask.h>)
+ * a nop returning a constant 1 (in <linaos/cpumask.h>)
  * Returns TRUE if memory allocation succeeded, FALSE otherwise.
  *
  * In addition, mask will be NULL if this fails.  Note that gcc is
@@ -137,7 +137,7 @@ EXPORT_SYMBOL(zalloc_cpumask_var_node);
  * @flags: GFP_ flags
  *
  * Only defined when CONFIG_CPUMASK_OFFSTACK=y, otherwise is
- * a nop returning a constant 1 (in <linux/cpumask.h>).
+ * a nop returning a constant 1 (in <linaos/cpumask.h>).
  *
  * See alloc_cpumask_var_node.
  */
@@ -158,7 +158,7 @@ EXPORT_SYMBOL(zalloc_cpumask_var);
  * @mask: pointer to cpumask_var_t where the cpumask is returned
  *
  * Only defined when CONFIG_CPUMASK_OFFSTACK=y, otherwise is
- * a nop (in <linux/cpumask.h>).
+ * a nop (in <linaos/cpumask.h>).
  * Either returns an allocated (zero-filled) cpumask, or causes the
  * system to panic.
  */

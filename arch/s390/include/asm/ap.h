@@ -4,7 +4,7 @@
  *
  * Copyright IBM Corp. 2017
  *
- * Author(s): Tony Krowiak <akrowia@linux.vnet.ibm.com>
+ * Author(s): Tony Krowiak <akrowia@linaos.vnet.ibm.com>
  *	      Martin Schwidefsky <schwidefsky@de.ibm.com>
  *	      Harald Freudenberger <freude@de.ibm.com>
  */

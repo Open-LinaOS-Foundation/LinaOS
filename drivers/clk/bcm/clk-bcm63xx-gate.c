@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <linaos/clk-provider.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
 
 #include <dt-bindings/clock/bcm3368-clock.h>
 #include <dt-bindings/clock/bcm6318-clock.h>

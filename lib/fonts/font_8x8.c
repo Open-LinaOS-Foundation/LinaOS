@@ -5,7 +5,7 @@
 /*                                            */
 /**********************************************/
 
-#include <linux/font.h>
+#include <linaos/font.h>
 
 #define FONTDATAMAX 2048
 

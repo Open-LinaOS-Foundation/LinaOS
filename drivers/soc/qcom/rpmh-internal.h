@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  */
 
 
 #ifndef __RPM_INTERNAL_H__
 #define __RPM_INTERNAL_H__
 
-#include <linux/bitmap.h>
-#include <linux/wait.h>
+#include <linaos/bitmap.h>
+#include <linaos/wait.h>
 #include <soc/qcom/tcs.h>
 
 #define TCS_TYPE_NR			4

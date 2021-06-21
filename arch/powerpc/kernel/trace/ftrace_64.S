@@ -3,7 +3,7 @@
  * Split from entry_64.S
  */
 
-#include <linux/magic.h>
+#include <linaos/magic.h>
 #include <asm/ppc_asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/ftrace.h>

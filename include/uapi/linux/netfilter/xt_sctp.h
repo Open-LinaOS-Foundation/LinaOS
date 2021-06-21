@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _XT_SCTP_H_
 #define _XT_SCTP_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define XT_SCTP_SRC_PORTS	        0x01
 #define XT_SCTP_DEST_PORTS	        0x02

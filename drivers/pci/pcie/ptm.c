@@ -4,9 +4,9 @@
  * Copyright (c) 2016, Intel Corporation.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
 #include "../pci.h"
 
 static void pci_ptm_info(struct pci_dev *dev)

@@ -31,15 +31,15 @@
  * SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include <net/tcp.h>
 #include <net/inet_common.h>
-#include <linux/highmem.h>
-#include <linux/netdevice.h>
-#include <linux/sched/signal.h>
-#include <linux/inetdevice.h>
-#include <linux/inet_diag.h>
+#include <linaos/highmem.h>
+#include <linaos/netdevice.h>
+#include <linaos/sched/signal.h>
+#include <linaos/inetdevice.h>
+#include <linaos/inet_diag.h>
 
 #include <net/snmp.h>
 #include <net/tls.h>
@@ -829,7 +829,7 @@ static int __net_init tls_init_net(struct net *net)
 {
 	int err;
 
-	net->mib.tls_statistics = alloc_percpu(struct linux_tls_mib);
+	net->mib.tls_statistics = alloc_percpu(struct linaos_tls_mib);
 	if (!net->mib.tls_statistics)
 		return -ENOMEM;
 

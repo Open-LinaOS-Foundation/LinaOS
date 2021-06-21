@@ -7,19 +7,19 @@
  * Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/iio/sysfs.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/buffer.h>
-#include <linux/regmap.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqreturn.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/regmap.h>
 
 #include "st_uvis25.h"
 

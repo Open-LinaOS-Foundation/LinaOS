@@ -21,8 +21,8 @@
 *  Dependencies
 ******************************************/
 #include <asm/unaligned.h>
-#include <linux/string.h> /* memcpy */
-#include <linux/types.h>  /* size_t, ptrdiff_t */
+#include <linaos/string.h> /* memcpy */
+#include <linaos/types.h>  /* size_t, ptrdiff_t */
 
 /*-****************************************
 *  Compiler specifics

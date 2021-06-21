@@ -10,7 +10,7 @@
  * XXX these should be marked initdata for multi-OMAP kernels
  */
 
-#include <linux/platform_data/i2c-omap.h>
+#include <linaos/platform_data/i2c-omap.h>
 
 #include "omap_hwmod.h"
 #include "l3_2xxx.h"

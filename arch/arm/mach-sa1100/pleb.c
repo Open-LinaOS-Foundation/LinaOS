@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/arm/mach-sa1100/pleb.c
+ * linaos/arch/arm/mach-sa1100/pleb.c
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
-#include <linux/smc91x.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/tty.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_data/sa11x0-serial.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/smc91x.h>
 
 #include <mach/hardware.h>
 #include <asm/setup.h>

@@ -7,8 +7,8 @@
 #ifndef __SYSDEP_X86_64_SYSCALLS_H__
 #define __SYSDEP_X86_64_SYSCALLS_H__
 
-#include <linux/msg.h>
-#include <linux/shm.h>
+#include <linaos/msg.h>
+#include <linaos/shm.h>
 
 typedef long syscall_handler_t(void);
 

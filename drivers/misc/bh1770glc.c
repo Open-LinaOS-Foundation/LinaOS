@@ -8,18 +8,18 @@
  * Contact: Samu Onkalo <samu.p.onkalo@nokia.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/platform_data/bh1770glc.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/interrupt.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_data/bh1770glc.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
 
 #define BH1770_ALS_CONTROL	0x80 /* ALS operation mode control */
 #define BH1770_PS_CONTROL	0x81 /* PS operation mode control */

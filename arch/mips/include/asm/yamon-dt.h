@@ -7,7 +7,7 @@
 #ifndef __MIPS_ASM_YAMON_DT_H__
 #define __MIPS_ASM_YAMON_DT_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct yamon_mem_region - Represents a contiguous range of physical RAM.

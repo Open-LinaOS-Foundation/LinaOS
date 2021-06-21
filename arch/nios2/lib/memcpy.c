@@ -17,7 +17,7 @@
    License along with the GNU C Library; if not, see
    <http://www.gnu.org/licenses/>.  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Type to use for aligned memory operations.
    This should normally be the biggest type supported by a single load

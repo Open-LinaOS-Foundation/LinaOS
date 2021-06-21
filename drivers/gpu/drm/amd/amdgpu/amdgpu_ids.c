@@ -22,8 +22,8 @@
  */
 #include "amdgpu_ids.h"
 
-#include <linux/idr.h>
-#include <linux/dma-fence-array.h>
+#include <linaos/idr.h>
+#include <linaos/dma-fence-array.h>
 
 
 #include "amdgpu.h"

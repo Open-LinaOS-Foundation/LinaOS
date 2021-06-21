@@ -5,7 +5,7 @@ FPGA Device Feature List (DFL) Framework Overview
 Authors:
 
 - Enno Luebbers <enno.luebbers@intel.com>
-- Xiao Guangrong <guangrong.xiao@linux.intel.com>
+- Xiao Guangrong <guangrong.xiao@linaos.intel.com>
 - Wu Hao <hao.wu@intel.com>
 - Xu Yilun <yilun.xu@intel.com>
 

@@ -7,22 +7,22 @@
  *         Tai Nguyen <ttnguyen@apm.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/clk.h>
+#include <linaos/cpuhotplug.h>
+#include <linaos/cpumask.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/perf_event.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #define CSW_CSWCR                       0x0000
 #define  CSW_CSWCR_DUALMCB_MASK         BIT(0)

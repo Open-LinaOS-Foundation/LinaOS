@@ -7,17 +7,17 @@
 #ifndef SPI_PXA2XX_H
 #define SPI_PXA2XX_H
 
-#include <linux/atomic.h>
-#include <linux/dmaengine.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/scatterlist.h>
-#include <linux/sizes.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
+#include <linaos/atomic.h>
+#include <linaos/dmaengine.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/pxa2xx_ssp.h>
+#include <linaos/scatterlist.h>
+#include <linaos/sizes.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
 
 struct driver_data {
 	/* Driver model hookup */

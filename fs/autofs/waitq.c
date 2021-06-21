@@ -4,7 +4,7 @@
  * Copyright 2001-2006 Ian Kent <raven@themaw.net>
  */
 
-#include <linux/sched/signal.h>
+#include <linaos/sched/signal.h>
 #include "autofs_i.h"
 
 /* We make this a static variable rather than a part of the superblock; it

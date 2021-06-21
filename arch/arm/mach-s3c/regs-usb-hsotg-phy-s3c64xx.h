@@ -2,7 +2,7 @@
 /*
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *      Ben Dooks <ben@simtec.co.uk>
  *
  * S3C - USB2.0 Highspeed/OtG device PHY registers

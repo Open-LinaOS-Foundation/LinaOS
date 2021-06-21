@@ -21,8 +21,8 @@
 #include <sys/utsname.h>
 #include <sys/sendfile.h>
 #include <sys/sysmacros.h>
-#include <linux/random.h>
-#include <linux/version.h>
+#include <linaos/random.h>
+#include <linaos/version.h>
 
 __attribute__((noreturn)) static void poweroff(void)
 {

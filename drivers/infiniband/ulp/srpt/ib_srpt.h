@@ -35,9 +35,9 @@
 #ifndef IB_SRPT_H
 #define IB_SRPT_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/wait.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/ib_sa.h>

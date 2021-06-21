@@ -4,7 +4,7 @@
  *             https://www.huawei.com/
  * Created by Gao Xiang <gaoxiang25@huawei.com>
  */
-#include <linux/security.h>
+#include <linaos/security.h>
 #include "xattr.h"
 
 struct xattr_iter {

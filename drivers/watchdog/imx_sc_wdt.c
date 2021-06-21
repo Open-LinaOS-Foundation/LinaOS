@@ -3,15 +3,15 @@
  * Copyright 2018-2019 NXP.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/watchdog.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/firmware/imx/sci.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/watchdog.h>
 
 #define DEFAULT_TIMEOUT 60
 /*

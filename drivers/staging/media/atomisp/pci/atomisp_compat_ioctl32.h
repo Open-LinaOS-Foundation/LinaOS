@@ -18,8 +18,8 @@
 #ifndef __ATOMISP_COMPAT_IOCTL32_H__
 #define __ATOMISP_COMPAT_IOCTL32_H__
 
-#include <linux/compat.h>
-#include <linux/videodev2.h>
+#include <linaos/compat.h>
+#include <linaos/videodev2.h>
 
 #include "atomisp_compat.h"
 

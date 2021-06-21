@@ -26,10 +26,10 @@
 #ifndef VIRTIO_DRV_H
 #define VIRTIO_DRV_H
 
-#include <linux/virtio.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_gpu.h>
+#include <linaos/virtio.h>
+#include <linaos/virtio_ids.h>
+#include <linaos/virtio_config.h>
+#include <linaos/virtio_gpu.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_drv.h>

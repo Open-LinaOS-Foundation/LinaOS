@@ -12,9 +12,9 @@
  * Copyright (c) 2017 Oracle and/or its affiliates. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/time.h>
+#include <linaos/string.h>
 #include <asm/io.h>
 #include <asm/unistd.h>
 #include <asm/timex.h>

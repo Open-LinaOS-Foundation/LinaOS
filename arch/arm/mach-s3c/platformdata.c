@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 //
-// Copyright 2010 Ben Dooks <ben-linux <at> fluff.org>
+// Copyright 2010 Ben Dooks <ben-linaos <at> fluff.org>
 //
 // Helper for platform data setting
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/platform_device.h>
 
 #include "devs.h"
 #include "sdhci.h"

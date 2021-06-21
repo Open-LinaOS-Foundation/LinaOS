@@ -3,14 +3,14 @@
 // Copyright (c) 2017 MediaTek Inc.
 // Author: Chenglin Xu <chenglin.xu@mediatek.com>
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/mt6380-regulator.h>
-#include <linux/regulator/of_regulator.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/mt6380-regulator.h>
+#include <linaos/regulator/of_regulator.h>
 
 /* PMIC Registers */
 #define MT6380_ALDO_CON_0                         0x0000

@@ -41,7 +41,7 @@
 		user_led: led-0 {
 			label = "green_led";
 			gpios = <&gpio7 2 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "keep";
 		};
 	};

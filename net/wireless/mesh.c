@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ieee80211.h>
-#include <linux/export.h>
+#include <linaos/ieee80211.h>
+#include <linaos/export.h>
 #include <net/cfg80211.h>
 #include "nl80211.h"
 #include "core.h"

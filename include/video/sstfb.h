@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/drivers/video/sstfb.h -- voodoo graphics frame buffer
+ * linaos/drivers/video/sstfb.h -- voodoo graphics frame buffer
  *
  *     Copyright (c) 2000,2001 Ghozlane Toumi <gtoumi@messel.emse.fr>
  *

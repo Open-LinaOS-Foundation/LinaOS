@@ -8,8 +8,8 @@
  * Copyright (C) 2002, Rohit Seth <rohit.seth@intel.com>
  */
 
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
 #include <asm/cacheflush.h>
 #include <asm/machdep.h>
 
@@ -28,7 +28,7 @@ int __hash_page_huge(unsigned long ea, unsigned long access, unsigned long vsid,
 
 	BUG_ON(shift != mmu_psize_defs[mmu_psize].shift);
 
-	/* Search the Linux page table for a match with va */
+	/* Search the LinaOS page table for a match with va */
 	vpn = hpt_vpn(ea, vsid, ssize);
 
 	/*

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/ide.h>
+#include <linaos/kernel.h>
+#include <linaos/ide.h>
 
 char *ide_media_string(ide_drive_t *drive)
 {

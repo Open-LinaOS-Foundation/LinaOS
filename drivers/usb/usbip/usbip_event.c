@@ -4,10 +4,10 @@
  * Copyright (C) 2015 Nobuo Iwata
  */
 
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <linaos/kthread.h>
+#include <linaos/export.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
 
 #include "usbip_common.h"
 

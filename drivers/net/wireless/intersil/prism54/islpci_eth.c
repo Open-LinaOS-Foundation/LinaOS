@@ -4,14 +4,14 @@
  *  Copyright (C) 2004 Aurelien Alleaume <slts@free.fr>
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
 
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_arp.h>
 #include <asm/byteorder.h>
 
 #include "prismcompat.h"

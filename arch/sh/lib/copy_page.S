@@ -6,7 +6,7 @@
  * Copyright (C) 2002  Toshinobu Sugioka
  * Copyright (C) 2006  Paul Mundt
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/page.h>
 
 /*

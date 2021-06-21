@@ -22,7 +22,7 @@
  * Authors: Christian König
  */
 
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 #include "amdgpu.h"
 #include "amdgpu_vm.h"
 #include "amdgpu_res_cursor.h"

@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_PCI_DIRECT_H
 #define _ASM_X86_PCI_DIRECT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Direct PCI access. This is used for PCI accesses in early boot before
    the PCI subsystem works. */

@@ -4,7 +4,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <sched.h>
 #include <signal.h>
 #include <stdio.h>

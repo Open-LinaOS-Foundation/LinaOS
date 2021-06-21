@@ -3,7 +3,7 @@
  * Copyright (C) 2014-15 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #ifdef __LITTLE_ENDIAN__
 # define SHIFT_1(RX,RY,IMM)	asl	RX, RY, IMM	; <<

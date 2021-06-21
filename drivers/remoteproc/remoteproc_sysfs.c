@@ -3,8 +3,8 @@
  * Remote Processor Framework
  */
 
-#include <linux/remoteproc.h>
-#include <linux/slab.h>
+#include <linaos/remoteproc.h>
+#include <linaos/slab.h>
 
 #include "remoteproc_internal.h"
 

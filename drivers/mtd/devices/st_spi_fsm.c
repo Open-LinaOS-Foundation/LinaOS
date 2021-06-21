@@ -8,19 +8,19 @@
  *
  * JEDEC probe based on drivers/mtd/devices/m25p80.c
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/spi-nor.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/clk.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/spi-nor.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
 
 #include "serial_flash_cmds.h"
 

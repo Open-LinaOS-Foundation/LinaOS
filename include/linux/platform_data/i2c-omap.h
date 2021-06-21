@@ -2,7 +2,7 @@
 #ifndef __I2C_OMAP_H__
 #define __I2C_OMAP_H__
 
-#include <linux/platform_device.h>
+#include <linaos/platform_device.h>
 
 /*
  * Version 2 of the I2C peripheral unit has a different register

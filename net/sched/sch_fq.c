@@ -30,20 +30,20 @@
  *  or SLAB cache will reuse socket for another flow)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/rbtree.h>
-#include <linux/hash.h>
-#include <linux/prefetch.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/string.h>
+#include <linaos/in.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/rbtree.h>
+#include <linaos/hash.h>
+#include <linaos/prefetch.h>
+#include <linaos/vmalloc.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/sock.h>

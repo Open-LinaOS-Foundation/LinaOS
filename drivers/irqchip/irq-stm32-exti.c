@@ -5,20 +5,20 @@
  * Author:  Maxime Coquelin <mcoquelin.stm32@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/hwspinlock.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/syscore_ops.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/hwspinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/irqchip/chained_irq.h>
+#include <linaos/irqdomain.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/syscore_ops.h>
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 

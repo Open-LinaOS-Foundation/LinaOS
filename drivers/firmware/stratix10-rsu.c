@@ -3,18 +3,18 @@
  * Copyright (C) 2018-2019, Intel Corporation
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/firmware/intel/stratix10-svc-client.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
+#include <linaos/arm-smccc.h>
+#include <linaos/bitfield.h>
+#include <linaos/completion.h>
+#include <linaos/kobject.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/firmware/intel/stratix10-svc-client.h>
+#include <linaos/string.h>
+#include <linaos/sysfs.h>
 
 #define RSU_STATE_MASK			GENMASK_ULL(31, 0)
 #define RSU_VERSION_MASK		GENMASK_ULL(63, 32)

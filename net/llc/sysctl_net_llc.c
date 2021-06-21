@@ -5,9 +5,9 @@
  * Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/sysctl.h>
 #include <net/net_namespace.h>
 #include <net/llc.h>
 

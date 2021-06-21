@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include <linux/auxvec.h>
+#include <linaos/auxvec.h>
 #include <sys/auxv.h>
 #include <sys/mman.h>
 #include <sys/prctl.h>

@@ -7,7 +7,7 @@
  */
 
 #include <net/mac80211.h>
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include "queue.h"
 #include "cw1200.h"
 #include "debug.h"

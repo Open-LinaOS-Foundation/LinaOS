@@ -7,24 +7,24 @@
  *    Author(s): Michael Holzheu (holzheu@de.ibm.com),
  *		 Holger Smolinski (Holger.Smolinski@de.ibm.com)
  *
- *    Bugreports to: <Linux390@de.ibm.com>
+ *    Bugreports to: <LinaOS390@de.ibm.com>
  */
 
 #define KMSG_COMPONENT "s390dbf"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/debugfs.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/sysctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/debugfs.h>
 
 #include <asm/debug.h>
 

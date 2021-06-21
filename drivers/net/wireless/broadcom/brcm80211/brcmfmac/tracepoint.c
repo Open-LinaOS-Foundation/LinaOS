@@ -3,8 +3,8 @@
  * Copyright (c) 2012 Broadcom Corporation
  */
 
-#include <linux/device.h>
-#include <linux/module.h> /* bug in tracepoint.h, it should include this */
+#include <linaos/device.h>
+#include <linaos/module.h> /* bug in tracepoint.h, it should include this */
 
 #ifndef __CHECKER__
 #define CREATE_TRACE_POINTS

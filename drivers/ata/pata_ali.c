@@ -3,13 +3,13 @@
  *			  (C) 2005 Red Hat Inc
  *
  * based in part upon
- * linux/drivers/ide/pci/alim15x3.c		Version 0.17	2003/01/02
+ * linaos/drivers/ide/pci/alim15x3.c		Version 0.17	2003/01/02
  *
  *  Copyright (C) 1998-2000 Michel Aubry, Maintainer
  *  Copyright (C) 1998-2000 Andrzej Krzysztofowicz, Maintainer
  *  Copyright (C) 1999-2000 CJ, cjtsai@ali.com.tw, Maintainer
  *
- *  Copyright (C) 1998-2000 Andre Hedrick (andre@linux-ide.org)
+ *  Copyright (C) 1998-2000 Andre Hedrick (andre@linaos-ide.org)
  *  May be copied or modified under the terms of the GNU General Public License
  *  Copyright (C) 2002 Alan Cox <alan@redhat.com>
  *  ALi (now ULi M5228) support by Clear Zhang <Clear.Zhang@ali.com.tw>
@@ -24,15 +24,15 @@
  *	Review Sunblade workaround.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/dmi.h>
+#include <linaos/libata.h>
+#include <linaos/dmi.h>
 
 #define DRV_NAME "pata_ali"
 #define DRV_VERSION "0.7.8"
@@ -325,7 +325,7 @@ static int ali_check_atapi_dma(struct ata_queued_cmd *qc)
 		 * IDE alim15x3 driver can.  I tried lots of things
 		 * but couldn't find what the actual difference was.
 		 * If you got an idea, please write it to
-		 * linux-ide@vger.kernel.org and cc htejun@gmail.com.
+		 * linaos-ide@vger.kernel.org and cc htejun@gmail.com.
 		 *
 		 * Disable ATAPI DMA for now.
 		 */

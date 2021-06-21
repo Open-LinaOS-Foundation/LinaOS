@@ -5,17 +5,17 @@
  *
  * This driver supports the ACCES 104-QUAD-8 and ACCES 104-QUAD-4.
  */
-#include <linux/bitops.h>
-#include <linux/counter.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/isa.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/counter.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/isa.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
 
 #define QUAD8_EXTENT 32
 

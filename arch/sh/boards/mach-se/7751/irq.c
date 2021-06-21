@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7751/irq.c
+ * linaos/arch/sh/boards/se/7751/irq.c
  *
  * Copyright (C) 2000  Kazumoto Kojima
  *
@@ -10,8 +10,8 @@
  * Ian da Silva and Jeremy Siegel, 2001.
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 #include <asm/irq.h>
 #include <mach-se/mach/se7751.h>
 

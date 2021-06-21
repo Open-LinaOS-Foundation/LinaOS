@@ -8,26 +8,26 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/serial_8250.h>
-#include <linux/serial_reg.h>
-#include <linux/tty_flip.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_gpio.h>
-#include <linux/of_irq.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
-#include <linux/console.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/dma-mapping.h>
-#include <linux/sys_soc.h>
+#include <linaos/clk.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/serial_8250.h>
+#include <linaos/serial_reg.h>
+#include <linaos/tty_flip.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_irq.h>
+#include <linaos/delay.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/console.h>
+#include <linaos/pm_qos.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/sys_soc.h>
 
 #include "8250.h"
 

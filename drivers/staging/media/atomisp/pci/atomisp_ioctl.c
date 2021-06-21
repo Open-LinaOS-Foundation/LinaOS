@@ -18,8 +18,8 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
 
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>

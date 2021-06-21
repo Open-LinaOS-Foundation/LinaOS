@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/isofs/rock.c
+ *  linaos/fs/isofs/rock.c
  *
  *  (C) 1992, 1993  Eric Youngdale
  *
  *  Rock Ridge Extensions to iso9660
  */
 
-#include <linux/slab.h>
-#include <linux/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
 
 #include "isofs.h"
 #include "rock.h"

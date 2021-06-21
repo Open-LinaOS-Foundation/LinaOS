@@ -9,11 +9,11 @@
  * #defines from the assembly-language output.
  */
 
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
+#include <linaos/stddef.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/kbuild.h>
+#include <linaos/suspend.h>
 
 #include <asm/thread_info.h>
 #include <asm/suspend.h>

@@ -2,11 +2,11 @@
 #ifndef _NET_FLOW_DISSECTOR_H
 #define _NET_FLOW_DISSECTOR_H
 
-#include <linux/types.h>
-#include <linux/in6.h>
-#include <linux/siphash.h>
-#include <linux/string.h>
-#include <uapi/linux/if_ether.h>
+#include <linaos/types.h>
+#include <linaos/in6.h>
+#include <linaos/siphash.h>
+#include <linaos/string.h>
+#include <uapi/linaos/if_ether.h>
 
 struct bpf_prog;
 struct net;

@@ -8,7 +8,7 @@
 #ifndef COSA_H__
 #define COSA_H__
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 #ifdef __KERNEL__
 /* status register - output bits */

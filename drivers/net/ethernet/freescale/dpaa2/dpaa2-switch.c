@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/interrupt.h>
-#include <linux/msi.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
-#include <linux/iommu.h>
+#include <linaos/interrupt.h>
+#include <linaos/msi.h>
+#include <linaos/kthread.h>
+#include <linaos/workqueue.h>
+#include <linaos/iommu.h>
 #include <net/pkt_cls.h>
 
-#include <linux/fsl/mc.h>
+#include <linaos/fsl/mc.h>
 
 #include "dpaa2-switch.h"
 

@@ -3,11 +3,11 @@
  * Jump label s390 support
  *
  * Copyright IBM Corp. 2011
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@linaos.vnet.ibm.com>
  */
-#include <linux/uaccess.h>
-#include <linux/stop_machine.h>
-#include <linux/jump_label.h>
+#include <linaos/uaccess.h>
+#include <linaos/stop_machine.h>
+#include <linaos/jump_label.h>
 #include <asm/ipl.h>
 
 struct insn {

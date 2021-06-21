@@ -8,9 +8,9 @@
 #ifndef __LINUX_MFD_ALTERA_SYSMGR_H__
 #define __LINUX_MFD_ALTERA_SYSMGR_H__
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/firmware/intel/stratix10-smc.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/firmware/intel/stratix10-smc.h>
 
 struct device_node;
 

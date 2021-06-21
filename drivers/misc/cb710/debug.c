@@ -4,9 +4,9 @@
  *
  *  Copyright by Michał Mirosław, 2008-2009
  */
-#include <linux/cb710.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/cb710.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #define CB710_REG_COUNT		0x80
 

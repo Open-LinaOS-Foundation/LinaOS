@@ -3,16 +3,16 @@
  * Copyright Samuel Mendoza-Jonas, IBM Corporation 2018.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/rtnetlink.h>
-#include <linux/etherdevice.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/if_arp.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/etherdevice.h>
 #include <net/genetlink.h>
 #include <net/ncsi.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 #include <net/sock.h>
-#include <uapi/linux/ncsi.h>
+#include <uapi/linaos/ncsi.h>
 
 #include "internal.h"
 #include "ncsi-pkt.h"

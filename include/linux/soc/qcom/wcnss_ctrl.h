@@ -2,7 +2,7 @@
 #ifndef __WCNSS_CTRL_H__
 #define __WCNSS_CTRL_H__
 
-#include <linux/rpmsg.h>
+#include <linaos/rpmsg.h>
 
 #if IS_ENABLED(CONFIG_QCOM_WCNSS_CTRL)
 

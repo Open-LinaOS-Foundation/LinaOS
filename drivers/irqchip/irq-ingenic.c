@@ -4,17 +4,17 @@
  *  Ingenic XBurst platform IRQ support
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/irqchip.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/timex.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/irqchip.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/timex.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
 #include <asm/io.h>
 

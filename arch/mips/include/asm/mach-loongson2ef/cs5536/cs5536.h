@@ -9,7 +9,7 @@
 #ifndef _CS5536_H
 #define _CS5536_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 extern void _rdmsr(u32 msr, u32 *hi, u32 *lo);
 extern void _wrmsr(u32 msr, u32 hi, u32 lo);

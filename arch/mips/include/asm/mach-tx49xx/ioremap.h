@@ -5,7 +5,7 @@
 #ifndef __ASM_MACH_TX49XX_IOREMAP_H
 #define __ASM_MACH_TX49XX_IOREMAP_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 static inline void __iomem *plat_ioremap(phys_addr_t offset, unsigned long size,
 	unsigned long flags)

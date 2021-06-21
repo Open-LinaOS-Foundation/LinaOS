@@ -32,16 +32,16 @@
  * SOFTWARE.
  */
 
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/moduleparam.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/moduleparam.h>
+#include <linaos/ip.h>
+#include <linaos/in.h>
+#include <linaos/igmp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/delay.h>
+#include <linaos/completion.h>
+#include <linaos/slab.h>
 
 #include <net/dst.h>
 

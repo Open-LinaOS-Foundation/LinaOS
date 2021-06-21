@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/security.h>
+#include <linaos/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/security.h>
 #include <asm/cacheflush.h>
 #include <asm/machdep.h>
 #include <asm/mman.h>

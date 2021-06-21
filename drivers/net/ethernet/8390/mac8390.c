@@ -1,5 +1,5 @@
 /* mac8390.c: New driver for 8390-based Nubus (or Nubus-alike)
-   Ethernet cards on Linux */
+   Ethernet cards on LinaOS */
 /* Based on the former daynaport.c driver, by Alan Cox.  Some code
    taken from or inspired by skeleton.c by Donald Becker, acenic.c by
    Jes Sorensen, and ne2k-pci.c by Donald Becker and Paul Gortmaker.
@@ -19,23 +19,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/nubus.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/nubus.h>
+#include <linaos/in.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/bitops.h>
+#include <linaos/io.h>
 
 #include <asm/dma.h>
 #include <asm/hwtest.h>

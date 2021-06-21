@@ -3,20 +3,20 @@
 
 /* (C) 1999-2001 Paul `Rusty' Russell
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2003,2004 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2003,2004 USAGI/WIDE Project <http://www.linaos-ipv6.org>
  * (C) 2006-2012 Patrick McHardy <kaber@trash.net>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter.h>
-#include <linux/ip.h>
-#include <linux/slab.h>
-#include <linux/ipv6.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/netfilter.h>
+#include <linaos/ip.h>
+#include <linaos/slab.h>
+#include <linaos/ipv6.h>
+#include <linaos/ctype.h>
+#include <linaos/inet.h>
 #include <net/checksum.h>
 #include <net/tcp.h>
 
@@ -24,7 +24,7 @@
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_ecache.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_ftp.h>
+#include <linaos/netfilter/nf_conntrack_ftp.h>
 
 #define HELPER_NAME "ftp"
 

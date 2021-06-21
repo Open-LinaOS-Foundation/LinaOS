@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/irq_work.h>
+#include <linaos/module.h>
+#include <linaos/kthread.h>
+#include <linaos/irq_work.h>
 
 /* Must not be static to force gcc to consider these non constant */
 char *trace_printk_test_global_str =

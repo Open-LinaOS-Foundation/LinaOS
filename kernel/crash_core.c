@@ -4,9 +4,9 @@
  * Copyright (C) 2002-2004 Eric Biederman  <ebiederm@xmission.com>
  */
 
-#include <linux/crash_core.h>
-#include <linux/utsname.h>
-#include <linux/vmalloc.h>
+#include <linaos/crash_core.h>
+#include <linaos/utsname.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/page.h>
 #include <asm/sections.h>

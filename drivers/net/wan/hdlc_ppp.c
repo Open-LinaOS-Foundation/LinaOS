@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for LinaOS
  * Point-to-point protocol support
  *
  * Copyright (C) 1999 - 2008 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/errno.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pkt_sched.h>
-#include <linux/poll.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/errno.h>
+#include <linaos/hdlc.h>
+#include <linaos/if_arp.h>
+#include <linaos/inetdevice.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pkt_sched.h>
+#include <linaos/poll.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #define DEBUG_CP		0 /* also bytes# to dump */
 #define DEBUG_STATE		0

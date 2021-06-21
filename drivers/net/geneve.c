@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/hash.h>
+#include <linaos/ethtool.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
+#include <linaos/hash.h>
 #include <net/ipv6_stubs.h>
 #include <net/dst_metadata.h>
 #include <net/gro_cells.h>

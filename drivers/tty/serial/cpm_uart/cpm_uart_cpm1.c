@@ -11,26 +11,26 @@
  *		Vitaly Bordug <vbordug@ru.mvista.com>
  */
 
-#include <linux/module.h>
-#include <linux/tty.h>
-#include <linux/gfp.h>
-#include <linux/ioport.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/memblock.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/tty.h>
+#include <linaos/gfp.h>
+#include <linaos/ioport.h>
+#include <linaos/serial.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/device.h>
+#include <linaos/memblock.h>
+#include <linaos/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/fs_pd.h>
 
-#include <linux/serial_core.h>
-#include <linux/kernel.h>
+#include <linaos/serial_core.h>
+#include <linaos/kernel.h>
 
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
 
 #include "cpm_uart.h"
 

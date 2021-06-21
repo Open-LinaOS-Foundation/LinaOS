@@ -31,13 +31,13 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/bitmap.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/export.h>
+#include <linaos/bitmap.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/vmalloc.h>
 
 #include "mlx4.h"
 

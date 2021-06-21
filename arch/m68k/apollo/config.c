@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/tty.h>
-#include <linux/console.h>
-#include <linux/rtc.h>
-#include <linux/vt_kern.h>
-#include <linux/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/tty.h>
+#include <linaos/console.h>
+#include <linaos/rtc.h>
+#include <linaos/vt_kern.h>
+#include <linaos/interrupt.h>
 
 #include <asm/setup.h>
 #include <asm/bootinfo.h>

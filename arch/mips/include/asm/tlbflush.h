@@ -2,7 +2,7 @@
 #ifndef __ASM_TLBFLUSH_H
 #define __ASM_TLBFLUSH_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 /*
  * TLB flushing:

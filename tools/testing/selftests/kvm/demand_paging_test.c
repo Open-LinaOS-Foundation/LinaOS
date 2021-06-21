@@ -15,7 +15,7 @@
 #include <time.h>
 #include <poll.h>
 #include <pthread.h>
-#include <linux/userfaultfd.h>
+#include <linaos/userfaultfd.h>
 #include <sys/syscall.h>
 
 #include "kvm_util.h"

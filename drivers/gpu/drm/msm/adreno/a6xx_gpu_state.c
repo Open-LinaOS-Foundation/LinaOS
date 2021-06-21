@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2018-2019 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2018-2019 The LinaOS Foundation. All rights reserved. */
 
-#include <linux/ascii85.h>
+#include <linaos/ascii85.h>
 #include "msm_gem.h"
 #include "a6xx_gpu.h"
 #include "a6xx_gmu.h"

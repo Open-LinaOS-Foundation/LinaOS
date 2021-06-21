@@ -8,19 +8,19 @@
 
 #include "fuse_i.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
-#include <linux/uio.h>
-#include <linux/miscdevice.h>
-#include <linux/pagemap.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/pipe_fs_i.h>
-#include <linux/swap.h>
-#include <linux/splice.h>
-#include <linux/sched.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/poll.h>
+#include <linaos/sched/signal.h>
+#include <linaos/uio.h>
+#include <linaos/miscdevice.h>
+#include <linaos/pagemap.h>
+#include <linaos/file.h>
+#include <linaos/slab.h>
+#include <linaos/pipe_fs_i.h>
+#include <linaos/swap.h>
+#include <linaos/splice.h>
+#include <linaos/sched.h>
 
 MODULE_ALIAS_MISCDEV(FUSE_MINOR);
 MODULE_ALIAS("devname:fuse");

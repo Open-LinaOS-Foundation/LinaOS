@@ -5,15 +5,15 @@
  */
 
 #include <dt-bindings/phy/phy.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/sys_soc.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
+#include <linaos/module.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/sys_soc.h>
 #include <mt7621.h>
 #include <ralink_regs.h>
 

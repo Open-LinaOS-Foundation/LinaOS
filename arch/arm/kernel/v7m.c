@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2013 Uwe Kleine-Koenig for Pengutronix
  */
-#include <linux/io.h>
-#include <linux/reboot.h>
+#include <linaos/io.h>
+#include <linaos/reboot.h>
 #include <asm/barrier.h>
 #include <asm/v7m.h>
 

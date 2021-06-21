@@ -12,27 +12,27 @@
 
 #define pr_fmt(fmt)  "[nandsim]" fmt
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <linaos/init.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/vmalloc.h>
+#include <linaos/math64.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/sched/mm.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
 
 /* Default simulator parameters values */
 #if !defined(CONFIG_NANDSIM_FIRST_ID_BYTE)  || \

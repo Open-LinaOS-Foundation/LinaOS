@@ -30,15 +30,15 @@
  */
 
 #include "udfdecl.h"
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/slab.h>
-#include <linux/crc-itu-t.h>
-#include <linux/mpage.h>
-#include <linux/uio.h>
-#include <linux/bio.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/writeback.h>
+#include <linaos/slab.h>
+#include <linaos/crc-itu-t.h>
+#include <linaos/mpage.h>
+#include <linaos/uio.h>
+#include <linaos/bio.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

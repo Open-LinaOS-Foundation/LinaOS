@@ -2,7 +2,7 @@
 /*
  * Driver for the OV5645 camera sensor.
  *
- * Copyright (c) 2011-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2015, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2015 By Tech Design S.L. All Rights Reserved.
  * Copyright (C) 2012-2013 Freescale Semiconductor, Inc. All Rights Reserved.
  *
@@ -10,26 +10,26 @@
  * - the OV5645 driver from QC msm-3.10 kernel on codeaurora.org:
  *   https://us.codeaurora.org/cgit/quic/la/kernel/msm-3.10/tree/drivers/
  *       media/platform/msm/camera_v2/sensor/ov5645.c?h=LA.BR.1.2.4_rb1.41
- * - the OV5640 driver posted on linux-media:
- *   https://www.mail-archive.com/linux-media%40vger.kernel.org/msg92671.html
+ * - the OV5640 driver posted on linaos-media:
+ *   https://www.mail-archive.com/linaos-media%40vger.kernel.org/msg92671.html
  */
 
 /*
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_graph.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-subdev.h>

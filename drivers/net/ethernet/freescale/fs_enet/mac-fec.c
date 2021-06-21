@@ -12,32 +12,32 @@
  * kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/errno.h>
-#include <linux/crc32.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/bitops.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/ptrace.h>
+#include <linaos/errno.h>
+#include <linaos/crc32.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/mii.h>
+#include <linaos/ethtool.h>
+#include <linaos/bitops.h>
+#include <linaos/fs.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/gfp.h>
 
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "fs_enet.h"
 #include "fec.h"

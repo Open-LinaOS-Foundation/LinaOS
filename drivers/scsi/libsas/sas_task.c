@@ -2,8 +2,8 @@
 
 #include "sas_internal.h"
 
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
 #include <scsi/sas.h>
 #include <scsi/libsas.h>
 

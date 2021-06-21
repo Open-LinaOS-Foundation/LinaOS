@@ -18,7 +18,7 @@
 #include "xfs_da_btree.h"
 #include "xfs_trans.h"
 
-#include <linux/posix_acl_xattr.h>
+#include <linaos/posix_acl_xattr.h>
 
 /*
  * Locking scheme:

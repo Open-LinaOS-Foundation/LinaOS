@@ -6,7 +6,7 @@
 
 #include <hyp/debug-sr.h>
 
-#include <linux/kvm_host.h>
+#include <linaos/kvm_host.h>
 
 #include <asm/kvm_hyp.h>
 

@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/etherdevice.h>
-#include <linux/if_tap.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/nsproxy.h>
-#include <linux/compat.h>
-#include <linux/if_tun.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/cache.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/uio.h>
+#include <linaos/etherdevice.h>
+#include <linaos/if_tap.h>
+#include <linaos/if_vlan.h>
+#include <linaos/interrupt.h>
+#include <linaos/nsproxy.h>
+#include <linaos/compat.h>
+#include <linaos/if_tun.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/cache.h>
+#include <linaos/sched/signal.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/wait.h>
+#include <linaos/cdev.h>
+#include <linaos/idr.h>
+#include <linaos/fs.h>
+#include <linaos/uio.h>
 
 #include <net/net_namespace.h>
 #include <net/rtnetlink.h>
 #include <net/sock.h>
-#include <linux/virtio_net.h>
-#include <linux/skb_array.h>
+#include <linaos/virtio_net.h>
+#include <linaos/skb_array.h>
 
 #define TAP_IFFEATURES (IFF_VNET_HDR | IFF_MULTI_QUEUE)
 

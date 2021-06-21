@@ -9,7 +9,7 @@ resource management. It exists on some i.MX8 processors. e.g. i.MX8QM
 The AP communicates with the SC using a multi-ported MU module found
 in the LSIO subsystem. The current definition of this MU module provides
 5 remote AP connections to the SC to support up to 5 execution environments
-(TZ, HV, standard Linux, etc.). The SC side of this MU module interfaces
+(TZ, HV, standard LinaOS, etc.). The SC side of this MU module interfaces
 with the LSIO DSC IP bus. The SC firmware will communicate with this MU
 using the MSI bus.
 
@@ -169,7 +169,7 @@ Required properties:
 - compatible: should be:
               "fsl,imx8qxp-sc-key"
               followed by "fsl,imx-sc-key";
-- linux,keycodes: See Documentation/devicetree/bindings/input/input.yaml
+- linaos,keycodes: See Documentation/devicetree/bindings/input/input.yaml
 
 Thermal bindings based on SCU Message Protocol
 ------------------------------------------------------------
@@ -247,7 +247,7 @@ firmware {
 
 		scu_key: scu-key {
 			compatible = "fsl,imx8qxp-sc-key", "fsl,imx-sc-key";
-			linux,keycodes = <KEY_POWER>;
+			linaos,keycodes = <KEY_POWER>;
 		};
 
 		watchdog {

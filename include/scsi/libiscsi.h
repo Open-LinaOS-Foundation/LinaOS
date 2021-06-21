@@ -10,13 +10,13 @@
 #ifndef LIBISCSI_H
 #define LIBISCSI_H
 
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/kfifo.h>
-#include <linux/refcount.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
+#include <linaos/mutex.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
+#include <linaos/kfifo.h>
+#include <linaos/refcount.h>
 #include <scsi/iscsi_proto.h>
 #include <scsi/iscsi_if.h>
 #include <scsi/scsi_transport_iscsi.h>

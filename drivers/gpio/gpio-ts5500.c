@@ -2,8 +2,8 @@
 /*
  * Digital I/O driver for Technologic Systems TS-5500
  *
- * Copyright (c) 2012 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2012 Savoir-faire LinaOS Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  *
  * Technologic Systems platforms have pin blocks, exposing several Digital
  * Input/Output lines (DIO). This driver aims to support single pin blocks.
@@ -19,12 +19,12 @@
  *   Blocks: LCD port (identical to TS-5500 LCD).
  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 /* List of supported Technologic Systems platforms DIO blocks */
 enum ts5500_blocks { TS5500_DIO1, TS5500_DIO2, TS5500_LCD, TS5600_LCD };
@@ -445,5 +445,5 @@ static struct platform_driver ts5500_dio_driver = {
 module_platform_driver(ts5500_dio_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Savoir-faire Linux Inc. <kernel@savoirfairelinux.com>");
+MODULE_AUTHOR("Savoir-faire LinaOS Inc. <kernel@savoirfairelinaos.com>");
 MODULE_DESCRIPTION("Technologic Systems TS-5500 Digital I/O driver");

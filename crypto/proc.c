@@ -8,13 +8,13 @@
  * Copyright (c) 2005 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/atomic.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
-#include <linux/module.h>	/* for module_name() */
-#include <linux/rwsem.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/atomic.h>
+#include <linaos/init.h>
+#include <linaos/crypto.h>
+#include <linaos/module.h>	/* for module_name() */
+#include <linaos/rwsem.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include "internal.h"
 
 static void *c_start(struct seq_file *m, loff_t *pos)

@@ -5,11 +5,11 @@
  * Copyright 2014 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-dv-timings.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-dv-timings.h>

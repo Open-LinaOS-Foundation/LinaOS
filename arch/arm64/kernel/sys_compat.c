@@ -2,19 +2,19 @@
 /*
  * Based on arch/arm/kernel/sys_arm.c
  *
- * Copyright (C) People who wrote linux/arch/i386/kernel/sys_i386.c
+ * Copyright (C) People who wrote linaos/arch/i386/kernel/sys_i386.c
  * Copyright (C) 1995, 1996 Russell King.
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/compat.h>
-#include <linux/cpufeature.h>
-#include <linux/personality.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
+#include <linaos/compat.h>
+#include <linaos/cpufeature.h>
+#include <linaos/personality.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/system_misc.h>

@@ -6,7 +6,7 @@
  * Author: Boris Brezillon <boris.brezillon@free-electrons.com>
  */
 
-#include "linux/delay.h"
+#include "linaos/delay.h"
 #include "internals.h"
 
 #define MACRONIX_READ_RETRY_BIT BIT(0)

@@ -7,13 +7,13 @@
  * Copyright (c) 2001 Patrick Mochel <mochel@osdl.org>
  */
 
-#include <linux/suspend.h>
-#include <linux/export.h>
-#include <linux/smp.h>
-#include <linux/perf_event.h>
-#include <linux/tboot.h>
-#include <linux/dmi.h>
-#include <linux/pgtable.h>
+#include <linaos/suspend.h>
+#include <linaos/export.h>
+#include <linaos/smp.h>
+#include <linaos/perf_event.h>
+#include <linaos/tboot.h>
+#include <linaos/dmi.h>
+#include <linaos/pgtable.h>
 
 #include <asm/proto.h>
 #include <asm/mtrr.h>

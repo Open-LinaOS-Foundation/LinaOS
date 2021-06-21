@@ -4,8 +4,8 @@
 SCSI subsystem documentation
 ============================
 
-The Linux Documentation Project (LDP) maintains a document describing
-the SCSI subsystem in the Linux kernel (lk) 2.4 series. See:
+The LinaOS Documentation Project (LDP) maintains a document describing
+the SCSI subsystem in the LinaOS kernel (lk) 2.4 series. See:
 http://www.tldp.org/HOWTO/SCSI-2.4-HOWTO . The LDP has single
 and multiple page HTML renderings as well as postscript and pdf.
 It can also be found at:
@@ -13,7 +13,7 @@ http://web.archive.org/web/%2E/http://www.torque.net/scsi/SCSI-2.4-HOWTO
 
 Notes on using modules in the SCSI subsystem
 ============================================
-The scsi support in the linux kernel can be modularized in a number of
+The scsi support in the linaos kernel can be modularized in a number of
 different ways depending upon the needs of the end user.  To understand
 your options, we should first define a few terms.
 

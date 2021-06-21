@@ -11,20 +11,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpumask.h>
-#include <linux/cpu_cooling.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/topology.h>
-#include <linux/types.h>
+#include <linaos/clk.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
+#include <linaos/cpumask.h>
+#include <linaos/cpu_cooling.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_opp.h>
+#include <linaos/slab.h>
+#include <linaos/topology.h>
+#include <linaos/types.h>
 
 /* Currently we support only two clusters */
 #define A15_CLUSTER	0

@@ -9,7 +9,7 @@
 #ifndef __LINUX_MFD_PCF50633_GPIO_H
 #define __LINUX_MFD_PCF50633_GPIO_H
 
-#include <linux/mfd/pcf50633/core.h>
+#include <linaos/mfd/pcf50633/core.h>
 
 #define PCF50633_GPIO1		1
 #define PCF50633_GPIO2		2

@@ -5,7 +5,7 @@
 /*
  * Core file format: The core file is written in such a way that gdb
  * can understand it and provide useful information to the user (under
- * linux we use the `trad-core' bfd).  The file contents are as
+ * linaos we use the `trad-core' bfd).  The file contents are as
  * follows:
  *
  *  upage: 1 page consisting of a user struct that tells gdb
@@ -29,8 +29,8 @@
  *	David Mosberger-Tang <davidm@hpl.hp.com>, Hewlett-Packard Co
  */
 
-#include <linux/ptrace.h>
-#include <linux/types.h>
+#include <linaos/ptrace.h>
+#include <linaos/types.h>
 
 #include <asm/page.h>
 

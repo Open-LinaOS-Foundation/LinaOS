@@ -2,12 +2,12 @@
 /*
  *  mxl5007t.c - driver for the MaxLinear MxL5007T silicon tuner
  *
- *  Copyright (C) 2008, 2009 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2008, 2009 Michael Krufky <mkrufky@linaostv.org>
  */
 
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/i2c.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 #include "tuner-i2c.h"
 #include "mxl5007t.h"
 
@@ -918,6 +918,6 @@ fail:
 }
 EXPORT_SYMBOL_GPL(mxl5007t_attach);
 MODULE_DESCRIPTION("MaxLinear MxL5007T Silicon IC tuner driver");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@linaostv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.2");

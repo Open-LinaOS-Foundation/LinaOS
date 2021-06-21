@@ -8,13 +8,13 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/mfd/atmel-hlcdc.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/mfd/atmel-hlcdc.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/platform_device.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

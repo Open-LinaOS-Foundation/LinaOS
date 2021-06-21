@@ -114,13 +114,13 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/io.h>
+#include <linaos/notifier.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

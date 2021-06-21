@@ -3,7 +3,7 @@
 #ifndef __LINUX_ARM_SDEI_H
 #define __LINUX_ARM_SDEI_H
 
-#include <uapi/linux/arm_sdei.h>
+#include <uapi/linaos/arm_sdei.h>
 
 #include <acpi/ghes.h>
 

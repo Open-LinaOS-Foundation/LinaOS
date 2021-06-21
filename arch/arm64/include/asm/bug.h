@@ -7,7 +7,7 @@
 #ifndef _ARCH_ARM64_ASM_BUG_H
 #define _ARCH_ARM64_ASM_BUG_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #include <asm/asm-bug.h>
 

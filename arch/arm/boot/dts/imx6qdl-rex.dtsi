@@ -59,7 +59,7 @@
 			label = "usr";
 			gpios = <&gpio1 2 GPIO_ACTIVE_LOW>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

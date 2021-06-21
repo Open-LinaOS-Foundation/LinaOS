@@ -11,21 +11,21 @@
  * preserved in its entirety in all copies and derived works.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/ds1wm.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/ds1wm.h>
+#include <linaos/slab.h>
 
 #include <asm/io.h>
 
-#include <linux/w1.h>
+#include <linaos/w1.h>
 
 
 #define DS1WM_CMD	0x00	/* R/W 4 bits command */

@@ -3,10 +3,10 @@
  * Copyright (C) 2003 Christoph Hellwig.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sysctl.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/sysctl.h>
 
 #include "scsi_logging.h"
 #include "scsi_priv.h"

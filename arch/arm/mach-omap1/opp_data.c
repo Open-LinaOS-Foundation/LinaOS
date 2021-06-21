@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-omap1/opp_data.c
+ *  linaos/arch/arm/mach-omap1/opp_data.c
  *
  *  Copyright (C) 2004 - 2005 Nokia corporation
  *  Written by Tuukka Tikkanen <tuukka.tikkanen@elektrobit.com>

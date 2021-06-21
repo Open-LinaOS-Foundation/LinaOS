@@ -5,11 +5,11 @@
  * Copyright 2007 Freescale Semiconductor Inc.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
+#include <linaos/stddef.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/mc146818rtc.h>
 
 #include <asm/pci-bridge.h>
 

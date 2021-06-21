@@ -49,7 +49,7 @@
 
 /*
  * This header file is for OPA-specific definitions which are
- * required by the HFI driver, and which aren't yet in the Linux
+ * required by the HFI driver, and which aren't yet in the LinaOS
  * IB core. We'll collect these all here, then merge them into
  * the kernel when that's convenient.
  */

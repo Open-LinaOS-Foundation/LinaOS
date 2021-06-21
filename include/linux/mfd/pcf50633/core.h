@@ -9,12 +9,12 @@
 #ifndef __LINUX_MFD_PCF50633_CORE_H
 #define __LINUX_MFD_PCF50633_CORE_H
 
-#include <linux/i2c.h>
-#include <linux/workqueue.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/pcf50633/backlight.h>
+#include <linaos/i2c.h>
+#include <linaos/workqueue.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/power_supply.h>
+#include <linaos/mfd/pcf50633/backlight.h>
 
 struct pcf50633;
 struct regmap;

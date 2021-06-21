@@ -2,7 +2,7 @@
 #ifndef __ALPHA_WILDFIRE__H__
 #define __ALPHA_WILDFIRE__H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/compiler.h>
 
 #define WILDFIRE_MAX_QBB	8	/* more than 8 requires other mods */

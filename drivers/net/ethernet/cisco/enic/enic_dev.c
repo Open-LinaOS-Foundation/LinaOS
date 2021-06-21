@@ -16,8 +16,8 @@
  *
  */
 
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
+#include <linaos/pci.h>
+#include <linaos/etherdevice.h>
 
 #include "vnic_dev.h"
 #include "vnic_vic.h"

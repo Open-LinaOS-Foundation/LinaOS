@@ -5,19 +5,19 @@
  * Copyright (c) 2010 Ira W. Snyder <iws@ovro.caltech.edu>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
 
-#include <linux/netdevice.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/skb.h>
-#include <linux/can/error.h>
+#include <linaos/netdevice.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/skb.h>
+#include <linaos/can/error.h>
 
-#include <linux/mfd/janz.h>
+#include <linaos/mfd/janz.h>
 #include <asm/io.h>
 
 /* the DPM has 64k of memory, organized into 256x 256 byte pages */
@@ -903,7 +903,7 @@ static int ican3_set_buserror(struct ican3_dev *mod, u8 quota)
 }
 
 /*
- * ICAN3 to Linux CAN Frame Conversion
+ * ICAN3 to LinaOS CAN Frame Conversion
  */
 
 static void ican3_to_can_frame(struct ican3_dev *mod,
@@ -1399,13 +1399,13 @@ static int ican3_recv_skb(struct ican3_dev *mod)
 		goto err_noalloc;
 	}
 
-	/* convert the ICAN3 frame into Linux CAN format */
+	/* convert the ICAN3 frame into LinaOS CAN format */
 	ican3_to_can_frame(mod, &desc, cf);
 
 	/*
 	 * If this is an ECHO frame received from the hardware loopback
 	 * feature, use the skb saved in the ECHO stack instead. This allows
-	 * the Linux CAN core to support CAN_RAW_RECV_OWN_MSGS correctly.
+	 * the LinaOS CAN core to support CAN_RAW_RECV_OWN_MSGS correctly.
 	 *
 	 * Since this is a confirmation of a successfully transmitted packet
 	 * sent from this host, update the transmit statistics.
@@ -1706,7 +1706,7 @@ static netdev_tx_t ican3_xmit(struct sk_buff *skb, struct net_device *ndev)
 	memset(&desc, 0, sizeof(desc));
 	memcpy_fromio(&desc, desc_addr, 1);
 
-	/* convert the Linux CAN frame into ICAN3 format */
+	/* convert the LinaOS CAN frame into ICAN3 format */
 	can_frame_to_ican3(mod, cf, &desc);
 
 	/*
@@ -1990,7 +1990,7 @@ static int ican3_probe(struct platform_device *pdev)
 		goto out_free_irq;
 	}
 
-	/* register with the Linux CAN layer */
+	/* register with the LinaOS CAN layer */
 	ret = register_candev(ndev);
 	if (ret) {
 		dev_err(dev, "%s: unable to register CANdev\n", __func__);

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  *  Copyright (C) 2000-2002	   Michael Cornwell <cornwell@acm.org>
- *  Copyright (C) 2000-2002	   Andre Hedrick <andre@linux-ide.org>
+ *  Copyright (C) 2000-2002	   Andre Hedrick <andre@linaos-ide.org>
  *  Copyright (C) 2001-2002	   Klaus Smolin
  *					IBM Storage Technology Division
  *  Copyright (C) 2003-2004, 2007  Bartlomiej Zolnierkiewicz
@@ -9,20 +9,20 @@
  *  The big the bad and the ugly.
  */
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/hdreg.h>
-#include <linux/ide.h>
-#include <linux/nmi.h>
-#include <linux/scatterlist.h>
-#include <linux/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/hdreg.h>
+#include <linaos/ide.h>
+#include <linaos/nmi.h>
+#include <linaos/scatterlist.h>
+#include <linaos/uaccess.h>
 
 #include <asm/io.h>
 

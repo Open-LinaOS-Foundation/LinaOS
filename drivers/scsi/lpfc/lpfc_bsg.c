@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex LinaOS Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2021 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -20,14 +20,14 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/interrupt.h>
-#include <linux/mempool.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/bsg-lib.h>
-#include <linux/vmalloc.h>
+#include <linaos/interrupt.h>
+#include <linaos/mempool.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/bsg-lib.h>
+#include <linaos/vmalloc.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
@@ -3151,7 +3151,7 @@ lpfc_bsg_diag_loopback_run(struct bsg_job *job)
 		/*
 		 * Allocate memory for ioctl data. If buffer is bigger than 64k,
 		 * then we allocate 64k and re-use that buffer over and over to
-		 * xfer the whole block. This is because Linux kernel has a
+		 * xfer the whole block. This is because LinaOS kernel has a
 		 * problem allocating more than 120k of kernel space memory. Saw
 		 * problem with GET_FCPTARGETMAPPING...
 		 */

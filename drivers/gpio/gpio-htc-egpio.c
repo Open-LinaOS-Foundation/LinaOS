@@ -8,17 +8,17 @@
  * This file may be distributed under the terms of the GNU GPL license.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/platform_data/gpio-htc-egpio.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/gpio/driver.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_data/gpio-htc-egpio.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/gpio/driver.h>
 
 struct egpio_chip {
 	int              reg_start;

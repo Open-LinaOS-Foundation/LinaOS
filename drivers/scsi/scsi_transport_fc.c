@@ -8,12 +8,12 @@
  *    statistics, and service functions...
  *    Add vports, etc
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/bsg-lib.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/bsg-lib.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

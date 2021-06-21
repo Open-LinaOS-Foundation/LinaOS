@@ -2,13 +2,13 @@
 #ifndef BOOT_BOOT_H
 #define BOOT_BOOT_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define BOOT_STACK_OFFSET 0x8000
 
 #ifndef __ASSEMBLY__
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 
 void startup_kernel(void);
 unsigned long detect_memory(void);

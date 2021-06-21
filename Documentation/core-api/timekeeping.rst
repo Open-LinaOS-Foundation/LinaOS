@@ -2,7 +2,7 @@ ktime accessors
 ===============
 
 Device drivers can read the current time using ktime_get() and the many
-related functions declared in linux/timekeeping.h. As a rule of thumb,
+related functions declared in linaos/timekeeping.h. As a rule of thumb,
 using an accessor with a shorter name is preferred over one with a longer
 name if both are equally fit for a particular use case.
 

@@ -9,7 +9,7 @@
 #
 # Copyright (C) IBM Corporation, 2011
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
 
 T=${TMPDIR-/tmp}/parse-console.sh.$$
 file="$1"

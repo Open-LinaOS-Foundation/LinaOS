@@ -11,7 +11,7 @@
  *
  *****************************************************************************/
 #include "drv_types.h"
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifndef __RTL92C__FW__H__
 #define __RTL92C__FW__H__

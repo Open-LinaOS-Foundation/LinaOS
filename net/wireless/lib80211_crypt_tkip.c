@@ -8,28 +8,28 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/err.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/mm.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
+#include <linaos/err.h>
+#include <linaos/fips.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
+#include <linaos/scatterlist.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/mm.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_arp.h>
 #include <asm/string.h>
 
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
+#include <linaos/wireless.h>
+#include <linaos/ieee80211.h>
 #include <net/iw_handler.h>
 
 #include <crypto/arc4.h>
 #include <crypto/hash.h>
-#include <linux/crypto.h>
-#include <linux/crc32.h>
+#include <linaos/crypto.h>
+#include <linaos/crc32.h>
 
 #include <net/lib80211.h>
 

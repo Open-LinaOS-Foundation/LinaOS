@@ -10,7 +10,7 @@
 #ifndef __LINUX_MTD_ONFI_H
 #define __LINUX_MTD_ONFI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* ONFI version bits */
 #define ONFI_VERSION_1_0		BIT(1)

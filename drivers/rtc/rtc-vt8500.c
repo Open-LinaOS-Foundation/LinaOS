@@ -7,15 +7,15 @@
  * Based on rtc-pxa.c
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/module.h>
+#include <linaos/rtc.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/bcd.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
 /*
  * Register definitions

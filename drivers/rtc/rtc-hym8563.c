@@ -9,11 +9,11 @@
  * Copyright (C) 2010 ROCKCHIP, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/i2c.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
+#include <linaos/module.h>
+#include <linaos/clk-provider.h>
+#include <linaos/i2c.h>
+#include <linaos/bcd.h>
+#include <linaos/rtc.h>
 
 #define HYM8563_CTL1		0x00
 #define HYM8563_CTL1_TEST	BIT(7)

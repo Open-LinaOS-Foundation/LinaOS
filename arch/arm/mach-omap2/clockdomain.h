@@ -11,7 +11,7 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_CLOCKDOMAIN_H
 #define __ARCH_ARM_MACH_OMAP2_CLOCKDOMAIN_H
 
-#include <linux/init.h>
+#include <linaos/init.h>
 
 #include "powerdomain.h"
 #include "clock.h"

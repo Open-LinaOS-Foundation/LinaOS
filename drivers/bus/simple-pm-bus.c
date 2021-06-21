@@ -8,10 +8,10 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 
 static int simple_pm_bus_probe(struct platform_device *pdev)

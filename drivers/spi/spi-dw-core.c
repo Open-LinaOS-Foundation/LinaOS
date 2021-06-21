@@ -5,22 +5,22 @@
  * Copyright (c) 2009, Intel Corporation.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/string.h>
-#include <linux/of.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/preempt.h>
+#include <linaos/highmem.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi-mem.h>
+#include <linaos/string.h>
+#include <linaos/of.h>
 
 #include "spi-dw.h"
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <linaos/debugfs.h>
 #endif
 
 /* Slave spi_device related */

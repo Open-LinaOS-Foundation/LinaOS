@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * i2c.h - definitions for the I2C bus interface
  *
@@ -10,7 +10,7 @@
 #ifndef _UAPI_LINUX_I2C_H
 #define _UAPI_LINUX_I2C_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct i2c_msg - an I2C transaction segment beginning with START

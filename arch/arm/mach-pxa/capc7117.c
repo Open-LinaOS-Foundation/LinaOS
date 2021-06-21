@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/capc7117.c
+ * linaos/arch/arm/mach-pxa/capc7117.c
  *
  * Support for the Embedian CAPC-7117 Evaluation Kit
  * based on the Embedian MXM-8x10 Computer on Module
@@ -16,12 +16,12 @@
  *             rework for upstream merge
  */
 
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
-#include <linux/serial_8250.h>
-#include <linux/gpio.h>
-#include <linux/regulator/machine.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/ata_platform.h>
+#include <linaos/serial_8250.h>
+#include <linaos/gpio.h>
+#include <linaos/regulator/machine.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>

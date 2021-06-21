@@ -32,23 +32,23 @@
  *		Removed some useless includes
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/pnp.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/dmi.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
-#include <linux/freezer.h>
-#include <linux/kmod.h>
-#include <linux/kthread.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/pnp.h>
+#include <linaos/mm.h>
+#include <linaos/smp.h>
+#include <linaos/slab.h>
+#include <linaos/completion.h>
+#include <linaos/spinlock.h>
+#include <linaos/dmi.h>
+#include <linaos/delay.h>
+#include <linaos/acpi.h>
+#include <linaos/freezer.h>
+#include <linaos/kmod.h>
+#include <linaos/kthread.h>
 
 #include <asm/page.h>
 #include <asm/desc.h>

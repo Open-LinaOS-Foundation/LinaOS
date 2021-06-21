@@ -2,9 +2,9 @@
 /*
  * This file contains work-arounds for x86 and x86_64 platform bugs.
  */
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
+#include <linaos/dmi.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
 
 #include <asm/hpet.h>
 #include <asm/setup.h>
@@ -420,7 +420,7 @@ DECLARE_PCI_FIXUP_HEADER(PCI_VENDOR_ID_ATI, PCI_DEVICE_ID_ATI_IXP400_SMBUS,
 			 ati_force_enable_hpet);
 
 /*
- * Undocumented chipset feature taken from LinuxBIOS.
+ * Undocumented chipset feature taken from LinaOSBIOS.
  */
 static void nvidia_force_hpet_resume(void)
 {

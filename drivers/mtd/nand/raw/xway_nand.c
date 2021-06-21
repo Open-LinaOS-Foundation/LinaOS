@@ -5,9 +5,9 @@
  *  Copyright © 2016 Hauke Mehrtens <hauke@hauke-m.de>
  */
 
-#include <linux/mtd/rawnand.h>
-#include <linux/of_gpio.h>
-#include <linux/of_platform.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/of_gpio.h>
+#include <linaos/of_platform.h>
 
 #include <lantiq_soc.h>
 

@@ -8,12 +8,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
-#include <linux/ratelimit.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/seq_file.h>
+#include <linaos/proc_fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/ratelimit.h>
 #include <asm/alignment.h>
 #include <asm/processor.h>
 

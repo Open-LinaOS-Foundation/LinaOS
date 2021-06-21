@@ -1,10 +1,10 @@
 .. _usb-hostside-api:
 
 ===========================
-The Linux-USB Host Side API
+The LinaOS-USB Host Side API
 ===========================
 
-Introduction to USB on Linux
+Introduction to USB on LinaOS
 ============================
 
 A Universal Serial Bus (USB) is used to connect a host, such as a PC or
@@ -22,13 +22,13 @@ peripheral). Also, the host software doesn't need to deal with
 distributed auto-configuration since the pre-designated master node
 manages all that.
 
-Kernel developers added USB support to Linux early in the 2.2 kernel
+Kernel developers added USB support to LinaOS early in the 2.2 kernel
 series and have been developing it further since then. Besides support
 for each new generation of USB, various host controllers gained support,
 new drivers for peripherals have been added and advanced features for latency
 measurement and improved power management introduced.
 
-Linux can run inside USB devices as well as on the hosts that control
+LinaOS can run inside USB devices as well as on the hosts that control
 the devices. But USB device drivers running inside those peripherals
 don't do the same things as the ones running inside hosts, so they've
 been given a different name: *gadget drivers*. This document does not
@@ -81,7 +81,7 @@ The device model seen by USB drivers is relatively complex.
    flagging the end of bulk transfers using "short" (including zero
    length) packets.
 
--  The Linux USB API supports synchronous calls for control and bulk
+-  The LinaOS USB API supports synchronous calls for control and bulk
    messages. It also supports asynchronous calls for all kinds of data
    transfer, using request structures called "URBs" (USB Request
    Blocks).
@@ -109,11 +109,11 @@ well as to make sure they aren't relying on some HCD-specific behavior.
 USB-Standard Types
 ==================
 
-In ``include/uapi/linux/usb/ch9.h`` you will find the USB data types defined
+In ``include/uapi/linaos/usb/ch9.h`` you will find the USB data types defined
 in chapter 9 of the USB specification. These data types are used throughout
 USB, and in APIs including this host side API, gadget APIs, usb character
 devices and debugfs interfaces. That file is itself included by
-``include/linux/usb/ch9.h``, which also contains declarations of a few
+``include/linaos/usb/ch9.h``, which also contains declarations of a few
 utility routines for manipulating these data types; the implementations
 are in ``drivers/usb/common/common.c``.
 
@@ -133,7 +133,7 @@ more necessary than others. These support lifecycle models for host side
 drivers and devices, and support passing buffers through usbcore to some
 HCD that performs the I/O for the device driver.
 
-.. kernel-doc:: include/linux/usb.h
+.. kernel-doc:: include/linaos/usb.h
    :internal:
 
 USB Core APIs
@@ -214,7 +214,7 @@ significantly reduce hcd-specific behaviors.
 The USB character device nodes
 ==============================
 
-This chapter presents the Linux character device nodes. You may prefer
+This chapter presents the LinaOS character device nodes. You may prefer
 to avoid writing new kernel code for your USB driver. User mode device
 drivers are usually packaged as applications or libraries, and may use
 character devices through some programming library that wraps it.
@@ -225,7 +225,7 @@ Such libraries include:
 
 Some old information about it can be seen at the "USB Device Filesystem"
 section of the USB Guide. The latest copy of the USB Guide can be found
-at http://www.linux-usb.org/
+at http://www.linaos-usb.org/
 
 .. note::
 
@@ -306,8 +306,8 @@ read its descriptors to make sure it's the device you expect, and then
 bind to an interface (or perhaps several) using an ioctl call.  You
 would issue more ioctls to the device to communicate to it using
 control, bulk, or other kinds of USB transfers.  The IOCTLs are
-listed in the ``<linux/usbdevice_fs.h>`` file, and at this writing the
-source code (``linux/drivers/usb/core/devio.c``) is the primary reference
+listed in the ``<linaos/usbdevice_fs.h>`` file, and at this writing the
+source code (``linaos/drivers/usb/core/devio.c``) is the primary reference
 for how to access devices through those files.
 
 Note that since by default these ``BBB/DDD`` files are writable only by
@@ -359,12 +359,12 @@ The ioctl() Requests
 To use these ioctls, you need to include the following headers in your
 userspace program::
 
-    #include <linux/usb.h>
-    #include <linux/usbdevice_fs.h>
+    #include <linaos/usb.h>
+    #include <linaos/usbdevice_fs.h>
     #include <asm/byteorder.h>
 
 The standard USB device model requests, from "Chapter 9" of the USB 2.0
-specification, are automatically included from the ``<linux/usb/ch9.h>``
+specification, are automatically included from the ``<linaos/usb/ch9.h>``
 header.
 
 Unless noted otherwise, the ioctl requests described here will update
@@ -562,7 +562,7 @@ USBDEVFS_CONTROL
     SETUP packet to be sent to the device; see the USB 2.0 specification
     for details. The bRequestType value is composed by combining a
     ``USB_TYPE_*`` value, a ``USB_DIR_*`` value, and a ``USB_RECIP_*``
-    value (from ``linux/usb.h``). If wLength is nonzero, it describes
+    value (from ``linaos/usb.h``). If wLength is nonzero, it describes
     the length of the data buffer, which is either written to the device
     (USB_DIR_OUT) or read from the device (USB_DIR_IN).
 
@@ -929,7 +929,7 @@ the per-microframe data transfer size.  For "high bandwidth"
 endpoints, that can reflect two or three packets (for up to
 3KBytes every 125 usec) per endpoint.
 
-With the Linux-USB stack, periodic bandwidth reservations use the
+With the LinaOS-USB stack, periodic bandwidth reservations use the
 transfer intervals and sizes provided by URBs, which can be less
 than those found in endpoint descriptor.
 

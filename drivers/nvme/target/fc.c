@@ -3,17 +3,17 @@
  * Copyright (c) 2016 Avago Technologies.  All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/blk-mq.h>
-#include <linux/parser.h>
-#include <linux/random.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/blk-mq.h>
+#include <linaos/parser.h>
+#include <linaos/random.h>
 #include <uapi/scsi/fc/fc_fs.h>
 #include <uapi/scsi/fc/fc_els.h>
 
 #include "nvmet.h"
-#include <linux/nvme-fc-driver.h>
-#include <linux/nvme-fc.h>
+#include <linaos/nvme-fc-driver.h>
+#include <linaos/nvme-fc.h>
 #include "../host/fc.h"
 
 
@@ -2518,7 +2518,7 @@ nvmet_fc_handle_fcp_rqst(struct nvmet_fc_tgtport *tgtport,
 		goto transport_error;
 
 	/*
-	 * Fused commands are currently not supported in the linux
+	 * Fused commands are currently not supported in the linaos
 	 * implementation.
 	 *
 	 * As such, the implementation of the FC transport does not

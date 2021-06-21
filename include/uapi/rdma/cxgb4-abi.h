@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR LinaOS-OpenIB) */
 /*
  * Copyright (c) 2009-2010 Chelsio, Inc. All rights reserved.
  *
@@ -33,7 +33,7 @@
 #ifndef CXGB4_ABI_USER_H
 #define CXGB4_ABI_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define C4IW_UVERBS_ABI_VERSION	3
 

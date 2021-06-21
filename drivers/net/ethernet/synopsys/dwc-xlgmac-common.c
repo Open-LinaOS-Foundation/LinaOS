@@ -15,8 +15,8 @@
  * in the SOFTWARE may be the trademarks of their respective owners.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include "dwc-xlgmac.h"
 #include "dwc-xlgmac-reg.h"

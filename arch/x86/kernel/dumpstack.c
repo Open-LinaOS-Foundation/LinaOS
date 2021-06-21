@@ -2,22 +2,22 @@
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 2000, 2001, 2002 Andi Kleen, SuSE Labs
  */
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/utsname.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/module.h>
-#include <linux/ptrace.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/ftrace.h>
-#include <linux/kexec.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/sysfs.h>
-#include <linux/kasan.h>
+#include <linaos/kallsyms.h>
+#include <linaos/kprobes.h>
+#include <linaos/uaccess.h>
+#include <linaos/utsname.h>
+#include <linaos/hardirq.h>
+#include <linaos/kdebug.h>
+#include <linaos/module.h>
+#include <linaos/ptrace.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/ftrace.h>
+#include <linaos/kexec.h>
+#include <linaos/bug.h>
+#include <linaos/nmi.h>
+#include <linaos/sysfs.h>
+#include <linaos/kasan.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/stacktrace.h>

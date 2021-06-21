@@ -6,31 +6,31 @@
  * Copyright 2004-2007 Freescale Semiconductor, Inc. All Rights Reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/console.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/dma/ipu-dma.h>
-#include <linux/backlight.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/dmaengine.h>
+#include <linaos/console.h>
+#include <linaos/clk.h>
+#include <linaos/mutex.h>
+#include <linaos/dma/ipu-dma.h>
+#include <linaos/backlight.h>
 
-#include <linux/platform_data/dma-imx.h>
-#include <linux/platform_data/video-mx3fb.h>
+#include <linaos/platform_data/dma-imx.h>
+#include <linaos/platform_data/video-mx3fb.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #define MX3FB_NAME		"mx3_sdc_fb"
 

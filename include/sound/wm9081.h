@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm9081.h -- Platform data for WM9081
+ * linaos/sound/wm9081.h -- Platform data for WM9081
  *
  * Copyright 2009 Wolfson Microelectronics. PLC.
  */

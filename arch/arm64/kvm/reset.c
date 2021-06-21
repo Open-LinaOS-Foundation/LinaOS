@@ -8,14 +8,14 @@
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/kvm_host.h>
+#include <linaos/kvm.h>
+#include <linaos/hw_breakpoint.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 
 #include <kvm/arm_arch_timer.h>
 

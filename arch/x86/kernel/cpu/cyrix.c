@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <linaos/bitops.h>
+#include <linaos/delay.h>
+#include <linaos/pci.h>
 #include <asm/dma.h>
-#include <linux/io.h>
+#include <linaos/io.h>
 #include <asm/processor-cyrix.h>
 #include <asm/processor-flags.h>
-#include <linux/timer.h>
+#include <linaos/timer.h>
 #include <asm/pci-direct.h>
 #include <asm/tsc.h>
 #include <asm/cpufeature.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
+#include <linaos/sched.h>
+#include <linaos/sched/clock.h>
 
 #include "cpu.h"
 
@@ -372,7 +372,7 @@ static void init_nsc(struct cpuinfo_x86 *c)
 	 * after NSC acquired Cyrix.
 	 *
 	 * If this breaks your GX1 horribly, please e-mail
-	 * info-linux@ldcmail.amd.com to tell us.
+	 * info-linaos@ldcmail.amd.com to tell us.
 	 */
 
 	/* Handle the GX (Formally known as the GX2) */

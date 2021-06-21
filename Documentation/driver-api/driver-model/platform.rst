@@ -2,7 +2,7 @@
 Platform Devices and Drivers
 ============================
 
-See <linux/platform_device.h> for the driver model interface to the
+See <linaos/platform_device.h> for the driver model interface to the
 platform bus:  platform_device, and platform_driver.  This pseudo-bus
 is used to connect devices on busses with minimal infrastructure,
 like those used to integrate peripherals on many system-on-chip
@@ -243,4 +243,4 @@ in the probe() function can use is_early_platform_device() to check if
 it is called at early platform device or at the regular platform device
 time. The early serial driver performs register_console() at this point.
 
-For further information, see <linux/platform_device.h>.
+For further information, see <linaos/platform_device.h>.

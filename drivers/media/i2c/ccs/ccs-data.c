@@ -5,11 +5,11 @@
  * Copyright 2019--2020 Intel Corporation
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/limits.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/limits.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
 
 #include "ccs-data-defs.h"
 

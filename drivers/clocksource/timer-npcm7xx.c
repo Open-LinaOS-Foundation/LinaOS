@@ -6,16 +6,16 @@
  * Copyright 2017 Google, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/clockchips.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/clockchips.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
 #include "timer-of.h"
 
 /* Timers registers */

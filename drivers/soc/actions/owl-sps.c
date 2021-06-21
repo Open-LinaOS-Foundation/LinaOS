@@ -8,10 +8,10 @@
  * Copyright (c) 2017 Andreas Färber
  */
 
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/pm_domain.h>
-#include <linux/soc/actions/owl-sps.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/pm_domain.h>
+#include <linaos/soc/actions/owl-sps.h>
 #include <dt-bindings/power/owl-s500-powergate.h>
 #include <dt-bindings/power/owl-s700-powergate.h>
 #include <dt-bindings/power/owl-s900-powergate.h>

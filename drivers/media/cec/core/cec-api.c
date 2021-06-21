@@ -5,18 +5,18 @@
  * Copyright 2016 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/kmod.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/version.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/kmod.h>
+#include <linaos/ktime.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
+#include <linaos/version.h>
 
 #include <media/cec-pin.h>
 #include "cec-priv.h"

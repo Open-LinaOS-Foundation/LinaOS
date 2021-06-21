@@ -12,7 +12,7 @@
 #ifndef VIDTV_PSI_H
 #define VIDTV_PSI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * all section lengths start immediately after the 'section_length' field

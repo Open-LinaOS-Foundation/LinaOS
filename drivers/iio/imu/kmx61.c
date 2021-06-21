@@ -7,19 +7,19 @@
  * IIO driver for KMX61 (7-bit I2C slave address 0x0E or 0x0F).
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/events.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/acpi.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/events.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/trigger_consumer.h>
 
 #define KMX61_DRV_NAME "kmx61"
 #define KMX61_IRQ_NAME "kmx61_event"

@@ -5,8 +5,8 @@
 #include <asm-generic/pgtable-nopmd.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <linaos/sched.h>
+#include <linaos/threads.h>
 #include <asm/mmu.h>			/* For sub-arch specific PPC_PIN_SIZE */
 
 #ifdef CONFIG_44x
@@ -122,7 +122,7 @@ int map_kernel_page(unsigned long va, phys_addr_t pa, pgprot_t prot);
 #endif
 
 /*
- * Bits in a linux-style PTE.  These match the bits in the
+ * Bits in a linaos-style PTE.  These match the bits in the
  * (hardware-defined) PowerPC PTE as closely as possible.
  */
 

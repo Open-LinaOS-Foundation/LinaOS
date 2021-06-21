@@ -6,18 +6,18 @@
  * Copyright (C) 2009, 2010 Imagination Technologies Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/of.h>
-#include <linux/clk.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/mmc.h>
+#include <linaos/of.h>
+#include <linaos/clk.h>
 
 #include "dw_mmc.h"
 #include "dw_mmc-pltfm.h"

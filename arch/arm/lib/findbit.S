@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/findbit.S
+ *  linaos/arch/arm/lib/findbit.S
  *
  *  Copyright (C) 1995-2000 Russell King
  *
@@ -10,7 +10,7 @@
  *   also call with zero size.
  * Reworked by rmk.
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
                 .text
 

@@ -4,9 +4,9 @@
  * All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/crash_dump.h>
-#include <linux/visorbus.h>
+#include <linaos/acpi.h>
+#include <linaos/crash_dump.h>
+#include <linaos/visorbus.h>
 
 #include "visorbus_private.h"
 
@@ -1175,7 +1175,7 @@ static int unisys_vmcall(unsigned long tuple, unsigned long param)
 		goto error;
 	return 0;
 
-/* Need to convert from VMCALL error codes to Linux */
+/* Need to convert from VMCALL error codes to LinaOS */
 error:
 	switch (result) {
 	case VMCALL_RESULT_INVALID_PARAM:

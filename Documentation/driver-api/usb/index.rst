@@ -1,5 +1,5 @@
 =============
-Linux USB API
+LinaOS USB API
 =============
 
 .. toctree::

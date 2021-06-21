@@ -5,14 +5,14 @@
  *  Copyright 2015 Yoshinori Sato <ysato@users.sourcefoge.jp>
  */
 
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/clocksource.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/init.h>
+#include <linaos/clocksource.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
 
 #define TSTR	0
 #define TISRC	6

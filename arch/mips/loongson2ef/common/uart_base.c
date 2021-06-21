@@ -4,7 +4,7 @@
  * Author: Wu Zhangjin, wuzhangjin@gmail.com
  */
 
-#include <linux/export.h>
+#include <linaos/export.h>
 #include <asm/bootinfo.h>
 #include <asm/setup.h>
 

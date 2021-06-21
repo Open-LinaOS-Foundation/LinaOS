@@ -28,7 +28,7 @@ KCOV_INSTRUMENT		:= n
 
 SVGA_MODE	:= -DSVGA_MODE=NORMAL_VGA
 
-targets		:= vmlinux.bin setup.bin setup.elf bzImage
+targets		:= vmlinaos.bin setup.bin setup.elf bzImage
 targets		+= fdimage fdimage144 fdimage288 image.iso mtools.conf
 subdir-		:= compressed
 
@@ -77,15 +77,15 @@ $(obj)/bzImage: asflags-y  := $(SVGA_MODE)
 
 quiet_cmd_image = BUILD   $@
 silent_redirect_image = >/dev/null
-cmd_image = $(obj)/tools/build $(obj)/setup.bin $(obj)/vmlinux.bin \
+cmd_image = $(obj)/tools/build $(obj)/setup.bin $(obj)/vmlinaos.bin \
 			       $(obj)/zoffset.h $@ $($(quiet)redirect_image)
 
-$(obj)/bzImage: $(obj)/setup.bin $(obj)/vmlinux.bin $(obj)/tools/build FORCE
+$(obj)/bzImage: $(obj)/setup.bin $(obj)/vmlinaos.bin $(obj)/tools/build FORCE
 	$(call if_changed,image)
 	@$(kecho) 'Kernel: $@ is ready' ' (#'`cat .version`')'
 
-OBJCOPYFLAGS_vmlinux.bin := -O binary -R .note -R .comment -S
-$(obj)/vmlinux.bin: $(obj)/compressed/vmlinux FORCE
+OBJCOPYFLAGS_vmlinaos.bin := -O binary -R .note -R .comment -S
+$(obj)/vmlinaos.bin: $(obj)/compressed/vmlinaos FORCE
 	$(call if_changed,objcopy)
 
 SETUP_OBJS = $(addprefix $(obj)/,$(setup-y))
@@ -96,7 +96,7 @@ quiet_cmd_zoffset = ZOFFSET $@
       cmd_zoffset = $(NM) $< | sed -n $(sed-zoffset) > $@
 
 targets += zoffset.h
-$(obj)/zoffset.h: $(obj)/compressed/vmlinux FORCE
+$(obj)/zoffset.h: $(obj)/compressed/vmlinaos FORCE
 	$(call if_changed,zoffset)
 
 
@@ -111,7 +111,7 @@ OBJCOPYFLAGS_setup.bin	:= -O binary
 $(obj)/setup.bin: $(obj)/setup.elf FORCE
 	$(call if_changed,objcopy)
 
-$(obj)/compressed/vmlinux: FORCE
+$(obj)/compressed/vmlinaos: FORCE
 	$(Q)$(MAKE) $(build)=$(obj)/compressed $@
 
 # Set this if you want to pass append arguments to the
@@ -121,7 +121,7 @@ FDARGS =
 # bzdisk/fdimage/isoimage kernel
 FDINITRD =
 
-image_cmdline = default linux $(FDARGS) $(if $(FDINITRD),initrd=initrd.img,)
+image_cmdline = default linaos $(FDARGS) $(if $(FDINITRD),initrd=initrd.img,)
 
 $(obj)/mtools.conf: $(src)/mtools.conf.in
 	sed -e 's|@OBJ@|$(obj)|g' < $< > $@
@@ -136,7 +136,7 @@ PHONY += bzdisk fdimage fdimage144 fdimage288 isoimage bzlilo install
 bzdisk: $(obj)/bzImage $(obj)/mtools.conf
 	$(call cmd,genimage,bzdisk,/dev/fd0)
 
-# These require being root or having syslinux 2.02 or higher installed
+# These require being root or having syslinaos 2.02 or higher installed
 fdimage fdimage144: $(obj)/bzImage $(obj)/mtools.conf
 	$(call cmd,genimage,fdimage144,$(obj)/fdimage)
 	@$(kecho) 'Kernel: $(obj)/fdimage is ready'

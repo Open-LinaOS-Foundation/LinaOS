@@ -9,18 +9,18 @@
  * Copyright (C) 2007-2008 Finn Thain
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/nubus.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/nubus.h>
+#include <linaos/slab.h>
 
 #include <asm/irq.h>
 #include <asm/dma.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR LinaOS-OpenIB) */
 /*
  * Copyright (c) 2016-2017, Mellanox Technologies. All rights reserved.
  *
@@ -34,7 +34,7 @@
 #ifndef _UAPI_LINUX_TLS_H
 #define _UAPI_LINUX_TLS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* TLS socket options */
 #define TLS_TX			1	/* Set transmit parameters */

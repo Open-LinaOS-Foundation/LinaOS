@@ -5,7 +5,7 @@
 #define __TOOLS_LIBC_COMPAT_H
 
 #include <stdlib.h>
-#include <linux/overflow.h>
+#include <linaos/overflow.h>
 
 #ifdef COMPAT_NEED_REALLOCARRAY
 static inline void *reallocarray(void *ptr, size_t nmemb, size_t size)

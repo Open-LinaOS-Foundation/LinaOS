@@ -5,7 +5,7 @@
  *
  * See COPYING in top-level directory.
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-dev-proto.h"

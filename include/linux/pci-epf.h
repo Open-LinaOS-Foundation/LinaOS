@@ -9,10 +9,10 @@
 #ifndef __LINUX_PCI_EPF_H
 #define __LINUX_PCI_EPF_H
 
-#include <linux/configfs.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
+#include <linaos/configfs.h>
+#include <linaos/device.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/pci.h>
 
 struct pci_epf;
 enum pci_epc_interface_type;

@@ -7,26 +7,26 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/statfs.h>
-#include <linux/moduleparam.h>
-#include <linux/blkdev.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/parser.h>
-#include <linux/crc32.h>
-#include <linux/debugfs.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/quotaops.h>
-#include <linux/cleancache.h>
-#include <linux/signal.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/init.h>
+#include <linaos/random.h>
+#include <linaos/statfs.h>
+#include <linaos/moduleparam.h>
+#include <linaos/blkdev.h>
+#include <linaos/socket.h>
+#include <linaos/inet.h>
+#include <linaos/parser.h>
+#include <linaos/crc32.h>
+#include <linaos/debugfs.h>
+#include <linaos/mount.h>
+#include <linaos/seq_file.h>
+#include <linaos/quotaops.h>
+#include <linaos/cleancache.h>
+#include <linaos/signal.h>
 
 #define CREATE_TRACE_POINTS
 #include "ocfs2_trace.h"

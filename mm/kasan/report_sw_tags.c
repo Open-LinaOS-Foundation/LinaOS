@@ -9,20 +9,20 @@
  *        Andrey Konovalov <andreyknvl@gmail.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/ftrace.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/stackdepot.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kasan.h>
-#include <linux/module.h>
+#include <linaos/bitops.h>
+#include <linaos/ftrace.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/printk.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/stackdepot.h>
+#include <linaos/stacktrace.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
+#include <linaos/kasan.h>
+#include <linaos/module.h>
 
 #include <asm/sections.h>
 

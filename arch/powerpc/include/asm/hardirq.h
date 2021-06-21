@@ -2,8 +2,8 @@
 #ifndef _ASM_POWERPC_HARDIRQ_H
 #define _ASM_POWERPC_HARDIRQ_H
 
-#include <linux/threads.h>
-#include <linux/irq.h>
+#include <linaos/threads.h>
+#include <linaos/irq.h>
 
 typedef struct {
 	unsigned int __softirq_pending;

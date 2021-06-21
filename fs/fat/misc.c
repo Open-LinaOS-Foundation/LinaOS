@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/fat/misc.c
+ *  linaos/fs/fat/misc.c
  *
  *  Written 1992,1993 by Werner Almesberger
  *  22/11/2000 - Fixed fat_date_unix2dos for dates earlier than 01/01/1980
@@ -8,7 +8,7 @@
  */
 
 #include "fat.h"
-#include <linux/iversion.h>
+#include <linaos/iversion.h>
 
 /*
  * fat_fs_error reports a file system problem that might indicate fa data

@@ -12,7 +12,7 @@
 #ifndef __SKL_TOPOLOGY_H__
 #define __SKL_TOPOLOGY_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <sound/hdaudio_ext.h>
 #include <sound/soc.h>

@@ -23,7 +23,7 @@
 #ifndef CIK_INT_H_INCLUDED
 #define CIK_INT_H_INCLUDED
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct cik_ih_ring_entry {
 	uint32_t source_id;

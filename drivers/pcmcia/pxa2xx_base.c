@@ -15,14 +15,14 @@
 
   ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/cpufreq.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/platform_device.h>
 
 #include <mach/hardware.h>
 #include <mach/smemc.h>
@@ -379,6 +379,6 @@ fs_initcall(pxa2xx_pcmcia_init);
 module_exit(pxa2xx_pcmcia_exit);
 
 MODULE_AUTHOR("Stefan Eletzhofer <stefan.eletzhofer@inquant.de> and Ian Molton <spyro@f2s.com>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: PXA2xx core socket driver");
+MODULE_DESCRIPTION("LinaOS PCMCIA Card Services: PXA2xx core socket driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:pxa2xx-pcmcia");

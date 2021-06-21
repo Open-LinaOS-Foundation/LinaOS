@@ -16,7 +16,7 @@
  * NONINFRINGEMENT.  See the GNU General Public License for more
  * details.
  **********************************************************************/
-#include <linux/netdevice.h>
+#include <linaos/netdevice.h>
 #include "liquidio_common.h"
 #include "octeon_droq.h"
 #include "octeon_iq.h"

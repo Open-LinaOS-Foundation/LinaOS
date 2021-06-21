@@ -3,13 +3,13 @@
  * Copyright (C) 2002 Steve Schmidtke
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sound.h>
-#include <linux/soundcard.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
+#include <linaos/fs.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sound.h>
+#include <linaos/soundcard.h>
+#include <linaos/mutex.h>
+#include <linaos/uaccess.h>
 #include <init.h>
 #include <os.h>
 

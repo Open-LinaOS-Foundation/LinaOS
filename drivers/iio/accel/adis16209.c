@@ -5,16 +5,16 @@
  * Copyright 2010 Analog Devices Inc.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/imu/adis.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/imu/adis.h>
 
 #define ADIS16209_STARTUP_DELAY_MS	220
 #define ADIS16209_FLASH_CNT_REG		0x00

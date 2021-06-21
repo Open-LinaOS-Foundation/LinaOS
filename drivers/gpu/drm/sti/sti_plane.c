@@ -6,7 +6,7 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <drm/drm_fb_cma_helper.h>
 #include <drm/drm_fourcc.h>

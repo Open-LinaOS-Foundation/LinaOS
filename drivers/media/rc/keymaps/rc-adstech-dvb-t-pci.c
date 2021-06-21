@@ -6,7 +6,7 @@
 // Copyright (c) 2010 by Mauro Carvalho Chehab
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /* ADS Tech Instant TV DVB-T PCI Remote */
 

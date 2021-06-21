@@ -11,21 +11,21 @@
  * See Documentation/security/keys/trusted-encrypted.rst
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/parser.h>
-#include <linux/string.h>
-#include <linux/err.h>
+#include <linaos/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/parser.h>
+#include <linaos/string.h>
+#include <linaos/err.h>
 #include <keys/user-type.h>
 #include <keys/trusted-type.h>
 #include <keys/encrypted-type.h>
-#include <linux/key-type.h>
-#include <linux/random.h>
-#include <linux/rcupdate.h>
-#include <linux/scatterlist.h>
-#include <linux/ctype.h>
+#include <linaos/key-type.h>
+#include <linaos/random.h>
+#include <linaos/rcupdate.h>
+#include <linaos/scatterlist.h>
+#include <linaos/ctype.h>
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
 #include <crypto/hash.h>

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  *
- *			Linux MegaRAID Unified device driver
+ *			LinaOS MegaRAID Unified device driver
  *
  * Copyright (c) 2003-2004  LSI Logic Corporation.
  *
@@ -10,7 +10,7 @@
 #ifndef _MRAID_MBOX_DEFS_H_
 #define _MRAID_MBOX_DEFS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Commands and states for mailbox based controllers

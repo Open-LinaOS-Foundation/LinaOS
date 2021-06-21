@@ -6,27 +6,27 @@
  *			Daniel Kurtz <djkurtz@chromium.org>
  */
 
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-iommu.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_iommu.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/compiler.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/dma-iommu.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/iommu.h>
+#include <linaos/iopoll.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_iommu.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 /** MMU register offsets */
 #define RK_MMU_DTE_ADDR		0x00	/* Directory table address */

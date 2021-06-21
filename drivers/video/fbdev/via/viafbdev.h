@@ -8,9 +8,9 @@
 #ifndef __VIAFBDEV_H__
 #define __VIAFBDEV_H__
 
-#include <linux/proc_fs.h>
-#include <linux/fb.h>
-#include <linux/spinlock.h>
+#include <linaos/proc_fs.h>
+#include <linaos/fb.h>
+#include <linaos/spinlock.h>
 
 #include "via_aux.h"
 #include "ioctl.h"

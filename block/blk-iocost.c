@@ -172,13 +172,13 @@
  * - usages	: Usage history
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/time64.h>
-#include <linux/parser.h>
-#include <linux/sched/signal.h>
-#include <linux/blk-cgroup.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/timer.h>
+#include <linaos/time64.h>
+#include <linaos/parser.h>
+#include <linaos/sched/signal.h>
+#include <linaos/blk-cgroup.h>
 #include <asm/local.h>
 #include <asm/local64.h>
 #include "blk-rq-qos.h"

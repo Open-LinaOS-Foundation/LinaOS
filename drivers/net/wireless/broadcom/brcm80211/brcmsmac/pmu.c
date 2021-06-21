@@ -14,8 +14,8 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
 
 #include <brcm_hw_ids.h>
 #include <chipcommon.h>

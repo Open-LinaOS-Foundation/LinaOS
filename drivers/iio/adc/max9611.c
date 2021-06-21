@@ -17,12 +17,12 @@
  * supported by this driver.
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
 
 #define DRIVER_NAME			"max9611"
 

@@ -9,15 +9,15 @@
 #include "dm-bio-record.h"
 #include "dm-cache-metadata.h"
 
-#include <linux/dm-io.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <linaos/dm-io.h>
+#include <linaos/dm-kcopyd.h>
+#include <linaos/jiffies.h>
+#include <linaos/init.h>
+#include <linaos/mempool.h>
+#include <linaos/module.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
 
 #define DM_MSG_PREFIX "cache"
 

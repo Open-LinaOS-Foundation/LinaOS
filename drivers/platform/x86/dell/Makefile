@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for linux/drivers/platform/x86/dell
+# Makefile for linaos/drivers/platform/x86/dell
 # Dell x86 Platform-Specific Drivers
 #
 

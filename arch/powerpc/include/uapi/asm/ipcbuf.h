@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 #ifndef _ASM_POWERPC_IPCBUF_H
 #define _ASM_POWERPC_IPCBUF_H
 
@@ -16,7 +16,7 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct ipc64_perm
 {

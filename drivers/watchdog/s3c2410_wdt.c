@@ -9,24 +9,24 @@
  *     (c) Copyright 1996 Alan Cox <alan@lxorguk.ukuu.org.uk>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/types.h>
+#include <linaos/timer.h>
+#include <linaos/watchdog.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/clk.h>
+#include <linaos/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/cpufreq.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
+#include <linaos/delay.h>
 
 #define S3C2410_WTCON		0x00
 #define S3C2410_WTDAT		0x04

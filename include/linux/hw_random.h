@@ -12,10 +12,10 @@
 #ifndef LINUX_HWRANDOM_H_
 #define LINUX_HWRANDOM_H_
 
-#include <linux/completion.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/kref.h>
+#include <linaos/completion.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/kref.h>
 
 /**
  * struct hwrng - Hardware Random Number Generator driver

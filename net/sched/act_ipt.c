@@ -7,21 +7,21 @@
  * Copyright:	Jamal Hadi Salim (2002-13)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
-#include <linux/tc_act/tc_ipt.h>
+#include <linaos/tc_act/tc_ipt.h>
 #include <net/tc_act/tc_ipt.h>
 
-#include <linux/netfilter_ipv4/ip_tables.h>
+#include <linaos/netfilter_ipv4/ip_tables.h>
 
 
 static unsigned int ipt_net_id;

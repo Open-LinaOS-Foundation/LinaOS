@@ -33,8 +33,8 @@
 #ifndef _MLX5_FS_
 #define _MLX5_FS_
 
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/mlx5_ifc.h>
+#include <linaos/mlx5/driver.h>
+#include <linaos/mlx5/mlx5_ifc.h>
 
 #define MLX5_FS_DEFAULT_FLOW_TAG 0x0
 

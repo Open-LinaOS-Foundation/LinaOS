@@ -8,8 +8,8 @@
  */
 
 #include "bcma_private.h"
-#include <linux/export.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/export.h>
+#include <linaos/bcma/bcma.h>
 
 static bool bcma_wait_reg(struct bcma_bus *bus, void __iomem *addr, u32 mask,
 			  u32 value, int timeout)

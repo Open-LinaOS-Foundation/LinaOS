@@ -8,8 +8,8 @@
 #ifndef __LINUX_ARM_CCI_H
 #define __LINUX_ARM_CCI_H
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
 
 #include <asm/arm-cci.h>
 

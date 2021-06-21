@@ -45,21 +45,21 @@
 
 	button-174 {
 		label = "Down";
-		linux,code = <KEY_DOWN>;
+		linaos,code = <KEY_DOWN>;
 		channel = <0>;
 		voltage = <174603>;
 	};
 
 	button-384 {
 		label = "Up";
-		linux,code = <KEY_UP>;
+		linaos,code = <KEY_UP>;
 		channel = <0>;
 		voltage = <384126>;
 	};
 
 	button-593 {
 		label = "OK";
-		linux,code = <KEY_OK>;
+		linaos,code = <KEY_OK>;
 		channel = <0>;
 		voltage = <593650>;
 	};

@@ -13,7 +13,7 @@
 #include <sys/select.h>
 #include <sys/socket.h>
 
-#include <linux/filter.h>
+#include <linaos/filter.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>

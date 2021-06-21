@@ -20,7 +20,7 @@ in the middle (such as if you missed a pin on a chip) without the numberspace
 breaking.
 
 Machine descriptions such as device tree or ACPI does not have a concept of the
-Linux GPIO number as those descriptions are external to the Linux kernel
+LinaOS GPIO number as those descriptions are external to the LinaOS kernel
 and treat GPIO lines as abstract entities.
 
 The runtime-assigned GPIO numberspace (what you get if you assign the GPIO
@@ -34,22 +34,22 @@ unimportant by simply not using them. GPIO descriptors deal with this.
 
 Work items:
 
-- Convert all GPIO device drivers to only #include <linux/gpio/driver.h>
+- Convert all GPIO device drivers to only #include <linaos/gpio/driver.h>
 
-- Convert all consumer drivers to only #include <linux/gpio/consumer.h>
+- Convert all consumer drivers to only #include <linaos/gpio/consumer.h>
 
 - Convert all machine descriptors in "boardfiles" to only
-  #include <linux/gpio/machine.h>, the other option being to convert it
+  #include <linaos/gpio/machine.h>, the other option being to convert it
   to a machine description such as device tree, ACPI or fwnode that
   implicitly does not use global GPIO numbers.
 
 - When this work is complete (will require some of the items in the
   following ongoing work as well) we can delete the old global
-  numberspace accessors from <linux/gpio.h> and eventually delete
-  <linux/gpio.h> altogether.
+  numberspace accessors from <linaos/gpio.h> and eventually delete
+  <linaos/gpio.h> altogether.
 
 
-Get rid of <linux/of_gpio.h>
+Get rid of <linaos/of_gpio.h>
 
 This header and helpers appeared at one point when there was no proper
 driver infrastructure for doing simpler MMIO GPIO devices and there was
@@ -64,8 +64,8 @@ Work items:
   to_of_mm_gpio_chip(), of_mm_gpiochip_add_data(), of_mm_gpiochip_add()
   of_mm_gpiochip_remove() from the kernel.
 
-- Change all consumer drivers that #include <linux/of_gpio.h> to
-  #include <linux/gpio/consumer.h> and stop doing custom parsing of the
+- Change all consumer drivers that #include <linaos/of_gpio.h> to
+  #include <linaos/gpio/consumer.h> and stop doing custom parsing of the
   GPIO lines from the device tree. This can be tricky and often ivolves
   changing boardfiles, etc.
 
@@ -77,16 +77,16 @@ Work items:
   legacy bindings internally. (See e.g. commits 6953c57ab172,
   6a537d48461d etc)
 
-- Delete <linux/of_gpio.h> when all the above is complete and everything
-  uses <linux/gpio/consumer.h> or <linux/gpio/driver.h> instead.
+- Delete <linaos/of_gpio.h> when all the above is complete and everything
+  uses <linaos/gpio/consumer.h> or <linaos/gpio/driver.h> instead.
 
 
-Get rid of <linux/gpio.h>
+Get rid of <linaos/gpio.h>
 
 This legacy header is a one stop shop for anything GPIO is closely tied
 to the global GPIO numberspace. The endgame of the above refactorings will
-be the removal of <linux/gpio.h> and from that point only the specialized
-headers under <linux/gpio/*.h> will be used. This requires all the above to
+be the removal of <linaos/gpio.h> and from that point only the specialized
+headers under <linaos/gpio/*.h> will be used. This requires all the above to
 be completed and is expected to take a long time.
 
 

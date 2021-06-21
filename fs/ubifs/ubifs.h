@@ -12,26 +12,26 @@
 #define __UBIFS_H__
 
 #include <asm/div64.h>
-#include <linux/statfs.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/mtd/ubi.h>
-#include <linux/pagemap.h>
-#include <linux/backing-dev.h>
-#include <linux/security.h>
-#include <linux/xattr.h>
-#include <linux/random.h>
+#include <linaos/statfs.h>
+#include <linaos/fs.h>
+#include <linaos/err.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/mtd/ubi.h>
+#include <linaos/pagemap.h>
+#include <linaos/backing-dev.h>
+#include <linaos/security.h>
+#include <linaos/xattr.h>
+#include <linaos/random.h>
 #include <crypto/hash_info.h>
 #include <crypto/hash.h>
 #include <crypto/algapi.h>
 
-#include <linux/fscrypt.h>
+#include <linaos/fscrypt.h>
 
 #include "ubifs-media.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/transaction.c
+ * linaos/fs/jbd2/transaction.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 1998
  *
@@ -14,19 +14,19 @@
  * filesystem).
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/hrtimer.h>
-#include <linux/backing-dev.h>
-#include <linux/bug.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
+#include <linaos/time.h>
+#include <linaos/fs.h>
+#include <linaos/jbd2.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>
+#include <linaos/hrtimer.h>
+#include <linaos/backing-dev.h>
+#include <linaos/bug.h>
+#include <linaos/module.h>
+#include <linaos/sched/mm.h>
 
 #include <trace/events/jbd2.h>
 

@@ -44,7 +44,7 @@ Userspace interface
 ~~~~~~~~~~~~~~~~~~~
 
 The user can interact with Raw Gadget by opening ``/dev/raw-gadget`` and
-issuing ioctl calls; see the comments in include/uapi/linux/usb/raw_gadget.h
+issuing ioctl calls; see the comments in include/uapi/linaos/usb/raw_gadget.h
 for details. Multiple Raw Gadget instances (bound to different UDCs) can be
 used at the same time.
 

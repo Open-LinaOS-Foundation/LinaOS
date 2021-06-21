@@ -10,8 +10,8 @@
 #ifndef RTRS_SRV_H
 #define RTRS_SRV_H
 
-#include <linux/device.h>
-#include <linux/refcount.h>
+#include <linaos/device.h>
+#include <linaos/refcount.h>
 #include "rtrs-pri.h"
 
 /*

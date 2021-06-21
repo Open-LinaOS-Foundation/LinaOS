@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/zylonite_pxa300.c
+ * linaos/arch/arm/mach-pxa/zylonite_pxa300.c
  *
  * PXA300/PXA310 specific support code for the
  * PXA3xx Development Platform (aka Zylonite)
@@ -10,13 +10,13 @@
  *             initial version
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/pca953x.h>
-#include <linux/gpio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/platform_data/pca953x.h>
+#include <linaos/gpio.h>
 
 #include "pxa300.h"
 #include "devices.h"

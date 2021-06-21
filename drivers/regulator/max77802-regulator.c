@@ -11,17 +11,17 @@
 //
 // This driver is based on max8997.c
 
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
+#include <linaos/kernel.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/of_regulator.h>
+#include <linaos/mfd/max77686.h>
+#include <linaos/mfd/max77686-private.h>
 #include <dt-bindings/regulator/maxim,max77802.h>
 
 /* Default ramp delay in case it is not manually set */

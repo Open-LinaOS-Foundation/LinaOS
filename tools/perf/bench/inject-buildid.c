@@ -8,10 +8,10 @@
 #include <pthread.h>
 #include <sys/mman.h>
 #include <sys/wait.h>
-#include <linux/kernel.h>
-#include <linux/time64.h>
-#include <linux/list.h>
-#include <linux/err.h>
+#include <linaos/kernel.h>
+#include <linaos/time64.h>
+#include <linaos/list.h>
+#include <linaos/err.h>
 #include <internal/lib.h>
 #include <subcmd/parse-options.h>
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/vmstat.c
+ *  linaos/mm/vmstat.c
  *
  *  Manages VM statistics
  *  Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -10,24 +10,24 @@
  *		Christoph Lameter <christoph@lameter.com>
  *  Copyright (C) 2008-2014 Christoph Lameter
  */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/vmstat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/math64.h>
-#include <linux/writeback.h>
-#include <linux/compaction.h>
-#include <linux/mm_inline.h>
-#include <linux/page_ext.h>
-#include <linux/page_owner.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/vmstat.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/debugfs.h>
+#include <linaos/sched.h>
+#include <linaos/math64.h>
+#include <linaos/writeback.h>
+#include <linaos/compaction.h>
+#include <linaos/mm_inline.h>
+#include <linaos/page_ext.h>
+#include <linaos/page_owner.h>
 
 #include "internal.h"
 

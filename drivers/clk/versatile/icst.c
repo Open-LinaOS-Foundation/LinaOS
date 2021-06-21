@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/common/icst307.c
+ *  linaos/arch/arm/common/icst307.c
  *
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
  *
@@ -11,8 +11,8 @@
  *  This is an almost identical implementation to the ICST525 clock generator.
  *  The s2div and idx2s files are different
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 #include <asm/div64.h>
 #include "icst.h"
 

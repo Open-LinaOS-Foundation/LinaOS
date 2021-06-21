@@ -3,7 +3,7 @@
  * Copyright (C) 2017 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/iommu.h>
+#include <linaos/iommu.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

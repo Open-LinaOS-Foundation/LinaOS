@@ -9,11 +9,11 @@
  * License terms:
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/mutex.h>
 
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>

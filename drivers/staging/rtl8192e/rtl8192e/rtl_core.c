@@ -7,10 +7,10 @@
  *
  * Contact Information: wlanfae <wlanfae@realtek.com>
  */
-#include <linux/uaccess.h>
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/ieee80211.h>
+#include <linaos/uaccess.h>
+#include <linaos/pci.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ieee80211.h>
 #include "rtl_core.h"
 #include "r8192E_phy.h"
 #include "r8192E_phyreg.h"
@@ -2632,7 +2632,7 @@ void rtl92e_check_rfctrl_gpio_timer(struct timer_list *t)
 /***************************************************************************
  * ------------------- module init / exit stubs ----------------
  ***************************************************************************/
-MODULE_DESCRIPTION("Linux driver for Realtek RTL819x WiFi cards");
+MODULE_DESCRIPTION("LinaOS driver for Realtek RTL819x WiFi cards");
 MODULE_AUTHOR(DRV_COPYRIGHT " " DRV_AUTHOR);
 MODULE_VERSION(DRV_VERSION);
 MODULE_LICENSE("GPL");

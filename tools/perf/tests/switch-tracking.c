@@ -5,7 +5,7 @@
 #include <limits.h>
 #include <time.h>
 #include <stdlib.h>
-#include <linux/zalloc.h>
+#include <linaos/zalloc.h>
 #include <perf/cpumap.h>
 #include <perf/evlist.h>
 #include <perf/mmap.h>

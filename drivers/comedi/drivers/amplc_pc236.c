@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2002 MEV Ltd. <https://www.mev.co.uk/>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 /*
@@ -31,7 +31,7 @@
  * unused.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "../comedidev.h"
 

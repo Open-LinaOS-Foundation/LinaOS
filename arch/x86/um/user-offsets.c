@@ -6,7 +6,7 @@
 #include <sys/mman.h>
 #include <sys/user.h>
 #define __FRAME_OFFSETS
-#include <linux/ptrace.h>
+#include <linaos/ptrace.h>
 #include <asm/types.h>
 
 #define DEFINE(sym, val) \

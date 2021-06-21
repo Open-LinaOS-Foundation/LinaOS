@@ -36,7 +36,7 @@
 #include <subdev/i2c.h>
 #include <subdev/vga.h>
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define bioslog(lvl, fmt, args...) do {                                        \
 	nvkm_printk(init->subdev, lvl, info, "0x%08x[%c]: "fmt,                \

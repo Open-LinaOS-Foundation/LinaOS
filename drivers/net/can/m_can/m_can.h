@@ -6,28 +6,28 @@
 #ifndef _CAN_M_CAN_H_
 #define _CAN_M_CAN_H_
 
-#include <linux/can/core.h>
-#include <linux/can/led.h>
-#include <linux/can/rx-offload.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/iopoll.h>
-#include <linux/can/dev.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/can/core.h>
+#include <linaos/can/led.h>
+#include <linaos/can/rx-offload.h>
+#include <linaos/completion.h>
+#include <linaos/device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/freezer.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/iopoll.h>
+#include <linaos/can/dev.h>
+#include <linaos/pinctrl/consumer.h>
 
 /* m_can lec values */
 enum m_can_lec_type {

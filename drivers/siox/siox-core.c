@@ -2,11 +2,11 @@
 /*
  * Copyright (C) 2015-2017 Pengutronix, Uwe Kleine-König <kernel@pengutronix.de>
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/sysfs.h>
 
 #include "siox.h"
 

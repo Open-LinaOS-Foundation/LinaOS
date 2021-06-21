@@ -11,13 +11,13 @@
  */
 
 #include "ufshcd.h"
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/debugfs.h>
-#include <linux/uuid.h>
-#include <linux/acpi.h>
-#include <linux/gpio/consumer.h>
+#include <linaos/pci.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_qos.h>
+#include <linaos/debugfs.h>
+#include <linaos/uuid.h>
+#include <linaos/acpi.h>
+#include <linaos/gpio/consumer.h>
 
 struct ufs_host {
 	void (*late_init)(struct ufs_hba *hba);

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/elf.h>
-#include <linux/elf-fdpic.h>
+#include <linaos/export.h>
+#include <linaos/sched.h>
+#include <linaos/personality.h>
+#include <linaos/binfmts.h>
+#include <linaos/elf.h>
+#include <linaos/elf-fdpic.h>
 #include <asm/system_info.h>
 
 int elf_check_arch(const struct elf32_hdr *x)
@@ -46,7 +46,7 @@ void elf_set_personality(const struct elf32_hdr *x)
 	unsigned int personality = current->personality & ~PER_MASK;
 
 	/*
-	 * We only support Linux ELF executables, so always set the
+	 * We only support LinaOS ELF executables, so always set the
 	 * personality to LINUX.
 	 */
 	personality |= PER_LINUX;

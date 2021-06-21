@@ -2,9 +2,9 @@
 #ifndef XEN_OPS_H
 #define XEN_OPS_H
 
-#include <linux/init.h>
-#include <linux/clocksource.h>
-#include <linux/irqreturn.h>
+#include <linaos/init.h>
+#include <linaos/clocksource.h>
+#include <linaos/irqreturn.h>
 #include <xen/xen-ops.h>
 
 /* These are code, but not functions.  Defined in entry.S */

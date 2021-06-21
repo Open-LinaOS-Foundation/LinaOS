@@ -9,7 +9,7 @@
  *
  * History:
  *  97-01-29   Tomas Berndtsson,
- *               Integrated with Linux 2.1.21 kernel sources.
+ *               Integrated with LinaOS 2.1.21 kernel sources.
  *  97-02-15   Tomas Berndtsson,
  *               Fixed for kernel 2.1.26
  *
@@ -23,19 +23,19 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/major.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/delay.h>	/* guess what */
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>	/* For put_user and get_user */
+#include <linaos/module.h>
+#include <linaos/major.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/delay.h>	/* guess what */
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/firmware.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>	/* For put_user and get_user */
 
 #include <asm/atarihw.h>
 #include <asm/traps.h>

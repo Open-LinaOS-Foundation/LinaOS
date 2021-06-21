@@ -8,11 +8,11 @@
  * Copyright 2011 Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
+#include <linaos/slab.h>
 
 #include <sound/core.h>
 #include <sound/soc.h>

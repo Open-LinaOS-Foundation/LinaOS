@@ -1,16 +1,16 @@
 /*
  * reset.c  -- common ColdFire SoC reset support
  *
- * (C) Copyright 2012, Greg Ungerer <gerg@uclinux.org>
+ * (C) Copyright 2012, Greg Ungerer <gerg@uclinaos.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 #include <asm/machdep.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>

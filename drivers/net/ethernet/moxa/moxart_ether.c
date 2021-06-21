@@ -12,20 +12,20 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
-#include <linux/circ_buf.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/ethtool.h>
+#include <linaos/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/crc32.h>
+#include <linaos/crc32c.h>
+#include <linaos/circ_buf.h>
 
 #include "moxart_ether.h"
 

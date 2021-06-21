@@ -9,26 +9,26 @@
  * Authors:	Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>
  */
 
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/inet.h>
-#include <linux/inetdevice.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/netlink.h>
+#include <linaos/uaccess.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/jiffies.h>
+#include <linaos/mm.h>
+#include <linaos/string.h>
+#include <linaos/socket.h>
+#include <linaos/sockios.h>
+#include <linaos/errno.h>
+#include <linaos/in.h>
+#include <linaos/inet.h>
+#include <linaos/inetdevice.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/proc_fs.h>
+#include <linaos/skbuff.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/netlink.h>
 
 #include <net/arp.h>
 #include <net/ip.h>

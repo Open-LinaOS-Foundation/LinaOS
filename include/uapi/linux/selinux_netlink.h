@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * Netlink event notifications for SELinux.
+ * Netlink event notifications for SELinaOS.
  *
  * Author: James Morris <jmorris@redhat.com>
  *
@@ -13,7 +13,7 @@
 #ifndef _LINUX_SELINUX_NETLINK_H
 #define _LINUX_SELINUX_NETLINK_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Message types. */
 #define SELNL_MSG_BASE 0x10
@@ -30,7 +30,7 @@ enum {
 #define SELNL_GRP_ALL		0xffffffff
 #endif
 
-enum selinux_nlgroups {
+enum selinaos_nlgroups {
 	SELNLGRP_NONE,
 #define SELNLGRP_NONE	SELNLGRP_NONE
 	SELNLGRP_AVC,

@@ -3,18 +3,18 @@
  * Copyright (C) 2006-2010 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/miscdevice.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/dlm.h>
-#include <linux/dlm_device.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/miscdevice.h>
+#include <linaos/init.h>
+#include <linaos/wait.h>
+#include <linaos/file.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/signal.h>
+#include <linaos/spinlock.h>
+#include <linaos/dlm.h>
+#include <linaos/dlm_device.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 
 #include "dlm_internal.h"
 #include "lockspace.h"

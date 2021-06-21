@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /* Copyright (C) 2007,2008 Freescale Semiconductor, Inc. */
 
-#include <linux/usb/otg-fsm.h>
-#include <linux/usb/otg.h>
-#include <linux/ioctl.h>
+#include <linaos/usb/otg-fsm.h>
+#include <linaos/usb/otg.h>
+#include <linaos/ioctl.h>
 
 /* USB Command Register Bit Masks */
 #define USB_CMD_RUN_STOP		(0x1<<0)

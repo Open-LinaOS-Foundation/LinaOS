@@ -5,13 +5,13 @@
  *  Author: Eric Biederman <ebiederm@xmision.com>
  */
 
-#include <linux/module.h>
-#include <linux/ipc.h>
-#include <linux/nsproxy.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
-#include <linux/ipc_namespace.h>
-#include <linux/msg.h>
+#include <linaos/module.h>
+#include <linaos/ipc.h>
+#include <linaos/nsproxy.h>
+#include <linaos/sysctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/ipc_namespace.h>
+#include <linaos/msg.h>
 #include "util.h"
 
 static void *get_ipc(struct ctl_table *table)

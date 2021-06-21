@@ -7,9 +7,9 @@
  * TODO: shutdown pin
  */
 
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/iio/iio.h>
+#include <linaos/delay.h>
 
 #include "mpl115.h"
 

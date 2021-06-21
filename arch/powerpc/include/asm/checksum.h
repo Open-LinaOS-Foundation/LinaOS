@@ -6,8 +6,8 @@
 /*
  */
 
-#include <linux/bitops.h>
-#include <linux/in6.h>
+#include <linaos/bitops.h>
+#include <linaos/in6.h>
 /*
  * Computes the checksum of a memory block at src, length len,
  * and adds in "sum" (32-bit), while copying the block to dst.

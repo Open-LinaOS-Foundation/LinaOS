@@ -3,11 +3,11 @@
  * Copyright (C) 2017 IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/i2c.h>
 #include "pmbus.h"
 
 enum max31785_regs {

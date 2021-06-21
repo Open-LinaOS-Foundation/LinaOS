@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/clk.h
+ *  linaos/include/linaos/clk.h
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
@@ -9,9 +9,9 @@
 #ifndef __LINUX_CLK_H
 #define __LINUX_CLK_H
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/notifier.h>
 
 struct device;
 struct clk;

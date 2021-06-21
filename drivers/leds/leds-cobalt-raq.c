@@ -2,16 +2,16 @@
 /*
  *  LEDs driver for the Cobalt Raq series.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/export.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/leds.h>
+#include <linaos/platform_device.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/export.h>
 
 #define LED_WEB		0x04
 #define LED_POWER_OFF	0x08

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* 
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
 #ifndef __PTRACE_USER_H__
@@ -22,8 +22,8 @@ extern int ptrace_setregs(long pid, unsigned long *regs_in);
 #endif
 
 /* On architectures, that started to support PTRACE_O_TRACESYSGOOD
- * in linux 2.4, there are two different definitions of
- * PTRACE_SETOPTIONS: linux 2.4 uses 21 while linux 2.6 uses 0x4200.
+ * in linaos 2.4, there are two different definitions of
+ * PTRACE_SETOPTIONS: linaos 2.4 uses 21 while linaos 2.6 uses 0x4200.
  * For binary compatibility, 2.6 also supports the old "21", named
  * PTRACE_OLDSETOPTION. On these architectures, UML always must use
  * "21", to ensure the kernel runs on 2.4 and 2.6 host without
@@ -33,7 +33,7 @@ extern int ptrace_setregs(long pid, unsigned long *regs_in);
  * PTRACE_OLDSETOPTIONS to be the same as PTRACE_SETOPTIONS.
  *
  * On architectures, that start to support PTRACE_O_TRACESYSGOOD on
- * linux 2.6, PTRACE_OLDSETOPTIONS never is defined, and also isn't
+ * linaos 2.6, PTRACE_OLDSETOPTIONS never is defined, and also isn't
  * supported by the host kernel. In that case, our trick lets us use
  * the new 0x4200 with the name PTRACE_OLDSETOPTIONS.
  */

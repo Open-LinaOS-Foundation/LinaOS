@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux I2C core
+ * LinaOS I2C core
  *
  * Copyright (C) 1995-99 Simon G. Vogl
  *   With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi>
@@ -13,32 +13,32 @@
 #define pr_fmt(fmt) "i2c-core: " fmt
 
 #include <dt-bindings/i2c/i2c.h>
-#include <linux/acpi.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/irqflags.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/property.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
+#include <linaos/acpi.h>
+#include <linaos/clk/clk-conf.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-smbus.h>
+#include <linaos/idr.h>
+#include <linaos/init.h>
+#include <linaos/irqflags.h>
+#include <linaos/jump_label.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of_device.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm_domain.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pm_wakeirq.h>
+#include <linaos/property.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
 
 #include "i2c-core.h"
 

@@ -5,22 +5,22 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/key.h>
-#include <linux/keyctl.h>
-#include <linux/fs.h>
-#include <linux/capability.h>
-#include <linux/cred.h>
-#include <linux/string.h>
-#include <linux/err.h>
-#include <linux/vmalloc.h>
-#include <linux/security.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/key.h>
+#include <linaos/keyctl.h>
+#include <linaos/fs.h>
+#include <linaos/capability.h>
+#include <linaos/cred.h>
+#include <linaos/string.h>
+#include <linaos/err.h>
+#include <linaos/vmalloc.h>
+#include <linaos/security.h>
+#include <linaos/uio.h>
+#include <linaos/uaccess.h>
 #include <keys/request_key_auth-type.h>
 #include "internal.h"
 

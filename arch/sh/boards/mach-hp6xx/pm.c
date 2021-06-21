@@ -4,12 +4,12 @@
  *
  * Copyright (c) 2006 Andriy Skulysh <askulsyh@gmail.com>
  */
-#include <linux/init.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <linaos/init.h>
+#include <linaos/suspend.h>
+#include <linaos/errno.h>
+#include <linaos/time.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
 #include <asm/io.h>
 #include <asm/hd64461.h>
 #include <asm/bl_bit.h>

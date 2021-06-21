@@ -8,13 +8,13 @@
  * and Kazuhiko Kawakami <kazz-0@mail.goo.ne.jp>
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/ioctl.h>
-#include <linux/uaccess.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/ioctl.h>
+#include <linaos/uaccess.h>
+#include <linaos/i2c.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-device.h>
 
 MODULE_DESCRIPTION("vp27smpx driver");

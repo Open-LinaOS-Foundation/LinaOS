@@ -5,7 +5,7 @@
  * Copyright (C) 2017 Linaro Ltd <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 #include <asm/cache.h>
 

@@ -9,14 +9,14 @@
 
 #define dev_fmt(fmt) "PME: " fmt
 
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/pci.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/pm_runtime.h>
 
 #include "../pci.h"
 #include "portdrv.h"

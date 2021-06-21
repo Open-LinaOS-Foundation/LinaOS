@@ -8,16 +8,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/err.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/ux500_wdt.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/err.h>
+#include <linaos/uaccess.h>
+#include <linaos/watchdog.h>
+#include <linaos/platform_device.h>
+#include <linaos/platform_data/ux500_wdt.h>
 
-#include <linux/mfd/dbx500-prcmu.h>
+#include <linaos/mfd/dbx500-prcmu.h>
 
 #define WATCHDOG_TIMEOUT 600 /* 10 minutes */
 

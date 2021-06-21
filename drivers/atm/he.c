@@ -2,7 +2,7 @@
 
   he.c
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on LinaOS
   Copyright (C) 1999-2001  Naval Research Laboratory
 
   This library is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@
 
   he.c
 
-  ForeRunnerHE ATM Adapter driver for ATM on Linux
+  ForeRunnerHE ATM Adapter driver for ATM on LinaOS
   Copyright (C) 1999-2001  Naval Research Laboratory
 
   Permission to use, copy, modify and distribute this software and its
@@ -53,29 +53,29 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/timer.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/bitmap.h>
+#include <linaos/slab.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/sonet.h>
+#include <linaos/atmdev.h>
+#include <linaos/atm.h>
+#include <linaos/sonet.h>
 
 #undef USE_SCATTERGATHER
 #undef USE_CHECKSUM_HW			/* still confused about this */
@@ -83,7 +83,7 @@
 
 #include "he.h"
 #include "suni.h"
-#include <linux/atm_he.h>
+#include <linaos/atm_he.h>
 
 #define hprintk(fmt,args...)	printk(KERN_ERR DEV_LABEL "%d: " fmt, he_dev->number , ##args)
 
@@ -1508,7 +1508,7 @@ static int he_start(struct atm_dev *dev)
 	he_dev->total_bw = 0;
 
 
-	/* atm linux initialization */
+	/* atm linaos initialization */
 
 	he_dev->atm_dev->ci_range.vpi_bits = he_dev->vpibits;
 	he_dev->atm_dev->ci_range.vci_bits = he_dev->vcibits;

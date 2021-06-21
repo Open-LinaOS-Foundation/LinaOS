@@ -6,24 +6,24 @@
  *
  */
 
-#include <linux/file.h>
-#include <linux/poll.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched/signal.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/anon_inodes.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/kref.h>
-#include <linux/eventfd.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/idr.h>
-#include <linux/uio.h>
+#include <linaos/file.h>
+#include <linaos/poll.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/anon_inodes.h>
+#include <linaos/syscalls.h>
+#include <linaos/export.h>
+#include <linaos/kref.h>
+#include <linaos/eventfd.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/idr.h>
+#include <linaos/uio.h>
 
 DEFINE_PER_CPU(int, eventfd_wake_count);
 

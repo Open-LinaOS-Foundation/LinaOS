@@ -11,20 +11,20 @@
  * SI1145/6/6 (7-bit I2C slave address 0x60)
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/irq.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/buffer.h>
-#include <linux/util_macros.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/util_macros.h>
 
 #define SI1145_REG_PART_ID		0x00
 #define SI1145_REG_REV_ID		0x01

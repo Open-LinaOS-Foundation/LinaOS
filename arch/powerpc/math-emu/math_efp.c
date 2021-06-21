@@ -15,10 +15,10 @@
  * fully comply with IEEE-754 floating point standard.
  */
 
-#include <linux/types.h>
-#include <linux/prctl.h>
+#include <linaos/types.h>
+#include <linaos/prctl.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/reg.h>
 
 #define FP_EX_BOOKE_E500_SPE

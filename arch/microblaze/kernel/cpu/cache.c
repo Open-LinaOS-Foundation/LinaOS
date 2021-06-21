@@ -11,7 +11,7 @@
  */
 
 #include <asm/cacheflush.h>
-#include <linux/cache.h>
+#include <linaos/cache.h>
 #include <asm/cpuinfo.h>
 #include <asm/pvr.h>
 

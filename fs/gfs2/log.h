@@ -7,9 +7,9 @@
 #ifndef __LOG_DOT_H__
 #define __LOG_DOT_H__
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/writeback.h>
+#include <linaos/list.h>
+#include <linaos/spinlock.h>
+#include <linaos/writeback.h>
 #include "incore.h"
 #include "inode.h"
 

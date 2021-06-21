@@ -7,8 +7,8 @@
  * Copyright 2019 NXP
  */
 
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_address.h>
 
 #include "compat.h"
 #include "ctrl.h"

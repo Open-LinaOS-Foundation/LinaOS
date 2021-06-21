@@ -5,25 +5,25 @@
  *  Copyright (C) 2011	Don Zickus Red Hat, Inc.
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@valinaos.com>, May 2000
  */
 
 /*
  * Handle hardware traps and faults.
  */
-#include <linux/spinlock.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/sched/debug.h>
-#include <linux/nmi.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/hardirq.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/atomic.h>
-#include <linux/sched/clock.h>
+#include <linaos/spinlock.h>
+#include <linaos/kprobes.h>
+#include <linaos/kdebug.h>
+#include <linaos/sched/debug.h>
+#include <linaos/nmi.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/hardirq.h>
+#include <linaos/ratelimit.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/atomic.h>
+#include <linaos/sched/clock.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/traps.h>

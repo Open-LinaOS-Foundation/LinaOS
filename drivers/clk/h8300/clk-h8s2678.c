@@ -5,12 +5,12 @@
  * Copyright 2015 Yoshinori Sato <ysato@users.sourceforge.jp>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <linaos/clk-provider.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
 
 static DEFINE_SPINLOCK(clklock);
 

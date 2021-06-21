@@ -16,29 +16,29 @@
  * This is the main header file to be included in each DLM source file.
  */
 
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/ctype.h>
-#include <linux/spinlock.h>
-#include <linux/vmalloc.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/random.h>
-#include <linux/delay.h>
-#include <linux/socket.h>
-#include <linux/kthread.h>
-#include <linux/kobject.h>
-#include <linux/kref.h>
-#include <linux/kernel.h>
-#include <linux/jhash.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/idr.h>
-#include <linux/ratelimit.h>
-#include <linux/uaccess.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/types.h>
+#include <linaos/ctype.h>
+#include <linaos/spinlock.h>
+#include <linaos/vmalloc.h>
+#include <linaos/list.h>
+#include <linaos/errno.h>
+#include <linaos/random.h>
+#include <linaos/delay.h>
+#include <linaos/socket.h>
+#include <linaos/kthread.h>
+#include <linaos/kobject.h>
+#include <linaos/kref.h>
+#include <linaos/kernel.h>
+#include <linaos/jhash.h>
+#include <linaos/miscdevice.h>
+#include <linaos/mutex.h>
+#include <linaos/idr.h>
+#include <linaos/ratelimit.h>
+#include <linaos/uaccess.h>
 
-#include <linux/dlm.h>
+#include <linaos/dlm.h>
 #include "config.h"
 
 /* Size of the temp buffer midcomms allocates on the stack.

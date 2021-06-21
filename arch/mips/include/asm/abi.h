@@ -3,13 +3,13 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2005, 06 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2005, 06 by Ralf Baechle (ralf@linaos-mips.org)
  * Copyright (C) 2005 MIPS Technologies, Inc.
  */
 #ifndef _ASM_ABI_H
 #define _ASM_ABI_H
 
-#include <linux/signal_types.h>
+#include <linaos/signal_types.h>
 
 #include <asm/signal.h>
 #include <asm/siginfo.h>

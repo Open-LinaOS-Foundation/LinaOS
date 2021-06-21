@@ -10,31 +10,31 @@
 
 #define pr_fmt(fmt) "MityOMAPL138: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/mtd/partitions.h>
-#include <linux/notifier.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/regulator/machine.h>
-#include <linux/i2c.h>
-#include <linux/etherdevice.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/notifier.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/i2c.h>
+#include <linaos/etherdevice.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/flash.h>
 
 #include <asm/io.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <mach/common.h>
 #include <mach/da8xx.h>
-#include <linux/platform_data/mtd-davinci.h>
-#include <linux/platform_data/mtd-davinci-aemif.h>
-#include <linux/platform_data/ti-aemif.h>
+#include <linaos/platform_data/mtd-davinci.h>
+#include <linaos/platform_data/mtd-davinci-aemif.h>
+#include <linaos/platform_data/ti-aemif.h>
 #include <mach/mux.h>
-#include <linux/platform_data/spi-davinci.h>
+#include <linaos/platform_data/spi-davinci.h>
 
 #define MITYOMAPL138_PHY_ID		""
 

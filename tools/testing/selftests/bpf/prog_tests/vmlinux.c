@@ -3,7 +3,7 @@
 
 #include <test_progs.h>
 #include <time.h>
-#include "test_vmlinux.skel.h"
+#include "test_vmlinaos.skel.h"
 
 #define MY_TV_NSEC 1337
 
@@ -14,18 +14,18 @@ static void nsleep()
 	(void)syscall(__NR_nanosleep, &ts, NULL);
 }
 
-void test_vmlinux(void)
+void test_vmlinaos(void)
 {
 	int duration = 0, err;
-	struct test_vmlinux* skel;
-	struct test_vmlinux__bss *bss;
+	struct test_vmlinaos* skel;
+	struct test_vmlinaos__bss *bss;
 
-	skel = test_vmlinux__open_and_load();
+	skel = test_vmlinaos__open_and_load();
 	if (CHECK(!skel, "skel_open", "failed to open skeleton\n"))
 		return;
 	bss = skel->bss;
 
-	err = test_vmlinux__attach(skel);
+	err = test_vmlinaos__attach(skel);
 	if (CHECK(err, "skel_attach", "skeleton attach failed: %d\n", err))
 		goto cleanup;
 
@@ -39,5 +39,5 @@ void test_vmlinux(void)
 	CHECK(!bss->fentry_called, "fentry", "not called\n");
 
 cleanup:
-	test_vmlinux__destroy(skel);
+	test_vmlinaos__destroy(skel);
 }

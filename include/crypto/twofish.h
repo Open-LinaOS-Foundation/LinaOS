@@ -2,7 +2,7 @@
 #ifndef _CRYPTO_TWOFISH_H
 #define _CRYPTO_TWOFISH_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define TF_MIN_KEY_SIZE 16
 #define TF_MAX_KEY_SIZE 32

@@ -7,20 +7,20 @@
  * Copyright (C) 2002 - 2010 Paul Mundt
  * Copyright (C) 2006 - 2007 Akio Idehara
  */
-#include <linux/err.h>
-#include <linux/cache.h>
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/cpu.h>
-#include <linux/interrupt.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/hotplug.h>
-#include <linux/atomic.h>
-#include <linux/clockchips.h>
+#include <linaos/err.h>
+#include <linaos/cache.h>
+#include <linaos/cpumask.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/cpu.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched/mm.h>
+#include <linaos/sched/hotplug.h>
+#include <linaos/atomic.h>
+#include <linaos/clockchips.h>
 #include <asm/processor.h>
 #include <asm/mmu_context.h>
 #include <asm/smp.h>

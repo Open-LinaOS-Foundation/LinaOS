@@ -1,13 +1,13 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =============================
-Adding a new board to LinuxSH
+Adding a new board to LinaOSSH
 =============================
 
-               Paul Mundt <lethal@linux-sh.org>
+               Paul Mundt <lethal@linaos-sh.org>
 
 This document attempts to outline what steps are necessary to add support
-for new boards to the LinuxSH port under the new 2.5 and 2.6 kernels. This
+for new boards to the LinaOSSH port under the new 2.5 and 2.6 kernels. This
 also attempts to outline some of the noticeable changes between the 2.4
 and the 2.5/2.6 SH backend.
 
@@ -119,7 +119,7 @@ might look something like::
     /*
     * arch/sh/boards/vapor/setup.c - Setup code for imaginary board
     */
-    #include <linux/init.h>
+    #include <linaos/init.h>
 
     const char *get_system_type(void)
     {
@@ -269,7 +269,7 @@ Architecture specific targets (sh):
 
 which then allows you to do::
 
-    $ make ARCH=sh CROSS_COMPILE=sh4-linux- vapor_defconfig vmlinux
+    $ make ARCH=sh CROSS_COMPILE=sh4-linaos- vapor_defconfig vmlinaos
 
 which will in turn copy the defconfig for this board, run it through
 oldconfig (prompting you for any new options since the time of creation),

@@ -12,11 +12,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <linaos/input.h>
+#include <linaos/slab.h>
+#include <linaos/usb.h>
 
-#include <linux/hid.h>
+#include <linaos/hid.h>
 
 #include "usbhid.h"
 
@@ -830,7 +830,7 @@ static void pidff_find_reports(struct hid_device *hid, int report_type,
 		/*
 		 * Sometimes logical collections are stacked to indicate
 		 * different usages for the report and the field, in which
-		 * case we want the usage of the parent. However, Linux HID
+		 * case we want the usage of the parent. However, LinaOS HID
 		 * implementation hides this fact, so we have to dig it up
 		 * ourselves
 		 */

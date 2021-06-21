@@ -17,7 +17,7 @@
 #ifndef __LINUX_MFD_MAX8997_H
 #define __LINUX_MFD_MAX8997_H
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 /* MAX8997/8966 regulator IDs */
 enum max8997_regulators {

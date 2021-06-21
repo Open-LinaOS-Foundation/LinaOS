@@ -2,8 +2,8 @@
 #ifndef _LINUX_CONTEXT_TRACKING_STATE_H
 #define _LINUX_CONTEXT_TRACKING_STATE_H
 
-#include <linux/percpu.h>
-#include <linux/static_key.h>
+#include <linaos/percpu.h>
+#include <linaos/static_key.h>
 
 struct context_tracking {
 	/*

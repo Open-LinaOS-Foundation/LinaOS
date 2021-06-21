@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux kernel.
+# Makefile for the linaos kernel.
 #
 
-CPPFLAGS_vmlinux.lds	:= -DTEXTADDR=$(TEXTADDR)
+CPPFLAGS_vmlinaos.lds	:= -DTEXTADDR=$(TEXTADDR)
 AFLAGS_head.o		:= -DTEXTADDR=$(TEXTADDR)
 # Object file lists.
 
@@ -19,7 +19,7 @@ obj-$(CONFIG_OF)		+= devtree.o
 obj-$(CONFIG_CACHE_L2)		+= atl2c.o
 obj-$(CONFIG_PERF_EVENTS) += perf_event_cpu.o
 obj-$(CONFIG_PM)		+= pm.o sleep.o
-extra-y := head.o vmlinux.lds
+extra-y := head.o vmlinaos.lds
 
 CFLAGS_fpu.o += -mext-fpu-sp -mext-fpu-dp
 

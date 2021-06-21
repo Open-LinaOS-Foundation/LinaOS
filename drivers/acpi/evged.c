@@ -2,7 +2,7 @@
 /*
  * Generic Event Device for ACPI.
  *
- * Copyright (c) 2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016, The LinaOS Foundation. All rights reserved.
  *
  * Generic Event Device allows platforms to handle interrupts in ACPI
  * ASL statements. It follows very similar to  _EVT method approach
@@ -31,12 +31,12 @@
  * }
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/platform_device.h>
+#include <linaos/acpi.h>
 
 #define MODULE_NAME	"acpi-ged"
 

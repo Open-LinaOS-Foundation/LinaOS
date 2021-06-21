@@ -4,15 +4,15 @@
  * Copyright (C) 2010 Thomas Langer <thomas.langer@lantiq.com>
  * Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
-#include <linux/io.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/err.h>
-#include <linux/list.h>
+#include <linaos/io.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/clk.h>
+#include <linaos/clkdev.h>
+#include <linaos/err.h>
+#include <linaos/list.h>
 
 #include <asm/time.h>
 #include <asm/irq.h>

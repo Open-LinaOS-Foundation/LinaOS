@@ -4,19 +4,19 @@
  * Copyright (C) 1997  Eddie C. Dost  (ecd@skynet.be)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/miscdevice.h>
+#include <linaos/fcntl.h>
+#include <linaos/poll.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/mm.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/io.h>
 #include <asm/upa.h>
 

@@ -6,16 +6,16 @@
  * Author: Alex Smith <alex@alex-smith.me.uk>
  */
 
-#include <linux/clk.h>
-#include <linux/dmapool.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <linaos/clk.h>
+#include <linaos/dmapool.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_dma.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

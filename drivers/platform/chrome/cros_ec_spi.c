@@ -3,16 +3,16 @@
 //
 // Copyright (C) 2012 Google, Inc
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <uapi/linux/sched/types.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <uapi/linaos/sched/types.h>
 
 #include "cros_ec.h"
 

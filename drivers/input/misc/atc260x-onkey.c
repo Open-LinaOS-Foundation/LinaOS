@@ -5,14 +5,14 @@
  * Copyright (c) 2020 Cristian Ciocaltea <cristian.ciocaltea@gmail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/atc260x/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <linaos/bitfield.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/mfd/atc260x/core.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
 
 /* <2s for short press, >2s for long press */
 #define KEY_PRESS_TIME_SEC	2

@@ -26,14 +26,14 @@
  */
 
 #include "udfdecl.h"
-#include <linux/fs.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/string.h> /* memset */
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
+#include <linaos/fs.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h> /* memset */
+#include <linaos/capability.h>
+#include <linaos/errno.h>
+#include <linaos/pagemap.h>
+#include <linaos/uio.h>
 
 #include "udf_i.h"
 #include "udf_sb.h"

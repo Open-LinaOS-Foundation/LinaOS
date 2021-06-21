@@ -14,7 +14,7 @@
  * Marc Gauthier
  */
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 #include <asm/processor.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>

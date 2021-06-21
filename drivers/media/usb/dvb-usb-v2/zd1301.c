@@ -8,8 +8,8 @@
 #include "dvb_usb.h"
 #include "zd1301_demod.h"
 #include "mt2060.h"
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
 
 DVB_DEFINE_MOD_OPT_ADAPTER_NR(adapter_nr);
 

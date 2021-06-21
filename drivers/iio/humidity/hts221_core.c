@@ -7,14 +7,14 @@
  * Lorenzo Bianconi <lorenzo.bianconi@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/iio/sysfs.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/delay.h>
+#include <linaos/pm.h>
+#include <linaos/regmap.h>
+#include <linaos/bitfield.h>
 
 #include "hts221.h"
 

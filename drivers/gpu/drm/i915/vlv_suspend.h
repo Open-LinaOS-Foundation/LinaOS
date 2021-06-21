@@ -6,7 +6,7 @@
 #ifndef __VLV_SUSPEND_H__
 #define __VLV_SUSPEND_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 

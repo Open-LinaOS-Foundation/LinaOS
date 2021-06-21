@@ -3,18 +3,18 @@
  * Patrick McHardy (c) 2006-2012
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/proc_fs.h>
+#include <linaos/skbuff.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/netfilter_ipv6.h>
+#include <linaos/netfilter_bridge.h>
+#include <linaos/seq_file.h>
+#include <linaos/rcupdate.h>
 #include <net/protocol.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/dst.h>

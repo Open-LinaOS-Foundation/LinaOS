@@ -4,8 +4,8 @@
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
 
 #include "mdp4_kms.h"
 

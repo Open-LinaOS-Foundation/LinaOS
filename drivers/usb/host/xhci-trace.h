@@ -21,7 +21,7 @@
 #if !defined(__XHCI_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __XHCI_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include "xhci.h"
 #include "xhci-dbgcap.h"
 

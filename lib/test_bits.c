@@ -4,7 +4,7 @@
  */
 
 #include <kunit/test.h>
-#include <linux/bits.h>
+#include <linaos/bits.h>
 
 
 static void genmask_test(struct kunit *test)

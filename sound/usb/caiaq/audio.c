@@ -3,11 +3,11 @@
  *   Copyright (c) 2006-2008 Daniel Mack, Karsten Wiese
 */
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/usb.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/usb.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 

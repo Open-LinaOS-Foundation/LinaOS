@@ -6,9 +6,9 @@
 #ifndef __DRIVERS_MFD_MC13XXX_H
 #define __DRIVERS_MFD_MC13XXX_H
 
-#include <linux/mutex.h>
-#include <linux/regmap.h>
-#include <linux/mfd/mc13xxx.h>
+#include <linaos/mutex.h>
+#include <linaos/regmap.h>
+#include <linaos/mfd/mc13xxx.h>
 
 #define MC13XXX_NUMREGS		0x3f
 #define MC13XXX_IRQ_REG_CNT	2

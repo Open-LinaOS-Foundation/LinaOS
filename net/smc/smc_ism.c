@@ -6,9 +6,9 @@
  * Copyright IBM Corp. 2018
  */
 
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 #include <asm/page.h>
 
 #include "smc.h"

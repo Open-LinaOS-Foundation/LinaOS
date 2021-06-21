@@ -2,8 +2,8 @@
 /*
  * Handling of a master device, switching frames via its switch fabric CPU port
  *
- * Copyright (c) 2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2017 Savoir-faire LinaOS Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairelinaos.com>
  */
 
 #include "dsa_priv.h"

@@ -4,8 +4,8 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
 
 #include <asm/asm.h>
 #include <asm/csr.h>

@@ -2,20 +2,20 @@
 // Copyright (C) 2012 ARM Limited
 // Copyright (C) 2005-2017 Andes Technology Corporation
 
-#include <linux/cache.h>
-#include <linux/clocksource.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/vmalloc.h>
-#include <linux/random.h>
+#include <linaos/cache.h>
+#include <linaos/clocksource.h>
+#include <linaos/elf.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/slab.h>
+#include <linaos/timekeeper_internal.h>
+#include <linaos/vmalloc.h>
+#include <linaos/random.h>
 
 #include <asm/cacheflush.h>
 #include <asm/vdso.h>
@@ -111,7 +111,7 @@ unsigned long inline vdso_random_addr(unsigned long vdso_mapping_len)
 	return addr;
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linaos_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	unsigned long vdso_base, vdso_text_len, vdso_mapping_len;

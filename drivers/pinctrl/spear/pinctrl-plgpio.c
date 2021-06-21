@@ -9,17 +9,17 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/io.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm.h>
+#include <linaos/spinlock.h>
 
 #define MAX_GPIO_PER_REG		32
 #define PIN_OFFSET(pin)			(pin % MAX_GPIO_PER_REG)

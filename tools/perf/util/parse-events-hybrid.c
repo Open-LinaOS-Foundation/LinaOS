@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <linaos/err.h>
+#include <linaos/zalloc.h>
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>

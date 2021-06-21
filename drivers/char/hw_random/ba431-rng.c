@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2020 Silex Insight
 
-#include <linux/delay.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <linaos/delay.h>
+#include <linaos/hw_random.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/workqueue.h>
 
 #define BA431_RESET_DELAY			1 /* usec */
 #define BA431_RESET_READ_STATUS_TIMEOUT		1000 /* usec */

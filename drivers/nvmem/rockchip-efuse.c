@@ -6,16 +6,16 @@
  * Author: Caesar Wang <wxt@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/nvmem-provider.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/nvmem-provider.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
 
 #define RK3288_A_SHIFT		6
 #define RK3288_A_MASK		0x3ff

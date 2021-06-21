@@ -9,7 +9,7 @@
 
 #if defined(CONFIG_EXYNOS_IOMMU)
 
-#include <linux/iommu.h>
+#include <linaos/iommu.h>
 
 static inline bool exynos_is_iommu_available(struct device *dev)
 {

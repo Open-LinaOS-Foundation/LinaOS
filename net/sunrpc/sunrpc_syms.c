@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/sunrpc_syms.c
+ * linaos/net/sunrpc/sunrpc_syms.c
  *
  * Symbols exported by the sunrpc module.
  *
  * Copyright (C) 1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/types.h>
-#include <linux/uio.h>
-#include <linux/unistd.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/uio.h>
+#include <linaos/unistd.h>
+#include <linaos/init.h>
 
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/xprtsock.h>
+#include <linaos/sunrpc/sched.h>
+#include <linaos/sunrpc/clnt.h>
+#include <linaos/sunrpc/svc.h>
+#include <linaos/sunrpc/svcsock.h>
+#include <linaos/sunrpc/auth.h>
+#include <linaos/workqueue.h>
+#include <linaos/sunrpc/rpc_pipe_fs.h>
+#include <linaos/sunrpc/xprtsock.h>
 
 #include "sunrpc.h"
 #include "netns.h"

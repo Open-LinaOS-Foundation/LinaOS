@@ -3,14 +3,14 @@
 #define _FS_CEPH_TYPES_H
 
 /* needed before including ceph_fs.h */
-#include <linux/in.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/string.h>
+#include <linaos/in.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/string.h>
 
-#include <linux/ceph/ceph_fs.h>
-#include <linux/ceph/ceph_frag.h>
-#include <linux/ceph/ceph_hash.h>
+#include <linaos/ceph/ceph_fs.h>
+#include <linaos/ceph/ceph_frag.h>
+#include <linaos/ceph/ceph_hash.h>
 
 /*
  * Identify inodes by both their ino AND snapshot id (a u64).

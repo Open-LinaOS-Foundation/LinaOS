@@ -6,7 +6,7 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

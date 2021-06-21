@@ -11,10 +11,10 @@
 
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/slab.h>
-#include <linux/drbd.h>
+#include <linaos/slab.h>
+#include <linaos/drbd.h>
 #include "drbd_int.h"
 #include "drbd_req.h"
 

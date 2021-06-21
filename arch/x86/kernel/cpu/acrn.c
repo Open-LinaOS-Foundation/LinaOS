@@ -9,7 +9,7 @@
  *
  */
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 #include <asm/acrn.h>
 #include <asm/apic.h>

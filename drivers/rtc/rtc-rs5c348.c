@@ -9,18 +9,18 @@
  *     Mode 1 (High-Active, Shift-Then-Sample), High Avtive CS
  */
 
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
+#include <linaos/bcd.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/rtc.h>
+#include <linaos/workqueue.h>
+#include <linaos/spi/spi.h>
+#include <linaos/module.h>
 
 #define RS5C348_REG_SECS	0
 #define RS5C348_REG_MINS	1

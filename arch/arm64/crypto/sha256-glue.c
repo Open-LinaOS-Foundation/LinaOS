@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux/arm64 port of the OpenSSL SHA256 implementation for AArch64
+ * LinaOS/arm64 port of the OpenSSL SHA256 implementation for AArch64
  *
  * Copyright (c) 2016 Linaro Ltd. <ard.biesheuvel@linaro.org>
  */
@@ -12,8 +12,8 @@
 #include <crypto/internal/simd.h>
 #include <crypto/sha2.h>
 #include <crypto/sha256_base.h>
-#include <linux/types.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
 
 MODULE_DESCRIPTION("SHA-224/SHA-256 secure hash for arm64");
 MODULE_AUTHOR("Andy Polyakov <appro@openssl.org>");

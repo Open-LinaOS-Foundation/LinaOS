@@ -6,7 +6,7 @@
  * Written by Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 /*

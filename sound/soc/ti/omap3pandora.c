@@ -5,19 +5,19 @@
  * Author: Gražvydas Ignotas <notasas@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <linaos/clk.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio.h>
+#include <linaos/delay.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/module.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/soc.h>
 
 #include <asm/mach-types.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
+#include <linaos/platform_data/asoc-ti-mcbsp.h>
 
 #include "omap-mcbsp.h"
 

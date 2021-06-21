@@ -48,7 +48,7 @@ static int adpt_device_reset(struct scsi_cmnd* cmd);
 #ifndef HOSTS_C
 
 #include "dpt/sys_info.h"
-#include <linux/wait.h>
+#include <linaos/wait.h>
 #include "dpt/dpti_i2o.h"
 #include "dpt/dpti_ioctl.h"
 
@@ -80,7 +80,7 @@ static int adpt_device_reset(struct scsi_cmnd* cmd);
 #define PCI_DPT_DEVICE_ID         (0xA501)	// DPT PCI I2O Device ID
 #define PCI_DPT_RAPTOR_DEVICE_ID  (0xA511)	
 
-/* Debugging macro from Linux Device Drivers - Rubini */
+/* Debugging macro from LinaOS Device Drivers - Rubini */
 #undef PDEBUG
 #ifdef DEBUG
 //TODO add debug level switch

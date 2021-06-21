@@ -1,5 +1,5 @@
 /*
- *  include/linux/ktime.h
+ *  include/linaos/ktime.h
  *
  *  ktime_t - nanosecond-resolution time format.
  *
@@ -21,8 +21,8 @@
 #ifndef _LINUX_KTIME_H
 #define _LINUX_KTIME_H
 
-#include <linux/time.h>
-#include <linux/jiffies.h>
+#include <linaos/time.h>
+#include <linaos/jiffies.h>
 #include <asm/bug.h>
 
 /* Nanosecond scalar representation for kernel time values */
@@ -229,6 +229,6 @@ static inline ktime_t ms_to_ktime(u64 ms)
 	return ms * NSEC_PER_MSEC;
 }
 
-# include <linux/timekeeping.h>
+# include <linaos/timekeeping.h>
 
 #endif

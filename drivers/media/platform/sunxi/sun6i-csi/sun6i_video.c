@@ -5,7 +5,7 @@
  * Author: Yong Deng <yong.deng@magewell.com>
  */
 
-#include <linux/of.h>
+#include <linaos/of.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

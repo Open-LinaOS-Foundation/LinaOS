@@ -7,8 +7,8 @@
 
  */
 
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <linaos/kernel.h>
+#include <linaos/bug.h>
 #include "spu.h"
 
 /* This file holds the Spu opcode table */

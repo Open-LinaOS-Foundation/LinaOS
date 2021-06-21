@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * OpenRISC Linux
+ * OpenRISC LinaOS
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -12,9 +12,9 @@
  * Precise Delay Loops
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
+#include <linaos/init.h>
 #include <asm/param.h>
 #include <asm/delay.h>
 #include <asm/timex.h>

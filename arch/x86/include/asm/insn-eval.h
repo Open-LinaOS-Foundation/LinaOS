@@ -6,9 +6,9 @@
  * of the registers indicated by operands.
  */
 
-#include <linux/compiler.h>
-#include <linux/bug.h>
-#include <linux/err.h>
+#include <linaos/compiler.h>
+#include <linaos/bug.h>
+#include <linaos/err.h>
 #include <asm/ptrace.h>
 
 #define INSN_CODE_SEG_ADDR_SZ(params) ((params >> 4) & 0xf)

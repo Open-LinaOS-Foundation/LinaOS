@@ -7,8 +7,8 @@
 #define CURVE25519_H
 
 #include <crypto/algapi.h> // For crypto_memneq.
-#include <linux/types.h>
-#include <linux/random.h>
+#include <linaos/types.h>
+#include <linaos/random.h>
 
 enum curve25519_lengths {
 	CURVE25519_KEY_SIZE = 32

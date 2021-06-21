@@ -5,11 +5,11 @@
  * License as published by the Free Software Foundation.
  */
 #define KBUILD_MODNAME "foo"
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/in6.h>
-#include <uapi/linux/ipv6.h>
-#include <uapi/linux/pkt_cls.h>
-#include <uapi/linux/bpf.h>
+#include <uapi/linaos/if_ether.h>
+#include <uapi/linaos/in6.h>
+#include <uapi/linaos/ipv6.h>
+#include <uapi/linaos/pkt_cls.h>
+#include <uapi/linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 /* copy of 'struct ethhdr' without __packed */

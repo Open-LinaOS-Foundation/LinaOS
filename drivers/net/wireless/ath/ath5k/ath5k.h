@@ -23,11 +23,11 @@
  * (rev. engineering needed) */
 #define CHAN_DEBUG	0
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/average.h>
-#include <linux/leds.h>
+#include <linaos/io.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/average.h>
+#include <linaos/leds.h>
 #include <net/mac80211.h>
 #include <net/cfg80211.h>
 

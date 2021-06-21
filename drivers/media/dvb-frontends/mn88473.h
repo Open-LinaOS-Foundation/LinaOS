@@ -8,7 +8,7 @@
 #ifndef MN88473_H
 #define MN88473_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct mn88473_config {
 	/*

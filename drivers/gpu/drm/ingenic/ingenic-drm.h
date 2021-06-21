@@ -7,8 +7,8 @@
 #ifndef DRIVERS_GPU_DRM_INGENIC_INGENIC_DRM_H
 #define DRIVERS_GPU_DRM_INGENIC_INGENIC_DRM_H
 
-#include <linux/bitops.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/types.h>
 
 #define JZ_REG_LCD_CFG				0x00
 #define JZ_REG_LCD_VSYNC			0x04

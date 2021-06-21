@@ -9,14 +9,14 @@
  *
  *  Converted to the generic RTC susbsystem by G. Liakhovetski (2006)
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/bcd.h>
+#include <linaos/module.h>
+#include <linaos/i2c.h>
+#include <linaos/slab.h>
+#include <linaos/rtc.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/errno.h>
+#include <linaos/bcd.h>
 
 struct rtc_mem {
 	unsigned int	loc;

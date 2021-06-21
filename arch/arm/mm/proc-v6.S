@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/proc-v6.S
+ *  linaos/arch/arm/mm/proc-v6.S
  *
  *  Copyright (C) 2001 Deep Blue Solutions Ltd.
  *  Modified by Catalin Marinas for noMMU support
  *
  *  This is the "shell" of the ARMv6 processor support.
  */
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/linkage.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

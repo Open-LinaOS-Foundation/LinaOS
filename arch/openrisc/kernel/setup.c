@@ -2,7 +2,7 @@
 /*
  * OpenRISC setup.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * LinaOS architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -13,26 +13,26 @@
  * This file handles the architecture-dependent parts of initialization
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/initrd.h>
-#include <linux/of_fdt.h>
-#include <linux/of.h>
-#include <linux/device.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/stddef.h>
+#include <linaos/unistd.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/ioport.h>
+#include <linaos/delay.h>
+#include <linaos/console.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/seq_file.h>
+#include <linaos/serial.h>
+#include <linaos/initrd.h>
+#include <linaos/of_fdt.h>
+#include <linaos/of.h>
+#include <linaos/device.h>
 
 #include <asm/sections.h>
 #include <asm/types.h>
@@ -41,7 +41,7 @@
 #include <asm/cpuinfo.h>
 #include <asm/delay.h>
 
-#include "vmlinux.h"
+#include "vmlinaos.h"
 
 static void __init setup_memory(void)
 {
@@ -318,7 +318,7 @@ void __init setup_arch(char **cmdline_p)
 
 	*cmdline_p = boot_command_line;
 
-	printk(KERN_INFO "OpenRISC Linux -- http://openrisc.io\n");
+	printk(KERN_INFO "OpenRISC LinaOS -- http://openrisc.io\n");
 }
 
 static int show_cpuinfo(struct seq_file *m, void *v)

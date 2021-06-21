@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2020 ARM Ltd.
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 #include <asm/asm-uaccess.h>
 #include <asm/assembler.h>

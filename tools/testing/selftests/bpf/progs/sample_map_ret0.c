@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: (GPL-2.0 OR BSD-2-Clause) */
-#include <linux/bpf.h>
+#include <linaos/bpf.h>
 #include <bpf/bpf_helpers.h>
 
 struct bpf_map_def SEC("maps") htab = {

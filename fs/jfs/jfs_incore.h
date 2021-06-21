@@ -6,11 +6,11 @@
 #ifndef _H_JFS_INCORE
 #define _H_JFS_INCORE
 
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/uuid.h>
+#include <linaos/mutex.h>
+#include <linaos/rwsem.h>
+#include <linaos/slab.h>
+#include <linaos/bitops.h>
+#include <linaos/uuid.h>
 
 #include "jfs_types.h"
 #include "jfs_xtree.h"

@@ -1,4 +1,4 @@
-/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- linux-c -*-
+/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- linaos-c -*-
  */
 /*
  *
@@ -27,17 +27,17 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/oom.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pnp.h>
-#include <linux/slab.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/vt.h>
+#include <linaos/acpi.h>
+#include <linaos/device.h>
+#include <linaos/oom.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/pnp.h>
+#include <linaos/slab.h>
+#include <linaos/vga_switcheroo.h>
+#include <linaos/vt.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_ioctl.h>

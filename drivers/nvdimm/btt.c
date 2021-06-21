@@ -3,20 +3,20 @@
  * Block Translation Table
  * Copyright (c) 2014-2015, Intel Corporation.
  */
-#include <linux/highmem.h>
-#include <linux/debugfs.h>
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/hdreg.h>
-#include <linux/genhd.h>
-#include <linux/sizes.h>
-#include <linux/ndctl.h>
-#include <linux/fs.h>
-#include <linux/nd.h>
-#include <linux/backing-dev.h>
+#include <linaos/highmem.h>
+#include <linaos/debugfs.h>
+#include <linaos/blkdev.h>
+#include <linaos/pagemap.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/hdreg.h>
+#include <linaos/genhd.h>
+#include <linaos/sizes.h>
+#include <linaos/ndctl.h>
+#include <linaos/fs.h>
+#include <linaos/nd.h>
+#include <linaos/backing-dev.h>
 #include "btt.h"
 #include "nd.h"
 
@@ -1742,7 +1742,7 @@ static void __exit nd_btt_exit(void)
 }
 
 MODULE_ALIAS_ND_DEVICE(ND_DEVICE_BTT);
-MODULE_AUTHOR("Vishal Verma <vishal.l.verma@linux.intel.com>");
+MODULE_AUTHOR("Vishal Verma <vishal.l.verma@linaos.intel.com>");
 MODULE_LICENSE("GPL v2");
 module_init(nd_btt_init);
 module_exit(nd_btt_exit);

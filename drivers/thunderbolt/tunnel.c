@@ -6,9 +6,9 @@
  * Copyright (C) 2019, Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/list.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
 
 #include "tunnel.h"
 #include "tb.h"

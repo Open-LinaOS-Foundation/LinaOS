@@ -2,7 +2,7 @@
 /*
  * Copyright IBM Corp. 2020
  *
- * Author(s): Alexandra Winter <wintera@linux.ibm.com>
+ * Author(s): Alexandra Winter <wintera@linaos.ibm.com>
  *
  * Interface for Channel Subsystem Call
  */

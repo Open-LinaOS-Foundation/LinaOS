@@ -19,7 +19,7 @@
 			offset = <0x00>;
 			mask = <0x10>;
 			label = "versatile-ib2:0";
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 			default-state = "on";
 		};
 	};

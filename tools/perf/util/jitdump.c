@@ -12,7 +12,7 @@
 #include <byteswap.h>
 #include <sys/stat.h>
 #include <sys/mman.h>
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #include "build-id.h"
 #include "event.h"
@@ -29,8 +29,8 @@
 #include "genelf.h"
 #include "thread.h"
 
-#include <linux/ctype.h>
-#include <linux/zalloc.h>
+#include <linaos/ctype.h>
+#include <linaos/zalloc.h>
 
 struct jit_buf_desc {
 	struct perf_data *output;

@@ -3,9 +3,9 @@
  *
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/numa.h>
+#include <linaos/kernel.h>
+#include <linaos/interrupt.h>
+#include <linaos/numa.h>
 
 #include <asm/upa.h>
 

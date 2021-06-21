@@ -22,7 +22,7 @@
  * Authors: Dave Airlie
  */
 
-#include <linux/dma-buf.h>
+#include <linaos/dma-buf.h>
 
 #include "nouveau_drv.h"
 #include "nouveau_gem.h"

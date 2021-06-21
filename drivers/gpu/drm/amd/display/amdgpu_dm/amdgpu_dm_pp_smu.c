@@ -21,8 +21,8 @@
  *
  * Authors: AMD
  */
-#include <linux/string.h>
-#include <linux/acpi.h>
+#include <linaos/string.h>
+#include <linaos/acpi.h>
 
 #include <drm/drm_probe_helper.h>
 #include <drm/amdgpu_drm.h>

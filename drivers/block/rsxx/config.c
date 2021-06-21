@@ -3,14 +3,14 @@
 * Filename: config.c
 *
 * Authors: Joshua Morris <josh.h.morris@us.ibm.com>
-*	Philip Kelleher <pjk1939@linux.vnet.ibm.com>
+*	Philip Kelleher <pjk1939@linaos.vnet.ibm.com>
 *
 * (C) Copyright 2013 IBM Corporation
 */
 
-#include <linux/types.h>
-#include <linux/crc32.h>
-#include <linux/swab.h>
+#include <linaos/types.h>
+#include <linaos/crc32.h>
+#include <linaos/swab.h>
 
 #include "rsxx_priv.h"
 #include "rsxx_cfg.h"

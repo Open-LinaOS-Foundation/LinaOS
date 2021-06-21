@@ -11,7 +11,7 @@ Required Properties:
 - clocks: phandle to clock controller plus clock-specifier pair
 - nxp,debounce-delay-ms: Debounce delay in ms
 - nxp,scan-delay-ms: Repeated scan period in ms
-- linux,keymap: the key-code to be reported when the key is pressed
+- linaos,keymap: the key-code to be reported when the key is pressed
   and released, see also
   Documentation/devicetree/bindings/input/matrix-keymap.txt
 
@@ -30,5 +30,5 @@ Example:
 		keypad,num-columns = <1>;
 		nxp,debounce-delay-ms = <3>;
 		nxp,scan-delay-ms = <34>;
-		linux,keymap = <0x00000002>;
+		linaos,keymap = <0x00000002>;
 	};

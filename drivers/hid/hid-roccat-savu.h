@@ -9,7 +9,7 @@
 /*
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct savu_mouse_report_special {
 	uint8_t report_number; /* always 3 */

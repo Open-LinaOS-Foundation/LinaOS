@@ -36,7 +36,7 @@
 #define _PAGE_KERNEL_RW		(_PAGE_DIRTY | _PAGE_RW)
 #define _PAGE_KERNEL_RWX	(_PAGE_DIRTY | _PAGE_RW | _PAGE_EXEC)
 
-/* No page size encoding in the linux PTE */
+/* No page size encoding in the linaos PTE */
 #define _PAGE_PSIZE		0
 
 #define _PMD_PRESENT	0

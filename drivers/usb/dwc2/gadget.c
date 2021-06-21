@@ -6,28 +6,28 @@
  * Copyright 2008 Openmoko, Inc.
  * Copyright 2008 Simtec Electronics
  *      Ben Dooks <ben@simtec.co.uk>
- *      http://armlinux.simtec.co.uk/
+ *      http://armlinaos.simtec.co.uk/
  *
  * S3C USB2.0 High-speed / OtG driver
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mutex.h>
+#include <linaos/seq_file.h>
+#include <linaos/delay.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of_platform.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/phy.h>
-#include <linux/usb/composite.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/phy.h>
+#include <linaos/usb/composite.h>
 
 
 #include "core.h"

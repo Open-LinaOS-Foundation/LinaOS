@@ -13,7 +13,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -23,12 +23,12 @@
  *    Kevin Gao             <kevin.gao@intel.com>
  */
 
-#include <linux/types.h>
-#include <linux/list.h> /* For struct list_head */
-#include <linux/socket.h>
-#include <linux/ip.h>
-#include <linux/time.h> /* For struct timeval */
-#include <linux/gfp.h>
+#include <linaos/types.h>
+#include <linaos/list.h> /* For struct list_head */
+#include <linaos/socket.h>
+#include <linaos/ip.h>
+#include <linaos/time.h> /* For struct timeval */
+#include <linaos/gfp.h>
 #include <net/sock.h>
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>

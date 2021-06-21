@@ -4,7 +4,7 @@
  *  Copyright (c) 2015-2016 FUJITSU LIMITED
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #ifndef __CHECKER__
 #include "fjes_hw.h"

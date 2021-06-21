@@ -4,7 +4,7 @@
  *
  **************************************************************************/
 
-#include <linux/highmem.h>
+#include <linaos/highmem.h>
 
 #include "mmu.h"
 #include "psb_drv.h"

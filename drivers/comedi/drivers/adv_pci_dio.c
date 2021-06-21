@@ -21,8 +21,8 @@
  * Configuration Options: not applicable, uses PCI auto config
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
 
 #include "../comedi_pci.h"
 

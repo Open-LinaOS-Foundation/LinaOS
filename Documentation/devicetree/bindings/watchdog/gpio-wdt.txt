@@ -1,7 +1,7 @@
 * GPIO-controlled Watchdog
 
 Required Properties:
-- compatible: Should contain "linux,wdt-gpio".
+- compatible: Should contain "linaos,wdt-gpio".
 - gpios: From common gpio binding; gpio connection to WDT reset pin.
 - hw_algo: The algorithm used by the driver. Should be one of the
   following values:
@@ -21,7 +21,7 @@ Optional Properties:
 Example:
 	watchdog: watchdog {
 		/* ADM706 */
-		compatible = "linux,wdt-gpio";
+		compatible = "linaos,wdt-gpio";
 		gpios = <&gpio3 9 GPIO_ACTIVE_LOW>;
 		hw_algo = "toggle";
 		hw_margin_ms = <1600>;

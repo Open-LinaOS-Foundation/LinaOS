@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <linaos/module.h>
 
-#include <linux/mm.h> /* for handle_mm_fault() */
-#include <linux/ftrace.h>
+#include <linaos/mm.h> /* for handle_mm_fault() */
+#include <linaos/ftrace.h>
 
 void my_direct_func(struct vm_area_struct *vma,
 			unsigned long address, unsigned int flags)

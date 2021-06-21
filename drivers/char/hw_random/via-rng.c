@@ -25,10 +25,10 @@
  */
 
 #include <crypto/padlock.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/hw_random.h>
+#include <linaos/delay.h>
 #include <asm/cpu_device_id.h>
 #include <asm/io.h>
 #include <asm/msr.h>

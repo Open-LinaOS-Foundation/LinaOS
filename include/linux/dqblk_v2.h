@@ -6,7 +6,7 @@
 #ifndef _LINUX_DQBLK_V2_H
 #define _LINUX_DQBLK_V2_H
 
-#include <linux/dqblk_qtree.h>
+#include <linaos/dqblk_qtree.h>
 
 /* Numbers of blocks needed for updates */
 #define V2_INIT_ALLOC QTREE_INIT_ALLOC

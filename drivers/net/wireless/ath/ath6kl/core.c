@@ -17,10 +17,10 @@
 
 #include "core.h"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/export.h>
-#include <linux/vmalloc.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/export.h>
+#include <linaos/vmalloc.h>
 
 #include "debug.h"
 #include "hif-ops.h"

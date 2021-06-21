@@ -1,6 +1,6 @@
 /*
  * Copyright © 2006-2010 Intel Corporation
- * Copyright (c) 2006 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2006 Dave Airlie <airlied@linaos.ie>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,16 +23,16 @@
  *
  * Authors:
  *	Eric Anholt <eric@anholt.net>
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@linaos.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  *      Chris Wilson <chris@chris-wilson.co.uk>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/pwm.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pwm.h>
 
 #include "intel_connector.h"
 #include "intel_display_types.h"

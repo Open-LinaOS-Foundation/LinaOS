@@ -6,7 +6,7 @@
 #ifndef	_H_JFS_LOGMGR
 #define _H_JFS_LOGMGR
 
-#include <linux/uuid.h>
+#include <linaos/uuid.h>
 
 #include "jfs_filsys.h"
 #include "jfs_lock.h"

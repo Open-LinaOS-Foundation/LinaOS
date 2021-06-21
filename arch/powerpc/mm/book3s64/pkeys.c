@@ -11,8 +11,8 @@
 #include <asm/setup.h>
 #include <asm/smp.h>
 
-#include <linux/pkeys.h>
-#include <linux/of_fdt.h>
+#include <linaos/pkeys.h>
+#include <linaos/of_fdt.h>
 
 
 int  num_pkey;		/* Max number of pkeys supported */
@@ -153,7 +153,7 @@ void __init pkey_early_init_devtree(void)
 #ifdef CONFIG_PPC_4K_PAGES
 	/*
 	 * The OS can manage only 8 pkeys due to its inability to represent them
-	 * in the Linux 4K PTE. Mark all other keys reserved.
+	 * in the LinaOS 4K PTE. Mark all other keys reserved.
 	 */
 	num_pkey = min(8, pkeys_total);
 #else

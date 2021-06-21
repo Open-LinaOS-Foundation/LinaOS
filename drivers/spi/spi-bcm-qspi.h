@@ -6,8 +6,8 @@
 #ifndef __SPI_BCM_QSPI_H__
 #define __SPI_BCM_QSPI_H__
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
 
 /* BSPI interrupt masks */
 #define INTR_BSPI_LR_OVERREAD_MASK		BIT(4)

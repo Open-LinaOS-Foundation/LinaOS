@@ -9,8 +9,8 @@
 #define __PLATFORM_DATA_SIMPLEFB_H__
 
 #include <drm/drm_fourcc.h>
-#include <linux/fb.h>
-#include <linux/types.h>
+#include <linaos/fb.h>
+#include <linaos/types.h>
 
 /* format array, use it to initialize a "struct simplefb_format" array */
 #define SIMPLEFB_FORMATS \

@@ -9,7 +9,7 @@
  * Adapted from the x86 port by Ananth N Mavinakayanahalli <ananth@in.ibm.com>
  */
 
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 #include <asm/probes.h>
 #include <asm/inst.h>
 

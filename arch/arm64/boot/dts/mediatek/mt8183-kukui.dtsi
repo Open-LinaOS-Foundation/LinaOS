@@ -119,7 +119,7 @@
 	};
 
 	btsco: codec1 {
-		compatible = "linux,bt-sco";
+		compatible = "linaos,bt-sco";
 	};
 
 	wifi_pwrseq: wifi-pwrseq {
@@ -139,7 +139,7 @@
 		wowlan {
 			label = "Wake on WiFi";
 			gpios = <&pio 113 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_WAKEUP>;
+			linaos,code = <KEY_WAKEUP>;
 			wakeup-source;
 		};
 	};

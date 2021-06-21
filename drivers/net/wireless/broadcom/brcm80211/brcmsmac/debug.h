@@ -17,8 +17,8 @@
 #ifndef _BRCMS_DEBUG_H_
 #define _BRCMS_DEBUG_H_
 
-#include <linux/device.h>
-#include <linux/bcma/bcma.h>
+#include <linaos/device.h>
+#include <linaos/bcma/bcma.h>
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
 #include "main.h"

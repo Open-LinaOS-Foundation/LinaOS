@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_PAGE_H
 #define _ASM_X86_PAGE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #ifdef __KERNEL__
 
@@ -18,7 +18,7 @@
 
 struct page;
 
-#include <linux/range.h>
+#include <linaos/range.h>
 extern struct range pfn_mapped[];
 extern int nr_pfn_mapped;
 

@@ -11,30 +11,30 @@
  *          Chris Telfer <chris.telfer@netronome.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/mm.h>
-#include <linux/overflow.h>
-#include <linux/page_ref.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/msi.h>
-#include <linux/ethtool.h>
-#include <linux/log2.h>
-#include <linux/if_vlan.h>
-#include <linux/random.h>
-#include <linux/vmalloc.h>
-#include <linux/ktime.h>
+#include <linaos/bitfield.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/fs.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
+#include <linaos/mm.h>
+#include <linaos/overflow.h>
+#include <linaos/page_ref.h>
+#include <linaos/pci.h>
+#include <linaos/pci_regs.h>
+#include <linaos/msi.h>
+#include <linaos/ethtool.h>
+#include <linaos/log2.h>
+#include <linaos/if_vlan.h>
+#include <linaos/random.h>
+#include <linaos/vmalloc.h>
+#include <linaos/ktime.h>
 
 #include <net/tls.h>
 #include <net/vxlan.h>
@@ -2915,7 +2915,7 @@ static int nfp_net_netdev_close(struct net_device *netdev)
 {
 	struct nfp_net *nn = netdev_priv(netdev);
 
-	/* Step 1: Disable RX and TX rings from the Linux kernel perspective
+	/* Step 1: Disable RX and TX rings from the LinaOS kernel perspective
 	 */
 	nfp_net_close_stack(nn);
 

@@ -1,13 +1,13 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR LinaOS-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies. */
 
 #include <net/dst_metadata.h>
-#include <linux/netdevice.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/rtnetlink.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
+#include <linaos/netdevice.h>
+#include <linaos/list.h>
+#include <linaos/rculist.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
 #include "tc.h"
 #include "neigh.h"
 #include "en_rep.h"

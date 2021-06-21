@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2017, The Linux Foundation
+ * Copyright (c) 2011-2017, The LinaOS Foundation
  */
 
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/pm_runtime.h>
 #include "slimbus.h"
 
 /**

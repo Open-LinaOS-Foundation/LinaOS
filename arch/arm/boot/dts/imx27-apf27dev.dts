@@ -38,7 +38,7 @@
 		user-key {
 			label = "user";
 			gpios = <&gpio6 13 GPIO_ACTIVE_HIGH>;
-			linux,code = <276>; /* BTN_EXTRA */
+			linaos,code = <276>; /* BTN_EXTRA */
 		};
 	};
 
@@ -50,7 +50,7 @@
 		user {
 			label = "Heartbeat";
 			gpios = <&gpio6 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 

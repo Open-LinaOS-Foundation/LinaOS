@@ -8,15 +8,15 @@
  * CONFIG_HEARTBEAT code.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/sched/loadavg.h>
-#include <linux/leds.h>
-#include <linux/reboot.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/timer.h>
+#include <linaos/sched.h>
+#include <linaos/sched/loadavg.h>
+#include <linaos/leds.h>
+#include <linaos/reboot.h>
 #include "../leds.h"
 
 static int panic_heartbeats;

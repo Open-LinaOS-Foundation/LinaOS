@@ -4,7 +4,7 @@
  *
  *  Copyright (C) 2001-2005 Russell King
  *
- * Please forward _all_ changes to this file to rmk@arm.linux.org.uk,
+ * Please forward _all_ changes to this file to rmk@arm.linaos.org.uk,
  * no matter what the change is.  Thanks!
  */
 #ifndef __ASM_ARM_UNISTD_H

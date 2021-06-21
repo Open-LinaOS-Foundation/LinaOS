@@ -9,7 +9,7 @@
 #ifndef __ASM_SH_CACHE_H
 #define __ASM_SH_CACHE_H
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <cpu/cache.h>
 
 #define L1_CACHE_BYTES		(1 << L1_CACHE_SHIFT)

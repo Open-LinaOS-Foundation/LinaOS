@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/core/sdio_io.c
+ *  linaos/drivers/mmc/core/sdio_io.c
  *
  *  Copyright 2007-2008 Pierre Ossman
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <linaos/export.h>
+#include <linaos/kernel.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/sdio_func.h>
 
 #include "sdio_ops.h"
 #include "core.h"

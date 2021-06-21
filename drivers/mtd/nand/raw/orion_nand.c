@@ -8,18 +8,18 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/sizes.h>
-#include <linux/platform_data/mtd-orion_nand.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/sizes.h>
+#include <linaos/platform_data/mtd-orion_nand.h>
 
 struct orion_nand_info {
 	struct nand_controller controller;

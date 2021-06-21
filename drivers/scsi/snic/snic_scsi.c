@@ -15,14 +15,14 @@
  * SOFTWARE.
  */
 
-#include <linux/mempool.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
+#include <linaos/mempool.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/workqueue.h>
+#include <linaos/pci.h>
+#include <linaos/spinlock.h>
+#include <linaos/delay.h>
+#include <linaos/gfp.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_device.h>

@@ -9,10 +9,10 @@
  *    {engebret|bergner}@us.ibm.com
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/memblock.h>
+#include <linaos/of_fdt.h>
 
 void __init early_init_devtree(void *params)
 {

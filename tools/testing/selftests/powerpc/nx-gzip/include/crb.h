@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 #ifndef __CRB_H
 #define __CRB_H
-#include <linux/types.h>
+#include <linaos/types.h>
 #include "nx.h"
 
 /* CCW 842 CI/FC masks

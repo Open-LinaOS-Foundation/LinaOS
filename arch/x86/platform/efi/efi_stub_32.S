@@ -6,8 +6,8 @@
  * turned off.
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
 #include <asm/asm-offsets.h>
 #include <asm/page_types.h>
 

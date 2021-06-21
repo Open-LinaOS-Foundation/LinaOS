@@ -1,5 +1,5 @@
 /*
- *  linux/fs/hfs/hfs.h
+ *  linaos/fs/hfs/hfs.h
  *
  * Copyright (C) 1995-1997  Paul H. Hargrove
  * (C) 2003 Ardis Technologies <roman@ardistech.com>

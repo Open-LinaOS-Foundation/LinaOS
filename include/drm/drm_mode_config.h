@@ -23,11 +23,11 @@
 #ifndef __DRM_MODE_CONFIG_H__
 #define __DRM_MODE_CONFIG_H__
 
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/idr.h>
-#include <linux/workqueue.h>
-#include <linux/llist.h>
+#include <linaos/mutex.h>
+#include <linaos/types.h>
+#include <linaos/idr.h>
+#include <linaos/workqueue.h>
+#include <linaos/llist.h>
 
 #include <drm/drm_modeset_lock.h>
 

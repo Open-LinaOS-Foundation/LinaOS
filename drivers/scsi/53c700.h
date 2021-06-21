@@ -8,7 +8,7 @@
 #ifndef _53C700_H
 #define _53C700_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 #include <asm/io.h>
 
 #include <scsi/scsi_device.h>

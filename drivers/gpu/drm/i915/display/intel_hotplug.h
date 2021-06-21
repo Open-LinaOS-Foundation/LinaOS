@@ -6,7 +6,7 @@
 #ifndef __INTEL_HOTPLUG_H__
 #define __INTEL_HOTPLUG_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct drm_i915_private;
 struct intel_connector;

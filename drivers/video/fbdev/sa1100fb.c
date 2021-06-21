@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/sa1100fb.c
+ *  linaos/drivers/video/sa1100fb.c
  *
  *  Copyright (C) 1999 Eric A. Thomas
  *   Based on acornfb.c Copyright (C) Russell King.
@@ -13,12 +13,12 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	linaos-arm-kernel@lists.arm.linaos.org.uk
  *
- * Clean patches should be sent to the ARM Linux Patch System.  Please see the
+ * Clean patches should be sent to the ARM LinaOS Patch System.  Please see the
  * following web page for more information:
  *
- *	https://www.arm.linux.org.uk/developer/patches/info.shtml
+ *	https://www.arm.linaos.org.uk/developer/patches/info.shtml
  *
  * Thank you.
  *
@@ -106,7 +106,7 @@
  *	       Cliff Brake <cbrake@accelent.com>
  *	- Added PM callback
  *
- * 2001/05/26: <rmk@arm.linux.org.uk>
+ * 2001/05/26: <rmk@arm.linaos.org.uk>
  *	- Fix 16bpp so that (a) we use the right colours rather than some
  *	  totally random colour depending on what was in page 0, and (b)
  *	  we don't de-reference a NULL pointer.
@@ -117,68 +117,68 @@
  *	  memset.
  *	- remove allow_modeset (acornfb idea does not belong here)
  *
- * 2001/05/28: <rmk@arm.linux.org.uk>
+ * 2001/05/28: <rmk@arm.linaos.org.uk>
  *	- massive cleanup - move machine dependent data into structures
  *	- I've left various #warnings in - if you see one, and know
  *	  the hardware concerned, please get in contact with me.
  *
- * 2001/05/31: <rmk@arm.linux.org.uk>
+ * 2001/05/31: <rmk@arm.linaos.org.uk>
  *	- Fix LCCR1 HSW value, fix all machine type specifications to
  *	  keep values in line.  (Please check your machine type specs)
  *
- * 2001/06/10: <rmk@arm.linux.org.uk>
+ * 2001/06/10: <rmk@arm.linaos.org.uk>
  *	- Fiddle with the LCD controller from task context only; mainly
  *	  so that we can run with interrupts on, and sleep.
  *	- Convert #warnings into #errors.  No pain, no gain. ;)
  *
- * 2001/06/14: <rmk@arm.linux.org.uk>
+ * 2001/06/14: <rmk@arm.linaos.org.uk>
  *	- Make the palette BPS value for 12bpp come out correctly.
  *	- Take notice of "greyscale" on any colour depth.
  *	- Make truecolor visuals use the RGB channel encoding information.
  *
- * 2001/07/02: <rmk@arm.linux.org.uk>
+ * 2001/07/02: <rmk@arm.linaos.org.uk>
  *	- Fix colourmap problems.
  *
  * 2001/07/13: <abraham@2d3d.co.za>
  *	- Added support for the ICP LCD-Kit01 on LART. This LCD is
  *	  manufactured by Prime View, model no V16C6448AB
  *
- * 2001/07/23: <rmk@arm.linux.org.uk>
+ * 2001/07/23: <rmk@arm.linaos.org.uk>
  *	- Hand merge version from handhelds.org CVS tree.  See patch
  *	  notes for 595/1 for more information.
  *	- Drop 12bpp (it's 16bpp with different colour register mappings).
  *	- This hardware can not do direct colour.  Therefore we don't
  *	  support it.
  *
- * 2001/07/27: <rmk@arm.linux.org.uk>
+ * 2001/07/27: <rmk@arm.linaos.org.uk>
  *	- Halve YRES on dual scan LCDs.
  *
- * 2001/08/22: <rmk@arm.linux.org.uk>
+ * 2001/08/22: <rmk@arm.linaos.org.uk>
  *	- Add b/w iPAQ pixclock value.
  *
- * 2001/10/12: <rmk@arm.linux.org.uk>
+ * 2001/10/12: <rmk@arm.linaos.org.uk>
  *	- Add patch 681/1 and clean up stork definitions.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/clk.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
+#include <linaos/fb.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/cpufreq.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mutex.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
 
 #include <video/sa1100fb.h>
 

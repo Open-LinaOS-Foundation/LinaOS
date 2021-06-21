@@ -11,19 +11,19 @@
 *  Al Borchers (borchers@steinerpoint.com)
 */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/usb/serial.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_driver.h>
+#include <linaos/tty_flip.h>
+#include <linaos/module.h>
+#include <linaos/spinlock.h>
+#include <linaos/uaccess.h>
+#include <linaos/usb.h>
+#include <linaos/wait.h>
+#include <linaos/sched/signal.h>
+#include <linaos/usb/serial.h>
 
 /* Defines */
 

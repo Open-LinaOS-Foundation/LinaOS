@@ -7,7 +7,7 @@
 #ifndef _ASM_VGA_H
 #define _ASM_VGA_H
 
-#include <linux/string.h>
+#include <linaos/string.h>
 #include <asm/addrspace.h>
 #include <asm/byteorder.h>
 
@@ -26,7 +26,7 @@
  *  These are only needed for supporting VGA or MDA text mode, which use little
  *  endian byte ordering.
  *  In other cases, we can optimize by using native byte ordering and
- *  <linux/vt_buffer.h> has already done the right job for us.
+ *  <linaos/vt_buffer.h> has already done the right job for us.
  */
 
 #undef scr_writew

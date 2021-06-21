@@ -5,8 +5,8 @@
  * Copyright (C) 2016-2017 Cirrus Logic
  */
 
-#include <linux/err.h>
-#include <linux/mfd/madera/core.h>
+#include <linaos/err.h>
+#include <linaos/mfd/madera/core.h>
 
 #include "pinctrl-madera.h"
 

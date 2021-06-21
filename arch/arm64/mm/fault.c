@@ -7,24 +7,24 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/extable.h>
-#include <linux/kfence.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/hardirq.h>
-#include <linux/init.h>
-#include <linux/kasan.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/page-flags.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/highmem.h>
-#include <linux/perf_event.h>
-#include <linux/preempt.h>
-#include <linux/hugetlb.h>
+#include <linaos/acpi.h>
+#include <linaos/bitfield.h>
+#include <linaos/extable.h>
+#include <linaos/kfence.h>
+#include <linaos/signal.h>
+#include <linaos/mm.h>
+#include <linaos/hardirq.h>
+#include <linaos/init.h>
+#include <linaos/kasan.h>
+#include <linaos/kprobes.h>
+#include <linaos/uaccess.h>
+#include <linaos/page-flags.h>
+#include <linaos/sched/signal.h>
+#include <linaos/sched/debug.h>
+#include <linaos/highmem.h>
+#include <linaos/perf_event.h>
+#include <linaos/preempt.h>
+#include <linaos/hugetlb.h>
 
 #include <asm/acpi.h>
 #include <asm/bug.h>

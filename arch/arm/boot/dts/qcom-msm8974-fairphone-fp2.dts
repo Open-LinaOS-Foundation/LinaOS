@@ -28,7 +28,7 @@
 		camera-snapshot {
 			label = "camera_snapshot";
 			gpios = <&pm8941_gpios 1 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_CAMERA>;
+			linaos,code = <KEY_CAMERA>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -36,7 +36,7 @@
 		volume-down {
 			label = "volume_down";
 			gpios = <&pm8941_gpios 2 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};
@@ -44,7 +44,7 @@
 		volume-up {
 			label = "volume_up";
 			gpios = <&pm8941_gpios 5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
 		};

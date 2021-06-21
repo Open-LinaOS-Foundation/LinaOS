@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2016-2017 Texas Instruments Inc.
  */
-#include <linux/ti-emif-sram.h>
+#include <linaos/ti-emif-sram.h>
 
 int main(void)
 {

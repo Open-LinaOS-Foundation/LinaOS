@@ -34,8 +34,8 @@
 #include "radeon_audio.h"
 #include "atom.h"
 
-#include <linux/pm_runtime.h>
-#include <linux/vga_switcheroo.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/vga_switcheroo.h>
 
 static int radeon_dp_handle_hpd(struct drm_connector *connector)
 {

@@ -7,16 +7,16 @@
  * Also based on previous sta2x11 work, Copyright 2011 Wind River Systems, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/gpio/driver.h>
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/sta2x11-mfd.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/mfd/sta2x11-mfd.h>
 
 struct gsta_regs {
 	u32 dat;		/* 0x00 */

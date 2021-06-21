@@ -6,8 +6,8 @@
  * Copyright 2014-2016 Linaro Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/greybus.h>
+#include <linaos/module.h>
+#include <linaos/greybus.h>
 
 #include "gbphy.h"
 #include "spilib.h"

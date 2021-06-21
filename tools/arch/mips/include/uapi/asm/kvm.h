@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
@@ -12,7 +12,7 @@
 #ifndef __LINUX_KVM_MIPS_H
 #define __LINUX_KVM_MIPS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * KVM MIPS specific structures and definitions.
@@ -46,7 +46,7 @@ struct kvm_fpu {
  * For MIPS, we use KVM_SET_ONE_REG and KVM_GET_ONE_REG to access various
  * registers.  The id field is broken down as follows:
  *
- *  bits[63..52] - As per linux/kvm.h
+ *  bits[63..52] - As per linaos/kvm.h
  *  bits[51..32] - Must be zero.
  *  bits[31..16] - Register set.
  *

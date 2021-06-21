@@ -11,12 +11,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/bitops.h>
+#include <linaos/mm.h>
+#include <linaos/memblock.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/sun3x.h>
 #include <asm/dvma.h>

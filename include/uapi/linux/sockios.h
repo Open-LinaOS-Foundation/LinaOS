@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * INET		An implementation of the TCP/IP protocol suite for the LINUX
  *		operating system.  INET is implemented using the  BSD Socket
@@ -22,7 +22,7 @@
 #include <asm/bitsperlong.h>
 #include <asm/sockios.h>
 
-/* Linux-specific socket ioctls */
+/* LinaOS-specific socket ioctls */
 #define SIOCINQ		FIONREAD
 #define SIOCOUTQ	TIOCOUTQ        /* output queue size (not sent + not acked) */
 
@@ -149,7 +149,7 @@
 #define SIOCBRADDIF	0x89a2		/* add interface to bridge      */
 #define SIOCBRDELIF	0x89a3		/* remove interface from bridge */
 
-/* hardware time stamping: parameters in linux/net_tstamp.h */
+/* hardware time stamping: parameters in linaos/net_tstamp.h */
 #define SIOCSHWTSTAMP	0x89b0		/* set and get config		*/
 #define SIOCGHWTSTAMP	0x89b1		/* get config			*/
 

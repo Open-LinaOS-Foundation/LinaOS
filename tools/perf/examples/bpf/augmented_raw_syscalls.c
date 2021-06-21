@@ -15,8 +15,8 @@
  */
 
 #include <unistd.h>
-#include <linux/limits.h>
-#include <linux/socket.h>
+#include <linaos/limits.h>
+#include <linaos/socket.h>
 #include <pid_filter.h>
 
 /* bpf-output associated map */

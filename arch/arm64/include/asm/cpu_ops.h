@@ -5,8 +5,8 @@
 #ifndef __ASM_CPU_OPS_H
 #define __ASM_CPU_OPS_H
 
-#include <linux/init.h>
-#include <linux/threads.h>
+#include <linaos/init.h>
+#include <linaos/threads.h>
 
 /**
  * struct cpu_operations - Callback operations for hotplugging CPUs.

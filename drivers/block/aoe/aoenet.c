@@ -4,11 +4,11 @@
  * Ethernet portion of AoE driver
  */
 
-#include <linux/gfp.h>
-#include <linux/hdreg.h>
-#include <linux/blkdev.h>
-#include <linux/netdevice.h>
-#include <linux/moduleparam.h>
+#include <linaos/gfp.h>
+#include <linaos/hdreg.h>
+#include <linaos/blkdev.h>
+#include <linaos/netdevice.h>
+#include <linaos/moduleparam.h>
 #include <net/net_namespace.h>
 #include <asm/unaligned.h>
 #include "aoe.h"

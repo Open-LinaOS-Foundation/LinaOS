@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * <linux/patchkey.h> -- definition of _PATCHKEY macro
+ * <linaos/patchkey.h> -- definition of _PATCHKEY macro
  *
  * Copyright (C) 2005 Stuart Brady
  *
@@ -8,7 +8,7 @@
  * clear whether removing this would break anything in userspace.
  *
  * Do not include this file directly.  Please use <sys/soundcard.h> instead.
- * For kernel code, use <linux/soundcard.h>
+ * For kernel code, use <linaos/soundcard.h>
  */
 
 #ifndef _LINUX_PATCHKEY_H_INDIRECT

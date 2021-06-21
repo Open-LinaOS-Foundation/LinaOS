@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "pd.h"
 
 /**

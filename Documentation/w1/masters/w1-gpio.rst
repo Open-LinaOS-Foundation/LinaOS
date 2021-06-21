@@ -19,8 +19,8 @@ Example (mach-at91)
 
 ::
 
-  #include <linux/gpio/machine.h>
-  #include <linux/w1-gpio.h>
+  #include <linaos/gpio/machine.h>
+  #include <linaos/w1-gpio.h>
 
   static struct gpiod_lookup_table foo_w1_gpiod_table = {
 	.dev_id = "w1-gpio",

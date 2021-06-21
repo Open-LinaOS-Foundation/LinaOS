@@ -19,8 +19,8 @@
  * that's not a high priority since our systems tend to not have swap.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/pfn_t.h>
+#include <linaos/dma-buf.h>
+#include <linaos/pfn_t.h>
 
 #include "v3d_drv.h"
 #include "uapi/drm/v3d_drm.h"

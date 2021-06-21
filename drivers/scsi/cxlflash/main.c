@@ -2,16 +2,16 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Manoj N. Kumar <manoj@linux.vnet.ibm.com>, IBM Corporation
- *             Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Manoj N. Kumar <manoj@linaos.vnet.ibm.com>, IBM Corporation
+ *             Matthew R. Ochs <mrochs@linaos.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2015 IBM Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <linaos/delay.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
 
 #include <asm/unaligned.h>
 
@@ -24,8 +24,8 @@
 #include "common.h"
 
 MODULE_DESCRIPTION(CXLFLASH_ADAPTER_NAME);
-MODULE_AUTHOR("Manoj N. Kumar <manoj@linux.vnet.ibm.com>");
-MODULE_AUTHOR("Matthew R. Ochs <mrochs@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Manoj N. Kumar <manoj@linaos.vnet.ibm.com>");
+MODULE_AUTHOR("Matthew R. Ochs <mrochs@linaos.vnet.ibm.com>");
 MODULE_LICENSE("GPL");
 
 static struct class *cxlflash_class;

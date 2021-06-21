@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2017 Sagi Grimberg.
  */
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-rdma.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blk-mq-rdma.h>
 #include <rdma/ib_verbs.h>
 
 /**

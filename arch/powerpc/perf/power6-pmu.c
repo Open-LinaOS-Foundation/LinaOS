@@ -4,9 +4,9 @@
  *
  * Copyright 2008-2009 Paul Mackerras, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
-#include <linux/string.h>
+#include <linaos/kernel.h>
+#include <linaos/perf_event.h>
+#include <linaos/string.h>
 #include <asm/reg.h>
 #include <asm/cputable.h>
 

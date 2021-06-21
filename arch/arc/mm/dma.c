@@ -3,7 +3,7 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/dma-map-ops.h>
+#include <linaos/dma-map-ops.h>
 #include <asm/cache.h>
 #include <asm/cacheflush.h>
 
@@ -45,7 +45,7 @@ void arch_dma_prep_coherent(struct page *page, size_t size)
  *     [*] needed for CPU speculative prefetches
  *
  * NOTE: we don't check the validity of direction argument as it is done in
- * upper layer functions (in include/linux/dma-mapping.h)
+ * upper layer functions (in include/linaos/dma-mapping.h)
  */
 
 void arch_sync_dma_for_device(phys_addr_t paddr, size_t size,

@@ -30,8 +30,8 @@
 /*
  * Veritas filesystem driver - support for 'immed' inodes.
  */
-#include <linux/fs.h>
-#include <linux/pagemap.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
 
 #include "vxfs.h"
 #include "vxfs_extern.h"

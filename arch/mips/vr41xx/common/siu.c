@@ -2,14 +2,14 @@
 /*
  *  NEC VR4100 series SIU platform device.
  *
- *  Copyright (C) 2007-2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007-2008  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/serial_core.h>
-#include <linux/irq.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial_core.h>
+#include <linaos/irq.h>
 
 #include <asm/cpu.h>
 #include <asm/vr41xx/siu.h>

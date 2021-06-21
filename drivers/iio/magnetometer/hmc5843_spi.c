@@ -5,9 +5,9 @@
  * Copyright (C) Josef Gajdusek <atx@atx.name>
  */
 
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
+#include <linaos/module.h>
+#include <linaos/spi/spi.h>
+#include <linaos/iio/iio.h>
 
 #include "hmc5843.h"
 

@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/zalloc.h>
 #include "dso.h"
 #include "session.h"
 #include "thread.h"

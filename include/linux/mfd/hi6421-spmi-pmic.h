@@ -12,8 +12,8 @@
 #ifndef	__HISI_PMIC_H
 #define	__HISI_PMIC_H
 
-#include <linux/irqdomain.h>
-#include <linux/regmap.h>
+#include <linaos/irqdomain.h>
+#include <linaos/regmap.h>
 
 struct hi6421_spmi_pmic {
 	struct resource				*res;

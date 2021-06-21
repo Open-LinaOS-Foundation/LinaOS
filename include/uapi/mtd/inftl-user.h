@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Parts of INFTL headers shared with userspace
  *
@@ -7,7 +7,7 @@
 #ifndef __MTD_INFTL_USER_H__
 #define __MTD_INFTL_USER_H__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define	OSAK_VERSION	0x5120
 #define	PERCENTUSED	98

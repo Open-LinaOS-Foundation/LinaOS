@@ -5,29 +5,29 @@
  * Copyright © 2004 David Brownell
  */
 
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/sched.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand-ecc-sw-bch.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/omap-dma.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/sched.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/nand-ecc-sw-bch.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/omap-dma.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/platform_data/elm.h>
+#include <linaos/platform_data/elm.h>
 
-#include <linux/omap-gpmc.h>
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <linaos/omap-gpmc.h>
+#include <linaos/platform_data/mtd-nand-omap2.h>
 
 #define	DRIVER_NAME	"omap2-nand"
 #define	OMAP_NAND_TIMEOUT_MS	5000

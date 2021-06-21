@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
 
-#include <linux/dmi.h>
-#include <linux/usb.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/videodev2.h>
+#include <linaos/dmi.h>
+#include <linaos/usb.h>
+#include <linaos/mm.h>
+#include <linaos/vmalloc.h>
+#include <linaos/videodev2.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-event.h>
@@ -69,7 +69,7 @@ MODULE_DEVICE_TABLE(usb, stkwebcam_table);
  *
  * 3) Years later I got a bug report from a user with a laptop with stkwebcam,
  * where the module was actually mounted the right way up, and thus showed
- * upside down under Linux. So now I was facing the choice of 2 options:
+ * upside down under LinaOS. So now I was facing the choice of 2 options:
  *
  * a) Add a not-upside-down list to stkwebcam, which overrules the default.
  *

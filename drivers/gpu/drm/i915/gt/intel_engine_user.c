@@ -3,9 +3,9 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/list.h>
-#include <linux/list_sort.h>
-#include <linux/llist.h>
+#include <linaos/list.h>
+#include <linaos/list_sort.h>
+#include <linaos/llist.h>
 
 #include "i915_drv.h"
 #include "intel_engine.h"

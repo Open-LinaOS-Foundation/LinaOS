@@ -14,8 +14,8 @@
  * this behaves the same as the original Reno.
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
 #include <net/tcp.h>
 
 #define BICTCP_BETA_SCALE    1024	/* Scale factor beta calculation

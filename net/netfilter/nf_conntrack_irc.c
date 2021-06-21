@@ -7,19 +7,19 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/skbuff.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/skbuff.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/tcp.h>
+#include <linaos/netfilter.h>
+#include <linaos/slab.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_helper.h>
-#include <linux/netfilter/nf_conntrack_irc.h>
+#include <linaos/netfilter/nf_conntrack_irc.h>
 
 #define MAX_PORTS 8
 static unsigned short ports[MAX_PORTS];

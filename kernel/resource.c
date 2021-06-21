@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *	linux/kernel/resource.c
+ *	linaos/kernel/resource.c
  *
  * Copyright (C) 1999	Linus Torvalds
  * Copyright (C) 1999	Martin Mares <mj@ucw.cz>
@@ -10,23 +10,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/pseudo_fs.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/mount.h>
-#include <linux/resource_ext.h>
-#include <uapi/linux/magic.h>
+#include <linaos/export.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/fs.h>
+#include <linaos/proc_fs.h>
+#include <linaos/pseudo_fs.h>
+#include <linaos/sched.h>
+#include <linaos/seq_file.h>
+#include <linaos/device.h>
+#include <linaos/pfn.h>
+#include <linaos/mm.h>
+#include <linaos/mount.h>
+#include <linaos/resource_ext.h>
+#include <uapi/linaos/magic.h>
 #include <asm/io.h>
 
 
@@ -419,7 +419,7 @@ static int __walk_iomem_res_desc(resource_size_t start, resource_size_t end,
  * desc are valid candidates.
  *
  * NOTE: For a new descriptor search, define a new IORES_DESC in
- * <linux/ioport.h> and set it in 'desc' of a target resource entry.
+ * <linaos/ioport.h> and set it in 'desc' of a target resource entry.
  */
 int walk_iomem_res_desc(unsigned long desc, unsigned long flags, u64 start,
 		u64 end, void *arg, int (*func)(struct resource *, void *))

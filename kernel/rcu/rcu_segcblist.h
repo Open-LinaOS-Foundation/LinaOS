@@ -4,10 +4,10 @@
  *
  * Copyright IBM Corporation, 2017
  *
- * Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Authors: Paul E. McKenney <paulmck@linaos.ibm.com>
  */
 
-#include <linux/rcu_segcblist.h>
+#include <linaos/rcu_segcblist.h>
 
 /* Return number of callbacks in the specified callback list. */
 static inline long rcu_cblist_n_cbs(struct rcu_cblist *rclp)

@@ -8,11 +8,11 @@
  * Copyright(C) 2015 Intel Corporation.
  *
  * Author:
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@linaos.intel.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/rculist.h>
+#include <linaos/kvm_host.h>
+#include <linaos/rculist.h>
 
 #include <asm/kvm_page_track.h>
 

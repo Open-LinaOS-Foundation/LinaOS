@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/es1888.c
+ *	linaos/arch/alpha/kernel/es1888.c
  *
  * Init the built-in ES1888 sound chip (SB16 compatible)
  */
 
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/io.h>
 #include "proto.h"
 

@@ -11,8 +11,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <sys/stat.h>
-#include <linux/mman.h>
-#include "linux/kernel.h"
+#include <linaos/mman.h>
+#include "linaos/kernel.h"
 
 #include "test_util.h"
 

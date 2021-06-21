@@ -6,8 +6,8 @@
  * Author: Sean O'Brien <seobrien@chromium.org>
  */
 
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
 
 #define MIN_FN_ROW_KEY	1
 #define MAX_FN_ROW_KEY	24

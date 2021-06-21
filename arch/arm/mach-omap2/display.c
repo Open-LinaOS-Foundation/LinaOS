@@ -15,21 +15,21 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <linaos/string.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/delay.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/regmap.h>
 
-#include <linux/platform_data/omapdss.h>
+#include <linaos/platform_data/omapdss.h>
 #include "omap_hwmod.h"
 #include "omap_device.h"
 #include "common.h"

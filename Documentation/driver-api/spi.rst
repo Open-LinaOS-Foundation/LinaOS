@@ -14,8 +14,8 @@ normally used for each peripheral, plus sometimes an interrupt.
 
 The SPI bus facilities listed here provide a generalized interface to
 declare SPI busses and devices, manage them according to the standard
-Linux driver model, and perform input/output operations. At this time,
-only "master" side interfaces are supported, where Linux talks to SPI
+LinaOS driver model, and perform input/output operations. At this time,
+only "master" side interfaces are supported, where LinaOS talks to SPI
 peripherals and does not implement such a peripheral itself. (Interfaces
 to support implementing SPI slaves would necessarily look different.)
 
@@ -43,7 +43,7 @@ which wraps a full duplex SPI transfer. A variety of protocol tweaking
 options are needed, because different chips adopt very different
 policies for how they use the bits transferred with SPI.
 
-.. kernel-doc:: include/linux/spi/spi.h
+.. kernel-doc:: include/linaos/spi/spi.h
    :internal:
 
 .. kernel-doc:: drivers/spi/spi.c

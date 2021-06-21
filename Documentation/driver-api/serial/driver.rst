@@ -5,7 +5,7 @@ Low Level Serial API
 
 This document is meant as a brief overview of some aspects of the new serial
 driver.  It is not complete, any questions you have should be directed to
-<rmk@arm.linux.org.uk>
+<rmk@arm.linaos.org.uk>
 
 The reference implementation is contained within amba-pl011.c.
 

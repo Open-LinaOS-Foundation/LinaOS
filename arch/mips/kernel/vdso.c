@@ -4,17 +4,17 @@
  * Author: Alex Smith <alex.smith@imgtec.com>
  */
 
-#include <linux/binfmts.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timekeeper_internal.h>
+#include <linaos/binfmts.h>
+#include <linaos/elf.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/random.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/timekeeper_internal.h>
 
 #include <asm/abi.h>
 #include <asm/mips-cps.h>
@@ -86,7 +86,7 @@ static unsigned long vdso_base(void)
 	return base;
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct linaos_binprm *bprm, int uses_interp)
 {
 	struct mips_vdso_image *image = current->thread.abi->vdso;
 	struct mm_struct *mm = current->mm;

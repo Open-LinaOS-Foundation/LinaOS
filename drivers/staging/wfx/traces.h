@@ -11,7 +11,7 @@
 #if !defined(_WFX_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _WFX_TRACE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 #include <net/mac80211.h>
 
 #include "bus.h"

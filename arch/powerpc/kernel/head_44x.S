@@ -2,7 +2,7 @@
 /*
  * Kernel execution entry point code.
  *
- *    Copyright (c) 1995-1996 Gary Thomas <gdt@linuxppc.org>
+ *    Copyright (c) 1995-1996 Gary Thomas <gdt@linaosppc.org>
  *      Initial PowerPC version.
  *    Copyright (c) 1996 Cort Dougan <cort@cs.nmt.edu>
  *      Rewritten for PReP
@@ -24,8 +24,8 @@
  *      PowerPC 44x support, Matt Porter <mporter@kernel.crashing.org>
  */
 
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/processor.h>
 #include <asm/page.h>
 #include <asm/mmu.h>

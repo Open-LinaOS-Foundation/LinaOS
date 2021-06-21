@@ -3,20 +3,20 @@
  * Copyright (C) 2010 Red Hat, Inc.
  * Copyright (C) 2016-2019 Christoph Hellwig.
  */
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/buffer_head.h>
-#include <linux/dax.h>
-#include <linux/writeback.h>
-#include <linux/list_sort.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/sched/signal.h>
-#include <linux/migrate.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/fs.h>
+#include <linaos/iomap.h>
+#include <linaos/pagemap.h>
+#include <linaos/uio.h>
+#include <linaos/buffer_head.h>
+#include <linaos/dax.h>
+#include <linaos/writeback.h>
+#include <linaos/list_sort.h>
+#include <linaos/swap.h>
+#include <linaos/bio.h>
+#include <linaos/sched/signal.h>
+#include <linaos/migrate.h>
 #include "trace.h"
 
 #include "../internal.h"

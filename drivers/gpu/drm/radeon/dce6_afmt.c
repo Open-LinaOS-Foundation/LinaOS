@@ -20,7 +20,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
-#include <linux/hdmi.h>
+#include <linaos/hdmi.h>
 
 #include "dce6_afmt.h"
 #include "radeon.h"

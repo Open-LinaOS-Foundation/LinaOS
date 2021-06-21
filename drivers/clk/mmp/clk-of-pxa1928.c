@@ -12,11 +12,11 @@
  * License version 2. This program is licensed "as is" without any
  * warranty of any kind, whether express or implied.
  */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <linaos/kernel.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
 
 #include <dt-bindings/clock/marvell,pxa1928.h>
 

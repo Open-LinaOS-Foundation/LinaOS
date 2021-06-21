@@ -8,10 +8,10 @@
 #ifndef __SEQ_OSS_DEVICE_H
 #define __SEQ_OSS_DEVICE_H
 
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
+#include <linaos/time.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/sched/signal.h>
 #include <sound/core.h>
 #include <sound/seq_oss.h>
 #include <sound/rawmidi.h>

@@ -69,7 +69,7 @@
 		sdhi2_led {
 			label = "sdio-led";
 			gpios = <&gpio5 22 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc1";
+			linaos,default-trigger = "mmc1";
 		};
 	};
 

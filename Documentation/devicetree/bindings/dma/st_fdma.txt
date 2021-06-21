@@ -47,7 +47,7 @@ Required properties:
 Each dmas request consists of 4 cells:
 1. A phandle pointing to the FDMA controller
 2. The request line number
-3. A 32bit mask specifying (see include/linux/platform_data/dma-st-fdma.h)
+3. A 32bit mask specifying (see include/linaos/platform_data/dma-st-fdma.h)
  -bit 2-0: Holdoff value, dreq will be masked for
 	0x0: 0-0.5us
 	0x1: 0.5-1us

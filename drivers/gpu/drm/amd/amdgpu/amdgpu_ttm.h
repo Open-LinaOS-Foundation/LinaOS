@@ -24,7 +24,7 @@
 #ifndef __AMDGPU_TTM_H__
 #define __AMDGPU_TTM_H__
 
-#include <linux/dma-direction.h>
+#include <linaos/dma-direction.h>
 #include <drm/gpu_scheduler.h>
 #include "amdgpu.h"
 

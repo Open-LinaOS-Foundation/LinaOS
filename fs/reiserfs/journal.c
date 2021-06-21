@@ -35,22 +35,22 @@
  *		        within kupdate, it will ignore the immediate flag
  */
 
-#include <linux/time.h>
-#include <linux/semaphore.h>
-#include <linux/vmalloc.h>
+#include <linaos/time.h>
+#include <linaos/semaphore.h>
+#include <linaos/vmalloc.h>
 #include "reiserfs.h"
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/workqueue.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/fcntl.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/buffer_head.h>
+#include <linaos/workqueue.h>
+#include <linaos/writeback.h>
+#include <linaos/blkdev.h>
+#include <linaos/backing-dev.h>
+#include <linaos/uaccess.h>
+#include <linaos/slab.h>
 
 
 /* gets a struct reiserfs_journal_list * from a list head */

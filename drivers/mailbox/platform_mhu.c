@@ -8,16 +8,16 @@
  * Author: Jassi Brar <jaswinder.singh@linaro.org>
  */
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_controller.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/mailbox_controller.h>
 
 #define INTR_SET_OFS	0x0
 #define INTR_STAT_OFS	0x4

@@ -10,15 +10,15 @@
   Maintainer: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 *******************************************************************************/
 
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/mii.h>
-#include <linux/of_mdio.h>
-#include <linux/pm_runtime.h>
-#include <linux/phy.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/mii.h>
+#include <linaos/of_mdio.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/phy.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
 
 #include "dwxgmac2.h"
 #include "stmmac.h"

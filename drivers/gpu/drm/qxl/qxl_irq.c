@@ -23,7 +23,7 @@
  *          Alon Levy
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_irq.h>
 

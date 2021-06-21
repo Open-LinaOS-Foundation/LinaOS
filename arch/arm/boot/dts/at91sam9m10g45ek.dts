@@ -321,7 +321,7 @@
 		led-1 {
 			label = "d8";
 			gpios = <&pioD 30 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 
@@ -332,14 +332,14 @@
 			label = "d6";
 			pwms = <&pwm0 3 5000 PWM_POLARITY_INVERTED>;
 			max-brightness = <255>;
-			linux,default-trigger = "nand-disk";
+			linaos,default-trigger = "nand-disk";
 		};
 
 		led-3 {
 			label = "d7";
 			pwms = <&pwm0 1 5000 PWM_POLARITY_INVERTED>;
 			max-brightness = <255>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 	};
 
@@ -349,45 +349,45 @@
 		left_click {
 			label = "left_click";
 			gpios = <&pioB 6 GPIO_ACTIVE_LOW>;
-			linux,code = <272>;
+			linaos,code = <272>;
 			wakeup-source;
 		};
 
 		right_click {
 			label = "right_click";
 			gpios = <&pioB 7 GPIO_ACTIVE_LOW>;
-			linux,code = <273>;
+			linaos,code = <273>;
 			wakeup-source;
 		};
 
 		left {
 			label = "Joystick Left";
 			gpios = <&pioB 14 GPIO_ACTIVE_LOW>;
-			linux,code = <105>;
+			linaos,code = <105>;
 		};
 
 		right {
 			label = "Joystick Right";
 			gpios = <&pioB 15 GPIO_ACTIVE_LOW>;
-			linux,code = <106>;
+			linaos,code = <106>;
 		};
 
 		up {
 			label = "Joystick Up";
 			gpios = <&pioB 16 GPIO_ACTIVE_LOW>;
-			linux,code = <103>;
+			linaos,code = <103>;
 		};
 
 		down {
 			label = "Joystick Down";
 			gpios = <&pioB 17 GPIO_ACTIVE_LOW>;
-			linux,code = <108>;
+			linaos,code = <108>;
 		};
 
 		enter {
 			label = "Joystick Press";
 			gpios = <&pioB 18 GPIO_ACTIVE_LOW>;
-			linux,code = <28>;
+			linaos,code = <28>;
 		};
 	};
 };

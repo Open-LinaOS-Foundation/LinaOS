@@ -4,7 +4,7 @@
 Message logging with printk
 ===========================
 
-printk() is one of the most widely known functions in the Linux kernel. It's the
+printk() is one of the most widely known functions in the LinaOS kernel. It's the
 standard tool we have for printing messages and usually the most basic way of
 tracing and debugging. If you're familiar with printf(3) you can tell printk()
 is based on it, although it has some functional differences:
@@ -110,6 +110,6 @@ Function reference
 .. kernel-doc:: kernel/printk/printk.c
    :functions: printk
 
-.. kernel-doc:: include/linux/printk.h
+.. kernel-doc:: include/linaos/printk.h
    :functions: pr_emerg pr_alert pr_crit pr_err pr_warn pr_notice pr_info
       pr_fmt pr_debug pr_devel pr_cont

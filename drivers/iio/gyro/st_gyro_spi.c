@@ -7,14 +7,14 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/spi/spi.h>
+#include <linaos/iio/iio.h>
 
-#include <linux/iio/common/st_sensors.h>
-#include <linux/iio/common/st_sensors_spi.h>
+#include <linaos/iio/common/st_sensors.h>
+#include <linaos/iio/common/st_sensors_spi.h>
 #include "st_gyro.h"
 
 /*

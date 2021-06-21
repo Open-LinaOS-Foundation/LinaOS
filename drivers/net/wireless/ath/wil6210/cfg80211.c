@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: ISC
 /*
  * Copyright (c) 2012-2017 Qualcomm Atheros, Inc.
- * Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/moduleparam.h>
+#include <linaos/etherdevice.h>
+#include <linaos/moduleparam.h>
 #include <net/netlink.h>
 #include <net/cfg80211.h>
 #include "wil6210.h"

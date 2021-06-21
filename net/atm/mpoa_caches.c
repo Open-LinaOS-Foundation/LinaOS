@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/atmmpc.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <linaos/types.h>
+#include <linaos/atmmpc.h>
+#include <linaos/slab.h>
+#include <linaos/time.h>
 
 #include "mpoa_caches.h"
 #include "mpc.h"

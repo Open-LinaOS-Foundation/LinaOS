@@ -4,7 +4,7 @@
 #include <test_progs.h>
 #include <network_helpers.h>
 #include <sys/stat.h>
-#include <linux/sched.h>
+#include <linaos/sched.h>
 #include <sys/syscall.h>
 
 #include "test_pkt_md_access.skel.h"

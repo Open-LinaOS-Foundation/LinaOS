@@ -7,18 +7,18 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/cacheinfo.h>
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/sysfs.h>
+#include <linaos/acpi.h>
+#include <linaos/bitops.h>
+#include <linaos/cacheinfo.h>
+#include <linaos/compiler.h>
+#include <linaos/cpu.h>
+#include <linaos/device.h>
+#include <linaos/init.h>
+#include <linaos/of.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/sysfs.h>
 
 /* pointer to per cpu cacheinfo */
 static DEFINE_PER_CPU(struct cpu_cacheinfo, ci_cpu_cacheinfo);
@@ -82,7 +82,7 @@ static void cache_size(struct cacheinfo *this_leaf, struct device_node *np)
 	of_property_read_u32(np, propname, &this_leaf->size);
 }
 
-/* not cache_line_size() because that's a macro in include/linux/cache.h */
+/* not cache_line_size() because that's a macro in include/linaos/cache.h */
 static void cache_get_line_size(struct cacheinfo *this_leaf,
 				struct device_node *np)
 {

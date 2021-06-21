@@ -7,9 +7,9 @@
  *  Copyright (c) 2005-7 Ian McDonald <ian.mcdonald@jandi.co.nz>
  *  Copyright (c) 2005 Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <linaos/ktime.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
 
 /*
  * Number of loss intervals (RFC 4342, 8.6.1). The history size is one more than

@@ -10,31 +10,31 @@
  *    Copyright (c) 2006 Anton Vorontsov <cbou@mail.ru>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/input/navpoint.h>
-#include <linux/lcd.h>
-#include <linux/mfd/asic3.h>
-#include <linux/mtd/physmap.h>
-#include <linux/pda_power.h>
-#include <linux/platform_data/gpio-htc-egpio.h>
-#include <linux/pwm.h>
-#include <linux/pwm_backlight.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/gpio-regulator.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/max1586.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/platform_data/i2c-pxa.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/input.h>
+#include <linaos/input/navpoint.h>
+#include <linaos/lcd.h>
+#include <linaos/mfd/asic3.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/pda_power.h>
+#include <linaos/platform_data/gpio-htc-egpio.h>
+#include <linaos/pwm.h>
+#include <linaos/pwm_backlight.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/regulator/gpio-regulator.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/regulator/max1586.h>
+#include <linaos/spi/ads7846.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/platform_data/i2c-pxa.h>
 
 #include <mach/hardware.h>
 #include <asm/mach-types.h>
@@ -42,7 +42,7 @@
 
 #include "pxa27x.h"
 #include <mach/hx4700.h>
-#include <linux/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/irda-pxaficp.h>
 
 #include <sound/ak4641.h>
 #include <video/platform_lcd.h>

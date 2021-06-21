@@ -37,7 +37,7 @@
 #ifndef I40IW_ABI_H
 #define I40IW_ABI_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define I40IW_ABI_VER 5
 

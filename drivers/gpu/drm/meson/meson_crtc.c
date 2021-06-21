@@ -9,8 +9,8 @@
  *     Jasper St. Pierre <jstpierre@mecheye.net>
  */
 
-#include <linux/bitfield.h>
-#include <linux/soc/amlogic/meson-canvas.h>
+#include <linaos/bitfield.h>
+#include <linaos/soc/amlogic/meson-canvas.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_device.h>

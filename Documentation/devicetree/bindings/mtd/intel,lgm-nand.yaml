@@ -10,7 +10,7 @@ allOf:
   - $ref: "nand-controller.yaml"
 
 maintainers:
-  - Ramuthevar Vadivel Murugan <vadivel.muruganx.ramuthevar@linux.intel.com>
+  - Ramuthevar Vadivel Murugan <vadivel.muruganx.ramuthevar@linaos.intel.com>
 
 properties:
   compatible:

@@ -9,8 +9,8 @@
 #ifndef _ASM_RISCV_PAGE_H
 #define _ASM_RISCV_PAGE_H
 
-#include <linux/pfn.h>
-#include <linux/const.h>
+#include <linaos/pfn.h>
+#include <linaos/const.h>
 
 #define PAGE_SHIFT	(12)
 #define PAGE_SIZE	(_AC(1, UL) << PAGE_SHIFT)

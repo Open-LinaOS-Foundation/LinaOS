@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * This file is part of the Linux kernel.
+ * This file is part of the LinaOS kernel.
  *
  * Copyright (c) 2011-2014, Intel Corporation
  * Authors: Fenghua Yu <fenghua.yu@intel.com>,
- *          H. Peter Anvin <hpa@linux.intel.com>
+ *          H. Peter Anvin <hpa@linaos.intel.com>
  */
 
 #ifndef ASM_X86_ARCHRANDOM_H
@@ -65,7 +65,7 @@ static inline bool __must_check rdseed_int(unsigned int *v)
 
 /*
  * These are the generic interfaces; they must not be declared if the
- * stubs in <linux/random.h> are to be invoked,
+ * stubs in <linaos/random.h> are to be invoked,
  * i.e. CONFIG_ARCH_RANDOM is not defined.
  */
 #ifdef CONFIG_ARCH_RANDOM

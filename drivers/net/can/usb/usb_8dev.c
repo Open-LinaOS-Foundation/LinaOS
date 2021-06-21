@@ -12,16 +12,16 @@
  * who were very cooperative and answered my questions.
  */
 
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/usb.h>
+#include <linaos/signal.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
-#include <linux/can/error.h>
-#include <linux/can/led.h>
+#include <linaos/can.h>
+#include <linaos/can/dev.h>
+#include <linaos/can/error.h>
+#include <linaos/can/led.h>
 
 /* driver constants */
 #define MAX_RX_URBS			20

@@ -1,5 +1,5 @@
 /*
- * Audio support data for ISDN4Linux.
+ * Audio support data for ISDN4LinaOS.
  *
  * Copyright 2002/2003 by Andreas Eversberg (jolly@eversberg.eu)
  *
@@ -27,8 +27,8 @@
 #define DSP_OPT_ULAW		(1 << 0)
 #define DSP_OPT_NOHARDWARE	(1 << 1)
 
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <linaos/timer.h>
+#include <linaos/workqueue.h>
 
 #include "dsp_ecdis.h"
 

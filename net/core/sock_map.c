@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2017 - 2018 Covalent IO, Inc. http://covalent.io */
 
-#include <linux/bpf.h>
-#include <linux/btf_ids.h>
-#include <linux/filter.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/net.h>
-#include <linux/workqueue.h>
-#include <linux/skmsg.h>
-#include <linux/list.h>
-#include <linux/jhash.h>
-#include <linux/sock_diag.h>
+#include <linaos/bpf.h>
+#include <linaos/btf_ids.h>
+#include <linaos/filter.h>
+#include <linaos/errno.h>
+#include <linaos/file.h>
+#include <linaos/net.h>
+#include <linaos/workqueue.h>
+#include <linaos/skmsg.h>
+#include <linaos/list.h>
+#include <linaos/jhash.h>
+#include <linaos/sock_diag.h>
 #include <net/udp.h>
 
 struct bpf_stab {

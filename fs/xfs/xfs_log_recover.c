@@ -524,7 +524,7 @@ xlog_find_head(
 
 		/* Is the whole lot zeroed? */
 		if (!first_blk) {
-			/* Linux XFS shouldn't generate totally zeroed logs -
+			/* LinaOS XFS shouldn't generate totally zeroed logs -
 			 * mkfs etc write a dummy unmount record to a fresh
 			 * log so we can store the uuid in there
 			 */
@@ -1360,7 +1360,7 @@ xlog_find_tail(
 	 * Do this only if we are going to recover the filesystem
 	 *
 	 * NOTE: This used to say "if (!readonly)"
-	 * However on Linux, we can & do recover a read-only filesystem.
+	 * However on LinaOS, we can & do recover a read-only filesystem.
 	 * We only skip recovery if NORECOVERY is specified on mount,
 	 * in which case we would not be here.
 	 *

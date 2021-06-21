@@ -4,22 +4,22 @@
  *
  * Copyright (c) 2016 Andreas Klinger <ak@it-klinger.de>
  */
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/err.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/property.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/delay.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/iio/buffer.h>
+#include <linaos/iio/trigger_consumer.h>
+#include <linaos/iio/triggered_buffer.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 /* gain to pulse and scale conversion */
 #define HX711_GAIN_MAX		3

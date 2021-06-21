@@ -24,16 +24,16 @@
 
 #include "em28xx.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/bitmap.h>
+#include <linaos/usb.h>
+#include <linaos/i2c.h>
+#include <linaos/mm.h>
+#include <linaos/mutex.h>
+#include <linaos/slab.h>
 
 #include "em28xx-v4l.h"
 #include <media/v4l2-common.h>

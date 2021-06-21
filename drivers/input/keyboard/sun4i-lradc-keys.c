@@ -14,16 +14,16 @@
  * there are no boards known to use channel 1.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 
 #define LRADC_CTRL		0x00
 #define LRADC_INTC		0x04
@@ -209,9 +209,9 @@ static int sun4i_lradc_load_dt_keymap(struct device *dev,
 			return -EINVAL;
 		}
 
-		error = of_property_read_u32(pp, "linux,code", &map->keycode);
+		error = of_property_read_u32(pp, "linaos,code", &map->keycode);
 		if (error) {
-			dev_err(dev, "%pOFn: Inval linux,code prop\n", pp);
+			dev_err(dev, "%pOFn: Inval linaos,code prop\n", pp);
 			of_node_put(pp);
 			return -EINVAL;
 		}

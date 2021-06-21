@@ -22,11 +22,11 @@
 #include <crypto/algapi.h>
 #include <crypto/internal/cipher.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
 
 static unsigned int crypto_cfb_bsize(struct crypto_skcipher *tfm)
 {

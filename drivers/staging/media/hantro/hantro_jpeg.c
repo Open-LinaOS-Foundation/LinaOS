@@ -6,9 +6,9 @@
  * Copyright (C) Jean-Francois Moine (http://moinejf.free.fr)
  * Copyright (C) 2014 Philipp Zabel, Pengutronix
  */
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
 #include "hantro_jpeg.h"
 #include "hantro.h"
 

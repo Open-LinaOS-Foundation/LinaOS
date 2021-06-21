@@ -8,11 +8,11 @@
  *
  * All rights reserved.
  */
-#include <linux/mm.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/hardirq.h>
-#include <linux/topology.h>
+#include <linaos/mm.h>
+#include <linaos/cpu.h>
+#include <linaos/module.h>
+#include <linaos/hardirq.h>
+#include <linaos/topology.h>
 
 #define define_id_show_func(name)					\
 static ssize_t name##_show(struct device *dev,				\

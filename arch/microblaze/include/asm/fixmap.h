@@ -16,10 +16,10 @@
 #define _ASM_FIXMAP_H
 
 #ifndef __ASSEMBLY__
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/page.h>
 #ifdef CONFIG_HIGHMEM
-#include <linux/threads.h>
+#include <linaos/threads.h>
 #include <asm/kmap_size.h>
 #endif
 

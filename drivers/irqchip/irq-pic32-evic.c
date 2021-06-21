@@ -4,15 +4,15 @@
  * Joshua Henderson <joshua.henderson@microchip.com>
  * Copyright (C) 2016 Microchip Technology Inc.  All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irq.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/irqchip.h>
+#include <linaos/irq.h>
 
 #include <asm/irq.h>
 #include <asm/traps.h>

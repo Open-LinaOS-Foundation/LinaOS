@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/seccomp.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/seccomp.h>
 #include <kern_util.h>
 #include <sysdep/ptrace.h>
 #include <sysdep/ptrace_user.h>
 #include <sysdep/syscalls.h>
-#include <linux/time-internal.h>
+#include <linaos/time-internal.h>
 #include <asm/unistd.h>
 
 void handle_syscall(struct uml_pt_regs *r)

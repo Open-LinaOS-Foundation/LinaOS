@@ -5,8 +5,8 @@
 
 #define pr_fmt(fmt) "drm_cmdline: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_modes.h>

@@ -5,9 +5,9 @@
  * Copyright (C) 2015 Ben Chen <ben_chen@bizlinktech.com>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/hid.h>
+#include <linaos/module.h>
 #include "hid-ids.h"
 
 MODULE_AUTHOR("Ben Chen");

@@ -9,22 +9,22 @@
  * completion notification.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-kcopyd.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/blkdev.h>
+#include <linaos/fs.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/mempool.h>
+#include <linaos/module.h>
+#include <linaos/pagemap.h>
+#include <linaos/slab.h>
+#include <linaos/vmalloc.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/delay.h>
+#include <linaos/device-mapper.h>
+#include <linaos/dm-kcopyd.h>
 
 #include "dm-core.h"
 

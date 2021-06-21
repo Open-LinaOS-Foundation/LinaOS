@@ -6,7 +6,7 @@
 
 #define pr_fmt(fmt) "digital: %s: " fmt, __func__
 
-#include <linux/module.h>
+#include <linaos/module.h>
 
 #include "digital.h"
 

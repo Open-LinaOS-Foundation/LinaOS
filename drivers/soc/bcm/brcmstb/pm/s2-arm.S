@@ -3,7 +3,7 @@
  * Copyright © 2014-2017 Broadcom
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 #include "pm.h"

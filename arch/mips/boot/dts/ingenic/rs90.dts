@@ -5,7 +5,7 @@
 
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/iio/adc/ingenic,adc.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 
 / {
 	compatible = "ylm,rs90", "ingenic,jz4725b";
@@ -45,50 +45,50 @@
 
 		key@0 {
 			label = "D-pad up";
-			linux,code = <KEY_UP>;
+			linaos,code = <KEY_UP>;
 			gpios = <&gpc 10 GPIO_ACTIVE_LOW>;
 		};
 
 		key@1 {
 			label = "D-pad down";
-			linux,code = <KEY_DOWN>;
+			linaos,code = <KEY_DOWN>;
 			gpios = <&gpc 11 GPIO_ACTIVE_LOW>;
 		};
 
 		key@2 {
 			label = "D-pad left";
-			linux,code = <KEY_LEFT>;
+			linaos,code = <KEY_LEFT>;
 			gpios = <&gpb 31 GPIO_ACTIVE_LOW>;
 		};
 
 		key@3 {
 			label = "D-pad right";
-			linux,code = <KEY_RIGHT>;
+			linaos,code = <KEY_RIGHT>;
 			gpios = <&gpd 21 GPIO_ACTIVE_LOW>;
 		};
 
 		key@4 {
 			label = "Button A";
-			linux,code = <KEY_LEFTCTRL>;
+			linaos,code = <KEY_LEFTCTRL>;
 			gpios = <&gpc 31 GPIO_ACTIVE_LOW>;
 		};
 
 		key@5 {
 			label = "Button B";
-			linux,code = <KEY_LEFTALT>;
+			linaos,code = <KEY_LEFTALT>;
 			gpios = <&gpc 30 GPIO_ACTIVE_LOW>;
 		};
 
 		key@6 {
 			label = "Right shoulder button";
-			linux,code = <KEY_BACKSPACE>;
+			linaos,code = <KEY_BACKSPACE>;
 			gpios = <&gpc 12 GPIO_ACTIVE_LOW>;
 			debounce-interval = <10>;
 		};
 
 		key@7 {
 			label = "Start button";
-			linux,code = <KEY_ENTER>;
+			linaos,code = <KEY_ENTER>;
 			gpios = <&gpd 17 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -102,13 +102,13 @@
 
 		key@0 {
 			label = "Left shoulder button";
-			linux,code = <KEY_TAB>;
+			linaos,code = <KEY_TAB>;
 			press-threshold-microvolt = <800000>;
 		};
 
 		key@1 {
 			label = "Select button";
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			press-threshold-microvolt = <1100000>;
 		};
 	};

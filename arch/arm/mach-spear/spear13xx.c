@@ -13,12 +13,12 @@
 
 #define pr_fmt(fmt) "SPEAr13xx: " fmt
 
-#include <linux/amba/pl022.h>
-#include <linux/clk.h>
-#include <linux/clk/spear.h>
-#include <linux/clocksource.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <linaos/amba/pl022.h>
+#include <linaos/clk.h>
+#include <linaos/clk/spear.h>
+#include <linaos/clocksource.h>
+#include <linaos/err.h>
+#include <linaos/of.h>
 #include <asm/hardware/cache-l2x0.h>
 #include <asm/mach/map.h>
 #include <mach/spear.h>

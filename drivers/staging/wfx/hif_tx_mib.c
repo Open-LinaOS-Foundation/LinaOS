@@ -7,7 +7,7 @@
  * Copyright (C) 2010, ST-Ericsson SA
  */
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "wfx.h"
 #include "hif_tx.h"

@@ -1,4 +1,4 @@
-#include <linux/fs.h>
+#include <linaos/fs.h>
 
 extern const struct file_operations xen_privcmd_fops;
 extern const struct file_operations xen_privcmdbuf_fops;

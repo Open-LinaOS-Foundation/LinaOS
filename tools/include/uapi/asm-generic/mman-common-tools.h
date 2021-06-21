@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __ASM_GENERIC_MMAN_COMMON_TOOLS_ONLY_H
 #define __ASM_GENERIC_MMAN_COMMON_TOOLS_ONLY_H
 
@@ -8,7 +8,7 @@
  * header search path to get access to stuff that is not yet in the system's
  * copy of the files in that directory, but since this cset:
  *
- *     746c9398f5ac ("arch: move common mmap flags to linux/mman.h")
+ *     746c9398f5ac ("arch: move common mmap flags to linaos/mman.h")
  *
  * We end up making sys/mman.h, that is in the system headers, to not find the
  * MAP_SHARED and MAP_PRIVATE defines because they are not anymore in our copy

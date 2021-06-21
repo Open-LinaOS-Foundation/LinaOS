@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Motion Eye video4linux driver for Sony Vaio PictureBook
+ * Motion Eye video4linaos driver for Sony Vaio PictureBook
  *
  * Copyright (C) 2001-2004 Stelian Pop <stelian@popies.net>
  *
  * Copyright (C) 2001-2002 Alcôve <www.alcove.com>
  *
- * Copyright (C) 2000 Andrew Tridgell <tridge@valinux.com>
+ * Copyright (C) 2000 Andrew Tridgell <tridge@valinaos.com>
  *
  * Earlier work by Werner Almesberger, Paul `Rusty' Russell and Paul Mackerras.
  *
- * Some parts borrowed from various video4linux drivers, especially
+ * Some parts borrowed from various video4linaos drivers, especially
  * bttv-driver.c and zoran.c, see original files for credits.
  */
 
@@ -23,9 +23,9 @@
 #define MEYE_DRIVER_VERSION __stringify(MEYE_DRIVER_MAJORVERSION) "." \
 			    __stringify(MEYE_DRIVER_MINORVERSION)
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/kfifo.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/kfifo.h>
 #include <media/v4l2-ctrls.h>
 
 /****************************************************************************/
@@ -243,11 +243,11 @@
 /****************************************************************************/
 
 /* Sony Programmable I/O Controller for accessing the camera commands */
-#include <linux/sony-laptop.h>
+#include <linaos/sony-laptop.h>
 
 /* private API definitions */
-#include <linux/meye.h>
-#include <linux/mutex.h>
+#include <linaos/meye.h>
+#include <linaos/mutex.h>
 
 
 /* Enable jpg software correction */

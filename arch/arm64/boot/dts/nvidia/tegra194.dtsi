@@ -1716,7 +1716,7 @@
 		device_type = "pci";
 		num-lanes = <1>;
 		num-viewport = <8>;
-		linux,pci-domain = <1>;
+		linaos,pci-domain = <1>;
 
 		clocks = <&bpmp TEGRA194_CLK_PEX0_CORE_1>;
 		clock-names = "core";
@@ -1766,7 +1766,7 @@
 		device_type = "pci";
 		num-lanes = <1>;
 		num-viewport = <8>;
-		linux,pci-domain = <2>;
+		linaos,pci-domain = <2>;
 
 		clocks = <&bpmp TEGRA194_CLK_PEX0_CORE_2>;
 		clock-names = "core";
@@ -1816,7 +1816,7 @@
 		device_type = "pci";
 		num-lanes = <1>;
 		num-viewport = <8>;
-		linux,pci-domain = <3>;
+		linaos,pci-domain = <3>;
 
 		clocks = <&bpmp TEGRA194_CLK_PEX0_CORE_3>;
 		clock-names = "core";
@@ -1866,7 +1866,7 @@
 		device_type = "pci";
 		num-lanes = <4>;
 		num-viewport = <8>;
-		linux,pci-domain = <4>;
+		linaos,pci-domain = <4>;
 
 		clocks = <&bpmp TEGRA194_CLK_PEX0_CORE_4>;
 		clock-names = "core";
@@ -1916,7 +1916,7 @@
 		device_type = "pci";
 		num-lanes = <8>;
 		num-viewport = <8>;
-		linux,pci-domain = <0>;
+		linaos,pci-domain = <0>;
 
 		clocks = <&bpmp TEGRA194_CLK_PEX0_CORE_0>;
 		clock-names = "core";
@@ -1966,7 +1966,7 @@
 		device_type = "pci";
 		num-lanes = <8>;
 		num-viewport = <8>;
-		linux,pci-domain = <5>;
+		linaos,pci-domain = <5>;
 
 		pinctrl-names = "default";
 		pinctrl-0 = <&pex_rst_c5_out_state>, <&clkreq_c5_bi_dir_state>;

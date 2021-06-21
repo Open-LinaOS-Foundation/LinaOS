@@ -7,7 +7,7 @@
 #ifndef _CORESIGHT_ETM_PERF_H
 #define _CORESIGHT_ETM_PERF_H
 
-#include <linux/percpu-defs.h>
+#include <linaos/percpu-defs.h>
 #include "coresight-priv.h"
 
 struct coresight_device;

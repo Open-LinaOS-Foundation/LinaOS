@@ -14,24 +14,24 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
+#include <linaos/err.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/ioport.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/mtd.h>
+#include <linaos/mtd/map.h>
+#include <linaos/mtd/partitions.h>
 
 #include <asm/io.h>
 #include <asm/mach/flash.h>
 
-#include <linux/reboot.h>
+#include <linaos/reboot.h>
 
 /*
  * Read/write a 16 bit word from flash address 'addr'.

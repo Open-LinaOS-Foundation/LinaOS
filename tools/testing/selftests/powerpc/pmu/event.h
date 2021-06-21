@@ -7,7 +7,7 @@
 #define _SELFTESTS_POWERPC_PMU_EVENT_H
 
 #include <unistd.h>
-#include <linux/perf_event.h>
+#include <linaos/perf_event.h>
 
 #include "utils.h"
 

@@ -37,11 +37,11 @@
 		#size-cells = <1>;
 		ranges;
 
-		linux,cma@80000000 {
+		linaos,cma@80000000 {
 			compatible = "shared-dma-pool";
 			alloc-ranges = <0x80000000 0x30000000>;
 			size = <0x10000000>; /* 256MiB */
-			linux,cma-default;
+			linaos,cma-default;
 			reusable;
 		};
 
@@ -1117,8 +1117,8 @@
 		hall-sensor {
 			label = "Lid";
 			gpios = <&gpio TEGRA_GPIO(S, 6) GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <SW_LID>;
 			debounce-interval = <500>;
 			wakeup-event-action = <EV_ACT_DEASSERTED>;
 			wakeup-source;
@@ -1127,7 +1127,7 @@
 		power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(V, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			debounce-interval = <10>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;
@@ -1136,7 +1136,7 @@
 		volume-up {
 			label = "Volume Up";
 			gpios = <&gpio TEGRA_GPIO(Q, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			debounce-interval = <10>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;
@@ -1145,7 +1145,7 @@
 		volume-down {
 			label = "Volume Down";
 			gpios = <&gpio TEGRA_GPIO(Q, 3) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <10>;
 			wakeup-event-action = <EV_ACT_ASSERTED>;
 			wakeup-source;

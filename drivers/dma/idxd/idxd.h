@@ -3,14 +3,14 @@
 #ifndef _IDXD_H_
 #define _IDXD_H_
 
-#include <linux/sbitmap.h>
-#include <linux/dmaengine.h>
-#include <linux/percpu-rwsem.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
-#include <linux/perf_event.h>
+#include <linaos/sbitmap.h>
+#include <linaos/dmaengine.h>
+#include <linaos/percpu-rwsem.h>
+#include <linaos/wait.h>
+#include <linaos/cdev.h>
+#include <linaos/idr.h>
+#include <linaos/pci.h>
+#include <linaos/perf_event.h>
 #include "registers.h"
 
 #define IDXD_DRIVER_VERSION	"1.00"

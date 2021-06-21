@@ -6,7 +6,7 @@
 #ifndef	_MTD_NAND_OMAP2_H
 #define	_MTD_NAND_OMAP2_H
 
-#include <linux/mtd/partitions.h>
+#include <linaos/mtd/partitions.h>
 
 #define	GPMC_BCH_NUM_REMAINDER	8
 

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 #ifndef _ASM_POWERPC_STAT_H
 #define _ASM_POWERPC_STAT_H
 /*
@@ -7,7 +7,7 @@
  * as published by the Free Software Foundation; either version
  * 2 of the License, or (at your option) any later version.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define STAT_HAVE_NSEC 1
 

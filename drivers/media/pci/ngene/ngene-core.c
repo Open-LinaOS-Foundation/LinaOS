@@ -10,17 +10,17 @@
  *                         support for new dual DVB-S2 card prototype
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/poll.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/poll.h>
+#include <linaos/io.h>
 #include <asm/div64.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
-#include <linux/byteorder/generic.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
+#include <linaos/pci.h>
+#include <linaos/timer.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/firmware.h>
+#include <linaos/vmalloc.h>
 
 #include "ngene.h"
 

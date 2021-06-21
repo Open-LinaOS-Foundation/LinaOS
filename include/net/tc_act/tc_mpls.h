@@ -4,7 +4,7 @@
 #ifndef __NET_TC_MPLS_H
 #define __NET_TC_MPLS_H
 
-#include <linux/tc_act/tc_mpls.h>
+#include <linaos/tc_act/tc_mpls.h>
 #include <net/act_api.h>
 
 struct tcf_mpls_params {

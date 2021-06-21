@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "kasan test: %s " fmt, __func__
 
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <linaos/mman.h>
+#include <linaos/module.h>
+#include <linaos/printk.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
 
 #include "../mm/kasan/kasan.h"
 

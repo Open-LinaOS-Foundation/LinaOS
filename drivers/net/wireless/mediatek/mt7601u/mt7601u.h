@@ -7,15 +7,15 @@
 #ifndef MT7601U_H
 #define MT7601U_H
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/completion.h>
+#include <linaos/bitfield.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/mutex.h>
+#include <linaos/usb.h>
+#include <linaos/completion.h>
 #include <net/mac80211.h>
-#include <linux/debugfs.h>
-#include <linux/average.h>
+#include <linaos/debugfs.h>
+#include <linaos/average.h>
 
 #include "regs.h"
 

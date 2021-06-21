@@ -11,7 +11,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <jkmaline@cc.hut.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@linaos.intel.com>
  * Copyright (c) 2004, Intel Corporation
  *
  * Modified for Realtek's wi-fi cards by Andrea Merello
@@ -19,18 +19,18 @@
  */
 #ifndef IEEE80211_H
 #define IEEE80211_H
-#include <linux/if_ether.h> /* ETH_ALEN */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/interrupt.h>
+#include <linaos/if_ether.h> /* ETH_ALEN */
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/jiffies.h>
+#include <linaos/timer.h>
+#include <linaos/sched.h>
+#include <linaos/semaphore.h>
+#include <linaos/interrupt.h>
 
-#include <linux/delay.h>
-#include <linux/wireless.h>
-#include <linux/ieee80211.h>
+#include <linaos/delay.h>
+#include <linaos/wireless.h>
+#include <linaos/ieee80211.h>
 
 #include "rtl819x_HT.h"
 #include "rtl819x_BA.h"
@@ -322,7 +322,7 @@ struct ieee_param {
 };
 
 
-// linux under 2.6.9 release may not support it, so modify it for common use
+// linaos under 2.6.9 release may not support it, so modify it for common use
 #define IEEE80211_DATA_LEN		2304
 /* Maximum size for the MA-UNITDATA primitive, 802.11 standard section
  *   6.2.1.1.2.
@@ -536,7 +536,7 @@ do { if (ieee80211_debug_level & (level)) \
 #define IEEE80211_DEBUG_RX(f, a...)  IEEE80211_DEBUG(IEEE80211_DL_RX, f, ## a)
 #define IEEE80211_DEBUG_QOS(f, a...)  IEEE80211_DEBUG(IEEE80211_DL_QOS, f, ## a)
 
-#include <linux/if_arp.h> /* ARPHRD_ETHER */
+#include <linaos/if_arp.h> /* ARPHRD_ETHER */
 
 #ifndef WIRELESS_SPY
 #define WIRELESS_SPY		// enable iwspy support

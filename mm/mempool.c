@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/mm/mempool.c
+ *  linaos/mm/mempool.c
  *
  *  memory buffer pool support. Such pools are mostly used
  *  for guaranteed, deadlock-free memory allocations during
@@ -10,15 +10,15 @@
  *  debugging by David Rientjes, Copyright (C) 2015
  */
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/kasan.h>
-#include <linux/kmemleak.h>
-#include <linux/export.h>
-#include <linux/mempool.h>
-#include <linux/blkdev.h>
-#include <linux/writeback.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/kasan.h>
+#include <linaos/kmemleak.h>
+#include <linaos/export.h>
+#include <linaos/mempool.h>
+#include <linaos/blkdev.h>
+#include <linaos/writeback.h>
 #include "slab.h"
 
 #if defined(CONFIG_DEBUG_SLAB) || defined(CONFIG_SLUB_DEBUG_ON)

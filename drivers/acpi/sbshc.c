@@ -5,12 +5,12 @@
  * Copyright (c) 2007 Alexey Starikovskiy
  */
 
-#include <linux/acpi.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
+#include <linaos/acpi.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
 #include "sbshc.h"
 
 #define PREFIX "ACPI: "

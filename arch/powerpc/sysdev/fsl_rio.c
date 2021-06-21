@@ -18,20 +18,20 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#include <linux/init.h>
-#include <linux/extable.h>
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <linaos/init.h>
+#include <linaos/extable.h>
+#include <linaos/types.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/interrupt.h>
+#include <linaos/device.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_platform.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
 
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 #include <asm/machdep.h>
 
 #include "fsl_rio.h"

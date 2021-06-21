@@ -14,7 +14,7 @@
 #define _GNU_SOURCE
 #include <fcntl.h>
 #include <kvm_util.h>
-#include <linux/kvm.h>
+#include <linaos/kvm.h>
 #include <processor.h>
 #include <pthread.h>
 #include <stdio.h>

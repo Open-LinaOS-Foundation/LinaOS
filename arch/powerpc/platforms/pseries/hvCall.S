@@ -3,7 +3,7 @@
  * This file contains the generic code to perform a call to the
  * pSeries LPAR hypervisor.
  */
-#include <linux/jump_label.h>
+#include <linaos/jump_label.h>
 #include <asm/hvcall.h>
 #include <asm/processor.h>
 #include <asm/ppc_asm.h>

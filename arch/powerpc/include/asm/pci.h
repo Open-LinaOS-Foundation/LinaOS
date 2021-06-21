@@ -6,11 +6,11 @@
 /*
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/dma-map-ops.h>
-#include <linux/scatterlist.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/scatterlist.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>

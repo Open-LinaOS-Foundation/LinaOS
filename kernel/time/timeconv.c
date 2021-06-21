@@ -28,8 +28,8 @@
  *   Moved from glibc-2.6 to kernel by Zhaolei<zhaolei@cn.fujitsu.com>
  */
 
-#include <linux/time.h>
-#include <linux/module.h>
+#include <linaos/time.h>
+#include <linaos/module.h>
 
 /*
  * Nonzero if YEAR is a leap year (every 4 years,

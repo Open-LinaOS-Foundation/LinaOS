@@ -5,15 +5,15 @@
  * Copyright (C) 2017 Renesas Electronics Corp.
  */
 
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dv-timings.h>
 #include <media/v4l2-ioctl.h>
 
-#include <uapi/linux/v4l2-dv-timings.h>
+#include <uapi/linaos/v4l2-dv-timings.h>
 
 #include "adv748x.h"
 

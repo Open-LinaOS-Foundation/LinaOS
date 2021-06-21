@@ -3,14 +3,14 @@
  * Copyright (C) 2013 Samsung Electronics Co., Ltd.
  *	Tomasz Figa <t.figa@samsung.com>
  * Copyright (c) 2004 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armlinaos.simtec.co.uk/
  *	Written by Ben Dooks, <ben@simtec.co.uk>
  */
 
 #ifndef __LINUX_SOC_SAMSUNG_S3C_PM_H
 #define __LINUX_SOC_SAMSUNG_S3C_PM_H __FILE__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* PM debug functions */
 

@@ -6,16 +6,16 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <linaos-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Sridhar Samudrala <sri@us.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/seq_file.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
 #include <net/sctp/sctp.h>
 #include <net/ip.h> /* for snmp_fold_field */
 

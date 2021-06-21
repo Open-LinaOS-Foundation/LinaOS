@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 #include "api/fs/fs.h"
 #include "smt.h"
 

@@ -5,7 +5,7 @@
 
 #include <crypto/chacha.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/crypto.h>
+#include <linaos/crypto.h>
 
 struct chacha_ctx {
 	u32 key[8];

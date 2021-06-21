@@ -14,13 +14,13 @@
  * encoded numeric value into an input event.
  */
 
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 struct gpio_decoder {
 	struct gpio_descs *input_gpios;
@@ -77,7 +77,7 @@ static int gpio_decoder_probe(struct platform_device *pdev)
 		return -ENOMEM;
 
 	decoder->dev = dev;
-	device_property_read_u32(dev, "linux,axis", &decoder->axis);
+	device_property_read_u32(dev, "linaos,axis", &decoder->axis);
 
 	decoder->input_gpios = devm_gpiod_get_array(dev, NULL, GPIOD_IN);
 	if (IS_ERR(decoder->input_gpios)) {

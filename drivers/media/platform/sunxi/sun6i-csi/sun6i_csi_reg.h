@@ -8,7 +8,7 @@
 #ifndef __SUN6I_CSI_REG_H__
 #define __SUN6I_CSI_REG_H__
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 #define CSI_EN_REG			0x0
 #define CSI_EN_VER_EN				BIT(30)

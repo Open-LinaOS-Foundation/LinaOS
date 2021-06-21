@@ -15,19 +15,19 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb/otg.h>
-#include <linux/platform_device.h>
-#include <linux/signal.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <linaos/clk.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/io.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/usb/otg.h>
+#include <linaos/platform_device.h>
+#include <linaos/signal.h>
+#include <linaos/usb.h>
+#include <linaos/usb/hcd.h>
 
 #include "ohci.h"
 

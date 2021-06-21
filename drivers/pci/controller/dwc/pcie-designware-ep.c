@@ -6,12 +6,12 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
 
 #include "pcie-designware.h"
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <linaos/pci-epc.h>
+#include <linaos/pci-epf.h>
 
 #include "../../pci.h"
 

@@ -2,7 +2,7 @@
 #ifndef LINUX_PCI_ATS_H
 #define LINUX_PCI_ATS_H
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #ifdef CONFIG_PCI_ATS
 /* Address Translation Service */

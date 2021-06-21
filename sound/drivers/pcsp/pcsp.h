@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * PC-Speaker driver for Linux
+ * PC-Speaker driver for LinaOS
  *
  * Copyright (C) 1993-1997  Michael Beck
  * Copyright (C) 1997-2001  David Woodhouse
@@ -10,9 +10,9 @@
 #ifndef __PCSP_H__
 #define __PCSP_H__
 
-#include <linux/hrtimer.h>
-#include <linux/i8253.h>
-#include <linux/timex.h>
+#include <linaos/hrtimer.h>
+#include <linaos/i8253.h>
+#include <linaos/timex.h>
 
 #define PCSP_SOUND_VERSION 0x400	/* read 4.00 */
 #define PCSP_DEBUG 0

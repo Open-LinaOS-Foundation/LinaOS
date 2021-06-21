@@ -7,15 +7,15 @@
  *
  * Copyright 2002,2003 Andi Kleen, SuSE Labs.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/nodemask.h>
+#include <linaos/memblock.h>
 
 #include <asm/io.h>
-#include <linux/pci_ids.h>
-#include <linux/acpi.h>
+#include <linaos/pci_ids.h>
+#include <linaos/acpi.h>
 #include <asm/types.h>
 #include <asm/mmzone.h>
 #include <asm/proto.h>

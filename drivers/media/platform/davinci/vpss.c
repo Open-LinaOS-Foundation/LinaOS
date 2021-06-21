@@ -4,11 +4,11 @@
  *
  * common vpss system module platform driver for all video drivers.
  */
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/err.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/err.h>
 
 #include <media/davinci/vpss.h>
 

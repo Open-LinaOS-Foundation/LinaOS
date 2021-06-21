@@ -32,19 +32,19 @@
 
 		wps {
 			label = "WPS";
-			linux,code = <KEY_WPS_BUTTON>;
+			linaos,code = <KEY_WPS_BUTTON>;
 			gpios = <&chipcommon 3 GPIO_ACTIVE_LOW>;
 		};
 
 		rfkill {
 				label = "WiFi";
-				linux,code = <KEY_RFKILL>;
+				linaos,code = <KEY_RFKILL>;
 				gpios = <&chipcommon 16 GPIO_ACTIVE_LOW>;
 		};
 
 		reset {
 				label = "Reset";
-				linux,code = <KEY_RESTART>;
+				linaos,code = <KEY_RESTART>;
 				gpios = <&chipcommon 17 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -61,7 +61,7 @@
 			label = "bcm53xx:green:usb2";
 			gpios = <&chipcommon 1 GPIO_ACTIVE_LOW>;
 			trigger-sources = <&ohci_port2>, <&ehci_port2>;
-			linux,default-trigger = "usbport";
+			linaos,default-trigger = "usbport";
 		};
 
 		usb3 {
@@ -69,13 +69,13 @@
 			gpios = <&chipcommon 2 GPIO_ACTIVE_LOW>;
 			trigger-sources = <&ohci_port1>, <&ehci_port1>,
 					  <&xhci_port1>;
-			linux,default-trigger = "usbport";
+			linaos,default-trigger = "usbport";
 		};
 
 		power {
 			label = "bcm53xx:white:power";
 			gpios = <&chipcommon 4 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		wifi-disabled {

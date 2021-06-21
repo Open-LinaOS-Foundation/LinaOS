@@ -22,8 +22,8 @@
 #ifndef _SMC91X_H_
 #define _SMC91X_H_
 
-#include <linux/dmaengine.h>
-#include <linux/smc91x.h>
+#include <linaos/dmaengine.h>
+#include <linaos/smc91x.h>
 
 /*
  * Any 16-bit access is performed with two 8-bit accesses if the hardware
@@ -289,7 +289,7 @@ struct smc_local {
  * different and probably not worth it for that reason, and not as critical
  * as RX which can overrun memory and lose packets.
  */
-#include <linux/dma-mapping.h>
+#include <linaos/dma-mapping.h>
 
 #ifdef SMC_insl
 #undef SMC_insl
@@ -766,7 +766,7 @@ static const char * chip_ids[ 16 ] =  {
 /*
  * PHY Register Addresses (LAN91C111 Internal PHY)
  *
- * Generic PHY registers can be found in <linux/mii.h>
+ * Generic PHY registers can be found in <linaos/mii.h>
  *
  * These phy registers are specific to our on-board phy.
  */

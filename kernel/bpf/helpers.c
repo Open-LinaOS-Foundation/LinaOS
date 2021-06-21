@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#include <linux/bpf.h>
-#include <linux/rcupdate.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/topology.h>
-#include <linux/ktime.h>
-#include <linux/sched.h>
-#include <linux/uidgid.h>
-#include <linux/filter.h>
-#include <linux/ctype.h>
-#include <linux/jiffies.h>
-#include <linux/pid_namespace.h>
-#include <linux/proc_ns.h>
-#include <linux/security.h>
+#include <linaos/bpf.h>
+#include <linaos/rcupdate.h>
+#include <linaos/random.h>
+#include <linaos/smp.h>
+#include <linaos/topology.h>
+#include <linaos/ktime.h>
+#include <linaos/sched.h>
+#include <linaos/uidgid.h>
+#include <linaos/filter.h>
+#include <linaos/ctype.h>
+#include <linaos/jiffies.h>
+#include <linaos/pid_namespace.h>
+#include <linaos/proc_ns.h>
+#include <linaos/security.h>
 
 #include "../../lib/kstrtox.h"
 

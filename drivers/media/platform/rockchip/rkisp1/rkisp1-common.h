@@ -11,9 +11,9 @@
 #ifndef _RKISP1_COMMON_H
 #define _RKISP1_COMMON_H
 
-#include <linux/clk.h>
-#include <linux/mutex.h>
-#include <linux/rkisp1-config.h>
+#include <linaos/clk.h>
+#include <linaos/mutex.h>
+#include <linaos/rkisp1-config.h>
 #include <media/media-device.h>
 #include <media/media-entity.h>
 #include <media/v4l2-ctrls.h>

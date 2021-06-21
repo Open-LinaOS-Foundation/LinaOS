@@ -10,7 +10,7 @@
 #ifndef _GMA_DISPLAY_H_
 #define _GMA_DISPLAY_H_
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 #include <drm/drm_vblank.h>
 
 struct drm_encoder;

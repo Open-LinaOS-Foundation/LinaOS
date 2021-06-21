@@ -5,19 +5,19 @@
  * Copyright (C) 2017 Imagination Technologies Ltd.
  */
 
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/goldfish.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/serial_core.h>
+#include <linaos/console.h>
+#include <linaos/interrupt.h>
+#include <linaos/platform_device.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/goldfish.h>
+#include <linaos/mm.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/serial_core.h>
 
 /* Goldfish tty register's offsets */
 #define	GOLDFISH_TTY_REG_BYTES_READY	0x04

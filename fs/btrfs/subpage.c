@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "ctree.h"
 #include "subpage.h"
 

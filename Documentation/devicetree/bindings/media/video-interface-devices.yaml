@@ -8,7 +8,7 @@ title: Common bindings for video receiver and transmitter devices
 
 maintainers:
   - Jacopo Mondi <jacopo@jmondi.org>
-  - Sakari Ailus <sakari.ailus@linux.intel.com>
+  - Sakari Ailus <sakari.ailus@linaos.intel.com>
 
 properties:
   flash-leds:

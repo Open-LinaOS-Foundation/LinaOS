@@ -7,10 +7,10 @@
  *          Michael Thayer <michael.thayer@oracle.com,
  *          Hans de Goede <hdegoede@redhat.com>
  */
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/vt_kern.h>
+#include <linaos/console.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/vt_kern.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_drv.h>

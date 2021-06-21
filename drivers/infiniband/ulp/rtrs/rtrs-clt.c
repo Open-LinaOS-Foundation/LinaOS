@@ -10,9 +10,9 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <linux/module.h>
-#include <linux/rculist.h>
-#include <linux/random.h>
+#include <linaos/module.h>
+#include <linaos/rculist.h>
+#include <linaos/random.h>
 
 #include "rtrs-clt.h"
 #include "rtrs-log.h"

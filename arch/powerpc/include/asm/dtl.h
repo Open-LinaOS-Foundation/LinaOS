@@ -2,7 +2,7 @@
 #define _ASM_POWERPC_DTL_H
 
 #include <asm/lppaca.h>
-#include <linux/spinlock_types.h>
+#include <linaos/spinlock_types.h>
 
 /*
  * Layout of entries in the hypervisor's dispatch trace log buffer.

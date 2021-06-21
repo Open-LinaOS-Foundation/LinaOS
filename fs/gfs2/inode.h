@@ -7,9 +7,9 @@
 #ifndef __INODE_DOT_H__
 #define __INODE_DOT_H__
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/mm.h>
+#include <linaos/fs.h>
+#include <linaos/buffer_head.h>
+#include <linaos/mm.h>
 #include "util.h"
 
 extern int gfs2_releasepage(struct page *page, gfp_t gfp_mask);

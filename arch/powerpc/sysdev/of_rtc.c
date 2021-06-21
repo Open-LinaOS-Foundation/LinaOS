@@ -4,12 +4,12 @@
  *
  * Copyright 2007 David Gibson <dwg@au1.ibm.com>, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/of.h>
+#include <linaos/init.h>
+#include <linaos/of_address.h>
+#include <linaos/of_platform.h>
+#include <linaos/slab.h>
 
 static __initdata struct {
 	const char *compatible;

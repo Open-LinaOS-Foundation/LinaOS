@@ -14,11 +14,11 @@
 #ifndef __LINUX_IPMI_H
 #define __LINUX_IPMI_H
 
-#include <uapi/linux/ipmi.h>
+#include <uapi/linaos/ipmi.h>
 
-#include <linux/list.h>
-#include <linux/proc_fs.h>
-#include <linux/acpi.h> /* For acpi_handle */
+#include <linaos/list.h>
+#include <linaos/proc_fs.h>
+#include <linaos/acpi.h> /* For acpi_handle */
 
 struct module;
 struct device;

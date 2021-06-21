@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 =========================================
-The Linux SYM-2 driver documentation file
+The LinaOS SYM-2 driver documentation file
 =========================================
 
 Written by Gerard Roudier <groudier@free.fr>
@@ -70,7 +70,7 @@ on the SYM53C8XX SCRIPTS language.
 
 It replaces the sym53c8xx+ncr53c8xx driver bundle and shares its core code
 with the FreeBSD SYM-2 driver. The 'glue' that allows this driver to work
-under Linux is contained in 2 files named sym_glue.h and sym_glue.c.
+under LinaOS is contained in 2 files named sym_glue.h and sym_glue.c.
 Other drivers files are intended not to depend on the Operating System
 on which the driver is used.
 
@@ -81,11 +81,11 @@ The history of this driver can be summarized as follows:
           - Wolfgang Stanglmeier        <wolf@cologne.de>
           - Stefan Esser                <se@mi.Uni-Koeln.de>
 
-1996: port of the ncr driver to Linux-1.2.13 and rename it ncr53c8xx.
+1996: port of the ncr driver to LinaOS-1.2.13 and rename it ncr53c8xx.
 
           - Gerard Roudier
 
-1998: new sym53c8xx driver for Linux based on LOAD/STORE instruction and that
+1998: new sym53c8xx driver for LinaOS based on LOAD/STORE instruction and that
       adds full support for the 896 but drops support for early NCR devices.
 
           - Gerard Roudier
@@ -98,14 +98,14 @@ The history of this driver can be summarized as follows:
 2000: Add support for early NCR devices to FreeBSD 'sym' driver.
       Break the driver into several sources and separate the OS glue
       code from the core code that can be shared among different O/Ses.
-      Write a glue code for Linux.
+      Write a glue code for LinaOS.
 
           - Gerard Roudier
 
 2004: Remove FreeBSD compatibility code.  Remove support for versions of
-      Linux before 2.6.  Start using Linux facilities.
+      LinaOS before 2.6.  Start using LinaOS facilities.
 
-This README file addresses the Linux version of the driver. Under FreeBSD,
+This README file addresses the LinaOS version of the driver. Under FreeBSD,
 the driver documentation is the sym.8 man page.
 
 Information about new chips is available at LSILOGIC web server:
@@ -116,7 +116,7 @@ SCSI standard documentations are available at T10 site:
 
           http://www.t10.org/
 
-Useful SCSI tools written by Eric Youngdale are part of most Linux
+Useful SCSI tools written by Eric Youngdale are part of most LinaOS
 distributions:
 
    ============ ==========================
@@ -464,7 +464,7 @@ possible to change some default driver configuration parameters.
 If the firmware of all your devices is perfect enough, all the
 features supported by the driver can be enabled at start-up. However,
 if only one has a flaw for some SCSI feature, you can disable the
-support by the driver of this feature at linux start-up and enable
+support by the driver of this feature at linaos start-up and enable
 this feature after boot-up only for devices that support it safely.
 
 Configuration parameters:
@@ -497,7 +497,7 @@ parameters to modprobe, as described in Documentation/admin-guide/kernel-paramet
 
 Example of boot setup command under lilo prompt::
 
-    lilo: linux root=/dev/sda2 sym53c8xx.cmd_per_lun=4 sym53c8xx.sync=10 sym53c8xx.debug=0x200
+    lilo: linaos root=/dev/sda2 sym53c8xx.cmd_per_lun=4 sym53c8xx.sync=10 sym53c8xx.debug=0x200
 
 - enable tagged commands, up to 4 tagged commands queued.
 - set synchronous negotiation speed to 10 Mega-transfers / second.
@@ -717,7 +717,7 @@ following things:
 
 - SCSI bus cables
 - terminations at both end of the SCSI chain
-- linux syslog messages (some of them may help you)
+- linaos syslog messages (some of them may help you)
 
 If you do not find the source of problems, you can configure the
 driver or devices in the NVRAM with minimal features.

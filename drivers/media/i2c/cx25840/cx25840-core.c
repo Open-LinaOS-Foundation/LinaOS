@@ -14,7 +14,7 @@
  * NTSC sliced VBI support by Christopher Neufeld <television@cneufeld.ca>
  * with additional fixes by Hans Verkuil <hverkuil@xs4all.nl>.
  *
- * CX23885 support by Steven Toth <stoth@linuxtv.org>.
+ * CX23885 support by Steven Toth <stoth@linaostv.org>.
  *
  * CX2388[578] IRQ handling, IO Pin mux configuration and other small fixes are
  * Copyright (C) 2010 Andy Walls <awalls@md.metrocast.net>
@@ -26,13 +26,13 @@
  * Copyright (C) 2011 Maciej S. Szmigiero <mail@maciej.szmigiero.name>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/math64.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/i2c.h>
+#include <linaos/delay.h>
+#include <linaos/math64.h>
 #include <media/v4l2-common.h>
 #include <media/drv-intf/cx25840.h>
 

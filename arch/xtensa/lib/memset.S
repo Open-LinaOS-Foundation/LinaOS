@@ -11,7 +11,7 @@
  *  Copyright (C) 2002 Tensilica Inc.
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/asmmacro.h>
 #include <asm/core.h>
 

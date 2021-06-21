@@ -4,30 +4,30 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/moduleparam.h>
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/delay.h>
+#include <linaos/sched.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/delay.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/gpio.h>
-#include <linux/atomic.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_vlan.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/skbuff.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/phy_fixed.h>
+#include <linaos/platform_device.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/clk.h>
+#include <linaos/gpio.h>
+#include <linaos/atomic.h>
 
 #include <asm/mach-ar7/ar7.h>
 

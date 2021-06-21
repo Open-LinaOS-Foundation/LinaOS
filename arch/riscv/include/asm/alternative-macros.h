@@ -42,7 +42,7 @@
 #else /* !__ASSEMBLY__ */
 
 #include <asm/asm.h>
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 #define ALT_ENTRY(oldptr, newptr, vendor_id, errata_id, newlen) \
 	RISCV_PTR " " oldptr "\n" \

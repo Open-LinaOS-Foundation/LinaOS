@@ -205,7 +205,7 @@ perf' 机制和待办事项。
 A. 相关结构体
 -------------
 
-* struct pmu: include/linux/perf_event.h
+* struct pmu: include/linaos/perf_event.h
 * struct riscv_pmu: arch/riscv/include/asm/perf_event.h
 
   两个结构体都被设计为只读。
@@ -215,7 +215,7 @@ A. 相关结构体
 
   *struct riscv_pmu* 定义了PMU的具体参数。 命名遵循所有其它架构的惯例。
 
-* struct perf_event: include/linux/perf_event.h
+* struct perf_event: include/linaos/perf_event.h
 * struct hw_perf_event
 
   表示 perf 事件的通用结构体，以及硬件相关的细节。
@@ -228,6 +228,6 @@ A. 相关结构体
 参考文献
 --------
 
-[1] https://github.com/riscv/riscv-linux/pull/124
+[1] https://github.com/riscv/riscv-linaos/pull/124
 
 [2] https://groups.google.com/a/groups.riscv.org/forum/#!topic/sw-dev/f19TmCNP6yA

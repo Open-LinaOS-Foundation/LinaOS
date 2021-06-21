@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* This is a module which is used to mark packets for tracing.
  */
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
+#include <linaos/netfilter/x_tables.h>
 #include <net/netfilter/nf_log.h>
 
 MODULE_DESCRIPTION("Xtables: packet flow tracing");

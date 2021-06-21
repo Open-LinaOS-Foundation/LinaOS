@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/export.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/delay.h>
+#include <linaos/bitops.h>
+#include <linaos/export.h>
+#include <linaos/regmap.h>
+#include <linaos/reset-controller.h>
+#include <linaos/delay.h>
 
 #include "reset.h"
 

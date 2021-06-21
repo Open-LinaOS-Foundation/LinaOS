@@ -3,26 +3,26 @@
  * Copyright (c) 2010 Broadcom Corporation
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/printk.h>
-#include <linux/pci_ids.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/semaphore.h>
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/bcma/bcma.h>
-#include <linux/debugfs.h>
-#include <linux/vmalloc.h>
+#include <linaos/types.h>
+#include <linaos/atomic.h>
+#include <linaos/kernel.h>
+#include <linaos/kthread.h>
+#include <linaos/printk.h>
+#include <linaos/pci_ids.h>
+#include <linaos/netdevice.h>
+#include <linaos/interrupt.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mmc/sdio.h>
+#include <linaos/mmc/sdio_ids.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/mmc/card.h>
+#include <linaos/mmc/core.h>
+#include <linaos/semaphore.h>
+#include <linaos/firmware.h>
+#include <linaos/module.h>
+#include <linaos/bcma/bcma.h>
+#include <linaos/debugfs.h>
+#include <linaos/vmalloc.h>
 #include <asm/unaligned.h>
 #include <defs.h>
 #include <brcmu_wifi.h>

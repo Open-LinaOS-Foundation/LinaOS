@@ -8,9 +8,9 @@
 #ifndef __VMCI_TRANSPORT_NOTIFY_H__
 #define __VMCI_TRANSPORT_NOTIFY_H__
 
-#include <linux/types.h>
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
+#include <linaos/types.h>
+#include <linaos/vmw_vmci_defs.h>
+#include <linaos/vmw_vmci_api.h>
 
 #include "vmci_transport.h"
 

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/mm_types.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/cpumask.h>
-#include <linux/mman.h>
-#include <linux/pgtable.h>
+#include <linaos/mm_types.h>
+#include <linaos/rbtree.h>
+#include <linaos/rwsem.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/cpumask.h>
+#include <linaos/mman.h>
+#include <linaos/pgtable.h>
 
-#include <linux/atomic.h>
-#include <linux/user_namespace.h>
+#include <linaos/atomic.h>
+#include <linaos/user_namespace.h>
 #include <asm/mmu.h>
 
 #ifndef INIT_MM_CONTEXT

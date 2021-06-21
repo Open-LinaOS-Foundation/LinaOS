@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2019 Nuvoton Technology corporation.
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/init.h>
-#include <linux/random.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/hw_random.h>
-#include <linux/delay.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/init.h>
+#include <linaos/random.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/hw_random.h>
+#include <linaos/delay.h>
+#include <linaos/of_irq.h>
+#include <linaos/pm_runtime.h>
 
 #define NPCM_RNGCS_REG		0x00	/* Control and status register */
 #define NPCM_RNGD_REG		0x04	/* Data register */

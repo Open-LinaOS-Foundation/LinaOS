@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/of_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/jack.h>
 #include <sound/soc.h>
-#include <linux/soundwire/sdw.h>
-#include <uapi/linux/input-event-codes.h>
+#include <linaos/soundwire/sdw.h>
+#include <uapi/linaos/input-event-codes.h>
 #include "common.h"
 #include "qdsp6/q6afe.h"
 #include "../codecs/rt5663.h"

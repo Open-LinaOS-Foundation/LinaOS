@@ -18,9 +18,9 @@
 #define NUM_FE 1
 #define VIDTV_PDEV_NAME "vidtv"
 
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_device.h>
+#include <linaos/types.h>
 
 #include <media/dmxdev.h>
 #include <media/dvb_demux.h>

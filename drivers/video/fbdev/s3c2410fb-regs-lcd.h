@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2003 Simtec Electronics <linux@simtec.co.uk>
+ * Copyright (c) 2003 Simtec Electronics <linaos@simtec.co.uk>
  *		      http://www.simtec.co.uk/products/SWLINUX/
  */
 
@@ -9,10 +9,10 @@
 
 /*
  * a couple of values are used as platform data in
- * include/linux/platform_data/fb-s3c2410.h and not
+ * include/linaos/platform_data/fb-s3c2410.h and not
  * duplicated here.
  */
-#include <linux/platform_data/fb-s3c2410.h>
+#include <linaos/platform_data/fb-s3c2410.h>
 
 #define S3C2410_LCDREG(x)	(x)
 

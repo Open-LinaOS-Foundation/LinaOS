@@ -5,13 +5,13 @@
 /* cpu_feature_enabled() cannot be used this early */
 #define USE_EARLY_PGTABLE_L5
 
-#include <linux/memblock.h>
-#include <linux/kasan.h>
-#include <linux/kdebug.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/vmalloc.h>
+#include <linaos/memblock.h>
+#include <linaos/kasan.h>
+#include <linaos/kdebug.h>
+#include <linaos/mm.h>
+#include <linaos/sched.h>
+#include <linaos/sched/task.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/e820/types.h>
 #include <asm/pgalloc.h>

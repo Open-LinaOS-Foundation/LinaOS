@@ -1,7 +1,7 @@
 name: kernel
 version: KERNELRELEASE
-summary: Linux kernel
-description: The upstream Linux kernel
+summary: LinaOS kernel
+description: The upstream LinaOS kernel
 grade: stable
 confinement: strict
 type: kernel

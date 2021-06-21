@@ -12,11 +12,11 @@
 #ifndef _ASM_S390_PGTABLE_H
 #define _ASM_S390_PGTABLE_H
 
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/page-flags.h>
-#include <linux/radix-tree.h>
-#include <linux/atomic.h>
+#include <linaos/sched.h>
+#include <linaos/mm_types.h>
+#include <linaos/page-flags.h>
+#include <linaos/radix-tree.h>
+#include <linaos/atomic.h>
 #include <asm/bug.h>
 #include <asm/page.h>
 #include <asm/uv.h>

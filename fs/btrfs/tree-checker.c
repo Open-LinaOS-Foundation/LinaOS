@@ -15,9 +15,9 @@
  * carefully reviewed otherwise so it does not prevent mount of valid images.
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/error-injection.h>
+#include <linaos/types.h>
+#include <linaos/stddef.h>
+#include <linaos/error-injection.h>
 #include "ctree.h"
 #include "tree-checker.h"
 #include "disk-io.h"

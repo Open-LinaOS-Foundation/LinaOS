@@ -4,16 +4,16 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/version.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/capability.h>
-#include <linux/vmalloc.h>
-#include <linux/phylink.h>
+#include <linaos/version.h>
+#include <linaos/types.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/string.h>
+#include <linaos/pci.h>
+#include <linaos/capability.h>
+#include <linaos/vmalloc.h>
+#include <linaos/phylink.h>
 
 #include "qede.h"
 #include "qede_ptp.h"

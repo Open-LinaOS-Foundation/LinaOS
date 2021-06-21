@@ -4,11 +4,11 @@
  * Authors:     Jamal Hadi Salim 1999
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
 
 #include <net/netlink.h>
 #include <net/pkt_sched.h>

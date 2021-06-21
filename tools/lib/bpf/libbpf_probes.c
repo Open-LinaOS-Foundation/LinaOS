@@ -9,9 +9,9 @@
 #include <net/if.h>
 #include <sys/utsname.h>
 
-#include <linux/btf.h>
-#include <linux/filter.h>
-#include <linux/kernel.h>
+#include <linaos/btf.h>
+#include <linaos/filter.h>
+#include <linaos/kernel.h>
 
 #include "bpf.h"
 #include "libbpf.h"

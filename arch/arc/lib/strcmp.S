@@ -10,7 +10,7 @@
    source 1; however, that would increase the overhead for loop setup / finish,
    and strcmp might often terminate early.  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 
 ENTRY_CFI(strcmp)
 	or	r2,r0,r1

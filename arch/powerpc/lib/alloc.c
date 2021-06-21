@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/string.h>
+#include <linaos/types.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/memblock.h>
+#include <linaos/string.h>
 #include <asm/setup.h>
 
 

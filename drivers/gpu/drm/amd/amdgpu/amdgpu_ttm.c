@@ -30,18 +30,18 @@
  *    Dave Airlie
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/iommu.h>
-#include <linux/hmm.h>
-#include <linux/pagemap.h>
-#include <linux/sched/task.h>
-#include <linux/sched/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/swiotlb.h>
-#include <linux/dma-buf.h>
-#include <linux/sizes.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/iommu.h>
+#include <linaos/hmm.h>
+#include <linaos/pagemap.h>
+#include <linaos/sched/task.h>
+#include <linaos/sched/mm.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
+#include <linaos/swiotlb.h>
+#include <linaos/dma-buf.h>
+#include <linaos/sizes.h>
 
 #include <drm/ttm/ttm_bo_api.h>
 #include <drm/ttm/ttm_bo_driver.h>

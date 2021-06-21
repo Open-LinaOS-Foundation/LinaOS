@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/acorn/net/ether1.h
+ *  linaos/drivers/acorn/net/ether1.h
  *
  *  Copyright (C) 1996 Russell King
  *

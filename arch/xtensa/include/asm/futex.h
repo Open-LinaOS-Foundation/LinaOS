@@ -12,9 +12,9 @@
 #ifndef _ASM_XTENSA_FUTEX_H
 #define _ASM_XTENSA_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
+#include <linaos/futex.h>
+#include <linaos/uaccess.h>
+#include <linaos/errno.h>
 
 #if XCHAL_HAVE_EXCLUSIVE
 #define __futex_atomic_op(insn, ret, old, uaddr, arg)	\

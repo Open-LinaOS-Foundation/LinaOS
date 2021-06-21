@@ -9,10 +9,10 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/leds.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/leds.h>
 
 DEFINE_LED_TRIGGER(ledtrig_flash);
 DEFINE_LED_TRIGGER(ledtrig_torch);

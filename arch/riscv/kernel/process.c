@@ -7,14 +7,14 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/tick.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
+#include <linaos/cpu.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/debug.h>
+#include <linaos/sched/task_stack.h>
+#include <linaos/tick.h>
+#include <linaos/ptrace.h>
+#include <linaos/uaccess.h>
 
 #include <asm/unistd.h>
 #include <asm/processor.h>
@@ -27,7 +27,7 @@
 register unsigned long gp_in_global __asm__("gp");
 
 #if defined(CONFIG_STACKPROTECTOR) && !defined(CONFIG_STACKPROTECTOR_PER_TASK)
-#include <linux/stackprotector.h>
+#include <linaos/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif

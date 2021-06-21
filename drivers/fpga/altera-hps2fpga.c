@@ -19,15 +19,15 @@
  * reprogramming the FPGA and re-enabled after the FPGA has been programmed.
  */
 
-#include <linux/clk.h>
-#include <linux/fpga/fpga-bridge.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/fpga/fpga-bridge.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/spinlock.h>
 
 #define ALT_L3_REMAP_OFST			0x0
 #define ALT_L3_REMAP_MPUZERO_MSK		0x00000001

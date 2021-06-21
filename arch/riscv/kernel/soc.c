@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
-#include <linux/init.h>
-#include <linux/libfdt.h>
-#include <linux/pgtable.h>
+#include <linaos/init.h>
+#include <linaos/libfdt.h>
+#include <linaos/pgtable.h>
 #include <asm/soc.h>
 
 /*

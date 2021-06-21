@@ -210,6 +210,6 @@ Copyright |copy| 2006-2012 HighPoint Technologies, Inc. All Rights Reserved.
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
 
-  linux@highpoint-tech.com
+  linaos@highpoint-tech.com
 
   http://www.highpoint-tech.com

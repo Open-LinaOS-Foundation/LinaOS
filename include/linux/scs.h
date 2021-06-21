@@ -8,10 +8,10 @@
 #ifndef _LINUX_SCS_H
 #define _LINUX_SCS_H
 
-#include <linux/gfp.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
+#include <linaos/gfp.h>
+#include <linaos/poison.h>
+#include <linaos/sched.h>
+#include <linaos/sizes.h>
 
 #ifdef CONFIG_SHADOW_CALL_STACK
 

@@ -45,7 +45,7 @@
  *
  */
 
-#include <linux/ctype.h>
+#include <linaos/ctype.h>
 #include "efivar.h"
 
 /* GUID for HFI1 variables in EFI */

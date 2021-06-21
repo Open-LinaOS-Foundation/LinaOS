@@ -10,16 +10,16 @@
 #ifndef	__LINUX_BDC_H__
 #define	__LINUX_BDC_H__
 
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/debugfs.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <linaos/kernel.h>
+#include <linaos/usb.h>
+#include <linaos/device.h>
+#include <linaos/spinlock.h>
+#include <linaos/list.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mm.h>
+#include <linaos/debugfs.h>
+#include <linaos/usb/ch9.h>
+#include <linaos/usb/gadget.h>
 #include <asm/unaligned.h>
 
 #define BRCM_BDC_NAME "bdc"

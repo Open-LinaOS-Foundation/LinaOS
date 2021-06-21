@@ -28,10 +28,10 @@
 ***************************************/
 #include "error_private.h"
 #include "mem.h"
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/xxhash.h>
-#include <linux/zstd.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/xxhash.h>
+#include <linaos/zstd.h>
 
 /*-*************************************
 *  shared macros

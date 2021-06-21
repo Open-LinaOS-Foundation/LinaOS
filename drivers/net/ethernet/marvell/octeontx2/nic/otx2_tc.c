@@ -3,11 +3,11 @@
  *
  * Copyright (C) 2021 Marvell.
  */
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/rhashtable.h>
-#include <linux/bitfield.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/inetdevice.h>
+#include <linaos/rhashtable.h>
+#include <linaos/bitfield.h>
 #include <net/flow_dissector.h>
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>

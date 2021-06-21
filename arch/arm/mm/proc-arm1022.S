@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  linux/arch/arm/mm/proc-arm1022.S: MMU functions for ARM1022E
+ *  linaos/arch/arm/mm/proc-arm1022.S: MMU functions for ARM1022E
  *
  *  Copyright (C) 2000 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd.
@@ -9,9 +9,9 @@
  * These are the low level assembler for performing cache and TLB
  * functions on the ARM1022E.
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/init.h>
+#include <linaos/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

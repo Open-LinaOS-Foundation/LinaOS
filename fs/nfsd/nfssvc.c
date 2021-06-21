@@ -7,19 +7,19 @@
  * Copyright (C) 1995, 1996, 1997 Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/sched/signal.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/fs_struct.h>
-#include <linux/swap.h>
+#include <linaos/sched/signal.h>
+#include <linaos/freezer.h>
+#include <linaos/module.h>
+#include <linaos/fs_struct.h>
+#include <linaos/swap.h>
 
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/lockd/bind.h>
-#include <linux/nfsacl.h>
-#include <linux/seq_file.h>
-#include <linux/inetdevice.h>
+#include <linaos/sunrpc/stats.h>
+#include <linaos/sunrpc/svcsock.h>
+#include <linaos/sunrpc/svc_xprt.h>
+#include <linaos/lockd/bind.h>
+#include <linaos/nfsacl.h>
+#include <linaos/seq_file.h>
+#include <linaos/inetdevice.h>
 #include <net/addrconf.h>
 #include <net/ipv6.h>
 #include <net/net_namespace.h>

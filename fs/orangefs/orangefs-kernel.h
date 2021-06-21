@@ -6,52 +6,52 @@
  */
 
 /*
- *  The ORANGEFS Linux kernel support allows ORANGEFS volumes to be mounted and
- *  accessed through the Linux VFS (i.e. using standard I/O system calls).
+ *  The ORANGEFS LinaOS kernel support allows ORANGEFS volumes to be mounted and
+ *  accessed through the LinaOS VFS (i.e. using standard I/O system calls).
  *  This support is only needed on clients that wish to mount the file system.
  *
  */
 
 /*
- *  Declarations and macros for the ORANGEFS Linux kernel support.
+ *  Declarations and macros for the ORANGEFS LinaOS kernel support.
  */
 
 #ifndef __ORANGEFSKERNEL_H
 #define __ORANGEFSKERNEL_H
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/statfs.h>
-#include <linux/backing-dev.h>
-#include <linux/device.h>
-#include <linux/mpage.h>
-#include <linux/namei.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/moduleparam.h>
+#include <linaos/statfs.h>
+#include <linaos/backing-dev.h>
+#include <linaos/device.h>
+#include <linaos/mpage.h>
+#include <linaos/namei.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/vmalloc.h>
 
-#include <linux/aio.h>
-#include <linux/posix_acl.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/uio.h>
-#include <linux/sched/signal.h>
-#include <linux/mm.h>
-#include <linux/wait.h>
-#include <linux/dcache.h>
-#include <linux/pagemap.h>
-#include <linux/poll.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
-#include <linux/exportfs.h>
-#include <linux/hashtable.h>
+#include <linaos/aio.h>
+#include <linaos/posix_acl.h>
+#include <linaos/posix_acl_xattr.h>
+#include <linaos/compat.h>
+#include <linaos/mount.h>
+#include <linaos/uaccess.h>
+#include <linaos/atomic.h>
+#include <linaos/uio.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mm.h>
+#include <linaos/wait.h>
+#include <linaos/dcache.h>
+#include <linaos/pagemap.h>
+#include <linaos/poll.h>
+#include <linaos/rwsem.h>
+#include <linaos/xattr.h>
+#include <linaos/exportfs.h>
+#include <linaos/hashtable.h>
 
 #include <asm/unaligned.h>
 

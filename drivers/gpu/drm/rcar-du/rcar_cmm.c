@@ -5,11 +5,11 @@
  * Copyright (C) 2019 Jacopo Mondi <jacopo+renesas@jmondi.org>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm_color_mgmt.h>
 

@@ -7,15 +7,15 @@
 #ifndef __I915_GEM_CONTEXT_TYPES_H__
 #define __I915_GEM_CONTEXT_TYPES_H__
 
-#include <linux/atomic.h>
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
-#include <linux/rbtree.h>
-#include <linux/rcupdate.h>
-#include <linux/types.h>
+#include <linaos/atomic.h>
+#include <linaos/list.h>
+#include <linaos/llist.h>
+#include <linaos/kref.h>
+#include <linaos/mutex.h>
+#include <linaos/radix-tree.h>
+#include <linaos/rbtree.h>
+#include <linaos/rcupdate.h>
+#include <linaos/types.h>
 
 #include "gt/intel_context_types.h"
 

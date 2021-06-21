@@ -4,17 +4,17 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <linaos/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/bio.h>
-#include <linux/dax.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/uio.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/blkdev.h>
+#include <linaos/bio.h>
+#include <linaos/dax.h>
+#include <linaos/slab.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/uio.h>
 
 #define DM_MSG_PREFIX "log-writes"
 

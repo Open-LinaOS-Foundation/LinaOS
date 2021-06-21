@@ -9,12 +9,12 @@
 #include <assert.h>
 #include <stdarg.h>
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/overflow.h>
-#include <linux/list.h>
-#include <linux/printk.h>
-#include <linux/bug.h>
+#include <linaos/compiler.h>
+#include <linaos/types.h>
+#include <linaos/overflow.h>
+#include <linaos/list.h>
+#include <linaos/printk.h>
+#include <linaos/bug.h>
 #include <errno.h>
 #include <unistd.h>
 #include <asm/barrier.h>

@@ -16,31 +16,31 @@
  * and hooked into this driver.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/sizes.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
+#include <linaos/module.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/console.h>
+#include <linaos/sysrq.h>
+#include <linaos/device.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/serial_core.h>
+#include <linaos/serial.h>
+#include <linaos/amba/bus.h>
+#include <linaos/amba/serial.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/scatterlist.h>
+#include <linaos/delay.h>
+#include <linaos/types.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/sizes.h>
+#include <linaos/io.h>
+#include <linaos/acpi.h>
 
 #include "amba-pl011.h"
 

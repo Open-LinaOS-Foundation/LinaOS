@@ -10,15 +10,15 @@
 #ifndef ST_SENSORS_H
 #define ST_SENSORS_H
 
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/irqreturn.h>
-#include <linux/iio/trigger.h>
-#include <linux/bitops.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/spi/spi.h>
+#include <linaos/irqreturn.h>
+#include <linaos/iio/trigger.h>
+#include <linaos/bitops.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/regmap.h>
 
-#include <linux/platform_data/st_sensors_pdata.h>
+#include <linaos/platform_data/st_sensors_pdata.h>
 
 /*
  * Buffer size max case: 2bytes per channel, 3 channels in total +

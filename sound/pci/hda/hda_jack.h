@@ -8,7 +8,7 @@
 #ifndef __SOUND_HDA_JACK_H
 #define __SOUND_HDA_JACK_H
 
-#include <linux/err.h>
+#include <linaos/err.h>
 #include <sound/jack.h>
 
 struct auto_pin_cfg;

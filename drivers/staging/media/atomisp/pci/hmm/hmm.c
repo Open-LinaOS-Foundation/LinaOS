@@ -20,12 +20,12 @@
 /*
  * This file contains entry functions for memory management of ISP driver
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>	/* for kmap */
-#include <linux/io.h>		/* for page_to_phys */
-#include <linux/sysfs.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/mm.h>
+#include <linaos/highmem.h>	/* for kmap */
+#include <linaos/io.h>		/* for page_to_phys */
+#include <linaos/sysfs.h>
 
 #include "hmm/hmm.h"
 #include "hmm/hmm_pool.h"
@@ -514,7 +514,7 @@ int hmm_store(ia_css_ptr virt, const void *data, unsigned int bytes)
 		if (in_atomic())
 			/*
 			 * Note: kunmap_atomic requires return addr from
-			 * kmap_atomic, not the page. See linux/highmem.h
+			 * kmap_atomic, not the page. See linaos/highmem.h
 			 */
 			kunmap_atomic(des - offset);
 		else

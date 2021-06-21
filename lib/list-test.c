@@ -7,7 +7,7 @@
  */
 #include <kunit/test.h>
 
-#include <linux/list.h>
+#include <linaos/list.h>
 
 struct list_test_struct {
 	int data;

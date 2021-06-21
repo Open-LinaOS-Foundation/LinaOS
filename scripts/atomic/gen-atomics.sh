@@ -10,8 +10,8 @@ LINUXDIR=${ATOMICDIR}/../..
 cat <<EOF |
 gen-atomic-instrumented.sh      asm-generic/atomic-instrumented.h
 gen-atomic-long.sh              asm-generic/atomic-long.h
-gen-atomic-fallback.sh          linux/atomic-arch-fallback.h		arch_
-gen-atomic-fallback.sh          linux/atomic-fallback.h
+gen-atomic-fallback.sh          linaos/atomic-arch-fallback.h		arch_
+gen-atomic-fallback.sh          linaos/atomic-fallback.h
 EOF
 while read script header args; do
 	/bin/sh ${ATOMICDIR}/${script} ${ATOMICTBL} ${args} > ${LINUXDIR}/include/${header}

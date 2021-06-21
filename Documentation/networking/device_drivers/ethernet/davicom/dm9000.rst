@@ -6,7 +6,7 @@ DM9000 Network driver
 
 Copyright 2008 Simtec Electronics,
 
-	  Ben Dooks <ben@simtec.co.uk> <ben-linux@fluff.org>
+	  Ben Dooks <ben@simtec.co.uk> <ben-linaos@fluff.org>
 
 
 Introduction
@@ -84,7 +84,7 @@ the optional platform data to pass extra configuration data::
 	}
   };
 
-The platform data is defined in include/linux/dm9000.h and described below.
+The platform data is defined in include/linaos/dm9000.h and described below.
 
 
 Platform data

@@ -12,49 +12,49 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/module.h>
-#include <linux/gfp.h>
-#include <linux/kernel_stat.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/vmpressure.h>
-#include <linux/vmstat.h>
-#include <linux/file.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>	/* for try_to_release_page(),
+#include <linaos/mm.h>
+#include <linaos/sched/mm.h>
+#include <linaos/module.h>
+#include <linaos/gfp.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/swap.h>
+#include <linaos/pagemap.h>
+#include <linaos/init.h>
+#include <linaos/highmem.h>
+#include <linaos/vmpressure.h>
+#include <linaos/vmstat.h>
+#include <linaos/file.h>
+#include <linaos/writeback.h>
+#include <linaos/blkdev.h>
+#include <linaos/buffer_head.h>	/* for try_to_release_page(),
 					buffer_heads_over_limit */
-#include <linux/mm_inline.h>
-#include <linux/backing-dev.h>
-#include <linux/rmap.h>
-#include <linux/topology.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/compaction.h>
-#include <linux/notifier.h>
-#include <linux/rwsem.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/memcontrol.h>
-#include <linux/delayacct.h>
-#include <linux/sysctl.h>
-#include <linux/oom.h>
-#include <linux/pagevec.h>
-#include <linux/prefetch.h>
-#include <linux/printk.h>
-#include <linux/dax.h>
-#include <linux/psi.h>
+#include <linaos/mm_inline.h>
+#include <linaos/backing-dev.h>
+#include <linaos/rmap.h>
+#include <linaos/topology.h>
+#include <linaos/cpu.h>
+#include <linaos/cpuset.h>
+#include <linaos/compaction.h>
+#include <linaos/notifier.h>
+#include <linaos/rwsem.h>
+#include <linaos/delay.h>
+#include <linaos/kthread.h>
+#include <linaos/freezer.h>
+#include <linaos/memcontrol.h>
+#include <linaos/delayacct.h>
+#include <linaos/sysctl.h>
+#include <linaos/oom.h>
+#include <linaos/pagevec.h>
+#include <linaos/prefetch.h>
+#include <linaos/printk.h>
+#include <linaos/dax.h>
+#include <linaos/psi.h>
 
 #include <asm/tlbflush.h>
 #include <asm/div64.h>
 
-#include <linux/swapops.h>
-#include <linux/balloon_compaction.h>
+#include <linaos/swapops.h>
+#include <linaos/balloon_compaction.h>
 
 #include "internal.h"
 

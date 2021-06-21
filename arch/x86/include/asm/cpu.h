@@ -2,11 +2,11 @@
 #ifndef _ASM_X86_CPU_H
 #define _ASM_X86_CPU_H
 
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/topology.h>
-#include <linux/nodemask.h>
-#include <linux/percpu.h>
+#include <linaos/device.h>
+#include <linaos/cpu.h>
+#include <linaos/topology.h>
+#include <linaos/nodemask.h>
+#include <linaos/percpu.h>
 
 #ifdef CONFIG_SMP
 

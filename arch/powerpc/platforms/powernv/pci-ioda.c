@@ -7,19 +7,19 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/crash_dump.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/msi.h>
-#include <linux/iommu.h>
-#include <linux/rculist.h>
-#include <linux/sizes.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/crash_dump.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
+#include <linaos/memblock.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/msi.h>
+#include <linaos/iommu.h>
+#include <linaos/rculist.h>
+#include <linaos/sizes.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>
@@ -1609,7 +1609,7 @@ found:
 	for (i = base; i < base + segs; i++)
 		phb->ioda.dma32_segmap[i] = pe->pe_number;
 
-	/* Setup linux iommu table */
+	/* Setup linaos iommu table */
 	pnv_pci_setup_iommu_table(tbl, addr, tce32_segsz * segs,
 				  base * PNV_IODA1_DMA32_SEGSIZE,
 				  IOMMU_PAGE_SHIFT_4K);
@@ -1942,7 +1942,7 @@ void pnv_pci_ioda2_setup_dma_pe(struct pnv_phb *phb,
 	pe_info(pe, "Setting up 32-bit TCE table at 0..%08x\n",
 		phb->ioda.m32_pci_base);
 
-	/* Setup linux iommu table */
+	/* Setup linaos iommu table */
 	pe->table_group.tce32_start = 0;
 	pe->table_group.tce32_size = phb->ioda.m32_pci_base;
 	pe->table_group.max_dynamic_windows_supported =

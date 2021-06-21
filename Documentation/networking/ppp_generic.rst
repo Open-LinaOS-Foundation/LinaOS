@@ -9,7 +9,7 @@ PPP Generic Driver and Channel Interface
 
 			      7 Feb 2002
 
-The generic PPP driver in linux-2.4 provides an implementation of the
+The generic PPP driver in linaos-2.4 provides an implementation of the
 functionality which is of use in any PPP implementation, including:
 
 * the network interface unit (ppp0 etc.)
@@ -42,7 +42,7 @@ on receive.
 PPP channel API
 ---------------
 
-See include/linux/ppp_channel.h for the declaration of the types and
+See include/linaos/ppp_channel.h for the declaration of the types and
 functions used to communicate between the generic PPP layer and PPP
 channels.
 
@@ -359,7 +359,7 @@ an interface unit are:
 	SC_MP_XSHORTSEQ		transmit short multilink sequence nos.
 	================	========================================
 
-  The values of these flags are defined in <linux/ppp-ioctl.h>.  Note
+  The values of these flags are defined in <linaos/ppp-ioctl.h>.  Note
   that the values of the SC_MULTILINK, SC_MP_SHORTSEQ and
   SC_MP_XSHORTSEQ bits are ignored if the CONFIG_PPP_MULTILINK option
   is not selected.
@@ -378,7 +378,7 @@ an interface unit are:
 
 * PPPIOCSCOMPRESS sets the parameters for packet compression or
   decompression.  The argument should point to a ppp_option_data
-  structure (defined in <linux/ppp-ioctl.h>), which contains a
+  structure (defined in <linaos/ppp-ioctl.h>), which contains a
   pointer/length pair which should describe a block of memory
   containing a CCP option specifying a compression method and its
   parameters.  The ppp_option_data struct also contains a ``transmit``
@@ -400,7 +400,7 @@ an interface unit are:
 
 * PPPIOCGIDLE returns the time, in seconds, since the last data
   packets were sent and received.  The argument should point to a
-  ppp_idle structure (defined in <linux/ppp_defs.h>).  If the
+  ppp_idle structure (defined in <linaos/ppp_defs.h>).  If the
   CONFIG_PPP_FILTER option is enabled, the set of packets which reset
   the transmit and receive idle timers is restricted to those which
   pass the ``active`` packet filter.
@@ -417,7 +417,7 @@ an interface unit are:
 
 * PPPIOCSNPMODE sets the network-protocol mode for a given network
   protocol.  The argument should point to an npioctl struct (defined
-  in <linux/ppp-ioctl.h>).  The ``protocol`` field gives the PPP protocol
+  in <linaos/ppp-ioctl.h>).  The ``protocol`` field gives the PPP protocol
   number for the protocol to be affected, and the ``mode`` field
   specifies what to do with packets for that protocol:
 
@@ -441,7 +441,7 @@ an interface unit are:
 * PPPIOCSPASS and PPPIOCSACTIVE set the ``pass`` and ``active`` packet
   filters.  These ioctls are only available if the CONFIG_PPP_FILTER
   option is selected.  The argument should point to a sock_fprog
-  structure (defined in <linux/filter.h>) containing the compiled BPF
+  structure (defined in <linaos/filter.h>) containing the compiled BPF
   instructions for the filter.  Packets are dropped if they fail the
   ``pass`` filter; otherwise, if they fail the ``active`` filter they are
   passed but they do not reset the transmit or receive idle timer.

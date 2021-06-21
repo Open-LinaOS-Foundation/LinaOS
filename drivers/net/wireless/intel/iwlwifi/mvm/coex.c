@@ -3,8 +3,8 @@
  * Copyright (C) 2013-2014, 2018-2020 Intel Corporation
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  */
-#include <linux/ieee80211.h>
-#include <linux/etherdevice.h>
+#include <linaos/ieee80211.h>
+#include <linaos/etherdevice.h>
 #include <net/mac80211.h>
 
 #include "fw/api/coex.h"

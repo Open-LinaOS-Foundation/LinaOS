@@ -3,15 +3,15 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (c) 2006  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (c) 2006  Ralf Baechle (ralf@linaos-mips.org)
  */
 #ifndef _ASM_FUTEX_H
 #define _ASM_FUTEX_H
 
 #ifdef __KERNEL__
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <linaos/futex.h>
+#include <linaos/uaccess.h>
 #include <asm/asm-eva.h>
 #include <asm/barrier.h>
 #include <asm/compiler.h>

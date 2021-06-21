@@ -5,16 +5,16 @@
  * Copyright (C) 2006,2008 David Brownell
  * Copyright (C) 2017 Linus Walleij
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/spi_gpio.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/spi_bitbang.h>
+#include <linaos/spi/spi_gpio.h>
 
 
 /*

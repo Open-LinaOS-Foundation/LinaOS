@@ -7,17 +7,17 @@
 #include "gateway_common.h"
 #include "main.h"
 
-#include <linux/atomic.h>
-#include <linux/byteorder/generic.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/math64.h>
-#include <linux/netdevice.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <uapi/linux/batadv_packet.h>
-#include <uapi/linux/batman_adv.h>
+#include <linaos/atomic.h>
+#include <linaos/byteorder/generic.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
+#include <linaos/math64.h>
+#include <linaos/netdevice.h>
+#include <linaos/stddef.h>
+#include <linaos/string.h>
+#include <uapi/linaos/batadv_packet.h>
+#include <uapi/linaos/batman_adv.h>
 
 #include "gateway_client.h"
 #include "log.h"

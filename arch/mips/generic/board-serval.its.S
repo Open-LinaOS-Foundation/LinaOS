@@ -15,7 +15,7 @@
 
 	configurations {
 		pcb105 {
-			description = "Serval Linux kernel";
+			description = "Serval LinaOS kernel";
 			kernel = "kernel";
 			fdt = "fdt-serval_pcb105";
 			ramdisk = "ramdisk";

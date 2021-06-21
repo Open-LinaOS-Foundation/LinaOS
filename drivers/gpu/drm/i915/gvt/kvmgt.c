@@ -28,23 +28,23 @@
  *    Xiaoguang Chen <xiaoguang.chen@intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/sched/mm.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
-#include <linux/uuid.h>
-#include <linux/kvm_host.h>
-#include <linux/vfio.h>
-#include <linux/mdev.h>
-#include <linux/debugfs.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/mm.h>
+#include <linaos/kthread.h>
+#include <linaos/sched/mm.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
+#include <linaos/spinlock.h>
+#include <linaos/eventfd.h>
+#include <linaos/uuid.h>
+#include <linaos/kvm_host.h>
+#include <linaos/vfio.h>
+#include <linaos/mdev.h>
+#include <linaos/debugfs.h>
 
-#include <linux/nospec.h>
+#include <linaos/nospec.h>
 
 #include "i915_drv.h"
 #include "gvt.h"

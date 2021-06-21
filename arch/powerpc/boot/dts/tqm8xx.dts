@@ -114,7 +114,7 @@
 			interrupts = <3 1>;
 			interrupt-parent = <&PIC>;
 			phy-handle = <&PHY>;
-			linux,network-index = <1>;
+			linaos,network-index = <1>;
 		};
 
 		PIC: pic@0 {
@@ -184,7 +184,7 @@
 				interrupts = <30>;
 				interrupt-parent = <&CPM_PIC>;
 				fsl,cpm-command = <0000>;
-				linux,network-index = <0>;
+				linaos,network-index = <0>;
 				fixed-link = <0 0 10 0 0>;
 			};
 		};

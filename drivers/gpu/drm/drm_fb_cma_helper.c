@@ -15,7 +15,7 @@
 #include <drm/drm_gem_cma_helper.h>
 #include <drm/drm_gem_framebuffer_helper.h>
 #include <drm/drm_plane.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 /**
  * DOC: framebuffer cma helper functions

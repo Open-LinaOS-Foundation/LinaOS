@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/wait.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/pm_qos.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/wait.h>
+#include <linaos/cpu.h>
+#include <linaos/cpufreq.h>
 
 #include <asm/prom.h>
 

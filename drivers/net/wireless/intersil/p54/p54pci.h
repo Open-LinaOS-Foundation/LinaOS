@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 #ifndef P54PCI_H
 #define P54PCI_H
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 /*
  * Defines for PCI based mac80211 Prism54 driver

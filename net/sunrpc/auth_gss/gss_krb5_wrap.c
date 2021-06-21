@@ -29,11 +29,11 @@
  */
 
 #include <crypto/skcipher.h>
-#include <linux/types.h>
-#include <linux/jiffies.h>
-#include <linux/sunrpc/gss_krb5.h>
-#include <linux/random.h>
-#include <linux/pagemap.h>
+#include <linaos/types.h>
+#include <linaos/jiffies.h>
+#include <linaos/sunrpc/gss_krb5.h>
+#include <linaos/random.h>
+#include <linaos/pagemap.h>
 
 #if IS_ENABLED(CONFIG_SUNRPC_DEBUG)
 # define RPCDBG_FACILITY	RPCDBG_AUTH

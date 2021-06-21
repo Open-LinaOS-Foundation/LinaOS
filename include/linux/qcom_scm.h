@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2010-2015, 2018-2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010-2015, 2018-2019 The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2015 Linaro Ltd.
  */
 #ifndef __QCOM_SCM_H
 #define __QCOM_SCM_H
 
-#include <linux/err.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
+#include <linaos/err.h>
+#include <linaos/types.h>
+#include <linaos/cpumask.h>
 
 #define QCOM_SCM_VERSION(major, minor)	(((major) << 16) | ((minor) & 0xFF))
 #define QCOM_SCM_CPU_PWR_DOWN_L2_ON	0x0
@@ -111,7 +111,7 @@ extern int qcom_scm_hdcp_req(struct qcom_scm_hdcp_req *req, u32 req_cnt,
 extern int qcom_scm_qsmmu500_wait_safe_toggle(bool en);
 #else
 
-#include <linux/errno.h>
+#include <linaos/errno.h>
 
 static inline bool qcom_scm_is_available(void) { return false; }
 

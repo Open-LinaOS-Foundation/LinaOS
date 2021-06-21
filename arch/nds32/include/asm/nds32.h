@@ -8,7 +8,7 @@
 #include <asm/cachectl.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/init.h>
+#include <linaos/init.h>
 #include <asm/barrier.h>
 #include <nds32_intrinsic.h>
 

@@ -1,5 +1,5 @@
-#include <linux/module.h>
-#include <linux/glob.h>
+#include <linaos/module.h>
+#include <linaos/glob.h>
 
 /*
  * The only reason this code can be compiled as a module is because the

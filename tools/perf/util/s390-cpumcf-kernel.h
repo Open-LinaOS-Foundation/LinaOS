@@ -3,8 +3,8 @@
  * Support for s390 CPU measurement counter set diagnostic facility
  *
  * Copyright IBM Corp. 2019
-   Author(s): Hendrik Brueckner <brueckner@linux.ibm.com>
- *		Thomas Richter <tmricht@linux.ibm.com>
+   Author(s): Hendrik Brueckner <brueckner@linaos.ibm.com>
+ *		Thomas Richter <tmricht@linaos.ibm.com>
  */
 #ifndef S390_CPUMCF_KERNEL_H
 #define S390_CPUMCF_KERNEL_H

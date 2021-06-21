@@ -5,17 +5,17 @@
  * Authors:	Jamal Hadi Salim (2005-8)
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
+#include <linaos/skbuff.h>
+#include <linaos/rtnetlink.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
 
-#include <linux/tc_act/tc_defact.h>
+#include <linaos/tc_act/tc_defact.h>
 #include <net/tc_act/tc_defact.h>
 
 static unsigned int simp_net_id;

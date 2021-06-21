@@ -21,7 +21,7 @@ Required properties:
 - gpmc,access-ns:	Start cycle to first data capture (read access)
 - gpmc,rd-cycle-ns:	Total read cycle time
 - gpmc,wr-cycle-ns:	Total write cycle time
-- linux,mtd-name:	Documentation/devicetree/bindings/mtd/mtd-physmap.txt
+- linaos,mtd-name:	Documentation/devicetree/bindings/mtd/mtd-physmap.txt
 - reg:			Chip-select, base address (relative to chip-select)
 			and size of NOR flash. Note that base address will be
 			typically 0 as this is the start of the chip-select.
@@ -50,7 +50,7 @@ gpmc: gpmc@6e000000 {
 
 	nor@0,0 {
 		compatible = "cfi-flash";
-		linux,mtd-name= "intel,pf48f6000m0y1be";
+		linaos,mtd-name= "intel,pf48f6000m0y1be";
 		#address-cells = <1>;
 		#size-cells = <1>;
 		reg = <0 0 0x08000000>;

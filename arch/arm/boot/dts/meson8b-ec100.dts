@@ -40,21 +40,21 @@
 
 		pal-switch {
 			label = "pal";
-			linux,input-type = <EV_SW>;
-			linux,code = <KEY_SWITCHVIDEOMODE>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <KEY_SWITCHVIDEOMODE>;
 			gpios = <&gpio GPIOH_7 GPIO_ACTIVE_LOW>;
 		};
 
 		ntsc-switch {
 			label = "ntsc";
-			linux,input-type = <EV_SW>;
-			linux,code = <KEY_SWITCHVIDEOMODE>;
+			linaos,input-type = <EV_SW>;
+			linaos,code = <KEY_SWITCHVIDEOMODE>;
 			gpios = <&gpio GPIOH_8 GPIO_ACTIVE_HIGH>;
 		};
 
 		power-button {
 			label = "power";
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			gpios = <&gpio GPIOH_9 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -344,7 +344,7 @@
 };
 
 &gpio_ao {
-	gpio-line-names = "Linux_TX", "Linux_RX",
+	gpio-line-names = "LinaOS_TX", "LinaOS_RX",
 			  "SLP_S5_N", "USB2_OC_FLAG#",
 			  "HUB_RST", "USB_PWR_EN",
 			  "I2S_IN", "SLP_S1_N",

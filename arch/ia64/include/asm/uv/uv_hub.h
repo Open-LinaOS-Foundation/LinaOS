@@ -11,8 +11,8 @@
 #ifndef __ASM_IA64_UV_HUB_H__
 #define __ASM_IA64_UV_HUB_H__
 
-#include <linux/numa.h>
-#include <linux/percpu.h>
+#include <linaos/numa.h>
+#include <linaos/percpu.h>
 #include <asm/types.h>
 #include <asm/percpu.h>
 
@@ -263,7 +263,7 @@ static inline int uv_cpu_to_blade_id(int cpu)
 	return 0;
 }
 
-/* Convert linux node number to the UV blade number */
+/* Convert linaos node number to the UV blade number */
 static inline int uv_node_to_blade_id(int nid)
 {
 	return 0;
@@ -293,7 +293,7 @@ static inline int uv_cpu_to_pnode(int cpu)
 	return 0;
 }
 
-/* Convert a linux node number to the PNODE of the blade */
+/* Convert a linaos node number to the PNODE of the blade */
 static inline int uv_node_to_pnode(int nid)
 {
 	return 0;

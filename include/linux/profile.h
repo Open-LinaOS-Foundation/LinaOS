@@ -2,10 +2,10 @@
 #ifndef _LINUX_PROFILE_H
 #define _LINUX_PROFILE_H
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cpumask.h>
-#include <linux/cache.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/cpumask.h>
+#include <linaos/cache.h>
 
 #include <asm/errno.h>
 

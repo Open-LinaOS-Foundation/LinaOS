@@ -6,7 +6,7 @@
  */
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 static struct rc_map_table t2hybrid[] = {
 	{ 0x4d, KEY_POWER2 },

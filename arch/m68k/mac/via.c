@@ -19,18 +19,18 @@
  *     http://www.6502.org/documents/datasheets/synertek/synertek_sy6522_programming_reference.pdf
  *
  * PRAM/RTC access algorithms are from the NetBSD RTC toolkit version 1.08b
- * by Erik Vogan and adapted to Linux by Joshua M. Thompson (funaho@jurai.org)
+ * by Erik Vogan and adapted to LinaOS by Joshua M. Thompson (funaho@jurai.org)
  *
  */
 
-#include <linux/clocksource.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/irq.h>
+#include <linaos/clocksource.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/irq.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>
@@ -86,8 +86,8 @@ static int gIER,gIFR,gBufA,gBufB;
  * handler registered. Drivers must therefore disable a slot interrupt at the
  * device before they call free_irq (like shared and autovector interrupts).
  *
- * There is also a related problem when MacOS is used to boot Linux. A network
- * card brought up by a MacOS driver may raise an interrupt while Linux boots.
+ * There is also a related problem when MacOS is used to boot LinaOS. A network
+ * card brought up by a MacOS driver may raise an interrupt while LinaOS boots.
  * This can be fatal since it can't be handled until the right driver loads
  * (if such a driver exists at all). Apparently related to this hardware
  * limitation, "Designing Cards and Drivers", p. 9-8, says that a slot
@@ -315,7 +315,7 @@ static void __init via_nubus_init(void)
 			via2[vDirB] |= 0x02;
 
 		/* this seems to be an ADB bit on PMU machines */
-		/* according to MkLinux.  -- jmt               */
+		/* according to MkLinaOS.  -- jmt               */
 		via2[gBufB] |= 0x02;
 	}
 

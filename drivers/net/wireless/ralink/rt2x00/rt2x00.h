@@ -15,19 +15,19 @@
 #ifndef RT2X00_H
 #define RT2X00_H
 
-#include <linux/bitops.h>
-#include <linux/interrupt.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/firmware.h>
-#include <linux/leds.h>
-#include <linux/mutex.h>
-#include <linux/etherdevice.h>
-#include <linux/kfifo.h>
-#include <linux/hrtimer.h>
-#include <linux/average.h>
-#include <linux/usb.h>
-#include <linux/clk.h>
+#include <linaos/bitops.h>
+#include <linaos/interrupt.h>
+#include <linaos/skbuff.h>
+#include <linaos/workqueue.h>
+#include <linaos/firmware.h>
+#include <linaos/leds.h>
+#include <linaos/mutex.h>
+#include <linaos/etherdevice.h>
+#include <linaos/kfifo.h>
+#include <linaos/hrtimer.h>
+#include <linaos/average.h>
+#include <linaos/usb.h>
+#include <linaos/clk.h>
 
 #include <net/mac80211.h>
 

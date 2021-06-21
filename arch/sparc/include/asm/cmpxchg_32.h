@@ -2,8 +2,8 @@
 /* 32-bit atomic xchg() and cmpxchg() definitions.
  *
  * Copyright (C) 1996 David S. Miller (davem@davemloft.net)
- * Copyright (C) 2000 Anton Blanchard (anton@linuxcare.com.au)
- * Copyright (C) 2007 Kyle McMartin (kyle@parisc-linux.org)
+ * Copyright (C) 2000 Anton Blanchard (anton@linaoscare.com.au)
+ * Copyright (C) 2007 Kyle McMartin (kyle@parisc-linaos.org)
  *
  * Additions by Keith M Wesolowski (wesolows@foobazco.org) based
  * on asm-parisc/atomic.h Copyright (C) 2000 Philipp Rumpf <prumpf@tux.org>.

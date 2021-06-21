@@ -3,7 +3,7 @@
 // Copyright (C) 2019 Mohammad Rasim <mohammad.rasim96@gmail.com>
 
 #include <media/rc-map.h>
-#include <linux/module.h>
+#include <linaos/module.h>
 
 //
 // Keytable for the Videostrong KII Pro STB remote control

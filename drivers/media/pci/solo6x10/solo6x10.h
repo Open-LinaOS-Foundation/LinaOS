@@ -12,17 +12,17 @@
 #ifndef __SOLO6X10_H
 #define __SOLO6X10_H
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/stringify.h>
-#include <linux/io.h>
-#include <linux/atomic.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/gpio/driver.h>
+#include <linaos/pci.h>
+#include <linaos/i2c.h>
+#include <linaos/mutex.h>
+#include <linaos/list.h>
+#include <linaos/wait.h>
+#include <linaos/stringify.h>
+#include <linaos/io.h>
+#include <linaos/atomic.h>
+#include <linaos/slab.h>
+#include <linaos/videodev2.h>
+#include <linaos/gpio/driver.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>

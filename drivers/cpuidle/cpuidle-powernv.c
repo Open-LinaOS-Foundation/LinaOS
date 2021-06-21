@@ -5,16 +5,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/cpuidle.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/clockchips.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/moduleparam.h>
+#include <linaos/cpuidle.h>
+#include <linaos/cpu.h>
+#include <linaos/notifier.h>
+#include <linaos/clockchips.h>
+#include <linaos/of.h>
+#include <linaos/slab.h>
 
 #include <asm/machdep.h>
 #include <asm/firmware.h>

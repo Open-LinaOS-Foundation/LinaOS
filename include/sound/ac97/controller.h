@@ -6,8 +6,8 @@
 #ifndef AC97_CONTROLLER_H
 #define AC97_CONTROLLER_H
 
-#include <linux/device.h>
-#include <linux/list.h>
+#include <linaos/device.h>
+#include <linaos/list.h>
 
 #define AC97_BUS_MAX_CODECS 4
 #define AC97_SLOTS_AVAILABLE_ALL 0xf

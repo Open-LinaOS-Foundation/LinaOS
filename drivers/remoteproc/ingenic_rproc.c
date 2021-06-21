@@ -4,14 +4,14 @@
  * Copyright 2019, Paul Cercueil <paul@crapouillou.net>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/remoteproc.h>
 
 #include "remoteproc_internal.h"
 

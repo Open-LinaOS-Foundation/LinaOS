@@ -5,26 +5,26 @@
  * Copyright (C) 1998-2003 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
 
-#include <linux/dma-map-ops.h>
-#include <linux/dmar.h>
-#include <linux/efi.h>
-#include <linux/elf.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/mmzone.h>
-#include <linux/module.h>
-#include <linux/personality.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/proc_fs.h>
-#include <linux/bitops.h>
-#include <linux/kexec.h>
-#include <linux/swiotlb.h>
+#include <linaos/dma-map-ops.h>
+#include <linaos/dmar.h>
+#include <linaos/efi.h>
+#include <linaos/elf.h>
+#include <linaos/memblock.h>
+#include <linaos/mm.h>
+#include <linaos/sched/signal.h>
+#include <linaos/mmzone.h>
+#include <linaos/module.h>
+#include <linaos/personality.h>
+#include <linaos/reboot.h>
+#include <linaos/slab.h>
+#include <linaos/swap.h>
+#include <linaos/proc_fs.h>
+#include <linaos/bitops.h>
+#include <linaos/kexec.h>
+#include <linaos/swiotlb.h>
 
 #include <asm/dma.h>
 #include <asm/efi.h>
@@ -35,7 +35,7 @@
 #include <asm/sal.h>
 #include <asm/sections.h>
 #include <asm/tlb.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/mca.h>
 

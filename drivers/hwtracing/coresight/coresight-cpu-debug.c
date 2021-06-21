@@ -4,24 +4,24 @@
  *
  * Author: Leo Yan <leo.yan@linaro.org>
  */
-#include <linux/amba/bus.h>
-#include <linux/coresight.h>
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <linaos/amba/bus.h>
+#include <linaos/coresight.h>
+#include <linaos/cpu.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/pm_qos.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
+#include <linaos/types.h>
+#include <linaos/uaccess.h>
 
 #include "coresight-priv.h"
 

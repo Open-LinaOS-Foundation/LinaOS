@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  *
@@ -17,7 +17,7 @@
 #ifndef __ASM_ARC_SWAB_H
 #define __ASM_ARC_SWAB_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Native single cycle endian swap insn */
 #ifdef CONFIG_ARC_HAS_SWAPE

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
+#include <linaos/uaccess.h>
+#include <linaos/kernel.h>
 
 #ifdef CONFIG_X86_64
 static __always_inline u64 canonical_address(u64 vaddr, u8 vaddr_bits)

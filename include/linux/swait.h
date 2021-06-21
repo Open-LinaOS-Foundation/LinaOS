@@ -2,10 +2,10 @@
 #ifndef _LINUX_SWAIT_H
 #define _LINUX_SWAIT_H
 
-#include <linux/list.h>
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <linaos/list.h>
+#include <linaos/stddef.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
 #include <asm/current.h>
 
 /*

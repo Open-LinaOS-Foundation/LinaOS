@@ -7,7 +7,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the LinaOS kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -32,8 +32,8 @@
 #ifndef _XENBUS_XENBUS_H
 #define _XENBUS_XENBUS_H
 
-#include <linux/mutex.h>
-#include <linux/uio.h>
+#include <linaos/mutex.h>
+#include <linaos/uio.h>
 #include <xen/xenbus.h>
 
 #define XEN_BUS_ID_SIZE			20

@@ -8,11 +8,11 @@
  * Copyright (C) 2008 Embedded Alley Solutions, Inc All Rights Reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/iopoll.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/spinlock.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

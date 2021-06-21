@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 
 #include "util/dso.h"
 #include "util/debug.h"

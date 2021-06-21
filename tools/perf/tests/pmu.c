@@ -4,8 +4,8 @@
 #include "tests.h"
 #include <errno.h>
 #include <stdio.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
+#include <linaos/kernel.h>
+#include <linaos/limits.h>
 
 /* Simulated format definitions. */
 static struct test_format {

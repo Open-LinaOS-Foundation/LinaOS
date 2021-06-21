@@ -6,16 +6,16 @@
  * Author: Gustavo Pimentel <gustavo.pimentel@synopsys.com>
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/dmaengine.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/dma/edma.h>
-#include <linux/dma-mapping.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/dmaengine.h>
+#include <linaos/err.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/dma/edma.h>
+#include <linaos/dma-mapping.h>
 
 #include "dw-edma-core.h"
 #include "dw-edma-v0-core.h"

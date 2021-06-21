@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/linkage.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/syscore_ops.h>
-#include <linux/bitops.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pgtable.h>
+#include <linaos/linkage.h>
+#include <linaos/errno.h>
+#include <linaos/signal.h>
+#include <linaos/sched.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/timex.h>
+#include <linaos/random.h>
+#include <linaos/init.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/bitops.h>
+#include <linaos/acpi.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/pgtable.h>
 
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/timer.h>
 #include <asm/hw_irq.h>
 #include <asm/desc.h>
@@ -214,7 +214,7 @@ spurious_8259A_irq:
 		atomic_inc(&irq_err_count);
 		/*
 		 * Theoretically we do not have to handle this IRQ,
-		 * but in Linux this does not cause problems and is
+		 * but in LinaOS this does not cause problems and is
 		 * simpler for us.
 		 */
 		goto handle_real_irq;

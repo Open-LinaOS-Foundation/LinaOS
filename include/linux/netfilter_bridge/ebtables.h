@@ -13,9 +13,9 @@
 #ifndef __LINUX_BRIDGE_EFF_H
 #define __LINUX_BRIDGE_EFF_H
 
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <uapi/linux/netfilter_bridge/ebtables.h>
+#include <linaos/if.h>
+#include <linaos/if_ether.h>
+#include <uapi/linaos/netfilter_bridge/ebtables.h>
 
 struct ebt_match {
 	struct list_head list;

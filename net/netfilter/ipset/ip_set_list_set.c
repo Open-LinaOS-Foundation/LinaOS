@@ -3,14 +3,14 @@
 
 /* Kernel module implementing an IP set type: the list:set type */
 
-#include <linux/module.h>
-#include <linux/ip.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
+#include <linaos/module.h>
+#include <linaos/ip.h>
+#include <linaos/rculist.h>
+#include <linaos/skbuff.h>
+#include <linaos/errno.h>
 
-#include <linux/netfilter/ipset/ip_set.h>
-#include <linux/netfilter/ipset/ip_set_list.h>
+#include <linaos/netfilter/ipset/ip_set.h>
+#include <linaos/netfilter/ipset/ip_set_list.h>
 
 #define IPSET_TYPE_REV_MIN	0
 /*				1    Counters support added */

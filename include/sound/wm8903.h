@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm8903.h -- Platform data for WM8903
+ * linaos/sound/wm8903.h -- Platform data for WM8903
  *
  * Copyright 2010 Wolfson Microelectronics. PLC.
  */

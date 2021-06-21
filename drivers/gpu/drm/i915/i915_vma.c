@@ -22,7 +22,7 @@
  *
  */
 
-#include <linux/sched/mm.h>
+#include <linaos/sched/mm.h>
 #include <drm/drm_gem.h>
 
 #include "display/intel_frontbuffer.h"
@@ -55,7 +55,7 @@ void i915_vma_free(struct i915_vma *vma)
 
 #if IS_ENABLED(CONFIG_DRM_I915_ERRLOG_GEM) && IS_ENABLED(CONFIG_DRM_DEBUG_MM)
 
-#include <linux/stackdepot.h>
+#include <linaos/stackdepot.h>
 
 static void vma_print_allocator(struct i915_vma *vma, const char *reason)
 {

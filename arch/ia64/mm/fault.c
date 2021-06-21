@@ -5,16 +5,16 @@
  * Copyright (C) 1998-2002 Hewlett-Packard Co
  *	David Mosberger-Tang <davidm@hpl.hp.com>
  */
-#include <linux/sched/signal.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/extable.h>
-#include <linux/interrupt.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/prefetch.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
+#include <linaos/sched/signal.h>
+#include <linaos/kernel.h>
+#include <linaos/mm.h>
+#include <linaos/extable.h>
+#include <linaos/interrupt.h>
+#include <linaos/kprobes.h>
+#include <linaos/kdebug.h>
+#include <linaos/prefetch.h>
+#include <linaos/uaccess.h>
+#include <linaos/perf_event.h>
 
 #include <asm/processor.h>
 #include <asm/exception.h>
@@ -120,7 +120,7 @@ retry:
 
 #	if (((1 << VM_READ_BIT) != VM_READ || (1 << VM_WRITE_BIT) != VM_WRITE) \
 	    || (1 << VM_EXEC_BIT) != VM_EXEC)
-#		error File is out of sync with <linux/mm.h>.  Please update.
+#		error File is out of sync with <linaos/mm.h>.  Please update.
 #	endif
 
 	if (((isr >> IA64_ISR_R_BIT) & 1UL) && (!(vma->vm_flags & (VM_READ | VM_WRITE))))

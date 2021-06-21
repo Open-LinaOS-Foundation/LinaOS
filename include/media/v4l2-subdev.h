@@ -8,8 +8,8 @@
 #ifndef _V4L2_SUBDEV_H
 #define _V4L2_SUBDEV_H
 
-#include <linux/types.h>
-#include <linux/v4l2-subdev.h>
+#include <linaos/types.h>
+#include <linaos/v4l2-subdev.h>
 #include <media/media-entity.h>
 #include <media/v4l2-async.h>
 #include <media/v4l2-common.h>
@@ -156,7 +156,7 @@ struct v4l2_subdev_io_pin_config {
  *
  * @reset: generic reset command. The argument selects which subsystems to
  *	reset. Passing 0 will always reset the whole chip. Do not use for new
- *	drivers without discussing this first on the linux-media mailinglist.
+ *	drivers without discussing this first on the linaos-media mailinglist.
  *	There should be no reason normally to reset a device.
  *
  * @s_gpio: set GPIO pins. Very simple right now, might need to be extended with

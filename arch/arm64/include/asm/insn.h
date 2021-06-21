@@ -7,8 +7,8 @@
  */
 #ifndef	__ASM_INSN_H
 #define	__ASM_INSN_H
-#include <linux/build_bug.h>
-#include <linux/types.h>
+#include <linaos/build_bug.h>
+#include <linaos/types.h>
 
 #include <asm/alternative.h>
 

@@ -2,8 +2,8 @@
 #ifndef __LINUX_ATMEL_MCI_H
 #define __LINUX_ATMEL_MCI_H
 
-#include <linux/types.h>
-#include <linux/dmaengine.h>
+#include <linaos/types.h>
+#include <linaos/dmaengine.h>
 
 #define ATMCI_MAX_NR_SLOTS	2
 

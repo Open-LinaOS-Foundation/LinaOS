@@ -4,21 +4,21 @@
  *
  * Copyright 1993, 1994 Drew Eckhardt
  *      Visionary Computing 
- *      (Unix and Linux consulting and custom programming)
+ *      (Unix and LinaOS consulting and custom programming)
  *      drew@Colorado.EDU
  *      +1 (303) 786-7975
  *
  * For more information, please consult the SCSI-CAM draft.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/genhd.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/msdos_partition.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/genhd.h>
+#include <linaos/kernel.h>
+#include <linaos/blkdev.h>
+#include <linaos/pagemap.h>
+#include <linaos/msdos_partition.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsicam.h>

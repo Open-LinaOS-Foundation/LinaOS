@@ -8,7 +8,7 @@
 
 #include <uapi/scsi/fc/fc_fs.h>
 #include <uapi/scsi/fc/fc_els.h>
-#include <linux/nvme-fc-driver.h>
+#include <linaos/nvme-fc-driver.h>
 
 #include "qla_def.h"
 #include "qla_dsd.h"

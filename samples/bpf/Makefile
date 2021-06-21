@@ -176,7 +176,7 @@ always-y += hbm_edt_kern.o
 always-y += xdpsock_kern.o
 
 ifeq ($(ARCH), arm)
-# Strip all except -D__LINUX_ARM_ARCH__ option needed to handle linux
+# Strip all except -D__LINUX_ARM_ARCH__ option needed to handle linaos
 # headers when arm instruction set identification is requested.
 ARM_ARCH_SELECTOR := $(filter -D__LINUX_ARM_ARCH__%, $(KBUILD_CFLAGS))
 BPF_EXTRA_CFLAGS := $(ARM_ARCH_SELECTOR)
@@ -231,7 +231,7 @@ endif
 
 # Don't evaluate probes and warnings if we need to run make recursively
 ifneq ($(src),)
-HDR_PROBE := $(shell printf "\#include <linux/types.h>\n struct list_head { int a; }; int main() { return 0; }" | \
+HDR_PROBE := $(shell printf "\#include <linaos/types.h>\n struct list_head { int a; }; int main() { return 0; }" | \
 	$(CC) $(TPROGS_CFLAGS) $(TPROGS_LDFLAGS) -x c - \
 	-o /dev/null 2>/dev/null && echo okay)
 
@@ -330,7 +330,7 @@ $(obj)/%.o: $(src)/%.c
 		-Wno-unknown-warning-option $(CLANG_ARCH_ARGS) \
 		-I$(srctree)/samples/bpf/ -include asm_goto_workaround.h \
 		-O2 -emit-llvm -Xclang -disable-llvm-passes -c $< -o - | \
-		$(OPT) -O2 -mtriple=bpf-pc-linux | $(LLVM_DIS) | \
+		$(OPT) -O2 -mtriple=bpf-pc-linaos | $(LLVM_DIS) | \
 		$(LLC) -march=bpf $(LLC_FLAGS) -filetype=obj -o $@
 ifeq ($(DWARF2BTF),y)
 	$(BTF_PAHOLE) -J $@

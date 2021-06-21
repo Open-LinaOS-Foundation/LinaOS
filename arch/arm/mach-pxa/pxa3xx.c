@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/pxa3xx.c
+ * linaos/arch/arm/mach-pxa/pxa3xx.c
  *
  * code specific to pxa3xx aka Monahans
  *
@@ -9,28 +9,28 @@
  * 2007-09-02: eric miao <eric.miao@marvell.com>
  *             initial version
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/gpio-pxa.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/mmp_dma.h>
+#include <linaos/dmaengine.h>
+#include <linaos/dma/pxa-dma.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/gpio-pxa.h>
+#include <linaos/pm.h>
+#include <linaos/platform_device.h>
+#include <linaos/irq.h>
+#include <linaos/irqchip.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/platform_data/mmp_dma.h>
 
 #include <asm/mach/map.h>
 #include <asm/suspend.h>
 #include <mach/hardware.h>
 #include <mach/pxa3xx-regs.h>
 #include <mach/reset.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
+#include <linaos/platform_data/usb-ohci-pxa27x.h>
 #include "pm.h"
 #include <mach/dma.h>
 #include <mach/smemc.h>

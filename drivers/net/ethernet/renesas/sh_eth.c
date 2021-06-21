@@ -8,29 +8,29 @@
  *  Copyright (C) 2014 Codethink Limited
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mdio-bitbang.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/cache.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/sh_eth.h>
-#include <linux/of_mdio.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/mdio-bitbang.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
+#include <linaos/of_net.h>
+#include <linaos/phy.h>
+#include <linaos/cache.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/slab.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_vlan.h>
+#include <linaos/sh_eth.h>
+#include <linaos/of_mdio.h>
 
 #include "sh_eth.h"
 

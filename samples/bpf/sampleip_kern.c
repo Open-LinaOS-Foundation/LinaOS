@@ -4,9 +4,9 @@
  * modify it under the terms of version 2 of the GNU General Public
  * License as published by the Free Software Foundation.
  */
-#include <linux/ptrace.h>
-#include <uapi/linux/bpf.h>
-#include <uapi/linux/bpf_perf_event.h>
+#include <linaos/ptrace.h>
+#include <uapi/linaos/bpf.h>
+#include <uapi/linaos/bpf_perf_event.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 

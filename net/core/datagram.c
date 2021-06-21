@@ -34,27 +34,27 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/uaccess.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/poll.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/uaccess.h>
+#include <linaos/mm.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/sched.h>
+#include <linaos/inet.h>
+#include <linaos/netdevice.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/poll.h>
+#include <linaos/highmem.h>
+#include <linaos/spinlock.h>
+#include <linaos/slab.h>
+#include <linaos/pagemap.h>
+#include <linaos/uio.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <linaos/skbuff.h>
 
 #include <net/checksum.h>
 #include <net/sock.h>

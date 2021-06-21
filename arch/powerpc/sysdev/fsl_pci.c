@@ -13,20 +13,20 @@
  * 	Tony Li <tony.li@freescale.com>
  * 	Anton Vorontsov <avorontsov@ru.mvista.com>
  */
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/fsl/edac.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/log2.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/uaccess.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/delay.h>
+#include <linaos/string.h>
+#include <linaos/fsl/edac.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/memblock.h>
+#include <linaos/log2.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/uaccess.h>
 
 #include <asm/io.h>
 #include <asm/prom.h>
@@ -186,7 +186,7 @@ static bool is_kdump(void)
 		return false;
 	}
 
-	return of_property_read_bool(node, "linux,usable-memory");
+	return of_property_read_bool(node, "linaos,usable-memory");
 }
 
 /* atmu setup for fsl pci/pcie controller */

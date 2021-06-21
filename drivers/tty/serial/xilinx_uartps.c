@@ -9,20 +9,20 @@
  * in the code.
  */
 
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/clk.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/iopoll.h>
+#include <linaos/platform_device.h>
+#include <linaos/serial.h>
+#include <linaos/console.h>
+#include <linaos/serial_core.h>
+#include <linaos/slab.h>
+#include <linaos/tty.h>
+#include <linaos/tty_flip.h>
+#include <linaos/clk.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/module.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/iopoll.h>
 
 #define CDNS_UART_TTY_NAME	"ttyPS"
 #define CDNS_UART_NAME		"xuartps"

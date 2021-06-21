@@ -182,13 +182,13 @@
 		status-red {
 			label = "duckbill:red:status";
 			gpios = <&gpio3 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			linaos,default-trigger = "default-on";
 		};
 
 		status-green {
 			label = "duckbill:green:status";
 			gpios = <&gpio3 20 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 	};
 };

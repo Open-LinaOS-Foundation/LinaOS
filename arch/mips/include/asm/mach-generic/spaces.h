@@ -10,7 +10,7 @@
 #ifndef _ASM_MACH_GENERIC_SPACES_H
 #define _ASM_MACH_GENERIC_SPACES_H
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #include <asm/mipsregs.h>
 

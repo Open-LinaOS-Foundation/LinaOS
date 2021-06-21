@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

@@ -18,12 +18,12 @@
 #define _LINUX_PTR_RING_H 1
 
 #ifdef __KERNEL__
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <linaos/spinlock.h>
+#include <linaos/cache.h>
+#include <linaos/types.h>
+#include <linaos/compiler.h>
+#include <linaos/slab.h>
+#include <linaos/mm.h>
 #include <asm/errno.h>
 #endif
 

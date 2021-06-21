@@ -4,28 +4,28 @@
  * Copyright (c) 2011-2014, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/aer.h>
-#include <linux/async.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/once.h>
-#include <linux/pci.h>
-#include <linux/suspend.h>
-#include <linux/t10-pi.h>
-#include <linux/types.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <linux/sed-opal.h>
-#include <linux/pci-p2pdma.h>
+#include <linaos/acpi.h>
+#include <linaos/aer.h>
+#include <linaos/async.h>
+#include <linaos/blkdev.h>
+#include <linaos/blk-mq.h>
+#include <linaos/blk-mq-pci.h>
+#include <linaos/dmi.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/once.h>
+#include <linaos/pci.h>
+#include <linaos/suspend.h>
+#include <linaos/t10-pi.h>
+#include <linaos/types.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/io-64-nonatomic-hi-lo.h>
+#include <linaos/sed-opal.h>
+#include <linaos/pci-p2pdma.h>
 
 #include "trace.h"
 #include "nvme.h"
@@ -3327,7 +3327,7 @@ static void __exit nvme_exit(void)
 	flush_workqueue(nvme_wq);
 }
 
-MODULE_AUTHOR("Matthew Wilcox <willy@linux.intel.com>");
+MODULE_AUTHOR("Matthew Wilcox <willy@linaos.intel.com>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("1.0");
 module_init(nvme_init);

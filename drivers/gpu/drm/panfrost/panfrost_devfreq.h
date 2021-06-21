@@ -4,9 +4,9 @@
 #ifndef __PANFROST_DEVFREQ_H__
 #define __PANFROST_DEVFREQ_H__
 
-#include <linux/devfreq.h>
-#include <linux/spinlock.h>
-#include <linux/ktime.h>
+#include <linaos/devfreq.h>
+#include <linaos/spinlock.h>
+#include <linaos/ktime.h>
 
 struct devfreq;
 struct thermal_cooling_device;

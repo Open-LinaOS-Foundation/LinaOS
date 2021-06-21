@@ -4,14 +4,14 @@
  * Copyright (C) 2003 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/compat.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/of_device.h>
+#include <linaos/compat.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/fb.h>
+#include <linaos/mm.h>
+#include <linaos/uaccess.h>
+#include <linaos/of_device.h>
 
 #include <asm/fbio.h>
 

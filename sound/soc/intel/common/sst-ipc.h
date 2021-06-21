@@ -8,12 +8,12 @@
 #ifndef __SST_GENERIC_IPC_H
 #define __SST_GENERIC_IPC_H
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/wait.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/sched.h>
 
 struct sst_ipc_message {
 	u64 header;

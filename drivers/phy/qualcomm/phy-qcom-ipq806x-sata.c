@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/time.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/time.h>
+#include <linaos/delay.h>
+#include <linaos/clk.h>
+#include <linaos/slab.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy/phy.h>
 
 struct qcom_ipq806x_sata_phy {
 	void __iomem *mmio;

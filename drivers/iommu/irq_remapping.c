@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/cpumask.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/msi.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/irqdomain.h>
+#include <linaos/cpumask.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/msi.h>
+#include <linaos/irq.h>
+#include <linaos/pci.h>
+#include <linaos/irqdomain.h>
 
 #include <asm/hw_irq.h>
 #include <asm/irq_remapping.h>

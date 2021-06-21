@@ -12,24 +12,24 @@
 
 /* Simple VFS hooks based on: */
 /*
- * Resizable simple ram filesystem for Linux.
+ * Resizable simple ram filesystem for LinaOS.
  *
  * Copyright (C) 2000 Linus Torvalds.
  *               2000 Transmeta Corp.
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/poll.h>
+#include <linaos/module.h>
+#include <linaos/fs.h>
+#include <linaos/pagemap.h>
+#include <linaos/types.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/init.h>
+#include <linaos/string.h>
+#include <linaos/backing-dev.h>
+#include <linaos/poll.h>
 
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 
 #include "../stackglue.h"
 #include "userdlm.h"
@@ -54,7 +54,7 @@ struct workqueue_struct *user_dlm_worker;
  *
  * Over time, dlmfs has added some features that were not part of the
  * initial ABI.  Unfortunately, some of these features are not detectable
- * via standard usage.  For example, Linux's default poll always returns
+ * via standard usage.  For example, LinaOS's default poll always returns
  * EPOLLIN, so there is no way for a caller of poll(2) to know when dlmfs
  * added poll support.  Instead, we provide this list of new capabilities.
  *

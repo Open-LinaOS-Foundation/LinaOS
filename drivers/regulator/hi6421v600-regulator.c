@@ -8,13 +8,13 @@
 //
 // Guodong Xu <guodong.xu@linaro.org>
 
-#include <linux/delay.h>
-#include <linux/mfd/hi6421-spmi-pmic.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/spmi.h>
+#include <linaos/delay.h>
+#include <linaos/mfd/hi6421-spmi-pmic.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/driver.h>
+#include <linaos/spmi.h>
 
 struct hi6421_spmi_reg_info {
 	struct regulator_desc	desc;

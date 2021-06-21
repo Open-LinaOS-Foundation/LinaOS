@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dispc_coefs.c
+ * linaos/drivers/video/omap2/dss/dispc_coefs.c
  *
  * Copyright (C) 2011 Texas Instruments
  * Author: Chandrabhanu Mahapatra <cmahapatra@ti.com>
  */
 
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <video/omapfb_dss.h>
 
 #include "dispc.h"

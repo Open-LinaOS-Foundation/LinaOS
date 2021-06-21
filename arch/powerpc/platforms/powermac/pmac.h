@@ -2,8 +2,8 @@
 #ifndef __PMAC_H__
 #define __PMAC_H__
 
-#include <linux/pci.h>
-#include <linux/irq.h>
+#include <linaos/pci.h>
+#include <linaos/irq.h>
 
 /*
  * Declaration for the various functions exported by the

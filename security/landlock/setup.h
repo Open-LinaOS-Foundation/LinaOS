@@ -9,7 +9,7 @@
 #ifndef _SECURITY_LANDLOCK_SETUP_H
 #define _SECURITY_LANDLOCK_SETUP_H
 
-#include <linux/lsm_hooks.h>
+#include <linaos/lsm_hooks.h>
 
 extern bool landlock_initialized;
 

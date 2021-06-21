@@ -3,13 +3,13 @@
  * ISA bus.
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/isa.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/isa.h>
 
 static struct device isa_bus = {
 	.init_name	= "isa"

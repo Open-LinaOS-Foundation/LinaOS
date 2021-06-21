@@ -6,15 +6,15 @@
  * Copyright 2019 Google LLC
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_data/cros_ec_sensorhub.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
+#include <linaos/platform_data/cros_ec_commands.h>
+#include <linaos/platform_data/cros_ec_proto.h>
+#include <linaos/platform_data/cros_ec_sensorhub.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 
 #define DRV_NAME		"cros-ec-sensorhub"
 

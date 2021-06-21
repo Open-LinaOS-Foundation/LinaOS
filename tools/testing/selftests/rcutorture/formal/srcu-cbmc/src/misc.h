@@ -5,7 +5,7 @@
 #include "int_typedefs.h"
 #include "locks.h"
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* Probably won't need to deal with bottom halves. */
 static inline void local_bh_disable(void) {}

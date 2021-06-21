@@ -9,14 +9,14 @@
 #undef pr_fmt
 #define pr_fmt(fmt) KBUILD_MODNAME " L" __stringify(__LINE__) ": " fmt
 
-#include <uapi/linux/limits.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/stat.h>
-#include <linux/genhd.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/device.h>
+#include <uapi/linaos/limits.h>
+#include <linaos/kobject.h>
+#include <linaos/sysfs.h>
+#include <linaos/stat.h>
+#include <linaos/genhd.h>
+#include <linaos/list.h>
+#include <linaos/moduleparam.h>
+#include <linaos/device.h>
 
 #include "rnbd-srv.h"
 

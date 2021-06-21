@@ -5,23 +5,23 @@
 //                    Cirrus Logic International Semiconductor Ltd.
 //
 
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/jiffies.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
+#include <linaos/clk.h>
+#include <linaos/completion.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/jiffies.h>
+#include <linaos/mod_devicetable.h>
+#include <linaos/module.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/regmap.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 
 #include "cs4234.h"
 

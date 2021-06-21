@@ -6,8 +6,8 @@
 #ifndef VC4_REGS_H
 #define VC4_REGS_H
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
+#include <linaos/bitfield.h>
+#include <linaos/bitops.h>
 
 #define VC4_MASK(high, low) ((u32)GENMASK(high, low))
 /* Using the GNU statement expression extension */

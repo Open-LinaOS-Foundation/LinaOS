@@ -12,8 +12,8 @@
 #ifndef __STMMAC_PLATFORM_DATA
 #define __STMMAC_PLATFORM_DATA
 
-#include <linux/platform_device.h>
-#include <linux/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/phy.h>
 
 #define MTL_MAX_RX_QUEUES	8
 #define MTL_MAX_TX_QUEUES	8

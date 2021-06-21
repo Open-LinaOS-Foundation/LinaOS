@@ -5,19 +5,19 @@
  *  Copyright (C) 2018	      Ayman Bagabas <ayman.bagabas@gmail.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/sysfs.h>
-#include <linux/wmi.h>
+#include <linaos/acpi.h>
+#include <linaos/debugfs.h>
+#include <linaos/delay.h>
+#include <linaos/dmi.h>
+#include <linaos/input.h>
+#include <linaos/input/sparse-keymap.h>
+#include <linaos/leds.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/platform_device.h>
+#include <linaos/power_supply.h>
+#include <linaos/sysfs.h>
+#include <linaos/wmi.h>
 #include <acpi/battery.h>
 
 /*

@@ -6,18 +6,18 @@
  *
  * Simple eMMC hardware reset provider
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/reboot.h>
+#include <linaos/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/reboot.h>
 
-#include <linux/mmc/host.h>
+#include <linaos/mmc/host.h>
 
 #include "pwrseq.h"
 

@@ -23,8 +23,8 @@
 #ifndef _MXL5XX_H_
 #define _MXL5XX_H_
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <linaos/types.h>
+#include <linaos/i2c.h>
 
 #include <media/dvb_frontend.h>
 

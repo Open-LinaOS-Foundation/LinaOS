@@ -10,12 +10,12 @@
 
 #undef DEBUG
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/percpu.h>
-#include <linux/types.h>
-#include <linux/kallsyms.h>
-#include <linux/pgtable.h>
+#include <linaos/interrupt.h>
+#include <linaos/irq.h>
+#include <linaos/percpu.h>
+#include <linaos/types.h>
+#include <linaos/kallsyms.h>
+#include <linaos/pgtable.h>
 
 #include <asm/io.h>
 #include <asm/machdep.h>

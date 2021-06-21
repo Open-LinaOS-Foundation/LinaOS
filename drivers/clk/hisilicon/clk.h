@@ -12,9 +12,9 @@
 #ifndef	__HISI_CLK_H
 #define	__HISI_CLK_H
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
+#include <linaos/clk-provider.h>
+#include <linaos/io.h>
+#include <linaos/spinlock.h>
 
 struct platform_device;
 

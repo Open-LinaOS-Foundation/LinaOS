@@ -35,13 +35,13 @@
 #ifndef REMOTEPROC_H
 #define REMOTEPROC_H
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/virtio.h>
-#include <linux/cdev.h>
-#include <linux/completion.h>
-#include <linux/idr.h>
-#include <linux/of.h>
+#include <linaos/types.h>
+#include <linaos/mutex.h>
+#include <linaos/virtio.h>
+#include <linaos/cdev.h>
+#include <linaos/completion.h>
+#include <linaos/idr.h>
+#include <linaos/of.h>
 
 /**
  * struct resource_table - firmware resource table header
@@ -288,7 +288,7 @@ struct fw_rsc_vdev_vring {
  * allocation is not yet supported).
  *
  * Note: unlike virtualization systems, the term 'host' here means
- * the Linux side which is running remoteproc to control the remote
+ * the LinaOS side which is running remoteproc to control the remote
  * processors. We use the name 'gfeatures' to comply with virtio's terms,
  * though there isn't really any virtualized guest OS here: it's the host
  * which is responsible for negotiating the final features.

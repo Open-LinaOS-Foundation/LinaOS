@@ -9,10 +9,10 @@
  *	Copyright (c) 2005  Maciej W. Rozycki
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/cpu-type.h>

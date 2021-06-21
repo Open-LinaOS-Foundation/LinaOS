@@ -4,7 +4,7 @@
  * Copyright 2017 Linaro Ltd.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <media/rc-map.h>
 
 static struct rc_map_table zx_irdec_table[] = {

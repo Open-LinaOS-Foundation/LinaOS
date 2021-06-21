@@ -4,11 +4,11 @@
  * Author: James Liao <jamesjj.liao@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/slab.h>
+#include <linaos/mfd/syscon.h>
 #include <dt-bindings/clock/mt8135-clk.h>
 
 #include "clk-mtk.h"

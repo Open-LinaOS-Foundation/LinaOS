@@ -2,7 +2,7 @@
 /*
  *    Copyright IBM Corp. 2016
  */
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 #include <asm/processor.h>
 #include <asm/facility.h>
 #include <asm/lowcore.h>
@@ -95,7 +95,7 @@ void print_missing_facilities(void)
 
 static void facility_mismatch(void)
 {
-	sclp_early_printk("The Linux kernel requires more recent processor hardware\n");
+	sclp_early_printk("The LinaOS kernel requires more recent processor hardware\n");
 	print_machine_type();
 	print_missing_facilities();
 	sclp_early_printk("See Principles of Operations for facility bits\n");

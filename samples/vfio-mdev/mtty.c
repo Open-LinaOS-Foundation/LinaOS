@@ -10,27 +10,27 @@
  * card.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/uuid.h>
-#include <linux/vfio.h>
-#include <linux/iommu.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/file.h>
-#include <linux/mdev.h>
-#include <linux/pci.h>
-#include <linux/serial.h>
-#include <uapi/linux/serial_reg.h>
-#include <linux/eventfd.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
+#include <linaos/slab.h>
+#include <linaos/cdev.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/uuid.h>
+#include <linaos/vfio.h>
+#include <linaos/iommu.h>
+#include <linaos/sysfs.h>
+#include <linaos/ctype.h>
+#include <linaos/file.h>
+#include <linaos/mdev.h>
+#include <linaos/pci.h>
+#include <linaos/serial.h>
+#include <uapi/linaos/serial_reg.h>
+#include <linaos/eventfd.h>
 /*
  * #defines
  */

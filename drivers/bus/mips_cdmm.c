@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/atomic.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
+#include <linaos/atomic.h>
+#include <linaos/err.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/io.h>
+#include <linaos/of_address.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/smp.h>
 #include <asm/cdmm.h>
 #include <asm/hazards.h>
 #include <asm/mipsregs.h>

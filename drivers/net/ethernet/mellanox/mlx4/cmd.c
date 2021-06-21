@@ -32,18 +32,18 @@
  * SOFTWARE.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/errno.h>
 
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/device.h>
-#include <linux/semaphore.h>
+#include <linaos/mlx4/cmd.h>
+#include <linaos/mlx4/device.h>
+#include <linaos/semaphore.h>
 #include <rdma/ib_smi.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
+#include <linaos/delay.h>
+#include <linaos/etherdevice.h>
 
 #include <asm/io.h>
 

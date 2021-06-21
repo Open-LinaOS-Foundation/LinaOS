@@ -4,7 +4,7 @@
  * Copyright © 2016 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
+#include <linaos/prime_numbers.h>
 
 #include "gt/intel_engine_pm.h"
 #include "gt/intel_gpu_commands.h"

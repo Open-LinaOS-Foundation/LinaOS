@@ -6,12 +6,12 @@
 #ifndef __USBIP_STUB_H
 #define __USBIP_STUB_H
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/usb.h>
-#include <linux/wait.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/usb.h>
+#include <linaos/wait.h>
 
 #define STUB_BUSID_OTHER 0
 #define STUB_BUSID_REMOV 1

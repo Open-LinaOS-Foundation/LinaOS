@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2012, Red Hat, Inc.  Rafael Aquini <aquini@redhat.com>
  */
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/balloon_compaction.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/balloon_compaction.h>
 
 static void balloon_page_enqueue_one(struct balloon_dev_info *b_dev_info,
 				     struct page *page)
@@ -238,7 +238,7 @@ int balloon_page_migrate(struct address_space *mapping,
 
 	/*
 	 * We can not easily support the no copy case here so ignore it as it
-	 * is unlikely to be used with balloon pages. See include/linux/hmm.h
+	 * is unlikely to be used with balloon pages. See include/linaos/hmm.h
 	 * for a user of the MIGRATE_SYNC_NO_COPY mode.
 	 */
 	if (mode == MIGRATE_SYNC_NO_COPY)

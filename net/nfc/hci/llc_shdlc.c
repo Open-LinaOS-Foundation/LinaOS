@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "shdlc: %s: " fmt, __func__
 
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/wait.h>
+#include <linaos/slab.h>
+#include <linaos/skbuff.h>
 
 #include "llc.h"
 

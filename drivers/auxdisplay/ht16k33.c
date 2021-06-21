@@ -7,18 +7,18 @@
  * Copyright: (C) 2016 Protonic Holland.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/fb.h>
-#include <linux/slab.h>
-#include <linux/backlight.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/workqueue.h>
-#include <linux/mm.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/i2c.h>
+#include <linaos/of.h>
+#include <linaos/fb.h>
+#include <linaos/slab.h>
+#include <linaos/backlight.h>
+#include <linaos/input.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/workqueue.h>
+#include <linaos/mm.h>
 
 /* Registers */
 #define REG_SYSTEM_SETUP		0x20
@@ -335,7 +335,7 @@ static int ht16k33_keypad_probe(struct i2c_client *client,
 	keypad->dev->open = ht16k33_keypad_start;
 	keypad->dev->close = ht16k33_keypad_stop;
 
-	if (!of_get_property(node, "linux,no-autorepeat", NULL))
+	if (!of_get_property(node, "linaos,no-autorepeat", NULL))
 		__set_bit(EV_REP, keypad->dev->evbit);
 
 	err = of_property_read_u32(node, "debounce-delay-ms",

@@ -6,15 +6,15 @@
 #ifndef __BCMGENET_H__
 #define __BCMGENET_H__
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/phy.h>
-#include <linux/dim.h>
-#include <linux/ethtool.h>
+#include <linaos/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/spinlock.h>
+#include <linaos/clk.h>
+#include <linaos/mii.h>
+#include <linaos/if_vlan.h>
+#include <linaos/phy.h>
+#include <linaos/dim.h>
+#include <linaos/ethtool.h>
 
 #include "../unimac.h"
 

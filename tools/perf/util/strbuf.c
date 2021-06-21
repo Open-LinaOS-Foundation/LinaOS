@@ -2,9 +2,9 @@
 #include "cache.h"
 #include "debug.h"
 #include "strbuf.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/zalloc.h>
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>

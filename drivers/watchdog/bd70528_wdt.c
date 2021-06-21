@@ -2,14 +2,14 @@
 // Copyright (C) 2018 ROHM Semiconductors
 // ROHM BD70528MWV watchdog driver
 
-#include <linux/bcd.h>
-#include <linux/kernel.h>
-#include <linux/mfd/rohm-bd70528.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <linaos/bcd.h>
+#include <linaos/kernel.h>
+#include <linaos/mfd/rohm-bd70528.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/watchdog.h>
 
 /*
  * Max time we can set is 1 hour, 59 minutes and 59 seconds

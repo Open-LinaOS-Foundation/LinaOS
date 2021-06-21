@@ -9,12 +9,12 @@
  * #defines from the assembly-language output.
  */
 
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/kbuild.h>
+#include <linaos/stddef.h>
+#include <linaos/sched.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/ptrace.h>
+#include <linaos/hardirq.h>
+#include <linaos/kbuild.h>
 #include <asm/irq.h>
 #include <asm/ptrace.h>
 

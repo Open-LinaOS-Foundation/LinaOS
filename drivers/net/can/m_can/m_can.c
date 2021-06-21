@@ -5,22 +5,22 @@
 // Copyright (C) 2018-19 Texas Instruments Incorporated - http://www.ti.com/
 
 /* Bosch M_CAN user manual can be obtained from:
- * https://github.com/linux-can/can-doc/tree/master/m_can
+ * https://github.com/linaos-can/can-doc/tree/master/m_can
  */
 
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/iopoll.h>
-#include <linux/can/dev.h>
-#include <linux/pinctrl/consumer.h>
+#include <linaos/bitfield.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/netdevice.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/iopoll.h>
+#include <linaos/can/dev.h>
+#include <linaos/pinctrl/consumer.h>
 
 #include "m_can.h"
 

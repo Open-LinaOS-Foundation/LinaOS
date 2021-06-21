@@ -1,5 +1,5 @@
 /*
-** atariints.h -- Atari Linux interrupt handling structs and prototypes
+** atariints.h -- Atari LinaOS interrupt handling structs and prototypes
 **
 ** Copyright 1994 by Björn Brauel
 **
@@ -205,4 +205,4 @@ static inline int atari_irq_pending( unsigned irq )
 unsigned int atari_register_vme_int(void);
 void atari_unregister_vme_int(unsigned int);
 
-#endif /* linux/atariints.h */
+#endif /* linaos/atariints.h */

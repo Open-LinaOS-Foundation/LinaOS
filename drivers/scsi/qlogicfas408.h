@@ -16,7 +16,7 @@
 #define QL_ENABLE_PARITY 1
 
 /* This will reset all devices when the driver is initialized (during bootup).
-   The other linux drivers don't do this, but the DOS drivers do, and after
+   The other linaos drivers don't do this, but the DOS drivers do, and after
    using DOS or some kind of crash or lockup this will bring things back
    without requiring a cold boot.  It does take some time to recover from a
    reset, so it is slower, and I have seen timeouts so that devices weren't

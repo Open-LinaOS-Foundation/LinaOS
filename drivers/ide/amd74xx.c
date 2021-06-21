@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * AMD 755/756/766/8111 and nVidia nForce/2/2s/3/3s/CK804/MCP04
- * IDE driver for Linux.
+ * IDE driver for LinaOS.
  *
  * Copyright (c) 2000-2002 Vojtech Pavlik
  * Copyright (c) 2007-2010 Bartlomiej Zolnierkiewicz
@@ -11,11 +11,11 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/ide.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/pci.h>
+#include <linaos/init.h>
+#include <linaos/ide.h>
 
 #define DRV_NAME "amd74xx"
 

@@ -8,10 +8,10 @@
 #undef GCC_VERSION
 #include <stdbool.h>
 #include <stdio.h>
-#include <linux/bpf.h>
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/hashtable.h>
+#include <linaos/bpf.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/hashtable.h>
 #include <tools/libc_compat.h>
 
 #include <bpf/libbpf.h>

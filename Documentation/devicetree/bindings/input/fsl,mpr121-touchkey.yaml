@@ -33,7 +33,7 @@ properties:
 
   vdd-supply: true
 
-  linux,keycodes:
+  linaos,keycodes:
     minItems: 1
     maxItems: 12
 
@@ -45,7 +45,7 @@ required:
   - compatible
   - reg
   - vdd-supply
-  - linux,keycodes
+  - linaos,keycodes
 
 unevaluatedProperties: false
 
@@ -64,7 +64,7 @@ examples:
             interrupts = <28 2>;
             autorepeat;
             vdd-supply = <&ldo4_reg>;
-            linux,keycodes = <KEY_0>, <KEY_1>, <KEY_2>, <KEY_3>,
+            linaos,keycodes = <KEY_0>, <KEY_1>, <KEY_2>, <KEY_3>,
                              <KEY_4>, <KEY_5>, <KEY_6>, <KEY_7>,
                              <KEY_8>, <KEY_9>, <KEY_A>, <KEY_B>;
         };
@@ -83,7 +83,7 @@ examples:
             poll-interval = <20>;
             autorepeat;
             vdd-supply = <&ldo4_reg>;
-            linux,keycodes = <KEY_0>, <KEY_1>, <KEY_2>, <KEY_3>,
+            linaos,keycodes = <KEY_0>, <KEY_1>, <KEY_2>, <KEY_3>,
                              <KEY_4>, <KEY_5>, <KEY_6>, <KEY_7>,
                              <KEY_8>, <KEY_9>, <KEY_A>, <KEY_B>;
         };

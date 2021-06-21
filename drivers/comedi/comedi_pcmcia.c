@@ -3,12 +3,12 @@
  * comedi_pcmcia.c
  * Comedi PCMCIA driver specific functions.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - LinaOS Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
 
 #include "comedi_pcmcia.h"
 

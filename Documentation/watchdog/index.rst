@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ======================
-Linux Watchdog Support
+LinaOS Watchdog Support
 ======================
 
 .. toctree::

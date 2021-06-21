@@ -5,14 +5,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/skbuff.h>
+#include <linaos/spinlock.h>
+#include <linaos/interrupt.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_limit.h>
+#include <linaos/netfilter/x_tables.h>
+#include <linaos/netfilter/xt_limit.h>
 
 struct xt_limit_priv {
 	spinlock_t lock;
@@ -27,7 +27,7 @@ MODULE_ALIAS("ipt_limit");
 MODULE_ALIAS("ip6t_limit");
 
 /* The algorithm used is the Simple Token Bucket Filter (TBF)
- * see net/sched/sch_tbf.c in the linux source tree
+ * see net/sched/sch_tbf.c in the linaos source tree
  */
 
 /* Rusty: This is my (non-mathematically-inclined) understanding of

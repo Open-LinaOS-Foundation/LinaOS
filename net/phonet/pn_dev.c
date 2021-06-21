@@ -10,13 +10,13 @@
  *          Rémi Denis-Courmont
  */
 
-#include <linux/kernel.h>
-#include <linux/net.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/phonet.h>
-#include <linux/proc_fs.h>
-#include <linux/if_arp.h>
+#include <linaos/kernel.h>
+#include <linaos/net.h>
+#include <linaos/slab.h>
+#include <linaos/netdevice.h>
+#include <linaos/phonet.h>
+#include <linaos/proc_fs.h>
+#include <linaos/if_arp.h>
 #include <net/sock.h>
 #include <net/netns/generic.h>
 #include <net/phonet/pn_dev.h>

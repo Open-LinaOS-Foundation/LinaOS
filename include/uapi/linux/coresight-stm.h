@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __UAPI_CORESIGHT_STM_H_
 #define __UAPI_CORESIGHT_STM_H_
 
-#include <linux/const.h>
+#include <linaos/const.h>
 
 #define STM_FLAG_TIMESTAMPED   _BITUL(3)
 #define STM_FLAG_MARKED        _BITUL(4)

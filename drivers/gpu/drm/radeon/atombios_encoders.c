@@ -24,9 +24,9 @@
  *          Alex Deucher
  */
 
-#include <linux/backlight.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
+#include <linaos/backlight.h>
+#include <linaos/dmi.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_file.h>

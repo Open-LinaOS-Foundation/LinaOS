@@ -11,7 +11,7 @@
 #define KMSG_COMPONENT "tape"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include "tape_class.h"
 

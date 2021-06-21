@@ -10,7 +10,7 @@
 #ifndef __ASM_ARM_ARCH_IO_H
 #define __ASM_ARM_ARCH_IO_H
 
-#include <linux/bitops.h>
+#include <linaos/bitops.h>
 
 #include <mach/hardware.h>
 

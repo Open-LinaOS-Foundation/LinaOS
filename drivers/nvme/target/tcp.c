@@ -4,15 +4,15 @@
  * Copyright (c) 2018 Lightbits Labs. All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/nvme-tcp.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/err.h>
+#include <linaos/nvme-tcp.h>
 #include <net/sock.h>
 #include <net/tcp.h>
-#include <linux/inet.h>
-#include <linux/llist.h>
+#include <linaos/inet.h>
+#include <linaos/llist.h>
 #include <crypto/hash.h>
 
 #include "nvmet.h"

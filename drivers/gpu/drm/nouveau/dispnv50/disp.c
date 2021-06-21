@@ -28,9 +28,9 @@
 #include "wndw.h"
 #include "handles.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/hdmi.h>
-#include <linux/component.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/hdmi.h>
+#include <linaos/component.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

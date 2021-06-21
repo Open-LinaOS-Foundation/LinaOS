@@ -6,7 +6,7 @@
 #ifndef __ASM_SWIOTLB_H
 #define __ASM_SWIOTLB_H
 
-#include <linux/swiotlb.h>
+#include <linaos/swiotlb.h>
 
 extern unsigned int ppc_swiotlb_enable;
 

@@ -11,13 +11,13 @@ Core functions
 .. kernel-doc:: drivers/of/base.c
    :export:
 
-.. kernel-doc:: include/linux/of.h
+.. kernel-doc:: include/linaos/of.h
    :internal:
 
 .. kernel-doc:: drivers/of/property.c
    :export:
 
-.. kernel-doc:: include/linux/of_graph.h
+.. kernel-doc:: include/linaos/of_graph.h
    :internal:
 
 .. kernel-doc:: drivers/of/address.c
@@ -32,13 +32,13 @@ Core functions
 Driver model functions
 ----------------------
 
-.. kernel-doc:: include/linux/of_device.h
+.. kernel-doc:: include/linaos/of_device.h
    :internal:
 
 .. kernel-doc:: drivers/of/device.c
    :export:
 
-.. kernel-doc:: include/linux/of_platform.h
+.. kernel-doc:: include/linaos/of_platform.h
    :internal:
 
 .. kernel-doc:: drivers/of/platform.c

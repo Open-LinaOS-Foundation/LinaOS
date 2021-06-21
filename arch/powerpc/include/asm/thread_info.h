@@ -36,7 +36,7 @@
 #define THREAD_ALIGN		(1 << THREAD_ALIGN_SHIFT)
 
 #ifndef __ASSEMBLY__
-#include <linux/cache.h>
+#include <linaos/cache.h>
 #include <asm/processor.h>
 #include <asm/accounting.h>
 

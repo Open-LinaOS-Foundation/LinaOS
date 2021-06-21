@@ -106,10 +106,10 @@ enum dvma_rev {
 
 #define DMA_HASCOUNT(rev)  ((rev)==dvmaesc1)
 
-/* Linux DMA information structure, filled during probe. */
-struct Linux_SBus_DMA {
-	struct Linux_SBus_DMA *next;
-	struct linux_sbus_device *SBus_dev;
+/* LinaOS DMA information structure, filled during probe. */
+struct LinaOS_SBus_DMA {
+	struct LinaOS_SBus_DMA *next;
+	struct linaos_sbus_device *SBus_dev;
 	struct sparc_dma_registers *regs;
 
 	/* Status, misc info */
@@ -126,7 +126,7 @@ struct Linux_SBus_DMA {
 	enum dvma_rev revision;
 };
 
-extern struct Linux_SBus_DMA *dma_chain;
+extern struct LinaOS_SBus_DMA *dma_chain;
 
 /* Broken hardware... */
 #define DMA_ISBROKEN(dma)    ((dma)->revision == dvmarev1)

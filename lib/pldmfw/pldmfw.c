@@ -2,15 +2,15 @@
 /* Copyright (C) 2018-2019, Intel Corporation. */
 
 #include <asm/unaligned.h>
-#include <linux/crc32.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pldmfw.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
+#include <linaos/crc32.h>
+#include <linaos/device.h>
+#include <linaos/firmware.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/pldmfw.h>
+#include <linaos/slab.h>
+#include <linaos/uuid.h>
 
 #include "pldmfw_private.h"
 
@@ -518,7 +518,7 @@ static int pldm_verify_header_crc(struct pldmfw_priv *data)
 	size_t length;
 
 	/* Calculate the 32-bit CRC of the header header contents up to but
-	 * not including the checksum. Note that the Linux crc32_le function
+	 * not including the checksum. Note that the LinaOS crc32_le function
 	 * does not perform an expected final XOR.
 	 */
 	length = data->offset - sizeof(data->header_crc);

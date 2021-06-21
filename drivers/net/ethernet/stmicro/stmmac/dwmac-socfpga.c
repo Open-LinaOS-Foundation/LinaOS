@@ -4,14 +4,14 @@
  * Adopted from dwmac-sti.c
  */
 
-#include <linux/mfd/altera-sysmgr.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_net.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/stmmac.h>
+#include <linaos/mfd/altera-sysmgr.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_net.h>
+#include <linaos/phy.h>
+#include <linaos/regmap.h>
+#include <linaos/reset.h>
+#include <linaos/stmmac.h>
 
 #include "stmmac.h"
 #include "stmmac_platform.h"

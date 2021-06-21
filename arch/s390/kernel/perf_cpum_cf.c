@@ -3,17 +3,17 @@
  * Performance event support for s390x - CPU-measurement Counter Facility
  *
  *  Copyright IBM Corp. 2012, 2019
- *  Author(s): Hendrik Brueckner <brueckner@linux.ibm.com>
+ *  Author(s): Hendrik Brueckner <brueckner@linaos.ibm.com>
  */
 #define KMSG_COMPONENT	"cpum_cf"
 #define pr_fmt(fmt)	KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/init.h>
-#include <linux/export.h>
+#include <linaos/kernel.h>
+#include <linaos/kernel_stat.h>
+#include <linaos/percpu.h>
+#include <linaos/notifier.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
 #include <asm/cpu_mcf.h>
 
 static enum cpumf_ctr_set get_counter_set(u64 event)
@@ -73,7 +73,7 @@ static int validate_ctr_version(const struct hw_perf_event *hwc)
 		 * is automatically enabled and activated on all CPUs with
 		 * multithreading (SMT).  Deactivation of multithreading
 		 * also disables the counter set.  State changes are ignored
-		 * by lcctl().	Because Linux controls SMT enablement through
+		 * by lcctl().	Because LinaOS controls SMT enablement through
 		 * a kernel parameter only, the counter set is either disabled
 		 * or enabled and active.
 		 *

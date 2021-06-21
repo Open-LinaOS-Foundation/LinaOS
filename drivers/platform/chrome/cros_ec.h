@@ -8,7 +8,7 @@
 #ifndef __CROS_EC_H
 #define __CROS_EC_H
 
-#include <linux/interrupt.h>
+#include <linaos/interrupt.h>
 
 int cros_ec_register(struct cros_ec_device *ec_dev);
 int cros_ec_unregister(struct cros_ec_device *ec_dev);

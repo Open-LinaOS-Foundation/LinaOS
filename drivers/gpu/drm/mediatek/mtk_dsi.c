@@ -3,14 +3,14 @@
  * Copyright (c) 2015 MediaTek Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/iopoll.h>
+#include <linaos/irq.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
+#include <linaos/phy/phy.h>
+#include <linaos/platform_device.h>
 
 #include <video/mipi_display.h>
 #include <video/videomode.h>

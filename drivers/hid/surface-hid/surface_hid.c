@@ -9,13 +9,13 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/hid.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/hid.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/device.h>
+#include <linaos/surface_aggregator/controller.h>
+#include <linaos/surface_aggregator/device.h>
 
 #include "surface_hid_core.h"
 

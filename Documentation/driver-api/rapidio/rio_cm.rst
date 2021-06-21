@@ -84,7 +84,7 @@ Following ioctl commands are available to user-space applications:
     to the remote peer.
 
 The ioctl command codes and corresponding data structures intended for use by
-user-space applications are defined in 'include/uapi/linux/rio_cm_cdev.h'.
+user-space applications are defined in 'include/uapi/linaos/rio_cm_cdev.h'.
 
 2. Hardware Compatibility
 =========================

@@ -9,12 +9,12 @@
  *			Ldd-Mlp <ldd-mlp@list.ti.com>
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/videodev2.h>
+#include <linaos/delay.h>
+#include <linaos/i2c.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
+#include <linaos/videodev2.h>
 #include <media/i2c/lm3646.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

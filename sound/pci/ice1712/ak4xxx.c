@@ -7,12 +7,12 @@
  *	Copyright (c) 2000 Jaroslav Kysela <perex@perex.cz>
  */      
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include "ice1712.h"

@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/lockdep.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <linaos/atomic.h>
+#include <linaos/bug.h>
+#include <linaos/interrupt.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/list.h>
+#include <linaos/lockdep.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/wait.h>
 
 #include <soc/qcom/rpmh.h>
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/atags_compat.c
+ *  linaos/arch/arm/kernel/atags_compat.c
  *
  *  Copyright (C) 2001 Russell King
  *
@@ -12,10 +12,10 @@
  *  the kernel for 5 years from now (2001). This will allow boot loaders
  *  to convert to the new struct tag way.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/init.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/init.h>
 
 #include <asm/setup.h>
 #include <asm/mach-types.h>

@@ -2,7 +2,7 @@
 Authorizing (or not) your USB devices to connect to the system
 ==============================================================
 
-Copyright (C) 2007 Inaky Perez-Gonzalez <inaky@linux.intel.com> Intel Corporation
+Copyright (C) 2007 Inaky Perez-Gonzalez <inaky@linaos.intel.com> Intel Corporation
 
 This feature allows you to control if a USB device can be used (or
 not) in a system. This feature will allow you to implement a lock-down

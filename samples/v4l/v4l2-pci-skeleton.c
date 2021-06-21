@@ -21,16 +21,16 @@
  * SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-dv-timings.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/kmod.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/interrupt.h>
+#include <linaos/videodev2.h>
+#include <linaos/v4l2-dv-timings.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>
 #include <media/v4l2-ioctl.h>

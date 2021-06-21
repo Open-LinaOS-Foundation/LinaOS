@@ -4,11 +4,11 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
+#include <linaos/compiler.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/sched/signal.h>
+#include <linaos/slab.h>
 
 #include "selftest.h"
 

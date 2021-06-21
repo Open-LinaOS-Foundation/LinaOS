@@ -7,11 +7,11 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/mfd/atmel-hlcdc.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <linaos/clk.h>
+#include <linaos/mfd/atmel-hlcdc.h>
+#include <linaos/pinctrl/consumer.h>
+#include <linaos/pm.h>
+#include <linaos/pm_runtime.h>
 
 #include <video/videomode.h>
 

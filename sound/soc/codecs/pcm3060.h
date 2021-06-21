@@ -8,8 +8,8 @@
 #ifndef _SND_SOC_PCM3060_H
 #define _SND_SOC_PCM3060_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 extern const struct regmap_config pcm3060_regmap;
 

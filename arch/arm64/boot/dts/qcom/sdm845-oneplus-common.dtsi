@@ -2,13 +2,13 @@
 /*
  * SDM845 OnePlus 6(T) (enchilada / fajita) common device tree source
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The LinaOS Foundation. All rights reserved.
  */
 
 /dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/linaos-event-codes.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
 
 #include "sdm845.dtsi"
@@ -32,14 +32,14 @@
 
 		vol-down {
 			label = "Volume down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			linaos,code = <KEY_VOLUMEDOWN>;
 			gpios = <&pm8998_gpio 5 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
 		};
 
 		vol-up {
 			label = "Volume up";
-			linux,code = <KEY_VOLUMEUP>;
+			linaos,code = <KEY_VOLUMEUP>;
 			gpios = <&pm8998_gpio 6 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
 		};

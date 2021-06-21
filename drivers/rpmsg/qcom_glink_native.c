@@ -3,22 +3,22 @@
  * Copyright (c) 2016-2017, Linaro Ltd
  */
 
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rpmsg.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/mailbox_client.h>
+#include <linaos/idr.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/list.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/platform_device.h>
+#include <linaos/regmap.h>
+#include <linaos/rpmsg.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
+#include <linaos/workqueue.h>
+#include <linaos/mailbox_client.h>
 
 #include "rpmsg_internal.h"
 #include "qcom_glink_native.h"
@@ -598,7 +598,7 @@ static void qcom_glink_receive_version_ack(struct qcom_glink *glink,
  * @channel:	The glink channel
  * @granted:	The request response to encode.
  *
- * Return: 0 on success or standard Linux error code.
+ * Return: 0 on success or standard LinaOS error code.
  */
 static int qcom_glink_send_intent_req_ack(struct qcom_glink *glink,
 					  struct glink_channel *channel,
@@ -622,7 +622,7 @@ static int qcom_glink_send_intent_req_ack(struct qcom_glink *glink,
  * @channel:	The local channel
  * @intent:	The intent to pass on to remote.
  *
- * Return: 0 on success or standard Linux error code.
+ * Return: 0 on success or standard LinaOS error code.
  */
 static int qcom_glink_advertise_intent(struct qcom_glink *glink,
 				       struct glink_channel *channel,

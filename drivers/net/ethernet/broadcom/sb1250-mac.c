@@ -10,25 +10,25 @@
  * by Maciej W. Rozycki.
  */
 
-#include <linux/bug.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/bitops.h>
-#include <linux/err.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/prefetch.h>
+#include <linaos/bug.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/errno.h>
+#include <linaos/ioport.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/bitops.h>
+#include <linaos/err.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/phy.h>
+#include <linaos/platform_device.h>
+#include <linaos/prefetch.h>
 
 #include <asm/cache.h>
 #include <asm/io.h>
@@ -219,9 +219,9 @@ struct sbmacdma {
 struct sbmac_softc {
 
 	/*
-	 * Linux-specific things
+	 * LinaOS-specific things
 	 */
-	struct net_device	*sbm_dev;	/* pointer to linux device */
+	struct net_device	*sbm_dev;	/* pointer to linaos device */
 	struct napi_struct	napi;
 	struct phy_device	*phy_dev;	/* the associated PHY device */
 	struct mii_bus		*mii_bus;	/* the MII bus */
@@ -908,7 +908,7 @@ static int sbdma_add_txbuffer(struct sbmacdma *d, struct sk_buff *sb)
 	}
 
 	/*
-	 * Under Linux, it's not necessary to copy/coalesce buffers
+	 * Under LinaOS, it's not necessary to copy/coalesce buffers
 	 * like it is on NetBSD.  We think they're all contiguous,
 	 * but that may not be true for GBE.
 	 */
@@ -2147,7 +2147,7 @@ static const struct net_device_ops sbmac_netdev_ops = {
 /**********************************************************************
  *  SBMAC_INIT(dev)
  *
- *  Attach routine - init hardware and hook ourselves into linux
+ *  Attach routine - init hardware and hook ourselves into linaos
  *
  *  Input parameters:
  *  	   dev - net_device structure
@@ -2195,7 +2195,7 @@ static int sbmac_init(struct platform_device *pldev, long long base)
 	sbmac_initctx(sc);
 
 	/*
-	 * Set up Linux device callins
+	 * Set up LinaOS device callins
 	 */
 
 	spin_lock_init(&(sc->sbm_lock));

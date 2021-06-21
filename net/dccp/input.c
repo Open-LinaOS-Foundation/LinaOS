@@ -6,9 +6,9 @@
  *  Arnaldo Carvalho de Melo <acme@conectiva.com.br>
  */
 
-#include <linux/dccp.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <linaos/dccp.h>
+#include <linaos/skbuff.h>
+#include <linaos/slab.h>
 
 #include <net/sock.h>
 

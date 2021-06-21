@@ -1,26 +1,26 @@
 /*
- * linux/arch/mips/txx9/pci.c
+ * linaos/arch/mips/txx9/pci.c
  *
- * Based on linux/arch/mips/txx9/rbtx4927/setup.c,
- *	    linux/arch/mips/txx9/rbtx4938/setup.c,
+ * Based on linaos/arch/mips/txx9/rbtx4927/setup.c,
+ *	    linaos/arch/mips/txx9/rbtx4938/setup.c,
  *	    and RBTX49xx patch from CELF patch archive.
  *
  * Copyright 2001-2005 MontaVista Software Inc.
- * Copyright (C) 1996, 97, 2001, 04  Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1996, 97, 2001, 04  Ralf Baechle (ralf@linaos-mips.org)
  * (C) Copyright TOSHIBA CORPORATION 2000-2001, 2004-2007
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
+#include <linaos/delay.h>
+#include <linaos/jiffies.h>
+#include <linaos/io.h>
 #include <asm/txx9/generic.h>
 #include <asm/txx9/pci.h>
 #ifdef CONFIG_TOSHIBA_FPCIB0
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/slab.h>
 #include <asm/i8259.h>
 #include <asm/txx9/smsc_fdc37m81x.h>
 #endif

@@ -3,29 +3,29 @@
 // Copyright (c) 2012 Samsung Electronics Co., Ltd
 //              http://www.samsung.com
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/samsung/core.h>
-#include <linux/mfd/samsung/irq.h>
-#include <linux/mfd/samsung/s2mpa01.h>
-#include <linux/mfd/samsung/s2mps11.h>
-#include <linux/mfd/samsung/s2mps13.h>
-#include <linux/mfd/samsung/s2mps14.h>
-#include <linux/mfd/samsung/s2mps15.h>
-#include <linux/mfd/samsung/s2mpu02.h>
-#include <linux/mfd/samsung/s5m8763.h>
-#include <linux/mfd/samsung/s5m8767.h>
-#include <linux/regmap.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/err.h>
+#include <linaos/slab.h>
+#include <linaos/i2c.h>
+#include <linaos/of.h>
+#include <linaos/of_irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/mutex.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/samsung/core.h>
+#include <linaos/mfd/samsung/irq.h>
+#include <linaos/mfd/samsung/s2mpa01.h>
+#include <linaos/mfd/samsung/s2mps11.h>
+#include <linaos/mfd/samsung/s2mps13.h>
+#include <linaos/mfd/samsung/s2mps14.h>
+#include <linaos/mfd/samsung/s2mps15.h>
+#include <linaos/mfd/samsung/s2mpu02.h>
+#include <linaos/mfd/samsung/s5m8763.h>
+#include <linaos/mfd/samsung/s5m8767.h>
+#include <linaos/regmap.h>
 
 static const struct mfd_cell s5m8751_devs[] = {
 	{ .name = "s5m8751-pmic", },
@@ -301,7 +301,7 @@ sec_pmic_i2c_parse_dt_pdata(struct device *dev)
 		return ERR_PTR(-ENOMEM);
 
 	/*
-	 * ToDo: the 'wakeup' member in the platform data is more of a linux
+	 * ToDo: the 'wakeup' member in the platform data is more of a linaos
 	 * specfic information. Hence, there is no binding for that yet and
 	 * not parsed here.
 	 */

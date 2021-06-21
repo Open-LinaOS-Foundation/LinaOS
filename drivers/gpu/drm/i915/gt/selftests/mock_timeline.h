@@ -7,7 +7,7 @@
 #ifndef __MOCK_TIMELINE__
 #define __MOCK_TIMELINE__
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct intel_timeline;
 

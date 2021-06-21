@@ -16,9 +16,9 @@
 #include <asm/imr.h>
 #include <asm/io.h>
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/mm.h>
+#include <linaos/types.h>
 
 #define SELFTEST KBUILD_MODNAME ": "
 /**

@@ -10,8 +10,8 @@
  *	Yinghai Lu <yinghai@kernel.org>
  *	Jiang Liu <jiang.liu@intel.com>
  */
-#include <linux/export.h>
-#include <linux/acpi.h>
+#include <linaos/export.h>
+#include <linaos/acpi.h>
 #include <acpi/processor.h>
 
 static struct acpi_table_madt *get_madt_table(void)

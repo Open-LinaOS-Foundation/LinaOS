@@ -64,7 +64,7 @@ Description:
 
 What:		/sys/bus/usb/drivers/.../new_id
 Date:		October 2011
-Contact:	linux-usb@vger.kernel.org
+Contact:	linaos-usb@vger.kernel.org
 Description:
 		Writing a device ID to this file will attempt to
 		dynamically add a new device ID to a USB device driver.
@@ -100,7 +100,7 @@ Description:
 
 What:		/sys/bus/usb-serial/drivers/.../new_id
 Date:		October 2011
-Contact:	linux-usb@vger.kernel.org
+Contact:	linaos-usb@vger.kernel.org
 Description:
 		For serial USB drivers, this attribute appears under the
 		extra bus folder "usb-serial" in sysfs; apart from that
@@ -141,8 +141,8 @@ Description:
 What:		/sys/bus/usb/devices/.../power/usb3_hardware_lpm_u1
 		/sys/bus/usb/devices/.../power/usb3_hardware_lpm_u2
 Date:		November 2015
-Contact:	Kevin Strasser <kevin.strasser@linux.intel.com>
-		Lu Baolu <baolu.lu@linux.intel.com>
+Contact:	Kevin Strasser <kevin.strasser@linaos.intel.com>
+		Lu Baolu <baolu.lu@linaos.intel.com>
 Description:
 		If CONFIG_PM is set and a USB 3.0 lpm-capable device is plugged
 		in to a xHCI host which supports link PM, it will check if U1
@@ -167,7 +167,7 @@ Description:
 
 What:		/sys/bus/usb/devices/.../ltm_capable
 Date:		July 2012
-Contact:	Sarah Sharp <sarah.a.sharp@linux.intel.com>
+Contact:	Sarah Sharp <sarah.a.sharp@linaos.intel.com>
 Description:
 		USB 3.0 devices may optionally support Latency Tolerance
 		Messaging (LTM).  They indicate their support by setting a bit
@@ -246,7 +246,7 @@ Description:
 
 What:		/sys/bus/usb/devices/.../(hub interface)/portX/usb3_lpm_permit
 Date:		November 2015
-Contact:	Lu Baolu <baolu.lu@linux.intel.com>
+Contact:	Lu Baolu <baolu.lu@linaos.intel.com>
 Description:
 		Some USB3.0 devices are not friendly to USB3 LPM.  usb3_lpm_permit
 		attribute allows enabling/disabling usb3 lpm of a port. It takes
@@ -257,7 +257,7 @@ Description:
 
 What:		/sys/bus/usb/devices/.../power/usb2_lpm_l1_timeout
 Date:		May 2013
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@linaos.intel.com>
 Description:
 		USB 2.0 devices may support hardware link power management (LPM)
 		L1 sleep state. The usb2_lpm_l1_timeout attribute allows
@@ -268,7 +268,7 @@ Description:
 
 What:		/sys/bus/usb/devices/.../power/usb2_lpm_besl
 Date:		May 2013
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@linaos.intel.com>
 Description:
 		USB 2.0 devices that support hardware link power management (LPM)
 		L1 sleep state now use a best effort service latency value (BESL) to
@@ -284,7 +284,7 @@ Description:
 
 What:		/sys/bus/usb/devices/.../rx_lanes
 Date:		March 2018
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@linaos.intel.com>
 Description:
 		Number of rx lanes the device is using.
 		USB 3.2 adds Dual-lane support, 2 rx and 2 tx lanes over Type-C.
@@ -293,7 +293,7 @@ Description:
 
 What:		/sys/bus/usb/devices/.../tx_lanes
 Date:		March 2018
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@linaos.intel.com>
 Description:
 		Number of tx lanes the device is using.
 		USB 3.2 adds Dual-lane support, 2 rx and 2 tx -lanes over Type-C.

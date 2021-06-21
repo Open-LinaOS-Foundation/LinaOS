@@ -8,16 +8,16 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/compat.h>
-#include <linux/export.h>
-#include <linux/idr.h>
-#include <linux/ioctl.h>
-#include <linux/media.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/usb.h>
-#include <linux/version.h>
+#include <linaos/compat.h>
+#include <linaos/export.h>
+#include <linaos/idr.h>
+#include <linaos/ioctl.h>
+#include <linaos/media.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/usb.h>
+#include <linaos/version.h>
 
 #include <media/media-device.h>
 #include <media/media-devnode.h>
@@ -27,7 +27,7 @@
 #ifdef CONFIG_MEDIA_CONTROLLER
 
 /*
- * Legacy defines from linux/media.h. This is the only place we need this
+ * Legacy defines from linaos/media.h. This is the only place we need this
  * so we just define it here. The media.h header doesn't expose it to the
  * kernel to prevent it from being used by drivers, but here (and only here!)
  * we need it to handle the legacy behavior.

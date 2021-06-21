@@ -7,20 +7,20 @@
 #ifndef _QED_H
 #define _QED_H
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/zlib.h>
-#include <linux/hashtable.h>
-#include <linux/qed/qed_if.h>
+#include <linaos/types.h>
+#include <linaos/io.h>
+#include <linaos/delay.h>
+#include <linaos/firmware.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/mutex.h>
+#include <linaos/pci.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/workqueue.h>
+#include <linaos/zlib.h>
+#include <linaos/hashtable.h>
+#include <linaos/qed/qed_if.h>
 #include "qed_debug.h"
 #include "qed_hsi.h"
 
@@ -806,7 +806,7 @@ struct qed_dev {
 	u8 ppfid_bitmap;
 	struct qed_llh_info *p_llh_info;
 
-	/* Linux specific here */
+	/* LinaOS specific here */
 	struct qed_dev_info		common_dev_info;
 	struct  qede_dev		*edev;
 	struct  pci_dev			*pdev;
@@ -954,7 +954,7 @@ void qed_db_recovery_dp(struct qed_hwfn *p_hwfn);
 void qed_db_recovery_execute(struct qed_hwfn *p_hwfn);
 bool qed_edpm_enabled(struct qed_hwfn *p_hwfn);
 
-/* Other Linux specific common definitions */
+/* Other LinaOS specific common definitions */
 #define DP_NAME(cdev) ((cdev)->name)
 
 #define REG_ADDR(cdev, offset)          (void __iomem *)((u8 __iomem *)\

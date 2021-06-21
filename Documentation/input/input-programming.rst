@@ -9,9 +9,9 @@ Here comes a very simple example of an input device driver. The device has
 just one button and the button is accessible at i/o port BUTTON_PORT. When
 pressed or released a BUTTON_IRQ happens. The driver could look like::
 
-    #include <linux/input.h>
-    #include <linux/module.h>
-    #include <linux/init.h>
+    #include <linaos/input.h>
+    #include <linaos/module.h>
+    #include <linaos/init.h>
 
     #include <asm/irq.h>
     #include <asm/io.h>
@@ -71,7 +71,7 @@ pressed or released a BUTTON_IRQ happens. The driver could look like::
 What the example does
 ~~~~~~~~~~~~~~~~~~~~~
 
-First it has to include the <linux/input.h> file, which interfaces to the
+First it has to include the <linaos/input.h> file, which interfaces to the
 input subsystem. This provides all the definitions needed.
 
 In the _init function, which is called either upon module load or when
@@ -218,7 +218,7 @@ It's reported to the input system via::
 
 	input_report_key(struct input_dev *dev, int code, int value)
 
-See uapi/linux/input-event-codes.h for the allowable values of code (from 0 to
+See uapi/linaos/input-event-codes.h for the allowable values of code (from 0 to
 KEY_MAX). Value is interpreted as a truth value, i.e. any non-zero value means
 key pressed, zero value means key released. The input code generates events only
 in case the value is different from before.

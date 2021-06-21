@@ -6,10 +6,10 @@
  * Copyright 2017	Intel Deutschland GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/rtnetlink.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
 #include "rate.h"
 #include "ieee80211_i.h"
 #include "debugfs.h"

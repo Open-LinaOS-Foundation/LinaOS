@@ -641,7 +641,7 @@
 		call {
 			label = "call";
 			gpios = <&gpio17 2 0>;
-			linux,code = <169>;	/* KEY_PHONE */
+			linaos,code = <169>;	/* KEY_PHONE */
 		};
 	};
 };

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2017-2019 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2017-2019 The LinaOS Foundation. All rights reserved. */
 
 
 #include "msm_gem.h"
@@ -8,10 +8,10 @@
 #include "a6xx_gpu.h"
 #include "a6xx_gmu.xml.h"
 
-#include <linux/bitfield.h>
-#include <linux/devfreq.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/soc/qcom/llcc-qcom.h>
+#include <linaos/bitfield.h>
+#include <linaos/devfreq.h>
+#include <linaos/nvmem-consumer.h>
+#include <linaos/soc/qcom/llcc-qcom.h>
 
 #define GPU_PAS_ID 13
 

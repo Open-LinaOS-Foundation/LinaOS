@@ -12,25 +12,25 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fsi.h>
-#include <linux/fsi-sbefifo.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/uio.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
+#include <linaos/device.h>
+#include <linaos/errno.h>
+#include <linaos/fs.h>
+#include <linaos/fsi.h>
+#include <linaos/fsi-sbefifo.h>
+#include <linaos/kernel.h>
+#include <linaos/cdev.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/uaccess.h>
+#include <linaos/delay.h>
+#include <linaos/uio.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mm.h>
 
 /*
  * The SBEFIFO is a pipe-like FSI device for communicating with
@@ -240,7 +240,7 @@ int sbefifo_parse_status(struct device *dev, u16 cmd, __be32 *response,
 
 	/*
 	 * Primary status don't have the top bit set, so can't be confused with
-	 * Linux negative error codes, so return the status word whole.
+	 * LinaOS negative error codes, so return the status word whole.
 	 */
 	return s1;
 }
@@ -1060,7 +1060,7 @@ module_init(sbefifo_init);
 module_exit(sbefifo_exit);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Brad Bishop <bradleyb@fuzziesquirrel.com>");
-MODULE_AUTHOR("Eddie James <eajames@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@linaos.vnet.ibm.com>");
 MODULE_AUTHOR("Andrew Jeffery <andrew@aj.id.au>");
 MODULE_AUTHOR("Benjamin Herrenschmidt <benh@kernel.crashing.org>");
-MODULE_DESCRIPTION("Linux device interface to the POWER Self Boot Engine");
+MODULE_DESCRIPTION("LinaOS device interface to the POWER Self Boot Engine");

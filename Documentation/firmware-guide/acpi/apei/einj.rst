@@ -99,7 +99,7 @@ The following files belong to it:
 
   Same use as param1 above. For example, if error type is of memory
   related type, then param2 should be a physical memory address mask.
-  Linux requires page or narrower granularity, say, 0xfffffffffffff000.
+  LinaOS requires page or narrower granularity, say, 0xfffffffffffff000.
 
 - param3
 

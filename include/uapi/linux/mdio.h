@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
- * linux/mdio.h: definitions for MDIO (clause 45) transceivers
+ * linaos/mdio.h: definitions for MDIO (clause 45) transceivers
  * Copyright 2006-2009 Solarflare Communications Inc.
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -11,8 +11,8 @@
 #ifndef _UAPI__LINUX_MDIO_H__
 #define _UAPI__LINUX_MDIO_H__
 
-#include <linux/types.h>
-#include <linux/mii.h>
+#include <linaos/types.h>
+#include <linaos/mii.h>
 
 /* MDIO Manageable Devices (MMDs). */
 #define MDIO_MMD_PMAPMD		1	/* Physical Medium Attachment/

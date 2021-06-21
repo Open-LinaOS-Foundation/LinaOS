@@ -3,7 +3,7 @@
  *	include/asm-parisc/pdc_chassis.h
  *
  *	Copyright (C) 2002 Laurent Canet <canetl@esiee.fr>
- *	Copyright (C) 2002 Thibaut Varene <varenet@parisc-linux.org>
+ *	Copyright (C) 2002 Thibaut Varene <varenet@parisc-linaos.org>
  *
  *      TODO:	- handle processor number on SMP systems (Reporting Entity ID)
  *      	- handle message ID

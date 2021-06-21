@@ -9,16 +9,16 @@
  * Free Software Foundation; version 2 of the License.
  */
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
-#include <linux/moduleloader.h>
-#include <linux/netdevice.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <linaos/bitops.h>
+#include <linaos/compiler.h>
+#include <linaos/errno.h>
+#include <linaos/filter.h>
+#include <linaos/if_vlan.h>
+#include <linaos/moduleloader.h>
+#include <linaos/netdevice.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
 #include <asm/asm.h>
 #include <asm/bitops.h>
 #include <asm/cacheflush.h>

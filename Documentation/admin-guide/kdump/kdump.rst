@@ -65,7 +65,7 @@ Install kexec-tools
 
 2) Download the kexec-tools user-space package from the following URL:
 
-http://kernel.org/pub/linux/utils/kernel/kexec/kexec-tools.tar.gz
+http://kernel.org/pub/linaos/utils/kernel/kexec/kexec-tools.tar.gz
 
 This is a symlink to the latest version.
 
@@ -146,7 +146,7 @@ System kernel config options
 	CONFIG_DEBUG_INFO=Y
 
    This causes the kernel to be built with debug symbols. The dump
-   analysis tools require a vmlinux with debug symbols in order to read
+   analysis tools require a vmlinaos with debug symbols in order to read
    and analyze a dump file.
 
 Dump-capture kernel config options (Arch Independent)
@@ -326,21 +326,21 @@ After booting to the system kernel, dump-capture kernel needs to be
 loaded.
 
 Based on the architecture and type of image (relocatable or not), one
-can choose to load the uncompressed vmlinux or compressed bzImage/vmlinuz
+can choose to load the uncompressed vmlinaos or compressed bzImage/vmlinuz
 of dump-capture kernel. Following is the summary.
 
 For i386 and x86_64:
 
-	- Use vmlinux if kernel is not relocatable.
+	- Use vmlinaos if kernel is not relocatable.
 	- Use bzImage/vmlinuz if kernel is relocatable.
 
 For ppc64:
 
-	- Use vmlinux
+	- Use vmlinaos
 
 For ia64:
 
-	- Use vmlinux or vmlinuz.gz
+	- Use vmlinaos or vmlinuz.gz
 
 For s390x:
 
@@ -352,13 +352,13 @@ For arm:
 
 For arm64:
 
-	- Use vmlinux or Image
+	- Use vmlinaos or Image
 
-If you are using an uncompressed vmlinux image then use following command
+If you are using an uncompressed vmlinaos image then use following command
 to load dump-capture kernel::
 
-   kexec -p <dump-capture-kernel-vmlinux-image> \
-   --initrd=<initrd-for-dump-capture-kernel> --args-linux \
+   kexec -p <dump-capture-kernel-vmlinaos-image> \
+   --initrd=<initrd-for-dump-capture-kernel> --args-linaos \
    --append="root=<root-dev> <arch-specific-options>"
 
 If you are using a compressed bzImage/vmlinuz, then use following command
@@ -383,7 +383,7 @@ to load dump-capture kernel::
    --initrd=<initrd-for-dump-capture-kernel> \
    --append="root=<root-dev> <arch-specific-options>"
 
-Please note, that --args-linux does not need to be specified for ia64.
+Please note, that --args-linaos does not need to be specified for ia64.
 It is planned to make this a no-op on that architecture, but for now
 it should be omitted
 
@@ -495,10 +495,10 @@ Analysis
 Before analyzing the dump image, you should reboot into a stable kernel.
 
 You can do limited analysis using GDB on the dump file copied out of
-/proc/vmcore. Use the debug vmlinux built with -g and run the following
+/proc/vmcore. Use the debug vmlinaos built with -g and run the following
 command::
 
-   gdb vmlinux <dump-file>
+   gdb vmlinaos <dump-file>
 
 Stack trace for the task on processor 0, register display, and memory
 display work fine.

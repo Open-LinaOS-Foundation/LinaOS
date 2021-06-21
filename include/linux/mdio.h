@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/mdio.h: definitions for MDIO (clause 45) transceivers
+ * linaos/mdio.h: definitions for MDIO (clause 45) transceivers
  * Copyright 2006-2009 Solarflare Communications Inc.
  */
 #ifndef __LINUX_MDIO_H__
 #define __LINUX_MDIO_H__
 
-#include <uapi/linux/mdio.h>
-#include <linux/mod_devicetable.h>
+#include <uapi/linaos/mdio.h>
+#include <linaos/mod_devicetable.h>
 
 /* Or MII_ADDR_C45 into regnum for read/write on mii_bus to enable the 21 bit
  * IEEE 802.3ae clause 45 addressing mode used by 10GIGE phy chips.

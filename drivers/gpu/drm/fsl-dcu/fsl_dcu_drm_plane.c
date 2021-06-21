@@ -5,7 +5,7 @@
  * Freescale DCU drm device driver
  */
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

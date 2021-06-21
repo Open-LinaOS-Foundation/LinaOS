@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
 /*
- *  linux/net/sunrpc/gss_rpc_upcall.h
+ *  linaos/net/sunrpc/gss_rpc_upcall.h
  *
  *  Copyright (C) 2012 Simo Sorce <simo@redhat.com>
  */
@@ -8,8 +8,8 @@
 #ifndef _GSS_RPC_UPCALL_H
 #define _GSS_RPC_UPCALL_H
 
-#include <linux/sunrpc/gss_api.h>
-#include <linux/sunrpc/auth_gss.h>
+#include <linaos/sunrpc/gss_api.h>
+#include <linaos/sunrpc/auth_gss.h>
 #include "gss_rpc_xdr.h"
 #include "../netns.h"
 

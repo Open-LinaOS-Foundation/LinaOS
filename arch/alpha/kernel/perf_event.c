@@ -10,15 +10,15 @@
  * ARM code, which are copyright by their respective authors.
  */
 
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/kernel.h>
-#include <linux/kdebug.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
+#include <linaos/perf_event.h>
+#include <linaos/kprobes.h>
+#include <linaos/kernel.h>
+#include <linaos/kdebug.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
 
 #include <asm/hwrpb.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/irq.h>
 #include <asm/irq_regs.h>
 #include <asm/pal.h>

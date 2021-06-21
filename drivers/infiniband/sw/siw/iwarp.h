@@ -7,7 +7,7 @@
 #define _IWARP_H
 
 #include <rdma/rdma_user_cm.h> /* RDMA_MAX_PRIVATE_DATA */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 #define RDMAP_VERSION 1

@@ -6,17 +6,17 @@
  *	    Alexandre Torgue <alexandre.torgue@st.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/ahci_platform.h>
-#include <linux/libata.h>
-#include <linux/reset.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/export.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/of.h>
+#include <linaos/ahci_platform.h>
+#include <linaos/libata.h>
+#include <linaos/reset.h>
+#include <linaos/io.h>
+#include <linaos/dma-mapping.h>
 
 #include "ahci.h"
 

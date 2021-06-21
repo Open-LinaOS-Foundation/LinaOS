@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * ld script to make SuperH Linux kernel
+ * ld script to make SuperH LinaOS kernel
  * Written by Niibe Yutaka and Paul Mundt
  */
 OUTPUT_ARCH(sh)
 #include <asm/thread_info.h>
 #include <asm/cache.h>
-#include <asm/vmlinux.lds.h>
+#include <asm/vmlinaos.lds.h>
 
 #ifdef CONFIG_PMB
  #define MEMORY_OFFSET	0

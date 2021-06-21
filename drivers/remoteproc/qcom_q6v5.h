@@ -3,8 +3,8 @@
 #ifndef __QCOM_Q6V5_H__
 #define __QCOM_Q6V5_H__
 
-#include <linux/kernel.h>
-#include <linux/completion.h>
+#include <linaos/kernel.h>
+#include <linaos/completion.h>
 
 struct rproc;
 struct qcom_smem_state;

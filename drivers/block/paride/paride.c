@@ -20,17 +20,17 @@
 
 #define PI_VERSION      "1.06"
 
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/sched.h>	/* TASK_* */
-#include <linux/parport.h>
-#include <linux/slab.h>
+#include <linaos/module.h>
+#include <linaos/kmod.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/ioport.h>
+#include <linaos/string.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>	/* TASK_* */
+#include <linaos/parport.h>
+#include <linaos/slab.h>
 
 #include "paride.h"
 

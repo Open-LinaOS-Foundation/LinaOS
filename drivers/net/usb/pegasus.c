@@ -4,7 +4,7 @@
  *
  *	ChangeLog:
  *		....	Most of the time spent on reading sources & docs.
- *		v0.2.x	First official release for the Linux kernel.
+ *		v0.2.x	First official release for the LinaOS kernel.
  *		v0.3.0	Beutified and structured, some bugs fixed.
  *		v0.3.x	URBifying bulk requests and bugfixing. First relatively
  *			stable release. Still can touch device's registers only
@@ -28,18 +28,18 @@
  *			logic revisited, receive skb_pool removed.
  */
 
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/module.h>
+#include <linaos/sched.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/ethtool.h>
+#include <linaos/mii.h>
+#include <linaos/usb.h>
+#include <linaos/module.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "pegasus.h"
 
 /*

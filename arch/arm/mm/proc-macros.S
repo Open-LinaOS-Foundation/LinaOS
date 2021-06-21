@@ -113,7 +113,7 @@
 #if !defined (CONFIG_ARM_LPAE) && \
 	(L_PTE_XN+L_PTE_USER+L_PTE_RDONLY+L_PTE_DIRTY+L_PTE_YOUNG+\
 	 L_PTE_PRESENT) > L_PTE_SHARED
-#error Invalid Linux PTE bit settings
+#error Invalid LinaOS PTE bit settings
 #endif
 #endif	/* CONFIG_MMU */
 
@@ -151,7 +151,7 @@
 	.endm
 
 	.macro	armv6_set_pte_ext pfx
-	str	r1, [r0], #2048			@ linux version
+	str	r1, [r0], #2048			@ linaos version
 
 	bic	r3, r1, #0x000003fc
 	bic	r3, r3, #PTE_TYPE_MASK
@@ -204,7 +204,7 @@
  *  1111  0xff	r/w	r/w
  */
 	.macro	armv3_set_pte_ext wc_disable=1
-	str	r1, [r0], #2048			@ linux version
+	str	r1, [r0], #2048			@ linaos version
 
 	eor	r3, r1, #L_PTE_PRESENT | L_PTE_YOUNG | L_PTE_DIRTY
 
@@ -247,7 +247,7 @@
  *  1111  11	r/w	r/w
  */
 	.macro	xscale_set_pte_ext_prologue
-	str	r1, [r0]			@ linux version
+	str	r1, [r0]			@ linaos version
 
 	eor	r3, r1, #L_PTE_PRESENT | L_PTE_YOUNG | L_PTE_DIRTY
 

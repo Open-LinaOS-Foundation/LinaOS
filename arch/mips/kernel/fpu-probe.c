@@ -8,8 +8,8 @@
  * Copyright (C) 2001, 2004, 2011, 2012	 MIPS Technologies, Inc.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
 
 #include <asm/bugs.h>
 #include <asm/cpu.h>

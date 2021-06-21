@@ -9,9 +9,9 @@
  *    Copyright (C) 1991, 1997, 2003 Free Software Foundation, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/compiler.h>
+#include <linaos/uaccess.h>
 
 #define get_user_space() (uaccess_kernel() ? 0 : mfsp(3))
 #define get_kernel_space() (0)

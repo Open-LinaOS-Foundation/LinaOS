@@ -52,13 +52,13 @@
 		heartbeat {
 			label = "pandaboard::status1";
 			gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		mmc {
 			label = "pandaboard::status2";
 			gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "mmc0";
+			linaos,default-trigger = "mmc0";
 		};
 	};
 
@@ -72,7 +72,7 @@
 		buttonS2 {
 			label = "button S2";
 			gpios = <&gpio4 25 GPIO_ACTIVE_LOW>;	/* gpio_121 */
-			linux,code = <BTN_0>;
+			linaos,code = <BTN_0>;
 			wakeup-source;
 		};
 	};

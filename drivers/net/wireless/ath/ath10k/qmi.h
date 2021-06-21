@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: ISC */
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The LinaOS Foundation. All rights reserved.
  */
 #ifndef _ATH10K_QMI_H_
 #define _ATH10K_QMI_H_
 
-#include <linux/soc/qcom/qmi.h>
-#include <linux/qrtr.h>
+#include <linaos/soc/qcom/qmi.h>
+#include <linaos/qrtr.h>
 #include "qmi_wlfw_v01.h"
 
 #define MAX_NUM_MEMORY_REGIONS			2

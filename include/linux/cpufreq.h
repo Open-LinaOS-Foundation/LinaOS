@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/linux/cpufreq.h
+ * linaos/include/linaos/cpufreq.h
  *
  * Copyright (C) 2001 Russell King
- *           (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ *           (C) 2002 - 2003 Dominik Brodowski <linaos@brodo.de>
  */
 #ifndef _LINUX_CPUFREQ_H
 #define _LINUX_CPUFREQ_H
 
-#include <linux/clk.h>
-#include <linux/cpumask.h>
-#include <linux/completion.h>
-#include <linux/kobject.h>
-#include <linux/notifier.h>
-#include <linux/pm_qos.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
+#include <linaos/clk.h>
+#include <linaos/cpumask.h>
+#include <linaos/completion.h>
+#include <linaos/kobject.h>
+#include <linaos/notifier.h>
+#include <linaos/pm_qos.h>
+#include <linaos/spinlock.h>
+#include <linaos/sysfs.h>
 
 /*********************************************************************
  *                        CPUFREQ INTERFACE                          *

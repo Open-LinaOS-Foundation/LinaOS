@@ -5,8 +5,8 @@
 #if !defined(_TRACE_RANDOM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RANDOM_H
 
-#include <linux/writeback.h>
-#include <linux/tracepoint.h>
+#include <linaos/writeback.h>
+#include <linaos/tracepoint.h>
 
 TRACE_EVENT(add_device_randomness,
 	TP_PROTO(int bytes, unsigned long IP),

@@ -2,7 +2,7 @@
 /*
  * bsbe1.h - ALPS BSBE1 tuner support
  *
- * the project's page is at https://linuxtv.org
+ * the project's page is at https://linaostv.org
  */
 
 #ifndef BSBE1_H

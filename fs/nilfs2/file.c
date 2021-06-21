@@ -7,9 +7,9 @@
  * Written by Amagai Yoshiji and Ryusuke Konishi.
  */
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/writeback.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/writeback.h>
 #include "nilfs.h"
 #include "segment.h"
 

@@ -21,7 +21,7 @@
  *
  */
 #include "pp_debug.h"
-#include <linux/errno.h>
+#include <linaos/errno.h>
 #include "hwmgr.h"
 #include "hardwaremanager.h"
 #include "power_state.h"

@@ -6,8 +6,8 @@
  * Author: Gustavo Pimentel <gustavo.pimentel@synopsys.com>
  */
 
-#include <linux/debugfs.h>
-#include <linux/bitfield.h>
+#include <linaos/debugfs.h>
+#include <linaos/bitfield.h>
 
 #include "dw-edma-v0-debugfs.h"
 #include "dw-edma-v0-regs.h"

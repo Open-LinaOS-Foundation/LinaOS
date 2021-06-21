@@ -23,10 +23,10 @@
 #include "xfs_error.h"
 #include "xfs_ioctl.h"
 
-#include <linux/posix_acl.h>
-#include <linux/security.h>
-#include <linux/iversion.h>
-#include <linux/fiemap.h>
+#include <linaos/posix_acl.h>
+#include <linaos/security.h>
+#include <linaos/iversion.h>
+#include <linaos/fiemap.h>
 
 /*
  * Directories have different lock order w.r.t. mmap_lock compared to regular
@@ -67,7 +67,7 @@ xfs_initxattrs(
 }
 
 /*
- * Hook in SELinux.  This is not quite correct yet, what we really need
+ * Hook in SELinaOS.  This is not quite correct yet, what we really need
  * here (as we do for default ACLs) is a mechanism by which creation of
  * these attrs can be journalled at inode creation time (along with the
  * inode, of course, such that log replay can't cause these to be lost).
@@ -134,7 +134,7 @@ xfs_cleanup_inode(
  * need to do in this fast path.
  *
  * The security checks are optimistic, but not guaranteed. The two LSMs that
- * require xattrs to be added here (selinux and smack) are also the only two
+ * require xattrs to be added here (selinaos and smack) are also the only two
  * LSMs that add a sb->s_security structure to the superblock. Hence if security
  * is enabled and sb->s_security is set, we have a pretty good idea that we are
  * going to be asked to add a security xattr immediately after allocating the
@@ -1329,7 +1329,7 @@ xfs_diflags_to_iflags(
 }
 
 /*
- * Initialize the Linux inode.
+ * Initialize the LinaOS inode.
  *
  * When reading existing inodes from disk this is called directly from xfs_iget,
  * when creating a new inode it is called from xfs_ialloc after setting up the

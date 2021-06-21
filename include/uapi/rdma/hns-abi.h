@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR Linux-OpenIB) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH LinaOS-syscall-note) OR LinaOS-OpenIB) */
 /*
  * Copyright (c) 2016 Hisilicon Limited.
  *
@@ -34,7 +34,7 @@
 #ifndef HNS_ABI_USER_H
 #define HNS_ABI_USER_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 struct hns_roce_ib_create_cq {
 	__aligned_u64 buf_addr;

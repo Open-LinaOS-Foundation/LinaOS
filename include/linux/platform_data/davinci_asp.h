@@ -16,7 +16,7 @@
 #ifndef __DAVINCI_ASP_H
 #define __DAVINCI_ASP_H
 
-#include <linux/genalloc.h>
+#include <linaos/genalloc.h>
 
 struct davinci_mcasp_pdata {
 	u32 tx_dma_offset;

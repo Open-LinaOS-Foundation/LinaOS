@@ -36,8 +36,8 @@
 #ifndef NFS_IDMAP_H
 #define NFS_IDMAP_H
 
-#include <linux/uidgid.h>
-#include <uapi/linux/nfs_idmap.h>
+#include <linaos/uidgid.h>
+#include <uapi/linaos/nfs_idmap.h>
 
 
 /* Forward declaration to make this header independent of others */

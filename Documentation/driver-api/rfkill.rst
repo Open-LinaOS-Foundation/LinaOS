@@ -101,7 +101,7 @@ The recommended userspace interface to use is /dev/rfkill, which is a misc
 character device that allows userspace to obtain and set the state of rfkill
 devices and sets of devices. It also notifies userspace about device addition
 and removal. The API is a simple read/write API that is defined in
-linux/rfkill.h, with one ioctl that allows turning off the deprecated input
+linaos/rfkill.h, with one ioctl that allows turning off the deprecated input
 handler in the kernel for the transition period.
 
 Except for the one ioctl, communication with the kernel is done via read()

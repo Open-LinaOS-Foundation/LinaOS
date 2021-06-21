@@ -29,11 +29,11 @@
  *    Chanbin Du <changbin.du@intel.com>
  *    Min He <min.he@intel.com>
  *    Bing Niu <bing.niu@intel.com>
- *    Zhenyu Wang <zhenyuw@linux.intel.com>
+ *    Zhenyu Wang <zhenyuw@linaos.intel.com>
  *
  */
 
-#include <linux/kthread.h>
+#include <linaos/kthread.h>
 
 #include "gem/i915_gem_pm.h"
 #include "gt/intel_context.h"

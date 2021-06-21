@@ -7,14 +7,14 @@
 **
 **-----------------------------------------------------------------------------
 **
-**  This driver has been ported to Linux from the FreeBSD NCR53C8XX driver
+**  This driver has been ported to LinaOS from the FreeBSD NCR53C8XX driver
 **  and is currently maintained by
 **
 **          Gerard Roudier              <groudier@free.fr>
 **
 **  Being given that this driver originates from the FreeBSD version, and
 **  in order to keep synergy on both, any suggested enhancements and corrections
-**  received on Linux are automatically a potential candidate for the FreeBSD 
+**  received on LinaOS are automatically a potential candidate for the FreeBSD 
 **  version.
 **
 **  The original driver has been written for 386bsd and FreeBSD by
@@ -29,7 +29,7 @@
 **                     Brief history
 **
 **  December 10 1995 by Gerard Roudier:
-**     Initial port to Linux.
+**     Initial port to LinaOS.
 **
 **  June 23 1996 by Gerard Roudier:
 **     Support for 64 bits architectures (Alpha).
@@ -82,24 +82,24 @@
 
 #define SCSI_NCR_DEBUG_FLAGS	(0)
 
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/types.h>
+#include <linaos/blkdev.h>
+#include <linaos/delay.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/errno.h>
+#include <linaos/gfp.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/sched.h>
+#include <linaos/signal.h>
+#include <linaos/spinlock.h>
+#include <linaos/stat.h>
+#include <linaos/string.h>
+#include <linaos/time.h>
+#include <linaos/timer.h>
+#include <linaos/types.h>
 
 #include <asm/dma.h>
 #include <asm/io.h>
@@ -176,7 +176,7 @@ static inline struct list_head *ncr_list_pop(struct list_head *head)
 **	address calculations  from the SCRIPTS code.
 **	In addition, cache line alignment is guaranteed for 
 **	power of 2 cache line size.
-**	Enhanced in linux-2.3.44 to provide a memory pool 
+**	Enhanced in linaos-2.3.44 to provide a memory pool 
 **	per pcidev to support dynamic dma mapping. (I would 
 **	have preferred a real bus abstraction, btw).
 **
@@ -549,7 +549,7 @@ static int __map_scsi_sg_data(struct device *dev, struct scsi_cmnd *cmd)
 **
 **	Driver setup.
 **
-**	This structure is initialized from linux config 
+**	This structure is initialized from linaos config 
 **	options. It can be overridden at boot-up by the boot 
 **	command line.
 **
@@ -3658,7 +3658,7 @@ ncr_script_copy_and_bind (struct ncb *np, ncrcmd *src, ncrcmd *dst, int len)
 }
 
 /*
-**	Linux host data structure
+**	LinaOS host data structure
 */
 
 struct host_data {
@@ -7640,7 +7640,7 @@ fail:
 **	we had to use a break point every 512 bytes.
 **	Of course the number of scatter/gather blocks is
 **	limited.
-**	Under Linux, the scatter/gatter blocks are provided by 
+**	Under LinaOS, the scatter/gatter blocks are provided by 
 **	the generic driver. We just have to copy addresses and 
 **	sizes to the data segment array.
 */
@@ -8001,11 +8001,11 @@ static int ncr53c8xx_slave_configure(struct scsi_device *device)
 	scsi_change_queue_depth(device, depth_to_use);
 
 	/*
-	**	Since the queue depth is not tunable under Linux,
+	**	Since the queue depth is not tunable under LinaOS,
 	**	we need to know this value in order not to 
 	**	announce stupid things to user.
 	**
-	**	XXX(hch): As of Linux 2.6 it certainly _is_ tunable..
+	**	XXX(hch): As of LinaOS 2.6 it certainly _is_ tunable..
 	**		  In fact we just tuned it, or did I miss
 	**		  something important? :)
 	*/
@@ -8167,7 +8167,7 @@ out:
 **	It may happen that we cannot insert a scsi command into the start queue,
 **	in the following circumstances.
 ** 		Too few preallocated ccb(s), 
-**		maxtags < cmd_per_lun of the Linux host control block,
+**		maxtags < cmd_per_lun of the LinaOS host control block,
 **		etc...
 **	Such scsi commands are inserted into a waiting list.
 **	When a scsi command complete, we try to requeue the commands of the

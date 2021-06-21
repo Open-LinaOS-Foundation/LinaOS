@@ -5,7 +5,7 @@
  * Copyright (C) 2014  Renesas Electronics Corporation
  */
 
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 ENTRY(shmobile_boot_apmu)

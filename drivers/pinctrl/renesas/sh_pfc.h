@@ -8,10 +8,10 @@
 #ifndef __SH_PFC_H
 #define __SH_PFC_H
 
-#include <linux/bug.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/spinlock.h>
-#include <linux/stringify.h>
+#include <linaos/bug.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/spinlock.h>
+#include <linaos/stringify.h>
 
 enum {
 	PINMUX_TYPE_NONE,

@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
+#include <linaos/kernel.h>
+#include <linaos/sched.h>
+#include <linaos/sched/signal.h>
 #include "internal.h"
 #include "afs_vl.h"
 

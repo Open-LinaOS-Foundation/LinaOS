@@ -40,16 +40,16 @@
  * is half of that in the single stage mode.
  */
 
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/watchdog.h>
+#include <linaos/io.h>
+#include <linaos/io-64-nonatomic-lo-hi.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/uaccess.h>
+#include <linaos/watchdog.h>
 #include <asm/arch_timer.h>
 
 #define DRV_NAME		"sbsa-gwdt"

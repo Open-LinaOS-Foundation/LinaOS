@@ -11,7 +11,7 @@
 #if !defined(_TRACE_GPU_MEM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_GPU_MEM_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 /*
  * The gpu_memory_total event indicates that there's an update to either the

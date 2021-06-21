@@ -2,8 +2,8 @@
 #ifndef __ASM_ARCH_PXA27x_KEYPAD_H
 #define __ASM_ARCH_PXA27x_KEYPAD_H
 
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
+#include <linaos/input.h>
+#include <linaos/input/matrix_keypad.h>
 
 #define MAX_MATRIX_KEY_ROWS	(8)
 #define MAX_MATRIX_KEY_COLS	(8)

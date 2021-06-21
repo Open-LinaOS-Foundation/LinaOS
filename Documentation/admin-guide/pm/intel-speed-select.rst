@@ -29,8 +29,8 @@ implemented in the tool in their production software.
 intel-speed-select configuration tool
 ======================================
 
-Most Linux distribution packages may include the "intel-speed-select" tool. If not,
-it can be built by downloading the Linux kernel tree from kernel.org. Once
+Most LinaOS distribution packages may include the "intel-speed-select" tool. If not,
+it can be built by downloading the LinaOS kernel tree from kernel.org. Once
 downloaded, the tool can be built without building the full kernel.
 
 From the kernel tree, run the following commands::
@@ -480,7 +480,7 @@ For example to associate CPU 10 to CLOS group 3, execute::
         assoc:success
 
 Once a CPU is associated, its sibling CPUs are also associated to a CLOS group.
-Once associated, avoid changing Linux "cpufreq" subsystem scaling frequency
+Once associated, avoid changing LinaOS "cpufreq" subsystem scaling frequency
 limits.
 
 To check the existing association for a CPU, "core-power get-assoc" command can

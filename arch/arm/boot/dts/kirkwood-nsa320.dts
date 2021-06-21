@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Device tree file for the Zyxel NSA 320 NAS box.
  *
- * Copyright (c) 2014, Adam Baker <linux@baker-net.org.uk>
+ * Copyright (c) 2014, Adam Baker <linaos@baker-net.org.uk>
  *
  *
  * Based upon the board setup file created by Peter Schildmann */

@@ -9,8 +9,8 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
 
 #include "solo6x10.h"
 #include "solo6x10-tw28.h"

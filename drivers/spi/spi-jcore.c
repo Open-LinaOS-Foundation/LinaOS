@@ -8,17 +8,17 @@
  * Based loosely on initial version by Oleksandr G Zhadan
  *
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/spi/spi.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/io.h>
+#include <linaos/of.h>
+#include <linaos/delay.h>
 
 #define DRV_NAME	"jcore_spi"
 

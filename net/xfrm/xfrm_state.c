@@ -14,18 +14,18 @@
  *
  */
 
-#include <linux/workqueue.h>
+#include <linaos/workqueue.h>
 #include <net/xfrm.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/audit.h>
-#include <linux/uaccess.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
+#include <linaos/pfkeyv2.h>
+#include <linaos/ipsec.h>
+#include <linaos/module.h>
+#include <linaos/cache.h>
+#include <linaos/audit.h>
+#include <linaos/uaccess.h>
+#include <linaos/ktime.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
 
 #include <crypto/aead.h>
 

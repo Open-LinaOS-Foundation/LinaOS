@@ -8,7 +8,7 @@
 #ifndef _KERNEL_KCSAN_ATOMIC_H
 #define _KERNEL_KCSAN_ATOMIC_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /*
  * Special rules for certain memory where concurrent conflicting accesses are

@@ -10,13 +10,13 @@
 
 #include "ssb_private.h"
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_regs.h>
-#include <linux/ssb/ssb_driver_chipcommon.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <linaos/ssb/ssb.h>
+#include <linaos/ssb/ssb_regs.h>
+#include <linaos/ssb/ssb_driver_chipcommon.h>
+#include <linaos/delay.h>
+#include <linaos/export.h>
 #ifdef CONFIG_BCM47XX
-#include <linux/bcm47xx_nvram.h>
+#include <linaos/bcm47xx_nvram.h>
 #endif
 
 static u32 ssb_chipco_pll_read(struct ssb_chipcommon *cc, u32 offset)

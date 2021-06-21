@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/input/keyboard/pxa27x_keypad.c
+ * linaos/drivers/input/keyboard/pxa27x_keypad.c
  *
  * Driver for the pxa27x matrix keyboard controller.
  *
  * Created:	Feb 22, 2007
- * Author:	Rodolfo Giometti <giometti@linux.it>
+ * Author:	Rodolfo Giometti <giometti@linaos.it>
  *
  * Based on a previous implementations by Kevin O'Connor
  * <kevin_at_koconnor.net> and Alex Osborne <bobofdoom@gmail.com> and
@@ -13,20 +13,20 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/input.h>
+#include <linaos/io.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/clk.h>
+#include <linaos/err.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/slab.h>
+#include <linaos/of.h>
 
-#include <linux/platform_data/keypad-pxa27x.h>
+#include <linaos/platform_data/keypad-pxa27x.h>
 /*
  * Keypad Controller registers
  */

@@ -18,7 +18,7 @@ NM := $(CROSS_COMPILE)nm -B
 CHECKFLAGS	+= -D__ia64=1 -D__ia64__=1 -D_LP64 -D__LP64__
 
 OBJCOPYFLAGS	:= --strip-all
-LDFLAGS_vmlinux	:= -static
+LDFLAGS_vmlinaos	:= -static
 KBUILD_AFLAGS_KERNEL := -mconstant-gp
 EXTRA		:=
 
@@ -34,7 +34,7 @@ $(error Sorry, you need a newer version of the assember, one that is built from	
 	a source-tree that post-dates 18-Dec-2002.  You can find a pre-compiled	\
 	static binary of such an assembler at:					\
 										\
-		ftp://ftp.hpl.hp.com/pub/linux-ia64/gas-030124.tar.gz)
+		ftp://ftp.hpl.hp.com/pub/linaos-ia64/gas-030124.tar.gz)
 endif
 
 quiet_cmd_gzip = GZIP    $@
@@ -56,17 +56,17 @@ PHONY += compressed check
 
 all: compressed unwcheck
 
-compressed: vmlinux.gz
+compressed: vmlinaos.gz
 
-vmlinuz: vmlinux.gz
+vmlinuz: vmlinaos.gz
 
-vmlinux.gz: vmlinux.bin FORCE
+vmlinaos.gz: vmlinaos.bin FORCE
 	$(call if_changed,gzip)
 
-vmlinux.bin: vmlinux FORCE
+vmlinaos.bin: vmlinaos FORCE
 	$(call if_changed,objcopy)
 
-unwcheck: vmlinux
+unwcheck: vmlinaos
 	-$(Q)READELF=$(READELF) $(PYTHON3) $(srctree)/arch/ia64/scripts/unwcheck.py $<
 
 archclean:
@@ -74,13 +74,13 @@ archclean:
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/ia64/kernel/syscalls all
 
-CLEAN_FILES += vmlinux.gz
+CLEAN_FILES += vmlinaos.gz
 
-install: vmlinux.gz
+install: vmlinaos.gz
 	sh $(srctree)/arch/ia64/install.sh $(KERNELRELEASE) $< System.map "$(INSTALL_PATH)"
 
 define archhelp
   echo '* compressed	- Build compressed kernel image'
   echo '  install	- Install compressed kernel image'
-  echo '* unwcheck	- Check vmlinux for invalid unwind info'
+  echo '* unwcheck	- Check vmlinaos for invalid unwind info'
 endef

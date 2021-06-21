@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * PPS API header
  *
- * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linaos.it>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
 #ifndef _PPS_H_
 #define _PPS_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #define PPS_VERSION		"5.3.6"
 #define PPS_MAX_SOURCES		16		/* should be enough... */
@@ -140,7 +140,7 @@ struct pps_bind_args {
 	int consumer;	/* selected kernel consumer */
 };
 
-#include <linux/ioctl.h>
+#include <linaos/ioctl.h>
 
 #define PPS_GETPARAMS		_IOR('p', 0xa1, struct pps_kparams *)
 #define PPS_SETPARAMS		_IOW('p', 0xa2, struct pps_kparams *)

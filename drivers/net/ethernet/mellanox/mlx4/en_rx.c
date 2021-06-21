@@ -31,17 +31,17 @@
  *
  */
 
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/mlx4/cq.h>
-#include <linux/slab.h>
-#include <linux/mlx4/qp.h>
-#include <linux/skbuff.h>
-#include <linux/rculist.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
-#include <linux/irq.h>
+#include <linaos/bpf.h>
+#include <linaos/bpf_trace.h>
+#include <linaos/mlx4/cq.h>
+#include <linaos/slab.h>
+#include <linaos/mlx4/qp.h>
+#include <linaos/skbuff.h>
+#include <linaos/rculist.h>
+#include <linaos/if_ether.h>
+#include <linaos/if_vlan.h>
+#include <linaos/vmalloc.h>
+#include <linaos/irq.h>
 
 #include <net/ip.h>
 #if IS_ENABLED(CONFIG_IPV6)

@@ -6,12 +6,12 @@
  * Copyright (C) 2005 MIPS Technologies, Inc.  All rights reserved.
  * Copyright (C) 2013 Imagination Technologies Ltd.
  */
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
+#include <linaos/device.h>
+#include <linaos/fs.h>
+#include <linaos/err.h>
+#include <linaos/wait.h>
+#include <linaos/sched.h>
+#include <linaos/smp.h>
 
 #include <asm/mips_mt.h>
 #include <asm/vpe.h>

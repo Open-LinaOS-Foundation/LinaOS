@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/backing-dev.h
+ * include/linaos/backing-dev.h
  *
  * low-level device information and state which is propagated up through
  * to high-level code.
@@ -9,15 +9,15 @@
 #ifndef _LINUX_BACKING_DEV_H
 #define _LINUX_BACKING_DEV_H
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/blkdev.h>
-#include <linux/device.h>
-#include <linux/writeback.h>
-#include <linux/blk-cgroup.h>
-#include <linux/backing-dev-defs.h>
-#include <linux/slab.h>
+#include <linaos/kernel.h>
+#include <linaos/fs.h>
+#include <linaos/sched.h>
+#include <linaos/blkdev.h>
+#include <linaos/device.h>
+#include <linaos/writeback.h>
+#include <linaos/blk-cgroup.h>
+#include <linaos/backing-dev-defs.h>
+#include <linaos/slab.h>
 
 static inline struct backing_dev_info *bdi_get(struct backing_dev_info *bdi)
 {

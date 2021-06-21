@@ -11,18 +11,18 @@
  */
 
 /*
- * Logitech Bus Mouse Driver for Linux
+ * Logitech Bus Mouse Driver for LinaOS
  */
 
 /*
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/ioport.h>
+#include <linaos/init.h>
+#include <linaos/input.h>
+#include <linaos/interrupt.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

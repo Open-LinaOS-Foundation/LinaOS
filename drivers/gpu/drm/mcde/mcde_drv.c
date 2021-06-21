@@ -53,17 +53,17 @@
  *   the DSI bridge.
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/dma-buf.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <linaos/clk.h>
+#include <linaos/component.h>
+#include <linaos/dma-buf.h>
+#include <linaos/irq.h>
+#include <linaos/io.h>
+#include <linaos/module.h>
+#include <linaos/of_platform.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/slab.h>
+#include <linaos/delay.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

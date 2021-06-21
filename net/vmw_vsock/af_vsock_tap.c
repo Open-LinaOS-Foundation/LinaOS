@@ -5,10 +5,10 @@
  * Code based on net/netlink/af_netlink.c tap functions.
  */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include <net/sock.h>
 #include <net/af_vsock.h>
-#include <linux/if_arp.h>
+#include <linaos/if_arp.h>
 
 static DEFINE_SPINLOCK(vsock_tap_lock);
 static struct list_head vsock_tap_all __read_mostly =

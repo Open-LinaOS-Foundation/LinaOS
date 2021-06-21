@@ -8,7 +8,7 @@
 #ifndef _MFD_MAX77620_H_
 #define _MFD_MAX77620_H_
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* GLOBAL, PMIC, GPIO, FPS, ONOFFC, CID Registers */
 #define MAX77620_REG_CNFGGLBL1			0x00

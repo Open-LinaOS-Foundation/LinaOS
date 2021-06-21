@@ -7,10 +7,10 @@
  * Author: Johan Hovold <jhovold@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
+#include <linaos/device.h>
+#include <linaos/module.h>
 
-#include <linux/mfd/lm3533.h>
+#include <linaos/mfd/lm3533.h>
 
 
 #define LM3533_MAX_CURRENT_MIN		5000

@@ -10,12 +10,12 @@
  * Firmware must be in binary "rbf" format.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sizes.h>
+#include <linaos/delay.h>
+#include <linaos/device.h>
+#include <linaos/fpga/fpga-mgr.h>
+#include <linaos/module.h>
+#include <linaos/pci.h>
+#include <linaos/sizes.h>
 
 #define CVP_BAR		0	/* BAR used for data transfer in memory mode */
 #define CVP_DUMMY_WR	244	/* dummy writes to clear CvP state machine */

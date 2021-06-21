@@ -1,9 +1,9 @@
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/notifier.h>
+#include <linaos/rcupdate.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/fib_notifier.h>

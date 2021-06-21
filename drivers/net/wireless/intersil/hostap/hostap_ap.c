@@ -17,15 +17,15 @@
  *   (8802.11: 5.5)
  */
 
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/delay.h>
-#include <linux/random.h>
-#include <linux/if_arp.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/moduleparam.h>
-#include <linux/etherdevice.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
+#include <linaos/delay.h>
+#include <linaos/random.h>
+#include <linaos/if_arp.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/moduleparam.h>
+#include <linaos/etherdevice.h>
 
 #include "hostap_wlan.h"
 #include "hostap.h"

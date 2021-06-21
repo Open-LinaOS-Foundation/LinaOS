@@ -13,7 +13,7 @@ Optional sub-node properties:
 - color:		See Documentation/devicetree/bindings/leds/common.txt
 - label:		A label for the LED. If none is given, the LED will be
 			named "lt3595::" (deprecated)
-- linux,default-trigger: The default trigger for the LED.
+- linaos,default-trigger: The default trigger for the LED.
 			See Documentation/devicetree/bindings/leds/common.txt
 - default-state:	The initial state of the LED.
 			See Documentation/devicetree/bindings/leds/common.txt

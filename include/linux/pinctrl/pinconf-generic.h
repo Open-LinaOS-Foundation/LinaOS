@@ -11,8 +11,8 @@
 #ifndef __LINUX_PINCTRL_PINCONF_GENERIC_H
 #define __LINUX_PINCTRL_PINCONF_GENERIC_H
 
-#include <linux/device.h>
-#include <linux/pinctrl/machine.h>
+#include <linaos/device.h>
+#include <linaos/pinctrl/machine.h>
 
 struct pinctrl_dev;
 struct pinctrl_map;

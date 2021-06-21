@@ -9,7 +9,7 @@
 #ifndef _LINUX_RAVE_SP_H_
 #define _LINUX_RAVE_SP_H_
 
-#include <linux/notifier.h>
+#include <linaos/notifier.h>
 
 enum rave_sp_command {
 	RAVE_SP_CMD_GET_FIRMWARE_VERSION	= 0x20,

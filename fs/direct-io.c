@@ -20,24 +20,24 @@
  *		added IO completion notifier.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/bio.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/rwsem.h>
-#include <linux/uio.h>
-#include <linux/atomic.h>
-#include <linux/prefetch.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/fs.h>
+#include <linaos/mm.h>
+#include <linaos/slab.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
+#include <linaos/task_io_accounting_ops.h>
+#include <linaos/bio.h>
+#include <linaos/wait.h>
+#include <linaos/err.h>
+#include <linaos/blkdev.h>
+#include <linaos/buffer_head.h>
+#include <linaos/rwsem.h>
+#include <linaos/uio.h>
+#include <linaos/atomic.h>
+#include <linaos/prefetch.h>
 
 #include "internal.h"
 

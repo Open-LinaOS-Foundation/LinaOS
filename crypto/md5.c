@@ -17,10 +17,10 @@
  */
 #include <crypto/internal/hash.h>
 #include <crypto/md5.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/string.h>
+#include <linaos/types.h>
 #include <asm/byteorder.h>
 
 const u8 md5_zero_message_hash[MD5_DIGEST_SIZE] = {

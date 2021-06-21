@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /* Copyright 2020 NXP */
 
 #ifndef __LINUX_TC_GATE_H
 #define __LINUX_TC_GATE_H
 
-#include <linux/pkt_cls.h>
+#include <linaos/pkt_cls.h>
 
 struct tc_gate {
 	tc_gen;

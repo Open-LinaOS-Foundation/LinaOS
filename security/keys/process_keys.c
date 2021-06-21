@@ -5,17 +5,17 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
-#include <linux/keyctl.h>
-#include <linux/fs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/security.h>
-#include <linux/user_namespace.h>
-#include <linux/uaccess.h>
-#include <linux/init_task.h>
+#include <linaos/init.h>
+#include <linaos/sched.h>
+#include <linaos/sched/user.h>
+#include <linaos/keyctl.h>
+#include <linaos/fs.h>
+#include <linaos/err.h>
+#include <linaos/mutex.h>
+#include <linaos/security.h>
+#include <linaos/user_namespace.h>
+#include <linaos/uaccess.h>
+#include <linaos/init_task.h>
 #include <keys/request_key_auth-type.h>
 #include "internal.h"
 

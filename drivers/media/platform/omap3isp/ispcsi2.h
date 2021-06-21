@@ -14,8 +14,8 @@
 #ifndef OMAP3_ISP_CSI2_H
 #define OMAP3_ISP_CSI2_H
 
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <linaos/types.h>
+#include <linaos/videodev2.h>
 
 struct isp_csiphy;
 

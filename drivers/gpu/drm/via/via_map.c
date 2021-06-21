@@ -22,7 +22,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/pci.h>
+#include <linaos/pci.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_vblank.h>

@@ -18,14 +18,14 @@
  * this warranty disclaimer.
  **/
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
+#include <linaos/suspend.h>
 
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/module.h>
-#include <linux/devcoredump.h>
+#include <linaos/mmc/sdio_ids.h>
+#include <linaos/mmc/sdio_func.h>
+#include <linaos/module.h>
+#include <linaos/devcoredump.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

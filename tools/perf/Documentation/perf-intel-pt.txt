@@ -822,7 +822,7 @@ below:
 	AUX area mmap length 4194304
 	perf event ring buffer mmapped per cpu
 	Synthesizing auxtrace information
-	Linux
+	LinaOS
 	[ perf record: Woken up 1 times to write data ]
 	[ perf record: Captured and wrote 0.042 MB perf.data ]
 

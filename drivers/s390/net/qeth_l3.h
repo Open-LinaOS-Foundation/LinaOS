@@ -11,7 +11,7 @@
 #define __QETH_L3_H__
 
 #include "qeth_core.h"
-#include <linux/hashtable.h>
+#include <linaos/hashtable.h>
 
 enum qeth_ip_types {
 	QETH_IP_TYPE_NORMAL,

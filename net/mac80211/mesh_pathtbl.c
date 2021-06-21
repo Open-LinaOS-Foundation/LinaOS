@@ -4,12 +4,12 @@
  * Author:     Luis Carlos Cobo <luisca@cozybit.com>
  */
 
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <linaos/etherdevice.h>
+#include <linaos/list.h>
+#include <linaos/random.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/string.h>
 #include <net/mac80211.h>
 #include "wme.h"
 #include "ieee80211_i.h"

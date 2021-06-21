@@ -2,7 +2,7 @@
 /*
  * Network node table
  *
- * SELinux must keep a mapping of network nodes to labels/SIDs.  This
+ * SELinaOS must keep a mapping of network nodes to labels/SIDs.  This
  * mapping is maintained as part of the normal policy but a fast cache is
  * needed to reduce the lookup overhead since most of these queries happen on
  * a per-packet basis.
@@ -11,22 +11,22 @@
  *
  * This code is heavily based on the "netif" concept originally developed by
  * James Morris <jmorris@redhat.com>
- *   (see security/selinux/netif.c for more information)
+ *   (see security/selinaos/netif.c for more information)
  */
 
 /*
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2007
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <linaos/types.h>
+#include <linaos/rcupdate.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/in.h>
+#include <linaos/in6.h>
+#include <linaos/ip.h>
+#include <linaos/ipv6.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
 
@@ -203,13 +203,13 @@ static int sel_netnode_sid_slow(void *addr, u16 family, u32 *sid)
 	new = kzalloc(sizeof(*new), GFP_ATOMIC);
 	switch (family) {
 	case PF_INET:
-		ret = security_node_sid(&selinux_state, PF_INET,
+		ret = security_node_sid(&selinaos_state, PF_INET,
 					addr, sizeof(struct in_addr), sid);
 		if (new)
 			new->nsec.addr.ipv4 = *(__be32 *)addr;
 		break;
 	case PF_INET6:
-		ret = security_node_sid(&selinux_state, PF_INET6,
+		ret = security_node_sid(&selinaos_state, PF_INET6,
 					addr, sizeof(struct in6_addr), sid);
 		if (new)
 			new->nsec.addr.ipv6 = *(struct in6_addr *)addr;
@@ -227,7 +227,7 @@ static int sel_netnode_sid_slow(void *addr, u16 family, u32 *sid)
 
 	spin_unlock_bh(&sel_netnode_lock);
 	if (unlikely(ret))
-		pr_warn("SELinux: failure in %s(), unable to determine network node label\n",
+		pr_warn("SELinaOS: failure in %s(), unable to determine network node label\n",
 			__func__);
 	return ret;
 }
@@ -290,7 +290,7 @@ static __init int sel_netnode_init(void)
 {
 	int iter;
 
-	if (!selinux_enabled_boot)
+	if (!selinaos_enabled_boot)
 		return 0;
 
 	for (iter = 0; iter < SEL_NETNODE_HASH_SIZE; iter++) {

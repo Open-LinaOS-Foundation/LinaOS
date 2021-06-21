@@ -16,7 +16,7 @@ Bus-Independent Device Accesses
 Introduction
 ============
 
-Linux provides an API which abstracts performing IO across all busses
+LinaOS provides an API which abstracts performing IO across all busses
 and devices, allowing device drivers to be written independently of bus
 type.
 
@@ -49,7 +49,7 @@ Accessing the device
 --------------------
 
 The part of the interface most used by drivers is reading and writing
-memory-mapped registers on the device. Linux provides interfaces to read
+memory-mapped registers on the device. LinaOS provides interfaces to read
 and write 8-bit, 16-bit, 32-bit and 64-bit quantities. Due to a
 historical accident, these are named byte, word, long and quad accesses.
 Both read and write accesses are supported; there is no prefetch support
@@ -224,7 +224,7 @@ iowrite64_lo_hi(), iowrite64_hi_lo(), iowrite64be_lo_hi(), iowrite64be_hi_lo()
   Since it depends on the particular device which of the two halves has to be
   accessed first, a helper is provided for each combination of 64-bit accessors
   with either low/high or high/low word ordering. A device driver must include
-  either <linux/io-64-nonatomic-lo-hi.h> or <linux/io-64-nonatomic-hi-lo.h> to
+  either <linaos/io-64-nonatomic-lo-hi.h> or <linaos/io-64-nonatomic-hi-lo.h> to
   get the function definitions along with helpers that redirect the normal
   readq()/writeq() to them on architectures that do not provide 64-bit access
   natively.

@@ -7,7 +7,7 @@
 #ifndef _ASMARM_CACHEFLUSH_H
 #define _ASMARM_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 #include <asm/glue-cache.h>
 #include <asm/shmparam.h>
@@ -439,7 +439,7 @@ static inline void __sync_cache_range_r(volatile void *p, size_t size)
  *
  * - No ldrex/strex (and similar) instructions must be used.
  * - The CPU is obviously no longer coherent with the other CPUs.
- * - This is unlikely to work as expected if Linux is running non-secure.
+ * - This is unlikely to work as expected if LinaOS is running non-secure.
  *
  * Note:
  *

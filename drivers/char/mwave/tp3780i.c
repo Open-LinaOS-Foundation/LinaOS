@@ -46,10 +46,10 @@
 *	First release to the public
 */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
 #include <asm/io.h>
 #include "smapi.h"
 #include "mwavedd.h"

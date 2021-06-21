@@ -4,7 +4,7 @@
 #ifndef _LAN743X_H
 #define _LAN743X_H
 
-#include <linux/phy.h>
+#include <linaos/phy.h>
 #include "lan743x_ptp.h"
 
 #define DRIVER_AUTHOR   "Bryan Whitehead <Bryan.Whitehead@microchip.com>"

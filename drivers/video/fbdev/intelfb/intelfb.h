@@ -4,12 +4,12 @@
 
 /* $DHD: intelfb/intelfb.h,v 1.40 2003/06/27 15:06:25 dawes Exp $ */
 
-#include <linux/agp_backend.h>
-#include <linux/fb.h>
+#include <linaos/agp_backend.h>
+#include <linaos/fb.h>
 
 #ifdef CONFIG_FB_INTEL_I2C
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <linaos/i2c.h>
+#include <linaos/i2c-algo-bit.h>
 #endif
 
 /*** Version/name ***/

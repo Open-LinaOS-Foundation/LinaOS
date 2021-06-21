@@ -9,7 +9,7 @@
 #ifndef _RT5660_H
 #define _RT5660_H
 
-#include <linux/clk.h>
+#include <linaos/clk.h>
 #include <sound/rt5660.h>
 
 /* Info */

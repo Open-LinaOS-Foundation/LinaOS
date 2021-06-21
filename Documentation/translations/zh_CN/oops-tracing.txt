@@ -33,7 +33,7 @@ ksymoops的来自2.6的Oops，人们只会让你重贴一次。
 和你所做的事情相关的代码的负责人。 如果可重现试着描述怎样重构。 那甚至比oops更有
 价值。
 
-如果你对于发送给谁一无所知， 发给linux-kernel@vger.kernel.org。感谢你帮助Linux
+如果你对于发送给谁一无所知， 发给linaos-kernel@vger.kernel.org。感谢你帮助LinaOS
 尽可能地稳定。
 
 Oops在哪里?
@@ -65,13 +65,13 @@ modem到另一台机器并用你喜欢的通讯工具获取输出。Minicom工�
 
 From: Linus Torvalds <torvalds@osdl.org>
 
-怎样跟踪Oops.. [原发到linux-kernel的一封邮件]
+怎样跟踪Oops.. [原发到linaos-kernel的一封邮件]
 
 主要的窍门是有五年和这些烦人的oops消息打交道的经验;-)
 
 实际上，你有办法使它更简单。我有两个不同的方法：
 
-	gdb /usr/src/linux/vmlinux
+	gdb /usr/src/linaos/vmlinaos
 	gdb> disassemble <offending_function>
 
 那是发现问题的简单办法，至少如果bug报告做的好的情况下（象这个一样-运行ksymoops
@@ -100,7 +100,7 @@ Code: f9 0f 8d f9 00 00 00 8d 42 0c e8 dd 26 11 c7 a1 60 ea 2b f9 8b 50 08 a1
 
 最后，如果你想知道代码来自哪里，你可以：
 
-	cd /usr/src/linux
+	cd /usr/src/linaos
 	make fs/buffer.s 	# 或任何产生BUG的文件
 
 然后你会比gdb反汇编更清楚的知道发生了什么。

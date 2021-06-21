@@ -1,10 +1,10 @@
 /*
- *  linux/drivers/message/fusion/mptsas.c
+ *  linaos/drivers/message/fusion/mptsas.c
  *      For use with LSI PCI chip/adapter(s)
  *      running LSI Fusion MPT (Message Passing Technology) firmware.
  *
  *  Copyright (c) 1999-2008 LSI Corporation
- *  (mailto:DL-MPTFusionLinux@lsi.com)
+ *  (mailto:DL-MPTFusionLinaOS@lsi.com)
  */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 /*
@@ -43,14 +43,14 @@
 */
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>	/* for mdelay */
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/slab.h>
+#include <linaos/init.h>
+#include <linaos/errno.h>
+#include <linaos/jiffies.h>
+#include <linaos/workqueue.h>
+#include <linaos/delay.h>	/* for mdelay */
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

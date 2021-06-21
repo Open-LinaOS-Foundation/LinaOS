@@ -2,14 +2,14 @@
 #ifndef _LINUX_DMA_MAPPING_H
 #define _LINUX_DMA_MAPPING_H
 
-#include <linux/sizes.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/dma-direction.h>
-#include <linux/scatterlist.h>
-#include <linux/bug.h>
-#include <linux/mem_encrypt.h>
+#include <linaos/sizes.h>
+#include <linaos/string.h>
+#include <linaos/device.h>
+#include <linaos/err.h>
+#include <linaos/dma-direction.h>
+#include <linaos/scatterlist.h>
+#include <linaos/bug.h>
+#include <linaos/mem_encrypt.h>
 
 /**
  * List of possible attributes associated with a DMA mapping. The semantics

@@ -5,10 +5,10 @@
  *  Generic memory management routines for soundcard memory allocation
  */
 
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <linaos/mutex.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
 #include <sound/core.h>
 #include <sound/util_mem.h>
 

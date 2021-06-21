@@ -6,15 +6,15 @@
  *
  * Contact: Carlos Chinea <carlos.chinea@nokia.com>
  */
-#include <linux/hsi/hsi.h>
-#include <linux/compiler.h>
-#include <linux/list.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <linaos/hsi/hsi.h>
+#include <linaos/compiler.h>
+#include <linaos/list.h>
+#include <linaos/kobject.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/notifier.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
 #include "hsi_core.h"
 
 static ssize_t modalias_show(struct device *dev,

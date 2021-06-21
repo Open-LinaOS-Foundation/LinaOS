@@ -10,8 +10,8 @@
 #ifndef __MAX77843_PRIVATE_H_
 #define __MAX77843_PRIVATE_H_
 
-#include <linux/i2c.h>
-#include <linux/regmap.h>
+#include <linaos/i2c.h>
+#include <linaos/regmap.h>
 
 #define I2C_ADDR_TOPSYS	(0xCC >> 1)
 #define I2C_ADDR_CHG	(0xD2 >> 1)

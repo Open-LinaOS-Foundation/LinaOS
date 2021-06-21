@@ -9,7 +9,7 @@
 #ifndef SOUND_SOC_CODECS_ADAU1372_H
 #define SOUND_SOC_CODECS_ADAU1372_H
 
-#include <linux/regmap.h>
+#include <linaos/regmap.h>
 
 struct device;
 

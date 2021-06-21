@@ -2,10 +2,10 @@
 #ifndef _LINUX_FUTEX_H
 #define _LINUX_FUTEX_H
 
-#include <linux/sched.h>
-#include <linux/ktime.h>
+#include <linaos/sched.h>
+#include <linaos/ktime.h>
 
-#include <uapi/linux/futex.h>
+#include <uapi/linaos/futex.h>
 
 struct inode;
 struct mm_struct;

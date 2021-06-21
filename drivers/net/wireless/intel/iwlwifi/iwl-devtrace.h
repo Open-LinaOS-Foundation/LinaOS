@@ -6,14 +6,14 @@
  * Copyright(c) 2018        Intel Corporation
  *
  * Contact Information:
- *  Intel Linux Wireless <linuxwifi@intel.com>
+ *  Intel LinaOS Wireless <linaoswifi@intel.com>
  * Intel Corporation, 5200 N.E. Elam Young Parkway, Hillsboro, OR 97124-6497
  *
  *****************************************************************************/
 
 #ifndef __IWLWIFI_DEVICE_TRACE
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
+#include <linaos/skbuff.h>
+#include <linaos/ieee80211.h>
 #include <net/cfg80211.h>
 #include "iwl-trans.h"
 #if !defined(__IWLWIFI_DEVICE_TRACE)
@@ -73,8 +73,8 @@ static inline size_t iwl_rx_trace_len(const struct iwl_trans *trans,
 
 #define __IWLWIFI_DEVICE_TRACE
 
-#include <linux/tracepoint.h>
-#include <linux/device.h>
+#include <linaos/tracepoint.h>
+#include <linaos/device.h>
 
 
 #if !defined(CONFIG_IWLWIFI_DEVICE_TRACING) || defined(__CHECKER__)

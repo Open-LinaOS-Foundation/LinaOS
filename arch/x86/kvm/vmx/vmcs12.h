@@ -2,7 +2,7 @@
 #ifndef __KVM_X86_VMX_VMCS12_H
 #define __KVM_X86_VMX_VMCS12_H
 
-#include <linux/build_bug.h>
+#include <linaos/build_bug.h>
 
 #include "vmcs.h"
 

@@ -54,97 +54,97 @@
 		power {
 			label = "Power Button";
 			gpios = <&gpio2 23 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			linaos,code = <KEY_POWER>;
 			wakeup-source;
 		};
 
 		f1 {
 			label = "GPIO Key F1";
-			linux,code = <KEY_F1>;
+			linaos,code = <KEY_F1>;
 			gpios = <&gpio_pca 0 GPIO_ACTIVE_LOW>;
 		};
 
 		f2 {
 			label = "GPIO Key F2";
-			linux,code = <KEY_F2>;
+			linaos,code = <KEY_F2>;
 			gpios = <&gpio_pca 1 GPIO_ACTIVE_LOW>;
 		};
 
 		f3 {
 			label = "GPIO Key F3";
-			linux,code = <KEY_F3>;
+			linaos,code = <KEY_F3>;
 			gpios = <&gpio_pca 2 GPIO_ACTIVE_LOW>;
 		};
 
 		f4 {
 			label = "GPIO Key F4";
-			linux,code = <KEY_F4>;
+			linaos,code = <KEY_F4>;
 			gpios = <&gpio_pca 3 GPIO_ACTIVE_LOW>;
 		};
 
 		f5 {
 			label = "GPIO Key F5";
-			linux,code = <KEY_F5>;
+			linaos,code = <KEY_F5>;
 			gpios = <&gpio_pca 4 GPIO_ACTIVE_LOW>;
 		};
 
 		cycle {
 			label = "GPIO Key CYCLE";
-			linux,code = <KEY_CYCLEWINDOWS>;
+			linaos,code = <KEY_CYCLEWINDOWS>;
 			gpios = <&gpio_pca 5 GPIO_ACTIVE_LOW>;
 		};
 
 		esc {
 			label = "GPIO Key ESC";
-			linux,code = <KEY_ESC>;
+			linaos,code = <KEY_ESC>;
 			gpios = <&gpio_pca 6 GPIO_ACTIVE_LOW>;
 		};
 
 		up {
 			label = "GPIO Key UP";
-			linux,code = <KEY_UP>;
+			linaos,code = <KEY_UP>;
 			gpios = <&gpio_pca 7 GPIO_ACTIVE_LOW>;
 		};
 
 		down {
 			label = "GPIO Key DOWN";
-			linux,code = <KEY_DOWN>;
+			linaos,code = <KEY_DOWN>;
 			gpios = <&gpio_pca 8 GPIO_ACTIVE_LOW>;
 		};
 
 		ok {
 			label = "GPIO Key OK";
-			linux,code = <KEY_OK>;
+			linaos,code = <KEY_OK>;
 			gpios = <&gpio_pca 9 GPIO_ACTIVE_LOW>;
 		};
 
 		f6 {
 			label = "GPIO Key F6";
-			linux,code = <KEY_F6>;
+			linaos,code = <KEY_F6>;
 			gpios = <&gpio_pca 10 GPIO_ACTIVE_LOW>;
 		};
 
 		f7 {
 			label = "GPIO Key F7";
-			linux,code = <KEY_F7>;
+			linaos,code = <KEY_F7>;
 			gpios = <&gpio_pca 11 GPIO_ACTIVE_LOW>;
 		};
 
 		f8 {
 			label = "GPIO Key F8";
-			linux,code = <KEY_F8>;
+			linaos,code = <KEY_F8>;
 			gpios = <&gpio_pca 12 GPIO_ACTIVE_LOW>;
 		};
 
 		f9 {
 			label = "GPIO Key F9";
-			linux,code = <KEY_F9>;
+			linaos,code = <KEY_F9>;
 			gpios = <&gpio_pca 13 GPIO_ACTIVE_LOW>;
 		};
 
 		f10 {
 			label = "GPIO Key F10";
-			linux,code = <KEY_F10>;
+			linaos,code = <KEY_F10>;
 			gpios = <&gpio_pca 14 GPIO_ACTIVE_LOW>;
 		};
 
@@ -159,14 +159,14 @@
 			label = "debug0";
 			function = LED_FUNCTION_HEARTBEAT;
 			gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			linaos,default-trigger = "heartbeat";
 		};
 
 		led-1 {
 			label = "debug1";
 			function = LED_FUNCTION_DISK;
 			gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "disk-activity";
+			linaos,default-trigger = "disk-activity";
 		};
 
 		led-2 {

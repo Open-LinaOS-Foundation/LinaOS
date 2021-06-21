@@ -8,13 +8,13 @@
  * Copyright (c) 2014 EMAC Inc.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spi/spi.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/regulator/consumer.h>
-#include <linux/bitops.h>
+#include <linaos/module.h>
+#include <linaos/init.h>
+#include <linaos/spi/spi.h>
+#include <linaos/iio/iio.h>
+#include <linaos/iio/sysfs.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/bitops.h>
 
 #define MCP4922_NUM_CHANNELS	2
 

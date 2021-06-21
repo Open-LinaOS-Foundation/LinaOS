@@ -3,16 +3,16 @@
  *
  * SuperHyway Bus sysfs interface
  *
- * Copyright (C) 2004, 2005  Paul Mundt <lethal@linux-sh.org>
+ * Copyright (C) 2004, 2005  Paul Mundt <lethal@linaos-sh.org>
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/superhyway.h>
+#include <linaos/kernel.h>
+#include <linaos/device.h>
+#include <linaos/types.h>
+#include <linaos/superhyway.h>
 
 #define superhyway_ro_attr(name, fmt, field)				\
 static ssize_t name##_show(struct device *dev, struct device_attribute *attr, char *buf)		\

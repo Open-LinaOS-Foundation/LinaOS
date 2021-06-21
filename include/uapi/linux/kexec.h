@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef _UAPILINUX_KEXEC_H
 #define _UAPILINUX_KEXEC_H
 
@@ -7,7 +7,7 @@
  * that to happen you need to do that yourself.
  */
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /* kexec flags for different usage scenarios */
 #define KEXEC_ON_CRASH		0x00000001

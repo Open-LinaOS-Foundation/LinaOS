@@ -49,7 +49,7 @@
  * This file contains OPA VNIC ethtool functions
  */
 
-#include <linux/ethtool.h>
+#include <linaos/ethtool.h>
 
 #include "opa_vnic_internal.h"
 

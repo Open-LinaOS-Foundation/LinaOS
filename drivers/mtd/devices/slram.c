@@ -30,21 +30,21 @@
 ======================================================================*/
 
 
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/ioctl.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/uaccess.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/ptrace.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
+#include <linaos/timer.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/ioctl.h>
+#include <linaos/init.h>
+#include <linaos/io.h>
 
-#include <linux/mtd/mtd.h>
+#include <linaos/mtd/mtd.h>
 
 #define SLRAM_MAX_DEVICES_PARAMS 6		/* 3 parameters / device */
 #define SLRAM_BLK_SZ 0x4000

@@ -14,22 +14,22 @@
  *		Marc Boucher	:	routing by fwmark
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/netdevice.h>
+#include <linaos/netlink.h>
+#include <linaos/inetdevice.h>
+#include <linaos/init.h>
+#include <linaos/list.h>
+#include <linaos/rcupdate.h>
+#include <linaos/export.h>
 #include <net/ip.h>
 #include <net/route.h>
 #include <net/tcp.h>
 #include <net/ip_fib.h>
 #include <net/nexthop.h>
 #include <net/fib_rules.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/indirect_call_wrapper.h>
 
 struct fib4_rule {
 	struct fib_rule		common;

@@ -2,16 +2,16 @@
 /*
  * Copyright 2018-2020 Broadcom.
  */
-#include <linux/dma-mapping.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/pgtable.h>
-#include <linux/vmalloc.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mm.h>
+#include <linaos/pagemap.h>
+#include <linaos/pgtable.h>
+#include <linaos/vmalloc.h>
 
 #include <asm/page.h>
 #include <asm/unaligned.h>
 
-#include <uapi/linux/misc/bcm_vk.h>
+#include <uapi/linaos/misc/bcm_vk.h>
 
 #include "bcm_vk.h"
 #include "bcm_vk_msg.h"

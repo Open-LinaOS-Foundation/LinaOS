@@ -2,8 +2,8 @@
 #ifndef _BPF_NETNS_H
 #define _BPF_NETNS_H
 
-#include <linux/mutex.h>
-#include <uapi/linux/bpf.h>
+#include <linaos/mutex.h>
+#include <uapi/linaos/bpf.h>
 
 enum netns_bpf_attach_type {
 	NETNS_BPF_INVALID = -1,

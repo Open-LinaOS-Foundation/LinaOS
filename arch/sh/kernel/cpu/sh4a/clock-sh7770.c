@@ -6,8 +6,8 @@
  *
  *  Copyright (C) 2005  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
+#include <linaos/init.h>
+#include <linaos/kernel.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 #include <asm/io.h>

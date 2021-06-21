@@ -11,7 +11,7 @@
  * PS wx handler mostly stolen from hostap, copyright who
  * own it's copyright ;-)
  */
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 
 #include "rtllib.h"
 #include "dot11d.h"

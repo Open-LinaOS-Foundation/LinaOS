@@ -41,13 +41,13 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/sched.h>
-#include <linux/rculist.h>
-#include <linux/ftrace.h>
+#include <linaos/list.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/bug.h>
+#include <linaos/sched.h>
+#include <linaos/rculist.h>
+#include <linaos/ftrace.h>
 
 extern struct bug_entry __start___bug_table[], __stop___bug_table[];
 

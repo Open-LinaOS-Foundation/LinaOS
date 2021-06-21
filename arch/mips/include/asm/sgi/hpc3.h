@@ -12,7 +12,7 @@
 #ifndef _SGI_HPC3_H
 #define _SGI_HPC3_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <asm/page.h>
 
 /* An HPC DMA descriptor. */

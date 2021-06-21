@@ -2,7 +2,7 @@
 /*
  *  Include file for NEC VR4100 series PCI Control Unit.
  *
- *  Copyright (C) 2004-2005  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2004-2005  Yoichi Yuasa <yuasa@linaos-mips.org>
  */
 #ifndef __NEC_VR41XX_PCI_H
 #define __NEC_VR41XX_PCI_H

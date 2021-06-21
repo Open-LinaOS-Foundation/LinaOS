@@ -5,19 +5,19 @@
  * Copyright (c) 2008 Philipp Zabel <philipp.zabel@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <linaos/kernel.h>
+#include <linaos/platform_device.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/interrupt.h>
+#include <linaos/usb.h>
+#include <linaos/workqueue.h>
 
-#include <linux/regulator/consumer.h>
+#include <linaos/regulator/consumer.h>
 
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
+#include <linaos/usb/gadget.h>
+#include <linaos/usb/otg.h>
 
 
 /*

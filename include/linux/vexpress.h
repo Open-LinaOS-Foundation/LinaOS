@@ -7,8 +7,8 @@
 #ifndef _LINUX_VEXPRESS_H
 #define _LINUX_VEXPRESS_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/regmap.h>
 
 /* Config regmap API */
 

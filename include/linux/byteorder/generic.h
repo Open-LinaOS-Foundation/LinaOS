@@ -3,7 +3,7 @@
 #define _LINUX_BYTEORDER_GENERIC_H
 
 /*
- * linux/byteorder/generic.h
+ * linaos/byteorder/generic.h
  * Generic Byte-reordering support
  *
  * The "... p" macros, like le64_to_cpup, can be used with pointers
@@ -23,7 +23,7 @@
  *    by nestedly #include'd files.
  * Francois-Rene Rideau <fare@tunes.org> 19971205
  *    Made it to 2.1.71; now a facelift:
- *    Put files under include/linux/byteorder/
+ *    Put files under include/linaos/byteorder/
  *    Split swab from generic support.
  *
  * TODO:
@@ -39,8 +39,8 @@
  *   = cpu_to_beXX and beXX_to_cpu might some day need to be well
  *    distinguished throughout the kernel. This is not the case currently,
  *    since little endian, big endian, and pdp endian machines needn't it.
- *    But this might be the case for, say, a port of Linux to 20/21 bit
- *    architectures (and F21 Linux addict around?).
+ *    But this might be the case for, say, a port of LinaOS to 20/21 bit
+ *    architectures (and F21 LinaOS addict around?).
  */
 
 /*

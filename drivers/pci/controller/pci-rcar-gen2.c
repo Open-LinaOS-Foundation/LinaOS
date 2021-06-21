@@ -8,18 +8,18 @@
  * Author: Valentine Barshak <valentine.barshak@cogentembedded.com>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of_address.h>
-#include <linux/of_pci.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/init.h>
+#include <linaos/interrupt.h>
+#include <linaos/io.h>
+#include <linaos/kernel.h>
+#include <linaos/of_address.h>
+#include <linaos/of_pci.h>
+#include <linaos/pci.h>
+#include <linaos/platform_device.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/sizes.h>
+#include <linaos/slab.h>
 
 #include "../pci.h"
 

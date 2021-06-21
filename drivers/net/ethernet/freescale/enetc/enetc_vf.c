@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2017-2019 NXP */
 
-#include <linux/module.h>
+#include <linaos/module.h>
 #include "enetc.h"
 
 #define ENETC_DRV_NAME_STR "ENETC VF driver"

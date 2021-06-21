@@ -15,18 +15,18 @@
  *
  * 16 MiB of framebuffer memory is assumed to be available.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/console.h>
-#include <linux/suspend.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/cs5535.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/string.h>
+#include <linaos/mm.h>
+#include <linaos/delay.h>
+#include <linaos/fb.h>
+#include <linaos/console.h>
+#include <linaos/suspend.h>
+#include <linaos/init.h>
+#include <linaos/pci.h>
+#include <linaos/cs5535.h>
 
 #include <asm/olpc.h>
 

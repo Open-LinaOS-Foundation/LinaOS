@@ -2,20 +2,20 @@
 /*
  * Time related functions for Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/module.h>
+#include <linaos/init.h>
+#include <linaos/clockchips.h>
+#include <linaos/clocksource.h>
+#include <linaos/interrupt.h>
+#include <linaos/err.h>
+#include <linaos/platform_device.h>
+#include <linaos/ioport.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/of_irq.h>
+#include <linaos/module.h>
 
 #include <asm/timer-regs.h>
 #include <asm/hexagon_vm.h>

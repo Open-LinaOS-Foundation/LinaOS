@@ -2,7 +2,7 @@
 #ifndef __UM_X86_PTRACE_H
 #define __UM_X86_PTRACE_H
 
-#include <linux/compiler.h>
+#include <linaos/compiler.h>
 #ifndef CONFIG_X86_32
 #define __FRAME_OFFSETS /* Needed to get the R* macros */
 #endif

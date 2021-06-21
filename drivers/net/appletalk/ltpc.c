@@ -21,12 +21,12 @@
  *      a better driver yourself anyway.  This does mean that the pieces that
  *      talk to the card are guesswork on my part, so use at your own risk!
  *
- *      This is my first try at writing Linux networking code, and is also
+ *      This is my first try at writing LinaOS networking code, and is also
  *      guesswork.  Again, use at your own risk!  (Although on this part, I'd
  *      welcome suggestions)
  *
  *      This is a loadable kernel module which seems to work at my site
- *      consisting of a 1.2.13 linux box running netatalk 1.3.3, and with
+ *      consisting of a 1.2.13 linaos box running netatalk 1.3.3, and with
  *      the kernel support from 1.3.3b2 including patches routing.patch
  *      and ddp.disappears.from.chooser.  In order to run it, you will need
  *      to patch ddp.c and aarp.c in the kernel, but only a little...
@@ -53,7 +53,7 @@
  *      other cards (some of which I gather are still commercially available)
  *      and also to put hooks for LocalTalk into the official ddp code.
  *
- *      I welcome comments and suggestions.  This is my first try at Linux
+ *      I welcome comments and suggestions.  This is my first try at LinaOS
  *      networking stuff, and there are probably lots of things that I did
  *      suboptimally.  
  *
@@ -138,7 +138,7 @@
  *
  * Revision 0.9  1996/02/10  23:59:35  root
  * Fixed those fixes for 1.2 -- DANGER!  The at.h that comes with netatalk
- * has a *different* definition of struct sockaddr_at than the Linux kernel
+ * has a *different* definition of struct sockaddr_at than the LinaOS kernel
  * does.  This is an "insidious and invidious" bug...
  * (Actually the preceding comment is false -- it's the atalk.h in the
  * ancient atalk-0.06 that's the problem)
@@ -206,28 +206,28 @@ static int io;
 static int irq;
 static int dma;
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ltalk.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/atalk.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/fcntl.h>
+#include <linaos/interrupt.h>
+#include <linaos/ptrace.h>
+#include <linaos/ioport.h>
+#include <linaos/spinlock.h>
+#include <linaos/in.h>
+#include <linaos/string.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
+#include <linaos/if_arp.h>
+#include <linaos/if_ltalk.h>
+#include <linaos/delay.h>
+#include <linaos/timer.h>
+#include <linaos/atalk.h>
+#include <linaos/bitops.h>
+#include <linaos/gfp.h>
 
 #include <net/Space.h>
 

@@ -10,19 +10,19 @@
 #define DRIVER_NAME "ms_block"
 #define pr_fmt(fmt) DRIVER_NAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/blk-mq.h>
-#include <linux/memstick.h>
-#include <linux/idr.h>
-#include <linux/hdreg.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/bitmap.h>
-#include <linux/scatterlist.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <linaos/module.h>
+#include <linaos/blk-mq.h>
+#include <linaos/memstick.h>
+#include <linaos/idr.h>
+#include <linaos/hdreg.h>
+#include <linaos/delay.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
+#include <linaos/bitmap.h>
+#include <linaos/scatterlist.h>
+#include <linaos/jiffies.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
 #include "ms_block.h"
 
 static int debug;
@@ -1728,7 +1728,7 @@ static int msb_init_card(struct memstick_dev *card)
 	msb->block_size = msb->page_size * msb->pages_in_block;
 
 	if (msb->page_size > PAGE_SIZE) {
-		/* this isn't supported by linux at all, anyway*/
+		/* this isn't supported by linaos at all, anyway*/
 		dbg("device page %d size isn't supported", msb->page_size);
 		return -EINVAL;
 	}

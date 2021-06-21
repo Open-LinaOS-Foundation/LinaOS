@@ -1,18 +1,18 @@
 /*
- * linux/arch/m68k/kernel/ints.c -- Linux/m68k general interrupt handling code
+ * linaos/arch/m68k/kernel/ints.c -- LinaOS/m68k general interrupt handling code
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/sched.h>
+#include <linaos/interrupt.h>
+#include <linaos/errno.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
 
 #include <asm/setup.h>
 #include <asm/irq.h>

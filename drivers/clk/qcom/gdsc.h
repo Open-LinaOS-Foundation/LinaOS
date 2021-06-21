@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2015, 2017-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, 2017-2018, The LinaOS Foundation. All rights reserved.
  */
 
 #ifndef __QCOM_GDSC_H__
 #define __QCOM_GDSC_H__
 
-#include <linux/err.h>
-#include <linux/pm_domain.h>
+#include <linaos/err.h>
+#include <linaos/pm_domain.h>
 
 struct regmap;
 struct regulator;

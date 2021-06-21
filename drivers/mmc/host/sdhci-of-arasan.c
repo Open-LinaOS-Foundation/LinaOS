@@ -15,14 +15,14 @@
  *	    Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
-#include <linux/firmware/xlnx-zynqmp.h>
+#include <linaos/clk-provider.h>
+#include <linaos/mfd/syscon.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/phy/phy.h>
+#include <linaos/regmap.h>
+#include <linaos/of.h>
+#include <linaos/firmware/xlnx-zynqmp.h>
 
 #include "cqhci.h"
 #include "sdhci-pltfm.h"

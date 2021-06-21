@@ -1,14 +1,14 @@
-Using gcov with the Linux kernel
+Using gcov with the LinaOS kernel
 ================================
 
 gcov profiling kernel support enables the use of GCC's coverage testing
-tool gcov_ with the Linux kernel. Coverage data of a running kernel
+tool gcov_ with the LinaOS kernel. Coverage data of a running kernel
 is exported in gcov-compatible format via the "gcov" debugfs directory.
 To get coverage data for a specific file, change to the kernel build
 directory and use gcov with the ``-o`` option as follows (requires root)::
 
-    # cd /tmp/linux-out
-    # gcov -o /sys/kernel/debug/gcov/tmp/linux-out/kernel spinlock.c
+    # cd /tmp/linaos-out
+    # gcov -o /sys/kernel/debug/gcov/tmp/linaos-out/kernel spinlock.c
 
 This will create source code files annotated with execution counts
 in the current directory. In addition, graphical gcov front-ends such
@@ -161,7 +161,7 @@ b) gcov is run on the BUILD machine
 
     Example directory setup on the build machine::
 
-      /tmp/linux:    kernel source tree
+      /tmp/linaos:    kernel source tree
       /tmp/out:      kernel build directory as specified by make O=
       /tmp/coverage: location of the files copied from the test machine
 

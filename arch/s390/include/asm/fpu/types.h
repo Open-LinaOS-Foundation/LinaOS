@@ -3,7 +3,7 @@
  * FPU data structures
  *
  * Copyright IBM Corp. 2015
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@linaos.vnet.ibm.com>
  */
 
 #ifndef _ASM_S390_FPU_TYPES_H

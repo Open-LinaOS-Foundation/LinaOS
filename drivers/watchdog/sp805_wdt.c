@@ -11,24 +11,24 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/resource.h>
-#include <linux/amba/bus.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <linaos/acpi.h>
+#include <linaos/device.h>
+#include <linaos/resource.h>
+#include <linaos/amba/bus.h>
+#include <linaos/bitops.h>
+#include <linaos/clk.h>
+#include <linaos/io.h>
+#include <linaos/ioport.h>
+#include <linaos/kernel.h>
+#include <linaos/math64.h>
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/of.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
+#include <linaos/spinlock.h>
+#include <linaos/types.h>
+#include <linaos/watchdog.h>
 
 /* default timeout in seconds */
 #define DEFAULT_TIMEOUT		60

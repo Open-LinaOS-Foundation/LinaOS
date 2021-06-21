@@ -49,20 +49,20 @@
  * a class whose fit-time exceeds the current time.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/compiler.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/init.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_sched.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/errno.h>
+#include <linaos/compiler.h>
+#include <linaos/spinlock.h>
+#include <linaos/skbuff.h>
+#include <linaos/string.h>
+#include <linaos/slab.h>
+#include <linaos/list.h>
+#include <linaos/rbtree.h>
+#include <linaos/init.h>
+#include <linaos/rtnetlink.h>
+#include <linaos/pkt_sched.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

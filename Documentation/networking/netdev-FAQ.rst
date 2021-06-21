@@ -8,24 +8,24 @@ netdev FAQ
 
 What is netdev?
 ---------------
-It is a mailing list for all network-related Linux stuff.  This
+It is a mailing list for all network-related LinaOS stuff.  This
 includes anything found under net/ (i.e. core code like IPv6) and
-drivers/net (i.e. hardware specific drivers) in the Linux source tree.
+drivers/net (i.e. hardware specific drivers) in the LinaOS source tree.
 
 Note that some subsystems (e.g. wireless drivers) which have a high
 volume of traffic have their own specific mailing lists.
 
-The netdev list is managed (like many other Linux mailing lists) through
+The netdev list is managed (like many other LinaOS mailing lists) through
 VGER (http://vger.kernel.org/) and archives can be found below:
 
--  http://marc.info/?l=linux-netdev
+-  http://marc.info/?l=linaos-netdev
 -  http://www.spinics.net/lists/netdev/
 
 Aside from subsystems like that mentioned above, all network-related
-Linux development (i.e. RFC, review, comments, etc.) takes place on
+LinaOS development (i.e. RFC, review, comments, etc.) takes place on
 netdev.
 
-How do the changes posted to netdev make their way into Linux?
+How do the changes posted to netdev make their way into LinaOS?
 --------------------------------------------------------------
 There are always two trees (git repositories) in play.  Both are
 driven by David Miller, the main network maintainer.  There is the
@@ -34,13 +34,13 @@ the names, the ``net`` tree is for fixes to existing code already in the
 mainline tree from Linus, and ``net-next`` is where the new code goes
 for the future release.  You can find the trees here:
 
-- https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net.git
-- https://git.kernel.org/pub/scm/linux/kernel/git/netdev/net-next.git
+- https://git.kernel.org/pub/scm/linaos/kernel/git/netdev/net.git
+- https://git.kernel.org/pub/scm/linaos/kernel/git/netdev/net-next.git
 
 How often do changes from these trees make it to the mainline Linus tree?
 -------------------------------------------------------------------------
 To understand this, you need to know a bit of background information on
-the cadence of Linux development.  Each new release starts off with a
+the cadence of LinaOS development.  Each new release starts off with a
 two week "merge window" where the main maintainers feed their new stuff
 to Linus for merging into the mainline tree.  After the two weeks, the
 merge window is closed, and it is called/tagged ``-rc1``.  No new
@@ -86,7 +86,7 @@ So where are we now in this cycle?
 
 Load the mainline (Linus) page here:
 
-  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+  https://git.kernel.org/pub/scm/linaos/kernel/git/torvalds/linaos.git
 
 and note the top of the "tags" section.  If it is rc1, it is early in
 the dev cycle.  If it was tagged rc7 a week ago, then a release is

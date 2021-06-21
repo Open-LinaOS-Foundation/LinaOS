@@ -2,7 +2,7 @@
 /*
  * ip_vs_proto_udp.c:	UDP load balancing support for IPVS
  *
- * Authors:     Wensong Zhang <wensong@linuxvirtualserver.org>
+ * Authors:     Wensong Zhang <wensong@linaosvirtualserver.org>
  *              Julian Anastasov <ja@ssi.bg>
  *
  * Changes:     Hans Schillstrom <hans.schillstrom@ericsson.com>
@@ -12,13 +12,13 @@
 #define KMSG_COMPONENT "IPVS"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/udp.h>
-#include <linux/indirect_call_wrapper.h>
+#include <linaos/in.h>
+#include <linaos/ip.h>
+#include <linaos/kernel.h>
+#include <linaos/netfilter.h>
+#include <linaos/netfilter_ipv4.h>
+#include <linaos/udp.h>
+#include <linaos/indirect_call_wrapper.h>
 
 #include <net/ip_vs.h>
 #include <net/ip.h>

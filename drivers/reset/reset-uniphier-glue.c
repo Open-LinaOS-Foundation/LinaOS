@@ -4,12 +4,12 @@
 // Copyright 2018 Socionext Inc.
 // Author: Kunihiko Hayashi <hayashi.kunihiko@socionext.com>
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/reset/reset-simple.h>
+#include <linaos/clk.h>
+#include <linaos/module.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/reset.h>
+#include <linaos/reset/reset-simple.h>
 
 #define MAX_CLKS	2
 #define MAX_RSTS	2

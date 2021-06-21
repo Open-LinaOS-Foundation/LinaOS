@@ -19,12 +19,12 @@
 
 #define DEBUG /* So dev_dbg() is always available. */
 
-#include <linux/kernel.h> /* For printk. */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/jiffies.h>
-#include <linux/ipmi_msgdefs.h>		/* for completion codes */
+#include <linaos/kernel.h> /* For printk. */
+#include <linaos/module.h>
+#include <linaos/moduleparam.h>
+#include <linaos/string.h>
+#include <linaos/jiffies.h>
+#include <linaos/ipmi_msgdefs.h>		/* for completion codes */
 #include "ipmi_si_sm.h"
 
 /* kcs_debug is a bit-field

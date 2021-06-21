@@ -2,12 +2,12 @@
 #ifndef _ASM_X86_APIC_H
 #define _ASM_X86_APIC_H
 
-#include <linux/cpumask.h>
+#include <linaos/cpumask.h>
 
 #include <asm/alternative.h>
 #include <asm/cpufeature.h>
 #include <asm/apicdef.h>
-#include <linux/atomic.h>
+#include <linaos/atomic.h>
 #include <asm/fixmap.h>
 #include <asm/mpspec.h>
 #include <asm/msr.h>

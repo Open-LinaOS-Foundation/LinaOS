@@ -2,7 +2,7 @@
 #ifndef _ASM_VERMAGIC_H
 #define _ASM_VERMAGIC_H
 
-#include <linux/stringify.h>
+#include <linaos/stringify.h>
 
 /*
  * Add the ARM architecture version to the version magic string

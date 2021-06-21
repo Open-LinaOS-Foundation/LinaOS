@@ -71,7 +71,7 @@ Important facts about the Digital interface:
 --------------------------------------------
 
  * The Do port additionally supports surround-encoded AC-3 and DTS passthrough, 
-   though I haven't tested it under Linux
+   though I haven't tested it under LinaOS
 
    - Note that in this setup only the Do interface can be enabled
 
@@ -389,7 +389,7 @@ You may safely skip this section if you're not interested in driver
 hacking.
 
 This section describes some internal aspects of the device and summarizes the 
-data I got by usb-snooping the windows and Linux drivers.
+data I got by usb-snooping the windows and LinaOS drivers.
 
 The M-Audio Audiophile USB has 7 USB Interfaces:
 a "USB interface":
@@ -534,7 +534,7 @@ If you want to get Ai+Di and/or Ao+Do support with Jack, you would need to
 combine the Alsa devices into one logical "complex" device.
 
 If you want to give it a try, I recommend reading the information from
-this page: http://www.sound-man.co.uk/linuxaudio/ice1712multi.html
+this page: http://www.sound-man.co.uk/linaosaudio/ice1712multi.html
 It is related to another device (ice1712) but can be adapted to suit
 the Audiophile USB.
 

@@ -5,7 +5,7 @@ NAND Error-correction Code
 Introduction
 ============
 
-Having looked at the linux mtd/nand Hamming software ECC engine driver
+Having looked at the linaos mtd/nand Hamming software ECC engine driver
 I felt there was room for optimisation. I bashed the code for a few hours
 performing tricks like table lookup removing superfluous code etc.
 After that the speed was increased by 35-40%.
@@ -280,7 +280,7 @@ Analysis 1
 ==========
 
 The code works, but is not terribly efficient. On my system it took
-almost 4 times as much time as the linux driver code. But hey, if it was
+almost 4 times as much time as the linaos driver code. But hey, if it was
 *that* easy this would have been done long before.
 No pain. no gain.
 
@@ -411,7 +411,7 @@ Analysis 2
 ==========
 
 The code (of course) works, and hurray: we are a little bit faster than
-the linux driver code (about 15%). But wait, don't cheer too quickly.
+the linaos driver code (about 15%). But wait, don't cheer too quickly.
 There is more to be gained.
 If we look at e.g. rp14 and rp15 we see that we either xor our data with
 rp14 or with rp15. However we also have par which goes over all data.
@@ -537,7 +537,7 @@ Analysis 5
 
 Measurements showed this was a good move. The run-time roughly halved
 compared with attempt 4 with 4 times unrolled, and we only require 1/3rd
-of the processor time compared to the current code in the linux kernel.
+of the processor time compared to the current code in the linaos kernel.
 
 However, still I thought there was more. I didn't like all the if
 statements. Why not keep a running parity and only keep the last if
@@ -591,7 +591,7 @@ Analysis 6
 ==========
 
 Measuring this code again showed big gain. When executing the original
-linux code 1 million times, this took about 1 second on my system.
+linaos code 1 million times, this took about 1 second on my system.
 (using time to measure the performance). After this iteration I was back
 to 0.075 sec. Actually I had to decide to start measuring over 10
 million iterations in order not to lose too much accuracy. This one
@@ -711,7 +711,7 @@ The only marginal change was inverting the parity bits, so we can remove
 the last three invert statements.
 
 Ah well, pity this does not deliver more. Then again 10 million
-iterations using the linux driver code takes between 13 and 13.5
+iterations using the linaos driver code takes between 13 and 13.5
 seconds, whereas my code now takes about 0.73 seconds for those 10
 million iterations. So basically I've improved the performance by a
 factor 18 on my system. Not that bad. Of course on different hardware

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Ioctl handler
- *	Linux ethernet bridge
+ *	LinaOS ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/if_bridge.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/times.h>
+#include <linaos/capability.h>
+#include <linaos/kernel.h>
+#include <linaos/if_bridge.h>
+#include <linaos/netdevice.h>
+#include <linaos/slab.h>
+#include <linaos/times.h>
 #include <net/net_namespace.h>
-#include <linux/uaccess.h>
+#include <linaos/uaccess.h>
 #include "br_private.h"
 
 static int get_bridge_ifindices(struct net *net, int *indices, int num)

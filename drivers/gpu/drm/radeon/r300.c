@@ -26,9 +26,9 @@
  *          Jerome Glisse
  */
 
-#include <linux/pci.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <linaos/pci.h>
+#include <linaos/seq_file.h>
+#include <linaos/slab.h>
 
 #include <drm/drm.h>
 #include <drm/drm_crtc_helper.h>

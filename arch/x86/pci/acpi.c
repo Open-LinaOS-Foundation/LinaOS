@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/pci-acpi.h>
+#include <linaos/pci.h>
+#include <linaos/acpi.h>
+#include <linaos/init.h>
+#include <linaos/irq.h>
+#include <linaos/dmi.h>
+#include <linaos/slab.h>
+#include <linaos/pci-acpi.h>
 #include <asm/numa.h>
 #include <asm/pci_x86.h>
 

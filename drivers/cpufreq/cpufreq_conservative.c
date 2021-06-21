@@ -8,7 +8,7 @@
  *            (C)  2009 Alexander Clouter <alex@digriz.org.uk>
  */
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 #include "cpufreq_governor.h"
 
 struct cs_policy_dbs_info {

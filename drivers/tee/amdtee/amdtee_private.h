@@ -7,15 +7,15 @@
 #ifndef AMDTEE_PRIVATE_H
 #define AMDTEE_PRIVATE_H
 
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/tee_drv.h>
-#include <linux/kref.h>
-#include <linux/types.h>
+#include <linaos/mutex.h>
+#include <linaos/spinlock.h>
+#include <linaos/tee_drv.h>
+#include <linaos/kref.h>
+#include <linaos/types.h>
 #include "amdtee_if.h"
 
 #define DRIVER_NAME	"amdtee"
-#define DRIVER_AUTHOR   "AMD-TEE Linux driver team"
+#define DRIVER_AUTHOR   "AMD-TEE LinaOS driver team"
 
 /* Some GlobalPlatform error codes used in this driver */
 #define TEEC_SUCCESS			0x00000000

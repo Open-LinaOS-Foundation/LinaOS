@@ -14,7 +14,7 @@
  *
  * See the GNU General Public License for more details.
  */
-#include <linux/types.h>
+#include <linaos/types.h>
 #include <net/llc_if.h>
 #include <net/llc_s_ev.h>
 #include <net/llc_s_ac.h>

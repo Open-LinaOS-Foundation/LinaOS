@@ -2,7 +2,7 @@
 #ifndef __ASM_ARM_SWITCH_TO_H
 #define __ASM_ARM_SWITCH_TO_H
 
-#include <linux/thread_info.h>
+#include <linaos/thread_info.h>
 
 /*
  * For v7 SMP cores running a preemptible kernel we may be pre-empted

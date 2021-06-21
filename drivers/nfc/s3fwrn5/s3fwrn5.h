@@ -9,7 +9,7 @@
 #ifndef __LOCAL_S3FWRN5_H_
 #define __LOCAL_S3FWRN5_H_
 
-#include <linux/nfc.h>
+#include <linaos/nfc.h>
 
 #include <net/nfc/nci_core.h>
 

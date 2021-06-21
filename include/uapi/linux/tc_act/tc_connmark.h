@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 #ifndef __UAPI_TC_CONNMARK_H
 #define __UAPI_TC_CONNMARK_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
+#include <linaos/types.h>
+#include <linaos/pkt_cls.h>
 
 struct tc_connmark {
 	tc_gen;

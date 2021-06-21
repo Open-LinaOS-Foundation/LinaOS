@@ -23,8 +23,8 @@
 #ifndef __KFD_TOPOLOGY_H__
 #define __KFD_TOPOLOGY_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <linaos/types.h>
+#include <linaos/list.h>
 #include "kfd_crat.h"
 
 #define KFD_TOPOLOGY_PUBLIC_NAME_SIZE 32

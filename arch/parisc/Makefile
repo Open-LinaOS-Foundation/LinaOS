@@ -13,7 +13,7 @@
 # Copyright (C) 1994 by Linus Torvalds
 # Portions Copyright (C) 1999 The Puffin Group
 #
-# Modified for PA-RISC Linux by Paul Lahaie, Alex deVries, 
+# Modified for PA-RISC LinaOS by Paul Lahaie, Alex deVries, 
 # Mike Shaver, Helge Deller and Martin K. Petersen
 #
 
@@ -26,10 +26,10 @@ ifdef CONFIG_64BIT
 UTS_MACHINE	:= parisc64
 CHECKFLAGS	+= -D__LP64__=1
 CC_ARCHES	= hppa64
-LD_BFD		:= elf64-hppa-linux
+LD_BFD		:= elf64-hppa-linaos
 else # 32-bit
 CC_ARCHES	= hppa hppa2.0 hppa1.1
-LD_BFD		:= elf32-hppa-linux
+LD_BFD		:= elf32-hppa-linaos
 endif
 
 # select defconfig based on actual architecture
@@ -43,7 +43,7 @@ export LD_BFD
 
 ifdef cross_compiling
 	ifeq ($(CROSS_COMPILE),)
-		CC_SUFFIXES = linux linux-gnu unknown-linux-gnu
+		CC_SUFFIXES = linaos linaos-gnu unknown-linaos-gnu
 		CROSS_COMPILE := $(call cc-cross-prefix, \
 			$(foreach a,$(CC_ARCHES), \
 			$(foreach s,$(CC_SUFFIXES),$(a)-$(s)-)))
@@ -71,7 +71,7 @@ OBJCOPY_FLAGS =-O binary -R .note -R .comment -S
 
 cflags-y	:= -pipe
 
-# These flags should be implied by an hppa-linux configuration, but they
+# These flags should be implied by an hppa-linaos configuration, but they
 # are not in gcc 3.2.
 cflags-y	+= -mno-space-regs
 
@@ -86,7 +86,7 @@ endif
 cflags-y	+= -mdisable-fpregs
 
 # Use long jumps instead of long branches (needed if your linker fails to
-# link a too big vmlinux executable). Not enabled for building modules.
+# link a too big vmlinaos executable). Not enabled for building modules.
 ifdef CONFIG_MLONGCALLS
 KBUILD_CFLAGS_KERNEL += -mlong-calls
 endif
@@ -150,22 +150,22 @@ PHONY += bzImage $(BOOT_TARGETS) $(INSTALL_TARGETS)
 all: bzImage
 
 zImage: vmlinuz
-Image: vmlinux
+Image: vmlinaos
 
-bzImage: vmlinux
+bzImage: vmlinaos
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 
 ifdef CONFIG_PARISC_SELF_EXTRACT
 vmlinuz: bzImage
 	$(OBJCOPY) $(boot)/bzImage $@
 else
-vmlinuz: vmlinux
+vmlinuz: vmlinaos
 	@$(KGZIP) -cf -9 $< > $@
 endif
 
 install:
 	$(CONFIG_SHELL) $(srctree)/arch/parisc/install.sh \
-			$(KERNELRELEASE) vmlinux System.map "$(INSTALL_PATH)"
+			$(KERNELRELEASE) vmlinaos System.map "$(INSTALL_PATH)"
 zinstall:
 	$(CONFIG_SHELL) $(srctree)/arch/parisc/install.sh \
 			$(KERNELRELEASE) vmlinuz System.map "$(INSTALL_PATH)"
@@ -174,10 +174,10 @@ CLEAN_FILES	+= lifimage
 MRPROPER_FILES	+= palo.conf
 
 define archhelp
-	@echo  '* vmlinux	- Uncompressed kernel image (./vmlinux)'
+	@echo  '* vmlinaos	- Uncompressed kernel image (./vmlinaos)'
 	@echo  '  vmlinuz	- Compressed kernel image (./vmlinuz)'
 	@echo  '  palo		- Bootable image (./lifimage)'
-	@echo  '  install	- Install uncompressed vmlinux kernel using'
+	@echo  '  install	- Install uncompressed vmlinaos kernel using'
 	@echo  '		  (your) ~/bin/$(INSTALLKERNEL) or'
 	@echo  '		  (distribution) /sbin/$(INSTALLKERNEL) or'
 	@echo  '		  copy to $$(INSTALL_PATH)'

@@ -5,7 +5,7 @@
  *
  * Copyright(c) 2016 Intel Corporation.
  *
- * Author: Tim Chen <tim.c.chen@linux.intel.com>
+ * Author: Tim Chen <tim.c.chen@linaos.intel.com>
  *
  * We allocate the swap slots from the global pool and put
  * it into local per cpu caches.  This has the advantage
@@ -27,12 +27,12 @@
  * we can possibly sleep.
  */
 
-#include <linux/swap_slots.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
+#include <linaos/swap_slots.h>
+#include <linaos/cpu.h>
+#include <linaos/cpumask.h>
+#include <linaos/vmalloc.h>
+#include <linaos/mutex.h>
+#include <linaos/mm.h>
 
 static DEFINE_PER_CPU(struct swap_slots_cache, swp_slots);
 static bool	swap_slot_cache_active;

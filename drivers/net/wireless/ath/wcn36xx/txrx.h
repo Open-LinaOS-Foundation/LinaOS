@@ -17,7 +17,7 @@
 #ifndef _TXRX_H_
 #define _TXRX_H_
 
-#include <linux/etherdevice.h>
+#include <linaos/etherdevice.h>
 #include "wcn36xx.h"
 
 /* TODO describe all properties */

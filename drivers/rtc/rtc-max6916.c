@@ -7,13 +7,13 @@
  * Author : Venkat Prashanth B U <venkat.prashanth2498@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/spi/spi.h>
-#include <linux/bcd.h>
+#include <linaos/init.h>
+#include <linaos/module.h>
+#include <linaos/device.h>
+#include <linaos/platform_device.h>
+#include <linaos/rtc.h>
+#include <linaos/spi/spi.h>
+#include <linaos/bcd.h>
 
 /* Registers in max6916 rtc */
 

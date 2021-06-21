@@ -8,8 +8,8 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/module.h>
 #include "otx_cptvf.h"
 #include "otx_cptvf_algs.h"
 #include "otx_cptvf_reqmgr.h"

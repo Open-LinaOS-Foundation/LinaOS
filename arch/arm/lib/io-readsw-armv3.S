@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/io-readsw-armv3.S
+ *  linaos/arch/arm/lib/io-readsw-armv3.S
  *
  *  Copyright (C) 1995-2000 Russell King
  */
-#include <linux/linkage.h>
+#include <linaos/linkage.h>
 #include <asm/assembler.h>
 
 .Linsw_bad_alignment:

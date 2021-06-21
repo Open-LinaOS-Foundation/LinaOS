@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2000, 2001 Broadcom Corporation
  */
-#include <linux/clocksource.h>
-#include <linux/sched_clock.h>
+#include <linaos/clocksource.h>
+#include <linaos/sched_clock.h>
 
 #include <asm/addrspace.h>
 #include <asm/io.h>

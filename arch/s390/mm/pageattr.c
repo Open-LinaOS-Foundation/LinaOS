@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright IBM Corp. 2011
- * Author(s): Jan Glauber <jang@linux.vnet.ibm.com>
+ * Author(s): Jan Glauber <jang@linaos.vnet.ibm.com>
  */
-#include <linux/hugetlb.h>
-#include <linux/mm.h>
+#include <linaos/hugetlb.h>
+#include <linaos/mm.h>
 #include <asm/cacheflush.h>
 #include <asm/facility.h>
 #include <asm/pgalloc.h>

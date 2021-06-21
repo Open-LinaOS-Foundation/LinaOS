@@ -3,11 +3,11 @@
  * By Urban Widmark 2000
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/string.h>
+#include <linaos/nls.h>
+#include <linaos/errno.h>
 
 static unsigned char identity[256];
 

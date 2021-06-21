@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2020 MediaTek Inc. */
 
-#include <linux/firmware.h>
-#include <linux/fs.h>
+#include <linaos/firmware.h>
+#include <linaos/fs.h>
 #include "mt7921.h"
 #include "mt7921_trace.h"
 #include "mcu.h"

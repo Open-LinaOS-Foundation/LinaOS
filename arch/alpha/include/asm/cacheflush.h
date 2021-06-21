@@ -2,7 +2,7 @@
 #ifndef _ALPHA_CACHEFLUSH_H
 #define _ALPHA_CACHEFLUSH_H
 
-#include <linux/mm.h>
+#include <linaos/mm.h>
 
 /* Note that the following two definitions are _highly_ dependent
    on the contexts in which they are used in the kernel.  I personally
@@ -31,7 +31,7 @@ extern void smp_imb(void);
 /* ??? Ought to use this in arch/alpha/kernel/signal.c too.  */
 
 #ifndef CONFIG_SMP
-#include <linux/sched.h>
+#include <linaos/sched.h>
 
 extern void __load_new_mm_context(struct mm_struct *);
 static inline void

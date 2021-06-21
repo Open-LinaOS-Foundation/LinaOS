@@ -5,26 +5,26 @@
  * Authors: Jérôme Glisse <jglisse@redhat.com>
  */
 /*
- * Refer to include/linux/hmm.h for information about heterogeneous memory
+ * Refer to include/linaos/hmm.h for information about heterogeneous memory
  * management or HMM for short.
  */
-#include <linux/pagewalk.h>
-#include <linux/hmm.h>
-#include <linux/init.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mmzone.h>
-#include <linux/pagemap.h>
-#include <linux/swapops.h>
-#include <linux/hugetlb.h>
-#include <linux/memremap.h>
-#include <linux/sched/mm.h>
-#include <linux/jump_label.h>
-#include <linux/dma-mapping.h>
-#include <linux/mmu_notifier.h>
-#include <linux/memory_hotplug.h>
+#include <linaos/pagewalk.h>
+#include <linaos/hmm.h>
+#include <linaos/init.h>
+#include <linaos/rmap.h>
+#include <linaos/swap.h>
+#include <linaos/slab.h>
+#include <linaos/sched.h>
+#include <linaos/mmzone.h>
+#include <linaos/pagemap.h>
+#include <linaos/swapops.h>
+#include <linaos/hugetlb.h>
+#include <linaos/memremap.h>
+#include <linaos/sched/mm.h>
+#include <linaos/jump_label.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/mmu_notifier.h>
+#include <linaos/memory_hotplug.h>
 
 struct hmm_vma_walk {
 	struct hmm_range	*range;

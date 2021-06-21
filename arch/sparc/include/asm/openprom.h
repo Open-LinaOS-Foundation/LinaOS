@@ -12,10 +12,10 @@
 #define LINUX_OPPROM_MAGIC      0x10010407
 
 #ifndef __ASSEMBLY__
-#include <linux/of.h>
+#include <linaos/of.h>
 
 /* V0 prom device operations. */
-struct linux_dev_v0_funcs {
+struct linaos_dev_v0_funcs {
 	int (*v0_devopen)(char *device_str);
 	int (*v0_devclose)(int dev_desc);
 	int (*v0_rdblkdev)(int dev_desc, int num_blks, int blk_st, char *buf);
@@ -28,7 +28,7 @@ struct linux_dev_v0_funcs {
 };
 
 /* V2 and later prom device operations. */
-struct linux_dev_v2_funcs {
+struct linaos_dev_v2_funcs {
 	phandle (*v2_inst2pkg)(int d);	/* Convert ihandle to phandle */
 	char * (*v2_dumb_mem_alloc)(char *va, unsigned int sz);
 	void (*v2_dumb_mem_free)(char *va, unsigned int sz);
@@ -48,20 +48,20 @@ struct linux_dev_v2_funcs {
 	void (*v2_wheee3)(void);
 };
 
-struct linux_mlist_v0 {
-	struct linux_mlist_v0 *theres_more;
+struct linaos_mlist_v0 {
+	struct linaos_mlist_v0 *theres_more;
 	unsigned int start_adr;
 	unsigned int num_bytes;
 };
 
-struct linux_mem_v0 {
-	struct linux_mlist_v0 **v0_totphys;
-	struct linux_mlist_v0 **v0_prommap;
-	struct linux_mlist_v0 **v0_available; /* What we can use */
+struct linaos_mem_v0 {
+	struct linaos_mlist_v0 **v0_totphys;
+	struct linaos_mlist_v0 **v0_prommap;
+	struct linaos_mlist_v0 **v0_available; /* What we can use */
 };
 
 /* Arguments sent to the kernel from the boot prompt. */
-struct linux_arguments_v0 {
+struct linaos_arguments_v0 {
 	char *argv[8];
 	char args[100];
 	char boot_dev[2];
@@ -73,7 +73,7 @@ struct linux_arguments_v0 {
 };
 
 /* V2 and up boot things. */
-struct linux_bootargs_v2 {
+struct linaos_bootargs_v2 {
 	char **bootpath;
 	char **bootargs;
 	int *fd_stdin;
@@ -81,7 +81,7 @@ struct linux_bootargs_v2 {
 };
 
 /* The top level PROM vector. */
-struct linux_romvec {
+struct linaos_romvec {
 	/* Version numbers. */
 	unsigned int pv_magic_cookie;
 	unsigned int pv_romvers;
@@ -89,13 +89,13 @@ struct linux_romvec {
 	unsigned int pv_printrev;
 
 	/* Version 0 memory descriptors. */
-	struct linux_mem_v0 pv_v0mem;
+	struct linaos_mem_v0 pv_v0mem;
 
 	/* Node operations. */
-	struct linux_nodeops *pv_nodeops;
+	struct linaos_nodeops *pv_nodeops;
 
 	char **pv_bootstr;
-	struct linux_dev_v0_funcs pv_v0devops;
+	struct linaos_dev_v0_funcs pv_v0devops;
 
 	char *pv_stdin;
 	char *pv_stdout;
@@ -128,13 +128,13 @@ struct linux_romvec {
 		void (*v2_eval)(char *str);
 	} pv_fortheval;
 
-	struct linux_arguments_v0 **pv_v0bootargs;
+	struct linaos_arguments_v0 **pv_v0bootargs;
 
 	/* Get ether address. */
 	unsigned int (*pv_enaddr)(int d, char *enaddr);
 
-	struct linux_bootargs_v2 pv_v2bootargs;
-	struct linux_dev_v2_funcs pv_v2devops;
+	struct linaos_bootargs_v2 pv_v2bootargs;
+	struct linaos_dev_v2_funcs pv_v2devops;
 
 	int filler[15];
 
@@ -170,7 +170,7 @@ struct linux_romvec {
 };
 
 /* Routines for traversing the prom device tree. */
-struct linux_nodeops {
+struct linaos_nodeops {
 	phandle (*no_nextnode)(phandle node);
 	phandle (*no_child)(phandle node);
 	int (*no_proplen)(phandle node, const char *name);
@@ -190,24 +190,24 @@ struct linux_nodeops {
 #define PROMINTR_MAX    15
 #endif
 
-struct linux_prom_registers {
+struct linaos_prom_registers {
 	unsigned int which_io;	/* hi part of physical address */
 	unsigned int phys_addr;	/* The physical address of this register */
 	unsigned int reg_size;	/* How many bytes does this register take up? */
 };
 
-struct linux_prom64_registers {
+struct linaos_prom64_registers {
 	unsigned long phys_addr;
 	unsigned long reg_size;
 };
 
-struct linux_prom_irqs {
+struct linaos_prom_irqs {
 	int pri;    /* IRQ priority */
 	int vector; /* This is foobar, what does it do? */
 };
 
 /* Element of the "ranges" vector */
-struct linux_prom_ranges {
+struct linaos_prom_ranges {
 	unsigned int ot_child_space;
 	unsigned int ot_child_base;		/* Bus feels this */
 	unsigned int ot_parent_space;
@@ -219,7 +219,7 @@ struct linux_prom_ranges {
  * Ranges and reg properties are a bit different for PCI.
  */
 #if defined(__sparc__) && defined(__arch64__)
-struct linux_prom_pci_registers {
+struct linaos_prom_pci_registers {
 	unsigned int phys_hi;
 	unsigned int phys_mid;
 	unsigned int phys_lo;
@@ -228,7 +228,7 @@ struct linux_prom_pci_registers {
 	unsigned int size_lo;
 };
 #else
-struct linux_prom_pci_registers {
+struct linaos_prom_pci_registers {
 	/*
 	 * We don't know what information this field contain.
 	 * We guess, PCI device function is in bits 15:8
@@ -245,7 +245,7 @@ struct linux_prom_pci_registers {
 
 #endif
 
-struct linux_prom_pci_ranges {
+struct linaos_prom_pci_ranges {
 	unsigned int child_phys_hi;	/* Only certain bits are encoded here. */
 	unsigned int child_phys_mid;
 	unsigned int child_phys_lo;
@@ -257,7 +257,7 @@ struct linux_prom_pci_ranges {
 	unsigned int size_lo;
 };
 
-struct linux_prom_pci_intmap {
+struct linaos_prom_pci_intmap {
 	unsigned int phys_hi;
 	unsigned int phys_mid;
 	unsigned int phys_lo;
@@ -268,7 +268,7 @@ struct linux_prom_pci_intmap {
 	unsigned int cinterrupt;
 };
 
-struct linux_prom_pci_intmask {
+struct linaos_prom_pci_intmask {
 	unsigned int phys_hi;
 	unsigned int phys_mid;
 	unsigned int phys_lo;

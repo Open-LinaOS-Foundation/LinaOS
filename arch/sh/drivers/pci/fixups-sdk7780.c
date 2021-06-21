@@ -8,9 +8,9 @@
  * Copyright (C) 2004 - 2006  Paul Mundt
  * Copyright (C) 2006  Nobuhiro Iwamatsu
  */
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/sh_intc.h>
+#include <linaos/pci.h>
+#include <linaos/io.h>
+#include <linaos/sh_intc.h>
 #include "pci-sh4.h"
 
 #define IRQ_INTA	evt2irq(0xa20)

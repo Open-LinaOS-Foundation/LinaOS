@@ -2,7 +2,7 @@
 
 #ifndef __Q6DSP_ERR_NO_H__
 #define __Q6DSP_ERR_NO_H__
-#include <linux/kernel.h>
+#include <linaos/kernel.h>
 
 /* Success. The operation completed with no errors. */
 #define ADSP_EOK          0x00000000

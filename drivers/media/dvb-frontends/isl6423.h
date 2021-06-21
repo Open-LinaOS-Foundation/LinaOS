@@ -9,7 +9,7 @@
 #ifndef __ISL_6423_H
 #define __ISL_6423_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 enum isl6423_current {
 	SEC_CURRENT_275m = 0,

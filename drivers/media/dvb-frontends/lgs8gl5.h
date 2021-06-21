@@ -11,7 +11,7 @@
 #ifndef LGS8GL5_H
 #define LGS8GL5_H
 
-#include <linux/dvb/frontend.h>
+#include <linaos/dvb/frontend.h>
 
 struct lgs8gl5_config {
 	/* the demodulator's i2c address */

@@ -7,19 +7,19 @@
 
 #undef DEBUG
 
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/types.h>
+#include <linaos/interrupt.h>
+#include <linaos/string.h>
+#include <linaos/delay.h>
+#include <linaos/netdevice.h>
+#include <linaos/platform_device.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
 
 #include <asm/sgi/hpc3.h>
 #include <asm/sgi/ip22.h>
@@ -843,6 +843,6 @@ static struct platform_driver sgiseeq_driver = {
 module_platform_driver(sgiseeq_driver);
 
 MODULE_DESCRIPTION("SGI Seeq 8003 driver");
-MODULE_AUTHOR("Linux/MIPS Mailing List <linux-mips@linux-mips.org>");
+MODULE_AUTHOR("LinaOS/MIPS Mailing List <linaos-mips@linaos-mips.org>");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:sgiseeq");

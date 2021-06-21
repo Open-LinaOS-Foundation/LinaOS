@@ -10,9 +10,9 @@
 #ifndef __LINUX_MTD_PLATNAND_H
 #define __LINUX_MTD_PLATNAND_H
 
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_device.h>
+#include <linaos/mtd/partitions.h>
+#include <linaos/mtd/rawnand.h>
+#include <linaos/platform_device.h>
 
 /**
  * struct platform_nand_chip - chip level device structure

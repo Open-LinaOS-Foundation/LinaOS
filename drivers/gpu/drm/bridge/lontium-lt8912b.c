@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
+#include <linaos/device.h>
+#include <linaos/delay.h>
+#include <linaos/gpio/consumer.h>
+#include <linaos/i2c.h>
+#include <linaos/gpio.h>
+#include <linaos/of_gpio.h>
+#include <linaos/regmap.h>
 
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_atomic_helper.h>

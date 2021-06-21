@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@linaos.ie>
  * Copyright (c) 2008 Red Hat Inc.
  *
  * DRM core CRTC related functions
@@ -26,15 +26,15 @@
  * Authors:
  *      Keith Packard
  *	Eric Anholt <eric@anholt.net>
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@linaos.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  */
-#include <linux/ctype.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/dma-fence.h>
-#include <linux/uaccess.h>
+#include <linaos/ctype.h>
+#include <linaos/list.h>
+#include <linaos/slab.h>
+#include <linaos/export.h>
+#include <linaos/dma-fence.h>
+#include <linaos/uaccess.h>
 #include <drm/drm_crtc.h>
 #include <drm/drm_edid.h>
 #include <drm/drm_fourcc.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH LinaOS-syscall-note */
 /*
  *  Name                         : qnxtypes.h
  *  Author                       : Richard Frowijn
@@ -10,7 +10,7 @@
 #ifndef _QNX4TYPES_H
 #define _QNX4TYPES_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 typedef __le16 qnx4_nxtnt_t;
 typedef __u8  qnx4_ftype_t;

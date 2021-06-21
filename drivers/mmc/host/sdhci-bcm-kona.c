@@ -11,18 +11,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/highmem.h>
-#include <linux/platform_device.h>
-#include <linux/mmc/host.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mmc/slot-gpio.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/delay.h>
+#include <linaos/highmem.h>
+#include <linaos/platform_device.h>
+#include <linaos/mmc/host.h>
+#include <linaos/io.h>
+#include <linaos/clk.h>
+#include <linaos/regulator/consumer.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/mmc/slot-gpio.h>
 
 #include "sdhci-pltfm.h"
 #include "sdhci.h"

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #define _GNU_SOURCE
 
-#include <linux/limits.h>
+#include <linaos/limits.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * mft.h - Defines for mft record handling in NTFS Linux kernel driver.
- *	   Part of the Linux-NTFS project.
+ * mft.h - Defines for mft record handling in NTFS LinaOS kernel driver.
+ *	   Part of the LinaOS-NTFS project.
  *
  * Copyright (c) 2001-2004 Anton Altaparmakov
  */
@@ -9,9 +9,9 @@
 #ifndef _LINUX_NTFS_MFT_H
 #define _LINUX_NTFS_MFT_H
 
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <linaos/fs.h>
+#include <linaos/highmem.h>
+#include <linaos/pagemap.h>
 
 #include "inode.h"
 

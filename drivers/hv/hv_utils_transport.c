@@ -5,9 +5,9 @@
  * Copyright (C) 2015, Vitaly Kuznetsov <vkuznets@redhat.com>
  */
 
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
+#include <linaos/slab.h>
+#include <linaos/fs.h>
+#include <linaos/poll.h>
 
 #include "hyperv_vmbus.h"
 #include "hv_utils_transport.h"

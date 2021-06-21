@@ -71,29 +71,29 @@
  * currently programmed in the FPGA.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/sysctl.h>
-#include <linux/fs.h>
-#include <linux/cdev.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/ioport.h>
+#include <linaos/interrupt.h>
+#include <linaos/fcntl.h>
+#include <linaos/init.h>
+#include <linaos/poll.h>
+#include <linaos/proc_fs.h>
+#include <linaos/mutex.h>
+#include <linaos/sysctl.h>
+#include <linaos/fs.h>
+#include <linaos/cdev.h>
+#include <linaos/platform_device.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/uaccess.h>
 
 #ifdef CONFIG_OF
 /* For open firmware. */
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <linaos/of_address.h>
+#include <linaos/of_device.h>
+#include <linaos/of_platform.h>
 #endif
 
 #include "xilinx_hwicap.h"

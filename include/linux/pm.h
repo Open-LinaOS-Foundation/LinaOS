@@ -8,13 +8,13 @@
 #ifndef _LINUX_PM_H
 #define _LINUX_PM_H
 
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/timer.h>
-#include <linux/hrtimer.h>
-#include <linux/completion.h>
+#include <linaos/list.h>
+#include <linaos/workqueue.h>
+#include <linaos/spinlock.h>
+#include <linaos/wait.h>
+#include <linaos/timer.h>
+#include <linaos/hrtimer.h>
+#include <linaos/completion.h>
 
 /*
  * Callbacks for platform drivers to implement.

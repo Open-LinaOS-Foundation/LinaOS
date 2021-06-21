@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (C) 2001 Lennert Buytenhek (buytenh@gnu.org)
- * Copyright (C) 2001 - 2008 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2001 - 2008 Jeff Dike (jdike@{addtoit,linaos.intel}.com)
  */
 
-#include <linux/console.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/sched/debug.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/utsname.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/file.h>
-#include <linux/uaccess.h>
+#include <linaos/console.h>
+#include <linaos/ctype.h>
+#include <linaos/string.h>
+#include <linaos/interrupt.h>
+#include <linaos/list.h>
+#include <linaos/mm.h>
+#include <linaos/module.h>
+#include <linaos/notifier.h>
+#include <linaos/reboot.h>
+#include <linaos/sched/debug.h>
+#include <linaos/proc_fs.h>
+#include <linaos/slab.h>
+#include <linaos/syscalls.h>
+#include <linaos/utsname.h>
+#include <linaos/socket.h>
+#include <linaos/un.h>
+#include <linaos/workqueue.h>
+#include <linaos/mutex.h>
+#include <linaos/fs.h>
+#include <linaos/mount.h>
+#include <linaos/file.h>
+#include <linaos/uaccess.h>
 #include <asm/switch_to.h>
 
 #include <init.h>
@@ -613,7 +613,7 @@ static void with_console(struct mc_request *req, void (*proc)(void *),
 
 #ifdef CONFIG_MAGIC_SYSRQ
 
-#include <linux/sysrq.h>
+#include <linaos/sysrq.h>
 
 static void sysrq_proc(void *arg)
 {
@@ -654,7 +654,7 @@ static void stack_proc(void *arg)
 /*
  * Mconsole stack trace
  *  Added by Allan Graves, Jeff Dike
- *  Dumps a stacks registers to the linux console.
+ *  Dumps a stacks registers to the linaos console.
  *  Usage stack <pid>.
  */
 void mconsole_stack(struct mc_request *req)

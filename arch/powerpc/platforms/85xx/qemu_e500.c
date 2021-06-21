@@ -11,9 +11,9 @@
  * Copyright 2012 Freescale Semiconductor Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/of_fdt.h>
-#include <linux/pgtable.h>
+#include <linaos/kernel.h>
+#include <linaos/of_fdt.h>
+#include <linaos/pgtable.h>
 #include <asm/machdep.h>
 #include <asm/time.h>
 #include <asm/udbg.h>

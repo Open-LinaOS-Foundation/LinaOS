@@ -2,9 +2,9 @@
 #ifndef _BBC_I2C_H
 #define _BBC_I2C_H
 
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/list.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/list.h>
 
 struct bbc_i2c_client {
 	struct bbc_i2c_bus		*bp;

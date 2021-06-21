@@ -6,13 +6,13 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/ptrace.h>
-#include <linux/syscore_ops.h>
-#include <linux/sched/clock.h>
+#include <linaos/perf_event.h>
+#include <linaos/init.h>
+#include <linaos/export.h>
+#include <linaos/pci.h>
+#include <linaos/ptrace.h>
+#include <linaos/syscore_ops.h>
+#include <linaos/sched/clock.h>
 
 #include <asm/apic.h>
 
@@ -22,8 +22,8 @@ static u32 ibs_caps;
 
 #if defined(CONFIG_PERF_EVENTS) && defined(CONFIG_CPU_SUP_AMD)
 
-#include <linux/kprobes.h>
-#include <linux/hardirq.h>
+#include <linaos/kprobes.h>
+#include <linaos/hardirq.h>
 
 #include <asm/nmi.h>
 

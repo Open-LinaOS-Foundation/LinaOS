@@ -2,11 +2,11 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include <linux/bpf.h>
-#include <linux/stddef.h>
-#include <linux/pkt_cls.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
+#include <linaos/bpf.h>
+#include <linaos/stddef.h>
+#include <linaos/pkt_cls.h>
+#include <linaos/if_ether.h>
+#include <linaos/ip.h>
 
 #include <bpf/bpf_helpers.h>
 

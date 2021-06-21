@@ -4,7 +4,7 @@
 #ifndef LINEAR_RANGE_H
 #define LINEAR_RANGE_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 /**
  * struct linear_range - table of selector - value pairs

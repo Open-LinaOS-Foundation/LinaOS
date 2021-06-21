@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Syncookies implementation for the Linux kernel
+ *  Syncookies implementation for the LinaOS kernel
  *
  *  Copyright (C) 1997 Andi Kleen
  *  Based on ideas by D.J.Bernstein and Eric Schenk.
  */
 
-#include <linux/tcp.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/siphash.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <linaos/tcp.h>
+#include <linaos/slab.h>
+#include <linaos/random.h>
+#include <linaos/siphash.h>
+#include <linaos/kernel.h>
+#include <linaos/export.h>
 #include <net/secure_seq.h>
 #include <net/tcp.h>
 #include <net/route.h>

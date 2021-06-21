@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * File: include/linux/omapfb.h
+ * File: include/linaos/omapfb.h
  *
  * Framebuffer driver for TI OMAP boards
  *
@@ -10,7 +10,7 @@
 #ifndef __LINUX_OMAPFB_H__
 #define __LINUX_OMAPFB_H__
 
-#include <uapi/linux/omapfb.h>
+#include <uapi/linaos/omapfb.h>
 
 
 struct omap_lcd_config {

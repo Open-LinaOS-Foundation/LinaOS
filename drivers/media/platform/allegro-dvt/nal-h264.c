@@ -12,14 +12,14 @@
  * encoded stream if the hardware does not generate the units.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/v4l2-controls.h>
+#include <linaos/kernel.h>
+#include <linaos/types.h>
+#include <linaos/string.h>
+#include <linaos/v4l2-controls.h>
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/log2.h>
+#include <linaos/device.h>
+#include <linaos/export.h>
+#include <linaos/log2.h>
 
 #include "nal-h264.h"
 #include "nal-rbsp.h"

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH LinaOS-syscall-note */
 /*
  * Copyright 2019 IBM Corp.
  */
@@ -6,7 +6,7 @@
 #ifndef _UAPI_MISC_VAS_H
 #define _UAPI_MISC_VAS_H
 
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/ioctl.h>
 

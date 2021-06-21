@@ -13,8 +13,8 @@
 #ifndef ATLX_H
 #define ATLX_H
 
-#include <linux/module.h>
-#include <linux/types.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
 
 #define ATLX_ERR_PHY			2
 #define ATLX_ERR_PHY_SPEED		7

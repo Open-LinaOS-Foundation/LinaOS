@@ -4,9 +4,9 @@
  * Copyright 2015 Joachim Eastwood <manabian@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <linaos/module.h>
+#include <linaos/regmap.h>
+#include <linaos/spi/spi.h>
 
 #include "mma7455.h"
 

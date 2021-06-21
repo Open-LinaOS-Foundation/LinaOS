@@ -8,32 +8,32 @@
  * Based on Sharp's 2.4 kernel patches/lubbock.c
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>	/* symbol_get ; symbol_put */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/mmc/host.h>
-#include <linux/mtd/physmap.h>
-#include <linux/pm.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/backlight.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/io.h>
-#include <linux/regulator/machine.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/spi/corgi_lcd.h>
-#include <linux/spi/pxa2xx_spi.h>
-#include <linux/mtd/sharpsl.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/gpio_keys.h>
-#include <linux/memblock.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>	/* symbol_get ; symbol_put */
+#include <linaos/init.h>
+#include <linaos/platform_device.h>
+#include <linaos/major.h>
+#include <linaos/fs.h>
+#include <linaos/interrupt.h>
+#include <linaos/leds.h>
+#include <linaos/mmc/host.h>
+#include <linaos/mtd/physmap.h>
+#include <linaos/pm.h>
+#include <linaos/gpio.h>
+#include <linaos/gpio/machine.h>
+#include <linaos/backlight.h>
+#include <linaos/i2c.h>
+#include <linaos/platform_data/i2c-pxa.h>
+#include <linaos/io.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/spi/spi.h>
+#include <linaos/spi/ads7846.h>
+#include <linaos/spi/corgi_lcd.h>
+#include <linaos/spi/pxa2xx_spi.h>
+#include <linaos/mtd/sharpsl.h>
+#include <linaos/input/matrix_keypad.h>
+#include <linaos/gpio_keys.h>
+#include <linaos/memblock.h>
 #include <video/w100fb.h>
 
 #include <asm/setup.h>
@@ -47,8 +47,8 @@
 #include <asm/mach/irq.h>
 
 #include "pxa25x.h"
-#include <linux/platform_data/irda-pxaficp.h>
-#include <linux/platform_data/mmc-pxamci.h>
+#include <linaos/platform_data/irda-pxaficp.h>
+#include <linaos/platform_data/mmc-pxamci.h>
 #include "udc.h"
 #include <mach/corgi.h>
 #include "sharpsl_pm.h"

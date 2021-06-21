@@ -15,18 +15,18 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/log2.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk/ti.h>
-#include <linux/delay.h>
+#include <linaos/clk.h>
+#include <linaos/clk-provider.h>
+#include <linaos/module.h>
+#include <linaos/slab.h>
+#include <linaos/io.h>
+#include <linaos/err.h>
+#include <linaos/string.h>
+#include <linaos/log2.h>
+#include <linaos/of.h>
+#include <linaos/of_address.h>
+#include <linaos/clk/ti.h>
+#include <linaos/delay.h>
 
 #include "clock.h"
 

@@ -20,19 +20,19 @@
  * 02111-1307, USA
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/mfd/palmas.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <linaos/delay.h>
+#include <linaos/module.h>
+#include <linaos/mfd/palmas.h>
+#include <linaos/of.h>
+#include <linaos/of_device.h>
+#include <linaos/platform_device.h>
+#include <linaos/pinctrl/machine.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pm.h>
+#include <linaos/slab.h>
 
 #include "core.h"
 #include "pinconf.h"

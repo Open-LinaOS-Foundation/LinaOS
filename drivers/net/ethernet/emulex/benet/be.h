@@ -4,7 +4,7 @@
  * All rights reserved.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * linaos-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
@@ -14,21 +14,21 @@
 #ifndef BE_H
 #define BE_H
 
-#include <linux/pci.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
+#include <linaos/pci.h>
+#include <linaos/etherdevice.h>
+#include <linaos/delay.h>
 #include <net/tcp.h>
 #include <net/ip.h>
 #include <net/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/cpumask.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <linaos/if_vlan.h>
+#include <linaos/workqueue.h>
+#include <linaos/interrupt.h>
+#include <linaos/firmware.h>
+#include <linaos/slab.h>
+#include <linaos/u64_stats_sync.h>
+#include <linaos/cpumask.h>
+#include <linaos/hwmon.h>
+#include <linaos/hwmon-sysfs.h>
 
 #include "be_hw.h"
 #include "be_roce.h"

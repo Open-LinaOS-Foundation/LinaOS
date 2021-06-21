@@ -817,7 +817,7 @@ config INPUT_SIRFSOC_ONKEY
 	default y
 	help
 	  Say Y here if you want to support for the SiRFSoC power on/off/suspend key
-	  in Linux, after you press the onkey, system will suspend.
+	  in LinaOS, after you press the onkey, system will suspend.
 
 	  If unsure, say N.
 

@@ -26,7 +26,7 @@
  *
  */
 
-#include <linux/pm_runtime.h>
+#include <linaos/pm_runtime.h>
 
 #include <drm/drm_print.h>
 
@@ -52,7 +52,7 @@
 
 #if IS_ENABLED(CONFIG_DRM_I915_DEBUG_RUNTIME_PM)
 
-#include <linux/sort.h>
+#include <linaos/sort.h>
 
 #define STACKDEPTH 8
 

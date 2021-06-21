@@ -6,18 +6,18 @@
  *	Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8925.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
+#include <linaos/kernel.h>
+#include <linaos/init.h>
+#include <linaos/i2c.h>
+#include <linaos/irq.h>
+#include <linaos/interrupt.h>
+#include <linaos/irqdomain.h>
+#include <linaos/platform_device.h>
+#include <linaos/regulator/machine.h>
+#include <linaos/mfd/core.h>
+#include <linaos/mfd/max8925.h>
+#include <linaos/of.h>
+#include <linaos/of_platform.h>
 
 static const struct resource bk_resources[] = {
 	{ 0x84, 0x84, "mode control", IORESOURCE_REG, },

@@ -5,9 +5,9 @@
  */
 
 #include <string.h>
-#include <linux/coresight-pmu.h>
-#include <linux/perf_event.h>
-#include <linux/string.h>
+#include <linaos/coresight-pmu.h>
+#include <linaos/perf_event.h>
+#include <linaos/string.h>
 
 #include "arm-spe.h"
 #include "../../util/pmu.h"

@@ -5,11 +5,11 @@
  *  Copyright (C) 2011 Magnus Damm
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/cpu.h>
+#include <linaos/pm.h>
+#include <linaos/suspend.h>
+#include <linaos/module.h>
+#include <linaos/err.h>
+#include <linaos/cpu.h>
 
 #include <asm/io.h>
 #include <asm/system_misc.h>

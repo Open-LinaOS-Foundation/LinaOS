@@ -18,12 +18,12 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/build_bug.h>
-#include <linux/cache.h>
-#include <linux/init.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
+#include <linaos/build_bug.h>
+#include <linaos/cache.h>
+#include <linaos/init.h>
+#include <linaos/stddef.h>
+#include <linaos/string.h>
+#include <linaos/thread_info.h>
 
 #include <vdso/processor.h>
 

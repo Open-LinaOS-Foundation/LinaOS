@@ -27,36 +27,36 @@
 
 /*****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
+#include <linaos/module.h>
+#include <linaos/types.h>
+#include <linaos/net.h>
+#include <linaos/in.h>
+#include <linaos/if.h>
+#include <linaos/slab.h>
+#include <linaos/errno.h>
+#include <linaos/bitops.h>
+#include <linaos/random.h>
 #include <asm/io.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
+#include <linaos/interrupt.h>
+#include <linaos/ioport.h>
+#include <linaos/firmware.h>
+#include <linaos/platform_device.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <linaos/netdevice.h>
+#include <linaos/if_arp.h>
+#include <linaos/etherdevice.h>
+#include <linaos/skbuff.h>
 #include <net/ax25.h>
 
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <linaos/kernel.h>
+#include <linaos/proc_fs.h>
+#include <linaos/seq_file.h>
 #include <net/net_namespace.h>
 
-#include <linux/uaccess.h>
-#include <linux/init.h>
+#include <linaos/uaccess.h>
+#include <linaos/init.h>
 
-#include <linux/yam.h>
+#include <linaos/yam.h>
 
 /* --------------------------------------------------------------------- */
 

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-/* ioctl() (mostly Linux Wireless Extensions) routines for Host AP driver */
+/* ioctl() (mostly LinaOS Wireless Extensions) routines for Host AP driver */
 
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/module.h>
-#include <linux/etherdevice.h>
+#include <linaos/slab.h>
+#include <linaos/types.h>
+#include <linaos/sched/signal.h>
+#include <linaos/ethtool.h>
+#include <linaos/if_arp.h>
+#include <linaos/module.h>
+#include <linaos/etherdevice.h>
 #include <net/lib80211.h>
 
 #include "hostap_wlan.h"

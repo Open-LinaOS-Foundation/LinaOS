@@ -5,9 +5,9 @@
  *  Author: Cedric Le Goater <clg@fr.ibm.com>
  */
 
-#include <linux/nsproxy.h>
-#include <linux/ipc_namespace.h>
-#include <linux/sysctl.h>
+#include <linaos/nsproxy.h>
+#include <linaos/ipc_namespace.h>
+#include <linaos/sysctl.h>
 
 #ifdef CONFIG_PROC_SYSCTL
 static void *get_mq(struct ctl_table *table)

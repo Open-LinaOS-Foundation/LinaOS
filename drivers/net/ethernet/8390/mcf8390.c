@@ -3,25 +3,25 @@
  *
  *  Derived from the many other 8390 drivers.
  *
- *  (C) Copyright 2012,  Greg Ungerer <gerg@uclinux.org>
+ *  (C) Copyright 2012,  Greg Ungerer <gerg@uclinaos.org>
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the LinaOS
  *  distribution for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/platform_device.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jiffies.h>
-#include <linux/io.h>
+#include <linaos/module.h>
+#include <linaos/kernel.h>
+#include <linaos/errno.h>
+#include <linaos/platform_device.h>
+#include <linaos/netdevice.h>
+#include <linaos/etherdevice.h>
+#include <linaos/jiffies.h>
+#include <linaos/io.h>
 #include <asm/mcf8390.h>
 
 static const char version[] =
-	"mcf8390.c: (15-06-2012) Greg Ungerer <gerg@uclinux.org>";
+	"mcf8390.c: (15-06-2012) Greg Ungerer <gerg@uclinaos.org>";
 
 #define NE_CMD		0x00
 #define NE_DATAPORT	0x10	/* NatSemi-defined port window offset */
@@ -470,6 +470,6 @@ static struct platform_driver mcf8390_drv = {
 module_platform_driver(mcf8390_drv);
 
 MODULE_DESCRIPTION("MCF8390 ColdFire NS8390 driver");
-MODULE_AUTHOR("Greg Ungerer <gerg@uclinux.org>");
+MODULE_AUTHOR("Greg Ungerer <gerg@uclinaos.org>");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:mcf8390");

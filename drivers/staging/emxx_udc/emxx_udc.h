@@ -528,8 +528,8 @@ struct nbu2ss_udc {
 
 	unsigned		softconnect:1;
 	unsigned		vbus_active:1;
-	unsigned		linux_suspended:1;
-	unsigned		linux_resume:1;
+	unsigned		linaos_suspended:1;
+	unsigned		linaos_resume:1;
 	unsigned		usb_suspended:1;
 	unsigned		remote_wakeup:1;
 	unsigned		udc_enabled:1;

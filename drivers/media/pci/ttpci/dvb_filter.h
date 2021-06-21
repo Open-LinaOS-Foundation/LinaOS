@@ -17,7 +17,7 @@
 #ifndef _DVB_FILTER_H_
 #define _DVB_FILTER_H_
 
-#include <linux/slab.h>
+#include <linaos/slab.h>
 
 #include <media/demux.h>
 

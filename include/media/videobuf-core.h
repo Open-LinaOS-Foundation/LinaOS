@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * generic helper functions for handling video4linux capture buffers
+ * generic helper functions for handling video4linaos capture buffers
  *
  * (c) 2007 Mauro Carvalho Chehab, <mchehab@kernel.org>
  *
@@ -13,8 +13,8 @@
 #ifndef _VIDEOBUF_CORE_H
 #define _VIDEOBUF_CORE_H
 
-#include <linux/poll.h>
-#include <linux/videodev2.h>
+#include <linaos/poll.h>
+#include <linaos/videodev2.h>
 
 #define UNSET (-1U)
 
@@ -25,7 +25,7 @@ struct videobuf_queue;
 /* --------------------------------------------------------------------- */
 
 /*
- * A small set of helper functions to manage video4linux buffers.
+ * A small set of helper functions to manage video4linaos buffers.
  *
  * struct videobuf_buffer holds the data structures used by the helper
  * functions, additionally some commonly used fields for v4l buffers
@@ -36,7 +36,7 @@ struct videobuf_queue;
  *
  * The mmaper function allows to map any subset of contiguous buffers.
  * This includes one mmap() call for all buffers (which the original
- * video4linux API uses) as well as one mmap() for every single buffer
+ * video4linaos API uses) as well as one mmap() for every single buffer
  * (which v4l2 uses).
  *
  * If there is a valid mapping for a buffer, buffer->baddr/bsize holds

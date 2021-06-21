@@ -5,7 +5,7 @@
 #if !defined(_TRACE_MIGRATE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_MIGRATE_H
 
-#include <linux/tracepoint.h>
+#include <linaos/tracepoint.h>
 
 #define MIGRATE_MODE						\
 	EM( MIGRATE_ASYNC,	"MIGRATE_ASYNC")		\

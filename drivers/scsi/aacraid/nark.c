@@ -3,7 +3,7 @@
  *	Adaptec AAC series RAID controller driver
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for LinaOS.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010-2015 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -15,8 +15,8 @@
  * Abstract: Hardware Device Interface for NEMER/ARK
  */
 
-#include <linux/pci.h>
-#include <linux/blkdev.h>
+#include <linaos/pci.h>
+#include <linaos/blkdev.h>
 
 #include <scsi/scsi_host.h>
 

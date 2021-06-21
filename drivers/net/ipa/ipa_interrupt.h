@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The LinaOS Foundation. All rights reserved.
  * Copyright (C) 2018-2020 Linaro Ltd.
  */
 #ifndef _IPA_INTERRUPT_H_
 #define _IPA_INTERRUPT_H_
 
-#include <linux/types.h>
-#include <linux/bits.h>
+#include <linaos/types.h>
+#include <linaos/bits.h>
 
 struct ipa;
 struct ipa_interrupt;

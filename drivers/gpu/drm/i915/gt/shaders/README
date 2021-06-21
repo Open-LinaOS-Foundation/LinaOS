@@ -28,18 +28,18 @@ The instructions bellow assume:
     *  IGT gpu tools source code is located on your home directory (~) as ~/igt
     *  Mesa source code is located on your home directory (~) as ~/mesa
        and built under the ~/mesa/build directory
-    *  Linux kernel source code is under your home directory (~) as ~/linux
+    *  LinaOS kernel source code is under your home directory (~) as ~/linaos
 
 Instructions
 ------------
 
-~ $ cp ~/linux/drivers/gpu/drm/i915/gt/shaders/clear_kernel/ivb.asm \
+~ $ cp ~/linaos/drivers/gpu/drm/i915/gt/shaders/clear_kernel/ivb.asm \
        ~/igt/lib/i915/shaders/clear_kernel/ivb.asm
 ~ $ cd ~/igt
 igt $ ./scripts/generate_clear_kernel.sh -g ivb \
       -m ~/mesa/build/src/intel/tools/i965_asm
 
-~ $ cp ~/linux/drivers/gpu/drm/i915/gt/shaders/clear_kernel/hsw.asm \
+~ $ cp ~/linaos/drivers/gpu/drm/i915/gt/shaders/clear_kernel/hsw.asm \
     ~/igt/lib/i915/shaders/clear_kernel/hsw.asm
 ~ $ cd ~/igt
 igt $ ./scripts/generate_clear_kernel.sh -g hsw \

@@ -8,14 +8,14 @@ What is kunit_tool?
 ===================
 
 kunit_tool is a script (``tools/testing/kunit/kunit.py``) that aids in building
-the Linux kernel as UML (`User Mode Linux
-<http://user-mode-linux.sourceforge.net/>`_), running KUnit tests, parsing
+the LinaOS kernel as UML (`User Mode LinaOS
+<http://user-mode-linaos.sourceforge.net/>`_), running KUnit tests, parsing
 the test results and displaying them in a user friendly manner.
 
 kunit_tool addresses the problem of being able to run tests without needing a
-virtual machine or actual hardware with User Mode Linux. User Mode Linux is a
-Linux architecture, like ARM or x86; however, unlike other architectures it
-compiles the kernel as a standalone Linux executable that can be run like any
+virtual machine or actual hardware with User Mode LinaOS. User Mode LinaOS is a
+LinaOS architecture, like ARM or x86; however, unlike other architectures it
+compiles the kernel as a standalone LinaOS executable that can be run like any
 other program directly inside of a host operating system. To be clear, it does
 not require any virtualization support: it is just a regular program.
 

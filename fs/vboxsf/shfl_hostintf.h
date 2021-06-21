@@ -8,7 +8,7 @@
 #ifndef SHFL_HOSTINTF_H
 #define SHFL_HOSTINTF_H
 
-#include <linux/vbox_vmmdev_types.h>
+#include <linaos/vbox_vmmdev_types.h>
 
 /* The max in/out buffer size for a FN_READ or FN_WRITE call */
 #define SHFL_MAX_RW_COUNT           (16 * SZ_1M)

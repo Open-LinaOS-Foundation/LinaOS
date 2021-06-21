@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/input/keyboard/omap-keypad.c
+ * linaos/drivers/input/keyboard/omap-keypad.c
  *
  * OMAP Keypad Driver
  *
@@ -11,19 +11,19 @@
  * Copyright (C) 2004 Texas Instruments
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/gpio.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/platform_data/keypad-omap.h>
+#include <linaos/module.h>
+#include <linaos/interrupt.h>
+#include <linaos/types.h>
+#include <linaos/input.h>
+#include <linaos/kernel.h>
+#include <linaos/delay.h>
+#include <linaos/platform_device.h>
+#include <linaos/mutex.h>
+#include <linaos/errno.h>
+#include <linaos/slab.h>
+#include <linaos/gpio.h>
+#include <linaos/platform_data/gpio-omap.h>
+#include <linaos/platform_data/keypad-omap.h>
 
 #undef NEW_BOARD_LEARNING_MODE
 

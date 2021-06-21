@@ -8,9 +8,9 @@
 #include <crypto/internal/blake2s.h>
 #include <crypto/internal/hash.h>
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <linaos/types.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
 
 static int crypto_blake2s_update_generic(struct shash_desc *desc,
 					 const u8 *in, unsigned int inlen)

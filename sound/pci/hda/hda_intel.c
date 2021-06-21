@@ -20,23 +20,23 @@
  *  2004.12.01	Major rewrite by tiwai, merged the work of pshou
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/clocksource.h>
-#include <linux/time.h>
-#include <linux/completion.h>
-#include <linux/acpi.h>
-#include <linux/pgtable.h>
+#include <linaos/delay.h>
+#include <linaos/interrupt.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/dma-mapping.h>
+#include <linaos/moduleparam.h>
+#include <linaos/init.h>
+#include <linaos/slab.h>
+#include <linaos/pci.h>
+#include <linaos/mutex.h>
+#include <linaos/io.h>
+#include <linaos/pm_runtime.h>
+#include <linaos/clocksource.h>
+#include <linaos/time.h>
+#include <linaos/completion.h>
+#include <linaos/acpi.h>
+#include <linaos/pgtable.h>
 
 #ifdef CONFIG_X86
 /* for snoop control */
@@ -48,9 +48,9 @@
 #include <sound/hdaudio.h>
 #include <sound/hda_i915.h>
 #include <sound/intel-dsp-config.h>
-#include <linux/vgaarb.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/firmware.h>
+#include <linaos/vgaarb.h>
+#include <linaos/vga_switcheroo.h>
+#include <linaos/firmware.h>
 #include <sound/hda_codec.h>
 #include "hda_controller.h"
 #include "hda_intel.h"

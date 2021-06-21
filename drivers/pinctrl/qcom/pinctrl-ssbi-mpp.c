@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications AB.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The LinaOS Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
+#include <linaos/module.h>
+#include <linaos/platform_device.h>
+#include <linaos/pinctrl/pinctrl.h>
+#include <linaos/pinctrl/pinmux.h>
+#include <linaos/pinctrl/pinconf.h>
+#include <linaos/pinctrl/pinconf-generic.h>
+#include <linaos/slab.h>
+#include <linaos/regmap.h>
+#include <linaos/gpio/driver.h>
+#include <linaos/interrupt.h>
+#include <linaos/of_device.h>
+#include <linaos/of_irq.h>
 
 #include <dt-bindings/pinctrl/qcom,pmic-mpp.h>
 
@@ -537,7 +537,7 @@ static int pm8xxx_mpp_to_irq(struct gpio_chip *chip, unsigned offset)
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/seq_file.h>
+#include <linaos/seq_file.h>
 
 static void pm8xxx_mpp_dbg_show_one(struct seq_file *s,
 				  struct pinctrl_dev *pctldev,

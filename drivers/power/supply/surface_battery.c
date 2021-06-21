@@ -7,16 +7,16 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <linaos/jiffies.h>
+#include <linaos/kernel.h>
+#include <linaos/module.h>
+#include <linaos/mutex.h>
+#include <linaos/power_supply.h>
+#include <linaos/sysfs.h>
+#include <linaos/types.h>
+#include <linaos/workqueue.h>
 
-#include <linux/surface_aggregator/device.h>
+#include <linaos/surface_aggregator/device.h>
 
 
 /* -- SAM interface. -------------------------------------------------------- */

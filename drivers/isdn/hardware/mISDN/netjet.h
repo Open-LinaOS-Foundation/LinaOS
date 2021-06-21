@@ -6,7 +6,7 @@
  *              based on work of Matt Henderson and Daniel Potts,
  *              Traverse Technologies P/L www.traverse.com.au
  *
- * Copyright 2009  by Karsten Keil <keil@isdn4linux.de>
+ * Copyright 2009  by Karsten Keil <keil@isdn4linaos.de>
  */
 
 #define NJ_CTRL			0x00

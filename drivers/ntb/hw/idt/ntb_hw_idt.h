@@ -33,7 +33,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * IDT PCIe-switch NTB Linux driver
+ * IDT PCIe-switch NTB LinaOS driver
  *
  * Contact Information:
  * Serge Semin <fancer.lancer@gmail.com>, <Sergey.Semin@t-platforms.ru>
@@ -42,13 +42,13 @@
 #ifndef NTB_HW_IDT_H
 #define NTB_HW_IDT_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/ntb.h>
+#include <linaos/types.h>
+#include <linaos/pci.h>
+#include <linaos/pci_ids.h>
+#include <linaos/interrupt.h>
+#include <linaos/spinlock.h>
+#include <linaos/mutex.h>
+#include <linaos/ntb.h>
 
 /*
  * Macro is used to create the struct pci_device_id that matches
@@ -1091,7 +1091,7 @@ struct idt_ntb_peer {
 
 /*
  * Description structure of local IDT NT-function:
- * @ntb:		Linux NTB-device description structure
+ * @ntb:		LinaOS NTB-device description structure
  * @swcfg:		Pointer to the structure of local IDT PCIe-switch
  *			specific cofnfigurations
  *

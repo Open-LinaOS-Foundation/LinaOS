@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2005 by Thomas Winischhofer, Vienna, Austria
  *
- * If distributed as part of the Linux kernel, this code is licensed under the
+ * If distributed as part of the LinaOS kernel, this code is licensed under the
  * terms of the GPL v2.
  *
  * Otherwise, the following license terms apply:
@@ -38,7 +38,7 @@
 #ifndef _SISUSB_H_
 #define _SISUSB_H_
 
-#include <linux/mutex.h>
+#include <linaos/mutex.h>
 
 /* Version Information */
 
@@ -48,8 +48,8 @@
 
 /* Include console and mode switching code? */
 
-#include <linux/console.h>
-#include <linux/vt_kern.h>
+#include <linaos/console.h>
+#include <linaos/vt_kern.h>
 #include "sisusb_struct.h"
 
 /* USB related */

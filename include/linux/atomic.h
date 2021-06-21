@@ -2,7 +2,7 @@
 /* Atomic operations usable in machine independent code */
 #ifndef _LINUX_ATOMIC_H
 #define _LINUX_ATOMIC_H
-#include <linux/types.h>
+#include <linaos/types.h>
 
 #include <asm/atomic.h>
 #include <asm/barrier.h>
@@ -78,10 +78,10 @@
 })
 
 #ifdef ARCH_ATOMIC
-#include <linux/atomic-arch-fallback.h>
+#include <linaos/atomic-arch-fallback.h>
 #include <asm-generic/atomic-instrumented.h>
 #else
-#include <linux/atomic-fallback.h>
+#include <linaos/atomic-fallback.h>
 #endif
 
 #include <asm-generic/atomic-long.h>

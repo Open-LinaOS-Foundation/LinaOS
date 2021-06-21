@@ -36,8 +36,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <linaos/slab.h>
+#include <linaos/string.h>
 
 #include "agent.h"
 #include "smi.h"

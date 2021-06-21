@@ -14,13 +14,13 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/bitops.h>
-#include <linux/etherdevice.h>
-#include <linux/gpio.h>
+#include <linaos/io.h>
+#include <linaos/slab.h>
+#include <linaos/module.h>
+#include <linaos/time.h>
+#include <linaos/bitops.h>
+#include <linaos/etherdevice.h>
+#include <linaos/gpio.h>
 #include <asm/unaligned.h>
 
 #include "hw.h"

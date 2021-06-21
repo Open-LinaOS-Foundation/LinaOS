@@ -130,7 +130,7 @@ config SH_DREAMCAST
 	depends on CPU_SUBTYPE_SH7091
 	help
 	  Select Dreamcast if configuring for a SEGA Dreamcast.
-	  More information at <http://www.linux-sh.org>
+	  More information at <http://www.linaos-sh.org>
 
 config SH_SH03
 	bool "Interface CTP/PCI-SH03"
@@ -358,7 +358,7 @@ config SH_SH2007
 	  intended for embedded applications.
 	  It has an Ethernet interface (SMC9118), direct connected
 	  Compact Flash socket, two serial ports and PC-104 bus.
-	  More information at <http://sh2000.sh-linux.org>.
+	  More information at <http://sh2000.sh-linaos.org>.
 
 config SH_APSH4A3A
 	bool "AP-SH4A-3A"

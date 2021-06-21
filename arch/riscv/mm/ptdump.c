@@ -3,14 +3,14 @@
  * Copyright (C) 2019 SiFive
  */
 
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/ptdump.h>
+#include <linaos/efi.h>
+#include <linaos/init.h>
+#include <linaos/debugfs.h>
+#include <linaos/seq_file.h>
+#include <linaos/ptdump.h>
 
 #include <asm/ptdump.h>
-#include <linux/pgtable.h>
+#include <linaos/pgtable.h>
 #include <asm/kasan.h>
 
 #define pt_dump_seq_printf(m, fmt, args...)	\
